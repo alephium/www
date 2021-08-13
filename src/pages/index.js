@@ -1,5 +1,7 @@
 import * as React from 'react'
 
+import GlobalStyle from '../styles/global-style'
+
 const pageStyles = {
   color: '#232129',
   padding: 96,
@@ -13,10 +15,13 @@ const headingStyles = {
 
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>Alephium</title>
-      <h1 style={headingStyles}>Alephium</h1>
-    </main>
+    <>
+      <GlobalStyle />
+      <main style={pageStyles}>
+        <title>Alephium</title>
+        <h1 style={headingStyles}>Alephium</h1>
+      </main>
+    </>
   )
 }
 

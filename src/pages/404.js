@@ -1,5 +1,7 @@
 import * as React from 'react'
 
+import GlobalStyle from '../styles/global-style'
+
 const pageStyles = {
   color: '#232129',
   padding: '96px',
@@ -13,10 +15,13 @@ const headingStyles = {
 
 const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-    </main>
+    <>
+      <GlobalStyle />
+      <main style={pageStyles}>
+        <title>Not found</title>
+        <h1 style={headingStyles}>Page not found</h1>
+      </main>
+    </>
   )
 }
 
