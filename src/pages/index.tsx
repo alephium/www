@@ -1,14 +1,15 @@
 import React from 'react'
 
 import GlobalStyle from '../styles/global-style'
+import PageSection from '../components/PageSection'
+import Hero from '../components/Hero'
 
 const IndexPage = () => {
   return (
     <>
       <GlobalStyle />
       <main>
-        <title>Alephium</title>
-        <h1>Alephium</h1>
+        <Hero></Hero>
       </main>
     </>
   )

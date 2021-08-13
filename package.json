@@ -23,6 +23,7 @@
     "gatsby-plugin-image": "^1.11.0",
     "gatsby-plugin-mdx": "^2.11.0",
     "gatsby-plugin-react-helmet": "^4.11.0",
+    "gatsby-plugin-react-svg": "^3.0.1",
     "gatsby-plugin-sharp": "^3.11.0",
     "gatsby-plugin-sitemap": "^4.7.0",
     "gatsby-plugin-styled-components": "^4.11.0",
@@ -35,6 +36,7 @@
     "styled-normalize": "^8.0.7"
   },
   "devDependencies": {
+    "@types/styled-components": "^5.1.12",
     "prettier": "2.3.2"
   }
 }
