@@ -45,7 +45,14 @@ Hero = styled(Hero)`
   }
 
   h1 {
-    font-size: var(--fontSize-7);
+    font-size: var(--fontSize-70);
+
+    & + div {
+      font-size: var(--fontSize-18);
+      max-width: var(--maxWidth-xl);
+      color: var(--color-text-grey-light-1);
+      line-height: var(--lineHeight-relaxed);
+    }
   }
 
   .contents {
@@ -56,12 +63,6 @@ Hero = styled(Hero)`
 
   .logo {
     width: 6rem;
-  }
-
-  .subtitle {
-    max-width: var(--maxWidth-xl);
-    color: var(--color-text-grey-light-1);
-    line-height: var(--lineHeight-relaxed);
   }
 
   .network-image {

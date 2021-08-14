@@ -29,8 +29,7 @@ let CardEngagement: FC<CardEngagementProps> = ({ title, link, ImageComponent, ch
 }
 
 CardEngagement = styled(CardEngagement)`
-  width: var(--maxWidth-2lg);
-  min-height: 14.75rem;
+  min-height: 11rem;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -65,11 +64,15 @@ CardEngagement = styled(CardEngagement)`
   }
 
   article {
-    max-width: 60%;
+    max-width: 70%;
     display: flex;
     flex-direction: column;
     flex: 1;
     justify-content: space-between;
+  }
+
+  .text-content {
+    margin-bottom: var(--spacing-4);
   }
 
   .title {
