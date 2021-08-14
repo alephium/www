@@ -1,6 +1,9 @@
 import React, { FC } from 'react'
 import styled from 'styled-components'
 
+import ArrowedLink from './ArrowedLink'
+import GitHubIcon from '../images/brand-icon-github.svg'
+
 interface NavigationMenuProps {
   className?: string
 }
@@ -11,8 +14,12 @@ let NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
       <div className="nav-item">alephium</div>
     </div>
     <div className="nav-end">
-      <div className="nav-item">Block explorer</div>
-      <div className="nav-item">See the code</div>
+      <ArrowedLink className="nav-item" to="https://testnet.alephium.org/">
+        Block explorer
+      </ArrowedLink>
+      <ArrowedLink className="nav-item" to="https://github.com/alephium" IconComponent={GitHubIcon}>
+        See the code
+      </ArrowedLink>
     </div>
   </div>
 )
@@ -35,7 +42,6 @@ NavigationMenu = styled(NavigationMenu)`
   }
 
   .nav-item {
-    font-weight: var(--fontWeight-semibold);
     padding: var(--spacing-6) 0;
 
     &:not(:last-child) {

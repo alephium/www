@@ -2,6 +2,7 @@ import React, { FC } from 'react'
 import styled from 'styled-components'
 
 import Card from './Card'
+import ArrowedLink from './ArrowedLink'
 
 interface CardEngagementProps {
   title: string
@@ -19,7 +20,7 @@ let CardEngagement: FC<CardEngagementProps> = ({ title, link, ImageComponent, ch
             <div className="title">{title}</div>
             <div className="content">{children}</div>
           </div>
-          <div className="link">{link}</div>
+          <ArrowedLink to="#">{link}</ArrowedLink>
         </article>
         {ImageComponent && <ImageComponent />}
       </div>
@@ -80,11 +81,6 @@ CardEngagement = styled(CardEngagement)`
   .content {
     color: var(--color-text-grey-light-1);
     line-height: var(--line-height-22);
-  }
-
-  .link {
-    font-size: var(--fontSize-18);
-    font-weight: var(--fontWeight-semibold);
   }
 
   svg {
