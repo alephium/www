@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 import styled from 'styled-components'
 
 import Card from './Card'
-import ArrowedLink from './ArrowedLink'
+import TextTeaser from './TextTeaser'
 
 interface CardEngagementProps {
   title: string
@@ -15,13 +15,9 @@ let CardEngagement: FC<CardEngagementProps> = ({ title, link, ImageComponent, ch
   return (
     <Card className={className}>
       <div className="card-contents">
-        <article>
-          <div className="text-content">
-            <div className="title">{title}</div>
-            <div className="content">{children}</div>
-          </div>
-          <ArrowedLink to="#">{link}</ArrowedLink>
-        </article>
+        <TextTeaser title={title} link={link}>
+          {children}
+        </TextTeaser>
         {ImageComponent && <ImageComponent />}
       </div>
     </Card>
@@ -61,29 +57,6 @@ CardEngagement = styled(CardEngagement)`
     display: flex;
     flex: 1;
     justify-content: space-between;
-  }
-
-  article {
-    max-width: 70%;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    justify-content: space-between;
-  }
-
-  .text-content {
-    margin-bottom: var(--spacing-4);
-  }
-
-  .title {
-    font-size: var(--fontSize-28);
-    font-weight: var(--fontWeight-semibold);
-    margin-bottom: var(--spacing-6);
-  }
-
-  .content {
-    color: var(--color-text-grey-light-1);
-    line-height: var(--line-height-22);
   }
 
   svg {

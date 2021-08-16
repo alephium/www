@@ -4,6 +4,7 @@ import GlobalStyle from '../styles/global-style'
 import PageSectionContainer from '../components/PageSectionContainer'
 import Hero from '../components/Hero'
 import CardEngagement from '../components/CardEngagement'
+import Feed from '../components/Feed'
 import TitledColumn from '../components/TitledColumn'
 import HookImage from '../images/hook.svg'
 import WalletImage from '../images/wallet.svg'
@@ -38,7 +39,9 @@ const IndexPage = () => {
                   your own tools and apps!
                 </CardEngagement>
               </TitledColumn>
-              <TitledColumn title="Feed" subtitle="What's cooking?"></TitledColumn>
+              <TitledColumn title="Feed" subtitle="What's cooking?">
+                <Feed />
+              </TitledColumn>
             </Columns>
           </PageSectionContainer>
         </section>
