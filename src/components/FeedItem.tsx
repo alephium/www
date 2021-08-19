@@ -1,6 +1,8 @@
 import React, { FC } from 'react'
 import styled from 'styled-components'
 
+import { deviceBreakPoints } from '../styles/global-style'
+
 import CardTextTeaser from './CardTextTeaser'
 import { ArrowedLinkProps } from './ArrowedLink'
 
@@ -23,6 +25,11 @@ let FeedItem: FC<FeedItemProps> = ({ IconComponent, title, subtitle, link, child
 
 FeedItem = styled(FeedItem)`
   display: flex;
+  gap: var(--spacing-8);
+
+  @media ${deviceBreakPoints.mobile} {
+    flex-direction: column;
+  }
 
   &:not(:last-child) {
     padding-bottom: var(--spacing-8);
@@ -35,7 +42,10 @@ FeedItem = styled(FeedItem)`
 
   svg {
     width: var(--width-120);
-    margin-right: var(--spacing-8);
+
+    @media ${deviceBreakPoints.mobile} {
+      align-self: center;
+    }
   }
 `
 
