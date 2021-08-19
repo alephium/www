@@ -47,21 +47,44 @@ let PageSectionIntro: FC<PageSectionIntroProps> = ({ className }) => (
         <Column>
           <SectionTitle title="Start" subtitle="Engage with us." />
           <IntroColumnContent>
-            <CardEngagement title="Start mining" link="Documentation" ImageComponent={MiningImage} imageWidth="160px">
+            <CardEngagement
+              title="Start mining"
+              link={{
+                text: 'Documentation',
+                to: 'https://github.com/alephium/wiki/blob/master/Miner-Guide.md',
+                newTab: true
+              }}
+              ImageComponent={MiningImage}
+              imageWidth="160px"
+            >
               Get your node ready, and contribute to the network security. It doesn't take more that a few minutes to
               start getting rewarded in ALPH tokens.
             </CardEngagement>
-            <CardEngagement title="Get the wallet" link="Download" ImageComponent={WalletImage}>
+            <CardEngagement
+              title="Get the wallet"
+              link={{
+                text: 'Download',
+                to: '#'
+              }}
+              ImageComponent={WalletImage}
+            >
               Safe and super easy to use, start to store / send / receive your precious ALPH tokens right away.
             </CardEngagement>
-            <CardEngagement title="Build on Alephium" link="Documentation" ImageComponent={HookImage}>
+            <CardEngagement
+              title="Build on Alephium"
+              link={{
+                text: 'Documentation',
+                to: '#'
+              }}
+              ImageComponent={HookImage}
+            >
               The mainnet is not far away. You can already start leveraging the power of Alephium and start building
               your own tools and apps!
             </CardEngagement>
           </IntroColumnContent>
         </Column>
         <Column>
-          <SectionTitle title="Start" subtitle="Engage with us." />
+          <SectionTitle title="Feed" subtitle="What's cooking?" />
           <IntroColumnContent>
             <Feed />
           </IntroColumnContent>

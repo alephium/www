@@ -2,12 +2,13 @@ import React, { FC } from 'react'
 import styled from 'styled-components'
 
 import CardTextTeaser from './CardTextTeaser'
+import { ArrowedLinkProps } from './ArrowedLink'
 
 interface FeedItemProps {
   IconComponent: FC
   title: string
   subtitle?: string
-  link: string
+  link: ArrowedLinkProps
   className?: string
 }
 

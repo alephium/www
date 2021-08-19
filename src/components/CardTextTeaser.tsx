@@ -1,12 +1,12 @@
 import React, { FC } from 'react'
 import styled from 'styled-components'
 
-import ArrowedLink from './ArrowedLink'
+import ArrowedLink, { ArrowedLinkProps } from './ArrowedLink'
 
 interface CardTextTeaserProps {
   title: string
   subtitle?: string
-  link: string
+  link: ArrowedLinkProps
   className?: string
 }
 
@@ -17,7 +17,9 @@ let CardTextTeaser: FC<CardTextTeaserProps> = ({ title, subtitle, children, link
       {subtitle && <div className="subtitle">{subtitle}</div>}
       <div className="content">{children}</div>
     </div>
-    <ArrowedLink to="#">{link}</ArrowedLink>
+    <ArrowedLink to={link.to} newTab={link.newTab}>
+      {link.text}
+    </ArrowedLink>
   </article>
 )
 

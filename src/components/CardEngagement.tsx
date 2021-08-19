@@ -3,10 +3,11 @@ import styled from 'styled-components'
 
 import Card from './Card'
 import CardTextTeaser from './CardTextTeaser'
+import { ArrowedLinkProps } from './ArrowedLink'
 
 interface CardEngagementProps {
   title: string
-  link: string
+  link: ArrowedLinkProps
   ImageComponent: FC
   imageWidth?: string
   className?: string
