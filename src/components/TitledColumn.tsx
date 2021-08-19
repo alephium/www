@@ -1,8 +1,6 @@
 import React, { FC } from 'react'
 import styled from 'styled-components'
 
-import { deviceBreakPoints } from '../styles/global-style'
-
 interface TitledColumnProps {
   title: string
   subtitle?: string
@@ -20,30 +18,8 @@ let TitledColumn: FC<TitledColumnProps> = ({ title, subtitle, className, childre
 )
 
 TitledColumn = styled(TitledColumn)`
-  flex: 0 0 50%;
-
-  @media ${deviceBreakPoints.mobile} {
-    flex: 0 0 100%;
-  }
-
-  &:not(:last-child) {
-    .column-inner {
-      margin-right: var(--spacing-40);
-
-      @media ${deviceBreakPoints.mobile} {
-        margin-right: 0;
-      }
-    }
-  }
-  &:not(:first-child) {
-    .column-inner {
-      margin-left: var(--spacing-40);
-
-      @media ${deviceBreakPoints.mobile} {
-        margin-left: 0;
-      }
-    }
-  }
+  flex-basis: 100%;
+  flex: 1;
 
   h2 {
     font-size: var(--fontSize-50);

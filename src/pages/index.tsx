@@ -9,12 +9,28 @@ import TitledColumn from '../components/TitledColumn'
 import HookImage from '../images/hook.svg'
 import WalletImage from '../images/wallet.svg'
 import MiningImage from '../images/mining.svg'
+import { deviceBreakPoints } from '../styles/global-style'
 
 import styled from 'styled-components'
 
 const Columns = styled.div`
   display: flex;
   flex-flow: wrap;
+  gap: var(--spacing-80);
+
+  /* TODO: Extract breakpoint */
+  @media (max-width: 1352px) {
+    gap: var(--spacing-40);
+  }
+
+  /* TODO: Extract breakpoint */
+  @media (max-width: 1096px) {
+    gap: var(--spacing-20);
+  }
+
+  @media ${deviceBreakPoints.mobile} {
+    flex-direction: column;
+  }
 `
 
 const IndexPage = () => {
