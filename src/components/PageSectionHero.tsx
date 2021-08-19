@@ -6,11 +6,11 @@ import NavigationMenu from './NavigationMenu'
 import Logo from '../images/logo.svg'
 import NetworkImage from '../images/network.svg'
 
-interface HeroProps {
+interface PageSectionHeroProps {
   className?: string
 }
 
-let Hero: FC<HeroProps> = ({ className }) => {
+let PageSectionHero: FC<PageSectionHeroProps> = ({ className }) => {
   return (
     <section className={className}>
       <PageSectionContainer>
@@ -34,7 +34,7 @@ let Hero: FC<HeroProps> = ({ className }) => {
   )
 }
 
-Hero = styled(Hero)`
+PageSectionHero = styled(PageSectionHero)`
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -74,4 +74,4 @@ Hero = styled(Hero)`
   }
 `
 
-export default Hero
+export default PageSectionHero

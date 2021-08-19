@@ -33,6 +33,7 @@ const GlobalStyle = createGlobalStyle`
     --spacing-24: 6rem;
     --spacing-32: 8rem;
     --spacing-40: 10rem;
+    --spacing-56: 14rem;
     --spacing-80: 20rem;
 
     --radius: 1rem;
