@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 import styled from 'styled-components'
 
 import Card from './Card'
-import TextTeaser from './TextTeaser'
+import CardTextTeaser from './CardTextTeaser'
 
 interface CardEngagementProps {
   title: string
@@ -16,9 +16,9 @@ let CardEngagement: FC<CardEngagementProps> = ({ title, link, ImageComponent, ch
   return (
     <Card className={className}>
       <div className="card-contents">
-        <TextTeaserStyled title={title} link={link}>
+        <CardTextTeaserStyled title={title} link={link}>
           {children}
-        </TextTeaserStyled>
+        </CardTextTeaserStyled>
         <div className="image-container">
           <ImageComponent />
         </div>
@@ -27,7 +27,7 @@ let CardEngagement: FC<CardEngagementProps> = ({ title, link, ImageComponent, ch
   )
 }
 
-const TextTeaserStyled = styled(TextTeaser)`
+const CardTextTeaserStyled = styled(CardTextTeaser)`
   width: 75%;
   padding-right: var(--spacing-4);
 `

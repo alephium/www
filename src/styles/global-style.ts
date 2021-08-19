@@ -17,6 +17,7 @@ const GlobalStyle = createGlobalStyle`
     --maxWidth-full: "100%";
 
     --width-120: 7.5rem;
+    --width-368: 23rem;
 
     --spacing-1: 0.25rem;
     --spacing-2: 0.5rem;
@@ -68,12 +69,14 @@ const GlobalStyle = createGlobalStyle`
     --line-height-22: 1.375rem;
     --fontSize-14: 0.875rem;
     --fontSize-18: 1.125rem;
+    --fontSize-24: 1.5rem;
     --fontSize-28: 1.75rem;
     --fontSize-50: 3.125rem;
     --fontSize-70: 4.375rem;
 
     --color-light: #fff;
     --color-dark: #000;
+    --color-dark-1: #111;
     --color-grey-dark: #1A1A1A;
     --color-grey-dark-2: #343434;
     --color-text-grey-light-1: #808080;

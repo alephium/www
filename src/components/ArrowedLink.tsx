@@ -3,10 +3,11 @@ import styled from 'styled-components'
 
 import Arrow from '../images/arrow-right.svg'
 
-interface ArrowedLinkProps {
+export interface ArrowedLinkProps {
   className?: string
   IconComponent?: FC
   to: string
+  text?: string
 }
 
 let ArrowedLink: FC<ArrowedLinkProps> = ({ className, children, IconComponent, to }) => (

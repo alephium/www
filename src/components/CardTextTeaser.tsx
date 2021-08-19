@@ -3,14 +3,14 @@ import styled from 'styled-components'
 
 import ArrowedLink from './ArrowedLink'
 
-interface TextTeaserProps {
+interface CardTextTeaserProps {
   title: string
   subtitle?: string
   link: string
   className?: string
 }
 
-let TextTeaser: FC<TextTeaserProps> = ({ title, subtitle, children, link, className }) => (
+let CardTextTeaser: FC<CardTextTeaserProps> = ({ title, subtitle, children, link, className }) => (
   <article className={className}>
     <div className="text-content">
       <div className="title">{title}</div>
@@ -21,7 +21,7 @@ let TextTeaser: FC<TextTeaserProps> = ({ title, subtitle, children, link, classN
   </article>
 )
 
-TextTeaser = styled(TextTeaser)`
+CardTextTeaser = styled(CardTextTeaser)`
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -49,4 +49,4 @@ TextTeaser = styled(TextTeaser)`
   }
 `
 
-export default TextTeaser
+export default CardTextTeaser

@@ -1,23 +1,22 @@
-import React, {FC} from 'react';
-import styled from 'styled-components';
+import React, { FC } from 'react'
+import styled from 'styled-components'
 
-import TextTeaser from './TextTeaser'
+import CardTextTeaser from './CardTextTeaser'
 
 interface FeedItemProps {
   IconComponent: FC
   title: string
   subtitle?: string
-  link: string,
+  link: string
   className?: string
 }
-
 
 let FeedItem: FC<FeedItemProps> = ({ IconComponent, title, subtitle, link, children, className }) => (
   <div className={className}>
     <IconComponent />
-    <TextTeaser title={title} subtitle={subtitle} link={link}>
+    <CardTextTeaser title={title} subtitle={subtitle} link={link}>
       {children}
-    </TextTeaser>
+    </CardTextTeaser>
   </div>
 )
 
@@ -39,4 +38,4 @@ FeedItem = styled(FeedItem)`
   }
 `
 
-export default FeedItem;
+export default FeedItem
