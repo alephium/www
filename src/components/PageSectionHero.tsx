@@ -1,6 +1,8 @@
 import React, { FC } from 'react'
 import styled from 'styled-components'
 
+import { deviceBreakPoints } from '../styles/global-style'
+
 import PageSectionContainer from './PageSectionContainer'
 import NavigationMenu from './NavigationMenu'
 import Logo from '../images/logo.svg'
@@ -47,8 +49,7 @@ PageSectionHero = styled(PageSectionHero)`
   h1 {
     font-size: var(--fontSize-70);
 
-    /* TODO: Extract breakpoint */
-    @media (max-width: 33rem) {
+    @media ${deviceBreakPoints.smallMobile} {
       font-size: var(--fontSize-50);
     }
 
@@ -64,10 +65,18 @@ PageSectionHero = styled(PageSectionHero)`
     display: flex;
     align-items: center;
     height: 100%;
+
+    @media ${deviceBreakPoints.smallMobile} {
+      align-items: flex-end;
+    }
   }
 
   .logo {
     width: 6rem;
+
+    @media ${deviceBreakPoints.smallMobile} {
+      width: 3rem;
+    }
   }
 
   .network-image {
@@ -76,6 +85,15 @@ PageSectionHero = styled(PageSectionHero)`
     right: -85px;
     width: auto;
     z-index: -1;
+
+    @media ${deviceBreakPoints.mobile} {
+      top: -160px;
+      width: 50rem;
+    }
+
+    @media ${deviceBreakPoints.smallMobile} {
+      display: none;
+    }
   }
 `
 

@@ -106,11 +106,13 @@ const GlobalStyle = createGlobalStyle`
 `
 
 export const deviceSizes = {
+  smallMobile: 528,
   mobile: 1024,
   desktop: 1920
 }
 
 export const deviceBreakPoints = {
+  smallMobile: `(max-width: ${deviceSizes.smallMobile}px)`,
   mobile: `(max-width: ${deviceSizes.mobile}px)`,
   desktop: `(max-width: ${deviceSizes.desktop}px)`
 }

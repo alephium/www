@@ -1,6 +1,8 @@
 import React, { FC, ReactElement } from 'react'
 import styled from 'styled-components'
 
+import { deviceBreakPoints } from '../styles/global-style'
+
 import Card from './Card'
 import ArrowedLink, { ArrowedLinkProps } from './ArrowedLink'
 
@@ -53,8 +55,7 @@ SectionTextTeaser = styled(SectionTextTeaser)`
     line-height: var(--line-height-26);
     font-weight: var(--fontWeight-semibold);
 
-    /* TODO: Extract breakpoint */
-    @media (max-width: 33rem) {
+    @media ${deviceBreakPoints.smallMobile} {
       flex-direction: column;
       gap: var(--spacing-6);
     }

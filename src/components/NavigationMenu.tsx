@@ -1,6 +1,8 @@
 import React, { FC } from 'react'
 import styled from 'styled-components'
 
+import { deviceBreakPoints } from '../styles/global-style'
+
 import ArrowedLink from './ArrowedLink'
 import GitHubIcon from '../images/brand-icon-github.svg'
 
@@ -41,8 +43,7 @@ NavigationMenu = styled(NavigationMenu)`
     display: flex;
     gap: var(--spacing-12);
 
-    /* TODO: Extract breakpoint */
-    @media (max-width: 33rem) {
+    @media ${deviceBreakPoints.smallMobile} {
       flex-direction: column;
       gap: 0;
       align-items: flex-end;

@@ -19,12 +19,10 @@ interface PageSectionIntroProps {
 }
 
 const IntroColumns = styled(Columns)`
-  /* TODO: Extract breakpoint */
   @media (max-width: 1352px) {
     gap: var(--spacing-40);
   }
 
-  /* TODO: Extract breakpoint */
   @media (max-width: 1096px) {
     gap: var(--spacing-20);
   }
