@@ -7,7 +7,7 @@ import TestnetIcon from '../images/testnet.svg'
 import HiringIcon from '../images/hiring.svg'
 
 const Feed = () => (
-  <Card>
+  <Card bgColor="var(--color-grey-dark)">
     <FeedItem
       title="0.8.9 is available"
       subtitle="2 days ago"

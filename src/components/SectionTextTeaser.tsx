@@ -17,7 +17,7 @@ let SectionTextTeaser: FC<SectionTextTeaserProps> = ({ className, title, content
   <div className={className}>
     <h3>{title}</h3>
     <div>{content}</div>
-    <Card>
+    <Card borderColor="var(--color-brown)">
       <IconComponent />
       <div>{iconText}</div>
     </Card>
@@ -30,8 +30,14 @@ let SectionTextTeaser: FC<SectionTextTeaserProps> = ({ className, title, content
 )
 
 SectionTextTeaser = styled(SectionTextTeaser)`
+  svg {
+    width: var(--width-38);
+  }
+
   .links {
     display: flex;
+    gap: var(--spacing-16);
+    margin-top: var(--spacing-8);
   }
 `
 

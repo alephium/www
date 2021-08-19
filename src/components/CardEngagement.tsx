@@ -15,7 +15,7 @@ interface CardEngagementProps {
 
 let CardEngagement: FC<CardEngagementProps> = ({ title, link, ImageComponent, children, className }) => {
   return (
-    <Card className={className}>
+    <Card className={className} borderColor="var(--color-dark)" thickBorders bgColor="var(--color-grey-dark)">
       <div className="card-contents">
         <CardTextTeaserStyled title={title} link={link}>
           {children}

@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
     --maxWidth-5xl: 82.5rem;
     --maxWidth-full: "100%";
 
+    --width-38: 2.375rem;
     --width-120: 7.5rem;
     --width-368: 23rem;
 
@@ -86,6 +87,7 @@ const GlobalStyle = createGlobalStyle`
     --color-text-grey-dark-2: #6B6B6B;
     --color-salmon: #ff5d51;
     --color-blue: #1200da;
+    --color-brown: #393535;
   }
 
   body {
