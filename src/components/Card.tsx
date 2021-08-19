@@ -10,7 +10,7 @@ let Card: FC<CardProps> = ({ className, children }) => <div className={className
 Card = styled(Card)`
   padding: var(--spacing-7);
   border-radius: var(--radius);
-  border: 2px solid transparent;
+  border: 2px solid var(--color-dark);
   background-color: var(--color-grey-dark);
 `
 

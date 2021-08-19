@@ -37,26 +37,31 @@ CardEngagement = styled(CardEngagement)`
   display: flex;
   flex-direction: column;
   position: relative;
+  transition: all 0.2s ease;
 
   & + & {
     margin-top: var(--spacing-7);
   }
 
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -2px;
+    border-radius: inherit;
+  }
+
   &:hover {
     background-color: var(--color-dark);
     background-clip: padding-box;
+    border-color: transparent;
     cursor: pointer;
 
     &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      z-index: -1;
-      margin: -2px;
-      border-radius: inherit;
       background: linear-gradient(270deg, var(--color-salmon) 0%, var(--color-blue) 100%);
     }
   }
