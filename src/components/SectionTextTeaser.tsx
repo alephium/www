@@ -17,21 +17,46 @@ let SectionTextTeaser: FC<SectionTextTeaserProps> = ({ className, title, content
   <div className={className}>
     <h3>{title}</h3>
     <div>{content}</div>
-    <Card borderColor="var(--color-brown)">
+    <Card borderColor="var(--color-brown)" className="card">
       <IconComponent />
       <div>{iconText}</div>
     </Card>
     <div className="links">
-      {links.map(({ to, text }) => (
-        <ArrowedLink to={to}>{text}</ArrowedLink>
+      {links.map(({ to, text, newTab }) => (
+        <ArrowedLink key={text} to={to} newTab={newTab}>
+          {text}
+        </ArrowedLink>
       ))}
     </div>
   </div>
 )
 
 SectionTextTeaser = styled(SectionTextTeaser)`
-  svg {
-    width: var(--width-38);
+  h3 {
+    font-size: var(--fontSize-28);
+    line-height: var(--line-height-36);
+    font-weight: var(--fontWeight-semibold);
+    margin-top: 0;
+
+    & + div {
+      color: var(--color-text-grey-light-1);
+      font-size: var(--line-height-18);
+      line-height: var(--line-height-26);
+      margin-bottom: var(--spacing-10);
+    }
+  }
+
+  > .card {
+    display: flex;
+    gap: var(--spacing-14);
+    font-size: var(--fontSize-18);
+    line-height: var(--line-height-26);
+    font-weight: var(--fontWeight-semibold);
+
+    svg {
+      width: var(--width-38);
+      flex-shrink: 0;
+    }
   }
 
   .links {

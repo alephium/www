@@ -30,12 +30,14 @@ const GlobalStyle = createGlobalStyle`
     --spacing-8: 2rem;
     --spacing-10: 2.5rem;
     --spacing-12: 3rem;
+    --spacing-14: 3.5rem;
     --spacing-16: 4rem;
     --spacing-20: 5rem;
     --spacing-24: 6rem;
     --spacing-32: 8rem;
     --spacing-40: 10rem;
     --spacing-56: 14rem;
+    --spacing-58: 14.5rem;
     --spacing-80: 20rem;
 
     --radius: 1rem;
@@ -68,6 +70,8 @@ const GlobalStyle = createGlobalStyle`
     --fontSize-7: 2.986rem;
 
     --line-height-22: 1.375rem;
+    --line-height-26: 1.625rem;
+    --line-height-36: 2.25rem;
     --fontSize-14: 0.875rem;
     --fontSize-18: 1.125rem;
     --fontSize-24: 1.5rem;

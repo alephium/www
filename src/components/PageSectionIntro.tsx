@@ -19,8 +19,6 @@ interface PageSectionIntroProps {
 }
 
 const IntroColumns = styled(Columns)`
-  gap: var(--spacing-80);
-
   /* TODO: Extract breakpoint */
   @media (max-width: 1352px) {
     gap: var(--spacing-40);
@@ -29,10 +27,6 @@ const IntroColumns = styled(Columns)`
   /* TODO: Extract breakpoint */
   @media (max-width: 1096px) {
     gap: var(--spacing-20);
-  }
-
-  @media ${deviceBreakPoints.mobile} {
-    flex-direction: column;
   }
 `
 
@@ -43,7 +37,7 @@ const IntroColumnContent = styled.div`
 let PageSectionIntro: FC<PageSectionIntroProps> = ({ className }) => (
   <section className={className}>
     <PageSectionContainer>
-      <IntroColumns>
+      <IntroColumns gap="var(--spacing-80)">
         <Column>
           <SectionTitle title="Start" subtitle="Engage with us." />
           <IntroColumnContent>

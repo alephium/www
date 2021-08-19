@@ -2,7 +2,6 @@ import React, { FC } from 'react'
 import styled from 'styled-components'
 
 import PageSectionContainer from './PageSectionContainer'
-
 import SectionTitle from './SectionTitle'
 import Columns from './Columns'
 import Column from './Column'
@@ -19,14 +18,23 @@ let BlockflowImageStyled = styled(BlockflowImage)`
   width: var(--width-368);
 `
 
+const SectionTitleStyled = styled(SectionTitle)`
+  margin-bottom: var(--spacing-58);
+`
+
+const CenteredColumn = styled(Column)`
+  display: flex;
+  justify-content: center;
+`
+
 let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className }) => (
   <section className={className}>
-    <SectionTitle title="Technology" subtitle="What makes us different" centered largeSubtitle />
+    <SectionTitleStyled title="Technology" subtitle="What makes us different" centered largeSubtitle />
     <PageSectionContainer>
-      <Columns>
-        <Column>
+      <Columns gap="8.5rem">
+        <CenteredColumn>
           <BlockflowImageStyled />
-        </Column>
+        </CenteredColumn>
         <Column>
           <SectionTextTeaser
             title="Blockflow: sharding on BTC’s proven foundations"
@@ -34,8 +42,8 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className }) => (
             IconComponent={StackImage}
             iconText="Merging the versatility and expressivity of Ethereum with the security of the Bitcoin technology stack."
             links={[
-              { to: '#', text: 'More details' },
-              { to: '#', text: 'White paper' }
+              { text: 'More details', to: '#' },
+              { text: 'White paper', to: 'https://github.com/alephium/white-paper', newTab: true }
             ]}
           />
         </Column>
