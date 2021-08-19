@@ -53,6 +53,12 @@ SectionTextTeaser = styled(SectionTextTeaser)`
     line-height: var(--line-height-26);
     font-weight: var(--fontWeight-semibold);
 
+    /* TODO: Extract breakpoint */
+    @media (max-width: 33rem) {
+      flex-direction: column;
+      gap: var(--spacing-6);
+    }
+
     svg {
       width: var(--width-38);
       flex-shrink: 0;
