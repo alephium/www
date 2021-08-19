@@ -65,10 +65,6 @@ PageSectionHero = styled(PageSectionHero)`
     display: flex;
     align-items: center;
     height: 100%;
-
-    @media ${deviceBreakPoints.smallMobile} {
-      align-items: flex-end;
-    }
   }
 
   .logo {
