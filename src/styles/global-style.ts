@@ -19,6 +19,8 @@ const GlobalStyle = createGlobalStyle`
     --width-38: 2.375rem;
     --width-120: 7.5rem;
     --width-368: 23rem;
+    --width-488: 30.5rem;
+    --width-584: 36.5rem;
 
     --spacing-1: 0.25rem;
     --spacing-2: 0.5rem;
@@ -38,6 +40,8 @@ const GlobalStyle = createGlobalStyle`
     --spacing-40: 10rem;
     --spacing-56: 14rem;
     --spacing-58: 14.5rem;
+    --spacing-60: 15rem;
+    --spacing-70: 17.5rem;
     --spacing-80: 20rem;
 
     --radius: 1rem;
