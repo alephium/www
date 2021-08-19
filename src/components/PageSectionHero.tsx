@@ -47,6 +47,11 @@ PageSectionHero = styled(PageSectionHero)`
   h1 {
     font-size: var(--fontSize-70);
 
+    /* TODO: Extract breakpoint */
+    @media (max-width: 33rem) {
+      font-size: var(--fontSize-50);
+    }
+
     & + div {
       font-size: var(--fontSize-18);
       max-width: var(--maxWidth-xl);

@@ -39,18 +39,18 @@ NavigationMenu = styled(NavigationMenu)`
 
   .nav-end {
     display: flex;
+    gap: var(--spacing-12);
+
+    /* TODO: Extract breakpoint */
+    @media (max-width: 33rem) {
+      flex-direction: column;
+      gap: 0;
+      align-items: flex-end;
+    }
   }
 
   .nav-item {
     padding: var(--spacing-6) 0;
-
-    &:not(:last-child) {
-      padding-right: var(--spacing-6);
-    }
-
-    &:not(:first-child) {
-      padding-left: var(--spacing-6);
-    }
   }
 `
 
