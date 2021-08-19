@@ -27,7 +27,12 @@ const IndexPage = () => {
           <PageSectionContainer>
             <Columns>
               <TitledColumn title="Start" subtitle="Engage with us.">
-                <CardEngagement title="Start mining" link="Documentation" ImageComponent={MiningImage}>
+                <CardEngagement
+                  title="Start mining"
+                  link="Documentation"
+                  ImageComponent={MiningImage}
+                  imageWidth="160px"
+                >
                   Get your node ready, and contribute to the network security. It doesn't take more that a few minutes
                   to start getting rewarded in ALPH tokens.
                 </CardEngagement>

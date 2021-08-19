@@ -22,7 +22,6 @@ let TextTeaser: FC<TextTeaserProps> = ({ title, subtitle, children, link, classN
 )
 
 TextTeaser = styled(TextTeaser)`
-  max-width: 70%;
   display: flex;
   flex-direction: column;
   flex: 1;

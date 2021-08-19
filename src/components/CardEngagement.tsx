@@ -7,7 +7,8 @@ import TextTeaser from './TextTeaser'
 interface CardEngagementProps {
   title: string
   link: string
-  ImageComponent?: FC
+  ImageComponent: FC
+  imageWidth?: string
   className?: string
 }
 
@@ -15,14 +16,21 @@ let CardEngagement: FC<CardEngagementProps> = ({ title, link, ImageComponent, ch
   return (
     <Card className={className}>
       <div className="card-contents">
-        <TextTeaser title={title} link={link}>
+        <TextTeaserStyled title={title} link={link}>
           {children}
-        </TextTeaser>
-        {ImageComponent && <ImageComponent />}
+        </TextTeaserStyled>
+        <div className="image-container">
+          <ImageComponent />
+        </div>
       </div>
     </Card>
   )
 }
+
+const TextTeaserStyled = styled(TextTeaser)`
+  width: 75%;
+  padding-right: var(--spacing-4);
+`
 
 CardEngagement = styled(CardEngagement)`
   min-height: 11rem;
@@ -59,8 +67,22 @@ CardEngagement = styled(CardEngagement)`
     justify-content: space-between;
   }
 
-  svg {
-    width: 5rem;
+  .image-container {
+    width: 25%;
+    position: relative;
+    margin: calc(-1 * var(--spacing-7)) calc(-1 * var(--spacing-7)) calc(-1 * var(--spacing-7)) 0;
+    overflow: hidden;
+
+    svg {
+      height: auto;
+      position: absolute;
+      width: ${(props) => props.imageWidth || '5rem'};
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto 0;
+    }
   }
 `
 
