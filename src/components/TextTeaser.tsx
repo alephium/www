@@ -34,7 +34,13 @@ TextTeaser = styled(TextTeaser)`
   .title {
     font-size: var(--fontSize-28);
     font-weight: var(--fontWeight-semibold);
-    margin-bottom: var(--spacing-6);
+    margin-bottom: ${(props) => (props.subtitle ? 'var(--spacing-2)' : 'var(--spacing-6)')};
+  }
+
+  .subtitle {
+    color: var(--color-text-grey-light-3);
+    font-size: var(--fontSize-14);
+    margin-bottom: var(--spacing-3);
   }
 
   .content {
