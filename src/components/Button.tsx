@@ -40,6 +40,7 @@ Button = styled(Button)`
     width: 11px;
     margin-left: var(--spacing-2);
     transition: transform 0.2s ease;
+    fill: var(--color-light);
   }
 `
 

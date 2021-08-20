@@ -58,7 +58,6 @@ CardEngagement = styled(CardEngagement)`
 
   &:hover {
     background-color: var(--color-dark);
-    background-clip: padding-box;
     border-color: transparent;
     cursor: pointer;
 

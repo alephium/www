@@ -103,6 +103,7 @@ const GlobalStyle = createGlobalStyle`
     --color-dark-1: #111;
     --color-grey-dark: #1A1A1A;
     --color-grey-dark-2: #343434;
+    --color-grey-dark-3: #262626;
     --color-grey-light: #f5f5f5;
     --color-grey-light-1: #ddd;
     --color-text-grey-light-2: #A1A1A1;
@@ -120,6 +121,10 @@ const GlobalStyle = createGlobalStyle`
     background-color: var(--color-dark);
     color: var(--color-light);
     font-family: var(--fontFamily-sans);
+  }
+
+  main {
+    overflow: hidden;
   }
 `
 

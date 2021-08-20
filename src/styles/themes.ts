@@ -8,15 +8,15 @@ export const darkTheme: DefaultTheme = {
 
   textPrimary: 'var(--color-light)',
   textSecondary: 'var(--color-text-grey-light-1)',
-  textTetriary: '',
+  textTetriary: 'var(--color-text-grey-light-3)',
   textAccent: '#FFD036', // TODO: Change
 
   bgPrimary: 'var(--color-dark)',
   bgSecondary: 'var(--color-dark-1)',
-  bgTertiary: 'var(--color-grey-dark)'
+  bgTertiary: 'var(--color-grey-dark)',
   // bgHighlight: 'rgba(0, 0, 0, 0.1)',
 
-  // link: '#53A9F5',
+  link: 'var(--color-light)'
   // linkHighlight: '#0E82E7',
 
   // borderPrimary: '#34353A',
@@ -36,10 +36,10 @@ export const lightTheme: DefaultTheme = {
 
   bgPrimary: 'var(--color-light)',
   bgSecondary: 'var(--color-light-1)',
-  bgTertiary: 'var(--color-grey-light)'
+  bgTertiary: 'var(--color-grey-light)',
   // bgHighlight: 'rgba(0, 0, 0, 0.1)'
 
-  // link: '#0E82E7',
+  link: 'var(--color-blue-2)'
   // linkHighlight: '#53A9F5',
 
   // borderPrimary: '#F2F2F3',

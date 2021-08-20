@@ -30,7 +30,7 @@ ArrowedLink = styled(ArrowedLink)`
   font-weight: var(--fontWeight-semibold);
   font-size: var(--fontSize-18);
   text-decoration: none;
-  color: var(--color-light);
+  color: ${({ theme }) => theme.link};
 
   &:hover {
     .arrow {
@@ -41,12 +41,14 @@ ArrowedLink = styled(ArrowedLink)`
   .icon {
     width: 1rem;
     margin-right: var(--spacing-2);
+    fill: ${({ theme }) => theme.link};
   }
 
   .arrow {
     width: 11px;
     margin-left: var(--spacing-2);
     transition: transform 0.2s ease;
+    fill: ${({ theme }) => theme.link};
   }
 `
 

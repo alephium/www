@@ -15,6 +15,7 @@ Card = styled(Card)`
   border-radius: var(--radius);
   border: ${(props) => (props.thickBorders && '2px') || '1px'} solid ${(props) => props.borderColor || 'transparent'};
   background-color: ${(props) => props.bgColor || 'transparent'};
+  background-clip: padding-box;
 `
 
 export default Card
