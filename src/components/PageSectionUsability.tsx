@@ -1,11 +1,14 @@
 import React, { FC } from 'react'
 import styled from 'styled-components'
 
+import { deviceBreakPoints } from '../styles/global-style'
+
 import SectionTextHeader from './SectionTextHeader'
 import PageSectionContainer from './PageSectionContainer'
 import Button from './Button'
 import Columns from './Columns'
 import Column from './Column'
+import ImageSwiper from './ImageSwiper'
 
 import BirdsImage from '../images/svgs/birds.svg'
 import YellowMountainsImage from '../images/svgs/yellow-mountains.svg'
@@ -39,6 +42,7 @@ let PageSectionUsability: FC<PageSectionUsabilityProps> = ({ className }) => (
           <img src={WalletEverythingIsReadyImage} alt="Wallet everything is ready screen" />
         </ImageColumn>
       </ImagesColumns>
+      <ImageSwiperStyled />
     </PageSectionContainerStyled>
     <YellowMountainsImageStyled />
     <BirdsImageStyled />
@@ -52,6 +56,10 @@ PageSectionUsability = styled(PageSectionUsability)`
   color: ${({ theme }) => theme.textPrimary};
   position: relative;
   overflow: hidden;
+
+  @media ${deviceBreakPoints.mobile} {
+    padding-bottom: 0;
+  }
 `
 
 const PageSectionContainerStyled = styled(PageSectionContainer)`
@@ -89,6 +97,10 @@ const ImagesColumns = styled(Columns)`
   align-items: center;
   margin-top: var(--spacing-40);
   position: relative;
+
+  @media ${deviceBreakPoints.mobile} {
+    display: none;
+  }
 `
 
 const ImageColumn = styled(Column)`
@@ -105,6 +117,23 @@ const YellowMountainsImageStyled = styled(YellowMountainsImage)`
   bottom: -260px;
   left: -62px;
   right: -30px;
+
+  @media ${deviceBreakPoints.mobile} {
+    bottom: -152px;
+  }
+
+  @media ${deviceBreakPoints.smallMobile} {
+    bottom: -80px;
+  }
+`
+
+const ImageSwiperStyled = styled(ImageSwiper)`
+  display: none;
+  margin-top: var(--spacing-40);
+
+  @media ${deviceBreakPoints.mobile} {
+    display: block;
+  }
 `
 
 export default PageSectionUsability
