@@ -7,12 +7,14 @@ interface SectionTextHeaderProps {
   subtitle: string
   largeSubtitle?: boolean
   centered?: boolean
+  description?: string
 }
 
-let SectionTextHeader: FC<SectionTextHeaderProps> = ({ className, title, subtitle }) => (
+let SectionTextHeader: FC<SectionTextHeaderProps> = ({ className, title, subtitle, description }) => (
   <header className={className}>
     <h2>{title}</h2>
     <div>{subtitle}</div>
+    {description && <p>{description}</p>}
   </header>
 )
 
@@ -30,6 +32,14 @@ SectionTextHeader = styled(SectionTextHeader)`
       color: ${({ theme }) => theme.textSecondary};
       font-size: ${(props) => (props.largeSubtitle ? 'var(--fontSize-24)' : 'var(--fontSize-18)')};
     }
+  }
+
+  p {
+    margin-top: var(--spacing-10);
+    margin-bottom: 0;
+    color: ${({ theme }) => theme.textTetriary};
+    font-size: var(--fontSize-18);
+    max-width: var(--width-564);
   }
 `
 

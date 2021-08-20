@@ -55,7 +55,6 @@ PageSectionUsability = styled(PageSectionUsability)`
   background-color: ${({ theme }) => theme.body};
   color: ${({ theme }) => theme.textPrimary};
   position: relative;
-  overflow: hidden;
 
   @media ${deviceBreakPoints.mobile} {
     padding-bottom: 0;
@@ -114,7 +113,7 @@ const YellowMountainsImageStyled = styled(YellowMountainsImage)`
   width: auto;
 
   /* TODO: Temporary values */
-  bottom: -260px;
+  bottom: -262px;
   left: -62px;
   right: -30px;
 

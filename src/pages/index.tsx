@@ -8,6 +8,7 @@ import PageSectionHero from '../components/PageSectionHero'
 import PageSectionIntro from '../components/PageSectionIntro'
 import PageSectionTechnology from '../components/PageSectionTechnology'
 import PageSectionUsability from '../components/PageSectionUsability'
+import PageSectionStartNow from '../components/PageSectionStartNow'
 
 const IndexPage = () => {
   return (
@@ -21,6 +22,7 @@ const IndexPage = () => {
         </ThemeProvider>
         <ThemeProvider theme={lightTheme}>
           <PageSectionUsability></PageSectionUsability>
+          <PageSectionStartNow></PageSectionStartNow>
         </ThemeProvider>
       </main>
     </>

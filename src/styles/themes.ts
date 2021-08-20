@@ -8,14 +8,16 @@ export const darkTheme: DefaultTheme = {
 
   textPrimary: 'var(--color-light)',
   textSecondary: 'var(--color-text-grey-light-1)',
-  textAccent: '#FFD036' // TODO: Change
+  textTetriary: '',
+  textAccent: '#FFD036', // TODO: Change
+
+  bgPrimary: 'var(--color-dark)',
+  bgSecondary: 'var(--color-dark-1)',
+  bgTertiary: 'var(--color-grey-dark)'
+  // bgHighlight: 'rgba(0, 0, 0, 0.1)',
 
   // link: '#53A9F5',
   // linkHighlight: '#0E82E7',
-
-  // bgPrimary: '#212126',
-  // bgSecondary: '#18191C',
-  // bgHighlight: 'rgba(0, 0, 0, 0.1)',
 
   // borderPrimary: '#34353A',
   // borderHighlight: '#585962',
@@ -29,14 +31,16 @@ export const lightTheme: DefaultTheme = {
 
   textPrimary: 'var(--color-dark)',
   textSecondary: 'var(--color-text-grey-dark-1)',
-  textAccent: 'var(--color-text-grey-dark-3)'
+  textTetriary: 'var(--color-grey-dark-2)',
+  textAccent: 'var(--color-text-grey-dark-3)',
+
+  bgPrimary: 'var(--color-light)',
+  bgSecondary: 'var(--color-light-1)',
+  bgTertiary: 'var(--color-grey-light)'
+  // bgHighlight: 'rgba(0, 0, 0, 0.1)'
 
   // link: '#0E82E7',
   // linkHighlight: '#53A9F5',
-
-  // bgPrimary: 'white',
-  // bgSecondary: '#FAFAFA',
-  // bgHighlight: 'rgba(0, 0, 0, 0.02)',
 
   // borderPrimary: '#F2F2F3',
   // borderHighlight: '#D1D1D4',

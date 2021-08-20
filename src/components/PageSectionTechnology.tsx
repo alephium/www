@@ -1,7 +1,8 @@
 import React, { FC } from 'react'
-import styled from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
 
 import { deviceBreakPoints } from '../styles/global-style'
+import { lightTheme } from '../styles/themes'
 
 import PageSectionContainer from './PageSectionContainer'
 import SectionTextHeader from './SectionTextHeader'
@@ -106,32 +107,34 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className }) => (
         </Columns>
       </PageSectionContainer>
     </VmsSubsection>
-    <NumbersSection>
-      <NumbersPageSectionContainer>
-        <SubsectionTextHeaderStyled
-          title="Some numbers"
-          subtitle="We're focusing on efficiency, security and scalability. We took our time to make sure we transform theory to actual technologies."
-          titleColor="var(--color-dark)"
-          subtitleColor="var(--color-text-grey-light-4)"
-          condensed
-        />
-        <Columns>
-          <NumbersColumn>
-            <NumbersInfo className="numbers-info" number="16" description="Shards running on mainnet." />
-          </NumbersColumn>
-          <NumbersColumn>
-            <NumbersInfo
-              className="numbers-info"
-              number="100MB"
-              description="of RAM needed by the full node. Runs on a Raspberry-PI."
-            />
-          </NumbersColumn>
-          <NumbersColumn>
-            <NumbersInfo className="numbers-info" number="3 years" description='of "under the radar" R&D.' />
-          </NumbersColumn>
-        </Columns>
-      </NumbersPageSectionContainer>
-    </NumbersSection>
+    <ThemeProvider theme={lightTheme}>
+      <NumbersSection>
+        <NumbersPageSectionContainer>
+          <SubsectionTextHeaderStyled
+            title="Some numbers"
+            subtitle="We're focusing on efficiency, security and scalability. We took our time to make sure we transform theory to actual technologies."
+            titleColor="var(--color-dark)"
+            subtitleColor="var(--color-text-grey-light-4)"
+            condensed
+          />
+          <Columns>
+            <NumbersColumn>
+              <NumbersInfo className="numbers-info" number="16" description="Shards running on mainnet." />
+            </NumbersColumn>
+            <NumbersColumn>
+              <NumbersInfo
+                className="numbers-info"
+                number="100MB"
+                description="of RAM needed by the full node. Runs on a Raspberry-PI."
+              />
+            </NumbersColumn>
+            <NumbersColumn>
+              <NumbersInfo className="numbers-info" number="3 years" description='of "under the radar" R&D.' />
+            </NumbersColumn>
+          </Columns>
+        </NumbersPageSectionContainer>
+      </NumbersSection>
+    </ThemeProvider>
   </section>
 )
 
@@ -252,7 +255,7 @@ const SmartContractSubsection = styled.section`
 `
 
 const NumbersSection = styled.section`
-  background-color: var(--color-grey-light);
+  background-color: ${({ theme }) => theme.bgTertiary};
   padding: var(--spacing-22) 0;
 `
 

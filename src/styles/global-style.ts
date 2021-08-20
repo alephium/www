@@ -19,10 +19,12 @@ const GlobalStyle = createGlobalStyle`
     --page-width-shrinked: 68rem;
 
     --width-38: 2.375rem;
+    --width-82: 5.125rem;
     --width-120: 7.5rem;
     --width-368: 23rem;
     --width-476: 29.75rem;
     --width-488: 30.5rem;
+    --width-564: 35.25rem;
     --width-584: 36.5rem;
 
     --spacing-1: 0.25rem;
@@ -91,6 +93,7 @@ const GlobalStyle = createGlobalStyle`
     --fontSize-70: 4.375rem;
 
     --color-light: #fff;
+    --color-light-1: #f8f8f8;
     --color-text-grey-light-1: #808080;
 
     --color-dark: #000;
