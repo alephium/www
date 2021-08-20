@@ -11,13 +11,13 @@ import SectionTextTeaser from './SectionTextTeaser'
 import SubsectionTextHeader from './SubsectionTextHeader'
 import NumbersInfo from './NumbersInfo'
 
-import BlockflowImage from '../images/blockflow.svg'
-import StackImage from '../images/stack.svg'
-import LeafImage from '../images/leaf.svg'
-import VmDotsImage from '../images/vm-dots.svg'
-import PolwBackgroundImage from '../images/polw-background.svg'
-import SmartContractImage from '../images/smart-contract.svg'
-import VmsImage from '../images/vms.svg'
+import BlockflowImage from '../images/svgs/blockflow.svg'
+import StackImage from '../images/svgs/stack.svg'
+import LeafImage from '../images/svgs/leaf.svg'
+import VmDotsImage from '../images/svgs/vm-dots.svg'
+import PolwBackgroundImage from '../images/svgs/polw-background.svg'
+import SmartContractImage from '../images/svgs/smart-contract.svg'
+import VmsImage from '../images/svgs/vms.svg'
 
 interface PageSectionTechnologyProps {
   className?: string

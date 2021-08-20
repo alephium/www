@@ -3,9 +3,9 @@ import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../styles/global-style'
 
-import HookImage from '../images/hook.svg'
-import WalletImage from '../images/wallet.svg'
-import MiningImage from '../images/mining.svg'
+import HookImage from '../images/svgs/hook.svg'
+import WalletImage from '../images/svgs/wallet.svg'
+import MiningImage from '../images/svgs/mining.svg'
 
 import PageSectionContainer from './PageSectionContainer'
 import CardEngagement from './CardEngagement'

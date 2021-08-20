@@ -21,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
     --width-38: 2.375rem;
     --width-120: 7.5rem;
     --width-368: 23rem;
+    --width-476: 29.75rem;
     --width-488: 30.5rem;
     --width-584: 36.5rem;
 
@@ -42,6 +43,7 @@ const GlobalStyle = createGlobalStyle`
     --spacing-24: 6rem;
     --spacing-32: 8rem;
     --spacing-40: 10rem;
+    --spacing-48: 12rem;
     --spacing-56: 14rem;
     --spacing-58: 14.5rem;
     --spacing-60: 15rem;
@@ -49,6 +51,7 @@ const GlobalStyle = createGlobalStyle`
     --spacing-80: 20rem;
 
     --radius: 1rem;
+    --radius-full: 9999px;
 
     --fontFamily-sans: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
       "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -77,9 +80,9 @@ const GlobalStyle = createGlobalStyle`
     --fontSize-6: 2.488rem;
     --fontSize-7: 2.986rem;
 
-    --line-height-22: 1.375rem;
-    --line-height-26: 1.625rem;
-    --line-height-36: 2.25rem;
+    --lineHeight-22: 1.375rem;
+    --lineHeight-26: 1.625rem;
+    --lineHeight-36: 2.25rem;
     --fontSize-14: 0.875rem;
     --fontSize-18: 1.125rem;
     --fontSize-24: 1.5rem;
@@ -88,24 +91,29 @@ const GlobalStyle = createGlobalStyle`
     --fontSize-70: 4.375rem;
 
     --color-light: #fff;
+    --color-text-grey-light-1: #808080;
+
     --color-dark: #000;
+    --color-text-grey-dark-1: #8F8F8D;
+    --color-text-grey-dark-3: #737373;
+
     --color-dark-1: #111;
     --color-grey-dark: #1A1A1A;
     --color-grey-dark-2: #343434;
     --color-grey-light: #f5f5f5;
     --color-grey-light-1: #ddd;
-    --color-text-grey-light-1: #808080;
     --color-text-grey-light-2: #A1A1A1;
     --color-text-grey-light-3: #ccc;
     --color-text-grey-light-4: #707070;
-    --color-text-grey-dark-1: #8F8F8D;
     --color-text-grey-dark-2: #6B6B6B;
     --color-salmon: #ff5d51;
     --color-blue: #1200da;
+    --color-blue-2: #479CFF;
     --color-brown: #393535;
   }
 
   body {
+    /* TODO: Remove and use theme instead */
     background-color: var(--color-dark);
     color: var(--color-light);
     font-family: var(--fontFamily-sans);

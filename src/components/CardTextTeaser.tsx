@@ -47,7 +47,7 @@ CardTextTeaser = styled(CardTextTeaser)`
 
   .content {
     color: var(--color-text-grey-light-1);
-    line-height: var(--line-height-22);
+    line-height: var(--lineHeight-22);
   }
 `
 

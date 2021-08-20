@@ -5,8 +5,8 @@ import { deviceBreakPoints } from '../styles/global-style'
 
 import PageSectionContainer from './PageSectionContainer'
 import NavigationMenu from './NavigationMenu'
-import Logo from '../images/logo.svg'
-import NetworkImage from '../images/network.svg'
+import Logo from '../images/svgs/logo.svg'
+import NetworkImage from '../images/svgs/network.svg'
 
 interface PageSectionHeroProps {
   className?: string

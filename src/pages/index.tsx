@@ -1,21 +1,27 @@
 import React from 'react'
+import { ThemeProvider } from 'styled-components'
 
 import GlobalStyle from '../styles/global-style'
+import { darkTheme, lightTheme } from '../styles/themes'
 
 import PageSectionHero from '../components/PageSectionHero'
-import PageSectionTechnology from '../components/PageSectionTechnology'
 import PageSectionIntro from '../components/PageSectionIntro'
-
-import styled from 'styled-components'
+import PageSectionTechnology from '../components/PageSectionTechnology'
+import PageSectionUsability from '../components/PageSectionUsability'
 
 const IndexPage = () => {
   return (
     <>
       <GlobalStyle />
       <main>
-        <PageSectionHero></PageSectionHero>
-        <PageSectionIntro></PageSectionIntro>
-        <PageSectionTechnology></PageSectionTechnology>
+        <ThemeProvider theme={darkTheme}>
+          <PageSectionHero></PageSectionHero>
+          <PageSectionIntro></PageSectionIntro>
+          <PageSectionTechnology></PageSectionTechnology>
+        </ThemeProvider>
+        <ThemeProvider theme={lightTheme}>
+          <PageSectionUsability></PageSectionUsability>
+        </ThemeProvider>
       </main>
     </>
   )

@@ -22,11 +22,12 @@ SectionTextHeader = styled(SectionTextHeader)`
   h2 {
     font-size: var(--fontSize-50);
     font-weight: var(--fontWeight-semibold);
-    margin-bottom: 0;
+    color: ${({ theme }) => theme.textPrimary};
+    margin: 0;
 
     & + div {
       margin-top: var(--spacing-4);
-      color: var(--color-text-grey-light-1);
+      color: ${({ theme }) => theme.textSecondary};
       font-size: ${(props) => (props.largeSubtitle ? 'var(--fontSize-24)' : 'var(--fontSize-18)')};
     }
   }

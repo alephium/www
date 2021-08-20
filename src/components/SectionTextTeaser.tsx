@@ -38,7 +38,7 @@ SectionTextTeaser = styled(SectionTextTeaser)`
     display: flex;
     gap: var(--spacing-14);
     font-size: var(--fontSize-18);
-    line-height: var(--line-height-26);
+    line-height: var(--lineHeight-26);
     font-weight: var(--fontWeight-semibold);
     margin-top: var(--spacing-10);
 

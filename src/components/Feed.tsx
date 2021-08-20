@@ -2,9 +2,9 @@ import React, { FC } from 'react'
 
 import Card from './Card'
 import FeedItem from './FeedItem'
-import DownloadIcon from '../images/download.svg'
-import TestnetIcon from '../images/testnet.svg'
-import HiringIcon from '../images/hiring.svg'
+import DownloadIcon from '../images/svgs/download.svg'
+import TestnetIcon from '../images/svgs/testnet.svg'
+import HiringIcon from '../images/svgs/hiring.svg'
 
 const Feed = () => (
   <Card bgColor="var(--color-grey-dark)">

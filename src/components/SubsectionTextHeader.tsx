@@ -18,11 +18,11 @@ let SubsectionTextHeader: FC<SubsectionTextHeaderProps> = ({ title, subtitle, cl
 )
 
 SubsectionTextHeader = styled(SubsectionTextHeader)`
-  max-width: ${({ condensed }) => (condensed ? 'var(--width-488)' : 'auto')};}
+  max-width: ${({ condensed }) => (condensed ? 'var(--width-476)' : 'auto')};}
 
   h3 {
     font-size: var(--fontSize-28);
-    line-height: var(--line-height-36);
+    line-height: var(--lineHeight-36);
     font-weight: var(--fontWeight-semibold);
     margin-top: 0;
     margin-bottom: var(--spacing-4);
@@ -30,8 +30,8 @@ SubsectionTextHeader = styled(SubsectionTextHeader)`
 
     & + div {
       color: ${({ subtitleColor }) => subtitleColor || 'var(--color-text-grey-light-1)'};
-      font-size: var(--line-height-18);
-      line-height: var(--line-height-26);
+      font-size: var(--fontSize-18);
+      line-height: var(--lineHeight-26);
     }
   }
 `

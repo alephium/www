@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { deviceBreakPoints } from '../styles/global-style'
 
 import ArrowedLink from './ArrowedLink'
-import GitHubIcon from '../images/brand-icon-github.svg'
+import GitHubIcon from '../images/svgs/brand-icon-github.svg'
 
 interface NavigationMenuProps {
   className?: string

@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import styled from 'styled-components'
 
-import Arrow from '../images/arrow-right.svg'
+import Arrow from '../images/svgs/arrow-right.svg'
 
 export interface ArrowedLinkProps {
   className?: string
