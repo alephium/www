@@ -13,8 +13,10 @@ const GlobalStyle = createGlobalStyle`
     --maxWidth-2xl: 42rem;
     --maxWidth-3xl: 48rem;
     --maxWidth-4xl: 56rem;
-    --maxWidth-5xl: 82.5rem;
     --maxWidth-full: "100%";
+
+    --page-width: 82.5rem;
+    --page-width-shrinked: 68rem;
 
     --width-38: 2.375rem;
     --width-120: 7.5rem;
@@ -34,7 +36,9 @@ const GlobalStyle = createGlobalStyle`
     --spacing-12: 3rem;
     --spacing-14: 3.5rem;
     --spacing-16: 4rem;
+    --spacing-18: 4.5rem;
     --spacing-20: 5rem;
+    --spacing-22: 5.5rem;
     --spacing-24: 6rem;
     --spacing-32: 8rem;
     --spacing-40: 10rem;
@@ -88,9 +92,12 @@ const GlobalStyle = createGlobalStyle`
     --color-dark-1: #111;
     --color-grey-dark: #1A1A1A;
     --color-grey-dark-2: #343434;
+    --color-grey-light: #f5f5f5;
+    --color-grey-light-1: #ddd;
     --color-text-grey-light-1: #808080;
     --color-text-grey-light-2: #A1A1A1;
     --color-text-grey-light-3: #ccc;
+    --color-text-grey-light-4: #707070;
     --color-text-grey-dark-1: #8F8F8D;
     --color-text-grey-dark-2: #6B6B6B;
     --color-salmon: #ff5d51;

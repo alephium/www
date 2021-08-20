@@ -12,7 +12,7 @@ import CardEngagement from './CardEngagement'
 import Feed from './Feed'
 import Column from './Column'
 import Columns from './Columns'
-import SectionTitle from './SectionTitle'
+import SectionTextHeader from './SectionTextHeader'
 
 interface PageSectionIntroProps {
   className?: string
@@ -37,7 +37,7 @@ let PageSectionIntro: FC<PageSectionIntroProps> = ({ className }) => (
     <PageSectionContainer>
       <IntroColumns gap="var(--spacing-80)">
         <Column>
-          <SectionTitle title="Start" subtitle="Engage with us." />
+          <SectionTextHeader title="Start" subtitle="Engage with us." />
           <IntroColumnContent>
             <CardEngagement
               title="Start mining"
@@ -76,7 +76,7 @@ let PageSectionIntro: FC<PageSectionIntroProps> = ({ className }) => (
           </IntroColumnContent>
         </Column>
         <Column>
-          <SectionTitle title="Feed" subtitle="What's cooking?" />
+          <SectionTextHeader title="Feed" subtitle="What's cooking?" />
           <IntroColumnContent>
             <Feed />
           </IntroColumnContent>

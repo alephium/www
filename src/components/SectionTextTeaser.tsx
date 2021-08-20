@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { deviceBreakPoints } from '../styles/global-style'
 
 import Card from './Card'
+import SubsectionTextHeader from './SubsectionTextHeader'
 import ArrowedLink, { ArrowedLinkProps } from './ArrowedLink'
 
 interface SectionTextTeaserProps {
@@ -17,8 +18,7 @@ interface SectionTextTeaserProps {
 
 let SectionTextTeaser: FC<SectionTextTeaserProps> = ({ className, title, content, IconComponent, iconText, links }) => (
   <div className={className}>
-    <h3>{title}</h3>
-    <div>{content}</div>
+    <SubsectionTextHeader title={title} subtitle={content} />
     <Card borderColor="var(--color-brown)" className="card">
       <IconComponent />
       <div>{iconText}</div>
@@ -34,26 +34,13 @@ let SectionTextTeaser: FC<SectionTextTeaserProps> = ({ className, title, content
 )
 
 SectionTextTeaser = styled(SectionTextTeaser)`
-  h3 {
-    font-size: var(--fontSize-28);
-    line-height: var(--line-height-36);
-    font-weight: var(--fontWeight-semibold);
-    margin-top: 0;
-
-    & + div {
-      color: var(--color-text-grey-light-1);
-      font-size: var(--line-height-18);
-      line-height: var(--line-height-26);
-      margin-bottom: var(--spacing-10);
-    }
-  }
-
   > .card {
     display: flex;
     gap: var(--spacing-14);
     font-size: var(--fontSize-18);
     line-height: var(--line-height-26);
     font-weight: var(--fontWeight-semibold);
+    margin-top: var(--spacing-10);
 
     @media ${deviceBreakPoints.smallMobile} {
       flex-direction: column;

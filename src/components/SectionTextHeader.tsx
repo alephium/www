@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import styled from 'styled-components'
 
-interface SectionTitleProps {
+interface SectionTextHeaderProps {
   className?: string
   title: string
   subtitle: string
@@ -9,14 +9,14 @@ interface SectionTitleProps {
   centered?: boolean
 }
 
-let SectionTitle: FC<SectionTitleProps> = ({ className, title, subtitle }) => (
+let SectionTextHeader: FC<SectionTextHeaderProps> = ({ className, title, subtitle }) => (
   <header className={className}>
     <h2>{title}</h2>
     <div>{subtitle}</div>
   </header>
 )
 
-SectionTitle = styled(SectionTitle)`
+SectionTextHeader = styled(SectionTextHeader)`
   text-align: ${(props) => (props.centered ? 'center' : 'left')};
 
   h2 {
@@ -32,4 +32,4 @@ SectionTitle = styled(SectionTitle)`
   }
 `
 
-export default SectionTitle
+export default SectionTextHeader
