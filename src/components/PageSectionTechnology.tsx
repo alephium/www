@@ -84,7 +84,7 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className }) => (
         </Columns>
       </PageSectionContainer>
     </SmartContractSubsection>
-    <ProofOfLessWorkSubsection>
+    <VmsSubsection>
       <PageSectionContainer>
         <Columns gap="8.5rem">
           <Column>
@@ -101,7 +101,7 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className }) => (
           </CenteredColumn>
         </Columns>
       </PageSectionContainer>
-    </ProofOfLessWorkSubsection>
+    </VmsSubsection>
   </section>
 )
 
@@ -155,6 +155,12 @@ const VmsImageStyled = styled(VmsImage)`
 const ProofOfLessWorkSubsection = styled.div`
   background-color: var(--color-grey-dark);
   padding: var(--spacing-70) 0 var(--spacing-56);
+  position: relative;
+`
+
+const VmsSubsection = styled.div`
+  background-color: var(--color-grey-dark);
+  padding: var(--spacing-60) 0;
   position: relative;
 `
 
