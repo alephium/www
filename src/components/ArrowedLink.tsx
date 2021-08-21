@@ -1,6 +1,8 @@
 import React, { FC } from 'react'
 import styled from 'styled-components'
 
+import SimpleLink from './SimpleLink'
+
 import Arrow from '../images/svgs/arrow-right.svg'
 
 export interface ArrowedLinkProps {
@@ -12,16 +14,11 @@ export interface ArrowedLinkProps {
 }
 
 let ArrowedLink: FC<ArrowedLinkProps> = ({ className, children, IconComponent, to, newTab }) => (
-  <a
-    className={className}
-    href={to}
-    target={(newTab && '_blank') || undefined}
-    rel={(newTab && 'noopener') || undefined}
-  >
+  <SimpleLink className={className} to={to} newTab={newTab}>
     {IconComponent && <IconComponent className="icon" />}
     {children}
     <Arrow className="arrow" />
-  </a>
+  </SimpleLink>
 )
 
 ArrowedLink = styled(ArrowedLink)`
@@ -29,8 +26,6 @@ ArrowedLink = styled(ArrowedLink)`
   align-items: center;
   font-weight: var(--fontWeight-semibold);
   font-size: var(--fontSize-18);
-  text-decoration: none;
-  color: ${({ theme }) => theme.link};
 
   &:hover {
     .arrow {

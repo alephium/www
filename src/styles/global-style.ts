@@ -46,6 +46,7 @@ const GlobalStyle = createGlobalStyle`
     --spacing-32: 8rem;
     --spacing-40: 10rem;
     --spacing-48: 12rem;
+    --spacing-50: 12.5rem;
     --spacing-56: 14rem;
     --spacing-58: 14.5rem;
     --spacing-60: 15rem;

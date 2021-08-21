@@ -10,6 +10,7 @@ import PageSectionTechnology from '../components/PageSectionTechnology'
 import PageSectionUsability from '../components/PageSectionUsability'
 import PageSectionStartNow from '../components/PageSectionStartNow'
 import PageSectionFollowUs from '../components/PageSectionFollowUs'
+import Footer from '../components/Footer'
 
 const IndexPage = () => {
   return (
@@ -25,6 +26,9 @@ const IndexPage = () => {
           <PageSectionUsability />
           <PageSectionStartNow />
           <PageSectionFollowUs />
+        </ThemeProvider>
+        <ThemeProvider theme={darkTheme}>
+          <Footer />
         </ThemeProvider>
       </main>
     </>
