@@ -39,7 +39,7 @@ SectionTextTeaser = styled(SectionTextTeaser)`
     gap: var(--spacing-14);
     font-size: var(--fontSize-18);
     line-height: var(--lineHeight-26);
-    font-weight: var(--fontWeight-semibold);
+    font-weight: var(--fontWeight-bold);
     margin-top: var(--spacing-10);
 
     @media ${deviceBreakPoints.smallMobile} {

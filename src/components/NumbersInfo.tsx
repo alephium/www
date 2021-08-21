@@ -15,7 +15,7 @@ let NumbersInfo: FC<NumbersInfoProps> = ({ number, description, className }) => 
 )
 
 NumbersInfo = styled(NumbersInfo)`
-  font-weight: var(--fontWeight-semibold);
+  font-weight: var(--fontWeight-bold);
   color: var(--color-grey-dark-2);
 
   .number {

@@ -5,16 +5,6 @@ const GlobalStyle = createGlobalStyle`
   ${normalize}
 
   :root {
-    --maxWidth-xs: 20rem;
-    --maxWidth-sm: 24rem;
-    --maxWidth-md: 28rem;
-    --maxWidth-lg: 32rem;
-    --maxWidth-xl: 36rem;
-    --maxWidth-2xl: 42rem;
-    --maxWidth-3xl: 48rem;
-    --maxWidth-4xl: 56rem;
-    --maxWidth-full: "100%";
-
     --page-width: 82.5rem;
     --page-width-shrinked: 68rem;
 
@@ -27,7 +17,6 @@ const GlobalStyle = createGlobalStyle`
     --width-564: 35.25rem;
     --width-584: 36.5rem;
 
-    --spacing-1: 0.25rem;
     --spacing-2: 0.5rem;
     --spacing-3: 0.75rem;
     --spacing-4: 1rem;
@@ -42,7 +31,6 @@ const GlobalStyle = createGlobalStyle`
     --spacing-18: 4.5rem;
     --spacing-20: 5rem;
     --spacing-22: 5.5rem;
-    --spacing-24: 6rem;
     --spacing-32: 8rem;
     --spacing-40: 10rem;
     --spacing-48: 12rem;
@@ -53,54 +41,68 @@ const GlobalStyle = createGlobalStyle`
     --spacing-70: 17.5rem;
     --spacing-80: 20rem;
 
+    /* Spatial system with 8pt linear scale */
+    /* Inspiration: https://www.designsystems.com/space-grids-and-layouts/ */
+    --spatial-8-half: 0.25rem; // 4pt
+    --spatial-8-1: 0.5rem;     // 8pt
+    --spatial-8-2: 1rem;       // 16pt
+    --spatial-8-3: 1.5rem;     // 24pt
+    --spatial-8-4: 2rem;       // 32pt
+    --spatial-8-5: 2.5rem;     // 40pt
+    --spatial-8-6: 3rem;       // 48pt
+    --spatial-8-7: 3.5rem;     // 56pt
+    --spatial-8-8: 4rem;       // 64pt
+    --spatial-8-9: 4.5rem;     // 72pt
+    --spatial-8-10: 5rem;      // 80pt
+    --spatial-8-11: 5.5rem;    // 88pt
+    --spatial-8-12: 6rem;      // 96pt
+    --spatial-8-13: 6.5rem;    // 104pt
+    --spatial-8-14: 7rem;      // 112pt
+    --spatial-8-15: 7.5rem;    // 120pt
+    --spatial-8-16: 8rem;      // 128pt
+    --spatial-8-17: 8.5rem;    // 136pt
+    --spatial-8-18: 9rem;      // 144pt
+    --spatial-8-19: 9.5rem;    // 152pt
+    --spatial-8-20: 10rem;     // 160pt
+    --spatial-8-21: 10.5rem;   // 168pt
+    --spatial-8-22: 11rem;     // 176pt
+    --spatial-8-23: 11.5rem;   // 184pt
+    --spatial-8-24: 12rem;     // 192pt
+    --spatial-8-25: 12.5rem;   // 200pt
+    --spatial-8-26: 13rem;     // 208pt
+    --spatial-8-27: 13.5rem;   // 216pt
+    --spatial-8-28: 14rem;     // 224pt
+    --spatial-8-29: 14.5rem;   // 232pt
+    --spatial-8-30: 15rem;     // 240pt
+
     --radius: 1rem;
     --radius-full: 9999px;
 
-    --fontFamily-sans: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-      "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --fontFamily-sans: Inter, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
     --fontFamily-serif: "Times New Roman", Times, serif;
-    --font-body: var(--fontFamily-serif);
     --font-heading: var(--fontFamily-sans);
     --fontWeight-normal: 400;
     --fontWeight-medium: 500;
-    --fontWeight-semibold: 600;
-    --fontWeight-bold: 700;
-    --fontWeight-extrabold: 800;
-    --fontWeight-black: 900;
-    --fontSize-root: 16px;
-    --lineHeight-none: 1;
-    --lineHeight-tight: 1.1;
-    --lineHeight-normal: 1.5;
-    --lineHeight-relaxed: 1.625;
+    --fontWeight-bold: 600;
 
-    /* 1.200 Minor Third Type Scale */
-    --fontSize-0: 0.833rem;
-    --fontSize-1: 1rem;
-    --fontSize-2: 1.2rem;
-    --fontSize-3: 1.44rem;
-    --fontSize-4: 1.728rem;
-    --fontSize-5: 2.074rem;
-    --fontSize-6: 2.488rem;
-    --fontSize-7: 2.986rem;
-
-    --lineHeight-22: 1.375rem;
-    --lineHeight-26: 1.625rem;
-    --lineHeight-36: 2.25rem;
+    /* TODO: Maybe check https://www.designsystems.com/typography-guides/ for
+    inspiration in defining a typography system */
     --fontSize-14: 0.875rem;
     --fontSize-18: 1.125rem;
     --fontSize-24: 1.5rem;
     --fontSize-28: 1.75rem;
     --fontSize-50: 3.125rem;
     --fontSize-70: 4.375rem;
+    --lineHeight-22: 1.375rem;
+    --lineHeight-26: 1.625rem;
+    --lineHeight-36: 2.25rem;
 
     --color-light: #fff;
     --color-light-1: #f8f8f8;
     --color-text-grey-light-1: #808080;
-
     --color-dark: #000;
     --color-text-grey-dark-1: #8F8F8D;
     --color-text-grey-dark-3: #737373;
-
     --color-dark-1: #111;
     --color-grey-dark: #1A1A1A;
     --color-grey-dark-2: #343434;
@@ -110,7 +112,6 @@ const GlobalStyle = createGlobalStyle`
     --color-text-grey-light-2: #A1A1A1;
     --color-text-grey-light-3: #ccc;
     --color-text-grey-light-4: #707070;
-    --color-text-grey-dark-2: #6B6B6B;
     --color-salmon: #ff5d51;
     --color-blue: #1200da;
     --color-blue-2: #479CFF;
@@ -118,7 +119,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    /* TODO: Remove and use theme instead */
+    /* TODO: Remove colors and use theme instead */
     background-color: var(--color-dark);
     color: var(--color-light);
     font-family: var(--fontFamily-sans);

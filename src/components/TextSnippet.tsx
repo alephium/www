@@ -25,7 +25,7 @@ TextSnippet = styled(TextSnippet)`
   h3 {
     font-size: ${({ bigTitle }) => (bigTitle ? 'var(--fontSize-50)' : 'var(--fontSize-28)')};
     line-height: ${({ bigTitle }) => (bigTitle ? 'var(--fontSize-50)' : 'var(--lineHeight-36)')};
-    font-weight: var(--fontWeight-semibold);
+    font-weight: var(--fontWeight-bold);
     margin: 0;
   }
 

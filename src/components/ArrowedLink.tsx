@@ -24,7 +24,7 @@ let ArrowedLink: FC<ArrowedLinkProps> = ({ className, children, IconComponent, t
 ArrowedLink = styled(ArrowedLink)`
   display: flex;
   align-items: center;
-  font-weight: var(--fontWeight-semibold);
+  font-weight: var(--fontWeight-bold);
   font-size: var(--fontSize-18);
 
   &:hover {

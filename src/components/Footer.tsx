@@ -102,7 +102,7 @@ FooterColumn = styled(FooterColumn)`
   }
 
   .title {
-    font-weight: var(--fontWeight-semibold);
+    font-weight: var(--fontWeight-bold);
   }
 `
 

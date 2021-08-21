@@ -74,7 +74,7 @@ GridCard = styled(GridCard)`
 
 const TextSnippetStyled = styled(TextSnippet)`
   h3 {
-    font-weight: var(--fontWeight-semibold);
+    font-weight: var(--fontWeight-bold);
     margin-bottom: ${(props) => (props.subtitle ? 'var(--spacing-2)' : 'var(--spacing-6)')};
     color: ${({ theme }) => theme.textPrimary};
   }

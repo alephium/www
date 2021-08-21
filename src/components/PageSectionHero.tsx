@@ -89,7 +89,7 @@ PageSectionHero = styled(PageSectionHero)`
 `
 
 const TextSnippetStyled = styled(TextSnippet)`
-  max-width: var(--maxWidth-xl);
+  max-width: var(--width-564);
   color: var(--color-text-grey-light-1);
 `
 

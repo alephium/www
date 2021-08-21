@@ -36,7 +36,7 @@ NavigationMenu = styled(NavigationMenu)`
 
   .nav-start .nav-item {
     font-weight: var(--fontWeight-bold);
-    font-size: var(--fontSize-2);
+    font-size: var(--fontSize-24);
   }
 
   .nav-end {
