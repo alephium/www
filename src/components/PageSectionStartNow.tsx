@@ -18,9 +18,9 @@ interface PageSectionStartNowProps {
 
 let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className }) => (
   <section className={className}>
-    <PageSectionContainerStyled>
+    <PageSectionContainer>
       <SectionHeader>
-        <SectionTextHeaderStyled
+        <SectionTextHeader
           title="Start now"
           subtitle="Build and contribute."
           description="Alephium is already live. You can start building, earning, and contributing right now."
@@ -69,7 +69,7 @@ let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className }) => (
           </GridCard>
         </ThemeProvider>
       </Grid>
-    </PageSectionContainerStyled>
+    </PageSectionContainer>
   </section>
 )
 
@@ -79,10 +79,6 @@ PageSectionStartNow = styled(PageSectionStartNow)`
   background-color: ${({ theme }) => theme.bgSecondary};
   color: ${({ theme }) => theme.textPrimary};
 `
-
-const SectionTextHeaderStyled = styled(SectionTextHeader)``
-
-const PageSectionContainerStyled = styled(PageSectionContainer)``
 
 const SectionHeader = styled.div`
   display: flex;
