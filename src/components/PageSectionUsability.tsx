@@ -9,6 +9,7 @@ import Button from './Button'
 import Columns from './Columns'
 import Column from './Column'
 import ImageSwiper from './ImageSwiper'
+import TextSnippet from './TextSnippet'
 
 import BirdsImage from '../images/svgs/birds.svg'
 import YellowMountainsImage from '../images/svgs/yellow-mountains.svg'
@@ -22,13 +23,13 @@ interface PageSectionUsabilityProps {
 
 let PageSectionUsability: FC<PageSectionUsabilityProps> = ({ className }) => (
   <section className={className}>
-    <SectionTextHeaderStyled title="Usability" subtitle="Designed for humans." centered largeSubtitle />
+    <SectionTextHeaderStyled title="Usability" subtitle="Designed for humans." centered bigSubtitle />
     <PageSectionContainerStyled>
       <CenteredContent>
-        <IntroText>
+        <TextSnippetStyled bigText>
           Our wallet is only the first step. We want to make blockchain accessible to anyone. Technology and complexity
           should be hidden away.
-        </IntroText>
+        </TextSnippetStyled>
         <Button onClick={() => alert('Not implemented yet, the sadness...')}>Get the wallet</Button>
       </CenteredContent>
       <ImagesColumns>
@@ -80,10 +81,8 @@ const CenteredContent = styled.div`
   }
 `
 
-const IntroText = styled.div`
+const TextSnippetStyled = styled(TextSnippet)`
   color: ${({ theme }) => theme.textAccent};
-  font-size: var(--fontSize-18);
-  line-height: var(--lineHeight-26);
 `
 
 const BirdsImageStyled = styled(BirdsImage)`

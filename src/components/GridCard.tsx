@@ -1,8 +1,7 @@
 import React, { FC } from 'react'
-import styled, { ThemeConsumer, useTheme } from 'styled-components'
+import styled, { useTheme } from 'styled-components'
 
-import { deviceBreakPoints } from '../styles/global-style'
-
+import TextSnippet from './TextSnippet'
 import ArrowedLink, { ArrowedLinkProps } from './ArrowedLink'
 import Card from './Card'
 
@@ -24,9 +23,9 @@ let GridCard: FC<GridCardProps> = ({ className, children, title, subtitle, link,
       <div className="card-contents">
         <article>
           <div className="text-content">
-            <div className="title">{title}</div>
-            <div className="subtitle">{subtitle}</div>
-            <div className="content">{children}</div>
+            <TextSnippetStyled title={title} titleHierarchy="h3" subtitle={subtitle} bigSubtitle bigText>
+              {children}
+            </TextSnippetStyled>
           </div>
           <ArrowedLink to={link.to} newTab={link.newTab}>
             {link.text}
@@ -44,26 +43,6 @@ let GridCard: FC<GridCardProps> = ({ className, children, title, subtitle, link,
 
 // TODO: Similar code with CardEngagement and CardTextTeaser, maybe merge?
 GridCard = styled(GridCard)`
-  .title {
-    font-size: var(--fontSize-28);
-    font-weight: var(--fontWeight-semibold);
-    margin-bottom: ${(props) => (props.subtitle ? 'var(--spacing-2)' : 'var(--spacing-6)')};
-    color: ${({ theme }) => theme.textPrimary};
-  }
-
-  .subtitle {
-    font-size: var(--fontSize-24);
-    margin-bottom: var(--spacing-10);
-    color: ${({ theme }) => theme.textTetriary};
-  }
-
-  .content {
-    font-size: var(--fontSize-18);
-    line-height: var(--lineHeight-26);
-    margin-bottom: var(--spacing-10);
-    color: ${({ theme }) => theme.textSecondary};
-  }
-
   .card-contents {
     display: flex;
     flex: 1;
@@ -90,6 +69,24 @@ GridCard = styled(GridCard)`
       left: 0;
       margin: auto 0;
     }
+  }
+`
+
+const TextSnippetStyled = styled(TextSnippet)`
+  h3 {
+    font-weight: var(--fontWeight-semibold);
+    margin-bottom: ${(props) => (props.subtitle ? 'var(--spacing-2)' : 'var(--spacing-6)')};
+    color: ${({ theme }) => theme.textPrimary};
+  }
+
+  div {
+    margin-bottom: var(--spacing-10);
+    color: ${({ theme }) => theme.textTetriary};
+  }
+
+  p {
+    margin-bottom: var(--spacing-10);
+    color: ${({ theme }) => theme.textSecondary};
   }
 `
 

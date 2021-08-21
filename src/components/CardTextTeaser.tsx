@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
 import styled from 'styled-components'
 
+import TextSnippet from './TextSnippet'
 import ArrowedLink, { ArrowedLinkProps } from './ArrowedLink'
 
 interface CardTextTeaserProps {
@@ -12,11 +13,9 @@ interface CardTextTeaserProps {
 
 let CardTextTeaser: FC<CardTextTeaserProps> = ({ title, subtitle, children, link, className }) => (
   <article className={className}>
-    <div className="text-content">
-      <div className="title">{title}</div>
-      {subtitle && <div className="subtitle">{subtitle}</div>}
-      <div className="content">{children}</div>
-    </div>
+    <TextSnippetStyled className="text-content" title={title} titleHierarchy="h3" subtitle={subtitle} smallSubtitle>
+      {children}
+    </TextSnippetStyled>
     <ArrowedLink to={link.to} newTab={link.newTab}>
       {link.text}
     </ArrowedLink>
@@ -28,26 +27,22 @@ CardTextTeaser = styled(CardTextTeaser)`
   flex-direction: column;
   flex: 1;
   justify-content: space-between;
+`
 
-  .text-content {
-    margin-bottom: var(--spacing-4);
-  }
+const TextSnippetStyled = styled(TextSnippet)`
+  margin-bottom: var(--spacing-4);
 
-  .title {
-    font-size: var(--fontSize-28);
-    font-weight: var(--fontWeight-semibold);
+  h3 {
     margin-bottom: ${(props) => (props.subtitle ? 'var(--spacing-2)' : 'var(--spacing-6)')};
   }
 
-  .subtitle {
+  div {
     color: var(--color-text-grey-light-3);
-    font-size: var(--fontSize-14);
     margin-bottom: var(--spacing-3);
   }
 
-  .content {
+  p {
     color: var(--color-text-grey-light-1);
-    line-height: var(--lineHeight-22);
   }
 `
 

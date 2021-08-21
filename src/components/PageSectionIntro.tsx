@@ -1,8 +1,6 @@
 import React, { FC } from 'react'
 import styled from 'styled-components'
 
-import { deviceBreakPoints } from '../styles/global-style'
-
 import HookImage from '../images/svgs/hook.svg'
 import WalletImage from '../images/svgs/wallet.svg'
 import MiningImage from '../images/svgs/mining.svg'

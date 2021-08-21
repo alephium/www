@@ -5,6 +5,8 @@ import { deviceBreakPoints } from '../styles/global-style'
 
 import PageSectionContainer from './PageSectionContainer'
 import NavigationMenu from './NavigationMenu'
+import TextSnippet from './TextSnippet'
+
 import Logo from '../images/svgs/logo.svg'
 import NetworkImage from '../images/svgs/network.svg'
 
@@ -23,11 +25,11 @@ let PageSectionHero: FC<PageSectionHeroProps> = ({ className }) => {
           <div>
             <Logo className="logo" />
             <h1>Blockchain v3.0</h1>
-            <div className="subtitle">
+            <TextSnippetStyled bigText>
               Alephium is the first operational sharded blockchain bringing versatility, scalability, and energy
               efficiency to Bitcoin's proven core technologies, while offering much better performances and secure P2P
               smart contracts.
-            </div>
+            </TextSnippetStyled>
           </div>
         </div>
       </PageSectionContainer>
@@ -51,13 +53,6 @@ PageSectionHero = styled(PageSectionHero)`
 
     @media ${deviceBreakPoints.smallMobile} {
       font-size: var(--fontSize-50);
-    }
-
-    & + div {
-      font-size: var(--fontSize-18);
-      max-width: var(--maxWidth-xl);
-      color: var(--color-text-grey-light-1);
-      line-height: var(--lineHeight-relaxed);
     }
   }
 
@@ -91,6 +86,11 @@ PageSectionHero = styled(PageSectionHero)`
       display: none;
     }
   }
+`
+
+const TextSnippetStyled = styled(TextSnippet)`
+  max-width: var(--maxWidth-xl);
+  color: var(--color-text-grey-light-1);
 `
 
 export default PageSectionHero

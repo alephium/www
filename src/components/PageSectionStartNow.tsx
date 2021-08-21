@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 
-import { darkTheme, lightTheme } from '../styles/themes'
+import { darkTheme } from '../styles/themes'
 import { deviceBreakPoints } from '../styles/global-style'
 
 import SectionTextHeader from './SectionTextHeader'
@@ -24,7 +24,7 @@ let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className }) => (
           title="Start now"
           subtitle="Build and contribute."
           description="Alephium is already live. You can start building, earning, and contributing right now."
-          largeSubtitle
+          bigSubtitle
         />
         <LogoYellow />
       </SectionHeader>

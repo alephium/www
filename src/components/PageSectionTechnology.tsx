@@ -26,7 +26,7 @@ interface PageSectionTechnologyProps {
 
 let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className }) => (
   <section className={className}>
-    <SectionTextHeaderStyled title="Technology" subtitle="What makes us different" centered largeSubtitle />
+    <SectionTextHeaderStyled title="Technology" subtitle="What makes us different" centered bigSubtitle />
     <section>
       <PageSectionContainerStyled>
         <Columns gap="8.5rem">

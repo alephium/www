@@ -23,7 +23,7 @@ let FollowUs: FC<FollowUsProps> = ({ className }) => (
         title="Follow us"
         subtitle="Join the community."
         description="Alephium's community is growing fast. You're fascinated by the technology, you want to know more or you want to build something cool with it? Come and join us!"
-        largeSubtitle
+        bigSubtitle
       />
       <SocialMediaIconsList>
         <SocialMediaIcon ImageComponent={TelegramIcon} url="https://t.me/alephiumgroup" />
