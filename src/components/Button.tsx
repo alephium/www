@@ -19,7 +19,7 @@ Button = styled(Button)`
   background-color: var(--color-blue-2);
   color: var(--color-light);
   border-radius: var(--radius-full);
-  padding: var(--spacing-4) var(--spacing-6);
+  padding: var(--spacing-2) var(--spacing-3);
   border: 0 solid;
 
   /* The following rules are the same as in the ArrowedLink, maybe extract? */
@@ -38,7 +38,7 @@ Button = styled(Button)`
 
   .arrow {
     width: 11px;
-    margin-left: var(--spacing-2);
+    margin-left: var(--spacing-1);
     transition: transform 0.2s ease;
     fill: var(--color-light);
   }

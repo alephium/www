@@ -18,22 +18,22 @@ interface PageSectionIntroProps {
 
 const IntroColumns = styled(Columns)`
   @media (max-width: 1352px) {
-    gap: var(--spacing-40);
+    gap: var(--spacing-20);
   }
 
   @media (max-width: 1096px) {
-    gap: var(--spacing-20);
+    gap: var(--spacing-10);
   }
 `
 
 const IntroColumnContent = styled.div`
-  margin-top: var(--spacing-12);
+  margin-top: var(--spacing-6);
 `
 
 let PageSectionIntro: FC<PageSectionIntroProps> = ({ className }) => (
   <section className={className} id="intro">
     <PageSectionContainer>
-      <IntroColumns gap="var(--spatial-8-32)">
+      <IntroColumns gap="var(--spacing-32)">
         <Column>
           <SectionTextHeader title="Start" subtitle="Engage with us." />
           <IntroColumnContent>
@@ -83,7 +83,7 @@ let PageSectionIntro: FC<PageSectionIntroProps> = ({ className }) => (
 )
 
 PageSectionIntro = styled(PageSectionIntro)`
-  padding: var(--spacing-32) 0 var(--spacing-56);
+  padding: var(--spacing-16) 0 var(--spacing-28);
 `
 
 const MiningImageStyled = styled(MiningImage)`

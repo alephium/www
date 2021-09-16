@@ -152,11 +152,11 @@ const NumbersColumn = styled(Column)`
 
   &:not(:first-child) {
     .numbers-info {
-      padding-left: var(--spacing-18);
+      padding-left: var(--spacing-9);
 
       @media ${deviceBreakPoints.mobile} {
         padding-left: 0;
-        padding-top: var(--spacing-18);
+        padding-top: var(--spacing-9);
       }
     }
 
@@ -164,7 +164,7 @@ const NumbersColumn = styled(Column)`
       content: '';
       display: block;
       width: 2px;
-      height: var(--spacing-18);
+      height: var(--spacing-9);
       background-color: var(--color-grey-light-1);
       flex-shrink: 0;
 
@@ -176,7 +176,7 @@ const NumbersColumn = styled(Column)`
 
   &:not(:last-child) {
     .numbers-info {
-      padding-right: var(--spacing-18);
+      padding-right: var(--spacing-9);
 
       @media ${deviceBreakPoints.mobile} {
         padding-right: 0;
@@ -186,7 +186,7 @@ const NumbersColumn = styled(Column)`
 `
 
 const SubsectionTextHeaderStyled = styled(SubsectionTextHeader)`
-  margin-bottom: var(--spacing-20);
+  margin-bottom: var(--spacing-10);
 `
 
 let BlockflowImageStyled = styled(BlockflowImage)`
@@ -194,7 +194,7 @@ let BlockflowImageStyled = styled(BlockflowImage)`
 `
 
 const SectionTextHeaderStyled = styled(SectionTextHeader)`
-  margin-bottom: var(--spacing-58);
+  margin-bottom: var(--spacing-29);
 `
 
 const CenteredColumn = styled(Column)`
@@ -203,14 +203,14 @@ const CenteredColumn = styled(Column)`
 `
 
 const PageSectionContainerStyled = styled(PageSectionContainer)`
-  padding-bottom: var(--spacing-56);
+  padding-bottom: var(--spacing-28);
 `
 
 const PolwBackgroundImageStyled = styled(PolwBackgroundImage)`
   position: absolute;
   right: 0;
   bottom: 0;
-  top: var(--spacing-16);
+  top: var(--spacing-8);
   max-width: var(--width-584);
   height: auto;
 
@@ -221,7 +221,7 @@ const PolwBackgroundImageStyled = styled(PolwBackgroundImage)`
 
 const SmartContractImageStyled = styled(SmartContractImage)`
   position: absolute;
-  top: calc(-1 * var(--spacing-40));
+  top: calc(-1 * var(--spacing-20));
   left: 0;
   max-width: var(--width-488);
   height: auto;
@@ -238,30 +238,30 @@ const VmsImageStyled = styled(VmsImage)`
 
 const ProofOfLessWorkSubsection = styled.section`
   background-color: var(--color-grey-dark);
-  padding: var(--spacing-70) 0 var(--spacing-56);
+  padding: var(--spacing-35) 0 var(--spacing-28);
   position: relative;
 `
 
 const VmsSubsection = styled.section`
   background-color: var(--color-grey-dark);
-  padding: var(--spacing-60) 0;
+  padding: var(--spacing-30) 0;
   position: relative;
 `
 
 const SmartContractSubsection = styled.section`
   background-color: var(--color-dark-1);
-  padding: var(--spacing-56) 0 var(--spacing-60);
+  padding: var(--spacing-28) 0 var(--spacing-30);
   position: relative;
 `
 
 const NumbersSection = styled.section`
   background-color: ${({ theme }) => theme.bgTertiary};
-  padding: var(--spacing-22) 0;
+  padding: var(--spacing-11) 0;
 `
 
 PageSectionTechnology = styled(PageSectionTechnology)`
   background-color: var(--color-dark-1);
-  padding-top: var(--spacing-32);
+  padding-top: var(--spacing-16);
 `
 
 export default PageSectionTechnology

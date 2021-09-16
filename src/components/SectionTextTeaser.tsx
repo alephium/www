@@ -36,15 +36,15 @@ let SectionTextTeaser: FC<SectionTextTeaserProps> = ({ className, title, content
 SectionTextTeaser = styled(SectionTextTeaser)`
   > .card {
     display: flex;
-    gap: var(--spacing-14);
+    gap: var(--spacing-7);
     font-size: var(--fontSize-18);
     line-height: var(--lineHeight-26);
     font-weight: var(--fontWeight-bold);
-    margin-top: var(--spacing-10);
+    margin-top: var(--spacing-5);
 
     @media ${deviceBreakPoints.smallMobile} {
       flex-direction: column;
-      gap: var(--spacing-6);
+      gap: var(--spacing-3);
     }
 
     svg {
@@ -55,8 +55,8 @@ SectionTextTeaser = styled(SectionTextTeaser)`
 
   .links {
     display: flex;
-    gap: var(--spacing-16);
-    margin-top: var(--spacing-8);
+    gap: var(--spacing-8);
+    margin-top: var(--spacing-4);
   }
 `
 

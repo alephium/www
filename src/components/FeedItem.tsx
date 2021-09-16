@@ -25,19 +25,19 @@ let FeedItem: FC<FeedItemProps> = ({ IconComponent, title, subtitle, link, child
 
 FeedItem = styled(FeedItem)`
   display: flex;
-  gap: var(--spacing-8);
+  gap: var(--spacing-4);
 
   @media ${deviceBreakPoints.mobile} {
     flex-direction: column;
   }
 
   &:not(:last-child) {
-    padding-bottom: var(--spacing-8);
+    padding-bottom: var(--spacing-4);
     border-bottom: 1px solid var(--color-grey-dark-2);
   }
 
   &:not(:first-child) {
-    padding-top: var(--spacing-8);
+    padding-top: var(--spacing-4);
   }
 
   svg {

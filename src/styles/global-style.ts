@@ -17,65 +17,44 @@ const GlobalStyle = createGlobalStyle`
     --width-564: 35.25rem;
     --width-584: 36.5rem;
 
-    --spacing-2: 0.5rem;
-    --spacing-3: 0.75rem;
-    --spacing-4: 1rem;
-    --spacing-5: 1.25rem;
-    --spacing-6: 1.5rem;
-    --spacing-7: 1.875rem;
-    --spacing-8: 2rem;
-    --spacing-10: 2.5rem;
-    --spacing-12: 3rem;
-    --spacing-14: 3.5rem;
-    --spacing-16: 4rem;
-    --spacing-18: 4.5rem;
-    --spacing-20: 5rem;
-    --spacing-22: 5.5rem;
-    --spacing-32: 8rem;
-    --spacing-40: 10rem;
-    --spacing-48: 12rem;
-    --spacing-50: 12.5rem;
-    --spacing-56: 14rem;
-    --spacing-58: 14.5rem;
-    --spacing-60: 15rem;
-    --spacing-70: 17.5rem;
-    --spacing-80: 20rem;
-
     /* Spatial system with 8pt linear scale */
     /* Inspiration: https://www.designsystems.com/space-grids-and-layouts/ */
-    --spatial-8-half: 0.25rem; // 4pt
-    --spatial-8-1: 0.5rem;     // 8pt
-    --spatial-8-2: 1rem;       // 16pt
-    --spatial-8-3: 1.5rem;     // 24pt
-    --spatial-8-4: 2rem;       // 32pt
-    --spatial-8-5: 2.5rem;     // 40pt
-    --spatial-8-6: 3rem;       // 48pt
-    --spatial-8-7: 3.5rem;     // 56pt
-    --spatial-8-8: 4rem;       // 64pt
-    --spatial-8-9: 4.5rem;     // 72pt
-    --spatial-8-10: 5rem;      // 80pt
-    --spatial-8-11: 5.5rem;    // 88pt
-    --spatial-8-12: 6rem;      // 96pt
-    --spatial-8-13: 6.5rem;    // 104pt
-    --spatial-8-14: 7rem;      // 112pt
-    --spatial-8-15: 7.5rem;    // 120pt
-    --spatial-8-16: 8rem;      // 128pt
-    --spatial-8-17: 8.5rem;    // 136pt
-    --spatial-8-18: 9rem;      // 144pt
-    --spatial-8-19: 9.5rem;    // 152pt
-    --spatial-8-20: 10rem;     // 160pt
-    --spatial-8-21: 10.5rem;   // 168pt
-    --spatial-8-22: 11rem;     // 176pt
-    --spatial-8-23: 11.5rem;   // 184pt
-    --spatial-8-24: 12rem;     // 192pt
-    --spatial-8-25: 12.5rem;   // 200pt
-    --spatial-8-26: 13rem;     // 208pt
-    --spatial-8-27: 13.5rem;   // 216pt
-    --spatial-8-28: 14rem;     // 224pt
-    --spatial-8-29: 14.5rem;   // 232pt
-    --spatial-8-30: 15rem;     // 240pt
-    --spatial-8-31: 15.5rem;   // 248pt
-    --spatial-8-32: 16rem;     // 256pt
+    --spacing-half: 0.25rem; // 4pt
+    --spacing-1: 0.5rem;     // 8pt
+    --spacing-2: 1rem;       // 16pt
+    --spacing-3: 1.5rem;     // 24pt
+    --spacing-4: 2rem;       // 32pt
+    --spacing-5: 2.5rem;     // 40pt
+    --spacing-6: 3rem;       // 48pt
+    --spacing-7: 3.5rem;     // 56pt
+    --spacing-8: 4rem;       // 64pt
+    --spacing-9: 4.5rem;     // 72pt
+    --spacing-10: 5rem;      // 80pt
+    --spacing-11: 5.5rem;    // 88pt
+ /* --spacing-12: 6rem;      // 96pt
+    --spacing-13: 6.5rem;    // 104pt
+    --spacing-14: 7rem;      // 112pt
+    --spacing-15: 7.5rem;    // 120pt */
+    --spacing-16: 8rem;      // 128pt
+ /* --spacing-17: 8.5rem;    // 136pt
+    --spacing-18: 9rem;      // 144pt
+    --spacing-19: 9.5rem;    // 152pt */
+    --spacing-20: 10rem;     // 160pt
+ /* --spacing-21: 10.5rem;   // 168pt
+    --spacing-22: 11rem;     // 176pt
+    --spacing-23: 11.5rem;   // 184pt */
+    --spacing-24: 12rem;     // 192pt
+    --spacing-25: 12.5rem;   // 200pt
+ /* --spacing-26: 13rem;     // 208pt
+    --spacing-27: 13.5rem;   // 216pt */
+    --spacing-28: 14rem;     // 224pt
+    --spacing-29: 14.5rem;   // 232pt
+    --spacing-30: 15rem;     // 240pt
+    --spacing-31: 15.5rem;   // 248pt
+    --spacing-32: 16rem;     // 256pt
+    --spacing-33: 16.5rem;   // 264pt
+    --spacing-34: 17rem;     // 272pt
+    --spacing-35: 17.5rem;   // 280pt
 
     --radius: 1rem;
     --radius-full: 9999px;

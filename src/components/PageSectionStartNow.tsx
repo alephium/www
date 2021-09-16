@@ -76,8 +76,8 @@ let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className }) => (
 )
 
 PageSectionStartNow = styled(PageSectionStartNow)`
-  padding-top: var(--spacing-56);
-  padding-bottom: var(--spacing-56);
+  padding-top: var(--spacing-28);
+  padding-bottom: var(--spacing-28);
   background-color: ${({ theme }) => theme.bgSecondary};
   color: ${({ theme }) => theme.textPrimary};
 `
@@ -85,7 +85,7 @@ PageSectionStartNow = styled(PageSectionStartNow)`
 const SectionHeader = styled.div`
   display: flex;
   justify-content: space-between;
-  gap: var(--spacing-8);
+  gap: var(--spacing-4);
 
   svg {
     width: var(--width-82);
@@ -97,8 +97,8 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: 8fr 1fr 8fr;
   grid-template-rows: repeat(2, minmax(24.5rem, auto));
-  gap: var(--spacing-6);
-  margin-top: var(--spacing-32);
+  gap: var(--spacing-3);
+  margin-top: var(--spacing-16);
 
   > div:nth-child(4n + 2) {
     grid-column: 2 / span 2;
@@ -122,7 +122,7 @@ const Grid = styled.div`
 const ImageContainer = styled.div`
   width: 35%;
   position: relative;
-  margin: calc(-1 * var(--spacing-7)) calc(-1 * var(--spacing-7)) calc(-1 * var(--spacing-7)) 0;
+  margin: calc(-1 * var(--spacing-4)) calc(-1 * var(--spacing-4)) calc(-1 * var(--spacing-4)) 0;
   overflow: hidden;
 `
 
@@ -145,8 +145,8 @@ const CodeImageStyled = styled(CodeImage)`
   width: 6.25rem;
   height: auto;
   position: absolute;
-  top: var(--spacing-7);
-  right: var(--spacing-7);
+  top: var(--spacing-4);
+  right: var(--spacing-4);
 `
 
 const GreyMountainsImageStyled = styled(GreyMountainsImage)`

@@ -19,7 +19,8 @@ let Footer: FC<FooterProps> = ({ className }) => (
   <section className={className}>
     <PageSectionContainerStyled>
       <LogoBlack />
-      <FooterColumns gap="var(--spacing-8)">
+      <Separator />
+      <FooterColumns gap="var(--spacing-4)">
         <Column>
           <FooterColumn
             title="Resources"
@@ -79,9 +80,20 @@ let FooterColumn: FC<FooterColumnProps> = ({ className, title, links }) => (
   </div>
 )
 
+const Separator = styled.div`
+  width: 2px;
+  height: 5rem;
+  background-color: var(--color-grey-dark-3);
+  margin: auto 0;
+
+  @media ${deviceBreakPoints.mobile} {
+    display: none;
+  }
+`
+
 Footer = styled(Footer)`
-  padding-top: var(--spacing-50);
-  padding-bottom: var(--spacing-50);
+  padding-top: var(--spacing-25);
+  padding-bottom: var(--spacing-25);
   background-color: ${({ theme }) => theme.bgPrimary};
   color: ${({ theme }) => theme.textPrimary};
   font-size: var(--fontSize-18);
@@ -95,7 +107,7 @@ FooterColumn = styled(FooterColumn)`
   ul {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-4);
+    gap: var(--spacing-2);
     color: var(--color-text-grey-light-2);
     list-style: none;
     padding-left: 0;
@@ -112,12 +124,12 @@ const FooterColumns = styled(Columns)`
 
 const PageSectionContainerStyled = styled(PageSectionContainer)`
   display: flex;
-  gap: var(--spacing-80);
+  gap: var(--spacing-20);
   justify-content: space-between;
 
   @media ${deviceBreakPoints.mobile} {
     flex-direction: column;
-    gap: var(--spacing-20);
+    gap: var(--spacing-10);
   }
 `
 

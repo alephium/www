@@ -107,7 +107,7 @@ const TextSnippetStyled = styled(TextSnippet)`
 const ArrowDown = styled(Arrow)`
   width: 1.625rem;
   fill: var(--color-light);
-  margin-top: var(--spatial-8-11);
+  margin-top: var(--spacing-11);
   transform: rotate(90deg);
 `
 

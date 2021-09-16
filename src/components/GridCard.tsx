@@ -59,7 +59,7 @@ GridCard = styled(GridCard)`
 
     > article {
       width: 65%;
-      padding-right: var(--spacing-4);
+      padding-right: var(--spacing-2);
       z-index: 1;
     }
   }
@@ -67,17 +67,17 @@ GridCard = styled(GridCard)`
 
 const TextSnippetStyled = styled(TextSnippet)`
   h3 {
-    margin-bottom: ${(props) => (props.subtitle ? 'var(--spacing-2)' : 'var(--spacing-6)')};
+    margin-bottom: ${(props) => (props.subtitle ? 'var(--spacing-1)' : 'var(--spacing-3)')};
     color: ${({ theme }) => theme.textPrimary};
   }
 
   div {
-    margin-bottom: var(--spacing-10);
+    margin-bottom: var(--spacing-5);
     color: ${({ theme }) => theme.textTetriary};
   }
 
   p {
-    margin-bottom: var(--spacing-10);
+    margin-bottom: var(--spacing-5);
     color: ${({ theme }) => theme.textSecondary};
   }
 `

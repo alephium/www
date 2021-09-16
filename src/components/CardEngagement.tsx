@@ -28,7 +28,7 @@ let CardEngagement: FC<CardEngagementProps> = ({ title, link, ImageComponent, ch
 }
 
 const CardTextTeaserStyled = styled(CardTextTeaser)`
-  padding-right: var(--spatial-8-8);
+  padding-right: var(--spacing-8);
 `
 
 CardEngagement = styled(CardEngagement)`
@@ -39,7 +39,7 @@ CardEngagement = styled(CardEngagement)`
   transition: all 0.2s ease;
 
   & + & {
-    margin-top: var(--spacing-7);
+    margin-top: var(--spacing-4);
   }
 
   &:before {
@@ -72,7 +72,7 @@ CardEngagement = styled(CardEngagement)`
   .image-container {
     width: 32%;
     position: relative;
-    margin: calc(-1 * var(--spacing-7)) calc(-1 * var(--spacing-7)) calc(-1 * var(--spacing-7)) 0;
+    margin: calc(-1 * var(--spacing-4)) calc(-1 * var(--spacing-4)) calc(-1 * var(--spacing-4)) 0;
     overflow: hidden;
   }
 `

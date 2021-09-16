@@ -37,17 +37,17 @@ let FollowUs: FC<FollowUsProps> = ({ className }) => (
 )
 
 FollowUs = styled(FollowUs)`
-  padding-top: var(--spacing-32);
-  padding-bottom: var(--spacing-32);
+  padding-top: var(--spacing-16);
+  padding-bottom: var(--spacing-16);
   background-color: ${({ theme }) => theme.bgPrimary};
   color: ${({ theme }) => theme.textPrimary};
 `
 
 const SocialMediaIconsList = styled.div`
   display: flex;
-  gap: var(--spacing-18);
+  gap: var(--spacing-9);
   align-items: flex-start;
-  margin-top: var(--spacing-32);
+  margin-top: var(--spacing-16);
   flex-wrap: wrap;
 `
 

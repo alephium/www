@@ -28,13 +28,13 @@ SectionTextHeader = styled(SectionTextHeader)`
     margin: 0;
 
     & + div {
-      margin-top: var(--spacing-4);
+      margin-top: var(--spacing-2);
       color: ${({ theme }) => theme.textSecondary};
     }
   }
 
   p {
-    margin-top: var(--spacing-10);
+    margin-top: var(--spacing-5);
     margin-bottom: 0;
     color: ${({ theme }) => theme.textTetriary};
     max-width: var(--width-564);

@@ -30,15 +30,15 @@ CardTextTeaser = styled(CardTextTeaser)`
 `
 
 const TextSnippetStyled = styled(TextSnippet)`
-  margin-bottom: var(--spacing-4);
+  margin-bottom: var(--spacing-2);
 
   h3 {
-    margin-bottom: ${(props) => (props.subtitle ? 'var(--spacing-2)' : 'var(--spacing-6)')};
+    margin-bottom: ${(props) => (props.subtitle ? 'var(--spacing-1)' : 'var(--spacing-3)')};
   }
 
   div {
     color: var(--color-text-grey-light-3);
-    margin-bottom: var(--spacing-3);
+    margin-bottom: var(--spacing-1);
   }
 
   p {

@@ -20,7 +20,7 @@ NumbersInfo = styled(NumbersInfo)`
 
   .number {
     font-size: var(--fontSize-50);
-    margin-bottom: var(--spacing-5);
+    margin-bottom: var(--spacing-3);
 
     & + div {
       font-size: var(--fontSize-22);

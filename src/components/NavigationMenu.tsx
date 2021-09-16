@@ -40,7 +40,7 @@ NavigationMenu = styled(NavigationMenu)`
 
   .nav-end {
     display: flex;
-    gap: var(--spacing-12);
+    gap: var(--spacing-6);
 
     @media ${deviceBreakPoints.smallMobile} {
       flex-direction: column;
@@ -50,7 +50,7 @@ NavigationMenu = styled(NavigationMenu)`
   }
 
   .nav-item {
-    padding: var(--spacing-6) 0;
+    padding: var(--spacing-3) 0;
     display: flex;
     align-items: center;
   }

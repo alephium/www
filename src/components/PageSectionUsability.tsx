@@ -51,8 +51,8 @@ let PageSectionUsability: FC<PageSectionUsabilityProps> = ({ className }) => (
 )
 
 PageSectionUsability = styled(PageSectionUsability)`
-  padding-top: var(--spacing-56);
-  padding-bottom: var(--spacing-56);
+  padding-top: var(--spacing-28);
+  padding-bottom: var(--spacing-28);
   background-color: ${({ theme }) => theme.body};
   color: ${({ theme }) => theme.textPrimary};
   position: relative;
@@ -67,7 +67,7 @@ const PageSectionContainerStyled = styled(PageSectionContainer)`
 `
 
 const SectionTextHeaderStyled = styled(SectionTextHeader)`
-  margin-bottom: var(--spacing-20);
+  margin-bottom: var(--spacing-10);
   z-index: 1;
 `
 
@@ -77,7 +77,7 @@ const CenteredContent = styled.div`
   margin: auto;
 
   button {
-    margin: var(--spacing-16) auto 0;
+    margin: var(--spacing-8) auto 0;
   }
 `
 
@@ -87,13 +87,13 @@ const TextSnippetStyled = styled(TextSnippet)`
 
 const BirdsImageStyled = styled(BirdsImage)`
   position: absolute;
-  top: var(--spacing-48);
+  top: var(--spacing-24);
   height: auto;
 `
 
 const ImagesColumns = styled(Columns)`
   align-items: center;
-  margin-top: var(--spacing-40);
+  margin-top: var(--spacing-20);
   position: relative;
 
   @media ${deviceBreakPoints.mobile} {
@@ -127,7 +127,7 @@ const YellowMountainsImageStyled = styled(YellowMountainsImage)`
 
 const ImageSwiperStyled = styled(ImageSwiper)`
   display: none;
-  margin-top: var(--spacing-40);
+  margin-top: var(--spacing-20);
 
   @media ${deviceBreakPoints.mobile} {
     display: block;

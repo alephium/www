@@ -11,7 +11,7 @@ interface CardProps {
 let Card: FC<CardProps> = ({ className, children }) => <div className={className}>{children}</div>
 
 Card = styled(Card)`
-  padding: var(--spacing-7);
+  padding: var(--spacing-4);
   border-radius: var(--radius);
   border: ${(props) => (props.thickBorders && '2px') || '1px'} solid ${(props) => props.borderColor || 'transparent'};
   background-color: ${(props) => props.bgColor || 'transparent'};

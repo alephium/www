@@ -29,13 +29,13 @@ ArrowedLink = styled(ArrowedLink)`
 
   .icon {
     width: 1rem;
-    margin-right: var(--spacing-2);
+    margin-right: var(--spacing-1);
     fill: ${({ theme }) => theme.link};
   }
 
   .arrow {
     width: 11px;
-    margin-left: var(--spacing-2);
+    margin-left: var(--spacing-1);
     fill: ${({ theme }) => theme.link};
     ${(props) =>
       props.newTab &&

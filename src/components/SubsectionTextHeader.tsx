@@ -22,7 +22,7 @@ SubsectionTextHeader = styled(SubsectionTextHeader)`
   max-width: ${({ condensed }) => (condensed ? 'var(--width-476)' : 'auto')};}
 
   h3 {
-    margin-bottom: var(--spacing-4);
+    margin-bottom: var(--spacing-2);
     color: ${({ titleColor }) => titleColor || 'inherit'};
 
     & + div {
