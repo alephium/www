@@ -74,6 +74,8 @@ const GlobalStyle = createGlobalStyle`
     --spatial-8-28: 14rem;     // 224pt
     --spatial-8-29: 14.5rem;   // 232pt
     --spatial-8-30: 15rem;     // 240pt
+    --spatial-8-31: 15.5rem;   // 248pt
+    --spatial-8-32: 16rem;     // 256pt
 
     --radius: 1rem;
     --radius-full: 9999px;

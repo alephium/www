@@ -28,7 +28,7 @@ let PageSectionUsability: FC<PageSectionUsabilityProps> = ({ className }) => (
       <CenteredContent>
         <TextSnippetStyled bigText>
           Our wallet is only the first step. We want to make blockchain accessible to anyone. Technology and complexity
-          should be hidden away.
+          should be out of the way while remaining accessible.
         </TextSnippetStyled>
         <Button onClick={() => alert('Not implemented yet, the sadness...')}>Get the wallet</Button>
       </CenteredContent>

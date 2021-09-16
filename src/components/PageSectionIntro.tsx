@@ -33,7 +33,7 @@ const IntroColumnContent = styled.div`
 let PageSectionIntro: FC<PageSectionIntroProps> = ({ className }) => (
   <section className={className} id="intro">
     <PageSectionContainer>
-      <IntroColumns gap="var(--spacing-80)">
+      <IntroColumns gap="var(--spatial-8-32)">
         <Column>
           <SectionTextHeader title="Start" subtitle="Engage with us." />
           <IntroColumnContent>
@@ -44,11 +44,10 @@ let PageSectionIntro: FC<PageSectionIntroProps> = ({ className }) => (
                 to: 'https://github.com/alephium/wiki/blob/master/Miner-Guide.md',
                 newTab: true
               }}
-              ImageComponent={MiningImage}
-              imageWidth="160px"
+              ImageComponent={MiningImageStyled}
             >
-              Get your node ready, and contribute to the network security. It doesn't take more that a few minutes to
-              start getting rewarded in ALPH tokens.
+              Get your node ready, and contribute to the network security. It only takes a few minutes to start getting
+              rewarded in ALPH tokens.
             </CardEngagement>
             <CardEngagement
               title="Get the wallet"
@@ -56,9 +55,9 @@ let PageSectionIntro: FC<PageSectionIntroProps> = ({ className }) => (
                 text: 'Download',
                 to: '#'
               }}
-              ImageComponent={WalletImage}
+              ImageComponent={WalletImageStyled}
             >
-              Safe and super easy to use, start to store / send / receive your precious ALPH tokens right away.
+              Safe and super easy to use. Start storing, sending, and receiving your precious ALPH tokens right away.
             </CardEngagement>
             <CardEngagement
               title="Build on Alephium"
@@ -66,10 +65,9 @@ let PageSectionIntro: FC<PageSectionIntroProps> = ({ className }) => (
                 text: 'Documentation',
                 to: '#'
               }}
-              ImageComponent={HookImage}
+              ImageComponent={HookImageStyled}
             >
-              The mainnet is not far away. You can already start leveraging the power of Alephium and start building
-              your own tools and apps!
+              The mainnet is live! Start building your own tools and apps today!
             </CardEngagement>
           </IntroColumnContent>
         </Column>
@@ -86,6 +84,32 @@ let PageSectionIntro: FC<PageSectionIntroProps> = ({ className }) => (
 
 PageSectionIntro = styled(PageSectionIntro)`
   padding: var(--spacing-32) 0 var(--spacing-56);
+`
+
+const MiningImageStyled = styled(MiningImage)`
+  width: 10rem;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 0;
+`
+
+const WalletImageStyled = styled(WalletImage)`
+  width: 4.5rem;
+  height: auto;
+  position: absolute;
+  top: -0.5rem;
+  left: 0;
+`
+
+const HookImageStyled = styled(HookImage)`
+  width: 5rem;
+  height: auto;
+  position: absolute;
+  top: -4px;
+  left: 0;
 `
 
 export default PageSectionIntro

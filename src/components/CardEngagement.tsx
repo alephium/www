@@ -9,7 +9,6 @@ interface CardEngagementProps {
   title: string
   link: ArrowedLinkProps
   ImageComponent: FC
-  imageWidth?: string
   className?: string
 }
 
@@ -29,8 +28,7 @@ let CardEngagement: FC<CardEngagementProps> = ({ title, link, ImageComponent, ch
 }
 
 const CardTextTeaserStyled = styled(CardTextTeaser)`
-  width: 75%;
-  padding-right: var(--spacing-4);
+  padding-right: var(--spatial-8-8);
 `
 
 CardEngagement = styled(CardEngagement)`
@@ -59,7 +57,6 @@ CardEngagement = styled(CardEngagement)`
   &:hover {
     background-color: var(--color-dark);
     border-color: transparent;
-    cursor: pointer;
 
     &:before {
       background: linear-gradient(270deg, var(--color-salmon) 0%, var(--color-blue) 100%);
@@ -73,21 +70,10 @@ CardEngagement = styled(CardEngagement)`
   }
 
   .image-container {
-    width: 25%;
+    width: 32%;
     position: relative;
     margin: calc(-1 * var(--spacing-7)) calc(-1 * var(--spacing-7)) calc(-1 * var(--spacing-7)) 0;
     overflow: hidden;
-
-    svg {
-      height: auto;
-      position: absolute;
-      width: ${(props) => props.imageWidth || '5rem'};
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto 0;
-    }
   }
 `
 

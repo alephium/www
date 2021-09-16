@@ -35,7 +35,7 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className }) => (
           </CenteredColumn>
           <Column>
             <SectionTextTeaser
-              title="Blockflow: sharding on BTC’s proven foundations"
+              title="Blockflow: sharding on BTC's proven foundations"
               content="Alephium is the first operational sharded blockchain bringing versatility, scalability, and energy efficiency to Bitcoin's proven core technologies, while offering much better performances and secure P2P smart contracts."
               IconComponent={StackImage}
               iconText="Merging the versatility and expressivity of Ethereum with the security of the Bitcoin technology stack."
@@ -54,7 +54,7 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className }) => (
           <Column>
             <SectionTextTeaser
               title="Proof of Less Work"
-              content="Alephium is the first operational sharded blockchain bringing versatility, scalability, and energy efficiency to Bitcoin's proven core technologies, while offering much better performances and secure P2P smart contracts."
+              content="PoLW uses a clever combination of physical work and token economics to dynamically adjust the work required to mine new blocks, ensuring a reduced energy footprint compared to classic Nakamoto PoW mining."
               IconComponent={LeafImage}
               iconText="Blockchain ultimately depends on its sustainability."
               links={[
@@ -77,7 +77,7 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className }) => (
           <Column>
             <SectionTextTeaser
               title="Smart contract design"
-              content="Application layer, accessibility for devs etc. Vestibulum vel metus. Donec sagittis velit vel augue. Fusce in nisl vitae massa venenatis rhoncus. Praesent orci velit, lobortis eget, suscipit semper, congue eu, est. Quisque malesuada volutpat enim. Vestibulum leo sem."
+              content="Alephium proposes a unique approach to sharding and smart contracts on the Bitcoin technology stack while tackling energy concerns with its Proof of Less Work algorithm."
               IconComponent={StackImage}
               iconText="Merging the versatility and expressivity of Ethereum with the security of the Bitcoin technology stack."
               links={[
@@ -95,7 +95,7 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className }) => (
           <Column>
             <SectionTextTeaser
               title="Novel VM design"
-              content="Alephium is the first operational sharded blockchain bringing versatility, scalability, and energy efficiency to Bitcoin's proven core technologies, while offering much better performances and secure P2P smart contracts."
+              content="Most of the modern blockchain protocols have a built-in virtual machine for general computing to implement useful and complicated decentralized applications. In Alephium, we shift from a code-centric approach to a data-centric approach and enable access and parse information from data payload of UTXOs. In this way, our script system will be as powerful as a general virtual machine."
               IconComponent={VmDotsImage}
               iconText="VMs can be a big bottleneck when it comes to Blockchain performances. Not on Alephium."
               links={[{ text: 'More details', to: '#' }]}
