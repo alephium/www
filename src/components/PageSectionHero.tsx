@@ -9,6 +9,7 @@ import TextSnippet from './TextSnippet'
 
 import Logo from '../images/svgs/logo.svg'
 import NetworkImage from '../images/svgs/network.svg'
+import Arrow from '../images/svgs/arrow-right.svg'
 
 interface PageSectionHeroProps {
   className?: string
@@ -30,6 +31,9 @@ let PageSectionHero: FC<PageSectionHeroProps> = ({ className }) => {
               efficiency to Bitcoin's proven core technologies, while offering much better performances and secure P2P
               smart contracts.
             </TextSnippetStyled>
+            <a href="#intro">
+              <ArrowDown />
+            </a>
           </div>
         </div>
       </PageSectionContainerStyled>
@@ -98,6 +102,13 @@ const PageSectionContainerStyled = styled(PageSectionContainer)`
 const TextSnippetStyled = styled(TextSnippet)`
   max-width: var(--width-564);
   color: var(--color-text-grey-light-1);
+`
+
+const ArrowDown = styled(Arrow)`
+  width: 1.625rem;
+  fill: var(--color-light);
+  margin-top: var(--spatial-8-11);
+  transform: rotate(90deg);
 `
 
 export default PageSectionHero

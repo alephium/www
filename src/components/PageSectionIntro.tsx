@@ -31,7 +31,7 @@ const IntroColumnContent = styled.div`
 `
 
 let PageSectionIntro: FC<PageSectionIntroProps> = ({ className }) => (
-  <section className={className}>
+  <section className={className} id="intro">
     <PageSectionContainer>
       <IntroColumns gap="var(--spacing-80)">
         <Column>

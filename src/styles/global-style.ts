@@ -118,6 +118,10 @@ const GlobalStyle = createGlobalStyle`
     --color-brown: #393535;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     /* TODO: Remove colors and use theme instead */
     background-color: var(--color-dark);
