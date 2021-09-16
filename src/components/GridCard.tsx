@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import styled, { useTheme } from 'styled-components'
+import styled, { useTheme, css } from 'styled-components'
 
 import TextSnippet from './TextSnippet'
 import ArrowedLink, { ArrowedLinkProps } from './ArrowedLink'
@@ -12,7 +12,7 @@ interface GridCardProps {
   className?: string
   bgColor?: string
   ImageComponent?: FC
-  imageWidth?: string
+  backgroundImageUrl?: string
 }
 
 let GridCard: FC<GridCardProps> = ({ className, children, title, subtitle, link, bgColor, ImageComponent }) => {
@@ -31,11 +31,7 @@ let GridCard: FC<GridCardProps> = ({ className, children, title, subtitle, link,
             {link.text}
           </ArrowedLink>
         </article>
-        {ImageComponent && (
-          <div className="image-container">
-            <ImageComponent />
-          </div>
-        )}
+        {ImageComponent && <ImageComponent />}
       </div>
     </Card>
   )
@@ -43,6 +39,18 @@ let GridCard: FC<GridCardProps> = ({ className, children, title, subtitle, link,
 
 // TODO: Similar code with CardEngagement and CardTextTeaser, maybe merge?
 GridCard = styled(GridCard)`
+  position: relative;
+  overflow: hidden;
+
+  ${(props) =>
+    props.backgroundImageUrl &&
+    css`
+      background-image: url(${props.backgroundImageUrl});
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: cover;
+    `}
+
   .card-contents {
     display: flex;
     flex: 1;
@@ -52,29 +60,13 @@ GridCard = styled(GridCard)`
     > article {
       width: 65%;
       padding-right: var(--spacing-4);
-    }
-  }
-
-  .image-container {
-    width: 35%;
-    position: relative;
-    margin: calc(-1 * var(--spacing-7)) calc(-1 * var(--spacing-7)) calc(-1 * var(--spacing-7)) 0;
-    overflow: hidden;
-
-    svg {
-      height: auto;
-      position: absolute;
-      width: ${(props) => props.imageWidth || '5rem'};
-      bottom: 0;
-      left: 0;
-      margin: auto 0;
+      z-index: 1;
     }
   }
 `
 
 const TextSnippetStyled = styled(TextSnippet)`
   h3 {
-    font-weight: var(--fontWeight-bold);
     margin-bottom: ${(props) => (props.subtitle ? 'var(--spacing-2)' : 'var(--spacing-6)')};
     color: ${({ theme }) => theme.textPrimary};
   }

@@ -11,6 +11,8 @@ import GridCard from './GridCard'
 import LogoYellow from '../images/svgs/logo-yellow.svg'
 import MiningImage from '../images/svgs/mining.svg'
 import CodeImage from '../images/svgs/code.svg'
+import GreyMountainsImage from '../images/svgs/grey-mountains.svg'
+import GenevaImage from '../images/geneva.jpg'
 
 interface PageSectionStartNowProps {
   className?: string
@@ -35,8 +37,7 @@ let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className }) => (
             subtitle="Earn ALPH tokens"
             link={{ to: '#', text: 'Instructions', newTab: true }}
             bgColor="var(--color-grey-dark-3)"
-            ImageComponent={MiningImage}
-            imageWidth="14rem"
+            ImageComponent={MiningImageComponent}
           >
             liquam dapibus ipsum vitae sem. Ut eget mauris ac nunc luctus ornare. Phasellus enim augue, rutrum tempus,
             blandit in, vehicula eu, neque. Sed consequat nunc. Proin metus. Duis at mi non tellus{' '}
@@ -46,6 +47,7 @@ let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className }) => (
           title="Get a grant"
           subtitle="And start building"
           link={{ to: '#', text: 'Apply for a grand', newTab: true }}
+          ImageComponent={GreyMountainsImageStyled}
         >
           liquam dapibus ipsum vitae sem. Ut eget mauris ac nunc luctus ornare. Phasellus enim augue, rutrum tempus,
           blandit in, vehicula eu, neque. Sed consequat nunc. Proin metus. Duis at mi non tellus
@@ -54,6 +56,7 @@ let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className }) => (
           title="Get a job @ Alephium"
           subtitle="We value individuals"
           link={{ to: '#', text: 'Job openings', newTab: true }}
+          backgroundImageUrl={GenevaImage}
         >
           We're based in beautiful Switzerland, but you can work from anywhere in the world.
         </GridCard>
@@ -62,8 +65,7 @@ let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className }) => (
             title="Contribute to the code"
             subtitle="Code and get rewarded"
             link={{ to: 'https://github.com/alephium/alephium', text: 'To the codebase', newTab: true }}
-            ImageComponent={CodeImage}
-            imageWidth="6.5rem"
+            ImageComponent={CodeImageStyled}
           >
             We would love to see your code integrated in our codebase! Contribute, and receive some unique rewards.
           </GridCard>
@@ -115,6 +117,43 @@ const Grid = styled.div`
       grid-column: auto;
     }
   }
+`
+
+const ImageContainer = styled.div`
+  width: 35%;
+  position: relative;
+  margin: calc(-1 * var(--spacing-7)) calc(-1 * var(--spacing-7)) calc(-1 * var(--spacing-7)) 0;
+  overflow: hidden;
+`
+
+const MiningImageStyled = styled(MiningImage)`
+  width: 14rem;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: auto 0;
+`
+
+const MiningImageComponent = () => (
+  <ImageContainer>
+    <MiningImageStyled />
+  </ImageContainer>
+)
+
+const CodeImageStyled = styled(CodeImage)`
+  width: 6.25rem;
+  height: auto;
+  position: absolute;
+  top: var(--spacing-7);
+  right: var(--spacing-7);
+`
+
+const GreyMountainsImageStyled = styled(GreyMountainsImage)`
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: -2px;
 `
 
 export default PageSectionStartNow
