@@ -17,7 +17,7 @@ interface PageSectionHeroProps {
 let PageSectionHero: FC<PageSectionHeroProps> = ({ className }) => {
   return (
     <section className={className}>
-      <PageSectionContainer>
+      <PageSectionContainerStyled>
         <div className="navigation-menu-wrapper">
           <NavigationMenu />
         </div>
@@ -32,14 +32,14 @@ let PageSectionHero: FC<PageSectionHeroProps> = ({ className }) => {
             </TextSnippetStyled>
           </div>
         </div>
-      </PageSectionContainer>
+      </PageSectionContainerStyled>
       <NetworkImage className="network-image" />
     </section>
   )
 }
 
 PageSectionHero = styled(PageSectionHero)`
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   overflow: hidden;
   position: relative;
@@ -60,6 +60,7 @@ PageSectionHero = styled(PageSectionHero)`
     display: flex;
     align-items: center;
     height: 100%;
+    flex-grow: 1;
   }
 
   .logo {
@@ -86,6 +87,12 @@ PageSectionHero = styled(PageSectionHero)`
       display: none;
     }
   }
+`
+
+const PageSectionContainerStyled = styled(PageSectionContainer)`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 `
 
 const TextSnippetStyled = styled(TextSnippet)`

@@ -5,6 +5,7 @@ import { deviceBreakPoints } from '../styles/global-style'
 
 import ArrowedLink from './ArrowedLink'
 import GitHubIcon from '../images/svgs/brand-icon-github.svg'
+import LogoText from '../images/svgs/logo-text.svg'
 
 interface NavigationMenuProps {
   className?: string
@@ -13,7 +14,9 @@ interface NavigationMenuProps {
 let NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
   <div className={className}>
     <div className="nav-start">
-      <div className="nav-item">alephium</div>
+      <div className="nav-item">
+        <LogoTextStyled />
+      </div>
     </div>
     <div className="nav-end">
       <ArrowedLink className="nav-item" to="https://testnet.alephium.org/" newTab>
@@ -29,10 +32,6 @@ let NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
 NavigationMenu = styled(NavigationMenu)`
   display: flex;
   justify-content: space-between;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
 
   .nav-start .nav-item {
     font-weight: var(--fontWeight-bold);
@@ -52,7 +51,13 @@ NavigationMenu = styled(NavigationMenu)`
 
   .nav-item {
     padding: var(--spacing-6) 0;
+    display: flex;
+    align-items: center;
   }
+`
+
+const LogoTextStyled = styled(LogoText)`
+  height: 1.625rem;
 `
 
 export default NavigationMenu
