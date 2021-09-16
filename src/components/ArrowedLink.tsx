@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 import SimpleLink from './SimpleLink'
 
@@ -27,12 +27,6 @@ ArrowedLink = styled(ArrowedLink)`
   font-weight: var(--fontWeight-bold);
   font-size: var(--fontSize-18);
 
-  &:hover {
-    .arrow {
-      transform: rotate(-45deg);
-    }
-  }
-
   .icon {
     width: 1rem;
     margin-right: var(--spacing-2);
@@ -42,8 +36,12 @@ ArrowedLink = styled(ArrowedLink)`
   .arrow {
     width: 11px;
     margin-left: var(--spacing-2);
-    transition: transform 0.2s ease;
     fill: ${({ theme }) => theme.link};
+    ${(props) =>
+      props.newTab &&
+      css`
+        transform: rotate(-45deg);
+      `}
   }
 `
 
