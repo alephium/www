@@ -33,7 +33,7 @@ FeedItem = styled(FeedItem)`
 
   &:not(:last-child) {
     padding-bottom: var(--spacing-4);
-    border-bottom: 1px solid var(--color-grey-dark-2);
+    border-bottom: 1px solid ${({ theme }) => theme.separator};
   }
 
   &:not(:first-child) {

@@ -5,9 +5,7 @@ import TextSnippet from './TextSnippet'
 
 interface SubsectionTextHeaderProps {
   title: string
-  titleColor?: string
   subtitle: string
-  subtitleColor?: string
   className?: string
   condensed?: boolean
 }
@@ -23,10 +21,10 @@ SubsectionTextHeader = styled(SubsectionTextHeader)`
 
   h3 {
     margin-bottom: var(--spacing-2);
-    color: ${({ titleColor }) => titleColor || 'inherit'};
+    color: ${({ theme }) => theme.textPrimary};
 
     & + div {
-      color: ${({ subtitleColor }) => subtitleColor || 'var(--color-text-grey-light-1)'};
+      color: ${({ theme }) => theme.textTertiary};
     }
   }
 `

@@ -113,8 +113,6 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className }) => (
           <SubsectionTextHeaderStyled
             title="Some numbers"
             subtitle="We're focusing on efficiency, security and scalability. We took our time to make sure we transform theory to actual technologies."
-            titleColor="var(--color-dark)"
-            subtitleColor="var(--color-text-grey-light-4)"
             condensed
           />
           <Columns>
@@ -165,7 +163,7 @@ const NumbersColumn = styled(Column)`
       display: block;
       width: 2px;
       height: var(--spacing-9);
-      background-color: var(--color-grey-light-1);
+      background-color: ${({ theme }) => theme.separator};
       flex-shrink: 0;
 
       @media ${deviceBreakPoints.mobile} {
@@ -237,19 +235,19 @@ const VmsImageStyled = styled(VmsImage)`
 `
 
 const ProofOfLessWorkSubsection = styled.section`
-  background-color: var(--color-grey-dark);
+  background-color: ${({ theme }) => theme.bgTertiary};
   padding: var(--spacing-35) 0 var(--spacing-28);
   position: relative;
 `
 
 const VmsSubsection = styled.section`
-  background-color: var(--color-grey-dark);
+  background-color: ${({ theme }) => theme.bgTertiary};
   padding: var(--spacing-30) 0;
   position: relative;
 `
 
 const SmartContractSubsection = styled.section`
-  background-color: var(--color-dark-1);
+  background-color: ${({ theme }) => theme.bgSecondary};
   padding: var(--spacing-28) 0 var(--spacing-30);
   position: relative;
 `
@@ -260,7 +258,7 @@ const NumbersSection = styled.section`
 `
 
 PageSectionTechnology = styled(PageSectionTechnology)`
-  background-color: var(--color-dark-1);
+  background-color: ${({ theme }) => theme.bgSecondary};
   padding-top: var(--spacing-16);
 `
 

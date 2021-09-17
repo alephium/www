@@ -78,24 +78,21 @@ const GlobalStyle = createGlobalStyle`
     --lineHeight-26: 1.625rem;
     --lineHeight-36: 2.25rem;
 
-    --color-light: #fff;
-    --color-light-1: #f8f8f8;
-    --color-text-grey-light-1: #808080;
-    --color-dark: #000;
-    --color-text-grey-dark-1: #8F8F8D;
-    --color-text-grey-dark-3: #737373;
-    --color-dark-1: #111;
-    --color-grey-dark: #1A1A1A;
-    --color-grey-dark-2: #343434;
-    --color-grey-dark-3: #262626;
-    --color-grey-light: #f5f5f5;
-    --color-grey-light-1: #ddd;
-    --color-text-grey-light-2: #A1A1A1;
-    --color-text-grey-light-3: #ccc;
-    --color-text-grey-light-4: #707070;
+    --color-white: #fff;
+    --color-grey: #f5f5f5;
+    --color-grey-100: #ddd;
+    --color-grey-200: #B7B7B7;
+    --color-grey-300: #808080;
+    --color-grey-400: #6E6E6E;
+    --color-grey-500: #4C4C4C;
+    --color-grey-600: #343434;
+    --color-grey-700: #262626;
+    --color-grey-800: #1A1A1A;
+    --color-grey-900: #111;
+    --color-black: #000;
     --color-salmon: #ff5d51;
-    --color-blue: #1200da;
-    --color-blue-2: #479CFF;
+    --color-blue: #479CFF;
+    --color-blue-100: #1200da;
     --color-brown: #393535;
   }
 
@@ -104,9 +101,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    /* TODO: Remove colors and use theme instead */
-    background-color: var(--color-dark);
-    color: var(--color-light);
+    background-color: ${({ theme }) => theme.bgPrimary};
+    color: ${({ theme }) => theme.textPrimary};
     font-family: var(--fontFamily-sans);
   }
 

@@ -1,7 +1,6 @@
 import React, { FC } from 'react'
-import styled, { ThemeProvider } from 'styled-components'
+import styled, { useTheme } from 'styled-components'
 
-import { darkTheme, lightTheme } from '../styles/themes'
 import { deviceBreakPoints } from '../styles/global-style'
 
 import SimpleLink, { SimpleLinkProps } from './SimpleLink'
@@ -67,23 +66,27 @@ interface FooterColumnProps {
   links: Array<SimpleLinkProps>
 }
 
-let FooterColumn: FC<FooterColumnProps> = ({ className, title, links }) => (
-  <div className={className}>
-    <div className="title">{title}</div>
-    <ul>
-      {links.map((link) => (
-        <li key={link.text}>
-          <SimpleLink {...link} color="var(--color-text-grey-light-2)" />
-        </li>
-      ))}
-    </ul>
-  </div>
-)
+let FooterColumn: FC<FooterColumnProps> = ({ className, title, links }) => {
+  const theme = useTheme()
+
+  return (
+    <div className={className}>
+      <div className="title">{title}</div>
+      <ul>
+        {links.map((link) => (
+          <li key={link.text}>
+            <SimpleLink {...link} color={theme.textTertiary} />
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}
 
 const Separator = styled.div`
   width: 2px;
   height: 5rem;
-  background-color: var(--color-grey-dark-3);
+  background-color: ${({ theme }) => theme.separator};
   margin: auto 0;
 
   @media ${deviceBreakPoints.mobile} {
@@ -108,7 +111,6 @@ FooterColumn = styled(FooterColumn)`
     display: flex;
     flex-direction: column;
     gap: var(--spacing-2);
-    color: var(--color-text-grey-light-2);
     list-style: none;
     padding-left: 0;
   }

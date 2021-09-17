@@ -36,7 +36,7 @@ SectionTextHeader = styled(SectionTextHeader)`
   p {
     margin-top: var(--spacing-5);
     margin-bottom: 0;
-    color: ${({ theme }) => theme.textTetriary};
+    color: ${({ theme }) => theme.textTertiary};
     max-width: var(--width-564);
   }
 `

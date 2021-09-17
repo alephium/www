@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import styled from 'styled-components'
+import styled, { useTheme } from 'styled-components'
 
 import Card from './Card'
 import CardTextTeaser from './CardTextTeaser'
@@ -13,8 +13,10 @@ interface CardEngagementProps {
 }
 
 let CardEngagement: FC<CardEngagementProps> = ({ title, link, ImageComponent, children, className }) => {
+  const theme = useTheme()
+
   return (
-    <Card className={className} borderColor="var(--color-dark)" thickBorders bgColor="var(--color-grey-dark)">
+    <Card className={className} borderColor={theme.bgPrimary} thickBorders bgColor={theme.bgTertiary}>
       <div className="card-contents">
         <CardTextTeaserStyled title={title} link={link}>
           {children}
@@ -55,11 +57,11 @@ CardEngagement = styled(CardEngagement)`
   }
 
   &:hover {
-    background-color: var(--color-dark);
+    background-color: ${({ theme }) => theme.bgPrimary};
     border-color: transparent;
 
     &:before {
-      background: linear-gradient(270deg, var(--color-salmon) 0%, var(--color-blue) 100%);
+      background: linear-gradient(270deg, var(--color-salmon) 0%, var(--color-blue-100) 100%);
     }
   }
 

@@ -4,32 +4,36 @@ export type ThemeType = 'light' | 'dark'
 
 export const darkTheme: DefaultTheme = {
   name: 'dark',
-  body: 'var(--color-dark)',
 
-  textPrimary: 'var(--color-light)',
-  textSecondary: 'var(--color-text-grey-light-1)',
-  textTetriary: 'var(--color-text-grey-light-3)',
-  textAccent: '#FFD036', // TODO: Change
+  textPrimary: 'var(--color-white)',
+  textPrimaryVariation: 'var(--color-grey-100)',
+  textSecondary: 'var(--color-grey-200)',
+  textTertiary: 'var(--color-grey-300)',
 
-  bgPrimary: 'var(--color-dark)',
-  bgSecondary: 'var(--color-dark-1)',
-  bgTertiary: 'var(--color-grey-dark)',
+  bgPrimary: 'var(--color-black)',
+  bgSecondary: 'var(--color-grey-900)',
+  bgTertiary: 'var(--color-grey-800)',
+  bgSurface: 'var(--color-grey-700)',
 
-  link: 'var(--color-light)'
+  link: 'var(--color-white)',
+
+  separator: 'var(--color-grey-700)'
 }
 
 export const lightTheme: DefaultTheme = {
   name: 'light',
-  body: 'var(--color-light)',
 
-  textPrimary: 'var(--color-dark)',
-  textSecondary: 'var(--color-text-grey-dark-1)',
-  textTetriary: 'var(--color-grey-dark-2)',
-  textAccent: 'var(--color-text-grey-dark-3)',
+  textPrimary: 'var(--color-black)',
+  textPrimaryVariation: 'var(--color-grey-600)',
+  textSecondary: 'var(--color-grey-500)',
+  textTertiary: 'var(--color-grey-400)',
 
-  bgPrimary: 'var(--color-light)',
-  bgSecondary: 'var(--color-light-1)',
-  bgTertiary: 'var(--color-grey-light)',
+  bgPrimary: 'var(--color-white)',
+  bgSecondary: 'var(--color-grey)',
+  bgTertiary: 'var(--color-grey)',
+  bgSurface: 'var(--color-white)',
 
-  link: 'var(--color-blue-2)'
+  link: 'var(--color-blue)',
+
+  separator: 'var(--color-grey-100)'
 }

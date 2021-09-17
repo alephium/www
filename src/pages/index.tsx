@@ -15,7 +15,9 @@ import Footer from '../components/Footer'
 const IndexPage = () => {
   return (
     <>
-      <GlobalStyle />
+      <ThemeProvider theme={darkTheme}>
+        <GlobalStyle />
+      </ThemeProvider>
       <main>
         <ThemeProvider theme={darkTheme}>
           <PageSectionHero />

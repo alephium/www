@@ -53,7 +53,7 @@ let PageSectionUsability: FC<PageSectionUsabilityProps> = ({ className }) => (
 PageSectionUsability = styled(PageSectionUsability)`
   padding-top: var(--spacing-28);
   padding-bottom: var(--spacing-28);
-  background-color: ${({ theme }) => theme.body};
+  background-color: ${({ theme }) => theme.bgPrimary};
   color: ${({ theme }) => theme.textPrimary};
   position: relative;
 
@@ -82,7 +82,7 @@ const CenteredContent = styled.div`
 `
 
 const TextSnippetStyled = styled(TextSnippet)`
-  color: ${({ theme }) => theme.textAccent};
+  color: ${({ theme }) => theme.textTertiary};
 `
 
 const BirdsImageStyled = styled(BirdsImage)`

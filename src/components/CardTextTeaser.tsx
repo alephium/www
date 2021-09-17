@@ -37,12 +37,12 @@ const TextSnippetStyled = styled(TextSnippet)`
   }
 
   div {
-    color: var(--color-text-grey-light-3);
+    color: ${({ theme }) => theme.textPrimaryVariation};
     margin-bottom: var(--spacing-1);
   }
 
   p {
-    color: var(--color-text-grey-light-1);
+    color: ${({ theme }) => theme.textTertiary};
   }
 `
 

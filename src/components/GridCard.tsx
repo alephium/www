@@ -10,16 +10,24 @@ interface GridCardProps {
   subtitle: string
   link: ArrowedLinkProps
   className?: string
-  bgColor?: string
   ImageComponent?: FC
   backgroundImageUrl?: string
+  primaryBackground?: boolean
 }
 
-let GridCard: FC<GridCardProps> = ({ className, children, title, subtitle, link, bgColor, ImageComponent }) => {
+let GridCard: FC<GridCardProps> = ({
+  className,
+  children,
+  title,
+  subtitle,
+  link,
+  primaryBackground,
+  ImageComponent
+}) => {
   const theme = useTheme()
 
   return (
-    <Card className={className} bgColor={bgColor || theme.bgPrimary}>
+    <Card className={className} bgColor={primaryBackground ? theme.bgPrimary : theme.bgSurface}>
       <div className="card-contents">
         <article>
           <div className="text-content">
@@ -37,7 +45,6 @@ let GridCard: FC<GridCardProps> = ({ className, children, title, subtitle, link,
   )
 }
 
-// TODO: Similar code with CardEngagement and CardTextTeaser, maybe merge?
 GridCard = styled(GridCard)`
   position: relative;
   overflow: hidden;
@@ -73,12 +80,12 @@ const TextSnippetStyled = styled(TextSnippet)`
 
   div {
     margin-bottom: var(--spacing-5);
-    color: ${({ theme }) => theme.textTetriary};
+    color: ${({ theme }) => theme.textSecondary};
   }
 
   p {
     margin-bottom: var(--spacing-5);
-    color: ${({ theme }) => theme.textSecondary};
+    color: ${({ theme }) => theme.textTertiary};
   }
 `
 

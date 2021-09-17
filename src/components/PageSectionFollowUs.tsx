@@ -9,7 +9,6 @@ import TelegramIcon from '../images/svgs/brand-icon-telegram.svg'
 import DiscordIcon from '../images/svgs/brand-icon-discord.svg'
 import TwitterIcon from '../images/svgs/brand-icon-twitter.svg'
 import RedditIcon from '../images/svgs/brand-icon-reddit.svg'
-import ChatIcon from '../images/svgs/brand-icon-chat.svg'
 import YouTubeIcon from '../images/svgs/brand-icon-youtube.svg'
 
 interface FollowUsProps {

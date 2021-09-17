@@ -50,6 +50,7 @@ SectionTextTeaser = styled(SectionTextTeaser)`
     svg {
       width: var(--width-38);
       flex-shrink: 0;
+      fill: ${({ theme }) => theme.textPrimary};
     }
   }
 

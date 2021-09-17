@@ -4,17 +4,19 @@ import { ThemeType } from '../styles/themes'
 declare module 'styled-components' {
   export interface DefaultTheme {
     name: ThemeType
-    body: string
 
     textPrimary: string
+    textPrimaryVariation: string
     textSecondary: string
-    textTetriary: string
-    textAccent: string
-
-    link: string
+    textTertiary: string
 
     bgPrimary: string
     bgSecondary: string
     bgTertiary: string
+    bgSurface: string
+
+    link: string
+
+    separator: string
   }
 }

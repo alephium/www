@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
-import styled, { ThemeProvider } from 'styled-components'
+import styled, { ThemeProvider, useTheme } from 'styled-components'
 
-import { darkTheme } from '../styles/themes'
+import { darkTheme, lightTheme } from '../styles/themes'
 import { deviceBreakPoints } from '../styles/global-style'
 
 import SectionTextHeader from './SectionTextHeader'
@@ -18,62 +18,66 @@ interface PageSectionStartNowProps {
   className?: string
 }
 
-let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className }) => (
-  <section className={className}>
-    <PageSectionContainer>
-      <SectionHeader>
-        <SectionTextHeader
-          title="Start now"
-          subtitle="Build and contribute."
-          description="Alephium is already live. You can start building, earning, and contributing right now."
-          bigSubtitle
-        />
-        <LogoYellow />
-      </SectionHeader>
-      <Grid>
-        <ThemeProvider theme={darkTheme}>
+let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className }) => {
+  const theme = useTheme()
+
+  return (
+    <section className={className}>
+      <PageSectionContainer>
+        <SectionHeader>
+          <SectionTextHeader
+            title="Start now"
+            subtitle="Build and contribute."
+            description="Alephium is already live. You can start building, earning, and contributing right now."
+            bigSubtitle
+          />
+          <LogoYellow />
+        </SectionHeader>
+        <Grid>
+          <ThemeProvider theme={theme === darkTheme ? lightTheme : darkTheme}>
+            <GridCard
+              title="Start mining"
+              subtitle="Earn ALPH tokens"
+              link={{ to: '#', text: 'Instructions', newTab: true }}
+              ImageComponent={MiningImageComponent}
+            >
+              liquam dapibus ipsum vitae sem. Ut eget mauris ac nunc luctus ornare. Phasellus enim augue, rutrum tempus,
+              blandit in, vehicula eu, neque. Sed consequat nunc. Proin metus. Duis at mi non tellus{' '}
+            </GridCard>
+          </ThemeProvider>
           <GridCard
-            title="Start mining"
-            subtitle="Earn ALPH tokens"
-            link={{ to: '#', text: 'Instructions', newTab: true }}
-            bgColor="var(--color-grey-dark-3)"
-            ImageComponent={MiningImageComponent}
+            title="Get a grant"
+            subtitle="And start building"
+            link={{ to: '#', text: 'Apply for a grand', newTab: true }}
+            ImageComponent={GreyMountainsImageStyled}
           >
             liquam dapibus ipsum vitae sem. Ut eget mauris ac nunc luctus ornare. Phasellus enim augue, rutrum tempus,
-            blandit in, vehicula eu, neque. Sed consequat nunc. Proin metus. Duis at mi non tellus{' '}
+            blandit in, vehicula eu, neque. Sed consequat nunc. Proin metus. Duis at mi non tellus
           </GridCard>
-        </ThemeProvider>
-        <GridCard
-          title="Get a grant"
-          subtitle="And start building"
-          link={{ to: '#', text: 'Apply for a grand', newTab: true }}
-          ImageComponent={GreyMountainsImageStyled}
-        >
-          liquam dapibus ipsum vitae sem. Ut eget mauris ac nunc luctus ornare. Phasellus enim augue, rutrum tempus,
-          blandit in, vehicula eu, neque. Sed consequat nunc. Proin metus. Duis at mi non tellus
-        </GridCard>
-        <GridCard
-          title="Get a job @ Alephium"
-          subtitle="We value individuals"
-          link={{ to: '#', text: 'Job openings', newTab: true }}
-          backgroundImageUrl={GenevaImage}
-        >
-          We're based in beautiful Switzerland, but you can work from anywhere in the world.
-        </GridCard>
-        <ThemeProvider theme={darkTheme}>
           <GridCard
-            title="Contribute to the code"
-            subtitle="Code and get rewarded"
-            link={{ to: 'https://github.com/alephium/alephium', text: 'To the codebase', newTab: true }}
-            ImageComponent={CodeImageStyled}
+            title="Get a job @ Alephium"
+            subtitle="We value individuals"
+            link={{ to: '#', text: 'Job openings', newTab: true }}
+            backgroundImageUrl={GenevaImage}
           >
-            We would love to see your code integrated in our codebase! Contribute, and receive some unique rewards.
+            We're based in beautiful Switzerland, but you can work from anywhere in the world.
           </GridCard>
-        </ThemeProvider>
-      </Grid>
-    </PageSectionContainer>
-  </section>
-)
+          <ThemeProvider theme={theme === darkTheme ? lightTheme : darkTheme}>
+            <GridCard
+              title="Contribute to the code"
+              subtitle="Code and get rewarded"
+              link={{ to: 'https://github.com/alephium/alephium', text: 'To the codebase', newTab: true }}
+              ImageComponent={CodeImageStyled}
+              primaryBackground
+            >
+              We would love to see your code integrated in our codebase! Contribute, and receive some unique rewards.
+            </GridCard>
+          </ThemeProvider>
+        </Grid>
+      </PageSectionContainer>
+    </section>
+  )
+}
 
 PageSectionStartNow = styled(PageSectionStartNow)`
   padding-top: var(--spacing-28);

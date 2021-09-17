@@ -16,8 +16,8 @@ let Button: FC<ButtonProps> = ({ onClick, className, children }) => (
 )
 
 Button = styled(Button)`
-  background-color: var(--color-blue-2);
-  color: var(--color-light);
+  background-color: var(--color-blue);
+  color: var(--color-white);
   border-radius: var(--radius-full);
   padding: var(--spacing-2) var(--spacing-3);
   border: 0 solid;
@@ -30,17 +30,13 @@ Button = styled(Button)`
 
   &:hover {
     cursor: pointer;
-
-    .arrow {
-      transform: rotate(-45deg);
-    }
+    filter: brightness(95%);
   }
 
   .arrow {
     width: 11px;
     margin-left: var(--spacing-1);
-    transition: transform 0.2s ease;
-    fill: var(--color-light);
+    fill: var(--color-white);
   }
 `
 

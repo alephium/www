@@ -54,6 +54,7 @@ PageSectionHero = styled(PageSectionHero)`
 
   h1 {
     font-size: var(--fontSize-70);
+    color: ${({ theme }) => theme.textPrimary};
 
     @media ${deviceBreakPoints.smallMobile} {
       font-size: var(--fontSize-50);
@@ -101,12 +102,12 @@ const PageSectionContainerStyled = styled(PageSectionContainer)`
 
 const TextSnippetStyled = styled(TextSnippet)`
   max-width: var(--width-564);
-  color: var(--color-text-grey-light-1);
+  color: ${({ theme }) => theme.textTertiary};
 `
 
 const ArrowDown = styled(Arrow)`
   width: 1.625rem;
-  fill: var(--color-light);
+  fill: ${({ theme }) => theme.textPrimary};
   margin-top: var(--spacing-11);
   transform: rotate(90deg);
 `
