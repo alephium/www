@@ -12,6 +12,8 @@ import Column from './Column'
 import Columns from './Columns'
 import SectionTextHeader from './SectionTextHeader'
 
+import { deviceBreakPoints } from '../styles/global-style'
+
 interface PageSectionIntroProps {
   className?: string
 }
@@ -28,6 +30,12 @@ const IntroColumns = styled(Columns)`
 
 const IntroColumnContent = styled.div`
   margin-top: var(--spacing-6);
+  display: flex;
+  gap: var(--spacing-2);
+
+  @media ${deviceBreakPoints.mobile} {
+    flex-direction: column;
+  }
 `
 
 let PageSectionIntro: FC<PageSectionIntroProps> = ({ className }) => (
@@ -71,12 +79,12 @@ let PageSectionIntro: FC<PageSectionIntroProps> = ({ className }) => (
             </CardEngagement>
           </IntroColumnContent>
         </Column>
-        <Column>
+        {/* <Column>
           <SectionTextHeader title="Feed" subtitle="What's cooking?" />
           <IntroColumnContent>
             <Feed />
           </IntroColumnContent>
-        </Column>
+        </Column> */}
       </IntroColumns>
     </PageSectionContainer>
   </section>

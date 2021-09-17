@@ -5,6 +5,8 @@ import Card from './Card'
 import CardTextTeaser from './CardTextTeaser'
 import { ArrowedLinkProps } from './ArrowedLink'
 
+import { deviceBreakPoints } from '../styles/global-style'
+
 interface CardEngagementProps {
   title: string
   link: ArrowedLinkProps
@@ -39,9 +41,12 @@ CardEngagement = styled(CardEngagement)`
   flex-direction: column;
   position: relative;
   transition: all 0.2s ease;
+  flex: 1;
 
-  & + & {
-    margin-top: var(--spacing-4);
+  @media ${deviceBreakPoints.mobile} {
+    & + & {
+      margin-top: var(--spacing-4);
+    }
   }
 
   &:before {
