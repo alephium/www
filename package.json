@@ -38,6 +38,7 @@
     "styled-normalize": "^8.0.7"
   },
   "devDependencies": {
+    "@types/react-helmet": "^6.1.2",
     "@types/react-swipeable-views": "^0.13.1",
     "@types/styled-components": "^5.1.12",
     "prettier": "2.3.2"

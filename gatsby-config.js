@@ -1,7 +1,12 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://www.yourdomain.tld',
-    title: 'Alephium website'
+    siteUrl: 'https://www.alephium.org',
+    title: 'Alephium',
+    description:
+      'A novel sharded blockchain for a secure, scalable and flexible financial ecosystem, empowered by BlockFlow algorithm and extended UTXO model.',
+    social: {
+      twitter: 'alephium'
+    }
   },
   plugins: [
     'gatsby-plugin-styled-components',

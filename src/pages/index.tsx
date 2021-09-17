@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components'
 import GlobalStyle from '../styles/global-style'
 import { darkTheme, lightTheme } from '../styles/themes'
 
+import Seo from '../components/Seo'
 import PageSectionHero from '../components/PageSectionHero'
 import PageSectionIntro from '../components/PageSectionIntro'
 import PageSectionTechnology from '../components/PageSectionTechnology'
@@ -15,6 +16,7 @@ import Footer from '../components/Footer'
 const IndexPage = () => {
   return (
     <>
+      <Seo />
       <ThemeProvider theme={darkTheme}>
         <GlobalStyle />
       </ThemeProvider>
