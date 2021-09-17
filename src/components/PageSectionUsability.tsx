@@ -34,13 +34,13 @@ let PageSectionUsability: FC<PageSectionUsabilityProps> = ({ className }) => (
       </CenteredContent>
       <ImagesColumns>
         <ImageColumn>
-          <img src={WalletSecurityCheckImage} alt="Wallet security check screen" />
+          <img src={WalletSecurityCheckImage} width="345" height="575" alt="Wallet security check screen" />
         </ImageColumn>
         <ImageColumn>
-          <img src={WalletHiThereImage} alt="Wallet hi there screen" />
+          <img src={WalletHiThereImage} width="384" height="637" alt="Wallet hi there screen" />
         </ImageColumn>
         <ImageColumn>
-          <img src={WalletEverythingIsReadyImage} alt="Wallet everything is ready screen" />
+          <img src={WalletEverythingIsReadyImage} width="345" height="575" alt="Wallet everything is ready screen" />
         </ImageColumn>
       </ImagesColumns>
       <ImageSwiperStyled />
