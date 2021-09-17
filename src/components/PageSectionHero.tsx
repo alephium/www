@@ -55,6 +55,7 @@ PageSectionHero = styled(PageSectionHero)`
   h1 {
     font-size: var(--fontSize-70);
     color: ${({ theme }) => theme.textPrimary};
+    font-weight: var(--fontWeight-bold);
 
     @media ${deviceBreakPoints.smallMobile} {
       font-size: var(--fontSize-50);

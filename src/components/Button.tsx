@@ -25,7 +25,7 @@ Button = styled(Button)`
   /* The following rules are the same as in the ArrowedLink, maybe extract? */
   display: flex;
   align-items: center;
-  font-weight: var(--fontWeight-bold);
+  font-weight: var(--fontWeight-medium);
   font-size: var(--fontSize-18);
 
   &:hover {

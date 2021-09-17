@@ -59,12 +59,12 @@ const GlobalStyle = createGlobalStyle`
     --radius: 1rem;
     --radius-full: 9999px;
 
-    --fontFamily-sans: Inter, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    --fontFamily-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
     --fontFamily-serif: "Times New Roman", Times, serif;
     --font-heading: var(--fontFamily-sans);
     --fontWeight-normal: 400;
-    --fontWeight-medium: 500;
-    --fontWeight-bold: 600;
+    --fontWeight-medium: 600;
+    --fontWeight-bold: 700;
 
     /* TODO: Maybe check https://www.designsystems.com/typography-guides/ for
     inspiration in defining a typography system */

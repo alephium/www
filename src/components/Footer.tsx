@@ -116,7 +116,7 @@ FooterColumn = styled(FooterColumn)`
   }
 
   .title {
-    font-weight: var(--fontWeight-bold);
+    font-weight: var(--fontWeight-medium);
   }
 `
 

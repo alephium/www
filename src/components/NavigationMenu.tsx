@@ -34,7 +34,7 @@ NavigationMenu = styled(NavigationMenu)`
   justify-content: space-between;
 
   .nav-start .nav-item {
-    font-weight: var(--fontWeight-bold);
+    font-weight: var(--fontWeight-medium);
     font-size: var(--fontSize-24);
   }
 
