@@ -10,6 +10,7 @@ import DiscordIcon from '../images/svgs/brand-icon-discord.svg'
 import TwitterIcon from '../images/svgs/brand-icon-twitter.svg'
 import RedditIcon from '../images/svgs/brand-icon-reddit.svg'
 import YouTubeIcon from '../images/svgs/brand-icon-youtube.svg'
+import LinkedInIcon from '../images/svgs/brand-icon-linkedin.svg'
 
 interface FollowUsProps {
   className?: string
@@ -29,6 +30,7 @@ let FollowUs: FC<FollowUsProps> = ({ className }) => (
         <SocialMediaIcon ImageComponent={DiscordIcon} url="https://discord.gg/nD8FzcTugn" />
         <SocialMediaIcon ImageComponent={TwitterIcon} url="https://twitter.com/alephium" />
         <SocialMediaIcon ImageComponent={RedditIcon} url="https://www.reddit.com/r/Alephium/" />
+        <SocialMediaIcon ImageComponent={LinkedInIcon} url="https://www.linkedin.com/company/alephium/" />
         <SocialMediaIcon ImageComponent={YouTubeIcon} url="https://www.youtube.com/channel/UCIX9Eww2Kch7sc0E6gCmEdg" />
       </SocialMediaIconsList>
     </PageSectionContainer>
@@ -45,7 +47,7 @@ FollowUs = styled(FollowUs)`
 const SocialMediaIconsList = styled.div`
   display: flex;
   gap: var(--spacing-9);
-  align-items: flex-start;
+  align-items: center;
   margin-top: var(--spacing-16);
   flex-wrap: wrap;
 `
