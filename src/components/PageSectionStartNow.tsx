@@ -25,12 +25,9 @@ let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className }) => {
     <section className={className}>
       <PageSectionContainer>
         <SectionHeader>
-          <SectionTextHeader
-            title="Start now"
-            subtitle="Build and contribute."
-            description="Alephium is already live. You can start building, earning, and contributing right now."
-            bigSubtitle
-          />
+          <SectionTextHeader title="Start now" subtitle="Build and contribute." bigSubtitle>
+            <p>Alephium is already live. You can start building, earning, and contributing right now.</p>
+          </SectionTextHeader>
           <LogoYellow />
         </SectionHeader>
         <Grid>
@@ -41,8 +38,10 @@ let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className }) => {
               link={{ to: '#', text: 'Instructions', newTab: true }}
               ImageComponent={MiningImageComponent}
             >
-              liquam dapibus ipsum vitae sem. Ut eget mauris ac nunc luctus ornare. Phasellus enim augue, rutrum tempus,
-              blandit in, vehicula eu, neque. Sed consequat nunc. Proin metus. Duis at mi non tellus{' '}
+              <p>
+                liquam dapibus ipsum vitae sem. Ut eget mauris ac nunc luctus ornare. Phasellus enim augue, rutrum
+                tempus, blandit in, vehicula eu, neque. Sed consequat nunc. Proin metus. Duis at mi non tellus{' '}
+              </p>
             </GridCard>
           </ThemeProvider>
           <GridCard
@@ -51,8 +50,10 @@ let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className }) => {
             link={{ to: '#', text: 'Apply for a grand', newTab: true }}
             ImageComponent={GreyMountainsImageStyled}
           >
-            liquam dapibus ipsum vitae sem. Ut eget mauris ac nunc luctus ornare. Phasellus enim augue, rutrum tempus,
-            blandit in, vehicula eu, neque. Sed consequat nunc. Proin metus. Duis at mi non tellus
+            <p>
+              liquam dapibus ipsum vitae sem. Ut eget mauris ac nunc luctus ornare. Phasellus enim augue, rutrum tempus,
+              blandit in, vehicula eu, neque. Sed consequat nunc. Proin metus. Duis at mi non tellus
+            </p>
           </GridCard>
           <GridCard
             title="Get a job @ Alephium"
@@ -60,7 +61,7 @@ let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className }) => {
             link={{ to: '#', text: 'Job openings', newTab: true }}
             backgroundImageUrl={GenevaImage}
           >
-            We're based in beautiful Switzerland, but you can work from anywhere in the world.
+            <p>We're based in beautiful Switzerland, but you can work from anywhere in the world.</p>
           </GridCard>
           <ThemeProvider theme={theme === darkTheme ? lightTheme : darkTheme}>
             <GridCard
@@ -70,7 +71,9 @@ let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className }) => {
               ImageComponent={CodeImageStyled}
               primaryBackground
             >
-              We would love to see your code integrated in our codebase! Contribute, and receive some unique rewards.
+              <p>
+                We would love to see your code integrated in our codebase! Contribute, and receive some unique rewards.
+              </p>
             </GridCard>
           </ThemeProvider>
         </Grid>

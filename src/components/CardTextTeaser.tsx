@@ -16,7 +16,7 @@ let CardTextTeaser: FC<CardTextTeaserProps> = ({ title, subtitle, children, link
     <TextSnippetStyled className="text-content" title={title} titleHierarchy="h3" subtitle={subtitle} smallSubtitle>
       {children}
     </TextSnippetStyled>
-    <ArrowedLink to={link.to} newTab={link.newTab}>
+    <ArrowedLink to={link.to} newTab={link.newTab} openModal={link.openModal}>
       {link.text}
     </ArrowedLink>
   </article>

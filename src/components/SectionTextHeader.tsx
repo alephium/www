@@ -9,13 +9,12 @@ interface SectionTextHeaderProps {
   subtitle: string
   bigSubtitle?: boolean
   centered?: boolean
-  description?: string
 }
 
-let SectionTextHeader: FC<SectionTextHeaderProps> = ({ className, title, subtitle, bigSubtitle, description }) => (
+let SectionTextHeader: FC<SectionTextHeaderProps> = ({ className, title, subtitle, bigSubtitle, children }) => (
   <header className={className}>
     <TextSnippet title={title} subtitle={subtitle} bigTitle bigSubtitle={bigSubtitle}>
-      {description}
+      {children}
     </TextSnippet>
   </header>
 )

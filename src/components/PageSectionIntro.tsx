@@ -7,10 +7,11 @@ import MiningImage from '../images/svgs/mining.svg'
 
 import PageSectionContainer from './PageSectionContainer'
 import CardEngagement from './CardEngagement'
-import Feed from './Feed'
+// import Feed from './Feed'
 import Column from './Column'
 import Columns from './Columns'
 import SectionTextHeader from './SectionTextHeader'
+import ModalGetTheWallet from './ModalGetTheWallet'
 
 import { deviceBreakPoints } from '../styles/global-style'
 
@@ -38,57 +39,67 @@ const IntroColumnContent = styled.div`
   }
 `
 
-let PageSectionIntro: FC<PageSectionIntroProps> = ({ className }) => (
-  <section className={className} id="intro">
-    <PageSectionContainer>
-      <IntroColumns gap="var(--spacing-32)">
-        <Column>
-          <SectionTextHeader title="Start" subtitle="Engage with us." />
-          <IntroColumnContent>
-            <CardEngagement
-              title="Start mining"
-              link={{
-                text: 'Documentation',
-                to: 'https://github.com/alephium/wiki/blob/master/Miner-Guide.md',
-                newTab: true
-              }}
-              ImageComponent={MiningImageStyled}
-            >
-              Get your node ready, and contribute to the network security. It only takes a few minutes to start getting
-              rewarded in ALPH tokens.
-            </CardEngagement>
-            <CardEngagement
-              title="Get the wallet"
-              link={{
-                text: 'Download',
-                to: '#'
-              }}
-              ImageComponent={WalletImageStyled}
-            >
-              Safe and super easy to use. Start storing, sending, and receiving your precious ALPH tokens right away.
-            </CardEngagement>
-            <CardEngagement
-              title="Build on Alephium"
-              link={{
-                text: 'Documentation',
-                to: '#'
-              }}
-              ImageComponent={HookImageStyled}
-            >
-              The mainnet is live! Start building your own tools and apps today!
-            </CardEngagement>
-          </IntroColumnContent>
-        </Column>
-        {/* <Column>
+let PageSectionIntro: FC<PageSectionIntroProps> = ({ className }) => {
+  const [isGetTheWalletModalOpen, setIsGetTheWalletModalOpen] = React.useState(false)
+
+  return (
+    <section className={className} id="intro">
+      <PageSectionContainer>
+        <IntroColumns gap="var(--spacing-32)">
+          <Column>
+            <SectionTextHeader title="Start" subtitle="Engage with us." />
+            <IntroColumnContent>
+              <CardEngagement
+                title="Start mining"
+                link={{
+                  text: 'Documentation',
+                  to: 'https://github.com/alephium/wiki/blob/master/Miner-Guide.md',
+                  newTab: true
+                }}
+                ImageComponent={MiningImageStyled}
+              >
+                <p>
+                  Get your node ready, and contribute to the network security. It only takes a few minutes to start
+                  getting rewarded in ALPH tokens.
+                </p>
+              </CardEngagement>
+              <CardEngagement
+                title="Get the wallet"
+                link={{
+                  text: 'Download',
+                  openModal: setIsGetTheWalletModalOpen
+                }}
+                ImageComponent={WalletImageStyled}
+              >
+                <p>
+                  Safe and super easy to use. Start storing, sending, and receiving your precious ALPH tokens right
+                  away.
+                </p>
+              </CardEngagement>
+              <CardEngagement
+                title="Build on Alephium"
+                link={{
+                  text: 'Documentation',
+                  to: '#'
+                }}
+                ImageComponent={HookImageStyled}
+              >
+                <p>The mainnet is live! Start building your own tools and apps today!</p>
+              </CardEngagement>
+            </IntroColumnContent>
+          </Column>
+          {/* <Column>
           <SectionTextHeader title="Feed" subtitle="What's cooking?" />
           <IntroColumnContent>
             <Feed />
           </IntroColumnContent>
         </Column> */}
-      </IntroColumns>
-    </PageSectionContainer>
-  </section>
-)
+        </IntroColumns>
+      </PageSectionContainer>
+      <ModalGetTheWallet isOpen={isGetTheWalletModalOpen} setIsOpen={setIsGetTheWalletModalOpen} />
+    </section>
+  )
+}
 
 PageSectionIntro = styled(PageSectionIntro)`
   padding: var(--spacing-16) 0 var(--spacing-28);

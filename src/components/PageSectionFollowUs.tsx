@@ -19,12 +19,12 @@ interface FollowUsProps {
 let FollowUs: FC<FollowUsProps> = ({ className }) => (
   <section className={className}>
     <PageSectionContainer>
-      <SectionTextHeader
-        title="Follow us"
-        subtitle="Join the community."
-        description="Alephium's community is growing fast. You're fascinated by the technology, you want to know more or you want to build something cool with it? Come and join us!"
-        bigSubtitle
-      />
+      <SectionTextHeader title="Follow us" subtitle="Join the community." bigSubtitle>
+        <p>
+          Alephium's community is growing fast. You're fascinated by the technology, you want to know more or you want
+          to build something cool with it? Come and join us!
+        </p>
+      </SectionTextHeader>
       <SocialMediaIconsList>
         <SocialMediaIcon ImageComponent={TelegramIcon} url="https://t.me/alephiumgroup" />
         <SocialMediaIcon ImageComponent={DiscordIcon} url="https://discord.gg/nD8FzcTugn" />

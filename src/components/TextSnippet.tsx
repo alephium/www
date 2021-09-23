@@ -15,8 +15,8 @@ interface TextSnippetProps {
 let TextSnippet: FC<TextSnippetProps> = ({ className, title, titleHierarchy = 'h2', subtitle, children }) => (
   <div className={className}>
     {title && (titleHierarchy === 'h2' ? <h2>{title}</h2> : <h3>{title}</h3>)}
-    {subtitle && <div>{subtitle}</div>}
-    {children && <p>{children}</p>}
+    {subtitle && <div className="text-subtitle">{subtitle}</div>}
+    {children && <div className="text-content">{children}</div>}
   </div>
 )
 
@@ -29,13 +29,13 @@ TextSnippet = styled(TextSnippet)`
     margin: 0;
   }
 
-  div {
+  .text-subtitle {
     font-size: ${({ smallSubtitle, bigSubtitle }) =>
       smallSubtitle ? 'var(--fontSize-14)' : bigSubtitle ? 'var(--fontSize-24)' : 'var(--fontSize-18)'};
     line-height: ${({ smallSubtitle }) => (smallSubtitle ? 'var(--lineHeight-22)' : 'var(--lineHeight-26)')};
   }
 
-  p {
+  .text-content {
     font-size: ${({ bigText }) => (bigText ? 'var(--fontSize-18)' : 'inherit')};
     line-height: ${({ bigText }) => (bigText ? 'var(--lineHeight-26)' : 'var(--lineHeight-22)')};
   }

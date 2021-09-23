@@ -8,18 +8,28 @@ import Arrow from '../images/svgs/arrow-right.svg'
 export interface ArrowedLinkProps {
   className?: string
   IconComponent?: FC
-  to: string
+  to?: string
   text?: string
   newTab?: boolean
+  openModal?: any // TODO
 }
 
-let ArrowedLink: FC<ArrowedLinkProps> = ({ className, children, IconComponent, to, newTab }) => (
-  <SimpleLink className={className} to={to} newTab={newTab}>
-    {IconComponent && <IconComponent className="icon" />}
-    {children}
-    <Arrow className="arrow" />
-  </SimpleLink>
-)
+let ArrowedLink: FC<ArrowedLinkProps> = ({ className, children, IconComponent, to, newTab, openModal }) => {
+  const handleOnClick = (event: any) => {
+    if (openModal) {
+      event.preventDefault()
+      openModal(true)
+    }
+  }
+
+  return (
+    <SimpleLink className={className} to={to} newTab={newTab} onClick={handleOnClick}>
+      {IconComponent && <IconComponent className="icon" />}
+      {children}
+      <Arrow className="arrow" />
+    </SimpleLink>
+  )
+}
 
 ArrowedLink = styled(ArrowedLink)`
   display: flex;
