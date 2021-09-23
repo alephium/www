@@ -58,6 +58,7 @@ NavigationMenu = styled(NavigationMenu)`
 
 const LogoTextStyled = styled(LogoText)`
   height: 1.625rem;
+  fill: ${({ theme }) => theme.textPrimary};
 `
 
 export default NavigationMenu
