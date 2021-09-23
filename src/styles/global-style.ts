@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
     --page-width: 82.5rem;
     --page-width-shrinked: 68rem;
 
+    --width-16: 1rem;
     --width-38: 2.375rem;
     --width-82: 5.125rem;
     --width-120: 7.5rem;
