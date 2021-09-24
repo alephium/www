@@ -71,10 +71,7 @@ let PageSectionIntro: FC<PageSectionIntroProps> = ({ className }) => {
                 }}
                 ImageComponent={WalletImageStyled}
               >
-                <p>
-                  Safe and super easy to use. Start storing, sending, and receiving your precious ALPH tokens right
-                  away.
-                </p>
+                <p>Safe and super easy to use. Store, send, and receive ALPH tokens in a few clicks.</p>
               </CardEngagement>
               <CardEngagement
                 title="Build on Alephium"
@@ -84,7 +81,7 @@ let PageSectionIntro: FC<PageSectionIntroProps> = ({ className }) => {
                 }}
                 ImageComponent={HookImageStyled}
               >
-                <p>The mainnet is live! Start building your own tools and apps today!</p>
+                <p>The mainnet is live! Start building your own protocols and apps today!</p>
               </CardEngagement>
             </IntroColumnContent>
           </Column>
