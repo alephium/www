@@ -63,7 +63,7 @@ let PageSectionHero: FC<PageSectionHeroProps> = ({ className }) => {
                   currentPage={currentSlide}
                   setCurrentPage={setCurrentSlide}
                 />
-                <a href="#intro">
+                <a href="#intro" aria-label="Scroll to the intro section">
                   <ArrowDown />
                 </a>
               </div>

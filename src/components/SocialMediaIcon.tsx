@@ -3,12 +3,13 @@ import styled from 'styled-components'
 
 interface SocialMediaIconProps {
   url: string
+  name: string
   ImageComponent: FC
   className?: string
 }
 
-let SocialMediaIcon: FC<SocialMediaIconProps> = ({ url, ImageComponent, className }) => (
-  <a href={url} target="_blank" rel="noopener" className={className}>
+let SocialMediaIcon: FC<SocialMediaIconProps> = ({ url, ImageComponent, name, className }) => (
+  <a href={url} target="_blank" rel="noopener" className={className} aria-label={`Visit our ${name}`}>
     <ImageComponent />
   </a>
 )

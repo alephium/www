@@ -27,13 +27,21 @@ let FollowUs: FC<FollowUsProps> = ({ className }) => (
         </p>
       </SectionTextHeader>
       <SocialMediaIconsList>
-        <SocialMediaIcon ImageComponent={TelegramIcon} url="https://t.me/alephiumgroup" />
-        <SocialMediaIcon ImageComponent={DiscordIcon} url="https://discord.gg/nD8FzcTugn" />
-        <SocialMediaIcon ImageComponent={TwitterIcon} url="https://twitter.com/alephium" />
-        <SocialMediaIcon ImageComponent={RedditIcon} url="https://www.reddit.com/r/Alephium/" />
-        <SocialMediaIcon ImageComponent={LinkedInIcon} url="https://www.linkedin.com/company/alephium/" />
-        <SocialMediaIcon ImageComponent={YouTubeIcon} url="https://www.youtube.com/channel/UCIX9Eww2Kch7sc0E6gCmEdg" />
-        <SocialMediaIcon ImageComponent={MediumIcon} url="https://medium.com/@alephium" />
+        <SocialMediaIcon ImageComponent={TelegramIcon} name="Telegram group" url="https://t.me/alephiumgroup" />
+        <SocialMediaIcon ImageComponent={DiscordIcon} name="Discord server" url="https://discord.gg/nD8FzcTugn" />
+        <SocialMediaIcon ImageComponent={TwitterIcon} name="Twitter page" url="https://twitter.com/alephium" />
+        <SocialMediaIcon ImageComponent={RedditIcon} name="Reddit page" url="https://www.reddit.com/r/Alephium/" />
+        <SocialMediaIcon
+          ImageComponent={LinkedInIcon}
+          name="LinkedIn page"
+          url="https://www.linkedin.com/company/alephium/"
+        />
+        <SocialMediaIcon
+          ImageComponent={YouTubeIcon}
+          name="Youtube channel"
+          url="https://www.youtube.com/channel/UCIX9Eww2Kch7sc0E6gCmEdg"
+        />
+        <SocialMediaIcon ImageComponent={MediumIcon} name="Medium page" url="https://medium.com/@alephium" />
       </SocialMediaIconsList>
     </PageSectionContainer>
   </section>
