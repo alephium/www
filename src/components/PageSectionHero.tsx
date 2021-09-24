@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useRef, useState } from 'react'
+import React, { FC, useRef, useState } from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 
 import { darkTheme, lightTheme } from '../styles/themes'
@@ -8,6 +8,7 @@ import PageSectionContainer from './PageSectionContainer'
 import NavigationMenu from './NavigationMenu'
 import TextSnippet from './TextSnippet'
 import Paginator from './Paginator'
+import HeroSlider from './HeroSlider'
 
 import Logo from '../images/svgs/logo.svg'
 import LogoYellow from '../images/svgs/logo-yellow.svg'
@@ -24,80 +25,53 @@ let PageSectionHero: FC<PageSectionHeroProps> = ({ className }) => {
   const [currentSlide, setCurrentSlide] = useState(1)
   const innerRef = useRef<HTMLElement>(null)
 
-  var xDown = 0
-  var yDown = 0
-
-  useEffect(() => {
-    const heroSection = innerRef.current
-    if (heroSection) {
-      heroSection.addEventListener('touchstart', handleTouchStart, false)
-      heroSection.addEventListener('touchmove', handleTouchMove, false)
-    }
-
-    return () => {
-      if (heroSection) {
-        heroSection.removeEventListener('touchstart', handleTouchStart, false)
-        heroSection.removeEventListener('touchmove', handleTouchMove, false)
-      }
-    }
-  }, [])
-
-  const handleTouchStart = (event: any) => {
-    const firstTouch = event.touches[0]
-    xDown = firstTouch.clientX
-    yDown = firstTouch.clientY
-  }
-
-  const handleTouchMove = (event: any) => {
-    if (!xDown || !yDown) {
-      return
-    }
-
-    var xUp = event.touches[0].clientX
-    var yUp = event.touches[0].clientY
-
-    var xDiff = xDown - xUp
-    var yDiff = yDown - yUp
-
-    if (Math.abs(xDiff) > Math.abs(yDiff)) {
-      setTheme(xDiff > 0 ? 'light' : 'dark')
-      setCurrentSlide(xDiff > 0 ? 1 : 2)
-    }
-    xDown = 0
-    yDown = 0
-  }
-
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light')
   }
 
+  const onSwipeRight = () => {
+    setTheme('dark')
+    setCurrentSlide(1)
+  }
+
+  const onSwipeLeft = () => {
+    setTheme('light')
+    setCurrentSlide(2)
+  }
+
   return (
     <ThemeProvider theme={theme === 'dark' ? darkTheme : lightTheme}>
-      <HeroSection className={className} ref={innerRef}>
-        <PageSectionContainerStyled>
-          <div className="navigation-menu-wrapper">
-            <NavigationMenu />
-          </div>
-          <div className="contents">
-            <div>
-              {theme === 'dark' ? <Logo className="logo" /> : <LogoYellow className="logo" />}
-              <h1>{theme === 'dark' ? `Blockchain v3.0` : `Usability first`}</h1>
-              <TextSnippetStyled bigText>
-                {theme === 'dark'
-                  ? `Alephium is the first operational sharded blockchain bringing versatility, scalability, and energy
+      <HeroSlider heroElementRef={innerRef} onSwipeRight={onSwipeRight} onSwipeLeft={onSwipeLeft}>
+        <HeroSection className={className} ref={innerRef}>
+          <PageSectionContainerStyled>
+            <div className="navigation-menu-wrapper">
+              <NavigationMenu />
+            </div>
+            <div className="contents">
+              <div>
+                {theme === 'dark' ? <Logo className="logo" /> : <LogoYellow className="logo" />}
+                <h1>{theme === 'dark' ? `Blockchain v3.0` : `Usability first`}</h1>
+                <TextSnippetStyled bigText>
+                  {theme === 'dark'
+                    ? `Alephium is the first operational sharded blockchain bringing versatility, scalability, and energy
                 efficiency to Bitcoin's proven core technologies, while offering much better performances and secure P2P
                 smart contracts.`
-                  : `Alephium firmly believes that blockchain adoption is only possible if products are built with the user in mind. Your grandma should be able to interact with Alephium, without even knowing it.`}
-              </TextSnippetStyled>
-              <PaginatorStyled onPageClick={toggleTheme} currentPage={currentSlide} setCurrentPage={setCurrentSlide} />
-              <a href="#intro">
-                <ArrowDown />
-              </a>
+                    : `Alephium firmly believes that blockchain adoption is only possible if products are built with the user in mind. Your grandma should be able to interact with Alephium, without even knowing it.`}
+                </TextSnippetStyled>
+                <PaginatorStyled
+                  onPageClick={toggleTheme}
+                  currentPage={currentSlide}
+                  setCurrentPage={setCurrentSlide}
+                />
+                <a href="#intro">
+                  <ArrowDown />
+                </a>
+              </div>
             </div>
-          </div>
-        </PageSectionContainerStyled>
-        {theme === 'dark' ? <HeroDarkImage className="hero-image" /> : <HeroLightImage className="hero-image" />}
-      </HeroSection>
+          </PageSectionContainerStyled>
+          {theme === 'dark' ? <HeroDarkImage className="hero-image" /> : <HeroLightImage className="hero-image" />}
+        </HeroSection>
+      </HeroSlider>
     </ThemeProvider>
   )
 }
