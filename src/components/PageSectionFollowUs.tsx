@@ -11,6 +11,7 @@ import TwitterIcon from '../images/svgs/brand-icon-twitter.svg'
 import RedditIcon from '../images/svgs/brand-icon-reddit.svg'
 import YouTubeIcon from '../images/svgs/brand-icon-youtube.svg'
 import LinkedInIcon from '../images/svgs/brand-icon-linkedin.svg'
+import MediumIcon from '../images/svgs/brand-icon-medium.svg'
 
 interface FollowUsProps {
   className?: string
@@ -32,6 +33,7 @@ let FollowUs: FC<FollowUsProps> = ({ className }) => (
         <SocialMediaIcon ImageComponent={RedditIcon} url="https://www.reddit.com/r/Alephium/" />
         <SocialMediaIcon ImageComponent={LinkedInIcon} url="https://www.linkedin.com/company/alephium/" />
         <SocialMediaIcon ImageComponent={YouTubeIcon} url="https://www.youtube.com/channel/UCIX9Eww2Kch7sc0E6gCmEdg" />
+        <SocialMediaIcon ImageComponent={MediumIcon} url="https://medium.com/@alephium" />
       </SocialMediaIconsList>
     </PageSectionContainer>
   </section>
