@@ -93,7 +93,7 @@ const GlobalStyle = createGlobalStyle`
     --color-grey-900: #111;
     --color-black: #000;
     --color-salmon: #ff5d51;
-    --color-blue: #479CFF;
+    --color-blue: #4899ff;
     --color-blue-100: #1200da;
     --color-brown: #393535;
   }

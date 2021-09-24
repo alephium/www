@@ -8,7 +8,7 @@ export const darkTheme: DefaultTheme = {
   textPrimary: 'var(--color-white)',
   textPrimaryVariation: 'var(--color-grey-100)',
   textSecondary: 'var(--color-grey-200)',
-  textTertiary: 'var(--color-grey-300)',
+  textTertiary: 'var(--color-grey-200)',
 
   bgPrimary: 'var(--color-black)',
   bgSecondary: 'var(--color-grey-900)',
