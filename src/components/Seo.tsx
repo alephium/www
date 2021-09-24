@@ -18,6 +18,7 @@ const Seo: FC<SeoProps> = ({ title, description, lang = 'en' }) => {
           siteMetadata {
             title
             description
+            siteUrl
             social {
               twitter
             }
@@ -28,6 +29,7 @@ const Seo: FC<SeoProps> = ({ title, description, lang = 'en' }) => {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const metaImageAbsoluteUrl = `${site.siteMetadata.siteUrl}${SocialMediaBannerImage}`
 
   return (
     <Helmet
@@ -54,8 +56,7 @@ const Seo: FC<SeoProps> = ({ title, description, lang = 'en' }) => {
         },
         {
           property: `og:image`,
-          // TODO: Add a real image
-          content: SocialMediaBannerImage
+          content: metaImageAbsoluteUrl
         },
         {
           name: `twitter:card`,
@@ -75,8 +76,7 @@ const Seo: FC<SeoProps> = ({ title, description, lang = 'en' }) => {
         },
         {
           name: `twitter:image`,
-          // TODO: Add a real image
-          content: SocialMediaBannerImage
+          content: metaImageAbsoluteUrl
         }
       ]}
     />
