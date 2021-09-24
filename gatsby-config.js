@@ -9,6 +9,16 @@ module.exports = {
     }
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Alephium`,
+        short_name: `Alephium`,
+        start_url: `/`,
+        icon: 'src/images/favicon.ico',
+        icons: []
+      }
+    },
     'gatsby-plugin-styled-components',
     'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',
