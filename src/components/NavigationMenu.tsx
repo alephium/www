@@ -53,6 +53,10 @@ NavigationMenu = styled(NavigationMenu)`
     padding: var(--spacing-3) 0;
     display: flex;
     align-items: center;
+
+    @media ${deviceBreakPoints.smallMobile} {
+      padding: var(--spacing-2) 0;
+    }
   }
 `
 

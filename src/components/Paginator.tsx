@@ -6,13 +6,13 @@ import DotFilledImage from '../images/svgs/dot-filled.svg'
 
 interface PaginatorProps {
   numberOfPages?: number
+  currentPage: number
+  setCurrentPage: (page: number) => void
   onPageClick: (page: number) => void
   className?: string
 }
 
-let Paginator: FC<PaginatorProps> = ({ numberOfPages = 2, onPageClick, className }) => {
-  const [currentPage, setCurrentPage] = useState(1)
-
+let Paginator: FC<PaginatorProps> = ({ numberOfPages = 2, currentPage, setCurrentPage, onPageClick, className }) => {
   const handleOnClick = (page: number) => {
     setCurrentPage(page)
     onPageClick(page)
