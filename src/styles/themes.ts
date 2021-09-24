@@ -16,6 +16,7 @@ export const darkTheme: DefaultTheme = {
   bgSurface: 'var(--color-grey-700)',
 
   link: 'var(--color-white)',
+  linkAlt: 'var(--color-white)',
 
   separator: 'var(--color-grey-700)'
 }
@@ -34,6 +35,7 @@ export const lightTheme: DefaultTheme = {
   bgSurface: 'var(--color-white)',
 
   link: 'var(--color-blue)',
+  linkAlt: 'var(--color-black)',
 
   separator: 'var(--color-grey-100)'
 }

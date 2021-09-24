@@ -16,6 +16,7 @@ declare module 'styled-components' {
     bgSurface: string
 
     link: string
+    linkAlt: string
 
     separator: string
   }

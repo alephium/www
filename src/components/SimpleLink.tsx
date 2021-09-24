@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export interface SimpleLinkProps {
   className?: string
-  to: string
+  to?: string
   text?: string
   newTab?: boolean
   color?: string

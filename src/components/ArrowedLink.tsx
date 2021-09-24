@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import styled, { css } from 'styled-components'
+import styled, { css, useTheme } from 'styled-components'
 
 import SimpleLink from './SimpleLink'
 
@@ -11,10 +11,22 @@ export interface ArrowedLinkProps {
   to?: string
   text?: string
   newTab?: boolean
-  openModal?: any // TODO
+  openModal?: (x: boolean) => void
+  altColor?: boolean
 }
 
-let ArrowedLink: FC<ArrowedLinkProps> = ({ className, children, IconComponent, to, newTab, openModal }) => {
+let ArrowedLink: FC<ArrowedLinkProps> = ({
+  className,
+  children,
+  IconComponent,
+  to,
+  newTab,
+  openModal,
+  altColor = false
+}) => {
+  const theme = useTheme()
+  const color = altColor ? theme.linkAlt : theme.link
+
   const handleOnClick = (event: any) => {
     if (openModal) {
       event.preventDefault()
@@ -23,7 +35,7 @@ let ArrowedLink: FC<ArrowedLinkProps> = ({ className, children, IconComponent, t
   }
 
   return (
-    <SimpleLink className={className} to={to} newTab={newTab} onClick={handleOnClick}>
+    <SimpleLink className={className} to={to} newTab={newTab} onClick={handleOnClick} color={color}>
       {IconComponent && <IconComponent className="icon" />}
       {children}
       <Arrow className="arrow" />
@@ -40,13 +52,13 @@ ArrowedLink = styled(ArrowedLink)`
   .icon {
     width: 1rem;
     margin-right: var(--spacing-1);
-    fill: ${({ theme }) => theme.link};
+    fill: ${({ theme, altColor }) => (altColor ? theme.linkAlt : theme.link)};
   }
 
   .arrow {
     width: 11px;
     margin-left: var(--spacing-1);
-    fill: ${({ theme }) => theme.link};
+    fill: ${({ theme, altColor }) => (altColor ? theme.linkAlt : theme.link)};
     ${(props) =>
       props.newTab &&
       css`
