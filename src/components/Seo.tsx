@@ -47,12 +47,20 @@ const Seo: FC<SeoProps> = ({ title, description, lang = 'en' }) => {
           content: title
         },
         {
+          property: `og:site_name`,
+          content: title
+        },
+        {
           property: `og:description`,
           content: metaDescription
         },
         {
           property: `og:type`,
           content: `website`
+        },
+        {
+          property: `og:url`,
+          content: site.siteMetadata.siteUrl
         },
         {
           property: `og:image`,

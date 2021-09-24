@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: 'https://alephium-website-in-the-works-how-cool-is-it.vercel.app', // TODO: Update to official domain
-    title: 'Alephium',
+    title: 'Alephium: Blockchain v3.0',
     description:
       'A novel sharded blockchain for a secure, scalable and flexible financial ecosystem, empowered by BlockFlow algorithm and extended UTXO model.',
     social: {
