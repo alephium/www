@@ -41,7 +41,11 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className }) => (
               iconText="Merging the versatility and expressivity of Ethereum with the security of the Bitcoin technology stack."
               links={[
                 { text: 'More details', to: '#' },
-                { text: 'White paper', to: 'https://github.com/alephium/white-paper', newTab: true }
+                {
+                  text: 'White paper',
+                  to: 'https://github.com/alephium/white-paper/blob/master/alephium.pdf',
+                  newTab: true
+                }
               ]}
             />
           </Column>
@@ -59,7 +63,11 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className }) => (
               iconText="Blockchain ultimately depends on its sustainability."
               links={[
                 { text: 'More details', to: '#' },
-                { text: 'White paper', to: 'https://github.com/alephium/white-paper', newTab: true }
+                {
+                  text: 'PoLW white paper',
+                  to: 'https://github.com/alephium/white-paper/blob/master/polw.pdf',
+                  newTab: true
+                }
               ]}
             />
           </Column>
