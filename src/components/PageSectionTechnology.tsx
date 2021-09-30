@@ -90,7 +90,11 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className }) => (
               iconText="Merging the versatility and expressivity of Ethereum with the security of the Bitcoin technology stack."
               links={[
                 { text: 'More details', to: '#' },
-                { text: 'White paper', to: 'https://github.com/alephium/white-paper', newTab: true }
+                {
+                  text: 'Source code',
+                  to: 'https://github.com/alephium/alephium/',
+                  newTab: true
+                }
               ]}
             />
           </Column>
