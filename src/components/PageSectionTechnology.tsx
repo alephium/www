@@ -129,7 +129,7 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className }) => (
           />
           <Columns>
             <NumbersColumn>
-              <NumbersInfo className="numbers-info" number="16" description="Shards running on mainnet." />
+              <NumbersInfo className="numbers-info" number="16" description="shards running on mainnet." />
             </NumbersColumn>
             <NumbersColumn>
               <NumbersInfo
