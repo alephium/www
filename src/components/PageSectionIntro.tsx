@@ -2,7 +2,8 @@ import React, { FC } from 'react'
 import styled from 'styled-components'
 
 import HookImage from '../images/svgs/hook.svg'
-import WalletImage from '../images/svgs/wallet.svg'
+// import WalletImage from '../images/svgs/wallet.svg'
+import CodeImage from '../images/svgs/code.svg'
 import MiningImage from '../images/svgs/mining.svg'
 
 import PageSectionContainer from './PageSectionContainer'
@@ -64,14 +65,18 @@ let PageSectionIntro: FC<PageSectionIntroProps> = ({ className }) => {
                 </p>
               </CardEngagement>
               <CardEngagement
-                title="Get the wallet"
+                title="Contribute"
                 link={{
-                  text: 'Download',
-                  openModal: setIsGetTheWalletModalOpen
+                  text: 'Codebase',
+                  to: 'https://github.com/alephium/alephium/',
+                  newTab: true
                 }}
-                ImageComponent={WalletImageStyled}
+                ImageComponent={CodeImageStyled}
               >
-                <p>Safe and super easy to use. Store, send, and receive ALPH tokens in a few clicks.</p>
+                <p>
+                  We would love to see your code integrated in our codebase! Contribute, and receive some unique
+                  rewards.
+                </p>
               </CardEngagement>
               <CardEngagement
                 title="Build on Alephium"
@@ -112,11 +117,20 @@ const MiningImageStyled = styled(MiningImage)`
   margin: auto 0;
 `
 
-const WalletImageStyled = styled(WalletImage)`
-  width: 4.5rem;
+// To be used once we want to show a wallet card in the intro section
+// const WalletImageStyled = styled(WalletImage)`
+//   width: 4.5rem;
+//   height: auto;
+//   position: absolute;
+//   top: -0.5rem;
+//   left: 0;
+// `
+
+const CodeImageStyled = styled(CodeImage)`
+  width: 5.2rem;
   height: auto;
   position: absolute;
-  top: -0.5rem;
+  top: var(--spacing-4);
   left: 0;
 `
 
