@@ -16,9 +16,7 @@ let CardTextTeaser: FC<CardTextTeaserProps> = ({ title, subtitle, children, link
     <TextSnippetStyled className="text-content" title={title} titleHierarchy="h3" subtitle={subtitle} smallSubtitle>
       {children}
     </TextSnippetStyled>
-    <ArrowedLink to={link.to} newTab={link.newTab} openModal={link.openModal}>
-      {link.text}
-    </ArrowedLink>
+    <ArrowedLink {...link}>{link.text}</ArrowedLink>
   </article>
 )
 
@@ -34,6 +32,7 @@ const TextSnippetStyled = styled(TextSnippet)`
 
   h3 {
     margin-bottom: ${(props) => (props.subtitle ? 'var(--spacing-1)' : 'var(--spacing-3)')};
+    color: ${({ theme }) => theme.textPrimary};
   }
 
   div {

@@ -18,9 +18,9 @@ let CardEngagement: FC<CardEngagementProps> = ({ title, link, ImageComponent, ch
   const theme = useTheme()
 
   return (
-    <Card className={className} borderColor={theme.bgPrimary} thickBorders bgColor={theme.bgTertiary}>
+    <Card className={className} borderColor={theme.bgPrimary} thickBorders bgColor={theme.bgTertiary} link={link}>
       <div className="card-contents">
-        <CardTextTeaserStyled title={title} link={link}>
+        <CardTextTeaserStyled title={title} link={{ ...link, onlyText: true }}>
           {children}
         </CardTextTeaserStyled>
         <div className="image-container">

@@ -13,6 +13,7 @@ export interface ArrowedLinkProps {
   newTab?: boolean
   openModal?: (x: boolean) => void
   altColor?: boolean
+  onlyText?: boolean
 }
 
 let ArrowedLink: FC<ArrowedLinkProps> = ({
@@ -22,7 +23,8 @@ let ArrowedLink: FC<ArrowedLinkProps> = ({
   to,
   newTab,
   openModal,
-  altColor = false
+  altColor = false,
+  onlyText = false
 }) => {
   const theme = useTheme()
   const color = altColor ? theme.linkAlt : theme.link
@@ -35,7 +37,7 @@ let ArrowedLink: FC<ArrowedLinkProps> = ({
   }
 
   return (
-    <SimpleLink className={className} to={to} newTab={newTab} onClick={handleOnClick} color={color}>
+    <SimpleLink className={className} to={to} newTab={newTab} onClick={handleOnClick} color={color} onlyText={onlyText}>
       {IconComponent && <IconComponent className="icon" />}
       {children}
       <Arrow className="arrow" />

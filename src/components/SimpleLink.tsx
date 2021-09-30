@@ -8,19 +8,23 @@ export interface SimpleLinkProps {
   newTab?: boolean
   color?: string
   onClick?: (event: any) => void
+  onlyText?: boolean
 }
 
-let SimpleLink: FC<SimpleLinkProps> = ({ className, children, to = '', newTab, text, onClick }) => (
-  <a
-    className={className}
-    href={to}
-    target={(newTab && '_blank') || undefined}
-    rel={(newTab && 'noopener') || undefined}
-    onClick={onClick}
-  >
-    {children || text}
-  </a>
-)
+let SimpleLink: FC<SimpleLinkProps> = ({ className, children, to = '', newTab, text, onClick, onlyText }) =>
+  onlyText ? (
+    <span className={className}>{children || text}</span>
+  ) : (
+    <a
+      className={className}
+      href={to}
+      target={(newTab && '_blank') || undefined}
+      rel={(newTab && 'noopener') || undefined}
+      onClick={onClick}
+    >
+      {children || text}
+    </a>
+  )
 
 SimpleLink = styled(SimpleLink)`
   text-decoration: none;
