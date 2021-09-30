@@ -27,9 +27,10 @@ let FollowUs: FC<FollowUsProps> = ({ className }) => (
         </p>
       </SectionTextHeader>
       <SocialMediaIconsList>
-        <SocialMediaIcon ImageComponent={TelegramIcon} name="Telegram group" url="https://t.me/alephiumgroup" />
         <SocialMediaIcon ImageComponent={DiscordIcon} name="Discord server" url="https://discord.gg/nD8FzcTugn" />
+        <SocialMediaIcon ImageComponent={TelegramIcon} name="Telegram group" url="https://t.me/alephiumgroup" />
         <SocialMediaIcon ImageComponent={TwitterIcon} name="Twitter page" url="https://twitter.com/alephium" />
+        <SocialMediaIcon ImageComponent={MediumIcon} name="Medium page" url="https://medium.com/@alephium" />
         <SocialMediaIcon ImageComponent={RedditIcon} name="Reddit page" url="https://www.reddit.com/r/Alephium/" />
         <SocialMediaIcon
           ImageComponent={LinkedInIcon}
@@ -41,7 +42,6 @@ let FollowUs: FC<FollowUsProps> = ({ className }) => (
           name="Youtube channel"
           url="https://www.youtube.com/channel/UCIX9Eww2Kch7sc0E6gCmEdg"
         />
-        <SocialMediaIcon ImageComponent={MediumIcon} name="Medium page" url="https://medium.com/@alephium" />
       </SocialMediaIconsList>
     </PageSectionContainer>
   </section>
