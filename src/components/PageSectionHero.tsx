@@ -69,7 +69,11 @@ let PageSectionHero: FC<PageSectionHeroProps> = ({ className }) => {
               </div>
             </div>
           </PageSectionContainerStyled>
-          {theme === 'dark' ? <HeroDarkImage className="hero-image" /> : <HeroLightImage className="hero-image" />}
+          {theme === 'dark' ? (
+            <HeroDarkImage className="hero-image planet" />
+          ) : (
+            <HeroLightImage className="hero-image" />
+          )}
         </HeroSection>
       </HeroSlider>
     </ThemeProvider>
@@ -105,6 +109,12 @@ const HeroSection = styled.section`
     height: 100%;
     flex-grow: 1;
     z-index: 1;
+
+    .text-content {
+      @media ${deviceBreakPoints.mobile} {
+        color: ${({ theme }) => theme.textPrimary};
+      }
+    }
   }
 
   .logo {
@@ -120,6 +130,12 @@ const HeroSection = styled.section`
     right: 0;
     bottom: 0;
     width: auto;
+
+    @media ${deviceBreakPoints.mobile} {
+      &.planet {
+        filter: brightness(0.5);
+      }
+    }
   }
 `
 
