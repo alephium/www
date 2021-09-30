@@ -24,24 +24,27 @@ let Footer: FC<FooterProps> = ({ className }) => (
           <FooterColumn
             title="Resources"
             links={[
-              { text: 'Wallet', to: '#' },
+              { text: 'Wiki', to: 'https://github.com/alephium/alephium/wiki', newTab: true },
               {
                 text: 'BlockFlow white paper',
                 to: 'https://github.com/alephium/white-paper/blob/master/alephium.pdf',
                 newTab: true
               },
-              { text: 'Investor documents', to: '#', newTab: true }
+              {
+                text: 'PoLW white paper',
+                to: 'https://github.com/alephium/white-paper/blob/master/polw.pdf',
+                newTab: true
+              }
             ]}
           />
         </Column>
         <Column>
           <FooterColumn
-            title="Social Media"
+            title="Open source"
             links={[
-              { text: 'Telegram', to: '#', newTab: true },
-              { text: 'Slack', to: '#', newTab: true },
-              { text: 'Twitter', to: '#', newTab: true },
-              { text: 'Reddit', to: '#', newTab: true }
+              { text: 'Alephium', to: 'https://github.com/alephium/alephium', newTab: true },
+              { text: 'Explorer', to: 'https://github.com/alephium/explorer', newTab: true },
+              { text: 'Wallet', to: 'https://github.com/alephium/alephium-wallet', newTab: true }
             ]}
           />
         </Column>
