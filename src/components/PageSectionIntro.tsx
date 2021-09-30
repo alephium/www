@@ -53,7 +53,7 @@ let PageSectionIntro: FC<PageSectionIntroProps> = ({ className }) => {
                 title="Start mining"
                 link={{
                   text: 'Documentation',
-                  to: 'https://github.com/alephium/wiki/blob/master/Miner-Guide.md',
+                  to: 'https://github.com/alephium/alephium/wiki/Miner-Guide',
                   newTab: true
                 }}
                 ImageComponent={MiningImageStyled}
