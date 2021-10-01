@@ -2,9 +2,9 @@ import React, { FC } from 'react'
 import styled from 'styled-components'
 import SwipeableViews from 'react-swipeable-views'
 
-import WalletHiThereImage from '../images/wallet-hi-there.png'
-import WalletSecurityCheckImage from '../images/wallet-security-check.png'
-import WalletEverythingIsReadyImage from '../images/wallet-everything-is-ready.png'
+import WalletWelcomeImage from '../images/wallet-welcome.png'
+import WalletSecurityImage from '../images/wallet-security.png'
+import WalletReadyImage from '../images/wallet-ready.png'
 
 interface ImageSwiperProps {
   className?: string
@@ -13,13 +13,13 @@ interface ImageSwiperProps {
 const ImageSwiper: FC<ImageSwiperProps> = ({ className }) => (
   <SwipeableViews enableMouseEvents className={className}>
     <View>
-      <img src={WalletSecurityCheckImage} alt="Wallet security check screen" />
+      <img src={WalletSecurityImage} alt="Wallet security check screen" />
     </View>
     <View>
-      <img src={WalletHiThereImage} alt="Wallet hi there screen" />
+      <img src={WalletWelcomeImage} alt="Wallet hi there screen" />
     </View>
     <View>
-      <img src={WalletEverythingIsReadyImage} alt="Wallet everything is ready screen" />
+      <img src={WalletReadyImage} alt="Wallet everything is ready screen" />
     </View>
   </SwipeableViews>
 )

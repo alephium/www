@@ -2,9 +2,9 @@ import React, { FC } from 'react'
 
 import Modal, { ModalProps } from './Modal'
 
-const ModalGetTheWallet: FC<ModalProps> = ({ isOpen, setIsOpen }) => {
+const ModalContact: FC<ModalProps> = ({ isOpen, setIsOpen }) => {
   return (
-    <Modal title="Get the wallet" isOpen={isOpen} setIsOpen={setIsOpen}>
+    <Modal title="Title" isOpen={isOpen} setIsOpen={setIsOpen}>
       <p>
         Ut sit amet risus ut quam malesuada cursus ac a magna. Sed lacinia condimentum semper. Mauris hendrerit ornare
         sem ac aliquam. Sed tellus felis, mattis a tristique quis, facilisis et nulla. Lorem ipsum dolor sit amet,
@@ -48,4 +48,4 @@ const ModalGetTheWallet: FC<ModalProps> = ({ isOpen, setIsOpen }) => {
   )
 }
 
-export default ModalGetTheWallet
+export default ModalContact

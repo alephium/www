@@ -12,12 +12,55 @@ import CardEngagement from './CardEngagement'
 import Column from './Column'
 import Columns from './Columns'
 import SectionTextHeader from './SectionTextHeader'
-import ModalGetTheWallet from './ModalGetTheWallet'
+import { ArrowedLinkProps } from './ArrowedLink'
 
 import { deviceBreakPoints } from '../styles/global-style'
 
+export interface PageSectionIntroContentType {
+  title: string
+  subtitle: string
+  cards: {
+    title: string
+    description: string
+    link: ArrowedLinkProps
+  }[]
+}
+
 interface PageSectionIntroProps {
   className?: string
+  content: PageSectionIntroContentType
+}
+
+let PageSectionIntro: FC<PageSectionIntroProps> = ({ className, content }) => {
+  const cards = content.cards.map((card, index) => ({
+    ...card,
+    image: index === 0 ? MiningImageStyled : index === 1 ? CodeImageStyled : HookImageStyled
+  }))
+
+  return (
+    <section className={className} id="intro">
+      <PageSectionContainer>
+        <IntroColumns gap="var(--spacing-32)">
+          <Column>
+            <SectionTextHeader title={content.title} subtitle={content.subtitle} />
+            <IntroColumnContent>
+              {cards.map((card) => (
+                <CardEngagement title={card.title} link={card.link} ImageComponent={card.image} key={card.title}>
+                  <p>{card.description}</p>
+                </CardEngagement>
+              ))}
+            </IntroColumnContent>
+          </Column>
+          {/* <Column>
+          <SectionTextHeader title="Feed" subtitle="What's cooking?" />
+          <IntroColumnContent>
+            <Feed />
+          </IntroColumnContent>
+        </Column> */}
+        </IntroColumns>
+      </PageSectionContainer>
+    </section>
+  )
 }
 
 const IntroColumns = styled(Columns)`
@@ -39,69 +82,6 @@ const IntroColumnContent = styled.div`
     flex-direction: column;
   }
 `
-
-let PageSectionIntro: FC<PageSectionIntroProps> = ({ className }) => {
-  const [isGetTheWalletModalOpen, setIsGetTheWalletModalOpen] = React.useState(false)
-
-  return (
-    <section className={className} id="intro">
-      <PageSectionContainer>
-        <IntroColumns gap="var(--spacing-32)">
-          <Column>
-            <SectionTextHeader title="Start" subtitle="Engage with us." />
-            <IntroColumnContent>
-              <CardEngagement
-                title="Start mining"
-                link={{
-                  text: 'Documentation',
-                  to: 'https://github.com/alephium/alephium/wiki/Miner-Guide',
-                  newTab: true
-                }}
-                ImageComponent={MiningImageStyled}
-              >
-                <p>
-                  Get your node ready, and contribute to the network security. It only takes a few minutes to start
-                  getting rewarded in ALPH tokens.
-                </p>
-              </CardEngagement>
-              <CardEngagement
-                title="Contribute"
-                link={{
-                  text: 'Codebase',
-                  to: 'https://github.com/alephium/alephium/',
-                  newTab: true
-                }}
-                ImageComponent={CodeImageStyled}
-              >
-                <p>
-                  We would love to see your code integrated in our codebase! Contribute, and receive some unique
-                  rewards.
-                </p>
-              </CardEngagement>
-              <CardEngagement
-                title="Build on Alephium"
-                link={{
-                  text: 'Documentation',
-                  to: '#'
-                }}
-                ImageComponent={HookImageStyled}
-              >
-                <p>The mainnet is live! Start building your own protocols and apps today!</p>
-              </CardEngagement>
-            </IntroColumnContent>
-          </Column>
-          {/* <Column>
-          <SectionTextHeader title="Feed" subtitle="What's cooking?" />
-          <IntroColumnContent>
-            <Feed />
-          </IntroColumnContent>
-        </Column> */}
-        </IntroColumns>
-      </PageSectionContainer>
-      <ModalGetTheWallet isOpen={isGetTheWalletModalOpen} setIsOpen={setIsGetTheWalletModalOpen} />
-    </section>
-  )
-}
 
 PageSectionIntro = styled(PageSectionIntro)`
   padding: var(--spacing-16) 0 var(--spacing-28);

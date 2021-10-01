@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 import styled from 'styled-components'
+import Img, { FluidObject } from 'gatsby-image'
 
 import { deviceBreakPoints } from '../styles/global-style'
 
@@ -10,40 +11,47 @@ import Columns from './Columns'
 import Column from './Column'
 import ImageSwiper from './ImageSwiper'
 import TextSnippet from './TextSnippet'
+import { ArrowedLinkProps } from './ArrowedLink'
 
 import BirdsImage from '../images/svgs/birds.svg'
 import YellowMountainsImage from '../images/svgs/yellow-mountains.svg'
-import WalletHiThereImage from '../images/wallet-hi-there.png'
-import WalletSecurityCheckImage from '../images/wallet-security-check.png'
-import WalletEverythingIsReadyImage from '../images/wallet-everything-is-ready.png'
+
+export interface PageSectionUsabilityContentType {
+  title: string
+  subtitle: string
+  description: string
+  button: ArrowedLinkProps
+  images: {
+    src: {
+      childImageSharp: {
+        fluid: FluidObject
+      }
+    }
+    altText: string
+  }[]
+}
 
 interface PageSectionUsabilityProps {
   className?: string
+  content: PageSectionUsabilityContentType
 }
 
-let PageSectionUsability: FC<PageSectionUsabilityProps> = ({ className }) => (
+let PageSectionUsability: FC<PageSectionUsabilityProps> = ({ className, content }) => (
   <section className={className}>
-    <SectionTextHeaderStyled title="Usability" subtitle="Designed for humans." centered bigSubtitle />
+    <SectionTextHeaderStyled title={content.title} subtitle={content.subtitle} centered bigSubtitle />
     <PageSectionContainerStyled>
       <CenteredContent>
-        <TextSnippetStyled bigText>
-          Our wallet is only the first step. We want to make blockchain accessible to anyone. Technology and complexity
-          should be out of the way while remaining accessible.
-        </TextSnippetStyled>
-        <Button onClick={() => alert('Not implemented yet, the sadness...')}>Get the wallet</Button>
+        <TextSnippetStyled bigText>{content.description}</TextSnippetStyled>
+        <Button url={content.button.url} newTab={content.button.newTab}>
+          {content.button.text}
+        </Button>
       </CenteredContent>
       <ImagesColumns>
-        <ImageColumn>
-          <img src={WalletSecurityCheckImage} width="345" height="575" alt="Wallet security check screen" />
-        </ImageColumn>
-        <ImageColumn>
-          <img src={WalletHiThereImage} width="384" height="637" alt="Wallet hi there screen" />
-        </ImageColumn>
-        <ImageColumn>
-          <img src={WalletEverythingIsReadyImage} width="345" height="575" alt="Wallet everything is ready screen" />
-        </ImageColumn>
+        {content.images.map((image) => (
+          <Img key={image.altText} fluid={image.src.childImageSharp.fluid} alt={image.altText} />
+        ))}
       </ImagesColumns>
-      <ImageSwiperStyled />
+      {/* <ImageSwiperStyled /> */}
     </PageSectionContainerStyled>
     <YellowMountainsImageStyled />
     <BirdsImageStyled />
@@ -76,7 +84,7 @@ const CenteredContent = styled.div`
   max-width: var(--width-476);
   margin: auto;
 
-  button {
+  .button {
     margin: var(--spacing-8) auto 0;
   }
 `
@@ -92,12 +100,21 @@ const BirdsImageStyled = styled(BirdsImage)`
 `
 
 const ImagesColumns = styled(Columns)`
-  align-items: center;
   margin-top: var(--spacing-20);
-  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: var(--spacing-4);
+
+  > div:first-child {
+    grid-column: 1 / span 2;
+  }
 
   @media ${deviceBreakPoints.mobile} {
-    display: none;
+    grid-template-columns: 1fr;
+
+    > div:first-child {
+      grid-column: 1 / span 1;
+    }
   }
 `
 
@@ -110,11 +127,9 @@ const YellowMountainsImageStyled = styled(YellowMountainsImage)`
   position: absolute;
   height: auto;
   width: auto;
-
-  /* TODO: Temporary values */
-  bottom: -262px;
-  left: -62px;
-  right: -30px;
+  bottom: -2px;
+  left: 0;
+  right: 0px;
 
   @media ${deviceBreakPoints.mobile} {
     bottom: -152px;

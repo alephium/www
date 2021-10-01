@@ -14,7 +14,7 @@ interface CardProps {
 let Card: FC<CardProps> = ({ className, children, onClick, link }) =>
   link ? (
     <a
-      href={link.to}
+      href={link.url}
       target={(link.newTab && '_blank') || undefined}
       rel={(link.newTab && 'noopener') || undefined}
       className={className}

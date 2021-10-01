@@ -16,14 +16,27 @@ import HeroDarkImage from '../images/svgs/hero-dark.svg'
 import HeroLightImage from '../images/svgs/hero-light.svg'
 import Arrow from '../images/svgs/arrow-right.svg'
 
-interface PageSectionHeroProps {
-  className?: string
+export interface PageSectionHeroContentType {
+  dark: {
+    title: string
+    subtitle: string
+  }
+  light: {
+    title: string
+    subtitle: string
+  }
 }
 
-let PageSectionHero: FC<PageSectionHeroProps> = ({ className }) => {
+interface PageSectionHeroProps {
+  className?: string
+  content: PageSectionHeroContentType
+}
+
+let PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
   const [theme, setTheme] = useState('dark')
   const [currentSlide, setCurrentSlide] = useState(1)
   const innerRef = useRef<HTMLElement>(null)
+  const themeContent = theme === 'dark' ? content.dark : content.light
 
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light')
@@ -50,14 +63,8 @@ let PageSectionHero: FC<PageSectionHeroProps> = ({ className }) => {
             <div className="contents">
               <div>
                 {theme === 'dark' ? <Logo className="logo" /> : <LogoYellow className="logo" />}
-                <h1>{theme === 'dark' ? `Blockchain v3.0` : `Usability first`}</h1>
-                <TextSnippetStyled bigText>
-                  {theme === 'dark'
-                    ? `Alephium is the first operational sharded blockchain bringing versatility, scalability, and energy
-                efficiency to Bitcoin's proven core technologies, while offering much better performances and secure P2P
-                smart contracts.`
-                    : `Alephium firmly believes that blockchain adoption is only possible if products are built with the user in mind. Your grandma should be able to interact with Alephium, without even knowing it.`}
-                </TextSnippetStyled>
+                <h1>{themeContent.title}</h1>
+                <TextSnippetStyled bigText>{themeContent.subtitle}</TextSnippetStyled>
                 <PaginatorStyled
                   onPageClick={toggleTheme}
                   currentPage={currentSlide}

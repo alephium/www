@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, useState } from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 
 import { deviceBreakPoints } from '../styles/global-style'
@@ -11,6 +11,11 @@ import Column from './Column'
 import SectionTextTeaser from './SectionTextTeaser'
 import SubsectionTextHeader from './SubsectionTextHeader'
 import NumbersInfo from './NumbersInfo'
+import ModalBlockFlow from './ModalBlockFlow'
+import ModalPoLW from './ModalPoLW'
+import ModalSmartContract from './ModalSmartContract'
+import ModalVms from './ModalVms'
+import { ArrowedLinkProps } from './ArrowedLink'
 
 import BlockflowImage from '../images/svgs/blockflow.svg'
 import StackImage from '../images/svgs/stack.svg'
@@ -20,133 +25,133 @@ import PolwBackgroundImage from '../images/svgs/polw-background.svg'
 import SmartContractImage from '../images/svgs/smart-contract.svg'
 import VmsImage from '../images/svgs/vms.svg'
 
-interface PageSectionTechnologyProps {
-  className?: string
+export interface PageSectionTechnologyContentType {
+  title: string
+  subtitle: string
+  blockFlowSection: PageSectionTechnologySubsectionProps
+  polwSection: PageSectionTechnologySubsectionProps
+  smartContractSection: PageSectionTechnologySubsectionProps
+  vmsSection: PageSectionTechnologySubsectionProps
+  numbersSection: {
+    title: string
+    subtitle: string
+    columns: {
+      number: string
+      description: string
+    }[]
+  }
 }
 
-let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className }) => (
-  <section className={className}>
-    <SectionTextHeaderStyled title="Technology" subtitle="What makes us different" centered bigSubtitle />
-    <section>
-      <PageSectionContainerStyled>
-        <Columns gap="8.5rem">
-          <CenteredColumn>
-            <BlockflowImageStyled />
-          </CenteredColumn>
-          <Column>
-            <SectionTextTeaser
-              title="Blockflow: sharding on BTC's proven foundations"
-              content="Alephium is the first operational sharded blockchain bringing versatility, scalability, and energy efficiency to Bitcoin's proven core technologies, while offering much better performances and secure P2P smart contracts."
-              IconComponent={StackImage}
-              iconText="Merging the versatility and expressivity of Ethereum with the security of the Bitcoin technology stack."
-              links={[
-                { text: 'More details', to: '#' },
-                {
-                  text: 'White paper',
-                  to: 'https://github.com/alephium/white-paper/blob/master/alephium.pdf',
-                  newTab: true
-                }
-              ]}
-            />
-          </Column>
-        </Columns>
-      </PageSectionContainerStyled>
-    </section>
-    <ProofOfLessWorkSubsection>
-      <PageSectionContainer>
-        <Columns gap="8.5rem">
-          <Column>
-            <SectionTextTeaser
-              title="Proof of Less Work"
-              content="PoLW uses a clever combination of physical work and token economics to dynamically adjust the work required to mine new blocks, ensuring a reduced energy footprint compared to classic Nakamoto PoW mining."
-              IconComponent={LeafImage}
-              iconText="Blockchain ultimately depends on its sustainability."
-              links={[
-                { text: 'More details', to: '#' },
-                {
-                  text: 'PoLW white paper',
-                  to: 'https://github.com/alephium/white-paper/blob/master/polw.pdf',
-                  newTab: true
-                }
-              ]}
-            />
-          </Column>
-          <CenteredColumn></CenteredColumn>
-        </Columns>
-      </PageSectionContainer>
-      <PolwBackgroundImageStyled />
-    </ProofOfLessWorkSubsection>
-    <SmartContractSubsection>
-      <PageSectionContainer>
-        <Columns gap="8.5rem">
-          <CenteredColumn>
-            <SmartContractImageStyled />
-          </CenteredColumn>
-          <Column>
-            <SectionTextTeaser
-              title="Smart contract design"
-              content="Alephium proposes a unique approach to sharding and smart contracts on the Bitcoin technology stack while tackling energy concerns with its Proof of Less Work algorithm."
-              IconComponent={StackImage}
-              iconText="Merging the versatility and expressivity of Ethereum with the security of the Bitcoin technology stack."
-              links={[
-                { text: 'More details', to: '#' },
-                {
-                  text: 'Source code',
-                  to: 'https://github.com/alephium/alephium/',
-                  newTab: true
-                }
-              ]}
-            />
-          </Column>
-        </Columns>
-      </PageSectionContainer>
-    </SmartContractSubsection>
-    <VmsSubsection>
-      <PageSectionContainer>
-        <Columns gap="8.5rem">
-          <Column>
-            <SectionTextTeaser
-              title="Novel VM design"
-              content="Most of the modern blockchain protocols have a built-in virtual machine for general computing to implement useful and complicated decentralized applications. In Alephium, we shift from a code-centric approach to a data-centric approach and enable access and parse information from data payload of UTXOs. In this way, our script system will be as powerful as a general virtual machine."
-              IconComponent={VmDotsImage}
-              iconText="VMs can be a big bottleneck when it comes to Blockchain performances. Not on Alephium."
-              links={[{ text: 'More details', to: '#' }]}
-            />
-          </Column>
-          <CenteredColumn>
-            <VmsImageStyled />
-          </CenteredColumn>
-        </Columns>
-      </PageSectionContainer>
-    </VmsSubsection>
-    <ThemeProvider theme={lightTheme}>
-      <NumbersSection>
-        <NumbersPageSectionContainer>
-          <SubsectionTextHeaderStyled
-            title="Some numbers"
-            subtitle="We're focusing on efficiency, security and scalability. We took our time to make sure we transform theory to actual technologies."
-            condensed
-          />
-          <Columns>
-            <NumbersColumn>
-              <NumbersInfo className="numbers-info" number="16" description="shards running on mainnet." />
-            </NumbersColumn>
-            <NumbersColumn>
-              <NumbersInfo
-                className="numbers-info"
-                number="100MB"
-                description="of RAM needed by the full node. Runs on a Raspberry-PI."
-              />
-            </NumbersColumn>
-            <NumbersColumn>
-              <NumbersInfo className="numbers-info" number="3 years" description='of "under the radar" R&D.' />
-            </NumbersColumn>
+interface PageSectionTechnologySubsectionProps {
+  title: string
+  description: string
+  cardText: string
+  links: ArrowedLinkProps[]
+}
+
+interface PageSectionTechnologyProps {
+  className?: string
+  content: PageSectionTechnologyContentType
+}
+
+let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, content }) => {
+  const [isBlockFlowModalOpen, setIsBlockFlowModalOpen] = useState(false)
+  const [isPoLWModalOpen, setIsPoLWModalOpen] = useState(false)
+  const [isSmartContractModalOpen, setIsSmartContractModalOpen] = useState(false)
+  const [isVmsModalOpen, setIsVmsModalOpen] = useState(false)
+
+  const blockFlowSectionContent = content.blockFlowSection
+  const smartContractSectionContent = content.smartContractSection
+  const polwSectionContent = content.polwSection
+  const vmsSectionContent = content.vmsSection
+  const numbersSectionContent = content.numbersSection
+  blockFlowSectionContent.links[0] = { ...blockFlowSectionContent.links[0], openModal: setIsBlockFlowModalOpen }
+  polwSectionContent.links[0] = { ...polwSectionContent.links[0], openModal: setIsPoLWModalOpen }
+  smartContractSectionContent.links[0] = {
+    ...smartContractSectionContent.links[0],
+    openModal: setIsSmartContractModalOpen
+  }
+  vmsSectionContent.links[0] = { ...vmsSectionContent.links[0], openModal: setIsVmsModalOpen }
+
+  const columnsProps = {
+    gap: '8.5rem'
+  }
+
+  return (
+    <section className={className}>
+      <SectionTextHeaderStyled title={content.title} subtitle={content.subtitle} centered bigSubtitle />
+      <section>
+        <PageSectionContainerStyled>
+          <Columns {...columnsProps}>
+            <CenteredColumn>
+              <BlockflowImageStyled />
+            </CenteredColumn>
+            <Column>
+              <SectionTextTeaser {...blockFlowSectionContent} IconComponent={StackImage} />
+            </Column>
           </Columns>
-        </NumbersPageSectionContainer>
-      </NumbersSection>
-    </ThemeProvider>
-  </section>
-)
+        </PageSectionContainerStyled>
+      </section>
+      <ProofOfLessWorkSubsection>
+        <PageSectionContainer>
+          <Columns {...columnsProps}>
+            <Column>
+              <SectionTextTeaser {...polwSectionContent} IconComponent={LeafImage} />
+            </Column>
+            <CenteredColumn></CenteredColumn>
+          </Columns>
+        </PageSectionContainer>
+        <PolwBackgroundImageStyled />
+      </ProofOfLessWorkSubsection>
+      <SmartContractSubsection>
+        <PageSectionContainer>
+          <Columns {...columnsProps}>
+            <CenteredColumn>
+              <SmartContractImageStyled />
+            </CenteredColumn>
+            <Column>
+              <SectionTextTeaser {...smartContractSectionContent} IconComponent={StackImage} />
+            </Column>
+          </Columns>
+        </PageSectionContainer>
+      </SmartContractSubsection>
+      <VmsSubsection>
+        <PageSectionContainer>
+          <Columns {...columnsProps}>
+            <Column>
+              <SectionTextTeaser {...vmsSectionContent} IconComponent={VmDotsImage} />
+            </Column>
+            <CenteredColumn>
+              <VmsImageStyled />
+            </CenteredColumn>
+          </Columns>
+        </PageSectionContainer>
+      </VmsSubsection>
+      <ThemeProvider theme={lightTheme}>
+        <NumbersSection>
+          <NumbersPageSectionContainer>
+            <SubsectionTextHeaderStyled
+              title={numbersSectionContent.title}
+              subtitle={numbersSectionContent.subtitle}
+              condensed
+            />
+            <Columns>
+              {numbersSectionContent.columns.map((columnContent) => (
+                <NumbersColumn key={columnContent.number}>
+                  <NumbersInfo {...columnContent} />
+                </NumbersColumn>
+              ))}
+            </Columns>
+          </NumbersPageSectionContainer>
+        </NumbersSection>
+      </ThemeProvider>
+      <ModalBlockFlow isOpen={isBlockFlowModalOpen} setIsOpen={setIsBlockFlowModalOpen} />
+      <ModalPoLW isOpen={isPoLWModalOpen} setIsOpen={setIsPoLWModalOpen} />
+      <ModalSmartContract isOpen={isSmartContractModalOpen} setIsOpen={setIsSmartContractModalOpen} />
+      <ModalVms isOpen={isVmsModalOpen} setIsOpen={setIsVmsModalOpen} />
+    </section>
+  )
+}
 
 const NumbersPageSectionContainer = styled(PageSectionContainer)`
   max-width: var(--page-width-shrinked);
@@ -156,12 +161,12 @@ const NumbersColumn = styled(Column)`
   display: flex;
   align-items: center;
 
-  .numbers-info {
+  > div {
     align-self: flex-start;
   }
 
   &:not(:first-child) {
-    .numbers-info {
+    > div {
       padding-left: var(--spacing-9);
 
       @media ${deviceBreakPoints.mobile} {
@@ -185,7 +190,7 @@ const NumbersColumn = styled(Column)`
   }
 
   &:not(:last-child) {
-    .numbers-info {
+    > div {
       padding-right: var(--spacing-9);
 
       @media ${deviceBreakPoints.mobile} {

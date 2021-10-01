@@ -13,35 +13,32 @@ import YouTubeIcon from '../images/svgs/brand-icon-youtube.svg'
 import LinkedInIcon from '../images/svgs/brand-icon-linkedin.svg'
 import MediumIcon from '../images/svgs/brand-icon-medium.svg'
 
-interface FollowUsProps {
-  className?: string
+export interface PageSectionFollowUsContentType {
+  title: string
+  subtitle: string
+  description: string
+  socialMediaLinks: {
+    name: string
+    url: string
+  }[]
 }
 
-let FollowUs: FC<FollowUsProps> = ({ className }) => (
+interface FollowUsProps {
+  className?: string
+  content: PageSectionFollowUsContentType
+}
+
+let FollowUs: FC<FollowUsProps> = ({ className, content }) => (
   <section className={className}>
     <PageSectionContainer>
-      <SectionTextHeader title="Follow us" subtitle="Join the community." bigSubtitle>
-        <p>
-          Alephium's community is growing fast. You're fascinated by the technology, you want to know more or you want
-          to build something cool with it? Come and join us!
-        </p>
+      <SectionTextHeader title={content.title} subtitle={content.subtitle} bigSubtitle>
+        <p>{content.description}</p>
       </SectionTextHeader>
       <SocialMediaIconsList>
-        <SocialMediaIcon ImageComponent={DiscordIcon} name="Discord server" url="https://discord.gg/nD8FzcTugn" />
-        <SocialMediaIcon ImageComponent={TelegramIcon} name="Telegram group" url="https://t.me/alephiumgroup" />
-        <SocialMediaIcon ImageComponent={TwitterIcon} name="Twitter page" url="https://twitter.com/alephium" />
-        <SocialMediaIcon ImageComponent={MediumIcon} name="Medium page" url="https://medium.com/@alephium" />
-        <SocialMediaIcon ImageComponent={RedditIcon} name="Reddit page" url="https://www.reddit.com/r/Alephium/" />
-        <SocialMediaIcon
-          ImageComponent={LinkedInIcon}
-          name="LinkedIn page"
-          url="https://www.linkedin.com/company/alephium/"
-        />
-        <SocialMediaIcon
-          ImageComponent={YouTubeIcon}
-          name="Youtube channel"
-          url="https://www.youtube.com/channel/UCIX9Eww2Kch7sc0E6gCmEdg"
-        />
+        {content.socialMediaLinks.map(({ name, url }) => {
+          const Icon = getIconByName(name)
+          return <SocialMediaIcon key={name} name={name} url={url} ImageComponent={Icon} />
+        })}
       </SocialMediaIconsList>
     </PageSectionContainer>
   </section>
@@ -61,5 +58,26 @@ const SocialMediaIconsList = styled.div`
   margin-top: var(--spacing-16);
   flex-wrap: wrap;
 `
+
+const getIconByName = (name: string) => {
+  switch (name) {
+    case 'Discord':
+      return DiscordIcon
+    case 'Telegram':
+      return TelegramIcon
+    case 'Twitter':
+      return TwitterIcon
+    case 'Reddit':
+      return RedditIcon
+    case 'Medium':
+      return MediumIcon
+    case 'LinkedIn':
+      return LinkedInIcon
+    case 'Youtube':
+      return YouTubeIcon
+    default:
+      break
+  }
+}
 
 export default FollowUs

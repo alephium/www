@@ -10,23 +10,30 @@ import ArrowedLink, { ArrowedLinkProps } from './ArrowedLink'
 interface SectionTextTeaserProps {
   className?: string
   title: string
-  content: string
+  description: string
   IconComponent: FC
-  iconText: string
+  cardText: string
   links: Array<ArrowedLinkProps>
 }
 
-let SectionTextTeaser: FC<SectionTextTeaserProps> = ({ className, title, content, IconComponent, iconText, links }) => (
+let SectionTextTeaser: FC<SectionTextTeaserProps> = ({
+  className,
+  title,
+  description,
+  IconComponent,
+  cardText,
+  links
+}) => (
   <div className={className}>
-    <SubsectionTextHeader title={title} subtitle={content} />
+    <SubsectionTextHeader title={title} subtitle={description} />
     <Card borderColor="var(--color-brown)" className="card">
       <IconComponent />
-      <div>{iconText}</div>
+      <div>{cardText}</div>
     </Card>
     <div className="links">
-      {links.map(({ to, text, newTab }) => (
-        <ArrowedLink key={text} to={to} newTab={newTab}>
-          {text}
+      {links.map((link) => (
+        <ArrowedLink key={link.text} {...link}>
+          {link.text}
         </ArrowedLink>
       ))}
     </div>

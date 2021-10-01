@@ -7,6 +7,7 @@ import { deviceBreakPoints } from '../styles/global-style'
 import SectionTextHeader from './SectionTextHeader'
 import PageSectionContainer from './PageSectionContainer'
 import GridCard from './GridCard'
+import { ArrowedLinkProps } from './ArrowedLink'
 
 import LogoYellow from '../images/svgs/logo-yellow.svg'
 import MiningImage from '../images/svgs/mining.svg'
@@ -14,66 +15,75 @@ import CodeImage from '../images/svgs/code.svg'
 import GreyMountainsImage from '../images/svgs/grey-mountains.svg'
 import GenevaImage from '../images/geneva.jpg'
 
-interface PageSectionStartNowProps {
-  className?: string
+export interface PageSectionStartNowContentType {
+  title: string
+  subtitle: string
+  description: string
+  cards: {
+    title: string
+    subtitle: string
+    description: string
+    link: ArrowedLinkProps
+  }[]
 }
 
-let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className }) => {
+interface PageSectionStartNowProps {
+  className?: string
+  content: PageSectionStartNowContentType
+}
+
+let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className, content }) => {
   const theme = useTheme()
+  const firstCard = content.cards[0]
+  const secondCard = content.cards[1]
+  const thirdCard = content.cards[2]
+  const forthCard = content.cards[3]
 
   return (
     <section className={className}>
       <PageSectionContainer>
         <SectionHeader>
-          <SectionTextHeader title="Start now" subtitle="Build and contribute." bigSubtitle>
-            <p>Alephium is already live. You can start building, earning, and contributing right now.</p>
+          <SectionTextHeader title={content.title} subtitle={content.subtitle} bigSubtitle>
+            <p>{content.description}</p>
           </SectionTextHeader>
           <LogoYellow />
         </SectionHeader>
         <Grid>
           <ThemeProvider theme={theme === darkTheme ? lightTheme : darkTheme}>
             <GridCard
-              title="Start mining"
-              subtitle="Earn ALPH tokens"
-              link={{ to: '#', text: 'Instructions', newTab: true }}
+              title={firstCard.title}
+              subtitle={firstCard.subtitle}
+              link={firstCard.link}
               ImageComponent={MiningImageComponent}
             >
-              <p>
-                liquam dapibus ipsum vitae sem. Ut eget mauris ac nunc luctus ornare. Phasellus enim augue, rutrum
-                tempus, blandit in, vehicula eu, neque. Sed consequat nunc. Proin metus. Duis at mi non tellus{' '}
-              </p>
+              <p>{firstCard.description}</p>
             </GridCard>
           </ThemeProvider>
           <GridCard
-            title="Get a grant"
-            subtitle="And start building"
-            link={{ to: '#', text: 'Apply for a grand', newTab: true }}
+            title={secondCard.title}
+            subtitle={secondCard.subtitle}
+            link={secondCard.link}
             ImageComponent={GreyMountainsImageStyled}
           >
-            <p>
-              liquam dapibus ipsum vitae sem. Ut eget mauris ac nunc luctus ornare. Phasellus enim augue, rutrum tempus,
-              blandit in, vehicula eu, neque. Sed consequat nunc. Proin metus. Duis at mi non tellus
-            </p>
+            <p>{secondCard.description}</p>
           </GridCard>
           <GridCard
-            title="Get a job @ Alephium"
-            subtitle="We value individuals"
-            link={{ to: '#', text: 'Job openings', newTab: true }}
+            title={thirdCard.title}
+            subtitle={thirdCard.subtitle}
+            link={thirdCard.link}
             backgroundImageUrl={GenevaImage}
           >
-            <p>We're based in beautiful Switzerland, but you can work from anywhere in the world.</p>
+            <p>{thirdCard.description}</p>
           </GridCard>
           <ThemeProvider theme={theme === darkTheme ? lightTheme : darkTheme}>
             <GridCard
-              title="Contribute to the code"
-              subtitle="Code and get rewarded"
-              link={{ to: 'https://github.com/alephium/alephium', text: 'To the codebase', newTab: true }}
+              title={forthCard.title}
+              subtitle={forthCard.subtitle}
+              link={forthCard.link}
               ImageComponent={CodeImageStyled}
               primaryBackground
             >
-              <p>
-                We would love to see your code integrated in our codebase! Contribute, and receive some unique rewards.
-              </p>
+              <p>{forthCard.description}</p>
             </GridCard>
           </ThemeProvider>
         </Grid>

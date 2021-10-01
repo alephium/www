@@ -8,7 +8,7 @@ import Arrow from '../images/svgs/arrow-right.svg'
 export interface ArrowedLinkProps {
   className?: string
   IconComponent?: FC
-  to?: string
+  url?: string
   text?: string
   newTab?: boolean
   openModal?: (x: boolean) => void
@@ -20,7 +20,7 @@ let ArrowedLink: FC<ArrowedLinkProps> = ({
   className,
   children,
   IconComponent,
-  to,
+  url,
   newTab,
   openModal,
   altColor = false,
@@ -29,15 +29,8 @@ let ArrowedLink: FC<ArrowedLinkProps> = ({
   const theme = useTheme()
   const color = altColor ? theme.linkAlt : theme.link
 
-  const handleOnClick = (event: any) => {
-    if (openModal) {
-      event.preventDefault()
-      openModal(true)
-    }
-  }
-
   return (
-    <SimpleLink className={className} to={to} newTab={newTab} onClick={handleOnClick} color={color} onlyText={onlyText}>
+    <SimpleLink className={className} url={url} newTab={newTab} openModal={openModal} color={color} onlyText={onlyText}>
       {IconComponent && <IconComponent className="icon" />}
       {children}
       <Arrow className="arrow" />
