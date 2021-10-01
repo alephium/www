@@ -3,52 +3,52 @@ headerSection:
   dark:
     title: 'Blockchain v3.0'
     subtitle: >-
-      Alephium is the first operational sharded blockchain bringing versatility, scalability, and energy efficiency to Bitcoin's proven core technologies, while offering much better performances and secure P2P smart contracts.
+      Alephium is the first operational sharded blockchain bringing scalability, ETH-inspired secure smart contracts, and energy efficiency to Bitcoin's proven core technologies while ensuring better performance.
   light:
-    title: 'Usability first'
+    title: 'Accessibility & Usability first'
     subtitle: >-
-      Alephium firmly believes that blockchain adoption is only possible if products are built with the user in mind. Your grandma should be able to interact with Alephium, without even knowing it.
+      From its technical design to its interfaces, Alephium has been created with usability and accessibility in mind. It's made to support powerful, scalable yet user-friendly decentralized applications and protocols.
 introSection:
   title: 'Start'
   subtitle: 'Engage with us.'
   cards:
-    - title: 'Start mining'
+    - title: 'Mine'
       description: >-
-        Get your node ready, and contribute to the network security. It only takes a few minutes to start getting rewarded in ALPH tokens.
+        Start mining to contribute to the network security and receive ALPH rewards.
       link:
         text: 'Documentation'
         url: 'https://github.com/alephium/alephium/wiki/Miner-Guide'
         newTab: true
     - title: 'Contribute'
       description: >-
-        We would love to see your code integrated in our codebase! Contribute, and receive some unique rewards.
+        Start testing and report issues or contribute to the Alephium codebase.
       link:
         text: 'Codebase'
-        url: 'https://github.com/alephium/alephium/wiki/Miner-Guide'
+        url: 'https://github.com/alephium/'
         newTab: true
-    - title: 'Build on Alephium'
+    - title: 'Build'
       description: >-
-        The mainnet is live! Start building your own protocols and apps today!
+        Start building your own smart contracts, decentralized apps and protocols.
       link:
-        text: 'Documentation'
-        url: 'https://github.com/alephium/alephium/wiki/Miner-Guide'
+        text: 'Codebase'
+        url: 'https://github.com/alephium/'
         newTab: true
 technologySection:
   title: 'Technology'
-  subtitle: 'What makes us different'
+  subtitle: 'What makes Alephium different?'
   blockFlowSection:
     title: "Blockflow: sharding on BTC's proven foundations"
     description: >-
-      Alephium is the first operational sharded blockchain bringing versatility, scalability, and energy efficiency to Bitcoin's proven core technologies, while offering much better performances and secure P2P smart contracts.
+      Alephium is built on the BlockFlow algorithm which delivers efficient and practical UTXO sharding. Inspired by distributed computing models, it combines DAG (Directed Acyclic Graph) and sharding. Much more lightweight than other sharding methods, BlockFlow also natively supports single-step cross shard transaction making Alephium user-experience just as convenient as any single chain platform.
     cardText: >-
-      Merging the versatility and expressivity of Ethereum with the security of the Bitcoin technology stack.
+      BlockFlow combines DAG and sharding to enable an efficient, secure and verifiable consensus algorithm.
     links:
       - text: 'More details'
       - text: 'White paper'
         url: 'https://github.com/alephium/white-paper/blob/master/alephium.pdf'
         newTab: true
   polwSection:
-    title: 'Proof of Less Work'
+    title: 'Proof of Less Work (PoLW)'
     description: >-
       PoLW uses a clever combination of physical work and token economics to dynamically adjust the work required to mine new blocks, ensuring a reduced energy footprint compared to classic Nakamoto PoW mining.
     cardText: >-
@@ -63,9 +63,9 @@ technologySection:
   smartContractSection:
     title: 'Smart contract design'
     description: >-
-      Alephium proposes a unique approach to sharding and smart contracts on the Bitcoin technology stack while tackling energy concerns with its Proof of Less Work algorithm.
+      Alephium's smart contracts have been designed and implemented to be scalable, functional, practical with a focus on security and reduced state usage. Its stateful UTXO model combines the advantages of both eUTXO model and account model.
     cardText: >-
-      Merging the versatility and expressivity of Ethereum with the security of the Bitcoin technology stack.
+      A new programming paradigm for smart contracts and Dapps.
     links:
       - text: 'More details'
         url: ''
@@ -76,7 +76,7 @@ technologySection:
   vmsSection:
     title: 'Novel VM design'
     description: >-
-      Most of the modern blockchain protocols have a built-in virtual machine for general computing to implement useful and complicated decentralized applications. In Alephium, we shift from a code-centric approach to a data-centric approach and enable access and parse information from data payload of UTXOs. In this way, our script system will be as powerful as a general virtual machine.
+      Most of the modern blockchain protocols have a built-in virtual machine for general computing to implement useful and complex decentralized applications. In Alephium, we shift from a code-centric approach to a data-centric approach and enable access and parse information from data payload of UTXOs. As a result, our script system is as powerful as a general virtual machine.
     cardText: >-
       VMs can be a big bottleneck when it comes to Blockchain performances. Not on Alephium.
     links:
@@ -86,19 +86,19 @@ technologySection:
   numbersSection:
     title: 'Some numbers'
     subtitle: >-
-      We're focusing on efficiency, security and scalability. We took our time to make sure we transform theory to actual technologies.
+      We're passionate and committed to outstanding quality in everything we do. We took the necessary time to transform theory to actual technologies.
     columns:
       - number: '16'
         description: 'shards running on mainnet.'
       - number: '100MB'
         description: 'of RAM needed by the full node. Runs on a Raspberry-PI.'
-      - number: '3 years'
-        description: 'of "under the radar" R&D.'
+      - number: '>3 years'
+        description: 'of R&D.'
 usabilitySection:
   title: 'Usability'
   subtitle: 'Designed for humans.'
   description: >-
-    Our wallet is only the first step. We want to make blockchain accessible to anyone. Technology and complexity should be out of the way while remaining accessible.
+    Our wallet is only the first step. The intricate and innovative parts of technology should be at reach, without becoming an obstacle to accessibility and usability. Alephium aims at placing the user at the center, regardless of their skills.
   button:
     text: 'Get the wallet'
     url: 'https://github.com/alephium/alephium-wallet/releases'
@@ -119,34 +119,34 @@ startNowSection:
     - title: 'Start mining'
       subtitle: 'Earn ALPH tokens'
       description: >-
-        liquam dapibus ipsum vitae sem. Ut eget mauris ac nunc luctus ornare. Phasellus enim augue, rutrum tempus, blandit in, vehicula eu, neque. Sed consequat nunc. Proin metus. Duis at mi non tellus
+        Mining is crucial to secure and verify transactions on the Alephium blockchain. Contribute to the growth and security of our network and receive ALPH block rewards. Currently, we support CPU and GPU mining and will soon offer FPGA mining support
       link:
-        url: ''
+        url: 'https://github.com/alephium/alephium/wiki/Miner-Guide'
         text: 'Instructions'
         newTab: true
-    - title: 'Start mining'
-      subtitle: 'Earn ALPH tokens'
+    - title: 'Build your own'
+      subtitle: ''
       description: >-
-        liquam dapibus ipsum vitae sem. Ut eget mauris ac nunc luctus ornare. Phasellus enim augue, rutrum tempus, blandit in, vehicula eu, neque. Sed consequat nunc. Proin metus. Duis at mi non tellus
+        Start building your own smart contracts, decentralized apps and protocols. Alephium is made to build powerful, secure and scalable Dapps. It’s stateful UTXO model combines the advantages of both eUTXO model and account model.
       link:
-        url: ''
-        text: 'Instructions'
+        url: 'https://github.com/alephium/'
+        text: 'Codebase'
         newTab: true
-    - title: 'Start mining'
-      subtitle: 'Earn ALPH tokens'
+    - title: 'Get a job @ Alephium'
+      subtitle: 'We value individuals'
       description: >-
-        liquam dapibus ipsum vitae sem. Ut eget mauris ac nunc luctus ornare. Phasellus enim augue, rutrum tempus, blandit in, vehicula eu, neque. Sed consequat nunc. Proin metus. Duis at mi non tellus
+        Our team members are our biggest assets. With them, with you, we plan to make Alephium the preferred blockchain for powerful, accessible and secure Dapps & web 3.0. If you think you're uniquely suited to support Alephium, we want to hear from you. We're based in the beautiful Switzerland, but you can work from anywhere in the world.
       link:
-        url: ''
-        text: 'Instructions'
+        url: 'https://pandasoftware.bamboohr.com/jobs/'
+        text: 'Job openings'
         newTab: true
-    - title: 'Start mining'
-      subtitle: 'Earn ALPH tokens'
+    - title: 'Contribute to the code'
+      subtitle: 'Alephium is open source!'
       description: >-
-        liquam dapibus ipsum vitae sem. Ut eget mauris ac nunc luctus ornare. Phasellus enim augue, rutrum tempus, blandit in, vehicula eu, neque. Sed consequat nunc. Proin metus. Duis at mi non tellus
+        Start testing and report issues or contribute to the Alephium codebase. We would love to see your contribution integrated in the Alephium codebase!
       link:
-        url: ''
-        text: 'Instructions'
+        url: 'https://github.com/alephium/'
+        text: 'To the codebase'
         newTab: true
 followUsSection:
   title: 'Follow us'
@@ -172,7 +172,7 @@ footer:
   columns:
     - title: 'Resouces'
       links:
-        - text: 'Wiki'
+        - text: 'Documentation'
           url: 'https://github.com/alephium/alephium/wiki'
           newTab: true
         - text: 'BlockFlow white paper'
