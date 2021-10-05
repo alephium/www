@@ -9,7 +9,6 @@ import PageSectionContainer from './PageSectionContainer'
 import Button from './Button'
 import Columns from './Columns'
 import Column from './Column'
-import ImageSwiper from './ImageSwiper'
 import TextSnippet from './TextSnippet'
 import { ArrowedLinkProps } from './ArrowedLink'
 
@@ -51,7 +50,6 @@ let PageSectionUsability: FC<PageSectionUsabilityProps> = ({ className, content 
           <Img key={image.altText} fluid={image.src.childImageSharp.fluid} alt={image.altText} />
         ))}
       </ImagesColumns>
-      {/* <ImageSwiperStyled /> */}
     </PageSectionContainerStyled>
     <YellowMountainsImageStyled />
     <BirdsImageStyled />
@@ -137,15 +135,6 @@ const YellowMountainsImageStyled = styled(YellowMountainsImage)`
 
   @media ${deviceBreakPoints.smallMobile} {
     bottom: -80px;
-  }
-`
-
-const ImageSwiperStyled = styled(ImageSwiper)`
-  display: none;
-  margin-top: var(--spacing-20);
-
-  @media ${deviceBreakPoints.mobile} {
-    display: block;
   }
 `
 
