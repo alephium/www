@@ -14,13 +14,13 @@ const HeroSlider: FC<HeroSliderProps> = ({ heroElementRef, onSwipeRight, onSwipe
     const heroElement = heroElementRef.current
 
     if (heroElement) {
-      heroElement.addEventListener('touchstart', handleTouchStart, false)
-      heroElement.addEventListener('touchmove', handleTouchMove, false)
+      heroElement.addEventListener('touchstart', handleTouchStart, { passive: true })
+      heroElement.addEventListener('touchmove', handleTouchMove, { passive: true })
     }
     return () => {
       if (heroElement) {
-        heroElement.removeEventListener('touchstart', handleTouchStart, false)
-        heroElement.removeEventListener('touchmove', handleTouchMove, false)
+        heroElement.removeEventListener('touchstart', handleTouchStart)
+        heroElement.removeEventListener('touchmove', handleTouchMove)
       }
     }
   }, [heroElementRef])
