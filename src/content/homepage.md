@@ -30,8 +30,8 @@ introSection:
       description: >-
         Start building your own smart contracts, decentralized apps and protocols.
       link:
-        text: 'Codebase'
-        url: 'https://github.com/alephium/'
+        text: 'Guide'
+        url: 'https://github.com/alephium/alephium/wiki/Smart-Contract-Guide'
         newTab: true
 technologySection:
   title: 'Technology'
@@ -70,8 +70,8 @@ technologySection:
       - text: 'More details'
         url: ''
         newTab: false
-      - text: 'Source code'
-        url: 'https://github.com/alephium/alephium/'
+      - text: 'Guide'
+        url: 'https://github.com/alephium/alephium/wiki/Smart-Contract-Guide'
         newTab: true
   vmsSection:
     title: 'Novel VM design'
