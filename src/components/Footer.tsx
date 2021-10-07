@@ -40,8 +40,8 @@ let Footer: FC<FooterProps> = ({ className, content }) => {
         <Separator />
         <FooterColumns gap="var(--spacing-4)">
           {columnsContent.map((column) => (
-            <Column>
-              <FooterColumn key={column.title} {...column} />
+            <Column key={column.title}>
+              <FooterColumn {...column} />
             </Column>
           ))}
         </FooterColumns>
