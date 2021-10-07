@@ -11,6 +11,7 @@ import Columns from './Columns'
 import Column from './Column'
 import TextSnippet from './TextSnippet'
 import { ArrowedLinkProps } from './ArrowedLink'
+import Zoomer from './Zoomer'
 
 import BirdsImage from '../images/svgs/birds.svg'
 import YellowMountainsImage from '../images/svgs/yellow-mountains.svg'
@@ -48,7 +49,9 @@ let PageSectionUsability: FC<PageSectionUsabilityProps> = ({ className, content 
       <ImagesColumns>
         {content.images.map((image) => {
           return (
-            <GatsbyImage key={image.altText} image={image.src.childImageSharp.gatsbyImageData} alt={image.altText} />
+            <Zoomer key={image.altText}>
+              <GatsbyImage image={image.src.childImageSharp.gatsbyImageData} alt={image.altText} />
+            </Zoomer>
           )
         })}
       </ImagesColumns>
