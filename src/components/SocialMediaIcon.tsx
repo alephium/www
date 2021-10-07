@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import styled from 'styled-components'
 
 interface SocialMediaIconProps {
@@ -9,7 +9,7 @@ interface SocialMediaIconProps {
 }
 
 let SocialMediaIcon: FC<SocialMediaIconProps> = ({ url, ImageComponent, name, className }) => (
-  <a href={url} target="_blank" rel="noopener" className={className} aria-label={`Visit our ${name}`}>
+  <a href={url} target="_blank" rel="noopener noreferrer" className={className} aria-label={`Visit our ${name}`}>
     <ImageComponent />
   </a>
 )

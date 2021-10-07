@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react'
+import { FC } from 'react'
 import styled from 'styled-components'
 
 import DotEmptyImage from '../images/svgs/dot-empty.svg'

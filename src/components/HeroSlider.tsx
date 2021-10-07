@@ -1,4 +1,4 @@
-import React, { FC, useEffect, RefObject } from 'react'
+import { FC, useEffect, RefObject, TouchEvent } from 'react'
 
 interface HeroSliderProps {
   heroElementRef: RefObject<HTMLElement>
@@ -7,11 +7,37 @@ interface HeroSliderProps {
 }
 
 const HeroSlider: FC<HeroSliderProps> = ({ heroElementRef, onSwipeRight, onSwipeLeft, children }) => {
-  let xDown = 0
-  let yDown = 0
-
   useEffect(() => {
     const heroElement = heroElementRef.current
+    let xDown = 0
+    let yDown = 0
+
+    const handleTouchStart = (event: TouchEvent<Element>): void => {
+      xDown = event.touches[0].clientX
+      yDown = event.touches[0].clientY
+    }
+
+    const handleTouchMove = (event: TouchEvent<Element>): void => {
+      if (!xDown || !yDown) {
+        return
+      }
+
+      const xUp = event.touches[0].clientX
+      const yUp = event.touches[0].clientY
+
+      const xDiff = xDown - xUp
+      const yDiff = yDown - yUp
+
+      if (Math.abs(xDiff) > Math.abs(yDiff)) {
+        if (xDiff > 0) {
+          onSwipeLeft()
+        } else {
+          onSwipeRight()
+        }
+      }
+      xDown = 0
+      yDown = 0
+    }
 
     if (heroElement) {
       heroElement.addEventListener('touchstart', handleTouchStart, { passive: true })
@@ -23,34 +49,7 @@ const HeroSlider: FC<HeroSliderProps> = ({ heroElementRef, onSwipeRight, onSwipe
         heroElement.removeEventListener('touchmove', handleTouchMove)
       }
     }
-  }, [heroElementRef])
-
-  const handleTouchStart = (event: any) => {
-    xDown = event.touches[0].clientX
-    yDown = event.touches[0].clientY
-  }
-
-  const handleTouchMove = (event: any) => {
-    if (!xDown || !yDown) {
-      return
-    }
-
-    var xUp = event.touches[0].clientX
-    var yUp = event.touches[0].clientY
-
-    var xDiff = xDown - xUp
-    var yDiff = yDown - yUp
-
-    if (Math.abs(xDiff) > Math.abs(yDiff)) {
-      if (xDiff > 0) {
-        onSwipeLeft()
-      } else {
-        onSwipeRight()
-      }
-    }
-    xDown = 0
-    yDown = 0
-  }
+  }, [heroElementRef, onSwipeLeft, onSwipeRight])
 
   return <>{children}</>
 }

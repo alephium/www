@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import styled from 'styled-components'
 import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image'
 
@@ -8,7 +8,6 @@ import SectionTextHeader from './SectionTextHeader'
 import PageSectionContainer from './PageSectionContainer'
 import Button from './Button'
 import Columns from './Columns'
-import Column from './Column'
 import TextSnippet from './TextSnippet'
 import { ArrowedLinkProps } from './ArrowedLink'
 import Zoomer from './Zoomer'
@@ -111,11 +110,6 @@ const ImagesColumns = styled(Columns)`
   @media ${deviceBreakPoints.ipad} {
     grid-template-columns: 1fr;
   }
-`
-
-const ImageColumn = styled(Column)`
-  display: flex;
-  justify-content: center;
 `
 
 const YellowMountainsImageStyled = styled(YellowMountainsImage)`

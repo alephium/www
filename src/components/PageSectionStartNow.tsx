@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import styled, { ThemeProvider, useTheme } from 'styled-components'
 
 import { darkTheme, lightTheme } from '../styles/themes'

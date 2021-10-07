@@ -1,4 +1,4 @@
-import React, { FC, useRef, useState } from 'react'
+import { FC, useRef, useState } from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 
 import { darkTheme, lightTheme } from '../styles/themes'
@@ -32,7 +32,7 @@ interface PageSectionHeroProps {
   content: PageSectionHeroContentType
 }
 
-let PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
+const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
   const [theme, setTheme] = useState('dark')
   const [currentSlide, setCurrentSlide] = useState(1)
   const innerRef = useRef<HTMLElement>(null)

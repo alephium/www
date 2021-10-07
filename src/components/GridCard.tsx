@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import styled, { useTheme, css } from 'styled-components'
 
 import { deviceBreakPoints } from '../styles/global-style'

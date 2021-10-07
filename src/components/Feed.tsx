@@ -1,4 +1,3 @@
-import React, { FC } from 'react'
 import { useTheme } from 'styled-components'
 
 import Card from './Card'
@@ -17,7 +16,7 @@ const Feed = () => {
         subtitle="2 days ago"
         link={{
           text: 'Instructions',
-          to: '#',
+          url: '#',
           newTab: true
         }}
         IconComponent={DownloadIcon}
@@ -29,12 +28,12 @@ const Feed = () => {
         subtitle="6 days ago"
         link={{
           text: 'Block Explorer',
-          to: 'https://testnet.alephium.org',
+          url: 'https://testnet.alephium.org',
           newTab: true
         }}
         IconComponent={TestnetIcon}
       >
-        Progress is happening fast. The testnet performances improve day after day, and we're getting closer to the
+        Progress is happening fast. The testnet performances improve day after day, and we are getting closer to the
         mainnet launch. Get ready!
       </FeedItem>
       <FeedItem
@@ -42,7 +41,7 @@ const Feed = () => {
         subtitle="6 days ago"
         link={{
           text: 'Block Explorer',
-          to: '#',
+          url: '#',
           newTab: true
         }}
         IconComponent={HiringIcon}

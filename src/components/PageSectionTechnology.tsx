@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react'
+import { FC, useState } from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 
 import { deviceBreakPoints } from '../styles/global-style'
@@ -204,7 +204,7 @@ const SubsectionTextHeaderStyled = styled(SubsectionTextHeader)`
   margin-bottom: var(--spacing-10);
 `
 
-let BlockflowImageStyled = styled(BlockflowImage)`
+const BlockflowImageStyled = styled(BlockflowImage)`
   max-width: var(--width-368);
 `
 
