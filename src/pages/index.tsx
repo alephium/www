@@ -154,9 +154,7 @@ export const pageQuery = graphql`
             images {
               src {
                 childImageSharp {
-                  fluid(maxWidth: 800, quality: 100) {
-                    ...GatsbyImageSharpFluid
-                  }
+                  gatsbyImageData(width: 736, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
                 }
               }
               altText

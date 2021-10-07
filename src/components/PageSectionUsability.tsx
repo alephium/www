@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import styled from 'styled-components'
-import Img, { FluidObject } from 'gatsby-image'
+import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image'
 
 import { deviceBreakPoints } from '../styles/global-style'
 
@@ -23,7 +23,7 @@ export interface PageSectionUsabilityContentType {
   images: {
     src: {
       childImageSharp: {
-        fluid: FluidObject
+        gatsbyImageData: IGatsbyImageData
       }
     }
     altText: string
@@ -46,9 +46,11 @@ let PageSectionUsability: FC<PageSectionUsabilityProps> = ({ className, content 
         </Button>
       </CenteredContent>
       <ImagesColumns>
-        {content.images.map((image) => (
-          <Img key={image.altText} fluid={image.src.childImageSharp.fluid} alt={image.altText} />
-        ))}
+        {content.images.map((image) => {
+          return (
+            <GatsbyImage key={image.altText} image={image.src.childImageSharp.gatsbyImageData} alt={image.altText} />
+          )
+        })}
       </ImagesColumns>
     </PageSectionContainerStyled>
     <YellowMountainsImageStyled />
@@ -103,16 +105,8 @@ const ImagesColumns = styled(Columns)`
   grid-template-columns: 1fr 1fr;
   grid-gap: var(--spacing-4);
 
-  > div:first-child {
-    grid-column: 1 / span 2;
-  }
-
-  @media ${deviceBreakPoints.mobile} {
+  @media ${deviceBreakPoints.ipad} {
     grid-template-columns: 1fr;
-
-    > div:first-child {
-      grid-column: 1 / span 1;
-    }
   }
 `
 
