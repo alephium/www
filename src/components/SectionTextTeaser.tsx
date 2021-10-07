@@ -30,13 +30,13 @@ let SectionTextTeaser: FC<SectionTextTeaserProps> = ({
       <IconComponent />
       <div>{cardText}</div>
     </Card>
-    <div className="links">
+    <Links>
       {links.map((link) => (
         <ArrowedLink key={link.text} {...link}>
           {link.text}
         </ArrowedLink>
       ))}
-    </div>
+    </Links>
   </div>
 )
 
@@ -60,12 +60,13 @@ SectionTextTeaser = styled(SectionTextTeaser)`
       fill: ${({ theme }) => theme.textPrimary};
     }
   }
+`
 
-  .links {
-    display: flex;
-    gap: var(--spacing-8);
-    margin-top: var(--spacing-4);
-  }
+const Links = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-8);
+  margin-top: var(--spacing-4);
 `
 
 export default SectionTextTeaser
