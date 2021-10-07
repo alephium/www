@@ -1,5 +1,7 @@
 import React, { FC } from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+
+import { deviceBreakPoints } from '../styles/global-style'
 
 interface TextSnippetProps {
   title?: string
@@ -10,6 +12,7 @@ interface TextSnippetProps {
   smallSubtitle?: boolean
   bigText?: boolean
   className?: string
+  narrowHeaderMobile?: boolean
 }
 
 let TextSnippet: FC<TextSnippetProps> = ({ className, title, titleHierarchy = 'h2', subtitle, children }) => (
@@ -38,6 +41,18 @@ TextSnippet = styled(TextSnippet)`
   .text-content {
     font-size: ${({ bigText }) => (bigText ? 'var(--fontSize-18)' : 'inherit')};
     line-height: ${({ bigText }) => (bigText ? 'var(--lineHeight-26)' : 'var(--lineHeight-22)')};
+  }
+
+  @media ${deviceBreakPoints.mobile} {
+    h2,
+    h3,
+    .text-subtitle {
+      ${({ narrowHeaderMobile }) =>
+        narrowHeaderMobile &&
+        css`
+          width: 65%;
+        `}
+    }
   }
 `
 export default TextSnippet

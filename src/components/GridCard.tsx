@@ -1,6 +1,8 @@
 import React, { FC } from 'react'
 import styled, { useTheme, css } from 'styled-components'
 
+import { deviceBreakPoints } from '../styles/global-style'
+
 import TextSnippet from './TextSnippet'
 import ArrowedLink, { ArrowedLinkProps } from './ArrowedLink'
 import Card from './Card'
@@ -13,6 +15,7 @@ interface GridCardProps {
   ImageComponent?: FC
   backgroundImageUrl?: string
   primaryBackground?: boolean
+  narrowHeaderMobile?: boolean
 }
 
 let GridCard: FC<GridCardProps> = ({
@@ -22,7 +25,8 @@ let GridCard: FC<GridCardProps> = ({
   subtitle,
   link,
   primaryBackground,
-  ImageComponent
+  ImageComponent,
+  narrowHeaderMobile
 }) => {
   const theme = useTheme()
 
@@ -31,11 +35,18 @@ let GridCard: FC<GridCardProps> = ({
       <div className="card-contents">
         <article>
           <div className="text-content">
-            <TextSnippetStyled title={title} titleHierarchy="h3" subtitle={subtitle} bigSubtitle bigText>
+            <TextSnippetStyled
+              title={title}
+              titleHierarchy="h3"
+              subtitle={subtitle}
+              bigSubtitle
+              bigText
+              narrowHeaderMobile={narrowHeaderMobile}
+            >
               {children}
             </TextSnippetStyled>
           </div>
-          <ArrowedLink to={link.to} newTab={link.newTab}>
+          <ArrowedLink url={link.url} newTab={link.newTab}>
             {link.text}
           </ArrowedLink>
         </article>
@@ -49,10 +60,10 @@ GridCard = styled(GridCard)`
   position: relative;
   overflow: hidden;
 
-  ${(props) =>
-    props.backgroundImageUrl &&
+  ${({ backgroundImageUrl }) =>
+    backgroundImageUrl &&
     css`
-      background-image: url(${props.backgroundImageUrl});
+      background-image: url(${backgroundImageUrl});
       background-repeat: no-repeat;
       background-position: center top;
       background-size: cover;
@@ -68,6 +79,11 @@ GridCard = styled(GridCard)`
       width: 65%;
       padding-right: var(--spacing-2);
       z-index: 1;
+
+      @media ${deviceBreakPoints.smallMobile} {
+        width: 100%;
+        padding-right: 0;
+      }
     }
   }
 `

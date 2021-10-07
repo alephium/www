@@ -82,6 +82,7 @@ let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className, content })
               link={forthCard.link}
               ImageComponent={CodeImageStyled}
               primaryBackground
+              narrowHeaderMobile
             >
               <p>{forthCard.description}</p>
             </GridCard>
@@ -140,7 +141,7 @@ const ImageContainer = styled.div`
   width: 35%;
   position: relative;
   margin: calc(-1 * var(--spacing-4)) calc(-1 * var(--spacing-4)) calc(-1 * var(--spacing-4)) 0;
-  overflow: hidden;
+  overflow: visible;
 `
 
 const MiningImageStyled = styled(MiningImage)`
@@ -150,6 +151,10 @@ const MiningImageStyled = styled(MiningImage)`
   bottom: 0;
   left: 0;
   margin: auto 0;
+
+  @media ${deviceBreakPoints.smallMobile} {
+    left: -5rem;
+  }
 `
 
 const MiningImageComponent = () => (
@@ -164,6 +169,10 @@ const CodeImageStyled = styled(CodeImage)`
   position: absolute;
   top: var(--spacing-4);
   right: var(--spacing-4);
+
+  @media ${deviceBreakPoints.smallMobile} {
+    width: 5rem;
+  }
 `
 
 const GreyMountainsImageStyled = styled(GreyMountainsImage)`
