@@ -59,7 +59,7 @@ Modal = styled(Modal)`
   }
 
   .content {
-    overflow: scroll;
+    overflow-y: auto;
     height: 100%;
   }
 
