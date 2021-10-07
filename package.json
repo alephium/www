@@ -20,8 +20,6 @@
   },
   "dependencies": {
     "@fontsource/inter": "^4.5.0",
-    "@mdx-js/mdx": "^1.6.22",
-    "@mdx-js/react": "^1.6.22",
     "acorn": "^8.5.0",
     "babel-eslint": "^10.1.0",
     "babel-plugin-styled-components": "^1.13.2",
@@ -29,7 +27,6 @@
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-image": "^1.14.1",
     "gatsby-plugin-manifest": "^3.14.0",
-    "gatsby-plugin-mdx": "^2.11.0",
     "gatsby-plugin-react-helmet": "^4.11.0",
     "gatsby-plugin-react-svg": "^3.0.1",
     "gatsby-plugin-sharp": "^3.14.1",
