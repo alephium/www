@@ -2,11 +2,10 @@ import { FC, useEffect, RefObject, TouchEvent } from 'react'
 
 interface HeroSliderProps {
   heroElementRef: RefObject<HTMLElement>
-  onSwipeRight: () => void
-  onSwipeLeft: () => void
+  onSwipe: () => void
 }
 
-const HeroSlider: FC<HeroSliderProps> = ({ heroElementRef, onSwipeRight, onSwipeLeft, children }) => {
+const HeroSlider: FC<HeroSliderProps> = ({ heroElementRef, onSwipe, children }) => {
   useEffect(() => {
     const heroElement = heroElementRef.current
     let xDown = 0
@@ -29,11 +28,7 @@ const HeroSlider: FC<HeroSliderProps> = ({ heroElementRef, onSwipeRight, onSwipe
       const yDiff = yDown - yUp
 
       if (Math.abs(xDiff) > Math.abs(yDiff)) {
-        if (xDiff > 0) {
-          onSwipeLeft()
-        } else {
-          onSwipeRight()
-        }
+        onSwipe()
       }
       xDown = 0
       yDown = 0
@@ -49,7 +44,7 @@ const HeroSlider: FC<HeroSliderProps> = ({ heroElementRef, onSwipeRight, onSwipe
         heroElement.removeEventListener('touchmove', handleTouchMove)
       }
     }
-  }, [heroElementRef, onSwipeLeft, onSwipeRight])
+  }, [heroElementRef, onSwipe])
 
   return <>{children}</>
 }

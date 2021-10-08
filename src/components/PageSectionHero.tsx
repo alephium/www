@@ -42,19 +42,14 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
     setTheme(theme === 'light' ? 'dark' : 'light')
   }
 
-  const onSwipeRight = () => {
-    setTheme('dark')
-    setCurrentSlide(1)
-  }
-
-  const onSwipeLeft = () => {
-    setTheme('light')
-    setCurrentSlide(2)
+  const onSwipe = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light')
+    setCurrentSlide(currentSlide === 1 ? 2 : 1)
   }
 
   return (
     <ThemeProvider theme={theme === 'dark' ? darkTheme : lightTheme}>
-      <HeroSlider heroElementRef={innerRef} onSwipeRight={onSwipeRight} onSwipeLeft={onSwipeLeft}>
+      <HeroSlider heroElementRef={innerRef} onSwipe={onSwipe}>
         <HeroSection className={className} ref={innerRef}>
           <PageSectionContainerStyled>
             <div className="navigation-menu-wrapper">
