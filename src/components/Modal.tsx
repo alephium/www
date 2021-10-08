@@ -2,6 +2,8 @@ import { FC } from 'react'
 import ReactModal from 'react-modal'
 import styled from 'styled-components'
 
+import { deviceBreakPoints } from '../styles/global-style'
+
 import TextSnippet from './TextSnippet'
 import CloseIcon from '../images/svgs/close-line.svg'
 
@@ -45,6 +47,10 @@ Modal = styled(Modal)`
     padding: var(--spacing-5) var(--spacing-8);
     box-sizing: border-box;
     position: relative;
+
+    @media ${deviceBreakPoints.smallMobile} {
+      padding: var(--spacing-8) var(--spacing-3);
+    }
   }
 
   .overlay {
@@ -74,6 +80,10 @@ Modal = styled(Modal)`
     left: 1rem;
     padding-top: 3px;
     background-color: transparent;
+
+    @media ${deviceBreakPoints.smallMobile} {
+      top: 1rem;
+    }
 
     &:hover {
       cursor: pointer;
