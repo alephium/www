@@ -28,7 +28,9 @@ let Modal: FC<ModalProps> = ({ isOpen, setIsOpen, title, children, className }) 
       <CloseIcon />
     </div>
     <div className="content">
-      <TextSnippet title={title}>{children}</TextSnippet>
+      <TextSnippetStyled title={title} bigText>
+        {children}
+      </TextSnippetStyled>
     </div>
   </ReactModal>
 )
@@ -39,7 +41,7 @@ Modal = styled(Modal)`
     border-radius: var(--radius);
     border: 1px solid ${({ theme }) => theme.separator};
     height: 80%;
-    max-width: calc(var(--page-width) * 0.8);
+    max-width: calc(var(--page-width) * 0.7);
     padding: var(--spacing-5) var(--spacing-8);
     box-sizing: border-box;
     position: relative;
@@ -81,6 +83,22 @@ Modal = styled(Modal)`
       width: 2rem;
       height: 2rem;
       fill: ${({ theme }) => theme.textPrimary};
+    }
+  }
+`
+
+const TextSnippetStyled = styled(TextSnippet)`
+  > h2,
+  > h3 {
+    margin-bottom: var(--spacing-4);
+  }
+
+  .text-content {
+    color: ${({ theme }) => theme.textSecondary};
+
+    h3,
+    h4 {
+      color: ${({ theme }) => theme.textPrimary};
     }
   }
 `
