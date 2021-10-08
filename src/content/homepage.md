@@ -3,7 +3,7 @@ headerSection:
   dark:
     title: 'Blockchain v3.0'
     subtitle: >-
-      Alephium is the first operational sharded blockchain bringing scalability, ETH-inspired secure smart contracts, and energy efficiency to Bitcoin's proven core technologies while ensuring better performance.
+      Alephium is the first operational sharded blockchain bringing scalability, ETH-inspired smart contracts, and energy efficiency to Bitcoin's proven core technologies while ensuring better performance.
   light:
     title: 'Accessibility & Usability first'
     subtitle: >-
