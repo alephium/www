@@ -110,8 +110,10 @@ const CodeImageStyled = styled(CodeImage)`
   width: 5.2rem;
   height: auto;
   position: absolute;
-  top: var(--spacing-4);
+  top: 0;
+  bottom: 0;
   left: 0;
+  margin: auto 0;
 `
 
 const HookImageStyled = styled(HookImage)`
