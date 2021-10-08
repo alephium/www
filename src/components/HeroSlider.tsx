@@ -6,6 +6,8 @@ interface HeroSliderProps {
 }
 
 const HeroSlider: FC<HeroSliderProps> = ({ heroElementRef, onSwipe, children }) => {
+  let swipeTimeout: ReturnType<typeof setTimeout> | undefined
+
   useEffect(() => {
     const heroElement = heroElementRef.current
     let xDown = 0
@@ -29,10 +31,16 @@ const HeroSlider: FC<HeroSliderProps> = ({ heroElementRef, onSwipe, children }) 
 
       if (Math.abs(xDiff) > Math.abs(yDiff)) {
         onSwipe()
+        clearSwipeTimeout()
       }
       xDown = 0
       yDown = 0
     }
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    swipeTimeout = setTimeout(() => {
+      onSwipe()
+    }, 5000)
 
     if (heroElement) {
       heroElement.addEventListener('touchstart', handleTouchStart, { passive: true })
@@ -43,8 +51,15 @@ const HeroSlider: FC<HeroSliderProps> = ({ heroElementRef, onSwipe, children }) 
         heroElement.removeEventListener('touchstart', handleTouchStart)
         heroElement.removeEventListener('touchmove', handleTouchMove)
       }
+      clearSwipeTimeout()
     }
   }, [heroElementRef, onSwipe])
+
+  const clearSwipeTimeout = () => {
+    if (swipeTimeout) {
+      clearTimeout(swipeTimeout)
+    }
+  }
 
   return <>{children}</>
 }
