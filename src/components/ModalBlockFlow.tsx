@@ -1,29 +1,57 @@
-import { useStaticQuery, graphql } from 'gatsby'
 import { FC } from 'react'
 
 import Modal, { ModalProps } from './Modal'
+import ImageWithTextSideBySide from './ImageWithTextSideBySide'
 
-const ModalBlockFlow: FC<ModalProps> = ({ isOpen, setIsOpen }) => {
-  const { modal } = useStaticQuery(graphql`
-    query {
-      modal: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/modals/blockflow.md/" } }) {
-        nodes {
-          frontmatter {
-            title
-          }
-          html
-        }
-      }
-    }
-  `)
+import BlockFlowSharding from '../images/blockflow-sharding.png'
+import BlockFlowSharding2 from '../images/blockflow-sharding-2.png'
+import BlockFlowConsensus from '../images/blockflow-consensus.png'
 
-  const data = modal.nodes[0]
-
-  return (
-    <Modal title={data.frontmatter.title} isOpen={isOpen} setIsOpen={setIsOpen}>
-      <div dangerouslySetInnerHTML={{ __html: data.html }} />
-    </Modal>
-  )
-}
+const ModalBlockFlow: FC<ModalProps> = ({ isOpen, setIsOpen }) => (
+  <Modal title="BlockFlow" isOpen={isOpen} setIsOpen={setIsOpen}>
+    <div>
+      <h3>Sharding</h3>
+      <ImageWithTextSideBySide image={BlockFlowSharding} imageAlt="BlockFlow sharding">
+        <ol>
+          <li>
+            Addresses are randomly divided into <code>G</code> groups
+          </li>
+          <li>
+            Transactions are divided into <code>G x G</code> shards based on the input and output addresses
+          </li>
+          <li>
+            <code>G x G</code> chains in total
+          </li>
+        </ol>
+      </ImageWithTextSideBySide>
+      <ImageWithTextSideBySide image={BlockFlowSharding2} imageAlt="BlockFlow sharding" imageOnRight>
+        <ul>
+          <li>
+            Transactions from address group <code>B</code> to address group <code>A</code> are committed to shard{' '}
+            <code>(B, A)</code>
+          </li>
+          <li>
+            For address group <code>B</code>, one only needs to download the transaction data of <code>2G - 1</code>{' '}
+            shards related to itself: namely <code>(X,B)</code> and <code>(B,Y)</code>, where <code>X, Y ∈ G</code>
+          </li>
+          <li>
+            The amount of data that a single node needs to save is reduced from <code>G2</code> to <code>2G-1</code>
+          </li>
+        </ul>
+      </ImageWithTextSideBySide>
+      <h3>Consensus</h3>
+      <ImageWithTextSideBySide image={BlockFlowConsensus} imageAlt="BlockFlow consensus">
+        <h4>Fork Choice Rule: Dependency Data Structure</h4>- Each block selects several block hashes as dependencies -
+        Transitively, each new block determines a unique fork for each shard
+        <h4>Finality Algorithm</h4>
+        <ul>
+          <li>Miners find best dependencies and pack valid transactions</li>
+          <li>Nodes validate dependencies and transactions</li>
+          <li>BlockFlow is agnostic to finality algorithm, Alephium is currently using PoLW</li>
+        </ul>
+      </ImageWithTextSideBySide>
+    </div>
+  </Modal>
+)
 
 export default ModalBlockFlow

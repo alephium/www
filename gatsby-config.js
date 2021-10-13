@@ -56,6 +56,13 @@ module.exports = {
           include: /images\/svgs/
         }
       }
+    },
+    {
+      resolve: 'gatsby-plugin-netlify-cms',
+      options: {
+        manualInit: true,
+        modulePath: './cms/index.ts'
+      }
     }
   ]
 }
