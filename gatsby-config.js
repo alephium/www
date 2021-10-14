@@ -61,7 +61,8 @@ module.exports = {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
         manualInit: true,
-        modulePath: './cms/index.ts'
+        modulePath: './cms/index.ts',
+        enableIdentityWidget: false
       }
     },
     {
