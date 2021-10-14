@@ -30,13 +30,14 @@ const Seo: FC<SeoProps> = ({ title, description, lang = 'en' }) => {
 
   const metaDescription = description || site.siteMetadata.description
   const metaImageAbsoluteUrl = `${site.siteMetadata.siteUrl}${SocialMediaBannerImage}`
+  const titleContent = title || site.siteMetadata.title
 
   return (
     <Helmet
       htmlAttributes={{
         lang
       }}
-      title={title || site.siteMetadata.title}
+      title={titleContent}
       meta={[
         {
           name: `description`,
@@ -44,11 +45,11 @@ const Seo: FC<SeoProps> = ({ title, description, lang = 'en' }) => {
         },
         {
           property: `og:title`,
-          content: title
+          content: titleContent
         },
         {
           property: `og:site_name`,
-          content: title
+          content: titleContent
         },
         {
           property: `og:description`,
@@ -76,7 +77,7 @@ const Seo: FC<SeoProps> = ({ title, description, lang = 'en' }) => {
         },
         {
           name: `twitter:title`,
-          content: title
+          content: titleContent
         },
         {
           name: `twitter:description`,
