@@ -63,6 +63,19 @@ module.exports = {
         manualInit: true,
         modulePath: './cms/index.ts'
       }
+    },
+    {
+      resolve: 'gatsby-plugin-csp',
+      options: {
+        mergeStyleHashes: false,
+        mergeScriptHashes: false,
+        directives: {
+          'style-src': "'self' 'unsafe-inline'",
+          'script-src': "'self' 'unsafe-inline' gc.zgo.at",
+          'default-src': "'none'",
+          'manifest-src': "'self'"
+        }
+      }
     }
   ]
 }
