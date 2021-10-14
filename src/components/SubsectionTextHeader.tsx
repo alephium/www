@@ -17,7 +17,7 @@ let SubsectionTextHeader: FC<SubsectionTextHeaderProps> = ({ title, subtitle, cl
 )
 
 SubsectionTextHeader = styled(SubsectionTextHeader)`
-  max-width: ${({ condensed }) => (condensed ? 'var(--width-476)' : 'auto')};}
+  max-width: ${({ condensed }) => (condensed ? 'var(--width-476)' : 'none')};}
 
   h3 {
     margin-bottom: var(--spacing-2);
