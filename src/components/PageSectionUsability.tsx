@@ -1,6 +1,5 @@
 import { FC } from 'react'
 import styled from 'styled-components'
-import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image'
 
 import { deviceBreakPoints } from '../styles/global-style'
 
@@ -11,6 +10,7 @@ import Columns from './Columns'
 import TextSnippet from './TextSnippet'
 import { ArrowedLinkProps } from './ArrowedLink'
 import Zoomer from './Zoomer'
+import ResponsiveImage, { ImageProps } from './ResponsiveImage'
 
 import BirdsImage from './styleable-images/ImageBirds'
 import YellowMountainsImage from './styleable-images/ImageYellowMountains'
@@ -20,14 +20,7 @@ export interface PageSectionUsabilityContentType {
   subtitle: string
   description: string
   button: ArrowedLinkProps
-  images: {
-    src: {
-      childImageSharp: {
-        gatsbyImageData: IGatsbyImageData
-      }
-    }
-    altText: string
-  }[]
+  images: ImageProps[]
 }
 
 interface PageSectionUsabilityProps {
@@ -49,7 +42,7 @@ let PageSectionUsability: FC<PageSectionUsabilityProps> = ({ className, content 
         {content.images.map((image) => {
           return (
             <Zoomer key={image.altText}>
-              <GatsbyImage image={image.src.childImageSharp.gatsbyImageData} alt={image.altText} />
+              <ResponsiveImage image={image} />
             </Zoomer>
           )
         })}
