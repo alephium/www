@@ -11,7 +11,7 @@ import ModalAboutUs from './ModalAboutUs'
 import ModalContact from './ModalContact'
 import ModalPrivacyPolicy from './ModalPrivacyPolicy'
 
-import LogoBlack from '../images/svgs/logo-black.svg'
+import Logo from '../images/svgs/logo.svg'
 
 export interface FooterContentType {
   columns: {
@@ -36,7 +36,7 @@ let Footer: FC<FooterProps> = ({ className, content }) => {
   return (
     <section className={className}>
       <PageSectionContainerStyled>
-        <LogoBlack />
+        <LogoStyled />
         <Separator />
         <FooterColumns gap="var(--spacing-4)">
           {columnsContent.map((column) => (
@@ -125,6 +125,16 @@ const PageSectionContainerStyled = styled(PageSectionContainer)`
   @media ${deviceBreakPoints.mobile} {
     flex-direction: column;
     gap: var(--spacing-10);
+  }
+`
+
+const LogoStyled = styled(Logo)`
+  .dark {
+    fill: var(--color-logo-black-dark);
+  }
+
+  .light {
+    fill: var(--color-logo-black-light);
   }
 `
 
