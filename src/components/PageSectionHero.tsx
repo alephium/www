@@ -12,8 +12,8 @@ import HeroSlider from './HeroSlider'
 
 import Logo from '../images/svgs/logo.svg'
 import LogoYellow from '../images/svgs/logo-yellow.svg'
-import HeroDarkImage from '../images/svgs/hero-dark.svg'
-import HeroLightImage from '../images/svgs/hero-light.svg'
+import HeroDarkImage from '../images/hero-dark.svg'
+import HeroLightImage from '../images/hero-light.svg'
 import Arrow from '../images/svgs/arrow-right.svg'
 
 export interface PageSectionHeroContentType {
@@ -71,11 +71,18 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
               </div>
             </div>
           </PageSectionContainerStyled>
-          {theme === 'dark' ? (
-            <HeroDarkImage className="hero-image planet" />
-          ) : (
-            <HeroLightImage className="hero-image" />
-          )}
+          <img
+            loading="lazy"
+            src={HeroDarkImage}
+            alt="Hero dark"
+            className={`hero-image planet ${theme === 'light' && 'hidden'}`}
+          />
+          <img
+            loading="lazy"
+            src={HeroLightImage}
+            alt="Hero light"
+            className={`hero-image ${theme === 'dark' && 'hidden'}`}
+          />
         </HeroSection>
       </HeroSlider>
     </ThemeProvider>
@@ -132,11 +139,16 @@ const HeroSection = styled.section`
     right: 0;
     bottom: 0;
     width: auto;
+    height: 100%;
 
     @media ${deviceBreakPoints.mobile} {
       &.planet {
         filter: brightness(0.5);
       }
+    }
+
+    &.hidden {
+      display: none;
     }
   }
 `

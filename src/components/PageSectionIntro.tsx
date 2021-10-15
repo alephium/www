@@ -1,10 +1,9 @@
 import { FC } from 'react'
 import styled from 'styled-components'
 
-import HookImage from '../images/svgs/hook.svg'
-// import WalletImage from '../images/svgs/wallet.svg'
-import CodeImage from '../images/svgs/code.svg'
-import MiningImage from '../images/svgs/mining.svg'
+import ImageHook from './styleable-images/ImageHook'
+import ImageCode from './styleable-images/ImageCode'
+import ImageMining from './styleable-images/ImageMining'
 
 import PageSectionContainer from './PageSectionContainer'
 import CardEngagement from './CardEngagement'
@@ -87,7 +86,7 @@ PageSectionIntro = styled(PageSectionIntro)`
   padding: var(--spacing-16) 0 var(--spacing-28);
 `
 
-const MiningImageStyled = styled(MiningImage)`
+const MiningImageStyled = styled(ImageMining)`
   width: 10rem;
   height: auto;
   position: absolute;
@@ -97,16 +96,7 @@ const MiningImageStyled = styled(MiningImage)`
   margin: auto 0;
 `
 
-// To be used once we want to show a wallet card in the intro section
-// const WalletImageStyled = styled(WalletImage)`
-//   width: 4.5rem;
-//   height: auto;
-//   position: absolute;
-//   top: -0.5rem;
-//   left: 0;
-// `
-
-const CodeImageStyled = styled(CodeImage)`
+const CodeImageStyled = styled(ImageCode)`
   width: 5.2rem;
   height: auto;
   position: absolute;
@@ -116,7 +106,7 @@ const CodeImageStyled = styled(CodeImage)`
   margin: auto 0;
 `
 
-const HookImageStyled = styled(HookImage)`
+const HookImageStyled = styled(ImageHook)`
   width: 5rem;
   height: auto;
   position: absolute;

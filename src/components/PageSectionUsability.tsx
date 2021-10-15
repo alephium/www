@@ -12,8 +12,8 @@ import TextSnippet from './TextSnippet'
 import { ArrowedLinkProps } from './ArrowedLink'
 import Zoomer from './Zoomer'
 
-import BirdsImage from '../images/svgs/birds.svg'
-import YellowMountainsImage from '../images/svgs/yellow-mountains.svg'
+import BirdsImage from './styleable-images/ImageBirds'
+import YellowMountainsImage from './styleable-images/ImageYellowMountains'
 
 export interface PageSectionUsabilityContentType {
   title: string

@@ -17,13 +17,13 @@ import ModalSmartContract from './ModalSmartContract'
 import ModalVms from './ModalVms'
 import { ArrowedLinkProps } from './ArrowedLink'
 
-import BlockflowImage from '../images/svgs/blockflow.svg'
+import BlockflowImage from './styleable-images/ImageBlockFlow'
+import PoLWImage from './styleable-images/ImagePoLW'
+import SmartContractImage from './styleable-images/ImageSmartContract'
+import VmsImage from './styleable-images/ImageVMs'
 import StackImage from '../images/svgs/stack.svg'
 import LeafImage from '../images/svgs/leaf.svg'
 import VmDotsImage from '../images/svgs/vm-dots.svg'
-import PolwBackgroundImage from '../images/svgs/polw-background.svg'
-import SmartContractImage from '../images/svgs/smart-contract.svg'
-import VmsImage from '../images/svgs/vms.svg'
 
 export interface PageSectionTechnologyContentType {
   title: string
@@ -205,7 +205,9 @@ const SubsectionTextHeaderStyled = styled(SubsectionTextHeader)`
 `
 
 const BlockflowImageStyled = styled(BlockflowImage)`
+  width: 100%;
   max-width: var(--width-368);
+  height: 408px;
 `
 
 const SectionTextHeaderStyled = styled(SectionTextHeader)`
@@ -221,7 +223,7 @@ const PageSectionContainerStyled = styled(PageSectionContainer)`
   padding-bottom: var(--spacing-28);
 `
 
-const PolwBackgroundImageStyled = styled(PolwBackgroundImage)`
+const PolwBackgroundImageStyled = styled(PoLWImage)`
   position: absolute;
   right: 0;
   bottom: 0;
@@ -239,9 +241,10 @@ const SmartContractImageStyled = styled(SmartContractImage)`
   top: calc(-1 * var(--spacing-20));
   left: 0;
   max-width: var(--width-488);
-  height: auto;
+  width: 100%;
 
   @media ${deviceBreakPoints.mobile} {
+    height: 346px;
     position: relative;
     top: 0;
   }
@@ -249,6 +252,11 @@ const SmartContractImageStyled = styled(SmartContractImage)`
 
 const VmsImageStyled = styled(VmsImage)`
   max-width: var(--width-488);
+  width: 100%;
+
+  @media ${deviceBreakPoints.mobile} {
+    height: 404px;
+  }
 `
 
 const ProofOfLessWorkSubsection = styled.section`
