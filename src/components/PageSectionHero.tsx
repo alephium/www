@@ -10,7 +10,7 @@ import TextSnippet from './TextSnippet'
 import Paginator from './Paginator'
 import HeroSlider from './HeroSlider'
 
-import LogoWhite from '../images/svgs/logo-white.svg'
+import LogoWhite from '../images/logo-white.svg'
 import Logo from '../images/svgs/logo.svg'
 import HeroDarkImage from '../images/hero-dark.svg'
 import HeroLightImage from '../images/hero-light.svg'
@@ -57,7 +57,11 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
             </div>
             <div className="contents">
               <div>
-                {theme === 'dark' ? <LogoWhite className="logo" /> : <LogoYellow className="logo" />}
+                {theme === 'dark' ? (
+                  <img src={LogoWhite} alt="Alephium logo white" className="logo" />
+                ) : (
+                  <LogoYellow className="logo" />
+                )}
                 <h1>{themeContent.title}</h1>
                 <TextSnippetStyled bigText>{themeContent.subtitle}</TextSnippetStyled>
                 <PaginatorStyled

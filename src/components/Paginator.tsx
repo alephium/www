@@ -1,8 +1,7 @@
 import { FC } from 'react'
 import styled from 'styled-components'
 
-import DotEmptyImage from '../images/svgs/dot-empty.svg'
-import DotFilledImage from '../images/svgs/dot-filled.svg'
+import DotImage from '../images/svgs/dot.svg'
 
 interface PaginatorProps {
   numberOfPages?: number
@@ -22,9 +21,9 @@ let Paginator: FC<PaginatorProps> = ({ numberOfPages = 2, currentPage, setCurren
     <div className={className}>
       {Array.from({ length: numberOfPages }).map((_, index) =>
         currentPage - 1 === index ? (
-          <DotFilledImage key={`page-${index}`} />
+          <DotImage key={`page-${index}`} />
         ) : (
-          <DotEmptyImage key={`page-${index}`} onClick={() => handleOnClick(index + 1)} />
+          <DotImageEmpty key={`page-${index}`} onClick={() => handleOnClick(index + 1)} />
         )
       )}
     </div>
@@ -43,6 +42,11 @@ Paginator = styled(Paginator)`
       cursor: pointer;
     }
   }
+`
+
+const DotImageEmpty = styled(DotImage)`
+  fill-rule: evenodd;
+  clip-rule: evenodd;
 `
 
 export default Paginator
