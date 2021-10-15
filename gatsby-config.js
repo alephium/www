@@ -68,10 +68,10 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-csp',
       options: {
-        mergeStyleHashes: false,
         mergeScriptHashes: false,
         directives: {
-          'style-src': "'self' 'unsafe-inline'",
+          'style-src':
+            "'self' 'unsafe-hashes' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' 'sha256-MtxTLcyxVEJFNLEIqbVTaqR4WWr0+lYSZ78AzGmNsuA='", // First sha256 hash is for styled-components, second for gatsby-focus-wrapper element
           'script-src': "'self' 'unsafe-inline' gc.zgo.at",
           'default-src': "'none'",
           'manifest-src': "'self'"
