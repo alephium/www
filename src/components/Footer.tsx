@@ -34,7 +34,7 @@ let Footer: FC<FooterProps> = ({ className, content }) => {
   columnsContent[2].links[1] = { ...columnsContent[2].links[1], openModal: setIsContactModalOpen }
   columnsContent[2].links[2] = { ...columnsContent[2].links[2], openModal: setIsPrivacyPolicyModalOpen }
   return (
-    <section className={className}>
+    <div className={className}>
       <PageSectionContainerStyled>
         <LogoStyled />
         <Separator />
@@ -49,7 +49,7 @@ let Footer: FC<FooterProps> = ({ className, content }) => {
       <ModalAboutUs isOpen={isAboutUsModalOpen} setIsOpen={setIsAboutUsModalOpen} />
       <ModalContact isOpen={isContactModalOpen} setIsOpen={setIsContactModalOpen} />
       <ModalPrivacyPolicy isOpen={isPrivacyPolicyModalOpen} setIsOpen={setIsPrivacyPolicyModalOpen} />
-    </section>
+    </div>
   )
 }
 
