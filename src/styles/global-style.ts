@@ -94,7 +94,8 @@ const GlobalStyle = createGlobalStyle`
     --color-black: #000;
     --color-salmon: #ff5d51;
     --color-blue: #4899ff;
-    --color-blue-100: #1200da;
+    --color-blue-100: #5981f3;;
+    --color-blue-200: #1200da;
     --color-brown: #393535;
 
     --color-logo-yellow-light: rgb(255, 199, 59);

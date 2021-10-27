@@ -66,7 +66,7 @@ CardEngagement = styled(CardEngagement)`
     border-color: transparent;
 
     &:before {
-      background: linear-gradient(270deg, var(--color-salmon) 0%, var(--color-blue-100) 100%);
+      background: linear-gradient(270deg, var(--color-salmon) 0%, var(--color-blue-200) 100%);
     }
   }
 
