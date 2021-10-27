@@ -1,6 +1,5 @@
 import { FC } from 'react'
 import styled, { ThemeProvider, useTheme } from 'styled-components'
-import LazyLoad from 'react-lazyload'
 
 import { darkTheme, lightTheme } from '../styles/themes'
 import { deviceBreakPoints } from '../styles/global-style'
@@ -14,7 +13,6 @@ import Logo from '../images/svgs/logo.svg'
 import ImageMining from './styleable-images/ImageMining'
 import ImageCode from './styleable-images/ImageCode'
 import ImageGreyMountains from './styleable-images/ImageGreyMountains'
-import GenevaImage from '../images/geneva.jpg'
 
 export interface PageSectionStartNowContentType {
   title: string
@@ -68,16 +66,9 @@ let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className, content })
           >
             <p>{secondCard.description}</p>
           </GridCard>
-          <LazyLoad>
-            <GridCard
-              title={thirdCard.title}
-              subtitle={thirdCard.subtitle}
-              link={thirdCard.link}
-              backgroundImageUrl={GenevaImage}
-            >
-              <p>{thirdCard.description}</p>
-            </GridCard>
-          </LazyLoad>
+          <GridCard title={thirdCard.title} subtitle={thirdCard.subtitle} link={thirdCard.link} textFullWidth>
+            <p>{thirdCard.description}</p>
+          </GridCard>
           <ThemeProvider theme={theme === darkTheme ? lightTheme : darkTheme}>
             <GridCard
               title={forthCard.title}

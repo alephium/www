@@ -16,6 +16,7 @@ interface GridCardProps {
   backgroundImageUrl?: string
   primaryBackground?: boolean
   narrowHeaderMobile?: boolean
+  textFullWidth?: boolean
 }
 
 let GridCard: FC<GridCardProps> = ({
@@ -26,7 +27,8 @@ let GridCard: FC<GridCardProps> = ({
   link,
   primaryBackground,
   ImageComponent,
-  narrowHeaderMobile
+  narrowHeaderMobile,
+  textFullWidth
 }) => {
   const theme = useTheme()
 
@@ -76,9 +78,14 @@ GridCard = styled(GridCard)`
     height: 100%;
 
     > article {
-      width: 65%;
       padding-right: var(--spacing-2);
       z-index: 1;
+
+      ${({ textFullWidth }) =>
+        !textFullWidth &&
+        css`
+          width: 65%;
+        `}
 
       @media ${deviceBreakPoints.smallMobile} {
         width: 100%;
