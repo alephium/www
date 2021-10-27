@@ -110,6 +110,7 @@ FooterColumn = styled(FooterColumn)`
 
   .title {
     font-weight: var(--fontWeight-medium);
+    margin-bottom: var(--spacing-2);
   }
 `
 
