@@ -118,12 +118,12 @@ usabilitySection:
   images:
     - src: ../images/wallet-welcome.png
       altText: Wallet welcome screen
+    - src: ../images/wallet-seed.png
+      altText: Wallet seed phrase screen
     - src: ../images/wallet-security.png
       altText: Wallet security check screen
     - src: ../images/wallet-ready.png
       altText: Wallet everything is ready screen
-    - src: ../images/wallet-ready.png
-      altText: TODO
 startNowSection:
   title: Start now
   subtitle: Build and contribute

@@ -14,7 +14,7 @@ const useZoomMargin = () => {
   const [zoomMargin, setZoomMargin] = useState(0)
 
   const updateZoomMargin = () => {
-    setZoomMargin(window.innerWidth > deviceSizes.desktop ? 250 : window.innerWidth > deviceSizes.mobile ? 100 : 0)
+    setZoomMargin(window.innerWidth > deviceSizes.desktop ? 200 : window.innerWidth > deviceSizes.mobile ? 100 : 0)
   }
 
   useEffect(() => {
