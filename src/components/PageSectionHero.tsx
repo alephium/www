@@ -99,7 +99,7 @@ const HeroSection = styled.section`
   overflow: hidden;
   position: relative;
   background-color: ${({ theme }) => theme.bgPrimary};
-  transition: all 0.25s linear;
+  transition: all 0.4s ease-in;
 
   .navigation-menu-wrapper {
     position: relative;
@@ -144,6 +144,7 @@ const HeroSection = styled.section`
     bottom: 0;
     width: auto;
     height: 100%;
+    transition: all 0.4s ease-in;
 
     @media ${deviceBreakPoints.mobile} {
       &.planet {
@@ -152,7 +153,7 @@ const HeroSection = styled.section`
     }
 
     &.hidden {
-      display: none;
+      opacity: 0;
     }
   }
 `
