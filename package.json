@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "Alephium website",
-  "author": "Ilias Trichopoulos",
+  "author": "Alephium dev <dev@alephium.org>",
   "keywords": [
     "gatsby"
   ],
