@@ -240,7 +240,7 @@ const SmartContractImageStyled = styled(SmartContractImage)`
   position: absolute;
   top: calc(-1 * var(--spacing-20));
   left: 0;
-  max-width: var(--width-488);
+  max-width: var(--width-368);
   width: 100%;
 
   @media ${deviceBreakPoints.mobile} {
@@ -251,7 +251,7 @@ const SmartContractImageStyled = styled(SmartContractImage)`
 `
 
 const VmsImageStyled = styled(VmsImage)`
-  max-width: var(--width-488);
+  max-width: var(--width-368);
   width: 100%;
 
   @media ${deviceBreakPoints.mobile} {

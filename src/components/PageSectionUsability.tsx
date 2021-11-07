@@ -115,6 +115,7 @@ const YellowMountainsImageStyled = styled(YellowMountainsImage)`
 
   @media ${deviceBreakPoints.mobile} {
     bottom: -152px;
+    background-color: var(--color-white);
   }
 
   @media ${deviceBreakPoints.smallMobile} {

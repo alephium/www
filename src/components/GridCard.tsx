@@ -41,7 +41,6 @@ let GridCard: FC<GridCardProps> = ({
               title={title}
               titleHierarchy="h3"
               subtitle={subtitle}
-              bigSubtitle
               bigText
               narrowHeaderMobile={narrowHeaderMobile}
             >
@@ -107,6 +106,7 @@ const TextSnippetStyled = styled(TextSnippet)`
   }
 
   p {
+    font-size: var(--fontSize-14);
     margin-bottom: var(--spacing-5);
     color: ${({ theme }) => theme.textTertiary};
   }

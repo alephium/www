@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
   ${normalize}
 
   :root {
-    --page-width: 82.5rem;
+    --page-width: 72.5rem;
     --page-width-shrinked: 68rem;
 
     --width-16: 1rem;
