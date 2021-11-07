@@ -19,7 +19,7 @@ introSection:
         rewards.
       link:
         text: Documentation
-        url: https://github.com/alephium/alephium/wiki/Miner-Guide
+        url: https://github.com/alephium/wiki/blob/master/GPU-Miner-Guide.md
         newTab: true
     - title: Contribute
       description: Start testing and report issues or contribute to the Alephium codebase.
@@ -60,7 +60,7 @@ technologySection:
     cardText: Blockchain ultimately depends on its sustainability.
     links:
       - text: More details
-        url: ""
+        url: ''
         newTab: false
       - text: PoLW white paper
         url: https://github.com/alephium/white-paper/blob/master/polw.pdf
@@ -74,7 +74,7 @@ technologySection:
     cardText: A new programming paradigm for smart contracts and Dapps.
     links:
       - text: More details
-        url: ""
+        url: ''
         newTab: false
       - text: Guide
         url: https://github.com/alephium/alephium/wiki/Smart-Contract-Guide
@@ -91,18 +91,18 @@ technologySection:
       Not on Alephium.
     links:
       - text: More details
-        url: ""
+        url: ''
         newTab: false
   numbersSection:
     title: Some numbers
     subtitle: We're passionate and committed to outstanding quality in everything we
       do. We took the necessary time to transform theory to actual technologies.
     columns:
-      - number: "16"
+      - number: '16'
         description: shards running on mainnet.
       - number: 100MB
         description: of RAM needed by the full node. Runs on a Raspberry-PI.
-      - number: ">3 years"
+      - number: '>3 years'
         description: of R&D.
 usabilitySection:
   title: Usability
@@ -137,11 +137,11 @@ startNowSection:
         receive ALPH block rewards. Currently, we support CPU and GPU mining and
         will soon offer FPGA mining support
       link:
-        url: https://github.com/alephium/alephium/wiki/Miner-Guide
+        url: https://github.com/alephium/wiki/blob/master/GPU-Miner-Guide.md
         text: Instructions
         newTab: true
     - title: Build your own
-      subtitle: ""
+      subtitle: ''
       description: Start building your own smart contracts, decentralized apps and
         protocols. Alephium is made to build powerful, secure and scalable
         Dapps. It’s stateful UTXO model combines the advantages of both eUTXO
@@ -218,12 +218,12 @@ footer:
     - title: Company
       links:
         - text: About us
-          url: ""
+          url: ''
           newTab: false
         - text: Contact
-          url: ""
+          url: ''
           newTab: false
         - text: Privacy policy
-          url: ""
+          url: ''
           newTab: false
 ---
