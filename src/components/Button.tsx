@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 import Arrow from '../images/svgs/arrow-right.svg'
 
@@ -51,6 +51,12 @@ Button = styled(Button)`
     width: 11px;
     margin-left: var(--spacing-1);
     fill: var(--color-white);
+
+    ${(props) =>
+      props.newTab &&
+      css`
+        transform: rotate(-45deg);
+      `}
   }
 `
 
