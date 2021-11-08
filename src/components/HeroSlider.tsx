@@ -40,7 +40,7 @@ const HeroSlider: FC<HeroSliderProps> = ({ heroElementRef, onSwipe, children }) 
     // eslint-disable-next-line react-hooks/exhaustive-deps
     swipeTimeout = setTimeout(() => {
       onSwipe()
-    }, 8000)
+    }, 9000)
 
     if (heroElement) {
       heroElement.addEventListener('touchstart', handleTouchStart, { passive: true })

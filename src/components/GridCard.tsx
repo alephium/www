@@ -27,8 +27,7 @@ let GridCard: FC<GridCardProps> = ({
   link,
   primaryBackground,
   ImageComponent,
-  narrowHeaderMobile,
-  textFullWidth
+  narrowHeaderMobile
 }) => {
   const theme = useTheme()
 

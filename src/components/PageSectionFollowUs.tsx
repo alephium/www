@@ -53,7 +53,7 @@ FollowUs = styled(FollowUs)`
 
 const SocialMediaIconsList = styled.div`
   display: flex;
-  gap: var(--spacing-9);
+  gap: var(--spacing-8);
   align-items: center;
   margin-top: var(--spacing-16);
   flex-wrap: wrap;

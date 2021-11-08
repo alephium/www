@@ -110,6 +110,7 @@ const HeroSection = styled.section`
     font-size: var(--fontSize-70);
     color: ${({ theme }) => theme.textPrimary};
     font-weight: var(--fontWeight-bold);
+    max-width: var(--width-584); // Better avoiding very long lines
 
     @media ${deviceBreakPoints.smallMobile} {
       font-size: var(--fontSize-36);

@@ -16,7 +16,7 @@ let SocialMediaIcon: FC<SocialMediaIconProps> = ({ url, ImageComponent, name, cl
 
 SocialMediaIcon = styled(SocialMediaIcon)`
   svg {
-    width: var(--width-120);
+    width: var(--width-82);
     fill: ${({ theme }) => theme.textPrimary};
   }
 `
