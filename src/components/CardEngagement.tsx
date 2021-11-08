@@ -14,11 +14,17 @@ interface CardEngagementProps {
   className?: string
 }
 
-let CardEngagement: FC<CardEngagementProps> = ({ title, link, ImageComponent, children, className }) => {
+const CardEngagement: FC<CardEngagementProps> = ({ title, link, ImageComponent, children, className }) => {
   const theme = useTheme()
 
   return (
-    <Card className={className} borderColor={theme.bgPrimary} thickBorders bgColor={theme.bgTertiary} link={link}>
+    <CardContainer
+      className={className}
+      borderColor={theme.bgPrimary}
+      thickBorders
+      bgColor={theme.bgTertiary}
+      link={link}
+    >
       <div className="card-contents">
         <CardTextTeaserStyled title={title} link={{ ...link, onlyText: true }}>
           {children}
@@ -27,7 +33,7 @@ let CardEngagement: FC<CardEngagementProps> = ({ title, link, ImageComponent, ch
           <ImageComponent />
         </div>
       </div>
-    </Card>
+    </CardContainer>
   )
 }
 
@@ -35,7 +41,7 @@ const CardTextTeaserStyled = styled(CardTextTeaser)`
   padding-right: var(--spacing-8);
 `
 
-CardEngagement = styled(CardEngagement)`
+const CardContainer = styled(Card)`
   min-height: 11rem;
   display: flex;
   flex-direction: column;
@@ -49,7 +55,7 @@ CardEngagement = styled(CardEngagement)`
     }
   }
 
-  &:before {
+  &:after {
     content: '';
     position: absolute;
     top: 0;
@@ -65,7 +71,7 @@ CardEngagement = styled(CardEngagement)`
     background-color: ${({ theme }) => theme.bgPrimary};
     border-color: transparent;
 
-    &:before {
+    &:after {
       background: linear-gradient(270deg, var(--color-salmon) 0%, var(--color-blue-200) 100%);
     }
   }

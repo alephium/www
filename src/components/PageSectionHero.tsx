@@ -94,7 +94,7 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
 }
 
 const HeroSection = styled.section`
-  min-height: 100vh;
+  height: 100vh;
   width: 100vw;
   overflow: hidden;
   position: relative;
@@ -162,7 +162,7 @@ const HeroSection = styled.section`
 const PageSectionContainerStyled = styled(PageSectionContainer)`
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
 `
 
 const TextSnippetStyled = styled(TextSnippet)`

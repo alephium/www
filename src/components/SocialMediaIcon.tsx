@@ -19,6 +19,12 @@ SocialMediaIcon = styled(SocialMediaIcon)`
     width: var(--width-82);
     fill: ${({ theme }) => theme.textPrimary};
   }
+
+  transition: all 0.1s ease-out;
+
+  &:hover {
+    transform: translateY(calc(var(--spacing-half) * -1));
+  }
 `
 
 export default SocialMediaIcon

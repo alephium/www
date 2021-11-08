@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { ArrowedLinkProps } from './ArrowedLink'
 
 interface CardProps {
@@ -35,6 +35,8 @@ Card = styled(Card)`
   background-color: ${(props) => props.bgColor || 'transparent'};
   background-clip: padding-box;
   text-decoration: none;
+
+  transition: all 0.1s ease-out;
 `
 
 export default Card
