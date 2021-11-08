@@ -39,7 +39,7 @@ SimpleLink = styled(SimpleLink)`
   color: ${({ theme, color }) => (color ? color : theme.link)};
 
   &:hover {
-    filter: brightness(85%);
+    filter: brightness(110%);
     cursor: pointer;
   }
 `

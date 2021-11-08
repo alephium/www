@@ -41,10 +41,13 @@ Button = styled(Button)`
   align-items: center;
   font-weight: var(--fontWeight-medium);
   font-size: var(--fontSize-18);
+  transition: all 0.1s ease-out;
 
   &:hover {
     cursor: pointer;
-    filter: brightness(95%);
+    filter: brightness(110%);
+    transform: translateY(calc(var(--spacing-half) * -1));
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   }
 
   .arrow {

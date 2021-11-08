@@ -15,7 +15,7 @@ export const darkTheme: DefaultTheme = {
   bgTertiary: 'var(--color-grey-800)',
   bgSurface: 'var(--color-grey-700)',
 
-  link: 'var(--color-white)',
+  link: 'var(--color-grey-100)',
   linkAlt: 'var(--color-white)',
 
   separator: 'var(--color-grey-700)'

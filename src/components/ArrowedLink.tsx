@@ -59,6 +59,16 @@ ArrowedLink = styled(ArrowedLink)`
       css`
         transform: rotate(-45deg);
       `}
+    transition: all 0.1s ease-out;
+  }
+
+  &:hover {
+    .arrow {
+      ${(props) =>
+        css`
+          transform: translateX(var(--spacing-half)) ${props.newTab && 'rotate(-45deg)'};
+        `};
+    }
   }
 `
 
