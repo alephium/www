@@ -57,7 +57,7 @@ technologySection:
     description: PoLW uses a clever combination of physical work and token economics
       to dynamically adjust the work required to mine new blocks, ensuring a
       reduced energy footprint compared to classic Nakamoto PoW mining.
-    cardText: Blockchain ultimately depends on its sustainability.
+    cardText: Blockchain's success ultimately depends on its sustainability.
     links:
       - text: More details
         url: ''
