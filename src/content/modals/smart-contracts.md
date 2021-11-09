@@ -8,4 +8,4 @@ Alephium also supports smart contracts in intragroup shards.
 
 On Alephium, tokens are first-class citizens and UTXO-based. As a result, they are effectively owned and under the custody of the users and not of the smart contracts.
 
-In addition, it offers the same expressiveness as the account model. Powerful and secure DApps can easily be built on Alephium.
+Alephium’s stateful UTXO model offers both layer-1 scalability and the same level of programmability as the account model. Powerful and secure dApps can easily be built on Alephium.
