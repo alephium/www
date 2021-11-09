@@ -4,9 +4,9 @@ title: Proof of Less Work
 
 In the long term, Alephium’s PoLW algorithm reduces the energy consumption of PoW.
 
-Adaptive rewards based on hashrate and timestamp are designed and implemented.
+Adaptive rewards based on hashrate and timestamp.
 
-Internal mining cost through burning will be enabled when hashrate and energy consumption is significantly high.
+Internal mining cost through burning will be enabled when the hashrate and energy consumption is significantly high.
 
 The exact way in which the PoLW algorithm works depends on the parameters set. Currently, the parameter is set so that ⅞ of block rewards will be required to mine a new block when the energy consumption is high.
 
