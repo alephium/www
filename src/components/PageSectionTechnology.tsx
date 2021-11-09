@@ -74,7 +74,7 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
   vmsSectionContent.links[0] = { ...vmsSectionContent.links[0], openModal: setIsVmsModalOpen }
 
   const columnsProps = {
-    gap: '8.5rem'
+    gap: '4.5rem'
   }
 
   return (
@@ -93,6 +93,7 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
         </PageSectionContainerStyled>
       </section>
       <ProofOfLessWorkSubsection>
+        <PolwBackgroundImageStyled />
         <PageSectionContainer>
           <Columns {...columnsProps}>
             <Column>
@@ -101,7 +102,6 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
             <CenteredColumn></CenteredColumn>
           </Columns>
         </PageSectionContainer>
-        <PolwBackgroundImageStyled />
       </ProofOfLessWorkSubsection>
       <SmartContractSubsection>
         <PageSectionContainer>
@@ -118,12 +118,12 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
       <VmsSubsection>
         <PageSectionContainer>
           <Columns {...columnsProps}>
-            <Column>
-              <SectionTextTeaser {...vmsSectionContent} IconComponent={VmDotsImage} />
-            </Column>
             <CenteredColumn>
               <VmsImageStyled />
             </CenteredColumn>
+            <Column>
+              <SectionTextTeaser {...vmsSectionContent} IconComponent={VmDotsImage} />
+            </Column>
           </Columns>
         </PageSectionContainer>
       </VmsSubsection>
@@ -207,11 +207,22 @@ const SubsectionTextHeaderStyled = styled(SubsectionTextHeader)`
 const BlockflowImageStyled = styled(BlockflowImage)`
   width: 100%;
   max-width: var(--width-368);
-  height: 408px;
+  height: 310px;
+
+  @media ${deviceBreakPoints.mobile} {
+    height: 250px;
+  }
 `
 
 const SectionTextHeaderStyled = styled(SectionTextHeader)`
   margin-bottom: var(--spacing-29);
+
+  @media ${deviceBreakPoints.mobile} {
+    text-align: left;
+    max-width: var(--page-width);
+    margin: 0 auto var(--spacing-10);
+    padding: 0 var(--spacing-4);
+  }
 `
 
 const CenteredColumn = styled(Column)`
@@ -221,6 +232,10 @@ const CenteredColumn = styled(Column)`
 
 const PageSectionContainerStyled = styled(PageSectionContainer)`
   padding-bottom: var(--spacing-28);
+
+  @media ${deviceBreakPoints.mobile} {
+    padding-bottom: var(--spacing-10);
+  }
 `
 
 const PolwBackgroundImageStyled = styled(PoLWImage)`
@@ -232,7 +247,7 @@ const PolwBackgroundImageStyled = styled(PoLWImage)`
   height: auto;
 
   @media ${deviceBreakPoints.mobile} {
-    display: none;
+    filter: blur(3px);
   }
 `
 
@@ -244,7 +259,7 @@ const SmartContractImageStyled = styled(SmartContractImage)`
   width: 100%;
 
   @media ${deviceBreakPoints.mobile} {
-    height: 346px;
+    height: 300px;
     position: relative;
     top: 0;
   }
@@ -255,7 +270,7 @@ const VmsImageStyled = styled(VmsImage)`
   width: 100%;
 
   @media ${deviceBreakPoints.mobile} {
-    height: 404px;
+    height: 240px;
   }
 `
 
@@ -263,18 +278,31 @@ const ProofOfLessWorkSubsection = styled.section`
   background-color: ${({ theme }) => theme.bgTertiary};
   padding: var(--spacing-35) 0 var(--spacing-28);
   position: relative;
+  overflow: hidden;
+
+  @media ${deviceBreakPoints.mobile} {
+    padding: var(--spacing-10) 0 var(--spacing-5);
+  }
 `
 
 const VmsSubsection = styled.section`
   background-color: ${({ theme }) => theme.bgTertiary};
   padding: var(--spacing-30) 0;
   position: relative;
+
+  @media ${deviceBreakPoints.mobile} {
+    padding: var(--spacing-10) 0 var(--spacing-12);
+  }
 `
 
 const SmartContractSubsection = styled.section`
   background-color: ${({ theme }) => theme.bgSecondary};
   padding: var(--spacing-28) 0 var(--spacing-30);
   position: relative;
+
+  @media ${deviceBreakPoints.mobile} {
+    padding: var(--spacing-5) 0 var(--spacing-14);
+  }
 `
 
 const NumbersSection = styled.section`
