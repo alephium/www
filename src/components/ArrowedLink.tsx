@@ -23,14 +23,13 @@ let ArrowedLink: FC<ArrowedLinkProps> = ({
   url,
   newTab,
   openModal,
-  altColor = false,
-  onlyText = false
+  altColor = false
 }) => {
   const theme = useTheme()
   const color = altColor ? theme.linkAlt : theme.link
 
   return (
-    <SimpleLink className={className} url={url} newTab={newTab} openModal={openModal} color={color} onlyText={onlyText}>
+    <SimpleLink className={className} url={url} newTab={newTab} openModal={openModal} color={color}>
       {IconComponent && <IconComponent className="icon" />}
       {children}
       <Arrow className="arrow" />

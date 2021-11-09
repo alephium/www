@@ -17,6 +17,7 @@ Columns = styled(Columns)`
 
   @media ${deviceBreakPoints.mobile} {
     flex-direction: column;
+    align-items: flex-start;
   }
 `
 

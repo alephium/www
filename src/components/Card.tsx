@@ -1,32 +1,16 @@
 import { FC } from 'react'
-import styled, { css } from 'styled-components'
-import { ArrowedLinkProps } from './ArrowedLink'
+import styled from 'styled-components'
 
 interface CardProps {
   className?: string
   borderColor?: string
   thickBorders?: boolean
   bgColor?: string
-  onClick?: () => void
-  link?: ArrowedLinkProps
 }
 
-let Card: FC<CardProps> = ({ className, children, onClick, link }) =>
-  link ? (
-    <a
-      href={link.url}
-      target={(link.newTab && '_blank') || undefined}
-      rel={(link.newTab && 'noopener') || undefined}
-      className={className}
-      onClick={onClick}
-    >
-      {children}
-    </a>
-  ) : (
-    <div className={className} onClick={onClick}>
-      {children}
-    </div>
-  )
+let Card: FC<CardProps> = ({ className, children }) => {
+  return <div className={className}>{children}</div>
+}
 
 Card = styled(Card)`
   padding: var(--spacing-4);

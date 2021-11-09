@@ -32,10 +32,10 @@ const GlobalStyle = createGlobalStyle`
     --spacing-9: 4.5rem;     // 72pt
     --spacing-10: 5rem;      // 80pt
     --spacing-11: 5.5rem;    // 88pt
- /* --spacing-12: 6rem;      // 96pt
+    --spacing-12: 6rem;      // 96pt
     --spacing-13: 6.5rem;    // 104pt
     --spacing-14: 7rem;      // 112pt
-    --spacing-15: 7.5rem;    // 120pt */
+    --spacing-15: 7.5rem;    // 120pt
     --spacing-16: 8rem;      // 128pt
  /* --spacing-17: 8.5rem;    // 136pt
     --spacing-18: 9rem;      // 144pt
