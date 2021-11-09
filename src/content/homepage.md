@@ -2,9 +2,9 @@
 headerSection:
   dark:
     title: Blockchain v3.0
-    subtitle: Alephium is the first operational sharded blockchain bringing 
-      scalability, ETH-inspired smart contracts and Dapps capabilities to Bitcoin's 
-      proven core technologies while ensuring better performance and improved energy efficiency.
+    subtitle: Alephium is the first operational sharded blockchain bringing scalability, 
+      ETH-inspired smart contracts, and dApps capabilities to Bitcoin's proven core 
+      technologies while ensuring better performance and improved energy efficiency.
   light:
     title: Accessibility & Usability first
     subtitle: From its technical design to its interfaces, Alephium has been created
@@ -15,7 +15,7 @@ introSection:
   subtitle: Engage with us.
   cards:
     - title: Mine
-      description: Start mining to contribute to the network security and receive ALPH
+      description: Start mining to contribute to  network security and receive ALPH 
         rewards.
       link:
         text: Documentation
@@ -39,11 +39,11 @@ technologySection:
   subtitle: What makes Alephium different?
   blockFlowSection:
     title: "Blockflow: sharding on BTC's proven foundations"
-    description: Alephium is built on the BlockFlow algorithm which delivers
-      efficient and practical UTXO sharding. Inspired by distributed computing
-      models, it combines DAG (Directed Acyclic Graph) and sharding. Much more
-      lightweight than other sharding methods, BlockFlow also natively supports
-      single-step cross shard transaction making Alephium user-experience just
+    description: Alephium is built on the BlockFlow algorithm which delivers 
+      efficient and practical UTXO sharding. Inspired by distributed computing 
+      models, it combines DAG (Directed Acyclic Graph) and sharding. Much more 
+      lightweight than other sharding methods, BlockFlow also natively supports 
+      single-step cross shard transaction making Alephium user experience just 
       as convenient as any single chain platform.
     cardText: BlockFlow combines DAG and sharding to enable an efficient, secure and
       verifiable consensus algorithm.
@@ -71,7 +71,7 @@ technologySection:
       scalable, functional, practical with a focus on security and reduced state
       usage. Its stateful UTXO model combines the advantages of both eUTXO model
       and account model.
-    cardText: A new programming paradigm for smart contracts and Dapps.
+    cardText: A new programming paradigm for smart contracts and dApps.
     links:
       - text: More details
         url: ''
@@ -81,12 +81,12 @@ technologySection:
         newTab: true
   vmsSection:
     title: Novel VM design
-    description: Most of the modern blockchain protocols have a built-in virtual
-      machine for general computing to implement useful and complex
-      decentralized applications. In Alephium, we shift from a code-centric
-      approach to a data-centric approach and enable access and parse
-      information from data payload of UTXOs. As a result, our script system is
-      as powerful as a general virtual machine.
+    description: Alephium uses a simple, safe and flexible virtual machine 
+      designed for dApps, and more specifically DeFi. Its dedicated VM leverages 
+      and improves on the UTXO model to address DeFi’s security issues and execution 
+      bottleneck. Our VM focuses on contract security and IO performance. The key 
+      features are its first-class token system, multiple-caller contract and 
+      fine-grained execution model. 
     cardText: VMs can be a big bottleneck when it comes to Blockchain performances.
       Not on Alephium.
     links:
@@ -101,7 +101,7 @@ technologySection:
       - number: '16'
         description: shards running on mainnet.
       - number: 100MB
-        description: of RAM needed by the full node. Runs on a Raspberry-PI.
+        description: of RAM needed for a full node. (Runs on a Raspberry-Pi.)
       - number: '>3 years'
         description: of R&D.
 usabilitySection:
@@ -142,21 +142,20 @@ startNowSection:
         newTab: true
     - title: Build your own
       subtitle: ''
-      description: Start building your own smart contracts, decentralized apps and
-        protocols. Alephium is made to build powerful, secure and scalable
-        Dapps. It’s stateful UTXO model combines the advantages of both eUTXO
-        model and account model.
+      description: Start building your own smart contracts, decentralized apps and 
+        protocols. Alephium is made to build powerful, secure, and scalable dApps. 
+        Its stateful UTXO model combines the advantages of both the UTXO model and 
+        account model. 
       link:
         url: https://github.com/alephium/
         text: Codebase
         newTab: true
     - title: Get a job @ Alephium
       subtitle: We value individuals
-      description: Our team members are our biggest assets. With them, with you, we
-        plan to make Alephium the preferred blockchain for powerful, accessible
-        and secure Dapps & web 3.0. If you think you're uniquely suited to
-        support Alephium, we want to hear from you. We're based in the beautiful
-        Switzerland, but you can work from anywhere in the world.
+      description: Our team members are our biggest assets. With them, with you, 
+        we plan to make Alephium the preferred blockchain for powerful, accessible 
+        and secure dApps & web 3.0. If you think you're uniquely suited to support Alephium, we want to hear 
+        from you. We're based in beautiful Switzerland, but you can work from anywhere in the world.
       link:
         url: https://pandasoftware.bamboohr.com/jobs/
         text: Job openings
@@ -173,9 +172,9 @@ startNowSection:
 followUsSection:
   title: Follow us
   subtitle: Join the community.
-  description: Alephium's community is growing fast. You're fascinated by the
-    technology, you want to know more or you want to build something cool with
-    it? Come and join us!
+  description: Alephium's community is growing fast. You're fascinated by the 
+    technology and you want to know more, or you want to build something cool 
+    with it? Come and join us!
   socialMediaLinks:
     - name: Discord
       url: https://discord.gg/nD8FzcTugn
