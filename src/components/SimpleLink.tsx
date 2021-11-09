@@ -7,21 +7,19 @@ export interface SimpleLinkProps {
   text?: string
   newTab?: boolean
   color?: string
-  onlyText?: boolean
   openModal?: (x: boolean) => void
 }
 
-let SimpleLink: FC<SimpleLinkProps> = ({ className, children, url = '', newTab, text, onlyText, openModal }) => {
+let SimpleLink: FC<SimpleLinkProps> = ({ className, children, url = '', newTab, text, openModal }) => {
   const handleOnClick = (event: MouseEvent) => {
+    console.log('CLICK')
     if (openModal) {
       event.preventDefault()
       openModal(true)
     }
   }
 
-  return onlyText ? (
-    <span className={className}>{children || text}</span>
-  ) : (
+  return (
     <a
       className={className}
       href={url}

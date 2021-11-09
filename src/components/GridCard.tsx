@@ -32,7 +32,7 @@ let GridCard: FC<GridCardProps> = ({
   const theme = useTheme()
 
   return (
-    <Card className={className} bgColor={primaryBackground ? theme.bgPrimary : theme.bgSurface} link={link}>
+    <Card className={className} bgColor={primaryBackground ? theme.bgPrimary : theme.bgSurface}>
       <div className="card-contents">
         <article>
           <div className="text-content">
@@ -64,9 +64,7 @@ GridCard = styled(GridCard)`
     link &&
     css`
       &:hover {
-        transform: translateY(calc(var(--spacing-half) * -1));
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-        cursor: pointer;
       }
     `}
 
