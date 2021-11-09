@@ -15,7 +15,7 @@ introSection:
   subtitle: Engage with us.
   cards:
     - title: Mine
-      description: Start mining to contribute to  network security and receive ALPH 
+      description: Start mining to contribute to the network security and receive ALPH 
         rewards.
       link:
         text: Documentation
