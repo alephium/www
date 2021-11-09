@@ -12,7 +12,6 @@ export interface SimpleLinkProps {
 
 let SimpleLink: FC<SimpleLinkProps> = ({ className, children, url = '', newTab, text, openModal }) => {
   const handleOnClick = (event: MouseEvent) => {
-    console.log('CLICK')
     if (openModal) {
       event.preventDefault()
       openModal(true)
