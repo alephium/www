@@ -19,7 +19,7 @@ let NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
       </div>
     </div>
     <div className="nav-end">
-      <ArrowedLink className="nav-item" url="https://testnet.alephium.org/" newTab altColor>
+      <ArrowedLink className="nav-item" url="https://explorer.alephium.org/" newTab altColor>
         Block explorer
       </ArrowedLink>
       <ArrowedLink className="nav-item" url="https://github.com/alephium" IconComponent={GitHubIcon} newTab altColor>
