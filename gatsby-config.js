@@ -69,6 +69,7 @@ module.exports = {
       resolve: 'gatsby-plugin-csp',
       options: {
         mergeScriptHashes: false,
+        mergeStyleHashes: false,
         directives: {
           'style-src': "'self' 'unsafe-inline'",
           'script-src': "'self' https://gc.zgo.at",
