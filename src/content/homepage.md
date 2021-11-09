@@ -2,9 +2,9 @@
 headerSection:
   dark:
     title: Blockchain v3.0
-    subtitle: Alephium is the first operational sharded blockchain bringing 
-      scalability, ETH-inspired smart contracts and Dapps capabilities to Bitcoin's 
-      proven core technologies while ensuring better performance and improved energy efficiency.
+    subtitle: Alephium is the first operational sharded blockchain bringing scalability, 
+      ETH-inspired smart contracts, and dApps capabilities to Bitcoin's proven core 
+      technologies while ensuring better performance and improved energy efficiency.
   light:
     title: Accessibility & Usability first
     subtitle: From its technical design to its interfaces, Alephium has been created
@@ -15,7 +15,7 @@ introSection:
   subtitle: Engage with us.
   cards:
     - title: Mine
-      description: Start mining to contribute to the network security and receive ALPH
+      description: Start mining to contribute to  network security and receive ALPH 
         rewards.
       link:
         text: Documentation
