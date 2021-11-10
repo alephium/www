@@ -78,7 +78,8 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
   }
 
   return (
-    <section className={className}>
+    <SectionContainer className={className}>
+      <TopGradient />
       <SectionTextHeaderStyled title={content.title} subtitle={content.subtitle} centered bigSubtitle />
       <section>
         <PageSectionContainerStyled>
@@ -149,9 +150,13 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
       <ModalPoLW isOpen={isPoLWModalOpen} setIsOpen={setIsPoLWModalOpen} />
       <ModalSmartContract isOpen={isSmartContractModalOpen} setIsOpen={setIsSmartContractModalOpen} />
       <ModalVms isOpen={isVmsModalOpen} setIsOpen={setIsVmsModalOpen} />
-    </section>
+    </SectionContainer>
   )
 }
+
+const SectionContainer = styled.section`
+  position: relative;
+`
 
 const NumbersPageSectionContainer = styled(PageSectionContainer)`
   max-width: var(--page-width-shrinked);
@@ -198,6 +203,16 @@ const NumbersColumn = styled(Column)`
       }
     }
   }
+`
+
+const TopGradient = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 3%;
+  background: transparent;
+  background: linear-gradient(180deg, rgba(123, 22, 255, 0.15) 0%, rgba(134, 59, 255, 0) 100%);
 `
 
 const SubsectionTextHeaderStyled = styled(SubsectionTextHeader)`
