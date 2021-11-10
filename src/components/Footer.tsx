@@ -95,7 +95,7 @@ Footer = styled(Footer)`
   font-size: var(--fontSize-18);
 
   svg {
-    max-width: var(--width-120);
+    max-width: var(--width-82);
   }
 `
 
