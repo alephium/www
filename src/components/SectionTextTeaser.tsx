@@ -48,6 +48,7 @@ SectionTextTeaser = styled(SectionTextTeaser)`
     line-height: var(--lineHeight-26);
     font-weight: var(--fontWeight-medium);
     margin-top: var(--spacing-5);
+    align-items: center;
 
     @media ${deviceBreakPoints.smallMobile} {
       flex-direction: column;

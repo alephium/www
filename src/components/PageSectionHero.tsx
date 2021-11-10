@@ -10,7 +10,7 @@ import TextSnippet from './TextSnippet'
 import Paginator from './Paginator'
 import HeroSlider from './HeroSlider'
 
-import LogoWhite from '../images/logo-white.svg'
+import LogoWhite from '../images/svgs/logo-white.svg'
 import Logo from '../images/svgs/logo.svg'
 import HeroDarkImage from '../images/hero-dark.svg'
 import HeroLightImage from '../images/hero-light.svg'
@@ -51,30 +51,6 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
     <ThemeProvider theme={theme === 'dark' ? darkTheme : lightTheme}>
       <HeroSlider heroElementRef={innerRef} onSwipe={onSwipe}>
         <HeroSection className={className} ref={innerRef}>
-          <PageSectionContainerStyled>
-            <div className="navigation-menu-wrapper">
-              <NavigationMenu />
-            </div>
-            <div className="contents">
-              <div>
-                {theme === 'dark' ? (
-                  <img src={LogoWhite} alt="Alephium logo white" className="logo" />
-                ) : (
-                  <LogoYellow className="logo" />
-                )}
-                <h1>{themeContent.title}</h1>
-                <TextSnippetStyled bigText>{themeContent.subtitle}</TextSnippetStyled>
-                <PaginatorStyled
-                  onPageClick={toggleTheme}
-                  currentPage={currentSlide}
-                  setCurrentPage={setCurrentSlide}
-                />
-                <a href="#intro" aria-label="Scroll to the intro section">
-                  <ArrowDown />
-                </a>
-              </div>
-            </div>
-          </PageSectionContainerStyled>
           <img
             loading="lazy"
             src={HeroDarkImage}
@@ -87,6 +63,28 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
             alt="Hero light"
             className={`hero-image ${theme === 'dark' && 'hidden'}`}
           />
+          <PageSectionContainerStyled>
+            <div className="navigation-menu-wrapper">
+              <NavigationMenu />
+            </div>
+            <ContentWrapper>
+              <div className="contents">
+                <>
+                  {theme === 'dark' ? <LogoWhite className="logo" /> : <LogoYellow className="logo" />}
+                  <h1>{themeContent.title}</h1>
+                  <TextSnippetStyled bigText>{themeContent.subtitle}</TextSnippetStyled>
+                  <PaginatorStyled
+                    onPageClick={toggleTheme}
+                    currentPage={currentSlide}
+                    setCurrentPage={setCurrentSlide}
+                  />
+                  <a href="#intro" aria-label="Scroll to the intro section">
+                    <ArrowDown />
+                  </a>
+                </>
+              </div>
+            </ContentWrapper>
+          </PageSectionContainerStyled>
         </HeroSection>
       </HeroSlider>
     </ThemeProvider>
@@ -94,12 +92,13 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
 }
 
 const HeroSection = styled.section`
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   overflow: hidden;
   position: relative;
   background-color: ${({ theme }) => theme.bgPrimary};
   transition: all 0.4s ease-in;
+  display: flex;
 
   .navigation-menu-wrapper {
     position: relative;
@@ -110,7 +109,6 @@ const HeroSection = styled.section`
     font-size: var(--fontSize-70);
     color: ${({ theme }) => theme.textPrimary};
     font-weight: var(--fontWeight-bold);
-    max-width: var(--width-584); // Better avoiding very long lines
 
     @media ${deviceBreakPoints.smallMobile} {
       font-size: var(--fontSize-36);
@@ -119,8 +117,8 @@ const HeroSection = styled.section`
 
   .contents {
     display: flex;
-    align-items: center;
-    height: 100%;
+    flex-direction: column;
+    justify-content: center;
     flex-grow: 1;
     z-index: 1;
 
@@ -133,6 +131,7 @@ const HeroSection = styled.section`
 
   .logo {
     width: 6rem;
+    min-height: 5rem;
 
     @media ${deviceBreakPoints.smallMobile} {
       width: 3rem;
@@ -162,7 +161,14 @@ const HeroSection = styled.section`
 const PageSectionContainerStyled = styled(PageSectionContainer)`
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  flex: 1;
+  height: auto;
+`
+
+const ContentWrapper = styled.div`
+  margin: auto 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 `
 
 const TextSnippetStyled = styled(TextSnippet)`

@@ -42,7 +42,7 @@ let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className, content })
     <section className={className}>
       <PageSectionContainer>
         <SectionHeader>
-          <SectionTextHeader title={content.title} subtitle={content.subtitle} bigSubtitle>
+          <SectionTextHeader title={content.title} subtitle={content.subtitle} bigSubtitle bigText>
             <p>{content.description}</p>
           </SectionTextHeader>
           <LogoStyled />
@@ -88,7 +88,7 @@ let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className, content })
 }
 
 PageSectionStartNow = styled(PageSectionStartNow)`
-  padding-top: var(--spacing-28);
+  padding-top: var(--spacing-20);
   padding-bottom: var(--spacing-28);
   background-color: ${({ theme }) => theme.bgSecondary};
   color: ${({ theme }) => theme.textPrimary};

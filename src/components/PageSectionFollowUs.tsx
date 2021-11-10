@@ -31,7 +31,7 @@ interface FollowUsProps {
 let FollowUs: FC<FollowUsProps> = ({ className, content }) => (
   <section className={className}>
     <PageSectionContainer>
-      <SectionTextHeader title={content.title} subtitle={content.subtitle} bigSubtitle>
+      <SectionTextHeader title={content.title} subtitle={content.subtitle} bigSubtitle bigText>
         <p>{content.description}</p>
       </SectionTextHeader>
       <SocialMediaIconsList>

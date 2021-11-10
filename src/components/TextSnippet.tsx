@@ -35,12 +35,12 @@ TextSnippet = styled(TextSnippet)`
   .text-subtitle {
     font-size: ${({ smallSubtitle, bigSubtitle }) =>
       smallSubtitle ? 'var(--fontSize-14)' : bigSubtitle ? 'var(--fontSize-24)' : 'var(--fontSize-18)'};
-    line-height: ${({ smallSubtitle }) => (smallSubtitle ? 'var(--lineHeight-22)' : 'var(--lineHeight-26)')};
+    line-height: ${({ smallSubtitle }) => (smallSubtitle ? 'var(--lineHeight-22)' : 'var(--lineHeight-28)')};
   }
 
   .text-content {
     font-size: ${({ bigText }) => (bigText ? 'var(--fontSize-18)' : 'inherit')};
-    line-height: ${({ bigText }) => (bigText ? 'var(--lineHeight-26)' : 'var(--lineHeight-22)')};
+    line-height: ${({ bigText }) => (bigText ? 'var(--lineHeight-28)' : 'var(--lineHeight-22)')};
   }
 
   @media ${deviceBreakPoints.mobile} {
