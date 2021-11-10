@@ -51,18 +51,8 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
     <ThemeProvider theme={theme === 'dark' ? darkTheme : lightTheme}>
       <HeroSlider heroElementRef={innerRef} onSwipe={onSwipe}>
         <HeroSection className={className} ref={innerRef}>
-          <img
-            loading="lazy"
-            src={HeroDarkImage}
-            alt="Hero dark"
-            className={`hero-image planet ${theme === 'light' && 'hidden'}`}
-          />
-          <img
-            loading="lazy"
-            src={HeroLightImage}
-            alt="Hero light"
-            className={`hero-image ${theme === 'dark' && 'hidden'}`}
-          />
+          <img src={HeroDarkImage} alt="Hero dark" className={`hero-image planet ${theme === 'light' && 'hidden'}`} />
+          <img src={HeroLightImage} alt="Hero light" className={`hero-image ${theme === 'dark' && 'hidden'}`} />
           <PageSectionContainerStyled>
             <div className="navigation-menu-wrapper">
               <NavigationMenu />
