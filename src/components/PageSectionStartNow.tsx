@@ -42,7 +42,7 @@ let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className, content })
     <section className={className}>
       <PageSectionContainer>
         <SectionHeader>
-          <SectionTextHeader title={content.title} subtitle={content.subtitle} bigSubtitle>
+          <SectionTextHeader title={content.title} subtitle={content.subtitle} bigSubtitle bigText>
             <p>{content.description}</p>
           </SectionTextHeader>
           <LogoStyled />

@@ -215,7 +215,7 @@ const BlockflowImageStyled = styled(BlockflowImage)`
 `
 
 const SectionTextHeaderStyled = styled(SectionTextHeader)`
-  margin-bottom: var(--spacing-29);
+  margin-bottom: var(--spacing-20);
 
   @media ${deviceBreakPoints.mobile} {
     text-align: left;

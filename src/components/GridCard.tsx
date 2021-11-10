@@ -103,12 +103,12 @@ GridCard = styled(GridCard)`
 
 const TextSnippetStyled = styled(TextSnippet)`
   h3 {
-    margin-bottom: ${(props) => (props.subtitle ? 'var(--spacing-1)' : 'var(--spacing-3)')};
+    margin-bottom: ${(props) => (props.subtitle ? 'var(--spacing-1)' : 'var(--spacing-4)')};
     color: ${({ theme }) => theme.textPrimary};
   }
 
   div {
-    margin-bottom: var(--spacing-5);
+    margin-bottom: var(--spacing-4);
     color: ${({ theme }) => theme.textSecondary};
   }
 
