@@ -40,7 +40,6 @@ let GridCard: FC<GridCardProps> = ({
               title={title}
               titleHierarchy="h3"
               subtitle={subtitle}
-              bigText
               narrowHeaderMobile={narrowHeaderMobile}
             >
               {children}

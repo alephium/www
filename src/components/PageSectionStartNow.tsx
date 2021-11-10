@@ -88,7 +88,7 @@ let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className, content })
 }
 
 PageSectionStartNow = styled(PageSectionStartNow)`
-  padding-top: var(--spacing-28);
+  padding-top: var(--spacing-20);
   padding-bottom: var(--spacing-28);
   background-color: ${({ theme }) => theme.bgSecondary};
   color: ${({ theme }) => theme.textPrimary};
