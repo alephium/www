@@ -103,7 +103,7 @@ technologySection:
       - number: 100MB
         description: of RAM needed for a full node. (Runs on a Raspberry-Pi.)
       - number: '>3 years'
-        description: of R&D.
+        description: of Research & Development.
 usabilitySection:
   title: Usability
   subtitle: Designed for humans.
