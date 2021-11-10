@@ -150,12 +150,13 @@ startNowSection:
         url: https://github.com/alephium/
         text: Codebase
         newTab: true
-    - title: Get a job @ Alephium
-      subtitle: We value individuals
-      description: Our team members are our biggest assets. With them, with you, 
-        we plan to make Alephium the preferred blockchain for powerful, accessible 
-        and secure dApps & web 3.0. If you think you're uniquely suited to support Alephium, we want to hear 
-        from you. We're based in beautiful Switzerland, but you can work from anywhere in the world.
+    - title: Work @ Alephium
+      subtitle: ''
+      description: Our team & community members are our biggest assets. With them, 
+        with you, we plan to make Alephium the preferred blockchain for powerful, 
+        accessible and secure dApps & web 3.0. If you think you're uniquely suited to 
+        support Alephium, we want to hear from you. We're based in beautiful 
+        Switzerland, but you can contribute from anywhere in the world.
       link:
         url: https://pandasoftware.bamboohr.com/jobs/
         text: Job openings
