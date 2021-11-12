@@ -101,7 +101,7 @@ technologySection:
       - number: '16'
         description: shards running on mainnet.
       - number: 100MB
-        description: of RAM needed for a full node. (Runs on a Raspberry-Pi.)
+        description: RAM needed for a Raspberry-Pi based full node.
       - number: '>3 years'
         description: of Research & Development.
 usabilitySection:
