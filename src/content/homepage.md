@@ -106,7 +106,7 @@ technologySection:
         description: of Research & Development.
 usabilitySection:
   title: Usability
-  subtitle: Designed for humans.
+  subtitle: Designed for humans
   description: Our wallet is only the first step. The intricate and innovative
     parts of technology should be at reach, without becoming an obstacle to
     accessibility and usability. Alephium aims at placing the user at the
@@ -172,7 +172,7 @@ startNowSection:
         newTab: true
 followUsSection:
   title: Follow us
-  subtitle: Join the community.
+  subtitle: Join the community
   description: Alephium's community is growing fast. You're fascinated by the 
     technology and you want to know more, or you want to build something cool 
     with it? Come and join us!
