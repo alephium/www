@@ -19,7 +19,7 @@ introSection:
         rewards.
       link:
         text: Documentation
-        url: https://github.com/alephium/wiki/blob/master/GPU-Miner-Guide.md
+        url: https://wiki.alephium.org/GPU-Miner-Guide.html
         newTab: true
     - title: Contribute
       description: Start testing and report issues or contribute to the Alephium codebase.
@@ -32,7 +32,7 @@ introSection:
         protocols.
       link:
         text: Guide
-        url: https://github.com/alephium/alephium/wiki/Smart-Contract-Guide
+        url: https://wiki.alephium.org/Smart-Contract-Guide.html
         newTab: true
 technologySection:
   title: Technology
@@ -77,7 +77,7 @@ technologySection:
         url: ''
         newTab: false
       - text: Guide
-        url: https://github.com/alephium/alephium/wiki/Smart-Contract-Guide
+        url: https://wiki.alephium.org/Smart-Contract-Guide.html
         newTab: true
   vmsSection:
     title: Novel VM design
@@ -137,7 +137,7 @@ startNowSection:
         receive ALPH block rewards. Currently, we support CPU and GPU mining and
         will soon offer FPGA mining support
       link:
-        url: https://github.com/alephium/wiki/blob/master/GPU-Miner-Guide.md
+        url: https://wiki.alephium.org/GPU-Miner-Guide.html
         text: Instructions
         newTab: true
     - title: Build your own
@@ -196,7 +196,7 @@ footer:
     - title: Resouces
       links:
         - text: Documentation
-          url: https://github.com/alephium/alephium/wiki
+          url: https://wiki.alephium.org/
           newTab: true
         - text: BlockFlow white paper
           url: https://github.com/alephium/white-paper/blob/master/alephium.pdf
