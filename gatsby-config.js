@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://alephium.org', // TODO: Update to official domain
+    siteUrl: 'https://alephium.org',
     title: 'Alephium: Blockchain v3.0',
     description:
       'A novel sharded blockchain for a secure, scalable and flexible financial ecosystem, empowered by BlockFlow algorithm and extended UTXO model.',
