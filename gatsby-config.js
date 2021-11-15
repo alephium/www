@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://alephium.org', // TODO: Update to official domain
+    siteUrl: 'https://alephium.org',
     title: 'Alephium: Blockchain v3.0',
     description:
       'A novel sharded blockchain for a secure, scalable and flexible financial ecosystem, empowered by BlockFlow algorithm and extended UTXO model.',
@@ -74,7 +74,8 @@ module.exports = {
           'style-src': "'self' 'unsafe-inline'",
           'script-src': "'self' https://gc.zgo.at",
           'default-src': "'none'",
-          'manifest-src': "'self'"
+          'manifest-src': "'self'",
+          'img-src': "'self' data: https://alephium.goatcounter.com"
         }
       }
     }

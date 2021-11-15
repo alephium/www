@@ -2,8 +2,8 @@
 headerSection:
   dark:
     title: Blockchain v3.0
-    subtitle: Alephium is the first operational sharded blockchain bringing scalability, 
-      ETH-inspired smart contracts, and dApps capabilities to Bitcoin's proven core 
+    subtitle: Alephium is the first operational sharded blockchain bringing scalability,
+      ETH-inspired smart contracts and dApps capabilities to Bitcoin's proven core
       technologies while ensuring better performance and improved energy efficiency.
   light:
     title: Accessibility & Usability first
@@ -39,12 +39,12 @@ technologySection:
   subtitle: What makes Alephium different?
   blockFlowSection:
     title: "Blockflow: sharding on BTC's proven foundations"
-    description: Alephium is built on the BlockFlow algorithm which delivers 
-      efficient and practical UTXO sharding. Inspired by distributed computing 
-      models, it combines DAG (Directed Acyclic Graph) and sharding. Much more 
-      lightweight than other sharding methods, BlockFlow also natively supports 
-      single-step cross shard transaction making Alephium user experience just 
-      as convenient as any single chain platform.
+    description: Alephium is built on the BlockFlow algorithm which delivers
+      efficient and practical UTXO sharding. Inspired by distributed computing
+      models, it combines DAG (Directed Acyclic Graph) and sharding. Being much
+      more lightweight than other sharding methods, BlockFlow also natively
+      supports single-step cross shard transactions, making the Alephium UX as
+      smooth as any single chain platform.
     cardText: BlockFlow combines DAG and sharding to enable an efficient, secure and
       verifiable consensus algorithm.
     links:
@@ -69,8 +69,8 @@ technologySection:
     title: Smart contract design
     description: Alephium's smart contracts have been designed and implemented to be
       scalable, functional, practical with a focus on security and reduced state
-      usage. Its stateful UTXO model combines the advantages of both eUTXO model
-      and account model.
+      usage. Its stateful UTXO model combines the advantages of both the eUTXO model
+      and the account model.
     cardText: A new programming paradigm for smart contracts and dApps.
     links:
       - text: More details
@@ -96,7 +96,7 @@ technologySection:
   numbersSection:
     title: Some numbers
     subtitle: We're passionate and committed to outstanding quality in everything we
-      do. We took the necessary time to transform theory to actual technologies.
+      do. We took the necessary time to transform theory into actual technologies.
     columns:
       - number: '16'
         description: shards running on mainnet.
@@ -164,7 +164,7 @@ startNowSection:
     - title: Contribute to the code
       subtitle: Alephium is open source!
       description: Start testing and report issues or contribute to the Alephium
-        codebase. We would love to see your contribution integrated in the
+        codebase. We would love to see your contribution integrated into the
         Alephium codebase!
       link:
         url: https://github.com/alephium/
@@ -173,9 +173,8 @@ startNowSection:
 followUsSection:
   title: Follow us
   subtitle: Join the community
-  description: Alephium's community is growing fast. You're fascinated by the 
-    technology and you want to know more, or you want to build something cool 
-    with it? Come and join us!
+  description: Alephium's community is growing fast. Fascinated by our
+    technology? Come learn and build with us!
   socialMediaLinks:
     - name: Discord
       url: https://discord.gg/nD8FzcTugn
@@ -193,7 +192,7 @@ followUsSection:
       url: https://www.youtube.com/channel/UCIX9Eww2Kch7sc0E6gCmEdg
 footer:
   columns:
-    - title: Resouces
+    - title: Resources
       links:
         - text: Documentation
           url: https://wiki.alephium.org/
