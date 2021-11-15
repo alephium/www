@@ -74,7 +74,8 @@ module.exports = {
           'style-src': "'self' 'unsafe-inline'",
           'script-src': "'self' https://gc.zgo.at",
           'default-src': "'none'",
-          'manifest-src': "'self'"
+          'manifest-src': "'self'",
+          'img-src': "'self' data: https://alephium.goatcounter.com"
         }
       }
     }
