@@ -96,7 +96,7 @@ technologySection:
   numbersSection:
     title: Some numbers
     subtitle: We're passionate and committed to outstanding quality in everything we
-      do. We took the necessary time to transform theory to actual technologies.
+      do. We took the necessary time to transform theory into actual technologies.
     columns:
       - number: '16'
         description: shards running on mainnet.
@@ -164,7 +164,7 @@ startNowSection:
     - title: Contribute to the code
       subtitle: Alephium is open source!
       description: Start testing and report issues or contribute to the Alephium
-        codebase. We would love to see your contribution integrated in the
+        codebase. We would love to see your contribution integrated into the
         Alephium codebase!
       link:
         url: https://github.com/alephium/
