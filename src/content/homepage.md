@@ -193,7 +193,7 @@ followUsSection:
       url: https://www.youtube.com/channel/UCIX9Eww2Kch7sc0E6gCmEdg
 footer:
   columns:
-    - title: Resouces
+    - title: Resources
       links:
         - text: Documentation
           url: https://wiki.alephium.org/
