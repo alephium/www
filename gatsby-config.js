@@ -72,7 +72,7 @@ module.exports = {
         mergeStyleHashes: false,
         directives: {
           'style-src': "'self' 'unsafe-inline'",
-          'script-src': "'self' https://gc.zgo.at",
+          'script-src': "'self' 'unsafe-inline' https://gc.zgo.at",
           'default-src': "'none'",
           'manifest-src': "'self'",
           'img-src': "'self' data: https://alephium.goatcounter.com"
