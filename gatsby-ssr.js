@@ -26,7 +26,5 @@ export const onPreRenderHTML = ({
         !['gatsby-image-style-script', 'gatsby-image-style-noscript', 'gatsby-image-style'].includes(component.key)
     )
   )
-  replacePostBodyComponents(
-    getPostBodyComponents().filter((component) => !['script-loader', 'chunk-mapping'].includes(component.key))
-  )
+  replacePostBodyComponents(getPostBodyComponents().filter((component) => !['chunk-mapping'].includes(component.key)))
 }
