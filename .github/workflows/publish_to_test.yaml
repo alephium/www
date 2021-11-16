@@ -22,7 +22,7 @@ jobs:
         node-version: 16.4
 
     - name: Build website
-      run: npm run build
+      run: npm install gatsby-cli && npm run build
 
     - name: Sync files to S3
       run: aws s3 sync ./public/ s3://$AWS_BUCKET_NAME --acl public-read --delete --cache-control max-age=604800
