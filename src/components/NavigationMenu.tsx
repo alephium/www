@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import styled from 'styled-components'
+import { Link } from 'gatsby'
 
 import { deviceBreakPoints } from '../styles/global-style'
 
@@ -15,7 +16,9 @@ let NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
   <div className={className}>
     <div className="nav-start">
       <div className="nav-item">
-        <LogoTextStyled />
+        <Link to="/">
+          <LogoTextStyled />
+        </Link>
       </div>
     </div>
     <div className="nav-end">

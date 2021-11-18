@@ -8,7 +8,10 @@ import PageSectionContainer from './PageSectionContainer'
 import NavigationMenu from './NavigationMenu'
 import TextSnippet from './TextSnippet'
 import Paginator from './Paginator'
-import HeroSlider from './HeroSlider'
+import HeroSlider from './Hero/HeroSlider'
+import HeroSection from './Hero/HeroSection'
+import HeroContentWrapper from './Hero/HeroContentWrapper'
+import HeroPageSectionContainer from './Hero/HeroPageSectionContainer'
 
 import LogoWhite from '../images/svgs/logo-white.svg'
 import Logo from '../images/svgs/logo.svg'
@@ -53,11 +56,11 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
         <HeroSection className={className} ref={innerRef}>
           <img src={HeroDarkImage} alt="Hero dark" className={`hero-image planet ${theme === 'light' && 'hidden'}`} />
           <img src={HeroLightImage} alt="Hero light" className={`hero-image ${theme === 'dark' && 'hidden'}`} />
-          <PageSectionContainerStyled>
+          <HeroPageSectionContainer>
             <div className="navigation-menu-wrapper">
               <NavigationMenu />
             </div>
-            <ContentWrapper>
+            <HeroContentWrapper>
               <div className="contents">
                 <>
                   {theme === 'dark' ? <LogoWhite className="logo" /> : <LogoYellow className="logo" />}
@@ -73,93 +76,13 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
                   </a>
                 </>
               </div>
-            </ContentWrapper>
-          </PageSectionContainerStyled>
+            </HeroContentWrapper>
+          </HeroPageSectionContainer>
         </HeroSection>
       </HeroSlider>
     </ThemeProvider>
   )
 }
-
-const HeroSection = styled.section`
-  min-height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-  position: relative;
-  background-color: ${({ theme }) => theme.bgPrimary};
-  transition: all 0.4s ease-in;
-  display: flex;
-
-  .navigation-menu-wrapper {
-    position: relative;
-    z-index: 1;
-  }
-
-  h1 {
-    font-size: var(--fontSize-70);
-    color: ${({ theme }) => theme.textPrimary};
-    font-weight: var(--fontWeight-bold);
-
-    @media ${deviceBreakPoints.smallMobile} {
-      font-size: var(--fontSize-36);
-    }
-  }
-
-  .contents {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-grow: 1;
-    z-index: 1;
-
-    .text-content {
-      @media ${deviceBreakPoints.mobile} {
-        color: ${({ theme }) => theme.textPrimary};
-      }
-    }
-  }
-
-  .logo {
-    width: 6rem;
-    min-height: 5rem;
-
-    @media ${deviceBreakPoints.smallMobile} {
-      width: 3rem;
-    }
-  }
-
-  .hero-image {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: auto;
-    height: 100%;
-    transition: all 0.4s ease-in;
-
-    @media ${deviceBreakPoints.mobile} {
-      &.planet {
-        filter: brightness(0.5);
-      }
-    }
-
-    &.hidden {
-      opacity: 0;
-    }
-  }
-`
-
-const PageSectionContainerStyled = styled(PageSectionContainer)`
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  height: auto;
-`
-
-const ContentWrapper = styled.div`
-  margin: auto 0;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-`
 
 const TextSnippetStyled = styled(TextSnippet)`
   max-width: var(--width-564);
