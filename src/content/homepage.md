@@ -7,9 +7,9 @@ headerSection:
       technologies while ensuring better performance and improved energy efficiency.
   light:
     title: Accessibility & Usability first
-    subtitle: From its technical design to its interfaces, Alephium has been created
-      with usability and accessibility in mind. It's made to support powerful,
-      scalable yet user-friendly decentralized applications and protocols.
+    subtitle: From its technical design to its interfaces, 
+      Alephium has been created to address the challenges of accessibility, 
+      scalability, and security encountered by decentralized applications today.
 introSection:
   title: Start
   subtitle: Engage with us.
@@ -69,7 +69,7 @@ technologySection:
     title: Smart contract design
     description: Alephium's smart contracts have been designed and implemented to be
       scalable, functional, practical with a focus on security and reduced state
-      usage. Its stateful UTXO model combines the advantages of both the eUTXO model
+      usage. Its stateful UTXO model combines the advantages of the UTXO model
       and the account model.
     cardText: A new programming paradigm for smart contracts and dApps.
     links:
