@@ -35,14 +35,17 @@ const ModalBlockFlow: FC<ModalProps> = ({ isOpen, setIsOpen }) => (
             shards related to itself: namely <code>(X,B)</code> and <code>(B,Y)</code>, where <code>X, Y ∈ G</code>
           </li>
           <li>
-            The amount of data that a single node needs to save is reduced from <code>G2</code> to <code>2G-1</code>
+            The amount of data that a single node needs to save is reduced from <code>G²</code> to <code>2G-1</code>
           </li>
         </ul>
       </ImageWithTextSideBySide>
       <h3>Consensus</h3>
       <ImageWithTextSideBySide image={BlockFlowConsensus} imageAlt="BlockFlow consensus">
-        <h4>Fork Choice Rule: Dependency Data Structure</h4>- Each block selects several block hashes as dependencies -
-        Transitively, each new block determines a unique fork for each shard
+        <h4>Fork Choice Rule: Dependency Data Structure</h4>
+        <ul>
+          <li>Each block selects several block hashes as dependencies</li>
+          <li>Transitively, each new block determines a unique fork for each shard</li>
+        </ul>
         <h4>Finality Algorithm</h4>
         <ul>
           <li>Miners find best dependencies and pack valid transactions</li>
