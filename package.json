@@ -21,7 +21,6 @@
     "lint:fix": "eslint . --fix --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
-    "@fontsource/inter": "^4.5.0",
     "babel-eslint": "^10.1.0",
     "babel-plugin-styled-components": "^1.13.2",
     "babel-preset-gatsby": "^2.2.0",

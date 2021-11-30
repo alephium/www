@@ -64,7 +64,7 @@ const GlobalStyle = createGlobalStyle`
     --fontFamily-serif: "Times New Roman", Times, serif;
     --font-heading: var(--fontFamily-sans);
     --fontWeight-normal: 400;
-    --fontWeight-medium: 600;
+    --fontWeight-semiBold: 600;
     --fontWeight-bold: 700;
 
     /* TODO: Maybe check https://www.designsystems.com/typography-guides/ for
