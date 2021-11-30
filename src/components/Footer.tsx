@@ -109,7 +109,7 @@ FooterColumn = styled(FooterColumn)`
   }
 
   .title {
-    font-weight: var(--fontWeight-medium);
+    font-weight: var(--fontWeight-semiBold);
     margin-bottom: var(--spacing-2);
   }
 `

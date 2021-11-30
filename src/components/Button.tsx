@@ -39,7 +39,7 @@ Button = styled(Button)`
 
   /* The following rules are the same as in the ArrowedLink, maybe extract? */
   align-items: center;
-  font-weight: var(--fontWeight-medium);
+  font-weight: var(--fontWeight-semiBold);
   font-size: var(--fontSize-18);
   transition: all 0.1s ease-out;
 
