@@ -196,6 +196,7 @@ footer:
       links:
         - text: Tokenomics
           url: https://medium.com/@alephium/tokenomics-of-alephium-61d59b51029c
+          newTab: true
         - text: Documentation
           url: https://wiki.alephium.org/
           newTab: true
