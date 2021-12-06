@@ -13,6 +13,8 @@ import ModalContact from './ModalContact'
 import ModalPrivacyPolicy from './ModalPrivacyPolicy'
 
 import Logo from '../images/svgs/logo.svg'
+import BASLogo from '../images/svgs/bas-logo-white.svg'
+import UTXOLogo from '../images/svgs/utxo-aliance-logo-white.svg'
 
 export interface FooterContentType {
   columns: {
@@ -39,15 +41,26 @@ let Footer: FC<FooterProps> = ({ className, content }) => {
   return (
     <div className={className}>
       <PageSectionContainerStyled>
-        <LogoStyled />
+        <LogosSection>
+          <LogoStyled />
+          <MembershipsTitle>Memberships</MembershipsTitle>
+          <Memberships>
+            <SimpleLink url="https://www.bitcoinassociation.ch/" newTab>
+              <BASLogo />
+            </SimpleLink>
+            <SimpleLink url="https://utxo-alliance.org/" newTab>
+              <UTXOLogo />
+            </SimpleLink>
+          </Memberships>
+        </LogosSection>
         <Separator />
-        <FooterColumns gap="var(--spacing-4)">
+        <FooterColumnsSection gap="var(--spacing-4)">
           {columnsContent.map((column) => (
             <Column key={column.title}>
               <FooterColumn {...column} />
             </Column>
           ))}
-        </FooterColumns>
+        </FooterColumnsSection>
       </PageSectionContainerStyled>
       <ModalAboutUs isOpen={isAboutUsModalOpen} setIsOpen={setIsAboutUsModalOpen} />
       <ModalTeam isOpen={isTeamModalOpen} setIsOpen={setIsTeamModalOpen} />
@@ -80,6 +93,28 @@ let FooterColumn: FC<FooterColumnProps> = ({ className, title, links }) => {
   )
 }
 
+const LogosSection = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
+const Memberships = styled.div`
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+
+  svg {
+    height: auto;
+    width: var(--width-82);
+  }
+`
+
+const MembershipsTitle = styled.div`
+  margin-top: var(--spacing-8);
+  margin-bottom: var(--spacing-2);
+  font-weight: var(--fontWeight-semiBold);
+`
+
 const Separator = styled.div`
   width: 2px;
   height: 5rem;
@@ -97,10 +132,6 @@ Footer = styled(Footer)`
   background-color: ${({ theme }) => theme.bgPrimary};
   color: ${({ theme }) => theme.textPrimary};
   font-size: var(--fontSize-18);
-
-  svg {
-    max-width: var(--width-82);
-  }
 `
 
 FooterColumn = styled(FooterColumn)`
@@ -118,13 +149,13 @@ FooterColumn = styled(FooterColumn)`
   }
 `
 
-const FooterColumns = styled(Columns)`
-  flex: 1;
+const FooterColumnsSection = styled(Columns)`
+  flex-grow: 1;
 `
 
 const PageSectionContainerStyled = styled(PageSectionContainer)`
   display: flex;
-  gap: var(--spacing-20);
+  gap: var(--spacing-10);
   justify-content: space-between;
 
   @media ${deviceBreakPoints.mobile} {
@@ -134,6 +165,8 @@ const PageSectionContainerStyled = styled(PageSectionContainer)`
 `
 
 const LogoStyled = styled(Logo)`
+  max-width: var(--width-82);
+
   .dark {
     fill: var(--color-logo-black-dark);
   }

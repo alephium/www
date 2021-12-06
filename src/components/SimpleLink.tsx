@@ -23,7 +23,7 @@ let SimpleLink: FC<SimpleLinkProps> = ({ className, children, url = '', newTab, 
       className={className}
       href={url}
       target={(newTab && '_blank') || undefined}
-      rel={(newTab && 'noopener') || undefined}
+      rel={(newTab && 'noopener noreferrer') || undefined}
       onClick={handleOnClick}
     >
       {children || text}
