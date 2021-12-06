@@ -35,6 +35,10 @@ SimpleLink = styled(SimpleLink)`
   text-decoration: none;
   color: ${({ theme, color }) => (color ? color : theme.link)};
 
+  svg {
+    fill: ${({ theme, color }) => (color ? color : theme.link)};
+  }
+
   &:hover {
     filter: brightness(110%);
     cursor: pointer;

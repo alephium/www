@@ -100,13 +100,16 @@ const LogosSection = styled.div`
   flex-direction: column;
 `
 
-const MembershipsContainer = styled.div`
-  width: 100%;
+const MembershipsContainer = styled(PageSectionContainer)`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: var(--spacing-10);
+
+  @media ${deviceBreakPoints.mobile} {
+    align-items: flex-start;
+  }
 `
 
 const MembershipsLogos = styled.div`
@@ -117,11 +120,6 @@ const MembershipsLogos = styled.div`
   svg {
     height: auto;
     width: var(--width-82);
-    opacity: 0.5;
-
-    &:hover {
-      opacity: 1;
-    }
   }
 `
 
