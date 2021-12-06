@@ -23,7 +23,7 @@ let SimpleLink: FC<SimpleLinkProps> = ({ className, children, url = '', newTab, 
       className={className}
       href={url}
       target={(newTab && '_blank') || undefined}
-      rel={(newTab && 'noopener') || undefined}
+      rel={(newTab && 'noopener noreferrer') || undefined}
       onClick={handleOnClick}
     >
       {children || text}
@@ -34,6 +34,10 @@ let SimpleLink: FC<SimpleLinkProps> = ({ className, children, url = '', newTab, 
 SimpleLink = styled(SimpleLink)`
   text-decoration: none;
   color: ${({ theme, color }) => (color ? color : theme.link)};
+
+  svg {
+    fill: ${({ theme, color }) => (color ? color : theme.link)};
+  }
 
   &:hover {
     filter: brightness(110%);
