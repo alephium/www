@@ -222,6 +222,9 @@ footer:
         - text: About us
           url: ''
           newTab: false
+        - text: Team
+          url: ''
+          newTab: false
         - text: Contact
           url: ''
           newTab: false

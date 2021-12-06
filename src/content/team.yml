@@ -1,0 +1,36 @@
+- name: Cheng Wang
+  role: Founder, Core Developer
+  image: ../images/team/cheng.jpg
+- name: Maud Simon
+  role: Chief of Staff
+  image: ../images/team/maud.jpg
+- name: Alex Poltorak
+  role: Strategy
+  image: ../images/team/polto.jpg
+- name: Philipp Richner
+  role: CFO
+  image: ../images/team/philipp.jpg
+- name: Mikaël Vaivre
+  role: Chief Product Officer
+  image: ../images/team/mika.png
+- name: Set Hallström
+  role: Community Lead
+  image: ../images/team/set.jpg
+- name: Thomas Droxler
+  role: Core Blockchain Dev
+  image: ../images/team/thomas.png
+- name: h0ngcha0
+  role: Core Blockchain Dev
+  image: ../images/team/h0ngcha0.jpeg
+- name: Benoit Perroud
+  role: Core Infrastructure Dev
+  image: ../images/team/benoit.jpg
+- name: Muchen
+  role: Core Blockchain Dev
+  image: ../images/team/muchen.jpeg
+- name: Ilias Trichopoulos
+  role: Core Web & Frontend Dev
+  image: ../images/team/ilias.jpeg
+- name: Simer Plaha
+  role: Core DB Dev
+  image: ../images/team/simer.png
