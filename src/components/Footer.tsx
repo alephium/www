@@ -43,15 +43,6 @@ let Footer: FC<FooterProps> = ({ className, content }) => {
       <PageSectionContainerStyled>
         <LogosSection>
           <LogoStyled />
-          <MembershipsTitle>Memberships</MembershipsTitle>
-          <Memberships>
-            <SimpleLink url="https://www.bitcoinassociation.ch/" newTab>
-              <BASLogo />
-            </SimpleLink>
-            <SimpleLink url="https://utxo-alliance.org/" newTab>
-              <UTXOLogo />
-            </SimpleLink>
-          </Memberships>
         </LogosSection>
         <Separator />
         <FooterColumnsSection gap="var(--spacing-4)">
@@ -62,6 +53,17 @@ let Footer: FC<FooterProps> = ({ className, content }) => {
           ))}
         </FooterColumnsSection>
       </PageSectionContainerStyled>
+      <MembershipsContainer>
+        <MembershipsTitle>Memberships</MembershipsTitle>
+        <MembershipsLogos>
+          <SimpleLink url="https://www.bitcoinassociation.ch/" newTab>
+            <BASLogo />
+          </SimpleLink>
+          <SimpleLink url="https://utxo-alliance.org/" newTab>
+            <UTXOLogo />
+          </SimpleLink>
+        </MembershipsLogos>
+      </MembershipsContainer>
       <ModalAboutUs isOpen={isAboutUsModalOpen} setIsOpen={setIsAboutUsModalOpen} />
       <ModalTeam isOpen={isTeamModalOpen} setIsOpen={setIsTeamModalOpen} />
       <ModalContact isOpen={isContactModalOpen} setIsOpen={setIsContactModalOpen} />
@@ -98,7 +100,16 @@ const LogosSection = styled.div`
   flex-direction: column;
 `
 
-const Memberships = styled.div`
+const MembershipsContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: var(--spacing-10);
+`
+
+const MembershipsLogos = styled.div`
   display: flex;
   align-items: center;
   gap: var(--spacing-4);
@@ -106,12 +117,16 @@ const Memberships = styled.div`
   svg {
     height: auto;
     width: var(--width-82);
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 `
 
 const MembershipsTitle = styled.div`
-  margin-top: var(--spacing-8);
-  margin-bottom: var(--spacing-2);
+  margin-bottom: var(--spacing-4);
   font-weight: var(--fontWeight-semiBold);
 `
 
@@ -128,7 +143,7 @@ const Separator = styled.div`
 
 Footer = styled(Footer)`
   padding-top: var(--spacing-25);
-  padding-bottom: var(--spacing-25);
+  padding-bottom: var(--spacing-10);
   background-color: ${({ theme }) => theme.bgPrimary};
   color: ${({ theme }) => theme.textPrimary};
   font-size: var(--fontSize-18);
