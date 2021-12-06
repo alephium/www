@@ -217,7 +217,7 @@ footer:
         - text: Wallet
           url: https://github.com/alephium/alephium-wallet
           newTab: true
-    - title: Company
+    - title: Project
       links:
         - text: About us
           url: ''
