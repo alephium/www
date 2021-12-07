@@ -60,7 +60,7 @@ technologySection:
     cardText: Blockchain's success ultimately depends on its sustainability.
     links:
       - text: More details
-        url: ''
+        url:
         newTab: false
       - text: PoLW white paper
         url: https://github.com/alephium/white-paper/blob/master/polw.pdf
@@ -74,7 +74,7 @@ technologySection:
     cardText: A new programming paradigm for smart contracts and dApps.
     links:
       - text: More details
-        url: ''
+        url:
         newTab: false
       - text: Guide
         url: https://wiki.alephium.org/Smart-Contract-Guide.html
@@ -91,7 +91,7 @@ technologySection:
       Not on Alephium.
     links:
       - text: More details
-        url: ''
+        url:
         newTab: false
   numbersSection:
     title: Some numbers
@@ -220,15 +220,15 @@ footer:
     - title: Project
       links:
         - text: About us
-          url: ''
+          url:
           newTab: false
         - text: Team
-          url: ''
+          url:
           newTab: false
         - text: Contact
-          url: ''
+          url:
           newTab: false
         - text: Privacy policy
-          url: ''
+          url:
           newTab: false
 ---

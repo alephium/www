@@ -128,7 +128,6 @@ export const pageQuery = graphql`
               cardText
               links {
                 text
-                url
                 newTab
               }
             }
