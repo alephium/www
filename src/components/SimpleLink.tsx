@@ -3,14 +3,14 @@ import styled from 'styled-components'
 
 export interface SimpleLinkProps {
   className?: string
-  url?: string
+  url?: string | undefined
   text?: string
   newTab?: boolean
   color?: string
   openModal?: (x: boolean) => void
 }
 
-let SimpleLink: FC<SimpleLinkProps> = ({ className, children, url = '', newTab, text, openModal }) => {
+let SimpleLink: FC<SimpleLinkProps> = ({ className, children, url, newTab, text, openModal }) => {
   const handleOnClick = (event: MouseEvent) => {
     if (openModal) {
       event.preventDefault()
