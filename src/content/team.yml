@@ -34,3 +34,6 @@
 - name: Simer Plaha
   role: Core DB Dev
   image: ../images/team/simer.png
+- name: Vladimir Moshnyager
+  role: Marketing & Project Awareness
+  image: ../images/team/vladimir.jpeg
