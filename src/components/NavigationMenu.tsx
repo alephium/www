@@ -70,6 +70,7 @@ NavigationMenu = styled(NavigationMenu)`
     padding: var(--spacing-3) 0;
     display: flex;
     align-items: center;
+    line-height: var(--lineHeight-26);
 
     @media ${deviceBreakPoints.smallMobile} {
       padding: var(--spacing-2) 0;
