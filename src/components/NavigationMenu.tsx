@@ -27,6 +27,7 @@ let NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
         url="https://medium.com/@alephium/welcome-to-alephium-alph-48dfb72aa458/"
         newTab
         altColor
+        emoji="🚀"
       >
         Alephium in 5&apos;
       </ArrowedLink>
