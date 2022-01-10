@@ -206,6 +206,9 @@ footer:
         - text: PoLW white paper
           url: https://github.com/alephium/white-paper/blob/master/polw.pdf
           newTab: true
+        - text: FAQ
+          url: https://wiki.alephium.org/Frequently-Asked-Questions.html
+          newTab: true
     - title: Open source
       links:
         - text: Alephium
