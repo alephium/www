@@ -51,6 +51,7 @@ NavigationMenu = styled(NavigationMenu)`
 
   .nav-end {
     display: flex;
+    margin-left: var(--spacing-3);
     gap: var(--spacing-6);
 
     @media ${deviceBreakPoints.smallMobile} {
