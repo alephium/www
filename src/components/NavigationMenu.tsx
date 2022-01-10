@@ -16,9 +16,9 @@ let NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
   <div className={className}>
     <div className="nav-start">
       <div className="nav-item">
-        <Link to="/">
+        <LinkStyled to="/">
           <LogoTextStyled />
-        </Link>
+        </LinkStyled>
       </div>
     </div>
     <div className="nav-end">
@@ -40,6 +40,10 @@ let NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
     </div>
   </div>
 )
+
+const LinkStyled = styled(Link)`
+  display: flex;
+`
 
 NavigationMenu = styled(NavigationMenu)`
   display: flex;
