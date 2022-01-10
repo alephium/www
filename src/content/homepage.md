@@ -2,9 +2,9 @@
 headerSection:
   dark:
     title: Blockchain v3.0
-    subtitle: Alephium is the first live layer 1 sharded blockchain scaling 
+    subtitle: "Alephium is the first live layer 1 sharded blockchain scaling 
     and improving on Bitcoin core technologies, Proof of Work and UTXO. It delivers 
-    a highly performant, secure DeFi & dApps platform with enhanced energy efficiency.
+    a highly performant, secure DeFi & dApps platform with enhanced energy efficiency."
   light:
     title: Accessibility & Usability first
     subtitle: From its technical design to its interfaces, 
