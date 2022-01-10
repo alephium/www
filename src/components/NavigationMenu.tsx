@@ -16,12 +16,21 @@ let NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
   <div className={className}>
     <div className="nav-start">
       <div className="nav-item">
-        <Link to="/">
+        <LinkStyled to="/">
           <LogoTextStyled />
-        </Link>
+        </LinkStyled>
       </div>
     </div>
     <div className="nav-end">
+      <ArrowedLink
+        className="nav-item"
+        url="https://medium.com/@alephium/welcome-to-alephium-alph-48dfb72aa458/"
+        newTab
+        altColor
+        emoji="🚀"
+      >
+        Alephium in 5&apos;
+      </ArrowedLink>
       <ArrowedLink className="nav-item" url="https://explorer.alephium.org/" newTab altColor>
         Block explorer
       </ArrowedLink>
@@ -31,6 +40,10 @@ let NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
     </div>
   </div>
 )
+
+const LinkStyled = styled(Link)`
+  display: flex;
+`
 
 NavigationMenu = styled(NavigationMenu)`
   display: flex;
@@ -43,6 +56,7 @@ NavigationMenu = styled(NavigationMenu)`
 
   .nav-end {
     display: flex;
+    margin-left: var(--spacing-3);
     gap: var(--spacing-6);
 
     @media ${deviceBreakPoints.smallMobile} {
@@ -56,6 +70,7 @@ NavigationMenu = styled(NavigationMenu)`
     padding: var(--spacing-3) 0;
     display: flex;
     align-items: center;
+    line-height: var(--lineHeight-26);
 
     @media ${deviceBreakPoints.smallMobile} {
       padding: var(--spacing-2) 0;

@@ -14,6 +14,7 @@ export interface ArrowedLinkProps {
   openModal?: (x: boolean) => void
   altColor?: boolean
   onlyText?: boolean
+  emoji?: string
 }
 
 let ArrowedLink: FC<ArrowedLinkProps> = ({
@@ -23,7 +24,8 @@ let ArrowedLink: FC<ArrowedLinkProps> = ({
   url,
   newTab,
   openModal,
-  altColor = false
+  altColor = false,
+  emoji
 }) => {
   const theme = useTheme()
   const color = altColor ? theme.linkAlt : theme.link
@@ -32,7 +34,7 @@ let ArrowedLink: FC<ArrowedLinkProps> = ({
     <SimpleLink className={className} url={url} newTab={newTab} openModal={openModal} color={color}>
       {IconComponent && <IconComponent className="icon" />}
       {children}
-      <Arrow className="arrow" />
+      {(emoji && <span className="arrow emoji">{emoji}</span>) || <Arrow className="arrow" />}
     </SimpleLink>
   )
 }
@@ -53,8 +55,9 @@ ArrowedLink = styled(ArrowedLink)`
     width: 11px;
     margin-left: var(--spacing-1);
     fill: ${({ theme, altColor }) => (altColor ? theme.linkAlt : theme.link)};
-    ${(props) =>
-      props.newTab &&
+    ${({ newTab, emoji }) =>
+      newTab &&
+      !emoji &&
       css`
         transform: rotate(-45deg);
       `}

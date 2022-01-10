@@ -92,7 +92,7 @@ const TextSnippetStyled = styled(TextSnippet)`
   height: calc(var(--lineHeight-26) * 4);
 
   @media ${deviceBreakPoints.smallMobile} {
-    height: calc(var(--lineHeight-26) * 7);
+    height: calc(var(--lineHeight-26) * 8);
   }
 `
 
