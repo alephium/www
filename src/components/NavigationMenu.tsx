@@ -22,6 +22,14 @@ let NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
       </div>
     </div>
     <div className="nav-end">
+      <ArrowedLink
+        className="nav-item"
+        url="https://medium.com/@alephium/welcome-to-alephium-alph-48dfb72aa458/"
+        newTab
+        altColor
+      >
+        Alephium in 5&apos;
+      </ArrowedLink>
       <ArrowedLink className="nav-item" url="https://explorer.alephium.org/" newTab altColor>
         Block explorer
       </ArrowedLink>
