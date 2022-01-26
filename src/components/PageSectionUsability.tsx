@@ -13,7 +13,7 @@ import Zoomer from './Zoomer'
 import ResponsiveImage, { ImageProps } from './ResponsiveImage'
 
 import BirdsImage from './styleable-images/ImageBirds'
-import YellowMountainsImage from './styleable-images/ImageYellowMountains'
+import FooterImage from './styleable-images/ImageYellowMountains'
 
 export interface PageSectionUsabilityContentType {
   title: string
@@ -48,21 +48,19 @@ let PageSectionUsability: FC<PageSectionUsabilityProps> = ({ className, content 
         })}
       </ImagesColumns>
     </PageSectionContainerStyled>
-    <YellowMountainsImageStyled />
+    <FooterImageContainer>
+      <FooterImageStyled />
+    </FooterImageContainer>
     <BirdsImageStyled />
   </section>
 )
 
 PageSectionUsability = styled(PageSectionUsability)`
   padding-top: var(--spacing-28);
-  padding-bottom: var(--spacing-28);
+  padding-bottom: var(--spacing-10);
   background-color: ${({ theme }) => theme.bgPrimary};
   color: ${({ theme }) => theme.textPrimary};
   position: relative;
-
-  @media ${deviceBreakPoints.mobile} {
-    padding-bottom: 0;
-  }
 `
 
 const PageSectionContainerStyled = styled(PageSectionContainer)`
@@ -105,21 +103,14 @@ const ImagesColumns = styled(Columns)`
   }
 `
 
-const YellowMountainsImageStyled = styled(YellowMountainsImage)`
-  position: absolute;
-  height: auto;
-  width: auto;
-  bottom: -2px;
-  left: 0;
-  right: 0px;
+const FooterImageContainer = styled.div`
+  margin-top: var(--spacing-14);
+  text-align: center;
+`
 
+const FooterImageStyled = styled(FooterImage)`
   @media ${deviceBreakPoints.mobile} {
-    bottom: -152px;
-    background-color: var(--color-white);
-  }
-
-  @media ${deviceBreakPoints.smallMobile} {
-    bottom: -80px;
+    width: 100%;
   }
 `
 
