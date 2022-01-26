@@ -145,10 +145,10 @@ ecosystemSection:
       image: ../images/award.svg
       items:
         - title: 'Alphemy Capital'
-          logo: '../images/logos/alphemy-capital.svg'
+          logo: '../images/logos/alphemy-capital-icon.svg'
           url: https://alphemy.capital/
         - title: 'White Paper Capital'
-          logo: '../images/logos/white-paper-capital.svg'
+          logo: '../images/logos/white-paper-capital-icon.svg'
           url: https://www.whitepapercapital.com/
         - title: 'Archery Fund'
           url: https://archery.fund/
@@ -158,7 +158,7 @@ ecosystemSection:
       image: ../images/sprout.svg
       items:
         - title: 'Sesame Wallet'
-          logo: '../images/logos/sesame-wallet.svg'
+          logo: '../images/logos/sesame-wallet-icon.svg'
           url: https://sesame-wallet.io/
         - title: 'MetaPool'
           logo: ''
