@@ -13,8 +13,6 @@ import ModalContact from './ModalContact'
 import ModalPrivacyPolicy from './ModalPrivacyPolicy'
 
 import Logo from '../images/svgs/logo.svg'
-import BASLogo from '../images/svgs/bas-logo-white.svg'
-import UTXOLogo from '../images/svgs/utxo-aliance-logo-white.svg'
 
 export interface FooterContentType {
   columns: {
@@ -53,17 +51,6 @@ let Footer: FC<FooterProps> = ({ className, content }) => {
           ))}
         </FooterColumnsSection>
       </PageSectionContainerStyled>
-      <MembershipsContainer>
-        <MembershipsTitle>Memberships</MembershipsTitle>
-        <MembershipsLogos>
-          <SimpleLink url="https://www.bitcoinassociation.ch/" newTab>
-            <BASLogo />
-          </SimpleLink>
-          <SimpleLink url="https://utxo-alliance.org/" newTab>
-            <UTXOLogo />
-          </SimpleLink>
-        </MembershipsLogos>
-      </MembershipsContainer>
       <ModalAboutUs isOpen={isAboutUsModalOpen} setIsOpen={setIsAboutUsModalOpen} />
       <ModalTeam isOpen={isTeamModalOpen} setIsOpen={setIsTeamModalOpen} />
       <ModalContact isOpen={isContactModalOpen} setIsOpen={setIsContactModalOpen} />
@@ -98,34 +85,6 @@ let FooterColumn: FC<FooterColumnProps> = ({ className, title, links }) => {
 const LogosSection = styled.div`
   display: flex;
   flex-direction: column;
-`
-
-const MembershipsContainer = styled(PageSectionContainer)`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: var(--spacing-10);
-
-  @media ${deviceBreakPoints.mobile} {
-    align-items: flex-start;
-  }
-`
-
-const MembershipsLogos = styled.div`
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-4);
-
-  svg {
-    height: auto;
-    width: var(--width-82);
-  }
-`
-
-const MembershipsTitle = styled.div`
-  margin-bottom: var(--spacing-4);
-  font-weight: var(--fontWeight-semiBold);
 `
 
 const Separator = styled.div`
