@@ -135,10 +135,10 @@ ecosystemSection:
           logo: '../images/logos/leax.svg'
           url: https://www.leax.ch/
         - title: 'UTXO Alliance'
-          logo: '../images/logos/utxo-alliance.svg'
+          logo: '../images/svgs/utxo-aliance-logo-white.svg'
           url: https://utxo-alliance.org/
         - title: 'Bitcoin Association Switzerland'
-          logo: '../images/logos/bas.png'
+          logo: '../images/svgs/bas-logo-white.svg'
           url: https://www.bitcoinassociation.ch/
     - title: Backers
       description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
@@ -173,7 +173,7 @@ ecosystemSection:
       description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
       items:
         - title: 'Gate.io'
-          logo: '../images/logos/gate-io.png'
+          logo: '../images/logos/gate-io.svg'
           url: https://www.gate.io/trade/ALPH_USDT
 startNowSection:
   title: Start now
