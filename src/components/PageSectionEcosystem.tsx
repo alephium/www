@@ -46,7 +46,10 @@ let PageSectionEcosystem = ({ className }: { className?: string }) => {
                         {url ? (
                           <SimpleLink url={url} text={title} newTab>
                             {logo ? (
-                              <img src={logo.publicURL} alt={title} />
+                              <>
+                                <SubsectionItemLogo src={logo.publicURL} alt={title} />
+                                <SubsectionItemTitleOnHover>{title}</SubsectionItemTitleOnHover>
+                              </>
                             ) : (
                               <SubsectionItemTitle>{title}</SubsectionItemTitle>
                             )}
@@ -136,6 +139,16 @@ const SubsectionItems = styled.div`
   flex-wrap: wrap;
 `
 
+const SubsectionItemTitle = styled.div`
+  font-weight: var(--fontWeight-bold);
+`
+
+const SubsectionItemTitleOnHover = styled(SubsectionItemTitle)`
+  display: none;
+`
+
+const SubsectionItemLogo = styled.img``
+
 const SubsectionItem = styled.div`
   width: 100px;
   height: 100px;
@@ -156,14 +169,20 @@ const SubsectionItem = styled.div`
     justify-content: center;
   }
 
-  img {
+  ${SubsectionItemLogo} {
     max-width: 100%;
     max-height: 100%;
   }
-`
 
-const SubsectionItemTitle = styled.div`
-  font-weight: var(--fontWeight-bold);
+  &:hover {
+    ${SubsectionItemLogo} {
+      display: none;
+    }
+
+    ${SubsectionItemTitleOnHover} {
+      display: block;
+    }
+  }
 `
 
 const query = graphql`
