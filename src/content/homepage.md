@@ -129,7 +129,7 @@ ecosystemSection:
   subtitle: Growing fast
   subsections:
     - title: Partners
-      description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+      description: "From lawyers to peer blockchains, lobbying & local associations, they make us feel part of a larger ecosystem."
       items:
         - title: 'Leax'
           logo: '../images/logos/leax.svg'
@@ -141,7 +141,7 @@ ecosystemSection:
           logo: '../images/svgs/bas-logo-white.svg'
           url: https://www.bitcoinassociation.ch/
     - title: Backers
-      description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+      description: "They provided us with early backing, funding, strategic advice, introductions and so much more!"
       image: ../images/award.svg
       items:
         - title: 'Alphemy Capital'
@@ -154,7 +154,7 @@ ecosystemSection:
           url: https://archery.fund/
         - title: '80+ Private Individuals'
     - title: Miners, dApps & Community Projects
-      description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+      description: "Building on top, around or below what we do, securing the network or providing services, they are the life & blood of Alephium & the reasons we grind everyday!"
       image: ../images/sprout.svg
       items:
         - title: 'Sesame Wallet'
@@ -170,7 +170,7 @@ ecosystemSection:
           logo: ''
           url:  https://woolypooly.com/en/coin/alph
     - title: Exchanges
-      description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+      description: "Exchanges are vital to our users, miners and backers. Find our trading pairs there!"
       items:
         - title: 'Gate.io'
           logo: '../images/logos/gate-io.svg'
