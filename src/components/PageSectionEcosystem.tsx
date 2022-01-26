@@ -41,10 +41,10 @@ let PageSectionEcosystem = ({ className }: { className?: string }) => {
                 <SubsectionTextHeader title={title} subtitle={description} />
                 <SubsectionItems>
                   {items &&
-                    items.map(({ title, logo, url }) => (
-                      <SubsectionItem key={title}>
-                        {url ? (
-                          <SimpleLink url={url} text={title} newTab>
+                    items.map(({ title, logo, url }) =>
+                      url ? (
+                        <SimpleLink url={url} text={title} newTab>
+                          <SubsectionItem key={title}>
                             {logo ? (
                               <>
                                 <SubsectionItemLogo src={logo.publicURL} alt={title} />
@@ -53,12 +53,14 @@ let PageSectionEcosystem = ({ className }: { className?: string }) => {
                             ) : (
                               <SubsectionItemTitle>{title}</SubsectionItemTitle>
                             )}
-                          </SimpleLink>
-                        ) : (
+                          </SubsectionItem>
+                        </SimpleLink>
+                      ) : (
+                        <SubsectionItem key={title}>
                           <SubsectionItemTitle>{title}</SubsectionItemTitle>
-                        )}
-                      </SubsectionItem>
-                    ))}
+                        </SubsectionItem>
+                      )
+                    )}
                 </SubsectionItems>
               </SubsectionTextContent>
             </Subsection>
@@ -141,6 +143,7 @@ const SubsectionItems = styled.div`
 
 const SubsectionItemTitle = styled.div`
   font-weight: var(--fontWeight-bold);
+  display: flex;
 `
 
 const SubsectionItemTitleOnHover = styled(SubsectionItemTitle)`
@@ -161,10 +164,10 @@ const SubsectionItem = styled.div`
   font-size: 13px;
   border: 1px solid ${({ theme }) => theme.bgSurface};
 
-  > a {
+  ${SubsectionItemTitleOnHover},
+  ${SubsectionItemTitle} {
     width: 100%;
     height: 100%;
-    display: flex;
     align-items: center;
     justify-content: center;
   }
@@ -180,7 +183,7 @@ const SubsectionItem = styled.div`
     }
 
     ${SubsectionItemTitleOnHover} {
-      display: block;
+      display: flex;
     }
   }
 `
