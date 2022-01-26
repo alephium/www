@@ -124,6 +124,57 @@ usabilitySection:
       altText: Wallet security check screen
     - src: ../images/wallet-ready.png
       altText: Wallet everything is ready screen
+ecosystemSection:
+  title: Ecosystem
+  subtitle: Growing fast
+  subsections:
+    - title: Partners
+      description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+      items:
+        - title: 'Leax'
+          logo: '../images/logos/leax.svg'
+          url: https://www.leax.ch/
+        - title: 'UTXO Alliance'
+          logo: '../images/logos/utxo-alliance.svg'
+          url: https://utxo-alliance.org/
+        - title: 'Bitcoin Association Switzerland'
+          logo: '../images/logos/bas.png'
+          url: https://www.bitcoinassociation.ch/
+    - title: Backers
+      description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+      image: ../images/award.svg
+      items:
+        - title: 'Alphemy Capital'
+          logo: '../images/logos/alphemy-capital.svg'
+          url: https://alphemy.capital/
+        - title: 'White Paper Capital'
+          logo: '../images/logos/white-paper-capital.svg'
+          url: https://www.whitepapercapital.com/
+        - title: 'Archery Fund'
+          url: https://archery.fund/
+        - title: '80+ Private Individuals'
+    - title: Miners, dApps & Community Projects
+      description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+      image: ../images/sprout.svg
+      items:
+        - title: 'Sesame Wallet'
+          logo: '../images/logos/sesame-wallet.svg'
+          url: https://sesame-wallet.io/
+        - title: 'MetaPool'
+          logo: ''
+          url: https://www.metapool.tech/dashboard
+        - title: 'Devgent'
+          logo: ''
+          url: https://pool.devgent.net/
+        - title: 'WoolyPooly'
+          logo: ''
+          url:  https://woolypooly.com/en/coin/alph
+    - title: Exchanges
+      description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+      items:
+        - title: 'Gate.io'
+          logo: '../images/logos/gate-io.png'
+          url: https://www.gate.io/trade/ALPH_USDT
 startNowSection:
   title: Start now
   subtitle: Build and contribute

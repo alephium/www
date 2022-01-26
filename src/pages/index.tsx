@@ -9,6 +9,7 @@ import PageSectionHero, { PageSectionHeroContentType } from '../components/PageS
 import PageSectionIntro, { PageSectionIntroContentType } from '../components/PageSectionIntro'
 import PageSectionTechnology, { PageSectionTechnologyContentType } from '../components/PageSectionTechnology'
 import PageSectionUsability, { PageSectionUsabilityContentType } from '../components/PageSectionUsability'
+import PageSectionEcosystem from '../components/PageSectionEcosystem'
 import PageSectionStartNow, { PageSectionStartNowContentType } from '../components/PageSectionStartNow'
 import PageSectionFollowUs, { PageSectionFollowUsContentType } from '../components/PageSectionFollowUs'
 import Footer, { FooterContentType } from '../components/Footer'
@@ -48,6 +49,11 @@ const IndexPage = (props: IndexPageProps) => {
         </ThemeProvider>
         <ThemeProvider theme={lightTheme}>
           <PageSectionUsability content={pageContent.usabilitySection} />
+        </ThemeProvider>
+        <ThemeProvider theme={darkTheme}>
+          <PageSectionEcosystem />
+        </ThemeProvider>
+        <ThemeProvider theme={lightTheme}>
           <PageSectionStartNow content={pageContent.startNowSection} />
           <PageSectionFollowUs content={pageContent.followUsSection} />
         </ThemeProvider>
