@@ -145,7 +145,8 @@ const SubsectionItem = styled.div`
   padding: var(--spacing-2);
   box-sizing: border-box;
   border-radius: 9px;
-  font-size: var(--fontSize-14);
+  font-size: 13px;
+  border: 1px solid ${({ theme }) => theme.bgSurface};
 
   > a {
     width: 100%;
