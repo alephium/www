@@ -137,12 +137,18 @@ const SubsectionItem = styled.div`
   height: 100px;
   display: flex;
   align-items: center;
+  background-color: ${({ theme }) => theme.bgSecondary};
+  padding: var(--spacing-2);
+  box-sizing: border-box;
+  border-radius: 9px;
+  font-size: var(--fontSize-14);
 
   > a {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   img {
