@@ -44,7 +44,7 @@ let PageSectionEcosystem = ({ className }: { className?: string }) => {
                     items.map(({ title, logo, url }) => (
                       <SubsectionItem key={title}>
                         {url ? (
-                          <SimpleLink url={url} text={title}>
+                          <SimpleLink url={url} text={title} newTab>
                             {logo ? (
                               <img src={logo.publicURL} alt={title} />
                             ) : (
