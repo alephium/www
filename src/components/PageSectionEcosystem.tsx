@@ -88,12 +88,6 @@ const Subsections = styled.div`
 
 const SubsectionImage = styled.div`
   flex-grow: 1;
-
-  > img {
-    @media ${deviceBreakPoints.ipad} {
-      width: var(--width-82);
-    }
-  }
 `
 
 const SubsectionTextContent = styled.div`
@@ -109,10 +103,20 @@ const Subsection = styled.div`
   align-items: center;
   gap: var(--spacing-2);
 
+  @media ${deviceBreakPoints.ipad} {
+      flex-direction: column;
+      gap: var(--spacing-4);
+    }
+  }
+
   &:nth-child(odd) {
     ${SubsectionImage} {
       order: 2;
       text-align: right;
+
+      @media ${deviceBreakPoints.ipad} {
+        order: 0;
+      }
     }
   }
 
