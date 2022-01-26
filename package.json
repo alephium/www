@@ -8,7 +8,7 @@
     "gatsby"
   ],
   "engines": {
-    "node": ">=14.17.0"
+    "node": ">=14"
   },
   "scripts": {
     "develop": "gatsby develop",
