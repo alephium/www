@@ -19,7 +19,7 @@ introSection:
         rewards.
       link:
         text: Documentation
-        url: https://wiki.alephium.org/GPU-Miner-Guide.html
+        url: https://wiki.alephium.org/Solo-Mining-Guide.html
         newTab: true
     - title: Contribute
       description: Start testing and report issues or contribute to the Alephium codebase.
@@ -137,7 +137,7 @@ startNowSection:
         receive ALPH block rewards. Currently, we support CPU and GPU mining and
         will soon offer FPGA mining support
       link:
-        url: https://wiki.alephium.org/GPU-Miner-Guide.html
+        url: https://wiki.alephium.org/Solo-Mining-Guide.html
         text: Instructions
         newTab: true
     - title: Build your own
