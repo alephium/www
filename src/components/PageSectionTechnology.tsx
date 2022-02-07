@@ -17,10 +17,10 @@ import ModalSmartContract from './ModalSmartContract'
 import ModalVms from './ModalVms'
 import { ArrowedLinkProps } from './ArrowedLink'
 
-import BlockflowImage from './styleable-images/ImageBlockFlow'
-import PoLWImage from './styleable-images/ImagePoLW'
-import SmartContractImage from './styleable-images/ImageSmartContract'
-import VmsImage from './styleable-images/ImageVMs'
+import BlockflowImageSrc from '../images/blockflow.svg'
+import PoLWImageSrc from '../images/polw-background.svg'
+import SmartContractImageSrc from '../images/smart-contract.svg'
+import VmsImageSrc from '../images/vms.svg'
 import StackImage from '../images/svgs/stack.svg'
 import LeafImage from '../images/svgs/leaf.svg'
 import VmDotsImage from '../images/svgs/vm-dots.svg'
@@ -85,7 +85,7 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
         <PageSectionContainerStyled>
           <Columns {...columnsProps}>
             <CenteredColumn>
-              <BlockflowImageStyled />
+              <BlockflowImage src={BlockflowImageSrc} alt="Blockflow" />
             </CenteredColumn>
             <Column>
               <SectionTextTeaser {...blockFlowSectionContent} IconComponent={StackImage} />
@@ -94,7 +94,7 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
         </PageSectionContainerStyled>
       </section>
       <ProofOfLessWorkSubsection>
-        <PolwBackgroundImageStyled />
+        <PolwBackgroundImage src={PoLWImageSrc} alt="Proof of Less Work" />
         <PageSectionContainer>
           <Columns {...columnsProps}>
             <Column>
@@ -108,7 +108,7 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
         <PageSectionContainer>
           <Columns {...columnsProps}>
             <CenteredColumn>
-              <SmartContractImageStyled />
+              <SmartContractImage src={SmartContractImageSrc} alt="Smart contract" />
             </CenteredColumn>
             <Column>
               <SectionTextTeaser {...smartContractSectionContent} IconComponent={StackImage} />
@@ -120,7 +120,7 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
         <PageSectionContainer>
           <Columns {...columnsProps}>
             <CenteredColumn>
-              <VmsImageStyled />
+              <VmsImage src={VmsImageSrc} alt="VMs" />
             </CenteredColumn>
             <Column>
               <SectionTextTeaser {...vmsSectionContent} IconComponent={VmDotsImage} />
@@ -219,7 +219,7 @@ const SubsectionTextHeaderStyled = styled(SubsectionTextHeader)`
   margin-bottom: var(--spacing-10);
 `
 
-const BlockflowImageStyled = styled(BlockflowImage)`
+const BlockflowImage = styled.img`
   width: 100%;
   max-width: var(--width-368);
   height: 310px;
@@ -253,7 +253,7 @@ const PageSectionContainerStyled = styled(PageSectionContainer)`
   }
 `
 
-const PolwBackgroundImageStyled = styled(PoLWImage)`
+const PolwBackgroundImage = styled.img`
   position: absolute;
   right: 0;
   bottom: 0;
@@ -266,7 +266,7 @@ const PolwBackgroundImageStyled = styled(PoLWImage)`
   }
 `
 
-const SmartContractImageStyled = styled(SmartContractImage)`
+const SmartContractImage = styled.img`
   position: absolute;
   top: calc(-1 * var(--spacing-20));
   left: 0;
@@ -280,7 +280,7 @@ const SmartContractImageStyled = styled(SmartContractImage)`
   }
 `
 
-const VmsImageStyled = styled(VmsImage)`
+const VmsImage = styled.img`
   max-width: var(--width-368);
   width: 100%;
 

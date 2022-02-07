@@ -12,8 +12,8 @@ import { ArrowedLinkProps } from './ArrowedLink'
 import Zoomer from './Zoomer'
 import ResponsiveImage, { ImageProps } from './ResponsiveImage'
 
-import BirdsImage from './styleable-images/ImageBirds'
-import FooterImage from './styleable-images/ImageYellowMountains'
+import BirdsImageSrc from '../images/birds.svg'
+import FooterImageSrc from '../images/yellow-mountains.svg'
 
 export interface PageSectionUsabilityContentType {
   title: string
@@ -49,9 +49,9 @@ let PageSectionUsability: FC<PageSectionUsabilityProps> = ({ className, content 
       </ImagesColumns>
     </PageSectionContainerStyled>
     <FooterImageContainer>
-      <FooterImageStyled />
+      <FooterImage src={FooterImageSrc} alt="Mountains" />
     </FooterImageContainer>
-    <BirdsImageStyled />
+    <BirdsImage src={BirdsImageSrc} alt="Birds" />
   </section>
 )
 
@@ -86,7 +86,7 @@ const TextSnippetStyled = styled(TextSnippet)`
   color: ${({ theme }) => theme.textTertiary};
 `
 
-const BirdsImageStyled = styled(BirdsImage)`
+const BirdsImage = styled.img`
   position: absolute;
   top: var(--spacing-24);
   height: auto;
@@ -108,7 +108,7 @@ const FooterImageContainer = styled.div`
   text-align: center;
 `
 
-const FooterImageStyled = styled(FooterImage)`
+const FooterImage = styled.img`
   @media ${deviceBreakPoints.mobile} {
     width: 100%;
   }

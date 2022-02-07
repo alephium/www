@@ -4,7 +4,6 @@ import styled, { ThemeProvider } from 'styled-components'
 import { darkTheme, lightTheme } from '../styles/themes'
 import { deviceBreakPoints } from '../styles/global-style'
 
-import PageSectionContainer from './PageSectionContainer'
 import NavigationMenu from './NavigationMenu'
 import TextSnippet from './TextSnippet'
 import Paginator from './Paginator'

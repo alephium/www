@@ -8,7 +8,7 @@ import PageSectionContainer from './PageSectionContainer'
 import SubsectionTextHeader from './SubsectionTextHeader'
 import SimpleLink from './SimpleLink'
 
-import NetworkImage from './styleable-images/ImageNetwork'
+import NetworkImageSrc from '../images/network.svg'
 
 type SubsectionType = {
   title: string
@@ -30,7 +30,7 @@ let PageSectionEcosystem = ({ className }: { className?: string }) => {
 
   return (
     <section className={className}>
-      <NetworkImageStyled />
+      <NetworkImage src={NetworkImageSrc} alt="Network image" />
       <PageSectionContainer>
         <SectionTextHeader title={title} subtitle={subtitle} bigSubtitle bigText />
         <Subsections>
@@ -77,7 +77,7 @@ PageSectionEcosystem = styled(PageSectionEcosystem)`
   position: relative;
 `
 
-const NetworkImageStyled = styled(NetworkImage)`
+const NetworkImage = styled.img`
   position: absolute;
   right: 0;
   top: var(--spacing-6);
