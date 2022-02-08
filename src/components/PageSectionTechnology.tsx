@@ -94,7 +94,9 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
         </PageSectionContainerStyled>
       </section>
       <ProofOfLessWorkSubsection>
-        <PolwBackgroundImage src={PoLWImageSrc} alt="Proof of Less Work" />
+        <CenteredColumn>
+          <PolwBackgroundImage src={PoLWImageSrc} alt="Proof of Less Work" />
+        </CenteredColumn>
         <PageSectionContainer>
           <Columns {...columnsProps}>
             <Column>
@@ -118,13 +120,13 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
       </SmartContractSubsection>
       <VmsSubsection>
         <PageSectionContainer>
-          <Columns {...columnsProps}>
-            <CenteredColumn>
-              <VmsImage src={VmsImageSrc} alt="VMs" />
-            </CenteredColumn>
+          <Columns {...columnsProps} reverse>
             <Column>
               <SectionTextTeaser {...vmsSectionContent} IconComponent={VmDotsImage} />
             </Column>
+            <CenteredColumn>
+              <VmsImage src={VmsImageSrc} alt="VMs" />
+            </CenteredColumn>
           </Columns>
         </PageSectionContainer>
       </VmsSubsection>
@@ -220,12 +222,10 @@ const SubsectionTextHeaderStyled = styled(SubsectionTextHeader)`
 `
 
 const BlockflowImage = styled.img`
-  width: 100%;
-  max-width: var(--width-368);
-  height: 310px;
+  width: 70%;
 
   @media ${deviceBreakPoints.mobile} {
-    height: 250px;
+    width: 50%;
   }
 `
 
@@ -233,7 +233,6 @@ const SectionTextHeaderStyled = styled(SectionTextHeader)`
   margin-bottom: var(--spacing-20);
 
   @media ${deviceBreakPoints.mobile} {
-    text-align: left;
     max-width: var(--page-width);
     margin: 0 auto var(--spacing-10);
     padding: 0 var(--spacing-4);
@@ -243,10 +242,11 @@ const SectionTextHeaderStyled = styled(SectionTextHeader)`
 const CenteredColumn = styled(Column)`
   display: flex;
   justify-content: center;
+  align-items: center;
 `
 
 const PageSectionContainerStyled = styled(PageSectionContainer)`
-  padding-bottom: var(--spacing-28);
+  padding-bottom: var(--spacing-20);
 
   @media ${deviceBreakPoints.mobile} {
     padding-bottom: var(--spacing-10);
@@ -257,62 +257,58 @@ const PolwBackgroundImage = styled.img`
   position: absolute;
   right: 0;
   bottom: 0;
-  top: var(--spacing-8);
   max-width: var(--width-584);
   height: auto;
 
   @media ${deviceBreakPoints.mobile} {
-    filter: blur(3px);
+    position: relative;
+    transform: rotate(90deg) scaleY(-1) translateX(-20%);
+    width: 30%;
   }
 `
 
 const SmartContractImage = styled.img`
-  position: absolute;
-  top: calc(-1 * var(--spacing-20));
-  left: 0;
-  max-width: var(--width-368);
-  width: 100%;
+  width: 70%;
 
   @media ${deviceBreakPoints.mobile} {
-    height: 300px;
-    position: relative;
-    top: 0;
+    width: 50%;
+    max-width: var(--width-368);
   }
 `
 
 const VmsImage = styled.img`
-  max-width: var(--width-368);
-  width: 100%;
+  width: 70%;
 
   @media ${deviceBreakPoints.mobile} {
-    height: 240px;
+    width: 50%;
+    max-width: var(--width-368);
   }
 `
 
 const ProofOfLessWorkSubsection = styled.section`
-  background-color: ${({ theme }) => theme.bgTertiary};
-  padding: var(--spacing-35) 0 var(--spacing-28);
+  background-color: ${({ theme }) => theme.bgPrimary};
+  padding: var(--spacing-20) 0;
   position: relative;
   overflow: hidden;
 
   @media ${deviceBreakPoints.mobile} {
-    padding: var(--spacing-10) 0 var(--spacing-5);
+    padding: var(--spacing-5) 0 var(--spacing-5);
   }
 `
 
 const VmsSubsection = styled.section`
-  background-color: ${({ theme }) => theme.bgTertiary};
-  padding: var(--spacing-30) 0;
+  background-color: ${({ theme }) => theme.bgPrimary};
+  padding: var(--spacing-20) 0;
   position: relative;
 
   @media ${deviceBreakPoints.mobile} {
-    padding: var(--spacing-10) 0 var(--spacing-12);
+    padding: var(--spacing-5) 0 var(--spacing-12);
   }
 `
 
 const SmartContractSubsection = styled.section`
-  background-color: ${({ theme }) => theme.bgSecondary};
-  padding: var(--spacing-28) 0 var(--spacing-30);
+  background-color: ${({ theme }) => theme.bgPrimary};
+  padding: var(--spacing-20) 0;
   position: relative;
 
   @media ${deviceBreakPoints.mobile} {
@@ -326,7 +322,7 @@ const NumbersSection = styled.section`
 `
 
 PageSectionTechnology = styled(PageSectionTechnology)`
-  background-color: ${({ theme }) => theme.bgSecondary};
+  background-color: ${({ theme }) => theme.bgPrimary};
   padding-top: var(--spacing-16);
 `
 

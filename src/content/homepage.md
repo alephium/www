@@ -6,7 +6,7 @@ headerSection:
     and improving on Bitcoin core technologies, Proof of Work and UTXO. It delivers 
     a highly performant, secure DeFi & dApps platform with enhanced energy efficiency."
   light:
-    title: Accessibility & Usability first
+    title: Accessibility & Usability
     subtitle: From its technical design to its interfaces, 
       Alephium has been created to address the challenges of accessibility, 
       scalability, and security encountered by decentralized applications today.

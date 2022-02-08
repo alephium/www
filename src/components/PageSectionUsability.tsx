@@ -13,7 +13,7 @@ import Zoomer from './Zoomer'
 import ResponsiveImage, { ImageProps } from './ResponsiveImage'
 
 import BirdsImageSrc from '../images/birds.svg'
-import FooterImageSrc from '../images/yellow-mountains.svg'
+import FooterImageSrc from '../images/stroke-mountains.svg'
 
 export interface PageSectionUsabilityContentType {
   title: string
