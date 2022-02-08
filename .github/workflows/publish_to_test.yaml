@@ -2,7 +2,7 @@ name: Publish To Test
 
 on:
   workflow_dispatch:
-  
+
 env:
   AWS_ACCESS_KEY_ID: ${{ secrets.TEST_AWS_ACCESS_KEY_ID }}
   AWS_SECRET_ACCESS_KEY: ${{ secrets.TEST_AWS_SECRET_ACCESS_KEY }}
@@ -14,18 +14,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-    - name: Setup node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: 16.4
+      - name: Setup node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.4
 
-    - name: Build website
-      run: npm install gatsby-cli && npm run build
+      - name: Build website
+        run: npm install gatsby-cli && npm run build
 
-    - name: Sync files to S3
-      run: aws s3 sync ./public/ s3://$AWS_BUCKET_NAME --acl public-read --delete --cache-control max-age=604800
+      - name: Sync files to S3
+        run: aws s3 sync ./public/ s3://$AWS_BUCKET_NAME --acl public-read --delete --cache-control max-age=604800
 
-    - name: Notify CloudFront about the changes
-      run: aws cloudfront create-invalidation --distribution-id ${AWS_DISTRIBUTION_ID} --paths "/*"
+      - name: Notify CloudFront about the changes
+        run: aws cloudfront create-invalidation --distribution-id ${AWS_DISTRIBUTION_ID} --paths "/*"
