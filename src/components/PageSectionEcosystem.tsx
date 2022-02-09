@@ -9,6 +9,7 @@ import SubsectionTextHeader from './SubsectionTextHeader'
 import SimpleLink from './SimpleLink'
 
 import NetworkImageSrc from '../images/network.svg'
+import IllustrationColumn from './Columns/IllustrationColumn'
 
 type SubsectionType = {
   title: string
@@ -30,13 +31,12 @@ let PageSectionEcosystem = ({ className }: { className?: string }) => {
 
   return (
     <section className={className}>
-      <NetworkImage src={NetworkImageSrc} alt="Network image" />
       <PageSectionContainer>
         <SectionTextHeader title={title} subtitle={subtitle} bigSubtitle bigText />
         <Subsections>
           {subsections.map(({ title, description, image, items }: SubsectionType) => (
             <Subsection key={title}>
-              <SubsectionImage>{image && <img src={image.publicURL} alt={title} />}</SubsectionImage>
+              <SubsectionImageContainer>{image && <img src={image.publicURL} alt={title} />}</SubsectionImageContainer>
               <SubsectionTextContent>
                 <SubsectionTextHeader title={title} subtitle={description} />
                 <SubsectionItems>
@@ -47,7 +47,9 @@ let PageSectionEcosystem = ({ className }: { className?: string }) => {
                           <SubsectionItem key={title}>
                             {logo ? (
                               <>
-                                <SubsectionItemLogo src={logo.publicURL} alt={title} />
+                                <IllustrationColumn>
+                                  <SubsectionItemLogo src={logo.publicURL} alt={title} />
+                                </IllustrationColumn>
                                 <SubsectionItemTitleOnHover>{title}</SubsectionItemTitleOnHover>
                               </>
                             ) : (
@@ -77,22 +79,16 @@ PageSectionEcosystem = styled(PageSectionEcosystem)`
   position: relative;
 `
 
-const NetworkImage = styled.img`
-  position: absolute;
-  right: 0;
-  top: var(--spacing-6);
-
-  @media ${deviceBreakPoints.ipad} {
-    width: 50%;
-  }
-`
-
 const Subsections = styled.div`
   margin-top: var(--spacing-20);
 `
 
-const SubsectionImage = styled.div`
+const SubsectionImageContainer = styled.div`
   flex-grow: 1;
+
+  img {
+    width: 70%;
+  }
 `
 
 const SubsectionTextContent = styled.div`
@@ -115,7 +111,7 @@ const Subsection = styled.div`
   }
 
   &:nth-child(odd) {
-    ${SubsectionImage} {
+    ${SubsectionImageContainer} {
       order: 2;
       text-align: right;
 

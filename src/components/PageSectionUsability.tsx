@@ -6,7 +6,7 @@ import { deviceBreakPoints } from '../styles/global-style'
 import SectionTextHeader from './SectionTextHeader'
 import PageSectionContainer from './PageSectionContainer'
 import Button from './Button'
-import Columns from './Columns'
+import Columns from './Columns/Columns'
 import TextSnippet from './TextSnippet'
 import { ArrowedLinkProps } from './ArrowedLink'
 import Zoomer from './Zoomer'
@@ -109,8 +109,10 @@ const FooterImageContainer = styled.div`
 `
 
 const FooterImage = styled.img`
+  width: 50%;
+  max-width: var(--width-584);
   @media ${deviceBreakPoints.mobile} {
-    width: 100%;
+    width: 70%;
   }
 `
 

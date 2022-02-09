@@ -1,10 +1,31 @@
 import { createGlobalStyle } from 'styled-components'
 import normalize from 'styled-normalize'
 
+export const deviceSizes = {
+  smallMobile: 528,
+  ipad: 768,
+  mobile: 1024,
+  desktop: 1920
+}
+
+export const deviceBreakPoints = {
+  smallMobile: `(max-width: ${deviceSizes.smallMobile}px)`,
+  ipad: `(max-width: ${deviceSizes.ipad}px)`,
+  mobile: `(max-width: ${deviceSizes.mobile}px)`,
+  desktop: `(max-width: ${deviceSizes.desktop}px)`
+}
+
 const GlobalStyle = createGlobalStyle`
   ${normalize}
 
   :root {
+
+    font-size: 15px;
+
+    @media ${deviceBreakPoints.mobile} {
+      font-size: 12px;
+    }
+
     --page-width: 72.5rem;
     --page-width-shrinked: 68rem;
 
@@ -58,6 +79,7 @@ const GlobalStyle = createGlobalStyle`
     --spacing-35: 17.5rem;   // 280pt
 
     --radius: 1rem;
+    --radius-small: 0.4rem;
     --radius-full: 9999px;
 
     --fontFamily-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
@@ -95,7 +117,7 @@ const GlobalStyle = createGlobalStyle`
     --color-black: #000;
     --color-salmon: #ff5d51;
     --color-blue: #4899ff;
-    --color-blue-100: #5981f3;;
+    --color-blue-100: #4D6DE0;;
     --color-blue-200: #1200da;
     --color-brown: #393535;
 
@@ -119,19 +141,5 @@ const GlobalStyle = createGlobalStyle`
     overflow: hidden;
   }
 `
-
-export const deviceSizes = {
-  smallMobile: 528,
-  ipad: 768,
-  mobile: 1024,
-  desktop: 1920
-}
-
-export const deviceBreakPoints = {
-  smallMobile: `(max-width: ${deviceSizes.smallMobile}px)`,
-  ipad: `(max-width: ${deviceSizes.ipad}px)`,
-  mobile: `(max-width: ${deviceSizes.mobile}px)`,
-  desktop: `(max-width: ${deviceSizes.desktop}px)`
-}
 
 export default GlobalStyle

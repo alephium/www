@@ -130,6 +130,7 @@ ecosystemSection:
   subsections:
     - title: Partners
       description: "From lawyers to peer blockchains, lobbying & local associations, they make us feel part of a larger ecosystem."
+      image: ../images/network.svg
       items:
         - title: 'Leax'
           logo: '../images/logos/leax.svg'
@@ -171,6 +172,7 @@ ecosystemSection:
           url:  https://woolypooly.com/en/coin/alph
     - title: Exchanges
       description: "Exchanges are vital to our users, miners and backers. Find our trading pairs there!"
+      image: ../images/exchange.svg
       items:
         - title: 'Gate.io'
           logo: '../images/logos/gate-io.svg'

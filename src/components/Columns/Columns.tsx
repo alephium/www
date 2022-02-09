@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import styled from 'styled-components'
 
-import { deviceBreakPoints } from '../styles/global-style'
+import { deviceBreakPoints } from '../../styles/global-style'
 
 interface ColumnsProps {
   className?: string
@@ -18,7 +18,6 @@ Columns = styled(Columns)`
 
   @media ${deviceBreakPoints.mobile} {
     flex-direction: ${(props) => (props.reverse ? 'column-reverse' : 'column')};
-    text-align: center;
   }
 `
 

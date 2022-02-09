@@ -6,8 +6,8 @@ import { lightTheme } from '../styles/themes'
 
 import PageSectionContainer from './PageSectionContainer'
 import SectionTextHeader from './SectionTextHeader'
-import Columns from './Columns'
-import Column from './Column'
+import Columns from './Columns/Columns'
+import Column from './Columns/Column'
 import SectionTextTeaser from './SectionTextTeaser'
 import SubsectionTextHeader from './SubsectionTextHeader'
 import NumbersInfo from './NumbersInfo'
@@ -24,6 +24,7 @@ import VmsImageSrc from '../images/vms.svg'
 import StackImage from '../images/svgs/stack.svg'
 import LeafImage from '../images/svgs/leaf.svg'
 import VmDotsImage from '../images/svgs/vm-dots.svg'
+import IllustrationColumn from './Columns/IllustrationColumn'
 
 export interface PageSectionTechnologyContentType {
   title: string
@@ -84,9 +85,9 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
       <section>
         <PageSectionContainerStyled>
           <Columns {...columnsProps}>
-            <CenteredColumn>
+            <IllustrationColumn>
               <BlockflowImage src={BlockflowImageSrc} alt="Blockflow" />
-            </CenteredColumn>
+            </IllustrationColumn>
             <Column>
               <SectionTextTeaser {...blockFlowSectionContent} IconComponent={StackImage} />
             </Column>
@@ -94,24 +95,24 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
         </PageSectionContainerStyled>
       </section>
       <ProofOfLessWorkSubsection>
-        <CenteredColumn>
+        <IllustrationColumn>
           <PolwBackgroundImage src={PoLWImageSrc} alt="Proof of Less Work" />
-        </CenteredColumn>
+        </IllustrationColumn>
         <PageSectionContainer>
           <Columns {...columnsProps}>
             <Column>
               <SectionTextTeaser {...polwSectionContent} IconComponent={LeafImage} />
             </Column>
-            <CenteredColumn></CenteredColumn>
+            <Column />
           </Columns>
         </PageSectionContainer>
       </ProofOfLessWorkSubsection>
       <SmartContractSubsection>
         <PageSectionContainer>
           <Columns {...columnsProps}>
-            <CenteredColumn>
+            <IllustrationColumn>
               <SmartContractImage src={SmartContractImageSrc} alt="Smart contract" />
-            </CenteredColumn>
+            </IllustrationColumn>
             <Column>
               <SectionTextTeaser {...smartContractSectionContent} IconComponent={StackImage} />
             </Column>
@@ -124,9 +125,9 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
             <Column>
               <SectionTextTeaser {...vmsSectionContent} IconComponent={VmDotsImage} />
             </Column>
-            <CenteredColumn>
+            <IllustrationColumn>
               <VmsImage src={VmsImageSrc} alt="VMs" />
-            </CenteredColumn>
+            </IllustrationColumn>
           </Columns>
         </PageSectionContainer>
       </VmsSubsection>
@@ -239,12 +240,6 @@ const SectionTextHeaderStyled = styled(SectionTextHeader)`
   }
 `
 
-const CenteredColumn = styled(Column)`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`
-
 const PageSectionContainerStyled = styled(PageSectionContainer)`
   padding-bottom: var(--spacing-20);
 
@@ -272,7 +267,6 @@ const SmartContractImage = styled.img`
 
   @media ${deviceBreakPoints.mobile} {
     width: 50%;
-    max-width: var(--width-368);
   }
 `
 
@@ -281,7 +275,6 @@ const VmsImage = styled.img`
 
   @media ${deviceBreakPoints.mobile} {
     width: 50%;
-    max-width: var(--width-368);
   }
 `
 
