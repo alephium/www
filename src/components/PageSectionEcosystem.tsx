@@ -74,20 +74,25 @@ let PageSectionEcosystem = ({ className }: { className?: string }) => {
 }
 
 PageSectionEcosystem = styled(PageSectionEcosystem)`
-  padding-top: var(--spacing-15);
-  padding-bottom: var(--spacing-14);
+  padding-top: var(--spacing-20);
+  padding-bottom: var(--spacing-20);
   position: relative;
 `
 
 const Subsections = styled.div`
-  margin-top: var(--spacing-20);
+  margin-top: var(--spacing-15);
 `
 
 const SubsectionImageContainer = styled.div`
   flex-grow: 1;
 
+  @media ${deviceBreakPoints.mobile} {
+    display: flex;
+    justify-content: center;
+  }
+
   img {
-    width: 70%;
+    width: 60%;
   }
 `
 
@@ -105,9 +110,9 @@ const Subsection = styled.div`
   gap: var(--spacing-2);
 
   @media ${deviceBreakPoints.ipad} {
-      flex-direction: column;
-      gap: var(--spacing-4);
-    }
+    flex-direction: column;
+    gap: var(--spacing-4);
+    align-items: stretch;
   }
 
   &:nth-child(odd) {
@@ -123,10 +128,6 @@ const Subsection = styled.div`
 
   &:not(:last-child) {
     margin-bottom: var(--spacing-14);
-  }
-
-  @media ${deviceBreakPoints.ipad} {
-    align-items: flex-start;
   }
 `
 

@@ -42,6 +42,7 @@ const CardContainer = styled(Card)`
   position: relative;
   transition: all 0.2s ease;
   flex: 1;
+  border: var(--border-primary-dark);
 
   @media ${deviceBreakPoints.mobile} {
     & + & {

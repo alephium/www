@@ -13,7 +13,6 @@ import Zoomer from './Zoomer'
 import ResponsiveImage, { ImageProps } from './ResponsiveImage'
 
 import BirdsImageSrc from '../images/birds.svg'
-import FooterImageSrc from '../images/stroke-mountains.svg'
 
 export interface PageSectionUsabilityContentType {
   title: string
@@ -48,9 +47,7 @@ let PageSectionUsability: FC<PageSectionUsabilityProps> = ({ className, content 
         })}
       </ImagesColumns>
     </PageSectionContainerStyled>
-    <FooterImageContainer>
-      <FooterImage src={FooterImageSrc} alt="Mountains" />
-    </FooterImageContainer>
+
     <BirdsImage src={BirdsImageSrc} alt="Birds" />
   </section>
 )
@@ -65,6 +62,7 @@ PageSectionUsability = styled(PageSectionUsability)`
 
 const PageSectionContainerStyled = styled(PageSectionContainer)`
   z-index: 1;
+  margin-bottom: var(--spacing-15);
 `
 
 const SectionTextHeaderStyled = styled(SectionTextHeader)`
@@ -88,7 +86,7 @@ const TextSnippetStyled = styled(TextSnippet)`
 
 const BirdsImage = styled.img`
   position: absolute;
-  top: var(--spacing-24);
+  top: 0;
   height: auto;
 `
 

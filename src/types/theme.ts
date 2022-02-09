@@ -15,6 +15,8 @@ declare module 'styled-components' {
     bgTertiary: string
     bgSurface: string
 
+    borderPrimary: string
+
     link: string
     linkAlt: string
 

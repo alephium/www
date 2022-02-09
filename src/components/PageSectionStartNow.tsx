@@ -9,7 +9,7 @@ import PageSectionContainer from './PageSectionContainer'
 import GridCard from './GridCard'
 import { ArrowedLinkProps } from './ArrowedLink'
 
-import Logo from '../images/svgs/logo.svg'
+import Logo from '../images/svgs/logo-dark.svg'
 import ImageMining from './styleable-images/ImageMining'
 import ImageCode from './styleable-images/ImageCode'
 import ImageGreyMountains from './styleable-images/ImageGreyMountains'
@@ -45,7 +45,7 @@ let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className, content })
           <SectionTextHeader title={content.title} subtitle={content.subtitle} bigSubtitle bigText>
             <p>{content.description}</p>
           </SectionTextHeader>
-          <LogoStyled />
+          <Logo />
         </SectionHeader>
         <Grid>
           <ThemeProvider theme={theme === darkTheme ? lightTheme : darkTheme}>
@@ -53,6 +53,7 @@ let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className, content })
               title={firstCard.title}
               subtitle={firstCard.subtitle}
               link={firstCard.link}
+              primaryBackground
               ImageComponent={MiningImageComponent}
             >
               <p>{firstCard.description}</p>
@@ -89,8 +90,8 @@ let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className, content })
 
 PageSectionStartNow = styled(PageSectionStartNow)`
   padding-top: var(--spacing-20);
-  padding-bottom: var(--spacing-28);
-  background-color: ${({ theme }) => theme.bgSecondary};
+  padding-bottom: var(--spacing-20);
+  background-color: ${({ theme }) => theme.bgPrimary};
   color: ${({ theme }) => theme.textPrimary};
 `
 
@@ -174,16 +175,6 @@ const GreyMountainsImageStyled = styled(ImageGreyMountains)`
   height: auto;
   position: absolute;
   bottom: -2px;
-`
-
-const LogoStyled = styled(Logo)`
-  .dark {
-    fill: var(--color-logo-yellow-dark);
-  }
-
-  .light {
-    fill: var(--color-logo-yellow-light);
-  }
 `
 
 export default PageSectionStartNow

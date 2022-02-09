@@ -15,6 +15,8 @@ export const darkTheme: DefaultTheme = {
   bgTertiary: 'var(--color-grey-800)',
   bgSurface: 'var(--color-grey-700)',
 
+  borderPrimary: 'var(--border-primary-dark)',
+
   link: 'var(--color-grey-100)',
   linkAlt: 'var(--color-white)',
 
@@ -33,6 +35,8 @@ export const lightTheme: DefaultTheme = {
   bgSecondary: 'var(--color-grey)',
   bgTertiary: 'var(--color-grey)',
   bgSurface: 'var(--color-white)',
+
+  borderPrimary: 'var(--border-primary-light)',
 
   link: 'var(--color-blue)',
   linkAlt: 'var(--color-black)',

@@ -19,7 +19,6 @@ const GlobalStyle = createGlobalStyle`
   ${normalize}
 
   :root {
-
     font-size: 15px;
 
     @media ${deviceBreakPoints.mobile} {
@@ -125,6 +124,9 @@ const GlobalStyle = createGlobalStyle`
     --color-logo-yellow-dark: rgb(55, 55, 55);
     --color-logo-black-light: rgb(90, 90, 90);
     --color-logo-black-dark: rgb(43, 43, 43);
+
+    --border-primary-dark: 1px solid rgb(255, 255, 255, 0.15);
+    --border-primary-light: 1px solid rgb(0, 0, 0, 0.08);
   }
 
   html {

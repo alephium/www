@@ -17,6 +17,7 @@ import ModalSmartContract from './ModalSmartContract'
 import ModalVms from './ModalVms'
 import { ArrowedLinkProps } from './ArrowedLink'
 
+import BGGradientSrc from '../images/top-gradient.svg'
 import BlockflowImageSrc from '../images/blockflow.svg'
 import PoLWImageSrc from '../images/polw-background.svg'
 import SmartContractImageSrc from '../images/smart-contract.svg'
@@ -213,9 +214,13 @@ const TopGradient = styled.div`
   top: 0;
   right: 0;
   left: 0;
-  height: 3%;
-  background: transparent;
-  background: linear-gradient(180deg, rgba(123, 22, 255, 0.15) 0%, rgba(134, 59, 255, 0) 100%);
+  height: 5%;
+  background-image: url(${BGGradientSrc});
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: top;
+  border-top: var(--border-primary-dark);
 `
 
 const SubsectionTextHeaderStyled = styled(SubsectionTextHeader)`
@@ -310,7 +315,8 @@ const SmartContractSubsection = styled.section`
 `
 
 const NumbersSection = styled.section`
-  background-color: ${({ theme }) => theme.bgTertiary};
+  border-bottom: var(--border-primary-light);
+  background-color: ${({ theme }) => theme.bgPrimary};
   padding: var(--spacing-11) 0;
 `
 
