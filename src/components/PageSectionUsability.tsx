@@ -61,13 +61,23 @@ PageSectionUsability = styled(PageSectionUsability)`
 `
 
 const PageSectionContainerStyled = styled(PageSectionContainer)`
-  z-index: 1;
   margin-bottom: var(--spacing-15);
+  display: flex;
+  flex-direction: column;
+
+  > * {
+    z-index: 1;
+  }
 `
 
 const SectionTextHeaderStyled = styled(SectionTextHeader)`
   margin-bottom: var(--spacing-10);
-  z-index: 1;
+  display: flex;
+  flex-direction: column;
+
+  > * {
+    z-index: 1;
+  }
 `
 
 const CenteredContent = styled.div`
@@ -98,19 +108,6 @@ const ImagesColumns = styled(Columns)`
 
   @media ${deviceBreakPoints.ipad} {
     grid-template-columns: 1fr;
-  }
-`
-
-const FooterImageContainer = styled.div`
-  margin-top: var(--spacing-14);
-  text-align: center;
-`
-
-const FooterImage = styled.img`
-  width: 50%;
-  max-width: var(--width-584);
-  @media ${deviceBreakPoints.mobile} {
-    width: 70%;
   }
 `
 
