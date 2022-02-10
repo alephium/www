@@ -164,9 +164,6 @@ ecosystemSection:
         - title: 'MetaPool'
           logo: ''
           url: https://www.metapool.tech/dashboard
-        - title: 'Devgent'
-          logo: ''
-          url: https://pool.devgent.net/
         - title: 'WoolyPooly'
           logo: ''
           url:  https://woolypooly.com/en/coin/alph
