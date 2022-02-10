@@ -1,11 +1,12 @@
 import { FC } from 'react'
 import styled from 'styled-components'
 
-import { deviceBreakPoints } from '../styles/global-style'
+import { deviceBreakPoints } from '../../styles/global-style'
 
 interface ColumnsProps {
   className?: string
   gap?: string
+  reverse?: boolean
 }
 
 let Columns: FC<ColumnsProps> = ({ className, children }) => <div className={className}>{children}</div>
@@ -16,8 +17,7 @@ Columns = styled(Columns)`
   gap: ${(props) => props.gap || '0'};
 
   @media ${deviceBreakPoints.mobile} {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: ${(props) => (props.reverse ? 'column-reverse' : 'column')};
   }
 `
 

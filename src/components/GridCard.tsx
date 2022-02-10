@@ -58,6 +58,7 @@ let GridCard: FC<GridCardProps> = ({
 GridCard = styled(GridCard)`
   position: relative;
   overflow: hidden;
+  border: var(--border-primary-light);
 
   ${({ link }) =>
     link &&

@@ -6,7 +6,7 @@ headerSection:
     and improving on Bitcoin core technologies, Proof of Work and UTXO. It delivers 
     a highly performant, secure DeFi & dApps platform with enhanced energy efficiency."
   light:
-    title: Accessibility & Usability first
+    title: Accessibility & Usability
     subtitle: From its technical design to its interfaces, 
       Alephium has been created to address the challenges of accessibility, 
       scalability, and security encountered by decentralized applications today.
@@ -124,6 +124,56 @@ usabilitySection:
       altText: Wallet security check screen
     - src: ../images/wallet-ready.png
       altText: Wallet everything is ready screen
+ecosystemSection:
+  title: Ecosystem
+  subtitle: Growing fast
+  subsections:
+    - title: Partners
+      description: "From lawyers to peer blockchains, lobbying & local associations, they make us feel part of a larger ecosystem."
+      image: ../images/network.svg
+      items:
+        - title: 'Leax'
+          logo: '../images/logos/leax.svg'
+          url: https://www.leax.ch/
+        - title: 'UTXO Alliance'
+          logo: '../images/svgs/utxo-aliance-logo-white.svg'
+          url: https://utxo-alliance.org/
+        - title: 'Bitcoin Association Switzerland'
+          logo: '../images/svgs/bas-logo-white.svg'
+          url: https://www.bitcoinassociation.ch/
+    - title: Backers
+      description: "They provided us with early backing, funding, strategic advice, introductions and so much more!"
+      image: ../images/award.svg
+      items:
+        - title: 'Alphemy Capital'
+          logo: '../images/logos/alphemy-capital-icon.svg'
+          url: https://alphemy.capital/
+        - title: 'White Paper Capital'
+          logo: '../images/logos/white-paper-capital-icon.svg'
+          url: https://www.whitepapercapital.com/
+        - title: 'Archery Fund'
+          url: https://archery.fund/
+        - title: '80+ Private Individuals'
+    - title: Miners, dApps & Community Projects
+      description: "Building on top, around or below what we do, securing the network or providing services, they are the life & blood of Alephium & the reasons we grind everyday!"
+      image: ../images/sprout.svg
+      items:
+        - title: 'Sesame Wallet'
+          logo: '../images/logos/sesame-wallet-icon.svg'
+          url: https://sesame-wallet.io/
+        - title: 'MetaPool'
+          logo: ''
+          url: https://www.metapool.tech/dashboard
+        - title: 'WoolyPooly'
+          logo: ''
+          url:  https://woolypooly.com/en/coin/alph
+    - title: Exchanges
+      description: "Exchanges are vital to our users, miners and backers. Find our trading pairs there!"
+      image: ../images/exchange.svg
+      items:
+        - title: 'Gate.io'
+          logo: '../images/logos/gate-io.svg'
+          url: https://www.gate.io/trade/ALPH_USDT
 startNowSection:
   title: Start now
   subtitle: Build and contribute

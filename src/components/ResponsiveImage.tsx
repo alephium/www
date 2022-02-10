@@ -34,9 +34,8 @@ let ResponsiveImage: FC<ResponsiveImageProps> = ({ image, className }) => (
 
 ResponsiveImage = styled(ResponsiveImage)`
   max-width: ${({ image }) => image.src.childImageSharp.gatsbyImageData.width}px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
   border-radius: 7px;
-  border: 1px solid ${({ theme }) => theme.bgTertiary};
+  border: ${({ theme }) => theme.borderPrimary};
   overflow: hidden;
 
   img {

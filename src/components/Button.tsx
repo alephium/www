@@ -31,7 +31,7 @@ let Button: FC<ButtonProps> = ({ onClick, className, children, url, newTab }) =>
 Button = styled(Button)`
   background-color: var(--color-blue-100);
   color: var(--color-white);
-  border-radius: var(--radius-full);
+  border-radius: var(--radius-small);
   padding: var(--spacing-2) var(--spacing-3);
   border: 0 solid;
   text-decoration: none;

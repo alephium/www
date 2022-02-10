@@ -6,8 +6,8 @@ import { lightTheme } from '../styles/themes'
 
 import PageSectionContainer from './PageSectionContainer'
 import SectionTextHeader from './SectionTextHeader'
-import Columns from './Columns'
-import Column from './Column'
+import Columns from './Columns/Columns'
+import Column from './Columns/Column'
 import SectionTextTeaser from './SectionTextTeaser'
 import SubsectionTextHeader from './SubsectionTextHeader'
 import NumbersInfo from './NumbersInfo'
@@ -17,13 +17,15 @@ import ModalSmartContract from './ModalSmartContract'
 import ModalVms from './ModalVms'
 import { ArrowedLinkProps } from './ArrowedLink'
 
-import BlockflowImage from './styleable-images/ImageBlockFlow'
-import PoLWImage from './styleable-images/ImagePoLW'
-import SmartContractImage from './styleable-images/ImageSmartContract'
-import VmsImage from './styleable-images/ImageVMs'
+import BGGradientSrc from '../images/top-gradient.svg'
+import BlockflowImageSrc from '../images/blockflow.svg'
+import PoLWImageSrc from '../images/polw-background.svg'
+import SmartContractImageSrc from '../images/smart-contract.svg'
+import VmsImageSrc from '../images/vms.svg'
 import StackImage from '../images/svgs/stack.svg'
 import LeafImage from '../images/svgs/leaf.svg'
 import VmDotsImage from '../images/svgs/vm-dots.svg'
+import IllustrationColumn from './Columns/IllustrationColumn'
 
 export interface PageSectionTechnologyContentType {
   title: string
@@ -84,9 +86,9 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
       <section>
         <PageSectionContainerStyled>
           <Columns {...columnsProps}>
-            <CenteredColumn>
-              <BlockflowImageStyled />
-            </CenteredColumn>
+            <IllustrationColumn>
+              <BlockflowImage src={BlockflowImageSrc} alt="Blockflow" />
+            </IllustrationColumn>
             <Column>
               <SectionTextTeaser {...blockFlowSectionContent} IconComponent={StackImage} />
             </Column>
@@ -94,22 +96,24 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
         </PageSectionContainerStyled>
       </section>
       <ProofOfLessWorkSubsection>
-        <PolwBackgroundImageStyled />
+        <IllustrationColumn>
+          <PolwBackgroundImage src={PoLWImageSrc} alt="Proof of Less Work" />
+        </IllustrationColumn>
         <PageSectionContainer>
           <Columns {...columnsProps}>
             <Column>
               <SectionTextTeaser {...polwSectionContent} IconComponent={LeafImage} />
             </Column>
-            <CenteredColumn></CenteredColumn>
+            <Column />
           </Columns>
         </PageSectionContainer>
       </ProofOfLessWorkSubsection>
       <SmartContractSubsection>
         <PageSectionContainer>
           <Columns {...columnsProps}>
-            <CenteredColumn>
-              <SmartContractImageStyled />
-            </CenteredColumn>
+            <IllustrationColumn>
+              <SmartContractImage src={SmartContractImageSrc} alt="Smart contract" />
+            </IllustrationColumn>
             <Column>
               <SectionTextTeaser {...smartContractSectionContent} IconComponent={StackImage} />
             </Column>
@@ -118,13 +122,13 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
       </SmartContractSubsection>
       <VmsSubsection>
         <PageSectionContainer>
-          <Columns {...columnsProps}>
-            <CenteredColumn>
-              <VmsImageStyled />
-            </CenteredColumn>
+          <Columns {...columnsProps} reverse>
             <Column>
               <SectionTextTeaser {...vmsSectionContent} IconComponent={VmDotsImage} />
             </Column>
+            <IllustrationColumn>
+              <VmsImage src={VmsImageSrc} alt="VMs" />
+            </IllustrationColumn>
           </Columns>
         </PageSectionContainer>
       </VmsSubsection>
@@ -210,22 +214,24 @@ const TopGradient = styled.div`
   top: 0;
   right: 0;
   left: 0;
-  height: 3%;
-  background: transparent;
-  background: linear-gradient(180deg, rgba(123, 22, 255, 0.15) 0%, rgba(134, 59, 255, 0) 100%);
+  height: 5%;
+  background-image: url(${BGGradientSrc});
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: top;
+  border-top: var(--border-primary-dark);
 `
 
 const SubsectionTextHeaderStyled = styled(SubsectionTextHeader)`
   margin-bottom: var(--spacing-10);
 `
 
-const BlockflowImageStyled = styled(BlockflowImage)`
-  width: 100%;
-  max-width: var(--width-368);
-  height: 310px;
+const BlockflowImage = styled.img`
+  width: 70%;
 
   @media ${deviceBreakPoints.mobile} {
-    height: 250px;
+    width: 50%;
   }
 `
 
@@ -233,86 +239,74 @@ const SectionTextHeaderStyled = styled(SectionTextHeader)`
   margin-bottom: var(--spacing-20);
 
   @media ${deviceBreakPoints.mobile} {
-    text-align: left;
     max-width: var(--page-width);
     margin: 0 auto var(--spacing-10);
     padding: 0 var(--spacing-4);
   }
 `
 
-const CenteredColumn = styled(Column)`
-  display: flex;
-  justify-content: center;
-`
-
 const PageSectionContainerStyled = styled(PageSectionContainer)`
-  padding-bottom: var(--spacing-28);
+  padding-bottom: var(--spacing-20);
 
   @media ${deviceBreakPoints.mobile} {
     padding-bottom: var(--spacing-10);
   }
 `
 
-const PolwBackgroundImageStyled = styled(PoLWImage)`
+const PolwBackgroundImage = styled.img`
   position: absolute;
   right: 0;
   bottom: 0;
-  top: var(--spacing-8);
   max-width: var(--width-584);
   height: auto;
 
   @media ${deviceBreakPoints.mobile} {
-    filter: blur(3px);
-  }
-`
-
-const SmartContractImageStyled = styled(SmartContractImage)`
-  position: absolute;
-  top: calc(-1 * var(--spacing-20));
-  left: 0;
-  max-width: var(--width-368);
-  width: 100%;
-
-  @media ${deviceBreakPoints.mobile} {
-    height: 300px;
     position: relative;
-    top: 0;
+    transform: rotate(90deg) scaleY(-1) translateX(-20%);
+    width: 30%;
   }
 `
 
-const VmsImageStyled = styled(VmsImage)`
-  max-width: var(--width-368);
-  width: 100%;
+const SmartContractImage = styled.img`
+  width: 70%;
 
   @media ${deviceBreakPoints.mobile} {
-    height: 240px;
+    width: 50%;
+  }
+`
+
+const VmsImage = styled.img`
+  width: 70%;
+
+  @media ${deviceBreakPoints.mobile} {
+    width: 50%;
   }
 `
 
 const ProofOfLessWorkSubsection = styled.section`
-  background-color: ${({ theme }) => theme.bgTertiary};
-  padding: var(--spacing-35) 0 var(--spacing-28);
+  background-color: ${({ theme }) => theme.bgPrimary};
+  padding: var(--spacing-20) 0;
   position: relative;
   overflow: hidden;
 
   @media ${deviceBreakPoints.mobile} {
-    padding: var(--spacing-10) 0 var(--spacing-5);
+    padding: var(--spacing-5) 0 var(--spacing-5);
   }
 `
 
 const VmsSubsection = styled.section`
-  background-color: ${({ theme }) => theme.bgTertiary};
-  padding: var(--spacing-30) 0;
+  background-color: ${({ theme }) => theme.bgPrimary};
+  padding: var(--spacing-20) 0;
   position: relative;
 
   @media ${deviceBreakPoints.mobile} {
-    padding: var(--spacing-10) 0 var(--spacing-12);
+    padding: var(--spacing-5) 0 var(--spacing-12);
   }
 `
 
 const SmartContractSubsection = styled.section`
-  background-color: ${({ theme }) => theme.bgSecondary};
-  padding: var(--spacing-28) 0 var(--spacing-30);
+  background-color: ${({ theme }) => theme.bgPrimary};
+  padding: var(--spacing-20) 0;
   position: relative;
 
   @media ${deviceBreakPoints.mobile} {
@@ -321,12 +315,13 @@ const SmartContractSubsection = styled.section`
 `
 
 const NumbersSection = styled.section`
-  background-color: ${({ theme }) => theme.bgTertiary};
+  border-bottom: var(--border-primary-light);
+  background-color: ${({ theme }) => theme.bgPrimary};
   padding: var(--spacing-11) 0;
 `
 
 PageSectionTechnology = styled(PageSectionTechnology)`
-  background-color: ${({ theme }) => theme.bgSecondary};
+  background-color: ${({ theme }) => theme.bgPrimary};
   padding-top: var(--spacing-16);
 `
 

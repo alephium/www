@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg version="1.1" viewBox="0 0 85 23" xmlns="http://www.w3.org/2000/svg">
  <defs>
-  <mask id="a" x="0" y="0.2" width="24.43" height="13.95" maskUnits="userSpaceOnUse">
+  <mask fill="#fff" id="a" x="0" y="0.2" width="24.43" height="13.95" maskUnits="userSpaceOnUse">
    <polygon points="0 0.2 24.43 0.2 24.43 14.15 0 14.15" fill-rule="evenodd"/>
   </mask>
  </defs>
- <g>
+ <g fill="#fff">
   <path d="M56.11,20c0-1.66,1.19-3,3.4-3s3.17,1.35,3.17,2.23v.06h-.54v0c0-.69-.7-1.74-2.61-1.74s-2.85,1-2.85,2.48c0,1.25.81,2.46,2.88,2.46,1.79,0,2.62-.89,2.62-1.74v0h.54v.05c0,1-1,2.23-3.16,2.23-2.53,0-3.45-1.5-3.45-3" fill-rule="evenodd"/>
   <polygon points="64.01 17.14 69.17 17.14 69.17 17.65 64.57 17.65 64.57 19.77 68.3 19.77 68.3 20.24 64.57 20.24 64.57 22.39 69.25 22.39 69.25 22.9 64.01 22.9" fill-rule="evenodd"/>
   <g mask="url(#a)">

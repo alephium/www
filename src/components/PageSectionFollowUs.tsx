@@ -47,7 +47,7 @@ let FollowUs: FC<FollowUsProps> = ({ className, content }) => (
 FollowUs = styled(FollowUs)`
   padding-top: var(--spacing-16);
   padding-bottom: var(--spacing-16);
-  background-color: ${({ theme }) => theme.bgPrimary};
+  background-color: ${({ theme }) => theme.bgSecondary};
   color: ${({ theme }) => theme.textPrimary};
 `
 

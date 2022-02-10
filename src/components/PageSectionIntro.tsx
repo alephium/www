@@ -8,8 +8,8 @@ import ImageMining from './styleable-images/ImageMining'
 import PageSectionContainer from './PageSectionContainer'
 import CardEngagement from './CardEngagement'
 // import Feed from './Feed'
-import Column from './Column'
-import Columns from './Columns'
+import Column from './Columns/Column'
+import Columns from './Columns/Columns'
 import SectionTextHeader from './SectionTextHeader'
 import { ArrowedLinkProps } from './ArrowedLink'
 
@@ -83,6 +83,7 @@ const IntroColumnContent = styled.div`
 `
 
 PageSectionIntro = styled(PageSectionIntro)`
+  border-top: var(--border-primary-dark);
   padding: var(--spacing-16) 0 var(--spacing-28);
 `
 

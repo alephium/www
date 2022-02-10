@@ -4,7 +4,6 @@ import styled, { ThemeProvider } from 'styled-components'
 import { darkTheme, lightTheme } from '../styles/themes'
 import { deviceBreakPoints } from '../styles/global-style'
 
-import PageSectionContainer from './PageSectionContainer'
 import NavigationMenu from './NavigationMenu'
 import TextSnippet from './TextSnippet'
 import Paginator from './Paginator'
@@ -13,8 +12,8 @@ import HeroSection from './Hero/HeroSection'
 import HeroContentWrapper from './Hero/HeroContentWrapper'
 import HeroPageSectionContainer from './Hero/HeroPageSectionContainer'
 
-import LogoWhite from '../images/svgs/logo-white.svg'
-import Logo from '../images/svgs/logo.svg'
+import LogoLight from '../images/svgs/logo-dark.svg'
+import LogoDark from '../images/svgs/logo-light.svg'
 import HeroDarkImage from '../images/hero-dark.svg'
 import HeroLightImage from '../images/hero-light.svg'
 import Arrow from '../images/svgs/arrow-right.svg'
@@ -63,7 +62,7 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
             <HeroContentWrapper>
               <div className="contents">
                 <>
-                  {theme === 'dark' ? <LogoWhite className="logo" /> : <LogoYellow className="logo" />}
+                  {theme === 'dark' ? <LogoDark className="logo" /> : <LogoLight className="logo" />}
                   <h1>{themeContent.title}</h1>
                   <TextSnippetStyled bigText>{themeContent.subtitle}</TextSnippetStyled>
                   <PaginatorStyled
@@ -112,16 +111,6 @@ const PaginatorStyled = styled(Paginator)`
 
   @media ${deviceBreakPoints.smallMobile} {
     margin-top: var(--spacing-5);
-  }
-`
-
-const LogoYellow = styled(Logo)`
-  .dark {
-    fill: var(--color-logo-yellow-dark);
-  }
-
-  .light {
-    fill: var(--color-logo-yellow-light);
   }
 `
 

@@ -6,14 +6,13 @@ import { deviceBreakPoints } from '../styles/global-style'
 import SectionTextHeader from './SectionTextHeader'
 import PageSectionContainer from './PageSectionContainer'
 import Button from './Button'
-import Columns from './Columns'
+import Columns from './Columns/Columns'
 import TextSnippet from './TextSnippet'
 import { ArrowedLinkProps } from './ArrowedLink'
 import Zoomer from './Zoomer'
 import ResponsiveImage, { ImageProps } from './ResponsiveImage'
 
-import BirdsImage from './styleable-images/ImageBirds'
-import YellowMountainsImage from './styleable-images/ImageYellowMountains'
+import BirdsImageSrc from '../images/birds.svg'
 
 export interface PageSectionUsabilityContentType {
   title: string
@@ -48,30 +47,37 @@ let PageSectionUsability: FC<PageSectionUsabilityProps> = ({ className, content 
         })}
       </ImagesColumns>
     </PageSectionContainerStyled>
-    <YellowMountainsImageStyled />
-    <BirdsImageStyled />
+
+    <BirdsImage src={BirdsImageSrc} alt="Birds" />
   </section>
 )
 
 PageSectionUsability = styled(PageSectionUsability)`
   padding-top: var(--spacing-28);
-  padding-bottom: var(--spacing-28);
+  padding-bottom: var(--spacing-10);
   background-color: ${({ theme }) => theme.bgPrimary};
   color: ${({ theme }) => theme.textPrimary};
   position: relative;
-
-  @media ${deviceBreakPoints.mobile} {
-    padding-bottom: 0;
-  }
 `
 
 const PageSectionContainerStyled = styled(PageSectionContainer)`
-  z-index: 1;
+  margin-bottom: var(--spacing-15);
+  display: flex;
+  flex-direction: column;
+
+  > * {
+    z-index: 1;
+  }
 `
 
 const SectionTextHeaderStyled = styled(SectionTextHeader)`
   margin-bottom: var(--spacing-10);
-  z-index: 1;
+  display: flex;
+  flex-direction: column;
+
+  > * {
+    z-index: 1;
+  }
 `
 
 const CenteredContent = styled.div`
@@ -88,9 +94,9 @@ const TextSnippetStyled = styled(TextSnippet)`
   color: ${({ theme }) => theme.textTertiary};
 `
 
-const BirdsImageStyled = styled(BirdsImage)`
+const BirdsImage = styled.img`
   position: absolute;
-  top: var(--spacing-24);
+  top: 0;
   height: auto;
 `
 
@@ -102,24 +108,6 @@ const ImagesColumns = styled(Columns)`
 
   @media ${deviceBreakPoints.ipad} {
     grid-template-columns: 1fr;
-  }
-`
-
-const YellowMountainsImageStyled = styled(YellowMountainsImage)`
-  position: absolute;
-  height: auto;
-  width: auto;
-  bottom: -2px;
-  left: 0;
-  right: 0px;
-
-  @media ${deviceBreakPoints.mobile} {
-    bottom: -152px;
-    background-color: var(--color-white);
-  }
-
-  @media ${deviceBreakPoints.smallMobile} {
-    bottom: -80px;
   }
 `
 
