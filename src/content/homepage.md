@@ -167,6 +167,12 @@ ecosystemSection:
         - title: 'WoolyPooly'
           logo: ''
           url:  https://woolypooly.com/en/coin/alph
+        - title: 'Herominer'
+          logo: '../images/logos/hero-miner-bw.png'
+          url: https://herominers.com/
+        - title: 'EnigmaPool'
+          logo: ''
+          url: https://enigmapool.com/
     - title: Exchanges
       description: "Exchanges are vital to our users, miners and backers. Find our trading pairs there!"
       image: ../images/exchange.svg
