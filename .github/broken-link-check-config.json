@@ -3,6 +3,9 @@
   "ignorePatterns": [
     {
       "pattern": "^https://www.privacypolicygenerator.info"
+    },
+    {
+      "pattern": "^https://www.metapool.tech/dashboard"
     }
   ]
 }
