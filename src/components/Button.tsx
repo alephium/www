@@ -8,21 +8,23 @@ interface ButtonProps {
   url?: string
   newTab?: boolean
   className?: string
+  trackingName?: string
 }
 
-let Button: FC<ButtonProps> = ({ onClick, className, children, url, newTab }) =>
+let Button: FC<ButtonProps> = ({ onClick, className, children, url, newTab, trackingName }) =>
   url ? (
     <a
       href={url}
       className={`${className} button`}
       target={(newTab && '_blank') || undefined}
       rel={(newTab && 'noopener') || undefined}
+      data-goatcounter-click={trackingName}
     >
       {children}
       <Arrow className="arrow" />
     </a>
   ) : (
-    <button className={`${className} button`} onClick={onClick}>
+    <button className={`${className} button`} onClick={onClick} data-goatcounter-click={trackingName}>
       {children}
       <Arrow className="arrow" />
     </button>

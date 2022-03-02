@@ -33,7 +33,7 @@ let PageSectionUsability: FC<PageSectionUsabilityProps> = ({ className, content 
     <PageSectionContainerStyled>
       <CenteredContent>
         <TextSnippetStyled bigText>{content.description}</TextSnippetStyled>
-        <Button url={content.button.url} newTab={content.button.newTab}>
+        <Button url={content.button.url} newTab={content.button.newTab} trackingName="get-wallet-button">
           {content.button.text}
         </Button>
       </CenteredContent>

@@ -8,7 +8,6 @@ import PageSectionContainer from './PageSectionContainer'
 import SubsectionTextHeader from './SubsectionTextHeader'
 import SimpleLink from './SimpleLink'
 
-import NetworkImageSrc from '../images/network.svg'
 import IllustrationColumn from './Columns/IllustrationColumn'
 
 type SubsectionType = {
@@ -43,7 +42,7 @@ let PageSectionEcosystem = ({ className }: { className?: string }) => {
                   {items &&
                     items.map(({ title, logo, url }) =>
                       url ? (
-                        <SimpleLink url={url} text={title} newTab>
+                        <SimpleLink url={url} text={title} newTab trackingName={`ecosystem-${title}`}>
                           <SubsectionItem key={title}>
                             {logo ? (
                               <>

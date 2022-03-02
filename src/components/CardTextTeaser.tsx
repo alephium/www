@@ -9,14 +9,17 @@ interface CardTextTeaserProps {
   subtitle?: string
   link: ArrowedLinkProps
   className?: string
+  trackingName?: string
 }
 
-let CardTextTeaser: FC<CardTextTeaserProps> = ({ title, subtitle, children, link, className }) => (
+let CardTextTeaser: FC<CardTextTeaserProps> = ({ title, subtitle, children, link, className, trackingName }) => (
   <article className={className}>
     <TextSnippetStyled className="text-content" title={title} titleHierarchy="h3" subtitle={subtitle} smallSubtitle>
       {children}
     </TextSnippetStyled>
-    <ArrowedLink {...link}>{link.text}</ArrowedLink>
+    <ArrowedLink {...link} trackingName={trackingName}>
+      {link.text}
+    </ArrowedLink>
   </article>
 )
 

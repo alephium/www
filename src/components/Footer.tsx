@@ -74,7 +74,7 @@ let FooterColumn: FC<FooterColumnProps> = ({ className, title, links }) => {
       <ul>
         {links.map((link) => (
           <li key={link.text}>
-            <SimpleLink {...link} color={theme.textTertiary} />
+            <SimpleLink {...link} color={theme.textTertiary} trackingName={`footer-${link.text}`} />
           </li>
         ))}
       </ul>

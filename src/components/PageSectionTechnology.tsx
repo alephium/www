@@ -90,7 +90,11 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
               <BlockflowImage src={BlockflowImageSrc} alt="Blockflow" />
             </IllustrationColumn>
             <Column>
-              <SectionTextTeaser {...blockFlowSectionContent} IconComponent={StackImage} />
+              <SectionTextTeaser
+                {...blockFlowSectionContent}
+                IconComponent={StackImage}
+                trackingName="technology-section"
+              />
             </Column>
           </Columns>
         </PageSectionContainerStyled>
@@ -102,7 +106,7 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
         <PageSectionContainer>
           <Columns {...columnsProps}>
             <Column>
-              <SectionTextTeaser {...polwSectionContent} IconComponent={LeafImage} />
+              <SectionTextTeaser {...polwSectionContent} IconComponent={LeafImage} trackingName="technology-section" />
             </Column>
             <Column />
           </Columns>
@@ -115,7 +119,11 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
               <SmartContractImage src={SmartContractImageSrc} alt="Smart contract" />
             </IllustrationColumn>
             <Column>
-              <SectionTextTeaser {...smartContractSectionContent} IconComponent={StackImage} />
+              <SectionTextTeaser
+                {...smartContractSectionContent}
+                IconComponent={StackImage}
+                trackingName="technology-section"
+              />
             </Column>
           </Columns>
         </PageSectionContainer>
@@ -124,7 +132,7 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
         <PageSectionContainer>
           <Columns {...columnsProps} reverse>
             <Column>
-              <SectionTextTeaser {...vmsSectionContent} IconComponent={VmDotsImage} />
+              <SectionTextTeaser {...vmsSectionContent} IconComponent={VmDotsImage} trackingName="technology-section" />
             </Column>
             <IllustrationColumn>
               <VmsImage src={VmsImageSrc} alt="VMs" />
