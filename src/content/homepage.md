@@ -80,7 +80,7 @@ technologySection:
         url: https://wiki.alephium.org/Smart-Contract-Guide.html
         newTab: true
   vmsSection:
-    title: Novel VM design
+    title: Novel VM
     description: Alephium uses a simple, safe and flexible virtual machine 
       designed for dApps, and more specifically DeFi. Its dedicated VM leverages 
       and improves on the UTXO model to address DeFi’s security issues and execution 
