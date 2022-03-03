@@ -34,7 +34,7 @@ let SectionTextTeaser: FC<SectionTextTeaserProps> = ({
     </Card>
     <Links>
       {links.map((link) => (
-        <ArrowedLink key={link.text} {...link} trackingName={`${trackingName}-${link.text}`}>
+        <ArrowedLink key={link.text} {...link} trackingName={`${trackingName}:${link.text?.replaceAll(' ', '-')}-link`}>
           {link.text}
         </ArrowedLink>
       ))}

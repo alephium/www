@@ -28,7 +28,7 @@ let NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
         newTab
         altColor
         emoji="🚀"
-        trackingName="main-nav-5-min-article"
+        trackingName="main-nav:5-min-article-link"
       >
         Alephium in 5&apos;
       </ArrowedLink>
@@ -37,7 +37,7 @@ let NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
         url="https://explorer.alephium.org/"
         newTab
         altColor
-        trackingName="main-nav-explorer"
+        trackingName="main-nav:explorer-link"
       >
         Block explorer
       </ArrowedLink>
@@ -47,7 +47,7 @@ let NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
         IconComponent={GitHubIcon}
         newTab
         altColor
-        trackingName="main-nav-github"
+        trackingName="main-nav:github-link"
       >
         See the code
       </ArrowedLink>

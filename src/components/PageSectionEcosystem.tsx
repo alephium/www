@@ -42,7 +42,12 @@ let PageSectionEcosystem = ({ className }: { className?: string }) => {
                   {items &&
                     items.map(({ title, logo, url }) =>
                       url ? (
-                        <SimpleLink url={url} text={title} newTab trackingName={`ecosystem-${title}`}>
+                        <SimpleLink
+                          url={url}
+                          text={title}
+                          newTab
+                          trackingName={`ecosystem-section:${title.replaceAll(' ', '-')}-link`}
+                        >
                           <SubsectionItem key={title}>
                             {logo ? (
                               <>

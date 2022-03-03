@@ -70,7 +70,11 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
                     currentPage={currentSlide}
                     setCurrentPage={setCurrentSlide}
                   />
-                  <a href="#intro" aria-label="Scroll to the intro section" data-goatcounter-click="hero-arrow-down">
+                  <a
+                    href="#intro"
+                    aria-label="Scroll to the intro section"
+                    data-goatcounter-click="hero-section:arrow-down"
+                  >
                     <ArrowDown />
                   </a>
                 </>

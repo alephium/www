@@ -49,7 +49,7 @@ let PageSectionIntro: FC<PageSectionIntroProps> = ({ className, content }) => {
                   ImageComponent={card.image}
                   key={card.title}
                   link={card.link}
-                  trackingName={`intro-card-${card.title}`}
+                  trackingName={`intro-section-card:${card.title}-${card.link.text}-link`}
                 >
                   <p>{card.description}</p>
                 </CardEngagement>

@@ -43,7 +43,7 @@ let FollowUs: FC<FollowUsProps> = ({ className, content }) => (
               name={name}
               url={url}
               ImageComponent={Icon}
-              trackingName={`follow-us-section-${name}`}
+              trackingName={`follow-us-section:${name}-link`}
             />
           )
         })}

@@ -93,7 +93,7 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
               <SectionTextTeaser
                 {...blockFlowSectionContent}
                 IconComponent={StackImage}
-                trackingName="technology-section"
+                trackingName="technology-section:blockflow"
               />
             </Column>
           </Columns>
@@ -106,7 +106,11 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
         <PageSectionContainer>
           <Columns {...columnsProps}>
             <Column>
-              <SectionTextTeaser {...polwSectionContent} IconComponent={LeafImage} trackingName="technology-section" />
+              <SectionTextTeaser
+                {...polwSectionContent}
+                IconComponent={LeafImage}
+                trackingName="technology-section:polw"
+              />
             </Column>
             <Column />
           </Columns>
@@ -122,7 +126,7 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
               <SectionTextTeaser
                 {...smartContractSectionContent}
                 IconComponent={StackImage}
-                trackingName="technology-section"
+                trackingName="technology-section:smart-contract"
               />
             </Column>
           </Columns>
@@ -132,7 +136,11 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
         <PageSectionContainer>
           <Columns {...columnsProps} reverse>
             <Column>
-              <SectionTextTeaser {...vmsSectionContent} IconComponent={VmDotsImage} trackingName="technology-section" />
+              <SectionTextTeaser
+                {...vmsSectionContent}
+                IconComponent={VmDotsImage}
+                trackingName="technology-section:vm"
+              />
             </Column>
             <IllustrationColumn>
               <VmsImage src={VmsImageSrc} alt="VMs" />

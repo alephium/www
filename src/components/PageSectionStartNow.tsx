@@ -55,6 +55,7 @@ let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className, content })
               link={firstCard.link}
               primaryBackground
               ImageComponent={MiningImageComponent}
+              trackingName={`start-now-section:mining-card:${firstCard.link.text?.replaceAll(' ', '-')}-link`}
             >
               <p>{firstCard.description}</p>
             </GridCard>
@@ -64,10 +65,17 @@ let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className, content })
             subtitle={secondCard.subtitle}
             link={secondCard.link}
             ImageComponent={GreyMountainsImageStyled}
+            trackingName={`start-now-section:smart-contract-card:${secondCard.link.text?.replaceAll(' ', '-')}-link`}
           >
             <p>{secondCard.description}</p>
           </GridCard>
-          <GridCard title={thirdCard.title} subtitle={thirdCard.subtitle} link={thirdCard.link} textFullWidth>
+          <GridCard
+            title={thirdCard.title}
+            subtitle={thirdCard.subtitle}
+            link={thirdCard.link}
+            textFullWidth
+            trackingName={`start-now-section:career-card:${thirdCard.link.text?.replaceAll(' ', '-')}-link`}
+          >
             <p>{thirdCard.description}</p>
           </GridCard>
           <ThemeProvider theme={theme === darkTheme ? lightTheme : darkTheme}>
@@ -78,6 +86,7 @@ let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className, content })
               ImageComponent={CodeImageStyled}
               primaryBackground
               narrowHeaderMobile
+              trackingName={`start-now-section:open-source-card:${forthCard.link.text?.replaceAll(' ', '-')}-link`}
             >
               <p>{forthCard.description}</p>
             </GridCard>
