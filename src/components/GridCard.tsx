@@ -17,6 +17,7 @@ interface GridCardProps {
   primaryBackground?: boolean
   narrowHeaderMobile?: boolean
   textFullWidth?: boolean
+  trackingName?: string
 }
 
 let GridCard: FC<GridCardProps> = ({
@@ -27,7 +28,8 @@ let GridCard: FC<GridCardProps> = ({
   link,
   primaryBackground,
   ImageComponent,
-  narrowHeaderMobile
+  narrowHeaderMobile,
+  trackingName
 }) => {
   const theme = useTheme()
 
@@ -45,7 +47,7 @@ let GridCard: FC<GridCardProps> = ({
               {children}
             </TextSnippetStyled>
           </div>
-          <ArrowedLink url={link.url} newTab={link.newTab}>
+          <ArrowedLink url={link.url} newTab={link.newTab} trackingName={trackingName}>
             {link.text}
           </ArrowedLink>
         </article>

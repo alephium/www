@@ -6,10 +6,18 @@ interface SocialMediaIconProps {
   name: string
   ImageComponent: FC
   className?: string
+  trackingName?: string
 }
 
-let SocialMediaIcon: FC<SocialMediaIconProps> = ({ url, ImageComponent, name, className }) => (
-  <a href={url} target="_blank" rel="noopener noreferrer" className={className} aria-label={`Visit our ${name}`}>
+let SocialMediaIcon: FC<SocialMediaIconProps> = ({ url, ImageComponent, name, className, trackingName }) => (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className={className}
+    aria-label={`Visit our ${name}`}
+    data-goatcounter-click={trackingName}
+  >
     <ImageComponent />
   </a>
 )

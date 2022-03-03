@@ -8,9 +8,10 @@ export interface SimpleLinkProps {
   newTab?: boolean
   color?: string
   openModal?: (x: boolean) => void
+  trackingName?: string
 }
 
-let SimpleLink: FC<SimpleLinkProps> = ({ className, children, url, newTab, text, openModal }) => {
+let SimpleLink: FC<SimpleLinkProps> = ({ className, children, url, newTab, text, openModal, trackingName }) => {
   const handleOnClick = (event: MouseEvent) => {
     if (openModal) {
       event.preventDefault()
@@ -25,6 +26,7 @@ let SimpleLink: FC<SimpleLinkProps> = ({ className, children, url, newTab, text,
       target={(newTab && '_blank') || undefined}
       rel={(newTab && 'noopener noreferrer') || undefined}
       onClick={handleOnClick}
+      data-goatcounter-click={trackingName}
     >
       {children || text}
     </a>

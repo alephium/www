@@ -14,6 +14,7 @@ interface SectionTextTeaserProps {
   IconComponent: FC
   cardText: string
   links: Array<ArrowedLinkProps>
+  trackingName?: string
 }
 
 let SectionTextTeaser: FC<SectionTextTeaserProps> = ({
@@ -22,7 +23,8 @@ let SectionTextTeaser: FC<SectionTextTeaserProps> = ({
   description,
   IconComponent,
   cardText,
-  links
+  links,
+  trackingName
 }) => (
   <div className={className}>
     <SubsectionTextHeader title={title} subtitle={description} />
@@ -32,7 +34,7 @@ let SectionTextTeaser: FC<SectionTextTeaserProps> = ({
     </Card>
     <Links>
       {links.map((link) => (
-        <ArrowedLink key={link.text} {...link}>
+        <ArrowedLink key={link.text} {...link} trackingName={`${trackingName}:${link.text?.replaceAll(' ', '-')}-link`}>
           {link.text}
         </ArrowedLink>
       ))}

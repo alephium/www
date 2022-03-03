@@ -15,6 +15,7 @@ export interface ArrowedLinkProps {
   altColor?: boolean
   onlyText?: boolean
   emoji?: string
+  trackingName?: string
 }
 
 let ArrowedLink: FC<ArrowedLinkProps> = ({
@@ -25,13 +26,21 @@ let ArrowedLink: FC<ArrowedLinkProps> = ({
   newTab,
   openModal,
   altColor = false,
-  emoji
+  emoji,
+  trackingName
 }) => {
   const theme = useTheme()
   const color = altColor ? theme.linkAlt : theme.link
 
   return (
-    <SimpleLink className={className} url={url} newTab={newTab} openModal={openModal} color={color}>
+    <SimpleLink
+      className={className}
+      url={url}
+      newTab={newTab}
+      openModal={openModal}
+      color={color}
+      trackingName={trackingName}
+    >
       {IconComponent && <IconComponent className="icon" />}
       {children}
       {(emoji && <span className="arrow emoji">{emoji}</span>) || <Arrow className="arrow" />}

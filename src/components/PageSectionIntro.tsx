@@ -44,7 +44,13 @@ let PageSectionIntro: FC<PageSectionIntroProps> = ({ className, content }) => {
             <SectionTextHeader title={content.title} subtitle={content.subtitle} />
             <IntroColumnContent>
               {cards.map((card) => (
-                <CardEngagement title={card.title} ImageComponent={card.image} key={card.title} link={card.link}>
+                <CardEngagement
+                  title={card.title}
+                  ImageComponent={card.image}
+                  key={card.title}
+                  link={card.link}
+                  trackingName={`intro-section-card:${card.title}-${card.link.text}-link`}
+                >
                   <p>{card.description}</p>
                 </CardEngagement>
               ))}

@@ -28,13 +28,27 @@ let NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
         newTab
         altColor
         emoji="🚀"
+        trackingName="main-nav:5-min-article-link"
       >
         Alephium in 5&apos;
       </ArrowedLink>
-      <ArrowedLink className="nav-item" url="https://explorer.alephium.org/" newTab altColor>
+      <ArrowedLink
+        className="nav-item"
+        url="https://explorer.alephium.org/"
+        newTab
+        altColor
+        trackingName="main-nav:explorer-link"
+      >
         Block explorer
       </ArrowedLink>
-      <ArrowedLink className="nav-item" url="https://github.com/alephium" IconComponent={GitHubIcon} newTab altColor>
+      <ArrowedLink
+        className="nav-item"
+        url="https://github.com/alephium"
+        IconComponent={GitHubIcon}
+        newTab
+        altColor
+        trackingName="main-nav:github-link"
+      >
         See the code
       </ArrowedLink>
     </div>

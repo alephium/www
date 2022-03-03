@@ -37,7 +37,15 @@ let FollowUs: FC<FollowUsProps> = ({ className, content }) => (
       <SocialMediaIconsList>
         {content.socialMediaLinks.map(({ name, url }) => {
           const Icon = getIconByName(name)
-          return <SocialMediaIcon key={name} name={name} url={url} ImageComponent={Icon} />
+          return (
+            <SocialMediaIcon
+              key={name}
+              name={name}
+              url={url}
+              ImageComponent={Icon}
+              trackingName={`follow-us-section:${name}-link`}
+            />
+          )
         })}
       </SocialMediaIconsList>
     </PageSectionContainer>

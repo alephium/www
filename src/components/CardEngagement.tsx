@@ -12,15 +12,23 @@ interface CardEngagementProps {
   link: ArrowedLinkProps
   ImageComponent: FC
   className?: string
+  trackingName?: string
 }
 
-const CardEngagement: FC<CardEngagementProps> = ({ title, link, ImageComponent, children, className }) => {
+const CardEngagement: FC<CardEngagementProps> = ({
+  title,
+  link,
+  ImageComponent,
+  children,
+  className,
+  trackingName
+}) => {
   const theme = useTheme()
 
   return (
     <CardContainer className={className} borderColor={theme.bgPrimary} thickBorders bgColor={theme.bgTertiary}>
       <div className="card-contents">
-        <CardTextTeaserStyled title={title} link={{ ...link }}>
+        <CardTextTeaserStyled title={title} link={{ ...link }} trackingName={trackingName}>
           {children}
         </CardTextTeaserStyled>
         <div className="image-container">
