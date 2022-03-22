@@ -113,7 +113,7 @@ usabilitySection:
     center, regardless of their skills.
   button:
     text: Get the wallet
-    url: https://github.com/alephium/alephium-wallet/releases/latest
+    url: https://github.com/alephium/desktop-wallet/releases/latest
     newTab: true
   images:
     - src: ../images/wallet-welcome.png
@@ -274,7 +274,7 @@ footer:
           url: https://github.com/alephium/explorer
           newTab: true
         - text: Wallet
-          url: https://github.com/alephium/alephium-wallet
+          url: https://github.com/alephium/desktop-wallet
           newTab: true
     - title: Project
       links:
