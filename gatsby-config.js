@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: 'https://alephium.org',
-    title: 'Alephium: Blockchain v3.0',
+    title: 'Alephium: A new paradigm',
     description:
       'A novel sharded blockchain for a secure, scalable and flexible financial ecosystem, empowered by BlockFlow algorithm and extended UTXO model.',
     social: {
