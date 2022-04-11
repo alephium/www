@@ -19,7 +19,7 @@ introSection:
         rewards.
       link:
         text: Documentation
-        url: https://wiki.alephium.org/Solo-Mining-Guide.html
+        url: https://wiki.alephium.org/mining/Solo-Mining-Guide
         newTab: true
     - title: Contribute
       description: Start testing and report issues or contribute to the Alephium codebase.
@@ -32,7 +32,7 @@ introSection:
         protocols.
       link:
         text: Guide
-        url: https://wiki.alephium.org/Smart-Contract-Guide.html
+        url: https://wiki.alephium.org/smart-contract/Smart-Contract-Guide
         newTab: true
 technologySection:
   title: Technology
@@ -77,7 +77,7 @@ technologySection:
         url:
         newTab: false
       - text: Guide
-        url: https://wiki.alephium.org/Smart-Contract-Guide.html
+        url: https://wiki.alephium.org/smart-contract/Smart-Contract-Guide
         newTab: true
   vmsSection:
     title: Novel VM
@@ -193,7 +193,7 @@ startNowSection:
         receive ALPH block rewards. Currently, we support CPU and GPU mining and
         will soon offer FPGA mining support
       link:
-        url: https://wiki.alephium.org/Solo-Mining-Guide.html
+        url: https://wiki.alephium.org/mining/Solo-Mining-Guide
         text: Instructions
         newTab: true
     - title: Build your own
@@ -263,7 +263,7 @@ footer:
           url: https://github.com/alephium/white-paper/blob/master/polw.pdf
           newTab: true
         - text: FAQ
-          url: https://wiki.alephium.org/Frequently-Asked-Questions.html
+          url: https://wiki.alephium.org/frequently-asked-questions
           newTab: true
     - title: Open source
       links:
