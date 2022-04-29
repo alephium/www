@@ -32,7 +32,7 @@ introSection:
         protocols.
       link:
         text: Guide
-        url: https://wiki.alephium.org/smart-contract/Smart-Contract-Guide
+        url: https://wiki.alephium.org/dapps/Technical-Guide-With-A-Fullnode
         newTab: true
 technologySection:
   title: Technology
@@ -77,7 +77,7 @@ technologySection:
         url:
         newTab: false
       - text: Guide
-        url: https://wiki.alephium.org/smart-contract/Smart-Contract-Guide
+        url: https://wiki.alephium.org/dapps/Technical-Guide-With-A-Fullnode
         newTab: true
   vmsSection:
     title: Novel VM
