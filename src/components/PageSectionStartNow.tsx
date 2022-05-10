@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import styled, { ThemeProvider, useTheme } from 'styled-components'
 
-import { darkTheme, lightTheme } from '../styles/themes'
+import { darkTheme, lightTheme, oppositeThemeOf } from '../styles/themes'
 import { deviceBreakPoints } from '../styles/global-style'
 
 import SectionTextHeader from './SectionTextHeader'
@@ -48,7 +48,7 @@ let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className, content })
           <Logo />
         </SectionHeader>
         <Grid>
-          <ThemeProvider theme={theme === darkTheme ? lightTheme : darkTheme}>
+          <ThemeProvider theme={oppositeThemeOf(theme)}>
             <GridCard
               title={firstCard.title}
               subtitle={firstCard.subtitle}
@@ -78,7 +78,7 @@ let PageSectionStartNow: FC<PageSectionStartNowProps> = ({ className, content })
           >
             <p>{thirdCard.description}</p>
           </GridCard>
-          <ThemeProvider theme={theme === darkTheme ? lightTheme : darkTheme}>
+          <ThemeProvider theme={oppositeThemeOf(theme)}>
             <GridCard
               title={forthCard.title}
               subtitle={forthCard.subtitle}
