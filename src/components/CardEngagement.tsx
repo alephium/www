@@ -9,7 +9,7 @@ import { deviceBreakPoints } from '../styles/global-style'
 
 interface CardEngagementProps {
   title: string
-  link: ArrowedLinkProps
+  link?: ArrowedLinkProps
   ImageComponent: FC
   className?: string
   trackingName?: string

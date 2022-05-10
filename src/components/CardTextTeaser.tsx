@@ -7,7 +7,7 @@ import ArrowedLink, { ArrowedLinkProps } from './ArrowedLink'
 interface CardTextTeaserProps {
   title: string
   subtitle?: string
-  link: ArrowedLinkProps
+  link?: ArrowedLinkProps
   className?: string
   trackingName?: string
 }
@@ -17,9 +17,12 @@ let CardTextTeaser: FC<CardTextTeaserProps> = ({ title, subtitle, children, link
     <TextSnippetStyled className="text-content" title={title} titleHierarchy="h3" subtitle={subtitle} smallSubtitle>
       {children}
     </TextSnippetStyled>
-    <ArrowedLink {...link} trackingName={trackingName}>
-      {link.text}
-    </ArrowedLink>
+    { link && (
+      <ArrowedLink {...link} trackingName={trackingName}>
+        {link.text}
+      </ArrowedLink>
+      )
+    }
   </article>
 )
 

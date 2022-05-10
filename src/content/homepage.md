@@ -12,27 +12,35 @@ headerSection:
       scalability, and security encountered by decentralized applications today.
 introSection:
   title: Start
-  subtitle: Engage with us.
+  subtitle: Begin your Alephium journey
   cards:
-    - title: Mine
-      description: Start mining to contribute to the network security and receive ALPH 
-        rewards.
+    - title: Download the wallet
+      description: Securely store and transfer your ALPH. Connect to dApps and
+        start leveraging the Alephium ecosystem.
+      link:
+        text: Download
+        url: https://github.com/alephium/desktop-wallet/releases/download/v1.2.0/alephium-wallet-linux-1.2.0.AppImage
+        newTab: true
+    - title: Start Mining
+      description: Start mining to contribute to the network security and
+        receive ALPH rewards.
       link:
         text: Documentation
         url: https://wiki.alephium.org/mining/Solo-Mining-Guide
         newTab: true
-    - title: Contribute
-      description: Start testing and report issues or contribute to the Alephium codebase.
+    - title: Build your own
+      description: Start building your own smart contracts, decentralized apps
+        and protocols.
       link:
-        text: Codebase
-        url: https://github.com/alephium/
+        text: Begin the primer
+        url: https://wiki.alephium.org/dapps/A-Primer-With-The-Desktop-Wallet
         newTab: true
-    - title: Build
-      description: Start building your own smart contracts, decentralized apps and
-        protocols.
+    - title: Get rewarded
+      description: Apply for a grant to develop your own project on Alephium.
+        Receive rewards for contributing to any initiatives bringing value to the project.
       link:
-        text: Guide
-        url: https://wiki.alephium.org/dapps/Technical-Guide-With-A-Fullnode
+        text: Check them out
+        url: https://medium.com/@alephium/introducing-community-rewards-f4638bbf14bf
         newTab: true
 technologySection:
   title: Technology
