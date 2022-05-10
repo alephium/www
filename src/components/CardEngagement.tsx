@@ -3,14 +3,14 @@ import styled, { useTheme } from 'styled-components'
 
 import Card from './Card'
 import CardTextTeaser from './CardTextTeaser'
-import { ArrowedLinkProps } from './ArrowedLink'
+import SimpleLink, { SimpleLinkProps } from './SimpleLink'
 
 import { deviceBreakPoints } from '../styles/global-style'
 
 interface CardEngagementProps {
   title: string
-  link?: ArrowedLinkProps
-  ImageComponent: FC
+  link: SimpleLinkProps
+  image: { publicURL: string }
   className?: string
   trackingName?: string
 }
@@ -18,7 +18,7 @@ interface CardEngagementProps {
 const CardEngagement: FC<CardEngagementProps> = ({
   title,
   link,
-  ImageComponent,
+  image,
   children,
   className,
   trackingName
@@ -26,21 +26,21 @@ const CardEngagement: FC<CardEngagementProps> = ({
   const theme = useTheme()
 
   return (
-    <CardContainer className={className} borderColor={theme.bgPrimary} thickBorders bgColor={theme.bgTertiary}>
-      <div className="card-contents">
-        <CardTextTeaserStyled title={title} link={{ ...link }} trackingName={trackingName}>
-          {children}
-        </CardTextTeaserStyled>
-        <div className="image-container">
-          <ImageComponent />
-        </div>
-      </div>
-    </CardContainer>
+    <SimpleLinkStyled {...link}>
+      <CardContainer className={className} borderColor={theme.bgPrimary} thickBorders bgColor={theme.bgTertiary} shadow>
+          <div className="card-contents">
+            <Iconic src={image.publicURL} alt={title} />
+            <CardTextTeaser title={title} trackingName={trackingName}>
+              {children}
+            </CardTextTeaser>
+          </div>
+      </CardContainer>
+    </SimpleLinkStyled>
   )
 }
 
-const CardTextTeaserStyled = styled(CardTextTeaser)`
-  padding-right: var(--spacing-8);
+const SimpleLinkStyled = styled(SimpleLink)`
+  display: flex;
 `
 
 const CardContainer = styled(Card)`
@@ -81,16 +81,16 @@ const CardContainer = styled(Card)`
 
   .card-contents {
     display: flex;
+    flex-direction: column;
     flex: 1;
     justify-content: space-between;
   }
+`
 
-  .image-container {
-    width: 32%;
-    position: relative;
-    margin: calc(-1 * var(--spacing-4)) calc(-1 * var(--spacing-4)) calc(-1 * var(--spacing-4)) 0;
-    overflow: hidden;
-  }
+const Iconic = styled.img`
+  width: 82px;
+  height: 82px;
+  padding-bottom: 30px;
 `
 
 export default CardEngagement

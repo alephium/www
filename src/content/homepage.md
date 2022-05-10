@@ -15,6 +15,7 @@ introSection:
   subtitle: Begin your Alephium journey
   cards:
     - title: Download the wallet
+      image: ../images/wallet.svg
       description: Securely store and transfer your ALPH. Connect to dApps and
         start leveraging the Alephium ecosystem.
       link:
@@ -22,6 +23,7 @@ introSection:
         url: https://github.com/alephium/desktop-wallet/releases/download/v1.2.0/alephium-wallet-linux-1.2.0.AppImage
         newTab: true
     - title: Start Mining
+      image: ../images/mining.svg
       description: Start mining to contribute to the network security and
         receive ALPH rewards.
       link:
@@ -29,6 +31,7 @@ introSection:
         url: https://wiki.alephium.org/mining/Solo-Mining-Guide
         newTab: true
     - title: Build your own
+      image: ../images/code.svg
       description: Start building your own smart contracts, decentralized apps
         and protocols.
       link:
@@ -36,6 +39,7 @@ introSection:
         url: https://wiki.alephium.org/dapps/A-Primer-With-The-Desktop-Wallet
         newTab: true
     - title: Get rewarded
+      image: ../images/coins.svg
       description: Apply for a grant to develop your own project on Alephium.
         Receive rewards for contributing to any initiatives bringing value to the project.
       link:

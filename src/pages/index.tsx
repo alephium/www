@@ -83,6 +83,9 @@ export const pageQuery = graphql`
             cards {
               title
               description
+              image {
+                publicURL
+              }
               link {
                 text
                 url

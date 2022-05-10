@@ -10,9 +10,6 @@ import GridCard from './GridCard'
 import { ArrowedLinkProps } from './ArrowedLink'
 
 import Logo from '../images/svgs/logo-dark.svg'
-import ImageMining from './styleable-images/ImageMining'
-import ImageCode from './styleable-images/ImageCode'
-import ImageGreyMountains from './styleable-images/ImageGreyMountains'
 
 export interface PageSectionStartNowContentType {
   title: string
@@ -148,7 +145,7 @@ const ImageContainer = styled.div`
   overflow: visible;
 `
 
-const MiningImageStyled = styled(ImageMining)`
+const MiningImageStyled = styled.img`
   width: 14rem;
   height: auto;
   position: absolute;
@@ -167,7 +164,7 @@ const MiningImageComponent = () => (
   </ImageContainer>
 )
 
-const CodeImageStyled = styled(ImageCode)`
+const CodeImageStyled = styled.img`
   width: 6.25rem;
   height: auto;
   position: absolute;
@@ -179,7 +176,7 @@ const CodeImageStyled = styled(ImageCode)`
   }
 `
 
-const GreyMountainsImageStyled = styled(ImageGreyMountains)`
+const GreyMountainsImageStyled = styled.img`
   width: 100%;
   height: auto;
   position: absolute;

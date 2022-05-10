@@ -1,10 +1,6 @@
 import { FC } from 'react'
 import styled from 'styled-components'
 
-import ImageHook from './styleable-images/ImageHook'
-import ImageCode from './styleable-images/ImageCode'
-import ImageMining from './styleable-images/ImageMining'
-
 import PageSectionContainer from './PageSectionContainer'
 import CardEngagement from './CardEngagement'
 // import Feed from './Feed'
@@ -31,11 +27,6 @@ interface PageSectionIntroProps {
 }
 
 let PageSectionIntro: FC<PageSectionIntroProps> = ({ className, content }) => {
-  const cards = content.cards.map((card, index) => ({
-    ...card,
-    image: index === 0 ? MiningImageStyled : index === 1 ? CodeImageStyled : HookImageStyled
-  }))
-
   return (
     <section className={className} id="intro">
       <PageSectionContainer>
@@ -43,10 +34,10 @@ let PageSectionIntro: FC<PageSectionIntroProps> = ({ className, content }) => {
           <Column>
             <SectionTextHeader title={content.title} subtitle={content.subtitle} />
             <IntroColumnContent>
-              {cards.map((card) => (
+              {content.cards.map((card) => (
                 <CardEngagement
                   title={card.title}
-                  ImageComponent={card.image}
+                  image={card.image}
                   key={card.title}
                   link={card.link}
                   trackingName={`intro-section-card:${card.title}-${card.link.text}-link`}
@@ -56,7 +47,7 @@ let PageSectionIntro: FC<PageSectionIntroProps> = ({ className, content }) => {
               ))}
             </IntroColumnContent>
           </Column>
-          {/* <Column>
+          {/* TODO remove dead code <Column>
           <SectionTextHeader title="Feed" subtitle="What's cooking?" />
           <IntroColumnContent>
             <Feed />
@@ -80,45 +71,21 @@ const IntroColumns = styled(Columns)`
 
 const IntroColumnContent = styled.div`
   margin-top: var(--spacing-6);
-  display: flex;
-  gap: var(--spacing-2);
+  display: grid;
+  grid-template-columns: minmax(150px, 469px) minmax(150px, 469px);
+  grid-template-rows: 324px;
+  column-gap: 30px;
+  row-gap: 30px;
 
   @media ${deviceBreakPoints.mobile} {
     flex-direction: column;
+    grid-template-columns: 100%;
   }
 `
 
 PageSectionIntro = styled(PageSectionIntro)`
   border-top: var(--border-primary-dark);
   padding: var(--spacing-16) 0 var(--spacing-28);
-`
-
-const MiningImageStyled = styled(ImageMining)`
-  width: 10rem;
-  height: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto 0;
-`
-
-const CodeImageStyled = styled(ImageCode)`
-  width: 5.2rem;
-  height: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto 0;
-`
-
-const HookImageStyled = styled(ImageHook)`
-  width: 5rem;
-  height: auto;
-  position: absolute;
-  top: -4px;
-  left: 0;
 `
 
 export default PageSectionIntro

@@ -12,9 +12,9 @@ export const darkTheme: DefaultTheme = {
   textSecondary: 'var(--color-grey-200)',
   textTertiary: 'var(--color-grey-200)',
 
-  bgPrimary: 'var(--color-black)',
+  bgPrimary: 'var(--color-grey-900)',
   bgSecondary: 'var(--color-grey-900)',
-  bgTertiary: 'var(--color-grey-800)',
+  bgTertiary: '#1C1A1A',
   bgSurface: 'var(--color-grey-700)',
 
   borderPrimary: 'var(--border-primary-dark)',
