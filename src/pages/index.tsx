@@ -8,7 +8,6 @@ import Seo from '../components/Seo'
 import PageSectionHero, { PageSectionHeroContentType } from '../components/PageSectionHero'
 import PageSectionIntro, { PageSectionIntroContentType } from '../components/PageSectionIntro'
 import PageSectionTechnology, { PageSectionTechnologyContentType } from '../components/PageSectionTechnology'
-import PageSectionUsability, { PageSectionUsabilityContentType } from '../components/PageSectionUsability'
 import PageSectionEcosystem from '../components/PageSectionEcosystem'
 import PageSectionStartNow, { PageSectionStartNowContentType } from '../components/PageSectionStartNow'
 import PageSectionFollowUs, { PageSectionFollowUsContentType } from '../components/PageSectionFollowUs'
@@ -22,7 +21,6 @@ interface IndexPageProps extends PageProps {
           headerSection: PageSectionHeroContentType
           introSection: PageSectionIntroContentType
           technologySection: PageSectionTechnologyContentType
-          usabilitySection: PageSectionUsabilityContentType
           startNowSection: PageSectionStartNowContentType
           followUsSection: PageSectionFollowUsContentType
           footer: FooterContentType
@@ -46,9 +44,6 @@ const IndexPage = (props: IndexPageProps) => {
           <PageSectionHero content={pageContent.headerSection} />
           <PageSectionIntro content={pageContent.introSection} />
           <PageSectionTechnology content={pageContent.technologySection} />
-        </ThemeProvider>
-        <ThemeProvider theme={lightTheme}>
-          <PageSectionUsability content={pageContent.usabilitySection} />
         </ThemeProvider>
         <ThemeProvider theme={darkTheme}>
           <PageSectionEcosystem />
@@ -144,24 +139,6 @@ export const pageQuery = graphql`
                 number
                 description
               }
-            }
-          }
-          usabilitySection {
-            title
-            subtitle
-            description
-            button {
-              text
-              url
-              newTab
-            }
-            images {
-              src {
-                childImageSharp {
-                  gatsbyImageData(width: 1920, placeholder: BLURRED, formats: [AUTO])
-                }
-              }
-              altText
             }
           }
           startNowSection {

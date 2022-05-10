@@ -104,26 +104,6 @@ technologySection:
         description: RAM needed for a Raspberry-Pi based full node.
       - number: '>3 years'
         description: of Research & Development.
-usabilitySection:
-  title: Usability
-  subtitle: Designed for humans
-  description: Our wallet is only the first step. The intricate and innovative
-    parts of technology should be at reach, without becoming an obstacle to
-    accessibility and usability. Alephium aims at placing the user at the
-    center, regardless of their skills.
-  button:
-    text: Get the wallet
-    url: https://github.com/alephium/desktop-wallet/releases/latest
-    newTab: true
-  images:
-    - src: ../images/wallet-welcome.png
-      altText: Wallet welcome screen
-    - src: ../images/wallet-seed.png
-      altText: Wallet seed phrase screen
-    - src: ../images/wallet-security.png
-      altText: Wallet security check screen
-    - src: ../images/wallet-ready.png
-      altText: Wallet everything is ready screen
 ecosystemSection:
   title: Ecosystem
   subtitle: Growing fast

@@ -128,34 +128,6 @@ export default {
               ]
             },
             {
-              label: 'Usability section',
-              name: 'usabilitySection',
-              widget: 'object',
-              required: true,
-              fields: [
-                titleFieldConfig,
-                subtitleFieldConfig,
-                descriptionFieldConfig,
-                {
-                  label: 'Button',
-                  name: 'button',
-                  widget: 'object',
-                  required: true,
-                  fields: linkFieldsConfig
-                },
-                {
-                  label: 'Images',
-                  name: 'images',
-                  widget: 'list',
-                  required: true,
-                  fields: [
-                    { label: 'Image', name: 'src', widget: 'image', required: true },
-                    { label: 'Image alt text', name: 'altText', widget: 'string', required: true }
-                  ]
-                }
-              ]
-            },
-            {
               label: 'Start now section',
               name: 'startNowSection',
               widget: 'object',
