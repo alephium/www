@@ -133,7 +133,7 @@ ecosystemSection:
         - title: 'Bitcoin Association Switzerland'
           logo: '../images/svgs/bas-logo-white.svg'
           url: https://www.bitcoinassociation.ch/
-    - title: Backers
+    - title: Memberships
       description: "They provided us with early backing, funding, strategic advice, introductions and so much more!"
       image: ../images/award.svg
       items:
@@ -146,7 +146,7 @@ ecosystemSection:
         - title: 'Archery Fund'
           url: https://archery.fund/
         - title: '80+ Private Individuals'
-    - title: Miners, dApps & Community Projects
+    - title: Community projects
       description: "Building on top, around or below what we do, securing the network or providing services, they are the life & blood of Alephium & the reasons we grind everyday!"
       image: ../images/sprout.svg
       items:
@@ -165,13 +165,6 @@ ecosystemSection:
         - title: 'EnigmaPool'
           logo: ''
           url: https://enigmapool.com/
-    - title: Exchanges
-      description: "Exchanges are vital to our users, miners and backers. Find our trading pairs there!"
-      image: ../images/exchange.svg
-      items:
-        - title: 'Gate.io'
-          logo: '../images/logos/gate-io.svg'
-          url: https://www.gate.io/trade/ALPH_USDT
 startNowSection:
   title: Start now
   subtitle: Build and contribute
