@@ -232,25 +232,22 @@ footer:
   columns:
     - title: Resources
       links:
-        - text: Tokenomics
-          url: https://medium.com/@alephium/tokenomics-of-alephium-61d59b51029c
-          newTab: true
-        - text: Documentation
+        - text: Wiki
           url: https://wiki.alephium.org/
           newTab: true
-        - text: BlockFlow white paper
-          url: https://github.com/alephium/white-paper/blob/master/alephium.pdf
+        - text: Blog
+          url: https://medium.com/@alephium
           newTab: true
-        - text: PoLW white paper
-          url: https://github.com/alephium/white-paper/blob/master/polw.pdf
+        - text: White papers
+          url: https://github.com/alephium/white-paper
           newTab: true
         - text: FAQ
           url: https://wiki.alephium.org/frequently-asked-questions
           newTab: true
-    - title: Open source
+    - title: Explore
       links:
-        - text: Alephium
-          url: https://github.com/alephium/alephium
+        - text: Codebase
+          url: http://github.com/alephium
           newTab: true
         - text: Explorer
           url: https://github.com/alephium/explorer
@@ -258,13 +255,16 @@ footer:
         - text: Wallet
           url: https://github.com/alephium/desktop-wallet
           newTab: true
-    - title: Project
+        - text: Reward & grant program
+          url: https://github.com/alephium/community/blob/master/Grant&RewardProgram.md
+          newTab: true
+    - title: About
       links:
-        - text: About us
-          url:
-          newTab: false
         - text: Team
           url:
+          newTab: false
+        - text: Careers
+          url: https://pandasoftware.bamboohr.com/jobs/
           newTab: false
         - text: Contact
           url:
