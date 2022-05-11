@@ -7,10 +7,17 @@ import SvgSunOverMountains from '../images/sun-over-mountains.svg'
 const PageSectionSunOverTheMountains = () => (
   <section>
     <PageSectionContainer>
-      <BackgroundImage src={SvgSunOverMountains} />
+      <Centered>
+        <BackgroundImage src={SvgSunOverMountains} />
+      </Centered>
     </PageSectionContainer>
   </section>
 )
+
+const Centered = styled.div`
+  display: flex;
+  justify-content: center;
+`
 
 const BackgroundImage = styled.div`
   width: 911px;
