@@ -20,7 +20,7 @@ introSection:
         start leveraging the Alephium ecosystem.
       link:
         text: Download
-        url: https://github.com/alephium/desktop-wallet/releases/download/v1.2.0/alephium-wallet-linux-1.2.0.AppImage
+        url: https://github.com/alephium/desktop-wallet/releases/
         newTab: true
     - title: Start Mining
       image: ../images/mining.svg
@@ -44,7 +44,7 @@ introSection:
         Receive rewards for contributing to any initiatives bringing value to the project.
       link:
         text: Check them out
-        url: https://medium.com/@alephium/introducing-community-rewards-f4638bbf14bf
+        url: https://github.com/alephium/community/blob/master/Grant&RewardProgram.md
         newTab: true
 technologySection:
   title: Technology
