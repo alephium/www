@@ -4,7 +4,8 @@ import styled from 'styled-components'
 import PageSectionContainer from './PageSectionContainer'
 import SectionTextHeader from './SectionTextHeader'
 import TextSnippet from './TextSnippet'
-import Stars from '../images/stars.svg'
+import SvgStars from '../images/stars.svg'
+import SvgNight from '../images/night.svg'
 
 
 type Props = {
@@ -22,7 +23,7 @@ type Props = {
 }
 
 const PageSectionTodoList = ({ content: { title, subtitle, lists } }: Props) => (
-  <section>
+  <Backdrop>
     <PageSectionContainer>
       <SectionTextHeaderStyled title={title} subtitle={subtitle} bigSubtitle bigText />
       <TodoLists>
@@ -42,8 +43,14 @@ const PageSectionTodoList = ({ content: { title, subtitle, lists } }: Props) => 
         </TodoList>)}
       </TodoLists>
     </PageSectionContainer>
-  </section>
+  </Backdrop>
 )
+
+const Backdrop = styled.div`
+  background-image: url(${SvgNight}), url(${SvgStars});
+  background-repeat: no-repeat;
+  background-size: contain;
+`
 
 const SectionTextHeaderStyled = styled(SectionTextHeader)`
   text-align: center;
