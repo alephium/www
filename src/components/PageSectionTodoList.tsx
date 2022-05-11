@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import PageSectionContainer from './PageSectionContainer'
 import SectionTextHeader from './SectionTextHeader'
 import TextSnippet from './TextSnippet'
+import SvgCheckmark from '../images/complete-check.svg'
 import SvgStars from '../images/stars.svg'
 import SvgNight from '../images/night.svg'
 
@@ -23,7 +24,8 @@ type Props = {
 }
 
 const PageSectionTodoList = ({ content: { title, subtitle, lists } }: Props) => (
-  <Backdrop>
+  <BackdropStars>
+    <BackdropNight />
     <PageSectionContainer>
       <SectionTextHeaderStyled title={title} subtitle={subtitle} bigSubtitle bigText />
       <TodoLists>
@@ -36,20 +38,27 @@ const PageSectionTodoList = ({ content: { title, subtitle, lists } }: Props) => 
           />
           <TodoItems alignRight={index % 2 == 0}>
             {items.map(({ text, complete }, index) => <TodoItem key={text} zIndex={items.length - index}>
-              <TodoContent>{ text }</TodoContent>
+              <TodoContent complete={complete}>{ text }</TodoContent>
               { complete && <TodoStateIcon /> }
             </TodoItem>)}
           </TodoItems>
         </TodoList>)}
       </TodoLists>
     </PageSectionContainer>
-  </Backdrop>
+  </BackdropStars>
 )
 
-const Backdrop = styled.div`
-  background-image: url(${SvgNight}), url(${SvgStars});
+const BackdropStars = styled.div`
+  background-image: url('${SvgStars}');
   background-repeat: no-repeat;
-  background-size: contain;
+`
+
+const BackdropNight = styled.div`
+  background-image: url('${SvgNight}');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 1962px;
+  position: absolute;
 `
 
 const SectionTextHeaderStyled = styled(SectionTextHeader)`
@@ -93,18 +102,24 @@ const TodoItem = styled.div`
 
 const TodoStateIcon = styled.div`
   &:after {
-    content: 'K';
+    width: 32px;
+    height: 32px;
+    display: block;
+    content: '';
+    background-image: url('${SvgCheckmark}');
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 `
 
 const TodoContent = styled.div`
   padding-right: 21px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   display: flex;
   align-items: center;
+  color: ${({ theme, complete }) => complete ? 'var(--color-grey-300)' : theme.textPrimary };
 `
 
 export default PageSectionTodoList
