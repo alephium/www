@@ -10,7 +10,6 @@ import Columns from './Columns/Columns'
 import Column from './Columns/Column'
 import SectionTextTeaser from './SectionTextTeaser'
 import SubsectionTextHeader from './SubsectionTextHeader'
-import NumbersInfo from './NumbersInfo'
 import ModalBlockFlow from './ModalBlockFlow'
 import ModalPoLW from './ModalPoLW'
 import ModalSmartContract from './ModalSmartContract'
@@ -148,24 +147,6 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
           </Columns>
         </PageSectionContainer>
       </VmsSubsection>
-      <ThemeProvider theme={lightTheme}>
-        <NumbersSection>
-          <NumbersPageSectionContainer>
-            <SubsectionTextHeaderStyled
-              title={numbersSectionContent.title}
-              subtitle={numbersSectionContent.subtitle}
-              condensed
-            />
-            <Columns>
-              {numbersSectionContent.columns.map((columnContent) => (
-                <NumbersColumn key={columnContent.number}>
-                  <NumbersInfo {...columnContent} />
-                </NumbersColumn>
-              ))}
-            </Columns>
-          </NumbersPageSectionContainer>
-        </NumbersSection>
-      </ThemeProvider>
       <ModalBlockFlow isOpen={isBlockFlowModalOpen} setIsOpen={setIsBlockFlowModalOpen} />
       <ModalPoLW isOpen={isPoLWModalOpen} setIsOpen={setIsPoLWModalOpen} />
       <ModalSmartContract isOpen={isSmartContractModalOpen} setIsOpen={setIsSmartContractModalOpen} />
@@ -176,53 +157,6 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
 
 const SectionContainer = styled.section`
   position: relative;
-`
-
-const NumbersPageSectionContainer = styled(PageSectionContainer)`
-  max-width: var(--page-width-shrinked);
-`
-
-const NumbersColumn = styled(Column)`
-  display: flex;
-  align-items: center;
-
-  > div {
-    align-self: flex-start;
-  }
-
-  &:not(:first-child) {
-    > div {
-      padding-left: var(--spacing-9);
-
-      @media ${deviceBreakPoints.mobile} {
-        padding-left: 0;
-        padding-top: var(--spacing-9);
-      }
-    }
-
-    &:before {
-      content: '';
-      display: block;
-      width: 2px;
-      height: var(--spacing-9);
-      background-color: ${({ theme }) => theme.separator};
-      flex-shrink: 0;
-
-      @media ${deviceBreakPoints.mobile} {
-        display: none;
-      }
-    }
-  }
-
-  &:not(:last-child) {
-    > div {
-      padding-right: var(--spacing-9);
-
-      @media ${deviceBreakPoints.mobile} {
-        padding-right: 0;
-      }
-    }
-  }
 `
 
 const TopGradient = styled.div`
@@ -328,12 +262,6 @@ const SmartContractSubsection = styled.section`
   @media ${deviceBreakPoints.mobile} {
     padding: var(--spacing-5) 0 var(--spacing-14);
   }
-`
-
-const NumbersSection = styled.section`
-  border-bottom: var(--border-primary-light);
-  background-color: ${({ theme }) => theme.bgPrimary};
-  padding: var(--spacing-11) 0;
 `
 
 PageSectionTechnology = styled(PageSectionTechnology)`
