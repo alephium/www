@@ -46,7 +46,7 @@ const IndexPage = (props: IndexPageProps) => {
         <ThemeProvider theme={darkTheme}>
           <PageSectionEcosystem />
         </ThemeProvider>
-        <ThemeProvider theme={lightTheme}>
+        <ThemeProvider theme={darkTheme}>
           <PageSectionFollowUs content={pageContent.followUsSection} />
         </ThemeProvider>
         <ThemeProvider theme={darkTheme}>
