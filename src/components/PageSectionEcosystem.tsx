@@ -84,7 +84,7 @@ PageSectionEcosystem = styled(PageSectionEcosystem)`
 `
 
 const Subsections = styled.div`
-  margin-top: var(--spacing-15);
+  margin-top: 58px;
 `
 
 const SubsectionImageContainer = styled.div`
@@ -137,7 +137,7 @@ const Subsection = styled.div`
 
 const SubsectionItems = styled.div`
   margin-top: var(--spacing-4);
-  gap: var(--spacing-4);
+  gap: 30px;
   display: flex;
   flex-wrap: wrap;
 `
@@ -158,12 +158,13 @@ const SubsectionItem = styled.div`
   height: 100px;
   display: flex;
   align-items: center;
-  background-color: ${({ theme }) => theme.bgSecondary};
+  background-color: ${({ theme }) => theme.bgTertiary};
+  box-shadow: 0px 22px 30px rgba(0, 0, 0, 0.47);
   padding: var(--spacing-2);
   box-sizing: border-box;
   border-radius: 9px;
   font-size: 13px;
-  border: 1px solid ${({ theme }) => theme.bgSurface};
+  border: 1px solid var(--color-grey-550);
 
   ${SubsectionItemTitleOnHover},
   ${SubsectionItemTitle} {

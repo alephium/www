@@ -32,17 +32,23 @@ TextSnippet = styled(TextSnippet)`
     margin: 0;
   }
 
+  > h3 + .text-subtitle {
+    padding-top: 12px;
+    font-weight: var(--fontWeight-semiBold);
+  }
+
   .text-subtitle {
     font-size: ${({ smallSubtitle, bigSubtitle }) =>
       smallSubtitle ? 'var(--fontSize-14)' : bigSubtitle ? 'var(--fontSize-24)' : 'var(--fontSize-18)'};
     line-height: ${({ smallSubtitle }) => (smallSubtitle ? 'var(--lineHeight-22)' : 'var(--lineHeight-28)')};
+    color: var(--color-grey-250);
   }
 
   .text-content {
     font-size: ${({ bigText }) => (bigText ? 'var(--fontSize-18)' : 'inherit')};
     line-height: ${({ bigText }) => (bigText ? 'var(--lineHeight-28)' : 'var(--lineHeight-22)')};
-    font-weight: 600;
-    color: #979797;
+    font-weight: var(--fontWeight-semiBold);
+    color: var(--color-grey-250);
   }
 
   @media ${deviceBreakPoints.mobile} {
