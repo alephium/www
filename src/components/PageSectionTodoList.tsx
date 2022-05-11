@@ -51,11 +51,13 @@ const PageSectionTodoList = ({ content: { title, subtitle, lists } }: Props) => 
 const BackdropStars = styled.div`
   background-image: url('${SvgStars}');
   background-repeat: no-repeat;
+  background-position-x: center;
 `
 
 const BackdropNight = styled.div`
   background-image: url('${SvgNight}');
   background-repeat: no-repeat;
+  background-position-x: center;
   width: 100%;
   height: 1962px;
   position: absolute;
