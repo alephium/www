@@ -9,6 +9,7 @@ import PageSectionHero, { PageSectionHeroContentType } from '../components/PageS
 import PageSectionIntro, { PageSectionIntroContentType } from '../components/PageSectionIntro'
 import PageSectionTechnology, { PageSectionTechnologyContentType } from '../components/PageSectionTechnology'
 import PageSectionEcosystem from '../components/PageSectionEcosystem'
+import PageSectionTodoList from '../components/PageSectionTodoList'
 import PageSectionSunOverTheMountains from '../components/PageSectionSunOverTheMountains'
 import PageSectionFollowUs, { PageSectionFollowUsContentType } from '../components/PageSectionFollowUs'
 import Footer, { FooterContentType } from '../components/Footer'
@@ -44,6 +45,7 @@ const IndexPage = (props: IndexPageProps) => {
           <PageSectionIntro content={pageContent.introSection} />
           <PageSectionTechnology content={pageContent.technologySection} />
           <PageSectionEcosystem />
+          <PageSectionTodoList content={pageContent.todoListSection}/>
           <PageSectionSunOverTheMountains />
           <PageSectionFollowUs content={pageContent.followUsSection} />
           <Footer content={pageContent.footer} />
@@ -149,6 +151,17 @@ export const pageQuery = graphql`
                 text
                 url
                 newTab
+              }
+            }
+          }
+          todoListSection {
+            title
+            subtitle
+            lists {
+              title
+              items {
+                text
+                complete
               }
             }
           }

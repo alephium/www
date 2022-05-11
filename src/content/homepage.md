@@ -208,6 +208,48 @@ startNowSection:
         url: https://github.com/alephium/
         text: To the codebase
         newTab: true
+todoListSection:
+  title: Todo List
+  subtitle: Building an exciting future
+  lists:
+    - title: Core platform
+      items:
+        - text: Improve the robustness, efficiency and dev-experience of the full node
+          complete: false
+        - text: Improve documentation of the core infrastructure
+          complete: false
+        - text: Improve the Alephium SDK with more features
+          complete: false
+        - text: Improve the robustness and efficiency of the explorer backend
+          complete: false
+        - text: Leman Network Upgrade for cross-chain interoperability
+          complete: false
+        - text: Bridge development, testing, and launch
+          complete: false
+        - text: DEX development, testing, and launch
+          complete: false
+        - text: dApp support in the desktop wallet
+          complete: false
+        - text: Hardware wallet integration
+          complete: false
+        - text: Mobile wallet
+          complete: false
+        - text: Include chain statistics and information on the explorer
+          complete: true
+    - title: Ecosystem
+      items:
+        - text: Key industry events (PBWS, EthCCand others)
+          complete: false
+        - text: Community engagement & marketing (hackathon, AMAs, competitions...)
+          complete: false
+        - text: Additional CEX listing
+          complete: false
+        - text: DEX listing (after the deployment of the bridge)
+          complete: false
+        - text: 3rd party dApps (NFT, DEX, stablecoin) on Alephium
+          complete: false
+        - text: Website revamp
+          complete: true
 followUsSection:
   title: Follow us
   subtitle: Join the community
