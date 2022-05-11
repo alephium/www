@@ -47,12 +47,6 @@ let PageSectionIntro: FC<PageSectionIntroProps> = ({ className, content }) => {
               ))}
             </IntroColumnContent>
           </Column>
-          {/* TODO remove dead code <Column>
-          <SectionTextHeader title="Feed" subtitle="What's cooking?" />
-          <IntroColumnContent>
-            <Feed />
-          </IntroColumnContent>
-        </Column> */}
         </IntroColumns>
       </PageSectionContainer>
     </section>
