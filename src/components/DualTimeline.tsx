@@ -63,13 +63,13 @@ const DualTimeline = ({ timelines }: Props) => {
               }
               <Track>
                 <HeadingTextForWidthExpansion>{ headings[0] }</HeadingTextForWidthExpansion>
-                <Piece>{ entryA && <Dot /> }</Piece>
+                <Piece>{ entryA && <Dot isMajor={entryA.isMajor} /> }</Piece>
               </Track>
             </Entry>
             <Entry>
               <Track>
                 <HeadingTextForWidthExpansion>{ headings[1] }</HeadingTextForWidthExpansion>
-                <Piece>{ entryB && <Dot /> }</Piece>
+                <Piece>{ entryB && <Dot isMajor={entryB.isMajor }/> }</Piece>
               </Track>
               { entryB &&
                 <Data>
@@ -82,27 +82,32 @@ const DualTimeline = ({ timelines }: Props) => {
         )}
       </Entries>
     </>)}
+    <LineStartsEnds headings={headings} />
     <LineStartsEnds ends headings={headings} />
   </Container>
 }
 
 const Container = styled.div`
   width: 100%;
+  margin-bottom: 127px;
 `
 
 const Text = styled.div``
-const When = styled.div``
+const When = styled.div`
+  color: #555555;
+`
 
 const Dot = styled.div`
   position: relative;
-  left: -4px;
-  top: -8px;
+  left: -9px;
+  top: calc((18px + 4px) / -2);
 
   ::after {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     border-radius: 100%;
-    background-color: red;
+    background: ${({ isMajor }) => isMajor ? 'linear-gradient(180deg, #00C2FF 0%, #2400FF 100%);' : 'white'};
+    border: 4px solid black;
     position: absolute;
     content: '';
     display: block;
@@ -121,6 +126,7 @@ const Data = styled.div`
   display: flex;
   flex-direction: column;
   text-align: ${({ right }) => right ? 'right' : 'left'};
+  padding-bottom: 13px;
 `
 
 const Piece = styled.div`
@@ -128,12 +134,15 @@ const Piece = styled.div`
   align-items: center;
   width: 8px;
   height: 100%;
-  background-color: blue;
+  background-color: #555555;
+  padding-bottom: 13px;
 `
 
 const YearData = styled.div`
   width: 100%;
   padding-bottom: 2rem;
+  font-weight: var(--fontWeight-semiBold);
+  font-size: var(--fontSize-28);
 `
 
 let Year = ({ value, headings }) =>
@@ -170,31 +179,39 @@ const LineStartsEnds = ({ headings, starts, ends }) =>
       <Entry right={index % 2 == 0}>
         <Track>
           <HeadingTextForWidthExpansion>{ text }</HeadingTextForWidthExpansion>
-          { (starts && <LineStart />) || (ends && <LineEnd />) || <LineEnd /> }
+          { (starts && <LineStart />) || (ends && <LineEnd />) || <LineExtra /> }
         </Track>
       </Entry>
     )}
   </Pair>
 </Entries>
 
+const LineExtra = styled.div`
+  width: 8px;
+  height: 8px;
+  background-color: #555555;
+`
+
 const LineEnd = styled.div`
   width: 8px;
   height: 8px;
   border-radius: 0 0 50% 50%;
-  background-color: green;
+  background-color: #555555;
 `
 
 const LineStart = styled.div`
   width: 8px;
   height: 8px;
   border-radius: 50% 50% 0 0;
-  background-color: green;
+  background-color: #555555;
 `
 
 const HeadingTextForWidthExpansion = styled.div`
   visibility: hidden;
   height: 0;
   white-space: nowrap;
+  font-weight: var(--fontWeight-semiBold);
+  font-size: var(--fontSize-28);
 `
 
 const Track = styled.div`
@@ -210,6 +227,8 @@ const Entry = styled.div`
   align-items: center;
   align-self: stretch;
   justify-content: ${({ right }) => right ? 'right' : 'left'};
+  font-weight: var(--fontWeight-semiBold);
+  font-size: var(--fontSize-18);
 `
 
 const Pair = styled.div`
@@ -221,7 +240,7 @@ const Pair = styled.div`
 
 const Entries = styled.div`
   display: flex;
-  width: 60%;
+  width: 100%;
   margin: auto;
   justify-content: center;
   flex-direction: column;
@@ -233,12 +252,14 @@ const Headings = styled.div`
   display: flex;
   gap: 36px;
   justify-content: center;
+  padding-bottom: 79px;
 `
 
 const Heading = styled.div`
   width: 50%;
-  margin-bottom: 1rem;
   text-align: ${({ right }) => right ? 'right' : 'left'};
+  font-weight: var(--fontWeight-semiBold);
+  font-size: var(--fontSize-28);
 `
 
 export default DualTimeline
