@@ -9,6 +9,7 @@ import PageSectionHero, { PageSectionHeroContentType } from '../components/PageS
 import PageSectionIntro, { PageSectionIntroContentType } from '../components/PageSectionIntro'
 import PageSectionTechnology, { PageSectionTechnologyContentType } from '../components/PageSectionTechnology'
 import PageSectionEcosystem from '../components/PageSectionEcosystem'
+import PageSectionMilestones from '../components/PageSectionMilestones'
 import PageSectionTodoList from '../components/PageSectionTodoList'
 import PageSectionSunOverTheMountains from '../components/PageSectionSunOverTheMountains'
 import PageSectionFollowUs, { PageSectionFollowUsContentType } from '../components/PageSectionFollowUs'
@@ -45,6 +46,7 @@ const IndexPage = (props: IndexPageProps) => {
           <PageSectionIntro content={pageContent.introSection} />
           <PageSectionTechnology content={pageContent.technologySection} />
           <PageSectionEcosystem />
+          <PageSectionMilestones />
           <PageSectionTodoList content={pageContent.todoListSection}/>
           <PageSectionSunOverTheMountains />
           <PageSectionFollowUs content={pageContent.followUsSection} />
