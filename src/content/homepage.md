@@ -171,40 +171,70 @@ milestonesSection:
     - year: 2019
       entries:
       - order: 0
-        text: This is a test
-        when: Q2.2019
-        isMajor: false
-      - order: 1
-        text: This is a test
-        when: Q2.2019
-        isMajor: false
-      - order: 2
-        text: This is a test
-        when: Q2.2019
+        text: Whitepapers publicly released
+        when: '02.2019'
         isMajor: false
     - year: 2020
       entries:
-      - order: 2
-        text: This is a test
-        when: Q2.2019
+      - order: 0
+        text: Alpha version of the core sharding protocol implemented and tested on AWS 
+        when: 'Q1.2020'
         isMajor: false
+      - order: 1
+        text: Testnet launch
+        when: '12.2020'
+        isMajor: false
+    - year: 2021
+      entries:
+      - order: 0
+        text: Smart contract support
+        when: 'Q1.2021'
+        isMajor: false
+      - order: 1
+        text: Desktop wallet & explorer public release
+        when: '09.2021'
+        isMajor: false
+      - order: 2
+        text: Mainnet launch
+        when: '08.11.2021'
+        isMajor: true
+    - year: 2022
+      entries:
+      - order: 0
+        text: First dApp PoC
+        when: '01.2022'
+        isMajor: true
   - title: Ecosystem
     years:
     - year: 2019
+    - year: 2020
+    - year: 2021
+      entries:
+      - order: 2
+        text: 3rd party cloud mining service at Mainnet Launch
+        when: '08.11.2021'
+        isMajor: false
+      - order: 3
+        text: Joined the UTXO alliance & Bitcoin Association Switzerland
+        when: '11.2021'
+        isMajor: false
+      - order: 4
+        text: 'Mining ecosystem development: miners development, reference mining pool and pool integration.'
+        when: 'Q4.2021'
+        isMajor: false
+      - order: 5
+        text: First community mining pool
+        when: '13.12.2021'
+        isMajor: false
+    - year: 2022
       entries:
       - order: 0
-        text: This is a test
-        when: Q2.2019
+        text: 'First exchange listing: Gate.io'
+        when: '12.01.2022'
         isMajor: false
-      - order: 2
-        text: This is a test
-        when: Q2.2019
-        isMajor: true
-    - year: 2020
-      entries:
-      - order: 2
-        text: This is a test
-        when: Q2.2019
+      - order: 1
+        text: 9 mining pools on Alephium
+        when: '02.2022'
         isMajor: false
 todoListSection:
   title: Todo List

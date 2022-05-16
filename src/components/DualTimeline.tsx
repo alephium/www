@@ -52,7 +52,7 @@ const DualTimeline = ({ timelines }: Props) => {
     { timelines[0].years.map(({ year, entries }, index) => <>
       <Year value={year} headings={headings} />
       <Entries>
-        { sortMerge(entries, timelines[1].years[index].entries).map(([entryA, entryB], index) =>
+        { sortMerge(entries, timelines[1]?.years[index]?.entries ?? []).map(([entryA, entryB], index) =>
           <Pair>
             <Entry right>
               { entryA &&
@@ -126,7 +126,7 @@ const Data = styled.div`
   display: flex;
   flex-direction: column;
   text-align: ${({ right }) => right ? 'right' : 'left'};
-  padding-bottom: 13px;
+  padding-bottom: 54px;
 `
 
 const Piece = styled.div`
@@ -135,12 +135,12 @@ const Piece = styled.div`
   width: 8px;
   height: 100%;
   background-color: #555555;
-  padding-bottom: 13px;
+  padding-bottom: 54px;
 `
 
 const YearData = styled.div`
   width: 100%;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   font-weight: var(--fontWeight-semiBold);
   font-size: var(--fontSize-28);
 `
