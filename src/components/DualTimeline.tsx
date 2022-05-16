@@ -23,14 +23,14 @@ function sortMerge(as, bs) {
   const aSorted = as.sort(diff)
   const bSorted = bs.sort(diff)
 
-  const aNewList = aSorted.reduce((list, a) => bSorted.some((b) => b.order === a.order)
-    ? [...list, [a, a]]
-    : [...list, [a, undefined]]
-  , [])
-  const bNewList = bSorted.reduce((list, b) => aSorted.some((a) => a.order === b.order)
-    ? [...list, [b, b]]
-    : [...list, [undefined, b]]
-  , [])
+  const aNewList = aSorted.reduce((list, a) => {
+    const b = bSorted.find((b) => b.order === a.order)
+    return b ? [...list, [a, b]] : [...list, [a, undefined]]
+  }, [])
+  const bNewList = bSorted.reduce((list, b) => {
+    const a = aSorted.some((a) => a.order === b.order)
+    return a ? [...list, [a, b]] : [...list, [undefined, b]]
+  } , [])
   const newList = aNewList.concat(bNewList).sort((a, b) => {
     if (a[0] !== undefined && b[0] !== undefined) return a[0].order - b[0].order
     if (a[1] !== undefined && b[1] !== undefined) return a[1].order - b[1].order
