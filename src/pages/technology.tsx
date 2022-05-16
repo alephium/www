@@ -5,22 +5,17 @@ import GlobalStyle from '../styles/global-style'
 import { darkTheme } from '../styles/themes'
 
 import Seo from '../components/Seo'
-import PageSectionHero, { PageSectionHeroContentType } from '../components/PageSectionHero'
-import PageSectionIntro, { PageSectionIntroContentType } from '../components/PageSectionIntro'
-import PageSectionEcosystem from '../components/PageSectionEcosystem'
-import PageSectionMilestones from '../components/PageSectionMilestones'
-import PageSectionTodoList from '../components/PageSectionTodoList'
+import PageSectionTechnology, { PageSectionTechnologyContentType } from '../components/PageSectionTechnology'
 import PageSectionSunOverTheMountains from '../components/PageSectionSunOverTheMountains'
 import PageSectionFollowUs, { PageSectionFollowUsContentType } from '../components/PageSectionFollowUs'
 import Footer, { FooterContentType } from '../components/Footer'
 
-interface IndexPageProps extends PageProps {
+interface TechnologyPageProps extends PageProps {
   data: {
-    homepage: {
+    technology: {
       nodes: {
         frontmatter: {
-          headerSection: PageSectionHeroContentType
-          introSection: PageSectionIntroContentType
+          technologySection: PageSectionTechnologyContentType
           followUsSection: PageSectionFollowUsContentType
           footer: FooterContentType
         }
@@ -29,7 +24,7 @@ interface IndexPageProps extends PageProps {
   }
 }
 
-const IndexPage = (props: IndexPageProps) => {
+const TechnologyPage = (props: TechnologyPageProps) => {
   const pageContent = props.data.homepage.nodes[0].frontmatter
 
   return (
@@ -40,11 +35,7 @@ const IndexPage = (props: IndexPageProps) => {
       </ThemeProvider>
       <main>
         <ThemeProvider theme={darkTheme}>
-          <PageSectionHero content={pageContent.headerSection} />
-          <PageSectionIntro content={pageContent.introSection} />
-          <PageSectionEcosystem />
-          <PageSectionMilestones content={pageContent.milestonesSection} />
-          <PageSectionTodoList content={pageContent.todoListSection} />
+          <PageSectionTechnology content={pageContent.technologySection} />
           <PageSectionSunOverTheMountains />
           <PageSectionFollowUs content={pageContent.followUsSection} />
           <Footer content={pageContent.footer} />
@@ -54,75 +45,61 @@ const IndexPage = (props: IndexPageProps) => {
   )
 }
 
-export default IndexPage
+export default TechnologyPage
 
 export const pageQuery = graphql`
   query {
     homepage: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/homepage.md/" } }) {
       nodes {
         frontmatter {
-          headerSection {
-            dark {
-              title
-              subtitle
-            }
-            light {
-              title
-              subtitle
-            }
-          }
-          introSection {
+          technologySection {
             title
             subtitle
-            cards {
+            blockFlowSection {
               title
               description
-              image {
-                publicURL
-              }
-              link {
+              cardText
+              links {
                 text
                 url
                 newTab
               }
             }
-          }
-          ecosystemSection {
-            title
-            subtitle
-            subsections {
+            polwSection {
               title
               description
-              items {
-                title
-                url
-              }
-            }
-          }
-          milestonesSection {
-            title
-            subtitle
-            timelines {
-              title
-              years {
-                year
-                entries {
-                  order
-                  text
-                  when
-                  isMajor
-                }
-              }
-            }
-          }
-          todoListSection {
-            title
-            subtitle
-            lists {
-              title
-              items {
+              cardText
+              links {
                 text
-                complete
+                url
+                newTab
+              }
+            }
+            smartContractSection {
+              title
+              description
+              cardText
+              links {
+                text
+                url
+                newTab
+              }
+            }
+            vmsSection {
+              title
+              description
+              cardText
+              links {
+                text
+                newTab
+              }
+            }
+            numbersSection {
+              title
+              subtitle
+              columns {
+                number
+                description
               }
             }
           }
