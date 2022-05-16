@@ -128,35 +128,6 @@ export default {
               ]
             },
             {
-              label: 'Start now section',
-              name: 'startNowSection',
-              widget: 'object',
-              required: true,
-              fields: [
-                titleFieldConfig,
-                subtitleFieldConfig,
-                descriptionFieldConfig,
-                {
-                  label: 'Cards',
-                  name: 'cards',
-                  widget: 'list',
-                  required: true,
-                  fields: [
-                    titleFieldConfig,
-                    { label: 'Subtitle', name: 'subtitle', widget: 'text', required: false },
-                    descriptionFieldConfig,
-                    {
-                      label: 'Link',
-                      name: 'link',
-                      widget: 'object',
-                      required: true,
-                      fields: linkFieldsConfig
-                    }
-                  ]
-                }
-              ]
-            },
-            {
               label: 'Follow us section',
               name: 'followUsSection',
               widget: 'object',

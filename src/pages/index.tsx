@@ -141,21 +141,6 @@ export const pageQuery = graphql`
               }
             }
           }
-          startNowSection {
-            title
-            subtitle
-            description
-            cards {
-              title
-              subtitle
-              description
-              link {
-                text
-                url
-                newTab
-              }
-            }
-          }
           todoListSection {
             title
             subtitle

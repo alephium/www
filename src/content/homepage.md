@@ -162,52 +162,6 @@ ecosystemSection:
         - title: 'EnigmaPool'
           logo: ''
           url: https://enigmapool.com/
-startNowSection:
-  title: Start now
-  subtitle: Build and contribute
-  description: Alephium is already live. You can start building, earning, and
-    contributing right now.
-  cards:
-    - title: Start mining
-      subtitle: Earn ALPH tokens
-      description: Mining is crucial to secure and verify transactions on the Alephium
-        blockchain. Contribute to the growth and security of our network and
-        receive ALPH block rewards. Currently, we support CPU and GPU mining and
-        will soon offer FPGA mining support
-      link:
-        url: https://wiki.alephium.org/mining/Solo-Mining-Guide
-        text: Instructions
-        newTab: true
-    - title: Build your own
-      subtitle: ''
-      description: Start building your own smart contracts, decentralized apps and 
-        protocols. Alephium is made to build powerful, secure, and scalable dApps. 
-        Its stateful UTXO model combines the advantages of both the UTXO model and 
-        account model. 
-      link:
-        url: https://github.com/alephium/
-        text: Codebase
-        newTab: true
-    - title: Work @ Alephium
-      subtitle: ''
-      description: Our team & community members are our biggest assets. With them, 
-        with you, we plan to make Alephium the preferred blockchain for powerful, 
-        accessible and secure dApps & web 3.0. If you think you're uniquely suited to 
-        support Alephium, we want to hear from you. We're based in beautiful 
-        Switzerland, but you can contribute from anywhere in the world.
-      link:
-        url: https://pandasoftware.bamboohr.com/jobs/
-        text: Job openings
-        newTab: true
-    - title: Contribute to the code
-      subtitle: Alephium is open source!
-      description: Start testing and report issues or contribute to the Alephium
-        codebase. We would love to see your contribution integrated into the
-        Alephium codebase!
-      link:
-        url: https://github.com/alephium/
-        text: To the codebase
-        newTab: true
 todoListSection:
   title: Todo List
   subtitle: Building an exciting future
