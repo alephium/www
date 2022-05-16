@@ -35,6 +35,50 @@ export default {
         preview: false
       },
       files: [
+        { label: 'Technology',
+          name: 'technology',
+          file: 'src/content/technology.md',
+          fields: [
+            {
+              label: 'Technology section',
+              name: 'technologySection',
+              widget: 'object',
+              required: true,
+              fields: [
+                titleFieldConfig,
+                subtitleFieldConfig,
+                {
+                  label: 'BlockFlow section',
+                  name: 'blockFlowSection',
+                  widget: 'object',
+                  required: true,
+                  fields: technologySubsectionFields
+                },
+                {
+                  label: 'PoLW section',
+                  name: 'polwSection',
+                  widget: 'object',
+                  required: true,
+                  fields: technologySubsectionFields
+                },
+                {
+                  label: 'Smart contracts section',
+                  name: 'smartContractSection',
+                  widget: 'object',
+                  required: true,
+                  fields: technologySubsectionFields
+                },
+                {
+                  label: 'VMs section',
+                  name: 'vmsSection',
+                  widget: 'object',
+                  required: true,
+                  fields: technologySubsectionFields
+                }
+              ]
+            },
+          ]
+        },
         {
           label: 'Home page',
           name: 'home',
@@ -86,44 +130,6 @@ export default {
                       fields: linkFieldsConfig
                     }
                   ]
-                }
-              ]
-            },
-            {
-              label: 'Technology section',
-              name: 'technologySection',
-              widget: 'object',
-              required: true,
-              fields: [
-                titleFieldConfig,
-                subtitleFieldConfig,
-                {
-                  label: 'BlockFlow section',
-                  name: 'blockFlowSection',
-                  widget: 'object',
-                  required: true,
-                  fields: technologySubsectionFields
-                },
-                {
-                  label: 'PoLW section',
-                  name: 'polwSection',
-                  widget: 'object',
-                  required: true,
-                  fields: technologySubsectionFields
-                },
-                {
-                  label: 'Smart contracts section',
-                  name: 'smartContractSection',
-                  widget: 'object',
-                  required: true,
-                  fields: technologySubsectionFields
-                },
-                {
-                  label: 'VMs section',
-                  name: 'vmsSection',
-                  widget: 'object',
-                  required: true,
-                  fields: technologySubsectionFields
                 }
               ]
             },

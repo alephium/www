@@ -16,16 +16,21 @@ interface TechnologyPageProps extends PageProps {
       nodes: {
         frontmatter: {
           technologySection: PageSectionTechnologyContentType
-          followUsSection: PageSectionFollowUsContentType
-          footer: FooterContentType
         }
       }[]
+    },
+    homepage: {
+      followUsSection: PageSectionFollowUsContentType
+      footer: FooterContentType
     }
   }
 }
 
 const TechnologyPage = (props: TechnologyPageProps) => {
-  const pageContent = props.data.homepage.nodes[0].frontmatter
+  const content = {
+    page: props.data.technology.nodes[0].frontmatter,
+    general: props.data.homepage.nodes[0].frontmatter
+  }
 
   return (
     <>
@@ -35,10 +40,10 @@ const TechnologyPage = (props: TechnologyPageProps) => {
       </ThemeProvider>
       <main>
         <ThemeProvider theme={darkTheme}>
-          <PageSectionTechnology content={pageContent.technologySection} />
+          <PageSectionTechnology content={content.page.technologySection} />
           <PageSectionSunOverTheMountains />
-          <PageSectionFollowUs content={pageContent.followUsSection} />
-          <Footer content={pageContent.footer} />
+          <PageSectionFollowUs content={content.general.followUsSection} />
+          <Footer content={content.general.footer} />
         </ThemeProvider>
       </main>
     </>
@@ -49,7 +54,7 @@ export default TechnologyPage
 
 export const pageQuery = graphql`
   query {
-    homepage: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/homepage.md/" } }) {
+    technology: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/technology.md/" } }) {
       nodes {
         frontmatter {
           technologySection {
@@ -97,12 +102,14 @@ export const pageQuery = graphql`
             numbersSection {
               title
               subtitle
-              columns {
-                number
-                description
-              }
             }
           }
+        }
+      }
+    }
+    homepage: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/homepage.md/" } }) {
+      nodes {
+        frontmatter {
           followUsSection {
             title
             subtitle
