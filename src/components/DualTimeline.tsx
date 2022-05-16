@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { uniqBy } from 'lodash'
 
-type Timeline = {
+export type Timeline = {
   title: string
   years: {
     year: string

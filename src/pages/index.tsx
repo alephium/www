@@ -46,8 +46,8 @@ const IndexPage = (props: IndexPageProps) => {
           <PageSectionIntro content={pageContent.introSection} />
           <PageSectionTechnology content={pageContent.technologySection} />
           <PageSectionEcosystem />
-          <PageSectionMilestones />
-          <PageSectionTodoList content={pageContent.todoListSection}/>
+          <PageSectionMilestones content={pageContent.milestonesSection} />
+          <PageSectionTodoList content={pageContent.todoListSection} />
           <PageSectionSunOverTheMountains />
           <PageSectionFollowUs content={pageContent.followUsSection} />
           <Footer content={pageContent.footer} />
@@ -138,6 +138,34 @@ export const pageQuery = graphql`
               columns {
                 number
                 description
+              }
+            }
+          }
+          ecosystemSection {
+            title
+            subtitle
+            subsections {
+              title
+              description
+              items {
+                title
+                url
+              }
+            }
+          }
+          milestonesSection {
+            title
+            subtitle
+            timelines {
+              title
+              years {
+                year
+                entries {
+                  order
+                  text
+                  when
+                  isMajor
+                }
               }
             }
           }

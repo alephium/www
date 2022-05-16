@@ -162,6 +162,50 @@ ecosystemSection:
         - title: 'EnigmaPool'
           logo: ''
           url: https://enigmapool.com/
+milestonesSection:
+  title: Completed milestones
+  subtitle: A success story
+  timelines:
+  - title: Core platform
+    years:
+    - year: 2019
+      entries:
+      - order: 0
+        text: This is a test
+        when: Q2.2019
+        isMajor: false
+      - order: 1
+        text: This is a test
+        when: Q2.2019
+        isMajor: false
+      - order: 2
+        text: This is a test
+        when: Q2.2019
+        isMajor: false
+    - year: 2020
+      entries:
+      - order: 2
+        text: This is a test
+        when: Q2.2019
+        isMajor: false
+  - title: Ecosystem
+    years:
+    - year: 2019
+      entries:
+      - order: 0
+        text: This is a test
+        when: Q2.2019
+        isMajor: false
+      - order: 2
+        text: This is a test
+        when: Q2.2019
+        isMajor: true
+    - year: 2020
+      entries:
+      - order: 2
+        text: This is a test
+        when: Q2.2019
+        isMajor: false
 todoListSection:
   title: Todo List
   subtitle: Building an exciting future
