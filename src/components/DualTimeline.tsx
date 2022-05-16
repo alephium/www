@@ -57,23 +57,17 @@ const DualTimeline = ({ timelines }: Props) => {
             <Entry right>
               { entryA &&
                 <Data right>
-                  <Text>{ entryA.text }</Text>
+                  <Text isMajor={entryA?.isMajor}>{ entryA.text }</Text>
                   <When>{ entryA.when }</When>
                 </Data>
               }
-              <Track>
-                <HeadingTextForWidthExpansion>{ headings[0] }</HeadingTextForWidthExpansion>
-                <Piece>{ entryA && <Dot isMajor={entryA.isMajor} /> }</Piece>
-              </Track>
+              <Track forHeading={headings[0]} entry={entryA} />
             </Entry>
             <Entry>
-              <Track>
-                <HeadingTextForWidthExpansion>{ headings[1] }</HeadingTextForWidthExpansion>
-                <Piece>{ entryB && <Dot isMajor={entryB.isMajor }/> }</Piece>
-              </Track>
+              <Track forHeading={headings[1]} entry={entryB} />
               { entryB &&
                 <Data>
-                  <Text>{ entryB.text }</Text>
+                  <Text isMajor={entryB?.isMajor}>{ entryB.text }</Text>
                   <When>{ entryB.when }</When>
                 </Data>
               }
@@ -92,7 +86,15 @@ const Container = styled.div`
   margin-bottom: 127px;
 `
 
-const Text = styled.div``
+const Text = styled.div`
+  ${({ isMajor }) => isMajor && `
+    background: linear-gradient(180deg, #00C2FF 40%, #2400FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  `}
+`
 const When = styled.div`
   color: #555555;
 `
@@ -127,6 +129,8 @@ const Data = styled.div`
   flex-direction: column;
   text-align: ${({ right }) => right ? 'right' : 'left'};
   padding-bottom: 54px;
+  position: relative;
+  ${({ right }) => right ? 'right: -3rem;' : 'left: -2rem'}
 `
 
 const Piece = styled.div`
@@ -150,16 +154,10 @@ let Year = ({ value, headings }) =>
   <Pair>
     <Entry right>
       <YearData>{ value }</YearData>
-      <Track>
-        <HeadingTextForWidthExpansion>{ headings[0] }</HeadingTextForWidthExpansion>
-        <Piece />
-      </Track>
+      <Track forHeading={headings[0]} />
     </Entry>
     <Entry>
-      <Track>
-        <HeadingTextForWidthExpansion>{ headings[1] }</HeadingTextForWidthExpansion>
-        <Piece />
-      </Track>
+      <Track forHeading={headings[1]} />
     </Entry>
     <YearLine />
   </Pair>
@@ -177,10 +175,10 @@ const LineStartsEnds = ({ headings, starts, ends }) =>
   <Pair>
     { headings.map((text, index) =>
       <Entry right={index % 2 == 0}>
-        <Track>
+        <TrackContainer>
           <HeadingTextForWidthExpansion>{ text }</HeadingTextForWidthExpansion>
           { (starts && <LineStart />) || (ends && <LineEnd />) || <LineExtra /> }
-        </Track>
+        </TrackContainer>
       </Entry>
     )}
   </Pair>
@@ -214,12 +212,19 @@ const HeadingTextForWidthExpansion = styled.div`
   font-size: var(--fontSize-28);
 `
 
-const Track = styled.div`
+const TrackContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   align-self: stretch;
 `
+
+const Track = ({ forHeading, entry }) =>
+  <TrackContainer>
+    <HeadingTextForWidthExpansion>{ forHeading }</HeadingTextForWidthExpansion>
+    <Piece>{ entry && <Dot isMajor={entry.isMajor} /> }</Piece>
+  </TrackContainer>
+
 
 const Entry = styled.div`
   width: 50%;
