@@ -50,72 +50,32 @@ technologySection:
   title: Technology
   subtitle: What makes Alephium different?
   blockFlowSection:
-    title: "Blockflow: sharding on BTC's proven foundations"
-    description: Alephium is built on the BlockFlow algorithm which delivers
-      efficient and practical UTXO sharding. Inspired by distributed computing
-      models, it combines DAG (Directed Acyclic Graph) and sharding. Being much
-      more lightweight than other sharding methods, BlockFlow also natively
-      supports single-step cross shard transactions, making the Alephium UX as
-      smooth as any single chain platform.
-    cardText: BlockFlow combines DAG and sharding to enable an efficient, secure and
-      verifiable consensus algorithm.
-    links:
-      - text: More details
-      - text: White paper
-        url: https://github.com/alephium/white-paper/blob/master/alephium.pdf
-        newTab: true
-  polwSection:
-    title: Proof of Less Work (PoLW)
-    description: PoLW uses a clever combination of physical work and token economics
-      to dynamically adjust the work required to mine new blocks, ensuring a
-      reduced energy footprint compared to classic Nakamoto PoW mining.
-    cardText: Blockchain's success ultimately depends on its sustainability.
-    links:
-      - text: More details
-        url:
-        newTab: false
-      - text: PoLW white paper
-        url: https://github.com/alephium/white-paper/blob/master/polw.pdf
-        newTab: true
+    title: "Scalable & Sharded"
+    description: Alephium is built on a novel and complete sharding algorithm called
+      BlockFlow. It improves on the UTXO model of BTC to make it scalable, and
+      uses DAG data structure to reach consensus between different shards. This
+      will allow up to 10’000 Transactions Per Second (currently more than
+      400 TPS vs Bitcoins 7 TPS).
   smartContractSection:
-    title: Smart contract design
-    description: Alephium's smart contracts have been designed and implemented to be
-      scalable, functional, practical with a focus on security and reduced state
-      usage. Its stateful UTXO model combines the advantages of the UTXO model
-      and the account model.
-    cardText: A new programming paradigm for smart contracts and dApps.
-    links:
-      - text: More details
-        url:
-        newTab: false
-      - text: Guide
-        url: https://wiki.alephium.org/dapps/Technical-Guide-With-A-Fullnode
-        newTab: true
+    title: Programmable & Secure
+    description: Alephium introduces the stateful UTXO model offering layer-1
+      scalability and the same level of programmability as the account model
+      used on ETH, whilst being more secure.
+  polwSection:
+    title: Efficiency in Energy Consumption
+    description: Alephium employs "Proof of Less Work", which combines physical work
+      and coin economics to dynamically adjust the work required to mine new
+      blocks. Given the same network conditions, Alephium uses ~90% less energy
+      compared to Bitcoin.
   vmsSection:
-    title: Novel VM
-    description: Alephium uses a simple, safe and flexible virtual machine 
-      designed for dApps, and more specifically DeFi. Its dedicated VM leverages 
-      and improves on the UTXO model to address DeFi’s security issues and execution 
-      bottleneck. Our VM focuses on contract security and IO performance. The key 
-      features are its first-class token system, multiple-caller contract and 
-      fine-grained execution model. 
-    cardText: VMs can be a big bottleneck when it comes to Blockchain performances.
-      Not on Alephium.
-    links:
-      - text: More details
-        url:
-        newTab: false
-  numbersSection:
-    title: Some numbers
-    subtitle: We're passionate and committed to outstanding quality in everything we
-      do. We took the necessary time to transform theory into actual technologies.
-    columns:
-      - number: '16'
-        description: shards running on mainnet.
-      - number: 100MB
-        description: RAM needed for a Raspberry-Pi based full node.
-      - number: '>3 years'
-        description: of Research & Development.
+    title: Its own Virtual Machine & Programming Language.
+    description: The Alphred Virtual Machine solves many of the critical issues of the
+      current dApps platforms with huge improvements on security, development
+      experience and introduces new paradigms such as trustless P2P smart
+      contracts transactions. Alephium’s programming language, Ralph, has a
+      syntax inspired by the Rust programming language. It allows for building
+      efficient and secure smart contracts easily. It's specifically designed to
+      facilitate the creation of DeFi dApps!
 ecosystemSection:
   title: Ecosystem
   subtitle: Growing fast

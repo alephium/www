@@ -34,14 +34,6 @@ export interface PageSectionTechnologyContentType {
   polwSection: PageSectionTechnologySubsectionProps
   smartContractSection: PageSectionTechnologySubsectionProps
   vmsSection: PageSectionTechnologySubsectionProps
-  numbersSection: {
-    title: string
-    subtitle: string
-    columns: {
-      number: string
-      description: string
-    }[]
-  }
 }
 
 interface PageSectionTechnologySubsectionProps {
@@ -54,9 +46,10 @@ interface PageSectionTechnologySubsectionProps {
 interface PageSectionTechnologyProps {
   className?: string
   content: PageSectionTechnologyContentType
+  minimal?: boolean
 }
 
-let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, content }) => {
+let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, content, minimal }) => {
   const [isBlockFlowModalOpen, setIsBlockFlowModalOpen] = useState(false)
   const [isPoLWModalOpen, setIsPoLWModalOpen] = useState(false)
   const [isSmartContractModalOpen, setIsSmartContractModalOpen] = useState(false)
@@ -66,14 +59,15 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
   const smartContractSectionContent = content.smartContractSection
   const polwSectionContent = content.polwSection
   const vmsSectionContent = content.vmsSection
-  const numbersSectionContent = content.numbersSection
-  blockFlowSectionContent.links[0] = { ...blockFlowSectionContent.links[0], openModal: setIsBlockFlowModalOpen }
-  polwSectionContent.links[0] = { ...polwSectionContent.links[0], openModal: setIsPoLWModalOpen }
-  smartContractSectionContent.links[0] = {
-    ...smartContractSectionContent.links[0],
-    openModal: setIsSmartContractModalOpen
+  if (!minimal) {
+    blockFlowSectionContent.links[0] = { ...blockFlowSectionContent.links[0], openModal: setIsBlockFlowModalOpen }
+    polwSectionContent.links[0] = { ...polwSectionContent.links[0], openModal: setIsPoLWModalOpen }
+    smartContractSectionContent.links[0] = {
+      ...smartContractSectionContent.links[0],
+      openModal: setIsSmartContractModalOpen
+    }
+    vmsSectionContent.links[0] = { ...vmsSectionContent.links[0], openModal: setIsVmsModalOpen }
   }
-  vmsSectionContent.links[0] = { ...vmsSectionContent.links[0], openModal: setIsVmsModalOpen }
 
   const columnsProps = {
     gap: '4.5rem'
@@ -94,6 +88,8 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
                 {...blockFlowSectionContent}
                 IconComponent={StackImage}
                 trackingName="technology-section:blockflow"
+                link={!minimal}
+                tipbox={!minimal}
               />
             </Column>
           </Columns>
@@ -110,6 +106,8 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
                 {...polwSectionContent}
                 IconComponent={LeafImage}
                 trackingName="technology-section:polw"
+                link={!minimal}
+                tipbox={!minimal}
               />
             </Column>
             <Column />
@@ -127,6 +125,8 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
                 {...smartContractSectionContent}
                 IconComponent={StackImage}
                 trackingName="technology-section:smart-contract"
+                link={!minimal}
+                tipbox={!minimal}
               />
             </Column>
           </Columns>
@@ -140,6 +140,8 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
                 {...vmsSectionContent}
                 IconComponent={VmDotsImage}
                 trackingName="technology-section:vm"
+                link={!minimal}
+                tipbox={!minimal}
               />
             </Column>
             <IllustrationColumn>
@@ -148,24 +150,6 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
           </Columns>
         </PageSectionContainer>
       </VmsSubsection>
-      <ThemeProvider theme={lightTheme}>
-        <NumbersSection>
-          <NumbersPageSectionContainer>
-            <SubsectionTextHeaderStyled
-              title={numbersSectionContent.title}
-              subtitle={numbersSectionContent.subtitle}
-              condensed
-            />
-            <Columns>
-              {numbersSectionContent.columns.map((columnContent) => (
-                <NumbersColumn key={columnContent.number}>
-                  <NumbersInfo {...columnContent} />
-                </NumbersColumn>
-              ))}
-            </Columns>
-          </NumbersPageSectionContainer>
-        </NumbersSection>
-      </ThemeProvider>
       <ModalBlockFlow isOpen={isBlockFlowModalOpen} setIsOpen={setIsBlockFlowModalOpen} />
       <ModalPoLW isOpen={isPoLWModalOpen} setIsOpen={setIsPoLWModalOpen} />
       <ModalSmartContract isOpen={isSmartContractModalOpen} setIsOpen={setIsSmartContractModalOpen} />

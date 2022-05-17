@@ -99,10 +99,6 @@ export const pageQuery = graphql`
                 newTab
               }
             }
-            numbersSection {
-              title
-              subtitle
-            }
           }
         }
       }
