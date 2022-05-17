@@ -2,14 +2,15 @@ import { FC } from 'react'
 import styled from 'styled-components'
 
 interface NumbersInfoProps {
-  number: string
+  value: string
+  isLoading: boolean
   description: string
   className?: string
 }
 
-let NumbersInfo: FC<NumbersInfoProps> = ({ number, description, className }) => (
+let NumbersInfo: FC<NumbersInfoProps> = ({ value, isLoading, description, className }) => (
   <div className={className}>
-    <div className="number">{number}</div>
+    { isLoading ? '-' : <div className="number">{value}</div> }
     <div>{description}</div>
   </div>
 )

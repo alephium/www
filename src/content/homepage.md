@@ -76,6 +76,10 @@ technologySection:
       syntax inspired by the Rust programming language. It allows for building
       efficient and secure smart contracts easily. It's specifically designed to
       facilitate the creation of DeFi dApps!
+numbersSection:
+  title: Some numbers
+  subtitle: We're passionate and committed to outstanding quality in everything
+    we do. We took the necessary time to transform theory into actual technologies.
 ecosystemSection:
   title: Ecosystem
   subtitle: Growing fast
