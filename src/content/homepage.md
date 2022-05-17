@@ -44,7 +44,7 @@ introSection:
         Receive rewards for contributing to any initiatives bringing value to the project.
       link:
         text: Check them out
-        url: https://github.com/alephium/community/blob/master/Grant&RewardProgram.md
+        url: https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md
         newTab: true
 technologySection:
   title: Technology
@@ -293,7 +293,7 @@ footer:
           url: https://github.com/alephium/desktop-wallet
           newTab: true
         - text: Reward & grant program
-          url: https://github.com/alephium/community/blob/master/Grant&RewardProgram.md
+          url: https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md
           newTab: true
     - title: About
       links:
