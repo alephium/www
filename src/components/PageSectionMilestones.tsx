@@ -15,12 +15,10 @@ interface Props {
 
 const PageSectionMilestones = ({ content: { title, subtitle, timelines }}: Props) => (
   <section>
-    <PageSectionContainer>
-      <SectionTextHeaderStyled title={title} subtitle={subtitle} bigSubtitle bigText />
-      <Centered>
-        <DualTimeline timelines={timelines} />
-      </Centered>
-    </PageSectionContainer>
+    <SectionTextHeaderStyled title={title} subtitle={subtitle} bigSubtitle bigText />
+    <Centered>
+      <DualTimeline timelines={timelines} />
+    </Centered>
   </section>
 )
 

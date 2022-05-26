@@ -150,7 +150,7 @@ milestonesSection:
       - order: 1
         text: Testnet launch
         when: '12.2020'
-        isMajor: false
+        isMajor: true
     - year: 2021
       entries:
       - order: 0
