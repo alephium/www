@@ -92,6 +92,7 @@ const TodoItems = styled.div`
 `
 
 const TodoItem = styled.div`
+  height: 119px;
   width: calc(50% - 30px - 20px);
   padding: 15px 8px 15px 15px;
   background-color: #28253A;
