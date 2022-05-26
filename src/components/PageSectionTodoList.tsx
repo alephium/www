@@ -102,8 +102,7 @@ const TodoItems = styled.div`
   justify-content: ${(props) => props.alignRight ? 'right' : 'left' };
 
   @media ${deviceBreakPoints.mobile} {
-    align-items: center;
-    justify-content: left;
+    justify-content: center;
   }
 `
 
