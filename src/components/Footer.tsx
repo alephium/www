@@ -7,7 +7,6 @@ import SimpleLink, { SimpleLinkProps } from './SimpleLink'
 import PageSectionContainer from './PageSectionContainer'
 import Columns from './Columns/Columns'
 import Column from './Columns/Column'
-import ModalAboutUs from './ModalAboutUs'
 import ModalTeam from './ModalTeam'
 import ModalContact from './ModalContact'
 import ModalPrivacyPolicy from './ModalPrivacyPolicy'
@@ -27,13 +26,11 @@ interface FooterProps {
 }
 
 let Footer: FC<FooterProps> = ({ className, content }) => {
-  const [isAboutUsModalOpen, setIsAboutUsModalOpen] = useState(false)
   const [isTeamModalOpen, setIsTeamModalOpen] = useState(false)
   const [isContactModalOpen, setIsContactModalOpen] = useState(false)
   const [isPrivacyPolicyModalOpen, setIsPrivacyPolicyModalOpen] = useState(false)
   const columnsContent = content.columns
-  columnsContent[2].links[0] = { ...columnsContent[2].links[0], openModal: setIsAboutUsModalOpen }
-  columnsContent[2].links[1] = { ...columnsContent[2].links[1], openModal: setIsTeamModalOpen }
+  columnsContent[2].links[0] = { ...columnsContent[2].links[0], openModal: setIsTeamModalOpen }
   columnsContent[2].links[2] = { ...columnsContent[2].links[2], openModal: setIsContactModalOpen }
   columnsContent[2].links[3] = { ...columnsContent[2].links[3], openModal: setIsPrivacyPolicyModalOpen }
   return (
@@ -51,7 +48,6 @@ let Footer: FC<FooterProps> = ({ className, content }) => {
           ))}
         </FooterColumnsSection>
       </PageSectionContainerStyled>
-      <ModalAboutUs isOpen={isAboutUsModalOpen} setIsOpen={setIsAboutUsModalOpen} />
       <ModalTeam isOpen={isTeamModalOpen} setIsOpen={setIsTeamModalOpen} />
       <ModalContact isOpen={isContactModalOpen} setIsOpen={setIsContactModalOpen} />
       <ModalPrivacyPolicy isOpen={isPrivacyPolicyModalOpen} setIsOpen={setIsPrivacyPolicyModalOpen} />
