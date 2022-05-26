@@ -1,5 +1,8 @@
+import { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { uniqBy } from 'lodash'
+
+import { deviceSizes } from '../styles/global-style'
 
 export type Timeline = {
   title: string
@@ -41,7 +44,21 @@ function sortMerge(as, bs) {
   return uniqBy(newList, el => el[0] && el[0].order || el[1] && el[1].order)
 }
 
-const DualTimeline = ({ timelines }: Props) => {
+const DualTimeline = (props: Props) => {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const event = ['resize', () => setIsMobile(window.innerWidth <= deviceSizes.smallMobile)]
+
+    setIsMobile(window.innerWidth <= deviceSizes.smallMobile)
+    window.addEventListener(...event)
+    return () => window.removeEventListener(...event)
+  })
+
+  return isMobile ? <DualTimelineMobile {...props} /> : <DualTimelineDesktop {...props} />
+}
+
+const DualTimelineDesktop = ({ timelines }: Props) => {
   const headings = timelines.map((t) => t.title)
 
   return <Container>
@@ -80,6 +97,52 @@ const DualTimeline = ({ timelines }: Props) => {
     <LineStartsEnds ends headings={headings} />
   </Container>
 }
+
+const DualTimelineMobile = ({ timelines }: Props) => {
+  const years = timelines.reduce((years, timeline, index) => {
+    timeline.years.forEach(({ year, entries }) => {
+      if (years[year] === undefined) {
+        years[year] = []
+      }
+      years[year][index] = { title: timeline.title, entries }
+    })
+    return years
+  }, {})
+
+  // The track will be 3 'm' length, exactly how "3em" works 🙂
+  const trackTitle = 'mmm'
+
+  return <Container>
+    <LineStartsEnds isSingle starts headings={[trackTitle]} />
+    { Object.entries(years).map(([year, values]) => <>
+      <Year value={year} headings={[trackTitle]} isSingle />
+      { values.map(({ title, entries }) => <>
+        { entries && <>
+          <Entries>
+              <Entry>
+                <Track forHeading={trackTitle} />
+                <Heading isSingle>{ title }</Heading>
+              </Entry>
+          </Entries>
+          <LineStartsEnds isSingle height="2rem" headings={[trackTitle]} />
+        </>}
+          { entries?.map(entry =>
+            <Entry isSingle>
+              <Track forHeading={[trackTitle]} entry={entry} />
+              <Data>
+                <Text isMajor={entry?.isMajor}>{ entry.text }</Text>
+                <When>{ entry.when }</When>
+              </Data>
+            </Entry>
+          )}
+      </>)}
+      </>
+    )}
+    <LineStartsEnds isSingle headings={[trackTitle]} />
+    <LineStartsEnds isSingle ends headings={[trackTitle]} />
+  </Container>
+}
+
 
 const Container = styled.div`
   width: 100%;
@@ -130,8 +193,11 @@ const Data = styled.div`
   flex-direction: column;
   text-align: ${({ right }) => right ? 'right' : 'left'};
   padding-bottom: 54px;
-  position: relative;
-  ${({ right }) => right ? 'right: -3rem;' : 'left: -2rem'}
+
+  ${({ isSingle }) => isSingle && `
+    position: relative;
+    ${({ right }) => right ? 'right: -3rem;' : 'left: -2rem'}
+  `}
 `
 
 const Piece = styled.div`
@@ -150,19 +216,29 @@ const YearData = styled.div`
   font-size: var(--fontSize-28);
 `
 
-let Year = ({ value, headings }) =>
-<Entries>
-  <Pair>
-    <Entry right>
-      <YearData>{ value }</YearData>
-      <Track forHeading={headings[0]} />
-    </Entry>
-    <Entry>
-      <Track forHeading={headings[1]} />
-    </Entry>
-    <YearLine />
-  </Pair>
-</Entries>
+let Year = ({ value, headings, isSingle }) =>
+  !isSingle
+?
+  <Entries>
+    <Pair>
+      <Entry right>
+        <YearData isSingle>{ value }</YearData>
+        <Track forHeading={headings[0]} />
+      </Entry>
+      <Entry>
+        <Track forHeading={headings[1]} />
+      </Entry>
+      <YearLine />
+    </Pair>
+  </Entries>
+:
+  <Entries>
+      <Entry>
+        <Track forHeading={headings[0]} />
+        <YearData isSingle>{ value }</YearData>
+      </Entry>
+      <YearLine />
+  </Entries>
 
 Year = styled(Year)`
   position: sticky;
@@ -171,23 +247,34 @@ Year = styled(Year)`
   z-index: -1;
 `
 
-const LineStartsEnds = ({ headings, starts, ends }) =>
-<Entries>
-  <Pair>
-    { headings.map((text, index) =>
-      <Entry right={index % 2 == 0}>
-        <TrackContainer>
-          <HeadingTextForWidthExpansion>{ text }</HeadingTextForWidthExpansion>
-          { (starts && <LineStart />) || (ends && <LineEnd />) || <LineExtra /> }
-        </TrackContainer>
-      </Entry>
-    )}
-  </Pair>
-</Entries>
+const LineStartsEnds = ({ headings, starts, ends, isSingle, height }) =>
+  isSingle
+?
+  headings.map((text, index) =>
+    <Entry>
+      <TrackContainer>
+        <HeadingTextForWidthExpansion>{ text }</HeadingTextForWidthExpansion>
+        { (starts && <LineStart />) || (ends && <LineEnd />) || <LineExtra height={height} /> }
+      </TrackContainer>
+    </Entry>
+  )
+:
+  <Entries>
+    <Pair>
+      { headings.map((text, index) =>
+        <Entry right={index % 2 == 0}>
+          <TrackContainer>
+            <HeadingTextForWidthExpansion>{ text }</HeadingTextForWidthExpansion>
+            { (starts && <LineStart />) || (ends && <LineEnd />) || <LineExtra height={height} /> }
+          </TrackContainer>
+        </Entry>
+      )}
+    </Pair>
+  </Entries>
 
 const LineExtra = styled.div`
   width: 8px;
-  height: 8px;
+  height: ${({ height }) => height ? height : '8px'};
   background-color: #555555;
 `
 
@@ -228,7 +315,7 @@ const Track = ({ forHeading, entry }) =>
 
 
 const Entry = styled.div`
-  width: 50%;
+  width: ${({ isSingle }) => isSingle ? '100%' : '50%'};
   display: flex;
   align-items: center;
   align-self: stretch;
@@ -262,7 +349,7 @@ const Headings = styled.div`
 `
 
 const Heading = styled.div`
-  width: 50%;
+  width: ${({ isSingle }) => isSingle ? '100%' : '50%'};
   text-align: ${({ right }) => right ? 'right' : 'left'};
   font-weight: var(--fontWeight-semiBold);
   font-size: var(--fontSize-28);
