@@ -66,7 +66,7 @@ const IntroColumns = styled(Columns)`
 const IntroColumnContent = styled.div`
   margin-top: var(--spacing-6);
   display: grid;
-  grid-template-columns: minmax(150px, 469px) minmax(150px, 469px);
+  grid-template-columns: minmax(150px, 50%) minmax(150px, 50%);
   grid-template-rows: 324px;
   column-gap: 30px;
   row-gap: 30px;
