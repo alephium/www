@@ -1,7 +1,5 @@
-import { FC } from 'react'
 import styled from 'styled-components'
 
-import PageSectionContainer from './PageSectionContainer'
 import SvgSunOverMountains from '../images/sun-over-mountains.svg'
 
 const PageSectionSunOverTheMountains = () => (

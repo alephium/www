@@ -2,7 +2,7 @@ import { DefaultTheme } from 'styled-components'
 
 export type ThemeType = 'light' | 'dark'
 
-export const oppositeThemeOf = theme => theme === darkTheme ? lightTheme : darkTheme
+export const oppositeThemeOf = (theme) => (theme === darkTheme ? lightTheme : darkTheme)
 
 export const darkTheme: DefaultTheme = {
   name: 'dark',

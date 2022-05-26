@@ -23,4 +23,3 @@ export const formatNumberForDisplay = (
 
   return [numberInteger, numberDecimal, suffixes[suffixIndex]]
 }
-

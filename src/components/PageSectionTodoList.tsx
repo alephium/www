@@ -1,4 +1,3 @@
-import { FC } from 'react'
 import styled from 'styled-components'
 
 import PageSectionContainer from './PageSectionContainer'
@@ -8,7 +7,6 @@ import SvgCheckmark from '../images/complete-check.svg'
 import SvgStars from '../images/stars.svg'
 import SvgNight from '../images/night.svg'
 import { deviceBreakPoints } from '../styles/global-style'
-
 
 type Props = {
   content: {
@@ -30,20 +28,19 @@ const PageSectionTodoList = ({ content: { title, subtitle, lists } }: Props) => 
     <PageSectionContainer>
       <SectionTextHeaderStyled title={title} subtitle={subtitle} bigSubtitle bigText />
       <TodoLists>
-        {lists.map(({ title, items }, index) => <TodoList key={title}>
-          <TodoTitle
-            title={title}
-            alignRight={index % 2 == 0}
-            titleHierarchy="h3"
-            bigTitle={false}
-          />
-          <TodoItems alignRight={index % 2 == 0}>
-            {items.map(({ text, complete }, index) => <TodoItem key={text} zIndex={items.length - index}>
-              <TodoContent complete={complete}>{ text }</TodoContent>
-              { complete && <TodoStateIcon /> }
-            </TodoItem>)}
-          </TodoItems>
-        </TodoList>)}
+        {lists.map(({ title, items }, index) => (
+          <TodoList key={title}>
+            <TodoTitle title={title} alignRight={index % 2 == 0} titleHierarchy="h3" bigTitle={false} />
+            <TodoItems alignRight={index % 2 == 0}>
+              {items.map(({ text, complete }, index) => (
+                <TodoItem key={text} zIndex={items.length - index}>
+                  <TodoContent complete={complete}>{text}</TodoContent>
+                  {complete && <TodoStateIcon />}
+                </TodoItem>
+              ))}
+            </TodoItems>
+          </TodoList>
+        ))}
       </TodoLists>
     </PageSectionContainer>
   </BackdropStars>
@@ -92,14 +89,14 @@ const TodoList = styled.div`
 
 const TodoTitle = styled(TextSnippet)`
   margin-bottom: 45px;
-  text-align: ${(props) => props.alignRight ? 'right' : 'left' };
+  text-align: ${(props) => (props.alignRight ? 'right' : 'left')};
 `
 
 const TodoItems = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: ${(props) => props.alignRight ? 'right' : 'left' };
+  justify-content: ${(props) => (props.alignRight ? 'right' : 'left')};
 
   @media ${deviceBreakPoints.mobile} {
     justify-content: center;
@@ -111,7 +108,7 @@ const TodoItem = styled.div`
   width: calc(50% - 30px - 20px);
   min-width: 199px;
   padding: 15px 8px 15px 15px;
-  background-color: #28253A;
+  background-color: #28253a;
   border-radius: 9px;
   box-shadow: 0px 22px 30px rgba(0, 0, 0, 0.47);
   display: flex;
@@ -138,7 +135,7 @@ const TodoContent = styled.div`
   line-height: 19px;
   display: flex;
   align-items: center;
-  color: ${({ theme, complete }) => complete ? 'var(--color-grey-300)' : theme.textPrimary };
+  color: ${({ theme, complete }) => (complete ? 'var(--color-grey-300)' : theme.textPrimary)};
 `
 
 export default PageSectionTodoList

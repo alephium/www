@@ -15,25 +15,18 @@ interface CardEngagementProps {
   trackingName?: string
 }
 
-const CardEngagement: FC<CardEngagementProps> = ({
-  title,
-  link,
-  image,
-  children,
-  className,
-  trackingName
-}) => {
+const CardEngagement: FC<CardEngagementProps> = ({ title, link, image, children, className, trackingName }) => {
   const theme = useTheme()
 
   return (
     <SimpleLinkStyled {...link}>
       <CardContainer className={className} borderColor={theme.bgPrimary} thickBorders bgColor={theme.bgTertiary} shadow>
-          <div className="card-contents">
-            <Iconic src={image.publicURL} alt={title} />
-            <CardTextTeaser title={title} trackingName={trackingName}>
-              {children}
-            </CardTextTeaser>
-          </div>
+        <div className="card-contents">
+          <Iconic src={image.publicURL} alt={title} />
+          <CardTextTeaser title={title} trackingName={trackingName}>
+            {children}
+          </CardTextTeaser>
+        </div>
       </CardContainer>
     </SimpleLinkStyled>
   )

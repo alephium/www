@@ -1,5 +1,5 @@
 import { addApostrophes, ExplorerClient } from '@alephium/sdk'
-import { useCallback, useEffect, useState, FC } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../styles/global-style'
@@ -29,14 +29,11 @@ interface Stat<T> {
 const statScalarDefault = { value: 0, isLoading: true }
 
 type StatScalar = Stat<number>
-type StatScalarKeys =
-  | 'hashrate'
-  | 'circulatingSupply'
-  | 'totalTransactions'
+type StatScalarKeys = 'hashrate' | 'circulatingSupply' | 'totalTransactions'
 
 type StatsScalarData = { [key in StatScalarKeys]: StatScalar }
 
-const PageSectionNumbers = ({ content: { title, subtitle }}: Props) => {
+const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
   const [explorerClient, setExplorerClient] = useState<ExplorerClient>(undefined)
   const [statsScalarData, setStatsScalarData] = useState<StatsScalarData>({
     hashrate: statScalarDefault,
@@ -44,9 +41,12 @@ const PageSectionNumbers = ({ content: { title, subtitle }}: Props) => {
     totalTransactions: statScalarDefault
   })
 
-  const updateStatsScalar = useCallback((key: StatScalarKeys, value: StatScalar['value']) => {
-    setStatsScalarData((prevState) => ({ ...prevState, [key]: { value, isLoading: false } }))
-  }, [setStatsScalarData])
+  const updateStatsScalar = useCallback(
+    (key: StatScalarKeys, value: StatScalar['value']) => {
+      setStatsScalarData((prevState) => ({ ...prevState, [key]: { value, isLoading: false } }))
+    },
+    [setStatsScalarData]
+  )
 
   useEffect(() => {
     setExplorerClient(new ExplorerClient({ baseUrl }))
@@ -80,7 +80,7 @@ const PageSectionNumbers = ({ content: { title, subtitle }}: Props) => {
     fetchHashrateData()
     fetchAndUpdateStatsScalar('circulatingSupply', explorerClient.infos.getInfosSupplyCirculatingAlph)
     fetchAndUpdateStatsScalar('totalTransactions', explorerClient.infos.getInfosTotalTransactions)
-  }, [explorerClient])
+  }, [explorerClient, updateStatsScalar])
 
   const { hashrate, circulatingSupply, totalTransactions } = statsScalarData
   const [hashrateInteger, hashrateDecimal, hashrateSuffix] = formatNumberForDisplay(hashrate.value, 'hash')
@@ -93,7 +93,7 @@ const PageSectionNumbers = ({ content: { title, subtitle }}: Props) => {
       description: 'shards running'
     },
     {
-      value: `${addApostrophes(hashrateInteger)}${(hashrateDecimal ?? '')}`,
+      value: `${addApostrophes(hashrateInteger)}${hashrateDecimal ?? ''}`,
       isLoading: false,
       description: `${hashrateSuffix}H/s`
     },
@@ -109,22 +109,20 @@ const PageSectionNumbers = ({ content: { title, subtitle }}: Props) => {
     }
   ]
 
-  return <NumbersSection>
-    <NumbersPageSectionContainer>
-      <SubsectionTextHeaderStyled
-        title={title}
-        subtitle={subtitle}
-        condensed
-      />
-      <Columns>
-        {columns.map((columnContent) => (
-          <NumbersColumn key={columnContent.number}>
-            <NumbersInfo {...columnContent} />
-          </NumbersColumn>
-        ))}
-      </Columns>
-    </NumbersPageSectionContainer>
-  </NumbersSection>
+  return (
+    <NumbersSection>
+      <NumbersPageSectionContainer>
+        <SubsectionTextHeaderStyled title={title} subtitle={subtitle} condensed />
+        <Columns>
+          {columns.map((columnContent) => (
+            <NumbersColumn key={columnContent.number}>
+              <NumbersInfo {...columnContent} />
+            </NumbersColumn>
+          ))}
+        </Columns>
+      </NumbersPageSectionContainer>
+    </NumbersSection>
+  )
 }
 
 const NumbersPageSectionContainer = styled(PageSectionContainer)`
@@ -179,11 +177,6 @@ const NumbersColumn = styled(Column)`
       }
     }
   }
-`
-
-const Centered = styled.div`
-  display: flex;
-  justify-content: center;
 `
 
 const SubsectionTextHeaderStyled = styled(SubsectionTextHeader)`

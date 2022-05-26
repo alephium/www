@@ -1,16 +1,13 @@
 import { FC, useState } from 'react'
-import styled, { ThemeProvider } from 'styled-components'
+import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../styles/global-style'
-import { lightTheme } from '../styles/themes'
 
 import PageSectionContainer from './PageSectionContainer'
 import SectionTextHeader from './SectionTextHeader'
 import Columns from './Columns/Columns'
 import Column from './Columns/Column'
 import SectionTextTeaser from './SectionTextTeaser'
-import SubsectionTextHeader from './SubsectionTextHeader'
-import NumbersInfo from './NumbersInfo'
 import ModalBlockFlow from './ModalBlockFlow'
 import ModalPoLW from './ModalPoLW'
 import ModalSmartContract from './ModalSmartContract'
@@ -174,10 +171,6 @@ const TopGradient = styled.div`
   background-position-x: center;
   background-position-y: top;
   border-top: var(--border-primary-dark);
-`
-
-const SubsectionTextHeaderStyled = styled(SubsectionTextHeader)`
-  margin-bottom: var(--spacing-10);
 `
 
 const BlockflowImage = styled.img`

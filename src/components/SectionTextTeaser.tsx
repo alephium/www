@@ -32,21 +32,25 @@ let SectionTextTeaser: FC<SectionTextTeaserProps> = ({
 }) => (
   <div className={className}>
     <SubsectionTextHeader title={title} subtitle={description} />
-    { tipbox &&
+    {tipbox && (
       <Card borderColor="var(--color-brown)" className="card">
         <IconComponent />
         <div>{cardText}</div>
       </Card>
-    }
-    { link &&
+    )}
+    {link && (
       <Links>
         {links.map((link) => (
-          <ArrowedLink key={link.text} {...link} trackingName={`${trackingName}:${link.text?.replaceAll(' ', '-')}-link`}>
+          <ArrowedLink
+            key={link.text}
+            {...link}
+            trackingName={`${trackingName}:${link.text?.replaceAll(' ', '-')}-link`}
+          >
             {link.text}
           </ArrowedLink>
         ))}
       </Links>
-    }
+    )}
   </div>
 )
 

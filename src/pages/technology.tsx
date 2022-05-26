@@ -18,7 +18,7 @@ interface TechnologyPageProps extends PageProps {
           technologySection: PageSectionTechnologyContentType
         }
       }[]
-    },
+    }
     homepage: {
       followUsSection: PageSectionFollowUsContentType
       footer: FooterContentType

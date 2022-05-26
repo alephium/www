@@ -7,12 +7,18 @@ interface CardTextTeaserProps {
   title: string
   subtitle?: string
   className?: string
-  trackingName?: string
 }
 
-let CardTextTeaser: FC<CardTextTeaserProps> = ({ title, subtitle, children, className, trackingName }) => (
+let CardTextTeaser: FC<CardTextTeaserProps> = ({ title, subtitle, children, className }) => (
   <article className={className}>
-    <TextSnippetStyled className="text-content" title={title} titleHierarchy="h3" subtitle={subtitle} smallSubtitle bigText>
+    <TextSnippetStyled
+      className="text-content"
+      title={title}
+      titleHierarchy="h3"
+      subtitle={subtitle}
+      smallSubtitle
+      bigText
+    >
       {children}
     </TextSnippetStyled>
   </article>

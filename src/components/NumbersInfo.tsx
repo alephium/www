@@ -10,7 +10,7 @@ interface NumbersInfoProps {
 
 let NumbersInfo: FC<NumbersInfoProps> = ({ value, isLoading, description, className }) => (
   <div className={className}>
-    { isLoading ? '-' : <div className="number">{value}</div> }
+    {isLoading ? '-' : <div className="number">{value}</div>}
     <div>{description}</div>
   </div>
 )

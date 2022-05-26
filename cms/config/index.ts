@@ -35,7 +35,8 @@ export default {
         preview: false
       },
       files: [
-        { label: 'Technology',
+        {
+          label: 'Technology',
           name: 'technology',
           file: 'src/content/technology.md',
           fields: [
@@ -76,7 +77,7 @@ export default {
                   fields: technologySubsectionFields
                 }
               ]
-            },
+            }
           ]
         },
         {
