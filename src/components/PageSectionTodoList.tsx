@@ -7,6 +7,7 @@ import TextSnippet from './TextSnippet'
 import SvgCheckmark from '../images/complete-check.svg'
 import SvgStars from '../images/stars.svg'
 import SvgNight from '../images/night.svg'
+import { deviceBreakPoints } from '../styles/global-style'
 
 
 type Props = {
@@ -71,12 +72,22 @@ const TodoLists = styled.div`
   display: flex;
   gap: 100px;
   margin-top: 70px;
+
+  @media ${deviceBreakPoints.mobile} {
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+  }
 `
 
 const TodoList = styled.div`
   display: flex;
   flex-direction: column;
   width: 50%;
+
+  @media ${deviceBreakPoints.mobile} {
+    align-items: center;
+  }
 `
 
 const TodoTitle = styled(TextSnippet)`
@@ -89,6 +100,11 @@ const TodoItems = styled.div`
   flex-wrap: wrap;
   gap: 10px;
   justify-content: ${(props) => props.alignRight ? 'right' : 'left' };
+
+  @media ${deviceBreakPoints.mobile} {
+    align-items: center;
+    justify-content: left;
+  }
 `
 
 const TodoItem = styled.div`
