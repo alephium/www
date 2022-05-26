@@ -126,6 +126,7 @@ const YearLine = styled.div`
 
 const Data = styled.div`
   display: flex;
+  line-height: 22px;
   flex-direction: column;
   text-align: ${({ right }) => right ? 'right' : 'left'};
   padding-bottom: 54px;
