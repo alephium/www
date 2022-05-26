@@ -83,7 +83,7 @@ const DualTimeline = ({ timelines }: Props) => {
 
 const Container = styled.div`
   width: 100%;
-  margin-bottom: 127px;
+  margin-bottom: 226px;
 `
 
 const Text = styled.div`
