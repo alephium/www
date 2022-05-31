@@ -2,15 +2,13 @@ import { DefaultTheme } from 'styled-components'
 
 export type ThemeType = 'light' | 'dark'
 
-export const oppositeThemeOf = (theme) => (theme === darkTheme ? lightTheme : darkTheme)
-
 export const darkTheme: DefaultTheme = {
   name: 'dark',
 
   textPrimary: 'var(--color-white)',
   textPrimaryVariation: 'var(--color-grey-100)',
   textSecondary: 'var(--color-grey-200)',
-  textTertiary: 'var(--color-grey-200)',
+  textTertiary: 'var(--color-grey-500)',
 
   bgPrimary: 'var(--color-grey-900)',
   bgSecondary: 'var(--color-grey-900)',

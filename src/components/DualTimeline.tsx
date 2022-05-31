@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { uniqBy } from 'lodash'
 
-import { deviceSizes } from '../styles/global-style'
+import { deviceBreakPoints, deviceSizes } from '../styles/global-style'
 
 export type Timeline = {
   title: string
@@ -63,16 +63,19 @@ const DualTimelineDesktop = ({ timelines }: Props) => {
 
   return (
     <Container>
-      <Headings>
-        {headings.map((text, index) => (
-          <Heading key={index} right={index % 2 == 0}>
-            {text}
-          </Heading>
-        ))}
-      </Headings>
+      <Header>
+        <Headings>
+          {headings.map((text, index) => (
+            <Heading key={index} right={index % 2 == 0}>
+              {text}
+            </Heading>
+          ))}
+        </Headings>
+      </Header>
+      <HeaderStickyBackground />
       <LineStartsEnds starts headings={headings} />
       {timelines[0].years.map(({ year, entries }, index) => (
-        <>
+        <section>
           <Year value={year} headings={headings} />
           <Entries>
             {sortMerge(entries, timelines[1]?.years[index]?.entries ?? []).map(([entryA, entryB], index) => (
@@ -98,7 +101,7 @@ const DualTimelineDesktop = ({ timelines }: Props) => {
               </Pair>
             ))}
           </Entries>
-        </>
+        </section>
       ))}
       <LineStartsEnds headings={headings} />
       <LineStartsEnds ends headings={headings} />
@@ -136,7 +139,6 @@ const DualTimelineMobile = ({ timelines }: Props) => {
                       <Heading isSingle>{title}</Heading>
                     </Entry>
                   </Entries>
-                  <LineStartsEnds isSingle height="2rem" headings={[trackTitle]} />
                 </>
               )}
               {entries?.map((entry, index) => (
@@ -158,88 +160,12 @@ const DualTimelineMobile = ({ timelines }: Props) => {
   )
 }
 
-const Container = styled.div`
-  width: 100%;
-  margin-bottom: 226px;
-`
-
-const Text = styled.div`
-  ${({ isMajor }) =>
-    isMajor &&
-    `
-    background: linear-gradient(180deg, #00C2FF 40%, #2400FF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-  `}
-`
-const When = styled.div`
-  color: #555555;
-`
-
-const Dot = styled.div`
-  position: relative;
-  left: -9px;
-  top: calc((18px + 4px) / -2);
-
-  ::after {
-    width: 18px;
-    height: 18px;
-    border-radius: 100%;
-    background: ${({ isMajor }) => (isMajor ? 'linear-gradient(180deg, #00C2FF 0%, #2400FF 100%);' : 'white')};
-    border: 4px solid black;
-    position: absolute;
-    content: '';
-    display: block;
-  }
-`
-
-const YearLine = styled.div`
-  height: 1px;
-  background-color: grey;
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-`
-
-const Data = styled.div`
-  display: flex;
-  line-height: 22px;
-  flex-direction: column;
-  text-align: ${({ right }) => (right ? 'right' : 'left')};
-  padding-bottom: 54px;
-
-  ${({ isSingle }) =>
-    isSingle &&
-    `
-    position: relative;
-    ${({ right }) => (right ? 'right: -3rem;' : 'left: -2rem')}
-  `}
-`
-
-const Piece = styled.div`
-  display: flex;
-  align-items: center;
-  width: 8px;
-  height: 100%;
-  background-color: #555555;
-  padding-bottom: 54px;
-`
-
-const YearData = styled.div`
-  width: 100%;
-  padding-bottom: 3rem;
-  font-weight: var(--fontWeight-semiBold);
-  font-size: var(--fontSize-28);
-`
-
-let Year = ({ value, headings, isSingle }) =>
+const Year = ({ value, headings, isSingle }) =>
   !isSingle ? (
-    <Entries>
+    <YearHeader>
       <Pair>
         <Entry right>
-          <YearData isSingle>{value}</YearData>
+          <YearDate>{value}</YearDate>
           <Track forHeading={headings[0]} />
         </Entry>
         <Entry>
@@ -247,23 +173,16 @@ let Year = ({ value, headings, isSingle }) =>
         </Entry>
         <YearLine />
       </Pair>
-    </Entries>
+    </YearHeader>
   ) : (
-    <Entries>
+    <YearHeader>
       <Entry>
         <Track forHeading={headings[0]} />
-        <YearData isSingle>{value}</YearData>
+        <YearDate>{value}</YearDate>
       </Entry>
       <YearLine />
-    </Entries>
+    </YearHeader>
   )
-
-Year = styled(Year)`
-  position: sticky;
-  top: 0;
-  background: white;
-  z-index: -1;
-`
 
 const LineStartsEnds = ({ headings, starts, ends, isSingle, height }) =>
   isSingle ? (
@@ -290,24 +209,98 @@ const LineStartsEnds = ({ headings, starts, ends, isSingle, height }) =>
     </Entries>
   )
 
+const Track = ({ forHeading, entry }) => (
+  <TrackContainer>
+    <HeadingTextForWidthExpansion>{forHeading}</HeadingTextForWidthExpansion>
+    <Piece>{entry && <Dot isMajor={entry.isMajor} />}</Piece>
+  </TrackContainer>
+)
+
+const headerHeight = 60
+const trackWidth = 140
+
+const Container = styled.div`
+  width: 100%;
+  margin-bottom: 226px;
+`
+
+const Text = styled.div`
+  ${({ isMajor }) =>
+    isMajor &&
+    `
+    background: linear-gradient(180deg, #00C2FF 40%, #2400FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  `}
+`
+
+const When = styled.div`
+  color: ${({ theme }) => theme.textTertiary};
+`
+
+const Piece = styled.div`
+  display: flex;
+  align-items: center;
+  width: 8px;
+  height: 100%;
+  background-color: ${({ theme }) => theme.textTertiary};
+`
+
+const Dot = styled.div`
+  position: relative;
+  left: -9px;
+  top: calc((18px + 4px) / -2);
+
+  ::after {
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background: ${({ isMajor }) => (isMajor ? 'linear-gradient(180deg, #00C2FF 0%, #2400FF 100%);' : 'white')};
+    border: 4px solid black;
+    position: absolute;
+    content: '';
+    display: block;
+  }
+`
+
+const Data = styled.div`
+  display: flex;
+  max-width: 300px;
+  line-height: 22px;
+  flex-direction: column;
+  text-align: ${({ right }) => (right ? 'right' : 'left')};
+  padding-top: var(--spacing-5);
+  padding-left: ${({ right }) => (right ? 'var(--spacing-3)' : '0')};
+  padding-right: ${({ right }) => (right ? '0' : 'var(--spacing-3)')};
+
+  ${({ isSingle }) =>
+    isSingle &&
+    `
+    position: relative;
+    ${({ right }) => (right ? 'right: -3rem;' : 'left: -2rem')}
+  `}
+`
+
 const LineExtra = styled.div`
   width: 8px;
   height: ${({ height }) => (height ? height : '8px')};
-  background-color: #555555;
+  background-color: ${({ theme }) => theme.textTertiary};
 `
 
 const LineEnd = styled.div`
   width: 8px;
   height: 8px;
   border-radius: 0 0 50% 50%;
-  background-color: #555555;
+  background-color: ${({ theme }) => theme.textTertiary};
 `
 
 const LineStart = styled.div`
   width: 8px;
   height: 8px;
   border-radius: 50% 50% 0 0;
-  background-color: #555555;
+  background-color: ${({ theme }) => theme.textTertiary};
 `
 
 const HeadingTextForWidthExpansion = styled.div`
@@ -323,14 +316,9 @@ const TrackContainer = styled.div`
   flex-direction: column;
   align-items: center;
   align-self: stretch;
+  width: ${trackWidth}px;
+  min-width: ${trackWidth}px;
 `
-
-const Track = ({ forHeading, entry }) => (
-  <TrackContainer>
-    <HeadingTextForWidthExpansion>{forHeading}</HeadingTextForWidthExpansion>
-    <Piece>{entry && <Dot isMajor={entry.isMajor} />}</Piece>
-  </TrackContainer>
-)
 
 const Entry = styled.div`
   width: ${({ isSingle }) => (isSingle ? '100%' : '50%')};
@@ -344,7 +332,6 @@ const Entry = styled.div`
 
 const Pair = styled.div`
   display: flex;
-  gap: 36px;
   justify-content: center;
   align-items: center;
 `
@@ -357,20 +344,75 @@ const Entries = styled.div`
   flex-direction: column;
 `
 
-const Headings = styled.div`
-  width: 50%;
-  margin: auto;
+const YearHeader = styled.div`
+  position: sticky;
   display: flex;
-  gap: 36px;
-  justify-content: center;
-  padding-bottom: 79px;
+  top: 0;
+  z-index: 3;
+  height: ${headerHeight}px;
+
+  > * {
+    flex: 1;
+  }
+
+  @media ${deviceBreakPoints.ipad} {
+    background-color: ${({ theme }) => theme.bgPrimary};
+  }
+`
+
+const YearDate = styled.div`
+  width: 100%;
+  font-weight: var(--fontWeight-semiBold);
+  font-size: var(--fontSize-28);
+  padding: var(--spacing-3);
+
+  @media ${deviceBreakPoints.ipad} {
+    transform: translateX(calc(50vw - 50%));
+    text-align: center;
+  }
+`
+
+const YearLine = styled.div`
+  height: 1px;
+  background-color: ${({ theme }) => theme.separator};
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+`
+
+const Header = styled.div`
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+`
+
+const Headings = styled.div`
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: calc(${trackWidth}px * 2);
+  height: ${headerHeight}px;
 `
 
 const Heading = styled.div`
-  width: ${({ isSingle }) => (isSingle ? '100%' : '50%')};
   text-align: ${({ right }) => (right ? 'right' : 'left')};
   font-weight: var(--fontWeight-semiBold);
   font-size: var(--fontSize-28);
+  flex: 1;
+
+  @media ${deviceBreakPoints.smallMobile} {
+    padding-top: var(--spacing-8);
+  }
+`
+
+const HeaderStickyBackground = styled.div`
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: ${headerHeight}px;
+  background-color: ${({ theme }) => theme.bgPrimary};
+  z-index: 1;
 `
 
 export default DualTimeline

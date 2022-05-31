@@ -140,10 +140,6 @@ const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.textPrimary};
     font-family: var(--fontFamily-sans);
   }
-
-  main {
-    overflow: hidden;
-  }
 `
 
 export default GlobalStyle
