@@ -78,7 +78,7 @@ let PageSectionEcosystem = ({ className }: { className?: string }) => {
 }
 
 PageSectionEcosystem = styled(PageSectionEcosystem)`
-  padding-top: var(--spacing-20);
+  padding-top: var(--spacing-16);
   padding-bottom: var(--spacing-20);
   position: relative;
 `

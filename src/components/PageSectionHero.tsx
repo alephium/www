@@ -41,11 +41,10 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
   const themeContent = theme === 'dark' ? content.dark : content.light
 
   const toggleTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light')
+    //setTheme(theme === 'light' ? 'dark' : 'light')
   }
 
   const onSwipe = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light')
     setCurrentSlide(currentSlide === 1 ? 2 : 1)
   }
 

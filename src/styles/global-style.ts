@@ -113,7 +113,7 @@ const GlobalStyle = createGlobalStyle`
     --color-grey-550: #414141;
     --color-grey-600: #343434;
     --color-grey-700: #262626;
-    --color-grey-800: #1A1A1A;
+    --color-grey-800: #1B1B1B;
     --color-grey-900: #101010;
     --color-black: #000;
     --color-salmon: #ff5d51;
@@ -136,7 +136,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: ${({ theme }) => theme.bgPrimary};
+    background-color: ${({ theme }) => theme.bgSecondary};
     color: ${({ theme }) => theme.textPrimary};
     font-family: var(--fontFamily-sans);
   }

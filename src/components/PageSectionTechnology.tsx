@@ -164,13 +164,13 @@ const TopGradient = styled.div`
   top: 0;
   right: 0;
   left: 0;
-  height: 5%;
+  height: 100%;
   background-image: url(${BGGradientSrc});
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
   background-position-y: top;
-  border-top: var(--border-primary-dark);
+  box-shadow: 0 -30px 50px rgba(0, 0, 0, 0.7);
 `
 
 const BlockflowImage = styled.img`
@@ -230,8 +230,8 @@ const VmsImage = styled.img`
 `
 
 const ProofOfLessWorkSubsection = styled.section`
-  background-color: ${({ theme }) => theme.bgPrimary};
-  padding: var(--spacing-20) 0;
+  background-color: ${({ theme }) => theme.bgSecondary};
+  padding: var(--spacing-12) 0;
   position: relative;
   overflow: hidden;
 
@@ -241,8 +241,8 @@ const ProofOfLessWorkSubsection = styled.section`
 `
 
 const VmsSubsection = styled.section`
-  background-color: ${({ theme }) => theme.bgPrimary};
-  padding: var(--spacing-20) 0;
+  background-color: ${({ theme }) => theme.bgSecondary};
+  padding: var(--spacing-12) 0;
   position: relative;
 
   @media ${deviceBreakPoints.mobile} {
@@ -251,8 +251,8 @@ const VmsSubsection = styled.section`
 `
 
 const SmartContractSubsection = styled.section`
-  background-color: ${({ theme }) => theme.bgPrimary};
-  padding: var(--spacing-20) 0;
+  background-color: ${({ theme }) => theme.bgSecondary};
+  padding: var(--spacing-12) 0;
   position: relative;
 
   @media ${deviceBreakPoints.mobile} {
@@ -261,7 +261,7 @@ const SmartContractSubsection = styled.section`
 `
 
 PageSectionTechnology = styled(PageSectionTechnology)`
-  background-color: ${({ theme }) => theme.bgPrimary};
+  background-color: ${({ theme }) => theme.bgSecondary};
   padding-top: var(--spacing-16);
 `
 

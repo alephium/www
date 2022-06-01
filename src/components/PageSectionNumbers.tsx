@@ -125,24 +125,25 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
   )
 }
 
-const NumbersPageSectionContainer = styled(PageSectionContainer)`
-  max-width: var(--page-width-shrinked);
+const NumbersSection = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
-const NumbersSection = styled.section`
-  border-bottom: var(--border-primary-light);
+const NumbersPageSectionContainer = styled(PageSectionContainer)`
+  max-width: var(--page-width-shrinked);
+  margin: 0 8vw 156px 8vw;
+  border-radius: 30px;
   background-color: ${({ theme }) => theme.bgPrimary};
-  padding: var(--spacing-11) 0;
-  margin-bottom: 156px;
+  padding: var(--spacing-11);
+  max-width: 1000px;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
 `
 
 const NumbersColumn = styled(Column)`
   display: flex;
   align-items: center;
-
-  > div {
-    align-self: flex-start;
-  }
 
   &:not(:first-child) {
     > div {

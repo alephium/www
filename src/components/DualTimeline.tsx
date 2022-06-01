@@ -356,7 +356,7 @@ const YearHeader = styled.div`
   }
 
   @media ${deviceBreakPoints.ipad} {
-    background-color: ${({ theme }) => theme.bgPrimary};
+    background-color: ${({ theme }) => theme.bgSecondary};
   }
 `
 
@@ -411,7 +411,7 @@ const HeaderStickyBackground = styled.div`
   top: 0;
   width: 100%;
   height: ${headerHeight}px;
-  background-color: ${({ theme }) => theme.bgPrimary};
+  background-color: ${({ theme }) => theme.bgSecondary};
   z-index: 1;
 `
 

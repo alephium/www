@@ -24,7 +24,6 @@ type Props = {
 
 const PageSectionTodoList = ({ content: { title, subtitle, lists } }: Props) => (
   <BackdropStars>
-    <BackdropNight />
     <PageSectionContainer>
       <SectionTextHeaderStyled title={title} subtitle={subtitle} bigSubtitle bigText />
       <TodoLists>
@@ -56,6 +55,7 @@ const BackdropNight = styled.div`
   background-image: url('${SvgNight}');
   background-repeat: no-repeat;
   background-position-x: center;
+  filter: saturate(0) brightness(120);
   width: 100%;
   height: 1962px;
   position: absolute;
@@ -108,12 +108,11 @@ const TodoItem = styled.div`
   width: calc(50% - 30px - 20px);
   min-width: 199px;
   padding: 15px 8px 15px 15px;
-  background-color: #28253a;
+  background-color: ${({ theme }) => theme.bgPrimary};
   border-radius: 9px;
   box-shadow: 0px 22px 30px rgba(0, 0, 0, 0.47);
   display: flex;
   justify-content: space-between;
-  z-index: ${(props) => props.zIndex};
 `
 
 const TodoStateIcon = styled.div`

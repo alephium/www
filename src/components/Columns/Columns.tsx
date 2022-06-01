@@ -13,7 +13,6 @@ let Columns: FC<ColumnsProps> = ({ className, children }) => <div className={cla
 
 Columns = styled(Columns)`
   display: flex;
-  flex-flow: wrap;
   gap: ${(props) => props.gap || '0'};
 
   @media ${deviceBreakPoints.mobile} {

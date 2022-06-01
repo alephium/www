@@ -99,9 +99,8 @@ const Separator = styled.div`
 `
 
 Footer = styled(Footer)`
-  padding-top: var(--spacing-25);
   padding-bottom: var(--spacing-10);
-  background-color: ${({ theme }) => theme.bgPrimary};
+  background-color: ${({ theme }) => theme.bgSecondary};
   color: ${({ theme }) => theme.textPrimary};
   font-size: var(--fontSize-18);
 `

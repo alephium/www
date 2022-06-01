@@ -10,7 +10,7 @@ export const darkTheme: DefaultTheme = {
   textSecondary: 'var(--color-grey-200)',
   textTertiary: 'var(--color-grey-500)',
 
-  bgPrimary: 'var(--color-grey-900)',
+  bgPrimary: 'var(--color-grey-800)',
   bgSecondary: 'var(--color-grey-900)',
   bgTertiary: '#1C1A1A',
   bgSurface: 'var(--color-grey-700)',
