@@ -47,7 +47,7 @@ TextSnippet = styled(TextSnippet)`
   .text-content {
     font-size: ${({ bigText }) => (bigText ? 'var(--fontSize-18)' : 'inherit')};
     line-height: ${({ bigText }) => (bigText ? 'var(--lineHeight-28)' : 'var(--lineHeight-22)')};
-    font-weight: var(--fontWeight-semiBold);
+    font-weight: var(--fontWeight-normal);
     color: var(--color-grey-250);
   }
 

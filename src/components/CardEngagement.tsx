@@ -44,6 +44,7 @@ const CardContainer = styled(Card)`
   transition: all 0.2s ease;
   flex: 1;
   border: var(--border-primary-dark);
+  background-color: ${({ theme }) => theme.bgPrimary};
 
   @media ${deviceBreakPoints.mobile} {
     & + & {
@@ -64,11 +65,17 @@ const CardContainer = styled(Card)`
   }
 
   &:hover {
-    background-color: ${({ theme }) => theme.bgPrimary};
+    background-color: ${({ theme }) => theme.bgSecondary};
     border-color: transparent;
 
     &:after {
       background: linear-gradient(270deg, var(--color-salmon) 0%, var(--color-blue-200) 100%);
+    }
+
+    h3 {
+      ::before {
+        content: '→  ';
+      }
     }
   }
 

@@ -130,6 +130,7 @@ const NumbersSection = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: var(--spacing-10);
 `
 
 const NumbersPageSectionContainer = styled(PageSectionContainer)`

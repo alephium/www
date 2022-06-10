@@ -117,7 +117,7 @@ const TextSnippetStyled = styled(TextSnippet)`
   p {
     font-size: var(--fontSize-14);
     margin-bottom: var(--spacing-5);
-    color: ${({ theme }) => theme.textTertiary};
+    color: ${({ theme }) => theme.textSecondary};
   }
 `
 

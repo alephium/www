@@ -80,7 +80,7 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
             <IllustrationColumn>
               <BlockflowImage src={BlockflowImageSrc} alt="Blockflow" />
             </IllustrationColumn>
-            <Column>
+            <Column vertialCenter>
               <SectionTextTeaser
                 {...blockFlowSectionContent}
                 IconComponent={StackImage}
@@ -98,7 +98,7 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
         </IllustrationColumn>
         <PageSectionContainer>
           <Columns {...columnsProps}>
-            <Column>
+            <Column vertialCenter>
               <SectionTextTeaser
                 {...polwSectionContent}
                 IconComponent={LeafImage}
@@ -117,7 +117,7 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
             <IllustrationColumn>
               <SmartContractImage src={SmartContractImageSrc} alt="Smart contract" />
             </IllustrationColumn>
-            <Column>
+            <Column vertialCenter>
               <SectionTextTeaser
                 {...smartContractSectionContent}
                 IconComponent={StackImage}
@@ -132,7 +132,7 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
       <VmsSubsection>
         <PageSectionContainer>
           <Columns {...columnsProps} reverse>
-            <Column>
+            <Column vertialCenter>
               <SectionTextTeaser
                 {...vmsSectionContent}
                 IconComponent={VmDotsImage}
@@ -192,7 +192,7 @@ const SectionTextHeaderStyled = styled(SectionTextHeader)`
 `
 
 const PageSectionContainerStyled = styled(PageSectionContainer)`
-  padding-bottom: var(--spacing-20);
+  padding-bottom: var(--spacing-10);
 
   @media ${deviceBreakPoints.mobile} {
     padding-bottom: var(--spacing-10);
@@ -231,7 +231,7 @@ const VmsImage = styled.img`
 
 const ProofOfLessWorkSubsection = styled.section`
   background-color: ${({ theme }) => theme.bgSecondary};
-  padding: var(--spacing-12) 0;
+  padding: var(--spacing-10) 0;
   position: relative;
   overflow: hidden;
 
@@ -242,17 +242,17 @@ const ProofOfLessWorkSubsection = styled.section`
 
 const VmsSubsection = styled.section`
   background-color: ${({ theme }) => theme.bgSecondary};
-  padding: var(--spacing-12) 0;
+  padding: var(--spacing-10) 0;
   position: relative;
 
   @media ${deviceBreakPoints.mobile} {
-    padding: var(--spacing-5) 0 var(--spacing-12);
+    padding: var(--spacing-5) 0 var(--spacing-10);
   }
 `
 
 const SmartContractSubsection = styled.section`
   background-color: ${({ theme }) => theme.bgSecondary};
-  padding: var(--spacing-12) 0;
+  padding: var(--spacing-10) 0;
   position: relative;
 
   @media ${deviceBreakPoints.mobile} {

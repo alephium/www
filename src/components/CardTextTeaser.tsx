@@ -46,7 +46,7 @@ const TextSnippetStyled = styled(TextSnippet)`
   }
 
   p {
-    color: ${({ theme }) => theme.textTertiary};
+    color: ${({ theme }) => theme.textSecondary};
   }
 `
 

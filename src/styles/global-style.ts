@@ -127,7 +127,7 @@ const GlobalStyle = createGlobalStyle`
     --color-logo-black-light: rgb(90, 90, 90);
     --color-logo-black-dark: rgb(43, 43, 43);
 
-    --border-primary-dark: 1px solid rgb(255, 255, 255, 0.15);
+    --border-primary-dark: 1px solid rgb(255, 255, 255, 0.1);
     --border-primary-light: 1px solid rgb(0, 0, 0, 0.08);
   }
 

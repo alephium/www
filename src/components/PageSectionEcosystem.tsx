@@ -78,13 +78,13 @@ let PageSectionEcosystem = ({ className }: { className?: string }) => {
 }
 
 PageSectionEcosystem = styled(PageSectionEcosystem)`
-  padding-top: var(--spacing-16);
+  padding-top: var(--spacing-10);
   padding-bottom: var(--spacing-20);
   position: relative;
 `
 
 const Subsections = styled.div`
-  margin-top: 58px;
+  margin-top: var(--spacing-5);
 `
 
 const SubsectionImageContainer = styled.div`
@@ -131,7 +131,7 @@ const Subsection = styled.div`
   }
 
   &:not(:last-child) {
-    margin-bottom: var(--spacing-14);
+    margin-bottom: var(--spacing-20);
   }
 `
 
@@ -158,13 +158,13 @@ const SubsectionItem = styled.div`
   height: 100px;
   display: flex;
   align-items: center;
-  background-color: ${({ theme }) => theme.bgTertiary};
+  background-color: ${({ theme }) => theme.bgPrimary};
   box-shadow: 0px 22px 30px rgba(0, 0, 0, 0.47);
   padding: var(--spacing-2);
   box-sizing: border-box;
   border-radius: 9px;
   font-size: 13px;
-  border: 1px solid var(--color-grey-550);
+  border: ${({ theme }) => theme.borderPrimary};
 
   ${SubsectionItemTitleOnHover},
   ${SubsectionItemTitle} {

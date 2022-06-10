@@ -78,7 +78,7 @@ const IntroColumnContent = styled.div`
 `
 
 PageSectionIntro = styled(PageSectionIntro)`
-  padding: var(--spacing-16) 0;
+  padding: var(--spacing-10) 0;
 `
 
 export default PageSectionIntro
