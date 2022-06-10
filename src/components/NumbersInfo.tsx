@@ -2,7 +2,7 @@ import { FC } from 'react'
 import styled from 'styled-components'
 
 interface NumbersInfoProps {
-  value: string
+  value?: string
   isLoading: boolean
   description: string
   className?: string

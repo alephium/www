@@ -10,6 +10,7 @@ import SubsectionTextHeader from './SubsectionTextHeader'
 import NumbersInfo from './NumbersInfo'
 import Columns from './Columns/Columns'
 import Column from './Columns/Column'
+import { HttpResponse } from '@alephium/sdk/api/explorer'
 
 const baseUrl = 'https://mainnet-backend.alephium.org'
 const ONE_DAY = 1000 * 60 * 60 * 24
@@ -34,7 +35,7 @@ type StatScalarKeys = 'hashrate' | 'circulatingSupply' | 'totalTransactions'
 type StatsScalarData = { [key in StatScalarKeys]: StatScalar }
 
 const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
-  const [explorerClient, setExplorerClient] = useState<ExplorerClient>(undefined)
+  const [explorerClient, setExplorerClient] = useState<ExplorerClient>()
   const [statsScalarData, setStatsScalarData] = useState<StatsScalarData>({
     hashrate: statScalarDefault,
     circulatingSupply: statScalarDefault,
@@ -88,17 +89,17 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
 
   const columns = [
     {
-      value: 16,
+      value: '16',
       isLoading: false,
       description: 'shards running'
     },
     {
-      value: `${addApostrophes(hashrateInteger)}${hashrateDecimal ?? ''}`,
+      value: hashrateInteger && `${addApostrophes(hashrateInteger)}${hashrateDecimal ?? ''}`,
       isLoading: false,
       description: `${hashrateSuffix}H/s`
     },
     {
-      value: supply,
+      value: supply[0],
       isLoading: false,
       description: 'alph circulating'
     },
@@ -114,9 +115,9 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
       <NumbersPageSectionContainer>
         <SubsectionTextHeaderStyled title={title} subtitle={subtitle} condensed />
         <Columns>
-          {columns.map((columnContent) => (
-            <NumbersColumn key={columnContent.number}>
-              <NumbersInfo {...columnContent} />
+          {columns.map((c) => (
+            <NumbersColumn key={c.value}>
+              <NumbersInfo {...c} />
             </NumbersColumn>
           ))}
         </Columns>

@@ -5,7 +5,7 @@ import SvgSunOverMountains from '../images/sun-over-mountains.svg'
 const PageSectionSunOverTheMountains = () => (
   <section>
     <Centered>
-      <BackgroundImage src={SvgSunOverMountains} />
+      <BackgroundImage />
     </Centered>
   </section>
 )
@@ -18,7 +18,7 @@ const Centered = styled.div`
 const BackgroundImage = styled.div`
   width: 911px;
   height: 694px;
-  background-image: url(${(props) => props.src});
+  background-image: url(${SvgSunOverMountains});
   background-position: center;
 `
 

@@ -5,7 +5,6 @@ import SectionTextHeader from './SectionTextHeader'
 import TextSnippet from './TextSnippet'
 import SvgCheckmark from '../images/complete-check.svg'
 import SvgStars from '../images/stars.svg'
-import SvgNight from '../images/night.svg'
 import { deviceBreakPoints } from '../styles/global-style'
 
 type Props = {
@@ -22,6 +21,10 @@ type Props = {
   }
 }
 
+interface Alignment {
+  alignRight: boolean
+}
+
 const PageSectionTodoList = ({ content: { title, subtitle, lists } }: Props) => (
   <BackdropStars>
     <PageSectionContainer>
@@ -31,8 +34,8 @@ const PageSectionTodoList = ({ content: { title, subtitle, lists } }: Props) => 
           <TodoList key={title}>
             <TodoTitle title={title} alignRight={index % 2 == 0} titleHierarchy="h3" bigTitle={false} />
             <TodoItems alignRight={index % 2 == 0}>
-              {items.map(({ text, complete }, index) => (
-                <TodoItem key={text} zIndex={items.length - index}>
+              {items.map(({ text, complete }) => (
+                <TodoItem key={text}>
                   <TodoContent complete={complete}>{text}</TodoContent>
                   {complete && <TodoStateIcon />}
                 </TodoItem>
@@ -49,16 +52,6 @@ const BackdropStars = styled.div`
   background-image: url('${SvgStars}');
   background-repeat: no-repeat;
   background-position-x: center;
-`
-
-const BackdropNight = styled.div`
-  background-image: url('${SvgNight}');
-  background-repeat: no-repeat;
-  background-position-x: center;
-  filter: saturate(0) brightness(120);
-  width: 100%;
-  height: 1962px;
-  position: absolute;
 `
 
 const SectionTextHeaderStyled = styled(SectionTextHeader)`
@@ -87,16 +80,16 @@ const TodoList = styled.div`
   }
 `
 
-const TodoTitle = styled(TextSnippet)`
+const TodoTitle = styled(TextSnippet)<Alignment>`
   margin-bottom: 45px;
-  text-align: ${(props) => (props.alignRight ? 'right' : 'left')};
+  text-align: ${({ alignRight }) => (alignRight ? 'right' : 'left')};
 `
 
-const TodoItems = styled.div`
+const TodoItems = styled.div<Alignment>`
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: ${(props) => (props.alignRight ? 'right' : 'left')};
+  justify-content: ${({ alignRight }) => (alignRight ? 'right' : 'left')};
 
   @media ${deviceBreakPoints.mobile} {
     justify-content: center;
@@ -127,7 +120,7 @@ const TodoStateIcon = styled.div`
   }
 `
 
-const TodoContent = styled.div`
+const TodoContent = styled.div<{ complete: boolean }>`
   padding-right: 21px;
   font-weight: 500;
   font-size: 16px;
