@@ -3,23 +3,24 @@ import styled from 'styled-components'
 import SvgSunOverMountains from '../images/sun-over-mountains.svg'
 
 const PageSectionSunOverTheMountains = () => (
-  <section>
-    <Centered>
-      <BackgroundImage />
-    </Centered>
-  </section>
+  <Container>
+    <BackgroundImage />
+  </Container>
 )
 
-const Centered = styled.div`
+const Container = styled.section`
   display: flex;
   justify-content: center;
+  margin-bottom: var(--spacing-10);
 `
 
 const BackgroundImage = styled.div`
-  width: 911px;
-  height: 694px;
+  width: 60%;
+  height: 350px;
   background-image: url(${SvgSunOverMountains});
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 `
 
 export default PageSectionSunOverTheMountains

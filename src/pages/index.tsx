@@ -54,8 +54,8 @@ const IndexPage = (props: IndexPageProps) => {
         <ThemeProvider theme={darkTheme}>
           <PageSectionMilestones content={pageContent.milestonesSection} />
           <PageSectionTodoList content={pageContent.todoListSection} />
-          <PageSectionSunOverTheMountains />
           <PageSectionFollowUs content={pageContent.followUsSection} />
+          <PageSectionSunOverTheMountains />
           <Footer content={pageContent.footer} />
         </ThemeProvider>
       </main>
