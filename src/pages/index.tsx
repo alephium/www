@@ -45,11 +45,9 @@ const IndexPage = (props: IndexPageProps) => {
         <ThemeProvider theme={darkTheme}>
           <PageSectionHero content={pageContent.headerSection} />
           <PageSectionIntro content={pageContent.introSection} />
-          <PageSectionEcosystem />
           <PageSectionTechnology content={pageContent.technologySection} minimal />
-        </ThemeProvider>
-        <ThemeProvider theme={darkTheme}>
           <PageSectionNumbers content={pageContent.numbersSection} />
+          <PageSectionEcosystem />
         </ThemeProvider>
         <ThemeProvider theme={darkTheme}>
           <PageSectionMilestones content={pageContent.milestonesSection} />
