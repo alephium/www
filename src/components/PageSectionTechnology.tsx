@@ -1,4 +1,4 @@
-import { FC, useState } from 'react'
+import { ComponentProps, FC, useState } from 'react'
 import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../styles/global-style'
@@ -13,6 +13,7 @@ import ModalPoLW from './ModalPoLW'
 import ModalSmartContract from './ModalSmartContract'
 import ModalVms from './ModalVms'
 import { ArrowedLinkProps } from './ArrowedLink'
+import { motion, Variants } from 'framer-motion'
 
 import BGGradientSrc from '../images/top-gradient.svg'
 import BlockflowImageSrc from '../images/blockflow.svg'
@@ -66,8 +67,9 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
     vmsSectionContent.links[0] = { ...vmsSectionContent.links[0], openModal: setIsVmsModalOpen }
   }
 
-  const columnsProps = {
-    gap: '4.5rem'
+  const columnsProps: Omit<ComponentProps<typeof Columns>, 'children'> = {
+    gap: '4.5rem',
+    animateEntry: true
   }
 
   return (

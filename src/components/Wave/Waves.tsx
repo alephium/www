@@ -38,10 +38,7 @@ const Waves = ({ parentRef }: { parentRef?: MutableRefObject<HTMLDivElement | un
     const height = parentRef?.current?.offsetHeight || 0
     const width = parentRef?.current?.offsetWidth || 0
 
-    console.log(height)
-
     if (height !== currentParentSize.height) {
-      console.log('UPDATE')
       setCurrentParentSize((prev) => ({ ...prev, height }))
     }
 
