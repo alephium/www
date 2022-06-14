@@ -6,13 +6,14 @@ import TextSnippet from './TextSnippet'
 interface SubsectionTextHeaderProps {
   title: string
   subtitle: string
+  bigTitle?: boolean
   className?: string
   condensed?: boolean
 }
 
-let SubsectionTextHeader: FC<SubsectionTextHeaderProps> = ({ title, subtitle, className }) => (
+let SubsectionTextHeader: FC<SubsectionTextHeaderProps> = ({ title, subtitle, bigTitle, className }) => (
   <header className={className}>
-    <TextSnippet title={title} titleHierarchy="h3" subtitle={subtitle} />
+    <TextSnippet title={title} titleHierarchy="h3" subtitle={subtitle} bigTitle={bigTitle} />
   </header>
 )
 

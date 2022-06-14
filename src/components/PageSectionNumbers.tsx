@@ -1,5 +1,5 @@
 import { addApostrophes, ExplorerClient } from '@alephium/sdk'
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../styles/global-style'
@@ -11,6 +11,8 @@ import NumbersInfo from './NumbersInfo'
 import Columns from './Columns/Columns'
 import Column from './Columns/Column'
 import { HttpResponse } from '@alephium/sdk/api/explorer'
+import Waves from './Wave/Waves'
+import useElementSize from '../hooks/useElementSize'
 
 const baseUrl = 'https://mainnet-backend.alephium.org'
 const ONE_DAY = 1000 * 60 * 60 * 24
@@ -41,6 +43,8 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
     circulatingSupply: statScalarDefault,
     totalTransactions: statScalarDefault
   })
+
+  const boxRef = useRef<HTMLDivElement>()
 
   const updateStatsScalar = useCallback(
     (key: StatScalarKeys, value: StatScalar['value']) => {
@@ -99,7 +103,7 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
       description: `${hashrateSuffix}H/s`
     },
     {
-      value: supply[0],
+      value: supply,
       isLoading: false,
       description: 'alph circulating'
     },
@@ -112,15 +116,16 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
 
   return (
     <NumbersSection>
-      <NumbersPageSectionContainer>
-        <SubsectionTextHeaderStyled title={title} subtitle={subtitle} condensed />
+      <NumbersPageSectionContainer ref={boxRef}>
+        <SubsectionTextHeaderStyled title={title} subtitle={subtitle} condensed bigTitle />
         <Columns>
           {columns.map((c) => (
-            <NumbersColumn key={c.value}>
+            <NumbersColumn key={c.description}>
               <NumbersInfo {...c} />
             </NumbersColumn>
           ))}
         </Columns>
+        <Waves parentRef={boxRef} />
       </NumbersPageSectionContainer>
     </NumbersSection>
   )
@@ -134,11 +139,13 @@ const NumbersSection = styled.section`
 `
 
 const NumbersPageSectionContainer = styled(PageSectionContainer)`
+  position: relative;
   max-width: var(--page-width-shrinked);
   margin: 0 8vw 156px 8vw;
   border-radius: 30px;
   background-color: ${({ theme }) => theme.bgPrimary};
   padding: var(--spacing-11);
+  padding-bottom: var(--spacing-16);
   max-width: 1000px;
   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
 `
@@ -146,6 +153,7 @@ const NumbersPageSectionContainer = styled(PageSectionContainer)`
 const NumbersColumn = styled(Column)`
   display: flex;
   align-items: center;
+  z-index: 1;
 
   &:not(:first-child) {
     > div {
@@ -154,19 +162,6 @@ const NumbersColumn = styled(Column)`
       @media ${deviceBreakPoints.mobile} {
         padding-left: 0;
         padding-top: var(--spacing-9);
-      }
-    }
-
-    &:before {
-      content: '';
-      display: block;
-      width: 2px;
-      height: var(--spacing-9);
-      background-color: ${({ theme }) => theme.separator};
-      flex-shrink: 0;
-
-      @media ${deviceBreakPoints.mobile} {
-        display: none;
       }
     }
   }
