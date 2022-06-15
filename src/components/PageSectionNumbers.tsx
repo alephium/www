@@ -139,14 +139,14 @@ const NumbersSection = styled.section`
 `
 
 const NumbersPageSectionContainer = styled(PageSectionContainer)`
+  flex: 1;
   position: relative;
-  max-width: var(--page-width-shrinked);
+  max-width: 1200px;
   margin: 0 8vw 156px 8vw;
   border-radius: 30px;
   background-color: ${({ theme }) => theme.bgPrimary};
   padding: var(--spacing-11);
   padding-bottom: var(--spacing-16);
-  max-width: 1000px;
   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
 `
 

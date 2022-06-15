@@ -35,6 +35,7 @@ const CardEngagement: FC<CardEngagementProps> = ({ title, link, image, children,
 
 const SimpleLinkStyled = styled(SimpleLink)`
   display: flex;
+  perspective: 600px;
 `
 
 const CardContainer = styled(Card)`
@@ -53,29 +54,19 @@ const CardContainer = styled(Card)`
     }
   }
 
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    margin: -2px;
-    border-radius: inherit;
-  }
-
   &:hover {
-    background-color: ${({ theme }) => theme.bgSecondary};
-    border-color: transparent;
+    background-color: ${({ theme }) => theme.bgSurface};
+    transform: translateZ(10px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.9);
+    z-index: 1;
 
     &:after {
       background: linear-gradient(270deg, var(--color-salmon) 0%, var(--color-blue-200) 100%);
     }
 
     h3 {
-      ::before {
-        content: '→  ';
+      ::after {
+        content: '  →';
       }
     }
   }

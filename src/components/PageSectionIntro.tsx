@@ -30,7 +30,7 @@ interface PageSectionIntroProps {
 let PageSectionIntro: FC<PageSectionIntroProps> = ({ className, content }) => {
   return (
     <section className={className} id="intro">
-      <PageSectionContainer>
+      <CenteredPageSectionContainer>
         <IntroColumns gap="var(--spacing-32)">
           <Column>
             <SectionTextHeader title={content.title} subtitle={content.subtitle} />
@@ -50,7 +50,7 @@ let PageSectionIntro: FC<PageSectionIntroProps> = ({ className, content }) => {
             </IntroColumnContent>
           </Column>
         </IntroColumns>
-      </PageSectionContainer>
+      </CenteredPageSectionContainer>
     </section>
   )
 }
@@ -72,6 +72,13 @@ const cardVariants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 }
 }
+
+const CenteredPageSectionContainer = styled(PageSectionContainer)`
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
 
 const IntroColumns = styled(Columns)`
   @media (max-width: 1352px) {
@@ -95,10 +102,6 @@ const IntroColumnContent = styled(motion.div)`
     flex-direction: column;
     grid-template-columns: 100%;
   }
-`
-
-PageSectionIntro = styled(PageSectionIntro)`
-  padding: var(--spacing-10) 0;
 `
 
 export default PageSectionIntro
