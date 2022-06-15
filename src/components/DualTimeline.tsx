@@ -250,18 +250,20 @@ const Piece = styled.div`
 
 const Dot = styled.div`
   position: relative;
-  left: -9px;
+  left: -7px;
   top: calc((18px + 4px) / -2);
 
   ::after {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
+    transform: translateY(60%);
     border-radius: 100%;
     background: ${({ isMajor }) => (isMajor ? 'linear-gradient(180deg, #00C2FF 0%, #2400FF 100%);' : 'white')};
-    border: 4px solid black;
+    border: 3px solid black;
     position: absolute;
     content: '';
     display: block;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
   }
 `
 

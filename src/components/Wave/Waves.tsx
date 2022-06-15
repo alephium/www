@@ -33,7 +33,7 @@ const Waves = ({ parentRef }: { parentRef?: MutableRefObject<HTMLDivElement | un
   let t = 0
 
   useAnimationFrame((deltaTime) => {
-    t = t + (deltaTime * 6) / 100000
+    t = t + (deltaTime * 10) / 100000
 
     const height = parentRef?.current?.offsetHeight || 0
     const width = parentRef?.current?.offsetWidth || 0

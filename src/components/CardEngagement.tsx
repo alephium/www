@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC, ReactNode } from 'react'
 import styled, { useTheme } from 'styled-components'
 
 import Card from './Card'
@@ -13,6 +13,7 @@ interface CardEngagementProps {
   image: { publicURL: string }
   className?: string
   trackingName?: string
+  children: ReactNode
 }
 
 const CardEngagement: FC<CardEngagementProps> = ({ title, link, image, children, className, trackingName }) => {
