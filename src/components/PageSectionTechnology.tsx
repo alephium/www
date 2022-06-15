@@ -13,7 +13,6 @@ import ModalPoLW from './ModalPoLW'
 import ModalSmartContract from './ModalSmartContract'
 import ModalVms from './ModalVms'
 import { ArrowedLinkProps } from './ArrowedLink'
-import { motion, Variants } from 'framer-motion'
 
 import BGGradientSrc from '../images/top-gradient.svg'
 import BlockflowImageSrc from '../images/blockflow.svg'

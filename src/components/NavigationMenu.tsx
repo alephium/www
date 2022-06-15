@@ -24,13 +24,13 @@ let NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
     <div className="nav-end">
       <ArrowedLink
         className="nav-item"
-        url="https://wiki.alephium.org/5min-overview/"
+        url="https://github.com/alephium/desktop-wallet/releases/"
         newTab
         altColor
-        emoji="🚀"
+        emoji="👛"
         trackingName="main-nav:5-min-article-link"
       >
-        Alephium in 5&apos;
+        Download our wallet
       </ArrowedLink>
       <ArrowedLink
         className="nav-item"
