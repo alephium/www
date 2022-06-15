@@ -23,6 +23,8 @@ import StackImage from '../images/svgs/stack.svg'
 import LeafImage from '../images/svgs/leaf.svg'
 import VmDotsImage from '../images/svgs/vm-dots.svg'
 import IllustrationColumn from './Columns/IllustrationColumn'
+import { motion, useTransform, useViewportScroll } from 'framer-motion'
+import { useRefScrollProgress } from '../hooks/useRefScrollProfress'
 
 export interface PageSectionTechnologyContentType {
   title: string
@@ -56,6 +58,17 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
   const smartContractSectionContent = content.smartContractSection
   const polwSectionContent = content.polwSection
   const vmsSectionContent = content.vmsSection
+
+  const { scrollYProgress } = useViewportScroll()
+
+  const [gradientRef, start, end] = useRefScrollProgress()
+
+  const gradientOpacity = useTransform(scrollYProgress, [start, end - 0.05], [0.5, 1])
+  const gradientYScale = useTransform(scrollYProgress, [start + 0.07, end], [0, 5])
+
+  console.log(start)
+  console.log(end)
+
   if (!minimal) {
     blockFlowSectionContent.links[0] = { ...blockFlowSectionContent.links[0], openModal: setIsBlockFlowModalOpen }
     polwSectionContent.links[0] = { ...polwSectionContent.links[0], openModal: setIsPoLWModalOpen }
@@ -72,8 +85,8 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
   }
 
   return (
-    <SectionContainer className={className}>
-      <TopGradient />
+    <SectionContainer className={className} ref={gradientRef}>
+      <TopGradient style={{ opacity: gradientOpacity, scaleY: gradientYScale, transformOrigin: 'top' }} />
       <SectionTextHeaderStyled title={content.title} subtitle={content.subtitle} centered bigSubtitle />
       <section>
         <PageSectionContainerStyled>
@@ -160,18 +173,20 @@ const SectionContainer = styled.section`
   position: relative;
 `
 
-const TopGradient = styled.div`
+const TopGradient = styled(motion.div)`
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
-  height: 100%;
+  height: 300px;
   background-image: url(${BGGradientSrc});
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
   background-position-y: top;
   box-shadow: 0 -30px 50px rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  pointer-events: none;
 `
 
 const BlockflowImage = styled.img`
