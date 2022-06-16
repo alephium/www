@@ -39,15 +39,15 @@ const Container = styled(motion.div)`
 `
 
 const HighlightContainer = styled(motion.div)`
-  height: 100px;
-  width: 100px;
+  height: 1000px;
+  width: 1000px;
 `
 
 const Highlight = styled(motion.div)`
   height: 100%;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.2);
-  filter: blur(100px);
+  border-radius: 100%;
+  background: radial-gradient(rgba(255, 255, 255, 0.03) 0%, transparent 40%);
   transform: translateX(-50%) translateY(-50%);
 `
 
