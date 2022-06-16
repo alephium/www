@@ -26,8 +26,8 @@ let TextSnippet: FC<TextSnippetProps> = ({ className, title, titleHierarchy = 'h
 TextSnippet = styled(TextSnippet)`
   > h2,
   > h3 {
-    font-size: ${({ bigTitle }) => (bigTitle ? 'var(--fontSize-50)' : 'var(--fontSize-28)')};
-    line-height: ${({ bigTitle }) => (bigTitle ? 'var(--fontSize-50)' : 'var(--lineHeight-36)')};
+    font-size: ${({ bigTitle }) => (bigTitle ? 'var(--fontSize-56)' : 'var(--fontSize-28)')};
+    line-height: ${({ bigTitle }) => (bigTitle ? 'var(--fontSize-56)' : 'var(--lineHeight-36)')};
     font-weight: var(--fontWeight-semiBold);
     margin: 0;
   }

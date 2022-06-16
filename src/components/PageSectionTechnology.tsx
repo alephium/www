@@ -63,7 +63,7 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
 
   const [gradientRef, start, end] = useRefScrollProgress()
 
-  const gradientXScale = useTransform(scrollYProgress, [start + start * 0.1, end - end * 0.3], [0, 1.2])
+  const gradientXScale = useTransform(scrollYProgress, [start + start * 0.5, end - end * 0.3], [0, 1.2])
   const gradientYScale = useTransform(scrollYProgress, [start + start * 0.5, end - end * 0.1], [0, 4])
 
   if (!minimal) {

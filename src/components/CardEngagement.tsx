@@ -112,7 +112,7 @@ const CardContainer = styled(Card)`
   &:hover {
     background-color: ${({ theme }) => theme.bgPrimary};
     transform: translateZ(10px);
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.4);
     z-index: 1;
 
     h3 {

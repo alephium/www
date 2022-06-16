@@ -15,8 +15,8 @@ const Container = styled.section`
 `
 
 const BackgroundImage = styled.div`
-  width: 60%;
-  height: 350px;
+  width: 70%;
+  height: 400px;
   background-image: url(${SvgSunOverMountains});
   background-position: center;
   background-repeat: no-repeat;

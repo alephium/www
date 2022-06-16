@@ -14,9 +14,12 @@ import HeroPageSectionContainer from './Hero/HeroPageSectionContainer'
 
 import LogoLight from '../images/svgs/logo-dark.svg'
 import LogoDark from '../images/svgs/logo-light.svg'
-import HeroDarkImage from '../images/hero-dark.svg'
+import HeroDarkFrontImage from '../images/hero-dark-front.svg'
+import HeroDarkMiddleImage from '../images/hero-dark-middle.svg'
+import HeroDarkBackImage from '../images/hero-dark-back.svg'
 import HeroLightImage from '../images/hero-light.svg'
 import Arrow from '../images/svgs/arrow-right.svg'
+import ParallaxWrapper from './ParallaxWrapper'
 
 export interface PageSectionHeroContentType {
   dark: {
@@ -52,8 +55,20 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
     <ThemeProvider theme={theme === 'dark' ? darkTheme : lightTheme}>
       <HeroSlider heroElementRef={innerRef} onSwipe={onSwipe}>
         <HeroSection className={className} ref={innerRef}>
-          <img src={HeroDarkImage} alt="Hero dark" className={`hero-image planet ${theme === 'light' && 'hidden'}`} />
-          <img src={HeroLightImage} alt="Hero light" className={`hero-image ${theme === 'dark' && 'hidden'}`} />
+          <ParallaxWrapper className="hero-image-container" speed={-4}>
+            <img src={HeroDarkBackImage} alt="Hero dark back" className="hero-image" />
+          </ParallaxWrapper>
+          <ParallaxWrapper className="hero-image-container" speed={1}>
+            <img src={HeroDarkMiddleImage} className="hero-image" alt="Hero dark front" />
+          </ParallaxWrapper>
+          <ParallaxWrapper className="hero-image-container" speed={3}>
+            <img src={HeroDarkFrontImage} className="hero-image" alt="Hero dark front" />
+          </ParallaxWrapper>
+          <img
+            src={HeroLightImage}
+            alt="Hero light"
+            className={`hero-image-container ${theme === 'dark' && 'hidden'}`}
+          />
           <HeroPageSectionContainer>
             <div className="navigation-menu-wrapper">
               <NavigationMenu />

@@ -49,13 +49,20 @@ const HeroSection = styled.section`
     }
   }
 
-  .hero-image {
+  .hero-image-container {
     position: absolute;
     right: 0;
+    top: 0;
+    left: 0;
     bottom: 0;
-    width: auto;
-    height: 100%;
-    transition: all 0.4s ease-in;
+
+    .hero-image  {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      top: 0;
+    }
 
     @media ${deviceBreakPoints.mobile} {
       &.planet {
