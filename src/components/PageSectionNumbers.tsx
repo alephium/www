@@ -3,7 +3,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../styles/global-style'
-import { formatNumberForDisplay } from '../utils'
+import { formatNumberForDisplay } from '../utils/numbers'
 
 import PageSectionContainer from './PageSectionContainer'
 import SubsectionTextHeader from './SubsectionTextHeader'

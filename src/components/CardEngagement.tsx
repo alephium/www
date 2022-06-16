@@ -1,4 +1,4 @@
-import { FC, ReactNode } from 'react'
+import { FC, ReactNode, PointerEvent } from 'react'
 import styled, { useTheme } from 'styled-components'
 
 import Card from './Card'
@@ -7,6 +7,8 @@ import SimpleLink, { SimpleLinkProps } from './SimpleLink'
 
 import { deviceBreakPoints } from '../styles/global-style'
 import { motion, useMotionValue, useTransform } from 'framer-motion'
+import CursorHighlight from './CursorHighlight'
+import { getPointerRelativePositionInElement } from '../utils/pointer'
 
 interface CardEngagementProps {
   title: string
@@ -40,14 +42,11 @@ const CardEngagement: FC<CardEngagementProps> = ({
     clamp: true
   })
 
-  const onMove = (e) => {
-    const bounds = e.currentTarget.getBoundingClientRect()
+  const onMove = (e: PointerEvent) => {
+    const { x: positionX, y: positionY } = getPointerRelativePositionInElement(e)
 
-    const xValue = (e.clientX - bounds.x) / e.currentTarget.clientWidth
-    const yValue = (e.clientY - bounds.y) / e.currentTarget.clientHeight
-
-    x.set(xValue, true)
-    y.set(yValue, true)
+    x.set(positionX, true)
+    y.set(positionY, true)
   }
 
   return (
@@ -77,6 +76,7 @@ const CardEngagement: FC<CardEngagementProps> = ({
               {children}
             </CardTextTeaser>
           </div>
+          <CursorHighlight />
         </CardContainer>
       </SimpleLinkStyled>
     </MotionContainer>
@@ -85,6 +85,7 @@ const CardEngagement: FC<CardEngagementProps> = ({
 
 const MotionContainer = styled(motion.div)`
   display: flex;
+  position: relative;
 `
 
 const SimpleLinkStyled = styled(SimpleLink)`
@@ -109,7 +110,7 @@ const CardContainer = styled(Card)`
   }
 
   &:hover {
-    background-color: ${({ theme }) => theme.bgSurface};
+    background-color: ${({ theme }) => theme.bgPrimary};
     transform: translateZ(10px);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.9);
     z-index: 1;
