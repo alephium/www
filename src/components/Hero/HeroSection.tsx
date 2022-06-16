@@ -50,7 +50,7 @@ const HeroSection = styled.section`
   }
 
   .hero-image-container {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     left: 0;
