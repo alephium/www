@@ -64,7 +64,7 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
   const [gradientRef, start, end] = useRefScrollProgress()
 
   const gradientXScale = useTransform(scrollYProgress, [start + start * 0.1, end - end * 0.3], [0, 1.2])
-  const gradientYScale = useTransform(scrollYProgress, [start + start * 0.3, end - end * 0.1], [0, 5])
+  const gradientYScale = useTransform(scrollYProgress, [start + start * 0.5, end - end * 0.1], [0, 5])
 
   if (!minimal) {
     blockFlowSectionContent.links[0] = { ...blockFlowSectionContent.links[0], openModal: setIsBlockFlowModalOpen }
@@ -82,11 +82,8 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
   }
 
   return (
-    <SectionContainer className={className}>
-      <TopGradient
-        style={{ scaleX: gradientXScale, scaleY: gradientYScale, transformOrigin: 'top' }}
-        ref={gradientRef}
-      />
+    <SectionContainer className={className} ref={gradientRef}>
+      <TopGradient style={{ scaleX: gradientXScale, scaleY: gradientYScale, transformOrigin: 'top' }} />
       <SectionTextHeaderStyled title={content.title} subtitle={content.subtitle} centered bigSubtitle />
       <section>
         <PageSectionContainerStyled>
@@ -178,7 +175,7 @@ const TopGradient = styled(motion.div)`
   top: 0;
   right: 0;
   left: 0;
-  height: 250px;
+  height: 50%;
   background-image: url(${BGGradientSrc});
   background-repeat: no-repeat;
   background-size: contain;

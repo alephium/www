@@ -27,7 +27,7 @@ interface PageSectionIntroProps {
   content: PageSectionIntroContentType
 }
 
-let PageSectionIntro: FC<PageSectionIntroProps> = ({ className, content }) => {
+const PageSectionIntro: FC<PageSectionIntroProps> = ({ className, content }) => {
   return (
     <section className={className} id="intro">
       <CenteredPageSectionContainer>
@@ -35,7 +35,12 @@ let PageSectionIntro: FC<PageSectionIntroProps> = ({ className, content }) => {
           <Column>
             <SectionTextHeader title={content.title} subtitle={content.subtitle} />
             {content.cards && (
-              <IntroColumnContent variants={cardContainerVariants} initial="hidden" whileInView="visible">
+              <IntroColumnContent
+                variants={cardContainerVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+              >
                 {content.cards.map((card) => (
                   <CardEngagement
                     title={card.title}

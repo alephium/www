@@ -68,7 +68,7 @@ const CardEngagement: FC<CardEngagementProps> = ({
             rotateY,
             rotateX
           }}
-          transition={{ duration: 0.05 }}
+          transition={{ duration: 0.2 }}
         >
           <div className="card-contents">
             <Iconic src={image.publicURL} alt={title} />
