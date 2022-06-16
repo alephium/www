@@ -38,37 +38,40 @@ interface PageSectionHeroProps {
 }
 
 const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
-  const [theme, setTheme] = useState('dark')
-  const [currentSlide, setCurrentSlide] = useState(1)
+  const [slide, setSlide] = useState<0 | 1>(0)
   const innerRef = useRef<HTMLElement>(null)
-  const themeContent = theme === 'dark' ? content.dark : content.light
+  const themeContent = slide === 0 ? content.dark : content.light
 
-  const toggleTheme = () => {
-    //setTheme(theme === 'light' ? 'dark' : 'light')
+  const toggleSlide = () => {
+    setSlide(slide === 0 ? 1 : 0)
   }
 
   const onSwipe = () => {
-    setCurrentSlide(currentSlide === 1 ? 2 : 1)
+    setSlide(slide === 0 ? 1 : 0)
   }
 
   return (
-    <ThemeProvider theme={theme === 'dark' ? darkTheme : lightTheme}>
+    <ThemeProvider theme={darkTheme}>
       <HeroSlider heroElementRef={innerRef} onSwipe={onSwipe}>
         <HeroSection className={className} ref={innerRef}>
-          <ParallaxWrapper className="hero-image-container" speed={-4}>
-            <img src={HeroDarkBackImage} alt="Hero dark back" className="hero-image" />
-          </ParallaxWrapper>
-          <ParallaxWrapper className="hero-image-container" speed={1}>
-            <img src={HeroDarkMiddleImage} className="hero-image" alt="Hero dark front" />
-          </ParallaxWrapper>
-          <ParallaxWrapper className="hero-image-container" speed={3}>
-            <img src={HeroDarkFrontImage} className="hero-image" alt="Hero dark front" />
-          </ParallaxWrapper>
-          <img
-            src={HeroLightImage}
-            alt="Hero light"
-            className={`hero-image-container ${theme === 'dark' && 'hidden'}`}
-          />
+          {slide === 0 && (
+            <>
+              <ParallaxWrapper className="hero-image-container" speed={-4}>
+                <img src={HeroDarkBackImage} alt="Hero dark back" className="hero-image" />
+              </ParallaxWrapper>
+              <ParallaxWrapper className="hero-image-container" speed={1}>
+                <img src={HeroDarkMiddleImage} className="hero-image" alt="Hero dark front" />
+              </ParallaxWrapper>
+              <ParallaxWrapper className="hero-image-container" speed={3}>
+                <img src={HeroDarkFrontImage} className="hero-image" alt="Hero dark front" />
+              </ParallaxWrapper>
+            </>
+          )}
+          {slide === 1 && (
+            <ParallaxWrapper className="hero-image-container" speed={3}>
+              <img src={HeroLightImage} alt="Hero light" className={`hero-image`} />
+            </ParallaxWrapper>
+          )}
           <HeroPageSectionContainer>
             <div className="navigation-menu-wrapper">
               <NavigationMenu />
@@ -76,14 +79,10 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
             <HeroContentWrapper>
               <div className="contents">
                 <>
-                  {theme === 'dark' ? <LogoDark className="logo" /> : <LogoLight className="logo" />}
+                  <LogoDark className="logo" />
                   <h1>{themeContent.title}</h1>
                   <TextSnippetStyled bigText>{themeContent.subtitle}</TextSnippetStyled>
-                  <PaginatorStyled
-                    onPageClick={toggleTheme}
-                    currentPage={currentSlide}
-                    setCurrentPage={setCurrentSlide}
-                  />
+                  <PaginatorStyled onPageClick={toggleSlide} currentPage={slide} setCurrentPage={setSlide} />
                   <a
                     href="#intro"
                     aria-label="Scroll to the intro section"

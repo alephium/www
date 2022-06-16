@@ -222,7 +222,6 @@ const trackWidth = 140
 const Container = styled.div`
   width: 100vw;
   margin-bottom: 226px;
-  overflow: hidden;
 `
 
 const Text = styled.div`

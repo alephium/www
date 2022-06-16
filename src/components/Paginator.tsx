@@ -20,10 +20,10 @@ let Paginator: FC<PaginatorProps> = ({ numberOfPages = 2, currentPage, setCurren
   return (
     <div className={className}>
       {Array.from({ length: numberOfPages }).map((_, index) =>
-        currentPage - 1 === index ? (
+        currentPage === index ? (
           <DotImage key={`page-${index}`} />
         ) : (
-          <DotImageEmpty key={`page-${index}`} onClick={() => handleOnClick(index + 1)} />
+          <DotImageEmpty key={`page-${index}`} onClick={() => handleOnClick(index)} />
         )
       )}
     </div>

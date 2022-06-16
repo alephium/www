@@ -168,6 +168,7 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
 
 const SectionContainer = styled.section`
   position: relative;
+  overflow: hidden;
 `
 
 const TopGradient = styled(motion.div)`
