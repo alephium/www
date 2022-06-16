@@ -13,6 +13,7 @@ import Column from './Columns/Column'
 import { HttpResponse } from '@alephium/sdk/api/explorer'
 import Waves from './Wave/Waves'
 import useElementSize from '../hooks/useElementSize'
+import ArrowedLink from './ArrowedLink'
 
 const baseUrl = 'https://mainnet-backend.alephium.org'
 const ONE_DAY = 1000 * 60 * 60 * 24
@@ -118,6 +119,9 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
     <NumbersSection>
       <NumbersPageSectionContainer ref={boxRef}>
         <SubsectionTextHeaderStyled title={title} subtitle={subtitle} condensed bigTitle />
+        <ArrowedLinkStyled url="https://explorer.alephium.org/" newTab>
+          Check our explorer
+        </ArrowedLinkStyled>
         <Columns>
           {columns.map((c) => (
             <NumbersColumn key={c.description}>
@@ -178,6 +182,10 @@ const NumbersColumn = styled(Column)`
 `
 
 const SubsectionTextHeaderStyled = styled(SubsectionTextHeader)`
+  margin-bottom: var(--spacing-4);
+`
+
+const ArrowedLinkStyled = styled(ArrowedLink)`
   margin-bottom: var(--spacing-10);
 `
 
