@@ -34,20 +34,22 @@ let PageSectionIntro: FC<PageSectionIntroProps> = ({ className, content }) => {
         <IntroColumns gap="var(--spacing-32)">
           <Column>
             <SectionTextHeader title={content.title} subtitle={content.subtitle} />
-            <IntroColumnContent variants={cardContainerVariants} initial="hidden" whileInView="visible">
-              {content.cards.map((card) => (
-                <AnimatedCardEngagement
-                  title={card.title}
-                  image={card.image}
-                  key={card.title}
-                  link={card.link}
-                  trackingName={`intro-section-card:${card.title}-${card.link.text}-link`}
-                  variants={cardVariants}
-                >
-                  <p>{card.description}</p>
-                </AnimatedCardEngagement>
-              ))}
-            </IntroColumnContent>
+            {content.cards && (
+              <IntroColumnContent variants={cardContainerVariants} initial="hidden" whileInView="visible">
+                {content.cards.map((card) => (
+                  <CardEngagement
+                    title={card.title}
+                    image={card.image}
+                    key={card.title}
+                    link={card.link}
+                    trackingName={`intro-section-card:${card.title}-${card.link.text}-link`}
+                    variants={cardVariants}
+                  >
+                    <p>{card.description}</p>
+                  </CardEngagement>
+                ))}
+              </IntroColumnContent>
+            )}
           </Column>
         </IntroColumns>
       </CenteredPageSectionContainer>
@@ -55,15 +57,13 @@ let PageSectionIntro: FC<PageSectionIntroProps> = ({ className, content }) => {
   )
 }
 
-const AnimatedCardEngagement = motion(CardEngagement)
-
 const cardContainerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 1,
-      delayChildren: 0.25
+      delay: 0.2,
+      staggerChildren: 0.25
     }
   }
 }
@@ -74,7 +74,7 @@ const cardVariants = {
 }
 
 const CenteredPageSectionContainer = styled(PageSectionContainer)`
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;

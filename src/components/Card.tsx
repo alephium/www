@@ -1,16 +1,22 @@
+import { HTMLMotionProps, motion } from 'framer-motion'
 import { FC } from 'react'
 import styled from 'styled-components'
 
-interface CardProps {
+interface CardProps extends HTMLMotionProps<'div'> {
   className?: string
   borderColor?: string
   thickBorders?: boolean
   bgColor?: string
   shadow?: boolean
+  children: React.ReactNode
 }
 
-let Card: FC<CardProps> = ({ className, children }) => {
-  return <div className={className}>{children}</div>
+let Card: FC<CardProps> = ({ className, children, ...props }) => {
+  return (
+    <motion.div className={className} {...props}>
+      {children}
+    </motion.div>
+  )
 }
 
 Card = styled(Card)`

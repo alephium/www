@@ -14,7 +14,7 @@ import ModalSmartContract from './ModalSmartContract'
 import ModalVms from './ModalVms'
 import { ArrowedLinkProps } from './ArrowedLink'
 
-import BGGradientSrc from '../images/top-gradient.svg'
+import BGGradientSrc from '../images/top-gradient.png'
 import BlockflowImageSrc from '../images/blockflow.svg'
 import PoLWImageSrc from '../images/polw-background.svg'
 import SmartContractImageSrc from '../images/smart-contract.svg'
@@ -63,11 +63,8 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
 
   const [gradientRef, start, end] = useRefScrollProgress()
 
-  const gradientOpacity = useTransform(scrollYProgress, [start, end - 0.05], [0.5, 1])
-  const gradientYScale = useTransform(scrollYProgress, [start + 0.07, end], [0, 5])
-
-  console.log(start)
-  console.log(end)
+  const gradientXScale = useTransform(scrollYProgress, [start + start * 0.1, end - end * 0.3], [0, 1.2])
+  const gradientYScale = useTransform(scrollYProgress, [start + start * 0.3, end - end * 0.1], [0, 5])
 
   if (!minimal) {
     blockFlowSectionContent.links[0] = { ...blockFlowSectionContent.links[0], openModal: setIsBlockFlowModalOpen }
@@ -85,8 +82,11 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
   }
 
   return (
-    <SectionContainer className={className} ref={gradientRef}>
-      <TopGradient style={{ opacity: gradientOpacity, scaleY: gradientYScale, transformOrigin: 'top' }} />
+    <SectionContainer className={className}>
+      <TopGradient
+        style={{ scaleX: gradientXScale, scaleY: gradientYScale, transformOrigin: 'top' }}
+        ref={gradientRef}
+      />
       <SectionTextHeaderStyled title={content.title} subtitle={content.subtitle} centered bigSubtitle />
       <section>
         <PageSectionContainerStyled>
@@ -178,13 +178,12 @@ const TopGradient = styled(motion.div)`
   top: 0;
   right: 0;
   left: 0;
-  height: 300px;
+  height: 250px;
   background-image: url(${BGGradientSrc});
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
   background-position-y: top;
-  box-shadow: 0 -30px 50px rgba(0, 0, 0, 0.7);
   z-index: 2;
   pointer-events: none;
 `
