@@ -36,7 +36,7 @@ const AlephiumLogo = ({ className, gradientIndex, ...props }: AlephiumLogoProps)
               <motion.path
                 d="M561.888,18.859C561.888,6.522 552.173,-1.782 540.207,0.327L396.272,25.704C384.306,27.813 374.592,39.542 374.592,51.88L374.592,323.734C374.592,336.072 384.306,344.375 396.272,342.266L540.207,316.89C552.173,314.78 561.888,303.051 561.888,290.714L561.888,18.859Z"
                 fill="url(#logo-accent-gradient)"
-                animate={{ rotate: gradientIndex * 180 }}
+                animate={{ rotateY: gradientIndex * 360 }}
               />
             </g>
             <g transform="matrix(0.46324,0,0,0.476693,63.1121,4506.2)">
