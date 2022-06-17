@@ -27,8 +27,8 @@ interface Alignment {
 
 const PageSectionTodoList = ({ content: { title, subtitle, lists } }: Props) => (
   <BackdropStars>
+    <SectionTextHeader title={title} subtitle={subtitle} bigSubtitle bigText position="sticky" centered />
     <PageSectionContainer>
-      <SectionTextHeaderStyled title={title} subtitle={subtitle} bigSubtitle bigText />
       <TodoLists>
         {lists.map(({ title, items }, index) => (
           <TodoList key={title}>
@@ -52,10 +52,6 @@ const BackdropStars = styled.div`
   background-image: url('${SvgStars}');
   background-repeat: no-repeat;
   background-position-x: center;
-`
-
-const SectionTextHeaderStyled = styled(SectionTextHeader)`
-  text-align: center;
 `
 
 const TodoLists = styled.div`

@@ -148,10 +148,12 @@ const NumbersPageSectionContainer = styled(PageSectionContainer)`
   max-width: 1200px;
   margin: 0 8vw 156px 8vw;
   border-radius: 30px;
-  background-color: ${({ theme }) => theme.bgPrimary};
+  background-color: ${({ theme }) => theme.bgSecondary};
   padding: var(--spacing-11);
   padding-bottom: var(--spacing-16);
-  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 50px 50px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  z-index: 2;
 `
 
 const NumbersColumn = styled(Column)`

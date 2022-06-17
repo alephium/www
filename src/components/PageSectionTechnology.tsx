@@ -168,15 +168,14 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
 
 const SectionContainer = styled.section`
   position: relative;
-  overflow: hidden;
 `
 
 const TopGradient = styled(motion.div)`
-  position: absolute;
+  position: sticky;
   top: 0;
   right: 0;
   left: 0;
-  height: 50%;
+  height: 200px;
   background-image: url(${BGGradientSrc});
   background-repeat: no-repeat;
   background-size: contain;
@@ -196,6 +195,7 @@ const BlockflowImage = styled.img`
 
 const SectionTextHeaderStyled = styled(SectionTextHeader)`
   margin-bottom: var(--spacing-20);
+  overflow-x: hidden;
 
   @media ${deviceBreakPoints.mobile} {
     max-width: var(--page-width);
@@ -257,6 +257,7 @@ const VmsSubsection = styled.section`
   background-color: ${({ theme }) => theme.bgSecondary};
   padding: var(--spacing-10) 0;
   position: relative;
+  overflow: hidden;
 
   @media ${deviceBreakPoints.mobile} {
     padding: var(--spacing-5) 0 var(--spacing-10);
@@ -267,6 +268,7 @@ const SmartContractSubsection = styled.section`
   background-color: ${({ theme }) => theme.bgSecondary};
   padding: var(--spacing-10) 0;
   position: relative;
+  overflow: hidden;
 
   @media ${deviceBreakPoints.mobile} {
     padding: var(--spacing-5) 0 var(--spacing-14);

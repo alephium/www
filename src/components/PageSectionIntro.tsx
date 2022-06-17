@@ -29,11 +29,11 @@ interface PageSectionIntroProps {
 
 const PageSectionIntro: FC<PageSectionIntroProps> = ({ className, content }) => {
   return (
-    <section className={className} id="intro">
-      <CenteredPageSectionContainer>
+    <SectionContainer className={className} id="intro">
+      <SectionTextHeader bigSubtitle title={content.title} subtitle={content.subtitle} position="sticky" />
+      <PageSectionContainer>
         <IntroColumns gap="var(--spacing-32)">
           <Column>
-            <SectionTextHeader title={content.title} subtitle={content.subtitle} />
             {content.cards && (
               <IntroColumnContent
                 variants={cardContainerVariants}
@@ -57,8 +57,8 @@ const PageSectionIntro: FC<PageSectionIntroProps> = ({ className, content }) => 
             )}
           </Column>
         </IntroColumns>
-      </CenteredPageSectionContainer>
-    </section>
+      </PageSectionContainer>
+    </SectionContainer>
   )
 }
 
@@ -79,11 +79,11 @@ const cardVariants = {
   visible: { opacity: 1 }
 }
 
-const CenteredPageSectionContainer = styled(PageSectionContainer)`
+const SectionContainer = styled.section`
   min-height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  flex-direction: column;
 `
 
 const IntroColumns = styled(Columns)`

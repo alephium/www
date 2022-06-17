@@ -18,7 +18,7 @@ import HeroDarkBackImage from '../images/hero-dark-back.svg'
 import HeroLightImage from '../images/hero-light.svg'
 import Arrow from '../images/svgs/arrow-right.svg'
 import ParallaxWrapper from './ParallaxWrapper'
-import { LayoutGroup, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import AlephiumLogo from './AlephiumLogo'
 
 export interface PageSectionHeroContentType {
@@ -132,7 +132,6 @@ const TextSnippetStyled = styled(TextSnippet)`
 const ArrowDown = styled(Arrow)`
   width: 1.625rem;
   fill: ${({ theme }) => theme.textPrimary};
-  margin-top: var(--spacing-11);
   transform: rotate(90deg);
 
   @media ${deviceBreakPoints.smallMobile} {
@@ -142,6 +141,7 @@ const ArrowDown = styled(Arrow)`
 
 const PaginatorStyled = styled(Paginator)`
   margin-top: var(--spacing-11);
+  margin-bottom: var(--spacing-11);
 
   @media ${deviceBreakPoints.smallMobile} {
     margin-top: var(--spacing-5);

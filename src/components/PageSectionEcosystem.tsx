@@ -30,8 +30,8 @@ let PageSectionEcosystem = ({ className }: { className?: string }) => {
 
   return (
     <section className={className}>
+      <SectionTextHeader title={title} subtitle={subtitle} bigSubtitle bigText position="sticky" />
       <PageSectionContainer>
-        <SectionTextHeader title={title} subtitle={subtitle} bigSubtitle bigText />
         <Subsections>
           {subsections.map(({ title, description, image, items }: SubsectionType) => (
             <Subsection key={title}>

@@ -1,9 +1,10 @@
-import { FC } from 'react'
+import { HTMLMotionProps, motion } from 'framer-motion'
+import { FC, ReactNode } from 'react'
 import styled, { css } from 'styled-components'
 
 import { deviceBreakPoints } from '../styles/global-style'
 
-interface TextSnippetProps {
+interface TextSnippetProps extends HTMLMotionProps<'div'> {
   title?: string
   titleHierarchy?: 'h2' | 'h3'
   bigTitle?: boolean
@@ -13,14 +14,15 @@ interface TextSnippetProps {
   bigText?: boolean
   className?: string
   narrowHeaderMobile?: boolean
+  children?: ReactNode
 }
 
-let TextSnippet: FC<TextSnippetProps> = ({ className, title, titleHierarchy = 'h2', subtitle, children }) => (
-  <div className={className}>
+let TextSnippet: FC<TextSnippetProps> = ({ className, title, titleHierarchy = 'h2', subtitle, children, ...props }) => (
+  <motion.div className={className} {...props}>
     {title && (titleHierarchy === 'h2' ? <h2>{title}</h2> : <h3>{title}</h3>)}
     {subtitle && <div className="text-subtitle">{subtitle}</div>}
     {children && <div className="text-content">{children}</div>}
-  </div>
+  </motion.div>
 )
 
 TextSnippet = styled(TextSnippet)`

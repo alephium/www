@@ -1,5 +1,7 @@
-import { FC } from 'react'
+import { motion } from 'framer-motion'
+import { FC, useRef, useState } from 'react'
 import styled from 'styled-components'
+import useElementTop from '../hooks/useElementTop'
 
 import TextSnippet from './TextSnippet'
 
@@ -10,6 +12,7 @@ interface SectionTextHeaderProps {
   bigSubtitle?: boolean
   bigText?: boolean
   centered?: boolean
+  position?: 'inital' | 'sticky'
 }
 
 let SectionTextHeader: FC<SectionTextHeaderProps> = ({
@@ -18,24 +21,55 @@ let SectionTextHeader: FC<SectionTextHeaderProps> = ({
   subtitle,
   bigSubtitle,
   bigText,
+  position = 'inital',
+  centered,
   children
 }) => {
+  const elementRef = useRef(null)
+  const elementTop = useElementTop(elementRef)
+
+  const [isAtTop, setIsAtTop] = useState(false)
+
+  if (elementTop === 0 && position === 'sticky' && !isAtTop) {
+    setIsAtTop(true)
+  } else if (elementTop > 0 && position === 'sticky' && isAtTop) {
+    setIsAtTop(false)
+  }
+
   return (
-    <header className={className}>
-      <TextSnippet title={title} subtitle={subtitle} bigTitle bigSubtitle={bigSubtitle} bigText={bigText}>
+    <motion.header className={className} ref={elementRef} animate={{ height: isAtTop ? '100px' : 'inital' }}>
+      <StyledTextSnippet
+        title={title}
+        subtitle={subtitle}
+        bigTitle
+        bigSubtitle={bigSubtitle}
+        bigText={bigText}
+        animate={{ scale: isAtTop ? 0.7 : 1 }}
+        style={{ transformOrigin: centered ? 'center' : 'left' }}
+      >
         {children}
-      </TextSnippet>
-    </header>
+      </StyledTextSnippet>
+    </motion.header>
   )
 }
 
+const StyledTextSnippet = styled(TextSnippet)`
+  max-width: var(--page-width);
+  flex: 1;
+`
+
 SectionTextHeader = styled(SectionTextHeader)`
-  position: sticky;
+  position: ${({ position }) => position};
   top: 0;
+  right: 0;
+  left: 0;
   text-align: ${(props) => (props.centered ? 'center' : 'left')};
-  padding: var(--spacing-5) 0;
-  background-color: ${({ theme }) => theme.bgSecondary};
+  background-color: rgba(15, 15, 15, 0.8);
   z-index: 2000;
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  padding: 0 var(--spacing-4);
 
   h2 {
     color: ${({ theme }) => theme.textPrimary};
