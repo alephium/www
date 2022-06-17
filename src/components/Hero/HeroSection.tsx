@@ -40,17 +40,8 @@ const HeroSection = styled.section`
     }
   }
 
-  .logo {
-    width: 6rem;
-    min-height: 5rem;
-
-    @media ${deviceBreakPoints.smallMobile} {
-      width: 3rem;
-    }
-  }
-
   .hero-image-container {
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 0;
     left: 0;

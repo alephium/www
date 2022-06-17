@@ -1,5 +1,5 @@
 import { FC, useRef, useState } from 'react'
-import styled, { ThemeProvider } from 'styled-components'
+import styled, { css, ThemeProvider } from 'styled-components'
 
 import { darkTheme } from '../styles/themes'
 import { deviceBreakPoints } from '../styles/global-style'
@@ -12,14 +12,14 @@ import HeroSection from './Hero/HeroSection'
 import HeroContentWrapper from './Hero/HeroContentWrapper'
 import HeroPageSectionContainer from './Hero/HeroPageSectionContainer'
 
-import LogoDark from '../images/svgs/logo-light.svg'
 import HeroDarkFrontImage from '../images/hero-dark-front.svg'
 import HeroDarkMiddleImage from '../images/hero-dark-middle.svg'
 import HeroDarkBackImage from '../images/hero-dark-back.svg'
 import HeroLightImage from '../images/hero-light.svg'
 import Arrow from '../images/svgs/arrow-right.svg'
 import ParallaxWrapper from './ParallaxWrapper'
-import { motion } from 'framer-motion'
+import { LayoutGroup, motion } from 'framer-motion'
+import AlephiumLogo from './AlephiumLogo'
 
 export interface PageSectionHeroContentType {
   dark: {
@@ -58,7 +58,11 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
             <img src={HeroLightImage} alt="Hero light" className={`hero-image`} />
           </ParallaxWrapper>
 
-          <Mask animate={{ x: slide === 0 ? 0 : '100%' }} className="hero-image-container">
+          <Mask
+            animate={{ opacity: slide === 1 ? 0 : 1 }}
+            transition={{ duration: 0.5 }}
+            className="hero-image-container"
+          >
             <ParallaxWrapper className="hero-image-container" speed={-4}>
               <img src={HeroDarkBackImage} alt="Hero dark back" className="hero-image" />
             </ParallaxWrapper>
@@ -77,7 +81,8 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
             <HeroContentWrapper>
               <div className="contents">
                 <>
-                  <LogoDark className="logo" />
+                  <StyledLogo gradientIndex={slide} />
+
                   <h1>{themeContent.title}</h1>
                   <TextSnippetStyled bigText>{themeContent.subtitle}</TextSnippetStyled>
                   <PaginatorStyled onPageClick={toggleSlide} currentPage={slide} setCurrentPage={setSlide} />
@@ -101,6 +106,15 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
 const Mask = styled(motion.div)`
   overflow: hidden;
   background-color: ${({ theme }) => theme.bgSecondary};
+`
+
+const StyledLogo = styled(AlephiumLogo)`
+  width: 6rem;
+  min-height: 5rem;
+
+  @media ${deviceBreakPoints.smallMobile} {
+    width: 3rem;
+  }
 `
 
 const TextSnippetStyled = styled(TextSnippet)`

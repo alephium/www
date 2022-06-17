@@ -19,16 +19,23 @@ let SectionTextHeader: FC<SectionTextHeaderProps> = ({
   bigSubtitle,
   bigText,
   children
-}) => (
-  <header className={className}>
-    <TextSnippet title={title} subtitle={subtitle} bigTitle bigSubtitle={bigSubtitle} bigText={bigText}>
-      {children}
-    </TextSnippet>
-  </header>
-)
+}) => {
+  return (
+    <header className={className}>
+      <TextSnippet title={title} subtitle={subtitle} bigTitle bigSubtitle={bigSubtitle} bigText={bigText}>
+        {children}
+      </TextSnippet>
+    </header>
+  )
+}
 
 SectionTextHeader = styled(SectionTextHeader)`
+  position: sticky;
+  top: 0;
   text-align: ${(props) => (props.centered ? 'center' : 'left')};
+  padding: var(--spacing-5) 0;
+  background-color: ${({ theme }) => theme.bgSecondary};
+  z-index: 2000;
 
   h2 {
     color: ${({ theme }) => theme.textPrimary};
