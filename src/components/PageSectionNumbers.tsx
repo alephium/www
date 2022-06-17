@@ -153,7 +153,7 @@ const NumbersPageSectionContainer = styled(PageSectionContainer)`
   padding-bottom: var(--spacing-16);
   box-shadow: 0 50px 50px rgba(0, 0, 0, 0.3);
   overflow: hidden;
-  z-index: 2;
+  z-index: 4000;
 `
 
 const NumbersColumn = styled(Column)`

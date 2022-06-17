@@ -84,7 +84,13 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
   return (
     <SectionContainer className={className} ref={gradientRef}>
       <TopGradient style={{ scaleX: gradientXScale, scaleY: gradientYScale, transformOrigin: 'top' }} />
-      <SectionTextHeaderStyled title={content.title} subtitle={content.subtitle} centered bigSubtitle />
+      <SectionTextHeaderStyled
+        title={content.title}
+        subtitle={content.subtitle}
+        centered
+        bigSubtitle
+        position="sticky"
+      />
       <section>
         <PageSectionContainerStyled>
           <Columns {...columnsProps}>
@@ -181,7 +187,7 @@ const TopGradient = styled(motion.div)`
   background-size: contain;
   background-position-x: center;
   background-position-y: top;
-  z-index: 2;
+  z-index: 3000;
   pointer-events: none;
 `
 
