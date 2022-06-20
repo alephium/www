@@ -45,6 +45,7 @@ let PageSectionEcosystem = ({ className }: { className?: string }) => {
                         <SimpleLink
                           url={url}
                           text={title}
+                          key={url}
                           newTab
                           trackingName={`ecosystem-section:${title.replaceAll(' ', '-')}-link`}
                         >

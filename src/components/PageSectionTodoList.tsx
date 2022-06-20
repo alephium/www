@@ -6,6 +6,7 @@ import TextSnippet from './TextSnippet'
 import SvgCheckmark from '../images/complete-check.svg'
 import SvgStars from '../images/stars.svg'
 import { deviceBreakPoints } from '../styles/global-style'
+import { motion, Variants } from 'framer-motion'
 
 type Props = {
   content: {
@@ -29,13 +30,13 @@ const PageSectionTodoList = ({ content: { title, subtitle, lists } }: Props) => 
   <BackdropStars>
     <SectionTextHeader title={title} subtitle={subtitle} bigSubtitle bigText position="sticky" centered />
     <PageSectionContainer>
-      <TodoLists>
+      <TodoLists variants={todoItemsContainerVariants} initial="hidden" whileInView="visible">
         {lists.map(({ title, items }, index) => (
           <TodoList key={title}>
             <TodoTitle title={title} alignRight={index % 2 == 0} titleHierarchy="h3" bigTitle={false} />
             <TodoItems alignRight={index % 2 == 0}>
               {items.map(({ text, complete }) => (
-                <TodoItem key={text}>
+                <TodoItem key={text} variants={itemVariants}>
                   <TodoContent complete={complete}>{text}</TodoContent>
                   {complete && <TodoStateIcon />}
                 </TodoItem>
@@ -48,13 +49,36 @@ const PageSectionTodoList = ({ content: { title, subtitle, lists } }: Props) => 
   </BackdropStars>
 )
 
+const todoItemsContainerVariants: Variants = {
+  hidden: {
+    opacity: 0
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 0.5,
+      delayChildren: 0.5,
+      staggerChildren: 0.1
+    }
+  }
+}
+
+const itemVariants: Variants = {
+  hidden: {
+    opacity: 0
+  },
+  visible: {
+    opacity: 1
+  }
+}
+
 const BackdropStars = styled.div`
   background-image: url('${SvgStars}');
   background-repeat: no-repeat;
   background-position-x: center;
 `
 
-const TodoLists = styled.div`
+const TodoLists = styled(motion.div)`
   display: flex;
   gap: 100px;
   margin-top: 70px;
@@ -81,7 +105,7 @@ const TodoTitle = styled(TextSnippet)<Alignment>`
   text-align: ${({ alignRight }) => (alignRight ? 'right' : 'left')};
 `
 
-const TodoItems = styled.div<Alignment>`
+const TodoItems = styled(motion.div)<Alignment>`
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -92,7 +116,7 @@ const TodoItems = styled.div<Alignment>`
   }
 `
 
-const TodoItem = styled.div`
+const TodoItem = styled(motion.div)`
   height: 119px;
   width: calc(50% - 30px - 20px);
   min-width: 199px;
