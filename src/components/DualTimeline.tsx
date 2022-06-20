@@ -349,7 +349,7 @@ const Entries = styled.div`
 const YearHeader = styled.div`
   position: sticky;
   display: flex;
-  top: 0;
+  top: 90px;
   z-index: 3;
   height: ${headerHeight}px;
 
@@ -385,7 +385,7 @@ const YearLine = styled.div`
 const Header = styled.div`
   display: flex;
   position: sticky;
-  top: 0;
+  top: 90px;
   z-index: 4;
 `
 
@@ -410,11 +410,12 @@ const Heading = styled.div`
 
 const HeaderStickyBackground = styled.div`
   position: sticky;
-  top: 0;
+  top: 90px;
   width: 100%;
   height: ${headerHeight}px;
-  background-color: ${({ theme }) => theme.bgSecondary};
   z-index: 1;
+  background-color: rgba(15, 15, 15, 0.8);
+  backdrop-filter: blur(20px);
 `
 
 export default DualTimeline

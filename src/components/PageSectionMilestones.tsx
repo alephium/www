@@ -13,7 +13,7 @@ interface Props {
 
 const PageSectionMilestones = ({ content: { title, subtitle, timelines } }: Props) => (
   <section>
-    <SectionTextHeaderStyled title={title} subtitle={subtitle} bigSubtitle bigText />
+    <SectionTextHeader title={title} subtitle={subtitle} bigSubtitle bigText sticky centered />
     <Centered>
       <DualTimeline timelines={timelines} />
     </Centered>
@@ -23,11 +23,6 @@ const PageSectionMilestones = ({ content: { title, subtitle, timelines } }: Prop
 const Centered = styled.div`
   display: flex;
   justify-content: center;
-`
-
-const SectionTextHeaderStyled = styled(SectionTextHeader)`
-  text-align: center;
-  padding-bottom: 70px;
 `
 
 export default PageSectionMilestones

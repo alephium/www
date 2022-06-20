@@ -12,7 +12,7 @@ interface SectionTextHeaderProps {
   bigSubtitle?: boolean
   bigText?: boolean
   centered?: boolean
-  position?: 'inital' | 'sticky'
+  sticky?: boolean
 }
 
 let SectionTextHeader: FC<SectionTextHeaderProps> = ({
@@ -21,7 +21,7 @@ let SectionTextHeader: FC<SectionTextHeaderProps> = ({
   subtitle,
   bigSubtitle,
   bigText,
-  position = 'inital',
+  sticky,
   centered,
   children
 }) => {
@@ -30,9 +30,9 @@ let SectionTextHeader: FC<SectionTextHeaderProps> = ({
 
   const [isAtTop, setIsAtTop] = useState(false)
 
-  if (elementTop === 0 && position === 'sticky' && !isAtTop) {
+  if (elementTop === 0 && sticky && !isAtTop) {
     setIsAtTop(true)
-  } else if (elementTop > 0 && position === 'sticky' && isAtTop) {
+  } else if (elementTop > 0 && sticky && isAtTop) {
     setIsAtTop(false)
   }
 
@@ -59,7 +59,7 @@ const StyledTextSnippet = styled(TextSnippet)`
 `
 
 SectionTextHeader = styled(SectionTextHeader)`
-  position: ${({ position }) => position};
+  position: ${({ sticky }) => (sticky ? 'sticky' : 'initial')};
   top: 0;
   right: 0;
   left: 0;

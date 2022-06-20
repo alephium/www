@@ -8,8 +8,6 @@ import PageSectionContainer from './PageSectionContainer'
 import SubsectionTextHeader from './SubsectionTextHeader'
 import SimpleLink from './SimpleLink'
 
-import IllustrationColumn from './Columns/IllustrationColumn'
-
 type SubsectionType = {
   title: string
   description: string
@@ -30,7 +28,7 @@ let PageSectionEcosystem = ({ className }: { className?: string }) => {
 
   return (
     <section className={className}>
-      <SectionTextHeader title={title} subtitle={subtitle} bigSubtitle bigText position="sticky" />
+      <SectionTextHeader title={title} subtitle={subtitle} bigSubtitle bigText sticky />
       <PageSectionContainer>
         <Subsections>
           {subsections.map(({ title, description, image, items }: SubsectionType) => (
@@ -52,10 +50,10 @@ let PageSectionEcosystem = ({ className }: { className?: string }) => {
                           <SubsectionItem key={title}>
                             {logo ? (
                               <>
-                                <IllustrationColumn>
+                                <SubsectionItemTitle className="with-logo">{title}</SubsectionItemTitle>
+                                <SubsectionItemLogoContainer>
                                   <SubsectionItemLogo src={logo.publicURL} alt={title} />
-                                </IllustrationColumn>
-                                <SubsectionItemTitleOnHover>{title}</SubsectionItemTitleOnHover>
+                                </SubsectionItemLogoContainer>
                               </>
                             ) : (
                               <SubsectionItemTitle>{title}</SubsectionItemTitle>
@@ -146,47 +144,56 @@ const SubsectionItems = styled.div`
 const SubsectionItemTitle = styled.div`
   font-weight: var(--fontWeight-bold);
   display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-out;
+  text-align: center;
+  padding: var(--spacing-1);
 `
 
-const SubsectionItemTitleOnHover = styled(SubsectionItemTitle)`
-  display: none;
+const SubsectionItemLogoContainer = styled.div`
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.2s ease-out;
+  transform: translateY(-5px);
+  padding: var(--spacing-2);
+  display: flex;
 `
 
-const SubsectionItemLogo = styled.img``
+const SubsectionItemLogo = styled.img`
+  flex: 1;
+  transition: all 0.2s ease-out;
+  max-width: 100%;
+  max-width: 100%;
+`
 
 const SubsectionItem = styled.div`
+  position: relative;
   width: 100px;
   height: 100px;
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: ${({ theme }) => theme.bgPrimary};
   box-shadow: 0px 22px 30px rgba(0, 0, 0, 0.47);
-  padding: var(--spacing-2);
   box-sizing: border-box;
   border-radius: 9px;
   font-size: 13px;
   border: ${({ theme }) => theme.borderPrimary};
 
-  ${SubsectionItemTitleOnHover},
-  ${SubsectionItemTitle} {
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-
-  ${SubsectionItemLogo} {
-    max-width: 100%;
-    max-height: 100%;
-  }
-
   &:hover {
-    ${SubsectionItemLogo} {
-      display: none;
+    ${SubsectionItemTitle}.with-logo {
+      opacity: 0;
+      transform: translateY(-5px);
     }
 
-    ${SubsectionItemTitleOnHover} {
-      display: flex;
+    ${SubsectionItemLogoContainer} {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 `

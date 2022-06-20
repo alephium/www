@@ -30,7 +30,7 @@ interface PageSectionIntroProps {
 const PageSectionIntro: FC<PageSectionIntroProps> = ({ className, content }) => {
   return (
     <SectionContainer className={className} id="intro">
-      <SectionTextHeader bigSubtitle title={content.title} subtitle={content.subtitle} position="sticky" />
+      <SectionTextHeader bigSubtitle title={content.title} subtitle={content.subtitle} sticky />
       <PageSectionContainer>
         <IntroColumns gap="var(--spacing-32)">
           <Column>
