@@ -189,6 +189,7 @@ const TopGradient = styled(motion.div)`
   background-position-y: top;
   z-index: 3000;
   pointer-events: none;
+  opacity: 0.6;
 `
 
 const BlockflowImage = styled.img`
