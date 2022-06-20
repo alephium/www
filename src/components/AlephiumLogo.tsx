@@ -37,6 +37,7 @@ const AlephiumLogo = ({ className, gradientIndex, ...props }: AlephiumLogoProps)
                 d="M561.888,18.859C561.888,6.522 552.173,-1.782 540.207,0.327L396.272,25.704C384.306,27.813 374.592,39.542 374.592,51.88L374.592,323.734C374.592,336.072 384.306,344.375 396.272,342.266L540.207,316.89C552.173,314.78 561.888,303.051 561.888,290.714L561.888,18.859Z"
                 fill="url(#logo-accent-gradient)"
                 animate={{ rotateY: gradientIndex * 360 }}
+                transition={{ duration: 0.2 }}
               />
             </g>
             <g transform="matrix(0.46324,0,0,0.476693,63.1121,4506.2)">
@@ -53,8 +54,8 @@ const AlephiumLogo = ({ className, gradientIndex, ...props }: AlephiumLogoProps)
       <motion.linearGradient id="logo-accent-gradient" x2="-0.2" y2="1">
         <motion.stop offset="0%" animate={{ stopColor: gradientIndex === 0 ? '#fff' : '#fff' }} />
         <motion.stop offset="25%" animate={{ stopColor: gradientIndex === 0 ? '#ff6f08' : '#ffd900' }} />
-        <motion.stop offset="50%" animate={{ stopColor: gradientIndex === 0 ? '#0800ff' : '#ff6600' }} />
-        <motion.stop offset="100%" animate={{ stopColor: gradientIndex === 0 ? '#00eeff' : '#ff0095' }} />
+        <motion.stop offset="50%" animate={{ stopColor: gradientIndex === 0 ? '#0800ff' : '#f200ff' }} />
+        <motion.stop offset="100%" animate={{ stopColor: gradientIndex === 0 ? '#00eeff' : '#520156' }} />
       </motion.linearGradient>
     </defs>
   </svg>

@@ -15,10 +15,13 @@ import HeroPageSectionContainer from './Hero/HeroPageSectionContainer'
 import HeroDarkFrontImage from '../images/hero-dark-front.svg'
 import HeroDarkMiddleImage from '../images/hero-dark-middle.svg'
 import HeroDarkBackImage from '../images/hero-dark-back.svg'
-import HeroLightImage from '../images/hero-light.svg'
+import HeroLightBackImage from '../images/hero-light-back.svg'
+import HeroLightMiddleImage from '../images/hero-light-middle.svg'
+import HeroLightFrontImage from '../images/hero-light-front.svg'
+
 import Arrow from '../images/svgs/arrow-right.svg'
 import ParallaxWrapper from './ParallaxWrapper'
-import { motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 import AlephiumLogo from './AlephiumLogo'
 
 export interface PageSectionHeroContentType {
@@ -54,25 +57,33 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
     <ThemeProvider theme={darkTheme}>
       <HeroSlider heroElementRef={innerRef} onSwipe={onSwipe}>
         <HeroSection className={className} ref={innerRef}>
-          <ParallaxWrapper className="hero-image-container" speed={3}>
-            <img src={HeroLightImage} alt="Hero light" className={`hero-image`} />
-          </ParallaxWrapper>
-
-          <Mask
-            animate={{ opacity: slide === 1 ? 0 : 1 }}
-            transition={{ duration: 0.5 }}
-            className="hero-image-container"
-          >
-            <ParallaxWrapper className="hero-image-container" speed={-4}>
-              <img src={HeroDarkBackImage} alt="Hero dark back" className="hero-image" />
-            </ParallaxWrapper>
-            <ParallaxWrapper className="hero-image-container" speed={1}>
-              <img src={HeroDarkMiddleImage} className="hero-image" alt="Hero dark front" />
-            </ParallaxWrapper>
-            <ParallaxWrapper className="hero-image-container" speed={3}>
-              <img src={HeroDarkFrontImage} className="hero-image" alt="Hero dark front" />
-            </ParallaxWrapper>
-          </Mask>
+          <AnimatePresence>
+            {slide === 0 ? (
+              <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} key={0}>
+                <ParallaxWrapper className="hero-image-container" speed={-4}>
+                  <img src={HeroDarkBackImage} alt="Hero dark back" className="hero-image" />
+                </ParallaxWrapper>
+                <ParallaxWrapper className="hero-image-container" speed={1}>
+                  <img src={HeroDarkMiddleImage} className="hero-image" alt="Hero dark front" />
+                </ParallaxWrapper>
+                <ParallaxWrapper className="hero-image-container" speed={0}>
+                  <img src={HeroDarkFrontImage} className="hero-image" alt="Hero dark front" />
+                </ParallaxWrapper>
+              </motion.div>
+            ) : (
+              <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} key={0}>
+                <ParallaxWrapper className="hero-image-container" speed={4}>
+                  <img src={HeroLightBackImage} alt="Hero dark back" className="hero-image" />
+                </ParallaxWrapper>
+                <ParallaxWrapper className="hero-image-container" speed={2}>
+                  <img src={HeroLightMiddleImage} className="hero-image" alt="Hero dark front" />
+                </ParallaxWrapper>
+                <ParallaxWrapper className="hero-image-container" speed={0}>
+                  <img src={HeroLightFrontImage} className="hero-image" alt="Hero dark front" />
+                </ParallaxWrapper>
+              </motion.div>
+            )}
+          </AnimatePresence>
 
           <HeroPageSectionContainer>
             <div className="navigation-menu-wrapper">
@@ -102,11 +113,6 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
     </ThemeProvider>
   )
 }
-
-const Mask = styled(motion.div)`
-  overflow: hidden;
-  background-color: ${({ theme }) => theme.bgSecondary};
-`
 
 const StyledLogo = styled(AlephiumLogo)`
   width: 6rem;

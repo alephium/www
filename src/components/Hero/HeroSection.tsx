@@ -1,13 +1,14 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 import { deviceBreakPoints } from '../../styles/global-style'
-import { darkTheme } from '../../styles/themes'
 
 const HeroSection = styled.section`
   min-height: 100vh;
   overflow: hidden;
   position: relative;
-  background-color: ${darkTheme.bgSecondary};
+  ${({ theme }) => css`
+    background: linear-gradient(black 0%, black 40%, ${theme.bgSecondary}) 100%;
+  `};
   transition: all 0.4s ease-in;
   display: flex;
 
