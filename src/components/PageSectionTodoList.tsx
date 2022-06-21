@@ -30,7 +30,7 @@ const PageSectionTodoList = ({ content: { title, subtitle, lists } }: Props) => 
   <BackdropStars>
     <SectionTextHeader title={title} subtitle={subtitle} bigSubtitle bigText position="sticky" centered />
     <PageSectionContainer>
-      <TodoLists variants={todoItemsContainerVariants} initial="hidden" whileInView="visible">
+      <TodoLists variants={todoItemsContainerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
         {lists.map(({ title, items }, index) => (
           <TodoList key={title}>
             <TodoTitle title={title} alignRight={index % 2 == 0} titleHierarchy="h3" bigTitle={false} />

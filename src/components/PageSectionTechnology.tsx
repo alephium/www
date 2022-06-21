@@ -85,8 +85,8 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
     <SectionContainer className={className} ref={gradientRef}>
       <TopGradient style={{ scaleX: gradientXScale, scaleY: gradientYScale, transformOrigin: 'top' }} />
       <SectionTextHeaderStyled title={content.title} subtitle={content.subtitle} centered bigSubtitle sticky />
-      <section>
-        <PageSectionContainerStyled>
+      <TechSection>
+        <PageSectionContainer>
           <Columns {...columnsProps}>
             <IllustrationColumn>
               <BlockflowImage src={BlockflowImageSrc} alt="Blockflow" />
@@ -101,14 +101,11 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
               />
             </Column>
           </Columns>
-        </PageSectionContainerStyled>
-      </section>
-      <ProofOfLessWorkSubsection>
-        <IllustrationColumn>
-          <PolwBackgroundImage src={PoLWImageSrc} alt="Proof of Less Work" />
-        </IllustrationColumn>
+        </PageSectionContainer>
+      </TechSection>
+      <TechSection>
         <PageSectionContainer>
-          <Columns {...columnsProps}>
+          <Columns {...columnsProps} reverse>
             <Column vertialCenter>
               <SectionTextTeaser
                 {...polwSectionContent}
@@ -118,11 +115,13 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
                 tipbox={!minimal}
               />
             </Column>
-            <Column />
+            <IllustrationColumn>
+              <PolwImage src={PoLWImageSrc} alt="Proof of Less Work" />
+            </IllustrationColumn>
           </Columns>
         </PageSectionContainer>
-      </ProofOfLessWorkSubsection>
-      <SmartContractSubsection>
+      </TechSection>
+      <TechSection>
         <PageSectionContainer>
           <Columns {...columnsProps}>
             <IllustrationColumn>
@@ -139,8 +138,8 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
             </Column>
           </Columns>
         </PageSectionContainer>
-      </SmartContractSubsection>
-      <VmsSubsection>
+      </TechSection>
+      <TechSection>
         <PageSectionContainer>
           <Columns {...columnsProps} reverse>
             <Column vertialCenter>
@@ -157,7 +156,7 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
             </IllustrationColumn>
           </Columns>
         </PageSectionContainer>
-      </VmsSubsection>
+      </TechSection>
       <ModalBlockFlow isOpen={isBlockFlowModalOpen} setIsOpen={setIsBlockFlowModalOpen} />
       <ModalPoLW isOpen={isPoLWModalOpen} setIsOpen={setIsPoLWModalOpen} />
       <ModalSmartContract isOpen={isSmartContractModalOpen} setIsOpen={setIsSmartContractModalOpen} />
@@ -205,25 +204,11 @@ const SectionTextHeaderStyled = styled(SectionTextHeader)`
   }
 `
 
-const PageSectionContainerStyled = styled(PageSectionContainer)`
-  padding-bottom: var(--spacing-10);
+const PolwImage = styled.img`
+  width: 70%;
 
   @media ${deviceBreakPoints.mobile} {
-    padding-bottom: var(--spacing-10);
-  }
-`
-
-const PolwBackgroundImage = styled.img`
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  max-width: var(--width-584);
-  height: auto;
-
-  @media ${deviceBreakPoints.mobile} {
-    position: relative;
-    transform: rotate(90deg) scaleY(-1) translateX(-20%);
-    width: 30%;
+    width: 50%;
   }
 `
 
@@ -243,29 +228,7 @@ const VmsImage = styled.img`
   }
 `
 
-const ProofOfLessWorkSubsection = styled.section`
-  background-color: ${({ theme }) => theme.bgSecondary};
-  padding: var(--spacing-10) 0;
-  position: relative;
-  overflow: hidden;
-
-  @media ${deviceBreakPoints.mobile} {
-    padding: var(--spacing-5) 0 var(--spacing-5);
-  }
-`
-
-const VmsSubsection = styled.section`
-  background-color: ${({ theme }) => theme.bgSecondary};
-  padding: var(--spacing-10) 0;
-  position: relative;
-  overflow: hidden;
-
-  @media ${deviceBreakPoints.mobile} {
-    padding: var(--spacing-5) 0 var(--spacing-10);
-  }
-`
-
-const SmartContractSubsection = styled.section`
+const TechSection = styled.div`
   background-color: ${({ theme }) => theme.bgSecondary};
   padding: var(--spacing-10) 0;
   position: relative;
