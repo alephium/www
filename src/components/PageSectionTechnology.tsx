@@ -121,8 +121,22 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
             </Column>
             <IllustrationColumn>
               <ParallaxImage src={PoLWBackImageSrc} speed={0} />
-              <ParallaxImage src={PoLWFrontImageSrc} speed={5} />
-              <ParallaxImage src={PoLWFrontImageSrc} speed={-5} />
+              <ParallaxImage
+                src={PoLWFrontImageSrc}
+                speed={5}
+                shouldZoom
+                targetedScale={2}
+                shouldChangeOpacity
+                targetedOpacity={-0.2}
+              />
+              <ParallaxImage
+                src={PoLWFrontImageSrc}
+                speed={-5}
+                shouldZoom
+                targetedScale={2}
+                shouldChangeOpacity
+                targetedOpacity={-0.2}
+              />
             </IllustrationColumn>
           </Columns>
         </PageSectionContainer>
@@ -201,14 +215,6 @@ const ParallaxImage = styled(ParallaxWrapper)<{ src: string }>`
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-
-  @media ${deviceBreakPoints.mobile} {
-    width: 50%;
-  }
-`
-
-const BlockflowImage = styled.img`
-  width: 70%;
 
   @media ${deviceBreakPoints.mobile} {
     width: 50%;
