@@ -12,10 +12,12 @@ let IllustrationColumn: FC<IllustrationColumnProps> = ({ className, children }) 
 )
 
 IllustrationColumn = styled(IllustrationColumn)`
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1;
+  height: 350px;
 
   img {
     width: 70%;

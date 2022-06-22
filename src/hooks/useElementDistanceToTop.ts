@@ -1,6 +1,6 @@
 import { useState, MutableRefObject, useEffect } from 'react'
 
-const useElementTop = (ref: MutableRefObject<HTMLDivElement | null>) => {
+const useElementDistanceToTop = (ref: MutableRefObject<HTMLDivElement | null>) => {
   const [elementTop, setElementTop] = useState(0)
 
   useEffect(() => {
@@ -18,4 +18,4 @@ const useElementTop = (ref: MutableRefObject<HTMLDivElement | null>) => {
   return elementTop
 }
 
-export default useElementTop
+export default useElementDistanceToTop

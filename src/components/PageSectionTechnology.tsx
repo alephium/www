@@ -15,8 +15,10 @@ import ModalVms from './ModalVms'
 import { ArrowedLinkProps } from './ArrowedLink'
 
 import BGGradientSrc from '../images/top-gradient.png'
-import BlockflowImageSrc from '../images/blockflow.svg'
-import PoLWImageSrc from '../images/polw-background.svg'
+import BlockflowFrontImageSrc from '../images/blockflow-front.svg'
+import BlockflowBackImageSrc from '../images/blockflow-back.svg'
+import PoLWFrontImageSrc from '../images/polw-front.svg'
+import PoLWBackImageSrc from '../images/polw-back.svg'
 import SmartContractImageSrc from '../images/smart-contract.svg'
 import VmsImageSrc from '../images/vms.svg'
 import StackImage from '../images/svgs/stack.svg'
@@ -25,6 +27,7 @@ import VmDotsImage from '../images/svgs/vm-dots.svg'
 import IllustrationColumn from './Columns/IllustrationColumn'
 import { motion, useTransform, useViewportScroll } from 'framer-motion'
 import { useRefScrollProgress } from '../hooks/useRefScrollProfress'
+import ParallaxWrapper from './ParallaxWrapper'
 
 export interface PageSectionTechnologyContentType {
   title: string
@@ -89,7 +92,8 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
         <PageSectionContainer>
           <Columns {...columnsProps}>
             <IllustrationColumn>
-              <BlockflowImage src={BlockflowImageSrc} alt="Blockflow" />
+              <ParallaxImage src={BlockflowBackImageSrc} speed={5} />
+              <ParallaxImage src={BlockflowFrontImageSrc} speed={3} />
             </IllustrationColumn>
             <Column vertialCenter>
               <SectionTextTeaser
@@ -116,7 +120,9 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
               />
             </Column>
             <IllustrationColumn>
-              <PolwImage src={PoLWImageSrc} alt="Proof of Less Work" />
+              <ParallaxImage src={PoLWBackImageSrc} speed={0} />
+              <ParallaxImage src={PoLWFrontImageSrc} speed={5} />
+              <ParallaxImage src={PoLWFrontImageSrc} speed={-5} />
             </IllustrationColumn>
           </Columns>
         </PageSectionContainer>
@@ -185,6 +191,22 @@ const TopGradient = styled(motion.div)`
   opacity: 0.6;
 `
 
+const ParallaxImage = styled(ParallaxWrapper)<{ src: string }>`
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: url(${({ src }) => src});
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media ${deviceBreakPoints.mobile} {
+    width: 50%;
+  }
+`
+
 const BlockflowImage = styled.img`
   width: 70%;
 
@@ -230,7 +252,7 @@ const VmsImage = styled.img`
 
 const TechSection = styled.div`
   background-color: ${({ theme }) => theme.bgSecondary};
-  padding: var(--spacing-10) 0;
+  padding: var(--spacing-8) 0;
   position: relative;
   overflow: hidden;
 

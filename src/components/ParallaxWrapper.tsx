@@ -1,7 +1,5 @@
 import { motion, useTransform, useViewportScroll } from 'framer-motion'
-import { useRef, FC } from 'react'
-import styled from 'styled-components'
-import useElementTop from '../hooks/useElementTop'
+import { useRef, FC, useEffect } from 'react'
 
 interface ParallaxWrapperProps {
   speed: number // Between -10 and 10 for good results
@@ -10,17 +8,28 @@ interface ParallaxWrapperProps {
 
 const ParallaxWrapper: FC<ParallaxWrapperProps> = ({ className, speed = 5, ...props }) => {
   const ref = useRef<HTMLDivElement>(null)
+  const initialDistanceToTop = useRef(0)
   const { scrollY } = useViewportScroll()
 
-  const elementTop = useElementTop(ref)
+  useEffect(() => {
+    if (ref.current && !initialDistanceToTop.current) {
+      initialDistanceToTop.current = window.pageYOffset + ref.current.getBoundingClientRect().top
+    }
+  }, [])
 
-  const y = useTransform(scrollY, [elementTop, elementTop + (10 / speed) * 2], [0, -1], {
-    clamp: false
-  })
+  const y = useTransform(
+    scrollY,
+    [
+      initialDistanceToTop.current - window.innerHeight,
+      initialDistanceToTop.current + (ref.current?.offsetHeight || 0)
+    ],
+    [10 * speed, -10 * speed],
+    {
+      clamp: false
+    }
+  )
 
-  return <Container className={className} ref={(ref) => ref} {...props} style={{ y }} />
+  return <motion.div className={className} ref={ref} {...props} style={{ y }} />
 }
-
-const Container = styled(motion.div)``
 
 export default ParallaxWrapper

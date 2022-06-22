@@ -7,6 +7,7 @@ import SectionTextHeader from './SectionTextHeader'
 import PageSectionContainer from './PageSectionContainer'
 import SubsectionTextHeader from './SubsectionTextHeader'
 import SimpleLink from './SimpleLink'
+import Columns from './Columns/Columns'
 
 type SubsectionType = {
   title: string
@@ -32,7 +33,7 @@ let PageSectionEcosystem = ({ className }: { className?: string }) => {
       <PageSectionContainer>
         <Subsections>
           {subsections.map(({ title, description, image, items }: SubsectionType) => (
-            <Subsection key={title}>
+            <Subsection key={title} animateEntry>
               <SubsectionImageContainer>{image && <img src={image.publicURL} alt={title} />}</SubsectionImageContainer>
               <SubsectionTextContent>
                 <SubsectionTextHeader title={title} subtitle={description} />
@@ -107,7 +108,7 @@ const SubsectionTextContent = styled.div`
   }
 `
 
-const Subsection = styled.div`
+const Subsection = styled(Columns)`
   display: flex;
   align-items: center;
   gap: var(--spacing-2);

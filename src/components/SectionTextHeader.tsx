@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { FC, useRef, useState } from 'react'
 import styled from 'styled-components'
-import useElementTop from '../hooks/useElementTop'
+import useElementDistanceToTop from '../hooks/useElementDistanceToTop'
 
 import TextSnippet from './TextSnippet'
 
@@ -26,7 +26,7 @@ let SectionTextHeader: FC<SectionTextHeaderProps> = ({
   children
 }) => {
   const elementRef = useRef(null)
-  const elementTop = useElementTop(elementRef)
+  const elementTop = useElementDistanceToTop(elementRef)
 
   const [isAtTop, setIsAtTop] = useState(false)
 
