@@ -21,7 +21,8 @@ import PoLWFrontImageSrc from '../images/polw-front.svg'
 import PoLWBackImageSrc from '../images/polw-back.svg'
 import SmartContractFrontImageSrc from '../images/smart-contract-front.svg'
 import SmartContractBackImageSrc from '../images/smart-contract-back.svg'
-import VmsImageSrc from '../images/vms.svg'
+import VmsImageFrontSrc from '../images/vms-front.svg'
+import VmsImageBackSrc from '../images/vms-back.svg'
 import StackImage from '../images/svgs/stack.svg'
 import LeafImage from '../images/svgs/leaf.svg'
 import VmDotsImage from '../images/svgs/vm-dots.svg'
@@ -178,7 +179,8 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
               />
             </Column>
             <IllustrationColumn>
-              <ParallaxImage src={VmsImageSrc} alt="VMs" />
+              <ParallaxImage src={VmsImageBackSrc} speed={-5} />
+              <ParallaxImage src={VmsImageFrontSrc} speed={2} />
             </IllustrationColumn>
           </Columns>
         </PageSectionContainer>
