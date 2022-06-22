@@ -19,7 +19,8 @@ import BlockflowFrontImageSrc from '../images/blockflow-front.svg'
 import BlockflowBackImageSrc from '../images/blockflow-back.svg'
 import PoLWFrontImageSrc from '../images/polw-front.svg'
 import PoLWBackImageSrc from '../images/polw-back.svg'
-import SmartContractImageSrc from '../images/smart-contract.svg'
+import SmartContractFrontImageSrc from '../images/smart-contract-front.svg'
+import SmartContractBackImageSrc from '../images/smart-contract-back.svg'
 import VmsImageSrc from '../images/vms.svg'
 import StackImage from '../images/svgs/stack.svg'
 import LeafImage from '../images/svgs/leaf.svg'
@@ -145,7 +146,12 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
         <PageSectionContainer>
           <Columns {...columnsProps}>
             <IllustrationColumn>
-              <SmartContractImage src={SmartContractImageSrc} alt="Smart contract" />
+              <ParallaxImage src={SmartContractBackImageSrc} speed={-9} style={{ x: -50, opacity: 0.2 }} />
+              <ParallaxImage src={SmartContractBackImageSrc} speed={-7} style={{ x: -40, opacity: 0.4 }} />
+              <ParallaxImage src={SmartContractBackImageSrc} speed={-5} style={{ x: -30, opacity: 0.6 }} />
+              <ParallaxImage src={SmartContractBackImageSrc} speed={-3} style={{ x: -20, opacity: 0.8 }} />
+              <ParallaxImage src={SmartContractBackImageSrc} speed={-1} style={{ x: -10, opacity: 1 }} />
+              <ParallaxImage src={SmartContractFrontImageSrc} speed={-1} />
             </IllustrationColumn>
             <Column vertialCenter>
               <SectionTextTeaser
@@ -172,7 +178,7 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
               />
             </Column>
             <IllustrationColumn>
-              <VmsImage src={VmsImageSrc} alt="VMs" />
+              <ParallaxImage src={VmsImageSrc} alt="VMs" />
             </IllustrationColumn>
           </Columns>
         </PageSectionContainer>
@@ -229,30 +235,6 @@ const SectionTextHeaderStyled = styled(SectionTextHeader)`
     max-width: var(--page-width);
     margin: 0 auto var(--spacing-10);
     padding: 0 var(--spacing-4);
-  }
-`
-
-const PolwImage = styled.img`
-  width: 70%;
-
-  @media ${deviceBreakPoints.mobile} {
-    width: 50%;
-  }
-`
-
-const SmartContractImage = styled.img`
-  width: 70%;
-
-  @media ${deviceBreakPoints.mobile} {
-    width: 50%;
-  }
-`
-
-const VmsImage = styled.img`
-  width: 70%;
-
-  @media ${deviceBreakPoints.mobile} {
-    width: 50%;
   }
 `
 

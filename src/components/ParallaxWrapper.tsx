@@ -1,4 +1,4 @@
-import { motion, useTransform, useViewportScroll } from 'framer-motion'
+import { motion, useTransform, useViewportScroll, MotionStyle } from 'framer-motion'
 import { useRef, FC, useEffect } from 'react'
 
 interface ParallaxWrapperProps {
@@ -6,8 +6,10 @@ interface ParallaxWrapperProps {
   shouldZoom?: boolean
   targetedScale?: number
   shouldChangeOpacity?: boolean
+  initialOpacity?: number
   targetedOpacity?: number
   className?: string
+  style?: MotionStyle
 }
 
 const ParallaxWrapper: FC<ParallaxWrapperProps> = ({
@@ -16,7 +18,9 @@ const ParallaxWrapper: FC<ParallaxWrapperProps> = ({
   shouldZoom,
   targetedScale = 1.2,
   shouldChangeOpacity,
+  initialOpacity = 1,
   targetedOpacity = 0,
+  style,
   ...props
 }) => {
   const ref = useRef<HTMLDivElement>(null)
@@ -56,7 +60,7 @@ const ParallaxWrapper: FC<ParallaxWrapperProps> = ({
       initialDistanceToTop.current - window.innerHeight,
       initialDistanceToTop.current + (ref.current?.offsetHeight || 0)
     ],
-    [1, targetedOpacity]
+    [initialOpacity, targetedOpacity]
   )
 
   return (
@@ -64,7 +68,7 @@ const ParallaxWrapper: FC<ParallaxWrapperProps> = ({
       className={className}
       ref={ref}
       {...props}
-      style={{ y, scale: shouldZoom ? zoom : 1, opacity: shouldChangeOpacity ? opacity : 1 }}
+      style={{ y, scale: shouldZoom ? zoom : 1, opacity: shouldChangeOpacity ? opacity : 1, ...style }}
     />
   )
 }
