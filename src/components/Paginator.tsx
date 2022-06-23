@@ -20,7 +20,7 @@ let Paginator: FC<PaginatorProps> = ({ numberOfPages = 2, currentPage, setCurren
     <div className={className}>
       {Array.from({ length: numberOfPages }).map((_, index) => (
         <DotContainer key={`page-${index}`} onClick={() => handleOnClick(index)}>
-          {currentPage === index && <Dot layoutId="dot" />}
+          {currentPage === index && <Dot layoutId="dot" style={{ scale: 1.2 }} />}
         </DotContainer>
       ))}
     </div>

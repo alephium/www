@@ -8,6 +8,7 @@ import PageSectionContainer from './PageSectionContainer'
 import SubsectionTextHeader from './SubsectionTextHeader'
 import SimpleLink from './SimpleLink'
 import Columns from './Columns/Columns'
+import { motion } from 'framer-motion'
 
 type SubsectionType = {
   title: string
@@ -37,7 +38,7 @@ let PageSectionEcosystem = ({ className }: { className?: string }) => {
               <SubsectionImageContainer>{image && <img src={image.publicURL} alt={title} />}</SubsectionImageContainer>
               <SubsectionTextContent>
                 <SubsectionTextHeader title={title} subtitle={description} />
-                <SubsectionItems>
+                <SubsectionItems variants={containerVariants}>
                   {items &&
                     items.map(({ title, logo, url }) =>
                       url ? (
@@ -48,7 +49,7 @@ let PageSectionEcosystem = ({ className }: { className?: string }) => {
                           newTab
                           trackingName={`ecosystem-section:${title.replaceAll(' ', '-')}-link`}
                         >
-                          <SubsectionItem key={title}>
+                          <SubsectionItem key={title} variants={itemVariants}>
                             {logo ? (
                               <>
                                 <SubsectionItemTitle className="with-logo">{title}</SubsectionItemTitle>
@@ -75,6 +76,23 @@ let PageSectionEcosystem = ({ className }: { className?: string }) => {
       </PageSectionContainer>
     </section>
   )
+}
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 0.5,
+      staggerChildren: 0.2,
+      delayChildren: 0.5
+    }
+  }
+}
+
+const itemVariants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 }
 }
 
 PageSectionEcosystem = styled(PageSectionEcosystem)`
@@ -135,7 +153,7 @@ const Subsection = styled(Columns)`
   }
 `
 
-const SubsectionItems = styled.div`
+const SubsectionItems = styled(motion.div)`
   margin-top: var(--spacing-4);
   gap: 30px;
   display: flex;
@@ -172,7 +190,7 @@ const SubsectionItemLogo = styled.img`
   max-width: 100%;
 `
 
-const SubsectionItem = styled.div`
+const SubsectionItem = styled(motion.div)`
   position: relative;
   width: 100px;
   height: 100px;

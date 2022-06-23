@@ -68,8 +68,8 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
 
   const [gradientRef, start, end] = useRefScrollProgress()
 
-  const gradientXScale = useTransform(scrollYProgress, [start + start * 0.5, end - end * 0.3], [0, 1.2])
   const gradientYScale = useTransform(scrollYProgress, [start + start * 0.5, end - end * 0.1], [0, 4])
+  const gradientYWidth = useTransform(scrollYProgress, [start + start * 0.5, end - end * 0.1], ['0%', '100%'])
 
   if (!minimal) {
     blockFlowSectionContent.links[0] = { ...blockFlowSectionContent.links[0], openModal: setIsBlockFlowModalOpen }
@@ -88,7 +88,9 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
 
   return (
     <SectionContainer className={className} ref={gradientRef}>
-      <TopGradient style={{ scaleX: gradientXScale, scaleY: gradientYScale, transformOrigin: 'top' }} />
+      <GradientContainer>
+        <TopGradient style={{ scaleY: gradientYScale, width: gradientYWidth, transformOrigin: 'top' }} />
+      </GradientContainer>
       <SectionTextHeaderStyled title={content.title} subtitle={content.subtitle} centered bigSubtitle sticky />
       <TechSection>
         <PageSectionContainer>
@@ -197,11 +199,18 @@ const SectionContainer = styled.section`
   position: relative;
 `
 
-const TopGradient = styled(motion.div)`
+const GradientContainer = styled.div`
   position: sticky;
   top: 0;
   right: 0;
   left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 4000;
+`
+
+const TopGradient = styled(motion.div)`
   height: 200px;
   background-image: url(${BGGradientSrc});
   background-repeat: no-repeat;
@@ -231,7 +240,7 @@ const ParallaxImage = styled(ParallaxWrapper)<{ src: string }>`
 
 const SectionTextHeaderStyled = styled(SectionTextHeader)`
   margin-bottom: var(--spacing-20);
-  overflow-x: hidden;
+  overflow: hidden;
 
   @media ${deviceBreakPoints.mobile} {
     max-width: var(--page-width);
@@ -253,7 +262,6 @@ const TechSection = styled.div`
 
 PageSectionTechnology = styled(PageSectionTechnology)`
   background-color: ${({ theme }) => theme.bgSecondary};
-  padding-top: var(--spacing-16);
 `
 
 export default PageSectionTechnology
