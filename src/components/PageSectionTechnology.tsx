@@ -232,10 +232,6 @@ const ParallaxImage = styled(ParallaxWrapper)<{ src: string }>`
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-
-  @media ${deviceBreakPoints.mobile} {
-    width: 50%;
-  }
 `
 
 const SectionTextHeaderStyled = styled(SectionTextHeader)`

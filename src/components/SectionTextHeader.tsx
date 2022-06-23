@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { FC, useRef, useState } from 'react'
 import styled from 'styled-components'
 import useElementDistanceToTop from '../hooks/useElementDistanceToTop'
+import { deviceBreakPoints } from '../styles/global-style'
 
 import TextSnippet from './TextSnippet'
 
@@ -70,6 +71,10 @@ SectionTextHeader = styled(SectionTextHeader)`
   display: flex;
   justify-content: center;
   padding: 0 var(--spacing-4);
+
+  @media ${deviceBreakPoints.mobile} {
+    margin-bottom: var(--spacing-10);
+  }
 
   h2 {
     color: ${({ theme }) => theme.textPrimary};

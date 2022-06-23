@@ -127,6 +127,10 @@ const TodoItem = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media ${deviceBreakPoints.mobile} {
+    flex: 1;
+  }
 `
 
 const TodoStateIcon = styled.div`

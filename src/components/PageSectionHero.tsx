@@ -60,10 +60,10 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
           <AnimatePresence>
             {slide === 0 ? (
               <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} key={0}>
-                <ParallaxWrapper className="hero-image-container" speed={-6}>
+                <ParallaxWrapper className="hero-image-container" speed={-8}>
                   <img src={HeroDarkBackImage} alt="Hero dark back" className="hero-image" />
                 </ParallaxWrapper>
-                <ParallaxWrapper className="hero-image-container" speed={4}>
+                <ParallaxWrapper className="hero-image-container" speed={8}>
                   <img src={HeroDarkMiddleImage} className="hero-image" alt="Hero dark front" />
                 </ParallaxWrapper>
                 <ParallaxWrapper className="hero-image-container" speed={2}>
@@ -72,10 +72,10 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
               </motion.div>
             ) : (
               <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} key={1}>
-                <ParallaxWrapper className="hero-image-container" speed={6}>
+                <ParallaxWrapper className="hero-image-container" speed={12}>
                   <img src={HeroLightBackImage} alt="Hero dark back" className="hero-image" />
                 </ParallaxWrapper>
-                <ParallaxWrapper className="hero-image-container" speed={4}>
+                <ParallaxWrapper className="hero-image-container" speed={8}>
                   <img src={HeroLightMiddleImage} className="hero-image" alt="Hero dark front" />
                 </ParallaxWrapper>
                 <ParallaxWrapper className="hero-image-container" speed={2}>

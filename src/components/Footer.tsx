@@ -132,6 +132,8 @@ const PageSectionContainerStyled = styled(PageSectionContainer)`
   @media ${deviceBreakPoints.mobile} {
     flex-direction: column;
     gap: var(--spacing-10);
+    align-items: center;
+    text-align: center;
   }
 `
 

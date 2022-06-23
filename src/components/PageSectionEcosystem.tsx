@@ -111,6 +111,8 @@ const SubsectionImageContainer = styled.div`
   @media ${deviceBreakPoints.mobile} {
     display: flex;
     justify-content: center;
+    margin-bottom: var(--spacing-6);
+    height: 250px;
   }
 
   img {
@@ -150,6 +152,10 @@ const Subsection = styled(Columns)`
 
   &:not(:last-child) {
     margin-bottom: var(--spacing-20);
+
+    @media ${deviceBreakPoints.mobile} {
+      margin-bottom: var(--spacing-10);
+    }
   }
 `
 

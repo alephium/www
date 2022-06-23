@@ -31,8 +31,7 @@ IllustrationColumn = styled(IllustrationColumn)`
   }
 
   @media ${deviceBreakPoints.mobile} {
-    height: 30vh;
-    align-items: initial;
+    min-height: 200px;
   }
 `
 

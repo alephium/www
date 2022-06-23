@@ -149,13 +149,19 @@ const NumbersSection = styled.section`
   justify-content: center;
   align-items: center;
   margin-top: var(--spacing-20);
+  margin-bottom: var(--spacing-20);
+
+  @media ${deviceBreakPoints.mobile} {
+    margin-top: var(--spacing-6);
+    margin-bottom: var(--spacing-10);
+  }
 `
 
 const NumbersPageSectionContainer = styled(PageSectionContainer)`
   flex: 1;
   position: relative;
   max-width: 1200px;
-  margin: 0 8vw 156px 8vw;
+  margin: 0 8vw;
   border-radius: 30px;
   border: ${({ theme }) => theme.borderPrimary};
   background-color: ${({ theme }) => theme.bgSecondary};
