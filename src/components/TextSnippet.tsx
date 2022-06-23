@@ -30,13 +30,11 @@ TextSnippet = styled(TextSnippet)`
   > h3 {
     font-size: ${({ bigTitle }) => (bigTitle ? 'var(--fontSize-56)' : 'var(--fontSize-28)')};
     line-height: ${({ bigTitle }) => (bigTitle ? 'var(--fontSize-56)' : 'var(--lineHeight-36)')};
-    font-weight: var(--fontWeight-semiBold);
     margin: 0;
   }
 
   > h3 + .text-subtitle {
     padding-top: 12px;
-    font-weight: var(--fontWeight-semiBold);
   }
 
   .text-subtitle {

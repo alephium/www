@@ -20,7 +20,7 @@ NumbersInfo = styled(NumbersInfo)`
   color: ${({ theme }) => theme.textPrimaryVariation};
 
   .number {
-    font-size: var(--fontSize-50);
+    font-size: var(--fontSize-56);
     margin-bottom: var(--spacing-3);
 
     & + div {

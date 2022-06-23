@@ -85,7 +85,7 @@ SectionTextHeader = styled(SectionTextHeader)`
     font-size: var(--fontSize-18);
     margin-top: var(--spacing-5);
     margin-bottom: 0;
-    color: ${({ theme }) => theme.textTertiary};
+    color: ${({ theme }) => theme.textSecondary};
     max-width: var(--width-564);
   }
 `
