@@ -228,7 +228,7 @@ const Text = styled.div`
   ${({ isMajor }) =>
     isMajor &&
     `
-    background: linear-gradient(180deg, #00C2FF 40%, #2400FF 100%);
+    background: linear-gradient(30deg, #ff9100 0%, #ff4000 20%, #b700ff 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
@@ -258,7 +258,8 @@ const Dot = styled.div`
     height: 16px;
     transform: translateY(60%);
     border-radius: 100%;
-    background: ${({ isMajor }) => (isMajor ? 'linear-gradient(180deg, #00C2FF 0%, #2400FF 100%)' : 'white')};
+    background: ${({ isMajor }) =>
+      isMajor ? 'linear-gradient(30deg, #ff9100 0%, #ff4000 20%, #b700ff 80%)' : 'white'};
     border: 3px solid black;
     position: absolute;
     content: '';
