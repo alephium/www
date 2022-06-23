@@ -1,5 +1,5 @@
 import { motion, useTransform, useViewportScroll, MotionStyle } from 'framer-motion'
-import { useRef, FC, useLayoutEffect } from 'react'
+import { useRef, FC, useEffect, useState } from 'react'
 import { isBrowser } from '../utils/misc'
 
 interface ParallaxWrapperProps {
@@ -29,24 +29,18 @@ const ParallaxWrapper: FC<ParallaxWrapperProps> = ({
   ...props
 }) => {
   const ref = useRef<HTMLDivElement>(null)
-  const initialDistanceToTop = useRef(0)
+  const [initialDistanceToTop, setInitialDistanceToTop] = useState(0)
   const { scrollY } = useViewportScroll()
 
   const transformBounds = isBrowser
-    ? [
-        initialDistanceToTop.current - window.innerHeight,
-        initialDistanceToTop.current + (ref.current?.offsetHeight || 0)
-      ]
+    ? [initialDistanceToTop - window.innerHeight, initialDistanceToTop + (ref.current?.offsetHeight || 0)]
     : []
 
-  useLayoutEffect(() => {
-    if (ref.current && !initialDistanceToTop.current) {
-      initialDistanceToTop.current = ref.current.getBoundingClientRect().top
+  useEffect(() => {
+    if (ref.current && !initialDistanceToTop) {
+      setInitialDistanceToTop(window.pageYOffset + ref.current.getBoundingClientRect().top)
     }
-  }, [])
-
-  console.log(initialDistanceToTop.current)
-  console.log(scrollY.get())
+  }, [initialDistanceToTop])
 
   const y = useTransform(scrollY, transformBounds, [10 * speed, -10 * speed], {
     clamp: false

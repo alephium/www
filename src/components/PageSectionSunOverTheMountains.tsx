@@ -6,8 +6,8 @@ import ParallaxWrapper from './ParallaxWrapper'
 
 const PageSectionSunOverTheMountains = () => (
   <Container>
-    <ParallaxImageFront speed={10} />
-    <ParallaxImageBack speed={-2} />
+    <ParallaxImageFront speed={-10} />
+    <ParallaxImageBack speed={2} />
   </Container>
 )
 
@@ -21,9 +21,10 @@ const Container = styled.section`
 const ParallaxImage = styled(ParallaxWrapper)`
   position: absolute;
   top: 0;
+  bottom: 0;
   right: 0;
   left: 0;
-  bottom: 0;
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
