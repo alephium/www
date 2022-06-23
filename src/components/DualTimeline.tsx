@@ -217,7 +217,7 @@ const Track = ({ forHeading, entry }) => (
 )
 
 const headerHeight = 60
-const trackWidth = 140
+const trackWidth = 90
 
 const Container = styled.div`
   width: 100vw;
@@ -238,12 +238,13 @@ const Text = styled.div`
 
 const When = styled.div`
   color: ${({ theme }) => theme.textTertiary};
+  margin-top: var(--spacing-1);
 `
 
 const Piece = styled.div`
   display: flex;
   align-items: center;
-  width: 8px;
+  width: 5px;
   height: 100%;
   background-color: ${({ theme }) => theme.textTertiary};
 `
@@ -254,8 +255,8 @@ const Dot = styled.div`
   top: calc((18px + 4px) / -2);
 
   ::after {
-    width: 16px;
-    height: 16px;
+    width: 13px;
+    height: 13px;
     transform: translateY(60%);
     border-radius: 100%;
     background: ${({ isMajor }) =>
@@ -287,21 +288,21 @@ const Data = styled.div`
 `
 
 const LineExtra = styled.div`
-  width: 8px;
+  width: 5px;
   height: ${({ height }) => (height ? height : '8px')};
   background-color: ${({ theme }) => theme.textTertiary};
 `
 
 const LineEnd = styled.div`
-  width: 8px;
-  height: 8px;
+  width: 5px;
+  height: 5px;
   border-radius: 0 0 50% 50%;
   background-color: ${({ theme }) => theme.textTertiary};
 `
 
 const LineStart = styled.div`
-  width: 8px;
-  height: 8px;
+  width: 5px;
+  height: 5px;
   border-radius: 50% 50% 0 0;
   background-color: ${({ theme }) => theme.textTertiary};
 `
