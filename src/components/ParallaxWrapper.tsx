@@ -8,6 +8,8 @@ interface ParallaxWrapperProps {
   shouldChangeOpacity?: boolean
   initialOpacity?: number
   targetedOpacity?: number
+  shouldRotate?: boolean
+  targetedRotation?: number
   className?: string
   style?: MotionStyle
 }
@@ -20,6 +22,8 @@ const ParallaxWrapper: FC<ParallaxWrapperProps> = ({
   shouldChangeOpacity,
   initialOpacity = 1,
   targetedOpacity = 0,
+  shouldRotate,
+  targetedRotation = 90,
   style,
   ...props
 }) => {
@@ -27,48 +31,39 @@ const ParallaxWrapper: FC<ParallaxWrapperProps> = ({
   const initialDistanceToTop = useRef(0)
   const { scrollY } = useViewportScroll()
 
+  const transformBounds = [
+    initialDistanceToTop.current - window.innerHeight,
+    initialDistanceToTop.current + (ref.current?.offsetHeight || 0)
+  ]
+
   useEffect(() => {
     if (ref.current && !initialDistanceToTop.current) {
       initialDistanceToTop.current = window.pageYOffset + ref.current.getBoundingClientRect().top
     }
   }, [])
 
-  const y = useTransform(
-    scrollY,
-    [
-      initialDistanceToTop.current - window.innerHeight,
-      initialDistanceToTop.current + (ref.current?.offsetHeight || 0)
-    ],
-    [10 * speed, -10 * speed],
-    {
-      clamp: false
-    }
-  )
+  const y = useTransform(scrollY, transformBounds, [10 * speed, -10 * speed], {
+    clamp: false
+  })
 
-  const zoom = useTransform(
-    scrollY,
-    [
-      initialDistanceToTop.current - window.innerHeight,
-      initialDistanceToTop.current + (ref.current?.offsetHeight || 0)
-    ],
-    [0.9, targetedScale]
-  )
+  const zoom = useTransform(scrollY, transformBounds, [0.9, targetedScale])
 
-  const opacity = useTransform(
-    scrollY,
-    [
-      initialDistanceToTop.current - window.innerHeight,
-      initialDistanceToTop.current + (ref.current?.offsetHeight || 0)
-    ],
-    [initialOpacity, targetedOpacity]
-  )
+  const opacity = useTransform(scrollY, transformBounds, [initialOpacity, targetedOpacity])
+
+  const rotation = useTransform(scrollY, transformBounds, [-10, targetedRotation])
 
   return (
     <motion.div
       className={className}
       ref={ref}
       {...props}
-      style={{ y, scale: shouldZoom ? zoom : 1, opacity: shouldChangeOpacity ? opacity : 1, ...style }}
+      style={{
+        y,
+        scale: shouldZoom ? zoom : 1,
+        opacity: shouldChangeOpacity ? opacity : 1,
+        rotate: shouldRotate ? rotation : 0,
+        ...style
+      }}
     />
   )
 }

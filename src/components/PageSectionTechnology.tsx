@@ -94,8 +94,8 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
         <PageSectionContainer>
           <Columns {...columnsProps}>
             <IllustrationColumn>
-              <ParallaxImage src={BlockflowBackImageSrc} speed={5} />
-              <ParallaxImage src={BlockflowFrontImageSrc} speed={3} />
+              <ParallaxImage src={BlockflowBackImageSrc} speed={5} shouldRotate targetedRotation={10} />
+              <ParallaxImage src={BlockflowFrontImageSrc} speed={3} shouldRotate targetedRotation={10} />
             </IllustrationColumn>
             <Column vertialCenter>
               <SectionTextTeaser

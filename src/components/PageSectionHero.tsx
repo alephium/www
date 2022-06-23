@@ -60,25 +60,25 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
           <AnimatePresence>
             {slide === 0 ? (
               <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} key={0}>
-                <ParallaxWrapper className="hero-image-container" speed={-4}>
+                <ParallaxWrapper className="hero-image-container" speed={-6}>
                   <img src={HeroDarkBackImage} alt="Hero dark back" className="hero-image" />
                 </ParallaxWrapper>
-                <ParallaxWrapper className="hero-image-container" speed={2}>
+                <ParallaxWrapper className="hero-image-container" speed={4}>
                   <img src={HeroDarkMiddleImage} className="hero-image" alt="Hero dark front" />
                 </ParallaxWrapper>
-                <ParallaxWrapper className="hero-image-container" speed={0}>
+                <ParallaxWrapper className="hero-image-container" speed={2}>
                   <img src={HeroDarkFrontImage} className="hero-image" alt="Hero dark front" />
                 </ParallaxWrapper>
               </motion.div>
             ) : (
               <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} key={1}>
-                <ParallaxWrapper className="hero-image-container" speed={4}>
+                <ParallaxWrapper className="hero-image-container" speed={6}>
                   <img src={HeroLightBackImage} alt="Hero dark back" className="hero-image" />
                 </ParallaxWrapper>
-                <ParallaxWrapper className="hero-image-container" speed={2}>
+                <ParallaxWrapper className="hero-image-container" speed={4}>
                   <img src={HeroLightMiddleImage} className="hero-image" alt="Hero dark front" />
                 </ParallaxWrapper>
-                <ParallaxWrapper className="hero-image-container" speed={0}>
+                <ParallaxWrapper className="hero-image-container" speed={2}>
                   <img src={HeroLightFrontImage} className="hero-image" alt="Hero dark front" />
                 </ParallaxWrapper>
               </motion.div>
@@ -94,7 +94,9 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
                 <>
                   <StyledLogo gradientIndex={slide} />
 
-                  <h1>{themeContent.title}</h1>
+                  <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+                    {themeContent.title}
+                  </motion.h1>
                   <TextSnippetStyled bigText>{themeContent.subtitle}</TextSnippetStyled>
                   <PaginatorStyled onPageClick={toggleSlide} currentPage={slide} setCurrentPage={setSlide} />
                   <a

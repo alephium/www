@@ -14,6 +14,7 @@ import { HttpResponse } from '@alephium/sdk/api/explorer'
 import Waves from './Wave/Waves'
 import useElementSize from '../hooks/useElementSize'
 import ArrowedLink from './ArrowedLink'
+import { motion } from 'framer-motion'
 
 const baseUrl = 'https://mainnet-backend.alephium.org'
 const ONE_DAY = 1000 * 60 * 60 * 24
@@ -117,20 +118,28 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
 
   return (
     <NumbersSection>
-      <NumbersPageSectionContainer ref={boxRef}>
-        <SubsectionTextHeaderStyled title={title} subtitle={subtitle} condensed bigTitle />
-        <ArrowedLinkStyled url="https://explorer.alephium.org/" newTab>
-          Check our explorer
-        </ArrowedLinkStyled>
-        <Columns>
-          {columns.map((c) => (
-            <NumbersColumn key={c.description}>
-              <NumbersInfo {...c} />
-            </NumbersColumn>
-          ))}
-        </Columns>
-        <Waves parentRef={boxRef} />
-      </NumbersPageSectionContainer>
+      <motion.div
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+        style={{ zIndex: 5000 }}
+        viewport={{ once: true }}
+      >
+        <NumbersPageSectionContainer ref={boxRef}>
+          <SubsectionTextHeaderStyled title={title} subtitle={subtitle} condensed bigTitle />
+          <ArrowedLinkStyled url="https://explorer.alephium.org/" newTab>
+            Check our explorer
+          </ArrowedLinkStyled>
+          <Columns>
+            {columns.map((c) => (
+              <NumbersColumn key={c.description}>
+                <NumbersInfo {...c} />
+              </NumbersColumn>
+            ))}
+          </Columns>
+          <Waves parentRef={boxRef} />
+        </NumbersPageSectionContainer>
+      </motion.div>
     </NumbersSection>
   )
 }
@@ -148,12 +157,12 @@ const NumbersPageSectionContainer = styled(PageSectionContainer)`
   max-width: 1200px;
   margin: 0 8vw 156px 8vw;
   border-radius: 30px;
+  border: ${({ theme }) => theme.borderPrimary};
   background-color: ${({ theme }) => theme.bgSecondary};
   padding: var(--spacing-11);
   padding-bottom: var(--spacing-16);
   box-shadow: 0 50px 50px rgba(0, 0, 0, 0.3);
   overflow: hidden;
-  z-index: 4000;
 `
 
 const NumbersColumn = styled(Column)`

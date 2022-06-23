@@ -56,9 +56,9 @@ const todoItemsContainerVariants: Variants = {
   visible: {
     opacity: 1,
     transition: {
-      delay: 0.5,
-      delayChildren: 0.5,
-      staggerChildren: 0.1
+      delay: 0.4,
+      delayChildren: 0.3,
+      staggerChildren: 0.08
     }
   }
 }
@@ -117,36 +117,34 @@ const TodoItems = styled(motion.div)<Alignment>`
 `
 
 const TodoItem = styled(motion.div)`
-  height: 119px;
+  position: relative;
   width: calc(50% - 30px - 20px);
   min-width: 199px;
-  padding: 15px 8px 15px 15px;
+  padding: 20px 15px;
   background-color: ${({ theme }) => theme.bgPrimary};
   border-radius: 9px;
   box-shadow: 0px 22px 30px rgba(0, 0, 0, 0.47);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 `
 
 const TodoStateIcon = styled.div`
-  &:after {
-    width: 32px;
-    height: 32px;
-    display: block;
-    content: '';
-    background-image: url('${SvgCheckmark}');
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  background-image: url(${SvgCheckmark});
+  background-repeat: no-repeat;
+  background-size: contain;
 `
 
 const TodoContent = styled.div<{ complete: boolean }>`
-  padding-right: 21px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
-  display: flex;
-  align-items: center;
+  line-height: 25px;
+  text-align: center;
   color: ${({ theme, complete }) => (complete ? 'var(--color-grey-300)' : theme.textPrimary)};
 `
 
