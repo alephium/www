@@ -85,6 +85,7 @@ export default styled(NavigationMenu)`
     display: flex;
     align-items: center;
     line-height: var(--lineHeight-26);
+    text-align: right;
 
     @media ${deviceBreakPoints.smallMobile} {
       padding: var(--spacing-2) 0;
