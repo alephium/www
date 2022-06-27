@@ -24,13 +24,19 @@ const TextSnippet: FC<TextSnippetProps> = ({
   subtitle,
   children,
   ...props
-}) => (
-  <motion.div className={className} {...props}>
-    {title && (titleHierarchy === 'h2' ? <h2>{title}</h2> : <h3>{title}</h3>)}
-    {subtitle && <div className="text-subtitle">{subtitle}</div>}
-    {children && <div className="text-content">{children}</div>}
-  </motion.div>
-)
+}) => {
+  // Removing props that should not go to the motion.div
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const { bigSubtitle, smallSubtitle, bigText, narrowHeaderMobile, bigTitle, ...remainingProps } = props
+
+  return (
+    <motion.div className={className} {...remainingProps}>
+      {title && (titleHierarchy === 'h2' ? <h2>{title}</h2> : <h3>{title}</h3>)}
+      {subtitle && <div className="text-subtitle">{subtitle}</div>}
+      {children && <div className="text-content">{children}</div>}
+    </motion.div>
+  )
+}
 
 export default styled(TextSnippet)`
   > h2,

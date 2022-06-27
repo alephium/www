@@ -12,9 +12,17 @@ interface ColumnsProps {
   children: ReactNode
 }
 
-const Columns: FC<ColumnsProps> = ({ className, animateEntry = false, ...props }, ref) => (
-  <motion.div ref={() => ref} className={className} {...props} {...getAnimationProps(animateEntry)} />
-)
+const Columns: FC<ColumnsProps> = ({ className, animateEntry = false, children, ...props }, ref) => {
+  // Removing props that should not go to the motion.div
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const { gap, reverse, ...remainingProps } = props
+
+  return (
+    <motion.div ref={() => ref} className={className} {...remainingProps} {...getAnimationProps(animateEntry)}>
+      {children}
+    </motion.div>
+  )
+}
 
 const columnsVariants: Variants = {
   hidden: {
@@ -43,9 +51,9 @@ const getAnimationProps = (animateEntry: boolean): Omit<HTMLMotionProps<'div'>, 
 
 export default styled(Columns)`
   display: flex;
-  gap: ${(props) => props.gap || '0'};
+  gap: ${({ gap }) => gap || '0'};
 
   @media ${deviceBreakPoints.mobile} {
-    flex-direction: ${(props) => (props.reverse ? 'column-reverse' : 'column')};
+    flex-direction: ${({ reverse }) => (reverse ? 'column-reverse' : 'column')};
   }
 `

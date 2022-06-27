@@ -25,7 +25,7 @@ interface Props {
 }
 
 interface Alignment {
-  alignRight: boolean
+  $alignRight: boolean
 }
 
 const PageSectionTodoList = ({ content: { title, subtitle, lists } }: Props) => (
@@ -35,8 +35,8 @@ const PageSectionTodoList = ({ content: { title, subtitle, lists } }: Props) => 
       <TodoLists variants={todoItemsContainerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
         {lists.map(({ title, items }, index) => (
           <TodoList key={title}>
-            <TodoTitle title={title} alignRight={index % 2 == 0} titleHierarchy="h3" bigTitle={false} />
-            <TodoItems alignRight={index % 2 == 0}>
+            <TodoTitle title={title} $alignRight={index % 2 == 0} titleHierarchy="h3" />
+            <TodoItems $alignRight={index % 2 == 0}>
               {items.map(({ text, complete }) => (
                 <TodoItem key={text} variants={itemVariants}>
                   <TodoContent complete={complete}>{text}</TodoContent>
@@ -104,14 +104,14 @@ const TodoList = styled.div`
 
 const TodoTitle = styled(TextSnippet)<Alignment>`
   margin-bottom: 45px;
-  text-align: ${({ alignRight }) => (alignRight ? 'right' : 'left')};
+  text-align: ${({ $alignRight }) => ($alignRight ? 'right' : 'left')};
 `
 
 const TodoItems = styled(motion.div)<Alignment>`
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: ${({ alignRight }) => (alignRight ? 'right' : 'left')};
+  justify-content: ${({ $alignRight }) => ($alignRight ? 'right' : 'left')};
 
   @media ${deviceBreakPoints.mobile} {
     justify-content: center;

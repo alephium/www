@@ -12,8 +12,12 @@ interface CardProps extends HTMLMotionProps<'div'> {
 }
 
 const Card: FC<CardProps> = ({ className, children, ...props }) => {
+  // Removing props that should not go to the motion.div
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const { borderColor, thickBorders, bgColor, shadow, ...remainingProps } = props
+
   return (
-    <motion.div className={className} {...props}>
+    <motion.div className={className} {...remainingProps}>
       {children}
     </motion.div>
   )
