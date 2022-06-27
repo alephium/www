@@ -123,23 +123,25 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        style={{ zIndex: 5000 }}
+        style={{ zIndex: 5000, width: '100%' }}
         viewport={{ once: true }}
       >
-        <NumbersPageSectionContainer ref={boxRef}>
-          <SubsectionTextHeaderStyled title={title} subtitle={subtitle} condensed bigTitle />
-          <ArrowedLinkStyled url="https://explorer.alephium.org/" newTab>
-            Check our explorer
-          </ArrowedLinkStyled>
-          <Columns>
-            {columns.map((column) => (
-              <NumbersColumn key={column.description}>
-                <NumbersInfo {...column} />
-              </NumbersColumn>
-            ))}
-          </Columns>
-          <Waves parentRef={boxRef} />
-        </NumbersPageSectionContainer>
+        <PageSectionContainer>
+          <BorderedBox ref={boxRef}>
+            <SubsectionTextHeaderStyled title={title} subtitle={subtitle} condensed bigTitle />
+            <ArrowedLinkStyled url="https://explorer.alephium.org/" newTab>
+              Check our explorer
+            </ArrowedLinkStyled>
+            <Columns>
+              {columns.map((column) => (
+                <NumbersColumn key={column.description}>
+                  <NumbersInfo {...column} />
+                </NumbersColumn>
+              ))}
+            </Columns>
+            <Waves parentRef={boxRef} />
+          </BorderedBox>
+        </PageSectionContainer>
       </motion.div>
     </NumbersSection>
   )
@@ -158,11 +160,8 @@ const NumbersSection = styled.section`
   }
 `
 
-const NumbersPageSectionContainer = styled(PageSectionContainer)`
+const BorderedBox = styled.div`
   flex: 1;
-  position: relative;
-  max-width: 1200px;
-  margin: 0 8vw;
   border-radius: 30px;
   border: ${({ theme }) => theme.borderPrimary};
   background-color: ${({ theme }) => theme.bgSecondary};
@@ -170,6 +169,7 @@ const NumbersPageSectionContainer = styled(PageSectionContainer)`
   padding-bottom: var(--spacing-16);
   box-shadow: 0 50px 50px rgba(0, 0, 0, 0.3);
   overflow: hidden;
+  position: relative;
 `
 
 const NumbersColumn = styled(Column)`

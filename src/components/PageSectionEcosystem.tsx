@@ -116,7 +116,7 @@ const Subsection = styled(Columns)`
   align-items: center;
   gap: var(--spacing-2);
 
-  @media ${deviceBreakPoints.ipad} {
+  @media ${deviceBreakPoints.mobile} {
     flex-direction: column;
     gap: var(--spacing-4);
     align-items: stretch;
@@ -127,7 +127,7 @@ const Subsection = styled(Columns)`
       order: 2;
       text-align: right;
 
-      @media ${deviceBreakPoints.ipad} {
+      @media ${deviceBreakPoints.mobile} {
         order: 0;
       }
     }

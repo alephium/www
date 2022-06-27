@@ -354,6 +354,11 @@ const YearDate = styled.div`
     transform: translateX(calc(50vw - 50%));
     text-align: center;
   }
+
+  @media ${deviceBreakPoints.smallMobile} {
+    text-align: right;
+    transform: none;
+  }
 `
 
 const YearLine = styled.div`
