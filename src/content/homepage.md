@@ -301,8 +301,8 @@ footer:
           url:
           newTab: false
         - text: Careers
-          url: https://pandasoftware.bamboohr.com/jobs/
-          newTab: false
+          url: https://alephium.bamboohr.com/jobs/
+          newTab: true
         - text: Contact
           url:
           newTab: false
