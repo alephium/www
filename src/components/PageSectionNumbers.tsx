@@ -107,7 +107,7 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
     {
       value: supply,
       isLoading: false,
-      description: 'alph circulating'
+      description: 'ALPH circulating'
     },
     {
       value: addApostrophes(totalTransactions.value.toFixed(0)),

@@ -233,7 +233,7 @@ todoListSection:
           complete: true
     - title: Ecosystem
       items:
-        - text: Key industry events (PBWS, EthCCand others)
+        - text: Key industry events (PBWS, EthCC, and others)
           complete: false
         - text: Community engagement & marketing (hackathon, AMAs, competitions...)
           complete: false
