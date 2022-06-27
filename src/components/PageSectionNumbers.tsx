@@ -12,18 +12,19 @@ import Columns from './Columns/Columns'
 import Column from './Columns/Column'
 import { HttpResponse } from '@alephium/sdk/api/explorer'
 import Waves from './Wave/Waves'
-import useElementSize from '../hooks/useElementSize'
 import ArrowedLink from './ArrowedLink'
 import { motion } from 'framer-motion'
 
 const baseUrl = 'https://mainnet-backend.alephium.org'
 const ONE_DAY = 1000 * 60 * 60 * 24
 
+export interface PageSectionNumbersContentType {
+  title: string
+  subtitle: string
+}
+
 interface Props {
-  content: {
-    title: string
-    subtitle: string
-  }
+  content: PageSectionNumbersContentType
 }
 
 interface Stat<T> {
@@ -46,7 +47,7 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
     totalTransactions: statScalarDefault
   })
 
-  const boxRef = useRef<HTMLDivElement>()
+  const boxRef = useRef<HTMLDivElement>(null)
 
   const updateStatsScalar = useCallback(
     (key: StatScalarKeys, value: StatScalar['value']) => {
@@ -91,7 +92,7 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
 
   const { hashrate, circulatingSupply, totalTransactions } = statsScalarData
   const [hashrateInteger, hashrateDecimal, hashrateSuffix] = formatNumberForDisplay(hashrate.value, 'hash')
-  const supply = formatNumberForDisplay(circulatingSupply.value)
+  const supply = formatNumberForDisplay(circulatingSupply.value).join('')
 
   const columns = [
     {
@@ -131,9 +132,9 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
             Check our explorer
           </ArrowedLinkStyled>
           <Columns>
-            {columns.map((c) => (
-              <NumbersColumn key={c.description}>
-                <NumbersInfo {...c} />
+            {columns.map((column) => (
+              <NumbersColumn key={column.description}>
+                <NumbersInfo {...column} />
               </NumbersColumn>
             ))}
           </Columns>

@@ -12,7 +12,7 @@ interface NavigationMenuProps {
   className?: string
 }
 
-let NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
+const NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
   <div className={className}>
     <div className="nav-start">
       <div className="nav-item">
@@ -59,7 +59,7 @@ const LinkStyled = styled(Link)`
   display: flex;
 `
 
-NavigationMenu = styled(NavigationMenu)`
+export default styled(NavigationMenu)`
   display: flex;
   justify-content: space-between;
 
@@ -96,5 +96,3 @@ const LogoTextStyled = styled(LogoText)`
   height: 1.625rem;
   fill: ${({ theme }) => theme.textPrimary};
 `
-
-export default NavigationMenu

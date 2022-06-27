@@ -9,9 +9,9 @@ import PageSectionHero, { PageSectionHeroContentType } from '../components/PageS
 import PageSectionIntro, { PageSectionIntroContentType } from '../components/PageSectionIntro'
 import PageSectionEcosystem from '../components/PageSectionEcosystem'
 import PageSectionTechnology, { PageSectionTechnologyContentType } from '../components/PageSectionTechnology'
-import PageSectionNumbers from '../components/PageSectionNumbers'
-import PageSectionMilestones from '../components/PageSectionMilestones'
-import PageSectionTodoList from '../components/PageSectionTodoList'
+import PageSectionNumbers, { PageSectionNumbersContentType } from '../components/PageSectionNumbers'
+import PageSectionMilestones, { PageSectionMilestonesContentType } from '../components/PageSectionMilestones'
+import PageSectionTodoList, { PageSectionTodoListContentType } from '../components/PageSectionTodoList'
 import PageSectionSunOverTheMountains from '../components/PageSectionSunOverTheMountains'
 import PageSectionFollowUs, { PageSectionFollowUsContentType } from '../components/PageSectionFollowUs'
 import Footer, { FooterContentType } from '../components/Footer'
@@ -24,6 +24,9 @@ interface IndexPageProps extends PageProps {
           headerSection: PageSectionHeroContentType
           introSection: PageSectionIntroContentType
           technologySection: PageSectionTechnologyContentType
+          numbersSection: PageSectionNumbersContentType
+          milestonesSection: PageSectionMilestonesContentType
+          todoListSection: PageSectionTodoListContentType
           followUsSection: PageSectionFollowUsContentType
           footer: FooterContentType
         }
@@ -88,7 +91,6 @@ export const pageQuery = graphql`
                 publicURL
               }
               link {
-                text
                 url
                 newTab
               }

@@ -1,5 +1,5 @@
 import { FC, useRef, useState } from 'react'
-import styled, { css, ThemeProvider } from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
 
 import { darkTheme } from '../styles/themes'
 import { deviceBreakPoints } from '../styles/global-style'
@@ -41,7 +41,7 @@ interface PageSectionHeroProps {
 }
 
 const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
-  const [slide, setSlide] = useState<0 | 1>(0)
+  const [slide, setSlide] = useState<number>(0)
   const innerRef = useRef<HTMLElement>(null)
   const themeContent = slide === 0 ? content.dark : content.light
 

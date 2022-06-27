@@ -20,8 +20,12 @@ interface TechnologyPageProps extends PageProps {
       }[]
     }
     homepage: {
-      followUsSection: PageSectionFollowUsContentType
-      footer: FooterContentType
+      nodes: {
+        frontmatter: {
+          followUsSection: PageSectionFollowUsContentType
+          footer: FooterContentType
+        }
+      }[]
     }
   }
 }

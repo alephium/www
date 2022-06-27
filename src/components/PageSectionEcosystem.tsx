@@ -21,7 +21,7 @@ type SubsectionType = {
   }[]
 }
 
-let PageSectionEcosystem = ({ className }: { className?: string }) => {
+const PageSectionEcosystem = ({ className }: { className?: string }) => {
   const { homepage } = useStaticQuery(query)
 
   const {
@@ -78,24 +78,7 @@ let PageSectionEcosystem = ({ className }: { className?: string }) => {
   )
 }
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      delay: 0.5,
-      staggerChildren: 0.2,
-      delayChildren: 0.5
-    }
-  }
-}
-
-const itemVariants = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1 }
-}
-
-PageSectionEcosystem = styled(PageSectionEcosystem)`
+export default styled(PageSectionEcosystem)`
   padding-top: var(--spacing-10);
   padding-bottom: var(--spacing-20);
   position: relative;
@@ -223,6 +206,23 @@ const SubsectionItem = styled(motion.div)`
   }
 `
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 0.5,
+      staggerChildren: 0.2,
+      delayChildren: 0.5
+    }
+  }
+}
+
+const itemVariants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 }
+}
+
 const query = graphql`
   query {
     homepage: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/homepage.md/" } }) {
@@ -251,5 +251,3 @@ const query = graphql`
     }
   }
 `
-
-export default PageSectionEcosystem

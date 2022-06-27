@@ -17,7 +17,14 @@ interface TextSnippetProps extends HTMLMotionProps<'div'> {
   children?: ReactNode
 }
 
-let TextSnippet: FC<TextSnippetProps> = ({ className, title, titleHierarchy = 'h2', subtitle, children, ...props }) => (
+const TextSnippet: FC<TextSnippetProps> = ({
+  className,
+  title,
+  titleHierarchy = 'h2',
+  subtitle,
+  children,
+  ...props
+}) => (
   <motion.div className={className} {...props}>
     {title && (titleHierarchy === 'h2' ? <h2>{title}</h2> : <h3>{title}</h3>)}
     {subtitle && <div className="text-subtitle">{subtitle}</div>}
@@ -25,7 +32,7 @@ let TextSnippet: FC<TextSnippetProps> = ({ className, title, titleHierarchy = 'h
   </motion.div>
 )
 
-TextSnippet = styled(TextSnippet)`
+export default styled(TextSnippet)`
   > h2,
   > h3 {
     font-size: ${({ bigTitle }) => (bigTitle ? 'var(--fontSize-56)' : 'var(--fontSize-28)')};
@@ -63,4 +70,3 @@ TextSnippet = styled(TextSnippet)`
     }
   }
 `
-export default TextSnippet

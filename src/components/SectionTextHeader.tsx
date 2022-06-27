@@ -16,7 +16,7 @@ interface SectionTextHeaderProps {
   sticky?: boolean
 }
 
-let SectionTextHeader: FC<SectionTextHeaderProps> = ({
+const SectionTextHeader: FC<SectionTextHeaderProps> = ({
   className,
   title,
   subtitle,
@@ -59,7 +59,7 @@ const StyledTextSnippet = styled(TextSnippet)`
   flex: 1;
 `
 
-SectionTextHeader = styled(SectionTextHeader)`
+export default styled(SectionTextHeader)`
   position: ${({ sticky }) => (sticky ? 'sticky' : 'initial')};
   top: 0;
   right: 0;
@@ -94,5 +94,3 @@ SectionTextHeader = styled(SectionTextHeader)`
     max-width: var(--width-564);
   }
 `
-
-export default SectionTextHeader

@@ -9,14 +9,14 @@ interface ImageWithTextSideBySideProps {
   className?: string
 }
 
-let ImageWithTextSideBySide: FC<ImageWithTextSideBySideProps> = ({ image, imageAlt, className, children }) => (
+const ImageWithTextSideBySide: FC<ImageWithTextSideBySideProps> = ({ image, imageAlt, className, children }) => (
   <div className={className}>
     <img src={image} alt={imageAlt} />
     <div>{children}</div>
   </div>
 )
 
-ImageWithTextSideBySide = styled(ImageWithTextSideBySide)`
+export default styled(ImageWithTextSideBySide)`
   display: flex;
   align-items: center;
   gap: var(--spacing-6);
@@ -43,5 +43,3 @@ ImageWithTextSideBySide = styled(ImageWithTextSideBySide)`
     }
   }
 `
-
-export default ImageWithTextSideBySide

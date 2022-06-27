@@ -18,7 +18,7 @@ export interface ArrowedLinkProps {
   trackingName?: string
 }
 
-let ArrowedLink: FC<ArrowedLinkProps> = ({
+const ArrowedLink: FC<ArrowedLinkProps> = ({
   className,
   children,
   IconComponent,
@@ -48,7 +48,7 @@ let ArrowedLink: FC<ArrowedLinkProps> = ({
   )
 }
 
-ArrowedLink = styled(ArrowedLink)`
+export default styled(ArrowedLink)`
   display: flex;
   align-items: center;
   font-weight: var(--fontWeight-semiBold);
@@ -89,5 +89,3 @@ ArrowedLink = styled(ArrowedLink)`
     }
   }
 `
-
-export default ArrowedLink

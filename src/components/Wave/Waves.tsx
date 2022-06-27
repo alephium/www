@@ -24,7 +24,7 @@ import styled from 'styled-components'
 import useAnimationFrame from '../../hooks/useAnimationFrame'
 import WaveEntity from './WaveEntity'
 
-const Waves = ({ parentRef }: { parentRef?: MutableRefObject<HTMLDivElement | undefined> }) => {
+const Waves = ({ parentRef }: { parentRef?: MutableRefObject<HTMLDivElement | null> }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const canvasContextRef = useRef<CanvasRenderingContext2D>()
 

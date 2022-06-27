@@ -19,7 +19,7 @@ interface SectionTextTeaserProps {
   tipbox?: boolean
 }
 
-let SectionTextTeaser: FC<SectionTextTeaserProps> = ({
+const SectionTextTeaser: FC<SectionTextTeaserProps> = ({
   className,
   title,
   description,
@@ -54,7 +54,7 @@ let SectionTextTeaser: FC<SectionTextTeaserProps> = ({
   </div>
 )
 
-SectionTextTeaser = styled(SectionTextTeaser)`
+export default styled(SectionTextTeaser)`
   > .card {
     display: flex;
     gap: var(--spacing-7);
@@ -83,5 +83,3 @@ const Links = styled.div`
   gap: var(--spacing-8);
   margin-top: var(--spacing-4);
 `
-
-export default SectionTextTeaser

@@ -11,7 +11,7 @@ interface ButtonProps {
   trackingName?: string
 }
 
-let Button: FC<ButtonProps> = ({ onClick, className, children, url, newTab, trackingName }) =>
+const Button: FC<ButtonProps> = ({ onClick, className, children, url, newTab, trackingName }) =>
   url ? (
     <a
       href={url}
@@ -30,7 +30,7 @@ let Button: FC<ButtonProps> = ({ onClick, className, children, url, newTab, trac
     </button>
   )
 
-Button = styled(Button)`
+export default styled(Button)`
   background-color: var(--color-blue-100);
   color: var(--color-white);
   border-radius: var(--radius-small);
@@ -64,5 +64,3 @@ Button = styled(Button)`
       `}
   }
 `
-
-export default Button

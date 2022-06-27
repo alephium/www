@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 
 import { deviceBreakPoints } from '../../styles/global-style'
 
-const HeroSection = styled.section`
+export default styled.section`
   min-height: 100vh;
   overflow: hidden;
   position: relative;
@@ -48,7 +48,7 @@ const HeroSection = styled.section`
     left: 0;
     bottom: 0;
 
-    .hero-image  {
+    .hero-image {
       position: absolute;
       right: 0;
       bottom: 0;
@@ -67,5 +67,3 @@ const HeroSection = styled.section`
     }
   }
 `
-
-export default HeroSection

@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 
 import PageSectionContainer from './PageSectionContainer'
 import CardEngagement from './CardEngagement'
-// import Feed from './Feed'
 import Column from './Columns/Column'
 import Columns from './Columns/Columns'
 import SectionTextHeader from './SectionTextHeader'
@@ -19,6 +18,7 @@ export interface PageSectionIntroContentType {
     title: string
     description: string
     link: ArrowedLinkProps
+    image: { publicURL: string }
   }[]
 }
 

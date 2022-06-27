@@ -16,7 +16,7 @@ interface ResponsiveImageProps {
   className?: string
 }
 
-let ResponsiveImage: FC<ResponsiveImageProps> = ({ image, className }) => (
+const ResponsiveImage: FC<ResponsiveImageProps> = ({ image, className }) => (
   <div className={className}>
     <ImageContainer>
       {image.src.childImageSharp.gatsbyImageData.images.sources?.map((source) => (
@@ -32,7 +32,7 @@ let ResponsiveImage: FC<ResponsiveImageProps> = ({ image, className }) => (
   </div>
 )
 
-ResponsiveImage = styled(ResponsiveImage)`
+export default styled(ResponsiveImage)`
   max-width: ${({ image }) => image.src.childImageSharp.gatsbyImageData.width}px;
   border-radius: 7px;
   border: ${({ theme }) => theme.borderPrimary};
@@ -49,5 +49,3 @@ ResponsiveImage = styled(ResponsiveImage)`
 const ImageContainer = styled.picture`
   display: flex;
 `
-
-export default ResponsiveImage

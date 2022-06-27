@@ -9,7 +9,7 @@ interface CardTextTeaserProps {
   className?: string
 }
 
-let CardTextTeaser: FC<CardTextTeaserProps> = ({ title, subtitle, children, className }) => (
+const CardTextTeaser: FC<CardTextTeaserProps> = ({ title, subtitle, children, className }) => (
   <article className={className}>
     <TextSnippetStyled
       className="text-content"
@@ -24,7 +24,7 @@ let CardTextTeaser: FC<CardTextTeaserProps> = ({ title, subtitle, children, clas
   </article>
 )
 
-CardTextTeaser = styled(CardTextTeaser)`
+export default styled(CardTextTeaser)`
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -49,5 +49,3 @@ const TextSnippetStyled = styled(TextSnippet)`
     color: ${({ theme }) => theme.textSecondary};
   }
 `
-
-export default CardTextTeaser

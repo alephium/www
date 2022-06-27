@@ -11,7 +11,7 @@ interface CardProps extends HTMLMotionProps<'div'> {
   children: React.ReactNode
 }
 
-let Card: FC<CardProps> = ({ className, children, ...props }) => {
+const Card: FC<CardProps> = ({ className, children, ...props }) => {
   return (
     <motion.div className={className} {...props}>
       {children}
@@ -19,7 +19,7 @@ let Card: FC<CardProps> = ({ className, children, ...props }) => {
   )
 }
 
-Card = styled(Card)`
+export default styled(Card)`
   padding: 41px 30px 25px 34px;
   border-radius: 9px;
   border: ${(props) => (props.thickBorders && '2px') || '1px'} solid ${(props) => props.borderColor || 'transparent'};
@@ -30,5 +30,3 @@ Card = styled(Card)`
 
   transition: all 0.1s ease-out;
 `
-
-export default Card

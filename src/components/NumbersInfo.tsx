@@ -8,14 +8,14 @@ interface NumbersInfoProps {
   className?: string
 }
 
-let NumbersInfo: FC<NumbersInfoProps> = ({ value, isLoading, description, className }) => (
+const NumbersInfo: FC<NumbersInfoProps> = ({ value, isLoading, description, className }) => (
   <div className={className}>
     {isLoading ? '-' : <div className="number">{value}</div>}
     <div>{description}</div>
   </div>
 )
 
-NumbersInfo = styled(NumbersInfo)`
+export default styled(NumbersInfo)`
   font-weight: var(--fontWeight-semiBold);
   color: ${({ theme }) => theme.textPrimaryVariation};
 
@@ -28,5 +28,3 @@ NumbersInfo = styled(NumbersInfo)`
     }
   }
 `
-
-export default NumbersInfo

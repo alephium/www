@@ -10,7 +10,7 @@ interface PaginatorProps {
   className?: string
 }
 
-let Paginator: FC<PaginatorProps> = ({ numberOfPages = 2, currentPage, setCurrentPage, onPageClick, className }) => {
+const Paginator: FC<PaginatorProps> = ({ numberOfPages = 2, currentPage, setCurrentPage, onPageClick, className }) => {
   const handleOnClick = (page: number) => {
     setCurrentPage(page)
     onPageClick(page)
@@ -27,7 +27,7 @@ let Paginator: FC<PaginatorProps> = ({ numberOfPages = 2, currentPage, setCurren
   )
 }
 
-Paginator = styled(Paginator)`
+export default styled(Paginator)`
   display: flex;
   gap: var(--spacing-2);
 
@@ -55,5 +55,3 @@ const Dot = styled(motion.div)`
   border-radius: 10px;
   background-color: white;
 `
-
-export default Paginator

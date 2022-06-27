@@ -53,7 +53,7 @@ interface PageSectionTechnologyProps {
   minimal?: boolean
 }
 
-let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, content, minimal }) => {
+const PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, content, minimal }) => {
   const [isBlockFlowModalOpen, setIsBlockFlowModalOpen] = useState(false)
   const [isPoLWModalOpen, setIsPoLWModalOpen] = useState(false)
   const [isSmartContractModalOpen, setIsSmartContractModalOpen] = useState(false)
@@ -256,8 +256,6 @@ const TechSection = styled.div`
   }
 `
 
-PageSectionTechnology = styled(PageSectionTechnology)`
+export default styled(PageSectionTechnology)`
   background-color: ${({ theme }) => theme.bgSecondary};
 `
-
-export default PageSectionTechnology

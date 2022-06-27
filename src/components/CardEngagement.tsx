@@ -6,7 +6,7 @@ import CardTextTeaser from './CardTextTeaser'
 import SimpleLink, { SimpleLinkProps } from './SimpleLink'
 
 import { deviceBreakPoints } from '../styles/global-style'
-import { motion, useMotionValue, useTransform } from 'framer-motion'
+import { motion, useMotionValue, useTransform, Variants } from 'framer-motion'
 import CursorHighlight from './CursorHighlight'
 import { getPointerRelativePositionInElement } from '../utils/pointer'
 
@@ -14,9 +14,10 @@ interface CardEngagementProps {
   title: string
   link: SimpleLinkProps
   image: { publicURL: string }
+  children: ReactNode
   className?: string
   trackingName?: string
-  children: ReactNode
+  variants?: Variants
 }
 
 const CardEngagement: FC<CardEngagementProps> = ({
@@ -51,7 +52,7 @@ const CardEngagement: FC<CardEngagementProps> = ({
 
   return (
     <MotionContainer {...props} className={className}>
-      <SimpleLinkStyled {...link}>
+      <SimpleLinkStyled {...link} trackingName={trackingName}>
         <CardContainer
           className={className}
           borderColor={theme.bgPrimary}
@@ -72,9 +73,7 @@ const CardEngagement: FC<CardEngagementProps> = ({
         >
           <div className="card-contents">
             <Iconic src={image.publicURL} alt={title} />
-            <CardTextTeaser title={title} trackingName={trackingName}>
-              {children}
-            </CardTextTeaser>
+            <CardTextTeaser title={title}>{children}</CardTextTeaser>
           </div>
           <CursorHighlight />
         </CardContainer>

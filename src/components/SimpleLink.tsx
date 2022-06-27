@@ -11,7 +11,7 @@ export interface SimpleLinkProps {
   trackingName?: string
 }
 
-let SimpleLink: FC<SimpleLinkProps> = ({ className, children, url, newTab, text, openModal, trackingName }) => {
+const SimpleLink: FC<SimpleLinkProps> = ({ className, children, url, newTab, text, openModal, trackingName }) => {
   const handleOnClick = (event: MouseEvent) => {
     if (openModal) {
       event.preventDefault()
@@ -33,7 +33,7 @@ let SimpleLink: FC<SimpleLinkProps> = ({ className, children, url, newTab, text,
   )
 }
 
-SimpleLink = styled(SimpleLink)`
+export default styled(SimpleLink)`
   text-decoration: none;
   color: ${({ theme, color }) => (color ? color : theme.link)};
 
@@ -46,5 +46,3 @@ SimpleLink = styled(SimpleLink)`
     cursor: pointer;
   }
 `
-
-export default SimpleLink

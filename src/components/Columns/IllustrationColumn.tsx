@@ -7,11 +7,11 @@ interface IllustrationColumnProps {
   className?: string
 }
 
-let IllustrationColumn: FC<IllustrationColumnProps> = ({ className, children }) => (
+const IllustrationColumn: FC<IllustrationColumnProps> = ({ className, children }) => (
   <div className={className}>{children}</div>
 )
 
-IllustrationColumn = styled(IllustrationColumn)`
+export default styled(IllustrationColumn)`
   position: relative;
   display: flex;
   justify-content: center;
@@ -34,5 +34,3 @@ IllustrationColumn = styled(IllustrationColumn)`
     min-height: 200px;
   }
 `
-
-export default IllustrationColumn

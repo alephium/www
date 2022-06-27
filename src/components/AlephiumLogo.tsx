@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 
 interface AlephiumLogoProps {
   className?: string
-  gradientIndex: 0 | 1
+  gradientIndex: number
 }
 
 const AlephiumLogo = ({ className, gradientIndex, ...props }: AlephiumLogoProps) => (

@@ -3,12 +3,14 @@ import styled from 'styled-components'
 import SectionTextHeader from './SectionTextHeader'
 import DualTimeline, { Timeline } from './DualTimeline'
 
+export type PageSectionMilestonesContentType = {
+  title: string
+  subtitle: string
+  timelines: Timeline[]
+}
+
 interface Props {
-  content: {
-    title: string
-    subtitle: string
-    timelines: Timeline[]
-  }
+  content: PageSectionMilestonesContentType
 }
 
 const PageSectionMilestones = ({ content: { title, subtitle, timelines } }: Props) => (

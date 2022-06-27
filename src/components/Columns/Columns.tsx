@@ -12,7 +12,7 @@ interface ColumnsProps {
   children: ReactNode
 }
 
-let Columns: FC<ColumnsProps> = ({ className, animateEntry = false, ...props }, ref) => (
+const Columns: FC<ColumnsProps> = ({ className, animateEntry = false, ...props }, ref) => (
   <motion.div ref={() => ref} className={className} {...props} {...getAnimationProps(animateEntry)} />
 )
 
@@ -41,7 +41,7 @@ const getAnimationProps = (animateEntry: boolean): Omit<HTMLMotionProps<'div'>, 
       }
     : {}
 
-Columns = styled(Columns)`
+export default styled(Columns)`
   display: flex;
   gap: ${(props) => props.gap || '0'};
 
@@ -49,5 +49,3 @@ Columns = styled(Columns)`
     flex-direction: ${(props) => (props.reverse ? 'column-reverse' : 'column')};
   }
 `
-
-export default Columns

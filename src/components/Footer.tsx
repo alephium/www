@@ -25,7 +25,7 @@ interface FooterProps {
   content: FooterContentType
 }
 
-let Footer: FC<FooterProps> = ({ className, content }) => {
+const Footer: FC<FooterProps> = ({ className, content }) => {
   const [isTeamModalOpen, setIsTeamModalOpen] = useState(false)
   const [isContactModalOpen, setIsContactModalOpen] = useState(false)
   const [isPrivacyPolicyModalOpen, setIsPrivacyPolicyModalOpen] = useState(false)
@@ -98,7 +98,7 @@ const Separator = styled.div`
   }
 `
 
-Footer = styled(Footer)`
+export default styled(Footer)`
   padding-bottom: var(--spacing-10);
   background-color: ${({ theme }) => theme.bgSecondary};
   color: ${({ theme }) => theme.textPrimary};
@@ -148,5 +148,3 @@ const LogoStyled = styled(Logo)`
     fill: var(--color-logo-black-light);
   }
 `
-
-export default Footer

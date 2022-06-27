@@ -8,18 +8,20 @@ import SvgStars from '../images/stars.svg'
 import { deviceBreakPoints } from '../styles/global-style'
 import { motion, Variants } from 'framer-motion'
 
-type Props = {
-  content: {
+export type PageSectionTodoListContentType = {
+  title: string
+  subtitle: string
+  lists: {
     title: string
-    subtitle: string
-    lists: {
-      title: string
-      items: {
-        text: string
-        complete: boolean
-      }[]
+    items: {
+      text: string
+      complete: boolean
     }[]
-  }
+  }[]
+}
+
+interface Props {
+  content: PageSectionTodoListContentType
 }
 
 interface Alignment {
@@ -28,7 +30,7 @@ interface Alignment {
 
 const PageSectionTodoList = ({ content: { title, subtitle, lists } }: Props) => (
   <BackdropStars>
-    <SectionTextHeader title={title} subtitle={subtitle} bigSubtitle bigText position="sticky" centered />
+    <SectionTextHeader title={title} subtitle={subtitle} bigSubtitle bigText sticky centered />
     <PageSectionContainer>
       <TodoLists variants={todoItemsContainerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
         {lists.map(({ title, items }, index) => (

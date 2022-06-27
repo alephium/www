@@ -19,7 +19,6 @@ introSection:
       description: Securely store and transfer your ALPH. Connect to dApps and
         start leveraging the Alephium ecosystem.
       link:
-        text: Download
         url: https://github.com/alephium/desktop-wallet/releases/
         newTab: true
     - title: Start Mining
@@ -27,7 +26,6 @@ introSection:
       description: Start mining to contribute to the network security and
         receive ALPH rewards.
       link:
-        text: Documentation
         url: https://wiki.alephium.org/mining/Solo-Mining-Guide
         newTab: true
     - title: Build your own
@@ -35,7 +33,6 @@ introSection:
       description: Start building your own smart contracts, decentralized apps
         and protocols.
       link:
-        text: Begin the primer
         url: https://wiki.alephium.org/dapps/A-Primer-With-The-Desktop-Wallet
         newTab: true
     - title: Get rewarded
@@ -43,7 +40,6 @@ introSection:
       description: Apply for a grant to develop your own project on Alephium.
         Receive rewards for contributing to any initiatives bringing value to the project.
       link:
-        text: Check them out
         url: https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md
         newTab: true
 technologySection:

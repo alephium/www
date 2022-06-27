@@ -11,13 +11,13 @@ interface SubsectionTextHeaderProps {
   condensed?: boolean
 }
 
-let SubsectionTextHeader: FC<SubsectionTextHeaderProps> = ({ title, subtitle, bigTitle, className }) => (
+const SubsectionTextHeader: FC<SubsectionTextHeaderProps> = ({ title, subtitle, bigTitle, className }) => (
   <header className={className}>
     <TextSnippet title={title} titleHierarchy="h3" subtitle={subtitle} bigTitle={bigTitle} />
   </header>
 )
 
-SubsectionTextHeader = styled(SubsectionTextHeader)`
+export default styled(SubsectionTextHeader)`
   max-width: ${({ condensed }) => (condensed ? 'var(--width-476)' : 'none')};}
 
   h3 {
@@ -29,5 +29,3 @@ SubsectionTextHeader = styled(SubsectionTextHeader)`
     }
   }
 `
-
-export default SubsectionTextHeader

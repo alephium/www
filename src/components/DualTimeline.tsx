@@ -21,34 +21,14 @@ type Props = {
   timelines: Timeline[]
 }
 
-function sortMerge(as, bs) {
-  const diff = (c, d) => c.order - d.order
-  const aSorted = as.sort(diff)
-  const bSorted = bs.sort(diff)
-
-  const aNewList = aSorted.reduce((list, a) => {
-    const b = bSorted.find((b) => b.order === a.order)
-    return b ? [...list, [a, b]] : [...list, [a, undefined]]
-  }, [])
-  const bNewList = bSorted.reduce((list, b) => {
-    const a = aSorted.some((a) => a.order === b.order)
-    return a ? [...list, [a, b]] : [...list, [undefined, b]]
-  }, [])
-  const newList = aNewList.concat(bNewList).sort((a, b) => {
-    if (a[0] !== undefined && b[0] !== undefined) return a[0].order - b[0].order
-    if (a[1] !== undefined && b[1] !== undefined) return a[1].order - b[1].order
-    if (a[0] !== undefined && b[1] !== undefined) return a[0].order - b[1].order
-    return a[1].order - b[0].order
-  })
-
-  return uniqBy(newList, (el) => (el[0] && el[0].order) || (el[1] && el[1].order))
-}
-
 const DualTimeline = (props: Props) => {
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
-    const event = ['resize', () => setIsMobile(window.innerWidth <= deviceSizes.smallMobile)]
+    const event: [string, EventListenerOrEventListenerObject] = [
+      'resize',
+      () => setIsMobile(window.innerWidth <= deviceSizes.smallMobile)
+    ]
 
     setIsMobile(window.innerWidth <= deviceSizes.smallMobile)
     window.addEventListener(...event)
@@ -75,7 +55,7 @@ const DualTimelineDesktop = ({ timelines }: Props) => {
       <HeaderStickyBackground />
       <LineStartsEnds starts headings={headings} />
       {timelines[0].years.map(({ year, entries }, index) => (
-        <section>
+        <section key={year}>
           <Year value={year} headings={headings} />
           <Entries>
             {sortMerge(entries, timelines[1]?.years[index]?.entries ?? []).map(([entryA, entryB], index) => (
@@ -399,7 +379,7 @@ const Headings = styled.div`
   height: ${headerHeight}px;
 `
 
-const Heading = styled.div`
+const Heading = styled.div<{ right: boolean }>`
   text-align: ${({ right }) => (right ? 'right' : 'left')};
   font-weight: var(--fontWeight-semiBold);
   font-size: var(--fontSize-28);
@@ -419,5 +399,28 @@ const HeaderStickyBackground = styled.div`
   background-color: rgba(15, 15, 15, 0.8);
   backdrop-filter: blur(20px);
 `
+
+function sortMerge(as, bs) {
+  const diff = (c, d) => c.order - d.order
+  const aSorted = as.sort(diff)
+  const bSorted = bs.sort(diff)
+
+  const aNewList = aSorted.reduce((list, a) => {
+    const b = bSorted.find((b) => b.order === a.order)
+    return b ? [...list, [a, b]] : [...list, [a, undefined]]
+  }, [])
+  const bNewList = bSorted.reduce((list, b) => {
+    const a = aSorted.some((a) => a.order === b.order)
+    return a ? [...list, [a, b]] : [...list, [undefined, b]]
+  }, [])
+  const newList = aNewList.concat(bNewList).sort((a, b) => {
+    if (a[0] !== undefined && b[0] !== undefined) return a[0].order - b[0].order
+    if (a[1] !== undefined && b[1] !== undefined) return a[1].order - b[1].order
+    if (a[0] !== undefined && b[1] !== undefined) return a[0].order - b[1].order
+    return a[1].order - b[0].order
+  })
+
+  return uniqBy(newList, (el) => (el[0] && el[0].order) || (el[1] && el[1].order))
+}
 
 export default DualTimeline

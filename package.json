@@ -18,7 +18,7 @@
     "clean": "gatsby clean",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d public",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json}\" '!{.cache,public}/**/*'",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint . --fix --ext .js,.jsx,.ts,.tsx"
   },

@@ -28,7 +28,7 @@ interface FollowUsProps {
   content: PageSectionFollowUsContentType
 }
 
-let FollowUs: FC<FollowUsProps> = ({ className, content }) => (
+const FollowUs: FC<FollowUsProps> = ({ className, content }) => (
   <section className={className}>
     <PageSectionContainer>
       <SectionTextHeader title={content.title} subtitle={content.subtitle} bigSubtitle bigText>
@@ -52,7 +52,7 @@ let FollowUs: FC<FollowUsProps> = ({ className, content }) => (
   </section>
 )
 
-FollowUs = styled(FollowUs)`
+export default styled(FollowUs)`
   padding: var(--spacing-25) 0 var(--spacing-12) 0;
   background-color: ${({ theme }) => theme.bgSecondary};
   color: ${({ theme }) => theme.textPrimary};
@@ -96,5 +96,3 @@ const getIconByName = (name: string) => {
       break
   }
 }
-
-export default FollowUs

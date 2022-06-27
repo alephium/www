@@ -16,7 +16,7 @@ export interface ModalProps {
   className?: string
 }
 
-let Modal: FC<ModalProps> = ({ isOpen, setIsOpen, title, children, className }) => (
+const Modal: FC<ModalProps> = ({ isOpen, setIsOpen, title, children, className }) => (
   <ReactModal
     isOpen={isOpen}
     contentLabel={`${title} modal`}
@@ -37,7 +37,7 @@ let Modal: FC<ModalProps> = ({ isOpen, setIsOpen, title, children, className }) 
   </ReactModal>
 )
 
-Modal = styled(Modal)`
+export default styled(Modal)`
   .modal {
     background-color: ${({ theme }) => theme.bgPrimary};
     border-radius: var(--radius);
@@ -114,5 +114,3 @@ const TextSnippetStyled = styled(TextSnippet)`
     }
   }
 `
-
-export default Modal
