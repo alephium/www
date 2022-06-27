@@ -71,10 +71,10 @@ Modal = styled(Modal)`
     height: 100%;
     padding: var(--spacing-5) var(--spacing-8) var(--spacing-5) 0;
     margin: calc(var(--spacing-5) * -1) calc(var(--spacing-8) * -1) calc(var(--spacing-5) * -1) 0;
-  }
 
-  p {
-    color: ${({ theme }) => theme.textTertiary};
+    a {
+      color: ${({ theme }) => theme.linkAlt};
+    }
   }
 
   .close {
