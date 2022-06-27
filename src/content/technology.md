@@ -46,15 +46,16 @@ technologySection:
         newTab: true
   vmsSection:
     title: Novel VM
-    description: Alephium uses a simple, safe and flexible virtual machine 
-      designed for dApps, and more specifically DeFi. Its dedicated VM leverages 
-      and improves on the UTXO model to address DeFi’s security issues and execution 
-      bottleneck. Our VM focuses on contract security and IO performance. The key 
-      features are its first-class token system, multiple-caller contract and 
-      fine-grained execution model. 
+    description: Alephium uses a simple, safe and flexible virtual machine
+      designed for dApps, and more specifically DeFi. Its dedicated VM leverages
+      and improves on the UTXO model to address DeFi’s security issues and execution
+      bottleneck. Our VM focuses on contract security and IO performance. The key
+      features are its first-class token system, multiple-caller contract and
+      fine-grained execution model.
     cardText: VMs can be a big bottleneck when it comes to Blockchain performances.
       Not on Alephium.
     links:
       - text: More details
         url:
         newTab: false
+---
