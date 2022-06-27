@@ -28,7 +28,7 @@ const NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
         newTab
         altColor
         emoji="👛"
-        trackingName="main-nav:5-min-article-link"
+        trackingName="main-nav:download-wallet-link"
       >
         Download our wallet
       </ArrowedLink>
