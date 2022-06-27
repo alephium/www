@@ -24,7 +24,7 @@ const NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
     <div className="nav-end">
       <ArrowedLink
         className="nav-item"
-        url="https://github.com/alephium/desktop-wallet/releases/"
+        url="https://github.com/alephium/desktop-wallet/releases/latest/"
         newTab
         altColor
         emoji="👛"

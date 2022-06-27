@@ -19,7 +19,7 @@ introSection:
       description: Securely store and transfer your ALPH. Connect to dApps and
         start leveraging the Alephium ecosystem.
       link:
-        url: https://github.com/alephium/desktop-wallet/releases/
+        url: https://github.com/alephium/desktop-wallet/releases/latest/
         newTab: true
     - title: Start Mining
       image: ../images/mining.svg
