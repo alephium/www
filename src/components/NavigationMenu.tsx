@@ -16,7 +16,7 @@ const NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
   <div className={className}>
     <div className="nav-start">
       <div className="nav-item">
-        <LinkStyled to="/">
+        <LinkStyled to="/" title="Go to homepage">
           <LogoTextStyled />
         </LinkStyled>
       </div>
