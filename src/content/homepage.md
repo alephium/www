@@ -250,11 +250,13 @@ todoListSection:
           complete: false
         - text: Community engagement & marketing (hackathon, AMAs, competitions...)
           complete: false
-        - text: Additional CEX listing
-          complete: false
         - text: DEX listing (after the deployment of the bridge)
           complete: false
+        - text: Additional CEX listing
+          complete: false
         - text: 3rd party dApps (NFT, DEX, stablecoin) on Alephium
+          complete: false
+        - text: Grant Program V2
           complete: false
         - text: Website revamp
           complete: true
