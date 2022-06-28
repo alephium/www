@@ -28,7 +28,7 @@ import LeafImage from '../images/svgs/leaf.svg'
 import VmDotsImage from '../images/svgs/vm-dots.svg'
 import IllustrationColumn from './Columns/IllustrationColumn'
 import { motion, useTransform, useViewportScroll } from 'framer-motion'
-import { useRefScrollProgress } from '../hooks/useRefScrollProfress'
+import { useRefScrollProgress } from '../hooks/useRefScrollProgress'
 import ParallaxWrapper from './ParallaxWrapper'
 
 export interface PageSectionTechnologyContentType {
