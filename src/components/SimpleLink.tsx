@@ -19,13 +19,16 @@ const SimpleLink: FC<SimpleLinkProps> = ({ className, children, url, newTab, tex
     }
   }
 
-  return (
+  return openModal ? (
+    <span className={className} onClick={handleOnClick} data-goatcounter-click={trackingName}>
+      {children || text}
+    </span>
+  ) : (
     <a
       className={className}
       href={url}
       target={(newTab && '_blank') || undefined}
       rel={(newTab && 'noopener noreferrer') || undefined}
-      onClick={handleOnClick}
       data-goatcounter-click={trackingName}
     >
       {children || text}
