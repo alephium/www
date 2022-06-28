@@ -114,18 +114,36 @@ export const pageQuery = graphql`
             blockFlowSection {
               title
               description
+              links {
+                text
+                url
+                newTab
+              }
             }
             smartContractSection {
               title
               description
+              links {
+                text
+                url
+                newTab
+              }
             }
             polwSection {
               title
               description
+              links {
+                text
+                url
+                newTab
+              }
             }
             vmsSection {
               title
               description
+              links {
+                text
+              }
             }
           }
           numbersSection {

@@ -63,7 +63,7 @@ export default styled(Modal)`
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 2;
+    z-index: 5000;
   }
 
   .content {

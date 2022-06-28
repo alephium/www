@@ -71,15 +71,13 @@ const PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, cont
   const gradientYScale = useTransform(scrollYProgress, [start + start * 0.5, end - end * 0.1], [0, 4])
   const gradientYWidth = useTransform(scrollYProgress, [start + start * 0.5, end - end * 0.1], ['0%', '100%'])
 
-  if (!minimal) {
-    blockFlowSectionContent.links[0] = { ...blockFlowSectionContent.links[0], openModal: setIsBlockFlowModalOpen }
-    polwSectionContent.links[0] = { ...polwSectionContent.links[0], openModal: setIsPoLWModalOpen }
-    smartContractSectionContent.links[0] = {
-      ...smartContractSectionContent.links[0],
-      openModal: setIsSmartContractModalOpen
-    }
-    vmsSectionContent.links[0] = { ...vmsSectionContent.links[0], openModal: setIsVmsModalOpen }
+  blockFlowSectionContent.links[0] = { ...blockFlowSectionContent.links[0], openModal: setIsBlockFlowModalOpen }
+  polwSectionContent.links[0] = { ...polwSectionContent.links[0], openModal: setIsPoLWModalOpen }
+  smartContractSectionContent.links[0] = {
+    ...smartContractSectionContent.links[0],
+    openModal: setIsSmartContractModalOpen
   }
+  vmsSectionContent.links[0] = { ...vmsSectionContent.links[0], openModal: setIsVmsModalOpen }
 
   const columnsProps: Omit<ComponentProps<typeof Columns>, 'children'> = {
     gap: '4.5rem',
@@ -104,7 +102,7 @@ const PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, cont
                 {...blockFlowSectionContent}
                 IconComponent={StackImage}
                 trackingName="technology-section:blockflow"
-                link={!minimal}
+                link
                 tipbox={!minimal}
               />
             </Column>
@@ -119,7 +117,7 @@ const PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, cont
                 {...polwSectionContent}
                 IconComponent={LeafImage}
                 trackingName="technology-section:polw"
-                link={!minimal}
+                link
                 tipbox={!minimal}
               />
             </Column>
@@ -161,7 +159,7 @@ const PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, cont
                 {...smartContractSectionContent}
                 IconComponent={StackImage}
                 trackingName="technology-section:smart-contract"
-                link={!minimal}
+                link
                 tipbox={!minimal}
               />
             </Column>
@@ -176,7 +174,7 @@ const PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, cont
                 {...vmsSectionContent}
                 IconComponent={VmDotsImage}
                 trackingName="technology-section:vm"
-                link={!minimal}
+                link
                 tipbox={!minimal}
               />
             </Column>
@@ -208,6 +206,7 @@ const GradientContainer = styled.div`
   display: flex;
   justify-content: center;
   z-index: 4000;
+  pointer-events: none;
 `
 
 const TopGradient = styled(motion.div)`

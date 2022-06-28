@@ -52,17 +52,32 @@ technologySection:
       uses DAG data structure to reach consensus between different shards. This
       will allow up to 10’000 Transactions Per Second (currently more than
       400 TPS vs Bitcoins 7 TPS).
+    links:
+      - text: More details
+      - text: White paper
+        url: https://github.com/alephium/white-paper/blob/master/alephium.pdf
+        newTab: true
   smartContractSection:
     title: Programmable & Secure
     description: Alephium introduces the stateful UTXO model offering layer-1
       scalability and the same level of programmability as the account model
       used on ETH, whilst being more secure.
+    links:
+      - text: More details
+      - text: Guide
+        url: https://wiki.alephium.org/dapps/Technical-Guide-With-A-Fullnode
+        newTab: true
   polwSection:
     title: Efficiency in Energy Consumption
     description: Alephium employs "Proof of Less Work", which combines physical work
       and coin economics to dynamically adjust the work required to mine new
       blocks. Given the same network conditions, Alephium uses ~90% less energy
       compared to Bitcoin.
+    links:
+      - text: More details
+      - text: PoLW white paper
+        url: https://github.com/alephium/white-paper/blob/master/polw.pdf
+        newTab: true
   vmsSection:
     title: Its own Virtual Machine & Programming Language.
     description: The Alphred Virtual Machine solves many of the critical issues of the
@@ -72,6 +87,8 @@ technologySection:
       syntax inspired by the Rust programming language. It allows for building
       efficient and secure smart contracts easily. It's specifically designed to
       facilitate the creation of DeFi dApps!
+    links:
+      - text: More details
 numbersSection:
   title: Some numbers
   subtitle: We're passionate and committed to outstanding quality in everything
