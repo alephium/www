@@ -33,7 +33,7 @@ introSection:
       description: Start building your own smart contracts, decentralized apps
         and protocols.
       link:
-        url: https://wiki.alephium.org/dapps/A-Primer-With-The-Desktop-Wallet
+        url: https://wiki.alephium.org/dapps/Language-Reference
         newTab: true
     - title: Get rewarded
       image: ../images/coins.svg
