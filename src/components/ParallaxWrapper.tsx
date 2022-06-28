@@ -1,6 +1,6 @@
 import { motion, useTransform, useViewportScroll, MotionStyle } from 'framer-motion'
 import { useRef, FC, useEffect, useState } from 'react'
-import { isBrowser } from '../utils/misc'
+import { isBrowser, isMobile } from '../utils/misc'
 
 interface ParallaxWrapperProps {
   speed: number // Between -10 and 10 for good results
@@ -52,7 +52,7 @@ const ParallaxWrapper: FC<ParallaxWrapperProps> = ({
 
   const rotation = useTransform(scrollY, transformBounds, [-10, targetedRotation])
 
-  return (
+  return !isMobile ? (
     <motion.div
       className={className}
       ref={ref}
@@ -65,6 +65,8 @@ const ParallaxWrapper: FC<ParallaxWrapperProps> = ({
         ...style
       }}
     />
+  ) : (
+    <div ref={ref} {...props} className={className} />
   )
 }
 
