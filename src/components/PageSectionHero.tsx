@@ -59,7 +59,7 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
         <HeroSection className={className} ref={innerRef}>
           <AnimatePresence>
             {slide === 0 ? (
-              <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} key={0}>
+              <motion.div animate={{ opacity: 1 }} exit={{ opacity: 0 }} key={0}>
                 <ParallaxWrapper className="hero-image-container" speed={-8}>
                   <img src={HeroDarkBackImage} alt="Hero dark back" className="hero-image" />
                 </ParallaxWrapper>
@@ -71,7 +71,7 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
                 </ParallaxWrapper>
               </motion.div>
             ) : (
-              <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} key={1}>
+              <motion.div animate={{ opacity: 1 }} exit={{ opacity: 0 }} key={1}>
                 <ParallaxWrapper className="hero-image-container" speed={12}>
                   <img src={HeroLightBackImage} alt="Hero dark back" className="hero-image" />
                 </ParallaxWrapper>
@@ -94,9 +94,7 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
                 <>
                   <StyledLogo gradientIndex={slide} />
 
-                  <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-                    {themeContent.title}
-                  </motion.h1>
+                  <h1>{themeContent.title}</h1>
                   <TextSnippetStyled bigText>{themeContent.subtitle}</TextSnippetStyled>
                   <PaginatorStyled onPageClick={toggleSlide} currentPage={slide} setCurrentPage={setSlide} />
                   <a
