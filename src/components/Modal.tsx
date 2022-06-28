@@ -47,9 +47,10 @@ export default styled(Modal)`
     padding: var(--spacing-5) var(--spacing-8);
     box-sizing: border-box;
     position: relative;
+    margin: 0 var(--spacing-4);
 
     @media ${deviceBreakPoints.smallMobile} {
-      padding: var(--spacing-8) var(--spacing-3);
+      padding: var(--spacing-12) var(--spacing-3) var(--spacing-5);
     }
   }
 
