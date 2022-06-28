@@ -12,7 +12,10 @@
   image: ../images/team/philipp.jpg
 - name: Mikaël Vaivre
   role: Chief Product Officer
-  image: ../images/team/mika.png
+  image: ../images/team/mika.jpg
+- name: Marina De Mattos
+  role: Marketing & Communication
+  image: ../images/team/marina.jpg
 - name: Set Hallström
   role: Community Lead
   image: ../images/team/set.jpg
