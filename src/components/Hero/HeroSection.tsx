@@ -57,13 +57,7 @@ export default styled.section`
     }
 
     @media ${deviceBreakPoints.mobile} {
-      &.planet {
-        filter: brightness(0.5);
-      }
-    }
-
-    &.hidden {
-      opacity: 0;
+      filter: brightness(0.5);
     }
   }
 `
