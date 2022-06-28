@@ -110,7 +110,7 @@ ecosystemSection:
         - title: 'Bitcoin Association Switzerland'
           logo: '../images/svgs/bas-logo-white.svg'
           url: https://www.bitcoinassociation.ch/
-    - title: Memberships
+    - title: Backers
       description: "They provided us with early backing, funding, strategic advice, introductions and so much more!"
       image: ../images/award.svg
       items:
@@ -217,7 +217,7 @@ milestonesSection:
         when: '02.2022'
         isMajor: false
 todoListSection:
-  title: Todo List
+  title: What's next
   subtitle: Building an exciting future
   lists:
     - title: Core platform
