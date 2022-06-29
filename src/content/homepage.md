@@ -184,6 +184,30 @@ milestonesSection:
         text: First dApp PoC
         when: '01.2022'
         isMajor: true
+      - order: 1
+        text: Desktop wallet upgrade
+        when: '04.2022'
+        isMajor: false
+      - order: 2
+        text: Explorer optimization & addition of statistics
+        when: '05.2022'
+        isMajor: false
+      - order: 3
+        text: Full node 1.4.0 with all of the major features for the Leman network upgrade implemented
+        when: '06.2022'
+        isMajor: false
+      - order: 4
+        text: Beta version of contract SDK (alephium-web3)
+        when: '06.2022'
+        isMajor: false
+      - order: 5
+        text: New testnet launched
+        when: '06.2022'
+        isMajor: false
+      - order: 5
+        text: Leman Network Upgrade deployed on the testnet
+        when: '06.2022'
+        isMajor: false
   - title: Ecosystem
     years:
     - year: 2019
@@ -215,6 +239,14 @@ milestonesSection:
       - order: 1
         text: 9 mining pools on Alephium
         when: '02.2022'
+        isMajor: false
+      - order: 2
+        text: First NFT platform to be built on Alephium
+        when: '02.2022'
+        isMajor: false
+      - order: 3
+        text: Website Revamp
+        when: '06.2022'
         isMajor: false
 todoListSection:
   title: What's next
