@@ -107,10 +107,10 @@ const DualTimelineMobile = ({ timelines }: Props) => {
     <Container>
       <LineStartsEnds isSingle starts headings={[trackTitle]} />
       {Object.entries(years).map(([year, values]) => (
-        <>
+        <div key={year}>
           <Year value={year} headings={[trackTitle]} isSingle />
           {values.map(({ title, entries }) => (
-            <>
+            <div key={title}>
               {entries && (
                 <>
                   <Entries>
@@ -130,9 +130,9 @@ const DualTimelineMobile = ({ timelines }: Props) => {
                   </Data>
                 </Entry>
               ))}
-            </>
+            </div>
           ))}
-        </>
+        </div>
       ))}
       <LineStartsEnds isSingle headings={[trackTitle]} />
       <LineStartsEnds isSingle ends headings={[trackTitle]} />
