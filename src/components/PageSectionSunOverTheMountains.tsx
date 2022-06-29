@@ -6,7 +6,7 @@ import ParallaxWrapper from './ParallaxWrapper'
 
 const PageSectionSunOverTheMountains = () => (
   <Container>
-    <ParallaxImageFront speed={-10} />
+    <ParallaxImageFront speed={-10} translateUpperBound={5} />
     <ParallaxImageBack speed={2} />
   </Container>
 )

@@ -1,4 +1,4 @@
-import { motion, useTransform, useViewportScroll, MotionStyle } from 'framer-motion'
+import { motion, useTransform, useViewportScroll, MotionStyle, useDeprecatedAnimatedState } from 'framer-motion'
 import { useRef, FC, useEffect, useState } from 'react'
 import { isBrowser, isMobile } from '../utils/misc'
 
@@ -11,6 +11,7 @@ interface ParallaxWrapperProps {
   targetedOpacity?: number
   shouldRotate?: boolean
   targetedRotation?: number
+  translateUpperBound?: number
   className?: string
   style?: MotionStyle
 }
@@ -25,6 +26,7 @@ const ParallaxWrapper: FC<ParallaxWrapperProps> = ({
   targetedOpacity = 0,
   shouldRotate,
   targetedRotation = 90,
+  translateUpperBound,
   style,
   ...props
 }) => {
@@ -46,6 +48,8 @@ const ParallaxWrapper: FC<ParallaxWrapperProps> = ({
     clamp: false
   })
 
+  const clampedY = useTransform(y, (v) => (translateUpperBound && v > translateUpperBound ? translateUpperBound : v))
+
   const zoom = useTransform(scrollY, transformBounds, [0.9, targetedScale])
 
   const opacity = useTransform(scrollY, transformBounds, [initialOpacity, targetedOpacity])
@@ -58,7 +62,7 @@ const ParallaxWrapper: FC<ParallaxWrapperProps> = ({
       ref={ref}
       {...props}
       style={{
-        y,
+        y: translateUpperBound ? clampedY : y,
         scale: shouldZoom ? zoom : 1,
         opacity: shouldChangeOpacity ? opacity : 1,
         rotate: shouldRotate ? rotation : 0,
