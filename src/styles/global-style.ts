@@ -140,6 +140,28 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${({ theme }) => theme.bgSecondary};
     color: ${({ theme }) => theme.textPrimary};
     font-family: var(--fontFamily-sans);
+
+    &.ReactModal__Body--open {
+      overflow: hidden;
+    }
+  }
+
+  // Modals
+  
+  .ReactModal__Overlay {
+    transition: opacity 500ms ease-in-out;
+    opacity: 0;
+  }
+
+  .ReactModal__Overlay {
+    transition: opacity 200ms ease-in-out;
+    background: rgba(0, 0, 0, 0.15);
+    &--after-open {
+        opacity: 1;
+    }
+    &--before-close {
+        opacity: 0;
+    }
   }
 `
 

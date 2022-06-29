@@ -25,6 +25,7 @@ const Modal: FC<ModalProps> = ({ isOpen, setIsOpen, title, children, className }
     portalClassName={className}
     className="modal"
     overlayClassName="overlay"
+    closeTimeoutMS={200}
   >
     <div className="close" onClick={() => setIsOpen(false)} role="button">
       <CloseIcon />
@@ -54,7 +55,6 @@ export default styled(Modal)`
       padding: var(--spacing-12) var(--spacing-3) var(--spacing-5);
     }
   }
-
   .overlay {
     position: fixed;
     top: 0;
@@ -66,6 +66,8 @@ export default styled(Modal)`
     align-items: center;
     justify-content: center;
     z-index: 5000;
+
+    transition: opacity 200ms ease-in-out;
   }
 
   .content {
