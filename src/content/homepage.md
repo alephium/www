@@ -242,7 +242,7 @@ milestonesSection:
         isMajor: false
       - order: 2
         text: First NFT platform to be built on Alephium
-        when: '02.2022'
+        when: '04.2022'
         isMajor: false
       - order: 3
         text: Website Revamp
