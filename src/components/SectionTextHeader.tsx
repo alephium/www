@@ -29,8 +29,9 @@ const SectionTextHeader: FC<SectionTextHeaderProps> = ({
   const headingElementRef = useRef(null)
   const headingDistanceFromTopOfScreen = useElementDistanceToTop(headingElementRef)
   const [headingReachedTopOfScreen, setHeadingReachedTopOfScreen] = useState(false)
+  const isHeadingDistanceFromTopOfScreenInitialized = headingDistanceFromTopOfScreen !== undefined
 
-  if (sticky) {
+  if (sticky && isHeadingDistanceFromTopOfScreenInitialized) {
     if (headingDistanceFromTopOfScreen <= 0 && !headingReachedTopOfScreen) {
       setHeadingReachedTopOfScreen(true)
     } else if (headingDistanceFromTopOfScreen > 0 && headingReachedTopOfScreen) {

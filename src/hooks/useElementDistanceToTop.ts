@@ -1,7 +1,7 @@
 import { useState, MutableRefObject, useEffect } from 'react'
 
 const useElementDistanceToTop = (ref: MutableRefObject<HTMLDivElement | null>) => {
-  const [elementTop, setElementTop] = useState(0)
+  const [elementTop, setElementTop] = useState<number>()
 
   useEffect(() => {
     const element = ref.current
