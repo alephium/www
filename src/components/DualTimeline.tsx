@@ -328,9 +328,10 @@ const Entries = styled.div`
   flex-direction: column;
 `
 
-const yearMobileBreakpoint = '(max-width: 510px)'
-const yearRowPositionDesktop = '70px'
-const yearRowPositionMobile = '110px'
+const yearSmallMobileBreakpoint = '(max-width: 510px)'
+const yearRowPositionDesktop = '80px'
+const yearRowPositionMobile = '70px'
+const yearRowPositionSmallMobile = '110px'
 
 const YearHeader = styled.div`
   position: sticky;
@@ -344,8 +345,12 @@ const YearHeader = styled.div`
     flex: 1;
   }
 
-  @media ${yearMobileBreakpoint} {
+  @media ${deviceBreakPoints.mobile} {
     top: ${yearRowPositionMobile};
+  }
+
+  @media ${yearSmallMobileBreakpoint} {
+    top: ${yearRowPositionSmallMobile};
   }
 `
 
@@ -380,8 +385,12 @@ const Header = styled.div`
   top: ${yearRowPositionDesktop};
   z-index: 4;
 
-  @media ${yearMobileBreakpoint} {
+  @media ${deviceBreakPoints.mobile} {
     top: ${yearRowPositionMobile};
+  }
+
+  @media ${yearSmallMobileBreakpoint} {
+    top: ${yearRowPositionSmallMobile};
   }
 `
 
@@ -413,8 +422,12 @@ const HeaderStickyBackground = styled.div`
   background-color: rgba(15, 15, 15, 0.8);
   backdrop-filter: blur(20px);
 
-  @media ${yearMobileBreakpoint} {
+  @media ${deviceBreakPoints.mobile} {
     top: ${yearRowPositionMobile};
+  }
+
+  @media ${yearSmallMobileBreakpoint} {
+    top: ${yearRowPositionSmallMobile};
   }
 `
 
