@@ -58,7 +58,6 @@ const todoItemsContainerVariants: Variants = {
   visible: {
     opacity: 1,
     transition: {
-      delay: 0.4,
       delayChildren: 0.3,
       staggerChildren: 0.08
     }
