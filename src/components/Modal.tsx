@@ -39,15 +39,16 @@ const Modal: FC<ModalProps> = ({ isOpen, setIsOpen, title, children, className }
 
 export default styled(Modal)`
   .modal {
+    position: relative;
     background-color: ${({ theme }) => theme.bgPrimary};
     border-radius: var(--radius);
     border: 1px solid ${({ theme }) => theme.separator};
-    height: 80%;
+    max-height: 80%;
     max-width: calc(var(--page-width) * 0.7);
     padding: var(--spacing-5) var(--spacing-8);
     box-sizing: border-box;
-    position: relative;
     margin: 0 var(--spacing-4);
+    display: flex;
 
     @media ${deviceBreakPoints.smallMobile} {
       padding: var(--spacing-12) var(--spacing-3) var(--spacing-5);
@@ -68,8 +69,8 @@ export default styled(Modal)`
   }
 
   .content {
+    flex: 1;
     overflow-y: auto;
-    height: 100%;
     padding: var(--spacing-5) var(--spacing-8) var(--spacing-5) 0;
     margin: calc(var(--spacing-5) * -1) calc(var(--spacing-8) * -1) calc(var(--spacing-5) * -1) 0;
 
@@ -81,7 +82,7 @@ export default styled(Modal)`
   .close {
     position: absolute;
     left: 1rem;
-    padding-top: 3px;
+    padding-top: 2px;
     background-color: transparent;
 
     @media ${deviceBreakPoints.smallMobile} {
