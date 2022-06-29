@@ -204,10 +204,10 @@ milestonesSection:
         text: New testnet launched
         when: '06.2022'
         isMajor: false
-      - order: 5
+      - order: 6
         text: Leman Network Upgrade deployed on the testnet
         when: '06.2022'
-        isMajor: false
+        isMajor: true
   - title: Ecosystem
     years:
     - year: 2019
@@ -274,8 +274,6 @@ todoListSection:
           complete: false
         - text: Mobile wallet
           complete: false
-        - text: Include chain statistics and information on the explorer
-          complete: true
     - title: Ecosystem
       items:
         - text: Key industry events (PBWS, EthCC, and others)
@@ -290,8 +288,6 @@ todoListSection:
           complete: false
         - text: Grant Program V2
           complete: false
-        - text: Website revamp
-          complete: true
 followUsSection:
   title: Follow us
   subtitle: Join the community
