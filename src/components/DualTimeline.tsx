@@ -328,19 +328,24 @@ const Entries = styled.div`
   flex-direction: column;
 `
 
+const yearMobileBreakpoint = '(max-width: 510px)'
+const yearRowPositionDesktop = '70px'
+const yearRowPositionMobile = '110px'
+
 const YearHeader = styled.div`
   position: sticky;
   display: flex;
-  top: 90px;
+  top: ${yearRowPositionDesktop};
   z-index: 3;
   height: ${headerHeight}px;
+  background-color: ${({ theme }) => theme.bgSecondary};
 
   > * {
     flex: 1;
   }
 
-  @media ${deviceBreakPoints.ipad} {
-    background-color: ${({ theme }) => theme.bgSecondary};
+  @media ${yearMobileBreakpoint} {
+    top: ${yearRowPositionMobile};
   }
 `
 
@@ -372,8 +377,12 @@ const YearLine = styled.div`
 const Header = styled.div`
   display: flex;
   position: sticky;
-  top: 90px;
+  top: ${yearRowPositionDesktop};
   z-index: 4;
+
+  @media ${yearMobileBreakpoint} {
+    top: ${yearRowPositionMobile};
+  }
 `
 
 const Headings = styled.div`
@@ -397,12 +406,16 @@ const Heading = styled.div<{ right: boolean }>`
 
 const HeaderStickyBackground = styled.div`
   position: sticky;
-  top: 90px;
+  top: ${yearRowPositionDesktop};
   width: 100%;
   height: ${headerHeight}px;
   z-index: 1;
   background-color: rgba(15, 15, 15, 0.8);
   backdrop-filter: blur(20px);
+
+  @media ${yearMobileBreakpoint} {
+    top: ${yearRowPositionMobile};
+  }
 `
 
 function sortMerge(as, bs) {
