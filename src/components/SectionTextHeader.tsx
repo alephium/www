@@ -42,7 +42,7 @@ const SectionTextHeader: FC<SectionTextHeaderProps> = ({
   return (
     <>
       <div ref={headingElementRef} />
-      <motion.header className={className} animate={{ height: headingReachedTopOfScreen ? '100px' : 'inital' }}>
+      <motion.header className={className}>
         <StyledTextSnippet
           title={title}
           subtitle={subtitle}
