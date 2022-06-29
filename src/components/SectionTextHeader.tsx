@@ -26,31 +26,35 @@ const SectionTextHeader: FC<SectionTextHeaderProps> = ({
   centered,
   children
 }) => {
-  const elementRef = useRef(null)
-  const elementTop = useElementDistanceToTop(elementRef)
+  const headingElementRef = useRef(null)
+  const headingDistanceFromTopOfScreen = useElementDistanceToTop(headingElementRef)
+  const [headingReachedTopOfScreen, setHeadingReachedTopOfScreen] = useState(false)
 
-  const [isAtTop, setIsAtTop] = useState(false)
-
-  if (elementTop === 0 && sticky && !isAtTop) {
-    setIsAtTop(true)
-  } else if (elementTop > 0 && sticky && isAtTop) {
-    setIsAtTop(false)
+  if (sticky) {
+    if (headingDistanceFromTopOfScreen <= 0 && !headingReachedTopOfScreen) {
+      setHeadingReachedTopOfScreen(true)
+    } else if (headingDistanceFromTopOfScreen > 0 && headingReachedTopOfScreen) {
+      setHeadingReachedTopOfScreen(false)
+    }
   }
 
   return (
-    <motion.header className={className} ref={elementRef} animate={{ height: isAtTop ? '100px' : 'inital' }}>
-      <StyledTextSnippet
-        title={title}
-        subtitle={subtitle}
-        bigTitle
-        bigSubtitle={bigSubtitle}
-        bigText={bigText}
-        animate={{ scale: isAtTop ? 0.7 : 1 }}
-        style={{ transformOrigin: centered ? 'center' : 'left' }}
-      >
-        {children}
-      </StyledTextSnippet>
-    </motion.header>
+    <>
+      <div ref={headingElementRef} />
+      <motion.header className={className} animate={{ height: headingReachedTopOfScreen ? '100px' : 'inital' }}>
+        <StyledTextSnippet
+          title={title}
+          subtitle={subtitle}
+          bigTitle
+          bigSubtitle={bigSubtitle}
+          bigText={bigText}
+          animate={{ scale: headingReachedTopOfScreen ? 0.7 : 1 }}
+          style={{ transformOrigin: centered ? 'center' : 'left' }}
+        >
+          {children}
+        </StyledTextSnippet>
+      </motion.header>
+    </>
   )
 }
 

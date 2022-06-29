@@ -9,8 +9,7 @@ const useElementDistanceToTop = (ref: MutableRefObject<HTMLDivElement | null>) =
     if (!element) return
 
     const onScroll = () => setElementTop(element.getBoundingClientRect().top)
-    // clean up code
-    window.removeEventListener('scroll', onScroll)
+
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [ref])
