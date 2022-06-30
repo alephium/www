@@ -290,7 +290,7 @@ todoListSection:
           complete: false
 followUsSection:
   title: Follow us
-  subtitle: Join the community
+  subtitle: Contribute & Join the community
   description: Alephium's community is growing fast. Fascinated by our
     technology? Come learn and build with us!
   socialMediaLinks:
