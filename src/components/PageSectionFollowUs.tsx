@@ -12,6 +12,7 @@ import RedditIcon from '../images/svgs/brand-icon-reddit.svg'
 import YouTubeIcon from '../images/svgs/brand-icon-youtube.svg'
 import LinkedInIcon from '../images/svgs/brand-icon-linkedin.svg'
 import MediumIcon from '../images/svgs/brand-icon-medium.svg'
+import GitHubIcon from '../images/svgs/brand-icon-github.svg'
 
 export interface PageSectionFollowUsContentType {
   title: string
@@ -92,6 +93,8 @@ const getIconByName = (name: string) => {
       return LinkedInIcon
     case 'Youtube':
       return YouTubeIcon
+    case 'GitHub':
+      return GitHubIcon
     default:
       break
   }

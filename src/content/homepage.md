@@ -309,6 +309,8 @@ followUsSection:
       url: https://www.linkedin.com/company/alephium
     - name: Youtube
       url: https://www.youtube.com/channel/UCIX9Eww2Kch7sc0E6gCmEdg
+    - name: GitHub
+      url: https://github.com/alephium
 footer:
   columns:
     - title: Resources
