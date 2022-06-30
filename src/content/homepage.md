@@ -121,6 +121,7 @@ ecosystemSection:
           logo: '../images/logos/white-paper-capital-icon.svg'
           url: https://www.whitepapercapital.com/
         - title: 'Archery Fund'
+          logo: '../images/logos/archery-fund.png'
           url: https://archery.fund/
         - title: '80+ Private Individuals'
     - title: Community projects
