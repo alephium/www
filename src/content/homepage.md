@@ -91,8 +91,7 @@ technologySection:
       - text: More details
 numbersSection:
   title: Some numbers
-  subtitle: We're passionate and committed to outstanding quality in everything
-    we do. We took the necessary time to transform theory into actual technologies.
+  subtitle: "We're passionate in our work and committed to outstanding quality and measurable results. Here are some of our numbers."
 ecosystemSection:
   title: Ecosystem
   subtitle: Growing fast
