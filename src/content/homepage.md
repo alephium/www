@@ -144,7 +144,7 @@ ecosystemSection:
           url: https://enigmapool.com/
 milestonesSection:
   title: Completed milestones
-  subtitle: A success story
+  subtitle: Building everyday
   timelines:
   - title: Core platform
     years:
