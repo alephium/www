@@ -132,13 +132,13 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
             <ArrowedLinkStyled url="https://explorer.alephium.org/" newTab>
               Check our explorer
             </ArrowedLinkStyled>
-            <Columns>
+            <ColumnsStyled>
               {columns.map((column) => (
                 <NumbersColumn key={column.description}>
                   <NumbersInfo {...column} />
                 </NumbersColumn>
               ))}
-            </Columns>
+            </ColumnsStyled>
             <Waves parentRef={boxRef} />
           </BorderedBox>
         </PageSectionContainer>
@@ -205,6 +205,10 @@ const SubsectionTextHeaderStyled = styled(SubsectionTextHeader)`
 
 const ArrowedLinkStyled = styled(ArrowedLink)`
   margin-bottom: var(--spacing-10);
+`
+
+const ColumnsStyled = styled(Columns)`
+  align-items: baseline;
 `
 
 export default PageSectionNumbers
