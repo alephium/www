@@ -91,8 +91,7 @@ technologySection:
       - text: More details
 numbersSection:
   title: Some numbers
-  subtitle: We're passionate and committed to outstanding quality in everything
-    we do. We took the necessary time to transform theory into actual technologies.
+  subtitle: "We're passionate in our work and committed to outstanding quality and measurable results. Here are some of our numbers."
 ecosystemSection:
   title: Ecosystem
   subtitle: Growing fast
@@ -121,6 +120,7 @@ ecosystemSection:
           logo: '../images/logos/white-paper-capital-icon.svg'
           url: https://www.whitepapercapital.com/
         - title: 'Archery Fund'
+          logo: '../images/logos/archery-fund.png'
           url: https://archery.fund/
         - title: '80+ Private Individuals'
     - title: Community projects
@@ -144,7 +144,7 @@ ecosystemSection:
           url: https://enigmapool.com/
 milestonesSection:
   title: Completed milestones
-  subtitle: A success story
+  subtitle: Building everyday
   timelines:
   - title: Core platform
     years:
@@ -152,61 +152,61 @@ milestonesSection:
       entries:
       - order: 0
         text: Whitepapers publicly released
-        when: '02.2019'
+        when: 'Feb 2019'
         isMajor: false
     - year: 2020
       entries:
       - order: 0
         text: Alpha version of the core sharding protocol implemented and tested on AWS 
-        when: 'Q1.2020'
+        when: 'Q1 2020'
         isMajor: false
       - order: 1
         text: Testnet launch
-        when: '12.2020'
+        when: 'Dec 2020'
         isMajor: true
     - year: 2021
       entries:
       - order: 0
         text: Smart contract support
-        when: 'Q1.2021'
+        when: 'Q1 2021'
         isMajor: false
       - order: 1
         text: Desktop wallet & explorer public release
-        when: '09.2021'
+        when: 'Sep 2021'
         isMajor: false
       - order: 2
         text: Mainnet launch
-        when: '08.11.2021'
+        when: 'Nov 2021'
         isMajor: true
     - year: 2022
       entries:
       - order: 0
         text: First dApp PoC
-        when: '01.2022'
+        when: 'Jan 2022'
         isMajor: true
       - order: 1
         text: Desktop wallet upgrade
-        when: '04.2022'
+        when: 'Apr 2022'
         isMajor: false
       - order: 2
         text: Explorer optimization & addition of statistics
-        when: '05.2022'
+        when: 'May 2022'
         isMajor: false
       - order: 3
         text: Full node 1.4.0 with all of the major features for the Leman network upgrade implemented
-        when: '06.2022'
+        when: 'Jun 2022'
         isMajor: false
       - order: 4
         text: Beta version of contract SDK (alephium-web3)
-        when: '06.2022'
+        when: 'Jun 2022'
         isMajor: false
       - order: 5
         text: New testnet launched
-        when: '06.2022'
+        when: 'Jun 2022'
         isMajor: false
       - order: 6
         text: Leman Network Upgrade deployed on the testnet
-        when: '06.2022'
+        when: 'Jun 2022'
         isMajor: true
   - title: Ecosystem
     years:
@@ -216,37 +216,37 @@ milestonesSection:
       entries:
       - order: 2
         text: 3rd party cloud mining service at Mainnet Launch
-        when: '08.11.2021'
+        when: 'Nov 2021'
         isMajor: false
       - order: 3
         text: Joined the UTXO alliance & Bitcoin Association Switzerland
-        when: '11.2021'
+        when: 'Nov 2021'
         isMajor: false
       - order: 4
         text: 'Mining ecosystem development: miners development, reference mining pool and pool integration.'
-        when: 'Q4.2021'
+        when: 'Q4 2021'
         isMajor: false
       - order: 5
         text: First community mining pool
-        when: '13.12.2021'
+        when: 'Dec 2021'
         isMajor: false
     - year: 2022
       entries:
       - order: 0
         text: 'First exchange listing: Gate.io'
-        when: '12.01.2022'
+        when: 'Jan 2022'
         isMajor: false
       - order: 1
         text: 9 mining pools on Alephium
-        when: '02.2022'
+        when: 'Feb 2022'
         isMajor: false
       - order: 2
         text: First NFT platform to be built on Alephium
-        when: '04.2022'
+        when: 'Apr 2022'
         isMajor: false
       - order: 3
         text: Website Revamp
-        when: '06.2022'
+        when: 'Jun 2022'
         isMajor: false
 todoListSection:
   title: What's next
@@ -290,7 +290,7 @@ todoListSection:
           complete: false
 followUsSection:
   title: Follow us
-  subtitle: Join the community
+  subtitle: Contribute & Join the community
   description: Alephium's community is growing fast. Fascinated by our
     technology? Come learn and build with us!
   socialMediaLinks:
@@ -308,6 +308,8 @@ followUsSection:
       url: https://www.linkedin.com/company/alephium
     - name: Youtube
       url: https://www.youtube.com/channel/UCIX9Eww2Kch7sc0E6gCmEdg
+    - name: GitHub
+      url: https://github.com/alephium
 footer:
   columns:
     - title: Resources
