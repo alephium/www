@@ -241,7 +241,7 @@ milestonesSection:
         when: 'Feb 2022'
         isMajor: false
       - order: 2
-        text: First NFT platform to be built on Alephium
+        text: Building begins on the first NFT platform on Alephium
         when: 'Apr 2022'
         isMajor: false
       - order: 3
