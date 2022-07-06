@@ -33,7 +33,7 @@ introSection:
       description: Start building your own smart contracts, decentralized apps
         and protocols.
       link:
-        url: https://wiki.alephium.org/dapps/Language-Reference
+        url: https://wiki.alephium.org/dapps/Overview
         newTab: true
     - title: Get rewarded
       image: ../images/coins.svg
