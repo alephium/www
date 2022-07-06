@@ -27,29 +27,35 @@ import WaveEntity from './WaveEntity'
 const Waves = ({ parentRef }: { parentRef?: MutableRefObject<HTMLDivElement | null> }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const canvasContextRef = useRef<CanvasRenderingContext2D>()
+  const size = useRef({ width: 0, height: 0 })
+  const delta = useRef(0)
+  const frame = useRef(0)
+  const [, setMustResize] = useState()
 
-  const [currentParentSize, setCurrentParentSize] = useState<{ height: number; width: number }>({ height: 0, width: 0 })
-
-  let t = 0
-
+  // This is a really weird hook. Any updates to state are not reflected because the callback
+  // is not changed. I had to do some weird things with useRef and useState to get things to work
+  // as needed. I suggest we look for a better animation frame hook in the future.
   useAnimationFrame((deltaTime) => {
-    t = t + (deltaTime * 20) / 100000
+    delta.current = delta.current + deltaTime / 1000.0
+    frame.current = frame.current + 1
+
+    // 60 fps / 8 ~= 8fps
+    // Given the speed of the animation this is sufficient to look smooth
+    if (frame.current != 8) return
+    frame.current = 0
 
     const height = parentRef?.current?.offsetHeight || 0
     const width = parentRef?.current?.offsetWidth || 0
 
-    if (height !== currentParentSize.height) {
-      setCurrentParentSize((prev) => ({ ...prev, height }))
-    }
-
-    if (width !== currentParentSize.width) {
-      setCurrentParentSize((prev) => ({ ...prev, width }))
+    if (height !== size.current.height || width !== size.current.width) {
+      size.current = { width, height }
+      setMustResize({})
     }
 
     if (canvasContextRef.current) {
       canvasContextRef.current.clearRect(0, 0, width, height)
       Object.entries(waves).forEach((w) => {
-        w[1].draw(canvasContextRef.current as CanvasRenderingContext2D, width, height, t)
+        w[1].draw(canvasContextRef.current as CanvasRenderingContext2D, width, height, delta.current / 20.0)
       })
     } else {
       let ctx
@@ -60,15 +66,15 @@ const Waves = ({ parentRef }: { parentRef?: MutableRefObject<HTMLDivElement | nu
   })
 
   return (
-    <CanvasContainer style={{ height: currentParentSize.height }}>
-      <canvas id="canvas" ref={canvasRef} width={currentParentSize.width} height={currentParentSize.height} />
+    <CanvasContainer style={{ height: `${size.current.height}px` }}>
+      <canvas id="canvas" ref={canvasRef} width={size.current.width} height={size.current.height} />
     </CanvasContainer>
   )
 }
 
 const waves: [WaveEntity, WaveEntity] = [
-  new WaveEntity([0.0081, 0.028, 0.015], 1, 1, ['rgba(22, 204, 244, 0.6)', 'rgba(101, 16, 248, 0.2)']),
-  new WaveEntity([0.0022, 0.018, 0.005], 1, 1.2, ['rgba(244, 129, 22, 0.6)', 'rgba(101, 16, 248, 0.2)'])
+  new WaveEntity([0.0081, 0.028, 0.015], 1, 1, ['rgba(22, 204, 244, 0.6)', 'rgba(101, 16, 248, 0)']),
+  new WaveEntity([0.0022, 0.018, 0.005], 1, 1.2, ['rgba(244, 129, 22, 0.6)', 'rgba(101, 16, 248, 0)'])
 ]
 
 const CanvasContainer = styled.div`

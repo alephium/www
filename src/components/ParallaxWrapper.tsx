@@ -1,4 +1,4 @@
-import { motion, useTransform, useViewportScroll, MotionStyle, useDeprecatedAnimatedState } from 'framer-motion'
+import { motion, useTransform, useViewportScroll, MotionStyle } from 'framer-motion'
 import { useRef, FC, useEffect, useState } from 'react'
 import { isBrowser, isMobile } from '../utils/misc'
 
