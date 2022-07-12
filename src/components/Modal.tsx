@@ -16,7 +16,7 @@ export interface ModalProps {
   className?: string
 }
 
-let Modal: FC<ModalProps> = ({ isOpen, setIsOpen, title, children, className }) => (
+const Modal: FC<ModalProps> = ({ isOpen, setIsOpen, title, children, className }) => (
   <ReactModal
     isOpen={isOpen}
     contentLabel={`${title} modal`}
@@ -25,6 +25,7 @@ let Modal: FC<ModalProps> = ({ isOpen, setIsOpen, title, children, className }) 
     portalClassName={className}
     className="modal"
     overlayClassName="overlay"
+    closeTimeoutMS={200}
   >
     <div className="close" onClick={() => setIsOpen(false)} role="button">
       <CloseIcon />
@@ -37,22 +38,23 @@ let Modal: FC<ModalProps> = ({ isOpen, setIsOpen, title, children, className }) 
   </ReactModal>
 )
 
-Modal = styled(Modal)`
+export default styled(Modal)`
   .modal {
+    position: relative;
     background-color: ${({ theme }) => theme.bgPrimary};
     border-radius: var(--radius);
     border: 1px solid ${({ theme }) => theme.separator};
-    height: 80%;
+    max-height: 80%;
     max-width: calc(var(--page-width) * 0.7);
     padding: var(--spacing-5) var(--spacing-8);
     box-sizing: border-box;
-    position: relative;
+    margin: 0 var(--spacing-4);
+    display: flex;
 
     @media ${deviceBreakPoints.smallMobile} {
-      padding: var(--spacing-8) var(--spacing-3);
+      padding: var(--spacing-12) var(--spacing-3) var(--spacing-5);
     }
   }
-
   .overlay {
     position: fixed;
     top: 0;
@@ -63,24 +65,26 @@ Modal = styled(Modal)`
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 2;
+    z-index: 5000;
+
+    transition: opacity 200ms ease-in-out;
   }
 
   .content {
+    flex: 1;
     overflow-y: auto;
-    height: 100%;
     padding: var(--spacing-5) var(--spacing-8) var(--spacing-5) 0;
     margin: calc(var(--spacing-5) * -1) calc(var(--spacing-8) * -1) calc(var(--spacing-5) * -1) 0;
-  }
 
-  p {
-    color: ${({ theme }) => theme.textTertiary};
+    a {
+      color: ${({ theme }) => theme.linkAlt};
+    }
   }
 
   .close {
     position: absolute;
     left: 1rem;
-    padding-top: 3px;
+    padding-top: 2px;
     background-color: transparent;
 
     @media ${deviceBreakPoints.smallMobile} {
@@ -114,5 +118,3 @@ const TextSnippetStyled = styled(TextSnippet)`
     }
   }
 `
-
-export default Modal

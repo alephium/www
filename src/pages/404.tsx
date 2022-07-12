@@ -29,7 +29,7 @@ const NotFoundPage = () => {
                 <LogoWhite className="logo" />
                 <h1>404 - Page not found</h1>
                 <TextSnippetStyled bigText>
-                  Let's go back to the <Link to="/">home page</Link>.
+                  Let&apos;s go back to the <Link to="/">home page</Link>.
                 </TextSnippetStyled>
               </div>
             </HeroContentWrapper>

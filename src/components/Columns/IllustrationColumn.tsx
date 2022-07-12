@@ -7,15 +7,17 @@ interface IllustrationColumnProps {
   className?: string
 }
 
-let IllustrationColumn: FC<IllustrationColumnProps> = ({ className, children }) => (
+const IllustrationColumn: FC<IllustrationColumnProps> = ({ className, children }) => (
   <div className={className}>{children}</div>
 )
 
-IllustrationColumn = styled(IllustrationColumn)`
+export default styled(IllustrationColumn)`
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1;
+  height: 350px;
 
   img {
     width: 70%;
@@ -29,9 +31,6 @@ IllustrationColumn = styled(IllustrationColumn)`
   }
 
   @media ${deviceBreakPoints.mobile} {
-    height: 30vh;
-    align-items: initial;
+    min-height: 200px;
   }
 `
-
-export default IllustrationColumn

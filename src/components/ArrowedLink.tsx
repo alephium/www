@@ -18,7 +18,7 @@ export interface ArrowedLinkProps {
   trackingName?: string
 }
 
-let ArrowedLink: FC<ArrowedLinkProps> = ({
+const ArrowedLink: FC<ArrowedLinkProps> = ({
   className,
   children,
   IconComponent,
@@ -48,7 +48,7 @@ let ArrowedLink: FC<ArrowedLinkProps> = ({
   )
 }
 
-ArrowedLink = styled(ArrowedLink)`
+export default styled(ArrowedLink)`
   display: flex;
   align-items: center;
   font-weight: var(--fontWeight-semiBold);
@@ -76,11 +76,16 @@ ArrowedLink = styled(ArrowedLink)`
   &:hover {
     .arrow {
       ${(props) =>
-        css`
-          transform: translateX(var(--spacing-half)) ${props.newTab && 'rotate(-45deg)'};
-        `};
+        !props.emoji
+          ? css`
+              transform: translateX(var(--spacing-half)) ${props.newTab && 'rotate(-45deg)'};
+            `
+          : css`
+              transform: translateY(calc(var(--spacing-half) * -1));
+            `};
+    }
+
+    .emoji {
     }
   }
 `
-
-export default ArrowedLink

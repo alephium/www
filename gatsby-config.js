@@ -77,6 +77,7 @@ module.exports = {
           'script-src': "'self' 'unsafe-inline' https://gc.zgo.at",
           'default-src': "'none'",
           'manifest-src': "'self'",
+          'connect-src': "'self' mainnet-backend.alephium.org",
           'img-src': "'self' data: https://alephium.goatcounter.com"
         }
       }

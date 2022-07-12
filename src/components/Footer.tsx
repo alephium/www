@@ -7,7 +7,6 @@ import SimpleLink, { SimpleLinkProps } from './SimpleLink'
 import PageSectionContainer from './PageSectionContainer'
 import Columns from './Columns/Columns'
 import Column from './Columns/Column'
-import ModalAboutUs from './ModalAboutUs'
 import ModalTeam from './ModalTeam'
 import ModalContact from './ModalContact'
 import ModalPrivacyPolicy from './ModalPrivacyPolicy'
@@ -26,14 +25,12 @@ interface FooterProps {
   content: FooterContentType
 }
 
-let Footer: FC<FooterProps> = ({ className, content }) => {
-  const [isAboutUsModalOpen, setIsAboutUsModalOpen] = useState(false)
+const Footer: FC<FooterProps> = ({ className, content }) => {
   const [isTeamModalOpen, setIsTeamModalOpen] = useState(false)
   const [isContactModalOpen, setIsContactModalOpen] = useState(false)
   const [isPrivacyPolicyModalOpen, setIsPrivacyPolicyModalOpen] = useState(false)
   const columnsContent = content.columns
-  columnsContent[2].links[0] = { ...columnsContent[2].links[0], openModal: setIsAboutUsModalOpen }
-  columnsContent[2].links[1] = { ...columnsContent[2].links[1], openModal: setIsTeamModalOpen }
+  columnsContent[2].links[0] = { ...columnsContent[2].links[0], openModal: setIsTeamModalOpen }
   columnsContent[2].links[2] = { ...columnsContent[2].links[2], openModal: setIsContactModalOpen }
   columnsContent[2].links[3] = { ...columnsContent[2].links[3], openModal: setIsPrivacyPolicyModalOpen }
   return (
@@ -51,7 +48,6 @@ let Footer: FC<FooterProps> = ({ className, content }) => {
           ))}
         </FooterColumnsSection>
       </PageSectionContainerStyled>
-      <ModalAboutUs isOpen={isAboutUsModalOpen} setIsOpen={setIsAboutUsModalOpen} />
       <ModalTeam isOpen={isTeamModalOpen} setIsOpen={setIsTeamModalOpen} />
       <ModalContact isOpen={isContactModalOpen} setIsOpen={setIsContactModalOpen} />
       <ModalPrivacyPolicy isOpen={isPrivacyPolicyModalOpen} setIsOpen={setIsPrivacyPolicyModalOpen} />
@@ -102,10 +98,9 @@ const Separator = styled.div`
   }
 `
 
-Footer = styled(Footer)`
-  padding-top: var(--spacing-25);
+export default styled(Footer)`
   padding-bottom: var(--spacing-10);
-  background-color: ${({ theme }) => theme.bgPrimary};
+  background-color: ${({ theme }) => theme.bgSecondary};
   color: ${({ theme }) => theme.textPrimary};
   font-size: var(--fontSize-18);
 `
@@ -137,6 +132,8 @@ const PageSectionContainerStyled = styled(PageSectionContainer)`
   @media ${deviceBreakPoints.mobile} {
     flex-direction: column;
     gap: var(--spacing-10);
+    align-items: center;
+    text-align: center;
   }
 `
 
@@ -151,5 +148,3 @@ const LogoStyled = styled(Logo)`
     fill: var(--color-logo-black-light);
   }
 `
-
-export default Footer

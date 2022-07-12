@@ -1,7 +1,7 @@
 import { FC, useRef, useState } from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 
-import { darkTheme, lightTheme } from '../styles/themes'
+import { darkTheme } from '../styles/themes'
 import { deviceBreakPoints } from '../styles/global-style'
 
 import NavigationMenu from './NavigationMenu'
@@ -12,11 +12,17 @@ import HeroSection from './Hero/HeroSection'
 import HeroContentWrapper from './Hero/HeroContentWrapper'
 import HeroPageSectionContainer from './Hero/HeroPageSectionContainer'
 
-import LogoLight from '../images/svgs/logo-dark.svg'
-import LogoDark from '../images/svgs/logo-light.svg'
-import HeroDarkImage from '../images/hero-dark.svg'
-import HeroLightImage from '../images/hero-light.svg'
+import HeroDarkFrontImage from '../images/hero-dark-front.svg'
+import HeroDarkMiddleImage from '../images/hero-dark-middle.svg'
+import HeroDarkBackImage from '../images/hero-dark-back.svg'
+import HeroLightBackImage from '../images/hero-light-back.svg'
+import HeroLightMiddleImage from '../images/hero-light-middle.svg'
+import HeroLightFrontImage from '../images/hero-light-front.svg'
+
 import Arrow from '../images/svgs/arrow-right.svg'
+import ParallaxWrapper from './ParallaxWrapper'
+import { AnimatePresence, motion } from 'framer-motion'
+import AlephiumLogo from './AlephiumLogo'
 
 export interface PageSectionHeroContentType {
   dark: {
@@ -35,26 +41,50 @@ interface PageSectionHeroProps {
 }
 
 const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
-  const [theme, setTheme] = useState('dark')
-  const [currentSlide, setCurrentSlide] = useState(1)
+  const [slide, setSlide] = useState<number>(0)
   const innerRef = useRef<HTMLElement>(null)
-  const themeContent = theme === 'dark' ? content.dark : content.light
+  const themeContent = slide === 0 ? content.dark : content.light
 
-  const toggleTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light')
+  const toggleSlide = () => {
+    setSlide(slide === 0 ? 1 : 0)
   }
 
   const onSwipe = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light')
-    setCurrentSlide(currentSlide === 1 ? 2 : 1)
+    setSlide(slide === 0 ? 1 : 0)
   }
 
   return (
-    <ThemeProvider theme={theme === 'dark' ? darkTheme : lightTheme}>
+    <ThemeProvider theme={darkTheme}>
       <HeroSlider heroElementRef={innerRef} onSwipe={onSwipe}>
         <HeroSection className={className} ref={innerRef}>
-          <img src={HeroDarkImage} alt="Hero dark" className={`hero-image planet ${theme === 'light' && 'hidden'}`} />
-          <img src={HeroLightImage} alt="Hero light" className={`hero-image ${theme === 'dark' && 'hidden'}`} />
+          <AnimatePresence>
+            {slide === 0 ? (
+              <motion.div animate={{ opacity: 1 }} exit={{ opacity: 0 }} key={0}>
+                <ParallaxWrapper className="hero-image-container" speed={-8}>
+                  <img src={HeroDarkBackImage} alt="Hero dark back" className="hero-image" />
+                </ParallaxWrapper>
+                <ParallaxWrapper className="hero-image-container" speed={8}>
+                  <img src={HeroDarkMiddleImage} className="hero-image" alt="Hero dark front" />
+                </ParallaxWrapper>
+                <ParallaxWrapper className="hero-image-container" speed={2}>
+                  <img src={HeroDarkFrontImage} className="hero-image" alt="Hero dark front" />
+                </ParallaxWrapper>
+              </motion.div>
+            ) : (
+              <motion.div animate={{ opacity: 1 }} exit={{ opacity: 0 }} key={1}>
+                <ParallaxWrapper className="hero-image-container" speed={12}>
+                  <img src={HeroLightBackImage} alt="Hero dark back" className="hero-image" />
+                </ParallaxWrapper>
+                <ParallaxWrapper className="hero-image-container" speed={8}>
+                  <img src={HeroLightMiddleImage} className="hero-image" alt="Hero dark front" />
+                </ParallaxWrapper>
+                <ParallaxWrapper className="hero-image-container" speed={2}>
+                  <img src={HeroLightFrontImage} className="hero-image" alt="Hero dark front" />
+                </ParallaxWrapper>
+              </motion.div>
+            )}
+          </AnimatePresence>
+
           <HeroPageSectionContainer>
             <div className="navigation-menu-wrapper">
               <NavigationMenu />
@@ -62,14 +92,11 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
             <HeroContentWrapper>
               <div className="contents">
                 <>
-                  {theme === 'dark' ? <LogoDark className="logo" /> : <LogoLight className="logo" />}
+                  <StyledLogo gradientIndex={slide} />
+
                   <h1>{themeContent.title}</h1>
                   <TextSnippetStyled bigText>{themeContent.subtitle}</TextSnippetStyled>
-                  <PaginatorStyled
-                    onPageClick={toggleTheme}
-                    currentPage={currentSlide}
-                    setCurrentPage={setCurrentSlide}
-                  />
+                  <PaginatorStyled onPageClick={toggleSlide} currentPage={slide} setCurrentPage={setSlide} />
                   <a
                     href="#intro"
                     aria-label="Scroll to the intro section"
@@ -87,6 +114,15 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
   )
 }
 
+const StyledLogo = styled(AlephiumLogo)`
+  width: 6rem;
+  min-height: 5rem;
+
+  @media ${deviceBreakPoints.smallMobile} {
+    width: 3rem;
+  }
+`
+
 const TextSnippetStyled = styled(TextSnippet)`
   max-width: var(--width-564);
   color: ${({ theme }) => theme.textTertiary};
@@ -102,7 +138,6 @@ const TextSnippetStyled = styled(TextSnippet)`
 const ArrowDown = styled(Arrow)`
   width: 1.625rem;
   fill: ${({ theme }) => theme.textPrimary};
-  margin-top: var(--spacing-11);
   transform: rotate(90deg);
 
   @media ${deviceBreakPoints.smallMobile} {
@@ -112,6 +147,7 @@ const ArrowDown = styled(Arrow)`
 
 const PaginatorStyled = styled(Paginator)`
   margin-top: var(--spacing-11);
+  margin-bottom: var(--spacing-11);
 
   @media ${deviceBreakPoints.smallMobile} {
     margin-top: var(--spacing-5);

@@ -11,7 +11,7 @@ export interface SimpleLinkProps {
   trackingName?: string
 }
 
-let SimpleLink: FC<SimpleLinkProps> = ({ className, children, url, newTab, text, openModal, trackingName }) => {
+const SimpleLink: FC<SimpleLinkProps> = ({ className, children, url, newTab, text, openModal, trackingName }) => {
   const handleOnClick = (event: MouseEvent) => {
     if (openModal) {
       event.preventDefault()
@@ -19,13 +19,16 @@ let SimpleLink: FC<SimpleLinkProps> = ({ className, children, url, newTab, text,
     }
   }
 
-  return (
+  return openModal ? (
+    <span className={className} onClick={handleOnClick} data-goatcounter-click={trackingName}>
+      {children || text}
+    </span>
+  ) : (
     <a
       className={className}
       href={url}
       target={(newTab && '_blank') || undefined}
       rel={(newTab && 'noopener noreferrer') || undefined}
-      onClick={handleOnClick}
       data-goatcounter-click={trackingName}
     >
       {children || text}
@@ -33,7 +36,7 @@ let SimpleLink: FC<SimpleLinkProps> = ({ className, children, url, newTab, text,
   )
 }
 
-SimpleLink = styled(SimpleLink)`
+export default styled(SimpleLink)`
   text-decoration: none;
   color: ${({ theme, color }) => (color ? color : theme.link)};
 
@@ -46,5 +49,3 @@ SimpleLink = styled(SimpleLink)`
     cursor: pointer;
   }
 `
-
-export default SimpleLink

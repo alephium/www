@@ -96,6 +96,7 @@ const GlobalStyle = createGlobalStyle`
     --fontSize-28: 1.75rem;
     --fontSize-36: 2.25rem;
     --fontSize-50: 3.125rem;
+    --fontSize-56: 3.5rem;
     --fontSize-70: 4.375rem;
     --lineHeight-22: 1.375rem;
     --lineHeight-26: 1.625rem;
@@ -106,13 +107,15 @@ const GlobalStyle = createGlobalStyle`
     --color-grey: #f5f5f5;
     --color-grey-100: #ddd;
     --color-grey-200: #B7B7B7;
+    --color-grey-250: #979797;
     --color-grey-300: #808080;
     --color-grey-400: #6E6E6E;
     --color-grey-500: #4C4C4C;
+    --color-grey-550: #414141;
     --color-grey-600: #343434;
     --color-grey-700: #262626;
-    --color-grey-800: #1A1A1A;
-    --color-grey-900: #111;
+    --color-grey-800: #1B1B1B;
+    --color-grey-900: #0f0f0f;
     --color-black: #000;
     --color-salmon: #ff5d51;
     --color-blue: #4899ff;
@@ -125,7 +128,7 @@ const GlobalStyle = createGlobalStyle`
     --color-logo-black-light: rgb(90, 90, 90);
     --color-logo-black-dark: rgb(43, 43, 43);
 
-    --border-primary-dark: 1px solid rgb(255, 255, 255, 0.15);
+    --border-primary-dark: 1px solid rgb(255, 255, 255, 0.1);
     --border-primary-light: 1px solid rgb(0, 0, 0, 0.08);
   }
 
@@ -134,13 +137,31 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: ${({ theme }) => theme.bgPrimary};
+    background-color: ${({ theme }) => theme.bgSecondary};
     color: ${({ theme }) => theme.textPrimary};
     font-family: var(--fontFamily-sans);
+
+    &.ReactModal__Body--open {
+      overflow: hidden;
+    }
   }
 
-  main {
-    overflow: hidden;
+  // Modals
+  
+  .ReactModal__Overlay {
+    transition: opacity 500ms ease-in-out;
+    opacity: 0;
+  }
+
+  .ReactModal__Overlay {
+    transition: opacity 200ms ease-in-out;
+    background: rgba(0, 0, 0, 0.15);
+    &--after-open {
+        opacity: 1;
+    }
+    &--before-close {
+        opacity: 0;
+    }
   }
 `
 

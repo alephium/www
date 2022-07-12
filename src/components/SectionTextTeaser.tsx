@@ -15,34 +15,46 @@ interface SectionTextTeaserProps {
   cardText: string
   links: Array<ArrowedLinkProps>
   trackingName?: string
+  link?: boolean
+  tipbox?: boolean
 }
 
-let SectionTextTeaser: FC<SectionTextTeaserProps> = ({
+const SectionTextTeaser: FC<SectionTextTeaserProps> = ({
   className,
   title,
   description,
   IconComponent,
   cardText,
   links,
-  trackingName
+  trackingName,
+  link,
+  tipbox
 }) => (
   <div className={className}>
     <SubsectionTextHeader title={title} subtitle={description} />
-    <Card borderColor="var(--color-brown)" className="card">
-      <IconComponent />
-      <div>{cardText}</div>
-    </Card>
-    <Links>
-      {links.map((link) => (
-        <ArrowedLink key={link.text} {...link} trackingName={`${trackingName}:${link.text?.replaceAll(' ', '-')}-link`}>
-          {link.text}
-        </ArrowedLink>
-      ))}
-    </Links>
+    {tipbox && (
+      <Card borderColor="var(--color-brown)" className="card">
+        <IconComponent />
+        <div>{cardText}</div>
+      </Card>
+    )}
+    {link && (
+      <Links>
+        {links.map((link) => (
+          <ArrowedLink
+            key={link.text}
+            {...link}
+            trackingName={`${trackingName}:${link.text?.replaceAll(' ', '-')}-link`}
+          >
+            {link.text}
+          </ArrowedLink>
+        ))}
+      </Links>
+    )}
   </div>
 )
 
-SectionTextTeaser = styled(SectionTextTeaser)`
+export default styled(SectionTextTeaser)`
   > .card {
     display: flex;
     gap: var(--spacing-7);
@@ -71,5 +83,3 @@ const Links = styled.div`
   gap: var(--spacing-8);
   margin-top: var(--spacing-4);
 `
-
-export default SectionTextTeaser

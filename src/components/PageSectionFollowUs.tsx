@@ -12,6 +12,7 @@ import RedditIcon from '../images/svgs/brand-icon-reddit.svg'
 import YouTubeIcon from '../images/svgs/brand-icon-youtube.svg'
 import LinkedInIcon from '../images/svgs/brand-icon-linkedin.svg'
 import MediumIcon from '../images/svgs/brand-icon-medium.svg'
+import GitHubIcon from '../images/svgs/brand-icon-github.svg'
 
 export interface PageSectionFollowUsContentType {
   title: string
@@ -28,7 +29,7 @@ interface FollowUsProps {
   content: PageSectionFollowUsContentType
 }
 
-let FollowUs: FC<FollowUsProps> = ({ className, content }) => (
+const FollowUs: FC<FollowUsProps> = ({ className, content }) => (
   <section className={className}>
     <PageSectionContainer>
       <SectionTextHeader title={content.title} subtitle={content.subtitle} bigSubtitle bigText>
@@ -52,18 +53,27 @@ let FollowUs: FC<FollowUsProps> = ({ className, content }) => (
   </section>
 )
 
-FollowUs = styled(FollowUs)`
-  padding-top: var(--spacing-16);
-  padding-bottom: var(--spacing-16);
+export default styled(FollowUs)`
+  padding: var(--spacing-25) 0 var(--spacing-12) 0;
   background-color: ${({ theme }) => theme.bgSecondary};
   color: ${({ theme }) => theme.textPrimary};
+
+  * {
+    text-align: center;
+  }
+
+  .text-content {
+    display: flex;
+    justify-content: center;
+  }
 `
 
 const SocialMediaIconsList = styled.div`
   display: flex;
   gap: var(--spacing-8);
   align-items: center;
-  margin-top: var(--spacing-16);
+  justify-content: center;
+  margin-top: var(--spacing-10);
   flex-wrap: wrap;
 `
 
@@ -83,9 +93,9 @@ const getIconByName = (name: string) => {
       return LinkedInIcon
     case 'Youtube':
       return YouTubeIcon
+    case 'GitHub':
+      return GitHubIcon
     default:
       break
   }
 }
-
-export default FollowUs

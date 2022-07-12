@@ -6,6 +6,9 @@
     },
     {
       "pattern": "^https://www.metapool.tech/dashboard"
+    },
+    {
+      "pattern": "^https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md"
     }
   ]
 }

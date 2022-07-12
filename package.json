@@ -16,14 +16,20 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d public",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json}\" '!{.cache,public}/**/*'",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint . --fix --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "@alephium/sdk": "^0.0.6",
     "babel-eslint": "^10.1.0",
     "babel-plugin-styled-components": "^2.0.2",
     "babel-preset-gatsby": "^2.2.0",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "framer-motion": "^6.3.11",
     "gatsby": "^4.2.0",
     "gatsby-plugin-csp": "^1.1.3",
     "gatsby-plugin-image": "^2.2.0",
@@ -45,6 +51,7 @@
     "react-is": "^17.0.2",
     "react-medium-image-zoom": "^4.3.5",
     "react-modal": "^3.14.3",
+    "stream-browserify": "^3.0.0",
     "styled-components": "^5.3.1",
     "styled-normalize": "^8.0.7",
     "typescript": "^4.4.4"
@@ -61,6 +68,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "gh-pages": "^4.0.0",
     "prettier": "2.3.2"
   }
 }

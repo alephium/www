@@ -9,7 +9,7 @@ interface SocialMediaIconProps {
   trackingName?: string
 }
 
-let SocialMediaIcon: FC<SocialMediaIconProps> = ({ url, ImageComponent, name, className, trackingName }) => (
+const SocialMediaIcon: FC<SocialMediaIconProps> = ({ url, ImageComponent, name, className, trackingName }) => (
   <a
     href={url}
     target="_blank"
@@ -22,7 +22,7 @@ let SocialMediaIcon: FC<SocialMediaIconProps> = ({ url, ImageComponent, name, cl
   </a>
 )
 
-SocialMediaIcon = styled(SocialMediaIcon)`
+export default styled(SocialMediaIcon)`
   svg {
     width: var(--width-82);
     fill: ${({ theme }) => theme.textPrimary};
@@ -34,5 +34,3 @@ SocialMediaIcon = styled(SocialMediaIcon)`
     transform: translateY(calc(var(--spacing-half) * -1));
   }
 `
-
-export default SocialMediaIcon

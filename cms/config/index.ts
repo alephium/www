@@ -36,6 +36,51 @@ export default {
       },
       files: [
         {
+          label: 'Technology',
+          name: 'technology',
+          file: 'src/content/technology.md',
+          fields: [
+            {
+              label: 'Technology section',
+              name: 'technologySection',
+              widget: 'object',
+              required: true,
+              fields: [
+                titleFieldConfig,
+                subtitleFieldConfig,
+                {
+                  label: 'BlockFlow section',
+                  name: 'blockFlowSection',
+                  widget: 'object',
+                  required: true,
+                  fields: technologySubsectionFields
+                },
+                {
+                  label: 'PoLW section',
+                  name: 'polwSection',
+                  widget: 'object',
+                  required: true,
+                  fields: technologySubsectionFields
+                },
+                {
+                  label: 'Smart contracts section',
+                  name: 'smartContractSection',
+                  widget: 'object',
+                  required: true,
+                  fields: technologySubsectionFields
+                },
+                {
+                  label: 'VMs section',
+                  name: 'vmsSection',
+                  widget: 'object',
+                  required: true,
+                  fields: technologySubsectionFields
+                }
+              ]
+            }
+          ]
+        },
+        {
           label: 'Home page',
           name: 'home',
           file: 'src/content/homepage.md',
@@ -77,101 +122,6 @@ export default {
                   required: true,
                   fields: [
                     titleFieldConfig,
-                    descriptionFieldConfig,
-                    {
-                      label: 'Link',
-                      name: 'link',
-                      widget: 'object',
-                      required: true,
-                      fields: linkFieldsConfig
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              label: 'Technology section',
-              name: 'technologySection',
-              widget: 'object',
-              required: true,
-              fields: [
-                titleFieldConfig,
-                subtitleFieldConfig,
-                {
-                  label: 'BlockFlow section',
-                  name: 'blockFlowSection',
-                  widget: 'object',
-                  required: true,
-                  fields: technologySubsectionFields
-                },
-                {
-                  label: 'PoLW section',
-                  name: 'polwSection',
-                  widget: 'object',
-                  required: true,
-                  fields: technologySubsectionFields
-                },
-                {
-                  label: 'Smart contracts section',
-                  name: 'smartContractSection',
-                  widget: 'object',
-                  required: true,
-                  fields: technologySubsectionFields
-                },
-                {
-                  label: 'VMs section',
-                  name: 'vmsSection',
-                  widget: 'object',
-                  required: true,
-                  fields: technologySubsectionFields
-                }
-              ]
-            },
-            {
-              label: 'Usability section',
-              name: 'usabilitySection',
-              widget: 'object',
-              required: true,
-              fields: [
-                titleFieldConfig,
-                subtitleFieldConfig,
-                descriptionFieldConfig,
-                {
-                  label: 'Button',
-                  name: 'button',
-                  widget: 'object',
-                  required: true,
-                  fields: linkFieldsConfig
-                },
-                {
-                  label: 'Images',
-                  name: 'images',
-                  widget: 'list',
-                  required: true,
-                  fields: [
-                    { label: 'Image', name: 'src', widget: 'image', required: true },
-                    { label: 'Image alt text', name: 'altText', widget: 'string', required: true }
-                  ]
-                }
-              ]
-            },
-            {
-              label: 'Start now section',
-              name: 'startNowSection',
-              widget: 'object',
-              required: true,
-              fields: [
-                titleFieldConfig,
-                subtitleFieldConfig,
-                descriptionFieldConfig,
-                {
-                  label: 'Cards',
-                  name: 'cards',
-                  widget: 'list',
-                  required: true,
-                  fields: [
-                    titleFieldConfig,
-                    { label: 'Subtitle', name: 'subtitle', widget: 'text', required: false },
                     descriptionFieldConfig,
                     {
                       label: 'Link',

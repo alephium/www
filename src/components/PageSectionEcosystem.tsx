@@ -7,8 +7,8 @@ import SectionTextHeader from './SectionTextHeader'
 import PageSectionContainer from './PageSectionContainer'
 import SubsectionTextHeader from './SubsectionTextHeader'
 import SimpleLink from './SimpleLink'
-
-import IllustrationColumn from './Columns/IllustrationColumn'
+import Columns from './Columns/Columns'
+import { motion } from 'framer-motion'
 
 type SubsectionType = {
   title: string
@@ -21,7 +21,7 @@ type SubsectionType = {
   }[]
 }
 
-let PageSectionEcosystem = ({ className }: { className?: string }) => {
+const PageSectionEcosystem = ({ className }: { className?: string }) => {
   const { homepage } = useStaticQuery(query)
 
   const {
@@ -30,31 +30,32 @@ let PageSectionEcosystem = ({ className }: { className?: string }) => {
 
   return (
     <section className={className}>
+      <SectionTextHeader title={title} subtitle={subtitle} bigSubtitle bigText sticky />
       <PageSectionContainer>
-        <SectionTextHeader title={title} subtitle={subtitle} bigSubtitle bigText />
         <Subsections>
           {subsections.map(({ title, description, image, items }: SubsectionType) => (
-            <Subsection key={title}>
+            <Subsection key={title} animateEntry>
               <SubsectionImageContainer>{image && <img src={image.publicURL} alt={title} />}</SubsectionImageContainer>
               <SubsectionTextContent>
                 <SubsectionTextHeader title={title} subtitle={description} />
-                <SubsectionItems>
+                <SubsectionItems variants={containerVariants}>
                   {items &&
                     items.map(({ title, logo, url }) =>
                       url ? (
                         <SimpleLink
                           url={url}
                           text={title}
+                          key={url}
                           newTab
                           trackingName={`ecosystem-section:${title.replaceAll(' ', '-')}-link`}
                         >
-                          <SubsectionItem key={title}>
+                          <SubsectionItem key={title} variants={itemVariants}>
                             {logo ? (
                               <>
-                                <IllustrationColumn>
+                                <SubsectionItemTitle className="with-logo">{title}</SubsectionItemTitle>
+                                <SubsectionItemLogoContainer>
                                   <SubsectionItemLogo src={logo.publicURL} alt={title} />
-                                </IllustrationColumn>
-                                <SubsectionItemTitleOnHover>{title}</SubsectionItemTitleOnHover>
+                                </SubsectionItemLogoContainer>
                               </>
                             ) : (
                               <SubsectionItemTitle>{title}</SubsectionItemTitle>
@@ -77,14 +78,14 @@ let PageSectionEcosystem = ({ className }: { className?: string }) => {
   )
 }
 
-PageSectionEcosystem = styled(PageSectionEcosystem)`
-  padding-top: var(--spacing-20);
+export default styled(PageSectionEcosystem)`
+  padding-top: var(--spacing-10);
   padding-bottom: var(--spacing-20);
   position: relative;
 `
 
 const Subsections = styled.div`
-  margin-top: var(--spacing-15);
+  margin-top: var(--spacing-5);
 `
 
 const SubsectionImageContainer = styled.div`
@@ -93,6 +94,8 @@ const SubsectionImageContainer = styled.div`
   @media ${deviceBreakPoints.mobile} {
     display: flex;
     justify-content: center;
+    margin-bottom: var(--spacing-6);
+    height: 250px;
   }
 
   img {
@@ -108,12 +111,12 @@ const SubsectionTextContent = styled.div`
   }
 `
 
-const Subsection = styled.div`
+const Subsection = styled(Columns)`
   display: flex;
   align-items: center;
   gap: var(--spacing-2);
 
-  @media ${deviceBreakPoints.ipad} {
+  @media ${deviceBreakPoints.mobile} {
     flex-direction: column;
     gap: var(--spacing-4);
     align-items: stretch;
@@ -124,20 +127,24 @@ const Subsection = styled.div`
       order: 2;
       text-align: right;
 
-      @media ${deviceBreakPoints.ipad} {
+      @media ${deviceBreakPoints.mobile} {
         order: 0;
       }
     }
   }
 
   &:not(:last-child) {
-    margin-bottom: var(--spacing-14);
+    margin-bottom: var(--spacing-20);
+
+    @media ${deviceBreakPoints.mobile} {
+      margin-bottom: var(--spacing-10);
+    }
   }
 `
 
-const SubsectionItems = styled.div`
+const SubsectionItems = styled(motion.div)`
   margin-top: var(--spacing-4);
-  gap: var(--spacing-4);
+  gap: 30px;
   display: flex;
   flex-wrap: wrap;
 `
@@ -145,49 +152,76 @@ const SubsectionItems = styled.div`
 const SubsectionItemTitle = styled.div`
   font-weight: var(--fontWeight-bold);
   display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-out;
+  text-align: center;
+  padding: var(--spacing-1);
 `
 
-const SubsectionItemTitleOnHover = styled(SubsectionItemTitle)`
-  display: none;
+const SubsectionItemLogoContainer = styled.div`
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.2s ease-out;
+  transform: translateY(-5px);
+  padding: var(--spacing-2);
+  display: flex;
 `
 
-const SubsectionItemLogo = styled.img``
+const SubsectionItemLogo = styled.img`
+  flex: 1;
+  transition: all 0.2s ease-out;
+  max-width: 100%;
+  max-width: 100%;
+`
 
-const SubsectionItem = styled.div`
+const SubsectionItem = styled(motion.div)`
+  position: relative;
   width: 100px;
   height: 100px;
   display: flex;
   align-items: center;
-  background-color: ${({ theme }) => theme.bgSecondary};
-  padding: var(--spacing-2);
+  justify-content: center;
+  background-color: ${({ theme }) => theme.bgPrimary};
+  box-shadow: 0px 22px 30px rgba(0, 0, 0, 0.47);
   box-sizing: border-box;
   border-radius: 9px;
   font-size: 13px;
-  border: 1px solid ${({ theme }) => theme.bgSurface};
-
-  ${SubsectionItemTitleOnHover},
-  ${SubsectionItemTitle} {
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-
-  ${SubsectionItemLogo} {
-    max-width: 100%;
-    max-height: 100%;
-  }
+  border: ${({ theme }) => theme.borderPrimary};
 
   &:hover {
-    ${SubsectionItemLogo} {
-      display: none;
+    ${SubsectionItemTitle}.with-logo {
+      opacity: 0;
+      transform: translateY(-5px);
     }
 
-    ${SubsectionItemTitleOnHover} {
-      display: flex;
+    ${SubsectionItemLogoContainer} {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 `
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 0.5,
+      staggerChildren: 0.2,
+      delayChildren: 0.5
+    }
+  }
+}
+
+const itemVariants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 }
+}
 
 const query = graphql`
   query {
@@ -217,5 +251,3 @@ const query = graphql`
     }
   }
 `
-
-export default PageSectionEcosystem

@@ -1,13 +1,14 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 import { deviceBreakPoints } from '../../styles/global-style'
 
-const HeroSection = styled.section`
+export default styled.section`
   min-height: 100vh;
-  width: 100vw;
   overflow: hidden;
   position: relative;
-  background-color: ${({ theme }) => theme.bgPrimary};
+  ${({ theme }) => css`
+    background: linear-gradient(black 0%, black 40%, ${theme.bgSecondary}) 100%;
+  `};
   transition: all 0.4s ease-in;
   display: flex;
 
@@ -40,33 +41,23 @@ const HeroSection = styled.section`
     }
   }
 
-  .logo {
-    width: 6rem;
-    min-height: 5rem;
-
-    @media ${deviceBreakPoints.smallMobile} {
-      width: 3rem;
-    }
-  }
-
-  .hero-image {
+  .hero-image-container {
     position: absolute;
     right: 0;
+    top: 0;
+    left: 0;
     bottom: 0;
-    width: auto;
-    height: 100%;
-    transition: all 0.4s ease-in;
 
-    @media ${deviceBreakPoints.mobile} {
-      &.planet {
-        filter: brightness(0.5);
-      }
+    .hero-image {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      top: 0;
     }
 
-    &.hidden {
-      opacity: 0;
+    @media ${deviceBreakPoints.mobile} {
+      filter: brightness(0.5);
     }
   }
 `
-
-export default HeroSection

@@ -20,7 +20,7 @@ interface GridCardProps {
   trackingName?: string
 }
 
-let GridCard: FC<GridCardProps> = ({
+const GridCard: FC<GridCardProps> = ({
   className,
   children,
   title,
@@ -57,7 +57,7 @@ let GridCard: FC<GridCardProps> = ({
   )
 }
 
-GridCard = styled(GridCard)`
+export default styled(GridCard)`
   position: relative;
   overflow: hidden;
   border: var(--border-primary-light);
@@ -117,8 +117,6 @@ const TextSnippetStyled = styled(TextSnippet)`
   p {
     font-size: var(--fontSize-14);
     margin-bottom: var(--spacing-5);
-    color: ${({ theme }) => theme.textTertiary};
+    color: ${({ theme }) => theme.textSecondary};
   }
 `
-
-export default GridCard

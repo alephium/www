@@ -1,31 +1,35 @@
-import { FC, useState } from 'react'
-import styled, { ThemeProvider } from 'styled-components'
+import { ComponentProps, FC, useState } from 'react'
+import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../styles/global-style'
-import { lightTheme } from '../styles/themes'
 
 import PageSectionContainer from './PageSectionContainer'
 import SectionTextHeader from './SectionTextHeader'
 import Columns from './Columns/Columns'
 import Column from './Columns/Column'
 import SectionTextTeaser from './SectionTextTeaser'
-import SubsectionTextHeader from './SubsectionTextHeader'
-import NumbersInfo from './NumbersInfo'
 import ModalBlockFlow from './ModalBlockFlow'
 import ModalPoLW from './ModalPoLW'
 import ModalSmartContract from './ModalSmartContract'
 import ModalVms from './ModalVms'
 import { ArrowedLinkProps } from './ArrowedLink'
 
-import BGGradientSrc from '../images/top-gradient.svg'
-import BlockflowImageSrc from '../images/blockflow.svg'
-import PoLWImageSrc from '../images/polw-background.svg'
-import SmartContractImageSrc from '../images/smart-contract.svg'
-import VmsImageSrc from '../images/vms.svg'
+import BGGradientSrc from '../images/top-gradient.png'
+import BlockflowFrontImageSrc from '../images/blockflow-front.svg'
+import BlockflowBackImageSrc from '../images/blockflow-back.svg'
+import PoLWFrontImageSrc from '../images/polw-front.svg'
+import PoLWBackImageSrc from '../images/polw-back.svg'
+import SmartContractFrontImageSrc from '../images/smart-contract-front.svg'
+import SmartContractBackImageSrc from '../images/smart-contract-back.svg'
+import VmsImageFrontSrc from '../images/vms-front.svg'
+import VmsImageBackSrc from '../images/vms-back.svg'
 import StackImage from '../images/svgs/stack.svg'
 import LeafImage from '../images/svgs/leaf.svg'
 import VmDotsImage from '../images/svgs/vm-dots.svg'
 import IllustrationColumn from './Columns/IllustrationColumn'
+import { motion, useTransform, useViewportScroll } from 'framer-motion'
+import { useRefScrollProgress } from '../hooks/useRefScrollProgress'
+import ParallaxWrapper from './ParallaxWrapper'
 
 export interface PageSectionTechnologyContentType {
   title: string
@@ -34,14 +38,6 @@ export interface PageSectionTechnologyContentType {
   polwSection: PageSectionTechnologySubsectionProps
   smartContractSection: PageSectionTechnologySubsectionProps
   vmsSection: PageSectionTechnologySubsectionProps
-  numbersSection: {
-    title: string
-    subtitle: string
-    columns: {
-      number: string
-      description: string
-    }[]
-  }
 }
 
 interface PageSectionTechnologySubsectionProps {
@@ -54,9 +50,10 @@ interface PageSectionTechnologySubsectionProps {
 interface PageSectionTechnologyProps {
   className?: string
   content: PageSectionTechnologyContentType
+  minimal?: boolean
 }
 
-let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, content }) => {
+const PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, content, minimal }) => {
   const [isBlockFlowModalOpen, setIsBlockFlowModalOpen] = useState(false)
   const [isPoLWModalOpen, setIsPoLWModalOpen] = useState(false)
   const [isSmartContractModalOpen, setIsSmartContractModalOpen] = useState(false)
@@ -66,7 +63,14 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
   const smartContractSectionContent = content.smartContractSection
   const polwSectionContent = content.polwSection
   const vmsSectionContent = content.vmsSection
-  const numbersSectionContent = content.numbersSection
+
+  const { scrollYProgress } = useViewportScroll()
+
+  const [gradientRef, start, end] = useRefScrollProgress()
+
+  const gradientYScale = useTransform(scrollYProgress, [start + start * 0.5, end - end * 0.1], [0, 4])
+  const gradientYWidth = useTransform(scrollYProgress, [start + start * 0.5, end - end * 0.1], ['0%', '100%'])
+
   blockFlowSectionContent.links[0] = { ...blockFlowSectionContent.links[0], openModal: setIsBlockFlowModalOpen }
   polwSectionContent.links[0] = { ...polwSectionContent.links[0], openModal: setIsPoLWModalOpen }
   smartContractSectionContent.links[0] = {
@@ -75,97 +79,112 @@ let PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, conten
   }
   vmsSectionContent.links[0] = { ...vmsSectionContent.links[0], openModal: setIsVmsModalOpen }
 
-  const columnsProps = {
-    gap: '4.5rem'
+  const columnsProps: Omit<ComponentProps<typeof Columns>, 'children'> = {
+    gap: '4.5rem',
+    animateEntry: true
   }
 
   return (
-    <SectionContainer className={className}>
-      <TopGradient />
-      <SectionTextHeaderStyled title={content.title} subtitle={content.subtitle} centered bigSubtitle />
-      <section>
-        <PageSectionContainerStyled>
+    <SectionContainer className={className} ref={gradientRef}>
+      <GradientContainer>
+        <TopGradient style={{ scaleY: gradientYScale, width: gradientYWidth, transformOrigin: 'top' }} />
+      </GradientContainer>
+      <SectionTextHeaderStyled title={content.title} subtitle={content.subtitle} centered bigSubtitle sticky />
+      <TechSection>
+        <PageSectionContainer>
           <Columns {...columnsProps}>
             <IllustrationColumn>
-              <BlockflowImage src={BlockflowImageSrc} alt="Blockflow" />
+              <ParallaxImage src={BlockflowBackImageSrc} speed={5} shouldRotate targetedRotation={10} />
+              <ParallaxImage src={BlockflowFrontImageSrc} speed={3} shouldRotate targetedRotation={10} />
             </IllustrationColumn>
-            <Column>
+            <Column vertialCenter>
               <SectionTextTeaser
                 {...blockFlowSectionContent}
                 IconComponent={StackImage}
                 trackingName="technology-section:blockflow"
+                link
+                tipbox={!minimal}
               />
             </Column>
           </Columns>
-        </PageSectionContainerStyled>
-      </section>
-      <ProofOfLessWorkSubsection>
-        <IllustrationColumn>
-          <PolwBackgroundImage src={PoLWImageSrc} alt="Proof of Less Work" />
-        </IllustrationColumn>
+        </PageSectionContainer>
+      </TechSection>
+      <TechSection>
         <PageSectionContainer>
-          <Columns {...columnsProps}>
-            <Column>
+          <Columns {...columnsProps} reverse>
+            <Column vertialCenter>
               <SectionTextTeaser
                 {...polwSectionContent}
                 IconComponent={LeafImage}
                 trackingName="technology-section:polw"
+                link
+                tipbox={!minimal}
               />
             </Column>
-            <Column />
+            <IllustrationColumn>
+              <ParallaxImage src={PoLWBackImageSrc} speed={0} />
+              <ParallaxImage
+                src={PoLWFrontImageSrc}
+                speed={5}
+                shouldZoom
+                targetedScale={2}
+                shouldChangeOpacity
+                targetedOpacity={-0.2}
+              />
+              <ParallaxImage
+                src={PoLWFrontImageSrc}
+                speed={-5}
+                shouldZoom
+                targetedScale={2}
+                shouldChangeOpacity
+                targetedOpacity={-0.2}
+              />
+            </IllustrationColumn>
           </Columns>
         </PageSectionContainer>
-      </ProofOfLessWorkSubsection>
-      <SmartContractSubsection>
+      </TechSection>
+      <TechSection>
         <PageSectionContainer>
           <Columns {...columnsProps}>
             <IllustrationColumn>
-              <SmartContractImage src={SmartContractImageSrc} alt="Smart contract" />
+              <ParallaxImage src={SmartContractBackImageSrc} speed={-9} style={{ x: -50, opacity: 0.2 }} />
+              <ParallaxImage src={SmartContractBackImageSrc} speed={-7} style={{ x: -40, opacity: 0.4 }} />
+              <ParallaxImage src={SmartContractBackImageSrc} speed={-5} style={{ x: -30, opacity: 0.6 }} />
+              <ParallaxImage src={SmartContractBackImageSrc} speed={-3} style={{ x: -20, opacity: 0.8 }} />
+              <ParallaxImage src={SmartContractBackImageSrc} speed={-1} style={{ x: -10, opacity: 1 }} />
+              <ParallaxImage src={SmartContractFrontImageSrc} speed={-1} />
             </IllustrationColumn>
-            <Column>
+            <Column vertialCenter>
               <SectionTextTeaser
                 {...smartContractSectionContent}
                 IconComponent={StackImage}
                 trackingName="technology-section:smart-contract"
+                link
+                tipbox={!minimal}
               />
             </Column>
           </Columns>
         </PageSectionContainer>
-      </SmartContractSubsection>
-      <VmsSubsection>
+      </TechSection>
+      <TechSection>
         <PageSectionContainer>
           <Columns {...columnsProps} reverse>
-            <Column>
+            <Column vertialCenter>
               <SectionTextTeaser
                 {...vmsSectionContent}
                 IconComponent={VmDotsImage}
                 trackingName="technology-section:vm"
+                link
+                tipbox={!minimal}
               />
             </Column>
             <IllustrationColumn>
-              <VmsImage src={VmsImageSrc} alt="VMs" />
+              <ParallaxImage src={VmsImageBackSrc} speed={-5} />
+              <ParallaxImage src={VmsImageFrontSrc} speed={2} />
             </IllustrationColumn>
           </Columns>
         </PageSectionContainer>
-      </VmsSubsection>
-      <ThemeProvider theme={lightTheme}>
-        <NumbersSection>
-          <NumbersPageSectionContainer>
-            <SubsectionTextHeaderStyled
-              title={numbersSectionContent.title}
-              subtitle={numbersSectionContent.subtitle}
-              condensed
-            />
-            <Columns>
-              {numbersSectionContent.columns.map((columnContent) => (
-                <NumbersColumn key={columnContent.number}>
-                  <NumbersInfo {...columnContent} />
-                </NumbersColumn>
-              ))}
-            </Columns>
-          </NumbersPageSectionContainer>
-        </NumbersSection>
-      </ThemeProvider>
+      </TechSection>
       <ModalBlockFlow isOpen={isBlockFlowModalOpen} setIsOpen={setIsBlockFlowModalOpen} />
       <ModalPoLW isOpen={isPoLWModalOpen} setIsOpen={setIsPoLWModalOpen} />
       <ModalSmartContract isOpen={isSmartContractModalOpen} setIsOpen={setIsSmartContractModalOpen} />
@@ -178,81 +197,45 @@ const SectionContainer = styled.section`
   position: relative;
 `
 
-const NumbersPageSectionContainer = styled(PageSectionContainer)`
-  max-width: var(--page-width-shrinked);
-`
-
-const NumbersColumn = styled(Column)`
-  display: flex;
-  align-items: center;
-
-  > div {
-    align-self: flex-start;
-  }
-
-  &:not(:first-child) {
-    > div {
-      padding-left: var(--spacing-9);
-
-      @media ${deviceBreakPoints.mobile} {
-        padding-left: 0;
-        padding-top: var(--spacing-9);
-      }
-    }
-
-    &:before {
-      content: '';
-      display: block;
-      width: 2px;
-      height: var(--spacing-9);
-      background-color: ${({ theme }) => theme.separator};
-      flex-shrink: 0;
-
-      @media ${deviceBreakPoints.mobile} {
-        display: none;
-      }
-    }
-  }
-
-  &:not(:last-child) {
-    > div {
-      padding-right: var(--spacing-9);
-
-      @media ${deviceBreakPoints.mobile} {
-        padding-right: 0;
-      }
-    }
-  }
-`
-
-const TopGradient = styled.div`
-  position: absolute;
+const GradientContainer = styled.div`
+  position: sticky;
   top: 0;
   right: 0;
   left: 0;
-  height: 5%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 4000;
+  pointer-events: none;
+`
+
+const TopGradient = styled(motion.div)`
+  height: 200px;
   background-image: url(${BGGradientSrc});
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
   background-position-y: top;
-  border-top: var(--border-primary-dark);
+  z-index: 3000;
+  pointer-events: none;
+  opacity: 0.6;
 `
 
-const SubsectionTextHeaderStyled = styled(SubsectionTextHeader)`
-  margin-bottom: var(--spacing-10);
-`
-
-const BlockflowImage = styled.img`
-  width: 70%;
-
-  @media ${deviceBreakPoints.mobile} {
-    width: 50%;
-  }
+const ParallaxImage = styled(ParallaxWrapper)<{ src: string }>`
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: url(${({ src }) => src});
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 `
 
 const SectionTextHeaderStyled = styled(SectionTextHeader)`
   margin-bottom: var(--spacing-20);
+  overflow: hidden;
 
   @media ${deviceBreakPoints.mobile} {
     max-width: var(--page-width);
@@ -261,84 +244,17 @@ const SectionTextHeaderStyled = styled(SectionTextHeader)`
   }
 `
 
-const PageSectionContainerStyled = styled(PageSectionContainer)`
-  padding-bottom: var(--spacing-20);
-
-  @media ${deviceBreakPoints.mobile} {
-    padding-bottom: var(--spacing-10);
-  }
-`
-
-const PolwBackgroundImage = styled.img`
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  max-width: var(--width-584);
-  height: auto;
-
-  @media ${deviceBreakPoints.mobile} {
-    position: relative;
-    transform: rotate(90deg) scaleY(-1) translateX(-20%);
-    width: 30%;
-  }
-`
-
-const SmartContractImage = styled.img`
-  width: 70%;
-
-  @media ${deviceBreakPoints.mobile} {
-    width: 50%;
-  }
-`
-
-const VmsImage = styled.img`
-  width: 70%;
-
-  @media ${deviceBreakPoints.mobile} {
-    width: 50%;
-  }
-`
-
-const ProofOfLessWorkSubsection = styled.section`
-  background-color: ${({ theme }) => theme.bgPrimary};
-  padding: var(--spacing-20) 0;
+const TechSection = styled.div`
+  background-color: ${({ theme }) => theme.bgSecondary};
+  padding: var(--spacing-8) 0;
   position: relative;
   overflow: hidden;
-
-  @media ${deviceBreakPoints.mobile} {
-    padding: var(--spacing-5) 0 var(--spacing-5);
-  }
-`
-
-const VmsSubsection = styled.section`
-  background-color: ${({ theme }) => theme.bgPrimary};
-  padding: var(--spacing-20) 0;
-  position: relative;
-
-  @media ${deviceBreakPoints.mobile} {
-    padding: var(--spacing-5) 0 var(--spacing-12);
-  }
-`
-
-const SmartContractSubsection = styled.section`
-  background-color: ${({ theme }) => theme.bgPrimary};
-  padding: var(--spacing-20) 0;
-  position: relative;
 
   @media ${deviceBreakPoints.mobile} {
     padding: var(--spacing-5) 0 var(--spacing-14);
   }
 `
 
-const NumbersSection = styled.section`
-  border-bottom: var(--border-primary-light);
-  background-color: ${({ theme }) => theme.bgPrimary};
-  padding: var(--spacing-11) 0;
+export default styled(PageSectionTechnology)`
+  background-color: ${({ theme }) => theme.bgSecondary};
 `
-
-PageSectionTechnology = styled(PageSectionTechnology)`
-  background-color: ${({ theme }) => theme.bgPrimary};
-  padding-top: var(--spacing-16);
-`
-
-export default PageSectionTechnology

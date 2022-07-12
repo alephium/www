@@ -1,7 +1,6 @@
+import { motion } from 'framer-motion'
 import { FC } from 'react'
 import styled from 'styled-components'
-
-import DotImage from '../images/svgs/dot.svg'
 
 interface PaginatorProps {
   numberOfPages?: number
@@ -11,7 +10,7 @@ interface PaginatorProps {
   className?: string
 }
 
-let Paginator: FC<PaginatorProps> = ({ numberOfPages = 2, currentPage, setCurrentPage, onPageClick, className }) => {
+const Paginator: FC<PaginatorProps> = ({ numberOfPages = 2, currentPage, setCurrentPage, onPageClick, className }) => {
   const handleOnClick = (page: number) => {
     setCurrentPage(page)
     onPageClick(page)
@@ -19,18 +18,16 @@ let Paginator: FC<PaginatorProps> = ({ numberOfPages = 2, currentPage, setCurren
 
   return (
     <div className={className}>
-      {Array.from({ length: numberOfPages }).map((_, index) =>
-        currentPage - 1 === index ? (
-          <DotImage key={`page-${index}`} />
-        ) : (
-          <DotImageEmpty key={`page-${index}`} onClick={() => handleOnClick(index + 1)} />
-        )
-      )}
+      {Array.from({ length: numberOfPages }).map((_, index) => (
+        <DotContainer key={`page-${index}`} onClick={() => handleOnClick(index)}>
+          {currentPage === index && <Dot layoutId="dot" style={{ scale: 1.2 }} />}
+        </DotContainer>
+      ))}
     </div>
   )
 }
 
-Paginator = styled(Paginator)`
+export default styled(Paginator)`
   display: flex;
   gap: var(--spacing-2);
 
@@ -44,9 +41,17 @@ Paginator = styled(Paginator)`
   }
 `
 
-const DotImageEmpty = styled(DotImage)`
-  fill-rule: evenodd;
-  clip-rule: evenodd;
+const DotContainer = styled.div`
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  border: 3px solid white;
+  cursor: pointer;
 `
 
-export default Paginator
+const Dot = styled(motion.div)`
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  background-color: white;
+`

@@ -12,118 +12,86 @@ headerSection:
       scalability, and security encountered by decentralized applications today.
 introSection:
   title: Start
-  subtitle: Engage with us.
+  subtitle: Begin your Alephium journey
   cards:
-    - title: Mine
-      description: Start mining to contribute to the network security and receive ALPH 
-        rewards.
+    - title: Download the wallet
+      image: ../images/wallet.svg
+      description: Securely store and transfer your ALPH. Connect to dApps and
+        start leveraging the Alephium ecosystem.
       link:
-        text: Documentation
+        url: https://github.com/alephium/desktop-wallet/releases/latest/
+        newTab: true
+    - title: Start Mining
+      image: ../images/mining.svg
+      description: Start mining to contribute to the network security and
+        receive ALPH rewards.
+      link:
         url: https://wiki.alephium.org/mining/Solo-Mining-Guide
         newTab: true
-    - title: Contribute
-      description: Start testing and report issues or contribute to the Alephium codebase.
+    - title: Build your own
+      image: ../images/code.svg
+      description: Start building your own smart contracts, decentralized apps
+        and protocols.
       link:
-        text: Codebase
-        url: https://github.com/alephium/
+        url: https://wiki.alephium.org/dapps/Overview
         newTab: true
-    - title: Build
-      description: Start building your own smart contracts, decentralized apps and
-        protocols.
+    - title: Get rewarded
+      image: ../images/coins.svg
+      description: Apply for a grant to develop your own project on Alephium.
+        Receive rewards for contributing to any initiatives bringing value to the project.
       link:
-        text: Guide
-        url: https://wiki.alephium.org/dapps/Technical-Guide-With-A-Fullnode
+        url: https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md
         newTab: true
 technologySection:
   title: Technology
   subtitle: What makes Alephium different?
   blockFlowSection:
-    title: "Blockflow: sharding on BTC's proven foundations"
-    description: Alephium is built on the BlockFlow algorithm which delivers
-      efficient and practical UTXO sharding. Inspired by distributed computing
-      models, it combines DAG (Directed Acyclic Graph) and sharding. Being much
-      more lightweight than other sharding methods, BlockFlow also natively
-      supports single-step cross shard transactions, making the Alephium UX as
-      smooth as any single chain platform.
-    cardText: BlockFlow combines DAG and sharding to enable an efficient, secure and
-      verifiable consensus algorithm.
+    title: "Scalable & Sharded"
+    description: Alephium is built on a novel and complete sharding algorithm called
+      BlockFlow. It improves on the UTXO model of BTC to make it scalable, and
+      uses DAG data structure to reach consensus between different shards. This
+      will allow up to 10’000 Transactions Per Second (currently more than
+      400 TPS vs Bitcoins 7 TPS).
     links:
       - text: More details
       - text: White paper
         url: https://github.com/alephium/white-paper/blob/master/alephium.pdf
         newTab: true
-  polwSection:
-    title: Proof of Less Work (PoLW)
-    description: PoLW uses a clever combination of physical work and token economics
-      to dynamically adjust the work required to mine new blocks, ensuring a
-      reduced energy footprint compared to classic Nakamoto PoW mining.
-    cardText: Blockchain's success ultimately depends on its sustainability.
-    links:
-      - text: More details
-        url:
-        newTab: false
-      - text: PoLW white paper
-        url: https://github.com/alephium/white-paper/blob/master/polw.pdf
-        newTab: true
   smartContractSection:
-    title: Smart contract design
-    description: Alephium's smart contracts have been designed and implemented to be
-      scalable, functional, practical with a focus on security and reduced state
-      usage. Its stateful UTXO model combines the advantages of the UTXO model
-      and the account model.
-    cardText: A new programming paradigm for smart contracts and dApps.
+    title: Programmable & Secure
+    description: Alephium introduces the stateful UTXO model offering layer-1
+      scalability and the same level of programmability as the account model
+      used on ETH, whilst being more secure.
     links:
       - text: More details
-        url:
-        newTab: false
       - text: Guide
         url: https://wiki.alephium.org/dapps/Technical-Guide-With-A-Fullnode
         newTab: true
-  vmsSection:
-    title: Novel VM
-    description: Alephium uses a simple, safe and flexible virtual machine 
-      designed for dApps, and more specifically DeFi. Its dedicated VM leverages 
-      and improves on the UTXO model to address DeFi’s security issues and execution 
-      bottleneck. Our VM focuses on contract security and IO performance. The key 
-      features are its first-class token system, multiple-caller contract and 
-      fine-grained execution model. 
-    cardText: VMs can be a big bottleneck when it comes to Blockchain performances.
-      Not on Alephium.
+  polwSection:
+    title: Efficiency in Energy Consumption
+    description: Alephium employs "Proof of Less Work", which combines physical work
+      and coin economics to dynamically adjust the work required to mine new
+      blocks. Given the same network conditions, Alephium uses ~90% less energy
+      compared to Bitcoin.
     links:
       - text: More details
-        url:
-        newTab: false
-  numbersSection:
-    title: Some numbers
-    subtitle: We're passionate and committed to outstanding quality in everything we
-      do. We took the necessary time to transform theory into actual technologies.
-    columns:
-      - number: '16'
-        description: shards running on mainnet.
-      - number: 100MB
-        description: RAM needed for a Raspberry-Pi based full node.
-      - number: '>3 years'
-        description: of Research & Development.
-usabilitySection:
-  title: Usability
-  subtitle: Designed for humans
-  description: Our wallet is only the first step. The intricate and innovative
-    parts of technology should be at reach, without becoming an obstacle to
-    accessibility and usability. Alephium aims at placing the user at the
-    center, regardless of their skills.
-  button:
-    text: Get the wallet
-    url: https://github.com/alephium/desktop-wallet/releases/latest
-    newTab: true
-  images:
-    - src: ../images/wallet-welcome.png
-      altText: Wallet welcome screen
-    - src: ../images/wallet-seed.png
-      altText: Wallet seed phrase screen
-    - src: ../images/wallet-security.png
-      altText: Wallet security check screen
-    - src: ../images/wallet-ready.png
-      altText: Wallet everything is ready screen
+      - text: PoLW white paper
+        url: https://github.com/alephium/white-paper/blob/master/polw.pdf
+        newTab: true
+  vmsSection:
+    title: Its own Virtual Machine & Programming Language.
+    description: The Alphred Virtual Machine solves many of the critical issues of the
+      current dApps platforms with huge improvements on security, development
+      experience and introduces new paradigms such as trustless P2P smart
+      contracts transactions. Alephium’s programming language, Ralph, has a
+      syntax inspired by the Rust programming language. It allows for building
+      efficient and secure smart contracts easily. It's specifically designed to
+      facilitate the creation of DeFi dApps!
+    links:
+      - text: More details
+numbersSection:
+  title: Some numbers
+  subtitle: "We're passionate in our work and committed to outstanding quality and measurable results. Here are some of our numbers."
 ecosystemSection:
   title: Ecosystem
   subtitle: Growing fast
@@ -152,9 +120,10 @@ ecosystemSection:
           logo: '../images/logos/white-paper-capital-icon.svg'
           url: https://www.whitepapercapital.com/
         - title: 'Archery Fund'
+          logo: '../images/logos/archery-fund.png'
           url: https://archery.fund/
         - title: '80+ Private Individuals'
-    - title: Miners, dApps & Community Projects
+    - title: Community projects
       description: "Building on top, around or below what we do, securing the network or providing services, they are the life & blood of Alephium & the reasons we grind everyday!"
       image: ../images/sprout.svg
       items:
@@ -173,62 +142,155 @@ ecosystemSection:
         - title: 'EnigmaPool'
           logo: ''
           url: https://enigmapool.com/
-    - title: Exchanges
-      description: "Exchanges are vital to our users, miners and backers. Find our trading pairs there!"
-      image: ../images/exchange.svg
+milestonesSection:
+  title: Completed milestones
+  subtitle: Building everyday
+  timelines:
+  - title: Core platform
+    years:
+    - year: 2019
+      entries:
+      - order: 0
+        text: Whitepapers publicly released
+        when: 'Feb 2019'
+        isMajor: false
+    - year: 2020
+      entries:
+      - order: 0
+        text: Alpha version of the core sharding protocol implemented and tested on AWS 
+        when: 'Q1 2020'
+        isMajor: false
+      - order: 1
+        text: Testnet launch
+        when: 'Dec 2020'
+        isMajor: true
+    - year: 2021
+      entries:
+      - order: 0
+        text: Smart contract support
+        when: 'Q1 2021'
+        isMajor: false
+      - order: 1
+        text: Desktop wallet & explorer public release
+        when: 'Sep 2021'
+        isMajor: false
+      - order: 2
+        text: Mainnet launch
+        when: 'Nov 2021'
+        isMajor: true
+    - year: 2022
+      entries:
+      - order: 0
+        text: First dApp PoC
+        when: 'Jan 2022'
+        isMajor: true
+      - order: 1
+        text: Desktop wallet upgrade
+        when: 'Apr 2022'
+        isMajor: false
+      - order: 2
+        text: Explorer optimization & addition of statistics
+        when: 'May 2022'
+        isMajor: false
+      - order: 3
+        text: Full node 1.4.0 with all of the major features for the Leman network upgrade implemented
+        when: 'Jun 2022'
+        isMajor: false
+      - order: 4
+        text: Beta version of contract SDK (alephium-web3)
+        when: 'Jun 2022'
+        isMajor: false
+      - order: 5
+        text: New testnet launched
+        when: 'Jun 2022'
+        isMajor: false
+      - order: 6
+        text: Leman Network Upgrade deployed on the testnet
+        when: 'Jun 2022'
+        isMajor: true
+  - title: Ecosystem
+    years:
+    - year: 2019
+    - year: 2020
+    - year: 2021
+      entries:
+      - order: 2
+        text: 3rd party cloud mining service at Mainnet Launch
+        when: 'Nov 2021'
+        isMajor: false
+      - order: 3
+        text: Joined the UTXO alliance & Bitcoin Association Switzerland
+        when: 'Nov 2021'
+        isMajor: false
+      - order: 4
+        text: 'Mining ecosystem development: miners development, reference mining pool and pool integration.'
+        when: 'Q4 2021'
+        isMajor: false
+      - order: 5
+        text: First community mining pool
+        when: 'Dec 2021'
+        isMajor: false
+    - year: 2022
+      entries:
+      - order: 0
+        text: 'First exchange listing: Gate.io'
+        when: 'Jan 2022'
+        isMajor: false
+      - order: 1
+        text: 9 mining pools on Alephium
+        when: 'Feb 2022'
+        isMajor: false
+      - order: 2
+        text: Building begins on the first NFT platform on Alephium
+        when: 'Apr 2022'
+        isMajor: false
+      - order: 3
+        text: Website Revamp
+        when: 'Jun 2022'
+        isMajor: false
+todoListSection:
+  title: What's next
+  subtitle: Building an exciting future
+  lists:
+    - title: Core platform
       items:
-        - title: 'Gate.io'
-          logo: '../images/logos/gate-io.svg'
-          url: https://www.gate.io/trade/ALPH_USDT
-startNowSection:
-  title: Start now
-  subtitle: Build and contribute
-  description: Alephium is already live. You can start building, earning, and
-    contributing right now.
-  cards:
-    - title: Start mining
-      subtitle: Earn ALPH tokens
-      description: Mining is crucial to secure and verify transactions on the Alephium
-        blockchain. Contribute to the growth and security of our network and
-        receive ALPH block rewards. Currently, we support CPU and GPU mining and
-        will soon offer FPGA mining support
-      link:
-        url: https://wiki.alephium.org/mining/Solo-Mining-Guide
-        text: Instructions
-        newTab: true
-    - title: Build your own
-      subtitle: ''
-      description: Start building your own smart contracts, decentralized apps and 
-        protocols. Alephium is made to build powerful, secure, and scalable dApps. 
-        Its stateful UTXO model combines the advantages of both the UTXO model and 
-        account model. 
-      link:
-        url: https://github.com/alephium/
-        text: Codebase
-        newTab: true
-    - title: Work @ Alephium
-      subtitle: ''
-      description: Our team & community members are our biggest assets. With them, 
-        with you, we plan to make Alephium the preferred blockchain for powerful, 
-        accessible and secure dApps & web 3.0. If you think you're uniquely suited to 
-        support Alephium, we want to hear from you. We're based in beautiful 
-        Switzerland, but you can contribute from anywhere in the world.
-      link:
-        url: https://pandasoftware.bamboohr.com/jobs/
-        text: Job openings
-        newTab: true
-    - title: Contribute to the code
-      subtitle: Alephium is open source!
-      description: Start testing and report issues or contribute to the Alephium
-        codebase. We would love to see your contribution integrated into the
-        Alephium codebase!
-      link:
-        url: https://github.com/alephium/
-        text: To the codebase
-        newTab: true
+        - text: Improve the robustness, efficiency and dev-experience of the full node
+          complete: false
+        - text: Improve documentation of the core infrastructure
+          complete: false
+        - text: Improve the Alephium SDK with more features
+          complete: false
+        - text: Improve the robustness and efficiency of the explorer backend
+          complete: false
+        - text: Leman Network Upgrade for cross-chain interoperability
+          complete: false
+        - text: Bridge development, testing, and launch
+          complete: false
+        - text: DEX development, testing, and launch
+          complete: false
+        - text: dApp support in the desktop wallet
+          complete: false
+        - text: Hardware wallet integration
+          complete: false
+        - text: Mobile wallet
+          complete: false
+    - title: Ecosystem
+      items:
+        - text: Key industry events (PBWS, EthCC, and others)
+          complete: false
+        - text: Community engagement & marketing (hackathon, AMAs, competitions...)
+          complete: false
+        - text: DEX listing (after the deployment of the bridge)
+          complete: false
+        - text: Additional CEX listing
+          complete: false
+        - text: 3rd party dApps (NFT, DEX, stablecoin) on Alephium
+          complete: false
+        - text: Grant Program V2
+          complete: false
 followUsSection:
   title: Follow us
-  subtitle: Join the community
+  subtitle: Contribute & Join the community
   description: Alephium's community is growing fast. Fascinated by our
     technology? Come learn and build with us!
   socialMediaLinks:
@@ -246,29 +308,28 @@ followUsSection:
       url: https://www.linkedin.com/company/alephium
     - name: Youtube
       url: https://www.youtube.com/channel/UCIX9Eww2Kch7sc0E6gCmEdg
+    - name: GitHub
+      url: https://github.com/alephium
 footer:
   columns:
     - title: Resources
       links:
-        - text: Tokenomics
-          url: https://medium.com/@alephium/tokenomics-of-alephium-61d59b51029c
-          newTab: true
-        - text: Documentation
+        - text: Wiki
           url: https://wiki.alephium.org/
           newTab: true
-        - text: BlockFlow white paper
-          url: https://github.com/alephium/white-paper/blob/master/alephium.pdf
+        - text: Blog
+          url: https://medium.com/@alephium
           newTab: true
-        - text: PoLW white paper
-          url: https://github.com/alephium/white-paper/blob/master/polw.pdf
+        - text: White papers
+          url: https://github.com/alephium/white-paper
           newTab: true
         - text: FAQ
           url: https://wiki.alephium.org/frequently-asked-questions
           newTab: true
-    - title: Open source
+    - title: Explore
       links:
-        - text: Alephium
-          url: https://github.com/alephium/alephium
+        - text: Codebase
+          url: http://github.com/alephium
           newTab: true
         - text: Explorer
           url: https://github.com/alephium/explorer
@@ -276,14 +337,17 @@ footer:
         - text: Wallet
           url: https://github.com/alephium/desktop-wallet
           newTab: true
-    - title: Project
+        - text: Reward & grant program
+          url: https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md
+          newTab: true
+    - title: About
       links:
-        - text: About us
-          url:
-          newTab: false
         - text: Team
           url:
           newTab: false
+        - text: Careers
+          url: https://alephium.bamboohr.com/jobs/
+          newTab: true
         - text: Contact
           url:
           newTab: false

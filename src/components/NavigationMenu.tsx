@@ -12,11 +12,11 @@ interface NavigationMenuProps {
   className?: string
 }
 
-let NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
+const NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
   <div className={className}>
     <div className="nav-start">
       <div className="nav-item">
-        <LinkStyled to="/">
+        <LinkStyled to="/" title="Go to homepage">
           <LogoTextStyled />
         </LinkStyled>
       </div>
@@ -24,13 +24,13 @@ let NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
     <div className="nav-end">
       <ArrowedLink
         className="nav-item"
-        url="https://wiki.alephium.org/5min-overview/"
+        url="https://github.com/alephium/desktop-wallet/releases/latest/"
         newTab
         altColor
-        emoji="🚀"
-        trackingName="main-nav:5-min-article-link"
+        emoji="👛"
+        trackingName="main-nav:download-wallet-link"
       >
-        Alephium in 5&apos;
+        Download our wallet
       </ArrowedLink>
       <ArrowedLink
         className="nav-item"
@@ -59,7 +59,7 @@ const LinkStyled = styled(Link)`
   display: flex;
 `
 
-NavigationMenu = styled(NavigationMenu)`
+export default styled(NavigationMenu)`
   display: flex;
   justify-content: space-between;
 
@@ -85,6 +85,7 @@ NavigationMenu = styled(NavigationMenu)`
     display: flex;
     align-items: center;
     line-height: var(--lineHeight-26);
+    text-align: right;
 
     @media ${deviceBreakPoints.smallMobile} {
       padding: var(--spacing-2) 0;
@@ -95,6 +96,5 @@ NavigationMenu = styled(NavigationMenu)`
 const LogoTextStyled = styled(LogoText)`
   height: 1.625rem;
   fill: ${({ theme }) => theme.textPrimary};
+  width: auto;
 `
-
-export default NavigationMenu

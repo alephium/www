@@ -2,15 +2,17 @@ import { ThemeProvider } from 'styled-components'
 import { graphql, PageProps } from 'gatsby'
 
 import GlobalStyle from '../styles/global-style'
-import { darkTheme, lightTheme } from '../styles/themes'
+import { darkTheme } from '../styles/themes'
 
 import Seo from '../components/Seo'
 import PageSectionHero, { PageSectionHeroContentType } from '../components/PageSectionHero'
 import PageSectionIntro, { PageSectionIntroContentType } from '../components/PageSectionIntro'
-import PageSectionTechnology, { PageSectionTechnologyContentType } from '../components/PageSectionTechnology'
-import PageSectionUsability, { PageSectionUsabilityContentType } from '../components/PageSectionUsability'
 import PageSectionEcosystem from '../components/PageSectionEcosystem'
-import PageSectionStartNow, { PageSectionStartNowContentType } from '../components/PageSectionStartNow'
+import PageSectionTechnology, { PageSectionTechnologyContentType } from '../components/PageSectionTechnology'
+import PageSectionNumbers, { PageSectionNumbersContentType } from '../components/PageSectionNumbers'
+import PageSectionMilestones, { PageSectionMilestonesContentType } from '../components/PageSectionMilestones'
+import PageSectionTodoList, { PageSectionTodoListContentType } from '../components/PageSectionTodoList'
+import PageSectionSunOverTheMountains from '../components/PageSectionSunOverTheMountains'
 import PageSectionFollowUs, { PageSectionFollowUsContentType } from '../components/PageSectionFollowUs'
 import Footer, { FooterContentType } from '../components/Footer'
 
@@ -22,8 +24,9 @@ interface IndexPageProps extends PageProps {
           headerSection: PageSectionHeroContentType
           introSection: PageSectionIntroContentType
           technologySection: PageSectionTechnologyContentType
-          usabilitySection: PageSectionUsabilityContentType
-          startNowSection: PageSectionStartNowContentType
+          numbersSection: PageSectionNumbersContentType
+          milestonesSection: PageSectionMilestonesContentType
+          todoListSection: PageSectionTodoListContentType
           followUsSection: PageSectionFollowUsContentType
           footer: FooterContentType
         }
@@ -45,19 +48,15 @@ const IndexPage = (props: IndexPageProps) => {
         <ThemeProvider theme={darkTheme}>
           <PageSectionHero content={pageContent.headerSection} />
           <PageSectionIntro content={pageContent.introSection} />
-          <PageSectionTechnology content={pageContent.technologySection} />
-        </ThemeProvider>
-        <ThemeProvider theme={lightTheme}>
-          <PageSectionUsability content={pageContent.usabilitySection} />
-        </ThemeProvider>
-        <ThemeProvider theme={darkTheme}>
+          <PageSectionTechnology content={pageContent.technologySection} minimal />
+          <PageSectionNumbers content={pageContent.numbersSection} />
           <PageSectionEcosystem />
         </ThemeProvider>
-        <ThemeProvider theme={lightTheme}>
-          <PageSectionStartNow content={pageContent.startNowSection} />
-          <PageSectionFollowUs content={pageContent.followUsSection} />
-        </ThemeProvider>
         <ThemeProvider theme={darkTheme}>
+          <PageSectionMilestones content={pageContent.milestonesSection} />
+          <PageSectionTodoList content={pageContent.todoListSection} />
+          <PageSectionFollowUs content={pageContent.followUsSection} />
+          <PageSectionSunOverTheMountains />
           <Footer content={pageContent.footer} />
         </ThemeProvider>
       </main>
@@ -88,10 +87,24 @@ export const pageQuery = graphql`
             cards {
               title
               description
+              image {
+                publicURL
+              }
               link {
-                text
                 url
                 newTab
+              }
+            }
+          }
+          ecosystemSection {
+            title
+            subtitle
+            subsections {
+              title
+              description
+              items {
+                title
+                url
               }
             }
           }
@@ -101,17 +114,6 @@ export const pageQuery = graphql`
             blockFlowSection {
               title
               description
-              cardText
-              links {
-                text
-                url
-                newTab
-              }
-            }
-            polwSection {
-              title
-              description
-              cardText
               links {
                 text
                 url
@@ -121,7 +123,15 @@ export const pageQuery = graphql`
             smartContractSection {
               title
               description
-              cardText
+              links {
+                text
+                url
+                newTab
+              }
+            }
+            polwSection {
+              title
+              description
               links {
                 text
                 url
@@ -131,51 +141,39 @@ export const pageQuery = graphql`
             vmsSection {
               title
               description
-              cardText
               links {
                 text
-                newTab
-              }
-            }
-            numbersSection {
-              title
-              subtitle
-              columns {
-                number
-                description
               }
             }
           }
-          usabilitySection {
+          numbersSection {
             title
             subtitle
-            description
-            button {
-              text
-              url
-              newTab
-            }
-            images {
-              src {
-                childImageSharp {
-                  gatsbyImageData(width: 1920, placeholder: BLURRED, formats: [AUTO])
+          }
+          milestonesSection {
+            title
+            subtitle
+            timelines {
+              title
+              years {
+                year
+                entries {
+                  order
+                  text
+                  when
+                  isMajor
                 }
               }
-              altText
             }
           }
-          startNowSection {
+          todoListSection {
             title
             subtitle
-            description
-            cards {
+            lists {
               title
-              subtitle
-              description
-              link {
+              items {
                 text
-                url
-                newTab
+                complete
               }
             }
           }

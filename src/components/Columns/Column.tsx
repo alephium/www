@@ -1,15 +1,21 @@
 import { FC } from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 interface ColumnProps {
+  vertialCenter?: boolean
   className?: string
 }
 
-let Column: FC<ColumnProps> = ({ className, children }) => <div className={className}>{children}</div>
+const Column: FC<ColumnProps> = ({ className, children }) => <div className={className}>{children}</div>
 
-Column = styled(Column)`
+export default styled(Column)`
   flex-basis: 100%;
   flex: 1;
-`
 
-export default Column
+  ${({ vertialCenter }) =>
+    vertialCenter &&
+    css`
+      display: flex;
+      align-items: center;
+    `}
+`

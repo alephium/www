@@ -2,24 +2,25 @@ import { FC } from 'react'
 import styled from 'styled-components'
 
 interface NumbersInfoProps {
-  number: string
+  value?: string
+  isLoading: boolean
   description: string
   className?: string
 }
 
-let NumbersInfo: FC<NumbersInfoProps> = ({ number, description, className }) => (
+const NumbersInfo: FC<NumbersInfoProps> = ({ value, isLoading, description, className }) => (
   <div className={className}>
-    <div className="number">{number}</div>
+    {isLoading ? '-' : <div className="number">{value}</div>}
     <div>{description}</div>
   </div>
 )
 
-NumbersInfo = styled(NumbersInfo)`
+export default styled(NumbersInfo)`
   font-weight: var(--fontWeight-semiBold);
   color: ${({ theme }) => theme.textPrimaryVariation};
 
   .number {
-    font-size: var(--fontSize-50);
+    font-size: var(--fontSize-56);
     margin-bottom: var(--spacing-3);
 
     & + div {
@@ -27,5 +28,3 @@ NumbersInfo = styled(NumbersInfo)`
     }
   }
 `
-
-export default NumbersInfo

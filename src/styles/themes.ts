@@ -8,11 +8,11 @@ export const darkTheme: DefaultTheme = {
   textPrimary: 'var(--color-white)',
   textPrimaryVariation: 'var(--color-grey-100)',
   textSecondary: 'var(--color-grey-200)',
-  textTertiary: 'var(--color-grey-200)',
+  textTertiary: 'var(--color-grey-300)',
 
-  bgPrimary: 'var(--color-black)',
+  bgPrimary: 'var(--color-grey-800)',
   bgSecondary: 'var(--color-grey-900)',
-  bgTertiary: 'var(--color-grey-800)',
+  bgTertiary: '#1C1A1A',
   bgSurface: 'var(--color-grey-700)',
 
   borderPrimary: 'var(--border-primary-dark)',
