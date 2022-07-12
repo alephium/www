@@ -8,14 +8,16 @@ import HeroLightBackImage from '../../images/hero-light-back.svg'
 import HeroLightMiddleImage from '../../images/hero-light-middle.svg'
 import HeroLightFrontImage from '../../images/hero-light-front.svg'
 import { deviceBreakPoints } from '../../styles/global-style'
+import ParallaxWrapper from '../ParallaxWrapper'
 
 interface HeroImageProps {
   slide: number
   layer: 'front' | 'middle' | 'back'
+  parallaxSpeed: number
   className?: string
 }
 
-const HeroImage = ({ slide, layer, className }: HeroImageProps) => {
+const HeroImage = ({ slide, layer, parallaxSpeed, className }: HeroImageProps) => {
   const [initiallyHidden, setInitiallyHidden] = useState(true)
   const [fadeIn, setFadeIn] = useState(false)
 
@@ -43,7 +45,7 @@ const HeroImage = ({ slide, layer, className }: HeroImageProps) => {
   }, [fadeIn])
 
   return (
-    <div className={className}>
+    <ParallaxWrapper className={className} speed={parallaxSpeed}>
       <Image
         src={imageSlide1}
         className={
@@ -56,7 +58,7 @@ const HeroImage = ({ slide, layer, className }: HeroImageProps) => {
         className={layer + (slide === 0 ? ' hidden' : '')}
         alt="Layer of dark graphic background element"
       />
-    </div>
+    </ParallaxWrapper>
   )
 }
 

@@ -49,9 +49,9 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
     <ThemeProvider theme={darkTheme}>
       <HeroSlider heroElementRef={innerRef} onSwipe={onSwipe}>
         <HeroSection className={className} ref={innerRef}>
-          <HeroImage layer="back" slide={slide} />
-          <HeroImage layer="middle" slide={slide} />
-          <HeroImage layer="front" slide={slide} />
+          <HeroImage layer="back" slide={slide} parallaxSpeed={12} />
+          <HeroImage layer="middle" slide={slide} parallaxSpeed={8} />
+          <HeroImage layer="front" slide={slide} parallaxSpeed={2} />
           <HeroPageSectionContainer>
             <div className="navigation-menu-wrapper">
               <NavigationMenu />
