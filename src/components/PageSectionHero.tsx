@@ -12,17 +12,9 @@ import HeroSection from './Hero/HeroSection'
 import HeroContentWrapper from './Hero/HeroContentWrapper'
 import HeroPageSectionContainer from './Hero/HeroPageSectionContainer'
 
-import HeroDarkFrontImage from '../images/hero-dark-front.svg'
-import HeroDarkMiddleImage from '../images/hero-dark-middle.svg'
-import HeroDarkBackImage from '../images/hero-dark-back.svg'
-import HeroLightBackImage from '../images/hero-light-back.svg'
-import HeroLightMiddleImage from '../images/hero-light-middle.svg'
-import HeroLightFrontImage from '../images/hero-light-front.svg'
-
 import Arrow from '../images/svgs/arrow-right.svg'
-import ParallaxWrapper from './ParallaxWrapper'
-import { AnimatePresence, motion } from 'framer-motion'
 import AlephiumLogo from './AlephiumLogo'
+import HeroImage from './Hero/HeroImage'
 
 export interface PageSectionHeroContentType {
   dark: {
@@ -57,34 +49,9 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
     <ThemeProvider theme={darkTheme}>
       <HeroSlider heroElementRef={innerRef} onSwipe={onSwipe}>
         <HeroSection className={className} ref={innerRef}>
-          <AnimatePresence>
-            {slide === 0 ? (
-              <motion.div animate={{ opacity: 1 }} exit={{ opacity: 0 }} key={0}>
-                <ParallaxWrapper className="hero-image-container" speed={-8}>
-                  <img src={HeroDarkBackImage} alt="Hero dark back" className="hero-image" />
-                </ParallaxWrapper>
-                <ParallaxWrapper className="hero-image-container" speed={8}>
-                  <img src={HeroDarkMiddleImage} className="hero-image" alt="Hero dark front" />
-                </ParallaxWrapper>
-                <ParallaxWrapper className="hero-image-container" speed={2}>
-                  <img src={HeroDarkFrontImage} className="hero-image" alt="Hero dark front" />
-                </ParallaxWrapper>
-              </motion.div>
-            ) : (
-              <motion.div animate={{ opacity: 1 }} exit={{ opacity: 0 }} key={1}>
-                <ParallaxWrapper className="hero-image-container" speed={12}>
-                  <img src={HeroLightBackImage} alt="Hero dark back" className="hero-image" />
-                </ParallaxWrapper>
-                <ParallaxWrapper className="hero-image-container" speed={8}>
-                  <img src={HeroLightMiddleImage} className="hero-image" alt="Hero dark front" />
-                </ParallaxWrapper>
-                <ParallaxWrapper className="hero-image-container" speed={2}>
-                  <img src={HeroLightFrontImage} className="hero-image" alt="Hero dark front" />
-                </ParallaxWrapper>
-              </motion.div>
-            )}
-          </AnimatePresence>
-
+          <HeroImage layer="back" slide={slide} parallaxSpeed={12} />
+          <HeroImage layer="middle" slide={slide} parallaxSpeed={8} />
+          <HeroImage layer="front" slide={slide} parallaxSpeed={2} />
           <HeroPageSectionContainer>
             <div className="navigation-menu-wrapper">
               <NavigationMenu />

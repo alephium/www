@@ -40,24 +40,4 @@ export default styled.section`
       }
     }
   }
-
-  .hero-image-container {
-    position: absolute;
-    right: 0;
-    top: 0;
-    left: 0;
-    bottom: 0;
-
-    .hero-image {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      height: 100%;
-      top: 0;
-    }
-
-    @media ${deviceBreakPoints.mobile} {
-      filter: brightness(0.5);
-    }
-  }
 `
