@@ -116,6 +116,9 @@ ecosystemSection:
         - title: 'Alphemy Capital'
           logo: '../images/logos/alphemy-capital-icon.svg'
           url: https://alphemy.capital/
+        - title: 'Cetacean Capital'
+          logo: '../images/logos/cetacean-capital-icon.png'
+          url: https://cetacean.capital/
         - title: 'White Paper Capital'
           logo: '../images/logos/white-paper-capital-icon.svg'
           url: https://www.whitepapercapital.com/
