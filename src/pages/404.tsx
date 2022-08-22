@@ -10,8 +10,8 @@ import HeroPageSectionContainer from '../components/Hero/HeroPageSectionContaine
 import NavigationMenu from '../components/NavigationMenu'
 import TextSnippet from '../components/TextSnippet'
 
-import LogoWhite from '../images/svgs/logo-white.svg'
-import HeroDarkImage from '../images/hero-dark.svg'
+import HeroLogo from '../components/Hero/HeroLogo'
+import HeroImage from '../components/Hero/HeroImage'
 
 const NotFoundPage = () => {
   return (
@@ -19,14 +19,16 @@ const NotFoundPage = () => {
       <GlobalStyle />
       <main>
         <HeroSection>
-          <img src={HeroDarkImage} alt="Hero dark" className="hero-image planet" />
+          <HeroImage layer="back" slide={0} parallaxSpeed={12} />
+          <HeroImage layer="middle" slide={0} parallaxSpeed={8} />
+          <HeroImage layer="front" slide={0} parallaxSpeed={2} />
           <HeroPageSectionContainer>
             <div className="navigation-menu-wrapper">
               <NavigationMenu />
             </div>
             <HeroContentWrapper>
               <div className="contents">
-                <LogoWhite className="logo" />
+                <HeroLogo gradientIndex={0} />
                 <h1>404 - Page not found</h1>
                 <TextSnippetStyled bigText>
                   Let&apos;s go back to the <Link to="/">home page</Link>.
