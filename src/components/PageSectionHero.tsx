@@ -13,8 +13,8 @@ import HeroContentWrapper from './Hero/HeroContentWrapper'
 import HeroPageSectionContainer from './Hero/HeroPageSectionContainer'
 
 import Arrow from '../images/svgs/arrow-right.svg'
+import AlephiumLogo from './AlephiumLogo'
 import HeroImage from './Hero/HeroImage'
-import HeroLogo from './Hero/HeroLogo'
 
 export interface PageSectionHeroContentType {
   dark: {
@@ -59,7 +59,7 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
             <HeroContentWrapper>
               <div className="contents">
                 <>
-                  <HeroLogo gradientIndex={slide} />
+                  <StyledLogo gradientIndex={slide} />
 
                   <h1>{themeContent.title}</h1>
                   <TextSnippetStyled bigText>{themeContent.subtitle}</TextSnippetStyled>
@@ -80,6 +80,15 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
     </ThemeProvider>
   )
 }
+
+const StyledLogo = styled(AlephiumLogo)`
+  width: 6rem;
+  min-height: 5rem;
+
+  @media ${deviceBreakPoints.smallMobile} {
+    width: 3rem;
+  }
+`
 
 const TextSnippetStyled = styled(TextSnippet)`
   max-width: var(--width-564);
