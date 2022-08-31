@@ -3,6 +3,7 @@ import { FC, useRef, useState } from 'react'
 import styled from 'styled-components'
 import useElementDistanceToTop from '../hooks/useElementDistanceToTop'
 import { deviceBreakPoints } from '../styles/global-style'
+import { toId } from '../utils/misc'
 
 import TextSnippet from './TextSnippet'
 
@@ -41,7 +42,7 @@ const SectionTextHeader: FC<SectionTextHeaderProps> = ({
 
   return (
     <>
-      <div ref={headingElementRef} />
+      <div ref={headingElementRef} id={toId(title)} />
       <motion.header className={className}>
         <StyledTextSnippet
           title={title}
