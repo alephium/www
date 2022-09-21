@@ -3,7 +3,7 @@ module.exports = {
     siteUrl: 'https://alephium.org',
     title: 'Alephium: A new paradigm',
     description:
-      "Alephium is a sharded L1 blockchain scaling and improving on Bitcoin's PoW  & UTXO. A highly performant, secure, and energy efficient network for DeFi & dApps.",
+      "Alephium is a sharded L1 blockchain scaling and enhancing Bitcoin's PoW & UTXO. High-performance, security, and energy efficiency delivered for DeFi & dApps.",
     social: {
       twitter: 'alephium'
     }
