@@ -34,7 +34,7 @@ introSection:
       description: Start building your own smart contracts, decentralized apps
         and protocols.
       link:
-        url: https://wiki.alephium.org/dapps/Overview
+        url: https://wiki.alephium.org/dapps/Getting-Started
         newTab: true
     - title: Get rewarded
       image: ../images/coins.svg
@@ -66,7 +66,7 @@ technologySection:
     links:
       - text: More details
       - text: Guide
-        url: https://wiki.alephium.org/dapps/Technical-Guide-With-A-Fullnode
+        url: https://wiki.alephium.org/dapps/Getting-Started
         newTab: true
   polwSection:
     title: Efficiency in Energy Consumption
