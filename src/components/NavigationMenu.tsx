@@ -24,13 +24,12 @@ const NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
     <div className="nav-end">
       <ArrowedLink
         className="nav-item"
-        url="https://github.com/alephium/desktop-wallet/releases/latest/"
+        url="https://wiki.alephium.org/"
         newTab
         altColor
-        emoji="👛"
-        trackingName="main-nav:download-wallet-link"
+        trackingName="main-nav:wiki-link"
       >
-        Download our wallet
+        Wiki
       </ArrowedLink>
       <ArrowedLink
         className="nav-item"
@@ -39,7 +38,17 @@ const NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
         altColor
         trackingName="main-nav:explorer-link"
       >
-        Block explorer
+        Explorer
+      </ArrowedLink>
+      <ArrowedLink
+        className="nav-item"
+        url="https://github.com/alephium/desktop-wallet/releases/latest/"
+        newTab
+        altColor
+        IconComponent={() => <div style={{ paddingRight: 6 }}>👛</div>}
+        trackingName="main-nav:download-wallet-link"
+      >
+        Get the wallet
       </ArrowedLink>
       <ArrowedLink
         className="nav-item"

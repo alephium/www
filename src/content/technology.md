@@ -42,7 +42,7 @@ technologySection:
         url:
         newTab: false
       - text: Guide
-        url: https://wiki.alephium.org/dapps/Technical-Guide-With-A-Fullnode
+        url: https://wiki.alephium.org/dapps/Getting-Started
         newTab: true
   vmsSection:
     title: Novel VM
