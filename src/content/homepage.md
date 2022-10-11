@@ -27,14 +27,14 @@ introSection:
       description: Start mining to contribute to the network security and
         receive ALPH rewards.
       link:
-        url: https://wiki.alephium.org/mining/Solo-Mining-Guide
+        url: https://wiki.alephium.org/mining/solo-mining-guide/
         newTab: true
     - title: Build your own
       image: ../images/code.svg
       description: Start building your own smart contracts, decentralized apps
         and protocols.
       link:
-        url: https://wiki.alephium.org/dapps/Getting-Started
+        url: https://wiki.alephium.org/dapps/getting-started/
         newTab: true
     - title: Get rewarded
       image: ../images/coins.svg
@@ -66,7 +66,7 @@ technologySection:
     links:
       - text: More details
       - text: Guide
-        url: https://wiki.alephium.org/dapps/Getting-Started
+        url: https://wiki.alephium.org/dapps/getting-started/
         newTab: true
   polwSection:
     title: Efficiency in Energy Consumption
