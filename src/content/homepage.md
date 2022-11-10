@@ -131,9 +131,9 @@ ecosystemSection:
       description: "Building on top, around or below what we do, securing the network or providing services, they are the life & blood of Alephium & the reasons we grind everyday!"
       image: ../images/sprout.svg
       items:
-        - title: 'Sesame Wallet'
+        - title: 'Sezame Wallet'
           logo: '../images/logos/sesame-wallet-icon.svg'
-          url: https://sesame-wallet.io/
+          url: https://sezame.app/
         - title: 'MetaPool'
           logo: ''
           url: https://www.metapool.tech/dashboard
