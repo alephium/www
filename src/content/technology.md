@@ -42,7 +42,7 @@ technologySection:
         url:
         newTab: false
       - text: Guide
-        url: https://wiki.alephium.org/dapps/getting-started/
+        url: https://docs.alephium.org/dapps/getting-started/
         newTab: true
   vmsSection:
     title: Novel VM

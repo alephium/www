@@ -24,7 +24,7 @@ const NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
     <div className="nav-end">
       <ArrowedLink
         className="nav-item"
-        url="https://wiki.alephium.org/"
+        url="https://docs.alephium.org/"
         newTab
         altColor
         trackingName="main-nav:wiki-link"
