@@ -27,14 +27,14 @@ introSection:
       description: Start mining to contribute to the network security and
         receive ALPH rewards.
       link:
-        url: https://wiki.alephium.org/mining/solo-mining-guide/
+        url: https://docs.alephium.org/mining/solo-mining-guide/
         newTab: true
     - title: Build your own
       image: ../images/code.svg
       description: Start building your own smart contracts, decentralized apps
         and protocols.
       link:
-        url: https://wiki.alephium.org/dapps/getting-started/
+        url: https://docs.alephium.org/dapps/getting-started/
         newTab: true
     - title: Get rewarded
       image: ../images/coins.svg
@@ -66,7 +66,7 @@ technologySection:
     links:
       - text: More details
       - text: Guide
-        url: https://wiki.alephium.org/dapps/getting-started/
+        url: https://docs.alephium.org/dapps/getting-started/
         newTab: true
   polwSection:
     title: Efficiency in Energy Consumption
@@ -131,9 +131,9 @@ ecosystemSection:
       description: "Building on top, around or below what we do, securing the network or providing services, they are the life & blood of Alephium & the reasons we grind everyday!"
       image: ../images/sprout.svg
       items:
-        - title: 'Sesame Wallet'
+        - title: 'Sezame Wallet'
           logo: '../images/logos/sesame-wallet-icon.svg'
-          url: https://sesame-wallet.io/
+          url: https://sezame.app/
         - title: 'MetaPool'
           logo: ''
           url: https://www.metapool.tech/dashboard
@@ -319,7 +319,7 @@ footer:
     - title: Resources
       links:
         - text: Wiki
-          url: https://wiki.alephium.org/
+          url: https://docs.alephium.org/
           newTab: true
         - text: Blog
           url: https://medium.com/@alephium
@@ -328,7 +328,7 @@ footer:
           url: https://github.com/alephium/white-paper
           newTab: true
         - text: FAQ
-          url: https://wiki.alephium.org/frequently-asked-questions
+          url: https://docs.alephium.org/frequently-asked-questions
           newTab: true
     - title: Explore
       links:
