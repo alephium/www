@@ -299,7 +299,7 @@ shopSection:
    We're making sure to produce the nicest designs for you to add a bit of sharding and PoLW vibes in your daily routine.
   link:
     text: "Visit our shop"
-    url: "https://alephium.myspreadshop.ch"
+    url: https://alephium.myspreadshop.ch
 
 followUsSection:
   title: Follow us
