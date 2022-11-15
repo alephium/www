@@ -79,7 +79,7 @@ const PageSectionEcosystem = ({ className }: { className?: string }) => {
 }
 
 export default styled(PageSectionEcosystem)`
-  padding-top: var(--spacing-10);
+  padding-top: var(--spacing-16);
   padding-bottom: var(--spacing-20);
   position: relative;
 `
@@ -150,7 +150,7 @@ const SubsectionItems = styled(motion.div)`
 `
 
 const SubsectionItemTitle = styled.div`
-  font-weight: var(--fontWeight-bold);
+  font-weight: var(--fontWeight-semiBold);
   display: flex;
   align-items: center;
   justify-content: center;

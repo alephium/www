@@ -21,3 +21,8 @@
   font-weight: 800;
   src: url('../fonts/Inter-Bold.woff2') format('woff2'), url('../fonts/Inter-Bold.woff') format('woff');
 }
+
+h2,
+h3 {
+  font-weight: 600;
+}

@@ -24,13 +24,18 @@ const SocialMediaIcon: FC<SocialMediaIconProps> = ({ url, ImageComponent, name, 
 
 export default styled(SocialMediaIcon)`
   svg {
-    width: var(--width-82);
+    width: 60px;
     fill: ${({ theme }) => theme.textPrimary};
+    opacity: 0.8;
   }
 
   transition: all 0.1s ease-out;
 
   &:hover {
     transform: translateY(calc(var(--spacing-half) * -1));
+
+    svg {
+      opacity: 1;
+    }
   }
 `

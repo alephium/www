@@ -292,6 +292,15 @@ todoListSection:
           complete: false
         - text: Grant Program V2
           complete: false
+shopSection:
+  title: SWALPH
+  subtitle: Decentralized SWAG 🤘
+  description: If you want to wear Alephium's colors, head out to the shop and access a selection of clothes and goodies.
+   You'll find the nicest designs for you to add a bit of sharding and PoLW vibes in your daily routine.
+  link:
+    text: "Visit the shop"
+    url: https://alephium.myspreadshop.ch
+
 followUsSection:
   title: Follow us
   subtitle: Contribute & Join the community

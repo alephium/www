@@ -20,7 +20,7 @@ export default styled.section`
   h1 {
     font-size: var(--fontSize-70);
     color: ${({ theme }) => theme.textPrimary};
-    font-weight: var(--fontWeight-bold);
+    font-weight: var(--fontWeight-semiBold);
 
     @media ${deviceBreakPoints.smallMobile} {
       font-size: var(--fontSize-36);

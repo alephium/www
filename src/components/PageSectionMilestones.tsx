@@ -14,17 +14,25 @@ interface Props {
 }
 
 const PageSectionMilestones = ({ content: { title, subtitle, timelines } }: Props) => (
-  <section>
-    <SectionTextHeader title={title} subtitle={subtitle} bigSubtitle bigText sticky centered />
+  <SectionWrapper>
+    <StyledSectionTextHeader title={title} subtitle={subtitle} bigSubtitle bigText sticky centered />
     <Centered>
       <DualTimeline timelines={timelines} />
     </Centered>
-  </section>
+  </SectionWrapper>
 )
+
+const SectionWrapper = styled.section`
+  margin-top: var(--spacing-16);
+`
 
 const Centered = styled.div`
   display: flex;
   justify-content: center;
+`
+
+const StyledSectionTextHeader = styled(SectionTextHeader)`
+  background-color: ${({ theme }) => theme.bgSecondary};
 `
 
 export default PageSectionMilestones

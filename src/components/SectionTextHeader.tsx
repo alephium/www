@@ -71,7 +71,6 @@ export default styled(SectionTextHeader)`
   right: 0;
   left: 0;
   text-align: ${(props) => (props.centered ? 'center' : 'left')};
-  background-color: rgba(15, 15, 15, 0.8);
   z-index: 2000;
   backdrop-filter: blur(20px);
   display: flex;
@@ -84,6 +83,7 @@ export default styled(SectionTextHeader)`
 
   h2 {
     color: ${({ theme }) => theme.textPrimary};
+    font-weight: var(--fontWeight-semiBold);
     margin: 0;
 
     & + div {

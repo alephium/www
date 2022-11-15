@@ -77,6 +77,7 @@ const BackdropStars = styled.div`
   background-image: url('${SvgStars}');
   background-repeat: no-repeat;
   background-position-x: center;
+  margin: var(--spacing-16) 0;
 `
 
 const TodoLists = styled(motion.div)`
@@ -109,7 +110,7 @@ const TodoTitle = styled(TextSnippet)<Alignment>`
 const TodoItems = styled(motion.div)<Alignment>`
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
   justify-content: ${({ $alignRight }) => ($alignRight ? 'right' : 'left')};
 
   @media ${deviceBreakPoints.mobile} {
@@ -121,10 +122,11 @@ const TodoItem = styled(motion.div)`
   position: relative;
   width: calc(50% - 30px - 20px);
   min-width: 199px;
-  padding: 20px 15px;
+  padding: 25px 15px;
   background-color: ${({ theme }) => theme.bgPrimary};
   border-radius: 9px;
-  box-shadow: 0px 22px 30px rgba(0, 0, 0, 0.47);
+  border: 1px solid ${({ theme }) => theme.separator};
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;

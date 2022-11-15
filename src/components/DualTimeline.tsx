@@ -201,7 +201,7 @@ const trackWidth = 90
 
 const Container = styled.div`
   width: 100vw;
-  margin-bottom: 226px;
+  margin-bottom: var(--spacing-16);
 `
 
 const Text = styled.div`
@@ -419,7 +419,6 @@ const HeaderStickyBackground = styled.div`
   width: 100%;
   height: ${headerHeight}px;
   z-index: 1;
-  background-color: rgba(15, 15, 15, 0.8);
   backdrop-filter: blur(20px);
 
   @media ${deviceBreakPoints.mobile} {
