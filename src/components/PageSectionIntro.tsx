@@ -83,6 +83,7 @@ const SectionContainer = styled.section`
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin: var(--spacing-8) 0;
 `
 
 const IntroColumns = styled(Columns)`

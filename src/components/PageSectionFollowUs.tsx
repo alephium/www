@@ -13,6 +13,8 @@ import YouTubeIcon from '../images/svgs/brand-icon-youtube.svg'
 import LinkedInIcon from '../images/svgs/brand-icon-linkedin.svg'
 import MediumIcon from '../images/svgs/brand-icon-medium.svg'
 import GitHubIcon from '../images/svgs/brand-icon-github.svg'
+import Columns from './Columns/Columns'
+import Column from './Columns/Column'
 
 export interface PageSectionFollowUsContentType {
   title: string
@@ -32,49 +34,60 @@ interface FollowUsProps {
 const FollowUs: FC<FollowUsProps> = ({ className, content }) => (
   <section className={className}>
     <PageSectionContainer>
-      <SectionTextHeader title={content.title} subtitle={content.subtitle} bigSubtitle bigText>
-        <p>{content.description}</p>
-      </SectionTextHeader>
-      <SocialMediaIconsList>
-        {content.socialMediaLinks.map(({ name, url }) => {
-          const Icon = getIconByName(name)
-          return (
-            <SocialMediaIcon
-              key={name}
-              name={name}
-              url={url}
-              ImageComponent={Icon}
-              trackingName={`follow-us-section:${name}-link`}
-            />
-          )
-        })}
-      </SocialMediaIconsList>
+      <Columns>
+        <Column>
+          <SectionTextHeader title={content.title} subtitle={content.subtitle} bigSubtitle bigText>
+            <p>{content.description}</p>
+          </SectionTextHeader>
+        </Column>
+        <Column>
+          <SocialMediaIconsList>
+            {content.socialMediaLinks.map(({ name, url }) => {
+              const Icon = getIconByName(name)
+              return (
+                <SocialMediaIcon
+                  key={name}
+                  name={name}
+                  url={url}
+                  ImageComponent={Icon}
+                  trackingName={`follow-us-section:${name}-link`}
+                />
+              )
+            })}
+          </SocialMediaIconsList>
+        </Column>
+      </Columns>
     </PageSectionContainer>
   </section>
 )
 
 export default styled(FollowUs)`
-  padding: var(--spacing-25) 0 var(--spacing-12) 0;
+  padding: var(--spacing-12) 0;
   background-color: ${({ theme }) => theme.bgSecondary};
   color: ${({ theme }) => theme.textPrimary};
+  align-items: center;
 
   * {
-    text-align: center;
+    text-align: left;
   }
 
   .text-content {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }
 `
 
 const SocialMediaIconsList = styled.div`
   display: flex;
-  gap: var(--spacing-8);
+  gap: var(--spacing-6);
   align-items: center;
   justify-content: center;
-  margin-top: var(--spacing-10);
   flex-wrap: wrap;
+  border: 1px solid ${({ theme }) => theme.separator};
+  border-radius: 9px;
+  padding: var(--spacing-4);
+  width: 80%;
+  margin: auto;
 `
 
 const getIconByName = (name: string) => {

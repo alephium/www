@@ -201,7 +201,7 @@ const trackWidth = 90
 
 const Container = styled.div`
   width: 100vw;
-  margin-bottom: 226px;
+  margin-bottom: var(--spacing-16);
 `
 
 const Text = styled.div`

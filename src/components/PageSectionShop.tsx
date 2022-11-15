@@ -72,7 +72,7 @@ const Shop: FC<FollowUsProps> = ({ className, content }) => {
 }
 
 export default styled(Shop)`
-  padding: var(--spacing-25) 0 var(--spacing-12) 0;
+  padding: var(--spacing-12) 0;
   background-color: ${({ theme }) => theme.bgSecondary};
   color: ${({ theme }) => theme.textPrimary};
   align-items: center;

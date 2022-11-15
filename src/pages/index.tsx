@@ -16,6 +16,7 @@ import PageSectionSunOverTheMountains from '../components/PageSectionSunOverTheM
 import PageSectionFollowUs, { PageSectionFollowUsContentType } from '../components/PageSectionFollowUs'
 import Footer, { FooterContentType } from '../components/Footer'
 import PageSectionShop, { PageSectionShopContentType } from '../components/PageSectionShop'
+import SectionDivider from '../components/SectionDivider'
 
 interface IndexPageProps extends PageProps {
   data: {
@@ -49,14 +50,20 @@ const IndexPage = (props: IndexPageProps) => {
       <main>
         <ThemeProvider theme={darkTheme}>
           <PageSectionHero content={pageContent.headerSection} />
+          <SectionDivider />
           <PageSectionIntro content={pageContent.introSection} />
+          <SectionDivider />
           <PageSectionTechnology content={pageContent.technologySection} minimal />
           <PageSectionNumbers content={pageContent.numbersSection} />
+          <SectionDivider />
           <PageSectionEcosystem />
         </ThemeProvider>
         <ThemeProvider theme={darkTheme}>
+          <SectionDivider />
           <PageSectionMilestones content={pageContent.milestonesSection} />
+          <SectionDivider />
           <PageSectionTodoList content={pageContent.todoListSection} />
+          <SectionDivider />
           <PageSectionShop content={pageContent.shopSection} />
           <PageSectionFollowUs content={pageContent.followUsSection} />
           <PageSectionSunOverTheMountains />

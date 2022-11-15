@@ -150,7 +150,7 @@ const SubsectionItems = styled(motion.div)`
 `
 
 const SubsectionItemTitle = styled.div`
-  font-weight: var(--fontWeight-bold);
+  font-weight: var(--fontWeight-semiBold);
   display: flex;
   align-items: center;
   justify-content: center;
