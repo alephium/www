@@ -15,6 +15,7 @@ import PageSectionTodoList, { PageSectionTodoListContentType } from '../componen
 import PageSectionSunOverTheMountains from '../components/PageSectionSunOverTheMountains'
 import PageSectionFollowUs, { PageSectionFollowUsContentType } from '../components/PageSectionFollowUs'
 import Footer, { FooterContentType } from '../components/Footer'
+import PageSectionShop, { PageSectionShopContentType } from '../components/PageSectionShop'
 
 interface IndexPageProps extends PageProps {
   data: {
@@ -27,6 +28,7 @@ interface IndexPageProps extends PageProps {
           numbersSection: PageSectionNumbersContentType
           milestonesSection: PageSectionMilestonesContentType
           todoListSection: PageSectionTodoListContentType
+          shopSection: PageSectionShopContentType
           followUsSection: PageSectionFollowUsContentType
           footer: FooterContentType
         }
@@ -55,6 +57,7 @@ const IndexPage = (props: IndexPageProps) => {
         <ThemeProvider theme={darkTheme}>
           <PageSectionMilestones content={pageContent.milestonesSection} />
           <PageSectionTodoList content={pageContent.todoListSection} />
+          <PageSectionShop content={pageContent.shopSection} />
           <PageSectionFollowUs content={pageContent.followUsSection} />
           <PageSectionSunOverTheMountains />
           <Footer content={pageContent.footer} />
@@ -175,6 +178,15 @@ export const pageQuery = graphql`
                 text
                 complete
               }
+            }
+          }
+          shopSection {
+            title
+            subtitle
+            description
+            link {
+              text
+              url
             }
           }
           followUsSection {

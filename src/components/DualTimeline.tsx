@@ -419,7 +419,6 @@ const HeaderStickyBackground = styled.div`
   width: 100%;
   height: ${headerHeight}px;
   z-index: 1;
-  background-color: rgba(15, 15, 15, 0.8);
   backdrop-filter: blur(20px);
 
   @media ${deviceBreakPoints.mobile} {
