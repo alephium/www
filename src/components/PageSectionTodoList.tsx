@@ -77,7 +77,7 @@ const BackdropStars = styled.div`
   background-image: url('${SvgStars}');
   background-repeat: no-repeat;
   background-position-x: center;
-  margin: var(--spacing-12) 0;
+  margin: var(--spacing-16) 0;
 `
 
 const TodoLists = styled(motion.div)`

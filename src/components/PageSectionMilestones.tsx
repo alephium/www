@@ -23,7 +23,7 @@ const PageSectionMilestones = ({ content: { title, subtitle, timelines } }: Prop
 )
 
 const SectionWrapper = styled.section`
-  margin-top: var(--spacing-12);
+  margin-top: var(--spacing-16);
 `
 
 const Centered = styled.div`
