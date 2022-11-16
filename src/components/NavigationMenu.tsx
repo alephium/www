@@ -29,7 +29,7 @@ const NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
         altColor
         trackingName="main-nav:wiki-link"
       >
-        Wiki
+        Docs
       </ArrowedLink>
       <ArrowedLink
         className="nav-item"
