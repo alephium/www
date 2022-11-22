@@ -108,7 +108,7 @@ ecosystemSection:
           logo: '../images/svgs/crypto-valley-association-vector-logo.svg'
           url: https://cryptovalley.swiss/
         - title: 'Dappnode'
-          logo: ''
+          logo: '../images/logos/Dappnode-logo-bw.png'
           url: https://dappnode.io
         - title: 'Ergo'
           logo: '../images/svgs/Ergo_logo2022.svg'
