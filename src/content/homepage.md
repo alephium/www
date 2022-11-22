@@ -101,15 +101,30 @@ ecosystemSection:
       description: "From lawyers to peer blockchains, lobbying & local associations, they make us feel part of a larger ecosystem."
       image: ../images/network.svg
       items:
+        - title: 'Bitcoin Association Switzerland'
+          logo: '../images/svgs/bas-logo-white.svg'
+          url: https://www.bitcoinassociation.ch/
+        - title: 'Crypto Valley Association'
+          logo: '../images/svgs/crypto-valley-association-vector-logo.svg'
+          url: https://cryptovalley.swiss/
+        - title: 'Dappnode'
+          logo: ''
+          url: https://dappnode.io
+        - title: 'Ergo'
+          logo: '../images/svgs/Ergo_logo2022.svg'
+          url: https://ergoplatform.org/
+        - title: 'Flux Labs'
+          logo: '../images/svgs/flux-seeklogo.com.svg'
+          url: https://runonflux.io/fluxlabs.html
+        - title: 'Hodling SA'
+          logo: '../images/svgs/hodling-icon-bw-darkBackground.svg'
+          url: https://www.hodling.ch/
         - title: 'Leax'
           logo: '../images/logos/leax.svg'
           url: https://www.leax.ch/
         - title: 'UTXO Alliance'
           logo: '../images/svgs/utxo-aliance-logo-white.svg'
           url: https://utxo-alliance.org/
-        - title: 'Bitcoin Association Switzerland'
-          logo: '../images/svgs/bas-logo-white.svg'
-          url: https://www.bitcoinassociation.ch/
     - title: Backers
       description: "They provided us with early backing, funding, strategic advice, introductions and so much more!"
       image: ../images/award.svg
