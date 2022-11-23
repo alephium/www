@@ -4,14 +4,6 @@ export const onRenderBody = ({ setPostBodyComponents }) => {
   setPostBodyComponents(PostBodyComponents)
 }
 
-// Remove gatsby-announcer element because it has inline styles (which we don't want due to the CSP)
-export const wrapRootElement = ({ element }) => {
-  element.props.children = element.props.children.props.children.filter(
-    (child) => child.props.id !== 'gatsby-announcer'
-  )
-  return element
-}
-
 // Remove inline scripts and styles inserted by Gatsby
 export const onPreRenderHTML = ({
   getHeadComponents,

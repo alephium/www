@@ -27,7 +27,7 @@ import StackImage from '../images/svgs/stack.svg'
 import LeafImage from '../images/svgs/leaf.svg'
 import VmDotsImage from '../images/svgs/vm-dots.svg'
 import IllustrationColumn from './Columns/IllustrationColumn'
-import { motion, useTransform, useViewportScroll } from 'framer-motion'
+import { motion, useTransform, useScroll } from 'framer-motion'
 import { useRefScrollProgress } from '../hooks/useRefScrollProgress'
 import ParallaxWrapper from './ParallaxWrapper'
 
@@ -64,7 +64,7 @@ const PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, cont
   const polwSectionContent = content.polwSection
   const vmsSectionContent = content.vmsSection
 
-  const { scrollYProgress } = useViewportScroll()
+  const { scrollYProgress } = useScroll()
 
   const [gradientRef, start, end] = useRefScrollProgress()
 
