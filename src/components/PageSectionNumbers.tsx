@@ -151,7 +151,7 @@ const NumbersSection = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: var(--spacing-20);
+  margin-top: var(--spacing-12);
   margin-bottom: var(--spacing-20);
 
   @media ${deviceBreakPoints.mobile} {
