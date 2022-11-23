@@ -1,5 +1,4 @@
 import { HTMLMotionProps, motion } from 'framer-motion'
-import { FC } from 'react'
 import styled from 'styled-components'
 
 interface CardProps extends HTMLMotionProps<'div'> {
@@ -11,7 +10,7 @@ interface CardProps extends HTMLMotionProps<'div'> {
   children: React.ReactNode
 }
 
-const Card: FC<CardProps> = ({ className, children, ...props }) => {
+const Card = ({ className, children, ...props }: CardProps) => {
   // Removing props that should not go to the motion.div
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { borderColor, thickBorders, bgColor, shadow, ...remainingProps } = props

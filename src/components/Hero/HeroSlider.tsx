@@ -1,11 +1,12 @@
-import { FC, useEffect, RefObject, TouchEvent } from 'react'
+import { useEffect, RefObject, TouchEvent, ReactNode } from 'react'
 
 interface HeroSliderProps {
   heroElementRef: RefObject<HTMLElement>
   onSwipe: () => void
+  children?: ReactNode
 }
 
-const HeroSlider: FC<HeroSliderProps> = ({ heroElementRef, onSwipe, children }) => {
+const HeroSlider = ({ heroElementRef, onSwipe, children }: HeroSliderProps) => {
   let swipeTimeout: ReturnType<typeof setTimeout> | undefined
 
   useEffect(() => {

@@ -1,4 +1,3 @@
-import { FC } from 'react'
 import styled from 'styled-components'
 
 import TextSnippet from './TextSnippet'
@@ -11,7 +10,7 @@ interface SubsectionTextHeaderProps {
   condensed?: boolean
 }
 
-const SubsectionTextHeader: FC<SubsectionTextHeaderProps> = ({ title, subtitle, bigTitle, className }) => (
+const SubsectionTextHeader = ({ title, subtitle, bigTitle, className }: SubsectionTextHeaderProps) => (
   <header className={className}>
     <TextSnippet title={title} titleHierarchy="h3" subtitle={subtitle} bigTitle={bigTitle} />
   </header>

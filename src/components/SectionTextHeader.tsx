@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FC, useRef, useState } from 'react'
+import { ReactNode, useRef, useState } from 'react'
 import styled from 'styled-components'
 import useElementDistanceToTop from '../hooks/useElementDistanceToTop'
 import { deviceBreakPoints } from '../styles/global-style'
@@ -15,9 +15,10 @@ interface SectionTextHeaderProps {
   bigText?: boolean
   centered?: boolean
   sticky?: boolean
+  children?: ReactNode
 }
 
-const SectionTextHeader: FC<SectionTextHeaderProps> = ({
+const SectionTextHeader = ({
   className,
   title,
   subtitle,
@@ -26,7 +27,7 @@ const SectionTextHeader: FC<SectionTextHeaderProps> = ({
   sticky,
   centered,
   children
-}) => {
+}: SectionTextHeaderProps) => {
   const headingElementRef = useRef(null)
   const headingDistanceFromTopOfScreen = useElementDistanceToTop(headingElementRef)
   const [headingReachedTopOfScreen, setHeadingReachedTopOfScreen] = useState(false)

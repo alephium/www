@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC, ReactNode } from 'react'
 import styled from 'styled-components'
 
 import TextSnippet from './TextSnippet'
@@ -7,9 +7,10 @@ interface CardTextTeaserProps {
   title: string
   subtitle?: string
   className?: string
+  children?: ReactNode
 }
 
-const CardTextTeaser: FC<CardTextTeaserProps> = ({ title, subtitle, children, className }) => (
+const CardTextTeaser = ({ title, subtitle, children, className }: CardTextTeaserProps) => (
   <article className={className}>
     <TextSnippetStyled
       className="text-content"

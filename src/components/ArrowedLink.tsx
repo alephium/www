@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { ElementType, ReactNode } from 'react'
 import styled, { css, useTheme } from 'styled-components'
 
 import SimpleLink from './SimpleLink'
@@ -7,7 +7,7 @@ import Arrow from '../images/svgs/arrow-right.svg'
 
 export interface ArrowedLinkProps {
   className?: string
-  IconComponent?: FC
+  IconComponent?: ElementType
   url?: string
   text?: string
   newTab?: boolean
@@ -16,9 +16,10 @@ export interface ArrowedLinkProps {
   onlyText?: boolean
   emoji?: string
   trackingName?: string
+  children?: ReactNode
 }
 
-const ArrowedLink: FC<ArrowedLinkProps> = ({
+const ArrowedLink = ({
   className,
   children,
   IconComponent,
@@ -28,7 +29,7 @@ const ArrowedLink: FC<ArrowedLinkProps> = ({
   altColor = false,
   emoji,
   trackingName
-}) => {
+}: ArrowedLinkProps) => {
   const theme = useTheme()
   const color = altColor ? theme.linkAlt : theme.link
 
