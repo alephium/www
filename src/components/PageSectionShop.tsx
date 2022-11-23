@@ -61,7 +61,14 @@ const Shop: FC<FollowUsProps> = ({ className, content }) => {
             <ShirtDesignWrapper>
               <img src={tShirtPlaceholder} width="70%" style={{ margin: 'auto' }} alt="tee-shirt-placeholder" />
               <TeeShirtDesign>
-                <img src={shirtDesign} alt="tee-shirt-design" />
+                {shirtDesigns.map((s) => (
+                  <img
+                    key={s}
+                    src={s}
+                    alt="tee-shirt-design"
+                    style={{ display: shirtDesign === s ? 'block' : 'none' }}
+                  />
+                ))}
               </TeeShirtDesign>
             </ShirtDesignWrapper>
           </Column>

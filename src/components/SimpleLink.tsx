@@ -1,4 +1,4 @@
-import { FC, MouseEvent } from 'react'
+import { MouseEvent, ReactNode } from 'react'
 import styled from 'styled-components'
 
 export interface SimpleLinkProps {
@@ -9,9 +9,10 @@ export interface SimpleLinkProps {
   color?: string
   openModal?: (x: boolean) => void
   trackingName?: string
+  children?: ReactNode
 }
 
-const SimpleLink: FC<SimpleLinkProps> = ({ className, children, url, newTab, text, openModal, trackingName }) => {
+const SimpleLink = ({ className, children, url, newTab, text, openModal, trackingName }: SimpleLinkProps) => {
   const handleOnClick = (event: MouseEvent) => {
     if (openModal) {
       event.preventDefault()

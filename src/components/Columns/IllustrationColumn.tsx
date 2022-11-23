@@ -1,13 +1,14 @@
-import { FC } from 'react'
+import { FC, ReactNode } from 'react'
 import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../../styles/global-style'
 
 interface IllustrationColumnProps {
+  children: ReactNode
   className?: string
 }
 
-const IllustrationColumn: FC<IllustrationColumnProps> = ({ className, children }) => (
+const IllustrationColumn = ({ className, children }: IllustrationColumnProps) => (
   <div className={className}>{children}</div>
 )
 

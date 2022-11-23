@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { ReactNode } from 'react'
 import styled, { css } from 'styled-components'
 
 import Arrow from '../images/svgs/arrow-right.svg'
@@ -9,9 +9,10 @@ interface ButtonProps {
   newTab?: boolean
   className?: string
   trackingName?: string
+  children?: ReactNode
 }
 
-const Button: FC<ButtonProps> = ({ onClick, className, children, url, newTab, trackingName }) =>
+const Button = ({ onClick, className, children, url, newTab, trackingName }: ButtonProps) =>
   url ? (
     <a
       href={url}

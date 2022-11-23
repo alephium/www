@@ -1,5 +1,5 @@
 import { HTMLMotionProps, motion } from 'framer-motion'
-import { FC, ReactNode } from 'react'
+import { ReactNode } from 'react'
 import styled, { css } from 'styled-components'
 
 import { deviceBreakPoints } from '../styles/global-style'
@@ -17,14 +17,7 @@ interface TextSnippetProps extends HTMLMotionProps<'div'> {
   children?: ReactNode
 }
 
-const TextSnippet: FC<TextSnippetProps> = ({
-  className,
-  title,
-  titleHierarchy = 'h2',
-  subtitle,
-  children,
-  ...props
-}) => {
+const TextSnippet = ({ className, title, titleHierarchy = 'h2', subtitle, children, ...props }: TextSnippetProps) => {
   // Removing props that should not go to the motion.div
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { bigSubtitle, smallSubtitle, bigText, narrowHeaderMobile, bigTitle, ...remainingProps } = props

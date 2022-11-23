@@ -1,5 +1,5 @@
 import { motion, useTransform, useScroll, MotionStyle } from 'framer-motion'
-import { useRef, FC, useEffect, useState } from 'react'
+import { useRef, FC, useEffect, useState, ReactNode } from 'react'
 import { isBrowser, isMobile } from '../utils/misc'
 
 interface ParallaxWrapperProps {
@@ -14,9 +14,10 @@ interface ParallaxWrapperProps {
   translateUpperBound?: number
   className?: string
   style?: MotionStyle
+  children?: ReactNode
 }
 
-const ParallaxWrapper: FC<ParallaxWrapperProps> = ({
+const ParallaxWrapper = ({
   className,
   speed = 5,
   shouldZoom,
@@ -29,7 +30,7 @@ const ParallaxWrapper: FC<ParallaxWrapperProps> = ({
   translateUpperBound,
   style,
   ...props
-}) => {
+}: ParallaxWrapperProps) => {
   const ref = useRef<HTMLDivElement>(null)
   const [initialDistanceToTop, setInitialDistanceToTop] = useState(0)
   const { scrollY } = useScroll()

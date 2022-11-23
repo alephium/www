@@ -1,10 +1,14 @@
-import { FC, useState, useEffect } from 'react'
+import { useState, useEffect, ReactNode } from 'react'
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
 
 import { deviceSizes } from '../styles/global-style'
 
-const Zoomer: FC = ({ children }) => {
+interface ZoomerProps {
+  children: ReactNode
+}
+
+const Zoomer = ({ children }: ZoomerProps) => {
   const zoomMargin = useZoomMargin()
 
   return <Zoom zoomMargin={zoomMargin}>{children}</Zoom>

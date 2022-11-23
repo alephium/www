@@ -33,8 +33,8 @@ const columnsVariants: Variants = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.25,
-      delay: 0.25
+      duration: 0.2,
+      delay: 0.15
     }
   }
 }
