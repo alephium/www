@@ -1,4 +1,4 @@
-import { motion, useTransform, useViewportScroll, MotionStyle } from 'framer-motion'
+import { motion, useTransform, useScroll, MotionStyle } from 'framer-motion'
 import { useRef, FC, useEffect, useState } from 'react'
 import { isBrowser, isMobile } from '../utils/misc'
 
@@ -32,7 +32,7 @@ const ParallaxWrapper: FC<ParallaxWrapperProps> = ({
 }) => {
   const ref = useRef<HTMLDivElement>(null)
   const [initialDistanceToTop, setInitialDistanceToTop] = useState(0)
-  const { scrollY } = useViewportScroll()
+  const { scrollY } = useScroll()
 
   const transformBounds = isBrowser
     ? [initialDistanceToTop - window.innerHeight, initialDistanceToTop + (ref.current?.offsetHeight || 0)]
