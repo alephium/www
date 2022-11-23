@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 30.71 30.71"
+   version="1.1"
+   id="svg1481"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs1485" />
+  <title
+     id="title1471">flux-flux-logo</title>
+  <path
+     id="Path_81"
+     data-name="Path 81"
+     d="M 15.46,0 A 15.36,15.36 0 1 1 0,15.36 15.36,15.36 0 0 1 15.46,0 Z"
+     style="fill:#4d4d4d" />
+  <path
+     id="Path_73"
+     style="fill:#ffffff"
+     d="M 15.519531 5.6191406 L 7 10.529297 L 7 14.890625 L 8.7402344 13.900391 L 9.7402344 13.320312 L 10.740234 13.900391 L 12.589844 15 L 12.589844 13.75 L 13.589844 13.169922 L 18.330078 10.429688 L 19.330078 9.8496094 L 20.330078 10.429688 L 24.050781 12.580078 L 24.050781 10.529297 L 15.519531 5.6191406 z M 19.330078 12.179688 L 14.589844 14.910156 L 14.589844 20.380859 L 19.320312 23.109375 L 24.050781 20.380859 L 24.050781 14.910156 L 19.330078 12.179688 z M 9.7207031 15.650391 L 7 17.220703 L 7 20.369141 L 9.7304688 21.939453 L 12.460938 20.369141 L 12.460938 17.220703 L 9.7207031 15.650391 z M 13.470703 22.089844 L 11.75 23.089844 L 15.529297 25.269531 L 17.289062 24.269531 L 13.539062 22.089844 L 13.470703 22.089844 z " />
+  <metadata
+     id="metadata1758">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>flux-flux-logo</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
