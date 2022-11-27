@@ -19,7 +19,7 @@ jobs:
       - name: Setup node.js
         uses: actions/setup-node@v1
         with:
-          node-version: 16.4
+          node-version: 18
 
       - name: Build website
         run: npm install gatsby-cli && npm run build

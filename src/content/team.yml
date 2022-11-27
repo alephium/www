@@ -2,7 +2,7 @@
   role: Founder, Core Developer
   image: ../images/team/cheng.jpg
 - name: Maud Simon
-  role: Chief of Staff
+  role: Chief Operating Officer
   image: ../images/team/maud.jpg
 - name: Alex Poltorak
   role: Strategy
@@ -21,7 +21,7 @@
   image: ../images/team/set.jpg
 - name: Thomas Droxler
   role: Core Blockchain Dev
-  image: ../images/team/thomas.png
+  image: ../images/team/thomas.jpg
 - name: h0ngcha0
   role: Core Blockchain Dev
   image: ../images/team/h0ngcha0.jpeg
@@ -36,7 +36,13 @@
   image: ../images/team/ilias.jpeg
 - name: Simer Plaha
   role: Core DB Dev
-  image: ../images/team/simer.png
+  image: ../images/team/simer.jpg
 - name: Vladimir Moshnyager
   role: Marketing & Project Awareness
   image: ../images/team/vladimir.jpeg
+- name: Thiago Freitas
+  role: Content Lead
+  image: ../images/team/thiago.jpg
+- name: Zhiming
+  role: Core Blockchain Dev
+  image: ../images/team/zhiming.jpg
