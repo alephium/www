@@ -36,7 +36,13 @@
   image: ../images/team/ilias.jpeg
 - name: Simer Plaha
   role: Core DB Dev
-  image: ../images/team/simer.png
+  image: ../images/team/simer.jpg
 - name: Vladimir Moshnyager
   role: Marketing & Project Awareness
   image: ../images/team/vladimir.jpeg
+- name: Thiago Freitas
+  role: Content Lead
+  image: ../images/team/thiago.jpg
+- name: Zhiming
+  role: Core Blockchain Dev
+  image: ../images/team/zhiming.jpg
