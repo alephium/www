@@ -83,7 +83,7 @@ export default styled(NavigationMenu)`
     align-items: center;
 
     & > :last-child {
-      margin-top: 2px; // Github button
+      margin-top: 5px; // Github button
     }
 
     @media ${deviceBreakPoints.smallMobile} {
