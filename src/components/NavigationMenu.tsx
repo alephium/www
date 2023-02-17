@@ -5,8 +5,8 @@ import { Link } from 'gatsby'
 import { deviceBreakPoints } from '../styles/global-style'
 
 import ArrowedLink from './ArrowedLink'
-import GitHubIcon from '../images/svgs/brand-icon-github.svg'
 import LogoText from '../images/svgs/logo-text.svg'
+import GitHubButton from 'react-github-btn'
 
 interface NavigationMenuProps {
   className?: string
@@ -24,15 +24,6 @@ const NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
     <div className="nav-end">
       <ArrowedLink
         className="nav-item"
-        url="https://docs.alephium.org/"
-        newTab
-        altColor
-        trackingName="main-nav:wiki-link"
-      >
-        Docs
-      </ArrowedLink>
-      <ArrowedLink
-        className="nav-item"
         url="https://explorer.alephium.org/"
         newTab
         altColor
@@ -45,21 +36,29 @@ const NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
         url="https://github.com/alephium/desktop-wallet/releases/latest/"
         newTab
         altColor
-        IconComponent={() => <div style={{ paddingRight: 6 }}>👛</div>}
         trackingName="main-nav:download-wallet-link"
       >
         Get the wallet
       </ArrowedLink>
       <ArrowedLink
         className="nav-item"
-        url="https://github.com/alephium"
-        IconComponent={GitHubIcon}
+        url="https://docs.alephium.org/dapps/getting-started/"
         newTab
         altColor
-        trackingName="main-nav:github-link"
+        trackingName="main-nav:build-dapp-link"
       >
-        See the code
+        Build a dApp
       </ArrowedLink>
+      <GitHubButton
+        href="https://github.com/alephium/alephium"
+        data-color-scheme="no-preference: dark; light: light; dark: dark;"
+        data-size="large"
+        data-show-count="true"
+        data-icon="octicon-star"
+        aria-label="Star alephium on GitHub"
+      >
+        Github
+      </GitHubButton>
     </div>
   </div>
 )
@@ -81,11 +80,20 @@ export default styled(NavigationMenu)`
     display: flex;
     margin-left: var(--spacing-3);
     gap: var(--spacing-6);
+    align-items: center;
+
+    & > :last-child {
+      margin-top: 5px; // Github button
+    }
 
     @media ${deviceBreakPoints.smallMobile} {
       flex-direction: column;
       gap: 0;
       align-items: flex-end;
+
+      & > :last-child {
+        margin-top: 12px; // Github button
+      }
     }
   }
 
