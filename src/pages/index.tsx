@@ -40,6 +40,8 @@ interface IndexPageProps extends PageProps {
 
 const IndexPage = (props: IndexPageProps) => {
   const pageContent = props.data.homepage.nodes[0].frontmatter
+  const params = new URLSearchParams(props.location.search)
+  const openPrivacyPolicyModal = params.get('privacy') !== null
 
   return (
     <>
@@ -67,7 +69,7 @@ const IndexPage = (props: IndexPageProps) => {
           <PageSectionShop content={pageContent.shopSection} />
           <PageSectionFollowUs content={pageContent.followUsSection} />
           <PageSectionSunOverTheMountains />
-          <Footer content={pageContent.footer} />
+          <Footer content={pageContent.footer} openPrivacyPolicyModal={openPrivacyPolicyModal} />
         </ThemeProvider>
       </main>
     </>
