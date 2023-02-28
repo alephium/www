@@ -1,4 +1,4 @@
-import { FC, useState } from 'react'
+import { FC, useEffect, useState } from 'react'
 import styled, { useTheme } from 'styled-components'
 
 import { deviceBreakPoints } from '../styles/global-style'
@@ -21,11 +21,12 @@ export interface FooterContentType {
 }
 
 interface FooterProps {
-  className?: string
   content: FooterContentType
+  openPrivacyPolicyModal?: boolean
+  className?: string
 }
 
-const Footer: FC<FooterProps> = ({ className, content }) => {
+const Footer: FC<FooterProps> = ({ className, content, openPrivacyPolicyModal }) => {
   const [isTeamModalOpen, setIsTeamModalOpen] = useState(false)
   const [isContactModalOpen, setIsContactModalOpen] = useState(false)
   const [isPrivacyPolicyModalOpen, setIsPrivacyPolicyModalOpen] = useState(false)
@@ -33,6 +34,11 @@ const Footer: FC<FooterProps> = ({ className, content }) => {
   columnsContent[2].links[0] = { ...columnsContent[2].links[0], openModal: setIsTeamModalOpen }
   columnsContent[2].links[2] = { ...columnsContent[2].links[2], openModal: setIsContactModalOpen }
   columnsContent[2].links[3] = { ...columnsContent[2].links[3], openModal: setIsPrivacyPolicyModalOpen }
+
+  useEffect(() => {
+    if (openPrivacyPolicyModal) setIsPrivacyPolicyModalOpen(true)
+  }, [openPrivacyPolicyModal])
+
   return (
     <div className={className}>
       <PageSectionContainerStyled>
