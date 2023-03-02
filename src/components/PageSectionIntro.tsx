@@ -83,10 +83,11 @@ const SectionContainer = styled.section`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: var(--spacing-8) 0;
+  margin-top: var(--spacing-8);
 `
 
 const IntroColumns = styled(Columns)`
+  margin-bottom: var(--spacing-8);
   @media (max-width: 1352px) {
     gap: var(--spacing-20);
   }

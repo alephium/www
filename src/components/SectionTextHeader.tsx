@@ -15,6 +15,7 @@ interface SectionTextHeaderProps {
   bigText?: boolean
   centered?: boolean
   sticky?: boolean
+  bottomBorder?: boolean
   children?: ReactNode
 }
 
@@ -26,6 +27,7 @@ const SectionTextHeader = ({
   bigText,
   sticky,
   centered,
+  bottomBorder = true,
   children
 }: SectionTextHeaderProps) => {
   const headingElementRef = useRef(null)
@@ -41,10 +43,12 @@ const SectionTextHeader = ({
     }
   }
 
+  const borderBottom = bottomBorder && headingReachedTopOfScreen ? `1px solid rgba(255, 255, 255, 0.1)` : undefined
+
   return (
     <>
       <div ref={headingElementRef} id={toId(title)} />
-      <motion.header className={className}>
+      <motion.header className={className} animate={{ borderBottom }}>
         <StyledTextSnippet
           title={title}
           subtitle={subtitle}
@@ -77,6 +81,7 @@ export default styled(SectionTextHeader)`
   display: flex;
   justify-content: center;
   padding: 0 var(--spacing-4);
+  border-bottom: 1px solid transparent;
 
   @media ${deviceBreakPoints.mobile} {
     margin-bottom: var(--spacing-10);

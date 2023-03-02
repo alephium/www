@@ -15,7 +15,15 @@ interface Props {
 
 const PageSectionMilestones = ({ content: { title, subtitle, timelines } }: Props) => (
   <SectionWrapper>
-    <StyledSectionTextHeader title={title} subtitle={subtitle} bigSubtitle bigText sticky centered />
+    <StyledSectionTextHeader
+      title={title}
+      subtitle={subtitle}
+      bigSubtitle
+      bigText
+      sticky
+      centered
+      bottomBorder={false}
+    />
     <Centered>
       <DualTimeline timelines={timelines} />
     </Centered>

@@ -7,6 +7,7 @@ import { deviceBreakPoints } from '../styles/global-style'
 import ArrowedLink from './ArrowedLink'
 import LogoText from '../images/svgs/logo-text.svg'
 import GitHubButton from 'react-github-btn'
+import SimpleLink from './SimpleLink'
 
 interface NavigationMenuProps {
   className?: string
@@ -35,7 +36,6 @@ const NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
         className="nav-item"
         url="https://github.com/alephium/desktop-wallet/releases/latest/"
         newTab
-        altColor
         trackingName="main-nav:download-wallet-link"
       >
         Get the wallet
@@ -70,6 +70,7 @@ const LinkStyled = styled(Link)`
 export default styled(NavigationMenu)`
   display: flex;
   justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.1);
 
   .nav-start .nav-item {
     font-weight: var(--fontWeight-semiBold);
