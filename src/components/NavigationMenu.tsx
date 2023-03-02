@@ -4,10 +4,9 @@ import { Link } from 'gatsby'
 
 import { deviceBreakPoints } from '../styles/global-style'
 
-import ArrowedLink from './ArrowedLink'
+import SimpleLink from './SimpleLink'
 import LogoText from '../images/svgs/logo-text.svg'
 import GitHubButton from 'react-github-btn'
-import SimpleLink from './SimpleLink'
 
 interface NavigationMenuProps {
   className?: string
@@ -23,32 +22,30 @@ const NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
       </div>
     </div>
     <div className="nav-end">
-      <ArrowedLink
+      <SimpleLink
         className="nav-item"
         url="https://explorer.alephium.org/"
         newTab
-        altColor
         trackingName="main-nav:explorer-link"
       >
         Explorer
-      </ArrowedLink>
-      <ArrowedLink
+      </SimpleLink>
+      <SimpleLink
         className="nav-item"
         url="https://github.com/alephium/desktop-wallet/releases/latest/"
         newTab
         trackingName="main-nav:download-wallet-link"
       >
         Get the wallet
-      </ArrowedLink>
-      <ArrowedLink
+      </SimpleLink>
+      <SimpleLink
         className="nav-item"
         url="https://docs.alephium.org/dapps/getting-started/"
         newTab
-        altColor
         trackingName="main-nav:build-dapp-link"
       >
         Build a dApp
-      </ArrowedLink>
+      </SimpleLink>
       <GitHubButton
         href="https://github.com/alephium/alephium"
         data-color-scheme="no-preference: dark; light: light; dark: dark;"
@@ -70,12 +67,7 @@ const LinkStyled = styled(Link)`
 export default styled(NavigationMenu)`
   display: flex;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.1);
-
-  .nav-start .nav-item {
-    font-weight: var(--fontWeight-semiBold);
-    font-size: var(--fontSize-24);
-  }
+  font-weight: var(--fontWeight-semiBold);
 
   .nav-end {
     display: flex;

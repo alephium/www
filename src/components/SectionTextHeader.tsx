@@ -56,6 +56,7 @@ const SectionTextHeader = ({
           bigSubtitle={bigSubtitle}
           bigText={bigText}
           animate={{ scale: headingReachedTopOfScreen ? 0.7 : 1 }}
+          transition={{ stiffness: 30 }}
           style={{ transformOrigin: centered ? 'center' : 'left' }}
         >
           {children}
