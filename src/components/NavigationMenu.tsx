@@ -6,59 +6,62 @@ import { deviceBreakPoints } from '../styles/global-style'
 
 import SimpleLink from './SimpleLink'
 import LogoText from '../images/svgs/logo-text.svg'
-import GitHubButton from 'react-github-btn'
+import GitHubIcon from '../images/svgs/brand-icon-github.svg'
+import SocialMediaIcon from './SocialMediaIcon'
 
 interface NavigationMenuProps {
   className?: string
 }
 
-const NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
-  <div className={className}>
-    <div className="nav-start">
-      <div className="nav-item">
-        <LinkStyled to="/" title="Go to homepage">
-          <LogoTextStyled />
-        </LinkStyled>
+const NavigationMenu: FC<NavigationMenuProps> = ({ className }) => {
+  return (
+    <div className={className}>
+      <div className="nav-start">
+        <div className="nav-item">
+          <LinkStyled to="/" title="Go to homepage">
+            <LogoTextStyled />
+          </LinkStyled>
+        </div>
+      </div>
+      <div className="nav-end">
+        <SimpleLink
+          className="nav-item"
+          url="https://explorer.alephium.org/"
+          newTab
+          trackingName="main-nav:explorer-link"
+        >
+          Explorer
+        </SimpleLink>
+        <SimpleLink
+          className="nav-item"
+          url="https://github.com/alephium/desktop-wallet/releases/latest/"
+          newTab
+          trackingName="main-nav:download-wallet-link"
+        >
+          Get the wallet
+        </SimpleLink>
+        <SimpleLink
+          className="nav-item"
+          url="https://docs.alephium.org/dapps/getting-started/"
+          newTab
+          trackingName="main-nav:build-dapp-link"
+        >
+          Build a dApp
+        </SimpleLink>
+        <SimpleLink className="nav-item" url="#follow_us" trackingName="main-nav:follow-us-link">
+          Follow us
+        </SimpleLink>
+
+        <GithubButton
+          name="Github"
+          ImageComponent={GitHubIcon}
+          url="https://github.com/alephium"
+          trackingName="main-nav:github-link"
+        />
       </div>
     </div>
-    <div className="nav-end">
-      <SimpleLink
-        className="nav-item"
-        url="https://explorer.alephium.org/"
-        newTab
-        trackingName="main-nav:explorer-link"
-      >
-        Explorer
-      </SimpleLink>
-      <SimpleLink
-        className="nav-item"
-        url="https://github.com/alephium/desktop-wallet/releases/latest/"
-        newTab
-        trackingName="main-nav:download-wallet-link"
-      >
-        Get the wallet
-      </SimpleLink>
-      <SimpleLink
-        className="nav-item"
-        url="https://docs.alephium.org/dapps/getting-started/"
-        newTab
-        trackingName="main-nav:build-dapp-link"
-      >
-        Build a dApp
-      </SimpleLink>
-      <GitHubButton
-        href="https://github.com/alephium/alephium"
-        data-color-scheme="no-preference: dark; light: light; dark: dark;"
-        data-size="large"
-        data-show-count="true"
-        data-icon="octicon-star"
-        aria-label="Star alephium on GitHub"
-      >
-        Github
-      </GitHubButton>
-    </div>
-  </div>
-)
+  )
+}
 
 const LinkStyled = styled(Link)`
   display: flex;
@@ -72,7 +75,7 @@ export default styled(NavigationMenu)`
   .nav-end {
     display: flex;
     margin-left: var(--spacing-3);
-    gap: var(--spacing-6);
+    gap: var(--spacing-5);
     align-items: center;
 
     & > :last-child {
@@ -107,4 +110,11 @@ const LogoTextStyled = styled(LogoText)`
   height: 1.625rem;
   fill: ${({ theme }) => theme.textPrimary};
   width: auto;
+`
+
+const GithubButton = styled(SocialMediaIcon)`
+  svg {
+    width: 30px;
+    height: 30px;
+  }
 `

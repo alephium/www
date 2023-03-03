@@ -23,14 +23,14 @@ export interface PageSectionShopContentType {
   }
 }
 
-interface FollowUsProps {
+interface ShopProps {
   className?: string
   content: PageSectionShopContentType
 }
 
 const shirtDesigns = [firstDesign, secondDesign, thirdDesign, fourthDesign]
 
-const Shop: FC<FollowUsProps> = ({ className, content }) => {
+const Shop: FC<ShopProps> = ({ className, content }) => {
   const [shirtDesign, setShirtDesign] = useState(firstDesign)
 
   useEffect(() => {

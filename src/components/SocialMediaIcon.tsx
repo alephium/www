@@ -32,7 +32,7 @@ export default styled(SocialMediaIcon)`
   transition: all 0.1s ease-out;
 
   &:hover {
-    transform: translateY(calc(var(--spacing-half) * -1));
+    transform: translateY(-3px);
 
     svg {
       opacity: 1;

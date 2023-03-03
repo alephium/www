@@ -15,6 +15,7 @@ import MediumIcon from '../images/svgs/brand-icon-medium.svg'
 import GitHubIcon from '../images/svgs/brand-icon-github.svg'
 import Columns from './Columns/Columns'
 import Column from './Columns/Column'
+import { deviceBreakPoints } from '../styles/global-style'
 
 export interface PageSectionFollowUsContentType {
   title: string
@@ -36,9 +37,9 @@ const FollowUs: FC<FollowUsProps> = ({ className, content }) => (
     <PageSectionContainer>
       <Columns>
         <Column>
-          <SectionTextHeader title={content.title} subtitle={content.subtitle} bigSubtitle bigText>
+          <SectionHeader title={content.title} subtitle={content.subtitle} bigSubtitle bigText>
             <p>{content.description}</p>
-          </SectionTextHeader>
+          </SectionHeader>
         </Column>
         <Column>
           <SocialMediaIconsList>
@@ -62,10 +63,10 @@ const FollowUs: FC<FollowUsProps> = ({ className, content }) => (
 )
 
 export default styled(FollowUs)`
-  padding: var(--spacing-12) 0;
   background-color: ${({ theme }) => theme.bgSecondary};
   color: ${({ theme }) => theme.textPrimary};
   align-items: center;
+  border-top: 1px solid ${({ theme }) => theme.separator};
 
   * {
     text-align: left;
@@ -84,10 +85,19 @@ const SocialMediaIconsList = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   border: 1px solid ${({ theme }) => theme.separator};
-  border-radius: 9px;
+  border-radius: 12px;
   padding: var(--spacing-4);
   width: 80%;
   margin: auto;
+  margin-top: var(--spacing-12);
+
+  @media ${deviceBreakPoints.ipad} {
+    margin-top: 0;
+  }
+`
+
+const SectionHeader = styled(SectionTextHeader)`
+  padding-top: var(--spacing-12);
 `
 
 const getIconByName = (name: string) => {
