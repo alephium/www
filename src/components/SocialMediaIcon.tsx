@@ -53,15 +53,12 @@ export default styled(SocialMediaIcon)`
   transition: all 0.1s ease-out;
 
   &:hover {
-    transform: translateY(-3px);
-
     svg {
       opacity: 1;
     }
 
     ${Title} {
       color: ${({ theme }) => theme.textPrimary};
-      transform: translateY(3px);
     }
   }
 `
