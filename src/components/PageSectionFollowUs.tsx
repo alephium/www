@@ -32,42 +32,54 @@ interface FollowUsProps {
   content: PageSectionFollowUsContentType
 }
 
-const FollowUs: FC<FollowUsProps> = ({ className, content }) => (
-  <section className={className}>
-    <PageSectionContainer>
-      <Columns>
-        <Column>
-          <SectionHeader title={content.title} subtitle={content.subtitle} bigSubtitle bigText>
-            <p>{content.description}</p>
-          </SectionHeader>
-        </Column>
-        <Column>
-          <SocialMediaIconsList>
-            {content.socialMediaLinks.map(({ name, url }) => {
-              const Icon = getIconByName(name)
-              return (
-                <SocialMediaIcon
-                  key={name}
-                  name={name}
-                  url={url}
-                  ImageComponent={Icon}
-                  trackingName={`follow-us-section:${name}-link`}
-                  displayName={true}
-                />
-              )
-            })}
-          </SocialMediaIconsList>
-        </Column>
-      </Columns>
-    </PageSectionContainer>
-  </section>
-)
+const FollowUs: FC<FollowUsProps> = ({ className, content }) => {
+  const handleScrollToTop = () => {
+    document.body.scrollTop = 0 // For Safari
+    document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
+  }
+
+  return (
+    <section className={className}>
+      <PageSectionContainer>
+        <Columns>
+          <Column>
+            <SectionHeader title={content.title} subtitle={content.subtitle} bigSubtitle bigText>
+              <p>{content.description}</p>
+            </SectionHeader>
+          </Column>
+          <Column>
+            <SocialMediaIconsList>
+              {content.socialMediaLinks.map(({ name, url }) => {
+                const Icon = getIconByName(name)
+                return (
+                  <SocialMediaIcon
+                    key={name}
+                    name={name}
+                    url={url}
+                    ImageComponent={Icon}
+                    trackingName={`follow-us-section:${name}-link`}
+                    displayName={true}
+                  />
+                )
+              })}
+            </SocialMediaIconsList>
+          </Column>
+        </Columns>
+      </PageSectionContainer>
+      <ScrollToTopButton role="button" onClick={handleScrollToTop}>
+        ↑ Scroll to top
+      </ScrollToTopButton>
+    </section>
+  )
+}
 
 export default styled(FollowUs)`
+  position: relative;
   background-color: ${({ theme }) => theme.bgSecondary};
   color: ${({ theme }) => theme.textPrimary};
   align-items: center;
   border-top: 1px solid ${({ theme }) => theme.separator};
+  padding-bottom: var(--spacing-12);
 
   * {
     text-align: left;
@@ -100,6 +112,27 @@ const SocialMediaIconsList = styled.div`
 
 const SectionHeader = styled(SectionTextHeader)`
   padding-top: var(--spacing-12);
+`
+
+const ScrollToTopButton = styled.a`
+  position: absolute;
+  right: 10vw;
+  padding: 0 15px;
+  bottom: -20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: ${({ theme }) => theme.bgPrimary};
+  color: ${({ theme }) => theme.textSecondary};
+  border-radius: 9px;
+  border: 1px solid ${({ theme }) => theme.borderPrimary};
+  cursor: pointer;
+
+  &:hover {
+    color: ${({ theme }) => theme.textPrimary};
+  }
 `
 
 const getIconByName = (name: string) => {

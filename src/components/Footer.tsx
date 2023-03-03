@@ -90,7 +90,6 @@ let FooterColumn: FC<FooterColumnProps> = ({ className, title, links }) => {
 
 export default styled(Footer)`
   padding: var(--spacing-12) 0;
-  margin-top: var(--spacing-12);
   background-color: ${({ theme }) => theme.bgTertiary};
   color: ${({ theme }) => theme.textPrimary};
   font-size: var(--fontSize-18);
