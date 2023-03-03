@@ -133,10 +133,6 @@ const GlobalStyle = createGlobalStyle`
     --border-primary-light: 1px solid rgb(0, 0, 0, 0.08);
   }
 
-  html {
-    scroll-behavior: smooth;
-  }
-
   body {
     background-color: ${({ theme }) => theme.bgSecondary};
     color: ${({ theme }) => theme.textPrimary};
