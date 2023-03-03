@@ -30,8 +30,11 @@ const PageSectionMilestones = ({ content: { title, subtitle, timelines } }: Prop
   </SectionWrapper>
 )
 
+export default PageSectionMilestones
+
 const SectionWrapper = styled.section`
-  margin-top: var(--spacing-16);
+  padding-top: var(--spacing-16);
+  background-color: ${({ theme }) => theme.bgTertiary};
 `
 
 const Centered = styled.div`
@@ -40,7 +43,6 @@ const Centered = styled.div`
 `
 
 const StyledSectionTextHeader = styled(SectionTextHeader)`
-  background-color: ${({ theme }) => theme.bgSecondary};
+  background-color: ${({ theme }) => theme.bgTertiary};
+  margin-bottom: var(--spacing-16);
 `
-
-export default PageSectionMilestones

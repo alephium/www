@@ -193,6 +193,10 @@ const PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, cont
   )
 }
 
+export default styled(PageSectionTechnology)`
+  background-color: ${({ theme }) => theme.bgTertiary};
+`
+
 const SectionContainer = styled.section`
   position: relative;
 `
@@ -218,7 +222,7 @@ const TopGradient = styled(motion.div)`
   background-position-y: top;
   z-index: 3000;
   pointer-events: none;
-  opacity: 0.6;
+  opacity: 0.3;
 `
 
 const ParallaxImage = styled(ParallaxWrapper)<{ src: string }>`
@@ -245,7 +249,7 @@ const SectionTextHeaderStyled = styled(SectionTextHeader)`
 `
 
 const TechSection = styled.div`
-  background-color: ${({ theme }) => theme.bgSecondary};
+  background-color: ${({ theme }) => theme.bgTertiary};
   padding: var(--spacing-8) 0;
   position: relative;
   overflow: hidden;
@@ -253,8 +257,4 @@ const TechSection = styled.div`
   @media ${deviceBreakPoints.mobile} {
     padding: var(--spacing-5) 0 var(--spacing-14);
   }
-`
-
-export default styled(PageSectionTechnology)`
-  background-color: ${({ theme }) => theme.bgSecondary};
 `

@@ -147,12 +147,15 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
   )
 }
 
+export default PageSectionNumbers
+
 const NumbersSection = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: var(--spacing-12);
-  margin-bottom: var(--spacing-20);
+  padding-top: var(--spacing-12);
+  padding-bottom: var(--spacing-20);
+  background-color: ${({ theme }) => theme.bgTertiary};
 
   @media ${deviceBreakPoints.mobile} {
     margin-top: var(--spacing-6);
@@ -210,5 +213,3 @@ const ArrowedLinkStyled = styled(ArrowedLink)`
 const ColumnsStyled = styled(Columns)`
   align-items: baseline;
 `
-
-export default PageSectionNumbers

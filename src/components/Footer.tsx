@@ -88,6 +88,15 @@ let FooterColumn: FC<FooterColumnProps> = ({ className, title, links }) => {
   )
 }
 
+export default styled(Footer)`
+  padding: var(--spacing-12) 0;
+  margin-top: var(--spacing-12);
+  background-color: ${({ theme }) => theme.bgTertiary};
+  color: ${({ theme }) => theme.textPrimary};
+  font-size: var(--fontSize-18);
+  border-top: 1px solid ${({ theme }) => theme.separator};
+`
+
 const LogosSection = styled.div`
   display: flex;
   flex-direction: column;
@@ -102,13 +111,6 @@ const Separator = styled.div`
   @media ${deviceBreakPoints.mobile} {
     display: none;
   }
-`
-
-export default styled(Footer)`
-  padding-bottom: var(--spacing-10);
-  background-color: ${({ theme }) => theme.bgSecondary};
-  color: ${({ theme }) => theme.textPrimary};
-  font-size: var(--fontSize-18);
 `
 
 FooterColumn = styled(FooterColumn)`

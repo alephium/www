@@ -52,6 +52,7 @@ const FollowUs: FC<FollowUsProps> = ({ className, content }) => (
                   url={url}
                   ImageComponent={Icon}
                   trackingName={`follow-us-section:${name}-link`}
+                  displayName={true}
                 />
               )
             })}
@@ -90,6 +91,7 @@ const SocialMediaIconsList = styled.div`
   width: 80%;
   margin: auto;
   margin-top: var(--spacing-12);
+  background-color: ${({ theme }) => theme.bgTertiary};
 
   @media ${deviceBreakPoints.ipad} {
     margin-top: 0;
