@@ -24,33 +24,28 @@ const NavigationMenu: FC<NavigationMenuProps> = ({ className }) => {
         </div>
       </div>
       <div className="nav-end">
-        <SimpleLink
-          className="nav-item"
-          url="https://explorer.alephium.org/"
-          newTab
-          trackingName="main-nav:explorer-link"
-        >
+        <NavLink className="nav-item" url="https://explorer.alephium.org/" newTab trackingName="main-nav:explorer-link">
           Explorer
-        </SimpleLink>
-        <SimpleLink
+        </NavLink>
+        <NavLink
           className="nav-item"
           url="https://github.com/alephium/desktop-wallet/releases/latest/"
           newTab
           trackingName="main-nav:download-wallet-link"
         >
           Get the wallet
-        </SimpleLink>
-        <SimpleLink
+        </NavLink>
+        <NavLink
           className="nav-item"
           url="https://docs.alephium.org/dapps/getting-started/"
           newTab
           trackingName="main-nav:build-dapp-link"
         >
           Build a dApp
-        </SimpleLink>
-        <SimpleLink className="nav-item" url="#follow_us" trackingName="main-nav:follow-us-link">
+        </NavLink>
+        <NavLink className="nav-item" url="#follow_us" trackingName="main-nav:follow-us-link">
           Follow us
-        </SimpleLink>
+        </NavLink>
 
         <GithubButton
           name="Github"
@@ -116,5 +111,14 @@ const GithubButton = styled(SocialMediaIcon)`
   svg {
     width: 30px;
     height: 30px;
+  }
+`
+
+const NavLink = styled(SimpleLink)`
+  font-size: var(--fontSize-18);
+  color: ${({ theme }) => theme.textPrimary};
+
+  &:hover {
+    color: ${({ theme }) => theme.textSecondary};
   }
 `
