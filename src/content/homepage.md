@@ -317,10 +317,10 @@ shopSection:
     url: https://alephium.myspreadshop.ch
 
 followUsSection:
-  title: Follow us
-  subtitle: Contribute & Join the community
-  description: Alephium's community is growing fast. Fascinated by our
-    technology? Come learn and build with us!
+  title: Community
+  subtitle: Come and join the fun
+  description: Alephium's community is growing fast. Fascinated by the
+    technology? Come learn and build!
   socialMediaLinks:
     - name: Discord
       url: https://discord.gg/JErgRBfRSB

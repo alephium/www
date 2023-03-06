@@ -43,8 +43,8 @@ const NavigationMenu: FC<NavigationMenuProps> = ({ className }) => {
         >
           Build a dApp
         </NavLink>
-        <NavLink className="nav-item" url="#follow_us" trackingName="main-nav:follow-us-link">
-          Follow us
+        <NavLink className="nav-item" url="#community" trackingName="main-nav:follow-us-link">
+          Community
         </NavLink>
 
         <GithubButton
