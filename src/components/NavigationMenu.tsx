@@ -41,7 +41,7 @@ const NavigationMenu = ({ className }: NavigationMenuProps) => (
       >
         Build a dApp
       </NavLink>
-      <NavLink className="nav-item" url="#community" trackingName="main-nav:follow-us-link">
+      <NavLink className="nav-item" url="#community" trackingName="main-nav:community">
         Community
       </NavLink>
 

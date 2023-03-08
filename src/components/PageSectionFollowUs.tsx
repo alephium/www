@@ -32,45 +32,40 @@ interface FollowUsProps {
   content: PageSectionFollowUsContentType
 }
 
-const FollowUs: FC<FollowUsProps> = ({ className, content }) => {
-  const handleScrollToTop = () => {
-    document.body.scrollTop = 0 // For Safari
-    document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
-  }
+const FollowUs: FC<FollowUsProps> = ({ className, content }) => (
+  <section className={className}>
+    <PageSectionContainer>
+      <Columns>
+        <Column>
+          <SectionHeader title={content.title} subtitle={content.subtitle} bigSubtitle bigText>
+            <p>{content.description}</p>
+          </SectionHeader>
+        </Column>
+        <Column>
+          <SocialMediaIconsList>
+            {content.socialMediaLinks.map(({ name, url }) => (
+              <SocialMediaIcon
+                key={name}
+                name={name}
+                url={url}
+                ImageComponent={getIconByName(name)}
+                trackingName={`follow-us-section:${name}-link`}
+                displayName={true}
+              />
+            ))}
+          </SocialMediaIconsList>
+        </Column>
+      </Columns>
+    </PageSectionContainer>
+    <ScrollToTopButton role="button" onClick={handleScrollToTop}>
+      ↑ Scroll to top
+    </ScrollToTopButton>
+  </section>
+)
 
-  return (
-    <section className={className}>
-      <PageSectionContainer>
-        <Columns>
-          <Column>
-            <SectionHeader title={content.title} subtitle={content.subtitle} bigSubtitle bigText>
-              <p>{content.description}</p>
-            </SectionHeader>
-          </Column>
-          <Column>
-            <SocialMediaIconsList>
-              {content.socialMediaLinks.map(({ name, url }) => {
-                const Icon = getIconByName(name)
-                return (
-                  <SocialMediaIcon
-                    key={name}
-                    name={name}
-                    url={url}
-                    ImageComponent={Icon}
-                    trackingName={`follow-us-section:${name}-link`}
-                    displayName={true}
-                  />
-                )
-              })}
-            </SocialMediaIconsList>
-          </Column>
-        </Columns>
-      </PageSectionContainer>
-      <ScrollToTopButton role="button" onClick={handleScrollToTop}>
-        ↑ Scroll to top
-      </ScrollToTopButton>
-    </section>
-  )
+const handleScrollToTop = () => {
+  document.body.scrollTop = 0 // For Safari
+  document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
 }
 
 export default styled(FollowUs)`
