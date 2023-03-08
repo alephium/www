@@ -1,4 +1,3 @@
-import { FC } from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 
@@ -13,50 +12,48 @@ interface NavigationMenuProps {
   className?: string
 }
 
-const NavigationMenu: FC<NavigationMenuProps> = ({ className }) => {
-  return (
-    <div className={className}>
-      <div className="nav-start">
-        <div className="nav-item">
-          <LinkStyled to="/" title="Go to homepage">
-            <LogoTextStyled />
-          </LinkStyled>
-        </div>
-      </div>
-      <div className="nav-end">
-        <NavLink className="nav-item" url="https://explorer.alephium.org/" newTab trackingName="main-nav:explorer-link">
-          Explorer
-        </NavLink>
-        <NavLink
-          className="nav-item"
-          url="https://github.com/alephium/desktop-wallet/releases/latest/"
-          newTab
-          trackingName="main-nav:download-wallet-link"
-        >
-          Get the wallet
-        </NavLink>
-        <NavLink
-          className="nav-item"
-          url="https://docs.alephium.org/dapps/getting-started/"
-          newTab
-          trackingName="main-nav:build-dapp-link"
-        >
-          Build a dApp
-        </NavLink>
-        <NavLink className="nav-item" url="#community" trackingName="main-nav:follow-us-link">
-          Community
-        </NavLink>
-
-        <GithubButton
-          name="Github"
-          ImageComponent={GitHubIcon}
-          url="https://github.com/alephium"
-          trackingName="main-nav:github-link"
-        />
+const NavigationMenu = ({ className }: NavigationMenuProps) => (
+  <div className={className}>
+    <div className="nav-start">
+      <div className="nav-item">
+        <LinkStyled to="/" title="Go to homepage">
+          <LogoTextStyled />
+        </LinkStyled>
       </div>
     </div>
-  )
-}
+    <div className="nav-end">
+      <NavLink className="nav-item" url="https://explorer.alephium.org/" newTab trackingName="main-nav:explorer-link">
+        Explorer
+      </NavLink>
+      <NavLink
+        className="nav-item"
+        url="https://github.com/alephium/desktop-wallet/releases/latest/"
+        newTab
+        trackingName="main-nav:download-wallet-link"
+      >
+        Get the wallet
+      </NavLink>
+      <NavLink
+        className="nav-item"
+        url="https://docs.alephium.org/dapps/getting-started/"
+        newTab
+        trackingName="main-nav:build-dapp-link"
+      >
+        Build a dApp
+      </NavLink>
+      <NavLink className="nav-item" url="#community" trackingName="main-nav:follow-us-link">
+        Community
+      </NavLink>
+
+      <GithubButton
+        name="Github"
+        ImageComponent={GitHubIcon}
+        url="https://github.com/alephium"
+        trackingName="main-nav:github-link"
+      />
+    </div>
+  </div>
+)
 
 const LinkStyled = styled(Link)`
   display: flex;
