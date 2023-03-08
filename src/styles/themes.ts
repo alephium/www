@@ -12,15 +12,15 @@ export const darkTheme: DefaultTheme = {
 
   bgPrimary: 'var(--color-grey-800)',
   bgSecondary: 'var(--color-grey-900)',
-  bgTertiary: '#1C1A1A',
+  bgTertiary: 'var(--color-grey-950)',
   bgSurface: 'var(--color-grey-700)',
 
-  borderPrimary: 'var(--border-primary-dark)',
+  borderPrimary: 'var(--color-grey-700)',
 
   link: 'var(--color-grey-100)',
   linkAlt: 'var(--color-white)',
 
-  separator: 'var(--color-grey-700)'
+  separator: 'var(--color-grey-800)'
 }
 
 export const lightTheme: DefaultTheme = {

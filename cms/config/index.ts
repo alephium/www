@@ -135,7 +135,7 @@ export default {
               ]
             },
             {
-              label: 'Follow us section',
+              label: 'Community section',
               name: 'followUsSection',
               widget: 'object',
               required: true,

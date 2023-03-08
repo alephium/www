@@ -339,7 +339,7 @@ const YearHeader = styled.div`
   top: ${yearRowPositionDesktop};
   z-index: 3;
   height: ${headerHeight}px;
-  background-color: ${({ theme }) => theme.bgSecondary};
+  background-color: ${({ theme }) => theme.bgTertiary};
 
   > * {
     flex: 1;

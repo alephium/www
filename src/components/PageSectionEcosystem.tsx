@@ -31,7 +31,7 @@ const PageSectionEcosystem = ({ className }: { className?: string }) => {
   return (
     <section className={className}>
       <SectionTextHeader title={title} subtitle={subtitle} bigSubtitle bigText sticky />
-      <PageSectionContainer>
+      <SectionContainer>
         <Subsections>
           {subsections.map(({ title, description, image, items }: SubsectionType) => (
             <Subsection key={title} animateEntry>
@@ -73,7 +73,7 @@ const PageSectionEcosystem = ({ className }: { className?: string }) => {
             </Subsection>
           ))}
         </Subsections>
-      </PageSectionContainer>
+      </SectionContainer>
     </section>
   )
 }
@@ -82,6 +82,10 @@ export default styled(PageSectionEcosystem)`
   padding-top: var(--spacing-16);
   padding-bottom: var(--spacing-20);
   position: relative;
+`
+
+const SectionContainer = styled(PageSectionContainer)`
+  margin-top: var(--spacing-12);
 `
 
 const Subsections = styled.div`
@@ -191,7 +195,7 @@ const SubsectionItem = styled(motion.div)`
   box-sizing: border-box;
   border-radius: 9px;
   font-size: 13px;
-  border: ${({ theme }) => theme.borderPrimary};
+  border: 1px solid ${({ theme }) => theme.borderPrimary};
 
   &:hover {
     ${SubsectionItemTitle}.with-logo {

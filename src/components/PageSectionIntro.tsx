@@ -27,40 +27,38 @@ interface PageSectionIntroProps {
   content: PageSectionIntroContentType
 }
 
-const PageSectionIntro: FC<PageSectionIntroProps> = ({ className, content }) => {
-  return (
-    <SectionContainer className={className} id="intro">
-      <SectionTextHeader bigSubtitle title={content.title} subtitle={content.subtitle} sticky />
-      <PageSectionContainer>
-        <IntroColumns gap="var(--spacing-32)">
-          <Column>
-            {content.cards && (
-              <IntroColumnContent
-                variants={cardContainerVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-              >
-                {content.cards.map((card) => (
-                  <CardEngagement
-                    title={card.title}
-                    image={card.image}
-                    key={card.title}
-                    link={card.link}
-                    trackingName={`intro-section-card:${card.title}-${card.link.text}-link`}
-                    variants={cardVariants}
-                  >
-                    <p>{card.description}</p>
-                  </CardEngagement>
-                ))}
-              </IntroColumnContent>
-            )}
-          </Column>
-        </IntroColumns>
-      </PageSectionContainer>
-    </SectionContainer>
-  )
-}
+const PageSectionIntro: FC<PageSectionIntroProps> = ({ className, content }) => (
+  <SectionContainer className={className} id="intro">
+    <SectionTextHeader bigSubtitle title={content.title} subtitle={content.subtitle} sticky />
+    <PageSectionContainer>
+      <IntroColumns gap="var(--spacing-32)">
+        <Column>
+          {content.cards && (
+            <IntroColumnContent
+              variants={cardContainerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+            >
+              {content.cards.map((card) => (
+                <CardEngagement
+                  title={card.title}
+                  image={card.image}
+                  key={card.title}
+                  link={card.link}
+                  trackingName={`intro-section-card:${card.title}-${card.link.text}-link`}
+                  variants={cardVariants}
+                >
+                  <p>{card.description}</p>
+                </CardEngagement>
+              ))}
+            </IntroColumnContent>
+          )}
+        </Column>
+      </IntroColumns>
+    </PageSectionContainer>
+  </SectionContainer>
+)
 
 const cardContainerVariants = {
   hidden: { opacity: 0 },
@@ -83,10 +81,11 @@ const SectionContainer = styled.section`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: var(--spacing-8) 0;
+  margin-top: var(--spacing-8);
 `
 
 const IntroColumns = styled(Columns)`
+  margin-bottom: var(--spacing-8);
   @media (max-width: 1352px) {
     gap: var(--spacing-20);
   }

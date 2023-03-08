@@ -23,14 +23,14 @@ export interface PageSectionShopContentType {
   }
 }
 
-interface FollowUsProps {
+interface ShopProps {
   className?: string
   content: PageSectionShopContentType
 }
 
 const shirtDesigns = [firstDesign, secondDesign, thirdDesign, fourthDesign]
 
-const Shop: FC<FollowUsProps> = ({ className, content }) => {
+const Shop: FC<ShopProps> = ({ className, content }) => {
   const [shirtDesign, setShirtDesign] = useState(firstDesign)
 
   useEffect(() => {
@@ -80,7 +80,7 @@ const Shop: FC<FollowUsProps> = ({ className, content }) => {
 
 export default styled(Shop)`
   padding: var(--spacing-12) 0;
-  background-color: ${({ theme }) => theme.bgSecondary};
+  background-color: ${({ theme }) => theme.bgTertiary};
   color: ${({ theme }) => theme.textPrimary};
   align-items: center;
 

@@ -1,5 +1,5 @@
 import { motion, useTransform, useScroll, MotionStyle } from 'framer-motion'
-import { useRef, FC, useEffect, useState, ReactNode } from 'react'
+import { useRef, useEffect, useState, ReactNode } from 'react'
 import { isBrowser, isMobile } from '../utils/misc'
 
 interface ParallaxWrapperProps {

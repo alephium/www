@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { ReactNode, useRef, useState } from 'react'
-import styled from 'styled-components'
+import styled, { useTheme } from 'styled-components'
 import useElementDistanceToTop from '../hooks/useElementDistanceToTop'
 import { deviceBreakPoints } from '../styles/global-style'
 import { toId } from '../utils/misc'
@@ -15,6 +15,7 @@ interface SectionTextHeaderProps {
   bigText?: boolean
   centered?: boolean
   sticky?: boolean
+  bottomBorder?: boolean
   children?: ReactNode
 }
 
@@ -26,12 +27,14 @@ const SectionTextHeader = ({
   bigText,
   sticky,
   centered,
+  bottomBorder = true,
   children
 }: SectionTextHeaderProps) => {
   const headingElementRef = useRef(null)
   const headingDistanceFromTopOfScreen = useElementDistanceToTop(headingElementRef)
   const [headingReachedTopOfScreen, setHeadingReachedTopOfScreen] = useState(false)
   const isHeadingDistanceFromTopOfScreenInitialized = headingDistanceFromTopOfScreen !== undefined
+  const theme = useTheme()
 
   if (sticky && isHeadingDistanceFromTopOfScreenInitialized) {
     if (headingDistanceFromTopOfScreen <= 0 && !headingReachedTopOfScreen) {
@@ -41,10 +44,13 @@ const SectionTextHeader = ({
     }
   }
 
+  const borderBottom = bottomBorder && headingReachedTopOfScreen ? `1px solid rgba(255, 255, 255, 0.1)` : undefined
+  const backgroundColor = headingReachedTopOfScreen ? theme.bgTertiary : 'transparent'
+
   return (
     <>
       <div ref={headingElementRef} id={toId(title)} />
-      <motion.header className={className}>
+      <motion.header className={className} animate={{ borderBottom, backgroundColor }}>
         <StyledTextSnippet
           title={title}
           subtitle={subtitle}
@@ -52,6 +58,7 @@ const SectionTextHeader = ({
           bigSubtitle={bigSubtitle}
           bigText={bigText}
           animate={{ scale: headingReachedTopOfScreen ? 0.7 : 1 }}
+          transition={{ type: 'spring', stiffness: 1000, damping: 50 }}
           style={{ transformOrigin: centered ? 'center' : 'left' }}
         >
           {children}
@@ -73,10 +80,10 @@ export default styled(SectionTextHeader)`
   left: 0;
   text-align: ${(props) => (props.centered ? 'center' : 'left')};
   z-index: 2000;
-  backdrop-filter: blur(20px);
   display: flex;
   justify-content: center;
   padding: 0 var(--spacing-4);
+  border-bottom: 1px solid transparent;
 
   @media ${deviceBreakPoints.mobile} {
     margin-bottom: var(--spacing-10);

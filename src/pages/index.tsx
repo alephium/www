@@ -12,7 +12,6 @@ import PageSectionTechnology, { PageSectionTechnologyContentType } from '../comp
 import PageSectionNumbers, { PageSectionNumbersContentType } from '../components/PageSectionNumbers'
 import PageSectionMilestones, { PageSectionMilestonesContentType } from '../components/PageSectionMilestones'
 import PageSectionTodoList, { PageSectionTodoListContentType } from '../components/PageSectionTodoList'
-import PageSectionSunOverTheMountains from '../components/PageSectionSunOverTheMountains'
 import PageSectionFollowUs, { PageSectionFollowUsContentType } from '../components/PageSectionFollowUs'
 import Footer, { FooterContentType } from '../components/Footer'
 import PageSectionShop, { PageSectionShopContentType } from '../components/PageSectionShop'
@@ -68,7 +67,6 @@ const IndexPage = (props: IndexPageProps) => {
           <SectionDivider />
           <PageSectionShop content={pageContent.shopSection} />
           <PageSectionFollowUs content={pageContent.followUsSection} />
-          <PageSectionSunOverTheMountains />
           <Footer content={pageContent.footer} openPrivacyPolicyModal={openPrivacyPolicyModal} />
         </ThemeProvider>
       </main>

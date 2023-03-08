@@ -1,18 +1,18 @@
-import { FC } from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 import { deviceBreakPoints } from '../styles/global-style'
 
-import ArrowedLink from './ArrowedLink'
+import SimpleLink from './SimpleLink'
 import LogoText from '../images/svgs/logo-text.svg'
-import GitHubButton from 'react-github-btn'
+import GitHubIcon from '../images/svgs/brand-icon-github.svg'
+import SocialMediaIcon from './SocialMediaIcon'
 
 interface NavigationMenuProps {
   className?: string
 }
 
-const NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
+const NavigationMenu = ({ className }: NavigationMenuProps) => (
   <div className={className}>
     <div className="nav-start">
       <div className="nav-item">
@@ -22,43 +22,35 @@ const NavigationMenu: FC<NavigationMenuProps> = ({ className }) => (
       </div>
     </div>
     <div className="nav-end">
-      <ArrowedLink
-        className="nav-item"
-        url="https://explorer.alephium.org/"
-        newTab
-        altColor
-        trackingName="main-nav:explorer-link"
-      >
+      <NavLink className="nav-item" url="https://explorer.alephium.org/" newTab trackingName="main-nav:explorer-link">
         Explorer
-      </ArrowedLink>
-      <ArrowedLink
+      </NavLink>
+      <NavLink
         className="nav-item"
         url="https://github.com/alephium/desktop-wallet/releases/latest/"
         newTab
-        altColor
         trackingName="main-nav:download-wallet-link"
       >
         Get the wallet
-      </ArrowedLink>
-      <ArrowedLink
+      </NavLink>
+      <NavLink
         className="nav-item"
         url="https://docs.alephium.org/dapps/getting-started/"
         newTab
-        altColor
         trackingName="main-nav:build-dapp-link"
       >
         Build a dApp
-      </ArrowedLink>
-      <GitHubButton
-        href="https://github.com/alephium/alephium"
-        data-color-scheme="no-preference: dark; light: light; dark: dark;"
-        data-size="large"
-        data-show-count="true"
-        data-icon="octicon-star"
-        aria-label="Star alephium on GitHub"
-      >
-        Github
-      </GitHubButton>
+      </NavLink>
+      <NavLink className="nav-item" url="#community" trackingName="main-nav:community">
+        Community
+      </NavLink>
+
+      <GithubButton
+        name="Github"
+        ImageComponent={GitHubIcon}
+        url="https://github.com/alephium"
+        trackingName="main-nav:github-link"
+      />
     </div>
   </div>
 )
@@ -70,16 +62,12 @@ const LinkStyled = styled(Link)`
 export default styled(NavigationMenu)`
   display: flex;
   justify-content: space-between;
-
-  .nav-start .nav-item {
-    font-weight: var(--fontWeight-semiBold);
-    font-size: var(--fontSize-24);
-  }
+  font-weight: var(--fontWeight-semiBold);
 
   .nav-end {
     display: flex;
     margin-left: var(--spacing-3);
-    gap: var(--spacing-6);
+    gap: var(--spacing-5);
     align-items: center;
 
     & > :last-child {
@@ -114,4 +102,20 @@ const LogoTextStyled = styled(LogoText)`
   height: 1.625rem;
   fill: ${({ theme }) => theme.textPrimary};
   width: auto;
+`
+
+const GithubButton = styled(SocialMediaIcon)`
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+`
+
+const NavLink = styled(SimpleLink)`
+  font-size: var(--fontSize-18);
+  color: ${({ theme }) => theme.textPrimary};
+
+  &:hover {
+    color: ${({ theme }) => theme.textSecondary};
+  }
 `

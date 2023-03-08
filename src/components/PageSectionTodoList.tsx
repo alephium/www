@@ -124,8 +124,8 @@ const TodoItem = styled(motion.div)`
   min-width: 199px;
   padding: 25px 15px;
   background-color: ${({ theme }) => theme.bgPrimary};
-  border-radius: 9px;
-  border: 1px solid ${({ theme }) => theme.separator};
+  border-radius: 12px;
+  border: 1px solid ${({ theme }) => theme.borderPrimary};
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
