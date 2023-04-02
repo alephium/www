@@ -2,7 +2,7 @@ import styled, { ThemeProvider } from 'styled-components'
 import { graphql, PageProps } from 'gatsby'
 
 import GlobalStyle from '../../styles/global-style'
-import { darkTheme, lightTheme } from '../../styles/themes'
+import { darkTheme } from '../../styles/themes'
 
 import Seo from '../../components/Seo'
 import HackathonLandingSection, { HackathonLandingSectionContentType } from './HackathonLandingSection'
