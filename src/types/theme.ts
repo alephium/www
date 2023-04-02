@@ -9,6 +9,7 @@ declare module 'styled-components' {
     textPrimaryVariation: string
     textSecondary: string
     textTertiary: string
+    textHighlight: string
 
     bgPrimary: string
     bgSecondary: string

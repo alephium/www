@@ -9,6 +9,7 @@ export const darkTheme: DefaultTheme = {
   textPrimaryVariation: 'var(--color-grey-100)',
   textSecondary: 'var(--color-grey-200)',
   textTertiary: 'var(--color-grey-300)',
+  textHighlight: '#f7af14',
 
   bgPrimary: 'var(--color-grey-800)',
   bgSecondary: 'var(--color-grey-900)',
@@ -30,6 +31,7 @@ export const lightTheme: DefaultTheme = {
   textPrimaryVariation: 'var(--color-grey-600)',
   textSecondary: 'var(--color-grey-500)',
   textTertiary: 'var(--color-grey-400)',
+  textHighlight: '#f7af14',
 
   bgPrimary: 'var(--color-white)',
   bgSecondary: 'var(--color-grey)',
