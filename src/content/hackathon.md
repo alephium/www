@@ -1,6 +1,6 @@
 ---
 headerLandingSection:
-  tagline: "Come and join Alephium's first ever online hackathon."
+  tagline: "Following the Leman upgrade, here's Alephium's first ever online hackathon."
   title: Buidl On Alephium
   date: 15th - 25th April 2023
 introSection:

@@ -3,7 +3,7 @@ import Column from '../../components/Columns/Column'
 import Columns from '../../components/Columns/Columns'
 import PageSectionContainer from '../../components/PageSectionContainer'
 import SectionTextHeader from '../../components/SectionTextHeader'
-import TextSnippet from '../../components/TextSnippet'
+import LemanIllustration from '../../images/svgs/leman_pixel_illustration.svg'
 
 export type HackathonIntroSectionContentType = {
   title: string
@@ -21,7 +21,9 @@ const HackathonIntroSection = ({ content: { title, subtitle, description } }: Ha
       <Column>
         <SectionTextHeader bigSubtitle title={title} subtitle={subtitle} />
       </Column>
-      <IllustrationBox>yo</IllustrationBox>
+      <IllustrationBox>
+        <LemanIllustration />
+      </IllustrationBox>
     </Columns>
     <Description>{description}</Description>
   </SectionContainer>
@@ -30,13 +32,14 @@ const HackathonIntroSection = ({ content: { title, subtitle, description } }: Ha
 export default HackathonIntroSection
 
 const SectionContainer = styled(PageSectionContainer)`
-  margin: 10vh auto;
+  margin: 30vh auto;
 `
 
 const IllustrationBox = styled(Column)`
-  background-color: ${({ theme }) => theme.textHighlight};
+  background-color: ${({ theme }) => theme.bgPrimary};
 `
 
-const Description = styled(TextSnippet)`
-  padding: 10vh var(--spacing-4); ;
+const Description = styled.p`
+  padding: 10vh var(--spacing-4);
+  color: ${({ theme }) => theme.textPrimary};
 `
