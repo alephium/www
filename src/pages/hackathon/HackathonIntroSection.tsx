@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import Column from '../../components/Columns/Column'
 import Columns from '../../components/Columns/Columns'
-import PageSectionContainer from '../../components/PageSectionContainer'
 import SectionTextHeader from '../../components/SectionTextHeader'
 import GenevaWaterJet from './GenevaWaterJet'
 import HackathonSectionContainer from './HackathonSectionContainer'
