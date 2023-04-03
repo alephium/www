@@ -11,12 +11,12 @@ const TrackCard = ({ title, description, className }: TrackCardProp) => {
   const theme = useTheme()
   return (
     <Card className={className} borderColor={theme.bgPrimary} thickBorders bgColor={theme.bgSecondary}>
-      <h2>{title}</h2>
+      <h3>{title}</h3>
       <p>{description}</p>
     </Card>
   )
 }
 
 export default styled(TrackCard)`
-  padding: var(--spacing-4);
+  padding: var(--spacing-2) var(--spacing-4);
 `

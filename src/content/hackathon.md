@@ -17,13 +17,18 @@ hackathonInfo:
       text: "Application form"
       url: "https://yo.com"
   prerequisites:
-    title: Suggested prerequisites
+    title: Prerequisites
+    description: "Here are the main things you will need to know and use in order to create your dApp with Alephium. Get start easily by checking out or dedicated guide."
+    link: 
+      text: Getting started guide
+      url: https://docs.alephium.org/dapps/getting-started
     skills:
+      - Ralph (Alephium's smart contract language)
       - Typescript
-      - Ralph
-      - Alphred
+      - Alephium's Web3 SDK
   schedule: 
     title: Hackathon Schedule
+    description: "Here's what will happen:"
     events: 
       - Announcement and team enrollment
       - AMA with the judges
@@ -32,7 +37,7 @@ hackathonInfo:
       - Winners Announced
   ideasAndTracks:
     title: Suggested Ideas for Submission
-    subtitle: "Here's a list of tracks to get you going:"
+    subtitle: "Here's a list of tracks to get you going. You can of course go off the track and show us your next big idea, but know that the following categories will be appreciated."
     tracks:
       - title: DeFi
         description: Build the next-gen financial applications for the decentralized economy.
