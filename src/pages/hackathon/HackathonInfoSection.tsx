@@ -47,13 +47,13 @@ const HackathonInfoSection = ({ content, className }: HackathonInfoSectionProps)
   <div className={className}>
     <HackathonSectionContainer>
       <HackhathonSectionTitle title="The Hackathon" subtitle="What you need to know" sticky bigSubtitle />
-      <h2>{content.participantsInfo.title}</h2>
+      <h3>{content.participantsInfo.title}</h3>
       <p>{content.participantsInfo.description}</p>
       <StyledArrowedLink url={content.participantsInfo.link.url} newTab>
         {content.participantsInfo.link.text}
       </StyledArrowedLink>
       <br />
-      <h2>{content.prerequisites.title}</h2>
+      <h3>{content.prerequisites.title}</h3>
       <p>{content.prerequisites.description}</p>
 
       <ul>
@@ -64,8 +64,7 @@ const HackathonInfoSection = ({ content, className }: HackathonInfoSectionProps)
       <StyledArrowedLink url={content.prerequisites.link.url} newTab>
         {content.prerequisites.link.text}
       </StyledArrowedLink>
-      <br />
-      <h2>{content.schedule.title}</h2>
+      <h3>{content.schedule.title}</h3>
       <p>{content.schedule.description}</p>
       <br />
       <ScheduleItems>
@@ -77,7 +76,7 @@ const HackathonInfoSection = ({ content, className }: HackathonInfoSectionProps)
         ))}
       </ScheduleItems>
       <br />
-      <h2>{content.ideasAndTracks.title}</h2>
+      <h3>{content.ideasAndTracks.title}</h3>
       <p>{content.ideasAndTracks.subtitle}</p>
       <br />
       <TrackCards>

@@ -52,6 +52,11 @@ const Wrapper = styled.div`
   font-size: 18px; // Slighty increase base font size for marketing content
   line-height: 24px;
 
+  h3 {
+    margin-top: var(--spacing-6);
+    font-size: 28px !important;
+  }
+
   p {
     opacity: 0.9;
   }
