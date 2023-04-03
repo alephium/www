@@ -45,11 +45,16 @@ const IndexPage = (props: HackathonPageProps) => {
 export default IndexPage
 
 const Wrapper = styled.div`
+  // Some simple specific styles for text focused pages like the hackathon one.
   * {
     box-sizing: border-box;
   }
   font-size: 18px; // Slighty increase base font size for marketing content
   line-height: 24px;
+
+  p {
+    opacity: 0.9;
+  }
 `
 
 export const pageQuery = graphql`
@@ -78,10 +83,16 @@ export const pageQuery = graphql`
             }
             prerequisites {
               title
+              description
               skills
+              link {
+                text
+                url
+              }
             }
             schedule {
               title
+              description
               events
             }
             ideasAndTracks {
