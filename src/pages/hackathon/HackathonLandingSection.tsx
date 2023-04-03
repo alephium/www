@@ -54,24 +54,26 @@ const Content = styled.div`
   margin-bottom: -12%;
   margin-left: var(--spacing-14);
   margin-right: var(--spacing-14);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid ${({ theme }) => theme.borderPrimary};
 `
 
 const FirstContentBox = styled.div`
   padding: 5vh calc(max(3vw, 30px));
-  background-color: ${({ theme }) => colord(theme.bgTertiary).alpha(0.7).toHex()};
+  background-color: ${colord('#1111111').alpha(0.7).toRgbString()};
   backdrop-filter: blur(20px);
   max-height: 300px;
 `
 
 const SecondContentBox = styled.div`
-  background-color: ${({ theme }) => colord(theme.bgPrimary).alpha(0.3).toHex()};
+  background-color: ${colord('#222222').alpha(0.2).toRgbString()};
   backdrop-filter: blur(20px);
   padding: 2vh 3vw;
   max-height: 150px;
 `
 
 const TagLine = styled.h2`
-  color: ${({ theme }) => theme.textSecondary};
+  color: ${({ theme }) => theme.textPrimary};
   font-size: var(--fontSize-24);
   max-width: 500px;
 `
@@ -81,6 +83,6 @@ const Title = styled.h1`
   margin-top: 10px;
 `
 const Date = styled.h1`
-  color: ${({ theme }) => theme.textHighlight};
+  color: ${({ theme }) => theme.highlight};
   font-size: var(--fontSize-28);
 `

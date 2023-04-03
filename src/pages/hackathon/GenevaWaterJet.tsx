@@ -18,7 +18,7 @@ const GenevaWaterJet: React.FC = () => {
   const [scope, animate] = useAnimate()
 
   useEffect(() => {
-    animate('path', { opacity: [0.5, 1] }, { duration: 0.5, repeat: Infinity, delay: stagger(0.1) })
+    animate('path', { opacity: [0.3, 1] }, { duration: 0.5, repeat: Infinity, delay: stagger(0.1) })
   }, [animate, scope])
 
   return (

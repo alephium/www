@@ -35,6 +35,7 @@ const IndexPage = (props: HackathonPageProps) => {
         <HackathonLandingSection content={pageContent.headerLandingSection} />
         <SectionDivider />
         <HackathonIntroSection content={pageContent.introSection} />
+        <SectionDivider />
         <HackathonInfoSection content={pageContent.hackathonInfo} />
       </ThemeProvider>
     </Wrapper>
@@ -70,7 +71,14 @@ export const pageQuery = graphql`
             participantsInfo {
               title
               description
-              link
+              link {
+                text
+                url
+              }
+            }
+            prerequisites {
+              title
+              skills
             }
           }
         }

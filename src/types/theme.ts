@@ -9,7 +9,6 @@ declare module 'styled-components' {
     textPrimaryVariation: string
     textSecondary: string
     textTertiary: string
-    textHighlight: string
 
     bgPrimary: string
     bgSecondary: string
@@ -22,5 +21,8 @@ declare module 'styled-components' {
     linkAlt: string
 
     separator: string
+
+    highlight: string
+    highlightComplementary: string
   }
 }
