@@ -1,32 +1,58 @@
 import styled from 'styled-components'
-import Column from '../../components/Columns/Column'
-import PageSectionContainer from '../../components/PageSectionContainer'
+import ArrowedLink from '../../components/ArrowedLink'
+import HackathonSectionContainer from './HackathonSectionContainer'
+import HackhathonSectionTitle from './HackhathonSectionTitle'
 
 export type HackathonInfoSectionContentType = {
   participantsInfo: {
     title: string
     description: string
-    link: string
+    link: {
+      text: string
+      url: string
+    }
+  }
+  prerequisites: {
+    title: string
+    skills: string[]
   }
 }
 
 interface HackathonInfoSectionProps {
   content: HackathonInfoSectionContentType
+  className?: string
 }
 
-const HackathonInfoSection = ({ content }: HackathonInfoSectionProps) => (
-  <SectionContainer>
-    <Description>{content.participantsInfo.description}</Description>
-  </SectionContainer>
+const HackathonInfoSection = ({ content, className }: HackathonInfoSectionProps) => (
+  <div className={className}>
+    <HackathonSectionContainer>
+      <HackhathonSectionTitle title="The Hackathon" subtitle="What you need to know" sticky bigSubtitle />
+      <h3>{content.participantsInfo.title}</h3>
+      <p>{content.participantsInfo.description}</p>
+      <StyledArrowedLink url={content.participantsInfo.link.url} newTab>
+        {content.participantsInfo.link.text}
+      </StyledArrowedLink>
+      <br />
+      <h3>{content.prerequisites.title}</h3>
+      <p>
+        <ul>
+          {content.prerequisites.skills.map((s) => (
+            <li key={s}>{s}</li>
+          ))}
+        </ul>
+      </p>
+    </HackathonSectionContainer>
+  </div>
 )
 
-export default HackathonInfoSection
-
-const SectionContainer = styled(PageSectionContainer)`
-  margin: calc(max(30vh, 150px)) auto;
+export default styled(HackathonInfoSection)`
+  background-color: ${({ theme }) => theme.bgTertiary};
 `
 
-const Description = styled.p`
-  padding: 10vh var(--spacing-4);
-  color: ${({ theme }) => theme.textPrimary};
+const StyledArrowedLink = styled(ArrowedLink)`
+  color: ${({ theme }) => theme.highlightComplementary};
+
+  * {
+    fill: ${({ theme }) => theme.highlightComplementary};
+  }
 `

@@ -12,10 +12,12 @@ hackathonInfo:
   participantsInfo:
     title: Participants information
     description: "Participants can apply as an individual or with a team of up to 5 people. It is important that each entry (solo or team) submit a brief description of the idea and the skills of each participant to make the organization process more efficient and streamlined.
-    To enter your team, please fill out this application form."
-    link: "XX"
+    To enter your team, please fill out the following application form."
+    link: 
+      text: "Application form"
+      url: "https://yo.com"
   prerequisites:
-    title: Suggested participants prerequisites
+    title: Suggested prerequisites
     skills:
       - Typescript
       - Ralph

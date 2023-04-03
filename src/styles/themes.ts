@@ -9,7 +9,6 @@ export const darkTheme: DefaultTheme = {
   textPrimaryVariation: 'var(--color-grey-100)',
   textSecondary: 'var(--color-grey-200)',
   textTertiary: 'var(--color-grey-300)',
-  textHighlight: '#f7af14',
 
   bgPrimary: 'var(--color-grey-800)',
   bgSecondary: 'var(--color-grey-900)',
@@ -21,7 +20,10 @@ export const darkTheme: DefaultTheme = {
   link: 'var(--color-grey-100)',
   linkAlt: 'var(--color-white)',
 
-  separator: 'var(--color-grey-800)'
+  separator: 'var(--color-grey-800)',
+
+  highlight: '#f7af14',
+  highlightComplementary: '#23C4FF'
 }
 
 export const lightTheme: DefaultTheme = {
@@ -31,7 +33,6 @@ export const lightTheme: DefaultTheme = {
   textPrimaryVariation: 'var(--color-grey-600)',
   textSecondary: 'var(--color-grey-500)',
   textTertiary: 'var(--color-grey-400)',
-  textHighlight: '#f7af14',
 
   bgPrimary: 'var(--color-white)',
   bgSecondary: 'var(--color-grey)',
@@ -43,5 +44,8 @@ export const lightTheme: DefaultTheme = {
   link: 'var(--color-blue)',
   linkAlt: 'var(--color-black)',
 
-  separator: 'var(--color-grey-100)'
+  separator: 'var(--color-grey-100)',
+
+  highlight: '#f7af14',
+  highlightComplementary: '#23C4FF'
 }
