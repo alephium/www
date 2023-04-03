@@ -8,6 +8,7 @@ import Seo from '../../components/Seo'
 import HackathonLandingSection, { HackathonLandingSectionContentType } from './HackathonLandingSection'
 import SectionDivider from '../../components/SectionDivider'
 import HackathonIntroSection, { HackathonIntroSectionContentType } from './HackathonIntroSection'
+import HackathonInfoSection, { HackathonInfoSectionContentType } from './HackathonInfoSection'
 
 interface HackathonPageProps extends PageProps {
   data: {
@@ -16,6 +17,7 @@ interface HackathonPageProps extends PageProps {
         frontmatter: {
           headerLandingSection: HackathonLandingSectionContentType
           introSection: HackathonIntroSectionContentType
+          hackathonInfo: HackathonInfoSectionContentType
         }
       }[]
     }
@@ -30,13 +32,10 @@ const IndexPage = (props: HackathonPageProps) => {
       <Seo />
       <ThemeProvider theme={darkTheme}>
         <GlobalStyle />
-      </ThemeProvider>
-      <ThemeProvider theme={darkTheme}>
         <HackathonLandingSection content={pageContent.headerLandingSection} />
         <SectionDivider />
-      </ThemeProvider>
-      <ThemeProvider theme={darkTheme}>
         <HackathonIntroSection content={pageContent.introSection} />
+        <HackathonInfoSection content={pageContent.hackathonInfo} />
       </ThemeProvider>
     </Wrapper>
   )
@@ -66,6 +65,13 @@ export const pageQuery = graphql`
             title
             subtitle
             description
+          }
+          hackathonInfo {
+            participantsInfo {
+              title
+              description
+              link
+            }
           }
         }
       }

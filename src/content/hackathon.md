@@ -9,7 +9,7 @@ introSection:
   description: "For its first hackathon, Alephium invites talented builders from all over the world to experiment and leverage its new development paradigm to expand on existing capabilities and create the first wave of Alephium’s dApps. This hackathon aims to propel the developer community’s creativity into an enabling force for innovation and progress. 
   And there is more! Projects launched during the hackathon will have the opportunity to receive further support from Alephium to continue their development."
 hackathonInfo:
-  participantInfo:
+  participantsInfo:
     title: Participants information
     description: "Participants can apply as an individual or with a team of up to 5 people. It is important that each entry (solo or team) submit a brief description of the idea and the skills of each participant to make the organization process more efficient and streamlined.
     To enter your team, please fill out this application form."

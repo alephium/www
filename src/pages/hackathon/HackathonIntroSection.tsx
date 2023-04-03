@@ -3,7 +3,7 @@ import Column from '../../components/Columns/Column'
 import Columns from '../../components/Columns/Columns'
 import PageSectionContainer from '../../components/PageSectionContainer'
 import SectionTextHeader from '../../components/SectionTextHeader'
-import LemanIllustration from '../../images/svgs/leman_pixel_illustration.svg'
+import GenevaWaterJet from './GenevaWaterJet'
 
 export type HackathonIntroSectionContentType = {
   title: string
@@ -22,7 +22,7 @@ const HackathonIntroSection = ({ content: { title, subtitle, description } }: Ha
         <SectionTextHeader bigSubtitle title={title} subtitle={subtitle} />
       </Column>
       <IllustrationBox>
-        <LemanIllustration />
+        <GenevaWaterJet />
       </IllustrationBox>
     </Columns>
     <Description>{description}</Description>
@@ -32,7 +32,7 @@ const HackathonIntroSection = ({ content: { title, subtitle, description } }: Ha
 export default HackathonIntroSection
 
 const SectionContainer = styled(PageSectionContainer)`
-  margin: 30vh auto;
+  margin: 200px auto;
 `
 
 const IllustrationBox = styled(Column)`
