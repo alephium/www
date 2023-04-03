@@ -31,8 +31,9 @@ hackathonInfo:
       - Deadline for Submissions
       - Winners Announced
   ideasAndTracks:
-    title: Suggested Ideas for Submission - Tracks
-    ideas:
+    title: Suggested Ideas for Submission
+    subtitle: "Here's a list of tracks to get you going:"
+    tracks:
       - title: DeFi
         description: Build the next-gen financial applications for the decentralized economy.
       - title: NFTs

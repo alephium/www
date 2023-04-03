@@ -1,7 +1,9 @@
-import styled from 'styled-components'
+import styled, { useTheme } from 'styled-components'
 import ArrowedLink from '../../components/ArrowedLink'
+import { deviceBreakPoints } from '../../styles/global-style'
 import HackathonSectionContainer from './HackathonSectionContainer'
 import HackhathonSectionTitle from './HackhathonSectionTitle'
+import TrackCard from './TrackCard'
 
 export type HackathonInfoSectionContentType = {
   participantsInfo: {
@@ -15,6 +17,18 @@ export type HackathonInfoSectionContentType = {
   prerequisites: {
     title: string
     skills: string[]
+  }
+  schedule: {
+    title: string
+    events: string[]
+  }
+  ideasAndTracks: {
+    title: string
+    subtitle: string
+    tracks: {
+      title: string
+      description: string
+    }[]
   }
 }
 
@@ -41,6 +55,24 @@ const HackathonInfoSection = ({ content, className }: HackathonInfoSectionProps)
           ))}
         </ul>
       </p>
+      <br />
+      <h3>{content.schedule.title}</h3>
+      <p>
+        <ul>
+          {content.schedule.events.map((e) => (
+            <li key={e}>{e}</li>
+          ))}
+        </ul>
+      </p>
+      <br />
+      <h3>{content.ideasAndTracks.title}</h3>
+      <p>{content.ideasAndTracks.subtitle}</p>
+      <br />
+      <TrackCards>
+        {content.ideasAndTracks.tracks.map((t) => (
+          <TrackCard key={t.title} title={t.title} description={t.description} />
+        ))}
+      </TrackCards>
     </HackathonSectionContainer>
   </div>
 )
@@ -54,5 +86,17 @@ const StyledArrowedLink = styled(ArrowedLink)`
 
   * {
     fill: ${({ theme }) => theme.highlightComplementary};
+  }
+`
+
+const TrackCards = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+
+  @media ${deviceBreakPoints.mobile} {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
   }
 `
