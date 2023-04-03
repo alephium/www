@@ -35,7 +35,7 @@ const HackathonIntroSection = ({
 )
 
 export default styled(HackathonIntroSection)`
-  margin-top: var(--spacing-16);
+  margin-top: var(--spacing-8);
 `
 
 const IllustrationBox = styled(Column)`

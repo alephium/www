@@ -80,6 +80,18 @@ export const pageQuery = graphql`
               title
               skills
             }
+            schedule {
+              title
+              events
+            }
+            ideasAndTracks {
+              title
+              subtitle
+              tracks {
+                title
+                description
+              }
+            }
           }
         }
       }
