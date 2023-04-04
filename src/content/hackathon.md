@@ -41,12 +41,14 @@ hackathonInfo:
     tracks:
       - title: DeFi
         description: Build the next-gen financial applications for the decentralized economy.
+      - title: AI
+        description: Use Alephium to decentralize the use of artificial intelligence.
+      - title: Tooling/Infrastructure
+        description: Create developer/ infrastructure tooling for the Alephium Ecosystem and improve its security.
       - title: NFTs
         description: Combine creativity with Engineering to build awesome NFT dApps.
       - title: Gaming/Lottery
         description: Make some fun and interactive games on chain.
-      - title: Tooling/Infrastructure
-        description: Create developer/ infrastructure tooling for the Alephium Ecosystem and improve its security.
       - title: Interoperability
         description: Contribute to opening the Alephium ecosystem by connecting it to other chains.
   rules:

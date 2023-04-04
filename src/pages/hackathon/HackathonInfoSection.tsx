@@ -1,6 +1,9 @@
-import styled, { useTheme } from 'styled-components'
+import styled from 'styled-components'
 import ArrowedLink from '../../components/ArrowedLink'
 import { deviceBreakPoints } from '../../styles/global-style'
+import AI from './AnimatedIllustrations/AI'
+import DeFi from './AnimatedIllustrations/DeFi'
+import Tooling from './AnimatedIllustrations/Tooling'
 import HackathonSectionContainer from './HackathonSectionContainer'
 import HackhathonSectionTitle from './HackhathonSectionTitle'
 import TrackCard from './TrackCard'
@@ -55,7 +58,6 @@ const HackathonInfoSection = ({ content, className }: HackathonInfoSectionProps)
       <br />
       <h3>{content.prerequisites.title}</h3>
       <p>{content.prerequisites.description}</p>
-
       <ul>
         {content.prerequisites.skills.map((s) => (
           <li key={s}>{s}</li>
@@ -64,6 +66,7 @@ const HackathonInfoSection = ({ content, className }: HackathonInfoSectionProps)
       <StyledArrowedLink url={content.prerequisites.link.url} newTab>
         {content.prerequisites.link.text}
       </StyledArrowedLink>
+      <br />
       <h3>{content.schedule.title}</h3>
       <p>{content.schedule.description}</p>
       <br />
@@ -80,13 +83,20 @@ const HackathonInfoSection = ({ content, className }: HackathonInfoSectionProps)
       <p>{content.ideasAndTracks.subtitle}</p>
       <br />
       <TrackCards>
-        {content.ideasAndTracks.tracks.map((t) => (
-          <TrackCard key={t.title} title={t.title} description={t.description} />
+        {content.ideasAndTracks.tracks.map((t, i) => (
+          <TrackCard
+            illustration={animatedTrackIllustrations[i]}
+            key={t.title}
+            title={t.title}
+            description={t.description}
+          />
         ))}
       </TrackCards>
     </HackathonSectionContainer>
   </div>
 )
+
+const animatedTrackIllustrations = [<DeFi key="DeFi" />, <AI key="AI" />, <Tooling key="tooling" />]
 
 export default styled(HackathonInfoSection)`
   background-color: ${({ theme }) => theme.bgTertiary};
@@ -103,6 +113,7 @@ const StyledArrowedLink = styled(ArrowedLink)`
 const ScheduleItems = styled.div`
   display: flex;
   flex-direction: column;
+  padding-left: var(--spacing-2);
 `
 
 const ScheduleItem = styled.div`

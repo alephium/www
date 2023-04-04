@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import Column from '../../components/Columns/Column'
 import Columns from '../../components/Columns/Columns'
 import SectionTextHeader from '../../components/SectionTextHeader'
-import GenevaWaterJet from './GenevaWaterJet'
+import GenevaWaterJet from './AnimatedIllustrations/GenevaWaterJet'
 import HackathonSectionContainer from './HackathonSectionContainer'
 
 export type HackathonIntroSectionContentType = {
