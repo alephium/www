@@ -103,6 +103,14 @@ export const pageQuery = graphql`
                 description
               }
             }
+            prizes {
+              title
+              description
+              prizeList {
+                title
+                description
+              }
+            }
           }
           rulesAndJudging {
             rules {

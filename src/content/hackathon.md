@@ -53,6 +53,16 @@ hackathonInfo:
         description: Contribute to opening the Alephium ecosystem by connecting it to other chains.
   prizes:
     title: Prizes
+    description: "Buidl on Alephium features a total of $7.500 in cash prizes. Prizes will be awarded at the judges’ discretion and might be adapted according to the received submissions. Here are the list of prizes you can win:"
+    prizeList:
+      - title: First prize
+        description: 1 first prize of XXX$
+      - title: Second prize
+        description: 2 second prizes of XXX$ each
+      - title: Third prize  
+        description: 5 third prizes of XXX$ each
+      - title: Honorable Mention
+        description:  Up to 10 prizes of XXX$ each
 rulesAndJudging:
   rules:
     title: Submission Rules
