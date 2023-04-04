@@ -46,4 +46,5 @@ const Description = styled.p`
   color: ${({ theme }) => theme.textPrimary};
   border-left: 2px solid ${({ theme }) => theme.highlight};
   padding-left: 20px;
+  text-align: justify;
 `

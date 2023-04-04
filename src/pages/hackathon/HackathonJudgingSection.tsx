@@ -19,7 +19,6 @@ interface HackathonJudgingSectionProps {
 const HackathonJudgingSection = ({ content }: HackathonJudgingSectionProps) => (
   <HackathonSectionContainer>
     <HackhathonSectionTitle title="Rules and judging" subtitle="How to win" sticky bigSubtitle />
-    <br />
     <HighlightedBox>
       <H3>{content.rules.title}</H3>
       <Paragraph>{content.rules.description}</Paragraph>
@@ -31,7 +30,6 @@ const HackathonJudgingSection = ({ content }: HackathonJudgingSectionProps) => (
 export default HackathonJudgingSection
 
 const HighlightedBox = styled.div`
-  margin-top: var(--spacing-4);
   margin-bottom: var(--spacing-4);
   padding: var(--spacing-4);
   border: 1px solid ${({ theme }) => theme.highlight};

@@ -1,3 +1,4 @@
+import { colord } from 'colord'
 import styled from 'styled-components'
 import ArrowedLink from '../../components/ArrowedLink'
 import { deviceBreakPoints } from '../../styles/global-style'
@@ -45,6 +46,11 @@ export type HackathonInfoSectionContentType = {
   }
   prizes: {
     title: string
+    description: string
+    prizeList: {
+      title: string
+      description: string
+    }[]
   }
 }
 
@@ -99,6 +105,18 @@ const HackathonInfoSection = ({ content, className }: HackathonInfoSectionProps)
           />
         ))}
       </TrackCards>
+      <br />
+      <H3 divider>{content.prizes.title}</H3>
+      <Paragraph>{content.prizes.description}</Paragraph>
+      <br />
+      <PrizeList>
+        {content.prizes.prizeList.map((p, i) => (
+          <div key={p.title}>
+            <h3>{p.title}</h3>
+            <p>{p.description}</p>
+          </div>
+        ))}
+      </PrizeList>
     </HackathonSectionContainer>
   </div>
 )
@@ -159,5 +177,38 @@ const TrackCards = styled.div`
   @media ${deviceBreakPoints.mobile} {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
+  }
+`
+
+const PrizeList = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  text-align: center;
+
+  div {
+    &:nth-child(1) {
+      border: 1px solid ${({ theme }) => theme.highlight};
+      background-color: ${({ theme }) => colord(theme.highlight).alpha(0.2).toHex()};
+    }
+    &:nth-child(2) {
+      border: 1px solid #bfbfbf;
+      background-color: ${colord('#bfbfbf').alpha(0.2).toHex()};
+    }
+    &:nth-child(3) {
+      border: 1px solid #ff7a55;
+      background-color: ${colord('#ff7a55').alpha(0.2).toHex()};
+    }
+    &:nth-child(4) {
+      border: 1px solid #333333;
+      background-color: ${colord('#333333').alpha(0.2).toHex()};
+      grid-column: 1 / span 3;
+    }
+  }
+
+  @media ${deviceBreakPoints.mobile} {
+    display: flex;
+    flex-direction: column;
   }
 `
