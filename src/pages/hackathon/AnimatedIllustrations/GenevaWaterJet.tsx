@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { stagger, useAnimate } from 'framer-motion'
 
 const waterJetGroupTransforms = [
@@ -14,7 +14,7 @@ const waterJetGroupTransforms = [
   '15.28 0 0 .3396 -2555.4 1981.8'
 ]
 
-const GenevaWaterJet: React.FC = () => {
+const GenevaWaterJet = () => {
   const [scope, animate] = useAnimate()
 
   useEffect(() => {

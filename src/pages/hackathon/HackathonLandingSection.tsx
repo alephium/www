@@ -38,7 +38,7 @@ const SectionWrapper = styled.div`
   background: url(${backgroundImage});
   background-size: cover;
   background-position: center;
-  height: calc(max(50vh, 300px));
+  height: calc(max(60vh, 300px));
   max-height: 400px;
   display: flex;
   align-items: flex-end;
