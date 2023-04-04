@@ -14,6 +14,7 @@ const Tooling = () => (
       strokeWidth="3"
       animate={{ rotate: [-5, 0, 5, 0, -5] }}
       transition={{ repeat: Infinity, duration: 6 }}
+      style={{ scale: 0.9 }}
     >
       <path
         stroke="#23c4ff"
