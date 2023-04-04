@@ -51,10 +51,11 @@ hackathonInfo:
         description: Make some fun and interactive games on chain.
       - title: Interoperability
         description: Contribute to opening the Alephium ecosystem by connecting it to other chains.
+  prizes:
+    title: Prizes
+rulesAndJudging:
   rules:
     title: Submission Rules
     description: "The submissions must include links to code repositories. You can also include text, video, or audio with relevant graphics and links to webapps you may find relevant. Participants will be required to submit their work through this form.
     The event will begin on (insert date) and will end on (insert date)."
-  prizes:
-    title: Prizes
 ---

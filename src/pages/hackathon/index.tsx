@@ -9,6 +9,7 @@ import HackathonLandingSection, { HackathonLandingSectionContentType } from './H
 import SectionDivider from '../../components/SectionDivider'
 import HackathonIntroSection, { HackathonIntroSectionContentType } from './HackathonIntroSection'
 import HackathonInfoSection, { HackathonInfoSectionContentType } from './HackathonInfoSection'
+import HackathonJudgingSection, { HackathonJudgingSectionContentType } from './HackathonJudgingSection'
 
 interface HackathonPageProps extends PageProps {
   data: {
@@ -18,6 +19,7 @@ interface HackathonPageProps extends PageProps {
           headerLandingSection: HackathonLandingSectionContentType
           introSection: HackathonIntroSectionContentType
           hackathonInfo: HackathonInfoSectionContentType
+          rulesAndJudging: HackathonJudgingSectionContentType
         }
       }[]
     }
@@ -37,6 +39,8 @@ const IndexPage = (props: HackathonPageProps) => {
         <HackathonIntroSection content={pageContent.introSection} />
         <SectionDivider />
         <HackathonInfoSection content={pageContent.hackathonInfo} />
+        <SectionDivider />
+        <HackathonJudgingSection content={pageContent.rulesAndJudging} />
       </ThemeProvider>
     </Wrapper>
   )
@@ -51,15 +55,6 @@ const Wrapper = styled.div`
   }
   font-size: 18px; // Slighty increase base font size for marketing content
   line-height: 24px;
-
-  h3 {
-    margin-top: var(--spacing-6);
-    font-size: 28px !important;
-  }
-
-  p {
-    opacity: 0.8;
-  }
 `
 
 export const pageQuery = graphql`
@@ -107,6 +102,12 @@ export const pageQuery = graphql`
                 title
                 description
               }
+            }
+          }
+          rulesAndJudging {
+            rules {
+              title
+              description
             }
           }
         }

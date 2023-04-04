@@ -1,11 +1,14 @@
+import { colord } from 'colord'
 import styled from 'styled-components'
 import ArrowedLink from '../../components/ArrowedLink'
 import { deviceBreakPoints } from '../../styles/global-style'
 import AI from './AnimatedIllustrations/AI'
 import DeFi from './AnimatedIllustrations/DeFi'
+import NFTs from './AnimatedIllustrations/NFTs'
 import Tooling from './AnimatedIllustrations/Tooling'
 import HackathonSectionContainer from './HackathonSectionContainer'
 import HackhathonSectionTitle from './HackhathonSectionTitle'
+import { H3, Paragraph } from './Texts'
 import TrackCard from './TrackCard'
 
 export type HackathonInfoSectionContentType = {
@@ -39,6 +42,9 @@ export type HackathonInfoSectionContentType = {
       description: string
     }[]
   }
+  prizes: {
+    title: string
+  }
 }
 
 interface HackathonInfoSectionProps {
@@ -50,14 +56,14 @@ const HackathonInfoSection = ({ content, className }: HackathonInfoSectionProps)
   <div className={className}>
     <HackathonSectionContainer>
       <HackhathonSectionTitle title="The Hackathon" subtitle="What you need to know" sticky bigSubtitle />
-      <h3>{content.participantsInfo.title}</h3>
-      <p>{content.participantsInfo.description}</p>
+      <H3 divider>{content.participantsInfo.title}</H3>
+      <Paragraph>{content.participantsInfo.description}</Paragraph>
       <StyledArrowedLink url={content.participantsInfo.link.url} newTab>
         {content.participantsInfo.link.text}
       </StyledArrowedLink>
       <br />
-      <h3>{content.prerequisites.title}</h3>
-      <p>{content.prerequisites.description}</p>
+      <H3 divider>{content.prerequisites.title}</H3>
+      <Paragraph>{content.prerequisites.description}</Paragraph>
       <ul>
         {content.prerequisites.skills.map((s) => (
           <li key={s}>{s}</li>
@@ -67,8 +73,8 @@ const HackathonInfoSection = ({ content, className }: HackathonInfoSectionProps)
         {content.prerequisites.link.text}
       </StyledArrowedLink>
       <br />
-      <h3>{content.schedule.title}</h3>
-      <p>{content.schedule.description}</p>
+      <H3 divider>{content.schedule.title}</H3>
+      <Paragraph>{content.schedule.description}</Paragraph>
       <br />
       <ScheduleItems>
         {content.schedule.events.map((e) => (
@@ -79,8 +85,8 @@ const HackathonInfoSection = ({ content, className }: HackathonInfoSectionProps)
         ))}
       </ScheduleItems>
       <br />
-      <h3>{content.ideasAndTracks.title}</h3>
-      <p>{content.ideasAndTracks.subtitle}</p>
+      <H3 divider>{content.ideasAndTracks.title}</H3>
+      <Paragraph>{content.ideasAndTracks.subtitle}</Paragraph>
       <br />
       <TrackCards>
         {content.ideasAndTracks.tracks.map((t, i) => (
@@ -96,7 +102,12 @@ const HackathonInfoSection = ({ content, className }: HackathonInfoSectionProps)
   </div>
 )
 
-const animatedTrackIllustrations = [<DeFi key="DeFi" />, <AI key="AI" />, <Tooling key="tooling" />]
+const animatedTrackIllustrations = [
+  <DeFi key="DeFi" />,
+  <AI key="AI" />,
+  <Tooling key="tooling" />,
+  <NFTs key="NFTs" />
+]
 
 export default styled(HackathonInfoSection)`
   background-color: ${({ theme }) => theme.bgTertiary};
@@ -130,6 +141,10 @@ const ScheduleItemDot = styled.div`
   margin-right: var(--spacing-1);
   background-color: ${({ theme }) => theme.highlight};
   transform: translateX(-20px);
+
+  @media ${deviceBreakPoints.mobile} {
+    transform: translateX(-18px);
+  }
 `
 
 const TrackCards = styled.div`
