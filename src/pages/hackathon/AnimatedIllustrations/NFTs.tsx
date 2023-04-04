@@ -14,7 +14,7 @@ const NFTs = () => (
         <path d="M90.823 22.29H149.178V97.709H90.823z"></path>
         <path d="M82.296 11.271H157.704V108.73H82.296z"></path>
       </g>
-      <motion.g stroke="#23c4ff" animate={{ y: [-5, 0, 5, 0, -5] }} transition={{ repeat: Infinity, duration: 6 }}>
+      <motion.g stroke="#23c4ff" animate={{ y: [-5, 0, -5] }} transition={{ repeat: Infinity, duration: 5 }}>
         <path
           strokeWidth="3"
           d="M141.075 93.84V75.161l-5.735-10.208-3.95-5.913-3.206-7.09v-5.634l-2.633-6.015-7.744-4.093-7.236 7.801V59.04l3.06 4.018-9.356 7.118-3.11 5.761-2.501 15.053 24.832 5.76 2.783-2.91L120 88.852l-9.429-3.317v-6.893"

@@ -1,9 +1,10 @@
-import { colord } from 'colord'
 import styled from 'styled-components'
 import ArrowedLink from '../../components/ArrowedLink'
 import { deviceBreakPoints } from '../../styles/global-style'
 import AI from './AnimatedIllustrations/AI'
 import DeFi from './AnimatedIllustrations/DeFi'
+import Gaming from './AnimatedIllustrations/Gaming'
+import Interoperability from './AnimatedIllustrations/Interoperability'
 import NFTs from './AnimatedIllustrations/NFTs'
 import Tooling from './AnimatedIllustrations/Tooling'
 import HackathonSectionContainer from './HackathonSectionContainer'
@@ -106,7 +107,9 @@ const animatedTrackIllustrations = [
   <DeFi key="DeFi" />,
   <AI key="AI" />,
   <Tooling key="tooling" />,
-  <NFTs key="NFTs" />
+  <NFTs key="NFTs" />,
+  <Gaming key="Gaming" />,
+  <Interoperability key="Interoperability" />
 ]
 
 export default styled(HackathonInfoSection)`
