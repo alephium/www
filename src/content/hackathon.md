@@ -80,5 +80,20 @@ rulesAndJudging:
         description: How big of an impact could the project have on the Alephium ecosystem?
       - title: Quality of the Idea
         description: How creative and unique is the project?
-
+  jury:
+    title: Jury
+    description: Here are the wonderful people who will review your incredible work.
+    people:
+      - picture: ../images/team/cheng.jpg
+        name: Cheng
+        role: Founder, Core Developer
+      - picture: ../images/team/h0ngcha0.jpeg
+        name: h0ngcha0
+        role: Core Blockchain Dev
+      - picture: ../images/team/mika.jpg
+        name: Mika
+        role: Product & Front-End Dev
+      - picture: ../images/team/benoit.jpg
+        name: Benoit
+        role: Core Infrastructure Dev
 ---

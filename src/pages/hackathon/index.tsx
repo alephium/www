@@ -125,6 +125,19 @@ export const pageQuery = graphql`
                 description
               }
             }
+            jury {
+              title
+              description
+              people {
+                name
+                role
+                picture {
+                  childImageSharp {
+                    gatsbyImageData(width: 200, placeholder: BLURRED, formats: [AUTO])
+                  }
+                }
+              }
+            }
           }
         }
       }
