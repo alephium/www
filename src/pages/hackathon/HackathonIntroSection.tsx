@@ -23,7 +23,7 @@ const HackathonIntroSection = ({
   <HackathonSectionContainer className={className}>
     <Columns gap={'5vw'}>
       <Column>
-        <SectionTextHeader bigSubtitle title={title} subtitle={subtitle} />
+        <StyledSectionTextHeader bigSubtitle title={title} subtitle={subtitle} />
       </Column>
       <IllustrationBox>
         <GenevaWaterJet />
@@ -37,8 +37,15 @@ export default styled(HackathonIntroSection)`
   margin-top: var(--spacing-8);
 `
 
+const StyledSectionTextHeader = styled(SectionTextHeader)`
+  min-width: 450px;
+`
+
 const IllustrationBox = styled(Column)`
   background-color: ${({ theme }) => theme.bgPrimary};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `
 
 const Description = styled.p`

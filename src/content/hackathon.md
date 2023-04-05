@@ -96,4 +96,5 @@ rulesAndJudging:
       - picture: ../images/team/benoit.jpg
         name: Benoit
         role: Core Infrastructure Dev
+
 ---
