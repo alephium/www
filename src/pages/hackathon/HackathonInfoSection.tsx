@@ -116,7 +116,7 @@ const HackathonInfoSection = ({ content, className }: HackathonInfoSectionProps)
       <Paragraph>{content.prizes.description}</Paragraph>
       <br />
       <PrizeList>
-        {content.prizes.prizeList.map((p, i) => (
+        {content.prizes.prizeList.map((p) => (
           <div key={p.title}>
             <h3>{p.title}</h3>
             <p>{p.description}</p>

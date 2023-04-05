@@ -118,7 +118,7 @@ To prepare, we advise participants to focus on consulting the available resource
 
 ### Hackathon Rules
 
-To access the hackathon rules please go [here](https://alephium.org/hackathon).
+To access the hackathon rules please go [here](https://alephium.org).
 
 ### Join the Alephium Hackathon
 
