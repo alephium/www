@@ -117,6 +117,14 @@ export const pageQuery = graphql`
               title
               description
             }
+            criteria {
+              title
+              description
+              criteriumList {
+                title
+                description
+              }
+            }
           }
         }
       }
