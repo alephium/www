@@ -68,4 +68,17 @@ rulesAndJudging:
     title: Submission Rules
     description: "The submissions must include links to code repositories. You can also include text, video, or audio with relevant graphics and links to webapps you may find relevant. Participants will be required to submit their work through this form.
     The event will begin on (insert date) and will end on (insert date)."
+  criteria:
+    title: Judging Criteria
+    description: Here are the main aspects the jury will be looking for when evaluating your project.
+    criteriumList:
+      - title: Implementation
+        description: Does the interaction with Alephium demonstrate quality software development?
+      - title: Design
+        description: Is the user experience and design of the project well thought out?
+      - title: Potential Impact
+        description: How big of an impact could the project have on the Alephium ecosystem?
+      - title: Quality of the Idea
+        description: How creative and unique is the project?
+
 ---
