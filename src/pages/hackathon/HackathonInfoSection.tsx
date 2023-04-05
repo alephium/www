@@ -9,7 +9,7 @@ import Interoperability from './AnimatedIllustrations/Interoperability'
 import NFTs from './AnimatedIllustrations/NFTs'
 import Tooling from './AnimatedIllustrations/Tooling'
 import HackathonSectionContainer from './HackathonSectionContainer'
-import HackhathonSectionTitle from './HackhathonSectionTitle'
+import HackathonSectionTitle from './HackathonSectionTitle'
 import { H3, Paragraph } from './Texts'
 import TrackCard from './TrackCard'
 
@@ -62,7 +62,13 @@ interface HackathonInfoSectionProps {
 const HackathonInfoSection = ({ content, className }: HackathonInfoSectionProps) => (
   <div className={className}>
     <HackathonSectionContainer>
-      <HackhathonSectionTitle title="The Hackathon" subtitle="What you need to know" sticky bigSubtitle />
+      <HackathonSectionTitle
+        title="The Hackathon"
+        subtitle="What you need to know"
+        sticky
+        bigSubtitle
+        backgroundColor="bgTertiary"
+      />
       <H3 divider>{content.participantsInfo.title}</H3>
       <Paragraph>{content.participantsInfo.description}</Paragraph>
       <StyledArrowedLink url={content.participantsInfo.link.url} newTab>
