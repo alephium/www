@@ -1,5 +1,7 @@
 import { colord } from 'colord'
+import { IGatsbyImageData } from 'gatsby-plugin-image'
 import styled from 'styled-components'
+import TeamMember from '../../components/TeamMember'
 import { deviceBreakPoints } from '../../styles/global-style'
 import HackathonSectionContainer from './HackathonSectionContainer'
 import HackhathonSectionTitle from './HackhathonSectionTitle'
@@ -18,6 +20,19 @@ export type HackathonJudgingSectionContentType = {
       description: string
     }[]
   }
+  jury: {
+    title: string
+    description: string
+    people: {
+      name: string
+      role: string
+      picture: {
+        childImageSharp: {
+          gatsbyImageData: IGatsbyImageData
+        }
+      }
+    }[]
+  }
 }
 
 interface HackathonJudgingSectionProps {
@@ -27,7 +42,7 @@ interface HackathonJudgingSectionProps {
 
 const HackathonJudgingSection = ({ content }: HackathonJudgingSectionProps) => (
   <HackathonSectionContainer>
-    <HackhathonSectionTitle title="Rules and judging" subtitle="How to win" sticky bigSubtitle />
+    <HackhathonSectionTitle title="Rules and judging" subtitle="How to win ;)" sticky bigSubtitle />
     <HighlightedBox>
       <H3>{content.rules.title}</H3>
       <Paragraph>{content.rules.description}</Paragraph>
@@ -44,6 +59,17 @@ const HackathonJudgingSection = ({ content }: HackathonJudgingSectionProps) => (
         </CriteriumCard>
       ))}
     </CriteriumList>
+    <H3 divider>{content.jury.title}</H3>
+    <Paragraph>{content.jury.description}</Paragraph>
+    <br />
+    <Jury>
+      {content.jury.people.map((p) => (
+        <PersonCard key={p.name}>
+          <TeamMember name={p.name} image={p.picture} role={p.role} />
+        </PersonCard>
+      ))}
+    </Jury>
+    <br />
   </HackathonSectionContainer>
 )
 
@@ -86,4 +112,27 @@ const CriteriumCard = styled.div`
   h3 {
     margin-top: var(--spacing-2);
   }
+`
+
+const Jury = styled.div`
+  display: flex;
+  gap: 20px;
+
+  @media ${deviceBreakPoints.mobile} {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+`
+
+const PersonCard = styled.div`
+  padding: var(--spacing-4);
+  padding-bottom: var(--spacing-2);
+  border-radius: var(--radius);
+  border: 1px solid ${({ theme }) => theme.borderPrimary};
+  background-color: ${({ theme }) => theme.bgTertiary};
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
