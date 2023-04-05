@@ -54,7 +54,7 @@ const HackathonJudgingSection = ({ content }: HackathonJudgingSectionProps) => (
     <Paragraph>{content.criteria.description}</Paragraph>
     <br />
     <CriteriumList>
-      {content.criteria.criteriumList.map((c, i) => (
+      {content.criteria.criteriumList.map((c) => (
         <CriteriumCard key={c.title}>
           <H3>{c.title}</H3>
           <Paragraph>{c.description}</Paragraph>
