@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 import styled, { useTheme } from 'styled-components'
-import Card from '../../components/Card'
+import Card from '../Card'
 
 interface TrackCardProp {
   illustration: ReactNode
