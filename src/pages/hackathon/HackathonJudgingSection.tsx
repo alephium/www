@@ -4,10 +4,12 @@ import styled from 'styled-components'
 import TeamMember from '../../components/TeamMember'
 import { deviceBreakPoints } from '../../styles/global-style'
 import HackathonSectionContainer from './HackathonSectionContainer'
-import HackhathonSectionTitle from './HackhathonSectionTitle'
+import HackathonSectionTitle from './HackathonSectionTitle'
 import { H3, Paragraph } from './Texts'
 
 export type HackathonJudgingSectionContentType = {
+  title: string
+  subtitle: string
   rules: {
     title: string
     description: string
@@ -42,7 +44,7 @@ interface HackathonJudgingSectionProps {
 
 const HackathonJudgingSection = ({ content }: HackathonJudgingSectionProps) => (
   <HackathonSectionContainer>
-    <HackhathonSectionTitle title="Rules and judging" subtitle="How to win ;)" sticky bigSubtitle />
+    <HackathonSectionTitle title={content.title} subtitle={content.subtitle} sticky bigSubtitle />
     <HighlightedBox>
       <H3>{content.rules.title}</H3>
       <Paragraph>{content.rules.description}</Paragraph>

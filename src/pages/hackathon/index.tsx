@@ -10,6 +10,7 @@ import SectionDivider from '../../components/SectionDivider'
 import HackathonIntroSection, { HackathonIntroSectionContentType } from './HackathonIntroSection'
 import HackathonInfoSection, { HackathonInfoSectionContentType } from './HackathonInfoSection'
 import HackathonJudgingSection, { HackathonJudgingSectionContentType } from './HackathonJudgingSection'
+import GettingStartedSection, { GettingStartedSectionContentType } from './GettingStartedSection'
 
 interface HackathonPageProps extends PageProps {
   data: {
@@ -20,7 +21,9 @@ interface HackathonPageProps extends PageProps {
           introSection: HackathonIntroSectionContentType
           hackathonInfo: HackathonInfoSectionContentType
           rulesAndJudging: HackathonJudgingSectionContentType
+          gettingStarted: GettingStartedSectionContentType
         }
+        html: string
       }[]
     }
   }
@@ -30,9 +33,9 @@ const IndexPage = (props: HackathonPageProps) => {
   const pageContent = props.data.hackathon.nodes[0].frontmatter
 
   return (
-    <Wrapper>
-      <Seo />
-      <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={darkTheme}>
+      <Wrapper>
+        <Seo />
         <GlobalStyle />
         <HackathonLandingSection content={pageContent.headerLandingSection} />
         <SectionDivider />
@@ -41,8 +44,10 @@ const IndexPage = (props: HackathonPageProps) => {
         <HackathonInfoSection content={pageContent.hackathonInfo} />
         <SectionDivider />
         <HackathonJudgingSection content={pageContent.rulesAndJudging} />
-      </ThemeProvider>
-    </Wrapper>
+        <SectionDivider />
+        <GettingStartedSection content={{ ...pageContent.gettingStarted, html: props.data.hackathon.nodes[0].html }} />
+      </Wrapper>
+    </ThemeProvider>
   )
 }
 
@@ -55,6 +60,10 @@ const Wrapper = styled.div`
   }
   font-size: 18px; // Slighty increase base font size for marketing content
   line-height: 24px;
+
+  a {
+    color: ${({ theme }) => theme.highlightComplementary};
+  }
 `
 
 export const pageQuery = graphql`
@@ -113,6 +122,8 @@ export const pageQuery = graphql`
             }
           }
           rulesAndJudging {
+            title
+            subtitle
             rules {
               title
               description
@@ -139,7 +150,12 @@ export const pageQuery = graphql`
               }
             }
           }
+          gettingStarted {
+            title
+            subtitle
+          }
         }
+        html
       }
     }
   }

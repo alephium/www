@@ -1,3 +1,4 @@
+import { colord } from 'colord'
 import { motion } from 'framer-motion'
 import { ReactNode, useRef, useState } from 'react'
 import styled, { useTheme } from 'styled-components'
@@ -47,7 +48,7 @@ const SectionTextHeader = ({
   }
 
   const borderBottom = bottomBorder && headingReachedTopOfScreen ? `1px solid rgba(255, 255, 255, 0.1)` : undefined
-  const backgroundColor = headingReachedTopOfScreen ? theme.bgTertiary : 'transparent'
+  const backgroundColor = headingReachedTopOfScreen ? colord(theme.bgTertiary).alpha(0.2).toHex() : 'transparent'
 
   return (
     <>
@@ -87,6 +88,8 @@ export default styled(SectionTextHeader)`
   justify-content: center;
   padding: 0 var(--spacing-4);
   border-bottom: 1px solid transparent;
+
+  backdrop-filter: blur(40px);
 
   @media ${deviceBreakPoints.mobile} {
     margin-bottom: var(--spacing-10);

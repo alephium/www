@@ -64,6 +64,8 @@ hackathonInfo:
       - title: Honorable Mention
         description:  Up to 10 prizes of XXX$ each
 rulesAndJudging:
+  title: Rules and judging
+  subtitle: How to win ;)
   rules:
     title: Submission Rules
     description: "The submissions must include links to code repositories. You can also include text, video, or audio with relevant graphics and links to webapps you may find relevant. Participants will be required to submit their work through this form.
@@ -96,5 +98,32 @@ rulesAndJudging:
       - picture: ../images/team/benoit.jpg
         name: Benoit
         role: Core Infrastructure Dev
-
+gettingStarted:
+  title: Getting started
+  subtitle: Kickstart your project now.
 ---
+
+### Alephium Hackathon Documentation and Tutorials
+
+Documentation and tutorials are available to all participants before the event. The most relevant material has been curated and is available on:
+
+- https://docs.alephium.org/
+- https://docs.alephium.org/dapps/getting-started
+- https://docs.alephium.org/ralph/getting-started
+- https://docs.alephium.org/network/devnet-guide
+
+The team will be available on the designated Discord channel throughout the event to guide and help participants with any questions that come up.
+
+To prepare, we advise participants to focus on consulting the available resources, and start exploring our tutorials.
+
+### Hackathon Rules
+
+To access the hackathon rules please go [here](https://alephium.org/hackathon).
+
+### Join the Alephium Hackathon
+
+Join the Alephium Hackathon and start coding. Stay tuned for tech talks, AMAs, and much more!
+
+### Useful links and Social media channels
+
+Further useful links to be included. Social media channels to be included.
