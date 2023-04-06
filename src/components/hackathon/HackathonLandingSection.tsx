@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import AlephiumLogo from '../../components/AlephiumLogo'
 import ParallaxWrapper from '../../components/ParallaxWrapper'
 import backgroundImage from '../../images/alephium-hackathon-lake.jpg'
+import { deviceBreakPoints } from '../../styles/global-style'
 
 export type HackathonLandingSectionContentType = {
   tagline: string
@@ -56,6 +57,11 @@ const Content = styled.div`
   margin-right: var(--spacing-14);
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
   border: 1px solid ${({ theme }) => theme.borderPrimary};
+
+  @media ${deviceBreakPoints.tablet} {
+    margin-left: var(--spacing-4);
+    margin-right: var(--spacing-4);
+  }
 `
 
 const FirstContentBox = styled.div`

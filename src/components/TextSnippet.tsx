@@ -57,7 +57,7 @@ export default styled(TextSnippet)`
     color: var(--color-grey-200);
   }
 
-  @media ${deviceBreakPoints.mobile} {
+  @media ${deviceBreakPoints.tablet} {
     h2,
     h3,
     .text-subtitle {

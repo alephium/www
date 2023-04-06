@@ -108,7 +108,7 @@ const CardContainer = styled(Card)`
   border: var(--border-primary-dark);
   background-color: ${({ theme }) => theme.bgPrimary};
 
-  @media ${deviceBreakPoints.mobile} {
+  @media ${deviceBreakPoints.tablet} {
     & + & {
       margin-top: var(--spacing-4);
     }

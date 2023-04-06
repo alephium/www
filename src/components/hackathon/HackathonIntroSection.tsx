@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import Column from '../../components/Columns/Column'
 import Columns from '../../components/Columns/Columns'
 import SectionTextHeader from '../../components/SectionTextHeader'
+import { deviceBreakPoints } from '../../styles/global-style'
 import GenevaWaterJet from './AnimatedIllustrations/GenevaWaterJet'
 import HackathonSectionContainer from './HackathonSectionContainer'
 
@@ -39,6 +40,10 @@ export default styled(HackathonIntroSection)`
 
 const StyledSectionTextHeader = styled(SectionTextHeader)`
   min-width: 450px;
+
+  @media ${deviceBreakPoints.tablet} {
+    min-width: auto;
+  }
 `
 
 const IllustrationBox = styled(Column)`
@@ -49,9 +54,14 @@ const IllustrationBox = styled(Column)`
 `
 
 const Description = styled.p`
-  margin: var(--spacing-10) var(--spacing-4) 0 var(--spacing-4);
+  margin: var(--spacing-10) 0 0 var(--spacing-4);
   color: ${({ theme }) => theme.textPrimary};
   border-left: 2px solid ${({ theme }) => theme.highlight};
   padding-left: 20px;
   text-align: justify;
+
+  @media ${deviceBreakPoints.tablet} {
+    margin: var(--spacing-10) var(--spacing-2) 0 0;
+    padding-left: 15px;
+  }
 `

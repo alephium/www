@@ -99,7 +99,7 @@ const CriteriumList = styled.div`
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
 
-  @media ${deviceBreakPoints.mobile} {
+  @media ${deviceBreakPoints.tablet} {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
   }
@@ -120,7 +120,7 @@ const Jury = styled.div`
   display: flex;
   gap: 20px;
 
-  @media ${deviceBreakPoints.mobile} {
+  @media ${deviceBreakPoints.tablet} {
     flex-wrap: wrap;
     justify-content: center;
   }

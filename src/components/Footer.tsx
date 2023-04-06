@@ -107,7 +107,7 @@ const Separator = styled.div`
   background-color: ${({ theme }) => theme.separator};
   margin: auto 0;
 
-  @media ${deviceBreakPoints.mobile} {
+  @media ${deviceBreakPoints.tablet} {
     display: none;
   }
 `
@@ -136,7 +136,7 @@ const PageSectionContainerStyled = styled(PageSectionContainer)`
   gap: var(--spacing-10);
   justify-content: space-between;
 
-  @media ${deviceBreakPoints.mobile} {
+  @media ${deviceBreakPoints.tablet} {
     flex-direction: column;
     gap: var(--spacing-10);
     align-items: center;
