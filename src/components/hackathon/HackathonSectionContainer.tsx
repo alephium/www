@@ -6,6 +6,6 @@ export default styled(PageSectionContainer)`
   padding: var(--spacing-12);
 
   @media ${deviceBreakPoints.tablet} {
-    padding: var(--spacing-4);
+    padding: var(--spacing-12) var(--spacing-4);
   }
 `
