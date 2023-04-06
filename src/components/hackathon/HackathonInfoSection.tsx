@@ -34,7 +34,10 @@ export type HackathonInfoSectionContentType = {
   schedule: {
     title: string
     description: string
-    events: string[]
+    events: {
+      title: string
+      description: string
+    }[]
   }
   ideasAndTracks: {
     title: string
@@ -91,9 +94,12 @@ const HackathonInfoSection = ({ content, className }: HackathonInfoSectionProps)
       <br />
       <ScheduleItems>
         {content.schedule.events.map((e) => (
-          <ScheduleItem key={e}>
+          <ScheduleItem key={e.title}>
             <ScheduleItemDot />
-            {e}
+            <ScheduleItemText>
+              <h4>{e.title}</h4>
+              <p>{e.description}</p>
+            </ScheduleItemText>
           </ScheduleItem>
         ))}
       </ScheduleItems>
@@ -171,6 +177,20 @@ const ScheduleItemDot = styled.div`
 
   @media ${deviceBreakPoints.tablet} {
     transform: translateX(-18px);
+  }
+`
+
+const ScheduleItemText = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  h4 {
+    margin: 0;
+  }
+
+  p {
+    margin: var(--spacing-2) 0 0 0;
+    opacity: 0.8;
   }
 `
 
