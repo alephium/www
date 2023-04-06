@@ -91,7 +91,7 @@ export default styled(SectionTextHeader)`
 
   backdrop-filter: blur(40px);
 
-  @media ${deviceBreakPoints.mobile} {
+  @media ${deviceBreakPoints.tablet} {
     margin-bottom: var(--spacing-10);
   }
 

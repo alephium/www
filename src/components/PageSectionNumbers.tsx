@@ -165,7 +165,7 @@ const NumbersSection = styled.section`
   padding-bottom: var(--spacing-20);
   background-color: ${({ theme }) => theme.bgTertiary};
 
-  @media ${deviceBreakPoints.mobile} {
+  @media ${deviceBreakPoints.tablet} {
     margin-top: var(--spacing-6);
     margin-bottom: var(--spacing-10);
   }
@@ -192,7 +192,7 @@ const NumbersColumn = styled(Column)`
     > div {
       padding-left: var(--spacing-6);
 
-      @media ${deviceBreakPoints.mobile} {
+      @media ${deviceBreakPoints.tablet} {
         padding-left: 0;
         padding-top: var(--spacing-9);
       }
@@ -203,7 +203,7 @@ const NumbersColumn = styled(Column)`
     > div {
       padding-right: var(--spacing-9);
 
-      @media ${deviceBreakPoints.mobile} {
+      @media ${deviceBreakPoints.tablet} {
         padding-right: 0;
       }
     }

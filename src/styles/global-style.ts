@@ -3,15 +3,15 @@ import normalize from 'styled-normalize'
 
 export const deviceSizes = {
   smallMobile: 528,
-  ipad: 768,
-  mobile: 1024,
+  mobile: 768,
+  tablet: 1024,
   desktop: 1920
 }
 
 export const deviceBreakPoints = {
   smallMobile: `(max-width: ${deviceSizes.smallMobile}px)`,
-  ipad: `(max-width: ${deviceSizes.ipad}px)`,
   mobile: `(max-width: ${deviceSizes.mobile}px)`,
+  tablet: `(max-width: ${deviceSizes.tablet}px)`,
   desktop: `(max-width: ${deviceSizes.desktop}px)`
 }
 
@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
   :root {
     font-size: 15px;
 
-    @media ${deviceBreakPoints.mobile} {
+    @media ${deviceBreakPoints.tablet} {
       font-size: 12px;
     }
 

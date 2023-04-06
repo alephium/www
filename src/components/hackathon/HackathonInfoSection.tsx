@@ -169,7 +169,7 @@ const ScheduleItemDot = styled.div`
   background-color: ${({ theme }) => theme.highlight};
   transform: translateX(-20px);
 
-  @media ${deviceBreakPoints.mobile} {
+  @media ${deviceBreakPoints.tablet} {
     transform: translateX(-18px);
   }
 `
@@ -213,7 +213,7 @@ const PrizeList = styled.div`
     }
   }
 
-  @media ${deviceBreakPoints.mobile} {
+  @media ${deviceBreakPoints.tablet} {
     display: flex;
     flex-direction: column;
   }
