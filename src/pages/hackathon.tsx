@@ -106,7 +106,10 @@ export const pageQuery = graphql`
             schedule {
               title
               description
-              events
+              events {
+                title
+                description
+              }
             }
             ideasAndTracks {
               title

@@ -30,11 +30,16 @@ hackathonInfo:
     title: Hackathon Schedule
     description: "Here's what will happen:"
     events: 
-      - Announcement and team enrollment
-      - AMA with the judges
-      - Hackathon Kick-off
-      - Deadline for Submissions
-      - Winners Announced
+      - title: Announcement and team enrollment
+        description: Date and desc. TBD
+      - title: AMA with the judges
+        description: Date and desc. TBD
+      - title: Hackathon Kick-off
+        description: Date and desc. TBD
+      - title: Deadline for Submissions
+        description: Date and desc. TBD
+      - title: Winners Announced
+        description: Date and desc. TBD
   ideasAndTracks:
     title: Suggested Ideas for Submission
     subtitle: "Here's a list of tracks to get you going. You can of course go off the track and show us your next big idea, but know that the following categories will be appreciated."
