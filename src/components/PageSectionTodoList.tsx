@@ -15,6 +15,7 @@ export type PageSectionTodoListContentType = {
     title: string
     items: {
       text: string
+      label: string
       complete: boolean
     }[]
   }[]
@@ -37,8 +38,9 @@ const PageSectionTodoList = ({ content: { title, subtitle, lists } }: Props) => 
           <TodoList key={title}>
             <TodoTitle title={title} $alignRight={index % 2 == 0} titleHierarchy="h3" />
             <TodoItems $alignRight={index % 2 == 0}>
-              {items.map(({ text, complete }) => (
+              {items.map(({ text, label, complete }) => (
                 <TodoItem key={text} variants={itemVariants}>
+                  {label && <TodoLabel>{label}</TodoLabel>}
                   <TodoContent complete={complete}>{text}</TodoContent>
                   {complete && <TodoStateIcon />}
                 </TodoItem>
@@ -122,18 +124,24 @@ const TodoItem = styled(motion.div)`
   position: relative;
   width: calc(50% - 30px - 20px);
   min-width: 199px;
-  padding: 25px 15px;
+  padding: 15px;
   background-color: ${({ theme }) => theme.bgPrimary};
   border-radius: 12px;
   border: 1px solid ${({ theme }) => theme.borderPrimary};
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   @media ${deviceBreakPoints.mobile} {
     flex: 1;
   }
+`
+
+const TodoLabel = styled.div`
+  display: inline-block;
+  padding: 6px;
+  border-radius: 7px;
+  background-color: ${({ theme }) => theme.bgSecondary};
+  margin-left: -4px;
+  margin-bottom: 15px;
 `
 
 const TodoStateIcon = styled.div`
@@ -151,7 +159,6 @@ const TodoContent = styled.div<{ complete: boolean }>`
   font-weight: 500;
   font-size: 16px;
   line-height: 25px;
-  text-align: center;
   color: ${({ theme, complete }) => (complete ? 'var(--color-grey-300)' : theme.textPrimary)};
 `
 
