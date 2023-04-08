@@ -249,38 +249,38 @@ milestonesSection:
       entries:
       - order: 0
         text: Launch Browser Wallet Extension
-        when: 'March 2023'
+        when: 'Mar 2023'
       - order: 1
         text: Leman Network Upgrade on Mainnet
         when: '27.03.2023'
         isMajor: true
       - order: 2
         text: Cross-chain interoperability
-        when: '03 2023'
+        when: 'Mar 2023'
       - order: 3
         text: Schnorr signatures
-        when: '03 2023'
+        when: 'Mar 2023'
       - order: 4
         text: New set of Virtual Machine (VM) instructions and building functions
-        when: '03 2023'
+        when: 'Mar 2023'
       - order: 5
         text: New Asset Permission System
-        when: '03 2023'
+        when: 'Mar 2023'
       - order: 6
         text: External calls Check System
-        when: '03 2023'
+        when: 'Mar 2023'
       - order: 7
         text: Simpler UTXO management
-        when: '03 2023'
+        when: 'Mar 2023'
       - order: 8
         text:  Improved node APIs and SDK
-        when: '03 2023'
+        when: 'Mar 2023'
       - order: 9
         text:  Improved difficulty adjustment algorithm (DAA)
-        when: '03 2023'
+        when: 'Mar 2023'
       - order: 10
         text:  Improved contract storage for security and performance
-        when: '03 2023'
+        when: 'Mar 2023'
   - title: Ecosystem
     years:
     - year: 2019
