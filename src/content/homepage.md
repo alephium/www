@@ -171,116 +171,76 @@ milestonesSection:
       entries:
       - order: 0
         text: Whitepapers publicly released
-        when: 'Feb 2019'
+        when: '02.2019'
         isMajor: false
     - year: 2020
       entries:
       - order: 0
-        text: Alpha version of the core sharding protocol implemented and tested on AWS 
-        when: 'Q1 2020'
+        text: 'Alpha version of the core sharding protocol implemented and tested on AWS' 
+        when: 'Q1.2020'
         isMajor: false
       - order: 1
         text: Testnet launch
-        when: 'Dec 2020'
+        when: '12.2020'
         isMajor: true
     - year: 2021
       entries:
       - order: 0
         text: Smart contract support
-        when: 'Q1 2021'
+        when: 'Q1.2021'
         isMajor: false
       - order: 1
-        text: Desktop wallet & explorer public release
-        when: 'Sep 2021'
+        text: 'Desktop wallet & explorer public release'
+        when: '09.2021'
         isMajor: false
       - order: 2
         text: Mainnet launch
-        when: 'Nov 2021'
+        when: '08.11.2021'
         isMajor: true
     - year: 2022
       entries:
       - order: 0
-        text: First dApp PoC
-        when: 'Jan 2022'
+        text: 1st dApp prototype
+        when: '01.2022'
         isMajor: true
-      - order: 2
-        text: Desktop wallet upgrade
-        when: 'Apr 2022'
-        isMajor: false
-      - order: 3
-        text: Explorer optimization & addition of statistics
-        when: 'May 2022'
-        isMajor: false
-      - order: 4
-        text: Full node 1.4.0 with all of the major features for the Leman network upgrade implemented
-        when: 'Jun 2022'
-        isMajor: false
-      - order: 5
+      - order: 1
         text: Beta version of contract SDK (alephium-web3)
-        when: 'Jun 2022'
+        when: '06.2022'
         isMajor: false
-      - order: 6
-        text: New testnet launched
-        when: 'Jun 2022'
-        isMajor: false
-      - order: 7
+      - order: 2
         text: Leman Network Upgrade deployed on the testnet
-        when: 'Jun 2022'
+        when: '06.2022'
         isMajor: true
-      - order: 8
-        text: Improve documentation of the core infrastructure
-        when: 'H2 2022'
-      - order: 9
-        text: Improve the Alephium SDK with more features
-        when: 'H2 2022'
-      - order: 10
-        text: Improve the robustness and efficiency of the full node &  explorer backend
-        when: 'H2 2022'
-      - order: 11
-        text: Alpha version of multi-guardians bridge on the Testnet
-        when: 'Nov 2022'
-      - order: 12
+      - order: 3
+        text: 'Alpha version of multi-guardians bridge on the Testnet'
+        when: '11.2022'
+      - order: 4
         text: NFT prototype alpha released
-        when: 'Q4 2022'
-      - order: 13
-        text: Improved DEX prototype
-        when: 'Q4 2022'
+        when: 'Q4.2022'
     - year: 2023
       entries:
       - order: 0
-        text: Launch Browser Wallet Extension
-        when: 'Mar 2023'
+        text: DEX prototype Released
+        when: '03.2023'
       - order: 1
+        text: Launch Browser Wallet Extension
+        when: '03.2023'
+      - order: 2
         text: Leman Network Upgrade on Mainnet
         when: '27.03.2023'
         isMajor: true
-      - order: 2
-        text: Cross-chain interoperability
-        when: 'Mar 2023'
       - order: 3
-        text: Schnorr signatures
-        when: 'Mar 2023'
+        text: Schnorr signatures and cross chain interoperability
+        when: '03.2023'
       - order: 4
-        text: New set of Virtual Machine (VM) instructions and building functions
-        when: 'Mar 2023'
+        text: 'New Asset Permission System and set of Virtual Machine (VM) instructions and building functions'
+        when: '03.2023'
       - order: 5
-        text: New Asset Permission System
-        when: 'Mar 2023'
+        text: Improved node APIs and SDK
+        when: '03.2023'
       - order: 6
-        text: External calls Check System
-        when: 'Mar 2023'
-      - order: 7
-        text: Simpler UTXO management
-        when: 'Mar 2023'
-      - order: 8
-        text:  Improved node APIs and SDK
-        when: 'Mar 2023'
-      - order: 9
-        text:  Improved difficulty adjustment algorithm (DAA)
-        when: 'Mar 2023'
-      - order: 10
-        text:  Improved contract storage for security and performance
-        when: 'Mar 2023'
+        text: Improved difficulty adjustment algorithm (DAA)
+        when: '03.2023'
   - title: Ecosystem
     years:
     - year: 2019
@@ -289,62 +249,42 @@ milestonesSection:
       entries:
       - order: 2
         text: 3rd party cloud mining service at Mainnet Launch
-        when: 'Nov 2021'
+        when: '08.11.2021'
         isMajor: false
       - order: 3
-        text: 'Joined the UTXO alliance & Bitcoin Association Switzerland'
-        when: 'Nov 2021'
+        text: Joined the UTXO alliance & Bitcoin Association Switzerland
+        when: '11.2021'
         isMajor: false
       - order: 4
-        text: 'Mining ecosystem development: miners development, reference mining pool and pool integration.'
-        when: 'Q4 2021'
-        isMajor: false
-      - order: 5
-        text: First community mining pool
-        when: 'Dec 2021'
-        isMajor: false
+        text: 'Mining ecosystem development: community pools, miners development, reference mining pool, and pool integration.'
+        when: 'Q4.2021'
     - year: 2022
       entries:
       - order: 0
         text: 'First exchange listing: Gate.io'
-        when: 'Jan 2022'
+        when: '12.01.2022'
         isMajor: false
       - order: 1
-        text: 9 mining pools on Alephium
-        when: 'Feb 2022'
-        isMajor: false
+        text: 'Initiation of marketing initiatives (sponsoring of ErgoHack, AMAs, community competitions, campaigns, Tech Talk Series, etc)'
+        when: 'Q3.2022'
       - order: 2
-        text: 'Building begins on the first NFT platform on Alephium'
-        when: 'Apr 2022'
-        isMajor: false
-      - order: 4
-        text: Website Revamp
-        when: 'Jun 2022'
-        isMajor: false
-      - order: 5
-        text: 'Initiation of marketing initiatives ( sponsoring of ErgoHack, AMAs, community competitions, campaigns, etc.)'
-        when: 'Q3 2022'
-      - order: 6
-        text: Launch of the Tech Talk Monthly Series
-        when: 'Aug 2022'
-      - order: 8
         text: 3rd party dApps development started on Alephium
-        when: 'Q3 2022'
-      - order: 9
-        text: Dappnode Integration
-        when: 'Oct 2022'
-      - order: 10
+        when: 'Q3.2022'
+      - order: 3
+        text: Dappnode Integration 
+        when: '10.2022'
+      - order: 4
         text: Flux Integration
-        when: 'Nov 2022'
-      - order: 11
+        when: '11.2022'
+      - order: 5
         text: Launch of Alephium Swag Shop
-        when: 'Nov 2022'
-      - order: 12
+        when: '11.2022'
+      - order: 6
         text: Joint communication and marketing initiatives with UTXO Alliance members
-        when: 'H2 2022'
-      - order: 13
+        when: 'H2.2022'
+      - order: 7
         text: Reached over 265 community contributions
-        when: 'Dec 2022'
+        when: '12.2022'
 todoListSection:
   title: What's next
   subtitle: Building an exciting future
