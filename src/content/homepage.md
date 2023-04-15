@@ -171,62 +171,76 @@ milestonesSection:
       entries:
       - order: 0
         text: Whitepapers publicly released
-        when: 'Feb 2019'
+        when: '02.2019'
         isMajor: false
     - year: 2020
       entries:
       - order: 0
-        text: Alpha version of the core sharding protocol implemented and tested on AWS 
-        when: 'Q1 2020'
+        text: 'Alpha version of the core sharding protocol implemented and tested on AWS' 
+        when: 'Q1.2020'
         isMajor: false
       - order: 1
         text: Testnet launch
-        when: 'Dec 2020'
+        when: '12.2020'
         isMajor: true
     - year: 2021
       entries:
       - order: 0
         text: Smart contract support
-        when: 'Q1 2021'
+        when: 'Q1.2021'
         isMajor: false
       - order: 1
-        text: Desktop wallet & explorer public release
-        when: 'Sep 2021'
+        text: 'Desktop wallet & explorer public release'
+        when: '09.2021'
         isMajor: false
       - order: 2
         text: Mainnet launch
-        when: 'Nov 2021'
+        when: '08.11.2021'
         isMajor: true
     - year: 2022
       entries:
       - order: 0
-        text: First dApp PoC
-        when: 'Jan 2022'
+        text: 1st dApp prototype
+        when: '01.2022'
         isMajor: true
       - order: 1
-        text: Desktop wallet upgrade
-        when: 'Apr 2022'
+        text: Beta version of contract SDK (alephium-web3)
+        when: '06.2022'
         isMajor: false
       - order: 2
-        text: Explorer optimization & addition of statistics
-        when: 'May 2022'
-        isMajor: false
-      - order: 3
-        text: Full node 1.4.0 with all of the major features for the Leman network upgrade implemented
-        when: 'Jun 2022'
-        isMajor: false
-      - order: 4
-        text: Beta version of contract SDK (alephium-web3)
-        when: 'Jun 2022'
-        isMajor: false
-      - order: 5
-        text: New testnet launched
-        when: 'Jun 2022'
-        isMajor: false
-      - order: 6
         text: Leman Network Upgrade deployed on the testnet
-        when: 'Jun 2022'
+        when: '06.2022'
         isMajor: true
+      - order: 3
+        text: 'Alpha version of multi-guardians bridge on the Testnet'
+        when: '11.2022'
+      - order: 4
+        text: NFT prototype alpha released
+        when: 'Q4.2022'
+    - year: 2023
+      entries:
+      - order: 0
+        text: DEX prototype Released
+        when: '03.2023'
+      - order: 1
+        text: Launch Browser Wallet Extension
+        when: '03.2023'
+      - order: 2
+        text: Leman Network Upgrade on Mainnet
+        when: '27.03.2023'
+        isMajor: true
+      - order: 3
+        text: Schnorr signatures and cross chain interoperability
+        when: '03.2023'
+      - order: 4
+        text: 'New Asset Permission System and set of Virtual Machine (VM) instructions and building functions'
+        when: '03.2023'
+      - order: 5
+        text: Improved node APIs and SDK
+        when: '03.2023'
+      - order: 6
+        text: Improved difficulty adjustment algorithm (DAA)
+        when: '03.2023'
   - title: Ecosystem
     years:
     - year: 2019
@@ -235,78 +249,104 @@ milestonesSection:
       entries:
       - order: 2
         text: 3rd party cloud mining service at Mainnet Launch
-        when: 'Nov 2021'
+        when: '08.11.2021'
         isMajor: false
       - order: 3
         text: Joined the UTXO alliance & Bitcoin Association Switzerland
-        when: 'Nov 2021'
+        when: '11.2021'
         isMajor: false
       - order: 4
-        text: 'Mining ecosystem development: miners development, reference mining pool and pool integration.'
-        when: 'Q4 2021'
-        isMajor: false
-      - order: 5
-        text: First community mining pool
-        when: 'Dec 2021'
-        isMajor: false
+        text: 'Mining ecosystem development: community pools, miners development, reference mining pool, and pool integration.'
+        when: 'Q4.2021'
     - year: 2022
       entries:
       - order: 0
         text: 'First exchange listing: Gate.io'
-        when: 'Jan 2022'
+        when: '12.01.2022'
         isMajor: false
       - order: 1
-        text: 9 mining pools on Alephium
-        when: 'Feb 2022'
-        isMajor: false
+        text: 'Initiation of marketing initiatives (sponsoring of ErgoHack, AMAs, community competitions, campaigns, Tech Talk Series, etc)'
+        when: 'Q3.2022'
       - order: 2
-        text: Building begins on the first NFT platform on Alephium
-        when: 'Apr 2022'
-        isMajor: false
+        text: 3rd party dApps development started on Alephium
+        when: 'Q3.2022'
       - order: 3
-        text: Website Revamp
-        when: 'Jun 2022'
-        isMajor: false
+        text: Dappnode Integration 
+        when: '10.2022'
+      - order: 4
+        text: Flux Integration
+        when: '11.2022'
+      - order: 5
+        text: Launch of Alephium Swag Shop
+        when: '11.2022'
+      - order: 6
+        text: Joint communication and marketing initiatives with UTXO Alliance members
+        when: 'H2.2022'
+      - order: 7
+        text: Reached over 265 community contributions
+        when: '12.2022'
 todoListSection:
   title: What's next
   subtitle: Building an exciting future
   lists:
     - title: Core platform
       items:
-        - text: Improve the robustness, efficiency and dev-experience of the full node
+        - text: 'Desktop Wallet v2.0'
+          label: Feature
           complete: false
-        - text: Improve documentation of the core infrastructure
-          complete: false
-        - text: Improve the Alephium SDK with more features
-          complete: false
-        - text: Improve the robustness and efficiency of the explorer backend
-          complete: false
-        - text: Leman Network Upgrade for cross-chain interoperability
-          complete: false
-        - text: Bridge development, testing, and launch
-          complete: false
-        - text: DEX development, testing, and launch
-          complete: false
-        - text: dApp support in the desktop wallet
-          complete: false
-        - text: Hardware wallet integration
-          complete: false
-        - text: Mobile wallet
-          complete: false
+        - text: 'Mobile wallet (Android and iOS)'
+          label: Launch
+        - text: 'Alephium’s Bridge Launch on Testnet'
+          label: Launch
+        - text: 'Alephium’s Bridge Launch on Mainnet'
+          label: Launch
+        - text: 'Support streaming for blockchain events  (tx, block, contract events)'
+          label: Feature & UX
+        - text: 'Typescript SDK for off-chain transaction encoding/decoding'
+          label: Feature & Security
+        - text: 'P2P transaction endpoints and SDKs'
+          label: Feature
+        - text: 'Introduce AIP for Alephium Improvement Proposals'
+          label: Community
+        - text: 'Improved web3 SDK with better DevX and more functionality'
+          label: Improvement
+        - text: 'Multisig support in SDK and wallets'
+          label: Feature
+        - text: 'Standard for transaction information display on wallet'
+          label: Security
+        - text: 'Improved full node’s database system for better performance'
+          label: Improvement
+        - text: 'Better error system for full node and its endpoints'
+          label: DevX & UX
+        - text: 'Smart contracts support in the Explorer'
+          label: Feature
+        - text: 'Enhanced UX and additional features for the Browser Wallet Extension'
+          label: Improvement
+        - text: 'Improved NFT standard and prototype'
+          label: Improvement
+        - text: 'Additional dApps prototypes'
+          label: Launch
+        - text: 'Better development experience and additional functionalities for the Ralph language'
+          label: DevX
+        - text: 'Continuous improvement of the documentation'
+          label: Improvement
+        - text: 'Design and implement light node'
+          label: Feature
     - title: Ecosystem
       items:
-        - text: Key industry events (PBWS, EthCC, and others)
-          complete: false
-        - text: Community engagement & marketing (hackathon, AMAs, competitions...)
-          complete: false
-        - text: DEX listing (after the deployment of the bridge)
-          complete: false
-        - text: Additional CEX listing
-          complete: false
-        - text: 3rd party dApps (NFT, DEX, stablecoin) on Alephium
-          complete: false
-        - text: Grant Program V2
-          complete: false
+        - text: CEX listing
+        - text: Launch of 3rd party dApps (NFT, DEX, stablecoin, Alephium Name Services, oracle, etc) on Alephium
+        - text: Ledger wallet integration
+        - text: Additional bridges to other ecosystems
+        - text: Introduction videos & articles for building dApps on Alephium
+        - text: Integration with 3rd party wallets
+        - text: First Alephium Hackathon
+        - text: Grant program & Development Bounties V2
+        - text: Improve developers' onboarding experience
+        - text: Launch of the Ambassador program
+        - text: Building-up community engagement
+        - text: Additional marketing, partnership and knowledge-sharing initiatives with like-minded communities and projects.
+        - text: Website revamp
 shopSection:
   title: SWALPH
   subtitle: Decentralized SWAG 🤘
