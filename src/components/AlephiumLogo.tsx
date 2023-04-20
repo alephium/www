@@ -69,7 +69,7 @@ const AlephiumLogo = ({ className, gradientIndex, ...props }: AlephiumLogoProps)
 const gradients = [
   ['#fff', '#ff6f08', '#0800ff', '#00eeff'],
   ['#fff', '#ffd900', '#f200ff', '#520156'],
-  ['#ffbb00', '#ffb22c', '#ffd900', '#f9a51d']
+  ['#22eb5e', '#ffffff', '#029b30', '#22eb5e']
 ]
 
 export default AlephiumLogo

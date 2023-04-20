@@ -2,7 +2,7 @@ import styled, { ThemeProvider } from 'styled-components'
 import { graphql, PageProps } from 'gatsby'
 
 import GlobalStyle from '../styles/global-style'
-import { darkTheme, hackathonTheme } from '../styles/themes'
+import { darkTheme } from '../styles/themes'
 
 import Seo from '../components/Seo'
 import HackathonLandingSection, {
@@ -18,7 +18,7 @@ import GettingStartedSection, { GettingStartedSectionContentType } from '../comp
 
 interface HackathonPageProps extends PageProps {
   data: {
-    hackathon: {
+    ambassadors: {
       nodes: {
         frontmatter: {
           headerLandingSection: HackathonLandingSectionContentType
@@ -34,10 +34,10 @@ interface HackathonPageProps extends PageProps {
 }
 
 const IndexPage = (props: HackathonPageProps) => {
-  const pageContent = props.data.hackathon.nodes[0].frontmatter
+  const pageContent = props.data.ambassadors.nodes[0].frontmatter
 
   return (
-    <ThemeProvider theme={hackathonTheme}>
+    <ThemeProvider theme={darkTheme}>
       <Wrapper>
         <Seo />
         <GlobalStyle />
@@ -49,7 +49,9 @@ const IndexPage = (props: HackathonPageProps) => {
         <SectionDivider />
         <HackathonJudgingSection content={pageContent.rulesAndJudging} />
         <SectionDivider />
-        <GettingStartedSection content={{ ...pageContent.gettingStarted, html: props.data.hackathon.nodes[0].html }} />
+        <GettingStartedSection
+          content={{ ...pageContent.gettingStarted, html: props.data.ambassadors.nodes[0].html }}
+        />
       </Wrapper>
     </ThemeProvider>
   )
@@ -72,7 +74,7 @@ const Wrapper = styled.div`
 
 export const pageQuery = graphql`
   query {
-    hackathon: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/hackathon.md/" } }) {
+    ambassadors: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/ambassador.md/" } }) {
       nodes {
         frontmatter {
           headerLandingSection {

@@ -80,8 +80,9 @@ export default HackathonJudgingSection
 const HighlightedBox = styled.div`
   margin-bottom: var(--spacing-4);
   padding: var(--spacing-4);
-  border: 1px solid ${({ theme }) => theme.highlight};
-  background-color: ${({ theme }) => colord(theme.highlight).alpha(0.2).toHex()};
+  border: 1px solid ${({ theme }) => theme.highlightComplementary};
+  color: ${({ theme }) => theme.highlightComplementary};
+  background-color: ${({ theme }) => colord(theme.highlightComplementary).alpha(0.05).toHex()};
 
   h3 {
     margin-top: 0 !important;
@@ -108,7 +109,7 @@ const CriteriumList = styled.div`
 const CriteriumCard = styled.div`
   padding: var(--spacing-4);
   border-radius: var(--radius);
-  border: 1px solid ${({ theme }) => theme.borderPrimary};
+  border: 1px solid ${({ theme }) => theme.highlight};
   background-color: ${({ theme }) => theme.bgTertiary};
 
   h3 {

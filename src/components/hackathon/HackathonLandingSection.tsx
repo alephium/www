@@ -56,7 +56,7 @@ const Content = styled.div`
   margin-left: var(--spacing-14);
   margin-right: var(--spacing-14);
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
-  border: 1px solid ${({ theme }) => theme.borderPrimary};
+  border: 1px solid ${({ theme }) => theme.highlight};
 
   @media ${deviceBreakPoints.tablet} {
     margin-left: var(--spacing-4);
@@ -66,13 +66,13 @@ const Content = styled.div`
 
 const FirstContentBox = styled.div`
   padding: 5vh calc(max(3vw, 30px));
-  background-color: ${colord('#1111111').alpha(0.7).toRgbString()};
+  background-color: ${colord('#1111111').alpha(0.1).toRgbString()};
   backdrop-filter: blur(20px);
   max-height: 300px;
 `
 
 const SecondContentBox = styled.div`
-  background-color: ${colord('#222222').alpha(0.2).toRgbString()};
+  background-color: ${colord('#000000').alpha(0.6).toRgbString()};
   backdrop-filter: blur(20px);
   padding: 2vh 3vw;
   max-height: 150px;
@@ -82,13 +82,17 @@ const TagLine = styled.h2`
   color: ${({ theme }) => theme.textPrimary};
   font-size: var(--fontSize-24);
   max-width: 500px;
+  font-weight: 400;
 `
 const Title = styled.h1`
   color: ${({ theme }) => theme.textPrimary};
   font-size: var(--fontSize-50);
   margin-top: 10px;
+  font-weight: 500;
 `
 const Date = styled.h1`
   color: ${({ theme }) => theme.highlight};
   font-size: var(--fontSize-28);
+  font-family: 'courier';
+  font-weight: 200;
 `

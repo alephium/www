@@ -22,7 +22,7 @@ const Interoperability = () => (
     />
     <motion.g
       strokeWidth={3}
-      animate={{ stroke: ['#f7af14', '#23c4ff'] }}
+      animate={{ stroke: ['#22eb5e', '#00dbff'] }}
       transition={{ repeat: Infinity, duration: 1, repeatType: 'reverse' }}
     >
       <path
@@ -52,7 +52,7 @@ const Interoperability = () => (
     </motion.g>
     <motion.g
       strokeWidth={3}
-      animate={{ stroke: ['#23c4ff', '#f7af14'] }}
+      animate={{ stroke: ['#00dbff', '#22eb5e'] }}
       transition={{ repeat: Infinity, duration: 1, repeatType: 'reverse' }}
     >
       <path

@@ -219,12 +219,12 @@ const PrizeList = styled.div`
       background-color: ${({ theme }) => colord(theme.highlight).alpha(0.2).toHex()};
     }
     &:nth-child(2) {
-      border: 1px solid #bfbfbf;
-      background-color: ${colord('#bfbfbf').alpha(0.2).toHex()};
+      border: 1px solid ${({ theme }) => colord(theme.highlight).darken(0.2).toHex()};
+      background-color: ${({ theme }) => colord(theme.highlight).darken(0.2).alpha(0.2).toHex()};
     }
     &:nth-child(3) {
-      border: 1px solid #ff7a55;
-      background-color: ${colord('#ff7a55').alpha(0.2).toHex()};
+      border: 1px solid ${({ theme }) => colord(theme.highlight).darken(0.3).toHex()};
+      background-color: ${({ theme }) => colord(theme.highlight).darken(0.3).alpha(0.2).toHex()};
     }
     &:nth-child(4) {
       border: 1px solid #333333;
