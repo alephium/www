@@ -53,10 +53,12 @@ const AlephiumLogoStyled = styled(AlephiumLogo)`
 
 const Content = styled.div`
   margin-bottom: -12%;
-  margin-left: var(--spacing-14);
+  margin-left: var(--spacing-30);
   margin-right: var(--spacing-14);
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
   border: 1px solid ${({ theme }) => theme.highlight};
+  border-radius: 17px;
+  overflow: hidden;
 
   @media ${deviceBreakPoints.tablet} {
     margin-left: var(--spacing-4);
@@ -88,7 +90,7 @@ const Title = styled.h1`
   color: ${({ theme }) => theme.textPrimary};
   font-size: var(--fontSize-50);
   margin-top: 10px;
-  font-weight: 500;
+  font-weight: 600;
 `
 const Date = styled.h1`
   color: ${({ theme }) => theme.highlight};

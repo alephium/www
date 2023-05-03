@@ -35,11 +35,12 @@ const HackathonIntroSection = ({
 )
 
 export default styled(HackathonIntroSection)`
-  margin-top: var(--spacing-8);
+  margin-top: var(--spacing-14);
 `
 
 const StyledSectionTextHeader = styled(SectionTextHeader)`
   min-width: 450px;
+  padding: 0;
 
   @media ${deviceBreakPoints.tablet} {
     min-width: auto;
@@ -51,10 +52,11 @@ const IllustrationBox = styled(Column)`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border: 1px solid ${({ theme }) => theme.highlightComplementary};
 `
 
 const Description = styled.p`
-  margin: var(--spacing-10) 0 0 var(--spacing-4);
+  margin-top: var(--spacing-10);
   color: ${({ theme }) => theme.textPrimary};
   border-left: 2px solid ${({ theme }) => theme.highlight};
   padding-left: 20px;
