@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import PageSectionContainer from '../../components/PageSectionContainer'
-import { deviceBreakPoints } from '../../styles/global-style'
+import PageSectionContainer from '../../PageSectionContainer'
+import { deviceBreakPoints } from '../../../styles/global-style'
 
 export default styled(PageSectionContainer)`
   padding: var(--spacing-16);

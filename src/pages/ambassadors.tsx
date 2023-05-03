@@ -2,27 +2,33 @@ import styled, { ThemeProvider } from 'styled-components'
 import { graphql, PageProps } from 'gatsby'
 
 import GlobalStyle from '../styles/global-style'
-import { darkTheme } from '../styles/themes'
+import { ambassadorsTheme } from '../styles/themes'
 
 import Seo from '../components/Seo'
-import HackathonLandingSection, {
-  HackathonLandingSectionContentType
-} from '../components/hackathon/HackathonLandingSection'
 import SectionDivider from '../components/SectionDivider'
-import HackathonIntroSection, { HackathonIntroSectionContentType } from '../components/hackathon/HackathonIntroSection'
-import HackathonInfoSection, { HackathonInfoSectionContentType } from '../components/hackathon/HackathonInfoSection'
+import AmbassadorsIntroSection, {
+  AmbassadorsIntroSectionContentType
+} from '../components/pages/ambassadors/AmbassadorsIntroSection'
+import HackathonInfoSection, {
+  HackathonInfoSectionContentType
+} from '../components/pages/hackathon/HackathonInfoSection'
 import HackathonJudgingSection, {
   HackathonJudgingSectionContentType
-} from '../components/hackathon/HackathonJudgingSection'
-import GettingStartedSection, { GettingStartedSectionContentType } from '../components/hackathon/GettingStartedSection'
+} from '../components/pages/hackathon/HackathonJudgingSection'
+import GettingStartedSection, {
+  GettingStartedSectionContentType
+} from '../components/pages/hackathon/GettingStartedSection'
+import AmbassadorsLandingSection, {
+  AmbassadorsLandingSectionContentType
+} from '../components/pages/ambassadors/AmbassadorsLandingSection'
 
 interface HackathonPageProps extends PageProps {
   data: {
     ambassadors: {
       nodes: {
         frontmatter: {
-          headerLandingSection: HackathonLandingSectionContentType
-          introSection: HackathonIntroSectionContentType
+          headerLandingSection: AmbassadorsLandingSectionContentType
+          introSection: AmbassadorsIntroSectionContentType
           hackathonInfo: HackathonInfoSectionContentType
           rulesAndJudging: HackathonJudgingSectionContentType
           gettingStarted: GettingStartedSectionContentType
@@ -37,13 +43,13 @@ const IndexPage = (props: HackathonPageProps) => {
   const pageContent = props.data.ambassadors.nodes[0].frontmatter
 
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={ambassadorsTheme}>
       <Wrapper>
         <Seo />
         <GlobalStyle />
-        <HackathonLandingSection content={pageContent.headerLandingSection} />
+        <AmbassadorsLandingSection content={pageContent.headerLandingSection} />
         <SectionDivider />
-        <HackathonIntroSection content={pageContent.introSection} />
+        <AmbassadorsIntroSection content={pageContent.introSection} />
         <SectionDivider />
         <HackathonInfoSection content={pageContent.hackathonInfo} />
         <SectionDivider />
@@ -74,7 +80,7 @@ const Wrapper = styled.div`
 
 export const pageQuery = graphql`
   query {
-    ambassadors: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/ambassador.md/" } }) {
+    ambassadors: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/ambassadors.md/" } }) {
       nodes {
         frontmatter {
           headerLandingSection {

@@ -13,6 +13,6 @@ export const H3 = styled.h3<{ divider?: boolean }>`
     css`
       font-size: 32px !important;
       padding-bottom: var(--spacing-2);
-      border-bottom: 1px solid ${({ theme }) => theme.borderPrimary};
+      border-bottom: 1px solid ${({ theme }) => theme.textTertiary};
     `}
 `

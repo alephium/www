@@ -1,11 +1,11 @@
 ---
 headerLandingSection:
-  tagline: "Following the Leman upgrade, here's Alephium's first ever online hackathon."
-  title: Buidl On Alephium
+  tagline: "Let’s grow the Alephium ecosystem together!"
+  title: Alephians Program
   date: 15th - 25th April 2023
 introSection:
-  title: '"A unique chance to kickstart your project with Alephium"'
-  subtitle: Decentralization, self-sovereignty, and security meet high-performance, accessibility, and energy efficiency in Alephium’s dev-friendly network.
+  title: Become an Alephian
+  subtitle: Help us spread the word about Alephium, increase adoption and build our community. dev-friendly network.
   description: "For its first hackathon, Alephium invites talented builders from all over the world to experiment and leverage its new development paradigm to expand on existing capabilities and create the first wave of Alephium’s dApps. This hackathon aims to propel the developer community’s creativity into an enabling force for innovation and progress. 
   And there is more! Projects launched during the hackathon will have the opportunity to receive further support from Alephium to continue their development."
 hackathonInfo:

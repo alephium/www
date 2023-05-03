@@ -2,19 +2,25 @@ import styled, { ThemeProvider } from 'styled-components'
 import { graphql, PageProps } from 'gatsby'
 
 import GlobalStyle from '../styles/global-style'
-import { darkTheme, hackathonTheme } from '../styles/themes'
+import { hackathonTheme } from '../styles/themes'
 
 import Seo from '../components/Seo'
 import HackathonLandingSection, {
   HackathonLandingSectionContentType
-} from '../components/hackathon/HackathonLandingSection'
+} from '../components/pages/hackathon/HackathonLandingSection'
 import SectionDivider from '../components/SectionDivider'
-import HackathonIntroSection, { HackathonIntroSectionContentType } from '../components/hackathon/HackathonIntroSection'
-import HackathonInfoSection, { HackathonInfoSectionContentType } from '../components/hackathon/HackathonInfoSection'
+import HackathonIntroSection, {
+  HackathonIntroSectionContentType
+} from '../components/pages/hackathon/HackathonIntroSection'
+import HackathonInfoSection, {
+  HackathonInfoSectionContentType
+} from '../components/pages/hackathon/HackathonInfoSection'
 import HackathonJudgingSection, {
   HackathonJudgingSectionContentType
-} from '../components/hackathon/HackathonJudgingSection'
-import GettingStartedSection, { GettingStartedSectionContentType } from '../components/hackathon/GettingStartedSection'
+} from '../components/pages/hackathon/HackathonJudgingSection'
+import GettingStartedSection, {
+  GettingStartedSectionContentType
+} from '../components/pages/hackathon/GettingStartedSection'
 
 interface HackathonPageProps extends PageProps {
   data: {

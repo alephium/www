@@ -1,8 +1,8 @@
 import styled from 'styled-components'
-import Column from '../../components/Columns/Column'
-import Columns from '../../components/Columns/Columns'
-import SectionTextHeader from '../../components/SectionTextHeader'
-import { deviceBreakPoints } from '../../styles/global-style'
+import Column from '../../Columns/Column'
+import Columns from '../../Columns/Columns'
+import SectionTextHeader from '../../SectionTextHeader'
+import { deviceBreakPoints } from '../../../styles/global-style'
 import GenevaWaterJet from './AnimatedIllustrations/GenevaWaterJet'
 import HackathonSectionContainer from './HackathonSectionContainer'
 
