@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import HackathonSectionContainer from './HackathonSectionContainer'
-import HackathonSectionTitle from './HackathonSectionTitle'
+import HackathonSectionContainer from './AmbassadorsSectionContainer'
+import HackathonSectionTitle from './AmbassadorsSectionTitle'
 
 export type GettingStartedSectionContentType = {
   title: string

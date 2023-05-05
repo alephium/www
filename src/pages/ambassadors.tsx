@@ -48,13 +48,9 @@ const IndexPage = (props: HackathonPageProps) => {
         <Seo />
         <GlobalStyle />
         <AmbassadorsLandingSection content={pageContent.headerLandingSection} />
-        <SectionDivider />
         <AmbassadorsIntroSection content={pageContent.introSection} />
-        <SectionDivider />
         <HackathonInfoSection content={pageContent.hackathonInfo} />
-        <SectionDivider />
         <HackathonJudgingSection content={pageContent.rulesAndJudging} />
-        <SectionDivider />
         <GettingStartedSection
           content={{ ...pageContent.gettingStarted, html: props.data.ambassadors.nodes[0].html }}
         />
@@ -72,9 +68,15 @@ const Wrapper = styled.div`
   }
   font-size: 18px; // Slighty increase base font size for marketing content
   line-height: 24px;
+  font-family: 'Helvetica Now'; // Trial.
+  background-color: ${({ theme }) => theme.bgPrimary};
 
   a {
     color: ${({ theme }) => theme.highlightComplementary};
+  }
+
+  h2 {
+    font-weight: 400;
   }
 `
 

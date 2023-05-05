@@ -4,7 +4,7 @@ import Columns from '../../Columns/Columns'
 import SectionTextHeader from '../../SectionTextHeader'
 import { deviceBreakPoints } from '../../../styles/global-style'
 import GenevaWaterJet from './AnimatedIllustrations/GenevaWaterJet'
-import HackathonSectionContainer from './HackathonSectionContainer'
+import HackathonSectionContainer from './AmbassadorsSectionContainer'
 
 export type AmbassadorsIntroSectionContentType = {
   title: string
@@ -48,11 +48,10 @@ const StyledSectionTextHeader = styled(SectionTextHeader)`
 `
 
 const IllustrationBox = styled(Column)`
-  background-color: ${({ theme }) => theme.bgPrimary};
+  background-color: ${({ theme }) => theme.bgTertiary};
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid ${({ theme }) => theme.highlightComplementary};
 `
 
 const Description = styled.p`

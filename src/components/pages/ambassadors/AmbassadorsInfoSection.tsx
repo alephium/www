@@ -8,12 +8,12 @@ import Gaming from './AnimatedIllustrations/Gaming'
 import Interoperability from './AnimatedIllustrations/Interoperability'
 import NFTs from './AnimatedIllustrations/NFTs'
 import Tooling from './AnimatedIllustrations/Tooling'
-import HackathonSectionContainer from './HackathonSectionContainer'
-import HackathonSectionTitle from './HackathonSectionTitle'
+import HackathonSectionContainer from './AmbassadorsSectionContainer'
+import HackathonSectionTitle from './AmbassadorsSectionTitle'
 import { H3, Paragraph } from './Texts'
 import TrackCard from './TrackCard'
 
-export type HackathonInfoSectionContentType = {
+export type AmbassadorsInfoSectionContentType = {
   participantsInfo: {
     title: string
     description: string
@@ -57,21 +57,15 @@ export type HackathonInfoSectionContentType = {
   }
 }
 
-interface HackathonInfoSectionProps {
-  content: HackathonInfoSectionContentType
+interface AmbassadorsInfoSectionProps {
+  content: AmbassadorsInfoSectionContentType
   className?: string
 }
 
-const HackathonInfoSection = ({ content, className }: HackathonInfoSectionProps) => (
+const AmbassadorsInfoSection = ({ content, className }: AmbassadorsInfoSectionProps) => (
   <div className={className}>
     <HackathonSectionContainer>
-      <HackathonSectionTitle
-        title="The Hackathon"
-        subtitle="What you need to know"
-        sticky
-        bigSubtitle
-        backgroundColor="bgTertiary"
-      />
+      <HackathonSectionTitle title="The Hackathon" subtitle="What you need to know" sticky bigSubtitle />
       <H3 divider>{content.participantsInfo.title}</H3>
       <Paragraph>{content.participantsInfo.description}</Paragraph>
       <StyledArrowedLink url={content.participantsInfo.link.url} newTab>
@@ -142,9 +136,7 @@ const animatedTrackIllustrations = [
   <Interoperability key="Interoperability" />
 ]
 
-export default styled(HackathonInfoSection)`
-  background-color: ${({ theme }) => theme.bgTertiary};
-`
+export default AmbassadorsInfoSection
 
 const StyledArrowedLink = styled(ArrowedLink)`
   color: ${({ theme }) => theme.highlightComplementary};

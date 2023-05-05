@@ -1,7 +1,6 @@
 import { colord } from 'colord'
 import styled from 'styled-components'
 import AlephiumLogo from '../../AlephiumLogo'
-import ParallaxWrapper from '../../ParallaxWrapper'
 import { deviceBreakPoints } from '../../../styles/global-style'
 
 export type AmbassadorsLandingSectionContentType = {
@@ -16,18 +15,16 @@ interface AmbassadorsLandingSectionProps {
 
 const AmbassadorsLandingSection = ({ content: { tagline, title, date } }: AmbassadorsLandingSectionProps) => (
   <SectionWrapper>
-    <ParallaxWrapper speed={5}>
-      <Content>
-        <FirstContentBox>
-          <AlephiumLogoStyled gradientIndex={2} />
-          <Date>{date}</Date>
-          <Title>{title}</Title>
-        </FirstContentBox>
-        <SecondContentBox>
-          <TagLine>{tagline}</TagLine>
-        </SecondContentBox>
-      </Content>
-    </ParallaxWrapper>
+    <Content>
+      <FirstContentBox>
+        <AlephiumLogoStyled gradientIndex={2} />
+        <Date>{date}</Date>
+        <Title>{title}</Title>
+      </FirstContentBox>
+      <SecondContentBox>
+        <TagLine>{tagline}</TagLine>
+      </SecondContentBox>
+    </Content>
   </SectionWrapper>
 )
 
@@ -35,10 +32,10 @@ export default AmbassadorsLandingSection
 
 const SectionWrapper = styled.div`
   position: relative;
-  height: calc(max(60vh, 300px));
-  max-height: 400px;
+  height: 50vh;
   display: flex;
-  align-items: flex-end;
+  background: black;
+  margin: 5vh 10vw;
 `
 
 const AlephiumLogoStyled = styled(AlephiumLogo)`
@@ -61,29 +58,28 @@ const Content = styled.div`
 `
 
 const FirstContentBox = styled.div`
-  padding: 5vh calc(max(3vw, 30px));
-  backdrop-filter: blur(20px);
   max-height: 300px;
 `
 
 const SecondContentBox = styled.div`
   background-color: ${colord('#000000').alpha(0.6).toRgbString()};
   backdrop-filter: blur(20px);
-  padding: 2vh 3vw;
+
   max-height: 150px;
 `
 
 const TagLine = styled.h2`
-  color: ${({ theme }) => theme.textPrimary};
+  color: white;
   font-size: var(--fontSize-24);
+  color: ${({ theme }) => theme.bgTertiary};
   max-width: 500px;
   font-weight: 400;
 `
 const Title = styled.h1`
-  color: ${({ theme }) => theme.textPrimary};
+  color: white;
   font-size: var(--fontSize-50);
   margin-top: 10px;
-  font-weight: 600;
+  font-weight: 500;
 `
 const Date = styled.h1`
   color: ${({ theme }) => theme.highlight};

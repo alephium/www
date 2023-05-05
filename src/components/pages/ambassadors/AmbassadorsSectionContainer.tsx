@@ -3,7 +3,7 @@ import PageSectionContainer from '../../PageSectionContainer'
 import { deviceBreakPoints } from '../../../styles/global-style'
 
 export default styled(PageSectionContainer)`
-  padding: var(--spacing-16);
+  padding: var(--spacing-16) 0;
 
   @media ${deviceBreakPoints.tablet} {
     padding: var(--spacing-12) var(--spacing-4);

@@ -3,8 +3,8 @@ import { IGatsbyImageData } from 'gatsby-plugin-image'
 import styled from 'styled-components'
 import TeamMember from '../../TeamMember'
 import { deviceBreakPoints } from '../../../styles/global-style'
-import HackathonSectionContainer from './HackathonSectionContainer'
-import HackathonSectionTitle from './HackathonSectionTitle'
+import HackathonSectionContainer from './AmbassadorsSectionContainer'
+import HackathonSectionTitle from './AmbassadorsSectionTitle'
 import { H3, Paragraph } from './Texts'
 
 export type HackathonJudgingSectionContentType = {
