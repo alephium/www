@@ -1,7 +1,6 @@
-import { colord } from 'colord'
 import styled from 'styled-components'
-import AlephiumLogo from '../../AlephiumLogo'
 import { deviceBreakPoints } from '../../../styles/global-style'
+import sunriseSrc from '../../../images/sunrise-in-ch.jpg'
 
 export type AmbassadorsLandingSectionContentType = {
   tagline: string
@@ -16,14 +15,9 @@ interface AmbassadorsLandingSectionProps {
 const AmbassadorsLandingSection = ({ content: { tagline, title, date } }: AmbassadorsLandingSectionProps) => (
   <SectionWrapper>
     <Content>
-      <FirstContentBox>
-        <AlephiumLogoStyled gradientIndex={2} />
-        <Date>{date}</Date>
-        <Title>{title}</Title>
-      </FirstContentBox>
-      <SecondContentBox>
-        <TagLine>{tagline}</TagLine>
-      </SecondContentBox>
+      <Label>Community</Label>
+      <Title>{title}</Title>
+      <TagLine>{tagline}</TagLine>
     </Content>
   </SectionWrapper>
 )
@@ -35,54 +29,40 @@ const SectionWrapper = styled.div`
   height: 50vh;
   display: flex;
   background: black;
+  background-image: url(${sunriseSrc});
+  background-position: center;
   margin: 5vh 10vw;
 `
 
-const AlephiumLogoStyled = styled(AlephiumLogo)`
-  height: 10vh;
-  min-height: 80px;
-  width: auto;
-`
-
 const Content = styled.div`
-  margin-left: var(--spacing-30);
-  margin-right: var(--spacing-14);
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
-  border-radius: 17px;
-  overflow: hidden;
+  margin-left: max(var(--spacing-14), 10vw);
+  margin-top: 200px;
 
   @media ${deviceBreakPoints.tablet} {
-    margin-left: var(--spacing-4);
-    margin-right: var(--spacing-4);
+    margin-left: var(--spacing-8);
+    margin-top: 110px;
   }
 `
 
-const FirstContentBox = styled.div`
-  max-height: 300px;
-`
-
-const SecondContentBox = styled.div`
-  background-color: ${colord('#000000').alpha(0.6).toRgbString()};
-  backdrop-filter: blur(20px);
-
-  max-height: 150px;
-`
-
-const TagLine = styled.h2`
+const Label = styled.div`
   color: white;
+  color: ${({ theme }) => theme.highlight};
   font-size: var(--fontSize-24);
-  color: ${({ theme }) => theme.bgTertiary};
-  max-width: 500px;
+  margin-bottom: var(--spacing-2);
+`
+
+const Title = styled.h1`
+  //color: ${({ theme }) => theme.highlight};
+  color: white;
+  font-size: var(--fontSize-56);
+  margin-top: 10px;
+  margin-bottom: 0;
   font-weight: 400;
 `
-const Title = styled.h1`
-  color: white;
-  font-size: var(--fontSize-50);
-  margin-top: 10px;
-  font-weight: 500;
-`
-const Date = styled.h1`
-  color: ${({ theme }) => theme.highlight};
-  font-size: var(--fontSize-28);
-  font-weight: 200;
+
+const TagLine = styled.div`
+  margin: var(--spacing-3) 0;
+  font-size: var(--fontSize-24);
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 300;
 `

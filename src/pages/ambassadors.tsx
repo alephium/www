@@ -21,6 +21,7 @@ import GettingStartedSection, {
 import AmbassadorsLandingSection, {
   AmbassadorsLandingSectionContentType
 } from '../components/pages/ambassadors/AmbassadorsLandingSection'
+import NavigationMenu from '../components/NavigationMenu'
 
 interface HackathonPageProps extends PageProps {
   data: {
@@ -47,6 +48,7 @@ const IndexPage = (props: HackathonPageProps) => {
       <Wrapper>
         <Seo />
         <GlobalStyle />
+        <NavigationMenuStyled />
         <AmbassadorsLandingSection content={pageContent.headerLandingSection} />
         <AmbassadorsIntroSection content={pageContent.introSection} />
         <HackathonInfoSection content={pageContent.hackathonInfo} />
@@ -77,6 +79,15 @@ const Wrapper = styled.div`
 
   h2 {
     font-weight: 400;
+  }
+`
+
+const NavigationMenuStyled = styled(NavigationMenu)`
+  margin: 0 10vw;
+
+  a {
+    font-weight: 300;
+    color: ${({ theme }) => theme.textPrimary};
   }
 `
 

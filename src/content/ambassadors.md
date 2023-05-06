@@ -1,7 +1,7 @@
 ---
 headerLandingSection:
-  tagline: "Let’s grow the Alephium ecosystem together!"
-  title: Alephians Program
+  tagline: Growing the ecosystem together.
+  title: Ambassadors
   date: 15th - 25th April 2023
 introSection:
   title: Become an Alephian.

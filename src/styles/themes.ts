@@ -94,6 +94,6 @@ export const ambassadorsTheme: DefaultTheme = {
 
   separator: 'var(--color-grey-100)',
 
-  highlight: '#fed81b',
-  highlightComplementary: '#ff6a00'
+  highlight: '#ffae54',
+  highlightComplementary: '#00aeff'
 }
