@@ -12,7 +12,7 @@ interface AmbassadorsLandingSectionProps {
   content: AmbassadorsLandingSectionContentType
 }
 
-const AmbassadorsLandingSection = ({ content: { tagline, title, date } }: AmbassadorsLandingSectionProps) => (
+const AmbassadorsLandingSection = ({ content: { tagline, title } }: AmbassadorsLandingSectionProps) => (
   <SectionWrapper>
     <Content>
       <Label>Community</Label>

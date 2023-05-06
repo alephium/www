@@ -4,7 +4,7 @@ import Columns from '../../Columns/Columns'
 import SectionTextHeader from '../../SectionTextHeader'
 import { deviceBreakPoints } from '../../../styles/global-style'
 import GenevaWaterJet from './AnimatedIllustrations/GenevaWaterJet'
-import HackathonSectionContainer from './AmbassadorsSectionContainer'
+import AmbassadorsSectionContainer from './AmbassadorsSectionContainer'
 
 export type AmbassadorsIntroSectionContentType = {
   title: string
@@ -21,25 +21,24 @@ const AmbassadorsIntroSection = ({
   content: { title, subtitle, description },
   className
 }: AmbassadorsIntroSectionProps) => (
-  <HackathonSectionContainer className={className}>
+  <AmbassadorsSectionContainer className={className}>
     <Columns gap={'5vw'}>
       <IllustrationBox>
         <GenevaWaterJet />
       </IllustrationBox>
-      <Column>
+      <TextBox>
         <StyledSectionTextHeader bigSubtitle title={title} subtitle={subtitle} />
-      </Column>
+        <Description>{description}</Description>
+      </TextBox>
     </Columns>
-    <Description>{description}</Description>
-  </HackathonSectionContainer>
+  </AmbassadorsSectionContainer>
 )
 
 export default styled(AmbassadorsIntroSection)`
-  margin-top: var(--spacing-14);
+  border: 1px solid ${({ theme }) => theme.borderPrimary};
 `
 
 const StyledSectionTextHeader = styled(SectionTextHeader)`
-  min-width: 450px;
   padding: 0;
 
   @media ${deviceBreakPoints.tablet} {
@@ -47,22 +46,23 @@ const StyledSectionTextHeader = styled(SectionTextHeader)`
   }
 `
 
-const IllustrationBox = styled(Column)`
-  background-color: ${({ theme }) => theme.bgTertiary};
+const IllustrationBox = styled.div`
+  flex: 1;
+  background-color: ${({ theme }) => theme.bgSecondary};
   display: flex;
   flex-direction: column;
   justify-content: center;
 `
 
-const Description = styled.p`
-  margin-top: var(--spacing-10);
-  color: ${({ theme }) => theme.textPrimary};
-  border-left: 2px solid ${({ theme }) => theme.highlight};
-  padding-left: 20px;
-  text-align: justify;
+const TextBox = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-6);
+`
 
-  @media ${deviceBreakPoints.tablet} {
-    margin: var(--spacing-10) var(--spacing-2) 0 0;
-    padding-left: 15px;
-  }
+const Description = styled.p`
+  margin-top: var(--spacing-6);
 `

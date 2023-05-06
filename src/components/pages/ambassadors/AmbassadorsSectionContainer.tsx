@@ -1,11 +1,6 @@
 import styled from 'styled-components'
-import PageSectionContainer from '../../PageSectionContainer'
-import { deviceBreakPoints } from '../../../styles/global-style'
 
-export default styled(PageSectionContainer)`
-  padding: var(--spacing-16) 0;
-
-  @media ${deviceBreakPoints.tablet} {
-    padding: var(--spacing-12) var(--spacing-4);
-  }
+export default styled.section`
+  margin: var(--spacing-10) 10vw;
+  max-width: auto;
 `

@@ -87,7 +87,7 @@ export const ambassadorsTheme: DefaultTheme = {
   bgTertiary: 'var(--color-grey-100)',
   bgSurface: 'var(--color-white)',
 
-  borderPrimary: 'var(--border-primary-light)',
+  borderPrimary: 'var(--color-grey-100)',
 
   link: 'var(--color-blue)',
   linkAlt: 'var(--color-black)',
