@@ -26,9 +26,6 @@ const HackathonIntroSection = ({
       <Column>
         <StyledSectionTextHeader bigSubtitle title={title} subtitle={subtitle} />
       </Column>
-      <IllustrationBox>
-        <GenevaWaterJet />
-      </IllustrationBox>
     </Columns>
     <Description>{description}</Description>
   </HackathonSectionContainer>

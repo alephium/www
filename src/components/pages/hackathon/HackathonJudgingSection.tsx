@@ -109,11 +109,12 @@ const CriteriumList = styled.div`
 const CriteriumCard = styled.div`
   padding: var(--spacing-4);
   border-radius: var(--radius);
-  border: 1px solid ${({ theme }) => theme.highlightComplementary};
-  background-color: ${({ theme }) => theme.bgTertiary};
+  border: 1px solid ${({ theme }) => theme.borderPrimary};
+  background-color: ${({ theme }) => theme.bgPrimary};
 
   h3 {
     margin-top: var(--spacing-2);
+    color: ${({ theme }) => theme.highlightComplementary};
   }
 `
 

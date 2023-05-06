@@ -26,7 +26,8 @@ export default TrackCard
 
 const TrackCardStyled = styled(Card)`
   padding: var(--spacing-2) var(--spacing-4);
-  border-color: ${({ theme }) => theme.textTertiary};
+  border-color: ${({ theme }) => theme.borderPrimary};
+  background-color: ${({ theme }) => theme.bgPrimary};
 `
 
 const TextContent = styled.div`

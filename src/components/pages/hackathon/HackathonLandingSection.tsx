@@ -48,16 +48,16 @@ const SectionWrapper = styled.div`
 const AlephiumLogoStyled = styled(AlephiumLogo)`
   height: 10vh;
   min-height: 80px;
+  max-height: 110px;
   width: auto;
 `
 
 const Content = styled.div`
-  margin-bottom: -12%;
-  margin-left: var(--spacing-30);
-  margin-right: var(--spacing-14);
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: -100px;
+  margin-left: 20vw;
+  margin-top: var(--spacing-6);
+  box-shadow: 0 0 60px rgba(0, 255, 94, 0.444);
   border: 1px solid ${({ theme }) => theme.highlight};
-  border-radius: 17px;
   overflow: hidden;
 
   @media ${deviceBreakPoints.tablet} {
@@ -67,14 +67,15 @@ const Content = styled.div`
 `
 
 const FirstContentBox = styled.div`
-  padding: 5vh calc(max(3vw, 30px));
+  padding: var(--spacing-6) calc(max(3vw, 30px));
   background-color: ${colord('#1111111').alpha(0.1).toRgbString()};
   backdrop-filter: blur(20px);
   max-height: 300px;
 `
 
 const SecondContentBox = styled.div`
-  background-color: ${colord('#000000').alpha(0.6).toRgbString()};
+  background-color: ${({ theme }) => theme.highlight};
+  color: white;
   backdrop-filter: blur(20px);
   padding: 2vh 3vw;
   max-height: 150px;
