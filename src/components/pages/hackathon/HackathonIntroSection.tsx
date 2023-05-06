@@ -44,14 +44,6 @@ const StyledSectionTextHeader = styled(SectionTextHeader)`
   }
 `
 
-const IllustrationBox = styled(Column)`
-  background-color: ${({ theme }) => theme.bgPrimary};
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border: 1px solid ${({ theme }) => theme.highlightComplementary};
-`
-
 const Description = styled.p`
   margin-top: var(--spacing-10);
   color: ${({ theme }) => theme.textPrimary};

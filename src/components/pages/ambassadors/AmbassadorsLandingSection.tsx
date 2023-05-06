@@ -27,9 +27,12 @@ export default AmbassadorsLandingSection
 const SectionWrapper = styled.div`
   position: relative;
   height: 50vh;
+  min-height: 500px;
   display: flex;
   background: black;
   background-image: url(${sunriseSrc});
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   margin: 5vh 10vw;
 `

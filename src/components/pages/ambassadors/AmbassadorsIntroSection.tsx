@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import Column from '../../Columns/Column'
 import Columns from '../../Columns/Columns'
 import SectionTextHeader from '../../SectionTextHeader'
 import { deviceBreakPoints } from '../../../styles/global-style'
@@ -22,7 +21,7 @@ const AmbassadorsIntroSection = ({
   className
 }: AmbassadorsIntroSectionProps) => (
   <AmbassadorsSectionContainer className={className}>
-    <Columns gap={'5vw'}>
+    <Columns>
       <IllustrationBox>
         <GenevaWaterJet />
       </IllustrationBox>
@@ -35,7 +34,7 @@ const AmbassadorsIntroSection = ({
 )
 
 export default styled(AmbassadorsIntroSection)`
-  border: 1px solid ${({ theme }) => theme.borderPrimary};
+  background-color: ${({ theme }) => theme.bgSecondary};
 `
 
 const StyledSectionTextHeader = styled(SectionTextHeader)`
@@ -48,10 +47,15 @@ const StyledSectionTextHeader = styled(SectionTextHeader)`
 
 const IllustrationBox = styled.div`
   flex: 1;
-  background-color: ${({ theme }) => theme.bgSecondary};
+  background-color: #bcdae9ff;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-height: 600px;
+
+  @media ${deviceBreakPoints.tablet} {
+    display: none;
+  }
 `
 
 const TextBox = styled.div`
@@ -60,7 +64,7 @@ const TextBox = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: var(--spacing-6);
+  padding: var(--spacing-8) 5vw;
 `
 
 const Description = styled.p`

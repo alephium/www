@@ -5,13 +5,12 @@ export const Paragraph = styled.p`
 `
 
 export const H3 = styled.h3<{ divider?: boolean }>`
-  margin-top: var(--spacing-6);
-  font-size: 28px !important;
+  font-size: 23px !important;
+  font-wight: 300 !important;
 
   ${({ divider }) =>
     divider &&
     css`
-      font-size: 32px !important;
       padding-bottom: var(--spacing-2);
       border-bottom: 1px solid ${({ theme }) => theme.textTertiary};
     `}

@@ -5,19 +5,12 @@ import GlobalStyle from '../styles/global-style'
 import { ambassadorsTheme } from '../styles/themes'
 
 import Seo from '../components/Seo'
-import SectionDivider from '../components/SectionDivider'
 import AmbassadorsIntroSection, {
   AmbassadorsIntroSectionContentType
 } from '../components/pages/ambassadors/AmbassadorsIntroSection'
-import HackathonInfoSection, {
-  HackathonInfoSectionContentType
-} from '../components/pages/hackathon/HackathonInfoSection'
-import HackathonJudgingSection, {
-  HackathonJudgingSectionContentType
-} from '../components/pages/hackathon/HackathonJudgingSection'
-import GettingStartedSection, {
-  GettingStartedSectionContentType
-} from '../components/pages/hackathon/GettingStartedSection'
+import AmbassadorsInfoSection, {
+  AmbassadorsInfoSectionContentType
+} from '../components/pages/ambassadors/AmbassadorsInfoSection'
 import AmbassadorsLandingSection, {
   AmbassadorsLandingSectionContentType
 } from '../components/pages/ambassadors/AmbassadorsLandingSection'
@@ -30,9 +23,7 @@ interface HackathonPageProps extends PageProps {
         frontmatter: {
           headerLandingSection: AmbassadorsLandingSectionContentType
           introSection: AmbassadorsIntroSectionContentType
-          hackathonInfo: HackathonInfoSectionContentType
-          rulesAndJudging: HackathonJudgingSectionContentType
-          gettingStarted: GettingStartedSectionContentType
+          hackathonInfo: AmbassadorsInfoSectionContentType
         }
         html: string
       }[]
@@ -51,11 +42,7 @@ const IndexPage = (props: HackathonPageProps) => {
         <NavigationMenuStyled />
         <AmbassadorsLandingSection content={pageContent.headerLandingSection} />
         <AmbassadorsIntroSection content={pageContent.introSection} />
-        <HackathonInfoSection content={pageContent.hackathonInfo} />
-        <HackathonJudgingSection content={pageContent.rulesAndJudging} />
-        <GettingStartedSection
-          content={{ ...pageContent.gettingStarted, html: props.data.ambassadors.nodes[0].html }}
-        />
+        <AmbassadorsInfoSection content={pageContent.hackathonInfo} />
       </Wrapper>
     </ThemeProvider>
   )
@@ -75,6 +62,7 @@ const Wrapper = styled.div`
 
   a {
     color: ${({ theme }) => theme.highlightComplementary};
+    font-weight: 300;
   }
 
   h2 {
