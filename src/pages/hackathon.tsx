@@ -1,7 +1,7 @@
 import styled, { ThemeProvider } from 'styled-components'
 import { graphql, PageProps } from 'gatsby'
 
-import GlobalStyle from '../styles/global-style'
+import GlobalStyle, { deviceBreakPoints } from '../styles/global-style'
 import { hackathonTheme } from '../styles/themes'
 
 import Seo from '../components/Seo'
@@ -21,6 +21,7 @@ import HackathonJudgingSection, {
 import GettingStartedSection, {
   GettingStartedSectionContentType
 } from '../components/pages/hackathon/GettingStartedSection'
+import NavigationMenu from '../components/NavigationMenu'
 
 interface HackathonPageProps extends PageProps {
   data: {
@@ -47,6 +48,7 @@ const IndexPage = (props: HackathonPageProps) => {
       <Wrapper>
         <Seo />
         <GlobalStyle />
+        <NavigationMenuStyled />
         <HackathonLandingSection content={pageContent.headerLandingSection} />
         <SectionDivider />
         <HackathonIntroSection content={pageContent.introSection} />
@@ -62,6 +64,23 @@ const IndexPage = (props: HackathonPageProps) => {
 }
 
 export default IndexPage
+
+const NavigationMenuStyled = styled(NavigationMenu)`
+  margin: 0 10vw;
+
+  a {
+    font-weight: 300;
+    color: ${({ theme }) => theme.textPrimary} !important;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    @media ${deviceBreakPoints.tablet} {
+      margin: 0;
+    }
+  }
+`
 
 const Wrapper = styled.div`
   // Some simple specific styles for text focused pages like the hackathon one.
