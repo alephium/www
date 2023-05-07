@@ -55,7 +55,7 @@ interface AmbassadorsInfoSectionProps {
   className?: string
 }
 
-const AmbassadorsInfoSection = ({ content, className }: AmbassadorsInfoSectionProps) => (
+const AmbassadorsInfoSection = ({ className }: AmbassadorsInfoSectionProps) => (
   <div className={className}>
     <AmbassadorsSectionContainer>
       <Columns gap={'50px'}>

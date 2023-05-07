@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import Columns from '../../Columns/Columns'
-import SectionTextHeader from '../../SectionTextHeader'
 import { deviceBreakPoints } from '../../../styles/global-style'
 import GenevaWaterJet from './AnimatedIllustrations/GenevaWaterJet'
 import AmbassadorsSectionContainer from './AmbassadorsSectionContainer'
