@@ -58,9 +58,9 @@ export const hackathonTheme: DefaultTheme = {
   textSecondary: 'var(--color-grey-200)',
   textTertiary: 'var(--color-grey-300)',
 
-  bgPrimary: 'var(--color-grey-800)',
-  bgSecondary: 'var(--color-grey-900)',
-  bgTertiary: 'var(--color-grey-950)',
+  bgPrimary: 'var(--color-grey-700)',
+  bgSecondary: 'var(--color-grey-800)',
+  bgTertiary: 'var(--color-grey-900)',
   bgSurface: 'var(--color-grey-700)',
 
   borderPrimary: 'var(--color-grey-700)',

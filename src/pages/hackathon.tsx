@@ -2,7 +2,7 @@ import styled, { ThemeProvider } from 'styled-components'
 import { graphql, PageProps } from 'gatsby'
 
 import GlobalStyle, { deviceBreakPoints } from '../styles/global-style'
-import { hackathonTheme } from '../styles/themes'
+import { hackathonTheme, lightTheme } from '../styles/themes'
 
 import Seo from '../components/Seo'
 import HackathonLandingSection, {
@@ -22,6 +22,7 @@ import GettingStartedSection, {
   GettingStartedSectionContentType
 } from '../components/pages/hackathon/GettingStartedSection'
 import NavigationMenu from '../components/NavigationMenu'
+import Footer from '../components/Footer'
 
 interface HackathonPageProps extends PageProps {
   data: {
@@ -44,22 +45,29 @@ const IndexPage = (props: HackathonPageProps) => {
   const pageContent = props.data.hackathon.nodes[0].frontmatter
 
   return (
-    <ThemeProvider theme={hackathonTheme}>
-      <Wrapper>
-        <Seo />
-        <GlobalStyle />
-        <NavigationMenuStyled />
-        <HackathonLandingSection content={pageContent.headerLandingSection} />
-        <SectionDivider />
-        <HackathonIntroSection content={pageContent.introSection} />
-        <SectionDivider />
-        <HackathonInfoSection content={pageContent.hackathonInfo} />
-        <SectionDivider />
-        <HackathonJudgingSection content={pageContent.rulesAndJudging} />
-        <SectionDivider />
-        <GettingStartedSection content={{ ...pageContent.gettingStarted, html: props.data.hackathon.nodes[0].html }} />
-      </Wrapper>
-    </ThemeProvider>
+    <>
+      <ThemeProvider theme={hackathonTheme}>
+        <Wrapper>
+          <Seo />
+          <GlobalStyle />
+          <NavigationMenuStyled />
+          <HackathonLandingSection content={pageContent.headerLandingSection} />
+          <SectionDivider />
+          <HackathonIntroSection content={pageContent.introSection} />
+          <SectionDivider />
+          <HackathonInfoSection content={pageContent.hackathonInfo} />
+          <SectionDivider />
+          <HackathonJudgingSection content={pageContent.rulesAndJudging} />
+          <SectionDivider />
+          <GettingStartedSection
+            content={{ ...pageContent.gettingStarted, html: props.data.hackathon.nodes[0].html }}
+          />
+        </Wrapper>
+      </ThemeProvider>
+      <ThemeProvider theme={lightTheme}>
+        <Footer />
+      </ThemeProvider>
+    </>
   )
 }
 

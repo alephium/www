@@ -15,6 +15,7 @@ import AmbassadorsLandingSection, {
   AmbassadorsLandingSectionContentType
 } from '../components/pages/ambassadors/AmbassadorsLandingSection'
 import NavigationMenu from '../components/NavigationMenu'
+import Footer from '../components/Footer'
 
 interface HackathonPageProps extends PageProps {
   data: {
@@ -44,6 +45,7 @@ const IndexPage = (props: HackathonPageProps) => {
         <AmbassadorsIntroSection content={pageContent.introSection} />
         <AmbassadorsInfoSection content={pageContent.hackathonInfo} />
       </Wrapper>
+      <Footer />
     </ThemeProvider>
   )
 }
@@ -51,6 +53,9 @@ const IndexPage = (props: HackathonPageProps) => {
 export default IndexPage
 
 const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+
   // Some simple specific styles for text focused pages like the hackathon one.
   * {
     box-sizing: border-box;

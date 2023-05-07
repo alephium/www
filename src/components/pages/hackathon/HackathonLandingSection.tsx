@@ -41,6 +41,7 @@ const SectionWrapper = styled.div`
   position: relative;
   height: calc(max(60vh, 300px));
   max-height: 400px;
+  background-color: black;
 `
 
 const AlephiumLogoStyled = styled(AlephiumLogo)`

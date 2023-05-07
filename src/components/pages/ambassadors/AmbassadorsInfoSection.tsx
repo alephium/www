@@ -247,6 +247,7 @@ const FAQContent = styled.div`
 const QABox = styled.div`
   padding: var(--spacing-4);
   background-color: ${({ theme }) => theme.bgSecondary};
+  border: 1px solid ${({ theme }) => theme.borderPrimary};
 `
 
 const Question = styled.div`

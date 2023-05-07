@@ -24,6 +24,7 @@ const GettingStartedSection = ({ content: { title, subtitle, html }, className }
 
 export default styled(GettingStartedSection)`
   background-color: ${({ theme }) => theme.bgTertiary};
+  color: ${({ theme }) => theme.textPrimary};
 
   h3 {
     margin-top: var(--spacing-6);

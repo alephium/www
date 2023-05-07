@@ -16,7 +16,7 @@ interface GettingStartedSectionProps {
 const GettingStartedSection = ({ content: { title, subtitle, html }, className }: GettingStartedSectionProps) => (
   <div className={className}>
     <HackathonSectionContainer className={className}>
-      <HackathonSectionTitle title={title} subtitle={subtitle} sticky bigSubtitle backgroundColor="bgTertiary" />
+      <HackathonSectionTitle title={title} subtitle={subtitle} sticky bigSubtitle />
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </HackathonSectionContainer>
   </div>

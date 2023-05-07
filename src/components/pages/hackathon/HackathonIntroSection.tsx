@@ -51,7 +51,7 @@ const Description = styled.p`
   text-align: justify;
 
   @media ${deviceBreakPoints.tablet} {
-    margin: var(--spacing-10) var(--spacing-2) 0 0;
+    margin: var(--spacing-2) var(--spacing-2) 0 0;
     padding-left: 15px;
   }
 `

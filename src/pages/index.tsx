@@ -67,7 +67,7 @@ const IndexPage = (props: IndexPageProps) => {
           <SectionDivider />
           <PageSectionShop content={pageContent.shopSection} />
           <PageSectionFollowUs content={pageContent.followUsSection} />
-          <Footer content={pageContent.footer} openPrivacyPolicyModal={openPrivacyPolicyModal} />
+          <Footer />
         </ThemeProvider>
       </main>
     </>

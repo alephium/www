@@ -70,7 +70,7 @@ hackathonInfo:
         description:  Up to 10 prizes of XXX$ each
 rulesAndJudging:
   title: Rules and judging
-  subtitle: How to win ;)
+  subtitle: How to win.
   rules:
     title: Submission Rules
     description: "The submissions must include links to code repositories. You can also include text, video, or audio with relevant graphics and links to webapps you may find relevant. Participants will be required to submit their work through this form.
