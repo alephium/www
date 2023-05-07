@@ -4,6 +4,7 @@ import AlephiumLogo from '../../AlephiumLogo'
 import ParallaxWrapper from '../../ParallaxWrapper'
 import backgroundImage from '../../../images/alephium-hackathon-lake.jpg'
 import { deviceBreakPoints } from '../../../styles/global-style'
+import HackathonSectionContainer from './HackathonSectionContainer'
 
 export type HackathonLandingSectionContentType = {
   tagline: string
@@ -18,16 +19,18 @@ interface HackathonLandingSectionProps {
 const HackathonLandingSection = ({ content: { tagline, title, date } }: HackathonLandingSectionProps) => (
   <SectionWrapper>
     <ParallaxWrapper speed={5}>
-      <Content>
-        <FirstContentBox>
-          <AlephiumLogoStyled gradientIndex={2} />
-          <Date>{date}</Date>
-          <Title>{title}</Title>
-        </FirstContentBox>
-        <SecondContentBox>
-          <TagLine>{tagline}</TagLine>
-        </SecondContentBox>
-      </Content>
+      <HackathonSectionContainer>
+        <Content>
+          <FirstContentBox>
+            <AlephiumLogoStyled gradientIndex={2} />
+            <Date>{date}</Date>
+            <Title>{title}</Title>
+          </FirstContentBox>
+          <SecondContentBox>
+            <TagLine>{tagline}</TagLine>
+          </SecondContentBox>
+        </Content>
+      </HackathonSectionContainer>
     </ParallaxWrapper>
   </SectionWrapper>
 )
@@ -36,13 +39,8 @@ export default HackathonLandingSection
 
 const SectionWrapper = styled.div`
   position: relative;
-  background: url(${backgroundImage});
-  background-size: cover;
-  background-position: center;
   height: calc(max(60vh, 300px));
   max-height: 400px;
-  display: flex;
-  align-items: flex-end;
 `
 
 const AlephiumLogoStyled = styled(AlephiumLogo)`
@@ -54,8 +52,6 @@ const AlephiumLogoStyled = styled(AlephiumLogo)`
 
 const Content = styled.div`
   margin-bottom: -100px;
-  margin-left: 20vw;
-  margin-top: var(--spacing-6);
   box-shadow: 0 0 60px rgba(0, 255, 94, 0.444);
   border: 1px solid ${({ theme }) => theme.highlight};
   overflow: hidden;
@@ -71,6 +67,9 @@ const FirstContentBox = styled.div`
   background-color: ${colord('#1111111').alpha(0.1).toRgbString()};
   backdrop-filter: blur(20px);
   max-height: 300px;
+  background: url(${backgroundImage});
+  background-size: cover;
+  background-position: center;
 `
 
 const SecondContentBox = styled.div`
