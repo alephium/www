@@ -39,7 +39,7 @@ const SectionWrapper = styled.div`
 
 const Content = styled.div`
   margin-left: max(var(--spacing-14), 10vw);
-  margin-top: 200px;
+  margin-top: 120px;
 
   @media ${deviceBreakPoints.tablet} {
     margin-left: var(--spacing-8);

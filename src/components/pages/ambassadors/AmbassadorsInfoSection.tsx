@@ -107,6 +107,7 @@ const AmbassadorsInfoSection = ({ content, className }: AmbassadorsInfoSectionPr
       </Columns>
     </AmbassadorsSectionContainer>
     <AmbassadorsSectionContainer>
+      <h2>Program Structure and Perks</h2>
       <StyledTiersAndPerksColumns>
         <Column>
           <Paragraph>
@@ -152,6 +153,31 @@ const AmbassadorsInfoSection = ({ content, className }: AmbassadorsInfoSectionPr
         </Column>
       </StyledTiersAndPerksColumns>
     </AmbassadorsSectionContainer>
+    <AmbassadorsSectionContainer>
+      <h2>FAQs</h2>
+      <FAQContent>
+        <QABox>
+          <Question>Are participants in the Alephian Program paid?</Question>
+          <Answer>All participants who are selected for the Alephian Program will be receiving ALPH rewards.</Answer>
+        </QABox>
+        <QABox>
+          <Question>What are the program rules?</Question>
+          <Answer>Program rules can be found here.</Answer>
+        </QABox>
+        <QABox>
+          <Question>I have an existing community, can I still work with Alephium?</Question>
+          <Answer>Yes! Community is about bringing people together and knowledge sharing.</Answer>
+        </QABox>
+        <QABox>
+          <Question>How do I find out if I’ve been accepted?</Question>
+          <Answer>All applicants will be contacted via email with feedback on their application</Answer>
+        </QABox>
+        <QABox>
+          <Question>What if I have more questions?</Question>
+          <Answer>If you have any questions about the program, email XXXX@alephium.org.</Answer>
+        </QABox>
+      </FAQContent>
+    </AmbassadorsSectionContainer>
   </div>
 )
 
@@ -193,21 +219,41 @@ const Tier = styled.div`
   padding: var(--spacing-4);
 
   &:nth-child(1) {
-    background-color: #d5e9f3;
+    background-color: #fff6e1;
   }
 
   &:nth-child(2) {
-    background-color: #fbf2c8;
+    background-color: #ffe5a8;
   }
 
   &:nth-child(3) {
-    background-color: #f6d3d3;
+    background-color: #fad273;
   }
 `
 
 const TierTitle = styled.div`
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: var(--spacing-2);
 `
 
 const TierContent = styled.div``
+
+const FAQContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+`
+
+const QABox = styled.div`
+  padding: var(--spacing-4);
+  background-color: ${({ theme }) => theme.bgSecondary};
+`
+
+const Question = styled.div`
+  font-weight: 600;
+  margin-bottom: var(--spacing-2);
+`
+
+const Answer = styled.div`
+  opacity: 0.8;
+`
