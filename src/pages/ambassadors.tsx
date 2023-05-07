@@ -80,6 +80,10 @@ const Wrapper = styled.div`
     margin: 0;
     font-weight: 400;
   }
+
+  b {
+    font-weight: 600;
+  }
 `
 
 const NavigationMenuStyled = styled(NavigationMenu)`

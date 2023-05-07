@@ -5,8 +5,9 @@ export const Paragraph = styled.p`
 `
 
 export const H3 = styled.h3<{ divider?: boolean }>`
-  font-size: 23px !important;
-  font-wight: 300 !important;
+  font-size: 23px;
+  margin-top: 0;
+  font-weight: 300;
 
   ${({ divider }) =>
     divider &&

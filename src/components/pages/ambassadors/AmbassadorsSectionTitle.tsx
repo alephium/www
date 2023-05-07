@@ -2,10 +2,9 @@ import styled from 'styled-components'
 import SectionTextHeader from '../../SectionTextHeader'
 import { deviceBreakPoints } from '../../../styles/global-style'
 
-export default styled.div`
-  margin-bottom: var(--spacing-8);
+export default styled(SectionTextHeader)`
   backdrop-filter: none;
-  background-color: ${({ theme }) => theme.bgPrimary} !important;
+  background-color: transparent !important;
   padding: 0;
 
   @media ${deviceBreakPoints.tablet} {

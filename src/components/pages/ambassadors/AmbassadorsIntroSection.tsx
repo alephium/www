@@ -4,6 +4,7 @@ import SectionTextHeader from '../../SectionTextHeader'
 import { deviceBreakPoints } from '../../../styles/global-style'
 import GenevaWaterJet from './AnimatedIllustrations/GenevaWaterJet'
 import AmbassadorsSectionContainer from './AmbassadorsSectionContainer'
+import AmbassadorsSectionTitle from './AmbassadorsSectionTitle'
 
 export type AmbassadorsIntroSectionContentType = {
   title: string
@@ -26,7 +27,7 @@ const AmbassadorsIntroSection = ({
         <GenevaWaterJet />
       </IllustrationBox>
       <TextBox>
-        <StyledSectionTextHeader bigSubtitle title={title} subtitle={subtitle} />
+        <AmbassadorsSectionTitle bigSubtitle title={title} subtitle={subtitle} />
         <Description>{description}</Description>
       </TextBox>
     </Columns>
@@ -37,17 +38,9 @@ export default styled(AmbassadorsIntroSection)`
   background-color: ${({ theme }) => theme.bgSecondary};
 `
 
-const StyledSectionTextHeader = styled(SectionTextHeader)`
-  padding: 0;
-
-  @media ${deviceBreakPoints.tablet} {
-    min-width: auto;
-  }
-`
-
 const IllustrationBox = styled.div`
   flex: 1;
-  background-color: #bcdae9ff;
+  background-color: #bcdae9;
   display: flex;
   flex-direction: column;
   justify-content: center;
