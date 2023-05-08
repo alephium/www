@@ -107,10 +107,10 @@ const AmbassadorsInfoSection = ({ className }: AmbassadorsInfoSectionProps) => (
         </Column>
       </Columns>
     </AmbassadorsSectionContainer>
-    <AmbassadorsSectionContainer>
-      <h2>Program Structure and Perks</h2>
+    <AmbassadorsSectionContainer doubleMargin>
       <StyledTiersAndPerksColumns>
         <Column>
+          <h3>Program Structure and Perks</h3>
           <Paragraph>
             The Alephian program will be a three-tier based program. Each tier will have specific monthly targets
             attached to it and meeting these targets is a requirement for getting the reward. When applying for the
@@ -199,6 +199,9 @@ const ItemContent = styled.span`
 `
 
 const StyledTiersAndPerksColumns = styled(Columns)`
+  h3 {
+    margin-top: 0;
+  }
   border: 1px solid ${({ theme }) => theme.borderPrimary};
 
   ${Column} {

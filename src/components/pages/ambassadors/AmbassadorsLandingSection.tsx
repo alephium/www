@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 import { deviceBreakPoints } from '../../../styles/global-style'
 import sunriseSrc from '../../../images/sunrise-in-ch.jpg'
+import AmbassadorsSectionContainer from './AmbassadorsSectionContainer'
+import Columns from '../../Columns/Columns'
+import Column from '../../Columns/Column'
 
 export type AmbassadorsLandingSectionContentType = {
   tagline: string
@@ -13,13 +16,15 @@ interface AmbassadorsLandingSectionProps {
 }
 
 const AmbassadorsLandingSection = ({ content: { tagline, title } }: AmbassadorsLandingSectionProps) => (
-  <SectionWrapper>
-    <Content>
-      <Label>Community</Label>
-      <Title>{title}</Title>
-      <TagLine>{tagline}</TagLine>
-    </Content>
-  </SectionWrapper>
+  <AmbassadorsSectionContainer>
+    <SectionWrapper>
+      <Content>
+        <Label>Community</Label>
+        <Title>{title}</Title>
+        <TagLine>{tagline}</TagLine>
+      </Content>
+    </SectionWrapper>
+  </AmbassadorsSectionContainer>
 )
 
 export default AmbassadorsLandingSection
@@ -27,6 +32,7 @@ export default AmbassadorsLandingSection
 const SectionWrapper = styled.div`
   position: relative;
   height: 50vh;
+  width: 100%;
   min-height: 500px;
   display: flex;
   background: black;
@@ -34,7 +40,6 @@ const SectionWrapper = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: 5vh 10vw;
 `
 
 const Content = styled.div`
