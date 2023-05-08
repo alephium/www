@@ -66,6 +66,6 @@ const IsNewBadge = styled.span`
   border-radius: 100px;
   background-color: ${({ theme }) => theme.textPrimary};
   color: ${({ theme }) => theme.bgPrimary};
-  margin-left: 5px;
+  margin-left: 7px;
   box-sizing: border-box;
 `

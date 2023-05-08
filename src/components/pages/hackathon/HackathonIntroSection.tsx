@@ -40,7 +40,7 @@ const StyledSectionTextHeader = styled(HackathonSectionTitle)`
 
   h2 {
     font-weight: 500 !important;
-    font-size: 54px;
+    font-size: 48px;
   }
 
   @media ${deviceBreakPoints.tablet} {

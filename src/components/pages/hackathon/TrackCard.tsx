@@ -29,6 +29,7 @@ const TrackCardStyled = styled(Card)`
   padding: 0;
   border-color: ${({ theme }) => theme.borderPrimary};
   background-color: ${({ theme }) => theme.bgPrimary};
+  border-radius: 0;
 
   h3 {
     font-weight: 400;

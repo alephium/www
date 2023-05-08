@@ -108,19 +108,17 @@ const CriteriumList = styled.div`
 
 const CriteriumCard = styled.div`
   padding: var(--spacing-4);
-  border-radius: var(--radius);
   border: 1px solid ${({ theme }) => theme.borderPrimary};
   background-color: ${({ theme }) => theme.bgPrimary};
 
   h3 {
     margin-top: var(--spacing-2);
-    color: ${({ theme }) => theme.highlightComplementary};
   }
 `
 
 const Jury = styled.div`
   display: flex;
-  gap: 20px;
+  gap: 25px;
 
   @media ${deviceBreakPoints.tablet} {
     flex-wrap: wrap;
@@ -129,12 +127,9 @@ const Jury = styled.div`
 `
 
 const PersonCard = styled.div`
-  padding: var(--spacing-4);
   padding-bottom: var(--spacing-2);
-  border-radius: var(--radius);
-  border: 1px solid ${({ theme }) => theme.borderPrimary};
-  background-color: ${({ theme }) => theme.bgTertiary};
   text-align: center;
+  max-width: 170px;
 
   display: flex;
   align-items: center;

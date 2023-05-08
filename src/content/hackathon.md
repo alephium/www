@@ -4,7 +4,7 @@ headerLandingSection:
   title: Buidl On Alephium
   date: 15th - 25th April 2023
 introSection:
-  title: Kickstart your project with Alephium
+  title: 1. 2. 3. Start building.
   subtitle: Decentralization, self-sovereignty, and security meet high-performance, accessibility, and energy efficiency in Alephium’s dev-friendly network.
   description: "For its first hackathon, Alephium invites talented builders from all over the world to experiment and leverage its new development paradigm to expand on existing capabilities and create the first wave of Alephium’s dApps. This hackathon aims to propel the developer community’s creativity into an enabling force for innovation and progress. 
   And there is more! Projects launched during the hackathon will have the opportunity to receive further support from Alephium to continue their development."
