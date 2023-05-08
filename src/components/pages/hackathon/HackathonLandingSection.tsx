@@ -91,7 +91,7 @@ const Title = styled.h1`
   color: ${({ theme }) => theme.textPrimary};
   font-size: var(--fontSize-50);
   margin-top: 10px;
-  font-weight: 600;
+  font-weight: 500;
 `
 const Date = styled.h1`
   color: ${({ theme }) => theme.highlight};

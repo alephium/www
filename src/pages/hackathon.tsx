@@ -91,6 +91,8 @@ const NavigationMenuStyled = styled(NavigationMenu)`
 `
 
 const Wrapper = styled.div`
+  font-family: 'Helvetica Now', 'Helvetica Neue', 'Inter'; // Trial.
+
   // Some simple specific styles for text focused pages like the hackathon one.
   * {
     box-sizing: border-box;
@@ -100,6 +102,10 @@ const Wrapper = styled.div`
 
   a {
     color: ${({ theme }) => theme.highlightComplementary};
+  }
+
+  h3 {
+    font-weight: 400;
   }
 `
 

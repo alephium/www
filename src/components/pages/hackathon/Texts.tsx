@@ -7,6 +7,7 @@ export const Paragraph = styled.p`
 export const H3 = styled.h3<{ divider?: boolean }>`
   margin-top: var(--spacing-6);
   font-size: 28px !important;
+  font-weight: 400;
 
   ${({ divider }) =>
     divider &&

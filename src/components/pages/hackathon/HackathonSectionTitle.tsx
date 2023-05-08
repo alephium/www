@@ -9,6 +9,15 @@ export default styled(SectionTextHeader)<{ backgroundColor?: 'bgSecondary' | 'bg
   background-color: ${({ backgroundColor, theme }) =>
     backgroundColor ? theme[backgroundColor] : theme.bgSecondary} !important;
 
+  h2 {
+    font-size: 44px;
+    font-weight: 400;
+  }
+
+  .text-subtitle {
+    font-weight: 350;
+  }
+
   @media ${deviceBreakPoints.tablet} {
     padding: 0 var(--spacing-2) 0 0;
   }

@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 import Column from '../../Columns/Column'
 import Columns from '../../Columns/Columns'
-import SectionTextHeader from '../../SectionTextHeader'
 import { deviceBreakPoints } from '../../../styles/global-style'
 import HackathonSectionContainer from './HackathonSectionContainer'
+import HackathonSectionTitle from './HackathonSectionTitle'
 
 export type HackathonIntroSectionContentType = {
   title: string
@@ -34,9 +34,14 @@ export default styled(HackathonIntroSection)`
   margin-top: var(--spacing-14);
 `
 
-const StyledSectionTextHeader = styled(SectionTextHeader)`
-  min-width: 450px;
+const StyledSectionTextHeader = styled(HackathonSectionTitle)`
+  max-width: 550px;
   padding: 0;
+
+  h2 {
+    font-weight: 500 !important;
+    font-size: 54px;
+  }
 
   @media ${deviceBreakPoints.tablet} {
     min-width: auto;
@@ -44,7 +49,6 @@ const StyledSectionTextHeader = styled(SectionTextHeader)`
 `
 
 const Description = styled.p`
-  margin-top: var(--spacing-10);
   color: ${({ theme }) => theme.textPrimary};
   border-left: 2px solid ${({ theme }) => theme.highlight};
   padding-left: 20px;
