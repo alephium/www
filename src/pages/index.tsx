@@ -39,8 +39,6 @@ interface IndexPageProps extends PageProps {
 
 const IndexPage = (props: IndexPageProps) => {
   const pageContent = props.data.homepage.nodes[0].frontmatter
-  const params = new URLSearchParams(props.location.search)
-  const openPrivacyPolicyModal = params.get('privacy') !== null
 
   return (
     <>
@@ -212,6 +210,7 @@ export const pageQuery = graphql`
                 text
                 url
                 newTab
+                isNew
               }
             }
           }

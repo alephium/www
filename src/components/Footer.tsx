@@ -46,6 +46,7 @@ const Footer: FC<FooterProps> = ({ className }) => {
                   text
                   url
                   newTab
+                  isNew
                 }
               }
             }
