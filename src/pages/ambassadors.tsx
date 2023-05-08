@@ -45,7 +45,7 @@ const IndexPage = (props: HackathonPageProps) => {
         <AmbassadorsIntroSection content={pageContent.introSection} />
         <AmbassadorsInfoSection content={pageContent.hackathonInfo} />
       </Wrapper>
-      <Footer />
+      <Footer location={props.location} />
     </ThemeProvider>
   )
 }

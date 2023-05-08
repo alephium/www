@@ -65,7 +65,7 @@ const IndexPage = (props: HackathonPageProps) => {
         </Wrapper>
       </ThemeProvider>
       <ThemeProvider theme={lightTheme}>
-        <Footer />
+        <Footer location={props.location} />
       </ThemeProvider>
     </>
   )

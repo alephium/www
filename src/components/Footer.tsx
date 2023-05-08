@@ -10,6 +10,7 @@ import Column from './Columns/Column'
 import ModalTeam from './ModalTeam'
 import ModalContact from './ModalContact'
 import ModalPrivacyPolicy from './ModalPrivacyPolicy'
+import { WindowLocation } from '@reach/router'
 
 import Logo from '../images/svgs/logo.svg'
 import { graphql, useStaticQuery } from 'gatsby'
@@ -22,10 +23,11 @@ export interface FooterContentType {
 }
 
 interface FooterProps {
+  location: WindowLocation<unknown>
   className?: string
 }
 
-const Footer: FC<FooterProps> = ({ className }) => {
+const Footer: FC<FooterProps> = ({ location, className }) => {
   const [isTeamModalOpen, setIsTeamModalOpen] = useState(false)
   const [isContactModalOpen, setIsContactModalOpen] = useState(false)
   const [isPrivacyPolicyModalOpen, setIsPrivacyPolicyModalOpen] = useState(false)
