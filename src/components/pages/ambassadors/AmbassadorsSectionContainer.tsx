@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 
-export default styled.section`
-  margin: var(--spacing-10) 10vw;
+export default styled.section<{ doubleMargin?: boolean }>`
+  margin: ${({ doubleMargin }) => (doubleMargin ? 'var(--spacing-10)' : 'var(--spacing-6)')} 10vw;
 
   @media (min-width: 1600px) {
-    margin: var(--spacing-10) auto;
+    margin: ${({ doubleMargin }) => (doubleMargin ? 'var(--spacing-10)' : 'var(--spacing-6)')} auto;
     max-width: 1400px;
   }
 `

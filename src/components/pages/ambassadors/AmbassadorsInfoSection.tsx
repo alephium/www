@@ -5,6 +5,7 @@ import { H3, Paragraph } from './Texts'
 
 import Columns from '../../Columns/Columns'
 import Column from '../../Columns/Column'
+import SectionDivider from '../../SectionDivider'
 
 export type AmbassadorsInfoSectionContentType = {
   participantsInfo: {
@@ -153,7 +154,7 @@ const AmbassadorsInfoSection = ({ className }: AmbassadorsInfoSectionProps) => (
         </Column>
       </StyledTiersAndPerksColumns>
     </AmbassadorsSectionContainer>
-    <AmbassadorsSectionContainer>
+    <AmbassadorsSectionContainer doubleMargin>
       <h2>FAQs</h2>
       <FAQContent>
         <QABox>
