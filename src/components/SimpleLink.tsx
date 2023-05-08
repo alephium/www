@@ -57,12 +57,15 @@ export default styled(SimpleLink)`
 `
 
 const IsNewBadge = styled.span`
-  padding: 1px 4px;
-  height: 15px;
-  line-height: 15px;
+  padding: 3px 4px;
+  max-height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-size: 11px;
   border-radius: 100px;
   background-color: ${({ theme }) => theme.textPrimary};
   color: ${({ theme }) => theme.bgPrimary};
   margin-left: 5px;
+  box-sizing: border-box;
 `

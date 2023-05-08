@@ -38,6 +38,7 @@ const NavigationMenu = ({ className }: NavigationMenuProps) => (
         url="https://docs.alephium.org/dapps/getting-started/"
         newTab
         trackingName="main-nav:build-dapp-link"
+        isNew
       >
         Build a dApp
       </NavLink>
