@@ -62,7 +62,7 @@ const Wrapper = styled.div`
   }
   font-size: 18px; // Slighty increase base font size for marketing content
   line-height: 24px;
-  font-family: 'Helvetica Now', 'Helvetica Neue', 'Inter'; // Trial.
+  font-family: 'Switzer', 'Helvetica Neue', 'Inter'; // Trial.
   background-color: ${({ theme }) => theme.bgPrimary};
 
   a {

@@ -91,7 +91,7 @@ const NavigationMenuStyled = styled(NavigationMenu)`
 `
 
 const Wrapper = styled.div`
-  font-family: 'Helvetica Now', 'Helvetica Neue', 'Inter'; // Trial.
+  font-family: 'Switzer', 'Helvetica Neue', 'Inter'; // Trial.
 
   // Some simple specific styles for text focused pages like the hackathon one.
   * {

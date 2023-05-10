@@ -2,8 +2,6 @@ import styled from 'styled-components'
 import { deviceBreakPoints } from '../../../styles/global-style'
 import sunriseSrc from '../../../images/sunrise-in-ch.jpg'
 import AmbassadorsSectionContainer from './AmbassadorsSectionContainer'
-import Columns from '../../Columns/Columns'
-import Column from '../../Columns/Column'
 
 export type AmbassadorsLandingSectionContentType = {
   tagline: string

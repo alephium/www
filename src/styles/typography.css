@@ -23,9 +23,9 @@
 }
 
 @font-face {
-  font-family: 'Helvetica Now';
+  font-family: 'Switzer';
   font-weight: 100 1000;
-  src: url('../fonts/Helvetica-Now.woff') format('woff');
+  src: url('../fonts/Switzer-Variable.ttf') format('truetype');
 }
 
 h2,
