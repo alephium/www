@@ -97,6 +97,7 @@ export default styled(TextSnippet)`
 `
 
 const AnchorIcon = styled(Link)`
+  position: absolute;
   opacity: 0.4;
   cursor: pointer;
   margin-left: 15px;
