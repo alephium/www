@@ -184,7 +184,6 @@ export const pageQuery = graphql`
               items {
                 text
                 label
-                complete
               }
             }
           }
