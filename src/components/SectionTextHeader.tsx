@@ -4,10 +4,8 @@ import styled, { useTheme } from 'styled-components'
 import useElementDistanceToTop from '../hooks/useElementDistanceToTop'
 import { deviceBreakPoints } from '../styles/global-style'
 import { toId } from '../utils/misc'
-import { RiLink } from 'react-icons/ri'
 
 import TextSnippet from './TextSnippet'
-import { Link } from 'gatsby'
 
 interface SectionTextHeaderProps {
   className?: string
@@ -58,6 +56,7 @@ const SectionTextHeader = ({
         <StyledTextSnippet
           title={title}
           subtitle={subtitle}
+          anchor={id || title}
           bigTitle
           bigSubtitle={bigSubtitle}
           bigText={bigText}
@@ -67,9 +66,6 @@ const SectionTextHeader = ({
         >
           {children}
         </StyledTextSnippet>
-        <AnchorIcon to={`#${toId(id || title)}`}>
-          <RiLink size={25} color="white" />
-        </AnchorIcon>
       </motion.header>
     </>
   )
@@ -78,20 +74,6 @@ const SectionTextHeader = ({
 const StyledTextSnippet = styled(TextSnippet)`
   flex: 1;
   max-width: var(--page-width);
-`
-
-const AnchorIcon = styled(Link)`
-  opacity: 0.4;
-  position: absolute;
-  right: 10vw;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10000;
-  cursor: pointer;
-
-  &:hover {
-    opacity: 1;
-  }
 `
 
 export default styled(SectionTextHeader)`
