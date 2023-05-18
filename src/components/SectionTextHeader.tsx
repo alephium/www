@@ -4,11 +4,14 @@ import styled, { useTheme } from 'styled-components'
 import useElementDistanceToTop from '../hooks/useElementDistanceToTop'
 import { deviceBreakPoints } from '../styles/global-style'
 import { toId } from '../utils/misc'
+import { RiLink } from 'react-icons/ri'
 
 import TextSnippet from './TextSnippet'
+import { Link } from 'gatsby'
 
 interface SectionTextHeaderProps {
   className?: string
+  id?: string
   title: string
   subtitle: string
   bigSubtitle?: boolean
@@ -21,6 +24,7 @@ interface SectionTextHeaderProps {
 
 const SectionTextHeader = ({
   className,
+  id,
   title,
   subtitle,
   bigSubtitle,
@@ -37,9 +41,9 @@ const SectionTextHeader = ({
   const theme = useTheme()
 
   if (sticky && isHeadingDistanceFromTopOfScreenInitialized) {
-    if (headingDistanceFromTopOfScreen <= 0 && !headingReachedTopOfScreen) {
+    if (headingDistanceFromTopOfScreen <= 5 && !headingReachedTopOfScreen) {
       setHeadingReachedTopOfScreen(true)
-    } else if (headingDistanceFromTopOfScreen > 0 && headingReachedTopOfScreen) {
+    } else if (headingDistanceFromTopOfScreen > 5 && headingReachedTopOfScreen) {
       setHeadingReachedTopOfScreen(false)
     }
   }
@@ -49,7 +53,7 @@ const SectionTextHeader = ({
 
   return (
     <>
-      <div ref={headingElementRef} id={toId(title)} />
+      <div ref={headingElementRef} id={toId(id || title)} />
       <motion.header className={className} animate={{ borderBottom, backgroundColor }}>
         <StyledTextSnippet
           title={title}
@@ -63,18 +67,35 @@ const SectionTextHeader = ({
         >
           {children}
         </StyledTextSnippet>
+        <AnchorIcon to={`#${toId(id || title)}`}>
+          <RiLink size={25} color="white" />
+        </AnchorIcon>
       </motion.header>
     </>
   )
 }
 
 const StyledTextSnippet = styled(TextSnippet)`
-  max-width: var(--page-width);
   flex: 1;
+  max-width: var(--page-width);
+`
+
+const AnchorIcon = styled(Link)`
+  opacity: 0.4;
+  position: absolute;
+  right: 10vw;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
 `
 
 export default styled(SectionTextHeader)`
-  position: ${({ sticky }) => (sticky ? 'sticky' : 'initial')};
+  position: ${({ sticky }) => (sticky ? 'sticky' : 'relative')};
   top: 0;
   right: 0;
   left: 0;

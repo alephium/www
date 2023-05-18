@@ -16,6 +16,7 @@ interface Props {
 const PageSectionMilestones = ({ content: { title, subtitle, timelines } }: Props) => (
   <SectionWrapper>
     <StyledSectionTextHeader
+      id="milestones"
       title={title}
       subtitle={subtitle}
       bigSubtitle
