@@ -1,8 +1,11 @@
 import { HTMLMotionProps, motion } from 'framer-motion'
-import { ReactNode } from 'react'
+import { Link } from 'gatsby'
+import { createElement, ReactNode } from 'react'
 import styled, { css } from 'styled-components'
+import { RiLink } from 'react-icons/ri'
 
 import { deviceBreakPoints } from '../styles/global-style'
+import { toId } from '../utils/misc'
 
 interface TextSnippetProps extends HTMLMotionProps<'div'> {
   title?: string
@@ -14,17 +17,40 @@ interface TextSnippetProps extends HTMLMotionProps<'div'> {
   bigText?: boolean
   className?: string
   narrowHeaderMobile?: boolean
+  anchor?: string
   children?: ReactNode
 }
 
-const TextSnippet = ({ className, title, titleHierarchy = 'h2', subtitle, children, ...props }: TextSnippetProps) => {
+const TextSnippet = ({
+  className,
+  title,
+  titleHierarchy = 'h2',
+  subtitle,
+  anchor,
+  children,
+  ...props
+}: TextSnippetProps) => {
   // Removing props that should not go to the motion.div
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { bigSubtitle, smallSubtitle, bigText, narrowHeaderMobile, bigTitle, ...remainingProps } = props
 
+  const TitleComponent = ({ children }: { children: ReactNode }) =>
+    titleHierarchy === 'h2' ? <h2>{children}</h2> : <h3>{children}</h3>
+
   return (
     <motion.div className={className} {...remainingProps}>
-      {title && (titleHierarchy === 'h2' ? <h2>{title}</h2> : <h3>{title}</h3>)}
+      {title && (
+        <>
+          <TitleComponent>
+            {title}
+            {anchor && (
+              <AnchorIcon to={`#${toId(anchor)}`}>
+                <RiLink size={25} color="white" />
+              </AnchorIcon>
+            )}
+          </TitleComponent>
+        </>
+      )}
       {subtitle && <div className="text-subtitle">{subtitle}</div>}
       {children && <div className="text-content">{children}</div>}
     </motion.div>
@@ -67,5 +93,16 @@ export default styled(TextSnippet)`
           width: 65%;
         `}
     }
+  }
+`
+
+const AnchorIcon = styled(Link)`
+  position: absolute;
+  opacity: 0.4;
+  cursor: pointer;
+  margin-left: 15px;
+
+  &:hover {
+    opacity: 1;
   }
 `

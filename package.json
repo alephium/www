@@ -47,6 +47,7 @@
     "react-dom": "^18.2.0",
     "react-github-btn": "^1.4.0",
     "react-helmet": "^6.1.0",
+    "react-icons": "^4.8.0",
     "react-is": "^18.2.0",
     "react-medium-image-zoom": "^5.1.2",
     "react-modal": "^3.14.3",

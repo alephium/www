@@ -31,7 +31,7 @@ interface Alignment {
 
 const PageSectionTodoList = ({ content: { title, subtitle, lists } }: Props) => (
   <BackdropStars>
-    <SectionTextHeader title={title} subtitle={subtitle} bigSubtitle bigText sticky centered />
+    <SectionTextHeader id="next" title={title} subtitle={subtitle} bigSubtitle bigText sticky centered />
     <PageSectionContainer>
       <TodoLists variants={todoItemsContainerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
         {lists.map(({ title, items }, index) => (

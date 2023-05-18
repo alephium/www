@@ -106,7 +106,7 @@ const SocialMediaIconsList = styled.div`
 `
 
 const SectionHeader = styled(SectionTextHeader)`
-  padding-top: var(--spacing-12);
+  margin-top: var(--spacing-12);
 `
 
 const ScrollToTopButton = styled.a`

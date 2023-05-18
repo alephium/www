@@ -9,6 +9,7 @@ import TextSnippet from './TextSnippet'
 
 interface SectionTextHeaderProps {
   className?: string
+  id?: string
   title: string
   subtitle: string
   bigSubtitle?: boolean
@@ -21,6 +22,7 @@ interface SectionTextHeaderProps {
 
 const SectionTextHeader = ({
   className,
+  id,
   title,
   subtitle,
   bigSubtitle,
@@ -37,9 +39,9 @@ const SectionTextHeader = ({
   const theme = useTheme()
 
   if (sticky && isHeadingDistanceFromTopOfScreenInitialized) {
-    if (headingDistanceFromTopOfScreen <= 0 && !headingReachedTopOfScreen) {
+    if (headingDistanceFromTopOfScreen <= 5 && !headingReachedTopOfScreen) {
       setHeadingReachedTopOfScreen(true)
-    } else if (headingDistanceFromTopOfScreen > 0 && headingReachedTopOfScreen) {
+    } else if (headingDistanceFromTopOfScreen > 5 && headingReachedTopOfScreen) {
       setHeadingReachedTopOfScreen(false)
     }
   }
@@ -49,11 +51,12 @@ const SectionTextHeader = ({
 
   return (
     <>
-      <div ref={headingElementRef} id={toId(title)} />
+      <div ref={headingElementRef} id={toId(id || title)} />
       <motion.header className={className} animate={{ borderBottom, backgroundColor }}>
         <StyledTextSnippet
           title={title}
           subtitle={subtitle}
+          anchor={id || title}
           bigTitle
           bigSubtitle={bigSubtitle}
           bigText={bigText}
@@ -69,12 +72,12 @@ const SectionTextHeader = ({
 }
 
 const StyledTextSnippet = styled(TextSnippet)`
-  max-width: var(--page-width);
   flex: 1;
+  max-width: var(--page-width);
 `
 
 export default styled(SectionTextHeader)`
-  position: ${({ sticky }) => (sticky ? 'sticky' : 'initial')};
+  position: ${({ sticky }) => (sticky ? 'sticky' : 'relative')};
   top: 0;
   right: 0;
   left: 0;
