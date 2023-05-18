@@ -241,6 +241,10 @@ milestonesSection:
       - order: 6
         text: Improved difficulty adjustment algorithm (DAA)
         when: '03.2023'
+      - order: 7
+        text: Desktop Wallet v2.0
+        when: '05.2023'
+        isMajor: true
   - title: Ecosystem
     years:
     - year: 2019
@@ -291,9 +295,6 @@ todoListSection:
   lists:
     - title: Core platform
       items:
-        - text: 'Desktop Wallet v2.0'
-          label: Feature
-          complete: false
         - text: 'Mobile wallet (Android and iOS)'
           label: Launch
         - text: 'Alephium’s Bridge Launch on Testnet'
