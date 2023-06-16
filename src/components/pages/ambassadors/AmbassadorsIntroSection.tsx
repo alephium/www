@@ -4,6 +4,7 @@ import { deviceBreakPoints } from '../../../styles/global-style'
 import GenevaWaterJet from './AnimatedIllustrations/GenevaWaterJet'
 import AmbassadorsSectionContainer from './AmbassadorsSectionContainer'
 import AmbassadorsSectionTitle from './AmbassadorsSectionTitle'
+import Button from '../../Button'
 
 export type AmbassadorsIntroSectionContentType = {
   title: string
@@ -28,6 +29,7 @@ const AmbassadorsIntroSection = ({
       <TextBox>
         <AmbassadorsSectionTitle bigSubtitle title={title} subtitle={subtitle} />
         <Description>{description}</Description>
+        <Button>Apply now</Button>
       </TextBox>
     </Columns>
   </AmbassadorsSectionContainer>
@@ -54,7 +56,6 @@ const TextBox = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   padding: var(--spacing-8) 5vw;
 `
