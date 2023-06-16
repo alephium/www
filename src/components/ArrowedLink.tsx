@@ -9,7 +9,6 @@ export interface ArrowedLinkProps {
   className?: string
   IconComponent?: ElementType
   url?: string
-  text?: string
   newTab?: boolean
   openModal?: (x: boolean) => void
   altColor?: boolean

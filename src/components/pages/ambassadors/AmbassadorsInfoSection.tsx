@@ -6,6 +6,7 @@ import { H3, Paragraph } from './Texts'
 import Columns from '../../Columns/Columns'
 import Column from '../../Columns/Column'
 import SectionDivider from '../../SectionDivider'
+import ArrowedLink from '../../ArrowedLink'
 
 export type AmbassadorsInfoSectionContentType = {
   participantsInfo: {
@@ -63,17 +64,23 @@ const AmbassadorsInfoSection = ({ className }: AmbassadorsInfoSectionProps) => (
         <Column>
           <H3 divider>Number of participants</H3>
           <Paragraph>
-            The 2023 program will onboard a maximum of 16 Alephians and will be divided into 2 cohorts. To be eligible
-            to participate in the program, all Alephium enthusiasts will need to submit their applications and be
-            willing to commit for at least 6 months. Alephium will evaluate the submissions and reach out to the
-            selected parties.
+            The 2023 program will onboard a maximum of 16 Alephians. To be eligible to participate in the program, all
+            Alephium enthusiasts will need to submit their applications and be willing to commit for at least 6 months.
+            Alephium will evaluate the submissions and reach out to the selected parties.
           </Paragraph>
           <Paragraph>
-            Once accepted, Alephians will be onboarded into the program. We will re-open the program again once we have
-            some feedback and more capacity. If you haven’t been selected this time around, don’t worry! Rewards will be
-            paid for once off contributions or extra tasks. All you have to do is to let us know about your contribution
-            through this form!
+            Once accepted, Alephians will be onboarded into the program. We will re-open the program again once we
+            gathered our learnings from the first cohort. If you haven’t been selected this time around, don’t worry!
+            Rewards will be paid for once off contributions or extra tasks. All you have to do is to let us know about
+            your contribution through the form below.
           </Paragraph>
+          <ArrowedLink
+            url="https://docs.google.com/forms/d/e/1FAIpQLSeaSouXl-Hwd_lZohwgysqk-8whc9bydHuVpSCr1C6IoDHuoA/viewform"
+            trackingName="ambassadors:reward-form-link"
+            newTab
+          >
+            Reward form
+          </ArrowedLink>
         </Column>
         <Column>
           <H3 divider>Who are we looking for?</H3>
