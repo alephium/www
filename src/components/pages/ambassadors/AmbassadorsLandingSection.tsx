@@ -29,7 +29,7 @@ export default AmbassadorsLandingSection
 
 const SectionWrapper = styled.div`
   position: relative;
-  height: 50vh;
+  height: 30vh;
   width: 100%;
   min-height: 500px;
   display: flex;

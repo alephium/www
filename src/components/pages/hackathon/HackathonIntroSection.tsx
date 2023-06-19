@@ -21,7 +21,7 @@ const HackathonIntroSection = ({
   className
 }: HackathonIntroSectionProps) => (
   <HackathonSectionContainer className={className}>
-    <Columns gap={'5vw'}>
+    <Columns gap="50px">
       <Column>
         <StyledSectionTextHeader bigSubtitle title={title} subtitle={subtitle} />
       </Column>

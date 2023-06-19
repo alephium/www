@@ -44,7 +44,7 @@ export default styled(SimpleLink)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: ${({ theme, color }) => (color ? color : theme.link)} !important;
+  color: ${({ theme, color }) => (color ? color : theme.link)};
 
   svg {
     fill: ${({ theme, color }) => (color ? color : theme.link)};

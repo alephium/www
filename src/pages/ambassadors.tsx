@@ -60,19 +60,22 @@ const Wrapper = styled.div`
   * {
     box-sizing: border-box;
   }
-  font-size: 18px; // Slighty increase base font size for marketing content
+  font-size: 16px; // Slighty increase base font size for marketing content
   line-height: 24px;
   font-family: 'Switzer', 'Helvetica Neue', 'Inter'; // Trial.
   background-color: ${({ theme }) => theme.bgPrimary};
 
   a {
-    color: ${({ theme }) => theme.highlightComplementary};
-    font-weight: 300;
+    font-weight: 500;
+    font-size: inherit;
   }
 
-  h2 {
-    font-size: var(--fontSize-32);
-    font-weight: 400;
+  b {
+    font-weight: 500 !important;
+  }
+
+  button {
+    font-size: inherit;
   }
 
   h3 {

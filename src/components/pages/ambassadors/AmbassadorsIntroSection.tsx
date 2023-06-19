@@ -5,6 +5,7 @@ import GenevaWaterJet from './AnimatedIllustrations/GenevaWaterJet'
 import AmbassadorsSectionContainer from './AmbassadorsSectionContainer'
 import AmbassadorsSectionTitle from './AmbassadorsSectionTitle'
 import Button from '../../Button'
+import { H2, H3 } from './Texts'
 
 export type AmbassadorsIntroSectionContentType = {
   title: string
@@ -22,26 +23,25 @@ const AmbassadorsIntroSection = ({
   className
 }: AmbassadorsIntroSectionProps) => (
   <AmbassadorsSectionContainer className={className}>
-    <Columns>
-      <IllustrationBox>
-        <GenevaWaterJet />
-      </IllustrationBox>
+    <Columns gap="50px">
+      <IllustrationBox></IllustrationBox>
       <TextBox>
-        <AmbassadorsSectionTitle bigSubtitle title={title} subtitle={subtitle} />
-        <Description>{description}</Description>
-        <Button>Apply now</Button>
+        <TextBoxContent>
+          <H2>{title}</H2>
+          <H3>{subtitle}</H3>
+          <Description>{description}</Description>
+          <Button>Apply now</Button>
+        </TextBoxContent>
       </TextBox>
     </Columns>
   </AmbassadorsSectionContainer>
 )
 
-export default styled(AmbassadorsIntroSection)`
-  background-color: ${({ theme }) => theme.bgSecondary};
-`
+export default AmbassadorsIntroSection
 
 const IllustrationBox = styled.div`
   flex: 1;
-  background-color: #bcdae9;
+  background-color: #f3c97c;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,9 +57,14 @@ const TextBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: var(--spacing-8) 5vw;
+  background-color: ${({ theme }) => theme.bgSecondary};
+`
+
+const TextBoxContent = styled.div`
+  padding: var(--spacing-6) 4vw;
 `
 
 const Description = styled.p`
   margin-top: var(--spacing-6);
+  margin-bottom: var(--spacing-4);
 `

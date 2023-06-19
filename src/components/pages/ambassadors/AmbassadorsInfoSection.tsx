@@ -1,12 +1,13 @@
 import styled from 'styled-components'
 
 import AmbassadorsSectionContainer from './AmbassadorsSectionContainer'
-import { H3, Paragraph } from './Texts'
+import { H2, H3, Paragraph } from './Texts'
 
 import Columns from '../../Columns/Columns'
 import Column from '../../Columns/Column'
-import SectionDivider from '../../SectionDivider'
 import ArrowedLink from '../../ArrowedLink'
+import List from './List'
+import TiersSlider from './TiersSlider'
 
 export type AmbassadorsInfoSectionContentType = {
   participantsInfo: {
@@ -60,7 +61,7 @@ interface AmbassadorsInfoSectionProps {
 const AmbassadorsInfoSection = ({ className }: AmbassadorsInfoSectionProps) => (
   <div className={className}>
     <AmbassadorsSectionContainer>
-      <Columns gap={'50px'}>
+      <Columns gap="50px">
         <Column>
           <H3 divider>Number of participants</H3>
           <Paragraph>
@@ -78,6 +79,7 @@ const AmbassadorsInfoSection = ({ className }: AmbassadorsInfoSectionProps) => (
             url="https://docs.google.com/forms/d/e/1FAIpQLSeaSouXl-Hwd_lZohwgysqk-8whc9bydHuVpSCr1C6IoDHuoA/viewform"
             trackingName="ambassadors:reward-form-link"
             newTab
+            colorArrowOnly
           >
             Reward form
           </ArrowedLink>
@@ -85,84 +87,78 @@ const AmbassadorsInfoSection = ({ className }: AmbassadorsInfoSectionProps) => (
         <Column>
           <H3 divider>Who are we looking for?</H3>
           <List>
-            <ListItem>
-              <ItemTitle>Community Builder</ItemTitle> -{' '}
-              <ItemContent>
+            <List.Item>
+              <List.ItemTitle>Community Builder</List.ItemTitle> -{' '}
+              <List.ItemContent>
                 Be our Community Builder in your location. Set up meets, build Alephium’s profile, and share ideas on
                 how you can get Alephium to your community.
-              </ItemContent>
-            </ListItem>
-            <ListItem>
-              <ItemTitle>Moderators</ItemTitle> -{' '}
-              <ItemContent>
+              </List.ItemContent>
+            </List.Item>
+            <List.Item>
+              <List.ItemTitle>Animators/Moderators</List.ItemTitle> -{' '}
+              <List.ItemContent>
                 Help to keep the conversations going. Alephium needs people in its channels working with and interacting
                 with users to ensure knowledge sharing and a good experience for all.
-              </ItemContent>
-            </ListItem>
-            <ListItem>
-              <ItemTitle>Content Creators</ItemTitle> -{' '}
-              <ItemContent>
+              </List.ItemContent>
+            </List.Item>
+            <List.Item>
+              <List.ItemTitle>Content Creators</List.ItemTitle> -{' '}
+              <List.ItemContent>
                 Are you a good writer, a videographer, podcast host or know of any other medium to spread the Alephium’s
                 story? This is for you.
-              </ItemContent>
-            </ListItem>
-            <ListItem>
-              <ItemTitle>Translators</ItemTitle> -{' '}
-              <ItemContent>Alephium’s content and applications should be accessible and inclusive.</ItemContent>
-            </ListItem>
+              </List.ItemContent>
+            </List.Item>
+            <List.Item>
+              <List.ItemTitle>Translators</List.ItemTitle> -{' '}
+              <List.ItemContent>
+                Alephium’s content and applications should be accessible and inclusive.
+              </List.ItemContent>
+            </List.Item>
+            <List.Item>
+              <List.ItemTitle>And more...</List.ItemTitle>
+            </List.Item>
           </List>
         </Column>
       </Columns>
     </AmbassadorsSectionContainer>
     <AmbassadorsSectionContainer doubleMargin>
-      <StyledTiersAndPerksColumns>
+      <H2 verticalMargin divider>
+        Program Structure and Perks
+      </H2>
+      <PerksIntro gap="50px">
         <Column>
-          <h3>Program Structure and Perks</h3>
           <Paragraph>
-            The Alephian program will be a three-tier based program. Each tier will have specific monthly targets
-            attached to it and meeting these targets is a requirement for getting the reward. When applying for the
-            program make sure to consider this information in combination with the time you are willing to dedicate to
-            the project.
+            The Alephian program is a three-tier based program. Each tier has specific monthly targets attached to it
+            and meeting these targets is a requirement for getting the reward. When applying for the program make sure
+            to consider this information in combination with the time you are willing to dedicate to the project.
           </Paragraph>
+        </Column>
+        <Column>
           <List>
-            <ListItem>
-              <ItemTitle>Rewards</ItemTitle>
-              <ItemContent>- Each tier comes with remuneration and requires formal agreements.</ItemContent>
-            </ListItem>
-            <ListItem>
-              <ItemTitle>Swag</ItemTitle>
-              <ItemContent>
+            <List.Item>
+              <List.ItemTitle>Rewards</List.ItemTitle>
+              <List.ItemContent>- Each tier comes with remuneration and requires formal agreements.</List.ItemContent>
+            </List.Item>
+            <List.Item>
+              <List.ItemTitle>Swag</List.ItemTitle>
+              <List.ItemContent>
                 - Vouchers to our Alephium online store will allow you to represent the project in style, or treat your
                 local community.
-              </ItemContent>
-            </ListItem>
-            <ListItem>
-              <ItemTitle>In house collaboration</ItemTitle>
-              <ItemContent>- A direct line of communication to the Alephium core contributors!</ItemContent>
-            </ListItem>
+              </List.ItemContent>
+            </List.Item>
+            <List.Item>
+              <List.ItemTitle>In house collaboration</List.ItemTitle>
+              <List.ItemContent>- A direct line of communication to the Alephium core contributors!</List.ItemContent>
+            </List.Item>
           </List>
         </Column>
-        <Column>
-          <H3>Tiers</H3>
-          <Tiers>
-            <Tier>
-              <TierTitle>🐥 Tier 1 - Alephians Begin</TierTitle>
-              <TierContent>Community Animators, Translations, Meet-up coordinator</TierContent>
-            </Tier>
-            <Tier>
-              <TierTitle>🚀 Tier 2 - Alephians Go</TierTitle>
-              <TierContent>Community Moderators, Content Creator, Local Events organizers</TierContent>
-            </Tier>
-            <Tier>
-              <TierTitle>🔥 Tier 3 - Alephians Power</TierTitle>
-              <TierContent>Community Creator, Super Content Creator, Alephium Influencer</TierContent>
-            </Tier>
-          </Tiers>
-        </Column>
-      </StyledTiersAndPerksColumns>
+      </PerksIntro>
     </AmbassadorsSectionContainer>
+    <TiersSlider />
     <AmbassadorsSectionContainer doubleMargin>
-      <h2>FAQs</h2>
+      <H2 verticalMargin divider>
+        FAQs
+      </H2>
       <FAQContent>
         <QABox>
           <Question>Are participants in the Alephian Program paid?</Question>
@@ -191,63 +187,7 @@ const AmbassadorsInfoSection = ({ className }: AmbassadorsInfoSectionProps) => (
 
 export default AmbassadorsInfoSection
 
-const List = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-`
-
-const ListItem = styled.div``
-
-const ItemTitle = styled.b``
-
-const ItemContent = styled.span`
-  opacity: 0.8;
-`
-
-const StyledTiersAndPerksColumns = styled(Columns)`
-  h3 {
-    margin-top: 0;
-  }
-  border: 1px solid ${({ theme }) => theme.borderPrimary};
-
-  ${Column} {
-    padding: var(--spacing-6);
-
-    &:first-child {
-      background-color: ${({ theme }) => theme.bgSecondary};
-    }
-  }
-`
-
-const Tiers = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-`
-
-const Tier = styled.div`
-  padding: var(--spacing-4);
-
-  &:nth-child(1) {
-    background-color: #fff6e1;
-  }
-
-  &:nth-child(2) {
-    background-color: #ffe5a8;
-  }
-
-  &:nth-child(3) {
-    background-color: #fad273;
-  }
-`
-
-const TierTitle = styled.div`
-  font-weight: 600;
-  margin-bottom: var(--spacing-2);
-`
-
-const TierContent = styled.div``
+const PerksIntro = styled(Columns)``
 
 const FAQContent = styled.div`
   display: flex;
