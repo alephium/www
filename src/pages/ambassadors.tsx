@@ -1,4 +1,4 @@
-import styled, { ThemeProvider } from 'styled-components'
+import styled, { ThemeProvider, useTheme } from 'styled-components'
 import { graphql, PageProps } from 'gatsby'
 
 import GlobalStyle from '../styles/global-style'
@@ -16,6 +16,9 @@ import AmbassadorsLandingSection, {
 } from '../components/pages/ambassadors/AmbassadorsLandingSection'
 import NavigationMenu from '../components/NavigationMenu'
 import Footer from '../components/Footer'
+import SimpleLink from '../components/SimpleLink'
+import ModalTermsAndConditions from '../components/pages/ambassadors/ModalTermsAndConditions'
+import { useEffect, useState } from 'react'
 
 interface HackathonPageProps extends PageProps {
   data: {
@@ -34,6 +37,15 @@ interface HackathonPageProps extends PageProps {
 
 const IndexPage = (props: HackathonPageProps) => {
   const pageContent = props.data.ambassadors.nodes[0].frontmatter
+  const [isModalTermsOpen, setIsModalTermsOpen] = useState(false)
+
+  const params = new URLSearchParams(location.search)
+
+  const openTermsModal = params.get('terms') !== null
+
+  useEffect(() => {
+    if (openTermsModal) setIsModalTermsOpen(true)
+  }, [openTermsModal])
 
   return (
     <ThemeProvider theme={ambassadorsTheme}>
@@ -45,6 +57,12 @@ const IndexPage = (props: HackathonPageProps) => {
         <AmbassadorsIntroSection content={pageContent.introSection} />
         <AmbassadorsInfoSection content={pageContent.hackathonInfo} />
       </Wrapper>
+      <TermsAndConditionsRibbon>
+        <SimpleLink color="#489dbe" openModal={setIsModalTermsOpen}>
+          {"Program's terms and conditions"}
+        </SimpleLink>
+      </TermsAndConditionsRibbon>
+      <ModalTermsAndConditions isOpen={isModalTermsOpen} setIsOpen={setIsModalTermsOpen} />
       <Footer location={props.location} />
     </ThemeProvider>
   )
@@ -101,6 +119,14 @@ const NavigationMenuStyled = styled(NavigationMenu)`
     font-weight: 300;
     color: ${({ theme }) => theme.textPrimary};
   }
+`
+
+const TermsAndConditionsRibbon = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-4);
+  background-color: ${({ theme }) => theme.bgSecondary};
+  border-bottom: 1px solid ${({ theme }) => theme.borderPrimary};
 `
 
 export const pageQuery = graphql`

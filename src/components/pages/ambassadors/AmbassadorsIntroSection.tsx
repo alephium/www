@@ -29,7 +29,9 @@ const AmbassadorsIntroSection = ({
           <H2>{title}</H2>
           <H3 secondary>{subtitle}</H3>
           <Description>{description}</Description>
-          <Button>Apply now</Button>
+          <Button url=" https://docs.google.com/forms/d/1z18iEnkS_Y7acIbSmdjeTTtNTevuqlSETgfMoCtYBOA" newTab>
+            Apply now
+          </Button>
         </TextBoxContent>
       </TextBox>
     </Columns>

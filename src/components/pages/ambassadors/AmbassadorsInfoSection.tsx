@@ -166,7 +166,15 @@ const AmbassadorsInfoSection = ({ className }: AmbassadorsInfoSectionProps) => (
         </QABox>
         <QABox>
           <Question>What are the program rules?</Question>
-          <Answer>Program rules can be found here.</Answer>
+          <Answer>The rules are described here:</Answer>
+          <ArrowedLink
+            url="https://docs.google.com/document/d/1HG2MrnTIS3oV9eo35giGKr_yAJnDisla"
+            newTab
+            trackingName="ambassadors:program-rules-link"
+            colorArrowOnly
+          >
+            Program rules
+          </ArrowedLink>
         </QABox>
         <QABox>
           <Question>I have an existing community, can I still work with Alephium?</Question>
@@ -174,11 +182,19 @@ const AmbassadorsInfoSection = ({ className }: AmbassadorsInfoSectionProps) => (
         </QABox>
         <QABox>
           <Question>How do I find out if I’ve been accepted?</Question>
-          <Answer>All applicants will be contacted via email with feedback on their application</Answer>
+          <Answer>All applicants will be contacted via email with feedback on their application.</Answer>
+        </QABox>
+        <QABox>
+          <Question>Can I continue in the program after the initial 6 months?</Question>
+          <Answer>
+            Yes. If selected, Ambassadors agree that the contractual relationship between them and Alephium is a 6
+            months duration contractual relationship that renews itself tacitly. The contractual relationship may be
+            terminated by either party at any time upon written notice.
+          </Answer>
         </QABox>
         <QABox>
           <Question>What if I have more questions?</Question>
-          <Answer>If you have any questions about the program, email XXXX@alephium.org.</Answer>
+          <Answer>If you have any questions about the program, email community@alephium.org.</Answer>
         </QABox>
       </FAQContent>
     </AmbassadorsSectionContainer>

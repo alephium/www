@@ -15,9 +15,9 @@ const TiersSlider = () => (
   <SliderContainer>
     <AmbassadorsSectionContainer noVerticalMargin>
       <SlidingContent>
-        <CategoryCard title="Community" color="#137cf4" content={communityTiers} />
-        <CategoryCard title="Content" color="#22a85c" content={contentTiers} />
-        <CategoryCard title="Outreach" color="#e7705b" content={outreachTiers} />
+        <CategoryCard title="Community" color="#4294f3" content={communityTiers} />
+        <CategoryCard title="Content" color="#4ba371" content={contentTiers} />
+        <CategoryCard title="Outreach" color="#f38977" content={outreachTiers} />
       </SlidingContent>
     </AmbassadorsSectionContainer>
   </SliderContainer>
@@ -207,13 +207,13 @@ const TierContentLabel = styled.label`
   border-radius: 4px;
   padding: 2px 4px;
   color: white;
-  margin: 0;
+  margin-bottom: var(--spacing-4);
 `
 
 const TierTitle = styled.h4`
   font-size: 19px;
   font-weight: 500;
-  margin-top: 0;
+  margin-top: var(--spacing-1);
   margin-bottom: var(--spacing-1);
 `
 
