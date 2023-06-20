@@ -1,9 +1,8 @@
 import styled from 'styled-components'
 import Columns from '../../Columns/Columns'
 import { deviceBreakPoints } from '../../../styles/global-style'
-import GenevaWaterJet from './AnimatedIllustrations/GenevaWaterJet'
 import AmbassadorsSectionContainer from './AmbassadorsSectionContainer'
-import AmbassadorsSectionTitle from './AmbassadorsSectionTitle'
+import ambassadorImage from '../../../images/ambassadors_mountain.webp'
 import Button from '../../Button'
 import { H2, H3 } from './Texts'
 
@@ -28,7 +27,7 @@ const AmbassadorsIntroSection = ({
       <TextBox>
         <TextBoxContent>
           <H2>{title}</H2>
-          <H3>{subtitle}</H3>
+          <H3 secondary>{subtitle}</H3>
           <Description>{description}</Description>
           <Button>Apply now</Button>
         </TextBoxContent>
@@ -42,10 +41,8 @@ export default AmbassadorsIntroSection
 const IllustrationBox = styled.div`
   flex: 1;
   background-color: #f3c97c;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-height: 600px;
+  background-image: url(${ambassadorImage});
+  background-position: center;
 
   @media ${deviceBreakPoints.tablet} {
     display: none;
@@ -65,6 +62,6 @@ const TextBoxContent = styled.div`
 `
 
 const Description = styled.p`
-  margin-top: var(--spacing-6);
+  margin-top: var(--spacing-2);
   margin-bottom: var(--spacing-4);
 `
