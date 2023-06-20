@@ -89,11 +89,11 @@ export const ambassadorsTheme: DefaultTheme = {
 
   borderPrimary: 'var(--color-grey-100)',
 
-  link: '#fc931b',
+  link: '#e7902c',
   linkAlt: '#00aeff',
 
   separator: 'var(--color-grey-100)',
 
-  highlight: '#fc931b',
+  highlight: '#e7902c',
   highlightComplementary: '#00aeff'
 }

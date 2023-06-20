@@ -218,7 +218,8 @@ const QABox = styled.div`
 `
 
 const Question = styled.div`
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 17px;
   margin-bottom: var(--spacing-2);
 `
 

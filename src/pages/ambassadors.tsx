@@ -39,7 +39,7 @@ const IndexPage = (props: HackathonPageProps) => {
   const pageContent = props.data.ambassadors.nodes[0].frontmatter
   const [isModalTermsOpen, setIsModalTermsOpen] = useState(false)
 
-  const params = new URLSearchParams(location.search)
+  const params = new URLSearchParams(props.location.search)
 
   const openTermsModal = params.get('terms') !== null
 
@@ -58,9 +58,7 @@ const IndexPage = (props: HackathonPageProps) => {
         <AmbassadorsInfoSection content={pageContent.hackathonInfo} />
       </Wrapper>
       <TermsAndConditionsRibbon>
-        <SimpleLink color="#489dbe" openModal={setIsModalTermsOpen}>
-          {"Program's terms and conditions"}
-        </SimpleLink>
+        <SimpleLink openModal={setIsModalTermsOpen}>{"Program's terms and conditions"}</SimpleLink>
       </TermsAndConditionsRibbon>
       <ModalTermsAndConditions isOpen={isModalTermsOpen} setIsOpen={setIsModalTermsOpen} />
       <Footer location={props.location} />
