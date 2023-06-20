@@ -17,7 +17,7 @@ const TiersSlider = () => (
       <SlidingContent>
         <CategoryCard title="Community" color="#137cf4" content={communityTiers} />
         <CategoryCard title="Content" color="#22a85c" content={contentTiers} />
-        <CategoryCard title="Outreach" color="#e7705b" content={communityTiers} />
+        <CategoryCard title="Outreach" color="#e7705b" content={outreachTiers} />
       </SlidingContent>
     </AmbassadorsSectionContainer>
   </SliderContainer>
@@ -61,7 +61,9 @@ const ExpandableTargets = ({ targetsContent }: { targetsContent: TierContent['ta
       <TargetsOpenButton onClick={() => setTargetsOpen((p) => !p)}>
         {targetsOpen ? 'Hide' : 'See'} targets <Sign>{targetsOpen ? '-' : '+'}</Sign>
       </TargetsOpenButton>
-      <ExpandableTargetsContent style={{ height: targetsOpen ? 'auto' : 0 }}>{targetsContent}</ExpandableTargetsContent>
+      <ExpandableTargetsContent animate={{ height: targetsOpen ? 'auto' : 0 }}>
+        <TargetsText>{targetsContent}</TargetsText>
+      </ExpandableTargetsContent>
     </>
   )
 }
@@ -97,18 +99,54 @@ const contentTiers: TierContent[] = [
     targets: 'At least 5 translations of existing content. Or one app translation.'
   },
   {
-    title: 'Community Moderator',
-    tasks:
-      'Thoroughly answers questions on the various channels, assists in the moderation of conversations, promotes our events and assists on content distribution.',
-    targets:
-      'Answers more complex questions, ban users, enforce the server rules, approve posts and content. Promote community engagement by requesting them to like our posts, share it and comment on it. Encourage quality “shilling” from the community.'
+    title: 'Content Creator',
+    tasks: 'Creation of articles, videos, reviews, tutorials, images or any content that will showcase Alephium.',
+    targets: `At least a total of 2 monthly contributions:
+      - Articles
+      - Reviews
+      - Tutorials
+      - Images/visual content
+      - Active contribution on socials
+      - Hosting a space
+      - Doing a Podcast`
   },
   {
-    title: 'Community Creator',
-    tasks:
-      'To start growing a community outside the internal Alephium community. Manage this community, engage it, discuss Alephium related topics and promote topics from the internal community.',
-    targets:
-      'Builds a community that lives on its own minimum 50 people. An independent sub-community which discusses Alephium and its tech.'
+    title: 'Super Content Creator',
+    tasks: 'Creation of articles, videos, reviews, tutorials, images or any content that will showcase Alephium.',
+    targets: `At least a total of 4 monthly contributions: 
+      - Articles
+      - Reviews
+      - Tutorials
+      - Images/visual content
+      - Active contribution on socials
+      - Hosting a space
+      - Doing a Podcast`
+  }
+]
+
+const outreachTiers: TierContent[] = [
+  {
+    title: 'Meet-up coordinator',
+    tasks: 'Organize a meet-up live or online to discuss topics around Alephium and spread the word about the project.',
+    targets: `1 meet up per month.
+Introduce developers to the ecosystem.`
+  },
+  {
+    title: 'Events organizer',
+    tasks: `Tier 1 +
+    Organize and promote online and live events in order to spread the word about the project and grow the ecosystem. 
+    Introduce developers to the ecosystem
+    `,
+    targets: `1 event per month.`
+  },
+  {
+    title: 'Alephium Influencer',
+    tasks: `Tier 1 + tier 2 + 
+    Actively promote Alephium on socials, host twitter space or a podcast. 
+    Connect the Alephium team with various podcast/twitter hosts or other projects which might be interesting for the grow of the ecosystem.    `,
+    targets: `1 meet-up/event/free- event attendance where you promote Alephium.
+1 meaningful connection a month.
+Introduce developers to the ecosystem.`
   }
 ]
 
@@ -192,8 +230,14 @@ const TargetsOpenButton = styled.span`
 
 const ExpandableTargetsContent = styled(motion.div)`
   overflow: hidden;
-  opacity: 0.7;
+`
+
+const TargetsText = styled.div`
   font-size: 15px;
+  white-space: pre-wrap;
+  background: ${({ theme }) => theme.bgSecondary};
+  opacity: 0.7;
+  padding: var(--spacing-2);
 `
 
 const Sign = styled.span`
