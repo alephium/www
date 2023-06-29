@@ -70,8 +70,8 @@ const Dot = styled(motion.div)`
 `
 
 const PausePlayIcon = styled.div`
-  height: 17px;
-  width: 17px;
+  height: 20px;
+  width: 20px;
   margin-left: 5px;
 
   svg {
