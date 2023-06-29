@@ -3,11 +3,11 @@ import { useEffect, RefObject, TouchEvent, ReactNode } from 'react'
 interface HeroSliderProps {
   heroElementRef: RefObject<HTMLElement>
   onSwipe: () => void
-  shouldAutoChange: boolean
+  shouldAutoSwipe: boolean
   children?: ReactNode
 }
 
-const HeroSlider = ({ heroElementRef, onSwipe, shouldAutoChange = true, children }: HeroSliderProps) => {
+const HeroSlider = ({ heroElementRef, onSwipe, shouldAutoSwipe = true, children }: HeroSliderProps) => {
   let swipeTimeout: ReturnType<typeof setTimeout> | undefined
 
   useEffect(() => {
@@ -41,7 +41,7 @@ const HeroSlider = ({ heroElementRef, onSwipe, shouldAutoChange = true, children
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
     swipeTimeout = setTimeout(() => {
-      shouldAutoChange && onSwipe()
+      shouldAutoSwipe && onSwipe()
     }, 8000)
 
     if (heroElement) {

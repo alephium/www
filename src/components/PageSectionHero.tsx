@@ -51,7 +51,7 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
 
   return (
     <ThemeProvider theme={darkTheme}>
-      <HeroSlider heroElementRef={innerRef} onSwipe={onSwipe} shouldAutoChange={!isPaused}>
+      <HeroSlider heroElementRef={innerRef} onSwipe={onSwipe} shouldAutoSwipe={!isPaused}>
         <HeroSection className={className} ref={innerRef}>
           <HeroImage layer="back" slide={slide} parallaxSpeed={12} />
           <HeroImage layer="middle" slide={slide} parallaxSpeed={8} />
