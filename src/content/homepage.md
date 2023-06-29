@@ -172,7 +172,7 @@ milestonesSection:
       - order: 0
         text: Whitepapers publicly released
         when: '02.2019'
-        isMajor: false
+        isMajor: true
     - year: 2020
       entries:
       - order: 0
@@ -192,7 +192,7 @@ milestonesSection:
       - order: 1
         text: 'Desktop wallet & explorer public release'
         when: '09.2021'
-        isMajor: false
+        isMajor: true
       - order: 2
         text: Mainnet launch
         when: '08.11.2021'
@@ -267,13 +267,14 @@ milestonesSection:
       - order: 0
         text: 'First exchange listing: Gate.io'
         when: '12.01.2022'
-        isMajor: false
+        isMajor: true
       - order: 1
         text: 'Initiation of marketing initiatives (sponsoring of ErgoHack, AMAs, community competitions, campaigns, Tech Talk Series, etc)'
         when: 'Q3.2022'
       - order: 2
         text: 3rd party dApps development started on Alephium
         when: 'Q3.2022'
+        isMajor: true
       - order: 3
         text: Dappnode Integration 
         when: '10.2022'
