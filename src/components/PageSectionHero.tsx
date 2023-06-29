@@ -34,6 +34,8 @@ interface PageSectionHeroProps {
 
 const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
   const [slide, setSlide] = useState<number>(0)
+  const [isPaused, setIsPaused] = useState(false)
+
   const innerRef = useRef<HTMLElement>(null)
   const themeContent = slide === 0 ? content.dark : content.light
 
@@ -45,9 +47,11 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
     setSlide(slide === 0 ? 1 : 0)
   }
 
+  const handlePauseToggle = () => setIsPaused((p) => !p)
+
   return (
     <ThemeProvider theme={darkTheme}>
-      <HeroSlider heroElementRef={innerRef} onSwipe={onSwipe}>
+      <HeroSlider heroElementRef={innerRef} onSwipe={onSwipe} shouldAutoChange={!isPaused}>
         <HeroSection className={className} ref={innerRef}>
           <HeroImage layer="back" slide={slide} parallaxSpeed={12} />
           <HeroImage layer="middle" slide={slide} parallaxSpeed={8} />
@@ -63,7 +67,13 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
 
                   <h1>{themeContent.title}</h1>
                   <TextSnippetStyled bigText>{themeContent.subtitle}</TextSnippetStyled>
-                  <PaginatorStyled onPageClick={toggleSlide} currentPage={slide} setCurrentPage={setSlide} />
+                  <PaginatorStyled
+                    onPageClick={toggleSlide}
+                    currentPage={slide}
+                    setCurrentPage={setSlide}
+                    isPaused={isPaused}
+                    onTogglePause={handlePauseToggle}
+                  />
                   <a
                     href="#intro"
                     aria-label="Scroll to the intro section"
