@@ -1,16 +1,27 @@
 import { motion } from 'framer-motion'
-import { FC } from 'react'
 import styled from 'styled-components'
+
+import { RiPauseFill, RiPlayFill } from 'react-icons/ri'
 
 interface PaginatorProps {
   numberOfPages?: number
   currentPage: number
   setCurrentPage: (page: number) => void
   onPageClick: (page: number) => void
+  isPaused: boolean
+  onTogglePause: () => void
   className?: string
 }
 
-const Paginator: FC<PaginatorProps> = ({ numberOfPages = 2, currentPage, setCurrentPage, onPageClick, className }) => {
+const Paginator = ({
+  numberOfPages = 2,
+  currentPage,
+  setCurrentPage,
+  onPageClick,
+  isPaused,
+  onTogglePause,
+  className
+}: PaginatorProps) => {
   const handleOnClick = (page: number) => {
     setCurrentPage(page)
     onPageClick(page)
@@ -23,6 +34,7 @@ const Paginator: FC<PaginatorProps> = ({ numberOfPages = 2, currentPage, setCurr
           {currentPage === index && <Dot layoutId="dot" style={{ scale: 1.2 }} />}
         </DotContainer>
       ))}
+      <PausePlayIcon onClick={onTogglePause}>{isPaused ? <RiPlayFill /> : <RiPauseFill />}</PausePlayIcon>
     </div>
   )
 }
@@ -30,6 +42,7 @@ const Paginator: FC<PaginatorProps> = ({ numberOfPages = 2, currentPage, setCurr
 export default styled(Paginator)`
   display: flex;
   gap: var(--spacing-2);
+  align-items: center;
 
   svg {
     fill: ${({ theme }) => theme.textPrimary};
@@ -54,4 +67,15 @@ const Dot = styled(motion.div)`
   width: 10px;
   border-radius: 10px;
   background-color: white;
+`
+
+const PausePlayIcon = styled.div`
+  height: 20px;
+  width: 20px;
+  margin-left: 5px;
+
+  svg {
+    height: 100%;
+    width: 100%;
+  }
 `
