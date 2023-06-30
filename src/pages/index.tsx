@@ -178,6 +178,9 @@ export const pageQuery = graphql`
             wallets {
               title
               description
+              screenshot {
+                publicURL
+              }
               actions {
                 title
                 link

@@ -76,18 +76,21 @@ walletsSection:
   wallets:
     - title: Desktop wallet
       description: "Alephium's most accessible wallet. The go-to wallet, crafted for all, for daily management and ready for DeFi."
+      screenshot: ../images/screenshots/desktop-wallet.png
       actions:
         - title: Get the desktop wallet
           color: '#333333'
           link: https://github.com/alephium/desktop-wallet/releases/latest/
     - title: Extension wallet
       description: 'The wallet in your browser. Get access to the latest features. Very handy for developers.'
+      screenshot: ../images/screenshots/desktop-wallet.png
       actions:
         - title: Get the extension wallet
           color: '#333333'
           link: https://github.com/alephium/desktop-wallet/releases/latest/
     - title: Mobile wallet
       description: 'Alephium on the go. Easy to use. First-class UX.'
+      screenshot: ../images/screenshots/desktop-wallet.png
       actions:
         - title: Get the mobile wallet
           color: '#333333'

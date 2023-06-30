@@ -30,60 +30,54 @@ interface PageSectionEcosystemProps {
   className?: string
 }
 
-const PageSectionEcosystem = ({ content, className }: PageSectionEcosystemProps) => {
-  const { title, subtitle, subsections } = content
-
-  console.log(content)
-
-  return (
-    <section className={className}>
-      <SectionTextHeader title={title} subtitle={subtitle} bigSubtitle bigText sticky />
-      <SectionContainer>
-        <Subsections>
-          {subsections.map(({ title, description, image, items }) => (
-            <Subsection key={title} animateEntry>
-              <SubsectionImageContainer>{image && <img src={image.publicURL} alt={title} />}</SubsectionImageContainer>
-              <SubsectionTextContent>
-                <SubsectionTextHeader title={title} subtitle={description} />
-                <SubsectionItems variants={containerVariants}>
-                  {items &&
-                    items.map(({ title, logo, url }) =>
-                      url ? (
-                        <SimpleLink
-                          url={url}
-                          text={title}
-                          key={url}
-                          newTab
-                          trackingName={`ecosystem-section:${title.replaceAll(' ', '-')}-link`}
-                        >
-                          <SubsectionItem key={title} variants={itemVariants}>
-                            {logo ? (
-                              <>
-                                <SubsectionItemTitle className="with-logo">{title}</SubsectionItemTitle>
-                                <SubsectionItemLogoContainer>
-                                  <SubsectionItemLogo src={logo.publicURL} alt={title} />
-                                </SubsectionItemLogoContainer>
-                              </>
-                            ) : (
-                              <SubsectionItemTitle>{title}</SubsectionItemTitle>
-                            )}
-                          </SubsectionItem>
-                        </SimpleLink>
-                      ) : (
-                        <SubsectionItem key={title}>
-                          <SubsectionItemTitle>{title}</SubsectionItemTitle>
+const PageSectionEcosystem = ({ content: { title, subtitle, subsections }, className }: PageSectionEcosystemProps) => (
+  <section className={className}>
+    <SectionTextHeader title={title} subtitle={subtitle} bigSubtitle bigText sticky />
+    <SectionContainer>
+      <Subsections>
+        {subsections.map(({ title, description, image, items }) => (
+          <Subsection key={title} animateEntry>
+            <SubsectionImageContainer>{image && <img src={image.publicURL} alt={title} />}</SubsectionImageContainer>
+            <SubsectionTextContent>
+              <SubsectionTextHeader title={title} subtitle={description} />
+              <SubsectionItems variants={containerVariants}>
+                {items &&
+                  items.map(({ title, logo, url }) =>
+                    url ? (
+                      <SimpleLink
+                        url={url}
+                        text={title}
+                        key={url}
+                        newTab
+                        trackingName={`ecosystem-section:${title.replaceAll(' ', '-')}-link`}
+                      >
+                        <SubsectionItem key={title} variants={itemVariants}>
+                          {logo ? (
+                            <>
+                              <SubsectionItemTitle className="with-logo">{title}</SubsectionItemTitle>
+                              <SubsectionItemLogoContainer>
+                                <SubsectionItemLogo src={logo.publicURL} alt={title} />
+                              </SubsectionItemLogoContainer>
+                            </>
+                          ) : (
+                            <SubsectionItemTitle>{title}</SubsectionItemTitle>
+                          )}
                         </SubsectionItem>
-                      )
-                    )}
-                </SubsectionItems>
-              </SubsectionTextContent>
-            </Subsection>
-          ))}
-        </Subsections>
-      </SectionContainer>
-    </section>
-  )
-}
+                      </SimpleLink>
+                    ) : (
+                      <SubsectionItem key={title}>
+                        <SubsectionItemTitle>{title}</SubsectionItemTitle>
+                      </SubsectionItem>
+                    )
+                  )}
+              </SubsectionItems>
+            </SubsectionTextContent>
+          </Subsection>
+        ))}
+      </Subsections>
+    </SectionContainer>
+  </section>
+)
 
 export default styled(PageSectionEcosystem)`
   padding-top: var(--spacing-16);
@@ -233,32 +227,3 @@ const itemVariants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 }
 }
-
-const query = graphql`
-  query {
-    homepage: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/homepage.md/" } }) {
-      nodes {
-        frontmatter {
-          ecosystemSection {
-            title
-            subtitle
-            subsections {
-              title
-              description
-              image {
-                publicURL
-              }
-              items {
-                title
-                logo {
-                  publicURL
-                }
-                url
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`
