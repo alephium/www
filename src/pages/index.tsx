@@ -185,6 +185,7 @@ export const pageQuery = graphql`
                 title
                 link
                 color
+                disabled
               }
             }
           }

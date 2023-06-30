@@ -16,6 +16,7 @@ export interface PageSectionWalletsContentType {
       link: string
       color: string
       iconUrl?: string
+      disabled?: boolean
     }[]
   }[]
 }
@@ -49,8 +50,11 @@ const WalletCard = ({ title, description, screenshot, actions }: PageSectionWall
       <WalletDescription>{description}</WalletDescription>
     </WalletTextContainer>
     <WalletActions>
-      <Button />
-      <Button />
+      {actions.map((a) => (
+        <ActionButton key={a.title} url={a.link} color={a.color} newTab disabled={a.disabled}>
+          {a.title}
+        </ActionButton>
+      ))}
     </WalletActions>
   </WalletCardStyled>
 )
@@ -59,6 +63,7 @@ export default PageSectionWallets
 
 const SectionWrapper = styled.section`
   padding-top: var(--spacing-16);
+  padding-bottom: var(--spacing-16);
   background-color: ${({ theme }) => theme.bgTertiary};
 `
 
@@ -136,4 +141,12 @@ const WalletActions = styled.div`
   justify-content: center;
   gap: 20px;
   margin-bottom: var(--spacing-2);
+`
+
+const ActionButton = styled(Button)<{ color: string }>`
+  background-color: ${({ theme }) => theme.bgSurface};
+
+  svg > * {
+    fill: ${({ color }) => color};
+  }
 `

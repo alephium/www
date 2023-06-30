@@ -79,22 +79,26 @@ walletsSection:
       screenshot: ../images/screenshots/desktop-wallet.png
       actions:
         - title: Get the desktop wallet
-          color: '#333333'
+          color: 'white'
           link: https://github.com/alephium/desktop-wallet/releases/latest/
     - title: Extension wallet
       description: 'The wallet in your browser. Get access to the latest features. Very handy for developers.'
       screenshot: ../images/screenshots/desktop-wallet.png
       actions:
-        - title: Get the extension wallet
-          color: '#333333'
+        - title: Chrome
+          color: 'white'
+          link: https://github.com/alephium/desktop-wallet/releases/latest/
+        - title: Firefox
+          color: 'white'
           link: https://github.com/alephium/desktop-wallet/releases/latest/
     - title: Mobile wallet
       description: 'Alephium on the go. Easy to use. First-class UX.'
       screenshot: ../images/screenshots/desktop-wallet.png
       actions:
-        - title: Get the mobile wallet
-          color: '#333333'
-          link: https://github.com/alephium/desktop-wallet/releases/latest/
+        - title: Coming soon
+          color: 'white'
+          link: ''
+          disabled: true
 ecosystemSection:
   title: Ecosystem
   subtitle: Growing fast
