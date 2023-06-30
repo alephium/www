@@ -17,7 +17,7 @@ along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
 import { motion, Transition } from 'framer-motion'
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback } from 'react'
 import styled, { css, useTheme } from 'styled-components'
 import { IconType } from 'react-icons'
 
@@ -31,20 +31,21 @@ interface ToggleProps {
   className?: string
 }
 
+const toggleWidth = 70
+
 const Toggle = ({ toggled, onToggle, className, disabled, ToggleIcons, handleColors, label }: ToggleProps) => {
   const theme = useTheme()
-  const [toggleWidth, setToggleWidth] = useState(0)
   const [ToggleIconRight, ToggleIconLeft] = ToggleIcons ?? [undefined, undefined]
 
   const toggleBackgroundVariants = {
     off: {
-      backgroundColor: theme.name === 'light' ? 'rgba(0, 0, 0, 0.15)' : theme.bg.background2
+      backgroundColor: theme.bgPrimary
     },
-    on: { backgroundColor: handleColors ? theme.bgSurface : theme.link }
+    on: { backgroundColor: handleColors ? theme.bgTertiary : '#490ca3' }
   }
 
   const handleContainerVariants = {
-    off: { left: 0 },
+    off: { left: -2 },
     on: { left: toggleWidth / 2 }
   }
 
@@ -52,10 +53,6 @@ const Toggle = ({ toggled, onToggle, className, disabled, ToggleIcons, handleCol
     off: { backgroundColor: handleColors?.[0] ?? 'var(--color-white)' },
     on: { backgroundColor: handleColors?.[1] ?? 'var(--color-white)' }
   }
-
-  useEffect(() => {
-    setToggleWidth(parseInt(getComputedStyle(document.documentElement).getPropertyValue('--toggleWidth')))
-  }, [])
 
   const toggleState = toggled ? 'on' : 'off'
 
@@ -67,7 +64,7 @@ const Toggle = ({ toggled, onToggle, className, disabled, ToggleIcons, handleCol
     }
   }, [disabled, toggled, onToggle])
 
-  const getToggleIconColor = (isActive: boolean) => (isActive ? 'var(--color-white)' : theme.font.tertiary)
+  const getToggleIconColor = (isActive: boolean) => (isActive ? 'var(--color-white)' : theme.textTertiary)
 
   return (
     <StyledToggle
@@ -106,9 +103,9 @@ export const StyledToggle = styled(motion.div)<Omit<ToggleProps, 'onToggle'>>`
   position: relative;
   display: flex;
   align-items: center;
-  width: var(--toggleWidth);
-  height: calc(var(--toggleWidth) / 2);
-  border-radius: var(--toggleWidth);
+  width: ${toggleWidth}px;
+  height: calc(${toggleWidth}px / 2);
+  border-radius: ${toggleWidth}px;
   overflow: hidden;
   cursor: pointer;
   box-sizing: content-box;
@@ -134,16 +131,16 @@ export const StyledToggle = styled(motion.div)<Omit<ToggleProps, 'onToggle'>>`
 
 const ToggleHandleContainer = styled(motion.div)`
   position: absolute;
-  width: calc(var(--toggleWidth) / 2);
-  height: calc(var(--toggleWidth) / 2);
+  width: calc(${toggleWidth}px / 2);
+  height: calc(${toggleWidth}px / 2);
   padding: 2px;
 `
 
 const ToggleHandle = styled(motion.div)`
   height: 100%;
   width: 100%;
-  background-color: var(--color-white);
-  border-radius: var(--toggleWidth);
+  background-color: ${({ theme }) => theme.textPrimary};
+  border-radius: ${toggleWidth}px;
 `
 
 const ToggleContent = styled.div`
