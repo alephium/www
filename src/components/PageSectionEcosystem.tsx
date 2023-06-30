@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import { deviceBreakPoints } from '../styles/global-style'
 
@@ -10,30 +10,37 @@ import SimpleLink from './SimpleLink'
 import Columns from './Columns/Columns'
 import { motion } from 'framer-motion'
 
-type SubsectionType = {
+export type PageSectionEcosystemContentType = {
   title: string
-  description: string
-  image?: { publicURL: string }
-  items: {
+  subtitle: string
+  subsections: {
     title: string
-    logo?: { publicURL: string }
-    url?: string
+    description: string
+    image: { publicURL: string }
+    items: {
+      title: string
+      logo: { publicURL: string }
+      url: string
+    }[]
   }[]
 }
 
-const PageSectionEcosystem = ({ className }: { className?: string }) => {
-  const { homepage } = useStaticQuery(query)
+interface PageSectionEcosystemProps {
+  content: PageSectionEcosystemContentType
+  className?: string
+}
 
-  const {
-    ecosystemSection: { title, subtitle, subsections }
-  } = homepage.nodes[0].frontmatter
+const PageSectionEcosystem = ({ content, className }: PageSectionEcosystemProps) => {
+  const { title, subtitle, subsections } = content
+
+  console.log(content)
 
   return (
     <section className={className}>
       <SectionTextHeader title={title} subtitle={subtitle} bigSubtitle bigText sticky />
       <SectionContainer>
         <Subsections>
-          {subsections.map(({ title, description, image, items }: SubsectionType) => (
+          {subsections.map(({ title, description, image, items }) => (
             <Subsection key={title} animateEntry>
               <SubsectionImageContainer>{image && <img src={image.publicURL} alt={title} />}</SubsectionImageContainer>
               <SubsectionTextContent>
