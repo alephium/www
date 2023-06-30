@@ -1,6 +1,8 @@
+import { colord } from 'colord'
 import styled from 'styled-components'
 import { deviceBreakPoints } from '../styles/global-style'
 import Button from './Button'
+import GradientBubble from './GradientBubble'
 import SectionTextHeader from './SectionTextHeader'
 
 export interface PageSectionWalletsContentType {
@@ -37,6 +39,14 @@ const PageSectionWallets = ({ content: { title, subtitle, description, wallets }
         <WalletCard key={w.title} {...w}></WalletCard>
       ))}
     </WalletCards>
+    <ParallaxBackground>
+      <GradientBubble speed={-10} positionPercentage={[5, 5]} scale={2} blur={10} />
+      <GradientBubble speed={-5} positionPercentage={[0, 20]} scale={1} blur={10} />
+      <GradientBubble speed={-20} positionPercentage={[80, 30]} scale={2} blur={15} />
+      <GradientBubble speed={-2} positionPercentage={[90, 80]} scale={2} blur={10} />
+      <GradientBubble speed={30} positionPercentage={[80, 10]} scale={6} blur={20} />
+      <GradientBubble speed={20} positionPercentage={[0, 90]} scale={6} blur={20} />
+    </ParallaxBackground>
   </SectionWrapper>
 )
 
@@ -62,9 +72,11 @@ const WalletCard = ({ title, description, screenshot, actions }: PageSectionWall
 export default PageSectionWallets
 
 const SectionWrapper = styled.section`
+  position: relative;
   padding-top: var(--spacing-16);
   padding-bottom: var(--spacing-16);
   background-color: ${({ theme }) => theme.bgTertiary};
+  z-index: 0;
 `
 
 const StyledSectionTextHeader = styled(SectionTextHeader)`
@@ -104,7 +116,8 @@ const WalletCards = styled.div`
 const WalletCardStyled = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: ${({ theme }) => theme.bgPrimary};
+  background-color: transparent;
+  backdrop-filter: blur(30px);
   border: 1px solid ${({ theme }) => theme.borderPrimary};
   border-radius: 9px;
   max-width: 400px;
@@ -114,7 +127,7 @@ const WalletCardStyled = styled.div`
 
 const WalletScreenShotContainer = styled.div`
   display: flex;
-  background-color: ${({ theme }) => theme.bgTertiary};
+  background-color: rgba(00, 0, 0, 0.5);
   border-bottom: 1px solid ${({ theme }) => theme.borderPrimary};
 `
 
@@ -130,6 +143,8 @@ const WalletTextContainer = styled.div`
 
 const WalletTitle = styled.h2`
   margin-top: 0;
+  font-weight: 500;
+  margin-bottom: var(--spacing-4);
 `
 
 const WalletDescription = styled.span`
@@ -140,7 +155,7 @@ const WalletActions = styled.div`
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin-bottom: var(--spacing-2);
+  margin-bottom: var(--spacing-4);
 `
 
 const ActionButton = styled(Button)<{ color: string }>`
@@ -149,4 +164,14 @@ const ActionButton = styled(Button)<{ color: string }>`
   svg > * {
     fill: ${({ color }) => color};
   }
+`
+
+const ParallaxBackground = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
 `

@@ -2,7 +2,7 @@ import { motion, useTransform, useScroll, MotionStyle } from 'framer-motion'
 import { useRef, useEffect, useState, ReactNode } from 'react'
 import { isBrowser, isMobile } from '../utils/misc'
 
-interface ParallaxWrapperProps {
+export interface ParallaxWrapperProps {
   speed: number // Between -10 and 10 for good results
   shouldZoom?: boolean
   targetedScale?: number
