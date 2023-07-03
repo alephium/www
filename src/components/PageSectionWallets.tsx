@@ -1,3 +1,6 @@
+import { colord } from 'colord'
+import { motion } from 'framer-motion'
+import { useState } from 'react'
 import styled from 'styled-components'
 import { deviceBreakPoints } from '../styles/global-style'
 import Button from './Button'
@@ -12,10 +15,10 @@ export interface PageSectionWalletsContentType {
     title: string
     description: string
     screenshot: { publicURL: string }
+    color: string
     actions: {
       title: string
       link: string
-      color: string
       iconUrl?: string
       disabled?: boolean
     }[]
@@ -49,25 +52,51 @@ const PageSectionWallets = ({ content: { title, subtitle, description, wallets }
   </SectionWrapper>
 )
 
-const WalletCard = ({ title, description, screenshot, actions }: PageSectionWalletsContentType['wallets'][number]) => (
-  <WalletCardStyled>
-    <WalletScreenShotContainer>
-      <ScreenshotHighlightGradient />
-      <WalletScreenshot src={screenshot.publicURL} alt="Desktop wallet screenshot" />
-    </WalletScreenShotContainer>
-    <WalletTextContainer>
-      <WalletTitle>{title}</WalletTitle>
-      <WalletDescription>{description}</WalletDescription>
-    </WalletTextContainer>
-    <WalletActions>
-      {actions.map((a) => (
-        <ActionButton key={a.title} url={a.link} color={a.color} newTab disabled={a.disabled}>
-          {a.title}
-        </ActionButton>
-      ))}
-    </WalletActions>
-  </WalletCardStyled>
-)
+const WalletCard = ({
+  title,
+  description,
+  screenshot,
+  color,
+  actions
+}: PageSectionWalletsContentType['wallets'][number]) => {
+  const [isHovered, setIsHovered] = useState(false)
+
+  return (
+    <WalletCardStyled onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+      <WalletScreenShotContainer
+        style={{
+          backgroundColor: colord(color).alpha(0.02).toHex()
+        }}
+      >
+        <ScreenshotHighlightGradient
+          style={{
+            background: `radial-gradient(at top, ${colord(color).alpha(0.15).toHex()} 0%, 
+        ${colord(color).alpha(0).toHex()} 70%)`
+          }}
+          animate={{
+            opacity: isHovered ? 1 : 0
+          }}
+        />
+        <WalletScreenshot
+          src={screenshot.publicURL}
+          alt="Desktop wallet screenshot"
+          animate={{ scale: isHovered ? 1.05 : 1 }}
+        />
+      </WalletScreenShotContainer>
+      <WalletTextContainer>
+        <WalletTitle>{title}</WalletTitle>
+        <WalletDescription>{description}</WalletDescription>
+      </WalletTextContainer>
+      <WalletActions>
+        {actions.map((a) => (
+          <ActionButton key={a.title} url={a.link} newTab disabled={a.disabled}>
+            {a.title}
+          </ActionButton>
+        ))}
+      </WalletActions>
+    </WalletCardStyled>
+  )
+}
 
 export default PageSectionWallets
 
@@ -113,12 +142,12 @@ const WalletCards = styled.div`
   }
 `
 
-const ScreenshotHighlightGradient = styled.div`
+const ScreenshotHighlightGradient = styled(motion.div)`
   position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  top: 60%;
+  bottom: 30%;
+  right: -20px;
+  left: -20px;
+  top: 0;
   z-index: 0;
   transition: all 0.5s ease-out;
 `
@@ -133,11 +162,10 @@ const WalletScreenShotContainer = styled.div`
   overflow: hidden;
 `
 
-const WalletScreenshot = styled.img`
+const WalletScreenshot = styled(motion.img)`
   width: 100%;
   object-fit: contain;
   z-index: 1;
-  transition: all 0.1s ease-out;
 `
 
 const WalletCardStyled = styled.div`
@@ -152,18 +180,6 @@ const WalletCardStyled = styled.div`
   text-align: center;
 
   &:hover {
-    &:nth-child(1) ${ScreenshotHighlightGradient} {
-      background: radial-gradient(at bottom, rgba(153, 0, 255, 0.3) 0%, rgba(153, 0, 255, 0) 70%);
-    }
-
-    &:nth-child(2) ${ScreenshotHighlightGradient} {
-      background: radial-gradient(at bottom, rgba(255, 94, 0, 0.3) 0%, rgba(255, 94, 0, 0) 70%);
-    }
-
-    &:nth-child(3) ${ScreenshotHighlightGradient} {
-      background: radial-gradient(at bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 70%);
-    }
-
     ${WalletScreenshot} {
       transform: scale(1.1);
     }
@@ -173,6 +189,7 @@ const WalletCardStyled = styled.div`
 const WalletTextContainer = styled.div`
   flex: 1;
   padding: var(--spacing-4);
+  line-height: var(--lineHeight-26);
 `
 
 const WalletTitle = styled.h2`
@@ -192,12 +209,8 @@ const WalletActions = styled.div`
   margin-bottom: var(--spacing-4);
 `
 
-const ActionButton = styled(Button)<{ color: string }>`
+const ActionButton = styled(Button)`
   background-color: ${({ theme }) => theme.bgSurface};
-
-  svg > * {
-    fill: ${({ color }) => color};
-  }
 `
 
 const ParallaxBackground = styled.div`

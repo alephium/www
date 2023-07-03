@@ -181,10 +181,10 @@ export const pageQuery = graphql`
               screenshot {
                 publicURL
               }
+              color
               actions {
                 title
                 link
-                color
                 disabled
               }
             }
