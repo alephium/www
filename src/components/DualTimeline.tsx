@@ -218,14 +218,20 @@ const trackWidth = 90
 const Text = styled.div`
   ${({ isMajor }) =>
     isMajor &&
-    `
-    background: linear-gradient(30deg, #ffc800 0%, #ff4000 40%, #e100ff 90%);;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    background-attachment: fixed;
-  `}
+    css`
+      background: linear-gradient(30deg, #ffc800 0%, #ff4000 40%, #e100ff 90%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+      background-attachment: fixed;
+
+      @-moz-document url-prefix() {
+        background: linear-gradient(30deg, #fff200 0%, #ffab25 40%, #ff7300 90%);
+        background-clip: text;
+        background-attachment: auto;
+      }
+    `}
 `
 
 const When = styled.div`
@@ -246,7 +252,14 @@ const Container = styled.div<{ detailed: boolean }>`
         -webkit-text-fill-color: transparent;
         -moz-background-clip: text;
         -moz-text-fill-color: transparent;
+        background-clip: text;
         background-attachment: fixed;
+
+        @-moz-document url-prefix() {
+          background: linear-gradient(30deg, #fff200 0%, #ffab25 40%, #ff7300 90%);
+          background-clip: text;
+          background-attachment: auto;
+        }
       `}
   }
 
