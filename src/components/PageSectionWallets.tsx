@@ -1,4 +1,3 @@
-import { colord } from 'colord'
 import styled from 'styled-components'
 import { deviceBreakPoints } from '../styles/global-style'
 import Button from './Button'
@@ -53,6 +52,7 @@ const PageSectionWallets = ({ content: { title, subtitle, description, wallets }
 const WalletCard = ({ title, description, screenshot, actions }: PageSectionWalletsContentType['wallets'][number]) => (
   <WalletCardStyled>
     <WalletScreenShotContainer>
+      <ScreenshotHighlightGradient />
       <WalletScreenshot src={screenshot.publicURL} alt="Desktop wallet screenshot" />
     </WalletScreenShotContainer>
     <WalletTextContainer>
@@ -113,6 +113,33 @@ const WalletCards = styled.div`
   }
 `
 
+const ScreenshotHighlightGradient = styled.div`
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 60%;
+  z-index: 0;
+  transition: all 0.5s ease-out;
+`
+
+const WalletScreenShotContainer = styled.div`
+  position: relative;
+  display: flex;
+  background-color: transparent;
+  border-bottom: 1px solid ${({ theme }) => theme.borderPrimary};
+  height: 280px;
+  padding: var(--spacing-2);
+  overflow: hidden;
+`
+
+const WalletScreenshot = styled.img`
+  width: 100%;
+  object-fit: contain;
+  z-index: 1;
+  transition: all 0.1s ease-out;
+`
+
 const WalletCardStyled = styled.div`
   display: flex;
   flex-direction: column;
@@ -123,17 +150,24 @@ const WalletCardStyled = styled.div`
   max-width: 400px;
   overflow: hidden;
   text-align: center;
-`
 
-const WalletScreenShotContainer = styled.div`
-  display: flex;
-  background-color: rgba(00, 0, 0, 0.5);
-  border-bottom: 1px solid ${({ theme }) => theme.borderPrimary};
-`
+  &:hover {
+    &:nth-child(1) ${ScreenshotHighlightGradient} {
+      background: radial-gradient(at bottom, rgba(153, 0, 255, 0.3) 0%, rgba(153, 0, 255, 0) 70%);
+    }
 
-const WalletScreenshot = styled.img`
-  width: 100%;
-  object-fit: contain;
+    &:nth-child(2) ${ScreenshotHighlightGradient} {
+      background: radial-gradient(at bottom, rgba(255, 94, 0, 0.3) 0%, rgba(255, 94, 0, 0) 70%);
+    }
+
+    &:nth-child(3) ${ScreenshotHighlightGradient} {
+      background: radial-gradient(at bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 70%);
+    }
+
+    ${WalletScreenshot} {
+      transform: scale(1.1);
+    }
+  }
 `
 
 const WalletTextContainer = styled.div`

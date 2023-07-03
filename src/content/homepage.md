@@ -75,15 +75,15 @@ walletsSection:
   description: "We only get one chance to make a first impression. The wallets are built with the user in mind, making Alephium's technology accessible for all."
   wallets:
     - title: Desktop wallet 🖥️
-      description: "Alephium's most accessible wallet. The go-to wallet, crafted for all, for daily management and ready for DeFi."
+      description: "Alephium's most accessible wallet. Ready for everything, from daily management tasks to DeFi."
       screenshot: ../images/screenshots/desktop-wallet.png
       actions:
         - title: Get the desktop wallet
           color: 'white'
           link: https://github.com/alephium/desktop-wallet/releases/latest/
     - title: Extension wallet 🌍
-      description: 'The wallet in your browser. Get access to the latest features. Very handy for developers.'
-      screenshot: ../images/screenshots/desktop-wallet.png
+      description: 'The wallet in your browser. Get access to the latest features with a focus on DeFi.'
+      screenshot: ../images/screenshots/extension.png
       actions:
         - title: Chrome
           color: 'white'
@@ -92,8 +92,8 @@ walletsSection:
           color: 'white'
           link: https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/
     - title: Mobile wallet 📱
-      description: 'Alephium on the go. Easy to use. First-class UX.'
-      screenshot: ../images/screenshots/desktop-wallet.png
+      description: 'Alephium on the go. First-class UX. Available on Android and iOS.'
+      screenshot: ../images/screenshots/mobile.png
       actions:
         - title: Coming soon
           color: 'white'

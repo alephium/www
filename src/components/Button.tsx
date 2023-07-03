@@ -65,6 +65,7 @@ export default styled(Button)`
         `
       : css`
           cursor: default;
+          opacity: 0.7;
         `}
 
   .arrow {
