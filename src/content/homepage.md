@@ -411,8 +411,7 @@ footer:
           url: https://github.com/alephium/explorer
           newTab: true
         - text: Wallet
-          url: https://github.com/alephium/desktop-wallet
-          newTab: true
+          url: '#wallets'
         - text: Reward & grant program
           url: https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md
           newTab: true

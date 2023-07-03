@@ -58,9 +58,7 @@ export default styled(Button)`
       ? css`
           &:hover {
             cursor: pointer;
-            filter: brightness(110%);
-            transform: translateY(calc(var(--spacing-half) * -1));
-            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+            filter: brightness(120%);
           }
         `
       : css`

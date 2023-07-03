@@ -80,7 +80,7 @@ const WalletCard = ({
         <WalletScreenshot
           src={screenshot.publicURL}
           alt="Desktop wallet screenshot"
-          animate={{ scale: isHovered ? 1.05 : 1 }}
+          animate={{ scale: isHovered ? 1.04 : 1 }}
         />
       </WalletScreenShotContainer>
       <WalletTextContainer>
@@ -178,12 +178,6 @@ const WalletCardStyled = styled.div`
   max-width: 400px;
   overflow: hidden;
   text-align: center;
-
-  &:hover {
-    ${WalletScreenshot} {
-      transform: scale(1.1);
-    }
-  }
 `
 
 const WalletTextContainer = styled.div`
