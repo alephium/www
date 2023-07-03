@@ -100,7 +100,8 @@ const contentTiers: TierContent[] = [
   },
   {
     title: 'Content Creator',
-    tasks: 'Creation of articles, videos, reviews, tutorials, images or any content that will showcase Alephium.',
+    tasks:
+      'Creation of original articles, videos, reviews, tutorials, images or any content that will showcase Alephium.',
     targets: `At least a total of 2 monthly contributions:
       - Articles
       - Reviews
@@ -112,7 +113,7 @@ const contentTiers: TierContent[] = [
   },
   {
     title: 'Super Content Creator',
-    tasks: 'Creation of articles, videos, reviews, tutorials, images or any content that will showcase Alephium.',
+    tasks: 'Tier 2 but Supercharged',
     targets: `At least a total of 4 monthly contributions: 
       - Articles
       - Reviews
@@ -126,26 +127,22 @@ const contentTiers: TierContent[] = [
 
 const outreachTiers: TierContent[] = [
   {
-    title: 'Meet-up coordinator',
+    title: 'Meet-up Coordinator',
     tasks: 'Organize a meet-up live or online to discuss topics around Alephium and spread the word about the project.',
     targets: `1 meet up per month.
 Introduce developers to the ecosystem.`
   },
   {
-    title: 'Events organizer',
-    tasks: `Tier 1 +
-    Organize and promote online and live events in order to spread the word about the project and grow the ecosystem. 
-    Introduce developers to the ecosystem
-    `,
-    targets: `1 event per month.`
+    title: 'Alephium Networker',
+    tasks: `Connect the Alephium team with various podcast/twitter hosts or other projects which might be interesting for the grow of the ecosystem.    `,
+    targets: `2 to 3 qualified connections a month.`
   },
   {
-    title: 'Alephium Influencer',
-    tasks: `Tier 1 + tier 2 + 
-    Actively promote Alephium on socials, host twitter space or a podcast. 
-    Connect the Alephium team with various podcast/twitter hosts or other projects which might be interesting for the grow of the ecosystem.    `,
-    targets: `1 meet-up/event/free- event attendance where you promote Alephium.
-1 meaningful connection a month.
+    title: 'Events Organizer',
+    tasks: `Organize and promote online and live events in order to spread the word about the project and grow the ecosystem. 
+    Introduce developers to the ecosystem
+    `,
+    targets: `1 event per month.
 Introduce developers to the ecosystem.`
   }
 ]

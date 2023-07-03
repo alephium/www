@@ -165,18 +165,6 @@ const AmbassadorsInfoSection = ({ className }: AmbassadorsInfoSectionProps) => (
           <Answer>All participants who are selected for the Alephian Program will be receiving ALPH rewards.</Answer>
         </QABox>
         <QABox>
-          <Question>What are the program rules?</Question>
-          <Answer>The rules are described here:</Answer>
-          <ArrowedLink
-            url="https://docs.google.com/document/d/1HG2MrnTIS3oV9eo35giGKr_yAJnDisla"
-            newTab
-            trackingName="ambassadors:program-rules-link"
-            colorArrowOnly
-          >
-            Program rules
-          </ArrowedLink>
-        </QABox>
-        <QABox>
           <Question>I have an existing community, can I still work with Alephium?</Question>
           <Answer>Yes! Community is about bringing people together and knowledge sharing.</Answer>
         </QABox>
@@ -194,7 +182,7 @@ const AmbassadorsInfoSection = ({ className }: AmbassadorsInfoSectionProps) => (
         </QABox>
         <QABox>
           <Question>What if I have more questions?</Question>
-          <Answer>If you have any questions about the program, email community@alephium.org.</Answer>
+          <Answer>If you have any questions about the program, please email: community@alephium.org.</Answer>
         </QABox>
       </FAQContent>
     </AmbassadorsSectionContainer>

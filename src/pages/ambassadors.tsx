@@ -1,5 +1,5 @@
 import styled, { ThemeProvider, useTheme } from 'styled-components'
-import { graphql, PageProps } from 'gatsby'
+import { graphql, navigate, PageProps } from 'gatsby'
 
 import GlobalStyle from '../styles/global-style'
 import { ambassadorsTheme } from '../styles/themes'
@@ -18,16 +18,15 @@ import NavigationMenu from '../components/NavigationMenu'
 import Footer from '../components/Footer'
 import SimpleLink from '../components/SimpleLink'
 import ModalTermsAndConditions from '../components/pages/ambassadors/ModalTermsAndConditions'
-import { useEffect, useState } from 'react'
 
-interface HackathonPageProps extends PageProps {
+interface AmbassadorsPageProps extends PageProps {
   data: {
     ambassadors: {
       nodes: {
         frontmatter: {
           headerLandingSection: AmbassadorsLandingSectionContentType
           introSection: AmbassadorsIntroSectionContentType
-          hackathonInfo: AmbassadorsInfoSectionContentType
+          informations: AmbassadorsInfoSectionContentType
         }
         html: string
       }[]
@@ -35,17 +34,18 @@ interface HackathonPageProps extends PageProps {
   }
 }
 
-const IndexPage = (props: HackathonPageProps) => {
+const IndexPage = ({ location, ...props }: AmbassadorsPageProps) => {
   const pageContent = props.data.ambassadors.nodes[0].frontmatter
-  const [isModalTermsOpen, setIsModalTermsOpen] = useState(false)
 
-  const params = new URLSearchParams(props.location.search)
+  const params = new URLSearchParams(location.search)
 
-  const openTermsModal = params.get('terms') !== null
-
-  useEffect(() => {
-    if (openTermsModal) setIsModalTermsOpen(true)
-  }, [openTermsModal])
+  const setIsModalTermsOpen = (shouldOpen: boolean) => {
+    if (shouldOpen) {
+      params.set('modal', 'terms')
+      const newSearch = params.toString()
+      navigate(location.pathname + '?' + newSearch + location.hash)
+    }
+  }
 
   return (
     <ThemeProvider theme={ambassadorsTheme}>
@@ -55,13 +55,13 @@ const IndexPage = (props: HackathonPageProps) => {
         <NavigationMenuStyled />
         <AmbassadorsLandingSection content={pageContent.headerLandingSection} />
         <AmbassadorsIntroSection content={pageContent.introSection} />
-        <AmbassadorsInfoSection content={pageContent.hackathonInfo} />
+        <AmbassadorsInfoSection content={pageContent.informations} />
       </Wrapper>
       <TermsAndConditionsRibbon>
         <SimpleLink openModal={setIsModalTermsOpen}>{"Program's terms and conditions"}</SimpleLink>
       </TermsAndConditionsRibbon>
-      <ModalTermsAndConditions isOpen={isModalTermsOpen} setIsOpen={setIsModalTermsOpen} />
-      <Footer location={props.location} />
+      <ModalTermsAndConditions location={location} />
+      <Footer location={location} />
     </ThemeProvider>
   )
 }
@@ -141,82 +141,6 @@ export const pageQuery = graphql`
             title
             subtitle
             description
-          }
-          hackathonInfo {
-            participantsInfo {
-              title
-              description
-              link {
-                text
-                url
-              }
-            }
-            prerequisites {
-              title
-              description
-              skills
-              link {
-                text
-                url
-              }
-            }
-            schedule {
-              title
-              description
-              events {
-                title
-                description
-              }
-            }
-            ideasAndTracks {
-              title
-              subtitle
-              tracks {
-                title
-                description
-              }
-            }
-            prizes {
-              title
-              description
-              prizeList {
-                title
-                description
-              }
-            }
-          }
-          rulesAndJudging {
-            title
-            subtitle
-            rules {
-              title
-              description
-            }
-            criteria {
-              title
-              description
-              criteriumList {
-                title
-                description
-              }
-            }
-            jury {
-              title
-              description
-              people {
-                name
-                role
-                picture {
-                  childImageSharp {
-                    gatsbyImageData(width: 200, placeholder: BLURRED, formats: [AUTO])
-                  }
-                }
-              }
-            }
-          }
-          gettingStarted {
-            title
-            subtitle
           }
         }
         html
