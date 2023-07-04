@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { uniqBy } from 'lodash'
 
 import { deviceBreakPoints, deviceSizes } from '../styles/global-style'
@@ -8,7 +8,7 @@ export type Timeline = {
   title: string
   years: {
     year: string
-    entries: {
+    entries?: {
       order: number
       text: string
       when: string
@@ -19,9 +19,10 @@ export type Timeline = {
 
 type Props = {
   timelines: Timeline[]
+  detailed: boolean
 }
 
-const DualTimeline = (props: Props) => {
+const DualTimeline = ({ timelines, detailed }: Props) => {
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
@@ -35,14 +36,20 @@ const DualTimeline = (props: Props) => {
     return () => window.removeEventListener(...event)
   }, [setIsMobile])
 
-  return isMobile ? <DualTimelineMobile {...props} /> : <DualTimelineDesktop {...props} />
+  const filteredTimelines = detailed ? timelines : filterMajorEvents(timelines)
+
+  return isMobile ? (
+    <DualTimelineMobile timelines={filteredTimelines} detailed={detailed} />
+  ) : (
+    <DualTimelineDesktop timelines={filteredTimelines} detailed={detailed} />
+  )
 }
 
-const DualTimelineDesktop = ({ timelines }: Props) => {
+const DualTimelineDesktop = ({ timelines, detailed }: Props) => {
   const headings = timelines.map((t) => t.title)
 
   return (
-    <Container>
+    <Container detailed={detailed}>
       <Header>
         <Headings>
           {headings.map((text, index) => (
@@ -89,7 +96,7 @@ const DualTimelineDesktop = ({ timelines }: Props) => {
   )
 }
 
-const DualTimelineMobile = ({ timelines }: Props) => {
+const DualTimelineMobile = ({ timelines, detailed }: Props) => {
   const years = timelines.reduce((years, timeline, index) => {
     timeline.years.forEach(({ year, entries }) => {
       if (years[year] === undefined) {
@@ -104,7 +111,7 @@ const DualTimelineMobile = ({ timelines }: Props) => {
   const trackTitle = 'mmm'
 
   return (
-    <Container>
+    <Container detailed={detailed}>
       <LineStartsEnds isSingle starts headings={[trackTitle]} />
       {Object.entries(years).map(([year, values]) => (
         <div key={year}>
@@ -196,29 +203,73 @@ const Track = ({ forHeading, entry }) => (
   </TrackContainer>
 )
 
+const filterMajorEvents = (timelines: Timeline[]): Timeline[] =>
+  timelines.map((timeline) => ({
+    ...timeline,
+    years: timeline.years.map((year) => ({
+      ...year,
+      entries: year.entries?.filter((entry) => entry.isMajor)
+    }))
+  }))
+
 const headerHeight = 60
 const trackWidth = 90
-
-const Container = styled.div`
-  width: 100vw;
-  margin-bottom: var(--spacing-16);
-`
 
 const Text = styled.div`
   ${({ isMajor }) =>
     isMajor &&
-    `
-    background: linear-gradient(30deg, #ff9100 0%, #ff4000 20%, #b700ff 80%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-  `}
+    css`
+      background: linear-gradient(30deg, #ffc800 0%, #ff4000 40%, #e100ff 90%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+      background-attachment: fixed;
+
+      @-moz-document url-prefix() {
+        background: linear-gradient(30deg, #fff200 0%, #ffab25 40%, #ff7300 90%);
+        background-clip: text;
+        background-attachment: auto;
+      }
+    `}
 `
 
 const When = styled.div`
-  color: ${({ theme }) => theme.textTertiary};
+  color: ${({ theme }) => theme.textSecondary};
   margin-top: var(--spacing-1);
+`
+
+const Container = styled.div<{ detailed: boolean }>`
+  width: 100vw;
+  margin-bottom: var(--spacing-16);
+
+  ${Text} {
+    ${({ detailed }) =>
+      !detailed &&
+      css`
+        background: linear-gradient(30deg, #fff200 0%, #ff4000 40%, #bb00ff 90%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        background-clip: text;
+        background-attachment: fixed;
+
+        @-moz-document url-prefix() {
+          background: linear-gradient(30deg, #fff200 0%, #ffab25 40%, #ff7300 90%);
+          background-clip: text;
+          background-attachment: auto;
+        }
+      `}
+  }
+
+  ${When} {
+    ${({ detailed, theme }) =>
+      !detailed &&
+      css`
+        color: ${theme.textPrimary};
+      `}
+  }
 `
 
 const Piece = styled.div`
@@ -239,8 +290,7 @@ const Dot = styled.div`
     height: 13px;
     transform: translateY(60%);
     border-radius: 100%;
-    background: ${({ isMajor }) =>
-      isMajor ? 'linear-gradient(30deg, #ff9100 0%, #ff4000 20%, #b700ff 80%)' : 'white'};
+    background: ${({ isMajor, theme }) => (isMajor ? theme.textPrimary : theme.textTertiary)};
     border: 3px solid black;
     position: absolute;
     content: '';

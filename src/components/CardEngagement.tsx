@@ -85,6 +85,14 @@ const CardEngagement: FC<CardEngagementProps> = ({
 const MotionContainer = styled(motion.div)`
   display: flex;
   position: relative;
+  max-width: 500px;
+  min-width: 300px;
+
+  @media ${deviceBreakPoints.mobile} {
+    flex: 1;
+    max-width: auto;
+    min-width: auto;
+  }
 `
 
 const SimpleLinkStyled = styled(SimpleLink)`

@@ -1,6 +1,6 @@
 import { HTMLMotionProps, motion } from 'framer-motion'
 import { Link } from 'gatsby'
-import { createElement, ReactNode } from 'react'
+import { ReactNode } from 'react'
 import styled, { css } from 'styled-components'
 import { RiLink } from 'react-icons/ri'
 

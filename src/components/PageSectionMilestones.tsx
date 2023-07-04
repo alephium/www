@@ -2,6 +2,8 @@ import styled from 'styled-components'
 
 import SectionTextHeader from './SectionTextHeader'
 import DualTimeline, { Timeline } from './DualTimeline'
+import Toggle from '../Toggle'
+import { useState } from 'react'
 
 export type PageSectionMilestonesContentType = {
   title: string
@@ -13,14 +15,25 @@ interface Props {
   content: PageSectionMilestonesContentType
 }
 
-const PageSectionMilestones = ({ content: { title, subtitle, timelines } }: Props) => (
-  <SectionWrapper>
-    <StyledSectionTextHeader id="milestones" title={title} subtitle={subtitle} bigSubtitle bigText sticky centered />
-    <Centered>
-      <DualTimeline timelines={timelines} />
-    </Centered>
-  </SectionWrapper>
-)
+const PageSectionMilestones = ({ content: { title, subtitle, timelines } }: Props) => {
+  const [showDetails, setShowDetails] = useState(false)
+
+  const handleShowDetailsToggle = () => setShowDetails((p) => !p)
+
+  return (
+    <SectionWrapper>
+      <StyledSectionTextHeader id="milestones" title={title} subtitle={subtitle} bigSubtitle bigText sticky centered />
+      <ToggleSection>
+        <ToggleLabel>Summarized</ToggleLabel>
+        <Toggle toggled={showDetails} onToggle={handleShowDetailsToggle} />
+        <ToggleLabel>Detailed</ToggleLabel>
+      </ToggleSection>
+      <Centered>
+        <DualTimeline timelines={timelines} detailed={showDetails} />
+      </Centered>
+    </SectionWrapper>
+  )
+}
 
 export default PageSectionMilestones
 
@@ -36,5 +49,18 @@ const Centered = styled.div`
 
 const StyledSectionTextHeader = styled(SectionTextHeader)`
   background-color: ${({ theme }) => theme.bgTertiary};
-  margin-bottom: var(--spacing-16);
+
+  margin-bottom: var(--spacing-8);
+`
+
+const ToggleSection = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: var(--spacing-8);
+`
+
+const ToggleLabel = styled.span`
+  color: ${({ theme }) => theme.textPrimary};
 `

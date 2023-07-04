@@ -25,12 +25,7 @@ const NavigationMenu = ({ className }: NavigationMenuProps) => (
       <NavLink className="nav-item" url="https://explorer.alephium.org/" newTab trackingName="main-nav:explorer-link">
         Explorer
       </NavLink>
-      <NavLink
-        className="nav-item"
-        url="https://github.com/alephium/desktop-wallet/releases/latest/"
-        newTab
-        trackingName="main-nav:download-wallet-link"
-      >
+      <NavLink className="nav-item" url="#wallets" trackingName="main-nav:download-wallet-link">
         Get the wallet
       </NavLink>
       <NavLink

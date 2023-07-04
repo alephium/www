@@ -7,7 +7,7 @@ import { darkTheme } from '../styles/themes'
 import Seo from '../components/Seo'
 import PageSectionHero, { PageSectionHeroContentType } from '../components/PageSectionHero'
 import PageSectionIntro, { PageSectionIntroContentType } from '../components/PageSectionIntro'
-import PageSectionEcosystem from '../components/PageSectionEcosystem'
+import PageSectionEcosystem, { PageSectionEcosystemContentType } from '../components/PageSectionEcosystem'
 import PageSectionTechnology, { PageSectionTechnologyContentType } from '../components/PageSectionTechnology'
 import PageSectionNumbers, { PageSectionNumbersContentType } from '../components/PageSectionNumbers'
 import PageSectionMilestones, { PageSectionMilestonesContentType } from '../components/PageSectionMilestones'
@@ -16,6 +16,7 @@ import PageSectionFollowUs, { PageSectionFollowUsContentType } from '../componen
 import Footer, { FooterContentType } from '../components/Footer'
 import PageSectionShop, { PageSectionShopContentType } from '../components/PageSectionShop'
 import SectionDivider from '../components/SectionDivider'
+import PageSectionWallets, { PageSectionWalletsContentType } from '../components/PageSectionWallets'
 
 interface IndexPageProps extends PageProps {
   data: {
@@ -26,6 +27,8 @@ interface IndexPageProps extends PageProps {
           introSection: PageSectionIntroContentType
           technologySection: PageSectionTechnologyContentType
           numbersSection: PageSectionNumbersContentType
+          ecosystemSection: PageSectionEcosystemContentType
+          walletsSection: PageSectionWalletsContentType
           milestonesSection: PageSectionMilestonesContentType
           todoListSection: PageSectionTodoListContentType
           shopSection: PageSectionShopContentType
@@ -57,7 +60,9 @@ const IndexPage = (props: IndexPageProps) => {
           <PageSectionTechnology content={pageContent.technologySection} minimal />
           <PageSectionNumbers content={pageContent.numbersSection} />
           <SectionDivider />
-          <PageSectionEcosystem />
+          <PageSectionWallets content={pageContent.walletsSection} />
+          <SectionDivider />
+          <PageSectionEcosystem content={pageContent.ecosystemSection} />
         </ThemeProvider>
         <ThemeProvider theme={darkTheme}>
           <SectionDivider />
@@ -112,9 +117,15 @@ export const pageQuery = graphql`
             subsections {
               title
               description
+              image {
+                publicURL
+              }
               items {
                 title
                 url
+                logo {
+                  publicURL
+                }
               }
             }
           }
@@ -159,6 +170,24 @@ export const pageQuery = graphql`
           numbersSection {
             title
             subtitle
+          }
+          walletsSection {
+            title
+            subtitle
+            description
+            wallets {
+              title
+              description
+              screenshot {
+                publicURL
+              }
+              color
+              actions {
+                title
+                link
+                disabled
+              }
+            }
           }
           milestonesSection {
             title
