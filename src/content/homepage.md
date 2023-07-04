@@ -109,9 +109,6 @@ ecosystemSection:
         - title: 'Dappnode'
           logo: '../images/logos/Dappnode-logo-bw.png'
           url: https://dappnode.io
-        - title: 'Ergo'
-          logo: '../images/svgs/Ergo_logo2022.svg'
-          url: https://ergoplatform.org/
         - title: 'Flux Labs'
           logo: '../images/svgs/flux-seeklogo.com.svg'
           url: https://runonflux.io/fluxlabs.html
@@ -160,6 +157,9 @@ ecosystemSection:
         - title: 'EnigmaPool'
           logo: ''
           url: https://enigmapool.com/
+        - title: 'Sahhar Wallet'
+          logo: ''
+          url: https://github.com/sahharYoucef/alephium_wallet
 milestonesSection:
   title: Completed milestones
   subtitle: Building every day
