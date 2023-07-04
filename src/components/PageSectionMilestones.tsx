@@ -24,7 +24,7 @@ const PageSectionMilestones = ({ content: { title, subtitle, timelines } }: Prop
     <SectionWrapper>
       <StyledSectionTextHeader id="milestones" title={title} subtitle={subtitle} bigSubtitle bigText sticky centered />
       <ToggleSection>
-        <ToggleLabel>Simple</ToggleLabel>
+        <ToggleLabel>Summarized</ToggleLabel>
         <Toggle toggled={showDetails} onToggle={handleShowDetailsToggle} />
         <ToggleLabel>Detailed</ToggleLabel>
       </ToggleSection>
