@@ -119,6 +119,16 @@ const TodoItems = styled(motion.div)<Alignment>`
   }
 `
 
+const TodoLabel = styled.div`
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  padding: 4px 6px;
+  border-radius: 30px;
+  font-size: 11px;
+  opacity: 0.3;
+`
+
 const TodoItem = styled(motion.div)`
   display: flex;
   flex-direction: column;
@@ -133,20 +143,16 @@ const TodoItem = styled(motion.div)`
   border: 1px solid ${({ theme }) => theme.borderPrimary};
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 
+  &:hover {
+    ${TodoLabel} {
+      opacity: 0.8;
+    }
+  }
+
   @media ${deviceBreakPoints.mobile} {
     flex: 1;
     width: auto;
   }
-`
-
-const TodoLabel = styled.div`
-  position: absolute;
-  bottom: 2px;
-  right: 2px;
-  padding: 4px 6px;
-  border-radius: 30px;
-  font-size: 11px;
-  opacity: 0.4;
 `
 
 const TodoStateIcon = styled.div`
