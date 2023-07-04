@@ -295,6 +295,12 @@ milestonesSection:
             - order: 7
               text: Reached over 265 community contributions
               when: '12.2022'
+        - year: 2023
+          entries:
+            - order: 2
+              text: 'Bitmart Listing'
+              when: '04.2023'
+              isMajor: true
 todoListSection:
   title: What's next
   subtitle: Building an exciting future
