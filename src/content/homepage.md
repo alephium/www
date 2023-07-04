@@ -303,57 +303,46 @@ todoListSection:
       items:
         - text: 'Mobile wallet (Android and iOS)'
           label: Launch
-        - text: 'Alephium’s Bridge Launch on Testnet'
+        - text: 'Alephium’s Bridge Launch'
           label: Launch
-        - text: 'Alephium’s Bridge Launch on Mainnet'
+        - text: 'Library of dApps prototypes'
           label: Launch
-        - text: 'Support streaming for blockchain events (tx, block, contract events)'
-          label: Feature & UX
-        - text: 'Typescript SDK for off-chain transaction encoding/decoding'
-          label: Feature & Security
-        - text: 'P2P transaction endpoints and SDKs'
-          label: Feature
         - text: 'Introduce AIP for Alephium Improvement Proposals'
           label: Community
-        - text: 'Improved web3 SDK with better DevX and more functionality'
+        - text: 'Improved web3 SDK with better DevX and more functionalities'
           label: Improvement
         - text: 'Multisig support in SDK and wallets'
           label: Feature
         - text: 'Standard for transaction information display on the wallet'
           label: Security
-        - text: 'Improved full node’s database system for better performance'
-          label: Improvement
-        - text: 'Better error system for the full node and its endpoints'
-          label: DevX & UX
         - text: 'Smart contracts support in the Explorer'
           label: Feature
-        - text: 'Enhanced UX and additional features for the Browser Wallet Extension'
-          label: Improvement
-        - text: 'Improved NFT standard and prototype'
-          label: Improvement
-        - text: 'Additional dApps prototypes'
-          label: Launch
-        - text: 'Better development experience and additional functionalities for the Ralph language'
+        - text: 'Better DevX and more functionalities for the Ralph language'
           label: DevX
-        - text: 'Continuous improvement of the documentation'
-          label: Improvement
         - text: 'Design and implement light node'
           label: Feature
     - title: Ecosystem
       items:
-        - text: CEX listing
-        - text: Launch of 3rd party dApps (NFT, DEX, stablecoin, Alephium Name Services, oracle, etc) on Alephium
-        - text: Ledger wallet integration
-        - text: Additional bridges to other ecosystems
-        - text: Introduction videos & articles for building dApps on Alephium
-        - text: Integration with 3rd party wallets
-        - text: First Alephium Hackathon
-        - text: Grant program & Development Bounties V2
-        - text: Improve developers' onboarding experience
         - text: Launch of the Ambassador program
-        - text: Building-up community engagement
+          label: Grants
+        - text: Grant program & Development Bounties V2
+          label: Grants
+        - text: First Alephium Hackathon
+          label: Community
+        - text: CEX listing
+          label: Exchanges
+        - text: Integration with 3rd party wallets
+          label: Ecosystem
+        - text: Additional bridges to other ecosystems
+          label: Ecosystem
+        - text: Launch of 3rd party dApps (NFT, DEX, stablecoin, Alephium Name Services, oracle, etc) on Alephium
+          label: Ecosystem
         - text: Additional marketing, partnership, and knowledge-sharing initiatives with like-minded communities and projects.
+          label: Marketing
+        - text: Ledger wallet integration
+          label: Ecosystem
         - text: Website revamp
+          label: Marketing
 shopSection:
   title: SWALPH
   subtitle: Decentralized SWAG 🤘

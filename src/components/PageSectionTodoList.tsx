@@ -84,10 +84,10 @@ const BackdropStars = styled.div`
 
 const TodoLists = styled(motion.div)`
   display: flex;
-  gap: 100px;
+  gap: min(10vw, 100px);
   margin-top: 70px;
 
-  @media ${deviceBreakPoints.mobile} {
+  @media ${deviceBreakPoints.smallMobile} {
     flex-direction: column;
     align-items: center;
     gap: 70px;
@@ -116,15 +116,18 @@ const TodoItems = styled(motion.div)<Alignment>`
   justify-content: ${({ $alignRight }) => ($alignRight ? 'right' : 'left')};
 
   @media ${deviceBreakPoints.mobile} {
-    justify-content: center;
   }
 `
 
 const TodoItem = styled(motion.div)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
   width: calc(50% - 30px - 20px);
   min-width: 199px;
   padding: 15px;
+  padding-bottom: 30px;
   background-color: ${({ theme }) => theme.bgPrimary};
   border-radius: 12px;
   border: 1px solid ${({ theme }) => theme.borderPrimary};
@@ -132,16 +135,18 @@ const TodoItem = styled(motion.div)`
 
   @media ${deviceBreakPoints.mobile} {
     flex: 1;
+    width: auto;
   }
 `
 
 const TodoLabel = styled.div`
-  display: inline-block;
-  padding: 6px;
-  border-radius: 7px;
-  background-color: ${({ theme }) => theme.bgSecondary};
-  margin-left: -4px;
-  margin-bottom: 15px;
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  padding: 4px 6px;
+  border-radius: 30px;
+  font-size: 11px;
+  opacity: 0.4;
 `
 
 const TodoStateIcon = styled.div`
