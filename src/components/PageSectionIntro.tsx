@@ -97,15 +97,11 @@ const IntroColumns = styled(Columns)`
 
 const IntroColumnContent = styled(motion.div)`
   margin-top: var(--spacing-6);
-  display: grid;
-  grid-template-columns: minmax(150px, 50%) minmax(150px, 50%);
-  grid-template-rows: 324px;
-  column-gap: 30px;
-  row-gap: 30px;
+  display: flex;
+  gap: 30px;
 
   @media ${deviceBreakPoints.mobile} {
-    flex-direction: column;
-    grid-template-columns: 100%;
+    flex-wrap: wrap;
   }
 `
 

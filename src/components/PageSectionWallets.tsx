@@ -89,7 +89,13 @@ const WalletCard = ({
       </WalletTextContainer>
       <WalletActions>
         {actions.map((a) => (
-          <ActionButton key={a.title} url={a.link} newTab disabled={a.disabled}>
+          <ActionButton
+            key={a.title}
+            url={a.link}
+            newTab
+            disabled={a.disabled}
+            trackingName={`wallets-section:${a.title}-link`}
+          >
             {a.title}
           </ActionButton>
         ))}

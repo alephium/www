@@ -10,29 +10,23 @@ introSection:
   title: Start
   subtitle: Begin your Alephium journey
   cards:
-    - title: Download the wallet
-      image: ../images/wallet.svg
-      description: 'Securely store and transfer your ALPH. Connect to dApps and start leveraging the Alephium ecosystem.'
+    - title: Start Building
+      image: ../images/code.svg
+      description: 'Start building your own smart contracts, decentralized apps, and protocols.'
       link:
-        url: https://github.com/alephium/desktop-wallet/releases/latest/
+        url: https://docs.alephium.org/dapps/getting-started/
+        newTab: true
+    - title: Start Contributing
+      image: ../images/coins.svg
+      description: 'Apply for a grant to develop your own project on Alephium. Receive rewards for contributing to any initiatives bringing value to the project.'
+      link:
+        url: https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md
         newTab: true
     - title: Start Mining
       image: ../images/mining.svg
       description: 'Start mining to contribute to the network security and receive ALPH rewards.'
       link:
         url: https://docs.alephium.org/mining/solo-mining-guide/
-        newTab: true
-    - title: Build your own
-      image: ../images/code.svg
-      description: 'Start building your own smart contracts, decentralized apps, and protocols.'
-      link:
-        url: https://docs.alephium.org/dapps/getting-started/
-        newTab: true
-    - title: Get rewarded
-      image: ../images/coins.svg
-      description: 'Apply for a grant to develop your own project on Alephium. Receive rewards for contributing to any initiatives bringing value to the project.'
-      link:
-        url: https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md
         newTab: true
 technologySection:
   title: Technology
@@ -71,11 +65,11 @@ numbersSection:
   subtitle: "We're passionate in our work and committed to outstanding quality and measurable results. Here are some of our numbers."
 walletsSection:
   title: The wallets
-  subtitle: Designed for normal humans
-  description: "We only get one chance to make a first impression. The wallets are built with the user in mind, making Alephium's technology accessible for all."
+  subtitle: Designed for humans
+  description: 'The wallets are designed for ease-of-use, to make Alephium’s technology accessible for all.'
   wallets:
     - title: Desktop wallet 🖥️
-      description: "Alephium's most accessible wallet. Ready for everything, from daily management tasks to DeFi."
+      description: 'Alephium’s flagship wallet. Ready for everything, from daily management tasks to smart contracts deployment, privacy & DeFi.'
       screenshot: ../images/screenshots/desktop-wallet.png
       color: 'rgb(153, 0, 255)'
       actions:
