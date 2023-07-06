@@ -42,12 +42,12 @@ const PageSectionWallets = ({ content: { title, subtitle, description, wallets }
       ))}
     </WalletCards>
     <ParallaxBackground>
-      <GradientBubble speed={-10} positionPercentage={[5, 5]} scale={2} blur={10} />
-      <GradientBubble speed={-5} positionPercentage={[0, 20]} scale={1} blur={10} />
-      <GradientBubble speed={-20} positionPercentage={[80, 30]} scale={2} blur={15} />
-      <GradientBubble speed={-2} positionPercentage={[90, 80]} scale={2} blur={10} />
-      <GradientBubble speed={30} positionPercentage={[80, 10]} scale={6} blur={20} />
-      <GradientBubble speed={20} positionPercentage={[0, 90]} scale={6} blur={20} />
+      <GradientBubble speed={-10} positionPercentage={[5, 5]} scale={2} blur={10} gradientVariant={2} />
+      <GradientBubble speed={-5} positionPercentage={[0, 20]} scale={1} blur={10} gradientVariant={1} />
+      <GradientBubble speed={-20} positionPercentage={[80, 30]} scale={2} blur={15} gradientVariant={4} />
+      <GradientBubble speed={-2} positionPercentage={[90, 80]} scale={2} blur={10} gradientVariant={3} />
+      <GradientBubble speed={30} positionPercentage={[80, 10]} scale={6} blur={20} gradientVariant={1} />
+      <GradientBubble speed={20} positionPercentage={[0, 90]} scale={6} blur={20} gradientVariant={0} />
     </ParallaxBackground>
   </SectionWrapper>
 )
