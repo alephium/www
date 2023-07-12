@@ -74,7 +74,6 @@ const Toggle = ({ toggled, onToggle, className, disabled, ToggleIcons, handleCol
       aria-checked={toggled}
       role="checkbox"
       tabIndex={0}
-      toggled={toggled}
       variants={toggleBackgroundVariants}
       animate={toggleState}
       transition={transition}
@@ -99,7 +98,7 @@ const Toggle = ({ toggled, onToggle, className, disabled, ToggleIcons, handleCol
 
 export default Toggle
 
-export const StyledToggle = styled(motion.div)<Omit<ToggleProps, 'onToggle'>>`
+export const StyledToggle = styled(motion.div)<Omit<ToggleProps, 'onToggle' | 'toggled'>>`
   position: relative;
   display: flex;
   align-items: center;
