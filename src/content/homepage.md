@@ -1,8 +1,8 @@
 ---
 headerSection:
   dark:
-    title: Scalable for devs. Secure for users. Decentralized for all.
-    subtitle: 'Innovative sharding meets expressive sUTXO and efficient Proof-of-Less-Work to secure scalable dApps for real-world use cases.'
+    title: A new paradigm
+    subtitle: 'Alephium is the first operational sharded L1 blockchain scaling and enhancing PoW & UTXO concepts. Decentralization, self-sovereignty, and security meet high-performance, accessibility, and energy efficiency in a dev-friendly network optimized for DeFi & smart contract applications.'
   light:
     title: Accessibility & Usability
     subtitle: 'From its technical design to its interfaces, Alephium has been created to address the challenges of accessibility, scalability, and security encountered by decentralized applications today.'
