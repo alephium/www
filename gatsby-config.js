@@ -74,10 +74,11 @@ module.exports = {
         mergeStyleHashes: false,
         directives: {
           'style-src': "'self' 'unsafe-inline'",
-          'script-src': "'self' 'unsafe-inline' https://gc.zgo.at",
+          'script-src': "'self' 'unsafe-inline' 'unsafe-eval' https://gc.zgo.at https://prod.spline.design",
           'default-src': "'none'",
           'manifest-src': "'self'",
-          'connect-src': "'self' mainnet-backend.alephium.org api.github.com alephium.goatcounter.com",
+          'connect-src':
+            "'self' mainnet-backend.alephium.org api.github.com alephium.goatcounter.com https://prod.spline.design",
           'img-src': "'self' data: https://alephium.goatcounter.com"
         }
       }

@@ -5,7 +5,6 @@ import { darkTheme } from '../styles/themes'
 import { deviceBreakPoints } from '../styles/global-style'
 
 import NavigationMenu from './NavigationMenu'
-import HeroContentWrapper from './Hero/HeroContentWrapper'
 import HeroPageSectionContainer from './Hero/HeroPageSectionContainer'
 
 import Arrow from '../images/svgs/arrow-right.svg'
