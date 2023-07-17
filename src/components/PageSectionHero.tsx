@@ -9,7 +9,8 @@ import HeroContentWrapper from './Hero/HeroContentWrapper'
 import HeroPageSectionContainer from './Hero/HeroPageSectionContainer'
 
 import Arrow from '../images/svgs/arrow-right.svg'
-import HeroLogo from './Hero/HeroLogo'
+
+import Spline from '@splinetool/react-spline'
 
 export interface PageSectionHeroContentType {
   dark: {
@@ -41,24 +42,23 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
             <NavigationMenu />
           </div>
           <HeroContentWrapper>
-            <div className="contents">
-              <>
-                <HeroLogoStyled gradientIndex={slide} />
-
-                <Title>{`Scalable for devs.
+            <TextContent>
+              <Title>{`Scalable for devs.
 Secure for users.
 Decentralized for all.`}</Title>
-                <Separator />
-                <Boilerplate>{themeContent.subtitle}</Boilerplate>
-                <a
-                  href="#intro"
-                  aria-label="Scroll to the intro section"
-                  data-goatcounter-click="hero-section:arrow-down"
-                >
-                  <ArrowDown />
-                </a>
-              </>
-            </div>
+              <Separator />
+              <Boilerplate>{themeContent.subtitle}</Boilerplate>
+              <a
+                href="#intro"
+                aria-label="Scroll to the intro section"
+                data-goatcounter-click="hero-section:arrow-down"
+              >
+                <ArrowDown />
+              </a>
+            </TextContent>
+            <LogoContainer>
+              <Spline scene="https://prod.spline.design/NqiuAD2RdAocCcLo/scene.splinecode" />
+            </LogoContainer>
           </HeroContentWrapper>
         </HeroPageSectionContainer>
       </PageSectionHeroStyled>
@@ -106,8 +106,14 @@ const PageSectionHeroStyled = styled.section`
   }
 `
 
-const HeroLogoStyled = styled(HeroLogo)`
-  height: 100px;
+const TextContent = styled.div`
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+`
+
+const LogoContainer = styled.div`
+  flex: 1;
 `
 
 const Boilerplate = styled.span`

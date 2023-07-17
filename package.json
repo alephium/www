@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "@alephium/sdk": "^0.3.0",
+    "@splinetool/react-spline": "^2.2.6",
     "babel-eslint": "^10.1.0",
     "babel-plugin-styled-components": "^2.0.2",
     "babel-preset-gatsby": "^3.1.0",
