@@ -1,19 +1,14 @@
-import { FC, useRef, useState } from 'react'
-import styled, { ThemeProvider } from 'styled-components'
+import { FC, useRef } from 'react'
+import styled, { css, ThemeProvider } from 'styled-components'
 
 import { darkTheme } from '../styles/themes'
 import { deviceBreakPoints } from '../styles/global-style'
 
 import NavigationMenu from './NavigationMenu'
-import TextSnippet from './TextSnippet'
-import Paginator from './Paginator'
-import HeroSlider from './Hero/HeroSlider'
-import HeroSection from './Hero/HeroSection'
 import HeroContentWrapper from './Hero/HeroContentWrapper'
 import HeroPageSectionContainer from './Hero/HeroPageSectionContainer'
 
 import Arrow from '../images/svgs/arrow-right.svg'
-import HeroImage from './Hero/HeroImage'
 import HeroLogo from './Hero/HeroLogo'
 
 export interface PageSectionHeroContentType {
@@ -33,70 +28,94 @@ interface PageSectionHeroProps {
 }
 
 const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
-  const [slide, setSlide] = useState<number>(0)
-  const [isPaused, setIsPaused] = useState(false)
-
   const innerRef = useRef<HTMLElement>(null)
-  const themeContent = slide === 0 ? content.dark : content.light
+  const slide = 0
 
-  const toggleSlide = () => {
-    setSlide(slide === 0 ? 1 : 0)
-  }
-
-  const onSwipe = () => {
-    setSlide(slide === 0 ? 1 : 0)
-  }
-
-  const handlePauseToggle = () => setIsPaused((p) => !p)
+  const themeContent = content.dark
 
   return (
     <ThemeProvider theme={darkTheme}>
-      <HeroSlider heroElementRef={innerRef} onSwipe={onSwipe} shouldAutoSwipe={!isPaused}>
-        <HeroSection className={className} ref={innerRef}>
-          <HeroImage layer="back" slide={slide} parallaxSpeed={12} />
-          <HeroImage layer="middle" slide={slide} parallaxSpeed={8} />
-          <HeroImage layer="front" slide={slide} parallaxSpeed={2} />
-          <HeroPageSectionContainer>
-            <div className="navigation-menu-wrapper">
-              <NavigationMenu />
-            </div>
-            <HeroContentWrapper>
-              <div className="contents">
-                <>
-                  <HeroLogo gradientIndex={slide} />
+      <PageSectionHeroStyled className={className} ref={innerRef}>
+        <HeroPageSectionContainer>
+          <div className="navigation-menu-wrapper">
+            <NavigationMenu />
+          </div>
+          <HeroContentWrapper>
+            <div className="contents">
+              <>
+                <HeroLogoStyled gradientIndex={slide} />
 
-                  <h1>{themeContent.title}</h1>
-                  <TextSnippetStyled bigText>{themeContent.subtitle}</TextSnippetStyled>
-                  <PaginatorStyled
-                    onPageClick={toggleSlide}
-                    currentPage={slide}
-                    setCurrentPage={setSlide}
-                    isPaused={isPaused}
-                    onTogglePause={handlePauseToggle}
-                  />
-                  <a
-                    href="#intro"
-                    aria-label="Scroll to the intro section"
-                    data-goatcounter-click="hero-section:arrow-down"
-                  >
-                    <ArrowDown />
-                  </a>
-                </>
-              </div>
-            </HeroContentWrapper>
-          </HeroPageSectionContainer>
-        </HeroSection>
-      </HeroSlider>
+                <Title>{`Scalable for devs.
+Secure for users.
+Decentralized for all.`}</Title>
+                <Separator />
+                <Boilerplate>{themeContent.subtitle}</Boilerplate>
+                <a
+                  href="#intro"
+                  aria-label="Scroll to the intro section"
+                  data-goatcounter-click="hero-section:arrow-down"
+                >
+                  <ArrowDown />
+                </a>
+              </>
+            </div>
+          </HeroContentWrapper>
+        </HeroPageSectionContainer>
+      </PageSectionHeroStyled>
     </ThemeProvider>
   )
 }
 
-const TextSnippetStyled = styled(TextSnippet)`
-  max-width: var(--width-564);
-  color: ${({ theme }) => theme.textTertiary};
+const PageSectionHeroStyled = styled.section`
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  ${({ theme }) => css`
+    background: linear-gradient(black 0%, black 40%, ${theme.bgSecondary}) 100%;
+  `};
+  transition: all 0.4s ease-in;
+  display: flex;
 
-  // Fixing the height to 4 lines of text helps provide a smooth transition when the text is updated
-  height: calc(var(--lineHeight-26) * 4);
+  .navigation-menu-wrapper {
+    position: relative;
+    z-index: 1;
+  }
+
+  h1 {
+    font-size: var(--fontSize-70);
+    color: ${({ theme }) => theme.textPrimary};
+    font-weight: var(--fontWeight-semiBold);
+
+    @media ${deviceBreakPoints.smallMobile} {
+      font-size: var(--fontSize-36);
+    }
+  }
+
+  .contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    z-index: 1;
+
+    .text-content {
+      @media ${deviceBreakPoints.mobile} {
+        color: ${({ theme }) => theme.textPrimary};
+      }
+    }
+  }
+`
+
+const HeroLogoStyled = styled(HeroLogo)`
+  height: 100px;
+`
+
+const Boilerplate = styled.span`
+  max-width: var(--width-564);
+  color: ${({ theme }) => theme.textSecondary};
+  font-size: 24px;
+  font-weight: 200;
+  margin-bottom: var(--spacing-8);
 
   @media ${deviceBreakPoints.smallMobile} {
     height: calc(var(--lineHeight-26) * 8);
@@ -113,13 +132,16 @@ const ArrowDown = styled(Arrow)`
   }
 `
 
-const PaginatorStyled = styled(Paginator)`
-  margin-top: var(--spacing-11);
-  margin-bottom: var(--spacing-11);
+const Title = styled.h1`
+  font-size: 50px !important;
+  white-space: pre-wrap;
+`
 
-  @media ${deviceBreakPoints.smallMobile} {
-    margin-top: var(--spacing-5);
-  }
+const Separator = styled.div`
+  width: 60px;
+  height: 4px;
+  background-color: ${({ theme }) => theme.textPrimary};
+  margin-bottom: var(--spacing-4);
 `
 
 export default PageSectionHero
