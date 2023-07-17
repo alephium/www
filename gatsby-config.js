@@ -79,7 +79,8 @@ module.exports = {
           'manifest-src': "'self'",
           'connect-src':
             "'self' mainnet-backend.alephium.org api.github.com alephium.goatcounter.com https://prod.spline.design",
-          'img-src': "'self' data: https://alephium.goatcounter.com https://prod.spline.design"
+          'img-src':
+            "'self' https://prod.spline.design data: https://alephium.goatcounter.com blob: https://www2.alephium.org blob: https://www.alephium.org"
         }
       }
     }
