@@ -159,7 +159,7 @@ const ArrowDown = styled(Arrow)`
 
 const Title = styled.h1`
   white-space: pre-wrap;
-  font-size: 56px;
+  font-size: 52px;
   color: ${({ theme }) => theme.textPrimary};
   font-weight: var(--fontWeight-semiBold);
 
