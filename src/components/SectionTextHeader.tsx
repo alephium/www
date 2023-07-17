@@ -94,7 +94,7 @@ export default styled(SectionTextHeader)`
 
   h2 {
     color: ${({ theme }) => theme.textPrimary};
-    font-weight: var(--fontWeight-semiBold);
+    font-weight: var(--fontWeight-medium);
     margin: 0;
 
     & + div {

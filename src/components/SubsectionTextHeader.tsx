@@ -17,9 +17,10 @@ const SubsectionTextHeader = ({ title, subtitle, bigTitle, className }: Subsecti
 )
 
 export default styled(SubsectionTextHeader)`
-  max-width: ${({ condensed }) => (condensed ? 'var(--width-476)' : 'none')};}
+  max-width: ${({ condensed }) => (condensed ? 'var(--width-476)' : 'none')};
 
   h3 {
+    font-weight: var(--fontWeight-medium);
     margin-bottom: var(--spacing-2);
     color: ${({ theme }) => theme.textPrimary};
 

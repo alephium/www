@@ -117,6 +117,17 @@ const TextContent = styled.div`
   pointer-events: none;
 `
 
+const Title = styled.h1`
+  white-space: pre-wrap;
+  font-size: 54px;
+  color: ${({ theme }) => theme.textPrimary};
+  font-weight: var(--fontWeight-medium);
+
+  @media ${deviceBreakPoints.smallMobile} {
+    font-size: 32px !important;
+  }
+`
+
 const ThreeDimensionSceneContainer = styled.div`
   position: absolute;
   top: 0;
@@ -154,17 +165,6 @@ const ArrowDown = styled(Arrow)`
 
   @media ${deviceBreakPoints.smallMobile} {
     margin-top: var(--spacing-5);
-  }
-`
-
-const Title = styled.h1`
-  white-space: pre-wrap;
-  font-size: 52px;
-  color: ${({ theme }) => theme.textPrimary};
-  font-weight: var(--fontWeight-semiBold);
-
-  @media ${deviceBreakPoints.smallMobile} {
-    font-size: 32px !important;
   }
 `
 

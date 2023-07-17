@@ -89,7 +89,7 @@ const PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, cont
       <GradientContainer>
         <TopGradient style={{ scaleY: gradientYScale, width: gradientYWidth, transformOrigin: 'top' }} />
       </GradientContainer>
-      <SectionTextHeaderStyled title={content.title} subtitle={content.subtitle} centered bigSubtitle sticky />
+      <SectionTextHeaderStyled title={content.title} subtitle={content.subtitle} centered bigSubtitle />
       <TechSection>
         <PageSectionContainer>
           <Columns {...columnsProps}>

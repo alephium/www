@@ -16,7 +16,7 @@ const NumbersInfo: FC<NumbersInfoProps> = ({ value, isLoading, description, clas
 )
 
 export default styled(NumbersInfo)`
-  font-weight: var(--fontWeight-semiBold);
+  font-weight: var(--fontWeight-medium);
   color: ${({ theme }) => theme.textPrimaryVariation};
 
   .number {

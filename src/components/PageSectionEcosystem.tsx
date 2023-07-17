@@ -32,7 +32,7 @@ interface PageSectionEcosystemProps {
 
 const PageSectionEcosystem = ({ content: { title, subtitle, subsections }, className }: PageSectionEcosystemProps) => (
   <section className={className}>
-    <SectionTextHeader title={title} subtitle={subtitle} bigSubtitle bigText sticky />
+    <SectionTextHeader title={title} subtitle={subtitle} bigSubtitle bigText />
     <SectionContainer>
       <Subsections>
         {subsections.map(({ title, description, image, items }) => (
@@ -155,7 +155,7 @@ const SubsectionItems = styled(motion.div)`
 `
 
 const SubsectionItemTitle = styled.div`
-  font-weight: var(--fontWeight-semiBold);
+  font-weight: var(--fontWeight-medium);
   display: flex;
   align-items: center;
   justify-content: center;

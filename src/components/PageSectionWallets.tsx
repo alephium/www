@@ -32,7 +32,7 @@ interface PageSectionTechnologyProps {
 
 const PageSectionWallets = ({ content: { title, subtitle, description, wallets } }: PageSectionTechnologyProps) => (
   <SectionWrapper>
-    <StyledSectionTextHeader id="wallets" title={title} subtitle={subtitle} bigSubtitle bigText sticky centered />
+    <StyledSectionTextHeader id="wallets" title={title} subtitle={subtitle} bigSubtitle bigText centered />
     <CenteredDescription>
       <span>{description}</span>
     </CenteredDescription>
