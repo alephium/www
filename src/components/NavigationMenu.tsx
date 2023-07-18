@@ -14,7 +14,7 @@ interface NavigationMenuProps {
   className?: string
 }
 
-const detachScrollValue = 70
+const detachScrollValue = 150
 
 const NavigationMenu = ({ className }: NavigationMenuProps) => {
   const { scrollY } = useScroll()
@@ -36,7 +36,7 @@ const NavigationMenu = ({ className }: NavigationMenuProps) => {
           y: isDetached ? 30 : 0,
           backgroundColor: isDetached ? 'rgba(30, 30, 30, 0.6)' : 'rgba(30, 30, 30, 0)'
         }}
-        transition={{ damping: 500 }}
+        transition={{ type: 'spring', stiffness: 200, damping: 50 }}
       >
         <div className="nav-item">
           <LinkStyled to="/" title="Go to homepage">
