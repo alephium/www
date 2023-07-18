@@ -9,6 +9,7 @@ import HeroPageSectionContainer from './Hero/HeroPageSectionContainer'
 import Arrow from '../images/svgs/arrow-right.svg'
 
 import Spline from '@splinetool/react-spline'
+import { motion } from 'framer-motion'
 
 export interface PageSectionHeroContentType {
   dark: {
@@ -37,9 +38,38 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
         <HeroPageSectionContainer>
           <LeftContentWrapper>
             <TextContent>
-              <Title>{`Scalable for devs.
-Secure for users.
-Decentralized for all.`}</Title>
+              <Title>
+                <div>
+                  Scalable for{' '}
+                  <motion.span
+                    initial={{ color: 'rgb(44, 208, 242)' }}
+                    animate={{ color: 'rgb(44, 146, 242)' }}
+                    transition={{ duration: 2, repeat: Infinity, repeatType: 'mirror' }}
+                  >
+                    devs.
+                  </motion.span>
+                </div>
+                <div>
+                  Secure for{' '}
+                  <motion.span
+                    initial={{ color: 'rgb(242, 160, 44)' }}
+                    animate={{ color: 'rgb(242, 94, 44)' }}
+                    transition={{ duration: 1.8, repeat: Infinity, repeatType: 'mirror' }}
+                  >
+                    users.
+                  </motion.span>
+                </div>
+                <div>
+                  Decentralized for{' '}
+                  <motion.span
+                    initial={{ color: 'rgb(248, 84, 166)' }}
+                    animate={{ color: 'rgb(242, 39, 100)' }}
+                    transition={{ duration: 2.4, repeat: Infinity, repeatType: 'mirror' }}
+                  >
+                    all.
+                  </motion.span>
+                </div>
+              </Title>
               <Separator />
               <Boilerplate>{themeContent.subtitle}</Boilerplate>
             </TextContent>
