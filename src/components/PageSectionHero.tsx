@@ -4,7 +4,6 @@ import styled, { css, ThemeProvider } from 'styled-components'
 import { darkTheme } from '../styles/themes'
 import { deviceBreakPoints } from '../styles/global-style'
 
-import NavigationMenu from './NavigationMenu'
 import HeroPageSectionContainer from './Hero/HeroPageSectionContainer'
 
 import Arrow from '../images/svgs/arrow-right.svg'
@@ -29,7 +28,6 @@ interface PageSectionHeroProps {
 
 const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
   const innerRef = useRef<HTMLElement>(null)
-  const slide = 0
 
   const themeContent = content.dark
 
@@ -101,6 +99,11 @@ const LeftContentWrapper = styled.div`
     padding: var(--spacing-4);
     top: 60%;
   }
+
+  @media ${deviceBreakPoints.smallMobile} {
+    padding: var(--spacing-4);
+    top: 65%;
+  }
 `
 
 const TextContent = styled.div`
@@ -115,6 +118,10 @@ const Title = styled.h1`
   color: ${({ theme }) => theme.textPrimary};
   font-weight: var(--fontWeight-medium);
 
+  @media ${deviceBreakPoints.mobile} {
+    font-size: 48px !important;
+  }
+
   @media ${deviceBreakPoints.smallMobile} {
     font-size: 32px !important;
   }
@@ -128,7 +135,14 @@ const ThreeDimensionSceneContainer = styled.div`
   left: 0;
   z-index: 0;
 
+  @media ${deviceBreakPoints.mobile} {
+    left: -60%;
+    top: -30%;
+    opacity: 0.5;
+  }
+
   @media ${deviceBreakPoints.smallMobile} {
+    top: -40%;
     left: -100%;
     opacity: 0.5;
   }
@@ -141,8 +155,14 @@ const Boilerplate = styled.span`
   font-weight: var(--fontWeight-light);
   margin-bottom: var(--spacing-8);
 
+  @media ${deviceBreakPoints.mobile} {
+    font-size: 26px !important;
+    margin-bottom: var(--spacing-4);
+  }
+
   @media ${deviceBreakPoints.smallMobile} {
     font-size: 22px !important;
+    margin-bottom: var(--spacing-2);
   }
 `
 
