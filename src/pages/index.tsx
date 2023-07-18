@@ -17,6 +17,7 @@ import Footer, { FooterContentType } from '../components/Footer'
 import PageSectionShop, { PageSectionShopContentType } from '../components/PageSectionShop'
 import SectionDivider from '../components/SectionDivider'
 import PageSectionWallets, { PageSectionWalletsContentType } from '../components/PageSectionWallets'
+import NavigationMenu from '../components/NavigationMenu'
 
 interface IndexPageProps extends PageProps {
   data: {
@@ -53,6 +54,7 @@ const IndexPage = (props: IndexPageProps) => {
       </ThemeProvider>
       <main>
         <ThemeProvider theme={darkTheme}>
+          <NavigationMenu />
           <PageSectionHero content={pageContent.headerSection} />
           <SectionDivider />
           <PageSectionIntro content={pageContent.introSection} />

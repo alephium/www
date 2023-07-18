@@ -37,9 +37,6 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
     <ThemeProvider theme={darkTheme}>
       <PageSectionHeroStyled className={className} ref={innerRef}>
         <HeroPageSectionContainer>
-          <div className="navigation-menu-wrapper">
-            <NavigationMenu />
-          </div>
           <LeftContentWrapper>
             <TextContent>
               <Title>{`Scalable for devs.
@@ -57,28 +54,23 @@ Decentralized for all.`}</Title>
             </ArrowLink>
           </LeftContentWrapper>
         </HeroPageSectionContainer>
+        <ThreeDimensionSceneContainer>
+          <Spline scene="https://prod.spline.design/NqiuAD2RdAocCcLo/scene.splinecode" />
+        </ThreeDimensionSceneContainer>
       </PageSectionHeroStyled>
-      <ThreeDimensionSceneContainer>
-        <Spline scene="https://prod.spline.design/NqiuAD2RdAocCcLo/scene.splinecode" />
-      </ThreeDimensionSceneContainer>
     </ThemeProvider>
   )
 }
 
 const PageSectionHeroStyled = styled.section`
+  position: relative;
   min-height: 100vh;
   overflow: hidden;
-  position: relative;
   ${({ theme }) => css`
     background: linear-gradient(black 0%, black 40%, ${theme.bgSecondary}) 100%;
   `};
   transition: all 0.4s ease-in;
   display: flex;
-
-  .navigation-menu-wrapper {
-    position: relative;
-    z-index: 1;
-  }
 
   .contents {
     display: flex;
@@ -146,7 +138,7 @@ const Boilerplate = styled.span`
   max-width: var(--width-564);
   color: ${({ theme }) => theme.textSecondary};
   font-size: 24px;
-  font-weight: 200;
+  font-weight: var(--fontWeight-light);
   margin-bottom: var(--spacing-8);
 
   @media ${deviceBreakPoints.smallMobile} {
@@ -169,10 +161,10 @@ const ArrowDown = styled(Arrow)`
 `
 
 const Separator = styled.div`
-  width: 60px;
+  width: 50px;
   height: 4px;
   background-color: ${({ theme }) => theme.textPrimary};
-  margin-bottom: var(--spacing-4);
+  margin-bottom: var(--spacing-5);
 `
 
 export default PageSectionHero

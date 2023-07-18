@@ -180,7 +180,7 @@ const WalletCardStyled = styled.div`
   background-color: transparent;
   backdrop-filter: blur(30px);
   border: 1px solid ${({ theme }) => theme.borderPrimary};
-  border-radius: 9px;
+  border-radius: 4px;
   max-width: 400px;
   overflow: hidden;
   text-align: center;

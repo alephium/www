@@ -7,57 +7,101 @@ import SimpleLink from './SimpleLink'
 import LogoText from '../images/svgs/logo-text.svg'
 import GitHubIcon from '../images/svgs/brand-icon-github.svg'
 import SocialMediaIcon from './SocialMediaIcon'
+import { motion, useMotionValueEvent, useScroll } from 'framer-motion'
+import { useState } from 'react'
 
 interface NavigationMenuProps {
   className?: string
 }
 
-const NavigationMenu = ({ className }: NavigationMenuProps) => (
-  <div className={className}>
-    <div className="nav-start">
-      <div className="nav-item">
-        <LinkStyled to="/" title="Go to homepage">
-          <LogoTextStyled />
-        </LinkStyled>
-      </div>
-    </div>
-    <div className="nav-end">
-      <NavLink className="nav-item" url="https://explorer.alephium.org/" newTab trackingName="main-nav:explorer-link">
-        Explorer
-      </NavLink>
-      <NavLink className="nav-item" url="#wallets" trackingName="main-nav:download-wallet-link">
-        Get the wallet
-      </NavLink>
-      <NavLink
-        className="nav-item"
-        url="https://docs.alephium.org/dapps/getting-started/"
-        newTab
-        trackingName="main-nav:build-dapp-link"
+const detachScrollValue = 70
+
+const NavigationMenu = ({ className }: NavigationMenuProps) => {
+  const { scrollY } = useScroll()
+  const [isDetached, setIsDetached] = useState(false)
+
+  useMotionValueEvent(scrollY, 'change', (latest) => {
+    if (latest > detachScrollValue && !isDetached) {
+      setIsDetached(true)
+    } else if (latest <= detachScrollValue && isDetached) {
+      setIsDetached(false)
+    }
+  })
+
+  return (
+    <NavigationWrapper>
+      <NavigationMenuStyled
+        className={className}
+        animate={{
+          y: isDetached ? 30 : 0,
+          backgroundColor: isDetached ? 'rgba(30, 30, 30, 0.6)' : 'rgba(30, 30, 30, 0)'
+        }}
+        transition={{ damping: 500 }}
       >
-        Build a dApp
-      </NavLink>
-      <NavLink className="nav-item" url="#community" trackingName="main-nav:community">
-        Community
-      </NavLink>
+        <div className="nav-item">
+          <LinkStyled to="/" title="Go to homepage">
+            <LogoTextStyled />
+          </LinkStyled>
+        </div>
+        <div className="nav-end">
+          <NavLink
+            className="nav-item"
+            url="https://explorer.alephium.org/"
+            newTab
+            trackingName="main-nav:explorer-link"
+          >
+            Explorer
+          </NavLink>
+          <NavLink className="nav-item" url="#wallets" trackingName="main-nav:download-wallet-link">
+            Get the wallet
+          </NavLink>
+          <NavLink
+            className="nav-item"
+            url="https://docs.alephium.org/dapps/getting-started/"
+            newTab
+            trackingName="main-nav:build-dapp-link"
+          >
+            Build a dApp
+          </NavLink>
+          <NavLink className="nav-item" url="#community" trackingName="main-nav:community">
+            Community
+          </NavLink>
 
-      <GithubButton
-        name="Github"
-        ImageComponent={GitHubIcon}
-        url="https://github.com/alephium"
-        trackingName="main-nav:github-link"
-      />
-    </div>
-  </div>
-)
+          <GithubButton
+            name="Github"
+            ImageComponent={GitHubIcon}
+            url="https://github.com/alephium"
+            trackingName="main-nav:github-link"
+          />
+        </div>
+      </NavigationMenuStyled>
+    </NavigationWrapper>
+  )
+}
 
-const LinkStyled = styled(Link)`
+export default NavigationMenu
+
+const NavigationWrapper = styled.div`
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
 `
 
-export default styled(NavigationMenu)`
+const NavigationMenuStyled = styled(motion.div)`
+  width: calc(var(--page-width) - 100px);
   display: flex;
   justify-content: space-between;
-  font-weight: var(--fontWeight-semiBold);
+  font-weight: var(--fontWeight-medium);
+  z-index: 1;
+  backdrop-filter: blur(24px);
+  padding: 0 20px;
+  height: 62px;
+  border-radius: 200px;
 
   .nav-end {
     display: flex;
@@ -81,10 +125,8 @@ export default styled(NavigationMenu)`
   }
 
   .nav-item {
-    padding: var(--spacing-3) 0;
     display: flex;
     align-items: center;
-    line-height: var(--lineHeight-26);
     text-align: right;
 
     @media ${deviceBreakPoints.smallMobile} {
@@ -93,10 +135,15 @@ export default styled(NavigationMenu)`
   }
 `
 
+const LinkStyled = styled(Link)`
+  display: flex;
+`
+
 const LogoTextStyled = styled(LogoText)`
-  height: 1.625rem;
+  height: 25px;
   fill: ${({ theme }) => theme.textPrimary};
   width: auto;
+  transform: translateY(2px);
 `
 
 const GithubButton = styled(SocialMediaIcon)`
@@ -108,9 +155,9 @@ const GithubButton = styled(SocialMediaIcon)`
 
 const NavLink = styled(SimpleLink)`
   font-size: var(--fontSize-18);
-  color: ${({ theme }) => theme.textPrimary};
+  color: ${({ theme }) => theme.textSecondary};
 
   &:hover {
-    color: ${({ theme }) => theme.textSecondary};
+    color: ${({ theme }) => theme.textPrimary};
   }
 `
