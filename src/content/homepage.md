@@ -144,24 +144,18 @@ ecosystemSection:
       description: 'Building on top, around, or below what we do, securing the network or providing services, they are the life & blood of Alephium & the reasons we grind every day!'
       image: ../images/sprout.svg
       items:
+        - title: 'Awesome Alephium'
+          logo: ''
+          url: https://github.com/alephium/awesome-alephium
         - title: 'Sezame Wallet'
           logo: '../images/logos/sesame-wallet-icon.svg'
           url: https://sezame.app/
         - title: 'MetaPool'
           logo: ''
           url: https://www.metapool.tech/dashboard
-        - title: 'WoolyPooly'
-          logo: ''
-          url: https://woolypooly.com/en/coin/alph
-        - title: 'Herominer'
-          logo: '../images/logos/hero-miner-bw.png'
-          url: https://herominers.com/
-        - title: 'EnigmaPool'
-          logo: ''
-          url: https://enigmapool.com/
         - title: 'Sahhar Wallet'
           logo: ''
-          url: https://github.com/sahharYoucef/alephium_wallet
+          url: https://play.google.com/store/apps/details?id=com.sahhar.sahhar_wallet&pli=1
 milestonesSection:
   title: Completed milestones
   subtitle: Building every day
