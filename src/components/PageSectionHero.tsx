@@ -13,6 +13,8 @@ import { AnimatePresence, motion, useInView } from 'framer-motion'
 
 import placeholderImage from '../images/3d-hero-placeholder.jpg'
 
+import { isMobile } from '../utils/misc'
+
 export interface PageSectionHeroContentType {
   dark: {
     title: string
@@ -88,7 +90,7 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
           </LeftContentWrapper>
         </HeroPageSectionContainer>
         <AnimatePresence>
-          {!sceneLoaded && (
+          {(isMobile || !sceneLoaded) && (
             <ThreeDimensionSceneContainer
               style={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -99,12 +101,14 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
             </ThreeDimensionSceneContainer>
           )}
         </AnimatePresence>
-        <ThreeDimensionSceneContainer animate={{ opacity: sceneLoaded && inView ? 1 : 0 }}>
-          <Spline
-            scene="https://prod.spline.design/NqiuAD2RdAocCcLo/scene.splinecode"
-            onLoad={() => setSceneLoaded(true)}
-          />
-        </ThreeDimensionSceneContainer>
+        {!isMobile && (
+          <ThreeDimensionSceneContainer animate={{ opacity: sceneLoaded && inView ? 1 : 0 }}>
+            <Spline
+              scene="https://prod.spline.design/NqiuAD2RdAocCcLo/scene.splinecode"
+              onLoad={() => setSceneLoaded(true)}
+            />
+          </ThreeDimensionSceneContainer>
+        )}
       </PageSectionHeroStyled>
     </ThemeProvider>
   )
