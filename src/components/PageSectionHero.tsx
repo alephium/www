@@ -127,12 +127,12 @@ const LeftContentWrapper = styled.div`
 
   @media ${deviceBreakPoints.mobile} {
     padding: var(--spacing-4);
-    top: 60%;
+    top: 55%;
   }
 
   @media ${deviceBreakPoints.smallMobile} {
     padding: var(--spacing-4);
-    top: 65%;
+    top: 60%;
   }
 `
 
