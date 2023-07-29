@@ -1,4 +1,4 @@
-import { FC, useRef } from 'react'
+import { FC, useRef, useState } from 'react'
 import styled, { css, ThemeProvider } from 'styled-components'
 
 import { darkTheme } from '../styles/themes'
@@ -9,7 +9,9 @@ import HeroPageSectionContainer from './Hero/HeroPageSectionContainer'
 import Arrow from '../images/svgs/arrow-right.svg'
 
 import Spline from '@splinetool/react-spline'
-import { motion } from 'framer-motion'
+import { AnimatePresence, motion, useInView } from 'framer-motion'
+
+import placeholderImage from '../images/3d-hero-placeholder.jpg'
 
 export interface PageSectionHeroContentType {
   dark: {
@@ -28,7 +30,10 @@ interface PageSectionHeroProps {
 }
 
 const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
+  const [sceneLoaded, setSceneLoaded] = useState(false)
+
   const innerRef = useRef<HTMLElement>(null)
+  const inView = useInView(innerRef)
 
   const themeContent = content.dark
 
@@ -82,8 +87,23 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
             </ArrowLink>
           </LeftContentWrapper>
         </HeroPageSectionContainer>
-        <ThreeDimensionSceneContainer>
-          <Spline scene="https://prod.spline.design/NqiuAD2RdAocCcLo/scene.splinecode" />
+        <AnimatePresence>
+          {!sceneLoaded && (
+            <ThreeDimensionSceneContainer
+              style={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1 }}
+            >
+              <PlaceholderImage src={placeholderImage} />
+            </ThreeDimensionSceneContainer>
+          )}
+        </AnimatePresence>
+        <ThreeDimensionSceneContainer animate={{ opacity: sceneLoaded && inView ? 1 : 0 }}>
+          <Spline
+            scene="https://prod.spline.design/NqiuAD2RdAocCcLo/scene.splinecode"
+            onLoad={() => setSceneLoaded(true)}
+          />
         </ThreeDimensionSceneContainer>
       </PageSectionHeroStyled>
     </ThemeProvider>
@@ -157,7 +177,7 @@ const Title = styled.h1`
   }
 `
 
-const ThreeDimensionSceneContainer = styled.div`
+const ThreeDimensionSceneContainer = styled(motion.div)`
   position: absolute;
   top: 0;
   right: 0;
@@ -215,6 +235,12 @@ const Separator = styled.div`
   height: 4px;
   background-color: ${({ theme }) => theme.textPrimary};
   margin-bottom: var(--spacing-5);
+`
+
+const PlaceholderImage = styled.img`
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 `
 
 export default PageSectionHero

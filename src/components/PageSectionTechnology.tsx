@@ -64,12 +64,7 @@ const PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, cont
   const polwSectionContent = content.polwSection
   const vmsSectionContent = content.vmsSection
 
-  const { scrollYProgress } = useScroll()
-
-  const [gradientRef, start, end] = useRefScrollProgress()
-
-  const gradientYScale = useTransform(scrollYProgress, [start + start * 0.5, end - end * 0.1], [0, 4])
-  const gradientYWidth = useTransform(scrollYProgress, [start + start * 0.5, end - end * 0.1], ['0%', '100%'])
+  const [gradientRef] = useRefScrollProgress()
 
   blockFlowSectionContent.links[0] = { ...blockFlowSectionContent.links[0], openModal: setIsBlockFlowModalOpen }
   polwSectionContent.links[0] = { ...polwSectionContent.links[0], openModal: setIsPoLWModalOpen }
