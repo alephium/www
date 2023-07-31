@@ -219,18 +219,10 @@ const Text = styled.div`
   ${({ isMajor }) =>
     isMajor &&
     css`
-      background: linear-gradient(30deg, #ffc800 0%, #ff4000 40%, #e100ff 90%);
+      background: linear-gradient(30deg, #fff200 0%, #ff4000 40%, #ff007b 90%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      -moz-background-clip: text;
-      -moz-text-fill-color: transparent;
-      background-attachment: fixed;
-
-      @-moz-document url-prefix() {
-        background: linear-gradient(30deg, #fff200 0%, #ffab25 40%, #ff7300 90%);
-        background-clip: text;
-        background-attachment: auto;
-      }
+      background-clip: text;
     `}
 `
 
@@ -247,19 +239,10 @@ const Container = styled.div<{ detailed: boolean }>`
     ${({ detailed }) =>
       !detailed &&
       css`
-        background: linear-gradient(30deg, #fff200 0%, #ff4000 40%, #bb00ff 90%);
+        background: linear-gradient(30deg, #ffc64b 0%, #ffa55b 70%, #ff6a00 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        -moz-background-clip: text;
-        -moz-text-fill-color: transparent;
         background-clip: text;
-        background-attachment: fixed;
-
-        @-moz-document url-prefix() {
-          background: linear-gradient(30deg, #fff200 0%, #ffab25 40%, #ff7300 90%);
-          background-clip: text;
-          background-attachment: auto;
-        }
       `}
   }
 

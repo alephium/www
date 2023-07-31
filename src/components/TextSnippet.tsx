@@ -63,6 +63,7 @@ export default styled(TextSnippet)`
     font-size: ${({ bigTitle }) => (bigTitle ? 'var(--fontSize-56)' : 'var(--fontSize-28)')};
     line-height: ${({ bigTitle }) => (bigTitle ? 'var(--fontSize-56)' : 'var(--lineHeight-36)')};
     margin: 0;
+    font-weight: var(--fontWeight-medium);
   }
 
   > h3 + .text-subtitle {
@@ -74,6 +75,7 @@ export default styled(TextSnippet)`
       smallSubtitle ? 'var(--fontSize-14)' : bigSubtitle ? 'var(--fontSize-24)' : 'var(--fontSize-18)'};
     line-height: ${({ smallSubtitle }) => (smallSubtitle ? 'var(--lineHeight-22)' : 'var(--lineHeight-28)')};
     color: var(--color-grey-250);
+    font-weight: var(--fontWeight-light);
   }
 
   .text-content {

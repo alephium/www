@@ -1,20 +1,19 @@
 import { FC, useRef, useState } from 'react'
-import styled, { ThemeProvider } from 'styled-components'
+import styled, { css, ThemeProvider } from 'styled-components'
 
 import { darkTheme } from '../styles/themes'
 import { deviceBreakPoints } from '../styles/global-style'
 
-import NavigationMenu from './NavigationMenu'
-import TextSnippet from './TextSnippet'
-import Paginator from './Paginator'
-import HeroSlider from './Hero/HeroSlider'
-import HeroSection from './Hero/HeroSection'
-import HeroContentWrapper from './Hero/HeroContentWrapper'
 import HeroPageSectionContainer from './Hero/HeroPageSectionContainer'
 
 import Arrow from '../images/svgs/arrow-right.svg'
-import HeroImage from './Hero/HeroImage'
-import HeroLogo from './Hero/HeroLogo'
+
+import Spline from '@splinetool/react-spline'
+import { AnimatePresence, motion, useInView } from 'framer-motion'
+
+import placeholderImage from '../images/3d-hero-placeholder.jpg'
+
+import { isMobile } from '../utils/misc'
 
 export interface PageSectionHeroContentType {
   dark: {
@@ -33,74 +32,196 @@ interface PageSectionHeroProps {
 }
 
 const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
-  const [slide, setSlide] = useState<number>(0)
-  const [isPaused, setIsPaused] = useState(false)
+  const [sceneLoaded, setSceneLoaded] = useState(false)
 
   const innerRef = useRef<HTMLElement>(null)
-  const themeContent = slide === 0 ? content.dark : content.light
+  const inView = useInView(innerRef)
 
-  const toggleSlide = () => {
-    setSlide(slide === 0 ? 1 : 0)
-  }
-
-  const onSwipe = () => {
-    setSlide(slide === 0 ? 1 : 0)
-  }
-
-  const handlePauseToggle = () => setIsPaused((p) => !p)
+  const themeContent = content.dark
 
   return (
     <ThemeProvider theme={darkTheme}>
-      <HeroSlider heroElementRef={innerRef} onSwipe={onSwipe} shouldAutoSwipe={!isPaused}>
-        <HeroSection className={className} ref={innerRef}>
-          <HeroImage layer="back" slide={slide} parallaxSpeed={12} />
-          <HeroImage layer="middle" slide={slide} parallaxSpeed={8} />
-          <HeroImage layer="front" slide={slide} parallaxSpeed={2} />
-          <HeroPageSectionContainer>
-            <div className="navigation-menu-wrapper">
-              <NavigationMenu />
-            </div>
-            <HeroContentWrapper>
-              <div className="contents">
-                <>
-                  <HeroLogo gradientIndex={slide} />
-
-                  <h1>{themeContent.title}</h1>
-                  <TextSnippetStyled bigText>{themeContent.subtitle}</TextSnippetStyled>
-                  <PaginatorStyled
-                    onPageClick={toggleSlide}
-                    currentPage={slide}
-                    setCurrentPage={setSlide}
-                    isPaused={isPaused}
-                    onTogglePause={handlePauseToggle}
-                  />
-                  <a
-                    href="#intro"
-                    aria-label="Scroll to the intro section"
-                    data-goatcounter-click="hero-section:arrow-down"
+      <PageSectionHeroStyled className={className} ref={innerRef}>
+        <HeroPageSectionContainer>
+          <LeftContentWrapper>
+            <TextContent>
+              <Title>
+                <div>
+                  Scalable for{' '}
+                  <motion.span
+                    initial={{ color: 'rgb(44, 208, 242)' }}
+                    animate={{ color: 'rgb(44, 146, 242)' }}
+                    transition={{ duration: 2, repeat: Infinity, repeatType: 'mirror' }}
                   >
-                    <ArrowDown />
-                  </a>
-                </>
-              </div>
-            </HeroContentWrapper>
-          </HeroPageSectionContainer>
-        </HeroSection>
-      </HeroSlider>
+                    devs.
+                  </motion.span>
+                </div>
+                <div>
+                  Secure for{' '}
+                  <motion.span
+                    initial={{ color: 'rgb(242, 160, 44)' }}
+                    animate={{ color: 'rgb(242, 94, 44)' }}
+                    transition={{ duration: 1.8, repeat: Infinity, repeatType: 'mirror' }}
+                  >
+                    users.
+                  </motion.span>
+                </div>
+                <div>
+                  Decentralized for{' '}
+                  <motion.span
+                    initial={{ color: 'rgb(248, 84, 166)' }}
+                    animate={{ color: 'rgb(242, 39, 100)' }}
+                    transition={{ duration: 2.4, repeat: Infinity, repeatType: 'mirror' }}
+                  >
+                    all.
+                  </motion.span>
+                </div>
+              </Title>
+              <Separator />
+              <Boilerplate>{themeContent.subtitle}</Boilerplate>
+            </TextContent>
+            <ArrowLink
+              href="#intro"
+              aria-label="Scroll to the intro section"
+              data-goatcounter-click="hero-section:arrow-down"
+            >
+              <ArrowDown />
+            </ArrowLink>
+          </LeftContentWrapper>
+        </HeroPageSectionContainer>
+        <AnimatePresence>
+          {(isMobile || !sceneLoaded) && (
+            <ThreeDimensionSceneContainer
+              style={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1 }}
+            >
+              <PlaceholderImage src={placeholderImage} />
+            </ThreeDimensionSceneContainer>
+          )}
+        </AnimatePresence>
+        {!isMobile && (
+          <ThreeDimensionSceneContainer animate={{ opacity: sceneLoaded && inView ? 1 : 0 }}>
+            <Spline
+              scene="https://prod.spline.design/NqiuAD2RdAocCcLo/scene.splinecode"
+              onLoad={() => setSceneLoaded(true)}
+            />
+          </ThreeDimensionSceneContainer>
+        )}
+      </PageSectionHeroStyled>
     </ThemeProvider>
   )
 }
 
-const TextSnippetStyled = styled(TextSnippet)`
-  max-width: var(--width-564);
-  color: ${({ theme }) => theme.textTertiary};
+const PageSectionHeroStyled = styled.section`
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  ${({ theme }) => css`
+    background: linear-gradient(black 0%, black 40%, ${theme.bgSecondary}) 100%;
+  `};
+  transition: all 0.4s ease-in;
+  display: flex;
 
-  // Fixing the height to 4 lines of text helps provide a smooth transition when the text is updated
-  height: calc(var(--lineHeight-26) * 4);
+  .contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    z-index: 1;
+
+    .text-content {
+      @media ${deviceBreakPoints.mobile} {
+        color: ${({ theme }) => theme.textPrimary};
+      }
+    }
+  }
+`
+
+const LeftContentWrapper = styled.div`
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  pointer-events: none;
+
+  @media ${deviceBreakPoints.mobile} {
+    padding: var(--spacing-4);
+    top: 55%;
+  }
 
   @media ${deviceBreakPoints.smallMobile} {
-    height: calc(var(--lineHeight-26) * 8);
+    padding: var(--spacing-4);
+    top: 60%;
   }
+`
+
+const TextContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+`
+
+const Title = styled.h1`
+  white-space: pre-wrap;
+  font-size: 54px;
+  color: ${({ theme }) => theme.textPrimary};
+  font-weight: var(--fontWeight-medium);
+
+  @media ${deviceBreakPoints.mobile} {
+    font-size: 48px !important;
+  }
+
+  @media ${deviceBreakPoints.smallMobile} {
+    font-size: 32px !important;
+  }
+`
+
+const ThreeDimensionSceneContainer = styled(motion.div)`
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+
+  @media ${deviceBreakPoints.mobile} {
+    left: -60%;
+    top: -30%;
+    opacity: 0.5;
+  }
+
+  @media ${deviceBreakPoints.smallMobile} {
+    top: -40%;
+    left: -100%;
+    opacity: 0.5;
+  }
+`
+
+const Boilerplate = styled.span`
+  max-width: var(--width-564);
+  color: ${({ theme }) => theme.textSecondary};
+  font-size: 24px;
+  font-weight: var(--fontWeight-light);
+  margin-bottom: var(--spacing-8);
+
+  @media ${deviceBreakPoints.mobile} {
+    font-size: 26px !important;
+    margin-bottom: var(--spacing-4);
+  }
+
+  @media ${deviceBreakPoints.smallMobile} {
+    font-size: 22px !important;
+    margin-bottom: var(--spacing-2);
+  }
+`
+
+const ArrowLink = styled.a`
+  pointer-events: all;
 `
 
 const ArrowDown = styled(Arrow)`
@@ -113,13 +234,17 @@ const ArrowDown = styled(Arrow)`
   }
 `
 
-const PaginatorStyled = styled(Paginator)`
-  margin-top: var(--spacing-11);
-  margin-bottom: var(--spacing-11);
+const Separator = styled.div`
+  width: 50px;
+  height: 4px;
+  background-color: ${({ theme }) => theme.textPrimary};
+  margin-bottom: var(--spacing-5);
+`
 
-  @media ${deviceBreakPoints.smallMobile} {
-    margin-top: var(--spacing-5);
-  }
+const PlaceholderImage = styled.img`
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 `
 
 export default PageSectionHero

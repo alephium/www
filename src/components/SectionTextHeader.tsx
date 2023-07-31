@@ -47,7 +47,7 @@ const SectionTextHeader = ({
   }
 
   const borderBottom = bottomBorder && headingReachedTopOfScreen ? `1px solid rgba(255, 255, 255, 0.1)` : undefined
-  const backgroundColor = headingReachedTopOfScreen ? theme.bgTertiary : 'transparent'
+  const backgroundColor = headingReachedTopOfScreen ? theme.bgTertiary : 'rgba(0, 0, 0, 0)'
 
   return (
     <>
@@ -94,7 +94,7 @@ export default styled(SectionTextHeader)`
 
   h2 {
     color: ${({ theme }) => theme.textPrimary};
-    font-weight: var(--fontWeight-semiBold);
+    font-weight: var(--fontWeight-medium);
     margin: 0;
 
     & + div {

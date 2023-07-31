@@ -32,7 +32,7 @@ interface PageSectionTechnologyProps {
 
 const PageSectionWallets = ({ content: { title, subtitle, description, wallets } }: PageSectionTechnologyProps) => (
   <SectionWrapper>
-    <StyledSectionTextHeader id="wallets" title={title} subtitle={subtitle} bigSubtitle bigText sticky centered />
+    <StyledSectionTextHeader id="wallets" title={title} subtitle={subtitle} bigSubtitle bigText centered />
     <CenteredDescription>
       <span>{description}</span>
     </CenteredDescription>
@@ -180,7 +180,7 @@ const WalletCardStyled = styled.div`
   background-color: transparent;
   backdrop-filter: blur(30px);
   border: 1px solid ${({ theme }) => theme.borderPrimary};
-  border-radius: 9px;
+  border-radius: 4px;
   max-width: 400px;
   overflow: hidden;
   text-align: center;

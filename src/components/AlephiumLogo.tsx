@@ -2,10 +2,12 @@ import { motion } from 'framer-motion'
 
 interface AlephiumLogoProps {
   className?: string
+  fill?: string
+  accentFill?: string
   gradientIndex: number
 }
 
-const AlephiumLogo = ({ className, gradientIndex, ...props }: AlephiumLogoProps) => (
+const AlephiumLogo = ({ className, fill = 'white', accentFill, gradientIndex, ...props }: AlephiumLogoProps) => (
   <svg
     width="100%"
     height="100%"
@@ -29,13 +31,13 @@ const AlephiumLogo = ({ className, gradientIndex, ...props }: AlephiumLogoProps)
             <g transform="matrix(0.46324,0,0,0.476693,63.1121,4506.2)">
               <path
                 d="M187.296,627.61C187.296,615.272 177.581,606.969 165.616,609.078L21.68,634.454C9.715,636.564 -0,648.293 -0,660.63L-0,932.485C-0,944.822 9.715,953.126 21.68,951.016L165.616,925.64C177.581,923.531 187.296,911.802 187.296,899.464L187.296,627.61Z"
-                style={{ fill: 'white', fillRule: 'nonzero' }}
+                style={{ fill, fillRule: 'nonzero' }}
               />
             </g>
             <g transform="matrix(0.46324,0,0,0.476693,63.1121,4506.2)">
               <motion.path
                 d="M561.888,18.859C561.888,6.522 552.173,-1.782 540.207,0.327L396.272,25.704C384.306,27.813 374.592,39.542 374.592,51.88L374.592,323.734C374.592,336.072 384.306,344.375 396.272,342.266L540.207,316.89C552.173,314.78 561.888,303.051 561.888,290.714L561.888,18.859Z"
-                fill="url(#logo-accent-gradient)"
+                fill={accentFill ?? 'url(#logo-accent-gradient)'}
                 animate={{ rotateY: gradientIndex * 360 }}
                 transition={{ duration: 0.3 }}
               />
@@ -43,7 +45,7 @@ const AlephiumLogo = ({ className, gradientIndex, ...props }: AlephiumLogoProps)
             <g transform="matrix(0.46324,0,0,0.476693,63.1121,4506.2)">
               <path
                 d="M210.743,82.363C205.186,70.124 190.266,62.023 177.446,64.283L23.229,91.472C10.408,93.732 4.512,105.503 10.069,117.742L351.145,868.949C356.702,881.188 371.622,889.29 384.442,887.029L538.659,859.841C551.479,857.581 557.376,845.809 551.819,833.57L210.743,82.363Z"
-                style={{ fill: 'white', fillRule: 'nonzero' }}
+                style={{ fill, fillRule: 'nonzero' }}
               />
             </g>
           </g>

@@ -81,9 +81,10 @@ const GlobalStyle = createGlobalStyle`
     --radius-small: 0.4rem;
     --radius-full: 9999px;
 
-    --fontFamily-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    --fontFamily-sans: "Switzer", "Inter", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
     --fontFamily-serif: "Times New Roman", Times, serif;
     --font-heading: var(--fontFamily-sans);
+    --fontWeight-light: 300;
     --fontWeight-normal: 400;
     --fontWeight-semiBold: 600;
     --fontWeight-bold: 700;

@@ -64,12 +64,7 @@ const PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, cont
   const polwSectionContent = content.polwSection
   const vmsSectionContent = content.vmsSection
 
-  const { scrollYProgress } = useScroll()
-
-  const [gradientRef, start, end] = useRefScrollProgress()
-
-  const gradientYScale = useTransform(scrollYProgress, [start + start * 0.5, end - end * 0.1], [0, 4])
-  const gradientYWidth = useTransform(scrollYProgress, [start + start * 0.5, end - end * 0.1], ['0%', '100%'])
+  const [gradientRef] = useRefScrollProgress()
 
   blockFlowSectionContent.links[0] = { ...blockFlowSectionContent.links[0], openModal: setIsBlockFlowModalOpen }
   polwSectionContent.links[0] = { ...polwSectionContent.links[0], openModal: setIsPoLWModalOpen }
@@ -86,10 +81,7 @@ const PageSectionTechnology: FC<PageSectionTechnologyProps> = ({ className, cont
 
   return (
     <SectionContainer className={className} ref={gradientRef}>
-      <GradientContainer>
-        <TopGradient style={{ scaleY: gradientYScale, width: gradientYWidth, transformOrigin: 'top' }} />
-      </GradientContainer>
-      <SectionTextHeaderStyled title={content.title} subtitle={content.subtitle} centered bigSubtitle sticky />
+      <SectionTextHeaderStyled title={content.title} subtitle={content.subtitle} centered bigSubtitle />
       <TechSection>
         <PageSectionContainer>
           <Columns {...columnsProps}>
@@ -213,18 +205,6 @@ const GradientContainer = styled.div`
   pointer-events: none;
 `
 
-const TopGradient = styled(motion.div)`
-  height: 200px;
-  background-image: url(${BGGradientSrc});
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: center;
-  background-position-y: top;
-  z-index: 3000;
-  pointer-events: none;
-  opacity: 0.3;
-`
-
 const ParallaxImage = styled(ParallaxWrapper)<{ src: string }>`
   position: absolute;
   top: 0;
@@ -238,14 +218,9 @@ const ParallaxImage = styled(ParallaxWrapper)<{ src: string }>`
 `
 
 const SectionTextHeaderStyled = styled(SectionTextHeader)`
-  margin-bottom: var(--spacing-20);
+  margin-bottom: var(--spacing-12);
+  padding-top: var(--spacing-16);
   overflow: hidden;
-
-  @media ${deviceBreakPoints.mobile} {
-    max-width: var(--page-width);
-    margin: 0 auto var(--spacing-10);
-    padding: 0 var(--spacing-4);
-  }
 `
 
 const TechSection = styled.div`

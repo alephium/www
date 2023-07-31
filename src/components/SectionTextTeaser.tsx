@@ -60,7 +60,7 @@ export default styled(SectionTextTeaser)`
     gap: var(--spacing-7);
     font-size: var(--fontSize-18);
     line-height: var(--lineHeight-26);
-    font-weight: var(--fontWeight-semiBold);
+    font-weight: var(--fontWeight-medium);
     margin-top: var(--spacing-5);
     align-items: center;
 

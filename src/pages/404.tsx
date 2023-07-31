@@ -4,7 +4,6 @@ import { Link } from 'gatsby'
 import GlobalStyle from '../styles/global-style'
 import { darkTheme } from '../styles/themes'
 
-import HeroSection from '../components/Hero/HeroSection'
 import HeroContentWrapper from '../components/Hero/HeroContentWrapper'
 import HeroPageSectionContainer from '../components/Hero/HeroPageSectionContainer'
 import NavigationMenu from '../components/NavigationMenu'
@@ -17,25 +16,23 @@ const NotFoundPage = () => (
   <ThemeProvider theme={darkTheme}>
     <GlobalStyle />
     <main>
-      <HeroSection>
-        <HeroImage layer="back" slide={0} parallaxSpeed={12} />
-        <HeroImage layer="middle" slide={0} parallaxSpeed={8} />
-        <HeroImage layer="front" slide={0} parallaxSpeed={2} />
-        <HeroPageSectionContainer>
-          <div className="navigation-menu-wrapper">
-            <NavigationMenu />
+      <HeroImage layer="back" slide={0} parallaxSpeed={12} />
+      <HeroImage layer="middle" slide={0} parallaxSpeed={8} />
+      <HeroImage layer="front" slide={0} parallaxSpeed={2} />
+      <HeroPageSectionContainer>
+        <div className="navigation-menu-wrapper">
+          <NavigationMenu />
+        </div>
+        <HeroContentWrapper>
+          <div className="contents">
+            <HeroLogo gradientIndex={0} />
+            <h1>404 - Page not found</h1>
+            <TextSnippetStyled bigText>
+              Let&apos;s go back to the <Link to="/">home page</Link>.
+            </TextSnippetStyled>
           </div>
-          <HeroContentWrapper>
-            <div className="contents">
-              <HeroLogo gradientIndex={0} />
-              <h1>404 - Page not found</h1>
-              <TextSnippetStyled bigText>
-                Let&apos;s go back to the <Link to="/">home page</Link>.
-              </TextSnippetStyled>
-            </div>
-          </HeroContentWrapper>
-        </HeroPageSectionContainer>
-      </HeroSection>
+        </HeroContentWrapper>
+      </HeroPageSectionContainer>
     </main>
   </ThemeProvider>
 )

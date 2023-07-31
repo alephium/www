@@ -52,7 +52,7 @@ const ArrowedLink = ({
 export default styled(ArrowedLink)`
   display: flex;
   align-items: center;
-  font-weight: var(--fontWeight-semiBold);
+  font-weight: var(--fontWeight-medium);
   font-size: var(--fontSize-18);
 
   .icon {
