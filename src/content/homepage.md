@@ -148,7 +148,7 @@ ecosystemSection:
           logo: ''
           url: https://www.ayin.app/
         - title: 'DEADRARE'
-          logo: ''
+          logo: '../images/logos/DEADRARE-icon.png'
           url: https://deadrare.io
         - title: 'Sezame Wallet'
           logo: '../images/logos/sesame-wallet-icon.svg'
