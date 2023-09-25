@@ -144,9 +144,12 @@ ecosystemSection:
       description: 'Building on top, around, or below what we do, securing the network or providing services, they are the life & blood of Alephium & the reasons we grind every day!'
       image: ../images/sprout.svg
       items:
-        - title: 'Awesome Alephium'
+        - title: 'Ayin'
           logo: ''
-          url: https://github.com/alephium/awesome-alephium
+          url: https://www.ayin.app/
+        - title: 'DEADRARE'
+          logo: ''
+          url: https://deadrare.io
         - title: 'Sezame Wallet'
           logo: '../images/logos/sesame-wallet-icon.svg'
           url: https://sezame.app/
@@ -156,6 +159,9 @@ ecosystemSection:
         - title: 'Sahhar Wallet'
           logo: ''
           url: https://play.google.com/store/apps/details?id=com.sahhar.sahhar_wallet&pli=1
+        - title: '& More'
+          logo: ''
+          url: https://github.com/alephium/awesome-alephium
 milestonesSection:
   title: Completed milestones
   subtitle: Building every day
