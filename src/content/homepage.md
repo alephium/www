@@ -113,7 +113,7 @@ ecosystemSection:
           url: https://dappnode.io
         - title: 'Flux Labs'
           logo: '../images/svgs/flux-seeklogo.com.svg'
-          url: https://runonflux.io/fluxlabs.html
+          url: https://runonflux.io/
         - title: 'Hodling SA'
           logo: '../images/svgs/hodling-icon-bw-darkBackground.svg'
           url: https://www.hodling.ch/
