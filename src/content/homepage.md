@@ -150,6 +150,9 @@ ecosystemSection:
         - title: 'DEADRARE'
           logo: '../images/logos/DEADRARE-icon.png'
           url: https://deadrare.io
+        - title: 'Walph'
+          logo: ''
+          url: https://walph.io/
         - title: 'Sezame Wallet'
           logo: '../images/logos/sesame-wallet-icon.svg'
           url: https://sezame.app/
