@@ -1,4 +1,9 @@
 ---
+topBanner:
+  text: 'The bridge is OUT!'
+  linkText: 'Try it'
+  url: 'https://bridge.alephium.org'
+  color: '#1c91eb'
 headerSection:
   dark:
     title: 'Scalable for devs.

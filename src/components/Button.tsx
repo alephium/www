@@ -39,18 +39,18 @@ const Button = ({ onClick, className, children, url, newTab, trackingName, disab
   )
 
 export default styled(Button)`
-  background-color: var(--color-blue-100);
-  color: var(--color-white);
-  border-radius: var(--radius-small);
-  padding: var(--spacing-2) var(--spacing-3);
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+  padding: 3px 5px;
   border: 0 solid;
   text-decoration: none;
   display: inline-flex;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 
   /* The following rules are the same as in the ArrowedLink, maybe extract? */
   align-items: center;
   font-weight: var(--fontWeight-medium);
-  font-size: var(--fontSize-18);
   transition: all 0.1s ease-out;
 
   ${({ disabled }) =>
@@ -59,6 +59,7 @@ export default styled(Button)`
           &:hover {
             cursor: pointer;
             filter: brightness(120%);
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
           }
         `
       : css`
@@ -69,7 +70,7 @@ export default styled(Button)`
   .arrow {
     width: 11px;
     margin-left: var(--spacing-1);
-    fill: var(--color-white);
+    fill: inherit;
 
     ${(props) =>
       props.newTab &&
