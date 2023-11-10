@@ -15,12 +15,13 @@ import { RiMenu3Fill } from 'react-icons/ri'
 import useOnClickOutside from '../hooks/useOnClickOutside'
 
 interface NavigationMenuProps {
+  topOffset?: number
   className?: string
 }
 
 const detachScrollValue = 150
 
-const NavigationMenu = ({ className }: NavigationMenuProps) => {
+const NavigationMenu = ({ topOffset, className }: NavigationMenuProps) => {
   const { scrollY } = useScroll()
   const [isDetached, setIsDetached] = useState(false)
 
@@ -32,12 +33,14 @@ const NavigationMenu = ({ className }: NavigationMenuProps) => {
     }
   })
 
+  const initialTop = topOffset || 0
+
   return (
     <NavigationWrapper>
       <NavigationMenuStyled
         className={className}
         animate={{
-          y: isDetached ? 30 : 0,
+          y: isDetached ? 30 : initialTop,
           backgroundColor: isDetached ? 'rgba(30, 30, 30, 0.6)' : 'rgba(30, 30, 30, 0)'
         }}
         transition={{ type: 'spring', stiffness: 200, damping: 50 }}

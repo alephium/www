@@ -1,4 +1,4 @@
-import { ThemeProvider } from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
 import { graphql, PageProps } from 'gatsby'
 
 import GlobalStyle from '../styles/global-style'
@@ -18,12 +18,14 @@ import PageSectionShop, { PageSectionShopContentType } from '../components/PageS
 import SectionDivider from '../components/SectionDivider'
 import PageSectionWallets, { PageSectionWalletsContentType } from '../components/PageSectionWallets'
 import NavigationMenu from '../components/NavigationMenu'
+import TopBanner, { TopBannerContentType } from '../components/TopBanner'
 
 interface IndexPageProps extends PageProps {
   data: {
     homepage: {
       nodes: {
         frontmatter: {
+          topBanner: TopBannerContentType
           headerSection: PageSectionHeroContentType
           introSection: PageSectionIntroContentType
           technologySection: PageSectionTechnologyContentType
@@ -51,43 +53,52 @@ const IndexPage = (props: IndexPageProps) => {
       <Seo />
       <ThemeProvider theme={darkTheme}>
         <GlobalStyle />
+        <SiteWrapper>
+          <TopBanner content={pageContent.topBanner} />
+          <NavigationMenu topOffset={pageContent.topBanner.text ? 50 : 0} />
+          <ContentContainer>
+            <PageSectionHero content={pageContent.headerSection} />
+            <SectionDivider />
+            <PageSectionIntro content={pageContent.introSection} />
+            <SectionDivider />
+            <PageSectionTechnology content={pageContent.technologySection} minimal />
+            <PageSectionNumbers content={pageContent.numbersSection} />
+            <SectionDivider />
+            <PageSectionWallets content={pageContent.walletsSection} />
+            <SectionDivider />
+            <PageSectionEcosystem content={pageContent.ecosystemSection} />
+            <SectionDivider />
+            <PageSectionMilestones content={pageContent.milestonesSection} />
+            <SectionDivider />
+            <PageSectionTodoList content={pageContent.todoListSection} />
+            <SectionDivider />
+            <PageSectionShop content={pageContent.shopSection} />
+            <PageSectionFollowUs content={pageContent.followUsSection} />
+            <Footer content={pageContent.footer} openPrivacyPolicyModal={openPrivacyPolicyModal} />
+          </ContentContainer>
+        </SiteWrapper>
       </ThemeProvider>
-      <main>
-        <ThemeProvider theme={darkTheme}>
-          <NavigationMenu />
-          <PageSectionHero content={pageContent.headerSection} />
-          <SectionDivider />
-          <PageSectionIntro content={pageContent.introSection} />
-          <SectionDivider />
-          <PageSectionTechnology content={pageContent.technologySection} minimal />
-          <PageSectionNumbers content={pageContent.numbersSection} />
-          <SectionDivider />
-          <PageSectionWallets content={pageContent.walletsSection} />
-          <SectionDivider />
-          <PageSectionEcosystem content={pageContent.ecosystemSection} />
-        </ThemeProvider>
-        <ThemeProvider theme={darkTheme}>
-          <SectionDivider />
-          <PageSectionMilestones content={pageContent.milestonesSection} />
-          <SectionDivider />
-          <PageSectionTodoList content={pageContent.todoListSection} />
-          <SectionDivider />
-          <PageSectionShop content={pageContent.shopSection} />
-          <PageSectionFollowUs content={pageContent.followUsSection} />
-          <Footer content={pageContent.footer} openPrivacyPolicyModal={openPrivacyPolicyModal} />
-        </ThemeProvider>
-      </main>
     </>
   )
 }
 
 export default IndexPage
 
+const SiteWrapper = styled.main``
+
+const ContentContainer = styled.div``
+
 export const pageQuery = graphql`
   query {
     homepage: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/homepage.md/" } }) {
       nodes {
         frontmatter {
+          topBanner {
+            text
+            linkText
+            url
+            color
+          }
           headerSection {
             dark {
               title

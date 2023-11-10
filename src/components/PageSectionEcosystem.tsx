@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { graphql } from 'gatsby'
 
 import { deviceBreakPoints } from '../styles/global-style'
 
