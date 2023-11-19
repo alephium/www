@@ -89,13 +89,7 @@ const WalletCard = ({
       </WalletTextContainer>
       <WalletActions>
         {actions.map((a) => (
-          <ActionButton
-            key={a.title}
-            url={a.link}
-            newTab
-            disabled={a.disabled}
-            trackingName={`wallets-section:${a.title}-link`}
-          >
+          <ActionButton key={a.title} url={a.link} newTab trackingName={`wallets-section:${a.title}-link`}>
             {a.title}
           </ActionButton>
         ))}
@@ -209,9 +203,7 @@ const WalletActions = styled.div`
   margin-bottom: var(--spacing-4);
 `
 
-const ActionButton = styled(Button)`
-  background-color: ${({ theme }) => theme.bgSurface};
-`
+const ActionButton = styled(Button)``
 
 const ParallaxBackground = styled.div`
   position: absolute;
