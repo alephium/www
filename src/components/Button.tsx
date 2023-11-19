@@ -58,8 +58,8 @@ export default styled(Button)`
       ? css`
           &:hover {
             cursor: pointer;
-            filter: brightness(120%);
             box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+            opacity: 0.7;
           }
         `
       : css`

@@ -96,9 +96,11 @@ walletsSection:
       screenshot: ../images/screenshots/mobile.png
       color: 'rgb(9, 169, 97)'
       actions:
-        - title: Coming soon
-          link: ''
-          disabled: true
+        - title: Android
+          link: https://play.google.com/store/apps/details?id=org.alephium.wallet
+        - title: IOS
+          link: https://apps.apple.com/us/app/alephium-wallet/id6469043072
+          
 ecosystemSection:
   title: Ecosystem
   subtitle: Growing fast

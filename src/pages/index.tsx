@@ -198,7 +198,6 @@ export const pageQuery = graphql`
               actions {
                 title
                 link
-                disabled
               }
             }
           }
