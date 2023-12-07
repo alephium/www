@@ -1,7 +1,7 @@
 - name: Cheng Wang
   role: Founder, Core Developer
   image: ../images/team/cheng.jpg
-- name: Maud Simon
+- name: Maud Bannwart
   role: Chief Operating Officer
   image: ../images/team/maud.jpg
 - name: Alex Poltorak
@@ -13,12 +13,6 @@
 - name: Mikaël Vaivre
   role: Chief Product Officer
   image: ../images/team/mika.jpg
-- name: Marina De Mattos
-  role: Marketing & Communication
-  image: ../images/team/marina.jpg
-- name: Set Hallström
-  role: Community Lead
-  image: ../images/team/set.jpg
 - name: Thomas Droxler
   role: Core Blockchain Dev
   image: ../images/team/thomas.jpg
