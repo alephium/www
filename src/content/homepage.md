@@ -189,7 +189,6 @@ milestonesSection:
             - order: 0
               text: 'Alpha version of the core sharding protocol implemented and tested on AWS'
               when: 'Q1.2020'
-              isMajor: false
             - order: 1
               text: 'Testnet launch'
               when: '12.2020'
@@ -199,7 +198,6 @@ milestonesSection:
             - order: 0
               text: 'Smart contract support'
               when: 'Q1.2021'
-              isMajor: false
             - order: 2
               text: 'Desktop wallet & explorer public release'
               when: '09.2021'
@@ -217,7 +215,6 @@ milestonesSection:
             - order: 1
               text: 'Beta version of contract SDK'
               when: '06.2022'
-              isMajor: false
             - order: 2
               text: 'Leman Network Upgrade deployed on the testnet'
               when: '06.2022'
@@ -231,7 +228,6 @@ milestonesSection:
             - order: 0
               text: 'More dApp prototypes (DEX & NFT marketplace)'
               when: 'H1.2023'
-              isMajor: false
             - order: 1
               text: 'Launch Browser Wallet Extension'
               when: '03.2023'
@@ -243,7 +239,6 @@ milestonesSection:
             - order: 3
               text: 'Schnorr signatures and cross-chain interoperability'
               when: '03.2023'
-              isMajor: false
             - order: 4
               text: 'New Asset Permission System and set of Virtual Machine (VM) instructions and building functions'
               when: '03.2023'
@@ -251,11 +246,9 @@ milestonesSection:
             - order: 5
               text: 'Improved node APIs and SDK'
               when: '03.2023'
-              isMajor: false
             - order: 6
               text: 'Improved difficulty adjustment algorithm (DAA)'
               when: '03.2023'
-              isMajor: false
             - order: 7
               text: 'Desktop Wallet v2.0'
               when: '05.2023'
@@ -263,11 +256,9 @@ milestonesSection:
             - order: 8
               text: 'Alephium Bridge on Testnet'
               when: '05.2023'
-              isMajor: false
             - order: 12
               text: 'Alephium Multisig GUI'
               when: '09.2023'
-              isMajor: false
             - order: 14
               text: 'Launch Mobile Wallet (Android & iOS)'
               when: '11.2023'
@@ -285,11 +276,9 @@ milestonesSection:
             - order: 1
               text: '3rd party cloud mining service at Mainnet Launch'
               when: '08.11.2021'
-              isMajor: false
             - order: 3
               text: 'Joined the UTXO alliance & Bitcoin Association Switzerland'
               when: '11.2021'
-              isMajor: false
             - order: 4
               text: 'Mining ecosystem development: community pools, miners development, reference mining pool, and pool integration.'
               when: 'Q4.2021'
@@ -303,29 +292,23 @@ milestonesSection:
             - order: 3
               text: 'Initiation of marketing initiatives (sponsoring of ErgoHack, AMAs, community competitions, campaigns, Tech Talk Series and more)'
               when: 'Q3.2022'
-              isMajor: false
             - order: 4
               text: 'Dappnode Integration'
               when: '10.2022'
-              isMajor: false
             - order: 5
               text: 'Flux Integration'
               when: '11.2022'
-              isMajor: false
             - order: 6
               text: 'Reached over 265 community contributions'
               when: '12.2022'
-              isMajor: false
         - year: 2023
           entries:
             - order: 0
               text: 'Additional CEXs listings'
               when: 'H1.2023'
-              isMajor: false
             - order: 9
               text: 'NYM-Connect app integration'
               when: '07.2023'
-              isMajor: false
             - order: 10
               text: 'First native DEX - Ayin'
               when: '08.2023'
@@ -349,11 +332,9 @@ milestonesSection:
             - order: 15
               text: 'Over 77’000 active addresses and 50’000+ GPUs on Alephium'
               when: '11.2023'
-              isMajor: false
             - order: 16
               text: '$5.15M TVL on Alephium'
               when: '12.2023'
-              isMajor: false
               
 todoListSection:
   title: What's next
