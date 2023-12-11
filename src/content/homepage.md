@@ -326,7 +326,7 @@ milestonesSection:
               text: 'NYM-Connect app integration'
               when: '07.2023'
               isMajor: false
-             - order: 2
+            - order: 2
               text: 'First native DEX - Ayin'
               when: '08.2023'
               isMajor: true
@@ -334,7 +334,7 @@ milestonesSection:
               text: 'First native NFT Marketplace - Deadrare'
               when: '09.2023'
               isMajor: true
-             - order: 4
+            - order: 4
               text: 'First decentralized lottery - Walph'
               when: '09.2023'
               isMajor: true
@@ -350,7 +350,7 @@ milestonesSection:
               text: 'Over 77’000 active addresses and 50’000+ GPUs on Alephium'
               when: '11.2023'
               isMajor: false
-             - order: 8
+            - order: 8
               text: '$5.15M TVL on Alephium'
               when: '12.2023'
               isMajor: false
@@ -421,7 +421,7 @@ todoListSection:
           label: Bridge
         - text: 'Integration with 3rd party wallets, payment & web3 services'
           label: Ecosystem
-        - text: 'Improved developers' onboarding experience'
+        - text: "Improved developers' onboarding experience"
           label: Community
         - text: Additional marketing, partnership, and knowledge-sharing initiatives with like-minded communities and projects.
           label: Marketing
