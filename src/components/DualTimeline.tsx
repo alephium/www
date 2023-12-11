@@ -1,19 +1,21 @@
 import { useEffect, useState } from 'react'
 import styled, { css } from 'styled-components'
-import { uniqBy } from 'lodash'
+import { uniqBy, sortBy } from 'lodash'
 
 import { deviceBreakPoints, deviceSizes } from '../styles/global-style'
+
+type TimelineEntry = {
+  row: number
+  text: string
+  when: string
+  isMajor: boolean
+}
 
 export type Timeline = {
   title: string
   years: {
     year: string
-    entries?: {
-      order: number
-      text: string
-      when: string
-      isMajor: boolean
-    }[]
+    entries?: TimelineEntry[]
   }[]
 }
 
@@ -463,27 +465,22 @@ const HeaderStickyBackground = styled.div`
   }
 `
 
-function sortMerge(as, bs) {
-  const diff = (c, d) => c.order - d.order
-  const aSorted = as.sort(diff)
-  const bSorted = bs.sort(diff)
+function sortMerge(as: TimelineEntry[], bs: TimelineEntry[]) {
+  const numberOfRows = [...as, ...bs].reduce(
+    (largestOrder, item) => (item.row > largestOrder ? item.row : largestOrder),
+    0
+  )
 
-  const aNewList = aSorted.reduce((list, a) => {
-    const b = bSorted.find((b) => b.order === a.order)
-    return b ? [...list, [a, b]] : [...list, [a, undefined]]
-  }, [])
-  const bNewList = bSorted.reduce((list, b) => {
-    const a = aSorted.some((a) => a.order === b.order)
-    return a ? [...list, [a, b]] : [...list, [undefined, b]]
-  }, [])
-  const newList = aNewList.concat(bNewList).sort((a, b) => {
-    if (a[0] !== undefined && b[0] !== undefined) return a[0].order - b[0].order
-    if (a[1] !== undefined && b[1] !== undefined) return a[1].order - b[1].order
-    if (a[0] !== undefined && b[1] !== undefined) return a[0].order - b[1].order
-    return a[1].order - b[0].order
+  const aSorted = sortBy(as, 'row')
+  const bSorted = sortBy(bs, 'row')
+
+  return Array.from({ length: numberOfRows }, (_, index) => {
+    const row = index + 1
+    const a = aSorted.find((a) => a.row === row)
+    const b = bSorted.find((b) => b.row === row)
+
+    return [a, b]
   })
-
-  return uniqBy(newList, (el) => (el[0] && el[0].order) || (el[1] && el[1].order))
 }
 
 export default DualTimeline
