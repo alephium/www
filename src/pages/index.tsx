@@ -209,7 +209,7 @@ export const pageQuery = graphql`
               years {
                 year
                 entries {
-                  order
+                  row
                   text
                   when
                   isMajor

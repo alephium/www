@@ -180,90 +180,90 @@ milestonesSection:
       years:
         - year: 2019
           entries:
-            - order: 0
+            - row: 1
               text: 'Whitepapers publicly released'
               when: '02.2019'
               isMajor: true
         - year: 2020
           entries:
-            - order: 0
+            - row: 1
               text: 'Alpha version of the core sharding protocol implemented and tested on AWS'
               when: 'Q1.2020'
-            - order: 1
+            - row: 2
               text: 'Testnet launch'
               when: '12.2020'
               isMajor: true
         - year: 2021
           entries:
-            - order: 0
+            - row: 1
               text: 'Smart contract support'
               when: 'Q1.2021'
-            - order: 2
+            - row: 3
               text: 'Desktop wallet & explorer public release'
               when: '09.2021'
               isMajor: true
-            - order: 3
+            - row: 4
               text: 'Mainnet launch'
               when: '08.11.2021'
               isMajor: true
         - year: 2022
           entries:
-            - order: 0
+            - row: 1
               text: '1st dApp prototype'
               when: '01.2022'
               isMajor: true
-            - order: 1
+            - row: 2
               text: 'Beta version of contract SDK'
               when: '06.2022'
-            - order: 2
+            - row: 3
               text: 'Leman Network Upgrade deployed on the testnet'
               when: '06.2022'
               isMajor: true
-            - order: 5
+            - row: 6
               text: 'Alpha version of multi-guardians bridge on the Testnet'
               when: '11.2022'
               isMajor: true
         - year: 2023
           entries:
-            - order: 0
+            - row: 1
               text: 'More dApp prototypes (DEX & NFT marketplace)'
               when: 'H1.2023'
-            - order: 1
+            - row: 2
               text: 'Launch Browser Wallet Extension'
               when: '03.2023'
               isMajor: true
-            - order: 2
+            - row: 3
               text: 'Leman Network Upgrade on Mainnet'
               when: '27.03.2023'
               isMajor: true
-            - order: 3
+            - row: 4
               text: 'Schnorr signatures and cross-chain interoperability'
               when: '03.2023'
-            - order: 4
+            - row: 5
               text: 'New Asset Permission System and set of Virtual Machine (VM) instructions and building functions'
               when: '03.2023'
               isMajor: true
-            - order: 5
+            - row: 6
               text: 'Improved node APIs and SDK'
               when: '03.2023'
-            - order: 6
+            - row: 7
               text: 'Improved difficulty adjustment algorithm (DAA)'
               when: '03.2023'
-            - order: 7
+            - row: 8
               text: 'Desktop Wallet v2.0'
               when: '05.2023'
               isMajor: true
-            - order: 8
+            - row: 9
               text: 'Alephium Bridge on Testnet'
               when: '05.2023'
-            - order: 12
+            - row: 13
               text: 'Alephium Multisig GUI'
               when: '09.2023'
-            - order: 14
+            - row: 15
               text: 'Launch Mobile Wallet (Android & iOS)'
               when: '11.2023'
               isMajor: true
-            - order: 15
+            - row: 16
               text: 'Alephium Bridge to Ethereum on Mainnet'
               when: '09.11.2023'
               isMajor: true
@@ -273,69 +273,68 @@ milestonesSection:
         - year: 2020
         - year: 2021
           entries:
-            - order: 1
+            - row: 2
               text: '3rd party cloud mining service at Mainnet Launch'
               when: '08.11.2021'
-            - order: 3
+            - row: 4
               text: 'Joined the UTXO alliance & Bitcoin Association Switzerland'
               when: '11.2021'
-            - order: 4
+            - row: 5
               text: 'Mining ecosystem development: community pools, miners development, reference mining pool, and pool integration.'
               when: 'Q4.2021'
               isMajor: true
         - year: 2022
           entries:
-            - order: 0
+            - row: 1
               text: 'First exchange listing: Gate.io'
               when: '12.01.2022'
               isMajor: true
-            - order: 3
+            - row: 4
               text: 'Initiation of marketing initiatives (sponsoring of ErgoHack, AMAs, community competitions, campaigns, Tech Talk Series and more)'
               when: 'Q3.2022'
-            - order: 4
+            - row: 5
               text: 'Dappnode Integration'
               when: '10.2022'
-            - order: 5
+            - row: 6
               text: 'Flux Integration'
               when: '11.2022'
-            - order: 6
+            - row: 7
               text: 'Reached over 265 community contributions'
               when: '12.2022'
         - year: 2023
           entries:
-            - order: 0
+            - row: 1
               text: 'Additional CEXs listings'
               when: 'H1.2023'
-            - order: 9
+            - row: 10
               text: 'NYM-Connect app integration'
               when: '07.2023'
-            - order: 10
+            - row: 11
               text: 'First native DEX - Ayin'
               when: '08.2023'
               isMajor: true
-            - order: 11
+            - row: 12
               text: 'First native NFT Marketplace - Deadrare'
               when: '09.2023'
               isMajor: true
-            - order: 12
+            - row: 13
               text: 'First decentralized lottery - Walph'
               when: '09.2023'
               isMajor: true
-            - order: 13
+            - row: 14
               text: 'First DAO - Blockflow Alliance DAO'
               when: '10.2023'
               isMajor: true
-            - order: 14
+            - row: 15
               text: 'Stablecoins on Alephium & Wrapped ALPH on Ethereum'
               when: '11.2023'
               isMajor: true
-            - order: 15
+            - row: 16
               text: 'Over 77’000 active addresses and 50’000+ GPUs on Alephium'
               when: '11.2023'
-            - order: 16
+            - row: 17
               text: '$5.15M TVL on Alephium'
-              when: '12.2023'
-              
+              when: '12.2023'      
 todoListSection:
   title: What's next
   subtitle: Building an exciting future

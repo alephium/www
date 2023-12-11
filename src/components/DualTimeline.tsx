@@ -5,7 +5,7 @@ import { uniqBy, sortBy } from 'lodash'
 import { deviceBreakPoints, deviceSizes } from '../styles/global-style'
 
 type TimelineEntry = {
-  order: number
+  row: number
   text: string
   when: string
   isMajor: boolean
@@ -467,16 +467,17 @@ const HeaderStickyBackground = styled.div`
 
 function sortMerge(as: TimelineEntry[], bs: TimelineEntry[]) {
   const numberOfRows = [...as, ...bs].reduce(
-    (largestOrder, item) => (item.order > largestOrder ? item.order : largestOrder),
+    (largestOrder, item) => (item.row > largestOrder ? item.row : largestOrder),
     0
   )
 
-  const aSorted = sortBy(as, 'order')
-  const bSorted = sortBy(bs, 'order')
+  const aSorted = sortBy(as, 'row')
+  const bSorted = sortBy(bs, 'row')
 
-  return Array.from({ length: numberOfRows }, (v, i) => {
-    const a = aSorted.find((a) => a.order === i)
-    const b = bSorted.find((b) => b.order === i)
+  return Array.from({ length: numberOfRows }, (_, index) => {
+    const row = index + 1
+    const a = aSorted.find((a) => a.row === row)
+    const b = bSorted.find((b) => b.row === row)
 
     return [a, b]
   })
