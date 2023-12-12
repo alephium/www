@@ -11,4 +11,4 @@ Press request: press@alephium.org
 **Alephium**<br />
 Ruelle William Mayor 2<br />
 CH-2000 Neuchâtel
-Switzerland - CH
+Switzerland - Europe
