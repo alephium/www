@@ -48,7 +48,7 @@ technologySection:
         newTab: true
   smartContractSection:
     title: Programmable & Secure
-    description: 'Alephium introduces the stateful UTXO model offering layer-1 scalability and the same level of programmability as the account model used on ETH, whilst being more secure.'
+    description: 'Alephium introduces the stateful UTXO model offering layer-1 scalability and the same level of programmability as the account model used on Ethereum, whilst being more secure.'
     links:
       - text: More details
       - text: Guide
@@ -151,6 +151,9 @@ ecosystemSection:
       description: 'Building on top, around, or below what we do, securing the network or providing services, they are the life & blood of Alephium & the reasons we grind every day!'
       image: ../images/sprout.svg
       items:
+        - title: 'Alphland'
+          logo: ''
+          url: https://www.alph.land/
         - title: 'Ayin'
           logo: ''
           url: https://www.ayin.app/
@@ -444,7 +447,7 @@ footer:
   columns:
     - title: Resources
       links:
-        - text: Wiki
+        - text: Docs
           url: https://docs.alephium.org/
           newTab: true
         - text: Blog
