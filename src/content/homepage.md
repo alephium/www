@@ -105,49 +105,7 @@ ecosystemSection:
   title: Ecosystem
   subtitle: Growing fast
   subsections:
-    - title: Partners
-      description: 'From lawyers to peer blockchains, lobbying & local associations, they make us feel part of a larger ecosystem.'
-      image: ../images/network.svg
-      items:
-        - title: 'Bitcoin Association Switzerland'
-          logo: '../images/svgs/bas-logo-white.svg'
-          url: https://www.bitcoinassociation.ch/
-        - title: 'Crypto Valley Association'
-          logo: '../images/svgs/crypto-valley-association-vector-logo.svg'
-          url: https://cryptovalley.swiss/
-        - title: 'Dappnode'
-          logo: '../images/logos/Dappnode-logo-bw.png'
-          url: https://dappnode.io
-        - title: 'Flux Labs'
-          logo: '../images/svgs/flux-seeklogo.com.svg'
-          url: https://runonflux.io/
-        - title: 'Hodling SA'
-          logo: '../images/svgs/hodling-icon-bw-darkBackground.svg'
-          url: https://www.hodling.ch/
-        - title: 'Leax'
-          logo: '../images/logos/leax.svg'
-          url: https://www.leax.ch/
-        - title: 'UTXO Alliance'
-          logo: '../images/svgs/utxo-aliance-logo-white.svg'
-          url: https://utxo-alliance.org/
-    - title: Backers
-      description: 'They provided us with early backing, funding, strategic advice, introductions, and so much more!'
-      image: ../images/award.svg
-      items:
-        - title: 'Alphemy Capital'
-          logo: '../images/logos/alphemy-capital-icon.svg'
-          url: https://alphemy.capital/
-        - title: 'Cetacean Capital'
-          logo: '../images/logos/cetacean-capital-icon.png'
-          url: https://cetacean.capital/
-        - title: 'White Paper Capital'
-          logo: '../images/logos/white-paper-capital-icon.svg'
-          url: https://www.whitepapercapital.com/
-        - title: 'Archery Fund'
-          logo: '../images/logos/archery-fund.png'
-          url: https://archery.fund/
-        - title: '80+ Private Individuals'
-    - title: Community projects
+    - title: dApps & projects
       description: 'Building on top, around, or below what we do, securing the network or providing services, they are the life & blood of Alephium & the reasons we grind every day!'
       image: ../images/sprout.svg
       items:
@@ -175,6 +133,34 @@ ecosystemSection:
         - title: '& More'
           logo: ''
           url: https://github.com/alephium/awesome-alephium
+    - title: Partners
+      description: 'From lawyers to peer blockchains, lobbying & local associations, they make us feel part of a larger ecosystem.'
+      image: ../images/network.svg
+      items:
+        - title: 'Bitcoin Association Switzerland'
+          logo: '../images/svgs/bas-logo-white.svg'
+          url: https://www.bitcoinassociation.ch/
+        - title: 'Cetacean Capital'
+          logo: '../images/logos/cetacean-capital-icon.png'
+          url: https://cetacean.capital/
+        - title: 'Crypto Valley Association'
+          logo: '../images/svgs/crypto-valley-association-vector-logo.svg'
+          url: https://cryptovalley.swiss/
+        - title: 'Dappnode'
+          logo: '../images/logos/Dappnode-logo-bw.png'
+          url: https://dappnode.io
+        - title: 'Flux Labs'
+          logo: '../images/svgs/flux-seeklogo.com.svg'
+          url: https://runonflux.io/
+        - title: 'Hodling SA'
+          logo: '../images/svgs/hodling-icon-bw-darkBackground.svg'
+          url: https://www.hodling.ch/
+        - title: 'Leax'
+          logo: '../images/logos/leax.svg'
+          url: https://www.leax.ch/
+        - title: 'UTXO Alliance'
+          logo: '../images/svgs/utxo-aliance-logo-white.svg'
+          url: https://utxo-alliance.org/
 milestonesSection:
   title: Completed milestones
   subtitle: Building every day
