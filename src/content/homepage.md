@@ -110,28 +110,22 @@ ecosystemSection:
       image: ../images/sprout.svg
       items:
         - title: 'Alphland'
-          logo: ''
           url: https://www.alph.land/
         - title: 'Ayin'
-          logo: ''
           url: https://www.ayin.app/
         - title: 'DEADRARE'
           logo: '../images/logos/DEADRARE-icon.png'
           url: https://deadrare.io
         - title: 'Walph'
-          logo: ''
           url: https://walph.io/
         - title: 'Sezame Wallet'
           logo: '../images/logos/sesame-wallet-icon.svg'
           url: https://sezame.app/
         - title: 'MetaPool'
-          logo: ''
           url: https://www.metapool.tech/dashboard
         - title: 'Sahhar Wallet'
-          logo: ''
           url: https://play.google.com/store/apps/details?id=com.sahhar.sahhar_wallet&pli=1
         - title: '& More'
-          logo: ''
           url: https://github.com/alephium/awesome-alephium
     - title: Partners
       description: 'From lawyers to peer blockchains, lobbying & local associations, they make us feel part of a larger ecosystem.'
