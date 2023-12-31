@@ -2,12 +2,10 @@
 title: Proof of Less Work
 ---
 
-Alephium's PoLW algorithm reduces the energy consumption compared to classical PoW by a factor of almost 90%.
+Alephium's innovative Proof of Less Work (PoLW) consensus mechanism reduces the energy consumption by over 87% compared to Nakamoto’s original Proof Of Work, under the same network conditions. This mechanism dynamically adjusts the difficulty after each new block and triggers a change in the mining schema when the network surpasses 1 Exahash/s of hashrate.
 
-It offers adaptive rewards based on hashrate & timestamp and enables internal mining cost through burning when the hashrate and energy consumption are significantly high.
+Once the network exceeds this threshold, miners are required to shift part of the external cost to the internal network cost by burning some coins (and consuming proportionally less energy). In this case, mining costs are both external (energy, equipment) and internal (burning coins inside the network).
 
-The exact way in which the PoLW algorithm works depends on the parameters set.
+Since burning coins has a cost but does not requires energy, the energy consumption is reduced without sacrificing security: in PoLW, the cost of mining a new block is the same as in PoW, but composed differently. 
 
-The equilibrium between the miners and the protocol changes dynamically and cannot be determined in advance. However, given the same amount of block rewards and hashrate conditions Alephium uses ⅛ of the energy compared to Bitcoin.
 
-The energy consumption of Bitcoin is approximately linear to the price growth, Alephium is sublinear which allows it to remain under 0.1%.
