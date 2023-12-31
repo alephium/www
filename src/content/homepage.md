@@ -56,7 +56,7 @@ technologySection:
         newTab: true
   polwSection:
     title: Efficiency in Energy Consumption
-    description: "Alephium’s Proof Of less Work is a simple, consistent and robust consensus mechanism for achieving decentralization while reducing the energy consumption by over 87% compared to the "classic” Proof Of Work. On Alephium, anyone can run a full node and verify on-chain data, embodying the principle of 'Don't trust, verify’."
+    description: "Alephium’s Proof Of less Work is a simple, consistent and robust consensus mechanism for achieving decentralization while reducing the energy consumption by over 87% compared to the "classic” Proof Of Work. On Alephium, anyone can run a full node and verify on-chain data,'Don't trust, verify’."
     links:
       - text: More details
       - text: PoLW white paper
