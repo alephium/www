@@ -1,9 +1,11 @@
 ---
-title: Smart contract design
+title: Stateful UTXO
 ---
 
-Alephium proposes a stateful UTXO model which offers both layer-1 scalability and the same level of programmability as the account model. In Alephium, multiple participants and calls can be grouped in a single smart contract transaction, which means that users can interact with each other atomically through trustless P2P smart contracts. This can truly be considered as a whole new programming paradigm for decentralized applications.
+There are two types of states in blockchain technology: mutable state (as seen in Ethereum) and immutable state (such as UTXO or eUTXO). Mutable state is more flexible and expressive, as evidenced by the vibrant ecosystem of Ethereum. However, the UTXO model provides inherent security advantages.
+Alephium's stateful UTXO model combines the advantages of both. It supports mutable states, like those found in Ethereum, for smart contracts while leveraging the security benefits of the UTXO model for assets
 
-On Alephium, tokens are first-class citizens and UTXO-based. As a result, they are effectively owned and under the custody of the users and not of the smart contracts. Last but not least, smart contracts are supported in intragroup shards.
+This is a huge improvement for developers and users alike, as the ability to have an upgraded account model with a dedicated model for token handling (UTXO) makes the sUTXO model a solid foundation for building smart contracts with the assurance of secure asset management.
 
-Powerful and secure dApps can easily be built on Alephium.
+Alephium's implementation allows multiple participants and calls to be grouped in a single transaction, unlocking truly trustless P2P transactions and smart contracts. Tokens on Alephium are first-class citizens, UTXO-based, reducing complexity and implementation risks, while granting users true ownership. Tokens can be effectively owned and under the custody of their private key, removing  third-party smart contracts risks.
+
