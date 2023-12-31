@@ -40,7 +40,7 @@ technologySection:
   subtitle: What makes Alephium different?
   blockFlowSection:
     title: 'Scalable & Sharded'
-    description: "Alephium is built on a novel and complete sharding algorithm called BlockFlow. It improves on the UTXO model of BTC to make it scalable and uses DAG data structure to reach consensus between different shards. This will allow up to 10,000 Transactions Per Second (currently more than 400 TPS vs Bitcoin's 7 TPS)."
+    description: "Alephium is built on a novel sharding algorithm called BlockFlow. It leverages a stateful UTXO model and DAG data structure to deliver efficient and practical sharding. This enables Alephium to natively support more than 10,000 transactions per second while preserving a seamless “'single-chain” user experience."
     links:
       - text: More details
       - text: White paper
@@ -48,7 +48,7 @@ technologySection:
         newTab: true
   smartContractSection:
     title: Programmable & Secure
-    description: 'Alephium introduces the stateful UTXO model offering layer-1 scalability and the same level of programmability as the account model used on Ethereum, whilst being more secure.'
+    description: 'Alephium's stateful UTXO model combines the advantages of the UTXO and account models. It supports mutable states, like those found in Ethereum, for smart contracts while leveraging the security benefits of the UTXO model for assets.
     links:
       - text: More details
       - text: Guide
@@ -56,7 +56,7 @@ technologySection:
         newTab: true
   polwSection:
     title: Efficiency in Energy Consumption
-    description: "Alephium employs 'Proof of Less Work', which combines physical work and coin economics to dynamically adjust the work required to mine new blocks. Given the same network conditions, Alephium uses ~90% less energy compared to Bitcoin."
+    description: "Alephium’s Proof Of less Work is a simple, consistent and robust consensus mechanism for achieving decentralization while reducing the energy consumption by over 87% compared to the "classic” Proof Of Work. On Alephium, anyone can run a full node and verify on-chain data, embodying the principle of 'Don't trust, verify’."
     links:
       - text: More details
       - text: PoLW white paper
@@ -64,7 +64,7 @@ technologySection:
         newTab: true
   vmsSection:
     title: Its own Virtual Machine & Programming Language.
-    description: "The Alphred Virtual Machine solves many of the critical issues of the current dApps platforms with huge improvements on security, development experience, and introduces new paradigms such as trustless P2P smart contracts transactions. Alephium's programming language, Ralph, has a syntax inspired by the Rust programming language. It allows for building efficient and secure smart contracts easily. It's specifically designed to facilitate the creation of DeFi dApps!"
+    description: Alephium enhances developer experience and security with its Virtual Machine, SDK, and performance-optimized programming language. Its MEV-aware design and built-in security measures eliminate common attack vectors, such as reentrancy attacks, unlimited authorization and flash loans. Alephium allows devs to focus on what matters and pioneers entirely new possibilities for smart contracts, dApps and tokens.
     links:
       - text: More details
 numbersSection:
