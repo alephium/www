@@ -40,7 +40,7 @@ technologySection:
   subtitle: What makes Alephium different?
   blockFlowSection:
     title: 'Scalable & Sharded'
-    description: "Alephium is built on a novel sharding algorithm called BlockFlow. It leverages a stateful UTXO model and DAG data structure to deliver efficient and practical sharding. This enables Alephium to natively support more than 10,000 transactions per second while preserving a seamless “'single-chain” user experience."
+    description: "Alephium is built on a novel sharding algorithm called BlockFlow. It leverages a stateful UTXO model and DAG data structure to deliver efficient and practical sharding. This enables Alephium to natively support over 10,000 transactions per second while preserving a seamless “'single-chain” user experience."
     links:
       - text: More details
       - text: White paper
