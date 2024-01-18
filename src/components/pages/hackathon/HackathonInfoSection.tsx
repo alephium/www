@@ -17,10 +17,6 @@ export type HackathonInfoSectionContentType = {
   participantsInfo: {
     title: string
     description: string
-    link: {
-      text: string
-      url: string
-    }
   }
   prerequisites: {
     title: string
@@ -72,10 +68,7 @@ const HackathonInfoSection = ({ content, className }: HackathonInfoSectionProps)
         backgroundColor="bgTertiary"
       />
       <H3 divider>{content.participantsInfo.title}</H3>
-      <Paragraph>{content.participantsInfo.description}</Paragraph>
-      <StyledArrowedLink url={content.participantsInfo.link.url} newTab>
-        {content.participantsInfo.link.text}
-      </StyledArrowedLink>
+      <Paragraph dangerouslySetInnerHTML={{ __html: content.participantsInfo.description }} />
       <br />
       <H3 divider>{content.prerequisites.title}</H3>
       <Paragraph>{content.prerequisites.description}</Paragraph>

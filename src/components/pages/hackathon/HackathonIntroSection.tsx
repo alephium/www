@@ -30,12 +30,10 @@ const HackathonIntroSection = ({
   </HackathonSectionContainer>
 )
 
-export default styled(HackathonIntroSection)`
-  margin-top: var(--spacing-14);
-`
+export default styled(HackathonIntroSection)``
 
 const StyledSectionTextHeader = styled(HackathonSectionTitle)`
-  max-width: 550px;
+  max-width: 650px;
   padding: 0;
 
   h2 {
@@ -53,6 +51,7 @@ const Description = styled.p`
   border-left: 2px solid ${({ theme }) => theme.palette1};
   padding-left: 20px;
   text-align: justify;
+  white-space: pre-line;
 
   @media ${deviceBreakPoints.mobile} {
     margin: var(--spacing-2) var(--spacing-2) 0 0;

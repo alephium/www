@@ -1,9 +1,8 @@
 import { colord } from 'colord'
 import styled from 'styled-components'
-import AlephiumLogo from '../../AlephiumLogo'
-import ParallaxWrapper from '../../ParallaxWrapper'
 import { deviceBreakPoints } from '../../../styles/global-style'
 import HackathonSectionContainer from './HackathonSectionContainer'
+import headerImage from '../../../images/alephium-hackathon-lake.png'
 
 export type HackathonLandingSectionContentType = {
   tagline: string
@@ -17,72 +16,62 @@ interface HackathonLandingSectionProps {
 
 const HackathonLandingSection = ({ content: { tagline, title, date } }: HackathonLandingSectionProps) => (
   <SectionWrapper>
-    <ParallaxWrapper speed={5}>
-      <HackathonSectionContainer>
-        <Content>
-          <FirstContentBox>
-            <AlephiumLogoStyled gradientIndex={2} />
-            <Date>{date}</Date>
-            <Title>{title}</Title>
-          </FirstContentBox>
-          <SecondContentBox>
-            <TagLine>{tagline}</TagLine>
-          </SecondContentBox>
-        </Content>
-      </HackathonSectionContainer>
-    </ParallaxWrapper>
+    <HackathonSectionContainer>
+      <Content>
+        <FirstContentBox>
+          <Date>{date}</Date>
+          <Title>{title}</Title>
+        </FirstContentBox>
+        <SecondContentBox>
+          <TagLine>{tagline}</TagLine>
+        </SecondContentBox>
+      </Content>
+    </HackathonSectionContainer>
   </SectionWrapper>
 )
 
 export default HackathonLandingSection
 
 const SectionWrapper = styled.div`
+  margin-top: 65px;
   position: relative;
-  height: calc(max(60vh, 300px));
-  max-height: 400px;
+  height: calc(max(70vh, 300px));
+  padding-top: 40px;
   background-color: black;
-`
-
-const AlephiumLogoStyled = styled(AlephiumLogo)`
-  height: 10vh;
-  min-height: 80px;
-  max-height: 110px;
-  width: auto;
-`
-
-const Content = styled.div`
-  margin-bottom: -100px;
-  box-shadow: 0 0 60px rgba(0, 255, 94, 0.444);
-  border: 1px solid ${({ theme }) => theme.palette1};
-  overflow: hidden;
-
-  @media ${deviceBreakPoints.mobile} {
-    margin-left: var(--spacing-4);
-    margin-right: var(--spacing-4);
-  }
-`
-
-const FirstContentBox = styled.div`
-  padding: var(--spacing-6) calc(max(3vw, 30px));
-  background-color: ${colord('#1111111').alpha(0.1).toRgbString()};
-  backdrop-filter: blur(20px);
-  max-height: 300px;
+  background-image: url(${headerImage});
   background-size: cover;
   background-position: center;
 `
 
+const Content = styled.div`
+  border: 1px solid ${({ theme }) => theme.borderPrimary};
+  overflow: hidden;
+  max-width: 600px;
+
+  @media ${deviceBreakPoints.mobile} {
+    margin-left: var(--spacing-2);
+    margin-right: var(--spacing-2);
+  }
+`
+
+const FirstContentBox = styled.div`
+  padding: var(--spacing-4) calc(max(3vw, 30px));
+  background-color: ${colord('#000000').alpha(0.9).toRgbString()};
+  backdrop-filter: blur(24px);
+  line-height: 40px;
+`
+
 const SecondContentBox = styled.div`
-  background-color: ${({ theme }) => theme.palette1};
+  background-color: ${colord('#000000').alpha(0.7).toRgbString()};
   color: white;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(24px);
   padding: 2vh 3vw;
-  max-height: 150px;
+  line-height: 30px;
 `
 
 const TagLine = styled.h2`
   color: ${({ theme }) => theme.textPrimary};
   font-size: var(--fontSize-24);
-  max-width: 500px;
   font-weight: 400;
 `
 const Title = styled.h1`

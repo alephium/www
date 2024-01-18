@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-export const Paragraph = styled.p`
+export const Paragraph = styled.div`
   opacity: 0.8;
 `
 

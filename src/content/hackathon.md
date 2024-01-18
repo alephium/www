@@ -1,21 +1,25 @@
 ---
 headerLandingSection:
-  tagline: "Following the Leman upgrade, here's Alephium's first ever online hackathon."
-  title: Buidl On Alephium
-  date: 15th - 25th April 2023
+  tagline: "Join the pioneers, come hacking together a rich, interoperable ecosystem of tools & dApps! Alephium is happy to announce the first hackathon!
+  With participation of the Blockflow Alliance DAO & the Cetacean Capital DAO! "
+  title: "Hackathon #1 - Pioneers"
+  date: 12th - 26th February 2024
 introSection:
   title: 1. 2. 3. Start building.
-  subtitle: Decentralization, self-sovereignty, and security meet high-performance, accessibility, and energy efficiency in Alephium’s dev-friendly network.
-  description: "For its first hackathon, Alephium invites talented builders from all over the world to experiment and leverage its new development paradigm to expand on existing capabilities and create the first wave of Alephium’s dApps. This hackathon aims to propel the developer community’s creativity into an enabling force for innovation and progress. 
-  And there is more! Projects launched during the hackathon will have the opportunity to receive further support from Alephium to continue their development."
+  subtitle: "Scalable for devs. Secure for users. Decentralized for all."
+  description: "Over the past year, the Leman Network Upgrade unleashed new tools for developers.
+  
+  The bridge has opened the doors to new users, the first dApps have laid the foundation of a lively ecosystem & recent attention has brought a lot of curious & active newcomers. 
+
+  Alephium is by builders, for builders. 
+
+  Come & hack with us."
 hackathonInfo:
   participantsInfo:
-    title: Participants information
-    description: "Participants can apply as an individual or with a team of up to 5 people. It is important that each entry (solo or team) submit a brief description of the idea and the skills of each participant to make the organization process more efficient and streamlined.
-    To enter your team, please fill out the following application form."
-    link: 
-      text: "Application form"
-      url: "https://yo.com"
+    title: When & where?
+    description: "The hackathon will happen exclusively online, from February 12th to 26th. 
+    Main communication hub for the hackathon will be [our discord](http://www.alephium.org/discord) (see below).
+    Until we release the hackathon channels, join the developer channel!"
   prerequisites:
     title: Prerequisites
     description: "Here are the main things you will need to know and use in order to create your dApp with Alephium. Get start easily by checking out or dedicated guide."

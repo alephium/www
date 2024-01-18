@@ -128,10 +128,6 @@ export const pageQuery = graphql`
             participantsInfo {
               title
               description
-              link {
-                text
-                url
-              }
             }
             prerequisites {
               title
