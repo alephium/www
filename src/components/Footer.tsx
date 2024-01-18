@@ -12,24 +12,34 @@ import ModalContact from './ModalContact'
 import ModalPrivacyPolicy from './ModalPrivacyPolicy'
 
 import Logo from '../images/svgs/logo.svg'
+import { graphql, useStaticQuery } from 'gatsby'
 
 export interface FooterContentType {
-  columns: {
-    title: string
-    links: SimpleLinkProps[]
-  }[]
+  footer: {
+    nodes: {
+      frontmatter: {
+        columns: {
+          title: string
+          links: SimpleLinkProps[]
+        }[]
+      }
+    }[]
+  }
 }
 
 interface FooterProps {
-  content: FooterContentType
   openPrivacyPolicyModal?: boolean
   className?: string
 }
 
-const Footer: FC<FooterProps> = ({ className, content, openPrivacyPolicyModal }) => {
+const Footer = ({ className, openPrivacyPolicyModal }: FooterProps) => {
   const [isTeamModalOpen, setIsTeamModalOpen] = useState(false)
   const [isContactModalOpen, setIsContactModalOpen] = useState(false)
   const [isPrivacyPolicyModalOpen, setIsPrivacyPolicyModalOpen] = useState(false)
+  const data = useStaticQuery<FooterContentType>(footerQuery)
+
+  const content = data.footer.nodes[0].frontmatter
+
   const columnsContent = content.columns
   columnsContent[2].links[0] = { ...columnsContent[2].links[0], openModal: setIsTeamModalOpen }
   columnsContent[2].links[2] = { ...columnsContent[2].links[2], openModal: setIsContactModalOpen }
@@ -87,6 +97,25 @@ let FooterColumn: FC<FooterColumnProps> = ({ className, title, links }) => {
     </div>
   )
 }
+
+export const footerQuery = graphql`
+  query {
+    footer: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/footer.md/" } }) {
+      nodes {
+        frontmatter {
+          columns {
+            title
+            links {
+              text
+              url
+              newTab
+            }
+          }
+        }
+      }
+    }
+  }
+`
 
 export default styled(Footer)`
   padding: var(--spacing-12) 0;

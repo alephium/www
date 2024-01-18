@@ -36,8 +36,12 @@ interface IndexPageProps extends PageProps {
           todoListSection: PageSectionTodoListContentType
           shopSection: PageSectionShopContentType
           followUsSection: PageSectionFollowUsContentType
-          footer: FooterContentType
         }
+      }[]
+    }
+    footer: {
+      nodes: {
+        frontmatter: FooterContentType
       }[]
     }
   }
@@ -74,7 +78,7 @@ const IndexPage = (props: IndexPageProps) => {
             <SectionDivider />
             <PageSectionShop content={pageContent.shopSection} />
             <PageSectionFollowUs content={pageContent.followUsSection} />
-            <Footer content={pageContent.footer} openPrivacyPolicyModal={openPrivacyPolicyModal} />
+            <Footer openPrivacyPolicyModal={openPrivacyPolicyModal} />
           </ContentContainer>
         </SiteWrapper>
       </ThemeProvider>
@@ -244,16 +248,6 @@ export const pageQuery = graphql`
             socialMediaLinks {
               name
               url
-            }
-          }
-          footer {
-            columns {
-              title
-              links {
-                text
-                url
-                newTab
-              }
             }
           }
         }
