@@ -72,23 +72,57 @@ const HackathonInfoSection = ({ content, className }: HackathonInfoSectionProps)
       <H3 divider>When & where?</H3>
       <Paragraph>
         The hackathon will happen exclusively online, from February 12th to 26th. Main communication hub for the
-        hackathon will be <SimpleLink url="http://www.alephium.org/discord" newTab text="our Discord" />. Until we
-        release the hackathon channels, join the developer channel!
+        hackathon will be <SimpleLink text="our Discord" url="http://www.alephium.org/discord" newTab />. Until we
+        release the hackathon channels, join the{' '}
+        <SimpleLink
+          text="developer channel!"
+          url="https://discord.com/channels/747741246667227157/948144672402972682"
+          newTab
+        />
       </Paragraph>
       <br />
-      <H3 divider>{content.prerequisites.title}</H3>
-      <Paragraph>{content.prerequisites.description}</Paragraph>
-      <ul>
-        {content.prerequisites.skills.map((s) => (
-          <li key={s}>{s}</li>
-        ))}
-      </ul>
-      <StyledArrowedLink url={content.prerequisites.link.url} newTab>
-        {content.prerequisites.link.text}
-      </StyledArrowedLink>
+      <H3 divider>What are the prizes?</H3>
+      <Paragraph>{content.prizes.description}</Paragraph>
+      <PrizeList>
+        <h4>Main prizes</h4>
+        <ul>
+          <li>
+            First prize is <b>12’500$ in ALPH</b>
+          </li>
+          <li>
+            Second prize is <b>6’500$ in ALPH</b>
+          </li>
+          <li>
+            3rd, 4th and 5th are <b>3’500$ in ALPH</b> each
+          </li>
+        </ul>
+        <h4>Special partner prizes</h4>
+        <ul>
+          <li>
+            Cetacean’s choice will receive <b>2’500$ in ALPH</b>
+          </li>
+          <li>
+            Blockflow’s choice will receive <b>2’500$ in ALPH</b>
+          </li>
+        </ul>
+        <h4>Bounties</h4>
+        <Paragraph>
+          Up to <b>10’000$ in ALPH</b> are reserved for the bounties
+        </Paragraph>
+        <h4>Honors</h4>
+        <Paragraph>
+          Up to <b>5’500$ in ALPH</b> is reserved for special honors at the jury’s discretion!
+        </Paragraph>
+        <Paragraph>
+          <i>
+            *Prizes will be awarded at the judges’ discretion and might be adapted in function of the quality of
+            submissions received.{' '}
+          </i>
+        </Paragraph>
+      </PrizeList>
       <br />
-      <H3 divider>{content.schedule.title}</H3>
-      <Paragraph>{content.schedule.description}</Paragraph>
+      <H3 divider>What can I build?</H3>
+      <Paragraph>There are two ways of participating! And you can do one, the other, or both.</Paragraph>
       <br />
       <ScheduleItems>
         {content.schedule.events.map((e) => (
@@ -115,18 +149,6 @@ const HackathonInfoSection = ({ content, className }: HackathonInfoSectionProps)
           />
         ))}
       </TrackCards>
-      <br />
-      <H3 divider>{content.prizes.title}</H3>
-      <Paragraph>{content.prizes.description}</Paragraph>
-      <br />
-      <PrizeList>
-        {content.prizes.prizeList.map((p) => (
-          <div key={p.title}>
-            <h3>{p.title}</h3>
-            <p>{p.description}</p>
-          </div>
-        ))}
-      </PrizeList>
     </HackathonSectionContainer>
   </div>
 )
@@ -204,35 +226,4 @@ const TrackCards = styled.div`
   }
 `
 
-const PrizeList = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  gap: 20px;
-  text-align: center;
-
-  div {
-    &:nth-child(1) {
-      border: 1px solid ${({ theme }) => theme.palette1};
-      background-color: ${({ theme }) => colord(theme.palette1).alpha(0.2).toHex()};
-    }
-    &:nth-child(2) {
-      border: 1px solid ${({ theme }) => colord(theme.palette1).darken(0.2).toHex()};
-      background-color: ${({ theme }) => colord(theme.palette1).darken(0.2).alpha(0.2).toHex()};
-    }
-    &:nth-child(3) {
-      border: 1px solid ${({ theme }) => colord(theme.palette1).darken(0.3).toHex()};
-      background-color: ${({ theme }) => colord(theme.palette1).darken(0.3).alpha(0.2).toHex()};
-    }
-    &:nth-child(4) {
-      border: 1px solid #333333;
-      background-color: ${colord('#333333').alpha(0.2).toHex()};
-      grid-column: 1 / span 3;
-    }
-  }
-
-  @media ${deviceBreakPoints.mobile} {
-    display: flex;
-    flex-direction: column;
-  }
-`
+const PrizeList = styled.div``

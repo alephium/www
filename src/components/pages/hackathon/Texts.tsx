@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 
 export const Paragraph = styled.p`
-  opacity: 0.8;
+  opacity: 0.9;
 `
 
 export const H3 = styled.h3<{ divider?: boolean }>`

@@ -5,13 +5,9 @@ import GlobalStyle, { deviceBreakPoints } from '../styles/global-style'
 import { hackathonTheme, lightTheme } from '../styles/themes'
 
 import Seo from '../components/Seo'
-import HackathonLandingSection, {
-  HackathonLandingSectionContentType
-} from '../components/pages/hackathon/HackathonLandingSection'
+import HackathonLandingSection from '../components/pages/hackathon/HackathonLandingSection'
 import SectionDivider from '../components/SectionDivider'
-import HackathonIntroSection, {
-  HackathonIntroSectionContentType
-} from '../components/pages/hackathon/HackathonIntroSection'
+import HackathonIntroSection from '../components/pages/hackathon/HackathonIntroSection'
 import HackathonInfoSection, {
   HackathonInfoSectionContentType
 } from '../components/pages/hackathon/HackathonInfoSection'
@@ -29,8 +25,6 @@ interface HackathonPageProps extends PageProps {
     hackathon: {
       nodes: {
         frontmatter: {
-          headerLandingSection: HackathonLandingSectionContentType
-          introSection: HackathonIntroSectionContentType
           hackathonInfo: HackathonInfoSectionContentType
           rulesAndJudging: HackathonJudgingSectionContentType
           gettingStarted: GettingStartedSectionContentType
