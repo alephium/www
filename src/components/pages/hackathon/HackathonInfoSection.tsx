@@ -12,6 +12,8 @@ import HackathonSectionContainer from './HackathonSectionContainer'
 import HackathonSectionTitle from './HackathonSectionTitle'
 import { H3, Paragraph } from './Texts'
 import TrackCard from './TrackCard'
+import { Link } from 'gatsby'
+import SimpleLink from '../../SimpleLink'
 
 export type HackathonInfoSectionContentType = {
   participantsInfo: {
@@ -67,8 +69,12 @@ const HackathonInfoSection = ({ content, className }: HackathonInfoSectionProps)
         bigSubtitle
         backgroundColor="bgTertiary"
       />
-      <H3 divider>{content.participantsInfo.title}</H3>
-      <Paragraph dangerouslySetInnerHTML={{ __html: content.participantsInfo.description }} />
+      <H3 divider>When & where?</H3>
+      <Paragraph>
+        The hackathon will happen exclusively online, from February 12th to 26th. Main communication hub for the
+        hackathon will be <SimpleLink url="http://www.alephium.org/discord" newTab text="our Discord" />. Until we
+        release the hackathon channels, join the developer channel!
+      </Paragraph>
       <br />
       <H3 divider>{content.prerequisites.title}</H3>
       <Paragraph>{content.prerequisites.description}</Paragraph>

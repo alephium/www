@@ -5,28 +5,28 @@ import { deviceBreakPoints } from '../../../styles/global-style'
 import HackathonSectionContainer from './HackathonSectionContainer'
 import HackathonSectionTitle from './HackathonSectionTitle'
 
-export type HackathonIntroSectionContentType = {
-  title: string
-  subtitle: string
-  description: string
-}
-
 interface HackathonIntroSectionProps {
-  content: HackathonIntroSectionContentType
   className?: string
 }
 
-const HackathonIntroSection = ({
-  content: { title, subtitle, description },
-  className
-}: HackathonIntroSectionProps) => (
+const HackathonIntroSection = ({ className }: HackathonIntroSectionProps) => (
   <HackathonSectionContainer className={className}>
     <Columns gap="50px">
       <Column>
-        <StyledSectionTextHeader bigSubtitle title={title} subtitle={subtitle} />
+        <StyledSectionTextHeader
+          bigSubtitle
+          title="1. 2. 3. Start building."
+          subtitle="Scalable for devs. Secure for users. Decentralized for all."
+        />
       </Column>
     </Columns>
-    <Description>{description}</Description>
+    <Description>{`Over the past year, the Leman Network Upgrade unleashed new tools for developers.
+  
+  The bridge has opened the doors to new users, the first dApps have laid the foundation of a lively ecosystem & recent attention has brought a lot of curious & active newcomers. 
+
+  Alephium is by builders, for builders. 
+
+  Come & hack with us.`}</Description>
   </HackathonSectionContainer>
 )
 

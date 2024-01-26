@@ -4,26 +4,19 @@ import { deviceBreakPoints } from '../../../styles/global-style'
 import HackathonSectionContainer from './HackathonSectionContainer'
 import headerImage from '../../../images/alephium-hackathon-lake.png'
 
-export type HackathonLandingSectionContentType = {
-  tagline: string
-  title: string
-  date: string
-}
-
-interface HackathonLandingSectionProps {
-  content: HackathonLandingSectionContentType
-}
-
-const HackathonLandingSection = ({ content: { tagline, title, date } }: HackathonLandingSectionProps) => (
+const HackathonLandingSection = () => (
   <SectionWrapper>
     <HackathonSectionContainer>
       <Content>
         <FirstContentBox>
-          <Date>{date}</Date>
-          <Title>{title}</Title>
+          <Date>Hackathon #1 - Pioneers</Date>
+          <Title>12th - 26th February 2024</Title>
         </FirstContentBox>
         <SecondContentBox>
-          <TagLine>{tagline}</TagLine>
+          <TagLine>
+            {`Join the pioneers, come hacking together a rich, interoperable ecosystem of tools & dApps! Alephium is happy to announce the first hackathon!    
+            With participation of the Blockflow Alliance DAO & the Cetacean Capital DAO!`}
+          </TagLine>
         </SecondContentBox>
       </Content>
     </HackathonSectionContainer>
@@ -36,7 +29,6 @@ const SectionWrapper = styled.div`
   margin-top: 65px;
   position: relative;
   height: calc(max(70vh, 300px));
-  padding-top: 40px;
   background-color: black;
   background-image: url(${headerImage});
   background-size: cover;
@@ -73,6 +65,7 @@ const TagLine = styled.h2`
   color: ${({ theme }) => theme.textPrimary};
   font-size: var(--fontSize-24);
   font-weight: 400;
+  white-space: pre-line;
 `
 const Title = styled.h1`
   color: ${({ theme }) => theme.textPrimary};

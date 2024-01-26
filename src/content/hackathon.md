@@ -1,7 +1,7 @@
 ---
 headerLandingSection:
   tagline: "Join the pioneers, come hacking together a rich, interoperable ecosystem of tools & dApps! Alephium is happy to announce the first hackathon!
-  With participation of the Blockflow Alliance DAO & the Cetacean Capital DAO! "
+  With participation of the Blockflow Alliance DAO & the Cetacean Capital DAO!"
   title: "Hackathon #1 - Pioneers"
   date: 12th - 26th February 2024
 introSection:

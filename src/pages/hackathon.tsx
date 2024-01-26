@@ -51,9 +51,9 @@ const IndexPage = (props: HackathonPageProps) => {
           <Seo />
           <GlobalStyle />
           <NavigationMenuStyled />
-          <HackathonLandingSection content={pageContent.headerLandingSection} />
+          <HackathonLandingSection />
           <SectionDivider />
-          <HackathonIntroSection content={pageContent.introSection} />
+          <HackathonIntroSection />
           <SectionDivider />
           <HackathonInfoSection content={pageContent.hackathonInfo} />
           <SectionDivider />
