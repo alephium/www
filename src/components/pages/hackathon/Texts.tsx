@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components'
 
 export const Paragraph = styled.p`
   opacity: 0.9;
+  white-space: pre-line;
 `
 
 export const H3 = styled.h3<{ divider?: boolean }>`

@@ -14,8 +14,10 @@ const HackathonLandingSection = () => (
         </FirstContentBox>
         <SecondContentBox>
           <TagLine>
-            {`Join the pioneers, come hacking together a rich, interoperable ecosystem of tools & dApps! Alephium is happy to announce the first hackathon!    
-            With participation of the Blockflow Alliance DAO & the Cetacean Capital DAO!`}
+            {`Join the pioneers, come hacking together a rich, interoperable ecosystem of tools & dApps. 
+            Alephium is happy to announce the first hackathon!
+            
+            With participation of the Blockflow Alliance DAO & the Cetacean Capital DAO.`}
           </TagLine>
         </SecondContentBox>
       </Content>
@@ -36,7 +38,6 @@ const SectionWrapper = styled.div`
 `
 
 const Content = styled.div`
-  border: 1px solid ${({ theme }) => theme.borderPrimary};
   overflow: hidden;
   max-width: 600px;
 
@@ -51,6 +52,8 @@ const FirstContentBox = styled.div`
   background-color: ${colord('#000000').alpha(0.9).toRgbString()};
   backdrop-filter: blur(24px);
   line-height: 40px;
+  border-radius: 12px;
+  margin-bottom: 10px;
 `
 
 const SecondContentBox = styled.div`
@@ -59,11 +62,12 @@ const SecondContentBox = styled.div`
   backdrop-filter: blur(24px);
   padding: 2vh 3vw;
   line-height: 30px;
+  border-radius: 12px;
 `
 
 const TagLine = styled.h2`
   color: ${({ theme }) => theme.textPrimary};
-  font-size: var(--fontSize-24);
+  font-size: 1.2rem;
   font-weight: 400;
   white-space: pre-line;
 `

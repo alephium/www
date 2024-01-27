@@ -148,6 +148,10 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+  b {
+    font-weight: 600;
+  }
+
   // Modals
   
   .ReactModal__Overlay {
