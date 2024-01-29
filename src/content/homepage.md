@@ -81,7 +81,7 @@ walletsSection:
       color: 'rgb(153, 0, 255)'
       actions:
         - title: Get the desktop wallet
-          link: https://github.com/alephium/desktop-wallet/releases/latest/
+          link: https://github.com/alephium/alephium-frontend/releases/latest/
     - title: Extension wallet 🌍
       description: 'The wallet in your browser. Get access to the latest features with a focus on DeFi.'
       screenshot: ../images/screenshots/extension.png
