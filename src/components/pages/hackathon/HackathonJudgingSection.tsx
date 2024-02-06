@@ -1,98 +1,149 @@
-import { colord } from 'colord'
-import { IGatsbyImageData } from 'gatsby-plugin-image'
 import styled from 'styled-components'
 import TeamMember from '../../TeamMember'
 import { deviceBreakPoints } from '../../../styles/global-style'
 import HackathonSectionContainer from './HackathonSectionContainer'
-import HackathonSectionTitle from './HackathonSectionTitle'
 import { H3, Paragraph } from './Texts'
+import SimpleLink from '../../SimpleLink'
 
-export type HackathonJudgingSectionContentType = {
-  title: string
-  subtitle: string
-  rules: {
-    title: string
-    description: string
-  }
-  criteria: {
-    title: string
-    description: string
-    criteriumList: {
-      title: string
-      description: string
-    }[]
-  }
-  jury: {
-    title: string
-    description: string
-    people: {
-      name: string
-      role: string
-      picture: {
-        childImageSharp: {
-          gatsbyImageData: IGatsbyImageData
-        }
-      }
-    }[]
-  }
-}
-
-interface HackathonJudgingSectionProps {
-  content: HackathonJudgingSectionContentType
-  className?: string
-}
-
-const HackathonJudgingSection = ({ content }: HackathonJudgingSectionProps) => (
+const HackathonJudgingSection = () => (
   <HackathonSectionContainer>
-    <HackathonSectionTitle title={content.title} subtitle={content.subtitle} bigSubtitle />
-    <HighlightedBox>
-      <H3>{content.rules.title}</H3>
-      <Paragraph>{content.rules.description}</Paragraph>
-    </HighlightedBox>
+    <H3 divider>Who’s in the Jury?</H3>
+    <Paragraph>
+      We’ve assembled a knowledgeable, exigent but amicable & engaged jury composed of core contributors. This jury will
+      distribute the main prizes, bounties rewards & honorable mentions:
+    </Paragraph>
+    <Jury>
+      <PersonCard>
+        <TeamMember
+          name="wachmc"
+          image="https://pbs.twimg.com/profile_images/1305244977929355264/ZpRLjJcA_400x400.jpg"
+          role="Core Dev"
+          url="https://twitter.com/wachmc"
+        />
+      </PersonCard>
+      <PersonCard>
+        <TeamMember
+          name="h0ngcha0"
+          image="https://pbs.twimg.com/profile_images/1661551106294521856/qMixsjJu_400x400.jpg"
+          role="Core Dev"
+          url="https://twitter.com/hongchao"
+        />
+      </PersonCard>
+      <PersonCard>
+        <TeamMember
+          name="Mika"
+          image="https://pbs.twimg.com/profile_images/1676260099096997890/PGifYKJ7_400x400.jpg"
+          role="Product"
+          url="https://twitter.com/mika_pote"
+        />
+      </PersonCard>
+      <PersonCard>
+        <TeamMember
+          name="zippy9999"
+          image="https://pbs.twimg.com/profile_images/1319902775489318919/fND_7B0D_400x400.jpg"
+          role="COO"
+          url="https://twitter.com/MaudBannwart"
+        />
+      </PersonCard>
+      <PersonCard>
+        <TeamMember
+          name="Polto"
+          image="https://pbs.twimg.com/profile_images/1099938333227134977/pWfwDYnu_400x400.png"
+          role="Strategist"
+          url="https://twitter.com/_polto_"
+        />
+      </PersonCard>
+      <PersonCard>
+        <TeamMember
+          name="zippy9999"
+          image="https://pbs.twimg.com/profile_images/1608261674938646529/k6lRrQNO_400x400.jpg"
+          role="CMO"
+          url="https://twitter.com/zippy9999"
+        />
+      </PersonCard>
+    </Jury>
+    <Paragraph>Partners will have their own juries & will choose the partner prizes independently:</Paragraph>
+    <Paragraph>Partner jury — Blockflow DAO</Paragraph>
+    <Paragraph>Partner jury — Cetacean Capital DAO</Paragraph>
     <br />
-    <H3 divider>{content.criteria.title}</H3>
-    <Paragraph>{content.criteria.description}</Paragraph>
+    <H3 divider>What will be the jury’s criteria?</H3>
+    <Paragraph>
+      Participants are encouraged to be creative and propose projects that resonate with their interests, as long as
+      they align with Alephium’s framework and fit into one of the proposed categories. Here is how the jury will
+      evaluate your project:
+    </Paragraph>
     <br />
     <CriteriumList>
-      {content.criteria.criteriumList.map((c) => (
-        <CriteriumCard key={c.title}>
-          <H3>{c.title}</H3>
-          <Paragraph>{c.description}</Paragraph>
-        </CriteriumCard>
-      ))}
+      <CriteriumCard>
+        <H3>Implementation</H3>
+        <Paragraph>Does the interaction with Alephium demonstrate quality software development?</Paragraph>
+      </CriteriumCard>
+      <CriteriumCard>
+        <H3>From idea to finish</H3>
+        <Paragraph>Does the idea/intention announced at the beginning match with the output at the end?</Paragraph>
+      </CriteriumCard>
+      <CriteriumCard>
+        <H3>UX/Design</H3>
+        <Paragraph>Is the user experience and design of the project well thought out?</Paragraph>
+      </CriteriumCard>
+      <CriteriumCard>
+        <H3>Potential Impact</H3>
+        <Paragraph>How big of an impact could the project have on the Alephium ecosystem?</Paragraph>
+      </CriteriumCard>
+      <CriteriumCard>
+        <H3>Quality of the Idea</H3>
+        <Paragraph>How creative and unique is the project?</Paragraph>
+      </CriteriumCard>
     </CriteriumList>
-    <H3 divider>{content.jury.title}</H3>
-    <Paragraph>{content.jury.description}</Paragraph>
     <br />
-    <Jury>
-      {content.jury.people.map((p) => (
-        <PersonCard key={p.name}>
-          <TeamMember name={p.name} image={p.picture} role={p.role} />
-        </PersonCard>
-      ))}
-    </Jury>
+    <H3 divider>What are the rules?</H3>
+    <Paragraph>
+      <ul>
+        <li>
+          <b>Age and Legal Requirements:</b> Participants must be at least 18 years old, or have reached the age of
+          majority in their jurisdiction, whichever is greater. Compliance with the terms and conditions outlined{' '}
+          <SimpleLink
+            text="here "
+            url="https://drive.google.com/file/d/1l6zPHBKYiJshTbEBB__W1a8nxOrNDfZF/view?usp=sharing"
+            newTab
+          />
+          is mandatory.
+        </li>
+        <li>
+          <b>Adherence to Themes: </b>Projects should align with the hackathon’s themes and categories. Creativity is
+          encouraged, but relevance to Alephium’s ecosystem is essential.
+        </li>
+        <li>
+          <b>Progress and Development: </b>Projects can build upon existing work, but only advancements made during the
+          hackathon will be considered for judging.
+        </li>
+        <li>
+          <b>Where will the teams submit their projects: </b>The submissions must include links to code repositories.
+          You can also include text, video, or audio with relevant graphics and links to webapps you may find relevant.
+        </li>
+      </ul>
+      We’ve assembled a knowledgeable, exigent but amicable & engaged jury composed of core contributors. This jury will
+      distribute the main prizes, bounties rewards & honorable mentions:
+    </Paragraph>
     <br />
+    <H3 divider>What happens after the hackathon?</H3>
+    <Paragraph>Participating projects can subsequently apply to Alephium’s grant program.</Paragraph>
+    <Paragraph>
+      <SimpleLink
+        text="Cetacean Capital is also interested to support participating projects as the DAO"
+        url="https://cetaceancapital.medium.com/bringing-the-a-game-2024-outlook-of-our-alephium-investment-4afd9a86606f"
+        newTab
+      />{' '}
+      “is dedicated to supporting standout projects that align with their criteria in the upcoming Hackathon, providing
+      investment/seed funding ranging from $50.000 to $1.000.000”.
+    </Paragraph>
+    <Paragraph>
+      The Blockflow DAO also expressed interest in helping quality projects develop further after the hackathon.
+    </Paragraph>
   </HackathonSectionContainer>
 )
 
 export default HackathonJudgingSection
-
-const HighlightedBox = styled.div`
-  margin-bottom: var(--spacing-4);
-  padding: var(--spacing-4);
-  border: 1px solid ${({ theme }) => theme.palette1};
-  color: ${({ theme }) => theme.palette1};
-  background-color: ${({ theme }) => colord(theme.palette1).alpha(0.05).toHex()};
-
-  h3 {
-    margin-top: 0 !important;
-  }
-
-  p {
-    margin-bottom: 0 !important;
-    opacity: 1 !important;
-  }
-`
 
 const CriteriumList = styled.div`
   display: grid;
@@ -132,6 +183,7 @@ const PersonCard = styled.div`
   max-width: 170px;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 `

@@ -112,27 +112,15 @@ gettingStarted:
   subtitle: Kickstart your project now.
 ---
 
-### Alephium Hackathon Documentation and Tutorials
+[Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdDsa1CwJeg-fxrWb1gVWefP4iJoNoZwNe0PNwk94GqmcMkHg/viewform?usp=sf_link) to apply and start your project!
 
-Documentation and tutorials are available to all participants before the event. The most relevant material has been curated and is available on:
+- Developer [onboarding thread](https://twitter.com/alephium/status/1752028946399654269)
+- The full [documentation](http://docs.alephium.org/)
+- Getting started with RALPH Alephium’s [programming language](https://docs.alephium.org/ralph/getting-started)
+- RALPH Examples
+- dApps [Proof of concepts (PoC)](https://docs.alephium.org/dapps/ecosystem#prototypes) (DEX, NFT marketplace, bridge)
+- Workshop #1 with h0ngchao [How to Build a Faucet]() — [video]()
+- Workshop #2 with h0ngchao [How to implement friend.tech on Alephium, part 1](https://medium.com/@alephium/second-developer-workshop-re-implementing-friend-techs-smart-contract-in-ralph-806e3f6551aa), and [part 2](https://medium.com/@alephium/second-developer-workshop-re-implementing-friend-techs-smart-contract-in-ralph-part-2-8f9959742b47) — [video 1](https://www.youtube.com/watch?v=gi2sxvB9Np8), [video 2](https://www.youtube.com/watch?v=Xgt3_HwoUOc)
 
-- https://docs.alephium.org/
-- https://docs.alephium.org/dapps/getting-started
-- https://docs.alephium.org/ralph/getting-started
-- https://docs.alephium.org/network/devnet-guide
-
-The team will be available on the designated Discord channel throughout the event to guide and help participants with any questions that come up.
-
-To prepare, we advise participants to focus on consulting the available resources, and start exploring our tutorials.
-
-### Hackathon Rules
-
-To access the hackathon rules please go [here](https://alephium.org).
-
-### Join the Alephium Hackathon
-
-Join the Alephium Hackathon and start coding. Stay tuned for tech talks, AMAs, and much more!
-
-### Useful links and Social media channels
-
-Further useful links to be included. Social media channels to be included.
+To know more about Alephium in general, start [here](https://x.com/alephium/status/1726249933374959943?s=20) and in our [docs](https://docs.alephium.org/)! And read more [there](https://x.com/alephium/status/1744795616818217432?s=20)! Our bible of content is [here](https://docs.alephium.org/Content), and our medium is [here](https://medium.com/@alephium).
+We can’t wait to be there!

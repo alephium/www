@@ -61,12 +61,6 @@ interface HackathonInfoSectionProps {
 const HackathonInfoSection = ({ content, className }: HackathonInfoSectionProps) => (
   <div className={className}>
     <HackathonSectionContainer>
-      <HackathonSectionTitle
-        title="The Hackathon"
-        subtitle="What you need to know"
-        bigSubtitle
-        backgroundColor="bgTertiary"
-      />
       <H3 divider>When & where?</H3>
       <Paragraph>
         The hackathon will happen exclusively online, from February 12th to 26th. Main communication hub for the
@@ -80,20 +74,25 @@ const HackathonInfoSection = ({ content, className }: HackathonInfoSectionProps)
       </Paragraph>
       <br />
       <H3 divider>What are the prizes?</H3>
-      <Paragraph>{content.prizes.description}</Paragraph>
       <PrizeList>
-        <h4>Main prizes</h4>
-        <ul>
-          <li>
-            First prize is <b>12’500$ in ALPH</b>
-          </li>
-          <li>
-            Second prize is <b>6’500$ in ALPH</b>
-          </li>
-          <li>
-            3rd, 4th and 5th are <b>3’500$ in ALPH</b> each
-          </li>
-        </ul>
+        <Paragraph>The main prizes are tiered to recognize the top five submissions:</Paragraph>
+        <MainPrizesContainer>
+          <MainPrizesTitle>Main prizes</MainPrizesTitle>
+          <ul>
+            <li>
+              First prize is <b>12’500$ in ALPH</b>
+            </li>
+            <li>
+              Second prize is <b>6’500$ in ALPH</b>
+            </li>
+            <li>
+              3rd, 4th and 5th are <b>3’500$ in ALPH</b> each
+            </li>
+          </ul>
+        </MainPrizesContainer>
+        <Paragraph>
+          In addition to the main prizes, special partner prizes add an extra chance to get recognized & rewarded:
+        </Paragraph>
         <h4>Special partner prizes</h4>
         <ul>
           <li>
@@ -103,6 +102,11 @@ const HackathonInfoSection = ({ content, className }: HackathonInfoSectionProps)
             Blockflow’s choice will receive <b>2’500$ in ALPH</b>
           </li>
         </ul>
+
+        <Paragraph>
+          The hackathon also features bounties and honors to encourage a wide range of contributions:
+        </Paragraph>
+
         <h4>Bounties</h4>
         <Paragraph>
           Up to <b>10’000$ in ALPH</b> are reserved for the bounties
@@ -113,16 +117,21 @@ const HackathonInfoSection = ({ content, className }: HackathonInfoSectionProps)
         </Paragraph>
         <Paragraph>
           <i>
-            *Prizes will be awarded at the judges’ discretion and might be adapted in function of the quality of
-            submissions received.{' '}
+            Note: The distribution of prizes is subject to the discretion of the jury and may be adjusted based on the
+            quality of submissions received.{' '}
           </i>
         </Paragraph>
       </PrizeList>
       <br />
       <H3 divider>What can I build?</H3>
-      <Paragraph>There are two ways of participating! And you can do one, the other, or both.</Paragraph>
+      <Paragraph>
+        Participants can engage in one of two primary participation methods: embarking on the main quests or tackling
+        side quests called bounties.
+      </Paragraph>
       <h4>The main quests</h4>
-      <Paragraph>Participate in teams of 2 to 5 people, over the following categories: </Paragraph>
+      <Paragraph>
+        Participants must form teams of 2 to 5 people and complete projects in the following categories:
+      </Paragraph>
       <ul>
         <li>
           <b>🪄 dApps Development:</b> challenge your skills in decentralized application development.
@@ -134,80 +143,33 @@ const HackathonInfoSection = ({ content, className }: HackathonInfoSectionProps)
           <b>🔀 Interoperability:</b> Explore the connection of Alephium with other blockchain systems.
         </li>
       </ul>
-      <h4>Bounties</h4>
-      <Paragraph>Full list of bounties will be announced closer to the hackathon kickoff!</Paragraph>
-      <Paragraph>
-        You can build any idea you want as long as it builds on Alephium and fits in one of the proposed categories. If
-        you have a different idea, ping us in the general hackathon discord channel.
-      </Paragraph>
       <Paragraph>
         <i>
-          * You can start with a pre-existing project, but only the code progress that has happened for the duration of
-          the hackathon will be considered for the evaluation & judging of the projects. For that we’ll ask you to
-          define a clear objective at the beginning!
+          Can I join with an existing project? Those who wish to start with a pre-existing project can do so, but only
+          the progress made during the hackathon will be considered for evaluation and judging. Clear objectives will
+          need to be set at the beginning of the hackathon to facilitate this assessment.
         </i>
       </Paragraph>
-
-      <H3 divider>Conditions</H3>
-
+      <h4>Bounties</h4>
       <Paragraph>
-        Participants in the Hackathon must be at least 18 years old or have reached the age of majority in the
-        jurisdiction in which they reside, whichever is greater old & fit with the{' '}
-        <SimpleLink text="t&c" url="https://docs.google.com/document/d/1t-ViAwUSHRhRGCx4RiwL50WZoGcZeYTj" newTab />.
-        Participants must register individually using the hackathon{' '}
-        <SimpleLink
-          text="applicant form"
-          url="https://docs.google.com/forms/d/15FSd7GFPrwZXy5_cwCSDb7NXYFPTaL1DdG4Z1_0v3_s/viewform"
-          newTab
-        />
-        . Participants will be given a special discord role.
+        Everyone can participate as a team or hack solo (but bounties are not eligible for the main prizes). These are
+        specific/smaller tasks or challenges that participants can complete for rewards. The list of bounties will be
+        announced closer to the hackathon kickoff.
       </Paragraph>
-
-      <H3 divider>Why participate?</H3>
-
-      <h4>Earn great prizes!</h4>
-      <Paragraph>We’ve gone out of our way to get big prizes, and great partners.</Paragraph>
-      <h4>Get visible!</h4>
-      <Paragraph>
-        {`This hackathon is just the beginning! 
-        
-        Participating projects can subsequently apply to Alephium’s `}
-
-        <SimpleLink
-          text="grant program. "
-          url="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md#grants"
-          newTab
-        />
-
-        {`
-        
-        Cetacean Capital is also interested to support participating projects as the DAO “is dedicated to supporting
-        standout projects that align with their criteria in the upcoming Hackathon, providing investment/seed funding
-        ranging from $50.000 to $1.000.000”. 
-        
-        The Blockflow DAO also expressed interest in helping quality projects develop further after the hackathon.`}
-      </Paragraph>
-      <h4>Be useful!</h4>
-      <Paragraph>
-        Complete some bounties, propose new ones, create awesome dApps or tooling for an active and growing community of
-        builders and users!
-      </Paragraph>
-      <h4>Hack, build, hack!</h4>
-      <Paragraph>Discover Ralph, the APS, our doc & the community.</Paragraph>
-      <h4>Build, meet, and progress together!</h4>
-      <Paragraph>
-        Direct access to all core-contributors + active devs. Get & give feedback. It’s your chance to contribute early
-        on to a nascent, fast-growing ecosystem!
-      </Paragraph>
-
       <H3 divider>What is the schedule?</H3>
-
       <ScheduleItems>
         <ScheduleItem>
           <ScheduleItemDot />
           <ScheduleItemText>
-            <h4>January 19th/22nd</h4>
+            <h4>January 19th</h4>
             <p>Announcement and team enrollment - Opening of applications</p>
+          </ScheduleItemText>
+        </ScheduleItem>
+        <ScheduleItem>
+          <ScheduleItemDot />
+          <ScheduleItemText>
+            <h4>January 31st</h4>
+            <p>Opening of the special Discord Channel for team finding and general chat.</p>
           </ScheduleItemText>
         </ScheduleItem>
         <ScheduleItem>
@@ -215,80 +177,65 @@ const HackathonInfoSection = ({ content, className }: HackathonInfoSectionProps)
           <ScheduleItemText>
             <h4>February 12th</h4>
             <p>
-              Hackathon Kick-off Live Event with a 1-hour demo (with h0ngchao) to setup your dev environment + 1-hour of
-              open office/questions (with Cheng, Maud & other members of the jury)
+              Hackathon Kick-off Live Event & Official start of the hackathon! One-hour demo by h0ngchao to help set up
+              your development environment followed by an hour of open office/questions.
             </p>
           </ScheduleItemText>
         </ScheduleItem>
         <ScheduleItem>
           <ScheduleItemDot />
           <ScheduleItemText>
-            <h4>February 16th</h4>
-            <p>1h Open Office Hours & Live support for participants</p>
-          </ScheduleItemText>
-        </ScheduleItem>
-        <ScheduleItem>
-          <ScheduleItemDot />
-          <ScheduleItemText>
-            <h4>February 20th</h4>
-            <p>1h Open Office Hours & Live support for participants</p>
+            <h4>February 16th & 20th</h4>
+            <p>
+              Open Office Hours & Live Support These one-hour sessions will allow participants to engage with the core
+              contributors and seek assistance or clarification on their projects.
+            </p>
           </ScheduleItemText>
         </ScheduleItem>
         <ScheduleItem>
           <ScheduleItemDot />
           <ScheduleItemText>
             <h4>February 26th</h4>
-            <p>Deadline for Submissions at 11:59PM CET</p>
+            <p>Submission deadline: All projects must be submitted by 11:59 PM CET.</p>
           </ScheduleItemText>
         </ScheduleItem>
         <ScheduleItem>
           <ScheduleItemDot />
           <ScheduleItemText>
             <h4>First half of March</h4>
-            <p>Winners announced</p>
+            <p>Winners Announcement</p>
           </ScheduleItemText>
         </ScheduleItem>
       </ScheduleItems>
-
+      <H3 divider>How can I participate?</H3>
       <Paragraph>
-        The core contributors will be easily attainable in the discord channels on a daily basis if teams need help!
+        First, you need to apply! Join by completing the form{' '}
+        <SimpleLink
+          text="here!"
+          url="https://docs.google.com/forms/d/e/1FAIpQLSdDsa1CwJeg-fxrWb1gVWefP4iJoNoZwNe0PNwk94GqmcMkHg/viewform?usp=sharing"
+        />
       </Paragraph>
-      <H3 divider>{content.ideasAndTracks.title}</H3>
-      <Paragraph>{content.ideasAndTracks.subtitle}</Paragraph>
-      <br />
-      <TrackCards>
-        {content.ideasAndTracks.tracks.map((t, i) => (
-          <TrackCard
-            illustration={animatedTrackIllustrations[i]}
-            key={t.title}
-            title={t.title}
-            description={t.description}
-          />
-        ))}
-      </TrackCards>
+      <Paragraph>
+        Then (for the main quests), you’ll need to pick a team! Don’t worry, if you don’t have one, you’ll find one on
+        Discord once we open the general chat on January 31st (date at which we’ll also give a special role to accepted
+        participants).
+      </Paragraph>
+      <Paragraph>Remember, you can only participate as a solo hacker in the bounties!</Paragraph>
+      <Paragraph>
+        For the duration of the hackathon, the main communication Hub will be the hackathon’s general channel. You’ll
+        find resources, updates, and support there. You’ll be able to use the channel to find teammates, mentorship from
+        core-contributors or just chat!
+      </Paragraph>
+      <Paragraph>
+        Additionally, each team will have access to a dedicated Discord sub-channel in a dedicated forum channel for
+        discussion, progress reporting, and collaboration.
+      </Paragraph>
     </HackathonSectionContainer>
   </div>
 )
 
-const animatedTrackIllustrations = [
-  <DeFi key="DeFi" />,
-  <AI key="AI" />,
-  <Tooling key="tooling" />,
-  <NFTs key="NFTs" />,
-  <Gaming key="Gaming" />,
-  <Interoperability key="Interoperability" />
-]
-
 export default styled(HackathonInfoSection)`
   background-color: ${({ theme }) => theme.bgTertiary};
-`
-
-const StyledArrowedLink = styled(ArrowedLink)`
-  color: ${({ theme }) => theme.palette1};
-
-  * {
-    fill: ${({ theme }) => theme.palette1};
-  }
 `
 
 const ScheduleItems = styled.div`
@@ -344,3 +291,18 @@ const TrackCards = styled.div`
 `
 
 const PrizeList = styled.div``
+
+const MainPrizesContainer = styled.div`
+  font-size: 18px;
+  padding: 16px;
+  background-color: ${({ theme }) => theme.bgPrimary};
+  border: 1px solid ${({ theme }) => theme.palette1};
+
+  * {
+    margin: 0;
+  }
+`
+
+const MainPrizesTitle = styled.h4`
+  margin-bottom: 16px;
+`

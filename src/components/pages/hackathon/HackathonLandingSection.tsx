@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { deviceBreakPoints } from '../../../styles/global-style'
 import HackathonSectionContainer from './HackathonSectionContainer'
 import headerImage from '../../../images/alephium-hackathon-lake.png'
+import SimpleLink from '../../SimpleLink'
 
 const HackathonLandingSection = () => (
   <SectionWrapper>
@@ -14,10 +15,13 @@ const HackathonLandingSection = () => (
         </FirstContentBox>
         <SecondContentBox>
           <TagLine>
-            {`Join the pioneers, come hacking together a rich, interoperable ecosystem of tools & dApps. 
-            Alephium is happy to announce the first hackathon!
-            
-            With participation of the Blockflow Alliance DAO & the Cetacean Capital DAO.`}
+            <TLDR>
+              TL;DR - A prize pool of up to $50,000 in ALPH tokens, sponsored by Alephium, the{' '}
+              <SimpleLink url="https://twitter.com/Blockflow_DAO" text="Blockflow Alliance DAO" newTab />, and{' '}
+              <SimpleLink url="https://cetacean.capital/" text="Cetacean Capital" newTab />.
+            </TLDR>
+            It will reward teams building across 3 main categories (dApps, tooling & interoperability) as well as
+            offering bounties for solo hackers!
           </TagLine>
         </SecondContentBox>
       </Content>
@@ -71,6 +75,13 @@ const TagLine = styled.h2`
   font-weight: 400;
   white-space: pre-line;
 `
+
+const TLDR = styled.div`
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 20px;
+`
+
 const Title = styled.h1`
   color: ${({ theme }) => theme.textPrimary};
   font-size: var(--fontSize-50);

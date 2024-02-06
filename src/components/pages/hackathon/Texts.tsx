@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 
 export const Paragraph = styled.p`
-  opacity: 0.9;
+  opacity: 0.8;
   white-space: pre-line;
 `
 

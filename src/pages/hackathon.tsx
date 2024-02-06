@@ -47,8 +47,6 @@ const IndexPage = (props: HackathonPageProps) => {
           <NavigationMenuStyled />
           <HackathonLandingSection />
           <SectionDivider />
-          <HackathonIntroSection />
-          <SectionDivider />
           <HackathonInfoSection content={pageContent.hackathonInfo} />
           <SectionDivider />
           <HackathonJudgingSection content={pageContent.rulesAndJudging} />
@@ -100,6 +98,22 @@ const Wrapper = styled.div`
 
   h3 {
     font-weight: 400;
+  }
+
+  h4 {
+    font-weight: 600;
+  }
+
+  ul {
+    line-height: 1.6;
+  }
+
+  li {
+    margin-bottom: 14px;
+  }
+
+  b {
+    opacity: 1;
   }
 `
 
