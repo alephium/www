@@ -26,7 +26,6 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     'gatsby-transformer-remark',
-    'gatsby-transformer-remark-frontmatter',
     'gatsby-transformer-yaml',
     {
       resolve: 'gatsby-source-filesystem',
