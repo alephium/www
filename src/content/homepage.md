@@ -1,9 +1,9 @@
 ---
 topBanner:
-  text: 'The bridge is OUT!'
-  linkText: 'Try it'
-  url: 'https://bridge.alephium.org'
-  color: '#1c91eb'
+  text: 'Participate to the Hackathon #1'
+  linkText: "Let's go!"
+  url: '/hackathon'
+  color: '#eb1f7b'
 headerSection:
   dark:
     title: 'Scalable for devs.
