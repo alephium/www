@@ -100,13 +100,20 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
         <h4>Special partner prizes</h4>
         <ul>
           <li>
-            Cetacean’s choice will receive <b>2’500$ in ALPH</b>
+            <SimpleLink text="Cetacean’s" url="https://twitter.com/CetaceanCapital" newTab /> choice will receive{' '}
+            <b>2’500$ in ALPH</b>
           </li>
           <li>
-            Blockflow’s choice will receive <b>2’500$ in ALPH</b>
+            <SimpleLink text="Blockflow’s" url="https://twitter.com/Blockflow_DAO" newTab /> choice will receive{' '}
+            <b>2’500$ in ALPH</b>
           </li>
           <li>
-            Dappnode’s choice will receive a <b>home node i532-4N model</b>
+            <SimpleLink text="Dappnode’s" url="https://dappnode.com/" newTab /> choice will receive a{' '}
+            <SimpleLink
+              text="home node i532-4N model"
+              url="https://dappnode.com/collections/all/products/home-i532-4n"
+              newTab
+            />
           </li>
         </ul>
 

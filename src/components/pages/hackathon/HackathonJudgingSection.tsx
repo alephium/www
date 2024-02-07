@@ -65,6 +65,7 @@ const HackathonJudgingSection = () => (
     <Paragraph>Partners will have their own juries & will choose the partner prizes independently:</Paragraph>
     <Paragraph>Partner jury — Blockflow DAO</Paragraph>
     <Paragraph>Partner jury — Cetacean Capital DAO</Paragraph>
+    <Paragraph>Partner jury — Dappnode</Paragraph>
     <br />
     <H3 divider>What will be the jury’s criteria?</H3>
     <Paragraph>
@@ -153,8 +154,9 @@ const HackathonJudgingSection = () => (
           />
         </PartnerLogo>
         <PartnerDescription>
-          <b>The Blockflow DAO</b> is Alephium’s first ever community DAO, dedicated to boosting adoption & usage,
-          expanding the community, nurturing development & promoting the Alephium ecosystem.
+          <SimpleLink text="The Blockflow DAO" url="https://twitter.com/Blockflow_DAO" newTab /> is Alephium’s first
+          ever community DAO, dedicated to boosting adoption & usage, expanding the community, nurturing development &
+          promoting the Alephium ecosystem.
         </PartnerDescription>
       </PartnerCard>
       <PartnerCard>
@@ -167,23 +169,24 @@ const HackathonJudgingSection = () => (
           />
         </PartnerLogo>
         <PartnerDescription>
-          <b>Cetacean Capital</b> aims to be DeFi’s most loved, efficient, and profitable Investment DAO. As
-          individuals, its members have incredible skills, experience knowledge and contacts, in the crypto-space for
-          many years.
+          <SimpleLink text="Cetacean Capital" url="https://cetacean.capital/" newTab /> aims to be DeFi’s most loved,
+          efficient, and profitable Investment DAO. As individuals, its members have incredible skills, experience
+          knowledge and contacts, in the crypto-space for many years.
         </PartnerDescription>
       </PartnerCard>
       <PartnerCard>
         <PartnerLogo>
           <img
             src="https://pbs.twimg.com/profile_images/1566755026529406977/783o8STM_400x400.jpg"
-            alt="DAppNode Logo"
+            alt="Dappnode Logo"
             decoding="async"
             loading="lazy"
           />
         </PartnerLogo>
         <PartnerDescription>
-          <b>DAppNode</b> is the self-owned infrastructure layer for a human-centric, data-sovereign, private-by-design
-          internet. DAppNode lowers the barrier of entry for non tech-savvy participants.
+          <SimpleLink text="Dappnode" url="https://dappnode.com/" newTab /> is the self-owned infrastructure layer for a
+          human-centric, data-sovereign, private-by-design internet. Dappnode lowers the barrier of entry for non
+          tech-savvy participants.
         </PartnerDescription>
       </PartnerCard>
     </PartnersCards>
