@@ -64,13 +64,26 @@ const HackathonInfoSection = ({ content, className }: HackathonInfoSectionProps)
       <H3 divider>When & where?</H3>
       <Paragraph>
         The hackathon will happen exclusively online, from February 12th to 26th. Main communication hub for the
-        hackathon will be <SimpleLink text="our Discord" url="http://www.alephium.org/discord" newTab />. Until we
-        release the hackathon channels, join the{' '}
+        hackathon will be <SimpleLink text="our Discord" url="http://www.alephium.org/discord" newTab /> and you can
+        join the hackathon channels already!
+      </Paragraph>
+      <Paragraph>
         <SimpleLink
-          text="developer channel!"
-          url="https://discord.com/channels/747741246667227157/948144672402972682"
+          text="Hackathon-Lounge"
+          url="https://discord.com/channels/747741246667227157/1070646731106172928"
           newTab
-        />
+        />{' '}
+        - ⁠This is where you can find a team, share tips & brainstorm! All of our updates will be shared here, leave
+        your notifications on for this one!
+      </Paragraph>
+      <Paragraph>
+        <SimpleLink
+          text="Hackathon-Projects"
+          url="https://discord.com/channels/747741246667227157/1203001780703727626"
+          newTab
+        />{' '}
+        - This is where teams will regroup around their projects, document progress & interact in their own forum-like
+        post. The channel is open, but you can’t post in there yet, only when the hackathon starts!
       </Paragraph>
       <br />
       <H3 divider>What are the prizes?</H3>

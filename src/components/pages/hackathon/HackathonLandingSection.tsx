@@ -16,7 +16,7 @@ const HackathonLandingSection = () => (
         <SecondContentBox>
           <TagLine>
             <TLDR>
-              TL;DR - A prize pool of up to $50,000 in ALPH tokens, sponsored by Alephium, the{' '}
+              TL;DR - Up to $50,000 in ALPH tokens, sponsored by Alephium, the{' '}
               <SimpleLink url="https://twitter.com/Blockflow_DAO" text="Blockflow Alliance DAO" newTab />, and{' '}
               <SimpleLink url="https://cetacean.capital/" text="Cetacean Capital" newTab />.
             </TLDR>
