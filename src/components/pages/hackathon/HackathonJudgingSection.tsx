@@ -140,6 +140,66 @@ const HackathonJudgingSection = () => (
     <Paragraph>
       The Blockflow DAO also expressed interest in helping quality projects develop further after the hackathon.
     </Paragraph>
+    <br />
+    <H3 divider>Hackathon Partners</H3>
+    <PartnersCards>
+      <PartnerCard>
+        <PartnerLogo>
+          <img
+            src="https://pbs.twimg.com/profile_images/1713965806478823424/BMQNZ1Sv_400x400.jpg"
+            alt="Blockflow DAO Logo"
+            decoding="async"
+            loading="lazy"
+          />
+        </PartnerLogo>
+        <PartnerDescription>
+          <b>The Blockflow DAO</b> is Alephium’s first ever community DAO, dedicated to boosting adoption & usage,
+          expanding the community, nurturing development & promoting the Alephium ecosystem.
+        </PartnerDescription>
+      </PartnerCard>
+      <PartnerCard>
+        <PartnerLogo>
+          <img
+            src="https://pbs.twimg.com/profile_images/1458081424301600773/aEFzAaAN_400x400.jpg"
+            alt="Cetacean Capital Logo"
+            decoding="async"
+            loading="lazy"
+          />
+        </PartnerLogo>
+        <PartnerDescription>
+          <b>Cetacean Capital</b> aims to be DeFi’s most loved, efficient, and profitable Investment DAO. As
+          individuals, its members have incredible skills, experience knowledge and contacts, in the crypto-space for
+          many years.
+        </PartnerDescription>
+      </PartnerCard>
+      <PartnerCard>
+        <PartnerLogo>
+          <img
+            src="https://pbs.twimg.com/profile_images/1566755026529406977/783o8STM_400x400.jpg"
+            alt="DAppNode Logo"
+            decoding="async"
+            loading="lazy"
+          />
+        </PartnerLogo>
+        <PartnerDescription>
+          <b>DAppNode</b> is the self-owned infrastructure layer for a human-centric, data-sovereign, private-by-design
+          internet. DAppNode lowers the barrier of entry for non tech-savvy participants.
+        </PartnerDescription>
+      </PartnerCard>
+      <PartnerCard>
+        <PartnerLogo>
+          <img
+            src="https://pbs.twimg.com/profile_images/1740265141088952320/XxOqqSvZ_400x400.jpg"
+            alt="Bitmain Logo"
+            decoding="async"
+            loading="lazy"
+          />
+        </PartnerLogo>
+        <PartnerDescription>
+          <b>Bitmain</b>
+        </PartnerDescription>
+      </PartnerCard>
+    </PartnersCards>
   </HackathonSectionContainer>
 )
 
@@ -187,3 +247,38 @@ const PersonCard = styled.div`
   align-items: center;
   justify-content: center;
 `
+
+const PartnersCards = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+
+  @media ${deviceBreakPoints.mobile} {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+`
+
+const PartnerCard = styled.div`
+  display: flex;
+  padding: var(--spacing-3);
+  border: 1px solid ${({ theme }) => theme.borderPrimary};
+  background-color: ${({ theme }) => theme.bgPrimary};
+`
+
+const PartnerLogo = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25px;
+
+  img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+`
+
+const PartnerDescription = styled.div``

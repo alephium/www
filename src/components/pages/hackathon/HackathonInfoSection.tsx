@@ -1,16 +1,7 @@
 import styled from 'styled-components'
-import ArrowedLink from '../../ArrowedLink'
 import { deviceBreakPoints } from '../../../styles/global-style'
-import AI from './AnimatedIllustrations/AI'
-import DeFi from './AnimatedIllustrations/DeFi'
-import Gaming from './AnimatedIllustrations/Gaming'
-import Interoperability from './AnimatedIllustrations/Interoperability'
-import NFTs from './AnimatedIllustrations/NFTs'
-import Tooling from './AnimatedIllustrations/Tooling'
 import HackathonSectionContainer from './HackathonSectionContainer'
-import HackathonSectionTitle from './HackathonSectionTitle'
 import { H3, Paragraph } from './Texts'
-import TrackCard from './TrackCard'
 import SimpleLink from '../../SimpleLink'
 
 export type HackathonInfoSectionContentType = {
@@ -58,7 +49,7 @@ interface HackathonInfoSectionProps {
   className?: string
 }
 
-const HackathonInfoSection = ({ content, className }: HackathonInfoSectionProps) => (
+const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
   <div className={className}>
     <HackathonSectionContainer>
       <H3 divider>When & where?</H3>
@@ -289,18 +280,6 @@ const ScheduleItemText = styled.div`
   p {
     margin: var(--spacing-2) 0 0 0;
     opacity: 0.8;
-  }
-`
-
-const TrackCards = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 20px;
-
-  @media ${deviceBreakPoints.mobile} {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
   }
 `
 
