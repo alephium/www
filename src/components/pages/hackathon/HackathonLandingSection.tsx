@@ -7,7 +7,7 @@ import SimpleLink from '../../SimpleLink'
 
 const HackathonLandingSection = () => (
   <SectionWrapper>
-    <HackathonSectionContainer>
+    <ContentContainer>
       <Content>
         <FirstContentBox>
           <Date>Hackathon #1 - Pioneers</Date>
@@ -24,31 +24,44 @@ const HackathonLandingSection = () => (
             offering bounties for solo hackers!
           </TagLine>
         </SecondContentBox>
+
+        <ActionLink
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdDsa1CwJeg-fxrWb1gVWefP4iJoNoZwNe0PNwk94GqmcMkHg/viewform?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-goatcounter-click="hackathonApplyMainBtn"
+        >
+          <ActionButton>Apply now!</ActionButton>
+        </ActionLink>
       </Content>
-    </HackathonSectionContainer>
+    </ContentContainer>
   </SectionWrapper>
 )
 
 export default HackathonLandingSection
 
 const SectionWrapper = styled.div`
+  display: flex;
   margin-top: 65px;
   position: relative;
-  height: calc(max(70vh, 300px));
+  min-height: calc(100vh - 65px);
   background-color: black;
   background-image: url(${headerImage});
   background-size: cover;
   background-position: center;
+  overflow: hidden;
+`
+
+const ContentContainer = styled(HackathonSectionContainer)`
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: auto;
 `
 
 const Content = styled.div`
   overflow: hidden;
   max-width: 600px;
-
-  @media ${deviceBreakPoints.mobile} {
-    margin-left: var(--spacing-2);
-    margin-right: var(--spacing-2);
-  }
 `
 
 const FirstContentBox = styled.div`
@@ -56,8 +69,15 @@ const FirstContentBox = styled.div`
   background-color: ${colord('#000000').alpha(0.9).toRgbString()};
   backdrop-filter: blur(24px);
   line-height: 40px;
-  border-radius: 12px;
   margin-bottom: 10px;
+
+  @media ${deviceBreakPoints.mobile} {
+    padding: 20px;
+
+    * {
+      margin: 0;
+    }
+  }
 `
 
 const SecondContentBox = styled.div`
@@ -66,7 +86,6 @@ const SecondContentBox = styled.div`
   backdrop-filter: blur(24px);
   padding: 2vh 3vw;
   line-height: 30px;
-  border-radius: 12px;
 `
 
 const TagLine = styled.h2`
@@ -89,8 +108,23 @@ const Title = styled.h1`
   font-weight: 500;
 `
 const Date = styled.h1`
-  color: ${({ theme }) => theme.palette1};
-  font-size: var(--fontSize-28);
-  font-family: 'courier';
-  font-weight: 200;
+  color: ${({ theme }) => theme.palette2};
+  font-size: 30px;
+  font-weight: 500;
+`
+
+const ActionLink = styled.a`
+  text-decoration: none;
+  color: white !important;
+`
+
+const ActionButton = styled.div`
+  padding: 20px;
+  text-align: center;
+  background-color: ${({ theme }) => theme.palette3};
+
+  &:hover {
+    background-color: ${({ theme }) => theme.palette2};
+    cursor: pointer;
+  }
 `

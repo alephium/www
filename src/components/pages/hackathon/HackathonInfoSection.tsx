@@ -258,6 +258,7 @@ const ScheduleItemDot = styled.div`
   margin-right: var(--spacing-1);
   background-color: ${({ theme }) => theme.palette1};
   transform: translateX(-20px);
+  flex-shrink: 0;
 
   @media ${deviceBreakPoints.mobile} {
     transform: translateX(-18px);

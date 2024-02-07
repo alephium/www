@@ -74,5 +74,5 @@ export const hackathonTheme: DefaultTheme = {
 
   palette1: '#3fe9ff',
   palette2: '#FF9C2B',
-  palette3: '#FF259D'
+  palette3: '#f83792'
 }
