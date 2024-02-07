@@ -105,6 +105,9 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
           <li>
             Blockflow’s choice will receive <b>2’500$ in ALPH</b>
           </li>
+          <li>
+            Dappnode’s choice will receive a <b>home node i532-4N model</b>
+          </li>
         </ul>
 
         <Paragraph>

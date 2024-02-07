@@ -186,19 +186,6 @@ const HackathonJudgingSection = () => (
           internet. DAppNode lowers the barrier of entry for non tech-savvy participants.
         </PartnerDescription>
       </PartnerCard>
-      <PartnerCard>
-        <PartnerLogo>
-          <img
-            src="https://pbs.twimg.com/profile_images/1740265141088952320/XxOqqSvZ_400x400.jpg"
-            alt="Bitmain Logo"
-            decoding="async"
-            loading="lazy"
-          />
-        </PartnerLogo>
-        <PartnerDescription>
-          <b>Bitmain</b>
-        </PartnerDescription>
-      </PartnerCard>
     </PartnersCards>
   </HackathonSectionContainer>
 )
