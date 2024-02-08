@@ -117,7 +117,7 @@ gettingStarted:
 - Developer [onboarding thread](https://twitter.com/alephium/status/1752028946399654269)
 - The full [documentation](http://docs.alephium.org/)
 - Getting started with RALPH Alephium’s [programming language](https://docs.alephium.org/ralph/getting-started)
-- RALPH Examples
+- RALPH [Documentation](https://docs.alephium.org/ralph/getting-started) & Tokens [Documentation](https://docs.alephium.org/tokens/overview)
 - dApps [Proof of concepts (PoC)](https://docs.alephium.org/dapps/ecosystem#prototypes) (DEX, NFT marketplace, bridge)
 - Workshop #1 with h0ngchao [How to Build a Faucet]() — [video]()
 - Workshop #2 with h0ngchao [How to implement friend.tech on Alephium, part 1](https://medium.com/@alephium/second-developer-workshop-re-implementing-friend-techs-smart-contract-in-ralph-806e3f6551aa), and [part 2](https://medium.com/@alephium/second-developer-workshop-re-implementing-friend-techs-smart-contract-in-ralph-part-2-8f9959742b47) — [video 1](https://www.youtube.com/watch?v=gi2sxvB9Np8), [video 2](https://www.youtube.com/watch?v=Xgt3_HwoUOc)

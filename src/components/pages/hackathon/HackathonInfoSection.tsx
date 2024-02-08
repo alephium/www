@@ -234,7 +234,6 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
         Discord once we open the general chat on January 31st (date at which we’ll also give a special role to accepted
         participants).
       </Paragraph>
-      <Paragraph>Remember, you can only participate as a solo hacker in the bounties!</Paragraph>
       <Paragraph>
         For the duration of the hackathon, the main communication Hub will be the hackathon’s general channel. You’ll
         find resources, updates, and support there. You’ll be able to use the channel to find teammates, mentorship from
@@ -243,6 +242,11 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
       <Paragraph>
         Additionally, each team will have access to a dedicated Discord sub-channel in a dedicated forum channel for
         discussion, progress reporting, and collaboration.
+      </Paragraph>
+      <Paragraph>
+        At the end of the hackathon, the teams & individuals will need to submit their work through{' '}
+        <SimpleLink text="this form" url="https://forms.gle/5DFjrsRGmFVfhVUg6" newTab /> (not yet open, check back after
+        the 20th of February).
       </Paragraph>
     </HackathonSectionContainer>
   </div>
