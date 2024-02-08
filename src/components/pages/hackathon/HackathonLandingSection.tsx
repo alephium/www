@@ -17,9 +17,9 @@ const HackathonLandingSection = () => (
           <TagLine>
             <TLDR>
               TL;DR - Up to $50,000 in ALPH tokens, sponsored by Alephium, the{' '}
-              <SimpleLink url="https://twitter.com/Blockflow_DAO" text="Blockflow Alliance DAO" newTab />, and{' '}
+              <SimpleLink url="https://twitter.com/Blockflow_DAO" text="Blockflow Alliance DAO" newTab />,{' '}
               <SimpleLink url="https://cetacean.capital/" text="Cetacean Capital" newTab /> and{' '}
-              <SimpleLink url="https://dappnode.com/" text="Dappnode" newTab />
+              <SimpleLink url="https://dappnode.com/" text="Dappnode" newTab />.
             </TLDR>
             It will reward teams building across 3 main categories (dApps, tooling & interoperability) as well as
             offering bounties for solo hackers!
