@@ -39,9 +39,9 @@ const HackathonJudgingSection = () => (
       </PersonCard>
       <PersonCard>
         <TeamMember
-          name="zippy9999"
+          name="s0ukie"
           image="https://pbs.twimg.com/profile_images/1319902775489318919/fND_7B0D_400x400.jpg"
-          role="COO"
+          role="Operations"
           url="https://twitter.com/MaudBannwart"
         />
       </PersonCard>
@@ -49,7 +49,7 @@ const HackathonJudgingSection = () => (
         <TeamMember
           name="Polto"
           image="https://pbs.twimg.com/profile_images/1099938333227134977/pWfwDYnu_400x400.png"
-          role="Strategist"
+          role="Strategy"
           url="https://twitter.com/_polto_"
         />
       </PersonCard>
@@ -57,7 +57,7 @@ const HackathonJudgingSection = () => (
         <TeamMember
           name="zippy9999"
           image="https://pbs.twimg.com/profile_images/1608261674938646529/k6lRrQNO_400x400.jpg"
-          role="CMO"
+          role="Marketing"
           url="https://twitter.com/zippy9999"
         />
       </PersonCard>
@@ -154,7 +154,7 @@ const HackathonJudgingSection = () => (
           />
         </PartnerLogo>
         <PartnerDescription>
-          <SimpleLink text="The Blockflow DAO" url="https://twitter.com/Blockflow_DAO" newTab /> is Alephium’s first
+          <SimpleLink text="Blockflow Alliance" url="https://twitter.com/Blockflow_DAO" newTab /> is Alephium’s first
           ever community DAO, dedicated to boosting adoption & usage, expanding the community, nurturing development &
           promoting the Alephium ecosystem.
         </PartnerDescription>
