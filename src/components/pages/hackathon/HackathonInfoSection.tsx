@@ -288,9 +288,13 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
           <ScheduleItemText>
             <h4>February 12th - 4PM CET</h4>
             <p>
-              Hackathon Kick-off <SimpleLink text="Live Event" url="https://meet.google.com/zrg-tcsj-gzc" newTab /> &
-              Official start of the hackathon! One-hour demo by h0ngchao to help set up your development environment
-              followed by an hour of open office/questions.
+              A one-hour kickoff <SimpleLink text="Live Event" url="https://meet.google.com/zrg-tcsj-gzc" newTab /> with
+              the team. <SimpleLink text="@h0ngchao" url="https://twitter.com/hongchao" newTab /> will help set up your
+              development environment, <SimpleLink text="@zippy" url="https://twitter.com/zippy9999" newTab /> recap the
+              process, <SimpleLink text="@Maud" url="https://twitter.com/MaudBannwart" newTab /> ,{' '}
+              <SimpleLink text="@mika" url="https://twitter.com/mika_pote" newTab /> &{' '}
+              <SimpleLink text="@cheng" url="https://twitter.com/wachmc" newTab /> will be there. This will be followed
+              by an open office & Q&A!
             </p>
           </ScheduleItemText>
         </ScheduleItem>
@@ -403,12 +407,12 @@ const MainPrizesContainer = styled.div`
   background-color: ${({ theme }) => theme.bgPrimary};
   border: 1px solid ${({ theme }) => theme.palette1};
 
-  * {
+  h3 {
     margin: 0;
   }
 `
 
-const MainPrizesTitle = styled.h4`
+const MainPrizesTitle = styled.h3`
   margin-bottom: 16px;
 `
 
