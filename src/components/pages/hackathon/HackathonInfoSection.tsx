@@ -433,6 +433,12 @@ const BountiesList = styled.div`
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
 
+  ul {
+    list-style-type: none;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+
   @media ${deviceBreakPoints.mobile} {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
