@@ -7,7 +7,7 @@ export const Paragraph = styled.p`
 `
 
 export const H3 = styled.h3<{ divider?: boolean }>`
-  margin-top: var(--spacing-6);
+  margin-top: var(--spacing-10);
   font-size: 28px !important;
   line-height: 1.2;
   font-weight: 400;

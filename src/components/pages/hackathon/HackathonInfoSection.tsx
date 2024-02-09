@@ -76,7 +76,6 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
         - This is where teams will regroup around their projects, document progress & interact in their own forum-like
         post. The channel is open, but you can’t post in there yet, only when the hackathon starts!
       </Paragraph>
-      <br />
       <H3 divider>What are the prizes?</H3>
       <PrizeList>
         <Paragraph>The main prizes are tiered to recognize the top five submissions:</Paragraph>
@@ -131,32 +130,43 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
         </Paragraph>
         <Paragraph>
           <i>
-            Note: The distribution of prizes is subject to the discretion of the jury and may be adjusted based on the
-            quality of submissions received.{' '}
+            Notes:
+            <ul>
+              <li>
+                The distribution of prizes is subject to the discretion of the jury and may be adjusted based on the
+                quality of submissions received.
+              </li>
+              <li>
+                All prizes will be paid in $ALPH. The conversion rate for prizes will use the $ALPH price average over
+                the 14-days of the hackathon (12-26th of february).
+              </li>
+            </ul>
           </i>
         </Paragraph>
       </PrizeList>
-      <br />
+
       <H3 divider>What can I build?</H3>
       <Paragraph>
         Participants can engage in one of two primary participation methods: embarking on the main quests or tackling
         side quests called bounties.
       </Paragraph>
-      <h4>The main quests</h4>
-      <Paragraph>
-        Participants must form teams of 2 to 5 people and complete projects in the following categories:
-      </Paragraph>
-      <ul>
-        <li>
-          <b>🪄 dApps Development:</b> challenge your skills in decentralized application development.
-        </li>
-        <li>
-          <b>🛠️ Tooling:</b> Innovate with new tools to enhance blockchain functionality.
-        </li>
-        <li>
-          <b>🔀 Interoperability:</b> Explore the connection of Alephium with other blockchain systems.
-        </li>
-      </ul>
+      <QuestsBox>
+        <h3>The main quests</h3>
+        <Paragraph>
+          Participants must form teams of 2 to 5 people and complete projects in the following categories:
+        </Paragraph>
+        <ul>
+          <li>
+            <b>🪄 dApps Development:</b> challenge your skills in decentralized application development.
+          </li>
+          <li>
+            <b>🛠️ Tooling:</b> Innovate with new tools to enhance blockchain functionality.
+          </li>
+          <li>
+            <b>🔀 Interoperability:</b> Explore the connection of Alephium with other blockchain systems.
+          </li>
+        </ul>
+      </QuestsBox>
       <Paragraph>
         <i>
           Can I join with an existing project? Those who wish to start with a pre-existing project can do so, but only
@@ -167,8 +177,95 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
       <h4>Bounties</h4>
       <Paragraph>
         Everyone can participate as a team or hack solo (but bounties are not eligible for the main prizes). These are
-        specific/smaller tasks or challenges that participants can complete for rewards. The list of bounties will be
-        announced closer to the hackathon kickoff.
+        specific/smaller tasks or challenges that participants can complete for rewards. If you are a solo hacker and
+        want to participate in the hackathon, this is the way (teams can also do bounties!).
+      </Paragraph>
+      <Paragraph>
+        The general goal of bounties is to provide improvements to the user/developer experience. Bounties are divided
+        into 4 focus areas:
+      </Paragraph>
+      <BountiesList>
+        <BountiesCard>
+          <h3>Documentation</h3>
+          <Paragraph>Enhancing/creating developer documentation. (Create a PR in the relevant repo)</Paragraph>
+          <ul>
+            <li>
+              1 - improve the <SimpleLink text="SDK doc" url="https://docs.alephium.org/dapps/alephium-web3" newTab />
+            </li>
+            <li>
+              2 - improve the{' '}
+              <SimpleLink text="dApp recipes doc" url="https://docs.alephium.org/dapps/alephium-web3" newTab />
+            </li>
+            <li>
+              3 - improve the{' '}
+              <SimpleLink text="Ralph language doc" url="https://docs.alephium.org/ralph/getting-started" newTab />
+            </li>
+          </ul>
+        </BountiesCard>
+        <BountiesCard>
+          <h3>Coding PoC</h3>
+          <Paragraph>
+            Creating proof-of-concepts / code examples that help to explain Alephium. (Create a PR in{' '}
+          </Paragraph>
+          <SimpleLink text="this repo" url="https://github.com/alephium/ralph-example" newTab />)
+          <ul>
+            <li>4 - Merkle tree proof for allowlist</li>
+            <li>5 - Crowdfund platform</li>
+            <li>6 - Simple price Oracle</li>
+            <li>7 - Simple DAO</li>
+            <li>8 - Airdrop contract</li>
+          </ul>
+        </BountiesCard>
+        <BountiesCard>
+          <h3>Front-End Task</h3>
+          <Paragraph>Developing a front-end feature.</Paragraph>
+          <ul>
+            <li>
+              9 -{' '}
+              <SimpleLink
+                text="Payment request flow feature"
+                url="https://github.com/alephium/alephium-frontend/issues/273"
+                newTab
+              />
+            </li>
+            <li>
+              10 -{' '}
+              <SimpleLink
+                text="Register the Alephium chain in the WalletConnect Cloud"
+                url="https://github.com/alephium/alephium-frontend/issues/158"
+                newTab
+              />
+            </li>
+            <li>
+              11 -{' '}
+              <SimpleLink
+                text="Any pending issue"
+                url="https://github.com/alephium/alephium-frontend/issues?q=is%3Aissue+is%3Aopen+label%3Acommunity"
+                newTab
+              />{' '}
+              marked with the community tag.
+            </li>
+          </ul>
+        </BountiesCard>
+        <BountiesCard>
+          <h3>Community Dashboards & Calculators</h3>
+          <Paragraph>Designing a dashboard & calculators for useful information.</Paragraph>
+          <ul>
+            <li>12 - Dune analytics board for the wALPH Uniswap ppol</li>
+            <li>13 - ETH wALPH stats</li>
+            <li>14 - dApps stats dashboard</li>
+            <li>15 - Mining reward calculator</li>
+            <li>16 - Burned tokens calculator</li>
+          </ul>
+        </BountiesCard>
+      </BountiesList>
+      <h4>Your own idea</h4>
+      <Paragraph>
+        If you have an idea for a bounty, propose it to us in the general chat of the hackathon! For submission, the
+        process is the same as for main quests. Once you have chosen a bounty, please create a post in the
+        Hackathon-Projects channel with the name of the bounty as a title. You can document your progress there or ask
+        us for help or advice in the post. At the end of the hackathon, you will provide a link to your work in the
+        submission form, to be evaluated by the jury!
       </Paragraph>
       <H3 divider>What is the schedule?</H3>
       <ScheduleItems>
@@ -189,10 +286,11 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
         <ScheduleItem>
           <ScheduleItemDot />
           <ScheduleItemText>
-            <h4>February 12th</h4>
+            <h4>February 12th - 4PM CET</h4>
             <p>
-              Hackathon Kick-off Live Event & Official start of the hackathon! One-hour demo by h0ngchao to help set up
-              your development environment followed by an hour of open office/questions.
+              Hackathon Kick-off <SimpleLink text="Live Event" url="https://meet.google.com/zrg-tcsj-gzc" newTab /> &
+              Official start of the hackathon! One-hour demo by h0ngchao to help set up your development environment
+              followed by an hour of open office/questions.
             </p>
           </ScheduleItemText>
         </ScheduleItem>
@@ -312,4 +410,37 @@ const MainPrizesContainer = styled.div`
 
 const MainPrizesTitle = styled.h4`
   margin-bottom: 16px;
+`
+
+const QuestsBox = styled.div`
+  font-size: 18px;
+  padding: 16px;
+  background-color: ${({ theme }) => theme.bgPrimary};
+  border: 1px solid ${({ theme }) => theme.palette1};
+
+  h3 {
+    margin: 0;
+  }
+`
+
+const BountiesList = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+
+  @media ${deviceBreakPoints.mobile} {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+`
+
+const BountiesCard = styled.div`
+  padding: var(--spacing-3);
+  border: 1px solid ${({ theme }) => theme.borderPrimary};
+  background-color: ${({ theme }) => theme.bgSecondary};
+
+  h3 {
+    margin-top: 0;
+  }
 `

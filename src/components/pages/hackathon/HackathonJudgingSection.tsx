@@ -66,14 +66,14 @@ const HackathonJudgingSection = () => (
     <Paragraph>Partner jury — Blockflow DAO</Paragraph>
     <Paragraph>Partner jury — Cetacean Capital DAO</Paragraph>
     <Paragraph>Partner jury — Dappnode</Paragraph>
-    <br />
+
     <H3 divider>What will be the jury’s criteria?</H3>
     <Paragraph>
       Participants are encouraged to be creative and propose projects that resonate with their interests, as long as
       they align with Alephium’s framework and fit into one of the proposed categories. Here is how the jury will
       evaluate your project:
     </Paragraph>
-    <br />
+
     <CriteriumList>
       <CriteriumCard>
         <H3>Implementation</H3>
@@ -96,7 +96,7 @@ const HackathonJudgingSection = () => (
         <Paragraph>How creative and unique is the project?</Paragraph>
       </CriteriumCard>
     </CriteriumList>
-    <br />
+
     <H3 divider>What are the rules?</H3>
     <Paragraph>
       <ul>
@@ -126,7 +126,7 @@ const HackathonJudgingSection = () => (
       We’ve assembled a knowledgeable, exigent but amicable & engaged jury composed of core contributors. This jury will
       distribute the main prizes, bounties rewards & honorable mentions:
     </Paragraph>
-    <br />
+
     <H3 divider>What happens after the hackathon?</H3>
     <Paragraph>Participating projects can subsequently apply to Alephium’s grant program.</Paragraph>
     <Paragraph>
@@ -141,7 +141,7 @@ const HackathonJudgingSection = () => (
     <Paragraph>
       The Blockflow DAO also expressed interest in helping quality projects develop further after the hackathon.
     </Paragraph>
-    <br />
+
     <H3 divider>Hackathon Partners</H3>
     <PartnersCards>
       <PartnerCard>

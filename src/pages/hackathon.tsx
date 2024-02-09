@@ -7,13 +7,10 @@ import { hackathonTheme, lightTheme } from '../styles/themes'
 import Seo from '../components/Seo'
 import HackathonLandingSection from '../components/pages/hackathon/HackathonLandingSection'
 import SectionDivider from '../components/SectionDivider'
-import HackathonIntroSection from '../components/pages/hackathon/HackathonIntroSection'
 import HackathonInfoSection, {
   HackathonInfoSectionContentType
 } from '../components/pages/hackathon/HackathonInfoSection'
-import HackathonJudgingSection, {
-  HackathonJudgingSectionContentType
-} from '../components/pages/hackathon/HackathonJudgingSection'
+import HackathonJudgingSection from '../components/pages/hackathon/HackathonJudgingSection'
 import GettingStartedSection, {
   GettingStartedSectionContentType
 } from '../components/pages/hackathon/GettingStartedSection'
@@ -26,7 +23,6 @@ interface HackathonPageProps extends PageProps {
       nodes: {
         frontmatter: {
           hackathonInfo: HackathonInfoSectionContentType
-          rulesAndJudging: HackathonJudgingSectionContentType
           gettingStarted: GettingStartedSectionContentType
         }
         html: string
@@ -49,7 +45,7 @@ const IndexPage = (props: HackathonPageProps) => {
           <SectionDivider />
           <HackathonInfoSection content={pageContent.hackathonInfo} />
           <SectionDivider />
-          <HackathonJudgingSection content={pageContent.rulesAndJudging} />
+          <HackathonJudgingSection />
           <SectionDivider />
           <GettingStartedSection
             content={{ ...pageContent.gettingStarted, html: props.data.hackathon.nodes[0].html }}
@@ -97,11 +93,16 @@ const Wrapper = styled.div`
   }
 
   h3 {
-    font-weight: 400;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 1.4;
   }
 
   h4 {
-    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 500;
   }
 
   ul {
