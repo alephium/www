@@ -58,7 +58,7 @@ const HackathonJudgingSection = () => (
           name="zippy9999"
           image="https://pbs.twimg.com/profile_images/1608261674938646529/k6lRrQNO_400x400.jpg"
           role="Marketing"
-          url="https://twitter.com/zippy9999"
+          url="https://twitter.com/Estragon77"
         />
       </PersonCard>
     </Jury>

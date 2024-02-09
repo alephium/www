@@ -260,12 +260,14 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
         </BountiesCard>
       </BountiesList>
       <h4>Your own idea</h4>
+      <Paragraph>If you have an idea for a bounty, propose it to us in the general chat of the hackathon!</Paragraph>
       <Paragraph>
-        If you have an idea for a bounty, propose it to us in the general chat of the hackathon! For submission, the
-        process is the same as for main quests. Once you have chosen a bounty, please create a post in the
-        Hackathon-Projects channel with the name of the bounty as a title. You can document your progress there or ask
-        us for help or advice in the post. At the end of the hackathon, you will provide a link to your work in the
-        submission form, to be evaluated by the jury!
+        <i>
+          For submission, the process is the same as for main quests. Once you have chosen a bounty, please create a
+          post in the Hackathon-Projects channel with the name of the bounty as a title. You can document your progress
+          there or ask us for help or advice in the post. At the end of the hackathon, you will provide a link to your
+          work in the submission form, to be evaluated by the jury!
+        </i>
       </Paragraph>
       <H3 divider>What is the schedule?</H3>
       <ScheduleItems>
