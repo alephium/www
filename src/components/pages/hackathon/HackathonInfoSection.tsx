@@ -292,8 +292,8 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
             <p>
               A one-hour kickoff <SimpleLink text="Live Event" url="https://meet.google.com/zrg-tcsj-gzc" newTab /> with
               the team. <SimpleLink text="@h0ngchao" url="https://twitter.com/hongchao" newTab /> will help set up your
-              development environment, <SimpleLink text="@zippy" url="https://twitter.com/zippy9999" newTab /> recap the
-              process, <SimpleLink text="@Maud" url="https://twitter.com/MaudBannwart" newTab /> ,{' '}
+              development environment, <SimpleLink text="@zippy" url="https://twitter.com/Estragon77" newTab /> recap
+              the process, <SimpleLink text="@Maud" url="https://twitter.com/MaudBannwart" newTab /> ,{' '}
               <SimpleLink text="@mika" url="https://twitter.com/mika_pote" newTab /> &{' '}
               <SimpleLink text="@cheng" url="https://twitter.com/wachmc" newTab /> will be there. This will be followed
               by an open office & Q&A!
