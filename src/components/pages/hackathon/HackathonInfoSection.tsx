@@ -251,7 +251,7 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
           <h3>Community Dashboards & Calculators</h3>
           <Paragraph>Designing a dashboard & calculators for useful information.</Paragraph>
           <ul>
-            <li>12 - Dune analytics board for the wALPH Uniswap ppol</li>
+            <li>12 - Dune analytics board for the wALPH Uniswap pool</li>
             <li>13 - ETH wALPH stats</li>
             <li>14 - dApps stats dashboard</li>
             <li>15 - Mining reward calculator</li>
@@ -305,7 +305,7 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
           <ScheduleItemText>
             <h4>February 16th & 20th</h4>
             <p>
-              Open Office Hours & Live Support These one-hour sessions will allow participants to engage with the core
+              Open Office Hours & Live Support: These one-hour sessions will allow participants to engage with the core
               contributors and seek assistance or clarification on their projects.
             </p>
           </ScheduleItemText>
