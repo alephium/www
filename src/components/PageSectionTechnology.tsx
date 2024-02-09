@@ -193,18 +193,6 @@ const SectionContainer = styled.section`
   position: relative;
 `
 
-const GradientContainer = styled.div`
-  position: sticky;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  z-index: 4000;
-  pointer-events: none;
-`
-
 const ParallaxImage = styled(ParallaxWrapper)<{ src: string }>`
   position: absolute;
   top: 0;

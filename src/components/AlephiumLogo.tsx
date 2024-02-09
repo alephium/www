@@ -54,10 +54,10 @@ const AlephiumLogo = ({ className, fill = 'white', accentFill, gradientIndex, ..
     </g>
     <defs>
       <linearGradient id="logo-accent-gradient" x2="-0.2" y2="1">
-        <stop offset="0%" style={{ stopColor: gradientIndex === 0 ? '#fff' : '#fff' }} />
-        <stop offset="25%" style={{ stopColor: gradientIndex === 0 ? '#ff6f08' : '#ffd900' }} />
-        <stop offset="50%" style={{ stopColor: gradientIndex === 0 ? '#0800ff' : '#f200ff' }} />
-        <stop offset="100%" style={{ stopColor: gradientIndex === 0 ? '#00eeff' : '#520156' }} />
+        <stop offset="0%" style={{ stopColor: gradientIndex === 0 ? '#fff' : '#ffea00' }} />
+        <stop offset="25%" style={{ stopColor: gradientIndex === 0 ? '#ff6f08' : '#ff9500' }} />
+        <stop offset="50%" style={{ stopColor: gradientIndex === 0 ? '#0800ff' : '#00e1ff' }} />
+        <stop offset="100%" style={{ stopColor: gradientIndex === 0 ? '#00eeff' : '#f784ff' }} />
       </linearGradient>
     </defs>
   </svg>

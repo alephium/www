@@ -19,7 +19,7 @@ interface NavigationMenuProps {
   className?: string
 }
 
-const detachScrollValue = 150
+const detachScrollValue = 65
 
 const NavigationMenu = ({ topOffset, className }: NavigationMenuProps) => {
   const { scrollY } = useScroll()
@@ -41,7 +41,8 @@ const NavigationMenu = ({ topOffset, className }: NavigationMenuProps) => {
         className={className}
         animate={{
           y: isDetached ? 30 : initialTop,
-          backgroundColor: isDetached ? 'rgba(30, 30, 30, 0.6)' : 'rgba(30, 30, 30, 0)'
+          backgroundColor: isDetached ? 'rgba(30, 30, 30, 0.6)' : 'rgba(30, 30, 30, 0)',
+          boxShadow: isDetached ? '0px 5px 60px rgba(0, 0, 0, 0.5)' : 'none'
         }}
         transition={{ type: 'spring', stiffness: 200, damping: 50 }}
       >
@@ -137,7 +138,6 @@ const NavigationMenuStyled = styled(motion.div)`
   padding: 0 16px 0 12px;
   height: 62px;
   border-radius: 200px;
-  box-shadow: 0px 5px 60px rgba(0, 0, 0, 0.5);
 
   .nav-end {
     display: flex;

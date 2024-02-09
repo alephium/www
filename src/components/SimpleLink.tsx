@@ -40,6 +40,7 @@ const SimpleLink = ({ className, children, url, newTab, text, openModal, trackin
 export default styled(SimpleLink)`
   text-decoration: none;
   color: ${({ theme, color }) => (color ? color : theme.link)};
+  text-decoration-style: dotted;
 
   svg {
     fill: ${({ theme, color }) => (color ? color : theme.link)};
