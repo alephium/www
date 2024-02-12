@@ -153,7 +153,8 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
       <QuestsBox>
         <h3>The main quests</h3>
         <Paragraph>
-          Participants must form teams of 2 to 5 people and complete projects in the following categories:
+          Participants can participate either as teams or as solo hackers and complete projects in the following
+          categories:
         </Paragraph>
         <ul>
           <li>
@@ -271,35 +272,38 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
       </Paragraph>
       <H3 divider>What is the schedule?</H3>
       <ScheduleItems>
-        <ScheduleItem>
-          <ScheduleItemDot />
-          <ScheduleItemText>
-            <h4>January 19th</h4>
-            <p>Announcement and team enrollment - Opening of applications</p>
-          </ScheduleItemText>
-        </ScheduleItem>
-        <ScheduleItem>
-          <ScheduleItemDot />
-          <ScheduleItemText>
-            <h4>January 31st</h4>
-            <p>Opening of the special Discord Channel for team finding and general chat.</p>
-          </ScheduleItemText>
-        </ScheduleItem>
-        <ScheduleItem>
-          <ScheduleItemDot />
-          <ScheduleItemText>
-            <h4>February 12th - 4PM CET</h4>
-            <p>
-              A one-hour kickoff <SimpleLink text="Live Event" url="https://meet.google.com/zrg-tcsj-gzc" newTab /> with
-              the team. <SimpleLink text="@h0ngchao" url="https://twitter.com/hongchao" newTab /> will help set up your
-              development environment, <SimpleLink text="@zippy" url="https://twitter.com/Estragon77" newTab /> recap
-              the process, <SimpleLink text="@Maud" url="https://twitter.com/MaudBannwart" newTab /> ,{' '}
-              <SimpleLink text="@mika" url="https://twitter.com/mika_pote" newTab /> &{' '}
-              <SimpleLink text="@cheng" url="https://twitter.com/wachmc" newTab /> will be there. This will be followed
-              by an open office & Q&A!
-            </p>
-          </ScheduleItemText>
-        </ScheduleItem>
+        <s>
+          <ScheduleItem>
+            <ScheduleItemDot />
+            <ScheduleItemText>
+              <h4>January 19th</h4>
+              <p>Announcement and team enrollment - Opening of applications</p>
+            </ScheduleItemText>
+          </ScheduleItem>
+          <ScheduleItem>
+            <ScheduleItemDot />
+            <ScheduleItemText>
+              <h4>January 31st</h4>
+              <p>Opening of the special Discord Channel for team finding and general chat.</p>
+            </ScheduleItemText>
+          </ScheduleItem>
+          <ScheduleItem>
+            <ScheduleItemDot />
+            <ScheduleItemText>
+              <h4>February 12th - 4PM CET</h4>
+              <p>
+                A one-hour kickoff <SimpleLink text="Live Event" url="https://meet.google.com/zrg-tcsj-gzc" newTab />{' '}
+                with the team. <SimpleLink text="@h0ngchao" url="https://twitter.com/hongchao" newTab /> will help set
+                up your development environment,{' '}
+                <SimpleLink text="@zippy" url="https://twitter.com/Estragon77" newTab /> recap the process,{' '}
+                <SimpleLink text="@Maud" url="https://twitter.com/MaudBannwart" newTab /> ,{' '}
+                <SimpleLink text="@mika" url="https://twitter.com/mika_pote" newTab /> &{' '}
+                <SimpleLink text="@cheng" url="https://twitter.com/wachmc" newTab /> will be there. This will be
+                followed by an open office & Q&A!
+              </p>
+            </ScheduleItemText>
+          </ScheduleItem>
+        </s>
         <ScheduleItem>
           <ScheduleItemDot />
           <ScheduleItemText>
@@ -334,14 +338,8 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
         />
       </Paragraph>
       <Paragraph>
-        Then (for the main quests), you’ll need to pick a team! Don’t worry, if you don’t have one, you’ll find one on
-        Discord once we open the general chat on January 31st (date at which we’ll also give a special role to accepted
-        participants).
-      </Paragraph>
-      <Paragraph>
-        For the duration of the hackathon, the main communication Hub will be the hackathon’s general channel. You’ll
-        find resources, updates, and support there. You’ll be able to use the channel to find teammates, mentorship from
-        core-contributors or just chat!
+        For the duration of the hackathon, the main communication Hub will be the hackathon’s general channel. Ping us
+        there if you didn’t get the special discord role!
       </Paragraph>
       <Paragraph>
         Additionally, each team will have access to a dedicated Discord sub-channel in a dedicated forum channel for
