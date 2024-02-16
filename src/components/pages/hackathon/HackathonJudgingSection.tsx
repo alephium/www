@@ -16,7 +16,7 @@ const HackathonJudgingSection = () => (
       <PersonCard>
         <TeamMember
           name="wachmc"
-          image="https://pbs.twimg.com/profile_images/1305244977929355264/ZpRLjJcA_400x400.jpg"
+          externalImageURL="https://pbs.twimg.com/profile_images/1305244977929355264/ZpRLjJcA_400x400.jpg"
           role="Core Dev"
           url="https://twitter.com/wachmc"
         />
@@ -24,7 +24,7 @@ const HackathonJudgingSection = () => (
       <PersonCard>
         <TeamMember
           name="h0ngcha0"
-          image="https://pbs.twimg.com/profile_images/1661551106294521856/qMixsjJu_400x400.jpg"
+          externalImageURL="https://pbs.twimg.com/profile_images/1661551106294521856/qMixsjJu_400x400.jpg"
           role="Core Dev"
           url="https://twitter.com/hongchao"
         />
@@ -32,7 +32,7 @@ const HackathonJudgingSection = () => (
       <PersonCard>
         <TeamMember
           name="Mika"
-          image="https://pbs.twimg.com/profile_images/1676260099096997890/PGifYKJ7_400x400.jpg"
+          externalImageURL="https://pbs.twimg.com/profile_images/1676260099096997890/PGifYKJ7_400x400.jpg"
           role="Product"
           url="https://twitter.com/mika_pote"
         />
@@ -40,7 +40,7 @@ const HackathonJudgingSection = () => (
       <PersonCard>
         <TeamMember
           name="s0ukie"
-          image="https://pbs.twimg.com/profile_images/1319902775489318919/fND_7B0D_400x400.jpg"
+          externalImageURL="https://pbs.twimg.com/profile_images/1319902775489318919/fND_7B0D_400x400.jpg"
           role="Operations"
           url="https://twitter.com/MaudBannwart"
         />
@@ -48,7 +48,7 @@ const HackathonJudgingSection = () => (
       <PersonCard>
         <TeamMember
           name="Polto"
-          image="https://pbs.twimg.com/profile_images/1099938333227134977/pWfwDYnu_400x400.png"
+          externalImageURL="https://pbs.twimg.com/profile_images/1099938333227134977/pWfwDYnu_400x400.png"
           role="Strategy"
           url="https://twitter.com/_polto_"
         />
@@ -56,7 +56,7 @@ const HackathonJudgingSection = () => (
       <PersonCard>
         <TeamMember
           name="zippy9999"
-          image="https://pbs.twimg.com/profile_images/1608261674938646529/k6lRrQNO_400x400.jpg"
+          externalImageURL="https://pbs.twimg.com/profile_images/1608261674938646529/k6lRrQNO_400x400.jpg"
           role="Marketing"
           url="https://twitter.com/Estragon77"
         />

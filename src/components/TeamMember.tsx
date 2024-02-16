@@ -1,18 +1,29 @@
+import { IGatsbyImageData } from 'gatsby-plugin-image'
 import { FC } from 'react'
 import styled from 'styled-components'
+import ResponsiveImage from './ResponsiveImage'
 import SimpleLink from './SimpleLink'
 
 export interface TeamMemberProps {
   name: string
   role: string
-  image: string
+  image?: {
+    childImageSharp: {
+      gatsbyImageData: IGatsbyImageData
+    }
+  }
+  externalImageURL?: string
   url: string
   className?: string
 }
 
-const TeamMember: FC<TeamMemberProps> = ({ name, role, image, url, className }) => (
+const TeamMember: FC<TeamMemberProps> = ({ name, role, externalImageURL, image, url, className }) => (
   <TeamMemberContainer className={className}>
-    <Image src={image} alt={name} decoding="async" loading="lazy" />
+    {externalImageURL ? (
+      <Image src={externalImageURL} alt={name} decoding="async" loading="lazy" />
+    ) : (
+      image && <ResponsiveImage image={{ src: image, altText: name }} />
+    )}
     <TeamMemberName text={name} url={url} newTab />
     <TeamMemberRole>{role}</TeamMemberRole>
   </TeamMemberContainer>
