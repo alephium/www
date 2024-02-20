@@ -63,6 +63,7 @@ const HackathonJudgingSection = () => (
       </PersonCard>
     </Jury>
     <Paragraph>Partners will have their own juries & will choose the partner prizes independently:</Paragraph>
+    <Paragraph>Partner jury — Bitmain</Paragraph>
     <Paragraph>Partner jury — Blockflow DAO</Paragraph>
     <Paragraph>Partner jury — Cetacean Capital DAO</Paragraph>
     <Paragraph>Partner jury — Dappnode</Paragraph>
@@ -144,6 +145,21 @@ const HackathonJudgingSection = () => (
 
     <H3 divider>Hackathon Partners</H3>
     <PartnersCards>
+      <PartnerCard>
+        <PartnerLogo>
+          <img
+            src="https://pbs.twimg.com/profile_images/1740265141088952320/XxOqqSvZ_400x400.jpg"
+            alt="Bitmain Logo"
+            decoding="async"
+            loading="lazy"
+          />
+        </PartnerLogo>
+        <PartnerDescription>
+          <SimpleLink text="BITMAIN" url="https://www.bitmain.com/" newTab /> is a global leader in digital currency
+          mining servers and is committed to creating a better digital world. With cutting-edge hash-rate efficiency
+          technologies, they drive secure, stable hashrate infrastructure, fueling innovation in the web 3.0 era.
+        </PartnerDescription>
+      </PartnerCard>
       <PartnerCard>
         <PartnerLogo>
           <img

@@ -83,13 +83,19 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
           <MainPrizesTitle>Main prizes</MainPrizesTitle>
           <ul>
             <li>
-              First prize is <b>12’500$ in ALPH</b>
+              First prize is <b>15’000$ in ALPH</b>
             </li>
             <li>
-              Second prize is <b>6’500$ in ALPH</b>
+              Second prize is <b>8’000$ in ALPH</b>
             </li>
             <li>
-              3rd, 4th and 5th are <b>3’500$ in ALPH</b> each
+              3rd, 4th and 5th are <b>4’000$ in ALPH</b> each
+            </li>
+            <li>
+              3rd, 4th and 5th are <b>4’000$ in ALPH</b> each
+            </li>
+            <li>
+              6th, 7th, 8th & 9th are <b>1’000$ in ALPH</b> each
             </li>
           </ul>
         </MainPrizesContainer>
@@ -98,6 +104,10 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
         </Paragraph>
         <h4>Special partner prizes</h4>
         <ul>
+          <li>
+            <SimpleLink text="Bitmain’s" url="https://www.bitmain.com/" newTab /> choice will receive{' '}
+            <b>2’500$ in ALPH</b>
+          </li>
           <li>
             <SimpleLink text="Cetacean’s" url="https://twitter.com/CetaceanCapital" newTab /> choice will receive{' '}
             <b>2’500$ in ALPH</b>
@@ -122,11 +132,11 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
 
         <h4>Bounties</h4>
         <Paragraph>
-          Up to <b>10’000$ in ALPH</b> are reserved for the bounties
+          Up to <b>15’000$ in ALPH</b> are reserved for the bounties
         </Paragraph>
         <h4>Honors</h4>
         <Paragraph>
-          Up to <b>5’500$ in ALPH</b> is reserved for special honors at the jury’s discretion.
+          Up to <b>8’500$ in ALPH</b> is reserved for special honors at the jury’s discretion.
         </Paragraph>
         <Paragraph>
           <i>
@@ -304,16 +314,18 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
             </ScheduleItemText>
           </ScheduleItem>
         </s>
-        <ScheduleItem>
-          <ScheduleItemDot />
-          <ScheduleItemText>
-            <h4>February 16th & 20th</h4>
-            <p>
-              Open Office Hours & Live Support: These one-hour sessions will allow participants to engage with the core
-              contributors and seek assistance or clarification on their projects.
-            </p>
-          </ScheduleItemText>
-        </ScheduleItem>
+        <s>
+          <ScheduleItem>
+            <ScheduleItemDot />
+            <ScheduleItemText>
+              <h4>February 16th & 20th</h4>
+              <p>
+                Open Office Hours & Live Support: These one-hour sessions will allow participants to engage with the
+                core contributors and seek assistance or clarification on their projects.
+              </p>
+            </ScheduleItemText>
+          </ScheduleItem>
+        </s>
         <ScheduleItem>
           <ScheduleItemDot />
           <ScheduleItemText>
