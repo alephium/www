@@ -92,9 +92,6 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
               3rd, 4th and 5th are <b>4’000$ in ALPH</b> each
             </li>
             <li>
-              3rd, 4th and 5th are <b>4’000$ in ALPH</b> each
-            </li>
-            <li>
               6th, 7th, 8th & 9th are <b>1’000$ in ALPH</b> each
             </li>
           </ul>
