@@ -64,8 +64,8 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
           url="https://discord.com/channels/747741246667227157/1070646731106172928"
           newTab
         />{' '}
-        - ⁠This is where you can find a team, share tips & brainstorm! All of our updates will be shared here, leave
-        your notifications on for this one!
+        - This is where you can find a team, share tips & brainstorm! All of our updates will be shared here, leave your
+        notifications on for this one!
       </Paragraph>
       <Paragraph>
         <SimpleLink
