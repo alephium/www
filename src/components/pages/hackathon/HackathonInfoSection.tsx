@@ -64,8 +64,8 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
           url="https://discord.com/channels/747741246667227157/1070646731106172928"
           newTab
         />{' '}
-        - ⁠This is where you can find a team, share tips & brainstorm! All of our updates will be shared here, leave
-        your notifications on for this one!
+        - This is where you can find a team, share tips & brainstorm! All of our updates will be shared here, leave your
+        notifications on for this one!
       </Paragraph>
       <Paragraph>
         <SimpleLink
@@ -87,9 +87,6 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
             </li>
             <li>
               Second prize is <b>8’000$ in ALPH</b>
-            </li>
-            <li>
-              3rd, 4th and 5th are <b>4’000$ in ALPH</b> each
             </li>
             <li>
               3rd, 4th and 5th are <b>4’000$ in ALPH</b> each
