@@ -330,7 +330,7 @@ todoListSection:
           label: Full Node
         - text: 'Gasless transaction support - Network Upgrade'
           label: Full Node
-        - text: 'New signature schemas for Passkey support - Network Upgrade'
+        - text: 'New signature schemas for Passkey support'
           label: Full Node
         - text: 'Support streaming for blockchain events (tx, block, contract events) - API'
           label: Full Node / SDK
