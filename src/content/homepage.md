@@ -408,7 +408,7 @@ followUsSection:
     technology? Come learn and build!
   socialMediaLinks:
     - name: Discord
-      url: https://discord.gg/3y8HvQ97s4
+      url: https://alephium.org/discord
     - name: Telegram
       url: https://t.me/alephiumgroup
     - name: Twitter
