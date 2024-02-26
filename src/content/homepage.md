@@ -116,8 +116,9 @@ ecosystemSection:
         - title: 'DEADRARE'
           logo: '../images/logos/DEADRARE-icon.png'
           url: https://deadrare.io
-        - title: 'Walph'
-          url: https://walph.io/
+        - title: ALPH.bet
+          logo: '../images/logos/alph-bet-icon.png'
+          url: https://ALPH.bet
         - title: 'Sezame Wallet'
           logo: '../images/logos/sesame-wallet-icon.svg'
           url: https://sezame.app/
