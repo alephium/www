@@ -1,9 +1,9 @@
 ---
 topBanner:
-  text: 'Participate to the Hackathon #1'
-  linkText: "Let's go!"
-  url: '/hackathon'
-  color: '#eb1f7b'
+  text: ''
+  linkText: ''
+  url: ''
+  color: ''
 headerSection:
   dark:
     title: 'Scalable for devs.
