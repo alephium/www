@@ -19,6 +19,9 @@ columns:
       - text: Codebase
         url: http://github.com/alephium
         newTab: true
+      - text: Bridge
+        url: https://bridge.alephium.org
+        newTab: true
       - text: Explorer
         url: https://github.com/alephium/explorer
         newTab: true
