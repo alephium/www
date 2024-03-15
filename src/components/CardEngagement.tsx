@@ -58,7 +58,6 @@ const CardEngagement: FC<CardEngagementProps> = ({
           borderColor={theme.bgPrimary}
           thickBorders
           bgColor={theme.bgTertiary}
-          shadow
           whileHover={{ translateZ: 5, zIndex: 10 }}
           onPointerMove={onMove}
           onPointerLeave={() => {
@@ -107,8 +106,9 @@ const CardContainer = styled(Card)`
   flex-direction: column;
   position: relative;
   flex: 1;
-  border: var(--border-primary-dark);
   background-color: ${({ theme }) => theme.bgPrimary};
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transition: box-shadow 0.2s ease-out;
 
   @media ${deviceBreakPoints.mobile} {
     & + & {

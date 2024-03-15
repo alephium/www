@@ -191,11 +191,9 @@ const SubsectionItem = styled(motion.div)`
   align-items: center;
   justify-content: center;
   background-color: ${({ theme }) => theme.bgPrimary};
-  box-shadow: 0px 22px 30px rgba(0, 0, 0, 0.47);
   box-sizing: border-box;
-  border-radius: 9px;
+  border-radius: 16px;
   font-size: 13px;
-  border: 1px solid ${({ theme }) => theme.borderPrimary};
 
   &:hover {
     ${SubsectionItemTitle}.with-logo {

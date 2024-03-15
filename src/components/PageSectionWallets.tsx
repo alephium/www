@@ -65,18 +65,11 @@ const WalletCard = ({
     <WalletCardStyled onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
       <WalletScreenShotContainer
         style={{
-          backgroundColor: colord(color).alpha(0.02).toHex()
+          backgroundColor: colord(color)
+            .alpha(isHovered ? 0.1 : 0.05)
+            .toHex()
         }}
       >
-        <ScreenshotHighlightGradient
-          style={{
-            background: `radial-gradient(at top, ${colord(color).alpha(0.15).toHex()} 0%, 
-        ${colord(color).alpha(0).toHex()} 70%)`
-          }}
-          animate={{
-            opacity: isHovered ? 1 : 0
-          }}
-        />
         <WalletScreenshot
           src={screenshot.publicURL}
           alt="Desktop wallet screenshot"
@@ -171,10 +164,9 @@ const WalletScreenshot = styled(motion.img)`
 const WalletCardStyled = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: transparent;
+  background-color: ${({ theme }) => theme.bgPrimary};
   backdrop-filter: blur(30px);
-  border: 1px solid ${({ theme }) => theme.borderPrimary};
-  border-radius: 4px;
+  border-radius: 20px;
   max-width: 400px;
   overflow: hidden;
   text-align: center;

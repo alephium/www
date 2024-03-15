@@ -121,8 +121,8 @@ const TodoItems = styled(motion.div)<Alignment>`
 
 const TodoLabel = styled.div`
   position: absolute;
-  bottom: 2px;
-  right: 2px;
+  bottom: 4px;
+  right: 4px;
   padding: 4px 6px;
   border-radius: 30px;
   font-size: 11px;
@@ -139,8 +139,7 @@ const TodoItem = styled(motion.div)`
   padding: 15px;
   padding-bottom: 30px;
   background-color: ${({ theme }) => theme.bgPrimary};
-  border-radius: 12px;
-  border: 1px solid ${({ theme }) => theme.borderPrimary};
+  border-radius: 16px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 
   &:hover {
