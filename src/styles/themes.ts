@@ -22,7 +22,7 @@ export const darkTheme: DefaultTheme = {
 
   separator: 'var(--color-grey-800)',
 
-  palette1: '#18E4FF',
+  palette1: '#2f9dff',
   palette2: '#FF9C2B',
   palette3: '#FF259D'
 }
@@ -47,7 +47,7 @@ export const lightTheme: DefaultTheme = {
 
   separator: 'var(--color-grey-100)',
 
-  palette1: '#18E4FF',
+  palette1: '#3580ff',
   palette2: '#FF9C2B',
   palette3: '#FF259D'
 }

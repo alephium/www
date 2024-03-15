@@ -166,8 +166,7 @@ const NumbersSection = styled.section`
 const BorderedBox = styled.div`
   flex: 1;
   border-radius: 30px;
-  border: 1px solid ${({ theme }) => theme.borderPrimary};
-  background-color: ${({ theme }) => theme.bgSecondary};
+  background-color: ${({ theme }) => theme.bgPrimary};
   padding: var(--spacing-11);
   padding-bottom: var(--spacing-16);
   box-shadow: 0 50px 50px rgba(0, 0, 0, 0.3);

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { Link } from 'gatsby'
 
 import { deviceBreakPoints } from '../styles/global-style'
@@ -11,7 +11,7 @@ import { AnimatePresence, motion, useMotionValueEvent, useScroll } from 'framer-
 import { useRef, useState } from 'react'
 import HeroLogo from './Hero/HeroLogo'
 
-import { RiMenu3Fill } from 'react-icons/ri'
+import { RiMenu3Fill, RiArrowDropDownLine, RiArrowDropUpLine } from 'react-icons/ri'
 import useOnClickOutside from '../hooks/useOnClickOutside'
 
 interface NavigationMenuProps {
@@ -63,12 +63,14 @@ const NavigationMenu = ({ topOffset, className }: NavigationMenuProps) => {
 
 const NavigationItems = ({ className }: { className?: string }) => (
   <div className={className}>
-    <NavLink className="nav-item" url="https://explorer.alephium.org/" newTab trackingName="main-nav:explorer-link">
-      Explorer
-    </NavLink>
-    <NavLink className="nav-item" url="#wallets" trackingName="main-nav:download-wallet-link">
-      Get the wallet
-    </NavLink>
+    <NavigationDrawer
+      title="Ecosystem"
+      items={[
+        { title: 'Bridge', url: 'https://bridge.alephium.org/', isNew: true, isExternal: true },
+        { title: 'Get the wallet', url: '#wallets' },
+        { title: 'Explorer', url: 'https://explorer.alephium.org/', isExternal: true }
+      ]}
+    />
     <NavLink
       className="nav-item"
       url="https://docs.alephium.org/dapps/getting-started/"
@@ -110,6 +112,53 @@ const MobileMenu = () => {
   )
 }
 
+interface NavigationDrawerProps {
+  title: string
+  items: { title: string; url: string; isNew?: boolean; isExternal?: boolean }[]
+  className?: string
+}
+
+const NavigationDrawer = ({ title, items, className }: NavigationDrawerProps) => {
+  const [isOpen, setIsOpen] = useState(false)
+  const ref = useRef(null)
+
+  useOnClickOutside(ref, () => setIsOpen(false))
+
+  const handleTitleClick = () => {
+    setIsOpen(!isOpen)
+  }
+
+  return (
+    <DrawerWrapper className={className} ref={ref}>
+      <DrawerTitleWrapper onClick={handleTitleClick}>
+        {items.findIndex((i) => i.isNew) !== -1 && (
+          <NewItemBubble>
+            <NewItemBubbleEcho
+              initial={{ scale: 1, opacity: 0.7 }}
+              animate={{ scale: 3, opacity: 0 }}
+              transition={{ repeat: Infinity, duration: 2, repeatDelay: 1 }}
+            />
+          </NewItemBubble>
+        )}
+        <DrawerTitle>{title}</DrawerTitle>
+        <DrawerCarretWrapper>{isOpen ? <RiArrowDropUpLine /> : <RiArrowDropDownLine />}</DrawerCarretWrapper>
+      </DrawerTitleWrapper>
+      <AnimatePresence>
+        {isOpen && (
+          <Drawer initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+            {items.map((item, index) => (
+              <DrawerItem key={item.title}>
+                <NavLink key={index} url={item.url} text={item.title} newTab={item.isExternal} />
+                {item.isNew && <NewBubble>New</NewBubble>}
+              </DrawerItem>
+            ))}
+          </Drawer>
+        )}
+      </AnimatePresence>
+    </DrawerWrapper>
+  )
+}
+
 export default NavigationMenu
 
 const NavigationWrapper = styled.div`
@@ -122,7 +171,7 @@ const NavigationWrapper = styled.div`
   justify-content: center;
   z-index: 10000;
 
-  @media ${deviceBreakPoints.mobile} {
+  @media ${deviceBreakPoints.ipad} {
     padding-right: 30px;
     padding-left: 30px;
   }
@@ -149,7 +198,7 @@ const NavigationMenuStyled = styled(motion.div)`
       margin-top: 5px; // Github button
     }
 
-    @media ${deviceBreakPoints.mobile} {
+    @media ${deviceBreakPoints.ipad} {
       display: none;
     }
   }
@@ -199,13 +248,17 @@ const GithubButton = styled(SocialMediaIcon)`
   }
 `
 
-const NavLink = styled(SimpleLink)`
+const LinkStyle = css`
   font-size: var(--fontSize-18);
   color: ${({ theme }) => theme.textSecondary};
 
   &:hover {
     color: ${({ theme }) => theme.textPrimary};
   }
+`
+
+const NavLink = styled(SimpleLink)`
+  ${LinkStyle};
 `
 
 const MobileMenuStyled = styled.div`
@@ -215,7 +268,7 @@ const MobileMenuStyled = styled.div`
   align-items: center;
   margin-right: 12px;
 
-  @media ${deviceBreakPoints.mobile} {
+  @media ${deviceBreakPoints.ipad} {
     display: flex;
   }
 `
@@ -226,29 +279,120 @@ const MobileNav = styled(NavigationItems)`
   background-color: rgba(30, 30, 30, 0.8);
   backdrop-filter: blur(24px);
   min-width: 150px;
-  padding: 0 15px;
-  border-radius: 9px;
-  border: 1px solid ${({ theme }) => theme.borderPrimary};
+  border-radius: 20px;
   position: absolute;
   top: 50px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   right: 0px;
-  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.9);
 
   > * {
-    position: relative;
-    padding: 24px 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 18px 12px !important;
 
-    &:not(:last-child):after {
-      position: absolute;
-      bottom: 0px;
-      right: 0;
-      content: '';
-      height: 2px;
-      width: 20px;
-      background-color: ${({ theme }) => theme.textTertiary};
+    &:not(:last-child) {
+      border-bottom: 1px solid ${({ theme }) => theme.borderPrimary};
     }
+  }
+`
+
+const DrawerCarretWrapper = styled.div`
+  height: 100%;
+  width: 22px;
+  display: flex;
+  > * {
+    width: 100%;
+    height: 100%;
+    ${LinkStyle};
+  }
+`
+
+const DrawerTitleWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  &:hover {
+    cursor: pointer;
+
+    * {
+      color: ${({ theme }) => theme.textPrimary};
+    }
+  }
+`
+
+const NewItemBubble = styled.span`
+  position: relative;
+  background-color: ${({ theme }) => theme.palette1};
+  height: 8px;
+  width: 8px;
+  margin-right: 8px;
+  margin-top: 2px;
+  border-radius: 50%;
+`
+
+const NewItemBubbleEcho = styled(motion.div)`
+  scale: 1;
+  position: absolute;
+  background-color: ${({ theme }) => theme.palette1};
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+`
+
+const DrawerWrapper = styled.div`
+  position: relative;
+`
+
+const DrawerTitle = styled.span`
+  font-size: var(--fontSize-18);
+  color: ${({ theme }) => theme.textSecondary};
+`
+
+const Drawer = styled(motion.div)`
+  position: absolute;
+  top: calc(100% + 30px);
+  left: -50%;
+  right: 0;
+  min-width: 200px;
+  background-color: rgba(30, 30, 30, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  backdrop-filter: blur(24px);
+
+  @media ${deviceBreakPoints.ipad} {
+    top: 100%;
+    min-width: 140px;
+  }
+`
+
+const NewBubble = styled.div`
+  padding: 3px 6px;
+  color: white;
+  background-color: ${({ theme }) => theme.palette1};
+  border-radius: 20px;
+  font-size: var(--fontSize-14);
+`
+
+const DrawerItem = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid ${({ theme }) => theme.borderPrimary};
   }
 `
