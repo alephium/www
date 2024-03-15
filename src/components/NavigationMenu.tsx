@@ -64,10 +64,10 @@ const NavigationMenu = ({ topOffset, className }: NavigationMenuProps) => {
 const NavigationItems = ({ className }: { className?: string }) => (
   <div className={className}>
     <NavigationDrawer
-      title="Ecosystem"
+      title="Essentials"
       items={[
+        { title: 'Wallets', url: '#wallets' },
         { title: 'Bridge', url: 'https://bridge.alephium.org/', isNew: true, isExternal: true },
-        { title: 'Get the wallet', url: '#wallets' },
         { title: 'Explorer', url: 'https://explorer.alephium.org/', isExternal: true }
       ]}
     />
