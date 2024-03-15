@@ -134,9 +134,9 @@ const NavigationDrawer = ({ title, items, className }: NavigationDrawerProps) =>
         {items.findIndex((i) => i.isNew) !== -1 && (
           <NewItemBubble>
             <NewItemBubbleEcho
-              initial={{ scale: 1, opacity: 1 }}
-              animate={{ scale: 4, opacity: 0 }}
-              transition={{ repeat: Infinity, duration: 1.5, repeatDelay: 0.5 }}
+              initial={{ scale: 1, opacity: 0.7 }}
+              animate={{ scale: 3, opacity: 0 }}
+              transition={{ repeat: Infinity, duration: 2, repeatDelay: 1 }}
             />
           </NewItemBubble>
         )}
