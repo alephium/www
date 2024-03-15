@@ -131,7 +131,15 @@ const NavigationDrawer = ({ title, items, className }: NavigationDrawerProps) =>
   return (
     <DrawerWrapper className={className} ref={ref}>
       <DrawerTitleWrapper onClick={handleTitleClick}>
-        {items.findIndex((i) => i.isNew) !== -1 && <NewItemBubble />}
+        {items.findIndex((i) => i.isNew) !== -1 && (
+          <NewItemBubble>
+            <NewItemBubbleEcho
+              initial={{ scale: 1, opacity: 1 }}
+              animate={{ scale: 4, opacity: 0 }}
+              transition={{ repeat: Infinity, duration: 1.5, repeatDelay: 0.5 }}
+            />
+          </NewItemBubble>
+        )}
         <DrawerTitle>{title}</DrawerTitle>
         <DrawerCarretWrapper>{isOpen ? <RiArrowDropUpLine /> : <RiArrowDropDownLine />}</DrawerCarretWrapper>
       </DrawerTitleWrapper>
@@ -323,11 +331,21 @@ const DrawerTitleWrapper = styled.div`
 `
 
 const NewItemBubble = styled.span`
+  position: relative;
   background-color: ${({ theme }) => theme.palette1};
   height: 8px;
   width: 8px;
   margin-right: 8px;
   margin-top: 2px;
+  border-radius: 50%;
+`
+
+const NewItemBubbleEcho = styled(motion.div)`
+  scale: 1;
+  position: absolute;
+  background-color: ${({ theme }) => theme.palette1};
+  height: 8px;
+  width: 8px;
   border-radius: 50%;
 `
 
