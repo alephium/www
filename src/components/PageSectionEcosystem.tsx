@@ -8,6 +8,7 @@ import SubsectionTextHeader from './SubsectionTextHeader'
 import SimpleLink from './SimpleLink'
 import Columns from './Columns/Columns'
 import { motion } from 'framer-motion'
+import { useEffect, useState } from 'react'
 
 export type PageSectionEcosystemContentType = {
   title: string
@@ -29,54 +30,106 @@ interface PageSectionEcosystemProps {
   className?: string
 }
 
-const PageSectionEcosystem = ({ content: { title, subtitle, subsections }, className }: PageSectionEcosystemProps) => (
-  <section className={className}>
-    <SectionTextHeader title={title} subtitle={subtitle} bigSubtitle bigText />
-    <SectionContainer>
-      <Subsections>
-        {subsections.map(({ title, description, image, items }) => (
-          <Subsection key={title} animateEntry>
-            <SubsectionImageContainer>{image && <img src={image.publicURL} alt={title} />}</SubsectionImageContainer>
-            <SubsectionTextContent>
-              <SubsectionTextHeader title={title} subtitle={description} />
-              <SubsectionItems variants={containerVariants}>
-                {items &&
-                  items.map(({ title, logo, url }) =>
-                    url ? (
-                      <SimpleLink
-                        url={url}
-                        text={title}
-                        key={url}
-                        newTab
-                        trackingName={`ecosystem-section:${title.replaceAll(' ', '-')}-link`}
-                      >
-                        <SubsectionItem key={title} variants={itemVariants}>
-                          {logo ? (
-                            <>
-                              <SubsectionItemTitle className="with-logo">{title}</SubsectionItemTitle>
-                              <SubsectionItemLogoContainer>
-                                <SubsectionItemLogo src={logo.publicURL} alt={title} />
-                              </SubsectionItemLogoContainer>
-                            </>
-                          ) : (
-                            <SubsectionItemTitle>{title}</SubsectionItemTitle>
-                          )}
+type Exchange = { name: string; logo: string; trade_url: string }
+type EchangesRes = { name: 'Alephium'; tickers: { market: Exchange; trade_url: string }[] }
+
+const PageSectionEcosystem = ({ content: { title, subtitle, subsections }, className }: PageSectionEcosystemProps) => {
+  const [exchanges, setExchanges] = useState<Exchange[]>()
+
+  useEffect(() => {
+    const fetchExchanges = async () => {
+      try {
+        const exchanges = await fetch(
+          'https://api.coingecko.com/api/v3/coins/alephium/tickers?include_exchange_logo=true'
+        )
+        const res = (await exchanges.json()) as EchangesRes
+
+        setExchanges(
+          res.tickers.reduce((acc, { market, trade_url }) => {
+            if (!acc.find((m) => m.name === market.name)) {
+              acc.push({ name: market.name, logo: market.logo, trade_url: trade_url })
+            }
+            return acc
+          }, [] as Exchange[])
+        )
+      } catch (e) {
+        console.error('Error fetching exchanges:', e)
+      }
+    }
+
+    fetchExchanges()
+  }, [])
+
+  return (
+    <section className={className}>
+      <SectionTextHeader title={title} subtitle={subtitle} bigSubtitle bigText />
+      <SectionContainer>
+        <Subsections>
+          {subsections.map(({ title, description, image, items }) => (
+            <Subsection key={title} animateEntry>
+              <SubsectionImageContainer>{image && <img src={image.publicURL} alt={title} />}</SubsectionImageContainer>
+              <SubsectionTextContent>
+                <SubsectionTextHeader title={title} subtitle={description} />
+                <SubsectionItems variants={containerVariants}>
+                  {items &&
+                    items.map(({ title, logo, url }) =>
+                      url ? (
+                        <SimpleLink
+                          url={url}
+                          text={title}
+                          key={url}
+                          newTab
+                          trackingName={`ecosystem-section:${title.replaceAll(' ', '-')}-link`}
+                        >
+                          <SubsectionItem key={title} variants={itemVariants}>
+                            {logo ? (
+                              <>
+                                <SubsectionItemTitle className="with-logo">{title}</SubsectionItemTitle>
+                                <SubsectionItemLogoContainer>
+                                  <SubsectionItemLogo src={logo.publicURL} alt={title} />
+                                </SubsectionItemLogoContainer>
+                              </>
+                            ) : (
+                              <SubsectionItemTitle>{title}</SubsectionItemTitle>
+                            )}
+                          </SubsectionItem>
+                        </SimpleLink>
+                      ) : (
+                        <SubsectionItem key={title}>
+                          <SubsectionItemTitle>{title}</SubsectionItemTitle>
                         </SubsectionItem>
-                      </SimpleLink>
-                    ) : (
-                      <SubsectionItem key={title}>
-                        <SubsectionItemTitle>{title}</SubsectionItemTitle>
-                      </SubsectionItem>
-                    )
-                  )}
+                      )
+                    )}
+                </SubsectionItems>
+              </SubsectionTextContent>
+            </Subsection>
+          ))}
+          {exchanges && (
+            <VerticalSubsection>
+              <SubsectionTextHeader title="Exchanges" subtitle="Find $ALPH on the following exchanges:" />
+              <SubsectionItems variants={containerVariants}>
+                {exchanges.map(({ name, logo, trade_url }) => (
+                  <SimpleLink
+                    url={trade_url}
+                    text={name}
+                    key={name}
+                    newTab
+                    trackingName={`ecosystem-section:${name.replaceAll(' ', '-')}-link`}
+                  >
+                    <ExchangeItem key={name}>
+                      <ExchangeLogo src={logo} alt={name} />
+                      <ExchangeName>{name}</ExchangeName>
+                    </ExchangeItem>
+                  </SimpleLink>
+                ))}
               </SubsectionItems>
-            </SubsectionTextContent>
-          </Subsection>
-        ))}
-      </Subsections>
-    </SectionContainer>
-  </section>
-)
+            </VerticalSubsection>
+          )}
+        </Subsections>
+      </SectionContainer>
+    </section>
+  )
+}
 
 export default styled(PageSectionEcosystem)`
   padding-top: var(--spacing-16);
@@ -146,9 +199,14 @@ const Subsection = styled(Columns)`
   }
 `
 
+const VerticalSubsection = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
 const SubsectionItems = styled(motion.div)`
   margin-top: var(--spacing-4);
-  gap: 30px;
+  gap: var(--spacing-3);
   display: flex;
   flex-wrap: wrap;
 `
@@ -185,7 +243,7 @@ const SubsectionItemLogo = styled.img`
 
 const SubsectionItem = styled(motion.div)`
   position: relative;
-  width: 100px;
+  width: 115px;
   height: 100px;
   display: flex;
   align-items: center;
@@ -206,6 +264,29 @@ const SubsectionItem = styled(motion.div)`
       transform: translateY(0);
     }
   }
+`
+
+const ExchangeItem = styled.div`
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  padding: var(--spacing-2);
+  border-radius: 16px;
+  background-color: ${({ theme }) => theme.bgPrimary};
+  transition: all 0.2s ease-out;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.bgSurface};
+  }
+`
+
+const ExchangeLogo = styled.img`
+  width: 30px;
+  height: 30px;
+`
+
+const ExchangeName = styled.div`
+  font-weight: var(--fontWeight-medium);
 `
 
 const containerVariants = {

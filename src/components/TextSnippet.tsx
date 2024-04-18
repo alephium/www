@@ -60,14 +60,14 @@ const TextSnippet = ({
 export default styled(TextSnippet)`
   > h2,
   > h3 {
-    font-size: ${({ bigTitle }) => (bigTitle ? 'var(--fontSize-56)' : 'var(--fontSize-28)')};
-    line-height: ${({ bigTitle }) => (bigTitle ? 'var(--fontSize-56)' : 'var(--lineHeight-36)')};
+    font-size: ${({ bigTitle }) => (bigTitle ? 'var(--fontSize-56)' : 'var(--fontSize-36)')};
+    line-height: ${({ bigTitle }) => (bigTitle ? 'var(--fontSize-56)' : 'var(--lineHeight-50)')};
     margin: 0;
     font-weight: var(--fontWeight-medium);
   }
 
   > h3 + .text-subtitle {
-    padding-top: 12px;
+    padding-top: 15px;
   }
 
   .text-subtitle {

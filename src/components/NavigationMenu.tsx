@@ -71,6 +71,12 @@ const NavigationItems = ({ className }: { className?: string }) => (
         { title: 'Explorer', url: 'https://explorer.alephium.org/', isExternal: true }
       ]}
     />
+    <NavLink className="nav-item" url="#ecosystem" trackingName="main-nav:Ecosystem">
+      Ecosystem
+    </NavLink>
+    <NavLink className="nav-item" url="#community" trackingName="main-nav:community">
+      Community
+    </NavLink>
     <NavLink
       className="nav-item"
       url="https://docs.alephium.org/dapps/getting-started/"
@@ -78,9 +84,6 @@ const NavigationItems = ({ className }: { className?: string }) => (
       trackingName="main-nav:build-dapp-link"
     >
       Build a dApp
-    </NavLink>
-    <NavLink className="nav-item" url="#community" trackingName="main-nav:community">
-      Community
     </NavLink>
 
     <GithubButton

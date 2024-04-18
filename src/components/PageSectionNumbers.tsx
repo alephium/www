@@ -39,6 +39,14 @@ type StatScalarKeys = 'hashrate' | 'circulatingSupply' | 'totalTransactions'
 
 type StatsScalarData = { [key in StatScalarKeys]: StatScalar }
 
+type ActiveAddressRes = { [alphThreshold: string]: { amount: number } }[]
+
+type ChainsTVL = {
+  gecko_id: string
+  tvl: number
+}[]
+type BridgeTVL = number
+
 const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
   const [explorerClient, setExplorerClient] = useState<ExplorerClient>()
   const [statsScalarData, setStatsScalarData] = useState<StatsScalarData>({
@@ -46,6 +54,9 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
     circulatingSupply: statScalarDefault,
     totalTransactions: statScalarDefault
   })
+  const [activeAddresses, setActiveAddresses] = useState<number>()
+  const [bridgeTVL, setBridgeTVL] = useState<number>()
+  const [chainTVL, setChainTVL] = useState<number>()
 
   const boxRef = useRef<HTMLDivElement>(null)
 
@@ -59,6 +70,52 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
   useEffect(() => {
     setExplorerClient(new ExplorerClient({ baseUrl }))
   }, [])
+
+  useEffect(() => {
+    const fetchBridgeTVL = async () => {
+      try {
+        const res = await fetch('https://api.llama.fi/v2/chains')
+        const tvl = (await res.json()) as ChainsTVL
+
+        setChainTVL(tvl.find((d) => d.gecko_id === 'alephium')?.tvl)
+      } catch (e) {
+        console.error('Error fetching bridge TVL:', e)
+      }
+    }
+    fetchBridgeTVL()
+  }, [])
+
+  useEffect(() => {
+    const fetchBridgeTVL = async () => {
+      try {
+        const res = await fetch('https://api.llama.fi/tvl/alephium-bridge')
+        const tvl = (await res.json()) as BridgeTVL
+
+        setBridgeTVL(tvl)
+      } catch (e) {
+        console.error('Error fetching bridge TVL:', e)
+      }
+    }
+    fetchBridgeTVL()
+  }, [])
+
+  /*
+  useEffect(() => {
+    const fetchActiveAddresses = async () => {
+      try {
+        const res = (await (await fetch('https://alph-richlist.vercel.app/api/holdings')).json()) as ActiveAddressRes
+
+        console.log(res)
+        const total = Object.values(res[0]).reduce((acc, { amount }) => acc + amount, 0)
+
+        setActiveAddresses(total)
+      } catch (e) {
+        console.error('Error fetching active addresses:', e)
+      }
+    }
+    fetchActiveAddresses()
+  }, [])
+  */
 
   useEffect(() => {
     if (!explorerClient) return
@@ -90,30 +147,19 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
     fetchAndUpdateStatsScalar('totalTransactions', explorerClient.infos.getInfosTotalTransactions)
   }, [explorerClient, updateStatsScalar])
 
-  const { hashrate, circulatingSupply, totalTransactions } = statsScalarData
+  const { hashrate, totalTransactions } = statsScalarData
   const [hashrateInteger, hashrateDecimal, hashrateSuffix] = formatNumberForDisplay(hashrate.value, 'hash')
-  const supply = formatNumberForDisplay(circulatingSupply.value).join('')
 
   const columns = [
     {
-      value: '16',
-      isLoading: false,
-      description: 'shards running'
-    },
-    {
       value: hashrateInteger && `${addApostrophes(hashrateInteger)}${hashrateDecimal ?? ''}`,
       isLoading: false,
-      description: `${hashrateSuffix}H/s`
+      description: `Hashrate (${hashrateSuffix}H/s)`
     },
     {
-      value: supply,
+      value: formatNumberForDisplay(totalTransactions.value).join(''),
       isLoading: false,
-      description: 'ALPH circulating'
-    },
-    {
-      value: addApostrophes(totalTransactions.value.toFixed(0)),
-      isLoading: false,
-      description: 'transactions executed'
+      description: 'Transactions executed'
     }
   ]
 
@@ -130,7 +176,7 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
           <BorderedBox ref={boxRef}>
             <SubsectionTextHeaderStyled title={title} subtitle={subtitle} condensed bigTitle />
             <ArrowedLinkStyled url="https://explorer.alephium.org/" newTab>
-              Check our explorer
+              Check out our explorer
             </ArrowedLinkStyled>
             <ColumnsStyled>
               {columns.map((column) => (
@@ -138,6 +184,29 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
                   <NumbersInfo {...column} />
                 </NumbersColumn>
               ))}
+              {/*
+              <NumbersColumn>
+                <NumbersInfo
+                  description="Active addresses"
+                  value={activeAddresses?.toString()}
+                  isLoading={activeAddresses === undefined}
+                />
+              </NumbersColumn>
+            */}
+              <NumbersColumn>
+                <NumbersInfo
+                  description="Chain TVL"
+                  value={chainTVL ? '$' + formatNumberForDisplay(chainTVL).join('') : '-'}
+                  isLoading={bridgeTVL === undefined}
+                />
+              </NumbersColumn>
+              <NumbersColumn>
+                <NumbersInfo
+                  description="Bridged TVL"
+                  value={bridgeTVL ? '$' + formatNumberForDisplay(bridgeTVL).join('') : '-'}
+                  isLoading={bridgeTVL === undefined}
+                />
+              </NumbersColumn>
             </ColumnsStyled>
             <Waves parentRef={boxRef} />
           </BorderedBox>
