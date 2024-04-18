@@ -154,12 +154,12 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
     {
       value: hashrateInteger && `${addApostrophes(hashrateInteger)}${hashrateDecimal ?? ''}`,
       isLoading: false,
-      description: `${hashrateSuffix}H/s`
+      description: `Hashrate (${hashrateSuffix}H/s)`
     },
     {
       value: formatNumberForDisplay(totalTransactions.value).join(''),
       isLoading: false,
-      description: 'transactions executed'
+      description: 'Transactions executed'
     }
   ]
 
