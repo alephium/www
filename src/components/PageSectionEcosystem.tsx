@@ -38,19 +38,23 @@ const PageSectionEcosystem = ({ content: { title, subtitle, subsections }, class
 
   useEffect(() => {
     const fetchExchanges = async () => {
-      const exchanges = await fetch(
-        'https://api.coingecko.com/api/v3/coins/alephium/tickers?include_exchange_logo=true'
-      )
-      const res = (await exchanges.json()) as EchangesRes
+      try {
+        const exchanges = await fetch(
+          'https://api.coingecko.com/api/v3/coins/alephium/tickers?include_exchange_logo=true'
+        )
+        const res = (await exchanges.json()) as EchangesRes
 
-      setExchanges(
-        res.tickers.reduce((acc, { market, trade_url }) => {
-          if (!acc.find((m) => m.name === market.name)) {
-            acc.push({ name: market.name, logo: market.logo, trade_url: trade_url })
-          }
-          return acc
-        }, [] as Exchange[])
-      )
+        setExchanges(
+          res.tickers.reduce((acc, { market, trade_url }) => {
+            if (!acc.find((m) => m.name === market.name)) {
+              acc.push({ name: market.name, logo: market.logo, trade_url: trade_url })
+            }
+            return acc
+          }, [] as Exchange[])
+        )
+      } catch (e) {
+        console.error('Error fetching exchanges:', e)
+      }
     }
 
     fetchExchanges()
