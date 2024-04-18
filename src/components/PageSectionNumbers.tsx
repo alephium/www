@@ -41,6 +41,8 @@ type StatsScalarData = { [key in StatScalarKeys]: StatScalar }
 
 type ActiveAddressRes = { [alphThreshold: string]: { amount: number } }[]
 
+type BridgeTVL = number
+
 const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
   const [explorerClient, setExplorerClient] = useState<ExplorerClient>()
   const [statsScalarData, setStatsScalarData] = useState<StatsScalarData>({
@@ -49,6 +51,7 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
     totalTransactions: statScalarDefault
   })
   const [activeAddresses, setActiveAddresses] = useState<number>()
+  const [bridgeTVL, setBridgeTVL] = useState<number>()
 
   const boxRef = useRef<HTMLDivElement>(null)
 
@@ -61,6 +64,20 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
 
   useEffect(() => {
     setExplorerClient(new ExplorerClient({ baseUrl }))
+  }, [])
+
+  useEffect(() => {
+    const fetchBridgeTVL = async () => {
+      try {
+        const res = await fetch('https://api.llama.fi/tvl/alephium-bridge')
+        const tvl = (await res.json()) as BridgeTVL
+
+        setBridgeTVL(tvl)
+      } catch (e) {
+        console.error('Error fetching bridge TVL:', e)
+      }
+    }
+    fetchBridgeTVL()
   }, [])
 
   /*
@@ -157,6 +174,13 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
                 />
               </NumbersColumn>
             */}
+              <NumbersColumn>
+                <NumbersInfo
+                  description="Bridged TVL"
+                  value={bridgeTVL ? '$' + formatNumberForDisplay(bridgeTVL).join('') : '-'}
+                  isLoading={bridgeTVL === undefined}
+                />
+              </NumbersColumn>
             </ColumnsStyled>
             <Waves parentRef={boxRef} />
           </BorderedBox>
