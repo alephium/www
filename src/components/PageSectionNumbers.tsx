@@ -41,6 +41,10 @@ type StatsScalarData = { [key in StatScalarKeys]: StatScalar }
 
 type ActiveAddressRes = { [alphThreshold: string]: { amount: number } }[]
 
+type ChainsTVL = {
+  gecko_id: string
+  tvl: number
+}[]
 type BridgeTVL = number
 
 const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
@@ -52,6 +56,7 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
   })
   const [activeAddresses, setActiveAddresses] = useState<number>()
   const [bridgeTVL, setBridgeTVL] = useState<number>()
+  const [chainTVL, setChainTVL] = useState<number>()
 
   const boxRef = useRef<HTMLDivElement>(null)
 
@@ -64,6 +69,20 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
 
   useEffect(() => {
     setExplorerClient(new ExplorerClient({ baseUrl }))
+  }, [])
+
+  useEffect(() => {
+    const fetchBridgeTVL = async () => {
+      try {
+        const res = await fetch('https://api.llama.fi/v2/chains')
+        const tvl = (await res.json()) as ChainsTVL
+
+        setChainTVL(tvl.find((d) => d.gecko_id === 'alephium')?.tvl)
+      } catch (e) {
+        console.error('Error fetching bridge TVL:', e)
+      }
+    }
+    fetchBridgeTVL()
   }, [])
 
   useEffect(() => {
@@ -138,7 +157,7 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
       description: `${hashrateSuffix}H/s`
     },
     {
-      value: addApostrophes(totalTransactions.value.toFixed(0)),
+      value: formatNumberForDisplay(totalTransactions.value).join(''),
       isLoading: false,
       description: 'transactions executed'
     }
@@ -174,6 +193,13 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
                 />
               </NumbersColumn>
             */}
+              <NumbersColumn>
+                <NumbersInfo
+                  description="Chain TVL"
+                  value={chainTVL ? '$' + formatNumberForDisplay(chainTVL).join('') : '-'}
+                  isLoading={bridgeTVL === undefined}
+                />
+              </NumbersColumn>
               <NumbersColumn>
                 <NumbersInfo
                   description="Bridged TVL"
