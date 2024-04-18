@@ -80,7 +80,7 @@ module.exports = {
           'connect-src':
             "'self' mainnet-backend.alephium.org api.github.com alephium.goatcounter.com https://prod.spline.design https://api.coingecko.com https://alph-richlist.vercel.app https://api.llama.fi",
           'img-src':
-            "'self' https://prod.spline.design https://pbs.twimg.com/ data: https://alephium.goatcounter.com blob: https://www2.alephium.org blob: https://www.alephium.org",
+            "'self' https://prod.spline.design https://pbs.twimg.com/ https://assets.coingecko.com data: https://alephium.goatcounter.com blob: https://www2.alephium.org blob: https://www.alephium.org",
           'frame-ancestors': 'none'
         }
       }
