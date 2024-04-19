@@ -9,6 +9,7 @@ import SimpleLink from './SimpleLink'
 import Columns from './Columns/Columns'
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
+import { sortBy } from 'lodash'
 
 export type PageSectionEcosystemContentType = {
   title: string
@@ -44,14 +45,14 @@ const PageSectionEcosystem = ({ content: { title, subtitle, subsections }, class
         )
         const res = (await exchanges.json()) as EchangesRes
 
-        setExchanges(
-          res.tickers.reduce((acc, { market, trade_url }) => {
-            if (!acc.find((m) => m.name === market.name)) {
-              acc.push({ name: market.name, logo: market.logo, trade_url: trade_url })
-            }
-            return acc
-          }, [] as Exchange[])
-        )
+        const exchangeList = res.tickers.reduce((acc, { market, trade_url }) => {
+          if (!acc.find((m) => m.name === market.name)) {
+            acc.push({ name: market.name, logo: market.logo, trade_url: trade_url })
+          }
+          return acc
+        }, [] as Exchange[])
+
+        setExchanges(sortBy(exchangeList, (e) => (e.name === 'AYIN' ? 0 : 1)))
       } catch (e) {
         console.error('Error fetching exchanges:', e)
       }
