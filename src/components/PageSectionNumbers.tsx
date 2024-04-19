@@ -250,7 +250,7 @@ const NumbersColumn = styled(Column)`
 
   &:not(:first-child) {
     > div {
-      padding-left: var(--spacing-6);
+      padding-left: var(--spacing-3);
 
       @media ${deviceBreakPoints.mobile} {
         padding-left: 0;
