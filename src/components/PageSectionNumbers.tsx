@@ -47,6 +47,13 @@ type ChainsTVL = {
 }[]
 type BridgeTVL = number
 
+type ProtocolsTVLs = {
+  id: string
+  name: string
+  chain: 'Alephium'
+  staking: number
+}[]
+
 const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
   const [explorerClient, setExplorerClient] = useState<ExplorerClient>()
   const [statsScalarData, setStatsScalarData] = useState<StatsScalarData>({
@@ -57,6 +64,7 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
   const [activeAddresses, setActiveAddresses] = useState<number>()
   const [bridgeTVL, setBridgeTVL] = useState<number>()
   const [chainTVL, setChainTVL] = useState<number>()
+  const [protocolsStakingTVL, setProtocolsStakingTVL] = useState<number>()
 
   const boxRef = useRef<HTMLDivElement>(null)
 
@@ -72,17 +80,35 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
   }, [])
 
   useEffect(() => {
-    const fetchBridgeTVL = async () => {
+    const fetchChainTvl = async () => {
       try {
         const res = await fetch('https://api.llama.fi/v2/chains')
         const tvl = (await res.json()) as ChainsTVL
 
         setChainTVL(tvl.find((d) => d.gecko_id === 'alephium')?.tvl)
       } catch (e) {
-        console.error('Error fetching bridge TVL:', e)
+        console.error('Error fetching chain TVL:', e)
       }
     }
-    fetchBridgeTVL()
+    fetchChainTvl()
+  }, [])
+
+  useEffect(() => {
+    const fetchProtocols = async () => {
+      try {
+        const res = await fetch('https://api.llama.fi/protocols')
+        const tvls = (await res.json()) as ProtocolsTVLs
+
+        console.log(tvls.filter((t) => t.chain === 'Alephium'))
+
+        setProtocolsStakingTVL(
+          tvls.filter((t) => t.chain === 'Alephium').reduce((acc, { staking }) => acc + staking, 0)
+        )
+      } catch (e) {
+        console.error('Error fetching protocols TVL:', e)
+      }
+    }
+    fetchProtocols()
   }, [])
 
   useEffect(() => {
@@ -196,7 +222,11 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
               <NumbersColumn>
                 <NumbersInfo
                   description="Chain TVL"
-                  value={chainTVL ? '$' + formatNumberForDisplay(chainTVL).join('') : '-'}
+                  value={
+                    chainTVL && protocolsStakingTVL
+                      ? '$' + formatNumberForDisplay(chainTVL + protocolsStakingTVL).join('')
+                      : '-'
+                  }
                   isLoading={bridgeTVL === undefined}
                 />
               </NumbersColumn>
