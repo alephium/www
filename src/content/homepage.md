@@ -122,8 +122,6 @@ ecosystemSection:
         - title: 'Sezame Wallet'
           logo: '../images/logos/sesame-wallet-icon.svg'
           url: https://sezame.app/
-        - title: 'MetaPool'
-          url: https://www.metapool.tech/dashboard
         - title: 'Sahhar Wallet'
           url: https://play.google.com/store/apps/details?id=com.sahhar.sahhar_wallet&pli=1
         - title: '& More'
