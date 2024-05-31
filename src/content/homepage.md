@@ -21,7 +21,7 @@ introSection:
       image: ../images/code.svg
       description: 'Start building your own smart contracts, decentralized apps, and protocols.'
       link:
-        url: https://docs.alephium.org/dapps/getting-started/
+        url: https://docs.alephium.org
         newTab: true
     - title: Start Contributing
       image: ../images/coins.svg
@@ -52,7 +52,7 @@ technologySection:
     links:
       - text: More details
       - text: Guide
-        url: https://docs.alephium.org/dapps/getting-started/
+        url: https://docs.alephium.org/dapps/
         newTab: true
   polwSection:
     title: Efficiency in Energy Consumption

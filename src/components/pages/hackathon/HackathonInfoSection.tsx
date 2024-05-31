@@ -198,15 +198,20 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
           <Paragraph>Enhancing/creating developer documentation. (Create a PR in the relevant repo)</Paragraph>
           <ul>
             <li>
-              1 - improve the <SimpleLink text="SDK doc" url="https://docs.alephium.org/dapps/alephium-web3" newTab />
+              1 - improve the{' '}
+              <SimpleLink text="SDK doc" url="https://docs.alephium.org/dapps/sdk/getting-started" newTab />
             </li>
             <li>
               2 - improve the{' '}
-              <SimpleLink text="dApp recipes doc" url="https://docs.alephium.org/dapps/alephium-web3" newTab />
+              <SimpleLink text="dApp recipes doc" url="https://docs.alephium.org/dapps/sdk/getting-started" newTab />
             </li>
             <li>
               3 - improve the{' '}
-              <SimpleLink text="Ralph language doc" url="https://docs.alephium.org/ralph/getting-started" newTab />
+              <SimpleLink
+                text="Ralph language doc"
+                url="https://docs.alephium.org/dapps/ralph/getting-started"
+                newTab
+              />
             </li>
           </ul>
         </BountiesCard>

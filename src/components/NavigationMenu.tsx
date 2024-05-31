@@ -77,12 +77,7 @@ const NavigationItems = ({ className }: { className?: string }) => (
     <NavLink className="nav-item" url="#community" trackingName="main-nav:community">
       Community
     </NavLink>
-    <NavLink
-      className="nav-item"
-      url="https://docs.alephium.org/dapps/getting-started/"
-      newTab
-      trackingName="main-nav:build-dapp-link"
-    >
+    <NavLink className="nav-item" url="https://docs.alephium.org/dapps/" newTab trackingName="main-nav:build-dapp-link">
       Build a dApp
     </NavLink>
 
