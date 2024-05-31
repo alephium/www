@@ -47,7 +47,8 @@ const PageSectionEcosystem = ({ content: { title, subtitle, subsections }, class
 
         const exchangeList = res.tickers.reduce((acc, { market, trade_url }) => {
           if (!acc.find((m) => m.name === market.name)) {
-            acc.push({ name: market.name, logo: market.logo, trade_url: trade_url })
+            // Coingecko API returns a different (restricted) URL for the logo, so we need to replace it
+            acc.push({ name: market.name, logo: market.logo.replace('coin-images', 'assets'), trade_url: trade_url })
           }
           return acc
         }, [] as Exchange[])
