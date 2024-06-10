@@ -42,6 +42,6 @@ columns:
         url:
         newTab: false
       - text: Privacy policy
-        url:
+        url: /privacy-policy
         newTab: false
 ---
