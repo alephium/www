@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from 'react'
+import { FC, useState } from 'react'
 import styled, { useTheme } from 'styled-components'
 
 import { deviceBreakPoints } from '../styles/global-style'
@@ -9,7 +9,6 @@ import Columns from './Columns/Columns'
 import Column from './Columns/Column'
 import ModalTeam from './ModalTeam'
 import ModalContact from './ModalContact'
-import ModalPrivacyPolicy from './ModalPrivacyPolicy'
 
 import Logo from '../images/svgs/logo.svg'
 import { graphql, useStaticQuery } from 'gatsby'
@@ -32,10 +31,9 @@ interface FooterProps {
   className?: string
 }
 
-const Footer = ({ className, openPrivacyPolicyModal }: FooterProps) => {
+const Footer = ({ className }: FooterProps) => {
   const [isTeamModalOpen, setIsTeamModalOpen] = useState(false)
   const [isContactModalOpen, setIsContactModalOpen] = useState(false)
-  const [isPrivacyPolicyModalOpen, setIsPrivacyPolicyModalOpen] = useState(false)
   const data = useStaticQuery<FooterContentType>(footerQuery)
 
   const content = data.footer.nodes[0].frontmatter
@@ -43,11 +41,6 @@ const Footer = ({ className, openPrivacyPolicyModal }: FooterProps) => {
   const columnsContent = content.columns
   columnsContent[2].links[0] = { ...columnsContent[2].links[0], openModal: setIsTeamModalOpen }
   columnsContent[2].links[2] = { ...columnsContent[2].links[2], openModal: setIsContactModalOpen }
-  columnsContent[2].links[3] = { ...columnsContent[2].links[3], openModal: setIsPrivacyPolicyModalOpen }
-
-  useEffect(() => {
-    if (openPrivacyPolicyModal) setIsPrivacyPolicyModalOpen(true)
-  }, [openPrivacyPolicyModal])
 
   return (
     <div className={className}>
@@ -66,7 +59,6 @@ const Footer = ({ className, openPrivacyPolicyModal }: FooterProps) => {
       </PageSectionContainerStyled>
       <ModalTeam isOpen={isTeamModalOpen} setIsOpen={setIsTeamModalOpen} />
       <ModalContact isOpen={isContactModalOpen} setIsOpen={setIsContactModalOpen} />
-      <ModalPrivacyPolicy isOpen={isPrivacyPolicyModalOpen} setIsOpen={setIsPrivacyPolicyModalOpen} />
     </div>
   )
 }
