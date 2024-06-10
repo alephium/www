@@ -6,7 +6,7 @@ title: Privacy policy
 
 _Last modified: June 10, 2024_
 
-This Privacy Policy (the “Policy”) explains how Alephium ("Alephium Developer", the "Company", "we", "us" or "our") collects, uses, and shares data in connection with the Alephium website (alephium.org), the Alephium wallets and all of our other properties, products, and services (the “Services”). Your use of the Services is subject to this Policy as well as our Terms of Service.
+This Privacy Policy (the “Policy”) explains how Alephium ("Panda Software SA", "Alephium Developer", the "Company", "we", "us" or "our") collects, uses, and shares data in connection with the Alephium website (alephium.org), the Alephium wallets and all of our other properties, products, and services (the “Services”). Your use of the Services is subject to this Policy as well as our Terms of Service.
 
 ## High Level Summary
 
