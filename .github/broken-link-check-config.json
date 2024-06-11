@@ -2,13 +2,16 @@
   "aliveStatusCodes": [200, 999],
   "ignorePatterns": [
     {
-      "pattern": "^https://www.privacypolicygenerator.info"
+      "pattern": "^https://alephium.myspreadshop.ch"
     },
     {
       "pattern": "^https://www.metapool.tech/dashboard"
     },
     {
       "pattern": "^https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md"
+    },
+    {
+      "pattern": "^https://www.reddit.com/r/Alephium"
     }
   ]
 }
