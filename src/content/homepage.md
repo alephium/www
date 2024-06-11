@@ -137,7 +137,7 @@ ecosystemSection:
           logo: '../images/svgs/utxo-aliance-logo-white.svg'
           url: https://utxo-alliance.org/
         - title: 'Hearst'
-          logo: '../images/svgs/hearst.svg'
+          logo: '../images/logos/hearst.png'
           url: https://hearst-capital.com/
         - title: 'Bitmain'
           logo: '../images/svgs/bitmain.svg'
