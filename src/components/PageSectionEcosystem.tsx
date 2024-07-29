@@ -10,6 +10,7 @@ import Columns from './Columns/Columns'
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { sortBy } from 'lodash'
+import Button from './Button'
 
 export type PageSectionEcosystemContentType = {
   title: string
@@ -73,7 +74,12 @@ const PageSectionEcosystem = ({ content: { title, subtitle, subsections }, class
               <SubsectionTextContent>
                 <SubsectionTextHeader title={title} subtitle={description} />
                 <SubsectionItems variants={containerVariants}>
-                  {items &&
+                  {title === 'dApps & projects' ? (
+                    <Button newTab url="https://alph.land">
+                      Discover the Alephium ecosystem
+                    </Button>
+                  ) : (
+                    items &&
                     items.map(({ title, logo, url }) =>
                       url ? (
                         <SimpleLink
@@ -101,7 +107,8 @@ const PageSectionEcosystem = ({ content: { title, subtitle, subsections }, class
                           <SubsectionItemTitle>{title}</SubsectionItemTitle>
                         </SubsectionItem>
                       )
-                    )}
+                    )
+                  )}
                 </SubsectionItems>
               </SubsectionTextContent>
             </Subsection>

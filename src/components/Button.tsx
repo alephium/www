@@ -39,10 +39,10 @@ const Button = ({ onClick, className, children, url, newTab, trackingName, disab
   )
 
 export default styled(Button)`
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   color: black;
-  border-radius: 4px;
-  padding: 3px 5px;
+  border-radius: 9px;
+  padding: 12px;
   border: 0 solid;
   text-decoration: none;
   display: inline-flex;
@@ -50,7 +50,7 @@ export default styled(Button)`
 
   /* The following rules are the same as in the ArrowedLink, maybe extract? */
   align-items: center;
-  font-weight: var(--fontWeight-medium);
+  font-weight: var(--fontWeight-semiBold);
   transition: all 0.1s ease-out;
 
   ${({ disabled }) =>

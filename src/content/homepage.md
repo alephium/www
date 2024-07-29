@@ -108,24 +108,6 @@ ecosystemSection:
     - title: dApps & projects
       description: 'Building on top, around, or below what we do, securing the network or providing services, they are the life & blood of Alephium & the reasons we grind every day!'
       image: ../images/sprout.svg
-      items:
-        - title: 'Alphland'
-          url: https://www.alph.land/
-        - title: 'Ayin'
-          url: https://www.ayin.app/
-        - title: 'DEADRARE'
-          logo: '../images/logos/DEADRARE-icon.png'
-          url: https://deadrare.io
-        - title: ALPH.bet
-          logo: '../images/logos/alph-bet-icon.png'
-          url: https://ALPH.bet
-        - title: 'Sezame Wallet'
-          logo: '../images/logos/sesame-wallet-icon.svg'
-          url: https://sezame.app/
-        - title: 'Sahhar Wallet'
-          url: https://play.google.com/store/apps/details?id=com.sahhar.sahhar_wallet&pli=1
-        - title: '& More'
-          url: https://github.com/alephium/awesome-alephium
     - title: Partners
       description: 'From lawyers to peer blockchains, lobbying & local associations, they make us feel part of a larger ecosystem.'
       image: ../images/network.svg
