@@ -4,26 +4,25 @@ import { Link } from 'gatsby'
 import GlobalStyle from '../styles/global-style'
 import { darkTheme } from '../styles/themes'
 
-import HeroContentWrapper from '../components/Hero/HeroContentWrapper'
-import HeroPageSectionContainer from '../components/Hero/HeroPageSectionContainer'
 import NavigationMenu from '../components/NavigationMenu'
 import TextSnippet from '../components/TextSnippet'
 
 import HeroLogo from '../components/Hero/HeroLogo'
 import HeroImage from '../components/Hero/HeroImage'
+import PageSectionContainer from '../components/PageSectionContainer'
 
 const NotFoundPage = () => (
   <ThemeProvider theme={darkTheme}>
     <GlobalStyle />
-    <main>
+    <main style={{ height: '100vh' }}>
       <HeroImage layer="back" slide={0} parallaxSpeed={12} />
       <HeroImage layer="middle" slide={0} parallaxSpeed={8} />
       <HeroImage layer="front" slide={0} parallaxSpeed={2} />
-      <HeroPageSectionContainer>
+      <PageSectionContainer>
         <div className="navigation-menu-wrapper">
           <NavigationMenu />
         </div>
-        <HeroContentWrapper>
+        <CenteredContainer>
           <div className="contents">
             <HeroLogo gradientIndex={0} />
             <h1>404 - Page not found</h1>
@@ -31,11 +30,13 @@ const NotFoundPage = () => (
               Let&apos;s go back to the <Link to="/">home page</Link>.
             </TextSnippetStyled>
           </div>
-        </HeroContentWrapper>
-      </HeroPageSectionContainer>
+        </CenteredContainer>
+      </PageSectionContainer>
     </main>
   </ThemeProvider>
 )
+
+export default NotFoundPage
 
 const TextSnippetStyled = styled(TextSnippet)`
   color: ${({ theme }) => theme.textTertiary};
@@ -46,4 +47,8 @@ const TextSnippetStyled = styled(TextSnippet)`
   }
 `
 
-export default NotFoundPage
+const CenteredContainer = styled.div`
+  display: flex;
+  align-items: center;
+  height: 100%;
+`
