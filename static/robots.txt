@@ -1,2 +1,5 @@
 User-agent: *
 Disallow: /cmc-application-proof.txt
+
+User-agent: *
+Disallow: /banxa-callback
