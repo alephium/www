@@ -9,6 +9,12 @@
     },
     {
       "pattern": "^https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md"
+    },
+    {
+      "pattern": "^https://www.reddit.com/r/Alephium"
+    },
+    {
+      "pattern": "^https://alephium.myspreadshop.ch"
     }
   ]
 }
