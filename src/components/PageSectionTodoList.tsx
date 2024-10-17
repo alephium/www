@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
-import PageSectionContainer from './PageSectionContainer'
 import SectionTextHeader from './SectionTextHeader'
-import TextSnippet from './TextSnippet'
-import SvgCheckmark from '../images/complete-check.svg'
 import SvgStars from '../images/stars.svg'
 import { deviceBreakPoints } from '../styles/global-style'
-import { motion, Variants } from 'framer-motion'
+import { AnimatePresence, motion, Variants } from 'framer-motion'
+import { useRef, useState } from 'react'
+import useOnClickOutside from '../hooks/useOnClickOutside'
+import { colord } from 'colord'
 
 export type PageSectionTodoListContentType = {
   title: string
@@ -15,8 +15,7 @@ export type PageSectionTodoListContentType = {
     title: string
     items: {
       text: string
-      label: string
-      complete: boolean
+      description: string
     }[]
   }[]
 }
@@ -25,33 +24,65 @@ interface Props {
   content: PageSectionTodoListContentType
 }
 
-interface Alignment {
-  $alignRight: boolean
-}
-
 const PageSectionTodoList = ({ content: { title, subtitle, lists } }: Props) => (
   <BackdropStars>
     <SectionTextHeader id="next" title={title} subtitle={subtitle} bigSubtitle bigText centered />
-    <PageSectionContainer>
-      <TodoLists variants={todoItemsContainerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-        {lists.map(({ title, items }, index) => (
-          <TodoList key={title}>
-            <TodoTitle title={title} $alignRight={index % 2 == 0} titleHierarchy="h3" />
-            <TodoItems $alignRight={index % 2 == 0}>
-              {items.map(({ text, label, complete }) => (
-                <TodoItem key={text} variants={itemVariants}>
-                  {label && <TodoLabel>{label}</TodoLabel>}
-                  <TodoContent complete={complete}>{text}</TodoContent>
-                  {complete && <TodoStateIcon />}
-                </TodoItem>
-              ))}
-            </TodoItems>
-          </TodoList>
-        ))}
-      </TodoLists>
-    </PageSectionContainer>
+    <TodoListScrollableContainer>
+      <TodoListsContainer>
+        <TodoLists
+          variants={todoItemsContainerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          {lists.map(({ title, items }) => (
+            <TodoList key={title}>
+              <TodoTitle>{title}</TodoTitle>
+              <TodoItems>
+                {items.map(({ text, description }) => (
+                  <TodoItem key={text} text={text} description={description} />
+                ))}
+              </TodoItems>
+            </TodoList>
+          ))}
+        </TodoLists>
+      </TodoListsContainer>
+      <GradientLeft />
+      <GradientRight />
+    </TodoListScrollableContainer>
   </BackdropStars>
 )
+
+interface TodoItemProps {
+  text: string
+  description?: string
+}
+
+const TodoItem = ({ text, description }: TodoItemProps) => {
+  const [isOpen, setIsOpen] = useState(false)
+  const ref = useRef<HTMLDivElement>(null)
+
+  const handleToggle = () => setIsOpen((p) => !p)
+
+  useOnClickOutside(ref, () => setIsOpen(false))
+
+  return (
+    <TodoItemContainer key={text} variants={itemVariants} ref={ref} onClick={handleToggle}>
+      <TodoContent>{text}</TodoContent>
+      <AnimatePresence>
+        {isOpen && description && (
+          <TodoDescription
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+          >
+            {description}
+          </TodoDescription>
+        )}
+      </AnimatePresence>
+    </TodoItemContainer>
+  )
+}
 
 const todoItemsContainerVariants: Variants = {
   hidden: {
@@ -84,7 +115,7 @@ const BackdropStars = styled.div`
 
 const TodoLists = styled(motion.div)`
   display: flex;
-  gap: min(10vw, 100px);
+  gap: 60px;
   margin-top: 70px;
 
   @media ${deviceBreakPoints.smallMobile} {
@@ -94,29 +125,52 @@ const TodoLists = styled(motion.div)`
   }
 `
 
+const TodoListScrollableContainer = styled.div`
+  position: relative;
+  overflow-x: scroll;
+  padding: 0 100px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+`
+
+const TodoListsContainer = styled.div`
+  margin: 0 auto;
+  position: relative;
+`
+
 const TodoList = styled.div`
   display: flex;
   flex-direction: column;
-  width: 50%;
+
+  &:last-child {
+    padding-right: 100px;
+  }
 
   @media ${deviceBreakPoints.mobile} {
     align-items: center;
   }
 `
 
-const TodoTitle = styled(TextSnippet)<Alignment>`
+const TodoTitle = styled.div`
+  color: ${({ theme }) => theme.textPrimary};
+  font-size: 24px;
   margin-bottom: 45px;
-  text-align: ${({ $alignRight }) => ($alignRight ? 'right' : 'left')};
+  height: 60px;
 `
 
-const TodoItems = styled(motion.div)<Alignment>`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: ${({ $alignRight }) => ($alignRight ? 'right' : 'left')};
+const TodoDescription = styled(motion.div)`
+  color: ${({ theme }) => theme.textSecondary};
+`
 
-  @media ${deviceBreakPoints.mobile} {
-  }
+const TodoItems = styled(motion.div)`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 250px;
 `
 
 const TodoLabel = styled.div`
@@ -129,20 +183,20 @@ const TodoLabel = styled.div`
   opacity: 0.3;
 `
 
-const TodoItem = styled(motion.div)`
+const TodoItemContainer = styled(motion.div)`
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
-  width: calc(50% - 30px - 20px);
-  min-width: 199px;
   padding: 15px;
-  padding-bottom: 30px;
   background-color: ${({ theme }) => theme.bgPrimary};
   border-radius: 16px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 
   &:hover {
+    cursor: pointer;
+    background-color: ${({ theme }) => colord(theme.bgPrimary).lighten(0.15).toHex()};
     ${TodoLabel} {
       opacity: 0.8;
     }
@@ -154,22 +208,29 @@ const TodoItem = styled(motion.div)`
   }
 `
 
-const TodoStateIcon = styled.div`
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 32px;
-  height: 32px;
-  background-image: url(${SvgCheckmark});
-  background-repeat: no-repeat;
-  background-size: contain;
-`
-
-const TodoContent = styled.div<{ complete: boolean }>`
+const TodoContent = styled.div`
   font-weight: 500;
   font-size: 16px;
   line-height: 25px;
-  color: ${({ theme, complete }) => (complete ? 'var(--color-grey-300)' : theme.textPrimary)};
+  color: ${({ theme }) => theme.textPrimary};
+`
+
+const GradientRight = styled.div`
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0), #000000);
+`
+
+const GradientLeft = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 100%;
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0), #000000);
 `
 
 export default PageSectionTodoList

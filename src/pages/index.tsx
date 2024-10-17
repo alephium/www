@@ -226,7 +226,7 @@ export const pageQuery = graphql`
               title
               items {
                 text
-                label
+                description
               }
             }
           }
