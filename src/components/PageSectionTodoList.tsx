@@ -126,6 +126,7 @@ const TodoLists = styled(motion.div)`
 
   @media ${deviceBreakPoints.mobile} {
     margin-top: 40px;
+    gap: 40px;
   }
 `
 
@@ -139,6 +140,10 @@ const TodoListScrollableContainer = styled.div`
   }
   -ms-overflow-style: none;
   scrollbar-width: none;
+
+  @media ${deviceBreakPoints.mobile} {
+    padding: 0 50px;
+  }
 `
 
 const TodoListsContainer = styled.div`
@@ -156,6 +161,10 @@ const TodoList = styled.div`
 
   @media ${deviceBreakPoints.mobile} {
     align-items: center;
+
+    &:last-child {
+      padding-right: 50px;
+    }
   }
 `
 
@@ -222,6 +231,10 @@ const gradientBase = css`
   top: 0;
   width: 120px;
   height: 100%;
+
+  @media ${deviceBreakPoints.mobile} {
+    width: 80px;
+  }
 `
 
 const GradientRight = styled.div`
