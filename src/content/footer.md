@@ -44,4 +44,7 @@ columns:
       - text: Privacy policy
         url: /privacy-policy
         newTab: false
+      - text: Terms & Conditions
+        url: /terms-and-conditions
+        newTab: false
 ---
