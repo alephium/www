@@ -37,7 +37,7 @@ const PageSectionTodoList = ({ content: { title, subtitle, lists } }: Props) => 
         >
           {lists.map(({ title, items }) => (
             <TodoList key={title}>
-              <TodoTitle>{title}</TodoTitle>
+              <ColumnTitle>{title}</ColumnTitle>
               <TodoItems>
                 {items.map(({ text, description }) => (
                   <TodoItem key={text} text={text} description={description} />
@@ -124,10 +124,8 @@ const TodoLists = styled(motion.div)`
   gap: 60px;
   margin-top: 90px;
 
-  @media ${deviceBreakPoints.smallMobile} {
-    flex-direction: column;
-    align-items: center;
-    gap: 70px;
+  @media ${deviceBreakPoints.mobile} {
+    margin-top: 40px;
   }
 `
 
@@ -161,7 +159,9 @@ const TodoList = styled.div`
   }
 `
 
-const TodoTitle = styled.div`
+const ColumnTitle = styled.div`
+  display: flex;
+  align-items: center;
   color: ${({ theme }) => theme.textPrimary};
   font-size: 24px;
   margin-bottom: 45px;
@@ -206,11 +206,6 @@ const TodoItemContainer = styled(motion.div)`
     ${TodoLabel} {
       opacity: 0.8;
     }
-  }
-
-  @media ${deviceBreakPoints.mobile} {
-    flex: 1;
-    width: auto;
   }
 `
 
