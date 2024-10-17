@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 import SectionTextHeader from './SectionTextHeader'
 import SvgStars from '../images/stars.svg'
@@ -25,7 +25,7 @@ interface Props {
 }
 
 const PageSectionTodoList = ({ content: { title, subtitle, lists } }: Props) => (
-  <BackdropStars>
+  <SectionContainer>
     <SectionTextHeader id="next" title={title} subtitle={subtitle} bigSubtitle bigText centered />
     <TodoListScrollableContainer>
       <TodoListsContainer>
@@ -47,10 +47,10 @@ const PageSectionTodoList = ({ content: { title, subtitle, lists } }: Props) => 
           ))}
         </TodoLists>
       </TodoListsContainer>
-      <GradientLeft />
-      <GradientRight />
     </TodoListScrollableContainer>
-  </BackdropStars>
+    <GradientLeft />
+    <GradientRight />
+  </SectionContainer>
 )
 
 interface TodoItemProps {
@@ -62,19 +62,24 @@ const TodoItem = ({ text, description }: TodoItemProps) => {
   const [isOpen, setIsOpen] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
 
-  const handleToggle = () => setIsOpen((p) => !p)
-
   useOnClickOutside(ref, () => setIsOpen(false))
 
   return (
-    <TodoItemContainer key={text} variants={itemVariants} ref={ref} onClick={handleToggle}>
+    <TodoItemContainer
+      key={text}
+      variants={itemVariants}
+      ref={ref}
+      onTap={() => setIsOpen((p) => !p)}
+      onPointerEnter={() => setIsOpen(true)}
+      onPointerLeave={() => setIsOpen(false)}
+    >
       <TodoContent>{text}</TodoContent>
       <AnimatePresence>
         {isOpen && description && (
           <TodoDescription
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: 'auto', opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
+            initial={{ height: 0, opacity: 0, paddingTop: 0 }}
+            animate={{ height: 'auto', opacity: 1, paddingTop: 10 }}
+            exit={{ height: 0, opacity: 0, paddingTop: 0 }}
           >
             {description}
           </TodoDescription>
@@ -106,17 +111,18 @@ const itemVariants: Variants = {
   }
 }
 
-const BackdropStars = styled.div`
+const SectionContainer = styled.div`
+  position: relative;
   background-image: url('${SvgStars}');
   background-repeat: no-repeat;
   background-position-x: center;
-  margin: var(--spacing-16) 0;
+  padding: var(--spacing-16) 0;
 `
 
 const TodoLists = styled(motion.div)`
   display: flex;
   gap: 60px;
-  margin-top: 70px;
+  margin-top: 90px;
 
   @media ${deviceBreakPoints.smallMobile} {
     flex-direction: column;
@@ -215,21 +221,23 @@ const TodoContent = styled.div`
   color: ${({ theme }) => theme.textPrimary};
 `
 
-const GradientRight = styled.div`
-  position: fixed;
+const gradientBase = css`
+  pointer-events: none;
+  position: absolute;
   top: 0;
-  right: 0;
   width: 120px;
   height: 100%;
+`
+
+const GradientRight = styled.div`
+  ${gradientBase}
+  right: 0;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0), #000000);
 `
 
 const GradientLeft = styled.div`
-  position: fixed;
-  top: 0;
+  ${gradientBase}
   left: 0;
-  width: 120px;
-  height: 100%;
   background: linear-gradient(-90deg, rgba(0, 0, 0, 0), #000000);
 `
 
