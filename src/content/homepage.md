@@ -305,6 +305,7 @@ milestonesSection:
             - row: 2
               text: 'First Hackathon - Buidl on Alephium #1 - Pioneers 🔥'
               when: '02.2024'
+              isMajor: true
             - row: 3
               text: 'First ASIC Miner - Goldshell'
               when: '04.2024'
@@ -318,9 +319,11 @@ milestonesSection:
             - row: 6
               text: 'Athens Builders Meetup #1'
               when: '06.2024'
+              isMajor: true
             - row: 7
               text: 'Bitmain & IceRiver ASIC Miners'
               when: '07.2024'
+              isMajor: true
             - row: 8
               text: 'First Oracles Integration - DIA'
               when: '07.2024'
