@@ -41,7 +41,7 @@ const Toggle = ({ toggled, onToggle, className, disabled, ToggleIcons, handleCol
     off: {
       backgroundColor: theme.bgPrimary
     },
-    on: { backgroundColor: handleColors ? theme.bgTertiary : '#490ca3' }
+    on: { backgroundColor: handleColors ? theme.bgTertiary : '#2a51ff' }
   }
 
   const handleContainerVariants = {
