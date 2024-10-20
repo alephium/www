@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react'
 import styled, { css } from 'styled-components'
-import { uniqBy, sortBy } from 'lodash'
+import { sortBy } from 'lodash'
 
 import { deviceBreakPoints, deviceSizes } from '../styles/global-style'
 
 type TimelineEntry = {
   row: number
   text: string
+  description?: string
   when: string
   isMajor: boolean
 }
@@ -74,6 +75,7 @@ const DualTimelineDesktop = ({ timelines, detailed }: Props) => {
                     <Data right>
                       <Text isMajor={entryA?.isMajor}>{entryA.text}</Text>
                       <When>{entryA.when}</When>
+                      {entryA?.description && <Description>{entryA?.description}</Description>}
                     </Data>
                   )}
                   <Track forHeading={headings[0]} entry={entryA} />
@@ -84,6 +86,7 @@ const DualTimelineDesktop = ({ timelines, detailed }: Props) => {
                     <Data>
                       <Text isMajor={entryB?.isMajor}>{entryB.text}</Text>
                       <When>{entryB.when}</When>
+                      {entryB?.description && <Description>{entryB?.description}</Description>}
                     </Data>
                   )}
                 </Entry>
@@ -221,7 +224,7 @@ const Text = styled.div`
   ${({ isMajor }) =>
     isMajor &&
     css`
-      background: linear-gradient(30deg, #fff200 0%, #ff4000 40%, #ff007b 90%);
+      background: linear-gradient(30deg, #1cc2ff 0%, #2a51ff 70%, #4366ff 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -229,7 +232,14 @@ const Text = styled.div`
 `
 
 const When = styled.div`
+  color: ${({ theme }) => theme.textPrimary};
+  font-weight: var(--fontWeight-normal);
+  margin-top: var(--spacing-1);
+`
+
+const Description = styled.div`
   color: ${({ theme }) => theme.textSecondary};
+  font-weight: var(--fontWeight-normal);
   margin-top: var(--spacing-1);
 `
 
@@ -241,7 +251,7 @@ const Container = styled.div<{ detailed: boolean }>`
     ${({ detailed }) =>
       !detailed &&
       css`
-        background: linear-gradient(30deg, #ffc64b 0%, #ffa55b 70%, #ff6a00 100%);
+        background: linear-gradient(30deg, #1cc2ff 0%, #2a51ff 70%, #4366ff 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -275,7 +285,7 @@ const Dot = styled.div`
     height: 13px;
     transform: translateY(60%);
     border-radius: 100%;
-    background: ${({ isMajor, theme }) => (isMajor ? theme.textPrimary : theme.textTertiary)};
+    background: ${({ isMajor, theme }) => (isMajor ? '#2a6eff' : theme.textPrimary)};
     border: 3px solid black;
     position: absolute;
     content: '';
@@ -286,13 +296,13 @@ const Dot = styled.div`
 
 const Data = styled.div`
   display: flex;
-  max-width: 300px;
+  width: 300px;
   line-height: 22px;
   flex-direction: column;
-  text-align: ${({ right }) => (right ? 'right' : 'left')};
-  padding-top: var(--spacing-5);
-  padding-left: ${({ right }) => (right ? 'var(--spacing-3)' : '0')};
-  padding-right: ${({ right }) => (right ? '0' : 'var(--spacing-3)')};
+  padding: var(--spacing-2);
+  border-radius: 9px;
+  margin: var(--spacing-2) 0;
+  background-color: ${({ theme }) => theme.bgSecondary};
 
   ${({ isSingle }) =>
     isSingle &&

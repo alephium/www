@@ -194,6 +194,7 @@ milestonesSection:
             - row: 3
               text: 'Leman Network Upgrade on Mainnet'
               when: '27.03.2023'
+              description: 'Schnorr signatures and cross chain interoperability. New Asset Permission System and set of Virtual Machine (VM) instructions and building functions. Improved node APIs and SDK. Improved difficulty adjustment algorithm (DAA)'
               isMajor: true
             - row: 4
               text: 'Schnorr signatures and cross chain interoperability'
@@ -232,6 +233,7 @@ milestonesSection:
             - row: 2
               text: 'Rhone Network Upgrade on Mainnet'
               when: '12.06.2024'
+              description: 'Block time reduction to 16 seconds. Map data structure in Ralph. Sequential transactions. On-chain Gasless transactions'
               isMajor: true
             - row: 3
               text: 'Block time reduction to 16 seconds'
@@ -262,7 +264,8 @@ milestonesSection:
               text: 'Joined the UTXO Alliance & Bitcoin Association Switzerland'
               when: '11.2021'
             - row: 3
-              text: 'Mining ecosystem development: community pools, miners development, reference mining pool, and pool integration.'
+              text: 'Mining ecosystem development'
+              description: 'Community pools, miners development, reference mining pool, and pool integration.'
               when: 'Q4.2021'
         - year: 2022
           entries:
@@ -271,7 +274,8 @@ milestonesSection:
               when: '12.01.2022'
               isMajor: true
             - row: 2
-              text: 'Initiation of marketing initiatives (sponsoring of ErgoHack, AMAs, community competitions, campaigns, Tech Talk Series and more)'
+              text: 'Initiation of marketing initiatives'
+              description: 'Sponsoring of ErgoHack, AMAs, community competitions, campaigns, Tech Talk Series and more)'
               when: 'Q3.2022'
             - row: 3
               text: 'Dappnode Integration'
@@ -327,14 +331,12 @@ milestonesSection:
             - row: 8
               text: 'First Oracles Integration - DIA'
               when: '07.2024'
-              isMajor: true
             - row: 9
-              text: '40,000 Twitter Followers'
-              when: '08.2024'
-            - row: 10
-              text: '215,000+ active addresses, 19 PH/s of global hashrate, and 40+ projects on Alephium'
+              text: '215’000+ active addresses (+200% YTD) and 19 PH/s of global hashrate (+13’500% YTD)'
+              description: '40+ projects on Alephium, Alephium nodes in 23+ countries. 74K+ smart contract contracts, 750 tokens, 250 NFT collections and 21k+ NFT deployed on Alephium.'
               when: '09.2024'
-            - row: 11
+              isMajor: true
+            - row: 10
               text: 'Alephium app on Ledger Hardware Wallets'
               when: '10.2024'
               isMajor: true
