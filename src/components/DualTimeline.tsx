@@ -301,7 +301,7 @@ const Data = styled.div<{ hasBorder?: boolean }>`
   flex-direction: column;
   padding: var(--spacing-2);
   border-radius: 9px;
-  margin: var(--spacing-2) 0;
+  margin: var(--spacing-2);
   background-color: ${({ theme }) => theme.bgSecondary};
   box-shadow: ${({ hasBorder }) => (hasBorder ? `0 0 10px 1px rgba(42, 138, 255, 0.5)` : 'none')};
   border: ${({ hasBorder }) => (hasBorder ? `1px solid rgb(42, 138, 255)` : 'none')};
@@ -312,6 +312,10 @@ const Data = styled.div<{ hasBorder?: boolean }>`
     position: relative;
     ${({ right }) => (right ? 'right: -3rem;' : 'left: -2rem')}
   `}
+
+  @media ${deviceBreakPoints.smallMobile} {
+    margin: var(--spacing-2) var(--spacing-2) 0 0;
+  }
 `
 
 const LineExtra = styled.div`
