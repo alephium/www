@@ -197,31 +197,19 @@ milestonesSection:
               description: 'Schnorr signatures and cross chain interoperability. New Asset Permission System and set of Virtual Machine (VM) instructions and building functions. Improved node APIs and SDK. Improved difficulty adjustment algorithm (DAA)'
               isMajor: true
             - row: 4
-              text: 'Schnorr signatures and cross chain interoperability'
-              when: '03.2023'
-            - row: 5
-              text: 'New Asset Permission System and set of Virtual Machine (VM) instructions and building functions'
-              when: '03.2023'
-            - row: 6
-              text: 'Improved node APIs and SDK'
-              when: '03.2023'
-            - row: 7
-              text: 'Improved difficulty adjustment algorithm (DAA)'
-              when: '03.2023'
-            - row: 8
               text: 'Launch Desktop Wallet v2.0'
               when: '05.2023'
-            - row: 9
+            - row: 5
               text: 'Alephium Bridge on Testnet'
               when: '05.2023'
-            - row: 10
+            - row: 6
               text: 'Alephium Multisig GUI'
               when: '09.2023'
-            - row: 11
+            - row: 7
               text: 'Launch Mobile Wallet (Android and iOS)'
               when: '11.2023'
               isMajor: true
-            - row: 12
+            - row: 8
               text: 'Alephium Bridge to Ethereum on Mainnet'
               when: '09.11.2023'
               isMajor: true
@@ -236,18 +224,6 @@ milestonesSection:
               description: 'Block time reduction to 16 seconds. Map data structure in Ralph. Sequential transactions. On-chain Gasless transactions'
               isMajor: true
             - row: 3
-              text: 'Block time reduction to 16 seconds'
-              when: '06.2024'
-            - row: 4
-              text: 'Map data structure in Ralph'
-              when: '06.2024'
-            - row: 5
-              text: 'Sequential transactions'
-              when: '06.2024'
-            - row: 6
-              text: 'On-chain Gasless transactions'
-              when: '06.2024'
-            - row: 7
               text: 'Alephium Bridge to BSC on Testnet'
               when: '09.2024'
               

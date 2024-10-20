@@ -72,10 +72,10 @@ const DualTimelineDesktop = ({ timelines, detailed }: Props) => {
               <Pair key={index}>
                 <Entry right>
                   {entryA && (
-                    <Data right>
+                    <Data right hasBorder={entryA.isMajor && entryA.description}>
                       <Text isMajor={entryA?.isMajor}>{entryA.text}</Text>
                       <When>{entryA.when}</When>
-                      {entryA?.description && <Description>{entryA?.description}</Description>}
+                      {entryA.description && <Description>{entryA.description}</Description>}
                     </Data>
                   )}
                   <Track forHeading={headings[0]} entry={entryA} />
@@ -83,8 +83,8 @@ const DualTimelineDesktop = ({ timelines, detailed }: Props) => {
                 <Entry>
                   <Track forHeading={headings[1]} entry={entryB} />
                   {entryB && (
-                    <Data>
-                      <Text isMajor={entryB?.isMajor}>{entryB.text}</Text>
+                    <Data hasBorder={entryB.isMajor && entryB.description}>
+                      <Text isMajor={entryB.isMajor}>{entryB.text}</Text>
                       <When>{entryB.when}</When>
                       {entryB?.description && <Description>{entryB?.description}</Description>}
                     </Data>
@@ -224,7 +224,7 @@ const Text = styled.div`
   ${({ isMajor }) =>
     isMajor &&
     css`
-      background: linear-gradient(30deg, #1cc2ff 0%, #2a51ff 70%, #4366ff 100%);
+      background: linear-gradient(30deg, #1cc2ff 0%, #2a63ff 70%, #436cff 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -251,7 +251,7 @@ const Container = styled.div<{ detailed: boolean }>`
     ${({ detailed }) =>
       !detailed &&
       css`
-        background: linear-gradient(30deg, #1cc2ff 0%, #2a51ff 70%, #4366ff 100%);
+        background: linear-gradient(30deg, #1cc2ff 0%, #2a63ff 70%, #436cff 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -285,7 +285,7 @@ const Dot = styled.div`
     height: 13px;
     transform: translateY(60%);
     border-radius: 100%;
-    background: ${({ isMajor, theme }) => (isMajor ? '#2a6eff' : theme.textPrimary)};
+    background: ${({ isMajor, theme }) => (isMajor ? '#2a8aff' : theme.textPrimary)};
     border: 3px solid black;
     position: absolute;
     content: '';
@@ -294,7 +294,7 @@ const Dot = styled.div`
   }
 `
 
-const Data = styled.div`
+const Data = styled.div<{ hasBorder?: boolean }>`
   display: flex;
   width: 300px;
   line-height: 22px;
@@ -303,6 +303,8 @@ const Data = styled.div`
   border-radius: 9px;
   margin: var(--spacing-2) 0;
   background-color: ${({ theme }) => theme.bgSecondary};
+  box-shadow: ${({ hasBorder }) => (hasBorder ? `0 0 10px 1px rgba(42, 138, 255, 0.5)` : 'none')};
+  border: ${({ hasBorder }) => (hasBorder ? `1px solid rgb(42, 138, 255)` : 'none')};
 
   ${({ isSingle }) =>
     isSingle &&
