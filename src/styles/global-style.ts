@@ -86,6 +86,7 @@ const GlobalStyle = createGlobalStyle`
     --font-heading: var(--fontFamily-sans);
     --fontWeight-light: 300;
     --fontWeight-normal: 400;
+    --fontWeight-medium: 500;
     --fontWeight-semiBold: 600;
     --fontWeight-bold: 700;
 
@@ -116,6 +117,7 @@ const GlobalStyle = createGlobalStyle`
     --color-grey-600: #343434;
     --color-grey-700: #262626;
     --color-grey-800: #1B1B1B;
+    --color-grey-850: #141414;
     --color-grey-900: #0f0f0f;
     --color-grey-950: #0a0a0a;
     --color-black: #000;

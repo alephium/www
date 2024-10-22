@@ -214,6 +214,7 @@ export const pageQuery = graphql`
                   row
                   text
                   when
+                  content
                   isMajor
                 }
               }
@@ -226,7 +227,7 @@ export const pageQuery = graphql`
               title
               items {
                 text
-                label
+                description
               }
             }
           }

@@ -145,16 +145,13 @@ milestonesSection:
         - year: 2019
           entries:
             - row: 1
-              text: 'Whitepapers publicly released'
+              text: 'Whitepapers Release'
               when: '02.2019'
               isMajor: true
         - year: 2020
           entries:
             - row: 1
-              text: 'Alpha version of the core sharding protocol implemented and tested on AWS'
-              when: 'Q1.2020'
-            - row: 2
-              text: 'Testnet launch'
+              text: 'Testnet Launch'
               when: '12.2020'
               isMajor: true
         - year: 2021
@@ -162,11 +159,11 @@ milestonesSection:
             - row: 1
               text: 'Smart contract support'
               when: 'Q1.2021'
-            - row: 3
+            - row: 2
               text: 'Desktop wallet & explorer public release'
               when: '09.2021'
               isMajor: true
-            - row: 4
+            - row: 3
               text: 'Mainnet launch'
               when: '08.11.2021'
               isMajor: true
@@ -175,202 +172,283 @@ milestonesSection:
             - row: 1
               text: '1st dApp prototype'
               when: '01.2022'
-              isMajor: true
             - row: 2
-              text: 'Beta version of contract SDK'
+              text: 'SDK Beta SDK'
               when: '06.2022'
             - row: 3
               text: 'Leman Network Upgrade deployed on the testnet'
               when: '06.2022'
               isMajor: true
-            - row: 6
-              text: 'Alpha version of multi-guardians bridge on the Testnet'
+            - row: 4
+              text: 'Alpha version of multi-guardians bridge'
               when: '11.2022'
-              isMajor: true
         - year: 2023
           entries:
             - row: 1
-              text: 'More dApp prototypes (DEX & NFT marketplace)'
+              text: 'More dApp prototypes (DEX, NFT marketplace)'
               when: 'H1.2023'
             - row: 2
-              text: 'Launch Browser Wallet Extension'
+              text: 'Browser Extension Wallet Launch'
               when: '03.2023'
               isMajor: true
             - row: 3
               text: 'Leman Network Upgrade on Mainnet'
               when: '27.03.2023'
+              content: 
+                - 'Schnorr signatures and cross chain interoperability' 
+                - 'New Asset Permission System and set of Virtual Machine (VM) instructions and building functions'
+                - 'Improved node APIs and SDK' 
+                - 'Improved difficulty adjustment algorithm (DAA)'
               isMajor: true
             - row: 4
-              text: 'Schnorr signatures and cross-chain interoperability'
-              when: '03.2023'
-            - row: 5
-              text: 'New Asset Permission System and set of Virtual Machine (VM) instructions and building functions'
-              when: '03.2023'
-              isMajor: true
-            - row: 6
-              text: 'Improved node APIs and SDK'
-              when: '03.2023'
-            - row: 7
-              text: 'Improved difficulty adjustment algorithm (DAA)'
-              when: '03.2023'
-            - row: 8
               text: 'Desktop Wallet v2.0'
               when: '05.2023'
-              isMajor: true
-            - row: 9
+            - row: 5
               text: 'Alephium Bridge on Testnet'
               when: '05.2023'
-            - row: 13
+            - row: 6
               text: 'Alephium Multisig GUI'
               when: '09.2023'
-            - row: 15
-              text: 'Launch Mobile Wallet (Android & iOS)'
+            - row: 7
+              text: 'Mobile Wallet (Android and iOS)'
               when: '11.2023'
               isMajor: true
-            - row: 16
+            - row: 8
               text: 'Alephium Bridge to Ethereum on Mainnet'
               when: '09.11.2023'
               isMajor: true
+        - year: 2024
+          entries:
+            - row: 1
+              text: 'Ralph LSP Release'
+              when: '04.2024'
+            - row: 2
+              text: 'Rhone Network Upgrade on Mainnet'
+              when: '12.06.2024'
+              content: 
+                - 'Block time reduction to 16 seconds' 
+                - 'Map data structure in Ralph'
+                - 'Sequential transactions' 
+                - 'On-chain Gasless transactions'
+              isMajor: true
+            - row: 3
+              text: 'Alephium Bridge to BSC on Testnet'
+              when: '09.2024'
+              
     - title: Ecosystem
       years:
         - year: 2019
         - year: 2020
         - year: 2021
           entries:
-            - row: 2
+            - row: 1
               text: '3rd party cloud mining service at Mainnet Launch'
               when: '08.11.2021'
-            - row: 4
-              text: 'Joined the UTXO alliance & Bitcoin Association Switzerland'
+            - row: 2
+              text: 'Joined the UTXO Alliance & Bitcoin Association Switzerland'
               when: '11.2021'
-            - row: 5
-              text: 'Mining ecosystem development: community pools, miners development, reference mining pool, and pool integration.'
+            - row: 3
+              text: 'Mining ecosystem development'
+              description: 'Community pools, miners development, reference mining pool, and pool integration.'
               when: 'Q4.2021'
-              isMajor: true
         - year: 2022
           entries:
             - row: 1
               text: 'First exchange listing: Gate.io'
               when: '12.01.2022'
               isMajor: true
-            - row: 4
-              text: 'Initiation of marketing initiatives (sponsoring of ErgoHack, AMAs, community competitions, campaigns, Tech Talk Series and more)'
+            - row: 2
+              text: 'Initiation of marketing initiatives'
+              content: 
+                - 'Sponsoring of ErgoHack'
+                - 'AMAs'
+                - 'Community competitions'
+                - 'Campaigns' 
+                - 'Tech Talk Series, and more...'
               when: 'Q3.2022'
-            - row: 5
+            - row: 3
               text: 'Dappnode Integration'
               when: '10.2022'
-            - row: 6
+            - row: 4
               text: 'Flux Integration'
               when: '11.2022'
-            - row: 7
-              text: 'Reached over 265 community contributions'
-              when: '12.2022'
         - year: 2023
           entries:
             - row: 1
-              text: 'Additional CEXs listings'
-              when: 'H1.2023'
-            - row: 10
               text: 'NYM-Connect app integration'
               when: '07.2023'
-            - row: 11
-              text: 'First native DEX - Ayin'
-              when: '08.2023'
-              isMajor: true
-            - row: 12
-              text: 'First native NFT Marketplace - Deadrare'
-              when: '09.2023'
-              isMajor: true
-            - row: 13
-              text: 'First decentralized lottery - Walph'
-              when: '09.2023'
-              isMajor: true
-            - row: 14
+            - row: 2
+              text: 'First dApps on Alephium (Native DEX, NFT marketplace and more)'
+              when: 'Q3.2023'
+            - row: 3
               text: 'First DAO - Blockflow Alliance DAO'
               when: '10.2023'
               isMajor: true
-            - row: 15
-              text: 'Stablecoins on Alephium & Wrapped ALPH on Ethereum'
+            - row: 4
+              text: 'Ethereum Bridge - Stablecoins on Alephium & Wrapped ALPH on Ethereum'
               when: '11.2023'
-              isMajor: true
-            - row: 16
+            - row: 5
               text: 'Over 77’000 active addresses and 50’000+ GPUs on Alephium'
               when: '11.2023'
-            - row: 17
-              text: '$5.15M TVL on Alephium'
-              when: '12.2023'      
+            - row: 6
+              text: '$9M TVL on Alephium'
+              when: '12.2023'
+        - year: 2024
+          entries:
+            - row: 1
+              text: '$21M TVL on Alephium'
+              when: '01.2024'
+            - row: 2
+              text: 'First Hackathon - Buidl on Alephium #1 - Pioneers 🔥'
+              when: '02.2024'
+              isMajor: true
+            - row: 3
+              text: 'First ASIC Miner - Goldshell'
+              when: '04.2024'
+              isMajor: true
+            - row: 4
+              text: '$60M TVL on Alephium'
+              when: '04.2024'
+            - row: 5
+              text: 'Ambassador Program Launch'
+              when: '05.2024'
+            - row: 6
+              text: 'Athens Builders Meetup #1'
+              when: '06.2024'
+              isMajor: true
+            - row: 7
+              text: 'Bitmain & IceRiver ASIC Miners'
+              when: '07.2024'
+              isMajor: true
+            - row: 8
+              text: 'First Oracles Integration - DIA'
+              when: '07.2024'
+            - row: 9
+              text: '215’000+ active addresses (+200% YTD) and 19 PH/s of global hashrate (+13’500% YTD)'
+              content:
+                - '40+ projects on Alephium, Alephium nodes in 23+ countries'
+                - '74K+ smart contract contracts' 
+                - '750 tokens'
+                - '250 NFT collections'
+                - '21k+ NFT deployed on Alephium'
+              when: '09.2024'
+              isMajor: true
+            - row: 10
+              text: 'Alephium app on Ledger & OneKey Hardware Wallets'
+              when: '10.2024'
+              isMajor: true
 todoListSection:
   title: What's next
   subtitle: Building an exciting future
   lists:
-    - title: Core platform
-      items:
-        - text: 'Block time reduction - Network Upgrade'
-          label: Full Node
-        - text: 'Better sequential transaction support - Network Upgrade'
-          label: Full Node
-        - text: 'Gasless transaction support - Network Upgrade'
-          label: Full Node
-        - text: 'New signature schemas for Passkey support'
-          label: Full Node
-        - text: 'Support streaming for blockchain events (tx, block, contract events) - API'
-          label: Full Node / SDK
-        - text: 'P2P transaction endpoints and SDKs'
-          label: Full Node / SDK
-        - text: 'Typescript SDK for off-chain transaction encoding/decoding'
-          label: SDK
-        - text: 'Improved web3 SDK with better DevX and more functionality'
-          label: SDK
-        - text: 'Introduce AIP for Alephium Improvement Proposals'
-          label: Community
-        - text: 'Group abstraction (UX simplification)'
-          label: Wallets
-        - text: 'Enhanced multi-sig experience'
-          label: Wallets
-        - text: 'Standard for transaction information display on wallet'
-          label: Wallets
-        - text: 'Improved full node’s database system for better performance'
-          label: Full Node
-        - text: 'Better error system for full node and its endpoints'
-          label: Full Node
-        - text: 'Design and implement fast sync for full node'
-          label: Full Node
-        - text: 'Design and implement light node'
-          label: Full Node
-        - text: 'Smart contracts support in the Explorer + Token pages'
-          label: Explorer
-        - text: 'Enhanced UX and additional features for the Browser Wallet Extension'
-          label: Wallets
-        - text: 'Additional dApps prototypes (Lending protocol, Name service and more)'
-          label: dApps
-        - text: 'Better development experience and additional functionalities for the Ralph language'
-          label: Full Node / SDK
-        - text: 'Continuous improvement of the documentation'
-          label: Documentation
-        - text: 'Continuously improve user experience of the desktop and mobile wallets'
-          label: Wallets
-    - title: Ecosystem
-      items:
-        - text: 'Additional hardware wallets support'
-          label: Wallets
-        - text: 'More dApps'
-          label: Ecosystem
-        - text: 'First Alephium Hackathon'
-          label: Community
-        - text: 'Launch of the Ambassador program'
-          label: Community
-        - text: 'Additional CEX & DEX listings'
-          label: Exchanges
-        - text: 'Bridge to additional blockchain ecosystems'
-          label: Bridge
-        - text: 'Integration with 3rd party wallets, payment & web3 services'
-          label: Ecosystem
-        - text: "Improved developers' onboarding experience"
-          label: Community
-        - text: Additional marketing, partnership, and knowledge-sharing initiatives with like-minded communities and projects.
-          label: Marketing
-        - text: Website revamp
-          label: Marketing
+  - title: Core Protocols (Full Node)
+    items:
+      - text: 'New Syncing Protocol'
+        description: 'Implement a faster syncing mechanism to reduce network load and enhance performance.'
+      - text: 'Optimized Chain Storage'
+        description: 'Enhance data retrieval systems and reduce storage size for improved scalability.'
+      - text: 'Core Sharding Algorithm Enhancements'
+        description: 'Refine the sharding algorithm for greater efficiency and lower network latency.'
+      - text: 'Reduced Block Time'
+        description: 'Decrease block time for quicker transactions incrementally (8s as a first step).'
+      - text: 'New Signature Primitives'
+        description: 'Introduce passwordless wallet technology with advanced cryptographic primitives for streamlined workflows. (passkeys)'
+      - text: 'Transaction Chaining'
+        description: 'Enable support for building and signing multiple transactions simultaneously.'
+      - text: 'New Elliptic Curves'
+        description: 'Implement new elliptic curves to support ZK technology, advanced signature schemes, and enhanced privacy features.'
+      - text: 'Smart Contract-Based Wallet Support'
+        description: 'Expand functionality/usability for smart contract-based wallets (incl. Multisig wallets).'
+      - text: 'Mempool Improvements'
+        description: 'Optimize transaction handling and propagation.'
+      - text: 'Cross-Group Communication'
+        description: 'Enhance full-node cross-group communication to strengthen interoperability.'
+      - text: 'Light Client Node Implementation'
+        description: 'Develop a light client node for improved accessibility.'
+      - text: 'Explorer Backend Improvements'
+        description: 'Expand token support and add contract support to the explorer backend for better visibility and interaction with smart contracts.'
+      - text: 'Multiple Client Implementations'
+        description: 'Create a Rust client to boost performance.'
+      - text: 'Increased Shard Count'
+        description: 'Scale up shard numbers to meet throughput demand (on a need basis).'
+      - text: 'Modularity for L2s'
+        description: 'Support for L2 launches through modularity.'
+
+  - title: DevX (Ralph & VM)
+    items:
+      - text: 'Unit Tests, Documentation, and Intuitive dApp Development'
+        description: 'Improve DevX by focusing on unit tests, enhancing documentation, and simplifying dApp development.'
+      - text: 'Intuitive Error Handling'
+        description: 'Develop an intuitive error handling system for full node endpoints to improve debugging and user experience.'
+      - text: 'Unit Tests in Ralph'
+        description: 'Support unit testing in native Ralph to enhance developer experience.'
+      - text: 'Expanded API Capabilities'
+        description: 'Expand API capabilities to support more use cases and improve development.'
+      - text: 'Ralph LSP Update'
+        description: "Push forward Ralph's Language Server Protocol (LSP) for better development tooling."
+      - text: 'Advanced dApps Interactions'
+        description: 'Enable more complex and advanced interactions with decentralized applications (dApps).'
+      - text: 'Continuous Documentation Updates'
+        description: 'Consistently update and expand developer documentation to keep it comprehensive and up-to-date.'
+
+  - title: Front-End & UX
+    items:
+      - text: 'Mobile Wallet Redesign'
+        description: 'Overhaul the mobile wallet interface for an always-better UX.'
+      - text: 'Hardware Wallet Support'
+        description: 'Add support for Ledger and other hardware wallets.'
+      - text: 'Watch-Only Wallets'
+        description: 'Introduce watch-only wallet functionality.'
+      - text: 'Multiple Wallet Support'
+        description: 'Allow management of multiple wallets in the mobile app.'
+      - text: 'Multisig Support'
+        description: 'Expand multisig support to both mobile and desktop wallets.'
+      - text: 'Automatic Cross-Group Asset Management'
+        description: 'Improve wallet cross-group UX.'
+      - text: 'Passkeys Integration'
+        description: 'Implement passkey functionality.'
+      - text: 'Integrated Ecosystem Section'
+        description: 'Easily interact with dApps within the wallets.'
+      - text: 'Token Prices'
+        description: 'Integrate token prices for a wider range of tokens.'
+      - text: 'Cloud Backup'
+        description: 'Offer cloud backup options for mobile wallet users.'
+      - text: 'Explorer Search Improvements'
+        description: 'Extend search capabilities in the explorer.'
+      - text: 'Token Details Pages'
+        description: 'Add detailed token pages in both Explorer and wallets.'
+      - text: 'Contract Code Verification'
+        description: 'Highlight contracts with source code in Explorer for greater transparency.'
+      - text: '3rd Party Integration'
+        description: 'Integrate with external wallets, payment solutions, and Web3 services.'
+      - text: 'On-Ramp Services'
+        description: 'Facilitate on-ramp services for easier user onboarding.'
+      - text: 'Website Update'
+        description: 'Refresh and update the website.'
+
+  - title: Tools, Bridges, Research & Others
+    items:
+      - text: 'Proof of Concept Apps'
+        description: 'Develop new applications exploring advanced blockchain primitives and code templates for builders.'
+      - text: 'Cross-Chain Messaging (Wormhole)'
+        description: 'Investigate leveraging Wormhole for general cross-chain messaging.'
+      - text: 'Bridges to BSC & Other Chains'
+        description: 'Build bridges to Binance Smart Chain and additional blockchains.'
+
+  - title: Community & Ecosystem
+    items:
+      - text: 'Localized Content'
+        description: 'Increase the availability of localized content.'
+      - text: 'Ambassador Program'
+        description: 'Increase the number & reach of ambassadors.'
+      - text: 'Developer Onboarding'
+        description: 'Enhance the onboarding process for developers.'
+      - text: 'Alephium Hackathon & DevMeet-Up 2.0'
+        description: 'Organize the second edition of the hackathon and developer meet-ups.'
+      - text: 'Grant Program 2.0'
+        description: 'Revitalize the grant program to encourage more development.'
+      - text: 'Bounty Program Launch'
+        description: 'Initiate a new bounty program to incentivize community contributions.'
           
 shopSection:
   title: SWALPH
