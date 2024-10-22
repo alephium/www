@@ -194,10 +194,14 @@ milestonesSection:
             - row: 3
               text: 'Leman Network Upgrade on Mainnet'
               when: '27.03.2023'
-              description: 'Schnorr signatures and cross chain interoperability. New Asset Permission System and set of Virtual Machine (VM) instructions and building functions. Improved node APIs and SDK. Improved difficulty adjustment algorithm (DAA)'
+              content: 
+                - 'Schnorr signatures and cross chain interoperability' 
+                - 'New Asset Permission System and set of Virtual Machine (VM) instructions and building functions'
+                - 'Improved node APIs and SDK' 
+                - 'Improved difficulty adjustment algorithm (DAA)'
               isMajor: true
             - row: 4
-              text: 'Launch Desktop Wallet v2.0'
+              text: 'Desktop Wallet v2.0'
               when: '05.2023'
             - row: 5
               text: 'Alephium Bridge on Testnet'
@@ -206,7 +210,7 @@ milestonesSection:
               text: 'Alephium Multisig GUI'
               when: '09.2023'
             - row: 7
-              text: 'Launch Mobile Wallet (Android and iOS)'
+              text: 'Mobile Wallet (Android and iOS)'
               when: '11.2023'
               isMajor: true
             - row: 8
@@ -216,12 +220,16 @@ milestonesSection:
         - year: 2024
           entries:
             - row: 1
-              text: 'Release Ralph LSP'
+              text: 'Ralph LSP Release'
               when: '04.2024'
             - row: 2
               text: 'Rhone Network Upgrade on Mainnet'
               when: '12.06.2024'
-              description: 'Block time reduction to 16 seconds. Map data structure in Ralph. Sequential transactions. On-chain Gasless transactions'
+              content: 
+                - 'Block time reduction to 16 seconds' 
+                - 'Map data structure in Ralph'
+                - 'Sequential transactions' 
+                - 'On-chain Gasless transactions'
               isMajor: true
             - row: 3
               text: 'Alephium Bridge to BSC on Testnet'
@@ -251,7 +259,12 @@ milestonesSection:
               isMajor: true
             - row: 2
               text: 'Initiation of marketing initiatives'
-              description: 'Sponsoring of ErgoHack, AMAs, community competitions, campaigns, Tech Talk Series and more)'
+              content: 
+                - 'Sponsoring of ErgoHack'
+                - 'AMAs'
+                - 'Community competitions'
+                - 'Campaigns' 
+                - 'Tech Talk Series, and more...'
               when: 'Q3.2022'
             - row: 3
               text: 'Dappnode Integration'
@@ -265,16 +278,19 @@ milestonesSection:
               text: 'NYM-Connect app integration'
               when: '07.2023'
             - row: 2
+              text: 'First dApps on Alephium (Native DEX, NFT marketplace and more)'
+              when: 'Q3.2023'
+            - row: 3
               text: 'First DAO - Blockflow Alliance DAO'
               when: '10.2023'
               isMajor: true
-            - row: 3
+            - row: 4
               text: 'Ethereum Bridge - Stablecoins on Alephium & Wrapped ALPH on Ethereum'
               when: '11.2023'
-            - row: 4
+            - row: 5
               text: 'Over 77’000 active addresses and 50’000+ GPUs on Alephium'
               when: '11.2023'
-            - row: 5
+            - row: 6
               text: '$9M TVL on Alephium'
               when: '12.2023'
         - year: 2024
@@ -309,11 +325,16 @@ milestonesSection:
               when: '07.2024'
             - row: 9
               text: '215’000+ active addresses (+200% YTD) and 19 PH/s of global hashrate (+13’500% YTD)'
-              description: '40+ projects on Alephium, Alephium nodes in 23+ countries. 74K+ smart contract contracts, 750 tokens, 250 NFT collections and 21k+ NFT deployed on Alephium.'
+              content:
+                - '40+ projects on Alephium, Alephium nodes in 23+ countries'
+                - '74K+ smart contract contracts' 
+                - '750 tokens'
+                - '250 NFT collections'
+                - '21k+ NFT deployed on Alephium'
               when: '09.2024'
               isMajor: true
             - row: 10
-              text: 'Alephium app on Ledger Hardware Wallets'
+              text: 'Alephium app on Ledger & OneKey Hardware Wallets'
               when: '10.2024'
               isMajor: true
 todoListSection:
@@ -355,7 +376,7 @@ todoListSection:
 
   - title: DevX (Ralph & VM)
     items:
-      - text: 'Focus on Unit Tests, Documentation, and Intuitive dApp Development'
+      - text: 'Unit Tests, Documentation, and Intuitive dApp Development'
         description: 'Improve DevX by focusing on unit tests, enhancing documentation, and simplifying dApp development.'
       - text: 'Intuitive Error Handling'
         description: 'Develop an intuitive error handling system for full node endpoints to improve debugging and user experience.'

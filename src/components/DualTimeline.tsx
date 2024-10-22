@@ -7,7 +7,9 @@ import { deviceBreakPoints, deviceSizes } from '../styles/global-style'
 type TimelineEntry = {
   row: number
   text: string
-  description?: string
+  content?: {
+    text: string
+  }[]
   when: string
   isMajor: boolean
 }
@@ -72,10 +74,16 @@ const DualTimelineDesktop = ({ timelines, detailed }: Props) => {
               <Pair key={index}>
                 <Entry right>
                   {entryA && (
-                    <Data right hasBorder={entryA.isMajor && entryA.description}>
+                    <Data right hasBorder={entryA.isMajor && entryA.content}>
                       <Text isMajor={entryA?.isMajor}>{entryA.text}</Text>
                       <When>{entryA.when}</When>
-                      {entryA.description && <Description>{entryA.description}</Description>}
+                      {entryA.content && (
+                        <DetailedContentList>
+                          {entryA.content.map((item, index) => (
+                            <ContentItem key={index}>{item}</ContentItem>
+                          ))}
+                        </DetailedContentList>
+                      )}
                     </Data>
                   )}
                   <Track forHeading={headings[0]} entry={entryA} />
@@ -83,10 +91,16 @@ const DualTimelineDesktop = ({ timelines, detailed }: Props) => {
                 <Entry>
                   <Track forHeading={headings[1]} entry={entryB} />
                   {entryB && (
-                    <Data hasBorder={entryB.isMajor && entryB.description}>
+                    <Data hasBorder={entryB.isMajor && entryB.content}>
                       <Text isMajor={entryB.isMajor}>{entryB.text}</Text>
                       <When>{entryB.when}</When>
-                      {entryB?.description && <Description>{entryB?.description}</Description>}
+                      {entryB.content && (
+                        <DetailedContentList>
+                          {entryB.content.map((item, index) => (
+                            <ContentItem key={index}>{item}</ContentItem>
+                          ))}
+                        </DetailedContentList>
+                      )}
                     </Data>
                   )}
                 </Entry>
@@ -237,7 +251,11 @@ const When = styled.div`
   margin-top: var(--spacing-1);
 `
 
-const Description = styled.div`
+const DetailedContentList = styled.ul`
+  padding: 0 15px;
+`
+
+const ContentItem = styled.li`
   color: ${({ theme }) => theme.textSecondary};
   font-weight: var(--fontWeight-normal);
   margin-top: var(--spacing-1);

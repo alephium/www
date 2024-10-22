@@ -214,7 +214,7 @@ export const pageQuery = graphql`
                   row
                   text
                   when
-                  description
+                  content
                   isMajor
                 }
               }
