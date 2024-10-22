@@ -376,8 +376,6 @@ todoListSection:
 
   - title: DevX (Ralph & VM)
     items:
-      - text: 'Unit Tests, Documentation, and Intuitive dApp Development'
-        description: 'Improve DevX by focusing on unit tests, enhancing documentation, and simplifying dApp development.'
       - text: 'Intuitive Error Handling'
         description: 'Develop an intuitive error handling system for full node endpoints to improve debugging and user experience.'
       - text: 'Unit Tests in Ralph'
