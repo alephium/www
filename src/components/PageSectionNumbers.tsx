@@ -15,7 +15,7 @@ import Waves from './Wave/Waves'
 import ArrowedLink from './ArrowedLink'
 import { motion } from 'framer-motion'
 
-const baseUrl = 'https://mainnet-backend.alephium.org'
+const baseUrl = 'https://backend.mainnet.alephium.org'
 const ONE_DAY = 1000 * 60 * 60 * 24
 
 export interface PageSectionNumbersContentType {
@@ -99,8 +99,6 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
         const res = await fetch('https://api.llama.fi/protocols')
         const tvls = (await res.json()) as ProtocolsTVLs
 
-        console.log(tvls.filter((t) => t.chain === 'Alephium'))
-
         setProtocolsStakingTVL(
           tvls.filter((t) => t.chain === 'Alephium').reduce((acc, { staking }) => acc + staking, 0)
         )
@@ -155,6 +153,8 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
         toTs: now,
         'interval-type': 'hourly'
       })
+
+      console.log(data)
 
       if (data && data.length > 0) updateStatsScalar('hashrate', Number(data[0].value))
     }
