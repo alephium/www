@@ -74,7 +74,8 @@ module.exports = {
         mergeStyleHashes: false,
         directives: {
           'style-src': "'self' 'unsafe-inline'",
-          'script-src': "'self' 'unsafe-inline' 'unsafe-eval' https://gc.zgo.at https://prod.spline.design",
+          'script-src':
+            "'self' 'unsafe-inline' 'unsafe-eval' https://gc.zgo.at https://prod.spline.design https://translate.google.com",
           'default-src': "'none'",
           'manifest-src': "'self'",
           'connect-src':
