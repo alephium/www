@@ -32,6 +32,7 @@ const TranslateComponent = () => {
           {
             pageLanguage: 'en',
             autoDisplay: false,
+            includedLanguages: 'en,fr,de,ar,bg,el,es,hi,id,it,nl,pt,ru,th,tr,vi,zh-CN',
             layout: window.google.translate.TranslateElement.InlineLayout.VERTICAL
           },
           googleTranslateRef.current
