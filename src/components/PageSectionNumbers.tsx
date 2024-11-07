@@ -154,8 +154,6 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
         'interval-type': 'hourly'
       })
 
-      console.log(data)
-
       if (data && data.length > 0) updateStatsScalar('hashrate', Number(data[0].value))
     }
 

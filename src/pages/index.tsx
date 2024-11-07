@@ -19,6 +19,7 @@ import SectionDivider from '../components/SectionDivider'
 import PageSectionWallets, { PageSectionWalletsContentType } from '../components/PageSectionWallets'
 import NavigationMenu from '../components/NavigationMenu'
 import TopBanner, { TopBannerContentType } from '../components/TopBanner'
+import { useEffect } from 'react'
 
 interface IndexPageProps extends PageProps {
   data: {

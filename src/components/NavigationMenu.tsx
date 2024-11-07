@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled, { css, useTheme } from 'styled-components'
 import { Link } from 'gatsby'
 
 import { deviceBreakPoints } from '../styles/global-style'
@@ -8,11 +8,14 @@ import LogoText from '../images/svgs/logo-text.svg'
 import GitHubIcon from '../images/svgs/brand-icon-github.svg'
 import SocialMediaIcon from './SocialMediaIcon'
 import { AnimatePresence, motion, useMotionValueEvent, useScroll } from 'framer-motion'
-import { useRef, useState } from 'react'
+import { ReactNode, useRef, useState } from 'react'
+import { RiTranslate2 } from 'react-icons/ri'
+
 import HeroLogo from './Hero/HeroLogo'
 
 import { RiMenu3Fill, RiArrowDropDownLine, RiArrowDropUpLine } from 'react-icons/ri'
 import useOnClickOutside from '../hooks/useOnClickOutside'
+import TranslateComponent from './TranslateComponent'
 
 interface NavigationMenuProps {
   topOffset?: number
@@ -61,34 +64,47 @@ const NavigationMenu = ({ topOffset, className }: NavigationMenuProps) => {
   )
 }
 
-const NavigationItems = ({ className }: { className?: string }) => (
-  <div className={className}>
-    <NavigationDrawer
-      title="Essentials"
-      items={[
-        { title: 'Wallets', url: '#wallets' },
-        { title: 'Bridge', url: 'https://bridge.alephium.org/', isNew: true, isExternal: true },
-        { title: 'Explorer', url: 'https://explorer.alephium.org/', isExternal: true }
-      ]}
-    />
-    <NavLink className="nav-item" url="#ecosystem" trackingName="main-nav:Ecosystem">
-      Ecosystem
-    </NavLink>
-    <NavLink className="nav-item" url="#community" trackingName="main-nav:community">
-      Community
-    </NavLink>
-    <NavLink className="nav-item" url="https://docs.alephium.org/dapps/" newTab trackingName="main-nav:build-dapp-link">
-      Build a dApp
-    </NavLink>
+const NavigationItems = ({ className }: { className?: string }) => {
+  const theme = useTheme()
 
-    <GithubButton
-      name="Github"
-      ImageComponent={GitHubIcon}
-      url="https://github.com/alephium"
-      trackingName="main-nav:github-link"
-    />
-  </div>
-)
+  return (
+    <div className={className}>
+      <NavigationDrawer
+        title="Essentials"
+        items={[
+          { title: 'Wallets', url: '#wallets' },
+          { title: 'Bridge', url: 'https://bridge.alephium.org/', isNew: true, isExternal: true },
+          { title: 'Explorer', url: 'https://explorer.alephium.org/', isExternal: true }
+        ]}
+      />
+      <NavLink className="nav-item" url="#ecosystem" trackingName="main-nav:Ecosystem">
+        Ecosystem
+      </NavLink>
+      <NavLink className="nav-item" url="#community" trackingName="main-nav:community">
+        Community
+      </NavLink>
+      <NavLink
+        className="nav-item"
+        url="https://docs.alephium.org/dapps/"
+        newTab
+        trackingName="main-nav:build-dapp-link"
+      >
+        Build a dApp
+      </NavLink>
+      <NavigationDrawer
+        Icon={<RiTranslate2 color={theme.textSecondary} size={20} />}
+        Content={<TranslateComponent />}
+      />
+
+      <GithubButton
+        name="Github"
+        ImageComponent={GitHubIcon}
+        url="https://github.com/alephium"
+        trackingName="main-nav:github-link"
+      />
+    </div>
+  )
+}
 
 const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -111,12 +127,14 @@ const MobileMenu = () => {
 }
 
 interface NavigationDrawerProps {
-  title: string
-  items: { title: string; url: string; isNew?: boolean; isExternal?: boolean }[]
+  title?: string
+  Icon?: ReactNode
+  items?: { title: string; url: string; isNew?: boolean; isExternal?: boolean }[]
+  Content?: ReactNode
   className?: string
 }
 
-const NavigationDrawer = ({ title, items, className }: NavigationDrawerProps) => {
+const NavigationDrawer = ({ title, Icon, items, Content, className }: NavigationDrawerProps) => {
   const [isOpen, setIsOpen] = useState(false)
   const ref = useRef(null)
 
@@ -129,7 +147,7 @@ const NavigationDrawer = ({ title, items, className }: NavigationDrawerProps) =>
   return (
     <DrawerWrapper className={className} ref={ref}>
       <DrawerTitleWrapper onClick={handleTitleClick}>
-        {items.findIndex((i) => i.isNew) !== -1 && (
+        {items && items.findIndex((i) => i.isNew) !== -1 && (
           <NewItemBubble>
             <NewItemBubbleEcho
               initial={{ scale: 1, opacity: 0.7 }}
@@ -138,18 +156,20 @@ const NavigationDrawer = ({ title, items, className }: NavigationDrawerProps) =>
             />
           </NewItemBubble>
         )}
-        <DrawerTitle>{title}</DrawerTitle>
+        {title ? <DrawerTitle>{title}</DrawerTitle> : Icon ? Icon : null}
         <DrawerCarretWrapper>{isOpen ? <RiArrowDropUpLine /> : <RiArrowDropDownLine />}</DrawerCarretWrapper>
       </DrawerTitleWrapper>
       <AnimatePresence>
         {isOpen && (
           <Drawer initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-            {items.map((item, index) => (
-              <DrawerItem key={item.title}>
-                <NavLink key={index} url={item.url} text={item.title} newTab={item.isExternal} />
-                {item.isNew && <NewBubble>New</NewBubble>}
-              </DrawerItem>
-            ))}
+            {items
+              ? items.map((item, index) => (
+                  <DrawerItem key={item.title}>
+                    <NavLink key={index} url={item.url} text={item.title} newTab={item.isExternal} />
+                    {item.isNew && <NewBubble>New</NewBubble>}
+                  </DrawerItem>
+                ))
+              : Content || null}
           </Drawer>
         )}
       </AnimatePresence>
