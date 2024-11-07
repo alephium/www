@@ -147,7 +147,6 @@ const LeftContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   z-index: 1;
-  pointer-events: none;
 
   @media ${deviceBreakPoints.mobile} {
     padding: var(--spacing-4);
@@ -163,7 +162,6 @@ const LeftContentWrapper = styled.div`
 const TextContent = styled.div`
   display: flex;
   flex-direction: column;
-  pointer-events: none;
 `
 
 const Title = styled.h1`
