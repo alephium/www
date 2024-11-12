@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { deviceBreakPoints } from '../styles/global-style'
 import Button from './Button'
 
 export interface TopBannerContentType {
@@ -38,10 +39,24 @@ const TopBannerContainer = styled.div`
   gap: 20px;
   z-index: 10001;
   font-size: 14px;
+
+  @media ${deviceBreakPoints.mobile} {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @media ${deviceBreakPoints.smallMobile} {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 `
 
 const BannerText = styled.div`
   font-weight: 600;
   font-size: 16px;
   color: black;
+
+  @media ${deviceBreakPoints.smallMobile} {
+    font-size: 13px;
+  }
 `
