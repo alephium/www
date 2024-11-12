@@ -42,7 +42,7 @@ export default styled(Button)`
   background-color: rgba(255, 255, 255, 0.9);
   color: black;
   border-radius: 9px;
-  padding: 12px;
+  padding: 8px 12px;
   border: 0 solid;
   text-decoration: none;
   display: inline-flex;

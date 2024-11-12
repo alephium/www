@@ -58,7 +58,7 @@ const IndexPage = (props: IndexPageProps) => {
         <GlobalStyle />
         <SiteWrapper>
           <TopBanner content={pageContent.topBanner} />
-          <NavigationMenu topOffset={pageContent.topBanner.text ? 50 : 0} />
+          <NavigationMenu topOffset={pageContent.topBanner.text ? 80 : 0} />
           <ContentContainer>
             <PageSectionHero content={pageContent.headerSection} />
             <SectionDivider />

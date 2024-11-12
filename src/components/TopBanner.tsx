@@ -30,14 +30,18 @@ const TopBannerContainer = styled.div`
   top: 0;
   right: 0;
   left: 0;
-  height: 40px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  gap: 10px;
+  gap: 20px;
   z-index: 10001;
   font-size: 14px;
 `
 
-const BannerText = styled.div``
+const BannerText = styled.div`
+  font-weight: 600;
+  font-size: 16px;
+  color: black;
+`

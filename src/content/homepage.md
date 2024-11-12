@@ -1,9 +1,9 @@
 ---
 topBanner:
-  text: ''
-  linkText: ''
-  url: ''
-  color: ''
+  text: 'Get the OneKey Classic 1S Alephium Limited Edition for 59$ (-40%) by using the discount code "ALEPHIUM"'
+  linkText: 'Shop'
+  url: 'https://shop.onekey.so/products/alephium-x-onekey'
+  color: '#45E555'
 headerSection:
   dark:
     title: 'Scalable for devs.
