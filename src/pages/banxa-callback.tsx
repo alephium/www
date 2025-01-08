@@ -11,7 +11,8 @@ const BanxaCallbackPage = () => (
     <main style={{ height: '100vh' }}>
       <PageSectionContainerStyled>
         <div className="contents">
-          <h1>Returning to your wallet...</h1>
+          <h1>Purchace completed! ✅</h1>
+          <h2>The funds will be sent to your wallet shortly.</h2>
         </div>
       </PageSectionContainerStyled>
     </main>
