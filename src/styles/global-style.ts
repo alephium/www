@@ -141,7 +141,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: ${({ theme }) => theme.bgSecondary};
+    background-color: ${({ theme }) => theme.bgTertiary};
     color: ${({ theme }) => theme.textPrimary};
     font-family: var(--fontFamily-sans);
 

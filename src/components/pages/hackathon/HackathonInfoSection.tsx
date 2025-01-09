@@ -3,6 +3,9 @@ import { deviceBreakPoints } from '../../../styles/global-style'
 import HackathonSectionContainer from './HackathonSectionContainer'
 import { H3, Paragraph } from './Texts'
 import SimpleLink from '../../SimpleLink'
+import lsw3Logo from '../../../images/logos/lsw3-logo.jpg'
+import cryptoXRLogo from '../../../images/logos/cryptoXR-logo.png'
+import alephiumLogo from '../../../images/logos/alephium-logo.png'
 
 export type HackathonInfoSectionContentType = {
   participantsInfo: {
@@ -51,320 +54,289 @@ interface HackathonInfoSectionProps {
 
 const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
   <div className={className}>
-    <HackathonSectionContainer>
-      <H3 divider>When & where?</H3>
+    <H3>When & where?</H3>
+    <Paragraph>
+      The hackathon will take place exclusively on-site at <b>Auxerre Expo Parc (Auxerrexpo)</b> on Friday January, 31st
+      and Saturday, February 1st, as part of CryptoXR. Detailed directions to the venue can be found on the official{' '}
+      <SimpleLink text="CryptoXR" url="https://cryptoxr.fr)" newTab /> website.
+    </Paragraph>
+    <Paragraph>
+      <i>
+        All registered hackathon participants will automatically receive entry to CryptoXR, so you can enjoy the full
+        event experience!
+      </i>
+    </Paragraph>
+
+    <H3 divider>Hackathon Organizers</H3>
+    <PartnersCards>
+      <PartnerCard>
+        <PartnerLogo>
+          <img src={cryptoXRLogo} alt="CryptoXR Logo" decoding="async" loading="lazy" />
+        </PartnerLogo>
+        <PartnerName text="Crypto XR" url="https://www.bitmain.com/" newTab></PartnerName>
+        <PartnerDescription>
+          Auxerre is set to become France’s Web3 capital from January 30 to February 1, 2025, as CryptoXR returns for
+          its third edition. With over 3,000 visitors, 70+ speakers, and a 6,000 m² exhibition space, CryptoXR is one of
+          the most accessible and inclusive Web3 events in France. Focused on federating and democratizing Web3
+          technologies, the event brings together industry pioneers, local actors, and the broader public to celebrate
+          innovation, inclusivity, and decentralization.
+        </PartnerDescription>
+      </PartnerCard>
+      <PartnerCard>
+        <PartnerLogo>
+          <img src={lsw3Logo} alt="LSW3 Logo" decoding="async" loading="lazy" />
+        </PartnerLogo>
+        <PartnerName text="LSW3" url="https://lsw3.fr" newTab />
+        <PartnerDescription>
+          LSW3 is rapidly becoming one of the largest professional Web3 networks in France, with nearly 100 members,
+          including major players like Binance, Morpho, and Vivendi, as well as representation from the French
+          government on its board. This growing alliance is dedicated to enhancing security across the Web3 ecosystem by
+          uniting industry leaders, public institutions, and innovators to share best practices and combat fraud and
+          scams in blockchain and cryptocurrency. Its mission is to make Web3 technologies safer, more transparent, and
+          widely accessible, solidifying its position as a cornerstone of the French Web3 landscape.
+        </PartnerDescription>
+      </PartnerCard>
+      <PartnerCard>
+        <PartnerLogo>
+          <img src={alephiumLogo} alt="Alephium Logo" decoding="async" loading="lazy" />
+        </PartnerLogo>
+        <PartnerName text="Alephium" url="https://alephium.org" newTab />
+        <PartnerDescription>
+          Alephium is a next-gen Proof-of-Work Layer 1 blockchain designed to tackle scalability, security, and
+          sustainability, making it an ideal foundation for impactful, future-ready blockchain solutions. With BlockFlow
+          technology, it supports over 10,000 tps, ensuring efficiency for global applications while maintaining a
+          simple, single-chain experience. Its stateful UTXO model combines smart contract flexibility with UTXO
+          security, providing a secure environment for dApps and tokenized assets. Alephium’s Proof-of-Less-Work cuts
+          energy use by 87%, aligning with environmental goals without compromising decentralization. As the
+          second-largest PoW blockchain by TVL after Bitcoin, Alephium powers DeFi, mining, and large-scale initiatives
+          like the billion-dollar GIGATONS project.
+        </PartnerDescription>
+      </PartnerCard>
+    </PartnersCards>
+
+    <H3 divider>Prizes & category for teams</H3>
+    <PrizeList>
       <Paragraph>
-        The hackathon will happen exclusively online, from February 12th to 26th. Main communication hub for the
-        hackathon will be <SimpleLink text="our Discord" url="http://www.alephium.org/discord" newTab /> and you can
-        join the hackathon channels already!
+        The most functional, impactful, and innovative projects will be rewarded with the following prizes:
       </Paragraph>
-      <Paragraph>
-        <SimpleLink
-          text="Hackathon-Lounge"
-          url="https://discord.com/channels/747741246667227157/1070646731106172928"
-          newTab
-        />{' '}
-        - This is where you can find a team, share tips & brainstorm! All of our updates will be shared here, leave your
-        notifications on for this one!
-      </Paragraph>
-      <Paragraph>
-        <SimpleLink
-          text="Hackathon-Projects"
-          url="https://discord.com/channels/747741246667227157/1203001780703727626"
-          newTab
-        />{' '}
-        - This is where teams will regroup around their projects, document progress & interact in their own forum-like
-        post. The channel is open, but you can’t post in there yet, only when the hackathon starts!
-      </Paragraph>
-      <H3 divider>What are the prizes?</H3>
-      <PrizeList>
-        <Paragraph>The main prizes are tiered to recognize the top five submissions:</Paragraph>
-        <MainPrizesContainer>
-          <MainPrizesTitle>Main prizes</MainPrizesTitle>
-          <ul>
-            <li>
-              First prize is <b>15’000$ in ALPH</b>
-            </li>
-            <li>
-              Second prize is <b>8’000$ in ALPH</b>
-            </li>
-            <li>
-              3rd, 4th and 5th are <b>4’000$ in ALPH</b> each
-            </li>
-            <li>
-              6th, 7th, 8th & 9th are <b>1’000$ in ALPH</b> each
-            </li>
-          </ul>
-        </MainPrizesContainer>
-        <Paragraph>
-          In addition to the main prizes, special partner prizes add an extra chance to get recognized & rewarded:
-        </Paragraph>
-        <h4>Special partner prizes</h4>
+      <MainPrizesContainer>
+        <MainPrizesTitle>Main prizes</MainPrizesTitle>
         <ul>
           <li>
-            <SimpleLink text="Bitmain’s" url="https://www.bitmain.com/" newTab /> choice will receive{' '}
-            <b>2’500$ in ALPH</b>
+            1st Place: <Badge>€3,000</Badge> in ALPH
           </li>
           <li>
-            <SimpleLink text="Cetacean’s" url="https://twitter.com/CetaceanCapital" newTab /> choice will receive{' '}
-            <b>2’500$ in ALPH</b>
+            2nd Place: <Badge>€2,000</Badge> in ALPH
           </li>
           <li>
-            <SimpleLink text="Blockflow’s" url="https://twitter.com/Blockflow_DAO" newTab /> choice will receive{' '}
-            <b>2’500$ in ALPH</b>
-          </li>
-          <li>
-            <SimpleLink text="Dappnode’s" url="https://dappnode.com/" newTab /> choice will receive a{' '}
-            <SimpleLink
-              text="home node i532-4N model"
-              url="https://dappnode.com/collections/all/products/home-i532-4n"
-              newTab
-            />
+            3rd Place: <Badge>€1,000</Badge> in ALPH
           </li>
         </ul>
+      </MainPrizesContainer>
 
-        <Paragraph>
-          The hackathon also features bounties and honors to encourage a wide range of contributions:
-        </Paragraph>
+      <h4>Evaluation Criteria</h4>
+      <Paragraph>
+        Projects will be judged on a comprehensive set of criteria to ensure fairness and reward excellence:
+      </Paragraph>
 
-        <h4>Bounties</h4>
-        <Paragraph>
-          Up to <b>15’000$ in ALPH</b> are reserved for the bounties
-        </Paragraph>
-        <h4>Honors</h4>
-        <Paragraph>
-          Up to <b>8’500$ in ALPH</b> is reserved for special honors at the jury’s discretion.
-        </Paragraph>
-        <Paragraph>
-          <i>
-            Notes:
-            <ul>
-              <li>
-                The distribution of prizes is subject to the discretion of the jury and may be adjusted based on the
-                quality of submissions received.
-              </li>
-              <li>
-                All prizes will be paid in $ALPH. The conversion rate for prizes will use the $ALPH price average over
-                the 14-days of the hackathon (12-26th of february).
-              </li>
-            </ul>
-          </i>
-        </Paragraph>
-      </PrizeList>
-
-      <H3 divider>What can I build?</H3>
-      <Paragraph>
-        Participants can engage in one of two primary participation methods: embarking on the main quests or tackling
-        side quests called bounties.
-      </Paragraph>
-      <QuestsBox>
-        <h3>The main quests</h3>
-        <Paragraph>
-          Participants can participate either as teams or as solo hackers and complete projects in the following
-          categories:
-        </Paragraph>
-        <ul>
-          <li>
-            <b>🪄 dApps Development:</b> challenge your skills in decentralized application development.
-          </li>
-          <li>
-            <b>🛠️ Tooling:</b> Innovate with new tools to enhance blockchain functionality.
-          </li>
-          <li>
-            <b>🔀 Interoperability:</b> Explore the connection of Alephium with other blockchain systems.
-          </li>
-        </ul>
-      </QuestsBox>
-      <Paragraph>
-        <i>
-          Can I join with an existing project? Those who wish to start with a pre-existing project can do so, but only
-          the progress made during the hackathon will be considered for evaluation and judging. Clear objectives will
-          need to be set at the beginning of the hackathon to facilitate this assessment.
-        </i>
-      </Paragraph>
-      <h4>Bounties</h4>
-      <Paragraph>
-        Everyone can participate as a team or hack solo (but bounties are not eligible for the main prizes). These are
-        specific/smaller tasks or challenges that participants can complete for rewards. If you are a solo hacker and
-        want to participate in the hackathon, this is the way (teams can also do bounties!).
-      </Paragraph>
-      <Paragraph>
-        The general goal of bounties is to provide improvements to the user/developer experience. Bounties are divided
-        into 4 focus areas:
-      </Paragraph>
-      <BountiesList>
-        <BountiesCard>
-          <h3>Documentation</h3>
-          <Paragraph>Enhancing/creating developer documentation. (Create a PR in the relevant repo)</Paragraph>
-          <ul>
-            <li>
-              1 - improve the{' '}
-              <SimpleLink text="SDK doc" url="https://docs.alephium.org/dapps/sdk/getting-started" newTab />
-            </li>
-            <li>
-              2 - improve the{' '}
-              <SimpleLink text="dApp recipes doc" url="https://docs.alephium.org/dapps/sdk/getting-started" newTab />
-            </li>
-            <li>
-              3 - improve the{' '}
-              <SimpleLink
-                text="Ralph language doc"
-                url="https://docs.alephium.org/dapps/ralph/getting-started"
-                newTab
-              />
-            </li>
-          </ul>
-        </BountiesCard>
-        <BountiesCard>
-          <h3>Coding PoC</h3>
+      <CriteriumList>
+        <CriteriumCard>
+          <h4>Functionality (30%)</h4>
           <Paragraph>
-            Creating proof-of-concepts / code examples that help to explain Alephium. (Create a PR in{' '}
+            Assessment of the project’s technical implementation, performance, and the effectiveness of its features.
           </Paragraph>
-          <SimpleLink text="this repo" url="https://github.com/alephium/ralph-example" newTab />)
-          <ul>
-            <li>4 - Merkle tree proof for allowlist</li>
-            <li>5 - Crowdfund platform</li>
-            <li>6 - Simple price Oracle</li>
-            <li>7 - Simple DAO</li>
-            <li>8 - Airdrop contract</li>
-          </ul>
-        </BountiesCard>
-        <BountiesCard>
-          <h3>Front-End Task</h3>
-          <Paragraph>Developing a front-end feature.</Paragraph>
-          <ul>
-            <li>
-              9 -{' '}
-              <SimpleLink
-                text="Payment request flow feature"
-                url="https://github.com/alephium/alephium-frontend/issues/273"
-                newTab
-              />
-            </li>
-            <li>
-              10 -{' '}
-              <SimpleLink
-                text="Register the Alephium chain in the WalletConnect Cloud"
-                url="https://github.com/alephium/alephium-frontend/issues/158"
-                newTab
-              />
-            </li>
-            <li>
-              11 -{' '}
-              <SimpleLink
-                text="Any pending issue"
-                url="https://github.com/alephium/alephium-frontend/issues?q=is%3Aissue+is%3Aopen+label%3Acommunity"
-                newTab
-              />{' '}
-              marked with the community tag.
-            </li>
-          </ul>
-        </BountiesCard>
-        <BountiesCard>
-          <h3>Community Dashboards & Calculators</h3>
-          <Paragraph>Designing a dashboard & calculators for useful information.</Paragraph>
-          <ul>
-            <li>12 - Dune analytics board for the wALPH Uniswap pool</li>
-            <li>13 - ETH wALPH stats</li>
-            <li>14 - dApps stats dashboard</li>
-            <li>15 - Mining reward calculator</li>
-            <li>16 - Burned tokens calculator</li>
-          </ul>
-        </BountiesCard>
-      </BountiesList>
-      <h4>Your own idea</h4>
-      <Paragraph>If you have an idea for a bounty, propose it to us in the general chat of the hackathon!</Paragraph>
+        </CriteriumCard>
+        <CriteriumCard>
+          <h4>Innovation (25%)</h4>
+          <Paragraph>Evaluation of originality and creativity in the project’s concept and execution.</Paragraph>
+        </CriteriumCard>
+        <CriteriumCard>
+          <h4>Design and User Experience (UI/UX) (20%) </h4>
+          <Paragraph>
+            Examination of the design aesthetics, usability, and overall user-friendliness of the application.
+          </Paragraph>
+        </CriteriumCard>
+        <CriteriumCard>
+          <h4>Potential Impact (15%)</h4>
+          <Paragraph>
+            Consideration of the project’s real-world applicability and its potential to address relevant challenges or
+            needs.
+          </Paragraph>
+        </CriteriumCard>
+        <CriteriumCard>
+          <h4>Extensibility (10%)</h4>
+          <Paragraph>
+            Review of the project’s scalability and potential for future development or integration within the
+            ecosystem.
+          </Paragraph>
+        </CriteriumCard>
+      </CriteriumList>
+
+      <h4>Special prizes</h4>
+      <Paragraph>
+        In addition to the main prizes, teams have additional opportunities to be recognized and rewarded with{' '}
+        <Badge>€500 each</Badge> for excelling in specific areas:
+      </Paragraph>
+      <ul>
+        <li>
+          <b>Most Creative Project</b> – Celebrating exceptional creativity and originality in leveraging Alephium’s
+          features.
+        </li>
+        <li>
+          <b>Best User Experience (UI/UX)</b> – Recognizing projects with outstanding design, ease of use, and
+          accessibility.
+        </li>
+        <li>
+          <b>Best Code Quality</b> – Rewarding clean, efficient, and well-documented code that follows best practices.
+        </li>
+        <li>
+          <b>Best Security Project</b> – Honoring tools that enhance Alephium’s security, such as vulnerability
+          scanners, testing frameworks, or monitoring systems.
+        </li>
+      </ul>
+
       <Paragraph>
         <i>
-          For submission, the process is the same as for main quests. Once you have chosen a bounty, please create a
-          post in the Hackathon-Projects channel with the name of the bounty as a title. You can document your progress
-          there or ask us for help or advice in the post. At the end of the hackathon, you will provide a link to your
-          work in the submission form, to be evaluated by the jury!
+          Please note: We reserve the right to adjust the prize categories based on the final submissions received to
+          ensure alignment with the quality and diversity of the projects.
         </i>
       </Paragraph>
-      <H3 divider>What is the schedule?</H3>
+
+      <h4>Prizes for Solo-participants</h4>
+      <Paragraph>
+        Total Prize Pool: <Badge>€3,000</Badge>
+      </Paragraph>
+      <Paragraph>
+        Solo developers, this is your time to shine! We’ve curated a variety of challenges tailored to individual
+        contributors, offering flexible opportunities to showcase your skills and creativity. These challenges aim to
+        empower solo hackers to dive into Alephium’s ecosystem, solve puzzles, and create tools that benefit the broader
+        developer community. Here are some examples of potential challenges and rewards (final challenges to be
+        defined):
+      </Paragraph>
+      <ul>
+        <li>
+          <b>
+            Port a Simple Solidity Contract <Badge>Up to €500</Badge>
+          </b>{' '}
+          – Select from a predefined list of Solidity contracts and port one to Alephium’s platform. This challenge
+          tests your ability to adapt smart contracts to a new blockchain environment.
+        </li>
+        <li>
+          <b>
+            Solve the Bounty Puzzle <Badge>€100 (based on complexity)</Badge>
+          </b>{' '}
+          – Recognizing projects with outstanding design, ease of use, and accessibility.
+        </li>
+        <li>
+          <b>
+            Build a Mini-Tool or Utility for Alephium Developers <Badge>Up to €500</Badge>
+          </b>{' '}
+          – Create a lightweight, functional tool to enhance the Alephium development experience. This could include
+          testing frameworks, debugging tools, or utilities that streamline development workflows.
+        </li>
+      </ul>
+      <Paragraph>
+        Stay tuned for more challenges! If you have an idea for a challenge, propose it to us upon registration or in
+        person during the onboarding session on Friday January, 31st.
+      </Paragraph>
+      <Paragraph>
+        Participants can look forward to a host of surprises throughout the event! From exclusive goodies and swag to
+        bonus challenges and unexpected rewards, we’ve got plenty in store to make your hackathon experience
+        unforgettable. Whether it’s a token of appreciation or an extra boost of motivation, we’re here to ensure every
+        participant feels valued and inspired.
+      </Paragraph>
+    </PrizeList>
+
+    <H3 divider>Timeline</H3>
+    <TimeLinesWrapper>
       <ScheduleItems>
-        <s>
-          <ScheduleItem>
-            <ScheduleItemDot />
-            <ScheduleItemText>
-              <h4>January 19th</h4>
-              <p>Announcement and team enrollment - Opening of applications</p>
-            </ScheduleItemText>
-          </ScheduleItem>
-          <ScheduleItem>
-            <ScheduleItemDot />
-            <ScheduleItemText>
-              <h4>January 31st</h4>
-              <p>Opening of the special Discord Channel for team finding and general chat.</p>
-            </ScheduleItemText>
-          </ScheduleItem>
-          <ScheduleItem>
-            <ScheduleItemDot />
-            <ScheduleItemText>
-              <h4>February 12th - 4PM CET</h4>
-              <p>
-                A one-hour kickoff <SimpleLink text="Live Event" url="https://meet.google.com/zrg-tcsj-gzc" newTab />{' '}
-                with the team. <SimpleLink text="@h0ngchao" url="https://twitter.com/hongchao" newTab /> will help set
-                up your development environment,{' '}
-                <SimpleLink text="@zippy" url="https://twitter.com/Estragon77" newTab /> recap the process,{' '}
-                <SimpleLink text="@Maud" url="https://twitter.com/MaudBannwart" newTab /> ,{' '}
-                <SimpleLink text="@mika" url="https://twitter.com/mika_pote" newTab /> &{' '}
-                <SimpleLink text="@cheng" url="https://twitter.com/wachmc" newTab /> will be there. This will be
-                followed by an open office & Q&A!
-              </p>
-            </ScheduleItemText>
-          </ScheduleItem>
-        </s>
-        <s>
-          <ScheduleItem>
-            <ScheduleItemDot />
-            <ScheduleItemText>
-              <h4>February 16th & 20th</h4>
-              <p>
-                Open Office Hours & Live Support: These one-hour sessions will allow participants to engage with the
-                core contributors and seek assistance or clarification on their projects.
-              </p>
-            </ScheduleItemText>
-          </ScheduleItem>
-        </s>
+        <ScheduleItemsHeader>Friday - 16:00-20:00</ScheduleItemsHeader>
         <ScheduleItem>
           <ScheduleItemDot />
           <ScheduleItemText>
-            <h4>February 26th</h4>
-            <p>Submission deadline: All projects must be submitted by 11:59 PM CET.</p>
+            <h4>16:30 - 17:00</h4>
+            <p>Welcome & Alephium Introduction</p>
           </ScheduleItemText>
         </ScheduleItem>
         <ScheduleItem>
           <ScheduleItemDot />
           <ScheduleItemText>
-            <h4>First half of March</h4>
-            <p>Winners Announcement</p>
+            <h4>17:00 - 18:00</h4>
+            <p>Onboarding & resources sharing:</p>
+          </ScheduleItemText>
+        </ScheduleItem>
+        <ScheduleItem>
+          <ScheduleItemDot />
+          <ScheduleItemText>
+            <h4>18:00-20:00</h4>
+            <p>Open office + small Apéro</p>
           </ScheduleItemText>
         </ScheduleItem>
       </ScheduleItems>
-      <H3 divider>How can I participate?</H3>
-      <Paragraph>
-        First, you need to apply! Join by completing the form{' '}
-        <SimpleLink
-          text="here!"
-          url="https://docs.google.com/forms/d/e/1FAIpQLSdDsa1CwJeg-fxrWb1gVWefP4iJoNoZwNe0PNwk94GqmcMkHg/viewform?usp=sharing"
-        />
-      </Paragraph>
-      <Paragraph>
-        For the duration of the hackathon, the main communication Hub will be the hackathon’s general channel. Ping us
-        there if you didn’t get the special discord role!
-      </Paragraph>
-      <Paragraph>
-        Additionally, each team will have access to a dedicated Discord sub-channel in a dedicated forum channel for
-        discussion, progress reporting, and collaboration.
-      </Paragraph>
-      <Paragraph>
-        At the end of the hackathon, the teams & individuals will need to submit their work through{' '}
-        <SimpleLink text="this form" url="https://forms.gle/5DFjrsRGmFVfhVUg6" newTab /> (not yet open, check back after
-        the 20th of February).
-      </Paragraph>
-    </HackathonSectionContainer>
+      <ScheduleItems>
+        <ScheduleItemsHeader>Saturday - 9:30 - 20:00</ScheduleItemsHeader>
+        <ScheduleItem>
+          <ScheduleItemDot />
+          <ScheduleItemText>
+            <h4>9:30</h4>
+            <p>Hackathon Start</p>
+          </ScheduleItemText>
+        </ScheduleItem>
+        <ScheduleItem>
+          <ScheduleItemDot />
+          <ScheduleItemText>
+            <h4>12:30</h4>
+            <p>Lunch</p>
+          </ScheduleItemText>
+        </ScheduleItem>
+        <ScheduleItem>
+          <ScheduleItemDot />
+          <ScheduleItemText>
+            <h4>17:00-20:00</h4>
+            <p>Review</p>
+          </ScheduleItemText>
+        </ScheduleItem>
+        <ScheduleItem>
+          <ScheduleItemDot />
+          <ScheduleItemText>
+            <h4>20:00-20:30</h4>
+            <p>Submission deadline</p>
+          </ScheduleItemText>
+        </ScheduleItem>
+        <ScheduleItem>
+          <ScheduleItemDot />
+          <ScheduleItemText>
+            <h4>17:00</h4>
+            <p>Winner announcement on the main stage</p>
+          </ScheduleItemText>
+        </ScheduleItem>
+      </ScheduleItems>
+    </TimeLinesWrapper>
+    <H3 divider>How can I participate?</H3>
+    <Paragraph>Getting involved is easy!</Paragraph>
+    <ul>
+      <li>
+        <b>Register</b>: Start by completing the registration form{' '}
+        <SimpleLink text="here" url="https://forms.gle/rHGhpNpTNeZrMVdZ7" /> to secure your spot.
+      </li>
+      <li>
+        <b>Prepare</b>: Ahead of the event, we’ll send you some resources to help you get started. In the meantime, you
+        can already explore the <SimpleLink text="Alephium documentation" url="https://docs.alephium.org" /> to
+        familiarize yourself with the chain and its features.
+      </li>
+      <li>
+        <b>Attend CryptoXR</b>: Make sure to come to the CryptoXR event at Auxerrexpo, as the hackathon will take place
+        exclusively on-site.
+      </li>
+      <li>
+        Join the Onboarding Session: Don’t miss the onboarding session on Friday, January 31st, where we’ll guide you
+        through everything you need to know to kickstart your hackathon experience.
+      </li>
+    </ul>
+    <Paragraph>
+      If you have any questions about the hackathon or need assistance, feel free to email us at info@alephium.org or
+      Contact@lsw3.fr —we’re here to help!
+    </Paragraph>
   </div>
 )
 
@@ -372,17 +344,39 @@ export default styled(HackathonInfoSection)`
   background-color: ${({ theme }) => theme.bgTertiary};
 `
 
+const TimeLinesWrapper = styled.div`
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+`
+
 const ScheduleItems = styled.div`
   display: flex;
   flex-direction: column;
-  padding-left: var(--spacing-2);
+  background-color: ${({ theme }) => theme.bgSecondary};
+  border: 1px solid ${({ theme }) => theme.borderPrimary};
+  border-radius: 22px;
+  overflow: hidden;
+`
+
+const ScheduleItemsHeader = styled.div`
+  background-color: ${({ theme }) => theme.bgSurface};
+  border-bottom: 1px solid ${({ theme }) => theme.borderPrimary};
+  padding: var(--spacing-2) var(--spacing-4);
+  font-size: 20px;
+  text-align: center;
 `
 
 const ScheduleItem = styled.div`
   display: flex;
   align-items: center;
-  padding: var(--spacing-2);
+  padding: 0 var(--spacing-2);
   border-left: 1px solid ${({ theme }) => theme.palette1};
+  margin: 0 var(--spacing-2);
+
+  h4 {
+    margin: 10px 0 0 0 !important;
+  }
 `
 
 const ScheduleItemDot = styled.div`
@@ -402,15 +396,7 @@ const ScheduleItemDot = styled.div`
 const ScheduleItemText = styled.div`
   display: flex;
   flex-direction: column;
-
-  h4 {
-    margin: 0;
-  }
-
-  p {
-    margin: var(--spacing-2) 0 0 0;
-    opacity: 0.8;
-  }
+  padding-top: 10px;
 `
 
 const PrizeList = styled.div``
@@ -430,28 +416,60 @@ const MainPrizesTitle = styled.h3`
   margin-bottom: 16px;
 `
 
-const QuestsBox = styled.div`
-  font-size: 18px;
-  padding: 16px;
-  background-color: ${({ theme }) => theme.bgPrimary};
-  border: 1px solid ${({ theme }) => theme.palette1};
+const PartnersCards = styled.div`
+  display: flex;
+  gap: 20px;
 
-  h3 {
-    margin: 0;
+  @media ${deviceBreakPoints.mobile} {
+    flex-direction: column;
   }
 `
 
-const BountiesList = styled.div`
+const PartnerCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: var(--spacing-3);
+  border: 1px solid ${({ theme }) => theme.borderPrimary};
+  background-color: ${({ theme }) => theme.bgPrimary};
+  border-radius: 22px;
+
+  @media ${deviceBreakPoints.mobile} {
+    padding: var(--spacing-4);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+`
+
+const PartnerLogo = styled.div`
+  img {
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    border-radius: 22px;
+    overflow: hidden;
+    object-fit: contain;
+  }
+`
+
+const PartnerName = styled(SimpleLink)`
+  font-size: 24px;
+  font-weight: 500;
+`
+
+const PartnerDescription = styled.div`
+  max-width: 400px;
+  font-size: 15px;
+  color: ${({ theme }) => theme.textPrimaryVariation};
+`
+
+const CriteriumList = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
-
-  ul {
-    list-style-type: none;
-    padding-left: 20px;
-    padding-top: 10px;
-  }
+  padding-top: 20px;
 
   @media ${deviceBreakPoints.mobile} {
     grid-template-columns: repeat(1, 1fr);
@@ -459,12 +477,22 @@ const BountiesList = styled.div`
   }
 `
 
-const BountiesCard = styled.div`
-  padding: var(--spacing-3);
+const CriteriumCard = styled.div`
+  padding: var(--spacing-2) var(--spacing-3);
   border: 1px solid ${({ theme }) => theme.borderPrimary};
+  border-radius: 22px;
   background-color: ${({ theme }) => theme.bgSecondary};
 
-  h3 {
-    margin-top: 0;
+  h4 {
+    margin-top: 16px !important;
+    font-size: 23px !important;
   }
+`
+
+const Badge = styled.div`
+  display: inline;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 4px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 `

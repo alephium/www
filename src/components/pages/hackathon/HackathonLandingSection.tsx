@@ -2,38 +2,41 @@ import { colord } from 'colord'
 import styled from 'styled-components'
 import { deviceBreakPoints } from '../../../styles/global-style'
 import HackathonSectionContainer from './HackathonSectionContainer'
-import headerImage from '../../../images/alephium-hackathon-lake.png'
+import headerImage from '../../../images/crypto-xr-gradient.png'
+import cryptoXRIllustration from '../../../images/crypto-xr-cyberpunk.png'
 import SimpleLink from '../../SimpleLink'
 
 const HackathonLandingSection = () => (
   <SectionWrapper>
+    <CryptoXRIllustration />
     <ContentContainer>
       <Content>
         <FirstContentBox>
-          <Date>Hackathon #1 - Pioneers</Date>
-          <Title>12th - 26th February 2024</Title>
+          <SurTitle1>CryptoXR Hackathon</SurTitle1>
+          <SurTitle2>BUIDL with Alephium & LSW3</SurTitle2>
+          <Title>31.01 - 01.02.2025</Title>
+          <SubTitle>In person</SubTitle>
         </FirstContentBox>
         <SecondContentBox>
           <TagLine>
             <TLDR>
-              TL;DR - Up to <s>$50’000</s> $70’000 in ALPH tokens, sponsored by Alephium, the{' '}
-              <SimpleLink url="https://twitter.com/Blockflow_DAO" text="Blockflow Alliance DAO" newTab />,{' '}
-              <SimpleLink url="https://cetacean.capital/" text="Cetacean Capital" newTab /> and{' '}
-              <SimpleLink url="https://dappnode.com/" text="Dappnode" newTab /> and{' '}
-              <SimpleLink url="https://www.bitmain.com/" text="Bitmain" newTab />.
+              €15,000 in ALPH is up for grabs at the first-ever in-person Alephium hackathon, hosted by France’s most
+              beloved crypto event, <SimpleLink url="https://cryptoxr.fr" text="CryptoXR" newTab />, and{' '}
+              <SimpleLink url="https://lsw3.fr/" text="LSW3" newTab />!
             </TLDR>
-            It will reward teams building across 3 main categories (dApps, tooling & interoperability) as well as
-            offering bounties for solo hackers!
+            This 1-day on-site hackathon welcomes both teams and solo developers to buidl. Don’t miss the chance to dive
+            into Alephium’s innovative blockchain technology, showcase your skills, and connect with the vibrant
+            CryptoXR community.
           </TagLine>
         </SecondContentBox>
 
         <ActionLink
-          href="https://docs.google.com/forms/d/e/1FAIpQLSdDsa1CwJeg-fxrWb1gVWefP4iJoNoZwNe0PNwk94GqmcMkHg/viewform?usp=sharing"
+          href="https://forms.gle/rHGhpNpTNeZrMVdZ7"
           target="_blank"
           rel="noopener noreferrer"
-          data-goatcounter-click="hackathonApplyMainBtn"
+          data-goatcounter-click="cryptoXR-main-button"
         >
-          <ActionButton>Apply now!</ActionButton>
+          <ActionButton>Register now!</ActionButton>
         </ActionLink>
       </Content>
     </ContentContainer>
@@ -57,11 +60,13 @@ const SectionWrapper = styled.div`
 const ContentContainer = styled(HackathonSectionContainer)`
   flex: 1;
   display: flex;
-  align-items: center;
   height: auto;
+  padding-top: 8%;
 `
 
 const Content = styled.div`
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   max-width: 600px;
 `
@@ -72,6 +77,7 @@ const FirstContentBox = styled.div`
   backdrop-filter: blur(24px);
   line-height: 40px;
   margin-bottom: 10px;
+  border-radius: 22px;
 
   @media ${deviceBreakPoints.mobile} {
     padding: 20px;
@@ -88,6 +94,7 @@ const SecondContentBox = styled.div`
   backdrop-filter: blur(24px);
   padding: 2vh 3vw;
   line-height: 30px;
+  border-radius: 22px;
 `
 
 const TagLine = styled.h2`
@@ -109,10 +116,29 @@ const Title = styled.h1`
   margin-top: 10px;
   font-weight: 500;
 `
-const Date = styled.h1`
+const SurTitle1 = styled.h1`
   color: ${({ theme }) => theme.palette2};
-  font-size: 30px;
+  font-size: 42rpx;
   font-weight: 500;
+  margin: 0;
+`
+
+const SurTitle2 = styled.h1`
+  color: ${({ theme }) => theme.textSecondary};
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0;
+`
+
+const SubTitle = styled.div`
+  display: inline-block;
+  padding: 0px 16px;
+  background: ${({ theme }) => theme.palette2};
+  border-radius: 12px;
+
+  @media ${deviceBreakPoints.mobile} {
+    margin-top: 20px;
+  }
 `
 
 const ActionLink = styled.a`
@@ -123,10 +149,27 @@ const ActionLink = styled.a`
 const ActionButton = styled.div`
   padding: 20px;
   text-align: center;
-  background-color: ${({ theme }) => theme.palette3};
+  background-color: white;
+  color: black;
+  font-weight: 500;
+  border-radius: 100px;
+  margin-top: 20px;
+  font-size: 18px;
 
   &:hover {
-    background-color: ${({ theme }) => theme.palette2};
+    background-color: ${({ theme }) => theme.palette1};
     cursor: pointer;
   }
+`
+
+const CryptoXRIllustration = styled.div`
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  background-image: url(${cryptoXRIllustration});
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 400px;
+  transform: scaleX(-1);
 `

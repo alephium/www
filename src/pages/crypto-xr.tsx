@@ -6,7 +6,6 @@ import { hackathonTheme, lightTheme } from '../styles/themes'
 
 import Seo from '../components/Seo'
 import HackathonLandingSection from '../components/pages/hackathon/HackathonLandingSection'
-import SectionDivider from '../components/SectionDivider'
 import HackathonInfoSection, {
   HackathonInfoSectionContentType
 } from '../components/pages/hackathon/HackathonInfoSection'
@@ -16,10 +15,11 @@ import GettingStartedSection, {
 } from '../components/pages/hackathon/GettingStartedSection'
 import NavigationMenu from '../components/NavigationMenu'
 import Footer from '../components/Footer'
+import HackathonSectionContainer from '../components/pages/hackathon/HackathonSectionContainer'
 
 interface HackathonPageProps extends PageProps {
   data: {
-    hackathon: {
+    cryptoXR: {
       nodes: {
         frontmatter: {
           hackathonInfo: HackathonInfoSectionContentType
@@ -32,7 +32,7 @@ interface HackathonPageProps extends PageProps {
 }
 
 const IndexPage = (props: HackathonPageProps) => {
-  const pageContent = props.data.hackathon.nodes[0].frontmatter
+  const pageContent = props.data.cryptoXR.nodes[0].frontmatter
 
   return (
     <>
@@ -42,17 +42,11 @@ const IndexPage = (props: HackathonPageProps) => {
           <GlobalStyle />
           <NavigationMenuStyled />
           <HackathonLandingSection />
-          <SectionDivider />
-          <HackathonInfoSection content={pageContent.hackathonInfo} />
-          <SectionDivider />
-          <HackathonJudgingSection />
-          <SectionDivider />
-          <GettingStartedSection
-            content={{ ...pageContent.gettingStarted, html: props.data.hackathon.nodes[0].html }}
-          />
+          <HackathonSectionContainer>
+            <HackathonInfoSection content={pageContent.hackathonInfo} />
+            <HackathonJudgingSection />
+          </HackathonSectionContainer>
         </Wrapper>
-      </ThemeProvider>
-      <ThemeProvider theme={lightTheme}>
         <Footer />
       </ThemeProvider>
     </>
@@ -85,23 +79,23 @@ const Wrapper = styled.div`
   * {
     box-sizing: border-box;
   }
-  font-size: 18px; // Slighty increase base font size for marketing content
+  font-size: 16px; // Slighty increase base font size for marketing content
   line-height: 24px;
 
   a {
-    color: ${({ theme }) => theme.palette1};
+    color: ${({ theme }) => theme.palette2};
   }
 
   h3 {
-    font-size: 23px;
+    font-size: 32px;
     font-weight: 500;
     line-height: 1.4;
   }
 
   h4 {
-    margin-top: 30px;
-    margin-bottom: 5px;
-    font-size: 20px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 28px;
     font-weight: 500;
   }
 
@@ -120,7 +114,7 @@ const Wrapper = styled.div`
 
 export const pageQuery = graphql`
   query {
-    hackathon: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/hackathon.md/" } }) {
+    cryptoXR: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/cryptoXR.md/" } }) {
       nodes {
         frontmatter {
           headerLandingSection {

@@ -60,10 +60,10 @@ export const hackathonTheme: DefaultTheme = {
   textSecondary: 'var(--color-grey-200)',
   textTertiary: 'var(--color-grey-300)',
 
-  bgPrimary: 'var(--color-grey-700)',
-  bgSecondary: 'var(--color-grey-800)',
-  bgTertiary: 'var(--color-grey-900)',
-  bgSurface: 'var(--color-grey-700)',
+  bgPrimary: 'var(--color-grey-800)',
+  bgSecondary: 'var(--color-grey-850)',
+  bgTertiary: 'var(--color-grey-950)',
+  bgSurface: 'var(--color-grey-800)',
 
   borderPrimary: 'var(--color-grey-700)',
 
@@ -72,7 +72,7 @@ export const hackathonTheme: DefaultTheme = {
 
   separator: 'var(--color-grey-800)',
 
-  palette1: '#3fe9ff',
+  palette1: '#35d0e7',
   palette2: '#FF9C2B',
-  palette3: '#f83792'
+  palette3: '#b73df9'
 }
