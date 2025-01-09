@@ -34,6 +34,9 @@ const TeamMemberContainer = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
+  border: 1px solid ${({ theme }) => theme.borderPrimary};
+  padding: 20px;
+  border-radius: 22px;
 `
 
 const TeamMemberName = styled(SimpleLink)`

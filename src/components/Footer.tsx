@@ -10,8 +10,8 @@ import Column from './Columns/Column'
 import ModalTeam from './ModalTeam'
 import ModalContact from './ModalContact'
 
-import Logo from '../images/svgs/logo.svg'
 import { graphql, useStaticQuery } from 'gatsby'
+import AlephiumLogo from './AlephiumLogo'
 
 export interface FooterContentType {
   footer: {
@@ -35,6 +35,7 @@ const Footer = ({ className }: FooterProps) => {
   const [isTeamModalOpen, setIsTeamModalOpen] = useState(false)
   const [isContactModalOpen, setIsContactModalOpen] = useState(false)
   const data = useStaticQuery<FooterContentType>(footerQuery)
+  const theme = useTheme()
 
   const content = data.footer.nodes[0].frontmatter
 
@@ -46,7 +47,7 @@ const Footer = ({ className }: FooterProps) => {
     <div className={className}>
       <PageSectionContainerStyled>
         <LogosSection>
-          <LogoStyled />
+          <LogoStyled gradientIndex={0} fill={theme.textTertiary} />
         </LogosSection>
         <Separator />
         <FooterColumnsSection gap="var(--spacing-4)">
@@ -111,7 +112,7 @@ export const footerQuery = graphql`
 
 export default styled(Footer)`
   padding: var(--spacing-12) 0;
-  background-color: ${({ theme }) => theme.bgTertiary};
+  background-color: ${({ theme }) => theme.bgPrimary};
   color: ${({ theme }) => theme.textPrimary};
   font-size: var(--fontSize-18);
   border-top: 1px solid ${({ theme }) => theme.separator};
@@ -120,6 +121,7 @@ export default styled(Footer)`
 const LogosSection = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 `
 
 const Separator = styled.div`
@@ -165,14 +167,7 @@ const PageSectionContainerStyled = styled(PageSectionContainer)`
   }
 `
 
-const LogoStyled = styled(Logo)`
-  max-width: var(--width-82);
-
-  .dark {
-    fill: var(--color-logo-black-dark);
-  }
-
-  .light {
-    fill: var(--color-logo-black-light);
-  }
+const LogoStyled = styled(AlephiumLogo)`
+  height: auto;
+  max-width: 60px;
 `
