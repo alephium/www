@@ -134,44 +134,6 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
         </ul>
       </MainPrizesContainer>
 
-      <h4>Evaluation Criteria</h4>
-      <Paragraph>
-        Projects will be judged on a comprehensive set of criteria to ensure fairness and reward excellence:
-      </Paragraph>
-
-      <CriteriumList>
-        <CriteriumCard>
-          <h4>Functionality (30%)</h4>
-          <Paragraph>
-            Assessment of the project’s technical implementation, performance, and the effectiveness of its features.
-          </Paragraph>
-        </CriteriumCard>
-        <CriteriumCard>
-          <h4>Innovation (25%)</h4>
-          <Paragraph>Evaluation of originality and creativity in the project’s concept and execution.</Paragraph>
-        </CriteriumCard>
-        <CriteriumCard>
-          <h4>Design and User Experience (UI/UX) (20%) </h4>
-          <Paragraph>
-            Examination of the design aesthetics, usability, and overall user-friendliness of the application.
-          </Paragraph>
-        </CriteriumCard>
-        <CriteriumCard>
-          <h4>Potential Impact (15%)</h4>
-          <Paragraph>
-            Consideration of the project’s real-world applicability and its potential to address relevant challenges or
-            needs.
-          </Paragraph>
-        </CriteriumCard>
-        <CriteriumCard>
-          <h4>Extensibility (10%)</h4>
-          <Paragraph>
-            Review of the project’s scalability and potential for future development or integration within the
-            ecosystem.
-          </Paragraph>
-        </CriteriumCard>
-      </CriteriumList>
-
       <h4>Special prizes</h4>
       <Paragraph>
         In addition to the main prizes, teams have additional opportunities to be recognized and rewarded with{' '}
@@ -202,39 +164,41 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
         </i>
       </Paragraph>
 
-      <h4>Prizes for Solo-participants</h4>
-      <Paragraph>
-        Total Prize Pool: <Badge>€3,000</Badge>
-      </Paragraph>
-      <Paragraph>
-        Solo developers, this is your time to shine! We’ve curated a variety of challenges tailored to individual
-        contributors, offering flexible opportunities to showcase your skills and creativity. These challenges aim to
-        empower solo hackers to dive into Alephium’s ecosystem, solve puzzles, and create tools that benefit the broader
-        developer community. Here are some examples of potential challenges and rewards (final challenges to be
-        defined):
-      </Paragraph>
-      <ul>
-        <li>
-          <b>
-            Port a Simple Solidity Contract <Badge>Up to €500</Badge>
-          </b>{' '}
-          – Select from a predefined list of Solidity contracts and port one to Alephium’s platform. This challenge
-          tests your ability to adapt smart contracts to a new blockchain environment.
-        </li>
-        <li>
-          <b>
-            Solve the Bounty Puzzle <Badge>€100 (based on complexity)</Badge>
-          </b>{' '}
-          – Recognizing projects with outstanding design, ease of use, and accessibility.
-        </li>
-        <li>
-          <b>
-            Build a Mini-Tool or Utility for Alephium Developers <Badge>Up to €500</Badge>
-          </b>{' '}
-          – Create a lightweight, functional tool to enhance the Alephium development experience. This could include
-          testing frameworks, debugging tools, or utilities that streamline development workflows.
-        </li>
-      </ul>
+      <H3 divider>Prizes for Solo-participants</H3>
+      <MainPrizesContainer>
+        <Paragraph>
+          Total Prize Pool: <Badge>€3,000</Badge>
+        </Paragraph>
+        <Paragraph>
+          Solo developers, this is your time to shine! We’ve curated a variety of challenges tailored to individual
+          contributors, offering flexible opportunities to showcase your skills and creativity. These challenges aim to
+          empower solo hackers to dive into Alephium’s ecosystem, solve puzzles, and create tools that benefit the
+          broader developer community. Here are some examples of potential challenges and rewards (final challenges to
+          be defined):
+        </Paragraph>
+        <ul>
+          <li>
+            <b>
+              Port a Simple Solidity Contract <Badge>Up to €500</Badge>
+            </b>{' '}
+            – Select from a predefined list of Solidity contracts and port one to Alephium’s platform. This challenge
+            tests your ability to adapt smart contracts to a new blockchain environment.
+          </li>
+          <li>
+            <b>
+              Solve the Bounty Puzzle <Badge>€100 (based on complexity)</Badge>
+            </b>{' '}
+            – Recognizing projects with outstanding design, ease of use, and accessibility.
+          </li>
+          <li>
+            <b>
+              Build a Mini-Tool or Utility for Alephium Developers <Badge>Up to €500</Badge>
+            </b>{' '}
+            – Create a lightweight, functional tool to enhance the Alephium development experience. This could include
+            testing frameworks, debugging tools, or utilities that streamline development workflows.
+          </li>
+        </ul>
+      </MainPrizesContainer>
       <Paragraph>
         Stay tuned for more challenges! If you have an idea for a challenge, propose it to us upon registration or in
         person during the onboarding session on Friday January, 31st.
@@ -403,9 +367,10 @@ const PrizeList = styled.div``
 
 const MainPrizesContainer = styled.div`
   font-size: 18px;
-  padding: 16px;
+  padding: 20px;
   background-color: ${({ theme }) => theme.bgPrimary};
-  border: 1px solid ${({ theme }) => theme.palette1};
+  border: 1px solid ${({ theme }) => theme.borderPrimary};
+  border-radius: 22px;
 
   h3 {
     margin: 0;
@@ -413,6 +378,7 @@ const MainPrizesContainer = styled.div`
 `
 
 const MainPrizesTitle = styled.h3`
+  font-size: 28px !important;
   margin-bottom: 16px;
 `
 
@@ -464,35 +430,11 @@ const PartnerDescription = styled.div`
   color: ${({ theme }) => theme.textPrimaryVariation};
 `
 
-const CriteriumList = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 20px;
-  padding-top: 20px;
-
-  @media ${deviceBreakPoints.mobile} {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-  }
-`
-
-const CriteriumCard = styled.div`
-  padding: var(--spacing-2) var(--spacing-3);
-  border: 1px solid ${({ theme }) => theme.borderPrimary};
-  border-radius: 22px;
-  background-color: ${({ theme }) => theme.bgSecondary};
-
-  h4 {
-    margin-top: 16px !important;
-    font-size: 23px !important;
-  }
-`
-
 const Badge = styled.div`
   display: inline;
   background: rgba(255, 255, 255, 0.1);
   padding: 2px 4px;
   border-radius: 6px;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  color: ${({ theme }) => theme.palette1};
 `
