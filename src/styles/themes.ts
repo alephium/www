@@ -72,7 +72,7 @@ export const hackathonTheme: DefaultTheme = {
 
   separator: 'var(--color-grey-800)',
 
-  palette1: '#35d0e7',
-  palette2: '#FF9C2B',
+  palette1: '#7afff1',
+  palette2: '#ffbe2b',
   palette3: '#b73df9'
 }

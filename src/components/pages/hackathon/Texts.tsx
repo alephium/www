@@ -8,6 +8,7 @@ export const Paragraph = styled.p`
 export const H3 = styled.h3<{ divider?: boolean }>`
   margin-top: var(--spacing-10);
   font-size: 32px !important;
+  color: ${({ theme }) => theme.palette1};
   line-height: 1.2;
   font-weight: 400;
 
