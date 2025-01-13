@@ -2,7 +2,7 @@ import styled, { ThemeProvider } from 'styled-components'
 import { graphql, PageProps } from 'gatsby'
 
 import GlobalStyle, { deviceBreakPoints } from '../styles/global-style'
-import { hackathonTheme, lightTheme } from '../styles/themes'
+import { hackathonTheme } from '../styles/themes'
 
 import Seo from '../components/Seo'
 import HackathonLandingSection from '../components/pages/hackathon/HackathonLandingSection'
@@ -10,9 +10,6 @@ import HackathonInfoSection, {
   HackathonInfoSectionContentType
 } from '../components/pages/hackathon/HackathonInfoSection'
 import HackathonJudgingSection from '../components/pages/hackathon/HackathonJudgingSection'
-import GettingStartedSection, {
-  GettingStartedSectionContentType
-} from '../components/pages/hackathon/GettingStartedSection'
 import NavigationMenu from '../components/NavigationMenu'
 import Footer from '../components/Footer'
 import HackathonSectionContainer from '../components/pages/hackathon/HackathonSectionContainer'
@@ -23,7 +20,6 @@ interface HackathonPageProps extends PageProps {
       nodes: {
         frontmatter: {
           hackathonInfo: HackathonInfoSectionContentType
-          gettingStarted: GettingStartedSectionContentType
         }
         html: string
       }[]

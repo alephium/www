@@ -238,7 +238,14 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
         </ScheduleItem>
       </ScheduleItems>
       <ScheduleItems>
-        <ScheduleItemsHeader>Saturday - 9:30 - 20:00</ScheduleItemsHeader>
+        <ScheduleItemsHeader>Saturday - 9:00 - 20:00</ScheduleItemsHeader>
+        <ScheduleItem>
+          <ScheduleItemDot />
+          <ScheduleItemText>
+            <h4>9:00</h4>
+            <p>Opening</p>
+          </ScheduleItemText>
+        </ScheduleItem>
         <ScheduleItem>
           <ScheduleItemDot />
           <ScheduleItemText>
@@ -256,6 +263,13 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
         <ScheduleItem>
           <ScheduleItemDot />
           <ScheduleItemText>
+            <h4>17:00</h4>
+            <p>Submission deadline</p>
+          </ScheduleItemText>
+        </ScheduleItem>
+        <ScheduleItem>
+          <ScheduleItemDot />
+          <ScheduleItemText>
             <h4>17:00-20:00</h4>
             <p>Review</p>
           </ScheduleItemText>
@@ -264,13 +278,6 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
           <ScheduleItemDot />
           <ScheduleItemText>
             <h4>20:00-20:30</h4>
-            <p>Submission deadline</p>
-          </ScheduleItemText>
-        </ScheduleItem>
-        <ScheduleItem>
-          <ScheduleItemDot />
-          <ScheduleItemText>
-            <h4>17:00</h4>
             <p>Winner announcement on the main stage</p>
           </ScheduleItemText>
         </ScheduleItem>
@@ -312,6 +319,10 @@ const TimeLinesWrapper = styled.div`
   display: flex;
   gap: 20px;
   align-items: flex-start;
+
+  @media ${deviceBreakPoints.mobile} {
+    flex-direction: column;
+  }
 `
 
 const ScheduleItems = styled.div`
