@@ -81,7 +81,7 @@ module.exports = {
           'connect-src':
             "'self' backend.mainnet.alephium.org api.github.com alephium.goatcounter.com https://prod.spline.design https://api.coingecko.com https://alph-richlist.vercel.app https://api.llama.fi https://translate.googleapis.com https://translate-pa.googleapis.com",
           'img-src':
-            "'self' https://prod.spline.design https://pbs.twimg.com/ https://assets.coingecko.com https://fonts.gstatic.com https://www.gstatic.com https://www.google.com https://translate.googleapis.com https://translate.google.com data: https://alephium.goatcounter.com blob: https://www2.alephium.org blob: https://www.alephium.org",
+            "'self' https://prod.spline.design https://pbs.twimg.com/ https://media.licdn.com https://assets.coingecko.com https://fonts.gstatic.com https://www.gstatic.com https://www.google.com https://translate.googleapis.com https://translate.google.com data: https://alephium.goatcounter.com blob: https://www2.alephium.org blob: https://www.alephium.org",
           'frame-ancestors': "'none'"
         }
       }
