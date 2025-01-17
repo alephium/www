@@ -31,7 +31,7 @@ const HackathonJudgingSection = () => (
           name="Nicolas Bacca"
           externalImageURL="https://media.licdn.com/dms/image/v2/C4E03AQE1GSYtGs8_bQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516239219540?e=1742428800&v=beta&t=FUmIxkz1nvuVImFnMj9y0jdyGS2cn4ry8tTLlKErXh8"
           role="Co-founder of Ledger and creator of BTChip, his work has been instrumental in shaping key technologies in the crypto space."
-          url="https://twitter.com/hongchao"
+          url="https://x.com/BTChip"
         />
       </PersonCard>
     </Jury>
