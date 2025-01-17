@@ -26,14 +26,6 @@ const HackathonJudgingSection = () => (
           url="https://twitter.com/hongchao"
         />
       </PersonCard>
-      <PersonCard>
-        <TeamMember
-          name="Rabbin des Bois"
-          externalImageURL="https://pbs.twimg.com/profile_images/1591872832400756747/k8lolpYx_400x400.jpg"
-          role="A renowned French writer, hacker, and YouTuber, known for his insightful content on cybersecurity and technology."
-          url="https://x.com/rabbindesbois"
-        />
-      </PersonCard>
     </Jury>
     <Paragraph>
       With their diverse backgrounds and expertise, our jury is well-equipped to evaluate the creativity, functionality,
