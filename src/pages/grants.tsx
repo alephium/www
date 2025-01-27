@@ -2,18 +2,18 @@ import { useStaticQuery } from 'gatsby'
 import { useEffect } from 'react'
 import { FooterContentType, footerQuery } from '../components/Footer'
 
-const GrandsPage = () => {
+const GrantsPage = () => {
   const data = useStaticQuery<FooterContentType>(footerQuery)
   const pageContent = data.footer.nodes[0].frontmatter
-  const grandsUrl = pageContent.columns
+  const grantsUrl = pageContent.columns
     .find(({ title }) => title === 'Explore')
     ?.links.find(({ text }) => text === 'Reward & grant program')?.url
 
   useEffect(() => {
-    if (grandsUrl) window.location.replace(grandsUrl)
-  }, [grandsUrl])
+    if (grantsUrl) window.location.replace(grantsUrl)
+  }, [grantsUrl])
 
   return null
 }
 
-export default GrandsPage
+export default GrantsPage
