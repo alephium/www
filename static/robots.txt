@@ -3,3 +3,6 @@ Disallow: /cmc-application-proof.txt
 
 User-agent: *
 Disallow: /banxa-callback
+
+User-agent: *
+Disallow: /onramp-callback
