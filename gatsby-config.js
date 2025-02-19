@@ -1,4 +1,5 @@
 module.exports = {
+  graphqlTypegen: true,
   siteMetadata: {
     siteUrl: 'https://alephium.org',
     title: 'Alephium: A new paradigm',

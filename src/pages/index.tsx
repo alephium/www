@@ -13,13 +13,12 @@ import PageSectionNumbers, { PageSectionNumbersContentType } from '../components
 import PageSectionMilestones, { PageSectionMilestonesContentType } from '../components/PageSectionMilestones'
 import PageSectionTodoList, { PageSectionTodoListContentType } from '../components/PageSectionTodoList'
 import PageSectionFollowUs, { PageSectionFollowUsContentType } from '../components/PageSectionFollowUs'
-import Footer, { FooterContentType } from '../components/Footer'
+import Footer from '../components/Footer'
 import PageSectionShop, { PageSectionShopContentType } from '../components/PageSectionShop'
 import SectionDivider from '../components/SectionDivider'
 import PageSectionWallets, { PageSectionWalletsContentType } from '../components/PageSectionWallets'
 import NavigationMenu from '../components/NavigationMenu'
 import TopBanner, { TopBannerContentType } from '../components/TopBanner'
-import { useEffect } from 'react'
 
 interface IndexPageProps extends PageProps {
   data: {
@@ -38,11 +37,6 @@ interface IndexPageProps extends PageProps {
           shopSection: PageSectionShopContentType
           followUsSection: PageSectionFollowUsContentType
         }
-      }[]
-    }
-    footer: {
-      nodes: {
-        frontmatter: FooterContentType
       }[]
     }
   }
@@ -92,7 +86,7 @@ const SiteWrapper = styled.main``
 const ContentContainer = styled.div``
 
 export const pageQuery = graphql`
-  query {
+  query IndexPage {
     homepage: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/homepage.md/" } }) {
       nodes {
         frontmatter {

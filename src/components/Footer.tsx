@@ -13,19 +13,6 @@ import ModalContact from './ModalContact'
 import { graphql, useStaticQuery } from 'gatsby'
 import AlephiumLogo from './AlephiumLogo'
 
-export interface FooterContentType {
-  footer: {
-    nodes: {
-      frontmatter: {
-        columns: {
-          title: string
-          links: SimpleLinkProps[]
-        }[]
-      }
-    }[]
-  }
-}
-
 interface FooterProps {
   openPrivacyPolicyModal?: boolean
   className?: string
@@ -34,14 +21,10 @@ interface FooterProps {
 const Footer = ({ className }: FooterProps) => {
   const [isTeamModalOpen, setIsTeamModalOpen] = useState(false)
   const [isContactModalOpen, setIsContactModalOpen] = useState(false)
-  const data = useStaticQuery<FooterContentType>(footerQuery)
+  const data = useStaticQuery<Queries.FooterSectionQuery>(footerQuery)
   const theme = useTheme()
 
-  const content = data.footer.nodes[0].frontmatter
-
-  const columnsContent = content.columns
-  columnsContent[2].links[0] = { ...columnsContent[2].links[0], openModal: setIsTeamModalOpen }
-  columnsContent[2].links[2] = { ...columnsContent[2].links[2], openModal: setIsContactModalOpen }
+  const columnsContent = data.footer.nodes[0].frontmatter?.columns
 
   return (
     <div className={className}>
@@ -51,9 +34,24 @@ const Footer = ({ className }: FooterProps) => {
         </LogosSection>
         <Separator />
         <FooterColumnsSection gap="var(--spacing-4)">
-          {columnsContent.map((column) => (
-            <Column key={column.title}>
-              <FooterColumn {...column} />
+          {columnsContent?.map((column, columnIndex) => (
+            <Column key={column?.title}>
+              <FooterColumn
+                title={column?.title ?? ''}
+                links={
+                  column?.links?.map((link, linkIndex) => ({
+                    text: link?.text ?? '',
+                    url: link?.url ?? '',
+                    newTab: link?.newTab ?? false,
+                    openModal:
+                      columnIndex === 2 && linkIndex === 0
+                        ? setIsTeamModalOpen
+                        : columnIndex === 2 && linkIndex === 2
+                        ? setIsContactModalOpen
+                        : undefined
+                  })) ?? []
+                }
+              />
             </Column>
           ))}
         </FooterColumnsSection>
@@ -92,7 +90,7 @@ let FooterColumn: FC<FooterColumnProps> = ({ className, title, links }) => {
 }
 
 export const footerQuery = graphql`
-  query {
+  query FooterSection {
     footer: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/footer.md/" } }) {
       nodes {
         frontmatter {
