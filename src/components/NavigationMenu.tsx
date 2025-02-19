@@ -1,5 +1,5 @@
 import styled, { css, useTheme } from 'styled-components'
-import { Link } from 'gatsby'
+import { graphql, Link, useStaticQuery } from 'gatsby'
 
 import { deviceBreakPoints } from '../styles/global-style'
 
@@ -66,35 +66,33 @@ const NavigationMenu = ({ topOffset, className }: NavigationMenuProps) => {
 
 const NavigationItems = ({ className }: { className?: string }) => {
   const theme = useTheme()
+  const data = useStaticQuery<Queries.NavigationMenuQuery>(navigationMenuQuery)
 
   return (
     <div className={className}>
-      <NavigationDrawer
-        title="Essentials"
-        items={[
-          { title: 'Wallets', url: '#wallets' },
-          { title: 'Bridge', url: 'https://bridge.alephium.org/', isNew: true, isExternal: true },
-          { title: 'Explorer', url: 'https://explorer.alephium.org/', isExternal: true }
-        ]}
-      />
-      <NavLink className="nav-item" url="#ecosystem" trackingName="main-nav:Ecosystem">
-        Ecosystem
-      </NavLink>
-      <NavLink className="nav-item" url="#community" trackingName="main-nav:community">
-        Community
-      </NavLink>
-      <NavLink
-        className="nav-item"
-        url="https://docs.alephium.org/dapps/"
-        newTab
-        trackingName="main-nav:build-dapp-link"
-      >
-        Build a dApp
-      </NavLink>
-      <NavigationDrawer
-        Icon={<RiTranslate2 color={theme.textSecondary} size={20} />}
-        Content={<TranslateComponent />}
-      />
+      {data.navmenu.nodes[0]?.frontmatter?.menuItems?.map(
+        (node) =>
+          node?.title &&
+          node?.items && (
+            <NavigationDrawer key={node?.title} title={node?.title}>
+              {node?.items?.map(
+                (item, index) =>
+                  item?.title && (
+                    <DrawerItem key={item.title}>
+                      {item?.link ? (
+                        <NavLink key={index} url={item.link} text={item.title} newTab={!item.link.startsWith('/')} />
+                      ) : (
+                        <NavLink key={index} text={item.title} />
+                      )}
+                    </DrawerItem>
+                  )
+              )}
+            </NavigationDrawer>
+          )
+      )}
+      <NavigationDrawer Icon={<RiTranslate2 color={theme.textSecondary} size={20} />}>
+        <TranslateComponent />
+      </NavigationDrawer>
 
       <GithubButton
         name="Github"
@@ -125,16 +123,14 @@ const MobileMenu = () => {
     </MobileMenuStyled>
   )
 }
-
 interface NavigationDrawerProps {
   title?: string
   Icon?: ReactNode
-  items?: { title: string; url: string; isNew?: boolean; isExternal?: boolean }[]
-  Content?: ReactNode
+  children?: ReactNode
   className?: string
 }
 
-const NavigationDrawer = ({ title, Icon, items, Content, className }: NavigationDrawerProps) => {
+const NavigationDrawer = ({ title, Icon, className, children }: NavigationDrawerProps) => {
   const [isOpen, setIsOpen] = useState(false)
   const ref = useRef(null)
 
@@ -147,29 +143,13 @@ const NavigationDrawer = ({ title, Icon, items, Content, className }: Navigation
   return (
     <DrawerWrapper className={className} ref={ref}>
       <DrawerTitleWrapper onClick={handleTitleClick}>
-        {items && items.findIndex((i) => i.isNew) !== -1 && (
-          <NewItemBubble>
-            <NewItemBubbleEcho
-              initial={{ scale: 1, opacity: 0.7 }}
-              animate={{ scale: 3, opacity: 0 }}
-              transition={{ repeat: Infinity, duration: 2, repeatDelay: 1 }}
-            />
-          </NewItemBubble>
-        )}
         {title ? <DrawerTitle>{title}</DrawerTitle> : Icon ? Icon : null}
         <DrawerCarretWrapper>{isOpen ? <RiArrowDropUpLine /> : <RiArrowDropDownLine />}</DrawerCarretWrapper>
       </DrawerTitleWrapper>
       <AnimatePresence>
         {isOpen && (
           <Drawer initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-            {items
-              ? items.map((item, index) => (
-                  <DrawerItem key={item.title}>
-                    <NavLink key={index} url={item.url} text={item.title} newTab={item.isExternal} />
-                    {item.isNew && <NewBubble>New</NewBubble>}
-                  </DrawerItem>
-                ))
-              : Content || null}
+            {children}
           </Drawer>
         )}
       </AnimatePresence>
@@ -178,6 +158,24 @@ const NavigationDrawer = ({ title, Icon, items, Content, className }: Navigation
 }
 
 export default NavigationMenu
+
+export const navigationMenuQuery = graphql`
+  query NavigationMenu {
+    navmenu: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/navigation-menu.md/" } }) {
+      nodes {
+        frontmatter {
+          menuItems {
+            title
+            items {
+              title
+              link
+            }
+          }
+        }
+      }
+    }
+  }
+`
 
 const NavigationWrapper = styled.div`
   position: fixed;
@@ -348,25 +346,6 @@ const DrawerTitleWrapper = styled.div`
   }
 `
 
-const NewItemBubble = styled.span`
-  position: relative;
-  background-color: ${({ theme }) => theme.palette1};
-  height: 8px;
-  width: 8px;
-  margin-right: 8px;
-  margin-top: 2px;
-  border-radius: 50%;
-`
-
-const NewItemBubbleEcho = styled(motion.div)`
-  scale: 1;
-  position: absolute;
-  background-color: ${({ theme }) => theme.palette1};
-  height: 8px;
-  width: 8px;
-  border-radius: 50%;
-`
-
 const DrawerWrapper = styled.div`
   position: relative;
 `
@@ -394,14 +373,6 @@ const Drawer = styled(motion.div)`
     top: 100%;
     min-width: 140px;
   }
-`
-
-const NewBubble = styled.div`
-  padding: 3px 6px;
-  color: white;
-  background-color: ${({ theme }) => theme.palette1};
-  border-radius: 20px;
-  font-size: var(--fontSize-14);
 `
 
 const DrawerItem = styled.div`

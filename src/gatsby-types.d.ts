@@ -1426,6 +1426,7 @@ type MarkdownRemarkFilterListInput = {
 };
 
 type MarkdownRemarkFrontmatter = {
+  readonly button: Maybe<MarkdownRemarkFrontmatterButton>;
   readonly columns: Maybe<ReadonlyArray<Maybe<MarkdownRemarkFrontmatterColumns>>>;
   readonly ecosystemSection: Maybe<MarkdownRemarkFrontmatterEcosystemSection>;
   readonly followUsSection: Maybe<MarkdownRemarkFrontmatterFollowUsSection>;
@@ -1434,6 +1435,7 @@ type MarkdownRemarkFrontmatter = {
   readonly headerLandingSection: Maybe<MarkdownRemarkFrontmatterHeaderLandingSection>;
   readonly headerSection: Maybe<MarkdownRemarkFrontmatterHeaderSection>;
   readonly introSection: Maybe<MarkdownRemarkFrontmatterIntroSection>;
+  readonly menuItems: Maybe<ReadonlyArray<Maybe<MarkdownRemarkFrontmatterMenuItems>>>;
   readonly milestonesSection: Maybe<MarkdownRemarkFrontmatterMilestonesSection>;
   readonly numbersSection: Maybe<MarkdownRemarkFrontmatterNumbersSection>;
   readonly rulesAndJudging: Maybe<MarkdownRemarkFrontmatterRulesAndJudging>;
@@ -1443,6 +1445,22 @@ type MarkdownRemarkFrontmatter = {
   readonly todoListSection: Maybe<MarkdownRemarkFrontmatterTodoListSection>;
   readonly topBanner: Maybe<MarkdownRemarkFrontmatterTopBanner>;
   readonly walletsSection: Maybe<MarkdownRemarkFrontmatterWalletsSection>;
+};
+
+type MarkdownRemarkFrontmatterButton = {
+  readonly title: Maybe<Scalars['String']>;
+};
+
+type MarkdownRemarkFrontmatterButtonFieldSelector = {
+  readonly title: InputMaybe<FieldSelectorEnum>;
+};
+
+type MarkdownRemarkFrontmatterButtonFilterInput = {
+  readonly title: InputMaybe<StringQueryOperatorInput>;
+};
+
+type MarkdownRemarkFrontmatterButtonSortInput = {
+  readonly title: InputMaybe<SortOrderEnum>;
 };
 
 type MarkdownRemarkFrontmatterColumns = {
@@ -1582,6 +1600,7 @@ type MarkdownRemarkFrontmatterEcosystemSectionSubsectionsSortInput = {
 };
 
 type MarkdownRemarkFrontmatterFieldSelector = {
+  readonly button: InputMaybe<MarkdownRemarkFrontmatterButtonFieldSelector>;
   readonly columns: InputMaybe<MarkdownRemarkFrontmatterColumnsFieldSelector>;
   readonly ecosystemSection: InputMaybe<MarkdownRemarkFrontmatterEcosystemSectionFieldSelector>;
   readonly followUsSection: InputMaybe<MarkdownRemarkFrontmatterFollowUsSectionFieldSelector>;
@@ -1590,6 +1609,7 @@ type MarkdownRemarkFrontmatterFieldSelector = {
   readonly headerLandingSection: InputMaybe<MarkdownRemarkFrontmatterHeaderLandingSectionFieldSelector>;
   readonly headerSection: InputMaybe<MarkdownRemarkFrontmatterHeaderSectionFieldSelector>;
   readonly introSection: InputMaybe<MarkdownRemarkFrontmatterIntroSectionFieldSelector>;
+  readonly menuItems: InputMaybe<MarkdownRemarkFrontmatterMenuItemsFieldSelector>;
   readonly milestonesSection: InputMaybe<MarkdownRemarkFrontmatterMilestonesSectionFieldSelector>;
   readonly numbersSection: InputMaybe<MarkdownRemarkFrontmatterNumbersSectionFieldSelector>;
   readonly rulesAndJudging: InputMaybe<MarkdownRemarkFrontmatterRulesAndJudgingFieldSelector>;
@@ -1602,6 +1622,7 @@ type MarkdownRemarkFrontmatterFieldSelector = {
 };
 
 type MarkdownRemarkFrontmatterFilterInput = {
+  readonly button: InputMaybe<MarkdownRemarkFrontmatterButtonFilterInput>;
   readonly columns: InputMaybe<MarkdownRemarkFrontmatterColumnsFilterListInput>;
   readonly ecosystemSection: InputMaybe<MarkdownRemarkFrontmatterEcosystemSectionFilterInput>;
   readonly followUsSection: InputMaybe<MarkdownRemarkFrontmatterFollowUsSectionFilterInput>;
@@ -1610,6 +1631,7 @@ type MarkdownRemarkFrontmatterFilterInput = {
   readonly headerLandingSection: InputMaybe<MarkdownRemarkFrontmatterHeaderLandingSectionFilterInput>;
   readonly headerSection: InputMaybe<MarkdownRemarkFrontmatterHeaderSectionFilterInput>;
   readonly introSection: InputMaybe<MarkdownRemarkFrontmatterIntroSectionFilterInput>;
+  readonly menuItems: InputMaybe<MarkdownRemarkFrontmatterMenuItemsFilterListInput>;
   readonly milestonesSection: InputMaybe<MarkdownRemarkFrontmatterMilestonesSectionFilterInput>;
   readonly numbersSection: InputMaybe<MarkdownRemarkFrontmatterNumbersSectionFilterInput>;
   readonly rulesAndJudging: InputMaybe<MarkdownRemarkFrontmatterRulesAndJudgingFilterInput>;
@@ -2101,6 +2123,54 @@ type MarkdownRemarkFrontmatterIntroSectionSortInput = {
   readonly title: InputMaybe<SortOrderEnum>;
 };
 
+type MarkdownRemarkFrontmatterMenuItems = {
+  readonly items: Maybe<ReadonlyArray<Maybe<MarkdownRemarkFrontmatterMenuItemsItems>>>;
+  readonly title: Maybe<Scalars['String']>;
+};
+
+type MarkdownRemarkFrontmatterMenuItemsFieldSelector = {
+  readonly items: InputMaybe<MarkdownRemarkFrontmatterMenuItemsItemsFieldSelector>;
+  readonly title: InputMaybe<FieldSelectorEnum>;
+};
+
+type MarkdownRemarkFrontmatterMenuItemsFilterInput = {
+  readonly items: InputMaybe<MarkdownRemarkFrontmatterMenuItemsItemsFilterListInput>;
+  readonly title: InputMaybe<StringQueryOperatorInput>;
+};
+
+type MarkdownRemarkFrontmatterMenuItemsFilterListInput = {
+  readonly elemMatch: InputMaybe<MarkdownRemarkFrontmatterMenuItemsFilterInput>;
+};
+
+type MarkdownRemarkFrontmatterMenuItemsItems = {
+  readonly link: Maybe<Scalars['String']>;
+  readonly title: Maybe<Scalars['String']>;
+};
+
+type MarkdownRemarkFrontmatterMenuItemsItemsFieldSelector = {
+  readonly link: InputMaybe<FieldSelectorEnum>;
+  readonly title: InputMaybe<FieldSelectorEnum>;
+};
+
+type MarkdownRemarkFrontmatterMenuItemsItemsFilterInput = {
+  readonly link: InputMaybe<StringQueryOperatorInput>;
+  readonly title: InputMaybe<StringQueryOperatorInput>;
+};
+
+type MarkdownRemarkFrontmatterMenuItemsItemsFilterListInput = {
+  readonly elemMatch: InputMaybe<MarkdownRemarkFrontmatterMenuItemsItemsFilterInput>;
+};
+
+type MarkdownRemarkFrontmatterMenuItemsItemsSortInput = {
+  readonly link: InputMaybe<SortOrderEnum>;
+  readonly title: InputMaybe<SortOrderEnum>;
+};
+
+type MarkdownRemarkFrontmatterMenuItemsSortInput = {
+  readonly items: InputMaybe<MarkdownRemarkFrontmatterMenuItemsItemsSortInput>;
+  readonly title: InputMaybe<SortOrderEnum>;
+};
+
 type MarkdownRemarkFrontmatterMilestonesSection = {
   readonly subtitle: Maybe<Scalars['String']>;
   readonly timelines: Maybe<ReadonlyArray<Maybe<MarkdownRemarkFrontmatterMilestonesSectionTimelines>>>;
@@ -2434,6 +2504,7 @@ type MarkdownRemarkFrontmatterShopSectionSortInput = {
 };
 
 type MarkdownRemarkFrontmatterSortInput = {
+  readonly button: InputMaybe<MarkdownRemarkFrontmatterButtonSortInput>;
   readonly columns: InputMaybe<MarkdownRemarkFrontmatterColumnsSortInput>;
   readonly ecosystemSection: InputMaybe<MarkdownRemarkFrontmatterEcosystemSectionSortInput>;
   readonly followUsSection: InputMaybe<MarkdownRemarkFrontmatterFollowUsSectionSortInput>;
@@ -2442,6 +2513,7 @@ type MarkdownRemarkFrontmatterSortInput = {
   readonly headerLandingSection: InputMaybe<MarkdownRemarkFrontmatterHeaderLandingSectionSortInput>;
   readonly headerSection: InputMaybe<MarkdownRemarkFrontmatterHeaderSectionSortInput>;
   readonly introSection: InputMaybe<MarkdownRemarkFrontmatterIntroSectionSortInput>;
+  readonly menuItems: InputMaybe<MarkdownRemarkFrontmatterMenuItemsSortInput>;
   readonly milestonesSection: InputMaybe<MarkdownRemarkFrontmatterMilestonesSectionSortInput>;
   readonly numbersSection: InputMaybe<MarkdownRemarkFrontmatterNumbersSectionSortInput>;
   readonly rulesAndJudging: InputMaybe<MarkdownRemarkFrontmatterRulesAndJudgingSortInput>;
@@ -4332,6 +4404,11 @@ type IndexPageQueryVariables = Exact<{ [key: string]: never; }>;
 
 
 type IndexPageQuery = { readonly homepage: { readonly nodes: ReadonlyArray<{ readonly frontmatter: { readonly topBanner: { readonly text: string | null, readonly linkText: string | null, readonly url: string | null, readonly color: string | null } | null, readonly headerSection: { readonly dark: { readonly title: string | null, readonly subtitle: string | null } | null, readonly light: { readonly title: string | null, readonly subtitle: string | null } | null } | null, readonly introSection: { readonly title: string | null, readonly subtitle: string | null, readonly cards: ReadonlyArray<{ readonly title: string | null, readonly description: string | null, readonly image: { readonly publicURL: string | null } | null, readonly link: { readonly url: string | null, readonly newTab: boolean | null } | null } | null> | null } | null, readonly ecosystemSection: { readonly title: string | null, readonly subtitle: string | null, readonly subsections: ReadonlyArray<{ readonly title: string | null, readonly description: string | null, readonly image: { readonly publicURL: string | null } | null, readonly items: ReadonlyArray<{ readonly title: string | null, readonly url: string | null, readonly logo: { readonly publicURL: string | null } | null } | null> | null } | null> | null } | null, readonly technologySection: { readonly title: string | null, readonly subtitle: string | null, readonly blockFlowSection: { readonly title: string | null, readonly description: string | null, readonly links: ReadonlyArray<{ readonly text: string | null, readonly url: string | null, readonly newTab: boolean | null } | null> | null } | null, readonly smartContractSection: { readonly title: string | null, readonly description: string | null, readonly links: ReadonlyArray<{ readonly text: string | null, readonly url: string | null, readonly newTab: boolean | null } | null> | null } | null, readonly polwSection: { readonly title: string | null, readonly description: string | null, readonly links: ReadonlyArray<{ readonly text: string | null, readonly url: string | null, readonly newTab: boolean | null } | null> | null } | null, readonly vmsSection: { readonly title: string | null, readonly description: string | null, readonly links: ReadonlyArray<{ readonly text: string | null } | null> | null } | null } | null, readonly numbersSection: { readonly title: string | null, readonly subtitle: string | null } | null, readonly walletsSection: { readonly title: string | null, readonly subtitle: string | null, readonly description: string | null, readonly wallets: ReadonlyArray<{ readonly title: string | null, readonly description: string | null, readonly color: string | null, readonly screenshot: { readonly publicURL: string | null } | null, readonly actions: ReadonlyArray<{ readonly title: string | null, readonly link: string | null } | null> | null } | null> | null } | null, readonly milestonesSection: { readonly title: string | null, readonly subtitle: string | null, readonly timelines: ReadonlyArray<{ readonly title: string | null, readonly years: ReadonlyArray<{ readonly year: number | null, readonly entries: ReadonlyArray<{ readonly row: number | null, readonly text: string | null, readonly when: string | null, readonly content: ReadonlyArray<string | null> | null, readonly isMajor: boolean | null } | null> | null } | null> | null } | null> | null } | null, readonly todoListSection: { readonly title: string | null, readonly subtitle: string | null, readonly lists: ReadonlyArray<{ readonly title: string | null, readonly items: ReadonlyArray<{ readonly text: string | null, readonly description: string | null } | null> | null } | null> | null } | null, readonly shopSection: { readonly title: string | null, readonly subtitle: string | null, readonly description: string | null, readonly link: { readonly text: string | null, readonly url: string | null } | null } | null, readonly followUsSection: { readonly title: string | null, readonly subtitle: string | null, readonly description: string | null, readonly socialMediaLinks: ReadonlyArray<{ readonly name: string | null, readonly url: string | null } | null> | null } | null } | null }> } };
+
+type NavigationMenuQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type NavigationMenuQuery = { readonly navmenu: { readonly nodes: ReadonlyArray<{ readonly frontmatter: { readonly menuItems: ReadonlyArray<{ readonly title: string | null, readonly items: ReadonlyArray<{ readonly title: string | null, readonly link: string | null } | null> | null } | null> | null } | null }> } };
 
 
 }
