@@ -1,50 +1,48 @@
 ---
 columns:
+  - title: Get started
+    links:
+      - text: Wallets
+        url: /wallets
+      - text: Grants
+        url: /grants
+      - text: Bounties
+        url: /bounties
+      - text: Node operators
+        url: https://docs.alephium.org/full-node/
+  - title: Community
+    links:
+      - text: Online communities
+        url: /communities
+      - text: Ambassador Program
+        url: /ambassadors
+      - text: FAQ
+        url: /faq
+      - text: Brand Assets
+        url: /brand
   - title: Resources
     links:
       - text: Docs
         url: https://docs.alephium.org/
-        newTab: true
       - text: Blog
         url: https://medium.com/@alephium
-        newTab: true
-      - text: White papers
-        url: https://github.com/alephium/white-paper
-        newTab: true
-      - text: FAQ
-        url: https://docs.alephium.org/frequently-asked-questions
-        newTab: true
-  - title: Explore
+      - text: Alephium Whitepaper
+        url: https://github.com/alephium/white-paper/blob/master/alephium.pdf
+      - text: Proof of Less Work Whitepaper
+        url: https://github.com/alephium/white-paper/blob/master/polw.pdf
+  - title: Legal
     links:
-      - text: Codebase
-        url: http://github.com/alephium
-        newTab: true
-      - text: Bridge
-        url: https://bridge.alephium.org
-        newTab: true
-      - text: Explorer
-        url: https://github.com/alephium/explorer
-        newTab: true
-      - text: Wallet
-        url: '#wallets'
-      - text: Reward & grant program
-        url: https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md
-        newTab: true
-  - title: About
-    links:
-      - text: Team
-        url:
-        newTab: false
-      - text: Careers
-        url: https://alephium.bamboohr.com/jobs/
-        newTab: true
-      - text: Contact
-        url:
-        newTab: false
-      - text: Privacy policy
-        url: /privacy-policy
-        newTab: false
       - text: Terms & Conditions
         url: /terms-and-conditions
-        newTab: false
+      - text: Privacy Policy
+        url: /privacy-policy
+      - text: Contact
+        url: mailto:info@alephium.org
+bottom:
+  text: Made with love️ by humans from Alephium
+  socials:
+    - Discord
+    - Telegram
+    - X
+    - GitHub
 ---

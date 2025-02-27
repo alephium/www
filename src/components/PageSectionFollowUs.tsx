@@ -5,17 +5,10 @@ import SectionTextHeader from './SectionTextHeader'
 import PageSectionContainer from './PageSectionContainer'
 import SocialMediaIcon from './SocialMediaIcon'
 
-import TelegramIcon from '../images/svgs/brand-icon-telegram.svg'
-import DiscordIcon from '../images/svgs/brand-icon-discord.svg'
-import TwitterIcon from '../images/svgs/brand-icon-twitter.svg'
-import RedditIcon from '../images/svgs/brand-icon-reddit.svg'
-import YouTubeIcon from '../images/svgs/brand-icon-youtube.svg'
-import LinkedInIcon from '../images/svgs/brand-icon-linkedin.svg'
-import MediumIcon from '../images/svgs/brand-icon-medium.svg'
-import GitHubIcon from '../images/svgs/brand-icon-github.svg'
 import Columns from './Columns/Columns'
 import Column from './Columns/Column'
 import { deviceBreakPoints } from '../styles/global-style'
+import { getIconByName } from '../images/utils'
 
 export interface PageSectionFollowUsContentType {
   title: string
@@ -129,26 +122,3 @@ const ScrollToTopButton = styled.a`
     color: ${({ theme }) => theme.textPrimary};
   }
 `
-
-const getIconByName = (name: string) => {
-  switch (name) {
-    case 'Discord':
-      return DiscordIcon
-    case 'Telegram':
-      return TelegramIcon
-    case 'Twitter':
-      return TwitterIcon
-    case 'Reddit':
-      return RedditIcon
-    case 'Medium':
-      return MediumIcon
-    case 'LinkedIn':
-      return LinkedInIcon
-    case 'Youtube':
-      return YouTubeIcon
-    case 'GitHub':
-      return GitHubIcon
-    default:
-      break
-  }
-}

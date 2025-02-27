@@ -1436,6 +1436,7 @@ type MarkdownRemarkFilterListInput = {
 };
 
 type MarkdownRemarkFrontmatter = {
+  readonly bottom: Maybe<MarkdownRemarkFrontmatterBottom>;
   readonly button: Maybe<MarkdownRemarkFrontmatterButton>;
   readonly columns: Maybe<ReadonlyArray<Maybe<MarkdownRemarkFrontmatterColumns>>>;
   readonly ecosystemSection: Maybe<MarkdownRemarkFrontmatterEcosystemSection>;
@@ -1456,6 +1457,26 @@ type MarkdownRemarkFrontmatter = {
   readonly todoListSection: Maybe<MarkdownRemarkFrontmatterTodoListSection>;
   readonly topBanner: Maybe<MarkdownRemarkFrontmatterTopBanner>;
   readonly walletsSection: Maybe<MarkdownRemarkFrontmatterWalletsSection>;
+};
+
+type MarkdownRemarkFrontmatterBottom = {
+  readonly socials: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
+  readonly text: Maybe<Scalars['String']>;
+};
+
+type MarkdownRemarkFrontmatterBottomFieldSelector = {
+  readonly socials: InputMaybe<FieldSelectorEnum>;
+  readonly text: InputMaybe<FieldSelectorEnum>;
+};
+
+type MarkdownRemarkFrontmatterBottomFilterInput = {
+  readonly socials: InputMaybe<StringQueryOperatorInput>;
+  readonly text: InputMaybe<StringQueryOperatorInput>;
+};
+
+type MarkdownRemarkFrontmatterBottomSortInput = {
+  readonly socials: InputMaybe<SortOrderEnum>;
+  readonly text: InputMaybe<SortOrderEnum>;
 };
 
 type MarkdownRemarkFrontmatterButton = {
@@ -1498,19 +1519,16 @@ type MarkdownRemarkFrontmatterColumnsFilterListInput = {
 };
 
 type MarkdownRemarkFrontmatterColumnsLinks = {
-  readonly newTab: Maybe<Scalars['Boolean']>;
   readonly text: Maybe<Scalars['String']>;
   readonly url: Maybe<Scalars['String']>;
 };
 
 type MarkdownRemarkFrontmatterColumnsLinksFieldSelector = {
-  readonly newTab: InputMaybe<FieldSelectorEnum>;
   readonly text: InputMaybe<FieldSelectorEnum>;
   readonly url: InputMaybe<FieldSelectorEnum>;
 };
 
 type MarkdownRemarkFrontmatterColumnsLinksFilterInput = {
-  readonly newTab: InputMaybe<BooleanQueryOperatorInput>;
   readonly text: InputMaybe<StringQueryOperatorInput>;
   readonly url: InputMaybe<StringQueryOperatorInput>;
 };
@@ -1520,7 +1538,6 @@ type MarkdownRemarkFrontmatterColumnsLinksFilterListInput = {
 };
 
 type MarkdownRemarkFrontmatterColumnsLinksSortInput = {
-  readonly newTab: InputMaybe<SortOrderEnum>;
   readonly text: InputMaybe<SortOrderEnum>;
   readonly url: InputMaybe<SortOrderEnum>;
 };
@@ -1615,6 +1632,7 @@ type MarkdownRemarkFrontmatterEcosystemSectionSubsectionsSortInput = {
 };
 
 type MarkdownRemarkFrontmatterFieldSelector = {
+  readonly bottom: InputMaybe<MarkdownRemarkFrontmatterBottomFieldSelector>;
   readonly button: InputMaybe<MarkdownRemarkFrontmatterButtonFieldSelector>;
   readonly columns: InputMaybe<MarkdownRemarkFrontmatterColumnsFieldSelector>;
   readonly ecosystemSection: InputMaybe<MarkdownRemarkFrontmatterEcosystemSectionFieldSelector>;
@@ -1638,6 +1656,7 @@ type MarkdownRemarkFrontmatterFieldSelector = {
 };
 
 type MarkdownRemarkFrontmatterFilterInput = {
+  readonly bottom: InputMaybe<MarkdownRemarkFrontmatterBottomFilterInput>;
   readonly button: InputMaybe<MarkdownRemarkFrontmatterButtonFilterInput>;
   readonly columns: InputMaybe<MarkdownRemarkFrontmatterColumnsFilterListInput>;
   readonly ecosystemSection: InputMaybe<MarkdownRemarkFrontmatterEcosystemSectionFilterInput>;
@@ -2521,6 +2540,7 @@ type MarkdownRemarkFrontmatterShopSectionSortInput = {
 };
 
 type MarkdownRemarkFrontmatterSortInput = {
+  readonly bottom: InputMaybe<MarkdownRemarkFrontmatterBottomSortInput>;
   readonly button: InputMaybe<MarkdownRemarkFrontmatterButtonSortInput>;
   readonly columns: InputMaybe<MarkdownRemarkFrontmatterColumnsSortInput>;
   readonly ecosystemSection: InputMaybe<MarkdownRemarkFrontmatterEcosystemSectionSortInput>;
@@ -4538,7 +4558,7 @@ type DiscordPageQuery = { readonly homepage: { readonly nodes: ReadonlyArray<{ r
 type FooterSectionQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-type FooterSectionQuery = { readonly footer: { readonly nodes: ReadonlyArray<{ readonly frontmatter: { readonly columns: ReadonlyArray<{ readonly title: string | null, readonly links: ReadonlyArray<{ readonly text: string | null, readonly url: string | null, readonly newTab: boolean | null } | null> | null } | null> | null } | null }> } };
+type FooterSectionQuery = { readonly footer: { readonly nodes: ReadonlyArray<{ readonly frontmatter: { readonly columns: ReadonlyArray<{ readonly title: string | null, readonly links: ReadonlyArray<{ readonly text: string | null, readonly url: string | null } | null> | null } | null> | null, readonly bottom: { readonly text: string | null, readonly socials: ReadonlyArray<string | null> | null } | null } | null }> } };
 
 type GatsbyImageSharpFixedFragment = { readonly base64: string | null, readonly width: number, readonly height: number, readonly src: string, readonly srcSet: string };
 

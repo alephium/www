@@ -468,7 +468,7 @@ followUsSection:
       url: https://discord.gg/XC5JaaDT7z
     - name: Telegram
       url: https://t.me/alephiumgroup
-    - name: Twitter
+    - name: X
       url: https://twitter.com/alephium
     - name: Medium
       url: https://medium.com/@alephium

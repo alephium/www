@@ -65,5 +65,5 @@ button:
   link: https://bridge.alephium.org/
 socialIcons:
   - Discord
-  - Twitter
+  - X
 ---

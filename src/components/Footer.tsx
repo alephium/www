@@ -1,4 +1,4 @@
-import { FC, useState } from 'react'
+import { FC } from 'react'
 import styled, { useTheme } from 'styled-components'
 
 import { deviceBreakPoints } from '../styles/global-style'
@@ -7,11 +7,12 @@ import SimpleLink, { SimpleLinkProps } from './SimpleLink'
 import PageSectionContainer from './PageSectionContainer'
 import Columns from './Columns/Columns'
 import Column from './Columns/Column'
-import ModalTeam from './ModalTeam'
-import ModalContact from './ModalContact'
 
 import { graphql, useStaticQuery } from 'gatsby'
 import AlephiumLogo from './AlephiumLogo'
+import SocialMediaIcon from './SocialMediaIcon'
+import NavigationMenuSocials from './navigation/NavigationMenuSocials'
+import { notEmpty } from '../utils/misc'
 
 interface FooterProps {
   openPrivacyPolicyModal?: boolean
@@ -19,36 +20,25 @@ interface FooterProps {
 }
 
 const Footer = ({ className }: FooterProps) => {
-  const [isTeamModalOpen, setIsTeamModalOpen] = useState(false)
-  const [isContactModalOpen, setIsContactModalOpen] = useState(false)
   const data = useStaticQuery<Queries.FooterSectionQuery>(footerQuery)
   const theme = useTheme()
 
   const columnsContent = data.footer.nodes[0].frontmatter?.columns
+  const bottomContent = data.footer.nodes[0].frontmatter?.bottom
 
   return (
     <div className={className}>
       <PageSectionContainerStyled>
-        <LogosSection>
-          <LogoStyled gradientIndex={0} fill={theme.textTertiary} />
-        </LogosSection>
         <Separator />
         <FooterColumnsSection gap="var(--spacing-4)">
-          {columnsContent?.map((column, columnIndex) => (
+          {columnsContent?.map((column) => (
             <Column key={column?.title}>
               <FooterColumn
                 title={column?.title ?? ''}
                 links={
-                  column?.links?.map((link, linkIndex) => ({
+                  column?.links?.map((link) => ({
                     text: link?.text ?? '',
-                    url: link?.url ?? '',
-                    newTab: link?.newTab ?? false,
-                    openModal:
-                      columnIndex === 2 && linkIndex === 0
-                        ? setIsTeamModalOpen
-                        : columnIndex === 2 && linkIndex === 2
-                        ? setIsContactModalOpen
-                        : undefined
+                    url: link?.url ?? ''
                   })) ?? []
                 }
               />
@@ -56,11 +46,39 @@ const Footer = ({ className }: FooterProps) => {
           ))}
         </FooterColumnsSection>
       </PageSectionContainerStyled>
-      <ModalTeam isOpen={isTeamModalOpen} setIsOpen={setIsTeamModalOpen} />
-      <ModalContact isOpen={isContactModalOpen} setIsOpen={setIsContactModalOpen} />
+      <PageSectionContainerBottom>
+        <BottomColumn>
+          <LogosSection>
+            <LogoStyled gradientIndex={0} fill={theme.textTertiary} />
+          </LogosSection>
+        </BottomColumn>
+        <BottomColumnCenter>{bottomContent?.text}</BottomColumnCenter>
+        <BottomColumn>
+          <NavigationMenuSocialsStyled enabledItems={bottomContent?.socials?.filter(notEmpty) ?? []} />
+        </BottomColumn>
+      </PageSectionContainerBottom>
     </div>
   )
 }
+
+const PageSectionContainerBottom = styled(PageSectionContainer)`
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-12) 0 0;
+`
+
+const BottomColumn = styled.div`
+  flex: 1;
+`
+
+const BottomColumnCenter = styled(BottomColumn)`
+  text-align: center;
+  color: ${({ theme }) => theme.textTertiary};
+`
+
+const NavigationMenuSocialsStyled = styled(NavigationMenuSocials)`
+  justify-content: flex-end;
+`
 
 interface FooterColumnProps {
   className?: string
@@ -79,6 +97,7 @@ let FooterColumn: FC<FooterColumnProps> = ({ className, title, links }) => {
           <li key={link.text}>
             <SimpleLink
               {...link}
+              newTab={!link?.url?.startsWith('/')}
               color={theme.textTertiary}
               trackingName={`footer:${link.text?.replaceAll(' ', '-')}-link`}
             />
@@ -99,8 +118,11 @@ export const footerQuery = graphql`
             links {
               text
               url
-              newTab
             }
+          }
+          bottom {
+            text
+            socials
           }
         }
       }
@@ -167,5 +189,5 @@ const PageSectionContainerStyled = styled(PageSectionContainer)`
 
 const LogoStyled = styled(AlephiumLogo)`
   height: auto;
-  max-width: 60px;
+  max-width: 30px;
 `
