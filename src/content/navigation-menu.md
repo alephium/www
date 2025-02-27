@@ -12,28 +12,22 @@ menuItems:
       - title: Tutorials
         link: https://www.youtube.com/playlist?list=PL8q8n0BHJS1PWP7t8ABECYdOaPM-hJmjx
       - title: Roadmap
-        link:
+        link: /roadmap
       - title: Funding
       - title: Grants
-        link:
+        link: /grants
       - title: Bounties
-        link:
+        link: /bounties
       - title: Support
       - title: Discord
-        link: https://discord.com/invite/XC5JaaDT7z
+        link: /discord
       - title: Github
         link: https://github.com/alephium
-      - title: Funding
-        link:
-      - title: Funding
-        link:
-      - title: Funding
-        link:
   - title: Ecosystem
     items:
       - title: Projects and tools
       - title: Wallets
-        link:
+        link: /wallets
       - title: Dapps
         link: https://docs.alephium.org/dapps
       - title: Bridge
@@ -51,22 +45,25 @@ menuItems:
     items:
       - title: Projects and tools
       - title: FAQ
-        link:
+        link: /faq
       - title: Blog
         link: https://medium.com/@alephium
       - title: Brand Assets
-        link:
+        link: /brand
   - title: Community
     items:
       - title: Get started
-        link:
+        link: /get-started
       - title: Ambassador Program
-        link:
+        link: /ambassador
       - title: Online communities
-        link:
+        link: /communities
       - title: Bounties
-        link:
+        link: /bounties
 button:
   title: Bridge
-  link:
+  link: https://bridge.alephium.org/
+socialIcons:
+  - Discord
+  - Twitter
 ---

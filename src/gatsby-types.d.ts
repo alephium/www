@@ -382,6 +382,8 @@ type File = Node & {
   readonly childImageSharp: Maybe<ImageSharp>;
   /** Returns the first child node of type MarkdownRemark or null if there are no children of given type on this node */
   readonly childMarkdownRemark: Maybe<MarkdownRemark>;
+  /** Returns the first child node of type SocialsYaml or null if there are no children of given type on this node */
+  readonly childSocialsYaml: Maybe<SocialsYaml>;
   /** Returns the first child node of type TeamYaml or null if there are no children of given type on this node */
   readonly childTeamYaml: Maybe<TeamYaml>;
   readonly children: ReadonlyArray<Node>;
@@ -389,6 +391,8 @@ type File = Node & {
   readonly childrenImageSharp: Maybe<ReadonlyArray<Maybe<ImageSharp>>>;
   /** Returns all children nodes filtered by type MarkdownRemark */
   readonly childrenMarkdownRemark: Maybe<ReadonlyArray<Maybe<MarkdownRemark>>>;
+  /** Returns all children nodes filtered by type SocialsYaml */
+  readonly childrenSocialsYaml: Maybe<ReadonlyArray<Maybe<SocialsYaml>>>;
   /** Returns all children nodes filtered by type TeamYaml */
   readonly childrenTeamYaml: Maybe<ReadonlyArray<Maybe<TeamYaml>>>;
   readonly ctime: Scalars['Date'];
@@ -535,10 +539,12 @@ type FileFieldSelector = {
   readonly changeTime: InputMaybe<FieldSelectorEnum>;
   readonly childImageSharp: InputMaybe<ImageSharpFieldSelector>;
   readonly childMarkdownRemark: InputMaybe<MarkdownRemarkFieldSelector>;
+  readonly childSocialsYaml: InputMaybe<SocialsYamlFieldSelector>;
   readonly childTeamYaml: InputMaybe<TeamYamlFieldSelector>;
   readonly children: InputMaybe<NodeFieldSelector>;
   readonly childrenImageSharp: InputMaybe<ImageSharpFieldSelector>;
   readonly childrenMarkdownRemark: InputMaybe<MarkdownRemarkFieldSelector>;
+  readonly childrenSocialsYaml: InputMaybe<SocialsYamlFieldSelector>;
   readonly childrenTeamYaml: InputMaybe<TeamYamlFieldSelector>;
   readonly ctime: InputMaybe<FieldSelectorEnum>;
   readonly ctimeMs: InputMaybe<FieldSelectorEnum>;
@@ -582,10 +588,12 @@ type FileFilterInput = {
   readonly changeTime: InputMaybe<DateQueryOperatorInput>;
   readonly childImageSharp: InputMaybe<ImageSharpFilterInput>;
   readonly childMarkdownRemark: InputMaybe<MarkdownRemarkFilterInput>;
+  readonly childSocialsYaml: InputMaybe<SocialsYamlFilterInput>;
   readonly childTeamYaml: InputMaybe<TeamYamlFilterInput>;
   readonly children: InputMaybe<NodeFilterListInput>;
   readonly childrenImageSharp: InputMaybe<ImageSharpFilterListInput>;
   readonly childrenMarkdownRemark: InputMaybe<MarkdownRemarkFilterListInput>;
+  readonly childrenSocialsYaml: InputMaybe<SocialsYamlFilterListInput>;
   readonly childrenTeamYaml: InputMaybe<TeamYamlFilterListInput>;
   readonly ctime: InputMaybe<DateQueryOperatorInput>;
   readonly ctimeMs: InputMaybe<FloatQueryOperatorInput>;
@@ -670,10 +678,12 @@ type FileSortInput = {
   readonly changeTime: InputMaybe<SortOrderEnum>;
   readonly childImageSharp: InputMaybe<ImageSharpSortInput>;
   readonly childMarkdownRemark: InputMaybe<MarkdownRemarkSortInput>;
+  readonly childSocialsYaml: InputMaybe<SocialsYamlSortInput>;
   readonly childTeamYaml: InputMaybe<TeamYamlSortInput>;
   readonly children: InputMaybe<NodeSortInput>;
   readonly childrenImageSharp: InputMaybe<ImageSharpSortInput>;
   readonly childrenMarkdownRemark: InputMaybe<MarkdownRemarkSortInput>;
+  readonly childrenSocialsYaml: InputMaybe<SocialsYamlSortInput>;
   readonly childrenTeamYaml: InputMaybe<TeamYamlSortInput>;
   readonly ctime: InputMaybe<SortOrderEnum>;
   readonly ctimeMs: InputMaybe<SortOrderEnum>;
@@ -1440,6 +1450,7 @@ type MarkdownRemarkFrontmatter = {
   readonly numbersSection: Maybe<MarkdownRemarkFrontmatterNumbersSection>;
   readonly rulesAndJudging: Maybe<MarkdownRemarkFrontmatterRulesAndJudging>;
   readonly shopSection: Maybe<MarkdownRemarkFrontmatterShopSection>;
+  readonly socialIcons: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
   readonly technologySection: Maybe<MarkdownRemarkFrontmatterTechnologySection>;
   readonly title: Maybe<Scalars['String']>;
   readonly todoListSection: Maybe<MarkdownRemarkFrontmatterTodoListSection>;
@@ -1448,18 +1459,22 @@ type MarkdownRemarkFrontmatter = {
 };
 
 type MarkdownRemarkFrontmatterButton = {
+  readonly link: Maybe<Scalars['String']>;
   readonly title: Maybe<Scalars['String']>;
 };
 
 type MarkdownRemarkFrontmatterButtonFieldSelector = {
+  readonly link: InputMaybe<FieldSelectorEnum>;
   readonly title: InputMaybe<FieldSelectorEnum>;
 };
 
 type MarkdownRemarkFrontmatterButtonFilterInput = {
+  readonly link: InputMaybe<StringQueryOperatorInput>;
   readonly title: InputMaybe<StringQueryOperatorInput>;
 };
 
 type MarkdownRemarkFrontmatterButtonSortInput = {
+  readonly link: InputMaybe<SortOrderEnum>;
   readonly title: InputMaybe<SortOrderEnum>;
 };
 
@@ -1614,6 +1629,7 @@ type MarkdownRemarkFrontmatterFieldSelector = {
   readonly numbersSection: InputMaybe<MarkdownRemarkFrontmatterNumbersSectionFieldSelector>;
   readonly rulesAndJudging: InputMaybe<MarkdownRemarkFrontmatterRulesAndJudgingFieldSelector>;
   readonly shopSection: InputMaybe<MarkdownRemarkFrontmatterShopSectionFieldSelector>;
+  readonly socialIcons: InputMaybe<FieldSelectorEnum>;
   readonly technologySection: InputMaybe<MarkdownRemarkFrontmatterTechnologySectionFieldSelector>;
   readonly title: InputMaybe<FieldSelectorEnum>;
   readonly todoListSection: InputMaybe<MarkdownRemarkFrontmatterTodoListSectionFieldSelector>;
@@ -1636,6 +1652,7 @@ type MarkdownRemarkFrontmatterFilterInput = {
   readonly numbersSection: InputMaybe<MarkdownRemarkFrontmatterNumbersSectionFilterInput>;
   readonly rulesAndJudging: InputMaybe<MarkdownRemarkFrontmatterRulesAndJudgingFilterInput>;
   readonly shopSection: InputMaybe<MarkdownRemarkFrontmatterShopSectionFilterInput>;
+  readonly socialIcons: InputMaybe<StringQueryOperatorInput>;
   readonly technologySection: InputMaybe<MarkdownRemarkFrontmatterTechnologySectionFilterInput>;
   readonly title: InputMaybe<StringQueryOperatorInput>;
   readonly todoListSection: InputMaybe<MarkdownRemarkFrontmatterTodoListSectionFilterInput>;
@@ -2518,6 +2535,7 @@ type MarkdownRemarkFrontmatterSortInput = {
   readonly numbersSection: InputMaybe<MarkdownRemarkFrontmatterNumbersSectionSortInput>;
   readonly rulesAndJudging: InputMaybe<MarkdownRemarkFrontmatterRulesAndJudgingSortInput>;
   readonly shopSection: InputMaybe<MarkdownRemarkFrontmatterShopSectionSortInput>;
+  readonly socialIcons: InputMaybe<SortOrderEnum>;
   readonly technologySection: InputMaybe<MarkdownRemarkFrontmatterTechnologySectionSortInput>;
   readonly title: InputMaybe<SortOrderEnum>;
   readonly todoListSection: InputMaybe<MarkdownRemarkFrontmatterTodoListSectionSortInput>;
@@ -3130,6 +3148,7 @@ type Query = {
   readonly allSiteFunction: SiteFunctionConnection;
   readonly allSitePage: SitePageConnection;
   readonly allSitePlugin: SitePluginConnection;
+  readonly allSocialsYaml: SocialsYamlConnection;
   readonly allTeamYaml: TeamYamlConnection;
   readonly directory: Maybe<Directory>;
   readonly file: Maybe<File>;
@@ -3140,6 +3159,7 @@ type Query = {
   readonly siteFunction: Maybe<SiteFunction>;
   readonly sitePage: Maybe<SitePage>;
   readonly sitePlugin: Maybe<SitePlugin>;
+  readonly socialsYaml: Maybe<SocialsYaml>;
   readonly teamYaml: Maybe<TeamYaml>;
 };
 
@@ -3216,6 +3236,14 @@ type Query_allSitePluginArgs = {
 };
 
 
+type Query_allSocialsYamlArgs = {
+  filter: InputMaybe<SocialsYamlFilterInput>;
+  limit: InputMaybe<Scalars['Int']>;
+  skip: InputMaybe<Scalars['Int']>;
+  sort: InputMaybe<ReadonlyArray<InputMaybe<SocialsYamlSortInput>>>;
+};
+
+
 type Query_allTeamYamlArgs = {
   filter: InputMaybe<TeamYamlFilterInput>;
   limit: InputMaybe<Scalars['Int']>;
@@ -3277,10 +3305,12 @@ type Query_fileArgs = {
   changeTime: InputMaybe<DateQueryOperatorInput>;
   childImageSharp: InputMaybe<ImageSharpFilterInput>;
   childMarkdownRemark: InputMaybe<MarkdownRemarkFilterInput>;
+  childSocialsYaml: InputMaybe<SocialsYamlFilterInput>;
   childTeamYaml: InputMaybe<TeamYamlFilterInput>;
   children: InputMaybe<NodeFilterListInput>;
   childrenImageSharp: InputMaybe<ImageSharpFilterListInput>;
   childrenMarkdownRemark: InputMaybe<MarkdownRemarkFilterListInput>;
+  childrenSocialsYaml: InputMaybe<SocialsYamlFilterListInput>;
   childrenTeamYaml: InputMaybe<TeamYamlFilterListInput>;
   ctime: InputMaybe<DateQueryOperatorInput>;
   ctimeMs: InputMaybe<FloatQueryOperatorInput>;
@@ -3413,6 +3443,16 @@ type Query_sitePluginArgs = {
   resolve: InputMaybe<StringQueryOperatorInput>;
   ssrAPIs: InputMaybe<StringQueryOperatorInput>;
   version: InputMaybe<StringQueryOperatorInput>;
+};
+
+
+type Query_socialsYamlArgs = {
+  children: InputMaybe<NodeFilterListInput>;
+  id: InputMaybe<StringQueryOperatorInput>;
+  internal: InputMaybe<InternalFilterInput>;
+  name: InputMaybe<StringQueryOperatorInput>;
+  parent: InputMaybe<NodeFilterInput>;
+  url: InputMaybe<StringQueryOperatorInput>;
 };
 
 
@@ -4208,6 +4248,132 @@ type SiteSortInput = {
   readonly trailingSlash: InputMaybe<SortOrderEnum>;
 };
 
+type SocialsYaml = Node & {
+  readonly children: ReadonlyArray<Node>;
+  readonly id: Scalars['ID'];
+  readonly internal: Internal;
+  readonly name: Maybe<Scalars['String']>;
+  readonly parent: Maybe<Node>;
+  readonly url: Maybe<Scalars['String']>;
+};
+
+type SocialsYamlConnection = {
+  readonly distinct: ReadonlyArray<Scalars['String']>;
+  readonly edges: ReadonlyArray<SocialsYamlEdge>;
+  readonly group: ReadonlyArray<SocialsYamlGroupConnection>;
+  readonly max: Maybe<Scalars['Float']>;
+  readonly min: Maybe<Scalars['Float']>;
+  readonly nodes: ReadonlyArray<SocialsYaml>;
+  readonly pageInfo: PageInfo;
+  readonly sum: Maybe<Scalars['Float']>;
+  readonly totalCount: Scalars['Int'];
+};
+
+
+type SocialsYamlConnection_distinctArgs = {
+  field: SocialsYamlFieldSelector;
+};
+
+
+type SocialsYamlConnection_groupArgs = {
+  field: SocialsYamlFieldSelector;
+  limit: InputMaybe<Scalars['Int']>;
+  skip: InputMaybe<Scalars['Int']>;
+};
+
+
+type SocialsYamlConnection_maxArgs = {
+  field: SocialsYamlFieldSelector;
+};
+
+
+type SocialsYamlConnection_minArgs = {
+  field: SocialsYamlFieldSelector;
+};
+
+
+type SocialsYamlConnection_sumArgs = {
+  field: SocialsYamlFieldSelector;
+};
+
+type SocialsYamlEdge = {
+  readonly next: Maybe<SocialsYaml>;
+  readonly node: SocialsYaml;
+  readonly previous: Maybe<SocialsYaml>;
+};
+
+type SocialsYamlFieldSelector = {
+  readonly children: InputMaybe<NodeFieldSelector>;
+  readonly id: InputMaybe<FieldSelectorEnum>;
+  readonly internal: InputMaybe<InternalFieldSelector>;
+  readonly name: InputMaybe<FieldSelectorEnum>;
+  readonly parent: InputMaybe<NodeFieldSelector>;
+  readonly url: InputMaybe<FieldSelectorEnum>;
+};
+
+type SocialsYamlFilterInput = {
+  readonly children: InputMaybe<NodeFilterListInput>;
+  readonly id: InputMaybe<StringQueryOperatorInput>;
+  readonly internal: InputMaybe<InternalFilterInput>;
+  readonly name: InputMaybe<StringQueryOperatorInput>;
+  readonly parent: InputMaybe<NodeFilterInput>;
+  readonly url: InputMaybe<StringQueryOperatorInput>;
+};
+
+type SocialsYamlFilterListInput = {
+  readonly elemMatch: InputMaybe<SocialsYamlFilterInput>;
+};
+
+type SocialsYamlGroupConnection = {
+  readonly distinct: ReadonlyArray<Scalars['String']>;
+  readonly edges: ReadonlyArray<SocialsYamlEdge>;
+  readonly field: Scalars['String'];
+  readonly fieldValue: Maybe<Scalars['String']>;
+  readonly group: ReadonlyArray<SocialsYamlGroupConnection>;
+  readonly max: Maybe<Scalars['Float']>;
+  readonly min: Maybe<Scalars['Float']>;
+  readonly nodes: ReadonlyArray<SocialsYaml>;
+  readonly pageInfo: PageInfo;
+  readonly sum: Maybe<Scalars['Float']>;
+  readonly totalCount: Scalars['Int'];
+};
+
+
+type SocialsYamlGroupConnection_distinctArgs = {
+  field: SocialsYamlFieldSelector;
+};
+
+
+type SocialsYamlGroupConnection_groupArgs = {
+  field: SocialsYamlFieldSelector;
+  limit: InputMaybe<Scalars['Int']>;
+  skip: InputMaybe<Scalars['Int']>;
+};
+
+
+type SocialsYamlGroupConnection_maxArgs = {
+  field: SocialsYamlFieldSelector;
+};
+
+
+type SocialsYamlGroupConnection_minArgs = {
+  field: SocialsYamlFieldSelector;
+};
+
+
+type SocialsYamlGroupConnection_sumArgs = {
+  field: SocialsYamlFieldSelector;
+};
+
+type SocialsYamlSortInput = {
+  readonly children: InputMaybe<NodeSortInput>;
+  readonly id: InputMaybe<SortOrderEnum>;
+  readonly internal: InputMaybe<InternalSortInput>;
+  readonly name: InputMaybe<SortOrderEnum>;
+  readonly parent: InputMaybe<NodeSortInput>;
+  readonly url: InputMaybe<SortOrderEnum>;
+};
+
 type SortOrderEnum =
   | 'ASC'
   | 'DESC';
@@ -4408,7 +4574,12 @@ type IndexPageQuery = { readonly homepage: { readonly nodes: ReadonlyArray<{ rea
 type NavigationMenuQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-type NavigationMenuQuery = { readonly navmenu: { readonly nodes: ReadonlyArray<{ readonly frontmatter: { readonly menuItems: ReadonlyArray<{ readonly title: string | null, readonly items: ReadonlyArray<{ readonly title: string | null, readonly link: string | null } | null> | null } | null> | null } | null }> } };
+type NavigationMenuQuery = { readonly navmenu: { readonly nodes: ReadonlyArray<{ readonly frontmatter: { readonly socialIcons: ReadonlyArray<string | null> | null, readonly menuItems: ReadonlyArray<{ readonly title: string | null, readonly items: ReadonlyArray<{ readonly title: string | null, readonly link: string | null } | null> | null } | null> | null } | null }> } };
+
+type SocialsYamlQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type SocialsYamlQuery = { readonly allSocialsYaml: { readonly edges: ReadonlyArray<{ readonly node: { readonly name: string | null, readonly url: string | null } }> } };
 
 
 }

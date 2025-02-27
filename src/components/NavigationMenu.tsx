@@ -5,8 +5,6 @@ import { deviceBreakPoints } from '../styles/global-style'
 
 import SimpleLink from './SimpleLink'
 import LogoText from '../images/svgs/logo-text.svg'
-import GitHubIcon from '../images/svgs/brand-icon-github.svg'
-import SocialMediaIcon from './SocialMediaIcon'
 import { AnimatePresence, motion, useMotionValueEvent, useScroll } from 'framer-motion'
 import { ReactNode, useRef, useState } from 'react'
 import { RiTranslate2 } from 'react-icons/ri'
@@ -16,6 +14,8 @@ import HeroLogo from './Hero/HeroLogo'
 import { RiMenu3Fill, RiArrowDropDownLine, RiArrowDropUpLine } from 'react-icons/ri'
 import useOnClickOutside from '../hooks/useOnClickOutside'
 import TranslateComponent from './TranslateComponent'
+import { notEmpty } from '../utils/misc'
+import NavigationMenuSocials from './navigation/NavigationMenuSocials'
 
 interface NavigationMenuProps {
   topOffset?: number
@@ -68,21 +68,25 @@ const NavigationItems = ({ className }: { className?: string }) => {
   const theme = useTheme()
   const data = useStaticQuery<Queries.NavigationMenuQuery>(navigationMenuQuery)
 
+  const menuItems = data.navmenu.nodes[0]?.frontmatter?.menuItems?.filter(notEmpty)
+  const socialIcons = data.navmenu.nodes[0]?.frontmatter?.socialIcons?.filter(notEmpty)
+
   return (
     <div className={className}>
-      {data.navmenu.nodes[0]?.frontmatter?.menuItems?.map(
-        (node) =>
-          node?.title &&
-          node?.items && (
-            <NavigationDrawer key={node?.title} title={node?.title}>
-              {node?.items?.map(
+      {menuItems?.map(
+        ({ title, items }) =>
+          title &&
+          items && (
+            <NavigationDrawer key={title} title={title}>
+              {items.map(
                 (item, index) =>
-                  item?.title && (
-                    <DrawerItem key={item.title}>
-                      {item?.link ? (
+                  item &&
+                  item.title && (
+                    <DrawerItem key={item.title} isLink={!!item.link}>
+                      {item.link ? (
                         <NavLink key={index} url={item.link} text={item.title} newTab={!item.link.startsWith('/')} />
                       ) : (
-                        <NavLink key={index} text={item.title} />
+                        <DrawerItemTitle key={index}>{item.title}</DrawerItemTitle>
                       )}
                     </DrawerItem>
                   )
@@ -94,12 +98,7 @@ const NavigationItems = ({ className }: { className?: string }) => {
         <TranslateComponent />
       </NavigationDrawer>
 
-      <GithubButton
-        name="Github"
-        ImageComponent={GitHubIcon}
-        url="https://github.com/alephium"
-        trackingName="main-nav:github-link"
-      />
+      {socialIcons && <NavigationMenuSocials enabledItems={socialIcons} />}
     </div>
   )
 }
@@ -171,6 +170,7 @@ export const navigationMenuQuery = graphql`
               link
             }
           }
+          socialIcons
         }
       }
     }
@@ -255,13 +255,6 @@ const HeroLogoContainer = styled.div`
 
 const HeroLogoStyled = styled(HeroLogo)`
   height: 26px;
-`
-
-const GithubButton = styled(SocialMediaIcon)`
-  svg {
-    width: 30px;
-    height: 30px;
-  }
 `
 
 const LinkStyle = css`
@@ -361,7 +354,7 @@ const Drawer = styled(motion.div)`
   left: -50%;
   right: 0;
   min-width: 200px;
-  background-color: rgba(30, 30, 30, 0.8);
+  background-color: rgba(30, 30, 30, 1);
   border-radius: 20px;
   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.8);
   display: flex;
@@ -375,13 +368,27 @@ const Drawer = styled(motion.div)`
   }
 `
 
-const DrawerItem = styled.div`
+const DrawerItem = styled.div<{ isLink: boolean }>`
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 18px;
 
-  &:not(:last-child) {
-    border-bottom: 1px solid ${({ theme }) => theme.borderPrimary};
+  > * {
+    padding: 18px;
+    width: 100%;
   }
+
+  ${({ isLink }) =>
+    !isLink &&
+    css`
+      &:not(:first-child) {
+        border-top: 1px solid ${({ theme }) => theme.borderPrimary};
+      }
+    `}
+`
+
+const DrawerItemTitle = styled.div`
+  text-transform: uppercase;
+  font-size: var(--fontSize-12);
+  color: ${({ theme }) => theme.textTertiary};
 `
