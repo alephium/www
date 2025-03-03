@@ -18,10 +18,18 @@ export const pageQuery = graphql`
     allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/homepage.md/" } }) {
       nodes {
         frontmatter {
-          ...PageSectionHero
-          ...PageSectionIntro
-          ...PageSectionTechnology
-          ...PageSectionNumbers
+          pageSectionHeroContent {
+            ...PageSectionHero
+          }
+          pageSectionIntroContent {
+            ...PageSectionIntro
+          }
+          pageSectionStatsContent {
+            ...PageSectionNumbers
+          }
+          pageSectionTechContent {
+            ...PageSectionTechnology
+          }
         }
       }
     }
@@ -42,28 +50,26 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
           <div>
             {content?.pageSectionHeroContent && (
               <>
-                <PageSectionHero pageSectionHeroContent={content.pageSectionHeroContent} />
+                <PageSectionHero {...content.pageSectionHeroContent} />
                 <SectionDivider />
               </>
             )}
 
             {content?.pageSectionIntroContent && (
               <>
-                <PageSectionIntro pageSectionIntroContent={content.pageSectionIntroContent} />
+                <PageSectionIntro {...content.pageSectionIntroContent} />
                 <SectionDivider />
               </>
             )}
 
             {content?.pageSectionStatsContent && (
               <>
-                <PageSectionNumbers pageSectionStatsContent={content.pageSectionStatsContent} />
+                <PageSectionNumbers {...content.pageSectionStatsContent} />
                 <SectionDivider />
               </>
             )}
 
-            {content?.pageSectionTechContent && (
-              <PageSectionTechnology pageSectionTechContent={content.pageSectionTechContent} />
-            )}
+            {content?.pageSectionTechContent && <PageSectionTechnology {...content.pageSectionTechContent} />}
 
             <Footer />
           </div>

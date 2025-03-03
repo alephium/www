@@ -27,19 +27,17 @@ import { graphql } from 'gatsby'
 import { notEmpty } from '../../utils/misc'
 
 export const query = graphql`
-  fragment PageSectionTechnology on MarkdownRemarkFrontmatter {
-    pageSectionTechContent {
-      title
-      subtitle
-      sections {
-        type
-        ...SectionTextTeaser
-      }
+  fragment PageSectionTechnology on MarkdownRemarkFrontmatterPageSectionTechContent {
+    title
+    subtitle
+    sections {
+      type
+      ...SectionTextTeaser
     }
   }
 `
 
-const PageSectionTechnology = ({ pageSectionTechContent: content }: Queries.PageSectionTechnologyFragment) => {
+const PageSectionTechnology = (content: Queries.PageSectionTechnologyFragment) => {
   const [gradientRef] = useRefScrollProgress()
 
   const columnsProps: Omit<ComponentProps<typeof Columns>, 'children'> = {

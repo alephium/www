@@ -19,23 +19,21 @@ import Button from '../Button'
 import ArrowedLink from '../ArrowedLink'
 
 export const query = graphql`
-  fragment PageSectionHero on MarkdownRemarkFrontmatter {
-    pageSectionHeroContent {
-      titleRows
-      subtitle
-      primaryButton {
-        text
-        url
-      }
-      secondaryButton {
-        text
-        url
-      }
+  fragment PageSectionHero on MarkdownRemarkFrontmatterPageSectionHeroContent {
+    titleRows
+    subtitle
+    primaryButton {
+      text
+      url
+    }
+    secondaryButton {
+      text
+      url
     }
   }
 `
 
-const PageSectionHero = ({ pageSectionHeroContent: content }: Queries.PageSectionHeroFragment) => {
+const PageSectionHero = (content: Queries.PageSectionHeroFragment) => {
   const innerRef = useRef<HTMLElement>(null)
   const inView = useInView(innerRef)
 

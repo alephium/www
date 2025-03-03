@@ -13,10 +13,6 @@ import { deviceBreakPoints } from '../../styles/global-style'
 
 const baseUrl = 'https://backend.mainnet.alephium.org'
 
-interface PageSectionNumbersContentType extends Queries.PageSectionNumbersFragment {
-  className?: string
-}
-
 interface Stat<T> {
   value: T
   isLoading: boolean
@@ -30,17 +26,15 @@ type StatScalarKeys = 'totalTransactions'
 type StatsScalarData = { [key in StatScalarKeys]: StatScalar }
 
 export const query = graphql`
-  fragment PageSectionNumbers on MarkdownRemarkFrontmatter {
-    pageSectionStatsContent {
-      title
-      cards {
-        ...CardStats
-      }
+  fragment PageSectionNumbers on MarkdownRemarkFrontmatterPageSectionStatsContent {
+    title
+    cards {
+      ...CardStats
     }
   }
 `
 
-const PageSectionNumbers = ({ pageSectionStatsContent: content }: PageSectionNumbersContentType) => {
+const PageSectionNumbers = (content: Queries.PageSectionNumbersFragment) => {
   const [explorerClient, setExplorerClient] = useState<ExplorerClient>()
   const [statsScalarData, setStatsScalarData] = useState<StatsScalarData>({
     totalTransactions: statScalarDefault

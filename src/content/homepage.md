@@ -10,6 +10,7 @@ pageSectionHeroContent:
   secondaryButton:
     text: Join the community
     url: /community
+
 pageSectionIntroContent:
   title: A Network Built by Visionaries
   subtitleRows:
@@ -31,6 +32,23 @@ pageSectionIntroContent:
       description: Contribute to the security and stability of the Alephium network. Help maintain a decentralized network structure and ensure optimal performance and reliability for your decentralized applications.
       link:
         url: https://docs.alephium.org/full-node/
+
+pageSectionStatsContent:
+  title: Made for Real Adoption. Built to Last.
+  cards:
+    - title: Fast
+      description: Alephium moves as fast as you do. With block times of just 8 seconds, sharding, and Proof-of-Less-Work, it delivers fast, efficient, and reliable performance - ready to scale as adoption grows.
+      stat: Over 10,000 transactions per second
+    - title: Scalable
+      description: Built to handle high throughput without sacrificing security, Alephium’s architecture ensures that fees remain predictable and affordable - empowering developers and users alike.
+      stat: live-transactions
+    - title: Secure
+      description: With a truly decentralized Proof-of-Work model, Alephium operates independently of vulnerable central validators, ensuring maximum security, trustlessness, and censorship resistance.
+      stat: 125+ independent mining nodes
+    - title: Sustainable
+      description: Alephium’s Proof-of-Less-Work mechanism reduces energy consumption, making it one of the most sustainable and responsible blockchains built for the future.
+      stat: 87% lower environmental impact vs. traditional PoW
+
 pageSectionTechContent:
   title: Built to Last. Designed to Scale.
   subtitle: Code is law, but security is everything.
@@ -59,21 +77,6 @@ pageSectionTechContent:
       links:
         - text: Resources
           url: https://docs.alephium.org/dapps/
-pageSectionStatsContent:
-  title: Made for Real Adoption. Built to Last.
-  cards:
-    - title: Fast
-      description: Alephium moves as fast as you do. With block times of just 8 seconds, sharding, and Proof-of-Less-Work, it delivers fast, efficient, and reliable performance - ready to scale as adoption grows.
-      stat: Over 10,000 transactions per second
-    - title: Scalable
-      description: Built to handle high throughput without sacrificing security, Alephium’s architecture ensures that fees remain predictable and affordable - empowering developers and users alike.
-      stat: live-transactions
-    - title: Secure
-      description: With a truly decentralized Proof-of-Work model, Alephium operates independently of vulnerable central validators, ensuring maximum security, trustlessness, and censorship resistance.
-      stat: 125+ independent mining nodes
-    - title: Sustainable
-      description: Alephium’s Proof-of-Less-Work mechanism reduces energy consumption, making it one of the most sustainable and responsible blockchains built for the future.
-      stat: 87% lower environmental impact vs. traditional PoW
 
 walletsSection:
   title: The wallets

@@ -12,18 +12,16 @@ import { graphql } from 'gatsby'
 import { notEmpty } from '../../utils/misc'
 
 export const query = graphql`
-  fragment PageSectionIntro on MarkdownRemarkFrontmatter {
-    pageSectionIntroContent {
-      title
-      subtitleRows
-      cards {
-        ...CardEngagement
-      }
+  fragment PageSectionIntro on MarkdownRemarkFrontmatterPageSectionIntroContent {
+    title
+    subtitleRows
+    cards {
+      ...CardEngagement
     }
   }
 `
 
-const PageSectionIntro = ({ pageSectionIntroContent: content }: Queries.PageSectionIntroFragment) => (
+const PageSectionIntro = (content: Queries.PageSectionIntroFragment) => (
   <SectionContainer id="intro">
     {content?.title && (
       <SectionTextHeader bigSubtitle title={content.title} subtitle={content?.subtitleRows?.filter(notEmpty)} />
