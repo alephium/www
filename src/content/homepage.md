@@ -91,6 +91,21 @@ pageSectionEcosystemContent:
   subtitleRows:
     - Alephium is home to pioneers, combining strong technology and a bustling community to bring the next generation of decentralized applications to life.
 
+pageSectionPartnersContent:
+  titleRows:
+    - Our Partners
+  subtitleRows:
+    - From legal experts to peer blockchains, advocacy groups, and local associations - they connect us to a larger ecosystem, strengthening our place in the decentralized world.
+
+pageSectionCtaContent:
+  titleRows:
+    - This is your moment.
+  subtitleRows:
+    - Alephium isn’t just a concept - it’s something we build, together. There’s a place for you here and we can’t wait to meet you.
+  button:
+    text: Get started
+    url: /get-started
+
 walletsSection:
   title: The wallets
   subtitle: Designed for humans

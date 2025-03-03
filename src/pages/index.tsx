@@ -13,6 +13,8 @@ import Footer from '../components/Footer'
 import SectionDivider from '../components/SectionDivider'
 import NavigationMenu from '../components/NavigationMenu'
 import PageSectionEcosystem from '../components/pageSections/PageSectionEcosystem'
+import PageSectionPartners from '../components/pageSections/PageSectionPartners'
+import PageSectionCta from '../components/pageSections/PageSectionCta'
 
 export const pageQuery = graphql`
   query IndexPage {
@@ -33,6 +35,12 @@ export const pageQuery = graphql`
           }
           pageSectionEcosystemContent {
             ...PageSectionEcosystem
+          }
+          pageSectionPartnersContent {
+            ...PageSectionPartners
+          }
+          pageSectionCtaContent {
+            ...PageSectionCta
           }
         }
       }
@@ -83,6 +91,20 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
             {content?.pageSectionEcosystemContent && (
               <>
                 <PageSectionEcosystem {...content.pageSectionEcosystemContent} />
+                <SectionDivider />
+              </>
+            )}
+
+            {content?.pageSectionPartnersContent && (
+              <>
+                <PageSectionPartners {...content.pageSectionPartnersContent} />
+                <SectionDivider />
+              </>
+            )}
+
+            {content?.pageSectionCtaContent && (
+              <>
+                <PageSectionCta {...content.pageSectionCtaContent} />
                 <SectionDivider />
               </>
             )}
