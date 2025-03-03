@@ -5,45 +5,22 @@ import GlobalStyle from '../styles/global-style'
 import { darkTheme } from '../styles/themes'
 
 import Seo from '../components/Seo'
-import PageSectionHero, { PageSectionHeroContentType } from '../components/PageSectionHero'
-import PageSectionIntro, { PageSectionIntroContentType } from '../components/PageSectionIntro'
-import PageSectionEcosystem, { PageSectionEcosystemContentType } from '../components/PageSectionEcosystem'
-import PageSectionTechnology, { PageSectionTechnologyContentType } from '../components/PageSectionTechnology'
-import PageSectionNumbers, { PageSectionNumbersContentType } from '../components/PageSectionNumbers'
-import PageSectionMilestones, { PageSectionMilestonesContentType } from '../components/PageSectionMilestones'
-import PageSectionTodoList, { PageSectionTodoListContentType } from '../components/PageSectionTodoList'
-import PageSectionFollowUs, { PageSectionFollowUsContentType } from '../components/PageSectionFollowUs'
+import PageSectionHero from '../components/pageSections/PageSectionHero'
+import PageSectionIntro from '../components/pageSections/PageSectionIntro'
+import PageSectionEcosystem from '../components/PageSectionEcosystem'
+import PageSectionTechnology from '../components/PageSectionTechnology'
+import PageSectionNumbers from '../components/PageSectionNumbers'
+import PageSectionMilestones from '../components/PageSectionMilestones'
+import PageSectionTodoList from '../components/PageSectionTodoList'
+import PageSectionFollowUs from '../components/PageSectionFollowUs'
 import Footer from '../components/Footer'
-import PageSectionShop, { PageSectionShopContentType } from '../components/PageSectionShop'
+import PageSectionShop from '../components/PageSectionShop'
 import SectionDivider from '../components/SectionDivider'
-import PageSectionWallets, { PageSectionWalletsContentType } from '../components/PageSectionWallets'
+import PageSectionWallets from '../components/PageSectionWallets'
 import NavigationMenu from '../components/NavigationMenu'
-import TopBanner, { TopBannerContentType } from '../components/TopBanner'
-
-interface IndexPageProps extends PageProps {
-  data: {
-    homepage: {
-      nodes: {
-        frontmatter: {
-          topBanner: TopBannerContentType
-          introSection: PageSectionIntroContentType
-          technologySection: PageSectionTechnologyContentType
-          numbersSection: PageSectionNumbersContentType
-          ecosystemSection: PageSectionEcosystemContentType
-          walletsSection: PageSectionWalletsContentType
-          milestonesSection: PageSectionMilestonesContentType
-          todoListSection: PageSectionTodoListContentType
-          shopSection: PageSectionShopContentType
-          followUsSection: PageSectionFollowUsContentType
-        }
-      }[]
-    }
-  }
-}
 
 const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
   const pageContent = props.data.homepage.nodes[0].frontmatter
-  const heroSectionContent = pageContent?.headerSection
 
   return (
     <>
@@ -53,23 +30,61 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
         <SiteWrapper>
           <NavigationMenu />
           <ContentContainer>
-            {heroSectionContent && <PageSectionHero headerSection={heroSectionContent} />}
-            <SectionDivider />
-            <PageSectionIntro content={pageContent.introSection} />
-            <SectionDivider />
-            <PageSectionTechnology content={pageContent.technologySection} minimal />
-            <PageSectionNumbers content={pageContent.numbersSection} />
-            <SectionDivider />
-            <PageSectionWallets content={pageContent.walletsSection} />
-            <SectionDivider />
-            <PageSectionEcosystem content={pageContent.ecosystemSection} />
-            <SectionDivider />
-            <PageSectionMilestones content={pageContent.milestonesSection} />
-            <SectionDivider />
-            <PageSectionTodoList content={pageContent.todoListSection} />
-            <SectionDivider />
-            <PageSectionShop content={pageContent.shopSection} />
-            <PageSectionFollowUs content={pageContent.followUsSection} />
+            {pageContent?.headerSection && (
+              <>
+                <PageSectionHero headerSection={pageContent.headerSection} />
+                <SectionDivider />
+              </>
+            )}
+            {pageContent?.introSection && (
+              <>
+                <PageSectionIntro introSection={pageContent.introSection} />
+                <SectionDivider />
+              </>
+            )}
+            {pageContent?.technologySection && (
+              <>
+                <PageSectionTechnology content={pageContent.technologySection} minimal />
+                <SectionDivider />
+              </>
+            )}
+            {pageContent?.numbersSection && (
+              <>
+                <PageSectionNumbers content={pageContent.numbersSection} />
+                <SectionDivider />
+              </>
+            )}
+            {pageContent?.walletsSection && (
+              <>
+                <PageSectionWallets content={pageContent.walletsSection} />
+                <SectionDivider />
+              </>
+            )}
+            {pageContent?.ecosystemSection && (
+              <>
+                <PageSectionEcosystem content={pageContent.ecosystemSection} />
+                <SectionDivider />
+              </>
+            )}
+            {pageContent?.milestonesSection && (
+              <>
+                <PageSectionMilestones content={pageContent.milestonesSection} />
+                <SectionDivider />
+              </>
+            )}
+            {pageContent?.todoListSection && (
+              <>
+                <PageSectionTodoList content={pageContent.todoListSection} />
+                <SectionDivider />
+              </>
+            )}
+            {pageContent?.shopSection && (
+              <>
+                <PageSectionShop content={pageContent.shopSection} />
+                <SectionDivider />
+              </>
+            )}
+            {pageContent?.followUsSection && <PageSectionFollowUs content={pageContent.followUsSection} />}
             <Footer />
           </ContentContainer>
         </SiteWrapper>
@@ -90,21 +105,7 @@ export const pageQuery = graphql`
       nodes {
         frontmatter {
           ...PageSectionHero
-          introSection {
-            title
-            subtitle
-            cards {
-              title
-              description
-              image {
-                publicURL
-              }
-              link {
-                url
-                newTab
-              }
-            }
-          }
+          ...PageSectionIntro
           ecosystemSection {
             title
             subtitle
