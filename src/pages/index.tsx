@@ -9,7 +9,7 @@ import PageSectionHero from '../components/pageSections/PageSectionHero'
 import PageSectionIntro from '../components/pageSections/PageSectionIntro'
 import PageSectionEcosystem from '../components/PageSectionEcosystem'
 import PageSectionTechnology from '../components/pageSections/PageSectionTechnology'
-import PageSectionNumbers from '../components/PageSectionNumbers'
+import PageSectionNumbers from '../components/pageSections/PageSectionNumbers'
 import PageSectionMilestones from '../components/PageSectionMilestones'
 import PageSectionTodoList from '../components/PageSectionTodoList'
 import PageSectionFollowUs from '../components/PageSectionFollowUs'
@@ -42,15 +42,15 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
                 <SectionDivider />
               </>
             )}
-            {pageContent?.technologySection && (
+            {pageContent?.numbersSection && (
               <>
-                <PageSectionTechnology technologySection={pageContent.technologySection} />
+                <PageSectionNumbers numbersSection={pageContent.numbersSection} />
                 <SectionDivider />
               </>
             )}
-            {pageContent?.numbersSection && (
+            {pageContent?.technologySection && (
               <>
-                <PageSectionNumbers content={pageContent.numbersSection} />
+                <PageSectionTechnology technologySection={pageContent.technologySection} />
                 <SectionDivider />
               </>
             )}
@@ -107,6 +107,7 @@ export const pageQuery = graphql`
           ...PageSectionHero
           ...PageSectionIntro
           ...PageSectionTechnology
+          ...PageSectionNumbers
           ecosystemSection {
             title
             subtitle
@@ -124,10 +125,6 @@ export const pageQuery = graphql`
                 }
               }
             }
-          }
-          numbersSection {
-            title
-            subtitle
           }
           walletsSection {
             title

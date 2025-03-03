@@ -60,8 +60,20 @@ technologySection:
         - text: Resources
           url: https://docs.alephium.org/dapps/
 numbersSection:
-  title: Some numbers
-  subtitle: "We're passionate in our work and committed to outstanding quality and measurable results. Here are some of our numbers."
+  title: Made for Real Adoption. Built to Last.
+  cards:
+    - title: Fast
+      description: Alephium moves as fast as you do. With block times of just 8 seconds, sharding, and Proof-of-Less-Work, it delivers fast, efficient, and reliable performance - ready to scale as adoption grows.
+      stat: Over 10,000 transactions per second
+    - title: Scalable
+      description: Built to handle high throughput without sacrificing security, Alephium’s architecture ensures that fees remain predictable and affordable - empowering developers and users alike.
+      stat: live-transactions
+    - title: Secure
+      description: With a truly decentralized Proof-of-Work model, Alephium operates independently of vulnerable central validators, ensuring maximum security, trustlessness, and censorship resistance.
+      stat: 125+ independent mining nodes
+    - title: Sustainable
+      description: Alephium’s Proof-of-Less-Work mechanism reduces energy consumption, making it one of the most sustainable and responsible blockchains built for the future.
+      stat: 87% lower environmental impact vs. traditional PoW
 walletsSection:
   title: The wallets
   subtitle: Designed for humans
