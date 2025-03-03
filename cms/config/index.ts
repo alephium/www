@@ -42,7 +42,7 @@ export default {
           fields: [
             {
               label: 'Technology section',
-              name: 'technologySection',
+              name: 'pageSectionTechContent',
               widget: 'object',
               required: true,
               fields: [
@@ -87,7 +87,7 @@ export default {
           fields: [
             {
               label: 'Header section',
-              name: 'headerSection',
+              name: 'pageSectionHeroContent',
               widget: 'object',
               required: true,
               fields: [
@@ -109,7 +109,7 @@ export default {
             },
             {
               label: 'Intro section',
-              name: 'introSection',
+              name: 'pageSectionIntroContent',
               widget: 'object',
               required: true,
               fields: [

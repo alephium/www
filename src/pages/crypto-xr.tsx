@@ -113,16 +113,6 @@ export const pageQuery = graphql`
     cryptoXR: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/cryptoXR.md/" } }) {
       nodes {
         frontmatter {
-          headerLandingSection {
-            tagline
-            title
-            date
-          }
-          introSection {
-            title
-            subtitle
-            description
-          }
           hackathonInfo {
             participantsInfo {
               title
@@ -159,35 +149,6 @@ export const pageQuery = graphql`
               prizeList {
                 title
                 description
-              }
-            }
-          }
-          rulesAndJudging {
-            title
-            subtitle
-            rules {
-              title
-              description
-            }
-            criteria {
-              title
-              description
-              criteriumList {
-                title
-                description
-              }
-            }
-            jury {
-              title
-              description
-              people {
-                name
-                role
-                picture {
-                  childImageSharp {
-                    gatsbyImageData(width: 200, placeholder: BLURRED, formats: [AUTO])
-                  }
-                }
               }
             }
           }

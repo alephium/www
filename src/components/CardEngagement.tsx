@@ -19,7 +19,7 @@ interface CardEngagementProps extends Queries.CardEngagementFragment {
 }
 
 export const query = graphql`
-  fragment CardEngagement on MarkdownRemarkFrontmatterIntroSectionCards {
+  fragment CardEngagement on MarkdownRemarkFrontmatterPageSectionIntroContentCards {
     title
     description
     image {

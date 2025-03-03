@@ -31,7 +31,7 @@ type StatsScalarData = { [key in StatScalarKeys]: StatScalar }
 
 export const query = graphql`
   fragment PageSectionNumbers on MarkdownRemarkFrontmatter {
-    numbersSection {
+    pageSectionStatsContent {
       title
       cards {
         ...CardStats
@@ -40,7 +40,7 @@ export const query = graphql`
   }
 `
 
-const PageSectionNumbers = ({ numbersSection }: PageSectionNumbersContentType) => {
+const PageSectionNumbers = ({ pageSectionStatsContent: content }: PageSectionNumbersContentType) => {
   const [explorerClient, setExplorerClient] = useState<ExplorerClient>()
   const [statsScalarData, setStatsScalarData] = useState<StatsScalarData>({
     totalTransactions: statScalarDefault
@@ -76,10 +76,10 @@ const PageSectionNumbers = ({ numbersSection }: PageSectionNumbersContentType) =
 
   return (
     <SectionContainer>
-      {numbersSection?.title && <SectionTextHeaderStyled title={numbersSection.title} centered bigSubtitle />}
+      {content?.title && <SectionTextHeaderStyled title={content.title} centered bigSubtitle />}
       <PageSectionContainer>
         <IntroColumns>
-          {numbersSection?.cards?.filter(notEmpty).map((card) => (
+          {content?.cards?.filter(notEmpty).map((card) => (
             <CardStats
               key={card.title}
               {...card}

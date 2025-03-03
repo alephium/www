@@ -1,5 +1,5 @@
 ---
-headerSection:
+pageSectionHeroContent:
   titleRows:
     - Proof of Work,
     - Engineered for the Future
@@ -10,7 +10,7 @@ headerSection:
   secondaryButton:
     text: Join the community
     url: /community
-introSection:
+pageSectionIntroContent:
   title: A Network Built by Visionaries
   subtitleRows:
     - Alephium is more than a blockchain - it’s a movement driven by those who refuse to compromise on security. Built and secured by a community of miners, developers, and innovators, Alephium embodies the core strengths of Proof-of-Work while pioneering energy efficiency and scalability.
@@ -31,7 +31,7 @@ introSection:
       description: Contribute to the security and stability of the Alephium network. Help maintain a decentralized network structure and ensure optimal performance and reliability for your decentralized applications.
       link:
         url: https://docs.alephium.org/full-node/
-technologySection:
+pageSectionTechContent:
   title: Built to Last. Designed to Scale.
   subtitle: Code is law, but security is everything.
   sections:
@@ -59,7 +59,7 @@ technologySection:
       links:
         - text: Resources
           url: https://docs.alephium.org/dapps/
-numbersSection:
+pageSectionStatsContent:
   title: Made for Real Adoption. Built to Last.
   cards:
     - title: Fast
@@ -74,6 +74,7 @@ numbersSection:
     - title: Sustainable
       description: Alephium’s Proof-of-Less-Work mechanism reduces energy consumption, making it one of the most sustainable and responsible blockchains built for the future.
       stat: 87% lower environmental impact vs. traditional PoW
+
 walletsSection:
   title: The wallets
   subtitle: Designed for humans
@@ -140,6 +141,7 @@ ecosystemSection:
         - title: 'UTXO Alliance'
           logo: '../images/svgs/utxo-aliance-logo-white.svg'
           url: https://utxo-alliance.org/
+
 milestonesSection:
   title: Completed milestones
   subtitle: Building every day

@@ -1,4 +1,4 @@
-import { FC, useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import styled, { css, ThemeProvider } from 'styled-components'
 
 import { darkTheme } from '../../styles/themes'
@@ -18,79 +18,9 @@ import { graphql } from 'gatsby'
 import Button from '../Button'
 import ArrowedLink from '../ArrowedLink'
 
-interface PageSectionHeroProps extends Queries.PageSectionHeroFragment {
-  className?: string
-}
-
-const PageSectionHero: FC<PageSectionHeroProps> = ({ className, ...props }) => {
-  const [sceneLoaded, setSceneLoaded] = useState(false)
-
-  const innerRef = useRef<HTMLElement>(null)
-  const inView = useInView(innerRef)
-
-  const content = props.headerSection
-
-  return (
-    <ThemeProvider theme={darkTheme}>
-      <PageSectionHeroStyled className={className} ref={innerRef}>
-        <HeroPageSectionContainer>
-          <LeftContentWrapper>
-            <TextContent>
-              {content?.titleRows && <Title>{content.titleRows.map((row) => row).join('\n')}</Title>}
-              <Separator />
-              {content?.subtitle && <Boilerplate>{content.subtitle}</Boilerplate>}
-            </TextContent>
-            <Buttons>
-              {content?.primaryButton && content.primaryButton.url && (
-                <Button url={content.primaryButton.url}>{content.primaryButton.text}</Button>
-              )}
-              {content?.secondaryButton && content.secondaryButton.url && (
-                <ArrowedLink
-                  key={content.secondaryButton.text}
-                  trackingName={`hero-section:${content.secondaryButton.text?.replaceAll(' ', '-')}-link`}
-                  url={content.secondaryButton.url}
-                >
-                  {content.secondaryButton.text}
-                </ArrowedLink>
-              )}
-            </Buttons>
-            <ArrowLink
-              href="#intro"
-              aria-label="Scroll to the intro section"
-              data-goatcounter-click="hero-section:arrow-down"
-            >
-              <ArrowDown />
-            </ArrowLink>
-          </LeftContentWrapper>
-        </HeroPageSectionContainer>
-        <AnimatePresence>
-          {(isMobile || !sceneLoaded) && (
-            <ThreeDimensionSceneContainer
-              style={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1 }}
-            >
-              <PlaceholderImage src={placeholderImage} />
-            </ThreeDimensionSceneContainer>
-          )}
-        </AnimatePresence>
-        {!isMobile && (
-          <ThreeDimensionSceneContainer animate={{ opacity: sceneLoaded && inView ? 1 : 0 }}>
-            <Spline
-              scene="https://prod.spline.design/NqiuAD2RdAocCcLo/scene.splinecode"
-              onLoad={() => setSceneLoaded(true)}
-            />
-          </ThreeDimensionSceneContainer>
-        )}
-      </PageSectionHeroStyled>
-    </ThemeProvider>
-  )
-}
-
 export const query = graphql`
   fragment PageSectionHero on MarkdownRemarkFrontmatter {
-    headerSection {
+    pageSectionHeroContent {
       titleRows
       subtitle
       primaryButton {
@@ -105,35 +35,96 @@ export const query = graphql`
   }
 `
 
-const Buttons = styled.div`
-  display: flex;
-  gap: var(--spacing-4);
-  margin-bottom: var(--spacing-8);
-`
+const PageSectionHero = ({ pageSectionHeroContent: content }: Queries.PageSectionHeroFragment) => {
+  const innerRef = useRef<HTMLElement>(null)
+  const inView = useInView(innerRef)
+
+  const [sceneLoaded, setSceneLoaded] = useState(false)
+
+  return (
+    <ThemeProvider theme={darkTheme}>
+      <PageSectionHeroStyled ref={innerRef}>
+        <HeroPageSectionContainer>
+          <LeftContentWrapper>
+            <TextContent>
+              {content?.titleRows && <Title>{content.titleRows.map((row) => row).join('\n')}</Title>}
+              {content?.subtitle && (
+                <>
+                  <Separator />
+                  <Boilerplate>{content.subtitle}</Boilerplate>
+                </>
+              )}
+            </TextContent>
+
+            {(content?.primaryButton || content?.secondaryButton) && (
+              <Buttons>
+                {content?.primaryButton && content.primaryButton.url && (
+                  <Button
+                    url={content.primaryButton.url}
+                    trackingName={`hero-section:${content.primaryButton.text?.replaceAll(' ', '-')}-link`}
+                  >
+                    {content.primaryButton.text}
+                  </Button>
+                )}
+                {content?.secondaryButton && content.secondaryButton.url && (
+                  <ArrowedLink
+                    url={content.secondaryButton.url}
+                    trackingName={`hero-section:${content.secondaryButton.text?.replaceAll(' ', '-')}-link`}
+                  >
+                    {content.secondaryButton.text}
+                  </ArrowedLink>
+                )}
+              </Buttons>
+            )}
+
+            <ArrowLink
+              href="#intro"
+              aria-label="Scroll to the intro section"
+              data-goatcounter-click="hero-section:arrow-down"
+            >
+              <ArrowDown />
+            </ArrowLink>
+          </LeftContentWrapper>
+        </HeroPageSectionContainer>
+
+        <AnimatePresence>
+          {(isMobile || !sceneLoaded) && (
+            <ThreeDimensionSceneContainer
+              style={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1 }}
+            >
+              <PlaceholderImage src={placeholderImage} />
+            </ThreeDimensionSceneContainer>
+          )}
+        </AnimatePresence>
+
+        {!isMobile && (
+          <ThreeDimensionSceneContainer animate={{ opacity: sceneLoaded && inView ? 1 : 0 }}>
+            <Spline
+              scene="https://prod.spline.design/NqiuAD2RdAocCcLo/scene.splinecode"
+              onLoad={() => setSceneLoaded(true)}
+            />
+          </ThreeDimensionSceneContainer>
+        )}
+      </PageSectionHeroStyled>
+    </ThemeProvider>
+  )
+}
+
+export default PageSectionHero
 
 const PageSectionHeroStyled = styled.section`
   position: relative;
   min-height: 100vh;
   overflow: hidden;
-  ${({ theme }) => css`
-    background: linear-gradient(black 0%, black 40%, ${theme.bgSecondary}) 100%;
-  `};
   transition: all 0.4s ease-in;
   display: flex;
 
-  .contents {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-grow: 1;
-    z-index: 1;
-
-    .text-content {
-      @media ${deviceBreakPoints.mobile} {
-        color: ${({ theme }) => theme.textPrimary};
-      }
-    }
-  }
+  ${({ theme }) => css`
+    background: linear-gradient(black 0%, black 40%, ${theme.bgSecondary}) 100%;
+  `};
 `
 
 const LeftContentWrapper = styled.div`
@@ -243,4 +234,8 @@ const PlaceholderImage = styled.img`
   object-fit: cover;
 `
 
-export default PageSectionHero
+const Buttons = styled.div`
+  display: flex;
+  gap: var(--spacing-4);
+  margin-bottom: var(--spacing-8);
+`

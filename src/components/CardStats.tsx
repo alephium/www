@@ -17,7 +17,7 @@ interface CardStatsProps extends Queries.CardStatsFragment {
 }
 
 export const query = graphql`
-  fragment CardStats on MarkdownRemarkFrontmatterNumbersSectionCards {
+  fragment CardStats on MarkdownRemarkFrontmatterPageSectionStatsContentCards {
     title
     description
     stat

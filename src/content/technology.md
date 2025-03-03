@@ -1,5 +1,5 @@
 ---
-technologySection:
+pageSectionTechContent:
   title: Technology
   subtitle: What makes Alephium different?
   blockFlowSection:

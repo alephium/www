@@ -1,4 +1,4 @@
-import { ComponentProps, FC } from 'react'
+import { ComponentProps } from 'react'
 import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../../styles/global-style'
@@ -26,13 +26,9 @@ import ParallaxWrapper from '../ParallaxWrapper'
 import { graphql } from 'gatsby'
 import { notEmpty } from '../../utils/misc'
 
-export interface PageSectionTechnologyContentType extends Queries.PageSectionTechnologyFragment {
-  className?: string
-}
-
 export const query = graphql`
   fragment PageSectionTechnology on MarkdownRemarkFrontmatter {
-    technologySection {
+    pageSectionTechContent {
       title
       subtitle
       sections {
@@ -43,7 +39,7 @@ export const query = graphql`
   }
 `
 
-const PageSectionTechnology: FC<PageSectionTechnologyContentType> = ({ className, technologySection }) => {
+const PageSectionTechnology = ({ pageSectionTechContent: content }: Queries.PageSectionTechnologyFragment) => {
   const [gradientRef] = useRefScrollProgress()
 
   const columnsProps: Omit<ComponentProps<typeof Columns>, 'children'> = {
@@ -52,16 +48,11 @@ const PageSectionTechnology: FC<PageSectionTechnologyContentType> = ({ className
   }
 
   return (
-    <SectionContainer className={className} ref={gradientRef}>
-      {technologySection && technologySection.title && technologySection.subtitle && (
-        <SectionTextHeaderStyled
-          title={technologySection.title}
-          subtitle={technologySection.subtitle}
-          centered
-          bigSubtitle
-        />
+    <SectionContainer ref={gradientRef}>
+      {content?.title && content?.subtitle && (
+        <SectionTextHeaderStyled title={content.title} subtitle={content.subtitle} centered bigSubtitle />
       )}
-      {technologySection?.sections?.filter(notEmpty).map((section) => (
+      {content?.sections?.filter(notEmpty).map((section) => (
         <TechSection key={section.title}>
           <PageSectionContainer>
             <Columns {...columnsProps}>

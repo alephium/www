@@ -1,4 +1,3 @@
-import { FC } from 'react'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
@@ -12,13 +11,9 @@ import { deviceBreakPoints } from '../../styles/global-style'
 import { graphql } from 'gatsby'
 import { notEmpty } from '../../utils/misc'
 
-interface PageSectionIntroProps extends Queries.PageSectionIntroFragment {
-  className?: string
-}
-
 export const query = graphql`
   fragment PageSectionIntro on MarkdownRemarkFrontmatter {
-    introSection {
+    pageSectionIntroContent {
       title
       subtitleRows
       cards {
@@ -28,26 +23,22 @@ export const query = graphql`
   }
 `
 
-const PageSectionIntro: FC<PageSectionIntroProps> = ({ className, introSection }) => (
-  <SectionContainer className={className} id="intro">
-    {introSection?.title && (
-      <SectionTextHeader
-        bigSubtitle
-        title={introSection.title}
-        subtitle={introSection?.subtitleRows?.filter(notEmpty)}
-      />
+const PageSectionIntro = ({ pageSectionIntroContent: content }: Queries.PageSectionIntroFragment) => (
+  <SectionContainer id="intro">
+    {content?.title && (
+      <SectionTextHeader bigSubtitle title={content.title} subtitle={content?.subtitleRows?.filter(notEmpty)} />
     )}
     <PageSectionContainer>
       <IntroColumns gap="var(--spacing-32)">
         <Column>
-          {introSection?.cards && (
+          {content?.cards && (
             <IntroColumnContent
               variants={cardContainerVariants}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
             >
-              {introSection?.cards.filter(notEmpty).map((card) => (
+              {content?.cards.filter(notEmpty).map((card) => (
                 <CardEngagement
                   title={card.title}
                   description={card.description}
@@ -67,6 +58,8 @@ const PageSectionIntro: FC<PageSectionIntroProps> = ({ className, introSection }
     </PageSectionContainer>
   </SectionContainer>
 )
+
+export default PageSectionIntro
 
 const cardContainerVariants = {
   hidden: { opacity: 0 },
@@ -112,5 +105,3 @@ const IntroColumnContent = styled(motion.div)`
     flex-wrap: wrap;
   }
 `
-
-export default PageSectionIntro
