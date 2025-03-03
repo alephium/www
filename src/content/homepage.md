@@ -11,26 +11,27 @@ headerSection:
     text: Join the community
     url: /community
 introSection:
-  title: Start
-  subtitle: Begin your Alephium journey
+  title: A Network Built by Visionaries
+  subtitleRows:
+    - Alephium is more than a blockchain - it’s a movement driven by those who refuse to compromise on security. Built and secured by a community of miners, developers, and innovators, Alephium embodies the core strengths of Proof-of-Work while pioneering energy efficiency and scalability.
+    - We're not here to follow trends - we’re here to build a secure and sustainable foundation for the future of finance.
   cards:
+    - title: ALPH Coin Basics
+      image: ../images/coins.svg
+      description: What powers Alephium? Discover ALPH and how it fuels the network.
+      link:
+        url: /get-started
     - title: Start Building
       image: ../images/code.svg
-      description: 'Start building your own smart contracts, decentralized apps, and protocols.'
+      description: Deploy secure smart contracts, create scalable dApps, or integrate Alephium into your existing project.
       link:
         url: https://docs.alephium.org
         newTab: true
-    - title: Start Contributing
-      image: ../images/coins.svg
-      description: 'Apply for a grant to develop your own project on Alephium. Receive rewards for contributing to any initiatives bringing value to the project.'
-      link:
-        url: https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md
-        newTab: true
-    - title: Start Mining
+    - title: Run a Full Node
       image: ../images/mining.svg
-      description: 'Start mining to contribute to the network security and receive ALPH rewards.'
+      description: Contribute to the security and stability of the Alephium network. Help maintain a decentralized network structure and ensure optimal performance and reliability for your decentralized applications.
       link:
-        url: https://docs.alephium.org/mining/solo-mining-guide/
+        url: https://docs.alephium.org/full-node/
         newTab: true
 technologySection:
   title: Technology

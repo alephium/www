@@ -3,22 +3,34 @@ import styled, { useTheme } from 'styled-components'
 
 import Card from './Card'
 import CardTextTeaser from './CardTextTeaser'
-import SimpleLink, { SimpleLinkProps } from './SimpleLink'
+import SimpleLink from './SimpleLink'
 
 import { deviceBreakPoints } from '../styles/global-style'
 import { motion, useMotionValue, useTransform, Variants } from 'framer-motion'
 import CursorHighlight from './CursorHighlight'
 import { getPointerRelativePositionInElement } from '../utils/pointer'
+import { graphql } from 'gatsby'
 
-interface CardEngagementProps {
-  title: string
-  link: SimpleLinkProps
-  image: { publicURL: string }
+interface CardEngagementProps extends Queries.CardEngagementFragment {
   children: ReactNode
   className?: string
   trackingName?: string
   variants?: Variants
 }
+
+export const query = graphql`
+  fragment CardEngagement on MarkdownRemarkFrontmatterIntroSectionCards {
+    title
+    description
+    image {
+      publicURL
+    }
+    link {
+      url
+      newTab
+    }
+  }
+`
 
 const CardEngagement: FC<CardEngagementProps> = ({
   title,
@@ -71,8 +83,8 @@ const CardEngagement: FC<CardEngagementProps> = ({
           transition={{ duration: 0.2 }}
         >
           <div className="card-contents">
-            <Iconic src={image.publicURL} alt={title} />
-            <CardTextTeaser title={title}>{children}</CardTextTeaser>
+            {image?.publicURL && <Iconic src={image.publicURL} alt={title ?? ''} />}
+            {title && <CardTextTeaser title={title}>{children}</CardTextTeaser>}
           </div>
           <CursorHighlight />
         </CardContainer>

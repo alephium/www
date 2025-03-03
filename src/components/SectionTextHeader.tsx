@@ -11,7 +11,7 @@ interface SectionTextHeaderProps {
   className?: string
   id?: string
   title: string
-  subtitle: string
+  subtitle?: string[] | string
   bigSubtitle?: boolean
   bigText?: boolean
   centered?: boolean

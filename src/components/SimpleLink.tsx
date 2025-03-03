@@ -3,9 +3,9 @@ import styled from 'styled-components'
 
 export interface SimpleLinkProps {
   className?: string
-  url?: string | undefined
+  url?: string | undefined | null
   text?: string
-  newTab?: boolean
+  newTab?: boolean | null
   color?: string
   openModal?: (x: boolean) => void
   trackingName?: string
@@ -27,7 +27,7 @@ const SimpleLink = ({ className, children, url, newTab, text, openModal, trackin
   ) : (
     <a
       className={className}
-      href={url}
+      href={url ?? undefined}
       target={(newTab && '_blank') || undefined}
       rel={(newTab && 'noopener noreferrer') || undefined}
       data-goatcounter-click={trackingName}

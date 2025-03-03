@@ -11,7 +11,7 @@ interface TextSnippetProps extends HTMLMotionProps<'div'> {
   title?: string
   titleHierarchy?: 'h2' | 'h3'
   bigTitle?: boolean
-  subtitle?: string
+  subtitle?: string[] | string
   bigSubtitle?: boolean
   smallSubtitle?: boolean
   bigText?: boolean
@@ -51,7 +51,15 @@ const TextSnippet = ({
           </TitleComponent>
         </>
       )}
-      {subtitle && <div className="text-subtitle">{subtitle}</div>}
+      {Array.isArray(subtitle) ? (
+        subtitle.map((subtitle) => (
+          <div className="text-subtitle" key={subtitle}>
+            {subtitle}
+          </div>
+        ))
+      ) : (
+        <div className="text-subtitle">{subtitle}</div>
+      )}
       {children && <div className="text-content">{children}</div>}
     </motion.div>
   )
@@ -76,6 +84,7 @@ export default styled(TextSnippet)`
     line-height: ${({ smallSubtitle }) => (smallSubtitle ? 'var(--lineHeight-22)' : 'var(--lineHeight-28)')};
     color: var(--color-grey-250);
     font-weight: var(--fontWeight-light);
+    line-height: 1.3;
   }
 
   .text-content {
