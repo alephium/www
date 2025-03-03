@@ -1,18 +1,15 @@
 ---
-topBanner:
-  text: ''
-  linkText: ''
-  url: ''
-  color: ''
 headerSection:
-  dark:
-    title: 'Scalable for devs.
-Secure for users.
-Decentralized for all.'
-    subtitle: 'Innovative sharding meets expressive sUTXO and efficient Proof-of-Less-Work to secure scalable dApps for real-world use cases.'
-  light:
-    title: Accessibility & Usability
-    subtitle: 'From its technical design to its interfaces, Alephium has been created to address the challenges of accessibility, scalability, and security encountered by decentralized applications today.'
+  titleRows:
+    - Proof of Work,
+    - Engineered for the Future
+  subtitle: 'Alephium brings the security of Proof-of-Work, the scalability of sharding, and the power of smart contracts to real-world applications.'
+  primaryButton:
+    text: Build on Alephium
+    url: https://docs.alephium.org
+  secondaryButton:
+    text: Join the community
+    url: /community
 introSection:
   title: Start
   subtitle: Begin your Alephium journey
@@ -64,7 +61,7 @@ technologySection:
         newTab: true
   vmsSection:
     title: Its own Virtual Machine & Programming Language.
-    description: "Alephium enhances developer experience and security with its Virtual Machine, SDK, and performance-optimized programming language. Its MEV-aware design and built-in security measures eliminate common attack vectors, such as reentrancy attacks, unlimited authorization and flash loans. Alephium allows devs to focus on what matters and pioneers entirely new possibilities for smart contracts, dApps and tokens."
+    description: 'Alephium enhances developer experience and security with its Virtual Machine, SDK, and performance-optimized programming language. Its MEV-aware design and built-in security measures eliminate common attack vectors, such as reentrancy attacks, unlimited authorization and flash loans. Alephium allows devs to focus on what matters and pioneers entirely new possibilities for smart contracts, dApps and tokens.'
     links:
       - text: More details
 numbersSection:
@@ -100,7 +97,7 @@ walletsSection:
           link: https://play.google.com/store/apps/details?id=org.alephium.wallet
         - title: IOS
           link: https://apps.apple.com/us/app/alephium-wallet/id6469043072
-          
+
 ecosystemSection:
   title: Ecosystem
   subtitle: Growing fast
@@ -194,10 +191,10 @@ milestonesSection:
             - row: 3
               text: 'Leman Network Upgrade on Mainnet'
               when: '27.03.2023'
-              content: 
-                - 'Schnorr signatures and cross chain interoperability' 
+              content:
+                - 'Schnorr signatures and cross chain interoperability'
                 - 'New Asset Permission System and set of Virtual Machine (VM) instructions and building functions'
-                - 'Improved node APIs and SDK' 
+                - 'Improved node APIs and SDK'
                 - 'Improved difficulty adjustment algorithm (DAA)'
               isMajor: true
             - row: 4
@@ -225,16 +222,16 @@ milestonesSection:
             - row: 2
               text: 'Rhone Network Upgrade on Mainnet'
               when: '12.06.2024'
-              content: 
-                - 'Block time reduction to 16 seconds' 
+              content:
+                - 'Block time reduction to 16 seconds'
                 - 'Map data structure in Ralph'
-                - 'Sequential transactions' 
+                - 'Sequential transactions'
                 - 'On-chain Gasless transactions'
               isMajor: true
             - row: 3
               text: 'Alephium Bridge to BSC on Testnet'
               when: '09.2024'
-              
+
     - title: Ecosystem
       years:
         - year: 2019
@@ -259,11 +256,11 @@ milestonesSection:
               isMajor: true
             - row: 2
               text: 'Initiation of marketing initiatives'
-              content: 
+              content:
                 - 'Sponsoring of ErgoHack'
                 - 'AMAs'
                 - 'Community competitions'
-                - 'Campaigns' 
+                - 'Campaigns'
                 - 'Tech Talk Series, and more...'
               when: 'Q3.2022'
             - row: 3
@@ -327,7 +324,7 @@ milestonesSection:
               text: '215’000+ active addresses (+200% YTD) and 19 PH/s of global hashrate (+13’500% YTD)'
               content:
                 - '40+ projects on Alephium, Alephium nodes in 23+ countries'
-                - '74K+ smart contract contracts' 
+                - '74K+ smart contract contracts'
                 - '750 tokens'
                 - '250 NFT collections'
                 - '21k+ NFT deployed on Alephium'
@@ -341,113 +338,113 @@ todoListSection:
   title: What's next
   subtitle: Building an exciting future
   lists:
-  - title: Core Protocols (Full Node)
-    items:
-      - text: 'New Syncing Protocol'
-        description: 'Implement a faster syncing mechanism to reduce network load and enhance performance.'
-      - text: 'Optimized Chain Storage'
-        description: 'Enhance data retrieval systems and reduce storage size for improved scalability.'
-      - text: 'Core Sharding Algorithm Enhancements'
-        description: 'Refine the sharding algorithm for greater efficiency and lower network latency.'
-      - text: 'Reduced Block Time'
-        description: 'Decrease block time for quicker transactions incrementally (8s as a first step).'
-      - text: 'New Signature Primitives'
-        description: 'Introduce passwordless wallet technology with advanced cryptographic primitives for streamlined workflows. (passkeys)'
-      - text: 'Transaction Chaining'
-        description: 'Enable support for building and signing multiple transactions simultaneously.'
-      - text: 'New Elliptic Curves'
-        description: 'Implement new elliptic curves to support ZK technology, advanced signature schemes, and enhanced privacy features.'
-      - text: 'Smart Contract-Based Wallet Support'
-        description: 'Expand functionality/usability for smart contract-based wallets (incl. Multisig wallets).'
-      - text: 'Mempool Improvements'
-        description: 'Optimize transaction handling and propagation.'
-      - text: 'Cross-Group Communication'
-        description: 'Enhance full-node cross-group communication to strengthen interoperability.'
-      - text: 'Light Client Node Implementation'
-        description: 'Develop a light client node for improved accessibility.'
-      - text: 'Explorer Backend Improvements'
-        description: 'Expand token support and add contract support to the explorer backend for better visibility and interaction with smart contracts.'
-      - text: 'Multiple Client Implementations'
-        description: 'Create a Rust client to boost performance.'
-      - text: 'Increased Shard Count'
-        description: 'Scale up shard numbers to meet throughput demand (on a need basis).'
-      - text: 'Modularity for L2s'
-        description: 'Support for L2 launches through modularity.'
+    - title: Core Protocols (Full Node)
+      items:
+        - text: 'New Syncing Protocol'
+          description: 'Implement a faster syncing mechanism to reduce network load and enhance performance.'
+        - text: 'Optimized Chain Storage'
+          description: 'Enhance data retrieval systems and reduce storage size for improved scalability.'
+        - text: 'Core Sharding Algorithm Enhancements'
+          description: 'Refine the sharding algorithm for greater efficiency and lower network latency.'
+        - text: 'Reduced Block Time'
+          description: 'Decrease block time for quicker transactions incrementally (8s as a first step).'
+        - text: 'New Signature Primitives'
+          description: 'Introduce passwordless wallet technology with advanced cryptographic primitives for streamlined workflows. (passkeys)'
+        - text: 'Transaction Chaining'
+          description: 'Enable support for building and signing multiple transactions simultaneously.'
+        - text: 'New Elliptic Curves'
+          description: 'Implement new elliptic curves to support ZK technology, advanced signature schemes, and enhanced privacy features.'
+        - text: 'Smart Contract-Based Wallet Support'
+          description: 'Expand functionality/usability for smart contract-based wallets (incl. Multisig wallets).'
+        - text: 'Mempool Improvements'
+          description: 'Optimize transaction handling and propagation.'
+        - text: 'Cross-Group Communication'
+          description: 'Enhance full-node cross-group communication to strengthen interoperability.'
+        - text: 'Light Client Node Implementation'
+          description: 'Develop a light client node for improved accessibility.'
+        - text: 'Explorer Backend Improvements'
+          description: 'Expand token support and add contract support to the explorer backend for better visibility and interaction with smart contracts.'
+        - text: 'Multiple Client Implementations'
+          description: 'Create a Rust client to boost performance.'
+        - text: 'Increased Shard Count'
+          description: 'Scale up shard numbers to meet throughput demand (on a need basis).'
+        - text: 'Modularity for L2s'
+          description: 'Support for L2 launches through modularity.'
 
-  - title: DevX (Ralph & VM)
-    items:
-      - text: 'Intuitive Error Handling'
-        description: 'Develop an intuitive error handling system for full node endpoints to improve debugging and user experience.'
-      - text: 'Unit Tests in Ralph'
-        description: 'Support unit testing in native Ralph to enhance developer experience.'
-      - text: 'Expanded API Capabilities'
-        description: 'Expand API capabilities to support more use cases and improve development.'
-      - text: 'Ralph LSP Update'
-        description: "Push forward Ralph's Language Server Protocol (LSP) for better development tooling."
-      - text: 'Advanced dApps Interactions'
-        description: 'Enable more complex and advanced interactions with decentralized applications (dApps).'
-      - text: 'Continuous Documentation Updates'
-        description: 'Consistently update and expand developer documentation to keep it comprehensive and up-to-date.'
+    - title: DevX (Ralph & VM)
+      items:
+        - text: 'Intuitive Error Handling'
+          description: 'Develop an intuitive error handling system for full node endpoints to improve debugging and user experience.'
+        - text: 'Unit Tests in Ralph'
+          description: 'Support unit testing in native Ralph to enhance developer experience.'
+        - text: 'Expanded API Capabilities'
+          description: 'Expand API capabilities to support more use cases and improve development.'
+        - text: 'Ralph LSP Update'
+          description: "Push forward Ralph's Language Server Protocol (LSP) for better development tooling."
+        - text: 'Advanced dApps Interactions'
+          description: 'Enable more complex and advanced interactions with decentralized applications (dApps).'
+        - text: 'Continuous Documentation Updates'
+          description: 'Consistently update and expand developer documentation to keep it comprehensive and up-to-date.'
 
-  - title: Front-End & UX
-    items:
-      - text: 'Mobile Wallet Redesign'
-        description: 'Overhaul the mobile wallet interface for an always-better UX.'
-      - text: 'Hardware Wallet Support'
-        description: 'Add support for Ledger and other hardware wallets.'
-      - text: 'Watch-Only Wallets'
-        description: 'Introduce watch-only wallet functionality.'
-      - text: 'Multiple Wallet Support'
-        description: 'Allow management of multiple wallets in the mobile app.'
-      - text: 'Multisig Support'
-        description: 'Expand multisig support to both mobile and desktop wallets.'
-      - text: 'Automatic Cross-Group Asset Management'
-        description: 'Improve wallet cross-group UX.'
-      - text: 'Passkeys Integration'
-        description: 'Implement passkey functionality.'
-      - text: 'Integrated Ecosystem Section'
-        description: 'Easily interact with dApps within the wallets.'
-      - text: 'Token Prices'
-        description: 'Integrate token prices for a wider range of tokens.'
-      - text: 'Cloud Backup'
-        description: 'Offer cloud backup options for mobile wallet users.'
-      - text: 'Explorer Search Improvements'
-        description: 'Extend search capabilities in the explorer.'
-      - text: 'Token Details Pages'
-        description: 'Add detailed token pages in both Explorer and wallets.'
-      - text: 'Contract Code Verification'
-        description: 'Highlight contracts with source code in Explorer for greater transparency.'
-      - text: '3rd Party Integration'
-        description: 'Integrate with external wallets, payment solutions, and Web3 services.'
-      - text: 'On-Ramp Services'
-        description: 'Facilitate on-ramp services for easier user onboarding.'
-      - text: 'Website Update'
-        description: 'Refresh and update the website.'
+    - title: Front-End & UX
+      items:
+        - text: 'Mobile Wallet Redesign'
+          description: 'Overhaul the mobile wallet interface for an always-better UX.'
+        - text: 'Hardware Wallet Support'
+          description: 'Add support for Ledger and other hardware wallets.'
+        - text: 'Watch-Only Wallets'
+          description: 'Introduce watch-only wallet functionality.'
+        - text: 'Multiple Wallet Support'
+          description: 'Allow management of multiple wallets in the mobile app.'
+        - text: 'Multisig Support'
+          description: 'Expand multisig support to both mobile and desktop wallets.'
+        - text: 'Automatic Cross-Group Asset Management'
+          description: 'Improve wallet cross-group UX.'
+        - text: 'Passkeys Integration'
+          description: 'Implement passkey functionality.'
+        - text: 'Integrated Ecosystem Section'
+          description: 'Easily interact with dApps within the wallets.'
+        - text: 'Token Prices'
+          description: 'Integrate token prices for a wider range of tokens.'
+        - text: 'Cloud Backup'
+          description: 'Offer cloud backup options for mobile wallet users.'
+        - text: 'Explorer Search Improvements'
+          description: 'Extend search capabilities in the explorer.'
+        - text: 'Token Details Pages'
+          description: 'Add detailed token pages in both Explorer and wallets.'
+        - text: 'Contract Code Verification'
+          description: 'Highlight contracts with source code in Explorer for greater transparency.'
+        - text: '3rd Party Integration'
+          description: 'Integrate with external wallets, payment solutions, and Web3 services.'
+        - text: 'On-Ramp Services'
+          description: 'Facilitate on-ramp services for easier user onboarding.'
+        - text: 'Website Update'
+          description: 'Refresh and update the website.'
 
-  - title: Tools, Bridges, Research & Others
-    items:
-      - text: 'Proof of Concept Apps'
-        description: 'Develop new applications exploring advanced blockchain primitives and code templates for builders.'
-      - text: 'Cross-Chain Messaging (Wormhole)'
-        description: 'Investigate leveraging Wormhole for general cross-chain messaging.'
-      - text: 'Bridges to BSC & Other Chains'
-        description: 'Build bridges to Binance Smart Chain and additional blockchains.'
+    - title: Tools, Bridges, Research & Others
+      items:
+        - text: 'Proof of Concept Apps'
+          description: 'Develop new applications exploring advanced blockchain primitives and code templates for builders.'
+        - text: 'Cross-Chain Messaging (Wormhole)'
+          description: 'Investigate leveraging Wormhole for general cross-chain messaging.'
+        - text: 'Bridges to BSC & Other Chains'
+          description: 'Build bridges to Binance Smart Chain and additional blockchains.'
 
-  - title: Community & Ecosystem
-    items:
-      - text: 'Localized Content'
-        description: 'Increase the availability of localized content.'
-      - text: 'Ambassador Program'
-        description: 'Increase the number & reach of ambassadors.'
-      - text: 'Developer Onboarding'
-        description: 'Enhance the onboarding process for developers.'
-      - text: 'Alephium Hackathon & DevMeet-Up 2.0'
-        description: 'Organize the second edition of the hackathon and developer meet-ups.'
-      - text: 'Grant Program 2.0'
-        description: 'Revitalize the grant program to encourage more development.'
-      - text: 'Bounty Program Launch'
-        description: 'Initiate a new bounty program to incentivize community contributions.'
-          
+    - title: Community & Ecosystem
+      items:
+        - text: 'Localized Content'
+          description: 'Increase the availability of localized content.'
+        - text: 'Ambassador Program'
+          description: 'Increase the number & reach of ambassadors.'
+        - text: 'Developer Onboarding'
+          description: 'Enhance the onboarding process for developers.'
+        - text: 'Alephium Hackathon & DevMeet-Up 2.0'
+          description: 'Organize the second edition of the hackathon and developer meet-ups.'
+        - text: 'Grant Program 2.0'
+          description: 'Revitalize the grant program to encourage more development.'
+        - text: 'Bounty Program Launch'
+          description: 'Initiate a new bounty program to incentivize community contributions.'
+
 shopSection:
   title: SWALPH
   subtitle: Decentralized SWAG 🤘

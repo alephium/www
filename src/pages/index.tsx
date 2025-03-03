@@ -26,7 +26,6 @@ interface IndexPageProps extends PageProps {
       nodes: {
         frontmatter: {
           topBanner: TopBannerContentType
-          headerSection: PageSectionHeroContentType
           introSection: PageSectionIntroContentType
           technologySection: PageSectionTechnologyContentType
           numbersSection: PageSectionNumbersContentType
@@ -42,8 +41,9 @@ interface IndexPageProps extends PageProps {
   }
 }
 
-const IndexPage = (props: IndexPageProps) => {
+const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
   const pageContent = props.data.homepage.nodes[0].frontmatter
+  const heroSectionContent = pageContent?.headerSection
 
   return (
     <>
@@ -51,10 +51,9 @@ const IndexPage = (props: IndexPageProps) => {
       <ThemeProvider theme={darkTheme}>
         <GlobalStyle />
         <SiteWrapper>
-          <TopBanner content={pageContent.topBanner} />
-          <NavigationMenu topOffset={pageContent.topBanner.text ? 80 : 0} />
+          <NavigationMenu />
           <ContentContainer>
-            <PageSectionHero content={pageContent.headerSection} />
+            {heroSectionContent && <PageSectionHero headerSection={heroSectionContent} />}
             <SectionDivider />
             <PageSectionIntro content={pageContent.introSection} />
             <SectionDivider />
@@ -90,22 +89,7 @@ export const pageQuery = graphql`
     homepage: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/homepage.md/" } }) {
       nodes {
         frontmatter {
-          topBanner {
-            text
-            linkText
-            url
-            color
-          }
-          headerSection {
-            dark {
-              title
-              subtitle
-            }
-            light {
-              title
-              subtitle
-            }
-          }
+          ...PageSectionHero
           introSection {
             title
             subtitle

@@ -14,30 +14,21 @@ import { AnimatePresence, motion, useInView } from 'framer-motion'
 import placeholderImage from '../images/3d-hero-placeholder.jpg'
 
 import { isMobile } from '../utils/misc'
+import { graphql } from 'gatsby'
+import Button from './Button'
+import ArrowedLink from './ArrowedLink'
 
-export interface PageSectionHeroContentType {
-  dark: {
-    title: string
-    subtitle: string
-  }
-  light: {
-    title: string
-    subtitle: string
-  }
-}
-
-interface PageSectionHeroProps {
+interface PageSectionHeroProps extends Queries.PageSectionHeroFragment {
   className?: string
-  content: PageSectionHeroContentType
 }
 
-const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
+const PageSectionHero: FC<PageSectionHeroProps> = ({ className, ...props }) => {
   const [sceneLoaded, setSceneLoaded] = useState(false)
 
   const innerRef = useRef<HTMLElement>(null)
   const inView = useInView(innerRef)
 
-  const themeContent = content.dark
+  const content = props.headerSection
 
   return (
     <ThemeProvider theme={darkTheme}>
@@ -45,41 +36,26 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
         <HeroPageSectionContainer>
           <LeftContentWrapper>
             <TextContent>
-              <Title>
-                <div>
-                  Scalable for{' '}
-                  <motion.span
-                    initial={{ color: 'rgb(44, 208, 242)' }}
-                    animate={{ color: 'rgb(44, 146, 242)' }}
-                    transition={{ duration: 2, repeat: Infinity, repeatType: 'mirror' }}
-                  >
-                    devs.
-                  </motion.span>
-                </div>
-                <div>
-                  Secure for{' '}
-                  <motion.span
-                    initial={{ color: 'rgb(242, 160, 44)' }}
-                    animate={{ color: 'rgb(242, 94, 44)' }}
-                    transition={{ duration: 1.8, repeat: Infinity, repeatType: 'mirror' }}
-                  >
-                    users.
-                  </motion.span>
-                </div>
-                <div>
-                  Decentralized for{' '}
-                  <motion.span
-                    initial={{ color: 'rgb(248, 84, 166)' }}
-                    animate={{ color: 'rgb(242, 39, 100)' }}
-                    transition={{ duration: 2.4, repeat: Infinity, repeatType: 'mirror' }}
-                  >
-                    all.
-                  </motion.span>
-                </div>
-              </Title>
+              {content?.titleRows && <Title>{content.titleRows.map((row) => row).join('\n')}</Title>}
               <Separator />
-              <Boilerplate>{themeContent.subtitle}</Boilerplate>
+              {content?.subtitle && <Boilerplate>{content.subtitle}</Boilerplate>}
             </TextContent>
+            <Buttons>
+              {content?.primaryButton && content.primaryButton.url && (
+                <Button newTab url={content.primaryButton.url}>
+                  {content.primaryButton.text}
+                </Button>
+              )}
+              {content?.secondaryButton && content.secondaryButton.url && (
+                <ArrowedLink
+                  key={content.secondaryButton.text}
+                  trackingName={`hero-section:${content.secondaryButton.text?.replaceAll(' ', '-')}-link`}
+                  url={content.secondaryButton.url}
+                >
+                  {content.secondaryButton.text}
+                </ArrowedLink>
+              )}
+            </Buttons>
             <ArrowLink
               href="#intro"
               aria-label="Scroll to the intro section"
@@ -113,6 +89,29 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, content }) => {
     </ThemeProvider>
   )
 }
+
+export const query = graphql`
+  fragment PageSectionHero on MarkdownRemarkFrontmatter {
+    headerSection {
+      titleRows
+      subtitle
+      primaryButton {
+        text
+        url
+      }
+      secondaryButton {
+        text
+        url
+      }
+    }
+  }
+`
+
+const Buttons = styled.div`
+  display: flex;
+  gap: var(--spacing-4);
+  margin-bottom: var(--spacing-8);
+`
 
 const PageSectionHeroStyled = styled.section`
   position: relative;
@@ -206,6 +205,7 @@ const Boilerplate = styled.span`
   font-size: 24px;
   font-weight: var(--fontWeight-light);
   margin-bottom: var(--spacing-8);
+  line-height: 1.2;
 
   @media ${deviceBreakPoints.mobile} {
     font-size: 26px !important;

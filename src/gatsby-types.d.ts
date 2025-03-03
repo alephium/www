@@ -1455,7 +1455,6 @@ type MarkdownRemarkFrontmatter = {
   readonly technologySection: Maybe<MarkdownRemarkFrontmatterTechnologySection>;
   readonly title: Maybe<Scalars['String']>;
   readonly todoListSection: Maybe<MarkdownRemarkFrontmatterTodoListSection>;
-  readonly topBanner: Maybe<MarkdownRemarkFrontmatterTopBanner>;
   readonly walletsSection: Maybe<MarkdownRemarkFrontmatterWalletsSection>;
 };
 
@@ -1651,7 +1650,6 @@ type MarkdownRemarkFrontmatterFieldSelector = {
   readonly technologySection: InputMaybe<MarkdownRemarkFrontmatterTechnologySectionFieldSelector>;
   readonly title: InputMaybe<FieldSelectorEnum>;
   readonly todoListSection: InputMaybe<MarkdownRemarkFrontmatterTodoListSectionFieldSelector>;
-  readonly topBanner: InputMaybe<MarkdownRemarkFrontmatterTopBannerFieldSelector>;
   readonly walletsSection: InputMaybe<MarkdownRemarkFrontmatterWalletsSectionFieldSelector>;
 };
 
@@ -1675,7 +1673,6 @@ type MarkdownRemarkFrontmatterFilterInput = {
   readonly technologySection: InputMaybe<MarkdownRemarkFrontmatterTechnologySectionFilterInput>;
   readonly title: InputMaybe<StringQueryOperatorInput>;
   readonly todoListSection: InputMaybe<MarkdownRemarkFrontmatterTodoListSectionFilterInput>;
-  readonly topBanner: InputMaybe<MarkdownRemarkFrontmatterTopBannerFilterInput>;
   readonly walletsSection: InputMaybe<MarkdownRemarkFrontmatterWalletsSectionFilterInput>;
 };
 
@@ -2020,63 +2017,71 @@ type MarkdownRemarkFrontmatterHeaderLandingSectionSortInput = {
 };
 
 type MarkdownRemarkFrontmatterHeaderSection = {
-  readonly dark: Maybe<MarkdownRemarkFrontmatterHeaderSectionDark>;
-  readonly light: Maybe<MarkdownRemarkFrontmatterHeaderSectionLight>;
-};
-
-type MarkdownRemarkFrontmatterHeaderSectionDark = {
+  readonly primaryButton: Maybe<MarkdownRemarkFrontmatterHeaderSectionPrimaryButton>;
+  readonly secondaryButton: Maybe<MarkdownRemarkFrontmatterHeaderSectionSecondaryButton>;
   readonly subtitle: Maybe<Scalars['String']>;
-  readonly title: Maybe<Scalars['String']>;
-};
-
-type MarkdownRemarkFrontmatterHeaderSectionDarkFieldSelector = {
-  readonly subtitle: InputMaybe<FieldSelectorEnum>;
-  readonly title: InputMaybe<FieldSelectorEnum>;
-};
-
-type MarkdownRemarkFrontmatterHeaderSectionDarkFilterInput = {
-  readonly subtitle: InputMaybe<StringQueryOperatorInput>;
-  readonly title: InputMaybe<StringQueryOperatorInput>;
-};
-
-type MarkdownRemarkFrontmatterHeaderSectionDarkSortInput = {
-  readonly subtitle: InputMaybe<SortOrderEnum>;
-  readonly title: InputMaybe<SortOrderEnum>;
+  readonly titleRows: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
 };
 
 type MarkdownRemarkFrontmatterHeaderSectionFieldSelector = {
-  readonly dark: InputMaybe<MarkdownRemarkFrontmatterHeaderSectionDarkFieldSelector>;
-  readonly light: InputMaybe<MarkdownRemarkFrontmatterHeaderSectionLightFieldSelector>;
+  readonly primaryButton: InputMaybe<MarkdownRemarkFrontmatterHeaderSectionPrimaryButtonFieldSelector>;
+  readonly secondaryButton: InputMaybe<MarkdownRemarkFrontmatterHeaderSectionSecondaryButtonFieldSelector>;
+  readonly subtitle: InputMaybe<FieldSelectorEnum>;
+  readonly titleRows: InputMaybe<FieldSelectorEnum>;
 };
 
 type MarkdownRemarkFrontmatterHeaderSectionFilterInput = {
-  readonly dark: InputMaybe<MarkdownRemarkFrontmatterHeaderSectionDarkFilterInput>;
-  readonly light: InputMaybe<MarkdownRemarkFrontmatterHeaderSectionLightFilterInput>;
-};
-
-type MarkdownRemarkFrontmatterHeaderSectionLight = {
-  readonly subtitle: Maybe<Scalars['String']>;
-  readonly title: Maybe<Scalars['String']>;
-};
-
-type MarkdownRemarkFrontmatterHeaderSectionLightFieldSelector = {
-  readonly subtitle: InputMaybe<FieldSelectorEnum>;
-  readonly title: InputMaybe<FieldSelectorEnum>;
-};
-
-type MarkdownRemarkFrontmatterHeaderSectionLightFilterInput = {
+  readonly primaryButton: InputMaybe<MarkdownRemarkFrontmatterHeaderSectionPrimaryButtonFilterInput>;
+  readonly secondaryButton: InputMaybe<MarkdownRemarkFrontmatterHeaderSectionSecondaryButtonFilterInput>;
   readonly subtitle: InputMaybe<StringQueryOperatorInput>;
-  readonly title: InputMaybe<StringQueryOperatorInput>;
+  readonly titleRows: InputMaybe<StringQueryOperatorInput>;
 };
 
-type MarkdownRemarkFrontmatterHeaderSectionLightSortInput = {
-  readonly subtitle: InputMaybe<SortOrderEnum>;
-  readonly title: InputMaybe<SortOrderEnum>;
+type MarkdownRemarkFrontmatterHeaderSectionPrimaryButton = {
+  readonly text: Maybe<Scalars['String']>;
+  readonly url: Maybe<Scalars['String']>;
+};
+
+type MarkdownRemarkFrontmatterHeaderSectionPrimaryButtonFieldSelector = {
+  readonly text: InputMaybe<FieldSelectorEnum>;
+  readonly url: InputMaybe<FieldSelectorEnum>;
+};
+
+type MarkdownRemarkFrontmatterHeaderSectionPrimaryButtonFilterInput = {
+  readonly text: InputMaybe<StringQueryOperatorInput>;
+  readonly url: InputMaybe<StringQueryOperatorInput>;
+};
+
+type MarkdownRemarkFrontmatterHeaderSectionPrimaryButtonSortInput = {
+  readonly text: InputMaybe<SortOrderEnum>;
+  readonly url: InputMaybe<SortOrderEnum>;
+};
+
+type MarkdownRemarkFrontmatterHeaderSectionSecondaryButton = {
+  readonly text: Maybe<Scalars['String']>;
+  readonly url: Maybe<Scalars['String']>;
+};
+
+type MarkdownRemarkFrontmatterHeaderSectionSecondaryButtonFieldSelector = {
+  readonly text: InputMaybe<FieldSelectorEnum>;
+  readonly url: InputMaybe<FieldSelectorEnum>;
+};
+
+type MarkdownRemarkFrontmatterHeaderSectionSecondaryButtonFilterInput = {
+  readonly text: InputMaybe<StringQueryOperatorInput>;
+  readonly url: InputMaybe<StringQueryOperatorInput>;
+};
+
+type MarkdownRemarkFrontmatterHeaderSectionSecondaryButtonSortInput = {
+  readonly text: InputMaybe<SortOrderEnum>;
+  readonly url: InputMaybe<SortOrderEnum>;
 };
 
 type MarkdownRemarkFrontmatterHeaderSectionSortInput = {
-  readonly dark: InputMaybe<MarkdownRemarkFrontmatterHeaderSectionDarkSortInput>;
-  readonly light: InputMaybe<MarkdownRemarkFrontmatterHeaderSectionLightSortInput>;
+  readonly primaryButton: InputMaybe<MarkdownRemarkFrontmatterHeaderSectionPrimaryButtonSortInput>;
+  readonly secondaryButton: InputMaybe<MarkdownRemarkFrontmatterHeaderSectionSecondaryButtonSortInput>;
+  readonly subtitle: InputMaybe<SortOrderEnum>;
+  readonly titleRows: InputMaybe<SortOrderEnum>;
 };
 
 type MarkdownRemarkFrontmatterIntroSection = {
@@ -2559,7 +2564,6 @@ type MarkdownRemarkFrontmatterSortInput = {
   readonly technologySection: InputMaybe<MarkdownRemarkFrontmatterTechnologySectionSortInput>;
   readonly title: InputMaybe<SortOrderEnum>;
   readonly todoListSection: InputMaybe<MarkdownRemarkFrontmatterTodoListSectionSortInput>;
-  readonly topBanner: InputMaybe<MarkdownRemarkFrontmatterTopBannerSortInput>;
   readonly walletsSection: InputMaybe<MarkdownRemarkFrontmatterWalletsSectionSortInput>;
 };
 
@@ -2889,34 +2893,6 @@ type MarkdownRemarkFrontmatterTodoListSectionSortInput = {
   readonly lists: InputMaybe<MarkdownRemarkFrontmatterTodoListSectionListsSortInput>;
   readonly subtitle: InputMaybe<SortOrderEnum>;
   readonly title: InputMaybe<SortOrderEnum>;
-};
-
-type MarkdownRemarkFrontmatterTopBanner = {
-  readonly color: Maybe<Scalars['String']>;
-  readonly linkText: Maybe<Scalars['String']>;
-  readonly text: Maybe<Scalars['String']>;
-  readonly url: Maybe<Scalars['String']>;
-};
-
-type MarkdownRemarkFrontmatterTopBannerFieldSelector = {
-  readonly color: InputMaybe<FieldSelectorEnum>;
-  readonly linkText: InputMaybe<FieldSelectorEnum>;
-  readonly text: InputMaybe<FieldSelectorEnum>;
-  readonly url: InputMaybe<FieldSelectorEnum>;
-};
-
-type MarkdownRemarkFrontmatterTopBannerFilterInput = {
-  readonly color: InputMaybe<StringQueryOperatorInput>;
-  readonly linkText: InputMaybe<StringQueryOperatorInput>;
-  readonly text: InputMaybe<StringQueryOperatorInput>;
-  readonly url: InputMaybe<StringQueryOperatorInput>;
-};
-
-type MarkdownRemarkFrontmatterTopBannerSortInput = {
-  readonly color: InputMaybe<SortOrderEnum>;
-  readonly linkText: InputMaybe<SortOrderEnum>;
-  readonly text: InputMaybe<SortOrderEnum>;
-  readonly url: InputMaybe<SortOrderEnum>;
 };
 
 type MarkdownRemarkFrontmatterWalletsSection = {
@@ -4589,12 +4565,14 @@ type GatsbyImageSharpFluidLimitPresentationSizeFragment = { readonly maxHeight: 
 type IndexPageQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-type IndexPageQuery = { readonly homepage: { readonly nodes: ReadonlyArray<{ readonly frontmatter: { readonly topBanner: { readonly text: string | null, readonly linkText: string | null, readonly url: string | null, readonly color: string | null } | null, readonly headerSection: { readonly dark: { readonly title: string | null, readonly subtitle: string | null } | null, readonly light: { readonly title: string | null, readonly subtitle: string | null } | null } | null, readonly introSection: { readonly title: string | null, readonly subtitle: string | null, readonly cards: ReadonlyArray<{ readonly title: string | null, readonly description: string | null, readonly image: { readonly publicURL: string | null } | null, readonly link: { readonly url: string | null, readonly newTab: boolean | null } | null } | null> | null } | null, readonly ecosystemSection: { readonly title: string | null, readonly subtitle: string | null, readonly subsections: ReadonlyArray<{ readonly title: string | null, readonly description: string | null, readonly image: { readonly publicURL: string | null } | null, readonly items: ReadonlyArray<{ readonly title: string | null, readonly url: string | null, readonly logo: { readonly publicURL: string | null } | null } | null> | null } | null> | null } | null, readonly technologySection: { readonly title: string | null, readonly subtitle: string | null, readonly blockFlowSection: { readonly title: string | null, readonly description: string | null, readonly links: ReadonlyArray<{ readonly text: string | null, readonly url: string | null, readonly newTab: boolean | null } | null> | null } | null, readonly smartContractSection: { readonly title: string | null, readonly description: string | null, readonly links: ReadonlyArray<{ readonly text: string | null, readonly url: string | null, readonly newTab: boolean | null } | null> | null } | null, readonly polwSection: { readonly title: string | null, readonly description: string | null, readonly links: ReadonlyArray<{ readonly text: string | null, readonly url: string | null, readonly newTab: boolean | null } | null> | null } | null, readonly vmsSection: { readonly title: string | null, readonly description: string | null, readonly links: ReadonlyArray<{ readonly text: string | null } | null> | null } | null } | null, readonly numbersSection: { readonly title: string | null, readonly subtitle: string | null } | null, readonly walletsSection: { readonly title: string | null, readonly subtitle: string | null, readonly description: string | null, readonly wallets: ReadonlyArray<{ readonly title: string | null, readonly description: string | null, readonly color: string | null, readonly screenshot: { readonly publicURL: string | null } | null, readonly actions: ReadonlyArray<{ readonly title: string | null, readonly link: string | null } | null> | null } | null> | null } | null, readonly milestonesSection: { readonly title: string | null, readonly subtitle: string | null, readonly timelines: ReadonlyArray<{ readonly title: string | null, readonly years: ReadonlyArray<{ readonly year: number | null, readonly entries: ReadonlyArray<{ readonly row: number | null, readonly text: string | null, readonly when: string | null, readonly content: ReadonlyArray<string | null> | null, readonly isMajor: boolean | null } | null> | null } | null> | null } | null> | null } | null, readonly todoListSection: { readonly title: string | null, readonly subtitle: string | null, readonly lists: ReadonlyArray<{ readonly title: string | null, readonly items: ReadonlyArray<{ readonly text: string | null, readonly description: string | null } | null> | null } | null> | null } | null, readonly shopSection: { readonly title: string | null, readonly subtitle: string | null, readonly description: string | null, readonly link: { readonly text: string | null, readonly url: string | null } | null } | null, readonly followUsSection: { readonly title: string | null, readonly subtitle: string | null, readonly description: string | null, readonly socialMediaLinks: ReadonlyArray<{ readonly name: string | null, readonly url: string | null } | null> | null } | null } | null }> } };
+type IndexPageQuery = { readonly homepage: { readonly nodes: ReadonlyArray<{ readonly frontmatter: { readonly introSection: { readonly title: string | null, readonly subtitle: string | null, readonly cards: ReadonlyArray<{ readonly title: string | null, readonly description: string | null, readonly image: { readonly publicURL: string | null } | null, readonly link: { readonly url: string | null, readonly newTab: boolean | null } | null } | null> | null } | null, readonly ecosystemSection: { readonly title: string | null, readonly subtitle: string | null, readonly subsections: ReadonlyArray<{ readonly title: string | null, readonly description: string | null, readonly image: { readonly publicURL: string | null } | null, readonly items: ReadonlyArray<{ readonly title: string | null, readonly url: string | null, readonly logo: { readonly publicURL: string | null } | null } | null> | null } | null> | null } | null, readonly technologySection: { readonly title: string | null, readonly subtitle: string | null, readonly blockFlowSection: { readonly title: string | null, readonly description: string | null, readonly links: ReadonlyArray<{ readonly text: string | null, readonly url: string | null, readonly newTab: boolean | null } | null> | null } | null, readonly smartContractSection: { readonly title: string | null, readonly description: string | null, readonly links: ReadonlyArray<{ readonly text: string | null, readonly url: string | null, readonly newTab: boolean | null } | null> | null } | null, readonly polwSection: { readonly title: string | null, readonly description: string | null, readonly links: ReadonlyArray<{ readonly text: string | null, readonly url: string | null, readonly newTab: boolean | null } | null> | null } | null, readonly vmsSection: { readonly title: string | null, readonly description: string | null, readonly links: ReadonlyArray<{ readonly text: string | null } | null> | null } | null } | null, readonly numbersSection: { readonly title: string | null, readonly subtitle: string | null } | null, readonly walletsSection: { readonly title: string | null, readonly subtitle: string | null, readonly description: string | null, readonly wallets: ReadonlyArray<{ readonly title: string | null, readonly description: string | null, readonly color: string | null, readonly screenshot: { readonly publicURL: string | null } | null, readonly actions: ReadonlyArray<{ readonly title: string | null, readonly link: string | null } | null> | null } | null> | null } | null, readonly milestonesSection: { readonly title: string | null, readonly subtitle: string | null, readonly timelines: ReadonlyArray<{ readonly title: string | null, readonly years: ReadonlyArray<{ readonly year: number | null, readonly entries: ReadonlyArray<{ readonly row: number | null, readonly text: string | null, readonly when: string | null, readonly content: ReadonlyArray<string | null> | null, readonly isMajor: boolean | null } | null> | null } | null> | null } | null> | null } | null, readonly todoListSection: { readonly title: string | null, readonly subtitle: string | null, readonly lists: ReadonlyArray<{ readonly title: string | null, readonly items: ReadonlyArray<{ readonly text: string | null, readonly description: string | null } | null> | null } | null> | null } | null, readonly shopSection: { readonly title: string | null, readonly subtitle: string | null, readonly description: string | null, readonly link: { readonly text: string | null, readonly url: string | null } | null } | null, readonly followUsSection: { readonly title: string | null, readonly subtitle: string | null, readonly description: string | null, readonly socialMediaLinks: ReadonlyArray<{ readonly name: string | null, readonly url: string | null } | null> | null } | null, readonly headerSection: { readonly titleRows: ReadonlyArray<string | null> | null, readonly subtitle: string | null, readonly primaryButton: { readonly text: string | null, readonly url: string | null } | null, readonly secondaryButton: { readonly text: string | null, readonly url: string | null } | null } | null } | null }> } };
 
 type NavigationMenuQueryVariables = Exact<{ [key: string]: never; }>;
 
 
 type NavigationMenuQuery = { readonly navmenu: { readonly nodes: ReadonlyArray<{ readonly frontmatter: { readonly socialIcons: ReadonlyArray<string | null> | null, readonly menuItems: ReadonlyArray<{ readonly title: string | null, readonly items: ReadonlyArray<{ readonly title: string | null, readonly link: string | null } | null> | null } | null> | null } | null }> } };
+
+type PageSectionHeroFragment = { readonly headerSection: { readonly titleRows: ReadonlyArray<string | null> | null, readonly subtitle: string | null, readonly primaryButton: { readonly text: string | null, readonly url: string | null } | null, readonly secondaryButton: { readonly text: string | null, readonly url: string | null } | null } | null };
 
 type SocialsYamlQueryVariables = Exact<{ [key: string]: never; }>;
 

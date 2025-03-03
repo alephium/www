@@ -10,7 +10,6 @@ import Column from './Columns/Column'
 
 import { graphql, useStaticQuery } from 'gatsby'
 import AlephiumLogo from './AlephiumLogo'
-import SocialMediaIcon from './SocialMediaIcon'
 import NavigationMenuSocials from './navigation/NavigationMenuSocials'
 import { notEmpty } from '../utils/misc'
 
