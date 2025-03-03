@@ -8,7 +8,7 @@ import Seo from '../components/Seo'
 import PageSectionHero from '../components/pageSections/PageSectionHero'
 import PageSectionIntro from '../components/pageSections/PageSectionIntro'
 import PageSectionEcosystem from '../components/PageSectionEcosystem'
-import PageSectionTechnology from '../components/PageSectionTechnology'
+import PageSectionTechnology from '../components/pageSections/PageSectionTechnology'
 import PageSectionNumbers from '../components/PageSectionNumbers'
 import PageSectionMilestones from '../components/PageSectionMilestones'
 import PageSectionTodoList from '../components/PageSectionTodoList'
@@ -44,7 +44,7 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
             )}
             {pageContent?.technologySection && (
               <>
-                <PageSectionTechnology content={pageContent.technologySection} minimal />
+                <PageSectionTechnology technologySection={pageContent.technologySection} />
                 <SectionDivider />
               </>
             )}
@@ -106,6 +106,7 @@ export const pageQuery = graphql`
         frontmatter {
           ...PageSectionHero
           ...PageSectionIntro
+          ...PageSectionTechnology
           ecosystemSection {
             title
             subtitle
@@ -121,44 +122,6 @@ export const pageQuery = graphql`
                 logo {
                   publicURL
                 }
-              }
-            }
-          }
-          technologySection {
-            title
-            subtitle
-            blockFlowSection {
-              title
-              description
-              links {
-                text
-                url
-                newTab
-              }
-            }
-            smartContractSection {
-              title
-              description
-              links {
-                text
-                url
-                newTab
-              }
-            }
-            polwSection {
-              title
-              description
-              links {
-                text
-                url
-                newTab
-              }
-            }
-            vmsSection {
-              title
-              description
-              links {
-                text
               }
             }
           }

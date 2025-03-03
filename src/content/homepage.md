@@ -26,45 +26,39 @@ introSection:
       description: Deploy secure smart contracts, create scalable dApps, or integrate Alephium into your existing project.
       link:
         url: https://docs.alephium.org
-        newTab: true
     - title: Run a Full Node
       image: ../images/mining.svg
       description: Contribute to the security and stability of the Alephium network. Help maintain a decentralized network structure and ensure optimal performance and reliability for your decentralized applications.
       link:
         url: https://docs.alephium.org/full-node/
-        newTab: true
 technologySection:
-  title: Technology
-  subtitle: What makes Alephium different?
-  blockFlowSection:
-    title: 'Scalable & Sharded'
-    description: "Alephium is built on a novel sharding algorithm called BlockFlow. It leverages a stateful UTXO model and DAG data structure to deliver efficient and practical sharding. This enables Alephium to natively support over 10,000 transactions per second while preserving a seamless 'single-chain' user experience."
-    links:
-      - text: More details
-      - text: White paper
-        url: https://github.com/alephium/white-paper/blob/master/alephium.pdf
-        newTab: true
-  smartContractSection:
-    title: Programmable & Secure
-    description: "Alephium's stateful UTXO model combines the advantages of the UTXO and account models. It supports mutable states, like those found in Ethereum, for smart contracts while leveraging the security benefits of the UTXO model for assets."
-    links:
-      - text: More details
-      - text: Guide
-        url: https://docs.alephium.org/dapps/
-        newTab: true
-  polwSection:
-    title: Efficiency in Energy Consumption
-    description: "Alephium's Proof Of less Work is a simple, consistent and robust consensus mechanism for achieving decentralization while reducing the energy consumption by over 87% compared to classic Proof of Work. On Alephium, anyone can run a full node and verify on-chain data,'Don't trust, verify'."
-    links:
-      - text: More details
-      - text: PoLW white paper
-        url: https://github.com/alephium/white-paper/blob/master/polw.pdf
-        newTab: true
-  vmsSection:
-    title: Its own Virtual Machine & Programming Language.
-    description: 'Alephium enhances developer experience and security with its Virtual Machine, SDK, and performance-optimized programming language. Its MEV-aware design and built-in security measures eliminate common attack vectors, such as reentrancy attacks, unlimited authorization and flash loans. Alephium allows devs to focus on what matters and pioneers entirely new possibilities for smart contracts, dApps and tokens.'
-    links:
-      - text: More details
+  title: Built to Last. Designed to Scale.
+  subtitle: Code is law, but security is everything.
+  sections:
+    - type: blockflow
+      title: 'Scalable & Sharded'
+      description: "Alephium is built on a novel sharding algorithm called BlockFlow. It leverages a stateful UTXO model and DAG data structure to deliver efficient and practical sharding. This enables Alephium to natively support over 10,000 transactions per second while preserving a seamless 'single-chain' user experience."
+      links:
+        - text: White paper
+          url: https://github.com/alephium/white-paper/blob/master/alephium.pdf
+    - type: polw
+      title: Efficiency in Energy Consumption
+      description: "Alephium's Proof Of Less Work is a consistent and robust consensus mechanism designed to achieve decentralization while reducing the energy consumption by over 87% compared to classic Proof of Work."
+      links:
+        - text: PoLW white paper
+          url: https://github.com/alephium/white-paper/blob/master/polw.pdf
+    - type: smart-contract
+      title: Programmable & Secure
+      description: "Alephium's stateful UTXO model combines the advantages of the UTXO and account models. It supports mutable states, like those found in Ethereum, for smart contracts while leveraging the security benefits of the UTXO model for assets."
+      links:
+        - text: Guide
+          url: https://docs.alephium.org/dapps/
+    - type: vms
+      title: Unique Virtual Machine & Programming Language.
+      description: 'Alephium enhances developer experience and security with its Virtual Machine, SDK, and performance-optimized programming language. Its MEV-aware design and built-in security measures eliminate common attack vectors, such as reentrancy attacks, unlimited authorization and flash loans. Alephium allows developers to focus on what matters and opens new possibilities for smart contracts, dApps and tokens.'
+      links:
+        - text: Resources
+          url: https://docs.alephium.org/dapps/
 numbersSection:
   title: Some numbers
   subtitle: "We're passionate in our work and committed to outstanding quality and measurable results. Here are some of our numbers."

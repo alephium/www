@@ -39,8 +39,6 @@ type StatScalarKeys = 'hashrate' | 'circulatingSupply' | 'totalTransactions'
 
 type StatsScalarData = { [key in StatScalarKeys]: StatScalar }
 
-type ActiveAddressRes = { [alphThreshold: string]: { amount: number } }[]
-
 type ChainsTVL = {
   gecko_id: string
   tvl: number
@@ -61,7 +59,6 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
     circulatingSupply: statScalarDefault,
     totalTransactions: statScalarDefault
   })
-  const [activeAddresses, setActiveAddresses] = useState<number>()
   const [bridgeTVL, setBridgeTVL] = useState<number>()
   const [chainTVL, setChainTVL] = useState<number>()
   const [protocolsStakingTVL, setProtocolsStakingTVL] = useState<number>()
@@ -199,9 +196,7 @@ const PageSectionNumbers = ({ content: { title, subtitle } }: Props) => {
         <PageSectionContainer>
           <BorderedBox ref={boxRef}>
             <SubsectionTextHeaderStyled title={title} subtitle={subtitle} condensed bigTitle />
-            <ArrowedLinkStyled url="https://explorer.alephium.org/" newTab>
-              Check out our explorer
-            </ArrowedLinkStyled>
+            <ArrowedLinkStyled url="https://explorer.alephium.org/">Check out our explorer</ArrowedLinkStyled>
             <ColumnsStyled>
               {columns.map((column) => (
                 <NumbersColumn key={column.description}>

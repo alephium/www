@@ -75,9 +75,7 @@ const PageSectionEcosystem = ({ content: { title, subtitle, subsections }, class
                 <SubsectionTextHeader title={title} subtitle={description} />
                 <SubsectionItems variants={containerVariants}>
                   {title === 'dApps & projects' ? (
-                    <Button newTab url="https://alph.land">
-                      Discover the Alephium ecosystem
-                    </Button>
+                    <Button url="https://alph.land">Discover the Alephium ecosystem</Button>
                   ) : (
                     items &&
                     items.map(({ title, logo, url }) =>
@@ -86,7 +84,6 @@ const PageSectionEcosystem = ({ content: { title, subtitle, subsections }, class
                           url={url}
                           text={title}
                           key={url}
-                          newTab
                           trackingName={`ecosystem-section:${title.replaceAll(' ', '-')}-link`}
                         >
                           <SubsectionItem key={title} variants={itemVariants}>
@@ -122,7 +119,6 @@ const PageSectionEcosystem = ({ content: { title, subtitle, subsections }, class
                     url={trade_url}
                     text={name}
                     key={name}
-                    newTab
                     trackingName={`ecosystem-section:${name.replaceAll(' ', '-')}-link`}
                   >
                     <ExchangeItem key={name}>

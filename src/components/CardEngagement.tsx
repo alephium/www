@@ -27,7 +27,6 @@ export const query = graphql`
     }
     link {
       url
-      newTab
     }
   }
 `
@@ -93,6 +92,8 @@ const CardEngagement: FC<CardEngagementProps> = ({
   )
 }
 
+export default CardEngagement
+
 const MotionContainer = styled(motion.div)`
   display: flex;
   position: relative;
@@ -154,5 +155,3 @@ const Iconic = styled.img`
   height: 82px;
   padding-bottom: 30px;
 `
-
-export default CardEngagement

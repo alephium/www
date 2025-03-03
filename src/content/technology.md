@@ -16,7 +16,6 @@ technologySection:
       - text: More details
       - text: White paper
         url: https://github.com/alephium/white-paper/blob/master/alephium.pdf
-        newTab: true
   polwSection:
     title: Proof of Less Work (PoLW)
     description: PoLW uses a clever combination of physical work and token economics
@@ -26,10 +25,8 @@ technologySection:
     links:
       - text: More details
         url:
-        newTab: false
       - text: PoLW white paper
         url: https://github.com/alephium/white-paper/blob/master/polw.pdf
-        newTab: true
   smartContractSection:
     title: Smart contract design
     description: Alephium's smart contracts have been designed and implemented to be
@@ -40,10 +37,8 @@ technologySection:
     links:
       - text: More details
         url:
-        newTab: false
       - text: Guide
         url: https://docs.alephium.org/dapps/
-        newTab: true
   vmsSection:
     title: Novel VM
     description: Alephium uses a simple, safe and flexible virtual machine
@@ -57,5 +52,4 @@ technologySection:
     links:
       - text: More details
         url:
-        newTab: false
 ---

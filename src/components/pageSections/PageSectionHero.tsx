@@ -42,9 +42,7 @@ const PageSectionHero: FC<PageSectionHeroProps> = ({ className, ...props }) => {
             </TextContent>
             <Buttons>
               {content?.primaryButton && content.primaryButton.url && (
-                <Button newTab url={content.primaryButton.url}>
-                  {content.primaryButton.text}
-                </Button>
+                <Button url={content.primaryButton.url}>{content.primaryButton.text}</Button>
               )}
               {content?.secondaryButton && content.secondaryButton.url && (
                 <ArrowedLink

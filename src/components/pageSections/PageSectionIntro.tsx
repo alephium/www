@@ -16,6 +16,18 @@ interface PageSectionIntroProps extends Queries.PageSectionIntroFragment {
   className?: string
 }
 
+export const query = graphql`
+  fragment PageSectionIntro on MarkdownRemarkFrontmatter {
+    introSection {
+      title
+      subtitleRows
+      cards {
+        ...CardEngagement
+      }
+    }
+  }
+`
+
 const PageSectionIntro: FC<PageSectionIntroProps> = ({ className, introSection }) => (
   <SectionContainer className={className} id="intro">
     {introSection?.title && (
@@ -55,18 +67,6 @@ const PageSectionIntro: FC<PageSectionIntroProps> = ({ className, introSection }
     </PageSectionContainer>
   </SectionContainer>
 )
-
-export const query = graphql`
-  fragment PageSectionIntro on MarkdownRemarkFrontmatter {
-    introSection {
-      title
-      subtitleRows
-      cards {
-        ...CardEngagement
-      }
-    }
-  }
-`
 
 const cardContainerVariants = {
   hidden: { opacity: 0 },

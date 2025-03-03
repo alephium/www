@@ -18,7 +18,7 @@ const TopBanner = ({ content: { text, linkText, url, color }, className }: TopBa
   text ? (
     <TopBannerContainer className={className} style={{ backgroundColor: color }}>
       <BannerText>{text}</BannerText>
-      <Button url={url} newTab trackingName="top-banner:main-link">
+      <Button url={url} trackingName="top-banner:main-link">
         {linkText}
       </Button>
     </TopBannerContainer>

@@ -6,25 +6,24 @@ import Arrow from '../images/svgs/arrow-right.svg'
 interface ButtonProps {
   onClick?: () => void
   url?: string
-  newTab?: boolean
   className?: string
   trackingName?: string
   disabled?: boolean
   children?: ReactNode
 }
 
-const Button = ({ onClick, className, children, url, newTab, trackingName, disabled }: ButtonProps) =>
+const Button = ({ onClick, className, children, url, trackingName, disabled }: ButtonProps) =>
   url ? (
     <a
       href={url}
       className={`${className} button`}
-      target={(newTab && '_blank') || undefined}
-      rel={(newTab && 'noopener') || undefined}
+      target={(!url?.startsWith('/') && '_blank') || undefined}
+      rel={(!url?.startsWith('/') && 'noopener') || undefined}
       data-goatcounter-click={trackingName}
       onClick={(e) => disabled && e.preventDefault()}
     >
       {children}
-      {!disabled && <Arrow className="arrow" />}
+      {!disabled && <ArrowStyled className="arrow" isExternal={!url?.startsWith('/')} />}
     </a>
   ) : (
     <button
@@ -34,7 +33,7 @@ const Button = ({ onClick, className, children, url, newTab, trackingName, disab
       disabled={disabled}
     >
       {children}
-      {!disabled && <Arrow className="arrow" />}
+      {!disabled && <ArrowStyled className="arrow" isExternal={!url?.startsWith('/')} />}
     </button>
   )
 
@@ -71,11 +70,13 @@ export default styled(Button)`
     width: 11px;
     margin-left: var(--spacing-1);
     fill: inherit;
-
-    ${(props) =>
-      props.newTab &&
-      css`
-        transform: rotate(-45deg);
-      `}
   }
+`
+
+const ArrowStyled = styled(Arrow)<{ isExternal?: boolean }>`
+  ${({ isExternal }) =>
+    isExternal &&
+    css`
+      transform: rotate(-45deg);
+    `}
 `

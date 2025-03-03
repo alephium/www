@@ -96,7 +96,6 @@ let FooterColumn: FC<FooterColumnProps> = ({ className, title, links }) => {
           <li key={link.text}>
             <SimpleLink
               {...link}
-              newTab={!link?.url?.startsWith('/')}
               color={theme.textTertiary}
               trackingName={`footer:${link.text?.replaceAll(' ', '-')}-link`}
             />

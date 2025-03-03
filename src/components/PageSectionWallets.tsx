@@ -82,7 +82,7 @@ const WalletCard = ({
       </WalletTextContainer>
       <WalletActions>
         {actions.map((a) => (
-          <ActionButton key={a.title} url={a.link} newTab trackingName={`wallets-section:${a.title}-link`}>
+          <ActionButton key={a.title} url={a.link} trackingName={`wallets-section:${a.title}-link`}>
             {a.title}
           </ActionButton>
         ))}
@@ -133,16 +133,6 @@ const WalletCards = styled.div`
     flex-direction: column;
     align-items: center;
   }
-`
-
-const ScreenshotHighlightGradient = styled(motion.div)`
-  position: absolute;
-  bottom: 30%;
-  right: -20px;
-  left: -20px;
-  top: 0;
-  z-index: 0;
-  transition: all 0.5s ease-out;
 `
 
 const WalletScreenShotContainer = styled.div`

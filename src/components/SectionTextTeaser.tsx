@@ -3,58 +3,50 @@ import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../styles/global-style'
 
-import Card from './Card'
 import SubsectionTextHeader from './SubsectionTextHeader'
-import ArrowedLink, { ArrowedLinkProps } from './ArrowedLink'
+import ArrowedLink from './ArrowedLink'
+import { graphql } from 'gatsby'
+import { notEmpty } from '../utils/misc'
 
-interface SectionTextTeaserProps {
+interface SectionTextTeaserProps extends Queries.SectionTextTeaserFragment {
   className?: string
-  title: string
-  description: string
   IconComponent: FC
-  cardText: string
-  links: Array<ArrowedLinkProps>
   trackingName?: string
-  link?: boolean
-  tipbox?: boolean
 }
 
-const SectionTextTeaser: FC<SectionTextTeaserProps> = ({
-  className,
-  title,
-  description,
-  IconComponent,
-  cardText,
-  links,
-  trackingName,
-  link,
-  tipbox
-}) => (
-  <div className={className}>
-    <SubsectionTextHeader title={title} subtitle={description} />
-    {tipbox && (
-      <Card borderColor="var(--color-brown)" className="card">
-        <IconComponent />
-        <div>{cardText}</div>
-      </Card>
-    )}
-    {link && (
+export const query = graphql`
+  fragment SectionTextTeaser on MarkdownRemarkFrontmatterTechnologySectionSections {
+    title
+    description
+    links {
+      text
+      url
+    }
+  }
+`
+
+const SectionTextTeaser: FC<SectionTextTeaserProps> = ({ className, title, description, links, trackingName }) => (
+  <SectionTextTeaserStyled className={className}>
+    {title && description && <SubsectionTextHeader title={title} subtitle={description} />}
+    {links && (
       <Links>
-        {links.map((link) => (
-          <ArrowedLink
-            key={link.text}
-            {...link}
-            trackingName={`${trackingName}:${link.text?.replaceAll(' ', '-')}-link`}
-          >
-            {link.text}
-          </ArrowedLink>
-        ))}
+        {links.filter(notEmpty).map(
+          ({ text, url }) =>
+            text &&
+            url && (
+              <ArrowedLink key={text} url={url} trackingName={`${trackingName}:${text?.replaceAll(' ', '-')}-link`}>
+                {text}
+              </ArrowedLink>
+            )
+        )}
       </Links>
     )}
-  </div>
+  </SectionTextTeaserStyled>
 )
 
-export default styled(SectionTextTeaser)`
+export default SectionTextTeaser
+
+const SectionTextTeaserStyled = styled.div`
   > .card {
     display: flex;
     gap: var(--spacing-7);

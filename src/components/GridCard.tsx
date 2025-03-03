@@ -47,7 +47,7 @@ const GridCard: FC<GridCardProps> = ({
               {children}
             </TextSnippetStyled>
           </div>
-          <ArrowedLink url={link.url} newTab={link.newTab} trackingName={trackingName}>
+          <ArrowedLink url={link.url} trackingName={trackingName}>
             {link.text}
           </ArrowedLink>
         </article>

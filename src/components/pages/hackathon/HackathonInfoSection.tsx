@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { deviceBreakPoints } from '../../../styles/global-style'
-import HackathonSectionContainer from './HackathonSectionContainer'
 import { H3, Paragraph } from './Texts'
 import SimpleLink from '../../SimpleLink'
 import lsw3Logo from '../../../images/logos/lsw3-logo.jpg'
@@ -58,7 +57,7 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
     <Paragraph>
       The hackathon will take place exclusively on-site at <b>Auxerre Expo Parc (Auxerrexpo)</b> on Friday January, 31st
       and Saturday, February 1st, as part of CryptoXR. Detailed directions to the venue can be found on the official{' '}
-      <SimpleLink text="CryptoXR" url="https://cryptoxr.fr)" newTab /> website.
+      <SimpleLink text="CryptoXR" url="https://cryptoxr.fr)" /> website.
     </Paragraph>
     <Paragraph>
       <i>
@@ -73,7 +72,7 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
         <PartnerLogo>
           <img src={cryptoXRLogo} alt="CryptoXR Logo" decoding="async" loading="lazy" />
         </PartnerLogo>
-        <PartnerName text="Crypto XR" url="https://www.bitmain.com/" newTab></PartnerName>
+        <PartnerName text="Crypto XR" url="https://www.bitmain.com/"></PartnerName>
         <PartnerDescription>
           Auxerre is set to become France’s Web3 capital from January 30 to February 1, 2025, as CryptoXR returns for
           its third edition. With over 3,000 visitors, 70+ speakers, and a 6,000 m² exhibition space, CryptoXR is one of
@@ -86,7 +85,7 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
         <PartnerLogo>
           <img src={lsw3Logo} alt="LSW3 Logo" decoding="async" loading="lazy" />
         </PartnerLogo>
-        <PartnerName text="LSW3" url="https://lsw3.fr" newTab />
+        <PartnerName text="LSW3" url="https://lsw3.fr" />
         <PartnerDescription>
           LSW3 is rapidly becoming one of the largest professional Web3 networks in France, with nearly 100 members,
           including major players like Binance, Morpho, and Vivendi, as well as representation from the French
@@ -100,7 +99,7 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
         <PartnerLogo>
           <img src={alephiumLogo} alt="Alephium Logo" decoding="async" loading="lazy" />
         </PartnerLogo>
-        <PartnerName text="Alephium" url="https://alephium.org" newTab />
+        <PartnerName text="Alephium" url="https://alephium.org" />
         <PartnerDescription>
           Alephium is a next-gen Proof-of-Work Layer 1 blockchain designed to tackle scalability, security, and
           sustainability, making it an ideal foundation for impactful, future-ready blockchain solutions. With BlockFlow
