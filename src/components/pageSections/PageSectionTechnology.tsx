@@ -28,8 +28,8 @@ import { notEmpty } from '../../utils/misc'
 
 export const query = graphql`
   fragment PageSectionTechnology on MarkdownRemarkFrontmatterPageSectionTechContent {
-    title
-    subtitle
+    titleRows
+    subtitleRows
     sections {
       type
       ...SectionTextTeaser
@@ -47,8 +47,13 @@ const PageSectionTechnology = (content: Queries.PageSectionTechnologyFragment) =
 
   return (
     <SectionContainer ref={gradientRef}>
-      {content?.title && content?.subtitle && (
-        <SectionTextHeaderStyled title={content.title} subtitle={content.subtitle} centered bigSubtitle />
+      {content?.titleRows && content?.subtitleRows && (
+        <SectionTextHeader
+          titleRows={content.titleRows.filter(notEmpty)}
+          subtitleRows={content.subtitleRows.filter(notEmpty)}
+          centered
+          bigSubtitle
+        />
       )}
       {content?.sections?.filter(notEmpty).map((section) => (
         <TechSection key={section.title}>
@@ -118,9 +123,7 @@ const PageSectionTechnology = (content: Queries.PageSectionTechnologyFragment) =
   )
 }
 
-export default styled(PageSectionTechnology)`
-  background-color: ${({ theme }) => theme.bgTertiary};
-`
+export default PageSectionTechnology
 
 const SectionContainer = styled.section`
   position: relative;
@@ -136,12 +139,6 @@ const ParallaxImage = styled(ParallaxWrapper)<{ src: string }>`
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-`
-
-const SectionTextHeaderStyled = styled(SectionTextHeader)`
-  margin-bottom: var(--spacing-12);
-  padding-top: var(--spacing-16);
-  overflow: hidden;
 `
 
 const TechSection = styled.div`

@@ -72,6 +72,7 @@ export default styled(TextSnippet)`
     line-height: ${({ bigTitle }) => (bigTitle ? 'var(--fontSize-56)' : 'var(--lineHeight-50)')};
     margin: 0;
     font-weight: var(--fontWeight-medium);
+    white-space: pre-wrap;
   }
 
   > h3 + .text-subtitle {

@@ -12,7 +12,8 @@ pageSectionHeroContent:
     url: /community
 
 pageSectionIntroContent:
-  title: A Network Built by Visionaries
+  titleRows:
+    - A Network Built by Visionaries
   subtitleRows:
     - Alephium is more than a blockchain - it’s a movement driven by those who refuse to compromise on security. Built and secured by a community of miners, developers, and innovators, Alephium embodies the core strengths of Proof-of-Work while pioneering energy efficiency and scalability.
     - We're not here to follow trends - we’re here to build a secure and sustainable foundation for the future of finance.
@@ -34,7 +35,9 @@ pageSectionIntroContent:
         url: https://docs.alephium.org/full-node/
 
 pageSectionStatsContent:
-  title: Made for Real Adoption. Built to Last.
+  titleRows:
+    - Made for Real Adoption.
+    - Built to Last.
   cards:
     - title: Fast
       description: Alephium moves as fast as you do. With block times of just 8 seconds, sharding, and Proof-of-Less-Work, it delivers fast, efficient, and reliable performance - ready to scale as adoption grows.
@@ -50,8 +53,11 @@ pageSectionStatsContent:
       stat: 87% lower environmental impact vs. traditional PoW
 
 pageSectionTechContent:
-  title: Built to Last. Designed to Scale.
-  subtitle: Code is law, but security is everything.
+  titleRows:
+    - Built to Last.
+    - Designed to Scale.
+  subtitleRows:
+    - Code is law, but security is everything.
   sections:
     - type: blockflow
       title: 'Scalable & Sharded'
@@ -77,6 +83,13 @@ pageSectionTechContent:
       links:
         - text: Resources
           url: https://docs.alephium.org/dapps/
+
+pageSectionEcosystemContent:
+  titleRows:
+    - Built on Alephium.
+    - Built to last.
+  subtitleRows:
+    - Alephium is home to pioneers, combining strong technology and a bustling community to bring the next generation of decentralized applications to life.
 
 walletsSection:
   title: The wallets

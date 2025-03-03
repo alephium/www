@@ -13,7 +13,7 @@ import { notEmpty } from '../../utils/misc'
 
 export const query = graphql`
   fragment PageSectionIntro on MarkdownRemarkFrontmatterPageSectionIntroContent {
-    title
+    titleRows
     subtitleRows
     cards {
       ...CardEngagement
@@ -23,8 +23,12 @@ export const query = graphql`
 
 const PageSectionIntro = (content: Queries.PageSectionIntroFragment) => (
   <SectionContainer id="intro">
-    {content?.title && (
-      <SectionTextHeader bigSubtitle title={content.title} subtitle={content?.subtitleRows?.filter(notEmpty)} />
+    {content?.titleRows && (
+      <SectionTextHeader
+        bigSubtitle
+        titleRows={content.titleRows.filter(notEmpty)}
+        subtitleRows={content?.subtitleRows?.filter(notEmpty)}
+      />
     )}
     <PageSectionContainer>
       <IntroColumns gap="var(--spacing-32)">

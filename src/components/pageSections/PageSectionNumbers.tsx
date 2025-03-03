@@ -27,7 +27,7 @@ type StatsScalarData = { [key in StatScalarKeys]: StatScalar }
 
 export const query = graphql`
   fragment PageSectionNumbers on MarkdownRemarkFrontmatterPageSectionStatsContent {
-    title
+    titleRows
     cards {
       ...CardStats
     }
@@ -69,14 +69,14 @@ const PageSectionNumbers = (content: Queries.PageSectionNumbersFragment) => {
   const { totalTransactions } = statsScalarData
 
   return (
-    <SectionContainer>
-      {content?.title && <SectionTextHeaderStyled title={content.title} centered bigSubtitle />}
+    <section>
+      {content?.titleRows && <SectionTextHeader titleRows={content.titleRows.filter(notEmpty)} centered bigSubtitle />}
       <PageSectionContainer>
         <IntroColumns>
           {content?.cards?.filter(notEmpty).map((card) => (
             <CardStats
-              key={card.title}
               {...card}
+              key={card.title}
               stat={
                 card.stat === 'live-transactions'
                   ? `${totalTransactions.value.toLocaleString()} total transactions`
@@ -86,15 +86,11 @@ const PageSectionNumbers = (content: Queries.PageSectionNumbersFragment) => {
           ))}
         </IntroColumns>
       </PageSectionContainer>
-    </SectionContainer>
+    </section>
   )
 }
 
 export default PageSectionNumbers
-
-const SectionContainer = styled.section`
-  position: relative;
-`
 
 const IntroColumns = styled(motion.div)`
   display: grid;
@@ -105,9 +101,4 @@ const IntroColumns = styled(motion.div)`
   @media ${deviceBreakPoints.mobile} {
     grid-template-columns: 1fr;
   }
-`
-
-const SectionTextHeaderStyled = styled(SectionTextHeader)`
-  padding-top: var(--spacing-16);
-  margin-bottom: var(--spacing-12);
 `

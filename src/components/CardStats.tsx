@@ -125,7 +125,7 @@ const CardContainer = styled(Card)`
 `
 
 const Stat = styled.div`
-  font-size: var(--fontSize-36);
+  font-size: var(--fontSize-28);
   line-height: var(--lineHeight-36);
   margin-top: var(--spacing-6);
 `
