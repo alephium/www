@@ -12,7 +12,7 @@ import { graphql } from 'gatsby'
 import { notEmpty } from '../../utils/misc'
 
 export const query = graphql`
-  fragment PageSectionIntro on MarkdownRemarkFrontmatterPageSectionIntroContent {
+  fragment PageSectionLinkedCards on MarkdownRemarkFrontmatterPageSectionLinkedCardsContent {
     titleRows
     subtitleRows
     cards {
@@ -21,7 +21,7 @@ export const query = graphql`
   }
 `
 
-const PageSectionIntro = (content: Queries.PageSectionIntroFragment) => (
+const PageSectionLinkedCards = (content: Queries.PageSectionLinkedCardsFragment) => (
   <SectionContainer id="intro">
     {content?.titleRows && (
       <SectionTextHeader
@@ -61,7 +61,7 @@ const PageSectionIntro = (content: Queries.PageSectionIntroFragment) => (
   </SectionContainer>
 )
 
-export default PageSectionIntro
+export default PageSectionLinkedCards
 
 const cardContainerVariants = {
   hidden: { opacity: 0 },
@@ -89,6 +89,7 @@ const SectionContainer = styled.section`
 
 const IntroColumns = styled(Columns)`
   margin-bottom: var(--spacing-8);
+
   @media (max-width: 1352px) {
     gap: var(--spacing-20);
   }

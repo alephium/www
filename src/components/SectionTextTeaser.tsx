@@ -15,7 +15,7 @@ interface SectionTextTeaserProps extends Queries.SectionTextTeaserFragment {
 }
 
 export const query = graphql`
-  fragment SectionTextTeaser on MarkdownRemarkFrontmatterPageSectionTechContentSections {
+  fragment SectionTextTeaser on MarkdownRemarkFrontmatterPageSectionTextImageAlternateContentSections {
     title
     description
     links {

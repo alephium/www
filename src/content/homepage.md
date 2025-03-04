@@ -11,7 +11,7 @@ pageSectionHeroContent:
     text: Join the community
     url: /community
 
-pageSectionIntroContent:
+pageSectionLinkedCardsContent:
   titleRows:
     - A Network Built by Visionaries
   subtitleRows:
@@ -52,7 +52,7 @@ pageSectionStatsContent:
       description: Alephium’s Proof-of-Less-Work mechanism reduces energy consumption, making it one of the most sustainable and responsible blockchains built for the future.
       stat: 87% lower environmental impact vs. traditional PoW
 
-pageSectionTechContent:
+pageSectionTextImageAlternateContent:
   titleRows:
     - Built to Last.
     - Designed to Scale.
@@ -61,25 +61,25 @@ pageSectionTechContent:
   sections:
     - type: blockflow
       title: 'Scalable & Sharded'
-      description: "Alephium is built on a novel sharding algorithm called BlockFlow. It leverages a stateful UTXO model and DAG data structure to deliver efficient and practical sharding. This enables Alephium to natively support over 10,000 transactions per second while preserving a seamless 'single-chain' user experience."
+      description: Alephium is built on a novel sharding algorithm called BlockFlow. It leverages a stateful UTXO model and DAG data structure to deliver efficient and practical sharding. This enables Alephium to natively support over 10,000 transactions per second while preserving a seamless 'single-chain' user experience.
       links:
         - text: White paper
           url: https://github.com/alephium/white-paper/blob/master/alephium.pdf
     - type: polw
       title: Efficiency in Energy Consumption
-      description: "Alephium's Proof Of Less Work is a consistent and robust consensus mechanism designed to achieve decentralization while reducing the energy consumption by over 87% compared to classic Proof of Work."
+      description: Alephium's Proof Of Less Work is a consistent and robust consensus mechanism designed to achieve decentralization while reducing the energy consumption by over 87% compared to classic Proof of Work.
       links:
         - text: PoLW white paper
           url: https://github.com/alephium/white-paper/blob/master/polw.pdf
     - type: smart-contract
       title: Programmable & Secure
-      description: "Alephium's stateful UTXO model combines the advantages of the UTXO and account models. It supports mutable states, like those found in Ethereum, for smart contracts while leveraging the security benefits of the UTXO model for assets."
+      description: Alephium's stateful UTXO model combines the advantages of the UTXO and account models. It supports mutable states, like those found in Ethereum, for smart contracts while leveraging the security benefits of the UTXO model for assets.
       links:
         - text: Guide
           url: https://docs.alephium.org/dapps/
     - type: vms
       title: Unique Virtual Machine & Programming Language.
-      description: 'Alephium enhances developer experience and security with its Virtual Machine, SDK, and performance-optimized programming language. Its MEV-aware design and built-in security measures eliminate common attack vectors, such as reentrancy attacks, unlimited authorization and flash loans. Alephium allows developers to focus on what matters and opens new possibilities for smart contracts, dApps and tokens.'
+      description: Alephium enhances developer experience and security with its Virtual Machine, SDK, and performance-optimized programming language. Its MEV-aware design and built-in security measures eliminate common attack vectors, such as reentrancy attacks, unlimited authorization and flash loans. Alephium allows developers to focus on what matters and opens new possibilities for smart contracts, dApps and tokens.'
       links:
         - text: Resources
           url: https://docs.alephium.org/dapps/
@@ -105,37 +105,6 @@ pageSectionCtaContent:
   button:
     text: Get started
     url: /get-started
-
-walletsSection:
-  title: The wallets
-  subtitle: Designed for humans
-  description: 'The wallets are designed for ease-of-use, to make Alephium’s technology accessible for all.'
-  wallets:
-    - title: Desktop wallet 🖥️
-      description: 'Alephium’s flagship wallet. Ready for everything, from daily management tasks to smart contracts deployment, privacy & DeFi.'
-      screenshot: ../images/screenshots/desktop-wallet.png
-      color: 'rgb(91, 0, 255)'
-      actions:
-        - title: Get the desktop wallet
-          link: https://github.com/alephium/alephium-frontend/releases/latest/
-    - title: Extension wallet 🌍
-      description: 'The wallet in your browser. Get access to the latest features with a focus on DeFi.'
-      screenshot: ../images/screenshots/extension.png
-      color: 'rgb(24, 215, 255)'
-      actions:
-        - title: Chrome
-          link: https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj
-        - title: Firefox
-          link: https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/
-    - title: Mobile wallet 📱
-      description: 'Alephium on the go. First-class UX. Available on Android and iOS.'
-      screenshot: ../images/screenshots/mobile.png
-      color: 'rgb(228, 124, 12)'
-      actions:
-        - title: Android
-          link: https://play.google.com/store/apps/details?id=org.alephium.wallet
-        - title: IOS
-          link: https://apps.apple.com/us/app/alephium-wallet/id6469043072
 
 ecosystemSection:
   title: Ecosystem

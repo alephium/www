@@ -10,12 +10,10 @@ const CustomPage = (props: PageProps) => (
     content={
       <>
         <SubpageHeroSection>
-          <h1>Alephium Grants & Funding Opportunities</h1>
+          <h1>Online communities</h1>
           <p>
-            At Alephium, we believe that builders drive progress. Our Grants Program is designed to support individuals
-            and teams working on projects that expand and strengthen the Alephium ecosystem. Whether you&apos;re
-            developing DeFi applications, NFT platforms, decentralized services, integrations, or hardware solutions, we
-            want to assist you in bringing your idea to fruition on Alephium.
+            We are lucky to have a very active community of builders, users & friends. Join the channels and groups and
+            help us launch Alephium to the stars!
           </p>
         </SubpageHeroSection>
 
