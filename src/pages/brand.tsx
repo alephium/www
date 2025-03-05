@@ -6,6 +6,8 @@ import Button from '../components/Button'
 import Page from '../components/customPageComponents/Page'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
+import CardsGrid, { Card } from '../components/customPageComponents/CardsGrid'
+import Placeholder from '../components/customPageComponents/Placeholder'
 
 const CustomPage = (props: PageProps) => (
   <Page
@@ -34,6 +36,32 @@ const CustomPage = (props: PageProps) => (
               recolor, edit, or alter the logo in any way
             </p>
           </TextElement>
+          <CardsGrid columns={3}>
+            <Card>
+              <Placeholder width="100px" height="100px" />
+              <h3>SVG</h3>
+              <p>
+                A flexible format that stays sharp no matter how much you zoom in. Perfect for logos, icons, and
+                graphics on websites.
+              </p>
+              <Button url="/">Download SVG</Button>
+            </Card>
+            <Card>
+              <Placeholder width="100px" height="100px" />
+              <h3>PNG</h3>
+              <p>
+                High-quality image format that supports transparency. Ideal for photos, logos, and graphics with clean
+                edges.
+              </p>
+              <Button url="/">Download PNG</Button>
+            </Card>
+            <Card>
+              <Placeholder width="100px" height="100px" />
+              <h3>MP4</h3>
+              <p>Alephium animations in a widely used format. Perfect for streaming and sharing online.</p>
+              <Button url="/">Download MP4</Button>
+            </Card>
+          </CardsGrid>
         </SubpageSection>
 
         <SectionDivider />
@@ -43,9 +71,12 @@ const CustomPage = (props: PageProps) => (
             <h2>Spacing</h2>
             <p>
               Please do not crowd the logo. When placing elements nearby, use the letter ‘u’ in the wordmark as a guide
-              for spacing. //I have stolen this from Sui, please add whatever is the best practice from our side
+              for spacing. //I have stolen this from another project, please add whatever is the best practice from our
+              side
             </p>
           </TextElement>
+
+          <Placeholder width="100%" height="400px" />
         </SubpageSection>
 
         <SectionDivider />
@@ -58,6 +89,8 @@ const CustomPage = (props: PageProps) => (
               line, extending from the top to the bottom of the symbol's height, as a divider between the two logos.
             </p>
           </TextElement>
+
+          <Placeholder width="100%" height="400px" />
         </SubpageSection>
 
         <SectionDivider />
@@ -66,6 +99,44 @@ const CustomPage = (props: PageProps) => (
           <TextElement>
             <h2>Colors</h2>
           </TextElement>
+
+          <CardsGrid columns={4}>
+            <Card>
+              <Placeholder width="100px" height="100px" />
+              <h3>Purple</h3>
+              <p>#1200da</p>
+            </Card>
+            <Card>
+              <Placeholder width="100px" height="100px" />
+              <h3>Orange red</h3>
+              <p>#ff5d51</p>
+            </Card>
+            <Card>
+              <Placeholder width="100px" height="100px" />
+              <h3>Black</h3>
+              <p>#000000</p>
+            </Card>
+            <Card>
+              <Placeholder width="100px" height="100px" />
+              <h3>White</h3>
+              <p>#ffffff</p>
+            </Card>
+            <Card>
+              <Placeholder width="100px" height="100px" />
+              <h3>Mountain 1st</h3>
+              <p>#D8D8D8</p>
+            </Card>
+            <Card>
+              <Placeholder width="100px" height="100px" />
+              <h3>Mountain 2nd</h3>
+              <p>#E5E5E5</p>
+            </Card>
+            <Card>
+              <Placeholder width="100px" height="100px" />
+              <h3>Mountain 3rd</h3>
+              <p>#ECECEC</p>
+            </Card>
+          </CardsGrid>
         </SubpageSection>
 
         <SectionDivider />
