@@ -37,32 +37,35 @@ const CustomPage = (props: PageProps) => (
               recolor, edit, or alter the logo in any way
             </p>
           </TextElement>
-          <CardsGrid columns={3}>
-            <Card>
-              <Placeholder width="100px" height="100px" />
-              <h3>SVG</h3>
-              <p>
-                A flexible format that stays sharp no matter how much you zoom in. Perfect for logos, icons, and
-                graphics on websites.
-              </p>
-              <Button url="/">Download SVG</Button>
-            </Card>
-            <Card>
-              <Placeholder width="100px" height="100px" />
-              <h3>PNG</h3>
-              <p>
-                High-quality image format that supports transparency. Ideal for photos, logos, and graphics with clean
-                edges.
-              </p>
-              <Button url="/">Download PNG</Button>
-            </Card>
-            <Card>
-              <Placeholder width="100px" height="100px" />
-              <h3>MP4</h3>
-              <p>Alephium animations in a widely used format. Perfect for streaming and sharing online.</p>
-              <Button url="/">Download MP4</Button>
-            </Card>
-          </CardsGrid>
+
+          <SubheaderContent>
+            <CardsGrid columns={3}>
+              <Card>
+                <Placeholder width="100px" height="100px" />
+                <h3>SVG</h3>
+                <p>
+                  A flexible format that stays sharp no matter how much you zoom in. Perfect for logos, icons, and
+                  graphics on websites.
+                </p>
+                <Button url="/">Download SVG</Button>
+              </Card>
+              <Card>
+                <Placeholder width="100px" height="100px" />
+                <h3>PNG</h3>
+                <p>
+                  High-quality image format that supports transparency. Ideal for photos, logos, and graphics with clean
+                  edges.
+                </p>
+                <Button url="/">Download PNG</Button>
+              </Card>
+              <Card>
+                <Placeholder width="100px" height="100px" />
+                <h3>MP4</h3>
+                <p>Alephium animations in a widely used format. Perfect for streaming and sharing online.</p>
+                <Button url="/">Download MP4</Button>
+              </Card>
+            </CardsGrid>
+          </SubheaderContent>
         </SubpageSection>
 
         <SectionDivider />
