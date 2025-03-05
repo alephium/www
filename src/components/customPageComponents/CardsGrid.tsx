@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import SimpleLink from '../SimpleLink'
 import { ReactNode } from 'react'
 import TextElement from './TextElement'
+import { deviceBreakPoints } from '../../styles/global-style'
 
 interface CardsGridProps {
   columns?: number
@@ -11,6 +12,10 @@ const CardsGrid = styled.div<CardsGridProps>`
   display: grid;
   grid-template-columns: repeat(${({ columns }) => columns || 3}, 1fr);
   gap: var(--spacing-12);
+
+  @media ${deviceBreakPoints.mobile} {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `
 
 export default CardsGrid
