@@ -9,7 +9,7 @@ pageSectionHeroContent:
     url: https://docs.alephium.org
   secondaryButton:
     text: Join the community
-    url: /community
+    url: /communities
 
 pageSectionLinkedCardsContent:
   titleRows:
