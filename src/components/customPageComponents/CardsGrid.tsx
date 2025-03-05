@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import SimpleLink from '../SimpleLink'
 import { ReactNode } from 'react'
+import TextElement from './TextElement'
 
 interface CardsGridProps {
   columns?: number
@@ -25,7 +26,17 @@ export const LinkedCard = ({ children, url }: LinkedCardProps) => (
   </SimpleLink>
 )
 
-export const Card = styled.div`
+interface CardProps {
+  children: ReactNode
+}
+
+export const Card = ({ children }: CardProps) => (
+  <CardStyled>
+    <TextElement size="small">{children}</TextElement>
+  </CardStyled>
+)
+
+const CardStyled = styled.div`
   padding: 41px 30px 25px 34px;
   border-radius: 20px;
   border: 2px solid ${({ theme }) => theme.bgPrimary};

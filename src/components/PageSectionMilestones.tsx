@@ -1,28 +1,48 @@
 import styled from 'styled-components'
 
-import SectionTextHeader from './SectionTextHeader'
-import DualTimeline, { Timeline } from './DualTimeline'
+import DualTimeline from './DualTimeline'
 import Toggle from '../Toggle'
 import { useState } from 'react'
+import { graphql, useStaticQuery } from 'gatsby'
+import TextElement from './customPageComponents/TextElement'
 
-export type PageSectionMilestonesContentType = {
-  title: string
-  subtitle: string
-  timelines: Timeline[]
-}
+export const milestonesQuery = graphql`
+  query Milestones {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/milestones.md/" } }) {
+      nodes {
+        frontmatter {
+          timelines {
+            title
+            years {
+              year
+              entries {
+                row
+                text
+                when
+                isMajor
+                content
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`
 
-interface Props {
-  content: PageSectionMilestonesContentType
-}
+const PageSectionMilestones = () => {
+  const data = useStaticQuery<Queries.MilestonesQuery>(milestonesQuery)
+  const timelines = data.allMarkdownRemark.nodes[0].frontmatter?.timelines
 
-const PageSectionMilestones = ({ content: { title, subtitle, timelines } }: Props) => {
   const [showDetails, setShowDetails] = useState(false)
 
   const handleShowDetailsToggle = () => setShowDetails((p) => !p)
 
   return (
     <SectionWrapper>
-      <StyledSectionTextHeader id="milestones" title={title} subtitle={subtitle} bigSubtitle bigText centered />
+      <TextElement align="center">
+        <h2>Completed milestones</h2>
+      </TextElement>
       <ToggleSection>
         <ToggleLabel>Summarized</ToggleLabel>
         <Toggle toggled={showDetails} onToggle={handleShowDetailsToggle} />
@@ -47,18 +67,13 @@ const Centered = styled.div`
   justify-content: center;
 `
 
-const StyledSectionTextHeader = styled(SectionTextHeader)`
-  background-color: ${({ theme }) => theme.bgTertiary};
-
-  margin-bottom: var(--spacing-8);
-`
-
 const ToggleSection = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
   margin-bottom: var(--spacing-8);
+  margin-top: var(--spacing-8);
 `
 
 const ToggleLabel = styled.span`

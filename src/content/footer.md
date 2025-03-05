@@ -15,7 +15,7 @@ columns:
       - text: Online communities
         url: /communities
       - text: Ambassador Program
-        url: /ambassadors
+        url: /ambassador
       - text: FAQ
         url: /faq
       - text: Brand Assets

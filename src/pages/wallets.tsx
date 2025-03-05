@@ -163,7 +163,7 @@ const CustomPage = (props: PageProps) => (
             </p>
           </TextElement>
 
-          <TextElement>
+          <TextElement size="small">
             <h3>Disclaimer</h3>
             <p>
               The list of wallets does not constitute an endorsement and is not exhaustive of all wallet options

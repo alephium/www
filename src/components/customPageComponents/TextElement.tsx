@@ -37,6 +37,13 @@ const TextElementStyled = styled.div<TextElementProps>`
   > h3 {
     font-size: var(--fontSize-36);
     line-height: var(--lineHeight-50);
+
+    ${({ size }) =>
+      size === 'small' &&
+      css`
+        font-size: var(--fontSize-24);
+        line-height: var(--lineHeight-28);
+      `}
   }
 
   > h2,
@@ -47,8 +54,13 @@ const TextElementStyled = styled.div<TextElementProps>`
     white-space: pre-wrap;
   }
 
-  > p {
+  > p,
+  ul {
     color: var(--color-grey-250);
+
+    font-size: var(--fontSize-24);
+    line-height: var(--lineHeight-28);
+    font-weight: var(--fontWeight-light);
 
     ${({ size }) =>
       size === 'small' &&
@@ -57,19 +69,19 @@ const TextElementStyled = styled.div<TextElementProps>`
         line-height: var(--lineHeight-28);
         font-weight: var(--fontWeight-normal);
       `}
-
-    ${({ size }) =>
-      size === 'large' &&
-      css`
-        font-size: var(--fontSize-24);
-        line-height: var(--lineHeight-28);
-        font-weight: var(--fontWeight-light);
-      `}
   }
 
   > a {
     margin-right: var(--spacing-2);
     margin-top: var(--spacing-6);
+  }
+
+  > ul {
+    margin: var(--spacing-4) 0;
+
+    > li {
+      margin: var(--spacing-2) 0;
+    }
   }
 
   &:not(:first-child) {
