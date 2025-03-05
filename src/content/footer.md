@@ -37,7 +37,7 @@ columns:
       - text: Privacy Policy
         url: /privacy-policy
       - text: Contact
-        url: mailto:info@alephium.org
+        url: /contact
 bottom:
   text: Made with love️ by humans from Alephium
   socials:
