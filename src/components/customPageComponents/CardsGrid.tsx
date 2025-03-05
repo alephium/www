@@ -10,10 +10,6 @@ const CardsGrid = styled.div<CardsGridProps>`
   display: grid;
   grid-template-columns: repeat(${({ columns }) => columns || 3}, 1fr);
   gap: var(--spacing-12);
-
-  &:not(:first-child) {
-    margin-top: var(--spacing-8);
-  }
 `
 
 export default CardsGrid

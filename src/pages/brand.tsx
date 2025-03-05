@@ -8,6 +8,7 @@ import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import CardsGrid, { Card } from '../components/customPageComponents/CardsGrid'
 import Placeholder from '../components/customPageComponents/Placeholder'
+import SubheaderContent from '../components/customPageComponents/SubheaderContent'
 
 const CustomPage = (props: PageProps) => (
   <Page
@@ -100,43 +101,45 @@ const CustomPage = (props: PageProps) => (
             <h2>Colors</h2>
           </TextElement>
 
-          <CardsGrid columns={4}>
-            <Card>
-              <Placeholder width="100px" height="100px" />
-              <h3>Purple</h3>
-              <p>#1200da</p>
-            </Card>
-            <Card>
-              <Placeholder width="100px" height="100px" />
-              <h3>Orange red</h3>
-              <p>#ff5d51</p>
-            </Card>
-            <Card>
-              <Placeholder width="100px" height="100px" />
-              <h3>Black</h3>
-              <p>#000000</p>
-            </Card>
-            <Card>
-              <Placeholder width="100px" height="100px" />
-              <h3>White</h3>
-              <p>#ffffff</p>
-            </Card>
-            <Card>
-              <Placeholder width="100px" height="100px" />
-              <h3>Mountain 1st</h3>
-              <p>#D8D8D8</p>
-            </Card>
-            <Card>
-              <Placeholder width="100px" height="100px" />
-              <h3>Mountain 2nd</h3>
-              <p>#E5E5E5</p>
-            </Card>
-            <Card>
-              <Placeholder width="100px" height="100px" />
-              <h3>Mountain 3rd</h3>
-              <p>#ECECEC</p>
-            </Card>
-          </CardsGrid>
+          <SubheaderContent>
+            <CardsGrid columns={4}>
+              <Card>
+                <Placeholder width="100px" height="100px" />
+                <h3>Purple</h3>
+                <p>#1200da</p>
+              </Card>
+              <Card>
+                <Placeholder width="100px" height="100px" />
+                <h3>Orange red</h3>
+                <p>#ff5d51</p>
+              </Card>
+              <Card>
+                <Placeholder width="100px" height="100px" />
+                <h3>Black</h3>
+                <p>#000000</p>
+              </Card>
+              <Card>
+                <Placeholder width="100px" height="100px" />
+                <h3>White</h3>
+                <p>#ffffff</p>
+              </Card>
+              <Card>
+                <Placeholder width="100px" height="100px" />
+                <h3>Mountain 1st</h3>
+                <p>#D8D8D8</p>
+              </Card>
+              <Card>
+                <Placeholder width="100px" height="100px" />
+                <h3>Mountain 2nd</h3>
+                <p>#E5E5E5</p>
+              </Card>
+              <Card>
+                <Placeholder width="100px" height="100px" />
+                <h3>Mountain 3rd</h3>
+                <p>#ECECEC</p>
+              </Card>
+            </CardsGrid>
+          </SubheaderContent>
         </SubpageSection>
 
         <SectionDivider />

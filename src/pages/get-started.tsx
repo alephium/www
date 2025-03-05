@@ -12,6 +12,7 @@ import { ParallaxBg, WalletCard, WalletCards } from '../components/PageSectionWa
 import { StaticImage } from 'gatsby-plugin-image'
 import PageSectionContainer from '../components/PageSectionContainer'
 import CardsGrid, { Card, LinkedCard } from '../components/customPageComponents/CardsGrid'
+import SubheaderContent from '../components/customPageComponents/SubheaderContent'
 
 const CustomPage = (props: PageProps) => (
   <Page
@@ -145,48 +146,50 @@ const CustomPage = (props: PageProps) => (
               or bridging from another ecosystem.
             </p>
           </TextElement>
-          <CardsGrid columns={4}>
-            <LinkedCard url="https://bridge.alephium.org/">
-              <Placeholder width="100px" height="100px " />
-              <h3>Alephium Bridge</h3>
-              <p>A native bridge on Alephium that enhances interoperability with other blockchains.</p>
-            </LinkedCard>
-            <LinkedCard url="https://www.ayin.app/">
-              <Placeholder width="100px" height="100px " />
-              <h3>AYIN</h3>
-              <p>Decentralized exchange built on Alephium.</p>
-            </LinkedCard>
-            <LinkedCard url="https://buy.onramper.com/?mode=buy&onlyCryptos=alph_alph">
-              <Placeholder width="100px" height="100px " />
-              <h3>Onramper</h3>
-              <p>A leading fiat-to-crypto on-ramp aggregator.</p>
-            </LinkedCard>
-            <LinkedCard url="https://www.mexc.com/exchange/ALPH_USDT">
-              <Placeholder width="100px" height="100px " />
-              <h3>MEXC</h3>
-              <p>Digital assets exchange.</p>
-            </LinkedCard>
-            <LinkedCard url="https://www.gate.io/trade/ALPH_USDT">
-              <Placeholder width="100px" height="100px " />
-              <h3>Gate.io</h3>
-              <p>Digital assets exchange.</p>
-            </LinkedCard>
-            <LinkedCard url="https://app.uniswap.org/explore/tokens/ethereum/0x590f820444fa3638e022776752c5eef34e2f89a6">
-              <Placeholder width="100px" height="100px " />
-              <h3>Uniswap</h3>
-              <p>Leading decentralized exchange.</p>
-            </LinkedCard>
-            <LinkedCard url="https://elexium.finance/">
-              <Placeholder width="100px" height="100px " />
-              <h3>Elexium Finance</h3>
-              <p>Decentralized exchange & liquidity arena on Alephium.</p>
-            </LinkedCard>
-            <LinkedCard url="https://pancakeswap.finance/swap?inputCurrency=0x8683ba2f8b0f69b2105f26f488bade1d3ab4dec8&outputCurrency=0x55d398326f99059ff775485246999027b3197955">
-              <Placeholder width="100px" height="100px " />
-              <h3>Pancake Swap</h3>
-              <p>Multichain decentralized exchange.</p>
-            </LinkedCard>
-          </CardsGrid>
+          <SubheaderContent>
+            <CardsGrid columns={4}>
+              <LinkedCard url="https://bridge.alephium.org/">
+                <Placeholder width="100px" height="100px " />
+                <h3>Alephium Bridge</h3>
+                <p>A native bridge on Alephium that enhances interoperability with other blockchains.</p>
+              </LinkedCard>
+              <LinkedCard url="https://www.ayin.app/">
+                <Placeholder width="100px" height="100px " />
+                <h3>AYIN</h3>
+                <p>Decentralized exchange built on Alephium.</p>
+              </LinkedCard>
+              <LinkedCard url="https://buy.onramper.com/?mode=buy&onlyCryptos=alph_alph">
+                <Placeholder width="100px" height="100px " />
+                <h3>Onramper</h3>
+                <p>A leading fiat-to-crypto on-ramp aggregator.</p>
+              </LinkedCard>
+              <LinkedCard url="https://www.mexc.com/exchange/ALPH_USDT">
+                <Placeholder width="100px" height="100px " />
+                <h3>MEXC</h3>
+                <p>Digital assets exchange.</p>
+              </LinkedCard>
+              <LinkedCard url="https://www.gate.io/trade/ALPH_USDT">
+                <Placeholder width="100px" height="100px " />
+                <h3>Gate.io</h3>
+                <p>Digital assets exchange.</p>
+              </LinkedCard>
+              <LinkedCard url="https://app.uniswap.org/explore/tokens/ethereum/0x590f820444fa3638e022776752c5eef34e2f89a6">
+                <Placeholder width="100px" height="100px " />
+                <h3>Uniswap</h3>
+                <p>Leading decentralized exchange.</p>
+              </LinkedCard>
+              <LinkedCard url="https://elexium.finance/">
+                <Placeholder width="100px" height="100px " />
+                <h3>Elexium Finance</h3>
+                <p>Decentralized exchange & liquidity arena on Alephium.</p>
+              </LinkedCard>
+              <LinkedCard url="https://pancakeswap.finance/swap?inputCurrency=0x8683ba2f8b0f69b2105f26f488bade1d3ab4dec8&outputCurrency=0x55d398326f99059ff775485246999027b3197955">
+                <Placeholder width="100px" height="100px " />
+                <h3>Pancake Swap</h3>
+                <p>Multichain decentralized exchange.</p>
+              </LinkedCard>
+            </CardsGrid>
+          </SubheaderContent>
 
           <TextElement align="center">
             <Button url="https://coinmarketcap.com/currencies/alephium/#Markets">See more ALPH markets</Button>
@@ -219,18 +222,20 @@ const CustomPage = (props: PageProps) => (
             </p>
           </TextElement>
 
-          <CardsGrid columns={2}>
-            <LinkedCard url="https://docs.alephium.org/">
-              <Placeholder width="100px" height="100px " />
-              <h3>Documentation</h3>
-              <p>Documentation to get you going quick and easy.</p>
-            </LinkedCard>
-            <LinkedCard url="/grants">
-              <Placeholder width="100px" height="100px " />
-              <h3>Grants</h3>
-              <p>You have an idea, but no funding? We can help.</p>
-            </LinkedCard>
-          </CardsGrid>
+          <SubheaderContent>
+            <CardsGrid columns={2}>
+              <LinkedCard url="https://docs.alephium.org/">
+                <Placeholder width="100px" height="100px " />
+                <h3>Documentation</h3>
+                <p>Documentation to get you going quick and easy.</p>
+              </LinkedCard>
+              <LinkedCard url="/grants">
+                <Placeholder width="100px" height="100px " />
+                <h3>Grants</h3>
+                <p>You have an idea, but no funding? We can help.</p>
+              </LinkedCard>
+            </CardsGrid>
+          </SubheaderContent>
 
           <TextElement align="center">
             <h3>Guides and tutorials</h3>
