@@ -7,6 +7,10 @@ const SideBySide = styled.div`
   > * {
     flex: 1;
   }
+
+  + div {
+    margin-top: var(--spacing-8);
+  }
 `
 
 export default SideBySide
