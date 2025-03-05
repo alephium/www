@@ -5,6 +5,7 @@ import { darkTheme } from '../../styles/themes'
 import { deviceBreakPoints } from '../../styles/global-style'
 
 import HeroPageSectionContainer from '../Hero/HeroPageSectionContainer'
+import TextElement from './TextElement'
 interface SubpageHeroSectionProps {
   children: ReactNode
 }
@@ -13,7 +14,9 @@ const SubpageHeroSection = ({ children }: SubpageHeroSectionProps) => (
   <ThemeProvider theme={darkTheme}>
     <SubpageHeroSectionStyled>
       <HeroPageSectionContainer>
-        <LeftContentWrapper>{children}</LeftContentWrapper>
+        <LeftContentWrapper>
+          <TextElementStyled>{children}</TextElementStyled>
+        </LeftContentWrapper>
       </HeroPageSectionContainer>
     </SubpageHeroSectionStyled>
   </ThemeProvider>
@@ -33,9 +36,24 @@ const SubpageHeroSectionStyled = styled.section`
   `};
 `
 
+const TextElementStyled = styled(TextElement)`
+  max-width: var(--width-564);
+
+  > p {
+    color: ${({ theme }) => theme.textSecondary};
+  }
+
+  > hr {
+    width: 50px;
+    height: 4px;
+    background-color: ${({ theme }) => theme.textPrimary};
+    margin: 0 0 var(--spacing-5) 0;
+    border: none;
+  }
+`
+
 const LeftContentWrapper = styled.div`
   position: absolute;
-  left: 0;
   top: 50%;
   transform: translateY(-50%);
   display: flex;

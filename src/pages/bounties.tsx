@@ -11,6 +11,7 @@ const CustomPage = (props: PageProps) => (
       <>
         <SubpageHeroSection>
           <h1>Alephium Bounty Program</h1>
+          <hr />
           <p>
             As part of our mission to foster innovation and decentralization, Alephium is launching a Bounty Program to
             reward builders, developers, and researchers who contribute to the growth and security of the Alephium

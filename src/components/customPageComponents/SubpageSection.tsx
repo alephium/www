@@ -5,17 +5,22 @@ import PageSectionContainer from '../PageSectionContainer'
 interface SubpageSectionProps {
   children: ReactNode
   className?: string
+  Parallax?: ReactNode
+  fullWidth?: boolean
 }
 
-const SubpageSection = ({ children, className }: SubpageSectionProps) => (
+const SubpageSection = ({ children, className, Parallax, fullWidth }: SubpageSectionProps) => (
   <SubpageSectionStyled className={className}>
-    <PageSectionContainer>{children}</PageSectionContainer>
+    {fullWidth ? children : <PageSectionContainer>{children}</PageSectionContainer>}
+    {Parallax}
   </SubpageSectionStyled>
 )
 
 export default SubpageSection
 
 const SubpageSectionStyled = styled.section`
+  position: relative;
+
   padding-top: var(--spacing-12);
   padding-bottom: var(--spacing-12);
 `

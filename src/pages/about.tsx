@@ -11,6 +11,7 @@ const CustomPage = (props: PageProps) => (
       <>
         <SubpageHeroSection>
           <h1>About</h1>
+          <hr />
           <p>About</p>
         </SubpageHeroSection>
 

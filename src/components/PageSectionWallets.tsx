@@ -1,11 +1,12 @@
 import { colord } from 'colord'
 import { motion } from 'framer-motion'
-import { useState } from 'react'
+import { ReactNode, useState } from 'react'
 import styled from 'styled-components'
 import { deviceBreakPoints } from '../styles/global-style'
 import Button from './Button'
 import GradientBubble from './GradientBubble'
 import SectionTextHeader from './SectionTextHeader'
+import { StaticImage } from 'gatsby-plugin-image'
 
 export interface PageSectionWalletsContentType {
   title: string
@@ -14,7 +15,7 @@ export interface PageSectionWalletsContentType {
   wallets: {
     title: string
     description: string
-    screenshot: { publicURL: string }
+    screenshot: ReactNode
     color: string
     actions: {
       title: string
@@ -43,18 +44,11 @@ const PageSectionWallets = ({
         <WalletCard key={w.title} {...w}></WalletCard>
       ))}
     </WalletCards>
-    <ParallaxBackground>
-      <GradientBubble speed={-10} positionPercentage={[5, 5]} scale={2} blur={10} gradientVariant={2} />
-      <GradientBubble speed={-5} positionPercentage={[0, 20]} scale={1} blur={10} gradientVariant={1} />
-      <GradientBubble speed={-20} positionPercentage={[80, 30]} scale={2} blur={15} gradientVariant={4} />
-      <GradientBubble speed={-2} positionPercentage={[90, 80]} scale={2} blur={10} gradientVariant={3} />
-      <GradientBubble speed={30} positionPercentage={[80, 10]} scale={6} blur={20} gradientVariant={1} />
-      <GradientBubble speed={20} positionPercentage={[0, 90]} scale={6} blur={20} gradientVariant={0} />
-    </ParallaxBackground>
+    <ParallaxBg />
   </SectionWrapper>
 )
 
-const WalletCard = ({
+export const WalletCard = ({
   title,
   description,
   screenshot,
@@ -72,11 +66,7 @@ const WalletCard = ({
             .toHex()
         }}
       >
-        <WalletScreenshot
-          src={screenshot.publicURL}
-          alt="Desktop wallet screenshot"
-          animate={{ scale: isHovered ? 1.04 : 1 }}
-        />
+        <WalletScreenshot animate={{ scale: isHovered ? 1.04 : 1 }}>{screenshot}</WalletScreenshot>
       </WalletScreenShotContainer>
       <WalletTextContainer>
         <WalletTitle>{title}</WalletTitle>
@@ -94,6 +84,17 @@ const WalletCard = ({
 }
 
 export default PageSectionWallets
+
+export const ParallaxBg = () => (
+  <ParallaxBackground>
+    <GradientBubble speed={-10} positionPercentage={[5, 5]} scale={2} blur={10} gradientVariant={2} />
+    <GradientBubble speed={-5} positionPercentage={[0, 20]} scale={1} blur={10} gradientVariant={1} />
+    <GradientBubble speed={-20} positionPercentage={[80, 30]} scale={2} blur={15} gradientVariant={4} />
+    <GradientBubble speed={-2} positionPercentage={[90, 80]} scale={2} blur={10} gradientVariant={3} />
+    <GradientBubble speed={30} positionPercentage={[80, 10]} scale={6} blur={20} gradientVariant={1} />
+    <GradientBubble speed={20} positionPercentage={[0, 90]} scale={6} blur={20} gradientVariant={0} />
+  </ParallaxBackground>
+)
 
 const SectionWrapper = styled.section`
   position: relative;
@@ -125,7 +126,7 @@ const CenteredDescription = styled.div`
   }
 `
 
-const WalletCards = styled.div`
+export const WalletCards = styled.div`
   display: flex;
   gap: 50px;
   padding: var(--spacing-4);
@@ -147,7 +148,7 @@ const WalletScreenShotContainer = styled.div`
   overflow: hidden;
 `
 
-const WalletScreenshot = styled(motion.img)`
+const WalletScreenshot = styled(motion.div)`
   width: 100%;
   object-fit: contain;
   z-index: 1;

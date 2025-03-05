@@ -127,7 +127,6 @@ const PageSectionHeroStyled = styled.section`
 
 const LeftContentWrapper = styled.div`
   position: absolute;
-  left: 0;
   top: 50%;
   transform: translateY(-50%);
   display: flex;

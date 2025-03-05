@@ -1,6 +1,10 @@
 import styled from 'styled-components'
 
-const PageSectionContainer = styled.div`
+interface PageSectionContainerProps {
+  wide?: boolean
+}
+
+const PageSectionContainer = styled.div<PageSectionContainerProps>`
   max-width: var(--page-width);
   margin: 0 auto;
   padding: 0 var(--spacing-4);

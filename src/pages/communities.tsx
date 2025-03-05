@@ -11,6 +11,7 @@ const CustomPage = (props: PageProps) => (
       <>
         <SubpageHeroSection>
           <h1>Online communities</h1>
+          <hr />
           <p>
             We are lucky to have a very active community of builders, users & friends. Join the channels and groups and
             help us launch Alephium to the stars!

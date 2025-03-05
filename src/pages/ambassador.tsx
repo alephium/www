@@ -11,6 +11,7 @@ const CustomPage = (props: PageProps) => (
       <>
         <SubpageHeroSection>
           <h1>Alephium Ambassador Program</h1>
+          <hr />
           <p>
             Join the Alephium Ambassador Program and become a pivotal force in advancing the world's first operational
             sharded blockchain, designed for secure and efficient decentralized applications. As an ambassador, you'll

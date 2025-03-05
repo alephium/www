@@ -11,6 +11,7 @@ const CustomPage = (props: PageProps) => (
       <>
         <SubpageHeroSection>
           <h1>Your Gateway to the Alephium Ecosystem</h1>
+          <hr />
           <p>
             Embarking on your Alephium journey begins with selecting a secure and user-friendly wallet tailored to your
             needs. Alephium offers a variety of wallets to manage your ALPH tokens, interact with decentralized

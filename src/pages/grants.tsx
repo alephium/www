@@ -11,6 +11,7 @@ const CustomPage = (props: PageProps) => (
       <>
         <SubpageHeroSection>
           <h1>Alephium Grants & Funding Opportunities</h1>
+          <hr />
           <p>
             At Alephium, we believe that builders drive progress. Our Grants Program is designed to support individuals
             and teams working on projects that expand and strengthen the Alephium ecosystem. Whether you&apos;re

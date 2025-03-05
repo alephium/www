@@ -14,6 +14,7 @@ const CustomPage = (props: PageProps) => (
       <>
         <SubpageHeroSection>
           <h1>Shaping the Future, One Block at a Time</h1>
+          <hr />
           <p>
             At Alephium, we blend innovative technology with a human-centric approach to create a blockchain experience
             that’s both powerful and accessible. Dive into our official brand hub to discover resources that reflect our
