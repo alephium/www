@@ -1,15 +1,16 @@
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
-import PageSectionContainer from '../PageSectionContainer'
 import CardEngagement from '../CardEngagement'
 import Column from '../Columns/Column'
 import Columns from '../Columns/Columns'
-import SectionTextHeader from '../SectionTextHeader'
 
 import { deviceBreakPoints } from '../../styles/global-style'
 import { graphql } from 'gatsby'
 import { notEmpty } from '../../utils/misc'
+import SubpageSection from '../customPageComponents/SubpageSection'
+import TextElement from '../customPageComponents/TextElement'
+import SubheaderContent from '../customPageComponents/SubheaderContent'
 
 export const query = graphql`
   fragment PageSectionLinkedCards on MarkdownRemarkFrontmatterPageSectionLinkedCardsContent {
@@ -22,15 +23,15 @@ export const query = graphql`
 `
 
 const PageSectionLinkedCards = (content: Queries.PageSectionLinkedCardsFragment) => (
-  <SectionContainer id="intro">
+  <SubpageSection id="intro">
     {content?.titleRows && (
-      <SectionTextHeader
-        bigSubtitle
-        titleRows={content.titleRows.filter(notEmpty)}
-        subtitleRows={content?.subtitleRows?.filter(notEmpty)}
-      />
+      <TextElement>
+        <h2>{content.titleRows.filter(notEmpty).join('\n')}</h2>
+        <p>{content?.subtitleRows?.filter(notEmpty).join('\n')}</p>
+      </TextElement>
     )}
-    <PageSectionContainer>
+
+    <SubheaderContent>
       <IntroColumns gap="var(--spacing-32)">
         <Column>
           {content?.cards && (
@@ -57,8 +58,8 @@ const PageSectionLinkedCards = (content: Queries.PageSectionLinkedCardsFragment)
           )}
         </Column>
       </IntroColumns>
-    </PageSectionContainer>
-  </SectionContainer>
+    </SubheaderContent>
+  </SubpageSection>
 )
 
 export default PageSectionLinkedCards
@@ -79,14 +80,6 @@ const cardVariants = {
   visible: { opacity: 1 }
 }
 
-const SectionContainer = styled.section`
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: var(--spacing-8);
-`
-
 const IntroColumns = styled(Columns)`
   margin-bottom: var(--spacing-8);
 
@@ -100,7 +93,6 @@ const IntroColumns = styled(Columns)`
 `
 
 const IntroColumnContent = styled(motion.div)`
-  margin-top: var(--spacing-6);
   display: flex;
   gap: 30px;
 

@@ -6,12 +6,11 @@ import Page from '../components/customPageComponents/Page'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
-import { Card } from '../components/customPageComponents/CardsGrid'
-import CardsGrid from '../components/customPageComponents/CardsGrid'
+import TextCard from '../components/customPageComponents/TextCard'
+import Grid from '../components/customPageComponents/Grid'
 import Button from '../components/Button'
 import SimpleLink from '../components/SimpleLink'
 import Placeholder from '../components/customPageComponents/Placeholder'
-import PageSectionMilestones from '../components/PageSectionMilestones'
 
 const CustomPage = (props: PageProps) => (
   <Page
@@ -37,8 +36,8 @@ const CustomPage = (props: PageProps) => (
           </TextElement>
 
           <SubheaderContent>
-            <CardsGrid columns={3}>
-              <Card>
+            <Grid columns={3}>
+              <TextCard>
                 <h3>Alephium Grants Fund</h3>
                 <p>
                   The Alephium Grants Fund is an initiative aimed at empowering developers and startups building on the
@@ -48,24 +47,24 @@ const CustomPage = (props: PageProps) => (
                 <Button url="https://docs.google.com/forms/d/e/1FAIpQLSexF7M7k7kDdJtsHKFGYZuw4uEP7dzRrxmTFaMQvdU8DdH3cA/viewform">
                   Learn & Apply
                 </Button>
-              </Card>
-              <Card>
+              </TextCard>
+              <TextCard>
                 <h3>Bug Bounty Program</h3>
                 <p>
                   Security is paramount at Alephium. We encourage individual developers to discover vulnerabilities and
                   exploits within the Alephium protocol or any of our code repositories.
                 </p>
                 <Button url="/bounties">Learn more about bounties</Button>
-              </Card>
-              <Card>
+              </TextCard>
+              <TextCard>
                 <h3>Marketing Grants</h3>
                 <p>
                   Effective marketing is crucial for project success. Alephium offers Marketing Grants to support the
                   growth and user acquisition efforts of projects built on the Alephium network. These funds can be
                   utilized for digital and offline marketing, in-app incentives, public relations, and communications.
                 </p>
-              </Card>
-            </CardsGrid>
+              </TextCard>
+            </Grid>
           </SubheaderContent>
         </SubpageSection>
 
@@ -149,14 +148,14 @@ const CustomPage = (props: PageProps) => (
         <SectionDivider />
 
         <SubpageSection>
-          <TextElement align="center">
+          <TextElement isCentered>
             <h2>Ready to Build? Apply Today!</h2>
             <p>If you're passionate about expanding the Alephium ecosystem, we want to hear from you.</p>
             <Button url="https://docs.google.com/forms/d/e/1FAIpQLSexF7M7k7kDdJtsHKFGYZuw4uEP7dzRrxmTFaMQvdU8DdH3cA/viewform">
               Apply for a Grant
             </Button>
           </TextElement>
-          <TextElement align="center" size="small">
+          <TextElement isCentered isSmall>
             <h3>
               Got questions? Join the discussion in our community channels or contact us directly at
               grants@alephium.org.

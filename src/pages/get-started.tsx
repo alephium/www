@@ -11,7 +11,8 @@ import Placeholder from '../components/customPageComponents/Placeholder'
 import { ParallaxBg, WalletCard, WalletCards } from '../components/PageSectionWallets'
 import { StaticImage } from 'gatsby-plugin-image'
 import PageSectionContainer from '../components/PageSectionContainer'
-import CardsGrid, { Card, LinkedCard } from '../components/customPageComponents/CardsGrid'
+import Grid from '../components/customPageComponents/Grid'
+import TextCard from '../components/customPageComponents/TextCard'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
 
 const CustomPage = (props: PageProps) => (
@@ -32,7 +33,7 @@ const CustomPage = (props: PageProps) => (
 
         <SubpageSection>
           <SideBySide>
-            <TextElement size="small">
+            <TextElement isSmall>
               <h3>What is Alephium?</h3>
               <p>
                 Alephium is a next-generation Layer 1 blockchain, designed to deliver unmatched security without
@@ -147,51 +148,51 @@ const CustomPage = (props: PageProps) => (
             </p>
           </TextElement>
           <SubheaderContent>
-            <CardsGrid columns={4}>
-              <LinkedCard url="https://bridge.alephium.org/">
+            <Grid columns={4}>
+              <TextCard url="https://bridge.alephium.org/">
                 <Placeholder width="100px" height="100px " />
                 <h3>Alephium Bridge</h3>
                 <p>A native bridge on Alephium that enhances interoperability with other blockchains.</p>
-              </LinkedCard>
-              <LinkedCard url="https://www.ayin.app/">
+              </TextCard>
+              <TextCard url="https://www.ayin.app/">
                 <Placeholder width="100px" height="100px " />
                 <h3>AYIN</h3>
                 <p>Decentralized exchange built on Alephium.</p>
-              </LinkedCard>
-              <LinkedCard url="https://buy.onramper.com/?mode=buy&onlyCryptos=alph_alph">
+              </TextCard>
+              <TextCard url="https://buy.onramper.com/?mode=buy&onlyCryptos=alph_alph">
                 <Placeholder width="100px" height="100px " />
                 <h3>Onramper</h3>
                 <p>A leading fiat-to-crypto on-ramp aggregator.</p>
-              </LinkedCard>
-              <LinkedCard url="https://www.mexc.com/exchange/ALPH_USDT">
+              </TextCard>
+              <TextCard url="https://www.mexc.com/exchange/ALPH_USDT">
                 <Placeholder width="100px" height="100px " />
                 <h3>MEXC</h3>
                 <p>Digital assets exchange.</p>
-              </LinkedCard>
-              <LinkedCard url="https://www.gate.io/trade/ALPH_USDT">
+              </TextCard>
+              <TextCard url="https://www.gate.io/trade/ALPH_USDT">
                 <Placeholder width="100px" height="100px " />
                 <h3>Gate.io</h3>
                 <p>Digital assets exchange.</p>
-              </LinkedCard>
-              <LinkedCard url="https://app.uniswap.org/explore/tokens/ethereum/0x590f820444fa3638e022776752c5eef34e2f89a6">
+              </TextCard>
+              <TextCard url="https://app.uniswap.org/explore/tokens/ethereum/0x590f820444fa3638e022776752c5eef34e2f89a6">
                 <Placeholder width="100px" height="100px " />
                 <h3>Uniswap</h3>
                 <p>Leading decentralized exchange.</p>
-              </LinkedCard>
-              <LinkedCard url="https://elexium.finance/">
+              </TextCard>
+              <TextCard url="https://elexium.finance/">
                 <Placeholder width="100px" height="100px " />
                 <h3>Elexium Finance</h3>
                 <p>Decentralized exchange & liquidity arena on Alephium.</p>
-              </LinkedCard>
-              <LinkedCard url="https://pancakeswap.finance/swap?inputCurrency=0x8683ba2f8b0f69b2105f26f488bade1d3ab4dec8&outputCurrency=0x55d398326f99059ff775485246999027b3197955">
+              </TextCard>
+              <TextCard url="https://pancakeswap.finance/swap?inputCurrency=0x8683ba2f8b0f69b2105f26f488bade1d3ab4dec8&outputCurrency=0x55d398326f99059ff775485246999027b3197955">
                 <Placeholder width="100px" height="100px " />
                 <h3>Pancake Swap</h3>
                 <p>Multichain decentralized exchange.</p>
-              </LinkedCard>
-            </CardsGrid>
+              </TextCard>
+            </Grid>
           </SubheaderContent>
 
-          <TextElement align="center">
+          <TextElement isCentered>
             <Button url="https://coinmarketcap.com/currencies/alephium/#Markets">See more ALPH markets</Button>
           </TextElement>
         </SubpageSection>
@@ -199,7 +200,7 @@ const CustomPage = (props: PageProps) => (
         <SectionDivider />
 
         <SubpageSection>
-          <TextElement align="center">
+          <TextElement isCentered>
             <h2>Explore Alephium ecosystem</h2>
             <p>
               Discover innovative dApps and tokenized assets - trade, borrow, lend or earn ALPH, by engaging with DeFi
@@ -223,21 +224,21 @@ const CustomPage = (props: PageProps) => (
           </TextElement>
 
           <SubheaderContent>
-            <CardsGrid columns={2}>
-              <LinkedCard url="https://docs.alephium.org/">
+            <Grid columns={2}>
+              <TextCard url="https://docs.alephium.org/">
                 <Placeholder width="100px" height="100px " />
                 <h3>Documentation</h3>
                 <p>Documentation to get you going quick and easy.</p>
-              </LinkedCard>
-              <LinkedCard url="/grants">
+              </TextCard>
+              <TextCard url="/grants">
                 <Placeholder width="100px" height="100px " />
                 <h3>Grants</h3>
                 <p>You have an idea, but no funding? We can help.</p>
-              </LinkedCard>
-            </CardsGrid>
+              </TextCard>
+            </Grid>
           </SubheaderContent>
 
-          <TextElement align="center">
+          <TextElement isCentered>
             <h3>Guides and tutorials</h3>
             <Button url="https://docs.alephium.org/ralph">Ralph Language</Button>
             <Button url="https://docs.alephium.org/sdk">SDK</Button>
@@ -261,7 +262,7 @@ const CustomPage = (props: PageProps) => (
               <li>Easy setup and quick start</li>
             </ul>
           </TextElement>
-          <TextElement align="center">
+          <TextElement isCentered>
             <h3>Ready to mine?</h3>
             <Button url="https://docs.alephium.org/mining">Get started</Button>
           </TextElement>
@@ -270,7 +271,7 @@ const CustomPage = (props: PageProps) => (
         <SectionDivider />
 
         <SubpageSection>
-          <TextElement align="center">
+          <TextElement isCentered>
             <h2>Not sure what to do first?</h2>
             <p>No worries! Join our community and explore, there are many ways you can leave your mark on Alephium.</p>
             <Button url="/communities">See our communities</Button>

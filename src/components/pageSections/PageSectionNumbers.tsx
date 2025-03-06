@@ -2,14 +2,14 @@ import { ExplorerClient } from '@alephium/sdk'
 import { useCallback, useEffect, useState } from 'react'
 import styled from 'styled-components'
 
-import PageSectionContainer from '../PageSectionContainer'
 import { HttpResponse } from '@alephium/sdk/api/explorer'
-import { motion } from 'framer-motion'
 import { graphql } from 'gatsby'
-import SectionTextHeader from '../SectionTextHeader'
-import CardStats from '../CardStats'
 import { notEmpty } from '../../utils/misc'
-import { deviceBreakPoints } from '../../styles/global-style'
+import TextElement from '../customPageComponents/TextElement'
+import SubpageSection from '../customPageComponents/SubpageSection'
+import SubheaderContent from '../customPageComponents/SubheaderContent'
+import Grid from '../customPageComponents/Grid'
+import TextCard from '../customPageComponents/TextCard'
 
 const baseUrl = 'https://backend.mainnet.alephium.org'
 
@@ -69,36 +69,35 @@ const PageSectionNumbers = (content: Queries.PageSectionNumbersFragment) => {
   const { totalTransactions } = statsScalarData
 
   return (
-    <section>
-      {content?.titleRows && <SectionTextHeader titleRows={content.titleRows.filter(notEmpty)} centered bigSubtitle />}
-      <PageSectionContainer>
-        <IntroColumns>
+    <SubpageSection>
+      {content?.titleRows && (
+        <TextElement isCentered>
+          <h2>{content.titleRows.filter(notEmpty).join('\n')}</h2>
+        </TextElement>
+      )}
+      <SubheaderContent>
+        <Grid columns={2}>
           {content?.cards?.filter(notEmpty).map((card) => (
-            <CardStats
-              {...card}
-              key={card.title}
-              stat={
-                card.stat === 'live-transactions'
+            <TextCard key={card.title}>
+              <h3>{card.title}</h3>
+              <p>{card.description}</p>
+              <Stat>
+                {card.stat === 'live-transactions'
                   ? `${totalTransactions.value.toLocaleString()} total transactions`
-                  : card.stat
-              }
-            />
+                  : card.stat}
+              </Stat>
+            </TextCard>
           ))}
-        </IntroColumns>
-      </PageSectionContainer>
-    </section>
+        </Grid>
+      </SubheaderContent>
+    </SubpageSection>
   )
 }
 
 export default PageSectionNumbers
 
-const IntroColumns = styled(motion.div)`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-bottom: var(--spacing-16);
-  gap: var(--spacing-10);
-
-  @media ${deviceBreakPoints.mobile} {
-    grid-template-columns: 1fr;
-  }
+const Stat = styled.div`
+  font-size: var(--fontSize-28);
+  line-height: var(--lineHeight-36);
+  margin-top: var(--spacing-6);
 `

@@ -4,7 +4,8 @@ import SectionDivider from '../components/SectionDivider'
 import SubpageHeroSection from '../components/customPageComponents/SubpageHeroSection'
 import Page from '../components/customPageComponents/Page'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
-import CardsGrid, { Card } from '../components/customPageComponents/CardsGrid'
+import Grid from '../components/customPageComponents/Grid'
+import TextCard from '../components/customPageComponents/TextCard'
 import Button from '../components/Button'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
@@ -38,29 +39,29 @@ const CustomPage = (props: PageProps) => (
           </TextElement>
 
           <SubheaderContent>
-            <CardsGrid columns={3}>
-              <Card>
+            <Grid columns={3}>
+              <TextCard>
                 <h3>Suggest a Bounty</h3>
                 <p>
                   If you have an idea for a bounty that would help improve the Alephium ecosystem, you can submit your
                   proposal for review by the Alephium team.
                 </p>
                 <Button url="/">Submit a bounty proposal</Button>
-              </Card>
-              <Card>
+              </TextCard>
+              <TextCard>
                 <h3>Work on an Existing Bounty</h3>
                 <p>If you’re ready to take on a bounty, browse the open opportunities and submit your interest.</p>
                 <Button url="/">View open bounties</Button>
-              </Card>
-              <Card>
+              </TextCard>
+              <TextCard>
                 <h3>Improve Security</h3>
                 <p>
                   Security is critical for Alephium. Our Bug Bounty Program rewards contributors who identify and report
                   vulnerabilities.
                 </p>
                 <Button url="https://github.com/alephium/community/blob/master/BugBounty.md">Report a bug</Button>
-              </Card>
-            </CardsGrid>
+              </TextCard>
+            </Grid>
           </SubheaderContent>
         </SubpageSection>
 
@@ -105,7 +106,7 @@ const CustomPage = (props: PageProps) => (
         <SectionDivider />
 
         <SubpageSection>
-          <TextElement align="center">
+          <TextElement isCentered>
             <h2>Ready? Join the Bounty Program today!</h2>
           </TextElement>
         </SubpageSection>

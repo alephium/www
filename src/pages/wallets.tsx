@@ -6,7 +6,8 @@ import Page from '../components/customPageComponents/Page'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
-import CardsGrid, { Card } from '../components/customPageComponents/CardsGrid'
+import Grid from '../components/customPageComponents/Grid'
+import TextCard from '../components/customPageComponents/TextCard'
 import Button from '../components/Button'
 import SideBySide from '../components/customPageComponents/SideBySide'
 import Placeholder from '../components/customPageComponents/Placeholder'
@@ -34,29 +35,29 @@ const CustomPage = (props: PageProps) => (
           </TextElement>
 
           <SubheaderContent>
-            <CardsGrid columns={3}>
-              <Card>
+            <Grid columns={3}>
+              <TextCard>
                 <h3>Enhanced Security</h3>
                 <p>
                   Alephium's non-custodial wallets ensure that only you have access to your funds and private keys,
                   which are fully encrypted on your device.
                 </p>
-              </Card>
-              <Card>
+              </TextCard>
+              <TextCard>
                 <h3>Comprehensive Features</h3>
                 <p>
                   Whether you prefer desktop applications, browser extensions, or mobile apps, Alephium wallets allow
                   you to manage ALPH tokens, engage with dApps, and more.
                 </p>
-              </Card>
-              <Card>
+              </TextCard>
+              <TextCard>
                 <h3>Simple Setup</h3>
                 <p>
                   Getting started is straightforward—download your preferred wallet, set up your account, and you're
                   ready to explore the Alephium ecosystem.
                 </p>
-              </Card>
-            </CardsGrid>
+              </TextCard>
+            </Grid>
           </SubheaderContent>
         </SubpageSection>
 
@@ -163,7 +164,7 @@ const CustomPage = (props: PageProps) => (
             </p>
           </TextElement>
 
-          <TextElement size="small">
+          <TextElement isSmall>
             <h3>Disclaimer</h3>
             <p>
               The list of wallets does not constitute an endorsement and is not exhaustive of all wallet options

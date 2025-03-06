@@ -24,9 +24,7 @@ export const pageQuery = graphql`
           pageSectionStatsContent {
             ...PageSectionNumbers
           }
-          pageSectionTextImageAlternateContent {
-            ...PageSectionTextImageAlternate
-          }
+
           pageSectionEcosystemContent {
             ...PageSectionEcosystem
           }
@@ -71,12 +69,8 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
             </>
           )}
 
-          {content?.pageSectionTextImageAlternateContent && (
-            <>
-              <PageSectionTextImageAlternate {...content.pageSectionTextImageAlternateContent} />
-              <SectionDivider />
-            </>
-          )}
+          <PageSectionTextImageAlternate />
+          <SectionDivider />
 
           {content?.pageSectionEcosystemContent && (
             <>

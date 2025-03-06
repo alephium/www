@@ -3,22 +3,15 @@ import styled, { css } from 'styled-components'
 
 interface TextElementProps {
   children: ReactNode
-  size?: 'small' | 'large'
-  align?: 'left' | 'center'
+  isSmall?: boolean
+  isBodySmall?: boolean
+  isCentered?: boolean
   className?: string
 }
 
-const TextElement = ({ children, className, size = 'large', align = 'left' }: TextElementProps) => (
-  <TextElementStyled className={className} size={size} align={align}>
-    {children}
-  </TextElementStyled>
-)
-
-export default TextElement
-
-const TextElementStyled = styled.div<TextElementProps>`
-  ${({ align }) =>
-    align === 'center' &&
+const TextElement = styled.div<TextElementProps>`
+  ${({ isCentered }) =>
+    isCentered &&
     css`
       text-align: center;
     `}
@@ -38,8 +31,8 @@ const TextElementStyled = styled.div<TextElementProps>`
     font-size: var(--fontSize-36);
     line-height: var(--lineHeight-50);
 
-    ${({ size }) =>
-      size === 'small' &&
+    ${({ isSmall }) =>
+      isSmall &&
       css`
         font-size: var(--fontSize-24);
         line-height: var(--lineHeight-28);
@@ -59,11 +52,11 @@ const TextElementStyled = styled.div<TextElementProps>`
     color: var(--color-grey-250);
 
     font-size: var(--fontSize-24);
-    line-height: var(--lineHeight-28);
+    line-height: var(--lineHeight-32);
     font-weight: var(--fontWeight-light);
 
-    ${({ size }) =>
-      size === 'small' &&
+    ${({ isSmall, isBodySmall }) =>
+      (isSmall || isBodySmall) &&
       css`
         font-size: var(--fontSize-18);
         line-height: var(--lineHeight-28);
@@ -88,3 +81,5 @@ const TextElementStyled = styled.div<TextElementProps>`
     margin-top: var(--spacing-8);
   }
 `
+
+export default TextElement

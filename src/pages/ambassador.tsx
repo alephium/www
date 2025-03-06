@@ -3,7 +3,8 @@ import { PageProps } from 'gatsby'
 import SectionDivider from '../components/SectionDivider'
 import SubpageHeroSection from '../components/customPageComponents/SubpageHeroSection'
 import Page from '../components/customPageComponents/Page'
-import CardsGrid, { Card } from '../components/customPageComponents/CardsGrid'
+import Grid from '../components/customPageComponents/Grid'
+import TextCard from '../components/customPageComponents/TextCard'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
@@ -38,8 +39,8 @@ const CustomPage = (props: PageProps) => (
           </TextElement>
 
           <SubheaderContent>
-            <CardsGrid columns={2}>
-              <Card>
+            <Grid columns={2}>
+              <TextCard>
                 <h3>Make an Impact</h3>
                 <p>
                   By becoming an Alephium Ambassador, you’re not just supporting a blockchain project - you’re helping
@@ -47,24 +48,24 @@ const CustomPage = (props: PageProps) => (
                   the ecosystem, from the developers building on Alephium to the users who benefit from its scalability
                   and efficiency.
                 </p>
-              </Card>
-              <Card>
+              </TextCard>
+              <TextCard>
                 <h3>Grow Your Skills</h3>
                 <p>
                   Being an Ambassador is more than just a role - it’s an opportunity to develop valuable skills, gain
                   hands-on experience, and grow both personally and professionally. You’ll be surrounded by experts from
                   different domains and get access to exclusive resources from Alephium’s core team.
                 </p>
-              </Card>
-              <Card>
+              </TextCard>
+              <TextCard>
                 <h3>Join a Global Network</h3>
                 <p>
                   Become part of a vibrant, diverse, and supportive global community. Meet passionate innovators, join
                   local communities, represent Alephium at local and international events, and more. And don’t worry,
                   we’ll be right beside you, ready to provide guidance to help you succeed.
                 </p>
-              </Card>
-              <Card>
+              </TextCard>
+              <TextCard>
                 <h3>Earn Rewards</h3>
                 <p>
                   Your contributions as an Alephium Ambassador will be recognized and rewarded in meaningful ways. We
@@ -72,8 +73,8 @@ const CustomPage = (props: PageProps) => (
                   helping you open the doors to new professional opportunities, and providing support to attend Web3
                   events, conferences, and hackathons.
                 </p>
-              </Card>
-            </CardsGrid>
+              </TextCard>
+            </Grid>
           </SubheaderContent>
         </SubpageSection>
 
@@ -136,7 +137,7 @@ const CustomPage = (props: PageProps) => (
         <SectionDivider />
 
         <SubpageSection>
-          <TextElement align="center">
+          <TextElement isCentered>
             <h2>Ready to Join?</h2>
             <p>
               Become a part of the Alephium Ambassador Program and help us build the future of finance. Together, we can

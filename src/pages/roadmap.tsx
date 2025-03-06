@@ -29,7 +29,7 @@ const CustomPage = (props: PageProps) => (
         <SectionDivider />
 
         <SubpageSection>
-          <TextElement align="center">
+          <TextElement isCentered>
             <h2>Current Focus</h2>
           </TextElement>
         </SubpageSection>
@@ -37,7 +37,7 @@ const CustomPage = (props: PageProps) => (
         <SectionDivider />
 
         <SubpageSection>
-          <TextElement align="center">
+          <TextElement isCentered>
             <h2>What’s Next?</h2>
           </TextElement>
         </SubpageSection>
@@ -45,7 +45,7 @@ const CustomPage = (props: PageProps) => (
         <SectionDivider />
 
         <SubpageSection>
-          <TextElement align="center">
+          <TextElement isCentered>
             <h2>Join Us on This Journey</h2>
             <p>
               Alephium’s roadmap is a living document, evolving with the input of our community and the progress of our

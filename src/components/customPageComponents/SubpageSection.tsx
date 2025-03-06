@@ -1,16 +1,15 @@
-import { ReactNode } from 'react'
+import { HTMLAttributes, ReactNode } from 'react'
 import styled from 'styled-components'
 import PageSectionContainer from '../PageSectionContainer'
 
-interface SubpageSectionProps {
+interface SubpageSectionProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode
-  className?: string
   Parallax?: ReactNode
   fullWidth?: boolean
 }
 
-const SubpageSection = ({ children, className, Parallax, fullWidth }: SubpageSectionProps) => (
-  <SubpageSectionStyled className={className}>
+const SubpageSection = ({ children, Parallax, fullWidth, ...props }: SubpageSectionProps) => (
+  <SubpageSectionStyled {...props}>
     {fullWidth ? children : <PageSectionContainer>{children}</PageSectionContainer>}
     {Parallax}
   </SubpageSectionStyled>

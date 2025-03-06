@@ -347,7 +347,7 @@ const CustomPage = (props: PageProps) => (
         <SectionDivider />
 
         <SubpageSection>
-          <TextElement align="center">
+          <TextElement isCentered>
             <h2>Still have questions?</h2>
             <p>Join our community for in-depth information</p>
             <Button url="/discord">Join Discord</Button>

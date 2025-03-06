@@ -6,7 +6,8 @@ import Button from '../components/Button'
 import Page from '../components/customPageComponents/Page'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
-import CardsGrid, { Card } from '../components/customPageComponents/CardsGrid'
+import Grid from '../components/customPageComponents/Grid'
+import TextCard from '../components/customPageComponents/TextCard'
 import Placeholder from '../components/customPageComponents/Placeholder'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
 
@@ -39,8 +40,8 @@ const CustomPage = (props: PageProps) => (
           </TextElement>
 
           <SubheaderContent>
-            <CardsGrid columns={3}>
-              <Card>
+            <Grid columns={3}>
+              <TextCard>
                 <Placeholder width="100px" height="100px" />
                 <h3>SVG</h3>
                 <p>
@@ -48,8 +49,8 @@ const CustomPage = (props: PageProps) => (
                   graphics on websites.
                 </p>
                 <Button url="/">Download SVG</Button>
-              </Card>
-              <Card>
+              </TextCard>
+              <TextCard>
                 <Placeholder width="100px" height="100px" />
                 <h3>PNG</h3>
                 <p>
@@ -57,14 +58,14 @@ const CustomPage = (props: PageProps) => (
                   edges.
                 </p>
                 <Button url="/">Download PNG</Button>
-              </Card>
-              <Card>
+              </TextCard>
+              <TextCard>
                 <Placeholder width="100px" height="100px" />
                 <h3>MP4</h3>
                 <p>Alephium animations in a widely used format. Perfect for streaming and sharing online.</p>
                 <Button url="/">Download MP4</Button>
-              </Card>
-            </CardsGrid>
+              </TextCard>
+            </Grid>
           </SubheaderContent>
         </SubpageSection>
 
@@ -105,7 +106,7 @@ const CustomPage = (props: PageProps) => (
           </TextElement>
 
           <SubheaderContent>
-            <CardsGrid columns={4}>
+            <Grid columns={4}>
               <Card>
                 <Placeholder width="100px" height="100px" />
                 <h3>Purple</h3>
@@ -141,7 +142,7 @@ const CustomPage = (props: PageProps) => (
                 <h3>Mountain 3rd</h3>
                 <p>#ECECEC</p>
               </Card>
-            </CardsGrid>
+            </Grid>
           </SubheaderContent>
         </SubpageSection>
 

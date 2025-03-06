@@ -65,7 +65,7 @@ const CustomPage = (props: PageProps) => (
         <SectionDivider />
 
         <SubpageSection>
-          <TextElement align="center">
+          <TextElement isCentered>
             <h2>Want to be featured?</h2>
             <p>
               If you run an Alephium community account in your language and want to be featured here, send a message to

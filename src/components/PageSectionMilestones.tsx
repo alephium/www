@@ -40,7 +40,7 @@ const PageSectionMilestones = () => {
 
   return (
     <SectionWrapper>
-      <TextElement align="center">
+      <TextElement isCentered>
         <h2>Completed milestones</h2>
       </TextElement>
       <ToggleSection>
