@@ -371,7 +371,7 @@ const Drawer = styled(motion.div)`
   top: calc(100% + 30px);
   left: -50%;
   right: 0;
-  min-width: 200px;
+  min-width: 250px;
   background-color: rgba(30, 30, 30, 1);
   border-radius: 20px;
   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.8);
@@ -392,7 +392,7 @@ const DrawerItem = styled.div<{ isLink: boolean }>`
   gap: 10px;
 
   > * {
-    padding: 18px;
+    padding: 12px 18px;
     width: 100%;
   }
 
@@ -407,6 +407,7 @@ const DrawerItem = styled.div<{ isLink: boolean }>`
 
 const DrawerItemTitle = styled.div`
   text-transform: uppercase;
-  font-size: var(--fontSize-12);
+  font-size: var(--fontSize-18);
   color: ${({ theme }) => theme.textTertiary};
+  padding-top: 24px;
 `
