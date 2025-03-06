@@ -29,7 +29,7 @@ menuItems:
       - title: Wallets
         link: /wallets
       - title: Dapps
-        link: https://docs.alephium.org/dapps
+        link: https://alph.land
       - title: Bridge
         link: https://bridge.alephium.org/#/transfer
       - title: Explorer
