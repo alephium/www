@@ -16,10 +16,18 @@ const TextElement = styled.div<TextElementProps>`
       text-align: center;
     `}
 
+  > h1,
+  > h2,
+  > h3,
+  > h4 {
+    font-weight: var(--fontWeight-medium);
+
+    margin: 0;
+    white-space: pre-wrap;
+  }
+
   > h1 {
     font-size: var(--fontSize-56);
-    line-height: var(--fontSize-56);
-    font-weight: var(--fontWeight-medium);
   }
 
   > h2 {
@@ -29,7 +37,7 @@ const TextElement = styled.div<TextElementProps>`
 
   > h3 {
     font-size: var(--fontSize-36);
-    line-height: var(--lineHeight-50);
+    line-height: var(--fontSize-50);
 
     ${({ isSmall }) =>
       isSmall &&
@@ -39,12 +47,16 @@ const TextElement = styled.div<TextElementProps>`
       `}
   }
 
-  > h2,
-  > h3 {
-    font-weight: var(--fontWeight-medium);
+  > h4 {
+    font-size: var(--fontSize-28);
+    line-height: var(--lineHeight-36);
 
-    margin: 0;
-    white-space: pre-wrap;
+    ${({ isSmall }) =>
+      isSmall &&
+      css`
+        font-size: var(--fontSize-24);
+        line-height: var(--lineHeight-28);
+      `}
   }
 
   > p,

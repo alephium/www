@@ -1,6 +1,6 @@
 import { graphql, PageProps } from 'gatsby'
 
-import PageSectionHero from '../components/pageSections/PageSectionHero'
+import HomepageHeroSection from '../components/pages/homepage/HomepageHeroSection'
 import HomepageIntroSection from '../components/pages/homepage/HomepageIntroSection'
 import HomepageTechnologySection from '../components/pages/homepage/HomepageTechnologySection'
 import HomepageStatsSection from '../components/pages/homepage/HomepageStatsSection'
@@ -17,16 +17,8 @@ export const pageQuery = graphql`
     allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/homepage.md/" } }) {
       nodes {
         frontmatter {
-          pageSectionHeroContent {
-            ...PageSectionHero
-          }
-
           intro {
             ...HomepageIntroSection
-          }
-
-          pageSectionStatsContent {
-            ...HomepageStatsSection
           }
 
           partnersSection {
@@ -46,12 +38,8 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
       {...props}
       content={
         <>
-          {content?.pageSectionHeroContent && (
-            <>
-              <PageSectionHero {...content.pageSectionHeroContent} />
-              <SectionDivider />
-            </>
-          )}
+          <HomepageHeroSection />
+          <SectionDivider />
 
           {content?.intro && (
             <>
@@ -60,12 +48,8 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
             </>
           )}
 
-          {content?.pageSectionStatsContent && (
-            <>
-              <HomepageStatsSection {...content.pageSectionStatsContent} />
-              <SectionDivider />
-            </>
-          )}
+          <HomepageStatsSection />
+          <SectionDivider />
 
           <HomepageTechnologySection />
           <SectionDivider />
