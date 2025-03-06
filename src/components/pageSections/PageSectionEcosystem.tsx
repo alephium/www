@@ -1,25 +1,20 @@
-import SectionTextHeader from '../SectionTextHeader'
-import { graphql } from 'gatsby'
-import { notEmpty } from '../../utils/misc'
+import SubpageSection from '../customPageComponents/SubpageSection'
+import TextElement from '../customPageComponents/TextElement'
 
-export const query = graphql`
-  fragment PageSectionEcosystem on MarkdownRemarkFrontmatterPageSectionEcosystemContent {
-    titleRows
-    subtitleRows
-  }
-`
-
-const PageSectionEcosystem = (content: Queries.PageSectionEcosystemFragment) => (
-  <section>
-    {content?.titleRows && content?.subtitleRows && (
-      <SectionTextHeader
-        titleRows={content.titleRows.filter(notEmpty)}
-        subtitleRows={content.subtitleRows.filter(notEmpty)}
-        centered
-        bigSubtitle
-      />
-    )}
-  </section>
+const PageSectionEcosystem = () => (
+  <SubpageSection>
+    <TextElement isCentered>
+      <h2>
+        Built on Alephium.
+        <br />
+        Built to last.
+      </h2>
+      <p>
+        Alephium is home to pioneers, combining strong technology and a bustling community to bring the next generation
+        of decentralized applications to life.
+      </p>
+    </TextElement>
+  </SubpageSection>
 )
 
 export default PageSectionEcosystem

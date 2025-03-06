@@ -1,8 +1,8 @@
 import { graphql, PageProps } from 'gatsby'
 
 import PageSectionHero from '../components/pageSections/PageSectionHero'
-import PageSectionLinkedCards from '../components/pageSections/PageSectionLinkedCards'
-import PageSectionTextImageAlternate from '../components/pageSections/PageSectionTextImageAlternate'
+import HomepageIntroSection from '../components/pages/homepage/HomepageIntroSection'
+import HomepageTechnologySection from '../components/pages/homepage/HomepageTechnologySection'
 import PageSectionNumbers from '../components/pageSections/PageSectionNumbers'
 import SectionDivider from '../components/SectionDivider'
 import PageSectionEcosystem from '../components/pageSections/PageSectionEcosystem'
@@ -18,16 +18,15 @@ export const pageQuery = graphql`
           pageSectionHeroContent {
             ...PageSectionHero
           }
-          pageSectionLinkedCardsContent {
-            ...PageSectionLinkedCards
+
+          intro {
+            ...HomepageIntroSection
           }
+
           pageSectionStatsContent {
             ...PageSectionNumbers
           }
 
-          pageSectionEcosystemContent {
-            ...PageSectionEcosystem
-          }
           pageSectionPartnersContent {
             ...PageSectionPartners
           }
@@ -55,9 +54,9 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
             </>
           )}
 
-          {content?.pageSectionLinkedCardsContent && (
+          {content?.intro && (
             <>
-              <PageSectionLinkedCards {...content.pageSectionLinkedCardsContent} />
+              <HomepageIntroSection {...content.intro} />
               <SectionDivider />
             </>
           )}
@@ -69,15 +68,11 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
             </>
           )}
 
-          <PageSectionTextImageAlternate />
+          <HomepageTechnologySection />
           <SectionDivider />
 
-          {content?.pageSectionEcosystemContent && (
-            <>
-              <PageSectionEcosystem {...content.pageSectionEcosystemContent} />
-              <SectionDivider />
-            </>
-          )}
+          <PageSectionEcosystem />
+          <SectionDivider />
 
           {content?.pageSectionPartnersContent && (
             <>

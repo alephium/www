@@ -11,12 +11,7 @@ pageSectionHeroContent:
     text: Join the community
     url: /communities
 
-pageSectionLinkedCardsContent:
-  titleRows:
-    - A Network Built by Visionaries
-  subtitleRows:
-    - Alephium is more than a blockchain - it’s a movement driven by those who refuse to compromise on security. Built and secured by a community of miners, developers, and innovators, Alephium embodies the core strengths of Proof-of-Work while pioneering energy efficiency and scalability.
-    - We're not here to follow trends - we’re here to build a secure and sustainable foundation for the future of finance.
+intro:
   cards:
     - title: ALPH Coin Basics
       image: ../images/coins.svg

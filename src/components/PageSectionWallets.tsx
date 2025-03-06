@@ -26,14 +26,12 @@ export interface PageSectionWalletsContentType {
   }[]
 }
 
-interface PageSectionTextImageAlternateProps {
+interface PageSectionWalletsProps {
   className?: string
   content: PageSectionWalletsContentType
 }
 
-const PageSectionWallets = ({
-  content: { title, subtitle, description, wallets }
-}: PageSectionTextImageAlternateProps) => (
+const PageSectionWallets = ({ content: { title, subtitle, description, wallets } }: PageSectionWalletsProps) => (
   <SectionWrapper>
     <StyledSectionTextHeader id="wallets" title={title} subtitle={subtitle} bigSubtitle bigText centered />
     <CenteredDescription>
