@@ -5,8 +5,8 @@ import { deviceBreakPoints } from '../styles/global-style'
 
 import SimpleLink from './SimpleLink'
 import LogoText from '../images/svgs/logo-text.svg'
-import { AnimatePresence, motion, useMotionValueEvent, useScroll } from 'framer-motion'
-import { ReactNode, useRef, useState } from 'react'
+import { AnimatePresence, motion } from 'framer-motion'
+import { ReactNode, useRef, useState, useEffect } from 'react'
 import { RiTranslate2 } from 'react-icons/ri'
 
 import HeroLogo from './Hero/HeroLogo'
@@ -22,19 +22,37 @@ interface NavigationMenuProps {
   className?: string
 }
 
-const detachScrollValue = 65
+const detachScrollValue = 100
 
 const NavigationMenu = ({ topOffset, className }: NavigationMenuProps) => {
-  const { scrollY } = useScroll()
   const [isDetached, setIsDetached] = useState(false)
+  const [isVisible, setIsVisible] = useState(true)
+  const lastScrollY = useRef(0)
 
-  useMotionValueEvent(scrollY, 'change', (latest) => {
-    if (latest > detachScrollValue && !isDetached) {
-      setIsDetached(true)
-    } else if (latest <= detachScrollValue && isDetached) {
-      setIsDetached(false)
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY
+      const scrollDirection = currentScrollY > lastScrollY.current ? 'down' : 'up'
+
+      if (currentScrollY > detachScrollValue && !isDetached) {
+        setIsDetached(true)
+      } else if (currentScrollY <= detachScrollValue && isDetached) {
+        setIsDetached(false)
+      }
+
+      if (scrollDirection === 'down' && currentScrollY > 100) {
+        setIsVisible(false)
+      } else if (scrollDirection === 'up') {
+        setIsVisible(true)
+      }
+
+      lastScrollY.current = currentScrollY
     }
-  })
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [isDetached])
 
   const initialTop = topOffset || 0
 
@@ -43,9 +61,9 @@ const NavigationMenu = ({ topOffset, className }: NavigationMenuProps) => {
       <NavigationMenuStyled
         className={className}
         animate={{
-          y: isDetached ? 30 : initialTop,
-          backgroundColor: isDetached ? 'rgba(30, 30, 30, 0.6)' : 'rgba(30, 30, 30, 0)',
-          boxShadow: isDetached ? '0px 5px 60px rgba(0, 0, 0, 0.5)' : 'none'
+          y: isDetached ? (isVisible ? 30 : -detachScrollValue) : initialTop,
+          backgroundColor: 'rgba(30, 30, 30, 0)',
+          boxShadow: 'none'
         }}
         transition={{ type: 'spring', stiffness: 200, damping: 50 }}
       >
