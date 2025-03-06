@@ -193,7 +193,7 @@ const CustomPage = (props: PageProps) => (
           </SubheaderContent>
 
           <TextElement isCentered>
-            <Button url="https://coinmarketcap.com/currencies/alephium/#Markets">See more ALPH markets</Button>
+            <Button url="https://www.coingecko.com/en/coins/alephium#markets">See more ALPH markets</Button>
           </TextElement>
         </SubpageSection>
 

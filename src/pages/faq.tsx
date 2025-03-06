@@ -115,7 +115,7 @@ const CustomPage = (props: PageProps) => (
               </ul>
               <p>
                 Or you can explore
-                <a href="https://coinmarketcap.com/currencies/alephium/#Markets">more ALPH markets</a>.
+                <a href="https://www.coingecko.com/en/coins/alephium#markets">more ALPH markets</a>.
               </p>
             </Accordion>
           </SubheaderContent>
