@@ -47,19 +47,6 @@ pageSectionStatsContent:
       description: Alephium’s Proof-of-Less-Work mechanism reduces energy consumption, making it one of the most sustainable and responsible blockchains built for the future.
       stat: 87% lower environmental impact vs. traditional PoW
 
-pageSectionEcosystemContent:
-  titleRows:
-    - Built on Alephium.
-    - Built to last.
-  subtitleRows:
-    - Alephium is home to pioneers, combining strong technology and a bustling community to bring the next generation of decentralized applications to life.
-
-pageSectionPartnersContent:
-  titleRows:
-    - Our Partners
-  subtitleRows:
-    - From legal experts to peer blockchains, advocacy groups, and local associations - they connect us to a larger ecosystem, strengthening our place in the decentralized world.
-
 pageSectionCtaContent:
   titleRows:
     - This is your moment.
@@ -69,243 +56,33 @@ pageSectionCtaContent:
     text: Get started
     url: /get-started
 
-ecosystemSection:
-  title: Ecosystem
-  subtitle: Growing fast
-  subsections:
-    - title: dApps & projects
-      description: 'Building on top, around, or below what we do, securing the network or providing services, they are the life & blood of Alephium & the reasons we grind every day!'
-      image: ../images/sprout.svg
-    - title: Partners
-      description: 'From lawyers to peer blockchains, lobbying & local associations, they make us feel part of a larger ecosystem.'
-      image: ../images/network.svg
-      items:
-        - title: 'Bitcoin Association Switzerland'
-          logo: '../images/svgs/bas-logo-white.svg'
-          url: https://www.bitcoinassociation.ch/
-        - title: 'Cetacean Capital'
-          logo: '../images/logos/cetacean-capital-icon.png'
-          url: https://cetacean.capital/
-        - title: 'Crypto Valley Association'
-          logo: '../images/svgs/crypto-valley-association-vector-logo.svg'
-          url: https://cryptovalley.swiss/
-        - title: 'Dappnode'
-          logo: '../images/logos/Dappnode-logo-bw.png'
-          url: https://dappnode.io
-        - title: 'Flux Labs'
-          logo: '../images/svgs/flux-seeklogo.com.svg'
-          url: https://runonflux.io/
-        - title: 'Hodling SA'
-          logo: '../images/svgs/hodling-icon-bw-darkBackground.svg'
-          url: https://www.hodling.ch/
-        - title: 'Leax'
-          logo: '../images/logos/leax.svg'
-          url: https://www.leax.ch/
-        - title: 'UTXO Alliance'
-          logo: '../images/svgs/utxo-aliance-logo-white.svg'
-          url: https://utxo-alliance.org/
+partnersSection:
+  partners:
+    - title: 'Bitcoin Association Switzerland'
+      logo: '../images/svgs/bas-logo-white.svg'
+      url: https://www.bitcoinassociation.ch/
+    - title: 'Cetacean Capital'
+      logo: '../images/logos/cetacean-capital-icon.png'
+      url: https://cetacean.capital/
+    - title: 'Crypto Valley Association'
+      logo: '../images/svgs/crypto-valley-association-vector-logo.svg'
+      url: https://cryptovalley.swiss/
+    - title: 'Dappnode'
+      logo: '../images/logos/Dappnode-logo-bw.png'
+      url: https://dappnode.io
+    - title: 'Flux Labs'
+      logo: '../images/svgs/flux-seeklogo.com.svg'
+      url: https://runonflux.io/
+    - title: 'Hodling SA'
+      logo: '../images/svgs/hodling-icon-bw-darkBackground.svg'
+      url: https://www.hodling.ch/
+    - title: 'Leax'
+      logo: '../images/logos/leax.svg'
+      url: https://www.leax.ch/
+    - title: 'UTXO Alliance'
+      logo: '../images/svgs/utxo-aliance-logo-white.svg'
+      url: https://utxo-alliance.org/
 
-milestonesSection:
-  title: Completed milestones
-  subtitle: Building every day
-  timelines:
-    - title: Core platform
-      years:
-        - year: 2019
-          entries:
-            - row: 1
-              text: 'Whitepapers Release'
-              when: '02.2019'
-              isMajor: true
-        - year: 2020
-          entries:
-            - row: 1
-              text: 'Testnet Launch'
-              when: '12.2020'
-              isMajor: true
-        - year: 2021
-          entries:
-            - row: 1
-              text: 'Smart contract support'
-              when: 'Q1.2021'
-            - row: 2
-              text: 'Desktop wallet & explorer public release'
-              when: '09.2021'
-              isMajor: true
-            - row: 3
-              text: 'Mainnet launch'
-              when: '08.11.2021'
-              isMajor: true
-        - year: 2022
-          entries:
-            - row: 1
-              text: '1st dApp prototype'
-              when: '01.2022'
-            - row: 2
-              text: 'SDK Beta SDK'
-              when: '06.2022'
-            - row: 3
-              text: 'Leman Network Upgrade deployed on the testnet'
-              when: '06.2022'
-              isMajor: true
-            - row: 4
-              text: 'Alpha version of multi-guardians bridge'
-              when: '11.2022'
-        - year: 2023
-          entries:
-            - row: 1
-              text: 'More dApp prototypes (DEX, NFT marketplace)'
-              when: 'H1.2023'
-            - row: 2
-              text: 'Browser Extension Wallet Launch'
-              when: '03.2023'
-              isMajor: true
-            - row: 3
-              text: 'Leman Network Upgrade on Mainnet'
-              when: '27.03.2023'
-              content:
-                - 'Schnorr signatures and cross chain interoperability'
-                - 'New Asset Permission System and set of Virtual Machine (VM) instructions and building functions'
-                - 'Improved node APIs and SDK'
-                - 'Improved difficulty adjustment algorithm (DAA)'
-              isMajor: true
-            - row: 4
-              text: 'Desktop Wallet v2.0'
-              when: '05.2023'
-            - row: 5
-              text: 'Alephium Bridge on Testnet'
-              when: '05.2023'
-            - row: 6
-              text: 'Alephium Multisig GUI'
-              when: '09.2023'
-            - row: 7
-              text: 'Mobile Wallet (Android and iOS)'
-              when: '11.2023'
-              isMajor: true
-            - row: 8
-              text: 'Alephium Bridge to Ethereum on Mainnet'
-              when: '09.11.2023'
-              isMajor: true
-        - year: 2024
-          entries:
-            - row: 1
-              text: 'Ralph LSP Release'
-              when: '04.2024'
-            - row: 2
-              text: 'Rhone Network Upgrade on Mainnet'
-              when: '12.06.2024'
-              content:
-                - 'Block time reduction to 16 seconds'
-                - 'Map data structure in Ralph'
-                - 'Sequential transactions'
-                - 'On-chain Gasless transactions'
-              isMajor: true
-            - row: 3
-              text: 'Alephium Bridge to BSC on Testnet'
-              when: '09.2024'
-
-    - title: Ecosystem
-      years:
-        - year: 2019
-        - year: 2020
-        - year: 2021
-          entries:
-            - row: 1
-              text: '3rd party cloud mining service at Mainnet Launch'
-              when: '08.11.2021'
-            - row: 2
-              text: 'Joined the UTXO Alliance & Bitcoin Association Switzerland'
-              when: '11.2021'
-            - row: 3
-              text: 'Mining ecosystem development'
-              description: 'Community pools, miners development, reference mining pool, and pool integration.'
-              when: 'Q4.2021'
-        - year: 2022
-          entries:
-            - row: 1
-              text: 'First exchange listing: Gate.io'
-              when: '12.01.2022'
-              isMajor: true
-            - row: 2
-              text: 'Initiation of marketing initiatives'
-              content:
-                - 'Sponsoring of ErgoHack'
-                - 'AMAs'
-                - 'Community competitions'
-                - 'Campaigns'
-                - 'Tech Talk Series, and more...'
-              when: 'Q3.2022'
-            - row: 3
-              text: 'Dappnode Integration'
-              when: '10.2022'
-            - row: 4
-              text: 'Flux Integration'
-              when: '11.2022'
-        - year: 2023
-          entries:
-            - row: 1
-              text: 'NYM-Connect app integration'
-              when: '07.2023'
-            - row: 2
-              text: 'First dApps on Alephium (Native DEX, NFT marketplace and more)'
-              when: 'Q3.2023'
-            - row: 3
-              text: 'First DAO - Blockflow Alliance DAO'
-              when: '10.2023'
-              isMajor: true
-            - row: 4
-              text: 'Ethereum Bridge - Stablecoins on Alephium & Wrapped ALPH on Ethereum'
-              when: '11.2023'
-            - row: 5
-              text: 'Over 77’000 active addresses and 50’000+ GPUs on Alephium'
-              when: '11.2023'
-            - row: 6
-              text: '$9M TVL on Alephium'
-              when: '12.2023'
-        - year: 2024
-          entries:
-            - row: 1
-              text: '$21M TVL on Alephium'
-              when: '01.2024'
-            - row: 2
-              text: 'First Hackathon - Buidl on Alephium #1 - Pioneers 🔥'
-              when: '02.2024'
-              isMajor: true
-            - row: 3
-              text: 'First ASIC Miner - Goldshell'
-              when: '04.2024'
-              isMajor: true
-            - row: 4
-              text: '$60M TVL on Alephium'
-              when: '04.2024'
-            - row: 5
-              text: 'Ambassador Program Launch'
-              when: '05.2024'
-            - row: 6
-              text: 'Athens Builders Meetup #1'
-              when: '06.2024'
-              isMajor: true
-            - row: 7
-              text: 'Bitmain & IceRiver ASIC Miners'
-              when: '07.2024'
-              isMajor: true
-            - row: 8
-              text: 'First Oracles Integration - DIA'
-              when: '07.2024'
-            - row: 9
-              text: '215’000+ active addresses (+200% YTD) and 19 PH/s of global hashrate (+13’500% YTD)'
-              content:
-                - '40+ projects on Alephium, Alephium nodes in 23+ countries'
-                - '74K+ smart contract contracts'
-                - '750 tokens'
-                - '250 NFT collections'
-                - '21k+ NFT deployed on Alephium'
-              when: '09.2024'
-              isMajor: true
-            - row: 10
-              text: 'Alephium app on Ledger & OneKey Hardware Wallets'
-              when: '10.2024'
-              isMajor: true
 todoListSection:
   title: What's next
   subtitle: Building an exciting future
@@ -416,37 +193,4 @@ todoListSection:
           description: 'Revitalize the grant program to encourage more development.'
         - text: 'Bounty Program Launch'
           description: 'Initiate a new bounty program to incentivize community contributions.'
-
-shopSection:
-  title: SWALPH
-  subtitle: Decentralized SWAG 🤘
-  description:
-    If you want to wear Alephium's colors, head out to the shop and access a selection of clothes and goodies.
-    You'll find the nicest designs for you to add a bit of sharding and PoLW vibes to your daily routine.
-  link:
-    text: 'Visit the shop'
-    url: https://alephium.myspreadshop.ch
-
-followUsSection:
-  title: Community
-  subtitle: Come and join the fun
-  description: Alephium's community is growing fast. Fascinated by the
-    technology? Come learn and build!
-  socialMediaLinks:
-    - name: Discord
-      url: https://discord.gg/XC5JaaDT7z
-    - name: Telegram
-      url: https://t.me/alephiumgroup
-    - name: X
-      url: https://twitter.com/alephium
-    - name: Medium
-      url: https://medium.com/@alephium
-    - name: Reddit
-      url: https://www.reddit.com/r/Alephium
-    - name: LinkedIn
-      url: https://www.linkedin.com/company/alephium
-    - name: Youtube
-      url: https://www.youtube.com/channel/UCIX9Eww2Kch7sc0E6gCmEdg
-    - name: GitHub
-      url: https://github.com/alephium
 ---

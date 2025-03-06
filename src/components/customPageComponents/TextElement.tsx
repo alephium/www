@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 import styled, { css } from 'styled-components'
 
-interface TextElementProps {
+export interface TextElementProps {
   children: ReactNode
   isSmall?: boolean
   isBodySmall?: boolean
@@ -52,7 +52,7 @@ const TextElement = styled.div<TextElementProps>`
     color: var(--color-grey-250);
 
     font-size: var(--fontSize-24);
-    line-height: var(--lineHeight-32);
+    line-height: var(--lineHeight-36);
     font-weight: var(--fontWeight-light);
 
     ${({ isSmall, isBodySmall }) =>

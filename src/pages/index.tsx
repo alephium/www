@@ -3,12 +3,14 @@ import { graphql, PageProps } from 'gatsby'
 import PageSectionHero from '../components/pageSections/PageSectionHero'
 import HomepageIntroSection from '../components/pages/homepage/HomepageIntroSection'
 import HomepageTechnologySection from '../components/pages/homepage/HomepageTechnologySection'
-import PageSectionNumbers from '../components/pageSections/PageSectionNumbers'
+import HomepageStatsSection from '../components/pages/homepage/HomepageStatsSection'
 import SectionDivider from '../components/SectionDivider'
-import PageSectionEcosystem from '../components/pageSections/PageSectionEcosystem'
-import PageSectionPartners from '../components/pageSections/PageSectionPartners'
-import PageSectionCta from '../components/pageSections/PageSectionCta'
+import HomepageEcosystemSection from '../components/pages/homepage/HomepageEcosystemSection'
+import HomepagePartnersSection from '../components/pages/homepage/HomepagePartnersSection'
 import Page from '../components/customPageComponents/Page'
+import SubpageSection from '../components/customPageComponents/SubpageSection'
+import TextElement from '../components/customPageComponents/TextElement'
+import Button from '../components/Button'
 
 export const pageQuery = graphql`
   query IndexPage {
@@ -24,14 +26,11 @@ export const pageQuery = graphql`
           }
 
           pageSectionStatsContent {
-            ...PageSectionNumbers
+            ...HomepageStatsSection
           }
 
-          pageSectionPartnersContent {
-            ...PageSectionPartners
-          }
-          pageSectionCtaContent {
-            ...PageSectionCta
+          partnersSection {
+            ...HomepagePartnersSection
           }
         }
       }
@@ -63,7 +62,7 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
 
           {content?.pageSectionStatsContent && (
             <>
-              <PageSectionNumbers {...content.pageSectionStatsContent} />
+              <HomepageStatsSection {...content.pageSectionStatsContent} />
               <SectionDivider />
             </>
           )}
@@ -71,22 +70,28 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
           <HomepageTechnologySection />
           <SectionDivider />
 
-          <PageSectionEcosystem />
+          <HomepageEcosystemSection />
           <SectionDivider />
 
-          {content?.pageSectionPartnersContent && (
+          {content?.partnersSection && (
             <>
-              <PageSectionPartners {...content.pageSectionPartnersContent} />
+              <HomepagePartnersSection {...content.partnersSection} />
               <SectionDivider />
             </>
           )}
 
-          {content?.pageSectionCtaContent && (
-            <>
-              <PageSectionCta {...content.pageSectionCtaContent} />
-              <SectionDivider />
-            </>
-          )}
+          <SubpageSection>
+            <SubpageSection>
+              <TextElement isCentered>
+                <h2>This is your moment.</h2>
+                <p>
+                  Alephium isn’t just a concept - it’s something we build, together. There’s a place for you here and we
+                  can’t wait to meet you.
+                </p>
+                <Button url="/get-started">Get started</Button>
+              </TextElement>
+            </SubpageSection>
+          </SubpageSection>
         </>
       }
     />

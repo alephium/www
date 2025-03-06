@@ -1,21 +1,21 @@
 import styled, { css } from 'styled-components'
 import SimpleLink from '../SimpleLink'
 import { ReactNode, PointerEvent } from 'react'
-import TextElement from './TextElement'
+import TextElement, { TextElementProps } from './TextElement'
 import { motion, useMotionValue, useTransform, Variants } from 'framer-motion'
 import { deviceBreakPoints } from '../../styles/global-style'
 import { getPointerRelativePositionInElement } from '../../utils/pointer'
 
-interface CardProps {
+interface TextCardProps extends TextElementProps {
   children: ReactNode
   url?: string
   isAnimated?: boolean
   variants?: Variants
 }
 
-const TextCard = ({ children, url, isAnimated = false, variants }: CardProps) => {
+const TextCard = ({ children, url, isAnimated = false, variants, ...textElementProps }: TextCardProps) => {
   const text = (
-    <TextElementStyled isSmall url={url}>
+    <TextElementStyled isSmall url={url} {...textElementProps}>
       {children}
     </TextElementStyled>
   )
@@ -75,7 +75,7 @@ const AnimatedCard = ({ children }: { children: ReactNode }) => {
 }
 
 const cardStyles = css`
-  padding: 41px 30px 25px 34px;
+  padding: 41px 30px 25px 30px;
   border-radius: 20px;
   border: 2px solid ${({ theme }) => theme.bgPrimary};
   background-color: ${({ theme }) => theme.bgTertiary};
@@ -89,7 +89,7 @@ const Card = styled.div`
   ${cardStyles}
 `
 
-const TextElementStyled = styled(TextElement)<Pick<CardProps, 'url'>>`
+const TextElementStyled = styled(TextElement)<Pick<TextCardProps, 'url'>>`
   ${({ url }) =>
     url &&
     css`
@@ -103,7 +103,7 @@ const TextElementStyled = styled(TextElement)<Pick<CardProps, 'url'>>`
     `}
 `
 
-const SimpleLinkStyled = styled(SimpleLink)<Pick<CardProps, 'isAnimated'>>`
+const SimpleLinkStyled = styled(SimpleLink)<Pick<TextCardProps, 'isAnimated'>>`
   ${({ isAnimated }) =>
     isAnimated &&
     css`

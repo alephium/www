@@ -1,9 +1,23 @@
-import { graphql, PageProps } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 import { useEffect } from 'react'
 
-const DiscordPage = (props: PageProps<Queries.DiscordPageQuery>) => {
-  const pageContent = props.data.homepage.nodes[0].frontmatter
-  const discordEntry = pageContent?.followUsSection?.socialMediaLinks?.find((link) => link?.name === 'Discord')
+const DiscordPage = () => {
+  const {
+    allSocialsYaml: { edges: socials }
+  } = useStaticQuery<Queries.SocialsYamlQuery>(graphql`
+    query SocialsYaml {
+      allSocialsYaml {
+        edges {
+          node {
+            name
+            url
+          }
+        }
+      }
+    }
+  `)
+
+  const discordEntry = socials?.find((social) => social.node?.name === 'Discord')?.node
 
   useEffect(() => {
     if (discordEntry?.url) window.location.replace(discordEntry.url)
@@ -13,20 +27,3 @@ const DiscordPage = (props: PageProps<Queries.DiscordPageQuery>) => {
 }
 
 export default DiscordPage
-
-export const pageQuery = graphql`
-  query DiscordPage {
-    homepage: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/homepage.md/" } }) {
-      nodes {
-        frontmatter {
-          followUsSection {
-            socialMediaLinks {
-              name
-              url
-            }
-          }
-        }
-      }
-    }
-  }
-`

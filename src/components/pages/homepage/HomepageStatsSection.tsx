@@ -4,12 +4,12 @@ import styled from 'styled-components'
 
 import { HttpResponse } from '@alephium/sdk/api/explorer'
 import { graphql } from 'gatsby'
-import { notEmpty } from '../../utils/misc'
-import TextElement from '../customPageComponents/TextElement'
-import SubpageSection from '../customPageComponents/SubpageSection'
-import SubheaderContent from '../customPageComponents/SubheaderContent'
-import Grid from '../customPageComponents/Grid'
-import TextCard from '../customPageComponents/TextCard'
+import { notEmpty } from '../../../utils/misc'
+import TextElement from '../../customPageComponents/TextElement'
+import SubpageSection from '../../customPageComponents/SubpageSection'
+import SubheaderContent from '../../customPageComponents/SubheaderContent'
+import Grid from '../../customPageComponents/Grid'
+import TextCard from '../../customPageComponents/TextCard'
 
 const baseUrl = 'https://backend.mainnet.alephium.org'
 
@@ -26,7 +26,7 @@ type StatScalarKeys = 'totalTransactions'
 type StatsScalarData = { [key in StatScalarKeys]: StatScalar }
 
 export const query = graphql`
-  fragment PageSectionNumbers on MarkdownRemarkFrontmatterPageSectionStatsContent {
+  fragment HomepageStatsSection on MarkdownRemarkFrontmatterPageSectionStatsContent {
     titleRows
     cards {
       ...CardStats
@@ -34,7 +34,7 @@ export const query = graphql`
   }
 `
 
-const PageSectionNumbers = (content: Queries.PageSectionNumbersFragment) => {
+const HomepageStatsSection = (content: Queries.HomepageStatsSectionFragment) => {
   const [explorerClient, setExplorerClient] = useState<ExplorerClient>()
   const [statsScalarData, setStatsScalarData] = useState<StatsScalarData>({
     totalTransactions: statScalarDefault
@@ -94,7 +94,7 @@ const PageSectionNumbers = (content: Queries.PageSectionNumbersFragment) => {
   )
 }
 
-export default PageSectionNumbers
+export default HomepageStatsSection
 
 const Stat = styled.div`
   font-size: var(--fontSize-28);

@@ -7,6 +7,7 @@ import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextElement from '../../customPageComponents/TextElement'
 import SubheaderContent from '../../customPageComponents/SubheaderContent'
 import TextCard from '../../customPageComponents/TextCard'
+import CardImage from '../../customPageComponents/CardImage'
 
 export const query = graphql`
   fragment HomepageIntroSection on MarkdownRemarkFrontmatterIntro {
@@ -45,7 +46,7 @@ const HomepageIntroSection = ({ cards }: Queries.HomepageIntroSectionFragment) =
             card &&
             card.link?.url && (
               <TextCard isAnimated url={card.link?.url} variants={cardVariants} key={card.title}>
-                {card.image?.publicURL && <Image src={card.image.publicURL} alt={card.title ?? ''} />}
+                {card.image?.publicURL && <CardImage src={card.image.publicURL} alt={card.title ?? ''} />}
                 <h3>{card.title}</h3>
                 <p>{card.description}</p>
               </TextCard>
@@ -81,10 +82,4 @@ const IntroColumns = styled(motion.div)`
   @media ${deviceBreakPoints.mobile} {
     flex-wrap: wrap;
   }
-`
-
-const Image = styled.img`
-  width: 82px;
-  height: 82px;
-  padding-bottom: 30px;
 `

@@ -12,7 +12,7 @@ import { useEffect, useState } from 'react'
 import { sortBy } from 'lodash'
 import Button from './Button'
 
-export type PageSectionEcosystemContentType = {
+export type HomepageEcosystemSectionContentType = {
   title: string
   subtitle: string
   subsections: {
@@ -27,15 +27,18 @@ export type PageSectionEcosystemContentType = {
   }[]
 }
 
-interface PageSectionEcosystemProps {
-  content: PageSectionEcosystemContentType
+interface HomepageEcosystemSectionProps {
+  content: HomepageEcosystemSectionContentType
   className?: string
 }
 
 type Exchange = { name: string; logo: string; trade_url: string }
 type EchangesRes = { name: 'Alephium'; tickers: { market: Exchange; trade_url: string }[] }
 
-const PageSectionEcosystem = ({ content: { title, subtitle, subsections }, className }: PageSectionEcosystemProps) => {
+const HomepageEcosystemSection = ({
+  content: { title, subtitle, subsections },
+  className
+}: HomepageEcosystemSectionProps) => {
   const [exchanges, setExchanges] = useState<Exchange[]>()
 
   useEffect(() => {
@@ -136,7 +139,7 @@ const PageSectionEcosystem = ({ content: { title, subtitle, subsections }, class
   )
 }
 
-export default styled(PageSectionEcosystem)`
+export default styled(HomepageEcosystemSection)`
   padding-top: var(--spacing-16);
   padding-bottom: var(--spacing-20);
   position: relative;
