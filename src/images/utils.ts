@@ -1,11 +1,11 @@
-import TelegramIcon from './svgs/brand-icon-telegram.svg'
 import DiscordIcon from './svgs/brand-icon-discord.svg'
-import TwitterIcon from './svgs/brand-icon-twitter.svg'
-import RedditIcon from './svgs/brand-icon-reddit.svg'
-import YouTubeIcon from './svgs/brand-icon-youtube.svg'
+import GitHubIcon from './svgs/brand-icon-github.svg'
 import LinkedInIcon from './svgs/brand-icon-linkedin.svg'
 import MediumIcon from './svgs/brand-icon-medium.svg'
-import GitHubIcon from './svgs/brand-icon-github.svg'
+import RedditIcon from './svgs/brand-icon-reddit.svg'
+import TelegramIcon from './svgs/brand-icon-telegram.svg'
+import TwitterIcon from './svgs/brand-icon-twitter.svg'
+import YouTubeIcon from './svgs/brand-icon-youtube.svg'
 
 export const getIconByName = (name: string) => {
   switch (name) {
@@ -28,4 +28,18 @@ export const getIconByName = (name: string) => {
     default:
       break
   }
+}
+
+export const updateSrcSet = (srcSet: string, maxWidth: number) => {
+  if (!srcSet) return null
+  const srcSetArray = srcSet.split(',')
+  return srcSetArray
+    .reduce((filtered, src) => {
+      const [url, width] = src.split(' ')
+      if (parseInt(width) <= maxWidth) {
+        filtered.push(`${url} ${width}`)
+      }
+      return filtered
+    }, [] as string[])
+    .join(',')
 }

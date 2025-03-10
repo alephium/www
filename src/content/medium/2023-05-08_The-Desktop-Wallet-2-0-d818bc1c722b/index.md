@@ -1,0 +1,158 @@
+---
+title: "The Desktop Wallet 2.0"
+date: "2023-05-08"
+description: "It’s a big one! Token support, dApp connectivity, and a lot more in this feature-rich release!"
+---
+
+<div>
+
+# The Desktop Wallet 2.0
+
+</div>
+
+<div class="section p-summary" field="subtitle">
+
+It’s a big one! Token support, dApp connectivity, and a lot more in this feature-rich release!
+
+</div>
+
+<div class="section e-content" field="body">
+
+<div id="41d9" class="section section section--body section--first section--last">
+
+<div class="section-divider">
+
+------------------------------------------------------------------------
+
+</div>
+
+<div class="section-content">
+
+<div class="section-inner sectionLayout--insetColumn">
+
+### The Desktop Wallet 2.0
+
+#### It’s a big one! Token support, dApp connectivity, and a lot more in this feature-rich release!
+
+<figure id="cb43" class="graf graf--figure graf-after--h4">
+<img src="https://cdn-images-1.medium.com/max/800/1*cfscE4bqggVCSV5a1wK_rQ.png" class="graf-image" data-image-id="1*cfscE4bqggVCSV5a1wK_rQ.png" data-width="1920" data-height="1080" data-is-featured="true" />
+</figure>
+
+Alephium is thrilled to announce the release of Desktop Wallet 2.0. You can upgrade directly (since version 1.5.0) from your wallet by clicking on the pop-up that will appear when you access the wallet, or by downloading <a href="https://github.com/alephium/desktop-wallet/releases/latest" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/desktop-wallet/releases/latest" rel="noopener" target="_blank">the latest release</a>.
+
+The <a href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a" target="_blank">Leman Network Upgrade</a> and the capabilities it unleashed on the network made it the perfect timing for a redesign of the wallet. It now provides many new features and an even more intuitive User Interface.
+
+### A New Design
+
+It’s a complete redesign, but you won’t feel lost! The Desktop Wallet 2.0 features smoother transitions between screens and a cleaner interface, full of space, making it easy to navigate, in an enjoyable and simple experience.
+
+<figure id="02da" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*r_i_XOTx_nuMiwXbHWVpxw.png" class="graf-image" data-image-id="1*r_i_XOTx_nuMiwXbHWVpxw.png" data-width="1999" data-height="1370" />
+</figure>
+
+The handy overview page now includes your holdings (ALPH & tokens), your balances in the chosen network, and shortcuts to the most important actions. You can also see a chart that represents the historical value of your holdings (it will appear after 3 days of your first transaction)
+
+The Transfers page shows all transactions of your wallet addresses and allows you to make filtered searches to find any specific transaction you choose. It’s very useful if you want to review all past swaps, only transactions received or filter specific token transactions!
+
+<figure id="7417" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*voMp0IiC757q7gU1sBwzxw.png" class="graf-image" data-image-id="1*voMp0IiC757q7gU1sBwzxw.png" data-width="1999" data-height="1370" />
+</figure>
+
+The Addresses & contacts page now has a new look, and you can filter the addresses by assets, addresses, or other keywords!
+
+<figure id="0596" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*Bq6zfMDMUv3U7sxn3zHtHA.png" class="graf-image" data-image-id="1*Bq6zfMDMUv3U7sxn3zHtHA.png" data-width="1999" data-height="1370" />
+</figure>
+
+### Token support
+
+<figure id="6555" class="graf graf--figure graf-after--h3">
+<img src="https://cdn-images-1.medium.com/max/800/1*qFuLQJ4fxeQ0Ksk2s-kuMQ.png" class="graf-image" data-image-id="1*qFuLQJ4fxeQ0Ksk2s-kuMQ.png" data-width="2804" data-height="1838" />
+</figure>
+
+The Desktop Wallet now supports tokens transfers. And it does in a big way: you can send multiple assets in one transaction!
+
+For those coming from the EVM context, there is no need to create multiple transactions for multiple assets: send it all at once and save on fees!
+
+<figure id="6cc3" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*QYiYN7hGeDMOKYXxASbCPw.png" class="graf-image" data-image-id="1*QYiYN7hGeDMOKYXxASbCPw.png" data-width="1999" data-height="1370" />
+</figure>
+
+### Welcome WalletConnect
+
+The Desktop Wallet can now interacts with dApps directly using the WalletConnect protocol. You can comfortably use this <a href="https://walletconnect.com/" class="markup--anchor markup--p-anchor" data-href="https://walletconnect.com/" rel="noopener" target="_blank">awesome open-source protocol</a> to connect to dApps. When you connect your wallet to a dApp through WalletConnect, it’s easy to sign transactions, view account balances, and more.
+
+The example below shows a swap transaction in the <a href="https://alephium.github.io/alephium-dex" class="markup--anchor markup--p-anchor" data-href="https://alephium.github.io/alephium-dex" rel="noopener" target="_blank">Alephium DEX</a> (on testnet).
+
+<figure id="5cc5" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*MvQFIc0PJfCMNsT7-uyglw.gif" class="graf-image" data-image-id="1*MvQFIc0PJfCMNsT7-uyglw.gif" data-width="768" data-height="350" />
+</figure>
+
+### Easy CSV Exports
+
+Export all your transactions from your wallet to a CSV file! With a CSV export, you can analyze the transaction data, calculate gains and losses, and use this input to generate tax reports. It provides a convenient way to keep track of all the activity in a wallet, especially for those who make frequent transactions.
+
+On the Desktop Wallet, you can now export your transactions history in the following way:
+
+<figure id="04d6" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*jgbhYKOzTrlK7XWMkR0Eng.gif" class="graf-image" data-image-id="1*jgbhYKOzTrlK7XWMkR0Eng.gif" data-width="710" data-height="378" />
+</figure>
+
+- <span id="f6a1">Go to the Addresses section;</span>
+- <span id="c26a">Choose which address you want to export the transactions from;</span>
+- <span id="abc6">Click on export;</span>
+- <span id="b439">Select the time period;</span>
+- <span id="d6f5">Save the CSV file;</span>
+- <span id="5700">*Et voilà!*</span>
+
+### Developer tools: Private key export and deploy/call contract buttons
+
+Now,developers using the Desktop Wallet can easily deploy or call contracts directly from the wallet interface, as well as export their private keys.
+
+<figure id="a35f" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*pfkt0DFS-tfJZFfNySLBww.png" class="graf-image" data-image-id="1*pfkt0DFS-tfJZFfNySLBww.png" data-width="2624" data-height="1824" />
+</figure>
+
+The wallet will guide you through the process, and if any assistance is needed, you can always reach out to the core developers in our <a href="http://www.alephium.org/discord" class="markup--anchor markup--p-anchor" data-href="http://www.alephium.org/discord" rel="noopener" target="_blank">Discord</a>.
+
+<figure id="dd51" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*RkvAoTEJxRnOfkWMjGLfHQ.png" class="graf-image" data-image-id="1*RkvAoTEJxRnOfkWMjGLfHQ.png" data-width="2624" data-height="1824" />
+</figure>
+
+### Import Wallet: Automatic recovery
+
+Now, after importing your wallet using the recovery phrase, the wallet can scan the connected network to discover all the active addresses you have used in the past. An active address is one that has at least one transaction. That’s how you do it:
+
+- <span id="4058">Go to the Addresses section;</span>
+- <span id="bccf">Click on the wrench icon next to the “+ New address button”;</span>
+- <span id="9196">Click on the “Search” button in the “Discover active addresses” option</span>
+
+Now the Desktop wallet shows all active addresses linked to this recovery phrase.
+
+<figure id="480d" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*0_9IIgVVQ998cI46qjzeZQ.gif" class="graf-image" data-image-id="1*0_9IIgVVQ998cI46qjzeZQ.gif" data-width="726" data-height="370" />
+</figure>
+
+### What’s next?
+
+The Front End contributors will closely monitor the performance of this new release to make sure that everything is working as expected and, of course, are already working on the next big release: the mobile wallet.
+
+<figure id="9def" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*RLQv2oDYYP1U6BZkThRxDw.png" class="graf-image" data-image-id="1*RLQv2oDYYP1U6BZkThRxDw.png" data-width="1752" data-height="1336" />
+</figure>
+
+If you have questions or suggestions, please come to Alephium’s <a href="http://alephium.org/discord" class="markup--anchor markup--p-anchor" data-href="http://alephium.org/discord" rel="noopener" target="_blank">Discord</a>, <a href="https://t.me/alephiumgroup" class="markup--anchor markup--p-anchor" data-href="https://t.me/alephiumgroup" rel="noopener" target="_blank">Telegram</a>, or reach out on <a href="https://twitter.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium" rel="noopener" target="_blank">Twitter</a>!
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+By <a href="https://medium.com/@alephium" class="p-author h-card">Alephium</a> on [May 8, 2023](https://medium.com/p/d818bc1c722b).
+
+<a href="https://medium.com/@alephium/the-desktop-wallet-2-0-d818bc1c722b" class="p-canonical">Canonical link</a>
+
+Exported from [Medium](https://medium.com) on March 10, 2025.

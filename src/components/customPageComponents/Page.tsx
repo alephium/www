@@ -1,21 +1,21 @@
-import { ThemeProvider } from 'styled-components'
 import { PageProps } from 'gatsby'
+import { ReactNode } from 'react'
+import { ThemeProvider } from 'styled-components'
 
 import GlobalStyle from '../../styles/global-style'
 import { darkTheme } from '../../styles/themes'
-
-import Seo from '../Seo'
 import Footer from '../Footer'
 import NavigationMenu from '../NavigationMenu'
-import { ReactNode } from 'react'
+import Seo, { SeoProps } from '../Seo'
 
 interface CustomPageProps extends PageProps {
   content: ReactNode
+  seo?: SeoProps
 }
 
-const Page = ({ content }: CustomPageProps) => (
+const Page = ({ content, seo }: CustomPageProps) => (
   <>
-    <Seo />
+    <Seo {...seo} />
     <ThemeProvider theme={darkTheme}>
       <GlobalStyle />
       <main>

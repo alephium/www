@@ -1,0 +1,81 @@
+---
+title: "Explorer Indexing Error Postmortem"
+date: "2022-01-20"
+description: "What happened — Timeline of events? At 11:58 CET on January 18th, 2022, user @Kanto explained on discord that he could not deposit funds…"
+---
+
+<div>
+
+# Explorer Indexing Error Postmortem
+
+</div>
+
+<div class="section p-summary" field="subtitle">
+
+What happened — Timeline of events? At 11:58 CET on January 18th, 2022, user @Kanto explained on discord that he could not deposit funds…
+
+</div>
+
+<div class="section e-content" field="body">
+
+<div id="05f8" class="section section section--body section--first section--last">
+
+<div class="section-divider">
+
+------------------------------------------------------------------------
+
+</div>
+
+<div class="section-content">
+
+<div class="section-inner sectionLayout--insetColumn">
+
+### Explorer Indexing Error Postmortem
+
+**What happened — Timeline of events?  
+**At 11:58 CET on January 18th, 2022, user @Kanto explained on discord that he could not deposit funds on Gate.io « due to technical maintenance ».
+
+<figure id="dc7a" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/0*8A0Cf0jy7ANUWtrB" class="graf-image" data-image-id="0*8A0Cf0jy7ANUWtrB" data-width="1040" data-height="730" data-is-featured="true" />
+</figure>
+
+At 12:27 CET, our core-dev acknowledged the problem, and explained we were in contact with Gate.io to solve the issue.
+
+At 12:54 CET, an official announcement was made in the Telegram channel (and replicated on Discord) to provide information for the wider community :
+
+<figure id="2971" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/0*tGWXQFKWQKOfzb5B" class="graf-image" data-image-id="0*tGWXQFKWQKOfzb5B" data-width="1204" data-height="276" />
+</figure>
+
+At 20:06 CET, another announcement was made to explain that the fix was deployed and ready on Alephium’s side.
+
+Less than 24h after the discovery of the issue, deposits were confirmed to work again.
+
+**What went wrong?  
+**The issue was caused by a bug on the full node when updating the height index for orphaned blocks. There was a high load on both community pools last week, which caused abnormally high orphan block rate and triggered this bug.
+
+Our explorer backend’s indexing relies on this full node indexing, some of the orphan blocks were not marked correctly and this caused an issue for Gate.
+
+**Severity?  
+**Not critical : this index is only used for application endpoints. Funds remained safe during the whole incident, and the issue did not impact the Alephium blockchain, transactions or full-nodes.
+
+**Solution?  
+**The potential issue was identified previously, it was known that it had a very low probability of occuring (~35 / 1’500'000) that the update would not keep the orphaned blocks in the right order.
+
+That allowed the team to quickly work on a fix, test it and deploy it. You can find it <a href="https://github.com/alephium/alephium/pull/502" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/alephium/pull/502" rel="noopener" target="_blank">here</a>.
+
+Gate.io whose teams are on a very different timezone then had to pick it up on their side and reopen deposits. This was tested at 10:50 CET on January 19th and was working then.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+By <a href="https://medium.com/@alephium" class="p-author h-card">Alephium</a> on [January 20, 2022](https://medium.com/p/30bc905f3ac1).
+
+<a href="https://medium.com/@alephium/explorer-indexing-error-postmortem-30bc905f3ac1" class="p-canonical">Canonical link</a>
+
+Exported from [Medium](https://medium.com) on March 10, 2025.

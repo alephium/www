@@ -1,15 +1,16 @@
+import { graphql, useStaticQuery } from 'gatsby'
 import { Helmet } from 'react-helmet'
-import { useStaticQuery, graphql } from 'gatsby'
 
 import SocialMediaBannerImage from '../images/social-media-banner.png'
 
-interface SeoProps {
+export interface SeoProps {
   title?: string
   description?: string
   lang?: string
+  image?: any
 }
 
-const Seo = ({ title, description, lang = 'en' }: SeoProps) => {
+const Seo = ({ title, description, lang = 'en', image: metaImage }: SeoProps) => {
   const { site } = useStaticQuery(
     graphql`
       query {
