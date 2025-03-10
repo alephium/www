@@ -1,16 +1,15 @@
 import { PageProps } from 'gatsby'
 
-import SectionDivider from '../components/SectionDivider'
-import SubpageHeroSection from '../components/customPageComponents/SubpageHeroSection'
-import Page from '../components/customPageComponents/Page'
-import SubpageSection from '../components/customPageComponents/SubpageSection'
-import TextElement from '../components/customPageComponents/TextElement'
-import SubheaderContent from '../components/customPageComponents/SubheaderContent'
-import TextCard from '../components/customPageComponents/TextCard'
-import Grid from '../components/customPageComponents/Grid'
 import Button from '../components/Button'
+import Grid from '../components/customPageComponents/Grid'
+import Page from '../components/customPageComponents/Page'
+import SubheaderContent from '../components/customPageComponents/SubheaderContent'
+import SubpageHeroSection from '../components/customPageComponents/SubpageHeroSection'
+import SubpageSection from '../components/customPageComponents/SubpageSection'
+import TextCard from '../components/customPageComponents/TextCard'
+import TextElement from '../components/customPageComponents/TextElement'
+import SectionDivider from '../components/SectionDivider'
 import SimpleLink from '../components/SimpleLink'
-import Placeholder from '../components/customPageComponents/Placeholder'
 
 const CustomPage = (props: PageProps) => (
   <Page
@@ -54,14 +53,16 @@ const CustomPage = (props: PageProps) => (
                   Security is paramount at Alephium. We encourage individual developers to discover vulnerabilities and
                   exploits within the Alephium protocol or any of our code repositories.
                 </p>
-                <Button url="/bounties">Learn more about bounties</Button>
+                <Button url="/bounties">Learn more</Button>
               </TextCard>
               <TextCard>
-                <h3>Marketing Grants</h3>
+                <h3>Migration and Expansion Grants</h3>
                 <p>
-                  Effective marketing is crucial for project success. Alephium offers Marketing Grants to support the
-                  growth and user acquisition efforts of projects built on the Alephium network. These funds can be
-                  utilized for digital and offline marketing, in-app incentives, public relations, and communications.
+                  Alephium supports projects looking to migrate or expand their presence to our ecosystem. Whether
+                  you're transitioning fully to Alephium or integrating it alongside other chains, this grant is
+                  designed to help you navigate the process smoothly. Funds can be used for development, infrastructure,
+                  user incentives, and ecosystem integration, ensuring a seamless and fruitful experience for all
+                  parties involved.
                 </p>
               </TextCard>
             </Grid>
@@ -101,13 +102,29 @@ const CustomPage = (props: PageProps) => (
           </TextElement>
 
           <SubheaderContent>
-            <Placeholder width="100%" height="100px" />
-          </SubheaderContent>
-          <SubheaderContent>
-            <Placeholder width="100%" height="100px" />
-          </SubheaderContent>
-          <SubheaderContent>
-            <Placeholder width="100%" height="100px" />
+            <TextElement>
+              <h3>Step 1</h3>
+              <h4>Submit Your Application</h4>
+              <p>
+                Fill out the{' '}
+                <SimpleLink url="https://docs.google.com/forms/d/e/1FAIpQLSexF7M7k7kDdJtsHKFGYZuw4uEP7dzRrxmTFaMQvdU8DdH3cA/viewform">
+                  Grant Application Form
+                </SimpleLink>{' '}
+                with a detailed proposal.
+              </p>
+            </TextElement>
+            <TextElement>
+              <h3>Step 2</h3>
+              <h4>Evaluation Process</h4>
+              <p>We review your submission and reach out for additional questions or interviews.</p>
+              <p>Relevant Alephium ecosystem contributors may be consulted for technical feasibility.</p>
+            </TextElement>
+            <TextElement>
+              <h3>Step 3</h3>
+              <h4>Approval & Funding</h4>
+              <p>If approved, we’ll formalize the grant agreement and onboard you.</p>
+              <p>Grants may be distributed in milestones or as a lump sum, depending on project scope.</p>
+            </TextElement>
           </SubheaderContent>
         </SubpageSection>
 
