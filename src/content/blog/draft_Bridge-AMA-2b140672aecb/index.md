@@ -6,9 +6,7 @@ description: 'One month after the release of the bridge on mainnet, Cheng, Hongc
 
 ### Bridge AMA
 
-<figure id="8886" class="graf graf--figure graf-after--h3">
-<img src="https://cdn-images-1.medium.com/max/800/0*0fg6iTuVHzirljfm" class="graf-image" data-image-id="0*0fg6iTuVHzirljfm" data-width="1440" data-height="823" />
-</figure>
+![](https://cdn-images-1.medium.com/max/800/0*0fg6iTuVHzirljfm)
 
 _One month after the release of the_ <a href="https://bridge.alephium.org/#/transfer" class="markup--anchor markup--p-anchor" data-href="https://bridge.alephium.org/#/transfer" rel="noopener" target="_blank"><em>bridge</em></a> _on mainnet, Cheng, Hongchao & Maud were interviewed by Vladimir in a Twitter space AMA. Where are we on the bridge, how did it come to be, and more importantly, what’s ahead now? You can listen to the Twitter space itself_ <a href="https://twitter.com/i/spaces/1mrGmydQreMGy" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/i/spaces/1mrGmydQreMGy" rel="noopener" target="_blank"><em>here</em></a>_, or read on at your own pace! This article is the Part I, and it is lightly edited to improve clarity and readability._
 

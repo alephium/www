@@ -89,6 +89,10 @@ const TextElement = styled.div<TextElementProps>`
     }
   }
 
+  > p > img {
+    max-width: 100%;
+  }
+
   &:not(:first-child) {
     margin-top: var(--spacing-8);
   }

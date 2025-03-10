@@ -6,9 +6,7 @@ description: 'Updated: The tokenomics were published on Oct 5, 2021. We updated 
 
 ### **Alephium Tokenomics**
 
-<figure id="2cc4" class="graf graf--figure graf-after--h3">
-<img src="https://cdn-images-1.medium.com/max/800/0*ad8moAkXy69aFxs0" class="graf-image" data-image-id="0*ad8moAkXy69aFxs0" data-width="700" data-height="371" />
-</figure>
+![](https://cdn-images-1.medium.com/max/800/0*ad8moAkXy69aFxs0)
 
 _Updated: The tokenomics were published on Oct 5, 2021. We updated this article in February of 2024 to better address the most frequently asked questions._
 
@@ -63,13 +61,9 @@ _Please note that according to CoinmarketCap’s official methodology, Ecosystem
 
 Three sales events were held for ALPH: seed sale, <a href="https://medium.com/@alephium/alephium-closes-3-6m-pre-sale-from-80-contributors-to-expand-sharded-utxo-blockchain-platform-84f80492e28d" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/alephium-closes-3-6m-pre-sale-from-80-contributors-to-expand-sharded-utxo-blockchain-platform-84f80492e28d" target="_blank">pre-sale</a>, and <a href="https://medium.com/@alephium/alephium-partners-with-cetacean-capital-83cf2fbea8a1" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/alephium-partners-with-cetacean-capital-83cf2fbea8a1" target="_blank">private sale</a>. A total of 62,951,077 ALPH were sold and locked for periods varying between 2 to 4 years. The unlock schedule is detailed below.
 
-<figure id="17be" class="graf graf--figure graf--layoutOutsetRow is-partialWidth graf-after--p" style="width: 59.639%;">
-<img src="https://cdn-images-1.medium.com/max/800/1*-sLtHoXfNZ7nefU0n4PKFg.png" class="graf-image" data-image-id="1*-sLtHoXfNZ7nefU0n4PKFg.png" data-width="912" data-height="768" />
-</figure>
+![](https://cdn-images-1.medium.com/max/800/1*-sLtHoXfNZ7nefU0n4PKFg.png)
 
-<figure id="0ebb" class="graf graf--figure graf--layoutOutsetRowContinue is-partialWidth graf-after--figure" style="width: 40.361%;">
-<img src="https://cdn-images-1.medium.com/max/600/1*tK0CSiFtxgpJGgk4D4G7lQ.png" class="graf-image" data-image-id="1*tK0CSiFtxgpJGgk4D4G7lQ.png" data-width="502" data-height="624" />
-</figure>
+![](https://cdn-images-1.medium.com/max/600/1*tK0CSiFtxgpJGgk4D4G7lQ.png)
 
 The remaining 17,048,943 ALPH will be used to secure funds to ensure the long-term development and sustainability of the project. This will be done over the medium to long term, in a variety of ways, from direct sales, liquidity provisioning and OTC deals, optimizing for minimal impact on the markets while improving the liquidity, distribution & circulation of ALPH.
 
@@ -77,9 +71,7 @@ The remaining 17,048,943 ALPH will be used to secure funds to ensure the long-te
 
 The ALPH allocated to the **Ecosystem** and for the **Treasury** follow this unlock schedule:
 
-<figure id="b17a" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/0*pMBbveZ9JVdtZrnQ" class="graf-image" data-image-id="0*pMBbveZ9JVdtZrnQ" data-width="752" data-height="566" />
-</figure>
+![](https://cdn-images-1.medium.com/max/800/0*pMBbveZ9JVdtZrnQ)
 
 ### FAQ
 

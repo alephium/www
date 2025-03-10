@@ -16,9 +16,7 @@ Before getting to stateful UTXO (which we’ll call sUTXO from here on), we need
 
 The UTXO and account-based models are the most commonly used accounting standards in blockchain networks. Both of them allow users & systems to keep track of balances of crypto assets.
 
-<figure id="d525" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/0*HKhATGE0qm0VARf2" class="graf-image" data-image-id="0*HKhATGE0qm0VARf2" data-width="1600" data-height="752" />
-</figure>
+![](https://cdn-images-1.medium.com/max/800/0*HKhATGE0qm0VARf2)
 
 ### What is the UTXO Model?
 
@@ -28,9 +26,7 @@ In this standard, transactions are similar to physical cash transactions: for al
 
 In the UTXO world, every transaction spends the entirety of what it contains, creating new UTXOs.
 
-<figure id="ee93" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/0*pyP8cUmcl-OsuJXm" class="graf-image" data-image-id="0*pyP8cUmcl-OsuJXm" data-width="888" data-height="398" />
-</figure>
+![](https://cdn-images-1.medium.com/max/800/0*pyP8cUmcl-OsuJXm)
 
 Next time the user makes a transaction, he will use this UTXO as input. This model is suitable for accounting, but it has a significant limitation: it is immutable, and it doesn’t allow access to states. NEED A LINK TO SOMEWHERE DESCRIBING WHAT A STATE IS AND IDEALLY WHAT THE PROBLEM OF BEING STATELESS IS
 

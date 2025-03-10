@@ -4,6 +4,7 @@ import ArrowedLink from '../components/ArrowedLink'
 import Page from '../components/customPageComponents/Page'
 import SubpageHeroSection from '../components/customPageComponents/SubpageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
+import TextElement from '../components/customPageComponents/TextElement'
 import SectionDivider from '../components/SectionDivider'
 import { updateSrcSet } from '../images/utils'
 // import Image from 'gatsby-image'
@@ -56,9 +57,9 @@ const BlogPostTemplate = (props: PageProps<Queries.BlogPostBySlugQuery>) => {
 
           <SectionDivider />
 
-          <SubpageSection>
-            <article className="blog-post" itemScope itemType="http://schema.org/Article">
-              <section dangerouslySetInnerHTML={{ __html: post?.html || '' }} itemProp="articleBody" />
+          <SubpageSection narrow>
+            <article itemScope itemType="http://schema.org/Article">
+              <TextElement isSmall dangerouslySetInnerHTML={{ __html: post?.html || '' }} itemProp="articleBody" />
             </article>
 
             {/* {tags && <TagsList tags={tags} />} */}

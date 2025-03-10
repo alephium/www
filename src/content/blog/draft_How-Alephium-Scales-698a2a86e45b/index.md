@@ -8,9 +8,7 @@ description: 'Blockflow Sharding Algorithm Detailed — an interview'
 
 ### Blockflow Sharding Algorithm Detailed — an interview
 
-<figure id="dd84" class="graf graf--figure graf-after--h3">
-<img src="https://cdn-images-1.medium.com/max/800/1*cJlX_v5h0fS17OAZEW37Lg.png" class="graf-image" data-image-id="1*cJlX_v5h0fS17OAZEW37Lg.png" data-width="1344" data-height="768" />
-</figure>
+![](https://cdn-images-1.medium.com/max/800/1*cJlX_v5h0fS17OAZEW37Lg.png)
 
 Back from the drawer! This is the third of a series of interviews on the technical innovations brought to the world by Alephium (first 2 were <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" target="_blank"><em>Proof-of-Less-Work</em></a> _&_ <a href="https://medium.com/@alephium/tech-talk-2-mysteries-of-stateful-utxo-the-ultimate-guide-to-alephiums-accounting-model-and-de2cf2063615" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/tech-talk-2-mysteries-of-stateful-utxo-the-ultimate-guide-to-alephiums-accounting-model-and-de2cf2063615" target="_blank"><em>StatefulUTXO</em></a>_). The discussion was conducted in may of 2023, virtually in the presence of most of the Alephium team, who contributed to the questions and ensuing exchange. The following has been edited for clarity and concision, and optimized for readability. It has already been preceded by an_ <a href="https://medium.com/@alephium/an-introduction-to-blockflow-alephiums-sharding-algorithm-bbbf318c3402" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/an-introduction-to-blockflow-alephiums-sharding-algorithm-bbbf318c3402" target="_blank"><em>Introduction to Blockflow</em></a> _and_ <a href="https://twitter.com/alephium/status/1541711510178758658" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium/status/1541711510178758658" rel="noopener" target="_blank"><em>many</em></a> <a href="https://twitter.com/alephium/status/1668272076992413697" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium/status/1668272076992413697" rel="noopener" target="_blank"><em>Twitter</em></a> <a href="https://twitter.com/alephium/status/1681307477961482241" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium/status/1681307477961482241" rel="noopener" target="_blank"><em>threads.</em></a>
 
@@ -66,9 +64,7 @@ As we said, scalability is complex and can involve scaling up or scaling out. Sc
 
 Cheng: Certainly, I’d describe it this way: think of a single blockchain, the classic one with only one chain of blocks. Now, imagine you want to scale it using sharding, creating multiple blockchains. But then, you need to safely transfer funds between these blockchains and validate the correctness of these cross-chain transactions. This is the challenge. We have devised a new way to solve this using a DAG (Directed Acyclic Graph) data structure.
 
-<figure id="3cb9" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/0*v8qnPLi8R3nu6yiS" class="graf-image" data-image-id="0*v8qnPLi8R3nu6yiS" data-width="828" data-height="648" />
-</figure>
+![](https://cdn-images-1.medium.com/max/800/0*v8qnPLi8R3nu6yiS)
 
 Typically, when people shard a blockchain, they introduce a linear system. They take one chain and divide it into N blockchains. Alephium’s approach is more like a 2D perspective. We view blocks as containers for transactions between different groups, splitting transactions based on source and target groups. This two-dimensional perspective allows for efficient sharding. The advantage is that transaction dependencies are naturally embedded into the block structure, reducing the problem of proving these dependencies’ correctness in consensus rules.
 
@@ -94,9 +90,7 @@ These dependencies are blocks from different chains, and selecting them is part 
 
 In addition to the blocks from the intragroup chains, for the chain where we want to build the next block, we also choose the latest block from each chain connected to this group. Once we’ve made the right selections, we include the hashes of these blocks in the new block’s header. After we completed this process, we created a new block.
 
-<figure id="9d15" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/0*2ItX4xZtGZm0yezP" class="graf-image" data-image-id="0*2ItX4xZtGZm0yezP" data-width="781" data-height="632" />
-</figure>
+![](https://cdn-images-1.medium.com/max/800/0*2ItX4xZtGZm0yezP)
 
 This process takes place in parallel across all the different blockchains. Importantly, there’s no need to wait for other chains to progress. (You can see this explained in more detail <a href="https://medium.com/@alephium/an-introduction-to-blockflow-alephiums-sharding-algorithm-bbbf318c3402" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/an-introduction-to-blockflow-alephiums-sharding-algorithm-bbbf318c3402" target="_blank">here</a>, and use this <a href="https://visualizer.alph.land/" class="markup--anchor markup--p-anchor" data-href="https://visualizer.alph.land/" rel="noopener" target="_blank">tool to see it in real-time</a>).
 
@@ -114,9 +108,7 @@ When transactions are incorporated into blocks, it alters the state of the block
 
 For instance, if a transaction is initiated from Group 0 to Group 1, it changes the state of Group 0, leaving Group 1 unaffected for the time being. Even if another transaction occurs from Group 0 to Group 0, it still only affects Group 0. These transactions can also call Smart Contracts, altering the Smart Contract state of Group 0.
 
-<figure id="8e48" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/0*5Fr47Vc_NRx8ochf" class="graf-image" data-image-id="0*5Fr47Vc_NRx8ochf" data-width="670" data-height="958" />
-</figure>
+![](https://cdn-images-1.medium.com/max/800/0*5Fr47Vc_NRx8ochf)
 
 So, when will Group 1’s state change, given that it will receive coins? This change happens when a new block is created in a shard connected with Group 1, as it is consistently utilizing Group 0 as a reference for dependencies, verifying the inclusion of the new transaction as a dependency for Group 1.
 
