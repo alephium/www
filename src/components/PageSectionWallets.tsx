@@ -1,12 +1,11 @@
 import { colord } from 'colord'
 import { motion } from 'framer-motion'
-import { ReactNode, useState } from 'react'
+import { useState } from 'react'
 import styled from 'styled-components'
+
 import { deviceBreakPoints } from '../styles/global-style'
 import Button from './Button'
 import GradientBubble from './GradientBubble'
-import SectionTextHeader from './SectionTextHeader'
-import { StaticImage } from 'gatsby-plugin-image'
 
 export interface PageSectionWalletsContentType {
   title: string
@@ -15,7 +14,9 @@ export interface PageSectionWalletsContentType {
   wallets: {
     title: string
     description: string
-    screenshot: ReactNode
+    screenshot: {
+      publicURL: string
+    }
     color: string
     actions: {
       title: string
@@ -25,26 +26,6 @@ export interface PageSectionWalletsContentType {
     }[]
   }[]
 }
-
-interface PageSectionWalletsProps {
-  className?: string
-  content: PageSectionWalletsContentType
-}
-
-const PageSectionWallets = ({ content: { title, subtitle, description, wallets } }: PageSectionWalletsProps) => (
-  <SectionWrapper>
-    <StyledSectionTextHeader id="wallets" title={title} subtitle={subtitle} bigSubtitle bigText centered />
-    <CenteredDescription>
-      <span>{description}</span>
-    </CenteredDescription>
-    <WalletCards>
-      {wallets.map((w) => (
-        <WalletCard key={w.title} {...w}></WalletCard>
-      ))}
-    </WalletCards>
-    <ParallaxBg />
-  </SectionWrapper>
-)
 
 export const WalletCard = ({
   title,
@@ -64,7 +45,7 @@ export const WalletCard = ({
             .toHex()
         }}
       >
-        <WalletScreenshot animate={{ scale: isHovered ? 1.04 : 1 }}>{screenshot}</WalletScreenshot>
+        <WalletScreenshot animate={{ scale: isHovered ? 1.04 : 1 }} src={screenshot.publicURL} alt={title} />
       </WalletScreenShotContainer>
       <WalletTextContainer>
         <WalletTitle>{title}</WalletTitle>
@@ -81,8 +62,6 @@ export const WalletCard = ({
   )
 }
 
-export default PageSectionWallets
-
 export const ParallaxBg = () => (
   <ParallaxBackground>
     <GradientBubble speed={-10} positionPercentage={[5, 5]} scale={2} blur={10} gradientVariant={2} />
@@ -93,36 +72,6 @@ export const ParallaxBg = () => (
     <GradientBubble speed={20} positionPercentage={[0, 90]} scale={6} blur={20} gradientVariant={0} />
   </ParallaxBackground>
 )
-
-const SectionWrapper = styled.section`
-  position: relative;
-  padding-top: var(--spacing-16);
-  padding-bottom: var(--spacing-16);
-  background-color: ${({ theme }) => theme.bgTertiary};
-  z-index: 0;
-`
-
-const StyledSectionTextHeader = styled(SectionTextHeader)`
-  margin-bottom: var(--spacing-8);
-`
-
-const CenteredDescription = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: var(--spacing-8);
-  color: ${({ theme }) => theme.textTertiary};
-
-  text-align: center;
-  font-size: var(--fontSize-18);
-  line-height: var(--lineHeight-26);
-
-  span {
-    width: 40%;
-    max-width: 500px;
-    min-width: 260px;
-  }
-`
 
 export const WalletCards = styled.div`
   display: flex;
@@ -146,7 +95,7 @@ const WalletScreenShotContainer = styled.div`
   overflow: hidden;
 `
 
-const WalletScreenshot = styled(motion.div)`
+const WalletScreenshot = styled(motion.img)`
   width: 100%;
   object-fit: contain;
   z-index: 1;
