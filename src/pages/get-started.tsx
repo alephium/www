@@ -1,4 +1,5 @@
-import { PageProps } from 'gatsby'
+import { graphql, PageProps, useStaticQuery } from 'gatsby'
+import styled from 'styled-components'
 
 import Button from '../components/Button'
 import Grid from '../components/customPageComponents/Grid'
@@ -17,6 +18,8 @@ import useWallets from '../hooks/useWallets'
 
 const CustomPage = (props: PageProps) => {
   const wallets = useWallets()
+  const exchangesData = useStaticQuery<Queries.ExchangesQuery>(exchangesQuery)
+  const exchanges = exchangesData.allMarkdownRemark.nodes[0].frontmatter?.exchanges ?? []
 
   return (
     <Page
@@ -131,47 +134,19 @@ const CustomPage = (props: PageProps) => {
               </p>
             </TextElement>
             <SubheaderContent>
-              <Grid columns={4}>
-                <TextCard url="https://bridge.alephium.org/">
-                  <Placeholder width="100px" height="100px " />
-                  <h3>Alephium Bridge</h3>
-                  <p>A native bridge on Alephium that enhances interoperability with other blockchains.</p>
-                </TextCard>
-                <TextCard url="https://www.ayin.app/">
-                  <Placeholder width="100px" height="100px " />
-                  <h3>AYIN</h3>
-                  <p>Decentralized exchange built on Alephium.</p>
-                </TextCard>
-                <TextCard url="https://buy.onramper.com/?mode=buy&onlyCryptos=alph_alph">
-                  <Placeholder width="100px" height="100px " />
-                  <h3>Onramper</h3>
-                  <p>A leading fiat-to-crypto on-ramp aggregator.</p>
-                </TextCard>
-                <TextCard url="https://www.mexc.com/exchange/ALPH_USDT">
-                  <Placeholder width="100px" height="100px " />
-                  <h3>MEXC</h3>
-                  <p>Digital assets exchange.</p>
-                </TextCard>
-                <TextCard url="https://www.gate.io/trade/ALPH_USDT">
-                  <Placeholder width="100px" height="100px " />
-                  <h3>Gate.io</h3>
-                  <p>Digital assets exchange.</p>
-                </TextCard>
-                <TextCard url="https://app.uniswap.org/explore/tokens/ethereum/0x590f820444fa3638e022776752c5eef34e2f89a6">
-                  <Placeholder width="100px" height="100px " />
-                  <h3>Uniswap</h3>
-                  <p>Leading decentralized exchange.</p>
-                </TextCard>
-                <TextCard url="https://elexium.finance/">
-                  <Placeholder width="100px" height="100px " />
-                  <h3>Elexium Finance</h3>
-                  <p>Decentralized exchange & liquidity arena on Alephium.</p>
-                </TextCard>
-                <TextCard url="https://pancakeswap.finance/swap?inputCurrency=0x8683ba2f8b0f69b2105f26f488bade1d3ab4dec8&outputCurrency=0x55d398326f99059ff775485246999027b3197955">
-                  <Placeholder width="100px" height="100px " />
-                  <h3>Pancake Swap</h3>
-                  <p>Multichain decentralized exchange.</p>
-                </TextCard>
+              <Grid columns={4} gap="small">
+                {exchanges.map(
+                  (exchange) =>
+                    exchange &&
+                    exchange.title &&
+                    exchange.url && (
+                      <TextCard key={exchange.title} url={exchange.url}>
+                        <ExchangeLogo src={exchange.logo?.publicURL ?? ''} alt={exchange.title} />
+                        <h3>{exchange.title}</h3>
+                        <p>{exchange.description}</p>
+                      </TextCard>
+                    )
+                )}
               </Grid>
             </SubheaderContent>
 
@@ -269,3 +244,30 @@ const CustomPage = (props: PageProps) => {
 }
 
 export default CustomPage
+
+const exchangesQuery = graphql`
+  query Exchanges {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/exchanges.md/" } }) {
+      nodes {
+        frontmatter {
+          exchanges {
+            title
+            description
+            url
+            logo {
+              publicURL
+            }
+          }
+        }
+      }
+    }
+  }
+`
+
+const ExchangeLogo = styled.img`
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 20px;
+  margin-bottom: 20px;
+`

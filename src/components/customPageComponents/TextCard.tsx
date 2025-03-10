@@ -1,10 +1,11 @@
-import styled, { css } from 'styled-components'
-import SimpleLink from '../SimpleLink'
-import { ReactNode, PointerEvent } from 'react'
-import TextElement, { TextElementProps } from './TextElement'
 import { motion, useMotionValue, useTransform, Variants } from 'framer-motion'
+import { PointerEvent, ReactNode } from 'react'
+import styled, { css } from 'styled-components'
+
 import { deviceBreakPoints } from '../../styles/global-style'
 import { getPointerRelativePositionInElement } from '../../utils/pointer'
+import SimpleLink from '../SimpleLink'
+import TextElement, { TextElementProps } from './TextElement'
 
 interface TextCardProps extends TextElementProps {
   children: ReactNode
@@ -96,6 +97,7 @@ const TextElementStyled = styled(TextElement)<Pick<TextCardProps, 'url'>>`
       &:hover {
         > h3 {
           ::after {
+            position: absolute;
             content: '  →';
           }
         }
