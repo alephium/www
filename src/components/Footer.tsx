@@ -1,17 +1,15 @@
+import { graphql, useStaticQuery } from 'gatsby'
 import styled, { useTheme } from 'styled-components'
 
 import { deviceBreakPoints } from '../styles/global-style'
-
-import SimpleLink from './SimpleLink'
-import PageSectionContainer from './PageSectionContainer'
-import Columns from './Columns/Columns'
-import Column from './Columns/Column'
-
-import { graphql, useStaticQuery } from 'gatsby'
-import AlephiumLogo from './AlephiumLogo'
-import NavigationMenuSocials from './navigation/NavigationMenuSocials'
 import { notEmpty } from '../utils/misc'
+import AlephiumLogo from './AlephiumLogo'
+import Column from './Columns/Column'
+import Columns from './Columns/Columns'
+import NavigationMenuSocials from './navigation/NavigationMenuSocials'
+import PageSectionContainer from './PageSectionContainer'
 import ScrollToTop from './ScrollToTop'
+import SimpleLink from './SimpleLink'
 
 export const footerQuery = graphql`
   query FooterSection {
@@ -96,6 +94,13 @@ const PageSectionContainerBottom = styled(PageSectionContainer)`
   display: flex;
   align-items: center;
   padding: var(--spacing-12) 0 0;
+
+  @media ${deviceBreakPoints.mobile} {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--spacing-4);
+  }
 `
 
 const BottomColumn = styled.div`
