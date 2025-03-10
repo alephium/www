@@ -117,36 +117,36 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
-        tags
-        authors {
-          name
-          page
-          externalLink
-          externalName
-        }
-        seo {
-          title
-          description
-        }
-        featuredImage {
-          desktop: childImageSharp {
-            fluid(maxWidth: 1920, maxHeight: 600, fit: COVER, cropFocus: CENTER) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-          mobile: childImageSharp {
-            fluid(maxWidth: 768, maxHeight: 600, fit: COVER, cropFocus: CENTER) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-          seo: childImageSharp {
-            resize(width: 1200) {
-              src
-              height
-              width
-            }
-          }
-        }
+        # tags
+        # authors {
+        #   name
+        #   page
+        #   externalLink
+        #   externalName
+        # }
+        # seo {
+        #   title
+        #   description
+        # }
+        # featuredImage {
+        #   desktop: childImageSharp {
+        #     fluid(maxWidth: 1920, maxHeight: 600, fit: COVER, cropFocus: CENTER) {
+        #       ...GatsbyImageSharpFluid
+        #     }
+        #   }
+        #   mobile: childImageSharp {
+        #     fluid(maxWidth: 768, maxHeight: 600, fit: COVER, cropFocus: CENTER) {
+        #       ...GatsbyImageSharpFluid
+        #     }
+        #   }
+        #   seo: childImageSharp {
+        #     resize(width: 1200) {
+        #       src
+        #       height
+        #       width
+        #     }
+        #   }
+        # }
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

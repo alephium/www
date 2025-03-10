@@ -53,13 +53,13 @@ export const query = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
-          featuredImage {
-            childImageSharp {
-              fluid(maxWidth: 500, maxHeight: 290) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
+          # featuredImage {
+          #   childImageSharp {
+          #     fluid(maxWidth: 500, maxHeight: 290) {
+          #       ...GatsbyImageSharpFluid
+          #     }
+          #   }
+          # }
         }
       }
     }
