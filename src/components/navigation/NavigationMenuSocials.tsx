@@ -1,23 +1,11 @@
-import { graphql, useStaticQuery } from 'gatsby'
-import SocialMediaIcon from '../SocialMediaIcon'
 import styled from 'styled-components'
+
+import useSocials from '../../hooks/useSocials'
 import { getIconByName } from '../../images/utils'
+import SocialMediaIcon from '../SocialMediaIcon'
 
 const NavigationMenuSocials = ({ enabledItems, className }: { enabledItems: string[]; className?: string }) => {
-  const {
-    allSocialsYaml: { edges: socials }
-  } = useStaticQuery<Queries.SocialsYamlQuery>(graphql`
-    query SocialsYaml {
-      allSocialsYaml {
-        edges {
-          node {
-            name
-            url
-          }
-        }
-      }
-    }
-  `)
+  const socials = useSocials()
 
   return (
     <NavigationMenuSocialsStyled className={className}>

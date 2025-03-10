@@ -1,21 +1,9 @@
-import { graphql, useStaticQuery } from 'gatsby'
 import { useEffect } from 'react'
 
+import useSocials from '../hooks/useSocials'
+
 const DiscordPage = () => {
-  const {
-    allSocialsYaml: { edges: socials }
-  } = useStaticQuery<Queries.SocialsYamlQuery>(graphql`
-    query SocialsYaml {
-      allSocialsYaml {
-        edges {
-          node {
-            name
-            url
-          }
-        }
-      }
-    }
-  `)
+  const socials = useSocials()
 
   const discordEntry = socials?.find((social) => social.node?.name === 'Discord')?.node
 
