@@ -1,6 +1,5 @@
-import { graphql, PageProps } from 'gatsby'
+import { graphql, Link, PageProps } from 'gatsby'
 
-import ArrowedLink from '../components/ArrowedLink'
 import Page from '../components/customPageComponents/Page'
 import SubpageHeroSection from '../components/customPageComponents/SubpageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
@@ -80,16 +79,16 @@ const BlogPostTemplate = (props: PageProps<Queries.BlogPostBySlugQuery>) => {
               >
                 <li>
                   {previous && (
-                    <ArrowedLink to={previous.fields.slug} rel="prev" direction="left">
-                      {previous.frontmatter.title}
-                    </ArrowedLink>
+                    <Link to={previous.fields?.slug ?? ''} rel="prev" direction="left">
+                      {previous.frontmatter?.title}
+                    </Link>
                   )}
                 </li>
                 <li>
                   {next && (
-                    <ArrowedLink to={next.fields.slug} rel="next" direction="right">
-                      {next.frontmatter.title}
-                    </ArrowedLink>
+                    <Link to={next.fields?.slug ?? ''} rel="next" direction="right">
+                      {next.frontmatter?.title}
+                    </Link>
                   )}
                 </li>
               </ul>

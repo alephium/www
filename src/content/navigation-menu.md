@@ -47,7 +47,7 @@ menuItems:
       - title: FAQ
         link: /faq
       - title: Blog
-        link: https://medium.com/@alephium
+        link: /blog
       - title: Brand Assets
         link: /brand
   - title: Community
