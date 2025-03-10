@@ -1,15 +1,15 @@
 import { PageProps } from 'gatsby'
 
-import SectionDivider from '../components/SectionDivider'
-import SubpageHeroSection from '../components/customPageComponents/SubpageHeroSection'
-import Page from '../components/customPageComponents/Page'
-import Grid from '../components/customPageComponents/Grid'
-import TextCard from '../components/customPageComponents/TextCard'
-import SubpageSection from '../components/customPageComponents/SubpageSection'
-import TextElement from '../components/customPageComponents/TextElement'
-import SubheaderContent from '../components/customPageComponents/SubheaderContent'
-import Placeholder from '../components/customPageComponents/Placeholder'
 import Button from '../components/Button'
+import Grid from '../components/customPageComponents/Grid'
+import Page from '../components/customPageComponents/Page'
+import SubheaderContent from '../components/customPageComponents/SubheaderContent'
+import SubpageHeroSection from '../components/customPageComponents/SubpageHeroSection'
+import SubpageSection from '../components/customPageComponents/SubpageSection'
+import TextCard from '../components/customPageComponents/TextCard'
+import TextElement from '../components/customPageComponents/TextElement'
+import SectionDivider from '../components/SectionDivider'
+import SimpleLink from '../components/SimpleLink'
 
 const CustomPage = (props: PageProps) => (
   <Page
@@ -89,16 +89,38 @@ const CustomPage = (props: PageProps) => (
           </TextElement>
 
           <SubheaderContent>
-            <Placeholder width="100%" height="100px" />
-          </SubheaderContent>
-          <SubheaderContent>
-            <Placeholder width="100%" height="100px" />
-          </SubheaderContent>
-          <SubheaderContent>
-            <Placeholder width="100%" height="100px" />
-          </SubheaderContent>
-          <SubheaderContent>
-            <Placeholder width="100%" height="100px" />
+            <TextElement>
+              <h3>Community Builders</h3>
+              <ul>
+                <li>Organize local meetups, workshops, and hackathons.</li>
+                <li>Moderate Alephium's social channels and forums.</li>
+                <li>Translate content and help grow Alephium's global presence.</li>
+              </ul>
+            </TextElement>
+            <TextElement>
+              <h3>Educators</h3>
+              <ul>
+                <li>Create tutorials, guides, and educational content about Alephium.</li>
+                <li>Host webinars, AMAs, and live streams to spread awareness.</li>
+                <li>Mentor new community members and developers.</li>
+              </ul>
+            </TextElement>
+            <TextElement>
+              <h3>Content Creators</h3>
+              <ul>
+                <li>Write blogs, create videos, or design graphics about Alephium.</li>
+                <li>Share your work on social media and other platforms.</li>
+                <li>Develop creative campaigns to engage the community.</li>
+              </ul>
+            </TextElement>
+            <TextElement>
+              <h3>Developers</h3>
+              <ul>
+                <li>Build tools, dApps, or integrations for the Alephium ecosystem.</li>
+                <li>Contribute to Alephium’s open-source projects.</li>
+                <li>Provide technical support and guidance to other developers.</li>
+              </ul>
+            </TextElement>
           </SubheaderContent>
         </SubpageSection>
 
@@ -110,16 +132,37 @@ const CustomPage = (props: PageProps) => (
           </TextElement>
 
           <SubheaderContent>
-            <Placeholder width="100%" height="100px" />
-          </SubheaderContent>
-          <SubheaderContent>
-            <Placeholder width="100%" height="100px" />
-          </SubheaderContent>
-          <SubheaderContent>
-            <Placeholder width="100%" height="100px" />
-          </SubheaderContent>
-          <SubheaderContent>
-            <Placeholder width="100%" height="100px" />
+            <TextElement>
+              <h3>Apply</h3>
+              <p>
+                Fill out the{' '}
+                <SimpleLink url="https://docs.google.com/forms/d/e/1FAIpQLSfR0T6Fg3v8HU86wZJgQBXslRUJKS3bsiQb92-ZIyaaV4RreA/viewform?usp=sf_link">
+                  Ambassador Application Form
+                </SimpleLink>{' '}
+                and tell us about your skills, experience, and how you’d like to contribute to Alephium.
+              </p>
+            </TextElement>
+            <TextElement>
+              <h3>Onboarding</h3>
+              <p>
+                If selected, you’ll receive an onboarding package with resources, guidelines, and access to the Alephium
+                Ambassador community.
+              </p>
+            </TextElement>
+            <TextElement>
+              <h3>Start Contributing</h3>
+              <p>
+                Begin your journey by completing tasks, participating in initiatives, and collaborating with other
+                ambassadors.
+              </p>
+            </TextElement>
+            <TextElement>
+              <h3>Grow and Earn</h3>
+              <p>
+                As you contribute, you’ll earn rewards, gain recognition, and unlock new opportunities within the
+                Alephium ecosystem.
+              </p>
+            </TextElement>
           </SubheaderContent>
         </SubpageSection>
 
