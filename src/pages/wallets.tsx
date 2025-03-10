@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import Button from '../components/Button'
 import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
-import Placeholder from '../components/customPageComponents/Placeholder'
 import SideBySide from '../components/customPageComponents/SideBySide'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
 import SubpageHeroSection from '../components/customPageComponents/SubpageHeroSection'
@@ -12,6 +11,7 @@ import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextCard from '../components/customPageComponents/TextCard'
 import TextElement from '../components/customPageComponents/TextElement'
 import SectionDivider from '../components/SectionDivider'
+import SimpleLink from '../components/SimpleLink'
 import useWallets from '../hooks/useWallets'
 
 const CustomPage = (props: PageProps) => {
@@ -76,7 +76,7 @@ const CustomPage = (props: PageProps) => {
 
             <SubheaderContent>
               <SideBySide reverseOnMobile>
-                <TextElement>
+                <TextElement isBodySmall>
                   <h3>Desktop Wallet</h3>
                   <p>
                     Alephium's flagship desktop wallet is designed for both everyday transactions and advanced
@@ -84,32 +84,52 @@ const CustomPage = (props: PageProps) => {
                     your assets securely.
                   </p>
                   <p>Features:</p>
+                  <ul>
+                    <li>Full control over your private keys</li>
+                    <li>Support for multiple addresses</li>
+                    <li>Integration with hardware wallets</li>
+                    <li>Advanced transaction options</li>
+                  </ul>
+                  <p>Access the latest version from the official GitHub releases.</p>
                   <Button url={wallets?.desktop?.url ?? ''}>Download</Button>
                 </TextElement>
                 <WalletScreenShot src={wallets?.desktop?.image?.publicURL ?? ''} />
               </SideBySide>
               <SideBySide>
                 <WalletScreenShot src={wallets?.extension?.image?.publicURL ?? ''} />
-                <TextElement>
+                <TextElement isBodySmall>
                   <h3>Browser Extension Wallet</h3>
                   <p>
                     For seamless interaction with web-based dApps, the Alephium Extension Wallet integrates directly
                     into your browser, providing quick and secure access to your assets.
                   </p>
                   <p>Features:</p>
+                  <ul>
+                    <li>Easy dApp connectivity</li>
+                    <li>Secure transaction approvals</li>
+                    <li>User-friendly interface</li>
+                  </ul>
+
                   <p>Available for:</p>
                   <Button url={wallets?.extension?.urls?.chrome ?? ''}>Chrome</Button>
                   <Button url={wallets?.extension?.urls?.firefox ?? ''}>Firefox</Button>
                 </TextElement>
               </SideBySide>
               <SideBySide reverseOnMobile>
-                <TextElement>
+                <TextElement isBodySmall>
                   <h3>Mobile Wallet</h3>
                   <p>
                     Manage your ALPH tokens on the go with Alephium's mobile wallet, offering a balance between security
                     and convenience.
                   </p>
                   <p>Features:</p>
+                  <ul>
+                    <li>Real-time balance updates</li>
+                    <li>QR code support for transactions</li>
+                    <li>Biometric security options</li>
+                    <li>WalletConnect integration for dApps</li>
+                  </ul>
+
                   <p>Download from:</p>
                   <Button url={wallets?.mobile?.urls?.android ?? ''}>Android Google Play Store</Button>
                   <Button url={wallets?.mobile?.urls?.ios ?? ''}>iOS App Store </Button>
@@ -124,6 +144,13 @@ const CustomPage = (props: PageProps) => {
                     offline and protect your assets from potential online threats..
                   </p>
                   <p>Supported Devices:</p>
+                  <ul>
+                    <li>
+                      <SimpleLink url="https://docs.alephium.org/wallet/ledger">Ledger</SimpleLink>
+                    </li>
+                    <li>OneKey</li>
+                    <li>Safepa</li>
+                  </ul>
                 </TextElement>
               </SideBySide>
             </SubheaderContent>
@@ -137,22 +164,39 @@ const CustomPage = (props: PageProps) => {
             </TextElement>
 
             <SubheaderContent>
-              <Placeholder width="100%" height="100px" />
+              <TextElement>
+                <h3>1. Choose Your Wallet</h3>
+                <p>Select the wallet type that best suits your needs—desktop, browser extension, or mobile.</p>
+              </TextElement>
+              <TextElement>
+                <h3>2. Download and Install</h3>
+                <p>Follow the provided links to download and install the wallet on your device.</p>
+              </TextElement>
+              <TextElement>
+                <h3>3. Set Up Your Account</h3>
+                <p>
+                  Create a new wallet by following the on-screen instructions. Ensure you securely back up your seed
+                  phrase during this process.
+                </p>
+              </TextElement>
+              <TextElement>
+                <h3>4. Add ALPH Tokens</h3>
+                <p>
+                  Deposit ALPH into your wallet by receiving tokens from an exchange, another wallet, or using the
+                  in-app buy option.
+                </p>
+              </TextElement>
+              <TextElement>
+                <h3>5. Explore the Ecosystem</h3>
+                <p>
+                  Use your wallet to interact with dApps, stake tokens, and participate in Alephium's growing ecosystem.
+                </p>
+              </TextElement>
             </SubheaderContent>
-            <SubheaderContent>
-              <Placeholder width="100%" height="100px" />
-            </SubheaderContent>
-            <SubheaderContent>
-              <Placeholder width="100%" height="100px" />
-            </SubheaderContent>
-            <SubheaderContent>
-              <Placeholder width="100%" height="100px" />
-            </SubheaderContent>
-            <SubheaderContent>
-              <Placeholder width="100%" height="100px" />
-            </SubheaderContent>
+          </SubpageSection>
 
-            <TextElement>
+          <SubpageSection>
+            <TextElement isSmall>
               <h3>Security Reminder</h3>
               <p>
                 Always keep your seed phrase and private keys secure. Never share them with anyone, and be cautious of
