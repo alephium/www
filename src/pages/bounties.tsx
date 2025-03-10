@@ -1,15 +1,15 @@
 import { PageProps } from 'gatsby'
 
-import SectionDivider from '../components/SectionDivider'
-import SubpageHeroSection from '../components/customPageComponents/SubpageHeroSection'
+import Button from '../components/Button'
+import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
-import Grid from '../components/customPageComponents/Grid'
-import TextCard from '../components/customPageComponents/TextCard'
-import Button from '../components/Button'
+import SubpageHeroSection from '../components/customPageComponents/SubpageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
+import TextCard from '../components/customPageComponents/TextCard'
 import TextElement from '../components/customPageComponents/TextElement'
-import Placeholder from '../components/customPageComponents/Placeholder'
+import SectionDivider from '../components/SectionDivider'
+import SimpleLink from '../components/SimpleLink'
 
 const CustomPage = (props: PageProps) => (
   <Page
@@ -73,7 +73,19 @@ const CustomPage = (props: PageProps) => (
           </TextElement>
 
           <SubheaderContent>
-            <Placeholder width="100%" height="100px" />
+            <Grid columns={1} gap="small">
+              {Array.from({ length: 3 }).map((_, index) => (
+                <TextCard key={index}>
+                  <h3>Bounty Title {index + 1}</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                  </p>
+                  <Button url="">View details</Button>
+                </TextCard>
+              ))}
+            </Grid>
           </SubheaderContent>
         </SubpageSection>
 
@@ -85,7 +97,60 @@ const CustomPage = (props: PageProps) => (
           </TextElement>
 
           <SubheaderContent>
-            <Placeholder width="100%" height="100px" />
+            <TextElement>
+              <h3>Step 1</h3>
+              <h4>Select a Bounty & Get Started</h4>
+              <p>
+                <ul>
+                  <li>Review available bounties and select one that fits your expertise.</li>
+                  <li>
+                    Before starting, make sure you meet the program's eligibility requirements and agree to the Terms &
+                    Conditions.
+                  </li>
+                  <li>
+                    Apply for the bounty through our <SimpleLink url="">bounty platform</SimpleLink>.
+                  </li>
+                </ul>
+              </p>
+            </TextElement>
+            <TextElement>
+              <h3>Step 2</h3>
+              <h4>Submit Your Completed Work</h4>
+              <p>
+                Once you've completed your bounty task, submit your work through the{' '}
+                <SimpleLink url="">bounty platform</SimpleLink>.
+              </p>
+            </TextElement>
+            <TextElement>
+              <h3>Step 3</h3>
+              <h4>Review & Evaluation</h4>
+              <p>
+                <ul>
+                  <li>Submissions go through technical and business reviews (estimated 1-2 weeks).</li>
+                  <li>Once the reviews are done, the Alephium committee will assess the work and provide feedback.</li>
+                </ul>
+              </p>
+            </TextElement>
+            <TextElement>
+              <h3>Step 4</h3>
+              <h4>Submission Results & Approval</h4>
+              <p>
+                <ul>
+                  <li>You will be notified of your bounty review outcome.</li>
+                  <li>Both successful and unsuccessful submissions will receive feedback.</li>
+                </ul>
+              </p>
+            </TextElement>
+            <TextElement>
+              <h3>Step 5</h3>
+              <h4>Bounty Agreement & Payment</h4>
+              <p>
+                <ul>
+                  <li>If your submission is approved, you will receive a Bounty Agreement to formalize the reward.</li>
+                  <li>Once all steps are complete, the bounty reward is paid out in ALPH tokens.</li>
+                </ul>
+              </p>
+            </TextElement>
           </SubheaderContent>
         </SubpageSection>
 
@@ -108,6 +173,7 @@ const CustomPage = (props: PageProps) => (
         <SubpageSection>
           <TextElement isCentered>
             <h2>Ready? Join the Bounty Program today!</h2>
+            <Button url="/">Join the program</Button>
           </TextElement>
         </SubpageSection>
       </>
