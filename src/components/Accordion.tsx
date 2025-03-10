@@ -1,7 +1,9 @@
-import { motion, AnimatePresence } from 'framer-motion'
-import styled from 'styled-components'
+import { AnimatePresence, motion } from 'framer-motion'
 import { useState } from 'react'
 import { RiArrowDropDownLine, RiArrowDropUpLine } from 'react-icons/ri'
+import styled from 'styled-components'
+
+import TextElement from './customPageComponents/TextElement'
 
 interface AccordionProps {
   title: string
@@ -26,7 +28,9 @@ const Accordion = ({ title, children, className }: AccordionProps) => {
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.2 }}
           >
-            <AccordionInner>{children}</AccordionInner>
+            <AccordionInner>
+              <TextElement isBodySmall>{children}</TextElement>
+            </AccordionInner>
           </AccordionContent>
         )}
       </AnimatePresence>

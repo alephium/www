@@ -1,13 +1,14 @@
 import { PageProps } from 'gatsby'
 
-import SectionDivider from '../components/SectionDivider'
-import SubpageHeroSection from '../components/customPageComponents/SubpageHeroSection'
+import Accordion from '../components/Accordion'
+import Button from '../components/Button'
 import Page from '../components/customPageComponents/Page'
+import SubheaderContent from '../components/customPageComponents/SubheaderContent'
+import SubpageHeroSection from '../components/customPageComponents/SubpageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
-import Button from '../components/Button'
-import Accordion from '../components/Accordion'
-import SubheaderContent from '../components/customPageComponents/SubheaderContent'
+import SectionDivider from '../components/SectionDivider'
+import SimpleLink from '../components/SimpleLink'
 
 const CustomPage = (props: PageProps) => (
   <Page
@@ -66,23 +67,27 @@ const CustomPage = (props: PageProps) => (
               <p>Alephium offers:</p>
               <ul>
                 <li>
-                  <a href="https://github.com/alephium/alephium-frontend/releases/latest">Desktop wallet</a>
+                  <SimpleLink url="https://github.com/alephium/alephium-frontend/releases/latest">
+                    Desktop wallet
+                  </SimpleLink>
                 </li>
                 <li>
-                  <a href="https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj">
+                  <SimpleLink url="https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj">
                     Chrome extension wallet
-                  </a>
+                  </SimpleLink>
                 </li>
                 <li>
-                  <a href="https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet">
+                  <SimpleLink url="https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet">
                     Firefox extension wallet
-                  </a>
+                  </SimpleLink>
                 </li>
                 <li>
-                  <a href="https://play.google.com/store/apps/details?id=org.alephium.wallet">Android wallet</a>
+                  <SimpleLink url="https://play.google.com/store/apps/details?id=org.alephium.wallet">
+                    Android wallet
+                  </SimpleLink>
                 </li>
                 <li>
-                  <a href="https://apps.apple.com/us/app/alephium-wallet/id6469043072">iOS wallet</a>
+                  <SimpleLink url="https://apps.apple.com/us/app/alephium-wallet/id6469043072">iOS wallet</SimpleLink>
                 </li>
               </ul>
             </Accordion>
@@ -94,28 +99,31 @@ const CustomPage = (props: PageProps) => (
             </Accordion>
             <Accordion title="Does Alephium have hardware wallet support?">
               <p>
-                Yes, we have a <a href="https://docs.alephium.org/wallet/ledger">Ledger integration</a>!
+                Yes, we have a <SimpleLink url="https://docs.alephium.org/wallet/ledger">Ledger integration</SimpleLink>
+                !
               </p>
             </Accordion>
             <Accordion title="Where can I get ALPH?">
               <p>You can get ALPH here</p>
               <ul>
                 <li>
-                  <a href="https://www.ayin.app/swap">AYIN DEX</a>
+                  <SimpleLink url="https://www.ayin.app/swap">AYIN DEX</SimpleLink>
                 </li>
                 <li>
-                  <a href="https://www.elexium.finance">Elexium Finance DEX</a>
+                  <SimpleLink url="https://www.elexium.finance">Elexium Finance DEX</SimpleLink>
                 </li>
                 <li>
-                  <a href="https://buy.onramper.com/?mode=buy&onlyCryptos=alph_alph">Onramper on-ramp aggregator</a>
+                  <SimpleLink url="https://buy.onramper.com/?mode=buy&onlyCryptos=alph_alph">
+                    Onramper on-ramp aggregator
+                  </SimpleLink>
                 </li>
                 <li>
-                  <a href="https://www.mexc.com/exchange/ALPH_USDT">MEXC CEX</a>
+                  <SimpleLink url="https://www.mexc.com/exchange/ALPH_USDT">MEXC CEX</SimpleLink>
                 </li>
               </ul>
               <p>
-                Or you can explore
-                <a href="https://www.coingecko.com/en/coins/alephium#markets">more ALPH markets</a>.
+                Or you can explore{' '}
+                <SimpleLink url="https://www.coingecko.com/en/coins/alephium#markets">more ALPH markets</SimpleLink>.
               </p>
             </Accordion>
           </SubheaderContent>
@@ -128,24 +136,25 @@ const CustomPage = (props: PageProps) => (
             <Accordion title="Where can I find developer resources?">
               <ul>
                 <li>
-                  <a href="https://docs.alephium.org">Start with documentation</a>
+                  <SimpleLink url="https://docs.alephium.org">Start with documentation</SimpleLink>
                 </li>
                 <li>
-                  <a href="/roadmap">Explore the roadmap</a>
+                  <SimpleLink url="/roadmap">Explore the roadmap</SimpleLink>
                 </li>
                 <li>
-                  <a href="/grants">Learn about grants</a>
+                  <SimpleLink url="/grants">Learn about grants</SimpleLink>
                 </li>
                 <li>
-                  <a href="https://www.youtube.com/playlist?list=PL8q8n0BHJS1PWP7t8ABECYdOaPM-hJmjx">
+                  <SimpleLink url="https://www.youtube.com/playlist?list=PL8q8n0BHJS1PWP7t8ABECYdOaPM-hJmjx">
                     Or go straight to tutorials
-                  </a>
+                  </SimpleLink>
                 </li>
               </ul>
             </Accordion>
             <Accordion title="Are there any dApps on Alephium?">
               <p>
-                Of course, explore our ecosystem in the <a href="https://alph.land">AlphLand</a> directory.
+                Of course, explore our ecosystem in the <SimpleLink url="https://alph.land">AlphLand</SimpleLink>{' '}
+                directory.
               </p>
             </Accordion>
             <Accordion title="Why did Alephium choose to build its own virtual machine and smart contract language?">
@@ -180,16 +189,16 @@ const CustomPage = (props: PageProps) => (
             <Accordion title="What mining software can I use?">
               <ul>
                 <li>
-                  <a href="https://www.bzminer.com/guides/how-to-mine-alephium">BZMiner</a>
+                  <SimpleLink url="https://www.bzminer.com/guides/how-to-mine-alephium">BZMiner</SimpleLink>
                 </li>
                 <li>
-                  <a href="https://github.com/Lolliedieb/lolMiner-releases">lolMiner</a>
+                  <SimpleLink url="https://github.com/Lolliedieb/lolMiner-releases">lolMiner</SimpleLink>
                 </li>
                 <li>
-                  <a href="https://github.com/doktor83/SRBMiner-Multi/releases">SRBMiner</a>
+                  <SimpleLink url="https://github.com/doktor83/SRBMiner-Multi/releases">SRBMiner</SimpleLink>
                 </li>
                 <li>
-                  <a href="https://github.com/trexminer/T-Rex">T-Rex Miner</a>
+                  <SimpleLink url="https://github.com/trexminer/T-Rex">T-Rex Miner</SimpleLink>
                 </li>
               </ul>
             </Accordion>
@@ -218,13 +227,13 @@ const CustomPage = (props: PageProps) => (
               <p>Join our announcement channels:</p>
               <ul>
                 <li>
-                  <a href="https://discord.gg/XC5JaaDT7z">Discord</a>
+                  <SimpleLink url="https://discord.gg/XC5JaaDT7z">Discord</SimpleLink>
                 </li>
                 <li>
-                  <a href="https://t.me/alephiumgroup">Telegram</a>
+                  <SimpleLink url="https://t.me/alephiumgroup">Telegram</SimpleLink>
                 </li>
                 <li>
-                  <a href="https://x.com/alephium">X</a>
+                  <SimpleLink url="https://x.com/alephium">X</SimpleLink>
                 </li>
               </ul>
             </Accordion>
@@ -349,7 +358,7 @@ const CustomPage = (props: PageProps) => (
         <SubpageSection>
           <TextElement isCentered>
             <h2>Still have questions?</h2>
-            <p>Join our community for in-depth information</p>
+            <p>Join our community for in-depth information.</p>
             <Button url="/discord">Join Discord</Button>
             <Button url="https://t.me/alephiumgroup">Join Telegram</Button>
           </TextElement>
