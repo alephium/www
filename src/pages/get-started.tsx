@@ -1,7 +1,7 @@
 import { graphql, PageProps, useStaticQuery } from 'gatsby'
-import styled from 'styled-components'
 
 import Button from '../components/Button'
+import CardImage from '../components/customPageComponents/CardImage'
 import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
 import Placeholder from '../components/customPageComponents/Placeholder'
@@ -141,7 +141,7 @@ const CustomPage = (props: PageProps) => {
                     exchange.title &&
                     exchange.url && (
                       <TextCard key={exchange.title} url={exchange.url}>
-                        <ExchangeLogo src={exchange.logo?.publicURL ?? ''} alt={exchange.title} />
+                        <CardImage src={exchange.logo?.publicURL ?? ''} alt={exchange.title} rounded />
                         <h3>{exchange.title}</h3>
                         <p>{exchange.description}</p>
                       </TextCard>
@@ -184,12 +184,12 @@ const CustomPage = (props: PageProps) => {
             <SubheaderContent>
               <Grid columns={2}>
                 <TextCard url="https://docs.alephium.org/">
-                  <Placeholder width="100px" height="100px " />
+                  <CardImage src="https://place-hold.it/100" rounded />
                   <h3>Documentation</h3>
                   <p>Documentation to get you going quick and easy.</p>
                 </TextCard>
                 <TextCard url="/grants">
-                  <Placeholder width="100px" height="100px " />
+                  <CardImage src="https://place-hold.it/100" rounded />
                   <h3>Grants</h3>
                   <p>You have an idea, but no funding? We can help.</p>
                 </TextCard>
@@ -262,12 +262,4 @@ const exchangesQuery = graphql`
       }
     }
   }
-`
-
-const ExchangeLogo = styled.img`
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
-  border-radius: 20px;
-  margin-bottom: 20px;
 `

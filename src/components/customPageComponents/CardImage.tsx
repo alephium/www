@@ -1,9 +1,14 @@
 import styled from 'styled-components'
 
-const CardImage = styled.img`
+interface CardImageProps {
+  rounded?: boolean
+}
+
+const CardImage = styled.img<CardImageProps>`
   width: 82px;
   height: 82px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-radius: ${({ rounded }) => (rounded ? '20px' : '0')};
 `
 
 export default CardImage
