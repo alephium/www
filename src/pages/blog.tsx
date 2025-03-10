@@ -42,10 +42,7 @@ export default CustomPage
 
 export const query = graphql`
   query BlogPosts {
-    allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "blog" } }, frontmatter: { hide: { ne: true } } }
-      sort: { frontmatter: { date: DESC } }
-    ) {
+    allMarkdownRemark(filter: { fields: { contentType: { eq: "blog" } } }, sort: { frontmatter: { date: DESC } }) {
       totalCount
       nodes {
         excerpt
