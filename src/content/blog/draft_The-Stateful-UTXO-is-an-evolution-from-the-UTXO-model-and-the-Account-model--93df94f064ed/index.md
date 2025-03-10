@@ -4,10 +4,6 @@ date: ''
 description: 'Stateful UTXO Definition'
 ---
 
-Stateful UTXO Definition
-
----
-
 ###
 
 The Stateful UTXO is an evolution from the UTXO model and the Account model. It is a unique technology from the Alephium blockchain that takes the best characteristics of both models. In this interview-style article, we will explain in detail why it is essential and which problems it helps to solve.

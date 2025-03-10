@@ -4,10 +4,6 @@ date: '2022-12-22'
 description: 'The coming Leman upgrade approaches. Simultaneously, the front-end suite of tools is seeing more than a simple refresh.'
 ---
 
-The coming Leman upgrade approaches. Simultaneously, the front-end suite of tools is seeing more than a simple refresh.
-
----
-
 ### **The Front End Leman Upgrade**
 
 #### _The coming_ <a href="https://medium.com/@alephium/announcing-the-leman-network-upgrade-c01a81e65f0e" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/announcing-the-leman-network-upgrade-c01a81e65f0e" target="_blank"><em>Leman upgrade approaches.</em></a> _Simultaneously, the front-end suite of tools is seeing more than a simple refresh._

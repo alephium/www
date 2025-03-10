@@ -4,10 +4,6 @@ date: '2024-04-20'
 description: 'Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real…'
 ---
 
-Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real…
-
----
-
 ### Builders Highlight \#11: Fugashu
 
 <figure id="ac6d" class="graf graf--figure graf-after--h3">

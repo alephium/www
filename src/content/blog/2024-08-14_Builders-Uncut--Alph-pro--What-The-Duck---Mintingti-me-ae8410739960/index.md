@@ -4,10 +4,6 @@ date: '2024-08-14'
 description: 'This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering…'
 ---
 
-This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering…
-
----
-
 ### Builders Uncut —Alph.pro, What The Duck & Mintingti.me
 
 <figure id="6559" class="graf graf--figure graf-after--h3">

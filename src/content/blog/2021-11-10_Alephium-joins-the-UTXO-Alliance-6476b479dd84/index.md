@@ -4,10 +4,6 @@ date: '2021-11-10'
 description: 'We live in an age of constant change and technological progress. The Blockchain industry is a great illustration of that. Blockchain is…'
 ---
 
-We live in an age of constant change and technological progress. The Blockchain industry is a great illustration of that. Blockchain is…
-
----
-
 ### Alephium joins the UTXO Alliance
 
 <figure id="aa53" class="graf graf--figure graf-after--h3">

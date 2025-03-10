@@ -4,10 +4,6 @@ date: '2023-03-30'
 description: 'New features & tools to support a thriving Alephium Ecosystem'
 ---
 
-New features & tools to support a thriving Alephium Ecosystem
-
----
-
 ### The Leman Network Upgrade is Live!
 
 #### New features & tools to support a thriving Alephium Ecosystem

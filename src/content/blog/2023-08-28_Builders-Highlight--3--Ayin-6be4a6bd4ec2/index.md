@@ -4,10 +4,6 @@ date: '2023-08-28'
 description: 'Our ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience…'
 ---
 
-Our ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience…
-
----
-
 ### Builders Highlight \#3: Ayin
 
 <figure id="0cdb" class="graf graf--figure graf-after--h3">

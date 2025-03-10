@@ -4,10 +4,6 @@ date: '2023-06-13'
 description: 'This article will explore Alephium’s Asset Permission System (APS) and discuss its security enhancements over the Ethereum Virtual Machine…'
 ---
 
-This article will explore Alephium’s Asset Permission System (APS) and discuss its security enhancements over the Ethereum Virtual Machine…
-
----
-
 ### Alephium’s APS: Eliminating EVM Token Approval Risks
 
 This article will explore Alephium’s Asset Permission System (APS) and discuss its security enhancements over the Ethereum Virtual Machine (EVM) token approval/allowance mechanism. APS is a flexible and secure solution for managing assets on the Alephium blockchain, providing developers with the tools they need to build robust and safe decentralized applications.

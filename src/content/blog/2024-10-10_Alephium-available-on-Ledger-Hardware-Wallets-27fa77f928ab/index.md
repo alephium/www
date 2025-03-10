@@ -4,10 +4,6 @@ date: '2024-10-10'
 description: 'Alephium x Ledger—Alephium is thrilled to announce its integration with Ledger hardware wallets, which will give users enhanced security…'
 ---
 
-Alephium x Ledger—Alephium is thrilled to announce its integration with Ledger hardware wallets, which will give users enhanced security…
-
----
-
 ### **Alephium available on Ledger Hardware Wallets**
 
 <figure id="49d2" class="graf graf--figure graf-after--h3">

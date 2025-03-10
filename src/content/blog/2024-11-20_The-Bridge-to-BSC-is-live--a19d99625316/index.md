@@ -4,10 +4,6 @@ date: '2024-11-20'
 description: 'Tl;dr — New bridge ALPH <> BSC / The Faucet / I’m new, coming from BSC/BNB — What do I do in $ALPH’s ecosystem? / Contracts & tokens / FAQ'
 ---
 
-Tl;dr — New bridge ALPH \<\> BSC / The Faucet / I’m new, coming from BSC/BNB — What do I do in \$ALPH’s ecosystem? / Contracts & tokens / FAQ
-
----
-
 ### The Bridge to BSC is live!
 
 <figure id="f7d5" class="graf graf--figure graf-after--h3">

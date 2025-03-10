@@ -4,10 +4,6 @@ date: '2023-11-28'
 description: 'Welcome to the second part of this dev workshop session! Please make sure you go through the first part (here) as part 2 starts where Part…'
 ---
 
-Welcome to the second part of this dev workshop session! Please make sure you go through the first part (here) as part 2 starts where Part…
-
----
-
 ### Second Developer Workshop: Re-implementing Friend.Tech’s Smart Contract in Ralph — Part 2
 
 <figure id="ceec" class="graf graf--figure graf-after--h3">

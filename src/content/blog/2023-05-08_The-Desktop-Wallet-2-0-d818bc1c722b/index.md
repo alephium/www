@@ -4,10 +4,6 @@ date: '2023-05-08'
 description: 'It’s a big one! Token support, dApp connectivity, and a lot more in this feature-rich release!'
 ---
 
-It’s a big one! Token support, dApp connectivity, and a lot more in this feature-rich release!
-
----
-
 ### The Desktop Wallet 2.0
 
 #### It’s a big one! Token support, dApp connectivity, and a lot more in this feature-rich release!

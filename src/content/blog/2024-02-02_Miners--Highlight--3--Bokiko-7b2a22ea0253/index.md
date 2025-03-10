@@ -4,10 +4,6 @@ date: '2024-02-02'
 description: 'The Alephium blockchain, like many decentralized networks, relies heavily on the contributions of miners to maintain its integrity and…'
 ---
 
-The Alephium blockchain, like many decentralized networks, relies heavily on the contributions of miners to maintain its integrity and…
-
----
-
 ### Miners’ Highlight \#3**: Bokiko**
 
 <figure id="e5da" class="graf graf--figure graf-after--h3">

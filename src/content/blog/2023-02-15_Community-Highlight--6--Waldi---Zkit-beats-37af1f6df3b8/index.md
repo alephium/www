@@ -4,10 +4,6 @@ date: '2023-02-15'
 description: 'Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community…'
 ---
 
-Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community…
-
----
-
 ### Community Highlight \#6, Waldi — Zkit/beats
 
 #### Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’ contributions to the ecosystem, what drives them, and what they are passionate about! More episodes: <a href="https://medium.com/@alephium/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" target="_blank">#1 here</a>, <a href="https://medium.com/@alephium/community-highlight-cgi-bin-c102cc106f19" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-cgi-bin-c102cc106f19" target="_blank">#2 here</a>, <a href="https://medium.com/@alephium/community-highlight-3-digdug-48a7ec868504" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-3-digdug-48a7ec868504" target="_blank">#3 here</a>, <a href="https://medium.com/@alephium/community-highlight-4-montail-e24fd88882a0" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-4-montail-e24fd88882a0" target="_blank">#4 here</a>, and <a href="https://medium.com/@alephium/community-highlight-5-txn-71c4fd76ffe8" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-5-txn-71c4fd76ffe8" target="_blank">#5 here.</a>

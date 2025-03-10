@@ -4,10 +4,6 @@ date: '2023-02-22'
 description: 'A Technical Promenade, part 4'
 ---
 
-A Technical Promenade, part 4
-
----
-
 ### Sharding
 
 #### A Technical Promenade, part 4

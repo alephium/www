@@ -4,10 +4,6 @@ date: '2024-01-19'
 description: 'Applications are open, apply now!'
 ---
 
-Applications are open, apply now!
-
----
-
 ### Alephium \#1 Hackathon — Pioneers!
 
 #### Applications are open, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDsa1CwJeg-fxrWb1gVWefP4iJoNoZwNe0PNwk94GqmcMkHg/viewform?usp=sharing" class="markup--anchor markup--h4-anchor" data-href="https://docs.google.com/forms/d/e/1FAIpQLSdDsa1CwJeg-fxrWb1gVWefP4iJoNoZwNe0PNwk94GqmcMkHg/viewform?usp=sharing" rel="noopener" target="_blank">apply now</a>!

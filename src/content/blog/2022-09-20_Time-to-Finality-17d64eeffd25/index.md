@@ -4,10 +4,6 @@ date: '2022-09-20'
 description: 'A Technical Promenade, part 3'
 ---
 
-A Technical Promenade, part 3
-
----
-
 ### Time to Finality
 
 #### A Technical Promenade, part 3

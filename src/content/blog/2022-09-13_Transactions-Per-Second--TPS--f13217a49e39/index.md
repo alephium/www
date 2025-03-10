@@ -4,10 +4,6 @@ date: '2022-09-13'
 description: 'A Technical Promenade, part 2'
 ---
 
-A Technical Promenade, part 2
-
----
-
 ### Transactions Per Second (TPS)
 
 A Technical Promenade, part 2

@@ -4,10 +4,6 @@ date: '2024-09-06'
 description: 'This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering…'
 ---
 
-This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering…
-
----
-
 ### Builders Uncut — Sezame Wallet
 
 <figure id="65f5" class="graf graf--figure graf-after--h3">

@@ -4,10 +4,6 @@ date: '2024-06-12'
 description: 'After over one year of building and testing new features, Alephium is excited to announce that the Rhône Network Upgrade was successfully…'
 ---
 
-After over one year of building and testing new features, Alephium is excited to announce that the Rhône Network Upgrade was successfully…
-
----
-
 ### **Rhône Network Upgrade Activated!**
 
 _After over one year of building and testing new features, Alephium is excited to announce that the Rhône Network Upgrade was successfully activated at 10:00 AM GMT on June 12th, 2024. Introducing significant improvements in user and developer experience, the Rhône upgrade will facilitate the growth of the ecosystem being built with energy on top of Alephium._

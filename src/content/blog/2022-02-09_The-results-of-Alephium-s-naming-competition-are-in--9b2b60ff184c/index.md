@@ -4,10 +4,6 @@ date: '2022-02-09'
 description: 'The team has spoken & the favorite name suggestions are 🥁'
 ---
 
-The team has spoken & the favorite name suggestions are 🥁
-
----
-
 ### The results of Alephium’s naming competition are in!
 
 #### The team has spoken & the favorite name suggestions are 🥁

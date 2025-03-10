@@ -4,10 +4,6 @@ date: '2023-09-01'
 description: 'The Alephium Toolkit: A Guide to Creating a Multisig Wallet'
 ---
 
-The Alephium Toolkit: A Guide to Creating a Multisig Wallet
-
----
-
 ### **Alephium Multisig GUI is here!**
 
 #### The Alephium Toolkit: A Guide to Creating a Multisig Wallet

@@ -4,10 +4,6 @@ date: '2023-12-19'
 description: 'The Zealy sprint has come to an end on Dec 17h at 3PM CET, marking the end of a fun and instructive period about the Alephium Bridge and…'
 ---
 
-The Zealy sprint has come to an end on Dec 17h at 3PM CET, marking the end of a fun and instructive period about the Alephium Bridge and…
-
----
-
 ### First Zealy Sprint Ends
 
 _The Zealy sprint has come to an end on Dec 17h at 3PM CET, marking the end of a fun and instructive period about the Alephium Bridge and the broader ecosystem!_

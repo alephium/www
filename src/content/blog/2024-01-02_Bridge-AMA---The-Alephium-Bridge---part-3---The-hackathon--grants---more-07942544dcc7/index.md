@@ -4,10 +4,6 @@ date: '2024-01-02'
 description: 'One month after the release of the bridge on mainnet, Cheng, Hongchao & Maud were interviewed by Vladimir in a Twitter space AMA. You can…'
 ---
 
-One month after the release of the bridge on mainnet, Cheng, Hongchao & Maud were interviewed by Vladimir in a Twitter space AMA. You can…
-
----
-
 ### Bridge AMA — The Alephium Bridge — part 3 — The hackathon, grants & more
 
 <figure id="d498" class="graf graf--figure graf-after--h3">

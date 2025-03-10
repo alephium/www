@@ -4,10 +4,6 @@ date: '2023-01-31'
 description: 'The Leman Upgrade is a significant update in the main components of the Alephium blockchain. It’s been in the works since the mainnet…'
 ---
 
-The Leman Upgrade is a significant update in the main components of the Alephium blockchain. It’s been in the works since the mainnet…
-
----
-
 ### The Leman Network Upgrade AMA: Most relevant topics and questions
 
 <figure id="e526" class="graf graf--figure graf-after--h3">

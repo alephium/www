@@ -4,10 +4,6 @@ date: '2022-11-23'
 description: 'Alephium’s partnership with Flux Official to support Alephium’s full node running on a web3 cloud infrastructure is another step towards…'
 ---
 
-Alephium’s partnership with Flux Official to support Alephium’s full node running on a web3 cloud infrastructure is another step towards…
-
----
-
 ### Host your Alephium Node via the Flux Marketplace
 
 <figure id="d155" class="graf graf--figure graf-after--h3">

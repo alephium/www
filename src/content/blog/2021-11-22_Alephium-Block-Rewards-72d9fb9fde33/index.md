@@ -4,10 +4,6 @@ date: '2021-11-22'
 description: 'An in-depth analysis of the Block rewards, explaining the time-based and hashrate-based components of the reward emission rates.'
 ---
 
-An in-depth analysis of the Block rewards, explaining the time-based and hashrate-based components of the reward emission rates.
-
----
-
 ### Alephium Block Rewards
 
 #### An in-depth analysis of the Block rewards, explaining the time-based and hashrate-based components of the reward emission rates.

@@ -4,10 +4,6 @@ date: '2024-08-28'
 description: 'This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering…'
 ---
 
-This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering…
-
----
-
 ### Builders Uncut — GoldCastleClub & Swapa
 
 <figure id="8f46" class="graf graf--figure graf-after--h3">

@@ -4,10 +4,6 @@ date: '2023-09-04'
 description: 'As the community expands, and more non-tech people join us, we need different tools, and different ways of showing, exploring and…'
 ---
 
-As the community expands, and more non-tech people join us, we need different tools, and different ways of showing, exploring and…
-
----
-
 ### Zealy Quests are coming!
 
 <figure id="e7da" class="graf graf--figure graf-after--h3">

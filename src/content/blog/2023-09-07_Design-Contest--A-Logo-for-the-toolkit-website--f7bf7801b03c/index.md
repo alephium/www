@@ -4,10 +4,6 @@ date: '2023-09-07'
 description: 'Propose a design for the Alephium Toolkit website and win 1500 $ALPH!'
 ---
 
-Propose a design for the Alephium Toolkit website and win 1500 \$ALPH!
-
----
-
 ### **Design Contest: A Logo for the toolkit website!**
 
 <figure id="ee0f" class="graf graf--figure graf-after--h3">

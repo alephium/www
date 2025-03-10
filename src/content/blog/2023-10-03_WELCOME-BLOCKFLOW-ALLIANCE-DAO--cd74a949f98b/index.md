@@ -4,10 +4,6 @@ date: '2023-10-03'
 description: 'Daily, we strive to enhance our decentralized infrastructure, inspired by Satoshi Nakamoto’s vision for a permissionless future. We offer…'
 ---
 
-Daily, we strive to enhance our decentralized infrastructure, inspired by Satoshi Nakamoto’s vision for a permissionless future. We offer…
-
----
-
 ### **WELCOME BLOCKFLOW ALLIANCE DAO!**
 
 <figure id="e799" class="graf graf--figure graf-after--h3">

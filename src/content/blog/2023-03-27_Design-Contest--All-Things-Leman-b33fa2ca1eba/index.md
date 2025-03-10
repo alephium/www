@@ -4,10 +4,6 @@ date: '2023-03-27'
 description: 'The best design will be featured in Alephium’s SWALPH shop!'
 ---
 
-The best design will be featured in Alephium’s SWALPH shop!
-
----
-
 ### Design Contest: All Things Leman
 
 #### The best design will be featured in Alephium’s SWALPH shop!

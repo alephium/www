@@ -4,10 +4,6 @@ date: '2023-11-20'
 description: 'Note: This article was edited on Nov 20th, 2024 — Adding information regarding Binance Smart Chain contracts'
 ---
 
-Note: This article was edited on Nov 20th, 2024 — Adding information regarding Binance Smart Chain contracts
-
----
-
 ### **Verification of bridge contracts, tokens & token lists**
 
 <figure id="a1e3" class="graf graf--figure graf-after--h3">

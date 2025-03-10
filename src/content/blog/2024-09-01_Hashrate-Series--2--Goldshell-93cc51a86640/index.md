@@ -4,10 +4,6 @@ date: '2024-09-01'
 description: 'The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem…'
 ---
 
-The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem…
-
----
-
 ### Hashrate Series \#2: Goldshell
 
 _The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem actors to sustain and improve Alephium’s reliability. This series is about them, and after Nicehash, please welcome Goldshell._

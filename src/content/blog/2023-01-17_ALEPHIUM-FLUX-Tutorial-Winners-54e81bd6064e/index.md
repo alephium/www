@@ -4,10 +4,6 @@ date: '2023-01-17'
 description: 'On December 1st in 2022, the community was encouraged to enter a contest to produce the best tutorial about how to run an Alephium full…'
 ---
 
-On December 1st in 2022, the community was encouraged to enter a contest to produce the best tutorial about how to run an Alephium full…
-
----
-
 ### ALEPHIUM/FLUX Tutorial Winners
 
 #### On December 1st in 2022, the community was encouraged to <a href="https://medium.com/@alephium/alephium-flux-tutorial-contest-81054caf926" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/alephium-flux-tutorial-contest-81054caf926" target="_blank">enter a contest</a> to produce the best tutorial about how to run an <a href="https://github.com/alephium/alephium/" class="markup--anchor markup--h4-anchor" data-href="https://github.com/alephium/alephium/" rel="noopener" target="_blank">Alephium full node</a> on <a href="https://runonflux.io/" class="markup--anchor markup--h4-anchor" data-href="https://runonflux.io/" rel="noopener" target="_blank">FLUX</a>. The results came in and we are pleased with them.

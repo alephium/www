@@ -4,10 +4,6 @@ date: '2022-03-21'
 description: 'Presenting the humans developing the Back-end.'
 ---
 
-Presenting the humans developing the Back-end.
-
----
-
 ### Core team interview series. Episode 3
 
 #### Presenting the humans developing the Back-end.

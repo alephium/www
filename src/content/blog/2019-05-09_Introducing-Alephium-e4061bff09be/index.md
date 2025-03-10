@@ -4,10 +4,6 @@ date: '2019-05-09'
 description: 'We are building the first scalable blockchain platform that supports cross-shard transactions natively'
 ---
 
-We are building the first scalable blockchain platform that supports cross-shard transactions natively
-
----
-
 ### **Introducing Alephium**
 
 Dear Community,

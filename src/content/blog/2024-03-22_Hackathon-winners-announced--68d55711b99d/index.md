@@ -4,10 +4,6 @@ date: '2024-03-22'
 description: 'The first Alephium Hackathon “Pioneers”, took place online between the 12th & 26th of February. After carefully reviewing all final…'
 ---
 
-The first Alephium Hackathon “Pioneers”, took place online between the 12th & 26th of February. After carefully reviewing all final…
-
----
-
 ### **Hackathon winners announced!**
 
 _The first Alephium Hackathon “Pioneers”, took place online between the 12th & 26th of February. After carefully reviewing all final submissions, the jury & partners (Bitmain, Blockflow Alliance DAO, Cetacean Capital &_ <a href="https://link.dappnode.io/dappnode" class="markup--anchor markup--p-anchor" data-href="https://link.dappnode.io/dappnode" rel="noopener" target="_blank"><em>Dappnode</em></a>_) are ready to announce the winners._

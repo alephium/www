@@ -4,10 +4,6 @@ date: '2024-10-06'
 description: 'The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem…'
 ---
 
-The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem…
-
----
-
 ### Hashrate Series \#4: ICERIVER
 
 _The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem actors to sustain and improve Alephium’s reliability. This series is about them, and after_ <a href="https://medium.com/@alephium/hashrate-series-1-nicehash-ee0936adf899" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/hashrate-series-1-nicehash-ee0936adf899" target="_blank"><em>Nicehash</em></a>, <a href="https://medium.com/@alephium/hashrate-series-2-goldshell-93cc51a86640" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/hashrate-series-2-goldshell-93cc51a86640" target="_blank"><em>Goldshell</em></a>_, and_ <a href="https://medium.com/@alephium/hashrate-series-3-cryptohall-24-7ad1533701f4" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/hashrate-series-3-cryptohall-24-7ad1533701f4" target="_blank"><em>CryptoHall 24</em></a>_, please welcome ICERIVER._

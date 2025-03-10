@@ -4,10 +4,6 @@ date: '2022-12-21'
 description: 'TL;DR'
 ---
 
-TL;DR
-
----
-
 ### DiffBomb Day Postmortem
 
 **TL;DR**

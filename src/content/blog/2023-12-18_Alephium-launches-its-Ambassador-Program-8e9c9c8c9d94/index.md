@@ -4,10 +4,6 @@ date: '2023-12-18'
 description: 'Following the success of our previous community initiatives, we’re thrilled to introduce the next chapter in Alephium’s community…'
 ---
 
-Following the success of our previous community initiatives, we’re thrilled to introduce the next chapter in Alephium’s community…
-
----
-
 ### **Alephium launches its Ambassador Program**
 
 <figure id="e33e" class="graf graf--figure graf-after--h3">

@@ -4,10 +4,6 @@ date: '2022-04-21'
 description: 'Back in March 2022, we launched a community video contest and the results are in!'
 ---
 
-Back in March 2022, we launched a community video contest and the results are in!
-
----
-
 ### And the winners of the video creation contest are…
 
 #### Back in March 2022, we launched a community video contest and the results are in!

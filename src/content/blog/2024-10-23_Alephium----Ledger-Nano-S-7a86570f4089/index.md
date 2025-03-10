@@ -4,10 +4,6 @@ date: '2024-10-23'
 description: 'How to install the Alephium App in your Ledger Nano S'
 ---
 
-How to install the Alephium App in your Ledger Nano S
-
----
-
 ### Alephium 🤝 Ledger Nano S
 
 #### How to install the Alephium App in your Ledger Nano S

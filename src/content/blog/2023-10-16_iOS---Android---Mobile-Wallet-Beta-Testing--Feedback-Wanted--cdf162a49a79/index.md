@@ -4,10 +4,6 @@ date: '2023-10-16'
 description: 'Alephium is very happy to announce that the mobile wallet for iOS and Android are ready for beta testing, and calls for user feedback!'
 ---
 
-Alephium is very happy to announce that the mobile wallet for iOS and Android are ready for beta testing, and calls for user feedback!
-
----
-
 ### **iOS + Android — Mobile Wallet Beta Testing, Feedback Wanted!**
 
 <figure id="5e37" class="graf graf--figure graf-after--h3">

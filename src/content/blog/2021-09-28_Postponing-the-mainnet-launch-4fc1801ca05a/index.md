@@ -4,10 +4,6 @@ date: '2021-09-28'
 description: 'Launching a mainnet is no small task for a small team; in addition to the many technical challenges it poses, there are …'
 ---
 
-Launching a mainnet is no small task for a small team; in addition to the many technical challenges it poses, there are …
-
----
-
 ### Postponing the mainnet launch
 
 <figure id="b1a3" class="graf graf--figure graf-after--h3">

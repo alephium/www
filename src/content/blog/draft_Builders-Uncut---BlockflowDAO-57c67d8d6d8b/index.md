@@ -4,10 +4,6 @@ date: ''
 description: 'This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering…'
 ---
 
-This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering…
-
----
-
 ### Builders Uncut — BlockflowDAO
 
 <figure id="8e38" class="graf graf--figure graf-after--h3">

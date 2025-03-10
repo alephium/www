@@ -4,10 +4,6 @@ date: '2021-10-14'
 description: 'The Decentralization bottleneck'
 ---
 
-The Decentralization bottleneck
-
----
-
 ### Running a blockchain node on Raspberry Pi
 
 <figure id="ddbc" class="graf graf--figure graf-after--h3">

@@ -4,10 +4,6 @@ date: ''
 description: 'Enabling bridging for new assets from and to BNB Smart Chain testnet'
 ---
 
-Enabling bridging for new assets from and to BNB Smart Chain testnet
-
----
-
 ### Token Registration on the Alephium Bridge
 
 #### Enabling bridging for new assets from and to BNB Smart Chain testnet

@@ -4,10 +4,6 @@ date: '2023-03-21'
 description: 'Proof-of-Concept to showcase dApps building on Alephium'
 ---
 
-Proof-of-Concept to showcase dApps building on Alephium
-
----
-
 ### DEX Prototype Live on Testnet
 
 #### Proof-of-Concept to showcase dApps building on Alephium

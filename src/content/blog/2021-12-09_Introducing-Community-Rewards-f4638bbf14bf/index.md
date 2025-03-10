@@ -4,10 +4,6 @@ date: '2021-12-09'
 description: 'It’s been a month since the Alephium mainnet launch and many positive things have been accomplished thanks to the amazing community …'
 ---
 
-It’s been a month since the Alephium mainnet launch and many positive things have been accomplished thanks to the amazing community …
-
----
-
 ### Introducing Community Rewards
 
 #### It’s been a month since the Alephium mainnet launch and many positive things have been accomplished thanks to the amazing community that has gathered around the project. People from all over the world, exchanging tips, tricks and ideas, building and improving upon Alephium.

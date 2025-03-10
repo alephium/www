@@ -4,10 +4,6 @@ date: '2021-11-09'
 description: 'Lausanne, Switzerland — November 9 th, 2021 Alephium, the first operational sharded blockchain bringing scalability, ETH-inspired smart…'
 ---
 
-Lausanne, Switzerland — November 9 th, 2021 Alephium, the first operational sharded blockchain bringing scalability, ETH-inspired smart…
-
----
-
 ### Alephium Mainnet Brings Sharding, Smart Contracts, and Energy Efficiency to Bitcoin Tech Stack
 
 #### **Lausanne, Switzerland — November 9 th, 2021**

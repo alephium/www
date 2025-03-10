@@ -4,10 +4,6 @@ date: '2024-03-11'
 description: 'After two weeks of intense coding, debugging, building & good vibes, teams or individuals have submitted their projects. While the jury is…'
 ---
 
-After two weeks of intense coding, debugging, building & good vibes, teams or individuals have submitted their projects. While the jury is…
-
----
-
 ### Hackathon \#1- Pioneers — Submissions
 
 <figure id="9e2b" class="graf graf--figure graf-after--h3">

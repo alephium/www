@@ -4,10 +4,6 @@ date: '2021-11-05'
 description: 'On November 3rd, 2021 the Alephium team answered all the questions sourced from the community. A warm thank you to everyone for asking so…'
 ---
 
-On November 3rd, 2021 the Alephium team answered all the questions sourced from the community. A warm thank you to everyone for asking so…
-
----
-
 ### Alephium’s first live AMA
 
 <figure id="d103" class="graf graf--figure graf-after--h3">

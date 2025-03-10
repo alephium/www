@@ -4,10 +4,6 @@ date: '2023-06-20'
 description: 'This article follows Alephium’s Tech Talk #10, where Alexis Roussel from NYM delves into the fascinating realm of mix networks and their…'
 ---
 
-This article follows Alephium’s Tech Talk \#10, where Alexis Roussel from NYM delves into the fascinating realm of mix networks and their…
-
----
-
 ### _Tech Talk \#10 — NYM, Alexis Roussel &_ the Future of Privacy
 
 _This article follows_ <a href="https://www.youtube.com/watch?v=pImANSvO6WQ" class="markup--anchor markup--p-anchor" data-href="https://www.youtube.com/watch?v=pImANSvO6WQ" rel="noopener" target="_blank"><em>Alephium’s Tech Talk #10</em></a>_, where Alexis Roussel from_ <a href="https://nymtech.net/" class="markup--anchor markup--p-anchor" data-href="https://nymtech.net/" rel="noopener" target="_blank"><em>NYM</em></a> _delves into the fascinating realm of_ <a href="https://en.wikipedia.org/wiki/Mix_network" class="markup--anchor markup--p-anchor" data-href="https://en.wikipedia.org/wiki/Mix_network" rel="noopener" target="_blank"><em>mix networks</em></a> _and their crucial role in enhancing privacy, specifically in the context of cryptocurrency transactions. You’ll find first a little recap of what mix networks are, why they are useful and how NYM is bringing privacy to the masses, and then an edited version of the Q&A Alexis Roussel had with the community._

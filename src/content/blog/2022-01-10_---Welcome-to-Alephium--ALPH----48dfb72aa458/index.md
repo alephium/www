@@ -4,10 +4,6 @@ date: '2022-01-10'
 description: 'Here’s all the information you need to get started with Alephium ! And if that’s not enough, come talk to us on Discord, Telegram or…'
 ---
 
-Here’s all the information you need to get started with Alephium ! And if that’s not enough, come talk to us on Discord, Telegram or…
-
----
-
 ### 🚀 **Welcome to Alephium (ALPH)**
 
 #### Here’s all the information you need to get started with Alephium ! And if that’s not enough, come talk to us on <a href="https://discord.gg/JErgRBfRSB" class="markup--anchor markup--h4-anchor" data-href="https://discord.gg/JErgRBfRSB" rel="noopener" target="_blank">Discord</a>, <a href="https://t.me/alephiumgroup" class="markup--anchor markup--h4-anchor" data-href="https://t.me/alephiumgroup" rel="noopener" target="_blank">Telegram</a> or <a href="https://www.reddit.com/r/Alephium/" class="markup--anchor markup--h4-anchor" data-href="https://www.reddit.com/r/Alephium/" rel="noopener" target="_blank">Reddit</a> !

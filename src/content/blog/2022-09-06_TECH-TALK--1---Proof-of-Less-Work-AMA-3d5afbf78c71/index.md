@@ -4,10 +4,6 @@ date: '2022-09-06'
 description: 'On Thursday, August 25th, 2022, Alephium’s team conducted an AMA on our Discord as a follow-up discussion with Cheng Wang, inventor of…'
 ---
 
-On Thursday, August 25th, 2022, Alephium’s team conducted an AMA on our Discord as a follow-up discussion with Cheng Wang, inventor of…
-
----
-
 ### **TECH TALK \#1 — Proof-of-Less-Work AMA**
 
 #### On Thursday, August 25th, 2022, Alephium’s team conducted an <a href="https://www.youtube.com/watch?v=Oi4AsqVY0YA" class="markup--anchor markup--h4-anchor" data-href="https://www.youtube.com/watch?v=Oi4AsqVY0YA" rel="noopener" target="_blank">AMA on our Discord</a> as a <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" target="_blank">follow-up</a> discussion with Cheng Wang, inventor of PoLW and founder of Alephium.

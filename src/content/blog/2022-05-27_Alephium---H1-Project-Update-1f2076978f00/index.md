@@ -4,10 +4,6 @@ date: '2022-05-27'
 description: 'The first half of 2022 was a vigorous but exciting, fun and rewarding period for Alephium in terms of milestones and growth. Read about…'
 ---
 
-The first half of 2022 was a vigorous but exciting, fun and rewarding period for Alephium in terms of milestones and growth. Read about…
-
----
-
 ### **Alephium — H1 Project Update**
 
 #### The first half of 2022 was a vigorous but exciting, fun and rewarding period for Alephium in terms of milestones and growth. Here’s a look back at some of the highlights, what they meant for us, for the community and what we learned.

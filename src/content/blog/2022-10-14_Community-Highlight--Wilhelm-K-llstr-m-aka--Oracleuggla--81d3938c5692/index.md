@@ -4,10 +4,6 @@ date: '2022-10-14'
 description: 'Alephium takes an organic approach to community building. We believe actions speak louder than words…'
 ---
 
-Alephium takes an organic approach to community building. We believe actions speak louder than words…
-
----
-
 ### Community Highlight \#1, Wilhelm Källström aka “Oracleuggla”
 
 #### Alephium takes an organic approach to community building. We believe actions speak louder than words and that we rally people together around the quality of those actions. We’ve been incredibly fortunate to attract a diverse, and self-driven community. More episodes: <a href="https://medium.com/@alephium/community-highlight-cgi-bin-c102cc106f19" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-cgi-bin-c102cc106f19" target="_blank">#2 here</a>, <a href="https://medium.com/@alephium/community-highlight-3-digdug-48a7ec868504" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-3-digdug-48a7ec868504" target="_blank">#3here</a>, <a href="https://medium.com/@alephium/community-highlight-4-montail-e24fd88882a0" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-4-montail-e24fd88882a0" target="_blank">#4 here,</a> <a href="https://medium.com/@alephium/community-highlight-5-txn-71c4fd76ffe8" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-5-txn-71c4fd76ffe8" target="_blank">#5 here</a> and <a href="https://medium.com/@alephium/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" target="_blank">#6 here</a>.

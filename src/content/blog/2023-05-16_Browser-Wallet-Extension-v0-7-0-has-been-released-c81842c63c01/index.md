@@ -4,10 +4,6 @@ date: '2023-05-16'
 description: 'Featuring: Ledger Integration'
 ---
 
-Featuring: Ledger Integration
-
----
-
 ### Browser Wallet Extension v0.7.0 has been released
 
 Featuring: Ledger Integration

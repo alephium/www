@@ -4,10 +4,6 @@ date: '2023-01-13'
 description: 'A year ago, Alephium created the community rewards and the grants programs to encourage the involvement of the community in all aspects of…'
 ---
 
-A year ago, Alephium created the community rewards and the grants programs to encourage the involvement of the community in all aspects of…
-
----
-
 ### **One year of community contributions**
 
 _A_ <a href="https://medium.com/@alephium/introducing-community-rewards-f4638bbf14bf" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/introducing-community-rewards-f4638bbf14bf" target="_blank"><em>year ago</em></a>_, Alephium created the_ <a href="https://github.com/alephium/community" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/community" rel="noopener" target="_blank"><em>community rewards</em></a> _and the_ <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" rel="noopener" target="_blank"><em>grants programs</em></a> _to encourage the involvement of the community in all aspects of the project. It is still ongoing, head over to_ <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" rel="noopener" target="_blank"><em>GitHub and apply</em></a>_!_

@@ -4,10 +4,6 @@ date: '2023-04-14'
 description: 'The winning design is already featured in Alephium’s SWALPH shop!'
 ---
 
-The winning design is already featured in Alephium’s SWALPH shop!
-
----
-
 ### Results of the Design Contest: All Things Leman
 
 The winning design is already featured in Alephium’s SWALPH shop!

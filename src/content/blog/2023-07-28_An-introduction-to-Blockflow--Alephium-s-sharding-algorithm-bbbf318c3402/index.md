@@ -4,10 +4,6 @@ date: '2023-07-28'
 description: 'This is the fourth of a series of technical innovations brought by Alephium. Find the previous ones here (PolW), here (sUTXO), and here…'
 ---
 
-This is the fourth of a series of technical innovations brought by Alephium. Find the previous ones here (PolW), here (sUTXO), and here…
-
----
-
 ### An introduction to Blockflow: Alephium’s sharding algorithm
 
 <figure id="c826" class="graf graf--figure graf-after--h3">

@@ -4,10 +4,6 @@ date: '2023-12-29'
 description: 'We are thrilled to see many new faces in our community! Alephium community channels have recently grown tremendously, and we thought it…'
 ---
 
-We are thrilled to see many new faces in our community! Alephium community channels have recently grown tremendously, and we thought it…
-
----
-
 ### **The Hitchhiker’s guide to Alephium’s community**
 
 <figure id="8059" class="graf graf--figure graf-after--h3">

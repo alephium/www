@@ -4,10 +4,6 @@ date: '2022-03-09'
 description: 'Read the first part of the core team interview series! In this edition we present to you the humans building the Front-end of Alephium.'
 ---
 
-Read the first part of the core team interview series! In this edition we present to you the humans building the Front-end of Alephium.
-
----
-
 ### Core team interview series. Episode 1
 
 #### Presenting the humans building the Front-end

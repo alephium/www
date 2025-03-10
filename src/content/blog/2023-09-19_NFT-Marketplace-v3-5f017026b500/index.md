@@ -4,10 +4,6 @@ date: '2023-09-19'
 description: 'We launched the NFT marketplace as a prototype to show what can be done with NFTs on Alephium. We received a lot of feedback from the…'
 ---
 
-We launched the NFT marketplace as a prototype to show what can be done with NFTs on Alephium. We received a lot of feedback from the…
-
----
-
 ### NFT Marketplace v3
 
 #### We launched the NFT marketplace as a prototype to show what can be done with NFTs on Alephium. We received a lot of feedback from the community. With the v3 we are improving the whole experience and adding a new, exciting feature: the Flow!

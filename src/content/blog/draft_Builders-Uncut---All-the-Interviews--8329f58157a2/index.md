@@ -4,10 +4,6 @@ date: ''
 description: 'Here you have the compilation of articles and videos from all interviews! Find them all here and watch them at your convenience.'
 ---
 
-Here you have the compilation of articles and videos from all interviews! Find them all here and watch them at your convenience.
-
----
-
 ### Builders Uncut — All the Interviews!
 
 _Here you have the compilation of articles and videos from all interviews! Find them all here and watch them at your convenience._

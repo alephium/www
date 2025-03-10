@@ -4,10 +4,6 @@ date: '2023-07-25'
 description: 'Alephium’s ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique…'
 ---
 
-Alephium’s ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique…
-
----
-
 ### Builders Highlights \#2: Alphpaca NFTs
 
 <figure id="07fd" class="graf graf--figure graf-after--h3">

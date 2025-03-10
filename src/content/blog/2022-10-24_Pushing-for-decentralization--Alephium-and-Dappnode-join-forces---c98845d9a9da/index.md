@@ -4,10 +4,6 @@ date: '2022-10-24'
 description: 'Neuchâtel, Switzerland & Zug, Switzerland September 22nd, 2022 — Alephium, a highly performant, secure, and energy-efficient sharded…'
 ---
 
-Neuchâtel, Switzerland & Zug, Switzerland September 22nd, 2022 — Alephium, a highly performant, secure, and energy-efficient sharded…
-
----
-
 ### **Pushing for decentralization, Alephium and Dappnode join forces to make self-hosted blockchain infrastructure accessible**
 
 <figure id="5fc2" class="graf graf--figure graf-after--h3">

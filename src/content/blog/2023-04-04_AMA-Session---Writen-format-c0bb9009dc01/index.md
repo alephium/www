@@ -4,10 +4,6 @@ date: '2023-04-04'
 description: 'All answers about the exciting new developments in Alephium’s ecosystem!'
 ---
 
-All answers about the exciting new developments in Alephium’s ecosystem!
-
----
-
 ### AMA Session — Writen format
 
 #### All answers about the exciting new developments in Alephium’s ecosystem!

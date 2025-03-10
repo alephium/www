@@ -4,10 +4,6 @@ date: '2023-09-14'
 description: 'Interviews of the humans behind Alephium.'
 ---
 
-Interviews of the humans behind Alephium.
-
----
-
 ### Alephium Core Contributors
 
 #### Interviews of the humans behind Alephium.

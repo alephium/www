@@ -4,10 +4,6 @@ date: '2023-03-14'
 description: 'Download it and try the new features on Alephium Testnet!'
 ---
 
-Download it and try the new features on Alephium Testnet!
-
----
-
 ### Alephium Launches Browser Extension Wallet
 
 #### Download it and try the new features on Alephium Testnet!

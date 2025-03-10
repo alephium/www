@@ -4,10 +4,6 @@ date: '2024-03-30'
 description: 'Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real…'
 ---
 
-Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real…
-
----
-
 ### Builders Highlight \#9: Mobula
 
 <figure id="1e5f" class="graf graf--figure graf-after--h3">

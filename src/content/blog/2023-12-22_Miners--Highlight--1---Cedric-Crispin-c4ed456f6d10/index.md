@@ -4,10 +4,6 @@ date: '2023-12-22'
 description: 'The Alephium blockchain, like many decentralized networks, relies heavily on the contributions of miners to maintain its integrity and…'
 ---
 
-The Alephium blockchain, like many decentralized networks, relies heavily on the contributions of miners to maintain its integrity and…
-
----
-
 ### Miners’ Highlight \#1 — Cedric Crispin
 
 <figure id="a30f" class="graf graf--figure graf-after--h3">

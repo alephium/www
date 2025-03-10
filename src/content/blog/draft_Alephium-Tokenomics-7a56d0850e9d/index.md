@@ -4,10 +4,6 @@ date: ''
 description: 'Updated: The tokenomics were published on Oct 5, 2021. We updated this article in February of 2024 to better address the most frequently…'
 ---
 
-Updated: The tokenomics were published on Oct 5, 2021. We updated this article in February of 2024 to better address the most frequently…
-
----
-
 ### **Alephium Tokenomics**
 
 <figure id="2cc4" class="graf graf--figure graf-after--h3">

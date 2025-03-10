@@ -4,10 +4,6 @@ date: '2024-09-03'
 description: 'Bridge assets from and to BNB Smart Chain Testnet'
 ---
 
-Bridge assets from and to BNB Smart Chain Testnet
-
----
-
 ### The BSC/Alephium Bridge is live on Testnet!
 
 #### Bridge assets from and to BNB Smart Chain Testnet

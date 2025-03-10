@@ -4,10 +4,6 @@ date: '2022-11-09'
 description: 'To celebrate the first anniversary of Alephium’s mainnet launch (8th of November 2021), Alephium’s core team was asked for their insight on…'
 ---
 
-To celebrate the first anniversary of Alephium’s mainnet launch (8th of November 2021), Alephium’s core team was asked for their insight on…
-
----
-
 ### ONE YEAR OF MAINNET
 
 <figure id="bd5c" class="graf graf--figure graf-after--h3">

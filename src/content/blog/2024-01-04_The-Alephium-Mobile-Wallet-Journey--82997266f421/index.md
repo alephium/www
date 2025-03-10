@@ -4,10 +4,6 @@ date: '2024-01-04'
 description: 'The Alephium Mobile Wallet is a great addition to the current set of wallets developed by the core contributors. It is available for…'
 ---
 
-The Alephium Mobile Wallet is a great addition to the current set of wallets developed by the core contributors. It is available for…
-
----
-
 ### The Alephium Mobile Wallet Journey!
 
 <figure id="ed59" class="graf graf--figure graf-after--h3">

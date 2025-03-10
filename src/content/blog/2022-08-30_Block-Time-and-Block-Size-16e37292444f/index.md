@@ -4,10 +4,6 @@ date: '2022-08-30'
 description: 'A Technical Promenade, part 1'
 ---
 
-A Technical Promenade, part 1
-
----
-
 ### Block Time and Block Size
 
 #### A Technical Promenade, part 1

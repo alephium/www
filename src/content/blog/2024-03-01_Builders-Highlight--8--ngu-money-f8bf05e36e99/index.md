@@ -4,10 +4,6 @@ date: '2024-03-01'
 description: 'Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real…'
 ---
 
-Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real…
-
----
-
 ### **Builders Highlight \#8: ngu.money**
 
 <figure id="62fe" class="graf graf--figure graf-after--h3">

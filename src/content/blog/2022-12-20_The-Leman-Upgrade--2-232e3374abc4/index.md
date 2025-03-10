@@ -4,10 +4,6 @@ date: '2022-12-20'
 description: 'An intermediary update on the road to the Leman Upgrade'
 ---
 
-An intermediary update on the road to the Leman Upgrade
-
----
-
 ### **The Leman Upgrade #2**
 
 _An intermediary update on the road to the Leman Upgrade_

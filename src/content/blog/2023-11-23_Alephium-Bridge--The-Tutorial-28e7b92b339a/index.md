@@ -4,10 +4,6 @@ date: '2023-11-23'
 description: 'How to bridge your tokens + what to do on the Alephium Ecosystem'
 ---
 
-How to bridge your tokens + what to do on the Alephium Ecosystem
-
----
-
 ### Alephium Bridge: The Tutorial
 
 #### How to bridge your tokens + what to do on the Alephium Ecosystem

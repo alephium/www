@@ -4,10 +4,6 @@ date: ''
 description: 'The stateful UTXO model (sUTXO) is one of the main innovations brought by the Alephium team, along with Proof-of-less-work (PoLW), the…'
 ---
 
-The stateful UTXO model (sUTXO) is one of the main innovations brought by the Alephium team, along with Proof-of-less-work (PoLW), the…
-
----
-
 ###
 
 An introduction to the stateful UTXO model

@@ -4,10 +4,6 @@ date: '2023-05-26'
 description: 'Alephium’s ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique…'
 ---
 
-Alephium’s ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique…
-
----
-
 ### Builders Highlight: Sahhar
 
 #### _Alephium’s ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience and provide real utility for the users. In the Builders Highlight series, these builders will share more about their projects and also their thoughts and insights on why building on Alephium!_

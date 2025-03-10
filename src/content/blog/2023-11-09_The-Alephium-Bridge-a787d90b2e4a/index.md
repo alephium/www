@@ -4,10 +4,6 @@ date: '2023-11-09'
 description: 'How does it work? How to use it? About the guardians, and more…'
 ---
 
-How does it work? How to use it? About the guardians, and more…
-
----
-
 ### The Alephium Bridge
 
 #### How does it work? How to use it? About the guardians, and more…

@@ -4,10 +4,6 @@ date: '2024-05-18'
 description: 'Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real…'
 ---
 
-Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real…
-
----
-
 ### Builders Highlight \#13: Phoenix Finance
 
 <figure id="6f2d" class="graf graf--figure graf-after--h3">

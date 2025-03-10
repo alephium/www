@@ -4,10 +4,6 @@ date: '2022-01-20'
 description: 'What happened — Timeline of events? At 11:58 CET on January 18th, 2022, user @Kanto explained on discord that he could not deposit funds…'
 ---
 
-What happened — Timeline of events? At 11:58 CET on January 18th, 2022, user @Kanto explained on discord that he could not deposit funds…
-
----
-
 ### Explorer Indexing Error Postmortem
 
 **What happened — Timeline of events?  

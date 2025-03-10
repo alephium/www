@@ -4,10 +4,6 @@ date: '2023-08-16'
 description: 'Week 32 Milestones & progress on dev on Alephium!'
 ---
 
-Week 32 Milestones & progress on dev on Alephium!
-
----
-
 ### Weekly \#DevUpdate
 
 #### Week 32 Milestones & progress on dev on Alephium!

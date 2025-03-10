@@ -4,10 +4,6 @@ date: '2023-07-11'
 description: '“Using the SDK to write a simple dApp” with @h0ngcha0 & @polarker'
 ---
 
-“Using the SDK to write a simple dApp” with @h0ngcha0 & @polarker
-
----
-
 ### First Online Dev Workshop!
 
 #### “Using the SDK to write a simple dApp” with <a href="https://github.com/h0ngcha0" class="markup--anchor markup--h4-anchor" data-href="https://github.com/h0ngcha0" rel="noopener" target="_blank">@h0ngcha0</a> & <a href="https://github.com/polarker" class="markup--anchor markup--h4-anchor" data-href="https://github.com/polarker" rel="noopener" target="_blank">@polarker</a>

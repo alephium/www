@@ -4,10 +4,6 @@ date: '2024-10-21'
 description: 'The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem…'
 ---
 
-The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem…
-
----
-
 ### Hashrate Series \#5: Hearst
 
 _The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem actors to sustain and improve Alephium’s reliability. This series is about them, and after_ <a href="https://medium.com/@alephium/hashrate-series-1-nicehash-ee0936adf899" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/hashrate-series-1-nicehash-ee0936adf899" rel="noopener" target="_blank"><em>Nicehash</em></a>, <a href="https://medium.com/@alephium/hashrate-series-2-goldshell-93cc51a86640" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/hashrate-series-2-goldshell-93cc51a86640" rel="noopener" target="_blank"><em>Goldshell</em></a>_,_ <a href="https://medium.com/@alephium/hashrate-series-3-cryptohall-24-7ad1533701f4" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/hashrate-series-3-cryptohall-24-7ad1533701f4" target="_blank"><em>Cryptohall24,</em></a> _and_ <a href="https://medium.com/@alephium/hashrate-series-4-iceriver-063f52b7c431" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/hashrate-series-4-iceriver-063f52b7c431" target="_blank"><em>ICERIVER</em></a>, _please welcome Hearst._

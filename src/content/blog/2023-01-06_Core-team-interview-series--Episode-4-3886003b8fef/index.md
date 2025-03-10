@@ -4,10 +4,6 @@ date: '2023-01-06'
 description: 'This article was updated: https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0'
 ---
 
-This article was updated: https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0
-
----
-
 ### Core team interview series. Episode 4
 
 **This article was updated:** <a href="https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0" rel="nofollow" target="_blank">https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0</a>

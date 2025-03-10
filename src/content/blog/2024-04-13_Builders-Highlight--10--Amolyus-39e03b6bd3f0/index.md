@@ -4,10 +4,6 @@ date: '2024-04-13'
 description: 'Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real…'
 ---
 
-Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real…
-
----
-
 ### Builders Highlight \#10: Amolyus
 
 <figure id="4fa1" class="graf graf--figure graf-after--h3">

@@ -4,10 +4,6 @@ date: '2022-01-31'
 description: 'Naming can be fun, but good naming is hard. Alephium has identified three items that desperately need naming, and we’d like to ask you for…'
 ---
 
-Naming can be fun, but good naming is hard. Alephium has identified three items that desperately need naming, and we’d like to ask you for…
-
----
-
 ### Alephium Naming Competition
 
 <figure id="3243" class="graf graf--figure graf-after--h3">

@@ -4,10 +4,6 @@ date: '2024-08-21'
 description: 'This serie of interviews was conducted at the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering…'
 ---
 
-This serie of interviews was conducted at the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering…
-
----
-
 ### Builders Uncut — Alphaga
 
 <figure id="dcdb" class="graf graf--figure graf-after--h3">

@@ -4,10 +4,6 @@ date: '2023-05-19'
 description: 'Bridge assets from and to Ethereum Goerli Testnet and BNB Smart Chain Testnet'
 ---
 
-Bridge assets from and to Ethereum Goerli Testnet and BNB Smart Chain Testnet
-
----
-
 ### The Alephium Bridge is live on Testnet!
 
 #### Bridge assets from and to Ethereum Goerli Testnet and BNB Smart Chain Testnet

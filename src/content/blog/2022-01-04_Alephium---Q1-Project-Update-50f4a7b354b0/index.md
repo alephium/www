@@ -4,10 +4,6 @@ date: '2022-01-04'
 description: 'Alephium mainnet is live and fully functional since November 8th, 2021. We are now focused on building and enriching tooling for wallets…'
 ---
 
-Alephium mainnet is live and fully functional since November 8th, 2021. We are now focused on building and enriching tooling for wallets…
-
----
-
 ### Alephium — Q1 Project Update
 
 <figure id="020d" class="graf graf--figure graf-after--h3">

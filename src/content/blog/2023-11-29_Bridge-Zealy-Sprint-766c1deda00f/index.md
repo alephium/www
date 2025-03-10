@@ -4,10 +4,6 @@ date: '2023-11-29'
 description: 'Spread the word about the bridge & share 3’000 $ALPH in prize!'
 ---
 
-Spread the word about the bridge & share 3’000 \$ALPH in prize!
-
----
-
 ### **Bridge Zealy Sprint**
 
 #### _Spread the word about the bridge & share 3’000 \$ALPH in prize!_

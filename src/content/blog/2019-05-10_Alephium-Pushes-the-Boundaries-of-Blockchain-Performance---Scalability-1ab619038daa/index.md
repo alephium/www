@@ -4,10 +4,6 @@ date: '2019-05-10'
 description: 'Alephium aims to scale blockchains to handle tens of thousands of transactions per second (10,000+ TPS) in an open, permissionless network.'
 ---
 
-Alephium aims to scale blockchains to handle tens of thousands of transactions per second (10,000+ TPS) in an open, permissionless network.
-
----
-
 ### Alephium Pushes the Boundaries of Blockchain Performance & Scalability
 
 When assessing the seemingly countless blockchain platforms appearing in recent years, neither users nor critics fail to emphasize scalability. Recently, with the development of sharding technology, real improvements are being made in the area of blockchain scalability. One project, in particular, has built a powerful new technology with the potential to vastly improve the scalability of public chains. <a href="http://pr.report/Lr8w4Saq" class="markup--anchor markup--p-anchor" data-href="http://pr.report/Lr8w4Saq" rel="nofollow noopener noopener" target="_blank">Alephium</a>, the brainchild project of Cheng Wang, aims to scale blockchains to handle tens of thousands of transactions per second (10,000+ TPS) in an open, permissionless network. Its core algorithm, called BlockFlow, combines sharding technology with DAG (Directed Acyclic Graph) and utilizes a scalable UTXO (Unspent Transaction Output) model to resolve the inefficiency of sharding performance during cross-shard transactions. By breaking down smart contracts into token protocols and data protocols, Alephium allows developers to build dApps that support high concurrency scenarios while maintaining the Turing-complete functionalities of smart contracts.

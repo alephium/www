@@ -4,10 +4,6 @@ date: '2019-05-10'
 description: 'The Alephium team will be attending the Global Digital Impact Night during New York Blockchain Week 2019.'
 ---
 
-The Alephium team will be attending the Global Digital Impact Night during New York Blockchain Week 2019.
-
----
-
 ### Alephium to Attend Global Digital Impact Night During New York Blockchain Week 2019
 
 The Alephium team will be attending the Global Digital Impact Night during New York Blockchain Week 2019. Blockchain Week is a series of events, meetups, and conferences that draws thousands of global enthusiasts from all facets of the blockchain community to New York City. The affair runs from May 10th to 18th and consists of various independently organized educational and developer-focused events that aim to promote adoption of blockchain technologies by sharing first-hand information about the industry. From startups and tech developers to long-time traders and experts, enthusiasts will gather to share ideas and discuss the past, present, and future of blockchain. Hundreds of events will take place during the course of the week covering a wide array of blockchain topics.

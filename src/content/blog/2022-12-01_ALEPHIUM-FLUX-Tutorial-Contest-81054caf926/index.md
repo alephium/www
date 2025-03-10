@@ -4,10 +4,6 @@ date: '2022-12-01'
 description: 'Thanks to Flux, it is easier than ever to run an Alephium full node. But it could become even easier. All it takes is a little distribution…'
 ---
 
-Thanks to Flux, it is easier than ever to run an Alephium full node. But it could become even easier. All it takes is a little distribution…
-
----
-
 ### **ALEPHIUM/FLUX Tutorial Contest**
 
 #### Thanks to <a href="https://runonflux.io/" class="markup--anchor markup--h4-anchor" data-href="https://runonflux.io/" rel="noopener" target="_blank">Flux</a>, it is easier than ever to run an Alephium full node. But it could become even easier. All it takes is a little distribution of knowledge!

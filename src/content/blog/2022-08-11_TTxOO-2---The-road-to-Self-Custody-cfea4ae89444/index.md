@@ -4,10 +4,6 @@ date: '2022-08-11'
 description: 'Introduction'
 ---
 
-Introduction
-
----
-
 ### TTxOO 2 — The road to Self-Custody
 
 <figure id="fd3c" class="graf graf--figure graf-after--h3">

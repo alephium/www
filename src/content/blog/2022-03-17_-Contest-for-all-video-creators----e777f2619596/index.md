@@ -4,10 +4,6 @@ date: '2022-03-17'
 description: 'Prizes for a total of 10’000 ALPH 💰'
 ---
 
-Prizes for a total of 10’000 ALPH 💰
-
----
-
 ### ✨Contest for all video creators 🚀
 
 ### Prizes for a total of 10’000 ALPH 💰

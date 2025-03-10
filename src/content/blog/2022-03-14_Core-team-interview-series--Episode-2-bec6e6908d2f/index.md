@@ -4,10 +4,6 @@ date: '2022-03-14'
 description: 'Presenting the humans behind operations, marketing and community.'
 ---
 
-Presenting the humans behind operations, marketing and community.
-
----
-
 ### Core team interview series. Episode 2
 
 #### Presenting the humans behind operations, marketing and community.

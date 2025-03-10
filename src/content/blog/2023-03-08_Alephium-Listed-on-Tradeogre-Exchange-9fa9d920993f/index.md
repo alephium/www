@@ -4,10 +4,6 @@ date: '2023-03-08'
 description: 'A Collective Effort by the Community'
 ---
 
-A Collective Effort by the Community
-
----
-
 ### Alephium Listed on Tradeogre Exchange
 
 #### A Collective Effort by the Community

@@ -4,10 +4,6 @@ date: '2023-03-01'
 description: 'Are you sure you have everything updated? A lot has been done since the previous announcement. Here is what you need to do!'
 ---
 
-Are you sure you have everything updated? A lot has been done since the previous announcement. Here is what you need to do!
-
----
-
 ### The Leman Network Upgrade: Time to check your Nodes!
 
 #### Are you sure you have everything updated? A lot has been done since the <a href="https://medium.com/@alephium/the-leman-upgrade-2-232e3374abc4" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/the-leman-upgrade-2-232e3374abc4" target="_blank">previous announcement</a> and the <a href="https://medium.com/@alephium/the-leman-upgrade-ama-most-relevant-topics-and-questions-1fbbc68d4237" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/the-leman-upgrade-ama-most-relevant-topics-and-questions-1fbbc68d4237" target="_blank">“Hard” Talk</a> held in January, and this post is an invitation for you to update your nodes.

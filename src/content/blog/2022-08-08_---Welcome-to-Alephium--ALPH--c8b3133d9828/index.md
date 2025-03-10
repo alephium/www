@@ -4,10 +4,6 @@ date: '2022-08-08'
 description: 'Here’s all the information you need to get started with Alephium ! And if that’s not enough, check our website or come talk to us on…'
 ---
 
-Here’s all the information you need to get started with Alephium ! And if that’s not enough, check our website or come talk to us on…
-
----
-
 ### 🚀 Welcome to Alephium (ALPH)
 
 <figure id="0208" class="graf graf--figure graf-after--h3">

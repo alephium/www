@@ -4,10 +4,6 @@ date: '2021-12-02'
 description: 'Alephium has made great progress lately and a lot of work has been put down on various repositories. It’s time for an update!'
 ---
 
-Alephium has made great progress lately and a lot of work has been put down on various repositories. It’s time for an update!
-
----
-
 ### Time for an Alephium Development Recap
 
 #### Alephium has made great progress lately and a lot of work has been put down on various repositories. It’s time for an update!

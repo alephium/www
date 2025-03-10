@@ -4,10 +4,6 @@ date: '2022-10-28'
 description: 'We are really proud of Alephium’s addition as a part of Dappnode’s package offering! We share Dappnode’s commitment to a decentralized…'
 ---
 
-We are really proud of Alephium’s addition as a part of Dappnode’s package offering! We share Dappnode’s commitment to a decentralized…
-
----
-
 ### Alephium & Dappnode: Collab, Tech Talk, and AMA
 
 <figure id="d793" class="graf graf--figure graf-after--h3">

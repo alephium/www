@@ -4,10 +4,6 @@ date: '2021-08-27'
 description: 'We’re happy to announce that the Alephium token ticker symbol is officially ALPH.'
 ---
 
-We’re happy to announce that the Alephium token ticker symbol is officially ALPH.
-
----
-
 ### Introducing ALPH
 
 <figure id="4d2d" class="graf graf--figure graf-after--h3">

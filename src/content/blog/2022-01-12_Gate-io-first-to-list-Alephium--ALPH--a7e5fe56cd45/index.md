@@ -4,10 +4,6 @@ date: '2022-01-12'
 description: 'Lausanne, Switzerland, Jan 12, 2022 — Alephium, an innovative Layer 1 blockchain announces today its first official listing on the top 10…'
 ---
 
-Lausanne, Switzerland, Jan 12, 2022 — Alephium, an innovative Layer 1 blockchain announces today its first official listing on the top 10…
-
----
-
 ### **Gate.io first to list Alephium (ALPH)**
 
 <figure id="4e46" class="graf graf--figure graf-after--h3">

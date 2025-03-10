@@ -4,10 +4,6 @@ date: '2024-07-12'
 description: 'If you couldn’t come… Doesn’t mean you can’t see the presentations! Find them all here and watch them at your convenience.'
 ---
 
-If you couldn’t come… Doesn’t mean you can’t see the presentations! Find them all here and watch them at your convenience.
-
----
-
 ### **All the Athens Meetup Presentations!**
 
 _If you couldn’t come… Doesn’t mean you can’t see the presentations! Find them all here and watch them at your convenience._

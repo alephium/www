@@ -4,10 +4,6 @@ date: ''
 description: 'Blockflow Sharding Algorithm Detailed — an interview'
 ---
 
-Blockflow Sharding Algorithm Detailed — an interview
-
----
-
 ### How Alephium Scales
 
 ### Blockflow Sharding Algorithm Detailed — an interview

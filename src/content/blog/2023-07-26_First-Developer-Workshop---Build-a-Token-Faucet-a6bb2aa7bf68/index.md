@@ -4,10 +4,6 @@ date: '2023-07-26'
 description: 'How to create a token faucet and deploy it on Alephium'
 ---
 
-How to create a token faucet and deploy it on Alephium
-
----
-
 ### First Developer Workshop — Build a Token Faucet
 
 #### How to create a token faucet and deploy it on Alephium

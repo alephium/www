@@ -4,10 +4,6 @@ date: '2023-09-25'
 description: 'Re-implementing the friend.tech smart contract to RALPH with @h0ngcha0'
 ---
 
-Re-implementing the friend.tech smart contract to RALPH with @h0ngcha0
-
----
-
 ### Second Online Dev Workshop!
 
 #### Re-implementing the friend.tech smart contract to RALPH with <a href="https://github.com/h0ngcha0" class="markup--anchor markup--h4-anchor" data-href="https://github.com/h0ngcha0" rel="noopener ugc nofollow noopener" target="_blank">@h0ngcha0</a>

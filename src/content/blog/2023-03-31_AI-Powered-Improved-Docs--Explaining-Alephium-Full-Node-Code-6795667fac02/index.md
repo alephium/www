@@ -4,10 +4,6 @@ date: '2023-03-31'
 description: 'New documentation was created with the help of Autodoc'
 ---
 
-New documentation was created with the help of Autodoc
-
----
-
 ### AI-Powered Improved Docs: Explaining Alephium Full Node Code
 
 #### New documentation was created with the help of Autodoc
