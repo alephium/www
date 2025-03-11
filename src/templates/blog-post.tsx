@@ -16,13 +16,7 @@ const BlogPostTemplate = (props: PageProps<Queries.BlogPostBySlugQuery>) => {
 
   const featuredImage = desktopImage ? getImage(desktopImage) : null
 
-  const subtitle = (
-    <div>
-      {post?.frontmatter?.date && <time dateTime={post.frontmatter.date}>{post.frontmatter.date}</time>}
-      <span> · </span>
-      <span>{post?.timeToRead} min read</span>
-    </div>
-  )
+  const subtitle = <div></div>
 
   return (
     <Page
@@ -41,7 +35,15 @@ const BlogPostTemplate = (props: PageProps<Queries.BlogPostBySlugQuery>) => {
             <h1>{post?.frontmatter?.title}</h1>
             <hr />
             <p>{post?.frontmatter?.description}</p>
-            <p>{subtitle}</p>
+            <p>
+              {post?.frontmatter?.date && (
+                <>
+                  <time dateTime={post.frontmatter.date}>{post.frontmatter.date}</time>
+                  <span> · </span>
+                </>
+              )}
+              {post?.timeToRead && `${post.timeToRead} min read`}
+            </p>
           </SubpageHeroSection>
 
           <SectionDivider />
