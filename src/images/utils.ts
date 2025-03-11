@@ -29,17 +29,3 @@ export const getIconByName = (name: string) => {
       break
   }
 }
-
-export const updateSrcSet = (srcSet: string, maxWidth: number) => {
-  if (!srcSet) return null
-  const srcSetArray = srcSet.split(',')
-  return srcSetArray
-    .reduce((filtered, src) => {
-      const [url, width] = src.split(' ')
-      if (parseInt(width) <= maxWidth) {
-        filtered.push(`${url} ${width}`)
-      }
-      return filtered
-    }, [] as string[])
-    .join(',')
-}

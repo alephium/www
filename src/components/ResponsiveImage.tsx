@@ -1,6 +1,6 @@
+import { IGatsbyImageData } from 'gatsby-plugin-image'
 import { FC } from 'react'
 import styled from 'styled-components'
-import { IGatsbyImageData } from 'gatsby-plugin-image'
 
 export interface ImageProps {
   altText: string

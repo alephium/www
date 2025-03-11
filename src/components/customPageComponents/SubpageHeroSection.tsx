@@ -1,24 +1,43 @@
+import { useInView } from 'framer-motion'
+import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image'
 import { ReactNode, useRef } from 'react'
 import styled, { css, ThemeProvider } from 'styled-components'
 
-import { darkTheme } from '../../styles/themes'
 import { deviceBreakPoints } from '../../styles/global-style'
-
+import { darkTheme } from '../../styles/themes'
 import HeroPageSectionContainer from '../Hero/HeroPageSectionContainer'
 import TextElement from './TextElement'
-import { useInView } from 'framer-motion'
+
 interface SubpageHeroSectionProps {
   children: ReactNode
   renderAdditionalContent?: (inView: boolean) => ReactNode
+  backgroundImage?: IGatsbyImageData
+  backgroundImageAlt?: string
 }
 
-const SubpageHeroSection = ({ children, renderAdditionalContent }: SubpageHeroSectionProps) => {
+const SubpageHeroSection = ({
+  children,
+  renderAdditionalContent,
+  backgroundImage,
+  backgroundImageAlt = ''
+}: SubpageHeroSectionProps) => {
   const innerRef = useRef<HTMLElement>(null)
   const inView = useInView(innerRef)
 
   return (
     <ThemeProvider theme={darkTheme}>
       <SubpageHeroSectionStyled ref={innerRef}>
+        {backgroundImage && (
+          <BackgroundImageWrapper>
+            <GatsbyImage
+              image={backgroundImage}
+              alt={backgroundImageAlt}
+              style={{ height: '100%', width: '100%' }}
+              objectFit="cover"
+            />
+            <BackgroundOverlay />
+          </BackgroundImageWrapper>
+        )}
         <HeroPageSectionContainer>
           <LeftContentWrapper>
             <TextElementStyled>{children}</TextElementStyled>
@@ -85,7 +104,7 @@ const LeftContentWrapper = styled.div`
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  z-index: 1;
+  z-index: 2;
 
   @media ${deviceBreakPoints.mobile} {
     padding: var(--spacing-4);
@@ -96,4 +115,25 @@ const LeftContentWrapper = styled.div`
     padding: var(--spacing-4);
     top: 60%;
   }
+`
+
+const BackgroundImageWrapper = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+`
+
+const BackgroundOverlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.85) 100%);
+  backdrop-filter: blur(10px);
+  z-index: 1;
 `

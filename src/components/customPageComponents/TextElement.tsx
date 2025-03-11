@@ -2,7 +2,7 @@ import { ReactNode } from 'react'
 import styled, { css } from 'styled-components'
 
 export interface TextElementProps {
-  children: ReactNode
+  children?: ReactNode
   isSmall?: boolean
   isBodySmall?: boolean
   isCentered?: boolean

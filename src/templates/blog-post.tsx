@@ -1,39 +1,26 @@
 import { graphql, Link, PageProps } from 'gatsby'
+import { getImage } from 'gatsby-plugin-image'
 
 import Page from '../components/customPageComponents/Page'
 import SubpageHeroSection from '../components/customPageComponents/SubpageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import SectionDivider from '../components/SectionDivider'
-import { updateSrcSet } from '../images/utils'
 // import Image from 'gatsby-image'
 
 const BlogPostTemplate = (props: PageProps<Queries.BlogPostBySlugQuery>) => {
   const post = props.data.markdownRemark
   const { previous, next } = props.data
-  const mobileFeaturedImage = post?.frontmatter?.featuredImage?.mobile?.fluid
-  const desktopFeaturedImage = post?.frontmatter?.featuredImage?.desktop?.fluid
-  const seoFeaturedImage = post?.frontmatter?.featuredImage?.seo?.resize
-  const authors = post?.frontmatter?.authors
+  const desktopImage = post?.frontmatter?.featuredImage?.desktop
+  const seoImage = post?.frontmatter?.featuredImage?.seo
 
-  if (desktopFeaturedImage) {
-    desktopFeaturedImage.srcSet = updateSrcSet(desktopFeaturedImage.srcSet, 1920)
-  }
-  const sources = [
-    mobileFeaturedImage,
-    {
-      ...desktopFeaturedImage,
-      media: `(min-width: 768px)`
-    }
-  ]
-  const tags = post?.frontmatter?.tags
+  const featuredImage = desktopImage ? getImage(desktopImage) : null
 
   const subtitle = (
     <div>
-      <time dateTime={post?.frontmatter?.date}>{post?.frontmatter?.date}</time>
+      {post?.frontmatter?.date && <time dateTime={post.frontmatter.date}>{post.frontmatter.date}</time>}
       <span> · </span>
       {/* <span>{post.fields.readingTime.text}</span> */}
-      {/* {authors && <Authors authors={authors} />} */}
     </div>
   )
 
@@ -41,17 +28,20 @@ const BlogPostTemplate = (props: PageProps<Queries.BlogPostBySlugQuery>) => {
     <Page
       {...props}
       seo={{
-        title: post?.frontmatter?.seo?.title || post?.frontmatter?.title,
-        description: post?.frontmatter?.seo?.description || post?.frontmatter?.description || post?.excerpt,
-        image: seoFeaturedImage
+        title: post?.frontmatter?.title || '',
+        description: post?.frontmatter?.description || post?.excerpt || '',
+        image: seoImage
       }}
       content={
         <>
-          {/* {desktopFeaturedImage && <Image fluid={sources} alt={`${post.frontmatter.title} featured image`} />} */}
-          <SubpageHeroSection>
+          <SubpageHeroSection
+            backgroundImage={featuredImage || undefined}
+            backgroundImageAlt={post?.frontmatter?.title || 'Blog post featured image'}
+          >
             <h1>{post?.frontmatter?.title}</h1>
             <hr />
             <p>{post?.frontmatter?.description}</p>
+            <p>{subtitle}</p>
           </SubpageHeroSection>
 
           <SectionDivider />
@@ -60,8 +50,6 @@ const BlogPostTemplate = (props: PageProps<Queries.BlogPostBySlugQuery>) => {
             <article itemScope itemType="http://schema.org/Article">
               <TextElement isSmall dangerouslySetInnerHTML={{ __html: post?.html || '' }} itemProp="articleBody" />
             </article>
-
-            {/* {tags && <TagsList tags={tags} />} */}
           </SubpageSection>
 
           <hr />
@@ -79,14 +67,14 @@ const BlogPostTemplate = (props: PageProps<Queries.BlogPostBySlugQuery>) => {
               >
                 <li>
                   {previous && (
-                    <Link to={previous.fields?.slug ?? ''} rel="prev" direction="left">
+                    <Link to={previous.fields?.slug ?? ''} rel="prev">
                       {previous.frontmatter?.title}
                     </Link>
                   )}
                 </li>
                 <li>
                   {next && (
-                    <Link to={next.fields?.slug ?? ''} rel="next" direction="right">
+                    <Link to={next.fields?.slug ?? ''} rel="next">
                       {next.frontmatter?.title}
                     </Link>
                   )}
@@ -117,36 +105,23 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
-        # tags
-        # authors {
-        #   name
-        #   page
-        #   externalLink
-        #   externalName
-        # }
         # seo {
         #   title
         #   description
         # }
-        # featuredImage {
-        #   desktop: childImageSharp {
-        #     fluid(maxWidth: 1920, maxHeight: 600, fit: COVER, cropFocus: CENTER) {
-        #       ...GatsbyImageSharpFluid
-        #     }
-        #   }
-        #   mobile: childImageSharp {
-        #     fluid(maxWidth: 768, maxHeight: 600, fit: COVER, cropFocus: CENTER) {
-        #       ...GatsbyImageSharpFluid
-        #     }
-        #   }
-        #   seo: childImageSharp {
-        #     resize(width: 1200) {
-        #       src
-        #       height
-        #       width
-        #     }
-        #   }
-        # }
+        featuredImage {
+          desktop: childImageSharp {
+            gatsbyImageData(
+              width: 1920
+              height: 600
+              layout: CONSTRAINED
+              transformOptions: { fit: COVER, cropFocus: CENTER }
+            )
+          }
+          seo: childImageSharp {
+            gatsbyImageData(width: 1200, layout: FIXED)
+          }
+        }
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

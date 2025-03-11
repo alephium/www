@@ -1,6 +1,7 @@
 import { IGatsbyImageData } from 'gatsby-plugin-image'
 import { FC } from 'react'
 import styled from 'styled-components'
+
 import ResponsiveImage from './ResponsiveImage'
 import SimpleLink from './SimpleLink'
 
