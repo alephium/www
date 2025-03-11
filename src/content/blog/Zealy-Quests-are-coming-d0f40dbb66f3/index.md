@@ -28,9 +28,9 @@ You will see that our quests are divided into categories, which will help you go
 
 For now, you’ll find:
 
-- <span id="5a92">\#Onboarding which will let you discover all our platforms, and newcomers to find us everywhere.</span>
-- <span id="c327">\#AllThingsAlephium which will help you discover our wallets, dApps and bridge.</span>
-- <span id="ff62">\#DailyActivities is for hardcore competitors who love XP and want those higher roles on Discord while contributing to Alephium’s visibility!</span>
+- \#Onboarding which will let you discover all our platforms, and newcomers to find us everywhere.
+- \#AllThingsAlephium which will help you discover our wallets, dApps and bridge.
+- \#DailyActivities is for hardcore competitors who love XP and want those higher roles on Discord while contributing to Alephium’s visibility!
 
 We will regularly add new quests. For example, when the v2 of the NFT marketplace will be published, we will have a dedicated set of quests to show you around!
 

@@ -27,18 +27,18 @@ This time it will require two sessions, one about sub-contracts, and the other o
 
 **For the first session:**
 
-- <span id="a9e3">Overview of the friend.tech smart contract</span>
-- <span id="fcac">Implement friend shares and keep track of friend share balances using sub-contracts</span>
+- Overview of the friend.tech smart contract
+- Implement friend shares and keep track of friend share balances using sub-contracts
 
 **For the second session:**
 
-- <span id="eb6a">Implement buy & sell friend shares (uses APS)</span>
+- Implement buy & sell friend shares (uses APS)
 
 ### Dev environment to setup before the workshop
 
-- <span id="8862">Install node and yarn.</span>
-- <span id="cc46">Install docker & docker-compose</span>
-- <span id="3ce6">Clone <a href="https://github.com/alephium/alephium-stack" class="markup--anchor markup--li-anchor" data-href="https://github.com/alephium/alephium-stack" rel="noopener ugc nofollow noopener" target="_blank">https://github.com/alephium/alephium-stack</a> repo and able to run _make start-devnet_ to get full node and explorer up and running</span>
+- Install node and yarn.
+- Install docker & docker-compose
+- Clone <a href="https://github.com/alephium/alephium-stack" class="markup--anchor markup--li-anchor" data-href="https://github.com/alephium/alephium-stack" rel="noopener ugc nofollow noopener" target="_blank">https://github.com/alephium/alephium-stack</a> repo and able to run _make start-devnet_ to get full node and explorer up and running
 - <span id="7e39">Install extension wallet  
   Chrome: <a href="https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj" class="markup--anchor markup--li-anchor" data-href="https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj" rel="noopener ugc nofollow noopener" target="_blank">https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj</a>  
   Firefox: <a href="https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/" class="markup--anchor markup--li-anchor" data-href="https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/" rel="noopener ugc nofollow noopener" target="_blank">https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/</a> — Create an account for devnet</span>

@@ -32,11 +32,11 @@ To begin managing your ALPH with Tangem Wallet, simply download or update the Ta
 
 ### Why Choose Tangem?
 
-- <span id="ad44">**Portable and Durable**: Highly resistant to extreme temperatures, scratches, and water (IP68 certified).</span>
-- <span id="f144">**Tap-and-Go Simplicity**: Manage your crypto assets effortlessly with just a tap.</span>
-- <span id="0e06">**Full Crypto Functionality**: Send, receive, buy, transfer, swap, and stake thousands of tokens.</span>
-- <span id="bdb7">**Maximum Security**: Smart backup technology, NFC connectivity, and audited firmware with no backdoors.</span>
-- <span id="24d0">**25-Year Warranty**: Tangem chips are designed for long-term, secure asset management.</span>
+- **Portable and Durable**: Highly resistant to extreme temperatures, scratches, and water (IP68 certified).
+- **Tap-and-Go Simplicity**: Manage your crypto assets effortlessly with just a tap.
+- **Full Crypto Functionality**: Send, receive, buy, transfer, swap, and stake thousands of tokens.
+- **Maximum Security**: Smart backup technology, NFC connectivity, and audited firmware with no backdoors.
+- **25-Year Warranty**: Tangem chips are designed for long-term, secure asset management.
 
 ### Unlock New Possibilities for ALPH
 

@@ -73,11 +73,11 @@ A: We’ve seen interest from developers in the community to create a compliant 
 
 A: Several initiatives are planned:
 
-- <span id="6c09">Launch of the \#BuildonAlephium Hackathon Series</span>
-- <span id="c782">Presence in dev events</span>
-- <span id="bb44">Visibility & engagement in like-minded developer communities</span>
-- <span id="9a8d">Partnership & integration with open-source solutions from other ecosystems</span>
-- <span id="279c">Grants / Bounties Ambassador program</span>
+- Launch of the \#BuildonAlephium Hackathon Series
+- Presence in dev events
+- Visibility & engagement in like-minded developer communities
+- Partnership & integration with open-source solutions from other ecosystems
+- Grants / Bounties Ambassador program
 
 **Q: Can you share any exciting ecosystem projects currently in the works?**
 
@@ -89,11 +89,11 @@ A: People/teams in the community are working on DEX, NFT & ANS (Alephium Name Se
 
 The Leman Upgrade makes it possible for new features to be implemented. What you will see in the next wallet releases:
 
-- <span id="1f8c">See the list of tokens you have received</span>
-- <span id="183f">Send tokens you own</span>
-- <span id="1791">Connect to dApps through WalletConnect</span>
-- <span id="6917">Interact with dApps by signing messages</span>
-- <span id="1ffa">More advanced dApp-related options for developers (like deploying and calling a contract etc.)</span>
+- See the list of tokens you have received
+- Send tokens you own
+- Connect to dApps through WalletConnect
+- Interact with dApps by signing messages
+- More advanced dApp-related options for developers (like deploying and calling a contract etc.)
 
 In addition to the new features that the Leman Upgrade allows to implement, time was taken to bring to life a brand new look that makes the wallet easier to use, with a build-to-last UI that follows the design conventions of the explorer and (soon to come) mobile wallet.
 
@@ -122,10 +122,10 @@ A: Schnorr signatures are supported at two levels: wallet and VM.
 Only the <a href="https://medium.com/@alephium/alephium-launches-browser-extension-wallet-706dfeda98f5" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/alephium-launches-browser-extension-wallet-706dfeda98f5" target="_blank">extension wallet</a> currently supports Schnorr signatures.   
 The VM gained Schnorr support after the Leman upgrade and provides the following:
 
-- <span id="cab9">interaction with Nostr and other Schnorr-based apps</span>
-- <span id="a1f4">increased privacy</span>
-- <span id="763c">compress tx data on-chain in case of multisig and coin-join or atomic swap</span>
-- <span id="156d">interoperability with other Schnorr-based chains & Protocols</span>
+- interaction with Nostr and other Schnorr-based apps
+- increased privacy
+- compress tx data on-chain in case of multisig and coin-join or atomic swap
+- interoperability with other Schnorr-based chains & Protocols
 
 **Q: Does Alephium plan to integrate with popular Oracle solutions like Chainlink or other DEX-based oracles?**
 
@@ -150,8 +150,8 @@ VM, would you believe it is better for someone to build an Alephium-based DEX in
 
 A: There are different things to look for when building a DEX:
 
-- <span id="668a">If you want great dev experience, new paradigms & security -\> Alephium.</span>
-- <span id="c7d7">If you are looking for a big ecosystem and a large existing userbase -\> Ethereum for a little while longer ;)</span>
+- If you want great dev experience, new paradigms & security -\> Alephium.
+- If you are looking for a big ecosystem and a large existing userbase -\> Ethereum for a little while longer ;)
 
 ---
 

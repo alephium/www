@@ -34,9 +34,9 @@ Custody is _“to have direct access or control; to be in charge of the protecti
 
 When thinking about this topic, a good solution has to take into account the following:
 
-- <span id="e8a7">What part of your wealth is stored in crypto?</span>
-- <span id="471b">How tech-savvy are you?</span>
-- <span id="99ac">What amount of time and money are you willing to spend on this?</span>
+- What part of your wealth is stored in crypto?
+- How tech-savvy are you?
+- What amount of time and money are you willing to spend on this?
 
 Hodling’s talk presents a ladder of seven incrementally more secure & sovereign custody levels. As you move up, these setups are incrementally more technically complex and pricey. Before choosing its setup, one must consider the trade-offs and be careful not to overcomplicate things. **The complexity level must make sense for the capital at stake.**
 
@@ -170,14 +170,14 @@ For instance, a multisig of 5 out of 9 will require a quorum of 5 signers (among
 
 The setups presented here come with some benefits and specific complexities. If there are a few takeaways to keep in mind, they would be the following:
 
-- <span id="6626">Work on a simple yet comprehensive backup policy for yourself. And think of what happens if you disappear or become incapacitated!</span>
-- <span id="708a">Keep your setup as straightforward as possible for your needs. Do not overcomplicate and do things you don’t feel comfortable technologically with. (this is called <a href="https://en.wikipedia.org/wiki/KISS_principle" class="markup--anchor markup--li-anchor" data-href="https://en.wikipedia.org/wiki/KISS_principle" rel="noopener" target="_blank">KISS</a>: Keep It Simple Stupid)</span>
-- <span id="ef59">If you want to improve your setup, do it gradually and take the time to do it well (and understand what you’re doing!).</span>
-- <span id="a09c">If possible, try to run your own node; this is already a significant improvement in the sovereignty part of owning and transacting crypto-assets.</span>
+- Work on a simple yet comprehensive backup policy for yourself. And think of what happens if you disappear or become incapacitated!
+- Keep your setup as straightforward as possible for your needs. Do not overcomplicate and do things you don’t feel comfortable technologically with. (this is called <a href="https://en.wikipedia.org/wiki/KISS_principle" class="markup--anchor markup--li-anchor" data-href="https://en.wikipedia.org/wiki/KISS_principle" rel="noopener" target="_blank">KISS</a>: Keep It Simple Stupid)
+- If you want to improve your setup, do it gradually and take the time to do it well (and understand what you’re doing!).
+- If possible, try to run your own node; this is already a significant improvement in the sovereignty part of owning and transacting crypto-assets.
 
 A couple of all-purpose, digital hygiene best practices on top:
 
-- <span id="f635">Using two-factor authentication and specialized open-source software are good practices, as well as encryption on your local disk and communication channels. Things like <a href="https://www.yubico.com/" class="markup--anchor markup--li-anchor" data-href="https://www.yubico.com/" rel="noopener" target="_blank">Yubikey</a> or <a href="https://www.nitrokey.com/" class="markup--anchor markup--li-anchor" data-href="https://www.nitrokey.com/" rel="noopener" target="_blank">Nitrokey</a> are great! Even your <a href="https://www.ledger.com/" class="markup--anchor markup--li-anchor" data-href="https://www.ledger.com/" rel="noopener" target="_blank">Ledger</a> can act as a 2FA key with <a href="https://www.ledger.com/fido-u2f" class="markup--anchor markup--li-anchor" data-href="https://www.ledger.com/fido-u2f" rel="noopener" target="_blank">FIDO</a>.</span>
-- <span id="5c4c">Lastly, as recent hacks showed us, do not use the same password on different online accounts, and <a href="https://www.coindesk.com/business/2022/08/03/solanas-latest-6m-exploit-likely-tied-to-slope-wallet-devs-say/" class="markup--anchor markup--li-anchor" data-href="https://www.coindesk.com/business/2022/08/03/solanas-latest-6m-exploit-likely-tied-to-slope-wallet-devs-say/" rel="noopener" target="_blank"><strong>do not reuse</strong></a> **your seed phrase on other wallets**. Instead, keep them specific for each wallet you use. You can use Password managers like <a href="https://bitwarden.com/" class="markup--anchor markup--li-anchor" data-href="https://bitwarden.com/" rel="noopener" target="_blank">Bitwarden</a> or others too.</span>
+- Using two-factor authentication and specialized open-source software are good practices, as well as encryption on your local disk and communication channels. Things like <a href="https://www.yubico.com/" class="markup--anchor markup--li-anchor" data-href="https://www.yubico.com/" rel="noopener" target="_blank">Yubikey</a> or <a href="https://www.nitrokey.com/" class="markup--anchor markup--li-anchor" data-href="https://www.nitrokey.com/" rel="noopener" target="_blank">Nitrokey</a> are great! Even your <a href="https://www.ledger.com/" class="markup--anchor markup--li-anchor" data-href="https://www.ledger.com/" rel="noopener" target="_blank">Ledger</a> can act as a 2FA key with <a href="https://www.ledger.com/fido-u2f" class="markup--anchor markup--li-anchor" data-href="https://www.ledger.com/fido-u2f" rel="noopener" target="_blank">FIDO</a>.
+- Lastly, as recent hacks showed us, do not use the same password on different online accounts, and <a href="https://www.coindesk.com/business/2022/08/03/solanas-latest-6m-exploit-likely-tied-to-slope-wallet-devs-say/" class="markup--anchor markup--li-anchor" data-href="https://www.coindesk.com/business/2022/08/03/solanas-latest-6m-exploit-likely-tied-to-slope-wallet-devs-say/" rel="noopener" target="_blank"><strong>do not reuse</strong></a> **your seed phrase on other wallets**. Instead, keep them specific for each wallet you use. You can use Password managers like <a href="https://bitwarden.com/" class="markup--anchor markup--li-anchor" data-href="https://bitwarden.com/" rel="noopener" target="_blank">Bitwarden</a> or others too.
 
 We at <a href="https://alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/" rel="noopener" target="_blank">Alephium</a> want to thank Polto & Darko from <a href="https://hodling.ch/" class="markup--anchor markup--p-anchor" data-href="https://hodling.ch/" rel="noopener" target="_blank">Hodling SA</a> for taking the time to come and give us this insightful and rich presentation. We hope to host them again in one of our tech talks soon!

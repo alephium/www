@@ -11,7 +11,7 @@ title: 'Weekly #DevUpdate'
 
 ![](image_52a3a40cb2.png)
 
-1.  <span id="ce02">**Launch of NFT Marketplace V2 for Internal Testing**</span>
+1.  **Launch of NFT Marketplace V2 for Internal Testing**
 
 We’re thrilled to announce that the second version of our NFT Marketplace has been released for internal testing. This version promises enhanced features, improved user experience, and a more streamlined process for artists and collectors alike.
 
@@ -31,25 +31,25 @@ In collaboration with Zealy.io, we’re on the brink of launching quests. Stay t
 
 ![](image_bedc9525df.png)
 
-- <span id="7e74">Desktop Wallet: Review of the Italian translation, creation of an animated QR code to share information, and updates of endpoints.</span>
-- <span id="2119">Mobile Wallet: Desktop wallet import by QR code scanning method, general data loading speed improvements, and animation additions.</span>
-- <span id="3391">Explorer: Endpoints upgrade and a new way to compute the total ALPH in the transactions. Check it out at <a href="https://explorer.alephium.org/" class="markup--anchor markup--li-anchor" data-href="https://explorer.alephium.org/" rel="noopener" target="_blank">explorer.alephium.org</a>.</span>
+- Desktop Wallet: Review of the Italian translation, creation of an animated QR code to share information, and updates of endpoints.
+- Mobile Wallet: Desktop wallet import by QR code scanning method, general data loading speed improvements, and animation additions.
+- Explorer: Endpoints upgrade and a new way to compute the total ALPH in the transactions. Check it out at <a href="https://explorer.alephium.org/" class="markup--anchor markup--li-anchor" data-href="https://explorer.alephium.org/" rel="noopener" target="_blank">explorer.alephium.org</a>.
 
 **Backend Team Updates:**
 
 ![](image_8fa404b37f.png)
 
-- <span id="64ba">dApps: NFT Marketplace v2 for internal testing.</span>
-- <span id="c323">Browser Extension Wallet: Enhancements on NFTs display and dApps connection.</span>
-- <span id="33a8">SDK: Improved hooks and updated the full node to the latest version (<a href="https://github.com/alephium/alephium/releases/tag/v2.5.0" class="markup--anchor markup--li-anchor" data-href="https://github.com/alephium/alephium/releases/tag/v2.5.0" rel="noopener" target="_blank">v2.5.0</a>).</span>
-- <span id="07a3">Bridge: Optional Alephium full node for bridge’s Guardians.</span>
+- dApps: NFT Marketplace v2 for internal testing.
+- Browser Extension Wallet: Enhancements on NFTs display and dApps connection.
+- SDK: Improved hooks and updated the full node to the latest version (<a href="https://github.com/alephium/alephium/releases/tag/v2.5.0" class="markup--anchor markup--li-anchor" data-href="https://github.com/alephium/alephium/releases/tag/v2.5.0" rel="noopener" target="_blank">v2.5.0</a>).
+- Bridge: Optional Alephium full node for bridge’s Guardians.
 
 **Marketing & Content Team Updates:**
 
 ![](image_e25d3f6229.jpeg)
 
-- <span id="6708">Zealy.io beta testing with the community. (want to test? Ping us!)</span>
-- <span id="f62b">Content: sUTXO long-form article (part I), Tx Script x Smart Contracts thread, and a summary of the last Tech Talk (UI/UX), Dev update, engagement post, more content prep.</span>
-- <span id="b734">Events preparation: Next TechTalk, next Dev Workshop, next Twitter Space, next conference attendance.</span>
+- Zealy.io beta testing with the community. (want to test? Ping us!)
+- Content: sUTXO long-form article (part I), Tx Script x Smart Contracts thread, and a summary of the last Tech Talk (UI/UX), Dev update, engagement post, more content prep.
+- Events preparation: Next TechTalk, next Dev Workshop, next Twitter Space, next conference attendance.
 
 For those interested in the technical details, everything in Alephium is open source, and you can check the progress by yourself on our <a href="https://github.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium" rel="noopener" target="_blank">GitHub</a>.

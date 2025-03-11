@@ -28,9 +28,9 @@ They have two product offerings: <a href="https://docs.dappnode.io/" class="mark
 
 Alephium is now part of their dApp Store, and the Alephium package includes:
 
-- <span id="5e78">An Alephium Node</span>
-- <span id="e710">A Local Chain Explorer</span>
-- <span id="132c">DMS (Dappnode Monitoring Service): A dashboard about your node, with all relevant metrics</span>
+- An Alephium Node
+- A Local Chain Explorer
+- DMS (Dappnode Monitoring Service): A dashboard about your node, with all relevant metrics
 
 To install the package and start to run your Alephium node, there are two paths, the Dappnode Home, and the Dappnode Core.
 

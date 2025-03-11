@@ -67,8 +67,8 @@ And here are the wrapped assets contracts on the Alephium side — <a href="
 
 And here are the list of the ones than can be registered for bridging:
 
-- <span id="11a6">On Alephium, the verified tokens appear as “verified” within all our wallets and can be bridged over to Ethereum through our UI: <a href="https://github.com/alephium/token-list" class="markup--anchor markup--li-anchor" data-href="https://github.com/alephium/token-list" rel="noopener" target="_blank">https://github.com/alephium/token-list</a></span>
-- <span id="0c15">On Ethereum, this is the 1inch token list we’re using for tokens that can be bridged to Alephium through the frontend provided by Alephium — <a href="https://tokenlists.org/token-list?url=tokens.1inch.eth" class="markup--anchor markup--li-anchor" data-href="https://tokenlists.org/token-list?url=tokens.1inch.eth" rel="noopener" target="_blank">https://tokenlists.org/token-list?url=tokens.1inch.eth</a></span>
+- On Alephium, the verified tokens appear as “verified” within all our wallets and can be bridged over to Ethereum through our UI: <a href="https://github.com/alephium/token-list" class="markup--anchor markup--li-anchor" data-href="https://github.com/alephium/token-list" rel="noopener" target="_blank">https://github.com/alephium/token-list</a>
+- On Ethereum, this is the 1inch token list we’re using for tokens that can be bridged to Alephium through the frontend provided by Alephium — <a href="https://tokenlists.org/token-list?url=tokens.1inch.eth" class="markup--anchor markup--li-anchor" data-href="https://tokenlists.org/token-list?url=tokens.1inch.eth" rel="noopener" target="_blank">https://tokenlists.org/token-list?url=tokens.1inch.eth</a>
 
 #### BSC tokens
 

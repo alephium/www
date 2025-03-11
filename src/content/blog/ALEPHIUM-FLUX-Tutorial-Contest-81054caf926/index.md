@@ -30,20 +30,20 @@ Be creative, let your personality shine through, or don’t! Be authoritative, c
 
 ### 📝 Rules
 
-- <span id="ca9e">The submission deadline is the **9th of January 2023 at 11:59 PM CET**.</span>
-- <span id="1786">The tutorial must be submitted using the submission form (see below).</span>
-- <span id="165a">It should accurately include the basics covered <a href="https://medium.com/@alephium/host-your-alephium-node-via-the-flux-marketplace-2f3a5ab85263" class="markup--anchor markup--li-anchor" data-href="https://medium.com/@alephium/host-your-alephium-node-via-the-flux-marketplace-2f3a5ab85263" target="_blank">in this post</a>.</span>
-- <span id="1aac">These links must appear in the submission (if it’s a video, you can put them in the description):</span>
+- The submission deadline is the **9th of January 2023 at 11:59 PM CET**.
+- The tutorial must be submitted using the submission form (see below).
+- It should accurately include the basics covered <a href="https://medium.com/@alephium/host-your-alephium-node-via-the-flux-marketplace-2f3a5ab85263" class="markup--anchor markup--li-anchor" data-href="https://medium.com/@alephium/host-your-alephium-node-via-the-flux-marketplace-2f3a5ab85263" target="_blank">in this post</a>.
+- These links must appear in the submission (if it’s a video, you can put them in the description):
 
 **Alephium**: <a href="https://alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/" rel="noopener" target="_blank">Website</a>, <a href="https://t.me/alephiumgroup" class="markup--anchor markup--p-anchor" data-href="https://t.me/alephiumgroup" rel="noopener" target="_blank">Telegram</a>, <a href="https://alephium.org/discord" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/discord" rel="noopener" target="_blank">Discord</a>, <a href="https://twitter.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium" rel="noopener" target="_blank">Twitter</a>  
 **Flux**: <a href="https://medium.com/@alephium/host-your-alephium-node-via-the-flux-marketplace-2f3a5ab85263" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/host-your-alephium-node-via-the-flux-marketplace-2f3a5ab85263" target="_blank">Tutorial</a>, <a href="https://runonflux.io/" class="markup--anchor markup--p-anchor" data-href="https://runonflux.io/" rel="noopener" target="_blank">Website</a>, <a href="https://zelcore.io/" class="markup--anchor markup--p-anchor" data-href="https://zelcore.io/" rel="noopener" target="_blank">Zelcore</a>
 
 ### 🗳️ How to submit the tutorial
 
-- <span id="c537">Publish your tutorial on the platform of your choice</span>
-- <span id="6c58">Add the **\#Alephium, \#runalephiumonflux** and **\#Flux** hashtags</span>
-- <span id="2756">If posting on Twitter, tag **@alephium** & **@runonflux** in the post</span>
-- <span id="db50">Paste the link to the tutorial along with contact information using this <a href="https://forms.gle/ZCTn3nYVpUhwCKVQ8" class="markup--anchor markup--li-anchor" data-href="https://forms.gle/ZCTn3nYVpUhwCKVQ8" rel="noopener" target="_blank"><strong>submission form</strong></a></span>
+- Publish your tutorial on the platform of your choice
+- Add the **\#Alephium, \#runalephiumonflux** and **\#Flux** hashtags
+- If posting on Twitter, tag **@alephium** & **@runonflux** in the post
+- Paste the link to the tutorial along with contact information using this <a href="https://forms.gle/ZCTn3nYVpUhwCKVQ8" class="markup--anchor markup--li-anchor" data-href="https://forms.gle/ZCTn3nYVpUhwCKVQ8" rel="noopener" target="_blank"><strong>submission form</strong></a>
 
 ### 💰Prizes
 

@@ -53,10 +53,10 @@ Putting the Final touches to Zealy, and preparation for a video summarizing Alep
 
 ### Community update from @Discord
 
-- <span id="1dce">Buzzing due to a release by <a href="https://twitter.com/VLADxVLADxVLAD" class="markup--anchor markup--li-anchor" data-href="https://twitter.com/VLADxVLADxVLAD" rel="noopener" target="_blank">@VLADxVLADxVLAD</a>.</span>
-- <span id="60de">Discussion on Minerstat bug affecting hashrate reporting.</span>
-- <span id="12dc">Talks about potential new listing on <a href="https://twitter.com/MEXC_Official" class="markup--anchor markup--li-anchor" data-href="https://twitter.com/MEXC_Official" rel="noopener" target="_blank">@MEXC_Official</a>.</span>
-- <span id="57b0">Discussion with <a href="https://medium.com/u/5b08e6838f2c" class="markup--user markup--li-user" data-href="https://medium.com/u/5b08e6838f2c" data-anchor-type="2" data-user-id="5b08e6838f2c" data-action-value="5b08e6838f2c" data-action="show-user-card" data-action-type="hover" target="_blank">cheng wang</a> on the bridge.</span>
+- Buzzing due to a release by <a href="https://twitter.com/VLADxVLADxVLAD" class="markup--anchor markup--li-anchor" data-href="https://twitter.com/VLADxVLADxVLAD" rel="noopener" target="_blank">@VLADxVLADxVLAD</a>.
+- Discussion on Minerstat bug affecting hashrate reporting.
+- Talks about potential new listing on <a href="https://twitter.com/MEXC_Official" class="markup--anchor markup--li-anchor" data-href="https://twitter.com/MEXC_Official" rel="noopener" target="_blank">@MEXC_Official</a>.
+- Discussion with <a href="https://medium.com/u/5b08e6838f2c" class="markup--user markup--li-user" data-href="https://medium.com/u/5b08e6838f2c" data-anchor-type="2" data-user-id="5b08e6838f2c" data-action-value="5b08e6838f2c" data-action="show-user-card" data-action-type="hover" target="_blank">cheng wang</a> on the bridge.
 
 Check all progress on <a href="https://github.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium" rel="noopener" target="_blank">GitHub</a>!
 
@@ -68,10 +68,10 @@ Check all progress on <a href="https://github.com/alephium" class="markup--ancho
 
 #### Discord conversations past week
 
-- <span id="3a47">Discord shockwave due to Vlad’s release</span>
-- <span id="5305">Minerstat bug with hashrate reporting</span>
-- <span id="c05a">Talks of new CEX listing</span>
-- <span id="2b86">Bridge convo with @wachmc and clarifications</span>
+- Discord shockwave due to Vlad’s release
+- Minerstat bug with hashrate reporting
+- Talks of new CEX listing
+- Bridge convo with @wachmc and clarifications
 
 For those interested in the technical details, everything in Alephium is open source. You can check our progress and dive into the code on our <a href="https://github.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium" rel="noopener ugc nofollow noopener" target="_blank">GitHub</a>.
 

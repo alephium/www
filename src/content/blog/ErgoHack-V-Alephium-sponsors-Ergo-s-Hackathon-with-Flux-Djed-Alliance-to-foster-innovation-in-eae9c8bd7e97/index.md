@@ -31,10 +31,10 @@ In addition to Alephium’s prizes, participants can earn prizes in sigUSD, DACA
 
 **Evaluation Criterias — **The submissions will be assessed by taking into consideration the following:
 
-- <span id="897b">Completed implementation</span>
-- <span id="e3d9">Innovation</span>
-- <span id="cae3">Code quality</span>
-- <span id="407f">Quality of user interface</span>
+- Completed implementation
+- Innovation
+- Code quality
+- Quality of user interface
 
 **Register Now! — **Applications are currently being accepted until October 2nd. Apply <a href="https://q9fwzopidh8.typeform.com/to/hEeZFF4c?typeform-source=3qml8hniame.typeform.com" class="markup--anchor markup--p-anchor" data-href="https://q9fwzopidh8.typeform.com/to/hEeZFF4c?typeform-source=3qml8hniame.typeform.com" rel="noopener" target="_blank">here</a>.
 

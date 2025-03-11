@@ -35,10 +35,10 @@ The more participants the better distributed. But how to grow the node-base? Unl
 
 Raspberry Pi barely needs any introduction. This small single board computer has been around for a while. At the time of writing they have reached their 4th Generation with specs of memory and speed that make them usable as a workstation. They already exist in many homes and because of their affordable price tags are often used to introduce kids to the wonders of coding. They can run many types of Operating Systems most of which are open source, making them a perfect candidate to address the decentralization bottleneck. To be fair Alephium isn’t the only project that can run on a low-power single-board computer. But the way Alephium is dealing with the problem can be summed up pretty neatly:
 
-1.  <span id="e6d6">Proof-of-Work (PoW) is in general more lightweight than Proof-of-Stake (PoS), as the block validation is simpler, the block time is longer and TPS is lower. Because Alephium’s Proof-of-Less-Work (PoLW) is not a memory bound hash algorithm, 100MB RAM is enough to run the full node.</span>
-2.  <span id="c68d">Implementation matters. For example, go-ethereum cannot run on a Raspberry Pi, but there are more efficient implementations of Ethereum that are able to run on Raspis such as erigon.</span>
-3.  <span id="c7ad">Virtual-Machine (VM) design is key. The IO footprint of Alephium’s VM is extremely low.</span>
-4.  <span id="b631">As Alephium is a sharded blockchain, the full-node can be run on multiple single-board computers. This opportunity could give it a higher TPS than a single chain would.</span>
+1.  Proof-of-Work (PoW) is in general more lightweight than Proof-of-Stake (PoS), as the block validation is simpler, the block time is longer and TPS is lower. Because Alephium’s Proof-of-Less-Work (PoLW) is not a memory bound hash algorithm, 100MB RAM is enough to run the full node.
+2.  Implementation matters. For example, go-ethereum cannot run on a Raspberry Pi, but there are more efficient implementations of Ethereum that are able to run on Raspis such as erigon.
+3.  Virtual-Machine (VM) design is key. The IO footprint of Alephium’s VM is extremely low.
+4.  As Alephium is a sharded blockchain, the full-node can be run on multiple single-board computers. This opportunity could give it a higher TPS than a single chain would.
 
 **In general, it is fair to believe that most well-designed PoW single chains could run on a Raspberry Pi, but some of these do not spend the necessary time to support it (optimization, library dependency, etc…)**
 

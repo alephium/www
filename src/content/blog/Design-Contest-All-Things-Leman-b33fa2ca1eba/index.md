@@ -23,11 +23,11 @@ The Alephium Jury will review the designs, considering creativity, quality, and 
 
 **The general rules are the following:**
 
-- <span id="43aa">_The contest will follow all the rules of the_ <a href="https://github.com/alephium/community/blob/master/RewardProgramRules.md" class="markup--anchor markup--li-anchor" data-href="https://github.com/alephium/community/blob/master/RewardProgramRules.md" rel="noopener" target="_blank"><em>Grant &amp; Reward Program Rules</em></a></span>
-- <span id="4460">_Alephium reserves the right to disqualify any entry._</span>
-- <span id="1063">_All submissions must be made through_ <a href="https://forms.gle/34fkokgqAj3VqzGXA" class="markup--anchor markup--li-anchor" data-href="https://forms.gle/34fkokgqAj3VqzGXA" rel="noopener" target="_blank"><em>the form provided</em></a>_._</span>
-- <span id="0200">_The design submitted to the jury can be low-resolution. But to win, participants must be able to deliver their work in high-resolution JPG, PDF._</span>
-- <span id="6417">_By submitting their work, participants agree it is bound to a Creative Commons license_ <a href="https://creativecommons.org/licenses/by/4.0/" class="markup--anchor markup--li-anchor" data-href="https://creativecommons.org/licenses/by/4.0/" rel="noopener" target="_blank"><em>CC-BY</em></a> _or_ <a href="https://creativecommons.org/publicdomain/zero/1.0/" class="markup--anchor markup--li-anchor" data-href="https://creativecommons.org/publicdomain/zero/1.0/" rel="noopener" target="_blank"><em>CC-0</em></a>_._</span>
+- _The contest will follow all the rules of the_ <a href="https://github.com/alephium/community/blob/master/RewardProgramRules.md" class="markup--anchor markup--li-anchor" data-href="https://github.com/alephium/community/blob/master/RewardProgramRules.md" rel="noopener" target="_blank"><em>Grant &amp; Reward Program Rules</em></a>
+- _Alephium reserves the right to disqualify any entry._
+- _All submissions must be made through_ <a href="https://forms.gle/34fkokgqAj3VqzGXA" class="markup--anchor markup--li-anchor" data-href="https://forms.gle/34fkokgqAj3VqzGXA" rel="noopener" target="_blank"><em>the form provided</em></a>_._
+- _The design submitted to the jury can be low-resolution. But to win, participants must be able to deliver their work in high-resolution JPG, PDF._
+- _By submitting their work, participants agree it is bound to a Creative Commons license_ <a href="https://creativecommons.org/licenses/by/4.0/" class="markup--anchor markup--li-anchor" data-href="https://creativecommons.org/licenses/by/4.0/" rel="noopener" target="_blank"><em>CC-BY</em></a> _or_ <a href="https://creativecommons.org/publicdomain/zero/1.0/" class="markup--anchor markup--li-anchor" data-href="https://creativecommons.org/publicdomain/zero/1.0/" rel="noopener" target="_blank"><em>CC-0</em></a>_._
 
 ### Winner Announcement & Prizes
 

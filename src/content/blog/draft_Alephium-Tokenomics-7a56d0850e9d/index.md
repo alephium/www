@@ -46,16 +46,16 @@ When this article was last updated, the average block reward was 2.43 ALPH, resu
 
 While inflationary, thanks to mining, Alephium also has deflationary forces:
 
-- <span id="cfb3">100% of the transaction fees are burned. (Before the Leman Network Upgrade in March 2023, only 50% of the transaction fees were burned).</span>
-- <span id="0917"><a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" class="markup--anchor markup--li-anchor" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" target="_blank">Alephium’s Proof of Less Work</a> will require coin burning when it’ll be triggered to internalize part of the mining cost through the upfront burning of ALPH.</span>
+- 100% of the transaction fees are burned. (Before the Leman Network Upgrade in March 2023, only 50% of the transaction fees were burned).
+- <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" class="markup--anchor markup--li-anchor" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" target="_blank">Alephium’s Proof of Less Work</a> will require coin burning when it’ll be triggered to internalize part of the mining cost through the upfront burning of ALPH.
 
 ### Genesis Allocation & Vesting Schedule
 
 The genesis ALPH are allocated as follows:
 
-- <span id="0c47">**80M** (8%) for past and upcoming **sales**, subject to on-chain lock upon sales with varying vesting periods.</span>
-- <span id="39a9">**30M** (3%) for **ecosystem development**, vesting over 4 years in quarterly unlocks.</span>
-- <span id="01ad">**30M** (3%) for **treasury and team**, vesting over 3 years in quarterly unlocks.</span>
+- **80M** (8%) for past and upcoming **sales**, subject to on-chain lock upon sales with varying vesting periods.
+- **30M** (3%) for **ecosystem development**, vesting over 4 years in quarterly unlocks.
+- **30M** (3%) for **treasury and team**, vesting over 3 years in quarterly unlocks.
 
 _Please note that according to CoinmarketCap’s official methodology, Ecosystem and Team wallets are to be excluded from the circulating supply (whether the tokens are locked or not). Therefore, these ALPH will only be counted as circulating after they leave the original wallet and not after they unlock._
 

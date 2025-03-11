@@ -43,9 +43,9 @@ Reddit is a huge corner of Internet interaction and we think it’s important to
 
 To reach out to the masses and cut through the noise, we also have a few accounts on the mainstream networks. For now you will find us on:
 
-- <span id="b167"><a href="https://twitter.com/alephium" class="markup--anchor markup--li-anchor" data-href="https://twitter.com/alephium" rel="nofollow noopener noopener" target="_blank">Twitter</a></span>
-- <span id="33c6"><a href="https://www.facebook.com/alephium" class="markup--anchor markup--li-anchor" data-href="https://www.facebook.com/alephium" rel="nofollow noopener noopener" target="_blank">Facebook</a></span>
-- <span id="170f"><a href="https://www.linkedin.com/company/alephium/" class="markup--anchor markup--li-anchor" data-href="https://www.linkedin.com/company/alephium/" rel="nofollow noopener noopener" target="_blank">LinkedIn</a></span>
+- <a href="https://twitter.com/alephium" class="markup--anchor markup--li-anchor" data-href="https://twitter.com/alephium" rel="nofollow noopener noopener" target="_blank">Twitter</a>
+- <a href="https://www.facebook.com/alephium" class="markup--anchor markup--li-anchor" data-href="https://www.facebook.com/alephium" rel="nofollow noopener noopener" target="_blank">Facebook</a>
+- <a href="https://www.linkedin.com/company/alephium/" class="markup--anchor markup--li-anchor" data-href="https://www.linkedin.com/company/alephium/" rel="nofollow noopener noopener" target="_blank">LinkedIn</a>
 
 We’ll do our best to assist wherever it may be needed. Other channels might appear throughout our journey… Only our community and time can tell what will fit.
 

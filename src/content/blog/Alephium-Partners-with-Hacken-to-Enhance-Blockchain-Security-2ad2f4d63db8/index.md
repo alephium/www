@@ -18,13 +18,13 @@ As the first operational sharded blockchain operating on Proof of Less Work, Ale
 
 Under this agreement, Hacken will provide a comprehensive suite of security services tailored to the Alephium ecosystem, including:
 
-- <span id="d988">Smart Contract Audits: Ensuring the reliability and security of on-chain code.</span>
-- <span id="218f">Blockchain Protocol Audits: Evaluating the integrity and resilience of Alephium’s core infrastructure.</span>
-- <span id="9be9">Penetration Testing: Identifying vulnerabilities in web, mobile, API, and cloud applications.</span>
-- <span id="78a0">dApp Audits: Enhancing the security of decentralized applications running on Alephium.</span>
-- <span id="57a2">Bug Bounty Programs: Leveraging ethical hacking through HackenProof to uncover and resolve vulnerabilities.</span>
-- <span id="ac60">Proof of Reserves: Strengthening transparency and compliance for ecosystem participants.</span>
-- <span id="1d63">CCSS Audit & Tokenomics Audit: Validating security measures for token models and custodial services.</span>
+- Smart Contract Audits: Ensuring the reliability and security of on-chain code.
+- Blockchain Protocol Audits: Evaluating the integrity and resilience of Alephium’s core infrastructure.
+- Penetration Testing: Identifying vulnerabilities in web, mobile, API, and cloud applications.
+- dApp Audits: Enhancing the security of decentralized applications running on Alephium.
+- Bug Bounty Programs: Leveraging ethical hacking through HackenProof to uncover and resolve vulnerabilities.
+- Proof of Reserves: Strengthening transparency and compliance for ecosystem participants.
+- CCSS Audit & Tokenomics Audit: Validating security measures for token models and custodial services.
 
 ### Benefits for Alephium Projects
 

@@ -42,9 +42,9 @@ To this, I had nothing consistent to answer, so I got a ride. Alephium’s excit
 
 ### How do you contribute to the Alephium ecosystem?
 
-- <span id="7d58">Mining and running a node;</span>
-- <span id="4523">being a part of Alephium’s discord’s life, answering DMs, questions, contributing to review some tweets, wearing an <a href="https://alephium.myspreadshop.ch/" class="markup--anchor markup--li-anchor" data-href="https://alephium.myspreadshop.ch/" rel="noopener" target="_blank">Alephium T-shirt</a>;</span>
-- <span id="51e1">Getting my daughter into the game.</span>
+- Mining and running a node;
+- being a part of Alephium’s discord’s life, answering DMs, questions, contributing to review some tweets, wearing an <a href="https://alephium.myspreadshop.ch/" class="markup--anchor markup--li-anchor" data-href="https://alephium.myspreadshop.ch/" rel="noopener" target="_blank">Alephium T-shirt</a>;
+- Getting my daughter into the game.
 
 ### What do you like to do in your free time? Any hobbies?
 

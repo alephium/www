@@ -46,16 +46,16 @@ When this article was last updated, the average block reward was 2.43 ALPH, resu
 
 While inflationary, thanks to mining, Alephium also has deflationary forces:
 
-- <span id="cfb3">100% of the transaction fees are burned. (Before the Leman Network Upgrade in March 2023, only 50% of the transaction fees were burned).</span>
-- <span id="0917"><a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" class="markup--anchor markup--li-anchor" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" target="_blank">Alephium’s Proof of Less Work</a> will require coin burning when it’ll be triggered to internalize part of the mining cost through the upfront burning of ALPH.</span>
+- 100% of the transaction fees are burned. (Before the Leman Network Upgrade in March 2023, only 50% of the transaction fees were burned).
+- <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" class="markup--anchor markup--li-anchor" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" target="_blank">Alephium’s Proof of Less Work</a> will require coin burning when it’ll be triggered to internalize part of the mining cost through the upfront burning of ALPH.
 
 ### Genesis Allocation & Vesting Schedule
 
 The genesis ALPH are allocated as follows:
 
-- <span id="0c47">**80M** (8%) for past and upcoming **sales**, subject to on-chain lock upon sales with varying vesting periods.</span>
-- <span id="39a9">**30M** (3%) for **ecosystem development**, vesting over 4 years in quarterly unlocks.</span>
-- <span id="01ad">**30M** (3%) for **treasury and team**, vesting over 3 years in quarterly unlocks.</span>
+- **80M** (8%) for past and upcoming **sales**, subject to on-chain lock upon sales with varying vesting periods.
+- **30M** (3%) for **ecosystem development**, vesting over 4 years in quarterly unlocks.
+- **30M** (3%) for **treasury and team**, vesting over 3 years in quarterly unlocks.
 
 _Please note that according to CoinmarketCap’s official methodology, Ecosystem and Team wallets are to be excluded from the circulating supply (whether the tokens are locked or not). Therefore, these ALPH will only be counted as circulating after they leave the original wallet and not after they unlock._
 
@@ -135,9 +135,9 @@ The remaining supply of ALPH (86% or 860 million ALPH) tokens will be <a href="h
 
 The genesis tokens are allocated as follows:
 
-- <span id="c408">**80M** (8%) for past and upcoming **sales**, subject to on-chain lock with vesting periods varying from 2 to 4 years, unlocked quarterly (see below for details).</span>
-- <span id="3153">**30M** (3%) for community and **ecosystem development**, vesting over four years in quarterly unlocks.</span>
-- <span id="5c05">**30M** (3%) allocated to **team and treasury**. These tokens will be locked for three years and unlocked quarterly.</span>
+- **80M** (8%) for past and upcoming **sales**, subject to on-chain lock with vesting periods varying from 2 to 4 years, unlocked quarterly (see below for details).
+- **30M** (3%) for community and **ecosystem development**, vesting over four years in quarterly unlocks.
+- **30M** (3%) allocated to **team and treasury**. These tokens will be locked for three years and unlocked quarterly.
 
 ### Tokens vesting global view
 
@@ -190,9 +190,9 @@ Not as of today. Tokens are awarded to miners, according to the rules defined <a
 
 But there are deflationary forces at play too:
 
-- <span id="09d1">100% of the transaction fees are burned. The implementation of the recently improved <a href="https://github.com/alephium/alephium/blob/master/docs/proposals/lemanDAA.md" class="markup--anchor markup--li-anchor" data-href="https://github.com/alephium/alephium/blob/master/docs/proposals/lemanDAA.md" rel="noopener" target="_blank">DAA</a> has increased that from 50% to 100%.</span>
-- <span id="d399">Each smart contract needs the storage of 1 ALPH as contract storage rent. While not technically burning tokens (because these are retrievable), this potentially reduces available tokens from circulation.</span>
-- <span id="ee9a">When triggered, <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" class="markup--anchor markup--li-anchor" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" target="_blank">Alephium’s Proof of Less Work</a> will internalize part of the mining cost through the upfront burning of ALPH.</span>
+- 100% of the transaction fees are burned. The implementation of the recently improved <a href="https://github.com/alephium/alephium/blob/master/docs/proposals/lemanDAA.md" class="markup--anchor markup--li-anchor" data-href="https://github.com/alephium/alephium/blob/master/docs/proposals/lemanDAA.md" rel="noopener" target="_blank">DAA</a> has increased that from 50% to 100%.
+- Each smart contract needs the storage of 1 ALPH as contract storage rent. While not technically burning tokens (because these are retrievable), this potentially reduces available tokens from circulation.
+- When triggered, <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" class="markup--anchor markup--li-anchor" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" target="_blank">Alephium’s Proof of Less Work</a> will internalize part of the mining cost through the upfront burning of ALPH.
 
 **What is the difference between Circulating supply, Total supply and Maximum Supply?**
 
@@ -234,17 +234,17 @@ The token supply on Alephium is limited to 1 billion (HardCap). At Mainnet Launc
 
 The initial supply of tokens will be allocated over time as follows:
 
-- <span id="d67f">80M tokens (8%) will be allocated for past and future sales. Tokens sold will be subject to on-chain lock with vesting periods varying from 2 to 4 years, released quarterly.</span>
-- <span id="c42c">30M tokens (3%) will be allocated for community and ecosystem development. These tokens will be locked for 4 years, and be vested 10M, 10M, 5M, 5M each year in quarters accordingly.</span>
-- <span id="b959">30M tokens (3%) will be allocated to reward the team and support future developments of Alephium. These tokens will be locked for three years and be vested 10M, 10M, and 10M each year in quarters accordingly.</span>
+- 80M tokens (8%) will be allocated for past and future sales. Tokens sold will be subject to on-chain lock with vesting periods varying from 2 to 4 years, released quarterly.
+- 30M tokens (3%) will be allocated for community and ecosystem development. These tokens will be locked for 4 years, and be vested 10M, 10M, 5M, 5M each year in quarters accordingly.
+- 30M tokens (3%) will be allocated to reward the team and support future developments of Alephium. These tokens will be locked for three years and be vested 10M, 10M, and 10M each year in quarters accordingly.
 
 The rest of the token supply (86% or 860'000'000 ALPH) <a href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33" target="_blank">will be mined</a> over the next **~82 years** (from 2021) to ensure transaction processing and smart contract execution on the Alephium blockchain.  
 **After being mined, ALPH is locked for 500 minutes.**
 
 There are several deflationary forces in Alephium’s tokenomics, including:
 
-- <span id="4064">100% of the transaction fees are burned with each block.</span>
-- <span id="e2bc">When triggered, <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" class="markup--anchor markup--li-anchor" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" target="_blank">Alephium’s Proof of Less Work</a> internalizes part of the mining cost through the upfront burning of ALPH.</span>
+- 100% of the transaction fees are burned with each block.
+- When triggered, <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" class="markup--anchor markup--li-anchor" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" target="_blank">Alephium’s Proof of Less Work</a> internalizes part of the mining cost through the upfront burning of ALPH.
 
 <figure id="7f99" class="graf graf--figure graf-after--li graf--trailing">
 <img src="https://cdn-images-1.medium.com/max/800/1*YjGQ0H2PWMhX9AIi9dUSkg.png" class="graf-image" data-image-id="1*YjGQ0H2PWMhX9AIi9dUSkg.png" data-width="1140" data-height="674" />

@@ -26,9 +26,9 @@ Question: **What are the main changes? What does the Leman Upgrade make possible
 
 **Hongchao:** Some of the major changes are:
 
-- <span id="bd33">A new set of VM instructions and built-in functions to make smart contract development more efficient. Examples include sub-contract systems, dynamic array indexing, and built-in functions for debugging and logging.</span>
-- <span id="9e21">New features at both the language and VM level to make smart contract development more secure. Examples include the new asset permission system and external call check system.</span>
-- <span id="231a">Improvement of the node APIs and SDK to ease the development cycle for smart contracts, including coding, unit testing, integration testing, and deployment.</span>
+- A new set of VM instructions and built-in functions to make smart contract development more efficient. Examples include sub-contract systems, dynamic array indexing, and built-in functions for debugging and logging.
+- New features at both the language and VM level to make smart contract development more secure. Examples include the new asset permission system and external call check system.
+- Improvement of the node APIs and SDK to ease the development cycle for smart contracts, including coding, unit testing, integration testing, and deployment.
 
 The Leman Upgrade enabled us to build a Bridge and prototypes for an NFT Marketplace and a DEX. Those projects were not possible or significantly more error-prone and less efficient before the Leman Upgrade.
 

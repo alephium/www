@@ -62,12 +62,12 @@ _🚨 It is not yet possible to use the bridge on the mainnet 
 
 **How to create an address in Group 0?**
 
-- <span id="03e4">Open the Browser Extension Wallet:</span>
-- <span id="95f2">Click on the current address name, and then in the “+” icon.</span>
+- Open the Browser Extension Wallet:
+- Click on the current address name, and then in the “+” icon.
 
 ![](image_3d103f40c4.png)
 
-- <span id="eafa">Click on the Group selector and choose Group 0. Now you have a new address in Group 0!</span>
+- Click on the Group selector and choose Group 0. Now you have a new address in Group 0!
 
 **How to request test \$ALPH tokens?**
 
@@ -75,7 +75,7 @@ Don’t have \$ALPH in your wallet?
 
 You can ask for some right from the wallet!
 
-- <span id="5d0b">Click “Add funds” on the main page and then “Request \$ALPH.” You will receive 12 Testnet \$ALPH in a few minutes.</span>
+- Click “Add funds” on the main page and then “Request \$ALPH.” You will receive 12 Testnet \$ALPH in a few minutes.
 
 ![](image_1fdaa9775f.png)
 
@@ -511,8 +511,8 @@ If, for some reason, you left the bridge page before redeeming your tokens, you 
 
 This finishes the basic tutorial, but there are other transfers you can do, like:
 
-- <span id="ecc6">WBNB from Alephium to the Goerli Testnet</span>
-- <span id="7cc8">ALPH from the Goerli Testnet to BSC Testnet</span>
-- <span id="d710">WETH from Alephium to the BSC Testnet</span>
+- WBNB from Alephium to the Goerli Testnet
+- ALPH from the Goerli Testnet to BSC Testnet
+- WETH from Alephium to the BSC Testnet
 
 If you need help or have extra questions, you are welcome to reach out in the \# 🎨dev-dapp channel on <a href="https://alephium.org/discord/" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/discord/" rel="noopener" target="_blank">Discord</a>, or in the Alephium <a href="https://t.me/alephiumgroup" class="markup--anchor markup--p-anchor" data-href="https://t.me/alephiumgroup" rel="noopener" target="_blank">Telegram</a> channel. Don’t forget to follow <a href="https://twitter.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium" rel="noopener" target="_blank">@alephium on Twitter</a> to stay up-to-date.

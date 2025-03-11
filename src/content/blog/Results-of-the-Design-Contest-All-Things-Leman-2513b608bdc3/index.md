@@ -21,12 +21,12 @@ Before diving into the results, let’s look at some contest entries that caught
 
 There was a lot of creativity in the entries! While the selection below only includes the top 6 picks, rest assured the jury appreciated every single entries, even the ones not featured here.
 
-- <span id="d69d">“A” featured the “Leman Bussin” expression in a 00’s vibes, with big letters and many colors. By the way, “bussin” means really good!😉.</span>
-- <span id="dd84">“B” took a different approach with an 8-bit Baby Alpaca: Ultimate cuteness in the Swiss hills!</span>
-- <span id="4575">“C” has a peaceful tone, with the Alephium logo and a placid Leman lake with a few sailboats and a clouded sky.</span>
-- <span id="095d">“D” Brought back the 90s, with the Leman Lake map inside the “alephium” letters with three images on the left: one of the lake, a mirror version of the logo, and possibly a local flower, who knows! But it is an exciting composition.</span>
-- <span id="c7eb">“E” has the “Leman Bussin” motto too, with the alephium logo everywhere (make a sticker?).</span>
-- <span id="b5f6">“F” encompasses the Leman upgrade with vibrant colors and a nostalgic 80s vibe, featuring dynamic rays reminiscent of the Swiss mountains, leading the eyes toward the alephium logo.</span>
+- “A” featured the “Leman Bussin” expression in a 00’s vibes, with big letters and many colors. By the way, “bussin” means really good!😉.
+- “B” took a different approach with an 8-bit Baby Alpaca: Ultimate cuteness in the Swiss hills!
+- “C” has a peaceful tone, with the Alephium logo and a placid Leman lake with a few sailboats and a clouded sky.
+- “D” Brought back the 90s, with the Leman Lake map inside the “alephium” letters with three images on the left: one of the lake, a mirror version of the logo, and possibly a local flower, who knows! But it is an exciting composition.
+- “E” has the “Leman Bussin” motto too, with the alephium logo everywhere (make a sticker?).
+- “F” encompasses the Leman upgrade with vibrant colors and a nostalgic 80s vibe, featuring dynamic rays reminiscent of the Swiss mountains, leading the eyes toward the alephium logo.
 
 ![](image_fdc92c8dba.jpg)
 

@@ -57,10 +57,10 @@ In addition, Schnorr signatures support a technique called “key aggregation”
 
 Now the Alephium blockchain enabled:
 
-- <span id="293a">Interaction with <a href="https://nostr.com/" class="markup--anchor markup--li-anchor" data-href="https://nostr.com/" rel="noopener" target="_blank">Nostr</a> and other Schnorr-based apps;</span>
-- <span id="5627">Increased privacy;</span>
-- <span id="357f">Compression of tx data on-chain in case of multisig and coin-join or atomic swap;</span>
-- <span id="f725">Interoperability with other Schnorr-based chains & protocols.</span>
+- Interaction with <a href="https://nostr.com/" class="markup--anchor markup--li-anchor" data-href="https://nostr.com/" rel="noopener" target="_blank">Nostr</a> and other Schnorr-based apps;
+- Increased privacy;
+- Compression of tx data on-chain in case of multisig and coin-join or atomic swap;
+- Interoperability with other Schnorr-based chains & protocols.
 
 Currently, the browser wallet extension already supports the Schnorr type of account and can interact with the Nortr protocol.
 
@@ -82,19 +82,19 @@ Now that the network is upgraded, different initiatives will be developed in par
 
 #### Code-related
 
-- <span id="0cd0">**Bridge:** deployment on the mainnet of the wormhole-based Alephium-Ethereum Bridge done by the core development team and then looking for other ecosystems to bridge to;</span>
-- <span id="17bf">**Wallets:** New Desktop Wallet and the debut of the Mobile Wallet with token support, dApps interaction, and wallet-connect support; Improved User Experience for the Browser Wallet Extension with additional features such as NFT support.</span>
-- <span id="2bad">**Prototypes:** DEX and NFT Market prototypes for new devs to have a foundation to build upon;</span>
-- <span id="6897">**Light clients, optimizations to storage, test coverages:** general network optimizations and exploring new directions to leverage the scalability of the blockchain;</span>
-- <span id="8518">**Integrations** with wallets (Ledger, for example) and payments services.</span>
+- **Bridge:** deployment on the mainnet of the wormhole-based Alephium-Ethereum Bridge done by the core development team and then looking for other ecosystems to bridge to;
+- **Wallets:** New Desktop Wallet and the debut of the Mobile Wallet with token support, dApps interaction, and wallet-connect support; Improved User Experience for the Browser Wallet Extension with additional features such as NFT support.
+- **Prototypes:** DEX and NFT Market prototypes for new devs to have a foundation to build upon;
+- **Light clients, optimizations to storage, test coverages:** general network optimizations and exploring new directions to leverage the scalability of the blockchain;
+- **Integrations** with wallets (Ledger, for example) and payments services.
 
 #### Community Development
 
-- <span id="e60d">Launch of the \#BuildonAlephium Hackathon Series</span>
-- <span id="5525">Presence in dev events</span>
-- <span id="e8cd">Visibility & engagement in like-minded developer communities</span>
-- <span id="6c68">Partnership & integration with open-source solutions from other ecosystems</span>
-- <span id="0717">Grants / Bounties Ambassador program</span>
+- Launch of the \#BuildonAlephium Hackathon Series
+- Presence in dev events
+- Visibility & engagement in like-minded developer communities
+- Partnership & integration with open-source solutions from other ecosystems
+- Grants / Bounties Ambassador program
 
 ---
 

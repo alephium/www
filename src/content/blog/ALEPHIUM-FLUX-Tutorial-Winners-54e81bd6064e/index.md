@@ -46,17 +46,17 @@ Actually… we got several. Picking the champion was no easy task, we loved your
 
 ### 2nd place
 
-- <span id="c0fd">A <a href="https://www.youtube.com/watch?v=nj4Ypgj0Xow" class="markup--anchor markup--li-anchor" data-href="https://www.youtube.com/watch?v=nj4Ypgj0Xow" rel="noopener" target="_blank">video</a> by <a href="https://www.youtube.com/@leftychris1058" class="markup--anchor markup--li-anchor" data-href="https://www.youtube.com/@leftychris1058" rel="noopener" target="_blank">LeftyChris</a></span>
-- <span id="a245">A <a href="https://www.youtube.com/watch?v=ALrV-axWowY" class="markup--anchor markup--li-anchor" data-href="https://www.youtube.com/watch?v=ALrV-axWowY" rel="noopener" target="_blank">video</a> by <a href="https://www.youtube.com/@galosf" class="markup--anchor markup--li-anchor" data-href="https://www.youtube.com/@galosf" rel="noopener" target="_blank">Galo Salame</a></span>
-- <span id="000d">A <a href="https://steemit.com/alephium/@cryptoraspberry/host-your-own-alephium-node-on-decentralized-web-3-0-flux-tutorial" class="markup--anchor markup--li-anchor" data-href="https://steemit.com/alephium/@cryptoraspberry/host-your-own-alephium-node-on-decentralized-web-3-0-flux-tutorial" rel="noopener" target="_blank">blog post</a> by <a href="https://steemit.com/@cryptoraspberry" class="markup--anchor markup--li-anchor" data-href="https://steemit.com/@cryptoraspberry" rel="noopener" target="_blank">Cryptoraspberry</a></span>
-- <span id="0a0d">A <a href="https://twitter.com/weineil_/status/1612568785948495903" class="markup--anchor markup--li-anchor" data-href="https://twitter.com/weineil_/status/1612568785948495903" rel="noopener" target="_blank">Twitter thread</a> by <a href="https://twitter.com/weineil_" class="markup--anchor markup--li-anchor" data-href="https://twitter.com/weineil_" rel="noopener" target="_blank">@weineil\_</a></span>
+- A <a href="https://www.youtube.com/watch?v=nj4Ypgj0Xow" class="markup--anchor markup--li-anchor" data-href="https://www.youtube.com/watch?v=nj4Ypgj0Xow" rel="noopener" target="_blank">video</a> by <a href="https://www.youtube.com/@leftychris1058" class="markup--anchor markup--li-anchor" data-href="https://www.youtube.com/@leftychris1058" rel="noopener" target="_blank">LeftyChris</a>
+- A <a href="https://www.youtube.com/watch?v=ALrV-axWowY" class="markup--anchor markup--li-anchor" data-href="https://www.youtube.com/watch?v=ALrV-axWowY" rel="noopener" target="_blank">video</a> by <a href="https://www.youtube.com/@galosf" class="markup--anchor markup--li-anchor" data-href="https://www.youtube.com/@galosf" rel="noopener" target="_blank">Galo Salame</a>
+- A <a href="https://steemit.com/alephium/@cryptoraspberry/host-your-own-alephium-node-on-decentralized-web-3-0-flux-tutorial" class="markup--anchor markup--li-anchor" data-href="https://steemit.com/alephium/@cryptoraspberry/host-your-own-alephium-node-on-decentralized-web-3-0-flux-tutorial" rel="noopener" target="_blank">blog post</a> by <a href="https://steemit.com/@cryptoraspberry" class="markup--anchor markup--li-anchor" data-href="https://steemit.com/@cryptoraspberry" rel="noopener" target="_blank">Cryptoraspberry</a>
+- A <a href="https://twitter.com/weineil_/status/1612568785948495903" class="markup--anchor markup--li-anchor" data-href="https://twitter.com/weineil_/status/1612568785948495903" rel="noopener" target="_blank">Twitter thread</a> by <a href="https://twitter.com/weineil_" class="markup--anchor markup--li-anchor" data-href="https://twitter.com/weineil_" rel="noopener" target="_blank">@weineil\_</a>
 
 Other participants will receive a small participation prize as a token of appreciation.
 
 ### The Prizes
 
-- <span id="5063">1st place, each gets **100 FLUX and 400 ALPH**</span>
-- <span id="1bad">2nd place, each gets **50 FLUX and 200 ALPH**</span>
+- 1st place, each gets **100 FLUX and 400 ALPH**
+- 2nd place, each gets **50 FLUX and 200 ALPH**
 
 ### The Process
 

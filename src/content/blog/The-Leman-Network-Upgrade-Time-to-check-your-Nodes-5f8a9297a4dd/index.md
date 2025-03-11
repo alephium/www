@@ -34,8 +34,8 @@ Who & What:
 
 **Users running Full Node externally:**
 
-- <span id="8314">Dappnode: There is nothing to do if you’re running the node with the auto-update option checked! If not, you must go to the alephium package and click the upgrade/update button.</span>
-- <span id="ea82">Flux: There is nothing to do.</span>
+- Dappnode: There is nothing to do if you’re running the node with the auto-update option checked! If not, you must go to the alephium package and click the upgrade/update button.
+- Flux: There is nothing to do.
 
 **Services providers (exchanges, wallet providers, etc):** latest Full Node and Explorer Backend (if necessary)
 
@@ -55,10 +55,10 @@ This additional download is only needed for those running the explorer backend l
 
 The Leman Network Upgrade is closer than ever! Here is what you can expect next:
 
-- <span id="c766">Patches release, if necessary.</span>
-- <span id="1fe3">Setup the activation timestamp and release full node `v2.0`</span>
-- <span id="dd5a">Propagation `v2.0` of the full node across the majority of the network before the activation timestamp.</span>
-- <span id="9307">Completion of the Leman Upgrade!</span>
+- Patches release, if necessary.
+- Setup the activation timestamp and release full node `v2.0`
+- Propagation `v2.0` of the full node across the majority of the network before the activation timestamp.
+- Completion of the Leman Upgrade!
 
 ---
 

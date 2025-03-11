@@ -81,8 +81,8 @@ It has been a tight race! And some of you are very fierce competitors! There’s
 
 The Top 10 winners will receive 200 ALPH each. The next 20 winners will receive 50 ALPH each. All of them will be contacted by email to complete the mandatory rewards agreement. Keep an eye on your inbox! Here are the winners:
 
-- <span id="3cb2">TOP 10: strvzt.eth, jimboarr.eth, I’m xie, andigokil, ofordile, Qira, roberto1516, DON T 笨､, VNGNZ, and dhatboi.</span>
-- <span id="87ba">NEXT 20: joelchido, ohang, NilGir, Antu_xyz, Diamanté, Phenom99, Yorubahoekage, tenma_mei, zey_zey, Sibeliphant, Ebublaq, Jubayr, Sami♧, KHAID, Youngc, Okeruru, ADIBOYYY, Ele03, Siam07, and Churchill7508</span>
+- TOP 10: strvzt.eth, jimboarr.eth, I’m xie, andigokil, ofordile, Qira, roberto1516, DON T 笨､, VNGNZ, and dhatboi.
+- NEXT 20: joelchido, ohang, NilGir, Antu_xyz, Diamanté, Phenom99, Yorubahoekage, tenma_mei, zey_zey, Sibeliphant, Ebublaq, Jubayr, Sami♧, KHAID, Youngc, Okeruru, ADIBOYYY, Ele03, Siam07, and Churchill7508
 
 Join us in thanking the <a href="https://twitter.com/Blockflow_DAO" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/Blockflow_DAO" rel="noopener" target="_blank">BlockFlow Alliance DAO</a> as half of the rewards come from them!
 
@@ -90,8 +90,8 @@ Join us in thanking the <a href="https://twitter.com/Blockflow_DAO" class="marku
 
 As the Zealy sprint concludes, there is plenty of ways for you to continue to engage with Alephium and our amazing community and ecosystem:
 
-- <span id="b95f">Our regular Zealy quests will come back with new challenges next year!</span>
-- <span id="3e0d">The <a href="https://medium.com/@alephium/alephium-launches-its-ambassador-program-8e9c9c8c9d94" class="markup--anchor markup--li-anchor" data-href="https://medium.com/@alephium/alephium-launches-its-ambassador-program-8e9c9c8c9d94" target="_blank">Ambassador program</a> launched literally yesterday! If you want some more involvement, come and apply!</span>
-- <span id="3661">The community rewards program is still open! Signal your contributions through <a href="https://docs.google.com/forms/d/e/1FAIpQLSeaSouXl-Hwd_lZohwgysqk-8whc9bydHuVpSCr1C6IoDHuoA/viewform" class="markup--anchor markup--li-anchor" data-href="https://docs.google.com/forms/d/e/1FAIpQLSeaSouXl-Hwd_lZohwgysqk-8whc9bydHuVpSCr1C6IoDHuoA/viewform" rel="noopener" target="_blank">this form</a> (but only the most extraordinary contributions will be rewarded!).</span>
+- Our regular Zealy quests will come back with new challenges next year!
+- The <a href="https://medium.com/@alephium/alephium-launches-its-ambassador-program-8e9c9c8c9d94" class="markup--anchor markup--li-anchor" data-href="https://medium.com/@alephium/alephium-launches-its-ambassador-program-8e9c9c8c9d94" target="_blank">Ambassador program</a> launched literally yesterday! If you want some more involvement, come and apply!
+- The community rewards program is still open! Signal your contributions through <a href="https://docs.google.com/forms/d/e/1FAIpQLSeaSouXl-Hwd_lZohwgysqk-8whc9bydHuVpSCr1C6IoDHuoA/viewform" class="markup--anchor markup--li-anchor" data-href="https://docs.google.com/forms/d/e/1FAIpQLSeaSouXl-Hwd_lZohwgysqk-8whc9bydHuVpSCr1C6IoDHuoA/viewform" rel="noopener" target="_blank">this form</a> (but only the most extraordinary contributions will be rewarded!).
 
 As always, join us on <a href="https://twitter.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium" rel="noopener" target="_blank">Twitter</a>, <a href="http://alephium.org/discord" class="markup--anchor markup--p-anchor" data-href="http://alephium.org/discord" rel="noopener" target="_blank">Discord</a>, <a href="https://t.me/alephiumgroup" class="markup--anchor markup--p-anchor" data-href="https://t.me/alephiumgroup" rel="noopener" target="_blank">Telegram</a> or <a href="https://www.reddit.com/r/Alephium/" class="markup--anchor markup--p-anchor" data-href="https://www.reddit.com/r/Alephium/" rel="noopener" target="_blank">Reddit</a>!

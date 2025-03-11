@@ -27,11 +27,11 @@ In this article, you will find all you need to successfully bridge two ways from
 
 This includes the following steps:
 
-- <span id="46c6">_What do you need to know beforehand to connect to the bridge?_</span>
-- <span id="290d">_How do you connect to the Bridge?_</span>
-- <span id="0903">_How do you connect to the BSC testnet?_</span>
-- <span id="d7b3">_How can an asset be bridged from Alephium to BSC testnet?_</span>
-- <span id="ce1e">_How do you bridge an asset from BSC testnet to Alephium?_</span>
+- _What do you need to know beforehand to connect to the bridge?_
+- _How do you connect to the Bridge?_
+- _How do you connect to the BSC testnet?_
+- _How can an asset be bridged from Alephium to BSC testnet?_
+- _How do you bridge an asset from BSC testnet to Alephium?_
 
 Let’s get started!
 
@@ -49,12 +49,12 @@ _🚨 It is not yet possible to use the \$BSC bridge on the mainnet 
 
 #### **How do you create an address in Group 0?**
 
-- <span id="3806">Open the Browser Extension Wallet:</span>
-- <span id="1d4f">Click on the current address name, and then in the “+” icon.</span>
+- Open the Browser Extension Wallet:
+- Click on the current address name, and then in the “+” icon.
 
 ![](image_011816df27.png)
 
-- <span id="cafe">Click on the Group selector and choose Group 0. Now you have a new address in Group 0!</span>
+- Click on the Group selector and choose Group 0. Now you have a new address in Group 0!
 
 (this also works on the mobile or desktop wallet — see <a href="https://x.com/alephium/status/1825536444754264354" class="markup--anchor markup--p-anchor" data-href="https://x.com/alephium/status/1825536444754264354" rel="noopener" target="_blank">here</a>)
 
@@ -64,7 +64,7 @@ Don’t have \$ALPH in your wallet?
 
 You can ask for some right from the wallet!
 
-- <span id="d61f">Click “Add funds” on the main page and then “Request \$ALPH.” You will receive 6Testnet \$ALPH in a few minutes.</span>
+- Click “Add funds” on the main page and then “Request \$ALPH.” You will receive 6Testnet \$ALPH in a few minutes.
 
 ![](image_914f8193b6.png)
 

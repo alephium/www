@@ -18,9 +18,9 @@ title: 🚀 Welcome to Alephium (ALPH)
 
 Alephium is the first live Layer 1 sharded blockchain scaling and improving on Bitcoin core technologies, Proof of Work & UTXO. It delivers a highly performant, secure DeFi & Dapps platform with enhanced energy efficiency.
 
-- <span id="b763">Like Bitcoin, but more programmable & energy efficient.</span>
-- <span id="583e">Like Ethereum, but more secure & scalable.</span>
-- <span id="60b2">Like Solana, but more decentralised & trustless.</span>
+- Like Bitcoin, but more programmable & energy efficient.
+- Like Ethereum, but more secure & scalable.
+- Like Solana, but more decentralised & trustless.
 
 ---
 
@@ -50,21 +50,21 @@ Check out our <a href="https://github.com/alephium/white-paper" class="markup--a
 
 Core Platform
 
-- <span id="3285">02.2019 — Whitepapers publicly released</span>
-- <span id="15c9">Q1.2020 — Alpha version of the core sharding protocol implemented and tested on AWS</span>
-- <span id="5c15">12.2020 — Testnet Launch</span>
-- <span id="6d30">Q1.2021 — Smart contract support</span>
-- <span id="bb8c">09.2021 — Desktop wallet & explorer public release</span>
-- <span id="dd3d">08.11.2021 — Mainnet launch & 3rd party cloud mining service</span>
-- <span id="aa76">01.2022–1st dApp proof-of-concept</span>
+- 02.2019 — Whitepapers publicly released
+- Q1.2020 — Alpha version of the core sharding protocol implemented and tested on AWS
+- 12.2020 — Testnet Launch
+- Q1.2021 — Smart contract support
+- 09.2021 — Desktop wallet & explorer public release
+- 08.11.2021 — Mainnet launch & 3rd party cloud mining service
+- 01.2022–1st dApp proof-of-concept
 
 Ecosystem
 
-- <span id="5332">11.2021 — Joined the UTXO alliance & Bitcoin Association Switzerland</span>
-- <span id="1371">Q4.2021 — Mining ecosystem development: miners development, reference mining pool and pool integration.</span>
-- <span id="fdcc">13.12.2021 — First community mining pool</span>
-- <span id="917d">12.01.2022 — First exchange listing: Gate.io</span>
-- <span id="be66">02.2022–9 mining pools on Alephium</span>
+- 11.2021 — Joined the UTXO alliance & Bitcoin Association Switzerland
+- Q4.2021 — Mining ecosystem development: miners development, reference mining pool and pool integration.
+- 13.12.2021 — First community mining pool
+- 12.01.2022 — First exchange listing: Gate.io
+- 02.2022–9 mining pools on Alephium
 
 ### 🛣️ Roadmap<a href="https://wiki.alephium.org/5min-overview#%EF%B8%8F-roadmap" class="markup--anchor markup--h3-anchor" data-href="https://wiki.alephium.org/5min-overview#%EF%B8%8F-roadmap" rel="noopener" target="_blank" title="Direct link to heading">​</a>
 
@@ -72,26 +72,26 @@ The network is young and growing rapidly. We will update the roadmap to reflect 
 
 Core Platform
 
-- <span id="fe01">Improve the robustness, efficiency and dev-experience of the full node</span>
-- <span id="0463">Improve documentation of the core infrastructure</span>
-- <span id="fa04">Improve the Alephium SDK with more features</span>
-- <span id="7984">Improve the robustness and efficiency of the explorer backend</span>
-- <span id="ae2e">Include chain statistics and information on the explorer</span>
-- <span id="c6c7">Bridge development, testing, and launch</span>
-- <span id="a289">Leman Network Upgrade for cross-chain interoperability</span>
-- <span id="df24">dApp support in the desktop wallet</span>
-- <span id="2f85">DEX development, testing, and launch</span>
-- <span id="d9ad">Mobile wallet</span>
-- <span id="f758">Hardware wallet integration</span>
+- Improve the robustness, efficiency and dev-experience of the full node
+- Improve documentation of the core infrastructure
+- Improve the Alephium SDK with more features
+- Improve the robustness and efficiency of the explorer backend
+- Include chain statistics and information on the explorer
+- Bridge development, testing, and launch
+- Leman Network Upgrade for cross-chain interoperability
+- dApp support in the desktop wallet
+- DEX development, testing, and launch
+- Mobile wallet
+- Hardware wallet integration
 
 Ecosystem
 
-- <span id="e102">Website revamp</span>
-- <span id="76e4">Build-up community engagement & marketing initiatives (hackathon, AMAs, community competitions, campaigns, etc)</span>
-- <span id="b906">Key industry events (PBWS, EthCCand others)</span>
-- <span id="f2e9">DEX listing (after the deployment of the bridge)</span>
-- <span id="9406">Additional CEX listing</span>
-- <span id="b4b5">3rd party dApps (NFT, DEX, stablecoin) on Alephium</span>
+- Website revamp
+- Build-up community engagement & marketing initiatives (hackathon, AMAs, community competitions, campaigns, etc)
+- Key industry events (PBWS, EthCCand others)
+- DEX listing (after the deployment of the bridge)
+- Additional CEX listing
+- 3rd party dApps (NFT, DEX, stablecoin) on Alephium
 
 ### 🛡 Our tokenomics<a href="https://wiki.alephium.org/5min-overview#-our-tokenomics" class="markup--anchor markup--h3-anchor" data-href="https://wiki.alephium.org/5min-overview#-our-tokenomics" rel="noopener" target="_blank" title="Direct link to heading">​</a>
 
@@ -129,19 +129,19 @@ Meet the rest of the team on our <a href="https://alephium.org/" class="markup--
 
 ### Talk with us<a href="https://wiki.alephium.org/5min-overview#talk-with-us" class="markup--anchor markup--h3-anchor" data-href="https://wiki.alephium.org/5min-overview#talk-with-us" rel="noopener" target="_blank" title="Direct link to heading">​</a>
 
-- <span id="c8cb"><a href="https://discord.gg/JErgRBfRSB" class="markup--anchor markup--li-anchor" data-href="https://discord.gg/JErgRBfRSB" rel="noopener noreferrer noopener" target="_blank">Discord</a></span>
-- <span id="9f00"><a href="https://t.me/alephiumgroup" class="markup--anchor markup--li-anchor" data-href="https://t.me/alephiumgroup" rel="noopener noreferrer noopener" target="_blank">Telegram</a></span>
-- <span id="d776"><a href="https://www.reddit.com/r/Alephium/" class="markup--anchor markup--li-anchor" data-href="https://www.reddit.com/r/Alephium/" rel="noopener noreferrer noopener" target="_blank">Reddit</a></span>
+- <a href="https://discord.gg/JErgRBfRSB" class="markup--anchor markup--li-anchor" data-href="https://discord.gg/JErgRBfRSB" rel="noopener noreferrer noopener" target="_blank">Discord</a>
+- <a href="https://t.me/alephiumgroup" class="markup--anchor markup--li-anchor" data-href="https://t.me/alephiumgroup" rel="noopener noreferrer noopener" target="_blank">Telegram</a>
+- <a href="https://www.reddit.com/r/Alephium/" class="markup--anchor markup--li-anchor" data-href="https://www.reddit.com/r/Alephium/" rel="noopener noreferrer noopener" target="_blank">Reddit</a>
 
 ### Connect with us<a href="https://wiki.alephium.org/5min-overview#connect-with-us" class="markup--anchor markup--h3-anchor" data-href="https://wiki.alephium.org/5min-overview#connect-with-us" rel="noopener" target="_blank" title="Direct link to heading">​</a>
 
-- <span id="7bb4"><a href="https://twitter.com/alephium" class="markup--anchor markup--li-anchor" data-href="https://twitter.com/alephium" rel="noopener noreferrer noopener" target="_blank">Twitter</a></span>
-- <span id="dbbf"><a href="https://www.linkedin.com/company/alephium" class="markup--anchor markup--li-anchor" data-href="https://www.linkedin.com/company/alephium" rel="noopener noreferrer noopener" target="_blank">LinkedIn</a></span>
-- <span id="4121"><a href="https://www.facebook.com/alephium" class="markup--anchor markup--li-anchor" data-href="https://www.facebook.com/alephium" rel="noopener noreferrer noopener" target="_blank">Facebook</a></span>
+- <a href="https://twitter.com/alephium" class="markup--anchor markup--li-anchor" data-href="https://twitter.com/alephium" rel="noopener noreferrer noopener" target="_blank">Twitter</a>
+- <a href="https://www.linkedin.com/company/alephium" class="markup--anchor markup--li-anchor" data-href="https://www.linkedin.com/company/alephium" rel="noopener noreferrer noopener" target="_blank">LinkedIn</a>
+- <a href="https://www.facebook.com/alephium" class="markup--anchor markup--li-anchor" data-href="https://www.facebook.com/alephium" rel="noopener noreferrer noopener" target="_blank">Facebook</a>
 
 ### Read, setup, explore, contribute<a href="https://wiki.alephium.org/5min-overview#read-setup-explore-contribute" class="markup--anchor markup--h3-anchor" data-href="https://wiki.alephium.org/5min-overview#read-setup-explore-contribute" rel="noopener" target="_blank" title="Direct link to heading">​</a>
 
-- <span id="7365"><a href="https://alephium.org/" class="markup--anchor markup--li-anchor" data-href="https://alephium.org/" rel="noopener noreferrer noopener" target="_blank">Website</a></span>
-- <span id="efab"><a href="https://github.com/alephium/white-paper" class="markup--anchor markup--li-anchor" data-href="https://github.com/alephium/white-paper" rel="noopener noreferrer noopener" target="_blank">Whitepapers</a></span>
-- <span id="7889"><a href="https://medium.com/@alephium" class="markup--anchor markup--li-anchor" data-href="https://medium.com/@alephium" rel="noopener noreferrer" target="_blank">Medium</a></span>
-- <span id="f740"><a href="https://github.com/alephium" class="markup--anchor markup--li-anchor" data-href="https://github.com/alephium" rel="noopener noreferrer noopener" target="_blank">GitHub</a></span>
+- <a href="https://alephium.org/" class="markup--anchor markup--li-anchor" data-href="https://alephium.org/" rel="noopener noreferrer noopener" target="_blank">Website</a>
+- <a href="https://github.com/alephium/white-paper" class="markup--anchor markup--li-anchor" data-href="https://github.com/alephium/white-paper" rel="noopener noreferrer noopener" target="_blank">Whitepapers</a>
+- <a href="https://medium.com/@alephium" class="markup--anchor markup--li-anchor" data-href="https://medium.com/@alephium" rel="noopener noreferrer" target="_blank">Medium</a>
+- <a href="https://github.com/alephium" class="markup--anchor markup--li-anchor" data-href="https://github.com/alephium" rel="noopener noreferrer noopener" target="_blank">GitHub</a>

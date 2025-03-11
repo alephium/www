@@ -37,7 +37,7 @@ If you feel that you prefer a slow-paced guide, the written version is for you!
 
 **There are some prerequisites you will need before bridging!**
 
-1.  <span id="25b6">**Pick the wallet you are going to use**</span>
+1.  **Pick the wallet you are going to use**
 
 It works with any of our <a href="https://alephium.org/#wallets" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/#wallets" rel="noopener" target="_blank">wallets</a>! But for this tutorial, we chose to show how easy it is to work with both the mobile wallet and the browser extension.
 

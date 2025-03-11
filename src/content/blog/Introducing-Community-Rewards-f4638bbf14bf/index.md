@@ -45,12 +45,12 @@ This is an experimental and discretionary rewards program for our active Alephiu
 
 Alephium considers a number of variables in determining rewards. Determinations of eligibility, score and all terms related to a reward are at the sole and final discretion of Alephium.
 
-- <span id="2bae">Participants are responsible for all taxes.</span>
-- <span id="5102">All rewards are subject to applicable law.</span>
-- <span id="03b5">Participants’ contributions must not violate any law or compromise any data that is not theirs.</span>
-- <span id="f271">Participants take part in this program at their own risk and expense.</span>
-- <span id="423e">Participants will be asked to sign a simple contract with their name and physical address before receiving the reward. Failure to do so will result in forfeiture of the reward.</span>
-- <span id="e92b">Participants are responsible for notifying Alephium of any changes to their contact information. Failure to do so may lead to the forfeiture of any rewards participants may become eligible for and receive.</span>
+- Participants are responsible for all taxes.
+- All rewards are subject to applicable law.
+- Participants’ contributions must not violate any law or compromise any data that is not theirs.
+- Participants take part in this program at their own risk and expense.
+- Participants will be asked to sign a simple contract with their name and physical address before receiving the reward. Failure to do so will result in forfeiture of the reward.
+- Participants are responsible for notifying Alephium of any changes to their contact information. Failure to do so may lead to the forfeiture of any rewards participants may become eligible for and receive.
 
 Alephium reserves the right to discontinue the Program at any time without notice.
 
@@ -58,6 +58,6 @@ Alephium reserves the right to discontinue the Program at any time without notic
 
 Are not eligible for rewards:
 
-- <span id="8e35">Individuals who have not reached legal majority age in their country of residence.</span>
-- <span id="0864">Individuals on sanctions lists or who are in countries listed on <a href="https://www.seco.admin.ch/seco/fr/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen/sanktionen-embargos/sanktionsmassnahmen.html" class="markup--anchor markup--li-anchor" data-href="https://www.seco.admin.ch/seco/fr/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen/sanktionen-embargos/sanktionsmassnahmen.html" rel="noopener" target="_blank">SECO’s sanctions list</a> or where crypto-assets have been banned.</span>
-- <span id="2faf">Alephium employees, consultants and their families.</span>
+- Individuals who have not reached legal majority age in their country of residence.
+- Individuals on sanctions lists or who are in countries listed on <a href="https://www.seco.admin.ch/seco/fr/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen/sanktionen-embargos/sanktionsmassnahmen.html" class="markup--anchor markup--li-anchor" data-href="https://www.seco.admin.ch/seco/fr/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen/sanktionen-embargos/sanktionsmassnahmen.html" rel="noopener" target="_blank">SECO’s sanctions list</a> or where crypto-assets have been banned.
+- Alephium employees, consultants and their families.

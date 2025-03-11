@@ -24,10 +24,10 @@ title: Alephium available on Ledger Hardware Wallets
 
 #### **How to get started?**
 
-1.  <span id="1eae">Open the Ledger Live, connect your Ledger device and access the “My Ledger” tab.</span>
-2.  <span id="1c9d"><a href="https://support.ledger.com/article/Alephium-ALPH" class="markup--anchor markup--li-anchor" data-href="https://support.ledger.com/article/Alephium-ALPH" rel="noopener" target="_blank">Install</a> the Alephium app on your Ledger Nano S+ / Nano X / Stax / Flex.</span>
-3.  <span id="5b73">Connect your Ledger device to the Alephium Browser Extension wallet available on <a href="https://chromewebstore.google.com/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj" class="markup--anchor markup--li-anchor" data-href="https://chromewebstore.google.com/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj" rel="noopener" target="_blank">Chrome</a> and <a href="https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/" class="markup--anchor markup--li-anchor" data-href="https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/" rel="noopener" target="_blank">Firefox</a>.</span>
-4.  <span id="ef10">Follow the on-screen instructions to complete the setup.</span>
+1.  Open the Ledger Live, connect your Ledger device and access the “My Ledger” tab.
+2.  <a href="https://support.ledger.com/article/Alephium-ALPH" class="markup--anchor markup--li-anchor" data-href="https://support.ledger.com/article/Alephium-ALPH" rel="noopener" target="_blank">Install</a> the Alephium app on your Ledger Nano S+ / Nano X / Stax / Flex.
+3.  Connect your Ledger device to the Alephium Browser Extension wallet available on <a href="https://chromewebstore.google.com/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj" class="markup--anchor markup--li-anchor" data-href="https://chromewebstore.google.com/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj" rel="noopener" target="_blank">Chrome</a> and <a href="https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/" class="markup--anchor markup--li-anchor" data-href="https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/" rel="noopener" target="_blank">Firefox</a>.
+4.  Follow the on-screen instructions to complete the setup.
 
 For more detailed instructions, visit <a href="https://docs.alephium.org/wallet/ledger/" class="markup--anchor markup--p-anchor" data-href="https://docs.alephium.org/wallet/ledger/" rel="noopener" target="_blank">Alephium’s Ledger guide.</a>
 

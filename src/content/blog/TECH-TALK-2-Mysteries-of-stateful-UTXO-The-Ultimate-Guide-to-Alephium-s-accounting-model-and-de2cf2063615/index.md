@@ -125,8 +125,8 @@ VM: **Can you tell us more about this? Where is the state actually stored, and h
 
 CW: Everything is stored in two distinct Merkle Trees:
 
-- <span id="1280">One Merkle Tree is for the assets in the UTXOs,</span>
-- <span id="abae">The second Merkle Tree is for the contracts states, it stores variables and data like the BTC or ETH price in the case of an oracle for example,</span>
+- One Merkle Tree is for the assets in the UTXOs,
+- The second Merkle Tree is for the contracts states, it stores variables and data like the BTC or ETH price in the case of an oracle for example,
 
 We could have put this logic in the same tree as the contract states, but these are different kinds of data. By separating them in different trees, we can do specific optimizations. For example, typically the contract state/data will be much more mutable than the contract logic.
 

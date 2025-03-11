@@ -14,8 +14,8 @@ This article will explore Alephium’s Asset Permission System (APS) and discuss
 
 ### TL;DR
 
-- <span id="5a87">EVM’s token approvals, especially the unlimited ones, can cause users to lose control over their assets, and expose their wallets to hackers.</span>
-- <span id="5fd6">Alephium’s APS eliminates EVM’s token approval risk by allowing users and contracts to approve tokens on demand and in the same transaction.</span>
+- EVM’s token approvals, especially the unlimited ones, can cause users to lose control over their assets, and expose their wallets to hackers.
+- Alephium’s APS eliminates EVM’s token approval risk by allowing users and contracts to approve tokens on demand and in the same transaction.
 
 ### EVM’s Token Approval Explained
 
@@ -27,8 +27,8 @@ The mechanism used for this purpose is usually called Approvals, which enables t
 
 Although approvals play a crucial role in numerous decentralized applications on the EVM, they present critical risks for users:
 
-- <span id="b0b7">**There is room for unsafe choices:** This method leaves to the user’s discretion how much they will allow the smart contract to spend. The user can allow infinite spending, leaving an open door for his assets to be drained if an exploit compromises this smart contract.</span>
-- <span id="a441">**Broken User Experience**: First, the user needs to send a transaction to approve an amount. And later, execute the transfer he wants. If the user only allows the amount spent in that particular transaction, the next time he interacts with this smart contract, all the steps will be necessary again.</span>
+- **There is room for unsafe choices:** This method leaves to the user’s discretion how much they will allow the smart contract to spend. The user can allow infinite spending, leaving an open door for his assets to be drained if an exploit compromises this smart contract.
+- **Broken User Experience**: First, the user needs to send a transaction to approve an amount. And later, execute the transfer he wants. If the user only allows the amount spent in that particular transaction, the next time he interacts with this smart contract, all the steps will be necessary again.
 
 ### Understanding Alephium’s Asset Permission System
 
@@ -36,8 +36,8 @@ Alephium’s APS is designed to provide a flexible and safer way for developers 
 
 A TxScript (short for transaction script) is a piece of code to interact with smart contracts. Within this code, it is possible to use the APS to manage how the assets will be spent. The APS can:
 
-- <span id="2ffb">Mark functions with annotations to explicitly state if it requires preapproved assets or contract assets (and check if the annotation is consistent with the code);</span>
-- <span id="280d">Ensure explicit assets approval for functions requiring assets, and ensure that, at maximum, only the explicitly specified amount of assets (ALPH and tokens) can be spent.</span>
+- Mark functions with annotations to explicitly state if it requires preapproved assets or contract assets (and check if the annotation is consistent with the code);
+- Ensure explicit assets approval for functions requiring assets, and ensure that, at maximum, only the explicitly specified amount of assets (ALPH and tokens) can be spent.
 
 For example:
 
@@ -53,10 +53,10 @@ Using the APS, in combination with the UTXO model, all the approvals can be defi
 
 The APS built on Alephium provides several tools to improve the security of the transactions, generating multiple benefits for developers and users alike. When comparing APS with EVM’s asset approval mechanism:
 
-- <span id="e90c">**Assets Flow:** In Ethereum, assets are managed by contracts, and approvals need to be pre-requested separately, breaking the transfer flow. In Alephium, funds can be sent (approval and transfer) using one transaction. It contains a TxScript using the APS functions, which manages the flow of funds together with smart contracts.</span>
-- <span id="521d">**Assets Approval:** Ethereum’s token approval only allows for the approval of a specific asset. That equals multiple approvals when using more than one asset in a transaction. In contrast, Alephium’s APS allows asset management from multiple sources.</span>
-- <span id="8488">**Built-in Functions:** Alephium’s APS provides built-in functions for committing assets and using them immediately, whereas Ethereum requires explicit approval and transfer calls.</span>
-- <span id="6887">**User Experience**: The APS controls all fund management on demand, so the user manual interaction with the dApps is restricted to the transaction they want to make.</span>
+- **Assets Flow:** In Ethereum, assets are managed by contracts, and approvals need to be pre-requested separately, breaking the transfer flow. In Alephium, funds can be sent (approval and transfer) using one transaction. It contains a TxScript using the APS functions, which manages the flow of funds together with smart contracts.
+- **Assets Approval:** Ethereum’s token approval only allows for the approval of a specific asset. That equals multiple approvals when using more than one asset in a transaction. In contrast, Alephium’s APS allows asset management from multiple sources.
+- **Built-in Functions:** Alephium’s APS provides built-in functions for committing assets and using them immediately, whereas Ethereum requires explicit approval and transfer calls.
+- **User Experience**: The APS controls all fund management on demand, so the user manual interaction with the dApps is restricted to the transaction they want to make.
 
 ### What difference does the APS make?
 

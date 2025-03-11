@@ -58,12 +58,12 @@ On the Desktop Wallet, you can now export your transactions history in the follo
 
 ![](image_751fe37d26.gif)
 
-- <span id="f6a1">Go to the Addresses section;</span>
-- <span id="c26a">Choose which address you want to export the transactions from;</span>
-- <span id="abc6">Click on export;</span>
-- <span id="b439">Select the time period;</span>
-- <span id="d6f5">Save the CSV file;</span>
-- <span id="5700">_Et voilà!_</span>
+- Go to the Addresses section;
+- Choose which address you want to export the transactions from;
+- Click on export;
+- Select the time period;
+- Save the CSV file;
+- _Et voilà!_
 
 ### Developer tools: Private key export and deploy/call contract buttons
 
@@ -79,9 +79,9 @@ The wallet will guide you through the process, and if any assistance is needed, 
 
 Now, after importing your wallet using the recovery phrase, the wallet can scan the connected network to discover all the active addresses you have used in the past. An active address is one that has at least one transaction. That’s how you do it:
 
-- <span id="4058">Go to the Addresses section;</span>
-- <span id="bccf">Click on the wrench icon next to the “+ New address button”;</span>
-- <span id="9196">Click on the “Search” button in the “Discover active addresses” option</span>
+- Go to the Addresses section;
+- Click on the wrench icon next to the “+ New address button”;
+- Click on the “Search” button in the “Discover active addresses” option
 
 Now the Desktop wallet shows all active addresses linked to this recovery phrase.
 

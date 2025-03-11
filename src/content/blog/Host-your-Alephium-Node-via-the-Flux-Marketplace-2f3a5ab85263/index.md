@@ -18,10 +18,10 @@ The Flux Cloud is a decentralized cloud computing system based on thousands of s
 
 There are plenty of advantages to using Flux instead of traditional Web2 infrastructure providers:
 
-- <span id="5bb9">All applications are redundant and have automatic failovers in case of outages.</span>
-- <span id="3c3e">The Flux Cloud is agnostic to code language as it uses Docker Hub containers as the on-ramp.</span>
-- <span id="d936">The Flux Cloud automatically keeps applications up to date with the respective container.</span>
-- <span id="49e6">The Flux Cloud offers uncompetitive pricing.</span>
+- All applications are redundant and have automatic failovers in case of outages.
+- The Flux Cloud is agnostic to code language as it uses Docker Hub containers as the on-ramp.
+- The Flux Cloud automatically keeps applications up to date with the respective container.
+- The Flux Cloud offers uncompetitive pricing.
 
 **Let's proceed with the guide on deploying your own Alephium Node via the Flux Marketplace!**
 
@@ -31,8 +31,8 @@ Before following the tutorial, you will need to install the <a href="https://zel
 
 ![](image_c46b808b3b.png)
 
-1.  <span id="c99f">First head over to <a href="https://home.runonflux.io/" class="markup--anchor markup--li-anchor" data-href="https://home.runonflux.io/" rel="noopener ugc nofollow noopener" target="_blank">https://home.runonflux.io/</a></span>
-2.  <span id="193d">Once there, log in using your ZelID. It is an instance of the <a href="https://zelcore.io/" class="markup--anchor markup--li-anchor" data-href="https://zelcore.io/" rel="noopener" target="_blank">Zelcore Wallet</a>.</span>
+1.  First head over to <a href="https://home.runonflux.io/" class="markup--anchor markup--li-anchor" data-href="https://home.runonflux.io/" rel="noopener ugc nofollow noopener" target="_blank">https://home.runonflux.io/</a>
+2.  Once there, log in using your ZelID. It is an instance of the <a href="https://zelcore.io/" class="markup--anchor markup--li-anchor" data-href="https://zelcore.io/" rel="noopener" target="_blank">Zelcore Wallet</a>.
 
 ![](image_f96cac1028.png)
 
@@ -80,20 +80,20 @@ Click on the arrow pointing down to see your application specifications and the 
 
 **With Flux Cloud your Alephium Node is redundant! That means it is always running on a minimum of three instances simultaneously. You can check the Logs of the individual IPs to see the Node syncing properly.**
 
-1.  <span id="4e9e">Visit one IP by clicking on “Visit FluxNode”</span>
-2.  <span id="ead3">Log in with your ZelID</span>
-3.  <span id="1f24">Navigate to “Apps”, “Local Apps”, “My Local Apps”</span>
-4.  <span id="ec27">Click “Manage”, “Manage App”, “Log File”</span>
+1.  Visit one IP by clicking on “Visit FluxNode”
+2.  Log in with your ZelID
+3.  Navigate to “Apps”, “Local Apps”, “My Local Apps”
+4.  Click “Manage”, “Manage App”, “Log File”
 
 **Remember, your Alephium Node is only subscribed for 22,000 Flux blocks which are ~ 44,000 minutes, so around one month. You will need to renew the payment monthly, so your Node does not get kicked off the network.**
 
-1.  <span id="e811">Visit <a href="https://home.runonflux.io/" class="markup--anchor markup--li-anchor" data-href="https://home.runonflux.io/" rel="noopener ugc nofollow noopener" target="_blank">https://home.runonflux.io/</a> and log in with your ZelID</span>
-2.  <span id="ff99">Navigate to “Apps”, “Global Apps”, “My Apps”</span>
-3.  <span id="8982">Click “Manage”, “Manage App”, “Update Specifications”</span>
-4.  <span id="79a9">Leave all the variables like they are, Click “Compute Update Message”</span>
-5.  <span id="5ddb">Sign the Message with the ZelID App and click “Update Flux App” after</span>
-6.  <span id="1605">Click on“Pay with Zelcore” to make the Flux Payment</span>
-7.  <span id="38c7">Voilà! Your Node has been renewed for 22,000 blocks</span>
+1.  Visit <a href="https://home.runonflux.io/" class="markup--anchor markup--li-anchor" data-href="https://home.runonflux.io/" rel="noopener ugc nofollow noopener" target="_blank">https://home.runonflux.io/</a> and log in with your ZelID
+2.  Navigate to “Apps”, “Global Apps”, “My Apps”
+3.  Click “Manage”, “Manage App”, “Update Specifications”
+4.  Leave all the variables like they are, Click “Compute Update Message”
+5.  Sign the Message with the ZelID App and click “Update Flux App” after
+6.  Click on“Pay with Zelcore” to make the Flux Payment
+7.  Voilà! Your Node has been renewed for 22,000 blocks
 
 **Have Fun supporting the Alephium Blockchain with decentralized infrastructure!**
 

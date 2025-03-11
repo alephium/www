@@ -116,26 +116,26 @@ The road ahead is long, but the journey is rewarding. We have many exciting thin
 
 #### Core Platform
 
-- <span id="ddce">Improve the robustness, efficiency and dev-experience of the full node</span>
-- <span id="1638">Improve documentation of the core infrastructure</span>
-- <span id="0926">Improve the Alephium SDK with more features</span>
-- <span id="b958">Improve the robustness and efficiency of the explorer back-end</span>
-- <span id="8c65">Include chain statistics and information on the explorer</span>
-- <span id="b6bb">Bridge development, testing, and launch</span>
-- <span id="bb31">Leman Network Upgrade for cross-chain interoperability</span>
-- <span id="6ff7">dApp support in the desktop wallet</span>
-- <span id="7036">DEX development, testing, and launch</span>
-- <span id="0fab">Mobile wallet</span>
-- <span id="b4d7">Hardware wallet integration</span>
+- Improve the robustness, efficiency and dev-experience of the full node
+- Improve documentation of the core infrastructure
+- Improve the Alephium SDK with more features
+- Improve the robustness and efficiency of the explorer back-end
+- Include chain statistics and information on the explorer
+- Bridge development, testing, and launch
+- Leman Network Upgrade for cross-chain interoperability
+- dApp support in the desktop wallet
+- DEX development, testing, and launch
+- Mobile wallet
+- Hardware wallet integration
 
 #### Ecosystem
 
-- <span id="5349">Website revamp</span>
-- <span id="3eed">Build-up community engagement & marketing initiatives (hackathon, AMAs, community competitions, campaigns, etc)</span>
-- <span id="3aef">Key industry events (PBWS, CVC, EthCC and others)</span>
-- <span id="5c90">DEX listing (after the deployment of the bridge)</span>
-- <span id="4293">Additional CEX listing</span>
-- <span id="c67c">3rd party dApps (NFT, DEX, stablecoin) on Alephium</span>
+- Website revamp
+- Build-up community engagement & marketing initiatives (hackathon, AMAs, community competitions, campaigns, etc)
+- Key industry events (PBWS, CVC, EthCC and others)
+- DEX listing (after the deployment of the bridge)
+- Additional CEX listing
+- 3rd party dApps (NFT, DEX, stablecoin) on Alephium
 
 We’re thrilled to share this journey with you and we are always open to your feedback and suggestions. If you haven’t already, come join the discussion on our <a href="https://twitter.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium" rel="noopener" target="_blank">Twitter</a>, <a href="https://discord.gg/JErgRBfRSB" class="markup--anchor markup--p-anchor" data-href="https://discord.gg/JErgRBfRSB" rel="noopener" target="_blank">Discord server</a>, our <a href="https://t.me/alephiumgroup" class="markup--anchor markup--p-anchor" data-href="https://t.me/alephiumgroup" rel="noopener" target="_blank">Telegram group</a> or the <a href="https://www.reddit.com/r/Alephium/" class="markup--anchor markup--p-anchor" data-href="https://www.reddit.com/r/Alephium/" rel="noopener" target="_blank">Subreddit</a>. We can’t wait to meet you!
 

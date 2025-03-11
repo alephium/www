@@ -77,7 +77,7 @@ No.
 
 #### Got links?
 
-- <span id="5772"><a href="https://github.com/lbqds" class="markup--anchor markup--li-anchor" data-href="https://github.com/lbqds" rel="noopener" target="_blank">https://github.com/lbqds</a></span>
+- <a href="https://github.com/lbqds" class="markup--anchor markup--li-anchor" data-href="https://github.com/lbqds" rel="noopener" target="_blank">https://github.com/lbqds</a>
 
 #### How/when did you come across crypto?
 
@@ -113,8 +113,8 @@ SEU, China; CTH, Sweden.
 
 #### Got links?
 
-- <span id="3ef1"><a href="https://hongchao.me" class="markup--anchor markup--li-anchor" data-href="https://hongchao.me" rel="noopener" target="_blank">https://hongchao.me</a></span>
-- <span id="44d8"><a href="https://github.com/h0ngcha0" class="markup--anchor markup--li-anchor" data-href="https://github.com/h0ngcha0" rel="noopener" target="_blank">https://github.com/h0ngcha0</a></span>
+- <a href="https://hongchao.me" class="markup--anchor markup--li-anchor" data-href="https://hongchao.me" rel="noopener" target="_blank">https://hongchao.me</a>
+- <a href="https://github.com/h0ngcha0" class="markup--anchor markup--li-anchor" data-href="https://github.com/h0ngcha0" rel="noopener" target="_blank">https://github.com/h0ngcha0</a>
 
 #### How/when did you come across crypto?
 
@@ -156,7 +156,7 @@ I’ve been snowboarding for more than 20 years, teaching trampoline to my kids,
 
 #### Got links?
 
-- <span id="024f"><a href="https://www.linkedin.com/in/benoitperroud/" class="markup--anchor markup--li-anchor" data-href="https://www.linkedin.com/in/benoitperroud/" rel="noopener" target="_blank">https://www.linkedin.com/in/benoitperroud/</a></span>
+- <a href="https://www.linkedin.com/in/benoitperroud/" class="markup--anchor markup--li-anchor" data-href="https://www.linkedin.com/in/benoitperroud/" rel="noopener" target="_blank">https://www.linkedin.com/in/benoitperroud/</a>
 
 My socials are probably not interesting enough to be shared.
 
@@ -204,10 +204,10 @@ Computational geometry & physics.
 
 #### Got links?
 
-- <span id="7288"><a href="https://twitter.com/SimerPlaha" class="markup--anchor markup--li-anchor" data-href="https://twitter.com/SimerPlaha" rel="noopener" target="_blank">https://twitter.com/SimerPlaha</a></span>
-- <span id="c91f"><a href="https://github.com/simerplaha/" class="markup--anchor markup--li-anchor" data-href="https://github.com/simerplaha/" rel="noopener" target="_blank">https://github.com/simerplaha/</a></span>
-- <span id="3b40"><a href="https://linkedin.com/in/simerplaha" class="markup--anchor markup--li-anchor" data-href="https://linkedin.com/in/simerplaha" rel="noopener" target="_blank">https://linkedin.com/in/simerplaha</a></span>
-- <span id="3c53"><a href="https://dev.to/simerplaha" class="markup--anchor markup--li-anchor" data-href="https://dev.to/simerplaha" rel="noopener" target="_blank">https://dev.to/simerplaha</a></span>
+- <a href="https://twitter.com/SimerPlaha" class="markup--anchor markup--li-anchor" data-href="https://twitter.com/SimerPlaha" rel="noopener" target="_blank">https://twitter.com/SimerPlaha</a>
+- <a href="https://github.com/simerplaha/" class="markup--anchor markup--li-anchor" data-href="https://github.com/simerplaha/" rel="noopener" target="_blank">https://github.com/simerplaha/</a>
+- <a href="https://linkedin.com/in/simerplaha" class="markup--anchor markup--li-anchor" data-href="https://linkedin.com/in/simerplaha" rel="noopener" target="_blank">https://linkedin.com/in/simerplaha</a>
+- <a href="https://dev.to/simerplaha" class="markup--anchor markup--li-anchor" data-href="https://dev.to/simerplaha" rel="noopener" target="_blank">https://dev.to/simerplaha</a>
 
 #### How/when did you come across crypto?
 
@@ -227,8 +227,8 @@ Database related software development.
 
 #### What is it you care the most for in our creation?
 
-1.  <span id="211c">Alpehium’s scalability.</span>
-2.  <span id="4912">High performance & testable code.</span>
+1.  Alpehium’s scalability.
+2.  High performance & testable code.
 
 ---
 
@@ -250,8 +250,8 @@ Math and coding are my hobbies …
 
 #### Got links?
 
-- <span id="c2b7"><a href="https://github.com/polarker" class="markup--anchor markup--li-anchor" data-href="https://github.com/polarker" rel="noopener" target="_blank">https://github.com/polarker</a></span>
-- <span id="1982"><a href="https://twitter.com/wachmc" class="markup--anchor markup--li-anchor" data-href="https://twitter.com/wachmc" rel="noopener" target="_blank">https://twitter.com/wachmc</a></span>
+- <a href="https://github.com/polarker" class="markup--anchor markup--li-anchor" data-href="https://github.com/polarker" rel="noopener" target="_blank">https://github.com/polarker</a>
+- <a href="https://twitter.com/wachmc" class="markup--anchor markup--li-anchor" data-href="https://twitter.com/wachmc" rel="noopener" target="_blank">https://twitter.com/wachmc</a>
 
 #### How/when did you come across crypto?
 

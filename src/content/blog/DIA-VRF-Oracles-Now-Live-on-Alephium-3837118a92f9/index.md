@@ -22,17 +22,17 @@ DIA’s VRF solution fetches randomness from multiple sources, ensuring high sec
 
 With this integration, Alephium developers can now leverage DIA’s battle-tested VRF oracles, further expanding the ecosystem’s capabilities:
 
-- <span id="6e71">**Fair and Secure Gaming:** Enable tamper-proof randomness in blockchain-based games.</span>
-- <span id="1808">**Trustless Lotteries:** Ensure provably fair random draws without centralized control.</span>
-- <span id="4644">**Dynamic NFT Minting and Traits:** Introduce randomness into NFT attributes, drops, and evolutions.</span>
-- <span id="c17e">**Randomized DeFi Mechanics:** Implement random selection mechanisms for staking rewards and liquidity mining.</span>
+- **Fair and Secure Gaming:** Enable tamper-proof randomness in blockchain-based games.
+- **Trustless Lotteries:** Ensure provably fair random draws without centralized control.
+- **Dynamic NFT Minting and Traits:** Introduce randomness into NFT attributes, drops, and evolutions.
+- **Randomized DeFi Mechanics:** Implement random selection mechanisms for staking rewards and liquidity mining.
 
 ### What DIA’s Oracles Bring to Alephium
 
-- <span id="2a8a">**Real-Time Asset Price Feeds:** Secure, accurate, and constantly updated price feeds for cryptocurrencies, stablecoins, and more.</span>
-- <span id="7abd">**Customizable Data Sources:** Developers can select specific pricing methodologies, sources, and update mechanisms tailored to their use cases.</span>
-- <span id="2757">**Verifiable Randomness (VRF):** Secure, publicly verifiable random number generation for GameFi, NFT, and DeFi applications.</span>
-- <span id="0c11">**Resilient and Transparent Infrastructure:** Open-source and auditable data solutions, ensuring trust and security in decentralized applications.</span>
+- **Real-Time Asset Price Feeds:** Secure, accurate, and constantly updated price feeds for cryptocurrencies, stablecoins, and more.
+- **Customizable Data Sources:** Developers can select specific pricing methodologies, sources, and update mechanisms tailored to their use cases.
+- **Verifiable Randomness (VRF):** Secure, publicly verifiable random number generation for GameFi, NFT, and DeFi applications.
+- **Resilient and Transparent Infrastructure:** Open-source and auditable data solutions, ensuring trust and security in decentralized applications.
 
 ### Using DIA Oracles on Alephium
 
@@ -40,9 +40,9 @@ Alephium developers can now integrate DIA’s **price oracles and VRF solutions*
 
 For more details, visit:
 
-- <span id="b49f"><a href="https://www.diadata.org/blog/post/dia-price-oracles-alephium-mainnet/" class="markup--anchor markup--li-anchor" data-href="https://www.diadata.org/blog/post/dia-price-oracles-alephium-mainnet/" rel="noopener" target="_blank">DIA Price Oracles on Alephium</a></span>
-- <span id="005e"><a href="https://www.diadata.org/onchain-randomness/" class="markup--anchor markup--li-anchor" data-href="https://www.diadata.org/onchain-randomness/" rel="noopener" target="_blank">DIA VRF Documentation</a></span>
-- <span id="1adb"><a href="https://docs.alephium.org/infrastructure/Oracles/" class="markup--anchor markup--li-anchor" data-href="https://docs.alephium.org/infrastructure/Oracles/" rel="noopener" target="_blank">Alephium Oracles Documentation</a></span>
+- <a href="https://www.diadata.org/blog/post/dia-price-oracles-alephium-mainnet/" class="markup--anchor markup--li-anchor" data-href="https://www.diadata.org/blog/post/dia-price-oracles-alephium-mainnet/" rel="noopener" target="_blank">DIA Price Oracles on Alephium</a>
+- <a href="https://www.diadata.org/onchain-randomness/" class="markup--anchor markup--li-anchor" data-href="https://www.diadata.org/onchain-randomness/" rel="noopener" target="_blank">DIA VRF Documentation</a>
+- <a href="https://docs.alephium.org/infrastructure/Oracles/" class="markup--anchor markup--li-anchor" data-href="https://docs.alephium.org/infrastructure/Oracles/" rel="noopener" target="_blank">Alephium Oracles Documentation</a>
 
 This latest DIA integration marks a significant milestone for Alephium, enabling **provably fair randomness** and strengthening the foundation for decentralized innovation.
 

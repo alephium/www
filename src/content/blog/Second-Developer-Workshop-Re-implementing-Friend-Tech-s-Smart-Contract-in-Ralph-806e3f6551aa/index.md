@@ -129,16 +129,16 @@ Now, you can check if a specific address is on the list of holders on the “sub
 
 Some of the benefits of using sub-contracts over mapping
 
-- <span id="cad8">Prevent the state bloat of a single contract</span>
-- <span id="1318">Incentives for users to recycle sub-contracts to keep the blockchain lean</span>
+- Prevent the state bloat of a single contract
+- Incentives for users to recycle sub-contracts to keep the blockchain lean
 
 Sub-contracts are contracts, therefore, can
 
-- <span id="91a6">Issue / manage assets</span>
-- <span id="1712">Fine-grained access control over the contract’s internal state</span>
-- <span id="cab6">Asset permission control</span>
-- <span id="bf65">It is easier to index data (Token / NFT) than mapping since we can use contract ID directly</span>
-- <span id="951d">Easier to implement in the VM (everything is a contract)</span>
+- Issue / manage assets
+- Fine-grained access control over the contract’s internal state
+- Asset permission control
+- It is easier to index data (Token / NFT) than mapping since we can use contract ID directly
+- Easier to implement in the VM (everything is a contract)
 
 ### Step 4: Implementing Pricing
 

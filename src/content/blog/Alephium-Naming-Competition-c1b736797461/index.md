@@ -42,9 +42,9 @@ Unleash your inner poet and make us dream, laugh and cry!
 
 For each item to be named, the Alephium team will select and reward:
 
-- <span id="f46d">Team’s favourite</span>
-- <span id="cd05">The funniest name</span>
-- <span id="e4b8">The “naming competition gone wrong” name</span>
+- Team’s favourite
+- The funniest name
+- The “naming competition gone wrong” name
 
 _(We reserve the right to create new categories on the fly, remove them or change them based on the submissions during the course of the competition)_
 
@@ -60,12 +60,12 @@ _This is an experimental and discretionary rewards program for our active Alephi
 
 _Alephium considers a number of variables in determining rewards. Determinations of eligibility, score and all terms related to a reward are at the sole and final discretion of Alephium._
 
-- <span id="801c">_Participants are responsible for all taxes._</span>
-- <span id="d2b5">_All rewards are subject to applicable law._</span>
-- <span id="6948">_Participants’ contributions must not violate any law or compromise any data that is not theirs._</span>
-- <span id="b0ff">_Participants take part in this program at their own risk and expense._</span>
-- <span id="e2eb">_Participants will be asked to sign a simple contract with their name and physical address before receiving the reward. Failure to do so will result in forfeiture of the reward._</span>
-- <span id="4c95">_Participants are responsible for notifying Alephium of any changes to their contact information. Failure to do so may lead to the forfeiture of any rewards participants may become eligible for and receive._</span>
+- _Participants are responsible for all taxes._
+- _All rewards are subject to applicable law._
+- _Participants’ contributions must not violate any law or compromise any data that is not theirs._
+- _Participants take part in this program at their own risk and expense._
+- _Participants will be asked to sign a simple contract with their name and physical address before receiving the reward. Failure to do so will result in forfeiture of the reward._
+- _Participants are responsible for notifying Alephium of any changes to their contact information. Failure to do so may lead to the forfeiture of any rewards participants may become eligible for and receive._
 
 _Alephium reserves the right to discontinue the Program at any time without notice._
 
@@ -73,6 +73,6 @@ _Alephium reserves the right to discontinue the Program at any time without noti
 
 _Are not eligible for rewards:_
 
-- <span id="ea43">_Individuals who have not reached legal majority age in their country of residence._</span>
-- <span id="73fc">_Individuals on sanctions lists or who are in countries listed on_ <a href="https://www.seco.admin.ch/seco/fr/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen/sanktionen-embargos/sanktionsmassnahmen.html" class="markup--anchor markup--li-anchor" data-href="https://www.seco.admin.ch/seco/fr/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen/sanktionen-embargos/sanktionsmassnahmen.html" rel="noopener" target="_blank"><em>SECO’s sanctions list</em></a> _or where crypto-assets have been banned._</span>
-- <span id="939e">_Alephium employees, consultants and their families._</span>
+- _Individuals who have not reached legal majority age in their country of residence._
+- _Individuals on sanctions lists or who are in countries listed on_ <a href="https://www.seco.admin.ch/seco/fr/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen/sanktionen-embargos/sanktionsmassnahmen.html" class="markup--anchor markup--li-anchor" data-href="https://www.seco.admin.ch/seco/fr/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen/sanktionen-embargos/sanktionsmassnahmen.html" rel="noopener" target="_blank"><em>SECO’s sanctions list</em></a> _or where crypto-assets have been banned._
+- _Alephium employees, consultants and their families._

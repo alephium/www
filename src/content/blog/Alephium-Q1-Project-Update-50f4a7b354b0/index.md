@@ -10,7 +10,7 @@ title: Alephium — Q1 Project Update
 
 ![](image_f3db5f53cd.jpeg)
 
-<span class="graf-dropCap">A</span>lephium mainnet is live and fully functional since November 8th, 2021. We are now focused on building and enriching tooling for wallets, mining, explorer, bridges, DeFi, dApps and NFT’s, as well as expanding our community of developers, miners and users.
+Alephium mainnet is live and fully functional since November 8th, 2021. We are now focused on building and enriching tooling for wallets, mining, explorer, bridges, DeFi, dApps and NFT’s, as well as expanding our community of developers, miners and users.
 
 During December, almost everyone from the team was able to get together and attend a moment of both retro and futuro-spective in the home of Scala at the EPFL in Lausanne, Switzerland.
 

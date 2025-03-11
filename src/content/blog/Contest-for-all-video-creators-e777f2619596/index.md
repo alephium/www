@@ -38,18 +38,18 @@ If you stumble upon something in the article that you find unclear, the team wil
 
 And of course, here you will find additional useful resources:
 
-- <span id="58e1"><a href="https://alephium.org" class="markup--anchor markup--li-anchor" data-href="https://alephium.org" rel="noopener" target="_blank">Website</a></span>
-- <span id="bedf"><a href="https://medium.com/@alephium" class="markup--anchor markup--li-anchor" data-href="https://medium.com/@alephium" target="_blank">Alephium Blog</a></span>
-- <span id="81dc"><a href="https://github.com/alephium/white-paper" class="markup--anchor markup--li-anchor" data-href="https://github.com/alephium/white-paper" rel="noopener" target="_blank">White Papers</a></span>
-- <span id="ced0"><a href="https://github.com/alephium/alephium-brand-guide" class="markup--anchor markup--li-anchor" data-href="https://github.com/alephium/alephium-brand-guide" rel="noopener" target="_blank">Branding material</a></span>
+- <a href="https://alephium.org" class="markup--anchor markup--li-anchor" data-href="https://alephium.org" rel="noopener" target="_blank">Website</a>
+- <a href="https://medium.com/@alephium" class="markup--anchor markup--li-anchor" data-href="https://medium.com/@alephium" target="_blank">Alephium Blog</a>
+- <a href="https://github.com/alephium/white-paper" class="markup--anchor markup--li-anchor" data-href="https://github.com/alephium/white-paper" rel="noopener" target="_blank">White Papers</a>
+- <a href="https://github.com/alephium/alephium-brand-guide" class="markup--anchor markup--li-anchor" data-href="https://github.com/alephium/alephium-brand-guide" rel="noopener" target="_blank">Branding material</a>
 
 ### 📝Rules
 
-- <span id="c9ff">Video must accurately include the basics covered in our <a href="https://medium.com/@alephium/welcome-to-alephium-alph-48dfb72aa458" class="markup--anchor markup--li-anchor" data-href="https://medium.com/@alephium/welcome-to-alephium-alph-48dfb72aa458" target="_blank">“Welcome to Alephium” Medium article</a>.</span>
-- <span id="c489">Video should not exceed 5 minutes.</span>
-- <span id="86a0">Video may be in any language.</span>
-- <span id="c660">Deadline to upload the video: 2022–04–15 23:59 CET.</span>
-- <span id="194c">These links and infos MUST appear in the video description:</span>
+- Video must accurately include the basics covered in our <a href="https://medium.com/@alephium/welcome-to-alephium-alph-48dfb72aa458" class="markup--anchor markup--li-anchor" data-href="https://medium.com/@alephium/welcome-to-alephium-alph-48dfb72aa458" target="_blank">“Welcome to Alephium” Medium article</a>.
+- Video should not exceed 5 minutes.
+- Video may be in any language.
+- Deadline to upload the video: 2022–04–15 23:59 CET.
+- These links and infos MUST appear in the video description:
 
 > **Talk with Alephium  
 > **Discord : <a href="https://discord.gg/JErgRBfRSB" class="markup--anchor markup--blockquote-anchor" data-href="https://discord.gg/JErgRBfRSB" rel="noopener" target="_blank">https://discord.gg/JErgRBfRSB<br /> > </a>Telegram : <a href="https://t.me/alephiumgroup" class="markup--anchor markup--blockquote-anchor" data-href="https://t.me/alephiumgroup" rel="noopener" target="_blank">https://t.me/alephiumgroup<br /> > </a>Reddit : <a href="https://www.reddit.com/r/Alephium/" class="markup--anchor markup--blockquote-anchor" data-href="https://www.reddit.com/r/Alephium/" rel="noopener" target="_blank">https://www.reddit.com/r/Alephium/</a>
@@ -62,9 +62,9 @@ And of course, here you will find additional useful resources:
 
 ### 🎥How to submit the video
 
-- <span id="52e2">Upload your video to youtube or vimeo.</span>
-- <span id="bedc">Add the **\#Alephium** and **\#ALPH** hashtags</span>
-- <span id="e26a">Paste the link to the video and your email address using this <a href="https://forms.gle/LeNyEbX1KL5ZoJkLA" class="markup--anchor markup--li-anchor" data-href="https://forms.gle/LeNyEbX1KL5ZoJkLA" rel="noopener" target="_blank"><strong>submission form</strong></a></span>
+- Upload your video to youtube or vimeo.
+- Add the **\#Alephium** and **\#ALPH** hashtags
+- Paste the link to the video and your email address using this <a href="https://forms.gle/LeNyEbX1KL5ZoJkLA" class="markup--anchor markup--li-anchor" data-href="https://forms.gle/LeNyEbX1KL5ZoJkLA" rel="noopener" target="_blank"><strong>submission form</strong></a>
 
 ### 💰Prizes
 

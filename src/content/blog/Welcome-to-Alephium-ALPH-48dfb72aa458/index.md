@@ -44,80 +44,80 @@ Putting all these innovations together, Alephium delivers a highly demanded solu
 
 **Core Platform**
 
-- <span id="6a8e">02.2019 — Whitepapers publicly released</span>
-- <span id="c190">Q1.2020 — Alpha version of the core sharding protocol implemented and tested on AWS</span>
-- <span id="6876">12.2020 — Testnet Launch</span>
-- <span id="cda6">Q1.2021 — Smart contract support</span>
-- <span id="9293">09.2021 — Desktop wallet & explorer public release</span>
-- <span id="2223">08.11.2021 — Mainnet launch</span>
-- <span id="2450">01.2022–1st dApp prototype</span>
-- <span id="bb0b">06.2022 — Beta version of contract SDK (alephium-web3)</span>
-- <span id="e44b">06.2022 — Leman Network Upgrade deployed on the testnet</span>
-- <span id="dea6">11.2022 — Alpha version of multi-guardians bridge on the Testnet</span>
-- <span id="9de1">Q4.2022 — NFT prototype alpha released</span>
-- <span id="1561">03.2023 — DEX prototype Released</span>
-- <span id="ec23">03.2023 — Launch Browser Wallet Extension</span>
-- <span id="272d">27.03.2023 — Leman Network Upgrade on Mainnet</span>
-- <span id="feff">03.2023 — Schnorr signatures and cross chain interoperability</span>
-- <span id="0d0d">03.2023 — New Asset Permission System and set of Virtual Machine (VM) instructions and building functions</span>
-- <span id="2716">03.2023 — Improved node APIs and SDK</span>
-- <span id="7273">03.2023 — Improved difficulty adjustment algorithm (DAA)</span>
+- 02.2019 — Whitepapers publicly released
+- Q1.2020 — Alpha version of the core sharding protocol implemented and tested on AWS
+- 12.2020 — Testnet Launch
+- Q1.2021 — Smart contract support
+- 09.2021 — Desktop wallet & explorer public release
+- 08.11.2021 — Mainnet launch
+- 01.2022–1st dApp prototype
+- 06.2022 — Beta version of contract SDK (alephium-web3)
+- 06.2022 — Leman Network Upgrade deployed on the testnet
+- 11.2022 — Alpha version of multi-guardians bridge on the Testnet
+- Q4.2022 — NFT prototype alpha released
+- 03.2023 — DEX prototype Released
+- 03.2023 — Launch Browser Wallet Extension
+- 27.03.2023 — Leman Network Upgrade on Mainnet
+- 03.2023 — Schnorr signatures and cross chain interoperability
+- 03.2023 — New Asset Permission System and set of Virtual Machine (VM) instructions and building functions
+- 03.2023 — Improved node APIs and SDK
+- 03.2023 — Improved difficulty adjustment algorithm (DAA)
 
 **Ecosystem**
 
-- <span id="9599">08.11.2021–3rd party cloud mining service at Mainnet Launch</span>
-- <span id="2356">11.2021 — Joined the UTXO alliance & Bitcoin Association Switzerland</span>
-- <span id="7e68">Q4.2021 — Mining ecosystem development:community pools, miners development, reference mining pool, and pool integration.</span>
-- <span id="786f">12.01.2022 — First exchange listing: Gate.io</span>
-- <span id="77d6">Q3.2022 — Initiation of marketing initiatives ( sponsoring of ErgoHack, AMAs, community competitions, campaigns, Tech Talk Series, etc)</span>
-- <span id="2cbb">Q3.2022–3rd party dApps development started on Alephium</span>
-- <span id="3018">10.2022 — Dappnode Integration</span>
-- <span id="8318">11.2022 — Flux Integration</span>
-- <span id="d8b4">11.2022 — Launch of Alephium Swag Shop</span>
-- <span id="4fbb">H2.2022 — Joint communication and marketing initiatives with UTXO Alliance members</span>
-- <span id="a93b">12.2022 — Reached over 265 community contributions</span>
+- 08.11.2021–3rd party cloud mining service at Mainnet Launch
+- 11.2021 — Joined the UTXO alliance & Bitcoin Association Switzerland
+- Q4.2021 — Mining ecosystem development:community pools, miners development, reference mining pool, and pool integration.
+- 12.01.2022 — First exchange listing: Gate.io
+- Q3.2022 — Initiation of marketing initiatives ( sponsoring of ErgoHack, AMAs, community competitions, campaigns, Tech Talk Series, etc)
+- Q3.2022–3rd party dApps development started on Alephium
+- 10.2022 — Dappnode Integration
+- 11.2022 — Flux Integration
+- 11.2022 — Launch of Alephium Swag Shop
+- H2.2022 — Joint communication and marketing initiatives with UTXO Alliance members
+- 12.2022 — Reached over 265 community contributions
 
 #### **Roadmap**
 
 **Core Platform**
 
-- <span id="cdaf">\[Feature\] Desktop Wallet v2.0</span>
-- <span id="8dfd">\[Launch\] Mobile wallet (Android and iOS)</span>
-- <span id="a28d">\[Launch\] Alephium’s Bridge Launch on Mainnet</span>
-- <span id="e99a">\[Feature & UX\] Support streaming for blockchain events (tx, block, contract events)</span>
-- <span id="9cb6">\[Feature & Security\] Typescript SDK for off-chain transaction encoding/decoding</span>
-- <span id="1ca4">\[Feature\] P2P transaction endpoints and SDKs</span>
-- <span id="7e9f">\[Community\] Introduce AIP for Alephium Improvement Proposals</span>
-- <span id="28ae">\[Improvement\] Improved web3 SDK with better DevX and more functionality</span>
-- <span id="ca80">\[Feature\] Multisig support in SDK and wallets</span>
-- <span id="d962">\[Security\] Standard for transaction information display on wallet</span>
-- <span id="3840">\[Improvement\] Improved full node’s database system for better performance</span>
-- <span id="5b6f">\[DevX & UX\] Better error system for full node and its endpoints</span>
-- <span id="30a7">\[Feature\] Design and implement fast sync for full node</span>
-- <span id="0e9b">\[Feature\] Smart contracts support in the Explorer</span>
-- <span id="1c3d">\[Improvement\] Enhanced UX and additional features for the Browser Wallet Extension</span>
-- <span id="2e4e">\[Improvement\] Improved NFT standard and prototype</span>
-- <span id="95ea">\[Launch\] Additional dApps prototypes</span>
-- <span id="33b0">\[DevX\] Better development experience and additional functionalities for the Ralph language</span>
-- <span id="9f97">\[Improvement\] Continuous improvement of the documentation</span>
-- <span id="3c25">\[Feature\] Design and implement light node</span>
+- \[Feature\] Desktop Wallet v2.0
+- \[Launch\] Mobile wallet (Android and iOS)
+- \[Launch\] Alephium’s Bridge Launch on Mainnet
+- \[Feature & UX\] Support streaming for blockchain events (tx, block, contract events)
+- \[Feature & Security\] Typescript SDK for off-chain transaction encoding/decoding
+- \[Feature\] P2P transaction endpoints and SDKs
+- \[Community\] Introduce AIP for Alephium Improvement Proposals
+- \[Improvement\] Improved web3 SDK with better DevX and more functionality
+- \[Feature\] Multisig support in SDK and wallets
+- \[Security\] Standard for transaction information display on wallet
+- \[Improvement\] Improved full node’s database system for better performance
+- \[DevX & UX\] Better error system for full node and its endpoints
+- \[Feature\] Design and implement fast sync for full node
+- \[Feature\] Smart contracts support in the Explorer
+- \[Improvement\] Enhanced UX and additional features for the Browser Wallet Extension
+- \[Improvement\] Improved NFT standard and prototype
+- \[Launch\] Additional dApps prototypes
+- \[DevX\] Better development experience and additional functionalities for the Ralph language
+- \[Improvement\] Continuous improvement of the documentation
+- \[Feature\] Design and implement light node
 
 **Ecosystem**
 
-- <span id="60c6">Additional CEX listings</span>
-- <span id="211b">DEX listing</span>
-- <span id="e9da">Launch of 3rd party dApps (NFT, DEX, stablecoin, Alephium Name Services, oracle, etc) on Alephium</span>
-- <span id="62b5">Ledger wallet integration</span>
-- <span id="cf7f">Additional bridges to other ecosystems</span>
-- <span id="e75e">Introduction videos & articles for building dApps on Alephium</span>
-- <span id="cbe4">Integration with 3rd party wallets</span>
-- <span id="6ccb">First Alephium Hackathon</span>
-- <span id="561e">Grant program & Development Bounties V2</span>
-- <span id="dfc5">Improve developers’ onboarding experience</span>
-- <span id="b13b">Launch of the Ambassador program</span>
-- <span id="41a7">Building-up community engagement</span>
-- <span id="c822">Additional marketing, partnership and knowledge-sharing initiatives with like-minded communities and projects.</span>
-- <span id="fb24">Website revamp</span>
+- Additional CEX listings
+- DEX listing
+- Launch of 3rd party dApps (NFT, DEX, stablecoin, Alephium Name Services, oracle, etc) on Alephium
+- Ledger wallet integration
+- Additional bridges to other ecosystems
+- Introduction videos & articles for building dApps on Alephium
+- Integration with 3rd party wallets
+- First Alephium Hackathon
+- Grant program & Development Bounties V2
+- Improve developers’ onboarding experience
+- Launch of the Ambassador program
+- Building-up community engagement
+- Additional marketing, partnership and knowledge-sharing initiatives with like-minded communities and projects.
+- Website revamp
 
 ### 🛡 **Our tokenomics**
 
@@ -176,20 +176,20 @@ Telegram 🇹🇷: <a href="https://t.me/alephium_tr" class="markup--anchor mark
 
 #### **Buy/sell (Jan 12th onward)**
 
-- <span id="e5a1">Gate.io — USDT : <a href="https://www.gate.io/fr/trade/ALPH_USDT" class="markup--anchor markup--li-anchor" data-href="https://www.gate.io/fr/trade/ALPH_USDT" rel="noopener" target="_blank">https://www.gate.io/fr/trade/ALPH_USDT</a></span>
-- <span id="90b3">TradeOgre — USDT : <a href="https://tradeogre.com/exchange/USDT-ALPH" class="markup--anchor markup--li-anchor" data-href="https://tradeogre.com/exchange/USDT-ALPH" rel="nofollow noopener" target="_blank">https://tradeogre.com/exchange/USDT-ALPH</a></span>
-- <span id="b80b">TradeOgre — BTC : <a href="https://tradeogre.com/exchange/USDT-ALPH" class="markup--anchor markup--li-anchor" data-href="https://tradeogre.com/exchange/USDT-ALPH" rel="nofollow noopener" target="_blank">https://tradeogre.com/exchange/BTC-ALPH</a></span>
+- Gate.io — USDT : <a href="https://www.gate.io/fr/trade/ALPH_USDT" class="markup--anchor markup--li-anchor" data-href="https://www.gate.io/fr/trade/ALPH_USDT" rel="noopener" target="_blank">https://www.gate.io/fr/trade/ALPH_USDT</a>
+- TradeOgre — USDT : <a href="https://tradeogre.com/exchange/USDT-ALPH" class="markup--anchor markup--li-anchor" data-href="https://tradeogre.com/exchange/USDT-ALPH" rel="nofollow noopener" target="_blank">https://tradeogre.com/exchange/USDT-ALPH</a>
+- TradeOgre — BTC : <a href="https://tradeogre.com/exchange/USDT-ALPH" class="markup--anchor markup--li-anchor" data-href="https://tradeogre.com/exchange/USDT-ALPH" rel="nofollow noopener" target="_blank">https://tradeogre.com/exchange/BTC-ALPH</a>
 
 ### **Our partners**
 
-- <span id="a5e5">UTXO Alliance : <a href="https://utxo-alliance.org/" class="markup--anchor markup--li-anchor" data-href="https://utxo-alliance.org/" rel="noopener" target="_blank">https://utxo-alliance.org/</a></span>
-- <span id="8131">Bitcoin Association Switzerland : <a href="https://medium.com/@alephium/alephium-becomes-a-member-of-bitcoin-association-switzerland-2293fec16fc9" class="markup--anchor markup--li-anchor" data-href="https://medium.com/@alephium/alephium-becomes-a-member-of-bitcoin-association-switzerland-2293fec16fc9" target="_blank">https://medium.com/@alephium/alephium-becomes-a-member-of-bitcoin-association-switzerland-2293fec16fc9</a></span>
-- <span id="3f98">Cetacean Capital: <a href="https://cetacean.capital/" class="markup--anchor markup--li-anchor" data-href="https://cetacean.capital/" rel="nofollow noopener" target="_blank">https://cetacean.capital</a></span>
-- <span id="1a5a">Crypto Valley Association : <a href="https://cryptovalley.swiss/" class="markup--anchor markup--li-anchor" data-href="https://cryptovalley.swiss/" rel="nofollow noopener" target="_blank">https://cryptovalley.swiss/</a></span>
-- <span id="7d1b">Dappnode: <a href="https://dappnode.io" class="markup--anchor markup--li-anchor" data-href="https://dappnode.io" rel="nofollow noopener" target="_blank">https://dappnode.io</a></span>
-- <span id="ae42">Ergo : <a href="https://ergoplatform.org/" class="markup--anchor markup--li-anchor" data-href="https://ergoplatform.org/" rel="nofollow noopener" target="_blank">https://ergoplatform.org/</a></span>
-- <span id="359b">Flux Labs : <a href="https://runonflux.io/fluxlabs.html" class="markup--anchor markup--li-anchor" data-href="https://runonflux.io/fluxlabs.html" rel="nofollow noopener" target="_blank">https://runonflux.io/fluxlabs.html</a></span>
-- <span id="7ab8">Hodling SA : <a href="https://www.hodling.ch/" class="markup--anchor markup--li-anchor" data-href="https://www.hodling.ch/" rel="nofollow noopener" target="_blank">https://www.hodling.ch/</a></span>
+- UTXO Alliance : <a href="https://utxo-alliance.org/" class="markup--anchor markup--li-anchor" data-href="https://utxo-alliance.org/" rel="noopener" target="_blank">https://utxo-alliance.org/</a>
+- Bitcoin Association Switzerland : <a href="https://medium.com/@alephium/alephium-becomes-a-member-of-bitcoin-association-switzerland-2293fec16fc9" class="markup--anchor markup--li-anchor" data-href="https://medium.com/@alephium/alephium-becomes-a-member-of-bitcoin-association-switzerland-2293fec16fc9" target="_blank">https://medium.com/@alephium/alephium-becomes-a-member-of-bitcoin-association-switzerland-2293fec16fc9</a>
+- Cetacean Capital: <a href="https://cetacean.capital/" class="markup--anchor markup--li-anchor" data-href="https://cetacean.capital/" rel="nofollow noopener" target="_blank">https://cetacean.capital</a>
+- Crypto Valley Association : <a href="https://cryptovalley.swiss/" class="markup--anchor markup--li-anchor" data-href="https://cryptovalley.swiss/" rel="nofollow noopener" target="_blank">https://cryptovalley.swiss/</a>
+- Dappnode: <a href="https://dappnode.io" class="markup--anchor markup--li-anchor" data-href="https://dappnode.io" rel="nofollow noopener" target="_blank">https://dappnode.io</a>
+- Ergo : <a href="https://ergoplatform.org/" class="markup--anchor markup--li-anchor" data-href="https://ergoplatform.org/" rel="nofollow noopener" target="_blank">https://ergoplatform.org/</a>
+- Flux Labs : <a href="https://runonflux.io/fluxlabs.html" class="markup--anchor markup--li-anchor" data-href="https://runonflux.io/fluxlabs.html" rel="nofollow noopener" target="_blank">https://runonflux.io/fluxlabs.html</a>
+- Hodling SA : <a href="https://www.hodling.ch/" class="markup--anchor markup--li-anchor" data-href="https://www.hodling.ch/" rel="nofollow noopener" target="_blank">https://www.hodling.ch/</a>
 
 ### **🛠 If you’re a dev, start here:**
 
@@ -212,9 +212,9 @@ Find our Miner starter pack on Github : <a href="https://github.com/alephium/al
 
 And the specific repos :
 
-- <span id="2006"><a href="https://github.com/alephium/gpu-miner" class="markup--anchor markup--li-anchor" data-href="https://github.com/alephium/gpu-miner" rel="noopener" target="_blank">https://github.com/alephium/gpu-miner</a></span>
-- <span id="e76b"><a href="https://github.com/alephium/fpga-miner" class="markup--anchor markup--li-anchor" data-href="https://github.com/alephium/fpga-miner" rel="noopener" target="_blank">https://github.com/alephium/fpga-miner</a></span>
-- <span id="eddb"><a href="https://github.com/alephium/mining-pool" class="markup--anchor markup--li-anchor" data-href="https://github.com/alephium/mining-pool" rel="noopener" target="_blank">https://github.com/alephium/mining-pool</a></span>
+- <a href="https://github.com/alephium/gpu-miner" class="markup--anchor markup--li-anchor" data-href="https://github.com/alephium/gpu-miner" rel="noopener" target="_blank">https://github.com/alephium/gpu-miner</a>
+- <a href="https://github.com/alephium/fpga-miner" class="markup--anchor markup--li-anchor" data-href="https://github.com/alephium/fpga-miner" rel="noopener" target="_blank">https://github.com/alephium/fpga-miner</a>
+- <a href="https://github.com/alephium/mining-pool" class="markup--anchor markup--li-anchor" data-href="https://github.com/alephium/mining-pool" rel="noopener" target="_blank">https://github.com/alephium/mining-pool</a>
 
 And here is a video of how to get started for solo mining : <a href="https://www.youtube.com/watch?v=hdPH6inWjhc" class="markup--anchor markup--p-anchor" data-href="https://www.youtube.com/watch?v=hdPH6inWjhc" rel="noopener" target="_blank">https://www.youtube.com/watch?v=hdPH6inWjhc</a>
 

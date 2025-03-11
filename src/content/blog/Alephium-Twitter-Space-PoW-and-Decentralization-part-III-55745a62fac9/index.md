@@ -16,9 +16,9 @@ This series reached the last part. You can find the part I <a href="https://medi
 
 These are the topics covered in this post:
 
-- <span id="261c">Thoughts on Decentralization and why it matters;</span>
-- <span id="90d5">Where a developer can find information on how to build on both protocols;</span>
-- <span id="b84a">General Questions.</span>
+- Thoughts on Decentralization and why it matters;
+- Where a developer can find information on how to build on both protocols;
+- General Questions.
 
 ### Decentralization
 

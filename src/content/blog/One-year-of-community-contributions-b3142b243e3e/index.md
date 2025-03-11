@@ -22,10 +22,10 @@ Alephium is immensely grateful to the community for its efforts, big and small, 
 
 A total of 386’238 ALPH have been allocated for over 265 contributions as part of Alephium’s Grants & Rewards Program.
 
-- <span id="31c2">118’765 ALPH have recognized Development contributions, from bug reports to full applications and services.</span>
-- <span id="95fc">97’597 ALPH have been awarded to Community Engagement contributions, such as moderation and participation in social media channels, YouTube videos, blog articles, or translations.</span>
-- <span id="e51a">54’876 ALPH have rewarded contributions in the Special Events category, for example, Hackathons and Contests.</span>
-- <span id="86bb">115’000 ALPH have been distributed as part of grants**,** for larger projects contributing significantly to the ecosystem value growth.</span>
+- 118’765 ALPH have recognized Development contributions, from bug reports to full applications and services.
+- 97’597 ALPH have been awarded to Community Engagement contributions, such as moderation and participation in social media channels, YouTube videos, blog articles, or translations.
+- 54’876 ALPH have rewarded contributions in the Special Events category, for example, Hackathons and Contests.
+- 115’000 ALPH have been distributed as part of grants**,** for larger projects contributing significantly to the ecosystem value growth.
 
 **Fullnode and Mining**
 

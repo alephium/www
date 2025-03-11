@@ -74,8 +74,22 @@ const TextElement = styled.div<TextElementProps>`
         line-height: var(--lineHeight-28);
         font-weight: var(--fontWeight-normal);
       `}
+
+    > a {
+      color: ${({ theme }) => theme.link};
+    }
   }
 
+  /* Links inside paragraphs, lists, etc. */
+  > p,
+  li,
+  ul {
+    > a {
+      color: ${({ theme }) => theme.link};
+    }
+  }
+
+  /* Buttons */
   > a {
     margin-right: var(--spacing-2);
     margin-top: var(--spacing-6);
@@ -93,6 +107,7 @@ const TextElement = styled.div<TextElementProps>`
     max-width: 100%;
   }
 
+  /* Multiple text elements */
   &:not(:first-child) {
     margin-top: var(--spacing-8);
   }

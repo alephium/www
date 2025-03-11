@@ -27,20 +27,20 @@ title: First Online Dev Workshop!
 
 ### Workshop Agenda
 
-- <span id="1093">Implement a token faucet smart contract</span>
-- <span id="4462">Using CLI tool to build and deploy the smart contract locally</span>
-- <span id="7fcd">Interact with the smart contract using a web interface built in SDK + Nextjs</span>
-- <span id="41a1">Integrate the dApp with wallets</span>
-- <span id="a3d2">Deploy smart contracts to testnet</span>
-- <span id="0dd7">(Bonus) Smart contract testing using SDK</span>
+- Implement a token faucet smart contract
+- Using CLI tool to build and deploy the smart contract locally
+- Interact with the smart contract using a web interface built in SDK + Nextjs
+- Integrate the dApp with wallets
+- Deploy smart contracts to testnet
+- (Bonus) Smart contract testing using SDK
 
 ---
 
 ### Dev environment to setup before the workshop
 
-- <span id="c580">Install node and yarn</span>
-- <span id="0066">Install docker & docker-compose</span>
-- <span id="78cc">Clone <a href="https://github.com/alephium/alephium-stack" class="markup--anchor markup--li-anchor" data-href="https://github.com/alephium/alephium-stack" rel="noopener" target="_blank">https://github.com/alephium/alephium-stack</a> repo and able to run _make start-devnet_ to get full node and explorer up and running</span>
+- Install node and yarn
+- Install docker & docker-compose
+- Clone <a href="https://github.com/alephium/alephium-stack" class="markup--anchor markup--li-anchor" data-href="https://github.com/alephium/alephium-stack" rel="noopener" target="_blank">https://github.com/alephium/alephium-stack</a> repo and able to run _make start-devnet_ to get full node and explorer up and running
 - <span id="43d0">Install extension wallet  
   Chrome: <a href="https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj" class="markup--anchor markup--li-anchor" data-href="https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj" rel="nofollow noopener" target="_blank">https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj</a>  
   Firefox: <a href="https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/" class="markup--anchor markup--li-anchor" data-href="https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/" rel="nofollow noopener" target="_blank">https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/</a> — Create an account for devnet</span>

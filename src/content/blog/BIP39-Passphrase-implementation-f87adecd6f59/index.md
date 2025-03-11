@@ -65,17 +65,17 @@ Let’s explore this with an example:
 
 #### The setup:
 
-- <span id="65a9">You are a proud owner of 10'000 ALPH.</span>
-- <span id="1788">You have created a “normal wallet” (no Passphrase) with the name **_Wallet \#1_**. You have transferred 100 ALPH to it.</span>
-- <span id="1bba">You have created a “hidden wallet” called **_Wallet \#2_** with the passphrase “_letsUnlockAHiddenWallet”_. You have transferred 900 ALPH to it.</span>
-- <span id="99e1">You have created yet another “hidden wallet” called **_Wallet \#3_** with the passphrase “_youCanNeverGuessThat!”_. You have transferred the remaining 9'000 ALPH to it.</span>
+- You are a proud owner of 10'000 ALPH.
+- You have created a “normal wallet” (no Passphrase) with the name **_Wallet \#1_**. You have transferred 100 ALPH to it.
+- You have created a “hidden wallet” called **_Wallet \#2_** with the passphrase “_letsUnlockAHiddenWallet”_. You have transferred 900 ALPH to it.
+- You have created yet another “hidden wallet” called **_Wallet \#3_** with the passphrase “_youCanNeverGuessThat!”_. You have transferred the remaining 9'000 ALPH to it.
 
 #### The attack:
 
-- <span id="46a6">An attacker physically threatens you (with a wrench, a gun, or any other way) to unlock **_Wallet \#1_** on your desktop, the attacker steals the 100 ALPH that your seed phrase reveals.</span>
-- <span id="218b">The attacker knows about the Passphrase feature and once again threatens to get your Passphrase, then you can deny that you use this feature and there will be no way for the attacker to prove whether you use it or not.</span>
-- <span id="65b2">Nevertheless, you have one additional level of deniability by deciding to give them the passphrase to **_Wallet \#2_** and the attacker steals the 900 ALPH.</span>
-- <span id="f1f9">Convinced that they have stolen all your funds, the attacker is no longer interested in extorting you. You have successfully managed to secure your safety and most of your funds safely stored in **_Wallet \#3_** (and that can go on and on and on… as you can have an unlimited number of passphrases…).</span>
+- An attacker physically threatens you (with a wrench, a gun, or any other way) to unlock **_Wallet \#1_** on your desktop, the attacker steals the 100 ALPH that your seed phrase reveals.
+- The attacker knows about the Passphrase feature and once again threatens to get your Passphrase, then you can deny that you use this feature and there will be no way for the attacker to prove whether you use it or not.
+- Nevertheless, you have one additional level of deniability by deciding to give them the passphrase to **_Wallet \#2_** and the attacker steals the 900 ALPH.
+- Convinced that they have stolen all your funds, the attacker is no longer interested in extorting you. You have successfully managed to secure your safety and most of your funds safely stored in **_Wallet \#3_** (and that can go on and on and on… as you can have an unlimited number of passphrases…).
 
 Another scenario in which it’s good to have a passphrase is if you’d leave your Secret Recovery Phrase in a bank vault or in your will. Now the backup of your seed (24 words) is more secure because it’s incomplete in any one place.
 
@@ -140,9 +140,9 @@ You can then create your **Wallet \#3** with a different passphrase which will c
 
 Changing a single character (even, for example, from lower to upper-case), will result in the generation of a completely new wallet. As a result, it is imperative to:
 
-1.  <span id="19a4">Choose a Passphrase that you can remember and enter it correctly before sending any funds to the generated wallet.</span>
-2.  <span id="c75e">Remember it perfectly character by character.</span>
-3.  <span id="d8bd">The passphrase should be <a href="https://apvhyngqeo.cloudimg.io/v7/https://allsafeit.com/wp-content/uploads/2021/07/Social-Media-Brute-Force-Password-Attacks-sq.png?w=800&amp;h=800&amp;org_if_sml=1" class="markup--anchor markup--li-anchor" data-href="https://apvhyngqeo.cloudimg.io/v7/https://allsafeit.com/wp-content/uploads/2021/07/Social-Media-Brute-Force-Password-Attacks-sq.png?w=800&amp;h=800&amp;org_if_sml=1" rel="noopener" target="_blank">long and strong,</a> otherwise it may be prone to brute-force attacks by anyone aware of the seed phrase.</span>
+1.  Choose a Passphrase that you can remember and enter it correctly before sending any funds to the generated wallet.
+2.  Remember it perfectly character by character.
+3.  The passphrase should be <a href="https://apvhyngqeo.cloudimg.io/v7/https://allsafeit.com/wp-content/uploads/2021/07/Social-Media-Brute-Force-Password-Attacks-sq.png?w=800&amp;h=800&amp;org_if_sml=1" class="markup--anchor markup--li-anchor" data-href="https://apvhyngqeo.cloudimg.io/v7/https://allsafeit.com/wp-content/uploads/2021/07/Social-Media-Brute-Force-Password-Attacks-sq.png?w=800&amp;h=800&amp;org_if_sml=1" rel="noopener" target="_blank">long and strong,</a> otherwise it may be prone to brute-force attacks by anyone aware of the seed phrase.
 
 **IF YOU LOSE OR FORGET YOUR PASSPHRASE, YOU WILL LOSE YOUR FUNDS PERMANENTLY**
 

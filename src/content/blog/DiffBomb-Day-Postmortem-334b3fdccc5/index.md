@@ -47,8 +47,8 @@ The DiffBomb was implemented in the early days of the Alephium network. It was n
 
 As soon as the issue was identified, the Alephium dev team started to work on a <a href="https://github.com/alephium/dev-alephium/pull/784" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/dev-alephium/pull/784" rel="noopener" target="_blank">patch</a> to upgrade the full node code with two objectives:
 
-- <span id="09ec">Shifting back to the difficulty that was prevalent before the DiffBomb triggering,</span>
-- <span id="675e">Removing the DiffBomb.</span>
+- Shifting back to the difficulty that was prevalent before the DiffBomb triggering,
+- Removing the DiffBomb.
 
 At 10:27AM CET, a <a href="https://twitter.com/alephium/status/1601146526583037953" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium/status/1601146526583037953" rel="noopener" target="_blank">publication</a> informed the community of what was coming, and at 2:40PM CET a <a href="https://twitter.com/alephium/status/1601210162676568065" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium/status/1601210162676568065" rel="noopener" target="_blank">detailed next steps roadmap</a> was released.
 
