@@ -113,12 +113,7 @@ export const pageQuery = graphql`
         # }
         featuredImage {
           desktop: childImageSharp {
-            gatsbyImageData(
-              width: 1920
-              height: 600
-              layout: CONSTRAINED
-              transformOptions: { fit: COVER, cropFocus: CENTER }
-            )
+            gatsbyImageData(width: 1920, layout: CONSTRAINED, transformOptions: { fit: COVER, cropFocus: CENTER })
           }
           seo: childImageSharp {
             gatsbyImageData(width: 1200, layout: FIXED)

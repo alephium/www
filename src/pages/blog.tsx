@@ -1,5 +1,4 @@
 import { graphql, PageProps, useStaticQuery } from 'gatsby'
-import { GatsbyImage } from 'gatsby-plugin-image'
 import { useEffect, useRef, useState } from 'react'
 import styled from 'styled-components'
 
@@ -9,6 +8,7 @@ import SubpageHeroSection from '../components/customPageComponents/SubpageHeroSe
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextCard from '../components/customPageComponents/TextCard'
 import TextElement from '../components/customPageComponents/TextElement'
+import ResponsiveImage from '../components/ResponsiveImage'
 import SectionDivider from '../components/SectionDivider'
 import { deviceBreakPoints } from '../styles/global-style'
 
@@ -66,12 +66,15 @@ const CustomPage = (props: PageProps) => {
                     <h3>{post.frontmatter?.title}</h3>
                     <p>{post.frontmatter?.description}</p>
                   </TextElement>
-                  {post.frontmatter?.featuredImage?.desktop?.gatsbyImageData && (
-                    <GatsbyImage
-                      image={post.frontmatter?.featuredImage?.desktop?.gatsbyImageData}
-                      alt={post.frontmatter?.title ?? ''}
-                      style={{ flexShrink: 0 }}
-                    />
+                  {post.frontmatter?.featuredImage && post.frontmatter?.featuredImage?.childImageSharp && (
+                    <ImageContainer>
+                      <ResponsiveImage
+                        image={{
+                          altText: post.frontmatter?.title ?? '',
+                          src: post.frontmatter?.featuredImage
+                        }}
+                      />
+                    </ImageContainer>
                   )}
                 </TextCardStyled>
               ))}
@@ -106,8 +109,13 @@ export const query = graphql`
           title
           description
           featuredImage {
-            desktop: childImageSharp {
-              gatsbyImageData(width: 300, layout: CONSTRAINED, transformOptions: { fit: COVER, cropFocus: CENTER })
+            childImageSharp {
+              gatsbyImageData(
+                width: 300
+                height: 150
+                layout: CONSTRAINED
+                transformOptions: { fit: COVER, cropFocus: CENTER }
+              )
             }
           }
         }
@@ -136,4 +144,11 @@ const LoadMoreContainer = styled.div`
 const LoadingIndicator = styled.div`
   color: var(--color-text-secondary);
   font-size: 1rem;
+`
+
+const ImageContainer = styled.div`
+  flex-shrink: 0;
+  width: 300px;
+  max-height: 150px;
+  position: relative;
 `

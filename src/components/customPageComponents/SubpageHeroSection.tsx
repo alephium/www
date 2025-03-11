@@ -7,6 +7,7 @@ import { deviceBreakPoints } from '../../styles/global-style'
 import { darkTheme } from '../../styles/themes'
 import HeroPageSectionContainer from '../Hero/HeroPageSectionContainer'
 import TextElement from './TextElement'
+import GatsbyImageWrapper from '../GatsbyImageWrapper'
 
 interface SubpageHeroSectionProps {
   children: ReactNode
@@ -29,7 +30,7 @@ const SubpageHeroSection = ({
       <SubpageHeroSectionStyled ref={innerRef}>
         {backgroundImage && (
           <BackgroundImageWrapper>
-            <GatsbyImage
+            <GatsbyImageWrapper
               image={backgroundImage}
               alt={backgroundImageAlt}
               style={{ height: '100%', width: '100%' }}

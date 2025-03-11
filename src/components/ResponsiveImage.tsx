@@ -7,7 +7,7 @@ export interface ImageProps {
   src: {
     childImageSharp: {
       gatsbyImageData: IGatsbyImageData
-    }
+    } | null
   }
 }
 
@@ -19,11 +19,11 @@ interface ResponsiveImageProps {
 const ResponsiveImage: FC<ResponsiveImageProps> = ({ image, className }) => (
   <div className={className}>
     <ImageContainer>
-      {image.src.childImageSharp.gatsbyImageData.images.sources?.map((source) => (
+      {image.src.childImageSharp?.gatsbyImageData.images.sources?.map((source) => (
         <source {...source} key={source.srcSet} />
       ))}
       <img
-        {...image.src.childImageSharp.gatsbyImageData.images.fallback}
+        {...image.src.childImageSharp?.gatsbyImageData.images.fallback}
         decoding="async"
         loading="lazy"
         alt={image.altText}
@@ -33,7 +33,7 @@ const ResponsiveImage: FC<ResponsiveImageProps> = ({ image, className }) => (
 )
 
 export default styled(ResponsiveImage)`
-  max-width: ${({ image }) => image.src.childImageSharp.gatsbyImageData.width}px;
+  max-width: ${({ image }) => image.src.childImageSharp?.gatsbyImageData.width}px;
   border-radius: 7px;
   border: ${({ theme }) => theme.borderPrimary};
   overflow: hidden;
