@@ -2,7 +2,7 @@
 date: 2023-05-19 13:46:53.177000+00:00
 description: Bridge assets from and to Ethereum Goerli Testnet and BNB Smart Chain
   Testnet
-featuredImage: image_3b9bc32da5.png
+featuredImage: image_9ee06c07f7.png
 title: The Alephium Bridge is live on Testnet!
 ---
 
@@ -11,7 +11,7 @@ title: The Alephium Bridge is live on Testnet!
 #### Bridge assets from and to Ethereum Goerli Testnet and BNB Smart Chain Testnet
 
 <figure id="5852" class="graf graf--figure graf-after--h4">
-<img src="https://cdn-images-1.medium.com/max/800/1*0vI31sjZQuuALIG2s4dSXg.png" class="graf-image" data-image-id="1*0vI31sjZQuuALIG2s4dSXg.png" data-width="2874" data-height="1188" data-is-featured="true" />
+<img src="image_9ee06c07f7.png" class="graf-image" data-image-id="1*0vI31sjZQuuALIG2s4dSXg.png" data-width="2874" data-height="1188" data-is-featured="true" />
 <figcaption>This is the hitchiker’s guide to Alephium’s first testnet bridge!</figcaption>
 </figure>
 
@@ -52,7 +52,7 @@ Let’s get started!
 ### 1 — What you need to know before connecting to the bridge
 
 <figure id="95fa" class="graf graf--figure graf-after--h3">
-<img src="https://cdn-images-1.medium.com/max/800/1*ZObINXgYH-n36EiZxE4aGQ.png" class="graf-image" data-image-id="1*ZObINXgYH-n36EiZxE4aGQ.png" data-width="2878" data-height="1190" />
+<img src="image_1cba43d838.png" class="graf-image" data-image-id="1*ZObINXgYH-n36EiZxE4aGQ.png" data-width="2878" data-height="1190" />
 <figcaption>Get ready for a transformative experience</figcaption>
 </figure>
 
@@ -82,7 +82,7 @@ You can ask for some right from the wallet!
 ### 2 — How to connect to the bridge?
 
 <figure id="c047" class="graf graf--figure graf-after--h3">
-<img src="https://cdn-images-1.medium.com/max/800/1*JvEpK8zI9Ocpr27_IktV4g.png" class="graf-image" data-image-id="1*JvEpK8zI9Ocpr27_IktV4g.png" data-width="2880" data-height="1186" />
+<img src="image_8b1cb8874d.png" class="graf-image" data-image-id="1*JvEpK8zI9Ocpr27_IktV4g.png" data-width="2880" data-height="1186" />
 <figcaption>Hop on the wagon and let’s go!</figcaption>
 </figure>
 
@@ -105,7 +105,7 @@ The token bridge helps to send a token from one network to another. Now that you
 ### 3 — How to connect to the Goerli Ethereum testnet?
 
 <figure id="2747" class="graf graf--figure graf-after--h3">
-<img src="https://cdn-images-1.medium.com/max/800/1*ZCbruOp6T_n49kcJMCzWIQ.png" class="graf-image" data-image-id="1*ZCbruOp6T_n49kcJMCzWIQ.png" data-width="2870" data-height="1182" />
+<img src="image_5d5d1ccad8.png" class="graf-image" data-image-id="1*ZCbruOp6T_n49kcJMCzWIQ.png" data-width="2870" data-height="1182" />
 <figcaption>Goerli workers fixing transactions</figcaption>
 </figure>
 
@@ -140,7 +140,7 @@ After receiving the ETH Goerli tokens, your Metamask wallet will be able to pay 
 ### 4-How to bridge an asset from Alephium to Goerli?
 
 <figure id="f2da" class="graf graf--figure graf-after--h3">
-<img src="https://cdn-images-1.medium.com/max/800/1*4J-XOCg1NOGaqQiBAyPN3g.png" class="graf-image" data-image-id="1*4J-XOCg1NOGaqQiBAyPN3g.png" data-width="2870" data-height="1188" />
+<img src="image_7bcb1b0662.png" class="graf-image" data-image-id="1*4J-XOCg1NOGaqQiBAyPN3g.png" data-width="2870" data-height="1188" />
 <figcaption>Let’s get those tokens moving.</figcaption>
 </figure>
 
@@ -221,7 +221,7 @@ Your Goerli ETH wallet will then show the transaction for our review. Check if e
 ### 5- How to bridge an asset from Goerli to Alephium?
 
 <figure id="ada2" class="graf graf--figure graf-after--h3">
-<img src="https://cdn-images-1.medium.com/max/800/1*Dkerqp_sgWMWe1SQLqkpww.png" class="graf-image" data-image-id="1*Dkerqp_sgWMWe1SQLqkpww.png" data-width="2880" data-height="1188" />
+<img src="image_ebf7d75f48.png" class="graf-image" data-image-id="1*Dkerqp_sgWMWe1SQLqkpww.png" data-width="2880" data-height="1188" />
 <figcaption>And back!</figcaption>
 </figure>
 

@@ -2,7 +2,7 @@
 date: 2022-03-09 15:36:33.257000+00:00
 description: Read the first part of the core team interview series! In this edition
   we present to you the humans building the Front-end of Alephium.
-featuredImage: image_cca8f5d6a8.jpeg
+featuredImage: image_90cd721d79.jpeg
 title: Core team interview series. Episode 1
 ---
 
@@ -25,7 +25,7 @@ In fact, we haven’t communicated much about ourselves so far because we think 
 ### Mika
 
 <figure id="d0e9" class="graf graf--figure graf-after--h3">
-<img src="https://cdn-images-1.medium.com/max/800/1*WY4conW2qZlNo4QXOjM_Mg.jpeg" class="graf-image" data-image-id="1*WY4conW2qZlNo4QXOjM_Mg.jpeg" data-width="500" data-height="628" />
+<img src="image_90cd721d79.jpeg" class="graf-image" data-image-id="1*WY4conW2qZlNo4QXOjM_Mg.jpeg" data-width="500" data-height="628" />
 <figcaption>Mika</figcaption>
 </figure>
 
@@ -68,7 +68,7 @@ Efficiency, robustness and accessibility.
 ### Ilias
 
 <figure id="af69" class="graf graf--figure graf-after--h3">
-<img src="https://cdn-images-1.medium.com/max/800/1*zYMX2zq9BCqkwSJtk3ESZg.jpeg" class="graf-image" data-image-id="1*zYMX2zq9BCqkwSJtk3ESZg.jpeg" data-width="640" data-height="639" />
+<img src="image_40289bd0c0.jpeg" class="graf-image" data-image-id="1*zYMX2zq9BCqkwSJtk3ESZg.jpeg" data-width="640" data-height="639" />
 <figcaption>Ilias</figcaption>
 </figure>
 
@@ -115,7 +115,7 @@ I believe that blockchain technology has a lot to offer and that it’s here to 
 ### Lee
 
 <figure id="7732" class="graf graf--figure graf-after--h3">
-<img src="https://cdn-images-1.medium.com/max/800/0*WsYsRgoV-PRqbshh" class="graf-image" data-image-id="0*WsYsRgoV-PRqbshh" data-width="512" data-height="512" />
+<img src="image_3e4bdc7cde.jpg" class="graf-image" data-image-id="0*WsYsRgoV-PRqbshh" data-width="512" data-height="512" />
 <figcaption>Lee</figcaption>
 </figure>
 

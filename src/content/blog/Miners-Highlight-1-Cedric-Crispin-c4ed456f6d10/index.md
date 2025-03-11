@@ -2,7 +2,7 @@
 date: 2023-12-22 13:12:09.941000+00:00
 description: The Alephium blockchain, like many decentralized networks, relies heavily
   on the contributions of miners to maintain its integrity and…
-featuredImage: image_01ab6ae1df.jpg
+featuredImage: image_596cb91bc2.png
 title: 'Miners’ Highlight #1 — Cedric Crispin'
 ---
 
@@ -45,7 +45,7 @@ Obviously, it's PoW algorithm (blake3), which is very cool on GPU since it’s m
 Since I started mining, I have always wanted to learn about running a pool, and since my very first experimentation, I noticed it relies on programming languages and software which are very close to my daily job, so I had no excuse not to learn except, as always, the lack of free time.
 
 <figure id="549f" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/1*l5QFRKKcBxI8NEL-gBxbpQ.png" class="graf-image" data-image-id="1*l5QFRKKcBxI8NEL-gBxbpQ.png" data-width="1318" data-height="595" />
+<img src="image_596cb91bc2.png" class="graf-image" data-image-id="1*l5QFRKKcBxI8NEL-gBxbpQ.png" data-width="1318" data-height="595" />
 <figcaption><a href="https://alephium.cedric-crispin.com/" class="markup--anchor markup--figure-anchor" data-href="https://alephium.cedric-crispin.com/" rel="nofollow noopener" target="_blank">https://alephium.cedric-crispin.com/</a></figcaption>
 </figure>
 

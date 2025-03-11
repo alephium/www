@@ -2,6 +2,7 @@
 date: 2022-12-15 16:18:10.111000+00:00
 description: Once in a while, the spotlight is put on one active member of the Alephium
   community. This is an opportunity to showcase community members’…
+featuredImage: image_5945f1f277.png
 title: 'Community Highlight #3, digdug'
 ---
 
@@ -10,7 +11,7 @@ title: 'Community Highlight #3, digdug'
 #### _Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’ contributions to the ecosystem, what drives them and what they are passionate about! More episodes:_ <a href="https://medium.com/@alephium/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" target="_blank"><em>#1 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-cgi-bin-c102cc106f19" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-cgi-bin-c102cc106f19" target="_blank"><em>#2 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-4-montail-e24fd88882a0" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-4-montail-e24fd88882a0" target="_blank"><em>#4 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-5-txn-71c4fd76ffe8" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-5-txn-71c4fd76ffe8" rel="noopener" target="_blank">#5 here</a> and <a href="https://medium.com/@alephium/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" rel="noopener" target="_blank">#6 here</a>._._
 
 <figure id="8001" class="graf graf--figure graf-after--h4">
-<img src="https://cdn-images-1.medium.com/max/800/1*sVu6kgtQgolsluyt9FVWnw.png" class="graf-image" data-image-id="1*sVu6kgtQgolsluyt9FVWnw.png" data-width="1080" data-height="1080" data-is-featured="true" />
+<img src="image_5945f1f277.png" class="graf-image" data-image-id="1*sVu6kgtQgolsluyt9FVWnw.png" data-width="1080" data-height="1080" data-is-featured="true" />
 <figcaption>Stable Diffuse prompt: <em>Digdug, from Texas,USA, has an eclectic background. He’s been involved in crypto since 2012. In the style of Studio Ghibli</em></figcaption>
 </figure>
 

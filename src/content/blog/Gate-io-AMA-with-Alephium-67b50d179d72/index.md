@@ -2,13 +2,14 @@
 date: 2022-02-18 12:15:17.605000+00:00
 description: On the 15th of February 2022, Gate.io hosted an AMA with Alephium in
   their English Telegram-group. This is the transcript from that event.
+featuredImage: image_e59ff2119e.jpg
 title: Gate.io AMA with Alephium.
 ---
 
 ### Gate.io AMA with Alephium.
 
 <figure id="cb9b" class="graf graf--figure graf-after--h3">
-<img src="https://cdn-images-1.medium.com/max/800/0*rS0OSMxYcflZup56" class="graf-image" data-image-id="0*rS0OSMxYcflZup56" data-is-featured="true" />
+<img src="image_e59ff2119e.jpg" class="graf-image" data-image-id="0*rS0OSMxYcflZup56" data-is-featured="true" />
 <figcaption>AMA with Alephium on February 15th 2022</figcaption>
 </figure>
 

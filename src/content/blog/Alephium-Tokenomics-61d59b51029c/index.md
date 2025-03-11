@@ -2,7 +2,7 @@
 date: 2021-10-05 10:18:04.453000+00:00
 description: 'Updated: The tokenomics were published on Oct 5, 2021. We updated this
   article in February of 2024 to better address the most frequently…'
-featuredImage: image_71eaa07df3.jpg
+featuredImage: image_9c872051c7.png
 title: Alephium Tokenomics
 ---
 
@@ -26,7 +26,7 @@ Most ALPH (86% of the max supply or 860 million ALPH) will be mined over ~82 yea
 The remaining 140 million ALPH (14% of the max supply) were minted with the genesis block for the Ecosystem, Sales, Team & Treasury allocations (and vest over time, see Genesis Allocation & Vesting Schedule section below).
 
 <figure id="1158" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/1*7CUw_vtudapR4kvE2MY29w.png" class="graf-image" data-image-id="1*7CUw_vtudapR4kvE2MY29w.png" data-width="1280" data-height="600" />
+<img src="image_9c872051c7.png" class="graf-image" data-image-id="1*7CUw_vtudapR4kvE2MY29w.png" data-width="1280" data-height="600" />
 <figcaption>Total emission and Genesis Allocation</figcaption>
 </figure>
 
@@ -247,7 +247,7 @@ There are several deflationary forces in Alephium’s tokenomics, including:
 - When triggered, <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" class="markup--anchor markup--li-anchor" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" target="_blank">Alephium’s Proof of Less Work</a> internalizes part of the mining cost through the upfront burning of ALPH.
 
 <figure id="7f99" class="graf graf--figure graf-after--li graf--trailing">
-<img src="https://cdn-images-1.medium.com/max/800/1*YjGQ0H2PWMhX9AIi9dUSkg.png" class="graf-image" data-image-id="1*YjGQ0H2PWMhX9AIi9dUSkg.png" data-width="1140" data-height="674" />
+<img src="image_eeb8d1f4c3.png" class="graf-image" data-image-id="1*YjGQ0H2PWMhX9AIi9dUSkg.png" data-width="1140" data-height="674" />
 <figcaption><em>This graph represents the estimated high-level overview of the token release schedule of Alephium for the 4 years after the mainnet launch. <br />
 </em><strong><em>Please note that: 1.</em></strong> <em>The Sales component might be lower than depicted. Indeed, any remaining, unsold token will be burnt, resulting in a smaller release supply.</em> <strong><em>2.</em></strong> <em>In practice, the mining reward depends on block time and hashrate. As a result, depending on the effective hashrate, it is possible that fewer tokens will be mined over the 4 years following the mainnet launch.</em></figcaption>
 </figure>

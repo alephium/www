@@ -2,6 +2,7 @@
 date: 2022-10-14 09:10:11.698000+00:00
 description: Alephium takes an organic approach to community building. We believe
   actions speak louder than words…
+featuredImage: image_b43f0a37be.jpeg
 title: Community Highlight, Wilhelm Källström aka “Oracleuggla”
 ---
 
@@ -12,7 +13,7 @@ title: Community Highlight, Wilhelm Källström aka “Oracleuggla”
 This series of highlights aims at showcasing this community by putting the spotlight on one actively contributing member at a time. This is an opportunity for us to put into the light contributions from the community along with the things they are passionate about and what drives them.
 
 <figure id="5ecf" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/1*JucdJ8bf0F4eM_gILz9exQ.jpeg" class="graf-image" data-image-id="1*JucdJ8bf0F4eM_gILz9exQ.jpeg" data-width="1024" data-height="1024" data-is-featured="true" />
+<img src="image_b43f0a37be.jpeg" class="graf-image" data-image-id="1*JucdJ8bf0F4eM_gILz9exQ.jpeg" data-width="1024" data-height="1024" data-is-featured="true" />
 <figcaption>Wilhelm Källström</figcaption>
 </figure>
 
@@ -39,14 +40,14 @@ The thing that excites me the most about Alephium must be the scalability and sh
 I’ve always wanted to contribute to some crypto ecosystem and Alephium was the way to go. From 2021–2022 I’ve built 2 web apps for the community. The first one is a portfolio tracker called <a href="https://github.com/WilhelmKallstrom/alphvue" class="markup--anchor markup--p-anchor" data-href="https://github.com/WilhelmKallstrom/alphvue" rel="noopener" target="_blank">AlphVue</a> that you add to your home screen on your smartphone. The “app” displays your current ALPH balance, the value in Fiat, and the most recent transactions. By using this web app you can securely monitor your ALPH portfolio without having your private keys on your mobile device.
 
 <figure id="6477" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/1*k2mAzfswPfLEEvSpwWYpNA.jpeg" class="graf-image" data-image-id="1*k2mAzfswPfLEEvSpwWYpNA.jpeg" data-width="969" data-height="598" />
+<img src="image_2477c9b4a7.jpeg" class="graf-image" data-image-id="1*k2mAzfswPfLEEvSpwWYpNA.jpeg" data-width="969" data-height="598" />
 <figcaption><a href="https://wilhelmkallstrom.github.io/alphvue/" class="markup--anchor markup--figure-anchor" data-href="https://wilhelmkallstrom.github.io/alphvue/" rel="noopener" target="_blank">https://wilhelmkallstrom.github.io/alphvue/</a></figcaption>
 </figure>
 
 The second thing I’ve built is a Web App called <a href="https://github.com/WilhelmKallstrom/alph-top" class="markup--anchor markup--p-anchor" data-href="https://github.com/WilhelmKallstrom/alph-top" rel="noopener" target="_blank">AlphTop</a> which is a site that shows the top 256 addresses with the most ALPH on the network. The known addresses are labeled with a category such as Genesis or Gate.io. There’s also a pie chart that displays the top 10 addresses without a locked balance. Last but not least you can hide all genesis addresses and only display the ´normal´ ones.
 
 <figure id="3efa" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/1*x9uyhxOgIKDxk3eRJUoKaA.jpeg" class="graf-image" data-image-id="1*x9uyhxOgIKDxk3eRJUoKaA.jpeg" data-width="1301" data-height="796" />
+<img src="image_096c6e340f.jpeg" class="graf-image" data-image-id="1*x9uyhxOgIKDxk3eRJUoKaA.jpeg" data-width="1301" data-height="796" />
 <figcaption><a href="https://alph-top.web.app/" class="markup--anchor markup--figure-anchor" data-href="https://alph-top.web.app/" rel="noopener" target="_blank">https://alph-top.web.app/</a></figcaption>
 </figure>
 

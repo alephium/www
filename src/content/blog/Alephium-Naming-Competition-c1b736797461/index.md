@@ -2,13 +2,14 @@
 date: 2022-01-31 13:28:49.350000+00:00
 description: Naming can be fun, but good naming is hard. Alephium has identified three
   items that desperately need naming, and we’d like to ask you for…
+featuredImage: image_5e2e1482cf.png
 title: Alephium Naming Competition
 ---
 
 ### Alephium Naming Competition
 
 <figure id="3243" class="graf graf--figure graf-after--h3">
-<img src="https://cdn-images-1.medium.com/max/800/1*XBD0zqxdRXSMBuOqlRHzxg.png" class="graf-image" data-image-id="1*XBD0zqxdRXSMBuOqlRHzxg.png" data-width="1280" data-height="1015" data-is-featured="true" />
+<img src="image_5e2e1482cf.png" class="graf-image" data-image-id="1*XBD0zqxdRXSMBuOqlRHzxg.png" data-width="1280" data-height="1015" data-is-featured="true" />
 <figcaption>Hello Alephians, what is my name?</figcaption>
 </figure>
 

@@ -2,7 +2,7 @@
 date: 2023-12-19 16:12:20.534000+00:00
 description: The Zealy sprint has come to an end on Dec 17h at 3PM CET, marking the
   end of a fun and instructive period about the Alephium Bridge and…
-featuredImage: image_c76c8db66f.jpeg
+featuredImage: image_99207765f0.jpg
 title: First Zealy Sprint Ends
 ---
 
@@ -11,7 +11,7 @@ title: First Zealy Sprint Ends
 _The Zealy sprint has come to an end on Dec 17h at 3PM CET, marking the end of a fun and instructive period about the Alephium Bridge and the broader ecosystem!_
 
 <figure id="3823" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/0*IxGlAubqHVvM4itB" class="graf-image" data-image-id="0*IxGlAubqHVvM4itB" data-width="470" data-height="500" data-is-featured="true" />
+<img src="image_99207765f0.jpg" class="graf-image" data-image-id="0*IxGlAubqHVvM4itB" data-width="470" data-height="500" data-is-featured="true" />
 <figcaption><em>The creativity of Zealy Memeoooors is literally infinite</em></figcaption>
 </figure>
 

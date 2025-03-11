@@ -1,7 +1,7 @@
 ---
 date: 2022-09-13 12:39:56.929000+00:00
 description: A Technical Promenade, part 2
-featuredImage: image_6588b1e5d9.png
+featuredImage: image_47ac4eb526.jpg
 title: Transactions Per Second (TPS)
 ---
 
@@ -18,7 +18,7 @@ In our <a href="https://medium.com/@alephium/block-time-and-block-size-16e372924
 ### Now, what is TPS?
 
 <figure id="7964" class="graf graf--figure graf-after--h3">
-<img src="https://cdn-images-1.medium.com/max/800/0*g1ROu9IwhhHOR87y" class="graf-image" data-image-id="0*g1ROu9IwhhHOR87y" data-width="1309" data-height="1600" />
+<img src="image_47ac4eb526.jpg" class="graf-image" data-image-id="0*g1ROu9IwhhHOR87y" data-width="1309" data-height="1600" />
 <figcaption>Dali did the math to get the “Maximum Speed of Raphael’s Madonna”…</figcaption>
 </figure>
 
@@ -36,7 +36,7 @@ The number of transactions per block on a “data amount” blockchain (such as 
 For example, let’s compute Bitcoin’s number of transactions per block and TPS.
 
 <figure id="a452" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/0*EynnVGOTUyrlMpYe" class="graf-image" data-image-id="0*EynnVGOTUyrlMpYe" data-width="1028" data-height="322" />
+<img src="image_80f97e8f9e.jpg" class="graf-image" data-image-id="0*EynnVGOTUyrlMpYe" data-width="1028" data-height="322" />
 <figcaption>Source: <a href="https://bitcoinvisuals.com/chain-tx-size" class="markup--anchor markup--figure-anchor" data-href="https://bitcoinvisuals.com/chain-tx-size" rel="noopener" target="_blank">Bitcoin Visuals</a></figcaption>
 </figure>
 
@@ -55,7 +55,7 @@ Disclaimer: This is how it works in theory, in practice, there are complexities 
 Cheat code: Skip the maths, and just go to a blockchain explorer, and they give you <a href="https://blockchair.com/bitcoin" class="markup--anchor markup--p-anchor" data-href="https://blockchair.com/bitcoin" rel="noopener" target="_blank">the live data</a>. You can also <a href="https://blockchair.com/bitcoin/charts/transactions-per-second" class="markup--anchor markup--p-anchor" data-href="https://blockchair.com/bitcoin/charts/transactions-per-second" rel="noopener" target="_blank">check this chart,</a> and you’ll see our result is right in line with historical data: TPS on Bitcoin usually fluctuates between 2 and 4 TPS. One of the best websites to have all this data in the smallest details is <a href="https://mempool.space/fr/" class="markup--anchor markup--p-anchor" data-href="https://mempool.space/fr/" rel="noopener" target="_blank">mempool.space</a>.
 
 <figure id="03e6" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/0*gcSWfz4pY4CA6xJQ" class="graf-image" data-image-id="0*gcSWfz4pY4CA6xJQ" data-width="1400" data-height="908" />
+<img src="image_6b3024b107.jpg" class="graf-image" data-image-id="0*gcSWfz4pY4CA6xJQ" data-width="1400" data-height="908" />
 <figcaption>Edward Hopper, had a very different vision of “Gas” in the forties…</figcaption>
 </figure>
 

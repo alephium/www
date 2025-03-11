@@ -1,6 +1,7 @@
 ---
 date: 2022-08-30 12:53:03.942000+00:00
 description: A Technical Promenade, part 1
+featuredImage: image_2e664b2caf.png
 title: Block Time and Block Size
 ---
 
@@ -9,7 +10,7 @@ title: Block Time and Block Size
 #### A Technical Promenade, part 1
 
 <figure id="dbf8" class="graf graf--figure graf-after--h4">
-<img src="https://cdn-images-1.medium.com/max/800/1*sLP--DmIrIxJP5rzLWeQdQ.png" class="graf-image" data-image-id="1*sLP--DmIrIxJP5rzLWeQdQ.png" data-width="768" data-height="432" data-is-featured="true" />
+<img src="image_2e664b2caf.png" class="graf-image" data-image-id="1*sLP--DmIrIxJP5rzLWeQdQ.png" data-width="768" data-height="432" data-is-featured="true" />
 <figcaption>A technical promenade: Block Time and Block Size</figcaption>
 </figure>
 
@@ -30,7 +31,7 @@ _\* With the introduction of the_ <a href="https://medium.com/@alephium/rh%C3%B4
 ### What is Block Time ?
 
 <figure id="adae" class="graf graf--figure graf-after--h3">
-<img src="https://cdn-images-1.medium.com/max/800/1*MjiLucU5DpdMa7VBzr76LQ.jpeg" class="graf-image" data-image-id="1*MjiLucU5DpdMa7VBzr76LQ.jpeg" data-width="2500" data-height="1916" />
+<img src="image_77bad79c4b.jpeg" class="graf-image" data-image-id="1*MjiLucU5DpdMa7VBzr76LQ.jpeg" data-width="2500" data-height="1916" />
 <figcaption>One way to look at the Mempool: <strong>The Disintegration of the Persistence of Memory</strong> <em>by Dali</em></figcaption>
 </figure>
 
@@ -45,7 +46,7 @@ In PoS, Block Time is defined much more directly and has nothing to do with diff
 ### What is Block Size?
 
 <figure id="da97" class="graf graf--figure graf-after--h3">
-<img src="https://cdn-images-1.medium.com/max/800/1*UVPCzJGd7GPVEqTE_fSkWA.png" class="graf-image" data-image-id="1*UVPCzJGd7GPVEqTE_fSkWA.png" data-width="1210" data-height="1372" />
+<img src="image_63eb791c84.png" class="graf-image" data-image-id="1*UVPCzJGd7GPVEqTE_fSkWA.png" data-width="1210" data-height="1372" />
 <figcaption>A visual representation of a block by César Baldaccini, <strong><em>Compression of silver-plated metal cutlery sculpture</em></strong></figcaption>
 </figure>
 

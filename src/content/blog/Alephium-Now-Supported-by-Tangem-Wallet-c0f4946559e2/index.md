@@ -2,13 +2,14 @@
 date: 2025-03-07 18:03:34.593000+00:00
 description: We are thrilled to announce that Alephium (ALPH) is now supported by
   Tangem wallet. This integration allows ALPH holders to securely store…
+featuredImage: image_7f9966ba82.png
 title: Alephium Now Supported by Tangem Wallet
 ---
 
 ### Alephium Now Supported by Tangem Wallet
 
 <figure id="0d67" class="graf graf--figure graf-after--h3">
-<img src="https://cdn-images-1.medium.com/max/800/1*VKvnQdHpj5CRyrzVhV_D3Q.png" class="graf-image" data-image-id="1*VKvnQdHpj5CRyrzVhV_D3Q.png" data-width="1600" data-height="900" data-is-featured="true" />
+<img src="image_7f9966ba82.png" class="graf-image" data-image-id="1*VKvnQdHpj5CRyrzVhV_D3Q.png" data-width="1600" data-height="900" data-is-featured="true" />
 <figcaption>Alephium x Tangem</figcaption>
 </figure>
 

@@ -2,6 +2,7 @@
 date: 2023-02-02 17:58:20.195000+00:00
 description: Once in a while, the spotlight is put on one active member of the Alephium
   community. This is an opportunity to showcase community members’…
+featuredImage: image_54693bf29f.png
 title: 'Community Highlight #5, TxN'
 ---
 
@@ -10,7 +11,7 @@ title: 'Community Highlight #5, TxN'
 #### _Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’ contributions to the ecosystem, what drives them, and what they are passionate about! More episodes:_ <a href="https://medium.com/@alephium/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" target="_blank"><em>#1 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-cgi-bin-c102cc106f19" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-cgi-bin-c102cc106f19" target="_blank"><em>#2 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-3-digdug-48a7ec868504" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-3-digdug-48a7ec868504" target="_blank"><em>#3 here</em></a>, <a href="https://medium.com/@alephium/community-highlight-4-montail-e24fd88882a0" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-4-montail-e24fd88882a0" target="_blank"><em>#4 here</em></a> _and_ <a href="https://medium.com/@alephium/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" target="_blank"><em>#6 here</em></a>_._
 
 <figure id="3a8b" class="graf graf--figure graf-after--h4">
-<img src="https://cdn-images-1.medium.com/max/800/1*JAFASr5H5yLKeyllOxXv5w.png" class="graf-image" data-image-id="1*JAFASr5H5yLKeyllOxXv5w.png" data-width="1170" data-height="1170" />
+<img src="image_54693bf29f.png" class="graf-image" data-image-id="1*JAFASr5H5yLKeyllOxXv5w.png" data-width="1170" data-height="1170" />
 <figcaption>TxN</figcaption>
 </figure>
 

@@ -2,13 +2,14 @@
 date: 2024-01-22 15:54:45.700000+00:00
 description: Our ecosystem thrives with developers building amazing projects on top
   of Alephium, delivering a unique experience and providing real…
+featuredImage: image_2adc785dc9.jpg
 title: 'Builders Highlight #6: What the Duck'
 ---
 
 ### **Builders Highlight \#6: What the Duck**
 
 <figure id="2030" class="graf graf--figure graf-after--h3">
-<img src="https://cdn-images-1.medium.com/max/800/0*e7sk7oVRFYRyya07" class="graf-image" data-image-id="0*e7sk7oVRFYRyya07" data-width="1440" data-height="1438" data-is-featured="true" />
+<img src="image_2adc785dc9.jpg" class="graf-image" data-image-id="0*e7sk7oVRFYRyya07" data-width="1440" data-height="1438" data-is-featured="true" />
 <figcaption>Quack!</figcaption>
 </figure>
 

@@ -2,7 +2,7 @@
 date: 2021-11-22 15:06:08.158000+00:00
 description: An in-depth analysis of the Block rewards, explaining the time-based
   and hashrate-based components of the reward emission rates.
-featuredImage: image_e02f52d122.jpeg
+featuredImage: image_becedcf971.jpg
 title: Alephium Block Rewards
 ---
 
@@ -35,7 +35,7 @@ The mining reward is bound by two curves based on hashrate and timestamp. At a g
 The time-based reward emission rate for the first four years evolves as follows:
 
 <figure id="f8c7" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/0*rDS3EQHgKpfB7DrG" class="graf-image" data-image-id="0*rDS3EQHgKpfB7DrG" data-width="1200" data-height="742" />
+<img src="image_becedcf971.jpg" class="graf-image" data-image-id="0*rDS3EQHgKpfB7DrG" data-width="1200" data-height="742" />
 <figcaption>If you want to know the precise numbers, <a href="https://github.com/alephium/alephium/blob/master/protocol/src/main/resources/time-inflation.csv" class="markup--anchor markup--figure-anchor" data-href="https://github.com/alephium/alephium/blob/master/protocol/src/main/resources/time-inflation.csv" rel="noopener" target="_blank">here is the GitHub CSV file.</a></figcaption>
 </figure>
 
@@ -44,7 +44,7 @@ Over four years, the time-based mining reward drops gradually from 15 ALPH (shar
 #### Hashrate
 
 <figure id="f83a" class="graf graf--figure graf-after--h4">
-<img src="https://cdn-images-1.medium.com/max/800/1*u09fRk117tukjKx9AVeWig.jpeg" class="graf-image" data-image-id="1*u09fRk117tukjKx9AVeWig.jpeg" data-width="786" data-height="486" />
+<img src="image_c9069ba7e9.jpeg" class="graf-image" data-image-id="1*u09fRk117tukjKx9AVeWig.jpeg" data-width="786" data-height="486" />
 <figcaption>If you want to know the precise numbers, <a href="https://github.com/alephium/alephium/blob/master/protocol/src/main/resources/hashrate-inflation.csv" class="markup--anchor markup--figure-anchor" data-href="https://github.com/alephium/alephium/blob/master/protocol/src/main/resources/hashrate-inflation.csv" rel="noopener" target="_blank">here is the GitHub CSV file.</a> (The first column is the log_2 of the network hashrate, a value of 8 means the network hashrate is 2**8 hash/second)</figcaption>
 </figure>
 

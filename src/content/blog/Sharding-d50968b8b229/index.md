@@ -1,7 +1,7 @@
 ---
 date: 2023-02-22 13:42:39.451000+00:00
 description: A Technical Promenade, part 4
-featuredImage: image_1b7ce2bbf2.jpg
+featuredImage: image_ace28503b1.jpeg
 title: Sharding
 ---
 
@@ -38,7 +38,7 @@ Alephium created the <a href="https://medium.com/@alephium/an-introduction-to-th
 Alephium’s mainnet is currently divided into four groups, which four shards in each group. These 16 shards allow the blockchain to process 400 <a href="https://medium.com/@alephium/transactions-per-second-tps-f13217a49e39" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/transactions-per-second-tps-f13217a49e39" target="_blank">transactions per second</a> (TPS). Every shard is built as a blockchain to guarantee its internal transaction ordering. It can process blocks and transactions in parallel with other shards, leveraging the UTXOs’ immutability, as long as the order does not violate the basic dependencies between them.
 
 <figure id="162b" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/1*8yJkYe9rlbXVAwKxEk_95g.jpeg" class="graf-image" data-image-id="1*8yJkYe9rlbXVAwKxEk_95g.jpeg" data-width="798" data-height="798" />
+<img src="image_ace28503b1.jpeg" class="graf-image" data-image-id="1*8yJkYe9rlbXVAwKxEk_95g.jpeg" data-width="798" data-height="798" />
 <figcaption>Blockflow Algorithm — Source: <a href="https://alephium.org/" class="markup--anchor markup--figure-anchor" data-href="https://alephium.org/" rel="noopener" target="_blank">Alephium.org</a></figcaption>
 </figure>
 

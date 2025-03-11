@@ -2,6 +2,7 @@
 date: 2022-11-03 16:05:01.716000+00:00
 description: 'This is episode #2 in our series of highlights where once in a while
   we put the spotlight on one active member of our community. This is an…'
+featuredImage: image_30dfdcb286.jpg
 title: 'Community Highlight #2, cgi-bin'
 ---
 
@@ -14,7 +15,7 @@ title: 'Community Highlight #2, cgi-bin'
 Today we thank CGI-BIN, a recognizable voice on our Telegram & Discord channels, as well as on Twitter! A very helpful and reactive presence, knowledgeable about Alephium in particular and crypto in general.
 
 <figure id="27ff" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/0*fB6GAPmj_PxudeDv" class="graf-image" data-image-id="0*fB6GAPmj_PxudeDv" data-width="512" data-height="512" data-is-featured="true" />
+<img src="image_30dfdcb286.jpg" class="graf-image" data-image-id="0*fB6GAPmj_PxudeDv" data-width="512" data-height="512" data-is-featured="true" />
 <figcaption>Stable Diffusion image of cgi-bin</figcaption>
 </figure>
 

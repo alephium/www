@@ -1,7 +1,7 @@
 ---
 date: 2022-09-20 14:05:54.857000+00:00
 description: A Technical Promenade, part 3
-featuredImage: image_bd91bd99b5.png
+featuredImage: image_1a832ca4ff.jpg
 title: Time to Finality
 ---
 
@@ -18,7 +18,7 @@ In our last <a href="https://medium.com/@alephium/transactions-per-second-tps-f1
 ### What is Time to Finality (TTF)?
 
 <figure id="c94a" class="graf graf--figure graf-after--h3">
-<img src="https://cdn-images-1.medium.com/max/800/0*v2EHV8MD8l5jV5-a" class="graf-image" data-image-id="0*v2EHV8MD8l5jV5-a" data-width="1256" data-height="707" />
+<img src="image_1a832ca4ff.jpg" class="graf-image" data-image-id="0*v2EHV8MD8l5jV5-a" data-width="1256" data-height="707" />
 <figcaption>Like Orpheus, leading Eurydice out of hell… it’s not done, until it’s done! Do not turn around too soon! Here a sublime painting from Jean-Baptiste Camille Corot (1796–1875), <em>Orphée ramenant Eurydice des enfers</em>, 1861</figcaption>
 </figure>
 
@@ -37,7 +37,7 @@ Most blockchain systems offer **probabilistic transaction finality** — thi
 Other blockchains use a **deterministic transaction finality** (sometimes called absolute finality) — this means that the transaction is considered final when it is added to the blockchain. This allows these protocols to display much faster time-to-finality and has to do with their consensus algorithm.
 
 <figure id="30a3" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/0*jAtIoVUH_NbfdacK" class="graf-image" data-image-id="0*jAtIoVUH_NbfdacK" data-width="1156" data-height="480" />
+<img src="image_8c2f3341fc.jpg" class="graf-image" data-image-id="0*jAtIoVUH_NbfdacK" data-width="1156" data-height="480" />
 <figcaption>The <strong>Battle of Bulgarophygon where the Byzantine’s army was exterminated… did it not solve for the</strong> <a href="https://en.wikipedia.org/wiki/Byzantine_fault" class="markup--anchor markup--figure-anchor" data-href="https://en.wikipedia.org/wiki/Byzantine_fault" rel="noopener" target="_blank">Byzantine General Problem</a> properly? Unknown artist</figcaption>
 </figure>
 

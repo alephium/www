@@ -1,13 +1,14 @@
 ---
 date: 2022-08-11 16:13:20.641000+00:00
 description: Introduction
+featuredImage: image_2e22410376.jpg
 title: TTxOO 2 — The road to Self-Custody
 ---
 
 ### TTxOO 2 — The road to Self-Custody
 
 <figure id="fd3c" class="graf graf--figure graf-after--h3">
-<img src="https://cdn-images-1.medium.com/max/800/0*unNFtqS7tw65Gbd9" class="graf-image" data-image-id="0*unNFtqS7tw65Gbd9" data-width="1024" data-height="576" data-is-featured="true" />
+<img src="image_2e22410376.jpg" class="graf-image" data-image-id="0*unNFtqS7tw65Gbd9" data-width="1024" data-height="576" data-is-featured="true" />
 <figcaption>Our Tech Talk x Open Office happens every last thursday of the month</figcaption>
 </figure>
 
@@ -18,7 +19,7 @@ On Thursday, August 4th, on <a href="https://discord.gg/JErgRBfRSB" class="marku
 This article is a recap of the presentation and Q&A we had with the community.
 
 <figure id="02cc" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/0*wK7HdybySNK4dnKh" class="graf-image" data-image-id="0*wK7HdybySNK4dnKh" data-width="1600" data-height="898" />
+<img src="image_17a120a7ac.jpg" class="graf-image" data-image-id="0*wK7HdybySNK4dnKh" data-width="1600" data-height="898" />
 <figcaption>Our friends from Holding graced us with their time and expertise</figcaption>
 </figure>
 
@@ -50,7 +51,7 @@ _These seven steps on the road to self-custody are tailor-made for the state of 
 ### 1/7 — Custody on an Exchange
 
 <figure id="2c57" class="graf graf--figure graf-after--h3">
-<img src="https://cdn-images-1.medium.com/max/800/0*5JFG5uXcsnjhEXNv" class="graf-image" data-image-id="0*5JFG5uXcsnjhEXNv" data-width="1024" data-height="768" />
+<img src="image_5d59965781.jpg" class="graf-image" data-image-id="0*5JFG5uXcsnjhEXNv" data-width="1024" data-height="768" />
 <figcaption><a href="https://medium.com/u/898f59563d67" class="markup--user markup--figure-user" data-href="https://medium.com/u/898f59563d67" data-anchor-type="2" data-user-id="898f59563d67" data-action-value="898f59563d67" data-action="show-user-card" data-action-type="hover" target="_blank">Andreas M. Antonopoulos</a> rules</figcaption>
 </figure>
 
@@ -65,7 +66,7 @@ _These seven steps on the road to self-custody are tailor-made for the state of 
 ### 2/7 — Phone/Computer Hot Wallet with a Proper Backup
 
 <figure id="7571" class="graf graf--figure graf-after--h3">
-<img src="https://cdn-images-1.medium.com/max/800/0*3xVY637Hd7LW7cUU" class="graf-image" data-image-id="0*3xVY637Hd7LW7cUU" data-width="1252" data-height="870" />
+<img src="image_a784811e10.jpg" class="graf-image" data-image-id="0*3xVY637Hd7LW7cUU" data-width="1252" data-height="870" />
 <figcaption>We said Proper Backups!</figcaption>
 </figure>
 
@@ -82,7 +83,7 @@ One improvement to this setup is to have the wallet installed on a device that i
 ### 3/7 — Phone/Computer Hot Wallet with a Proper Backup & a Passphrase
 
 <figure id="48bb" class="graf graf--figure graf-after--h3">
-<img src="https://cdn-images-1.medium.com/max/800/0*LR6HJjwZ1urGs4fe" class="graf-image" data-image-id="0*LR6HJjwZ1urGs4fe" data-width="539" data-height="290" />
+<img src="image_303e05347e.jpg" class="graf-image" data-image-id="0*LR6HJjwZ1urGs4fe" data-width="539" data-height="290" />
 <figcaption>This is actually a good PassPhrase that no-one would think of</figcaption>
 </figure>
 
@@ -101,7 +102,7 @@ This configuration also allows you to use plausible deniability in situations wh
 ### 4/7 — Phone/Computer Hot Wallet with a Proper Backup, a Passphrase & a Full Node
 
 <figure id="5284" class="graf graf--figure graf-after--h3">
-<img src="https://cdn-images-1.medium.com/max/800/0*3M9IgzvfLpFvWx76" class="graf-image" data-image-id="0*3M9IgzvfLpFvWx76" data-width="500" data-height="500" />
+<img src="image_47d4dc8d97.jpg" class="graf-image" data-image-id="0*3M9IgzvfLpFvWx76" data-width="500" data-height="500" />
 <figcaption>Philosoraptor knows.</figcaption>
 </figure>
 
@@ -120,7 +121,7 @@ This hardware can be anything supported by <a href="https://en.wikipedia.org/wik
 ### 5/7 — Node Wallet
 
 <figure id="06ec" class="graf graf--figure graf-after--h3">
-<img src="https://cdn-images-1.medium.com/max/800/1*kM6c1-mpVfVGA6oTToeqDg.png" class="graf-image" data-image-id="1*kM6c1-mpVfVGA6oTToeqDg.png" data-width="1602" data-height="890" />
+<img src="image_6059edecca.png" class="graf-image" data-image-id="1*kM6c1-mpVfVGA6oTToeqDg.png" data-width="1602" data-height="890" />
 <figcaption>Swagger is awesome</figcaption>
 </figure>
 
@@ -141,7 +142,7 @@ This hardware can be anything supported by <a href="https://en.wikipedia.org/wik
 The communication method between these machines is via a QR Code or physical media, like a USB key or an SD card, which the user must only use for this purpose (to transfer information between these two pieces of equipment).
 
 <figure id="5641" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/0*5z7HCedzSav48Kaa" class="graf-image" data-image-id="0*5z7HCedzSav48Kaa" data-width="714" data-height="337" />
+<img src="image_3c6dbe823b.jpg" class="graf-image" data-image-id="0*5z7HCedzSav48Kaa" data-width="714" data-height="337" />
 <figcaption>This is an air-gapped computer on a nineties diagram</figcaption>
 </figure>
 
@@ -152,7 +153,7 @@ The communication method between these machines is via a QR Code or physical med
 ### 7/7 — Node Multisignature Wallet with Offline Cosigners
 
 <figure id="fbce" class="graf graf--figure graf-after--h3">
-<img src="https://cdn-images-1.medium.com/max/800/0*cEuO2_8bj5IN0UuX" class="graf-image" data-image-id="0*cEuO2_8bj5IN0UuX" data-width="1420" data-height="916" />
+<img src="image_de02d7437c.jpg" class="graf-image" data-image-id="0*cEuO2_8bj5IN0UuX" data-width="1420" data-height="916" />
 <figcaption>Multisigs are important security tools</figcaption>
 </figure>
 

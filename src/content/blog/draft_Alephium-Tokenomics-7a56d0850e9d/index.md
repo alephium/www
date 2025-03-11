@@ -2,7 +2,7 @@
 description: 'Updated: The tokenomics were published on Oct 5, 2021. We updated this
   article in February of 2024 to better address the most frequently…'
 draft: true
-featuredImage: image_71eaa07df3.jpg
+featuredImage: image_9c872051c7.png
 title: Alephium Tokenomics
 ---
 
@@ -26,7 +26,7 @@ Most ALPH (86% of the max supply or 860 million ALPH) will be mined over ~82 yea
 The remaining 140 million ALPH (14% of the max supply) were minted with the genesis block for the Ecosystem, Sales, Team & Treasury allocations (and vest over time, see Genesis Allocation & Vesting Schedule section below).
 
 <figure id="1158" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/1*7CUw_vtudapR4kvE2MY29w.png" class="graf-image" data-image-id="1*7CUw_vtudapR4kvE2MY29w.png" data-width="1280" data-height="600" />
+<img src="image_9c872051c7.png" class="graf-image" data-image-id="1*7CUw_vtudapR4kvE2MY29w.png" data-width="1280" data-height="600" />
 <figcaption>Total emission and Genesis Allocation</figcaption>
 </figure>
 

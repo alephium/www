@@ -2,6 +2,7 @@
 date: 2023-02-15 13:42:16.309000+00:00
 description: Once in a while, the spotlight is put on one active member of the Alephium
   community. This is an opportunity to showcase community…
+featuredImage: image_e16d660d23.jpg
 title: 'Community Highlight #6, Waldi — Zkit/beats'
 ---
 
@@ -10,7 +11,7 @@ title: 'Community Highlight #6, Waldi — Zkit/beats'
 #### Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’ contributions to the ecosystem, what drives them, and what they are passionate about! More episodes: <a href="https://medium.com/@alephium/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" target="_blank">#1 here</a>, <a href="https://medium.com/@alephium/community-highlight-cgi-bin-c102cc106f19" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-cgi-bin-c102cc106f19" target="_blank">#2 here</a>, <a href="https://medium.com/@alephium/community-highlight-3-digdug-48a7ec868504" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-3-digdug-48a7ec868504" target="_blank">#3 here</a>, <a href="https://medium.com/@alephium/community-highlight-4-montail-e24fd88882a0" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-4-montail-e24fd88882a0" target="_blank">#4 here</a>, and <a href="https://medium.com/@alephium/community-highlight-5-txn-71c4fd76ffe8" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-5-txn-71c4fd76ffe8" target="_blank">#5 here.</a>
 
 <figure id="b1de" class="graf graf--figure graf-after--h4">
-<img src="https://cdn-images-1.medium.com/max/800/0*nZuE_PKjvxWdLYlp" class="graf-image" data-image-id="0*nZuE_PKjvxWdLYlp" data-width="604" data-height="340" data-is-featured="true" />
+<img src="image_e16d660d23.jpg" class="graf-image" data-image-id="0*nZuE_PKjvxWdLYlp" data-width="604" data-height="340" data-is-featured="true" />
 <figcaption>ZKITBEATS logo, consisting of a Yin Yan symbol in black and red with Koi fishes instead of dots, on a background of graffiti art</figcaption>
 </figure>
 
@@ -25,7 +26,7 @@ I’m from Germany, and you can call me Waldi, but I´m also known as Zkit/beats
 I am in my early 30s. Until a few years back, I made <a href="https://www.youtube.com/watch?v=5C3OZROCxTM" class="markup--anchor markup--p-anchor" data-href="https://www.youtube.com/watch?v=5C3OZROCxTM" rel="noopener" target="_blank">hip-hop beats</a>, hence my artist name. But I like any kind of music, as long as it sounds good. Otherwise, I lead a normal life, have a full-time job, and like to go to the soccer stadium when I have time.
 
 <figure id="ee9d" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/0*9_DDh4f3FdRFv5lp" class="graf-image" data-image-id="0*9_DDh4f3FdRFv5lp" data-width="720" data-height="557" />
+<img src="image_7fdf0bab3c.jpg" class="graf-image" data-image-id="0*9_DDh4f3FdRFv5lp" data-width="720" data-height="557" />
 <figcaption>1. FC Kaiserslautern fans in a crowded stadium</figcaption>
 </figure>
 
@@ -50,7 +51,7 @@ I <a href="https://medium.com/@waldialephium/das-leman-upgrade-2-293b62c7ee39" c
 Of course, music labels take too much of the cake. Their deals are like enslavement, stipulating what you can do or with whom you can make music, and so on… On the other hand, music labels do a lot of work in the background. So an artist will always need someone to organize logistics for concerts and marketing and then has to trust them. Of course, there are good approaches with NFTs, but when I see <a href="https://www.youtube.com/watch?v=RjrA-slMoZ4" class="markup--anchor markup--p-anchor" data-href="https://www.youtube.com/watch?v=RjrA-slMoZ4" rel="noopener" target="_blank">Snoop Dog with Eminem as Bored Apes</a> in a video, I can’t take it seriously. It’s about artists and not about making people richer behind cryptocurrencies. I’ve always been a fan of underground rap. What a job these people have done without being rewarded to this day! How much music have they made available for free on youtube without ever being paid for it? For the small artists, I hope blockchain technology will enable them to earn some money to finance themselves. But you also have to be more than just a musician these days. In my opinion, there is still a long way to go.
 
 <figure id="bd22" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/0*e5w6Ycs8ZqV1CR2c" class="graf-image" data-image-id="0*e5w6Ycs8ZqV1CR2c" data-width="720" data-height="535" />
+<img src="image_d0f265fbca.jpg" class="graf-image" data-image-id="0*e5w6Ycs8ZqV1CR2c" data-width="720" data-height="535" />
 <figcaption>Artist portrait of Zkit/Beats</figcaption>
 </figure>
 

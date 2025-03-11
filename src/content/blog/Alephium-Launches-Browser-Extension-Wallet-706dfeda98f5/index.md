@@ -1,7 +1,7 @@
 ---
 date: 2023-03-14 13:59:07.975000+00:00
 description: Download it and try the new features on Alephium Testnet!
-featuredImage: image_1054d4c1f5.jpg
+featuredImage: image_a708db8d02.jpg
 title: Alephium Launches Browser Extension Wallet
 ---
 
@@ -39,7 +39,7 @@ One of the standout features of the Alephium browser extension wallet is its rob
 Another feature of the Alephium browser extension wallet is its **token faucet** support (a feature enabled on Alephium’s Devnet and Testnet only). This allows users to obtain small amounts of Alephium tokens for testing purposes easily. You just need to click on the “add funds” button and then on the “request \$ALPH” to receive the tokens.
 
 <figure id="7d07" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/0*w1NdObOGLccSFMbM" class="graf-image" data-image-id="0*w1NdObOGLccSFMbM" data-width="355" data-height="594" />
+<img src="image_a708db8d02.jpg" class="graf-image" data-image-id="0*w1NdObOGLccSFMbM" data-width="355" data-height="594" />
 <figcaption>Request $ALPH on Testnet and Devnet</figcaption>
 </figure>
 
@@ -48,7 +48,7 @@ Another feature of the Alephium browser extension wallet is its **token faucet**
 The wallet includes **token list** support, allowing users to easily view and manage their token balances and transactions. This feature makes it easy for users to keep track of their digital assets and ensure they are always up-to-date.
 
 <figure id="f7d8" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/0*SorkPY1hgYsB9LaX" class="graf-image" data-image-id="0*SorkPY1hgYsB9LaX" data-width="355" data-height="583" />
+<img src="image_ff29a51d32.jpg" class="graf-image" data-image-id="0*SorkPY1hgYsB9LaX" data-width="355" data-height="583" />
 <figcaption>Add token form</figcaption>
 </figure>
 
@@ -57,7 +57,7 @@ The wallet includes **token list** support, allowing users to easily view and ma
 The Alephium browser extension wallet has an **address book** feature for users who repeatedly send transactions to the same addresses. This allows users to save frequently used addresses, helps to avoid typos, and makes it quick and easy to send transactions to the same recipient multiple times.
 
 <figure id="8496" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/0*ukVh4XgFErHbrXfK" class="graf-image" data-image-id="0*ukVh4XgFErHbrXfK" data-width="355" data-height="589" />
+<img src="image_e24e700430.jpg" class="graf-image" data-image-id="0*ukVh4XgFErHbrXfK" data-width="355" data-height="589" />
 <figcaption>Address book</figcaption>
 </figure>
 
@@ -67,7 +67,7 @@ Finally, the wallet features **Schnorr Signatures**. This is a more <a href="htt
 This feature enables <a href="https://nostr.com/" class="markup--anchor markup--p-anchor" data-href="https://nostr.com/" rel="noopener" target="_blank">nostr</a> support, making the wallet capable of signing messages in the social network. It could also be leveraged in other Schnorr-based applications.
 
 <figure id="fd0d" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/0*CFq37mhs9sgEJktE" class="graf-image" data-image-id="0*CFq37mhs9sgEJktE" data-width="351" data-height="577" />
+<img src="image_a2ab67a85a.jpg" class="graf-image" data-image-id="0*CFq37mhs9sgEJktE" data-width="351" data-height="577" />
 <figcaption>Schnorr signature option</figcaption>
 </figure>
 

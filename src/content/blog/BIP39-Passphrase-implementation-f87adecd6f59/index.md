@@ -2,6 +2,7 @@
 date: 2022-08-09 14:34:19.192000+00:00
 description: To keep giving our users more tools to secure their ALPH, we’ve implemented
   the BIP39 passphrase feature in the desktop wallet v1.3.0!
+featuredImage: image_962a6c58d3.jpg
 title: BIP39 Passphrase implementation
 ---
 
@@ -10,7 +11,7 @@ title: BIP39 Passphrase implementation
 #### To keep giving our users more tools to secure their ALPH, we’ve implemented the BIP39 passphrase feature in the desktop wallet v1.3.0!
 
 <figure id="4e45" class="graf graf--figure graf-after--h4">
-<img src="https://cdn-images-1.medium.com/max/800/0*6IncMm2ok_TT0dYc" class="graf-image" data-image-id="0*6IncMm2ok_TT0dYc" data-width="768" data-height="432" data-is-featured="true" />
+<img src="image_962a6c58d3.jpg" class="graf-image" data-image-id="0*6IncMm2ok_TT0dYc" data-width="768" data-height="432" data-is-featured="true" />
 <figcaption>Desktop Wallet v1.3.0. Implementing BIP39 Passphrase specification from the Bitcoin Improvement Proposal</figcaption>
 </figure>
 
@@ -33,7 +34,7 @@ The Secret Recovery Phrase of 24 words that is generated when you create a new w
 You can therefore have one Secret Recovery Phrase with multiple passphrases to create multiple different wallets.
 
 <figure id="22fa" class="graf graf--figure graf-after--p graf--trailing">
-<img src="https://cdn-images-1.medium.com/max/800/0*qdpOElF_lCcBtrO7" class="graf-image" data-image-id="0*qdpOElF_lCcBtrO7" data-width="1161" data-height="569" />
+<img src="image_5f122d5ae0.jpg" class="graf-image" data-image-id="0*qdpOElF_lCcBtrO7" data-width="1161" data-height="569" />
 <figcaption>Three different wallets derived from the same Secret Recovery Phrase</figcaption>
 </figure>
 
@@ -48,7 +49,7 @@ The best way to put it is <a href="https://en.wikipedia.org/wiki/Plausible_denia
 And here’s an excellent comic of the no less excellent <a href="https://xkcd.com" class="markup--anchor markup--p-anchor" data-href="https://xkcd.com" rel="noopener" target="_blank">XKCD</a> explaining in very few words why one might need plausible deniability in crypto:
 
 <figure id="8248" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/0*w6lGms1-xxDgHQ2d" class="graf-image" data-image-id="0*w6lGms1-xxDgHQ2d" data-width="448" data-height="274" />
+<img src="image_f921ac9506.jpg" class="graf-image" data-image-id="0*w6lGms1-xxDgHQ2d" data-width="448" data-height="274" />
 <figcaption>XKCD 538 — <a href="https://xkcd.com/538/" class="markup--anchor markup--figure-anchor" data-href="https://xkcd.com/538/" rel="nofollow noopener" target="_blank">https://xkcd.com/538/</a></figcaption>
 </figure>
 
@@ -57,7 +58,7 @@ In the case of a wallet containing cryptocurrencies and/or assets, this refers t
 The Passphrase feature can help you secure most of your wealth as well as your physical safety by convincing the attacker that they have gained access to _the entirety_ of your funds… while in fact they have not!
 
 <figure id="7d42" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/0*LrHuZaRl-iyAMxW6" class="graf-image" data-image-id="0*LrHuZaRl-iyAMxW6" data-width="1024" data-height="553" />
+<img src="image_2738b197d4.jpg" class="graf-image" data-image-id="0*LrHuZaRl-iyAMxW6" data-width="1024" data-height="553" />
 <figcaption>Two wallets have been compromised (Wallets #1 and #2) but not the hidden one (Wallet #3).</figcaption>
 </figure>
 
@@ -88,7 +89,7 @@ You can keep your Secret Recovery Phrase in a safe at the bank, and your passphr
 #### The “normal wallet”
 
 <figure id="ba63" class="graf graf--figure graf-after--h4">
-<img src="https://cdn-images-1.medium.com/max/800/0*mDJ7GLQPKOTzXf_a" class="graf-image" data-image-id="0*mDJ7GLQPKOTzXf_a" data-width="539" data-height="229" />
+<img src="image_6acd5c3cb8.jpg" class="graf-image" data-image-id="0*mDJ7GLQPKOTzXf_a" data-width="539" data-height="229" />
 <figcaption>Wallet #1, no Passphrase</figcaption>
 </figure>
 
@@ -101,7 +102,7 @@ You then transfer a small amount of ALPH to it. In this example, we’ll transfe
 #### The “hidden wallet”
 
 <figure id="c360" class="graf graf--figure graf-after--h4">
-<img src="https://cdn-images-1.medium.com/max/800/0*7XA_NOjgHZNdB58T" class="graf-image" data-image-id="0*7XA_NOjgHZNdB58T" data-width="539" data-height="290" />
+<img src="image_4e2408c99e.jpg" class="graf-image" data-image-id="0*7XA_NOjgHZNdB58T" data-width="539" data-height="290" />
 <figcaption>Wallet #2, with a passphrase</figcaption>
 </figure>
 
@@ -116,7 +117,7 @@ You decide to transfer 1'000 ALPH to the **Wallet \#2**.
 #### The other “hidden wallets”
 
 <figure id="bf25" class="graf graf--figure graf-after--h4">
-<img src="https://cdn-images-1.medium.com/max/800/0*VE7J2FCehK7CruMd" class="graf-image" data-image-id="0*VE7J2FCehK7CruMd" data-width="539" data-height="290" />
+<img src="image_b0905c76bc.jpg" class="graf-image" data-image-id="0*VE7J2FCehK7CruMd" data-width="539" data-height="290" />
 <figcaption>Wallet #3, with another passphrase</figcaption>
 </figure>
 

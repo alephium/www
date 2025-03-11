@@ -2,6 +2,7 @@
 date: 2022-04-21 09:29:12.943000+00:00
 description: Back in March 2022, we launched a community video contest and the results
   are in!
+featuredImage: image_ec866fe64a.jpg
 title: And the winners of the video creation contest are…
 ---
 
@@ -10,7 +11,7 @@ title: And the winners of the video creation contest are…
 #### Back in March 2022, we launched a community video contest and the results are in!
 
 <figure id="27ce" class="graf graf--figure graf-after--h4">
-<img src="https://cdn-images-1.medium.com/max/800/0*i5LAF3AmPrunnZLb" class="graf-image" data-image-id="0*i5LAF3AmPrunnZLb" data-width="936" data-height="527" data-is-featured="true" />
+<img src="image_ec866fe64a.jpg" class="graf-image" data-image-id="0*i5LAF3AmPrunnZLb" data-width="936" data-height="527" data-is-featured="true" />
 <figcaption>Video creation contest</figcaption>
 </figure>
 

@@ -2,6 +2,7 @@
 date: 2022-05-27 12:21:53.876000+00:00
 description: The first half of 2022 was a vigorous but exciting, fun and rewarding
   period for Alephium in terms of milestones and growth. Read about…
+featuredImage: image_4c7ef37863.jpg
 title: Alephium — H1 Project Update
 ---
 
@@ -10,7 +11,7 @@ title: Alephium — H1 Project Update
 #### The first half of 2022 was a vigorous but exciting, fun and rewarding period for Alephium in terms of milestones and growth. Here’s a look back at some of the highlights, what they meant for us, for the community and what we learned.
 
 <figure id="8d6d" class="graf graf--figure graf-after--h4 graf--trailing">
-<img src="https://cdn-images-1.medium.com/max/800/0*O0f5D-jMha9RR4C7" class="graf-image" data-image-id="0*O0f5D-jMha9RR4C7" data-width="768" data-height="432" data-is-featured="true" />
+<img src="image_4c7ef37863.jpg" class="graf-image" data-image-id="0*O0f5D-jMha9RR4C7" data-width="768" data-height="432" data-is-featured="true" />
 <figcaption>Alephium H1 Project update</figcaption>
 </figure>
 
@@ -37,7 +38,7 @@ A new section for advanced management was introduced, effectively allowing miner
 Last but not least, the looks of it got an overhaul, with subtle animations and improved user experience! <a href="https://github.com/alephium/desktop-wallet/releases/latest" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/desktop-wallet/releases/latest" rel="noopener" target="_blank">Have a look at it for yourself</a> if you haven’t already!
 
 <figure id="dbfe" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/1*6bSueMHVMELW8ufUfTYfow.png" class="graf-image" data-image-id="1*6bSueMHVMELW8ufUfTYfow.png" data-width="768" data-height="284" />
+<img src="image_b8cdabdd41.png" class="graf-image" data-image-id="1*6bSueMHVMELW8ufUfTYfow.png" data-width="768" data-height="284" />
 <figcaption>Desktop wallet in light and dark mode</figcaption>
 </figure>
 
@@ -46,7 +47,7 @@ Last but not least, the looks of it got an overhaul, with subtle animations and 
 We were very keen on adding metrics to the <a href="https://explorer.alephium.org/#/blocks" class="markup--anchor markup--p-anchor" data-href="https://explorer.alephium.org/#/blocks" rel="noopener" target="_blank">explorer.</a> You can now find hashrate, supply, total transactions, total blocks and average block time live on our explorer page. We also added an indicator to display the number of confirmations of a transaction. Thanks to heavy work on the back-end, the performance improved on pages with large amounts of transactions and the explorer got a lot quicker!
 
 <figure id="0200" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/1*dherAJfF6FxjDCxh4lqKYw.png" class="graf-image" data-image-id="1*dherAJfF6FxjDCxh4lqKYw.png" data-width="1237" data-height="193" />
+<img src="image_6578d96769.png" class="graf-image" data-image-id="1*dherAJfF6FxjDCxh4lqKYw.png" data-width="1237" data-height="193" />
 <figcaption>Statistics shown in the explorer</figcaption>
 </figure>
 
