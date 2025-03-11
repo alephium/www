@@ -1,8 +1,8 @@
 ---
-title: 'BIP39 Passphrase implementation'
-
-description: 'To keep giving our users more tools to secure their ALPH, we’ve implemented the BIP39 passphrase feature in the desktop wallet v1.3.0!'
-date: 2022-08-09T14:34:19.192Z
+date: 2022-08-09 14:34:19.192000+00:00
+description: To keep giving our users more tools to secure their ALPH, we’ve implemented
+  the BIP39 passphrase feature in the desktop wallet v1.3.0!
+title: BIP39 Passphrase implementation
 ---
 
 ### BIP39 Passphrase implementation

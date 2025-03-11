@@ -26,7 +26,12 @@ module.exports = {
     'gatsby-plugin-sitemap',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
-    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: ['gatsby-remark-images']
+      }
+    },
     'gatsby-transformer-yaml',
     {
       resolve: 'gatsby-source-filesystem',

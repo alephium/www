@@ -1,15 +1,15 @@
 ---
-title: 'Browser Wallet Extension v0.7.0 has been released'
-
+date: 2023-05-16 14:57:00.483000+00:00
 description: 'Featuring: Ledger Integration'
-date: 2023-05-16T14:57:00.483Z
+featuredImage: image_8a54913e8b.png
+title: Browser Wallet Extension v0.7.0 has been released
 ---
 
 ### Browser Wallet Extension v0.7.0 has been released
 
 Featuring: Ledger Integration
 
-![](https://cdn-images-1.medium.com/max/800/1*Jn45-b_jj1aa_lWYTyLIZQ.png)
+![](image_8a54913e8b.png)
 
 > UPDATE: Alephium has an official integration with Ledger! you can find all details <a href="https://medium.com/@alephium/alephium-available-on-ledger-hardware-wallets-27fa77f928ab" class="markup--anchor markup--pullquote-anchor" data-href="https://medium.com/@alephium/alephium-available-on-ledger-hardware-wallets-27fa77f928ab" target="_blank">here</a>
 
@@ -34,7 +34,7 @@ You will need Python and PIP installed on your computer to get the Alephium App 
 
 **3 — Install the Ledger Python Library**
 
-![](https://cdn-images-1.medium.com/max/800/1*mLA7c4qdeygncAyqkqQMEw.png)
+![](image_ca0f9b844b.png)
 
 We are going to use the Ledger Python Library (you can find it <a href="https://github.com/LedgerHQ/ledgerctl#quick-install" class="markup--anchor markup--p-anchor" data-href="https://github.com/LedgerHQ/ledgerctl#quick-install" rel="noopener" target="_blank">here</a>). It is necessary because you are going to install a custom App onto your Ledger Device.
 
@@ -45,7 +45,7 @@ To install the Ledger Python Library just open a terminal window and type the fo
 
 This will make all upgrades and install the Ledger Wallet Library that will be needed for the next step.
 
-![](https://cdn-images-1.medium.com/max/800/1*x4hMR_k1G97D_LwzyDI6DA.gif)
+![](image_50709e2dc8.gif)
 
 **4 — Download the Alephium Ledger App to your computer**
 
@@ -53,7 +53,7 @@ Go to the following GitHub repository: <a href="https://github.com/alephium/ledg
 
 _🚨To download the repository, click on the “Code” green button and choose “Download Zip.”_
 
-![](https://cdn-images-1.medium.com/max/800/1*elxRyPYUquAeDCuzRGq-Lw.png)
+![](image_5adf13f228.png)
 
 Download and unzip it in a folder you have easy access to and all read/write permissions.
 
@@ -63,7 +63,7 @@ Your Ledger now needs to be connected to your computer and unlocked.
 
 Go to the GitHub repository (<a href="https://github.com/alephium/ledger-alephium/tree/master" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/ledger-alephium/tree/master" rel="noopener" target="_blank">https://github.com/alephium/ledger-alephium/tree/master</a>) and scroll down to find the command that applies to your Ledger version:
 
-![](https://cdn-images-1.medium.com/max/800/1*HoVsDofi_jROHHWCkybuEg.png)
+![](image_0648cb538c.png)
 
 With this information, go to the console terminal and run the command to install the Alephium App:
 
@@ -71,13 +71,13 @@ With this information, go to the console terminal and run the command to install
 
 In this example, the **Ledger Nano S** is being used:
 
-![](https://cdn-images-1.medium.com/max/800/1*zlZlsdISGSurTGarVUZ67g.png)
+![](image_3ae0434ee7.png)
 
 After running this command you will need to validate the installation of the Alephium App in your Ledger Device. Go through all approvals and add your pin to validate the installation.
 
 When successful, the Alephium icon will appear on your device.
 
-![](https://cdn-images-1.medium.com/max/800/1*Ovynjn6iPpm759FsiE42ww.jpeg)
+![](image_be11237783.jpeg)
 
 Now you are ready to use your Ledger to sign transactions on Alephium! **🎉**
 
@@ -94,7 +94,7 @@ Create a new address in your extension wallet: Click on the current address name
 - <span id="b85b">Select your Ledger device from the list;</span>
 - <span id="5706">Finish the configuration.</span>
 
-![](https://cdn-images-1.medium.com/max/800/1*Phu_n_AiCvxJEEx86YX4rA.gif)
+![](image_2c037c77a6.gif)
 
 **7 — Use the Ledger Device to send a transaction!**
 
@@ -102,23 +102,23 @@ All the steps here are the usual ones we have seen before using the extension wa
 
 - <span id="d793">Click on the “Send” button</span>
 
-![](https://cdn-images-1.medium.com/max/800/1*SFCrW2e9P3XcmykzP8ww5w.png)
+![](image_41f1d3d8a9.png)
 
 Choose the token you want to send:
 
-![](https://cdn-images-1.medium.com/max/800/1*9koh81NUAbwflH5vIebstA.png)
+![](image_5af4874af7.png)
 
 Select the recipient’s address:
 
-![](https://cdn-images-1.medium.com/max/800/1*V-baPklojis427fXufGWyQ.png)
+![](image_9be1fcb70b.png)
 
 Review the transaction details and click on “Sign with Ledger.”
 
-![](https://cdn-images-1.medium.com/max/800/1*0rokXhizbl8VV8KdWM-Oyg.png)
+![](image_fd47f78fbe.png)
 
 Sign the transaction in your Ledger Device, and follow its completion in “Activity” section:
 
-![](https://cdn-images-1.medium.com/max/800/1*xb3RvJDR_qnItvJOIdxiBQ.png)
+![](image_51da0ab8ec.png)
 
 **8 — Use the Ledger Device to interact with dApps in Alephium**
 
@@ -126,10 +126,10 @@ Now that you have a already sign a transaction with yout Ledger Device, it is ti
 
 Access the <a href="https://alephium.github.io/alephium-dex" class="markup--anchor markup--p-anchor" data-href="https://alephium.github.io/alephium-dex" rel="noopener" target="_blank">Alephium DEX on Testnet</a>. Click in the “Connect Alephium” button on the top right. Select the extension wallet in the prompt and the Ledger account.
 
-![](https://cdn-images-1.medium.com/max/800/1*MvQFIc0PJfCMNsT7-uyglw.gif)
+![](image_a395507344.gif)
 
 Now you are connected to the Alephium DEX. Make a swap transaction and use your Ledger to sign it. The process is similar to a transfer.
 
-![](https://cdn-images-1.medium.com/max/800/1*gWtZEChMFdrxijXV8je6pQ.gif)
+![](image_c701af2872.gif)
 
 If you have questions or suggestions, please come to Alephium’s <a href="http://alephium.org/discord" class="markup--anchor markup--p-anchor" data-href="http://alephium.org/discord" rel="noopener" target="_blank">Discord</a>, <a href="https://t.me/alephiumgroup" class="markup--anchor markup--p-anchor" data-href="https://t.me/alephiumgroup" rel="noopener" target="_blank">Telegram</a>, or reach out on <a href="https://twitter.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium" rel="noopener" target="_blank">Twitter</a>!

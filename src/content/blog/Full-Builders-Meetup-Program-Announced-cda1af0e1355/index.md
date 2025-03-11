@@ -1,15 +1,16 @@
 ---
-title: 'Full Builders Meetup Program Announced!'
-
-description: 'As we are getting closer from the start of the first builders meetup, which will take place IRL in Athens on June 21–23, we’re very happy…'
-date: 2024-06-20T10:56:41.449Z
+date: 2024-06-20 10:56:41.449000+00:00
+description: As we are getting closer from the start of the first builders meetup,
+  which will take place IRL in Athens on June 21–23, we’re very happy…
+featuredImage: image_6a99d23a4f.png
+title: Full Builders Meetup Program Announced!
 ---
 
 ### **Full Builders Meetup Program Announced!**
 
 #### _As we are getting closer from the start of the first builders meetup, which will take place IRL in Athens on June 21–23, we’re very happy to showcase the full & exciting program that we’ll go through with all participants!_
 
-![](https://cdn-images-1.medium.com/max/800/1*maPC5Vk5WxOOOdiq1u8-Yg.png)
+![](image_6a99d23a4f.png)
 
 **Who’s attending?**
 

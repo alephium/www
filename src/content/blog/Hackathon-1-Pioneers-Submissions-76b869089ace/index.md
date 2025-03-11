@@ -1,13 +1,14 @@
 ---
+date: 2024-03-11 16:12:51.964000+00:00
+description: After two weeks of intense coding, debugging, building & good vibes,
+  teams or individuals have submitted their projects. While the jury is…
+featuredImage: image_1a50e80e0c.png
 title: 'Hackathon #1- Pioneers — Submissions'
-
-description: 'After two weeks of intense coding, debugging, building & good vibes, teams or individuals have submitted their projects. While the jury is…'
-date: 2024-03-11T16:12:51.964Z
 ---
 
 ### Hackathon \#1- Pioneers — Submissions
 
-![](https://cdn-images-1.medium.com/max/800/1*q799283BWjD0ThEPszPMLg.png)
+![](image_1a50e80e0c.png)
 
 _After two weeks of intense coding, debugging, building & good vibes, teams or individuals have submitted their projects. While the jury is judging & because it doesn’t stop with the end of the hackathon, here’s a recap of all projects, with all the information & links to follow them as they keep evolving over the next few weeks & months!_
 
@@ -19,7 +20,7 @@ The energy on all our channels has been intense & has electrified all of us, the
 
 The Hackathon \#1 — Pioneers was a 14-day sprint during which developers gathered to hack and build on Alephium. They were allowed to apply across 3 main tracks or 2 types of bounties: existing or self-defined. More than 105 individuals applied from 21+ countries and divided themselves into 26 projects who valably submitted.
 
-![](https://cdn-images-1.medium.com/max/800/1*Sfsxxnqi_XslDYrRcH8Vbg.png)
+![](image_7c7b70fdce.png)
 
 ### Projects Submissions
 
@@ -33,7 +34,7 @@ Here’s the list of all submissions, with links to PoCs, dApps or tools when av
 
 #### LinxOTC — Main Track — dApps
 
-![](https://cdn-images-1.medium.com/max/800/0*bVzBLOVcDj_7YYjL)
+![](image_b61f9b3ab7.jpg)
 
 **LinxOTC** is a platform for P2P trading and lending on <a href="https://twitter.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium" rel="noopener" target="_blank"></a> Alephium. Linx Labs, a well-known contributor to Kadena’s ecosystem, is adding p2p lending specifically during the hackathon, an Oracle free solution where people can lend and borrow from eachother.
 
@@ -41,7 +42,7 @@ Here’s the list of all submissions, with links to PoCs, dApps or tools when av
 
 #### Invariant DEX (CLAMM) — Main Track — dApps
 
-![](https://cdn-images-1.medium.com/max/800/0*SDuQr3vzo1KE332U)
+![](image_df997734b6.jpg)
 
 **Invariant DEX** is a permissionless AMM DEX featuring a concentrated liquidity mechanism. The team has focused on prioritizing smart contract development and testing the programming capabilities of Alephium VM along with the Ralph programming language.
 
@@ -49,7 +50,7 @@ Here’s the list of all submissions, with links to PoCs, dApps or tools when av
 
 #### Phoenix Finance — Main Track — dApps
 
-![](https://cdn-images-1.medium.com/max/800/0*_ugS6HsewnCDnWVM)
+![](image_63d338a83a.jpg)
 
 **Phoenix Finance** is implementing the hodl protocol, smart contracts and UI, on Alephium. Already live on Ergo, the Hodl protocol incentivizes locking ALPH in smart contracts for the longest period of time, increasing the TVL of the chain. It follows the mathematically proven principles presented in this <a href="https://eprint.iacr.org/2023/1029" class="markup--anchor markup--p-anchor" data-href="https://eprint.iacr.org/2023/1029" rel="noopener" target="_blank">research paper</a>.
 
@@ -57,7 +58,7 @@ Here’s the list of all submissions, with links to PoCs, dApps or tools when av
 
 #### Donera — Main Track — dApps
 
-![](https://cdn-images-1.medium.com/max/800/0*IjmPn47xyHNvpEre)
+![](image_c37d1fe631.jpg)
 
 **Donera** is a crowdfunding app like GoFundMe. The MVP includes creating a fund, donating ALPH to it, finalising and browsing active funds, and viewing and donating to an individual fund. The first funds exist already!
 
@@ -65,7 +66,7 @@ Here’s the list of all submissions, with links to PoCs, dApps or tools when av
 
 #### Alph.pro DeFi Dashboard — Main Track — dApps
 
-![](https://cdn-images-1.medium.com/max/800/0*GP9oxuj9A9iIVdza)
+![](image_cedeaeb7bf.jpg)
 
 **Defi Dashboard by AlphPro** is your one-stop shop for tracking a wide range of data on current users' holdings of tokens and NFTs, finding out about new token releases, new NFT collections, and much more.
 
@@ -73,7 +74,7 @@ Here’s the list of all submissions, with links to PoCs, dApps or tools when av
 
 #### MereProof — Main Track — dApps
 
-![](https://cdn-images-1.medium.com/max/800/0*HbLdNihIoXPLrbaX)
+![](image_a1cce257f3.jpg)
 
 **MereProof (of existence)** computes a Merkle root for a set of files and stores its hash on Alephium for proof of existence.
 
@@ -83,7 +84,7 @@ A “proof file” has to be generated for each file in the Merkle tree to assoc
 
 #### NGU Land — Main Track — dApps
 
-![](https://cdn-images-1.medium.com/max/800/0*IZdrqusNTX2PVMzz)
+![](image_3c1cc25900.jpg)
 
 **Number Go Up** is launching a Richlist on <a href="https://ngu.land/" class="markup--anchor markup--p-anchor" data-href="https://ngu.land/" rel="noopener" target="_blank">https://ngu.land/</a>. It is specifically geared towards coins built on top of Alephium. This is a beta release, so numbers from other coins than NGU may not be 100% accurate at this time.
 
@@ -91,7 +92,7 @@ A “proof file” has to be generated for each file in the Merkle tree to assoc
 
 #### Chronoswap — Main Track — dApps
 
-![](https://cdn-images-1.medium.com/max/800/0*_rvnXAPJelg68NpV)
+![](image_1bba127558.jpg)
 
 **ChronoSwap** is implementing a decentralized exchange (DEX) that enables seamless token trading and later cross-chain bridging. It allows users to participate in their protocol’s growth through staking actively.
 
@@ -99,7 +100,7 @@ Links: <a href="https://chronoswap.app/" class="markup--anchor markup--p-anchor"
 
 #### Alph Dabbler — Main Track — dApps
 
-![](https://cdn-images-1.medium.com/max/800/0*WXPHXPFYBR122l-L)
+![](image_fb481a1876.jpg)
 
 **Alph Dabbler** is a basic borrowing/lending app on Alephium using Aave’s interest rate curves.
 
@@ -107,7 +108,7 @@ Links: <a href="https://docs.google.com/spreadsheets/d/1xC4cUNHIoYC6XPAUy10tURno
 
 #### Squirrel / SQRL — Main Track — dApps
 
-![](https://cdn-images-1.medium.com/max/800/0*sOofTrIAiBv65s2V)
+![](image_e7dd8ceebc.jpg)
 
 **Squirrel** is a faucet contract/website for the SQRL token.
 
@@ -115,7 +116,7 @@ Links: <a href="https://docs.google.com/spreadsheets/d/1xC4cUNHIoYC6XPAUy10tURno
 
 #### Alph.pro Indexer — Main Track — Tooling
 
-![](https://cdn-images-1.medium.com/max/800/0*eVbfSsx8R-RrC14V)
+![](image_5ffd23097b.jpg)
 
 **Alph.pro Indexer** started as a simple backend for a specific dashboard, however it has grown into an extensible plugin system where adding new ‘indexers’ for specific purposes (i.e. tracking ayin pool reserves) is quite easy. This info is exposed through a powerful rest API with swagger documentation with info about nfts, tokens, users and more
 
@@ -123,7 +124,7 @@ Links: <a href="https://docs.google.com/spreadsheets/d/1xC4cUNHIoYC6XPAUy10tURno
 
 #### DEXTools/DEXScreener — Main Track — Tooling
 
-![](https://cdn-images-1.medium.com/max/800/0*rU86Zl6hyiRZo9O1)
+![](image_a3a5cdd540.jpg)
 
 **Rakku** is building a DEXTool-like platform with advanced token price charts. Its initial featureset includes tracking every transaction done for each liquidity pool and showing LIVE prices of tokens of the Alephium ecosystem. Rakku is running its Alephium full nodes on Flux.
 
@@ -131,7 +132,7 @@ Links: <a href="https://docs.google.com/spreadsheets/d/1xC4cUNHIoYC6XPAUy10tURno
 
 #### DISCORD TIPPER BOT — Main Track — Tooling
 
-![](https://cdn-images-1.medium.com/max/800/0*Ig7-dHbKbtgInmhq)
+![](image_6afd36a906.jpg)
 
 **Description:** Discord bot for tipping users on Discord channels
 
@@ -139,7 +140,7 @@ Links: <a href="https://docs.google.com/spreadsheets/d/1xC4cUNHIoYC6XPAUy10tURno
 
 #### 3DVisualizer & Stats dashboard — Main Track — Tooling
 
-![](https://cdn-images-1.medium.com/max/800/0*7WwYisHGDdJfGmDX)
+![](image_36fc20f84f.jpg)
 
 The **Alephium Blockflow Visualizer and Stats Dashboard** is a comprehensive suite of tools designed to enhance the understanding and accessibility of the Alephium blockchain. The project introduces a real-time 3D visualizer application that demonstrates Alephium’s sharding algorithm, Blockflow, along with a WebSocket stream that broadcasts newly minted blocks to developers as they occur. Additionally, they have developed a Proof of Concept application that displays static statistics of the Alephium blockchain, and a Python library that facilitates interaction with the Alephium Full Node API and Alephium Explorer API. All components of the project are open-sourced to encourage community engagement and development.
 
@@ -147,7 +148,7 @@ The **Alephium Blockflow Visualizer and Stats Dashboard** is a comprehensive sui
 
 #### ABIExtractor — Main Track — Tooling
 
-![](https://cdn-images-1.medium.com/max/800/0*MbtM08b1dk6c3XQE)
+![](image_e0e9485535.jpg)
 
 **ABI Extractor** is a Python tool on the Alephium Blockchain, designed to extract ABI JSONs and smart contract addresses from dApp JavaScript files. The tool automates the process of scanning dApp JavaScript code for embedded ABI JSONs, testing smart contracts using the identified ABI JSONs, and exporting the ABI JSONs.
 
@@ -155,7 +156,7 @@ The **Alephium Blockflow Visualizer and Stats Dashboard** is a comprehensive sui
 
 #### ABI2API — Main Track — Tooling
 
-![](https://cdn-images-1.medium.com/max/800/0*9TrtVFQnbFMh5Owd)
+![](image_a85109df34.jpg)
 
 **ABI2API-Alephium** is a Python library for “converting” smart contract ABI (Application Binary Interface) on the Alephium blockchain into a RESTful API. It allows developers to expose the functionality of a smart contract through a simple API interface, making it easier to interact with Smart Contracts.
 
@@ -163,7 +164,7 @@ The **Alephium Blockflow Visualizer and Stats Dashboard** is a comprehensive sui
 
 #### AirBrain AI — Main Track — Tooling
 
-![](https://cdn-images-1.medium.com/max/800/0*TsKnQIzGb3W1od_R)
+![](image_4f1c67b5a0.jpg)
 
 **AirBrain A**I works on the creation of an on-chain GPT-powered Decentralized Generative AI Agents.
 
@@ -171,7 +172,7 @@ Link: <a href="https://github.com/georgesmith9914/airbrain-builder-python-backen
 
 #### Starfish Identity — Main Track — Interoperability
 
-![](https://cdn-images-1.medium.com/max/800/0*uNwpEY7ApVPfU9mS)
+![](image_4363618e7b.jpg)
 
 **Starfish Identity** uses a DID Registry to manage public keys for off-chain authentication, message verification and web3 profiles.
 
@@ -179,7 +180,7 @@ Link: <a href="https://github.com/georgesmith9914/airbrain-builder-python-backen
 
 #### Sezame Oracle — Main Track — Interoperability
 
-![](https://cdn-images-1.medium.com/max/800/0*rP7fVJ81tOvbY9yW)
+![](image_acb520fb0c.jpg)
 
 **Sezame Oracle** worked on building the first oracle on Alephium network providing real-time web 2.0 and cross-chain data feeds. Bridging gaps between blockchains and the real world. Unlocking limitless potential for decentralized applications on ALPH.
 
@@ -187,7 +188,7 @@ Links: <a href="https://github.com/maze2-org/alephium-oracle-hackathon" class="m
 
 #### Merkle tree proof for allowlist — Bounties
 
-![](https://cdn-images-1.medium.com/max/800/0*P781OAKxN5zLB4Ae)
+![](image_17da0310b4.jpg)
 
 Merkle trees are essential in blockchain and dApp development, they facilitate implementations where the entire set of data can’t be stored on chain and a solution is needed to verify a set of data exists and is valid without having the entire dataset for verification purpose.
 
@@ -197,7 +198,7 @@ The implementation is inspired by <a href="https://github.com/OpenZeppelin/openz
 
 #### TipAlph— Bounties
 
-![](https://cdn-images-1.medium.com/max/800/0*w5bps2ASSldeAtyR)
+![](image_e8895690fa.jpg)
 
 **TipALPH** was built by No Trust Verify. It is a tipping bot for Telegram, similar to <a href="https://github.com/LightningTipBot/LightningTipBot" class="markup--anchor markup--p-anchor" data-href="https://github.com/LightningTipBot/LightningTipBot" rel="noopener" target="_blank">LightningTipBot</a> for Alephium.
 
@@ -205,7 +206,7 @@ The implementation is inspired by <a href="https://github.com/OpenZeppelin/openz
 
 #### Alph.pro Discord Bot — Bounties
 
-![](https://cdn-images-1.medium.com/max/800/0*RRYHUMMEaRaJlQzC)
+![](image_12617c4792.jpg)
 
 **Alph.pro Discord Bot** is a bot aiming to be a ‘one stop shop’ for discord helpers to provide token prices and details, LP info, and more. Try it out in <a href="https://discord.gg/pfcR8EQZjb" class="markup--anchor markup--p-anchor" data-href="https://discord.gg/pfcR8EQZjb" rel="noopener" target="_blank">What The Duck discord</a>.
 
@@ -213,7 +214,7 @@ The implementation is inspired by <a href="https://github.com/OpenZeppelin/openz
 
 #### Noodz — Track — Bounties
 
-![](https://cdn-images-1.medium.com/max/800/0*AGnzBtvrFHVmrZKI)
+![](image_71090fc6e4.jpg)
 
 **Description:** Noodz’s mission is to support the growth of the Alephium community through memes and open-source code. For the hackathon, they have worked on 4 contracts: Airdrop Contract, Initial Coin Offering (ICO) contract, Coin Flip Contract, Pinko Contract. They have since completed their ICO and released their first <a href="https://tools.noodz.io/" class="markup--anchor markup--p-anchor" data-href="https://tools.noodz.io/" rel="noopener" target="_blank">token builder app</a>.
 
@@ -221,7 +222,7 @@ The implementation is inspired by <a href="https://github.com/OpenZeppelin/openz
 
 #### Alph.pro Vending Machine — Track — Bounties
 
-![](https://cdn-images-1.medium.com/max/800/0*cOiXrh3HeKuq1l4L)
+![](image_c84cfb80d4.jpg)
 
 **Description:** Fun NFT office snack dispenser for your next online office meeting. Buy any amount of each food offered as long as they are still available. As of writing, beer & popcorn & pizza are sold out!
 
@@ -229,7 +230,7 @@ The implementation is inspired by <a href="https://github.com/OpenZeppelin/openz
 
 #### Simple DAO — Track — Bounties
 
-![](https://cdn-images-1.medium.com/max/800/0*dDCIywvXC_wysEii)
+![](image_0498146630.jpg)
 
 **Simple DAO** is a repository that allows an organization or community to easily configure and deploy a DAO and its users to publish proposals, motions, and votes. Governance rules can also be applied (quorum, majority, vote duration, etc.).
 
@@ -237,7 +238,7 @@ The implementation is inspired by <a href="https://github.com/OpenZeppelin/openz
 
 #### Use Toll — Track — Bounties
 
-![](https://cdn-images-1.medium.com/max/800/1*xJ3wOlnMblX66jQmKuOirw.png)
+![](image_cd89e4be9f.png)
 
 Use Toll is a proxy which sets a toll in ALPH to monetize a website. The user can pay for hourly, monthly access or other different configurations.
 

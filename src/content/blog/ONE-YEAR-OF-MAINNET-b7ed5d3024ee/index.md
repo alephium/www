@@ -1,13 +1,14 @@
 ---
-title: 'ONE YEAR OF MAINNET'
-
-description: 'To celebrate the first anniversary of Alephium’s mainnet launch (8th of November 2021), Alephium’s core team was asked for their insight on…'
-date: 2022-11-09T13:15:44.633Z
+date: 2022-11-09 13:15:44.633000+00:00
+description: To celebrate the first anniversary of Alephium’s mainnet launch (8th
+  of November 2021), Alephium’s core team was asked for their insight on…
+featuredImage: image_a6e9370d4d.jpg
+title: ONE YEAR OF MAINNET
 ---
 
 ### ONE YEAR OF MAINNET
 
-![](https://cdn-images-1.medium.com/max/800/0*QvURY4mFZRjFWhzj)
+![](image_a6e9370d4d.jpg)
 
 _To celebrate the first anniversary of Alephium’s mainnet launch (8th of November 2021), Alephium’s core team was asked for their insight on the past year. Here’s a small retrospective of what happened, where Alephium is today, and where it is going!_
 
@@ -15,7 +16,7 @@ _To celebrate the first anniversary of Alephium’s mainnet launch (8th of Novem
 
 _The front end covers all the parts of Alephium that users interact with! The explorer, website, and desktop wallet are the main products of Alephium’s front-end work._
 
-![](https://cdn-images-1.medium.com/max/800/0*PflQwL9ALW0yRHuQ)
+![](image_cbeecfd63f.jpg)
 
 From the beginning, Alephium has given itself the goal of being a user-friendly chain and directed resources & attention to provide the **best user experience of all chains**. This is why Alephium had a slick desktop wallet and an explorer with all the necessary features already at the mainnet launch
 
@@ -29,7 +30,7 @@ During this journey, the team tremendously enjoyed the engagement of **the commu
 
 _The core-dev team is building everything below the hood of the front end. It creates the engine and all the main components allowing the blockchain to run, such as the full node, the virtual machine (Alphred), the DSL language Ralph, the SDK & APIs, the language, and much more!_
 
-![](https://cdn-images-1.medium.com/max/800/0*HuzQAVlamAdbWBNl)
+![](image_70b01a3762.jpg)
 
 Mainnet launch was already the culmination of years of work! It’s been surprisingly uneventful, as the network ran smoothly from the beginning. **Miner’s response** to the launch has been tremendous and surprising, as hashrate reached the 6-months objective in less than 48 hours. The community asked for and Alephium delivered the reference implementation for mining pools that is widely used today.
 
@@ -43,7 +44,7 @@ Until the Leman Network Upgrade, the focus is on **building the tools and infras
 
 **Infrastructure & backend**
 
-![](https://cdn-images-1.medium.com/max/800/0*_6fPrMBr6fVKEzfM)
+![](image_87e8fe6d9c.jpg)
 
 _The infrastructure is the necessary foundation on which everything else runs! The backend team ensures everyone can see and query what’s going on in the chain by maintaining this crucial piece of infrastructure that is the backend of the explorer._
 
@@ -61,7 +62,7 @@ For the **explorer** backend, the focus is on providing the front-end team with 
 
 **Operations, Marketing & Community**
 
-![](https://cdn-images-1.medium.com/max/800/0*2EwCCvsyEtzv9Gd4)
+![](image_e2f9d2d74c.jpg)
 
 _The operations team makes sure everything else runs smoothly! From strategic partnerships to human management, legal, and taxes, without it, everything else is more complicated. The marketing & community team creates and maintains lively & active communication channels, explains Alephium’s technology to the world one post at a time & partners with other communities, projects, and services._
 
@@ -83,25 +84,25 @@ Here are a few interesting numbers and charts to give you a rapid overview of Al
 
 Our GitHub saw more than **4’400 commits** over the past year: that’s almost 17 per business day! Alephium’s dev has been intensely active in coding, develop, expand everything! You can check our repos and see how Alephium prepares for the future with the Leman Network Upgrade.
 
-![](https://cdn-images-1.medium.com/max/800/0*S_gvfrAnPZb95kwT)
+![](image_28120b6fb8.jpg)
 
 **Wallets & transactions**
 
 **50’761 wallets have been created** since the mainnet launch! While this doesn’t mean that it is the number of users, it is an interesting order of magnitude! The chart below shows the transactions on the blockchain over this first year (Coinbase transactions are ALPH minting as rewards to the miners and non-coinbase transactions are all the others, such as when you send ALPHs to someone). Almost **9M transactions** have filled **7.7M blocks** <a href="https://explorer.alephium.org/#/" class="markup--anchor markup--p-anchor" data-href="https://explorer.alephium.org/#/" rel="noopener" target="_blank">over the last 12 months</a>!
 
-![](https://cdn-images-1.medium.com/max/800/0*JflbxF35flNJrnzg)
+![](image_0570f456e7.jpg)
 
 **Hashrate**
 
 The network hashrate has exceeded the most optimistic predictions for the mainnet launch. The fact that Alephium helped mining pools and provided mining software implementations, as well as the possibility of dual (and even <a href="https://www.youtube.com/watch?v=mtEkSIQzNeg" class="markup--anchor markup--p-anchor" data-href="https://www.youtube.com/watch?v=mtEkSIQzNeg" rel="noopener" target="_blank">triple</a>) <a href="https://www.youtube.com/watch?v=EqlKCvWzrfU" class="markup--anchor markup--p-anchor" data-href="https://www.youtube.com/watch?v=EqlKCvWzrfU" rel="noopener" target="_blank">mining</a>, attracted a lot of interest from the mining community early on. This bootstrapped enough hashpower to secure the network and make it reliable. On this graph, you can see how The Merge and other events influenced the global hashrate!
 
-![](https://cdn-images-1.medium.com/max/800/0*7-eJmIl-Aah_SeNO)
+![](image_e3ed51fa8a.jpg)
 
 **Socials**
 
 Following the mainnet launch, Alephium’s followers increased slowly. The Gate.io listing in early January gave it a big push, and it’s mostly steadily and organically growing since then!
 
-![](https://cdn-images-1.medium.com/max/800/0*ujLYuB9dwrdMRVUp)
+![](image_65276ac92c.jpg)
 
 The community has been actively contributing since the beginning. Alephium has distributed more than **356'896 ALPH** to more than **85 contributors** for bounties & grants, as well as various tasks such as translations of <a href="https://medium.com/@alephium-pt/alephium-se-associa-%C3%A0-cetacean-capital-5b1f14a9e0d8" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium-pt/alephium-se-associa-%C3%A0-cetacean-capital-5b1f14a9e0d8" target="_blank">articles</a>/content/<a href="https://docs.alephium.org/fr/full-node/getting-started" class="markup--anchor markup--p-anchor" data-href="https://docs.alephium.org/fr/full-node/getting-started" rel="noopener" target="_blank">documentation</a>, maintenance of community channels, video/article creation, etc… Thanks to all of you!
 

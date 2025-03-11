@@ -1,15 +1,16 @@
 ---
+date: 2024-10-06 09:37:12.874000+00:00
+description: The blockchain hashrate is directly correlated with network security.
+  As a Proof-of-work blockchain, Alephium relies on active ecosystem…
+featuredImage: image_525aa1de0b.png
 title: 'Hashrate Series #4: ICERIVER'
-
-description: 'The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem…'
-date: 2024-10-06T09:37:12.874Z
 ---
 
 ### Hashrate Series \#4: ICERIVER
 
 _The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem actors to sustain and improve Alephium’s reliability. This series is about them, and after_ <a href="https://medium.com/@alephium/hashrate-series-1-nicehash-ee0936adf899" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/hashrate-series-1-nicehash-ee0936adf899" target="_blank"><em>Nicehash</em></a>, <a href="https://medium.com/@alephium/hashrate-series-2-goldshell-93cc51a86640" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/hashrate-series-2-goldshell-93cc51a86640" target="_blank"><em>Goldshell</em></a>_, and_ <a href="https://medium.com/@alephium/hashrate-series-3-cryptohall-24-7ad1533701f4" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/hashrate-series-3-cryptohall-24-7ad1533701f4" target="_blank"><em>CryptoHall 24</em></a>_, please welcome ICERIVER._
 
-![](https://cdn-images-1.medium.com/max/800/1*MItf1dFpLESL6T23ol0HYw.png)
+![](image_525aa1de0b.png)
 
 #### Can you introduce yourself and share the story of Iceriver? When was it founded & where? It’s relatively more recent than most ASIC manufacturers. How has been your journey so far?
 
@@ -35,7 +36,7 @@ Home miners are often active members of the cryptocurrency community, participat
 
 We believe that with the involvement of individual users, the entire cryptocurrency ecosystem will become more diverse and robust.
 
-![](https://cdn-images-1.medium.com/max/800/1*wOg_ZsT0gwQTSl7Y_LAK3Q.png)
+![](image_799215a82f.png)
 
 #### What major trends are you currently observing in the global hashrate market, and how is Iceriver adapting its strategy to align with these trends? With the ongoing debate between PoW (Proof of Work) and PoS (Proof of Stake), what are Iceriver’s thoughts on the future of PoW networks?
 
@@ -71,7 +72,7 @@ Considering all these factors, we believe Alephium is a PoW blockchain worthy of
 
 #### Can you describe & give us more details about the ICERIVER <a href="https://www.iceriver.io/product/iceriver-alph-al0/" class="markup--anchor markup--h4-anchor" data-href="https://www.iceriver.io/product/iceriver-alph-al0/" rel="noopener" target="_blank">ALPH AL0</a>?
 
-![](https://cdn-images-1.medium.com/max/800/1*M1yVO5SrkMW9b-FXLsSaeA.png)
+![](image_ae2ce591a2.png)
 
 ICERIVER ALPH AL0 is an ASIC miner specifically designed for the Alephium network, aimed at providing home miners with a high-performance, low-energy solution. The ALPH AL0 is designed with the home environment in mind, operating with extremely low noise levels that almost do not disrupt daily life. This makes it an ideal choice for home miners who need not worry about noise interference.
 
@@ -116,7 +117,7 @@ Thank you for the support and attention from the community. We look forward to g
 _Twitter & other socials links:_ <a href="https://x.com/IceRiverMiner" class="markup--anchor markup--p-anchor" data-href="https://x.com/IceRiverMiner" rel="noopener" target="_blank"><em>https://x.com/IceRiverMiner</em></a>_  
 Website:_ <a href="http://www.iceriver.io" class="markup--anchor markup--p-anchor" data-href="http://www.iceriver.io" rel="noopener" target="_blank"><em>www.iceriver.io</em></a>
 
-![](https://cdn-images-1.medium.com/max/800/1*7XvneabWHf_lv7MmtwZPXg.png)
+![](image_0d9592bb15.png)
 
 ---
 

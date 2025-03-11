@@ -1,13 +1,14 @@
 ---
+date: 2024-05-18 17:21:46.819000+00:00
+description: Our ecosystem thrives with developers building amazing projects on top
+  of Alephium, delivering a unique experience and providing real…
+featuredImage: image_a8041fcae7.jpg
 title: 'Builders Highlight #13: Phoenix Finance'
-
-description: 'Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real…'
-date: 2024-05-18T17:21:46.819Z
 ---
 
 ### Builders Highlight \#13: Phoenix Finance
 
-![](https://cdn-images-1.medium.com/max/800/0*L99kNJoCONS57elx)
+![](image_a8041fcae7.jpg)
 
 _Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real utility for users. In the Builders Highlight series, they share more about their projects, thoughts, and insights on why building on Alephium. You can find_ <a href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" rel="noopener" target="_blank"><em>Sezame Wallet</em></a>_,_ <a href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" rel="noopener" target="_blank"><em>Alphpaca NFTs</em></a>, <a href="https://medium.com/@alephium/builders-highlight-3-ayin-6be4a6bd4ec2" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-3-ayin-6be4a6bd4ec2" rel="noopener" target="_blank"><em>Ayin</em></a>, <a href="https://medium.com/@alephium/builders-highlight-4-no-trust-verify-9ea495ca826f" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-4-no-trust-verify-9ea495ca826f" rel="noopener" target="_blank"><em>No Trust, Verify</em></a>, <a href="https://medium.com/@alephium/builders-highlight-5-deadrare-d5ff90d6161e" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-5-deadrare-d5ff90d6161e" rel="noopener" target="_blank"><em>Deadrare</em></a>, <a href="https://medium.com/@alephium/builders-highlight-6-what-the-duck-0aedc602ecfd" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-6-what-the-duck-0aedc602ecfd" rel="noopener" target="_blank"><em>What the Duck</em></a>, <a href="https://medium.com/@alephium/builders-highlight-7-alphpad-bbd4f4a34fd5" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-7-alphpad-bbd4f4a34fd5" rel="noopener" target="_blank"><em>Alphpad</em></a>, <a href="https://medium.com/@alephium/builders-highlight-8-ngu-money-f8bf05e36e99" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-8-ngu-money-f8bf05e36e99" rel="noopener" target="_blank"><em>NGU</em></a>_,_ <a href="https://medium.com/@alephium/builders-highlight-9-mobula-f9c45dc6c691" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-9-mobula-f9c45dc6c691" rel="noopener" target="_blank"><em>Mobula,</em></a> <a href="https://medium.com/@alephium/builders-highlight-10-amolyus-39e03b6bd3f0" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-10-amolyus-39e03b6bd3f0" rel="noopener" target="_blank"><em>Amolyus</em></a>, <a href="https://medium.com/@alephium/builders-highlight-11-fugashu-4f8566d1a8f0" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-11-fugashu-4f8566d1a8f0" rel="noopener" target="_blank"><em>Fugashu</em></a> _and_ <a href="https://medium.com/@alephium/builders-highlight-12-linx-0c9a315956fd" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-12-linx-0c9a315956fd" target="_blank"><em>Linx</em></a> _episodes here!_
 
@@ -47,7 +48,7 @@ Phoenix Finance formed to bring degen finance on-chain. The concept of the “ho
 
 In 2020, while working on minimizing these designs by removing the oracle and reserve coin components, Bruno discovered something that wasn’t stable at all. This was initially dismissed as impractical. However, in 2023, when Bruno discussed this concept with Kushti, the founder of Ergo, Kushti recognized its potential appeal to risk-seeking DeFi enthusiasts, known as “degens.” This realization led to the birth of the hodlcoin game concept.
 
-![](https://cdn-images-1.medium.com/max/800/1*cZvBv9OKOcNsiFJoLhJT5w.png)
+![](image_7f07b36739.png)
 
 This concept is very simple. A user deposits ALPH with the bank to get back HodlALPH. There is no fee and this ratio starts out as 1:1. The user can deposit hodlALPH to get back ALPH at any time, however they need to pay a small fee in ALPH which goes to the bank. This fee is used to increase the price of hodlALPH relative to ALPH.
 

@@ -1,7 +1,8 @@
 ---
-title: 'Builders Uncut — All the Interviews!'
+description: Here you have the compilation of articles and videos from all interviews!
+  Find them all here and watch them at your convenience.
 draft: true
-description: 'Here you have the compilation of articles and videos from all interviews! Find them all here and watch them at your convenience.'
+title: Builders Uncut — All the Interviews!
 ---
 
 ### Builders Uncut — All the Interviews!

@@ -1,15 +1,15 @@
 ---
+date: 2023-08-24 15:24:12.306000+00:00
+description: Week 33 Milestones & progress on dev on Alephium!
+featuredImage: image_eb6b3fd7cf.png
 title: 'Weekly #DevUpdate'
-
-description: 'Week 33 Milestones & progress on dev on Alephium!'
-date: 2023-08-24T15:24:12.306Z
 ---
 
 ### Weekly \#DevUpdate
 
 #### Week 33 Milestones & progress on dev on Alephium!
 
-![](https://cdn-images-1.medium.com/max/800/1*RDp8nrAwMRoNXENSb9EuLg.png)
+![](image_eb6b3fd7cf.png)
 
 Greetings to the Alephium community and all tech enthusiasts! We’re back with another weekly development update to keep you informed about our latest advancements and milestones.
 
@@ -35,7 +35,7 @@ Ensure you’re running the latest version of our Desktop Wallet (v2.1.4) to ben
 
 **Marketing & Content Team Updates**
 
-![](https://cdn-images-1.medium.com/max/800/1*tie4jcLpdbgudeBfpqGc8w.png)
+![](image_5af62a5680.png)
 
 - <span id="4ea0">In collaboration with <a href="https://twitter.com/zealy_io" class="markup--anchor markup--li-anchor" data-href="https://twitter.com/zealy_io" rel="noopener" target="_blank">Zealy.io</a>, we’re putting the final touches on the pre-launch.</span>
 - <span id="9467">Dive deep into the sUTXO world with the second part of our long-form interview where <a href="https://twitter.com/wachmc" class="markup--anchor markup--li-anchor" data-href="https://twitter.com/wachmc" rel="noopener" target="_blank">@wachmc</a> explores the advantages of sUTXO, emphasizing its developer-friendly nature, enhanced security, and optimized state size for better dApps.</span>

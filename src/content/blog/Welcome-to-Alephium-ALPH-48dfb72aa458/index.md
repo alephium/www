@@ -1,8 +1,9 @@
 ---
-title: '🚀 Welcome to Alephium (ALPH) !'
-
-description: 'Here’s all the information you need to get started with Alephium ! And if that’s not enough, come talk to us on Discord, Telegram or…'
-date: 2022-01-10T13:52:06.799Z
+date: 2022-01-10 13:52:06.799000+00:00
+description: Here’s all the information you need to get started with Alephium ! And
+  if that’s not enough, come talk to us on Discord, Telegram or…
+featuredImage: image_f62e45da8a.jpeg
+title: 🚀 Welcome to Alephium (ALPH) !
 ---
 
 ### 🚀 **Welcome to Alephium (ALPH)**
@@ -13,7 +14,7 @@ date: 2022-01-10T13:52:06.799Z
 
 \- <a href="https://medium.com/@s_64606/bienvenue-sur-alephium-alph-854b237f6e9" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@s_64606/bienvenue-sur-alephium-alph-854b237f6e9" target="_blank">Traduction Française</a> (Community translated)
 
-![](https://cdn-images-1.medium.com/max/800/1*M8yE0o4m5efoniivaRv6-w.jpeg)
+![](image_f62e45da8a.jpeg)
 
 ### 🐥 **What is Alephium?**
 

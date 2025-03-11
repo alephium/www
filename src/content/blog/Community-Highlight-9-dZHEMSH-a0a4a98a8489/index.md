@@ -1,15 +1,16 @@
 ---
+date: 2023-05-22 13:06:16.351000+00:00
+description: Once in a while, the spotlight is put on one active member of the Alephium
+  community. This is an opportunity to showcase community members’…
+featuredImage: image_f6dfaedc83.png
 title: 'Community Highlight #9, dZHEMSH'
-
-description: 'Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’…'
-date: 2023-05-22T13:06:16.351Z
 ---
 
 ### Community Highlight \#9, dZHEMSH
 
 #### _Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’ contributions to the ecosystem, what drives them and what they are passionate about! More episodes:_ <a href="https://medium.com/@alephium/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" target="_blank"><em>#1 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-cgi-bin-c102cc106f19" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-cgi-bin-c102cc106f19" target="_blank"><em>#2 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-3-digdug-48a7ec868504" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-3-digdug-48a7ec868504" target="_blank"><em>#3 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-4-montail-e24fd88882a0" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-4-montail-e24fd88882a0" target="_blank"><em>#4 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-5-txn-71c4fd76ffe8" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-5-txn-71c4fd76ffe8" target="_blank"><em>#5 here</em></a>_ ,_ <a href="https://medium.com/@alephium/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" target="_blank"><em>#6 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-7-oheka-13d8b4ae025e" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-7-oheka-13d8b4ae025e" target="_blank"><em>#7 here</em></a>, _and_ <a href="https://medium.com/@alephium/community-highlight-8-jorge-438510785041" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-8-jorge-438510785041" target="_blank"><em>#8 here</em></a>_._
 
-![](https://cdn-images-1.medium.com/max/800/1*4g6jaoFGBHODbhBdQzjpOA.png)
+![](image_f6dfaedc83.png)
 
 _In the early days of Alephium, a kind and funny guy entered the chat. He immediately stood out with a very particular style of expression: sweet but firm. His curiosity and open-mindedness showed he was well-traveled and his music taste is obviously impeccable. He is very private but supportive and somehow extroverted. We’re happy to present you dZHEMSH (say it out loud)._
 

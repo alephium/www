@@ -1,15 +1,15 @@
 ---
-title: 'Core team interview series. Episode 4'
-
+date: 2023-01-06 16:29:48.501000+00:00
 description: 'This article was updated: https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0'
-date: 2023-01-06T16:29:48.501Z
+featuredImage: image_5676dd218a.jpeg
+title: Core team interview series. Episode 4
 ---
 
 ### Core team interview series. Episode 4
 
 **This article was updated:** <a href="https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0" rel="nofollow" target="_blank">https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0</a>
 
-![](https://cdn-images-1.medium.com/max/800/1*F_AsJY-tlEyDc9TzZXIc-g.jpeg)
+![](image_5676dd218a.jpeg)
 
 _For its team, Alephium is privileging agility and efficiency over hyper-growth. The project does stay at a human size not because it is more efficient, but because Alephium strives to be a decentralized, community-driven project. This means the project in itself is much larger than a team can ever be. Communication, trust, openness, and transparency are paramount in such a setup._
 
@@ -21,7 +21,7 @@ Since our last core team article was published in March’22, 3 new members have
 
 ### Marina
 
-![](https://cdn-images-1.medium.com/max/800/0*LCskIvbv--nESiHy)
+![](image_c529002fa7.jpg)
 
 ### 1 — What should we call you and where are you located?
 
@@ -57,7 +57,7 @@ I think Blockchain has the power to change people’s lives and I would like to 
 
 ### Thiago
 
-![](https://cdn-images-1.medium.com/max/800/0*vMhd-6hw9mSIXgGr)
+![](image_dad1b76baf.jpg)
 
 ### 1 — What should we call you, and where are you located?
 
@@ -91,7 +91,7 @@ It has awesome tech, and the core team goes the extra mile to make the interacti
 
 ### Zhiming
 
-![](https://cdn-images-1.medium.com/max/800/0*tshK6uVcsw5P6WPy)
+![](image_66126e89b9.jpg)
 
 ### 1 — What should we call you and where are you located?
 

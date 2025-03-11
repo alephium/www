@@ -1,13 +1,14 @@
 ---
-title: 'iOS + Android — Mobile Wallet Beta Testing, Feedback Wanted!'
-
-description: 'Alephium is very happy to announce that the mobile wallet for iOS and Android are ready for beta testing, and calls for user feedback!'
-date: 2023-10-16T14:39:11.424Z
+date: 2023-10-16 14:39:11.424000+00:00
+description: Alephium is very happy to announce that the mobile wallet for iOS and
+  Android are ready for beta testing, and calls for user feedback!
+featuredImage: image_c87f610616.png
+title: iOS + Android — Mobile Wallet Beta Testing, Feedback Wanted!
 ---
 
 ### **iOS + Android — Mobile Wallet Beta Testing, Feedback Wanted!**
 
-![](https://cdn-images-1.medium.com/max/800/1*G64w0nGYPpF1WXEutGKHQA.png)
+![](image_c87f610616.png)
 
 Alephium is very happy to announce that the mobile wallet for iOS and Android are ready for beta testing, and calls for user feedback!
 

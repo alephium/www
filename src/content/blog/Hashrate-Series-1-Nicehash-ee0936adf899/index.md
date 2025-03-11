@@ -1,15 +1,16 @@
 ---
+date: 2024-07-25 17:24:31.557000+00:00
+description: The blockchain hashrate is directly correlated with network security.
+  As a Proof-of-work blockchain, Alephium relies on active ecosystem…
+featuredImage: image_e913d8ee3a.jpg
 title: 'Hashrate Series #1: Nicehash'
-
-description: 'The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem…'
-date: 2024-07-25T17:24:31.557Z
 ---
 
 ### Hashrate Series \#1: Nicehash
 
 _The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem actors to sustain and improve Alephium’s reliability. This series is about them, and we are starting it with Nicehash!_
 
-![](https://cdn-images-1.medium.com/max/800/0*5P391el9NoWoMQHl)
+![](image_e913d8ee3a.jpg)
 
 #### Can you tell us a bit about Nicehash? When was it founded? By whom? Where? And why? Can you tell us a bit about its history?
 
@@ -27,7 +28,7 @@ We actually see the core of mining remaining on Proof of Work. Projects like Eth
 
 #### Can you share with us how you first discovered Alephium? How do you see the community of Alephium miners? What made you guys decide to add Alephium to your platform?
 
-![](https://cdn-images-1.medium.com/max/800/1*x1dwi75LSrzStGfDmtYZZg.png)
+![](image_bdf4e47610.png)
 
 I remember hearing about Alephium in 2021 when GPU miners knew the merge was coming for Ethereum and were already starting to look for alternatives and Alephium was one that was talked about.
 
@@ -43,7 +44,7 @@ ASICs coming to Alephium is very interesting, I think as long as the code allows
 
 #### Anything else you’d like to share with the community?
 
-![](https://cdn-images-1.medium.com/max/800/1*-ZN41-J17VcRXY5PNKmVvA.png)
+![](image_d6e29fc93b.png)
 
 We’d love to invite everyone to our <a href="http://www.nicehashx.com" class="markup--anchor markup--p-anchor" data-href="http://www.nicehashx.com" rel="noopener" target="_blank">Conference</a> this November to learn all about cryptocurrency and how you can use it in your business or e-commerce. We'd also like to celebrate 10 years of NiceHash! We would love to see the Alephium crowd there!
 

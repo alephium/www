@@ -1,8 +1,8 @@
 ---
-title: 'Core team interview series. Episode 3'
-
-description: 'Presenting the humans developing the Back-end.'
-date: 2022-03-21T16:28:48.809Z
+date: 2022-03-21 16:28:48.809000+00:00
+description: Presenting the humans developing the Back-end.
+featuredImage: image_2e6aba2d86.jpg
+title: Core team interview series. Episode 3
 ---
 
 ### Core team interview series. Episode 3
@@ -11,7 +11,7 @@ date: 2022-03-21T16:28:48.809Z
 
 **This article was updated:** <a href="https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0" rel="nofollow" target="_blank">https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0</a>
 
-![](https://cdn-images-1.medium.com/max/800/0*uifT93TChIobm1TT)
+![](image_2e6aba2d86.jpg)
 
 _For its team, Alephium is privileging agility and efficiency over hyper-growth. We do not stay at a human size because we think it is more efficient, but because Alephium strives to be a decentralized, community driven project. This means the project in itself is much larger than a team can ever be. Communication, trust, openness and transparency is paramount in such a set-up._
 
@@ -25,7 +25,7 @@ The Back-end is the heart of the system, but it is also a less obvious part of t
 
 ### Thomas
 
-![](https://cdn-images-1.medium.com/max/800/0*AtdoVcnEjH8EINs7)
+![](image_7d5a8468c5.jpg)
 
 #### How should we call you and where are you located?
 
@@ -61,7 +61,7 @@ I would say our team, even though it’s a small one, everyone is where they sho
 
 ### muchen
 
-![](https://cdn-images-1.medium.com/max/800/0*EA2RWBfISogv5DF3)
+![](image_171f5bad17.jpg)
 
 #### How should we call you and where are you located?
 
@@ -101,7 +101,7 @@ What I care about the most is how we can attract more developers.
 
 ### h0ngcha0
 
-![](https://cdn-images-1.medium.com/max/800/0*qqdO_oPtIDMf9kAc)
+![](image_982e06f7ba.jpg)
 
 #### How should we call you and where are you located?
 
@@ -140,7 +140,7 @@ Build alternatives in this increasingly polarizing world.
 
 ### Benoit
 
-![](https://cdn-images-1.medium.com/max/800/0*WYoOCocxsqbom6jA)
+![](image_f2f15efc45.jpg)
 
 #### How should we call you and where are you located?
 
@@ -184,7 +184,7 @@ Blockflow technology is so simple that many other projects are asking themselves
 
 ### Simer
 
-![](https://cdn-images-1.medium.com/max/800/0*tn-jXNWAD6bVGRgb)
+![](image_24d65d4c5d.jpg)
 
 #### How should we call you and where are you located?
 
@@ -234,7 +234,7 @@ Database related software development.
 
 ### Cheng
 
-![](https://cdn-images-1.medium.com/max/800/0*FF_Qy6qu_8Pkv53W)
+![](image_b5f1556177.jpg)
 
 #### How should we call you and where are you located?
 

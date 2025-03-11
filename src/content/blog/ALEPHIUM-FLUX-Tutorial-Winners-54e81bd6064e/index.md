@@ -1,15 +1,16 @@
 ---
-title: 'ALEPHIUM/FLUX Tutorial Winners'
-
-description: 'On December 1st in 2022, the community was encouraged to enter a contest to produce the best tutorial about how to run an Alephium full…'
-date: 2023-01-17T14:18:22.744Z
+date: 2023-01-17 14:18:22.744000+00:00
+description: On December 1st in 2022, the community was encouraged to enter a contest
+  to produce the best tutorial about how to run an Alephium full…
+featuredImage: image_9a5b250af3.jpg
+title: ALEPHIUM/FLUX Tutorial Winners
 ---
 
 ### ALEPHIUM/FLUX Tutorial Winners
 
 #### On December 1st in 2022, the community was encouraged to <a href="https://medium.com/@alephium/alephium-flux-tutorial-contest-81054caf926" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/alephium-flux-tutorial-contest-81054caf926" target="_blank">enter a contest</a> to produce the best tutorial about how to run an <a href="https://github.com/alephium/alephium/" class="markup--anchor markup--h4-anchor" data-href="https://github.com/alephium/alephium/" rel="noopener" target="_blank">Alephium full node</a> on <a href="https://runonflux.io/" class="markup--anchor markup--h4-anchor" data-href="https://runonflux.io/" rel="noopener" target="_blank">FLUX</a>. The results came in and we are pleased with them.
 
-![](https://cdn-images-1.medium.com/max/800/0*CgFF_C0ZVyX5vrfb)
+![](image_9a5b250af3.jpg)
 
 It might seem like a trivial exercise but decentralization is not only about tools: in order to happen the skills required need to be evenly distributed. By participating the contestants have helped their peers to run their own full-node: everybody wins. A big thank you to everyone who participated.
 

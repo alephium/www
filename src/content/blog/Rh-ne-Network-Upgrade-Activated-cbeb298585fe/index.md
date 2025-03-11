@@ -1,8 +1,9 @@
 ---
-title: 'Rhône Network Upgrade Activated!'
-
-description: 'After over one year of building and testing new features, Alephium is excited to announce that the Rhône Network Upgrade was successfully…'
-date: 2024-06-12T16:05:10.070Z
+date: 2024-06-12 16:05:10.070000+00:00
+description: After over one year of building and testing new features, Alephium is
+  excited to announce that the Rhône Network Upgrade was successfully…
+featuredImage: image_2b7865b2ae.png
+title: Rhône Network Upgrade Activated!
 ---
 
 ### **Rhône Network Upgrade Activated!**
@@ -11,7 +12,7 @@ _After over one year of building and testing new features, Alephium is excited t
 
 _Tl-dr — Why the Rhône Network Upgrade — What’s in the Rhône upgrade? — FAQ on the Rhône upgrade_
 
-![](https://cdn-images-1.medium.com/max/800/1*hRS0v2VkMt0iPIYJy1YQnw.png)
+![](image_2b7865b2ae.png)
 
 ### Thank you!
 
@@ -19,13 +20,13 @@ The Rhône Network Upgrade was activated on mainnet at 10:00 AM GMT on June 12th
 
 This network upgrade, which started with a less ambitious roadmap ended up being a very significant one. It is the culmination of a year of hard work and dedication from many contributors and represents an important milestone for our ecosystem. On top of the very visible changes for users such as the blocktime reduction (from 64 to 16 seconds), it introduces significant changes to the developer experience, based both on dogfooding and feedback from the fast-growing group of projects & dapps builders!
 
-![](https://cdn-images-1.medium.com/max/800/0*ct5WgF7oROen_TZT)
+![](image_b5f6533296.jpg)
 
 ### **Why the Rhône Network Upgrade?**
 
 The stack is constantly upgraded to increase performance, security, user experience & devX. New features and improvements can usually be done in a backwards-compatible way. Sometimes they can’t (eg. Blocktime reduction), hence the need for a Network Upgrade.
 
-![](https://cdn-images-1.medium.com/max/800/1*wlKCQiEU-1jDqNKSRHhylg.png)
+![](image_c29b4c69cf.png)
 
 Since the <a href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a" target="_blank">Leman Upgrade</a>, all the tech stack has been updated, worked on, and optimized. The <a href="https://bridge.alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://bridge.alephium.org/" rel="noopener" target="_blank">bridge</a> was launched, major improvements to SDK & devX have been implemented, and a lot of new features for the full node were shipped, as well as multiple dApps proof-of-concepts. More integrations, a new <a href="https://alephium.org/#wallets" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/#wallets" rel="noopener" target="_blank">Extension wallet &amp; multiple versions of the mobile wallet</a> & explorer have been released.
 
@@ -37,7 +38,7 @@ Why the name? The Rhône river originates where some of Alephium’s roots are: 
 
 The Rhône Network Upgrade gives both users and developers access, among other innovations, to the following improvements. It keeps true to the tagline of Alephium: **_“Scalable for devs, secure for users, decentralized for all”_**. But what’s in there?
 
-![](https://cdn-images-1.medium.com/max/800/1*94-FWRIlYyS4fFVBLyLcmg.jpeg)
+![](image_c7bc2ec728.jpeg)
 
 #### **User Experience Enhancements**
 
@@ -54,7 +55,7 @@ _90% Contract Storage Reduction_
 
 The Upgrade will reduce the contract storage rent fee by 90%, lowering the cost from 1 \$ALPH to 0.1 \$ALPH. This fee is required when deploying smart contracts to prevent <a href="https://x.com/wachmc/status/1779042373344895449" class="markup--anchor markup--p-anchor" data-href="https://x.com/wachmc/status/1779042373344895449" rel="noopener" target="_blank">state bloating</a>. The reduction will facilitate the deployment of more smart contracts, supporting things like NFT collections which require numerous contracts & many more. Existing contracts will remain unaffected. This update aims to balance cost and functionality, encouraging the creation and destruction of contracts to optimize network efficiency. <a href="https://x.com/alephium/status/1776255506849599836" class="markup--anchor markup--p-anchor" data-href="https://x.com/alephium/status/1776255506849599836" rel="noopener" target="_blank">More</a>.
 
-![](https://cdn-images-1.medium.com/max/800/1*CT--wXOvRwu0AZ7A3dZU-Q.jpeg)
+![](image_ee51673462.jpeg)
 
 #### **Developer Experience Improvements**
 
@@ -95,7 +96,7 @@ _New Built-In Functions _— Added minimalContractDeposit, mapEntryDeposit, 
 
 ### **What comes now?**
 
-![](https://cdn-images-1.medium.com/max/800/1*Cr_rSHGGolSfJbgA9EV-9A.png)
+![](image_66dfb0b08f.png)
 
 Now that the network upgrade happened smoothly… we’re already working on the next one! From Passkey support to cross-group communication, we have a lot of ideas already.
 
@@ -107,7 +108,7 @@ Also, as mentioned, <a href="https://x.com/wachmc/status/1773344856745837006" cl
 
 We’ve assembled here the most asked question about the Rhône Upgrade!
 
-![](https://cdn-images-1.medium.com/max/800/1*wT-aFLbZ9BC0-48V7OoB7g.jpeg)
+![](image_898962a203.jpeg)
 
 **Q: Will the Rhone Network Upgrade change \$ALPH emission/issuance?**
 
@@ -145,4 +146,4 @@ You can find extra information about the upgrade on our <a href="http://docs.ale
 
 If you have feedback or questions, please reach out to us on <a href="https://alephium.org/discord" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/discord" rel="noopener" target="_blank">Discord</a> or <a href="https://t.me/alephiumgroup" class="markup--anchor markup--p-anchor" data-href="https://t.me/alephiumgroup" rel="noopener" target="_blank">Telegram</a>. Follow <a href="https://twitter.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium" rel="noopener" target="_blank">@alephium</a> on Twitter to stay up-to-date!
 
-![](https://cdn-images-1.medium.com/max/800/0*bofdNrpiZDTUchVT)
+![](image_38e1e6f722.jpg)

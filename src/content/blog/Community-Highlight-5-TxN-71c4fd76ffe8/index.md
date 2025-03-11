@@ -1,8 +1,8 @@
 ---
+date: 2023-02-02 17:58:20.195000+00:00
+description: Once in a while, the spotlight is put on one active member of the Alephium
+  community. This is an opportunity to showcase community members’…
 title: 'Community Highlight #5, TxN'
-
-description: 'Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’…'
-date: 2023-02-02T17:58:20.195Z
 ---
 
 ### Community Highlight \#5, TxN

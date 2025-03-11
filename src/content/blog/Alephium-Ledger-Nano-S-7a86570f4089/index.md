@@ -1,15 +1,15 @@
 ---
-title: 'Alephium 🤝 Ledger Nano S'
-
-description: 'How to install the Alephium App in your Ledger Nano S'
-date: 2024-10-23T08:26:59.371Z
+date: 2024-10-23 08:26:59.371000+00:00
+description: How to install the Alephium App in your Ledger Nano S
+featuredImage: image_d671f79853.jpeg
+title: Alephium 🤝 Ledger Nano S
 ---
 
 ### Alephium 🤝 Ledger Nano S
 
 #### How to install the Alephium App in your Ledger Nano S
 
-![](https://cdn-images-1.medium.com/max/800/0*CYrJPvw1kopDDHg1.jpeg)
+![](image_d671f79853.jpeg)
 
 **_🚨 This tutorial is exclusively for the Nano S._** _If you have a Ledger version that is NOT the Nano S, (S+, X, Flex or Stax) you must use the Ledger Live to download the Alephium app, please follow the (much easier) instructions_ <a href="https://docs.alephium.org/wallet/ledger/" class="markup--anchor markup--p-anchor" data-href="https://docs.alephium.org/wallet/ledger/" rel="noopener noreferrer nofollow noopener" target="_blank"><em>here.</em></a>
 
@@ -30,7 +30,7 @@ You will need Python and PIP installed on your computer to get the Alephium App 
 
 **3 — Install the Ledger Python Library**
 
-![](https://cdn-images-1.medium.com/max/800/0*PRfSTY5KwGh9ARXZ.png)
+![](image_d29ddc05e2.png)
 
 We are going to use the Ledger Python Library (you can find it <a href="https://github.com/LedgerHQ/ledgerctl#quick-install" class="markup--anchor markup--p-anchor" data-href="https://github.com/LedgerHQ/ledgerctl#quick-install" rel="noopener ugc nofollow noopener" target="_blank">here</a>). It is necessary because you are going to install a custom App onto your Ledger Device.
 
@@ -41,7 +41,7 @@ To install the Ledger Python Library open a terminal window and type the followi
 
 This will make all upgrades and install the Ledger Wallet Library needed for the next step.
 
-![](https://cdn-images-1.medium.com/max/800/0*YvzkJ4bHM72ADwNo.gif)
+![](image_801f85d3ae.gif)
 
 **4 — Download the Alephium Ledger App to your computer**
 
@@ -49,7 +49,7 @@ Go to the following GitHub repository: <a href="https://github.com/alephium/ledg
 
 _🚨To download the repository, click on the “Code” green button and choose “Download Zip.”_
 
-![](https://cdn-images-1.medium.com/max/800/0*vDQIZySB2-3adZNz.png)
+![](image_75fe7c00c6.png)
 
 Download and unzip it in a folder you have easy access to and all read/write permissions.
 
@@ -59,7 +59,7 @@ Your Ledger now needs to be connected to your computer and unlocked.
 
 Go to the GitHub repository (<a href="https://github.com/alephium/ledger-alephium/tree/master" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/ledger-alephium/tree/master" rel="noopener ugc nofollow noopener" target="_blank">https://github.com/alephium/ledger-alephium/tree/master</a>) and scroll down to find the command that applies to your Ledger version:
 
-![](https://cdn-images-1.medium.com/max/800/1*Bx5Sg45VvfjT1X8hskD5zw.png)
+![](image_0a6b8efd88.png)
 
 With this information, go to the console terminal and run the command to install the Alephium App:
 
@@ -69,7 +69,7 @@ After running this command, you must validate the Alephium App installation on y
 
 When successful, the Alephium icon will appear on your device.
 
-![](https://cdn-images-1.medium.com/max/800/0*CYrJPvw1kopDDHg1.jpeg)
+![](image_d671f79853.jpeg)
 
 Now, you are ready to use your Ledger to sign transactions on Alephium! **🎉**
 
@@ -86,7 +86,7 @@ Create a new address in your extension wallet: Click on the current address name
 - <span id="6885">Select your Ledger device from the list;</span>
 - <span id="d7d6">Finish the configuration.</span>
 
-![](https://cdn-images-1.medium.com/max/800/0*86tqAi5l3ZAUoGZx.gif)
+![](image_032242fc0c.gif)
 
 **If you want to see in more details on how to send transactions, use dapps or do more complex tasks, you’ll find everything in the ledger docs** <a href="https://docs.alephium.org/wallet/ledger/#view-account-balance" class="markup--anchor markup--p-anchor" data-href="https://docs.alephium.org/wallet/ledger/#view-account-balance" rel="noopener noreferrer nofollow noopener" target="_blank">here</a> **&** <a href="https://support.ledger.com/article/Alephium-ALPH" class="markup--anchor markup--p-anchor" data-href="https://support.ledger.com/article/Alephium-ALPH" rel="noopener noreferrer nofollow noopener" target="_blank">here</a>**.**
 

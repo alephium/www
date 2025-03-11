@@ -1,15 +1,15 @@
 ---
-title: 'Transactions Per Second (TPS)'
-
-description: 'A Technical Promenade, part 2'
-date: 2022-09-13T12:39:56.929Z
+date: 2022-09-13 12:39:56.929000+00:00
+description: A Technical Promenade, part 2
+featuredImage: image_3143b6c88f.png
+title: Transactions Per Second (TPS)
 ---
 
 ### Transactions Per Second (TPS)
 
 A Technical Promenade, part 2
 
-![](https://cdn-images-1.medium.com/max/800/1*YO8DxiQMvaRErrFSACu-gg.png)
+![](image_3143b6c88f.png)
 
 _This is part of a series of regular articles on key concepts for understanding_ <a href="https://alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/" rel="noopener" target="_blank"><em>Alephium</em></a> _in particular and blockchains in general. If you’re pondering on which chain to build your dApps, if you’re a curious crypto-traveler, or a fellow decentralization enthusiast, welcome!_
 

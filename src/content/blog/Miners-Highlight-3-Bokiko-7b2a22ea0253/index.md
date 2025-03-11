@@ -1,13 +1,14 @@
 ---
+date: 2024-02-02 16:21:00.513000+00:00
+description: The Alephium blockchain, like many decentralized networks, relies heavily
+  on the contributions of miners to maintain its integrity and…
+featuredImage: image_181b96c3ae.jpg
 title: 'Miners’ Highlight #3: Bokiko'
-
-description: 'The Alephium blockchain, like many decentralized networks, relies heavily on the contributions of miners to maintain its integrity and…'
-date: 2024-02-02T16:21:00.513Z
 ---
 
 ### Miners’ Highlight \#3**: Bokiko**
 
-![](https://cdn-images-1.medium.com/max/800/0*SK1b2gWG3-f5_TAs)
+![](image_181b96c3ae.jpg)
 
 _The Alephium blockchain, like many decentralized networks, relies heavily on the contributions of miners to maintain its integrity and functionality. Recognizing the significance of these contributors, we are launching a series of articles titled “Miners’ Highlight.” By focusing on their contributions, challenges, and experiences, we aim to better understand the mining process and its importance. You can find_ <a href="https://medium.com/@alephium/miners-highlight-1-cedric-crispin-c4ed456f6d10" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/miners-highlight-1-cedric-crispin-c4ed456f6d10" target="_blank"><em>#1 here</em></a> _and_ <a href="https://medium.com/@alephium/miners-highlight-1-jake-aka-hiram-abiff-a8833307f316" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/miners-highlight-1-jake-aka-hiram-abiff-a8833307f316" target="_blank"><em>#2 here</em></a>_._
 

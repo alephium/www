@@ -1,15 +1,15 @@
 ---
-title: 'Alephium Launches Browser Extension Wallet'
-
-description: 'Download it and try the new features on Alephium Testnet!'
-date: 2023-03-14T13:59:07.975Z
+date: 2023-03-14 13:59:07.975000+00:00
+description: Download it and try the new features on Alephium Testnet!
+featuredImage: image_e603a48aac.jpg
+title: Alephium Launches Browser Extension Wallet
 ---
 
 ### Alephium Launches Browser Extension Wallet
 
 #### Download it and try the new features on Alephium Testnet!
 
-![](https://cdn-images-1.medium.com/max/800/0*yI2MUcOjwnWtIB8o)
+![](image_e603a48aac.jpg)
 
 > Important Notice
 
@@ -32,7 +32,7 @@ This wallet was based on the <a href="https://github.com/argentlabs/argent-x" cl
 
 One of the standout features of the Alephium browser extension wallet is its robust **dApp support**. The wallet was built to be compatible with decentralized applications deployed on the Alephium network, making it easy for users to interact with their favorite dApps seamlessly.
 
-![](https://cdn-images-1.medium.com/max/800/0*iO9XS-WODbd9Abh_)
+![](image_1678654d95.jpg)
 
 #### Token Faucet
 
@@ -79,11 +79,11 @@ Access the **Testnet NFT Marketplace** here: <a href="https://nft.alephium-testn
 
 **Obs: Make sure that your testnet address is on group 0!**
 
-![](https://cdn-images-1.medium.com/max/800/1*UIUn8DIrPTzb-iG1ApJokQ.png)
+![](image_134d21d181.png)
 
 Choose an image and mint your NFT!
 
-![](https://cdn-images-1.medium.com/max/800/1*blGpjv4HubGsrods0Cywfg.png)
+![](image_e22b19494b.png)
 
 Feel free to list it and buy any NFT listed here!
 

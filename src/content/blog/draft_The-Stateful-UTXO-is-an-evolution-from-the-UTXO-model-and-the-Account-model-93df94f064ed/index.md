@@ -1,7 +1,7 @@
 ---
-title: 'The Stateful UTXO is an evolution from the UTXO model and the Account model.'
+description: Stateful UTXO Definition
 draft: true
-description: 'Stateful UTXO Definition'
+title: The Stateful UTXO is an evolution from the UTXO model and the Account model.
 ---
 
 ###

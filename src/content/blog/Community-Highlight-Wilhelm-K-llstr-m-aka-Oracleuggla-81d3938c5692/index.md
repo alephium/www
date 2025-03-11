@@ -1,8 +1,8 @@
 ---
-title: 'Community Highlight, Wilhelm Källström aka “Oracleuggla”'
-
-description: 'Alephium takes an organic approach to community building. We believe actions speak louder than words…'
-date: 2022-10-14T09:10:11.698Z
+date: 2022-10-14 09:10:11.698000+00:00
+description: Alephium takes an organic approach to community building. We believe
+  actions speak louder than words…
+title: Community Highlight, Wilhelm Källström aka “Oracleuggla”
 ---
 
 ### Community Highlight \#1, Wilhelm Källström aka “Oracleuggla”

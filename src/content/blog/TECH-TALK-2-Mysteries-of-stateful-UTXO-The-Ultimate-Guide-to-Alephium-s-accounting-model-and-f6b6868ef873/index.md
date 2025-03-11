@@ -1,15 +1,17 @@
 ---
-title: 'TECH TALK #2 — Mysteries of stateful UTXO: The Ultimate Guide to Alephium’s accounting model (and…'
-
-description: 'A discussion with Cheng Wang, inventor of stateful UTXO and founder of Alephium'
-date: 2023-08-17T14:18:41.118Z
+date: 2023-08-17 14:18:41.118000+00:00
+description: A discussion with Cheng Wang, inventor of stateful UTXO and founder of
+  Alephium
+featuredImage: image_a02a36f929.jpg
+title: 'TECH TALK #2 — Mysteries of stateful UTXO: The Ultimate Guide to Alephium’s
+  accounting model (and…'
 ---
 
 ### **TECH TALK \#2 — Mysteries of stateful UTXO: The Ultimate Guide to Alephium’s accounting model (and a little more!) — Part 2**
 
 _A discussion with Cheng Wang, inventor of stateful UTXO and founder of Alephium_
 
-![](https://cdn-images-1.medium.com/max/800/0*BcI9cMWftJpNGIGT)
+![](image_a02a36f929.jpg)
 
 _This is the second of a series of interviews on the technical innovations brought to the world by Alephium. The discussion was conducted in a virtual format in the presence of most of the Alephium team who contributed to the questions and ensuing exchange. The following has been edited for clarity, concision and optimized for readability and cut into two parts, this is part 2. It has already been preceded by an_ <a href="https://medium.com/@alephium/an-introduction-to-the-stateful-utxo-model-8de3b0f76749" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/an-introduction-to-the-stateful-utxo-model-8de3b0f76749" target="_blank"><em>Introduction to sUTXO</em></a> _and_ <a href="https://twitter.com/alephium/status/1615389097744568320" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium/status/1615389097744568320" rel="noopener" target="_blank"><em>many</em></a> <a href="https://twitter.com/alephium/status/1599808960038461447" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium/status/1599808960038461447" rel="noopener" target="_blank"><em>twitter</em></a> <a href="https://twitter.com/alephium/status/1602684789655420928" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium/status/1602684789655420928" rel="noopener" target="_blank"><em>threads</em></a>_._
 

@@ -1,13 +1,14 @@
 ---
-title: 'Builders Uncut — AlphbanX'
-
-description: 'This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering…'
-date: 2024-09-18T09:04:15.307Z
+date: 2024-09-18 09:04:15.307000+00:00
+description: This interview was conducted around the Athens Builders Meetup, which
+  took place at the end of June 2024. If you’re just discovering…
+featuredImage: image_76edd284ab.png
+title: Builders Uncut — AlphbanX
 ---
 
 ### Builders Uncut — AlphbanX
 
-![](https://cdn-images-1.medium.com/max/800/1*5ewuDQzAaPMNamFjYo1wWA.png)
+![](image_76edd284ab.png)
 
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
@@ -35,7 +36,7 @@ I found out about Alephium through a friend who was already invested in it. Afte
 
 AlphBanx is a DeFi project that allows users to put up ALPH as collateral and mint a stablecoin called AlphBanx Dollar (ABD), similar to MakerDAO or Liquity. We’ve built in multiple layers of protection to maintain the peg, including a 150% collateral ratio, auction pools for liquidations, and a redemption option that ensures the stablecoin’s value remains consistent.
 
-![](https://cdn-images-1.medium.com/max/800/1*ZKWTyfzgxfAcUvDsnVy79Q.png)
+![](image_fd87e8e556.png)
 
 #### Who is your target audience for AlphBanx?
 
@@ -55,7 +56,7 @@ We’re currently in the testing phase, and if everything goes well, we’re loo
 
 #### How do you ensure the security of AlphBanx?
 
-![](https://cdn-images-1.medium.com/max/800/1*Bucc-QJc9MsZkGxioDH1EQ.png)
+![](image_3b1df9df6b.png)
 
 Security is our top priority. We’ll be working with at least two independent auditing firms to thoroughly review our smart contracts before launch. Additionally, we’re in discussions with the Alephium team to see if they can provide further insights or improvements.
 

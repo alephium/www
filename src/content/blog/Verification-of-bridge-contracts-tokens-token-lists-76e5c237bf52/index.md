@@ -1,13 +1,14 @@
 ---
-title: 'Verification of bridge contracts, tokens &amp; token lists'
-
-description: 'Note: This article was edited on Nov 20th, 2024 — Adding information regarding Binance Smart Chain contracts'
-date: 2023-11-20T14:25:39.181Z
+date: 2023-11-20 14:25:39.181000+00:00
+description: 'Note: This article was edited on Nov 20th, 2024 — Adding information
+  regarding Binance Smart Chain contracts'
+featuredImage: image_2091f56766.jpg
+title: Verification of bridge contracts, tokens &amp; token lists
 ---
 
 ### **Verification of bridge contracts, tokens & token lists**
 
-![](https://cdn-images-1.medium.com/max/800/0*zzCWd-uyX7HwktaI)
+![](image_2091f56766.jpg)
 
 > Note: This article was edited on Nov 20th, 2024 — Adding information regarding Binance Smart Chain contracts
 

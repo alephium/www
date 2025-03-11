@@ -1,15 +1,16 @@
 ---
-title: 'An introduction to the stateful UTXO model'
-
-description: 'Combining the expressiveness of the account model & security of the UTXO model.'
-date: 2022-11-17T17:18:14.134Z
+date: 2022-11-17 17:18:14.134000+00:00
+description: Combining the expressiveness of the account model & security of the UTXO
+  model.
+featuredImage: image_632169a5e1.jpg
+title: An introduction to the stateful UTXO model
 ---
 
 ### An introduction to the stateful UTXO model
 
 _Combining the expressiveness of the account model & security of the UTXO model._
 
-![](https://cdn-images-1.medium.com/max/800/0*EpiUlO8ndw-pqdMq)
+![](image_632169a5e1.jpg)
 
 _This article is a high-level overview of what the stateful UTXO model is, why it was invented, how it works and what it allows. The stateful UTXO model (sUTXO) is one of the main innovations brought by Alephium, along with_ <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" target="_blank"><em>Proof-of-less-work (PoLW),</em></a> _the Blockflow sharding algorithm, the_ <a href="https://medium.com/@alephium/meet-alphred-a-virtual-machine-like-no-others-85ce86540025" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/meet-alphred-a-virtual-machine-like-no-others-85ce86540025" target="_blank"><em>Alphred Virtual Machine</em></a>_, and the Ralph programming language._
 
@@ -17,7 +18,7 @@ _This article is a high-level overview of what the stateful UTXO model is, why i
 
 The UTXO and account-based models are accounting standards most commonly used in blockchains. Both of them allow users & systems to keep track of balances of crypto assets.
 
-![](https://cdn-images-1.medium.com/max/800/0*5vv7al_kblqwUazQ)
+![](image_5b39ca3b29.jpg)
 
 The classical UTXO (Unspent Transaction Output) model is famously used to keep track of accounting <a href="https://river.com/learn/bitcoins-utxo-model/" class="markup--anchor markup--p-anchor" data-href="https://river.com/learn/bitcoins-utxo-model/" rel="noopener" target="_blank">in the Bitcoin blockchain</a>. It is also found in Bitcoin Cash, Zcash, Litecoin, Dogecoin, Dash, and more…
 
@@ -35,7 +36,7 @@ The stateful UTXO (sUTXO) model combines the advantages of both: it benefits fro
 
 It achieves this by actually using both… but for different things! UTXOs are used for assets/tokens and the account model for smart contracts and states.
 
-![](https://cdn-images-1.medium.com/max/800/0*76vcp3I_m0nFuin4)
+![](image_f4ae4f8e01.jpg)
 
 ### Tokens as first-class citizens
 

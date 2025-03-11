@@ -1,13 +1,14 @@
 ---
-title: 'Alephium’s first live AMA'
-
-description: 'On November 3rd, 2021 the Alephium team answered all the questions sourced from the community. A warm thank you to everyone for asking so…'
-date: 2021-11-05T15:36:35.780Z
+date: 2021-11-05 15:36:35.780000+00:00
+description: On November 3rd, 2021 the Alephium team answered all the questions sourced
+  from the community. A warm thank you to everyone for asking so…
+featuredImage: image_07f4312429.jpg
+title: Alephium’s first live AMA
 ---
 
 ### Alephium’s first live AMA
 
-![](https://cdn-images-1.medium.com/max/800/0*8AQncu0H_SLbPbkg)
+![](image_07f4312429.jpg)
 
 ### On November 3rd, 2021 the Alephium team answered all the questions sourced from the community. A warm thank you to everyone for asking so many interesting questions! Below you will find the transcript of the AMA. Each question deep links to the corresponding passage in the video.
 

@@ -1,15 +1,15 @@
 ---
-title: 'DEX Prototype Live on Testnet'
-
-description: 'Proof-of-Concept to showcase dApps building on Alephium'
-date: 2023-03-21T15:39:30.918Z
+date: 2023-03-21 15:39:30.918000+00:00
+description: Proof-of-Concept to showcase dApps building on Alephium
+featuredImage: image_9764e2e836.jpeg
+title: DEX Prototype Live on Testnet
 ---
 
 ### DEX Prototype Live on Testnet
 
 #### Proof-of-Concept to showcase dApps building on Alephium
 
-![](https://cdn-images-1.medium.com/max/800/1*hCZCNssrf0jbsoPDyYbCPg.jpeg)
+![](image_9764e2e836.jpeg)
 
 Alephium is excited to announce the release of a DEX prototype!
 
@@ -41,7 +41,7 @@ More details <a href="https://medium.com/@alephium/alephium-launches-browser-ext
 
 Once the extension wallet is installed, connect to the Testnet (you can change the network you’re connected to on the top right of the extension).
 
-![](https://cdn-images-1.medium.com/max/800/1*c-NZ9OvhL0dqkS_JhJtd3Q.png)
+![](image_1b6cb0e590.png)
 
 Once on the Testnet, make sure to create or use a wallet with an address in group 0 to be able to connect to the DEX.
 
@@ -49,7 +49,7 @@ Once on the Testnet, make sure to create or use a wallet with an address in grou
 
 Go to <a href="https://alephium.github.io/alephium-dex" class="markup--anchor markup--p-anchor" data-href="https://alephium.github.io/alephium-dex" rel="noopener" target="_blank">https://alephium.github.io/alephium-dex</a> click on “Connect Alephium,” and choose “Extension Wallet” from the options on the pop-up.
 
-![](https://cdn-images-1.medium.com/max/800/0*qZa64ydhrD1GI_fL)
+![](image_355b002912.jpg)
 
 After connecting, the first page is the “Swap” page, where you can select the cryptocurrencies you want to exchange.
 
@@ -57,11 +57,11 @@ After connecting, the first page is the “Swap” page, where you can select th
 
 Don’t have \$ALPH in your wallet? You can request some right from the wallet! Click “Add funds” on the main page and then “Request \$ALPH”. You will receive 12 Testnet \$ALPH in a few minutes.
 
-![](https://cdn-images-1.medium.com/max/800/1*AhSlN6ahX86CP5CvkYcS7w.png)
+![](image_a5095ac579.png)
 
 Now you have everything you need to make your first transaction on the Alephium DEX! Use your \$ALPH to buy Test BTC, and then try the other sections of the DEX or transfer it to a different address!
 
-![](https://cdn-images-1.medium.com/max/800/0*c_oD0SZ6JZRocu62)
+![](image_d5eee3adc2.jpg)
 
 ---
 

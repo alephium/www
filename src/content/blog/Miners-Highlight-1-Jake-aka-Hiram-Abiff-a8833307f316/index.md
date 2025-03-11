@@ -1,13 +1,14 @@
 ---
+date: 2024-01-11 16:30:53.602000+00:00
+description: The Alephium blockchain, like many decentralized networks, relies heavily
+  on the contributions of miners to maintain its integrity and…
+featuredImage: image_4771a69f20.png
 title: 'Miners’ Highlight #1 — Jake aka Hiram Abiff .’.'
-
-description: 'The Alephium blockchain, like many decentralized networks, relies heavily on the contributions of miners to maintain its integrity and…'
-date: 2024-01-11T16:30:53.602Z
 ---
 
 ### Miners’ Highlight \#2 — Jake aka Hiram Abiff .’.
 
-![](https://cdn-images-1.medium.com/max/800/1*fClws903wLHtzZcFM8IMTA.png)
+![](image_4771a69f20.png)
 
 _The Alephium blockchain, like many decentralized networks, relies heavily on the contributions of miners to maintain its integrity and functionality. Recognizing the significance of these contributors, we are launching a series of articles titled “Miners’ Highlight.” By focusing on their contributions, challenges, and experiences, we aim to better understand the mining process and its importance. You can find_ <a href="https://medium.com/@alephium/miners-highlight-1-cedric-crispin-c4ed456f6d10" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/miners-highlight-1-cedric-crispin-c4ed456f6d10" target="_blank"><em>#1 here</em></a>_._
 
@@ -37,7 +38,7 @@ I have been solo mining Alephium for a little over one year, and it has been a w
 
 Ever since I first set sight on Alephium it was like love at first sight, the tech, the team, and the best community in the entire world! I was also heavily involved in Kas and mining both KAS & ALPH. As I had heavily invested in my GPU mining infrastructure when Asics took over the Kas network, naturally, it was an easy decision on what I would start mining full-time next protocol, Alephium. I have a small farm of GPUs at around 30gh/s — 35 gh/s mining on the blake3 algorithm, smacking & stacking Alephium blocks.
 
-![](https://cdn-images-1.medium.com/max/800/1*XBb7O8HQuvh5-jTq1hi1Ww.png)
+![](image_2846e23280.png)
 
 #### We’ve seen and heard that you make and sell some Alephium-themed merchandise. Can you tell us more about it?
 

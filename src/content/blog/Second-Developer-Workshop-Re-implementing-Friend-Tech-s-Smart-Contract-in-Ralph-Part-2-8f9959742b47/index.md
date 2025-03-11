@@ -1,13 +1,15 @@
 ---
-title: 'Second Developer Workshop: Re-implementing Friend.Tech’s Smart Contract in Ralph — Part 2'
-
-description: 'Welcome to the second part of this dev workshop session! Please make sure you go through the first part (here) as part 2 starts where Part…'
-date: 2023-11-28T15:43:03.432Z
+date: 2023-11-28 15:43:03.432000+00:00
+description: Welcome to the second part of this dev workshop session! Please make
+  sure you go through the first part (here) as part 2 starts where Part…
+featuredImage: image_4543b40c07.jpg
+title: 'Second Developer Workshop: Re-implementing Friend.Tech’s Smart Contract in
+  Ralph — Part 2'
 ---
 
 ### Second Developer Workshop: Re-implementing Friend.Tech’s Smart Contract in Ralph — Part 2
 
-![](https://cdn-images-1.medium.com/max/800/0*VJByfvJxVF2DWcD3)
+![](image_4543b40c07.jpg)
 
 Welcome to the second part of this dev workshop session! Please make sure you go through the first part (<a href="https://medium.com/@alephium/second-developer-workshop-re-implementing-friend-techs-smart-contract-in-ralph-806e3f6551aa" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/second-developer-workshop-re-implementing-friend-techs-smart-contract-in-ralph-806e3f6551aa" target="_blank">here</a>) as part 2 starts where Part I ended.
 
@@ -35,7 +37,7 @@ You can follow the full detailed workshop in the following video. Here’s the <
 
 In the previous session, three essential contracts were created. First is the “Friend.tech” contract, which is the primary contract. From there, by providing the subject’s address, a subcontract was generated, it is called “SubjectShare.” This contract tracks the total balance specific to the designated subject.
 
-![](https://cdn-images-1.medium.com/max/800/1*qVPuJfkdXuyicn0KwS-BXw.png)
+![](image_8afa0043d3.png)
 
 Subsequently, upon obtaining the holder’s address, another subcontract named “SubjectShareBalance” was created. This subcontract is responsible for monitoring the balance of the holder concerning the subject in question. This hierarchical structure encapsulates our subcontract system.
 

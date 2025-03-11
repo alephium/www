@@ -1,15 +1,16 @@
 ---
-title: 'Time for an Alephium Development Recap'
-
-description: 'Alephium has made great progress lately and a lot of work has been put down on various repositories. It’s time for an update!'
-date: 2021-12-02T16:24:45.341Z
+date: 2021-12-02 16:24:45.341000+00:00
+description: Alephium has made great progress lately and a lot of work has been put
+  down on various repositories. It’s time for an update!
+featuredImage: image_36383b3288.jpeg
+title: Time for an Alephium Development Recap
 ---
 
 ### Time for an Alephium Development Recap
 
 #### Alephium has made great progress lately and a lot of work has been put down on various repositories. It’s time for an update!
 
-![](https://cdn-images-1.medium.com/max/800/1*2Fcu1c5YgxZMj141mCPJIg.jpeg)
+![](image_36383b3288.jpeg)
 
 ### Full-Node
 

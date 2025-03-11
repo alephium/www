@@ -1,8 +1,9 @@
 ---
-title: 'First Zealy Sprint Ends'
-
-description: 'The Zealy sprint has come to an end on Dec 17h at 3PM CET, marking the end of a fun and instructive period about the Alephium Bridge and…'
-date: 2023-12-19T16:12:20.534Z
+date: 2023-12-19 16:12:20.534000+00:00
+description: The Zealy sprint has come to an end on Dec 17h at 3PM CET, marking the
+  end of a fun and instructive period about the Alephium Bridge and…
+featuredImage: image_c76c8db66f.jpeg
+title: First Zealy Sprint Ends
 ---
 
 ### First Zealy Sprint Ends
@@ -22,57 +23,57 @@ Throughout the sprint, the community completed over 19,000 quests! The event saw
 
 Here are some of the most notable memes in no particular order (some are 🔥). We got more than 300 of them, our chief reviewer still has trouble sleeping at night.
 
-![](https://cdn-images-1.medium.com/max/400/1*tkWKga4jtDNgpT9xW2Vo7w.jpeg)
+![](image_c76c8db66f.jpeg)
 
-![](https://cdn-images-1.medium.com/max/600/1*CQ2oKF6kyRF7i2u0DTECnQ.jpeg)
+![](image_9a8733c9b6.jpeg)
 
-![](https://cdn-images-1.medium.com/max/400/1*-AYiQhPqvMMZtN0-AAzqBg.jpeg)
+![](image_37c1433421.jpeg)
 
-![](https://cdn-images-1.medium.com/max/400/1*26H4pGM6b_FZecP8PsCb0w.jpeg)
+![](image_ff30f11250.jpeg)
 
-![](https://cdn-images-1.medium.com/max/600/1*EODIsDqd80lXUUjh3Ng01w.png)
+![](image_ffcd2e0197.png)
 
-![](https://cdn-images-1.medium.com/max/400/1*MzN-A7QwjtFmxjqUOIsoVQ.png)
+![](image_f57f12f159.png)
 
-![](https://cdn-images-1.medium.com/max/600/1*hscCHccGC2shlwUjJM-Qgw.jpeg)
+![](image_468da4ea51.jpeg)
 
-![](https://cdn-images-1.medium.com/max/400/1*_YwW7QiyouN_aMu1o5cpRA.png)
+![](image_69fa84175e.png)
 
-![](https://cdn-images-1.medium.com/max/400/1*tqGBiCa8z5MNkovaC4JOpw.jpeg)
+![](image_f6324f9207.jpeg)
 
-![](https://cdn-images-1.medium.com/max/600/1*IjnyBN7AEjV77AfozePOMw.jpeg)
+![](image_d136898ad5.jpeg)
 
-![](https://cdn-images-1.medium.com/max/400/1*-yYjypHCen0JuzpAzXscEw.jpeg)
+![](image_79a3983a22.jpeg)
 
-![](https://cdn-images-1.medium.com/max/400/1*4SCLVuOMBwtZTZBSpLgrfg.png)
+![](image_b810187ef2.png)
 
-![](https://cdn-images-1.medium.com/max/400/1*6zaUCCVMZpjRfWHYmX8qkg.jpeg)
+![](image_38259817c4.jpeg)
 
-![](https://cdn-images-1.medium.com/max/400/1*rk38FivUHtlv6HcQhdD8DA.png)
+![](image_156a04d18a.png)
 
-![](https://cdn-images-1.medium.com/max/600/1*4aFQfyPcyKyAcVJSIhE67Q.jpeg)
+![](image_c593c7b36d.jpeg)
 
-![](https://cdn-images-1.medium.com/max/600/1*bcVXQTFKOl-QsJ1j8hM3OQ.jpeg)
+![](image_25ea303587.jpeg)
 
-![](https://cdn-images-1.medium.com/max/600/1*zGxhTjMv5om5GcKDfWoeKg.jpeg)
+![](image_819848973a.jpeg)
 
-![](https://cdn-images-1.medium.com/max/400/1*m4lpOfO6G_t3GbHZxSyZTQ.jpeg)
+![](image_91439db3e3.jpeg)
 
-![](https://cdn-images-1.medium.com/max/600/1*krB5Qgh6ct-C71FznRB36g.jpeg)
+![](image_2f68e0af40.jpeg)
 
-![](https://cdn-images-1.medium.com/max/400/1*2sM7Drwp_lCeIEECS6x4mg.png)
+![](image_5ddb09b09a.png)
 
-![](https://cdn-images-1.medium.com/max/600/1*kCGN091CwtFCWT7WE9qwzw.png)
+![](image_b2ae5df149.png)
 
-![](https://cdn-images-1.medium.com/max/400/1*nJ3KNkubQgdcvAUMYzsOyg.jpeg)
+![](image_79624c45ef.jpeg)
 
-![](https://cdn-images-1.medium.com/max/600/1*6lS8_7Seg8hwyUjNkJTAqQ.jpeg)
+![](image_273332e90f.jpeg)
 
-![](https://cdn-images-1.medium.com/max/600/1*ixKpZKXJCHROkVrC6brIwg.jpeg)
+![](image_844329abcf.jpeg)
 
-![](https://cdn-images-1.medium.com/max/800/1*9ExissPNauAQtt4woZzw1w.jpeg)
+![](image_63acd37e7f.jpeg)
 
-![](https://cdn-images-1.medium.com/max/600/1*b0fIjwUS2E5iQj9ENASw0g.jpeg)
+![](image_82015e738a.jpeg)
 
 ### And the winners are…
 

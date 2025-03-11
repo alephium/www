@@ -1,13 +1,14 @@
 ---
-title: 'The Hitchhiker’s guide to Alephium’s community'
-
-description: 'We are thrilled to see many new faces in our community! Alephium community channels have recently grown tremendously, and we thought it…'
-date: 2023-12-29T09:40:10.375Z
+date: 2023-12-29 09:40:10.375000+00:00
+description: We are thrilled to see many new faces in our community! Alephium community
+  channels have recently grown tremendously, and we thought it…
+featuredImage: image_eec6f840ca.png
+title: The Hitchhiker’s guide to Alephium’s community
 ---
 
 ### **The Hitchhiker’s guide to Alephium’s community**
 
-![](https://cdn-images-1.medium.com/max/800/1*MqcZ1gKS9oteaTudgo_dug.png)
+![](image_eec6f840ca.png)
 
 _We are thrilled to see many new faces in our community! Alephium community channels have recently grown tremendously, and we thought it might be a good time to write a little community guide to ensure everyone knows where to find the informations they need & navigate our various channels._
 

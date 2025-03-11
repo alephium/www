@@ -1,13 +1,14 @@
 ---
-title: 'The Alephium Mobile Wallet Journey!'
-
-description: 'The Alephium Mobile Wallet is a great addition to the current set of wallets developed by the core contributors. It is available for…'
-date: 2024-01-25T15:48:47.283Z
+date: 2024-01-25 15:48:47.283000+00:00
+description: The Alephium Mobile Wallet is a great addition to the current set of
+  wallets developed by the core contributors. It is available for…
+featuredImage: image_0c8e8b0894.jpg
+title: The Alephium Mobile Wallet Journey!
 ---
 
 ### The Alephium Mobile Wallet Journey!
 
-![](https://cdn-images-1.medium.com/max/800/0*zUmNRJ4L53hPbRoF)
+![](image_0c8e8b0894.jpg)
 
 _The Alephium Mobile Wallet is a great addition to the current set of wallets developed by the core contributors. It is available for_ <a href="https://play.google.com/store/apps/details?id=org.alephium.wallet" class="markup--anchor markup--p-anchor" data-href="https://play.google.com/store/apps/details?id=org.alephium.wallet" rel="noopener" target="_blank"><em>Android</em></a> _and_ <a href="https://apps.apple.com/ch/app/alephium-wallet/id6469043072?l=en-GB" class="markup--anchor markup--p-anchor" data-href="https://apps.apple.com/ch/app/alephium-wallet/id6469043072?l=en-GB" rel="noopener" target="_blank"><em>iOS</em></a>_. It’s easy to use, fun and good-looking! Go try it! Here’s a free conversation on the conception, challenges, and choices made by_ <a href="https://twitter.com/mika_pote" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/mika_pote" rel="noopener" target="_blank"><em>Mikaël Vaivre</em></a> _and_ <a href="https://twitter.com/_nop33" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/_nop33" rel="noopener" target="_blank"><em>Ilias Trichopoulos</em></a> _while building the mobile wallet. We give it to you as is because it’s important to show what’s going on behind the scenes in the technical-designer minds of the front-end contributors! It seems so easy when you’re using the wallet, yet to get there… the journey is long and arduous, full of research, experiments, technological challenges and a hardcore dedication to user-centric design!_
 
@@ -33,7 +34,7 @@ The usability and technical construction paradigms on Android and iOS are so dif
 
 If you look at the Android hardware (the models), the devices that could run your app are so different! Some smartphones have a very small screen; others are huge. Some are super slow. On iOS people tend to upgrade their phones quite regularly, but on Android, it’s not the same: you still have a lot of older devices. To ensure that the app works on many devices is quite challenging.
 
-![](https://cdn-images-1.medium.com/max/800/0*BTuISW_G8nJszG6I)
+![](image_f3894a6c87.jpg)
 
 **Vladimir Moshnyager: So Android had constraints not present on iOS. But was that the only issue?**
 
@@ -45,7 +46,7 @@ Making the app efficient and smooth was also something that we focused on, and w
 
 ### Reflection on the Process
 
-![](https://cdn-images-1.medium.com/max/800/0*CSNduFDKuQrKlS2C)
+![](image_c20a7d8d96.jpg)
 
 **Vladimir Moshnyager: Did you enjoy the process of building the mobile app?**
 
@@ -81,7 +82,7 @@ One that really stood out was Rainbow, as it was really user-friendly. Our walle
 
 ### Target Audience and Usage
 
-![](https://cdn-images-1.medium.com/max/800/0*jsy_Dz8E7tixwOH8)
+![](image_b535f090ba.jpg)
 
 **Vladimir Moshnyager: Who is the target audience for the mobile wallet?**
 
@@ -121,7 +122,7 @@ _Testing and Final Tweaks:_ The last phase involves testing and refinement. It e
 
 ### Looking at the future
 
-![](https://cdn-images-1.medium.com/max/800/0*CjfCDFqUcJVqc7B0)
+![](image_f8d467da31.jpg)
 
 **Vladimir Moshnyager: What’s the roadmap for the wallet?**
 

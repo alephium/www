@@ -1,8 +1,9 @@
 ---
-title: 'Explorer Indexing Error Postmortem'
-
-description: 'What happened — Timeline of events? At 11:58 CET on January 18th, 2022, user @Kanto explained on discord that he could not deposit funds…'
-date: 2022-01-20T09:27:26.089Z
+date: 2022-01-20 09:27:26.089000+00:00
+description: What happened — Timeline of events? At 11:58 CET on January 18th, 2022,
+  user @Kanto explained on discord that he could not deposit funds…
+featuredImage: image_4d154b3ad3.jpg
+title: Explorer Indexing Error Postmortem
 ---
 
 ### Explorer Indexing Error Postmortem
@@ -10,13 +11,13 @@ date: 2022-01-20T09:27:26.089Z
 **What happened — Timeline of events?  
 **At 11:58 CET on January 18th, 2022, user @Kanto explained on discord that he could not deposit funds on Gate.io « due to technical maintenance ».
 
-![](https://cdn-images-1.medium.com/max/800/0*8A0Cf0jy7ANUWtrB)
+![](image_4d154b3ad3.jpg)
 
 At 12:27 CET, our core-dev acknowledged the problem, and explained we were in contact with Gate.io to solve the issue.
 
 At 12:54 CET, an official announcement was made in the Telegram channel (and replicated on Discord) to provide information for the wider community :
 
-![](https://cdn-images-1.medium.com/max/800/0*tGWXQFKWQKOfzb5B)
+![](image_31d942d5ea.jpg)
 
 At 20:06 CET, another announcement was made to explain that the fix was deployed and ready on Alephium’s side.
 

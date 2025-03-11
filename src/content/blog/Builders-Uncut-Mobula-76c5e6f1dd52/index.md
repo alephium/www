@@ -1,13 +1,14 @@
 ---
-title: 'Builders Uncut — Mobula'
-
-description: 'This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering…'
-date: 2024-08-14T15:56:46.468Z
+date: 2024-08-14 15:56:46.468000+00:00
+description: This interview was conducted around the Athens Builders Meetup, which
+  took place at the end of June 2024. If you’re just discovering…
+featuredImage: image_714e177654.png
+title: Builders Uncut — Mobula
 ---
 
 ### Builders Uncut — Mobula
 
-![](https://cdn-images-1.medium.com/max/800/1*u-KW5ymx8SqNywNx30rzRw.png)
+![](image_714e177654.png)
 
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
@@ -31,7 +32,7 @@ We launched our first product back then, Stay Safu. It’s a token security scan
 
 Now, two years later, we are building Mobula, which is essentially a full-stack data infrastructure. We provide real-time APIs for market data, as you mentioned, wallet data, and an indexing framework for app developers. We also offer a data warehouse where you can write SQL queries to get information on the chain state and build dashboards.
 
-![](https://cdn-images-1.medium.com/max/800/1*ZIO81LTzI21Hi9tqGH_W7w.png)
+![](image_1fb0bce2f2.png)
 
 Our vision is to bring great data tools to non-EVM chains, similar to what Dune and The Graph offer for EVM chains. We want to design a product that is chain-agnostic so we can apply these great tools to as many chains as possible.
 
@@ -59,7 +60,7 @@ Actually, not too much. The JSON RPC APIs are quite similar to those of EVM chai
 
 #### Now you’re integrating other non-EVM chains. What’s your take on the different chains and their tooling and languages?
 
-![](https://cdn-images-1.medium.com/max/800/1*-Fr1ZXiHNvPc9rd_QCYncw.png)
+![](image_238c51c6ff.png)
 
 Having integrated several non-EVM chains, I think Alephium stands out for its unique features. Alephium’s use of Proof of Work and sharding are notable differentiators. While sharding isn’t commonly implemented, it provides a real competitive edge. Many new ecosystems are quite similar, often forks of each other. Alephium’s uniqueness offers a significant advantage in the market.
 

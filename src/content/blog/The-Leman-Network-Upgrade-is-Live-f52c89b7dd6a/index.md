@@ -1,15 +1,15 @@
 ---
-title: 'The Leman Network Upgrade is Live!'
-
-description: 'New features & tools to support a thriving Alephium Ecosystem'
-date: 2023-03-30T13:10:04.628Z
+date: 2023-03-30 13:10:04.628000+00:00
+description: New features & tools to support a thriving Alephium Ecosystem
+featuredImage: image_62d12f3011.jpeg
+title: The Leman Network Upgrade is Live!
 ---
 
 ### The Leman Network Upgrade is Live!
 
 #### New features & tools to support a thriving Alephium Ecosystem
 
-![](https://cdn-images-1.medium.com/max/800/1*HgAzUK1d0x-vYIn2leCkOg.jpeg)
+![](image_62d12f3011.jpeg)
 
 The Leman Network Upgrade was activated on the mainnet at 10:00 GMT, March 30th, 2023! The Alephium blockchain is running without any issues, producing blocks at a stable rate. While the core developers will remain closely monitoring the network, it is time to thank the awesome support of all community members and service providers who made this possible!
 

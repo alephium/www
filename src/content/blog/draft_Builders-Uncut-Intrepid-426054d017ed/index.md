@@ -1,12 +1,14 @@
 ---
-title: 'Builders Uncut — Intrepid'
+description: This interview was conducted around the Athens Builders Meetup, which
+  took place at the end of June 2024. If you’re just discovering…
 draft: true
-description: 'This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering…'
+featuredImage: image_5828c9fc16.png
+title: Builders Uncut — Intrepid
 ---
 
 ### Builders Uncut — Intrepid
 
-![](https://cdn-images-1.medium.com/max/800/1*sYSjLhY_HGhz05efnTM7fA.png)
+![](image_5828c9fc16.png)
 
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 

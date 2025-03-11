@@ -1,13 +1,14 @@
 ---
+date: 2023-07-28 13:05:23.630000+00:00
+description: This is the fourth of a series of technical innovations brought by Alephium.
+  Find the previous ones here (PolW), here (sUTXO), and here…
+featuredImage: image_6bc573b7de.jpg
 title: 'An introduction to Blockflow: Alephium’s sharding algorithm'
-
-description: 'This is the fourth of a series of technical innovations brought by Alephium. Find the previous ones here (PolW), here (sUTXO), and here…'
-date: 2023-07-28T13:05:23.630Z
 ---
 
 ### An introduction to Blockflow: Alephium’s sharding algorithm
 
-![](https://cdn-images-1.medium.com/max/800/0*kCjH5_S7_9JF-PLb)
+![](image_6bc573b7de.jpg)
 
 _This is the fourth of a series of technical innovations brought by Alephium. Find the previous ones_ <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" target="_blank"><em>here</em></a> _(PolW),_ <a href="https://medium.com/p/8de3b0f76749" class="markup--anchor markup--p-anchor" data-href="https://medium.com/p/8de3b0f76749" target="_blank"><em>here</em></a> _(sUTXO), and_ <a href="https://medium.com/@alephium/meet-alphred-a-virtual-machine-like-no-others-85ce86540025" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/meet-alphred-a-virtual-machine-like-no-others-85ce86540025" target="_blank"><em>here</em></a> _(Alphred VM). This article will dive into the concepts of sharding and the inner workings of Blockflow to explain how it enhances the performance of the Alephium blockchain._
 
@@ -49,7 +50,7 @@ This approach contrasts with traditional sharding methods in account-based chain
 
 > _A_ <a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph" class="markup--anchor markup--blockquote-anchor" data-href="https://en.wikipedia.org/wiki/Directed_acyclic_graph" rel="noopener" target="_blank"><em>Directed Acyclic Graph</em></a> _is a data structure that can conceptually represent a series of activities and their interrelationships. Comprised of nodes interconnected by directed edges, it ensures the orderly treatment of sequences of transactions, prevents double-spending of coins, and safeguards against network rejections. It’s like a safety check to maintain fair and secure transactions or a transaction family tree._
 
-![](https://cdn-images-1.medium.com/max/800/0*siyItdIigUYNaR23)
+![](image_24f06157d5.jpg)
 
 ### **Diving deeper into the dependencies**
 
@@ -66,7 +67,7 @@ Group 1 is: **(1,1)** — (1,0) — (1,2) — (1,3)
 Group 2 is **(2,2)** — (2,0) — (2,1) — (2,3)  
 Group 3 is **(3,3) **— (3,0) — (3,1) — (3,2)
 
-![](https://cdn-images-1.medium.com/max/800/1*qYyRsB_JqEQUopXfQdEMLw.png)
+![](image_40b5bef705.png)
 
 Every chain in parentheses manages a different unidirectional transaction flow: (0,1) processes all transactions from group 0 to group 1, and (1,0) manages the transactions in the opposite direction from group 1 to group 0.
 
@@ -79,7 +80,7 @@ To give you an example for a block mined on chain (1,0), there are 7 dependencie
 Four dependencies from each other chain inside the group, so (1,0) — (1,1) — (1,2) — (1,3).  
 Three dependencies from each other group (the intragroup chains): (0,0) — (2,2) — (3,3).
 
-![](https://cdn-images-1.medium.com/max/800/1*N3NPyfmH2wbI_Yjx78I3bg.png)
+![](image_0c30ec0d38.png)
 
 These dependencies are placed in the new block’s header, naturally embedding them into the block structure. And this happens for each of the new blocks mined on the 16 chains: thanks to the DAG matrix, they are all connected to each other group, maintaining ledger integrity while increasing throughput.
 
@@ -91,7 +92,7 @@ An illustration:
 
 Bob has an address in group 0. He wants to send \$ALPH to Alice, who has her address in group 3. He creates the transaction on <a href="https://github.com/alephium/desktop-wallet/releases/latest/" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/desktop-wallet/releases/latest/" rel="noopener" target="_blank">the superb desktop wallet</a>, enters Alice’s address, and presses “send”. What happens?
 
-![](https://cdn-images-1.medium.com/max/800/1*fH7nXaCnvuu32mOehqmW-Q.png)
+![](image_933fb2d1a3.png)
 
 This transaction is included in a block on chain(0,3), which is the chain connecting groups 0 and 3 in this direction. This triggers a balance change on Bob’s address and <a href="https://twitter.com/alephium/status/1599808960038461447" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium/status/1599808960038461447" rel="noopener" target="_blank">updates Group 0’s state.</a>
 

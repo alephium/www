@@ -1,15 +1,15 @@
 ---
-title: 'Second Online Dev Workshop!'
-
-description: 'Re-implementing the friend.tech smart contract to RALPH with @h0ngcha0'
-date: 2023-09-25T16:58:22.500Z
+date: 2023-09-25 16:58:22.500000+00:00
+description: Re-implementing the friend.tech smart contract to RALPH with @h0ngcha0
+featuredImage: image_a2bb84275c.png
+title: Second Online Dev Workshop!
 ---
 
 ### Second Online Dev Workshop!
 
 #### Re-implementing the friend.tech smart contract to RALPH with <a href="https://github.com/h0ngcha0" class="markup--anchor markup--h4-anchor" data-href="https://github.com/h0ngcha0" rel="noopener ugc nofollow noopener" target="_blank">@h0ngcha0</a>
 
-![](https://cdn-images-1.medium.com/max/800/1*eONj0w_ebbrcQxNRucbyCw.png)
+![](image_a2bb84275c.png)
 
 ### When? September 30th (sat) — 3PM CET and October 7th (sat) — 3PM CET Where? <a href="https://meet.google.com/icj-vxpo-hqn" class="markup--anchor markup--h3-anchor" data-href="https://meet.google.com/icj-vxpo-hqn" rel="nofollow noopener" target="_blank">https://meet.google.com/icj-vxpo-hqn</a> Who? <a href="https://github.com/h0ngcha0" class="markup--anchor markup--h3-anchor" data-href="https://github.com/h0ngcha0" rel="noopener ugc nofollow noopener" target="_blank">@h0ngcha0</a>
 

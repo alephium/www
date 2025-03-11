@@ -1,15 +1,16 @@
 ---
-title: 'ALEPHIUM/FLUX Tutorial Contest'
-
-description: 'Thanks to Flux, it is easier than ever to run an Alephium full node. But it could become even easier. All it takes is a little distribution…'
-date: 2022-12-01T14:07:11.315Z
+date: 2022-12-01 14:07:11.315000+00:00
+description: Thanks to Flux, it is easier than ever to run an Alephium full node.
+  But it could become even easier. All it takes is a little distribution…
+featuredImage: image_fd81a55427.jpeg
+title: ALEPHIUM/FLUX Tutorial Contest
 ---
 
 ### **ALEPHIUM/FLUX Tutorial Contest**
 
 #### Thanks to <a href="https://runonflux.io/" class="markup--anchor markup--h4-anchor" data-href="https://runonflux.io/" rel="noopener" target="_blank">Flux</a>, it is easier than ever to run an Alephium full node. But it could become even easier. All it takes is a little distribution of knowledge!
 
-![](https://cdn-images-1.medium.com/max/800/1*c2nrLRre7AjVeqoPrjxShw.jpeg)
+![](image_fd81a55427.jpeg)
 
 Help decentralize the skills required to run a full-node and enter our Tutorial contest: **Produce the best tutorial on how to run an Alephium full node on FLUX and win prizes!**
 

@@ -1,15 +1,15 @@
 ---
+date: 2023-04-14 16:37:30.059000+00:00
+description: The winning design is already featured in Alephium’s SWALPH shop!
+featuredImage: image_1e62c246f3.jpg
 title: 'Results of the Design Contest: All Things Leman'
-
-description: 'The winning design is already featured in Alephium’s SWALPH shop!'
-date: 2023-04-14T16:37:30.059Z
 ---
 
 ### Results of the Design Contest: All Things Leman
 
 The winning design is already featured in Alephium’s SWALPH shop!
 
-![](https://cdn-images-1.medium.com/max/800/0*9r-XWKKj3DjjLEXV)
+![](image_1e62c246f3.jpg)
 
 THE RESULTS ARE IN! Alephium invited its community to a design contest to celebrate the <a href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a" target="_blank">Leman Network Upgrade activation</a>! The community answered the call and came up with some fantastic entries.
 
@@ -28,7 +28,7 @@ There was a lot of creativity in the entries! While the selection below only inc
 - <span id="c7eb">“E” has the “Leman Bussin” motto too, with the alephium logo everywhere (make a sticker?).</span>
 - <span id="b5f6">“F” encompasses the Leman upgrade with vibrant colors and a nostalgic 80s vibe, featuring dynamic rays reminiscent of the Swiss mountains, leading the eyes toward the alephium logo.</span>
 
-![](https://cdn-images-1.medium.com/max/800/0*SZxg1vLAlI8FYri3)
+![](image_fdc92c8dba.jpg)
 
 ### 🥁 And the winner is…. 🥁
 
@@ -36,8 +36,8 @@ The winning design chosen by the jury was submitted by MontaiL. It has a polishe
 
 Congratulations Montail! Your creativity won the jury’s heart, and Alephium is happy to add your design to its SWALPH shop.
 
-![](https://cdn-images-1.medium.com/max/800/0*iZ2d65QtRJQAAReX)
+![](image_53a13f030c.jpg)
 
 You can find MontaiL’s design now in the shop: <a href="https://alephium.myspreadshop.ch/Leman" class="markup--anchor markup--p-anchor" data-href="https://alephium.myspreadshop.ch/Leman" rel="noopener" target="_blank"><strong>https://alephium.myspreadshop.ch/Leman</strong></a>
 
-![](https://cdn-images-1.medium.com/max/800/0*fnR1oavayX-b6RNw)
+![](image_08faa828e5.jpg)

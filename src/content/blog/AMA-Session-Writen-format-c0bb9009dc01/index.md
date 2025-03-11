@@ -1,15 +1,15 @@
 ---
-title: 'AMA Session — Writen format'
-
-description: 'All answers about the exciting new developments in Alephium’s ecosystem!'
-date: 2023-04-04T12:19:17.715Z
+date: 2023-04-04 12:19:17.715000+00:00
+description: All answers about the exciting new developments in Alephium’s ecosystem!
+featuredImage: image_cf70006ab8.jpeg
+title: AMA Session — Writen format
 ---
 
 ### AMA Session — Writen format
 
 #### All answers about the exciting new developments in Alephium’s ecosystem!
 
-![](https://cdn-images-1.medium.com/max/800/1*5wb0M16MdEsHCw8vkZXRwg.jpeg)
+![](image_cf70006ab8.jpeg)
 
 On March 28th, Alephium held an <a href="https://www.youtube.com/watch?v=Gf1mDGddM2I" class="markup--anchor markup--p-anchor" data-href="https://www.youtube.com/watch?v=Gf1mDGddM2I" rel="noopener" target="_blank">AMA session</a> with the community, to answer questions about the <a href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a" target="_blank">Leman Network Upgrade</a>. This medium article has some of the most relevant questions.
 

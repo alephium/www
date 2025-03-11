@@ -1,13 +1,15 @@
 ---
-title: 'Second Developer Workshop: Re-implementing Friend.Tech’s Smart Contract in Ralph'
-
-description: 'Welcome to the second developer workshop! If you missed the first one, we dived into the basics of Ralph programming language, along with…'
-date: 2023-11-06T15:29:26.299Z
+date: 2023-11-06 15:29:26.299000+00:00
+description: Welcome to the second developer workshop! If you missed the first one,
+  we dived into the basics of Ralph programming language, along with…
+featuredImage: image_7c0c9f04f9.png
+title: 'Second Developer Workshop: Re-implementing Friend.Tech’s Smart Contract in
+  Ralph'
 ---
 
 ### Second Developer Workshop: Re-implementing Friend.Tech’s Smart Contract in Ralph
 
-![](https://cdn-images-1.medium.com/max/1200/1*L1Lrv1pbCzMl2feLCRxXtQ.png)
+![](image_7c0c9f04f9.png)
 
 Welcome to the second developer workshop! If you missed the first one, we dived into the basics of Ralph programming language, along with its SDK and CLI build tools, crafting a simple token faucet. It’s been a fantastic experience, you can find it <a href="https://medium.com/@alephium/first-developer-workshop-build-a-token-faucet-a6bb2aa7bf68" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/first-developer-workshop-build-a-token-faucet-a6bb2aa7bf68" target="_blank">here</a> or on <a href="https://www.youtube.com/watch?v=YblUxEcXQuY" class="markup--anchor markup--p-anchor" data-href="https://www.youtube.com/watch?v=YblUxEcXQuY" rel="noopener" target="_blank">YouTube</a> and <a href="https://github.com/alephium/dev-workshop-01" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/dev-workshop-01" rel="noopener" target="_blank">GitHub</a>.
 

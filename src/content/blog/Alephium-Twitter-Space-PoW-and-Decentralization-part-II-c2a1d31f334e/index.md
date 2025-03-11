@@ -1,15 +1,16 @@
 ---
-title: 'Alephium Twitter Space — PoW and Decentralization, part II'
-
-description: 'Alephium hosted a Twitter Space on 24/01/2023 with Jordan from Nervos Network and Cheng Wang & Hongchao Liu from Alephium to talk about…'
-date: 2023-02-17T14:18:49.087Z
+date: 2023-02-17 14:18:49.087000+00:00
+description: Alephium hosted a Twitter Space on 24/01/2023 with Jordan from Nervos
+  Network and Cheng Wang & Hongchao Liu from Alephium to talk about…
+featuredImage: image_9db9512e55.jpg
+title: Alephium Twitter Space — PoW and Decentralization, part II
 ---
 
 ### Alephium Twitter Space — PoW and Decentralization, part II
 
 #### Alephium hosted a Twitter Space on 24/01/2023 with <a href="https://twitter.com/jordan_mack" class="markup--anchor markup--h4-anchor" data-href="https://twitter.com/jordan_mack" rel="noopener" target="_blank">Jordan</a> from <a href="http://www.nervos.com" class="markup--anchor markup--h4-anchor" data-href="http://www.nervos.com" rel="noopener" target="_blank">Nervos Network</a> and <a href="https://twitter.com/wachmc" class="markup--anchor markup--h4-anchor" data-href="https://twitter.com/wachmc" rel="noopener" target="_blank">Cheng Wang</a> & <a href="https://twitter.com/hongchao" class="markup--anchor markup--h4-anchor" data-href="https://twitter.com/hongchao" rel="noopener" target="_blank">Hongchao Liu</a> from <a href="http://www.alephium.org" class="markup--anchor markup--h4-anchor" data-href="http://www.alephium.org" rel="noopener" target="_blank">Alephium</a> to talk about Proof of Work (PoW) and Decentralization.
 
-![](https://cdn-images-1.medium.com/max/800/0*-pKTzkmknaH3p6Yt)
+![](image_9db9512e55.jpg)
 
 It was a great conversation, and a series of articles will transcript the main topics discussed. You can find part I <a href="https://medium.com/@alephium/alephium-twitter-space-pow-and-decentralization-part-i-a7c84ed91f90" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/alephium-twitter-space-pow-and-decentralization-part-i-a7c84ed91f90" target="_blank">here</a> and access the whole conversation <a href="https://www.youtube.com/watch?v=FLmxAHolDMc" class="markup--anchor markup--p-anchor" data-href="https://www.youtube.com/watch?v=FLmxAHolDMc" rel="noopener" target="_blank">here</a>.
 

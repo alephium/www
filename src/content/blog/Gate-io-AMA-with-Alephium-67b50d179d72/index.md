@@ -1,8 +1,8 @@
 ---
-title: 'Gate.io AMA with Alephium.'
-
-description: 'On the 15th of February 2022, Gate.io hosted an AMA with Alephium in their English Telegram-group. This is the transcript from that event.'
-date: 2022-02-18T12:15:17.605Z
+date: 2022-02-18 12:15:17.605000+00:00
+description: On the 15th of February 2022, Gate.io hosted an AMA with Alephium in
+  their English Telegram-group. This is the transcript from that event.
+title: Gate.io AMA with Alephium.
 ---
 
 ### Gate.io AMA with Alephium.

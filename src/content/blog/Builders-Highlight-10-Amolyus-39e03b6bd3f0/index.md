@@ -1,13 +1,14 @@
 ---
+date: 2024-04-13 16:03:32.024000+00:00
+description: Our ecosystem thrives with developers building amazing projects on top
+  of Alephium, delivering a unique experience and providing real…
+featuredImage: image_d6decd6631.png
 title: 'Builders Highlight #10: Amolyus'
-
-description: 'Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real…'
-date: 2024-04-13T16:03:32.024Z
 ---
 
 ### Builders Highlight \#10: Amolyus
 
-![](https://cdn-images-1.medium.com/max/800/1*bJYK36LBAu7Bb3_6IRqbTw.png)
+![](image_d6decd6631.png)
 
 _Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real utility for users. In the Builders Highlight series, they share more about their projects, thoughts, and insights on why building on Alephium. You can find_ <a href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" rel="noopener" target="_blank"><em>#1 here</em></a>_,_ <a href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" rel="noopener" target="_blank"><em>#2 here</em></a>, <a href="https://medium.com/@alephium/builders-highlight-3-ayin-6be4a6bd4ec2" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-3-ayin-6be4a6bd4ec2" rel="noopener" target="_blank"><em>#3 here</em></a>, <a href="https://medium.com/@alephium/builders-highlight-4-no-trust-verify-9ea495ca826f" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-4-no-trust-verify-9ea495ca826f" rel="noopener" target="_blank"><em>#4 here</em></a>, <a href="https://medium.com/@alephium/builders-highlight-5-deadrare-d5ff90d6161e" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-5-deadrare-d5ff90d6161e" rel="noopener" target="_blank"><em>#5 here</em></a>, <a href="https://medium.com/@alephium/builders-highlight-6-what-the-duck-0aedc602ecfd" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-6-what-the-duck-0aedc602ecfd" rel="noopener" target="_blank"><em>#6 here</em></a>, <a href="https://medium.com/@alephium/builders-highlight-7-alphpad-bbd4f4a34fd5" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-7-alphpad-bbd4f4a34fd5" rel="noopener" target="_blank"><em>#7 here</em></a>, <a href="https://medium.com/@alephium/builders-highlight-8-ngu-money-f8bf05e36e99" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-8-ngu-money-f8bf05e36e99" target="_blank"><em>#8</em></a>_, and_ <a href="https://medium.com/@alephium/builders-highlight-9-mobula-f9c45dc6c691" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-9-mobula-f9c45dc6c691" target="_blank"><em>#9 here</em></a>_!_
 
@@ -37,7 +38,7 @@ To those who share the same vision, <a href="https://twitter.com/amolyus" class=
 
 We are experimenting with the token itself, integrating it into future platforms and projects. With Talers, Rockets, and \$LFG, we’re laying the foundation of an ecosystem that is about collaboration, innovation, and community.
 
-![](https://cdn-images-1.medium.com/max/800/1*xVYaGMwzxp-oNfoQXj6M4g.jpeg)
+![](image_657491ff29.jpeg)
 
 #### How did you build/tailor the rarity of the collection? What did you have in mind? How did you decide on the number of NFTs? Mint price?
 
@@ -53,7 +54,7 @@ LFG is the currency of our ecosystem, and the name symbolises the drive and opti
 
 Creating LFG, instead of using Alephium as currency itself, gives us the freedom to create an economic model and incentives that are tailor-made for our users and the unique experiences we want to offer.
 
-![](https://cdn-images-1.medium.com/max/800/1*dmEQfBviaxxsOcz8T-DvIQ.jpeg)
+![](image_4ef26da5eb.jpeg)
 
 #### We saw that the project is building a community treasury. What are the plans for it? Is there any relationship with Nouns?
 
@@ -69,7 +70,7 @@ The writing and community engagement come from genuine passion and a commitment 
 
 We envision a space where everyone feels empowered to contribute, share ideas, and make a tangible impact. It is about nurturing a culture of inclusivity, support, and mutual growth.
 
-![](https://cdn-images-1.medium.com/max/800/1*TbQ8bpTsc2p6H5FccZwJ7Q.jpeg)
+![](image_a06734e16a.jpeg)
 
 #### What is the most rewarding part of developing Amolyus, and why? What advice would you give to someone looking to build on Alephium, based on your experience? In your opinion, how can the Alephium ecosystem foster a more vibrant developer community?
 

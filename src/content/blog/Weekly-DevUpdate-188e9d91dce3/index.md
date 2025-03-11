@@ -1,15 +1,15 @@
 ---
+date: 2023-08-16 15:52:52.305000+00:00
+description: Week 32 Milestones & progress on dev on Alephium!
+featuredImage: image_52a3a40cb2.png
 title: 'Weekly #DevUpdate'
-
-description: 'Week 32 Milestones & progress on dev on Alephium!'
-date: 2023-08-16T15:52:52.305Z
 ---
 
 ### Weekly \#DevUpdate
 
 #### Week 32 Milestones & progress on dev on Alephium!
 
-![](https://cdn-images-1.medium.com/max/800/1*kFVEPWfuNn_9Wwfo2--j4g.png)
+![](image_52a3a40cb2.png)
 
 1.  <span id="ce02">**Launch of NFT Marketplace V2 for Internal Testing**</span>
 
@@ -29,7 +29,7 @@ In collaboration with Zealy.io, we’re on the brink of launching quests. Stay t
 
 **Frontend Team Updates:**
 
-![](https://cdn-images-1.medium.com/max/800/1*qhYrBndi_1fCnvdDwE54EQ.png)
+![](image_bedc9525df.png)
 
 - <span id="7e74">Desktop Wallet: Review of the Italian translation, creation of an animated QR code to share information, and updates of endpoints.</span>
 - <span id="2119">Mobile Wallet: Desktop wallet import by QR code scanning method, general data loading speed improvements, and animation additions.</span>
@@ -37,7 +37,7 @@ In collaboration with Zealy.io, we’re on the brink of launching quests. Stay t
 
 **Backend Team Updates:**
 
-![](https://cdn-images-1.medium.com/max/800/1*hDcDZGC-0iSz_c0EJM5yqA.png)
+![](image_8fa404b37f.png)
 
 - <span id="64ba">dApps: NFT Marketplace v2 for internal testing.</span>
 - <span id="c323">Browser Extension Wallet: Enhancements on NFTs display and dApps connection.</span>
@@ -46,7 +46,7 @@ In collaboration with Zealy.io, we’re on the brink of launching quests. Stay t
 
 **Marketing & Content Team Updates:**
 
-![](https://cdn-images-1.medium.com/max/800/1*FvfOV32j5mazStJcHHojwA.jpeg)
+![](image_e25d3f6229.jpeg)
 
 - <span id="6708">Zealy.io beta testing with the community. (want to test? Ping us!)</span>
 - <span id="f62b">Content: sUTXO long-form article (part I), Tx Script x Smart Contracts thread, and a summary of the last Tech Talk (UI/UX), Dev update, engagement post, more content prep.</span>

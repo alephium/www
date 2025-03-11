@@ -1,13 +1,14 @@
 ---
-title: 'Bridge AMA — The Alephium Bridge — part 2 — The roadmap'
-
-description: 'One month after the release of the bridge on mainnet, Cheng, Hongchao & Maud were interviewed by Vladimir in a Twitter space AMA. You can…'
-date: 2023-12-26T09:55:35.249Z
+date: 2023-12-26 09:55:35.249000+00:00
+description: One month after the release of the bridge on mainnet, Cheng, Hongchao
+  & Maud were interviewed by Vladimir in a Twitter space AMA. You can…
+featuredImage: image_9cc7fffa1b.png
+title: Bridge AMA — The Alephium Bridge — part 2 — The roadmap
 ---
 
 ### Bridge AMA — The Alephium Bridge — part 2 — The roadmap
 
-![](https://cdn-images-1.medium.com/max/800/1*CRHoNqqfnBCq6obtPY3gCQ.png)
+![](image_9cc7fffa1b.png)
 
 _One month after the release of the_ <a href="https://bridge.alephium.org/#/transfer" class="markup--anchor markup--p-anchor" data-href="https://bridge.alephium.org/#/transfer" rel="noopener" target="_blank"><em>bridge</em></a> _on mainnet, Cheng, Hongchao & Maud were interviewed by Vladimir in a Twitter space AMA. You can listen to the Twitter space itself_ <a href="https://twitter.com/i/spaces/1mrGmydQreMGy" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/i/spaces/1mrGmydQreMGy" rel="noopener" target="_blank"><em>here</em></a>_, or read on at your own pace! This article is a lightly edited version of the AMA, to improve the clarity and readability. This is part 2 of 3, and you can find part 1_ <a href="https://medium.com/@alephium/the-alephium-bridge-ama-part-1-bd6536ea9cdc" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/the-alephium-bridge-ama-part-1-bd6536ea9cdc" target="_blank"><em>here</em></a>_._
 

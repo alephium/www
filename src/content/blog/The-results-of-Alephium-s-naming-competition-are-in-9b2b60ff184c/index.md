@@ -1,8 +1,7 @@
 ---
-title: 'The results of Alephium’s naming competition are in!'
-
-description: 'The team has spoken & the favorite name suggestions are 🥁'
-date: 2022-02-09T10:14:03.517Z
+date: 2022-02-09 10:14:03.517000+00:00
+description: The team has spoken & the favorite name suggestions are 🥁
+title: The results of Alephium’s naming competition are in!
 ---
 
 ### The results of Alephium’s naming competition are in!

@@ -1,8 +1,8 @@
 ---
-title: 'Introducing ALPH'
-
-description: 'We’re happy to announce that the Alephium token ticker symbol is officially ALPH.'
-date: 2021-08-27T11:36:54.213Z
+date: 2021-08-27 11:36:54.213000+00:00
+description: We’re happy to announce that the Alephium token ticker symbol is officially
+  ALPH.
+title: Introducing ALPH
 ---
 
 ### Introducing ALPH

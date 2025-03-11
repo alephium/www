@@ -1,8 +1,8 @@
 ---
-title: 'And the winners of the video creation contest are…'
-
-description: 'Back in March 2022, we launched a community video contest and the results are in!'
-date: 2022-04-21T09:29:12.943Z
+date: 2022-04-21 09:29:12.943000+00:00
+description: Back in March 2022, we launched a community video contest and the results
+  are in!
+title: And the winners of the video creation contest are…
 ---
 
 ### And the winners of the video creation contest are…

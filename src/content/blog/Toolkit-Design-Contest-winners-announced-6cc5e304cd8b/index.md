@@ -1,15 +1,16 @@
 ---
-title: 'Toolkit Design Contest winners announced!'
-
-description: 'Following the release of the Multisig GUI, Alephium launched a design contest to find a logo for the toolkit website! And now, we announce…'
-date: 2023-09-29T14:39:19.449Z
+date: 2023-09-29 14:39:19.449000+00:00
+description: Following the release of the Multisig GUI, Alephium launched a design
+  contest to find a logo for the toolkit website! And now, we announce…
+featuredImage: image_b3ebe65424.jpg
+title: Toolkit Design Contest winners announced!
 ---
 
 ### Toolkit Design Contest winners announced!
 
 _Following the_ <a href="https://medium.com/@alephium/alephium-multisig-gui-is-here-4b23bec7e2f" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/alephium-multisig-gui-is-here-4b23bec7e2f" target="_blank"><em>release of the Multisig GUI</em></a>_, Alephium launched a_ <a href="https://medium.com/@alephium/design-contest-a-logo-for-the-toolkit-website-f7bf7801b03c" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/design-contest-a-logo-for-the-toolkit-website-f7bf7801b03c" target="_blank"><em>design contest</em></a> _to find a logo for the_ <a href="https://alephium.github.io/alephium-toolkit/" class="markup--anchor markup--p-anchor" data-href="https://alephium.github.io/alephium-toolkit/" rel="noopener" target="_blank"><em>toolkit website</em></a>_! And now, we announce a winner, 2 runner-ups and special mentions!_
 
-![](https://cdn-images-1.medium.com/max/800/0*An3jEg7OSFT2NfDT)
+![](image_b3ebe65424.jpg)
 
 **Thank you!**
 
@@ -21,7 +22,7 @@ After careful review, the jury, composed of several core contributors of Alephiu
 
 #### **The winner**
 
-![](https://cdn-images-1.medium.com/max/800/0*lLCl5EPIX13ulYv8)
+![](image_72892acf60.jpg)
 
 This is an elegant design. The pictogram itself is precise and easily understandable, the font work is very clean and readable, and the colour gradient is on-brand. The underscore adds an interesting element to the mix, merging the software idea with the hardware nature of the illustration.
 
@@ -31,7 +32,7 @@ Edgar walks away with 1’000 \$ALPH!
 
 #### **The runner ups**
 
-![](https://cdn-images-1.medium.com/max/800/0*m6Je0N6GeF-r8GWW)
+![](image_c076c486a5.jpg)
 
 On the left, <a href="https://twitter.com/headroomcapital" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/headroomcapital" rel="noopener" target="_blank">Headroom</a>’s logo has a cool, fresh, figurative vibe with an unconventional color scheme!
 
@@ -39,13 +40,13 @@ On the right, Studio22’s proposal (of two) has intriguing geographical minimal
 
 Here as a GIF: (see it better & with music <a href="https://www.linkedin.com/feed/update/activity:7110907927535710210" class="markup--anchor markup--p-anchor" data-href="https://www.linkedin.com/feed/update/activity:7110907927535710210" rel="noopener" target="_blank">here</a>)
 
-![](https://cdn-images-1.medium.com/max/800/0*I6vgMMCuSWHCBH2k)
+![](image_dc4e6a412c.jpg)
 
 Each of them walks away with 250 \$ALPH!
 
 #### **Special mentions**
 
-![](https://cdn-images-1.medium.com/max/800/0*EmUOL5Wp5LUyRpm0)
+![](image_74647d8222.jpg)
 
 We vibed with the energy of <a href="https://twitter.com/NRGResonance" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/NRGResonance" rel="noopener" target="_blank">NRG’s</a> proposal! Although out of brief, its focus on the infinity of possibilities rather than the tools itself has been pleasing for us.
 

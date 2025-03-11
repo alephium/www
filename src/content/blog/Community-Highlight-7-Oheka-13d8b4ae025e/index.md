@@ -1,15 +1,16 @@
 ---
+date: 2023-03-13 15:37:46.355000+00:00
+description: Once in a while, the spotlight is put on one active member of the Alephium
+  community. This is an opportunity to showcase community members’…
+featuredImage: image_4520263404.jpg
 title: 'Community Highlight #7, Oheka'
-
-description: 'Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’…'
-date: 2023-03-13T15:37:46.355Z
 ---
 
 ### Community Highlight \#7, Oheka
 
 #### _Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’ contributions to the ecosystem, what drives them, and what they are passionate about! More episodes:_ <a href="https://medium.com/@alephium/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" target="_blank"><em>#1 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-cgi-bin-c102cc106f19" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-cgi-bin-c102cc106f19" target="_blank"><em>#2 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-3-digdug-48a7ec868504" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-3-digdug-48a7ec868504" target="_blank"><em>#3 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-4-montail-e24fd88882a0" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-4-montail-e24fd88882a0" target="_blank"><em>#4 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-5-txn-71c4fd76ffe8" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-5-txn-71c4fd76ffe8" target="_blank"><em>#5 here</em></a>, _and_ <a href="https://medium.com/@alephium/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" target="_blank"><em>#6 here</em></a>_._
 
-![](https://cdn-images-1.medium.com/max/800/0*XzhRhwmWZ8hl35tM)
+![](image_4520263404.jpg)
 
 **Today’s spotlight is shining on the very definition of an “Alephium OG”. Not only did they join the project’s community very early on, they instinctively began helping their peers to better understand the intricacies and specifics of the project. Oheka is the type of person that will not rest on trust as a given; only verifiable facts are meaningful to them. While this is not rare in the educated fringes of the crypto space, Oheka is generous about their findings. They continuously encourage their fellow Alephians to do their own research by showing the way into the knowledge base.**
 
@@ -47,7 +48,7 @@ In order to attract developers and future users, it is important for the project
 
 In the short term, without much suspense, like many in the community, I am looking forward to the <a href="https://medium.com/@alephium/announcing-the-leman-network-upgrade-c01a81e65f0e" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/announcing-the-leman-network-upgrade-c01a81e65f0e" target="_blank">Leman network upgrade</a> which will be a catalyst for the development of the project. In the future, I look forward to seeing more and more developers come and build the dApps and thus grow the Alephium ecosystem.
 
-![](https://cdn-images-1.medium.com/max/800/0*cRgma8fRDhBnh471)
+![](image_d985472595.jpg)
 
 #### You are involved in several projects. What they seem to have in common is a gravitation around data-privacy protection. How do you envision the role of blockchain tech in the advancement of data-privacy for everyone?
 

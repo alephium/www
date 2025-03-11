@@ -1,15 +1,16 @@
 ---
+date: 2023-06-16 13:23:48.959000+00:00
+description: Once in a while, the spotlight is put on one active member of the Alephium
+  community. This is an opportunity to showcase community members’…
+featuredImage: image_7ec7798768.jpg
 title: 'Community Highlight #10, Lx aka Lix'
-
-description: 'Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’…'
-date: 2023-06-16T13:23:48.959Z
 ---
 
 ### Community Highlight \#10, Lx aka Lix
 
 #### _Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’ contributions to the ecosystem, what drives them, and what they are passionate about! More episodes:_ <a href="https://medium.com/@alephium/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" target="_blank"><em>#1 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-cgi-bin-c102cc106f19" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-cgi-bin-c102cc106f19" target="_blank"><em>#2 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-3-digdug-48a7ec868504" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-3-digdug-48a7ec868504" target="_blank"><em>#3 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-4-montail-e24fd88882a0" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-4-montail-e24fd88882a0" target="_blank"><em>#4 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-5-txn-71c4fd76ffe8" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-5-txn-71c4fd76ffe8" target="_blank"><em>#5 here</em></a>_ ,_ <a href="https://medium.com/@alephium/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" target="_blank"><em>#6 here</em></a> _and_ <a href="https://medium.com/@alephium/community-highlight-7-oheka-13d8b4ae025e" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-7-oheka-13d8b4ae025e" target="_blank"><em>#7 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-8-jorge-438510785041" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-8-jorge-438510785041" target="_blank"><em>#8 here</em></a>_, and_ <a href="https://medium.com/@alephium/community-highlight-9-dzhemsh-a0a4a98a8489" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-9-dzhemsh-a0a4a98a8489" target="_blank"><em>#9 here</em></a>_._
 
-![](https://cdn-images-1.medium.com/max/800/0*S5mFbSsWdDM41nW8)
+![](image_7ec7798768.jpg)
 
 _Today’s highlight is the very definition of a globetrotter. The human equivalent of a distributed network. But this quality manifests itself beyond cheer geography. Situated somewhere at the bleeding edge where technology and media intersect, this hacker (in the original, constructive sense of the term) is active in many different open-source software projects. What is a bit extraordinary about this is that it is combined with comfort and ease within an audio-visual expression. Basically, multilingualism at its finest. It is with great pleasure that we present Lx, aka Lix, to you through this highlight._
 

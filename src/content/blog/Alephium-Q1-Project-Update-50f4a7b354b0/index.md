@@ -1,13 +1,14 @@
 ---
-title: 'Alephium — Q1 Project Update'
-
-description: 'Alephium mainnet is live and fully functional since November 8th, 2021. We are now focused on building and enriching tooling for wallets…'
-date: 2022-01-04T15:05:43.172Z
+date: 2022-01-04 15:05:43.172000+00:00
+description: Alephium mainnet is live and fully functional since November 8th, 2021.
+  We are now focused on building and enriching tooling for wallets…
+featuredImage: image_f3db5f53cd.jpeg
+title: Alephium — Q1 Project Update
 ---
 
 ### Alephium — Q1 Project Update
 
-![](https://cdn-images-1.medium.com/max/800/1*acXXT6VDrHXD7wb2KL3nSg.jpeg)
+![](image_f3db5f53cd.jpeg)
 
 <span class="graf-dropCap">A</span>lephium mainnet is live and fully functional since November 8th, 2021. We are now focused on building and enriching tooling for wallets, mining, explorer, bridges, DeFi, dApps and NFT’s, as well as expanding our community of developers, miners and users.
 

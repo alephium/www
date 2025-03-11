@@ -1,8 +1,8 @@
 ---
-title: 'Core team interview series. Episode 2'
-
-description: 'Presenting the humans behind operations, marketing and community.'
-date: 2022-03-14T12:35:58.446Z
+date: 2022-03-14 12:35:58.446000+00:00
+description: Presenting the humans behind operations, marketing and community.
+featuredImage: image_3400e7fbf9.jpg
+title: Core team interview series. Episode 2
 ---
 
 ### Core team interview series. Episode 2
@@ -11,7 +11,7 @@ date: 2022-03-14T12:35:58.446Z
 
 **This article was updated:** <a href="https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0" rel="nofollow" target="_blank">https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0</a>
 
-![](https://cdn-images-1.medium.com/max/800/0*oBoU15uuqlqFzCJt)
+![](image_3400e7fbf9.jpg)
 
 _For its team, Alephium is privileging agility and efficiency over hyper-growth. We do not stay at a human size because we think it is more efficient, but because Alephium strives to be a decentralized, community driven project. This means the project in itself is much larger than a team can ever be. Communication, trust, openness and transparency is paramount in such a set-up._
 
@@ -27,7 +27,7 @@ There’s always the need for structured operations and communications in innova
 
 ### Maud
 
-![](https://cdn-images-1.medium.com/max/800/0*HFMhxepbuxWx5OQl)
+![](image_bd4349ca03.jpg)
 
 #### How should we call you and where are you located?
 
@@ -71,7 +71,7 @@ Blockchain will transform our society in many ways. I want to actively contribut
 
 ### Philipp
 
-![](https://cdn-images-1.medium.com/max/800/0*5XTX2z2o5Uxg4Dly)
+![](image_11b59140ff.jpg)
 
 #### How should we call you and where are you located?
 
@@ -111,7 +111,7 @@ I’d say overall the most important point for me is to see Alephium achieve its
 
 ### Vlad
 
-![](https://cdn-images-1.medium.com/max/800/0*YbPo9MpL6KUrLJDN)
+![](image_b8debf7b19.jpg)
 
 #### How should we call you and where are you located?
 
@@ -147,7 +147,7 @@ I like the unbending tech ambition to bring the absolute best of crypto in all a
 
 ### Polto
 
-![](https://cdn-images-1.medium.com/max/800/0*cI1e61G6qMZE6Fr8)
+![](image_d606419b86.jpg)
 
 #### How should we call you and where are you located?
 
@@ -189,7 +189,7 @@ No bullshit!
 
 ### Set
 
-![](https://cdn-images-1.medium.com/max/800/0*RgNOkimoIuT9Atza)
+![](image_17b31410c7.jpg)
 
 #### How should we call you and where are you located?
 

@@ -1,8 +1,8 @@
 ---
-title: 'Alephium Core Contributors'
-
-description: 'Interviews of the humans behind Alephium.'
-date: 2023-09-14T09:25:46.826Z
+date: 2023-09-14 09:25:46.826000+00:00
+description: Interviews of the humans behind Alephium.
+featuredImage: image_b9dccbd4f3.jpg
+title: Alephium Core Contributors
 ---
 
 ### Alephium Core Contributors
@@ -23,7 +23,7 @@ Ep.4:_ <a href="https://medium.com/@alephium/3886003b8fef" class="markup--anchor
 
 ### Cheng
 
-![](https://cdn-images-1.medium.com/max/800/0*HGuxkVcHsK_UCkFG)
+![](image_b9dccbd4f3.jpg)
 
 #### How should we call you and where are you located?
 
@@ -64,7 +64,7 @@ To solve the scalability and security challenges of blockchain with high-quality
 
 ### Thomas
 
-![](https://cdn-images-1.medium.com/max/800/0*EXwVy2Xk6MQ7SZ5Y)
+![](image_ea5165069d.jpg)
 
 #### How should we call you and where are you located?
 
@@ -102,7 +102,7 @@ I would say our team, even though it’s a small one, everyone is where they sho
 
 ### muchen
 
-![](https://cdn-images-1.medium.com/max/800/0*ik9e5m7mcdyvr9I1)
+![](image_392bffa90f.jpg)
 
 #### How should we call you and where are you located?
 
@@ -142,7 +142,7 @@ What I care about the most is how we can attract more developers.
 
 ### h0ngcha0
 
-![](https://cdn-images-1.medium.com/max/800/0*YuytUSWkkhb4YkPB)
+![](image_107a02c806.jpg)
 
 #### How should we call you and where are you located?
 
@@ -181,7 +181,7 @@ Build alternatives in this increasingly polarizing world.
 
 ### Benoit
 
-![](https://cdn-images-1.medium.com/max/800/0*NtVJRnLrn18vIY97)
+![](image_f5baa57fc6.jpg)
 
 #### How should we call you and where are you located?
 
@@ -225,7 +225,7 @@ Blockflow technology is so simple that many other projects are asking themselves
 
 ### Simer
 
-![](https://cdn-images-1.medium.com/max/800/0*_ZORikWEYi30yIfF)
+![](image_d5c120b4bc.jpg)
 
 #### How should we call you and where are you located?
 
@@ -277,7 +277,7 @@ Database-related software development.
 
 ### Mika — UX/UI
 
-![](https://cdn-images-1.medium.com/max/800/0*HovJGhKcdl6nz3Mz.jpeg)
+![](image_44bd2b063a.jpeg)
 
 #### How should we call you and where are you located?
 
@@ -317,7 +317,7 @@ Efficiency, robustness and accessibility.
 
 ### Ilias— UX/UI
 
-![](https://cdn-images-1.medium.com/max/800/0*CPCV2WpoJK2PCB5s.jpeg)
+![](image_d729479d89.jpeg)
 
 #### How should we call you and where are you located?
 
@@ -363,7 +363,7 @@ I believe that blockchain technology has a lot to offer and that it’s here to 
 
 ### Maud-OPS
 
-![](https://cdn-images-1.medium.com/max/800/0*M_AaS4u55-rdewSQ)
+![](image_fc8bed2e31.jpg)
 
 #### How should we call you and where are you located?
 
@@ -407,7 +407,7 @@ Blockchain will transform our society in many ways. I want to actively contribut
 
 ### Philipp-OPS
 
-![](https://cdn-images-1.medium.com/max/800/0*2HFnn1Wg7TQgGdQG)
+![](image_c5c42efb29.jpg)
 
 #### How should we call you and where are you located?
 
@@ -447,7 +447,7 @@ I’d say overall the most important point for me is to see Alephium achieve its
 
 ### Vlad
 
-![](https://cdn-images-1.medium.com/max/800/0*TS6dt2cVecR-9-MZ)
+![](image_86ce429fd4.jpg)
 
 #### How should we call you and where are you located?
 
@@ -483,7 +483,7 @@ I like the unbending tech ambition to bring the absolute best of crypto in all a
 
 ### Polto
 
-![](https://cdn-images-1.medium.com/max/800/0*EE3LjbhRHjND6pzw)
+![](image_38a4756f1b.jpg)
 
 #### How should we call you and where are you located?
 
@@ -525,7 +525,7 @@ No bullshit!
 
 ### Thiago
 
-![](https://cdn-images-1.medium.com/max/800/0*4EbxUyO6-NHkl3mF)
+![](image_c1539ca78c.jpg)
 
 #### What should we call you, and where are you located?
 

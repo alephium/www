@@ -1,15 +1,16 @@
 ---
+date: 2023-07-21 14:46:38.238000+00:00
+description: Once in a while, the spotlight is put on one active member of the Alephium
+  community. This is an opportunity to showcase community members’…
+featuredImage: image_6fa7d65c34.png
 title: 'Community Highlight #11, Dr. Jekyll'
-
-description: 'Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’…'
-date: 2023-07-21T14:46:38.238Z
 ---
 
 ### Community Highlight \#11, Dr. Jekyll
 
 #### Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’ contributions to the ecosystem, what drives them, and what they are passionate about! More episodes: <a href="https://medium.com/@alephium/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" rel="noopener" target="_blank">#1 here</a>, <a href="https://medium.com/@alephium/community-highlight-cgi-bin-c102cc106f19" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-cgi-bin-c102cc106f19" rel="noopener" target="_blank">#2 here</a>, <a href="https://medium.com/@alephium/community-highlight-3-digdug-48a7ec868504" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-3-digdug-48a7ec868504" rel="noopener" target="_blank">#3 here</a>, <a href="https://medium.com/@alephium/community-highlight-4-montail-e24fd88882a0" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-4-montail-e24fd88882a0" rel="noopener" target="_blank">#4 here</a>, <a href="https://medium.com/@alephium/community-highlight-5-txn-71c4fd76ffe8" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-5-txn-71c4fd76ffe8" rel="noopener" target="_blank">#5 here</a> , <a href="https://medium.com/@alephium/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" rel="noopener" target="_blank">#6 here</a>, <a href="https://medium.com/@alephium/community-highlight-7-oheka-13d8b4ae025e" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-7-oheka-13d8b4ae025e" rel="noopener" target="_blank">#7 here</a>, <a href="https://medium.com/@alephium/community-highlight-8-jorge-438510785041" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-8-jorge-438510785041" rel="noopener" target="_blank">#8 here</a>, <a href="https://medium.com/@alephium/community-highlight-9-dzhemsh-a0a4a98a8489" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-9-dzhemsh-a0a4a98a8489" rel="noopener" target="_blank">#9 here</a>, and <a href="https://medium.com/@alephium/community-highlight-10-lx-aka-lix-fde724cf8d81" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-10-lx-aka-lix-fde724cf8d81" target="_blank">#10 here</a>.
 
-![](https://cdn-images-1.medium.com/max/800/1*9Wc2U2YcwNOFLJ3qyGhTwg.png)
+![](image_6fa7d65c34.png)
 
 #### **What can we call you, and where should we picture you?**
 

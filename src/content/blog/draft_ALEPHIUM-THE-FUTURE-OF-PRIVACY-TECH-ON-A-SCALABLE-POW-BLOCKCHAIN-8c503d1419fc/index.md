@@ -1,12 +1,14 @@
 ---
-title: 'ALEPHIUM: THE FUTURE OF PRIVACY TECH ON A SCALABLE POW BLOCKCHAIN'
+description: Alephium is a pioneer PoW L1 that scales security and programmability
+  without sacrificing decentralization to expand the possibilities for…
 draft: true
-description: 'Alephium is a pioneer PoW L1 that scales security and programmability without sacrificing decentralization to expand the possibilities for…'
+featuredImage: image_b062010da4.jpg
+title: 'ALEPHIUM: THE FUTURE OF PRIVACY TECH ON A SCALABLE POW BLOCKCHAIN'
 ---
 
 ### **ALEPHIUM: THE FUTURE OF PRIVACY TECH ON A SCALABLE POW BLOCKCHAIN**
 
-![](https://cdn-images-1.medium.com/max/800/0*XuXCifctOWpbikaI)
+![](image_b062010da4.jpg)
 
 Alephium is a pioneer PoW L1 that scales security and programmability without sacrificing decentralization to expand the possibilities for tokens, smart contracts, and dApps. Those properties, along with an engaged community, have produced a vibrant and quickly expanding ecosystem of DApps, services, tools, and builders.
 

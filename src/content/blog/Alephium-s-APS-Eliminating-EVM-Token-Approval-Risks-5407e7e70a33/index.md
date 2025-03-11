@@ -1,15 +1,16 @@
 ---
+date: 2023-06-13 12:24:16.559000+00:00
+description: This article will explore Alephium’s Asset Permission System (APS) and
+  discuss its security enhancements over the Ethereum Virtual Machine…
+featuredImage: image_d96eaacea8.png
 title: 'Alephium’s APS: Eliminating EVM Token Approval Risks'
-
-description: 'This article will explore Alephium’s Asset Permission System (APS) and discuss its security enhancements over the Ethereum Virtual Machine…'
-date: 2023-06-13T12:24:16.559Z
 ---
 
 ### Alephium’s APS: Eliminating EVM Token Approval Risks
 
 This article will explore Alephium’s Asset Permission System (APS) and discuss its security enhancements over the Ethereum Virtual Machine (EVM) token approval/allowance mechanism. APS is a flexible and secure solution for managing assets on the Alephium blockchain, providing developers with the tools they need to build robust and safe decentralized applications.
 
-![](https://cdn-images-1.medium.com/max/800/1*AS6p7OET45VdkVpOs4zRBA.png)
+![](image_d96eaacea8.png)
 
 ### TL;DR
 
@@ -20,7 +21,7 @@ This article will explore Alephium’s Asset Permission System (APS) and discuss
 
 Ethereum assets are managed by contracts. So, for example, if Uniswap wants to swap token A for token B, the token A holder should first approve its spending on token A’s contract for Uniswap, and then Uniswap will have permission to do the swapping.
 
-![](https://cdn-images-1.medium.com/max/800/1*9IVP2fWrT4BIW7wj9gPx9A.png)
+![](image_e1e1bd58a6.png)
 
 The mechanism used for this purpose is usually called Approvals, which enables token holders to authorize another account or smart contract to spend a specified amount of tokens on their behalf.
 
@@ -40,11 +41,11 @@ A TxScript (short for transaction script) is a piece of code to interact with sm
 
 For example:
 
-![](https://cdn-images-1.medium.com/max/800/1*mV2KCMA8_0_2DEbvDSAxIA.png)
+![](image_9cbcd22b8e.png)
 
 In this example, the braces explicitly define the asset approval, following the notation in the image below.
 
-![](https://cdn-images-1.medium.com/max/800/1*WCXhPHVbQ55OXPquxiXF9w.png)
+![](image_6bd3321a28.png)
 
 Using the APS, in combination with the UTXO model, all the approvals can be defined beforehand. In one transaction, **both the approval and the transfer of the assets are done** following the TxScript conditions, resulting in a **seamless and more secure User Experience.**
 

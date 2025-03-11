@@ -1,8 +1,8 @@
 ---
-title: 'Alephium — H1 Project Update'
-
-description: 'The first half of 2022 was a vigorous but exciting, fun and rewarding period for Alephium in terms of milestones and growth. Read about…'
-date: 2022-05-27T12:21:53.876Z
+date: 2022-05-27 12:21:53.876000+00:00
+description: The first half of 2022 was a vigorous but exciting, fun and rewarding
+  period for Alephium in terms of milestones and growth. Read about…
+title: Alephium — H1 Project Update
 ---
 
 ### **Alephium — H1 Project Update**

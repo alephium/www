@@ -1,15 +1,16 @@
 ---
+date: 2023-01-20 13:38:20.431000+00:00
+description: Once in a while, the spotlight is put on one active member of the Alephium
+  community. This is an opportunity to showcase community members’…
+featuredImage: image_01c7bcb80f.jpg
 title: 'Community Highlight #4, MontaiL'
-
-description: 'Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’…'
-date: 2023-01-20T13:38:20.431Z
 ---
 
 ### Community Highlight \#4, MontaiL
 
 #### Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’ contributions to the ecosystem, what drives them and what they are passionate about! More episodes: <a href="https://medium.com/@alephium/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" target="_blank"><em>#1 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-cgi-bin-c102cc106f19" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-cgi-bin-c102cc106f19" target="_blank"><em>#2 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-3-digdug-48a7ec868504" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-3-digdug-48a7ec868504" target="_blank"><em>#3 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-5-txn-71c4fd76ffe8" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-5-txn-71c4fd76ffe8" rel="noopener" target="_blank">#5 here</a> and <a href="https://medium.com/@alephium/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" rel="noopener" target="_blank">#6 here</a>.
 
-![](https://cdn-images-1.medium.com/max/800/0*0wxtK_AYay7RHQ1o)
+![](image_01c7bcb80f.jpg)
 
 **This young blood is a creative and engaged Alephium OG. Joining the** <a href="https://alephium.org/discord" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/discord" rel="noopener" target="_blank"><strong>Discord</strong></a> **early on, he quickly made himself a comfortable spot in the community with a friendly can-do attitude, a steady supply of home-cooked memes and by helping many peers getting familiar with Alephium. Please give a warm applause for MontaiL!**
 
@@ -65,7 +66,7 @@ This is complicated. First we need to understand some things: people want conven
 
 If we take for example Unity Engine which is what I use along with the VRChat SDK, players are supposed to make their own Games inside Unity using the Game’s SDK. Then they need to upload it so they can play it with their friends in the game itself. Well, while that is all good, there is an untapped market for actual ASSET/PREFAB items which could be made easier to purchase. Let’s take the Asset Stores such as <a href="https://gumroad.com/" class="markup--anchor markup--p-anchor" data-href="https://gumroad.com/" rel="noopener" target="_blank">Gumroad</a> or <a href="https://www.vrcarena.com/" class="markup--anchor markup--p-anchor" data-href="https://www.vrcarena.com/" rel="noopener" target="_blank">VRCArena</a>, which are both websites where players of VRChat can buy assets for their Avatars or their worlds including of course the <a href="https://assetstore.unity.com/" class="markup--anchor markup--p-anchor" data-href="https://assetstore.unity.com/" rel="noopener" target="_blank">Unity Asset Store</a>. The problem with most of these webstores is that they charge the creator a large fee in order to sell their prefabs there.
 
-![](https://cdn-images-1.medium.com/max/800/0*JXBHdsZCEKpKAdRi)
+![](image_180ac5adf4.jpg)
 
 So if I had to imagine an interaction between blockchain and digital worlds, I’d definitely see something like an Asset Store working with blockchain. It all comes down to the way people see things in the real world. They don’t see crypto as something that is easy to get into. So they would much rather just buy the assets off of something that offers them FIAT payments.
 

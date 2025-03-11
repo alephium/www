@@ -1,13 +1,14 @@
 ---
-title: 'Builders Uncut — Sezame Wallet'
-
-description: 'This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering…'
-date: 2024-09-06T13:28:58.200Z
+date: 2024-09-06 13:28:58.200000+00:00
+description: This interview was conducted around the Athens Builders Meetup, which
+  took place at the end of June 2024. If you’re just discovering…
+featuredImage: image_92b7859144.png
+title: Builders Uncut — Sezame Wallet
 ---
 
 ### Builders Uncut — Sezame Wallet
 
-![](https://cdn-images-1.medium.com/max/800/1*jqiLRAjKfIr4YZgHm7VvHw.png)
+![](image_92b7859144.png)
 
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
@@ -31,7 +32,7 @@ We got involved with Alephium during its testnet phase back in 2021. We were amo
 
 Our goal was to make Alephium’s technology available to a broader audience, and we were thrilled to see it scale to thousands of GPUs.
 
-![](https://cdn-images-1.medium.com/max/800/1*_qsbIRCHS7Ak9aSBLkKW7g.png)
+![](image_4d65684a66.png)
 
 #### How did your team come together, and what drew you to Alephium?
 

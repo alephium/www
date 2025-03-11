@@ -1,13 +1,14 @@
 ---
-title: 'Zealy Quests are coming!'
-
-description: 'As the community expands, and more non-tech people join us, we need different tools, and different ways of showing, exploring and…'
-date: 2023-09-04T14:43:00.172Z
+date: 2023-09-04 14:43:00.172000+00:00
+description: As the community expands, and more non-tech people join us, we need different
+  tools, and different ways of showing, exploring and…
+featuredImage: image_ad0e1b1f46.jpg
+title: Zealy Quests are coming!
 ---
 
 ### Zealy Quests are coming!
 
-![](https://cdn-images-1.medium.com/max/800/0*xMAmKdqlLUbOl1om)
+![](image_ad0e1b1f46.jpg)
 
 As the community expands, and more non-tech people join us, we need different tools, and different ways of showing, exploring and explaining what Alephium is about!
 
@@ -17,7 +18,7 @@ Do you want to test new features and be in the loop of what’s coming?
 
 Join our Zealy.io page and be on top of what is happening, while earning XP points that unlock new roles at <a href="http://alephium.org/discord" class="markup--anchor markup--p-anchor" data-href="http://alephium.org/discord" rel="noopener" target="_blank">Discord</a> and other perks that will be announced at a later point (but that are really cool!).
 
-![](https://cdn-images-1.medium.com/max/800/0*hPzzVwcFpu0J7ux5)
+![](image_4365633f7d.jpg)
 
 ### How to join?
 
@@ -43,7 +44,7 @@ Your tasks are different on each quest. Some require you to go to a website, RT 
 
 Some are daily tasks you can do every day to increase your XP count.
 
-![](https://cdn-images-1.medium.com/max/800/0*Jf8Kns838JnhNU66)
+![](image_d0ed74338c.jpg)
 
 ### XP Levels (Ranks)
 

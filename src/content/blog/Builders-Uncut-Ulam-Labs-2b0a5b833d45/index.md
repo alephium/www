@@ -1,13 +1,14 @@
 ---
-title: 'Builders Uncut — Ulam Labs'
-
-description: 'This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering…'
-date: 2024-08-23T08:05:22.102Z
+date: 2024-08-23 08:05:22.102000+00:00
+description: This interview was conducted around the Athens Builders Meetup, which
+  took place at the end of June 2024. If you’re just discovering…
+featuredImage: image_37491bdc4e.png
+title: Builders Uncut — Ulam Labs
 ---
 
 ### Builders Uncut — Ulam Labs
 
-![](https://cdn-images-1.medium.com/max/800/1*_cKXl5FviCa3y_rj4s6aOQ.png)
+![](image_37491bdc4e.png)
 
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
@@ -45,7 +46,7 @@ We built it for our client, the <a href="https://www.pact.fi/" class="markup--an
 
 #### Ulam Labs is the company built around you. Do you have co-founders and other people in the company?
 
-![](https://cdn-images-1.medium.com/max/800/1*ReEaH9cijiJBVUld4dScoA.png)
+![](image_4846cf220e.png)
 
 Yes. In our company, we mostly build software and do audits. Those are our main two things.
 
@@ -99,7 +100,7 @@ It’s a bit of a secret right now, but I’ll be building something on Alephium
 
 The people there were amazing. <a href="https://medium.com/@alephium/all-the-athens-meetup-presentations-f419195640ce" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/all-the-athens-meetup-presentations-f419195640ce" target="_blank">Meeting different builders</a> in person gave a completely different feeling. Seeing the faces behind the projects gave a different vibe than just using the app or chatting on Discord.
 
-![](https://cdn-images-1.medium.com/max/800/0*fv-Ci96YDSQxUXh8)
+![](image_08c89dce7d.jpg)
 
 #### It was special for us too. Can I ask you a last question? Your username on Discord is Carlos Matos. Can you say what inspired that choice?
 

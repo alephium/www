@@ -1,15 +1,16 @@
 ---
-title: 'NFT Marketplace v3'
-
-description: 'We launched the NFT marketplace as a prototype to show what can be done with NFTs on Alephium. We received a lot of feedback from the…'
-date: 2023-09-19T16:13:50.477Z
+date: 2023-09-19 16:13:50.477000+00:00
+description: We launched the NFT marketplace as a prototype to show what can be done
+  with NFTs on Alephium. We received a lot of feedback from the…
+featuredImage: image_c375bdf6d2.png
+title: NFT Marketplace v3
 ---
 
 ### NFT Marketplace v3
 
 #### We launched the NFT marketplace as a prototype to show what can be done with NFTs on Alephium. We received a lot of feedback from the community. With the v3 we are improving the whole experience and adding a new, exciting feature: the Flow!
 
-![](https://cdn-images-1.medium.com/max/800/1*C7nFZT29UTq7i-HTcRy37A.png)
+![](image_c375bdf6d2.png)
 
 Access it here: <a href="https://testnet.nft.alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://testnet.nft.alephium.org/" rel="noopener" target="_blank">https://testnet.nft.alephium.org/</a>
 
@@ -23,13 +24,13 @@ We call them “Flows”, creators can now create a dedicated page where users m
 
 It includes the ability to do batch minting: you can set the price and define how many NFTs can be minted at once. All public sales revenue will go to the Flow contract and only the owner can collect the fee, using the “withdraw” button.
 
-![](https://cdn-images-1.medium.com/max/800/1*uKA8WV5QEk6jnvABm8wDnA.png)
+![](image_2a7375c507.png)
 
 **How do you create a public sale collection (Flow)?** For a full breakdown of how to create a flow collection, go <a href="https://docs.alephium.org/tokens/non-fungible-tokens/#create-flows" class="markup--anchor markup--p-anchor" data-href="https://docs.alephium.org/tokens/non-fungible-tokens/#create-flows" rel="noopener" target="_blank">here</a>! You’ll even see how to generate images with AI on the fly!
 
 ### The ALEPHIUM EVERYWHERE collection
 
-![](https://cdn-images-1.medium.com/max/800/1*9IFO8Dl7SKkhiu0K_gF-hw.png)
+![](image_f360e8ef8a.png)
 
 We’ve created a special collection for you to be able to test Batch Minting for yourself.
 
@@ -51,11 +52,11 @@ Who knows, we might airdrop some real NFTs to early testers on mainnet when it�
 
 **Updated fee structure:** In v3, the commission fee is now deducted from the sale price. The listing fee is removed altogether. This transparent fee structure makes sure that sellers are always aware of the costs involved.
 
-![](https://cdn-images-1.medium.com/max/800/1*7X_TI4D3p31Z61L_fDJjzw.png)
+![](image_635ca79eb0.png)
 
 **“My Collection” tab:** A dedicated space for creators to view and manage their NFT collections. This tab makes it easy to keep track of your collections and the items within it.
 
-![](https://cdn-images-1.medium.com/max/800/0*xJ2pVvgjZdMmoo19)
+![](image_f5a0b55bae.jpg)
 
 **Many small UI improvements**: From better navigation to enhanced visuals, v2 brings a series of UI enhancements that make the platform more intuitive and enjoyable to use.
 

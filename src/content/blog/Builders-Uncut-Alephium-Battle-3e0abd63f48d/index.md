@@ -1,13 +1,14 @@
 ---
-title: 'Builders Uncut — Alephium Battle'
-
-description: 'This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering…'
-date: 2024-09-12T09:52:36.624Z
+date: 2024-09-12 09:52:36.624000+00:00
+description: This interview was conducted around the Athens Builders Meetup, which
+  took place at the end of June 2024. If you’re just discovering…
+featuredImage: image_0702b3fd18.png
+title: Builders Uncut — Alephium Battle
 ---
 
 ### Builders Uncut — Alephium Battle
 
-![](https://cdn-images-1.medium.com/max/800/1*QG5qKYBE2o0yxnei0ycVzA.png)
+![](image_0702b3fd18.png)
 
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
@@ -39,7 +40,7 @@ If you prefer reading, find the full (slightly edited) transcript below.
 
 **Eduardo:** Yeah, I’m into gaming too. I play a variety of games, including Marvel Snap and Hearthstone. I find it really interesting how games combine strategy and fun, which is something we’re trying to incorporate into our own project.
 
-![](https://cdn-images-1.medium.com/max/800/1*btlGyXoxbQ91JL5riimRbA.png)
+![](image_e93e531ac1.png)
 
 #### What inspired you to create Alephium Battle?
 
@@ -49,7 +50,7 @@ If you prefer reading, find the full (slightly edited) transcript below.
 
 **Eduardo:** Alephium Battle is a card game where you build your deck, and then it plays automatically during battles. It’s all about strategy — planning your deck and seeing how it performs in the game. It’s a pre-battle strategy game that really focuses on how well you prepare.
 
-![](https://cdn-images-1.medium.com/max/800/1*t8Y0pIMN2r5JqT3htYTHmw.png)
+![](image_af91bd9568.png)
 
 #### How did you come up with the idea for the game?
 
@@ -59,7 +60,7 @@ If you prefer reading, find the full (slightly edited) transcript below.
 
 **Eduardo:** The first tournament was great! We had 27 participants, which was a solid turnout for an early-stage game. The feedback was really positive, especially about the UI and animations. The finals and semi-finals were particularly fun, and it was awesome to see the community so engaged.
 
-![](https://cdn-images-1.medium.com/max/800/1*owmMyHRad66Em1u43qcFeQ.png)
+![](image_b8c65d9a59.png)
 
 #### What are your next steps in developing the game?
 

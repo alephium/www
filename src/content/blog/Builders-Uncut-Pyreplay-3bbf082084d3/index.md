@@ -1,13 +1,14 @@
 ---
-title: 'Builders Uncut — Pyreplay'
-
-description: 'This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering…'
-date: 2024-09-26T14:50:05.477Z
+date: 2024-09-26 14:50:05.477000+00:00
+description: This interview was conducted around the Athens Builders Meetup, which
+  took place at the end of June 2024. If you’re just discovering…
+featuredImage: image_6f76b28768.png
+title: Builders Uncut — Pyreplay
 ---
 
 ### Builders Uncut — Pyreplay
 
-![](https://cdn-images-1.medium.com/max/800/1*gqQse-lC_Ff6prB9YJ9bgA.png)
+![](image_6f76b28768.png)
 
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
@@ -35,19 +36,19 @@ I found Alephium through some friends in a crypto group who recommended it. The 
 
 Alph.Land is an aggregator for dApps built on Alephium. When you’re new to a blockchain, it can be hard to find out what projects are out there. Alph.Land solves that by providing a central hub where you can easily discover and interact with different dApps in the Alephium ecosystem.
 
-![](https://cdn-images-1.medium.com/max/800/1*YFmh0QNs0KCNSiuyzat5rw.png)
+![](image_a1a0a84a4f.png)
 
 #### Can you explain what PyrePlay is?
 
 PyrePlay is a gaming platform on the Alephium blockchain. I’ve been a gamer since I was a kid, and I wanted to bring the fun of classic arcade games to the blockchain. With PyrePlay, players can compete against each other in quick games like battleship, wagering small amounts of \$ALPH. The idea is to create an arcade hall experience, but on the blockchain.
 
-![](https://cdn-images-1.medium.com/max/800/0*FtIhkif9u55gN_DD)
+![](image_f507a6b984.jpg)
 
 #### How do NFTs fit into PyrePlay?
 
 We <a href="https://deadrare.io/collection/pyreplay-founder-cards" class="markup--anchor markup--p-anchor" data-href="https://deadrare.io/collection/pyreplay-founder-cards" rel="noopener" target="_blank">released NFTs</a> that act like founder packages. If you hold one of these NFTs, you’re basically part of the PyrePlay family. You’ll get a share of the platform fees, cheaper entry to games, and the satisfaction of knowing you’re helping to shape the development of PyrePlay.
 
-![](https://cdn-images-1.medium.com/max/800/1*bhdeV2xDnpCihDs7sDq5cQ.png)
+![](image_44140e5768.png)
 
 #### What are your plans for the future of PyrePlay?
 

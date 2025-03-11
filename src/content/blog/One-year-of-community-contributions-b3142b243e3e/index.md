@@ -1,15 +1,16 @@
 ---
-title: 'One year of community contributions'
-
-description: 'A year ago, Alephium created the community rewards and the grants programs to encourage the involvement of the community in all aspects of…'
-date: 2023-01-13T16:15:05.799Z
+date: 2023-01-13 16:15:05.799000+00:00
+description: A year ago, Alephium created the community rewards and the grants programs
+  to encourage the involvement of the community in all aspects of…
+featuredImage: image_39a9eb4f78.gif
+title: One year of community contributions
 ---
 
 ### **One year of community contributions**
 
 _A_ <a href="https://medium.com/@alephium/introducing-community-rewards-f4638bbf14bf" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/introducing-community-rewards-f4638bbf14bf" target="_blank"><em>year ago</em></a>_, Alephium created the_ <a href="https://github.com/alephium/community" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/community" rel="noopener" target="_blank"><em>community rewards</em></a> _and the_ <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" rel="noopener" target="_blank"><em>grants programs</em></a> _to encourage the involvement of the community in all aspects of the project. It is still ongoing, head over to_ <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" rel="noopener" target="_blank"><em>GitHub and apply</em></a>_!_
 
-![](https://cdn-images-1.medium.com/max/800/1*Dco0xjiSC0CYLPwNz4VXrA.gif)
+![](image_39a9eb4f78.gif)
 
 This is a retrospective of contributions by the Alephium community during 2022. Rewards and Grants have been distributed from the <a href="https://medium.com/@alephium/tokenomics-of-alephium-61d59b51029c" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/tokenomics-of-alephium-61d59b51029c" target="_blank">Ecosystem Development allocation</a> to deserving individuals & projects, many of which can be found in the <a href="https://github.com/alephium/awesome-alephium" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/awesome-alephium" rel="noopener" target="_blank">Awesome Alephium repository</a>. As it’s impossible to mention all contributions, this is not an exhaustive list!
 
@@ -17,7 +18,7 @@ Alephium is immensely grateful to the community for its efforts, big and small, 
 
 **Some Numbers**
 
-![](https://cdn-images-1.medium.com/max/800/0*-KVyHSXRalzBGPxg)
+![](image_c04e27d5b9.jpg)
 
 A total of 386’238 ALPH have been allocated for over 265 contributions as part of Alephium’s Grants & Rewards Program.
 
@@ -28,7 +29,7 @@ A total of 386’238 ALPH have been allocated for over 265 contributions as part
 
 **Fullnode and Mining**
 
-![](https://cdn-images-1.medium.com/max/800/0*IZKRaHKegShxnesC)
+![](image_ff0db11227.jpg)
 
 From simple bots, to fully-featured mobile wallet apps, via mining software and helper scripts, a great multitude of tools and apps were built in 2022!
 
@@ -44,11 +45,11 @@ Others have worked towards securing the network even more at the hardware level 
 
 While the official <a href="https://github.com/alephium/desktop-wallet" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/desktop-wallet" rel="noopener" target="_blank">Desktop Wallet</a> has been carefully packaged for <a href="https://github.com/sahharYoucef/alephium_dart" class="markup--anchor markup--p-anchor" data-href="https://github.com/sahharYoucef/alephium_dart" rel="noopener" target="_blank">Dart</a> and <a href="https://aur.archlinux.org/packages/alephium-wallet-bin/" class="markup--anchor markup--p-anchor" data-href="https://aur.archlinux.org/packages/alephium-wallet-bin/" rel="noopener" target="_blank">Arch Linux</a>, the first community project out on the Mobile wallet market has been the <a href="https://sezame.app/" class="markup--anchor markup--p-anchor" data-href="https://sezame.app/" rel="noopener" target="_blank">Sezame Wallet</a>. They built an easy-to-use cloud mining platform and a mobile wallet that were both available at the mainnet launch!
 
-![](https://cdn-images-1.medium.com/max/800/0*wORg0amKahiygOec)
+![](image_4218c834bb.jpg)
 
 In November 2022, a new community-built mobile wallet appeared! <a href="https://github.com/sahharYoucef/" class="markup--anchor markup--p-anchor" data-href="https://github.com/sahharYoucef/" rel="noopener" target="_blank">Sahhar Youcef</a> released a fantastic mobile wallet for Android. It comes packed with interesting features such as multi-signature functionalities, an address book, biometric authentication, and a discrete mode. At the time of writing, it’s already been through <a href="https://github.com/sahharYoucef/alephium_wallet/releases/latest" class="markup--anchor markup--p-anchor" data-href="https://github.com/sahharYoucef/alephium_wallet/releases/latest" rel="noopener" target="_blank">9 upgrade releases</a> and is still actively being developed (and that’s an understatement).
 
-![](https://cdn-images-1.medium.com/max/800/1*bRMZUXtG7YhYYY68dHXzJw.gif)
+![](image_fbea3cc33f.gif)
 
 By the way, Alephium’s <a href="https://medium.com/@alephium/the-front-end-leman-upgrade-948a98a3e2d" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/the-front-end-leman-upgrade-948a98a3e2d" target="_blank">new mobile wallet is coming very soon!</a>
 
@@ -58,7 +59,7 @@ Bots. The most hated yet useful tools on the Internet. The community has built <
 
 Transactions, mining stats, prices, there are all sorts of data available on bots like the Whale Watchers on <a href="https://twitter.com/AlephiumWW" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/AlephiumWW" rel="noopener" target="_blank">Twitter</a>, the Alephium Insight on <a href="https://t.me/alephiumin" class="markup--anchor markup--p-anchor" data-href="https://t.me/alephiumin" rel="noopener" target="_blank">Telegram</a>, and <a href="https://discord.gg/FWykwPPAd3" class="markup--anchor markup--p-anchor" data-href="https://discord.gg/FWykwPPAd3" rel="noopener" target="_blank">Discord</a>, thanks to the useful <a href="https://github.com/alephium/awesome-alephium#scripts" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/awesome-alephium#scripts" rel="noopener" target="_blank">utilities</a> deployed by the developers of the community. Some of them have made their first marks in the craft by building for Alephium!
 
-![](https://cdn-images-1.medium.com/max/800/0*EY616z-nOkZ4xCzO)
+![](image_9c31b0d45d.jpg)
 
 **WebApps**
 
@@ -66,21 +67,21 @@ A fantastic way to play with the data available on the chain is to produce WebAp
 
 <a href="https://github.com/WilhelmKallstrom/alph-top" class="markup--anchor markup--p-anchor" data-href="https://github.com/WilhelmKallstrom/alph-top" rel="noopener" target="_blank">AlphTop</a> is made with <a href="https://reactjs.org/" class="markup--anchor markup--p-anchor" data-href="https://reactjs.org/" rel="noopener" target="_blank">React</a> and shows the top 256 addresses on the Alephium Network, and was built on top of <a href="https://github.com/sven-hash/alephium-stats" class="markup--anchor markup--p-anchor" data-href="https://github.com/sven-hash/alephium-stats" rel="noopener" target="_blank">cgi-bin’s API</a>. Benchmark yourself, or just observe the variations in top wallets!
 
-![](https://cdn-images-1.medium.com/max/800/0*ailIwlYBY2smiKUd)
+![](image_ccaa434b82.jpg)
 
 <a href="https://github.com/WilhelmKallstrom/alphvue" class="markup--anchor markup--p-anchor" data-href="https://github.com/WilhelmKallstrom/alphvue" rel="noopener" target="_blank">Alphvue</a>: A Progressive Web App (PWA) for showing ALPH wallets’ balance, with a value displayed in FIAT, and recent transactions.
 
-![](https://cdn-images-1.medium.com/max/800/0*CGp3RttdTyIRJo59)
+![](image_177ee04ca3.jpg)
 
 <a href="https://gramswap.app/" class="markup--anchor markup--p-anchor" data-href="https://gramswap.app/" rel="noopener" target="_blank">Gramswap</a>: A WebApp allowing users to swap ALPH for a wide variety of other digital assets.
 
-![](https://cdn-images-1.medium.com/max/800/0*lbdeyhhCkVd1q8FW)
+![](image_6c5f3802da.jpg)
 
 **dApps**
 
 While the network matures, builders are building. Even if the tooling is at an early stage, a few bold and adventurous developer teams got their hands deep in the codebase.
 
-![](https://cdn-images-1.medium.com/max/800/0*RDURrcXbJWTcwGB5)
+![](image_dca2e257a2.jpg)
 
 <a href="https://xoxo.art/" class="markup--anchor markup--p-anchor" data-href="https://xoxo.art/" rel="noopener" target="_blank">XoXo</a> is one of these. It’s building an NFT platform that poetically claims to “mint emotions”. A front- and a backend are being built & tested right now.
 

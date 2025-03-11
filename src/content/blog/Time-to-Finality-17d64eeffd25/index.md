@@ -1,15 +1,15 @@
 ---
-title: 'Time to Finality'
-
-description: 'A Technical Promenade, part 3'
-date: 2022-09-20T14:05:54.857Z
+date: 2022-09-20 14:05:54.857000+00:00
+description: A Technical Promenade, part 3
+featuredImage: image_eb0fd36e6e.png
+title: Time to Finality
 ---
 
 ### Time to Finality
 
 #### A Technical Promenade, part 3
 
-![](https://cdn-images-1.medium.com/max/800/1*T7UmxG86Ia1VvW2wIQX3Qg.png)
+![](image_eb0fd36e6e.png)
 
 _This is part of a series of regular articles on key concepts for understanding_ <a href="https://alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/" rel="noopener" target="_blank"><em>Alephium</em></a> _in particular and blockchains in general. If you’re pondering on which chain to build your dApps, if you’re a curious crypto-traveler, or a fellow decentralization enthusiast, welcome!_
 

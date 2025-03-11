@@ -1,21 +1,22 @@
 ---
-title: 'All the Athens Meetup Presentations!'
-
-description: 'If you couldn’t come… Doesn’t mean you can’t see the presentations! Find them all here and watch them at your convenience.'
-date: 2024-07-12T14:48:00.732Z
+date: 2024-07-12 14:48:00.732000+00:00
+description: If you couldn’t come… Doesn’t mean you can’t see the presentations! Find
+  them all here and watch them at your convenience.
+featuredImage: image_f17ab7e96e.jpg
+title: All the Athens Meetup Presentations!
 ---
 
 ### **All the Athens Meetup Presentations!**
 
 _If you couldn’t come… Doesn’t mean you can’t see the presentations! Find them all here and watch them at your convenience._
 
-![](https://cdn-images-1.medium.com/max/800/0*QuhUbzxfHFR6dCdE)
+![](image_f17ab7e96e.jpg)
 
 Alephium’s first builders meetup was held in Athens June 21–23 2024. It has been an incredible gathering where the builders of ecosystem’s projects were able to meet & mingle with core contributors in an insightful, joyous & studious atmosphere.
 
 ### **Who Attended?**
 
-![](https://cdn-images-1.medium.com/max/800/0*XffbmGaWU4mWCeJf)
+![](image_30d61b9121.jpg)
 
 In total, more than 60 participants turned up! Some came from as far as Vancouver, Michigan, Argentina or Canada to Athens for a 2 day summit! We are absolutely humbled & elated by this level of effort and dedication.
 
@@ -178,7 +179,7 @@ _Vlad details the strategy behind Alephium’s Twitter presence, and how project
 
 ### **Our Sponsors & Supporters**
 
-![](https://cdn-images-1.medium.com/max/800/0*V3GI7y5fv9xdgIUI)
+![](image_dfcddb7631.jpg)
 
 This event wouldn’t have been possible without our incredible sponsors and supporters. We extend our deepest gratitude to:
 

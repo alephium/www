@@ -1,8 +1,9 @@
 ---
-title: 'Alephium Pushes the Boundaries of Blockchain Performance &amp; Scalability'
-
-description: 'Alephium aims to scale blockchains to handle tens of thousands of transactions per second (10,000+ TPS) in an open, permissionless network.'
-date: 2019-05-10T18:19:50.706Z
+date: 2019-05-10 18:19:50.706000+00:00
+description: Alephium aims to scale blockchains to handle tens of thousands of transactions
+  per second (10,000+ TPS) in an open, permissionless network.
+featuredImage: image_e3e79133d9.png
+title: Alephium Pushes the Boundaries of Blockchain Performance &amp; Scalability
 ---
 
 ### Alephium Pushes the Boundaries of Blockchain Performance & Scalability
@@ -13,13 +14,13 @@ When assessing the seemingly countless blockchain platforms appearing in recent 
 
 Alephium is simple, efficient, secure, and pragmatic. However, the most significant feature of Alephium is its native support for cross-shard transactions which provides a user experience similar to single-chain platforms. Alephium’s core BlockFlow algorithm follows the same minimal network assumptions as Bitcoin — an open and asynchronous network. As a permissionless and decentralized platform, everyone can contribute to Alephium’s consensus and safety.
 
-![](https://cdn-images-1.medium.com/max/800/1*SKT0MrsbSBmxhF8WiazF-g.png)
+![](image_e3e79133d9.png)
 
 **Methods of Sharding**
 
 In a single-chain structure, the hash of each block is stored in the block header of the next block. This allows the transactions of the entire network to be squeezed into a single transaction list. However, forcing the total ordering of transactions ultimately reduces the overall system throughput and increases latency.
 
-![](https://cdn-images-1.medium.com/max/800/0*Oc3nPKYp3Hc9Thi2.jpeg)
+![](image_4e6b5afe2f.jpeg)
 
 Alephium hopes to address these issues of scalability through their BlockFlow algorithm by combining sharding and DAG, which reduces the transaction load of each node significantly. In the above example with three address groups, there are nine shards in total. With BlockFlow, nodes belonging to address group B only need to download transactions from five of the nine shards. This greatly improves the scalability of the platform.
 

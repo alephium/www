@@ -1,7 +1,9 @@
 ---
-title: 'TECH TALK #2 — Explore the Mysteries of stateful UTXO: The Ultimate Guide to Alephium’s accounting…'
+description: A discussion with Cheng Wang, inventor of statefulUTXO and founder of
+  Alephium
 draft: true
-description: 'A discussion with Cheng Wang, inventor of statefulUTXO and founder of Alephium'
+title: 'TECH TALK #2 — Explore the Mysteries of stateful UTXO: The Ultimate Guide
+  to Alephium’s accounting…'
 ---
 
 ###

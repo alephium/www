@@ -1,13 +1,14 @@
 ---
-title: 'Builders Uncut — Linx Labs'
-
-description: 'This serie of interviews was conducted at the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering…'
-date: 2024-08-18T17:57:20.687Z
+date: 2024-08-18 17:57:20.687000+00:00
+description: This serie of interviews was conducted at the Athens Builders Meetup,
+  which took place at the end of June 2024. If you’re just discovering…
+featuredImage: image_29973de19f.png
+title: Builders Uncut — Linx Labs
 ---
 
 ### Builders Uncut — Linx Labs
 
-![](https://cdn-images-1.medium.com/max/800/1*MwdKGhgV4jGa2FXSty1-kQ.png)
+![](image_29973de19f.png)
 
 _This serie of interviews was conducted at the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
@@ -25,7 +26,7 @@ I’m Radu, a co-founder of Linx. We are building on Alephium. We started as a D
 
 Recently, we launched a platform called <a href="https://linxotc.com/" class="markup--anchor markup--p-anchor" data-href="https://linxotc.com/" rel="noopener" target="_blank">Linx OTC</a>, allowing users to swap tokens without a middleman. Alephium enables this unique feature, allowing OTC trades without an escrow, which is quite amazing. Next, we are working on a peer-to-peer lending platform, simplifying lending to the bare minimum. You can choose the duration of the loan, the collateral as a lender, and the interest you want to earn. It’s as simple as possible.
 
-![](https://cdn-images-1.medium.com/max/800/1*wgDXGDMkIBIpuinKW74xaw.png)
+![](image_488f40bf05.png)
 
 #### So it’s more the Aave type than the MakerDAO type, right?
 

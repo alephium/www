@@ -1,19 +1,19 @@
 ---
-title: 'Running a blockchain node on Raspberry Pi'
-
-description: 'The Decentralization bottleneck'
-date: 2021-10-14T09:59:55.248Z
+date: 2021-10-14 09:59:55.248000+00:00
+description: The Decentralization bottleneck
+featuredImage: image_e81d38ef9a.jpeg
+title: Running a blockchain node on Raspberry Pi
 ---
 
 ### Running a blockchain node on Raspberry Pi
 
-![](https://cdn-images-1.medium.com/max/800/1*JqTR2GpXT8TCugXzgKLA9w.jpeg)
+![](image_e81d38ef9a.jpeg)
 
 ### The Decentralization bottleneck
 
 Decentralization is one of the biggest promises of crypto-economics. It is the given that draws a perpendicular from the contemporary system of centralized banking. With a little skills and some hardware, anyone can participate in the maintenance of a decentralized blockchain. And we’re invited to! Effectively distributing the power of consensus across many small actors, such as you and me. However, this decentralization may exist in theory, there’s a bottleneck to it: if say, only a few united people were to actually operate a networked blockchain, it would in practice become a centralized system. This means that decentralization relies on a social factor: our willingness to participate in the maintenance of the infrastructure.
 
-![](https://cdn-images-1.medium.com/max/800/0*fQ-FcwzNoH3gmqK8)
+![](image_ac6cf4248d.jpg)
 
 When the infrastructure of a blockchain is discussed it is not uncommon that the miners and the process of mining get most of the attention. There are good reasons for that as this part of the process can potentially be lucrative. Also we often hear that the miners secure the network, which is certainly a very important function in a system proposed to uphold the exchange and transport of monetary value. There is no shortage of misunderstandings in the crypto domain and many people believe that the mining is something that is done to create money out of thin air. While it is true that mining produces “coins”, a statement like that is an exaggeration that casts a large shadow over a very important aspect of a healthy blockchain: the nodes.
 
@@ -21,7 +21,7 @@ When the infrastructure of a blockchain is discussed it is not uncommon that the
 
 A ‘full node’ is a participant on the network that has independently validated the complete copy of the blockchain, and thus has verified all transactions since the beginning. This ensures that the current state of the blockchain is the same for everyone. A very important factor, because if this copy only existed in a few participants’ computers, they could potentially coordinate illegitimate transactions. Hence the best way to ensure that this copy is the same for everyone and that no one is tampering with it, is to distribute it to as many nodes as possible.
 
-![](https://cdn-images-1.medium.com/max/800/0*XL02x5z7AWI1fvUa)
+![](image_e333b9cd50.jpg)
 
 Understanding how a blockchain works in theory is a challenge for a layman. Getting the grip on how to operate the software is another one. Some blockchains are user-friendlier than others. And many do not only require some decent terminal magic, they also rely on the possession of a potent machine to run 24/7, consuming a fair share of energy.
 

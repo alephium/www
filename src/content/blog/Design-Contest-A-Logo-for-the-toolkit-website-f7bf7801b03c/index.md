@@ -1,13 +1,13 @@
 ---
+date: 2023-09-07 12:58:47.578000+00:00
+description: Propose a design for the Alephium Toolkit website and win 1500 $ALPH!
+featuredImage: image_8d623d81d5.jpg
 title: 'Design Contest: A Logo for the toolkit website!'
-
-description: 'Propose a design for the Alephium Toolkit website and win 1500 $ALPH!'
-date: 2023-09-07T12:58:47.578Z
 ---
 
 ### **Design Contest: A Logo for the toolkit website!**
 
-![](https://cdn-images-1.medium.com/max/800/0*xle9Auau1EfqL96y)
+![](image_8d623d81d5.jpg)
 
 Propose a design for the Alephium Toolkit website and win 1500 \$ALPH!
 
