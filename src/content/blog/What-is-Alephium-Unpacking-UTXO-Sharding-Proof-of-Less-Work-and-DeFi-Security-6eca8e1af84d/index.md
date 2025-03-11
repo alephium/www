@@ -1,7 +1,8 @@
 ---
 title: 'What is Alephium? Unpacking UTXO Sharding, Proof of Less Work, and DeFi Security'
-date: '2024-11-04'
+
 description: 'Alephium attended Singapore Token 2049 and Maud was interviewed by Defiant news there. She shared a bit about Alephium’s history, the…'
+date: 2024-11-04T17:36:49.665Z
 ---
 
 ### What is Alephium? Unpacking UTXO Sharding, Proof of Less Work, and DeFi Security

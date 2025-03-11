@@ -1,7 +1,8 @@
 ---
 title: 'Alephium’s APS: Eliminating EVM Token Approval Risks'
-date: '2023-06-13'
+
 description: 'This article will explore Alephium’s Asset Permission System (APS) and discuss its security enhancements over the Ethereum Virtual Machine…'
+date: 2023-06-13T12:24:16.559Z
 ---
 
 ### Alephium’s APS: Eliminating EVM Token Approval Risks

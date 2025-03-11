@@ -1,7 +1,8 @@
 ---
 title: 'DIA VRF Oracles Now Live on Alephium'
-date: '2025-03-07'
+
 description: 'After bringing price oracles to Alephium, DIA now introduces Verifiable Random Function (VRF) oracles to the ecosystem. This integration…'
+date: 2025-03-07T14:21:31.795Z
 ---
 
 ### **DIA VRF Oracles Now Live on Alephium**

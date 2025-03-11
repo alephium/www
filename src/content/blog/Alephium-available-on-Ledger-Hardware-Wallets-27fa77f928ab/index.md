@@ -1,7 +1,8 @@
 ---
 title: 'Alephium available on Ledger Hardware Wallets'
-date: '2024-10-10'
+
 description: 'Alephium x Ledger—Alephium is thrilled to announce its integration with Ledger hardware wallets, which will give users enhanced security…'
+date: 2024-10-10T16:32:52.147Z
 ---
 
 ### **Alephium available on Ledger Hardware Wallets**

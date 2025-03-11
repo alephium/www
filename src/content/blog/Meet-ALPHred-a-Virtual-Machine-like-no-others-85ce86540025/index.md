@@ -1,7 +1,8 @@
 ---
 title: 'Meet ALPHred, a Virtual Machine like no others'
-date: '2023-01-18'
+
 description: 'This is the third of a series of technical innovations brought by Alephium. Find the previous ones here (PolW) and here (sUTXO). Here we…'
+date: 2023-01-18T14:30:50.649Z
 ---
 
 ### Meet ALPHred, a Virtual Machine like no others

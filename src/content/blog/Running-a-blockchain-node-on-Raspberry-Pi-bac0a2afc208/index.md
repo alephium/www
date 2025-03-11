@@ -1,7 +1,8 @@
 ---
 title: 'Running a blockchain node on Raspberry Pi'
-date: '2021-10-14'
+
 description: 'The Decentralization bottleneck'
+date: 2021-10-14T09:59:55.248Z
 ---
 
 ### Running a blockchain node on Raspberry Pi

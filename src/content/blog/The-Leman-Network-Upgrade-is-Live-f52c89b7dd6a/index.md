@@ -1,7 +1,8 @@
 ---
 title: 'The Leman Network Upgrade is Live!'
-date: '2023-03-30'
+
 description: 'New features & tools to support a thriving Alephium Ecosystem'
+date: 2023-03-30T13:10:04.628Z
 ---
 
 ### The Leman Network Upgrade is Live!

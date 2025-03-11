@@ -1,7 +1,8 @@
 ---
 title: 'Hashrate Series #3: CryptoHall 24'
-date: '2024-09-18'
+
 description: 'The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem…'
+date: 2024-09-18T09:07:51.547Z
 ---
 
 ### Hashrate Series \#3: CryptoHall 24

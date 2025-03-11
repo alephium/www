@@ -1,7 +1,8 @@
 ---
 title: 'Host your Alephium Node via the Flux Marketplace'
-date: '2022-11-23'
+
 description: 'Alephium’s partnership with Flux Official to support Alephium’s full node running on a web3 cloud infrastructure is another step towards…'
+date: 2022-11-23T15:42:04.309Z
 ---
 
 ### Host your Alephium Node via the Flux Marketplace

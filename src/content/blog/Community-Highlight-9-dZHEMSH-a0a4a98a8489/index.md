@@ -1,7 +1,8 @@
 ---
 title: 'Community Highlight #9, dZHEMSH'
-date: '2023-05-22'
+
 description: 'Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’…'
+date: 2023-05-22T13:06:16.351Z
 ---
 
 ### Community Highlight \#9, dZHEMSH

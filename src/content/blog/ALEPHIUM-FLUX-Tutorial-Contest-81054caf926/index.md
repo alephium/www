@@ -1,7 +1,8 @@
 ---
 title: 'ALEPHIUM/FLUX Tutorial Contest'
-date: '2022-12-01'
+
 description: 'Thanks to Flux, it is easier than ever to run an Alephium full node. But it could become even easier. All it takes is a little distribution…'
+date: 2022-12-01T14:07:11.315Z
 ---
 
 ### **ALEPHIUM/FLUX Tutorial Contest**

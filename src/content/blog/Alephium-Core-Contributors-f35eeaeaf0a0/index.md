@@ -1,7 +1,8 @@
 ---
 title: 'Alephium Core Contributors'
-date: '2023-09-14'
+
 description: 'Interviews of the humans behind Alephium.'
+date: 2023-09-14T09:25:46.826Z
 ---
 
 ### Alephium Core Contributors

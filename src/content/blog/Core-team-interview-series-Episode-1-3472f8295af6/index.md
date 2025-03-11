@@ -1,7 +1,8 @@
 ---
 title: 'Core team interview series. Episode 1'
-date: '2022-03-09'
+
 description: 'Read the first part of the core team interview series! In this edition we present to you the humans building the Front-end of Alephium.'
+date: 2022-03-09T15:36:33.257Z
 ---
 
 ### Core team interview series. Episode 1

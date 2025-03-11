@@ -1,7 +1,8 @@
 ---
 title: '✨Contest for all video creators 🚀'
-date: '2022-03-17'
+
 description: 'Prizes for a total of 10’000 ALPH 💰'
+date: 2022-03-17T09:24:59.276Z
 ---
 
 ### ✨Contest for all video creators 🚀

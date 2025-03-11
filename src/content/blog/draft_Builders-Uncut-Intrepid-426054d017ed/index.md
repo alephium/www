@@ -1,6 +1,6 @@
 ---
 title: 'Builders Uncut — Intrepid'
-date: ''
+draft: true
 description: 'This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering…'
 ---
 

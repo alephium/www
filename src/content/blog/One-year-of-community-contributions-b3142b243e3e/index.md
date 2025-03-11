@@ -1,7 +1,8 @@
 ---
 title: 'One year of community contributions'
-date: '2023-01-13'
+
 description: 'A year ago, Alephium created the community rewards and the grants programs to encourage the involvement of the community in all aspects of…'
+date: 2023-01-13T16:15:05.799Z
 ---
 
 ### **One year of community contributions**

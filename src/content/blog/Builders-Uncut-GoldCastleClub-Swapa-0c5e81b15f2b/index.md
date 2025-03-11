@@ -1,7 +1,8 @@
 ---
 title: 'Builders Uncut — GoldCastleClub &amp; Swapa'
-date: '2024-08-28'
+
 description: 'This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering…'
+date: 2024-08-28T17:07:28.868Z
 ---
 
 ### Builders Uncut — GoldCastleClub & Swapa

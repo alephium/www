@@ -1,7 +1,8 @@
 ---
 title: 'Community Highlight #4, MontaiL'
-date: '2023-01-20'
+
 description: 'Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’…'
+date: 2023-01-20T13:38:20.431Z
 ---
 
 ### Community Highlight \#4, MontaiL

@@ -1,7 +1,8 @@
 ---
 title: 'Zealy Quests are coming!'
-date: '2023-09-04'
+
 description: 'As the community expands, and more non-tech people join us, we need different tools, and different ways of showing, exploring and…'
+date: 2023-09-04T14:43:00.172Z
 ---
 
 ### Zealy Quests are coming!

@@ -1,7 +1,8 @@
 ---
 title: 'Alephium continues its engagement for decentralization and partners with the cloud-based…'
-date: '2022-11-22'
+
 description: 'Alephium, a highly performant, secure, and energy-efficient sharded blockchain network for DeFi & dApps and FluxLabs (Flux), a new…'
+date: 2022-11-22T11:12:05.457Z
 ---
 
 ### **Alephium continues its engagement for decentralization and partners with the cloud-based decentralized computational network FluxLabs (Flux)**

@@ -1,7 +1,8 @@
 ---
 title: 'Builders Highlight #7: AlphPad'
-date: '2024-02-13'
+
 description: 'Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real…'
+date: 2024-02-13T13:37:08.514Z
 ---
 
 ### Builders Highlight \#7: AlphPad

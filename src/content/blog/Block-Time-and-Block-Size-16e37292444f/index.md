@@ -1,7 +1,8 @@
 ---
 title: 'Block Time and Block Size'
-date: '2022-08-30'
+
 description: 'A Technical Promenade, part 1'
+date: 2022-08-30T12:53:03.942Z
 ---
 
 ### Block Time and Block Size

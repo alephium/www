@@ -1,7 +1,8 @@
 ---
 title: 'Builders Uncut — Linx Labs'
-date: '2024-08-18'
+
 description: 'This serie of interviews was conducted at the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering…'
+date: 2024-08-18T17:57:20.687Z
 ---
 
 ### Builders Uncut — Linx Labs

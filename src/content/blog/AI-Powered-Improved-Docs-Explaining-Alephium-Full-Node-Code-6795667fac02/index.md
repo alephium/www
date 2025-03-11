@@ -1,7 +1,8 @@
 ---
 title: 'AI-Powered Improved Docs: Explaining Alephium Full Node Code'
-date: '2023-03-31'
+
 description: 'New documentation was created with the help of Autodoc'
+date: 2023-03-31T12:54:28.661Z
 ---
 
 ### AI-Powered Improved Docs: Explaining Alephium Full Node Code

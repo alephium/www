@@ -1,7 +1,8 @@
 ---
 title: 'Community Highlight #3, digdug'
-date: '2022-12-15'
+
 description: 'Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’…'
+date: 2022-12-15T16:18:10.111Z
 ---
 
 ### Community Highlight \#3, digdug

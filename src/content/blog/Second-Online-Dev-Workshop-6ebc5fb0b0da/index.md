@@ -1,7 +1,8 @@
 ---
 title: 'Second Online Dev Workshop!'
-date: '2023-09-25'
+
 description: 'Re-implementing the friend.tech smart contract to RALPH with @h0ngcha0'
+date: 2023-09-25T16:58:22.500Z
 ---
 
 ### Second Online Dev Workshop!

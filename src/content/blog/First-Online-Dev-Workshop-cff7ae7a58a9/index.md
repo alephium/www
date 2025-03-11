@@ -1,7 +1,8 @@
 ---
 title: 'First Online Dev Workshop!'
-date: '2023-07-11'
+
 description: '“Using the SDK to write a simple dApp” with @h0ngcha0 & @polarker'
+date: 2023-07-11T15:29:33.781Z
 ---
 
 ### First Online Dev Workshop!

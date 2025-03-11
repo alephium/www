@@ -1,7 +1,8 @@
 ---
 title: '🚀 Welcome to Alephium (ALPH) !'
-date: '2022-01-10'
+
 description: 'Here’s all the information you need to get started with Alephium ! And if that’s not enough, come talk to us on Discord, Telegram or…'
+date: 2022-01-10T13:52:06.799Z
 ---
 
 ### 🚀 **Welcome to Alephium (ALPH)**

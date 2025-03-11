@@ -1,7 +1,8 @@
 ---
 title: 'Community Highlight #14, AnimalManJan'
-date: '2023-10-13'
+
 description: 'Regularly, we put the spotlight on an active member of the Alephium community. This is an opportunity to showcase their contributions to…'
+date: 2023-10-13T15:43:32.773Z
 ---
 
 ### Community Highlight \#14, AnimalManJan

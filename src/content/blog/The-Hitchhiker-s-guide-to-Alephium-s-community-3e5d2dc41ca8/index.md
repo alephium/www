@@ -1,7 +1,8 @@
 ---
 title: 'The Hitchhiker’s guide to Alephium’s community'
-date: '2023-12-29'
+
 description: 'We are thrilled to see many new faces in our community! Alephium community channels have recently grown tremendously, and we thought it…'
+date: 2023-12-29T09:40:10.375Z
 ---
 
 ### **The Hitchhiker’s guide to Alephium’s community**

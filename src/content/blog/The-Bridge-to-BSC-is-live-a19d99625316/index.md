@@ -1,7 +1,8 @@
 ---
 title: 'The Bridge to BSC is live!'
-date: '2024-11-20'
+
 description: 'Tl;dr — New bridge ALPH <> BSC / The Faucet / I’m new, coming from BSC/BNB — What do I do in $ALPH’s ecosystem? / Contracts & tokens / FAQ'
+date: 2024-11-20T16:09:04.341Z
 ---
 
 ### The Bridge to BSC is live!

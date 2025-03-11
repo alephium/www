@@ -1,7 +1,8 @@
 ---
 title: 'Community Highlight #17, AlexandrianWisdom'
-date: '2024-03-25'
+
 description: 'Regularly, we put the spotlight on an active member of the Alephium community. This is an opportunity to showcase their contributions to…'
+date: 2024-03-25T14:45:25.896Z
 ---
 
 ### **Community Highlight \#17, AlexandrianWisdom**

@@ -1,7 +1,8 @@
 ---
 title: 'Builders Highlight #11: Fugashu'
-date: '2024-04-20'
+
 description: 'Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real…'
+date: 2024-04-20T13:26:33.259Z
 ---
 
 ### Builders Highlight \#11: Fugashu

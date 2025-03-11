@@ -1,7 +1,8 @@
 ---
 title: 'Security Assessment by Inference'
-date: '2022-10-21'
+
 description: 'Alephium is committed to building and delivering a secure and reliable blockchain. With that in mind, we have recently completed a security…'
+date: 2022-10-21T08:55:23.407Z
 ---
 
 ### Security Assessment by Inference

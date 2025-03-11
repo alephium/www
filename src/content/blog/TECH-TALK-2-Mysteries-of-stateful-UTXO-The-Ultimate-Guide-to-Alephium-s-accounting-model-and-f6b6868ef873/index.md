@@ -1,7 +1,8 @@
 ---
 title: 'TECH TALK #2 — Mysteries of stateful UTXO: The Ultimate Guide to Alephium’s accounting model (and…'
-date: '2023-08-17'
+
 description: 'A discussion with Cheng Wang, inventor of stateful UTXO and founder of Alephium'
+date: 2023-08-17T14:18:41.118Z
 ---
 
 ### **TECH TALK \#2 — Mysteries of stateful UTXO: The Ultimate Guide to Alephium’s accounting model (and a little more!) — Part 2**

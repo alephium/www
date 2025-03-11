@@ -1,7 +1,8 @@
 ---
 title: 'Community Highlight #10, Lx aka Lix'
-date: '2023-06-16'
+
 description: 'Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’…'
+date: 2023-06-16T13:23:48.959Z
 ---
 
 ### Community Highlight \#10, Lx aka Lix

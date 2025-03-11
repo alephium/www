@@ -1,7 +1,8 @@
 ---
 title: 'Alephium Twitter Space — PoW and Decentralization, part I'
-date: '2023-02-08'
+
 description: 'Alephium hosted a Twitter Space on 24/01/2023 with Jordan from Nervos Network, and Cheng Wang & Hongchao Liu from Alephium to talk about…'
+date: 2023-02-08T14:13:10.553Z
 ---
 
 ### Alephium Twitter Space — PoW and Decentralization, part I

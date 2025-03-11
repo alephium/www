@@ -1,7 +1,8 @@
 ---
 title: 'Builders Highlight #9: Mobula'
-date: '2024-03-30'
+
 description: 'Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real…'
+date: 2024-03-30T16:25:24.920Z
 ---
 
 ### Builders Highlight \#9: Mobula

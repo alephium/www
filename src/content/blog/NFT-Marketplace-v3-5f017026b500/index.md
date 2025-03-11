@@ -1,7 +1,8 @@
 ---
 title: 'NFT Marketplace v3'
-date: '2023-09-19'
+
 description: 'We launched the NFT marketplace as a prototype to show what can be done with NFTs on Alephium. We received a lot of feedback from the…'
+date: 2023-09-19T16:13:50.477Z
 ---
 
 ### NFT Marketplace v3

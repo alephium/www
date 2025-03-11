@@ -1,6 +1,6 @@
 ---
 title: 'How Alephium Scales'
-date: ''
+draft: true
 description: 'Blockflow Sharding Algorithm Detailed — an interview'
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: 'Introducing Alephium'
-date: '2019-05-09'
+
 description: 'We are building the first scalable blockchain platform that supports cross-shard transactions natively'
+date: 2019-05-09T21:08:23.040Z
 ---
 
 ### **Introducing Alephium**

@@ -1,7 +1,8 @@
 ---
 title: 'DiffBomb Day Postmortem'
-date: '2022-12-21'
+
 description: 'TL;DR'
+date: 2022-12-21T14:16:06.820Z
 ---
 
 ### DiffBomb Day Postmortem

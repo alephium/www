@@ -1,7 +1,8 @@
 ---
 title: 'ALEPHIUM/FLUX Tutorial Winners'
-date: '2023-01-17'
+
 description: 'On December 1st in 2022, the community was encouraged to enter a contest to produce the best tutorial about how to run an Alephium full…'
+date: 2023-01-17T14:18:22.744Z
 ---
 
 ### ALEPHIUM/FLUX Tutorial Winners

@@ -1,6 +1,6 @@
 ---
 title: 'Token Registration on the Alephium Bridge'
-date: ''
+draft: true
 description: 'Enabling bridging for new assets from and to BNB Smart Chain testnet'
 ---
 

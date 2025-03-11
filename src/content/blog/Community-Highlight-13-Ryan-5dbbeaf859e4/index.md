@@ -1,7 +1,8 @@
 ---
 title: 'Community Highlight #13, Ryan'
-date: '2023-09-15'
+
 description: 'Regularly, we put the spotlight on an active member of the Alephium community. This is an opportunity to showcase their contributions to…'
+date: 2023-09-15T15:57:59.026Z
 ---
 
 ### Community Highlight \#13, Ryan

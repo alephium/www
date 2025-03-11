@@ -1,7 +1,8 @@
 ---
 title: 'An introduction to Blockflow: Alephium’s sharding algorithm'
-date: '2023-07-28'
+
 description: 'This is the fourth of a series of technical innovations brought by Alephium. Find the previous ones here (PolW), here (sUTXO), and here…'
+date: 2023-07-28T13:05:23.630Z
 ---
 
 ### An introduction to Blockflow: Alephium’s sharding algorithm

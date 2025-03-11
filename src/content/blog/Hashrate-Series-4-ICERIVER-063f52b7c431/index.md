@@ -1,7 +1,8 @@
 ---
 title: 'Hashrate Series #4: ICERIVER'
-date: '2024-10-06'
+
 description: 'The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem…'
+date: 2024-10-06T09:37:12.874Z
 ---
 
 ### Hashrate Series \#4: ICERIVER

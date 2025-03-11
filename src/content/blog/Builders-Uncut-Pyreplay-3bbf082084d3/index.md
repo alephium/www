@@ -1,7 +1,8 @@
 ---
 title: 'Builders Uncut — Pyreplay'
-date: '2024-09-26'
+
 description: 'This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering…'
+date: 2024-09-26T14:50:05.477Z
 ---
 
 ### Builders Uncut — Pyreplay

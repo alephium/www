@@ -1,7 +1,8 @@
 ---
 title: 'Time for an Alephium Development Recap'
-date: '2021-12-02'
+
 description: 'Alephium has made great progress lately and a lot of work has been put down on various repositories. It’s time for an update!'
+date: 2021-12-02T16:24:45.341Z
 ---
 
 ### Time for an Alephium Development Recap

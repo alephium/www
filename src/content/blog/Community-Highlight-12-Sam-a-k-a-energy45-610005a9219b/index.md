@@ -1,7 +1,8 @@
 ---
 title: 'Community Highlight #12, Sam a.k.a energy45'
-date: '2023-08-18'
+
 description: 'Regularly, we put the spotlight on an active member of the Alephium community. This is an opportunity to showcase their contributions to…'
+date: 2023-08-18T12:29:21.741Z
 ---
 
 ### Community Highlight \#12, Sam a.k.a energy45

@@ -1,7 +1,8 @@
 ---
 title: 'Alephium Multisig GUI is here!'
-date: '2023-09-01'
+
 description: 'The Alephium Toolkit: A Guide to Creating a Multisig Wallet'
+date: 2023-09-01T11:50:48.968Z
 ---
 
 ### **Alephium Multisig GUI is here!**

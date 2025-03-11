@@ -1,7 +1,8 @@
 ---
 title: 'Alephium Block Rewards'
-date: '2021-11-22'
+
 description: 'An in-depth analysis of the Block rewards, explaining the time-based and hashrate-based components of the reward emission rates.'
+date: 2021-11-22T15:06:08.158Z
 ---
 
 ### Alephium Block Rewards

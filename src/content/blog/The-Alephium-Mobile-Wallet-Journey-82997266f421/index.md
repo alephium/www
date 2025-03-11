@@ -1,7 +1,8 @@
 ---
 title: 'The Alephium Mobile Wallet Journey!'
-date: '2024-01-04'
+
 description: 'The Alephium Mobile Wallet is a great addition to the current set of wallets developed by the core contributors. It is available for…'
+date: 2024-01-04T09:34:01.540Z
 ---
 
 ### The Alephium Mobile Wallet Journey!

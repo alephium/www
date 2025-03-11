@@ -1,7 +1,8 @@
 ---
 title: 'Alephium 🤝 Ledger Nano S'
-date: '2024-10-23'
+
 description: 'How to install the Alephium App in your Ledger Nano S'
+date: 2024-10-23T08:26:59.371Z
 ---
 
 ### Alephium 🤝 Ledger Nano S

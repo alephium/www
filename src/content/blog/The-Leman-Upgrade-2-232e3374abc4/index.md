@@ -1,7 +1,8 @@
 ---
 title: 'The Leman Upgrade #2'
-date: '2022-12-20'
+
 description: 'An intermediary update on the road to the Leman Upgrade'
+date: 2022-12-20T15:47:15.162Z
 ---
 
 ### **The Leman Upgrade #2**

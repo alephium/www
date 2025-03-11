@@ -1,7 +1,8 @@
 ---
 title: 'Builders Uncut — Sezame Wallet'
-date: '2024-09-06'
+
 description: 'This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering…'
+date: 2024-09-06T13:28:58.200Z
 ---
 
 ### Builders Uncut — Sezame Wallet

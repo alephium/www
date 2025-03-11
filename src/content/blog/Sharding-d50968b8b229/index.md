@@ -1,7 +1,8 @@
 ---
 title: 'Sharding'
-date: '2023-02-22'
+
 description: 'A Technical Promenade, part 4'
+date: 2023-02-22T13:42:39.451Z
 ---
 
 ### Sharding

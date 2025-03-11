@@ -1,7 +1,8 @@
 ---
 title: 'Builders Uncut — Mobula'
-date: '2024-08-14'
+
 description: 'This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering…'
+date: 2024-08-14T15:56:46.468Z
 ---
 
 ### Builders Uncut — Mobula

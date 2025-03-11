@@ -1,7 +1,8 @@
 ---
 title: 'Alephium’s first live AMA'
-date: '2021-11-05'
+
 description: 'On November 3rd, 2021 the Alephium team answered all the questions sourced from the community. A warm thank you to everyone for asking so…'
+date: 2021-11-05T15:36:35.780Z
 ---
 
 ### Alephium’s first live AMA

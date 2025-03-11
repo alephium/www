@@ -1,7 +1,8 @@
 ---
 title: 'Builders Uncut — Alphaga'
-date: '2024-08-21'
+
 description: 'This serie of interviews was conducted at the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering…'
+date: 2024-08-21T15:05:27.459Z
 ---
 
 ### Builders Uncut — Alphaga

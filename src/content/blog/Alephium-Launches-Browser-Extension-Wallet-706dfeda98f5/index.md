@@ -1,7 +1,8 @@
 ---
 title: 'Alephium Launches Browser Extension Wallet'
-date: '2023-03-14'
+
 description: 'Download it and try the new features on Alephium Testnet!'
+date: 2023-03-14T13:59:07.975Z
 ---
 
 ### Alephium Launches Browser Extension Wallet

@@ -1,7 +1,8 @@
 ---
 title: 'Miners’ Highlight #1 — Jake aka Hiram Abiff .’.'
-date: '2024-01-11'
+
 description: 'The Alephium blockchain, like many decentralized networks, relies heavily on the contributions of miners to maintain its integrity and…'
+date: 2024-01-11T16:30:53.602Z
 ---
 
 ### Miners’ Highlight \#2 — Jake aka Hiram Abiff .’.

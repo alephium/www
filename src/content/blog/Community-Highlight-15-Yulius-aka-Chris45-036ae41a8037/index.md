@@ -1,7 +1,8 @@
 ---
 title: 'Community Highlight #15, Yulius aka Chris45'
-date: '2023-11-23'
+
 description: 'Regularly, we put the spotlight on an active member of the Alephium community. This is an opportunity to showcase their contributions to…'
+date: 2023-11-23T13:21:57.897Z
 ---
 
 ### Community Highlight \#15, Yulius aka Chris45

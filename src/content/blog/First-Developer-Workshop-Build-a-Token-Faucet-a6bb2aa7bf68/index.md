@@ -1,7 +1,8 @@
 ---
 title: 'First Developer Workshop — Build a Token Faucet'
-date: '2023-07-26'
+
 description: 'How to create a token faucet and deploy it on Alephium'
+date: 2023-07-26T14:16:32.447Z
 ---
 
 ### First Developer Workshop — Build a Token Faucet

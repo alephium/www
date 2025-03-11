@@ -1,7 +1,8 @@
 ---
 title: 'Introducing Community Rewards'
-date: '2021-12-09'
+
 description: 'It’s been a month since the Alephium mainnet launch and many positive things have been accomplished thanks to the amazing community …'
+date: 2021-12-09T14:32:39.777Z
 ---
 
 ### Introducing Community Rewards

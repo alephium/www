@@ -1,7 +1,8 @@
 ---
 title: 'Builders Uncut — Alephium Battle'
-date: '2024-09-12'
+
 description: 'This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering…'
+date: 2024-09-12T09:52:36.624Z
 ---
 
 ### Builders Uncut — Alephium Battle

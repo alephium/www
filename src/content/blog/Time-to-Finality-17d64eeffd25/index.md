@@ -1,7 +1,8 @@
 ---
 title: 'Time to Finality'
-date: '2022-09-20'
+
 description: 'A Technical Promenade, part 3'
+date: 2022-09-20T14:05:54.857Z
 ---
 
 ### Time to Finality

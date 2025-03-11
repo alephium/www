@@ -1,7 +1,8 @@
 ---
 title: 'Builders Highlight #5: Deadrare'
-date: '2023-11-03'
+
 description: 'Our ecosystem thrives with developers building amazing projects on top of Alephium delivering a unique experience and providing real…'
+date: 2023-11-03T14:03:20.452Z
 ---
 
 ### Builders Highlight \#5: Deadrare

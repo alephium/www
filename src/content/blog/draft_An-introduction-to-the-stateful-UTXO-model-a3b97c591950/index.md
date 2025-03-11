@@ -1,6 +1,6 @@
 ---
 title: 'An introduction to the stateful UTXO model'
-date: ''
+draft: true
 description: 'The stateful UTXO model (sUTXO) is one of the main innovations brought by the Alephium team, along with Proof-of-less-work (PoLW), the…'
 ---
 

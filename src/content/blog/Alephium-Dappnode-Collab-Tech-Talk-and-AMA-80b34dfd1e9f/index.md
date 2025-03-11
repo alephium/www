@@ -1,7 +1,8 @@
 ---
 title: 'Alephium &amp; Dappnode: Collab, Tech Talk, and AMA'
-date: '2022-10-28'
+
 description: 'We are really proud of Alephium’s addition as a part of Dappnode’s package offering! We share Dappnode’s commitment to a decentralized…'
+date: 2022-10-28T14:13:38.218Z
 ---
 
 ### Alephium & Dappnode: Collab, Tech Talk, and AMA

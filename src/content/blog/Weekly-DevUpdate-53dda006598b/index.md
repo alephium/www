@@ -1,7 +1,8 @@
 ---
 title: 'Weekly #DevUpdate'
-date: '2023-08-31'
+
 description: 'Week 34 Milestones & progress on dev on Alephium!'
+date: 2023-08-31T14:34:52.764Z
 ---
 
 ### Weekly \#DevUpdate

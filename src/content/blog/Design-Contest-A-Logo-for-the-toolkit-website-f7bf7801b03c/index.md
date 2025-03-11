@@ -1,7 +1,8 @@
 ---
 title: 'Design Contest: A Logo for the toolkit website!'
-date: '2023-09-07'
+
 description: 'Propose a design for the Alephium Toolkit website and win 1500 $ALPH!'
+date: 2023-09-07T12:58:47.578Z
 ---
 
 ### **Design Contest: A Logo for the toolkit website!**

@@ -1,7 +1,8 @@
 ---
 title: 'Results of the Design Contest: All Things Leman'
-date: '2023-04-14'
+
 description: 'The winning design is already featured in Alephium’s SWALPH shop!'
+date: 2023-04-14T16:37:30.059Z
 ---
 
 ### Results of the Design Contest: All Things Leman

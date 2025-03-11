@@ -1,7 +1,8 @@
 ---
 title: 'Hackathon #1- Pioneers — Submissions'
-date: '2024-03-11'
+
 description: 'After two weeks of intense coding, debugging, building & good vibes, teams or individuals have submitted their projects. While the jury is…'
+date: 2024-03-11T16:12:51.964Z
 ---
 
 ### Hackathon \#1- Pioneers — Submissions

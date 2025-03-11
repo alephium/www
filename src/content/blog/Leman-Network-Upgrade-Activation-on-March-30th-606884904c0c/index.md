@@ -1,7 +1,8 @@
 ---
 title: 'Leman Network Upgrade Activation on March 30th!'
-date: '2023-03-17'
+
 description: 'Full Node v2.0.0 released; All nodes need to update before activation'
+date: 2023-03-17T13:57:08.047Z
 ---
 
 ### Leman Network Upgrade Activation on March 30th!

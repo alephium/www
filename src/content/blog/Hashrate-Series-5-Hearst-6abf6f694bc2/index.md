@@ -1,7 +1,8 @@
 ---
 title: 'Hashrate Series #5: Hearst'
-date: '2024-10-21'
+
 description: 'The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem…'
+date: 2024-10-21T08:17:06.469Z
 ---
 
 ### Hashrate Series \#5: Hearst

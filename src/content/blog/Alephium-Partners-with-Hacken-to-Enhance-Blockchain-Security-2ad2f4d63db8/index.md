@@ -1,7 +1,8 @@
 ---
 title: 'Alephium Partners with Hacken to Enhance Blockchain Security'
-date: '2025-02-18'
+
 description: 'We are pleased to announce a strategic partnership between Alephium and Hacken, a leading cybersecurity firm specializing in blockchain and…'
+date: 2025-02-18T14:00:26.801Z
 ---
 
 ### Alephium Partners with Hacken to Enhance Blockchain Security

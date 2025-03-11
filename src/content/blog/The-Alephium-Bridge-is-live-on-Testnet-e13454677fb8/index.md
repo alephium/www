@@ -1,7 +1,8 @@
 ---
 title: 'The Alephium Bridge is live on Testnet!'
-date: '2023-05-19'
+
 description: 'Bridge assets from and to Ethereum Goerli Testnet and BNB Smart Chain Testnet'
+date: 2023-05-19T13:46:53.177Z
 ---
 
 ### The Alephium Bridge is live on Testnet!

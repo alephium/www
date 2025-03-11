@@ -1,6 +1,6 @@
 ---
 title: 'Alephium Tokenomics'
-date: ''
+draft: true
 description: 'Updated: The tokenomics were published on Oct 5, 2021. We updated this article in February of 2024 to better address the most frequently…'
 ---
 

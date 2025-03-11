@@ -1,7 +1,8 @@
 ---
 title: 'Community Highlight #7, Oheka'
-date: '2023-03-13'
+
 description: 'Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’…'
+date: 2023-03-13T15:37:46.355Z
 ---
 
 ### Community Highlight \#7, Oheka

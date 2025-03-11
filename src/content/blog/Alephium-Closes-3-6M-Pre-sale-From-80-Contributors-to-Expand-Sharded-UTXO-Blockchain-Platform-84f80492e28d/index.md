@@ -1,7 +1,8 @@
 ---
 title: 'Alephium Closes $3.6M Pre-sale From 80 Contributors to Expand Sharded UTXO Blockchain Platform'
-date: '2021-09-09'
+
 description: 'Lausanne, Switzerland, September 7th, 2021 — Alephium, a simple and efficient sharding-based blockchain, has pre-sold for over $3.6…'
+date: 2021-09-09T16:56:46.757Z
 ---
 
 ### Alephium Closes \$3.6M Pre-sale From 80 Contributors to Expand Sharded UTXO Blockchain Platform

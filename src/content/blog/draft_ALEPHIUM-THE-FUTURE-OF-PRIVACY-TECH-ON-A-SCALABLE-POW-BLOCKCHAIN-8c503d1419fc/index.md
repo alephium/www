@@ -1,6 +1,6 @@
 ---
 title: 'ALEPHIUM: THE FUTURE OF PRIVACY TECH ON A SCALABLE POW BLOCKCHAIN'
-date: ''
+draft: true
 description: 'Alephium is a pioneer PoW L1 that scales security and programmability without sacrificing decentralization to expand the possibilities for…'
 ---
 

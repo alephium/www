@@ -1,7 +1,8 @@
 ---
 title: 'Alephium’s native token ALPH on Bitmart'
-date: '2023-04-13'
+
 description: 'Trading starts on April 17th, 17:00 CEST'
+date: 2023-04-13T18:29:31.542Z
 ---
 
 ### Alephium’s native token ALPH on Bitmart

@@ -1,7 +1,8 @@
 ---
 title: 'Core team interview series. Episode 4'
-date: '2023-01-06'
+
 description: 'This article was updated: https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0'
+date: 2023-01-06T16:29:48.501Z
 ---
 
 ### Core team interview series. Episode 4

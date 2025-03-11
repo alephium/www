@@ -1,7 +1,8 @@
 ---
 title: 'Explorer Indexing Error Postmortem'
-date: '2022-01-20'
+
 description: 'What happened — Timeline of events? At 11:58 CET on January 18th, 2022, user @Kanto explained on discord that he could not deposit funds…'
+date: 2022-01-20T09:27:26.089Z
 ---
 
 ### Explorer Indexing Error Postmortem

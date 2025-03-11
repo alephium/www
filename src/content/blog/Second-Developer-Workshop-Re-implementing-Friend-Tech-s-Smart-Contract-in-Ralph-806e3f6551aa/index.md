@@ -1,7 +1,8 @@
 ---
 title: 'Second Developer Workshop: Re-implementing Friend.Tech’s Smart Contract in Ralph'
-date: '2023-11-06'
+
 description: 'Welcome to the second developer workshop! If you missed the first one, we dived into the basics of Ralph programming language, along with…'
+date: 2023-11-06T15:29:26.299Z
 ---
 
 ### Second Developer Workshop: Re-implementing Friend.Tech’s Smart Contract in Ralph

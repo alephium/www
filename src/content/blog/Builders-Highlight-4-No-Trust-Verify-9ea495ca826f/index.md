@@ -1,7 +1,8 @@
 ---
 title: 'Builders Highlight #4: No Trust Verify'
-date: '2023-09-28'
+
 description: 'Our ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience…'
+date: 2023-09-28T16:34:51.022Z
 ---
 
 ### Builders Highlight \#4: No Trust Verify

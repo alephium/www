@@ -1,7 +1,8 @@
 ---
 title: 'The Leman Network Upgrade: Time to check your Nodes!'
-date: '2023-03-01'
+
 description: 'Are you sure you have everything updated? A lot has been done since the previous announcement. Here is what you need to do!'
+date: 2023-03-01T14:54:01.680Z
 ---
 
 ### The Leman Network Upgrade: Time to check your Nodes!

@@ -1,7 +1,8 @@
 ---
 title: 'Bridge AMA — The Alephium Bridge — part 2 — The roadmap'
-date: '2023-12-26'
+
 description: 'One month after the release of the bridge on mainnet, Cheng, Hongchao & Maud were interviewed by Vladimir in a Twitter space AMA. You can…'
+date: 2023-12-26T09:55:35.249Z
 ---
 
 ### Bridge AMA — The Alephium Bridge — part 2 — The roadmap

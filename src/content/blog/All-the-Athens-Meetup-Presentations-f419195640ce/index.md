@@ -1,7 +1,8 @@
 ---
 title: 'All the Athens Meetup Presentations!'
-date: '2024-07-12'
+
 description: 'If you couldn’t come… Doesn’t mean you can’t see the presentations! Find them all here and watch them at your convenience.'
+date: 2024-07-12T14:48:00.732Z
 ---
 
 ### **All the Athens Meetup Presentations!**

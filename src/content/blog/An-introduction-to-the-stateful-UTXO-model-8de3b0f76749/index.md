@@ -1,7 +1,8 @@
 ---
 title: 'An introduction to the stateful UTXO model'
-date: '2022-11-17'
+
 description: 'Combining the expressiveness of the account model & security of the UTXO model.'
+date: 2022-11-17T17:18:14.134Z
 ---
 
 ### An introduction to the stateful UTXO model

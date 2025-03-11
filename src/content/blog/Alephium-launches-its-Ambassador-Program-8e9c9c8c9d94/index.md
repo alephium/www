@@ -1,7 +1,8 @@
 ---
 title: 'Alephium launches its Ambassador Program'
-date: '2023-12-18'
+
 description: 'Following the success of our previous community initiatives, we’re thrilled to introduce the next chapter in Alephium’s community…'
+date: 2023-12-18T16:57:35.288Z
 ---
 
 ### **Alephium launches its Ambassador Program**

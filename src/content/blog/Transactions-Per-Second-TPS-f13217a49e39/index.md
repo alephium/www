@@ -1,7 +1,8 @@
 ---
 title: 'Transactions Per Second (TPS)'
-date: '2022-09-13'
+
 description: 'A Technical Promenade, part 2'
+date: 2022-09-13T12:39:56.929Z
 ---
 
 ### Transactions Per Second (TPS)

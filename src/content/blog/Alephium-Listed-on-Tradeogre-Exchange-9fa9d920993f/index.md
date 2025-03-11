@@ -1,7 +1,8 @@
 ---
 title: 'Alephium Listed on Tradeogre Exchange'
-date: '2023-03-08'
+
 description: 'A Collective Effort by the Community'
+date: 2023-03-08T12:35:48.426Z
 ---
 
 ### Alephium Listed on Tradeogre Exchange

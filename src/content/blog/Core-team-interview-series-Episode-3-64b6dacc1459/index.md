@@ -1,7 +1,8 @@
 ---
 title: 'Core team interview series. Episode 3'
-date: '2022-03-21'
+
 description: 'Presenting the humans developing the Back-end.'
+date: 2022-03-21T16:28:48.809Z
 ---
 
 ### Core team interview series. Episode 3

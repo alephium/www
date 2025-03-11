@@ -1,7 +1,8 @@
 ---
 title: 'ONE YEAR OF MAINNET'
-date: '2022-11-09'
+
 description: 'To celebrate the first anniversary of Alephium’s mainnet launch (8th of November 2021), Alephium’s core team was asked for their insight on…'
+date: 2022-11-09T13:15:44.633Z
 ---
 
 ### ONE YEAR OF MAINNET

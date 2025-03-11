@@ -1,7 +1,8 @@
 ---
 title: 'Community Highlight #18, Mowreez'
-date: '2024-04-06'
+
 description: 'Regularly, we put the spotlight on an active member of the Alephium community. This is an opportunity to showcase their contributions to…'
+date: 2024-04-06T15:51:49.879Z
 ---
 
 ### Community Highlight \#18, Mowreez

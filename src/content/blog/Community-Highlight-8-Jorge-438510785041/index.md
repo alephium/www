@@ -1,7 +1,8 @@
 ---
 title: 'Community Highlight #8, Jorge'
-date: '2023-04-19'
+
 description: 'Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’…'
+date: 2023-04-19T13:09:21.468Z
 ---
 
 ### Community Highlight \#8, Jorge

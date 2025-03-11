@@ -1,7 +1,8 @@
 ---
 title: 'Builders Highlight #12: Linx'
-date: '2024-04-27'
+
 description: 'Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real…'
+date: 2024-04-27T16:11:20.970Z
 ---
 
 ### Builders Highlight \#12: Linx

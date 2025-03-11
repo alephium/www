@@ -1,7 +1,8 @@
 ---
 title: 'Community Highlight #16, Mikael'
-date: '2024-03-12'
+
 description: 'Regularly, we put the spotlight on an active member of the Alephium community. This is an opportunity to showcase their contributions to…'
+date: 2024-03-12T10:20:23.845Z
 ---
 
 ### Community Highlight \#16, Mikael

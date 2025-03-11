@@ -1,7 +1,8 @@
 ---
 title: 'TechTalk #11 — How to onboard the next billion people to crypto?'
-date: '2023-08-02'
+
 description: 'Mikaël Vaivre is Alephium’s lead front-end developer, and he’s been the guest of our TechTalk #11! While Mika is fairly discreet, and…'
+date: 2023-08-02T16:02:20.857Z
 ---
 
 ### TechTalk \#11 — How to onboard the next billion people to crypto?

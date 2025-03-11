@@ -1,7 +1,8 @@
 ---
 title: 'Bridge Zealy Sprint'
-date: '2023-11-29'
+
 description: 'Spread the word about the bridge & share 3’000 $ALPH in prize!'
+date: 2023-11-29T14:06:15.371Z
 ---
 
 ### **Bridge Zealy Sprint**

@@ -1,6 +1,6 @@
 ---
 title: 'TECH TALK 1 — The Ultimate guide to Proof-of-Less-Work, the universe and everything…'
-date: ''
+draft: true
 description: 'A discussion with Cheng Wang, inventor of PoLW and founder of Alephium'
 ---
 

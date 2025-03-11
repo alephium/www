@@ -1,7 +1,8 @@
 ---
 title: 'Hashrate Series #2: Goldshell'
-date: '2024-09-01'
+
 description: 'The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem…'
+date: 2024-09-01T11:16:28.900Z
 ---
 
 ### Hashrate Series \#2: Goldshell

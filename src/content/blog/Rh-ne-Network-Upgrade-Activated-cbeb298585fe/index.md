@@ -1,7 +1,8 @@
 ---
 title: 'Rhône Network Upgrade Activated!'
-date: '2024-06-12'
+
 description: 'After over one year of building and testing new features, Alephium is excited to announce that the Rhône Network Upgrade was successfully…'
+date: 2024-06-12T16:05:10.070Z
 ---
 
 ### **Rhône Network Upgrade Activated!**

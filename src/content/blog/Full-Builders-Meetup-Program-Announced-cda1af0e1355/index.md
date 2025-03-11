@@ -1,7 +1,8 @@
 ---
 title: 'Full Builders Meetup Program Announced!'
-date: '2024-06-20'
+
 description: 'As we are getting closer from the start of the first builders meetup, which will take place IRL in Athens on June 21–23, we’re very happy…'
+date: 2024-06-20T10:56:41.449Z
 ---
 
 ### **Full Builders Meetup Program Announced!**

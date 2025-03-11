@@ -1,7 +1,8 @@
 ---
 title: 'Postponing the mainnet launch'
-date: '2021-09-28'
+
 description: 'Launching a mainnet is no small task for a small team; in addition to the many technical challenges it poses, there are …'
+date: 2021-09-28T12:14:10.521Z
 ---
 
 ### Postponing the mainnet launch

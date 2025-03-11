@@ -1,7 +1,8 @@
 ---
 title: 'Builders Highlights #1: Sezame Wallet'
-date: '2023-06-23'
+
 description: 'Alephium’s ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique…'
+date: 2023-06-23T13:47:11.907Z
 ---
 
 ### Builders Highlights \#1: Sezame Wallet

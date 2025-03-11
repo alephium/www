@@ -1,7 +1,8 @@
 ---
 title: 'DEX Prototype Live on Testnet'
-date: '2023-03-21'
+
 description: 'Proof-of-Concept to showcase dApps building on Alephium'
+date: 2023-03-21T15:39:30.918Z
 ---
 
 ### DEX Prototype Live on Testnet

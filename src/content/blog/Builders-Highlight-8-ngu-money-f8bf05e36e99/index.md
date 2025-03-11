@@ -1,7 +1,8 @@
 ---
 title: 'Builders Highlight #8: ngu.money'
-date: '2024-03-01'
+
 description: 'Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real…'
+date: 2024-03-01T15:24:32.761Z
 ---
 
 ### **Builders Highlight \#8: ngu.money**

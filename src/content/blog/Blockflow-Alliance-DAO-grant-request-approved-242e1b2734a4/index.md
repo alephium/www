@@ -1,7 +1,8 @@
 ---
 title: 'Blockflow Alliance DAO grant request approved'
-date: '2023-10-09'
+
 description: 'The Blockflow Alliance, the first ever DAO for community development on Alephium, has recently been created. Its main contributors and…'
+date: 2023-10-09T16:23:10.788Z
 ---
 
 ### **Blockflow Alliance DAO grant request approved**

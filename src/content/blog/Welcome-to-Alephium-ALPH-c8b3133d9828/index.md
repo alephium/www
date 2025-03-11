@@ -1,7 +1,8 @@
 ---
 title: '🚀 Welcome to Alephium (ALPH)'
-date: '2022-08-08'
+
 description: 'Here’s all the information you need to get started with Alephium ! And if that’s not enough, check our website or come talk to us on…'
+date: 2022-08-08T13:20:13.095Z
 ---
 
 ### 🚀 Welcome to Alephium (ALPH)

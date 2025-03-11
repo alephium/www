@@ -1,7 +1,8 @@
 ---
 title: 'Design Contest: All Things Leman'
-date: '2023-03-27'
+
 description: 'The best design will be featured in Alephium’s SWALPH shop!'
+date: 2023-03-27T12:51:19.587Z
 ---
 
 ### Design Contest: All Things Leman

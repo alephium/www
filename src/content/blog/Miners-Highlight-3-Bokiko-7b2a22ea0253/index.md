@@ -1,7 +1,8 @@
 ---
 title: 'Miners’ Highlight #3: Bokiko'
-date: '2024-02-02'
+
 description: 'The Alephium blockchain, like many decentralized networks, relies heavily on the contributions of miners to maintain its integrity and…'
+date: 2024-02-02T16:21:00.513Z
 ---
 
 ### Miners’ Highlight \#3**: Bokiko**

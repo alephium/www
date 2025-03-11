@@ -1,7 +1,8 @@
 ---
 title: 'Builders Highlight #10: Amolyus'
-date: '2024-04-13'
+
 description: 'Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real…'
+date: 2024-04-13T16:03:32.024Z
 ---
 
 ### Builders Highlight \#10: Amolyus

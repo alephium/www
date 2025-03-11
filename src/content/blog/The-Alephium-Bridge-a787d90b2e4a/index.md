@@ -1,7 +1,8 @@
 ---
 title: 'The Alephium Bridge'
-date: '2023-11-09'
+
 description: 'How does it work? How to use it? About the guardians, and more…'
+date: 2023-11-09T17:01:31.560Z
 ---
 
 ### The Alephium Bridge

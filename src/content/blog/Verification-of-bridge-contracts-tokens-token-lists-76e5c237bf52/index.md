@@ -1,7 +1,8 @@
 ---
 title: 'Verification of bridge contracts, tokens &amp; token lists'
-date: '2023-11-20'
+
 description: 'Note: This article was edited on Nov 20th, 2024 — Adding information regarding Binance Smart Chain contracts'
+date: 2023-11-20T14:25:39.181Z
 ---
 
 ### **Verification of bridge contracts, tokens & token lists**

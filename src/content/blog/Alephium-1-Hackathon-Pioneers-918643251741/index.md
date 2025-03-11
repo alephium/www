@@ -1,7 +1,8 @@
 ---
 title: 'Alephium #1 Hackathon — Pioneers!'
-date: '2024-01-19'
+
 description: 'Applications are open, apply now!'
+date: 2024-01-19T14:13:31.154Z
 ---
 
 ### Alephium \#1 Hackathon — Pioneers!

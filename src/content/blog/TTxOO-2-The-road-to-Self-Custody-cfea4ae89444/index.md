@@ -1,7 +1,8 @@
 ---
 title: 'TTxOO 2 — The road to Self-Custody'
-date: '2022-08-11'
+
 description: 'Introduction'
+date: 2022-08-11T16:13:20.641Z
 ---
 
 ### TTxOO 2 — The road to Self-Custody

@@ -1,7 +1,8 @@
 ---
 title: 'The BSC/Alephium Bridge is live on Testnet!'
-date: '2024-09-03'
+
 description: 'Bridge assets from and to BNB Smart Chain Testnet'
+date: 2024-09-03T16:14:48.298Z
 ---
 
 ### The BSC/Alephium Bridge is live on Testnet!

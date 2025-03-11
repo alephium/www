@@ -1,7 +1,8 @@
 ---
 title: 'Alephium becomes a member of Bitcoin Association Switzerland.'
-date: '2021-11-24'
+
 description: 'Alephium is thrilled to join forces with the oldest Fintech association in Switzerland and one of the oldest still active Bitcoin…'
+date: 2021-11-24T14:17:40.891Z
 ---
 
 ### Alephium becomes a member of Bitcoin Association Switzerland.

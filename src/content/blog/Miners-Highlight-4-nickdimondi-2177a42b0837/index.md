@@ -1,7 +1,8 @@
 ---
 title: 'Miners’ Highlight #4: nickdimondi'
-date: '2024-03-07'
+
 description: 'The Alephium blockchain relies heavily on the contributions of miners to maintain its integrity and functionality. Recognizing the…'
+date: 2024-03-07T17:10:35.427Z
 ---
 
 ### Miners’ Highlight \#4: nickdimondi

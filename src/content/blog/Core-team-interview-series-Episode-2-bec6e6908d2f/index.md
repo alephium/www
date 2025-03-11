@@ -1,7 +1,8 @@
 ---
 title: 'Core team interview series. Episode 2'
-date: '2022-03-14'
+
 description: 'Presenting the humans behind operations, marketing and community.'
+date: 2022-03-14T12:35:58.446Z
 ---
 
 ### Core team interview series. Episode 2

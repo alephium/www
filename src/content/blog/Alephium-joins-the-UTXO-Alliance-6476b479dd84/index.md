@@ -1,7 +1,8 @@
 ---
 title: 'Alephium joins the UTXO Alliance'
-date: '2021-11-10'
+
 description: 'We live in an age of constant change and technological progress. The Blockchain industry is a great illustration of that. Blockchain is…'
+date: 2021-11-10T16:57:25.588Z
 ---
 
 ### Alephium joins the UTXO Alliance

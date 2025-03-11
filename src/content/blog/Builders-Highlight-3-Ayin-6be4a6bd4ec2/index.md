@@ -1,7 +1,8 @@
 ---
 title: 'Builders Highlight #3: Ayin'
-date: '2023-08-28'
+
 description: 'Our ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience…'
+date: 2023-08-28T15:19:59.729Z
 ---
 
 ### Builders Highlight \#3: Ayin

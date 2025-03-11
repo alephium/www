@@ -1,7 +1,8 @@
 ---
 title: 'Alephium Naming Competition'
-date: '2022-01-31'
+
 description: 'Naming can be fun, but good naming is hard. Alephium has identified three items that desperately need naming, and we’d like to ask you for…'
+date: 2022-01-31T13:28:49.350Z
 ---
 
 ### Alephium Naming Competition

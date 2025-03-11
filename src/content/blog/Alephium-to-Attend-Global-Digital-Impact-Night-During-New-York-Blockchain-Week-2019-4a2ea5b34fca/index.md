@@ -1,7 +1,8 @@
 ---
 title: 'Alephium to Attend Global Digital Impact Night During New York Blockchain Week 2019'
-date: '2019-05-10'
+
 description: 'The Alephium team will be attending the Global Digital Impact Night during New York Blockchain Week 2019.'
+date: 2019-05-10T18:23:08.630Z
 ---
 
 ### Alephium to Attend Global Digital Impact Night During New York Blockchain Week 2019

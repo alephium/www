@@ -1,7 +1,8 @@
 ---
 title: 'Hackathon winners announced!'
-date: '2024-03-22'
+
 description: 'The first Alephium Hackathon “Pioneers”, took place online between the 12th & 26th of February. After carefully reviewing all final…'
+date: 2024-03-22T16:41:54.726Z
 ---
 
 ### **Hackathon winners announced!**

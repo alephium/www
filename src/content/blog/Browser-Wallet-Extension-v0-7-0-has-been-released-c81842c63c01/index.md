@@ -1,7 +1,8 @@
 ---
 title: 'Browser Wallet Extension v0.7.0 has been released'
-date: '2023-05-16'
+
 description: 'Featuring: Ledger Integration'
+date: 2023-05-16T14:57:00.483Z
 ---
 
 ### Browser Wallet Extension v0.7.0 has been released

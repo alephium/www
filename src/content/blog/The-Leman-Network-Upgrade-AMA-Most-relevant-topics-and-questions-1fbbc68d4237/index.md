@@ -1,7 +1,8 @@
 ---
 title: 'The Leman Network Upgrade AMA: Most relevant topics and questions'
-date: '2023-01-31'
+
 description: 'The Leman Upgrade is a significant update in the main components of the Alephium blockchain. It’s been in the works since the mainnet…'
+date: 2023-01-31T15:33:07.995Z
 ---
 
 ### The Leman Network Upgrade AMA: Most relevant topics and questions

@@ -1,7 +1,8 @@
 ---
 title: 'Builders Uncut — Ulam Labs'
-date: '2024-08-23'
+
 description: 'This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering…'
+date: 2024-08-23T08:05:22.102Z
 ---
 
 ### Builders Uncut — Ulam Labs

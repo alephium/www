@@ -1,7 +1,8 @@
 ---
 title: 'Alephium Bridge: The Tutorial'
-date: '2023-11-23'
+
 description: 'How to bridge your tokens + what to do on the Alephium Ecosystem'
+date: 2023-11-23T15:31:22.684Z
 ---
 
 ### Alephium Bridge: The Tutorial

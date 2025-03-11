@@ -1,7 +1,8 @@
 ---
 title: 'Builders Highlight: Sahhar'
-date: '2023-05-26'
+
 description: 'Alephium’s ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique…'
+date: 2023-05-26T12:34:26.671Z
 ---
 
 ### Builders Highlight: Sahhar

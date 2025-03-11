@@ -1,7 +1,8 @@
 ---
 title: 'The Front End Leman Upgrade'
-date: '2022-12-22'
+
 description: 'The coming Leman upgrade approaches. Simultaneously, the front-end suite of tools is seeing more than a simple refresh.'
+date: 2022-12-22T13:31:59.903Z
 ---
 
 ### **The Front End Leman Upgrade**
