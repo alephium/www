@@ -6,7 +6,7 @@ interface PageSectionContainerProps {
 }
 
 const PageSectionContainer = styled.div<PageSectionContainerProps>`
-  max-width: ${({ narrow }) => (narrow ? '680px' : 'var(--page-width)')};
+  max-width: ${({ narrow, wide }) => (narrow ? '680px' : wide ? '100%' : 'var(--page-width)')};
   margin: 0 auto;
   padding: 0 var(--spacing-4);
   height: 100%;

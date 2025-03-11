@@ -48,6 +48,11 @@ const BlogPostTemplate = (props: PageProps<Queries.BlogPostBySlugQuery>) => {
 
           <SectionDivider />
 
+          <BackToBlog>
+            <span>← </span>
+            <StyledGatsbyLink to="/blog">Back to blog</StyledGatsbyLink>
+          </BackToBlog>
+
           <SubpageSection narrow>
             <article itemScope itemType="http://schema.org/Article">
               <TextElement isSmall dangerouslySetInnerHTML={{ __html: post?.html || '' }} itemProp="articleBody" />
@@ -144,4 +149,9 @@ export const pageQuery = graphql`
 
 const StyledGatsbyLink = styled(Link)`
   color: ${({ theme }) => theme.link};
+`
+
+const BackToBlog = styled.div`
+  margin-top: var(--spacing-4);
+  margin-left: var(--spacing-4);
 `

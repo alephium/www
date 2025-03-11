@@ -7,12 +7,19 @@ interface SubpageSectionProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode
   Parallax?: ReactNode
   fullWidth?: boolean
+  wide?: boolean
   narrow?: boolean
 }
 
-const SubpageSection = ({ children, Parallax, fullWidth, narrow, ...props }: SubpageSectionProps) => (
+const SubpageSection = ({ children, Parallax, fullWidth, wide, narrow, ...props }: SubpageSectionProps) => (
   <SubpageSectionStyled {...props}>
-    {fullWidth ? children : <PageSectionContainer narrow={narrow}>{children}</PageSectionContainer>}
+    {fullWidth ? (
+      children
+    ) : (
+      <PageSectionContainer narrow={narrow} wide={wide}>
+        {children}
+      </PageSectionContainer>
+    )}
     {Parallax}
   </SubpageSectionStyled>
 )

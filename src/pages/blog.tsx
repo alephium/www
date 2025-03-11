@@ -58,8 +58,8 @@ const CustomPage = (props: PageProps) => {
 
           <SectionDivider />
 
-          <SubpageSection>
-            <Grid columns={1} gap="small">
+          <SubpageSection wide>
+            <Grid columns={3} gap="small">
               {posts.slice(0, visiblePosts).map((post) => (
                 <TextCardStyled key={post.fields?.slug} url={post.fields?.slug ?? ''}>
                   <TextElement>
@@ -129,9 +129,9 @@ const TextCardStyled = styled(TextCard)`
   gap: var(--spacing-4);
   justify-content: space-between;
 
-  @media ${deviceBreakPoints.mobile} {
-    flex-direction: column-reverse;
-  }
+  /* @media ${deviceBreakPoints.mobile} { */
+  flex-direction: column-reverse;
+  /* } */
 `
 
 const LoadMoreContainer = styled.div`
