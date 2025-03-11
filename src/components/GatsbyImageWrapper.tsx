@@ -17,12 +17,11 @@ const GatsbyImageWrapper: React.FC<GatsbyImageWrapperProps> = ({ image, alt = ''
   )
 }
 
+// This is a hack because I can't figure out why the following styles are applied in dev mode but not in production
 const StyledGatsbyImage = styled.div`
-  /* Ensure wrapper takes full size */
   width: 100%;
   height: 100%;
 
-  /* Enforce necessary styles that might be missing in production */
   .gatsby-image-wrapper {
     width: 100%;
     height: 100%;
@@ -42,6 +41,7 @@ const StyledGatsbyImage = styled.div`
     top: 0;
     width: 100%;
     object-fit: cover;
+    opacity: 1 !important;
   }
 `
 
