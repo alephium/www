@@ -9,6 +9,7 @@ import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextCard from '../components/customPageComponents/TextCard'
 import TextElement from '../components/customPageComponents/TextElement'
 import SectionDivider from '../components/SectionDivider'
+import { deviceBreakPoints } from '../styles/global-style'
 
 const CustomPage = (props: PageProps) => {
   const data = useStaticQuery<Queries.BlogPostsQuery>(query)
@@ -21,13 +22,14 @@ const CustomPage = (props: PageProps) => {
       content={
         <>
           <SubpageHeroSection>
-            <h1>Blog</h1>
+            <h1>Alephium blog</h1>
+            <p>News, updates, and insights from the Alephium ecosystem.</p>
           </SubpageHeroSection>
 
           <SectionDivider />
 
           <SubpageSection>
-            <Grid columns={1}>
+            <Grid columns={1} gap="small">
               {posts.map((post) => (
                 <TextCardStyled key={post.fields?.slug} url={post.fields?.slug ?? ''}>
                   <TextElement>
@@ -83,4 +85,8 @@ const TextCardStyled = styled(TextCard)`
   display: flex;
   gap: var(--spacing-4);
   justify-content: space-between;
+
+  @media ${deviceBreakPoints.mobile} {
+    flex-direction: column-reverse;
+  }
 `
