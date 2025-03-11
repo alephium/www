@@ -1,5 +1,5 @@
 import { graphql, PageProps, useStaticQuery } from 'gatsby'
-import { useEffect, useRef, useState } from 'react'
+import { useState } from 'react'
 import styled from 'styled-components'
 
 import Grid from '../components/customPageComponents/Grid'
@@ -9,42 +9,21 @@ import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextCard from '../components/customPageComponents/TextCard'
 import TextElement from '../components/customPageComponents/TextElement'
 import ResponsiveImage from '../components/ResponsiveImage'
+import Search from '../components/Search'
 import SectionDivider from '../components/SectionDivider'
-import { deviceBreakPoints } from '../styles/global-style'
-
-const POSTS_PER_PAGE = 10
 
 const CustomPage = (props: PageProps) => {
   const data = useStaticQuery<Queries.BlogPostsQuery>(query)
-  const [visiblePosts, setVisiblePosts] = useState<number>(POSTS_PER_PAGE)
-  const loadMoreRef = useRef<HTMLDivElement>(null)
+  const [searchQuery, setSearchQuery] = useState('')
 
   const posts = data.allMarkdownRemark.nodes
-  const hasMorePosts = visiblePosts < posts.length
+  const filteredPosts = posts.filter((post) => {
+    const title = post.frontmatter?.title?.toLowerCase() || ''
+    const description = post.frontmatter?.description?.toLowerCase() || ''
+    const query = searchQuery.toLowerCase()
 
-  // Set up intersection observer for infinite scrolling
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const [entry] = entries
-        if (entry.isIntersecting && hasMorePosts) {
-          setVisiblePosts((prevVisiblePosts) => prevVisiblePosts + POSTS_PER_PAGE)
-        }
-      },
-      { rootMargin: '100px' }
-    )
-
-    const currentRef = loadMoreRef.current
-    if (currentRef) {
-      observer.observe(currentRef)
-    }
-
-    return () => {
-      if (currentRef) {
-        observer.unobserve(currentRef)
-      }
-    }
-  }, [hasMorePosts])
+    return title.includes(query) || description.includes(query)
+  })
 
   return (
     <Page
@@ -59,30 +38,36 @@ const CustomPage = (props: PageProps) => {
           <SectionDivider />
 
           <SubpageSection wide>
-            <Grid columns={3} gap="small">
-              {posts.slice(0, visiblePosts).map((post) => (
-                <TextCardStyled key={post.fields?.slug} url={post.fields?.slug ?? ''}>
-                  <TextElement>
-                    <h3>{post.frontmatter?.title}</h3>
-                    <p>{post.frontmatter?.description}</p>
-                  </TextElement>
-                  {post.frontmatter?.featuredImage && post.frontmatter?.featuredImage?.childImageSharp && (
-                    <ImageContainer>
-                      <ResponsiveImage
-                        image={{
-                          altText: post.frontmatter?.title ?? '',
-                          src: post.frontmatter?.featuredImage
-                        }}
-                      />
-                    </ImageContainer>
-                  )}
-                </TextCardStyled>
-              ))}
-            </Grid>
-            {hasMorePosts && (
-              <LoadMoreContainer ref={loadMoreRef}>
-                <LoadingIndicator>Loading more posts...</LoadingIndicator>
-              </LoadMoreContainer>
+            <SearchContainer>
+              <Search value={searchQuery} onChange={setSearchQuery} placeholder="Search articles..." />
+            </SearchContainer>
+
+            {filteredPosts.length === 0 ? (
+              <NoResults>
+                <h3>No articles found</h3>
+                <p>Try adjusting your search query</p>
+              </NoResults>
+            ) : (
+              <Grid columns={3} gap="small">
+                {filteredPosts.map((post) => (
+                  <TextCardStyled key={post.fields?.slug} url={post.fields?.slug ?? ''}>
+                    <TextElement>
+                      <h3>{post.frontmatter?.title}</h3>
+                      <p>{post.frontmatter?.description}</p>
+                    </TextElement>
+                    {post.frontmatter?.featuredImage && post.frontmatter?.featuredImage?.childImageSharp && (
+                      <ImageContainer>
+                        <ResponsiveImage
+                          image={{
+                            altText: post.frontmatter?.title ?? '',
+                            src: post.frontmatter?.featuredImage
+                          }}
+                        />
+                      </ImageContainer>
+                    )}
+                  </TextCardStyled>
+                ))}
+              </Grid>
             )}
           </SubpageSection>
         </>
@@ -90,6 +75,7 @@ const CustomPage = (props: PageProps) => {
     />
   )
 }
+
 export default CustomPage
 
 export const query = graphql`
@@ -128,22 +114,7 @@ const TextCardStyled = styled(TextCard)`
   display: flex;
   gap: var(--spacing-4);
   justify-content: space-between;
-
-  /* @media ${deviceBreakPoints.mobile} { */
   flex-direction: column-reverse;
-  /* } */
-`
-
-const LoadMoreContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-top: var(--spacing-8);
-  padding: var(--spacing-4) 0;
-`
-
-const LoadingIndicator = styled.div`
-  color: var(--color-text-secondary);
-  font-size: 1rem;
 `
 
 const ImageContainer = styled.div`
@@ -151,4 +122,18 @@ const ImageContainer = styled.div`
   width: 300px;
   max-height: 150px;
   position: relative;
+`
+
+const SearchContainer = styled.div`
+  margin-bottom: var(--spacing-8);
+`
+
+const NoResults = styled.div`
+  text-align: center;
+  padding: var(--spacing-12) 0;
+  color: ${({ theme }) => theme.textSecondary};
+
+  h3 {
+    margin-bottom: var(--spacing-4);
+  }
 `
