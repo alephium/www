@@ -6,7 +6,7 @@ import SubpageHeroSection from '../components/customPageComponents/SubpageHeroSe
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import SectionDivider from '../components/SectionDivider'
-// import Image from 'gatsby-image'
+import styled from 'styled-components'
 
 const BlogPostTemplate = (props: PageProps<Queries.BlogPostBySlugQuery>) => {
   const post = props.data.markdownRemark
@@ -20,7 +20,7 @@ const BlogPostTemplate = (props: PageProps<Queries.BlogPostBySlugQuery>) => {
     <div>
       {post?.frontmatter?.date && <time dateTime={post.frontmatter.date}>{post.frontmatter.date}</time>}
       <span> · </span>
-      {/* <span>{post.fields.readingTime.text}</span> */}
+      <span>{post?.timeToRead} min read</span>
     </div>
   )
 
@@ -52,7 +52,7 @@ const BlogPostTemplate = (props: PageProps<Queries.BlogPostBySlugQuery>) => {
             </article>
           </SubpageSection>
 
-          <hr />
+          <SectionDivider />
 
           <SubpageSection>
             <nav className="blog-post-nav">
@@ -67,16 +67,22 @@ const BlogPostTemplate = (props: PageProps<Queries.BlogPostBySlugQuery>) => {
               >
                 <li>
                   {previous && (
-                    <Link to={previous.fields?.slug ?? ''} rel="prev">
-                      {previous.frontmatter?.title}
-                    </Link>
+                    <>
+                      <span>← </span>
+                      <StyledGatsbyLink to={previous.fields?.slug ?? ''} rel="prev">
+                        {previous.frontmatter?.title}
+                      </StyledGatsbyLink>
+                    </>
                   )}
                 </li>
                 <li>
                   {next && (
-                    <Link to={next.fields?.slug ?? ''} rel="next">
-                      {next.frontmatter?.title}
-                    </Link>
+                    <>
+                      <StyledGatsbyLink to={next.fields?.slug ?? ''} rel="next">
+                        {next.frontmatter?.title}
+                      </StyledGatsbyLink>
+                      <span> →</span>
+                    </>
                   )}
                 </li>
               </ul>
@@ -95,12 +101,8 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       id
       excerpt(pruneLength: 160)
+      timeToRead
       html
-      # fields {
-      #   readingTime {
-      #     text
-      #   }
-      # }
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
@@ -141,4 +143,8 @@ export const pageQuery = graphql`
       }
     }
   }
+`
+
+const StyledGatsbyLink = styled(Link)`
+  color: ${({ theme }) => theme.link};
 `

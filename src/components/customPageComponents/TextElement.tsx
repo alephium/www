@@ -59,7 +59,7 @@ const TextElement = styled.div<TextElementProps>`
       `}
   }
 
-  > p,
+  p,
   ul {
     color: var(--color-grey-250);
 
@@ -81,9 +81,10 @@ const TextElement = styled.div<TextElementProps>`
   }
 
   /* Links inside paragraphs, lists, etc. */
-  > p,
+  p,
   li,
-  ul {
+  ul,
+  em {
     > a {
       color: ${({ theme }) => theme.link};
     }
