@@ -2,7 +2,7 @@
 date: 2024-09-18 09:07:51.547000+00:00
 description: The blockchain hashrate is directly correlated with network security.
   As a Proof-of-work blockchain, Alephium relies on active ecosystem…
-featuredImage: image_7281b3fba5.png
+featuredImage: image_9fb00a1330.png
 title: 'Hashrate Series #3: CryptoHall 24'
 ---
 
@@ -10,7 +10,7 @@ title: 'Hashrate Series #3: CryptoHall 24'
 
 _The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem actors to sustain and improve Alephium’s reliability. This series is about them, and after_ <a href="https://medium.com/@alephium/hashrate-series-1-nicehash-ee0936adf899" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/hashrate-series-1-nicehash-ee0936adf899" target="_blank"><em>Nicehash</em></a> _and_ <a href="https://medium.com/@alephium/hashrate-series-2-goldshell-93cc51a86640" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/hashrate-series-2-goldshell-93cc51a86640" target="_blank"><em>Goldshell</em></a>_, please welcome CryptoHall 24._
 
-![](image_7281b3fba5.png)
+![](image_9fb00a1330.png)
 
 Here, Frederick shares his crypto journey, and how CryptoHall24 came to be. Here’s the full video interview. If you prefer reading, find the full (slightly edited) transcript below.
 
@@ -40,13 +40,13 @@ Yes, correct. The project was mainly developed during the COVID pandemic, but it
 
 It all started with building GPU mining rigs for myself, then for friends and family. Eventually, it escalated, and I founded CryptoHall 24. Now, we are a significant player in the retail mining business.
 
-![](image_92790459e3.png)
+![](image_78221fb78b.png)
 
 #### That’s impressive. Many people dabble in mining but stop there. You’ve managed to turn it into a thriving business. So, to clarify, your main activities are selling miners, hosting miners, and servicing miners, correct?
 
 Yes, that’s right. We also provide consulting services. One of our key strengths is offering detailed consultations, which sets us apart from other companies. We want to ensure our customers are profitable because our business depends on their success.
 
-![](image_9f71a17b4d.png)
+![](image_8666824cb2.png)
 
 #### Most people have little knowledge of the crypto mining industry. How big is the industry in Europe, and how does it compare to other regions?
 
@@ -96,7 +96,7 @@ Europe presents some unique challenges, particularly with regard to high energy 
 
 Energy consumption is a significant concern, especially in regions like Europe where energy prices are high and environmental regulations are strict. At CryptoHall 24, we are committed to promoting sustainable mining practices. This includes optimizing the efficiency of our hardware, exploring renewable energy sources for our hosting services, and educating our clients on how to minimize their environmental impact. We believe that as the industry evolves, there will be more opportunities to adopt greener technologies and practices that can help mitigate the environmental impact of mining.
 
-![](image_049b60cd73.png)
+![](image_82e0b4ef39.png)
 
 #### What’s your favorite part of the job?
 

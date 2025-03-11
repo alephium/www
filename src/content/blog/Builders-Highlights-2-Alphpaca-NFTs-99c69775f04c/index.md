@@ -2,13 +2,13 @@
 date: 2023-07-25 15:42:41.058000+00:00
 description: Alephium’s ecosystem thrives with developers building amazing stuff on
   top of Alephium (services, dApps, etc…) that deliver a unique…
-featuredImage: image_4a389c3b68.jpg
+featuredImage: image_9aa99da3ce.jpg
 title: 'Builders Highlights #2: Alphpaca NFTs'
 ---
 
 ### Builders Highlights \#2: Alphpaca NFTs
 
-![](image_4a389c3b68.jpg)
+![](image_9aa99da3ce.jpg)
 
 _Alephium’s ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience and provide real utility for the users. In the Builders Highlight series, these builders will share more about their projects, thoughts, and insights on why building on Alephium!_
 
@@ -24,7 +24,7 @@ Alephium users who decide to mint an ALPHpaca can look forward to some utility. 
 
 It is my promise to ALPHpaca holders to do everything my mind can comprehend to help make ALPHpacas a truly unique project, and once ALPHpacas are minted, there will be no add-on purchases to receive more from them. This is the way.
 
-![](image_4af7569ab1.jpg)
+![](image_f43a0567ee.jpg)
 
 #### What motivated you to develop on Alephium blockchain, and what set it apart from other blockchain platforms?
 
@@ -40,7 +40,7 @@ I so far have taken bits and pieces from multiple Alephium repos; while I’m st
 
 In any tech stack, if the documentation is good and the product works well, I’m in. If the documentation is not understandable or executable by a typical computer user, it needs to be simplified. While the devs are working hard towards the bridge, I am working towards updating these docs in my repos and creating applications for anyone to use.
 
-![](image_93ee3fa331.jpg)
+![](image_92539f7304.jpg)
 
 #### What features are you most proud of?
 
@@ -56,7 +56,7 @@ I suspect there will be some very big challenges in the near future, but in my e
 
 The current cycle involves swapping between the ALPH contract stack and making art/node mechanics. In this sense, it’s good to have side projects as long as you are still getting tasks done.
 
-![](image_269592ea2d.jpg)
+![](image_8055e6e707.jpg)
 
 #### What has been the most rewarding part of developing your project, and why?
 

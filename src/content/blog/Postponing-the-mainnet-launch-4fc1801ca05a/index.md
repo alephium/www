@@ -2,13 +2,13 @@
 date: 2021-09-28 12:14:10.521000+00:00
 description: Launching a mainnet is no small task for a small team; in addition to
   the many technical challenges it poses, there are …
-featuredImage: image_d86f14119e.jpeg
+featuredImage: image_ff0fc54346.jpeg
 title: Postponing the mainnet launch
 ---
 
 ### Postponing the mainnet launch
 
-![](image_d86f14119e.jpeg)
+![](image_ff0fc54346.jpeg)
 
 #### Launching a mainnet is no small task for a small team; in addition to the many technical challenges it poses, there are a lot of non-technical topics to be addressed.
 

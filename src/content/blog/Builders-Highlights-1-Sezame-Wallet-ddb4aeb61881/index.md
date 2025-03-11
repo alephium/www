@@ -2,7 +2,7 @@
 date: 2023-06-23 13:47:11.907000+00:00
 description: Alephium’s ecosystem thrives with developers building amazing stuff on
   top of Alephium (services, dApps, etc…) that deliver a unique…
-featuredImage: image_0871e913f1.png
+featuredImage: image_e2c600aac0.png
 title: 'Builders Highlights #1: Sezame Wallet'
 ---
 
@@ -14,7 +14,7 @@ _Disclaimer: While Alephium is happy to support a growing developer community, i
 
 The second builder in the series is the <a href="https://twitter.com/SesameWallet" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/SesameWallet" rel="noopener" target="_blank">Sezame team</a>, the developers behind the <a href="https://sezame.app/" class="markup--anchor markup--p-anchor" data-href="https://sezame.app/" rel="noopener" target="_blank">Sezame mobile wallet</a>, available on the <a href="https://play.google.com/store/apps/details?id=org.maze2.sezamewallet" class="markup--anchor markup--p-anchor" data-href="https://play.google.com/store/apps/details?id=org.maze2.sezamewallet" rel="noopener" target="_blank">Google Play store</a> and <a href="https://apps.apple.com/us/app/sezame-wallet/id1618252953" class="markup--anchor markup--p-anchor" data-href="https://apps.apple.com/us/app/sezame-wallet/id1618252953" rel="noopener" target="_blank">App Store</a>:
 
-![](image_0871e913f1.png)
+![](image_e2c600aac0.png)
 
 ### Tell us a little bit about your project. What is it, what does it, and how does it interact with the Alephium blockchain?
 

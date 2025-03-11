@@ -2,13 +2,13 @@
 description: 'Updated: The tokenomics were published on Oct 5, 2021. We updated this
   article in February of 2024 to better address the most frequently…'
 draft: true
-featuredImage: image_3a08a96bd8.jpg
+featuredImage: image_71eaa07df3.jpg
 title: Alephium Tokenomics
 ---
 
 ### **Alephium Tokenomics**
 
-![](image_3a08a96bd8.jpg)
+![](image_71eaa07df3.jpg)
 
 _Updated: The tokenomics were published on Oct 5, 2021. We updated this article in February of 2024 to better address the most frequently asked questions._
 
@@ -63,7 +63,7 @@ _Please note that according to CoinmarketCap’s official methodology, Ecosystem
 
 Three sales events were held for ALPH: seed sale, <a href="https://medium.com/@alephium/alephium-closes-3-6m-pre-sale-from-80-contributors-to-expand-sharded-utxo-blockchain-platform-84f80492e28d" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/alephium-closes-3-6m-pre-sale-from-80-contributors-to-expand-sharded-utxo-blockchain-platform-84f80492e28d" target="_blank">pre-sale</a>, and <a href="https://medium.com/@alephium/alephium-partners-with-cetacean-capital-83cf2fbea8a1" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/alephium-partners-with-cetacean-capital-83cf2fbea8a1" target="_blank">private sale</a>. A total of 62,951,077 ALPH were sold and locked for periods varying between 2 to 4 years. The unlock schedule is detailed below.
 
-![](image_5bbc08060d.png)
+![](image_1d52ed10a4.png)
 
 ![](image_d96684dace.png)
 
@@ -73,7 +73,7 @@ The remaining 17,048,943 ALPH will be used to secure funds to ensure the long-te
 
 The ALPH allocated to the **Ecosystem** and for the **Treasury** follow this unlock schedule:
 
-![](image_31b2e22688.jpg)
+![](image_aad4b96f5b.jpg)
 
 ### FAQ
 

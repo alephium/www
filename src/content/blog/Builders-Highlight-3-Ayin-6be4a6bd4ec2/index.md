@@ -2,13 +2,13 @@
 date: 2023-08-28 15:19:59.729000+00:00
 description: Our ecosystem thrives with developers building amazing stuff on top of
   Alephium (services, dApps, etc…) that deliver a unique experience…
-featuredImage: image_fe11ea00e8.jpeg
+featuredImage: image_c5a50dcd6b.jpeg
 title: 'Builders Highlight #3: Ayin'
 ---
 
 ### Builders Highlight \#3: Ayin
 
-![](image_fe11ea00e8.jpeg)
+![](image_c5a50dcd6b.jpeg)
 
 _Our ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience and provide real utility for the users. In the Builders Highlight series, these builders will share more about their projects, thoughts, and insights on why building on Alephium! You can find_ <a href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" target="_blank"><em>#1 here</em></a> _and_ <a href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" target="_blank"><em>#2 here</em></a>_._
 
@@ -16,7 +16,7 @@ This episode is about <a href="http://ayin.app" class="markup--anchor markup--p-
 
 ### **Tell us a little bit about your project. What is it, what does it do, and how does it interact with the Alephium blockchain?**
 
-![](image_f03e759508.png)
+![](image_b7debe4600.png)
 
 Our project is a <a href="https://www.ayin.app/" class="markup--anchor markup--p-anchor" data-href="https://www.ayin.app/" rel="noopener" target="_blank">DEX</a>. It allows users to trade anything people list as a pair on it, and also the tokens we approve if they are on Alephium L1.
 
@@ -56,7 +56,7 @@ It is xAYIN, the staked version of AYIN.
 
 “0dd” wrote that one from scratch, and it’s basically a wrapped \$AYIN that accumulates more AYINs from the trading fees on the dex as well as additional tokens from the reward contract. So single staking, in other words, but with a real fee element. Utility!
 
-![](image_de9904fa11.png)
+![](image_7f83206a7f.png)
 
 ### Could you tell us about some of the challenges you faced while building, and how you overcame them?
 

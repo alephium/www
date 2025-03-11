@@ -2,7 +2,7 @@
 date: 2023-01-18 14:30:50.649000+00:00
 description: This is the third of a series of technical innovations brought by Alephium.
   Find the previous ones here (PolW) and here (sUTXO). Here we…
-featuredImage: image_5d9c7af2e9.jpeg
+featuredImage: image_de012354c9.jpeg
 title: Meet ALPHred, a Virtual Machine like no others
 ---
 
@@ -10,7 +10,7 @@ title: Meet ALPHred, a Virtual Machine like no others
 
 _This is the third of a series of technical innovations brought by Alephium. Find the previous ones_ <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" target="_blank"><em>here</em></a> _(PolW) and_ <a href="https://medium.com/p/8de3b0f76749" class="markup--anchor markup--p-anchor" data-href="https://medium.com/p/8de3b0f76749" target="_blank"><em>here</em></a> _(sUTXO). Here we examine what a virtual machine is, what function it fills in blockchains and what distinguishes Alephium’s VM (called Alphred) from others._
 
-![](image_5d9c7af2e9.jpeg)
+![](image_de012354c9.jpeg)
 
 ### _What is a VM?_
 
@@ -18,7 +18,7 @@ A virtual machine (VM) is a software program that emulates the functionality of 
 
 Another useful feature of the VM is that it lives somewhere in a simulated place, not affecting the underlying infrastructure if things go wrong. If a virtual machine crashes, there’s no need to restart the physical computer, just the virtual machine.
 
-![](image_4b8b66d875.jpg)
+![](image_689f114b5a.jpg)
 
 ### _Virtual machines and the blockchain world_
 
@@ -26,11 +26,11 @@ Bitcoin has, by design a <a href="https://en.bitcoin.it/wiki/Script" class="mark
 
 But what if you want to perform more complicated computations in the same decentralized way that Bitcoin operates? That’s the question Vitalik Buterin answered when he conceived of what he called at the time the «world computer». He created a Virtual Machine operated as a single entity maintained by thousands of physical, connected nodes running an Ethereum client. This VM has the ability to compile complex instructions from smart contracts, and all the changes created by these instructions are recorded on the blockchain, accessible to everyone: it’s a state machine.
 
-![](image_e630efaef6.jpeg)
+![](image_2f8b24d34d.jpeg)
 
 The example shown above is the <a href="https://ethereum.org/en/developers/docs/evm/" class="markup--anchor markup--p-anchor" data-href="https://ethereum.org/en/developers/docs/evm/" rel="noopener" target="_blank">Ethereum Virtual Machine</a> (EVM), the first big virtual machine in the blockchain industry to see major adoption. Developers can write smart contracts in a high-level, human-readable language called Solidity. When a transaction uses this code, the compiler translates the result instructions into bytecode (which is the low-level machine-readable code). The EVM then executes the bytecode, and nodes broadcast the changes (transactions and blocks) to all the other nodes.
 
-![](image_7fe715323e.jpg)
+![](image_b344e555a6.jpg)
 
 ### _Many blockchains, many VMs_
 
@@ -44,7 +44,7 @@ There are many other different VMs, such as NeoVM, AVM, RSK, FUEL… and you can
 
 The choice of a VM and the corresponding toolset (programming Language, compiler, etc…) depends on what a blockchain is trying to accomplish.
 
-![](image_e94e38e95b.jpg)
+![](image_8ec5757380.jpg)
 
 ### _Alephium’s tooling: Alphred & Ralph_
 
@@ -62,7 +62,7 @@ An asset permission system controls access to and interaction with specific asse
 
 In Ethereum, when a user wants to transact anything other than ETH, he is greeted with multiple confusing approvals on top of the actual transaction. Alphred removes that complexity and makes it very straightforward for a user because the permission is defined at the function level, standardizing all interactions. This helps prevent human errors or design flaws like <a href="https://coinmarketcap.com/alexandria/glossary/infinite-approval" class="markup--anchor markup--p-anchor" data-href="https://coinmarketcap.com/alexandria/glossary/infinite-approval" rel="noopener" target="_blank">asking the users to approve infinite token spending.</a>
 
-![](image_dc0d660f3e.jpg)
+![](image_e4e02428f3.jpg)
 
 #### _MEV-aware design_
 
@@ -86,7 +86,7 @@ The <a href="https://www.pcmag.com/encyclopedia/term/arithmetic-overflow" class=
 
 It has an <a href="https://youtu.be/VVYH9rBJAdA" class="markup--anchor markup--p-anchor" data-href="https://youtu.be/VVYH9rBJAdA" rel="noopener" target="_blank">Asset Permission System</a> built to provide <a href="https://docs.alephium.org/ralph/asset-permission-system" class="markup--anchor markup--p-anchor" data-href="https://docs.alephium.org/ralph/asset-permission-system" rel="noopener" target="_blank">extra verification</a> to determine that the token transactions are submitted according to the smart contract rules.
 
-![](image_f4c8e4630e.jpg)
+![](image_6f3e0ec3b1.jpg)
 
 Alphred <a href="https://docs.oracle.com/javase/tutorial/essential/exceptions/advantages.html" class="markup--anchor markup--p-anchor" data-href="https://docs.oracle.com/javase/tutorial/essential/exceptions/advantages.html" rel="noopener" target="_blank">returns an exception</a> when something is wrong, providing a better explanation to the developer about the error that occurred during the execution of the transaction.
 

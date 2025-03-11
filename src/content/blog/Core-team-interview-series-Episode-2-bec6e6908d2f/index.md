@@ -1,7 +1,7 @@
 ---
 date: 2022-03-14 12:35:58.446000+00:00
 description: Presenting the humans behind operations, marketing and community.
-featuredImage: image_3400e7fbf9.jpg
+featuredImage: image_a509233072.jpg
 title: Core team interview series. Episode 2
 ---
 
@@ -11,7 +11,7 @@ title: Core team interview series. Episode 2
 
 **This article was updated:** <a href="https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0" rel="nofollow" target="_blank">https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0</a>
 
-![](image_3400e7fbf9.jpg)
+![](image_a509233072.jpg)
 
 _For its team, Alephium is privileging agility and efficiency over hyper-growth. We do not stay at a human size because we think it is more efficient, but because Alephium strives to be a decentralized, community driven project. This means the project in itself is much larger than a team can ever be. Communication, trust, openness and transparency is paramount in such a set-up._
 
@@ -27,7 +27,7 @@ There’s always the need for structured operations and communications in innova
 
 ### Maud
 
-![](image_bd4349ca03.jpg)
+![](image_edaf309581.jpg)
 
 #### How should we call you and where are you located?
 
@@ -71,7 +71,7 @@ Blockchain will transform our society in many ways. I want to actively contribut
 
 ### Philipp
 
-![](image_11b59140ff.jpg)
+![](image_33eb66c3fb.jpg)
 
 #### How should we call you and where are you located?
 
@@ -111,7 +111,7 @@ I’d say overall the most important point for me is to see Alephium achieve its
 
 ### Vlad
 
-![](image_b8debf7b19.jpg)
+![](image_c8cc291fe6.jpg)
 
 #### How should we call you and where are you located?
 
@@ -147,7 +147,7 @@ I like the unbending tech ambition to bring the absolute best of crypto in all a
 
 ### Polto
 
-![](image_d606419b86.jpg)
+![](image_cce52fa44f.jpg)
 
 #### How should we call you and where are you located?
 
@@ -189,7 +189,7 @@ No bullshit!
 
 ### Set
 
-![](image_17b31410c7.jpg)
+![](image_cb5085356d.jpg)
 
 #### How should we call you and where are you located?
 

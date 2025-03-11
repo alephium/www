@@ -2,13 +2,13 @@
 description: This interview was conducted around the Athens Builders Meetup, which
   took place at the end of June 2024. If you’re just discovering…
 draft: true
-featuredImage: image_21dd507cc5.png
+featuredImage: image_9ef710adf3.png
 title: Builders Uncut — No Trust Verify
 ---
 
 ### Builders Uncut — No Trust Verify
 
-![](image_21dd507cc5.png)
+![](image_9ef710adf3.png)
 
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
@@ -24,7 +24,7 @@ Here, <a href="https://x.com/cg1_bin" class="markup--anchor markup--p-anchor" da
 
 We are a team called No Trust Verify (NTV), focused on experimentation, self-sovereignty, and privacy. We’re a group of four, but we prefer to stay discreet and under the radar. Our work revolves around creating dApps and tools for blockchain, particularly on Alephium.
 
-![](image_d8f2334986.png)
+![](image_149b9b9c0d.png)
 
 #### How long have you been working as No Trust Verify?
 
@@ -42,7 +42,7 @@ A colleague mentioned Alephium to me while it was still in the testnet phase. I 
 
 We’ve built various tools, such as the <a href="https://x.com/AlphWhale" class="markup--anchor markup--p-anchor" data-href="https://x.com/AlphWhale" rel="noopener" target="_blank">Alephium Whales Watcher</a>, <a href="https://www.alephium.world/" class="markup--anchor markup--p-anchor" data-href="https://www.alephium.world/" rel="noopener" target="_blank">Alephium World</a>, and a bot for mining notifications. During a hackathon, we also developed the <a href="https://t.me/TipAlphBot" class="markup--anchor markup--p-anchor" data-href="https://t.me/TipAlphBot" rel="noopener" target="_blank">TipAlph</a> bot, which allows users to tip others seamlessly through Telegram.
 
-![](image_9744b60e02.png)
+![](image_14a7be38f3.png)
 
 #### How has your experience with Alephium evolved?
 

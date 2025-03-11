@@ -1,7 +1,7 @@
 ---
 date: 2023-03-21 15:39:30.918000+00:00
 description: Proof-of-Concept to showcase dApps building on Alephium
-featuredImage: image_9764e2e836.jpeg
+featuredImage: image_4b7ae278af.jpeg
 title: DEX Prototype Live on Testnet
 ---
 
@@ -9,7 +9,7 @@ title: DEX Prototype Live on Testnet
 
 #### Proof-of-Concept to showcase dApps building on Alephium
 
-![](image_9764e2e836.jpeg)
+![](image_4b7ae278af.jpeg)
 
 Alephium is excited to announce the release of a DEX prototype!
 
@@ -41,7 +41,7 @@ More details <a href="https://medium.com/@alephium/alephium-launches-browser-ext
 
 Once the extension wallet is installed, connect to the Testnet (you can change the network you’re connected to on the top right of the extension).
 
-![](image_1b6cb0e590.png)
+![](image_6d5fb61884.png)
 
 Once on the Testnet, make sure to create or use a wallet with an address in group 0 to be able to connect to the DEX.
 
@@ -49,7 +49,7 @@ Once on the Testnet, make sure to create or use a wallet with an address in grou
 
 Go to <a href="https://alephium.github.io/alephium-dex" class="markup--anchor markup--p-anchor" data-href="https://alephium.github.io/alephium-dex" rel="noopener" target="_blank">https://alephium.github.io/alephium-dex</a> click on “Connect Alephium,” and choose “Extension Wallet” from the options on the pop-up.
 
-![](image_355b002912.jpg)
+![](image_4bba1797a4.jpg)
 
 After connecting, the first page is the “Swap” page, where you can select the cryptocurrencies you want to exchange.
 
@@ -57,11 +57,11 @@ After connecting, the first page is the “Swap” page, where you can select th
 
 Don’t have \$ALPH in your wallet? You can request some right from the wallet! Click “Add funds” on the main page and then “Request \$ALPH”. You will receive 12 Testnet \$ALPH in a few minutes.
 
-![](image_a5095ac579.png)
+![](image_7be11ad809.png)
 
 Now you have everything you need to make your first transaction on the Alephium DEX! Use your \$ALPH to buy Test BTC, and then try the other sections of the DEX or transfer it to a different address!
 
-![](image_d5eee3adc2.jpg)
+![](image_6a5090c43c.jpg)
 
 ---
 

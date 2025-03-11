@@ -2,13 +2,13 @@
 description: One month after the release of the bridge on mainnet, Cheng, Hongchao
   & Maud were interviewed by Vladimir in a Twitter space AMA. Where are…
 draft: true
-featuredImage: image_1761cbfcb3.jpg
+featuredImage: image_b6ff8e120a.jpg
 title: Bridge AMA
 ---
 
 ### Bridge AMA
 
-![](image_1761cbfcb3.jpg)
+![](image_b6ff8e120a.jpg)
 
 _One month after the release of the_ <a href="https://bridge.alephium.org/#/transfer" class="markup--anchor markup--p-anchor" data-href="https://bridge.alephium.org/#/transfer" rel="noopener" target="_blank"><em>bridge</em></a> _on mainnet, Cheng, Hongchao & Maud were interviewed by Vladimir in a Twitter space AMA. Where are we on the bridge, how did it come to be, and more importantly, what’s ahead now? You can listen to the Twitter space itself_ <a href="https://twitter.com/i/spaces/1mrGmydQreMGy" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/i/spaces/1mrGmydQreMGy" rel="noopener" target="_blank"><em>here</em></a>_, or read on at your own pace! This article is the Part I, and it is lightly edited to improve clarity and readability._
 

@@ -2,7 +2,7 @@
 date: 2023-06-13 12:24:16.559000+00:00
 description: This article will explore Alephium’s Asset Permission System (APS) and
   discuss its security enhancements over the Ethereum Virtual Machine…
-featuredImage: image_d96eaacea8.png
+featuredImage: image_613e8a96a6.png
 title: 'Alephium’s APS: Eliminating EVM Token Approval Risks'
 ---
 
@@ -10,7 +10,7 @@ title: 'Alephium’s APS: Eliminating EVM Token Approval Risks'
 
 This article will explore Alephium’s Asset Permission System (APS) and discuss its security enhancements over the Ethereum Virtual Machine (EVM) token approval/allowance mechanism. APS is a flexible and secure solution for managing assets on the Alephium blockchain, providing developers with the tools they need to build robust and safe decentralized applications.
 
-![](image_d96eaacea8.png)
+![](image_613e8a96a6.png)
 
 ### TL;DR
 
@@ -21,7 +21,7 @@ This article will explore Alephium’s Asset Permission System (APS) and discuss
 
 Ethereum assets are managed by contracts. So, for example, if Uniswap wants to swap token A for token B, the token A holder should first approve its spending on token A’s contract for Uniswap, and then Uniswap will have permission to do the swapping.
 
-![](image_e1e1bd58a6.png)
+![](image_1f9be8d7c9.png)
 
 The mechanism used for this purpose is usually called Approvals, which enables token holders to authorize another account or smart contract to spend a specified amount of tokens on their behalf.
 
@@ -41,11 +41,11 @@ A TxScript (short for transaction script) is a piece of code to interact with sm
 
 For example:
 
-![](image_9cbcd22b8e.png)
+![](image_1d31596152.png)
 
 In this example, the braces explicitly define the asset approval, following the notation in the image below.
 
-![](image_6bd3321a28.png)
+![](image_952f80b2b7.png)
 
 Using the APS, in combination with the UTXO model, all the approvals can be defined beforehand. In one transaction, **both the approval and the transfer of the assets are done** following the TxScript conditions, resulting in a **seamless and more secure User Experience.**
 

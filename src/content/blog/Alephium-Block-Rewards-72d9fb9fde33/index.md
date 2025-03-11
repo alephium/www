@@ -2,7 +2,7 @@
 date: 2021-11-22 15:06:08.158000+00:00
 description: An in-depth analysis of the Block rewards, explaining the time-based
   and hashrate-based components of the reward emission rates.
-featuredImage: image_90485323ff.jpeg
+featuredImage: image_e02f52d122.jpeg
 title: Alephium Block Rewards
 ---
 
@@ -10,7 +10,7 @@ title: Alephium Block Rewards
 
 #### An in-depth analysis of the Block rewards, explaining the time-based and hashrate-based components of the reward emission rates.
 
-![](image_90485323ff.jpeg)
+![](image_e02f52d122.jpeg)
 
 **_Disclaimer: This article was edited on June 12th, 2024 when block time was reduced from 64 to 16s_**
 

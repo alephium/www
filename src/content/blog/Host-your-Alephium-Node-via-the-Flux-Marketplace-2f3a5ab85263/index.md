@@ -2,13 +2,13 @@
 date: 2022-11-23 15:42:04.309000+00:00
 description: Alephium’s partnership with Flux Official to support Alephium’s full
   node running on a web3 cloud infrastructure is another step towards…
-featuredImage: image_817e5020cf.png
+featuredImage: image_ec0a7e367d.png
 title: Host your Alephium Node via the Flux Marketplace
 ---
 
 ### Host your Alephium Node via the Flux Marketplace
 
-![](image_817e5020cf.png)
+![](image_ec0a7e367d.png)
 
 <a href="https://medium.com/@alephium/alephium-continues-its-engagement-for-decentralization-and-partners-with-the-cloud-based-f9c5baebe5b2" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/alephium-continues-its-engagement-for-decentralization-and-partners-with-the-cloud-based-f9c5baebe5b2" target="_blank">Alephium’s partnership</a> with <a href="https://medium.com/u/1c37e86f5d23" class="markup--user markup--p-user" data-href="https://medium.com/u/1c37e86f5d23" data-anchor-type="2" data-user-id="1c37e86f5d23" data-action-value="1c37e86f5d23" data-action="show-user-card" data-action-type="hover" target="_blank">Flux Official</a> to support Alephium’s full node running on a web3 cloud infrastructure is another step towards demonstrating decentralization as a core value. Find here a detailed walkthrough on how to set up a node with Flux.
 
@@ -29,40 +29,40 @@ There are plenty of advantages to using Flux instead of traditional Web2 infrast
 
 Before following the tutorial, you will need to install the <a href="https://zelcore.io/" class="markup--anchor markup--p-anchor" data-href="https://zelcore.io/" rel="noopener" target="_blank">zelcore wallet</a>, and own some FLUX (<a href="https://runonflux.io/buy-flux.html" class="markup--anchor markup--p-anchor" data-href="https://runonflux.io/buy-flux.html" rel="noopener" target="_blank">find how here</a>).
 
-![](image_c46b808b3b.png)
+![](image_d648d485af.png)
 
 1.  First head over to <a href="https://home.runonflux.io/" class="markup--anchor markup--li-anchor" data-href="https://home.runonflux.io/" rel="noopener ugc nofollow noopener" target="_blank">https://home.runonflux.io/</a>
 2.  Once there, log in using your ZelID. It is an instance of the <a href="https://zelcore.io/" class="markup--anchor markup--li-anchor" data-href="https://zelcore.io/" rel="noopener" target="_blank">Zelcore Wallet</a>.
 
-![](image_f96cac1028.png)
+![](image_3dbacefda5.png)
 
 3\. Now that you are authenticated, head to the <a href="https://home.runonflux.io/apps/marketplace" class="markup--anchor markup--p-anchor" data-href="https://home.runonflux.io/apps/marketplace" rel="noopener" target="_blank">Flux Marketplace</a> and look for the **Alephium Node** Application. You will see something very similar to this:
 
-![](image_489845b3b3.png)
+![](image_f6a7689187.png)
 
 4\. Do not put any other Parameters and Click on the Start Marketplace App. The next screen will be like this:
 
-![](image_3122b6d69d.png)
+![](image_416382bee3.png)
 
 5\. You can click next or copy the **Registration Message** if you are signing the message manually from your ZelID App and then click next
 
 6\. Here, you can click the fingerprint button to sign the request for the Application or manually paste the signed message on your ZelID from the previous step
 
-![](image_e85b9cb370.png)
+![](image_d47774660b.png)
 
 7\. The next screen will show the monthly cost for your Application. Click on Register Flux App
 
-![](image_61b992763b.png)
+![](image_a77da92e5a.png)
 
 8\. You are provided with some payment info in FLUX. Payment is done through the FLUX blockchain in FLUX coins.
 
-![](image_c0ce663202.png)
+![](image_f9bcd73197.png)
 
 9\. Select “Pay with Zelcore” to make the payment for the app.
 
-![](image_3ec93dd43e.png)
+![](image_73c2d35c8c.png)
 
-![](image_d8825c9ed2.png)
+![](image_ad9b4b9804.png)
 
 10\. You are done! Now you just have to wait for your Alephium Node to be spawned on an available node.
 
@@ -72,11 +72,11 @@ Before following the tutorial, you will need to install the <a href="https://zel
 
 When logged in via your ZelID, you can head over to <a href="https://home.runonflux.io/apps/globalapps" class="markup--anchor markup--p-anchor" data-href="https://home.runonflux.io/apps/globalapps" rel="noopener" target="_blank">https://home.runonflux.io/apps/globalapps</a> and to the “My Apps” Tab. Here you can manage and visit the Alephium Node deployments you have done so far.
 
-![](image_1c389fabfa.png)
+![](image_d501b22a34.png)
 
 Click on the arrow pointing down to see your application specifications and the IPs running it.
 
-![](image_9e1f33f137.png)
+![](image_f335e15ed8.png)
 
 **With Flux Cloud your Alephium Node is redundant! That means it is always running on a minimum of three instances simultaneously. You can check the Logs of the individual IPs to see the Node syncing properly.**
 

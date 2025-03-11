@@ -2,13 +2,13 @@
 date: 2023-12-22 13:12:09.941000+00:00
 description: The Alephium blockchain, like many decentralized networks, relies heavily
   on the contributions of miners to maintain its integrity and…
-featuredImage: image_e0a5293bb5.jpg
+featuredImage: image_01ab6ae1df.jpg
 title: 'Miners’ Highlight #1 — Cedric Crispin'
 ---
 
 ### Miners’ Highlight \#1 — Cedric Crispin
 
-![](image_e0a5293bb5.jpg)
+![](image_01ab6ae1df.jpg)
 
 _The Alephium blockchain, like many decentralized networks, relies heavily on the contributions of miners to maintain its integrity and functionality. Recognizing the significance of these contributors, we are launching a series of articles titled “Miners’ Highlight.” By focusing on their contributions, challenges, and experiences, we aim to understand the mining process and its importance better._
 

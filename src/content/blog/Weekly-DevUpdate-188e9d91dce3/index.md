@@ -1,7 +1,7 @@
 ---
 date: 2023-08-16 15:52:52.305000+00:00
 description: Week 32 Milestones & progress on dev on Alephium!
-featuredImage: image_52a3a40cb2.png
+featuredImage: image_4db7db9502.png
 title: 'Weekly #DevUpdate'
 ---
 
@@ -9,7 +9,7 @@ title: 'Weekly #DevUpdate'
 
 #### Week 32 Milestones & progress on dev on Alephium!
 
-![](image_52a3a40cb2.png)
+![](image_4db7db9502.png)
 
 1.  **Launch of NFT Marketplace V2 for Internal Testing**
 
@@ -29,7 +29,7 @@ In collaboration with Zealy.io, we’re on the brink of launching quests. Stay t
 
 **Frontend Team Updates:**
 
-![](image_bedc9525df.png)
+![](image_e5f46088fe.png)
 
 - Desktop Wallet: Review of the Italian translation, creation of an animated QR code to share information, and updates of endpoints.
 - Mobile Wallet: Desktop wallet import by QR code scanning method, general data loading speed improvements, and animation additions.
@@ -37,7 +37,7 @@ In collaboration with Zealy.io, we’re on the brink of launching quests. Stay t
 
 **Backend Team Updates:**
 
-![](image_8fa404b37f.png)
+![](image_404c00a3c8.png)
 
 - dApps: NFT Marketplace v2 for internal testing.
 - Browser Extension Wallet: Enhancements on NFTs display and dApps connection.
@@ -46,7 +46,7 @@ In collaboration with Zealy.io, we’re on the brink of launching quests. Stay t
 
 **Marketing & Content Team Updates:**
 
-![](image_e25d3f6229.jpeg)
+![](image_10fd906bca.jpeg)
 
 - Zealy.io beta testing with the community. (want to test? Ping us!)
 - Content: sUTXO long-form article (part I), Tx Script x Smart Contracts thread, and a summary of the last Tech Talk (UI/UX), Dev update, engagement post, more content prep.

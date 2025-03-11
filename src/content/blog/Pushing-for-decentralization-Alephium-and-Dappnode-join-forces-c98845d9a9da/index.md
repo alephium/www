@@ -2,13 +2,13 @@
 date: 2022-10-24 13:00:21.819000+00:00
 description: Neuchâtel, Switzerland & Zug, Switzerland September 22nd, 2022 — Alephium,
   a highly performant, secure, and energy-efficient sharded…
-featuredImage: image_5e4705573c.jpeg
+featuredImage: image_5ebd70f452.jpeg
 title: Pushing for decentralization, Alephium and Dappnode join forces …
 ---
 
 ### **Pushing for decentralization, Alephium and Dappnode join forces to make self-hosted blockchain infrastructure accessible**
 
-![](image_5e4705573c.jpeg)
+![](image_5ebd70f452.jpeg)
 
 **_Neuchâtel, Switzerland & Zug, Switzerland September 22nd, 2022 _**— <a href="https://alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/" rel="noopener" target="_blank">Alephium</a>, a highly performant, secure, and energy-efficient sharded blockchain network for DeFi & dApps and <a href="https://dappnode.io/" class="markup--anchor markup--p-anchor" data-href="https://dappnode.io/" rel="noopener" target="_blank">Dappnode</a> an open source, censorship-resistant platform for deploying and hosting DApps, P2P clients and blockchain nodes, announce today their collaboration to advance decentralization, security, and accessibility of critical infrastructure.
 

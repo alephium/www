@@ -1,7 +1,7 @@
 ---
 description: A discussion with Cheng Wang, inventor of PoLW and founder of Alephium.
 draft: true
-featuredImage: image_89a7dd23cd.jpeg
+featuredImage: image_8240409651.jpeg
 title: 'TECH TALK #1 — The Ultimate guide to Proof-of-Less-Work, the universe and
   everything…'
 ---
@@ -12,7 +12,7 @@ title: 'TECH TALK #1 — The Ultimate guide to Proof-of-Less-Work, the universe 
 
 > This is the first of a series of interviews on the technical innovations brought to the world by Alephium. The discussion was conducted in february 2022, in a virtual format in presence of most of the Alephium team who contributed to the questions and ensuing exchange. The following has been edited for clarity, concision and optimized for readability.
 
-![](image_89a7dd23cd.jpeg)
+![](image_8240409651.jpeg)
 
 ---
 

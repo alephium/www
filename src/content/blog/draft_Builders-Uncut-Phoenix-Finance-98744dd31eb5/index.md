@@ -2,13 +2,13 @@
 description: This interview was conducted around the Athens Builders Meetup, which
   took place at the end of June 2024. If you’re just discovering…
 draft: true
-featuredImage: image_789c7615af.png
+featuredImage: image_7221245ca9.png
 title: Builders Uncut — Phoenix Finance
 ---
 
 ### Builders Uncut — Phoenix Finance
 
-![](image_789c7615af.png)
+![](image_7221245ca9.png)
 
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
@@ -28,7 +28,7 @@ That’s when I dove deep into mining, starting with Ethereum. Over time, I want
 
 #### Can you tell us about your project?
 
-![](image_aa13ce60e4.png)
+![](image_5ae3dee76d.png)
 
 A few months ago, during the first Alephium hackathon, I started building a project called <a href="https://www.phoenixfi.app/" class="markup--anchor markup--p-anchor" data-href="https://www.phoenixfi.app/" rel="noopener" target="_blank">Phoenix Finance</a>. I had already developed this project on other blockchains, so I decided to implement a version of it on Alephium to learn how the protocol works.
 

@@ -1,7 +1,7 @@
 ---
 date: 2023-11-09 17:01:31.560000+00:00
 description: How does it work? How to use it? About the guardians, and more…
-featuredImage: image_91e89476cc.jpg
+featuredImage: image_bfb2d7bedf.jpg
 title: The Alephium Bridge
 ---
 
@@ -9,7 +9,7 @@ title: The Alephium Bridge
 
 #### How does it work? How to use it? About the guardians, and more…
 
-![](image_91e89476cc.jpg)
+![](image_bfb2d7bedf.jpg)
 
 _This article was updated to reflect the new conditions after the_ <a href="https://medium.com/@alephium/rh%C3%B4ne-network-upgrade-activated-cbeb298585fe" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/rh%C3%B4ne-network-upgrade-activated-cbeb298585fe" target="_blank"><em>Rhône Network Upgrade</em></a>_: bridging from Alephium to Ethereum requires at least 205 blocks_ **_and_** _at least 55 minutes._
 
@@ -31,7 +31,7 @@ You can find the Alephium Bridge code <a href="https://github.com/alephium/wormh
 
 **Do tokens actually travel between chains?**
 
-![](image_3a2a2580f8.jpg)
+![](image_a3cae42b31.jpg)
 
 No! It’s very important to understand that neither the native token nor the minted wrapped token ever leave their respective chains. At the end of the day, the “bridge” word is a misnomer in the world of blockchains.
 
@@ -39,7 +39,7 @@ This bridge is built on top of a <a href="https://docs.wormhole.com/wormhole/" c
 
 **What are the Main Components of the Alephium Bridge?**
 
-![](image_971817c07b.jpg)
+![](image_9eab69b95d.jpg)
 
 The Alephium Bridge has several components working together to create a secure and scalable interface between the Alephium blockchain and Ethereum blockchain (and others, in the future). The bridge has three main components: guardians, contracts & messages.
 
@@ -75,7 +75,7 @@ What happens under the hood?
 
 2 — The Core Contract emits a confirmation message indicating the token locking event.
 
-![](image_99cd91bdf1.jpg)
+![](image_94357140d5.jpg)
 
 3 — Since Guardians actively monitor the blockchains connected to the Alephium Bridge, they capture the transaction logs related to this message.
 
@@ -83,17 +83,17 @@ What happens under the hood?
 
 5 — Once a quorum of guardians reaches consensus on the message’s validity, it is combined with the guardian signatures to form a Verifiable Action Approval (VAA).
 
-![](image_f14d815a7a.jpg)
+![](image_081653acf2.jpg)
 
 6 — The VAA is relayed to Alephium, which is the “destination chain” in this case. Triggered by the VAA validated on Alephium, the Core Contract mints an equivalent amount of “wrapped” tokens.
 
 Alice then clicks to “redeem” her tokens on Alephium and the contract transfers them to the designated destination. Alice now owns 100 USDT on Alephium!
 
-![](image_50291a9679.jpg)
+![](image_58691c2f36.jpg)
 
 Now, what happens if she buys something from Bob and pays him 100 USDT, and Bob wants to redeem them on Ethereum?
 
-![](image_a4db9f5643.jpg)
+![](image_44d5258255.jpg)
 
 When Bob decides to redeem the native tokens, the wrapped tokens are returned to the smart contract on Alephium and the native tokens on Ethereum are unlocked. The redemption process is exactly the same as the previous one in reverse, except for the first and the last one steps:
 
@@ -151,7 +151,7 @@ The whole system rests on an effective guardian network. So, what does it mean t
 
 ### The Guardian Network and the Guardians
 
-![](image_248218d0ce.jpg)
+![](image_35456d5977.jpg)
 
 **What does it mean to be a guardian?**
 

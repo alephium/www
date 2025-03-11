@@ -2,7 +2,7 @@
 description: The stateful UTXO model (sUTXO) is one of the main innovations brought
   by the Alephium team, along with Proof-of-less-work (PoLW), the…
 draft: true
-featuredImage: image_00c9e7537e.jpg
+featuredImage: image_59ed99f8d4.jpg
 title: An introduction to the stateful UTXO model
 ---
 
@@ -18,7 +18,7 @@ Before getting to stateful UTXO (which we’ll call sUTXO from here on), we need
 
 The UTXO and account-based models are the most commonly used accounting standards in blockchain networks. Both of them allow users & systems to keep track of balances of crypto assets.
 
-![](image_00c9e7537e.jpg)
+![](image_59ed99f8d4.jpg)
 
 ### What is the UTXO Model?
 
@@ -28,7 +28,7 @@ In this standard, transactions are similar to physical cash transactions: for al
 
 In the UTXO world, every transaction spends the entirety of what it contains, creating new UTXOs.
 
-![](image_1b7d926c84.jpg)
+![](image_7461ecb0dc.jpg)
 
 Next time the user makes a transaction, he will use this UTXO as input. This model is suitable for accounting, but it has a significant limitation: it is immutable, and it doesn’t allow access to states. NEED A LINK TO SOMEWHERE DESCRIBING WHAT A STATE IS AND IDEALLY WHAT THE PROBLEM OF BEING STATELESS IS
 

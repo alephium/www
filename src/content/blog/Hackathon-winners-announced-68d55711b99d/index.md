@@ -2,7 +2,7 @@
 date: 2024-03-22 16:41:54.726000+00:00
 description: The first Alephium Hackathon “Pioneers”, took place online between the
   12th & 26th of February. After carefully reviewing all final…
-featuredImage: image_fb323b69b4.gif
+featuredImage: image_b3deda2ce3.gif
 title: Hackathon winners announced!
 ---
 
@@ -10,7 +10,7 @@ title: Hackathon winners announced!
 
 _The first Alephium Hackathon “Pioneers”, took place online between the 12th & 26th of February. After carefully reviewing all final submissions, the jury & partners (Bitmain, Blockflow Alliance DAO, Cetacean Capital &_ <a href="https://link.dappnode.io/dappnode" class="markup--anchor markup--p-anchor" data-href="https://link.dappnode.io/dappnode" rel="noopener" target="_blank"><em>Dappnode</em></a>_) are ready to announce the winners._
 
-![](image_fb323b69b4.gif)
+![](image_b3deda2ce3.gif)
 
 The whole Alephium core-team has been blown away by the energy of participants and the quality of the submissions. It wishes to express to all participants its immense pleasure to see Alephium’s tools, languages & protocol used with so much creativity & dedication. The jury has taken its time to evaluate each submission on its own merit, according to the criteria exposed <a href="https://alephium.org/hackathon/" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/hackathon/" rel="noopener" target="_blank">here</a>.
 
@@ -167,4 +167,4 @@ One thing we don’t want to change is that awesome community energy, nerdcore v
 
 Thank you!
 
-![](image_853ab9a2bd.gif)
+![](image_21cadb8f24.gif)

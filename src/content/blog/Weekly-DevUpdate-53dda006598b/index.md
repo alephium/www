@@ -1,7 +1,7 @@
 ---
 date: 2023-08-31 14:34:52.764000+00:00
 description: Week 34 Milestones & progress on dev on Alephium!
-featuredImage: image_df0ab5e539.png
+featuredImage: image_a2c24405e4.png
 title: 'Weekly #DevUpdate'
 ---
 
@@ -9,7 +9,7 @@ title: 'Weekly #DevUpdate'
 
 #### Week 34 Milestones & progress on dev on Alephium!
 
-![](image_df0ab5e539.png)
+![](image_a2c24405e4.png)
 
 🎇 Multisig Toolkit got its final details; Mobile wallet development is going strong, and the UI/UX Twitter Space with Swissborg & <a href="https://www.lace.io/" class="markup--anchor markup--p-anchor" data-href="https://www.lace.io/" rel="noopener" target="_blank">lace.io</a> was a blast!
 

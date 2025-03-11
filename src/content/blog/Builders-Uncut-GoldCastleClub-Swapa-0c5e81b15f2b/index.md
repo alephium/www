@@ -2,13 +2,13 @@
 date: 2024-08-28 17:07:28.868000+00:00
 description: This interview was conducted around the Athens Builders Meetup, which
   took place at the end of June 2024. If you’re just discovering…
-featuredImage: image_402c31d870.png
+featuredImage: image_8b1f840790.png
 title: Builders Uncut — GoldCastleClub &amp; Swapa
 ---
 
 ### Builders Uncut — GoldCastleClub & Swapa
 
-![](image_402c31d870.png)
+![](image_8b1f840790.png)
 
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
@@ -34,7 +34,7 @@ I work for 14 hours a day. I think it’s good to live in extremes: work intense
 
 #### Can you tell us more about Gold Castle Club?
 
-![](image_260e18fa98.png)
+![](image_4866fe8169.png)
 
 In Gold Castle Club, game elements are NFTs that interact with each other. You can combine NFTs to form stronger entities, like kingdoms, and battle each other to earn gold tokens.
 
@@ -52,7 +52,7 @@ Someone in the Discord suggested a “ve” DEX on Alephium, like Pancake Swap. 
 
 #### How do you see coexisting with other DEXs?
 
-![](image_e8f811621a.png)
+![](image_e1d9067777.png)
 
 I don’t see Deadrare’s DEX (<a href="https://candyswap.gg/" class="markup--anchor markup--p-anchor" data-href="https://candyswap.gg/" rel="noopener" target="_blank">Candyswap</a>) as a competitor because it’s an order book DEX, and we’ll work in synergy. People will provide liquidity where they can get rewards, so tokenomics is crucial.
 

@@ -2,13 +2,13 @@
 date: 2024-10-10 16:32:52.147000+00:00
 description: Alephium x Ledger—Alephium is thrilled to announce its integration with
   Ledger hardware wallets, which will give users enhanced security…
-featuredImage: image_604c402f34.jpg
+featuredImage: image_42696665b2.jpg
 title: Alephium available on Ledger Hardware Wallets
 ---
 
 ### **Alephium available on Ledger Hardware Wallets**
 
-![](image_604c402f34.jpg)
+![](image_42696665b2.jpg)
 
 **Alephium x Ledger—**Alephium is thrilled to announce its integration with Ledger hardware wallets, which will give users enhanced security and control over their digital assets.
 
@@ -20,7 +20,7 @@ title: Alephium available on Ledger Hardware Wallets
 
 **Ledger support is available today on the** <a href="https://alephium.org/#wallets" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/#wallets" rel="noopener" target="_blank"><strong>browser extension</strong></a> **and desktop wallet**. It is currently being implemented in the mobile wallet and will be available very soon!
 
-![](image_c0eb277dab.jpg)
+![](image_f965b63d0b.jpg)
 
 #### **How to get started?**
 

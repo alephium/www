@@ -2,13 +2,13 @@
 date: 2024-08-21 15:05:27.459000+00:00
 description: This serie of interviews was conducted at the Athens Builders Meetup,
   which took place at the end of June 2024. If you’re just discovering…
-featuredImage: image_57cf6795f7.png
+featuredImage: image_d408df4bbf.png
 title: Builders Uncut — Alphaga
 ---
 
 ### Builders Uncut — Alphaga
 
-![](image_57cf6795f7.png)
+![](image_d408df4bbf.png)
 
 _This serie of interviews was conducted at the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
@@ -52,7 +52,7 @@ Well, we wanted to do something where we were already close to the community, fi
 
 First of all, in our marketplace, we’ll be able to choose if you want to mint in a random NFT or if you want to be if you want to be sequential. So the owner will choose. We also want to do something like, for example, you can buy NFT with crypto, such as \$AYIN. So you have different currencies. We implement our token, which is called \$ALPHAGA, too. And with it we could do a lot of different stuff, just such as lower fees mint, I mean, and stuff like that. So for example, if you own some \$Alphaga, the fees will be 50% lower. Our fees is only 1%. So this is something really want to bring up. And that’s pretty it like really. Do a lot of updates.
 
-![](image_7ad2174142.jpg)
+![](image_cfe6fea961.jpg)
 
 #### So people will be able to mint NFTs in another currency than \$ALPH technically.
 

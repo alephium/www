@@ -1,7 +1,7 @@
 ---
 date: 2022-03-21 16:28:48.809000+00:00
 description: Presenting the humans developing the Back-end.
-featuredImage: image_2e6aba2d86.jpg
+featuredImage: image_e6ce249ae6.jpg
 title: Core team interview series. Episode 3
 ---
 
@@ -11,7 +11,7 @@ title: Core team interview series. Episode 3
 
 **This article was updated:** <a href="https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0" rel="nofollow" target="_blank">https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0</a>
 
-![](image_2e6aba2d86.jpg)
+![](image_e6ce249ae6.jpg)
 
 _For its team, Alephium is privileging agility and efficiency over hyper-growth. We do not stay at a human size because we think it is more efficient, but because Alephium strives to be a decentralized, community driven project. This means the project in itself is much larger than a team can ever be. Communication, trust, openness and transparency is paramount in such a set-up._
 
@@ -25,7 +25,7 @@ The Back-end is the heart of the system, but it is also a less obvious part of t
 
 ### Thomas
 
-![](image_7d5a8468c5.jpg)
+![](image_9a16698df2.jpg)
 
 #### How should we call you and where are you located?
 
@@ -61,7 +61,7 @@ I would say our team, even though it’s a small one, everyone is where they sho
 
 ### muchen
 
-![](image_171f5bad17.jpg)
+![](image_1c941692d2.jpg)
 
 #### How should we call you and where are you located?
 
@@ -101,7 +101,7 @@ What I care about the most is how we can attract more developers.
 
 ### h0ngcha0
 
-![](image_982e06f7ba.jpg)
+![](image_7e000b580e.jpg)
 
 #### How should we call you and where are you located?
 
@@ -140,7 +140,7 @@ Build alternatives in this increasingly polarizing world.
 
 ### Benoit
 
-![](image_f2f15efc45.jpg)
+![](image_36f046fcea.jpg)
 
 #### How should we call you and where are you located?
 
@@ -184,7 +184,7 @@ Blockflow technology is so simple that many other projects are asking themselves
 
 ### Simer
 
-![](image_24d65d4c5d.jpg)
+![](image_27409ee226.jpg)
 
 #### How should we call you and where are you located?
 
@@ -234,7 +234,7 @@ Database related software development.
 
 ### Cheng
 
-![](image_b5f1556177.jpg)
+![](image_4568aa4bf1.jpg)
 
 #### How should we call you and where are you located?
 

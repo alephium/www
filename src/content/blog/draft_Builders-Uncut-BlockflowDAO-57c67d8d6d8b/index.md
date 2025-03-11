@@ -2,13 +2,13 @@
 description: This interview was conducted around the Athens Builders Meetup, which
   took place at the end of June 2024. If you’re just discovering…
 draft: true
-featuredImage: image_7e9b2aff77.png
+featuredImage: image_d791a75632.png
 title: Builders Uncut — BlockflowDAO
 ---
 
 ### Builders Uncut — BlockflowDAO
 
-![](image_7e9b2aff77.png)
+![](image_d791a75632.png)
 
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
@@ -40,7 +40,7 @@ CGI: I go by <a href="https://x.com/cg1_bin" class="markup--anchor markup--p-anc
 
 **Ryan:** We’ve had several successes, like the fundraiser for MEXC, which was a big win for Alephium. I’m also proud of the <a href="https://alephiumgazette.com/" class="markup--anchor markup--p-anchor" data-href="https://alephiumgazette.com/" rel="noopener" target="_blank">Alephium Gazette</a> and the different <a href="https://x.com/alephium/status/1818326917881196594" class="markup--anchor markup--p-anchor" data-href="https://x.com/alephium/status/1818326917881196594" rel="noopener" target="_blank">language communities</a> that have been built. These initiatives are invaluable for spreading awareness.
 
-![](image_33a94f2fee.png)
+![](image_3a4e86ed5d.png)
 
 Diomark: We’ve worked with some exchanges and are continuing to look into new opportunities. The next step is to bring in more projects, pulling successful ones from other ecosystems and encouraging them to move over to Alephium.
 

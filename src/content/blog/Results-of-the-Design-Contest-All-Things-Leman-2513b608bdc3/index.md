@@ -1,7 +1,7 @@
 ---
 date: 2023-04-14 16:37:30.059000+00:00
 description: The winning design is already featured in Alephium’s SWALPH shop!
-featuredImage: image_1e62c246f3.jpg
+featuredImage: image_33aa09a8e0.jpg
 title: 'Results of the Design Contest: All Things Leman'
 ---
 
@@ -9,7 +9,7 @@ title: 'Results of the Design Contest: All Things Leman'
 
 The winning design is already featured in Alephium’s SWALPH shop!
 
-![](image_1e62c246f3.jpg)
+![](image_33aa09a8e0.jpg)
 
 THE RESULTS ARE IN! Alephium invited its community to a design contest to celebrate the <a href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a" target="_blank">Leman Network Upgrade activation</a>! The community answered the call and came up with some fantastic entries.
 
@@ -28,7 +28,7 @@ There was a lot of creativity in the entries! While the selection below only inc
 - “E” has the “Leman Bussin” motto too, with the alephium logo everywhere (make a sticker?).
 - “F” encompasses the Leman upgrade with vibrant colors and a nostalgic 80s vibe, featuring dynamic rays reminiscent of the Swiss mountains, leading the eyes toward the alephium logo.
 
-![](image_fdc92c8dba.jpg)
+![](image_682e53d7b2.jpg)
 
 ### 🥁 And the winner is…. 🥁
 
@@ -36,8 +36,8 @@ The winning design chosen by the jury was submitted by MontaiL. It has a polishe
 
 Congratulations Montail! Your creativity won the jury’s heart, and Alephium is happy to add your design to its SWALPH shop.
 
-![](image_53a13f030c.jpg)
+![](image_4c828993d0.jpg)
 
 You can find MontaiL’s design now in the shop: <a href="https://alephium.myspreadshop.ch/Leman" class="markup--anchor markup--p-anchor" data-href="https://alephium.myspreadshop.ch/Leman" rel="noopener" target="_blank"><strong>https://alephium.myspreadshop.ch/Leman</strong></a>
 
-![](image_08faa828e5.jpg)
+![](image_a4df5d9795.jpg)

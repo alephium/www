@@ -2,7 +2,7 @@
 date: 2022-03-09 15:36:33.257000+00:00
 description: Read the first part of the core team interview series! In this edition
   we present to you the humans building the Front-end of Alephium.
-featuredImage: image_2d06d52d1b.jpeg
+featuredImage: image_cca8f5d6a8.jpeg
 title: Core team interview series. Episode 1
 ---
 
@@ -12,7 +12,7 @@ title: Core team interview series. Episode 1
 
 **This article was updated:** <a href="https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0" rel="nofollow" target="_blank">https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0</a>
 
-![](image_2d06d52d1b.jpeg)
+![](image_cca8f5d6a8.jpeg)
 
 For its team, Alephium is privileging agility and efficiency over hyper-growth. We do not stay at a human size because we think it is more efficient, but because Alephium strives to be a decentralised, community driven project. This means the project in itself is much larger than a team can ever be. Communication, trust, openness and transparency is paramount in such a set-up.
 

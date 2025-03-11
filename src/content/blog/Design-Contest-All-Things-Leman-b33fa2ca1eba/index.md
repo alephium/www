@@ -1,7 +1,7 @@
 ---
 date: 2023-03-27 12:51:19.587000+00:00
 description: The best design will be featured in Alephium’s SWALPH shop!
-featuredImage: image_7fe70b3c9a.jpg
+featuredImage: image_61d13457bc.jpg
 title: 'Design Contest: All Things Leman'
 ---
 
@@ -9,7 +9,7 @@ title: 'Design Contest: All Things Leman'
 
 #### The best design will be featured in Alephium’s SWALPH shop!
 
-![](image_7fe70b3c9a.jpg)
+![](image_61d13457bc.jpg)
 
 The Alephium community is invited to participate in a design contest to celebrate the <a href="https://medium.com/@alephium/leman-network-upgrade-activation-on-march-30th-606884904c0c" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/leman-network-upgrade-activation-on-march-30th-606884904c0c" target="_blank">Leman Network Upgrade activation</a>! Use your creativity to come up with cool new Alephium-related graphic material!
 
@@ -35,7 +35,7 @@ The winner will be announced on April 14th on Alephium's social media channels.
 
 The design will be featured and available for purchase in Alephium’s shop with the participant’s username in the product description as “**Username — Winner of the All Things Leman Design Contest**.”
 
-![](image_e000e8e2cb.jpg)
+![](image_dd82494354.jpg)
 
 The winner will also receive a 300 ALPH prize, per rules defined in the <a href="https://github.com/alephium/community/blob/master/RewardProgramRules.md" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/community/blob/master/RewardProgramRules.md" rel="noopener" target="_blank"><strong>Grant &amp; Reward Program Rules</strong></a>.
 

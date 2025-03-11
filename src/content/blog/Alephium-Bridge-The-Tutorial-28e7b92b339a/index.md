@@ -1,7 +1,7 @@
 ---
 date: 2023-11-23 15:31:22.684000+00:00
 description: How to bridge your tokens + what to do on the Alephium Ecosystem
-featuredImage: image_ff91ddc895.png
+featuredImage: image_9b721622a7.png
 title: 'Alephium Bridge: The Tutorial'
 ---
 
@@ -9,7 +9,7 @@ title: 'Alephium Bridge: The Tutorial'
 
 #### How to bridge your tokens + what to do on the Alephium Ecosystem
 
-![](image_ff91ddc895.png)
+![](image_9b721622a7.png)
 
 _This tutorial was updated to reflect the new conditions after the_ <a href="https://medium.com/@alephium/rh%C3%B4ne-network-upgrade-activated-cbeb298585fe" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/rh%C3%B4ne-network-upgrade-activated-cbeb298585fe" target="_blank"><em>Rhône Network Upgrade</em></a>_: bridging from Alephium to Ethereum requires at least 205 blocks_ **_and_** _at least 55 minutes._
 
@@ -41,7 +41,7 @@ If you feel that you prefer a slow-paced guide, the written version is for you!
 
 It works with any of our <a href="https://alephium.org/#wallets" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/#wallets" rel="noopener" target="_blank">wallets</a>! But for this tutorial, we chose to show how easy it is to work with both the mobile wallet and the browser extension.
 
-![](image_9a66772885.jpg)
+![](image_2b45fb04ef.jpg)
 
 **2. Gas funds / Transactional costs**
 
@@ -65,37 +65,37 @@ The first step is to head on over to <a href="https://bridge.alephium.org/" clas
 
 Open the “Tokens” tab and make sure you pick “Ethereum” as your source chain and “Alephium” as your target chain!
 
-![](image_c9cd8471f9.jpg)
+![](image_bff81a4e7b.jpg)
 
 Proceed to pick and connect the wallet you will use as the “Ethereum” source.
 
-![](image_2d3895be8a.jpg)
+![](image_a715898698.jpg)
 
 Once you are done, press the “Select a Token” button and pick the tokens you wish to bridge over!
 
 In our case, this is going to be USDT.
 
-![](image_0351c86087.jpg)
+![](image_5bc5ff1403.jpg)
 
 Fill in the amount you wish to bridge, and press the “next” button.
 
-![](image_24cb9806af.jpg)
+![](image_3438e554b7.jpg)
 
 With the next step, you will need to connect your “Alephium” wallet of choice.
 
 For our case that is going to be the mobile wallet.
 
-![](image_8e270b76ab.jpg)
+![](image_69c644fb1c.jpg)
 
 In order to connect the mobile wallet, please pick the “Wallet Connect” option from the pop-up menu on screen.
 
 #### _The process shouldn’t be any more different than with any of the other two options._
 
-![](image_6979508f49.jpg)
+![](image_73ecad4fc5.jpg)
 
 **A QRCode will pop up on your screen.** We are now going to move over to the mobile wallet, where we will be using the “Scan a QRCode” option by tapping on the Scanner button in the up-right corner of the Alephium mobile wallet.
 
-![](image_bafe3d28dd.jpg)
+![](image_7df8bc04ba.jpg)
 
 Upon scanning the QR Code and accepting the connection, your mobile wallet should be tethered to the bridge dApp!
 
@@ -103,7 +103,7 @@ Returning to the bridge webpage, you can verify that the correct address is conn
 
 We will proceed forward by pressing the “Next” button.
 
-![](image_3818c08319.jpg)
+![](image_3118383f84.jpg)
 
 We are almost there! Now it’s time to approve the spending limit of our tokens from the Ethereum side of the bridge.
 
@@ -111,15 +111,15 @@ A pop-up should appear if you are using Metamask where you can approve the spend
 
 > _This action involves a gas fee_
 
-![](image_b0ca4127f4.jpg)
+![](image_29a5973490.jpg)
 
 We are sooo close! Once the approval is complete, we are diving into the final stages of bridging.
 
-![](image_b01ec4d59b.jpg)
+![](image_b4296c19e8.jpg)
 
 Press “Transfer” when ready and verify all information on the screen before confirming.
 
-![](image_c72d14a2f2.jpg)
+![](image_7e53505486.jpg)
 
 Confirm the transaction through your wallet of choice, in our case metamask.
 
@@ -129,15 +129,15 @@ And we are done! Once the transaction reaches finality on the Ethereum side, whi
 
 If, for some reason, you close the page or tab away from it. You can always recover your transaction using the txid available to you on screen.
 
-![](image_8a516a06d9.jpg)
+![](image_1fc13e403a.jpg)
 
 Using this txid you can recover your transaction through the “Redeem” tab, make sure you select the correct source chain you are bridging from.
 
-![](image_947a8ae65b.jpg)
+![](image_379edcb688.jpg)
 
 **And, that’s it!** Your WUSDT is now available on Alephium!
 
-![](image_dc3d12e8f4.jpg)
+![](image_1da96b000e.jpg)
 
 Now , let’s do the reverse!
 
@@ -151,31 +151,31 @@ Feel free to use any of the other wallets, as the process works with all of them
 
 **When choosing the wallet for connection , pick the “Extension Wallet”**
 
-![](image_d2066c5d66.jpg)
+![](image_956b4f0f23.jpg)
 
 Once you are done, please press the “Select a Token” button and pick the token you wish to bridge over! This time we are going for ALPH.
 
-![](image_d6068e0ea7.jpg)
+![](image_a57a036e03.jpg)
 
 Fill out the amount you wish to bridge and press “Next” when ready!
 
-![](image_b618b8ccad.jpg)
+![](image_3d1727e038.jpg)
 
 For the next step, you are going to connect your Metamask or any Wallet Connect-compatible wallet to perform this bridge.
 
-![](image_560aa298a7.jpg)
+![](image_26ee4af7e7.jpg)
 
 Once you have verified and confirmed the information on screen, pay close attention to the gas fee available to you, and when you’re ready, press next.
 
-![](image_b246679360.jpg)
+![](image_a809d34665.jpg)
 
 We find ourselves where we were before! It is time to send our native ALPH to get escorted over to the Ethereum blockchain. When you’re ready, press “Transfer” and a pop-up will appear.
 
-![](image_2c61e90955.jpg)
+![](image_0769d9fd6d.jpg)
 
 Once you have confirmed all is correct, proceed to confirm and sign the transaction through your Extension Wallet.
 
-![](image_2b456899c5.jpg)
+![](image_0364fdd830.jpg)
 
 We are almost there! Now we need to wait until our transaction reaches at least 205 confirmations **and at least 55 minutes** on the Alephium side of the bridge.
 
@@ -183,21 +183,21 @@ Keep in mind that if your wallet locks itself, you can always recover the transa
 
 _You can even track your confirmations by clicking on the “View on Explorer” button. Or simply recover your txid._
 
-![](image_ae33b5a85a.jpg)
+![](image_d2662c5b0a.jpg)
 
 So, you’ve waited for all the required conditions to be met. Now what? Easy! Head over to the redeem page on the bridge website, make sure that Alephium is set as your source chain and paste the txid of your transaction in the empty field to recover your transaction.
 
-![](image_5b2d49ca90.jpg)
+![](image_a412d2dbe0.jpg)
 
 Once you are ready, press the Recover button!
 
-![](image_fdf2c69be2.jpg)
+![](image_2b5741bd63.jpg)
 
 And Boom! We are so back! Connect your Ethereum wallet in our case Metamask and press Redeem!
 
 A pop-up will appear where you will need to confirm the transaction which involves a gas fee on Ethereum.
 
-![](image_f59f622679.jpg)
+![](image_c438f3f169.jpg)
 
 Once the transaction is confirmed, your tokens should appear in your Metamask wallet.
 

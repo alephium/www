@@ -2,13 +2,13 @@
 date: 2022-08-08 13:20:13.095000+00:00
 description: Here’s all the information you need to get started with Alephium ! And
   if that’s not enough, check our website or come talk to us on…
-featuredImage: image_28f5510a4d.jpeg
+featuredImage: image_d51d7c42be.jpeg
 title: 🚀 Welcome to Alephium (ALPH)
 ---
 
 ### 🚀 Welcome to Alephium (ALPH)
 
-![](image_28f5510a4d.jpeg)
+![](image_d51d7c42be.jpeg)
 
 #### Here’s all the information you need to get started with Alephium ! And if that’s not enough, check our <a href="https://alephium.org/" class="markup--anchor markup--h4-anchor" data-href="https://alephium.org/" rel="noopener" target="_blank">website</a> or come talk to us on <a href="https://discord.gg/JErgRBfRSB" class="markup--anchor markup--h4-anchor" data-href="https://discord.gg/JErgRBfRSB" rel="noopener ugc nofollow noopener" target="_blank">Discord</a>, <a href="https://t.me/alephiumgroup" class="markup--anchor markup--h4-anchor" data-href="https://t.me/alephiumgroup" rel="noopener ugc nofollow noopener" target="_blank">Telegram</a> or <a href="https://www.reddit.com/r/Alephium/" class="markup--anchor markup--h4-anchor" data-href="https://www.reddit.com/r/Alephium/" rel="noopener ugc nofollow noopener" target="_blank">Reddit</a> !
 

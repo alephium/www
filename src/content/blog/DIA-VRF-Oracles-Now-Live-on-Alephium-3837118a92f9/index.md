@@ -2,13 +2,13 @@
 date: 2025-03-07 14:21:31.795000+00:00
 description: After bringing price oracles to Alephium, DIA now introduces Verifiable
   Random Function (VRF) oracles to the ecosystem. This integration…
-featuredImage: image_9cd8d93496.png
+featuredImage: image_7fb863be9a.png
 title: DIA VRF Oracles Now Live on Alephium
 ---
 
 ### **DIA VRF Oracles Now Live on Alephium**
 
-![](image_9cd8d93496.png)
+![](image_7fb863be9a.png)
 
 After bringing price oracles to Alephium, DIA now introduces <a href="https://docs.alephium.org/infrastructure/Oracles/#randomness-oracles" class="markup--anchor markup--p-anchor" data-href="https://docs.alephium.org/infrastructure/Oracles/#randomness-oracles" rel="noopener" target="_blank">Verifiable Random Function (VRF) oracles</a> to the ecosystem. This integration enhances trustless randomness generation for a variety of decentralized applications, including gaming, lotteries, and NFT distributions.
 

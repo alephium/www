@@ -2,7 +2,7 @@
 date: 2023-09-28 16:34:51.022000+00:00
 description: Our ecosystem thrives with developers building amazing stuff on top of
   Alephium (services, dApps, etc…) that deliver a unique experience…
-featuredImage: image_457788125b.jpg
+featuredImage: image_61abe28f4e.jpg
 title: 'Builders Highlight #4: No Trust Verify'
 ---
 
@@ -10,7 +10,7 @@ title: 'Builders Highlight #4: No Trust Verify'
 
 _Our ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience and provide real utility for the users. In the Builders Highlight series, these builders will share more about their projects, thoughts, and insights on why building on Alephium! You can find_ <a href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" rel="noopener" target="_blank"><em>#1 here</em></a>_,_ <a href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" rel="noopener" target="_blank"><em>#2 here</em></a> _and_ <a href="https://medium.com/@alephium/builders-highlight-3-ayin-6be4a6bd4ec2" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-3-ayin-6be4a6bd4ec2" target="_blank"><em>#3</em></a>_!_
 
-![](image_457788125b.jpg)
+![](image_61abe28f4e.jpg)
 
 This episode is about No Trust Verify, creator of the first ever token on mainnet (ALF), now introducing <a href="https://walph.io" class="markup--anchor markup--p-anchor" data-href="https://walph.io" rel="noopener" target="_blank">Walph</a>, the first decentralized lottery powered by Alephium! <a href="https://twitter.com/cg1_bin" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/cg1_bin" rel="noopener" target="_blank">cgi-bin</a> and <a href="https://twitter.com/Oheka32" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/Oheka32" rel="noopener" target="_blank">Oheka</a> & other NTV members are hyperactive community members & fantastic builders, and we thank them for their time!
 
@@ -18,7 +18,7 @@ This episode is about No Trust Verify, creator of the first ever token on mainne
 
 We are going by <a href="https://notrustverify.ch" class="markup--anchor markup--p-anchor" data-href="https://notrustverify.ch" rel="noopener" target="_blank">No Trust Verify</a>, mostly from Switzerland and our main activity is experimenting with a fondness for privacy, self-sovereignty and trustless organization. We actively <a href="https://github.com/notrustverify" class="markup--anchor markup--p-anchor" data-href="https://github.com/notrustverify" rel="noopener" target="_blank">contribute</a> to many projects, such as Nym, where we manage the infrastructure, develop applications such as <a href="https://pastenym.ch/" class="markup--anchor markup--p-anchor" data-href="https://pastenym.ch/" rel="noopener" target="_blank">pastenym.ch</a>, and educate and raise awareness of privacy issues. Likewise, we are also active on Alephium in various ways, whether by managing certain components such as full node or backend explorer, being active in the community or helping to integrate NymConnect into the Alephium ecosystem.
 
-![](image_dc0b7819e6.png)
+![](image_d8c67fefb0.png)
 
 ### **Tell us a little bit about your project. What is it, what does it do, and how does it interact with the Alephium blockchain?**
 
@@ -28,7 +28,7 @@ Walph takes this basic idea and expands upon it by introducing additional featur
 
 Finally, Walph offers a unique “Pool” mode, accessible exclusively to ALF token holders. This exclusive feature adds an extra layer of excitement and engagement for ALF token holders, providing them with access to unique pools and prizes.
 
-![](image_089466eb57.gif)
+![](image_a723c36dac.gif)
 
 ### What motivated you to develop on Alephium, and what sets it apart from other blockchain platforms?
 
@@ -40,7 +40,7 @@ One of our No Trust Verify team members took the initiative to launch the first 
 
 Ralph for the smart-contract with NextJS for the frontend. Basically, we stayed with the stack that Alephium used for the template, and it works well.
 
-![](image_4c57e75b2a.png)
+![](image_1d2be79915.png)
 
 ### What features are you most proud of?
 

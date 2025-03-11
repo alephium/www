@@ -2,13 +2,13 @@
 date: 2024-04-20 13:26:33.259000+00:00
 description: Our ecosystem thrives with developers building amazing projects on top
   of Alephium, delivering a unique experience and providing real…
-featuredImage: image_4b0f230ff4.jpg
+featuredImage: image_44c631f654.jpg
 title: 'Builders Highlight #11: Fugashu'
 ---
 
 ### Builders Highlight \#11: Fugashu
 
-![](image_4b0f230ff4.jpg)
+![](image_44c631f654.jpg)
 
 _Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real utility for users. In the Builders Highlight series, they share more about their projects, thoughts, and insights on why building on Alephium. You can find_ <a href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" rel="noopener" target="_blank"><em>#1</em></a>_,_ <a href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" rel="noopener" target="_blank"><em>#2</em></a>, <a href="https://medium.com/@alephium/builders-highlight-3-ayin-6be4a6bd4ec2" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-3-ayin-6be4a6bd4ec2" rel="noopener" target="_blank"><em>#3</em></a>, <a href="https://medium.com/@alephium/builders-highlight-4-no-trust-verify-9ea495ca826f" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-4-no-trust-verify-9ea495ca826f" rel="noopener" target="_blank"><em>#4</em></a>, <a href="https://medium.com/@alephium/builders-highlight-5-deadrare-d5ff90d6161e" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-5-deadrare-d5ff90d6161e" rel="noopener" target="_blank"><em>#5</em></a>, <a href="https://medium.com/@alephium/builders-highlight-6-what-the-duck-0aedc602ecfd" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-6-what-the-duck-0aedc602ecfd" rel="noopener" target="_blank"><em>#6</em></a>, <a href="https://medium.com/@alephium/builders-highlight-7-alphpad-bbd4f4a34fd5" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-7-alphpad-bbd4f4a34fd5" rel="noopener" target="_blank"><em>#7</em></a>, <a href="https://medium.com/@alephium/builders-highlight-8-ngu-money-f8bf05e36e99" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-8-ngu-money-f8bf05e36e99" rel="noopener" target="_blank"><em>#8</em></a>_,_ <a href="https://medium.com/@alephium/builders-highlight-9-mobula-f9c45dc6c691" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-9-mobula-f9c45dc6c691" rel="noopener" target="_blank"><em>#9,</em></a> _and_ <a href="https://medium.com/@alephium/builders-highlight-10-amolyus-39e03b6bd3f0" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-10-amolyus-39e03b6bd3f0" target="_blank"><em>#10</em></a> _here!_
 
@@ -36,7 +36,7 @@ After researching, I was impressed by its unique features, such as the <a href="
 
 #### You’ve been one of the big winners of the hackathon. How was your experience hacking in there? How’s the learning curve to get going? What took the most time to grasp?
 
-![](image_264b4d9c08.png)
+![](image_ec682126a5.png)
 
 <a href="https://medium.com/@alephium/hackathon-1-pioneers-submissions-76b869089ace" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/hackathon-1-pioneers-submissions-76b869089ace" target="_blank">Participating in the hackathon</a> was an amazing experience. I was particularly drawn to the challenge of visualizing Alephium’s sharding algorithm through a 3D interactive environment, a task that required me to learn <a href="https://threejs.org/" class="markup--anchor markup--p-anchor" data-href="https://threejs.org/" rel="noopener" target="_blank">Three.js</a> from scratch. Developing both the front-end visualizer and an efficient backend to manage real-time data was challenging, especially while juggling a full-time job.
 
@@ -46,13 +46,13 @@ After some investigation, we determined that the problem stemmed from the librar
 
 #### **Tell us a little bit about your history with Alephium, because it’s been a little while you’ve been around! First you built alph.land, then the visualizer for the hackathon and since then you created both a NFT collection & are working on a game! Let’s start with alph.land… What’s your vision for its development?**
 
-![](image_7d7bb1e279.png)
+![](image_14373b0f8b.png)
 
 <a href="http://alph.land" class="markup--anchor markup--p-anchor" data-href="http://alph.land" rel="noopener" target="_blank">Alph.land</a> serves as a virtual information hub where newcomers can easily discover and explore ongoing projects within the Alephium blockchain. My vision for alph.land is to continue enhancing its functionality to better serve the community’s needs, with success indicators being frequent community engagement and new project integrations & pull requests.
 
 #### What about the stats/visualizer? Your project has been commended for enhancing the understanding of the Alephium blockchain. What inspired you to focus on visualizing the blockflow sharding algorithm? Will you evolve it to visualize more things? Or was it a one-off for the hackathon?
 
-![](image_264b4d9c08.png)
+![](image_ec682126a5.png)
 
 <a href="https://stats.alph.land/" class="markup--anchor markup--p-anchor" data-href="https://stats.alph.land/" rel="noopener" target="_blank">The stats dashboard</a> was initially a proof of concept, and we plan to include more statistics in the future. A community member introduced me to the idea of the <a href="https://visualizer.alph.land/" class="markup--anchor markup--p-anchor" data-href="https://visualizer.alph.land/" rel="noopener" target="_blank">visualizer.</a> Having long been interested in 3D web development, I decided to dive in!
 
@@ -60,13 +60,13 @@ The results have been quite impressive, at least to me. As a teacher who enjoys 
 
 #### Tell us more about Pyreplay, which seems to be your most ambitious project! You started with a bang as your NFT collection minted really fast. Can you describe what pyreplay is, how do the NFTs interact with it?
 
-![](image_0e13e027a8.png)
+![](image_d7e2e86f1a.png)
 
 <a href="http://pyreplay.com" class="markup--anchor markup--p-anchor" data-href="http://pyreplay.com" rel="noopener" target="_blank">Pyreplay</a> is envisioned as a competitive arcade platform where users can engage in various mini-games and classic arcade challenges. The overwhelming support from the Alephium community, evidenced by our NFT collection selling out in just four hours, was truly heartening. These NFTs not only offer holders reduced gameplay costs but also a share in the project’s revenue, embedding them deeply into the ecosystem of Pyreplay. Thank you to everyone who has supports me on this journey and believes in the same vision!
 
 #### How do you see the future of the Pyreplay? What’s on your roadmap? What would be the Pyreplay moonshot?
 
-![](image_ea6f3e0a98.png)
+![](image_c3f270110d.png)
 
 The ideal future for Pyreplay is a vibrant and expanding community of players. Our roadmap includes scaling up the number of games and incorporating community tokens on Alephium. The ‘moonshot’ for Pyreplay would be establishing it as a leading platform in blockchain-based competitive gaming, with continual growth in our player base and game offerings.
 

@@ -1,7 +1,7 @@
 ---
 date: 2023-03-08 12:35:48.426000+00:00
 description: A Collective Effort by the Community
-featuredImage: image_661a4f40af.jpg
+featuredImage: image_337a30a98f.jpg
 title: Alephium Listed on Tradeogre Exchange
 ---
 
@@ -9,7 +9,7 @@ title: Alephium Listed on Tradeogre Exchange
 
 #### A Collective Effort by the Community
 
-![](image_661a4f40af.jpg)
+![](image_337a30a98f.jpg)
 
 Alephium, the first operational sharded L1 blockchain scaling and enhancing PoW & UTXO concepts, has been listed on its second exchange: <a href="https://tradeogre.com/exchange/BTC-ALPH" class="markup--anchor markup--p-anchor" data-href="https://tradeogre.com/exchange/BTC-ALPH" rel="noopener" target="_blank">Tradeogre.com</a>! This is a significant milestone for Alephium, made possible due to its community push to get Alephium’s native token ALPH listed on a new exchange.
 
@@ -23,13 +23,13 @@ The listing on Tradeogre is a big step towards greater circulation of ALPH, as i
 
 ### Listing and Trading Details
 
-![](image_1848f97d93.jpg)
+![](image_6f668840a4.jpg)
 
 The trading pair is ALPH/BTC, the market is already live and you can access it <a href="https://tradeogre.com/exchange/BTC-ALPH" class="markup--anchor markup--p-anchor" data-href="https://tradeogre.com/exchange/BTC-ALPH" rel="noopener" target="_blank">here</a>
 
 To be able to trade on Tradeogre, you must register using an email, and it is a good security practice to set up 2-factor authentication. You can register <a href="https://tradeogre.com/account/signin" class="markup--anchor markup--p-anchor" data-href="https://tradeogre.com/account/signin" rel="noopener" target="_blank">here</a>. After that, go to the “Balances” section to be able to make your deposit.
 
-![](image_714409d460.jpg)
+![](image_da12a9de73.jpg)
 
 Choose the currency you want to send and click on “Deposit”. This will open a new page with the address you should send the amount to. Double-check it when preparing your transaction! After your funds arrive at the exchange, you can start trading.
 

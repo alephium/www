@@ -1,7 +1,7 @@
 ---
 date: 2022-03-17 09:24:59.276000+00:00
 description: Prizes for a total of 10’000 ALPH 💰
-featuredImage: image_ea7eb458e3.jpg
+featuredImage: image_fb9ec1d3ef.jpg
 title: ✨Contest for all video creators 🚀
 ---
 
@@ -9,7 +9,7 @@ title: ✨Contest for all video creators 🚀
 
 ### Prizes for a total of 10’000 ALPH 💰
 
-![](image_ea7eb458e3.jpg)
+![](image_fb9ec1d3ef.jpg)
 
 🐰 It’s quite a trip down the YouTube-hole to watch the <a href="https://www.youtube.com/results?search_query=alephium" class="markup--anchor markup--p-anchor" data-href="https://www.youtube.com/results?search_query=alephium" rel="noopener" target="_blank">video content created around the topic of Alephium</a>. Miners are showing us so much love, and there are a lot of really on point tutorials. It’s overwhelming to be frank!
 

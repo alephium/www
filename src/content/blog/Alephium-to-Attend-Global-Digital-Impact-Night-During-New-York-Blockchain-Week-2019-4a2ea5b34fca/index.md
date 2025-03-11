@@ -2,7 +2,7 @@
 date: 2019-05-10 18:23:08.630000+00:00
 description: The Alephium team will be attending the Global Digital Impact Night during
   New York Blockchain Week 2019.
-featuredImage: image_70f2989076.png
+featuredImage: image_b30cd714a7.png
 title: Alephium to Attend Global Digital Impact Night During New York Blockchain Week
   2019
 ---
@@ -11,7 +11,7 @@ title: Alephium to Attend Global Digital Impact Night During New York Blockchain
 
 The Alephium team will be attending the Global Digital Impact Night during New York Blockchain Week 2019. Blockchain Week is a series of events, meetups, and conferences that draws thousands of global enthusiasts from all facets of the blockchain community to New York City. The affair runs from May 10th to 18th and consists of various independently organized educational and developer-focused events that aim to promote adoption of blockchain technologies by sharing first-hand information about the industry. From startups and tech developers to long-time traders and experts, enthusiasts will gather to share ideas and discuss the past, present, and future of blockchain. Hundreds of events will take place during the course of the week covering a wide array of blockchain topics.
 
-![](image_70f2989076.png)
+![](image_b30cd714a7.png)
 
 On May 13th, BitMax.io and Block72 will host their Global Digital Impact Night. The event is designed to promote the circulation of blockchain knowledge in order to better grasp the rapidly changing market, bring together top global resources, and reinforce a united blockchain community. With sponsors Cred, BHD, Shyft, Ampleforth, S Block, Ankr and BYTOM, representatives from more than 30 top institutions and over 50 legendary investors will discuss global blockchain trends and the future of the market.
 

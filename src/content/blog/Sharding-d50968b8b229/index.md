@@ -1,7 +1,7 @@
 ---
 date: 2023-02-22 13:42:39.451000+00:00
 description: A Technical Promenade, part 4
-featuredImage: image_7da182391f.jpg
+featuredImage: image_1b7ce2bbf2.jpg
 title: Sharding
 ---
 
@@ -9,7 +9,7 @@ title: Sharding
 
 #### A Technical Promenade, part 4
 
-![](image_7da182391f.jpg)
+![](image_1b7ce2bbf2.jpg)
 
 _This is part of a series of regular articles on key concepts for understanding_ <a href="https://alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/" rel="noopener" target="_blank"><em>Alephium</em></a> _in particular and blockchains in general. If you’re pondering on which chain to build your dApps, if you’re a curious crypto-traveler, or a fellow decentralization enthusiast, welcome! You can find the previous articles in the series here. (_<a href="https://medium.com/@alephium/block-time-and-block-size-16e37292444f" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/block-time-and-block-size-16e37292444f" target="_blank"><em>#1</em></a>_,_ <a href="https://medium.com/@alephium/transactions-per-second-tps-f13217a49e39" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/transactions-per-second-tps-f13217a49e39" target="_blank"><em>#2</em></a>_,_ <a href="https://medium.com/@alephium/time-to-finality-17d64eeffd25" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/time-to-finality-17d64eeffd25" target="_blank"><em>#3</em></a>_)_
 

@@ -2,7 +2,7 @@
 date: 2023-06-20 13:23:04.857000+00:00
 description: 'This article follows Alephium’s Tech Talk #10, where Alexis Roussel
   from NYM delves into the fascinating realm of mix networks and their…'
-featuredImage: image_bc2c0ff213.jpg
+featuredImage: image_32222cf239.jpg
 title: 'Tech Talk #10 — NYM, Alexis Roussel &amp; the Future of Privacy'
 ---
 
@@ -35,7 +35,7 @@ By shuffling and encrypting packets, mixnets introduce significant noise, making
 
 **The Technical Framework of NYM’s Mixnet Solution**
 
-![](image_bc2c0ff213.jpg)
+![](image_32222cf239.jpg)
 
 NYM’s mixnet solution employs a sophisticated technical framework to maximize privacy and scalability. Central to this framework are Sphinx packets, standardized packets that carry encrypted data and routing information. Mix nodes receive packets, shuffle them (and mix them with fake — but identical, dummy packets) to obfuscate their original sources, and then forward them to their destinations with intentional delays, rendering traffic analysis nearly impossible.
 
@@ -43,7 +43,7 @@ One key advantage of NYM’s approach is the scalability potential of mixnets. U
 
 **Alephium + NYM: An Opportunity for Increased Privacy in Transactions**
 
-![](image_405801b538.jpg)
+![](image_9cb6c26956.jpg)
 
 Cryptocurrencies present a unique context where privacy is essential (and hard to achieve). While traditional financial systems rely on trusted intermediaries such as banks, they operate on decentralized networks, offering new possibilities for financial autonomy and privacy.
 
@@ -123,4 +123,4 @@ I feel that being part of this movement and pushing it in the right direction, a
 
 **We’ll keep you updated through** <a href="https://discord.gg/XsGpZ5VDTM" class="markup--anchor markup--p-anchor" data-href="https://discord.gg/XsGpZ5VDTM" rel="noopener" target="_blank"><strong>Discord</strong></a>**,** <a href="https://t.me/alephiumgroup" class="markup--anchor markup--p-anchor" data-href="https://t.me/alephiumgroup" rel="noopener" target="_blank"><strong>Telegram</strong></a> **and** <a href="https://twitter.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium" rel="noopener" target="_blank"><strong>Twitter</strong></a>**. Stay tuned, and thank you for your support!**
 
-![](image_64274f2224.png)
+![](image_01a8c2e59d.png)

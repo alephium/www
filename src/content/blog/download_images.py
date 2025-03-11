@@ -9,18 +9,21 @@ import hashlib
 
 def download_image(url, output_dir):
     try:
-        response = requests.get(url, stream=True)
+        # Remove the "/max/800" segment from the URL to get high quality version
+        high_quality_url = url.replace("/max/800", "")
+
+        response = requests.get(high_quality_url, stream=True)
         response.raise_for_status()
 
         # Get file extension from URL or default to .jpg
-        parsed_url = urlparse(url)
+        parsed_url = urlparse(high_quality_url)
         path = parsed_url.path
         ext = os.path.splitext(path)[1].lower()
         if not ext or ext not in ['.jpg', '.jpeg', '.png', '.gif', '.webp']:
             ext = '.jpg'
 
         # Create a filename based on URL hash
-        url_hash = hashlib.md5(url.encode()).hexdigest()[:10]
+        url_hash = hashlib.md5(high_quality_url.encode()).hexdigest()[:10]
         filename = f"image_{url_hash}{ext}"
         filepath = os.path.join(output_dir, filename)
 
@@ -48,8 +51,11 @@ def process_markdown_file(md_file):
         print(f"No valid frontmatter found in {md_file}")
         return
 
-    frontmatter = yaml.safe_load(parts[1]) or {}
+    frontmatter_text = parts[1]
     markdown_content = parts[2]
+
+    # Parse frontmatter
+    frontmatter = yaml.safe_load(frontmatter_text) or {}
 
     # Find all image URLs in the markdown content
     image_pattern = r'!\[.*?\]\((https?://[^\s\)]+)\)'

@@ -71,7 +71,7 @@ Here are some of the most notable memes in no particular order (some are 🔥). 
 
 ![](image_844329abcf.jpeg)
 
-![](image_63acd37e7f.jpeg)
+![](image_b9562f323a.jpeg)
 
 ![](image_82015e738a.jpeg)
 

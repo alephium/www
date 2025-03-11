@@ -2,13 +2,13 @@
 date: 2023-12-18 16:57:35.288000+00:00
 description: Following the success of our previous community initiatives, we’re thrilled
   to introduce the next chapter in Alephium’s community…
-featuredImage: image_f7a89c4724.jpg
+featuredImage: image_a2ab6ff67c.jpg
 title: Alephium launches its Ambassador Program
 ---
 
 ### **Alephium launches its Ambassador Program**
 
-![](image_f7a89c4724.jpg)
+![](image_a2ab6ff67c.jpg)
 
 Following the success of our previous community initiatives, we’re thrilled to introduce the next chapter in Alephium’s community engagement: the Ambassador program!
 
@@ -20,7 +20,7 @@ In the past 2 years, the <a href="https://github.com/alephium/community/blob/mas
 
 ### **Enter the Ambassador program!**
 
-![](image_11cfeec943.jpg)
+![](image_7f1f38fbd8.jpg)
 
 The Ambassador program is an opportunity for motivated Alephium community members to participate in shaping the future of the project.
 
@@ -54,7 +54,7 @@ And more… (any other idea? Send it to us!)
 
 ### **What’s the process for becoming an ambassador?**
 
-![](image_5175b8c6ae.jpg)
+![](image_3ef6a74878.jpg)
 
 The first program will onboard up to 10 Ambassadors for the first cohort.
 

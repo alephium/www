@@ -2,13 +2,13 @@
 date: 2023-12-15 16:29:25.284000+00:00
 description: One month after the release of the bridge on mainnet, Cheng, Hongchao
   & Maud were interviewed by Vladimir in a Twitter space AMA. Where are…
-featuredImage: image_b6b81e52ce.jpg
+featuredImage: image_1f582eb3bd.jpg
 title: The Alephium Bridge AMA— part 1
 ---
 
 ### The Alephium Bridge AMA— part 1
 
-![](image_b6b81e52ce.jpg)
+![](image_1f582eb3bd.jpg)
 
 _One month after the release of the_ <a href="https://bridge.alephium.org/#/transfer" class="markup--anchor markup--p-anchor" data-href="https://bridge.alephium.org/#/transfer" rel="noopener" target="_blank"><em>bridge</em></a> _on mainnet, Cheng, Hongchao & Maud were interviewed by Vladimir in a Twitter space AMA. Where are we on the bridge, how did it come to be, and what’s ahead for the bridge?_
 

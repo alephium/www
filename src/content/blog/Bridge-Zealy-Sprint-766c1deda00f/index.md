@@ -1,7 +1,7 @@
 ---
 date: 2023-11-29 14:06:15.371000+00:00
 description: Spread the word about the bridge & share 3’000 $ALPH in prize!
-featuredImage: image_b0460d4cd7.jpg
+featuredImage: image_0a276df54e.jpg
 title: Bridge Zealy Sprint
 ---
 
@@ -9,7 +9,7 @@ title: Bridge Zealy Sprint
 
 #### _Spread the word about the bridge & share 3’000 \$ALPH in prize!_
 
-![](image_b0460d4cd7.jpg)
+![](image_0a276df54e.jpg)
 
 _The bridge has launched two weeks ago, there’s been more than_ <a href="https://explorer.bridge.alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://explorer.bridge.alephium.org/" rel="noopener" target="_blank"><em>400 transfers since</em></a>_, it has more than_ <a href="https://defillama.com/protocol/alephium-bridge" class="markup--anchor markup--p-anchor" data-href="https://defillama.com/protocol/alephium-bridge" rel="noopener" target="_blank"><em>1.2M in TVL</em></a> _and wrapped \$ALPH has more than 500_ <a href="https://etherscan.io/token/0x590f820444fa3638e022776752c5eef34e2f89a6" class="markup--anchor markup--p-anchor" data-href="https://etherscan.io/token/0x590f820444fa3638e022776752c5eef34e2f89a6" rel="noopener" target="_blank"><em>holders</em></a> _on ethereum!_
 
@@ -35,7 +35,7 @@ You’ll find a dedicated sprint leaderboard, where you can track your progress.
 2 — Go to “Sprint quests” **(Please make sure you are doing the Sprint’s quests!)**   
 3 — Here you go!
 
-![](image_924a1f81ea.png)
+![](image_44ba740150.png)
 
 **How long does it last?**
 

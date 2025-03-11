@@ -1,7 +1,7 @@
 ---
 date: 2023-09-01 11:50:48.968000+00:00
 description: 'The Alephium Toolkit: A Guide to Creating a Multisig Wallet'
-featuredImage: image_f6d6d4de58.png
+featuredImage: image_674414bc53.png
 title: Alephium Multisig GUI is here!
 ---
 
@@ -11,7 +11,7 @@ title: Alephium Multisig GUI is here!
 
 _Multisignature wallets are essential to a maturing infrastructure, as they provide more granularity & security in managing \$ALPH wallets. The core-team is very happy to unveil the Multisig Wallet Creation tool, the first in the_ <a href="https://alephium.github.io/alephium-toolkit/" class="markup--anchor markup--p-anchor" data-href="https://alephium.github.io/alephium-toolkit/" rel="noopener" target="_blank"><em>Alephium Toolkit</em></a>_!_
 
-![](image_f6d6d4de58.png)
+![](image_674414bc53.png)
 
 #### **Why use a Multisig?**
 
@@ -46,13 +46,13 @@ All the signers need to complete the following steps:
 - After the successful connection, your wallet information will appear in the wallet info section.
 - Copy your public key, and send it to the creator of the multisig.
 
-![](image_0eb328cdb6.jpg)
+![](image_69618fc271.jpg)
 
 #### **2 — Create the Wallet**
 
 The second step consists of creating the multisig with the public keys of all signers. The creator of the multisig (which can be any of the signers (or someone else) has to complete the following steps:
 
-![](image_746cce6d77.jpg)
+![](image_703316889a.jpg)
 
 - Navigate to <a href="https://alephium.github.io/alephium-toolkit/" class="markup--anchor markup--li-anchor" data-href="https://alephium.github.io/alephium-toolkit/" rel="noopener" target="_blank">Create Multisig Wallet</a>
 - Choose a name for your multisig wallet
@@ -66,7 +66,7 @@ The second step consists of creating the multisig with the public keys of all si
 
 In this third step, the signers will import the multisig wallet, so they are able to subsequently sign transactions. All the signers have to complete the following:
 
-![](image_695136db11.jpg)
+![](image_13be04d49d.jpg)
 
 - Navigate to <a href="https://alephium.github.io/alephium-toolkit/#/multisig/import" class="markup--anchor markup--li-anchor" data-href="https://alephium.github.io/alephium-toolkit/#/multisig/import" rel="noopener" target="_blank">Import Multisig Wallet</a>
 - Click on “Import Multisig”
@@ -78,7 +78,7 @@ The next step is to put some money on the multisig, so you can actually build, s
 
 Before you can make transactions with the multisig, you need to send some \$ALPH to it.
 
-![](image_3ceae00f1a.jpg)
+![](image_cd263d659c.jpg)
 
 - Go to <a href="https://alephium.github.io/alephium-toolkit/#/multisig/show" class="markup--anchor markup--li-anchor" data-href="https://alephium.github.io/alephium-toolkit/#/multisig/show" rel="noopener" target="_blank">Show Multisig Wallet</a>
 - Copy the “address” content
@@ -89,20 +89,20 @@ Before you can make transactions with the multisig, you need to send some \$ALPH
 
 Any party to a multisig wallet can now act as the builder of a transaction. So get on your builder’s hat, and start building a transaction:
 
-![](image_0e6a9b5e50.jpg)
+![](image_299b7642e5.jpg)
 
 - Navigate to <a href="https://alephium.github.io/alephium-toolkit/#/multisig/build-tx" class="markup--anchor markup--li-anchor" data-href="https://alephium.github.io/alephium-toolkit/#/multisig/build-tx" rel="noopener" target="_blank">Build Transaction</a>
 - Choose your multisig from the list, select the signers you need/want, the amount and the recipient’s address for the transaction. Check well that you selected the correct signers, and that you are satisfying the quorum requirement!
 - Click “Build Transaction”. You’ll get a text blurb which is essentially an unsigned transaction.
 - Copy this, and send it to the signers you selected.
 
-![](image_27ee344278.jpg)
+![](image_a1d774279f.jpg)
 
 #### **6 — Sign the Transaction**
 
 You are a party to a multisig transaction, the builder of the transaction sent you a transaction to sign in the form of a long text blurb, this is what you need to do:
 
-![](image_f7a3ac6e6d.jpg)
+![](image_713520dbab.jpg)
 
 - Go to <a href="https://alephium.github.io/alephium-toolkit/#/multisig/sign-tx" class="markup--anchor markup--li-anchor" data-href="https://alephium.github.io/alephium-toolkit/#/multisig/sign-tx" rel="noopener" target="_blank">Sign Transaction</a>
 - Make sure you are a party to the multisig (if you haven’t imported the multisig wallet, this is not going to work, see step 3)
@@ -113,20 +113,20 @@ You are a party to a multisig transaction, the builder of the transaction sent y
 - On the “sign transaction” page, below the transaction hash, a signature will appear
 - Copy the signature & paste it on the “Build Transaction” page (or send it back to the transaction builder!)
 
-![](image_8c92da1b31.jpg)
+![](image_fd2371b182.jpg)
 
 #### **7— Send the Transaction**
 
 At this stage, the wallet has been created, a transaction has been built and distributed to all signers, they have signed the transaction and sent back the signatures to the builder. He must now do the following:
 
-![](image_9ec21ba787.jpg)
+![](image_b77f0c1d1a.jpg)
 
 - Go back to the “<a href="https://alephium.github.io/alephium-toolkit/#/multisig/build-tx" class="markup--anchor markup--li-anchor" data-href="https://alephium.github.io/alephium-toolkit/#/multisig/build-tx" rel="noopener" target="_blank">build transaction</a>” page
 - Input the signatures in the relevant field
 - Click “submit”: the transaction will be sent.
 - You can click on “view on explorer” to check it on the explorer
 
-![](image_99faf344b7.jpg)
+![](image_91959a0e77.jpg)
 
 And that’s it!
 

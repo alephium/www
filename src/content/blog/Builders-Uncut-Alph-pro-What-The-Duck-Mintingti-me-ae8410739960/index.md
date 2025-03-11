@@ -2,13 +2,13 @@
 date: 2024-08-14 13:43:07.996000+00:00
 description: This interview was conducted around the Athens Builders Meetup, which
   took place at the end of June 2024. If you’re just discovering…
-featuredImage: image_afbbc7fce4.png
+featuredImage: image_ff04b57175.png
 title: Builders Uncut —Alph.pro, What The Duck &amp; Mintingti.me
 ---
 
 ### Builders Uncut —Alph.pro, What The Duck & Mintingti.me
 
-![](image_afbbc7fce4.png)
+![](image_ff04b57175.png)
 
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
@@ -34,7 +34,7 @@ Later, I became a full-stack web developer, and then I re-found crypto after gai
 
 Yeah, that was the main piece. I realized my vision had different parts, so I modularized them into individual projects.
 
-![](image_e84a458c69.png)
+![](image_6f409d33f8.png)
 
 A Discord bot handles token prices and tipping, which is non-custodial. It integrates with your Alph wallet using WalletConnect behind the scenes. The indexer is easy to self-host and scans the node in the explorer. It has a plugin system, so you can write new plugins with about 50 to 100 lines of code to integrate new DEXs.
 
@@ -62,7 +62,7 @@ Yes, originally, What the Duck was just an NFT series, similar to Shades of DeFi
 
 Yes, Minting Time came from my work on Quack Attack and What the Duck. I’m researching dynamic on-chain NFTs. My goal with Quack Attack is to have a gamified, customizable system where you can collect items and equip them. Minting Time was a proof of concept for how I envision the game working.
 
-![](image_c59824ec9d.png)
+![](image_fd7048f025.png)
 
 #### But the main piece of your work is Alph.pro, correct?
 

@@ -2,13 +2,13 @@
 description: This interview was conducted around the Athens Builders Meetup, which
   took place at the end of June 2024. If you’re just discovering…
 draft: true
-featuredImage: image_3d6bbf7d31.png
+featuredImage: image_f381ed39e3.png
 title: Builders Uncut — Invariant
 ---
 
 ### Builders Uncut — Invariant
 
-![](image_3d6bbf7d31.png)
+![](image_f381ed39e3.png)
 
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
@@ -34,7 +34,7 @@ I’m currently working on <a href="https://invariant.app/swap" class="markup--a
 
 We’ve developed a modular and customizable solution that allows users to have full control over their positions. Whether you’re an advanced user or just looking for an easier way to manage your liquidity, Invariant is designed to cater to your needs. Our approach allows for a more efficient and user-friendly experience compared to traditional AMMs.
 
-![](image_57bc6a8bf9.png)
+![](image_0bde1efe0b.png)
 
 #### What has your experience been like developing on Alephium?
 

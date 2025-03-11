@@ -2,13 +2,13 @@
 date: 2024-01-04 09:34:01.540000+00:00
 description: The Alephium Mobile Wallet is a great addition to the current set of
   wallets developed by the core contributors. It is available for…
-featuredImage: image_ae51462b60.jpg
+featuredImage: image_f3c0a097ca.jpg
 title: The Alephium Mobile Wallet Journey!
 ---
 
 ### The Alephium Mobile Wallet Journey!
 
-![](image_ae51462b60.jpg)
+![](image_f3c0a097ca.jpg)
 
 _The Alephium Mobile Wallet is a great addition to the current set of wallets developed by the core contributors. It is available for_ <a href="https://play.google.com/store/apps/details?id=org.alephium.wallet" class="markup--anchor markup--p-anchor" data-href="https://play.google.com/store/apps/details?id=org.alephium.wallet" rel="noopener" target="_blank"><em>Android</em></a> _and_ <a href="https://apps.apple.com/ch/app/alephium-wallet/id6469043072?l=en-GB" class="markup--anchor markup--p-anchor" data-href="https://apps.apple.com/ch/app/alephium-wallet/id6469043072?l=en-GB" rel="noopener" target="_blank"><em>iOS</em></a>_. It’s easy to use, fun and good-looking! Try it!_
 
@@ -36,7 +36,7 @@ The usability and technical construction paradigms on Android and iOS are so dif
 
 If you look at the Android hardware (the models), the devices that could run your app are so different! Some smartphones have a very small screen; others are huge. Some are super slow. On iOS people tend to upgrade their phones quite regularly, but on Android, it’s not the same: you still have a lot of older devices. To ensure that the app works on many devices is quite challenging.
 
-![](image_68d9edcad2.jpg)
+![](image_1d55b45e64.jpg)
 
 **Vladimir Moshnyager: So Android had constraints not present on iOS. But was that the only issue?**
 
@@ -48,7 +48,7 @@ Making the app efficient and smooth was also something that we focused on, and w
 
 ### Reflection on the Process
 
-![](image_f209ae8e9d.jpg)
+![](image_278d927760.jpg)
 
 **Vladimir Moshnyager: Did you enjoy the process of building the mobile app?**
 
@@ -84,7 +84,7 @@ One that really stood out was Rainbow, as it was really user-friendly. We can sa
 
 ### Target Audience and Usage
 
-![](image_ff13c02908.jpg)
+![](image_fed0ee8b68.jpg)
 
 **Vladimir Moshnyager: Who is the target audience for the mobile wallet?**
 
@@ -124,7 +124,7 @@ _Testing and Final Tweaks:_ The last phase involves testing and refinement. It e
 
 ### Looking at the future
 
-![](image_80cdc6aa31.jpg)
+![](image_116dfcde28.jpg)
 
 **Vladimir Moshnyager: What’s the roadmap for the wallet?**
 

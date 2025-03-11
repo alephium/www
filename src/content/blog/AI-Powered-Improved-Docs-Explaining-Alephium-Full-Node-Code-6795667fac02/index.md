@@ -1,7 +1,7 @@
 ---
 date: 2023-03-31 12:54:28.661000+00:00
 description: New documentation was created with the help of Autodoc
-featuredImage: image_0eb8ed85f5.jpg
+featuredImage: image_05a75ee0d0.jpg
 title: 'AI-Powered Improved Docs: Explaining Alephium Full Node Code'
 ---
 
@@ -9,7 +9,7 @@ title: 'AI-Powered Improved Docs: Explaining Alephium Full Node Code'
 
 #### New documentation was created with the help of Autodoc
 
-![](image_0eb8ed85f5.jpg)
+![](image_05a75ee0d0.jpg)
 
 AI-powered tools have become increasingly popular for various tasks, including code documentation. <a href="https://github.com/context-labs/autodoc" class="markup--anchor markup--p-anchor" data-href="https://github.com/context-labs/autodoc" rel="noopener" target="_blank">Autodoc</a> by <a href="https://github.com/context-labs/autodoc" class="markup--anchor markup--p-anchor" data-href="https://github.com/context-labs/autodoc" rel="noopener" target="_blank">Sam Hogan</a> leverages OpenAI’s GPT-4 to parse automatically and document source code. This article will discuss how Alephium used Autodoc to generate documentation for the Alephium full-node source code.
 
@@ -27,11 +27,11 @@ Alephium used Autodoc to parse and document the Alephium full-node source code. 
 
 Each file created has a link to the code file in the repository.
 
-![](image_e11961193c.jpg)
+![](image_cf89bf76d1.jpg)
 
 Each doc created has a link to the code file in the repository, followed by a description and explanation of the components of the Alephium source code.
 
-![](image_b12554bee0.jpg)
+![](image_0fd4f9047d.jpg)
 
 This was a great addition to the source code documentation, freeing the Alephium core devs to focus on writing code and not having to write the documentation from the ground up. It also helps the new developers’ onboarding process, as the documentation is even more complete now.
 

@@ -2,13 +2,13 @@
 date: 2022-10-28 14:13:38.218000+00:00
 description: We are really proud of Alephium’s addition as a part of Dappnode’s package
   offering! We share Dappnode’s commitment to a decentralized…
-featuredImage: image_826d75a83f.png
+featuredImage: image_91b67983ba.png
 title: 'Alephium &amp; Dappnode: Collab, Tech Talk, and AMA'
 ---
 
 ### Alephium & Dappnode: Collab, Tech Talk, and AMA
 
-![](image_826d75a83f.png)
+![](image_91b67983ba.png)
 
 We are really proud of Alephium’s addition as a part of <a href="https://www.dappnode.io/" class="markup--anchor markup--p-anchor" data-href="https://www.dappnode.io/" rel="noopener" target="_blank">Dappnode</a>’s package offering! We share Dappnode’s commitment to a decentralized future and believe tools like this are key to making it happen.
 
@@ -22,7 +22,7 @@ It was born in 2017 to address a political censorship issue in Catalunya. During
 
 They have two product offerings: <a href="https://docs.dappnode.io/" class="markup--anchor markup--p-anchor" data-href="https://docs.dappnode.io/" rel="noopener" target="_blank">Open source software</a> for you to run a node on your machine and <a href="https://www.dappnode.io/collections/frontpage" class="markup--anchor markup--p-anchor" data-href="https://www.dappnode.io/collections/frontpage" rel="noopener" target="_blank">plug-and-play hardware</a> that allows you to do that with only a few clicks.
 
-![](image_6fa866378b.jpg)
+![](image_290b718e45.jpg)
 
 ### What did they build with Alephium (and how to set up your node)
 
@@ -36,15 +36,15 @@ To install the package and start to run your Alephium node, there are two paths,
 
 For the Dappnode Home, all it takes is to select the package at their store and install it. Remember to enable the local chain explorer if you want to run it on your device (note: It will bite a good chunk of your drive space)
 
-![](image_6b6fafbc53.jpg)
+![](image_98b926b87f.jpg)
 
 Going through the Dappnode Core path, you will have to download the Dappnode software to your machine. Follow the steps laid down by their <a href="https://docs.dappnode.io/get-started/installation/custom-hardware/installation/overview" class="markup--anchor markup--p-anchor" data-href="https://docs.dappnode.io/get-started/installation/custom-hardware/installation/overview" rel="noopener" target="_blank">documentation</a>. Everything is well explained, and you can ask for help on their <a href="https://discord.com/invite/c28an8dA5k" class="markup--anchor markup--p-anchor" data-href="https://discord.com/invite/c28an8dA5k" rel="noopener" target="_blank">Discord</a>.
 
-![](image_1032ee5e09.jpg)
+![](image_e0ed2b9423.jpg)
 
 After the node is up and running you can connect your Alephium Desktop Wallet to it, and send your transactions directly from your node. By the way, our upcoming mobile wallet & browser extension will also be connectable! <a href="https://medium.com/@alephium/ttxoo-2-the-road-to-self-custody-cfea4ae89444" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/ttxoo-2-the-road-to-self-custody-cfea4ae89444" target="_blank">You can now easily move forward on the “Road to self-custody”!</a>
 
-![](image_4676bdf606.jpg)
+![](image_ca1cac4237.jpg)
 
 ### Tech Talk and AMA
 

@@ -1,7 +1,7 @@
 ---
 date: 2023-04-13 18:29:31.542000+00:00
 description: Trading starts on April 17th, 17:00 CEST
-featuredImage: image_91c1955d45.jpg
+featuredImage: image_b896a5d3ac.jpg
 title: Alephium’s native token ALPH on Bitmart
 ---
 
@@ -9,7 +9,7 @@ title: Alephium’s native token ALPH on Bitmart
 
 #### Trading starts on April 17th, 17:00 CEST
 
-![](image_91c1955d45.jpg)
+![](image_b896a5d3ac.jpg)
 
 Following the successful deployment of the <a href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a" target="_blank">Leman Network Upgrade</a>, Alephium is thrilled to announce that its native token, ALPH, will be listed at <a href="https://www.bitmart.com/" class="markup--anchor markup--p-anchor" data-href="https://www.bitmart.com/" rel="noopener" target="_blank">Bitmart</a> on April 17th, 17:00 CEST. Currently at \#22 in the Coinmarketcap ranking, with over USD 700 million in trading volume, Bitmart is a leading digital asset trading platform that provides a secure, reliable, and user-friendly trading experience to a global audience, including US citizens/residents.
 
@@ -31,15 +31,15 @@ To celebrate the listing on Bitmart, Alephium has planned various activities suc
 
 When clicking on the “Get Started” button on the Bitmart homepage, you will be redirected to the registration page. Choose your preferred method and verify your phone number/e-mail address.
 
-![](image_5639c28150.jpg)
+![](image_b95ddd46a6.jpg)
 
 After a successful login, you can access the verification section using the top right menu (by clicking on your username) and start the process.
 
-![](image_dd4dfb7fc5.jpg)
+![](image_0a0931066f.jpg)
 
 There are two verification levels; choose the one that better fits your needs and provide the information required. Level 1 has automatic approval.
 
-![](image_bbf356002f.jpg)
+![](image_0765832174.jpg)
 
 ---
 

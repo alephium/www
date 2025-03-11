@@ -2,7 +2,7 @@
 date: 2023-11-03 14:03:20.452000+00:00
 description: Our ecosystem thrives with developers building amazing projects on top
   of Alephium delivering a unique experience and providing real…
-featuredImage: image_0439f61dfa.png
+featuredImage: image_233bde702f.png
 title: 'Builders Highlight #5: Deadrare'
 ---
 
@@ -10,7 +10,7 @@ title: 'Builders Highlight #5: Deadrare'
 
 _Our ecosystem thrives with developers building amazing projects on top of Alephium delivering a unique experience and providing real utility for users. In the Builders Highlight series, they share more about their projects, thoughts, and insights on why building on Alephium. You can find_ <a href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" rel="noopener" target="_blank"><em>#1 here</em></a>_,_ <a href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" rel="noopener" target="_blank"><em>#2 here</em></a>, <a href="https://medium.com/@alephium/builders-highlight-3-ayin-6be4a6bd4ec2" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-3-ayin-6be4a6bd4ec2" rel="noopener" target="_blank"><em>#3 here</em></a> _and_ <a href="https://medium.com/@alephium/builders-highlight-4-no-trust-verify-9ea495ca826f" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-4-no-trust-verify-9ea495ca826f" target="_blank"><em>#4 here</em></a>_!_
 
-![](image_0439f61dfa.png)
+![](image_233bde702f.png)
 
 This episode is about <a href="https://deadrare.io/" class="markup--anchor markup--p-anchor" data-href="https://deadrare.io/" rel="noopener" target="_blank">Deadrare.io</a>, the first ever NFT Marketplace on mainnet, discover a little bit more about its values, the team’s vision of Alephium, and the tech behind a cool NFT Marketplace!
 
@@ -48,7 +48,7 @@ There are so many features we take pride in, we spend lots of time browsing the 
 
 Off the top of my head here are some highlights… Part of the fun of NFTs if knowing who holds the rarest in a collection which is why we baked Rarities right into the Deadrare UI.
 
-![](image_7149c94530.png)
+![](image_59581be3ad.png)
 
 Superfast loading time, really important for the overall user experience and improving Google search ranking.   
 Image previews whenever you share an NFT on social media.
@@ -61,7 +61,7 @@ The NFT Marketplace is pretty much complete, we don’t want to overload it with
 
 We also have an on-chain Order Book DEX in the works.
 
-![](image_7845030c1d.png)
+![](image_6208b49da5.png)
 
 #### Could you tell us about some of the challenges you faced while building, and how you overcame them?
 

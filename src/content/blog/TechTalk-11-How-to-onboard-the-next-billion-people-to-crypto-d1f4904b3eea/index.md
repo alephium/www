@@ -2,13 +2,13 @@
 date: 2023-08-02 16:02:20.857000+00:00
 description: 'Mikaël Vaivre is Alephium’s lead front-end developer, and he’s been
   the guest of our TechTalk #11! While Mika is fairly discreet, and…'
-featuredImage: image_bfad79c7fd.png
+featuredImage: image_50aac2130d.png
 title: 'TechTalk #11 — How to onboard the next billion people to crypto?'
 ---
 
 ### TechTalk \#11 — How to onboard the next billion people to crypto?
 
-![](image_bfad79c7fd.png)
+![](image_50aac2130d.png)
 
 Mikaël Vaivre is Alephium’s lead front-end developer, and he’s been the guest of our TechTalk \#11! While Mika is fairly discreet, and Alephium users might not have had the chance to see him a lot, his work has touched their digital experiences in more ways than they realize. Whether they used the <a href="https://alephium.org/#wallets" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/#wallets" rel="noopener" target="_blank">desktop wallet</a>, browsed the Alephium <a href="https://alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/" rel="noopener" target="_blank">website</a>, or used the <a href="https://explorer.alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://explorer.alephium.org/" rel="noopener" target="_blank">explorer</a>, Mika’s creativity and expertise and his fruitful collaboration with <a href="https://github.com/nop33" class="markup--anchor markup--p-anchor" data-href="https://github.com/nop33" rel="noopener" target="_blank">Ilias</a>) have shaped these experiences.
 
@@ -26,17 +26,17 @@ Now, let’s dive into Mika’s presentation: **How can we onboard the next bill
 
 ### Iterate (a lot)
 
-![](image_d6647251d0.jpg)
+![](image_21fcf1053a.jpg)
 
 Whether designing a new logo or coding an application, iteration is essential. An example is the redesign of Alephium’s logo to align with the brand’s vision and values. Through several iterations, the final logo reflects the essence of Alephium and resonates with its users.
 
 This experience teaches that investing time and effort in good design yields remarkable results, enhancing the overall user experience and brand recognition.
 
-![](image_a4cd35d7b4.jpg)
+![](image_3f312b825e.jpg)
 
 ### Don’t be scared to try (live)
 
-![](image_c52c10b275.jpg)
+![](image_67053511c7.jpg)
 
 True innovation occurs when ideas are implemented, even if it involves taking risks. Alephium’s approach aligns with this philosophy by emphasizing the value of live experimentation and user feedback. Similar to how Elon Musk transformed Twitter’s logo into “X,” trying new features and approaches in real-world scenarios allows for quicker identification of shortcomings and improvements.
 
@@ -44,7 +44,7 @@ At Alephium, user feedback is invaluable in refining products and identifying ar
 
 ### Simple is beautiful (but hard)
 
-![](image_a89407328a.jpg)
+![](image_11dbe41d10.jpg)
 
 Simplicity is beautiful, yet achieving it is a challenging task. These questions need to be always present: How to design an efficient and easy-to-use tool without being bland or overly flashy? How do to avoid overwhelming users with too much information while still providing them with everything they need?
 
@@ -54,7 +54,7 @@ Alephium, with a team composed mainly of engineers, has a unique perspective on 
 
 By carefully considering user interactions and flows, we hide away unnecessary complexity while providing clever ways for users to access more detailed options when needed. This approach caters to beginners and advanced users, ensuring user-friendly and powerful products.
 
-![](image_dd3bf53875.jpg)
+![](image_8f8c373fce.jpg)
 
 ### Don’t reinvent the wheel (but sometimes do)
 
@@ -62,7 +62,7 @@ Drawing inspiration from successful products and innovations is essential to Ale
 
 An excellent example of this approach is the effort to integrate desktop wallets with dApps (decentralized applications). While the conventional method of using browser extensions for wallet interactions is prevalent, we enjoy experimenting with what could become a more seamless and user-friendly experience by integrating wallet functions directly into the desktop application. This allows users to focus on their tasks and reduces unnecessary steps and distractions.
 
-![](image_8a643bee3f.jpg)
+![](image_b700f411ca.jpg)
 
 Here you can find the <a href="https://slides.com/mikaelvaivre/deck" class="markup--anchor markup--p-anchor" data-href="https://slides.com/mikaelvaivre/deck" rel="noopener" target="_blank">full presentation</a>!
 

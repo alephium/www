@@ -2,7 +2,7 @@
 date: 2023-04-19 13:09:21.468000+00:00
 description: Once in a while, the spotlight is put on one active member of the Alephium
   community. This is an opportunity to showcase community members’…
-featuredImage: image_e740dc7da1.jpg
+featuredImage: image_7718c9cccb.jpg
 title: 'Community Highlight #8, Jorge'
 ---
 
@@ -10,7 +10,7 @@ title: 'Community Highlight #8, Jorge'
 
 #### _Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’ contributions to the ecosystem, what drives them, and what they are passionate about! More episodes:_ <a href="https://medium.com/@alephium/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" target="_blank"><em>#1 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-cgi-bin-c102cc106f19" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-cgi-bin-c102cc106f19" target="_blank"><em>#2 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-3-digdug-48a7ec868504" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-3-digdug-48a7ec868504" target="_blank"><em>#3 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-4-montail-e24fd88882a0" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-4-montail-e24fd88882a0" target="_blank"><em>#4 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-5-txn-71c4fd76ffe8" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-5-txn-71c4fd76ffe8" target="_blank"><em>#5 here</em></a>_ ,_ <a href="https://medium.com/@alephium/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" target="_blank"><em>#6 here</em></a>, _and_ <a href="https://medium.com/@alephium/community-highlight-7-oheka-13d8b4ae025e" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-7-oheka-13d8b4ae025e" target="_blank"><em>#7 here</em></a>_._
 
-![](image_e740dc7da1.jpg)
+![](image_7718c9cccb.jpg)
 
 _In this edition, we introduce you to Jorge. He got into Alephium’s community early this year and naturally blended in. Started to look for ways to help, always willing to provide answers in Discord and Telegram. He also translated the Desktop Wallet into Portuguese and Spanish, and likes to spend his time mostly on the trading channel. You can find him on Twitter:_ <a href="https://twitter.com/J_A_B_C_zzz" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/J_A_B_C_zzz" rel="noopener" target="_blank"><em>@J_A_B_C_zzz</em></a>
 

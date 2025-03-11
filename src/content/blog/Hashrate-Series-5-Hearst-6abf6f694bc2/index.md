@@ -2,7 +2,7 @@
 date: 2024-10-21 08:17:06.469000+00:00
 description: The blockchain hashrate is directly correlated with network security.
   As a Proof-of-work blockchain, Alephium relies on active ecosystem…
-featuredImage: image_88770c0784.png
+featuredImage: image_73a6ea4a32.png
 title: 'Hashrate Series #5: Hearst'
 ---
 
@@ -10,7 +10,7 @@ title: 'Hashrate Series #5: Hearst'
 
 _The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem actors to sustain and improve Alephium’s reliability. This series is about them, and after_ <a href="https://medium.com/@alephium/hashrate-series-1-nicehash-ee0936adf899" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/hashrate-series-1-nicehash-ee0936adf899" rel="noopener" target="_blank"><em>Nicehash</em></a>, <a href="https://medium.com/@alephium/hashrate-series-2-goldshell-93cc51a86640" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/hashrate-series-2-goldshell-93cc51a86640" rel="noopener" target="_blank"><em>Goldshell</em></a>_,_ <a href="https://medium.com/@alephium/hashrate-series-3-cryptohall-24-7ad1533701f4" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/hashrate-series-3-cryptohall-24-7ad1533701f4" target="_blank"><em>Cryptohall24,</em></a> _and_ <a href="https://medium.com/@alephium/hashrate-series-4-iceriver-063f52b7c431" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/hashrate-series-4-iceriver-063f52b7c431" target="_blank"><em>ICERIVER</em></a>, _please welcome Hearst._
 
-![](image_88770c0784.png)
+![](image_73a6ea4a32.png)
 
 Here, <a href="https://x.com/LoicRicci" class="markup--anchor markup--p-anchor" data-href="https://x.com/LoicRicci" rel="noopener" target="_blank">Loic</a> shares his crypto journey and how Hearst came to be. The full video interview is available here.
 
@@ -38,7 +38,7 @@ At Hearst, our core focus is on innovation in blockchain computing, specifically
 
 The concept behind this is that mining can consistently create value, provided that key factors such as electricity costs, hardware prices, and uptime are optimized. We take care of those complexities for our clients, offering a transparent and efficient solution. We’re also working on green mining initiatives, exploring sustainable energy sources like solar, biogas, and more to make the mining process more environmentally friendly.
 
-![](image_f402ade237.png)
+![](image_f8eebc01fb.png)
 
 #### **Green mining is a hot topic right now. Can you expand on Hearst’s efforts toward sustainability in mining?**
 
@@ -74,7 +74,7 @@ We have some very exciting news coming soon regarding our work with Alephium, bu
 
 On the broader Hearst side, we’re focused on scaling our Mining as a Service offering, expanding our team, and pushing forward with our green mining initiatives. We’re also continuing to innovate in the AI space and working on raising funds to grow our infrastructure and capabilities.
 
-![](image_0ba94b4897.png)
+![](image_edf26b18ed.png)
 
 #### **Anything else you’d like to share with the community before we wrap up?**
 

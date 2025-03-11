@@ -2,7 +2,7 @@
 date: 2024-09-01 11:16:28.900000+00:00
 description: The blockchain hashrate is directly correlated with network security.
   As a Proof-of-work blockchain, Alephium relies on active ecosystem…
-featuredImage: image_a001094476.jpeg
+featuredImage: image_0f660632a8.jpeg
 title: 'Hashrate Series #2: Goldshell'
 ---
 
@@ -10,7 +10,7 @@ title: 'Hashrate Series #2: Goldshell'
 
 _The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem actors to sustain and improve Alephium’s reliability. This series is about them, and after Nicehash, please welcome Goldshell._
 
-![](image_a001094476.jpeg)
+![](image_0f660632a8.jpeg)
 
 **Can you tell us a bit about Goldshell? You guys started in 2017! How has been your journey so far?**
 
@@ -28,7 +28,7 @@ We recently rolled out the <a href="https://www.goldshell.com/product/goldshell-
 
 Alephium stood out to us because it’s got some really cool features. It uses the Blake3 algorithm, which is great for ASIC miners, and it’s got this neat BlockFlow sharding that scales transactions per second way beyond Bitcoin. Plus, after PoLW activation it’ll be super energy efficient, using only a fraction of the power that Bitcoin does. For us, when looking at PoW chains, we focus on security, long-term potential, and how active the community is. Alephium ticked all those boxes.
 
-![](image_3c1701fb03.jpeg)
+![](image_b58009ba73.jpeg)
 
 **What unique challenges did you face when dealing with our Blake3 hashing algorithm?**
 
@@ -42,7 +42,7 @@ This setup really changes the game. It creates a deeper connection between miner
 
 PoLW brings some great benefits, like reducing energy consumption and boosting efficiency. Based on the current growth, we expect the total network hashrate to reach 100P by 2025, with the potential to hit 1E within the next few years. While there’s no immediate need to worry, rising hashrates will make mining tougher and more costly. But at the same time, Alephium’s network will mature and provide a better experience for everyone involved.
 
-![](image_cc2f3b1c93.jpg)
+![](image_c54a595336.jpg)
 
 **What was the process like in deciding to develop an ASIC for Alephium? Is Alephium the first chain for which you’ve created a miner, or have there been others?**
 
@@ -65,7 +65,7 @@ Here’s the_ <a href="https://x.com/i/spaces/1BRJjPeAbYNKw" class="markup--anch
 
 _Website: goldshell.com_
 
-![](image_313754cc40.jpg)
+![](image_2e7056085c.jpg)
 
 ---
 

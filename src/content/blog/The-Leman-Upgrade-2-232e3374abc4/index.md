@@ -1,7 +1,7 @@
 ---
 date: 2022-12-20 15:47:15.162000+00:00
 description: An intermediary update on the road to the Leman Upgrade
-featuredImage: image_b5e8d9bfd4.jpg
+featuredImage: image_1c78dbc4c1.jpg
 title: 'The Leman Upgrade #2'
 ---
 
@@ -9,7 +9,7 @@ title: 'The Leman Upgrade #2'
 
 _An intermediary update on the road to the Leman Upgrade_
 
-![](image_b5e8d9bfd4.jpg)
+![](image_1c78dbc4c1.jpg)
 
 _The_ <a href="https://medium.com/@alephium/announcing-the-leman-network-upgrade-c01a81e65f0e" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/announcing-the-leman-network-upgrade-c01a81e65f0e" target="_blank"><em>previous announcement</em></a> _addressed the reasons for the upcoming_ **\*Leman Network Upgrade\*\***. This update covers what happened since then and the remaining steps to a successful upgrade (including for users, miners, and node operators).\*
 
@@ -40,7 +40,7 @@ Once every issue has been addressed, Alephium will set a **tentative date for th
 
 On the **front-end development**, a full write-up on the roadmap is coming very soon! You’ll know everything about the desktop & mobile wallet and the browser extension!
 
-![](image_e6a8e3e739.png)
+![](image_2afc9148a7.png)
 
 ### What can YOU do?
 
