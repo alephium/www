@@ -14,9 +14,11 @@ import SectionDivider from '../components/SectionDivider'
 
 const CustomPage = (props: PageProps) => {
   const data = useStaticQuery<Queries.BlogPostsQuery>(query)
+
   const [searchQuery, setSearchQuery] = useState('')
 
   const posts = data.allMarkdownRemark.nodes
+
   const filteredPosts = posts.filter((post) => {
     const title = post.frontmatter?.title?.toLowerCase() || ''
     const description = post.frontmatter?.description?.toLowerCase() || ''

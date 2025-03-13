@@ -1,5 +1,5 @@
 import React from 'react'
-import { Search as SearchIcon } from 'react-feather'
+import { RiSearch2Line as SearchIcon } from 'react-icons/ri'
 import styled from 'styled-components'
 
 interface SearchProps {
@@ -31,6 +31,7 @@ const SearchInput = styled.input`
   color: ${({ theme }) => theme.textPrimary};
   font-size: 16px;
   transition: all 0.2s ease;
+  box-sizing: border-box;
 
   &:focus {
     outline: none;
