@@ -99,8 +99,8 @@ export const query = graphql`
           featuredImage {
             childImageSharp {
               gatsbyImageData(
-                width: 300
-                height: 150
+                width: 526
+                height: 200
                 layout: CONSTRAINED
                 transformOptions: { fit: COVER, cropFocus: CENTER }
               )
@@ -114,15 +114,13 @@ export const query = graphql`
 
 const TextCardStyled = styled(TextCard)`
   display: flex;
+  flex-direction: column-reverse;
   gap: var(--spacing-4);
   justify-content: space-between;
-  flex-direction: column-reverse;
 `
 
 const ImageContainer = styled.div`
-  flex-shrink: 0;
-  width: 300px;
-  max-height: 150px;
+  width: 100%;
   position: relative;
 `
 
