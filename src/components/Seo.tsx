@@ -86,6 +86,10 @@ const Seo = ({ title, description, lang = 'en', image: metaImage }: SeoProps) =>
         {
           name: `twitter:image`,
           content: metaImageAbsoluteUrl
+        },
+        {
+          name: `google-site-verification`,
+          content: 'Z2_Eik2H9Cwj7ZzkG79O3WurVlU0Lz4Am4AVYgzaRKY'
         }
       ]}
     />
