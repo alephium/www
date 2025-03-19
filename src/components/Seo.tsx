@@ -28,9 +28,15 @@ const Seo = ({ title, description, lang = 'en', image: metaImage }: SeoProps) =>
     `
   )
 
+  const isTestSite =
+    typeof window !== "undefined" &&
+    window.location.hostname === "www2.alephium.org"
+
   const metaDescription = description || site.siteMetadata.description
   const metaImageAbsoluteUrl = `${site.siteMetadata.siteUrl}${SocialMediaBannerImage}`
   const titleContent = title || site.siteMetadata.title
+
+  const metaBase = isTestSite ? [{ property: 'robots', content: 'noindex, nofollow' }] : []
 
   return (
     <Helmet
@@ -38,7 +44,7 @@ const Seo = ({ title, description, lang = 'en', image: metaImage }: SeoProps) =>
         lang
       }}
       title={titleContent}
-      meta={[
+      meta={[...metaBase,
         {
           name: `description`,
           content: metaDescription
