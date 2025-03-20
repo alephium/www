@@ -19,6 +19,7 @@ export default styled(IllustrationColumn)`
   align-items: center;
   flex: 1;
   height: 350px;
+  width: 100%;
 
   img {
     width: 70%;

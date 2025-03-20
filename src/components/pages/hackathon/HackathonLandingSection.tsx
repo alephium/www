@@ -21,8 +21,8 @@ const HackathonLandingSection = () => (
           <TagLine>
             <TLDR>
               €15,000 in ALPH is up for grabs at the first-ever in-person Alephium hackathon, hosted by France’s most
-              beloved crypto event, <SimpleLink url="https://cryptoxr.fr" text="CryptoXR" newTab />, and{' '}
-              <SimpleLink url="https://lsw3.fr/" text="LSW3" newTab />!
+              beloved crypto event, <SimpleLink url="https://cryptoxr.fr" text="CryptoXR" />, and{' '}
+              <SimpleLink url="https://lsw3.fr/" text="LSW3" />!
             </TLDR>
             This 1-day on-site hackathon welcomes both teams and solo developers to buidl. Don’t miss the chance to dive
             into Alephium’s innovative blockchain technology, showcase your skills, and connect with the vibrant

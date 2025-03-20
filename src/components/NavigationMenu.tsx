@@ -1,14 +1,12 @@
 import styled, { css, useTheme } from 'styled-components'
-import { Link } from 'gatsby'
+import { graphql, Link, useStaticQuery } from 'gatsby'
 
 import { deviceBreakPoints } from '../styles/global-style'
 
 import SimpleLink from './SimpleLink'
 import LogoText from '../images/svgs/logo-text.svg'
-import GitHubIcon from '../images/svgs/brand-icon-github.svg'
-import SocialMediaIcon from './SocialMediaIcon'
-import { AnimatePresence, motion, useMotionValueEvent, useScroll } from 'framer-motion'
-import { ReactNode, useRef, useState } from 'react'
+import { AnimatePresence, motion } from 'framer-motion'
+import { ReactNode, useRef, useState, useEffect } from 'react'
 import { RiTranslate2 } from 'react-icons/ri'
 
 import HeroLogo from './Hero/HeroLogo'
@@ -16,25 +14,45 @@ import HeroLogo from './Hero/HeroLogo'
 import { RiMenu3Fill, RiArrowDropDownLine, RiArrowDropUpLine } from 'react-icons/ri'
 import useOnClickOutside from '../hooks/useOnClickOutside'
 import TranslateComponent from './TranslateComponent'
+import { notEmpty } from '../utils/misc'
+import NavigationMenuSocials from './navigation/NavigationMenuSocials'
 
 interface NavigationMenuProps {
   topOffset?: number
   className?: string
 }
 
-const detachScrollValue = 65
+const detachScrollValue = 100
 
 const NavigationMenu = ({ topOffset, className }: NavigationMenuProps) => {
-  const { scrollY } = useScroll()
   const [isDetached, setIsDetached] = useState(false)
+  const [isVisible, setIsVisible] = useState(true)
+  const lastScrollY = useRef(0)
 
-  useMotionValueEvent(scrollY, 'change', (latest) => {
-    if (latest > detachScrollValue && !isDetached) {
-      setIsDetached(true)
-    } else if (latest <= detachScrollValue && isDetached) {
-      setIsDetached(false)
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY
+      const scrollDirection = currentScrollY > lastScrollY.current ? 'down' : 'up'
+
+      if (currentScrollY > detachScrollValue && !isDetached) {
+        setIsDetached(true)
+      } else if (currentScrollY <= detachScrollValue && isDetached) {
+        setIsDetached(false)
+      }
+
+      if (scrollDirection === 'down' && currentScrollY > 100) {
+        setIsVisible(false)
+      } else if (scrollDirection === 'up') {
+        setIsVisible(true)
+      }
+
+      lastScrollY.current = currentScrollY
     }
-  })
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [isDetached])
 
   const initialTop = topOffset || 0
 
@@ -43,9 +61,9 @@ const NavigationMenu = ({ topOffset, className }: NavigationMenuProps) => {
       <NavigationMenuStyled
         className={className}
         animate={{
-          y: isDetached ? 30 : initialTop,
-          backgroundColor: isDetached ? 'rgba(30, 30, 30, 0.6)' : 'rgba(30, 30, 30, 0)',
-          boxShadow: isDetached ? '0px 5px 60px rgba(0, 0, 0, 0.5)' : 'none'
+          y: isDetached ? (isVisible ? 30 : -detachScrollValue) : initialTop,
+          backgroundColor: 'rgba(30, 30, 30, 0)',
+          boxShadow: 'none'
         }}
         transition={{ type: 'spring', stiffness: 200, damping: 50 }}
       >
@@ -66,42 +84,39 @@ const NavigationMenu = ({ topOffset, className }: NavigationMenuProps) => {
 
 const NavigationItems = ({ className }: { className?: string }) => {
   const theme = useTheme()
+  const data = useStaticQuery<Queries.NavigationMenuQuery>(navigationMenuQuery)
+
+  const menuItems = data.navmenu.nodes[0]?.frontmatter?.menuItems?.filter(notEmpty)
+  const socialIcons = data.navmenu.nodes[0]?.frontmatter?.socialIcons?.filter(notEmpty)
 
   return (
     <div className={className}>
-      <NavigationDrawer
-        title="Essentials"
-        items={[
-          { title: 'Wallets', url: '#wallets' },
-          { title: 'Bridge', url: 'https://bridge.alephium.org/', isNew: true, isExternal: true },
-          { title: 'Explorer', url: 'https://explorer.alephium.org/', isExternal: true }
-        ]}
-      />
-      <NavLink className="nav-item" url="#ecosystem" trackingName="main-nav:Ecosystem">
-        Ecosystem
-      </NavLink>
-      <NavLink className="nav-item" url="#community" trackingName="main-nav:community">
-        Community
-      </NavLink>
-      <NavLink
-        className="nav-item"
-        url="https://docs.alephium.org/dapps/"
-        newTab
-        trackingName="main-nav:build-dapp-link"
-      >
-        Build a dApp
-      </NavLink>
-      <NavigationDrawer
-        Icon={<RiTranslate2 color={theme.textSecondary} size={20} />}
-        Content={<TranslateComponent />}
-      />
+      {menuItems?.map(
+        ({ title, items }) =>
+          title &&
+          items && (
+            <NavigationDrawer key={title} title={title}>
+              {items.map(
+                (item, index) =>
+                  item &&
+                  item.title && (
+                    <DrawerItem key={item.title} isLink={!!item.link}>
+                      {item.link ? (
+                        <NavLink key={index} url={item.link} text={item.title} />
+                      ) : (
+                        <DrawerItemTitle key={index}>{item.title}</DrawerItemTitle>
+                      )}
+                    </DrawerItem>
+                  )
+              )}
+            </NavigationDrawer>
+          )
+      )}
+      <NavigationDrawer Icon={<RiTranslate2 color={theme.textSecondary} size={20} />}>
+        <TranslateComponent />
+      </NavigationDrawer>
 
-      <GithubButton
-        name="Github"
-        ImageComponent={GitHubIcon}
-        url="https://github.com/alephium"
-        trackingName="main-nav:github-link"
-      />
+      {socialIcons && <NavigationMenuSocials enabledItems={socialIcons} />}
     </div>
   )
 }
@@ -125,16 +140,14 @@ const MobileMenu = () => {
     </MobileMenuStyled>
   )
 }
-
 interface NavigationDrawerProps {
   title?: string
   Icon?: ReactNode
-  items?: { title: string; url: string; isNew?: boolean; isExternal?: boolean }[]
-  Content?: ReactNode
+  children?: ReactNode
   className?: string
 }
 
-const NavigationDrawer = ({ title, Icon, items, Content, className }: NavigationDrawerProps) => {
+const NavigationDrawer = ({ title, Icon, className, children }: NavigationDrawerProps) => {
   const [isOpen, setIsOpen] = useState(false)
   const ref = useRef(null)
 
@@ -147,29 +160,13 @@ const NavigationDrawer = ({ title, Icon, items, Content, className }: Navigation
   return (
     <DrawerWrapper className={className} ref={ref}>
       <DrawerTitleWrapper onClick={handleTitleClick}>
-        {items && items.findIndex((i) => i.isNew) !== -1 && (
-          <NewItemBubble>
-            <NewItemBubbleEcho
-              initial={{ scale: 1, opacity: 0.7 }}
-              animate={{ scale: 3, opacity: 0 }}
-              transition={{ repeat: Infinity, duration: 2, repeatDelay: 1 }}
-            />
-          </NewItemBubble>
-        )}
         {title ? <DrawerTitle>{title}</DrawerTitle> : Icon ? Icon : null}
         <DrawerCarretWrapper>{isOpen ? <RiArrowDropUpLine /> : <RiArrowDropDownLine />}</DrawerCarretWrapper>
       </DrawerTitleWrapper>
       <AnimatePresence>
         {isOpen && (
           <Drawer initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-            {items
-              ? items.map((item, index) => (
-                  <DrawerItem key={item.title}>
-                    <NavLink key={index} url={item.url} text={item.title} newTab={item.isExternal} />
-                    {item.isNew && <NewBubble>New</NewBubble>}
-                  </DrawerItem>
-                ))
-              : Content || null}
+            {children}
           </Drawer>
         )}
       </AnimatePresence>
@@ -178,6 +175,25 @@ const NavigationDrawer = ({ title, Icon, items, Content, className }: Navigation
 }
 
 export default NavigationMenu
+
+export const navigationMenuQuery = graphql`
+  query NavigationMenu {
+    navmenu: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/navigation-menu.md/" } }) {
+      nodes {
+        frontmatter {
+          menuItems {
+            title
+            items {
+              title
+              link
+            }
+          }
+          socialIcons
+        }
+      }
+    }
+  }
+`
 
 const NavigationWrapper = styled.div`
   position: fixed;
@@ -257,13 +273,6 @@ const HeroLogoContainer = styled.div`
 
 const HeroLogoStyled = styled(HeroLogo)`
   height: 26px;
-`
-
-const GithubButton = styled(SocialMediaIcon)`
-  svg {
-    width: 30px;
-    height: 30px;
-  }
 `
 
 const LinkStyle = css`
@@ -348,25 +357,6 @@ const DrawerTitleWrapper = styled.div`
   }
 `
 
-const NewItemBubble = styled.span`
-  position: relative;
-  background-color: ${({ theme }) => theme.palette1};
-  height: 8px;
-  width: 8px;
-  margin-right: 8px;
-  margin-top: 2px;
-  border-radius: 50%;
-`
-
-const NewItemBubbleEcho = styled(motion.div)`
-  scale: 1;
-  position: absolute;
-  background-color: ${({ theme }) => theme.palette1};
-  height: 8px;
-  width: 8px;
-  border-radius: 50%;
-`
-
 const DrawerWrapper = styled.div`
   position: relative;
 `
@@ -381,8 +371,8 @@ const Drawer = styled(motion.div)`
   top: calc(100% + 30px);
   left: -50%;
   right: 0;
-  min-width: 200px;
-  background-color: rgba(30, 30, 30, 0.8);
+  min-width: 250px;
+  background-color: rgba(30, 30, 30, 1);
   border-radius: 20px;
   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.8);
   display: flex;
@@ -396,21 +386,28 @@ const Drawer = styled(motion.div)`
   }
 `
 
-const NewBubble = styled.div`
-  padding: 3px 6px;
-  color: white;
-  background-color: ${({ theme }) => theme.palette1};
-  border-radius: 20px;
-  font-size: var(--fontSize-14);
-`
-
-const DrawerItem = styled.div`
+const DrawerItem = styled.div<{ isLink: boolean }>`
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 18px;
 
-  &:not(:last-child) {
-    border-bottom: 1px solid ${({ theme }) => theme.borderPrimary};
+  > * {
+    padding: 12px 18px;
+    width: 100%;
   }
+
+  ${({ isLink }) =>
+    !isLink &&
+    css`
+      &:not(:first-child) {
+        border-top: 1px solid ${({ theme }) => theme.borderPrimary};
+      }
+    `}
+`
+
+const DrawerItemTitle = styled.div`
+  text-transform: uppercase;
+  font-size: var(--fontSize-18);
+  color: ${({ theme }) => theme.textTertiary};
+  padding-top: 24px;
 `

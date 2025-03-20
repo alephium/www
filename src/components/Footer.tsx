@@ -1,98 +1,18 @@
-import { FC, useState } from 'react'
+import { graphql, useStaticQuery } from 'gatsby'
 import styled, { useTheme } from 'styled-components'
 
 import { deviceBreakPoints } from '../styles/global-style'
-
-import SimpleLink, { SimpleLinkProps } from './SimpleLink'
-import PageSectionContainer from './PageSectionContainer'
-import Columns from './Columns/Columns'
-import Column from './Columns/Column'
-import ModalTeam from './ModalTeam'
-import ModalContact from './ModalContact'
-
-import { graphql, useStaticQuery } from 'gatsby'
+import { notEmpty } from '../utils/misc'
 import AlephiumLogo from './AlephiumLogo'
-
-export interface FooterContentType {
-  footer: {
-    nodes: {
-      frontmatter: {
-        columns: {
-          title: string
-          links: SimpleLinkProps[]
-        }[]
-      }
-    }[]
-  }
-}
-
-interface FooterProps {
-  openPrivacyPolicyModal?: boolean
-  className?: string
-}
-
-const Footer = ({ className }: FooterProps) => {
-  const [isTeamModalOpen, setIsTeamModalOpen] = useState(false)
-  const [isContactModalOpen, setIsContactModalOpen] = useState(false)
-  const data = useStaticQuery<FooterContentType>(footerQuery)
-  const theme = useTheme()
-
-  const content = data.footer.nodes[0].frontmatter
-
-  const columnsContent = content.columns
-  columnsContent[2].links[0] = { ...columnsContent[2].links[0], openModal: setIsTeamModalOpen }
-  columnsContent[2].links[2] = { ...columnsContent[2].links[2], openModal: setIsContactModalOpen }
-
-  return (
-    <div className={className}>
-      <PageSectionContainerStyled>
-        <LogosSection>
-          <LogoStyled gradientIndex={0} fill={theme.textTertiary} />
-        </LogosSection>
-        <Separator />
-        <FooterColumnsSection gap="var(--spacing-4)">
-          {columnsContent.map((column) => (
-            <Column key={column.title}>
-              <FooterColumn {...column} />
-            </Column>
-          ))}
-        </FooterColumnsSection>
-      </PageSectionContainerStyled>
-      <ModalTeam isOpen={isTeamModalOpen} setIsOpen={setIsTeamModalOpen} />
-      <ModalContact isOpen={isContactModalOpen} setIsOpen={setIsContactModalOpen} />
-    </div>
-  )
-}
-
-interface FooterColumnProps {
-  className?: string
-  title: string
-  links: Array<SimpleLinkProps>
-}
-
-let FooterColumn: FC<FooterColumnProps> = ({ className, title, links }) => {
-  const theme = useTheme()
-
-  return (
-    <div className={className}>
-      <div className="title">{title}</div>
-      <ul>
-        {links.map((link) => (
-          <li key={link.text}>
-            <SimpleLink
-              {...link}
-              color={theme.textTertiary}
-              trackingName={`footer:${link.text?.replaceAll(' ', '-')}-link`}
-            />
-          </li>
-        ))}
-      </ul>
-    </div>
-  )
-}
+import Column from './Columns/Column'
+import Columns from './Columns/Columns'
+import NavigationMenuSocials from './navigation/NavigationMenuSocials'
+import PageSectionContainer from './PageSectionContainer'
+import ScrollToTop from './ScrollToTop'
+import SimpleLink from './SimpleLink'
 
 export const footerQuery = graphql`
-  query {
+  query FooterSection {
     footer: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/footer.md/" } }) {
       nodes {
         frontmatter {
@@ -101,8 +21,11 @@ export const footerQuery = graphql`
             links {
               text
               url
-              newTab
             }
+          }
+          bottom {
+            text
+            socials
           }
         }
       }
@@ -110,7 +33,90 @@ export const footerQuery = graphql`
   }
 `
 
-export default styled(Footer)`
+const Footer = () => {
+  const data = useStaticQuery<Queries.FooterSectionQuery>(footerQuery)
+  const theme = useTheme()
+
+  const columnsContent = data.footer.nodes[0].frontmatter?.columns
+  const bottomContent = data.footer.nodes[0].frontmatter?.bottom
+
+  return (
+    <>
+      <ScrollToTop />
+      <FooterStyled>
+        <PageSectionContainerStyled>
+          <Separator />
+          <FooterColumnsSection gap="var(--spacing-4)">
+            {columnsContent?.map((column) => (
+              <Column key={column?.title}>
+                <FooterColumn>
+                  <div className="title">{column?.title}</div>
+                  <ul>
+                    {column?.links?.map(
+                      (link) =>
+                        link?.text &&
+                        link?.url && (
+                          <li key={link.text}>
+                            <SimpleLink
+                              text={link.text}
+                              url={link.url}
+                              color={theme.textTertiary}
+                              trackingName={`footer:${link?.text?.replaceAll(' ', '-')}-link`}
+                            />
+                          </li>
+                        )
+                    )}
+                  </ul>
+                </FooterColumn>
+              </Column>
+            ))}
+          </FooterColumnsSection>
+        </PageSectionContainerStyled>
+        <PageSectionContainerBottom>
+          <BottomColumn>
+            <LogosSection>
+              <LogoStyled gradientIndex={0} fill={theme.textTertiary} />
+            </LogosSection>
+          </BottomColumn>
+          <BottomColumnCenter>{bottomContent?.text}</BottomColumnCenter>
+          <BottomColumn>
+            <NavigationMenuSocialsStyled enabledItems={bottomContent?.socials?.filter(notEmpty) ?? []} />
+          </BottomColumn>
+        </PageSectionContainerBottom>
+      </FooterStyled>
+    </>
+  )
+}
+
+export default Footer
+
+const PageSectionContainerBottom = styled(PageSectionContainer)`
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-12) 0 0;
+
+  @media ${deviceBreakPoints.mobile} {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--spacing-4);
+  }
+`
+
+const BottomColumn = styled.div`
+  flex: 1;
+`
+
+const BottomColumnCenter = styled(BottomColumn)`
+  text-align: center;
+  color: ${({ theme }) => theme.textTertiary};
+`
+
+const NavigationMenuSocialsStyled = styled(NavigationMenuSocials)`
+  justify-content: flex-end;
+`
+
+const FooterStyled = styled.div`
   padding: var(--spacing-12) 0;
   background-color: ${({ theme }) => theme.bgPrimary};
   color: ${({ theme }) => theme.textPrimary};
@@ -135,7 +141,7 @@ const Separator = styled.div`
   }
 `
 
-FooterColumn = styled(FooterColumn)`
+const FooterColumn = styled.div`
   ul {
     display: flex;
     flex-direction: column;
@@ -169,5 +175,5 @@ const PageSectionContainerStyled = styled(PageSectionContainer)`
 
 const LogoStyled = styled(AlephiumLogo)`
   height: auto;
-  max-width: 60px;
+  max-width: 30px;
 `

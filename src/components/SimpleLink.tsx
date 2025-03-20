@@ -3,16 +3,15 @@ import styled from 'styled-components'
 
 export interface SimpleLinkProps {
   className?: string
-  url?: string | undefined
+  url?: string | undefined | null
   text?: string
-  newTab?: boolean
   color?: string
   openModal?: (x: boolean) => void
   trackingName?: string
   children?: ReactNode
 }
 
-const SimpleLink = ({ className, children, url, newTab, text, openModal, trackingName }: SimpleLinkProps) => {
+const SimpleLink = ({ className, children, url, text, openModal, trackingName }: SimpleLinkProps) => {
   const handleOnClick = (event: MouseEvent) => {
     if (openModal) {
       event.preventDefault()
@@ -27,9 +26,9 @@ const SimpleLink = ({ className, children, url, newTab, text, openModal, trackin
   ) : (
     <a
       className={className}
-      href={url}
-      target={(newTab && '_blank') || undefined}
-      rel={(newTab && 'noopener noreferrer') || undefined}
+      href={url ?? undefined}
+      target={url?.startsWith('/') ? undefined : '_blank'}
+      rel={url?.startsWith('/') ? undefined : 'noopener noreferrer'}
       data-goatcounter-click={trackingName}
     >
       {children || text}

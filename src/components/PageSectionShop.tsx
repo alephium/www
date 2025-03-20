@@ -52,7 +52,7 @@ const Shop: FC<ShopProps> = ({ className, content }) => {
           <Column vertialCenter>
             <SectionTextHeader title={content.title} subtitle={content.subtitle} bigSubtitle bigText>
               <p>{content.description}</p>
-              <ArrowedLink url={content.link.url} newTab trackingName="shop-section:main-link">
+              <ArrowedLink url={content.link.url} trackingName="shop-section:main-link">
                 {content.link.text}
               </ArrowedLink>
             </SectionTextHeader>

@@ -20,7 +20,7 @@ This Privacy Policy (the “Policy”) explains how Alephium ("Panda Software SA
 
 Privacy is central to everything we do. Accordingly, we aspire to be transparent about what little data we do collect. We do not maintain user accounts and do not collect and store personal data, such as your name or internet protocol (“IP”) address.
 
-In our website at alephium.org we are using [GoatCounter](https://www.goatcounter.com/), a privacy-friendly web analytics tool. No personal information (such as IP address) is collected; a hash of the IP address, User-Agent, and a random number (“salt”) is kept in the process memory for 8 hours to identify a browsing session, and is never stored to disk.There is no information stored in the browser with cookies, localStorage, or other methods. The following information can be stored:
+In our website at alephium.org we are using [Fathom Analytics](https://usefathom.com/), a privacy-friendly web analytics tool. No personal information (such as IP address) is collected; a hash of the IP address, User-Agent, and a random number (“salt”) is kept in the process memory for 8 hours to identify a browsing session, and is never stored to disk.There is no information stored in the browser with cookies, localStorage, or other methods. The following information can be stored:
 
 - URL of the visited page.
 - Referer header.

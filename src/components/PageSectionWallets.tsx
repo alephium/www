@@ -2,10 +2,10 @@ import { colord } from 'colord'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 import styled from 'styled-components'
+
 import { deviceBreakPoints } from '../styles/global-style'
 import Button from './Button'
 import GradientBubble from './GradientBubble'
-import SectionTextHeader from './SectionTextHeader'
 
 export interface PageSectionWalletsContentType {
   title: string
@@ -14,7 +14,9 @@ export interface PageSectionWalletsContentType {
   wallets: {
     title: string
     description: string
-    screenshot: { publicURL: string }
+    screenshot: {
+      publicURL: string
+    }
     color: string
     actions: {
       title: string
@@ -25,34 +27,7 @@ export interface PageSectionWalletsContentType {
   }[]
 }
 
-interface PageSectionTechnologyProps {
-  className?: string
-  content: PageSectionWalletsContentType
-}
-
-const PageSectionWallets = ({ content: { title, subtitle, description, wallets } }: PageSectionTechnologyProps) => (
-  <SectionWrapper>
-    <StyledSectionTextHeader id="wallets" title={title} subtitle={subtitle} bigSubtitle bigText centered />
-    <CenteredDescription>
-      <span>{description}</span>
-    </CenteredDescription>
-    <WalletCards>
-      {wallets.map((w) => (
-        <WalletCard key={w.title} {...w}></WalletCard>
-      ))}
-    </WalletCards>
-    <ParallaxBackground>
-      <GradientBubble speed={-10} positionPercentage={[5, 5]} scale={2} blur={10} gradientVariant={2} />
-      <GradientBubble speed={-5} positionPercentage={[0, 20]} scale={1} blur={10} gradientVariant={1} />
-      <GradientBubble speed={-20} positionPercentage={[80, 30]} scale={2} blur={15} gradientVariant={4} />
-      <GradientBubble speed={-2} positionPercentage={[90, 80]} scale={2} blur={10} gradientVariant={3} />
-      <GradientBubble speed={30} positionPercentage={[80, 10]} scale={6} blur={20} gradientVariant={1} />
-      <GradientBubble speed={20} positionPercentage={[0, 90]} scale={6} blur={20} gradientVariant={0} />
-    </ParallaxBackground>
-  </SectionWrapper>
-)
-
-const WalletCard = ({
+export const WalletCard = ({
   title,
   description,
   screenshot,
@@ -70,11 +45,7 @@ const WalletCard = ({
             .toHex()
         }}
       >
-        <WalletScreenshot
-          src={screenshot.publicURL}
-          alt="Desktop wallet screenshot"
-          animate={{ scale: isHovered ? 1.04 : 1 }}
-        />
+        <WalletScreenshot animate={{ scale: isHovered ? 1.04 : 1 }} src={screenshot.publicURL} alt={title} />
       </WalletScreenShotContainer>
       <WalletTextContainer>
         <WalletTitle>{title}</WalletTitle>
@@ -82,7 +53,7 @@ const WalletCard = ({
       </WalletTextContainer>
       <WalletActions>
         {actions.map((a) => (
-          <ActionButton key={a.title} url={a.link} newTab trackingName={`wallets-section:${a.title}-link`}>
+          <ActionButton key={a.title} url={a.link} trackingName={`wallets-section:${a.title}-link`}>
             {a.title}
           </ActionButton>
         ))}
@@ -91,39 +62,18 @@ const WalletCard = ({
   )
 }
 
-export default PageSectionWallets
+export const ParallaxBg = () => (
+  <ParallaxBackground>
+    <GradientBubble speed={-10} positionPercentage={[5, 5]} scale={2} blur={10} gradientVariant={2} />
+    <GradientBubble speed={-5} positionPercentage={[0, 20]} scale={1} blur={10} gradientVariant={1} />
+    <GradientBubble speed={-20} positionPercentage={[80, 30]} scale={2} blur={15} gradientVariant={4} />
+    <GradientBubble speed={-2} positionPercentage={[90, 80]} scale={2} blur={10} gradientVariant={3} />
+    <GradientBubble speed={30} positionPercentage={[80, 10]} scale={6} blur={20} gradientVariant={1} />
+    <GradientBubble speed={20} positionPercentage={[0, 90]} scale={6} blur={20} gradientVariant={0} />
+  </ParallaxBackground>
+)
 
-const SectionWrapper = styled.section`
-  position: relative;
-  padding-top: var(--spacing-16);
-  padding-bottom: var(--spacing-16);
-  background-color: ${({ theme }) => theme.bgTertiary};
-  z-index: 0;
-`
-
-const StyledSectionTextHeader = styled(SectionTextHeader)`
-  margin-bottom: var(--spacing-8);
-`
-
-const CenteredDescription = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: var(--spacing-8);
-  color: ${({ theme }) => theme.textTertiary};
-
-  text-align: center;
-  font-size: var(--fontSize-18);
-  line-height: var(--lineHeight-26);
-
-  span {
-    width: 40%;
-    max-width: 500px;
-    min-width: 260px;
-  }
-`
-
-const WalletCards = styled.div`
+export const WalletCards = styled.div`
   display: flex;
   gap: 50px;
   padding: var(--spacing-4);
@@ -133,16 +83,6 @@ const WalletCards = styled.div`
     flex-direction: column;
     align-items: center;
   }
-`
-
-const ScreenshotHighlightGradient = styled(motion.div)`
-  position: absolute;
-  bottom: 30%;
-  right: -20px;
-  left: -20px;
-  top: 0;
-  z-index: 0;
-  transition: all 0.5s ease-out;
 `
 
 const WalletScreenShotContainer = styled.div`

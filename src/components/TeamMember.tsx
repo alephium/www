@@ -1,6 +1,7 @@
 import { IGatsbyImageData } from 'gatsby-plugin-image'
 import { FC } from 'react'
 import styled from 'styled-components'
+
 import ResponsiveImage from './ResponsiveImage'
 import SimpleLink from './SimpleLink'
 
@@ -24,7 +25,7 @@ const TeamMember: FC<TeamMemberProps> = ({ name, role, externalImageURL, image, 
     ) : (
       image && <ResponsiveImage image={{ src: image, altText: name }} />
     )}
-    <TeamMemberName text={name} url={url} newTab />
+    <TeamMemberName text={name} url={url} />
     <TeamMemberRole>{role}</TeamMemberRole>
   </TeamMemberContainer>
 )
