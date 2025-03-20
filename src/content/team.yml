@@ -34,6 +34,9 @@
 - name: Vladimir Moshnyager
   role: Marketing
   image: ../images/team/vladimir.jpeg
-- name: Thiago Freitas
-  role: Content
-  image: ../images/team/thiago.jpg
+- name: Ratko Stambolija
+  role: Marketing
+  image: ../images/team/ratko.jpeg
+- name: Bertrand Caffi
+  role: Business Development
+  image: ../images/team/bertrand.jpeg
