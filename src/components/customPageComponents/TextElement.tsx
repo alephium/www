@@ -27,12 +27,14 @@ const TextElement = styled.div<TextElementProps>`
   }
 
   > h1 {
-    font-size: var(--fontSize-56);
+    font-family: 'Sentient';
+    font-size: var(--fontSize-50);
+    font-weight: var(--fontWeight-medium);
   }
 
   > h2 {
-    font-size: var(--fontSize-50);
-    line-height: var(--fontSize-50);
+    font-size: var(--fontSize-36);
+    line-height: var(--fontSize-36);
   }
 
   > h3 {
@@ -59,20 +61,24 @@ const TextElement = styled.div<TextElementProps>`
       `}
   }
 
+  * strong {
+    color: var(--color-white);
+    font-weight: inherit;
+  }
+
   p,
   ul {
     color: var(--color-grey-250);
 
     font-size: var(--fontSize-24);
     line-height: var(--lineHeight-36);
-    font-weight: var(--fontWeight-light);
+    font-weight: var(--fontWeight-medium);
 
     ${({ isSmall, isBodySmall }) =>
       (isSmall || isBodySmall) &&
       css`
         font-size: var(--fontSize-18);
         line-height: var(--lineHeight-28);
-        font-weight: var(--fontWeight-normal);
       `}
 
     > a {

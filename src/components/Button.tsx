@@ -40,8 +40,8 @@ const Button = ({ onClick, className, children, url, trackingName, disabled }: B
 export default styled(Button)`
   background-color: rgba(255, 255, 255, 0.9);
   color: black;
-  border-radius: 9px;
-  padding: 8px 12px;
+  border-radius: 50px;
+  padding: 10px 12px;
   border: 0 solid;
   text-decoration: none;
   display: inline-flex;

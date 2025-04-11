@@ -59,10 +59,6 @@ const SubpageHeroSectionStyled = styled.section`
   overflow: hidden;
   transition: all 0.4s ease-in;
   display: flex;
-
-  ${({ theme }) => css`
-    background: linear-gradient(black 0%, black 40%, ${theme.bgSecondary}) 100%;
-  `};
 `
 
 const TextElementStyled = styled(TextElement)`

@@ -14,6 +14,7 @@ import { isMobile } from '../../../utils/misc'
 import Button from '../../Button'
 import ArrowedLink from '../../ArrowedLink'
 import SubpageHeroSection from '../../customPageComponents/SubpageHeroSection'
+import TextElement from '../../customPageComponents/TextElement'
 
 const HomepageHeroSection = () => {
   const [sceneLoaded, setSceneLoaded] = useState(false)
@@ -36,7 +37,7 @@ const HomepageHeroSection = () => {
       {!isMobile && (
         <ThreeDimensionSceneContainer animate={{ opacity: sceneLoaded && inView ? 1 : 0 }}>
           <Spline
-            scene="https://prod.spline.design/NqiuAD2RdAocCcLo/scene.splinecode"
+            scene="https://prod.spline.design/RlC3pBxC3Bxm4Vv5/scene.splinecode"
             onLoad={() => setSceneLoaded(true)}
           />
         </ThreeDimensionSceneContainer>

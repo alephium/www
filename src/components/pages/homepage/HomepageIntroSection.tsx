@@ -29,7 +29,7 @@ const HomepageIntroSection = ({ cards }: Queries.HomepageIntroSectionFragment) =
     <TextElement>
       <h2>A Network Built by Visionaries</h2>
       <p>
-        Alephium is more than a blockchain - it’s a movement driven by those who refuse to compromise on security. Built
+        <strong>Alephium is more than a blockchain</strong> - it’s a movement driven by those who refuse to compromise on security. Built
         and secured by a community of miners, developers, and innovators, Alephium embodies the core strengths of
         Proof-of-Work while pioneering energy efficiency and scalability.
       </p>

@@ -10,10 +10,10 @@ export const darkTheme: DefaultTheme = {
   textSecondary: 'var(--color-grey-200)',
   textTertiary: 'var(--color-grey-300)',
 
-  bgPrimary: 'var(--color-grey-800)',
-  bgSecondary: 'var(--color-grey-850)',
-  bgTertiary: 'var(--color-grey-950)',
-  bgSurface: 'var(--color-grey-700)',
+  bgPrimary: 'var(--color-grey-600)',
+  bgSecondary: 'var(--color-grey-700)',
+  bgTertiary: 'var(--color-grey-800)',
+  bgSurface: 'var(--color-grey-500)',
 
   borderPrimary: 'var(--color-grey-700)',
 

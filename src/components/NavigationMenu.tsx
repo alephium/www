@@ -22,65 +22,21 @@ interface NavigationMenuProps {
   className?: string
 }
 
-const detachScrollValue = 100
-
-const NavigationMenu = ({ topOffset, className }: NavigationMenuProps) => {
-  const [isDetached, setIsDetached] = useState(false)
-  const [isVisible, setIsVisible] = useState(true)
-  const lastScrollY = useRef(0)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY
-      const scrollDirection = currentScrollY > lastScrollY.current ? 'down' : 'up'
-
-      if (currentScrollY > detachScrollValue && !isDetached) {
-        setIsDetached(true)
-      } else if (currentScrollY <= detachScrollValue && isDetached) {
-        setIsDetached(false)
-      }
-
-      if (scrollDirection === 'down' && currentScrollY > 100) {
-        setIsVisible(false)
-      } else if (scrollDirection === 'up') {
-        setIsVisible(true)
-      }
-
-      lastScrollY.current = currentScrollY
-    }
-
-    window.addEventListener('scroll', handleScroll, { passive: true })
-
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [isDetached])
-
-  const initialTop = topOffset || 0
-
-  return (
-    <NavigationWrapper>
-      <NavigationMenuStyled
-        className={className}
-        animate={{
-          y: isDetached ? (isVisible ? 30 : -detachScrollValue) : initialTop,
-          backgroundColor: 'rgba(30, 30, 30, 0)',
-          boxShadow: 'none'
-        }}
-        transition={{ type: 'spring', stiffness: 200, damping: 50 }}
-      >
-        <div className="nav-item">
-          <LinkStyled to="/" title="Go to homepage">
-            <HeroLogoContainer>
-              <HeroLogoStyled gradientIndex={1} accentFill="rgba(255, 255, 255, 0.5" />
-            </HeroLogoContainer>
-            <LogoTextStyled />
-          </LinkStyled>
-        </div>
-        <NavigationItems className="nav-end" />
-        <MobileMenu />
-      </NavigationMenuStyled>
-    </NavigationWrapper>
-  )
-}
+const NavigationMenu = ({ topOffset, className }: NavigationMenuProps) => (
+  <NavigationWrapper>
+    <NavigationMenuStyled
+      className={className}
+    >
+      <div className="nav-item">
+        <LinkStyled to="/" title="Go to homepage">
+          <LogoTextStyled />
+        </LinkStyled>
+      </div>
+      <NavigationItems className="nav-end" />
+      <MobileMenu />
+    </NavigationMenuStyled>
+  </NavigationWrapper>
+)
 
 const NavigationItems = ({ className }: { className?: string }) => {
   const theme = useTheme()
@@ -197,7 +153,7 @@ export const navigationMenuQuery = graphql`
 
 const NavigationWrapper = styled.div`
   position: fixed;
-  top: 0;
+  top: 30px;
   right: 0;
   left: 0;
   display: flex;
@@ -211,16 +167,17 @@ const NavigationWrapper = styled.div`
   }
 `
 
-const NavigationMenuStyled = styled(motion.div)`
-  width: calc(var(--page-width) - 100px);
+const NavigationMenuStyled = styled.div`
+  width: var(--page-width);
   display: flex;
   justify-content: space-between;
   font-weight: var(--fontWeight-medium);
   z-index: 1;
-  backdrop-filter: blur(24px);
-  padding: 0 16px 0 12px;
+  backdrop-filter: blur(100px);
+  padding: 0 30px;
   height: 62px;
   border-radius: 200px;
+  border: 1px solid ${({ theme }) => theme.borderPrimary};
 
   .nav-end {
     display: flex;
@@ -259,20 +216,6 @@ const LogoTextStyled = styled(LogoText)`
   fill: ${({ theme }) => theme.textPrimary};
   width: auto;
   transform: translateY(2px);
-`
-
-const HeroLogoContainer = styled.div`
-  background-color: ${({ theme }) => theme.bgPrimary};
-  border-radius: 40px;
-  height: 42px;
-  width: 42px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`
-
-const HeroLogoStyled = styled(HeroLogo)`
-  height: 26px;
 `
 
 const LinkStyle = css`
