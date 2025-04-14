@@ -177,7 +177,6 @@ const NavigationMenuStyled = styled.div`
   padding: 0 30px;
   height: 62px;
   border-radius: 200px;
-  border: 1px solid ${({ theme }) => theme.borderPrimary};
 
   .nav-end {
     display: flex;

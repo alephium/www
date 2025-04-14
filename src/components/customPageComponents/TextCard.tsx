@@ -82,7 +82,6 @@ const cardStyles = css`
   background-color: ${({ theme }) => theme.bgTertiary};
   background-clip: padding-box;
   text-decoration: none;
-  box-shadow: 0px 22px 30px rgba(0, 0, 0, 0.47);
   transition: all 0.1s ease-out;
 `
 

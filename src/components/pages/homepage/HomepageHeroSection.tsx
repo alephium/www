@@ -14,7 +14,6 @@ import { isMobile } from '../../../utils/misc'
 import Button from '../../Button'
 import ArrowedLink from '../../ArrowedLink'
 import SubpageHeroSection from '../../customPageComponents/SubpageHeroSection'
-import TextElement from '../../customPageComponents/TextElement'
 
 const HomepageHeroSection = () => {
   const [sceneLoaded, setSceneLoaded] = useState(false)

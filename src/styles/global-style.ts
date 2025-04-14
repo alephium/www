@@ -77,8 +77,9 @@ const GlobalStyle = createGlobalStyle`
     --spacing-34: 17rem;     // 272pt
     --spacing-35: 17.5rem;   // 280pt
 
-    --radius: 1rem;
-    --radius-small: 0.4rem;
+    --radius-small: 9px;
+    --radius: 12px;
+    --radius-big: 40px;
     --radius-full: 9999px;
 
     --fontFamily-sans: "InterDisplay", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
