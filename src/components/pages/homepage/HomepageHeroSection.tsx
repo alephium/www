@@ -1,9 +1,7 @@
-import { useState } from 'react'
 import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../../../styles/global-style'
 
-import Arrow from '../../../images/svgs/arrow-right.svg'
 import Button from '../../Button'
 import ArrowedLink from '../../ArrowedLink'
 import SubpageHeroSection from '../../customPageComponents/SubpageHeroSection'
@@ -11,7 +9,7 @@ import SubpageHeroSection from '../../customPageComponents/SubpageHeroSection'
 const HomepageHeroSection = () => (
   <SubpageHeroSection>
     <h1>
-      Engineered for the Future
+      Engineered<br/>for the Future.
     </h1>
     <hr />
     <p>
@@ -32,7 +30,6 @@ export default HomepageHeroSection
 const Buttons = styled.div`
   display: flex;
   gap: var(--spacing-4);
-  margin-bottom: var(--spacing-8);
   margin-top: var(--spacing-8);
 
   @media ${deviceBreakPoints.mobile} {

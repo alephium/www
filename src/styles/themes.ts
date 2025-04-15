@@ -6,16 +6,16 @@ export const darkTheme: DefaultTheme = {
   name: 'dark',
 
   textPrimary: 'var(--color-white)',
-  textPrimaryVariation: 'var(--color-grey-100)',
-  textSecondary: 'rgba(255, 255, 255, 0.7)',
-  textTertiary: 'var(--color-grey-300)',
+  textPrimaryVariation: 'rgba(255, 255, 255, 0.8)',
+  textSecondary: 'rgba(255, 255, 255, 0.6)',
+  textTertiary: 'rgba(255, 255, 255, 0.4)',
 
   bgPrimary: 'var(--color-grey-600)',
   bgSecondary: 'var(--color-grey-700)',
   bgTertiary: 'var(--color-grey-800)',
   bgSurface: 'var(--color-grey-500)',
 
-  borderPrimary: 'var(--color-grey-400)',
+  borderPrimary: 'rgba(255, 255, 255, 0.1)',
 
   link: 'var(--color-grey-100)',
   linkAlt: 'var(--color-white)',

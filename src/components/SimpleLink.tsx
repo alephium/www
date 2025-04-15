@@ -46,7 +46,6 @@ export default styled(SimpleLink)`
   }
 
   &:hover {
-    filter: brightness(110%);
     cursor: pointer;
   }
 `

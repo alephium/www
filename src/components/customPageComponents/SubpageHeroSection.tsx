@@ -80,20 +80,8 @@ const VideoContainer = styled.video`
 `
 
 const TextElementStyled = styled(TextElement)`
-  > h1 {
-    font-size: 38px;
-
-    @media ${deviceBreakPoints.mobile} {
-      font-size: 48px;
-    }
-
-    @media ${deviceBreakPoints.smallMobile} {
-      font-size: 32px;
-    }
-  }
-
   > p {
-    max-width: var(--width-564);
+    max-width: 420px;
     color: ${({ theme }) => theme.textSecondary};
     font-weight: var(--fontWeight-semiBold);
     line-height: 1.3;
@@ -127,12 +115,8 @@ const LeftContentWrapper = styled.div`
 
   @media ${deviceBreakPoints.mobile} {
     padding: var(--spacing-4);
-    top: 55%;
-  }
-
-  @media ${deviceBreakPoints.smallMobile} {
-    padding: var(--spacing-4);
-    top: 60%;
+    top: auto;
+    bottom: 5%;
   }
 `
 
