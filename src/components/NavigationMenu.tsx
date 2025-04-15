@@ -47,27 +47,29 @@ const NavigationItems = ({ className }: { className?: string }) => {
 
   return (
     <div className={className}>
-      {menuItems?.map(
-        ({ title, items }) =>
-          title &&
-          items && (
-            <NavigationDrawer key={title} title={title}>
-              {items.map(
-                (item, index) =>
-                  item &&
-                  item.title && (
-                    <DrawerItem key={item.title} isLink={!!item.link}>
-                      {item.link ? (
-                        <NavLink key={index} url={item.link} text={item.title} />
-                      ) : (
-                        <DrawerItemTitle key={index}>{item.title}</DrawerItemTitle>
-                      )}
-                    </DrawerItem>
-                  )
-              )}
-            </NavigationDrawer>
-          )
-      )}
+      <MenuItems>
+        {menuItems?.map(
+          ({ title, items }) =>
+            title &&
+            items && (
+              <NavigationDrawer key={title} title={title}>
+                {items.map(
+                  (item, index) =>
+                    item &&
+                    item.title && (
+                      <DrawerItem key={item.title} isLink={!!item.link}>
+                        {item.link ? (
+                          <NavLink key={index} url={item.link} text={item.title} />
+                        ) : (
+                          <DrawerItemTitle key={index}>{item.title}</DrawerItemTitle>
+                        )}
+                      </DrawerItem>
+                    )
+                )}
+              </NavigationDrawer>
+            )
+        )}
+      </MenuItems>
       <NavigationDrawer Icon={<RiTranslate2 color={theme.textSecondary} size={20} />}>
         <TranslateComponent />
       </NavigationDrawer>
@@ -170,7 +172,7 @@ const NavigationWrapper = styled.div`
 const NavigationMenuStyled = styled.div`
   width: var(--page-width);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   font-weight: var(--fontWeight-medium);
   z-index: 1;
   backdrop-filter: blur(100px);
@@ -183,6 +185,8 @@ const NavigationMenuStyled = styled.div`
     margin-left: var(--spacing-3);
     gap: var(--spacing-5);
     align-items: center;
+    justify-content: center;
+    flex: 1;
 
     & > :last-child {
       margin-top: 5px; // Github button
@@ -204,6 +208,13 @@ const NavigationMenuStyled = styled.div`
   }
 `
 
+const MenuItems = styled.div`
+  flex: 1;
+  gap: 20px;
+  justify-content: center;
+  display: flex;
+`
+
 const LinkStyled = styled(Link)`
   display: flex;
   align-items: center;
@@ -211,7 +222,7 @@ const LinkStyled = styled(Link)`
 `
 
 const LogoTextStyled = styled(LogoText)`
-  height: 26px;
+  height: 24px;
   fill: ${({ theme }) => theme.textPrimary};
   width: auto;
   transform: translateY(2px);
@@ -255,6 +266,7 @@ const MobileNav = styled(NavigationItems)`
   flex-direction: column;
   right: 0px;
   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.9);
+  flex: 1;
 
   > * {
     display: flex;

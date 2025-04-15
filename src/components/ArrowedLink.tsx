@@ -54,8 +54,8 @@ export default ArrowedLink
 const SimpleLinkStyled = styled(SimpleLink)<Pick<ArrowedLinkProps, 'altColor' | 'emoji'> & { isExternal?: boolean }>`
   display: flex;
   align-items: center;
-  font-weight: var(--fontWeight-medium);
-  font-size: var(--fontSize-18);
+  font-weight: var(--fontWeight-semiBold);
+  font-size: var(--fontSize-20);
 
   .icon {
     width: 1rem;
@@ -64,7 +64,7 @@ const SimpleLinkStyled = styled(SimpleLink)<Pick<ArrowedLinkProps, 'altColor' | 
   }
 
   .arrow {
-    width: 11px;
+    width: 14px;
     margin-left: var(--spacing-1);
     fill: ${({ theme, altColor }) => (altColor ? theme.linkAlt : theme.link)};
     ${({ isExternal, emoji }) =>

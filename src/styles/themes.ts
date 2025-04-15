@@ -7,7 +7,7 @@ export const darkTheme: DefaultTheme = {
 
   textPrimary: 'var(--color-white)',
   textPrimaryVariation: 'var(--color-grey-100)',
-  textSecondary: 'var(--color-grey-200)',
+  textSecondary: 'rgba(255, 255, 255, 0.7)',
   textTertiary: 'var(--color-grey-300)',
 
   bgPrimary: 'var(--color-grey-600)',
@@ -15,7 +15,7 @@ export const darkTheme: DefaultTheme = {
   bgTertiary: 'var(--color-grey-800)',
   bgSurface: 'var(--color-grey-500)',
 
-  borderPrimary: 'var(--color-grey-700)',
+  borderPrimary: 'var(--color-grey-400)',
 
   link: 'var(--color-grey-100)',
   linkAlt: 'var(--color-white)',

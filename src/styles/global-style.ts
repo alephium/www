@@ -25,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
       font-size: 12px;
     }
 
-    --page-width: 72.5rem;
+    --page-width: 80vw;
     --page-width-shrinked: 68rem;
 
     --width-16: 1rem;
@@ -95,6 +95,7 @@ const GlobalStyle = createGlobalStyle`
     inspiration in defining a typography system */
     --fontSize-14: 0.875rem;
     --fontSize-18: 1.125rem;
+    --fontSize-20: 1.2rem;
     --fontSize-24: 1.5rem;
     --fontSize-28: 1.75rem;
     --fontSize-36: 2.25rem;

@@ -41,15 +41,15 @@ export default styled(Button)`
   background-color: rgba(255, 255, 255, 0.9);
   color: black;
   border-radius: 50px;
-  padding: 10px 12px;
+  padding: 12px 16px;
   border: 0 solid;
   text-decoration: none;
   display: inline-flex;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 
   /* The following rules are the same as in the ArrowedLink, maybe extract? */
   align-items: center;
   font-weight: var(--fontWeight-semiBold);
+  font-size: var(--fontSize-20);
   transition: all 0.1s ease-out;
 
   ${({ disabled }) =>
@@ -67,7 +67,7 @@ export default styled(Button)`
         `}
 
   .arrow {
-    width: 11px;
+    width: 14px;
     margin-left: var(--spacing-1);
     fill: inherit;
   }
