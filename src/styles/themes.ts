@@ -25,7 +25,9 @@ export const darkTheme: DefaultTheme = {
   palette1: '#6EE2AC',
   palette2: '#FCCF7D',
   palette3: '#3FD2FF',
-  palette4: '#BE60F9'
+  palette4: '#c974ff',
+  palette5: '#ff7bc6',
+  palette6: '#ffa45e'
 }
 
 export const lightTheme: DefaultTheme = {
@@ -51,7 +53,9 @@ export const lightTheme: DefaultTheme = {
   palette1: '#3580ff',
   palette2: '#FF9C2B',
   palette3: '#FF259D',
-  palette4: '#FF259D'
+  palette4: '#BE60F9',
+  palette5: '#ff7bc6',
+  palette6: '#FF259D'
 }
 
 export const hackathonTheme: DefaultTheme = {
@@ -76,5 +80,8 @@ export const hackathonTheme: DefaultTheme = {
 
   palette1: '#7afff1',
   palette2: '#ffbe2b',
-  palette3: '#b73df9'
+  palette3: '#b73df9',
+  palette4: '#FF259D',
+  palette5: '#e7409f',
+  palette6: '#FF259D'
 }
