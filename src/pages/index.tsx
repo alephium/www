@@ -43,7 +43,6 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
       content={
         <>
           <HomepageHeroSection />
-          <SectionDivider />
 
           {content?.intro && (
             <>

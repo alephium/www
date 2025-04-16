@@ -10,9 +10,9 @@ export const darkTheme: DefaultTheme = {
   textSecondary: 'rgba(255, 255, 255, 0.6)',
   textTertiary: 'rgba(255, 255, 255, 0.4)',
 
-  bgPrimary: 'var(--color-grey-600)',
-  bgSecondary: 'var(--color-grey-700)',
-  bgTertiary: 'var(--color-grey-800)',
+  bgPrimary: 'var(--color-grey-700)',
+  bgSecondary: 'var(--color-grey-800)',
+  bgTertiary: 'var(--color-grey-850)',
   bgSurface: 'var(--color-grey-500)',
 
   borderPrimary: 'rgba(255, 255, 255, 0.1)',
@@ -20,7 +20,7 @@ export const darkTheme: DefaultTheme = {
   link: 'var(--color-grey-100)',
   linkAlt: 'var(--color-white)',
 
-  separator: 'var(--color-grey-800)',
+  separator: 'var(--color-grey-700)',
 
   palette1: '#6EE2AC',
   palette2: '#FCCF7D',

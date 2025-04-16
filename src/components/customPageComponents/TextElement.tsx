@@ -111,7 +111,7 @@ const TextElement = styled.div<TextElementProps>`
 
   /* Buttons */
   > a {
-    margin-top: var(--spacing-6);
+    margin-top: var(--spacing-2);
   }
 
   > ul {
