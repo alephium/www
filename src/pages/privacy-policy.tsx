@@ -20,7 +20,7 @@ interface PrivacyPolicyProps extends PageProps {
 
 const PrivacyPolicy = (props: PrivacyPolicyProps) => (
   <>
-    <Seo />
+    <Seo title="" description="" />
     <ThemeProvider theme={darkTheme}>
       <GlobalStyle />
     </ThemeProvider>

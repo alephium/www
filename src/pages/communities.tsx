@@ -29,6 +29,10 @@ const CustomPage = (props: PageProps) => {
   return (
     <Page
       {...props}
+      seo={{
+        title: '',
+        description: ''
+      }}
       content={
         <>
           <SubpageHeroSection backgroundImage={heroImage}>

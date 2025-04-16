@@ -20,7 +20,7 @@ interface TermsAndConditionsProps extends PageProps {
 
 const TermsAndConditions = (props: TermsAndConditionsProps) => (
   <>
-    <Seo />
+    <Seo title="" description="" />
     <ThemeProvider theme={darkTheme}>
       <GlobalStyle />
     </ThemeProvider>
