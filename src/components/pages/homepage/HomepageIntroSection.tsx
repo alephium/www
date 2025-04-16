@@ -36,8 +36,10 @@ const HomepageIntroSection = ({ cards }: Queries.HomepageIntroSectionFragment) =
         strengths of Proof-of-Work while pioneering energy efficiency and scalability.
       </p>
       <p>
-        We're not here to follow trends -{' '}
-        <strong>we’re here to build a secure and sustainable foundation for the future of finance.</strong>
+        <strong>
+          We're not here to follow trends - we’re here to build a secure and sustainable foundation for the future of
+          finance.
+        </strong>
       </p>
     </TextElement>
 

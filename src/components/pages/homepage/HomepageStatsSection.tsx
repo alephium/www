@@ -6,7 +6,6 @@ import styled, { useTheme } from 'styled-components'
 import Grid from '../../customPageComponents/Grid'
 import SubheaderContent from '../../customPageComponents/SubheaderContent'
 import SubpageSection from '../../customPageComponents/SubpageSection'
-import TextCard from '../../customPageComponents/TextCard'
 import TextElement from '../../customPageComponents/TextElement'
 
 const baseUrl = 'https://backend.mainnet.alephium.org'
@@ -59,7 +58,7 @@ const HomepageStatsSection = () => {
 
   return (
     <SubpageSection>
-      <TextElement isCentered>
+      <TextElement>
         <h2>
           Made for Real Adoption.
           <br />
@@ -69,38 +68,40 @@ const HomepageStatsSection = () => {
 
       <SubheaderContent>
         <Grid columns={2}>
-          <TextCard isSmall={false} isBodySmall>
-            <h3 style={{ color: theme.palette1 }}>Fast</h3>
+          <TextElement>
+            <h3 style={{ color: theme.palette2 }}>Fast</h3>
+            <h4 style={{ color: theme.palette2 }}>Over 10,000 transactions per second</h4>
             <p>
               Alephium moves as fast as you do. With block times of just 8 seconds, sharding, and Proof-of-Less-Work, it
-              delivers fast, efficient, and reliable performance - ready to scale as adoption grows.
+              delivers <strong>fast, efficient, and reliable performance</strong> - ready to scale as adoption grows.
             </p>
-            <h4>Over 10,000 transactions per second</h4>
-          </TextCard>
-          <TextCard isSmall={false} isBodySmall>
-            <h3 style={{ color: theme.palette2 }}>Scalable</h3>
+          </TextElement>
+          <TextElement>
+            <h3 style={{ color: theme.palette3 }}>Scalable</h3>
+            <h4
+              style={{ color: theme.palette3 }}
+            >{`${totalTransactions.value.toLocaleString()} total transactions`}</h4>
             <p>
-              Built to handle high throughput without sacrificing security, Alephium’s architecture ensures that fees
-              remain predictable and affordable - empowering developers and users alike.
+              Built to handle <strong>high throughput without sacrificing security</strong>, Alephium’s architecture
+              ensures that fees remain predictable and affordable - empowering developers and users alike.
             </p>
-            <h4>{`${totalTransactions.value.toLocaleString()} total transactions`}</h4>
-          </TextCard>
-          <TextCard isSmall={false} isBodySmall>
-            <h3 style={{ color: theme.palette3 }}>Secure</h3>
+          </TextElement>
+          <TextElement>
+            <h3 style={{ color: theme.palette4 }}>Secure</h3>
+            <h4 style={{ color: theme.palette4 }}>125+ independent mining nodes</h4>
             <p>
               With a truly decentralized Proof-of-Work model, Alephium operates independently of vulnerable central
-              validators, ensuring maximum security, trustlessness, and censorship resistance.
+              validators, <strong>ensuring maximum security, trustlessness, and censorship resistance.</strong>
             </p>
-            <h4>125+ independent mining nodes</h4>
-          </TextCard>
-          <TextCard isSmall={false} isBodySmall>
-            <h3 style={{ color: theme.palette4 }}>Sustainable</h3>
+          </TextElement>
+          <TextElement>
+            <h3 style={{ color: theme.palette1 }}>Sustainable</h3>
+            <h4 style={{ color: theme.palette1 }}>87% lower environmental impact vs. traditional PoW</h4>
             <p>
-              Alephium’s Proof-of-Less-Work mechanism reduces energy consumption, making it one of the most sustainable
-              and responsible blockchains built for the future.
+              Alephium’s Proof-of-Less-Work mechanism reduces energy consumption, making it{' '}
+              <strong>one of the most sustainable and responsible blockchains</strong> built for the future.
             </p>
-            <h4>87% lower environmental impact vs. traditional PoW</h4>
-          </TextCard>
+          </TextElement>
         </Grid>
       </SubheaderContent>
     </SubpageSection>
