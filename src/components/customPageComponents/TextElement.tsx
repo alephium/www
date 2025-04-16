@@ -54,6 +54,7 @@ const TextElement = styled.div<TextElementProps>`
   }
 
   > h4 {
+    font-family: 'Sentient';
     font-size: var(--fontSize-28);
     line-height: var(--lineHeight-36);
     opacity: 0.75;

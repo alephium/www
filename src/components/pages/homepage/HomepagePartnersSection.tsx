@@ -29,14 +29,14 @@ const HomepagePartnersSection = (content: Queries.HomepagePartnersSectionFragmen
     </TextElement>
 
     <SubheaderContent>
-      <Grid columns={4}>
+      <Grid columns={4} gap="small">
         {content?.partners?.map(
           (partner) =>
             partner?.title &&
             partner?.logo?.publicURL && (
               <TextCard isCentered key={partner.title}>
                 <CardImage src={partner.logo.publicURL} alt={partner.title} />
-                <h3>{partner.title}</h3>
+                <h4>{partner.title}</h4>
               </TextCard>
             )
         )}
