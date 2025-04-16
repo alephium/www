@@ -7,7 +7,7 @@ import Page from '../components/customPageComponents/Page'
 import Placeholder from '../components/customPageComponents/Placeholder'
 import SideBySide from '../components/customPageComponents/SideBySide'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
-import SubpageHeroSection from '../components/customPageComponents/SubpageHeroSection'
+import SubpageHeroSection from '../components/customPageComponents/SubpageImageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextCard from '../components/customPageComponents/TextCard'
 import TextElement from '../components/customPageComponents/TextElement'
@@ -16,17 +16,39 @@ import { ParallaxBg, WalletCard, WalletCards } from '../components/PageSectionWa
 import SectionDivider from '../components/SectionDivider'
 import useWallets from '../hooks/useWallets'
 
+const exchangesQuery = graphql`
+  query Exchanges {
+    heroImage: file(relativePath: { eq: "alephium-hackathon-lake.png" }) {
+      ...HeroImage
+    }
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/exchanges.md/" } }) {
+      nodes {
+        frontmatter {
+          exchanges {
+            title
+            description
+            url
+            logo {
+              publicURL
+            }
+          }
+        }
+      }
+    }
+  }
+`
+
 const CustomPage = (props: PageProps) => {
   const wallets = useWallets()
-  const exchangesData = useStaticQuery<Queries.ExchangesQuery>(exchangesQuery)
-  const exchanges = exchangesData.allMarkdownRemark.nodes[0].frontmatter?.exchanges ?? []
+  const { allMarkdownRemark, heroImage } = useStaticQuery<Queries.ExchangesQuery>(exchangesQuery)
+  const exchanges = allMarkdownRemark.nodes[0].frontmatter?.exchanges ?? []
 
   return (
     <Page
       {...props}
       content={
         <>
-          <SubpageHeroSection>
+          <SubpageHeroSection backgroundImage={heroImage}>
             <h1>Get Started with Alephium</h1>
             <hr />
             <p>
@@ -244,22 +266,3 @@ const CustomPage = (props: PageProps) => {
 }
 
 export default CustomPage
-
-const exchangesQuery = graphql`
-  query Exchanges {
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/exchanges.md/" } }) {
-      nodes {
-        frontmatter {
-          exchanges {
-            title
-            description
-            url
-            logo {
-              publicURL
-            }
-          }
-        }
-      }
-    }
-  }
-`

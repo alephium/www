@@ -1,7 +1,7 @@
 import { PageProps } from 'gatsby'
 
 import Page from '../components/customPageComponents/Page'
-import SubpageHeroSection from '../components/customPageComponents/SubpageHeroSection'
+import SubpageHeroSection from '../components/customPageComponents/SubpageImageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import PageSectionMilestones from '../components/PageSectionMilestones'

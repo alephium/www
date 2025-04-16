@@ -3,10 +3,10 @@ import styled from 'styled-components'
 import { deviceBreakPoints } from '../../../styles/global-style'
 import ArrowedLink from '../../ArrowedLink'
 import Button from '../../Button'
-import SubpageHeroSection from '../../customPageComponents/SubpageHeroSection'
+import SubpageVideoHeroSection from '../../customPageComponents/SubpageVideoHeroSection'
 
 const HomepageHeroSection = () => (
-  <SubpageHeroSection>
+  <SubpageVideoHeroSection>
     <h1>
       Engineered
       <br />
@@ -22,7 +22,7 @@ const HomepageHeroSection = () => (
       <Button url="https://docs.alephium.org">Build on Alephium</Button>
       <ArrowedLink url="/communities">Join the community</ArrowedLink>
     </Buttons>
-  </SubpageHeroSection>
+  </SubpageVideoHeroSection>
 )
 
 export default HomepageHeroSection
