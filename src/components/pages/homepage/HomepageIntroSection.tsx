@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../../../styles/global-style'
 import Button from '../../Button'
-import CardImage from '../../customPageComponents/CardImage'
+import CardImageOverlay from '../../customPageComponents/CardImageOverlay'
 import SubheaderContent from '../../customPageComponents/SubheaderContent'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextCard from '../../customPageComponents/TextCard'
@@ -50,7 +50,7 @@ const HomepageIntroSection = ({ cards }: Queries.HomepageIntroSectionFragment) =
             card &&
             card.link?.url && (
               <TextCard isAnimated variants={cardVariants} key={card.title}>
-                <CardImage imageUrl={card.image?.publicURL} overlayTitle={card.title} />
+                <CardImageOverlay imageUrl={card.image?.publicURL} overlayTitle={card.title} />
                 <ParagraphStyled>{card.description}</ParagraphStyled>
                 <Button url={card.link?.url} squared textAlign="center">
                   {card.actionText}

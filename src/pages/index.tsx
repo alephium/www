@@ -36,6 +36,10 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
   return (
     <Page
       {...props}
+      seo={{
+        title: '',
+        description: ''
+      }}
       content={
         <>
           <HomepageHeroSection />

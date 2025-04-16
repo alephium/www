@@ -1,4 +1,4 @@
-import { PageProps } from 'gatsby'
+import { graphql, PageProps, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 
 import Button from '../components/Button'
@@ -6,7 +6,7 @@ import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
 import SideBySide from '../components/customPageComponents/SideBySide'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
-import SubpageHeroSection from '../components/customPageComponents/SubpageHeroSection'
+import SubpageHeroSection from '../components/customPageComponents/SubpageImageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextCard from '../components/customPageComponents/TextCard'
 import TextElement from '../components/customPageComponents/TextElement'
@@ -14,15 +14,28 @@ import SectionDivider from '../components/SectionDivider'
 import SimpleLink from '../components/SimpleLink'
 import useWallets from '../hooks/useWallets'
 
+const walletsQuery = graphql`
+  query WalletsPage {
+    heroImage: file(relativePath: { eq: "alephium-hackathon-lake.png" }) {
+      ...HeroImage
+    }
+  }
+`
+
 const CustomPage = (props: PageProps) => {
+  const { heroImage } = useStaticQuery<Queries.WalletsPageQuery>(walletsQuery)
   const wallets = useWallets()
 
   return (
     <Page
       {...props}
+      seo={{
+        title: '',
+        description: ''
+      }}
       content={
         <>
-          <SubpageHeroSection>
+          <SubpageHeroSection backgroundImage={heroImage}>
             <h1>Your Gateway to the Alephium Ecosystem</h1>
             <hr />
             <p>

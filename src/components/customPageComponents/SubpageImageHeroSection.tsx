@@ -1,42 +1,38 @@
-import { useInView } from 'framer-motion'
-import { ReactNode, useRef } from 'react'
+import { getImage, IGatsbyImageData } from 'gatsby-plugin-image'
+import { ReactNode } from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 
 import { deviceBreakPoints } from '../../styles/global-style'
 import { darkTheme } from '../../styles/themes'
-import video from '../../videos/lake-bridge-pan.mp4'
+import GatsbyImageWrapper from '../GatsbyImageWrapper'
 import HeroPageSectionContainer from '../Hero/HeroPageSectionContainer'
 import TextElement from './TextElement'
 
-interface SubpageHeroSectionProps {
+interface SubpageImageHeroSectionProps {
   children: ReactNode
-  renderAdditionalContent?: (inView: boolean) => ReactNode
+  backgroundImage?: {
+    readonly childImageSharp: {
+      readonly gatsbyImageData: IGatsbyImageData
+    } | null
+  } | null
+  backgroundImageAlt?: string
 }
 
-const SubpageHeroSection = ({ children, renderAdditionalContent }: SubpageHeroSectionProps) => {
-  const innerRef = useRef<HTMLElement>(null)
-  const videoRef = useRef<HTMLVideoElement>(null)
-  const inView = useInView(innerRef)
-
-  const handleMouseMove = (e: React.MouseEvent<HTMLElement>) => {
-    if (videoRef.current) {
-      const bounds = e.currentTarget.getBoundingClientRect()
-      const relativeX = e.clientX - bounds.left
-      const ratio = relativeX / bounds.width
-      const duration = videoRef.current.duration
-      if (duration) {
-        videoRef.current.currentTime = ratio * duration
-      }
-    }
-  }
+const SubpageImageHeroSection = ({
+  children,
+  backgroundImage,
+  backgroundImageAlt = ''
+}: SubpageImageHeroSectionProps) => {
+  const imageData = backgroundImage?.childImageSharp?.gatsbyImageData
+  const image = imageData ? getImage(imageData) : undefined
 
   return (
     <ThemeProvider theme={darkTheme}>
-      <SubpageHeroSectionStyled ref={innerRef} onMouseMove={handleMouseMove}>
+      <SubpageImageHeroSectionStyled>
         <BackgroundImageWrapper>
-          <VideoContainer ref={videoRef} muted playsInline>
-            <source src={video} type="video/mp4" />
-          </VideoContainer>
+          {backgroundImage && (
+            <GatsbyImageWrapper image={image} alt={backgroundImageAlt} style={{ height: '100%' }} objectFit="cover" />
+          )}
         </BackgroundImageWrapper>
         <HeroPageSectionContainer>
           <LeftContentWrapper>
@@ -44,15 +40,14 @@ const SubpageHeroSection = ({ children, renderAdditionalContent }: SubpageHeroSe
             <TextElementStyled>{children}</TextElementStyled>
           </LeftContentWrapper>
         </HeroPageSectionContainer>
-        {renderAdditionalContent && renderAdditionalContent(inView)}
-      </SubpageHeroSectionStyled>
+      </SubpageImageHeroSectionStyled>
     </ThemeProvider>
   )
 }
 
-export default SubpageHeroSection
+export default SubpageImageHeroSection
 
-const SubpageHeroSectionStyled = styled.section`
+const SubpageImageHeroSectionStyled = styled.section`
   position: relative;
   height: 80vh;
   margin: auto;
@@ -64,12 +59,6 @@ const SubpageHeroSectionStyled = styled.section`
   border: 2px solid ${({ theme }) => theme.borderPrimary};
   border-radius: var(--radius-big);
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.9);
-`
-
-const VideoContainer = styled.video`
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
 `
 
 const TextElementStyled = styled(TextElement)`

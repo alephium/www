@@ -154,9 +154,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-fathom',
       options: {
-        siteId: 'YOUR_SITE_ID', // Replace with your Fathom site ID
+        siteId: 'CHLDDGXF',
         includedDomains: ['alephium.org']
-        // trackingUrl: 'your-fathom-instance.com' // Your custom domain, defaults to `cdn.usefathom.com`
       }
     }
   ]

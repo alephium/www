@@ -3,7 +3,7 @@ import { getImage } from 'gatsby-plugin-image'
 import styled from 'styled-components'
 
 import Page from '../components/customPageComponents/Page'
-import SubpageHeroSection from '../components/customPageComponents/SubpageHeroSection'
+import SubpageHeroSection from '../components/customPageComponents/SubpageImageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import SectionDivider from '../components/SectionDivider'
