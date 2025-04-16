@@ -21,6 +21,9 @@
     },
     {
       "pattern": "^https://www.gate.io/trade/ALPH_USDT"
+    },
+    {
+      "pattern": "^https://defillama.com/chain/Alephium"
     }
   ]
 }

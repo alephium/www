@@ -8,7 +8,7 @@ menuItems:
       - title: Ralph Language
         link: https://docs.alephium.org/ralph/
       - title: SDK
-        link: https://docs.alephium.org/sdk
+        link: https://docs.alephium.org # TODO: Add right link to SDK subpage
       - title: Tutorials
         link: https://www.youtube.com/playlist?list=PL8q8n0BHJS1PWP7t8ABECYdOaPM-hJmjx
       - title: Roadmap
