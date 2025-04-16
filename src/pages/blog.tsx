@@ -12,6 +12,41 @@ import ResponsiveImage from '../components/ResponsiveImage'
 import Search from '../components/Search'
 import SectionDivider from '../components/SectionDivider'
 
+export const query = graphql`
+  query BlogPosts {
+    heroImage: file(relativePath: { eq: "alephium-hackathon-lake.png" }) {
+      ...HeroImage
+    }
+    allMarkdownRemark(
+      filter: { fields: { contentType: { eq: "blog" } }, frontmatter: { draft: { ne: true } } }
+      sort: { frontmatter: { date: DESC } }
+    ) {
+      totalCount
+      nodes {
+        excerpt
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          description
+          featuredImage {
+            childImageSharp {
+              gatsbyImageData(
+                width: 526
+                height: 200
+                layout: CONSTRAINED
+                transformOptions: { fit: COVER, cropFocus: CENTER }
+              )
+            }
+          }
+        }
+      }
+    }
+  }
+`
+
 const CustomPage = (props: PageProps) => {
   const data = useStaticQuery<Queries.BlogPostsQuery>(query)
 
@@ -32,7 +67,7 @@ const CustomPage = (props: PageProps) => {
       {...props}
       content={
         <>
-          <SubpageHeroSection>
+          <SubpageHeroSection backgroundImage={data.heroImage}>
             <h1>Alephium blog</h1>
             <p>News, updates, and insights from the Alephium ecosystem.</p>
           </SubpageHeroSection>
@@ -79,38 +114,6 @@ const CustomPage = (props: PageProps) => {
 }
 
 export default CustomPage
-
-export const query = graphql`
-  query BlogPosts {
-    allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "blog" } }, frontmatter: { draft: { ne: true } } }
-      sort: { frontmatter: { date: DESC } }
-    ) {
-      totalCount
-      nodes {
-        excerpt
-        fields {
-          slug
-        }
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          title
-          description
-          featuredImage {
-            childImageSharp {
-              gatsbyImageData(
-                width: 526
-                height: 200
-                layout: CONSTRAINED
-                transformOptions: { fit: COVER, cropFocus: CENTER }
-              )
-            }
-          }
-        }
-      }
-    }
-  }
-`
 
 const TextCardStyled = styled(TextCard)`
   display: flex;

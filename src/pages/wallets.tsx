@@ -1,4 +1,4 @@
-import { PageProps } from 'gatsby'
+import { graphql, PageProps, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 
 import Button from '../components/Button'
@@ -14,7 +14,16 @@ import SectionDivider from '../components/SectionDivider'
 import SimpleLink from '../components/SimpleLink'
 import useWallets from '../hooks/useWallets'
 
+const walletsQuery = graphql`
+  query WalletsPage {
+    heroImage: file(relativePath: { eq: "alephium-hackathon-lake.png" }) {
+      ...HeroImage
+    }
+  }
+`
+
 const CustomPage = (props: PageProps) => {
+  const { heroImage } = useStaticQuery<Queries.WalletsPageQuery>(walletsQuery)
   const wallets = useWallets()
 
   return (
@@ -22,7 +31,7 @@ const CustomPage = (props: PageProps) => {
       {...props}
       content={
         <>
-          <SubpageHeroSection>
+          <SubpageHeroSection backgroundImage={heroImage}>
             <h1>Your Gateway to the Alephium Ecosystem</h1>
             <hr />
             <p>

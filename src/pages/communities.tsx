@@ -1,4 +1,4 @@
-import { PageProps } from 'gatsby'
+import { graphql, PageProps, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 
 import Grid from '../components/customPageComponents/Grid'
@@ -14,7 +14,16 @@ import SocialMediaIcon from '../components/SocialMediaIcon'
 import useSocials from '../hooks/useSocials'
 import { getIconByName } from '../images/utils'
 
+const communitiesQuery = graphql`
+  query CommunitiesPage {
+    heroImage: file(relativePath: { eq: "alephium-hackathon-lake.png" }) {
+      ...HeroImage
+    }
+  }
+`
+
 const CustomPage = (props: PageProps) => {
+  const { heroImage } = useStaticQuery<Queries.CommunitiesPageQuery>(communitiesQuery)
   const socials = useSocials()
 
   return (
@@ -22,7 +31,7 @@ const CustomPage = (props: PageProps) => {
       {...props}
       content={
         <>
-          <SubpageHeroSection>
+          <SubpageHeroSection backgroundImage={heroImage}>
             <h1>Online communities</h1>
             <hr />
             <p>

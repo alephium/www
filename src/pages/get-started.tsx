@@ -17,11 +17,11 @@ import SectionDivider from '../components/SectionDivider'
 import useWallets from '../hooks/useWallets'
 
 const exchangesQuery = graphql`
-  query Exchanges {
+  query GetStartedPage {
     heroImage: file(relativePath: { eq: "alephium-hackathon-lake.png" }) {
       ...HeroImage
     }
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/exchanges.md/" } }) {
+    exchangesContent: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/exchanges.md/" } }) {
       nodes {
         frontmatter {
           exchanges {
@@ -40,8 +40,8 @@ const exchangesQuery = graphql`
 
 const CustomPage = (props: PageProps) => {
   const wallets = useWallets()
-  const { allMarkdownRemark, heroImage } = useStaticQuery<Queries.ExchangesQuery>(exchangesQuery)
-  const exchanges = allMarkdownRemark.nodes[0].frontmatter?.exchanges ?? []
+  const { exchangesContent, heroImage } = useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
+  const exchanges = exchangesContent.nodes[0].frontmatter?.exchanges ?? []
 
   return (
     <Page
