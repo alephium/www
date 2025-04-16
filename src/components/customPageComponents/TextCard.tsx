@@ -79,7 +79,7 @@ const AnimatedCard = ({ children }: { children: ReactNode }) => {
 const cardStyles = css`
   border-radius: 20px;
   border: 2px solid ${({ theme }) => theme.borderPrimary};
-  background-color: ${({ theme }) => theme.bgTertiary};
+  background-color: ${({ theme }) => theme.bgSecondary};
   background-clip: padding-box;
   text-decoration: none;
   padding: 20px;

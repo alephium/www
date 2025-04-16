@@ -36,14 +36,14 @@ const TextElement = styled.div<TextElementProps>`
     font-family: 'Sentient';
     font-size: var(--fontSize-42);
     line-height: 1.2;
-    margin-bottom: var(--spacing-6);
+    margin-bottom: var(--spacing-10);
   }
 
   > h3 {
     font-family: 'Sentient';
     font-size: var(--fontSize-36);
     line-height: 1.2;
-    font-weight: var(--fontWeight-medium);
+    font-weight: var(--fontWeight-normal);
 
     ${({ isSmall }) =>
       isSmall &&
@@ -56,6 +56,7 @@ const TextElement = styled.div<TextElementProps>`
   > h4 {
     font-size: var(--fontSize-28);
     line-height: var(--lineHeight-36);
+    opacity: 0.75;
 
     ${({ isSmall }) =>
       isSmall &&
@@ -123,11 +124,6 @@ const TextElement = styled.div<TextElementProps>`
 
   > p > img {
     max-width: 100%;
-  }
-
-  /* Multiple text elements */
-  &:not(:first-child) {
-    margin-top: var(--spacing-8);
   }
 `
 

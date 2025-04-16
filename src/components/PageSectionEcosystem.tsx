@@ -140,7 +140,7 @@ const HomepageEcosystemSection = ({
 
 export default styled(HomepageEcosystemSection)`
   padding-top: var(--spacing-16);
-  padding-bottom: var(--spacing-20);
+  padding-bottom: var(--spacing-16);
   position: relative;
 `
 
