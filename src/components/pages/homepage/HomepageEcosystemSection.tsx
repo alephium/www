@@ -14,8 +14,8 @@ const HomepageEcosystemSection = () => (
         Built to last.
       </h2>
       <p>
-        Alephium is home to pioneers, combining strong technology and a bustling community to bring the next generation
-        of decentralized applications to life.
+        Alephium is home to pioneers, combining <strong>strong technology and a bustling community</strong> to bring the{' '}
+        <strong>next generation of decentralized applications to life</strong>.
       </p>
     </TextElement>
 

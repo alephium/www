@@ -2,14 +2,13 @@ import { graphql, PageProps } from 'gatsby'
 
 import Button from '../components/Button'
 import Page from '../components/customPageComponents/Page'
-import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import HomepageEcosystemSection from '../components/pages/homepage/HomepageEcosystemSection'
 import HomepageHeroSection from '../components/pages/homepage/HomepageHeroSection'
 import HomepageIntroSection from '../components/pages/homepage/HomepageIntroSection'
 import HomepagePartnersSection from '../components/pages/homepage/HomepagePartnersSection'
 import HomepageStatsSection from '../components/pages/homepage/HomepageStatsSection'
-import HomepageTechnologySection from '../components/pages/homepage/HomepageTechnologySection'
+import PageSectionContainer from '../components/PageSectionContainer'
 import SectionDivider from '../components/SectionDivider'
 
 export const pageQuery = graphql`
@@ -52,9 +51,7 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
           )}
 
           <HomepageStatsSection />
-          <SectionDivider />
 
-          <HomepageTechnologySection />
           <SectionDivider />
 
           <HomepageEcosystemSection />
@@ -67,18 +64,16 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
             </>
           )}
 
-          <SubpageSection>
-            <SubpageSection>
-              <TextElement isCentered>
-                <h2>This is your moment.</h2>
-                <p>
-                  Alephium isn’t just a concept - it’s something we build, together. There’s a place for you here and we
-                  can’t wait to meet you.
-                </p>
-                <Button url="/get-started">Get started</Button>
-              </TextElement>
-            </SubpageSection>
-          </SubpageSection>
+          <PageSectionContainer fullHeight>
+            <TextElement isCentered>
+              <h2>This is your moment.</h2>
+              <p>
+                Alephium isn’t just a concept - it’s something we build, together.{' '}
+                <strong>There’s a place for you here and we can’t wait to meet you.</strong>
+              </p>
+              <Button url="/get-started">Get started</Button>
+            </TextElement>
+          </PageSectionContainer>
         </>
       }
     />
