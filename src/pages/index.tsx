@@ -65,7 +65,7 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
             </>
           )}
 
-          <PageSectionContainer fullHeight>
+          <PageSectionContainer fullHeight justifyContent="center">
             <TextElement isCentered>
               <h2>This is your moment.</h2>
               <p>
