@@ -1,4 +1,5 @@
 import { graphql, PageProps } from 'gatsby'
+import styled from 'styled-components'
 
 import Button from '../components/Button'
 import Page from '../components/customPageComponents/Page'
@@ -10,6 +11,7 @@ import HomepagePartnersSection from '../components/pages/homepage/HomepagePartne
 import HomepageStatsSection from '../components/pages/homepage/HomepageStatsSection'
 import PageSectionContainer from '../components/PageSectionContainer'
 import SectionDivider from '../components/SectionDivider'
+import lighthouseImage from '../images/lighthouse.png'
 
 export const pageQuery = graphql`
   query IndexPage {
@@ -65,7 +67,7 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
             </>
           )}
 
-          <PageSectionContainer fullHeight justifyContent="center">
+          <LastPageSectionContainer fullHeight wide justifyContent="center">
             <TextElement isCentered>
               <h2>This is your moment.</h2>
               <p>
@@ -74,7 +76,7 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
               </p>
               <Button url="/get-started">Get started</Button>
             </TextElement>
-          </PageSectionContainer>
+          </LastPageSectionContainer>
         </>
       }
     />
@@ -82,3 +84,10 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
 }
 
 export default IndexPage
+
+const LastPageSectionContainer = styled(PageSectionContainer)`
+  background-image: url(${lighthouseImage});
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+`
