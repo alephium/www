@@ -1,20 +1,21 @@
 import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../../../styles/global-style'
-
-import Button from '../../Button'
 import ArrowedLink from '../../ArrowedLink'
+import Button from '../../Button'
 import SubpageHeroSection from '../../customPageComponents/SubpageHeroSection'
 
 const HomepageHeroSection = () => (
   <SubpageHeroSection>
     <h1>
-      Engineered<br/>for the Future.
+      Engineered
+      <br />
+      for the Future.
     </h1>
     <hr />
     <p>
-      <strong>Alephium</strong> brings the security of Proof-of-Work, the scalability of sharding, and the power of smart contracts <strong>to
-      real-world applications</strong>.
+      <strong>Alephium</strong> brings the security of Proof-of-Work, the scalability of sharding, and the power of
+      smart contracts <strong>to real-world applications</strong>.
     </p>
 
     <Buttons>
@@ -25,7 +26,6 @@ const HomepageHeroSection = () => (
 )
 
 export default HomepageHeroSection
-
 
 const Buttons = styled.div`
   display: flex;

@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
-import styled from 'styled-components'
-
 import { RiPauseFill, RiPlayFill } from 'react-icons/ri'
+import styled from 'styled-components'
 
 interface PaginatorProps {
   numberOfPages?: number

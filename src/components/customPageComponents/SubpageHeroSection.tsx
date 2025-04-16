@@ -4,8 +4,8 @@ import styled, { ThemeProvider } from 'styled-components'
 
 import { deviceBreakPoints } from '../../styles/global-style'
 import { darkTheme } from '../../styles/themes'
-import HeroPageSectionContainer from '../Hero/HeroPageSectionContainer'
 import video from '../../videos/lake-bridge-pan.mp4'
+import HeroPageSectionContainer from '../Hero/HeroPageSectionContainer'
 import TextElement from './TextElement'
 
 interface SubpageHeroSectionProps {
@@ -13,10 +13,7 @@ interface SubpageHeroSectionProps {
   renderAdditionalContent?: (inView: boolean) => ReactNode
 }
 
-const SubpageHeroSection = ({
-  children,
-  renderAdditionalContent
-}: SubpageHeroSectionProps) => {
+const SubpageHeroSection = ({ children, renderAdditionalContent }: SubpageHeroSectionProps) => {
   const innerRef = useRef<HTMLElement>(null)
   const videoRef = useRef<HTMLVideoElement>(null)
   const inView = useInView(innerRef)
@@ -37,11 +34,7 @@ const SubpageHeroSection = ({
     <ThemeProvider theme={darkTheme}>
       <SubpageHeroSectionStyled ref={innerRef} onMouseMove={handleMouseMove}>
         <BackgroundImageWrapper>
-          <VideoContainer
-            ref={videoRef}
-            muted
-            playsInline
-          >
+          <VideoContainer ref={videoRef} muted playsInline>
             <source src={video} type="video/mp4" />
           </VideoContainer>
         </BackgroundImageWrapper>

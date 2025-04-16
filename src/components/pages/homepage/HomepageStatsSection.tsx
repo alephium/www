@@ -1,13 +1,13 @@
 import { ExplorerClient } from '@alephium/sdk'
+import { HttpResponse } from '@alephium/sdk/api/explorer'
 import { useCallback, useEffect, useState } from 'react'
 import styled from 'styled-components'
 
-import { HttpResponse } from '@alephium/sdk/api/explorer'
-import TextElement from '../../customPageComponents/TextElement'
-import SubpageSection from '../../customPageComponents/SubpageSection'
-import SubheaderContent from '../../customPageComponents/SubheaderContent'
 import Grid from '../../customPageComponents/Grid'
+import SubheaderContent from '../../customPageComponents/SubheaderContent'
+import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextCard from '../../customPageComponents/TextCard'
+import TextElement from '../../customPageComponents/TextElement'
 
 const baseUrl = 'https://backend.mainnet.alephium.org'
 

@@ -1,4 +1,4 @@
-import { useState, MutableRefObject, useEffect } from 'react'
+import { MutableRefObject, useEffect, useState } from 'react'
 
 const useElementDistanceToTop = (ref: MutableRefObject<HTMLDivElement | null>) => {
   const [elementTop, setElementTop] = useState<number>()

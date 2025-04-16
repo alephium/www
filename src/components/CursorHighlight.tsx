@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
-import styled from 'styled-components'
 import { PointerEvent, useState } from 'react'
+import styled from 'styled-components'
+
 import { getPointerAbsolutePositionInElement } from '../utils/pointer'
 
 const CursorHighlight = () => {

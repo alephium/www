@@ -1,8 +1,8 @@
 import { PageProps } from 'gatsby'
 
-import SectionDivider from '../components/SectionDivider'
-import SubpageHeroSection from '../components/customPageComponents/SubpageHeroSection'
 import Page from '../components/customPageComponents/Page'
+import SubpageHeroSection from '../components/customPageComponents/SubpageHeroSection'
+import SectionDivider from '../components/SectionDivider'
 
 const CustomPage = (props: PageProps) => (
   <Page

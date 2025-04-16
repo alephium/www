@@ -1,10 +1,10 @@
 import {
-  titleFieldConfig,
-  subtitleFieldConfig,
-  urlFieldConfig,
   descriptionFieldConfig,
   linkFieldsConfig,
-  technologySubsectionFields
+  subtitleFieldConfig,
+  technologySubsectionFields,
+  titleFieldConfig,
+  urlFieldConfig
 } from './fields'
 
 const runningLocally = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'

@@ -1,12 +1,12 @@
 import { graphql, Link, PageProps } from 'gatsby'
 import { getImage } from 'gatsby-plugin-image'
+import styled from 'styled-components'
 
 import Page from '../components/customPageComponents/Page'
 import SubpageHeroSection from '../components/customPageComponents/SubpageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import SectionDivider from '../components/SectionDivider'
-import styled from 'styled-components'
 
 const BlogPostTemplate = (props: PageProps<Queries.BlogPostBySlugQuery>) => {
   const post = props.data.markdownRemark

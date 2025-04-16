@@ -1,12 +1,12 @@
-import styled, { css } from 'styled-components'
-
-import SectionTextHeader from './SectionTextHeader'
-import SvgStars from '../images/stars.svg'
-import { deviceBreakPoints } from '../styles/global-style'
+import { colord } from 'colord'
 import { AnimatePresence, motion, Variants } from 'framer-motion'
 import { useRef, useState } from 'react'
+import styled, { css } from 'styled-components'
+
 import useOnClickOutside from '../hooks/useOnClickOutside'
-import { colord } from 'colord'
+import SvgStars from '../images/stars.svg'
+import { deviceBreakPoints } from '../styles/global-style'
+import SectionTextHeader from './SectionTextHeader'
 
 export type PageSectionTodoListContentType = {
   title: string

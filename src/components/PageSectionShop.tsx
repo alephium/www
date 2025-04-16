@@ -1,17 +1,16 @@
 import { FC, useEffect, useState } from 'react'
 import styled from 'styled-components'
 
-import SectionTextHeader from './SectionTextHeader'
-import PageSectionContainer from './PageSectionContainer'
-import Columns from './Columns/Columns'
-import Column from './Columns/Column'
-import ArrowedLink from './ArrowedLink'
-
-import tShirtPlaceholder from '../images/t-shirt-placeholder.png'
 import firstDesign from '../images/t-shirt-mountain.svg'
+import tShirtPlaceholder from '../images/t-shirt-placeholder.png'
 import secondDesign from '../images/t-shirt-rainbow-fill.svg'
 import thirdDesign from '../images/t-shirt-rainbow-stroke.svg'
 import fourthDesign from '../images/t-shirt-waves.svg'
+import ArrowedLink from './ArrowedLink'
+import Column from './Columns/Column'
+import Columns from './Columns/Columns'
+import PageSectionContainer from './PageSectionContainer'
+import SectionTextHeader from './SectionTextHeader'
 
 export interface PageSectionShopContentType {
   title: string

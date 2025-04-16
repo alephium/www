@@ -1,6 +1,6 @@
+import { HTMLMotionProps, motion, Variants } from 'framer-motion'
 import { FC, ReactNode } from 'react'
 import styled from 'styled-components'
-import { motion, HTMLMotionProps, Variants } from 'framer-motion'
 
 import { deviceBreakPoints } from '../../styles/global-style'
 

@@ -28,9 +28,7 @@ const Seo = ({ title, description, lang = 'en', image: metaImage }: SeoProps) =>
     `
   )
 
-  const isTestSite =
-    typeof window !== "undefined" &&
-    window.location.hostname === "www2.alephium.org"
+  const isTestSite = typeof window !== 'undefined' && window.location.hostname === 'www2.alephium.org'
 
   const metaDescription = description || site.siteMetadata.description
   const metaImageAbsoluteUrl = `${site.siteMetadata.siteUrl}${SocialMediaBannerImage}`
@@ -44,7 +42,8 @@ const Seo = ({ title, description, lang = 'en', image: metaImage }: SeoProps) =>
         lang
       }}
       title={titleContent}
-      meta={[...metaBase,
+      meta={[
+        ...metaBase,
         {
           name: `description`,
           content: metaDescription

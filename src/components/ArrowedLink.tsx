@@ -1,9 +1,8 @@
 import { ElementType, ReactNode } from 'react'
 import styled, { css, useTheme } from 'styled-components'
 
-import SimpleLink from './SimpleLink'
-
 import Arrow from '../images/svgs/arrow-right.svg'
+import SimpleLink from './SimpleLink'
 
 export interface ArrowedLinkProps {
   className?: string

@@ -1,15 +1,13 @@
-import styled, { ThemeProvider } from 'styled-components'
 import { Link } from 'gatsby'
+import styled, { ThemeProvider } from 'styled-components'
 
+import HeroImage from '../components/Hero/HeroImage'
+import HeroLogo from '../components/Hero/HeroLogo'
+import NavigationMenu from '../components/NavigationMenu'
+import PageSectionContainer from '../components/PageSectionContainer'
+import TextSnippet from '../components/TextSnippet'
 import GlobalStyle from '../styles/global-style'
 import { darkTheme } from '../styles/themes'
-
-import NavigationMenu from '../components/NavigationMenu'
-import TextSnippet from '../components/TextSnippet'
-
-import HeroLogo from '../components/Hero/HeroLogo'
-import HeroImage from '../components/Hero/HeroImage'
-import PageSectionContainer from '../components/PageSectionContainer'
 
 const NotFoundPage = () => (
   <ThemeProvider theme={darkTheme}>

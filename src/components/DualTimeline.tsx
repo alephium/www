@@ -1,6 +1,6 @@
+import { sortBy } from 'lodash'
 import { useEffect, useState } from 'react'
 import styled, { css } from 'styled-components'
-import { sortBy } from 'lodash'
 
 import { deviceBreakPoints, deviceSizes } from '../styles/global-style'
 

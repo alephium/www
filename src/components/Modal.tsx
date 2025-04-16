@@ -2,10 +2,9 @@ import { FC } from 'react'
 import ReactModal from 'react-modal'
 import styled from 'styled-components'
 
-import { deviceBreakPoints } from '../styles/global-style'
-
-import TextSnippet from './TextSnippet'
 import CloseIcon from '../images/svgs/close-line.svg'
+import { deviceBreakPoints } from '../styles/global-style'
+import TextSnippet from './TextSnippet'
 
 ReactModal.setAppElement('#___gatsby')
 

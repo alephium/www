@@ -1,21 +1,17 @@
-import styled, { css, useTheme } from 'styled-components'
-import { graphql, Link, useStaticQuery } from 'gatsby'
-
-import { deviceBreakPoints } from '../styles/global-style'
-
-import SimpleLink from './SimpleLink'
-import LogoText from '../images/svgs/logo-text.svg'
 import { AnimatePresence, motion } from 'framer-motion'
-import { ReactNode, useRef, useState, useEffect } from 'react'
+import { graphql, Link, useStaticQuery } from 'gatsby'
+import { ReactNode, useRef, useState } from 'react'
 import { RiTranslate2 } from 'react-icons/ri'
+import { RiArrowDropDownLine, RiArrowDropUpLine, RiMenu3Fill } from 'react-icons/ri'
+import styled, { css, useTheme } from 'styled-components'
 
-import HeroLogo from './Hero/HeroLogo'
-
-import { RiMenu3Fill, RiArrowDropDownLine, RiArrowDropUpLine } from 'react-icons/ri'
 import useOnClickOutside from '../hooks/useOnClickOutside'
-import TranslateComponent from './TranslateComponent'
+import LogoText from '../images/svgs/logo-text.svg'
+import { deviceBreakPoints } from '../styles/global-style'
 import { notEmpty } from '../utils/misc'
 import NavigationMenuSocials from './navigation/NavigationMenuSocials'
+import SimpleLink from './SimpleLink'
+import TranslateComponent from './TranslateComponent'
 
 interface NavigationMenuProps {
   topOffset?: number
@@ -24,9 +20,7 @@ interface NavigationMenuProps {
 
 const NavigationMenu = ({ topOffset, className }: NavigationMenuProps) => (
   <NavigationWrapper>
-    <NavigationMenuStyled
-      className={className}
-    >
+    <NavigationMenuStyled className={className}>
       <div className="nav-item">
         <LinkStyled to="/" title="Go to homepage">
           <LogoTextStyled />

@@ -1,18 +1,17 @@
-import styled, { ThemeProvider } from 'styled-components'
 import { graphql, PageProps } from 'gatsby'
+import styled, { ThemeProvider } from 'styled-components'
 
-import GlobalStyle, { deviceBreakPoints } from '../styles/global-style'
-import { hackathonTheme } from '../styles/themes'
-
-import Seo from '../components/Seo'
-import HackathonLandingSection from '../components/pages/hackathon/HackathonLandingSection'
+import Footer from '../components/Footer'
+import NavigationMenu from '../components/NavigationMenu'
 import HackathonInfoSection, {
   HackathonInfoSectionContentType
 } from '../components/pages/hackathon/HackathonInfoSection'
 import HackathonJudgingSection from '../components/pages/hackathon/HackathonJudgingSection'
-import NavigationMenu from '../components/NavigationMenu'
-import Footer from '../components/Footer'
+import HackathonLandingSection from '../components/pages/hackathon/HackathonLandingSection'
 import HackathonSectionContainer from '../components/pages/hackathon/HackathonSectionContainer'
+import Seo from '../components/Seo'
+import GlobalStyle, { deviceBreakPoints } from '../styles/global-style'
+import { hackathonTheme } from '../styles/themes'
 
 interface HackathonPageProps extends PageProps {
   data: {
