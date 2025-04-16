@@ -4,7 +4,6 @@ import Button from '../components/Button'
 import Page from '../components/customPageComponents/Page'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
-import HomepageEcosystemSection from '../components/pages/homepage/HomepageEcosystemSection'
 import HomepageHeroSection from '../components/pages/homepage/HomepageHeroSection'
 import HomepageIntroSection from '../components/pages/homepage/HomepageIntroSection'
 import HomepagePartnersSection from '../components/pages/homepage/HomepagePartnersSection'
@@ -56,9 +55,6 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
           <SectionDivider />
 
           <HomepageTechnologySection />
-          <SectionDivider />
-
-          <HomepageEcosystemSection />
           <SectionDivider />
 
           {content?.partnersSection && (
