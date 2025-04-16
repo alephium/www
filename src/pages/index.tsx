@@ -55,6 +55,7 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
           <SectionDivider />
 
           <HomepageEcosystemSection />
+
           <SectionDivider />
 
           {content?.partnersSection && (

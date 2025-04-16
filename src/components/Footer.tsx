@@ -45,7 +45,6 @@ const Footer = () => {
       <ScrollToTop />
       <FooterStyled>
         <PageSectionContainerStyled>
-          <Separator />
           <FooterColumnsSection gap="var(--spacing-4)">
             {columnsContent?.map((column) => (
               <Column key={column?.title}>
@@ -128,17 +127,6 @@ const LogosSection = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-`
-
-const Separator = styled.div`
-  width: 2px;
-  height: 5rem;
-  background-color: ${({ theme }) => theme.separator};
-  margin: auto 0;
-
-  @media ${deviceBreakPoints.mobile} {
-    display: none;
-  }
 `
 
 const FooterColumn = styled.div`
