@@ -79,6 +79,13 @@ const TextElement = styled.div<TextElementProps>`
     line-height: 1.3;
     max-width: 600px;
 
+    ${({ isCentered }) =>
+      isCentered &&
+      css`
+        margin-left: auto;
+        margin-right: auto;
+      `}
+
     ${({ isSmall, isBodySmall }) =>
       (isSmall || isBodySmall) &&
       css`
