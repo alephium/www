@@ -6,25 +6,26 @@ export const darkTheme: DefaultTheme = {
   name: 'dark',
 
   textPrimary: 'var(--color-white)',
-  textPrimaryVariation: 'var(--color-grey-100)',
-  textSecondary: 'var(--color-grey-200)',
-  textTertiary: 'var(--color-grey-300)',
+  textPrimaryVariation: 'rgba(255, 255, 255, 0.8)',
+  textSecondary: 'rgba(255, 255, 255, 0.6)',
+  textTertiary: 'rgba(255, 255, 255, 0.4)',
 
-  bgPrimary: 'var(--color-grey-800)',
-  bgSecondary: 'var(--color-grey-850)',
-  bgTertiary: 'var(--color-grey-950)',
-  bgSurface: 'var(--color-grey-700)',
+  bgPrimary: 'var(--color-grey-600)',
+  bgSecondary: 'var(--color-grey-700)',
+  bgTertiary: 'var(--color-grey-800)',
+  bgSurface: 'var(--color-grey-500)',
 
-  borderPrimary: 'var(--color-grey-700)',
+  borderPrimary: 'rgba(255, 255, 255, 0.1)',
 
   link: 'var(--color-grey-100)',
   linkAlt: 'var(--color-white)',
 
   separator: 'var(--color-grey-800)',
 
-  palette1: '#2f9dff',
-  palette2: '#FF9C2B',
-  palette3: '#FF259D'
+  palette1: '#6EE2AC',
+  palette2: '#FCCF7D',
+  palette3: '#3FD2FF',
+  palette4: '#BE60F9'
 }
 
 export const lightTheme: DefaultTheme = {
@@ -49,7 +50,8 @@ export const lightTheme: DefaultTheme = {
 
   palette1: '#3580ff',
   palette2: '#FF9C2B',
-  palette3: '#FF259D'
+  palette3: '#FF259D',
+  palette4: '#FF259D'
 }
 
 export const hackathonTheme: DefaultTheme = {

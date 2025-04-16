@@ -25,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
       font-size: 12px;
     }
 
-    --page-width: 72.5rem;
+    --page-width: 80vw;
     --page-width-shrinked: 68rem;
 
     --width-16: 1rem;
@@ -77,11 +77,12 @@ const GlobalStyle = createGlobalStyle`
     --spacing-34: 17rem;     // 272pt
     --spacing-35: 17.5rem;   // 280pt
 
-    --radius: 1rem;
-    --radius-small: 0.4rem;
+    --radius-small: 9px;
+    --radius: 12px;
+    --radius-big: 40px;
     --radius-full: 9999px;
 
-    --fontFamily-sans: "Switzer", "Inter", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    --fontFamily-sans: "InterDisplay", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
     --fontFamily-serif: "Times New Roman", Times, serif;
     --font-heading: var(--fontFamily-sans);
     --fontWeight-light: 300;
@@ -94,15 +95,23 @@ const GlobalStyle = createGlobalStyle`
     inspiration in defining a typography system */
     --fontSize-14: 0.875rem;
     --fontSize-18: 1.125rem;
+    --fontSize-20: 1.2rem;
+    --fontSize-22: 1.33rem;
     --fontSize-24: 1.5rem;
+    --fontSize-26: 1.66rem;
     --fontSize-28: 1.75rem;
+    --fontSize-32: 2rem;
     --fontSize-36: 2.25rem;
+    --fontSize-38: 2.33rem;
+    --fontSize-40: 2.5rem;
+    --fontSize-42: 2.75rem;
     --fontSize-50: 3.125rem;
     --fontSize-56: 3.5rem;
     --fontSize-70: 4.375rem;
     --lineHeight-22: 1.375rem;
     --lineHeight-26: 1.625rem;
     --lineHeight-28: 1.75rem;
+    --lineHeight-32: 2.00rem;
     --lineHeight-36: 2.25rem;
 
     --color-white: #fff;

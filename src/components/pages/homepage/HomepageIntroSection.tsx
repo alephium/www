@@ -1,19 +1,21 @@
-import styled from 'styled-components'
 import { motion } from 'framer-motion'
+import { graphql } from 'gatsby'
+import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../../../styles/global-style'
-import { graphql } from 'gatsby'
-import SubpageSection from '../../customPageComponents/SubpageSection'
-import TextElement from '../../customPageComponents/TextElement'
-import SubheaderContent from '../../customPageComponents/SubheaderContent'
-import TextCard from '../../customPageComponents/TextCard'
+import Button from '../../Button'
 import CardImage from '../../customPageComponents/CardImage'
+import SubheaderContent from '../../customPageComponents/SubheaderContent'
+import SubpageSection from '../../customPageComponents/SubpageSection'
+import TextCard from '../../customPageComponents/TextCard'
+import TextElement from '../../customPageComponents/TextElement'
 
 export const query = graphql`
   fragment HomepageIntroSection on MarkdownRemarkFrontmatterIntro {
     cards {
       title
       description
+      actionText
       image {
         publicURL
       }
@@ -29,13 +31,13 @@ const HomepageIntroSection = ({ cards }: Queries.HomepageIntroSectionFragment) =
     <TextElement>
       <h2>A Network Built by Visionaries</h2>
       <p>
-        Alephium is more than a blockchain - it’s a movement driven by those who refuse to compromise on security. Built
-        and secured by a community of miners, developers, and innovators, Alephium embodies the core strengths of
-        Proof-of-Work while pioneering energy efficiency and scalability.
+        <strong>Alephium is more than a blockchain</strong> - it’s a movement driven by those who refuse to compromise
+        on security. Built and secured by a community of miners, developers, and innovators, Alephium embodies the core
+        strengths of Proof-of-Work while pioneering energy efficiency and scalability.
       </p>
       <p>
-        We're not here to follow trends - we’re here to build a secure and sustainable foundation for the future of
-        finance.
+        We're not here to follow trends -{' '}
+        <strong>we’re here to build a secure and sustainable foundation for the future of finance.</strong>
       </p>
     </TextElement>
 
@@ -45,10 +47,12 @@ const HomepageIntroSection = ({ cards }: Queries.HomepageIntroSectionFragment) =
           (card) =>
             card &&
             card.link?.url && (
-              <TextCard isAnimated url={card.link?.url} variants={cardVariants} key={card.title}>
-                {card.image?.publicURL && <CardImage src={card.image.publicURL} alt={card.title ?? ''} />}
-                <h3>{card.title}</h3>
-                <p>{card.description}</p>
+              <TextCard isAnimated variants={cardVariants} key={card.title}>
+                <CardImage imageUrl={card.image?.publicURL} overlayTitle={card.title} />
+                <ParagraphStyled>{card.description}</ParagraphStyled>
+                <Button url={card.link?.url} squared textAlign="center">
+                  {card.actionText}
+                </Button>
               </TextCard>
             )
         )}
@@ -82,4 +86,9 @@ const IntroColumns = styled(motion.div)`
   @media ${deviceBreakPoints.mobile} {
     flex-wrap: wrap;
   }
+`
+
+const ParagraphStyled = styled.p`
+  flex: 1;
+  padding: 0 10px;
 `

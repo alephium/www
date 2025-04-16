@@ -9,6 +9,7 @@ import TextElement, { TextElementProps } from './TextElement'
 
 interface TextCardProps extends TextElementProps {
   children: ReactNode
+  actionTitle?: string
   url?: string
   isAnimated?: boolean
   variants?: Variants
@@ -16,7 +17,7 @@ interface TextCardProps extends TextElementProps {
 
 const TextCard = ({ children, url, isAnimated = false, variants, ...textElementProps }: TextCardProps) => {
   const text = (
-    <TextElementStyled isSmall url={url} {...textElementProps}>
+    <TextElementStyled isBodySmall {...textElementProps}>
       {children}
     </TextElementStyled>
   )
@@ -37,7 +38,7 @@ const TextCard = ({ children, url, isAnimated = false, variants, ...textElementP
 export default TextCard
 
 const AnimatedCard = ({ children }: { children: ReactNode }) => {
-  const angle = 1
+  const angle = 0.3
 
   const y = useMotionValue(0.5)
   const x = useMotionValue(0.5)
@@ -76,33 +77,28 @@ const AnimatedCard = ({ children }: { children: ReactNode }) => {
 }
 
 const cardStyles = css`
-  padding: 41px 30px 25px 30px;
   border-radius: 20px;
-  border: 2px solid ${({ theme }) => theme.bgPrimary};
+  border: 2px solid ${({ theme }) => theme.borderPrimary};
   background-color: ${({ theme }) => theme.bgTertiary};
   background-clip: padding-box;
   text-decoration: none;
-  box-shadow: 0px 22px 30px rgba(0, 0, 0, 0.47);
+  padding: 20px;
   transition: all 0.1s ease-out;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 `
 
 const Card = styled.div`
   ${cardStyles}
 `
 
-const TextElementStyled = styled(TextElement)<Pick<TextCardProps, 'url'>>`
-  ${({ url }) =>
-    url &&
-    css`
-      &:hover {
-        > h3 {
-          ::after {
-            position: absolute;
-            content: '  →';
-          }
-        }
-      }
-    `}
+const TextElementStyled = styled(TextElement)`
+  flex: 1;
+  p {
+    color: ${({ theme }) => theme.textPrimaryVariation};
+  }
 `
 
 const SimpleLinkStyled = styled(SimpleLink)<Pick<TextCardProps, 'isAnimated'>>`
@@ -115,15 +111,16 @@ const SimpleLinkStyled = styled(SimpleLink)<Pick<TextCardProps, 'isAnimated'>>`
 `
 
 const AnimatedCardStyled = styled(motion.div)`
-  ${cardStyles};
+  ${cardStyles}
 
   display: flex;
   flex-direction: column;
   position: relative;
-  flex: 1;
-  background-color: ${({ theme }) => theme.bgPrimary};
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  padding: 14px;
+  background-color: ${({ theme }) => theme.bgSecondary};
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
   transition: box-shadow 0.2s ease-out;
+  perspective: 200px;
 
   @media ${deviceBreakPoints.mobile} {
     & + & {
@@ -132,23 +129,21 @@ const AnimatedCardStyled = styled(motion.div)`
   }
 
   &:hover {
-    background-color: ${({ theme }) => theme.bgPrimary};
-    transform: translateZ(10px);
-    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.4);
+    transform: translateZ(6px);
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.3);
     z-index: 1;
   }
 
   > div {
     display: flex;
     flex-direction: column;
-    flex: 1;
   }
 `
 
 const AnimatedCardContainer = styled(motion.div)`
   display: flex;
   position: relative;
-  max-width: 500px;
+  max-width: 400px;
   min-width: 300px;
 
   @media ${deviceBreakPoints.mobile} {

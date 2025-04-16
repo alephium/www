@@ -1,86 +1,36 @@
-import styled, { css, useTheme } from 'styled-components'
-import { graphql, Link, useStaticQuery } from 'gatsby'
-
-import { deviceBreakPoints } from '../styles/global-style'
-
-import SimpleLink from './SimpleLink'
-import LogoText from '../images/svgs/logo-text.svg'
 import { AnimatePresence, motion } from 'framer-motion'
-import { ReactNode, useRef, useState, useEffect } from 'react'
+import { graphql, Link, useStaticQuery } from 'gatsby'
+import { ReactNode, useRef, useState } from 'react'
 import { RiTranslate2 } from 'react-icons/ri'
+import { RiArrowDropDownLine, RiArrowDropUpLine, RiMenu3Fill } from 'react-icons/ri'
+import styled, { css, useTheme } from 'styled-components'
 
-import HeroLogo from './Hero/HeroLogo'
-
-import { RiMenu3Fill, RiArrowDropDownLine, RiArrowDropUpLine } from 'react-icons/ri'
 import useOnClickOutside from '../hooks/useOnClickOutside'
-import TranslateComponent from './TranslateComponent'
+import LogoText from '../images/svgs/logo-text.svg'
+import { deviceBreakPoints } from '../styles/global-style'
 import { notEmpty } from '../utils/misc'
 import NavigationMenuSocials from './navigation/NavigationMenuSocials'
+import SimpleLink from './SimpleLink'
+import TranslateComponent from './TranslateComponent'
 
 interface NavigationMenuProps {
   topOffset?: number
   className?: string
 }
 
-const detachScrollValue = 100
-
-const NavigationMenu = ({ topOffset, className }: NavigationMenuProps) => {
-  const [isDetached, setIsDetached] = useState(false)
-  const [isVisible, setIsVisible] = useState(true)
-  const lastScrollY = useRef(0)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY
-      const scrollDirection = currentScrollY > lastScrollY.current ? 'down' : 'up'
-
-      if (currentScrollY > detachScrollValue && !isDetached) {
-        setIsDetached(true)
-      } else if (currentScrollY <= detachScrollValue && isDetached) {
-        setIsDetached(false)
-      }
-
-      if (scrollDirection === 'down' && currentScrollY > 100) {
-        setIsVisible(false)
-      } else if (scrollDirection === 'up') {
-        setIsVisible(true)
-      }
-
-      lastScrollY.current = currentScrollY
-    }
-
-    window.addEventListener('scroll', handleScroll, { passive: true })
-
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [isDetached])
-
-  const initialTop = topOffset || 0
-
-  return (
-    <NavigationWrapper>
-      <NavigationMenuStyled
-        className={className}
-        animate={{
-          y: isDetached ? (isVisible ? 30 : -detachScrollValue) : initialTop,
-          backgroundColor: 'rgba(30, 30, 30, 0)',
-          boxShadow: 'none'
-        }}
-        transition={{ type: 'spring', stiffness: 200, damping: 50 }}
-      >
-        <div className="nav-item">
-          <LinkStyled to="/" title="Go to homepage">
-            <HeroLogoContainer>
-              <HeroLogoStyled gradientIndex={1} accentFill="rgba(255, 255, 255, 0.5" />
-            </HeroLogoContainer>
-            <LogoTextStyled />
-          </LinkStyled>
-        </div>
-        <NavigationItems className="nav-end" />
-        <MobileMenu />
-      </NavigationMenuStyled>
-    </NavigationWrapper>
-  )
-}
+const NavigationMenu = ({ topOffset, className }: NavigationMenuProps) => (
+  <NavigationWrapper>
+    <NavigationMenuStyled className={className}>
+      <div className="nav-item">
+        <LinkStyled to="/" title="Go to homepage">
+          <LogoTextStyled />
+        </LinkStyled>
+      </div>
+      <NavigationItems className="nav-end" />
+      <MobileMenu />
+    </NavigationMenuStyled>
+  </NavigationWrapper>
+)
 
 const NavigationItems = ({ className }: { className?: string }) => {
   const theme = useTheme()
@@ -91,27 +41,29 @@ const NavigationItems = ({ className }: { className?: string }) => {
 
   return (
     <div className={className}>
-      {menuItems?.map(
-        ({ title, items }) =>
-          title &&
-          items && (
-            <NavigationDrawer key={title} title={title}>
-              {items.map(
-                (item, index) =>
-                  item &&
-                  item.title && (
-                    <DrawerItem key={item.title} isLink={!!item.link}>
-                      {item.link ? (
-                        <NavLink key={index} url={item.link} text={item.title} />
-                      ) : (
-                        <DrawerItemTitle key={index}>{item.title}</DrawerItemTitle>
-                      )}
-                    </DrawerItem>
-                  )
-              )}
-            </NavigationDrawer>
-          )
-      )}
+      <MenuItems>
+        {menuItems?.map(
+          ({ title, items }) =>
+            title &&
+            items && (
+              <NavigationDrawer key={title} title={title}>
+                {items.map(
+                  (item, index) =>
+                    item &&
+                    item.title && (
+                      <DrawerItem key={item.title} isLink={!!item.link}>
+                        {item.link ? (
+                          <NavLink key={index} url={item.link} text={item.title} />
+                        ) : (
+                          <DrawerItemTitle key={index}>{item.title}</DrawerItemTitle>
+                        )}
+                      </DrawerItem>
+                    )
+                )}
+              </NavigationDrawer>
+            )
+        )}
+      </MenuItems>
       <NavigationDrawer Icon={<RiTranslate2 color={theme.textSecondary} size={20} />}>
         <TranslateComponent />
       </NavigationDrawer>
@@ -197,7 +149,7 @@ export const navigationMenuQuery = graphql`
 
 const NavigationWrapper = styled.div`
   position: fixed;
-  top: 0;
+  top: 30px;
   right: 0;
   left: 0;
   display: flex;
@@ -211,14 +163,14 @@ const NavigationWrapper = styled.div`
   }
 `
 
-const NavigationMenuStyled = styled(motion.div)`
-  width: calc(var(--page-width) - 100px);
+const NavigationMenuStyled = styled.div`
+  width: var(--page-width);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   font-weight: var(--fontWeight-medium);
   z-index: 1;
-  backdrop-filter: blur(24px);
-  padding: 0 16px 0 12px;
+  backdrop-filter: blur(100px);
+  padding: 0 30px;
   height: 62px;
   border-radius: 200px;
 
@@ -227,6 +179,8 @@ const NavigationMenuStyled = styled(motion.div)`
     margin-left: var(--spacing-3);
     gap: var(--spacing-5);
     align-items: center;
+    justify-content: center;
+    flex: 1;
 
     & > :last-child {
       margin-top: 5px; // Github button
@@ -248,6 +202,13 @@ const NavigationMenuStyled = styled(motion.div)`
   }
 `
 
+const MenuItems = styled.div`
+  flex: 1;
+  gap: 20px;
+  justify-content: center;
+  display: flex;
+`
+
 const LinkStyled = styled(Link)`
   display: flex;
   align-items: center;
@@ -255,24 +216,10 @@ const LinkStyled = styled(Link)`
 `
 
 const LogoTextStyled = styled(LogoText)`
-  height: 26px;
+  height: 24px;
   fill: ${({ theme }) => theme.textPrimary};
   width: auto;
   transform: translateY(2px);
-`
-
-const HeroLogoContainer = styled.div`
-  background-color: ${({ theme }) => theme.bgPrimary};
-  border-radius: 40px;
-  height: 42px;
-  width: 42px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`
-
-const HeroLogoStyled = styled(HeroLogo)`
-  height: 26px;
 `
 
 const LinkStyle = css`
@@ -313,6 +260,7 @@ const MobileNav = styled(NavigationItems)`
   flex-direction: column;
   right: 0px;
   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.9);
+  flex: 1;
 
   > * {
     display: flex;

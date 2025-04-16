@@ -1,10 +1,11 @@
-import TextElement from '../../customPageComponents/TextElement'
-import SubpageSection from '../../customPageComponents/SubpageSection'
-import SubheaderContent from '../../customPageComponents/SubheaderContent'
 import { graphql } from 'gatsby'
-import Grid from '../../customPageComponents/Grid'
-import TextCard from '../../customPageComponents/TextCard'
+
 import CardImage from '../../customPageComponents/CardImage'
+import Grid from '../../customPageComponents/Grid'
+import SubheaderContent from '../../customPageComponents/SubheaderContent'
+import SubpageSection from '../../customPageComponents/SubpageSection'
+import TextCard from '../../customPageComponents/TextCard'
+import TextElement from '../../customPageComponents/TextElement'
 
 export const query = graphql`
   fragment HomepagePartnersSection on MarkdownRemarkFrontmatterPartnersSection {

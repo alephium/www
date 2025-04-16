@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+
 import ParallaxWrapper, { ParallaxWrapperProps } from './ParallaxWrapper'
 
 const gradients = {

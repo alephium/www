@@ -1,4 +1,4 @@
-import { useStaticQuery, graphql } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 import { FC } from 'react'
 
 import Modal, { ModalProps } from './Modal'

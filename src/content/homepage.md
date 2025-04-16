@@ -1,19 +1,22 @@
 ---
 intro:
   cards:
-    - title: ALPH Coin Basics
-      image: ../images/coins.svg
-      description: What powers Alephium? Discover ALPH and how it fuels the network.
+    - title: Get started
+      image: ../images/light-rays.png
+      description: What powers Alephium? Discover $ALPH and how it fuels the network.
+      actionText: Learn more
       link:
         url: /get-started
-    - title: Start Building
-      image: ../images/code.svg
+    - title: Build
+      image: ../images/golden-waves.png
       description: Deploy secure smart contracts, create scalable dApps, or integrate Alephium into your existing project.
+      actionText: Go to documentation
       link:
         url: https://docs.alephium.org
-    - title: Run a Full Node
-      image: ../images/mining.svg
+    - title: Contribute
+      image: ../images/deep-blue-reflections.png
       description: Contribute to the security and stability of the Alephium network. Help maintain a decentralized network structure and ensure optimal performance and reliability for your decentralized applications.
+      actionText: Run a full node
       link:
         url: https://docs.alephium.org/full-node/
 

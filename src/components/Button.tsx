@@ -6,6 +6,8 @@ import Arrow from '../images/svgs/arrow-right.svg'
 interface ButtonProps {
   onClick?: () => void
   url?: string
+  squared?: boolean
+  textAlign?: 'left' | 'center'
   className?: string
   trackingName?: string
   disabled?: boolean
@@ -40,16 +42,17 @@ const Button = ({ onClick, className, children, url, trackingName, disabled }: B
 export default styled(Button)`
   background-color: rgba(255, 255, 255, 0.9);
   color: black;
-  border-radius: 9px;
-  padding: 8px 12px;
+  border-radius: ${({ squared }) => (squared ? '9px' : '50px')};
+  padding: 12px 16px;
   border: 0 solid;
   text-decoration: none;
   display: inline-flex;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  justify-content: ${({ textAlign }) => (textAlign === 'left' ? 'flex-start' : 'center')};
 
   /* The following rules are the same as in the ArrowedLink, maybe extract? */
   align-items: center;
   font-weight: var(--fontWeight-semiBold);
+  font-size: var(--fontSize-20);
   transition: all 0.1s ease-out;
 
   ${({ disabled }) =>
@@ -57,8 +60,7 @@ export default styled(Button)`
       ? css`
           &:hover {
             cursor: pointer;
-            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-            opacity: 0.7;
+            background-color: rgba(255, 255, 255, 1);
           }
         `
       : css`
@@ -67,7 +69,7 @@ export default styled(Button)`
         `}
 
   .arrow {
-    width: 11px;
+    width: 14px;
     margin-left: var(--spacing-1);
     fill: inherit;
   }

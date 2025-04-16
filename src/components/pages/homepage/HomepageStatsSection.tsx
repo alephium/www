@@ -1,13 +1,13 @@
 import { ExplorerClient } from '@alephium/sdk'
-import { useCallback, useEffect, useState } from 'react'
-import styled from 'styled-components'
-
 import { HttpResponse } from '@alephium/sdk/api/explorer'
-import TextElement from '../../customPageComponents/TextElement'
-import SubpageSection from '../../customPageComponents/SubpageSection'
-import SubheaderContent from '../../customPageComponents/SubheaderContent'
+import { useCallback, useEffect, useState } from 'react'
+import styled, { useTheme } from 'styled-components'
+
 import Grid from '../../customPageComponents/Grid'
+import SubheaderContent from '../../customPageComponents/SubheaderContent'
+import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextCard from '../../customPageComponents/TextCard'
+import TextElement from '../../customPageComponents/TextElement'
 
 const baseUrl = 'https://backend.mainnet.alephium.org'
 
@@ -23,6 +23,7 @@ type StatScalarKeys = 'totalTransactions'
 type StatsScalarData = { [key in StatScalarKeys]: StatScalar }
 
 const HomepageStatsSection = () => {
+  const theme = useTheme()
   const [explorerClient, setExplorerClient] = useState<ExplorerClient>()
   const [statsScalarData, setStatsScalarData] = useState<StatsScalarData>({
     totalTransactions: statScalarDefault
@@ -69,7 +70,7 @@ const HomepageStatsSection = () => {
       <SubheaderContent>
         <Grid columns={2}>
           <TextCard isSmall={false} isBodySmall>
-            <h3>Fast</h3>
+            <h3 style={{ color: theme.palette1 }}>Fast</h3>
             <p>
               Alephium moves as fast as you do. With block times of just 8 seconds, sharding, and Proof-of-Less-Work, it
               delivers fast, efficient, and reliable performance - ready to scale as adoption grows.
@@ -77,7 +78,7 @@ const HomepageStatsSection = () => {
             <h4>Over 10,000 transactions per second</h4>
           </TextCard>
           <TextCard isSmall={false} isBodySmall>
-            <h3>Scalable</h3>
+            <h3 style={{ color: theme.palette2 }}>Scalable</h3>
             <p>
               Built to handle high throughput without sacrificing security, Alephium’s architecture ensures that fees
               remain predictable and affordable - empowering developers and users alike.
@@ -85,7 +86,7 @@ const HomepageStatsSection = () => {
             <h4>{`${totalTransactions.value.toLocaleString()} total transactions`}</h4>
           </TextCard>
           <TextCard isSmall={false} isBodySmall>
-            <h3>Secure</h3>
+            <h3 style={{ color: theme.palette3 }}>Secure</h3>
             <p>
               With a truly decentralized Proof-of-Work model, Alephium operates independently of vulnerable central
               validators, ensuring maximum security, trustlessness, and censorship resistance.
@@ -93,7 +94,7 @@ const HomepageStatsSection = () => {
             <h4>125+ independent mining nodes</h4>
           </TextCard>
           <TextCard isSmall={false} isBodySmall>
-            <h3>Sustainable</h3>
+            <h3 style={{ color: theme.palette4 }}>Sustainable</h3>
             <p>
               Alephium’s Proof-of-Less-Work mechanism reduces energy consumption, making it one of the most sustainable
               and responsible blockchains built for the future.

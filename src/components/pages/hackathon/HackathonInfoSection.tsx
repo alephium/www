@@ -1,10 +1,11 @@
 import styled from 'styled-components'
-import { deviceBreakPoints } from '../../../styles/global-style'
-import { H3, Paragraph } from './Texts'
-import SimpleLink from '../../SimpleLink'
-import lsw3Logo from '../../../images/logos/lsw3-logo.jpg'
-import cryptoXRLogo from '../../../images/logos/cryptoXR-logo.png'
+
 import alephiumLogo from '../../../images/logos/alephium-logo.png'
+import cryptoXRLogo from '../../../images/logos/cryptoXR-logo.png'
+import lsw3Logo from '../../../images/logos/lsw3-logo.jpg'
+import { deviceBreakPoints } from '../../../styles/global-style'
+import SimpleLink from '../../SimpleLink'
+import { H3, Paragraph } from './Texts'
 
 export type HackathonInfoSectionContentType = {
   participantsInfo: {

@@ -1,11 +1,10 @@
 import { FC } from 'react'
 
-import Modal, { ModalProps } from './Modal'
-import ImageWithTextSideBySide from './ImageWithTextSideBySide'
-
+import BlockFlowConsensus from '../images/blockflow-consensus.png'
 import BlockFlowSharding from '../images/blockflow-sharding.png'
 import BlockFlowSharding2 from '../images/blockflow-sharding-2.png'
-import BlockFlowConsensus from '../images/blockflow-consensus.png'
+import ImageWithTextSideBySide from './ImageWithTextSideBySide'
+import Modal, { ModalProps } from './Modal'
 
 const ModalBlockFlow: FC<ModalProps> = ({ isOpen, setIsOpen }) => (
   <Modal title="BlockFlow" isOpen={isOpen} setIsOpen={setIsOpen}>

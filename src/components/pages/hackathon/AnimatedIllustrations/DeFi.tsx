@@ -1,5 +1,5 @@
-import { useEffect } from 'react'
 import { stagger, useAnimate } from 'framer-motion'
+import { useEffect } from 'react'
 
 const DeFi = () => {
   const [scope, animate] = useAnimate()

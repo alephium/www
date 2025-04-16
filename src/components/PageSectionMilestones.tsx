@@ -1,10 +1,10 @@
+import { graphql, useStaticQuery } from 'gatsby'
+import { useState } from 'react'
 import styled from 'styled-components'
 
-import DualTimeline from './DualTimeline'
 import Toggle from '../Toggle'
-import { useState } from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
 import TextElement from './customPageComponents/TextElement'
+import DualTimeline from './DualTimeline'
 
 export const milestonesQuery = graphql`
   query Milestones {

@@ -1,6 +1,7 @@
 import styled from 'styled-components'
-import SectionTextHeader from '../../SectionTextHeader'
+
 import { deviceBreakPoints } from '../../../styles/global-style'
+import SectionTextHeader from '../../SectionTextHeader'
 
 export default styled(SectionTextHeader)<{ backgroundColor?: 'bgSecondary' | 'bgTertiary' }>`
   padding: 0 var(--spacing-8) 0 0;

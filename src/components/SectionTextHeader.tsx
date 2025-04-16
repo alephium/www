@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion'
 import { ReactNode, useRef, useState } from 'react'
 import styled, { useTheme } from 'styled-components'
+
 import useElementDistanceToTop from '../hooks/useElementDistanceToTop'
 import { deviceBreakPoints } from '../styles/global-style'
 import { toId } from '../utils/misc'
-
 import TextSnippet from './TextSnippet'
 
 interface SectionTextHeaderProps {

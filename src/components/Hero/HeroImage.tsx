@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
 import styled from 'styled-components'
 
+import HeroDarkBackImage from '../../images/hero-dark-back.svg'
 import HeroDarkFrontImage from '../../images/hero-dark-front.svg'
 import HeroDarkMiddleImage from '../../images/hero-dark-middle.svg'
-import HeroDarkBackImage from '../../images/hero-dark-back.svg'
 import HeroLightBackImage from '../../images/hero-light-back.svg'
-import HeroLightMiddleImage from '../../images/hero-light-middle.svg'
 import HeroLightFrontImage from '../../images/hero-light-front.svg'
+import HeroLightMiddleImage from '../../images/hero-light-middle.svg'
 import { deviceBreakPoints } from '../../styles/global-style'
 import ParallaxWrapper from '../ParallaxWrapper'
 

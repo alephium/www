@@ -1,10 +1,11 @@
 import { colord } from 'colord'
 import styled from 'styled-components'
-import { deviceBreakPoints } from '../../../styles/global-style'
-import HackathonSectionContainer from './HackathonSectionContainer'
-import headerImage from '../../../images/crypto-xr-gradient.png'
+
 import cryptoXRIllustration from '../../../images/crypto-xr-cyberpunk.png'
+import headerImage from '../../../images/crypto-xr-gradient.png'
+import { deviceBreakPoints } from '../../../styles/global-style'
 import SimpleLink from '../../SimpleLink'
+import HackathonSectionContainer from './HackathonSectionContainer'
 
 const HackathonLandingSection = () => (
   <SectionWrapper>

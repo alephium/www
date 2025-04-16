@@ -1,13 +1,12 @@
-import styled, { ThemeProvider } from 'styled-components'
 import { graphql, PageProps } from 'gatsby'
+import styled, { ThemeProvider } from 'styled-components'
 
-import GlobalStyle from '../styles/global-style'
-import { darkTheme } from '../styles/themes'
-
-import Seo from '../components/Seo'
-import PageSectionContainer from '../components/PageSectionContainer'
 import Footer from '../components/Footer'
 import NavigationMenu from '../components/NavigationMenu'
+import PageSectionContainer from '../components/PageSectionContainer'
+import Seo from '../components/Seo'
+import GlobalStyle from '../styles/global-style'
+import { darkTheme } from '../styles/themes'
 
 interface PrivacyPolicyProps extends PageProps {
   data: {

@@ -1,16 +1,16 @@
 import { graphql, PageProps } from 'gatsby'
 
-import HomepageHeroSection from '../components/pages/homepage/HomepageHeroSection'
-import HomepageIntroSection from '../components/pages/homepage/HomepageIntroSection'
-import HomepageTechnologySection from '../components/pages/homepage/HomepageTechnologySection'
-import HomepageStatsSection from '../components/pages/homepage/HomepageStatsSection'
-import SectionDivider from '../components/SectionDivider'
-import HomepageEcosystemSection from '../components/pages/homepage/HomepageEcosystemSection'
-import HomepagePartnersSection from '../components/pages/homepage/HomepagePartnersSection'
+import Button from '../components/Button'
 import Page from '../components/customPageComponents/Page'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
-import Button from '../components/Button'
+import HomepageEcosystemSection from '../components/pages/homepage/HomepageEcosystemSection'
+import HomepageHeroSection from '../components/pages/homepage/HomepageHeroSection'
+import HomepageIntroSection from '../components/pages/homepage/HomepageIntroSection'
+import HomepagePartnersSection from '../components/pages/homepage/HomepagePartnersSection'
+import HomepageStatsSection from '../components/pages/homepage/HomepageStatsSection'
+import HomepageTechnologySection from '../components/pages/homepage/HomepageTechnologySection'
+import SectionDivider from '../components/SectionDivider'
 
 export const pageQuery = graphql`
   query IndexPage {

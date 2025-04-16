@@ -1,20 +1,20 @@
 import styled from 'styled-components'
 
-import BlockflowFrontImageSrc from '../../../images/blockflow-front.svg'
 import BlockflowBackImageSrc from '../../../images/blockflow-back.svg'
-import PoLWFrontImageSrc from '../../../images/polw-front.svg'
+import BlockflowFrontImageSrc from '../../../images/blockflow-front.svg'
 import PoLWBackImageSrc from '../../../images/polw-back.svg'
-import SmartContractFrontImageSrc from '../../../images/smart-contract-front.svg'
+import PoLWFrontImageSrc from '../../../images/polw-front.svg'
 import SmartContractBackImageSrc from '../../../images/smart-contract-back.svg'
-import VmsImageFrontSrc from '../../../images/vms-front.svg'
+import SmartContractFrontImageSrc from '../../../images/smart-contract-front.svg'
 import VmsImageBackSrc from '../../../images/vms-back.svg'
+import VmsImageFrontSrc from '../../../images/vms-front.svg'
+import Button from '../../Button'
 import IllustrationColumn from '../../Columns/IllustrationColumn'
-import ParallaxWrapper from '../../ParallaxWrapper'
+import SideBySide from '../../customPageComponents/SideBySide'
+import SubheaderContent from '../../customPageComponents/SubheaderContent'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextElement from '../../customPageComponents/TextElement'
-import SubheaderContent from '../../customPageComponents/SubheaderContent'
-import SideBySide from '../../customPageComponents/SideBySide'
-import Button from '../../Button'
+import ParallaxWrapper from '../../ParallaxWrapper'
 
 const HomepageTechnologySection = () => (
   <SubpageSection>

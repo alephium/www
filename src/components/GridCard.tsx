@@ -1,11 +1,10 @@
 import { FC } from 'react'
-import styled, { useTheme, css } from 'styled-components'
+import styled, { css, useTheme } from 'styled-components'
 
 import { deviceBreakPoints } from '../styles/global-style'
-
-import TextSnippet from './TextSnippet'
 import ArrowedLink, { ArrowedLinkProps } from './ArrowedLink'
 import Card from './Card'
+import TextSnippet from './TextSnippet'
 
 interface GridCardProps {
   title: string

@@ -18,8 +18,8 @@ along with the library. If not, see <http://www.gnu.org/licenses/>.
 
 import { motion, Transition } from 'framer-motion'
 import { useCallback } from 'react'
-import styled, { css, useTheme } from 'styled-components'
 import { IconType } from 'react-icons'
+import styled, { css, useTheme } from 'styled-components'
 
 interface ToggleProps {
   toggled: boolean

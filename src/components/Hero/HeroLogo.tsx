@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+
 import AlephiumLogo from '../AlephiumLogo'
 
 export default styled(AlephiumLogo)`

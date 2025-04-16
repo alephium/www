@@ -21,23 +21,29 @@ const TextElement = styled.div<TextElementProps>`
   > h3,
   > h4 {
     font-weight: var(--fontWeight-medium);
-
+    color: ${({ theme }) => theme.textPrimary};
     margin: 0;
     white-space: pre-wrap;
   }
 
   > h1 {
-    font-size: var(--fontSize-56);
+    font-family: 'Sentient';
+    font-size: var(--fontSize-50);
+    font-weight: var(--fontWeight-semiBold);
   }
 
   > h2 {
-    font-size: var(--fontSize-50);
-    line-height: var(--fontSize-50);
+    font-family: 'Sentient';
+    font-size: var(--fontSize-42);
+    line-height: 1.2;
+    margin-bottom: var(--spacing-6);
   }
 
   > h3 {
+    font-family: 'Sentient';
     font-size: var(--fontSize-36);
-    line-height: var(--fontSize-50);
+    line-height: 1.2;
+    font-weight: var(--fontWeight-medium);
 
     ${({ isSmall }) =>
       isSmall &&
@@ -59,20 +65,32 @@ const TextElement = styled.div<TextElementProps>`
       `}
   }
 
+  * strong {
+    color: var(--color-white);
+    font-weight: inherit;
+  }
+
   p,
   ul {
-    color: var(--color-grey-250);
+    color: ${({ theme }) => theme.textSecondary};
 
-    font-size: var(--fontSize-24);
-    line-height: var(--lineHeight-36);
-    font-weight: var(--fontWeight-light);
+    font-size: var(--fontSize-26);
+    font-weight: var(--fontWeight-semiBold);
+    line-height: 1.3;
+    max-width: 600px;
+
+    ${({ isCentered }) =>
+      isCentered &&
+      css`
+        margin-left: auto;
+        margin-right: auto;
+      `}
 
     ${({ isSmall, isBodySmall }) =>
       (isSmall || isBodySmall) &&
       css`
-        font-size: var(--fontSize-18);
+        font-size: var(--fontSize-22);
         line-height: var(--lineHeight-28);
-        font-weight: var(--fontWeight-normal);
       `}
 
     > a {
@@ -92,7 +110,6 @@ const TextElement = styled.div<TextElementProps>`
 
   /* Buttons */
   > a {
-    margin-right: var(--spacing-2);
     margin-top: var(--spacing-6);
   }
 

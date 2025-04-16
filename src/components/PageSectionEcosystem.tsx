@@ -1,16 +1,15 @@
+import { motion } from 'framer-motion'
+import { sortBy } from 'lodash'
+import { useEffect, useState } from 'react'
 import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../styles/global-style'
-
-import SectionTextHeader from './SectionTextHeader'
-import PageSectionContainer from './PageSectionContainer'
-import SubsectionTextHeader from './SubsectionTextHeader'
-import SimpleLink from './SimpleLink'
-import Columns from './Columns/Columns'
-import { motion } from 'framer-motion'
-import { useEffect, useState } from 'react'
-import { sortBy } from 'lodash'
 import Button from './Button'
+import Columns from './Columns/Columns'
+import PageSectionContainer from './PageSectionContainer'
+import SectionTextHeader from './SectionTextHeader'
+import SimpleLink from './SimpleLink'
+import SubsectionTextHeader from './SubsectionTextHeader'
 
 export type HomepageEcosystemSectionContentType = {
   title: string

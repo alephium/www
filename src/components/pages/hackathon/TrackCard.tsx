@@ -1,5 +1,6 @@
 import { ReactNode } from 'react'
 import styled, { useTheme } from 'styled-components'
+
 import Card from '../../Card'
 import { Paragraph } from './Texts'
 
