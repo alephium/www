@@ -144,10 +144,9 @@ const AnimatedCardContainer = styled(motion.div)`
   display: flex;
   position: relative;
   max-width: 400px;
-  min-width: 300px;
 
   @media ${deviceBreakPoints.mobile} {
-    flex: 1 1 0%;
-    min-width: auto;
+    flex: 1;
+    min-width: 300px;
   }
 `
