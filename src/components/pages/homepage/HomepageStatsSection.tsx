@@ -3,6 +3,11 @@ import { HttpResponse } from '@alephium/sdk/api/explorer'
 import { useCallback, useEffect, useState } from 'react'
 import styled, { useTheme } from 'styled-components'
 
+import blueTreeIcon from '../../../images/blue-tree-icon.png'
+import circlesIcon from '../../../images/circles-icon.png'
+import greenDropIcon from '../../../images/green-drop-icon.png'
+import yellowWaveIcon from '../../../images/yellow-wave-icon.png'
+import CardImage from '../../customPageComponents/CardImage'
 import Grid from '../../customPageComponents/Grid'
 import SubheaderContent from '../../customPageComponents/SubheaderContent'
 import SubpageSection from '../../customPageComponents/SubpageSection'
@@ -69,6 +74,7 @@ const HomepageStatsSection = () => {
       <SubheaderContent>
         <Grid columns={2}>
           <TextElement>
+            <CardImage src={yellowWaveIcon} rounded />
             <h3 style={{ color: theme.palette2 }}>Fast</h3>
             <h4 style={{ color: theme.palette2 }}>Over 10,000 transactions per second</h4>
             <p>
@@ -77,6 +83,7 @@ const HomepageStatsSection = () => {
             </p>
           </TextElement>
           <TextElement>
+            <CardImage src={blueTreeIcon} rounded />
             <h3 style={{ color: theme.palette3 }}>Scalable</h3>
             <h4
               style={{ color: theme.palette3 }}
@@ -87,6 +94,7 @@ const HomepageStatsSection = () => {
             </p>
           </TextElement>
           <TextElement>
+            <CardImage src={circlesIcon} rounded />
             <h3 style={{ color: theme.palette4 }}>Secure</h3>
             <h4 style={{ color: theme.palette4 }}>125+ independent mining nodes</h4>
             <p>
@@ -95,6 +103,7 @@ const HomepageStatsSection = () => {
             </p>
           </TextElement>
           <TextElement>
+            <CardImage src={greenDropIcon} rounded />
             <h3 style={{ color: theme.palette1 }}>Sustainable</h3>
             <h4 style={{ color: theme.palette1 }}>87% lower environmental impact vs. traditional PoW</h4>
             <p>
