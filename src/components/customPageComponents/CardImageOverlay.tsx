@@ -3,25 +3,25 @@ import styled from 'styled-components'
 import TextElement from './TextElement'
 
 interface CardImageOverlayProps {
-  overlayTitle?: string | null
+  overlayTitle: string | null
   imageUrl?: string | null
   rounded?: boolean
 }
 
-const CardImageOverlay = ({ imageUrl, overlayTitle }: CardImageOverlayProps) => (
-  <CardImageOverlayStyled style={{ backgroundImage: `url(${imageUrl})` }}>
-    {overlayTitle && (
-      <OverlayTitleContainer>
-        <TextElement>
-          <h3>{overlayTitle}</h3>
-        </TextElement>
-      </OverlayTitleContainer>
-    )}
-    {overlayTitle && <BottomGradient />}
+const CardImageOverlay = ({ imageUrl, overlayTitle, rounded }: CardImageOverlayProps) => (
+  <CardImageOverlayStyled style={{ backgroundImage: `url(${imageUrl})` }} rounded={rounded}>
+    <OverlayTitleContainer>
+      <TextElement>
+        <h3>{overlayTitle}</h3>
+      </TextElement>
+    </OverlayTitleContainer>
+    <BottomGradient />
   </CardImageOverlayStyled>
 )
 
-const CardImageOverlayStyled = styled.div<CardImageOverlayProps>`
+export default CardImageOverlay
+
+const CardImageOverlayStyled = styled.div<Pick<CardImageOverlayProps, 'rounded'>>`
   position: relative;
   width: 100%;
   min-height: 200px;
@@ -48,5 +48,3 @@ const BottomGradient = styled.div`
   height: 40%;
   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
 `
-
-export default CardImageOverlay
