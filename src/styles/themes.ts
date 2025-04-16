@@ -22,9 +22,10 @@ export const darkTheme: DefaultTheme = {
 
   separator: 'var(--color-grey-800)',
 
-  palette1: '#2f9dff',
-  palette2: '#FF9C2B',
-  palette3: '#FF259D'
+  palette1: '#6EE2AC',
+  palette2: '#FCCF7D',
+  palette3: '#3FD2FF',
+  palette4: '#BE60F9'
 }
 
 export const lightTheme: DefaultTheme = {
@@ -49,7 +50,8 @@ export const lightTheme: DefaultTheme = {
 
   palette1: '#3580ff',
   palette2: '#FF9C2B',
-  palette3: '#FF259D'
+  palette3: '#FF259D',
+  palette4: '#FF259D'
 }
 
 export const hackathonTheme: DefaultTheme = {
