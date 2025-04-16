@@ -7,5 +7,4 @@ export default styled(PageSectionContainer)`
   display: flex;
   flex-direction: column;
   flex: 1;
-  height: auto;
 `

@@ -118,8 +118,9 @@ const CustomPage = (props: PageProps) => {
               <h2>Join Us on This Journey</h2>
               <p>
                 Alephium’s roadmap is a living document, evolving with the input of our community and the progress of
-                our technology. Stay up-to-date on our latest developments by following us on Twitter, or joining our
-                Telegram group.
+                our technology. Stay up-to-date on our latest developments by following us on{' '}
+                <a href="https://x.com/alephium">Twitter</a>, or joining our{' '}
+                <a href="https://t.me/alephiumgroup">Telegram</a> group.
               </p>
             </TextElement>
           </SubpageSection>

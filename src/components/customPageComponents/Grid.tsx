@@ -16,6 +16,10 @@ const Grid = styled.div<GridProps>`
     grid-template-columns: repeat(${({ columns }) => (columns ? columns - 1 : 2)}, minmax(0, 1fr));
   }
 
+  @media ${deviceBreakPoints.ipad} {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   @media ${deviceBreakPoints.smallMobile} {
     grid-template-columns: 1fr;
   }

@@ -53,7 +53,7 @@ const CustomPage = (props: PageProps) => {
             </TextElement>
 
             <SubheaderContent>
-              <Grid columns={4}>
+              <Grid columns={4} gap="small">
                 {socials.map((social) => (
                   <TextCard key={social.node.name} url={social.node.url ?? ''}>
                     <SocialMediaIconStyled
@@ -61,7 +61,7 @@ const CustomPage = (props: PageProps) => {
                       url={social.node.url ?? ''}
                       ImageComponent={getIconByName(social.node.name ?? '')}
                     />
-                    <h3>{social.node.name}</h3>
+                    <h4>{social.node.name}</h4>
                   </TextCard>
                 ))}
               </Grid>
