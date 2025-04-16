@@ -49,7 +49,7 @@ const HomepageIntroSection = ({ cards }: Queries.HomepageIntroSectionFragment) =
             card.link?.url && (
               <TextCard isAnimated variants={cardVariants} key={card.title}>
                 <CardImage imageUrl={card.image?.publicURL} overlayTitle={card.title} />
-                <p>{card.description}</p>
+                <ParagraphStyled>{card.description}</ParagraphStyled>
                 <Button url={card.link?.url} squared textAlign="center">
                   {card.actionText}
                 </Button>
@@ -86,4 +86,9 @@ const IntroColumns = styled(motion.div)`
   @media ${deviceBreakPoints.mobile} {
     flex-wrap: wrap;
   }
+`
+
+const ParagraphStyled = styled.p`
+  flex: 1;
+  padding: 0 10px;
 `

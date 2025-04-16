@@ -59,7 +59,7 @@ const AnimatedCard = ({ children }: { children: ReactNode }) => {
 
   return (
     <AnimatedCardStyled
-      whileHover={{ translateZ: 3, zIndex: 10 }}
+      whileHover={{ translateZ: 5, zIndex: 10 }}
       onPointerMove={onMove}
       onPointerLeave={() => {
         x.set(0.5, true)
@@ -94,6 +94,7 @@ const Card = styled.div`
 `
 
 const TextElementStyled = styled(TextElement)`
+  flex: 1;
   p {
     color: ${({ theme }) => theme.textPrimaryVariation};
   }
@@ -118,6 +119,7 @@ const AnimatedCardStyled = styled(motion.div)`
   background-color: ${({ theme }) => theme.bgSecondary};
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
   transition: box-shadow 0.2s ease-out;
+  perspective: 200px;
 
   @media ${deviceBreakPoints.mobile} {
     & + & {

@@ -41,9 +41,9 @@ const TextElement = styled.div<TextElementProps>`
 
   > h3 {
     font-family: 'Sentient';
-    font-size: var(--fontSize-32);
-    line-height: var(--fontSize-50);
-    font-weight: var(--fontWeight-semiBold);
+    font-size: var(--fontSize-36);
+    line-height: 1.2;
+    font-weight: var(--fontWeight-medium);
 
     ${({ isSmall }) =>
       isSmall &&

@@ -1,20 +1,20 @@
 ---
 intro:
   cards:
-    - title: Get started with ALPH
-      image: ../images/water-texture-1.png
+    - title: Get started
+      image: ../images/light-rays.png
       description: What powers Alephium? Discover $ALPH and how it fuels the network.
       actionText: Learn more
       link:
         url: /get-started
     - title: Build
-      image: ../images/waterfall-1.png
+      image: ../images/golden-waves.png
       description: Deploy secure smart contracts, create scalable dApps, or integrate Alephium into your existing project.
       actionText: Go to documentation
       link:
         url: https://docs.alephium.org
     - title: Contribute
-      image: ../images/mining.svg
+      image: ../images/deep-blue-reflections.png
       description: Contribute to the security and stability of the Alephium network. Help maintain a decentralized network structure and ensure optimal performance and reliability for your decentralized applications.
       actionText: Run a full node
       link:

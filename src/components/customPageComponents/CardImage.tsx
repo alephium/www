@@ -24,17 +24,19 @@ const CardImage = ({ imageUrl, overlayTitle }: CardImageProps) => (
 const CardImageStyled = styled.div<CardImageProps>`
   position: relative;
   width: 100%;
-  height: 200px;
+  min-height: 200px;
   margin-bottom: 30px;
   border-radius: ${({ rounded }) => (rounded ? '20px' : '0')};
   overflow: hidden;
   border-radius: var(--radius);
+  background-size: cover;
+  background-position: center;
 `
 
 const OverlayTitleContainer = styled.div`
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  bottom: 15px;
+  left: 20px;
   z-index: 1;
 `
 
@@ -43,8 +45,8 @@ const BottomGradient = styled.div`
   bottom: 0;
   left: 0;
   right: 0;
-  height: 30%;
-  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+  height: 40%;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
 `
 
 export default CardImage
