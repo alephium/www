@@ -21,7 +21,7 @@ const SubpageVideoHeroSection = ({ children }: SubpageVideoHeroSectionProps) => 
     lastUpdateRef.current = now
 
     if (!videoRef.current) return
-    const bounds = (e.currentTarget as HTMLElement).getBoundingClientRect()
+    const bounds = e.currentTarget.getBoundingClientRect()
     const relativeX = e.clientX - bounds.left
     const ratio = relativeX / bounds.width
     const duration = videoRef.current.duration
