@@ -21,12 +21,15 @@ const SubpageVideoHeroSection = ({ children }: SubpageVideoHeroSectionProps) => 
     lastUpdateRef.current = now
 
     if (!videoRef.current) return
+
     const bounds = e.currentTarget.getBoundingClientRect()
     const relativeX = e.clientX - bounds.left
     const ratio = relativeX / bounds.width
     const duration = videoRef.current.duration
+
     if (!scheduledRef.current && duration) {
       scheduledRef.current = true
+
       window.requestAnimationFrame(() => {
         if (videoRef.current) {
           videoRef.current.currentTime = ratio * duration
