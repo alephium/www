@@ -20,6 +20,8 @@ columns:
         url: /faq
       - text: Brand Assets
         url: /brand
+      - text: Team
+        url: /about
   - title: Resources
     links:
       - text: Docs
