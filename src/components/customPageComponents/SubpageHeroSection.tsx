@@ -45,7 +45,7 @@ const SubpageHeroSectionStyled = styled.section`
 
 const TextElementStyled = styled(TextElement)`
   > p {
-    max-width: 420px;
+    max-width: 500px;
     color: ${({ theme }) => theme.textSecondary};
     font-weight: var(--fontWeight-semiBold);
     line-height: 1.3;
@@ -74,7 +74,6 @@ const LeftContentWrapper = styled.div`
   margin-right: auto;
   position: relative;
   margin-top: 5%;
-  margin-bottom: 5%;
   display: flex;
   flex-direction: column;
   z-index: 2;

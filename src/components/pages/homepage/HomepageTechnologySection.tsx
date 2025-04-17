@@ -34,7 +34,7 @@ const HomepageTechnologySection = () => (
           <ParallaxImage src={BlockflowFrontImageSrc} speed={3} shouldRotate targetedRotation={10} />
         </IllustrationColumn>
 
-        <TextElement isBodySmall>
+        <TextElement>
           <h3>Scalable & Sharded</h3>
           <p>
             Alephium is built on a novel sharding algorithm called BlockFlow. It leverages a stateful UTXO model and DAG
@@ -45,7 +45,7 @@ const HomepageTechnologySection = () => (
         </TextElement>
       </SideBySide>
       <SideBySide reverseOnMobile>
-        <TextElement isBodySmall>
+        <TextElement>
           <h3>Efficiency in Energy Consumption</h3>
           <p>
             Alephium's Proof Of Less Work is a consistent and robust consensus mechanism designed to achieve

@@ -15,7 +15,7 @@ intro:
         url: https://docs.alephium.org
     - title: Contribute
       image: ../images/deep-blue-reflections.png
-      description: Contribute to the security and stability of the Alephium network. Help maintain a decentralized network structure and ensure optimal performance and reliability for your decentralized applications.
+      description: Contribute to the security and stability of the Alephium network. Ensure optimal performance and reliability for your decentralized applications.
       actionText: Run a full node
       link:
         url: https://docs.alephium.org/full-node/

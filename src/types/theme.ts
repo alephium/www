@@ -27,5 +27,7 @@ declare module 'styled-components' {
     palette2: string
     palette3: string
     palette4: string
+    palette5: string
+    palette6: string
   }
 }

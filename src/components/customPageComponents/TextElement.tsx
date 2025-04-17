@@ -41,7 +41,7 @@ const TextElement = styled.div<TextElementProps>`
 
   > h3 {
     font-family: 'Sentient';
-    font-size: var(--fontSize-36);
+    font-size: var(--fontSize-38);
     line-height: 1.2;
     font-weight: var(--fontWeight-normal);
 
@@ -54,10 +54,8 @@ const TextElement = styled.div<TextElementProps>`
   }
 
   > h4 {
-    font-family: 'Sentient';
     font-size: var(--fontSize-28);
     line-height: var(--lineHeight-36);
-    opacity: 0.75;
 
     ${({ isSmall }) =>
       isSmall &&
@@ -112,8 +110,7 @@ const TextElement = styled.div<TextElementProps>`
 
   /* Buttons */
   > a {
-    margin-top: var(--spacing-6);
-    margin-right: var(--spacing-2);
+    margin-top: var(--spacing-2);
   }
 
   > ul {

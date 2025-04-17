@@ -12,16 +12,27 @@ interface SubpageVideoHeroSectionProps {
 const SubpageVideoHeroSection = ({ children }: SubpageVideoHeroSectionProps) => {
   const innerRef = useRef<HTMLElement>(null)
   const videoRef = useRef<HTMLVideoElement>(null)
+  const scheduledRef = useRef(false)
+  const lastUpdateRef = useRef(0)
 
   const handleMouseMove = (e: React.MouseEvent<HTMLElement>) => {
-    if (videoRef.current) {
-      const bounds = e.currentTarget.getBoundingClientRect()
-      const relativeX = e.clientX - bounds.left
-      const ratio = relativeX / bounds.width
-      const duration = videoRef.current.duration
-      if (duration) {
-        videoRef.current.currentTime = ratio * duration
-      }
+    const now = performance.now()
+    if (now - lastUpdateRef.current < 100) return
+    lastUpdateRef.current = now
+
+    if (!videoRef.current) return
+    const bounds = (e.currentTarget as HTMLElement).getBoundingClientRect()
+    const relativeX = e.clientX - bounds.left
+    const ratio = relativeX / bounds.width
+    const duration = videoRef.current.duration
+    if (!scheduledRef.current && duration) {
+      scheduledRef.current = true
+      window.requestAnimationFrame(() => {
+        if (videoRef.current) {
+          videoRef.current.currentTime = ratio * duration
+        }
+        scheduledRef.current = false
+      })
     }
   }
 
@@ -31,7 +42,7 @@ const SubpageVideoHeroSection = ({ children }: SubpageVideoHeroSectionProps) => 
         ref={innerRef}
         onMouseMove={handleMouseMove}
         mediaContent={
-          <VideoContainer ref={videoRef} muted playsInline>
+          <VideoContainer ref={videoRef} muted playsInline preload="auto">
             <source src={video} type="video/mp4" />
           </VideoContainer>
         }

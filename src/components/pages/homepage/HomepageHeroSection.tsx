@@ -14,8 +14,11 @@ const HomepageHeroSection = () => (
     </h1>
     <hr />
     <p>
-      <strong>Alephium</strong> brings the security of Proof-of-Work, the scalability of sharding, and the power of
-      smart contracts <strong>to real-world applications</strong>.
+      <strong>
+        Alephium brings the security of Proof-of-Work, the scalability of sharding, and the power of smart contracts to
+        real-world applications
+      </strong>
+      .
     </p>
 
     <Buttons>

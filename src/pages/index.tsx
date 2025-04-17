@@ -1,15 +1,17 @@
 import { graphql, PageProps } from 'gatsby'
+import styled from 'styled-components'
 
 import Button from '../components/Button'
 import Page from '../components/customPageComponents/Page'
-import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
+import HomepageEcosystemSection from '../components/pages/homepage/HomepageEcosystemSection'
 import HomepageHeroSection from '../components/pages/homepage/HomepageHeroSection'
 import HomepageIntroSection from '../components/pages/homepage/HomepageIntroSection'
 import HomepagePartnersSection from '../components/pages/homepage/HomepagePartnersSection'
 import HomepageStatsSection from '../components/pages/homepage/HomepageStatsSection'
-import HomepageTechnologySection from '../components/pages/homepage/HomepageTechnologySection'
+import PageSectionContainer from '../components/PageSectionContainer'
 import SectionDivider from '../components/SectionDivider'
+import lighthouseImage from '../images/lighthouse.png'
 
 export const pageQuery = graphql`
   query IndexPage {
@@ -42,7 +44,6 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
       content={
         <>
           <HomepageHeroSection />
-          <SectionDivider />
 
           {content?.intro && (
             <>
@@ -52,9 +53,11 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
           )}
 
           <HomepageStatsSection />
+
           <SectionDivider />
 
-          <HomepageTechnologySection />
+          <HomepageEcosystemSection />
+
           <SectionDivider />
 
           {content?.partnersSection && (
@@ -64,18 +67,16 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
             </>
           )}
 
-          <SubpageSection>
-            <SubpageSection>
-              <TextElement isCentered>
-                <h2>This is your moment.</h2>
-                <p>
-                  Alephium isn’t just a concept - it’s something we build, together. There’s a place for you here and we
-                  can’t wait to meet you.
-                </p>
-                <Button url="/get-started">Get started</Button>
-              </TextElement>
-            </SubpageSection>
-          </SubpageSection>
+          <LastPageSectionContainer fullHeight wide justifyContent="center">
+            <TextElement isCentered>
+              <h2>This is your moment.</h2>
+              <p>
+                Alephium isn’t just a concept - it’s something we build, together.{' '}
+                <strong>There’s a place for you here and we can’t wait to meet you.</strong>
+              </p>
+              <Button url="/get-started">Get started</Button>
+            </TextElement>
+          </LastPageSectionContainer>
         </>
       }
     />
@@ -83,3 +84,10 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
 }
 
 export default IndexPage
+
+const LastPageSectionContainer = styled(PageSectionContainer)`
+  background-image: url(${lighthouseImage});
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+`
