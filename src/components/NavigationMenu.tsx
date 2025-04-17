@@ -70,16 +70,101 @@ const NavigationMenu = ({ className, floating = true }: NavigationMenuProps) => 
   )
 }
 
-const MobileNavigationMenu = ({ onCloseClick }: { onCloseClick: () => void }) => (
-  <MobileNavigationMenuStyled initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-    <NavigationWrapper isHidden={false} floating>
-      <NavigationMenuStyled>
-        <NavigationItems className="nav-end" />
-        <ToggleMobileNavButton onClick={onCloseClick} Icon={RiCloseLine} />
-      </NavigationMenuStyled>
-    </NavigationWrapper>
-  </MobileNavigationMenuStyled>
-)
+const MobileNavigationMenu = ({ onCloseClick }: { onCloseClick: () => void }) => {
+  const data = useStaticQuery<Queries.NavigationMenuQuery>(navigationMenuQuery)
+  const menuItems = data.navmenu.nodes[0]?.frontmatter?.menuItems?.filter(notEmpty)
+  const socialIcons = data.navmenu.nodes[0]?.frontmatter?.socialIcons?.filter(notEmpty)
+  const [expandedItem, setExpandedItem] = useState<string | null>(null)
+
+  const toggleItem = (title: string) => {
+    setExpandedItem((prev) => (prev === title ? null : title))
+  }
+
+  return (
+    <MobileNavigationMenuStyled initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+      <NavigationWrapper isHidden={false} floating>
+        <NavigationMenuStyled>
+          <NavigationItems className="nav-end" />
+          <ToggleMobileNavButton onClick={onCloseClick} Icon={RiCloseLine} />
+        </NavigationMenuStyled>
+      </NavigationWrapper>
+
+      <MobileMenuItems>
+        {menuItems?.map(
+          ({ title, items }) =>
+            title && (
+              <MobileMenuExpandableItem
+                key={title}
+                title={title}
+                onItemToggle={toggleItem}
+                isExpanded={expandedItem === title}
+              >
+                {items?.map(
+                  (item) =>
+                    item?.title && (
+                      <MobileSubItem key={item.title}>
+                        {item?.link ? (
+                          <NavLink url={item.link} text={item.title} />
+                        ) : (
+                          <MobileSubItemTitle>{item.title}</MobileSubItemTitle>
+                        )}
+                      </MobileSubItem>
+                    )
+                )}
+              </MobileMenuExpandableItem>
+            )
+        )}
+
+        <MobileMenuExpandableItem title="translate" onItemToggle={toggleItem} isExpanded={expandedItem === 'translate'}>
+          <TranslateComponent />
+        </MobileMenuExpandableItem>
+
+        {socialIcons && (
+          <MobileMenuItem>
+            <NavigationMenuSocials enabledItems={socialIcons} />
+          </MobileMenuItem>
+        )}
+      </MobileMenuItems>
+    </MobileNavigationMenuStyled>
+  )
+}
+
+interface MobileMenuExpandableItemProps {
+  title: string
+  children: ReactNode
+  onItemToggle: (title: string) => void
+  isExpanded?: boolean
+}
+
+const MobileMenuExpandableItem = ({
+  title,
+  children,
+  onItemToggle,
+  isExpanded = false
+}: MobileMenuExpandableItemProps) => {
+  const theme = useTheme()
+
+  return (
+    <MobileMenuItem>
+      <MobileMenuItemTitle onClick={() => onItemToggle(title)}>
+        {title === 'translate' ? <RiTranslate2 color={theme.textSecondary} size={20} /> : title}
+        <MobileMenuItemArrow>{isExpanded ? <RiArrowDropUpLine /> : <RiArrowDropDownLine />}</MobileMenuItemArrow>
+      </MobileMenuItemTitle>
+      <AnimatePresence>
+        {isExpanded && (
+          <MobileSubItems
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.2 }}
+          >
+            {children}
+          </MobileSubItems>
+        )}
+      </AnimatePresence>
+    </MobileMenuItem>
+  )
+}
 
 const MobileNavigationMenuStyled = styled(motion.div)`
   position: fixed;
@@ -89,6 +174,7 @@ const MobileNavigationMenuStyled = styled(motion.div)`
   height: 100vh;
   background-color: ${({ theme }) => theme.bgPrimary};
   z-index: 10000; // Terrible way to do this, but it would require a lot of rework on all other places that use z-index
+  overflow: auto;
 `
 
 export default NavigationMenu
@@ -392,4 +478,57 @@ const DrawerItemTitle = styled.div`
   font-size: var(--fontSize-18);
   color: ${({ theme }) => theme.textTertiary};
   padding-top: 24px;
+`
+
+const MobileMenuItems = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  margin-top: 20px;
+`
+
+const MobileMenuItem = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+`
+
+const MobileMenuItemTitle = styled.div`
+  font-size: var(--fontSize-18);
+  color: ${({ theme }) => theme.textSecondary};
+  padding: 10px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &:hover {
+    color: ${({ theme }) => theme.textPrimary};
+  }
+`
+
+const MobileMenuItemArrow = styled.div`
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  color: ${({ theme }) => theme.textSecondary};
+`
+
+const MobileSubItems = styled(motion.div)`
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  gap: 10px;
+  overflow: hidden;
+`
+
+const MobileSubItem = styled.div`
+  padding: 8px 0;
+`
+
+const MobileSubItemTitle = styled.div`
+  font-size: var(--fontSize-16);
+  color: ${({ theme }) => theme.textTertiary};
+  text-transform: uppercase;
 `
