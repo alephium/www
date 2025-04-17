@@ -2,8 +2,9 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { graphql, Link, useStaticQuery } from 'gatsby'
 import throttle from 'lodash/throttle'
 import { ReactNode, useEffect, useRef, useState } from 'react'
+import { IconType } from 'react-icons'
 import { RiTranslate2 } from 'react-icons/ri'
-import { RiArrowDropDownLine, RiArrowDropUpLine, RiMenu3Fill } from 'react-icons/ri'
+import { RiArrowDropDownLine, RiArrowDropUpLine, RiCloseLine, RiMenu3Fill } from 'react-icons/ri'
 import styled, { css, useTheme } from 'styled-components'
 
 import useOnClickOutside from '../hooks/useOnClickOutside'
@@ -24,6 +25,7 @@ const NavigationMenu = ({ className, floating = true }: NavigationMenuProps) => 
   const scrollThreshold = useRef(0)
 
   const [isHidden, setIsHidden] = useState(false)
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = throttle(() => {
@@ -49,19 +51,45 @@ const NavigationMenu = ({ className, floating = true }: NavigationMenuProps) => 
   }, [])
 
   return (
-    <NavigationWrapper isHidden={isHidden} floating={floating}>
-      <NavigationMenuStyled className={className}>
-        <div className="nav-item">
-          <LinkStyled to="/" title="Go to homepage">
-            <LogoTextStyled />
-          </LinkStyled>
-        </div>
-        <NavigationItems className="nav-end" />
-        <MobileMenu />
-      </NavigationMenuStyled>
-    </NavigationWrapper>
+    <>
+      <NavigationWrapper isHidden={isHidden} floating={floating}>
+        <NavigationMenuStyled className={className}>
+          <div className="nav-item">
+            <LinkStyled to="/" title="Go to homepage">
+              <LogoTextStyled />
+            </LinkStyled>
+          </div>
+          <NavigationItems className="nav-end" />
+          <ToggleMobileNavButton onClick={() => setIsMobileNavOpen(true)} Icon={RiMenu3Fill} />
+        </NavigationMenuStyled>
+      </NavigationWrapper>
+      <AnimatePresence>
+        {isMobileNavOpen && <MobileNavigationMenu onCloseClick={() => setIsMobileNavOpen(false)} />}
+      </AnimatePresence>
+    </>
   )
 }
+
+const MobileNavigationMenu = ({ onCloseClick }: { onCloseClick: () => void }) => (
+  <MobileNavigationMenuStyled initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+    <NavigationWrapper isHidden={false} floating>
+      <NavigationMenuStyled>
+        <NavigationItems className="nav-end" />
+        <ToggleMobileNavButton onClick={onCloseClick} Icon={RiCloseLine} />
+      </NavigationMenuStyled>
+    </NavigationWrapper>
+  </MobileNavigationMenuStyled>
+)
+
+const MobileNavigationMenuStyled = styled(motion.div)`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: ${({ theme }) => theme.bgPrimary};
+  z-index: 10000; // Terrible way to do this, but it would require a lot of rework on all other places that use z-index
+`
 
 export default NavigationMenu
 
@@ -106,25 +134,16 @@ const NavigationItems = ({ className }: { className?: string }) => {
   )
 }
 
-const MobileMenu = () => {
-  const [isOpen, setIsOpen] = useState(false)
-  const ref = useRef(null)
-
-  useOnClickOutside(ref, () => setIsOpen(false))
-
-  return (
-    <MobileMenuStyled ref={ref}>
-      <RiMenu3Fill size={20} style={{ cursor: 'pointer' }} onClick={() => setIsOpen(!isOpen)} />
-      <AnimatePresence>
-        {isOpen && (
-          <MobileNavContainer initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-            <MobileNav />
-          </MobileNavContainer>
-        )}
-      </AnimatePresence>
-    </MobileMenuStyled>
-  )
+interface ToggleMobileNavButtonProps {
+  onClick: () => void
+  Icon: IconType
 }
+
+const ToggleMobileNavButton = ({ onClick, Icon }: ToggleMobileNavButtonProps) => (
+  <ToggleMobileNavButtonStyled onClick={onClick}>
+    <Icon size={20} style={{ cursor: 'pointer' }} />
+  </ToggleMobileNavButtonStyled>
+)
 interface NavigationDrawerProps {
   title?: string
   Icon?: ReactNode
@@ -275,43 +294,18 @@ const NavLink = styled(SimpleLink)`
   ${LinkStyle};
 `
 
-const MobileMenuStyled = styled.div`
+const ToggleMobileNavButtonStyled = styled.div`
   position: relative;
   display: none;
   justify-content: center;
   align-items: center;
-  margin-right: 12px;
+
+  margin-left: auto;
+  padding-right: 30px;
+  margin-right: -30px;
 
   @media ${deviceBreakPoints.ipad} {
     display: flex;
-  }
-`
-
-const MobileNavContainer = styled(motion.div)``
-
-const MobileNav = styled(NavigationItems)`
-  background-color: rgba(30, 30, 30, 0.8);
-  backdrop-filter: blur(24px);
-  min-width: 150px;
-  border-radius: 20px;
-  position: absolute;
-  top: 50px;
-  display: flex;
-  flex-direction: column;
-  right: 0px;
-  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.9);
-  flex: 1;
-
-  > * {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 18px 12px !important;
-
-    &:not(:last-child) {
-      border-bottom: 1px solid ${({ theme }) => theme.borderPrimary};
-    }
   }
 `
 
