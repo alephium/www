@@ -223,12 +223,16 @@ const CustomPage = (props: PageProps) => {
               </Grid>
             </SubheaderContent>
 
-            <TextElement isCentered>
-              <h3>Guides and tutorials</h3>
-              <Button url="https://docs.alephium.org/ralph">Ralph Language</Button>
-              <Button url="https://docs.alephium.org/sdk">SDK</Button>
-              <Button url="https://www.youtube.com/playlist?list=PL8q8n0BHJS1PWP7t8ABECYdOaPM-hJmjx">Tutorials</Button>
-            </TextElement>
+            <SubheaderContent>
+              <TextElement isCentered>
+                <h3>Guides and tutorials</h3>
+                <Button url="https://docs.alephium.org/ralph">Ralph Language</Button>
+                <Button url="https://docs.alephium.org/sdk">SDK</Button>
+                <Button url="https://www.youtube.com/playlist?list=PL8q8n0BHJS1PWP7t8ABECYdOaPM-hJmjx">
+                  Tutorials
+                </Button>
+              </TextElement>
+            </SubheaderContent>
           </SubpageSection>
 
           <SectionDivider />
@@ -247,10 +251,13 @@ const CustomPage = (props: PageProps) => {
                 <li>Easy setup and quick start</li>
               </ul>
             </TextElement>
-            <TextElement isCentered>
-              <h3>Ready to mine?</h3>
-              <Button url="https://docs.alephium.org/mining">Get started</Button>
-            </TextElement>
+
+            <SubheaderContent>
+              <TextElement isCentered>
+                <h3>Ready to mine?</h3>
+                <Button url="https://docs.alephium.org/mining">Get started</Button>
+              </TextElement>
+            </SubheaderContent>
           </SubpageSection>
 
           <SectionDivider />
