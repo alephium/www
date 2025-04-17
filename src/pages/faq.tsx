@@ -1,9 +1,9 @@
 import { graphql, PageProps, useStaticQuery } from 'gatsby'
+import styled from 'styled-components'
 
 import Accordion from '../components/Accordion'
 import Button from '../components/Button'
 import Page from '../components/customPageComponents/Page'
-import SubheaderContent from '../components/customPageComponents/SubheaderContent'
 import SubpageHeroSection from '../components/customPageComponents/SubpageImageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
@@ -43,11 +43,11 @@ const CustomPage = (props: PageProps) => {
           <SectionDivider />
 
           <SubpageSection>
-            <TextElement>
-              <h2>Chain Data</h2>
-            </TextElement>
+            <AccordionGroup>
+              <TextElement>
+                <h2>Chain Data</h2>
+              </TextElement>
 
-            <SubheaderContent>
               <Accordion title="How can I check wallet balances and top holders?">
                 <p>
                   Check wallet balances via the Alephium Explorer. You can also view the top 256 addresses using
@@ -72,13 +72,13 @@ const CustomPage = (props: PageProps) => {
               <Accordion title="What is the smallest unit of ALPH?">
                 <p>The smallest denomination of ALPH is called Phi, where 1 ALPH = 10¹⁸ Phi.</p>
               </Accordion>
-            </SubheaderContent>
+            </AccordionGroup>
 
-            <TextElement>
-              <h2>Wallet & Transactions</h2>
-            </TextElement>
+            <AccordionGroup>
+              <TextElement>
+                <h2>Wallet & Transactions</h2>
+              </TextElement>
 
-            <SubheaderContent>
               <Accordion title="What wallets are available for Alephium?">
                 <p>Alephium offers:</p>
                 <ul>
@@ -142,13 +142,13 @@ const CustomPage = (props: PageProps) => {
                   <SimpleLink url="https://www.coingecko.com/en/coins/alephium#markets">more ALPH markets</SimpleLink>.
                 </p>
               </Accordion>
-            </SubheaderContent>
+            </AccordionGroup>
 
-            <TextElement>
-              <h2>Development</h2>
-            </TextElement>
+            <AccordionGroup>
+              <TextElement>
+                <h2>Development</h2>
+              </TextElement>
 
-            <SubheaderContent>
               <Accordion title="Where can I find developer resources?">
                 <ul>
                   <li>
@@ -191,13 +191,13 @@ const CustomPage = (props: PageProps) => {
                   developers.
                 </p>
               </Accordion>
-            </SubheaderContent>
+            </AccordionGroup>
 
-            <TextElement>
-              <h2>Mining</h2>
-            </TextElement>
+            <AccordionGroup>
+              <TextElement>
+                <h2>Mining</h2>
+              </TextElement>
 
-            <SubheaderContent>
               <Accordion title="How many ALPH are mined per day?">
                 <p>
                   Approximately 61,992 ALPH are mined daily, depending on the block reward, which adjusts dynamically.
@@ -224,17 +224,17 @@ const CustomPage = (props: PageProps) => {
               </Accordion>
               <Accordion title="Where can I find more resources about Alephium mining?">
                 <p>
-                  More information and guides about mining can be found here. //leads to
-                  https://docs.alephium.org/mining/
+                  More information and guides about mining can be found in the{' '}
+                  <SimpleLink url="https://docs.alephium.org/mining/">mining docs</SimpleLink>.
                 </p>
               </Accordion>
-            </SubheaderContent>
+            </AccordionGroup>
 
-            <TextElement>
-              <h2>Miscellaneous</h2>
-            </TextElement>
+            <AccordionGroup>
+              <TextElement>
+                <h2>Miscellaneous</h2>
+              </TextElement>
 
-            <SubheaderContent>
               <Accordion title="What is the meaning behind Alephium’s name?">
                 <p>
                   Alephium derives from “Aleph”, a mathematical symbol representing the cardinality of infinite sets,
@@ -258,13 +258,13 @@ const CustomPage = (props: PageProps) => {
               <Accordion title="Where is Alephium listed?">
                 <p>Check CoinMarketCap and CoinGecko for updated exchange listings.</p>
               </Accordion>
-            </SubheaderContent>
+            </AccordionGroup>
 
-            <TextElement>
-              <h2>Bounty Program</h2>
-            </TextElement>
+            <AccordionGroup>
+              <TextElement>
+                <h2>Bounty Program</h2>
+              </TextElement>
 
-            <SubheaderContent>
               <Accordion title="What is the Alephium Bounty Program?">
                 <p>
                   The Alephium Bounty Program is a community-driven initiative that rewards individuals for contributing
@@ -345,13 +345,13 @@ const CustomPage = (props: PageProps) => {
               <Accordion title="What if I have a question that isn't answered here?">
                 <p>Please reach out to us on Discord or Telegram. We're happy to answer any questions you may have.</p>
               </Accordion>
-            </SubheaderContent>
+            </AccordionGroup>
 
-            <TextElement>
-              <h2>Ambassador Program</h2>
-            </TextElement>
+            <AccordionGroup>
+              <TextElement>
+                <h2>Ambassador Program</h2>
+              </TextElement>
 
-            <SubheaderContent>
               <Accordion title="Who can become an Alephium Ambassador?">
                 <p>
                   Anyone with a passion for blockchain and a desire to contribute to the Alephium ecosystem can apply.
@@ -372,7 +372,7 @@ const CustomPage = (props: PageProps) => {
                   Ambassadors are rewarded with exclusive swag, ALPH coins, opportunities to attend events, and more.
                 </p>
               </Accordion>
-            </SubheaderContent>
+            </AccordionGroup>
           </SubpageSection>
 
           <SectionDivider />
@@ -392,3 +392,9 @@ const CustomPage = (props: PageProps) => {
 }
 
 export default CustomPage
+
+const AccordionGroup = styled.div`
+  &:not(:last-child) {
+    margin-bottom: var(--spacing-8);
+  }
+`
