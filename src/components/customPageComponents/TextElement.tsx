@@ -7,6 +7,7 @@ export interface TextElementProps {
   isBodySmall?: boolean
   isCentered?: boolean
   className?: string
+  noHeadingsMargins?: boolean
 }
 
 const TextElement = styled.div<TextElementProps>`
@@ -27,6 +28,12 @@ const TextElement = styled.div<TextElementProps>`
     &:first-child {
       margin-top: 0;
     }
+
+    ${({ noHeadingsMargins }) =>
+      noHeadingsMargins &&
+      css`
+        margin: 0;
+      `}
   }
 
   > h1 {
