@@ -9,6 +9,7 @@ const SideBySide = styled.div<{ reverseOnMobile?: boolean }>`
 
   > * {
     flex: 1;
+    min-width: 400px;
   }
 
   + div {
@@ -17,6 +18,11 @@ const SideBySide = styled.div<{ reverseOnMobile?: boolean }>`
 
   @media ${deviceBreakPoints.mobile} {
     flex-direction: ${({ reverseOnMobile }) => (reverseOnMobile ? 'column-reverse' : 'column')};
+    align-items: flex-start;
+
+    > * {
+      min-width: auto;
+    }
   }
 `
 
