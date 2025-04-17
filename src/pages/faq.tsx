@@ -262,7 +262,7 @@ const CustomPage = (props: PageProps) => {
 
             <AccordionGroup>
               <TextElement>
-                <h2>Bounty Program</h2>
+                <h2 id="bounty-program">Bounty Program</h2>
               </TextElement>
 
               <Accordion title="What is the Alephium Bounty Program?">
