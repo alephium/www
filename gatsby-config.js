@@ -140,14 +140,15 @@ module.exports = {
         directives: {
           'style-src': "'self' 'unsafe-inline' https://www.gstatic.com",
           'script-src':
-            "'self' 'unsafe-inline' 'unsafe-eval' https://gc.zgo.at https://prod.spline.design https://translate.googleapis.com https://translate.google.com https://translate-pa.googleapis.com https://cdn.usefathom.com",
+            "'self' 'unsafe-inline' 'unsafe-eval' https://gc.zgo.at https://translate.googleapis.com https://translate.google.com https://translate-pa.googleapis.com https://cdn.usefathom.com",
           'default-src': "'none'",
           'manifest-src': "'self'",
           'connect-src':
-            "'self' backend.mainnet.alephium.org api.github.com alephium.goatcounter.com https://prod.spline.design https://api.coingecko.com https://alph-richlist.vercel.app https://api.llama.fi https://translate.googleapis.com https://translate-pa.googleapis.com https://*.usefathom.com",
+            "'self' backend.mainnet.alephium.org api.github.com https://api.coingecko.com https://alph-richlist.vercel.app https://api.llama.fi https://translate.googleapis.com https://translate-pa.googleapis.com https://*.usefathom.com https://publicapi.alph.land",
           'img-src':
-            "'self' https://cdn-images-1.medium.com https://prod.spline.design https://pbs.twimg.com/ https://media.licdn.com https://assets.coingecko.com https://fonts.gstatic.com https://www.gstatic.com https://www.google.com https://translate.googleapis.com https://translate.google.com data: https://alephium.goatcounter.com blob: https://www2.alephium.org blob: https://www.alephium.org",
-          'frame-ancestors': "'none'"
+            "'self' https://cdn-images-1.medium.com https://pbs.twimg.com/ https://media.licdn.com https://assets.coingecko.com https://fonts.gstatic.com https://www.gstatic.com https://www.google.com https://translate.googleapis.com https://translate.google.com data: https:/ blob: https://www2.alephium.org blob: https://www.alephium.org",
+          'frame-ancestors': "'none'",
+          'media-src': "'self'"
         }
       }
     },
