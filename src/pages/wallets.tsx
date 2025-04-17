@@ -30,8 +30,9 @@ const CustomPage = (props: PageProps) => {
     <Page
       {...props}
       seo={{
-        title: '',
-        description: ''
+        title: 'Alephium Wallets | Securely Manage Your ALPH',
+        description:
+          'Choose from desktop, browser, or mobile wallets to manage ALPH and interact with dApps on Alephium. Secure, fast, and easy to use.'
       }}
       content={
         <>

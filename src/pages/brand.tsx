@@ -27,8 +27,9 @@ const CustomPage = (props: PageProps) => {
     <Page
       {...props}
       seo={{
-        title: '',
-        description: ''
+        title: 'Alephium Brand Assets | Logos, Fonts, Colors & More',
+        description:
+          'Access Alephium’s official brand resources including logos, colors, fonts, and guidelines. Start shaping the future of Web3 with us.'
       }}
       content={
         <>

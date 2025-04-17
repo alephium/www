@@ -20,7 +20,10 @@ interface PrivacyPolicyProps extends PageProps {
 
 const PrivacyPolicy = (props: PrivacyPolicyProps) => (
   <>
-    <Seo title="" description="" />
+    <Seo
+      title="Privacy Policy | Alephium"
+      description="Learn how Alephium protects your data and respects your privacy across our website, wallets, and other services."
+    />
     <ThemeProvider theme={darkTheme}>
       <GlobalStyle />
     </ThemeProvider>

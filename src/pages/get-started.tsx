@@ -47,8 +47,9 @@ const CustomPage = (props: PageProps) => {
     <Page
       {...props}
       seo={{
-        title: '',
-        description: ''
+        title: 'Get Started with Alephium | Build, Mine, Explore',
+        description:
+          'Begin your Alephium journey - whether you want to build, mine, or explore. Learn everything you need to join the future of decentralized finance.'
       }}
       content={
         <>

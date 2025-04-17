@@ -20,7 +20,10 @@ interface TermsAndConditionsProps extends PageProps {
 
 const TermsAndConditions = (props: TermsAndConditionsProps) => (
   <>
-    <Seo title="" description="" />
+    <Seo
+      title="Terms of Use | Alephium Tools"
+      description="Review the terms and conditions for using Alephium’s wallets, explorer, and bridge. Transparency and user control come first."
+    />
     <ThemeProvider theme={darkTheme}>
       <GlobalStyle />
     </ThemeProvider>

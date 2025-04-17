@@ -25,8 +25,9 @@ const CustomPage = (props: PageProps) => {
     <Page
       {...props}
       seo={{
-        title: '',
-        description: ''
+        title: 'Alephium FAQ | Everything You Need to Know',
+        description:
+          'Got questions? We’ve got answers. Explore FAQs about mining, wallets, smart contracts, and more on Alephium’s growing ecosystem.'
       }}
       content={
         <>

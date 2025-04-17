@@ -2,9 +2,9 @@ module.exports = {
   graphqlTypegen: true,
   siteMetadata: {
     siteUrl: 'https://alephium.org',
-    title: 'Alephium: A new paradigm',
+    title: 'Alephium | Scalable Proof-of-Work Blockchain for Real-World Apps',
     description:
-      "Alephium is a sharded L1 blockchain scaling and improving on Bitcoin's PoW  & UTXO. A highly performant, secure, and energy efficient network for DeFi & dApps.",
+      'Alephium is the next generation PoW Layer 1 with smart contracts. Built for speed, security, and sustainability. Start building or join the community today.',
     social: {
       twitter: 'alephium'
     }

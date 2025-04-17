@@ -26,8 +26,9 @@ const CustomPage = (props: PageProps) => {
     <Page
       {...props}
       seo={{
-        title: '',
-        description: ''
+        title: 'Alephium Ambassador Program | Grow, Earn, Lead',
+        description:
+          'Join the Alephium Ambassador Program and become a voice for secure, scalable blockchain tech. Earn rewards and build your network.'
       }}
       content={
         <>

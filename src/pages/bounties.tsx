@@ -26,8 +26,9 @@ const CustomPage = (props: PageProps) => {
     <Page
       {...props}
       seo={{
-        title: '',
-        description: ''
+        title: 'Alephium Bounty Program | Earn ALPH for Contributions',
+        description:
+          'Get rewarded for contributing to Alephium. Submit code, content, or ideas and earn ALPH through our open bounty program.'
       }}
       content={
         <>
