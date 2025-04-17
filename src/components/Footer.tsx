@@ -92,6 +92,7 @@ export default Footer
 const PageSectionContainerBottom = styled(PageSectionContainer)`
   display: flex;
   align-items: center;
+  flex-direction: row;
   padding: var(--spacing-12) 0 0;
 
   @media ${deviceBreakPoints.mobile} {
