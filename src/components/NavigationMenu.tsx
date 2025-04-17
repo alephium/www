@@ -82,9 +82,8 @@ const MobileNavigationMenu = ({ onCloseClick }: { onCloseClick: () => void }) =>
 
   return (
     <MobileNavigationMenuStyled initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-      <NavigationWrapper isHidden={false} floating>
+      <NavigationWrapper isHidden={false} floating={false}>
         <NavigationMenuStyled>
-          <NavigationItems className="nav-end" />
           <ToggleMobileNavButton onClick={onCloseClick} Icon={RiCloseLine} />
         </NavigationMenuStyled>
       </NavigationWrapper>
@@ -485,7 +484,7 @@ const MobileMenuItems = styled.div`
   flex-direction: column;
   padding: 20px;
   gap: 20px;
-  margin-top: 20px;
+  margin-top: 100px;
 `
 
 const MobileMenuItem = styled.div`
