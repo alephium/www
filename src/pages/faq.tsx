@@ -267,10 +267,10 @@ const CustomPage = (props: PageProps) => {
 
               <Accordion title="What is the Alephium Bounty Program?">
                 <p>
-                  The Alephium Bounty Program is a community-driven initiative that rewards individuals for contributing
-                  to the Alephium project. We believe in the power of open-source collaboration and recognize that
-                  valuable contributions come from diverse sources. This program is our way of saying thank you and
-                  fostering a thriving community. //”The Alephium Bounty Program” leads to bounty page
+                  The <SimpleLink url="/bounties">Alephium Bounty Program</SimpleLink> is a community-driven initiative
+                  that rewards individuals for contributing to the Alephium project. We believe in the power of
+                  open-source collaboration and recognize that valuable contributions come from diverse sources. This
+                  program is our way of saying thank you and fostering a thriving community.
                 </p>
               </Accordion>
               <Accordion title="Who can participate in the Alephium Bounty Program?">
@@ -299,9 +299,8 @@ const CustomPage = (props: PageProps) => {
               </Accordion>
               <Accordion title="Where can I find available bounties?">
                 <p>
-                  Available bounties will be listed on alephium.org/bounties. Each bounty will clearly describe the
-                  requirements, deliverables, and the reward offered. //please add a direct url to the bounties page
-                  once we have it
+                  Available bounties will be listed on <SimpleLink url="/bounties">alephium.org/bounties</SimpleLink>.
+                  Each bounty will clearly describe the requirements, deliverables, and the reward offered.
                 </p>
               </Accordion>
               <Accordion title="How are bounty rewards determined?">
