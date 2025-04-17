@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { graphql, Link, useStaticQuery } from 'gatsby'
-import { ReactNode, useRef, useState } from 'react'
+import throttle from 'lodash/throttle'
+import { ReactNode, useEffect, useRef, useState } from 'react'
 import { RiTranslate2 } from 'react-icons/ri'
 import { RiArrowDropDownLine, RiArrowDropUpLine, RiMenu3Fill } from 'react-icons/ri'
 import styled, { css, useTheme } from 'styled-components'
@@ -14,23 +15,54 @@ import SimpleLink from './SimpleLink'
 import TranslateComponent from './TranslateComponent'
 
 interface NavigationMenuProps {
-  topOffset?: number
   className?: string
 }
 
-const NavigationMenu = ({ topOffset, className }: NavigationMenuProps) => (
-  <NavigationWrapper>
-    <NavigationMenuStyled className={className}>
-      <div className="nav-item">
-        <LinkStyled to="/" title="Go to homepage">
-          <LogoTextStyled />
-        </LinkStyled>
-      </div>
-      <NavigationItems className="nav-end" />
-      <MobileMenu />
-    </NavigationMenuStyled>
-  </NavigationWrapper>
-)
+const NavigationMenu = ({ className }: NavigationMenuProps) => {
+  const lastScrollY = useRef(0)
+  const scrollThreshold = useRef(0)
+
+  const [isHidden, setIsHidden] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = throttle(() => {
+      const currentScrollY = window.scrollY
+      const scrollDelta = currentScrollY - lastScrollY.current
+
+      if (currentScrollY < lastScrollY.current) {
+        setIsHidden(false)
+        scrollThreshold.current = 0
+      } else if (scrollDelta > 0) {
+        if (scrollThreshold.current > 50) {
+          setIsHidden(true)
+        }
+        scrollThreshold.current += scrollDelta
+      }
+
+      lastScrollY.current = currentScrollY
+    }, 50)
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  return (
+    <NavigationWrapper isHidden={isHidden}>
+      <NavigationMenuStyled className={className}>
+        <div className="nav-item">
+          <LinkStyled to="/" title="Go to homepage">
+            <LogoTextStyled />
+          </LinkStyled>
+        </div>
+        <NavigationItems className="nav-end" />
+        <MobileMenu />
+      </NavigationMenuStyled>
+    </NavigationWrapper>
+  )
+}
+
+export default NavigationMenu
 
 const NavigationItems = ({ className }: { className?: string }) => {
   const theme = useTheme()
@@ -126,8 +158,6 @@ const NavigationDrawer = ({ title, Icon, className, children }: NavigationDrawer
   )
 }
 
-export default NavigationMenu
-
 export const navigationMenuQuery = graphql`
   query NavigationMenu {
     navmenu: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/navigation-menu.md/" } }) {
@@ -147,15 +177,16 @@ export const navigationMenuQuery = graphql`
   }
 `
 
-const NavigationWrapper = styled.div`
+const NavigationWrapper = styled.div<{ isHidden: boolean }>`
   position: fixed;
-  top: 30px;
+  top: ${({ isHidden }) => (isHidden ? '-100px' : '30px')};
   right: 0;
   left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 10000;
+  transition: top 0.3s ease-in-out;
 
   @media ${deviceBreakPoints.ipad} {
     padding-right: 30px;
