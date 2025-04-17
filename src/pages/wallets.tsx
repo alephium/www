@@ -2,7 +2,7 @@ import { graphql, PageProps, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 
 import Button from '../components/Button'
-import Grid from '../components/customPageComponents/Grid'
+import CardsRow from '../components/customPageComponents/CardsRow'
 import Page from '../components/customPageComponents/Page'
 import SideBySide from '../components/customPageComponents/SideBySide'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
@@ -54,7 +54,7 @@ const CustomPage = (props: PageProps) => {
             </TextElement>
 
             <SubheaderContent>
-              <Grid columns={3}>
+              <CardsRow>
                 <TextCard>
                   <h3>Enhanced Security</h3>
                   <p>
@@ -76,7 +76,7 @@ const CustomPage = (props: PageProps) => {
                     ready to explore the Alephium ecosystem.
                   </p>
                 </TextCard>
-              </Grid>
+              </CardsRow>
             </SubheaderContent>
           </SubpageSection>
 
