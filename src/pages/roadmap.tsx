@@ -21,6 +21,7 @@ const CustomPage = (props: PageProps) => {
   return (
     <Page
       {...props}
+      floatingMenu={false}
       seo={{
         title: '',
         description: ''

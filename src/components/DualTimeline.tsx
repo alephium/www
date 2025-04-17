@@ -398,9 +398,9 @@ const Entries = styled.div`
 `
 
 const yearSmallMobileBreakpoint = '(max-width: 510px)'
-const yearRowPositionDesktop = '80px'
-const yearRowPositionMobile = '70px'
-const yearRowPositionSmallMobile = '110px'
+const yearRowPositionDesktop = '0px'
+const yearRowPositionMobile = '0px'
+const yearRowPositionSmallMobile = '0px'
 
 const YearHeader = styled.div`
   position: sticky;

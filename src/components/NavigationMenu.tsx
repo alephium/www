@@ -15,10 +15,11 @@ import SimpleLink from './SimpleLink'
 import TranslateComponent from './TranslateComponent'
 
 interface NavigationMenuProps {
+  floating?: boolean
   className?: string
 }
 
-const NavigationMenu = ({ className }: NavigationMenuProps) => {
+const NavigationMenu = ({ className, floating = true }: NavigationMenuProps) => {
   const lastScrollY = useRef(0)
   const scrollThreshold = useRef(0)
 
@@ -48,7 +49,7 @@ const NavigationMenu = ({ className }: NavigationMenuProps) => {
   }, [])
 
   return (
-    <NavigationWrapper isHidden={isHidden}>
+    <NavigationWrapper isHidden={isHidden} floating={floating}>
       <NavigationMenuStyled className={className}>
         <div className="nav-item">
           <LinkStyled to="/" title="Go to homepage">
@@ -177,7 +178,7 @@ export const navigationMenuQuery = graphql`
   }
 `
 
-const NavigationWrapper = styled.div<{ isHidden: boolean }>`
+const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean }>`
   position: fixed;
   top: ${({ isHidden }) => (isHidden ? '-100px' : '30px')};
   right: 0;
@@ -187,6 +188,14 @@ const NavigationWrapper = styled.div<{ isHidden: boolean }>`
   justify-content: center;
   z-index: 10000;
   transition: top 0.3s ease-in-out;
+
+  ${({ floating }) =>
+    !floating &&
+    css`
+      position: static;
+      margin-top: 30px;
+      margin-bottom: -100px;
+    `}
 
   @media ${deviceBreakPoints.ipad} {
     padding-right: 30px;
