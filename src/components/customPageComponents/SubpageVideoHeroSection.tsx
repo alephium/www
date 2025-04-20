@@ -2,7 +2,7 @@ import { ReactNode, useRef } from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 
 import { darkTheme } from '../../styles/themes'
-import video from '../../videos/lake-bridge-pan.mp4'
+import video from '../../videos/lake-pan-scrub.mp4'
 import SubpageHeroSection from './SubpageHeroSection'
 
 interface SubpageVideoHeroSectionProps {
@@ -12,29 +12,27 @@ interface SubpageVideoHeroSectionProps {
 const SubpageVideoHeroSection = ({ children }: SubpageVideoHeroSectionProps) => {
   const innerRef = useRef<HTMLElement>(null)
   const videoRef = useRef<HTMLVideoElement>(null)
-  const scheduledRef = useRef(false)
-  const lastUpdateRef = useRef(0)
 
-  const handleMouseMove = (e: React.MouseEvent<HTMLElement>) => {
-    const now = performance.now()
-    if (now - lastUpdateRef.current < 100) return
-    lastUpdateRef.current = now
+  const rafIdRef = useRef<number | null>(null)
+  const pendingTimeRef = useRef<number>(0)
 
-    if (!videoRef.current) return
+  const handlePointerMove = (e: React.PointerEvent<HTMLElement>) => {
+    const video = videoRef.current
+    if (!video || !video.duration) return
 
-    const bounds = e.currentTarget.getBoundingClientRect()
-    const relativeX = e.clientX - bounds.left
-    const ratio = relativeX / bounds.width
-    const duration = videoRef.current.duration
+    const { left, width } = e.currentTarget.getBoundingClientRect()
+    const ratio = (e.clientX - left) / width
+    pendingTimeRef.current = Math.max(0, Math.min(1, ratio)) * video.duration
 
-    if (!scheduledRef.current && duration) {
-      scheduledRef.current = true
-
-      window.requestAnimationFrame(() => {
-        if (videoRef.current) {
-          videoRef.current.currentTime = ratio * duration
+    if (rafIdRef.current == null) {
+      rafIdRef.current = window.requestAnimationFrame(() => {
+        const seekTo = pendingTimeRef.current
+        if (typeof (video as any).fastSeek === 'function') {
+          ;(video as any).fastSeek(seekTo)
+        } else {
+          video.currentTime = seekTo
         }
-        scheduledRef.current = false
+        rafIdRef.current = null
       })
     }
   }
@@ -43,7 +41,7 @@ const SubpageVideoHeroSection = ({ children }: SubpageVideoHeroSectionProps) => 
     <ThemeProvider theme={darkTheme}>
       <SubpageHeroSection
         ref={innerRef}
-        onMouseMove={handleMouseMove}
+        onPointerMove={handlePointerMove}
         mediaContent={
           <VideoContainer ref={videoRef} muted playsInline preload="auto">
             <source src={video} type="video/mp4" />
