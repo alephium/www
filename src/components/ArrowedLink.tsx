@@ -9,7 +9,6 @@ export interface ArrowedLinkProps {
   IconComponent?: ElementType
   url?: string
   text?: string
-  openModal?: (x: boolean) => void
   altColor?: boolean
   onlyText?: boolean
   emoji?: string
@@ -22,7 +21,6 @@ const ArrowedLink = ({
   children,
   IconComponent,
   url,
-  openModal,
   altColor = false,
   emoji,
   trackingName
@@ -34,7 +32,6 @@ const ArrowedLink = ({
     <SimpleLinkStyled
       className={className}
       url={url}
-      openModal={openModal}
       color={color}
       trackingName={trackingName}
       altColor={altColor}

@@ -26,8 +26,9 @@ const CustomPage = (props: PageProps) => {
     <Page
       {...props}
       seo={{
-        title: '',
-        description: ''
+        title: 'Alephium Bounty Program | Earn ALPH for Contributions',
+        description:
+          'Get rewarded for contributing to Alephium. Submit code, content, or ideas and earn ALPH through our open bounty program.'
       }}
       content={
         <>
@@ -179,8 +180,8 @@ const CustomPage = (props: PageProps) => {
             <TextElement>
               <h2>Need More Info?</h2>
               <p>
-                For additional details, check out our FAQ section or reach out to our team. //”FAQ section” leads to
-                anchor FAQ-bounty on FAQ page
+                For additional details, check out our <SimpleLink url="/faq#bounty-program">FAQ section</SimpleLink> or
+                reach out to our team.
               </p>
               <Button url="/contact">Contact us</Button>
               <Button url="/dicord">Join the discussion</Button>

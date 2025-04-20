@@ -84,7 +84,6 @@ const cardStyles = css`
   text-decoration: none;
   padding: 20px;
   transition: all 0.1s ease-out;
-  overflow: hidden;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

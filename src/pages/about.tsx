@@ -19,8 +19,8 @@ const CustomPage = (props: PageProps) => {
     <Page
       {...props}
       seo={{
-        title: '',
-        description: ''
+        title: 'About Alephium | Building the Future of Proof-of-Work',
+        description: "Learn about Alephium's mission, vision, and the people building real decentralized tech."
       }}
       content={
         <>

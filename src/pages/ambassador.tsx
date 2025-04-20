@@ -26,8 +26,9 @@ const CustomPage = (props: PageProps) => {
     <Page
       {...props}
       seo={{
-        title: '',
-        description: ''
+        title: 'Alephium Ambassador Program | Grow, Earn, Lead',
+        description:
+          'Join the Alephium Ambassador Program and become a voice for secure, scalable blockchain tech. Earn rewards and build your network.'
       }}
       content={
         <>
@@ -111,24 +112,21 @@ const CustomPage = (props: PageProps) => {
                   <li>Moderate Alephium's social channels and forums.</li>
                   <li>Translate content and help grow Alephium's global presence.</li>
                 </ul>
-              </TextElement>
-              <TextElement>
+
                 <h3>Educators</h3>
                 <ul>
                   <li>Create tutorials, guides, and educational content about Alephium.</li>
                   <li>Host webinars, AMAs, and live streams to spread awareness.</li>
                   <li>Mentor new community members and developers.</li>
                 </ul>
-              </TextElement>
-              <TextElement>
+
                 <h3>Content Creators</h3>
                 <ul>
                   <li>Write blogs, create videos, or design graphics about Alephium.</li>
                   <li>Share your work on social media and other platforms.</li>
                   <li>Develop creative campaigns to engage the community.</li>
                 </ul>
-              </TextElement>
-              <TextElement>
+
                 <h3>Developers</h3>
                 <ul>
                   <li>Build tools, dApps, or integrations for the Alephium ecosystem.</li>
@@ -156,22 +154,19 @@ const CustomPage = (props: PageProps) => {
                   </SimpleLink>{' '}
                   and tell us about your skills, experience, and how you’d like to contribute to Alephium.
                 </p>
-              </TextElement>
-              <TextElement>
+
                 <h3>Onboarding</h3>
                 <p>
                   If selected, you’ll receive an onboarding package with resources, guidelines, and access to the
                   Alephium Ambassador community.
                 </p>
-              </TextElement>
-              <TextElement>
+
                 <h3>Start Contributing</h3>
                 <p>
                   Begin your journey by completing tasks, participating in initiatives, and collaborating with other
                   ambassadors.
                 </p>
-              </TextElement>
-              <TextElement>
+
                 <h3>Grow and Earn</h3>
                 <p>
                   As you contribute, you’ll earn rewards, gain recognition, and unlock new opportunities within the

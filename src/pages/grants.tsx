@@ -1,7 +1,7 @@
 import { graphql, PageProps, useStaticQuery } from 'gatsby'
 
 import Button from '../components/Button'
-import Grid from '../components/customPageComponents/Grid'
+import CardsRow from '../components/customPageComponents/CardsRow'
 import Page from '../components/customPageComponents/Page'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
 import SubpageHeroSection from '../components/customPageComponents/SubpageImageHeroSection'
@@ -26,8 +26,9 @@ const CustomPage = (props: PageProps) => {
     <Page
       {...props}
       seo={{
-        title: '',
-        description: ''
+        title: 'Alephium Grants | Funding for Builders & Innovators',
+        description:
+          'Build on Alephium and get funded. Explore our grants for DeFi, NFTs, tooling, and more. Apply today to bring your idea to life.'
       }}
       content={
         <>
@@ -50,7 +51,7 @@ const CustomPage = (props: PageProps) => {
             </TextElement>
 
             <SubheaderContent>
-              <Grid columns={3}>
+              <CardsRow>
                 <TextCard>
                   <h3>Alephium Grants Fund</h3>
                   <p>
@@ -80,7 +81,7 @@ const CustomPage = (props: PageProps) => {
                     experience for all parties involved.
                   </p>
                 </TextCard>
-              </Grid>
+              </CardsRow>
             </SubheaderContent>
           </SubpageSection>
 
@@ -188,13 +189,16 @@ const CustomPage = (props: PageProps) => {
                 Apply for a Grant
               </Button>
             </TextElement>
-            <TextElement isCentered isSmall>
-              <h3>
-                Got questions? Join the discussion in our community channels or contact us directly at
-                grants@alephium.org.
-              </h3>
-              <p>Let’s build the future of decentralized technology together!</p>
-            </TextElement>
+
+            <SubheaderContent>
+              <TextElement isCentered isSmall>
+                <h3>
+                  Got questions? Join the discussion in our community channels or contact us directly at
+                  grants@alephium.org.
+                </h3>
+                <p>Let’s build the future of decentralized technology together!</p>
+              </TextElement>
+            </SubheaderContent>
           </SubpageSection>
         </>
       }

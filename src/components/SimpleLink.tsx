@@ -1,4 +1,5 @@
-import { MouseEvent, ReactNode } from 'react'
+import { Link } from 'gatsby'
+import { ReactNode } from 'react'
 import styled from 'styled-components'
 
 export interface SimpleLinkProps {
@@ -6,31 +7,21 @@ export interface SimpleLinkProps {
   url?: string | undefined | null
   text?: string
   color?: string
-  openModal?: (x: boolean) => void
   trackingName?: string
   children?: ReactNode
 }
 
-const SimpleLink = ({ className, children, url, text, openModal, trackingName }: SimpleLinkProps) => {
-  const handleOnClick = (event: MouseEvent) => {
-    if (openModal) {
-      event.preventDefault()
-      openModal(true)
-    }
-  }
+const SimpleLink = ({ className, children, url, text }: SimpleLinkProps) => {
+  const isInternalLink = url?.startsWith('/')
 
-  return openModal ? (
-    <span className={className} onClick={handleOnClick} data-goatcounter-click={trackingName}>
+  if (!url) return null
+
+  return isInternalLink ? (
+    <Link className={className} to={url}>
       {children || text}
-    </span>
+    </Link>
   ) : (
-    <a
-      className={className}
-      href={url ?? undefined}
-      target={url?.startsWith('/') ? undefined : '_blank'}
-      rel={url?.startsWith('/') ? undefined : 'noopener noreferrer'}
-      data-goatcounter-click={trackingName}
-    >
+    <a className={className} href={url} target="_blank" rel="noopener noreferrer">
       {children || text}
     </a>
   )

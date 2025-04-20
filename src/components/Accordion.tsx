@@ -62,7 +62,6 @@ const AccordionHeader = styled.div`
 `
 
 const AccordionTitle = styled.h3`
-  margin: 0;
   font-size: 1.1rem;
   font-weight: var(--fontWeight-medium);
 `
@@ -81,5 +80,5 @@ const AccordionContent = styled(motion.div)`
 
 const AccordionInner = styled.div`
   padding: var(--spacing-4);
-  background-color: ${({ theme }) => theme.bgSurface};
+  background-color: ${({ theme }) => theme.bgPrimary};
 `

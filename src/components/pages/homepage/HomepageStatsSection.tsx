@@ -76,7 +76,7 @@ const HomepageStatsSection = () => {
 
       <SubheaderContent>
         <Grid columns={2}>
-          <TextElement>
+          <TextElement noHeadingsMargins>
             <CardImageStyled src={yellowWaveIcon} rounded />
             <h3 style={{ color: theme.palette2 }}>Fast</h3>
             <TLDRSection color={theme.palette2}>
@@ -88,7 +88,7 @@ const HomepageStatsSection = () => {
               delivers <strong>fast, efficient, and reliable performance</strong> - ready to scale as adoption grows.
             </p>
           </TextElement>
-          <TextElement>
+          <TextElement noHeadingsMargins>
             <CardImageStyled src={blueTreeIcon} rounded />
             <h3 style={{ color: theme.palette3 }}>Scalable</h3>
             <TLDRSection color={theme.palette3}>
@@ -100,7 +100,7 @@ const HomepageStatsSection = () => {
               ensures that fees remain predictable and affordable - empowering developers and users alike.
             </p>
           </TextElement>
-          <TextElement>
+          <TextElement noHeadingsMargins>
             <CardImageStyled src={circlesIcon} rounded />
             <h3 style={{ color: theme.palette4 }}>Secure</h3>
             <TLDRSection color={theme.palette4}>
@@ -112,7 +112,7 @@ const HomepageStatsSection = () => {
               validators, <strong>ensuring maximum security, trustlessness, and censorship resistance.</strong>
             </p>
           </TextElement>
-          <TextElement>
+          <TextElement noHeadingsMargins>
             <CardImageStyled src={greenDropIcon} rounded />
             <h3 style={{ color: theme.palette1 }}>Sustainable</h3>
             <TLDRSection color={theme.palette1}>
@@ -124,7 +124,7 @@ const HomepageStatsSection = () => {
               <strong>one of the most sustainable and responsible blockchains</strong> built for the future.
             </p>
           </TextElement>
-          <TextElement>
+          <TextElement noHeadingsMargins>
             <CardImageStyled src={rockPileIcon} rounded />
             <h3 style={{ color: theme.palette6 }}>Programmable</h3>
             <TLDRSection color={theme.palette6}>
@@ -136,7 +136,7 @@ const HomepageStatsSection = () => {
               <strong>Ethereum-like smart contract flexibility with Bitcoin-level security.</strong>
             </p>
           </TextElement>
-          <TextElement>
+          <TextElement noHeadingsMargins>
             <CardImageStyled src={featherIcon} rounded />
             <h3 style={{ color: theme.palette5 }}>Developer-friendly</h3>
             <TLDRSection color={theme.palette5}>

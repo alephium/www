@@ -27,8 +27,9 @@ const CustomPage = (props: PageProps) => {
     <Page
       {...props}
       seo={{
-        title: '',
-        description: ''
+        title: 'Alephium Brand Assets | Logos, Fonts, Colors & More',
+        description:
+          'Access Alephium’s official brand resources including logos, colors, fonts, and guidelines. Start shaping the future of Web3 with us.'
       }}
       content={
         <>
@@ -92,8 +93,8 @@ const CustomPage = (props: PageProps) => {
               <h2>Spacing</h2>
               <p>
                 Please do not crowd the logo. When placing elements nearby, use the letter ‘u’ in the wordmark as a
-                guide for spacing. //I have stolen this from another project, please add whatever is the best practice
-                from our side
+                guide for spacing. //TODO: I have stolen this from another project, please add whatever is the best
+                practice from our side
               </p>
             </TextElement>
 

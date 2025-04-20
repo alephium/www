@@ -2,7 +2,7 @@ import { graphql, PageProps, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 
 import Button from '../components/Button'
-import Grid from '../components/customPageComponents/Grid'
+import CardsRow from '../components/customPageComponents/CardsRow'
 import Page from '../components/customPageComponents/Page'
 import SideBySide from '../components/customPageComponents/SideBySide'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
@@ -30,8 +30,9 @@ const CustomPage = (props: PageProps) => {
     <Page
       {...props}
       seo={{
-        title: '',
-        description: ''
+        title: 'Alephium Wallets | Securely Manage Your ALPH',
+        description:
+          'Choose from desktop, browser, or mobile wallets to manage ALPH and interact with dApps on Alephium. Secure, fast, and easy to use.'
       }}
       content={
         <>
@@ -53,7 +54,7 @@ const CustomPage = (props: PageProps) => {
             </TextElement>
 
             <SubheaderContent>
-              <Grid columns={3}>
+              <CardsRow>
                 <TextCard>
                   <h3>Enhanced Security</h3>
                   <p>
@@ -75,7 +76,7 @@ const CustomPage = (props: PageProps) => {
                     ready to explore the Alephium ecosystem.
                   </p>
                 </TextCard>
-              </Grid>
+              </CardsRow>
             </SubheaderContent>
           </SubpageSection>
 
@@ -180,26 +181,22 @@ const CustomPage = (props: PageProps) => {
               <TextElement>
                 <h3>1. Choose Your Wallet</h3>
                 <p>Select the wallet type that best suits your needs—desktop, browser extension, or mobile.</p>
-              </TextElement>
-              <TextElement>
+
                 <h3>2. Download and Install</h3>
                 <p>Follow the provided links to download and install the wallet on your device.</p>
-              </TextElement>
-              <TextElement>
+
                 <h3>3. Set Up Your Account</h3>
                 <p>
                   Create a new wallet by following the on-screen instructions. Ensure you securely back up your seed
                   phrase during this process.
                 </p>
-              </TextElement>
-              <TextElement>
+
                 <h3>4. Add ALPH Tokens</h3>
                 <p>
                   Deposit ALPH into your wallet by receiving tokens from an exchange, another wallet, or using the
                   in-app buy option.
                 </p>
-              </TextElement>
-              <TextElement>
+
                 <h3>5. Explore the Ecosystem</h3>
                 <p>
                   Use your wallet to interact with dApps, stake tokens, and participate in Alephium's growing ecosystem.
@@ -219,9 +216,7 @@ const CustomPage = (props: PageProps) => {
                 By choosing the Alephium wallet that aligns with your preferences, you can confidently manage your
                 assets and engage with the vibrant Alephium community.
               </p>
-            </TextElement>
 
-            <TextElement isSmall>
               <h3>Disclaimer</h3>
               <p>
                 The list of wallets does not constitute an endorsement and is not exhaustive of all wallet options

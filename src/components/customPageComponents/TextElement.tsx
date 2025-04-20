@@ -7,6 +7,7 @@ export interface TextElementProps {
   isBodySmall?: boolean
   isCentered?: boolean
   className?: string
+  noHeadingsMargins?: boolean
 }
 
 const TextElement = styled.div<TextElementProps>`
@@ -22,8 +23,17 @@ const TextElement = styled.div<TextElementProps>`
   > h4 {
     font-weight: var(--fontWeight-medium);
     color: ${({ theme }) => theme.textPrimary};
-    margin: 0;
     white-space: pre-wrap;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    ${({ noHeadingsMargins }) =>
+      noHeadingsMargins &&
+      css`
+        margin: 0;
+      `}
   }
 
   > h1 {
@@ -36,7 +46,6 @@ const TextElement = styled.div<TextElementProps>`
     font-family: 'Sentient';
     font-size: var(--fontSize-42);
     line-height: 1.2;
-    margin-bottom: var(--spacing-10);
   }
 
   > h3 {

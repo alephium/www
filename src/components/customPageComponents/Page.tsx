@@ -10,16 +10,17 @@ import Seo, { SeoProps } from '../Seo'
 
 interface CustomPageProps extends PageProps {
   content: ReactNode
+  floatingMenu?: boolean
   seo?: SeoProps
 }
 
-const Page = ({ content, seo }: CustomPageProps) => (
+const Page = ({ content, seo, floatingMenu = true }: CustomPageProps) => (
   <>
     <Seo {...seo} />
     <ThemeProvider theme={darkTheme}>
       <GlobalStyle />
       <main>
-        <NavigationMenu />
+        <NavigationMenu floating={floatingMenu} />
 
         <div>
           {content}
