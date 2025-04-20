@@ -15,6 +15,11 @@ import MobileNavigationMenu, { ToggleMobileNavButton } from './NavigationMenuMob
 import SimpleLink from './SimpleLink'
 import TranslateComponent from './TranslateComponent'
 
+const drawerVariants = {
+  closed: { opacity: 0, scaleY: 0.9, y: -6 },
+  open:   { opacity: 1, scaleY: 1,   y: 0  },
+} as const
+
 interface NavigationMenuProps {
   floating?: boolean
   className?: string
@@ -136,9 +141,16 @@ const NavigationDrawer = ({ title, Icon, className, children }: NavigationDrawer
         {title ? <DrawerTitle>{title}</DrawerTitle> : Icon ? Icon : null}
         <DrawerCarretWrapper>{isOpen ? <RiArrowDropUpLine /> : <RiArrowDropDownLine />}</DrawerCarretWrapper>
       </DrawerTitleWrapper>
-      <AnimatePresence>
+      <AnimatePresence initial={false}>
         {isOpen && (
-          <Drawer initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+          <Drawer
+            key="drawer"
+            variants={drawerVariants}
+            initial="closed"
+            animate="open"
+            exit="closed"
+            transition={{ type: 'spring', stiffness: 900, damping: 50, bounce: 0 }}
+          >
             {children}
           </Drawer>
         )}
@@ -317,6 +329,8 @@ const Drawer = styled(motion.div)`
   z-index: 1000;
   backdrop-filter: blur(24px);
   padding-bottom: 8px;
+
+  transform-origin: top center;
 
   @media ${deviceBreakPoints.ipad} {
     top: 100%;
