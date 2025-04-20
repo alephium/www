@@ -252,7 +252,8 @@ const LogoTextStyled = styled(LogoText)`
 
 const LinkStyle = css`
   font-size: var(--fontSize-18);
-  color: ${({ theme }) => theme.textSecondary};
+  font-weight: var(--fontWeight-medium);
+  color: ${({ theme }) => theme.textPrimaryVariation};
 
   &:hover {
     color: ${({ theme }) => theme.textPrimary};
@@ -309,12 +310,13 @@ const Drawer = styled(motion.div)`
   right: 0;
   min-width: 250px;
   background-color: rgba(30, 30, 30, 1);
-  border-radius: 20px;
-  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.8);
+  border-radius: var(--radius);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   z-index: 1000;
   backdrop-filter: blur(24px);
+  padding-bottom: 8px;
 
   @media ${deviceBreakPoints.ipad} {
     top: 100%;
@@ -332,18 +334,11 @@ const DrawerItem = styled.div<{ isLink: boolean }>`
     width: 100%;
   }
 
-  ${({ isLink }) =>
-    !isLink &&
-    css`
-      &:not(:first-child) {
-        border-top: 1px solid ${({ theme }) => theme.borderPrimary};
-      }
-    `}
 `
 
 const DrawerItemTitle = styled.div`
   text-transform: uppercase;
-  font-size: var(--fontSize-18);
+  font-size: var(--fontSize-14);
   color: ${({ theme }) => theme.textTertiary};
-  padding-top: 24px;
+  padding-top: 20px;
 `
