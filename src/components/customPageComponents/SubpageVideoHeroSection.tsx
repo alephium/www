@@ -1,8 +1,9 @@
-import { ReactNode, useRef } from 'react'
+import { ReactNode, useRef, useState } from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 
 import { darkTheme } from '../../styles/themes'
 import video from '../../videos/lake-pan-scrub.mp4'
+import poster from '../../images/lake-pan-poster.png'
 import SubpageHeroSection from './SubpageHeroSection'
 
 interface SubpageVideoHeroSectionProps {
@@ -15,6 +16,7 @@ const SubpageVideoHeroSection = ({ children }: SubpageVideoHeroSectionProps) => 
 
   const rafIdRef = useRef<number | null>(null)
   const pendingTimeRef = useRef<number>(0)
+  const [loaded, setLoaded] = useState(false)
 
   const handlePointerMove = (e: React.PointerEvent<HTMLElement>) => {
     const video = videoRef.current
@@ -43,9 +45,18 @@ const SubpageVideoHeroSection = ({ children }: SubpageVideoHeroSectionProps) => 
         ref={innerRef}
         onPointerMove={handlePointerMove}
         mediaContent={
-          <VideoContainer ref={videoRef} muted playsInline preload="auto">
-            <source src={video} type="video/mp4" />
-          </VideoContainer>
+          <PosterWrapper>
+            <PosterImg src={poster} alt="" $loaded={loaded} />
+            <VideoContainer
+              ref={videoRef}
+              muted
+              playsInline
+              preload="auto"
+              onLoadedData={() => setLoaded(true)}
+            >
+              <source src={video} type="video/mp4" />
+            </VideoContainer>
+          </PosterWrapper>
         }
       >
         {children}
@@ -56,8 +67,29 @@ const SubpageVideoHeroSection = ({ children }: SubpageVideoHeroSectionProps) => 
 
 export default SubpageVideoHeroSection
 
-const VideoContainer = styled.video`
-  object-fit: cover;
+const PosterWrapper = styled.div`
+  position: relative;
   width: 100%;
   height: 100%;
+`
+
+const PosterImg = styled.img<{ $loaded: boolean }>`
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: ${({ $loaded }) => ($loaded ? 0 : 1)};
+  transition: opacity 0.3s ease;
+  transform: scale(1.2);
+  pointer-events: none;
+`
+
+const VideoContainer = styled.video`
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
 `
