@@ -32,7 +32,7 @@ const NavigationMenu = ({ className, floating = true }: NavigationMenuProps) => 
       const currentScrollY = window.scrollY
       const scrollDelta = currentScrollY - lastScrollY.current
 
-      if (currentScrollY < lastScrollY.current) {
+      if (currentScrollY < 10 || currentScrollY < lastScrollY.current) {
         setIsHidden(false)
         scrollThreshold.current = 0
       } else if (scrollDelta > 0) {
