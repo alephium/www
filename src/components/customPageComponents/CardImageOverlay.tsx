@@ -38,6 +38,10 @@ const OverlayTitleContainer = styled.div`
   bottom: 15px;
   left: 20px;
   z-index: 1;
+
+  h3 {
+    margin: 0;
+  }
 `
 
 const BottomGradient = styled.div`
