@@ -2,15 +2,15 @@ import { ReactNode, useRef, useState } from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 
 import { darkTheme } from '../../styles/themes'
-import video from '../../videos/lake-pan-scrub.mp4'
-import poster from '../../images/lake-pan-poster.png'
 import SubpageHeroSection from './SubpageHeroSection'
 
 interface SubpageVideoHeroSectionProps {
+  video: string
+  poster: string
   children: ReactNode
 }
 
-const SubpageVideoHeroSection = ({ children }: SubpageVideoHeroSectionProps) => {
+const SubpageVideoHeroSection = ({ video, poster, children }: SubpageVideoHeroSectionProps) => {
   const innerRef = useRef<HTMLElement>(null)
   const videoRef = useRef<HTMLVideoElement>(null)
 
@@ -26,11 +26,11 @@ const SubpageVideoHeroSection = ({ children }: SubpageVideoHeroSectionProps) => 
     const ratio = (e.clientX - left) / width
     pendingTimeRef.current = Math.max(0, Math.min(1, ratio)) * video.duration
 
-    if (rafIdRef.current == null) {
+    if (!rafIdRef.current) {
       rafIdRef.current = window.requestAnimationFrame(() => {
         const seekTo = pendingTimeRef.current
-        if (typeof (video as any).fastSeek === 'function') {
-          ;(video as any).fastSeek(seekTo)
+        if (typeof video.fastSeek === 'function') {
+          video.fastSeek(seekTo)
         } else {
           video.currentTime = seekTo
         }
@@ -47,13 +47,7 @@ const SubpageVideoHeroSection = ({ children }: SubpageVideoHeroSectionProps) => 
         mediaContent={
           <PosterWrapper>
             <PosterImg src={poster} alt="" $loaded={loaded} />
-            <VideoContainer
-              ref={videoRef}
-              muted
-              playsInline
-              preload="auto"
-              onLoadedData={() => setLoaded(true)}
-            >
+            <VideoContainer ref={videoRef} muted playsInline preload="auto" onLoadedData={() => setLoaded(true)}>
               <source src={video} type="video/mp4" />
             </VideoContainer>
           </PosterWrapper>

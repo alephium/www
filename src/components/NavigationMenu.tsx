@@ -17,7 +17,7 @@ import TranslateComponent from './TranslateComponent'
 
 const drawerVariants = {
   closed: { opacity: 0, scaleY: 0.9, y: -6 },
-  open:   { opacity: 1, scaleY: 1,   y: 0  },
+  open: { opacity: 1, scaleY: 1, y: 0 }
 } as const
 
 interface NavigationMenuProps {
@@ -347,7 +347,6 @@ const DrawerItem = styled.div<{ isLink: boolean }>`
     padding: 12px 18px;
     width: 100%;
   }
-
 `
 
 const DrawerItemTitle = styled.div`

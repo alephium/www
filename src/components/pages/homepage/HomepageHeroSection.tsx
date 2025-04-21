@@ -1,12 +1,14 @@
 import styled from 'styled-components'
 
+import poster from '../../../images/lake-pan-poster.png'
 import { deviceBreakPoints } from '../../../styles/global-style'
+import video from '../../../videos/lake-pan-scrub.mp4'
 import ArrowedLink from '../../ArrowedLink'
 import Button from '../../Button'
 import SubpageVideoHeroSection from '../../customPageComponents/SubpageVideoHeroSection'
 
 const HomepageHeroSection = () => (
-  <SubpageVideoHeroSection>
+  <SubpageVideoHeroSection video={video} poster={poster}>
     <h1>
       Engineered
       <br />
