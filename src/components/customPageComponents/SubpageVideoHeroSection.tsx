@@ -15,7 +15,7 @@ const SubpageVideoHeroSection = ({ video, poster, children }: SubpageVideoHeroSe
   const videoRef = useRef<HTMLVideoElement>(null)
 
   const rafIdRef = useRef<number | null>(null)
-  const pendingTimeRef = useRef<number>(0)
+  const pendingTimeRef = useRef(0)
   const [loaded, setLoaded] = useState(false)
 
   const handlePointerMove = (e: React.PointerEvent<HTMLElement>) => {

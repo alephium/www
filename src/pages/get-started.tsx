@@ -7,20 +7,20 @@ import Page from '../components/customPageComponents/Page'
 import Placeholder from '../components/customPageComponents/Placeholder'
 import SideBySide from '../components/customPageComponents/SideBySide'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
-import SubpageHeroSection from '../components/customPageComponents/SubpageImageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
+import SubpageVideoHeroSection from '../components/customPageComponents/SubpageVideoHeroSection'
 import TextCard from '../components/customPageComponents/TextCard'
 import TextElement from '../components/customPageComponents/TextElement'
 import PageSectionContainer from '../components/PageSectionContainer'
 import { ParallaxBg, WalletCard, WalletCards } from '../components/PageSectionWallets'
 import SectionDivider from '../components/SectionDivider'
 import useWallets from '../hooks/useWallets'
+import poster from '../images/build-mine-explore-poster.png'
+import video from '../videos/build-mine-explore-scrub.mp4'
 
+// TODO: Import poster and video through query?
 const exchangesQuery = graphql`
   query GetStartedPage {
-    heroImage: file(relativePath: { eq: "alephium-hackathon-lake.png" }) {
-      ...HeroImage
-    }
     exchangesContent: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/exchanges.md/" } }) {
       nodes {
         frontmatter {
@@ -40,7 +40,7 @@ const exchangesQuery = graphql`
 
 const CustomPage = (props: PageProps) => {
   const wallets = useWallets()
-  const { exchangesContent, heroImage } = useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
+  const { exchangesContent } = useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
   const exchanges = exchangesContent.nodes[0].frontmatter?.exchanges ?? []
 
   return (
@@ -53,24 +53,24 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageHeroSection backgroundImage={heroImage}>
+          <SubpageVideoHeroSection poster={poster} video={video}>
             <h1>Get Started with Alephium</h1>
             <hr />
             <p>
               Not sure where to begin? Whether you want to build, mine, or explore, this guide has everything you need
               to dive in.
             </p>
-          </SubpageHeroSection>
+          </SubpageVideoHeroSection>
 
           <SectionDivider />
 
           <SubpageSection>
             <SideBySide>
               <TextElement isSmall>
-                <h3>What is Alephium?</h3>
+                <h2>What is Alephium?</h2>
                 <p>
-                  Alephium is a next-generation Layer 1 blockchain, designed to deliver unmatched security without
-                  compromising scalability or energy efficiency.
+                  Alephium is a <strong>next-generation Layer 1 blockchain</strong>, designed to deliver unmatched
+                  security without compromising scalability or energy efficiency.
                 </p>
                 <p>
                   Applications built on Alephium run faster, cost less, and inherit the resilience of Proof-of-Work,
