@@ -196,7 +196,7 @@ const CustomPage = (props: PageProps) => {
                 Become a part of the Alephium Ambassador Program and help us build the future of finance. Together, we
                 can create a more scalable, secure, and sustainable world.
               </p>
-              <Button url="/https://docs.google.com/forms/d/e/1FAIpQLSfR0T6Fg3v8HU86wZJgQBXslRUJKS3bsiQb92-ZIyaaV4RreA/viewform">
+              <Button url="https://docs.google.com/forms/d/e/1FAIpQLSfR0T6Fg3v8HU86wZJgQBXslRUJKS3bsiQb92-ZIyaaV4RreA/viewform">
                 Apply Now
               </Button>
             </TextElement>
