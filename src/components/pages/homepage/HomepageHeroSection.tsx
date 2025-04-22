@@ -1,34 +1,48 @@
+import { graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 
-import poster from '../../../images/lake-pan-poster.png'
 import { deviceBreakPoints } from '../../../styles/global-style'
-import video from '../../../videos/lake-pan-scrub.mp4'
 import ArrowedLink from '../../ArrowedLink'
 import Button from '../../Button'
 import SubpageVideoHeroSection from '../../customPageComponents/SubpageVideoHeroSection'
 
-const HomepageHeroSection = () => (
-  <SubpageVideoHeroSection video={video} poster={poster}>
-    <h1>
-      Engineered
-      <br />
-      for the Future.
-    </h1>
-    <hr />
-    <p>
-      <strong>
-        Alephium brings the security of Proof-of-Work, the scalability of sharding, and the power of smart contracts to
-        real-world applications
-      </strong>
-      .
-    </p>
+export const homepageHeroQuery = graphql`
+  query HomepageHero {
+    heroImage: file(relativePath: { eq: "lake-pan-poster.png" }) {
+      ...HeroImage
+    }
+    heroVideo: file(relativePath: { eq: "lake-pan-scrub.mp4" }) {
+      publicURL
+    }
+  }
+`
 
-    <Buttons>
-      <Button url="https://docs.alephium.org">Build on Alephium</Button>
-      <ArrowedLink url="/communities">Join the community</ArrowedLink>
-    </Buttons>
-  </SubpageVideoHeroSection>
-)
+const HomepageHeroSection = () => {
+  const { heroImage, heroVideo } = useStaticQuery<Queries.HomepageHeroQuery>(homepageHeroQuery)
+
+  return (
+    <SubpageVideoHeroSection video={heroVideo} poster={heroImage}>
+      <h1>
+        Engineered
+        <br />
+        for the Future.
+      </h1>
+      <hr />
+      <p>
+        <strong>
+          Alephium brings the security of Proof-of-Work, the scalability of sharding, and the power of smart contracts
+          to real-world applications
+        </strong>
+        .
+      </p>
+
+      <Buttons>
+        <Button url="https://docs.alephium.org">Build on Alephium</Button>
+        <ArrowedLink url="/communities">Join the community</ArrowedLink>
+      </Buttons>
+    </SubpageVideoHeroSection>
+  )
+}
 
 export default HomepageHeroSection
 

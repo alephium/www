@@ -57,6 +57,14 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        name: 'videos',
+        path: './src/videos/'
+      },
+      __key: 'videos'
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         name: 'pages',
         path: './src/pages/'
       },
