@@ -33,7 +33,6 @@ const SubpageHeroSectionStyled = styled.section`
   position: relative;
   min-height: 80vh;
   margin: auto;
-  margin-top: max(10vh, 120px);
   width: 90vw;
   overflow: hidden;
   transition: all 0.4s ease-in;
