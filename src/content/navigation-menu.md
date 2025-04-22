@@ -49,7 +49,7 @@ menuItems:
       - title: Blog
         link: https://medium.com/@alephium
       - title: Brand Assets
-        link: /brand
+        link: https://github.com/alephium/alephium-brand-guide
   - title: Community
     items:
       - title: Get started

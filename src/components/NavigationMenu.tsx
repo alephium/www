@@ -71,11 +71,17 @@ const NavigationMenu = ({ className, floating = true }: NavigationMenuProps) => 
       <AnimatePresence>
         {isMobileNavOpen && <MobileNavigationMenu onCloseClick={() => setIsMobileNavOpen(false)} />}
       </AnimatePresence>
+      <NavigationTopSpacing />
     </>
   )
 }
 
 export default NavigationMenu
+
+const NavigationTopSpacing = styled.div`
+  width: 100%;
+  height: max(10vh, 120px);
+`
 
 const NavigationItems = ({ className }: { className?: string }) => {
   const theme = useTheme()
