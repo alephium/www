@@ -18,37 +18,33 @@ interface Stat<T> {
   isLoading: boolean
 }
 
+export const iconFragment = graphql`
+  fragment Icon on File {
+    childImageSharp {
+      gatsbyImageData(width: 82, layout: CONSTRAINED, transformOptions: { fit: COVER, cropFocus: CENTER })
+    }
+  }
+`
+
 export const query = graphql`
   query Icons {
     yellowWaveIcon: file(relativePath: { eq: "yellow-wave-icon.png" }) {
-      childImageSharp {
-        gatsbyImageData(width: 82, layout: CONSTRAINED, transformOptions: { fit: COVER, cropFocus: CENTER })
-      }
+      ...Icon
     }
     blueTreeIcon: file(relativePath: { eq: "blue-tree-icon.png" }) {
-      childImageSharp {
-        gatsbyImageData(width: 82, layout: CONSTRAINED, transformOptions: { fit: COVER, cropFocus: CENTER })
-      }
+      ...Icon
     }
     circlesIcon: file(relativePath: { eq: "circles-icon.png" }) {
-      childImageSharp {
-        gatsbyImageData(width: 82, layout: CONSTRAINED, transformOptions: { fit: COVER, cropFocus: CENTER })
-      }
+      ...Icon
     }
     greenDropIcon: file(relativePath: { eq: "green-drop-icon.png" }) {
-      childImageSharp {
-        gatsbyImageData(width: 82, layout: CONSTRAINED, transformOptions: { fit: COVER, cropFocus: CENTER })
-      }
+      ...Icon
     }
     rockPileIcon: file(relativePath: { eq: "rock-pile-icon.png" }) {
-      childImageSharp {
-        gatsbyImageData(width: 82, layout: CONSTRAINED, transformOptions: { fit: COVER, cropFocus: CENTER })
-      }
+      ...Icon
     }
     featherIcon: file(relativePath: { eq: "feather-icon.png" }) {
-      childImageSharp {
-        gatsbyImageData(width: 82, layout: CONSTRAINED, transformOptions: { fit: COVER, cropFocus: CENTER })
-      }
+      ...Icon
     }
   }
 `
@@ -111,7 +107,7 @@ const HomepageStatsSection = () => {
         <Grid columns={2}>
           <TextElement noHeadingsMargins>
             <CardImageStyled>
-              <GatsbyImageWrapper image={yellowWaveIcon?.childImageSharp?.gatsbyImageData} alt="Fast" />
+              <GatsbyImageWrapper image={yellowWaveIcon?.childImageSharp?.gatsbyImageData} alt="Fast" loading="lazy" />
             </CardImageStyled>
             <h3 style={{ color: theme.palette2 }}>Fast</h3>
             <TLDRSection color={theme.palette2}>
@@ -125,7 +121,11 @@ const HomepageStatsSection = () => {
           </TextElement>
           <TextElement noHeadingsMargins>
             <CardImageStyled>
-              <GatsbyImageWrapper image={blueTreeIcon?.childImageSharp?.gatsbyImageData} alt="Scalable" />
+              <GatsbyImageWrapper
+                image={blueTreeIcon?.childImageSharp?.gatsbyImageData}
+                alt="Scalable"
+                loading="lazy"
+              />
             </CardImageStyled>
             <h3 style={{ color: theme.palette3 }}>Scalable</h3>
             <TLDRSection color={theme.palette3}>
@@ -139,7 +139,7 @@ const HomepageStatsSection = () => {
           </TextElement>
           <TextElement noHeadingsMargins>
             <CardImageStyled>
-              <GatsbyImageWrapper image={circlesIcon?.childImageSharp?.gatsbyImageData} alt="Secure" />
+              <GatsbyImageWrapper image={circlesIcon?.childImageSharp?.gatsbyImageData} alt="Secure" loading="lazy" />
             </CardImageStyled>
             <h3 style={{ color: theme.palette4 }}>Secure</h3>
             <TLDRSection color={theme.palette4}>
@@ -153,7 +153,11 @@ const HomepageStatsSection = () => {
           </TextElement>
           <TextElement noHeadingsMargins>
             <CardImageStyled>
-              <GatsbyImageWrapper image={greenDropIcon?.childImageSharp?.gatsbyImageData} alt="Sustainable" />
+              <GatsbyImageWrapper
+                image={greenDropIcon?.childImageSharp?.gatsbyImageData}
+                alt="Sustainable"
+                loading="lazy"
+              />
             </CardImageStyled>
             <h3 style={{ color: theme.palette1 }}>Sustainable</h3>
             <TLDRSection color={theme.palette1}>
@@ -167,7 +171,11 @@ const HomepageStatsSection = () => {
           </TextElement>
           <TextElement noHeadingsMargins>
             <CardImageStyled>
-              <GatsbyImageWrapper image={rockPileIcon?.childImageSharp?.gatsbyImageData} alt="Programmable" />
+              <GatsbyImageWrapper
+                image={rockPileIcon?.childImageSharp?.gatsbyImageData}
+                alt="Programmable"
+                loading="lazy"
+              />
             </CardImageStyled>
             <h3 style={{ color: theme.palette6 }}>Programmable</h3>
             <TLDRSection color={theme.palette6}>
@@ -181,7 +189,11 @@ const HomepageStatsSection = () => {
           </TextElement>
           <TextElement noHeadingsMargins>
             <CardImageStyled>
-              <GatsbyImageWrapper image={featherIcon?.childImageSharp?.gatsbyImageData} alt="Developer-friendly" />
+              <GatsbyImageWrapper
+                image={featherIcon?.childImageSharp?.gatsbyImageData}
+                alt="Developer-friendly"
+                loading="lazy"
+              />
             </CardImageStyled>
             <h3 style={{ color: theme.palette5 }}>Developer-friendly</h3>
             <TLDRSection color={theme.palette5}>

@@ -33,7 +33,7 @@ const HomepagePartnersSection = (content: Queries.HomepagePartnersSectionFragmen
             partner?.title &&
             partner?.logo?.publicURL && (
               <PartnerItem key={partner.title}>
-                <PartnerLogo src={partner.logo.publicURL} alt={partner.title} />
+                <PartnerLogo src={partner.logo.publicURL} alt={partner.title} loading="lazy" />
                 <PartnerLabel>{partner.title}</PartnerLabel>
               </PartnerItem>
             )

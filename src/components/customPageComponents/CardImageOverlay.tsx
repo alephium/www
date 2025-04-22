@@ -13,7 +13,13 @@ interface CardImageOverlayProps {
 const CardImageOverlay = ({ image, overlayTitle, rounded }: CardImageOverlayProps) => (
   <CardImageOverlayStyled rounded={rounded}>
     {image && (
-      <GatsbyImageWrapper image={image} alt={overlayTitle || ''} style={{ height: '100%' }} objectFit="cover" />
+      <GatsbyImageWrapper
+        image={image}
+        alt={overlayTitle || ''}
+        style={{ height: '100%' }}
+        objectFit="cover"
+        loading="lazy"
+      />
     )}
     <OverlayTitleContainer>
       <TextElement>

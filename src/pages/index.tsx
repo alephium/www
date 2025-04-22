@@ -80,6 +80,7 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
               alt="Lighthouse background"
               style={{ height: '100%' }}
               objectFit="cover"
+              loading="lazy"
               isBackground
             />
 
