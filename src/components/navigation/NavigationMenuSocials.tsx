@@ -35,7 +35,7 @@ const NavigationMenuSocialsStyled = styled.div`
 
 const SocialMediaIconStyled = styled(SocialMediaIcon)`
   svg {
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
   }
 `

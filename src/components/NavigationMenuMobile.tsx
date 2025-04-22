@@ -82,7 +82,7 @@ const MobileNavigationMenuStyled = styled(motion.div)`
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: ${({ theme }) => theme.bgPrimary};
+  background-color: ${({ theme }) => theme.bgTertiary};
   z-index: 10000; // Terrible way to do this, but it would require a lot of rework on all other places that use z-index
   overflow: auto;
 `
@@ -179,7 +179,8 @@ const NavigationMenuStyled = styled.div`
 
 const NavLink = styled(SimpleLink)`
   font-size: var(--fontSize-18);
-  color: ${({ theme }) => theme.textSecondary};
+  color: ${({ theme }) => theme.textPrimaryVariation};
+  font-weight: var(--fontWeight-semiBold);
 
   &:hover {
     color: ${({ theme }) => theme.textPrimary};
@@ -216,8 +217,9 @@ const MobileMenuItem = styled.div`
 `
 
 const MobileMenuItemTitle = styled.div`
-  font-size: var(--fontSize-18);
-  color: ${({ theme }) => theme.textSecondary};
+  font-size: var(--fontSize-24);
+  font-weight: var(--fontWeight-semiBold);
+  color: ${({ theme }) => theme.textPrimary};
   padding: 10px 0;
   cursor: pointer;
   display: flex;
@@ -225,7 +227,7 @@ const MobileMenuItemTitle = styled.div`
   gap: 10px;
 
   &:hover {
-    color: ${({ theme }) => theme.textPrimary};
+    color: ${({ theme }) => theme.textPrimaryVariation};
   }
 `
 
@@ -233,13 +235,13 @@ const MobileMenuItemArrow = styled.div`
   margin-left: auto;
   display: flex;
   align-items: center;
-  color: ${({ theme }) => theme.textSecondary};
+  color: ${({ theme }) => theme.textPrimaryVariation};
 `
 
 const MobileSubItems = styled(motion.div)`
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
+  padding-left: 10px;
   gap: 10px;
   overflow: hidden;
 `
@@ -249,7 +251,8 @@ const MobileSubItem = styled.div`
 `
 
 const MobileSubItemTitle = styled.div`
-  font-size: var(--fontSize-16);
+  font-size: var(--fontSize-14);
+  font-weight: var(--fontWeight-medium);
   color: ${({ theme }) => theme.textTertiary};
   text-transform: uppercase;
 `

@@ -1,40 +1,40 @@
-import { ReactNode, useRef } from 'react'
+import { ReactNode, useRef, useState } from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 
 import { darkTheme } from '../../styles/themes'
-import video from '../../videos/lake-bridge-pan.mp4'
 import SubpageHeroSection from './SubpageHeroSection'
 
 interface SubpageVideoHeroSectionProps {
+  video: string
+  poster: string
   children: ReactNode
 }
 
-const SubpageVideoHeroSection = ({ children }: SubpageVideoHeroSectionProps) => {
+const SubpageVideoHeroSection = ({ video, poster, children }: SubpageVideoHeroSectionProps) => {
   const innerRef = useRef<HTMLElement>(null)
   const videoRef = useRef<HTMLVideoElement>(null)
-  const scheduledRef = useRef(false)
-  const lastUpdateRef = useRef(0)
 
-  const handleMouseMove = (e: React.MouseEvent<HTMLElement>) => {
-    const now = performance.now()
-    if (now - lastUpdateRef.current < 100) return
-    lastUpdateRef.current = now
+  const rafIdRef = useRef<number | null>(null)
+  const pendingTimeRef = useRef(0)
+  const [loaded, setLoaded] = useState(false)
 
-    if (!videoRef.current) return
+  const handlePointerMove = (e: React.PointerEvent<HTMLElement>) => {
+    const video = videoRef.current
+    if (!video || !video.duration) return
 
-    const bounds = e.currentTarget.getBoundingClientRect()
-    const relativeX = e.clientX - bounds.left
-    const ratio = relativeX / bounds.width
-    const duration = videoRef.current.duration
+    const { left, width } = e.currentTarget.getBoundingClientRect()
+    const ratio = (e.clientX - left) / width
+    pendingTimeRef.current = Math.max(0, Math.min(1, ratio)) * video.duration
 
-    if (!scheduledRef.current && duration) {
-      scheduledRef.current = true
-
-      window.requestAnimationFrame(() => {
-        if (videoRef.current) {
-          videoRef.current.currentTime = ratio * duration
+    if (!rafIdRef.current) {
+      rafIdRef.current = window.requestAnimationFrame(() => {
+        const seekTo = pendingTimeRef.current
+        if (typeof video.fastSeek === 'function') {
+          video.fastSeek(seekTo)
+        } else {
+          video.currentTime = seekTo
         }
-        scheduledRef.current = false
+        rafIdRef.current = null
       })
     }
   }
@@ -43,11 +43,14 @@ const SubpageVideoHeroSection = ({ children }: SubpageVideoHeroSectionProps) => 
     <ThemeProvider theme={darkTheme}>
       <SubpageHeroSection
         ref={innerRef}
-        onMouseMove={handleMouseMove}
+        onPointerMove={handlePointerMove}
         mediaContent={
-          <VideoContainer ref={videoRef} muted playsInline preload="auto">
-            <source src={video} type="video/mp4" />
-          </VideoContainer>
+          <PosterWrapper>
+            <PosterImg src={poster} alt="" $loaded={loaded} />
+            <VideoContainer ref={videoRef} muted playsInline preload="auto" onLoadedData={() => setLoaded(true)}>
+              <source src={video} type="video/mp4" />
+            </VideoContainer>
+          </PosterWrapper>
         }
       >
         {children}
@@ -58,8 +61,29 @@ const SubpageVideoHeroSection = ({ children }: SubpageVideoHeroSectionProps) => 
 
 export default SubpageVideoHeroSection
 
-const VideoContainer = styled.video`
-  object-fit: cover;
+const PosterWrapper = styled.div`
+  position: relative;
   width: 100%;
   height: 100%;
+`
+
+const PosterImg = styled.img<{ $loaded: boolean }>`
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: ${({ $loaded }) => ($loaded ? 0 : 1)};
+  transition: opacity 0.3s ease;
+  transform: scale(1.2);
+  pointer-events: none;
+`
+
+const VideoContainer = styled.video`
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
 `

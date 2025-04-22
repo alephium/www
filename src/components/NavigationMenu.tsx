@@ -15,6 +15,11 @@ import MobileNavigationMenu, { ToggleMobileNavButton } from './NavigationMenuMob
 import SimpleLink from './SimpleLink'
 import TranslateComponent from './TranslateComponent'
 
+const drawerVariants = {
+  closed: { opacity: 0, scaleY: 0.9, y: -6 },
+  open: { opacity: 1, scaleY: 1, y: 0 }
+} as const
+
 interface NavigationMenuProps {
   floating?: boolean
   className?: string
@@ -32,7 +37,7 @@ const NavigationMenu = ({ className, floating = true }: NavigationMenuProps) => 
       const currentScrollY = window.scrollY
       const scrollDelta = currentScrollY - lastScrollY.current
 
-      if (currentScrollY < lastScrollY.current) {
+      if (currentScrollY < 10 || currentScrollY < lastScrollY.current) {
         setIsHidden(false)
         scrollThreshold.current = 0
       } else if (scrollDelta > 0) {
@@ -136,9 +141,16 @@ const NavigationDrawer = ({ title, Icon, className, children }: NavigationDrawer
         {title ? <DrawerTitle>{title}</DrawerTitle> : Icon ? Icon : null}
         <DrawerCarretWrapper>{isOpen ? <RiArrowDropUpLine /> : <RiArrowDropDownLine />}</DrawerCarretWrapper>
       </DrawerTitleWrapper>
-      <AnimatePresence>
+      <AnimatePresence initial={false}>
         {isOpen && (
-          <Drawer initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+          <Drawer
+            key="drawer"
+            variants={drawerVariants}
+            initial="closed"
+            animate="open"
+            exit="closed"
+            transition={{ type: 'spring', stiffness: 900, damping: 50, bounce: 0 }}
+          >
             {children}
           </Drawer>
         )}
@@ -252,7 +264,8 @@ const LogoTextStyled = styled(LogoText)`
 
 const LinkStyle = css`
   font-size: var(--fontSize-18);
-  color: ${({ theme }) => theme.textSecondary};
+  font-weight: var(--fontWeight-medium);
+  color: ${({ theme }) => theme.textPrimaryVariation};
 
   &:hover {
     color: ${({ theme }) => theme.textPrimary};
@@ -309,12 +322,15 @@ const Drawer = styled(motion.div)`
   right: 0;
   min-width: 250px;
   background-color: rgba(30, 30, 30, 1);
-  border-radius: 20px;
-  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.8);
+  border-radius: var(--radius);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   z-index: 1000;
   backdrop-filter: blur(24px);
+  padding-bottom: 8px;
+
+  transform-origin: top center;
 
   @media ${deviceBreakPoints.ipad} {
     top: 100%;
@@ -331,19 +347,11 @@ const DrawerItem = styled.div<{ isLink: boolean }>`
     padding: 12px 18px;
     width: 100%;
   }
-
-  ${({ isLink }) =>
-    !isLink &&
-    css`
-      &:not(:first-child) {
-        border-top: 1px solid ${({ theme }) => theme.borderPrimary};
-      }
-    `}
 `
 
 const DrawerItemTitle = styled.div`
   text-transform: uppercase;
-  font-size: var(--fontSize-18);
+  font-size: var(--fontSize-14);
   color: ${({ theme }) => theme.textTertiary};
-  padding-top: 24px;
+  padding-top: 20px;
 `
