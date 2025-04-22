@@ -60,8 +60,10 @@ const CustomPage = (props: PageProps) => {
             <h1>Get Started with Alephium</h1>
             <hr />
             <p>
-              Not sure where to begin? Whether you want to build, mine, or explore, this guide has everything you need
-              to dive in.
+              Not sure where to begin?{' '}
+              <strong>
+                Whether you want to build, mine, or explore, this guide has everything you need to dive in.
+              </strong>
             </p>
           </SubpageVideoHeroSection>
 
@@ -69,22 +71,24 @@ const CustomPage = (props: PageProps) => {
 
           <SubpageSection>
             <SideBySide>
-              <TextElement isSmall>
+              <TextElement>
                 <h2>What is Alephium?</h2>
                 <p>
-                  Alephium is a <strong>next-generation Layer 1 blockchain</strong>, designed to deliver unmatched
+                  <strong>Alephium is a next-generation Layer 1 blockchain</strong>, designed to deliver unmatched
                   security without compromising scalability or energy efficiency.
                 </p>
                 <p>
-                  Applications built on Alephium run faster, cost less, and inherit the resilience of Proof-of-Work,
-                  ensuring your project is safe and scalable from day one. Whether you're launching dApps, creating
-                  digital assets, or integrating Web3 infrastructure, Alephium provides the robust security, flexibility
-                  and performance needed to push boundaries.
+                  <strong>
+                    Applications built on Alephium run faster, cost less, and inherit the resilience of Proof-of-Work,
+                    ensuring your project is safe and scalable from day one.
+                  </strong>{' '}
+                  Whether you're launching dApps, creating digital assets, or integrating Web3 infrastructure, Alephium
+                  provides the robust security, flexibility and performance needed to push boundaries.
                 </p>
                 <p>
-                  It’s not just about building - it’s about building smarter. Alephium eliminates common smart contract
-                  vulnerabilities, reduces energy consumption by 87% compared to traditional PoW, and ensures long-term
-                  scalability without compromising security.
+                  <strong>It’s not just about building - it’s about building smarter.</strong> Alephium eliminates
+                  common smart contract vulnerabilities, reduces energy consumption by 87% compared to traditional PoW,
+                  and <strong>ensures long-term scalability without compromising security.</strong>
                 </p>
               </TextElement>
               <Placeholder />

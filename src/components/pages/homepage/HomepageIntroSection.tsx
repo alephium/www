@@ -31,7 +31,11 @@ export const query = graphql`
 const HomepageIntroSection = ({ cards }: Queries.HomepageIntroSectionFragment) => (
   <SubpageSection id="intro">
     <TextElement>
-      <h2>A Network Built by Visionaries</h2>
+      <h2>
+        A Network Built
+        <br />
+        by Visionaries
+      </h2>
       <p>
         <strong>Alephium is more than a blockchain</strong> - it’s a movement driven by those who refuse to compromise
         on security. Built and secured by a community of miners, developers, and innovators, Alephium embodies the core

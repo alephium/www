@@ -43,8 +43,8 @@ const SubpageHeroSectionStyled = styled.section`
 `
 
 const TextElementStyled = styled(TextElement)`
+  max-width: 500px;
   > p {
-    max-width: 500px;
     color: ${({ theme }) => theme.textSecondary};
     font-weight: var(--fontWeight-semiBold);
     line-height: 1.3;

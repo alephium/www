@@ -38,14 +38,15 @@ const TextElement = styled.div<TextElementProps>`
 
   > h1 {
     font-family: 'Sentient';
-    font-size: var(--fontSize-50);
+    font-size: var(--fontSize-60);
     font-weight: var(--fontWeight-semiBold);
   }
 
   > h2 {
     font-family: 'Sentient';
-    font-size: var(--fontSize-42);
+    font-size: var(--fontSize-56);
     line-height: 1.2;
+    margin-bottom: var(--spacing-6);
   }
 
   > h3 {

@@ -107,6 +107,7 @@ const GlobalStyle = createGlobalStyle`
     --fontSize-42: 2.75rem;
     --fontSize-50: 3.125rem;
     --fontSize-56: 3.5rem;
+    --fontSize-60: 4.0rem;
     --fontSize-70: 4.375rem;
     --lineHeight-22: 1.375rem;
     --lineHeight-26: 1.625rem;
@@ -125,6 +126,7 @@ const GlobalStyle = createGlobalStyle`
     --color-grey-550: #414141;
     --color-grey-600: #343434;
     --color-grey-700: #262626;
+    --color-grey-750: #202020;
     --color-grey-800: #1B1B1B;
     --color-grey-850: #141414;
     --color-grey-900: #0f0f0f;
