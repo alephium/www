@@ -1,4 +1,9 @@
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+
 import { graphql, PageProps, useStaticQuery } from 'gatsby'
+import { IGatsbyImageData } from 'gatsby-plugin-image'
+import Slider from 'react-slick'
 import styled from 'styled-components'
 
 import Button from '../components/Button'
@@ -10,6 +15,7 @@ import SubpageHeroSection from '../components/customPageComponents/SubpageImageH
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextCard from '../components/customPageComponents/TextCard'
 import TextElement from '../components/customPageComponents/TextElement'
+import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import SectionDivider from '../components/SectionDivider'
 import SimpleLink from '../components/SimpleLink'
 import useWallets from '../hooks/useWallets'
@@ -19,11 +25,42 @@ const walletsQuery = graphql`
     heroImage: file(relativePath: { eq: "alephium-hackathon-lake.png" }) {
       ...HeroImage
     }
+    desktopScreenshots: allFile(
+      filter: { relativeDirectory: { eq: "screenshots/desktop-wallet" } }
+      sort: { name: ASC }
+    ) {
+      nodes {
+        childImageSharp {
+          gatsbyImageData(width: 800, quality: 100)
+        }
+      }
+    }
+    extensionScreenshots: allFile(
+      filter: { relativeDirectory: { eq: "screenshots/extension-wallet" } }
+      sort: { name: ASC }
+    ) {
+      nodes {
+        childImageSharp {
+          gatsbyImageData(height: 500, quality: 100)
+        }
+      }
+    }
+    mobileScreenshots: allFile(
+      filter: { relativeDirectory: { eq: "screenshots/mobile-wallet" } }
+      sort: { name: ASC }
+    ) {
+      nodes {
+        childImageSharp {
+          gatsbyImageData(height: 500, quality: 100)
+        }
+      }
+    }
   }
 `
 
 const CustomPage = (props: PageProps) => {
-  const { heroImage } = useStaticQuery<Queries.WalletsPageQuery>(walletsQuery)
+  const { heroImage, desktopScreenshots, extensionScreenshots, mobileScreenshots } =
+    useStaticQuery<Queries.WalletsPageQuery>(walletsQuery)
   const wallets = useWallets()
 
   return (
@@ -107,10 +144,14 @@ const CustomPage = (props: PageProps) => {
                   <p>Access the latest version from the official GitHub releases.</p>
                   <Button url={wallets?.desktop?.url ?? ''}>Download</Button>
                 </TextElement>
-                <WalletScreenShot src={wallets?.desktop?.image?.publicURL ?? ''} />
+                <WalletCarousel
+                  images={desktopScreenshots.nodes.map((node) => node.childImageSharp?.gatsbyImageData)}
+                />
               </SideBySide>
               <SideBySide>
-                <WalletScreenShot src={wallets?.extension?.image?.publicURL ?? ''} />
+                <WalletCarousel
+                  images={extensionScreenshots.nodes.map((node) => node.childImageSharp?.gatsbyImageData)}
+                />
                 <TextElement isBodySmall>
                   <h3>Browser Extension Wallet</h3>
                   <p>
@@ -148,7 +189,7 @@ const CustomPage = (props: PageProps) => {
                   <Button url={wallets?.mobile?.urls?.android ?? ''}>Android Google Play Store</Button>
                   <Button url={wallets?.mobile?.urls?.ios ?? ''}>iOS App Store </Button>
                 </TextElement>
-                <WalletScreenShot src={wallets?.mobile?.image?.publicURL ?? ''} />
+                <WalletCarousel images={mobileScreenshots.nodes.map((node) => node.childImageSharp?.gatsbyImageData)} />
               </SideBySide>
               <SideBySide reverseOnMobile>
                 <TextElement>
@@ -200,8 +241,55 @@ const CustomPage = (props: PageProps) => {
 
 export default CustomPage
 
-const WalletScreenShot = styled.img`
+const WalletCarousel = ({ images }: { images: (IGatsbyImageData | null | undefined)[] }) => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false
+  }
+
+  return (
+    <CarouselContainer>
+      <Slider {...settings}>
+        {images.map((image, index) => (
+          <div key={index}>
+            {image && (
+              <GatsbyImageWrapper
+                image={image}
+                alt={`Wallet screenshot ${index + 1}`}
+                loading="lazy"
+                preserveWidth
+                center
+              />
+            )}
+          </div>
+        ))}
+      </Slider>
+    </CarouselContainer>
+  )
+}
+
+const CarouselContainer = styled.div`
   width: 100%;
-  max-height: 420px;
-  object-fit: contain;
+  max-height: 500px;
+  position: relative;
+  margin-bottom: 20px;
+
+  .slick-dots {
+    bottom: -40px;
+
+    li {
+      button:before {
+        color: ${({ theme }) => theme.textTertiary};
+        font-size: 8px;
+      }
+
+      &.slick-active button:before {
+        color: ${({ theme }) => theme.textPrimary};
+      }
+    }
+  }
 `

@@ -2,31 +2,22 @@ import { graphql } from 'gatsby'
 import { useStaticQuery } from 'gatsby'
 
 const useWallets = () => {
-  const data = useStaticQuery<Queries.WalletsQuery>(graphql`
+  const data = useStaticQuery(graphql`
     query Wallets {
       allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/wallets.md/" } }) {
         nodes {
           frontmatter {
             wallets {
               desktop {
-                image {
-                  publicURL
-                }
                 url
               }
               extension {
-                image {
-                  publicURL
-                }
                 urls {
                   chrome
                   firefox
                 }
               }
               mobile {
-                image {
-                  publicURL
-                }
                 urls {
                   android
                   ios
