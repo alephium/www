@@ -12,7 +12,7 @@ import SubpageVideoHeroSection from '../components/customPageComponents/SubpageV
 import TextCard from '../components/customPageComponents/TextCard'
 import TextElement from '../components/customPageComponents/TextElement'
 import PageSectionContainer from '../components/PageSectionContainer'
-import { ParallaxBg, WalletCard, WalletCards } from '../components/PageSectionWallets'
+import { WalletCard, WalletCards } from '../components/PageSectionWallets'
 import SectionDivider from '../components/SectionDivider'
 import useWallets from '../hooks/useWallets'
 
@@ -22,6 +22,9 @@ const exchangesQuery = graphql`
       ...HeroImage
     }
     heroVideo: file(relativePath: { eq: "build-mine-explore-scrub.mp4" }) {
+      publicURL
+    }
+    blobVideo: file(relativePath: { eq: "alephium-blob.mp4" }) {
       publicURL
     }
     exchangesContent: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/exchanges.md/" } }) {
@@ -43,8 +46,10 @@ const exchangesQuery = graphql`
 
 const CustomPage = (props: PageProps) => {
   const wallets = useWallets()
-  const { exchangesContent, heroImage, heroVideo } = useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
+  const { exchangesContent, heroImage, heroVideo, blobVideo } =
+    useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
   const exchanges = exchangesContent.nodes[0].frontmatter?.exchanges ?? []
+  const blobVideoUrl = blobVideo?.publicURL || undefined
 
   return (
     <Page
@@ -60,14 +65,11 @@ const CustomPage = (props: PageProps) => {
             <h1>Get Started with Alephium</h1>
             <hr />
             <p>
-              Not sure where to begin?{' '}
               <strong>
                 Whether you want to build, mine, or explore, this guide has everything you need to dive in.
               </strong>
             </p>
           </SubpageVideoHeroSection>
-
-          <SectionDivider />
 
           <SubpageSection>
             <SideBySide>
@@ -91,70 +93,75 @@ const CustomPage = (props: PageProps) => {
                   and <strong>ensures long-term scalability without compromising security.</strong>
                 </p>
               </TextElement>
-              <Placeholder />
+              <video muted playsInline preload="auto" autoPlay loop>
+                <source src={blobVideoUrl} type="video/mp4" />
+              </video>
             </SideBySide>
           </SubpageSection>
 
           <SectionDivider />
 
-          <SubpageSection Parallax={<ParallaxBg />} fullWidth>
+          <SubpageSection fullWidth>
             <PageSectionContainer>
               <TextElement>
-                <h2>Create a wallet</h2>
+                <h2>Your wallet</h2>
                 <p>
-                  To interact with the Alephium ecosystem you’ll need a wallet, which acts as your gateway to the
-                  network. With an Alephium wallet, you can store, send, and receive ALPH, manage digital assets
-                  (stablecoins, NFTs) and seamlessly connect to dApps.
+                  To interact with the Alephium ecosystem{' '}
+                  <strong>you’ll need a wallet, which acts as your gateway to the network</strong>. With an Alephium
+                  wallet, you can store, send, and receive ALPH, manage digital assets (stablecoins, NFTs) and
+                  seamlessly connect to dApps.
                 </p>
               </TextElement>
             </PageSectionContainer>
-            <WalletCards>
-              <WalletCard
-                title="Desktop wallet"
-                description="Alephium’s flagship wallet. Ready for everything, from daily management tasks to smart contracts deployment, privacy & DeFi."
-                screenshot={{ publicURL: wallets?.desktop?.image?.publicURL ?? '' }}
-                color="rgb(91, 0, 255)"
-                actions={[
-                  {
-                    title: 'Get the desktop wallet',
-                    link: wallets?.desktop?.url ?? ''
-                  }
-                ]}
-              />
+            <PageSectionContainer>
+              <WalletCards>
+                <WalletCard
+                  title="Desktop wallet"
+                  description="Alephium’s flagship wallet. Ready for everything, from daily management tasks to smart contracts deployment, privacy & DeFi."
+                  screenshot={{ publicURL: wallets?.desktop?.image?.publicURL ?? '' }}
+                  color="rgb(91, 0, 255)"
+                  actions={[
+                    {
+                      title: 'Get the desktop wallet',
+                      link: wallets?.desktop?.url ?? ''
+                    }
+                  ]}
+                />
 
-              <WalletCard
-                title="Extension wallet"
-                description="The wallet in your browser. Get access to the latest features with a focus on DeFi."
-                screenshot={{ publicURL: wallets?.extension?.image?.publicURL ?? '' }}
-                color="rgb(24, 215, 255)"
-                actions={[
-                  {
-                    title: 'Chrome',
-                    link: wallets?.extension?.urls?.chrome ?? ''
-                  },
-                  {
-                    title: 'Firefox',
-                    link: wallets?.extension?.urls?.firefox ?? ''
-                  }
-                ]}
-              />
-              <WalletCard
-                title="Mobile wallet"
-                description="Alephium on the go. First-class UX. Available on Android and iOS."
-                screenshot={{ publicURL: wallets?.mobile?.image?.publicURL ?? '' }}
-                color="rgb(228, 124, 12)"
-                actions={[
-                  {
-                    title: 'Android',
-                    link: wallets?.mobile?.urls?.android ?? ''
-                  },
-                  {
-                    title: 'iOS',
-                    link: wallets?.mobile?.urls?.ios ?? ''
-                  }
-                ]}
-              />
-            </WalletCards>
+                <WalletCard
+                  title="Extension wallet"
+                  description="The wallet in your browser. Get access to the latest features with a focus on DeFi."
+                  screenshot={{ publicURL: wallets?.extension?.image?.publicURL ?? '' }}
+                  color="rgb(24, 215, 255)"
+                  actions={[
+                    {
+                      title: 'Chrome',
+                      link: wallets?.extension?.urls?.chrome ?? ''
+                    },
+                    {
+                      title: 'Firefox',
+                      link: wallets?.extension?.urls?.firefox ?? ''
+                    }
+                  ]}
+                />
+                <WalletCard
+                  title="Mobile wallet"
+                  description="Alephium on the go. First-class UX. Available on Android and iOS."
+                  screenshot={{ publicURL: wallets?.mobile?.image?.publicURL ?? '' }}
+                  color="rgb(228, 124, 12)"
+                  actions={[
+                    {
+                      title: 'Android',
+                      link: wallets?.mobile?.urls?.android ?? ''
+                    },
+                    {
+                      title: 'iOS',
+                      link: wallets?.mobile?.urls?.ios ?? ''
+                    }
+                  ]}
+                />
+              </WalletCards>
+            </PageSectionContainer>
           </SubpageSection>
 
           <SectionDivider />

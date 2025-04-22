@@ -84,7 +84,7 @@ const TextElement = styled.div<TextElementProps>`
   ul {
     color: ${({ theme }) => theme.textSecondary};
 
-    font-size: var(--fontSize-26);
+    font-size: var(--fontSize-24);
     font-weight: var(--fontWeight-semiBold);
     line-height: 1.3;
     max-width: 600px;

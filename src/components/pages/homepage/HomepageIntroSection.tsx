@@ -56,7 +56,11 @@ const HomepageIntroSection = ({ cards }: Queries.HomepageIntroSectionFragment) =
             card &&
             card.link?.url && (
               <TextCard isAnimated variants={cardVariants} key={card.title}>
-                <CardImageOverlay image={card.image?.childImageSharp?.gatsbyImageData} overlayTitle={card.title} />
+                <CardImageOverlay
+                  image={card.image?.childImageSharp?.gatsbyImageData}
+                  overlayTitle={card.title}
+                  rounded
+                />
                 <ParagraphStyled>{card.description}</ParagraphStyled>
                 <Button url={card.link?.url} squared textAlign="center">
                   {card.actionText}
