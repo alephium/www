@@ -4,13 +4,13 @@ import Button from '../components/Button'
 import CardImage from '../components/customPageComponents/CardImage'
 import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
-import Placeholder from '../components/customPageComponents/Placeholder'
 import SideBySide from '../components/customPageComponents/SideBySide'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import SubpageVideoHeroSection from '../components/customPageComponents/SubpageVideoHeroSection'
 import TextCard from '../components/customPageComponents/TextCard'
 import TextElement from '../components/customPageComponents/TextElement'
+import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import PageSectionContainer from '../components/PageSectionContainer'
 import { WalletCard, WalletCards } from '../components/PageSectionWallets'
 import SectionDivider from '../components/SectionDivider'
@@ -23,6 +23,11 @@ const exchangesQuery = graphql`
     }
     heroVideo: file(relativePath: { eq: "build-mine-explore-scrub.mp4" }) {
       publicURL
+    }
+    ecosystemImage: file(relativePath: { eq: "ecosystem-islands.png" }) {
+      childImageSharp {
+        gatsbyImageData(width: 1920, layout: CONSTRAINED, transformOptions: { fit: COVER, cropFocus: CENTER })
+      }
     }
     blobVideo: file(relativePath: { eq: "alephium-blob.mp4" }) {
       publicURL
@@ -46,10 +51,11 @@ const exchangesQuery = graphql`
 
 const CustomPage = (props: PageProps) => {
   const wallets = useWallets()
-  const { exchangesContent, heroImage, heroVideo, blobVideo } =
+  const { exchangesContent, heroImage, heroVideo, blobVideo, ecosystemImage } =
     useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
   const exchanges = exchangesContent.nodes[0].frontmatter?.exchanges ?? []
   const blobVideoUrl = blobVideo?.publicURL || undefined
+  const ecosystemImageData = ecosystemImage?.childImageSharp?.gatsbyImageData || undefined
 
   return (
     <Page
@@ -170,8 +176,11 @@ const CustomPage = (props: PageProps) => {
             <TextElement>
               <h2>Get ALPH</h2>
               <p>
-                You can get ALPH by buying it with traditional fiat currency, exchanging it with another cryptocurrency,
-                or bridging from another ecosystem.
+                You can get ALPH by{' '}
+                <strong>
+                  buying it with traditional fiat currency, exchanging it with another cryptocurrency, or bridging from
+                  another ecosystem.
+                </strong>
               </p>
             </TextElement>
             <SubheaderContent>
@@ -181,35 +190,45 @@ const CustomPage = (props: PageProps) => {
                     exchange &&
                     exchange.title &&
                     exchange.url && (
-                      <TextCard key={exchange.title} url={exchange.url}>
+                      <TextElement key={exchange.title} url={exchange.url}>
                         <CardImage src={exchange.logo?.publicURL ?? ''} alt={exchange.title} rounded />
                         <h3>{exchange.title}</h3>
                         <p>{exchange.description}</p>
-                      </TextCard>
+                      </TextElement>
                     )
                 )}
               </Grid>
             </SubheaderContent>
 
-            <TextElement isCentered>
-              <Button url="https://www.coingecko.com/en/coins/alephium#markets">See more ALPH markets</Button>
-            </TextElement>
+            <SubpageSection>
+              <TextElement isCentered>
+                <Button url="https://www.coingecko.com/en/coins/alephium#markets">See more ALPH markets</Button>
+              </TextElement>
+            </SubpageSection>
           </SubpageSection>
 
           <SectionDivider />
 
-          <SubpageSection>
+          <PageSectionContainer fullHeight wide justifyContent="center">
+            <GatsbyImageWrapper
+              image={ecosystemImageData}
+              alt="Ecosystem background"
+              style={{ height: '100%' }}
+              objectFit="cover"
+              loading="lazy"
+              isBackground
+            />
             <TextElement isCentered>
-              <h2>Explore Alephium ecosystem</h2>
+              <h2>Explore the ecosystem</h2>
               <p>
-                Discover innovative dApps and tokenized assets - trade, borrow, lend or earn ALPH, by engaging with DeFi
-                protocols or contributing to the ecosystem.
+                <strong>
+                  Discover innovative dApps and tokenized assets - trade, borrow, lend or earn ALPH, by engaging with
+                  DeFi protocols or contributing to the ecosystem.
+                </strong>
               </p>
               <Button url="https://alph.land">See all apps</Button>
             </TextElement>
-
-            <Placeholder width="100%" height="400px" />
-          </SubpageSection>
+          </PageSectionContainer>
 
           <SectionDivider />
 
