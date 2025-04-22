@@ -1,10 +1,12 @@
 import { colord } from 'colord'
 import { motion } from 'framer-motion'
+import { getImage, IGatsbyImageData } from 'gatsby-plugin-image'
 import { useState } from 'react'
 import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../styles/global-style'
 import Button from './Button'
+import GatsbyImageWrapper from './GatsbyImageWrapper'
 import GradientBubble from './GradientBubble'
 
 export interface PageSectionWalletsContentType {
@@ -14,9 +16,11 @@ export interface PageSectionWalletsContentType {
   wallets: {
     title: string
     description: string
-    screenshot: {
-      publicURL: string
-    }
+    screenshot?: {
+      childImageSharp: {
+        gatsbyImageData: IGatsbyImageData | null
+      } | null
+    } | null
     color: string
     actions: {
       title: string
@@ -45,7 +49,20 @@ export const WalletCard = ({
             .toHex()
         }}
       >
-        <WalletScreenshot animate={{ scale: isHovered ? 1.04 : 1 }} src={screenshot.publicURL} alt={title} />
+        <WalletScreenshot animate={{ scale: isHovered ? 1.04 : 1 }}>
+          {screenshot && (
+            <GatsbyImageWrapper
+              image={
+                screenshot?.childImageSharp?.gatsbyImageData
+                  ? getImage(screenshot?.childImageSharp?.gatsbyImageData)
+                  : undefined
+              }
+              alt={title}
+              style={{ height: '100%' }}
+              objectFit="contain"
+            />
+          )}
+        </WalletScreenshot>
       </WalletScreenShotContainer>
       <WalletTextContainer>
         <WalletTitle>{title}</WalletTitle>
@@ -95,7 +112,7 @@ const WalletScreenShotContainer = styled.div`
   overflow: hidden;
 `
 
-const WalletScreenshot = styled(motion.img)`
+const WalletScreenshot = styled(motion.div)`
   width: 100%;
   object-fit: contain;
   z-index: 1;
