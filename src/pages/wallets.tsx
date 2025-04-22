@@ -173,39 +173,6 @@ const CustomPage = (props: PageProps) => {
           <SectionDivider />
 
           <SubpageSection>
-            <TextElement>
-              <h2>Getting Started with Your Alephium Wallet</h2>
-            </TextElement>
-
-            <SubheaderContent>
-              <TextElement>
-                <h3>1. Choose Your Wallet</h3>
-                <p>Select the wallet type that best suits your needs—desktop, browser extension, or mobile.</p>
-
-                <h3>2. Download and Install</h3>
-                <p>Follow the provided links to download and install the wallet on your device.</p>
-
-                <h3>3. Set Up Your Account</h3>
-                <p>
-                  Create a new wallet by following the on-screen instructions. Ensure you securely back up your seed
-                  phrase during this process.
-                </p>
-
-                <h3>4. Add ALPH Tokens</h3>
-                <p>
-                  Deposit ALPH into your wallet by receiving tokens from an exchange, another wallet, or using the
-                  in-app buy option.
-                </p>
-
-                <h3>5. Explore the Ecosystem</h3>
-                <p>
-                  Use your wallet to interact with dApps, stake tokens, and participate in Alephium's growing ecosystem.
-                </p>
-              </TextElement>
-            </SubheaderContent>
-          </SubpageSection>
-
-          <SubpageSection>
             <TextElement isSmall>
               <h3>Security Reminder</h3>
               <p>
