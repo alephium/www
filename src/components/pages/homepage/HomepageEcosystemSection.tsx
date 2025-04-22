@@ -36,7 +36,7 @@ const HomepageEcosystemSection = () => {
         <LogosContainer>
           {dappsLogos.map((logo, index) => (
             <LogoWrapper key={index}>
-              <img src={logo} alt={`Dapp logo ${index}`} />
+              <img src={logo} alt={`Dapp logo ${index}`} loading="lazy" />
             </LogoWrapper>
           ))}
           <MoreWrapper key="more">

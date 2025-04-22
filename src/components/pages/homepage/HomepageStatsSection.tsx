@@ -1,20 +1,15 @@
 import { ExplorerClient } from '@alephium/sdk'
 import { HttpResponse } from '@alephium/sdk/api/explorer'
 import { colord } from 'colord'
+import { graphql, useStaticQuery } from 'gatsby'
 import { useCallback, useEffect, useState } from 'react'
 import styled, { useTheme } from 'styled-components'
 
-import blueTreeIcon from '../../../images/blue-tree-icon.png'
-import circlesIcon from '../../../images/circles-icon.png'
-import featherIcon from '../../../images/feather-icon.png'
-import greenDropIcon from '../../../images/green-drop-icon.png'
-import rockPileIcon from '../../../images/rock-pile-icon.png'
-import yellowWaveIcon from '../../../images/yellow-wave-icon.png'
-import CardImage from '../../customPageComponents/CardImage'
 import Grid from '../../customPageComponents/Grid'
 import SubheaderContent from '../../customPageComponents/SubheaderContent'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextElement from '../../customPageComponents/TextElement'
+import GatsbyImageWrapper from '../../GatsbyImageWrapper'
 
 const baseUrl = 'https://backend.mainnet.alephium.org'
 
@@ -22,6 +17,37 @@ interface Stat<T> {
   value: T
   isLoading: boolean
 }
+
+export const iconFragment = graphql`
+  fragment Icon on File {
+    childImageSharp {
+      gatsbyImageData(width: 82, layout: CONSTRAINED, transformOptions: { fit: COVER, cropFocus: CENTER })
+    }
+  }
+`
+
+export const query = graphql`
+  query Icons {
+    yellowWaveIcon: file(relativePath: { eq: "yellow-wave-icon.png" }) {
+      ...Icon
+    }
+    blueTreeIcon: file(relativePath: { eq: "blue-tree-icon.png" }) {
+      ...Icon
+    }
+    circlesIcon: file(relativePath: { eq: "circles-icon.png" }) {
+      ...Icon
+    }
+    greenDropIcon: file(relativePath: { eq: "green-drop-icon.png" }) {
+      ...Icon
+    }
+    rockPileIcon: file(relativePath: { eq: "rock-pile-icon.png" }) {
+      ...Icon
+    }
+    featherIcon: file(relativePath: { eq: "feather-icon.png" }) {
+      ...Icon
+    }
+  }
+`
 
 const statScalarDefault = { value: 0, isLoading: true }
 
@@ -35,6 +61,9 @@ const HomepageStatsSection = () => {
   const [statsScalarData, setStatsScalarData] = useState<StatsScalarData>({
     totalTransactions: statScalarDefault
   })
+
+  const { yellowWaveIcon, blueTreeIcon, circlesIcon, greenDropIcon, rockPileIcon, featherIcon } =
+    useStaticQuery<Queries.IconsQuery>(query)
 
   const updateStatsScalar = useCallback(
     (key: StatScalarKeys, value: StatScalar['value']) => {
@@ -77,7 +106,9 @@ const HomepageStatsSection = () => {
       <SubheaderContent>
         <Grid columns={2}>
           <TextElement noHeadingsMargins>
-            <CardImageStyled src={yellowWaveIcon} rounded />
+            <CardImageStyled>
+              <GatsbyImageWrapper image={yellowWaveIcon?.childImageSharp?.gatsbyImageData} alt="Fast" loading="lazy" />
+            </CardImageStyled>
             <h3 style={{ color: theme.palette2 }}>Fast</h3>
             <TLDRSection color={theme.palette2}>
               <TLDRTag color={theme.palette2}>TL;DR</TLDRTag>
@@ -89,19 +120,27 @@ const HomepageStatsSection = () => {
             </p>
           </TextElement>
           <TextElement noHeadingsMargins>
-            <CardImageStyled src={blueTreeIcon} rounded />
+            <CardImageStyled>
+              <GatsbyImageWrapper
+                image={blueTreeIcon?.childImageSharp?.gatsbyImageData}
+                alt="Scalable"
+                loading="lazy"
+              />
+            </CardImageStyled>
             <h3 style={{ color: theme.palette3 }}>Scalable</h3>
             <TLDRSection color={theme.palette3}>
               <TLDRTag color={theme.palette3}>TL;DR</TLDRTag>
               <span>{`${totalTransactions.value.toLocaleString()} total transactions`}</span>
             </TLDRSection>
             <p>
-              Built to handle <strong>high throughput without sacrificing security</strong>, Alephium’s architecture
+              Built to handle <strong>high throughput without sacrificing security</strong>, Alephium's architecture
               ensures that fees remain predictable and affordable - empowering developers and users alike.
             </p>
           </TextElement>
           <TextElement noHeadingsMargins>
-            <CardImageStyled src={circlesIcon} rounded />
+            <CardImageStyled>
+              <GatsbyImageWrapper image={circlesIcon?.childImageSharp?.gatsbyImageData} alt="Secure" loading="lazy" />
+            </CardImageStyled>
             <h3 style={{ color: theme.palette4 }}>Secure</h3>
             <TLDRSection color={theme.palette4}>
               <TLDRTag color={theme.palette4}>TL;DR</TLDRTag>
@@ -113,31 +152,49 @@ const HomepageStatsSection = () => {
             </p>
           </TextElement>
           <TextElement noHeadingsMargins>
-            <CardImageStyled src={greenDropIcon} rounded />
+            <CardImageStyled>
+              <GatsbyImageWrapper
+                image={greenDropIcon?.childImageSharp?.gatsbyImageData}
+                alt="Sustainable"
+                loading="lazy"
+              />
+            </CardImageStyled>
             <h3 style={{ color: theme.palette1 }}>Sustainable</h3>
             <TLDRSection color={theme.palette1}>
               <TLDRTag color={theme.palette1}>TL;DR</TLDRTag>
               <span>87% lower environmental impact vs. traditional PoW</span>
             </TLDRSection>
             <p>
-              Alephium’s Proof-of-Less-Work mechanism reduces energy consumption, making it{' '}
+              Alephium's Proof-of-Less-Work mechanism reduces energy consumption, making it{' '}
               <strong>one of the most sustainable and responsible blockchains</strong> built for the future.
             </p>
           </TextElement>
           <TextElement noHeadingsMargins>
-            <CardImageStyled src={rockPileIcon} rounded />
+            <CardImageStyled>
+              <GatsbyImageWrapper
+                image={rockPileIcon?.childImageSharp?.gatsbyImageData}
+                alt="Programmable"
+                loading="lazy"
+              />
+            </CardImageStyled>
             <h3 style={{ color: theme.palette6 }}>Programmable</h3>
             <TLDRSection color={theme.palette6}>
               <TLDRTag color={theme.palette6}>TL;DR</TLDRTag>
               <span>No compromise smart-contracts</span>
             </TLDRSection>
             <p>
-              Alephium’s stateful UTXO model merges the best of both worlds -{' '}
+              Alephium's stateful UTXO model merges the best of both worlds -{' '}
               <strong>Ethereum-like smart contract flexibility with Bitcoin-level security.</strong>
             </p>
           </TextElement>
           <TextElement noHeadingsMargins>
-            <CardImageStyled src={featherIcon} rounded />
+            <CardImageStyled>
+              <GatsbyImageWrapper
+                image={featherIcon?.childImageSharp?.gatsbyImageData}
+                alt="Developer-friendly"
+                loading="lazy"
+              />
+            </CardImageStyled>
             <h3 style={{ color: theme.palette5 }}>Developer-friendly</h3>
             <TLDRSection color={theme.palette5}>
               <TLDRTag color={theme.palette5}>TL;DR</TLDRTag>
@@ -187,6 +244,10 @@ const Stat = styled.div`
   margin-top: var(--spacing-6);
 `
 
-const CardImageStyled = styled(CardImage)`
+const CardImageStyled = styled.div`
+  width: 82px;
+  height: 82px;
   margin-bottom: var(--spacing-4);
+  border-radius: var(--radius);
+  overflow: hidden;
 `

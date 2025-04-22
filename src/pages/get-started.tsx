@@ -15,12 +15,15 @@ import PageSectionContainer from '../components/PageSectionContainer'
 import { ParallaxBg, WalletCard, WalletCards } from '../components/PageSectionWallets'
 import SectionDivider from '../components/SectionDivider'
 import useWallets from '../hooks/useWallets'
-import poster from '../images/build-mine-explore-poster.png'
-import video from '../videos/build-mine-explore-scrub.mp4'
 
-// TODO: Import poster and video through query?
 const exchangesQuery = graphql`
   query GetStartedPage {
+    heroImage: file(relativePath: { eq: "build-mine-explore-poster.png" }) {
+      ...HeroImage
+    }
+    heroVideo: file(relativePath: { eq: "build-mine-explore-scrub.mp4" }) {
+      publicURL
+    }
     exchangesContent: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/exchanges.md/" } }) {
       nodes {
         frontmatter {
@@ -40,7 +43,7 @@ const exchangesQuery = graphql`
 
 const CustomPage = (props: PageProps) => {
   const wallets = useWallets()
-  const { exchangesContent } = useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
+  const { exchangesContent, heroImage, heroVideo } = useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
   const exchanges = exchangesContent.nodes[0].frontmatter?.exchanges ?? []
 
   return (
@@ -53,7 +56,7 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageVideoHeroSection poster={poster} video={video}>
+          <SubpageVideoHeroSection poster={heroImage} video={heroVideo}>
             <h1>Get Started with Alephium</h1>
             <hr />
             <p>

@@ -1,26 +1,42 @@
 import { GatsbyImage, GatsbyImageProps, IGatsbyImageData } from 'gatsby-plugin-image'
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 interface GatsbyImageWrapperProps extends Omit<GatsbyImageProps, 'image'> {
   image: IGatsbyImageData | undefined
+  isBackground?: boolean
   className?: string
 }
 
-const GatsbyImageWrapper: React.FC<GatsbyImageWrapperProps> = ({ image, alt = '', className, ...props }) => {
+const GatsbyImageWrapper: React.FC<GatsbyImageWrapperProps> = ({
+  image,
+  alt = '',
+  className,
+  isBackground = false,
+  ...props
+}) => {
   if (!image) return null
 
   return (
-    <StyledGatsbyImage>
+    <StyledGatsbyImage isBackground={isBackground}>
       <GatsbyImage image={image} alt={alt} className={className} {...props} />
     </StyledGatsbyImage>
   )
 }
 
 // This is a hack because I can't figure out why the following styles are applied in dev mode but not in production
-const StyledGatsbyImage = styled.div`
+const StyledGatsbyImage = styled.div<{ isBackground?: boolean }>`
   width: 100%;
   height: 100%;
+
+  ${({ isBackground }) =>
+    isBackground &&
+    css`
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    `}
 
   .gatsby-image-wrapper {
     width: 100%;

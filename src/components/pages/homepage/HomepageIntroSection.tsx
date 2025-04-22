@@ -17,7 +17,9 @@ export const query = graphql`
       description
       actionText
       image {
-        publicURL
+        childImageSharp {
+          gatsbyImageData(width: 768, layout: CONSTRAINED, transformOptions: { fit: COVER, cropFocus: CENTER })
+        }
       }
       link {
         url
@@ -50,7 +52,7 @@ const HomepageIntroSection = ({ cards }: Queries.HomepageIntroSectionFragment) =
             card &&
             card.link?.url && (
               <TextCard isAnimated variants={cardVariants} key={card.title}>
-                <CardImageOverlay imageUrl={card.image?.publicURL} overlayTitle={card.title} />
+                <CardImageOverlay image={card.image?.childImageSharp?.gatsbyImageData} overlayTitle={card.title} />
                 <ParagraphStyled>{card.description}</ParagraphStyled>
                 <Button url={card.link?.url} squared textAlign="center">
                   {card.actionText}

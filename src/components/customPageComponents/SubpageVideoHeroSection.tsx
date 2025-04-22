@@ -1,14 +1,22 @@
-import { ReactNode, useRef, useState } from 'react'
+import { getImage, IGatsbyImageData } from 'gatsby-plugin-image'
+import { ReactNode, useRef } from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 
 import useIsMobile from '../../hooks/useIsMobile'
 import { darkTheme } from '../../styles/themes'
+import GatsbyImageWrapper from '../GatsbyImageWrapper'
 import SubpageHeroSection from './SubpageHeroSection'
 
 interface SubpageVideoHeroSectionProps {
-  video: string
-  poster: string
   children: ReactNode
+  video?: {
+    publicURL: string | null
+  } | null
+  poster?: {
+    readonly childImageSharp: {
+      readonly gatsbyImageData: IGatsbyImageData
+    } | null
+  } | null
 }
 
 const SubpageVideoHeroSection = ({ video, poster, children }: SubpageVideoHeroSectionProps) => {
@@ -19,7 +27,8 @@ const SubpageVideoHeroSection = ({ video, poster, children }: SubpageVideoHeroSe
 
   const isMobile = useIsMobile()
 
-  const [loaded, setLoaded] = useState(false)
+  const imageData = poster?.childImageSharp?.gatsbyImageData
+  const image = imageData ? getImage(imageData) : undefined
 
   const handlePointerMove = (e: React.PointerEvent<HTMLElement>) => {
     if (isMobile) return
@@ -55,11 +64,11 @@ const SubpageVideoHeroSection = ({ video, poster, children }: SubpageVideoHeroSe
         onPointerMove={!isMobile ? handlePointerMove : undefined}
         mediaContent={
           <PosterWrapper>
-            <PosterImg src={poster} $loaded={loaded} />
+            {poster && <GatsbyImageWrapper image={image} alt="" style={{ height: '100%' }} objectFit="cover" />}
 
-            {!isMobile && (
-              <VideoContainer ref={videoRef} muted playsInline preload="auto" onLoadedData={() => setLoaded(true)}>
-                <source src={video} type="video/mp4" />
+            {!isMobile && video?.publicURL && (
+              <VideoContainer ref={videoRef} muted playsInline preload="auto">
+                <source src={video.publicURL} type="video/mp4" />
               </VideoContainer>
             )}
           </PosterWrapper>
@@ -77,18 +86,6 @@ const PosterWrapper = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
-`
-
-const PosterImg = styled.img<{ $loaded: boolean }>`
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: ${({ $loaded }) => ($loaded ? 0 : 1)};
-  transition: opacity 0.3s ease;
-  transform: scale(1.2);
-  pointer-events: none;
 `
 
 const VideoContainer = styled.video`
