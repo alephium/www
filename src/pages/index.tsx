@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Button from '../components/Button'
 import Page from '../components/customPageComponents/Page'
 import TextElement from '../components/customPageComponents/TextElement'
+import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import HomepageEcosystemSection from '../components/pages/homepage/HomepageEcosystemSection'
 import HomepageHeroSection from '../components/pages/homepage/HomepageHeroSection'
 import HomepageIntroSection from '../components/pages/homepage/HomepageIntroSection'
@@ -11,7 +12,6 @@ import HomepagePartnersSection from '../components/pages/homepage/HomepagePartne
 import HomepageStatsSection from '../components/pages/homepage/HomepageStatsSection'
 import PageSectionContainer from '../components/PageSectionContainer'
 import SectionDivider from '../components/SectionDivider'
-import lighthouseImage from '../images/lighthouse.png'
 
 export const pageQuery = graphql`
   query IndexPage {
@@ -28,11 +28,17 @@ export const pageQuery = graphql`
         }
       }
     }
+    lighthouseImage: file(relativePath: { eq: "lighthouse.png" }) {
+      childImageSharp {
+        gatsbyImageData(width: 1920, layout: CONSTRAINED, transformOptions: { fit: COVER, cropFocus: CENTER })
+      }
+    }
   }
 `
 
 const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
   const content = props.data.allMarkdownRemark.nodes[0].frontmatter
+  const lighthouseImage = props.data.lighthouseImage?.childImageSharp?.gatsbyImageData
 
   return (
     <Page
@@ -69,6 +75,14 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
           )}
 
           <LastPageSectionContainer fullHeight wide justifyContent="center">
+            <GatsbyImageWrapper
+              image={lighthouseImage}
+              alt="Lighthouse background"
+              style={{ height: '100%' }}
+              objectFit="cover"
+              isBackground
+            />
+
             <TextElement isCentered>
               <h2>This is your moment.</h2>
               <p>
@@ -87,8 +101,6 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
 export default IndexPage
 
 const LastPageSectionContainer = styled(PageSectionContainer)`
-  background-image: url(${lighthouseImage});
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
   margin: 0;
 `
