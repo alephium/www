@@ -1,15 +1,20 @@
+import { IGatsbyImageData } from 'gatsby-plugin-image'
 import styled from 'styled-components'
 
+import GatsbyImageWrapper from '../GatsbyImageWrapper'
 import TextElement from './TextElement'
 
 interface CardImageOverlayProps {
   overlayTitle: string | null
-  imageUrl?: string | null
+  image?: IGatsbyImageData
   rounded?: boolean
 }
 
-const CardImageOverlay = ({ imageUrl, overlayTitle, rounded }: CardImageOverlayProps) => (
-  <CardImageOverlayStyled style={{ backgroundImage: `url(${imageUrl})` }} rounded={rounded}>
+const CardImageOverlay = ({ image, overlayTitle, rounded }: CardImageOverlayProps) => (
+  <CardImageOverlayStyled rounded={rounded}>
+    {image && (
+      <GatsbyImageWrapper image={image} alt={overlayTitle || ''} style={{ height: '100%' }} objectFit="cover" />
+    )}
     <OverlayTitleContainer>
       <TextElement>
         <h3>{overlayTitle}</h3>
@@ -24,13 +29,11 @@ export default CardImageOverlay
 const CardImageOverlayStyled = styled.div<Pick<CardImageOverlayProps, 'rounded'>>`
   position: relative;
   width: 100%;
-  min-height: 200px;
+  height: 200px;
   margin-bottom: 20px;
   border-radius: ${({ rounded }) => (rounded ? '20px' : '0')};
   overflow: hidden;
   border-radius: var(--radius);
-  background-size: cover;
-  background-position: center;
 `
 
 const OverlayTitleContainer = styled.div`
