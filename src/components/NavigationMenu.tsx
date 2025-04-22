@@ -198,9 +198,7 @@ const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean }>`
   ${({ floating }) =>
     !floating &&
     css`
-      position: static;
-      margin-top: 30px;
-      margin-bottom: -100px;
+      position: absolute;
     `}
 
   @media ${deviceBreakPoints.ipad} {
