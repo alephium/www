@@ -1,8 +1,10 @@
+import { getImage, IGatsbyImageData } from 'gatsby-plugin-image'
 import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../styles/global-style'
 import Button from './Button'
 import TextElement from './customPageComponents/TextElement'
+import GatsbyImageWrapper from './GatsbyImageWrapper'
 
 export interface PageSectionWalletsContentType {
   title: string
@@ -11,9 +13,11 @@ export interface PageSectionWalletsContentType {
   wallets: {
     title: string
     description: string
-    screenshot: {
-      publicURL: string
-    }
+    screenshot?: {
+      childImageSharp: {
+        gatsbyImageData: IGatsbyImageData | null
+      } | null
+    } | null
     color: string
     actions: {
       title: string
@@ -32,7 +36,20 @@ export const WalletCard = ({
 }: PageSectionWalletsContentType['wallets'][number]) => (
   <WalletCardStyled>
     <WalletScreenShotContainer>
-      <WalletScreenshot src={screenshot.publicURL} alt={title} />
+      <WalletScreenshot>
+        {screenshot && (
+          <GatsbyImageWrapper
+            image={
+              screenshot?.childImageSharp?.gatsbyImageData
+                ? getImage(screenshot?.childImageSharp?.gatsbyImageData)
+                : undefined
+            }
+            alt={title}
+            style={{ height: '100%' }}
+            objectFit="contain"
+          />
+        )}
+      </WalletScreenshot>
     </WalletScreenShotContainer>
     <WalletTextContainer isBodySmall>
       <WalletTitle>{title}</WalletTitle>
@@ -67,7 +84,7 @@ const WalletScreenShotContainer = styled.div`
   overflow: hidden;
 `
 
-const WalletScreenshot = styled.img`
+const WalletScreenshot = styled.div`
   width: 100%;
   object-fit: contain;
   z-index: 1;

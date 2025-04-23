@@ -34,6 +34,21 @@ const exchangesQuery = graphql`
     blobVideo: file(relativePath: { eq: "alephium-blob.mp4" }) {
       publicURL
     }
+    desktopWallet: file(relativePath: { eq: "screenshots/desktop-wallet/desktop-wallet-1.png" }) {
+      childImageSharp {
+        gatsbyImageData(width: 500, quality: 100)
+      }
+    }
+    extensionWallet: file(relativePath: { eq: "screenshots/extension-wallet/extension-1.png" }) {
+      childImageSharp {
+        gatsbyImageData(height: 280, quality: 100)
+      }
+    }
+    mobileWallet: file(relativePath: { eq: "screenshots/mobile-wallet/mobile-wallet-1.png" }) {
+      childImageSharp {
+        gatsbyImageData(height: 280, quality: 100)
+      }
+    }
     exchangesContent: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/exchanges.md/" } }) {
       nodes {
         frontmatter {
@@ -53,8 +68,16 @@ const exchangesQuery = graphql`
 
 const CustomPage = (props: PageProps) => {
   const wallets = useWallets()
-  const { exchangesContent, heroImage, heroVideo, blobVideo, ecosystemImage } =
-    useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
+  const {
+    exchangesContent,
+    heroImage,
+    heroVideo,
+    desktopWallet,
+    extensionWallet,
+    mobileWallet,
+    blobVideo,
+    ecosystemImage
+  } = useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
   const exchanges = exchangesContent.nodes[0].frontmatter?.exchanges ?? []
   const blobVideoUrl = blobVideo?.publicURL || undefined
   const ecosystemImageData = ecosystemImage?.childImageSharp?.gatsbyImageData || undefined
@@ -126,7 +149,7 @@ const CustomPage = (props: PageProps) => {
                 <WalletCard
                   title="Desktop wallet"
                   description="Alephium’s flagship wallet. Ready for everything, from daily management tasks to smart contracts deployment, privacy & DeFi."
-                  screenshot={{ publicURL: wallets?.desktop?.image?.publicURL ?? '' }}
+                  screenshot={desktopWallet}
                   color="rgb(91, 0, 255)"
                   actions={[
                     {
@@ -139,7 +162,7 @@ const CustomPage = (props: PageProps) => {
                 <WalletCard
                   title="Extension wallet"
                   description="The wallet in your browser. Get access to the latest features with a focus on DeFi."
-                  screenshot={{ publicURL: wallets?.extension?.image?.publicURL ?? '' }}
+                  screenshot={extensionWallet}
                   color="rgb(24, 215, 255)"
                   actions={[
                     {
@@ -155,7 +178,7 @@ const CustomPage = (props: PageProps) => {
                 <WalletCard
                   title="Mobile wallet"
                   description="Alephium on the go. First-class UX. Available on Android and iOS."
-                  screenshot={{ publicURL: wallets?.mobile?.image?.publicURL ?? '' }}
+                  screenshot={mobileWallet}
                   color="rgb(228, 124, 12)"
                   actions={[
                     {

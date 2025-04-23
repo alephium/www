@@ -1,5 +1,6 @@
 import { Link } from 'gatsby'
 import { ReactNode } from 'react'
+import { RiArrowRightUpLine } from 'react-icons/ri'
 import styled from 'styled-components'
 
 export interface SimpleLinkProps {
@@ -9,9 +10,10 @@ export interface SimpleLinkProps {
   color?: string
   trackingName?: string
   children?: ReactNode
+  showArrow?: boolean
 }
 
-const SimpleLink = ({ className, children, url, text }: SimpleLinkProps) => {
+const SimpleLink = ({ className, children, url, text, showArrow }: SimpleLinkProps) => {
   const isInternalLink = url?.startsWith('/')
 
   if (!url) return null
@@ -21,9 +23,10 @@ const SimpleLink = ({ className, children, url, text }: SimpleLinkProps) => {
       {children || text}
     </Link>
   ) : (
-    <a className={className} href={url} target="_blank" rel="noopener noreferrer">
+    <Anchor className={className} href={url} target="_blank" rel="noopener noreferrer">
       {children || text}
-    </a>
+      {showArrow && <RiArrowRightUpLine />}
+    </Anchor>
   )
 }
 
@@ -33,10 +36,16 @@ export default styled(SimpleLink)`
   text-decoration-style: dotted;
 
   svg {
-    fill: ${({ theme, color }) => (color ? color : theme.link)};
+    fill: ${({ theme, color }) => (color ? color : theme.textSecondary)};
   }
 
   &:hover {
     cursor: pointer;
   }
+`
+
+const Anchor = styled.a`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 `

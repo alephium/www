@@ -104,7 +104,7 @@ const NavigationItems = ({ className }: { className?: string }) => {
                     item.title && (
                       <DrawerItem key={item.title} isLink={!!item.link}>
                         {item.link ? (
-                          <NavLink key={index} url={item.link} text={item.title} />
+                          <NavLink key={index} url={item.link} text={item.title} showArrow />
                         ) : (
                           <DrawerItemTitle key={index}>{item.title}</DrawerItemTitle>
                         )}
@@ -198,9 +198,7 @@ const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean }>`
   ${({ floating }) =>
     !floating &&
     css`
-      position: static;
-      margin-top: 30px;
-      margin-bottom: -100px;
+      position: absolute;
     `}
 
   @media ${deviceBreakPoints.ipad} {

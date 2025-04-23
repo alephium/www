@@ -47,8 +47,6 @@ const CustomPage = (props: PageProps) => {
             </p>
           </SubpageHeroSection>
 
-          <SectionDivider />
-
           <SubpageSection>
             <TextElement>
               <h2>How to participate?</h2>
@@ -62,12 +60,12 @@ const CustomPage = (props: PageProps) => {
                     If you have an idea for a bounty that would help improve the Alephium ecosystem, you can submit your
                     proposal for review by the Alephium team.
                   </p>
-                  <Button url="/">Submit a bounty proposal</Button>
+                  {/* <Button url="/">Submit a bounty proposal</Button> */}
                 </TextCard>
                 <TextCard>
                   <h3>Work on an Existing Bounty</h3>
                   <p>If you’re ready to take on a bounty, browse the open opportunities and submit your interest.</p>
-                  <Button url="/">View open bounties</Button>
+                  {/* <Button url="/">View open bounties</Button> */}
                 </TextCard>
                 <TextCard>
                   <h3>Improve Security</h3>
@@ -83,7 +81,7 @@ const CustomPage = (props: PageProps) => {
 
           <SectionDivider />
 
-          <SubpageSection>
+          {/* <SubpageSection>
             <TextElement>
               <h2>Open bounties</h2>
             </TextElement>
@@ -105,7 +103,7 @@ const CustomPage = (props: PageProps) => {
             </SubheaderContent>
           </SubpageSection>
 
-          <SectionDivider />
+          <SectionDivider /> */}
 
           <SubpageSection>
             <TextElement>
@@ -192,8 +190,9 @@ const CustomPage = (props: PageProps) => {
 
           <SubpageSection>
             <TextElement isCentered>
-              <h2>Ready? Join the Bounty Program today!</h2>
-              <Button url="/">Join the program</Button>
+              {/* <h2>Ready? Join the Bounty Program today!</h2> */}
+              <h2>The bounty platform is coming soon!</h2>
+              {/* <Button url="/">Join the program</Button> */}
             </TextElement>
           </SubpageSection>
         </>
