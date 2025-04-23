@@ -1,4 +1,5 @@
 import { graphql, PageProps, useStaticQuery } from 'gatsby'
+import styled from 'styled-components'
 
 import Button from '../components/Button'
 import CardImage from '../components/customPageComponents/CardImage'
@@ -14,6 +15,7 @@ import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import PageSectionContainer from '../components/PageSectionContainer'
 import { WalletCard, WalletCards } from '../components/PageSectionWallets'
 import SectionDivider from '../components/SectionDivider'
+import SimpleLink from '../components/SimpleLink'
 import useWallets from '../hooks/useWallets'
 
 const exchangesQuery = graphql`
@@ -99,7 +101,7 @@ const CustomPage = (props: PageProps) => {
                   and <strong>ensures long-term scalability without compromising security.</strong>
                 </p>
               </TextElement>
-              <video muted playsInline preload="auto" autoPlay loop>
+              <video muted playsInline preload="auto" autoPlay loop style={{ width: '100%', maxHeight: 500 }}>
                 <source src={blobVideoUrl} type="video/mp4" />
               </video>
             </SideBySide>
@@ -176,25 +178,25 @@ const CustomPage = (props: PageProps) => {
             <TextElement>
               <h2>Get ALPH</h2>
               <p>
-                You can get ALPH by{' '}
-                <strong>
-                  buying it with traditional fiat currency, exchanging it with another cryptocurrency, or bridging from
-                  another ecosystem.
-                </strong>
+                <strong>There are many ways to get ALPH.</strong> You can it some with traditional fiat currency,
+                exchanging it with another cryptocurrency, or bridging from another ecosystem.
               </p>
             </TextElement>
             <SubheaderContent>
-              <Grid columns={4} gap="small">
+              <Grid columns={2} gap="small">
                 {exchanges.map(
                   (exchange) =>
                     exchange &&
                     exchange.title &&
                     exchange.url && (
-                      <TextElement key={exchange.title} url={exchange.url}>
-                        <CardImage src={exchange.logo?.publicURL ?? ''} alt={exchange.title} rounded />
-                        <h3>{exchange.title}</h3>
-                        <p>{exchange.description}</p>
-                      </TextElement>
+                      <ExchangeItem key={exchange.title} url={exchange.url}>
+                        <CardImage src={exchange.logo?.publicURL ?? ''} alt={exchange.title} rounded size={50} />
+                        <TextElement isSmall noMargin>
+                          <p>
+                            <strong>{exchange.title}</strong> — {exchange.description}
+                          </p>
+                        </TextElement>
+                      </ExchangeItem>
                     )
                 )}
               </Grid>
@@ -311,3 +313,23 @@ const CustomPage = (props: PageProps) => {
 }
 
 export default CustomPage
+
+const ExchangeItem = styled(SimpleLink)`
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+
+  &:hover {
+    :after {
+      position: absolute;
+      content: '';
+      right: -10px;
+      left: -10px;
+      top: -10px;
+      bottom: -10px;
+      border-radius: var(--radius);
+      background-color: ${({ theme }) => theme.bgSecondary};
+      z-index: -1;
+  }
+`

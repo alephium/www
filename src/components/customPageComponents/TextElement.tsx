@@ -6,6 +6,7 @@ export interface TextElementProps {
   isSmall?: boolean
   isBodySmall?: boolean
   isCentered?: boolean
+  noMargin?: boolean
   className?: string
   noHeadingsMargins?: boolean
 }
@@ -15,6 +16,14 @@ const TextElement = styled.div<TextElementProps>`
     isCentered &&
     css`
       text-align: center;
+    `}
+
+  ${({ noMargin }) =>
+    noMargin &&
+    css`
+      * {
+        margin: 0;
+      }
     `}
 
   > h1,
