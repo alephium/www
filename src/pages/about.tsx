@@ -2,7 +2,6 @@ import { graphql, PageProps, useStaticQuery } from 'gatsby'
 
 import Page from '../components/customPageComponents/Page'
 import SubpageHeroSection from '../components/customPageComponents/SubpageImageHeroSection'
-import SectionDivider from '../components/SectionDivider'
 
 const aboutQuery = graphql`
   query AboutPage {
@@ -29,8 +28,6 @@ const CustomPage = (props: PageProps) => {
             <hr />
             <p>About</p>
           </SubpageHeroSection>
-
-          <SectionDivider />
         </>
       }
     />

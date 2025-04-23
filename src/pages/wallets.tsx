@@ -83,8 +83,6 @@ const CustomPage = (props: PageProps) => {
             </p>
           </SubpageHeroSection>
 
-          <SectionDivider />
-
           <SubpageSection>
             <TextElement>
               <h2>Why Choose an Alephium Wallet?</h2>

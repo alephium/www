@@ -45,8 +45,6 @@ const CustomPage = (props: PageProps) => {
             <Button url="../assets/brand.zip">Download assets</Button>
           </SubpageHeroSection>
 
-          <SectionDivider />
-
           <SubpageSection>
             <TextElement>
               <h2>Alephium Logo</h2>

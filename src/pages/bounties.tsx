@@ -47,8 +47,6 @@ const CustomPage = (props: PageProps) => {
             </p>
           </SubpageHeroSection>
 
-          <SectionDivider />
-
           <SubpageSection>
             <TextElement>
               <h2>How to participate?</h2>

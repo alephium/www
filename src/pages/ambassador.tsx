@@ -47,8 +47,6 @@ const CustomPage = (props: PageProps) => {
             </p>
           </SubpageHeroSection>
 
-          <SectionDivider />
-
           <SubpageSection>
             <TextElement>
               <h2>Why Become an Alephium Ambassador?</h2>
