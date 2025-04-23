@@ -9,10 +9,11 @@ interface SubpageSectionProps extends HTMLAttributes<HTMLDivElement> {
   fullWidth?: boolean
   wide?: boolean
   narrow?: boolean
+  dark?: boolean
 }
 
-const SubpageSection = ({ children, Parallax, fullWidth, wide, narrow, ...props }: SubpageSectionProps) => (
-  <SubpageSectionStyled {...props}>
+const SubpageSection = ({ children, Parallax, fullWidth, wide, narrow, dark, ...props }: SubpageSectionProps) => (
+  <SubpageSectionStyled dark={dark} {...props}>
     {fullWidth ? (
       children
     ) : (
@@ -26,9 +27,12 @@ const SubpageSection = ({ children, Parallax, fullWidth, wide, narrow, ...props 
 
 export default SubpageSection
 
-const SubpageSectionStyled = styled.section`
+const SubpageSectionStyled = styled.section<{ dark?: boolean }>`
   position: relative;
-
   padding-top: var(--spacing-16);
   padding-bottom: var(--spacing-16);
+  background-color: ${({ theme, dark }) => (dark ? theme.bgSurface : theme.bgTertiary)};
+  margin: var(--spacing-3);
+  border-radius: var(--radius-big);
+  border: ${({ theme, dark }) => (dark ? `1px solid ${theme.borderPrimary}` : 'none')};
 `

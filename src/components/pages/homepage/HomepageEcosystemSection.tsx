@@ -18,7 +18,7 @@ const HomepageEcosystemSection = () => {
 
   return (
     <>
-      <SubpageSection>
+      <SubpageSection dark>
         <TextElement isCentered>
           <h2>
             Built on Alephium.
@@ -54,7 +54,8 @@ const HomepageEcosystemSection = () => {
 const LogosContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
   padding: 1rem 0;
   margin-top: var(--spacing-8);

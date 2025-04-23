@@ -78,15 +78,16 @@ const AnimatedCard = ({ children }: { children: ReactNode }) => {
 
 const cardStyles = css`
   border-radius: var(--radius);
-  border: 2px solid ${({ theme }) => theme.borderPrimary};
-  background-color: ${({ theme }) => theme.bgSecondary};
+  background-color: ${({ theme }) => theme.bgSurface};
+  border: 1px solid ${({ theme }) => theme.borderPrimary};
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.4);
   background-clip: padding-box;
   text-decoration: none;
-  padding: 20px;
   transition: all 0.1s ease-out;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  overflow: hidden;
 `
 
 const Card = styled.div`
@@ -95,8 +96,9 @@ const Card = styled.div`
 
 const TextElementStyled = styled(TextElement)`
   flex: 1;
+
   p {
-    color: ${({ theme }) => theme.textPrimaryVariation};
+    font-weight: var(--fontWeight-medium);
   }
 `
 
@@ -115,21 +117,18 @@ const AnimatedCardStyled = styled(motion.div)`
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 14px;
-  background-color: ${({ theme }) => theme.bgSecondary};
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
+  background-color: ${({ theme }) => theme.bgSurface};
   transition: box-shadow 0.2s ease-out;
   perspective: 200px;
 
   @media ${deviceBreakPoints.mobile} {
     & + & {
-      margin-top: var(--spacing-4);
+      margin-top: var(--spacing-3);
     }
   }
 
   &:hover {
     transform: translateZ(6px);
-    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.3);
     z-index: 1;
   }
 

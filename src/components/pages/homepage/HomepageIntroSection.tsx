@@ -8,6 +8,7 @@ import CardImageOverlay from '../../customPageComponents/CardImageOverlay'
 import SubheaderContent from '../../customPageComponents/SubheaderContent'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextCard from '../../customPageComponents/TextCard'
+import TextCardContent from '../../customPageComponents/TextCardContent'
 import TextElement from '../../customPageComponents/TextElement'
 
 export const query = graphql`
@@ -56,15 +57,13 @@ const HomepageIntroSection = ({ cards }: Queries.HomepageIntroSectionFragment) =
             card &&
             card.link?.url && (
               <TextCard isAnimated variants={cardVariants} key={card.title}>
-                <CardImageOverlay
-                  image={card.image?.childImageSharp?.gatsbyImageData}
-                  overlayTitle={card.title}
-                  rounded
-                />
-                <ParagraphStyled>{card.description}</ParagraphStyled>
-                <Button url={card.link?.url} squared textAlign="center">
-                  {card.actionText}
-                </Button>
+                <CardImageOverlay image={card.image?.childImageSharp?.gatsbyImageData} overlayTitle={card.title} />
+                <TextCardContent>
+                  <ParagraphStyled>{card.description}</ParagraphStyled>
+                  <Button url={card.link?.url} squared textAlign="center">
+                    {card.actionText}
+                  </Button>
+                </TextCardContent>
               </TextCard>
             )
         )}
@@ -102,5 +101,4 @@ const IntroColumns = styled(motion.div)`
 
 const ParagraphStyled = styled.p`
   flex: 1;
-  padding: 0 10px;
 `

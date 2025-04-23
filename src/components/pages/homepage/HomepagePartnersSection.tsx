@@ -46,9 +46,10 @@ const HomepagePartnersSection = (content: Queries.HomepagePartnersSectionFragmen
 const PartnersGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: auto;
-  row-gap: 1rem;
-  column-gap: 0.5rem;
+  grid-template-rows: repeat(2, auto);
+  justify-items: center;
+  align-items: center;
+  gap: 2rem 1rem;
   max-width: 1000px;
   margin: 0 auto;
 `
@@ -67,7 +68,9 @@ const PartnerLogo = styled.img`
 
 const PartnerLabel = styled.div`
   font-size: var(--fontSize-18);
-  margin-top: 0.25rem;
+  max-width: 120px;
+  overflow-wrap: break-word;
+  margin-top: var(--spacing-3);
 `
 
 export default HomepagePartnersSection

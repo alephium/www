@@ -12,6 +12,7 @@ import SubpageVideoHeroSection from '../components/customPageComponents/SubpageV
 import TextCard from '../components/customPageComponents/TextCard'
 import TextElement from '../components/customPageComponents/TextElement'
 import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
+import PageCardSectionContainer from '../components/PageCardSectionContainer'
 import PageSectionContainer from '../components/PageSectionContainer'
 import { WalletCard, WalletCards } from '../components/PageSectionWallets'
 import SectionDivider from '../components/SectionDivider'
@@ -232,9 +233,7 @@ const CustomPage = (props: PageProps) => {
             </SubpageSection>
           </SubpageSection>
 
-          <SectionDivider />
-
-          <PageSectionContainer fullHeight wide justifyContent="center">
+          <PageCardSectionContainer fullHeight wide justifyContent="center">
             <GatsbyImageWrapper
               image={ecosystemImageData}
               alt="Ecosystem background"
@@ -253,9 +252,7 @@ const CustomPage = (props: PageProps) => {
               </p>
               <Button url="https://alph.land">See all apps</Button>
             </TextElement>
-          </PageSectionContainer>
-
-          <SectionDivider />
+          </PageCardSectionContainer>
 
           <SubpageSection>
             <TextElement>

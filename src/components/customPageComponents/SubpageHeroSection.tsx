@@ -39,7 +39,6 @@ const SubpageHeroSectionStyled = styled.section`
   display: flex;
   border: 2px solid ${({ theme }) => theme.borderPrimary};
   border-radius: var(--radius-big);
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.9);
 `
 
 const TextElementStyled = styled(TextElement)`
