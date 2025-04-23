@@ -1,4 +1,4 @@
-import { motion, useMotionValue, useTransform, Variants } from 'framer-motion'
+import { motion, useMotionValue, useSpring, useTransform, Variants } from 'framer-motion'
 import { PointerEvent, ReactNode } from 'react'
 import styled, { css } from 'styled-components'
 
@@ -38,15 +38,19 @@ const TextCard = ({ children, url, isAnimated = false, variants, ...textElementP
 export default TextCard
 
 const AnimatedCard = ({ children }: { children: ReactNode }) => {
-  const angle = 0.3
+  const angle = 0.5
 
   const y = useMotionValue(0.5)
   const x = useMotionValue(0.5)
 
-  const rotateY = useTransform(x, [0, 1], [-angle, angle], {
+  const springConfig = { stiffness: 200, damping: 20 }
+  const springX = useSpring(x, springConfig)
+  const springY = useSpring(y, springConfig)
+
+  const rotateY = useTransform(springX, [0, 1], [angle, -angle], {
     clamp: true
   })
-  const rotateX = useTransform(y, [0, 1], [angle, -angle], {
+  const rotateX = useTransform(springY, [0, 1], [-angle, angle], {
     clamp: true
   })
 
@@ -59,7 +63,6 @@ const AnimatedCard = ({ children }: { children: ReactNode }) => {
 
   return (
     <AnimatedCardStyled
-      whileHover={{ translateZ: 5, zIndex: 10 }}
       onPointerMove={onMove}
       onPointerLeave={() => {
         x.set(0.5, true)
@@ -69,7 +72,6 @@ const AnimatedCard = ({ children }: { children: ReactNode }) => {
         rotateY,
         rotateX
       }}
-      transition={{ duration: 0.2 }}
     >
       {children}
     </AnimatedCardStyled>
@@ -113,13 +115,13 @@ const SimpleLinkStyled = styled(SimpleLink)<Pick<TextCardProps, 'isAnimated'>>`
 
 const AnimatedCardStyled = styled(motion.div)`
   ${cardStyles}
+  transform-style: preserve-3d;
 
   display: flex;
   flex-direction: column;
   position: relative;
   background-color: ${({ theme }) => theme.bgSurface};
   transition: box-shadow 0.2s ease-out;
-  perspective: 200px;
 
   @media ${deviceBreakPoints.mobile} {
     & + & {
@@ -139,6 +141,7 @@ const AnimatedCardStyled = styled(motion.div)`
 `
 
 const AnimatedCardContainer = styled(motion.div)`
+  perspective: 200px;
   display: flex;
   position: relative;
   max-width: 400px;
