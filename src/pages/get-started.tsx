@@ -81,8 +81,6 @@ const CustomPage = (props: PageProps) => {
             </p>
           </SubpageVideoHeroSection>
 
-          <SectionDivider />
-
           <SubpageSection>
             <SideBySide>
               <TextElement isSmall>

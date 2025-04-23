@@ -43,8 +43,6 @@ const CustomPage = (props: PageProps) => {
             </p>
           </SubpageHeroSection>
 
-          <SectionDivider />
-
           <SubpageSection>
             <TextElement>
               <h2>Our Funding Programs</h2>

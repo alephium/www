@@ -38,8 +38,6 @@ const CustomPage = (props: PageProps) => {
             </p>
           </SubpageHeroSection>
 
-          <SectionDivider />
-
           <PageSectionMilestones />
 
           <SectionDivider />
