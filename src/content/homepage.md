@@ -4,7 +4,7 @@ intro:
     - title: Get started
       image: ../images/light-rays.png
       description: What powers Alephium? Discover $ALPH and how it fuels the network.
-      actionText: Learn more
+      actionText: Learn about Alephium
       link:
         url: /get-started
     - title: Build
