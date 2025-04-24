@@ -335,11 +335,12 @@ const ExchangeItem = styled(SimpleLink)`
   display: flex;
   align-items: center;
   gap: var(--spacing-4);
+  z-index: 1;
 
   &:hover {
-    :after {
-      position: absolute;
+    :before {
       content: '';
+      position: absolute;
       right: -10px;
       left: -10px;
       top: -10px;
