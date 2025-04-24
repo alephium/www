@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 import Button from '../components/Button'
 import CardImage from '../components/customPageComponents/CardImage'
+import CardImageOverlay from '../components/customPageComponents/CardImageOverlay'
 import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
 import SideBySide from '../components/customPageComponents/SideBySide'
@@ -10,11 +11,12 @@ import SubheaderContent from '../components/customPageComponents/SubheaderConten
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import SubpageVideoHeroSection from '../components/customPageComponents/SubpageVideoHeroSection'
 import TextCard from '../components/customPageComponents/TextCard'
+import TextCardContent from '../components/customPageComponents/TextCardContent'
 import TextElement from '../components/customPageComponents/TextElement'
 import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import PageCardSectionContainer from '../components/PageCardSectionContainer'
 import PageSectionContainer from '../components/PageSectionContainer'
-import { WalletCard, WalletCards } from '../components/PageSectionWallets'
+import { WalletCards } from '../components/PageSectionWallets'
 import SectionDivider from '../components/SectionDivider'
 import SimpleLink from '../components/SimpleLink'
 import useWallets from '../hooks/useWallets'
@@ -147,51 +149,45 @@ const CustomPage = (props: PageProps) => {
             </PageSectionContainer>
             <PageSectionContainer>
               <WalletCards>
-                <WalletCard
-                  title="Desktop wallet"
-                  description="Alephium’s flagship wallet. Ready for everything, from daily management tasks to smart contracts deployment, privacy & DeFi."
-                  screenshot={desktopWallet}
-                  color="rgb(91, 0, 255)"
-                  actions={[
-                    {
-                      title: 'Get the desktop wallet',
-                      link: wallets?.desktop?.url ?? ''
-                    }
-                  ]}
-                />
-
-                <WalletCard
-                  title="Extension wallet"
-                  description="The wallet in your browser. Get access to the latest features with a focus on DeFi."
-                  screenshot={extensionWallet}
-                  color="rgb(24, 215, 255)"
-                  actions={[
-                    {
-                      title: 'Chrome',
-                      link: wallets?.extension?.urls?.chrome ?? ''
-                    },
-                    {
-                      title: 'Firefox',
-                      link: wallets?.extension?.urls?.firefox ?? ''
-                    }
-                  ]}
-                />
-                <WalletCard
-                  title="Mobile wallet"
-                  description="Alephium on the go. First-class UX. Available on Android and iOS."
-                  screenshot={mobileWallet}
-                  color="rgb(228, 124, 12)"
-                  actions={[
-                    {
-                      title: 'Android',
-                      link: wallets?.mobile?.urls?.android ?? ''
-                    },
-                    {
-                      title: 'iOS',
-                      link: wallets?.mobile?.urls?.ios ?? ''
-                    }
-                  ]}
-                />
+                <TextCard>
+                  <CardImageOverlay image={desktopWallet?.childImageSharp?.gatsbyImageData} overlayTitle="Desktop" />
+                  <TextCardContent>
+                    <p>
+                      Alephium’s flagship wallet. Ready for everything, from daily management tasks to smart contracts
+                      deployment, privacy & DeFi.
+                    </p>
+                    <Button url={wallets?.desktop?.url ?? ''} squared textAlign="center">
+                      Get the desktop wallet
+                    </Button>
+                  </TextCardContent>
+                </TextCard>
+                <TextCard>
+                  <CardImageOverlay
+                    image={extensionWallet?.childImageSharp?.gatsbyImageData}
+                    overlayTitle="Extension"
+                  />
+                  <TextCardContent>
+                    <p>The wallet in your browser. Get access to the latest features with a focus on DeFi.</p>
+                    <Button url={wallets?.extension?.urls?.chrome ?? ''} squared textAlign="center">
+                      Chrome
+                    </Button>
+                    <Button url={wallets?.extension?.urls?.firefox ?? ''} squared textAlign="center">
+                      Firefox
+                    </Button>
+                  </TextCardContent>
+                </TextCard>
+                <TextCard>
+                  <CardImageOverlay image={mobileWallet?.childImageSharp?.gatsbyImageData} overlayTitle="Mobile" />
+                  <TextCardContent>
+                    <p>Alephium on the go. First-class UX. Available on Android and iOS.</p>
+                    <Button url={wallets?.mobile?.urls?.android ?? ''} squared textAlign="center">
+                      Android
+                    </Button>
+                    <Button url={wallets?.mobile?.urls?.ios ?? ''} squared textAlign="center">
+                      iOS
+                    </Button>
+                  </TextCardContent>
+                </TextCard>
               </WalletCards>
             </PageSectionContainer>
           </SubpageSection>

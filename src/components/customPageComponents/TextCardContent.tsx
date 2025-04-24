@@ -4,8 +4,12 @@ const TextCardContent = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding: var(--spacing-3);
-  gap: var(--spacing-4);
+  padding: var(--spacing-2);
+  gap: var(--spacing-2);
+
+  p {
+    flex: 1;
+  }
 `
 
 export default TextCardContent

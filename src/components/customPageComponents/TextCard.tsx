@@ -22,17 +22,19 @@ const TextCard = ({ children, url, isAnimated = false, variants, ...textElementP
     </TextElementStyled>
   )
 
-  const card = isAnimated ? <AnimatedCard>{text}</AnimatedCard> : <Card>{text}</Card>
+  const card = (
+    <CardContainer variants={variants} isAnimated={isAnimated}>
+      {isAnimated ? <AnimatedCard>{text}</AnimatedCard> : <Card>{text}</Card>}
+    </CardContainer>
+  )
 
-  const linkedCard = url ? (
+  return url ? (
     <SimpleLinkStyled url={url} isAnimated={isAnimated}>
       {card}
     </SimpleLinkStyled>
   ) : (
     card
   )
-
-  return isAnimated ? <AnimatedCardContainer variants={variants}>{linkedCard}</AnimatedCardContainer> : linkedCard
 }
 
 export default TextCard
@@ -79,10 +81,14 @@ const AnimatedCard = ({ children }: { children: ReactNode }) => {
 }
 
 const cardStyles = css`
+  display: flex;
+  position: relative;
+  flex-direction: column;
   border-radius: var(--radius);
-  background-color: ${({ theme }) => theme.bgSurface};
-  border: 1px solid ${({ theme }) => theme.borderPrimary};
+  background-color: ${({ theme }) => theme.bgSecondary};
+  border: 2px solid ${({ theme }) => theme.borderPrimary};
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.4);
+  max-width: 420px;
   background-clip: padding-box;
   text-decoration: none;
   transition: all 0.1s ease-out;
@@ -97,6 +103,8 @@ const Card = styled.div`
 `
 
 const TextElementStyled = styled(TextElement)`
+  display: flex;
+  flex-direction: column;
   flex: 1;
 
   p {
@@ -105,10 +113,10 @@ const TextElementStyled = styled(TextElement)`
 `
 
 const SimpleLinkStyled = styled(SimpleLink)<Pick<TextCardProps, 'isAnimated'>>`
+  display: flex;
   ${({ isAnimated }) =>
     isAnimated &&
     css`
-      display: flex;
       perspective: 200px;
     `}
 `
@@ -116,12 +124,6 @@ const SimpleLinkStyled = styled(SimpleLink)<Pick<TextCardProps, 'isAnimated'>>`
 const AnimatedCardStyled = styled(motion.div)`
   ${cardStyles}
   transform-style: preserve-3d;
-
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  background-color: ${({ theme }) => theme.bgSurface};
-  transition: box-shadow 0.2s ease-out;
 
   @media ${deviceBreakPoints.mobile} {
     & + & {
@@ -133,18 +135,13 @@ const AnimatedCardStyled = styled(motion.div)`
     transform: translateZ(6px);
     z-index: 1;
   }
-
-  > div {
-    display: flex;
-    flex-direction: column;
-  }
 `
 
-const AnimatedCardContainer = styled(motion.div)`
-  perspective: 200px;
+const CardContainer = styled(motion.div)<{ isAnimated?: boolean }>`
+  ${({ isAnimated }) => isAnimated && 'perspective: 200px;'};
   display: flex;
   position: relative;
-  max-width: 400px;
+  max-width: 420px;
 
   @media ${deviceBreakPoints.mobile} {
     flex: 1;
