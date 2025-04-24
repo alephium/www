@@ -88,151 +88,153 @@ const CustomPage = (props: PageProps) => {
                 <h3>Telegram Community Groups</h3>
               </TextElement>
 
-              <Grid columns={3} gap="small">
-                <ClickableBox url="https://t.me/Alephiumfr">
-                  <Emoji>🥖</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>France</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+              <SubheaderContent>
+                <Grid columns={3} gap="small">
+                  <ClickableBox url="https://t.me/Alephiumfr">
+                    <Emoji>🥖</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Telegram <strong>France</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://t.me/alphgermanofficial">
-                  <Emoji>🥨</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>Germany</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                  <ClickableBox url="https://t.me/alphgermanofficial">
+                    <Emoji>🥨</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Telegram <strong>Germany</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://t.me/Alephium_pt">
-                  <Emoji>🐟</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>Portugal/Brazil</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                  <ClickableBox url="https://t.me/Alephium_pt">
+                    <Emoji>🐟</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Telegram <strong>Portugal/Brazil</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://t.me/alephiumgroup_ru">
-                  <Emoji>🥃</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>Russia</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                  <ClickableBox url="https://t.me/alephiumgroup_ru">
+                    <Emoji>🥃</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Telegram <strong>Russia</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://t.me/minerosAlephium">
-                  <Emoji>🍷</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>Spain</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                  <ClickableBox url="https://t.me/minerosAlephium">
+                    <Emoji>🍷</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Telegram <strong>Spain</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://t.me/alephiumCN">
-                  <Emoji>🍵</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>China</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                  <ClickableBox url="https://t.me/alephiumCN">
+                    <Emoji>🍵</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Telegram <strong>China</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://t.me/AlephiumTurkey">
-                  <Emoji>🍢</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>Turkey</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                  <ClickableBox url="https://t.me/AlephiumTurkey">
+                    <Emoji>🍢</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Telegram <strong>Turkey</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://t.me/AlephiumgroupNL">
-                  <Emoji>🍟</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>The Netherlands</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                  <ClickableBox url="https://t.me/AlephiumgroupNL">
+                    <Emoji>🍟</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Telegram <strong>The Netherlands</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://t.me/alephiumvn">
-                  <Emoji>🍜</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>Vietnam</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                  <ClickableBox url="https://t.me/alephiumvn">
+                    <Emoji>🍜</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Telegram <strong>Vietnam</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://t.me/AlephiumID">
-                  <Emoji>🥥</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>Indonesia</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                  <ClickableBox url="https://t.me/AlephiumID">
+                    <Emoji>🥥</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Telegram <strong>Indonesia</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://t.me/alephiumPL">
-                  <Emoji>🥩</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>Poland</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                  <ClickableBox url="https://t.me/alephiumPL">
+                    <Emoji>🥩</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Telegram <strong>Poland</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://t.me/AlephiumGreece">
-                  <Emoji>🥗</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>Greece</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                  <ClickableBox url="https://t.me/AlephiumGreece">
+                    <Emoji>🥗</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Telegram <strong>Greece</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://t.me/AlephiumIndia">
-                  <Emoji>🍛</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>India</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                  <ClickableBox url="https://t.me/AlephiumIndia">
+                    <Emoji>🍛</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Telegram <strong>India</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://t.me/Alephium_it">
-                  <Emoji>🍕</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>Italy</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                  <ClickableBox url="https://t.me/Alephium_it">
+                    <Emoji>🍕</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Telegram <strong>Italy</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://t.me/AlephiumArabia">
-                  <Emoji>🥙</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>Arabic</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                  <ClickableBox url="https://t.me/AlephiumArabia">
+                    <Emoji>🥙</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Telegram <strong>Arabic</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://t.me/AlephiumNigeria">
-                  <Emoji>🍲</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>Nigeria</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-              </Grid>
+                  <ClickableBox url="https://t.me/AlephiumNigeria">
+                    <Emoji>🍲</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Telegram <strong>Nigeria</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
+                </Grid>
+              </SubheaderContent>
             </SubheaderContent>
 
             <SubheaderContent>
@@ -240,142 +242,144 @@ const CustomPage = (props: PageProps) => {
                 <h3>Twitter/X Community Accounts</h3>
               </TextElement>
 
-              <Grid columns={3} gap="small">
-                <ClickableBox url="https://twitter.com/Alephiumfr">
-                  <Emoji>🥖</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Twitter/X <strong>France</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+              <SubheaderContent>
+                <Grid columns={3} gap="small">
+                  <ClickableBox url="https://twitter.com/Alephiumfr">
+                    <Emoji>🥖</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Twitter/X <strong>France</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://twitter.com/Alephiumde">
-                  <Emoji>🥨</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Twitter/X <strong>Germany</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                  <ClickableBox url="https://twitter.com/Alephiumde">
+                    <Emoji>🥨</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Twitter/X <strong>Germany</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://twitter.com/Alephium_pt">
-                  <Emoji>🐟</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Twitter/X <strong>Portugal/Brazil</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                  <ClickableBox url="https://twitter.com/Alephium_pt">
+                    <Emoji>🐟</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Twitter/X <strong>Portugal/Brazil</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://twitter.com/AlephiumRU">
-                  <Emoji>🥃</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Twitter/X <strong>Russia</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                  <ClickableBox url="https://twitter.com/AlephiumRU">
+                    <Emoji>🥃</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Twitter/X <strong>Russia</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://twitter.com/FanAlph">
-                  <Emoji>🍵</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Twitter/X <strong>China</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                  <ClickableBox url="https://twitter.com/FanAlph">
+                    <Emoji>🍵</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Twitter/X <strong>China</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://twitter.com/AlphTurkey">
-                  <Emoji>🍢</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Twitter/X <strong>Turkey</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                  <ClickableBox url="https://twitter.com/AlphTurkey">
+                    <Emoji>🍢</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Twitter/X <strong>Turkey</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://twitter.com/AlephiumNL">
-                  <Emoji>🍟</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Twitter/X <strong>Netherlands</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                  <ClickableBox url="https://twitter.com/AlephiumNL">
+                    <Emoji>🍟</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Twitter/X <strong>Netherlands</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://twitter.com/AlephiumVN">
-                  <Emoji>🍜</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Twitter/X <strong>Vietnam</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                  <ClickableBox url="https://twitter.com/AlephiumVN">
+                    <Emoji>🍜</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Twitter/X <strong>Vietnam</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://twitter.com/AlephiumID">
-                  <Emoji>🥥</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Twitter/X <strong>Indonesia</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                  <ClickableBox url="https://twitter.com/AlephiumID">
+                    <Emoji>🥥</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Twitter/X <strong>Indonesia</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://twitter.com/AlephiumPoland">
-                  <Emoji>🥩</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Twitter/X <strong>Poland</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                  <ClickableBox url="https://twitter.com/AlephiumPoland">
+                    <Emoji>🥩</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Twitter/X <strong>Poland</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://twitter.com/AlephiumGreece">
-                  <Emoji>🥗</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Twitter/X <strong>Greece</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                  <ClickableBox url="https://twitter.com/AlephiumGreece">
+                    <Emoji>🥗</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Twitter/X <strong>Greece</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://twitter.com/Alephium_it">
-                  <Emoji>🍕</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Twitter/X <strong>Italy</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                  <ClickableBox url="https://twitter.com/Alephium_it">
+                    <Emoji>🍕</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Twitter/X <strong>Italy</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://twitter.com/AlephiumArabia">
-                  <Emoji>🥙</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Twitter/X <strong>Arabic</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                  <ClickableBox url="https://twitter.com/AlephiumArabia">
+                    <Emoji>🥙</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Twitter/X <strong>Arabic</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://twitter.com/Alephiumua">
-                  <Emoji>🥟</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Twitter/X <strong>Ukraine</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                  <ClickableBox url="https://twitter.com/Alephiumua">
+                    <Emoji>🥟</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Twitter/X <strong>Ukraine</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://twitter.com/alephiumafrique">
-                  <Emoji>🌍</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Twitter/X <strong>Africa</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-              </Grid>
+                  <ClickableBox url="https://twitter.com/alephiumafrique">
+                    <Emoji>🌍</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Twitter/X <strong>Africa</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
+                </Grid>
+              </SubheaderContent>
             </SubheaderContent>
 
             <SubheaderContent>
@@ -383,52 +387,54 @@ const CustomPage = (props: PageProps) => {
                 <h3>Alephium Community Blogs</h3>
               </TextElement>
 
-              <Grid columns={3} gap="small">
-                <ClickableBox url="https://medium.com/alephiumfr">
-                  <Emoji>🥖</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Blog <strong>France</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+              <SubheaderContent>
+                <Grid columns={3} gap="small">
+                  <ClickableBox url="https://medium.com/alephiumfr">
+                    <Emoji>🥖</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Blog <strong>France</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://medium.com/@alephiumde">
-                  <Emoji>🥨</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Blog <strong>Germany</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                  <ClickableBox url="https://medium.com/@alephiumde">
+                    <Emoji>🥨</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Blog <strong>Germany</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://medium.com/@alephium-pt/">
-                  <Emoji>🐟</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Blog <strong>Portugal/Brazil</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                  <ClickableBox url="https://medium.com/@alephium-pt/">
+                    <Emoji>🐟</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Blog <strong>Portugal/Brazil</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://alephiumvn.medium.com/">
-                  <Emoji>🍜</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Blog <strong>Vietnam</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                  <ClickableBox url="https://alephiumvn.medium.com/">
+                    <Emoji>🍜</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Blog <strong>Vietnam</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
 
-                <ClickableBox url="https://alephium.it/blog">
-                  <Emoji>🍕</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Blog <strong>Italy</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-              </Grid>
+                  <ClickableBox url="https://alephium.it/blog">
+                    <Emoji>🍕</Emoji>
+                    <TextElement isSmall noMargin>
+                      <p>
+                        Alephium Blog <strong>Italy</strong>
+                      </p>
+                    </TextElement>
+                  </ClickableBox>
+                </Grid>
+              </SubheaderContent>
             </SubheaderContent>
           </SubpageSection>
 
