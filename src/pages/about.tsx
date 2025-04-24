@@ -18,8 +18,9 @@ const CustomPage = (props: PageProps) => {
     <Page
       {...props}
       seo={{
-        title: 'About Alephium | Building the Future of Proof-of-Work',
-        description: "Learn about Alephium's mission, vision, and the people building real decentralized tech."
+        title: 'About Alephium | Sharded Layer 1 Blockchain with PoLW & Smart Contracts',
+        description:
+          'Alephium is a scalable, energy-efficient Layer 1 blockchain combining sharding, smart contracts, and Proof-of-Less-Work (PoLW) to deliver high throughput and sustainability. Explore our mission, core contributors, and ecosystem.'
       }}
       content={
         <>
