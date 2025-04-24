@@ -8,13 +8,14 @@ interface ButtonProps {
   url?: string
   squared?: boolean
   textAlign?: 'left' | 'center'
+  big?: boolean
   className?: string
   trackingName?: string
   disabled?: boolean
   children?: ReactNode
 }
 
-const Button = ({ onClick, className, children, url, trackingName, disabled }: ButtonProps) =>
+const Button = ({ onClick, className, children, url, trackingName, disabled, big }: ButtonProps) =>
   url ? (
     <a
       href={url}
@@ -43,7 +44,7 @@ export default styled(Button)`
   background-color: rgba(255, 255, 255, 0.9);
   color: black;
   border-radius: ${({ squared }) => (squared ? '9px' : '50px')};
-  padding: 12px 16px;
+  padding: 12px 20px;
   border: 0 solid;
   text-decoration: none;
   display: inline-flex;
@@ -52,7 +53,7 @@ export default styled(Button)`
   /* The following rules are the same as in the ArrowedLink, maybe extract? */
   align-items: center;
   font-weight: var(--fontWeight-semiBold);
-  font-size: var(--fontSize-20);
+  font-size: ${({ big }) => (big ? 'var(--fontSize-24)' : 'var(--fontSize-20)')};
   transition: all 0.1s ease-out;
 
   ${({ disabled }) =>
@@ -69,8 +70,8 @@ export default styled(Button)`
         `}
 
   .arrow {
-    width: 14px;
-    margin-left: var(--spacing-1);
+    width: ${({ big }) => (big ? '18px' : '14px')};
+    margin-left: ${({ big }) => (big ? 'var(--spacing-2)' : 'var(--spacing-1)')};
     fill: inherit;
   }
 `

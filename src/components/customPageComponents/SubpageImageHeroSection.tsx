@@ -14,11 +14,13 @@ interface SubpageImageHeroSectionProps {
     } | null
   } | null
   backgroundImageAlt?: string
+  maxHeight?: string
 }
 
 const SubpageImageHeroSection = ({
   children,
   backgroundImage,
+  maxHeight,
   backgroundImageAlt = ''
 }: SubpageImageHeroSectionProps) => {
   const imageData = backgroundImage?.childImageSharp?.gatsbyImageData
@@ -32,6 +34,7 @@ const SubpageImageHeroSection = ({
             <GatsbyImageWrapper image={image} alt={backgroundImageAlt} style={{ height: '100%' }} objectFit="cover" />
           )
         }
+        maxHeight={maxHeight}
       >
         {children}
       </SubpageHeroSection>

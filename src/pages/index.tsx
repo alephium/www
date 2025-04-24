@@ -28,7 +28,7 @@ export const pageQuery = graphql`
     }
     lighthouseImage: file(relativePath: { eq: "lighthouse.png" }) {
       childImageSharp {
-        gatsbyImageData(width: 1920, layout: CONSTRAINED, transformOptions: { fit: COVER, cropFocus: CENTER })
+        gatsbyImageData(quality: 80)
       }
     }
   }

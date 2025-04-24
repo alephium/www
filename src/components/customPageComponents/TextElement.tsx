@@ -46,14 +46,15 @@ const TextElement = styled.div<TextElementProps>`
   }
 
   > h1 {
+    line-height: 1;
     font-family: 'Sentient';
-    font-size: var(--fontSize-60);
+    font-size: var(--fontSize-70);
     font-weight: var(--fontWeight-semiBold);
   }
 
   > h2 {
     font-family: 'Sentient';
-    font-size: var(--fontSize-56);
+    font-size: var(--fontSize-60);
     line-height: 1;
     margin-bottom: var(--spacing-6);
   }
@@ -139,7 +140,7 @@ const TextElement = styled.div<TextElementProps>`
   > ul {
     padding-inline-start: 10px;
     list-style-type: none;
-    color: ${({ theme }) => theme.textPrimaryVariation};
+    color: ${({ theme }) => theme.textPrimary};
 
     > li:before {
       content: '—';

@@ -2,26 +2,28 @@ import { forwardRef, ReactNode } from 'react'
 import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../../styles/global-style'
-import HeroPageSectionContainer from '../Hero/HeroPageSectionContainer'
+import PageSectionContainer from '../PageSectionContainer'
 import TextElement from './TextElement'
 
 interface SubpageHeroSectionProps extends React.HTMLAttributes<HTMLElement> {
   children: ReactNode
   mediaContent: ReactNode
+  alignContent?: 'left' | 'center' | 'bottom'
+  maxHeight?: string
 }
 
 const SubpageHeroSection = forwardRef<HTMLElement, SubpageHeroSectionProps>(function SubpageHeroSection(
-  { children, mediaContent, ...props },
+  { children, mediaContent, alignContent, maxHeight, ...props },
   ref
 ) {
   return (
-    <SubpageHeroSectionStyled ref={ref} {...props}>
+    <SubpageHeroSectionStyled ref={ref} maxHeight={maxHeight} {...props}>
       <BackgroundMediaWrapper>{mediaContent}</BackgroundMediaWrapper>
-      <HeroPageSectionContainer>
-        <LeftContentWrapper>
-          <LeftContentBackground />
+      <HeroPageSectionContainer alignContent={alignContent}>
+        <ContentWrapper>
+          <ContentBackground />
           <TextElementStyled>{children}</TextElementStyled>
-        </LeftContentWrapper>
+        </ContentWrapper>
       </HeroPageSectionContainer>
     </SubpageHeroSectionStyled>
   )
@@ -29,9 +31,10 @@ const SubpageHeroSection = forwardRef<HTMLElement, SubpageHeroSectionProps>(func
 
 export default SubpageHeroSection
 
-const SubpageHeroSectionStyled = styled.section`
+const SubpageHeroSectionStyled = styled.section<Pick<SubpageHeroSectionProps, 'maxHeight'>>`
   position: relative;
-  min-height: 80vh;
+  height: 80vh;
+  max-height: ${({ maxHeight }) => maxHeight || '80vh'};
   margin: auto;
   width: 90vw;
   overflow: hidden;
@@ -42,11 +45,14 @@ const SubpageHeroSectionStyled = styled.section`
 `
 
 const TextElementStyled = styled(TextElement)`
-  max-width: 500px;
+  max-width: 520px;
+  justify-content: center;
+
   > p {
     color: ${({ theme }) => theme.textSecondary};
     font-weight: var(--fontWeight-semiBold);
     line-height: 1.3;
+    z-index: 1;
 
     @media ${deviceBreakPoints.smallMobile} {
       font-size: 22px;
@@ -65,10 +71,18 @@ const TextElementStyled = styled(TextElement)`
     margin: var(--spacing-5) 0 0;
     border: none;
   }
-  z-index: 1;
 `
 
-const LeftContentWrapper = styled.div`
+const HeroPageSectionContainer = styled(PageSectionContainer)<Pick<SubpageHeroSectionProps, 'alignContent'>>`
+  flex-direction: column;
+  position: relative;
+  display: flex;
+  flex: 1;
+  justify-content: ${({ alignContent }) =>
+    alignContent === 'bottom' ? 'flex-end' : alignContent === 'center' ? 'center' : 'flex-start'};
+`
+
+const ContentWrapper = styled.div<Pick<SubpageHeroSectionProps, 'alignContent'>>`
   margin-right: auto;
   position: relative;
   margin-top: 5%;
@@ -81,7 +95,7 @@ const LeftContentWrapper = styled.div`
   }
 `
 
-const LeftContentBackground = styled.div`
+const ContentBackground = styled.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -93,6 +107,7 @@ const LeftContentBackground = styled.div`
   transform: translateX(-30px);
   filter: blur(60px);
   pointer-events: none;
+  z-index: -1;
 `
 
 const BackgroundMediaWrapper = styled.div`
