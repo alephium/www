@@ -5,7 +5,7 @@ import styled, { ThemeProvider } from 'styled-components'
 import useIsMobile from '../../hooks/useIsMobile'
 import { darkTheme } from '../../styles/themes'
 import GatsbyImageWrapper from '../GatsbyImageWrapper'
-import SubpageHeroSection from './SubpageHeroSection'
+import SubpageHeroSection, { SubpageHeroSectionAlignContent } from './SubpageHeroSection'
 
 interface SubpageVideoHeroSectionProps {
   children: ReactNode
@@ -17,9 +17,10 @@ interface SubpageVideoHeroSectionProps {
       readonly gatsbyImageData: IGatsbyImageData
     } | null
   } | null
+  alignContent?: SubpageHeroSectionAlignContent
 }
 
-const SubpageVideoHeroSection = ({ video, poster, children }: SubpageVideoHeroSectionProps) => {
+const SubpageVideoHeroSection = ({ video, poster, children, alignContent }: SubpageVideoHeroSectionProps) => {
   const innerRef = useRef<HTMLElement>(null)
   const videoRef = useRef<HTMLVideoElement>(null)
   const rafIdRef = useRef<number | null>(null)
@@ -62,6 +63,7 @@ const SubpageVideoHeroSection = ({ video, poster, children }: SubpageVideoHeroSe
       <SubpageHeroSection
         ref={innerRef}
         onPointerMove={!isMobile ? handlePointerMove : undefined}
+        alignContent={alignContent}
         mediaContent={
           <PosterWrapper>
             {poster && <GatsbyImageWrapper image={image} alt="" style={{ height: '100%' }} objectFit="cover" />}

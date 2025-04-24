@@ -78,7 +78,9 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
                 Alephium isn’t just a concept - it’s something we build, together.{' '}
                 <strong>There’s a place for you here and we can’t wait to meet you.</strong>
               </p>
-              <Button url="/get-started">Get started</Button>
+              <Button big url="/get-started">
+                Get started
+              </Button>
             </TextElement>
           </PageSectionContainer>
         </>

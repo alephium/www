@@ -90,7 +90,7 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageVideoHeroSection poster={heroImage} video={heroVideo}>
+          <SubpageVideoHeroSection poster={heroImage} video={heroVideo} alignContent="bottom">
             <h1>Get Started with Alephium</h1>
             <hr />
             <p>

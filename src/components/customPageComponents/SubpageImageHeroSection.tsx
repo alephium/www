@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components'
 
 import { darkTheme } from '../../styles/themes'
 import GatsbyImageWrapper from '../GatsbyImageWrapper'
-import SubpageHeroSection from './SubpageHeroSection'
+import SubpageHeroSection, { SubpageHeroSectionAlignContent } from './SubpageHeroSection'
 
 interface SubpageImageHeroSectionProps {
   children: ReactNode
@@ -15,13 +15,14 @@ interface SubpageImageHeroSectionProps {
   } | null
   backgroundImageAlt?: string
   maxHeight?: string
+  alignContent?: SubpageHeroSectionAlignContent
 }
 
 const SubpageImageHeroSection = ({
   children,
   backgroundImage,
-  maxHeight,
-  backgroundImageAlt = ''
+  backgroundImageAlt = '',
+  ...props
 }: SubpageImageHeroSectionProps) => {
   const imageData = backgroundImage?.childImageSharp?.gatsbyImageData
   const image = imageData ? getImage(imageData) : undefined
@@ -34,7 +35,7 @@ const SubpageImageHeroSection = ({
             <GatsbyImageWrapper image={image} alt={backgroundImageAlt} style={{ height: '100%' }} objectFit="cover" />
           )
         }
-        maxHeight={maxHeight}
+        {...props}
       >
         {children}
       </SubpageHeroSection>

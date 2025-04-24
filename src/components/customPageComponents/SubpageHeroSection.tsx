@@ -5,10 +5,12 @@ import { deviceBreakPoints } from '../../styles/global-style'
 import PageSectionContainer from '../PageSectionContainer'
 import TextElement from './TextElement'
 
+export type SubpageHeroSectionAlignContent = 'left' | 'center' | 'bottom'
+
 interface SubpageHeroSectionProps extends React.HTMLAttributes<HTMLElement> {
   children: ReactNode
   mediaContent: ReactNode
-  alignContent?: 'left' | 'center' | 'bottom'
+  alignContent?: SubpageHeroSectionAlignContent
   maxHeight?: string
 }
 
@@ -86,6 +88,7 @@ const ContentWrapper = styled.div<Pick<SubpageHeroSectionProps, 'alignContent'>>
   margin-right: auto;
   position: relative;
   margin-top: 5%;
+  margin-bottom: 5%;
   display: flex;
   flex-direction: column;
   z-index: 2;
