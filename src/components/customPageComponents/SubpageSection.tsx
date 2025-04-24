@@ -31,8 +31,9 @@ const SubpageSectionStyled = styled.section<{ dark?: boolean }>`
   position: relative;
   padding-top: var(--spacing-16);
   padding-bottom: var(--spacing-16);
-  background-color: ${({ theme, dark }) => (dark ? theme.bgSurface : theme.bgTertiary)};
+  background-color: ${({ theme, dark }) => (dark ? theme.bgSurface : 'transparent')};
   margin: var(--spacing-3);
   border-radius: var(--radius-big);
   border: ${({ theme, dark }) => (dark ? `1px solid ${theme.borderPrimary}` : 'none')};
+  overflow: hidden;
 `

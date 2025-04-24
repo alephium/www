@@ -35,7 +35,7 @@ export default CardImageOverlay
 const CardImageOverlayStyled = styled.div<Pick<CardImageOverlayProps, 'rounded'>>`
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 260px;
   border-radius: ${({ rounded }) => (rounded ? 'var(--radius-small)' : '0')};
   overflow: hidden;
 `

@@ -88,7 +88,6 @@ const cardStyles = css`
   background-color: ${({ theme }) => theme.bgSecondary};
   border: 2px solid ${({ theme }) => theme.borderPrimary};
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.4);
-  max-width: 420px;
   background-clip: padding-box;
   text-decoration: none;
   transition: all 0.1s ease-out;

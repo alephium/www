@@ -13,7 +13,7 @@ export const darkTheme: DefaultTheme = {
   bgPrimary: 'var(--color-grey-700)',
   bgSecondary: 'var(--color-grey-800)',
   bgTertiary: 'var(--color-grey-850)',
-  bgSurface: '#000',
+  bgSurface: '#0b0b0b',
 
   borderPrimary: 'rgba(255, 255, 255, 0.1)',
 
