@@ -1,9 +1,9 @@
 import { graphql, PageProps, useStaticQuery } from 'gatsby'
-import styled from 'styled-components'
 
 import Button from '../components/Button'
 import CardImage from '../components/customPageComponents/CardImage'
 import CardImageOverlay from '../components/customPageComponents/CardImageOverlay'
+import ClickableBox from '../components/customPageComponents/ClickableBox'
 import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
 import SideBySide from '../components/customPageComponents/SideBySide'
@@ -19,7 +19,6 @@ import PageCardSectionContainer from '../components/PageCardSectionContainer'
 import PageSectionContainer from '../components/PageSectionContainer'
 import { WalletCards } from '../components/PageSectionWallets'
 import SectionDivider from '../components/SectionDivider'
-import SimpleLink from '../components/SimpleLink'
 import useWallets from '../hooks/useWallets'
 
 const exchangesQuery = graphql`
@@ -216,14 +215,14 @@ const CustomPage = (props: PageProps) => {
                     exchange &&
                     exchange.title &&
                     exchange.url && (
-                      <ExchangeItem key={exchange.title} url={exchange.url}>
+                      <ClickableBox key={exchange.title} url={exchange.url}>
                         <CardImage src={exchange.logo?.publicURL ?? ''} alt={exchange.title} rounded size={50} />
                         <TextElement isSmall noMargin>
                           <p>
                             <strong>{exchange.title}</strong> — {exchange.description}
                           </p>
                         </TextElement>
-                      </ExchangeItem>
+                      </ClickableBox>
                     )
                 )}
               </Grid>
@@ -353,24 +352,3 @@ const CustomPage = (props: PageProps) => {
 }
 
 export default CustomPage
-
-const ExchangeItem = styled(SimpleLink)`
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-4);
-  z-index: 1;
-
-  &:hover {
-    :before {
-      content: '';
-      position: absolute;
-      right: -10px;
-      left: -10px;
-      top: -10px;
-      bottom: -10px;
-      border-radius: var(--radius);
-      background-color: ${({ theme }) => theme.bgSecondary};
-      z-index: -1;
-  }
-`
