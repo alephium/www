@@ -6,6 +6,7 @@ export interface TextElementProps {
   isSmall?: boolean
   isBodySmall?: boolean
   isCentered?: boolean
+  noMargin?: boolean
   className?: string
   noHeadingsMargins?: boolean
 }
@@ -15,6 +16,14 @@ const TextElement = styled.div<TextElementProps>`
     isCentered &&
     css`
       text-align: center;
+    `}
+
+  ${({ noMargin }) =>
+    noMargin &&
+    css`
+      * {
+        margin: 0;
+      }
     `}
 
   > h1,
@@ -38,14 +47,15 @@ const TextElement = styled.div<TextElementProps>`
 
   > h1 {
     font-family: 'Sentient';
-    font-size: var(--fontSize-50);
+    font-size: var(--fontSize-60);
     font-weight: var(--fontWeight-semiBold);
   }
 
   > h2 {
     font-family: 'Sentient';
-    font-size: var(--fontSize-42);
-    line-height: 1.2;
+    font-size: var(--fontSize-56);
+    line-height: 1;
+    margin-bottom: var(--spacing-6);
   }
 
   > h3 {
@@ -83,7 +93,7 @@ const TextElement = styled.div<TextElementProps>`
   ul {
     color: ${({ theme }) => theme.textSecondary};
 
-    font-size: var(--fontSize-26);
+    font-size: var(--fontSize-24);
     font-weight: var(--fontWeight-semiBold);
     line-height: 1.3;
     max-width: 600px;
@@ -127,10 +137,13 @@ const TextElement = styled.div<TextElementProps>`
   }
 
   > ul {
-    margin: var(--spacing-4) 0;
+    padding-inline-start: 10px;
+    list-style-type: none;
+    color: ${({ theme }) => theme.textPrimaryVariation};
 
-    > li {
-      margin: var(--spacing-2) 0;
+    > li:before {
+      content: '—';
+      padding-right: 10px;
     }
   }
 

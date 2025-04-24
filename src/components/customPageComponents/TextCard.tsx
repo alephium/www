@@ -1,4 +1,4 @@
-import { motion, useMotionValue, useTransform, Variants } from 'framer-motion'
+import { motion, useMotionValue, useSpring, useTransform, Variants } from 'framer-motion'
 import { PointerEvent, ReactNode } from 'react'
 import styled, { css } from 'styled-components'
 
@@ -22,31 +22,37 @@ const TextCard = ({ children, url, isAnimated = false, variants, ...textElementP
     </TextElementStyled>
   )
 
-  const card = isAnimated ? <AnimatedCard>{text}</AnimatedCard> : <Card>{text}</Card>
+  const card = (
+    <CardContainer variants={variants} isAnimated={isAnimated}>
+      {isAnimated ? <AnimatedCard>{text}</AnimatedCard> : <Card>{text}</Card>}
+    </CardContainer>
+  )
 
-  const linkedCard = url ? (
+  return url ? (
     <SimpleLinkStyled url={url} isAnimated={isAnimated}>
       {card}
     </SimpleLinkStyled>
   ) : (
     card
   )
-
-  return isAnimated ? <AnimatedCardContainer variants={variants}>{linkedCard}</AnimatedCardContainer> : linkedCard
 }
 
 export default TextCard
 
 const AnimatedCard = ({ children }: { children: ReactNode }) => {
-  const angle = 0.3
+  const angle = 0.5
 
   const y = useMotionValue(0.5)
   const x = useMotionValue(0.5)
 
-  const rotateY = useTransform(x, [0, 1], [-angle, angle], {
+  const springConfig = { stiffness: 200, damping: 20 }
+  const springX = useSpring(x, springConfig)
+  const springY = useSpring(y, springConfig)
+
+  const rotateY = useTransform(springX, [0, 1], [angle, -angle], {
     clamp: true
   })
-  const rotateX = useTransform(y, [0, 1], [angle, -angle], {
+  const rotateX = useTransform(springY, [0, 1], [-angle, angle], {
     clamp: true
   })
 
@@ -59,7 +65,6 @@ const AnimatedCard = ({ children }: { children: ReactNode }) => {
 
   return (
     <AnimatedCardStyled
-      whileHover={{ translateZ: 5, zIndex: 10 }}
       onPointerMove={onMove}
       onPointerLeave={() => {
         x.set(0.5, true)
@@ -69,7 +74,6 @@ const AnimatedCard = ({ children }: { children: ReactNode }) => {
         rotateY,
         rotateX
       }}
-      transition={{ duration: 0.2 }}
     >
       {children}
     </AnimatedCardStyled>
@@ -77,16 +81,20 @@ const AnimatedCard = ({ children }: { children: ReactNode }) => {
 }
 
 const cardStyles = css`
-  border-radius: 20px;
-  border: 2px solid ${({ theme }) => theme.borderPrimary};
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  border-radius: var(--radius);
   background-color: ${({ theme }) => theme.bgSecondary};
+  border: 2px solid ${({ theme }) => theme.borderPrimary};
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.4);
   background-clip: padding-box;
   text-decoration: none;
-  padding: 20px;
   transition: all 0.1s ease-out;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  overflow: hidden;
 `
 
 const Card = styled.div`
@@ -94,55 +102,45 @@ const Card = styled.div`
 `
 
 const TextElementStyled = styled(TextElement)`
+  display: flex;
+  flex-direction: column;
   flex: 1;
+
   p {
-    color: ${({ theme }) => theme.textPrimaryVariation};
+    font-weight: var(--fontWeight-medium);
   }
 `
 
 const SimpleLinkStyled = styled(SimpleLink)<Pick<TextCardProps, 'isAnimated'>>`
+  display: flex;
   ${({ isAnimated }) =>
     isAnimated &&
     css`
-      display: flex;
       perspective: 200px;
     `}
 `
 
 const AnimatedCardStyled = styled(motion.div)`
   ${cardStyles}
-
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding: 14px;
-  background-color: ${({ theme }) => theme.bgSecondary};
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
-  transition: box-shadow 0.2s ease-out;
-  perspective: 200px;
+  transform-style: preserve-3d;
 
   @media ${deviceBreakPoints.mobile} {
     & + & {
-      margin-top: var(--spacing-4);
+      margin-top: var(--spacing-3);
     }
   }
 
   &:hover {
     transform: translateZ(6px);
-    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.3);
     z-index: 1;
-  }
-
-  > div {
-    display: flex;
-    flex-direction: column;
   }
 `
 
-const AnimatedCardContainer = styled(motion.div)`
+const CardContainer = styled(motion.div)<{ isAnimated?: boolean }>`
+  ${({ isAnimated }) => isAnimated && 'perspective: 200px;'};
   display: flex;
   position: relative;
-  max-width: 400px;
+  max-width: 420px;
 
   @media ${deviceBreakPoints.mobile} {
     flex: 1;

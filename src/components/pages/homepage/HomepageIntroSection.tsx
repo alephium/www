@@ -8,6 +8,7 @@ import CardImageOverlay from '../../customPageComponents/CardImageOverlay'
 import SubheaderContent from '../../customPageComponents/SubheaderContent'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextCard from '../../customPageComponents/TextCard'
+import TextCardContent from '../../customPageComponents/TextCardContent'
 import TextElement from '../../customPageComponents/TextElement'
 
 export const query = graphql`
@@ -31,7 +32,11 @@ export const query = graphql`
 const HomepageIntroSection = ({ cards }: Queries.HomepageIntroSectionFragment) => (
   <SubpageSection id="intro">
     <TextElement>
-      <h2>A Network Built by Visionaries</h2>
+      <h2>
+        A Network Built
+        <br />
+        by Visionaries
+      </h2>
       <p>
         <strong>Alephium is more than a blockchain</strong> - it’s a movement driven by those who refuse to compromise
         on security. Built and secured by a community of miners, developers, and innovators, Alephium embodies the core
@@ -53,10 +58,12 @@ const HomepageIntroSection = ({ cards }: Queries.HomepageIntroSectionFragment) =
             card.link?.url && (
               <TextCard isAnimated variants={cardVariants} key={card.title}>
                 <CardImageOverlay image={card.image?.childImageSharp?.gatsbyImageData} overlayTitle={card.title} />
-                <ParagraphStyled>{card.description}</ParagraphStyled>
-                <Button url={card.link?.url} squared textAlign="center">
-                  {card.actionText}
-                </Button>
+                <TextCardContent>
+                  <p>{card.description}</p>
+                  <Button url={card.link?.url} squared>
+                    {card.actionText}
+                  </Button>
+                </TextCardContent>
               </TextCard>
             )
         )}
@@ -90,9 +97,4 @@ const IntroColumns = styled(motion.div)`
   @media ${deviceBreakPoints.mobile} {
     flex-wrap: wrap;
   }
-`
-
-const ParagraphStyled = styled.p`
-  flex: 1;
-  padding: 0 10px;
 `

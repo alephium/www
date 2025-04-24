@@ -39,12 +39,11 @@ const SubpageHeroSectionStyled = styled.section`
   display: flex;
   border: 2px solid ${({ theme }) => theme.borderPrimary};
   border-radius: var(--radius-big);
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.9);
 `
 
 const TextElementStyled = styled(TextElement)`
+  max-width: 500px;
   > p {
-    max-width: 500px;
     color: ${({ theme }) => theme.textSecondary};
     font-weight: var(--fontWeight-semiBold);
     line-height: 1.3;

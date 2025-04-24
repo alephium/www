@@ -33,7 +33,7 @@ const ScrollToTopButton = styled.div`
 
   background-color: ${({ theme }) => theme.bgPrimary};
   color: ${({ theme }) => theme.textSecondary};
-  border-radius: 9px;
+  border-radius: 100px;
   border: 1px solid ${({ theme }) => theme.borderPrimary};
   cursor: pointer;
 

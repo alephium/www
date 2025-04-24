@@ -31,10 +31,13 @@ const NavigationMenu = ({ className, floating = true }: NavigationMenuProps) => 
 
   const [isHidden, setIsHidden] = useState(false)
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
     const handleScroll = throttle(() => {
       const currentScrollY = window.scrollY
+      setScrolled(currentScrollY > 100)
+
       const scrollDelta = currentScrollY - lastScrollY.current
 
       if (currentScrollY < 10 || currentScrollY < lastScrollY.current) {
@@ -58,7 +61,7 @@ const NavigationMenu = ({ className, floating = true }: NavigationMenuProps) => 
   return (
     <>
       <NavigationWrapper isHidden={isHidden} floating={floating}>
-        <NavigationMenuStyled className={className}>
+        <NavigationMenuStyled className={className} scrolled={scrolled}>
           <div className="nav-item">
             <LinkStyled to="/" title="Go to homepage">
               <LogoTextStyled />
@@ -207,16 +210,17 @@ const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean }>`
   }
 `
 
-const NavigationMenuStyled = styled.div`
+const NavigationMenuStyled = styled.div<{ scrolled: boolean }>`
   width: var(--page-width);
   display: flex;
   justify-content: center;
   font-weight: var(--fontWeight-medium);
   z-index: 1;
-  backdrop-filter: blur(100px);
+  backdrop-filter: blur(100px) brightness(${({ scrolled }) => (scrolled ? '50%' : '100%')});
   padding: 0 30px;
   height: 62px;
   border-radius: 200px;
+  border: 1px solid ${({ theme, scrolled }) => (scrolled ? theme.borderPrimary : 'transparent')};
 
   .nav-end {
     display: flex;

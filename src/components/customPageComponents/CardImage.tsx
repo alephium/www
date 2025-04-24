@@ -2,12 +2,13 @@ import styled from 'styled-components'
 
 interface CardImageProps {
   rounded?: boolean
+  size?: number
 }
 
 const CardImage = styled.img<CardImageProps>`
-  width: 82px;
-  height: 82px;
-  border-radius: ${({ rounded }) => (rounded ? 'var(--radius)' : '0')};
+  width: ${({ size }) => (size ? `${size}px` : '80px')};
+  height: ${({ size }) => (size ? `${size}px` : '80px')};
+  border-radius: ${({ rounded }) => (rounded ? 'var(--radius-small)' : '0')};
 `
 
 export default CardImage

@@ -1,5 +1,4 @@
 import { graphql, PageProps } from 'gatsby'
-import styled from 'styled-components'
 
 import Button from '../components/Button'
 import Page from '../components/customPageComponents/Page'
@@ -11,7 +10,6 @@ import HomepageIntroSection from '../components/pages/homepage/HomepageIntroSect
 import HomepagePartnersSection from '../components/pages/homepage/HomepagePartnersSection'
 import HomepageStatsSection from '../components/pages/homepage/HomepageStatsSection'
 import PageSectionContainer from '../components/PageSectionContainer'
-import SectionDivider from '../components/SectionDivider'
 
 export const pageQuery = graphql`
   query IndexPage {
@@ -55,26 +53,16 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
           {content?.intro && (
             <>
               <HomepageIntroSection {...content.intro} />
-              <SectionDivider />
             </>
           )}
 
           <HomepageStatsSection />
 
-          <SectionDivider />
-
           <HomepageEcosystemSection />
 
-          <SectionDivider />
+          {content?.partnersSection && <HomepagePartnersSection {...content.partnersSection} />}
 
-          {content?.partnersSection && (
-            <>
-              <HomepagePartnersSection {...content.partnersSection} />
-              <SectionDivider />
-            </>
-          )}
-
-          <LastPageSectionContainer fullHeight wide justifyContent="center">
+          <PageSectionContainer fullHeight wide justifyContent="center">
             <GatsbyImageWrapper
               image={lighthouseImage}
               alt="Lighthouse background"
@@ -92,7 +80,7 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
               </p>
               <Button url="/get-started">Get started</Button>
             </TextElement>
-          </LastPageSectionContainer>
+          </PageSectionContainer>
         </>
       }
     />
@@ -100,8 +88,3 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
 }
 
 export default IndexPage
-
-const LastPageSectionContainer = styled(PageSectionContainer)`
-  position: relative;
-  margin: 0;
-`
