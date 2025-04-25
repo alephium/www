@@ -11,6 +11,7 @@ import SubpageImageHeroSection from '../components/customPageComponents/SubpageI
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import SubpageVideoHeroSection from '../components/customPageComponents/SubpageVideoHeroSection'
 import TextCard from '../components/customPageComponents/TextCard'
+import TextCardContent from '../components/customPageComponents/TextCardContent'
 import TextElement from '../components/customPageComponents/TextElement'
 import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import PageCardSectionContainer from '../components/PageCardSectionContainer'
@@ -34,6 +35,11 @@ const exchangesQuery = graphql`
       }
     }
     mineImage: file(relativePath: { eq: "mine.png" }) {
+      childImageSharp {
+        gatsbyImageData(quality: 100)
+      }
+    }
+    documentationImage: file(relativePath: { eq: "leaf-icon.png" }) {
       childImageSharp {
         gatsbyImageData(quality: 100)
       }
@@ -74,8 +80,16 @@ const exchangesQuery = graphql`
 `
 
 const CustomPage = (props: PageProps) => {
-  const { exchangesContent, heroImage, heroVideo, treasureImage, blobVideo, mineImage, ecosystemImage } =
-    useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
+  const {
+    exchangesContent,
+    heroImage,
+    heroVideo,
+    treasureImage,
+    blobVideo,
+    mineImage,
+    ecosystemImage,
+    documentationImage
+  } = useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
   const exchanges = exchangesContent.nodes[0].frontmatter?.exchanges ?? []
   const blobVideoUrl = blobVideo?.publicURL || undefined
   const ecosystemImageData = ecosystemImage?.childImageSharp?.gatsbyImageData || undefined
@@ -209,14 +223,18 @@ const CustomPage = (props: PageProps) => {
             <SubheaderContent>
               <Grid columns={2} isCentered gap="small">
                 <TextCard url="https://docs.alephium.org/">
-                  <CardImage src="https://place-hold.it/100" rounded />
-                  <h3>Documentation</h3>
-                  <p>Documentation to get you going quick and easy.</p>
+                  <TextCardContent>
+                    <CardImage image={documentationImage?.childImageSharp?.gatsbyImageData} rounded />
+                    <h3>Documentation</h3>
+                    <p>Documentation to get you going quick and easy.</p>
+                  </TextCardContent>
                 </TextCard>
                 <TextCard url="/grants">
-                  <CardImage src="https://place-hold.it/100" rounded />
-                  <h3>Grants</h3>
-                  <p>You have an idea, but no funding? We can help.</p>
+                  <TextCardContent>
+                    <CardImage rounded />
+                    <h3>Grants</h3>
+                    <p>You have an idea, but no funding? We can help.</p>
+                  </TextCardContent>
                 </TextCard>
               </Grid>
             </SubheaderContent>
