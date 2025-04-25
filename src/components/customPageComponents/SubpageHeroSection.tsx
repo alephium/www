@@ -7,19 +7,20 @@ import TextElement from './TextElement'
 
 export type SubpageHeroSectionAlignContent = 'left' | 'center' | 'bottom'
 
-interface SubpageHeroSectionProps extends React.HTMLAttributes<HTMLElement> {
+export interface SubpageHeroSectionProps extends React.HTMLAttributes<HTMLElement> {
   children: ReactNode
   mediaContent: ReactNode
   alignContent?: SubpageHeroSectionAlignContent
   maxHeight?: string
+  minHeight?: string
 }
 
 const SubpageHeroSection = forwardRef<HTMLElement, SubpageHeroSectionProps>(function SubpageHeroSection(
-  { children, mediaContent, alignContent, maxHeight, ...props },
+  { children, mediaContent, alignContent, ...props },
   ref
 ) {
   return (
-    <SubpageHeroSectionStyled ref={ref} maxHeight={maxHeight} {...props}>
+    <SubpageHeroSectionStyled ref={ref} {...props}>
       <BackgroundMediaWrapper>{mediaContent}</BackgroundMediaWrapper>
       <HeroPageSectionContainer alignContent={alignContent}>
         <ContentWrapper>
@@ -33,9 +34,10 @@ const SubpageHeroSection = forwardRef<HTMLElement, SubpageHeroSectionProps>(func
 
 export default SubpageHeroSection
 
-const SubpageHeroSectionStyled = styled.section<Pick<SubpageHeroSectionProps, 'maxHeight'>>`
+const SubpageHeroSectionStyled = styled.section<Pick<SubpageHeroSectionProps, 'maxHeight' | 'minHeight'>>`
   position: relative;
   height: 80vh;
+  min-height: ${({ minHeight }) => minHeight || 'auto'};
   max-height: ${({ maxHeight }) => maxHeight || '80vh'};
   margin: auto;
   width: 90vw;

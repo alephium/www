@@ -1,14 +1,13 @@
 import { getImage, IGatsbyImageData } from 'gatsby-plugin-image'
-import { ReactNode, useRef } from 'react'
+import { useRef } from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 
 import useIsMobile from '../../hooks/useIsMobile'
 import { darkTheme } from '../../styles/themes'
 import GatsbyImageWrapper from '../GatsbyImageWrapper'
-import SubpageHeroSection, { SubpageHeroSectionAlignContent } from './SubpageHeroSection'
+import SubpageHeroSection, { SubpageHeroSectionProps } from './SubpageHeroSection'
 
-interface SubpageVideoHeroSectionProps {
-  children: ReactNode
+interface SubpageVideoHeroSectionProps extends Omit<SubpageHeroSectionProps, 'mediaContent'> {
   video?: {
     publicURL: string | null
   } | null
@@ -17,10 +16,9 @@ interface SubpageVideoHeroSectionProps {
       readonly gatsbyImageData: IGatsbyImageData
     } | null
   } | null
-  alignContent?: SubpageHeroSectionAlignContent
 }
 
-const SubpageVideoHeroSection = ({ video, poster, children, alignContent }: SubpageVideoHeroSectionProps) => {
+const SubpageVideoHeroSection = ({ video, poster, children, ...props }: SubpageVideoHeroSectionProps) => {
   const innerRef = useRef<HTMLElement>(null)
   const videoRef = useRef<HTMLVideoElement>(null)
   const rafIdRef = useRef<number | null>(null)
@@ -63,7 +61,6 @@ const SubpageVideoHeroSection = ({ video, poster, children, alignContent }: Subp
       <SubpageHeroSection
         ref={innerRef}
         onPointerMove={!isMobile ? handlePointerMove : undefined}
-        alignContent={alignContent}
         mediaContent={
           <PosterWrapper>
             {poster && <GatsbyImageWrapper image={image} alt="" style={{ height: '100%' }} objectFit="cover" />}
@@ -75,6 +72,7 @@ const SubpageVideoHeroSection = ({ video, poster, children, alignContent }: Subp
             )}
           </PosterWrapper>
         }
+        {...props}
       >
         {children}
       </SubpageHeroSection>

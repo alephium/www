@@ -257,7 +257,7 @@ const CustomPage = (props: PageProps) => {
             </SubheaderContent>
           </SubpageSection>
 
-          <SubpageImageHeroSection backgroundImage={mineImage}>
+          <SubpageImageHeroSection backgroundImage={mineImage} minHeight="800px">
             <h2>
               Mine ALPH.
               <br />
