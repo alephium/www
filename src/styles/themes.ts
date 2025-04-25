@@ -13,9 +13,9 @@ export const darkTheme: DefaultTheme = {
   bgPrimary: 'var(--color-grey-700)',
   bgSecondary: 'var(--color-grey-800)',
   bgTertiary: 'var(--color-grey-850)',
-  bgSurface: 'var(--color-grey-900)',
+  bgSurface: 'rgba(255, 255, 255, 0.015)',
 
-  borderPrimary: 'rgba(255, 255, 255, 0.1)',
+  borderPrimary: 'rgba(255, 255, 255, 0.05)',
 
   link: 'var(--color-grey-100)',
   linkAlt: 'var(--color-white)',

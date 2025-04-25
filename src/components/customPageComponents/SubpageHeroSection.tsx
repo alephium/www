@@ -42,9 +42,8 @@ const SubpageHeroSectionStyled = styled.section<Pick<SubpageHeroSectionProps, 'm
   overflow: hidden;
   transition: all 0.4s ease-in;
   display: flex;
-  border: 2px solid ${({ theme }) => theme.borderPrimary};
   border-radius: var(--radius-big);
-  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5), inset 0px 0px 0px 2px ${({ theme }) => theme.borderPrimary};
 `
 
 const TextElementStyled = styled(TextElement)`
@@ -120,6 +119,6 @@ const BackgroundMediaWrapper = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 0;
+  z-index: -1;
   overflow: hidden;
 `

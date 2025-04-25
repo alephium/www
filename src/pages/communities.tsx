@@ -5,8 +5,8 @@ import ClickableBox from '../components/customPageComponents/ClickableBox'
 import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
-import SubpageHeroSection from '../components/customPageComponents/SubpageImageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
+import SubpageVideoHeroSection from '../components/customPageComponents/SubpageVideoHeroSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import SectionDivider from '../components/SectionDivider'
 import SocialMediaIcon from '../components/SocialMediaIcon'
@@ -15,14 +15,17 @@ import { getIconByName } from '../images/utils'
 
 const communitiesQuery = graphql`
   query CommunitiesPage {
-    heroImage: file(relativePath: { eq: "alephium-hackathon-lake.png" }) {
+    heroImage: file(relativePath: { eq: "geneva.png" }) {
       ...HeroImage
+    }
+    heroVideo: file(relativePath: { eq: "geneva-scrub.mp4" }) {
+      publicURL
     }
   }
 `
 
 const CustomPage = (props: PageProps) => {
-  const { heroImage } = useStaticQuery<Queries.CommunitiesPageQuery>(communitiesQuery)
+  const { heroImage, heroVideo } = useStaticQuery<Queries.CommunitiesPageQuery>(communitiesQuery)
   const socials = useSocials()
 
   return (
@@ -35,14 +38,14 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageHeroSection backgroundImage={heroImage}>
+          <SubpageVideoHeroSection poster={heroImage} video={heroVideo}>
             <h1>Online communities</h1>
             <hr />
             <p>
               We are lucky to have a very active community of builders, users & friends. Join the channels and groups
               and help us launch Alephium to the stars!
             </p>
-          </SubpageHeroSection>
+          </SubpageVideoHeroSection>
 
           <SubpageSection>
             <TextElement>
