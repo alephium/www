@@ -11,9 +11,10 @@ import CardsRow from '../components/customPageComponents/CardsRow'
 import Page from '../components/customPageComponents/Page'
 import SideBySide from '../components/customPageComponents/SideBySide'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
-import SubpageHeroSection from '../components/customPageComponents/SubpageImageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
+import SubpageVideoHeroSection from '../components/customPageComponents/SubpageVideoHeroSection'
 import TextCard from '../components/customPageComponents/TextCard'
+import TextCardContent from '../components/customPageComponents/TextCardContent'
 import TextElement from '../components/customPageComponents/TextElement'
 import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import SectionDivider from '../components/SectionDivider'
@@ -22,8 +23,11 @@ import useWallets from '../hooks/useWallets'
 
 const walletsQuery = graphql`
   query WalletsPage {
-    heroImage: file(relativePath: { eq: "alephium-hackathon-lake.png" }) {
+    heroImage: file(relativePath: { eq: "treasure.png" }) {
       ...HeroImage
+    }
+    heroVideo: file(relativePath: { eq: "underwater-treasure-scrub.mp4" }) {
+      publicURL
     }
     desktopScreenshots: allFile(
       filter: { relativeDirectory: { eq: "screenshots/desktop-wallet" } }
@@ -59,7 +63,7 @@ const walletsQuery = graphql`
 `
 
 const CustomPage = (props: PageProps) => {
-  const { heroImage, desktopScreenshots, extensionScreenshots, mobileScreenshots } =
+  const { heroImage, heroVideo, desktopScreenshots, extensionScreenshots, mobileScreenshots } =
     useStaticQuery<Queries.WalletsPageQuery>(walletsQuery)
   const wallets = useWallets()
 
@@ -73,29 +77,36 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageHeroSection backgroundImage={heroImage}>
-            <h1>Your Gateway to the Alephium Ecosystem</h1>
+          <SubpageVideoHeroSection poster={heroImage} video={heroVideo}>
+            <h1>Alephium Wallets</h1>
             <hr />
             <p>
-              Embarking on your Alephium journey begins with selecting a secure and user-friendly wallet tailored to
-              your needs. Alephium offers a variety of wallets to manage your ALPH tokens, interact with decentralized
-              applications (dApps), and participate in the ecosystem&apos;s growth.
+              <strong>Alephium offers a variety of wallets</strong> to manage your ALPH tokens, interact with
+              decentralized applications (dApps), and participate in the ecosystem&apos;s growth.
             </p>
-          </SubpageHeroSection>
+          </SubpageVideoHeroSection>
 
           <SubpageSection>
             <TextElement>
-              <h2>Why Choose an Alephium Wallet?</h2>
+              <h2>
+                Your Gateway
+                <br />
+                to the Alephium
+                <br />
+                Ecosystem
+              </h2>
             </TextElement>
 
             <SubheaderContent>
               <CardsRow>
                 <TextCard>
-                  <h3>Enhanced Security</h3>
-                  <p>
-                    Alephium's non-custodial wallets ensure that only you have access to your funds and private keys,
-                    which are fully encrypted on your device.
-                  </p>
+                  <TextCardContent>
+                    <h2>Enhanced Security</h2>
+                    <p>
+                      Alephium's non-custodial wallets ensure that only you have access to your funds and private keys,
+                      which are fully encrypted on your device.
+                    </p>
+                  </TextCardContent>
                 </TextCard>
                 <TextCard>
                   <h3>Comprehensive Features</h3>
@@ -119,7 +130,11 @@ const CustomPage = (props: PageProps) => {
 
           <SubpageSection>
             <TextElement>
-              <h2>Explore Alephium Wallets</h2>
+              <h2>
+                Explore
+                <br />
+                Alephium Wallets
+              </h2>
               <p>Choose the wallet that best fits your preferences.</p>
             </TextElement>
 
