@@ -53,7 +53,7 @@ export default styled(Button)`
   /* The following rules are the same as in the ArrowedLink, maybe extract? */
   align-items: center;
   font-weight: var(--fontWeight-semiBold);
-  font-size: ${({ big }) => (big ? 'var(--fontSize-24)' : 'var(--fontSize-20)')};
+  font-size: ${({ big }) => (big ? 'var(--fontSize-22)' : 'var(--fontSize-20)')};
   transition: all 0.1s ease-out;
 
   ${({ disabled }) =>
@@ -70,7 +70,7 @@ export default styled(Button)`
         `}
 
   .arrow {
-    width: ${({ big }) => (big ? '18px' : '14px')};
+    width: ${({ big }) => (big ? '16px' : '14px')};
     margin-left: ${({ big }) => (big ? 'var(--spacing-2)' : 'var(--spacing-1)')};
     fill: inherit;
   }

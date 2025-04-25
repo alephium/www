@@ -6,6 +6,7 @@ import { IGatsbyImageData } from 'gatsby-plugin-image'
 import Slider from 'react-slick'
 import styled from 'styled-components'
 
+import Badge from '../components/Badge'
 import Button from '../components/Button'
 import CardsRow from '../components/customPageComponents/CardsRow'
 import Page from '../components/customPageComponents/Page'
@@ -148,6 +149,11 @@ const CustomPage = (props: PageProps) => {
                 <SideBySide reverseOnMobile>
                   <TextElement isBodySmall>
                     <h3>Desktop Wallet</h3>
+                    <div>
+                      <Badge color="palette1">Windows</Badge>
+                      <Badge color="palette2">MacOS</Badge>
+                      <Badge color="palette3">Linux</Badge>
+                    </div>
                     <p>
                       Alephium&apos;s flagship desktop wallet is designed for both everyday transactions and advanced
                       functionalities like smart contract deployment. It offers a comprehensive interface for managing
@@ -172,6 +178,10 @@ const CustomPage = (props: PageProps) => {
                 <SideBySide>
                   <TextElement isBodySmall>
                     <h3>Browser Extension Wallet</h3>
+                    <div>
+                      <Badge color="palette4">Chrome</Badge>
+                      <Badge color="palette5">Firefox</Badge>
+                    </div>
                     <p>
                       For seamless interaction with web-based dApps, the Alephium Extension Wallet integrates directly
                       into your browser, providing quick and secure access to your assets.
@@ -196,6 +206,10 @@ const CustomPage = (props: PageProps) => {
                 <SideBySide reverseOnMobile>
                   <TextElement isBodySmall>
                     <h3>Mobile Wallet</h3>
+                    <div>
+                      <Badge color="palette6">iOS</Badge>
+                      <Badge color="palette1">Android</Badge>
+                    </div>
                     <p>
                       Manage your ALPH tokens on the go with Alephium&apos;s mobile wallet, offering a balance between
                       security and convenience.
