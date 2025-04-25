@@ -23,13 +23,15 @@ const TextCard = ({ children, url, isAnimated = false, variants, ...textElementP
   )
 
   const card = (
-    <CardContainer variants={variants} isAnimated={!!url}>
-      <Card url={url}>{text}</Card>
+    <CardContainer variants={variants} isAnimated={isAnimated || !!url}>
+      <Card url={url} isAnimated={isAnimated || !!url}>
+        {text}
+      </Card>
     </CardContainer>
   )
 
   return url ? (
-    <SimpleLinkStyled url={url} isAnimated={!!url}>
+    <SimpleLinkStyled url={url} isAnimated={isAnimated || !!url}>
       {card}
     </SimpleLinkStyled>
   ) : (
@@ -39,7 +41,7 @@ const TextCard = ({ children, url, isAnimated = false, variants, ...textElementP
 
 export default TextCard
 
-const Card = ({ children, url }: { children: ReactNode; url?: string }) => {
+const Card = ({ children, url, isAnimated }: { children: ReactNode; url?: string; isAnimated: boolean }) => {
   const angle = 0.5
   const cardRef = useRef<HTMLDivElement>(null)
 
@@ -89,8 +91,9 @@ const Card = ({ children, url }: { children: ReactNode; url?: string }) => {
         x.set(0.5, true)
         y.set(0.5, true)
       }}
-      style={url ? { rotateY, rotateX } : undefined}
+      style={isAnimated ? { rotateY, rotateX } : undefined}
       url={url}
+      isAnimated={isAnimated}
     >
       {children}
       {url && <GradientBorder />}
@@ -153,9 +156,9 @@ const GradientBorder = styled.div`
   }
 `
 
-const CardStyled = styled(motion.div)<{ url?: string }>`
+const CardStyled = styled(motion.div)<{ url?: string; isAnimated: boolean }>`
   ${cardStyles}
-  ${({ url }) => url && 'transform-style: preserve-3d;'}
+  ${({ isAnimated }) => isAnimated && 'transform-style: preserve-3d;'}
 
   @media ${deviceBreakPoints.mobile} {
     & + & {
@@ -166,6 +169,7 @@ const CardStyled = styled(motion.div)<{ url?: string }>`
   &:hover {
     transform: translateZ(6px);
     z-index: 1;
+    background-color: ${({ theme }) => theme.bgPrimary};
   }
 
   ${({ url }) =>
