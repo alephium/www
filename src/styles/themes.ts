@@ -6,14 +6,14 @@ export const darkTheme: DefaultTheme = {
   name: 'dark',
 
   textPrimary: 'var(--color-white)',
-  textPrimaryVariation: 'rgba(255, 255, 255, 0.8)',
-  textSecondary: 'rgba(255, 255, 255, 0.6)',
+  textPrimaryVariation: 'rgba(255, 255, 255, 0.9)',
+  textSecondary: 'rgba(255, 255, 255, 0.65)',
   textTertiary: 'rgba(255, 255, 255, 0.4)',
 
   bgPrimary: 'var(--color-grey-700)',
   bgSecondary: 'var(--color-grey-800)',
   bgTertiary: 'var(--color-grey-850)',
-  bgSurface: '#0b0b0b',
+  bgSurface: 'var(--color-grey-900)',
 
   borderPrimary: 'rgba(255, 255, 255, 0.1)',
 

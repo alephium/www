@@ -85,8 +85,8 @@ const cardStyles = css`
   position: relative;
   flex-direction: column;
   border-radius: var(--radius);
-  border: 2px solid ${({ theme }) => theme.borderPrimary};
-  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.4);
+  border: 1px solid ${({ theme }) => theme.borderPrimary};
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
   background-color: ${({ theme }) => theme.bgSurface};
   background-clip: padding-box;
   text-decoration: none;

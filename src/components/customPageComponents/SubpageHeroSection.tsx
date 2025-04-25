@@ -44,6 +44,7 @@ const SubpageHeroSectionStyled = styled.section<Pick<SubpageHeroSectionProps, 'm
   display: flex;
   border: 2px solid ${({ theme }) => theme.borderPrimary};
   border-radius: var(--radius-big);
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5);
 `
 
 const TextElementStyled = styled(TextElement)`

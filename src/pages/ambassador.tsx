@@ -4,8 +4,8 @@ import Button from '../components/Button'
 import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
-import SubpageHeroSection from '../components/customPageComponents/SubpageImageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
+import SubpageVideoHeroSection from '../components/customPageComponents/SubpageVideoHeroSection'
 import TextCard from '../components/customPageComponents/TextCard'
 import TextElement from '../components/customPageComponents/TextElement'
 import SectionDivider from '../components/SectionDivider'
@@ -13,14 +13,17 @@ import SimpleLink from '../components/SimpleLink'
 
 const ambassadorQuery = graphql`
   query AmbassadorPage {
-    heroImage: file(relativePath: { eq: "alephium-hackathon-lake.png" }) {
+    heroImage: file(relativePath: { eq: "mountain-rainbow.png" }) {
       ...HeroImage
+    }
+    heroVideo: file(relativePath: { eq: "mountain-rainbow-scrub.mp4" }) {
+      publicURL
     }
   }
 `
 
 const CustomPage = (props: PageProps) => {
-  const { heroImage } = useStaticQuery<Queries.AmbassadorPageQuery>(ambassadorQuery)
+  const { heroImage, heroVideo } = useStaticQuery<Queries.AmbassadorPageQuery>(ambassadorQuery)
 
   return (
     <Page
@@ -32,7 +35,7 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageHeroSection backgroundImage={heroImage}>
+          <SubpageVideoHeroSection poster={heroImage} video={heroVideo}>
             <h1>Alephium Ambassador Program</h1>
             <hr />
             <p>
@@ -45,7 +48,7 @@ const CustomPage = (props: PageProps) => {
               Whether you’re a developer, educator, content creator, or blockchain enthusiast, there’s a place for you
               in the Alephium community. Together, we can build a more scalable, secure, and sustainable Web3.
             </p>
-          </SubpageHeroSection>
+          </SubpageVideoHeroSection>
 
           <SubpageSection>
             <TextElement>

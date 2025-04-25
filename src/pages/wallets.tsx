@@ -101,7 +101,7 @@ const CustomPage = (props: PageProps) => {
               <CardsRow>
                 <TextCard>
                   <TextCardContent>
-                    <h2>Enhanced Security</h2>
+                    <h3>Enhanced Security</h3>
                     <p>
                       Alephium's non-custodial wallets ensure that only you have access to your funds and private keys,
                       which are fully encrypted on your device.
@@ -109,18 +109,22 @@ const CustomPage = (props: PageProps) => {
                   </TextCardContent>
                 </TextCard>
                 <TextCard>
-                  <h3>Comprehensive Features</h3>
-                  <p>
-                    Whether you prefer desktop applications, browser extensions, or mobile apps, Alephium wallets allow
-                    you to manage ALPH tokens, engage with dApps, and more.
-                  </p>
+                  <TextCardContent>
+                    <h3>Comprehensive Features</h3>
+                    <p>
+                      Whether you prefer desktop applications, browser extensions, or mobile apps, Alephium wallets
+                      allow you to manage ALPH tokens, engage with dApps, and more.
+                    </p>
+                  </TextCardContent>
                 </TextCard>
                 <TextCard>
-                  <h3>Simple Setup</h3>
-                  <p>
-                    Getting started is straightforward—download your preferred wallet, set up your account, and you're
-                    ready to explore the Alephium ecosystem.
-                  </p>
+                  <TextCardContent>
+                    <h3>Simple Setup</h3>
+                    <p>
+                      Getting started is straightforward — download your preferred wallet, set up your account, and
+                      you're ready to explore the Alephium ecosystem.
+                    </p>
+                  </TextCardContent>
                 </TextCard>
               </CardsRow>
             </SubheaderContent>

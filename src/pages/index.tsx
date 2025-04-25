@@ -10,6 +10,7 @@ import HomepageIntroSection from '../components/pages/homepage/HomepageIntroSect
 import HomepagePartnersSection from '../components/pages/homepage/HomepagePartnersSection'
 import HomepageStatsSection from '../components/pages/homepage/HomepageStatsSection'
 import PageSectionContainer from '../components/PageSectionContainer'
+import SectionDivider from '../components/SectionDivider'
 
 export const pageQuery = graphql`
   query IndexPage {
@@ -61,6 +62,8 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
           <HomepageEcosystemSection />
 
           {content?.partnersSection && <HomepagePartnersSection {...content.partnersSection} />}
+
+          <SectionDivider />
 
           <PageSectionContainer fullHeight wide justifyContent="center">
             <GatsbyImageWrapper

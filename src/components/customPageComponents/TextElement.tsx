@@ -54,8 +54,9 @@ const TextElement = styled.div<TextElementProps>`
 
   > h2 {
     font-family: 'Sentient';
-    font-size: var(--fontSize-58);
+    font-size: var(--fontSize-56);
     margin-bottom: var(--spacing-6);
+    color: ${({ theme }) => theme.textPrimaryVariation};
     line-height: 1;
   }
 
