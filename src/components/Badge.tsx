@@ -3,17 +3,23 @@ import styled from 'styled-components'
 
 const Badge = styled.span<{ color: string }>`
   display: inline-block;
-  padding: 4px 8px;
+  padding: 6px 8px;
   border-radius: 4px;
-  font-size: 12px;
-  font-weight: 500;
+  font-size: var(--fontSize-14);
+  font-weight: var(--fontWeight-medium);
   margin-right: 8px;
-  margin-top: 4px;
+  vertical-align: middle;
+  line-height: 1;
   background-color: ${({ theme, color }) =>
     colord(theme[color as keyof typeof theme])
       .alpha(0.2)
       .toRgbString()};
   color: ${({ theme, color }) => theme[color as keyof typeof theme]};
+
+  /* Add margin when badge follows text */
+  h3 &:first-of-type {
+    margin-left: var(--spacing-4);
+  }
 `
 
 export default Badge

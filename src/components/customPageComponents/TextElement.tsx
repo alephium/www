@@ -64,7 +64,7 @@ const TextElement = styled.div<TextElementProps>`
     font-family: 'InterDisplay';
     font-size: var(--fontSize-36);
     font-weight: var(--fontWeight-medium);
-    margin-bottom: 8px;
+    margin-bottom: var(--spacing-2);
 
     ${({ isSmall }) =>
       isSmall &&
