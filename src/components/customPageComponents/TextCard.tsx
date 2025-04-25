@@ -1,5 +1,5 @@
 import { motion, useMotionValue, useSpring, useTransform, Variants } from 'framer-motion'
-import { PointerEvent, ReactNode } from 'react'
+import { PointerEvent, ReactNode, useEffect, useRef } from 'react'
 import styled, { css } from 'styled-components'
 
 import { deviceBreakPoints } from '../../styles/global-style'
@@ -23,13 +23,13 @@ const TextCard = ({ children, url, isAnimated = false, variants, ...textElementP
   )
 
   const card = (
-    <CardContainer variants={variants} isAnimated={isAnimated}>
-      {isAnimated ? <AnimatedCard>{text}</AnimatedCard> : <Card>{text}</Card>}
+    <CardContainer variants={variants} isAnimated={!!url}>
+      <Card url={url}>{text}</Card>
     </CardContainer>
   )
 
   return url ? (
-    <SimpleLinkStyled url={url} isAnimated={isAnimated}>
+    <SimpleLinkStyled url={url} isAnimated={!!url}>
       {card}
     </SimpleLinkStyled>
   ) : (
@@ -39,8 +39,9 @@ const TextCard = ({ children, url, isAnimated = false, variants, ...textElementP
 
 export default TextCard
 
-const AnimatedCard = ({ children }: { children: ReactNode }) => {
+const Card = ({ children, url }: { children: ReactNode; url?: string }) => {
   const angle = 0.5
+  const cardRef = useRef<HTMLDivElement>(null)
 
   const y = useMotionValue(0.5)
   const x = useMotionValue(0.5)
@@ -56,6 +57,23 @@ const AnimatedCard = ({ children }: { children: ReactNode }) => {
     clamp: true
   })
 
+  useEffect(() => {
+    const updateGradientPosition = () => {
+      if (cardRef.current) {
+        cardRef.current.style.setProperty('--gradient-x', `${springX.get() * 100}%`)
+        cardRef.current.style.setProperty('--gradient-y', `${springY.get() * 100}%`)
+      }
+    }
+
+    const unsubscribeX = springX.onChange(updateGradientPosition)
+    const unsubscribeY = springY.onChange(updateGradientPosition)
+
+    return () => {
+      unsubscribeX()
+      unsubscribeY()
+    }
+  }, [springX, springY])
+
   const onMove = (e: PointerEvent) => {
     const { x: positionX, y: positionY } = getPointerRelativePositionInElement(e)
 
@@ -64,23 +82,23 @@ const AnimatedCard = ({ children }: { children: ReactNode }) => {
   }
 
   return (
-    <AnimatedCardStyled
+    <CardStyled
+      ref={cardRef}
       onPointerMove={onMove}
       onPointerLeave={() => {
         x.set(0.5, true)
         y.set(0.5, true)
       }}
-      style={{
-        rotateY,
-        rotateX
-      }}
+      style={url ? { rotateY, rotateX } : undefined}
+      url={url}
     >
       {children}
-    </AnimatedCardStyled>
+      {url && <GradientBorder />}
+    </CardStyled>
   )
 }
 
-const cardStyles = css`
+const cardStyles = css<{ url?: string }>`
   display: flex;
   position: relative;
   flex-direction: column;
@@ -95,7 +113,7 @@ const cardStyles = css`
   background-repeat: no-repeat;
   overflow: hidden;
 
-  &::after {
+  &::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -103,11 +121,64 @@ const cardStyles = css`
     border: 2px solid ${({ theme }) => theme.borderPrimary};
     pointer-events: none;
     z-index: 1;
+    transition: border-color 0.3s ease;
   }
 `
 
-const Card = styled.div`
+const GradientBorder = styled.div`
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius);
+  background: radial-gradient(
+    circle at var(--gradient-x) var(--gradient-y),
+    ${({ theme }) => theme.borderPrimary} 0%,
+    ${({ theme }) => theme.palette2} 35%,
+    ${({ theme }) => theme.palette1} 40%,
+    ${({ theme }) => theme.palette4} 50%,
+    ${({ theme }) => theme.palette3} 60%,
+    ${({ theme }) => theme.borderPrimary} 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: -1;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    border-radius: calc(var(--radius) - 2px);
+    background: ${({ theme }) => theme.bgPrimary};
+    z-index: 0;
+  }
+`
+
+const CardStyled = styled(motion.div)<{ url?: string }>`
   ${cardStyles}
+  ${({ url }) => url && 'transform-style: preserve-3d;'}
+
+  @media ${deviceBreakPoints.mobile} {
+    & + & {
+      margin-top: var(--spacing-3);
+    }
+  }
+
+  &:hover {
+    transform: translateZ(6px);
+    z-index: 1;
+  }
+
+  ${({ url }) =>
+    url &&
+    css`
+      &:hover::before {
+        border: none;
+      }
+
+      &:hover ${GradientBorder} {
+        opacity: 1;
+      }
+    `}
 `
 
 const TextElementStyled = styled(TextElement)`
@@ -127,22 +198,6 @@ const SimpleLinkStyled = styled(SimpleLink)<Pick<TextCardProps, 'isAnimated'>>`
     css`
       perspective: 200px;
     `}
-`
-
-const AnimatedCardStyled = styled(motion.div)`
-  ${cardStyles}
-  transform-style: preserve-3d;
-
-  @media ${deviceBreakPoints.mobile} {
-    & + & {
-      margin-top: var(--spacing-3);
-    }
-  }
-
-  &:hover {
-    transform: translateZ(6px);
-    z-index: 1;
-  }
 `
 
 const CardContainer = styled(motion.div)<{ isAnimated?: boolean }>`
