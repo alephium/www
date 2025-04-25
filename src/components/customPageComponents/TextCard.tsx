@@ -100,7 +100,7 @@ const cardStyles = css`
     position: absolute;
     inset: 0;
     border-radius: var(--radius);
-    border: 1px solid ${({ theme }) => theme.borderPrimary};
+    border: 2px solid ${({ theme }) => theme.borderPrimary};
     pointer-events: none;
     z-index: 1;
   }

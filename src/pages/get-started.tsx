@@ -1,9 +1,9 @@
 import { graphql, PageProps, useStaticQuery } from 'gatsby'
 
 import Button from '../components/Button'
-import CardImage from '../components/customPageComponents/CardImage'
 import ClickableBox from '../components/customPageComponents/ClickableBox'
 import Grid from '../components/customPageComponents/Grid'
+import ImageIcon from '../components/customPageComponents/ImageIcon'
 import Page from '../components/customPageComponents/Page'
 import SideBySide from '../components/customPageComponents/SideBySide'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
@@ -172,7 +172,14 @@ const CustomPage = (props: PageProps) => {
                     exchange.title &&
                     exchange.url && (
                       <ClickableBox key={exchange.title} url={exchange.url}>
-                        <CardImage src={exchange.logo?.publicURL ?? ''} alt={exchange.title} rounded size={50} />
+                        <ImageIcon
+                          src={exchange.logo?.publicURL ?? ''}
+                          alt={exchange.title}
+                          rounded
+                          size={50}
+                          padding={10}
+                          noBottomMargin
+                        />
                         <TextElement isSmall noMargin>
                           <p>
                             <strong>{exchange.title}</strong> — {exchange.description}
@@ -224,14 +231,14 @@ const CustomPage = (props: PageProps) => {
               <Grid columns={2} isCentered gap="small">
                 <TextCard url="https://docs.alephium.org/">
                   <TextCardContent>
-                    <CardImage image={documentationImage?.childImageSharp?.gatsbyImageData} rounded />
+                    <ImageIcon image={documentationImage?.childImageSharp?.gatsbyImageData} rounded />
                     <h3>Documentation</h3>
                     <p>Documentation to get you going quick and easy.</p>
                   </TextCardContent>
                 </TextCard>
                 <TextCard url="/grants">
                   <TextCardContent>
-                    <CardImage rounded />
+                    <ImageIcon rounded />
                     <h3>Grants</h3>
                     <p>You have an idea, but no funding? We can help.</p>
                   </TextCardContent>
