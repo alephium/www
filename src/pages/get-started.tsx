@@ -39,7 +39,12 @@ const exchangesQuery = graphql`
         gatsbyImageData(quality: 100)
       }
     }
-    documentationImage: file(relativePath: { eq: "leaf-icon.png" }) {
+    documentationIcon: file(relativePath: { eq: "leaf-icon.png" }) {
+      childImageSharp {
+        gatsbyImageData(quality: 100)
+      }
+    }
+    goldIcon: file(relativePath: { eq: "gold-icon.png" }) {
       childImageSharp {
         gatsbyImageData(quality: 100)
       }
@@ -88,7 +93,8 @@ const CustomPage = (props: PageProps) => {
     blobVideo,
     mineImage,
     ecosystemImage,
-    documentationImage
+    documentationIcon,
+    goldIcon
   } = useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
   const exchanges = exchangesContent.nodes[0].frontmatter?.exchanges ?? []
   const blobVideoUrl = blobVideo?.publicURL || undefined
@@ -231,16 +237,20 @@ const CustomPage = (props: PageProps) => {
               <Grid columns={2} isCentered gap="small">
                 <TextCard url="https://docs.alephium.org/">
                   <TextCardContent>
-                    <ImageIcon image={documentationImage?.childImageSharp?.gatsbyImageData} rounded />
+                    <ImageIcon image={documentationIcon?.childImageSharp?.gatsbyImageData} rounded />
                     <h3>Documentation</h3>
                     <p>Documentation to get you going quick and easy.</p>
                   </TextCardContent>
                 </TextCard>
                 <TextCard url="/grants">
                   <TextCardContent>
-                    <ImageIcon rounded />
+                    <ImageIcon image={goldIcon?.childImageSharp?.gatsbyImageData} rounded />
                     <h3>Grants</h3>
-                    <p>You have an idea, but no funding? We can help.</p>
+                    <p>
+                      You have an idea, but no funding?
+                      <br />
+                      We can help.
+                    </p>
                   </TextCardContent>
                 </TextCard>
               </Grid>
