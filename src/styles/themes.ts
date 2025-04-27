@@ -24,7 +24,7 @@ export const darkTheme: DefaultTheme = {
 
   palette1: '#6dffbc',
   palette2: '#ffd68c',
-  palette3: '#86ffed',
+  palette3: '#8de9ff',
   palette4: '#f7b5ff',
   palette5: '#ff89cc',
   palette6: '#ffb77d'

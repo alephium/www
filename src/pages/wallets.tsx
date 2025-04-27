@@ -226,7 +226,9 @@ const CustomPage = (props: PageProps) => {
                   <p>Supported Devices:</p>
                   <ul>
                     <li>
-                      <SimpleLink url="https://docs.alephium.org/wallet/ledger">Ledger</SimpleLink>
+                      <SimpleLink highlight url="https://docs.alephium.org/wallet/ledger">
+                        Ledger
+                      </SimpleLink>
                     </li>
                     <li>OneKey</li>
                     <li>SafePal</li>
