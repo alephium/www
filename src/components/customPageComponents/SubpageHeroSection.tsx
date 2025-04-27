@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { deviceBreakPoints } from '../../styles/global-style'
 import PageSectionContainer from '../PageSectionContainer'
 import TextElement from './TextElement'
+import TitleShadow from './TitleShadow'
 
 export type SubpageHeroSectionAlignContent = 'left' | 'center' | 'bottom'
 
@@ -24,7 +25,7 @@ const SubpageHeroSection = forwardRef<HTMLElement, SubpageHeroSectionProps>(func
       <BackgroundMediaWrapper>{mediaContent}</BackgroundMediaWrapper>
       <HeroPageSectionContainer alignContent={alignContent}>
         <ContentWrapper>
-          <ContentBackground />
+          <TitleShadow />
           <TextElementStyled>{children}</TextElementStyled>
         </ContentWrapper>
       </HeroPageSectionContainer>
@@ -98,21 +99,6 @@ const ContentWrapper = styled.div<Pick<SubpageHeroSectionProps, 'alignContent'>>
   @media ${deviceBreakPoints.mobile} {
     padding: var(--spacing-4);
   }
-`
-
-const ContentBackground = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 0;
-  border-radius: var(--radius-big);
-  transform: translateX(-30px);
-  filter: blur(60px);
-  pointer-events: none;
-  z-index: -1;
 `
 
 const BackgroundMediaWrapper = styled.div`
