@@ -9,7 +9,7 @@ import SubpageVideoHeroSection from '../components/customPageComponents/SubpageV
 import TextCard from '../components/customPageComponents/TextCard'
 import TextCardContent from '../components/customPageComponents/TextCardContent'
 import TextElement from '../components/customPageComponents/TextElement'
-import SectionDivider from '../components/SectionDivider'
+import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import SimpleLink from '../components/SimpleLink'
 
 const bountiesQuery = graphql`
@@ -20,11 +20,16 @@ const bountiesQuery = graphql`
     heroVideo: file(relativePath: { eq: "gold-and-pearls-scrub.mp4" }) {
       publicURL
     }
+    comingSoonImage: file(relativePath: { eq: "bridge-valley.png" }) {
+      childImageSharp {
+        gatsbyImageData(quality: 100)
+      }
+    }
   }
 `
 
 const CustomPage = (props: PageProps) => {
-  const { heroImage, heroVideo } = useStaticQuery<Queries.BountiesPageQuery>(bountiesQuery)
+  const { heroImage, heroVideo, comingSoonImage } = useStaticQuery<Queries.BountiesPageQuery>(bountiesQuery)
 
   return (
     <Page
@@ -99,8 +104,6 @@ const CustomPage = (props: PageProps) => {
               </Grid>
             </SubheaderContent>
           </SubpageSection>
-
-          <SectionDivider />
 
           {/* <SubpageSection>
             <TextElement>
@@ -196,6 +199,14 @@ const CustomPage = (props: PageProps) => {
           <SectionDivider /> */}
 
           <SubpageSection>
+            <GatsbyImageWrapper
+              image={comingSoonImage?.childImageSharp?.gatsbyImageData}
+              alt="Coming soon"
+              style={{ height: '100%' }}
+              objectFit="cover"
+              loading="lazy"
+              isBackground
+            />
             <TextElement isCentered>
               {/* <h2>Ready? Join the Bounty Program today!</h2> */}
               <h2>The bounty platform is coming soon!</h2>
@@ -208,8 +219,6 @@ const CustomPage = (props: PageProps) => {
               </Button>
             </TextElement>
           </SubpageSection>
-
-          <SectionDivider />
 
           <SubpageSection>
             <TextElement isCentered>

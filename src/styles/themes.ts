@@ -10,7 +10,7 @@ export const darkTheme: DefaultTheme = {
   textSecondary: 'rgba(255, 255, 255, 0.65)',
   textTertiary: 'rgba(255, 255, 255, 0.4)',
 
-  bgPrimary: 'var(--color-grey-700)',
+  bgPrimary: 'var(--color-grey-750)',
   bgSecondary: 'var(--color-grey-800)',
   bgTertiary: 'var(--color-grey-850)',
   bgSurface: 'rgba(255, 255, 255, 0.015)',

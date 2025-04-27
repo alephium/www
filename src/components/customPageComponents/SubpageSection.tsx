@@ -1,5 +1,5 @@
 import { HTMLAttributes, ReactNode } from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 import PageSectionContainer from '../PageSectionContainer'
 
@@ -10,10 +10,11 @@ interface SubpageSectionProps extends HTMLAttributes<HTMLDivElement> {
   wide?: boolean
   narrow?: boolean
   dark?: boolean
+  border?: boolean
   isCentered?: boolean
 }
 
-const SubpageSection = ({ children, Parallax, fullWidth, wide, narrow, ...props }: SubpageSectionProps) => (
+const SubpageSection = ({ children, Parallax, ...props }: SubpageSectionProps) => (
   <SubpageSectionStyled {...props}>
     {children}
     {Parallax}
@@ -22,7 +23,7 @@ const SubpageSection = ({ children, Parallax, fullWidth, wide, narrow, ...props 
 
 export default SubpageSection
 
-const SubpageSectionStyled = styled(PageSectionContainer)<Pick<SubpageSectionProps, 'dark' | 'isCentered'>>`
+const SubpageSectionStyled = styled(PageSectionContainer)<Pick<SubpageSectionProps, 'dark' | 'isCentered' | 'border'>>`
   position: relative;
   justify-content: ${({ isCentered }) => (isCentered ? 'center' : 'flex-start')};
   padding-top: var(--spacing-16);
@@ -31,4 +32,10 @@ const SubpageSectionStyled = styled(PageSectionContainer)<Pick<SubpageSectionPro
   border-radius: var(--radius-big);
   border: ${({ theme, dark }) => (dark ? `1px solid ${theme.borderPrimary}` : 'none')};
   overflow: hidden;
+
+  ${({ border }) =>
+    border &&
+    css`
+      box-shadow: inset 0 0 0 2px ${({ theme }) => theme.borderPrimary};
+    `}
 `

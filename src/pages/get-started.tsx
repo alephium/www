@@ -14,7 +14,6 @@ import TextCard from '../components/customPageComponents/TextCard'
 import TextCardContent from '../components/customPageComponents/TextCardContent'
 import TextElement from '../components/customPageComponents/TextElement'
 import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
-import PageCardSectionContainer from '../components/PageCardSectionContainer'
 
 const exchangesQuery = graphql`
   query GetStartedPage {
@@ -199,7 +198,7 @@ const CustomPage = (props: PageProps) => {
             </SubheaderContent>
           </SubpageSection>
 
-          <PageCardSectionContainer wide justifyContent="center">
+          <SubpageSection border>
             <GatsbyImageWrapper
               image={ecosystemImageData}
               alt="Ecosystem background"
@@ -208,21 +207,19 @@ const CustomPage = (props: PageProps) => {
               loading="lazy"
               isBackground
             />
-            <SubpageSection>
-              <TextElement isCentered>
-                <h2>Explore the ecosystem</h2>
-                <p>
-                  <strong>
-                    Discover innovative dApps and tokenized assets - trade, borrow, lend or earn ALPH, by engaging with
-                    DeFi protocols or contributing to the ecosystem.
-                  </strong>
-                </p>
-                <Button big url="https://alph.land">
-                  See all apps
-                </Button>
-              </TextElement>
-            </SubpageSection>
-          </PageCardSectionContainer>
+            <TextElement isCentered>
+              <h2>Explore the ecosystem</h2>
+              <p>
+                <strong>
+                  Discover innovative dApps and tokenized assets - trade, borrow, lend or earn ALPH, by engaging with
+                  DeFi protocols or contributing to the ecosystem.
+                </strong>
+              </p>
+              <Button big url="https://alph.land">
+                See all apps
+              </Button>
+            </TextElement>
+          </SubpageSection>
 
           <SubpageSection isCentered>
             <TextElement isCentered>

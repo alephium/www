@@ -207,7 +207,7 @@ const CardStyled = styled(motion.div)<{ url?: string; isAnimated: boolean }>`
   &:hover {
     transform: translateZ(6px);
     z-index: 1;
-    background-color: ${({ theme }) => theme.bgPrimary};
+    background-color: ${({ theme }) => theme.bgSecondary};
   }
 
   ${({ url }) =>
