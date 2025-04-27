@@ -14,7 +14,7 @@ const Grid = styled.div<GridProps>`
       ? `
           display: inline-grid;
           grid-auto-flow: column;
-          grid-auto-columns: max-content;
+          grid-auto-columns: 1fr;
           justify-content: center;
           margin: 0 auto;
         `

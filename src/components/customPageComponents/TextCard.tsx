@@ -157,9 +157,46 @@ const GradientBorder = styled.div`
   }
 `
 
+const CardContainer = styled(motion.div)<{ isAnimated?: boolean }>`
+  ${({ isAnimated }) => isAnimated && 'perspective: 200px;'};
+  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+
+  @media ${deviceBreakPoints.mobile} {
+    min-width: 300px;
+  }
+`
+
+const TextElementStyled = styled(TextElement)`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+
+  p {
+    font-weight: var(--fontWeight-medium);
+  }
+`
+
+const SimpleLinkStyled = styled(SimpleLink)<Pick<TextCardProps, 'isAnimated'>>`
+  display: flex;
+  width: 100%;
+  height: 100%;
+  ${({ isAnimated }) =>
+    isAnimated &&
+    css`
+      perspective: 200px;
+    `}
+`
+
 const CardStyled = styled(motion.div)<{ url?: string; isAnimated: boolean }>`
   ${cardStyles}
   ${({ isAnimated }) => isAnimated && 'transform-style: preserve-3d;'}
+  width: 100%;
+  height: 100%;
 
   @media ${deviceBreakPoints.mobile} {
     & + & {
@@ -184,35 +221,4 @@ const CardStyled = styled(motion.div)<{ url?: string; isAnimated: boolean }>`
         opacity: 1;
       }
     `}
-`
-
-const TextElementStyled = styled(TextElement)`
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-
-  p {
-    font-weight: var(--fontWeight-medium);
-  }
-`
-
-const SimpleLinkStyled = styled(SimpleLink)<Pick<TextCardProps, 'isAnimated'>>`
-  display: flex;
-  ${({ isAnimated }) =>
-    isAnimated &&
-    css`
-      perspective: 200px;
-    `}
-`
-
-const CardContainer = styled(motion.div)<{ isAnimated?: boolean }>`
-  ${({ isAnimated }) => isAnimated && 'perspective: 200px;'};
-  display: flex;
-  position: relative;
-  max-width: 420px;
-
-  @media ${deviceBreakPoints.mobile} {
-    flex: 1;
-    min-width: 300px;
-  }
 `
