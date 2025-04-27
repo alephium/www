@@ -4,8 +4,8 @@ import Button from '../components/Button'
 import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
-import SubpageHeroSection from '../components/customPageComponents/SubpageImageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
+import SubpageVideoHeroSection from '../components/customPageComponents/SubpageVideoHeroSection'
 import TextCard from '../components/customPageComponents/TextCard'
 import TextElement from '../components/customPageComponents/TextElement'
 import SectionDivider from '../components/SectionDivider'
@@ -16,11 +16,14 @@ const bountiesQuery = graphql`
     heroImage: file(relativePath: { eq: "gold-and-pearls.png" }) {
       ...HeroImage
     }
+    heroVideo: file(relativePath: { eq: "gold-and-pearls-scrub.mp4" }) {
+      publicURL
+    }
   }
 `
 
 const CustomPage = (props: PageProps) => {
-  const { heroImage } = useStaticQuery<Queries.BountiesPageQuery>(bountiesQuery)
+  const { heroImage, heroVideo } = useStaticQuery<Queries.BountiesPageQuery>(bountiesQuery)
 
   return (
     <Page
@@ -32,7 +35,7 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageHeroSection backgroundImage={heroImage}>
+          <SubpageVideoHeroSection poster={heroImage} video={heroVideo}>
             <h1>Alephium Bounty Program</h1>
             <hr />
             <p>
@@ -45,7 +48,7 @@ const CustomPage = (props: PageProps) => {
               community-driven solutions. If you have the skills, knowledge, and vision to enhance Alephium, we invite
               you to participate, propose new bounties, or take on existing challenges.
             </p>
-          </SubpageHeroSection>
+          </SubpageVideoHeroSection>
 
           <SubpageSection>
             <TextElement>
