@@ -143,9 +143,13 @@ const TextElement = styled.div<TextElementProps>`
     list-style-type: none;
     color: ${({ theme }) => theme.textPrimary};
 
-    > li:before {
-      content: '—';
-      padding-right: 10px;
+    > li {
+      margin-bottom: var(--spacing-1);
+
+      &:before {
+        content: '—';
+        padding-right: 10px;
+      }
     }
   }
 
