@@ -152,6 +152,7 @@ const GradientBorder = styled.div`
     inset: 2px;
     border-radius: calc(var(--radius) - 2px);
     background: ${({ theme }) => theme.bgPrimary};
+    opacity: 0.95;
     z-index: 0;
   }
 `
