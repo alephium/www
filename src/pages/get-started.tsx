@@ -298,7 +298,7 @@ const CustomPage = (props: PageProps) => {
               <p>
                 No worries! Join our community and explore, there are many ways you can leave your mark on Alephium.
               </p>
-              <Button big url="/communities">
+              <Button big highlight url="/communities">
                 See our communities
               </Button>
             </TextElement>

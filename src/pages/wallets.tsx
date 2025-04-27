@@ -229,7 +229,7 @@ const CustomPage = (props: PageProps) => {
                       <SimpleLink url="https://docs.alephium.org/wallet/ledger">Ledger</SimpleLink>
                     </li>
                     <li>OneKey</li>
-                    <li>Safepa</li>
+                    <li>SafePal</li>
                   </ul>
                 </TextElement>
               </SideBySide>

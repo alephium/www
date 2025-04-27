@@ -30,7 +30,9 @@ const HomepageEcosystemSection = () => {
             the <strong>next generation of decentralized applications to life</strong>.
           </p>
           <TextElement isCentered>
-            <Button url="https://alph.land">Explore ecosystem</Button>
+            <Button big highlight url="https://alph.land">
+              Explore ecosystem
+            </Button>
           </TextElement>
         </TextElement>
         <LogosContainer>

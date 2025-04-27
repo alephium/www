@@ -13,7 +13,7 @@ import SimpleLink from '../components/SimpleLink'
 
 const bountiesQuery = graphql`
   query BountiesPage {
-    heroImage: file(relativePath: { eq: "alephium-hackathon-lake.png" }) {
+    heroImage: file(relativePath: { eq: "gold-and-pearls.png" }) {
       ...HeroImage
     }
   }

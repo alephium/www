@@ -45,7 +45,7 @@ export default styled(SimpleLink)`
 `
 
 const Anchor = styled.a`
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.5rem;
 `
