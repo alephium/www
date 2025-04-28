@@ -51,6 +51,8 @@ const SubpageHeroSectionStyled = styled.section<Pick<SubpageHeroSectionProps, 'm
 
 const TextElementStyled = styled(TextElement)`
   max-width: 520px;
+  width: fit-content;
+  margin: 0 auto;
   justify-content: center;
 
   > p {
