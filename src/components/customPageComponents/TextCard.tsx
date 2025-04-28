@@ -107,7 +107,7 @@ const cardStyles = css<{ url?: string }>`
   flex-direction: column;
   border-radius: var(--radius);
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
-  background-color: ${({ theme }) => theme.bgSecondary};
+  background-color: ${({ theme }) => theme.bgTertiary};
   background-clip: padding-box;
   text-decoration: none;
   transition: all 0.1s ease-out;
@@ -116,15 +116,18 @@ const cardStyles = css<{ url?: string }>`
   background-repeat: no-repeat;
   overflow: hidden;
 
-  &::before {
+  &::after {
     content: '';
     position: absolute;
     inset: 0;
-    border-radius: var(--radius);
     border: 2px solid ${({ theme }) => theme.borderPrimary};
+    border-radius: inherit;
+    backdrop-filter: saturate(200%);
+    -webkit-backdrop-filter: saturate(200%) brightness(1.2);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: xor;
     pointer-events: none;
-    z-index: 1;
-    transition: border-color 0.3s ease;
   }
 `
 
@@ -206,6 +209,7 @@ const CardStyled = styled(motion.div)<{ url?: string; isAnimated: boolean }>`
 
   &:hover {
     z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   ${({ url }) =>

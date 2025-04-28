@@ -198,7 +198,7 @@ const CustomPage = (props: PageProps) => {
             </SubheaderContent>
           </SubpageSection>
 
-          <SubpageSection border>
+          <SubpageSection>
             <GatsbyImageWrapper
               image={ecosystemImageData}
               alt="Ecosystem background"

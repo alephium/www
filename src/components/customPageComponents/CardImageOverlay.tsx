@@ -13,13 +13,15 @@ interface CardImageOverlayProps {
 const CardImageOverlay = ({ image, overlayTitle, rounded }: CardImageOverlayProps) => (
   <CardImageOverlayStyled rounded={rounded}>
     {image && (
-      <GatsbyImageWrapper
-        image={image}
-        alt={overlayTitle || ''}
-        style={{ height: '100%' }}
-        objectFit="cover"
-        loading="lazy"
-      />
+      <ImageContainer>
+        <GatsbyImageWrapper
+          image={image}
+          alt={overlayTitle || ''}
+          style={{ height: '100%' }}
+          objectFit="cover"
+          loading="lazy"
+        />
+      </ImageContainer>
     )}
     <OverlayTitleContainer>
       <TextElement>
@@ -35,9 +37,13 @@ export default CardImageOverlay
 const CardImageOverlayStyled = styled.div<Pick<CardImageOverlayProps, 'rounded'>>`
   position: relative;
   width: 100%;
-  height: 260px;
+  height: 200px;
   border-radius: ${({ rounded }) => (rounded ? 'var(--radius-small)' : '0')};
   overflow: hidden;
+`
+
+const ImageContainer = styled.div`
+  height: 100%;
 `
 
 const OverlayTitleContainer = styled.div`

@@ -28,7 +28,7 @@ const SubpageSectionStyled = styled(PageSectionContainer)<Pick<SubpageSectionPro
   justify-content: ${({ isCentered }) => (isCentered ? 'center' : 'flex-start')};
   padding-top: var(--spacing-16);
   padding-bottom: var(--spacing-16);
-  background-color: ${({ theme, dark }) => (dark ? theme.bgSurface : 'transparent')};
+  background-color: ${({ theme, dark }) => (dark ? 'rgba(0, 0, 0, 0.3)' : 'transparent')};
   border-radius: var(--radius-big);
   border: ${({ theme, dark }) => (dark ? `1px solid ${theme.borderPrimary}` : 'none')};
   overflow: hidden;

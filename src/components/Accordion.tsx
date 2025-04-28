@@ -57,7 +57,7 @@ const AccordionHeader = styled.div`
   transition: background-color 0.2s ease;
 
   &:hover {
-    background-color: ${({ theme }) => theme.bgSurface};
+    background-color: ${({ theme }) => theme.bgPrimary};
   }
 `
 
