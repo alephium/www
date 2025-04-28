@@ -1,11 +1,13 @@
 import { graphql, PageProps, useStaticQuery } from 'gatsby'
-import { useTheme } from 'styled-components'
+import styled, { useTheme } from 'styled-components'
 
 import Button from '../components/Button'
+import ClickableBox from '../components/customPageComponents/ClickableBox'
 import Grid from '../components/customPageComponents/Grid'
 import ImageIcon from '../components/customPageComponents/ImageIcon'
 import Page from '../components/customPageComponents/Page'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
+import SubpageImageHeroSection from '../components/customPageComponents/SubpageImageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import SubpageVideoHeroSection from '../components/customPageComponents/SubpageVideoHeroSection'
 import TextElement from '../components/customPageComponents/TextElement'
@@ -32,11 +34,14 @@ const ambassadorQuery = graphql`
     rockPileIcon: file(relativePath: { eq: "rock-pile-icon.png" }) {
       ...Icon
     }
+    placeholderImage: file(relativePath: { eq: "alephium-hackathon-lake.png" }) {
+      ...HeroImage
+    }
   }
 `
 
 const CustomPage = (props: PageProps) => {
-  const { heroImage, heroVideo } = useStaticQuery<Queries.AmbassadorPageQuery>(ambassadorQuery)
+  const { heroImage, heroVideo, placeholderImage } = useStaticQuery<Queries.AmbassadorPageQuery>(ambassadorQuery)
 
   return (
     <Page
@@ -115,50 +120,57 @@ const CustomPage = (props: PageProps) => {
               <h2>How to Join the Program</h2>
             </TextElement>
 
-            <SubheaderContent>
-              <TextElement>
-                <h3>Apply</h3>
-                <p>
-                  Fill out the{' '}
-                  <SimpleLink url="https://docs.google.com/forms/d/e/1FAIpQLSfR0T6Fg3v8HU86wZJgQBXslRUJKS3bsiQb92-ZIyaaV4RreA/viewform?usp=sf_link">
-                    Ambassador Application Form
-                  </SimpleLink>{' '}
-                  and tell us about your skills, experience, and how you’d like to contribute to Alephium.
-                </p>
-
-                <h3>Onboarding</h3>
-                <p>
-                  If selected, you’ll receive an onboarding package with resources, guidelines, and access to the
-                  Alephium Ambassador community.
-                </p>
-
-                <h3>Start Contributing</h3>
-                <p>
-                  Begin your journey by completing tasks, participating in initiatives, and collaborating with other
-                  ambassadors.
-                </p>
-
-                <h3>Grow and Earn</h3>
-                <p>
-                  As you contribute, you’ll earn rewards, gain recognition, and unlock new opportunities within the
-                  Alephium ecosystem.
-                </p>
-              </TextElement>
-            </SubheaderContent>
+            <Grid columns={2} gap="small">
+              <ClickableBox>
+                <Emoji>1️⃣</Emoji>
+                <TextElement isSmall noMargin>
+                  <p>
+                    <strong>Apply</strong> - Fill out the{' '}
+                    <SimpleLink url="https://docs.google.com/forms/d/e/1FAIpQLSfR0T6Fg3v8HU86wZJgQBXslRUJKS3bsiQb92-ZIyaaV4RreA/viewform?usp=sf_link">
+                      Ambassador Application Form
+                    </SimpleLink>{' '}
+                    and tell us about your skills, experience, and how you’d like to contribute to Alephium.
+                  </p>
+                </TextElement>
+              </ClickableBox>
+              <ClickableBox>
+                <Emoji>2️⃣</Emoji>
+                <TextElement isSmall noMargin>
+                  <p>
+                    <strong>Onboarding</strong> - If selected, you’ll receive an onboarding package with resources,
+                    guidelines, and access to the Alephium Ambassador community.
+                  </p>
+                </TextElement>
+              </ClickableBox>
+              <ClickableBox>
+                <Emoji>3️⃣</Emoji>
+                <TextElement isSmall noMargin>
+                  <p>
+                    <strong>Start Contributing</strong> - Begin your journey by completing tasks, participating in
+                    initiatives, and collaborating with other ambassadors.
+                  </p>
+                </TextElement>
+              </ClickableBox>
+              <ClickableBox>
+                <Emoji>4️⃣</Emoji>
+                <TextElement isSmall noMargin>
+                  <p>
+                    <strong>Grow and Earn</strong> - As you contribute, you’ll earn rewards, gain recognition, and
+                    unlock new opportunities within the Alephium ecosystem.
+                  </p>
+                </TextElement>
+              </ClickableBox>
+            </Grid>
           </SubpageSection>
 
-          <SectionDivider />
-
-          <SubpageSection>
-            <TextElement>
-              <h2>Have questions?</h2>
-              <p>Check our FAQ page for more information or join our community and contact our team.</p>
-              <Button url="/faq#ambassador-program">Check FAQ</Button>
-              <Button url="/discord">Join Discord</Button>
-            </TextElement>
-          </SubpageSection>
-
-          <SectionDivider />
+          {/* Same image as in FAQ page can go here, like we do with the "Wallets" in /get-started */}
+          <SubpageImageHeroSection backgroundImage={placeholderImage} minHeight="660px">
+            <h2>Have questions?</h2>
+            <hr />
+            <p>Check our FAQ page for more information or join our community and contact our team.</p>
+            <Button url="/faq#ambassador-program">Check FAQ</Button>
+            <Button url="/discord">Join Discord</Button>
+          </SubpageImageHeroSection>
 
           <SubpageSection>
             <TextElement isCentered>
@@ -235,3 +247,11 @@ const WhySection = () => {
     </SubpageSection>
   )
 }
+
+const Emoji = styled.div`
+  font-size: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-small);
+  margin-bottom: var(--spacing-2);
+`
