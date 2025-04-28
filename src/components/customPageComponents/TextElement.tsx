@@ -99,7 +99,7 @@ const TextElement = styled.div<TextElementProps>`
     font-size: var(--fontSize-24);
     font-weight: var(--fontWeight-semiBold);
     line-height: 1.3;
-    max-width: 600px;
+    max-width: 700px;
 
     ${({ isCentered }) =>
       isCentered &&

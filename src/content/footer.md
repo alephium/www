@@ -20,7 +20,7 @@ columns:
         url: /faq
       - text: Brand Assets
         url: https://github.com/alephium/alephium-brand-guide
-      - text: Team
+      - text: About
         url: /about
   - title: Resources
     links:

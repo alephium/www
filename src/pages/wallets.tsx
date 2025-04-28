@@ -267,8 +267,8 @@ const CustomPage = (props: PageProps) => {
           <SubpageSection>
             <TextElement isSmall>
               <h3>Security Reminder</h3>
-              <hr />
               <p>
+                <hr />
                 Always keep your seed phrase and private keys secure. Never share them with anyone, and be cautious of
                 phishing attempts.
               </p>
@@ -278,8 +278,9 @@ const CustomPage = (props: PageProps) => {
               </p>
 
               <h3>Disclaimer</h3>
-              <hr />
+
               <p>
+                <hr />
                 The list of wallets does not constitute an endorsement and is not exhaustive of all wallet options
                 available. Always do your own research before choosing a wallet. The list includes non-custodial
                 Alephium wallets.
