@@ -1,7 +1,7 @@
 import { graphql, PageProps, useStaticQuery } from 'gatsby'
 
 import Button from '../components/Button'
-import Grid from '../components/customPageComponents/Grid'
+import CardsRow from '../components/customPageComponents/CardsRow'
 import Page from '../components/customPageComponents/Page'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
@@ -73,7 +73,7 @@ const CustomPage = (props: PageProps) => {
             </TextElement>
 
             <SubheaderContent>
-              <Grid columns={3}>
+              <CardsRow>
                 <TextCard>
                   <TextCardContent>
                     <h3>Suggest a Bounty</h3>
@@ -101,7 +101,7 @@ const CustomPage = (props: PageProps) => {
                     </Button>
                   </TextCardContent>
                 </TextCard>
-              </Grid>
+              </CardsRow>
             </SubheaderContent>
           </SubpageSection>
 
