@@ -8,10 +8,10 @@ import SubpageVideoHeroSection from '../../customPageComponents/SubpageVideoHero
 
 export const homepageHeroQuery = graphql`
   query HomepageHero {
-    heroImage: file(relativePath: { eq: "lake-pan-poster.png" }) {
+    heroImage: file(relativePath: { eq: "bay-tree.png" }) {
       ...HeroImage
     }
-    heroVideo: file(relativePath: { eq: "lake-pan-scrub.mp4" }) {
+    heroVideo: file(relativePath: { eq: "bay-tree-scrub.mp4" }) {
       publicURL
     }
   }

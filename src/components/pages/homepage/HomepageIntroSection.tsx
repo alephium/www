@@ -30,8 +30,8 @@ export const query = graphql`
 `
 
 const HomepageIntroSection = ({ cards }: Queries.HomepageIntroSectionFragment) => (
-  <SubpageSection id="intro">
-    <TextElement>
+  <SubpageSection id="intro" isCentered>
+    <TextElement isCentered>
       <h2>
         A Network Built
         <br />
@@ -50,7 +50,7 @@ const HomepageIntroSection = ({ cards }: Queries.HomepageIntroSectionFragment) =
       </p>
     </TextElement>
 
-    <SubheaderContent>
+    <SubheaderContent isCentered>
       <IntroColumns variants={cardContainerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
         {cards?.map(
           (card) =>
@@ -92,6 +92,8 @@ const cardVariants = {
 
 const IntroColumns = styled(motion.div)`
   display: flex;
+  flex: 1;
+  justify-content: center;
   gap: 30px;
 
   @media ${deviceBreakPoints.mobile} {

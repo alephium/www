@@ -95,7 +95,7 @@ const HomepageStatsSection = () => {
 
   return (
     <SubpageSection>
-      <TextElement>
+      <TextElement isCentered>
         <h2>
           Made for Real Adoption.
           <br />
@@ -103,7 +103,7 @@ const HomepageStatsSection = () => {
         </h2>
       </TextElement>
 
-      <SubheaderContent>
+      <SubheaderContent isCentered>
         <Grid columns={2}>
           <TextElement noHeadingsMargins>
             <ImageIcon image={yellowWaveIcon?.childImageSharp?.gatsbyImageData} alt="Fast" size={82} rounded />

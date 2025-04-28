@@ -3,7 +3,6 @@ import { graphql, PageProps } from 'gatsby'
 import Button from '../components/Button'
 import Page from '../components/customPageComponents/Page'
 import TextElement from '../components/customPageComponents/TextElement'
-import TitleShadow from '../components/customPageComponents/TitleShadow'
 import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import HomepageEcosystemSection from '../components/pages/homepage/HomepageEcosystemSection'
 import HomepageHeroSection from '../components/pages/homepage/HomepageHeroSection'
@@ -58,6 +57,8 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
             </>
           )}
 
+          <SectionDivider />
+
           <HomepageStatsSection />
 
           <HomepageEcosystemSection />
@@ -77,7 +78,6 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
             />
 
             <TextElement isCentered>
-              <TitleShadow />
               <h2>This is your moment.</h2>
               <p>
                 Alephium isn’t just a concept - it’s something we build, together.{' '}
