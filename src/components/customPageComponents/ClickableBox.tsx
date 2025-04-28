@@ -7,19 +7,11 @@ const ClickableBox = styled(SimpleLink)`
   display: flex;
   align-items: center;
   gap: var(--spacing-4);
-
+  background-color: ${({ theme }) => theme.bgSecondary};
+  border-radius: var(--radius);
+  padding: var(--spacing-2);
   &:hover {
-    :before {
-      content: '';
-      position: absolute;
-      right: -10px;
-      left: -10px;
-      top: -10px;
-      bottom: -10px;
-      border-radius: var(--radius);
-      background-color: ${({ theme }) => theme.bgSecondary};
-      z-index: -1;
-    }
+    background-color: ${({ theme }) => theme.bgPrimary};
   }
 `
 

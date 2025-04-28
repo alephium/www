@@ -1,8 +1,8 @@
 import { graphql, PageProps, useStaticQuery } from 'gatsby'
 
 import Button from '../components/Button'
-import CardImage from '../components/customPageComponents/CardImage'
 import Grid from '../components/customPageComponents/Grid'
+import ImageIcon from '../components/customPageComponents/ImageIcon'
 import Page from '../components/customPageComponents/Page'
 import Placeholder from '../components/customPageComponents/Placeholder'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
@@ -57,7 +57,7 @@ const CustomPage = (props: PageProps) => {
             <SubheaderContent>
               <Grid columns={3}>
                 <TextCard>
-                  <CardImage src="https://place-hold.it/100" rounded />
+                  <ImageIcon src="https://place-hold.it/100" rounded />
                   <h3>SVG</h3>
                   <p>
                     A flexible format that stays sharp no matter how much you zoom in. Perfect for logos, icons, and
@@ -66,7 +66,7 @@ const CustomPage = (props: PageProps) => {
                   <Button url="/">Download SVG</Button>
                 </TextCard>
                 <TextCard>
-                  <CardImage src="https://place-hold.it/100" rounded />
+                  <ImageIcon src="https://place-hold.it/100" rounded />
                   <h3>PNG</h3>
                   <p>
                     High-quality image format that supports transparency. Ideal for photos, logos, and graphics with
@@ -75,7 +75,7 @@ const CustomPage = (props: PageProps) => {
                   <Button url="/">Download PNG</Button>
                 </TextCard>
                 <TextCard>
-                  <CardImage src="https://place-hold.it/100" rounded />
+                  <ImageIcon src="https://place-hold.it/100" rounded />
                   <h3>MP4</h3>
                   <p>Alephium animations in a widely used format. Perfect for streaming and sharing online.</p>
                   <Button url="/">Download MP4</Button>
@@ -124,37 +124,37 @@ const CustomPage = (props: PageProps) => {
             <SubheaderContent>
               <Grid columns={4}>
                 <TextCard>
-                  <CardImage src="https://place-hold.it/100/1200da/fff" rounded />
+                  <ImageIcon src="https://place-hold.it/100/1200da/fff" rounded />
                   <h3>Purple</h3>
                   <p>#1200da</p>
                 </TextCard>
                 <TextCard>
-                  <CardImage src="https://place-hold.it/100/ff5d51/fff" rounded />
+                  <ImageIcon src="https://place-hold.it/100/ff5d51/fff" rounded />
                   <h3>Orange red</h3>
                   <p>#ff5d51</p>
                 </TextCard>
                 <TextCard>
-                  <CardImage src="https://place-hold.it/100/000000/fff" rounded />
+                  <ImageIcon src="https://place-hold.it/100/000000/fff" rounded />
                   <h3>Black</h3>
                   <p>#000000</p>
                 </TextCard>
                 <TextCard>
-                  <CardImage src="https://place-hold.it/100/ffffff" rounded />
+                  <ImageIcon src="https://place-hold.it/100/ffffff" rounded />
                   <h3>White</h3>
                   <p>#ffffff</p>
                 </TextCard>
                 <TextCard>
-                  <CardImage src="https://place-hold.it/100/D8D8D8" rounded />
+                  <ImageIcon src="https://place-hold.it/100/D8D8D8" rounded />
                   <h3>Mountain 1st</h3>
                   <p>#D8D8D8</p>
                 </TextCard>
                 <TextCard>
-                  <CardImage src="https://place-hold.it/100/E5E5E5" rounded />
+                  <ImageIcon src="https://place-hold.it/100/E5E5E5" rounded />
                   <h3>Mountain 2nd</h3>
                   <p>#E5E5E5</p>
                 </TextCard>
                 <TextCard>
-                  <CardImage src="https://place-hold.it/100/ECECEC" rounded />
+                  <ImageIcon src="https://place-hold.it/100/ECECEC" rounded />
                   <h3>Mountain 3rd</h3>
                   <p>#ECECEC</p>
                 </TextCard>

@@ -32,9 +32,9 @@ const CustomPage = (props: PageProps) => {
             <h1>Alephium Roadmap & Milestones</h1>
             <hr />
             <p>
-              At Alephium, we’re building the future of blockchain technology - one milestone at a time. Our roadmap
-              reflects our commitment to innovation, scalability, and community-driven growth. Explore our journey so
-              far and what’s coming next.
+              <strong>At Alephium, we’re building the future of blockchain technology</strong> - one milestone at a
+              time. Our roadmap reflects our commitment to innovation, scalability, and community-driven growth.{' '}
+              <strong>Explore our journey so far and what’s coming next.</strong>
             </p>
           </SubpageHeroSection>
 

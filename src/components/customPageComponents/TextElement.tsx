@@ -46,23 +46,25 @@ const TextElement = styled.div<TextElementProps>`
   }
 
   > h1 {
+    line-height: 1;
     font-family: 'Sentient';
-    font-size: var(--fontSize-60);
+    font-size: var(--fontSize-64);
     font-weight: var(--fontWeight-semiBold);
   }
 
   > h2 {
     font-family: 'Sentient';
     font-size: var(--fontSize-56);
-    line-height: 1;
     margin-bottom: var(--spacing-6);
+    color: ${({ theme }) => theme.textPrimaryVariation};
+    line-height: 1;
   }
 
   > h3 {
-    font-family: 'Sentient';
-    font-size: var(--fontSize-38);
-    line-height: 1.2;
-    font-weight: var(--fontWeight-normal);
+    font-family: 'InterDisplay';
+    font-size: var(--fontSize-36);
+    font-weight: var(--fontWeight-medium);
+    margin-bottom: var(--spacing-2);
 
     ${({ isSmall }) =>
       isSmall &&
@@ -139,11 +141,15 @@ const TextElement = styled.div<TextElementProps>`
   > ul {
     padding-inline-start: 10px;
     list-style-type: none;
-    color: ${({ theme }) => theme.textPrimaryVariation};
+    color: ${({ theme }) => theme.textPrimary};
 
-    > li:before {
-      content: '—';
-      padding-right: 10px;
+    > li {
+      margin-bottom: var(--spacing-1);
+
+      &:before {
+        content: '—';
+        padding-right: 10px;
+      }
     }
   }
 

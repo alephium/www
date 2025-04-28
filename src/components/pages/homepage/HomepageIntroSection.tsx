@@ -60,7 +60,7 @@ const HomepageIntroSection = ({ cards }: Queries.HomepageIntroSectionFragment) =
                 <CardImageOverlay image={card.image?.childImageSharp?.gatsbyImageData} overlayTitle={card.title} />
                 <TextCardContent>
                   <p>{card.description}</p>
-                  <Button url={card.link?.url} squared>
+                  <Button url={card.link?.url} squared highlight>
                     {card.actionText}
                   </Button>
                 </TextCardContent>

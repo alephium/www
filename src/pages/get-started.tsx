@@ -1,10 +1,9 @@
 import { graphql, PageProps, useStaticQuery } from 'gatsby'
 
 import Button from '../components/Button'
-import CardImage from '../components/customPageComponents/CardImage'
-import CardImageOverlay from '../components/customPageComponents/CardImageOverlay'
 import ClickableBox from '../components/customPageComponents/ClickableBox'
 import Grid from '../components/customPageComponents/Grid'
+import ImageIcon from '../components/customPageComponents/ImageIcon'
 import Page from '../components/customPageComponents/Page'
 import SideBySide from '../components/customPageComponents/SideBySide'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
@@ -15,11 +14,6 @@ import TextCard from '../components/customPageComponents/TextCard'
 import TextCardContent from '../components/customPageComponents/TextCardContent'
 import TextElement from '../components/customPageComponents/TextElement'
 import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
-import PageCardSectionContainer from '../components/PageCardSectionContainer'
-import PageSectionContainer from '../components/PageSectionContainer'
-import { WalletCards } from '../components/PageSectionWallets'
-import SectionDivider from '../components/SectionDivider'
-import useWallets from '../hooks/useWallets'
 
 const exchangesQuery = graphql`
   query GetStartedPage {
@@ -31,7 +25,7 @@ const exchangesQuery = graphql`
     }
     ecosystemImage: file(relativePath: { eq: "ecosystem-islands.png" }) {
       childImageSharp {
-        gatsbyImageData(width: 1920, layout: CONSTRAINED, transformOptions: { fit: COVER, cropFocus: CENTER })
+        gatsbyImageData(quality: 80)
       }
     }
     treasureImage: file(relativePath: { eq: "treasure.png" }) {
@@ -40,6 +34,16 @@ const exchangesQuery = graphql`
       }
     }
     mineImage: file(relativePath: { eq: "mine.png" }) {
+      childImageSharp {
+        gatsbyImageData(quality: 100)
+      }
+    }
+    documentationIcon: file(relativePath: { eq: "leaf-icon.png" }) {
+      childImageSharp {
+        gatsbyImageData(quality: 100)
+      }
+    }
+    goldIcon: file(relativePath: { eq: "gold-icon.png" }) {
       childImageSharp {
         gatsbyImageData(quality: 100)
       }
@@ -80,23 +84,20 @@ const exchangesQuery = graphql`
 `
 
 const CustomPage = (props: PageProps) => {
-  const wallets = useWallets()
   const {
     exchangesContent,
     heroImage,
     heroVideo,
-    desktopWallet,
-    extensionWallet,
-    mobileWallet,
     treasureImage,
     blobVideo,
     mineImage,
-    ecosystemImage
+    ecosystemImage,
+    documentationIcon,
+    goldIcon
   } = useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
   const exchanges = exchangesContent.nodes[0].frontmatter?.exchanges ?? []
   const blobVideoUrl = blobVideo?.publicURL || undefined
   const ecosystemImageData = ecosystemImage?.childImageSharp?.gatsbyImageData || undefined
-  const mineImageData = mineImage?.childImageSharp?.gatsbyImageData || undefined
 
   return (
     <Page
@@ -108,7 +109,7 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageVideoHeroSection poster={heroImage} video={heroVideo}>
+          <SubpageVideoHeroSection poster={heroImage} video={heroVideo} alignContent="bottom">
             <h1>Get Started with Alephium</h1>
             <hr />
             <p>
@@ -146,59 +147,19 @@ const CustomPage = (props: PageProps) => {
             </SideBySide>
           </SubpageSection>
 
-          <SubpageImageHeroSection backgroundImage={treasureImage}>
-            <PageSectionContainer>
-              <TextElement>
-                <h2>Wallets</h2>
-                <p>
-                  To interact with the Alephium ecosystem{' '}
-                  <strong>you’ll need a wallet, which acts as your gateway to the network</strong>. With an Alephium
-                  wallet, you can store, send, and receive ALPH, manage digital assets (stablecoins, NFTs) and
-                  seamlessly connect to dApps.
-                </p>
-              </TextElement>
-            </PageSectionContainer>
+          <SubpageImageHeroSection backgroundImage={treasureImage} maxHeight="660px">
+            <h2>Wallets</h2>
+            <hr />
+            <p>
+              To interact with the Alephium ecosystem{' '}
+              <strong>you’ll need a wallet, which acts as your gateway to the network</strong>. With an Alephium wallet,
+              you can store, send, and receive ALPH, manage digital assets (stablecoins, NFTs) and seamlessly connect to
+              dApps.
+            </p>
+            <Button big url="/wallets">
+              Download a wallet
+            </Button>
           </SubpageImageHeroSection>
-          <PageSectionContainer>
-            <WalletCards>
-              <TextCard>
-                <CardImageOverlay image={desktopWallet?.childImageSharp?.gatsbyImageData} overlayTitle="Desktop" />
-                <TextCardContent>
-                  <p>
-                    Alephium’s flagship wallet. Ready for everything, from daily management tasks to smart contracts
-                    deployment, privacy & DeFi.
-                  </p>
-                  <Button url={wallets?.desktop?.url ?? ''} squared textAlign="center">
-                    Get the desktop wallet
-                  </Button>
-                </TextCardContent>
-              </TextCard>
-              <TextCard>
-                <CardImageOverlay image={extensionWallet?.childImageSharp?.gatsbyImageData} overlayTitle="Extension" />
-                <TextCardContent>
-                  <p>The wallet in your browser. Get access to the latest features with a focus on DeFi.</p>
-                  <Button url={wallets?.extension?.urls?.chrome ?? ''} squared textAlign="center">
-                    Chrome
-                  </Button>
-                  <Button url={wallets?.extension?.urls?.firefox ?? ''} squared textAlign="center">
-                    Firefox
-                  </Button>
-                </TextCardContent>
-              </TextCard>
-              <TextCard>
-                <CardImageOverlay image={mobileWallet?.childImageSharp?.gatsbyImageData} overlayTitle="Mobile" />
-                <TextCardContent>
-                  <p>Alephium on the go. First-class UX. Available on Android and iOS.</p>
-                  <Button url={wallets?.mobile?.urls?.android ?? ''} squared textAlign="center">
-                    Android
-                  </Button>
-                  <Button url={wallets?.mobile?.urls?.ios ?? ''} squared textAlign="center">
-                    iOS
-                  </Button>
-                </TextCardContent>
-              </TextCard>
-            </WalletCards>
-          </PageSectionContainer>
 
           <SubpageSection>
             <TextElement>
@@ -216,7 +177,14 @@ const CustomPage = (props: PageProps) => {
                     exchange.title &&
                     exchange.url && (
                       <ClickableBox key={exchange.title} url={exchange.url}>
-                        <CardImage src={exchange.logo?.publicURL ?? ''} alt={exchange.title} rounded size={50} />
+                        <ImageIcon
+                          src={exchange.logo?.publicURL ?? ''}
+                          alt={exchange.title}
+                          rounded
+                          size={50}
+                          padding={10}
+                          noBottomMargin
+                        />
                         <TextElement isSmall noMargin>
                           <p>
                             <strong>{exchange.title}</strong> — {exchange.description}
@@ -226,16 +194,11 @@ const CustomPage = (props: PageProps) => {
                     )
                 )}
               </Grid>
+              <Button url="https://www.coingecko.com/en/coins/alephium#markets">See more ALPH markets</Button>
             </SubheaderContent>
-
-            <SubpageSection>
-              <TextElement isCentered>
-                <Button url="https://www.coingecko.com/en/coins/alephium#markets">See more ALPH markets</Button>
-              </TextElement>
-            </SubpageSection>
           </SubpageSection>
 
-          <PageCardSectionContainer wide justifyContent="center">
+          <SubpageSection border>
             <GatsbyImageWrapper
               image={ecosystemImageData}
               alt="Ecosystem background"
@@ -244,45 +207,52 @@ const CustomPage = (props: PageProps) => {
               loading="lazy"
               isBackground
             />
-            <SubpageSection>
-              <TextElement isCentered>
-                <h2>Explore the ecosystem</h2>
-                <p>
-                  <strong>
-                    Discover innovative dApps and tokenized assets - trade, borrow, lend or earn ALPH, by engaging with
-                    DeFi protocols or contributing to the ecosystem.
-                  </strong>
-                </p>
-                <Button url="https://alph.land">See all apps</Button>
-              </TextElement>
-            </SubpageSection>
-          </PageCardSectionContainer>
+            <TextElement isCentered>
+              <h2>Explore the ecosystem</h2>
+              <p>
+                <strong>
+                  Discover innovative dApps and tokenized assets - trade, borrow, lend or earn ALPH, by engaging with
+                  DeFi protocols or contributing to the ecosystem.
+                </strong>
+              </p>
+              <Button big url="https://alph.land">
+                See all apps
+              </Button>
+            </TextElement>
+          </SubpageSection>
 
-          <SubpageSection>
-            <TextElement>
+          <SubpageSection isCentered>
+            <TextElement isCentered>
               <h2>Build on Alephium</h2>
               <p>
                 With robust smart contract security, high-performance sharding, and a resilient Proof-of-Work
-                foundation, Alephium gives you the tools to build better, safer, and faster.
+                foundation, <strong>Alephium gives you the tools to build better, safer, and faster.</strong>
               </p>
             </TextElement>
 
             <SubheaderContent>
-              <Grid columns={2}>
+              <Grid columns={2} isCentered gap="small">
                 <TextCard url="https://docs.alephium.org/">
-                  <CardImage src="https://place-hold.it/100" rounded />
-                  <h3>Documentation</h3>
-                  <p>Documentation to get you going quick and easy.</p>
+                  <TextCardContent>
+                    <ImageIcon image={documentationIcon?.childImageSharp?.gatsbyImageData} rounded />
+                    <h3>Documentation</h3>
+                    <p>Documentation to get you going quick and easy.</p>
+                  </TextCardContent>
                 </TextCard>
                 <TextCard url="/grants">
-                  <CardImage src="https://place-hold.it/100" rounded />
-                  <h3>Grants</h3>
-                  <p>You have an idea, but no funding? We can help.</p>
+                  <TextCardContent>
+                    <ImageIcon image={goldIcon?.childImageSharp?.gatsbyImageData} rounded />
+                    <h3>Grants</h3>
+                    <p>
+                      You have an idea, but no funding?
+                      <br />
+                      We can help.
+                    </p>
+                  </TextCardContent>
                 </TextCard>
               </Grid>
             </SubheaderContent>
-
-            <SubheaderContent>
+            <SubheaderContent isCentered>
               <TextElement isCentered>
                 <h3>Guides and tutorials</h3>
                 <Button url="https://docs.alephium.org/ralph">Ralph Language</Button>
@@ -294,47 +264,30 @@ const CustomPage = (props: PageProps) => {
             </SubheaderContent>
           </SubpageSection>
 
-          <SectionDivider />
-
-          <SubpageSection>
-            <TextElement>
-              <h2>
-                Mine ALPH.
-                <br />
-                Secure the Network.
-                <br />
-                Earn Rewards
-              </h2>
-              <p>
-                ALPH mining is <strong>efficient, accessible, and built for long-term sustainability</strong>. Powered
-                by Proof-of-Less-Work,{' '}
-                <strong>Alephium reduces energy consumption by 87% compared to traditional PoW</strong>, making mining
-                more sustainable and rewarding.
-              </p>
-              <ul>
-                <li>Clear and fair emissions schedule</li>
-                <li>Energy efficient</li>
-                <li>Easy setup and quick start</li>
-              </ul>
-            </TextElement>
-          </SubpageSection>
-
-          <PageCardSectionContainer wide justifyContent="center">
-            <GatsbyImageWrapper
-              image={mineImageData}
-              alt="Mining background"
-              style={{ height: '100%' }}
-              objectFit="cover"
-              loading="lazy"
-              isBackground
-            />
-            <SubpageSection>
-              <TextElement isCentered>
-                <h2>Ready to mine?</h2>
-                <Button url="https://docs.alephium.org/mining">Get started</Button>
-              </TextElement>
-            </SubpageSection>
-          </PageCardSectionContainer>
+          <SubpageImageHeroSection backgroundImage={mineImage} minHeight="800px">
+            <h2>
+              Mine ALPH.
+              <br />
+              Secure the Network.
+              <br />
+              Earn Rewards.
+            </h2>
+            <hr />
+            <p>
+              ALPH mining is <strong>efficient, accessible, and built for long-term sustainability</strong>. Powered by
+              Proof-of-Less-Work,{' '}
+              <strong>Alephium reduces energy consumption by 87% compared to traditional PoW</strong>, making mining
+              more sustainable and rewarding.
+            </p>
+            <ul>
+              <li>Clear and fair emissions schedule</li>
+              <li>Energy efficient</li>
+              <li>Easy setup and quick start</li>
+            </ul>
+            <Button big url="https://docs.alephium.org/mining">
+              Start mining
+            </Button>
+          </SubpageImageHeroSection>
 
           <SubpageSection>
             <TextElement isCentered>
@@ -342,7 +295,9 @@ const CustomPage = (props: PageProps) => {
               <p>
                 No worries! Join our community and explore, there are many ways you can leave your mark on Alephium.
               </p>
-              <Button url="/communities">See our communities</Button>
+              <Button big highlight url="/communities">
+                See our communities
+              </Button>
             </TextElement>
           </SubpageSection>
         </>

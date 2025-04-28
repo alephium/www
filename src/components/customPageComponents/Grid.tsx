@@ -5,11 +5,23 @@ import { deviceBreakPoints } from '../../styles/global-style'
 interface GridProps {
   gap?: 'large' | 'small'
   columns?: number
+  isCentered?: boolean
 }
 
 const Grid = styled.div<GridProps>`
-  display: grid;
-  grid-template-columns: repeat(${({ columns }) => columns || 3}, minmax(0, 1fr));
+  ${({ isCentered, columns }) =>
+    isCentered
+      ? `
+          display: inline-grid;
+          grid-auto-flow: column;
+          grid-auto-columns: 1fr;
+          justify-content: center;
+          margin: 0 auto;
+        `
+      : `
+          display: grid;
+          grid-template-columns: repeat(${columns || 3}, minmax(0, 1fr));
+        `}
   gap: ${({ gap }) => (gap === 'small' ? 'var(--spacing-6)' : 'var(--spacing-12)')};
 
   @media ${deviceBreakPoints.mobile} {

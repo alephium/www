@@ -6,10 +6,10 @@ import { useCallback, useEffect, useState } from 'react'
 import styled, { useTheme } from 'styled-components'
 
 import Grid from '../../customPageComponents/Grid'
+import ImageIcon from '../../customPageComponents/ImageIcon'
 import SubheaderContent from '../../customPageComponents/SubheaderContent'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextElement from '../../customPageComponents/TextElement'
-import GatsbyImageWrapper from '../../GatsbyImageWrapper'
 
 const baseUrl = 'https://backend.mainnet.alephium.org'
 
@@ -106,9 +106,7 @@ const HomepageStatsSection = () => {
       <SubheaderContent>
         <Grid columns={2}>
           <TextElement noHeadingsMargins>
-            <CardImageStyled>
-              <GatsbyImageWrapper image={yellowWaveIcon?.childImageSharp?.gatsbyImageData} alt="Fast" loading="lazy" />
-            </CardImageStyled>
+            <ImageIcon image={yellowWaveIcon?.childImageSharp?.gatsbyImageData} alt="Fast" size={82} rounded />
             <h3 style={{ color: theme.palette2 }}>Fast</h3>
             <TLDRSection color={theme.palette2}>
               <TLDRTag color={theme.palette2}>TL;DR</TLDRTag>
@@ -120,27 +118,19 @@ const HomepageStatsSection = () => {
             </p>
           </TextElement>
           <TextElement noHeadingsMargins>
-            <CardImageStyled>
-              <GatsbyImageWrapper
-                image={blueTreeIcon?.childImageSharp?.gatsbyImageData}
-                alt="Scalable"
-                loading="lazy"
-              />
-            </CardImageStyled>
+            <ImageIcon image={blueTreeIcon?.childImageSharp?.gatsbyImageData} alt="Scalable" size={82} rounded />
             <h3 style={{ color: theme.palette3 }}>Scalable</h3>
             <TLDRSection color={theme.palette3}>
               <TLDRTag color={theme.palette3}>TL;DR</TLDRTag>
               <span>{`${totalTransactions.value.toLocaleString()} total transactions`}</span>
             </TLDRSection>
             <p>
-              Built to handle <strong>high throughput without sacrificing security</strong>, Alephium's architecture
-              ensures that fees remain predictable and affordable - empowering developers and users alike.
+              Built to handle <strong>high throughput without sacrificing security</strong>, Alephium&apos;s
+              architecture ensures that fees remain predictable and affordable - empowering developers and users alike.
             </p>
           </TextElement>
           <TextElement noHeadingsMargins>
-            <CardImageStyled>
-              <GatsbyImageWrapper image={circlesIcon?.childImageSharp?.gatsbyImageData} alt="Secure" loading="lazy" />
-            </CardImageStyled>
+            <ImageIcon image={circlesIcon?.childImageSharp?.gatsbyImageData} alt="Secure" size={82} rounded />
             <h3 style={{ color: theme.palette4 }}>Secure</h3>
             <TLDRSection color={theme.palette4}>
               <TLDRTag color={theme.palette4}>TL;DR</TLDRTag>
@@ -152,49 +142,36 @@ const HomepageStatsSection = () => {
             </p>
           </TextElement>
           <TextElement noHeadingsMargins>
-            <CardImageStyled>
-              <GatsbyImageWrapper
-                image={greenDropIcon?.childImageSharp?.gatsbyImageData}
-                alt="Sustainable"
-                loading="lazy"
-              />
-            </CardImageStyled>
+            <ImageIcon image={greenDropIcon?.childImageSharp?.gatsbyImageData} alt="Sustainable" size={82} rounded />
             <h3 style={{ color: theme.palette1 }}>Sustainable</h3>
             <TLDRSection color={theme.palette1}>
               <TLDRTag color={theme.palette1}>TL;DR</TLDRTag>
               <span>87% lower environmental impact vs. traditional PoW</span>
             </TLDRSection>
             <p>
-              Alephium's Proof-of-Less-Work mechanism reduces energy consumption, making it{' '}
+              Alephium&apos;s Proof-of-Less-Work mechanism reduces energy consumption, making it{' '}
               <strong>one of the most sustainable and responsible blockchains</strong> built for the future.
             </p>
           </TextElement>
           <TextElement noHeadingsMargins>
-            <CardImageStyled>
-              <GatsbyImageWrapper
-                image={rockPileIcon?.childImageSharp?.gatsbyImageData}
-                alt="Programmable"
-                loading="lazy"
-              />
-            </CardImageStyled>
+            <ImageIcon image={rockPileIcon?.childImageSharp?.gatsbyImageData} alt="Programmable" size={82} rounded />
             <h3 style={{ color: theme.palette6 }}>Programmable</h3>
             <TLDRSection color={theme.palette6}>
               <TLDRTag color={theme.palette6}>TL;DR</TLDRTag>
               <span>No compromise smart-contracts</span>
             </TLDRSection>
             <p>
-              Alephium's stateful UTXO model merges the best of both worlds -{' '}
+              Alephium&apos;s stateful UTXO model merges the best of both worlds -{' '}
               <strong>Ethereum-like smart contract flexibility with Bitcoin-level security.</strong>
             </p>
           </TextElement>
           <TextElement noHeadingsMargins>
-            <CardImageStyled>
-              <GatsbyImageWrapper
-                image={featherIcon?.childImageSharp?.gatsbyImageData}
-                alt="Developer-friendly"
-                loading="lazy"
-              />
-            </CardImageStyled>
+            <ImageIcon
+              image={featherIcon?.childImageSharp?.gatsbyImageData}
+              alt="Developer-friendly"
+              size={82}
+              rounded
+            />
             <h3 style={{ color: theme.palette5 }}>Developer-friendly</h3>
             <TLDRSection color={theme.palette5}>
               <TLDRTag color={theme.palette5}>TL;DR</TLDRTag>
@@ -242,12 +219,4 @@ const Stat = styled.div`
   font-size: var(--fontSize-28);
   line-height: var(--lineHeight-36);
   margin-top: var(--spacing-6);
-`
-
-const CardImageStyled = styled.div`
-  width: 82px;
-  height: 82px;
-  margin-bottom: var(--spacing-4);
-  border-radius: var(--radius);
-  overflow: hidden;
 `

@@ -3,6 +3,7 @@ import { graphql, PageProps } from 'gatsby'
 import Button from '../components/Button'
 import Page from '../components/customPageComponents/Page'
 import TextElement from '../components/customPageComponents/TextElement'
+import TitleShadow from '../components/customPageComponents/TitleShadow'
 import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import HomepageEcosystemSection from '../components/pages/homepage/HomepageEcosystemSection'
 import HomepageHeroSection from '../components/pages/homepage/HomepageHeroSection'
@@ -10,6 +11,7 @@ import HomepageIntroSection from '../components/pages/homepage/HomepageIntroSect
 import HomepagePartnersSection from '../components/pages/homepage/HomepagePartnersSection'
 import HomepageStatsSection from '../components/pages/homepage/HomepageStatsSection'
 import PageSectionContainer from '../components/PageSectionContainer'
+import SectionDivider from '../components/SectionDivider'
 
 export const pageQuery = graphql`
   query IndexPage {
@@ -28,7 +30,7 @@ export const pageQuery = graphql`
     }
     lighthouseImage: file(relativePath: { eq: "lighthouse.png" }) {
       childImageSharp {
-        gatsbyImageData(width: 1920, layout: CONSTRAINED, transformOptions: { fit: COVER, cropFocus: CENTER })
+        gatsbyImageData(quality: 80)
       }
     }
   }
@@ -62,6 +64,8 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
 
           {content?.partnersSection && <HomepagePartnersSection {...content.partnersSection} />}
 
+          <SectionDivider />
+
           <PageSectionContainer fullHeight wide justifyContent="center">
             <GatsbyImageWrapper
               image={lighthouseImage}
@@ -73,12 +77,15 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
             />
 
             <TextElement isCentered>
+              <TitleShadow />
               <h2>This is your moment.</h2>
               <p>
                 Alephium isn’t just a concept - it’s something we build, together.{' '}
                 <strong>There’s a place for you here and we can’t wait to meet you.</strong>
               </p>
-              <Button url="/get-started">Get started</Button>
+              <Button big highlight url="/get-started">
+                Get started
+              </Button>
             </TextElement>
           </PageSectionContainer>
         </>

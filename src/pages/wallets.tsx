@@ -6,14 +6,16 @@ import { IGatsbyImageData } from 'gatsby-plugin-image'
 import Slider from 'react-slick'
 import styled from 'styled-components'
 
+import Badge from '../components/Badge'
 import Button from '../components/Button'
 import CardsRow from '../components/customPageComponents/CardsRow'
 import Page from '../components/customPageComponents/Page'
 import SideBySide from '../components/customPageComponents/SideBySide'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
-import SubpageHeroSection from '../components/customPageComponents/SubpageImageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
+import SubpageVideoHeroSection from '../components/customPageComponents/SubpageVideoHeroSection'
 import TextCard from '../components/customPageComponents/TextCard'
+import TextCardContent from '../components/customPageComponents/TextCardContent'
 import TextElement from '../components/customPageComponents/TextElement'
 import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import SectionDivider from '../components/SectionDivider'
@@ -22,8 +24,11 @@ import useWallets from '../hooks/useWallets'
 
 const walletsQuery = graphql`
   query WalletsPage {
-    heroImage: file(relativePath: { eq: "alephium-hackathon-lake.png" }) {
+    heroImage: file(relativePath: { eq: "treasure.png" }) {
       ...HeroImage
+    }
+    heroVideo: file(relativePath: { eq: "underwater-treasure-scrub.mp4" }) {
+      publicURL
     }
     desktopScreenshots: allFile(
       filter: { relativeDirectory: { eq: "screenshots/desktop-wallet" } }
@@ -59,7 +64,7 @@ const walletsQuery = graphql`
 `
 
 const CustomPage = (props: PageProps) => {
-  const { heroImage, desktopScreenshots, extensionScreenshots, mobileScreenshots } =
+  const { heroImage, heroVideo, desktopScreenshots, extensionScreenshots, mobileScreenshots } =
     useStaticQuery<Queries.WalletsPageQuery>(walletsQuery)
   const wallets = useWallets()
 
@@ -73,43 +78,54 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageHeroSection backgroundImage={heroImage}>
-            <h1>Your Gateway to the Alephium Ecosystem</h1>
+          <SubpageVideoHeroSection poster={heroImage} video={heroVideo}>
+            <h1>Alephium Wallets</h1>
             <hr />
             <p>
-              Embarking on your Alephium journey begins with selecting a secure and user-friendly wallet tailored to
-              your needs. Alephium offers a variety of wallets to manage your ALPH tokens, interact with decentralized
-              applications (dApps), and participate in the ecosystem&apos;s growth.
+              <strong>Alephium offers a variety of wallets</strong> to manage your ALPH tokens, interact with
+              decentralized applications (dApps), and participate in the ecosystem&apos;s growth.
             </p>
-          </SubpageHeroSection>
+          </SubpageVideoHeroSection>
 
           <SubpageSection>
             <TextElement>
-              <h2>Why Choose an Alephium Wallet?</h2>
+              <h2>
+                Your Gateway
+                <br />
+                to the Alephium
+                <br />
+                Ecosystem
+              </h2>
             </TextElement>
 
             <SubheaderContent>
               <CardsRow>
                 <TextCard>
-                  <h3>Enhanced Security</h3>
-                  <p>
-                    Alephium's non-custodial wallets ensure that only you have access to your funds and private keys,
-                    which are fully encrypted on your device.
-                  </p>
+                  <TextCardContent>
+                    <h3>Enhanced Security</h3>
+                    <p>
+                      Alephium&apos;s non-custodial wallets ensure that only you have access to your funds and private
+                      keys, which are fully encrypted on your device.
+                    </p>
+                  </TextCardContent>
                 </TextCard>
                 <TextCard>
-                  <h3>Comprehensive Features</h3>
-                  <p>
-                    Whether you prefer desktop applications, browser extensions, or mobile apps, Alephium wallets allow
-                    you to manage ALPH tokens, engage with dApps, and more.
-                  </p>
+                  <TextCardContent>
+                    <h3>Comprehensive Features</h3>
+                    <p>
+                      Whether you prefer desktop applications, browser extensions, or mobile apps, Alephium wallets
+                      allow you to manage ALPH tokens, engage with dApps, and more.
+                    </p>
+                  </TextCardContent>
                 </TextCard>
                 <TextCard>
-                  <h3>Simple Setup</h3>
-                  <p>
-                    Getting started is straightforward—download your preferred wallet, set up your account, and you're
-                    ready to explore the Alephium ecosystem.
-                  </p>
+                  <TextCardContent>
+                    <h3>Simple Setup</h3>
+                    <p>
+                      Getting started is straightforward — download your preferred wallet, set up your account, and
+                      you&apos;re ready to explore the Alephium ecosystem.
+                    </p>
+                  </TextCardContent>
                 </TextCard>
               </CardsRow>
             </SubheaderContent>
@@ -118,17 +134,17 @@ const CustomPage = (props: PageProps) => {
           <SectionDivider />
 
           <SubpageSection>
-            <TextElement>
-              <h2>Explore Alephium Wallets</h2>
-              <p>Choose the wallet that best fits your preferences.</p>
-            </TextElement>
-
             <SubheaderContent>
               <SideBySide reverseOnMobile>
                 <TextElement isBodySmall>
-                  <h3>Desktop Wallet</h3>
+                  <h3>
+                    Desktop Wallet
+                    <Badge color="palette1">Windows</Badge>
+                    <Badge color="palette2">MacOS</Badge>
+                    <Badge color="palette3">Linux</Badge>
+                  </h3>
                   <p>
-                    Alephium's flagship desktop wallet is designed for both everyday transactions and advanced
+                    Alephium&apos;s flagship desktop wallet is designed for both everyday transactions and advanced
                     functionalities like smart contract deployment. It offers a comprehensive interface for managing
                     your assets securely.
                   </p>
@@ -146,12 +162,14 @@ const CustomPage = (props: PageProps) => {
                   images={desktopScreenshots.nodes.map((node) => node.childImageSharp?.gatsbyImageData)}
                 />
               </SideBySide>
-              <SideBySide>
-                <WalletCarousel
-                  images={extensionScreenshots.nodes.map((node) => node.childImageSharp?.gatsbyImageData)}
-                />
+              <SectionDivider />
+              <SideBySide reverseOnMobile>
                 <TextElement isBodySmall>
-                  <h3>Browser Extension Wallet</h3>
+                  <h3>
+                    Browser Extension Wallet
+                    <Badge color="palette4">Chrome</Badge>
+                    <Badge color="palette5">Firefox</Badge>
+                  </h3>
                   <p>
                     For seamless interaction with web-based dApps, the Alephium Extension Wallet integrates directly
                     into your browser, providing quick and secure access to your assets.
@@ -167,13 +185,21 @@ const CustomPage = (props: PageProps) => {
                   <Button url={wallets?.extension?.urls?.chrome ?? ''}>Chrome</Button>
                   <Button url={wallets?.extension?.urls?.firefox ?? ''}>Firefox</Button>
                 </TextElement>
+                <WalletCarousel
+                  images={extensionScreenshots.nodes.map((node) => node.childImageSharp?.gatsbyImageData)}
+                />
               </SideBySide>
+              <SectionDivider />
               <SideBySide reverseOnMobile>
                 <TextElement isBodySmall>
-                  <h3>Mobile Wallet</h3>
+                  <h3>
+                    Mobile Wallet
+                    <Badge color="palette6">iOS</Badge>
+                    <Badge color="palette1">Android</Badge>
+                  </h3>
                   <p>
-                    Manage your ALPH tokens on the go with Alephium's mobile wallet, offering a balance between security
-                    and convenience.
+                    Manage your ALPH tokens on the go with Alephium&apos;s mobile wallet, offering a balance between
+                    security and convenience.
                   </p>
                   <p>Features:</p>
                   <ul>
@@ -189,6 +215,7 @@ const CustomPage = (props: PageProps) => {
                 </TextElement>
                 <WalletCarousel images={mobileScreenshots.nodes.map((node) => node.childImageSharp?.gatsbyImageData)} />
               </SideBySide>
+              <SectionDivider />
               <SideBySide reverseOnMobile>
                 <TextElement>
                   <h3>Hardware Wallet Support</h3>
@@ -199,10 +226,12 @@ const CustomPage = (props: PageProps) => {
                   <p>Supported Devices:</p>
                   <ul>
                     <li>
-                      <SimpleLink url="https://docs.alephium.org/wallet/ledger">Ledger</SimpleLink>
+                      <SimpleLink highlight url="https://docs.alephium.org/wallet/ledger">
+                        Ledger
+                      </SimpleLink>
                     </li>
                     <li>OneKey</li>
-                    <li>Safepa</li>
+                    <li>SafePal</li>
                   </ul>
                 </TextElement>
               </SideBySide>
@@ -214,6 +243,7 @@ const CustomPage = (props: PageProps) => {
           <SubpageSection>
             <TextElement isSmall>
               <h3>Security Reminder</h3>
+              <hr />
               <p>
                 Always keep your seed phrase and private keys secure. Never share them with anyone, and be cautious of
                 phishing attempts.
@@ -224,6 +254,7 @@ const CustomPage = (props: PageProps) => {
               </p>
 
               <h3>Disclaimer</h3>
+              <hr />
               <p>
                 The list of wallets does not constitute an endorsement and is not exhaustive of all wallet options
                 available. Always do your own research before choosing a wallet. The list includes non-custodial
@@ -277,7 +308,7 @@ const CarouselContainer = styled.div`
   margin-bottom: 20px;
 
   .slick-dots {
-    bottom: -40px;
+    bottom: -30px;
 
     li {
       button:before {

@@ -6,28 +6,28 @@ export const darkTheme: DefaultTheme = {
   name: 'dark',
 
   textPrimary: 'var(--color-white)',
-  textPrimaryVariation: 'rgba(255, 255, 255, 0.8)',
-  textSecondary: 'rgba(255, 255, 255, 0.6)',
+  textPrimaryVariation: 'rgba(255, 255, 255, 0.9)',
+  textSecondary: 'rgba(255, 255, 255, 0.65)',
   textTertiary: 'rgba(255, 255, 255, 0.4)',
 
-  bgPrimary: 'var(--color-grey-700)',
+  bgPrimary: 'var(--color-grey-750)',
   bgSecondary: 'var(--color-grey-800)',
   bgTertiary: 'var(--color-grey-850)',
-  bgSurface: '#0b0b0b',
+  bgSurface: 'rgba(255, 255, 255, 0.015)',
 
-  borderPrimary: 'rgba(255, 255, 255, 0.1)',
+  borderPrimary: 'rgba(255, 255, 255, 0.05)',
 
   link: 'var(--color-grey-100)',
   linkAlt: 'var(--color-white)',
 
   separator: 'var(--color-grey-700)',
 
-  palette1: '#6EE2AC',
-  palette2: '#FCCF7D',
-  palette3: '#3FD2FF',
-  palette4: '#c974ff',
-  palette5: '#ff7bc6',
-  palette6: '#ffa45e'
+  palette1: '#6dffbc',
+  palette2: '#ffd68c',
+  palette3: '#8de9ff',
+  palette4: '#f7b5ff',
+  palette5: '#ff89cc',
+  palette6: '#ffb77d'
 }
 
 export const lightTheme: DefaultTheme = {

@@ -2,11 +2,13 @@ import { graphql, PageProps, useStaticQuery } from 'gatsby'
 
 import Button from '../components/Button'
 import CardsRow from '../components/customPageComponents/CardsRow'
+import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
 import SubpageHeroSection from '../components/customPageComponents/SubpageImageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextCard from '../components/customPageComponents/TextCard'
+import TextCardContent from '../components/customPageComponents/TextCardContent'
 import TextElement from '../components/customPageComponents/TextElement'
 import SectionDivider from '../components/SectionDivider'
 import SimpleLink from '../components/SimpleLink'
@@ -51,33 +53,39 @@ const CustomPage = (props: PageProps) => {
             <SubheaderContent>
               <CardsRow>
                 <TextCard>
-                  <h3>Alephium Grants Fund</h3>
-                  <p>
-                    The Alephium Grants Fund is an initiative aimed at empowering developers and startups building on
-                    the Alephium network. We offer tailored support for projects at various stages of development.
-                  </p>
-                  <p>Ready to bring your Alephium project to life?</p>
-                  <Button url="https://docs.google.com/forms/d/e/1FAIpQLSexF7M7k7kDdJtsHKFGYZuw4uEP7dzRrxmTFaMQvdU8DdH3cA/viewform">
-                    Learn & Apply
-                  </Button>
+                  <TextCardContent>
+                    <h3>Alephium Grants Fund</h3>
+                    <p>
+                      The Alephium Grants Fund is an initiative aimed at empowering developers and startups building on
+                      the Alephium network. We offer tailored support for projects at various stages of development.
+                    </p>
+                    <p>Ready to bring your Alephium project to life?</p>
+                    <Button url="https://docs.google.com/forms/d/e/1FAIpQLSexF7M7k7kDdJtsHKFGYZuw4uEP7dzRrxmTFaMQvdU8DdH3cA/viewform">
+                      Learn & Apply
+                    </Button>
+                  </TextCardContent>
                 </TextCard>
                 <TextCard>
-                  <h3>Bug Bounty Program</h3>
-                  <p>
-                    Security is paramount at Alephium. We encourage individual developers to discover vulnerabilities
-                    and exploits within the Alephium protocol or any of our code repositories.
-                  </p>
-                  <Button url="/bounties">Learn more</Button>
+                  <TextCardContent>
+                    <h3>Bug Bounty Program</h3>
+                    <p>
+                      Security is paramount at Alephium. We encourage individual developers to discover vulnerabilities
+                      and exploits within the Alephium protocol or any of our code repositories.
+                    </p>
+                    <Button url="/bounties">Learn more</Button>
+                  </TextCardContent>
                 </TextCard>
                 <TextCard>
-                  <h3>Migration and Expansion Grants</h3>
-                  <p>
-                    Alephium supports projects looking to migrate or expand their presence to our ecosystem. Whether
-                    you're transitioning fully to Alephium or integrating it alongside other chains, this grant is
-                    designed to help you navigate the process smoothly. Funds can be used for development,
-                    infrastructure, user incentives, and ecosystem integration, ensuring a seamless and fruitful
-                    experience for all parties involved.
-                  </p>
+                  <TextCardContent>
+                    <h3>Migration and Expansion Grants</h3>
+                    <p>
+                      Alephium supports projects looking to migrate or expand their presence to our ecosystem. Whether
+                      you're transitioning fully to Alephium or integrating it alongside other chains, this grant is
+                      designed to help you navigate the process smoothly. Funds can be used for development,
+                      infrastructure, user incentives, and ecosystem integration, ensuring a seamless and fruitful
+                      experience for all parties involved.
+                    </p>
+                  </TextCardContent>
                 </TextCard>
               </CardsRow>
             </SubheaderContent>
@@ -92,14 +100,42 @@ const CustomPage = (props: PageProps) => {
                 We’re open to funding anything that improves the Alephium ecosystem. Some key areas we are excited
                 about:
               </p>
-              <ul>
-                <li>DeFi dApps – Decentralized exchanges, lending protocols, automated market makers, etc.</li>
-                <li>NFT & Gaming Platforms – Infrastructure, marketplaces, on-chain games.</li>
-                <li>Decentralized Services – Privacy tools, oracles, identity solutions, etc.</li>
-                <li>Developer Tooling – SDKs, frameworks, integrations with existing services.</li>
-                <li>Infrastructure & Research – Security audits, scaling solutions, hardware integration.</li>
-                <li>Community & Education – Content, guides, workshops, ecosystem awareness campaigns.</li>
-              </ul>
+            </TextElement>
+            <Grid columns={2} gap="small">
+              <TextElement>
+                <p>
+                  <strong>DeFi dApps</strong> - Decentralized exchanges, lending protocols, automated market makers,
+                  etc.
+                </p>
+              </TextElement>
+              <TextElement>
+                <p>
+                  <strong>NFT & Gaming Platforms</strong> - Infrastructure, marketplaces, on-chain games.
+                </p>
+              </TextElement>
+              <TextElement>
+                <p>
+                  <strong>Decentralized Services</strong> - Privacy tools, oracles, identity solutions, etc.
+                </p>
+              </TextElement>
+              <TextElement>
+                <p>
+                  <strong>Developer Tooling</strong> - SDKs, frameworks, integrations with existing services.
+                </p>
+              </TextElement>
+              <TextElement>
+                <p>
+                  <strong>Infrastructure & Research</strong> - Security audits, scaling solutions, hardware integration.
+                </p>
+              </TextElement>
+              <TextElement>
+                <p>
+                  <strong>Community & Education</strong> - Content, guides, workshops, ecosystem awareness campaigns.
+                </p>
+              </TextElement>
+            </Grid>
+
+            <TextElement>
               <p>
                 Got something else in mind?{' '}
                 <SimpleLink url="https://docs.google.com/forms/d/e/1FAIpQLSexF7M7k7kDdJtsHKFGYZuw4uEP7dzRrxmTFaMQvdU8DdH3cA/viewform">

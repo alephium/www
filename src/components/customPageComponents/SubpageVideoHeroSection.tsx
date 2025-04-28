@@ -1,14 +1,13 @@
 import { getImage, IGatsbyImageData } from 'gatsby-plugin-image'
-import { ReactNode, useRef } from 'react'
+import { useRef } from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 
 import useIsMobile from '../../hooks/useIsMobile'
 import { darkTheme } from '../../styles/themes'
 import GatsbyImageWrapper from '../GatsbyImageWrapper'
-import SubpageHeroSection from './SubpageHeroSection'
+import SubpageHeroSection, { SubpageHeroSectionProps } from './SubpageHeroSection'
 
-interface SubpageVideoHeroSectionProps {
-  children: ReactNode
+interface SubpageVideoHeroSectionProps extends Omit<SubpageHeroSectionProps, 'mediaContent'> {
   video?: {
     publicURL: string | null
   } | null
@@ -19,7 +18,7 @@ interface SubpageVideoHeroSectionProps {
   } | null
 }
 
-const SubpageVideoHeroSection = ({ video, poster, children }: SubpageVideoHeroSectionProps) => {
+const SubpageVideoHeroSection = ({ video, poster, children, ...props }: SubpageVideoHeroSectionProps) => {
   const innerRef = useRef<HTMLElement>(null)
   const videoRef = useRef<HTMLVideoElement>(null)
   const rafIdRef = useRef<number | null>(null)
@@ -73,6 +72,7 @@ const SubpageVideoHeroSection = ({ video, poster, children }: SubpageVideoHeroSe
             )}
           </PosterWrapper>
         }
+        {...props}
       >
         {children}
       </SubpageHeroSection>

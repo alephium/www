@@ -158,7 +158,7 @@ const NavigationDrawer = ({ title, Icon, className, children }: NavigationDrawer
             initial="closed"
             animate="open"
             exit="closed"
-            transition={{ type: 'spring', stiffness: 900, damping: 50, bounce: 0 }}
+            transition={{ duration: 0.15, ease: [0.4, 0, 0.2, 1] }}
           >
             {children}
           </Drawer>
@@ -330,7 +330,8 @@ const Drawer = styled(motion.div)`
   right: 0;
   min-width: 250px;
   background-color: rgba(30, 30, 30, 1);
-  border-radius: var(--radius);
+  border-radius: var(--radius-small);
+  border: 1px solid ${({ theme }) => theme.borderPrimary};
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;

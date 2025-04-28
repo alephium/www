@@ -77,7 +77,8 @@ const GlobalStyle = createGlobalStyle`
     --spacing-34: 17rem;     // 272pt
     --spacing-35: 17.5rem;   // 280pt
 
-    --radius-small: 9px;
+    --radius-tiny: 4px;
+    --radius-small: 12px;
     --radius: 18px;
     --radius-big: 40px;
     --radius-full: 9999px;
@@ -107,7 +108,9 @@ const GlobalStyle = createGlobalStyle`
     --fontSize-42: 2.75rem;
     --fontSize-50: 3.125rem;
     --fontSize-56: 3.5rem;
+    --fontSize-58: 3.75rem;
     --fontSize-60: 4.0rem;
+    --fontSize-64: 4.2rem;
     --fontSize-70: 4.375rem;
     --lineHeight-22: 1.375rem;
     --lineHeight-26: 1.625rem;

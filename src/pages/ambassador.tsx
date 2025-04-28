@@ -4,23 +4,27 @@ import Button from '../components/Button'
 import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
-import SubpageHeroSection from '../components/customPageComponents/SubpageImageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
+import SubpageVideoHeroSection from '../components/customPageComponents/SubpageVideoHeroSection'
 import TextCard from '../components/customPageComponents/TextCard'
+import TextCardContent from '../components/customPageComponents/TextCardContent'
 import TextElement from '../components/customPageComponents/TextElement'
 import SectionDivider from '../components/SectionDivider'
 import SimpleLink from '../components/SimpleLink'
 
 const ambassadorQuery = graphql`
   query AmbassadorPage {
-    heroImage: file(relativePath: { eq: "alephium-hackathon-lake.png" }) {
+    heroImage: file(relativePath: { eq: "mountain-rainbow.png" }) {
       ...HeroImage
+    }
+    heroVideo: file(relativePath: { eq: "mountain-rainbow-scrub.mp4" }) {
+      publicURL
     }
   }
 `
 
 const CustomPage = (props: PageProps) => {
-  const { heroImage } = useStaticQuery<Queries.AmbassadorPageQuery>(ambassadorQuery)
+  const { heroImage, heroVideo } = useStaticQuery<Queries.AmbassadorPageQuery>(ambassadorQuery)
 
   return (
     <Page
@@ -32,7 +36,7 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageHeroSection backgroundImage={heroImage}>
+          <SubpageVideoHeroSection poster={heroImage} video={heroVideo}>
             <h1>Alephium Ambassador Program</h1>
             <hr />
             <p>
@@ -45,7 +49,7 @@ const CustomPage = (props: PageProps) => {
               Whether you’re a developer, educator, content creator, or blockchain enthusiast, there’s a place for you
               in the Alephium community. Together, we can build a more scalable, secure, and sustainable Web3.
             </p>
-          </SubpageHeroSection>
+          </SubpageVideoHeroSection>
 
           <SubpageSection>
             <TextElement>
@@ -53,40 +57,49 @@ const CustomPage = (props: PageProps) => {
             </TextElement>
 
             <SubheaderContent>
-              <Grid columns={2}>
+              <Grid columns={2} gap="small">
                 <TextCard>
-                  <h3>Make an Impact</h3>
-                  <p>
-                    By becoming an Alephium Ambassador, you’re not just supporting a blockchain project - you’re helping
-                    to redefine what’s possible in the world of decentralized technology. Your impact will be felt
-                    across the ecosystem, from the developers building on Alephium to the users who benefit from its
-                    scalability and efficiency.
-                  </p>
+                  <TextCardContent>
+                    <h3>Make an Impact</h3>
+                    <p>
+                      By becoming an Alephium Ambassador, you’re not just supporting a blockchain project - you’re
+                      helping to redefine what’s possible in the world of decentralized technology. Your impact will to
+                      redefine what’s possible in the world of decentralized technology. Your impact will be felt across
+                      the ecosystem, from the developers building on Alephium to the users who benefit from its
+                      scalability and efficiency.
+                    </p>
+                  </TextCardContent>
                 </TextCard>
                 <TextCard>
-                  <h3>Grow Your Skills</h3>
-                  <p>
-                    Being an Ambassador is more than just a role - it’s an opportunity to develop valuable skills, gain
-                    hands-on experience, and grow both personally and professionally. You’ll be surrounded by experts
-                    from different domains and get access to exclusive resources from Alephium’s core team.
-                  </p>
+                  <TextCardContent>
+                    <h3>Grow Your Skills</h3>
+                    <p>
+                      Being an Ambassador is more than just a role - it’s an opportunity to develop valuable skills,
+                      gain hands-on experience, and grow both personally and professionally. You’ll be surrounded by
+                      experts from different domains and get access to exclusive resources from Alephium’s core team.
+                    </p>
+                  </TextCardContent>
                 </TextCard>
                 <TextCard>
-                  <h3>Join a Global Network</h3>
-                  <p>
-                    Become part of a vibrant, diverse, and supportive global community. Meet passionate innovators, join
-                    local communities, represent Alephium at local and international events, and more. And don’t worry,
-                    we’ll be right beside you, ready to provide guidance to help you succeed.
-                  </p>
+                  <TextCardContent>
+                    <h3>Join a Global Network</h3>
+                    <p>
+                      Become part of a vibrant, diverse, and supportive global community. Meet passionate innovators,
+                      join local communities, represent Alephium at local and international events, and more. And don’t
+                      worry, we’ll be right beside you, ready to provide guidance to help you succeed.
+                    </p>
+                  </TextCardContent>
                 </TextCard>
                 <TextCard>
-                  <h3>Earn Rewards</h3>
-                  <p>
-                    Your contributions as an Alephium Ambassador will be recognized and rewarded in meaningful ways. We
-                    celebrate your efforts with limited-edition gear, ALPH coins, recognition on official channels,
-                    helping you open the doors to new professional opportunities, and providing support to attend Web3
-                    events, conferences, and hackathons.
-                  </p>
+                  <TextCardContent>
+                    <h3>Earn Rewards</h3>
+                    <p>
+                      Your contributions as an Alephium Ambassador will be recognized and rewarded in meaningful ways.
+                      We celebrate your efforts with limited-edition gear, ALPH coins, recognition on official channels,
+                      helping you open the doors to new professional opportunities, and providing support to attend Web3
+                      events, conferences, and hackathons.
+                    </p>
+                  </TextCardContent>
                 </TextCard>
               </Grid>
             </SubheaderContent>

@@ -30,7 +30,9 @@ const HomepageEcosystemSection = () => {
             the <strong>next generation of decentralized applications to life</strong>.
           </p>
           <TextElement isCentered>
-            <Button url="https://alph.land">Explore ecosystem</Button>
+            <Button big highlight url="https://alph.land">
+              Explore ecosystem
+            </Button>
           </TextElement>
         </TextElement>
         <LogosContainer>
@@ -77,7 +79,7 @@ const LogoWrapper = styled.div`
 `
 
 const MoreWrapper = styled(LogoWrapper)`
-  background-color: ${({ theme }) => theme.bgSecondary};
+  background-color: ${({ theme }) => theme.bgPrimary};
   width: calc(80px * 3 + 1rem * 2);
   border-radius: 9px;
   cursor: pointer;

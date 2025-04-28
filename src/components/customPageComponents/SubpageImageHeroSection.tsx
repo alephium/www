@@ -4,9 +4,9 @@ import { ThemeProvider } from 'styled-components'
 
 import { darkTheme } from '../../styles/themes'
 import GatsbyImageWrapper from '../GatsbyImageWrapper'
-import SubpageHeroSection from './SubpageHeroSection'
+import SubpageHeroSection, { SubpageHeroSectionProps } from './SubpageHeroSection'
 
-interface SubpageImageHeroSectionProps {
+interface SubpageImageHeroSectionProps extends Omit<SubpageHeroSectionProps, 'mediaContent'> {
   children: ReactNode
   backgroundImage?: {
     readonly childImageSharp: {
@@ -19,7 +19,8 @@ interface SubpageImageHeroSectionProps {
 const SubpageImageHeroSection = ({
   children,
   backgroundImage,
-  backgroundImageAlt = ''
+  backgroundImageAlt = '',
+  ...props
 }: SubpageImageHeroSectionProps) => {
   const imageData = backgroundImage?.childImageSharp?.gatsbyImageData
   const image = imageData ? getImage(imageData) : undefined
@@ -32,6 +33,7 @@ const SubpageImageHeroSection = ({
             <GatsbyImageWrapper image={image} alt={backgroundImageAlt} style={{ height: '100%' }} objectFit="cover" />
           )
         }
+        {...props}
       >
         {children}
       </SubpageHeroSection>
