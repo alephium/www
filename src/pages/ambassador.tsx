@@ -121,7 +121,7 @@ const CustomPage = (props: PageProps) => {
             </TextElement>
 
             <Grid columns={2} gap="small">
-              <ClickableBox>
+              <ClickableBox align="top">
                 <Emoji>1️⃣</Emoji>
                 <TextElement isSmall noMargin>
                   <p>
@@ -133,7 +133,7 @@ const CustomPage = (props: PageProps) => {
                   </p>
                 </TextElement>
               </ClickableBox>
-              <ClickableBox>
+              <ClickableBox align="top">
                 <Emoji>2️⃣</Emoji>
                 <TextElement isSmall noMargin>
                   <p>
@@ -142,7 +142,7 @@ const CustomPage = (props: PageProps) => {
                   </p>
                 </TextElement>
               </ClickableBox>
-              <ClickableBox>
+              <ClickableBox align="top">
                 <Emoji>3️⃣</Emoji>
                 <TextElement isSmall noMargin>
                   <p>
@@ -151,7 +151,7 @@ const CustomPage = (props: PageProps) => {
                   </p>
                 </TextElement>
               </ClickableBox>
-              <ClickableBox>
+              <ClickableBox align="top">
                 <Emoji>4️⃣</Emoji>
                 <TextElement isSmall noMargin>
                   <p>
