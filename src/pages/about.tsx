@@ -159,7 +159,7 @@ const CustomPage = (props: PageProps) => {
                   />
                   <TextElement isSmall noMargin>
                     <p>
-                      <strong>Hongchao Liu (h0ngcha0)</strong> - Core Developer
+                      <strong>Hongchao Liu</strong> - Core Developer
                     </p>
                     {/* <p>
                       A core developer based in Sweden, and also known in the community as h0ngcha0, Hongchao works on
