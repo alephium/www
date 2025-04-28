@@ -37,7 +37,9 @@ const HomepageHeroSection = () => {
       </p>
 
       <Buttons>
-        <Button url="https://docs.alephium.org">Build on Alephium</Button>
+        <Button big highlight url="https://docs.alephium.org">
+          Build on Alephium
+        </Button>
         <ArrowedLink url="/communities">Join the community</ArrowedLink>
       </Buttons>
     </SubpageVideoHeroSection>

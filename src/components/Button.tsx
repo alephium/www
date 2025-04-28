@@ -143,10 +143,6 @@ export default styled(Button)`
   ${({ highlight }) =>
     highlight &&
     css`
-      &:hover {
-        background-color: ${({ theme }) => theme.bgPrimary};
-      }
-
       /* show gradient border on hover */
       &:hover ${GradientBorder} {
         opacity: 1;
@@ -161,23 +157,24 @@ const GradientBorder = styled.div<{ squared?: boolean }>`
   border-radius: inherit;
   background: radial-gradient(
     circle at var(--gradient-x) var(--gradient-y),
-    ${({ theme }) => theme.borderPrimary} 0%,
-    ${({ theme }) => theme.palette2} 35%,
+    transparent 10%,
+    ${({ theme }) => theme.palette2} 25%,
     ${({ theme }) => theme.palette1} 40%,
     ${({ theme }) => theme.palette4} 50%,
     ${({ theme }) => theme.palette3} 60%,
-    ${({ theme }) => theme.borderPrimary} 100%
+    transparent 100%
   );
   transition: opacity 0.3s ease;
   pointer-events: none;
   z-index: -1;
+  opacity: 0.5;
 
   &::before {
     content: '';
     position: absolute;
-    inset: 2px;
+    inset: 3px;
     border-radius: ${({ squared }) => (squared ? 'calc(9px - 2px)' : 'calc(50px - 2px)')};
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.8);
     z-index: 0;
   }
 `
