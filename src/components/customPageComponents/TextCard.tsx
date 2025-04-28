@@ -123,7 +123,7 @@ const cardStyles = css<{ url?: string }>`
     border: 2px solid ${({ theme }) => theme.borderPrimary};
     border-radius: inherit;
     backdrop-filter: saturate(200%);
-    -webkit-backdrop-filter: saturate(200%) brightness(1.2);
+    -webkit-backdrop-filter: saturate(200%);
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     mask-composite: exclude;
     -webkit-mask-composite: xor;

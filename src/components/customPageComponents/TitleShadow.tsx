@@ -19,6 +19,6 @@ const TitleShadowStyled = styled.div`
   filter: blur(90px);
   pointer-events: none;
   z-index: -1;
-  mix-blend-mode: multiply;
   backdrop-filter: blur(100px) saturate(200%) brightness(0.8);
+  -webkit-backdrop-filter: blur(100px) saturate(200%) brightness(0.8);
 `
