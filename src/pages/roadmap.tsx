@@ -43,24 +43,18 @@ const CustomPage = (props: PageProps) => {
           <SectionDivider />
 
           <SubpageSection>
-            <TextElement isCentered>
-              <h2>Current Focus</h2>
-            </TextElement>
             <TextElement>
+              <h2>Current Focus</h2>
               <h3>Ecosystem Expansion</h3>
               <p>
                 Our team is actively onboarding new dApps and developers to the Alephium ecosystem, with a focus on
                 DeFi, NFTs, and ReFi.
               </p>
-            </TextElement>
-            <TextElement>
               <h3>Partnerships and Integrations</h3>
               <p>
                 We’re collaborating with leading projects and platforms to integrate Alephium’s technology and expand
                 its reach.
               </p>
-            </TextElement>
-            <TextElement>
               <h3>Research and Development</h3>
               <p>
                 Ongoing R&D efforts are focused on enhancing sharding, improving network performance, and exploring new
@@ -72,11 +66,9 @@ const CustomPage = (props: PageProps) => {
           <SectionDivider />
 
           <SubpageSection>
-            <TextElement isCentered>
-              <h2>What’s Next?</h2>
-            </TextElement>
-
             <TextElement>
+              <h2>What’s Next?</h2>
+
               <h3>Danube Upgrade (Q1 2025)</h3>
               <ul>
                 <li>Passkeys</li>
@@ -89,22 +81,16 @@ const CustomPage = (props: PageProps) => {
                 <li>BLS signatures</li>
                 <li>Improved storage</li>
               </ul>
-            </TextElement>
-            <TextElement>
               <h3>Global Community Expansion</h3>
               <p>
                 Launching initiatives to grow Alephium’s presence in key regions, including hackathons, meetups, and
                 educational programs.
               </p>
-            </TextElement>
-            <TextElement>
               <h3>Layer 2 Solutions</h3>
               <p>
                 Exploring Layer 2 scaling solutions to further enhance Alephium’s throughput and reduce transaction
                 costs.
               </p>
-            </TextElement>
-            <TextElement>
               <h3>Governance Framework</h3>
               <p>Developing a decentralized governance model to empower the community to shape Alephium’s future.</p>
             </TextElement>
