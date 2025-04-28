@@ -164,7 +164,7 @@ const CustomPage = (props: PageProps) => {
           </SubpageSection>
 
           {/* Same image as in FAQ page can go here, like we do with the "Wallets" in /get-started */}
-          <SubpageImageHeroSection backgroundImage={placeholderImage} minHeight="660px">
+          <SubpageImageHeroSection backgroundImage={placeholderImage} minHeight="300px">
             <h2>Have questions?</h2>
             <hr />
             <p>Check our FAQ page for more information or join our community and contact our team.</p>
