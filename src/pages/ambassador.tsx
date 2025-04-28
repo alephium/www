@@ -153,7 +153,7 @@ const CustomPage = (props: PageProps) => {
             <TextElement>
               <h2>Have questions?</h2>
               <p>Check our FAQ page for more information or join our community and contact our team.</p>
-              <Button url="/faq">Check FAQ</Button>
+              <Button url="/faq#ambassador-program">Check FAQ</Button>
               <Button url="/discord">Join Discord</Button>
             </TextElement>
           </SubpageSection>
