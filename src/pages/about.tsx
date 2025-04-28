@@ -67,42 +67,48 @@ const CustomPage = (props: PageProps) => {
           </SubpageHeroSection>
 
           <SubpageSection>
-            <SideBySide>
-              <TextElement>
-                <h2>Why?</h2>
-                <p>
-                  Alephium was born from a simple but powerful question: What should a blockchain for the next decade
-                  look like? Inspired by Bitcoin’s robustness and shaped by a deep understanding of distributed systems
-                  and consensus theory, Alephium set out to build infrastructure that doesn’t compromise; on
-                  decentralization, security, or real scalability.
-                </p>
-                <p>
-                  Conceived by Cheng Wang after witnessing firsthand how security and decentralization were increasingly
-                  treated as trade-offs rather than essentials, Alephium reimagines blockchain from the ground up.
-                  Drawing from deep expertise in consensus research and hands-on DeFi experience, the project addresses
-                  the shortcomings that became evident as neither Bitcoin nor Ethereum could fully meet the needs of a
-                  decentralized future. Bitcoin, while secure, lacked scalability and programmability. Ethereum
-                  introduced flexibility through smart contracts but struggled with security vulnerabilities,
-                  complexity, and growing centralization pressures.
-                </p>
-                <p>
-                  Alephium offers a new path forward. By combining the resilience of Proof-of-Work with breakthrough
-                  innovations like BlockFlow sharding, Proof-of-Less-Work, and a stateful UTXO model leveraged by a
-                  custom virtual machine, Alephium delivers high throughput, energy efficiency, and secure smart
-                  contracts.
-                </p>
-                <p>
-                  Every layer of Alephium; from protocol design to tooling; is built with usability and accessibility in
-                  mind, empowering both developers and end users. Alephium is designed to support real-world
-                  decentralized applications at scale, where dApps are safe by design, running a node is accessible to
-                  all, and builders can innovate with confidence.{' '}
-                  <strong>Alephium is here to prove that scaling decentralization doesn’t mean sacrificing it.</strong>
-                </p>
-              </TextElement>
+            <TextElement isCentered>
+              <h2>Why?</h2>
+            </TextElement>
+
+            <TextElement isCentered noTextCentering>
+              <p>
+                Alephium was born from a simple but powerful question: What should a blockchain for the next decade look
+                like? Inspired by Bitcoin’s robustness and shaped by a deep understanding of distributed systems and
+                consensus theory, Alephium set out to build infrastructure that doesn’t compromise; on decentralization,
+                security, or real scalability.
+              </p>
+              <p>
+                Conceived by Cheng Wang after witnessing firsthand how security and decentralization were increasingly
+                treated as trade-offs rather than essentials, Alephium reimagines blockchain from the ground up. Drawing
+                from deep expertise in consensus research and hands-on DeFi experience, the project addresses the
+                shortcomings that became evident as neither Bitcoin nor Ethereum could fully meet the needs of a
+                decentralized future. Bitcoin, while secure, lacked scalability and programmability. Ethereum introduced
+                flexibility through smart contracts but struggled with security vulnerabilities, complexity, and growing
+                centralization pressures.
+              </p>
+            </TextElement>
+
+            <TextElement isCentered>
               {blobVideoUrl && (
-                <video src={blobVideoUrl} autoPlay muted loop playsInline style={{ width: '100%', height: 'auto' }} />
+                <video src={blobVideoUrl} autoPlay muted loop playsInline style={{ width: '50%', height: 'auto' }} />
               )}
-            </SideBySide>
+            </TextElement>
+
+            <TextElement isCentered noTextCentering>
+              <p>
+                Alephium offers a new path forward. By combining the resilience of Proof-of-Work with breakthrough
+                innovations like BlockFlow sharding, Proof-of-Less-Work, and a stateful UTXO model leveraged by a custom
+                virtual machine, Alephium delivers high throughput, energy efficiency, and secure smart contracts.
+              </p>
+              <p>
+                Every layer of Alephium; from protocol design to tooling; is built with usability and accessibility in
+                mind, empowering both developers and end users. Alephium is designed to support real-world decentralized
+                applications at scale, where dApps are safe by design, running a node is accessible to all, and builders
+                can innovate with confidence.{' '}
+                <strong>Alephium is here to prove that scaling decentralization doesn’t mean sacrificing it.</strong>
+              </p>
+            </TextElement>
           </SubpageSection>
 
           <SubpageSection>
