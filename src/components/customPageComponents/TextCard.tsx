@@ -149,10 +149,9 @@ const GradientBorder = styled.div`
   &::before {
     content: '';
     position: absolute;
-    inset: 2px;
+    inset: 3px;
     border-radius: calc(var(--radius) - 2px);
-    background: ${({ theme }) => theme.bgPrimary};
-    opacity: 0.95;
+    background: ${({ theme }) => theme.bgTertiary};
     z-index: 0;
   }
 `
@@ -206,7 +205,6 @@ const CardStyled = styled(motion.div)<{ url?: string; isAnimated: boolean }>`
 
   &:hover {
     z-index: 1;
-    background-color: ${({ theme }) => theme.bgPrimary};
   }
 
   ${({ url }) =>

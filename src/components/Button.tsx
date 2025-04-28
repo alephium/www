@@ -99,11 +99,11 @@ const Button = ({ onClick, className, children, url, disabled, highlight, square
 const getGradient = (theme: DefaultTheme) => `
   radial-gradient(
     circle at var(--gradient-x) var(--gradient-y),
-    ${theme.textPrimary} 0%,
+    ${theme.textPrimary} 20%,
     ${theme.palette1} 35%,
     ${theme.palette2} 40%,
     ${theme.textPrimary} 50%,
-    ${theme.palette1} 60%,
+    ${theme.palette3} 60%,
     ${theme.palette4} 100%
   )
 `
@@ -124,9 +124,10 @@ const GradientBorder = styled.div<{ squared?: boolean }>`
   &::before {
     content: '';
     position: absolute;
-    inset: 3px;
+    inset: 4px;
     border-radius: ${({ squared }) => getInnerBorderRadius(squared)};
     background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px) saturate(180%);
     z-index: 0;
   }
 
@@ -198,7 +199,7 @@ const StyledButton = styled(Button)`
       &:hover {
         &::after {
           opacity: 0.5;
-          transform: translateY(4px) scale(1.02);
+          transform: scale(1.02);
         }
       }
 
