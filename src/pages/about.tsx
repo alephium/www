@@ -18,9 +18,6 @@ const aboutQuery = graphql`
     heroImage: file(relativePath: { eq: "alephium-hackathon-lake.png" }) {
       ...HeroImage
     }
-    blobVideo: file(relativePath: { eq: "alephium-blob.mp4" }) {
-      publicURL
-    }
     teamPhotos: allFile(filter: { relativeDirectory: { eq: "team" } }) {
       nodes {
         name
@@ -38,8 +35,7 @@ const aboutQuery = graphql`
 `
 
 const CustomPage = (props: PageProps) => {
-  const { heroImage, blobVideo, teamPhotos, ecosystemImage } = useStaticQuery<Queries.AboutPageQuery>(aboutQuery)
-  const blobVideoUrl = blobVideo?.publicURL || undefined
+  const { heroImage, teamPhotos, ecosystemImage } = useStaticQuery<Queries.AboutPageQuery>(aboutQuery)
   const ecosystemImageData = ecosystemImage?.childImageSharp?.gatsbyImageData || undefined
   const teamPhotosData = teamPhotos.nodes.map(({ name, childImageSharp }) => ({
     name,
@@ -57,9 +53,13 @@ const CustomPage = (props: PageProps) => {
       content={
         <>
           <SubpageHeroSection backgroundImage={heroImage} alignContent="bottom">
-            <h1>TODO: Missing page title</h1>
+            <h1>About Alephium</h1>
             <hr />
-            <p>TODO: Missing page subtitle</p>
+            <p>
+              Discover Alephium's vision for the future of blockchain: a Layer 1 network designed without compromises on
+              security, decentralization, or scalability. Meet the core contributors, learn about our innovations, and
+              explore how our community shapes the Alephium ecosystem.
+            </p>
           </SubpageHeroSection>
 
           <SubpageSection>
