@@ -11,6 +11,7 @@ import SubpageHeroSection from '../components/customPageComponents/SubpageImageH
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
+import SimpleLink from '../components/SimpleLink'
 
 const aboutQuery = graphql`
   query AboutPage {
@@ -429,30 +430,6 @@ const CustomPage = (props: PageProps) => {
                     </p>
                   </TextElement>
                 </ClickableBox>
-
-                <ClickableBox align="top" url="https://x.com/Blockflow_DAO/">
-                  <ImageIcon
-                    image={teamPhotosData.find(({ name }) => name === 'blockflowalliance')?.image}
-                    alt="The Blockflow Alliance DAO"
-                    rounded
-                    size={50}
-                    padding={10}
-                    noBottomMargin
-                  />
-                  <TextElement isSmall noMargin>
-                    <p>
-                      <strong>The Blockflow Alliance DAO</strong>
-                    </p>
-                    <p>
-                      The BlockFlow Alliance DAO is a collective of passionate community members dedicated to supporting
-                      the growth of the Alephium ecosystem through community-driven initiatives. From hackathons and
-                      AMAs to marketing efforts, educational outreach, and daily engagement, the DAO empowers
-                      individuals to contribute to Alephium's expansion in a decentralized and organic way. It reflects
-                      Alephium's belief that lasting success comes not from a single team, but from the strength and
-                      creativity of its broader community.
-                    </p>
-                  </TextElement>
-                </ClickableBox>
               </Grid>
             </SubheaderContent>
           </SubpageSection>
@@ -486,11 +463,11 @@ const CustomPage = (props: PageProps) => {
               <TextElement>
                 <h2>The Blockflow Alliance DAO</h2>
                 <p>
-                  The BlockFlow Alliance DAO is a collective of passionate community members dedicated to supporting the
-                  growth of the Alephium ecosystem through community-driven initiatives. From hackathons and AMAs to
-                  marketing efforts, educational outreach, and daily engagement, the DAO empowers individuals to
-                  contribute to Alephium's expansion in a decentralized and organic way. It reflects Alephium's belief
-                  that{' '}
+                  The <SimpleLink url="https://x.com/Blockflow_DAO/">BlockFlow Alliance DAO</SimpleLink> is a collective
+                  of passionate community members dedicated to supporting the growth of the Alephium ecosystem through
+                  community-driven initiatives. From hackathons and AMAs to marketing efforts, educational outreach, and
+                  daily engagement, the DAO empowers individuals to contribute to Alephium's expansion in a
+                  decentralized and organic way. It reflects Alephium's belief that{' '}
                   <strong>
                     lasting success comes not from a single team, but from the strength and creativity of its broader
                     community.
