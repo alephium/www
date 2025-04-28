@@ -223,16 +223,15 @@ const CustomPage = (props: PageProps) => {
                 Apply for a Grant
               </Button>
             </TextElement>
-
-            <SubheaderContent>
-              <TextElement isCentered isSmall>
-                <h3>
-                  Got questions? Join the discussion in our community channels or contact us directly at
-                  grants@alephium.org.
-                </h3>
-                <p>Let’s build the future of decentralized technology together!</p>
-              </TextElement>
-            </SubheaderContent>
+          </SubpageSection>
+          <SubpageSection>
+            <TextElement isCentered isSmall>
+              <h3>
+                Got questions? Join the discussion in our community channels or contact us directly at{' '}
+                <SimpleLink url="mailto:grants@alephium.org">grants@alephium.org</SimpleLink>.
+              </h3>
+              <p>Let’s build the future of decentralized technology together!</p>
+            </TextElement>
           </SubpageSection>
         </>
       }
