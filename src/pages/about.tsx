@@ -52,13 +52,13 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageHeroSection backgroundImage={heroImage} alignContent="bottom">
-            <h1>About Alephium</h1>
+          <SubpageHeroSection backgroundImage={heroImage}>
+            <h1>Building Alephium</h1>
             <hr />
             <p>
-              Discover Alephium's vision for the future of blockchain: a Layer 1 network designed without compromises on
-              security, decentralization, or scalability. Meet the core contributors, learn about our innovations, and
-              explore how our community shapes the Alephium ecosystem.
+              Alephium was created to prove that decentralization, scalability, and energy efficiency can coexist.
+              Driven by breakthrough technology and a global network of contributors, we’re building blockchain
+              infrastructure ready for real-world applications.
             </p>
           </SubpageHeroSection>
 
