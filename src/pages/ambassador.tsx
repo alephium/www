@@ -1,13 +1,13 @@
 import { graphql, PageProps, useStaticQuery } from 'gatsby'
+import { useTheme } from 'styled-components'
 
 import Button from '../components/Button'
 import Grid from '../components/customPageComponents/Grid'
+import ImageIcon from '../components/customPageComponents/ImageIcon'
 import Page from '../components/customPageComponents/Page'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import SubpageVideoHeroSection from '../components/customPageComponents/SubpageVideoHeroSection'
-import TextCard from '../components/customPageComponents/TextCard'
-import TextCardContent from '../components/customPageComponents/TextCardContent'
 import TextElement from '../components/customPageComponents/TextElement'
 import SectionDivider from '../components/SectionDivider'
 import SimpleLink from '../components/SimpleLink'
@@ -19,6 +19,18 @@ const ambassadorQuery = graphql`
     }
     heroVideo: file(relativePath: { eq: "mountain-rainbow-scrub.mp4" }) {
       publicURL
+    }
+    circlesIcon: file(relativePath: { eq: "circles-icon.png" }) {
+      ...Icon
+    }
+    goldIcon: file(relativePath: { eq: "gold-icon.png" }) {
+      ...Icon
+    }
+    blueTreeIcon: file(relativePath: { eq: "blue-tree-icon.png" }) {
+      ...Icon
+    }
+    rockPileIcon: file(relativePath: { eq: "rock-pile-icon.png" }) {
+      ...Icon
     }
   }
 `
@@ -51,59 +63,7 @@ const CustomPage = (props: PageProps) => {
             </p>
           </SubpageVideoHeroSection>
 
-          <SubpageSection>
-            <TextElement>
-              <h2>Why Become an Alephium Ambassador?</h2>
-            </TextElement>
-
-            <SubheaderContent>
-              <Grid columns={2} gap="small">
-                <TextCard>
-                  <TextCardContent>
-                    <h3>Make an Impact</h3>
-                    <p>
-                      By becoming an Alephium Ambassador, you’re not just supporting a blockchain project - you’re
-                      helping to redefine what’s possible in the world of decentralized technology. Your impact will to
-                      redefine what’s possible in the world of decentralized technology. Your impact will be felt across
-                      the ecosystem, from the developers building on Alephium to the users who benefit from its
-                      scalability and efficiency.
-                    </p>
-                  </TextCardContent>
-                </TextCard>
-                <TextCard>
-                  <TextCardContent>
-                    <h3>Grow Your Skills</h3>
-                    <p>
-                      Being an Ambassador is more than just a role - it’s an opportunity to develop valuable skills,
-                      gain hands-on experience, and grow both personally and professionally. You’ll be surrounded by
-                      experts from different domains and get access to exclusive resources from Alephium’s core team.
-                    </p>
-                  </TextCardContent>
-                </TextCard>
-                <TextCard>
-                  <TextCardContent>
-                    <h3>Join a Global Network</h3>
-                    <p>
-                      Become part of a vibrant, diverse, and supportive global community. Meet passionate innovators,
-                      join local communities, represent Alephium at local and international events, and more. And don’t
-                      worry, we’ll be right beside you, ready to provide guidance to help you succeed.
-                    </p>
-                  </TextCardContent>
-                </TextCard>
-                <TextCard>
-                  <TextCardContent>
-                    <h3>Earn Rewards</h3>
-                    <p>
-                      Your contributions as an Alephium Ambassador will be recognized and rewarded in meaningful ways.
-                      We celebrate your efforts with limited-edition gear, ALPH coins, recognition on official channels,
-                      helping you open the doors to new professional opportunities, and providing support to attend Web3
-                      events, conferences, and hackathons.
-                    </p>
-                  </TextCardContent>
-                </TextCard>
-              </Grid>
-            </SubheaderContent>
-          </SubpageSection>
+          <WhySection />
 
           <SectionDivider />
 
@@ -219,3 +179,59 @@ const CustomPage = (props: PageProps) => {
 }
 
 export default CustomPage
+
+const WhySection = () => {
+  const { circlesIcon, goldIcon, blueTreeIcon, rockPileIcon } =
+    useStaticQuery<Queries.AmbassadorPageQuery>(ambassadorQuery)
+  const theme = useTheme()
+
+  return (
+    <SubpageSection>
+      <TextElement>
+        <h2>Why Become an Alephium Ambassador?</h2>
+      </TextElement>
+
+      <SubheaderContent>
+        <Grid columns={2}>
+          <TextElement noHeadingsMargins>
+            <ImageIcon image={circlesIcon?.childImageSharp?.gatsbyImageData} alt="Make an Impact" size={82} rounded />
+            <h3 style={{ color: theme.palette4 }}>Make an Impact</h3>
+            <p>
+              <strong>Help redefine what’s possible</strong> in the world of decentralized technology. Your impact will
+              be felt across the ecosystem, from the developers building on Alephium to the users who benefit from its
+              scalability and efficiency.
+            </p>
+          </TextElement>
+
+          <TextElement noHeadingsMargins>
+            <ImageIcon image={blueTreeIcon?.childImageSharp?.gatsbyImageData} alt="Fast" size={82} rounded />
+            <h3 style={{ color: theme.palette3 }}>Grow Your Skills</h3>
+            <p>
+              You’ll be surrounded by experts from different domains and get{' '}
+              <strong>access to exclusive resources from Alephium’s core team.</strong>
+            </p>
+          </TextElement>
+
+          <TextElement noHeadingsMargins>
+            <ImageIcon image={rockPileIcon?.childImageSharp?.gatsbyImageData} alt="Fast" size={82} rounded />
+            <h3 style={{ color: theme.palette6 }}>Join a Global Network</h3>
+            <p>
+              <strong>Meet passionate innovators, join local communities, represent Alephium</strong> at local and
+              international events, and more. And don’t worry, we’ll be right beside you, ready to provide guidance to
+              help you succeed.
+            </p>
+          </TextElement>
+
+          <TextElement noHeadingsMargins>
+            <ImageIcon image={goldIcon?.childImageSharp?.gatsbyImageData} alt="Earn Rewards" size={82} rounded />
+            <h3 style={{ color: theme.palette2 }}>Earn Rewards</h3>
+            <p>
+              Limited-edition gear, ALPH coins, recognition on official channels, help opening doors to new professional
+              opportunities, and support to attend Web3 events, conferences, and hackathons.
+            </p>
+          </TextElement>
+        </Grid>
+      </SubheaderContent>
+    </SubpageSection>
+  )
+}
