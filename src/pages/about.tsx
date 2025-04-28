@@ -18,6 +18,9 @@ const aboutQuery = graphql`
     heroImage: file(relativePath: { eq: "alephium-hackathon-lake.png" }) {
       ...HeroImage
     }
+    blobVideo: file(relativePath: { eq: "alephium-blob.mp4" }) {
+      publicURL
+    }
     teamPhotos: allFile(filter: { relativeDirectory: { eq: "team" } }) {
       nodes {
         name
@@ -35,7 +38,8 @@ const aboutQuery = graphql`
 `
 
 const CustomPage = (props: PageProps) => {
-  const { heroImage, teamPhotos, ecosystemImage } = useStaticQuery<Queries.AboutPageQuery>(aboutQuery)
+  const { heroImage, blobVideo, teamPhotos, ecosystemImage } = useStaticQuery<Queries.AboutPageQuery>(aboutQuery)
+  const blobVideoUrl = blobVideo?.publicURL || undefined
   const ecosystemImageData = ecosystemImage?.childImageSharp?.gatsbyImageData || undefined
   const teamPhotosData = teamPhotos.nodes.map(({ name, childImageSharp }) => ({
     name,
@@ -95,6 +99,9 @@ const CustomPage = (props: PageProps) => {
                   <strong>Alephium is here to prove that scaling decentralization doesn’t mean sacrificing it.</strong>
                 </p>
               </TextElement>
+              {blobVideoUrl && (
+                <video src={blobVideoUrl} autoPlay muted loop playsInline style={{ width: '100%', height: 'auto' }} />
+              )}
             </SideBySide>
           </SubpageSection>
 
