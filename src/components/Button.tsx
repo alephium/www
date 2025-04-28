@@ -1,4 +1,5 @@
 import { useMotionValue, useSpring } from 'framer-motion'
+import { Link } from 'gatsby'
 import { ReactNode, useEffect, useRef } from 'react'
 import { PointerEvent } from 'react'
 import styled, { css } from 'styled-components'
@@ -19,12 +20,13 @@ interface ButtonProps {
   highlight?: boolean
 }
 
-const Button = ({ onClick, className, children, url, trackingName, disabled, highlight, squared }: ButtonProps) => {
+const Button = ({ onClick, className, children, url, disabled, highlight, squared }: ButtonProps) => {
   const buttonRef = useRef<HTMLButtonElement | HTMLAnchorElement>(null)
   const x = useMotionValue(0.5)
   const y = useMotionValue(0.5)
   const springX = useSpring(x, { stiffness: 200, damping: 20 })
   const springY = useSpring(y, { stiffness: 200, damping: 20 })
+  const isInternalLink = url?.startsWith('/')
 
   const onMove = (e: PointerEvent) => {
     if (!highlight) return
@@ -56,35 +58,43 @@ const Button = ({ onClick, className, children, url, trackingName, disabled, hig
     }
   }, [springX, springY, highlight])
 
-  return url ? (
-    <a
-      ref={buttonRef as React.RefObject<HTMLAnchorElement>}
-      href={url}
-      className={`${className} button`}
-      target={(!url?.startsWith('/') && '_blank') || undefined}
-      rel={(!url?.startsWith('/') && 'noopener') || undefined}
-      data-goatcounter-click={trackingName}
-      onClick={(e) => disabled && e.preventDefault()}
-      onPointerMove={onMove}
-      onPointerLeave={onLeave}
-    >
+  const content = (
+    <>
       {children}
       {!disabled && <ArrowStyled className="arrow" isExternal={!url?.startsWith('/')} />}
       {highlight && <GradientBorder squared={squared} />}
+    </>
+  )
+
+  const sharedProps = {
+    className: `${className} button`,
+    onPointerMove: onMove,
+    onPointerLeave: onLeave
+  }
+
+  return isInternalLink && url ? (
+    <Link to={url} {...sharedProps}>
+      {content}
+    </Link>
+  ) : url ? (
+    <a
+      ref={buttonRef as React.RefObject<HTMLAnchorElement>}
+      href={url}
+      target={(!isInternalLink && '_blank') || undefined}
+      rel={(!isInternalLink && 'noopener') || undefined}
+      onClick={(e) => disabled && e.preventDefault()}
+      {...sharedProps}
+    >
+      {content}
     </a>
   ) : (
     <button
       ref={buttonRef as React.RefObject<HTMLButtonElement>}
-      className={`${className} button`}
       onClick={onClick}
-      data-goatcounter-click={trackingName}
       disabled={disabled}
-      onPointerMove={onMove}
-      onPointerLeave={onLeave}
+      {...sharedProps}
     >
-      {children}
-      {!disabled && <ArrowStyled className="arrow" isExternal={!url?.startsWith('/')} />}
-      {highlight && <GradientBorder squared={squared} />}
+      {content}
     </button>
   )
 }
