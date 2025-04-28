@@ -149,9 +149,10 @@ const GradientBorder = styled.div`
   &::before {
     content: '';
     position: absolute;
-    inset: 3px;
+    inset: 4px;
     border-radius: calc(var(--radius) - 2px);
-    background: ${({ theme }) => theme.bgTertiary};
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(100px) saturate(180%);
     z-index: 0;
   }
 `

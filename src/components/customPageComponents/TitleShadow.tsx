@@ -14,11 +14,11 @@ const TitleShadowStyled = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
   border-radius: var(--radius-big);
-  transform: translateX(-30px);
+  transform: translateX(-30px) scale(1.4);
   filter: blur(90px);
   pointer-events: none;
   z-index: -1;
   mix-blend-mode: multiply;
+  backdrop-filter: blur(100px) saturate(200%) brightness(0.8);
 `

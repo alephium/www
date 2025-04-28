@@ -46,7 +46,20 @@ const SubpageHeroSectionStyled = styled.section<Pick<SubpageHeroSectionProps, 'm
   transition: all 0.4s ease-in;
   display: flex;
   border-radius: var(--radius-big);
-  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5), inset 0px 0px 0px 2px ${({ theme }) => theme.borderPrimary};
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5);
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 4px solid ${({ theme }) => theme.borderPrimary};
+    border-radius: var(--radius-big);
+    backdrop-filter: saturate(200%);
+    -webkit-backdrop-filter: saturate(200%) brightness(1.2);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: xor;
+  }
 `
 
 const TextElementStyled = styled(TextElement)`

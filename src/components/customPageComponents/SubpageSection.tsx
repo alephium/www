@@ -36,6 +36,6 @@ const SubpageSectionStyled = styled(PageSectionContainer)<Pick<SubpageSectionPro
   ${({ border }) =>
     border &&
     css`
-      box-shadow: inset 0 0 0 2px ${({ theme }) => theme.borderPrimary};
+      box-shadow: inset 0 0 0 4px ${({ theme }) => theme.borderPrimary};
     `}
 `
