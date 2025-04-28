@@ -36,6 +36,11 @@ const walletsQuery = graphql`
         gatsbyImageData(quality: 100)
       }
     }
+    featuresImage: file(relativePath: { eq: "transparent-tools-texture.png" }) {
+      childImageSharp {
+        gatsbyImageData(quality: 100)
+      }
+    }
     desktopScreenshots: allFile(
       filter: { relativeDirectory: { eq: "screenshots/desktop-wallet" } }
       sort: { name: ASC }
@@ -70,8 +75,15 @@ const walletsQuery = graphql`
 `
 
 const CustomPage = (props: PageProps) => {
-  const { heroImage, heroVideo, desktopScreenshots, extensionScreenshots, mobileScreenshots, securityImage } =
-    useStaticQuery<Queries.WalletsPageQuery>(walletsQuery)
+  const {
+    heroImage,
+    heroVideo,
+    desktopScreenshots,
+    extensionScreenshots,
+    mobileScreenshots,
+    securityImage,
+    featuresImage
+  } = useStaticQuery<Queries.WalletsPageQuery>(walletsQuery)
   const wallets = useWallets()
 
   return (
@@ -119,8 +131,11 @@ const CustomPage = (props: PageProps) => {
                   </TextCardContent>
                 </TextCard>
                 <TextCard>
+                  <CardImageOverlay
+                    image={featuresImage?.childImageSharp?.gatsbyImageData}
+                    overlayTitle="Comprehensive Features"
+                  />
                   <TextCardContent>
-                    <h3>Comprehensive Features</h3>
                     <p>
                       Whether you prefer desktop applications, browser extensions, or mobile apps, Alephium wallets
                       allow you to manage ALPH tokens, engage with dApps, and more.

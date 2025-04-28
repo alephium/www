@@ -107,7 +107,7 @@ const cardStyles = css<{ url?: string }>`
   flex-direction: column;
   border-radius: var(--radius);
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
-  background-color: ${({ theme }) => theme.bgSurface};
+  background-color: ${({ theme }) => theme.bgSecondary};
   background-clip: padding-box;
   text-decoration: none;
   transition: all 0.1s ease-out;
@@ -207,7 +207,7 @@ const CardStyled = styled(motion.div)<{ url?: string; isAnimated: boolean }>`
   &:hover {
     transform: translateZ(6px);
     z-index: 1;
-    background-color: ${({ theme }) => theme.bgSecondary};
+    background-color: ${({ theme }) => theme.bgPrimary};
   }
 
   ${({ url }) =>
