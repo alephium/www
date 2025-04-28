@@ -28,14 +28,14 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageHeroSection backgroundImage={heroImage}>
+          <SubpageHeroSection backgroundImage={heroImage} alignContent="bottom">
             <h1>Contact Us</h1>
             <hr />
             <p>Got questions, feedback, or just want to say hi? We’re here for you.</p>
           </SubpageHeroSection>
 
           <SubpageSection>
-            <TextElement>
+            <TextElement isCentered>
               <Button url="mailto:info@alephium.org">General</Button>
               <Button url="mailto:business@alephium.org">Business and Partnerships</Button>
               <Button url="mailto:press@alephium.org">Press</Button>
