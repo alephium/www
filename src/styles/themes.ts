@@ -17,8 +17,8 @@ export const darkTheme: DefaultTheme = {
 
   borderPrimary: 'rgba(255, 255, 255, 0.05)',
 
-  link: 'var(--color-grey-100)',
-  linkAlt: 'var(--color-white)',
+  link: 'var(--color-white)',
+  linkAlt: 'var(--color-grey-700)',
 
   separator: 'var(--color-grey-700)',
 

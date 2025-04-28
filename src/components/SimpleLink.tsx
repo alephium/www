@@ -108,6 +108,18 @@ const SimpleLinkComponent = ({
   )
 }
 
+const getGradient = (theme: DefaultTheme) => `
+  radial-gradient(
+    circle at var(--gradient-x) var(--gradient-y),
+    ${theme.textPrimary} 0%,
+    ${theme.palette1} 35%,
+    ${theme.palette2} 40%,
+    ${theme.textPrimary} 50%,
+    ${theme.palette1} 60%,
+    ${theme.palette4} 100%
+  )
+`
+
 const highlightStyles = css<SimpleLinkProps>`
   --gradient-x: 50%;
   --gradient-y: 50%;
@@ -120,19 +132,9 @@ const highlightStyles = css<SimpleLinkProps>`
     top: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(
-      circle at var(--gradient-x) var(--gradient-y),
-      ${({ theme }) => theme.palette4} 0%,
-      ${({ theme }) => theme.palette1} 35%,
-      ${({ theme }) => theme.palette2} 40%,
-      ${({ theme }) => theme.textPrimary} 50%,
-      ${({ theme }) => theme.palette1} 60%,
-      ${({ theme }) => theme.palette4} 100%
-    );
+    opacity: 1;
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent;
-    opacity: 0.3;
     transition: opacity 0.1s ease-out;
     pointer-events: none;
   }
@@ -144,23 +146,22 @@ const highlightStyles = css<SimpleLinkProps>`
     bottom: 0;
     width: 100%;
     height: 2px;
-    background: radial-gradient(
-      circle at var(--gradient-x) var(--gradient-y),
-      ${({ theme }) => theme.palette4} 0%,
-      ${({ theme }) => theme.palette1} 35%,
-      ${({ theme }) => theme.palette2} 40%,
-      ${({ theme }) => theme.textPrimary} 50%,
-      ${({ theme }) => theme.palette1} 60%,
-      ${({ theme }) => theme.palette4} 100%
-    );
-    opacity: 0.7;
+    background: ${({ theme }) => theme.textPrimary};
+    opacity: 1;
     transition: opacity 0.1s ease-out;
     pointer-events: none;
   }
 
-  &:hover::before,
-  &:hover::after {
+  &:hover::before {
     opacity: 1;
+    background: ${({ theme }) => getGradient(theme)};
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  &:hover::after {
+    background: ${({ theme }) => getGradient(theme)};
   }
 
   &:hover svg {
