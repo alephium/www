@@ -1,11 +1,19 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
-import SimpleLink from '../SimpleLink'
+import SimpleLink, { SimpleLinkProps } from '../SimpleLink'
 
-const ClickableBox = styled(SimpleLink)`
+interface ClickableBoxProps extends SimpleLinkProps {
+  align?: 'top' | 'center'
+}
+
+const ClickableBox = (props: ClickableBoxProps) => (props.url ? <ClickableBoxStyled {...props} /> : <Box {...props} />)
+
+export default ClickableBox
+
+const BoxStyles = css<ClickableBoxProps>`
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: ${({ align }) => (align === 'top' ? 'flex-start' : 'center')};
   gap: var(--spacing-4);
 
   &:hover {
@@ -21,6 +29,16 @@ const ClickableBox = styled(SimpleLink)`
       z-index: -1;
     }
   }
+
+  p + p {
+    margin-top: var(--spacing-2);
+  }
 `
 
-export default ClickableBox
+const Box = styled.div<ClickableBoxProps>`
+  ${BoxStyles}
+`
+
+const ClickableBoxStyled = styled(SimpleLink)<ClickableBoxProps>`
+  ${BoxStyles}
+`

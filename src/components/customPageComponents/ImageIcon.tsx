@@ -46,6 +46,7 @@ const ImageIconContainer = styled.div<{ size?: number; rounded?: boolean; paddin
   overflow: hidden;
   position: relative;
   margin-bottom: ${({ noBottomMargin }) => (noBottomMargin ? '0' : 'var(--spacing-3)')};
+  flex-shrink: 0;
 
   &::after {
     content: '';

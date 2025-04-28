@@ -8,6 +8,7 @@ interface GatsbyImageWrapperProps extends Omit<GatsbyImageProps, 'image'> {
   className?: string
   preserveWidth?: boolean
   center?: boolean
+  rounded?: boolean
 }
 
 const GatsbyImageWrapper: React.FC<GatsbyImageWrapperProps> = ({
@@ -17,19 +18,25 @@ const GatsbyImageWrapper: React.FC<GatsbyImageWrapperProps> = ({
   isBackground = false,
   preserveWidth = false,
   center = false,
+  rounded = false,
   ...props
 }) => {
   if (!image) return null
 
   return (
-    <StyledGatsbyImage isBackground={isBackground} preserveWidth={preserveWidth} center={center}>
+    <StyledGatsbyImage isBackground={isBackground} preserveWidth={preserveWidth} center={center} rounded={rounded}>
       <GatsbyImage image={image} alt={alt} className={className} {...props} />
     </StyledGatsbyImage>
   )
 }
 
 // This is a hack because I can't figure out why the following styles are applied in dev mode but not in production
-const StyledGatsbyImage = styled.div<{ isBackground?: boolean; preserveWidth?: boolean; center?: boolean }>`
+const StyledGatsbyImage = styled.div<{
+  isBackground?: boolean
+  preserveWidth?: boolean
+  center?: boolean
+  rounded?: boolean
+}>`
   width: 100%;
   height: 100%;
 
@@ -72,6 +79,12 @@ const StyledGatsbyImage = styled.div<{ isBackground?: boolean; preserveWidth?: b
       css`
         margin-left: auto;
         margin-right: auto;
+      `}
+
+    ${({ rounded }) =>
+      rounded &&
+      css`
+        border-radius: 100%;
       `}
   }
 `
