@@ -51,8 +51,8 @@ const AccordionHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--spacing-4);
-  background-color: ${({ theme }) => theme.bgPrimary};
+  padding: var(--spacing-1) var(--spacing-3);
+  background-color: ${({ theme }) => theme.bgSecondary};
   cursor: pointer;
   transition: background-color 0.2s ease;
 
@@ -62,8 +62,7 @@ const AccordionHeader = styled.div`
 `
 
 const AccordionTitle = styled.h3`
-  font-size: 1.1rem;
-  font-weight: var(--fontWeight-medium);
+  font-size: var(--fontSize-22);
 `
 
 const AccordionIcon = styled.div`
@@ -79,6 +78,11 @@ const AccordionContent = styled(motion.div)`
 `
 
 const AccordionInner = styled.div`
-  padding: var(--spacing-4);
+  padding: var(--spacing-2) var(--spacing-3);
   background-color: ${({ theme }) => theme.bgPrimary};
+
+  * {
+    font-weight: var(--fontWeight-medium) !important;
+    color: ${({ theme }) => theme.textPrimary} !important;
+  }
 `

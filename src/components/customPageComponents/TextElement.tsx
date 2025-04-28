@@ -9,6 +9,7 @@ export interface TextElementProps {
   noMargin?: boolean
   className?: string
   noHeadingsMargins?: boolean
+  // Note: Links inside list items should now be wrapped in a <span> if necessary for proper alignment.
 }
 
 const TextElement = styled.div<TextElementProps>`
@@ -139,16 +140,26 @@ const TextElement = styled.div<TextElementProps>`
   }
 
   > ul {
-    padding-inline-start: 10px;
+    padding-inline-start: 0;
+    padding-left: 10px;
     list-style-type: none;
     color: ${({ theme }) => theme.textPrimary};
 
     > li {
-      margin-bottom: var(--spacing-1);
+      position: relative;
+      padding-left: 1.5em;
+      margin-bottom: var(--spacing-2);
 
       &:before {
         content: '—';
-        padding-right: 10px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        line-height: 1.3; /* Align the dash with text */
+      }
+
+      > span {
+        display: block;
       }
     }
   }
