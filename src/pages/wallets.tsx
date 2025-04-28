@@ -8,6 +8,7 @@ import styled from 'styled-components'
 
 import Badge from '../components/Badge'
 import Button from '../components/Button'
+import CardImageOverlay from '../components/customPageComponents/CardImageOverlay'
 import CardsRow from '../components/customPageComponents/CardsRow'
 import Page from '../components/customPageComponents/Page'
 import SideBySide from '../components/customPageComponents/SideBySide'
@@ -29,6 +30,11 @@ const walletsQuery = graphql`
     }
     heroVideo: file(relativePath: { eq: "underwater-treasure-scrub.mp4" }) {
       publicURL
+    }
+    securityImage: file(relativePath: { eq: "pearl-in-oyster-texture.png" }) {
+      childImageSharp {
+        gatsbyImageData(quality: 100)
+      }
     }
     desktopScreenshots: allFile(
       filter: { relativeDirectory: { eq: "screenshots/desktop-wallet" } }
@@ -64,7 +70,7 @@ const walletsQuery = graphql`
 `
 
 const CustomPage = (props: PageProps) => {
-  const { heroImage, heroVideo, desktopScreenshots, extensionScreenshots, mobileScreenshots } =
+  const { heroImage, heroVideo, desktopScreenshots, extensionScreenshots, mobileScreenshots, securityImage } =
     useStaticQuery<Queries.WalletsPageQuery>(walletsQuery)
   const wallets = useWallets()
 
@@ -101,8 +107,11 @@ const CustomPage = (props: PageProps) => {
             <SubheaderContent>
               <CardsRow>
                 <TextCard>
+                  <CardImageOverlay
+                    image={securityImage?.childImageSharp?.gatsbyImageData}
+                    overlayTitle="Enhanced Security"
+                  />
                   <TextCardContent>
-                    <h3>Enhanced Security</h3>
                     <p>
                       Alephium&apos;s non-custodial wallets ensure that only you have access to your funds and private
                       keys, which are fully encrypted on your device.
