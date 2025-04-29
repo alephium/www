@@ -15,11 +15,19 @@ const HomepageEcosystemSection = () => {
   const containerRef = useRef<HTMLDivElement>(null)
   const animationFrameRef = useRef<number>()
   const lastTimeRef = useRef<number>(0)
+  const zIndexOrderRef = useRef<number[]>([])
 
   useEffect(() => {
     fetch('https://publicapi.alph.land/api/dapps').then((res) =>
       res.json().then((data) => {
         setDapps(data)
+        // Create a randomized z-index order
+        const order = Array.from({ length: data.length }, (_, i) => i)
+        for (let i = order.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1))
+          ;[order[i], order[j]] = [order[j], order[i]]
+        }
+        zIndexOrderRef.current = order
       })
     )
 
@@ -43,7 +51,7 @@ const HomepageEcosystemSection = () => {
       lastTimeRef.current = timestamp
 
       if (!hoverPosition) {
-        rotationRef.current = (rotationRef.current + deltaTime * 0.02) % 360
+        rotationRef.current = (rotationRef.current + deltaTime * 0.008) % 360
         // Force re-render to update positions
         setDapps((prev) => [...prev])
       }
@@ -127,16 +135,13 @@ const HomepageEcosystemSection = () => {
   const calculateTransform = (position: { x: number; y: number }) => {
     if (!hoverPosition) return { scale: 1, translateX: 0, translateY: 0, zIndex: 1 }
 
-    // Calculate distance from hover position
     const distance = Math.sqrt(Math.pow(hoverPosition.x - position.x, 2) + Math.pow(hoverPosition.y - position.y, 2))
 
-    // Calculate scale
     const maxDistance = 150
     const minScale = 0.3
     const maxScale = 1.2
     const scale = Math.max(minScale, maxScale - (distance / maxDistance) * (maxScale - minScale))
 
-    // Calculate parallax movement (inverted)
     const parallaxStrength = 20
     const translateX = (position.x - hoverPosition.x) / parallaxStrength
     const translateY = (position.y - hoverPosition.y) / parallaxStrength
@@ -178,7 +183,6 @@ const HomepageEcosystemSection = () => {
               const position = calculatePosition(index, dapps.length)
               const transform = calculateTransform(position)
               const appId = extractAppId(dapp.media.logoUrl)
-
               return (
                 <LogoWrapper
                   key={index}
@@ -186,7 +190,7 @@ const HomepageEcosystemSection = () => {
                     left: `${position.x}px`,
                     top: `${position.y}px`,
                     transform: `translate(-50%, -50%) scale(${transform.scale}) translate(${transform.translateX}px, ${transform.translateY}px)`,
-                    zIndex: transform.zIndex
+                    zIndex: hoverPosition ? transform.zIndex : zIndexOrderRef.current[index]
                   }}
                 >
                   {appId && (
