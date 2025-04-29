@@ -13,7 +13,7 @@ import SubpageVideoHeroSection from '../components/customPageComponents/SubpageV
 import TextCard from '../components/customPageComponents/TextCard'
 import TextCardContent from '../components/customPageComponents/TextCardContent'
 import TextElement from '../components/customPageComponents/TextElement'
-import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
+import SectionDivider from '../components/SectionDivider'
 
 const exchangesQuery = graphql`
   query GetStartedPage {
@@ -97,7 +97,6 @@ const CustomPage = (props: PageProps) => {
   } = useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
   const exchanges = exchangesContent.nodes[0].frontmatter?.exchanges ?? []
   const blobVideoUrl = blobVideo?.publicURL || undefined
-  const ecosystemImageData = ecosystemImage?.childImageSharp?.gatsbyImageData || undefined
 
   return (
     <Page
@@ -162,14 +161,14 @@ const CustomPage = (props: PageProps) => {
           </SubpageImageHeroSection>
 
           <SubpageSection>
-            <TextElement>
+            <TextElement isCentered>
               <h2>Get ALPH</h2>
               <p>
                 <strong>There are many ways to get ALPH.</strong> You can it some with traditional fiat currency,
                 exchanging it with another cryptocurrency, or bridging from another ecosystem.
               </p>
             </TextElement>
-            <SubheaderContent>
+            <SubheaderContent isCentered>
               <Grid columns={2} gap="small">
                 {exchanges.map(
                   (exchange) =>
@@ -198,28 +197,7 @@ const CustomPage = (props: PageProps) => {
             </SubheaderContent>
           </SubpageSection>
 
-          <SubpageSection>
-            <GatsbyImageWrapper
-              image={ecosystemImageData}
-              alt="Ecosystem background"
-              style={{ height: '100%' }}
-              objectFit="cover"
-              loading="lazy"
-              isBackground
-            />
-            <TextElement isCentered>
-              <h2>Explore the ecosystem</h2>
-              <p>
-                <strong>
-                  Discover innovative dApps and tokenized assets - trade, borrow, lend or earn ALPH, by engaging with
-                  DeFi protocols or contributing to the ecosystem.
-                </strong>
-              </p>
-              <Button big url="https://alph.land">
-                See all apps
-              </Button>
-            </TextElement>
-          </SubpageSection>
+          <SectionDivider />
 
           <SubpageSection isCentered>
             <TextElement isCentered>
@@ -252,6 +230,7 @@ const CustomPage = (props: PageProps) => {
                 </TextCard>
               </Grid>
             </SubheaderContent>
+
             <SubheaderContent isCentered>
               <TextElement isCentered>
                 <h3>Guides and tutorials</h3>
@@ -263,6 +242,28 @@ const CustomPage = (props: PageProps) => {
               </TextElement>
             </SubheaderContent>
           </SubpageSection>
+
+          <SectionDivider />
+
+          <SubpageImageHeroSection
+            backgroundImage={ecosystemImage}
+            alignContent="center"
+            maxHeight="800px"
+            bottomMargin
+          >
+            <TextElement isCentered>
+              <h2>Explore the ecosystem</h2>
+              <p>
+                <strong>
+                  Discover innovative dApps and tokenized assets - trade, borrow, lend or earn ALPH, by engaging with
+                  DeFi protocols or contributing to the ecosystem.
+                </strong>
+              </p>
+              <Button big url="https://alph.land">
+                See all apps
+              </Button>
+            </TextElement>
+          </SubpageImageHeroSection>
 
           <SubpageImageHeroSection backgroundImage={mineImage} minHeight="800px">
             <h2>

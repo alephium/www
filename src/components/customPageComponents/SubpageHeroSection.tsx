@@ -12,6 +12,7 @@ export interface SubpageHeroSectionProps extends React.HTMLAttributes<HTMLElemen
   children: ReactNode
   mediaContent: ReactNode
   alignContent?: SubpageHeroSectionAlignContent
+  bottomMargin?: boolean
   maxHeight?: string
   minHeight?: string
 }
@@ -24,7 +25,7 @@ const SubpageHeroSection = forwardRef<HTMLElement, SubpageHeroSectionProps>(func
     <SubpageHeroSectionStyled ref={ref} {...props}>
       <BackgroundMediaWrapper>{mediaContent}</BackgroundMediaWrapper>
       <HeroPageSectionContainer alignContent={alignContent}>
-        <ContentWrapper>
+        <ContentWrapper alignContent={alignContent}>
           <TitleShadow />
           <TextElementStyled>{children}</TextElementStyled>
         </ContentWrapper>
@@ -35,12 +36,15 @@ const SubpageHeroSection = forwardRef<HTMLElement, SubpageHeroSectionProps>(func
 
 export default SubpageHeroSection
 
-const SubpageHeroSectionStyled = styled.section<Pick<SubpageHeroSectionProps, 'maxHeight' | 'minHeight'>>`
+const SubpageHeroSectionStyled = styled.section<
+  Pick<SubpageHeroSectionProps, 'maxHeight' | 'minHeight' | 'bottomMargin'>
+>`
   position: relative;
   height: 80vh;
   min-height: ${({ minHeight }) => minHeight || 'auto'};
   max-height: ${({ maxHeight }) => maxHeight || '80vh'};
   margin: auto;
+  margin-bottom: ${({ bottomMargin }) => (bottomMargin ? 'var(--spacing-10)' : '0')};
   width: 90vw;
   overflow: hidden;
   transition: all 0.4s ease-in;
@@ -54,8 +58,8 @@ const SubpageHeroSectionStyled = styled.section<Pick<SubpageHeroSectionProps, 'm
     inset: 0;
     border: 4px solid ${({ theme }) => theme.borderPrimary};
     border-radius: var(--radius-big);
-    backdrop-filter: saturate(200%);
-    -webkit-backdrop-filter: saturate(200%) brightness(1.2);
+    backdrop-filter: saturate(200%) brightness(1.1);
+    -webkit-backdrop-filter: saturate(200%) brightness(1.1);
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     mask-composite: exclude;
     -webkit-mask-composite: xor;
@@ -97,13 +101,13 @@ const HeroPageSectionContainer = styled(PageSectionContainer)<Pick<SubpageHeroSe
   flex-direction: column;
   position: relative;
   display: flex;
-  flex: 1;
+  flex: ${({ alignContent }) => (alignContent === 'center' ? 'none' : '1')};
   justify-content: ${({ alignContent }) =>
     alignContent === 'bottom' ? 'flex-end' : alignContent === 'center' ? 'center' : 'flex-start'};
 `
 
 const ContentWrapper = styled.div<Pick<SubpageHeroSectionProps, 'alignContent'>>`
-  margin-right: auto;
+  margin-right: ${({ alignContent }) => (alignContent === 'center' ? 'initial' : 'auto')};
   position: relative;
   margin-top: 5%;
   margin-bottom: 5%;

@@ -19,17 +19,17 @@ const TitleShadowStyled = styled.div`
 
   pointer-events: none;
   z-index: -1;
-  backdrop-filter: blur(40px) saturate(200%) brightness(0.8);
-  -webkit-backdrop-filter: blur(40px) saturate(200%) brightness(0.8);
+  backdrop-filter: blur(40px) saturate(140%) brightness(0.8);
+  -webkit-backdrop-filter: blur(40px) saturate(140%) brightness(0.8);
 
   /* Circular gradient mask for progressive fade */
-  mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 70%);
+  mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 60%);
   mask-mode: alpha;
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: cover;
 
-  -webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 70%);
+  -webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 60%);
   -webkit-mask-mode: alpha;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;

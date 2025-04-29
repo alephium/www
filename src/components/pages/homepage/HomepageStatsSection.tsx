@@ -146,14 +146,14 @@ const HomepageStatsSection = () => {
   }
 
   return (
-    <SubpageSection>
-      <TextElement>
+    <SubpageSectionStyled wide>
+      <TextElementStyled>
         <h2>
-          Made for Real Adoption.
-          <br />
           Built to Last.
+          <br />
+          <small>Made for Real Adoption.</small>
         </h2>
-      </TextElement>
+      </TextElementStyled>
 
       <StatsContainer>
         <CardsScroll ref={scrollContainerRef}>
@@ -307,13 +307,22 @@ const HomepageStatsSection = () => {
           </ScrollButton>
         </ScrollButtonsContainer>
       </StatsContainer>
-    </SubpageSection>
+    </SubpageSectionStyled>
   )
 }
 
+const SubpageSectionStyled = styled(SubpageSection)`
+  padding-right: 0;
+  padding-left: 0;
+`
+
+const TextElementStyled = styled(TextElement)`
+  width: var(--page-width);
+  margin: 0 auto;
+`
+
 const StatsContainer = styled.div`
   width: 100%;
-  overflow: hidden;
   padding: var(--spacing-4) 0;
 `
 

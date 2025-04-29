@@ -59,6 +59,11 @@ const TextElement = styled.div<TextElementProps>`
     margin-bottom: var(--spacing-6);
     color: ${({ theme }) => theme.textPrimaryVariation};
     line-height: 1;
+
+    small {
+      font-size: inherit;
+      color: ${({ theme }) => theme.textSecondary};
+    }
   }
 
   > h3 {

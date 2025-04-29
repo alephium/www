@@ -53,7 +53,7 @@ const Card = ({
   isAnimated: boolean
   border?: boolean
 }) => {
-  const angle = 0.5
+  const angle = 1.2
   const cardRef = useRef<HTMLDivElement>(null)
 
   const y = useMotionValue(0.5)
@@ -134,10 +134,10 @@ const cardStyles = ({ border }: { border?: boolean }) => css`
       content: '';
       position: absolute;
       inset: 0;
-      border: 2px solid ${({ theme }) => theme.borderPrimary};
+      border: 3px solid ${({ theme }) => theme.borderPrimary};
       border-radius: inherit;
-      backdrop-filter: saturate(200%);
-      -webkit-backdrop-filter: saturate(200%);
+      backdrop-filter: saturate(200%) brightness(1.1);
+      -webkit-backdrop-filter: saturate(200%) brightness(1.1);
       mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
       mask-composite: exclude;
       -webkit-mask-composite: xor;
