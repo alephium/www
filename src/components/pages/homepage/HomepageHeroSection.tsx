@@ -8,10 +8,10 @@ import SubpageVideoHeroSection from '../../customPageComponents/SubpageVideoHero
 
 export const homepageHeroQuery = graphql`
   query HomepageHero {
-    heroImage: file(relativePath: { eq: "bay-tree.png" }) {
+    heroImage: file(relativePath: { eq: "lighthouse-daylight.png" }) {
       ...HeroImage
     }
-    heroVideo: file(relativePath: { eq: "bay-tree-scrub.mp4" }) {
+    heroVideo: file(relativePath: { eq: "lighthouse-daylight-scrub.mp4" }) {
       publicURL
     }
   }
@@ -23,17 +23,13 @@ const HomepageHeroSection = () => {
   return (
     <SubpageVideoHeroSection video={heroVideo} poster={heroImage}>
       <h1>
-        Engineered
+        The Web3
         <br />
-        for the Future.
+        you were promised.
       </h1>
       <hr />
       <p>
-        <strong>
-          Alephium brings the security of Proof-of-Work, the scalability of sharding, and the power of smart contracts
-          to real-world applications
-        </strong>
-        .
+        <strong>Scalable PoW and secure smart contracts, only on Alephium.</strong>.
       </p>
 
       <Buttons>

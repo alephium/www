@@ -1,22 +1,25 @@
 import { graphql, PageProps, useStaticQuery } from 'gatsby'
 
 import Page from '../components/customPageComponents/Page'
-import SubpageHeroSection from '../components/customPageComponents/SubpageImageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
+import SubpageVideoHeroSection from '../components/customPageComponents/SubpageVideoHeroSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import PageSectionMilestones from '../components/PageSectionMilestones'
 import SectionDivider from '../components/SectionDivider'
 
 const roadmapQuery = graphql`
   query RoadmapPage {
-    heroImage: file(relativePath: { eq: "alephium-hackathon-lake.png" }) {
+    heroImage: file(relativePath: { eq: "magic-mountain.png" }) {
       ...HeroImage
+    }
+    heroVideo: file(relativePath: { eq: "magic-mountain-scrub.mp4" }) {
+      publicURL
     }
   }
 `
 
 const CustomPage = (props: PageProps) => {
-  const { heroImage } = useStaticQuery<Queries.RoadmapPageQuery>(roadmapQuery)
+  const { heroImage, heroVideo } = useStaticQuery<Queries.RoadmapPageQuery>(roadmapQuery)
 
   return (
     <Page
@@ -28,7 +31,7 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageHeroSection backgroundImage={heroImage}>
+          <SubpageVideoHeroSection video={heroVideo} poster={heroImage}>
             <h1>Alephium Roadmap & Milestones</h1>
             <hr />
             <p>
@@ -36,7 +39,7 @@ const CustomPage = (props: PageProps) => {
               time. Our roadmap reflects our commitment to innovation, scalability, and community-driven growth.{' '}
               <strong>Explore our journey so far and what’s coming next.</strong>
             </p>
-          </SubpageHeroSection>
+          </SubpageVideoHeroSection>
 
           <PageSectionMilestones />
 
