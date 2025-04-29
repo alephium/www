@@ -69,6 +69,7 @@ const TextElementStyled = styled(TextElement)`
 
   > p {
     color: ${({ theme }) => theme.textSecondary};
+    font-size: var(--fontSize-32);
     font-weight: var(--fontWeight-semiBold);
     line-height: 1.3;
     z-index: 1;

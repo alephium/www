@@ -22,14 +22,10 @@ const HomepageHeroSection = () => {
 
   return (
     <SubpageVideoHeroSection video={heroVideo} poster={heroImage}>
-      <h1>
-        The Web3
-        <br />
-        you were promised.
-      </h1>
+      <h1>The Web3 you were promised.</h1>
       <hr />
       <p>
-        <strong>Scalable PoW and secure smart contracts, only on Alephium.</strong>.
+        <strong>Scalable Proof-of-Less-Work and secure Smart Contracts, only on Alephium.</strong>
       </p>
 
       <Buttons>

@@ -21,9 +21,9 @@ const HomepageEcosystemSection = () => {
       <SubpageSection dark>
         <TextElement isCentered>
           <h2>
-            Built on Alephium.
+            <small>Built to last.</small>
             <br />
-            Built to last.
+            Built on Alephium.
           </h2>
           <p>
             Alephium is home to pioneers, combining <strong>strong technology and a bustling community</strong> to bring
