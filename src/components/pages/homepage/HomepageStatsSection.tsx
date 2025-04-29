@@ -2,7 +2,7 @@ import { ExplorerClient } from '@alephium/sdk'
 import { HttpResponse } from '@alephium/sdk/api/explorer'
 import { colord } from 'colord'
 import { graphql, useStaticQuery } from 'gatsby'
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import styled, { useTheme } from 'styled-components'
 
 import ImageIcon from '../../customPageComponents/ImageIcon'
@@ -11,6 +11,9 @@ import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextCard from '../../customPageComponents/TextCard'
 import TextCardContent from '../../customPageComponents/TextCardContent'
 import TextElement from '../../customPageComponents/TextElement'
+
+const CARD_WIDTH = 380
+const CARD_GAP = 24
 
 const baseUrl = 'https://backend.mainnet.alephium.org'
 
@@ -62,6 +65,9 @@ const HomepageStatsSection = () => {
   const [statsScalarData, setStatsScalarData] = useState<StatsScalarData>({
     totalTransactions: statScalarDefault
   })
+  const scrollContainerRef = useRef<HTMLDivElement>(null)
+  const [canScrollLeft, setCanScrollLeft] = useState(false)
+  const [canScrollRight, setCanScrollRight] = useState(true)
 
   const { yellowWaveIcon, blueTreeIcon, circlesIcon, greenDropIcon, rockPileIcon, featherIcon } =
     useStaticQuery<Queries.IconsQuery>(query)
@@ -94,6 +100,43 @@ const HomepageStatsSection = () => {
 
   const { totalTransactions } = statsScalarData
 
+  const checkScrollable = useCallback(() => {
+    if (scrollContainerRef.current) {
+      const container = scrollContainerRef.current
+      const canScrollLeft = container.scrollLeft > 0
+      const canScrollRight = container.scrollLeft < container.scrollWidth - container.clientWidth
+
+      setCanScrollLeft(canScrollLeft)
+      setCanScrollRight(canScrollRight)
+    }
+  }, [])
+
+  useEffect(() => {
+    checkScrollable()
+    const container = scrollContainerRef.current
+    if (container) {
+      container.addEventListener('scroll', checkScrollable)
+      window.addEventListener('resize', checkScrollable)
+    }
+    return () => {
+      if (container) {
+        container.removeEventListener('scroll', checkScrollable)
+        window.removeEventListener('resize', checkScrollable)
+      }
+    }
+  }, [checkScrollable])
+
+  const handleScroll = (direction: 'left' | 'right') => {
+    if (scrollContainerRef.current) {
+      const container = scrollContainerRef.current
+      const scrollAmount = CARD_WIDTH + CARD_GAP
+      container.scrollBy({
+        left: direction === 'right' ? scrollAmount : -scrollAmount,
+        behavior: 'smooth'
+      })
+    }
+  }
+
   return (
     <SubpageSection>
       <TextElement isCentered>
@@ -106,7 +149,7 @@ const HomepageStatsSection = () => {
 
       <SubheaderContent isCentered>
         <StatsContainer>
-          <CardsScroll>
+          <CardsScroll ref={scrollContainerRef}>
             <CardContainer>
               <TextCard>
                 <TextCardContent>
@@ -240,6 +283,18 @@ const HomepageStatsSection = () => {
               </TextCard>
             </CardContainer>
           </CardsScroll>
+          <ScrollButtonsContainer>
+            <ScrollButton onClick={() => handleScroll('left')} aria-label="Scroll cards left" disabled={!canScrollLeft}>
+              <Arrow>←</Arrow>
+            </ScrollButton>
+            <ScrollButton
+              onClick={() => handleScroll('right')}
+              aria-label="Scroll cards right"
+              disabled={!canScrollRight}
+            >
+              <Arrow>→</Arrow>
+            </ScrollButton>
+          </ScrollButtonsContainer>
         </StatsContainer>
       </SubheaderContent>
     </SubpageSection>
@@ -254,11 +309,12 @@ const StatsContainer = styled.div`
 
 const CardsScroll = styled.div`
   display: flex;
-  gap: var(--spacing-4);
+  gap: ${CARD_GAP}px;
   overflow-x: auto;
   padding: var(--spacing-4) 0;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
+  margin-bottom: var(--spacing-4);
 
   &::-webkit-scrollbar {
     height: 8px;
@@ -275,7 +331,7 @@ const CardsScroll = styled.div`
 `
 
 const CardContainer = styled.div`
-  flex: 0 0 380px;
+  flex: 0 0 ${CARD_WIDTH}px;
   scroll-snap-align: start;
 
   > div {
@@ -305,6 +361,46 @@ const TLDRTag = styled.div<{ color: string }>`
   margin-right: 10px;
   border: 1px solid ${({ color }) => colord(color).alpha(0.5).toRgbString()};
   font-size: var(--fontSize-18);
+`
+
+const ScrollButtonsContainer = styled.div`
+  display: flex;
+  gap: var(--spacing-2);
+  justify-content: flex-end;
+  padding: 0 var(--spacing-4) var(--spacing-4);
+`
+
+const ScrollButton = styled.button`
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--color-white);
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  opacity: 1;
+
+  &:disabled {
+    opacity: 0.7;
+    pointer-events: none;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+`
+
+const Arrow = styled.span`
+  font-size: 24px;
+  line-height: 1;
 `
 
 export default HomepageStatsSection
