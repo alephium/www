@@ -146,7 +146,7 @@ const CustomPage = (props: PageProps) => {
             </SideBySide>
           </SubpageSection>
 
-          <SubpageImageHeroSection backgroundImage={treasureImage} maxHeight="660px">
+          <SubpageImageHeroSection backgroundImage={treasureImage} minHeight="660px">
             <h2>Wallets</h2>
             <hr />
             <p>

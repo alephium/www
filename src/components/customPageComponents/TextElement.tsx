@@ -9,12 +9,13 @@ export interface TextElementProps {
   noMargin?: boolean
   className?: string
   noHeadingsMargins?: boolean
-  // Note: Links inside list items should now be wrapped in a <span> if necessary for proper alignment.
+  noTextCentering?: boolean
 }
 
 const TextElement = styled.div<TextElementProps>`
-  ${({ isCentered }) =>
+  ${({ isCentered, noTextCentering }) =>
     isCentered &&
+    !noTextCentering &&
     css`
       text-align: center;
     `}

@@ -13,7 +13,6 @@ export interface SubpageHeroSectionProps extends React.HTMLAttributes<HTMLElemen
   mediaContent: ReactNode
   alignContent?: SubpageHeroSectionAlignContent
   bottomMargin?: boolean
-  maxHeight?: string
   minHeight?: string
 }
 
@@ -36,13 +35,9 @@ const SubpageHeroSection = forwardRef<HTMLElement, SubpageHeroSectionProps>(func
 
 export default SubpageHeroSection
 
-const SubpageHeroSectionStyled = styled.section<
-  Pick<SubpageHeroSectionProps, 'maxHeight' | 'minHeight' | 'bottomMargin'>
->`
+const SubpageHeroSectionStyled = styled.section<Pick<SubpageHeroSectionProps, 'minHeight' | 'bottomMargin'>>`
   position: relative;
-  height: 80vh;
-  min-height: ${({ minHeight }) => minHeight || 'auto'};
-  max-height: ${({ maxHeight }) => maxHeight || '80vh'};
+  min-height: ${({ minHeight }) => minHeight || '80vh'};
   margin: auto;
   margin-bottom: ${({ bottomMargin }) => (bottomMargin ? 'var(--spacing-10)' : '0')};
   width: 90vw;

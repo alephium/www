@@ -346,7 +346,7 @@ const CustomPage = (props: PageProps) => {
 
             <AccordionGroup>
               <TextElement>
-                <h2>Ambassador Program</h2>
+                <h2 id="ambassador-program">Ambassador Program</h2>
               </TextElement>
 
               <Accordion title="Who can become an Alephium Ambassador?">
