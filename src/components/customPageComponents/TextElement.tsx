@@ -9,11 +9,13 @@ export interface TextElementProps {
   noMargin?: boolean
   className?: string
   noHeadingsMargins?: boolean
+  noTextCentering?: boolean
 }
 
 const TextElement = styled.div<TextElementProps>`
-  ${({ isCentered }) =>
+  ${({ isCentered, noTextCentering }) =>
     isCentered &&
+    !noTextCentering &&
     css`
       text-align: center;
     `}
