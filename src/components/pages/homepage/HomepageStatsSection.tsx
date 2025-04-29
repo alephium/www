@@ -5,10 +5,11 @@ import { graphql, useStaticQuery } from 'gatsby'
 import { useCallback, useEffect, useState } from 'react'
 import styled, { useTheme } from 'styled-components'
 
-import Grid from '../../customPageComponents/Grid'
 import ImageIcon from '../../customPageComponents/ImageIcon'
 import SubheaderContent from '../../customPageComponents/SubheaderContent'
 import SubpageSection from '../../customPageComponents/SubpageSection'
+import TextCard from '../../customPageComponents/TextCard'
+import TextCardContent from '../../customPageComponents/TextCardContent'
 import TextElement from '../../customPageComponents/TextElement'
 
 const baseUrl = 'https://backend.mainnet.alephium.org'
@@ -104,90 +105,183 @@ const HomepageStatsSection = () => {
       </TextElement>
 
       <SubheaderContent isCentered>
-        <Grid columns={2}>
-          <TextElement noHeadingsMargins>
-            <ImageIcon image={yellowWaveIcon?.childImageSharp?.gatsbyImageData} alt="Fast" size={82} rounded />
-            <h3 style={{ color: theme.palette2 }}>Fast</h3>
-            <TLDRSection color={theme.palette2}>
-              <TLDRTag color={theme.palette2}>TL;DR</TLDRTag>
-              <span>20,000+ transactions per second</span>
-            </TLDRSection>
-            <p>
-              Alephium moves as fast as you do. With block times of just 8 seconds, sharding, and Proof-of-Less-Work, it
-              delivers <strong>fast, efficient, and reliable performance</strong> - ready to scale as adoption grows.
-            </p>
-          </TextElement>
-          <TextElement noHeadingsMargins>
-            <ImageIcon image={blueTreeIcon?.childImageSharp?.gatsbyImageData} alt="Scalable" size={82} rounded />
-            <h3 style={{ color: theme.palette3 }}>Scalable</h3>
-            <TLDRSection color={theme.palette3}>
-              <TLDRTag color={theme.palette3}>TL;DR</TLDRTag>
-              <span>{`${totalTransactions.value.toLocaleString()} total transactions`}</span>
-            </TLDRSection>
-            <p>
-              Built to handle <strong>high throughput without sacrificing security</strong>, Alephium&apos;s
-              architecture ensures that fees remain predictable and affordable - empowering developers and users alike.
-            </p>
-          </TextElement>
-          <TextElement noHeadingsMargins>
-            <ImageIcon image={circlesIcon?.childImageSharp?.gatsbyImageData} alt="Secure" size={82} rounded />
-            <h3 style={{ color: theme.palette4 }}>Secure</h3>
-            <TLDRSection color={theme.palette4}>
-              <TLDRTag color={theme.palette4}>TL;DR</TLDRTag>
-              <span>125+ independent mining nodes</span>
-            </TLDRSection>
-            <p>
-              With a truly decentralized Proof-of-Work model, Alephium operates independently of vulnerable central
-              validators, <strong>ensuring maximum security, trustlessness, and censorship resistance.</strong>
-            </p>
-          </TextElement>
-          <TextElement noHeadingsMargins>
-            <ImageIcon image={greenDropIcon?.childImageSharp?.gatsbyImageData} alt="Sustainable" size={82} rounded />
-            <h3 style={{ color: theme.palette1 }}>Sustainable</h3>
-            <TLDRSection color={theme.palette1}>
-              <TLDRTag color={theme.palette1}>TL;DR</TLDRTag>
-              <span>87% lower environmental impact vs. traditional PoW</span>
-            </TLDRSection>
-            <p>
-              Alephium&apos;s Proof-of-Less-Work mechanism reduces energy consumption, making it{' '}
-              <strong>one of the most sustainable and responsible blockchains</strong> built for the future.
-            </p>
-          </TextElement>
-          <TextElement noHeadingsMargins>
-            <ImageIcon image={rockPileIcon?.childImageSharp?.gatsbyImageData} alt="Programmable" size={82} rounded />
-            <h3 style={{ color: theme.palette6 }}>Programmable</h3>
-            <TLDRSection color={theme.palette6}>
-              <TLDRTag color={theme.palette6}>TL;DR</TLDRTag>
-              <span>No compromise smart-contracts</span>
-            </TLDRSection>
-            <p>
-              Alephium&apos;s stateful UTXO model merges the best of both worlds -{' '}
-              <strong>Ethereum-like smart contract flexibility with Bitcoin-level security.</strong>
-            </p>
-          </TextElement>
-          <TextElement noHeadingsMargins>
-            <ImageIcon
-              image={featherIcon?.childImageSharp?.gatsbyImageData}
-              alt="Developer-friendly"
-              size={82}
-              rounded
-            />
-            <h3 style={{ color: theme.palette5 }}>Developer-friendly</h3>
-            <TLDRSection color={theme.palette5}>
-              <TLDRTag color={theme.palette5}>TL;DR</TLDRTag>
-              <span>Incredibly easy-to-use language (RALPH) and novel VM</span>
-            </TLDRSection>
-            <p>
-              Alephium simplifies decentralized development with an optimized SDK, MEV-resistant design, and built-in
-              security features{' '}
-              <strong>making smart contracts and dApps both easier to build and inherently safer.</strong>
-            </p>
-          </TextElement>
-        </Grid>
+        <StatsContainer>
+          <CardsScroll>
+            <CardContainer>
+              <TextCard>
+                <TextCardContent>
+                  <TextElement noHeadingsMargins>
+                    <ImageIcon image={yellowWaveIcon?.childImageSharp?.gatsbyImageData} alt="Fast" size={82} rounded />
+                    <h3 style={{ color: theme.palette2 }}>Fast</h3>
+                    <TLDRSection color={theme.palette2}>
+                      <TLDRTag color={theme.palette2}>TL;DR</TLDRTag>
+                      <span>20,000+ transactions per second</span>
+                    </TLDRSection>
+                    <p>
+                      Alephium moves as fast as you do. With block times of just 8 seconds, sharding, and
+                      Proof-of-Less-Work, it delivers <strong>fast, efficient, and reliable performance</strong> - ready
+                      to scale as adoption grows.
+                    </p>
+                  </TextElement>
+                </TextCardContent>
+              </TextCard>
+            </CardContainer>
+            <CardContainer>
+              <TextCard>
+                <TextCardContent>
+                  <TextElement noHeadingsMargins>
+                    <ImageIcon
+                      image={blueTreeIcon?.childImageSharp?.gatsbyImageData}
+                      alt="Scalable"
+                      size={82}
+                      rounded
+                    />
+                    <h3 style={{ color: theme.palette3 }}>Scalable</h3>
+                    <TLDRSection color={theme.palette3}>
+                      <TLDRTag color={theme.palette3}>TL;DR</TLDRTag>
+                      <span>{`${totalTransactions.value.toLocaleString()} total transactions`}</span>
+                    </TLDRSection>
+                    <p>
+                      Built to handle <strong>high throughput without sacrificing security</strong>, Alephium&apos;s
+                      architecture ensures that fees remain predictable and affordable - empowering developers and users
+                      alike.
+                    </p>
+                  </TextElement>
+                </TextCardContent>
+              </TextCard>
+            </CardContainer>
+            <CardContainer>
+              <TextCard>
+                <TextCardContent>
+                  <TextElement noHeadingsMargins>
+                    <ImageIcon image={circlesIcon?.childImageSharp?.gatsbyImageData} alt="Secure" size={82} rounded />
+                    <h3 style={{ color: theme.palette4 }}>Secure</h3>
+                    <TLDRSection color={theme.palette4}>
+                      <TLDRTag color={theme.palette4}>TL;DR</TLDRTag>
+                      <span>125+ independent mining nodes</span>
+                    </TLDRSection>
+                    <p>
+                      With a truly decentralized Proof-of-Work model, Alephium operates independently of vulnerable
+                      central validators,{' '}
+                      <strong>ensuring maximum security, trustlessness, and censorship resistance.</strong>
+                    </p>
+                  </TextElement>
+                </TextCardContent>
+              </TextCard>
+            </CardContainer>
+            <CardContainer>
+              <TextCard>
+                <TextCardContent>
+                  <TextElement noHeadingsMargins>
+                    <ImageIcon
+                      image={greenDropIcon?.childImageSharp?.gatsbyImageData}
+                      alt="Sustainable"
+                      size={82}
+                      rounded
+                    />
+                    <h3 style={{ color: theme.palette1 }}>Sustainable</h3>
+                    <TLDRSection color={theme.palette1}>
+                      <TLDRTag color={theme.palette1}>TL;DR</TLDRTag>
+                      <span>87% lower environmental impact vs. traditional PoW</span>
+                    </TLDRSection>
+                    <p>
+                      Alephium&apos;s Proof-of-Less-Work mechanism reduces energy consumption, making it{' '}
+                      <strong>one of the most sustainable and responsible blockchains</strong> built for the future.
+                    </p>
+                  </TextElement>
+                </TextCardContent>
+              </TextCard>
+            </CardContainer>
+            <CardContainer>
+              <TextCard>
+                <TextCardContent>
+                  <TextElement noHeadingsMargins>
+                    <ImageIcon
+                      image={rockPileIcon?.childImageSharp?.gatsbyImageData}
+                      alt="Programmable"
+                      size={82}
+                      rounded
+                    />
+                    <h3 style={{ color: theme.palette6 }}>Programmable</h3>
+                    <TLDRSection color={theme.palette6}>
+                      <TLDRTag color={theme.palette6}>TL;DR</TLDRTag>
+                      <span>No compromise smart-contracts</span>
+                    </TLDRSection>
+                    <p>
+                      Alephium&apos;s stateful UTXO model merges the best of both worlds -{' '}
+                      <strong>Ethereum-like smart contract flexibility with Bitcoin-level security.</strong>
+                    </p>
+                  </TextElement>
+                </TextCardContent>
+              </TextCard>
+            </CardContainer>
+            <CardContainer>
+              <TextCard>
+                <TextCardContent>
+                  <TextElement noHeadingsMargins>
+                    <ImageIcon
+                      image={featherIcon?.childImageSharp?.gatsbyImageData}
+                      alt="Developer-friendly"
+                      size={82}
+                      rounded
+                    />
+                    <h3 style={{ color: theme.palette5 }}>Developer-friendly</h3>
+                    <TLDRSection color={theme.palette5}>
+                      <TLDRTag color={theme.palette5}>TL;DR</TLDRTag>
+                      <span>Incredibly easy-to-use language (RALPH) and novel VM</span>
+                    </TLDRSection>
+                    <p>
+                      Alephium simplifies decentralized development with an optimized SDK, MEV-resistant design, and
+                      built-in security features{' '}
+                      <strong>making smart contracts and dApps both easier to build and inherently safer.</strong>
+                    </p>
+                  </TextElement>
+                </TextCardContent>
+              </TextCard>
+            </CardContainer>
+          </CardsScroll>
+        </StatsContainer>
       </SubheaderContent>
     </SubpageSection>
   )
 }
+
+const StatsContainer = styled.div`
+  width: 100%;
+  overflow: hidden;
+  padding: var(--spacing-4) 0;
+`
+
+const CardsScroll = styled.div`
+  display: flex;
+  gap: var(--spacing-4);
+  overflow-x: auto;
+  padding: var(--spacing-4) 0;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+
+  &::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--color-gray-300);
+    border-radius: 4px;
+  }
+`
+
+const CardContainer = styled.div`
+  flex: 0 0 380px;
+  scroll-snap-align: start;
+
+  > div {
+    height: 100%;
+  }
+`
 
 const TLDRSection = styled.div<{ color: string }>`
   display: flex;
