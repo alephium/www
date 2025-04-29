@@ -124,7 +124,7 @@ const HomepageStatsSection = () => {
   const handleScroll = (direction: 'left' | 'right') => {
     if (scrollContainerRef.current) {
       const container = scrollContainerRef.current
-      const scrollAmount = CARD_WIDTH + CARD_GAP
+      const scrollAmount = CARD_WIDTH + CARD_GAP // note to self: this isn't really useful thanks to the awesome scroll-snap-align
       container.scrollBy({
         left: direction === 'right' ? scrollAmount : -scrollAmount,
         behavior: 'smooth'
@@ -332,6 +332,7 @@ const CardsScroll = styled.div`
   overflow-x: auto;
   padding: var(--spacing-4) 0;
   scroll-snap-type: x mandatory;
+  scroll-padding-left: calc(calc(100% - var(--page-width)) / 2);
   -webkit-overflow-scrolling: touch;
   margin-bottom: var(--spacing-4);
 
@@ -353,6 +354,14 @@ const CardContainer = styled(motion.div)`
   flex: 0 0 ${CARD_WIDTH}px;
   scroll-snap-align: start;
   position: relative;
+
+  &:first-child {
+    padding-left: calc(calc(100% - var(--page-width)) / 2);
+  }
+
+  &:last-child {
+    margin-right: var(--spacing-4);
+  }
 
   &:hover {
     filter: saturate(160%);
