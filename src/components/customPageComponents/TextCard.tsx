@@ -13,9 +13,10 @@ interface TextCardProps extends TextElementProps {
   url?: string
   isAnimated?: boolean
   variants?: Variants
+  border?: boolean
 }
 
-const TextCard = ({ children, url, isAnimated = false, variants, ...textElementProps }: TextCardProps) => {
+const TextCard = ({ children, url, isAnimated = false, variants, border, ...textElementProps }: TextCardProps) => {
   const text = (
     <TextElementStyled isBodySmall {...textElementProps}>
       {children}
@@ -24,7 +25,7 @@ const TextCard = ({ children, url, isAnimated = false, variants, ...textElementP
 
   const card = (
     <CardContainer variants={variants} isAnimated={isAnimated || !!url}>
-      <Card url={url} isAnimated={isAnimated || !!url}>
+      <Card url={url} isAnimated={isAnimated || !!url} border={border}>
         {text}
       </Card>
     </CardContainer>
@@ -41,7 +42,17 @@ const TextCard = ({ children, url, isAnimated = false, variants, ...textElementP
 
 export default TextCard
 
-const Card = ({ children, url, isAnimated }: { children: ReactNode; url?: string; isAnimated: boolean }) => {
+const Card = ({
+  children,
+  url,
+  isAnimated,
+  border
+}: {
+  children: ReactNode
+  url?: string
+  isAnimated: boolean
+  border?: boolean
+}) => {
   const angle = 0.5
   const cardRef = useRef<HTMLDivElement>(null)
 
@@ -94,6 +105,7 @@ const Card = ({ children, url, isAnimated }: { children: ReactNode; url?: string
       style={url ? { rotateY, rotateX } : undefined}
       url={url}
       isAnimated={isAnimated}
+      border={border}
     >
       {children}
       {url && <GradientBorder />}
@@ -101,13 +113,13 @@ const Card = ({ children, url, isAnimated }: { children: ReactNode; url?: string
   )
 }
 
-const cardStyles = css<{ url?: string }>`
+const cardStyles = ({ border }: { border?: boolean }) => css`
   display: flex;
   position: relative;
   flex-direction: column;
   border-radius: var(--radius);
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
-  background-color: ${({ theme }) => theme.bgTertiary};
+  background-color: ${({ theme }) => theme.bgSecondary};
   background-clip: padding-box;
   text-decoration: none;
   transition: all 0.1s ease-out;
@@ -116,19 +128,22 @@ const cardStyles = css<{ url?: string }>`
   background-repeat: no-repeat;
   overflow: hidden;
 
-  &::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border: 2px solid ${({ theme }) => theme.borderPrimary};
-    border-radius: inherit;
-    backdrop-filter: saturate(200%);
-    -webkit-backdrop-filter: saturate(200%);
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    mask-composite: exclude;
-    -webkit-mask-composite: xor;
-    pointer-events: none;
-  }
+  ${border &&
+  css`
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border: 2px solid ${({ theme }) => theme.borderPrimary};
+      border-radius: inherit;
+      backdrop-filter: saturate(200%);
+      -webkit-backdrop-filter: saturate(200%);
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask-composite: exclude;
+      -webkit-mask-composite: xor;
+      pointer-events: none;
+    }
+  `}
 `
 
 const GradientBorder = styled.div`
@@ -195,8 +210,8 @@ const SimpleLinkStyled = styled(SimpleLink)<Pick<TextCardProps, 'isAnimated'>>`
     `}
 `
 
-const CardStyled = styled(motion.div)<{ url?: string; isAnimated: boolean }>`
-  ${cardStyles}
+const CardStyled = styled(motion.div)<{ url?: string; isAnimated: boolean; border?: boolean }>`
+  ${({ url, border }) => cardStyles({ url, border })}
   ${({ url }) => url && 'transform-style: preserve-3d;'}
   width: 100%;
   height: 100%;

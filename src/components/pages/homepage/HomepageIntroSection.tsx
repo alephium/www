@@ -56,7 +56,7 @@ const HomepageIntroSection = ({ cards }: Queries.HomepageIntroSectionFragment) =
           (card) =>
             card &&
             card.link?.url && (
-              <TextCard isAnimated variants={cardVariants} key={card.title}>
+              <TextCard isAnimated border variants={cardVariants} key={card.title}>
                 <CardImageOverlay image={card.image?.childImageSharp?.gatsbyImageData} overlayTitle={card.title} />
                 <TextCardContent>
                   <p>{card.description}</p>
