@@ -91,7 +91,7 @@ const Card = ({ children, url, isAnimated }: { children: ReactNode; url?: string
         x.set(0.5, true)
         y.set(0.5, true)
       }}
-      style={isAnimated ? { rotateY, rotateX } : undefined}
+      style={url ? { rotateY, rotateX } : undefined}
       url={url}
       isAnimated={isAnimated}
     >
@@ -137,31 +137,31 @@ const GradientBorder = styled.div`
   border-radius: var(--radius);
   background: radial-gradient(
     circle at var(--gradient-x) var(--gradient-y),
-    ${({ theme }) => theme.borderPrimary} 0%,
+    ${({ theme }) => theme.borderPrimary} 30%,
     ${({ theme }) => theme.palette2} 35%,
     ${({ theme }) => theme.palette1} 40%,
     ${({ theme }) => theme.palette4} 50%,
     ${({ theme }) => theme.palette3} 60%,
-    ${({ theme }) => theme.borderPrimary} 100%
+    ${({ theme }) => theme.borderPrimary} 70%
   );
   opacity: 0;
-  transition: opacity 0.3s ease;
+
   pointer-events: none;
   z-index: -1;
 
   &::before {
     content: '';
     position: absolute;
-    inset: 4px;
+    inset: 3px;
     border-radius: calc(var(--radius) - 2px);
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(100px) saturate(180%);
     z-index: 0;
   }
 `
 
 const CardContainer = styled(motion.div)<{ isAnimated?: boolean }>`
-  ${({ isAnimated }) => isAnimated && 'perspective: 200px;'};
+  ${({ isAnimated }) => isAnimated && 'perspective: 200px;'}
   display: flex;
   position: relative;
   width: 100%;
@@ -197,7 +197,7 @@ const SimpleLinkStyled = styled(SimpleLink)<Pick<TextCardProps, 'isAnimated'>>`
 
 const CardStyled = styled(motion.div)<{ url?: string; isAnimated: boolean }>`
   ${cardStyles}
-  ${({ isAnimated }) => isAnimated && 'transform-style: preserve-3d;'}
+  ${({ url }) => url && 'transform-style: preserve-3d;'}
   width: 100%;
   height: 100%;
 
@@ -205,11 +205,6 @@ const CardStyled = styled(motion.div)<{ url?: string; isAnimated: boolean }>`
     & + & {
       margin-top: var(--spacing-3);
     }
-  }
-
-  &:hover {
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.5);
   }
 
   ${({ url }) =>
