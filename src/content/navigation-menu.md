@@ -13,11 +13,6 @@ menuItems:
         link: https://www.youtube.com/playlist?list=PL8q8n0BHJS1PWP7t8ABECYdOaPM-hJmjx
       - title: Roadmap
         link: /roadmap
-      - title: Funding
-      - title: Grants
-        link: /grants
-      - title: Bounties
-        link: /bounties
       - title: Support
       - title: Discord
         link: /discord
@@ -41,15 +36,6 @@ menuItems:
         link: https://docs.alephium.org/mining
       - title: Analytics
         link: https://defillama.com/chain/Alephium
-  - title: Resources
-    items:
-      - title: Projects and tools
-      - title: FAQ
-        link: /faq
-      - title: Blog
-        link: https://medium.com/@alephium
-      - title: Brand Assets
-        link: https://github.com/alephium/alephium-brand-guide
   - title: Community
     items:
       - title: Get started
@@ -58,8 +44,8 @@ menuItems:
         link: /ambassador
       - title: Online communities
         link: /communities
-      - title: Bounties
-        link: /bounties
+      - title: Grants
+        link: https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md
 button:
   title: Bridge
   link: https://bridge.alephium.org/

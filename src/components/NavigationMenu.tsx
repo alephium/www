@@ -150,18 +150,16 @@ const NavigationDrawer = ({ title, Icon, className, children }: NavigationDrawer
         {title ? <DrawerTitle>{title}</DrawerTitle> : Icon ? Icon : null}
         <DrawerCarretWrapper>{isOpen ? <RiArrowDropUpLine /> : <RiArrowDropDownLine />}</DrawerCarretWrapper>
       </DrawerTitleWrapper>
-      <AnimatePresence initial={false}>
+      <AnimatePresence>
         {isOpen && (
-          <Drawer
-            key="drawer"
-            variants={drawerVariants}
-            initial="closed"
-            animate="open"
-            exit="closed"
-            transition={{ duration: 0.15, ease: [0.4, 0, 0.2, 1] }}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
           >
-            {children}
-          </Drawer>
+            <Drawer>{children}</Drawer>
+          </motion.div>
         )}
       </AnimatePresence>
     </DrawerWrapper>
@@ -196,7 +194,6 @@ const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean }>`
   align-items: center;
   justify-content: center;
   z-index: 10000;
-  transition: top 0.3s ease-in-out;
 
   ${({ floating }) =>
     !floating &&
@@ -338,8 +335,6 @@ const Drawer = styled(motion.div)`
   z-index: 1000;
   backdrop-filter: blur(24px);
   padding-bottom: 8px;
-
-  transform-origin: top center;
 
   @media ${deviceBreakPoints.ipad} {
     top: 100%;
