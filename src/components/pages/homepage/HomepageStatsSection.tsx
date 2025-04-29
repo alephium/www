@@ -1,6 +1,7 @@
 import { ExplorerClient } from '@alephium/sdk'
 import { HttpResponse } from '@alephium/sdk/api/explorer'
-import { graphql, useStaticQuery } from 'gatsby'
+import { motion } from 'framer-motion'
+import { graphql } from 'gatsby'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import styled, { useTheme } from 'styled-components'
 
@@ -65,9 +66,6 @@ const HomepageStatsSection = () => {
   const scrollContainerRef = useRef<HTMLDivElement>(null)
   const [canScrollLeft, setCanScrollLeft] = useState(false)
   const [canScrollRight, setCanScrollRight] = useState(true)
-
-  const { yellowWaveIcon, blueTreeIcon, circlesIcon, greenDropIcon, rockPileIcon, featherIcon } =
-    useStaticQuery<Queries.IconsQuery>(query)
 
   const updateStatsScalar = useCallback(
     (key: StatScalarKeys, value: StatScalar['value']) => {
@@ -134,6 +132,19 @@ const HomepageStatsSection = () => {
     }
   }
 
+  const cardVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: (i: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i * 0.1,
+        duration: 0.5,
+        ease: 'easeOut'
+      }
+    })
+  }
+
   return (
     <SubpageSection>
       <TextElement>
@@ -146,7 +157,13 @@ const HomepageStatsSection = () => {
 
       <StatsContainer>
         <CardsScroll ref={scrollContainerRef}>
-          <CardContainer>
+          <CardContainer
+            custom={0}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={cardVariants}
+          >
             <TextCard>
               <TextCardContent>
                 <TextElement noHeadingsMargins>
@@ -163,7 +180,13 @@ const HomepageStatsSection = () => {
               </TextCardContent>
             </TextCard>
           </CardContainer>
-          <CardContainer>
+          <CardContainer
+            custom={1}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={cardVariants}
+          >
             <TextCard>
               <TextCardContent>
                 <TextElement noHeadingsMargins>
@@ -180,7 +203,13 @@ const HomepageStatsSection = () => {
               </TextCardContent>
             </TextCard>
           </CardContainer>
-          <CardContainer>
+          <CardContainer
+            custom={2}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={cardVariants}
+          >
             <TextCard>
               <TextCardContent>
                 <TextElement noHeadingsMargins>
@@ -197,7 +226,13 @@ const HomepageStatsSection = () => {
               </TextCardContent>
             </TextCard>
           </CardContainer>
-          <CardContainer>
+          <CardContainer
+            custom={3}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={cardVariants}
+          >
             <TextCard>
               <TextCardContent>
                 <TextElement noHeadingsMargins>
@@ -213,7 +248,13 @@ const HomepageStatsSection = () => {
               </TextCardContent>
             </TextCard>
           </CardContainer>
-          <CardContainer>
+          <CardContainer
+            custom={4}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={cardVariants}
+          >
             <TextCard>
               <TextCardContent>
                 <TextElement noHeadingsMargins>
@@ -229,7 +270,13 @@ const HomepageStatsSection = () => {
               </TextCardContent>
             </TextCard>
           </CardContainer>
-          <CardContainer>
+          <CardContainer
+            custom={5}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={cardVariants}
+          >
             <TextCard>
               <TextCardContent>
                 <TextElement noHeadingsMargins>
@@ -293,10 +340,14 @@ const CardsScroll = styled.div`
   }
 `
 
-const CardContainer = styled.div`
+const CardContainer = styled(motion.div)`
   flex: 0 0 ${CARD_WIDTH}px;
   scroll-snap-align: start;
+  position: relative;
 
+  &:hover {
+    filter: saturate(160%);
+  }
   > div {
     height: 100%;
   }

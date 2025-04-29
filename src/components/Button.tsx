@@ -119,7 +119,7 @@ const GradientBorder = styled.div<{ squared?: boolean }>`
   transition: opacity 0.3s ease;
   pointer-events: none;
   z-index: -1;
-  opacity: 0.3;
+  opacity: 0.7;
 
   &::before {
     content: '';
@@ -173,6 +173,10 @@ const StyledButton = styled(Button)`
   font-weight: var(--fontWeight-semiBold);
   font-size: ${({ big }) => (big ? 'var(--fontSize-22)' : 'var(--fontSize-20)')};
   transition: all 0.1s ease-out;
+
+  &:hover {
+    filter: saturate(160%);
+  }
 
   ${({ disabled }) =>
     !disabled
