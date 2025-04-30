@@ -2,6 +2,7 @@ import { graphql, PageProps } from 'gatsby'
 
 import Button from '../components/Button'
 import Page from '../components/customPageComponents/Page'
+import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import HomepageEcosystemSection from '../components/pages/homepage/HomepageEcosystemSection'
@@ -9,7 +10,6 @@ import HomepageHeroSection from '../components/pages/homepage/HomepageHeroSectio
 import HomepageIntroSection from '../components/pages/homepage/HomepageIntroSection'
 import HomepagePartnersSection from '../components/pages/homepage/HomepagePartnersSection'
 import HomepageStatsSection from '../components/pages/homepage/HomepageStatsSection'
-import PageSectionContainer from '../components/PageSectionContainer'
 import SectionDivider from '../components/SectionDivider'
 
 export const pageQuery = graphql`
@@ -47,6 +47,8 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
         <>
           <HomepageHeroSection />
 
+          {content?.partnersSection && <HomepagePartnersSection {...content.partnersSection} />}
+
           <HomepageIntroSection />
 
           <SectionDivider />
@@ -55,11 +57,9 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
 
           <HomepageEcosystemSection />
 
-          {content?.partnersSection && <HomepagePartnersSection {...content.partnersSection} />}
-
           <SectionDivider />
 
-          <PageSectionContainer fullHeight wide justifyContent="center">
+          <SubpageSection wide>
             <GatsbyImageWrapper
               image={lighthouseImage}
               alt="Lighthouse background"
@@ -79,7 +79,7 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
                 Get started
               </Button>
             </TextElement>
-          </PageSectionContainer>
+          </SubpageSection>
         </>
       }
     />

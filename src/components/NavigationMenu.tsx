@@ -55,8 +55,8 @@ const NavigationMenu = ({ className, floating = true }: NavigationMenuProps) => 
 
   return (
     <>
-      <NavigationWrapper isHidden={isHidden} floating={floating}>
-        <NavigationMenuStyled className={className} scrolled={scrolled}>
+      <NavigationWrapper isHidden={isHidden} floating={floating} scrolled={scrolled}>
+        <NavigationMenuStyled className={className}>
           <div className="nav-item">
             <LinkStyled to="/" title="Go to homepage">
               <LogoTextStyled />
@@ -78,7 +78,7 @@ export default NavigationMenu
 
 const NavigationTopSpacing = styled.div`
   width: 100%;
-  height: max(10vh, 120px);
+  height: max(8vh, 70px);
 `
 
 const NavigationItems = ({ className }: { className?: string }) => {
@@ -180,16 +180,19 @@ export const navigationMenuQuery = graphql`
   }
 `
 
-const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean }>`
+const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean; scrolled: boolean }>`
   position: fixed;
-  top: ${({ isHidden }) => (isHidden ? '-100px' : '30px')};
+  top: ${({ isHidden }) => (isHidden ? '-100px' : 0)};
   right: 0;
   left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 66px;
   z-index: 10000;
   transition: top 0.3s ease-in-out;
+  backdrop-filter: blur(100px) brightness(${({ scrolled }) => (scrolled ? '30%' : '100%')});
+  border-bottom: 1px solid ${({ theme, scrolled }) => (scrolled ? theme.borderPrimary : 'transparent')};
 
   ${({ floating }) =>
     !floating &&
@@ -203,17 +206,13 @@ const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean }>`
   }
 `
 
-const NavigationMenuStyled = styled.div<{ scrolled: boolean }>`
+const NavigationMenuStyled = styled.div`
   width: var(--page-width);
   display: flex;
   justify-content: center;
   font-weight: var(--fontWeight-medium);
   z-index: 1;
-  backdrop-filter: blur(100px) brightness(${({ scrolled }) => (scrolled ? '50%' : '100%')});
   padding: 0 30px;
-  height: 62px;
-  border-radius: 200px;
-  border: 1px solid ${({ theme, scrolled }) => (scrolled ? theme.borderPrimary : 'transparent')};
 
   .nav-end {
     display: flex;

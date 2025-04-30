@@ -265,57 +265,55 @@ const HomepageEcosystemSection = () => {
   }
 
   return (
-    <>
-      <SubpageSection dark>
-        <StarBackground ref={canvasRef} />
-        <div style={{ position: 'relative', zIndex: 1 }}>
-          <TextElement isCentered>
-            <h2>
-              <small>Built to last.</small>
-              <br />
-              Built on Alephium.
-            </h2>
-            <p>
-              Alephium is home to pioneers, combining <strong>strong technology and a bustling community</strong> to
-              bring the <strong>next generation of decentralized applications to life</strong>.
-            </p>
-          </TextElement>
-          <LogosContainer onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
-            <InnerContainer>
-              {dapps.map((dapp, index) => {
-                const position = calculatePosition(index, dapps.length)
-                const transform = calculateTransform(position)
-                const appId = extractAppId(dapp.media.logoUrl)
-                return (
-                  <LogoWrapper
-                    key={index}
-                    isSelected={dapp.name === hoveredAppName}
-                    style={{
-                      left: `${position.x}px`,
-                      top: `${position.y}px`,
-                      transform: `translate(-50%, -50%) scale(${transform.scale}) translate(${transform.translateX}px, ${transform.translateY}px)`,
-                      zIndex: hoverPosition ? transform.zIndex : zIndexOrderRef.current[index]
-                    }}
-                  >
-                    {appId && (
-                      <a href={`https://alph.land/${appId}`} target="_blank" rel="noopener noreferrer">
-                        <img src={dapp.media.logoUrl} alt={dapp.name} loading="lazy" />
-                      </a>
-                    )}
-                  </LogoWrapper>
-                )
-              })}
-            </InnerContainer>
-            <HoveredAppName>{hoveredAppName}</HoveredAppName>
-            <CenterButtonWrapper>
-              <Button big highlight url="https://alph.land">
-                Explore ecosystem
-              </Button>
-            </CenterButtonWrapper>
-          </LogosContainer>
-        </div>
-      </SubpageSection>
-    </>
+    <SubpageSectionStyled dark>
+      <StarBackground ref={canvasRef} />
+      <div style={{ position: 'relative', zIndex: 1 }}>
+        <TextElement isCentered>
+          <h2>
+            <small>Built to last.</small>
+            <br />
+            Built on Alephium.
+          </h2>
+          <p>
+            Alephium is home to pioneers, combining <strong>strong technology and a bustling community</strong> to bring
+            the <strong>next generation of decentralized applications to life</strong>.
+          </p>
+        </TextElement>
+        <LogosContainer onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
+          <InnerContainer>
+            {dapps.map((dapp, index) => {
+              const position = calculatePosition(index, dapps.length)
+              const transform = calculateTransform(position)
+              const appId = extractAppId(dapp.media.logoUrl)
+              return (
+                <LogoWrapper
+                  key={index}
+                  isSelected={dapp.name === hoveredAppName}
+                  style={{
+                    left: `${position.x}px`,
+                    top: `${position.y}px`,
+                    transform: `translate(-50%, -50%) scale(${transform.scale}) translate(${transform.translateX}px, ${transform.translateY}px)`,
+                    zIndex: hoverPosition ? transform.zIndex : zIndexOrderRef.current[index]
+                  }}
+                >
+                  {appId && (
+                    <a href={`https://alph.land/${appId}`} target="_blank" rel="noopener noreferrer">
+                      <img src={dapp.media.logoUrl} alt={dapp.name} loading="lazy" />
+                    </a>
+                  )}
+                </LogoWrapper>
+              )
+            })}
+          </InnerContainer>
+          <HoveredAppName>{hoveredAppName}</HoveredAppName>
+          <CenterButtonWrapper>
+            <Button big highlight url="https://alph.land">
+              Explore ecosystem
+            </Button>
+          </CenterButtonWrapper>
+        </LogosContainer>
+      </div>
+    </SubpageSectionStyled>
   )
 }
 
@@ -403,4 +401,8 @@ const CenterButtonWrapper = styled.div`
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+`
+
+const SubpageSectionStyled = styled(SubpageSection)`
+  margin-top: -100px;
 `

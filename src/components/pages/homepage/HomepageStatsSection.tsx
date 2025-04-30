@@ -123,7 +123,7 @@ const HomepageStatsSection = () => {
   }
 
   return (
-    <SubpageSectionStyled wide>
+    <SubpageSectionStyled wide dark>
       <TextElementStyled>
         <h2>
           Built to Last.

@@ -11,7 +11,6 @@ import SubheaderContent from '../../customPageComponents/SubheaderContent'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextCard from '../../customPageComponents/TextCard'
 import TextCardContent from '../../customPageComponents/TextCardContent'
-import TextElement from '../../customPageComponents/TextElement'
 
 export const homepageIntroQuery = graphql`
   query HomepageIntro {
@@ -76,7 +75,7 @@ const HomepageIntroSection = () => {
         actionText: 'Start Building',
         image: stream?.childImageSharp?.gatsbyImageData,
         link: {
-          url: '/developers'
+          url: 'https://docs.alephium.org'
         }
       },
       {
@@ -102,7 +101,7 @@ const HomepageIntroSection = () => {
         actionText: 'Start Mining',
         image: goldStream?.childImageSharp?.gatsbyImageData,
         link: {
-          url: '/mining'
+          url: 'https://docs.alephium.org/mining'
         }
       }
     ],
@@ -116,7 +115,7 @@ const HomepageIntroSection = () => {
 
   return (
     <SubpageSection id="intro" isCentered>
-      <TextElement isCentered>
+      {/* <TextElement isCentered>
         <h2>
           A Network Built
           <br />
@@ -133,7 +132,7 @@ const HomepageIntroSection = () => {
             future of finance.
           </strong>
         </p>
-      </TextElement>
+      </TextElement> */}
 
       <SubheaderContent isCentered>
         <IntroColumns variants={cardContainerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>

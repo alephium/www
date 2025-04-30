@@ -1,7 +1,6 @@
 import { graphql, PageProps, useStaticQuery } from 'gatsby'
 
 import Button from '../components/Button'
-import ClickableBox from '../components/customPageComponents/ClickableBox'
 import Grid from '../components/customPageComponents/Grid'
 import ImageIcon from '../components/customPageComponents/ImageIcon'
 import Page from '../components/customPageComponents/Page'
@@ -84,18 +83,8 @@ const exchangesQuery = graphql`
 `
 
 const CustomPage = (props: PageProps) => {
-  const {
-    exchangesContent,
-    heroImage,
-    heroVideo,
-    treasureImage,
-    blobVideo,
-    mineImage,
-    ecosystemImage,
-    documentationIcon,
-    goldIcon
-  } = useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
-  const exchanges = exchangesContent.nodes[0].frontmatter?.exchanges ?? []
+  const { heroImage, heroVideo, treasureImage, blobVideo, mineImage, ecosystemImage, documentationIcon, goldIcon } =
+    useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
   const blobVideoUrl = blobVideo?.publicURL || undefined
 
   return (
@@ -112,9 +101,7 @@ const CustomPage = (props: PageProps) => {
             <h1>Get Started with Alephium</h1>
             <hr />
             <p>
-              <strong>
-                Whether you want to build, mine, or explore, this guide has everything you need to dive in.
-              </strong>
+              <strong>Everything you need to begin your journey in the Alephium ecosystem.</strong>
             </p>
           </SubpageVideoHeroSection>
 
@@ -131,8 +118,8 @@ const CustomPage = (props: PageProps) => {
                     Applications built on Alephium run faster, cost less, and inherit the resilience of Proof-of-Work,
                     ensuring your project is safe and scalable from day one.
                   </strong>{' '}
-                  Whether you're launching dApps, creating digital assets, or integrating Web3 infrastructure, Alephium
-                  provides the robust security, flexibility and performance needed to push boundaries.
+                  Whether you&apos;re launching dApps, creating digital assets, or integrating Web3 infrastructure,
+                  Alephium provides the robust security, flexibility and performance needed to push boundaries.
                 </p>
                 <p>
                   <strong>It’s not just about building - it’s about building smarter.</strong> Alephium eliminates
@@ -150,17 +137,15 @@ const CustomPage = (props: PageProps) => {
             <h2>Wallets</h2>
             <hr />
             <p>
-              To interact with the Alephium ecosystem{' '}
-              <strong>you’ll need a wallet, which acts as your gateway to the network</strong>. With an Alephium wallet,
-              you can store, send, and receive ALPH, manage digital assets (stablecoins, NFTs) and seamlessly connect to
-              dApps.
+              <strong>The wallet is your gateway to the Alephium ecosystem.</strong> Store, send, and receive ALPH,
+              manage digital assets (stablecoins, NFTs) and seamlessly connect to dApps.
             </p>
             <Button big url="/wallets">
               Download a wallet
             </Button>
           </SubpageImageHeroSection>
 
-          <SubpageSection>
+          {/*<SubpageSection>
             <TextElement isCentered>
               <h2>Get ALPH</h2>
               <p>
@@ -195,9 +180,7 @@ const CustomPage = (props: PageProps) => {
               </Grid>
               <Button url="https://www.coingecko.com/en/coins/alephium#markets">See more ALPH markets</Button>
             </SubheaderContent>
-          </SubpageSection>
-
-          <SectionDivider />
+          </SubpageSection>*/}
 
           <SubpageSection isCentered>
             <TextElement isCentered>
@@ -248,8 +231,8 @@ const CustomPage = (props: PageProps) => {
           <SubpageImageHeroSection
             backgroundImage={ecosystemImage}
             alignContent="center"
-            maxHeight="800px"
             bottomMargin
+            minHeight="600px"
           >
             <TextElement isCentered>
               <h2>Explore the ecosystem</h2>
@@ -259,7 +242,7 @@ const CustomPage = (props: PageProps) => {
                   DeFi protocols or contributing to the ecosystem.
                 </strong>
               </p>
-              <Button big url="https://alph.land">
+              <Button big highlight url="https://alph.land">
                 See all apps
               </Button>
             </TextElement>
@@ -287,7 +270,7 @@ const CustomPage = (props: PageProps) => {
               <li>Energy efficient</li>
               <li>Easy setup and quick start</li>
             </ul>
-            <Button big url="https://docs.alephium.org/mining">
+            <Button big highlight url="https://docs.alephium.org/mining">
               Start mining
             </Button>
           </SubpageImageHeroSection>

@@ -110,6 +110,14 @@ const TextElement = styled.div<TextElementProps>`
     font-weight: inherit;
   }
 
+  > label {
+    color: ${({ theme }) => theme.textTertiary};
+    font-size: var(--fontSize-16);
+    font-weight: var(--fontWeight-semiBold);
+    margin-bottom: var(--spacing-2);
+    text-transform: uppercase;
+  }
+
   p,
   ul {
     color: ${({ theme }) => theme.textSecondary};

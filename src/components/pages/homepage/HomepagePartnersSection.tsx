@@ -2,7 +2,6 @@ import { graphql } from 'gatsby'
 import styled from 'styled-components'
 
 import SubheaderContent from '../../customPageComponents/SubheaderContent'
-import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextElement from '../../customPageComponents/TextElement'
 
 export const query = graphql`
@@ -17,41 +16,36 @@ export const query = graphql`
 `
 
 const HomepagePartnersSection = (content: Queries.HomepagePartnersSectionFragment) => (
-  <SubpageSection>
+  <SubheaderContent isCentered>
     <TextElement isCentered>
-      <h2>Our Partners</h2>
-      <p>
-        From legal experts to peer blockchains, advocacy groups, and local associations -{' '}
-        <strong>they connect us to a larger ecosystem, strengthening our place in the decentralized world.</strong>
-      </p>
+      <label>Trusted by</label>
     </TextElement>
 
-    <SubheaderContent>
-      <PartnersGrid>
-        {content?.partners?.map(
-          (partner) =>
-            partner?.title &&
-            partner?.logo?.publicURL && (
-              <PartnerItem key={partner.title}>
-                <PartnerLogo src={partner.logo.publicURL} alt={partner.title} loading="lazy" />
-                <PartnerLabel>{partner.title}</PartnerLabel>
-              </PartnerItem>
-            )
-        )}
-      </PartnersGrid>
-    </SubheaderContent>
-  </SubpageSection>
+    <PartnersGrid>
+      {content?.partners?.map(
+        (partner) =>
+          partner?.title &&
+          partner?.logo?.publicURL && (
+            <PartnerItem key={partner.title}>
+              <PartnerLogo src={partner.logo.publicURL} alt={partner.title} loading="lazy" />
+              <PartnerLabel>{partner.title}</PartnerLabel>
+            </PartnerItem>
+          )
+      )}
+    </PartnersGrid>
+  </SubheaderContent>
 )
 
 const PartnersGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, auto);
-  justify-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
   align-items: center;
-  gap: 2rem 1rem;
-  max-width: 1000px;
+  gap: 2rem;
+  width: var(--pageWidth);
   margin: 0 auto;
+  overflow-x: auto;
+  padding: 1rem 0;
 `
 
 const PartnerItem = styled.div`
@@ -60,17 +54,18 @@ const PartnerItem = styled.div`
 `
 
 const PartnerLogo = styled.img`
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 48px;
   object-fit: contain;
   margin: 0 auto;
 `
 
 const PartnerLabel = styled.div`
-  font-size: var(--fontSize-18);
+  font-size: var(--fontSize-14);
   max-width: 120px;
   overflow-wrap: break-word;
   margin-top: var(--spacing-3);
+  color: ${({ theme }) => theme.textTertiary};
 `
 
 export default HomepagePartnersSection

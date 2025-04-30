@@ -4,6 +4,7 @@ interface PageSectionContainerProps {
   wide?: boolean
   narrow?: boolean
   fullHeight?: boolean
+  dark?: boolean
   justifyContent?: 'center' | 'flex-start'
 }
 
@@ -16,6 +17,7 @@ const PageSectionContainer = styled.div<PageSectionContainerProps>`
   margin: 0 auto;
   padding: 0 var(--spacing-4);
   position: relative;
+  background-color: ${({ dark, theme }) => (dark ? 'rgba(0, 0, 0, 0.1)' : 'none')};
 `
 
 export default PageSectionContainer

@@ -31,9 +31,18 @@ pageSectionCtaContent:
 
 partnersSection:
   partners:
+    - title: 'Alchemy Pay'
+      logo: '../images/svgs/alchemy-pay-logo.svg'
+      url: https://www.bitcoinassociation.ch/
+    - title: 'Antpool'
+      logo: ''
+      url: 'https://www.antpool.com'
     - title: 'Bitcoin Association Switzerland'
       logo: '../images/svgs/bas-logo-white.svg'
       url: https://www.bitcoinassociation.ch/
+    - title: 'Bitmain'
+      logo: '../images/svgs/bitmain-logo.svg'
+      url: 'https://www.bitmain.com'
     - title: 'Cetacean Capital'
       logo: '../images/logos/cetacean-capital-icon.png'
       url: https://cetacean.capital/
@@ -46,6 +55,12 @@ partnersSection:
     - title: 'Flux Labs'
       logo: '../images/svgs/flux-seeklogo.com.svg'
       url: https://runonflux.io/
+    - title: 'Gate.io'
+      logo: '../images/svgs/gateio-logo.svg'
+      url: 'https://www.gate.io'
+    - title: 'Goldshel'
+      logo: '../images/'
+      url: 'https://www.goldshell.com'
     - title: 'Hodling SA'
       logo: '../images/svgs/hodling-icon-bw-darkBackground.svg'
       url: https://www.hodling.ch/
