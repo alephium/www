@@ -1,3 +1,4 @@
+import { colord } from 'colord'
 import { ReactNode } from 'react'
 import styled, { css } from 'styled-components'
 
@@ -10,16 +11,30 @@ export interface TextElementProps {
   className?: string
   noHeadingsMargins?: boolean
   noTextCentering?: boolean
+  backgroundColor?: string
 }
 
 const TextElement = styled.div<TextElementProps>`
+  ${({ backgroundColor }) =>
+    backgroundColor &&
+    css`
+      background-color: ${backgroundColor};
+    `};
+
+  * {
+    ${({ backgroundColor }) =>
+      backgroundColor &&
+      css`
+        color: ${colord(backgroundColor).isLight() ? 'var(--color-black)' : 'var(--color-white)'} !important;
+      `}
+  }
+
   ${({ isCentered, noTextCentering }) =>
     isCentered &&
     !noTextCentering &&
     css`
       text-align: center;
     `}
-
   ${({ noMargin }) =>
     noMargin &&
     css`
@@ -27,11 +42,8 @@ const TextElement = styled.div<TextElementProps>`
         margin: 0;
       }
     `}
-
-  > h1,
-  > h2,
-  > h3,
-  > h4 {
+      > h1,
+    > h2, > h3, > h4 {
     font-weight: var(--fontWeight-medium);
     color: ${({ theme }) => theme.textPrimary};
     white-space: pre-wrap;

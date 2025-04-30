@@ -28,29 +28,6 @@ export const iconFragment = graphql`
   }
 `
 
-export const query = graphql`
-  query Icons {
-    yellowWaveIcon: file(relativePath: { eq: "yellow-wave-icon.png" }) {
-      ...Icon
-    }
-    blueTreeIcon: file(relativePath: { eq: "blue-tree-icon.png" }) {
-      ...Icon
-    }
-    circlesIcon: file(relativePath: { eq: "circles-icon.png" }) {
-      ...Icon
-    }
-    greenDropIcon: file(relativePath: { eq: "green-drop-icon.png" }) {
-      ...Icon
-    }
-    rockPileIcon: file(relativePath: { eq: "rock-pile-icon.png" }) {
-      ...Icon
-    }
-    featherIcon: file(relativePath: { eq: "feather-icon.png" }) {
-      ...Icon
-    }
-  }
-`
-
 const statScalarDefault = { value: 0, isLoading: true }
 
 type StatScalar = Stat<number>
@@ -165,12 +142,16 @@ const HomepageStatsSection = () => {
             variants={cardVariants}
           >
             <TextCard>
-              <TextCardContent>
-                <TextElement noHeadingsMargins>
-                  <h3 style={{ color: theme.palette2 }}>Fast</h3>
-                  <TLDRSection color={theme.palette2}>
+              <TextElement backgroundColor={theme.palette2}>
+                <TextCardContent>
+                  <h3>Fast</h3>
+                  <TLDRSection>
                     <span>20,000+ transactions per second</span>
                   </TLDRSection>
+                </TextCardContent>
+              </TextElement>
+              <TextCardContent>
+                <TextElement noHeadingsMargins>
                   <p>
                     Alephium moves as fast as you do. With block times of just 8 seconds, sharding, and
                     Proof-of-Less-Work, it delivers <strong>fast, efficient, and reliable performance</strong> - ready
@@ -188,12 +169,16 @@ const HomepageStatsSection = () => {
             variants={cardVariants}
           >
             <TextCard>
-              <TextCardContent>
-                <TextElement noHeadingsMargins>
-                  <h3 style={{ color: theme.palette3 }}>Scalable</h3>
-                  <TLDRSection color={theme.palette3}>
+              <TextElement backgroundColor={theme.palette3}>
+                <TextCardContent>
+                  <h3>Scalable</h3>
+                  <TLDRSection>
                     <span>{`${totalTransactions.value.toLocaleString()} total transactions`}</span>
                   </TLDRSection>
+                </TextCardContent>
+              </TextElement>
+              <TextCardContent>
+                <TextElement noHeadingsMargins>
                   <p>
                     Built to handle <strong>high throughput without sacrificing security</strong>, Alephium&apos;s
                     architecture ensures that fees remain predictable and affordable - empowering developers and users
@@ -211,12 +196,16 @@ const HomepageStatsSection = () => {
             variants={cardVariants}
           >
             <TextCard>
-              <TextCardContent>
-                <TextElement noHeadingsMargins>
-                  <h3 style={{ color: theme.palette4 }}>Secure</h3>
-                  <TLDRSection color={theme.palette4}>
+              <TextElement backgroundColor={theme.palette4}>
+                <TextCardContent>
+                  <h3>Secure</h3>
+                  <TLDRSection>
                     <span>125+ independent mining nodes</span>
                   </TLDRSection>
+                </TextCardContent>
+              </TextElement>
+              <TextCardContent>
+                <TextElement noHeadingsMargins>
                   <p>
                     With a truly decentralized Proof-of-Work model, Alephium operates independently of vulnerable
                     central validators,{' '}
@@ -234,12 +223,16 @@ const HomepageStatsSection = () => {
             variants={cardVariants}
           >
             <TextCard>
+              <TextElement backgroundColor={theme.palette1}>
+                <TextCardContent>
+                  <h3>Sustainable</h3>
+                  <TLDRSection color={theme.palette1}>
+                    <span>87% more efficient than PoW</span>
+                  </TLDRSection>
+                </TextCardContent>
+              </TextElement>
               <TextCardContent>
                 <TextElement noHeadingsMargins>
-                  <h3 style={{ color: theme.palette1 }}>Sustainable</h3>
-                  <TLDRSection color={theme.palette1}>
-                    <span>87% lower environmental impact vs. traditional PoW</span>
-                  </TLDRSection>
                   <p>
                     Alephium&apos;s Proof-of-Less-Work mechanism reduces energy consumption, making it{' '}
                     <strong>one of the most sustainable and responsible blockchains</strong> built for the future.
@@ -256,12 +249,16 @@ const HomepageStatsSection = () => {
             variants={cardVariants}
           >
             <TextCard>
-              <TextCardContent>
-                <TextElement noHeadingsMargins>
-                  <h3 style={{ color: theme.palette6 }}>Programmable</h3>
+              <TextElement backgroundColor={theme.palette6}>
+                <TextCardContent>
+                  <h3>Programmable</h3>
                   <TLDRSection color={theme.palette6}>
                     <span>No compromise smart-contracts</span>
                   </TLDRSection>
+                </TextCardContent>
+              </TextElement>
+              <TextCardContent>
+                <TextElement noHeadingsMargins>
                   <p>
                     Alephium&apos;s stateful UTXO model merges the best of both worlds -{' '}
                     <strong>Ethereum-like smart contract flexibility with Bitcoin-level security.</strong>
@@ -278,12 +275,16 @@ const HomepageStatsSection = () => {
             variants={cardVariants}
           >
             <TextCard>
+              <TextElement backgroundColor={theme.palette5}>
+                <TextCardContent>
+                  <h3>Developer-friendly</h3>
+                  <TLDRSection color={theme.palette5}>
+                    <span>Super simple language and novel VM</span>
+                  </TLDRSection>
+                </TextCardContent>
+              </TextElement>
               <TextCardContent>
                 <TextElement noHeadingsMargins>
-                  <h3 style={{ color: theme.palette5 }}>Developer-friendly</h3>
-                  <TLDRSection color={theme.palette5}>
-                    <span>Incredibly easy-to-use language (RALPH) and novel VM</span>
-                  </TLDRSection>
                   <p>
                     Alephium simplifies decentralized development with an optimized SDK, MEV-resistant design, and
                     built-in security features{' '}
@@ -371,12 +372,11 @@ const CardContainer = styled(motion.div)`
   }
 `
 
-const TLDRSection = styled.div<{ color: string }>`
+const TLDRSection = styled.div`
   display: flex;
   align-items: center;
   border-radius: var(--radius-small);
   margin-top: var(--spacing-2);
-  margin-bottom: var(--spacing-4);
   color: ${({ color }) => color};
   font-size: var(--fontSize-20);
   font-weight: var(--fontWeight-semiBold);

@@ -1,6 +1,6 @@
 import { useMotionValue, useSpring } from 'framer-motion'
 import { Link } from 'gatsby'
-import { ReactNode, useEffect, useRef } from 'react'
+import { ReactNode, RefObject, useEffect, useRef } from 'react'
 import { PointerEvent } from 'react'
 import styled, { css, DefaultTheme } from 'styled-components'
 
@@ -22,7 +22,7 @@ interface ButtonProps {
 
 const Button = ({ onClick, className, children, url, disabled, highlight, squared }: ButtonProps) => {
   const buttonRef = useRef<HTMLButtonElement>(null)
-  const anchorRef = useRef<HTMLAnchorElement>(null)
+  const anchorRef = useRef<HTMLAnchorElement | Link<any>>(null)
   const x = useMotionValue(0.5)
   const y = useMotionValue(0.5)
   const springX = useSpring(x, { stiffness: 200, damping: 20 })
@@ -73,14 +73,13 @@ const Button = ({ onClick, className, children, url, disabled, highlight, square
     onPointerMove: onMove,
     onPointerLeave: onLeave
   }
-
   return isInternalLink && url ? (
-    <Link to={url} {...sharedProps}>
+    <Link to={url} ref={anchorRef as RefObject<Link<any>>} {...sharedProps}>
       {content}
     </Link>
   ) : url ? (
     <a
-      ref={anchorRef}
+      ref={anchorRef as RefObject<HTMLAnchorElement>}
       href={url}
       target={(!isInternalLink && '_blank') || undefined}
       rel={(!isInternalLink && 'noopener') || undefined}

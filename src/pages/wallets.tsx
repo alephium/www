@@ -97,28 +97,18 @@ const CustomPage = (props: PageProps) => {
       content={
         <>
           <SubpageVideoHeroSection poster={heroImage} video={heroVideo}>
-            <h1>Alephium Wallets</h1>
+            <h1>Our Wallets, Designed for Humans.</h1>
             <hr />
             <p>
-              <strong>Alephium offers a variety of wallets</strong> to manage your ALPH tokens, interact with
-              decentralized applications (dApps), and participate in the ecosystem&apos;s growth.
+              Our wallets are designed for ease-of-use,{' '}
+              <strong>making Alephium&apos;s technology accessible for all.</strong>
             </p>
           </SubpageVideoHeroSection>
 
           <SubpageSection>
-            <TextElement>
-              <h2>
-                Your Gateway
-                <br />
-                to the Alephium
-                <br />
-                Ecosystem
-              </h2>
-            </TextElement>
-
-            <SubheaderContent>
+            <SubheaderContent isCentered>
               <CardsRow>
-                <TextCard>
+                <TextCard border>
                   <CardImageOverlay
                     image={securityImage?.childImageSharp?.gatsbyImageData}
                     overlayTitle="Enhanced Security"
@@ -130,7 +120,7 @@ const CustomPage = (props: PageProps) => {
                     </p>
                   </TextCardContent>
                 </TextCard>
-                <TextCard>
+                <TextCard border>
                   <CardImageOverlay
                     image={featuresImage?.childImageSharp?.gatsbyImageData}
                     overlayTitle="Comprehensive Features"
@@ -142,7 +132,7 @@ const CustomPage = (props: PageProps) => {
                     </p>
                   </TextCardContent>
                 </TextCard>
-                <TextCard>
+                <TextCard border>
                   <TextCardContent>
                     <h3>Simple Setup</h3>
                     <p>
@@ -155,10 +145,34 @@ const CustomPage = (props: PageProps) => {
             </SubheaderContent>
           </SubpageSection>
 
-          <SectionDivider />
-
           <SubpageSection>
             <SubheaderContent>
+              <SideBySide reverseOnMobile>
+                <TextElement isBodySmall>
+                  <h3>
+                    Mobile Wallet
+                    <Badge color="palette6">iOS</Badge>
+                    <Badge color="palette1">Android</Badge>
+                  </h3>
+                  <p>
+                    Manage your ALPH tokens on the go with Alephium&apos;s mobile wallet, offering a balance between
+                    security and convenience.
+                  </p>
+                  <p>Features:</p>
+                  <ul>
+                    <li>Real-time balance updates</li>
+                    <li>QR code support for transactions</li>
+                    <li>Biometric security options</li>
+                    <li>WalletConnect integration for dApps</li>
+                  </ul>
+
+                  <p>Download from:</p>
+                  <Button url={wallets?.mobile?.urls?.android ?? ''}>Android Google Play Store</Button>
+                  <Button url={wallets?.mobile?.urls?.ios ?? ''}>iOS App Store </Button>
+                </TextElement>
+                <WalletCarousel images={mobileScreenshots.nodes.map((node) => node.childImageSharp?.gatsbyImageData)} />
+              </SideBySide>
+              <SectionDivider />
               <SideBySide reverseOnMobile>
                 <TextElement isBodySmall>
                   <h3>
@@ -214,32 +228,7 @@ const CustomPage = (props: PageProps) => {
                 />
               </SideBySide>
               <SectionDivider />
-              <SideBySide reverseOnMobile>
-                <TextElement isBodySmall>
-                  <h3>
-                    Mobile Wallet
-                    <Badge color="palette6">iOS</Badge>
-                    <Badge color="palette1">Android</Badge>
-                  </h3>
-                  <p>
-                    Manage your ALPH tokens on the go with Alephium&apos;s mobile wallet, offering a balance between
-                    security and convenience.
-                  </p>
-                  <p>Features:</p>
-                  <ul>
-                    <li>Real-time balance updates</li>
-                    <li>QR code support for transactions</li>
-                    <li>Biometric security options</li>
-                    <li>WalletConnect integration for dApps</li>
-                  </ul>
 
-                  <p>Download from:</p>
-                  <Button url={wallets?.mobile?.urls?.android ?? ''}>Android Google Play Store</Button>
-                  <Button url={wallets?.mobile?.urls?.ios ?? ''}>iOS App Store </Button>
-                </TextElement>
-                <WalletCarousel images={mobileScreenshots.nodes.map((node) => node.childImageSharp?.gatsbyImageData)} />
-              </SideBySide>
-              <SectionDivider />
               <SideBySide reverseOnMobile>
                 <TextElement>
                   <h3>Hardware Wallet Support</h3>
@@ -328,9 +317,13 @@ const WalletCarousel = ({ images }: { images: (IGatsbyImageData | null | undefin
 
 const CarouselContainer = styled.div`
   width: 100%;
-  max-height: 500px;
   position: relative;
   margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: var(--spacing-2);
+  padding-bottom: var(--spacing-6);
+  border-radius: var(--radius);
+  border: 1px solid ${({ theme }) => theme.borderPrimary};
 
   .slick-dots {
     bottom: -30px;

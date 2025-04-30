@@ -17,10 +17,6 @@ export const pageQuery = graphql`
     allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/homepage.md/" } }) {
       nodes {
         frontmatter {
-          intro {
-            ...HomepageIntroSection
-          }
-
           partnersSection {
             ...HomepagePartnersSection
           }
@@ -51,11 +47,7 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
         <>
           <HomepageHeroSection />
 
-          {content?.intro && (
-            <>
-              <HomepageIntroSection {...content.intro} />
-            </>
-          )}
+          <HomepageIntroSection />
 
           <SectionDivider />
 
