@@ -18,6 +18,11 @@ export const deviceBreakPoints = {
 const GlobalStyle = createGlobalStyle`
   ${normalize}
 
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
+  }
+
   :root {
     font-size: 15px;
 
