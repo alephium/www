@@ -15,11 +15,6 @@ import MobileNavigationMenu, { ToggleMobileNavButton } from './NavigationMenuMob
 import SimpleLink from './SimpleLink'
 import TranslateComponent from './TranslateComponent'
 
-const drawerVariants = {
-  closed: { opacity: 0, scaleY: 0.9, y: -6 },
-  open: { opacity: 1, scaleY: 1, y: 0 }
-} as const
-
 interface NavigationMenuProps {
   floating?: boolean
   className?: string
@@ -194,6 +189,7 @@ const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean }>`
   align-items: center;
   justify-content: center;
   z-index: 10000;
+  transition: top 0.3s ease-in-out;
 
   ${({ floating }) =>
     !floating &&
