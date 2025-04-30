@@ -107,7 +107,7 @@ const NavigationItems = ({ className }: { className?: string }) => {
                     item.title && (
                       <DrawerItem key={item.title} isLink={!!item.link}>
                         {item.link ? (
-                          <NavLink key={index} url={item.link} text={item.title} showArrow />
+                          <NavLink key={index} url={item.link} text={item.title} />
                         ) : (
                           <DrawerItemTitle key={index}>{item.title}</DrawerItemTitle>
                         )}
