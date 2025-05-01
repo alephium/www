@@ -25,7 +25,7 @@ export const pageQuery = graphql`
     }
     lighthouseImage: file(relativePath: { eq: "lighthouse.png" }) {
       childImageSharp {
-        gatsbyImageData(quality: 80)
+        gatsbyImageData(quality: 100)
       }
     }
   }
@@ -65,6 +65,7 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
               alt="Lighthouse background"
               style={{ height: '100%' }}
               objectFit="cover"
+              objectPosition="top"
               loading="lazy"
               isBackground
             />
@@ -72,8 +73,8 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
             <TextElement isCentered>
               <h2>This is your moment.</h2>
               <p>
-                Alephium isn’t just a concept - it’s something we build, together.{' '}
-                <strong>There’s a place for you here and we can’t wait to meet you.</strong>
+                Alephium isn&apos;t just a concept - it&apos;s something we build, together.{' '}
+                <strong>There&apos;s a place for you here and we can&apos;t wait to meet you.</strong>
               </p>
               <Button big highlight url="/get-started">
                 Get started

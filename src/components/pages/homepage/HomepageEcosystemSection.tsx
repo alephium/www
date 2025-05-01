@@ -15,46 +15,15 @@ interface Star {
   depth: number
 }
 
-const StarBackground = styled.canvas`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 0;
-`
-
-const Star = styled.div<{ size: number; x: number; y: number; delay: number }>`
-  position: absolute;
-  width: ${(props) => props.size}px;
-  height: ${(props) => props.size}px;
-  left: ${(props) => props.x}%;
-  top: ${(props) => props.y}%;
-  background: radial-gradient(circle at center, ${({ theme }) => theme.textPrimary} 0%, transparent 70%);
-  animation: twinkle ${(props) => 2 + props.delay}s ease-in-out infinite;
-  animation-delay: ${(props) => props.delay}s;
-
-  @keyframes twinkle {
-    0%,
-    100% {
-      opacity: 0.3;
-    }
-    50% {
-      opacity: 1;
-    }
-  }
-`
-
 const HomepageEcosystemSection = () => {
   const [dapps, setDapps] = useState<Array<{ name: string; media: { logoUrl: string } }>>([])
   const [hoverPosition, setHoverPosition] = useState<{ x: number; y: number } | null>(null)
   const [hoveredAppName, setHoveredAppName] = useState<string | null>(null)
   const [isMobile, setIsMobile] = useState(false)
-  const containerRef = useRef<HTMLDivElement>(null)
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const starsRef = useRef<Star[]>([])
   const zIndexOrderRef = useRef<number[]>([])
+  const nebulaRef = useRef<HTMLDivElement>(null)
 
   // Add refs for smooth animation
   const currentOffsetRef = useRef({ x: 0, y: 0 })
@@ -93,7 +62,7 @@ const HomepageEcosystemSection = () => {
     const canvas = canvasRef.current
     if (!canvas) return
 
-    const ctx = canvas.getContext('2d', { alpha: false }) // Optimize canvas performance
+    const ctx = canvas.getContext('2d', { alpha: true }) // Changed to true for transparency
     if (!ctx) return
 
     // Set canvas size
@@ -129,9 +98,10 @@ const HomepageEcosystemSection = () => {
   // Animation loop for stars with inertia
   useEffect(() => {
     const canvas = canvasRef.current
-    if (!canvas) return
+    const nebula = nebulaRef.current
+    if (!canvas || !nebula) return
 
-    const ctx = canvas.getContext('2d', { alpha: false })
+    const ctx = canvas.getContext('2d', { alpha: true }) // Changed to true for transparency
     if (!ctx) return
 
     const animate = (timestamp: number) => {
@@ -154,7 +124,13 @@ const HomepageEcosystemSection = () => {
         y: currentOffsetRef.current.y + (targetOffsetRef.current.y - currentOffsetRef.current.y) * inertia
       }
 
-      // Clear canvas
+      // Update nebula position with slower parallax
+      const nebulaParallax = 0.3 // Slower than stars for depth effect
+      nebula.style.transform = `translate(${currentOffsetRef.current.x * nebulaParallax}px, ${
+        currentOffsetRef.current.y * nebulaParallax
+      }px)`
+
+      // Clear canvas with transparency
       ctx.clearRect(0, 0, canvas.width, canvas.height)
 
       // Draw stars with current offset
@@ -265,7 +241,8 @@ const HomepageEcosystemSection = () => {
   }
 
   return (
-    <SubpageSectionStyled dark>
+    <SubpageSection wide>
+      <NebulaBackground ref={nebulaRef} />
       <StarBackground ref={canvasRef} />
       <div style={{ position: 'relative', zIndex: 1 }}>
         <TextElement isCentered>
@@ -313,11 +290,45 @@ const HomepageEcosystemSection = () => {
           </CenterButtonWrapper>
         </LogosContainer>
       </div>
-    </SubpageSectionStyled>
+    </SubpageSection>
   )
 }
 
 export default HomepageEcosystemSection
+
+const StarBackground = styled.canvas`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+`
+
+const NebulaBackground = styled.div`
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  pointer-events: none;
+  z-index: -1;
+  will-change: transform;
+  transform-origin: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(76, 0, 255, 0.12) 0%, transparent 35%),
+      radial-gradient(circle at 50% 50%, rgba(255, 0, 128, 0.1) 0%, transparent 35%),
+      radial-gradient(circle at 50% 50%, rgba(0, 255, 255, 0.1) 0%, transparent 35%),
+      radial-gradient(circle at 50% 50%, rgba(255, 0, 128, 0.1) 0%, transparent 35%),
+      radial-gradient(circle at 50% 50%, rgba(76, 0, 255, 0.12) 0%, transparent 35%);
+    filter: blur(40px);
+  }
+`
 
 const LogosContainer = styled.div`
   position: relative;
@@ -401,8 +412,4 @@ const CenterButtonWrapper = styled.div`
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-`
-
-const SubpageSectionStyled = styled(SubpageSection)`
-  margin-top: -100px;
 `
