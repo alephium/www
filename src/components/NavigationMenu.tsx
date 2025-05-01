@@ -321,7 +321,7 @@ const Drawer = styled(motion.div)`
   left: -50%;
   right: 0;
   min-width: 250px;
-  background-color: rgba(30, 30, 30, 1);
+  background-color: ${({ theme }) => theme.bgTertiary};
   border-radius: var(--radius-small);
   border: 1px solid ${({ theme }) => theme.borderPrimary};
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);

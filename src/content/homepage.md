@@ -34,42 +34,48 @@ partnersSection:
     - title: 'Alchemy Pay'
       logo: '../images/svgs/alchemy-pay-logo.svg'
       url: https://www.bitcoinassociation.ch/
-    - title: 'Antpool'
-      logo: ''
-      url: 'https://www.antpool.com'
-    - title: 'Bitcoin Association Switzerland'
-      logo: '../images/svgs/bas-logo-white.svg'
-      url: https://www.bitcoinassociation.ch/
+    - title: 'Banxa'
+      logo: '../images/svgs/banxa-logo'
+      url: 'https://www.banxa.com'
+    - title: 'Bitget'
+      logo: '../images/svgs/bitget-logo'
+      url: 'https://www.bitget.com'
     - title: 'Bitmain'
       logo: '../images/svgs/bitmain-logo.svg'
       url: 'https://www.bitmain.com'
     - title: 'Cetacean Capital'
       logo: '../images/logos/cetacean-capital-icon.png'
       url: https://cetacean.capital/
+    - title: 'Dia'
+      logo: '../images/svgs/dia-logo.svg'
+      url: https://www.diadata.org/
     - title: 'Crypto Valley Association'
       logo: '../images/svgs/crypto-valley-association-vector-logo.svg'
       url: https://cryptovalley.swiss/
-    - title: 'Dappnode'
-      logo: '../images/logos/Dappnode-logo-bw.png'
-      url: https://dappnode.io
-    - title: 'Flux Labs'
-      logo: '../images/svgs/flux-seeklogo.com.svg'
-      url: https://runonflux.io/
     - title: 'Gate.io'
       logo: '../images/svgs/gateio-logo.svg'
       url: 'https://www.gate.io'
-    - title: 'Goldshel'
-      logo: '../images/'
-      url: 'https://www.goldshell.com'
-    - title: 'Hodling SA'
-      logo: '../images/svgs/hodling-icon-bw-darkBackground.svg'
-      url: https://www.hodling.ch/
-    - title: 'Leax'
-      logo: '../images/logos/leax.svg'
-      url: https://www.leax.ch/
-    - title: 'UTXO Alliance'
-      logo: '../images/svgs/utxo-aliance-logo-white.svg'
-      url: https://utxo-alliance.org/
+    - title: 'G20'
+      logo: '../images/svgs/g20-logo.svg'
+      url: 'https://www.g20.group'
+    - title: 'IceRiver'
+      logo: '../images/svgs/iceriver-logo.svg'
+      url: https://iceriver.eu/
+    - title: 'Ledger'
+      logo: '../images/svgs/ledger-logo.svg'
+      url: https://www.ledger.com/
+    - title: 'MEXC'
+      logo: '../images/svgs/mexc-logo.svg'
+      url: https://www.mexc.com/
+    - title: 'Primevault'
+      logo: '../images/svgs/primevault-logo.svg'
+      url: https://www.primevault.com/
+    - title: 'SafePal'
+      logo: '../images/svgs/safepal-logo.svg'
+      url: https://www.safepal.com/
+    - title: 'Tangem'
+      logo: '../images/svgs/tangem-logo.svg'
+      url: https://www.tangem.com/
 
 todoListSection:
   title: What's next

@@ -112,7 +112,7 @@ const TextElement = styled.div<TextElementProps>`
 
   > label {
     color: ${({ theme }) => theme.textTertiary};
-    font-size: var(--fontSize-16);
+    font-size: var(--fontSize-18);
     font-weight: var(--fontWeight-semiBold);
     margin-bottom: var(--spacing-2);
     text-transform: uppercase;

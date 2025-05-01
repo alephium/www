@@ -11,6 +11,7 @@ import SubheaderContent from '../../customPageComponents/SubheaderContent'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextCard from '../../customPageComponents/TextCard'
 import TextCardContent from '../../customPageComponents/TextCardContent'
+import TextElement from '../../customPageComponents/TextElement'
 
 export const homepageIntroQuery = graphql`
   query HomepageIntro {
@@ -53,7 +54,7 @@ const HomepageIntroSection = () => {
   const hardcodedCards = useMemo<Card[]>(
     () => [
       {
-        title: 'Get Started',
+        title: 'Exploring',
         description: (
           <>
             Learn more about <strong>Alephium</strong> and start your journey.
@@ -66,7 +67,7 @@ const HomepageIntroSection = () => {
         }
       },
       {
-        title: 'Start Building',
+        title: 'Building',
         description: (
           <>
             Explore the <strong>documentation</strong> and start building.
@@ -79,7 +80,7 @@ const HomepageIntroSection = () => {
         }
       },
       {
-        title: 'Start Contributing',
+        title: 'Contributing',
         description: (
           <>
             Apply for a <strong>grant</strong> to develop your project on Alephium.
@@ -92,7 +93,7 @@ const HomepageIntroSection = () => {
         }
       },
       {
-        title: 'Start Mining',
+        title: 'Mining',
         description: (
           <>
             Start mining <strong>Alephium</strong> and earn rewards.
@@ -133,6 +134,10 @@ const HomepageIntroSection = () => {
           </strong>
         </p>
       </TextElement> */}
+
+      <TextElement isCentered>
+        <label>Start with Alephium</label>
+      </TextElement>
 
       <SubheaderContent isCentered>
         <IntroColumns variants={cardContainerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>

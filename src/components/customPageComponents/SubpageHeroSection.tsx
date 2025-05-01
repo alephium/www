@@ -37,7 +37,7 @@ export default SubpageHeroSection
 
 const SubpageHeroSectionStyled = styled.section<Pick<SubpageHeroSectionProps, 'minHeight' | 'bottomMargin'>>`
   position: relative;
-  min-height: ${({ minHeight }) => minHeight || '70vh'};
+  min-height: ${({ minHeight }) => minHeight || '75vh'};
   margin: auto;
   margin-bottom: ${({ bottomMargin }) => (bottomMargin ? 'var(--spacing-10)' : '0')};
   width: 90vw;
