@@ -126,9 +126,9 @@ const HomepageStatsSection = () => {
     <SubpageSectionStyled wide dark>
       <TextElementStyled>
         <h2>
-          Built to Last.
+          <small>Web3, </small>
           <br />
-          <small>Made for Real Adoption.</small>
+          done right.
         </h2>
       </TextElementStyled>
 

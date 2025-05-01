@@ -246,11 +246,7 @@ const HomepageEcosystemSection = () => {
       <StarBackground ref={canvasRef} />
       <div style={{ position: 'relative', zIndex: 1 }}>
         <TextElement isCentered>
-          <h2>
-            <small>Built to last.</small>
-            <br />
-            Built on Alephium.
-          </h2>
+          <h2>Built on Alephium.</h2>
           <p>
             Alephium is home to pioneers, combining <strong>strong technology and a bustling community</strong> to bring
             the <strong>next generation of decentralized applications to life</strong>.
