@@ -46,6 +46,7 @@ interface Card {
   link: {
     url: string
   }
+  color: string
 }
 
 const HomepageIntroSection = () => {
@@ -64,7 +65,8 @@ const HomepageIntroSection = () => {
         image: lightRays?.childImageSharp?.gatsbyImageData,
         link: {
           url: '/get-started'
-        }
+        },
+        color: 'palette3'
       },
       {
         title: 'Building',
@@ -77,33 +79,36 @@ const HomepageIntroSection = () => {
         image: stream?.childImageSharp?.gatsbyImageData,
         link: {
           url: 'https://docs.alephium.org'
-        }
+        },
+        color: 'palette5'
       },
       {
         title: 'Contributing',
         description: (
           <>
-            Apply for a <strong>grant</strong> to develop your project on Alephium.
+            <strong>Apply for a grant</strong> to develop your project on Alephium.
           </>
         ),
         actionText: 'Start Contributing',
         image: greenWater?.childImageSharp?.gatsbyImageData,
         link: {
           url: '/grants'
-        }
+        },
+        color: 'palette1'
       },
       {
         title: 'Mining',
         description: (
           <>
-            Start mining <strong>Alephium</strong> and earn rewards.
+            <strong>Start mining</strong> Alephium and earn rewards.
           </>
         ),
         actionText: 'Start Mining',
         image: goldStream?.childImageSharp?.gatsbyImageData,
         link: {
           url: 'https://docs.alephium.org/mining'
-        }
+        },
+        color: 'palette2'
       }
     ],
     [
@@ -143,7 +148,7 @@ const HomepageIntroSection = () => {
         <IntroColumns variants={cardContainerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
           {hardcodedCards.map((card) => (
             <TextCard isAnimated border variants={cardVariants} key={card.title}>
-              <CardImageOverlay image={card.image} overlayTitle={card.title} />
+              <CardImageOverlay image={card.image} overlayTitle={card.title} paletteColor={card.color} />
               <TextCardContent>
                 <p>{card.description}</p>
                 <Button url={card.link.url} squared highlight>
