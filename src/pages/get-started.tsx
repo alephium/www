@@ -107,29 +107,14 @@ const CustomPage = (props: PageProps) => {
 
           <SubpageSection>
             <SideBySide>
-              <TextElement>
-                <h2>What is Alephium?</h2>
+              <TextElement isCentered>
+                <h2>Why Alephium?</h2>
                 <p>
-                  <strong>Alephium is a next-generation Layer 1 blockchain</strong>, designed to deliver unmatched
-                  security without compromising scalability or energy efficiency.
-                </p>
-                <p>
-                  <strong>
-                    Applications built on Alephium run faster, cost less, and inherit the resilience of Proof-of-Work,
-                    ensuring your project is safe and scalable from day one.
-                  </strong>{' '}
-                  Whether you&apos;re launching dApps, creating digital assets, or integrating Web3 infrastructure,
-                  Alephium provides the robust security, flexibility and performance needed to push boundaries.
-                </p>
-                <p>
-                  <strong>It’s not just about building - it’s about building smarter.</strong> Alephium eliminates
-                  common smart contract vulnerabilities, reduces energy consumption by 87% compared to traditional PoW,
-                  and <strong>ensures long-term scalability without compromising security.</strong>
+                  Alephium combines <strong>the resilience of Proof-of-Work</strong> with{' '}
+                  <strong>sustainable high performance</strong>, and{' '}
+                  <strong>smart contracts that are both safe and easy to use</strong> for unmatched Web3 development.
                 </p>
               </TextElement>
-              <video muted playsInline preload="auto" autoPlay loop style={{ width: '100%', maxHeight: 500 }}>
-                <source src={blobVideoUrl} type="video/mp4" />
-              </video>
             </SideBySide>
           </SubpageSection>
 
@@ -137,8 +122,8 @@ const CustomPage = (props: PageProps) => {
             <h2>Wallets</h2>
             <hr />
             <p>
-              <strong>The wallet is your gateway to the Alephium ecosystem.</strong> Store, send, and receive ALPH,
-              manage digital assets (stablecoins, NFTs) and seamlessly connect to dApps.
+              <strong>Your gateway to the Alephium ecosystem.</strong> Store, send, receive, swap, borrow, lend, and
+              more!
             </p>
             <Button big url="/wallets">
               Download a wallet
@@ -193,14 +178,14 @@ const CustomPage = (props: PageProps) => {
 
             <SubheaderContent>
               <Grid columns={2} isCentered gap="small">
-                <TextCard url="https://docs.alephium.org/">
+                <TextCard border url="https://docs.alephium.org/">
                   <TextCardContent>
                     <ImageIcon image={documentationIcon?.childImageSharp?.gatsbyImageData} rounded />
                     <h3>Documentation</h3>
                     <p>Documentation to get you going quick and easy.</p>
                   </TextCardContent>
                 </TextCard>
-                <TextCard url="/grants">
+                <TextCard border url="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md">
                   <TextCardContent>
                     <ImageIcon image={goldIcon?.childImageSharp?.gatsbyImageData} rounded />
                     <h3>Grants</h3>
@@ -237,10 +222,7 @@ const CustomPage = (props: PageProps) => {
             <TextElement isCentered>
               <h2>Explore the ecosystem</h2>
               <p>
-                <strong>
-                  Discover innovative dApps and tokenized assets - trade, borrow, lend or earn ALPH, by engaging with
-                  DeFi protocols or contributing to the ecosystem.
-                </strong>
+                <strong>All the dApps, tools, integrations, partners and more, in one place.</strong>
               </p>
               <Button big highlight url="https://alph.land">
                 See all apps
@@ -260,10 +242,7 @@ const CustomPage = (props: PageProps) => {
             </h2>
             <hr />
             <p>
-              ALPH mining is <strong>efficient, accessible, and built for long-term sustainability</strong>. Powered by
-              Proof-of-Less-Work,{' '}
-              <strong>Alephium reduces energy consumption by 87% compared to traditional PoW</strong>, making mining
-              more sustainable and rewarding.
+              ALPH mining is <strong>efficient, accessible, and built for long-term sustainability.</strong>
             </p>
             <ul>
               <li>Clear and fair emissions schedule</li>

@@ -123,7 +123,7 @@ const HomepageStatsSection = () => {
   }
 
   return (
-    <SubpageSectionStyled wide dark>
+    <SubpageSectionStyled wide contrasted>
       <TextElementStyled>
         <h2>
           <small>Web3, </small>

@@ -10,7 +10,7 @@ interface SubpageSectionProps extends HTMLAttributes<HTMLDivElement> {
   fullWidth?: boolean
   wide?: boolean
   narrow?: boolean
-  dark?: boolean
+  contrasted?: boolean
   border?: boolean
   isCentered?: boolean
 }
@@ -24,15 +24,17 @@ const SubpageSection = ({ children, Parallax, ...props }: SubpageSectionProps) =
 
 export default SubpageSection
 
-const SubpageSectionStyled = styled(PageSectionContainer)<Pick<SubpageSectionProps, 'dark' | 'isCentered' | 'border'>>`
+const SubpageSectionStyled = styled(PageSectionContainer)<
+  Pick<SubpageSectionProps, 'contrasted' | 'isCentered' | 'border'>
+>`
   position: relative;
   justify-content: ${({ isCentered }) => (isCentered ? 'center' : 'flex-start')};
   padding-top: var(--spacing-14);
   padding-bottom: var(--spacing-14);
-  background-color: ${({ theme, dark }) =>
-    dark ? colord(theme.bgTertiary).darken(0.05).toRgbString() : 'transparent'};
+  background-color: ${({ theme, contrasted }) =>
+    contrasted ? colord(theme.bgTertiary).lighten(0.1).toRgbString() : 'transparent'};
   border-radius: ${({ wide }) => (wide ? '0' : 'var(--radius-big)')};
-  border: ${({ theme, dark }) => (dark ? `1px solid ${theme.borderPrimary}` : 'none')};
+  border: ${({ theme, contrasted }) => (contrasted ? `1px solid ${theme.borderPrimary}` : 'none')};
   overflow: hidden;
 
   ${({ border }) =>
