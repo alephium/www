@@ -1,5 +1,5 @@
 import { forwardRef, ReactNode } from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 import { deviceBreakPoints } from '../../styles/global-style'
 import PageSectionContainer from '../PageSectionContainer'
@@ -14,17 +14,18 @@ export interface SubpageHeroSectionProps extends React.HTMLAttributes<HTMLElemen
   alignContent?: SubpageHeroSectionAlignContent
   bottomMargin?: boolean
   minHeight?: string
+  split?: boolean
 }
 
 const SubpageHeroSection = forwardRef<HTMLElement, SubpageHeroSectionProps>(function SubpageHeroSection(
-  { children, mediaContent, alignContent, ...props },
+  { children, mediaContent, alignContent, split, ...props },
   ref
 ) {
   return (
-    <SubpageHeroSectionStyled ref={ref} {...props}>
-      <BackgroundMediaWrapper>{mediaContent}</BackgroundMediaWrapper>
-      <HeroPageSectionContainer alignContent={alignContent}>
-        <ContentWrapper alignContent={alignContent}>
+    <SubpageHeroSectionStyled ref={ref} split={split} {...props}>
+      <BackgroundMediaWrapper split={split}>{mediaContent}</BackgroundMediaWrapper>
+      <HeroPageSectionContainer alignContent={alignContent} split={split}>
+        <ContentWrapper alignContent={alignContent} split={split}>
           <TitleShadow />
           <TextElementStyled>{children}</TextElementStyled>
         </ContentWrapper>
@@ -35,17 +36,20 @@ const SubpageHeroSection = forwardRef<HTMLElement, SubpageHeroSectionProps>(func
 
 export default SubpageHeroSection
 
-const SubpageHeroSectionStyled = styled.section<Pick<SubpageHeroSectionProps, 'minHeight' | 'bottomMargin'>>`
+const SubpageHeroSectionStyled = styled.section<Pick<SubpageHeroSectionProps, 'minHeight' | 'bottomMargin' | 'split'>>`
   position: relative;
-  min-height: ${({ minHeight }) => minHeight || '75vh'};
+  height: ${({ split, minHeight }) => (split ? minHeight || '75vh' : 'auto')};
+  min-height: ${({ split, minHeight }) => (split ? 'unset' : minHeight || '75vh')};
   margin: auto;
   margin-bottom: ${({ bottomMargin }) => (bottomMargin ? 'var(--spacing-10)' : '0')};
   width: 90vw;
   overflow: hidden;
   transition: all 0.4s ease-in;
   display: flex;
+  align-items: stretch;
   border-radius: var(--radius-big);
-  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5)
+  background-color: ${({ theme, split }) => (split ? theme.bgSecondary : 'transparent')};
 
   &::before {
     content: '';
@@ -58,6 +62,12 @@ const SubpageHeroSectionStyled = styled.section<Pick<SubpageHeroSectionProps, 'm
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     mask-composite: exclude;
     -webkit-mask-composite: xor;
+  }
+
+  @media ${deviceBreakPoints.mobile} {
+    flex-direction: column;
+    height: auto;
+    min-height: ${({ minHeight }) => minHeight || '75vh'};
   }
 `
 
@@ -93,16 +103,32 @@ const TextElementStyled = styled(TextElement)`
   }
 `
 
-const HeroPageSectionContainer = styled(PageSectionContainer)<Pick<SubpageHeroSectionProps, 'alignContent'>>`
+const HeroPageSectionContainer = styled(PageSectionContainer)<Pick<SubpageHeroSectionProps, 'alignContent' | 'split'>>`
   flex-direction: column;
   position: relative;
   display: flex;
   flex: ${({ alignContent }) => (alignContent === 'center' ? 'none' : '1')};
   justify-content: ${({ alignContent }) =>
     alignContent === 'bottom' ? 'flex-end' : alignContent === 'center' ? 'center' : 'flex-start'};
+  height: ${({ split }) => (split ? '100%' : 'auto')};
+  align-self: stretch;
+
+  ${({ split }) =>
+    split &&
+    `
+    flex: none;
+    width: 50%;
+    margin-left: auto;
+  `}
+
+  @media ${deviceBreakPoints.mobile} {
+    width: 100%;
+    margin-left: 0;
+    height: auto;
+  }
 `
 
-const ContentWrapper = styled.div<Pick<SubpageHeroSectionProps, 'alignContent'>>`
+const ContentWrapper = styled.div<Pick<SubpageHeroSectionProps, 'alignContent' | 'split'>>`
   margin-right: ${({ alignContent }) => (alignContent === 'center' ? 'initial' : 'auto')};
   position: relative;
   margin-top: 5%;
@@ -111,17 +137,44 @@ const ContentWrapper = styled.div<Pick<SubpageHeroSectionProps, 'alignContent'>>
   flex-direction: column;
   z-index: 2;
 
+  ${({ split }) =>
+    split &&
+    `
+    margin-right: initial;
+  `}
+
   @media ${deviceBreakPoints.mobile} {
     padding: var(--spacing-4);
   }
 `
 
-const BackgroundMediaWrapper = styled.div`
-  position: absolute;
+const BackgroundMediaWrapper = styled.div<Pick<SubpageHeroSectionProps, 'split'>>`
+  position: ${({ split }) => (split ? 'relative' : 'absolute')};
   top: 0;
   left: 0;
-  width: 100%;
+  width: ${({ split }) => (split ? '50%' : '100%')};
   height: 100%;
-  z-index: -1;
+  z-index: ${({ split }) => (split ? '1' : '-1')};
   overflow: hidden;
+  align-self: stretch;
+
+  ${({ split }) =>
+    split &&
+    css`
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      > * {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    `}
+
+  @media ${deviceBreakPoints.mobile} {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+  }
 `

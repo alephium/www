@@ -146,7 +146,7 @@ const cardStyles = ({ border, backgroundColor }: { border?: boolean; backgroundC
       content: '';
       position: absolute;
       inset: 0;
-      border: 3px solid ${({ theme }) => theme.borderPrimary};
+      border: 2px solid ${({ theme }) => theme.borderPrimary};
       border-radius: inherit;
       backdrop-filter: saturate(200%) brightness(1.1);
       -webkit-backdrop-filter: saturate(200%) brightness(1.1);

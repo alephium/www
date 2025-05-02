@@ -118,7 +118,7 @@ const CustomPage = (props: PageProps) => {
             </SideBySide>
           </SubpageSection>
 
-          <SubpageImageHeroSection backgroundImage={treasureImage} minHeight="660px">
+          <SubpageImageHeroSection backgroundImage={treasureImage} minHeight="660px" split>
             <h2>Wallets</h2>
             <hr />
             <p>
@@ -178,14 +178,14 @@ const CustomPage = (props: PageProps) => {
 
             <SubheaderContent>
               <Grid columns={2} isCentered gap="small">
-                <TextCard border url="https://docs.alephium.org/">
+                <TextCard url="https://docs.alephium.org/">
                   <TextCardContent>
                     <ImageIcon image={documentationIcon?.childImageSharp?.gatsbyImageData} rounded />
                     <h3>Documentation</h3>
                     <p>Documentation to get you going quick and easy.</p>
                   </TextCardContent>
                 </TextCard>
-                <TextCard border url="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md">
+                <TextCard url="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md">
                   <TextCardContent>
                     <ImageIcon image={goldIcon?.childImageSharp?.gatsbyImageData} rounded />
                     <h3>Grants</h3>
