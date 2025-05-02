@@ -13,7 +13,6 @@ import { notEmpty } from '../utils/misc'
 import NavigationMenuSocials from './navigation/NavigationMenuSocials'
 import MobileNavigationMenu, { ToggleMobileNavButton } from './NavigationMenuMobile'
 import SimpleLink from './SimpleLink'
-import ThemeToggle from './ThemeToggle'
 import TranslateComponent from './TranslateComponent'
 
 interface NavigationMenuProps {
@@ -114,7 +113,7 @@ const NavigationItems = ({ className }: { className?: string }) => {
             )
         )}
       </MenuItems>
-      <ThemeToggle />
+      {/*<ThemeToggle />*/}
       <NavigationDrawer Icon={<RiTranslate2 color={theme.textSecondary} size={20} />}>
         <TranslateComponent />
       </NavigationDrawer>
