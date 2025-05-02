@@ -1,3 +1,4 @@
+import { colord } from 'colord'
 import { HTMLAttributes, ReactNode } from 'react'
 import styled, { css } from 'styled-components'
 
@@ -28,7 +29,8 @@ const SubpageSectionStyled = styled(PageSectionContainer)<Pick<SubpageSectionPro
   justify-content: ${({ isCentered }) => (isCentered ? 'center' : 'flex-start')};
   padding-top: var(--spacing-14);
   padding-bottom: var(--spacing-14);
-  background-color: ${({ dark }) => (dark ? 'rgba(0, 0, 0, 0.3)' : 'transparent')};
+  background-color: ${({ theme, dark }) =>
+    dark ? colord(theme.bgTertiary).darken(0.05).toRgbString() : 'transparent'};
   border-radius: ${({ wide }) => (wide ? '0' : 'var(--radius-big)')};
   border: ${({ theme, dark }) => (dark ? `1px solid ${theme.borderPrimary}` : 'none')};
   overflow: hidden;
