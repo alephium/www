@@ -8,7 +8,6 @@ import SideBySide from '../components/customPageComponents/SideBySide'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
 import SubpageImageHeroSection from '../components/customPageComponents/SubpageImageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
-import SubpageVideoHeroSection from '../components/customPageComponents/SubpageVideoHeroSection'
 import TextCard from '../components/customPageComponents/TextCard'
 import TextCardContent from '../components/customPageComponents/TextCardContent'
 import TextElement from '../components/customPageComponents/TextElement'
@@ -83,26 +82,19 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageVideoHeroSection poster={heroImage} video={heroVideo}>
-            <h1>
-              Get Started
-              <br />
-              with Alephium
-            </h1>
-            <p>
-              <strong>Everything you need to begin your journey in the Alephium ecosystem.</strong>
-            </p>
-          </SubpageVideoHeroSection>
-
           <SectionDivider />
 
           <SubpageSection bgColor="3" wide border>
             <TextElement isCentered>
-              <h2>Why Alephium?</h2>
+              <h2>
+                Get Started
+                <br />
+                <small>with Alephium</small>
+              </h2>
               <p>
-                Alephium combines <strong>the resilience of Proof-of-Work</strong> with{' '}
-                <strong>sustainable high performance</strong>, and{' '}
-                <strong>smart contracts that are both safe and easy to use</strong> for unmatched Web3 development.
+                Here&apos;s everything you need
+                <br />
+                <strong>to begin your journey in the Alephium ecosystem.</strong>
               </p>
             </TextElement>
           </SubpageSection>

@@ -144,7 +144,10 @@ const ContentWrapper = styled.div<Pick<SubpageHeroSectionProps, 'alignContent' |
   ${({ split }) =>
     split &&
     `
-    margin-right: initial;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   `}
 
   @media ${deviceBreakPoints.mobile} {
