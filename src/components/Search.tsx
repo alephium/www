@@ -27,7 +27,7 @@ const SearchInput = styled.input`
   padding: 12px 16px 12px 40px;
   border: 1px solid ${({ theme }) => theme.borderPrimary};
   border-radius: 8px;
-  background: ${({ theme }) => theme.bgPrimary};
+  background: ${({ theme }) => theme.surface1};
   color: ${({ theme }) => theme.textPrimary};
   font-size: 16px;
   transition: all 0.2s ease;

@@ -31,7 +31,7 @@ const ScrollToTopButton = styled.div`
   align-items: center;
   justify-content: center;
 
-  background-color: ${({ theme }) => theme.bgPrimary};
+  background-color: ${({ theme }) => theme.surface1};
   color: ${({ theme }) => theme.textSecondary};
   border-radius: 100px;
   border: 1px solid ${({ theme }) => theme.borderPrimary};

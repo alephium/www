@@ -15,11 +15,11 @@ const BoxStyles = css<ClickableBoxProps>`
   display: flex;
   align-items: ${({ align }) => (align === 'top' ? 'flex-start' : 'center')};
   gap: var(--spacing-4);
-  background-color: ${({ theme }) => theme.bgSecondary};
+  background-color: ${({ theme }) => theme.surface2};
   border-radius: var(--radius);
   padding: var(--spacing-2);
   &:hover {
-    background-color: ${({ theme }) => theme.bgPrimary};
+    background-color: ${({ theme }) => theme.surface1};
   }
 
   p + p {

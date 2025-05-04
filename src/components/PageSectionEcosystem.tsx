@@ -67,7 +67,7 @@ const HomepageEcosystemSection = ({
 
   return (
     <section className={className}>
-      <SectionTextHeader title={title} subtitle={subtitle} bigSubtitle bigText />
+      <SectionTextHeader titleRows={[title]} subtitleRows={[subtitle]} bigSubtitle bigText />
       <SectionContainer>
         <Subsections>
           {subsections.map(({ title, description, image, items }) => (
@@ -255,7 +255,7 @@ const SubsectionItem = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${({ theme }) => theme.bgPrimary};
+  background-color: ${({ theme }) => theme.surface1};
   box-sizing: border-box;
   border-radius: 16px;
   font-size: 13px;
@@ -279,11 +279,11 @@ const ExchangeItem = styled.div`
   gap: var(--spacing-2);
   padding: var(--spacing-2);
   border-radius: 16px;
-  background-color: ${({ theme }) => theme.bgPrimary};
+  background-color: ${({ theme }) => theme.surface1};
   transition: all 0.2s ease-out;
 
   &:hover {
-    background-color: ${({ theme }) => theme.bgSurface};
+    background-color: ${({ theme }) => theme.surface2};
   }
 `
 

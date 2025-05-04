@@ -46,7 +46,7 @@ const CardImageOverlayStyled = styled.div<Pick<CardImageOverlayProps, 'rounded'>
   min-height: 140px;
   border-radius: ${({ rounded }) => (rounded ? 'var(--radius-small)' : '0')};
   overflow: hidden;
-  background-color: ${({ theme }) => theme.bgSecondary};
+  background-color: ${({ theme }) => theme.surface2};
 `
 
 const ImageContainer = styled.div`

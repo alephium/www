@@ -59,7 +59,7 @@ export default PageSectionMilestones
 
 const SectionWrapper = styled.section`
   padding-top: var(--spacing-16);
-  background-color: ${({ theme }) => theme.bgTertiary};
+  background-color: ${({ theme }) => theme.background1};
 `
 
 const Centered = styled.div`

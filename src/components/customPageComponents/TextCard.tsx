@@ -126,7 +126,7 @@ const cardStyles = ({ border, bgColor }: { border?: boolean; bgColor?: 'secondar
   position: relative;
   flex-direction: column;
   border-radius: var(--radius);
-  background-color: ${({ theme }) => (bgColor === 'tertiary' ? theme.bgTertiary : theme.bgSecondary)};
+  background-color: ${({ theme }) => (bgColor === 'tertiary' ? theme.background1 : theme.surface2)};
   background-clip: padding-box;
   text-decoration: none;
   transition: all 0.1s ease-out;

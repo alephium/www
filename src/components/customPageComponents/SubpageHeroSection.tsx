@@ -115,7 +115,7 @@ const HeroPageSectionContainer = styled(PageSectionContainer)<Pick<SubpageHeroSe
   height: ${({ split }) => (split ? '100%' : 'auto')};
   align-self: stretch;
   border-radius: var(--radius-big);
-  background-color: ${({ theme, split }) => (split ? theme.bgSecondary : 'transparent')};
+  background-color: ${({ theme, split }) => (split ? theme.surface2 : 'transparent')};
 
   ${({ split }) =>
     split &&

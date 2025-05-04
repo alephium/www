@@ -2,7 +2,7 @@ import { sortBy } from 'lodash'
 import { useEffect, useState } from 'react'
 import styled, { css } from 'styled-components'
 
-import { deviceBreakPoints, deviceSizes } from '../styles/global-style'
+import { deviceSizes } from '../styles/global-style'
 
 type TimelineEntry = {
   row: number
@@ -25,6 +25,39 @@ export type Timeline = {
 type Props = {
   timelines: Timeline[]
   detailed: boolean
+}
+
+type LineStartsEndsProps = {
+  headings: string[]
+  starts?: boolean
+  ends?: boolean
+  isSingle?: boolean
+  height?: number
+}
+
+type YearProps = {
+  value: string
+  headings: string[]
+  isSingle?: boolean
+}
+
+type TrackProps = {
+  forHeading: string
+  entry?: TimelineEntry
+}
+
+type EntryProps = {
+  right?: boolean
+  isSingle?: boolean
+}
+
+type DataProps = {
+  right?: boolean
+  hasBorder?: boolean
+}
+
+type TextProps = {
+  isMajor?: boolean
 }
 
 const DualTimeline = ({ timelines, detailed }: Props) => {
@@ -70,17 +103,17 @@ const DualTimelineDesktop = ({ timelines, detailed }: Props) => {
         <section key={year}>
           <Year value={year} headings={headings} />
           <Entries>
-            {sortMerge(entries, timelines[1]?.years[index]?.entries ?? []).map(([entryA, entryB], index) => (
+            {sortMerge(entries || [], timelines[1]?.years[index]?.entries || []).map(([entryA, entryB], index) => (
               <Pair key={index}>
                 <Entry right>
                   {entryA && (
-                    <Data right hasBorder={entryA.isMajor && entryA.content}>
-                      <Text isMajor={entryA?.isMajor}>{entryA.text}</Text>
+                    <Data right hasBorder={entryA.isMajor && !!entryA.content}>
+                      <Text isMajor={entryA.isMajor}>{entryA.text}</Text>
                       <When>{entryA.when}</When>
                       {entryA.content && (
                         <DetailedContentList>
                           {entryA.content.map((item, index) => (
-                            <ContentItem key={index}>{item}</ContentItem>
+                            <ContentItem key={index}>{item.text}</ContentItem>
                           ))}
                         </DetailedContentList>
                       )}
@@ -91,13 +124,13 @@ const DualTimelineDesktop = ({ timelines, detailed }: Props) => {
                 <Entry>
                   <Track forHeading={headings[1]} entry={entryB} />
                   {entryB && (
-                    <Data hasBorder={entryB.isMajor && entryB.content}>
+                    <Data hasBorder={entryB.isMajor && !!entryB.content}>
                       <Text isMajor={entryB.isMajor}>{entryB.text}</Text>
                       <When>{entryB.when}</When>
                       {entryB.content && (
                         <DetailedContentList>
                           {entryB.content.map((item, index) => (
-                            <ContentItem key={index}>{item}</ContentItem>
+                            <ContentItem key={index}>{item.text}</ContentItem>
                           ))}
                         </DetailedContentList>
                       )}
@@ -124,7 +157,7 @@ const DualTimelineMobile = ({ timelines, detailed }: Props) => {
       years[year][index] = { title: timeline.title, entries }
     })
     return years
-  }, {})
+  }, {} as Record<string, { title: string; entries?: TimelineEntry[] }[]>)
 
   // The track will be 3 'm' length, exactly how "3em" works 🙂
   const trackTitle = 'mmm'
@@ -149,9 +182,9 @@ const DualTimelineMobile = ({ timelines, detailed }: Props) => {
               )}
               {entries?.map((entry, index) => (
                 <Entry isSingle key={index}>
-                  <Track forHeading={[trackTitle]} entry={entry} />
+                  <Track forHeading={trackTitle} entry={entry} />
                   <Data>
-                    <Text isMajor={entry?.isMajor}>{entry.text}</Text>
+                    <Text isMajor={entry.isMajor}>{entry.text}</Text>
                     <When>{entry.when}</When>
                   </Data>
                 </Entry>
@@ -166,7 +199,7 @@ const DualTimelineMobile = ({ timelines, detailed }: Props) => {
   )
 }
 
-const Year = ({ value, headings, isSingle }) =>
+const Year = ({ value, headings, isSingle }: YearProps) =>
   !isSingle ? (
     <YearHeader>
       <Pair>
@@ -190,16 +223,18 @@ const Year = ({ value, headings, isSingle }) =>
     </YearHeader>
   )
 
-const LineStartsEnds = ({ headings, starts, ends, isSingle, height }) =>
+const LineStartsEnds = ({ headings, starts, ends, isSingle, height }: LineStartsEndsProps) =>
   isSingle ? (
-    headings.map((text, index) => (
-      <Entry key={index}>
-        <TrackContainer>
-          <HeadingTextForWidthExpansion>{text}</HeadingTextForWidthExpansion>
-          {(starts && <LineStart />) || (ends && <LineEnd />) || <LineExtra height={height} />}
-        </TrackContainer>
-      </Entry>
-    ))
+    <>
+      {headings.map((text, index) => (
+        <Entry key={index}>
+          <TrackContainer>
+            <HeadingTextForWidthExpansion>{text}</HeadingTextForWidthExpansion>
+            {(starts && <LineStart />) || (ends && <LineEnd />) || <LineExtra height={height} />}
+          </TrackContainer>
+        </Entry>
+      ))}
+    </>
   ) : (
     <Entries>
       <Pair>
@@ -215,7 +250,7 @@ const LineStartsEnds = ({ headings, starts, ends, isSingle, height }) =>
     </Entries>
   )
 
-const Track = ({ forHeading, entry }) => (
+const Track = ({ forHeading, entry }: TrackProps) => (
   <TrackContainer>
     <HeadingTextForWidthExpansion>{forHeading}</HeadingTextForWidthExpansion>
     <Piece>{entry && <Dot isMajor={entry.isMajor} />}</Piece>
@@ -234,7 +269,7 @@ const filterMajorEvents = (timelines: Timeline[]): Timeline[] =>
 const headerHeight = 60
 const trackWidth = 90
 
-const Text = styled.div`
+const Text = styled.div<TextProps>`
   ${({ isMajor }) =>
     isMajor &&
     css`
@@ -248,273 +283,180 @@ const Text = styled.div`
 const When = styled.div`
   color: ${({ theme }) => theme.textPrimary};
   font-weight: var(--fontWeight-normal);
-  margin-top: var(--spacing-1);
-`
-
-const DetailedContentList = styled.ul`
-  padding: 0 15px;
-`
-
-const ContentItem = styled.li`
-  color: ${({ theme }) => theme.textSecondary};
-  font-weight: var(--fontWeight-normal);
-  margin-top: var(--spacing-1);
 `
 
 const Container = styled.div<{ detailed: boolean }>`
-  width: 100vw;
-  margin-bottom: var(--spacing-16);
-
-  ${Text} {
-    ${({ detailed }) =>
-      !detailed &&
-      css`
-        background: linear-gradient(30deg, #1cc2ff 0%, #2a63ff 70%, #436cff 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      `}
-  }
-
-  ${When} {
-    ${({ detailed, theme }) =>
-      !detailed &&
-      css`
-        color: ${theme.textPrimary};
-      `}
-  }
-`
-
-const Piece = styled.div`
-  display: flex;
-  align-items: center;
-  width: 5px;
-  height: 100%;
-  background-color: ${({ theme }) => theme.textTertiary};
-`
-
-const Dot = styled.div`
   position: relative;
-  left: -7px;
-  top: calc((18px + 4px) / -2);
-
-  ::after {
-    width: 13px;
-    height: 13px;
-    transform: translateY(60%);
-    border-radius: 100%;
-    background: ${({ isMajor, theme }) => (isMajor ? '#2a8aff' : theme.textPrimary)};
-    border: 3px solid black;
-    position: absolute;
-    content: '';
-    display: block;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
-  }
-`
-
-const Data = styled.div<{ hasBorder?: boolean }>`
-  display: flex;
-  width: 300px;
-  line-height: 22px;
-  flex-direction: column;
-  padding: var(--spacing-2);
-  border-radius: 9px;
-  margin: var(--spacing-2);
-  background-color: ${({ theme }) => theme.bgSecondary};
-  box-shadow: ${({ hasBorder }) => (hasBorder ? `0 0 10px 1px rgba(42, 138, 255, 0.5)` : 'none')};
-  border: ${({ hasBorder }) => (hasBorder ? `1px solid rgb(42, 138, 255)` : 'none')};
-
-  ${({ isSingle }) =>
-    isSingle &&
-    `
-    position: relative;
-    ${({ right }) => (right ? 'right: -3rem;' : 'left: -2rem')}
-  `}
-
-  @media ${deviceBreakPoints.smallMobile} {
-    margin: var(--spacing-2) var(--spacing-2) 0 0;
-  }
-`
-
-const LineExtra = styled.div`
-  width: 5px;
-  height: ${({ height }) => (height ? height : '8px')};
-  background-color: ${({ theme }) => theme.textTertiary};
-`
-
-const LineEnd = styled.div`
-  width: 5px;
-  height: 5px;
-  border-radius: 0 0 50% 50%;
-  background-color: ${({ theme }) => theme.textTertiary};
-`
-
-const LineStart = styled.div`
-  width: 5px;
-  height: 5px;
-  border-radius: 50% 50% 0 0;
-  background-color: ${({ theme }) => theme.textTertiary};
-`
-
-const HeadingTextForWidthExpansion = styled.div`
-  visibility: hidden;
-  height: 0;
-  white-space: nowrap;
-  font-weight: var(--fontWeight-semiBold);
-  font-size: var(--fontSize-28);
-`
-
-const TrackContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-self: stretch;
-  width: ${trackWidth}px;
-  min-width: ${trackWidth}px;
-`
-
-const Entry = styled.div`
-  width: ${({ isSingle }) => (isSingle ? '100%' : '50%')};
-  display: flex;
-  align-items: center;
-  align-self: stretch;
-  justify-content: ${({ right }) => (right ? 'right' : 'left')};
-  font-weight: var(--fontWeight-semiBold);
-  font-size: var(--fontSize-18);
-`
-
-const Pair = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`
-
-const Entries = styled.div`
-  display: flex;
-  width: 100%;
-  margin: auto;
-  justify-content: center;
-  flex-direction: column;
-`
-
-const yearSmallMobileBreakpoint = '(max-width: 510px)'
-const yearRowPositionDesktop = '0px'
-const yearRowPositionMobile = '0px'
-const yearRowPositionSmallMobile = '0px'
-
-const YearHeader = styled.div`
-  position: sticky;
-  display: flex;
-  top: ${yearRowPositionDesktop};
-  z-index: 3;
-  height: ${headerHeight}px;
-  background-color: ${({ theme }) => theme.bgTertiary};
-
-  > * {
-    flex: 1;
-  }
-
-  @media ${deviceBreakPoints.mobile} {
-    top: ${yearRowPositionMobile};
-  }
-
-  @media ${yearSmallMobileBreakpoint} {
-    top: ${yearRowPositionSmallMobile};
-  }
-`
-
-const YearDate = styled.div`
-  width: 100%;
-  font-weight: var(--fontWeight-semiBold);
-  font-size: var(--fontSize-28);
-  padding: var(--spacing-3);
-
-  @media ${deviceBreakPoints.ipad} {
-    transform: translateX(calc(50vw - 50%));
-    text-align: center;
-  }
-
-  @media ${deviceBreakPoints.smallMobile} {
-    text-align: right;
-    transform: none;
-  }
-`
-
-const YearLine = styled.div`
-  height: 1px;
-  background-color: ${({ theme }) => theme.separator};
-  width: 100%;
-  position: absolute;
-  bottom: 0;
+  padding: 0 var(--spacing-4);
+  margin: 0 auto;
+  max-width: var(--page-width);
+  padding-bottom: var(--spacing-16);
 `
 
 const Header = styled.div`
-  display: flex;
   position: sticky;
-  top: ${yearRowPositionDesktop};
-  z-index: 4;
-
-  @media ${deviceBreakPoints.mobile} {
-    top: ${yearRowPositionMobile};
-  }
-
-  @media ${yearSmallMobileBreakpoint} {
-    top: ${yearRowPositionSmallMobile};
-  }
-`
-
-const Headings = styled.div`
-  flex: 1;
-  display: flex;
-  align-items: center;
-  gap: calc(${trackWidth}px * 2);
+  top: 0;
+  z-index: 3;
   height: ${headerHeight}px;
-`
-
-const Heading = styled.div<{ right: boolean }>`
-  text-align: ${({ right }) => (right ? 'right' : 'left')};
-  font-weight: var(--fontWeight-semiBold);
-  font-size: var(--fontSize-28);
-  flex: 1;
-
-  @media ${deviceBreakPoints.smallMobile} {
-    padding-top: var(--spacing-8);
-  }
+  background-color: ${({ theme }) => theme.background1};
 `
 
 const HeaderStickyBackground = styled.div`
   position: sticky;
-  top: ${yearRowPositionDesktop};
-  width: 100%;
+  top: 0;
+  z-index: 3;
   height: ${headerHeight}px;
-  z-index: 1;
-  backdrop-filter: blur(20px);
+  background-color: ${({ theme }) => theme.background1};
+`
 
-  @media ${deviceBreakPoints.mobile} {
-    top: ${yearRowPositionMobile};
-  }
+const Headings = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding: 0 var(--spacing-4);
+  height: 100%;
+  align-items: center;
+`
 
-  @media ${yearSmallMobileBreakpoint} {
-    top: ${yearRowPositionSmallMobile};
-  }
+const Heading = styled.div<{ right?: boolean; isSingle?: boolean }>`
+  color: ${({ theme }) => theme.textPrimary};
+  font-weight: var(--fontWeight-medium);
+  font-size: var(--fontSize-18);
+  text-align: ${({ right }) => (right ? 'right' : 'left')};
+  width: ${({ isSingle }) => (isSingle ? '100%' : '50%')};
+`
+
+const YearHeader = styled.div`
+  margin: var(--spacing-8) 0;
+`
+
+const YearDate = styled.div`
+  color: ${({ theme }) => theme.textPrimary};
+  font-weight: var(--fontWeight-medium);
+  font-size: var(--fontSize-18);
+  margin-bottom: var(--spacing-2);
+`
+
+const YearLine = styled.div`
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: ${({ theme }) => theme.borderPrimary};
+`
+
+const Entries = styled.div`
+  position: relative;
+  margin: var(--spacing-4) 0;
+`
+
+const Pair = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+`
+
+const Entry = styled.div<EntryProps>`
+  position: relative;
+  width: ${({ isSingle }) => (isSingle ? '100%' : '50%')};
+  padding: ${({ isSingle }) => (isSingle ? '0' : '0 var(--spacing-4)')};
+  text-align: ${({ right }) => (right ? 'right' : 'left')};
+`
+
+const Data = styled.div<DataProps>`
+  position: relative;
+  padding: var(--spacing-2);
+  border-radius: 9px;
+  margin: var(--spacing-2);
+  background-color: ${({ theme }) => theme.surface2};
+  box-shadow: ${({ hasBorder }) => (hasBorder ? `0 0 10px 1px rgba(42, 138, 255, 0.5)` : 'none')};
+  border: ${({ hasBorder }) => (hasBorder ? `1px solid rgb(42, 138, 255)` : 'none')};
+`
+
+const TrackContainer = styled.div`
+  position: relative;
+  width: ${trackWidth}px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
+const HeadingTextForWidthExpansion = styled.div`
+  position: absolute;
+  visibility: hidden;
+  white-space: nowrap;
+`
+
+const Piece = styled.div`
+  position: relative;
+  width: 1px;
+  height: 100%;
+  background-color: ${({ theme }) => theme.borderPrimary};
+`
+
+const Dot = styled.div<{ isMajor: boolean }>`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: ${({ theme, isMajor }) => (isMajor ? theme.palette1 : theme.textPrimary)};
+`
+
+const LineStart = styled.div`
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 50%;
+  background-color: ${({ theme }) => theme.borderPrimary};
+`
+
+const LineEnd = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 50%;
+  background-color: ${({ theme }) => theme.borderPrimary};
+`
+
+const LineExtra = styled.div<{ height?: number }>`
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: ${({ height }) => (height ? `${height}px` : '100%')};
+  background-color: ${({ theme }) => theme.borderPrimary};
+`
+
+const DetailedContentList = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: var(--spacing-2) 0 0 0;
+`
+
+const ContentItem = styled.li`
+  color: ${({ theme }) => theme.textSecondary};
+  font-size: var(--fontSize-14);
+  margin-bottom: var(--spacing-1);
 `
 
 function sortMerge(as: TimelineEntry[], bs: TimelineEntry[]) {
-  const numberOfRows = [...as, ...bs].reduce(
-    (largestOrder, item) => (item.row > largestOrder ? item.row : largestOrder),
-    0
-  )
-
-  const aSorted = sortBy(as, 'row')
-  const bSorted = sortBy(bs, 'row')
-
-  return Array.from({ length: numberOfRows }, (_, index) => {
-    const row = index + 1
-    const a = aSorted.find((a) => a.row === row)
-    const b = bSorted.find((b) => b.row === row)
-
-    return [a, b]
-  })
+  const a = as.map((a) => ({ ...a, row: a.row || 0 }))
+  const b = bs.map((b) => ({ ...b, row: b.row || 0 }))
+  const sorted = sortBy([...a, ...b], ['row'])
+  const pairs: [TimelineEntry | undefined, TimelineEntry | undefined][] = []
+  for (let i = 0; i < sorted.length; i += 2) {
+    pairs.push([sorted[i], sorted[i + 1]])
+  }
+  return pairs
 }
 
 export default DualTimeline

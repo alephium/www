@@ -40,7 +40,7 @@ const Modal: FC<ModalProps> = ({ isOpen, setIsOpen, title, children, className }
 export default styled(Modal)`
   .modal {
     position: relative;
-    background-color: ${({ theme }) => theme.bgPrimary};
+    background-color: ${({ theme }) => theme.surface1};
     border-radius: var(--radius);
     border: 1px solid ${({ theme }) => theme.separator};
     max-height: 80%;

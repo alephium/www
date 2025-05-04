@@ -19,8 +19,8 @@ const PageSectionContainer = styled.div<PageSectionContainerProps>`
   margin: 0 auto;
   padding: 0 var(--spacing-4);
   position: relative;
-  background-color: ${({ contrasted, theme }) =>
-    contrasted ? colord(theme.bgTertiary).lighten(0.1).toRgbString() : 'none'};
+  background-color: ${({ theme, contrasted }) =>
+    contrasted ? colord(theme.background1).lighten(0.1).toRgbString() : 'none'};
   box-sizing: border-box;
 `
 

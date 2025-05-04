@@ -52,12 +52,12 @@ const AccordionHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: var(--spacing-1) var(--spacing-3);
-  background-color: ${({ theme }) => theme.bgSecondary};
+  background-color: ${({ theme }) => theme.surface2};
   cursor: pointer;
   transition: background-color 0.2s ease;
 
   &:hover {
-    background-color: ${({ theme }) => theme.bgPrimary};
+    background-color: ${({ theme }) => theme.surface1};
   }
 `
 
@@ -79,7 +79,7 @@ const AccordionContent = styled(motion.div)`
 
 const AccordionInner = styled.div`
   padding: var(--spacing-2) var(--spacing-3);
-  background-color: ${({ theme }) => theme.bgPrimary};
+  background-color: ${({ theme }) => theme.surface1};
 
   * {
     font-weight: var(--fontWeight-medium) !important;

@@ -49,7 +49,7 @@ const Shop: FC<ShopProps> = ({ className, content }) => {
       <PageSectionContainer>
         <Columns>
           <Column vertialCenter>
-            <SectionTextHeader title={content.title} subtitle={content.subtitle} bigSubtitle bigText>
+            <SectionTextHeader titleRows={[content.title]} subtitleRows={[content.subtitle]} bigSubtitle bigText>
               <p>{content.description}</p>
               <ArrowedLink url={content.link.url} trackingName="shop-section:main-link">
                 {content.link.text}
@@ -79,7 +79,7 @@ const Shop: FC<ShopProps> = ({ className, content }) => {
 
 export default styled(Shop)`
   padding: var(--spacing-12) 0;
-  background-color: ${({ theme }) => theme.bgTertiary};
+  background-color: ${({ theme }) => theme.background1};
   color: ${({ theme }) => theme.textPrimary};
   align-items: center;
 

@@ -32,7 +32,7 @@ const SubpageSectionStyled = styled(PageSectionContainer)<
   padding-top: var(--spacing-14);
   padding-bottom: var(--spacing-14);
   background-color: ${({ theme, contrasted }) =>
-    contrasted ? colord(theme.bgTertiary).lighten(0.08).toRgbString() : 'transparent'};
+    contrasted ? colord(theme.background1).lighten(0.08).toRgbString() : 'transparent'};
   border-radius: var(--radius-big);
   overflow: hidden;
 

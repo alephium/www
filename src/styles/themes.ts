@@ -10,11 +10,11 @@ export const darkTheme: DefaultTheme = {
   textSecondary: 'rgba(255, 255, 255, 0.7)',
   textTertiary: 'rgba(255, 255, 255, 0.4)',
 
-  bgPrimary: 'var(--color-grey-700)',
-  bgSecondary: 'var(--color-grey-800)',
-  bgTertiary: 'var(--color-grey-900)',
-  bgSurface: 'rgba(255, 255, 255, 0.015)',
-  bgContrast: 'var(--color-grey-800)',
+  surface1: 'var(--color-grey-700)',
+  surface2: 'var(--color-grey-800)',
+  background1: 'var(--color-grey-900)',
+  background2: 'var(--color-grey-950)',
+  backgroundContrast: 'var(--color-grey-800)',
 
   borderPrimary: 'rgba(255, 255, 255, 0.1)',
 
@@ -39,11 +39,11 @@ export const lightTheme: DefaultTheme = {
   textSecondary: 'var(--color-grey-500)',
   textTertiary: 'var(--color-grey-400)',
 
-  bgPrimary: 'var(--color-white)',
-  bgSecondary: '#FBFAF8',
-  bgTertiary: '#F3F1EA',
-  bgSurface: 'var(--color-white)',
-  bgContrast: 'var(--color-grey-100)',
+  surface1: 'var(--color-white)',
+  surface2: '#FBFAF8',
+  background1: '#F3F1EA',
+  background2: '#E5E3DC',
+  backgroundContrast: 'var(--color-grey-100)',
 
   borderPrimary: 'var(--border-primary-light)',
 
@@ -68,10 +68,11 @@ export const hackathonTheme: DefaultTheme = {
   textSecondary: 'var(--color-grey-200)',
   textTertiary: 'var(--color-grey-300)',
 
-  bgPrimary: 'var(--color-grey-800)',
-  bgSecondary: 'var(--color-grey-850)',
-  bgTertiary: 'var(--color-grey-950)',
-  bgSurface: 'var(--color-grey-800)',
+  surface1: 'var(--color-grey-800)',
+  surface2: 'var(--color-grey-850)',
+  background1: 'var(--color-grey-950)',
+  background2: '#000000',
+  backgroundContrast: 'var(--color-grey-800)',
 
   borderPrimary: 'var(--color-grey-700)',
 

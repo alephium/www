@@ -93,7 +93,7 @@ const WalletScreenshot = styled.div`
 const WalletCardStyled = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: ${({ theme }) => theme.bgSecondary};
+  background-color: ${({ theme }) => theme.surface2};
   backdrop-filter: blur(30px);
   border-radius: var(--radius);
   max-width: 400px;

@@ -55,6 +55,8 @@ const HomepagePartnersSection = (content: Queries.HomepagePartnersSectionFragmen
   )
 }
 
+export default HomepagePartnersSection
+
 const PartnersGridContainer = styled.div`
   position: relative;
   width: var(--page-width);
@@ -117,8 +119,6 @@ const GradientOverlay = styled.div<{ position: 'left' | 'right'; visible: boolea
   z-index: 1;
   opacity: ${({ visible }) => (visible ? 1 : 0)};
   transition: opacity 0.1s ease;
-  background: linear-gradient(to ${({ position }) => position}, transparent, ${({ theme }) => theme.bgTertiary});
+  background: linear-gradient(to ${({ position }) => position}, transparent, ${({ theme }) => theme.background1});
   ${({ position }) => position}: 0;
 `
-
-export default HomepagePartnersSection
