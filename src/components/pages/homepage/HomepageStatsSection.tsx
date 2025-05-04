@@ -123,7 +123,7 @@ const HomepageStatsSection = () => {
   }
 
   return (
-    <SubpageSectionStyled fullWidth bgColor="3">
+    <SubpageSectionStyled wide bgColor="3">
       <TextElementStyled>
         <h2>
           <small>Web3,</small>
@@ -132,7 +132,8 @@ const HomepageStatsSection = () => {
           <hr />
         </h2>
         <p>
-          Dive in. 🐠 <strong>Spot what makes Alephium stand apart.</strong>
+          Dive in. 🐠 <br />
+          <strong>Discover what makes Alephium stand apart.</strong>
         </p>
       </TextElementStyled>
 
@@ -299,6 +300,8 @@ const HomepageStatsSection = () => {
             </TextCard>
           </CardContainer>
         </CardsScroll>
+        <GradientOverlay position="left" visible={canScrollLeft} />
+        <GradientOverlay position="right" visible={canScrollRight} />
         <ScrollButtonsContainer>
           <ScrollButton onClick={() => handleScroll('left')} aria-label="Scroll cards left" disabled={!canScrollLeft}>
             <Arrow>←</Arrow>
@@ -329,6 +332,7 @@ const TextElementStyled = styled(TextElement)`
 const StatsContainer = styled.div`
   width: 100%;
   padding: var(--spacing-4) 0;
+  position: relative;
 `
 
 const CardsScroll = styled.div`
@@ -337,7 +341,7 @@ const CardsScroll = styled.div`
   overflow-x: auto;
   padding: var(--spacing-4) 0;
   scroll-snap-type: x mandatory;
-  scroll-padding-left: calc(calc(100% - var(--page-width)) / 2);
+
   -webkit-overflow-scrolling: touch;
   margin-bottom: var(--spacing-4);
 
@@ -355,14 +359,24 @@ const CardsScroll = styled.div`
   }
 `
 
+const GradientOverlay = styled.div<{ position: 'left' | 'right'; visible: boolean }>`
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  pointer-events: none;
+  z-index: 1;
+  opacity: ${({ visible }) => (visible ? 1 : 0)};
+  transition: opacity 0.1s ease;
+  background: linear-gradient(to ${({ position }) => position}, transparent, ${({ theme }) => theme.background3});
+  ${({ position }) => position}: 0;
+`
+
 const CardContainer = styled(motion.div)`
   flex: 0 0 ${CARD_WIDTH}px;
   scroll-snap-align: start;
   position: relative;
-
-  &:first-child {
-    padding-left: calc(calc(100% - var(--page-width)) / 2);
-  }
+  z-index: 0;
 
   &:last-child {
     margin-right: var(--spacing-4);
