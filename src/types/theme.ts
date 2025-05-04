@@ -15,6 +15,7 @@ declare module 'styled-components' {
     bgSecondary: string
     bgTertiary: string
     bgSurface: string
+    bgContrast: string
 
     borderPrimary: string
 

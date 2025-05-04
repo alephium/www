@@ -118,10 +118,9 @@ const NavigationMenuSocialsStyled = styled(NavigationMenuSocials)`
 
 const FooterStyled = styled.div`
   padding: var(--spacing-12) 0;
-  background-color: ${({ theme }) => theme.bgTertiary};
+  background-color: ${({ theme }) => theme.bgSecondary};
   color: ${({ theme }) => theme.textPrimary};
   font-size: var(--fontSize-18);
-  border-top: 1px solid ${({ theme }) => theme.separator};
 `
 
 const LogosSection = styled.div`

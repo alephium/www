@@ -12,7 +12,6 @@ import SubpageVideoHeroSection from '../components/customPageComponents/SubpageV
 import TextCard from '../components/customPageComponents/TextCard'
 import TextCardContent from '../components/customPageComponents/TextCardContent'
 import TextElement from '../components/customPageComponents/TextElement'
-import SectionDivider from '../components/SectionDivider'
 
 const exchangesQuery = graphql`
   query GetStartedPage {
@@ -125,7 +124,7 @@ const CustomPage = (props: PageProps) => {
               <strong>Your gateway to the Alephium ecosystem.</strong> Store, send, receive, swap, borrow, lend, and
               more!
             </p>
-            <Button big url="/wallets">
+            <Button big highlight url="/wallets">
               Download a wallet
             </Button>
           </SubpageImageHeroSection>
@@ -210,8 +209,6 @@ const CustomPage = (props: PageProps) => {
               </TextElement>
             </SubheaderContent>
           </SubpageSection>
-
-          <SectionDivider />
 
           <SubpageImageHeroSection
             backgroundImage={ecosystemImage}

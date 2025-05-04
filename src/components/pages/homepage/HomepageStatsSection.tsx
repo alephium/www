@@ -141,7 +141,7 @@ const HomepageStatsSection = () => {
             viewport={{ once: true }}
             variants={cardVariants}
           >
-            <TextCard border>
+            <TextCard>
               <TextElement backgroundColor={theme.palette2}>
                 <TextCardContent>
                   <h3>Fast</h3>
@@ -168,7 +168,7 @@ const HomepageStatsSection = () => {
             viewport={{ once: true }}
             variants={cardVariants}
           >
-            <TextCard border>
+            <TextCard>
               <TextElement backgroundColor={theme.palette3}>
                 <TextCardContent>
                   <h3>Scalable</h3>
@@ -195,7 +195,7 @@ const HomepageStatsSection = () => {
             viewport={{ once: true }}
             variants={cardVariants}
           >
-            <TextCard border>
+            <TextCard>
               <TextElement backgroundColor={theme.palette4}>
                 <TextCardContent>
                   <h3>Secure</h3>
@@ -222,7 +222,7 @@ const HomepageStatsSection = () => {
             viewport={{ once: true }}
             variants={cardVariants}
           >
-            <TextCard border>
+            <TextCard>
               <TextElement backgroundColor={theme.palette1}>
                 <TextCardContent>
                   <h3>Sustainable</h3>
@@ -248,7 +248,7 @@ const HomepageStatsSection = () => {
             viewport={{ once: true }}
             variants={cardVariants}
           >
-            <TextCard border>
+            <TextCard>
               <TextElement backgroundColor={theme.palette6}>
                 <TextCardContent>
                   <h3>Programmable</h3>
@@ -274,7 +274,7 @@ const HomepageStatsSection = () => {
             viewport={{ once: true }}
             variants={cardVariants}
           >
-            <TextCard border>
+            <TextCard>
               <TextElement backgroundColor={theme.palette5}>
                 <TextCardContent>
                   <h3>Developer-friendly</h3>

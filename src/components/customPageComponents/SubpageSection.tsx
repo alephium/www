@@ -7,12 +7,12 @@ import PageSectionContainer from '../PageSectionContainer'
 interface SubpageSectionProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode
   Parallax?: ReactNode
-  fullWidth?: boolean
   wide?: boolean
   narrow?: boolean
   contrasted?: boolean
   border?: boolean
   isCentered?: boolean
+  className?: string
 }
 
 const SubpageSection = ({ children, Parallax, ...props }: SubpageSectionProps) => (
@@ -32,9 +32,8 @@ const SubpageSectionStyled = styled(PageSectionContainer)<
   padding-top: var(--spacing-14);
   padding-bottom: var(--spacing-14);
   background-color: ${({ theme, contrasted }) =>
-    contrasted ? colord(theme.bgTertiary).lighten(0.1).toRgbString() : 'transparent'};
-  border-radius: ${({ wide }) => (wide ? '0' : 'var(--radius-big)')};
-  border: ${({ theme, contrasted }) => (contrasted ? `1px solid ${theme.borderPrimary}` : 'none')};
+    contrasted ? colord(theme.bgTertiary).lighten(0.08).toRgbString() : 'transparent'};
+  border-radius: var(--radius-big);
   overflow: hidden;
 
   ${({ border }) =>

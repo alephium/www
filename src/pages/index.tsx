@@ -10,6 +10,7 @@ import HomepageHeroSection from '../components/pages/homepage/HomepageHeroSectio
 import HomepageIntroSection from '../components/pages/homepage/HomepageIntroSection'
 import HomepagePartnersSection from '../components/pages/homepage/HomepagePartnersSection'
 import HomepageStatsSection from '../components/pages/homepage/HomepageStatsSection'
+import SectionDivider from '../components/SectionDivider'
 
 export const pageQuery = graphql`
   query IndexPage {
@@ -52,7 +53,11 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
 
           <HomepageStatsSection />
 
+          <SectionDivider />
+
           <HomepageEcosystemSection />
+
+          <SectionDivider />
 
           <SubpageSection wide>
             <GatsbyImageWrapper
@@ -76,6 +81,8 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
               </Button>
             </TextElement>
           </SubpageSection>
+
+          <SectionDivider />
         </>
       }
     />

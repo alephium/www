@@ -14,7 +14,7 @@ interface TextCardProps extends TextElementProps {
   isAnimated?: boolean
   variants?: Variants
   border?: boolean
-  backgroundColor?: string
+  bgColor?: 'secondary' | 'tertiary'
 }
 
 const TextCard = ({
@@ -23,7 +23,7 @@ const TextCard = ({
   isAnimated = false,
   variants,
   border,
-  backgroundColor,
+  bgColor,
   ...textElementProps
 }: TextCardProps) => {
   const text = (
@@ -34,7 +34,7 @@ const TextCard = ({
 
   const card = (
     <CardContainer variants={variants} isAnimated={isAnimated || !!url}>
-      <Card url={url} isAnimated={isAnimated || !!url} border={border} backgroundColor={backgroundColor}>
+      <Card url={url} isAnimated={isAnimated || !!url} border={border} bgColor={bgColor}>
         {text}
       </Card>
     </CardContainer>
@@ -51,19 +51,15 @@ const TextCard = ({
 
 export default TextCard
 
-const Card = ({
-  children,
-  url,
-  isAnimated,
-  border,
-  backgroundColor
-}: {
+interface CardProps {
   children: ReactNode
   url?: string
   isAnimated: boolean
   border?: boolean
-  backgroundColor?: string
-}) => {
+  bgColor?: 'secondary' | 'tertiary'
+}
+
+const Card = ({ children, url, isAnimated, border, bgColor }: CardProps) => {
   const angle = 1.2
   const cardRef = useRef<HTMLDivElement>(null)
 
@@ -117,7 +113,7 @@ const Card = ({
       url={url}
       isAnimated={isAnimated}
       border={border}
-      backgroundColor={backgroundColor}
+      bgColor={bgColor}
     >
       {children}
       {url && <GradientBorder />}
@@ -125,13 +121,12 @@ const Card = ({
   )
 }
 
-const cardStyles = ({ border, backgroundColor }: { border?: boolean; backgroundColor?: string }) => css`
+const cardStyles = ({ border, bgColor }: { border?: boolean; bgColor?: 'secondary' | 'tertiary' }) => css`
   display: flex;
   position: relative;
   flex-direction: column;
   border-radius: var(--radius);
-  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
-  background-color: ${({ theme }) => backgroundColor || theme.bgSecondary};
+  background-color: ${({ theme }) => (bgColor === 'tertiary' ? theme.bgTertiary : theme.bgSecondary)};
   background-clip: padding-box;
   text-decoration: none;
   transition: all 0.1s ease-out;
@@ -218,16 +213,16 @@ const SimpleLinkStyled = styled(SimpleLink)<Pick<TextCardProps, 'isAnimated'>>`
     isAnimated &&
     css`
       perspective: 200px;
-    `}
+    `};
 `
 
 const CardStyled = styled(motion.div)<{
   url?: string
   isAnimated: boolean
   border?: boolean
-  backgroundColor?: string
+  bgColor?: 'secondary' | 'tertiary'
 }>`
-  ${({ url, border, backgroundColor }) => cardStyles({ url, border, backgroundColor })}
+  ${({ url, border, bgColor }) => cardStyles({ border, bgColor })}
   ${({ url }) => url && 'transform-style: preserve-3d;'}
   width: 100%;
   height: 100%;
@@ -264,7 +259,7 @@ const CardStyled = styled(motion.div)<{
     .styled-image {
       filter: grayscale(0%) brightness(1);
     }
-    h3 {
+    &:has(.styled-image) h3 {
       color: var(--color-white) !important;
     }
   }

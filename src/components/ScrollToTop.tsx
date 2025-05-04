@@ -25,7 +25,7 @@ const ScrollToTopButton = styled.div`
   position: absolute;
   right: 10vw;
   padding: 0 15px;
-  bottom: -20px;
+  top: 20px;
   height: 40px;
   display: flex;
   align-items: center;

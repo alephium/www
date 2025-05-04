@@ -317,11 +317,11 @@ const NebulaBackground = styled.div`
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at 50% 50%, rgba(76, 0, 255, 0.12) 0%, transparent 35%),
-      radial-gradient(circle at 50% 50%, rgba(255, 0, 128, 0.1) 0%, transparent 35%),
-      radial-gradient(circle at 50% 50%, rgba(0, 255, 255, 0.1) 0%, transparent 35%),
-      radial-gradient(circle at 50% 50%, rgba(255, 0, 128, 0.1) 0%, transparent 35%),
-      radial-gradient(circle at 50% 50%, rgba(76, 0, 255, 0.12) 0%, transparent 35%);
+    background: radial-gradient(circle at 50% 50%, rgba(0, 0, 255, 0.12) 0%, transparent 25%),
+      radial-gradient(circle at 50% 50%, rgba(27, 19, 113, 0.1) 40%, transparent 65%),
+      radial-gradient(circle at 50% 50%, rgba(0, 21, 158, 0.165) 0%, transparent 35%),
+      radial-gradient(circle at 50% 50%, rgba(0, 7, 62, 0.1) 75%, transparent 85%),
+      radial-gradient(circle at 50% 50%, rgba(33, 33, 35, 0.133) 85%, transparent 100%);
     filter: blur(40px);
   }
 `

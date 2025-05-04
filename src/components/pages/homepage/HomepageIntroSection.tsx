@@ -147,7 +147,7 @@ const HomepageIntroSection = () => {
       <SubheaderContent isCentered>
         <IntroColumns variants={cardContainerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
           {hardcodedCards.map((card) => (
-            <TextCard isAnimated border variants={cardVariants} key={card.title}>
+            <TextCard isAnimated variants={cardVariants} key={card.title}>
               <CardImageOverlay image={card.image} overlayTitle={card.title} paletteColor={card.color} />
               <TextCardContent>
                 <p>{card.description}</p>

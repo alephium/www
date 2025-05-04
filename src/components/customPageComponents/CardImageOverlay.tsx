@@ -43,7 +43,7 @@ export default CardImageOverlay
 const CardImageOverlayStyled = styled.div<Pick<CardImageOverlayProps, 'rounded'>>`
   position: relative;
   width: 100%;
-  min-height: 120px;
+  min-height: 140px;
   border-radius: ${({ rounded }) => (rounded ? 'var(--radius-small)' : '0')};
   overflow: hidden;
   background-color: ${({ theme }) => theme.bgSecondary};
@@ -51,12 +51,13 @@ const CardImageOverlayStyled = styled.div<Pick<CardImageOverlayProps, 'rounded'>
 
 const ImageContainer = styled.div`
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: var(--spacing-1);
+  left: var(--spacing-1);
+  right: var(--spacing-1);
+  bottom: var(--spacing-1);
+  border-radius: var(--radius-small);
+  overflow: hidden;
   z-index: 0;
-  border-bottom: 2px solid ${({ theme }) => theme.borderPrimary};
 `
 
 const StyledImage = styled.div`

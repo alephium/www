@@ -11,9 +11,10 @@ export const darkTheme: DefaultTheme = {
   textTertiary: 'rgba(255, 255, 255, 0.4)',
 
   bgPrimary: 'var(--color-grey-700)',
-  bgSecondary: 'var(--color-grey-750)',
-  bgTertiary: 'var(--color-grey-850)',
+  bgSecondary: 'var(--color-grey-800)',
+  bgTertiary: 'var(--color-grey-900)',
   bgSurface: 'rgba(255, 255, 255, 0.015)',
+  bgContrast: 'var(--color-grey-800)',
 
   borderPrimary: 'rgba(255, 255, 255, 0.1)',
 
@@ -42,6 +43,7 @@ export const lightTheme: DefaultTheme = {
   bgSecondary: '#FBFAF8',
   bgTertiary: '#F3F1EA',
   bgSurface: 'var(--color-white)',
+  bgContrast: 'var(--color-grey-100)',
 
   borderPrimary: 'var(--border-primary-light)',
 
