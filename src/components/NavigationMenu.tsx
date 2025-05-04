@@ -189,7 +189,7 @@ const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean; scr
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 66px;
+  height: 72px;
   z-index: 10000;
   transition: top 0.3s ease-in-out;
   backdrop-filter: blur(100px) brightness(${({ scrolled }) => (scrolled ? '30%' : '100%')});

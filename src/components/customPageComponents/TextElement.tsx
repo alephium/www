@@ -98,7 +98,7 @@ const TextElement = styled.div<TextElementProps>`
 
   > h3 {
     font-family: 'Geist';
-    font-size: var(--fontSize-36);
+    font-size: var(--fontSize-42);
     font-weight: var(--fontWeight-medium);
     margin-bottom: var(--spacing-2);
 

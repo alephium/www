@@ -281,7 +281,7 @@ const HomepageStatsSection = () => {
             <TextCard border>
               <TextElement>
                 <TextCardContent>
-                  <h3 style={{ color: theme.palette5 }}>Developer-friendly</h3>
+                  <h3 style={{ color: theme.palette5 }}>Dev-friendly</h3>
                   <TLDRSection color={theme.palette5}>
                     <span>Super simple language and novel VM</span>
                   </TLDRSection>
@@ -382,7 +382,7 @@ const TLDRSection = styled.div`
   border-radius: var(--radius-small);
   margin-top: var(--spacing-2);
   color: ${({ color }) => color};
-  font-size: var(--fontSize-20);
+  font-size: var(--fontSize-22);
   font-weight: var(--fontWeight-semiBold);
   width: 100%;
   box-sizing: border-box;

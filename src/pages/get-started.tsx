@@ -1,9 +1,10 @@
 import { graphql, PageProps, useStaticQuery } from 'gatsby'
 
 import Button from '../components/Button'
+import Background from '../components/customPageComponents/Background'
 import Grid from '../components/customPageComponents/Grid'
-import ImageIcon from '../components/customPageComponents/ImageIcon'
 import Page from '../components/customPageComponents/Page'
+import SideBySide from '../components/customPageComponents/SideBySide'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
 import SubpageImageHeroSection from '../components/customPageComponents/SubpageImageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
@@ -15,10 +16,10 @@ import SectionDivider from '../components/SectionDivider'
 
 const exchangesQuery = graphql`
   query GetStartedPage {
-    heroImage: file(relativePath: { eq: "build-mine-explore-poster.png" }) {
+    heroImage: file(relativePath: { eq: "mountain-paths.png" }) {
       ...HeroImage
     }
-    heroVideo: file(relativePath: { eq: "build-mine-explore-scrub.mp4" }) {
+    heroVideo: file(relativePath: { eq: "mountain-paths-scrub.mp4" }) {
       publicURL
     }
     ecosystemImage: file(relativePath: { eq: "ecosystem-islands.png" }) {
@@ -35,19 +36,6 @@ const exchangesQuery = graphql`
       childImageSharp {
         gatsbyImageData(quality: 100)
       }
-    }
-    documentationIcon: file(relativePath: { eq: "leaf-icon.png" }) {
-      childImageSharp {
-        gatsbyImageData(quality: 100)
-      }
-    }
-    goldIcon: file(relativePath: { eq: "gold-icon.png" }) {
-      childImageSharp {
-        gatsbyImageData(quality: 100)
-      }
-    }
-    blobVideo: file(relativePath: { eq: "alephium-blob.mp4" }) {
-      publicURL
     }
     desktopWallet: file(relativePath: { eq: "screenshots/desktop-wallet/desktop-wallet-1.png" }) {
       childImageSharp {
@@ -82,9 +70,8 @@ const exchangesQuery = graphql`
 `
 
 const CustomPage = (props: PageProps) => {
-  const { heroImage, heroVideo, treasureImage, blobVideo, mineImage, ecosystemImage, documentationIcon, goldIcon } =
+  const { heroImage, heroVideo, treasureImage, mineImage, ecosystemImage } =
     useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
-  const blobVideoUrl = blobVideo?.publicURL || undefined
 
   return (
     <Page
@@ -96,9 +83,8 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageVideoHeroSection poster={heroImage} video={heroVideo} alignContent="bottom">
+          <SubpageVideoHeroSection poster={heroImage} video={heroVideo}>
             <h1>Get Started with Alephium</h1>
-            <hr />
             <p>
               <strong>Everything you need to begin your journey in the Alephium ecosystem.</strong>
             </p>
@@ -121,7 +107,6 @@ const CustomPage = (props: PageProps) => {
 
           <SubpageImageHeroSection backgroundImage={treasureImage} minHeight="660px" split>
             <h2>Wallets</h2>
-            <hr />
             <p>
               <strong>Your gateway to the Alephium ecosystem.</strong> Store, send, receive, swap, borrow, lend, and
               more!
@@ -168,48 +153,53 @@ const CustomPage = (props: PageProps) => {
             </SubheaderContent>
           </SubpageSection>*/}
 
-          <SubpageSection isCentered>
-            <TextElement isCentered>
-              <h2>Build on Alephium</h2>
-              <p>
-                With robust smart contract security, high-performance sharding, and a resilient Proof-of-Work
-                foundation, <strong>Alephium gives you the tools to build better, safer, and faster.</strong>
-              </p>
-            </TextElement>
+          <SubpageSection wide>
+            <SideBySide>
+              <Background>
+                <TextElement>
+                  <h2>
+                    Build on Alephium
+                    <hr />
+                  </h2>
+                  <p>
+                    With robust smart contract security, high-performance sharding, and a resilient Proof-of-Work
+                    foundation, <strong>Alephium gives you the tools to build better, safer, and faster.</strong>
+                  </p>
+                </TextElement>
+              </Background>
 
-            <SubheaderContent>
-              <Grid columns={2} isCentered gap="small">
-                <TextCard url="https://docs.alephium.org/">
-                  <TextCardContent>
-                    <ImageIcon image={documentationIcon?.childImageSharp?.gatsbyImageData} rounded />
-                    <h3>Documentation</h3>
-                    <p>Documentation to get you going quick and easy.</p>
-                  </TextCardContent>
-                </TextCard>
-                <TextCard url="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md">
-                  <TextCardContent>
-                    <ImageIcon image={goldIcon?.childImageSharp?.gatsbyImageData} rounded />
-                    <h3>Grants</h3>
-                    <p>
-                      You have an idea, but no funding?
-                      <br />
-                      We can help.
-                    </p>
-                  </TextCardContent>
-                </TextCard>
-              </Grid>
-            </SubheaderContent>
+              <SubheaderContent>
+                <Grid columns={2} gap="small">
+                  <TextCard border url="https://docs.alephium.org/">
+                    <TextCardContent>
+                      <h3>Documentation</h3>
+                      <p>Documentation to get you going quick and easy.</p>
+                    </TextCardContent>
+                  </TextCard>
+                  <TextCard border url="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md">
+                    <TextCardContent>
+                      <h3>Grants</h3>
+                      <p>
+                        You have an idea, but no funding?
+                        <br />
+                        We can help.
+                      </p>
+                    </TextCardContent>
+                  </TextCard>
+                </Grid>
 
-            <SubheaderContent isCentered>
-              <TextElement isCentered>
-                <h3>Guides and tutorials</h3>
-                <Button url="https://docs.alephium.org/ralph">Ralph Language</Button>
-                <Button url="https://docs.alephium.org/sdk">SDK</Button>
-                <Button url="https://www.youtube.com/playlist?list=PL8q8n0BHJS1PWP7t8ABECYdOaPM-hJmjx">
-                  Tutorials
-                </Button>
-              </TextElement>
-            </SubheaderContent>
+                <SectionDivider />
+
+                <TextElement>
+                  <h3>Guides and tutorials</h3>
+                  <Button url="https://docs.alephium.org/ralph">Ralph Language</Button>
+                  <Button url="https://docs.alephium.org/sdk">SDK</Button>
+                  <Button url="https://www.youtube.com/playlist?list=PL8q8n0BHJS1PWP7t8ABECYdOaPM-hJmjx">
+                    Tutorials
+                  </Button>
+                </TextElement>
+              </SubheaderContent>
+            </SideBySide>
           </SubpageSection>
 
           <SubpageImageHeroSection
