@@ -1,5 +1,5 @@
 import { IGatsbyImageData } from 'gatsby-plugin-image'
-import styled, { DefaultTheme, useTheme } from 'styled-components'
+import styled, { useTheme } from 'styled-components'
 
 import GatsbyImageWrapper from '../GatsbyImageWrapper'
 import TextElement from './TextElement'
@@ -8,10 +8,9 @@ interface CardImageOverlayProps {
   overlayTitle: string | null
   image?: IGatsbyImageData
   rounded?: boolean
-  paletteColor?: Pick<DefaultTheme, 'palette1' | 'palette2' | 'palette3' | 'palette4'>
 }
 
-const CardImageOverlay = ({ image, overlayTitle, rounded, paletteColor = 'palette1' }: CardImageOverlayProps) => {
+const CardImageOverlay = ({ image, overlayTitle, rounded }: CardImageOverlayProps) => {
   const theme = useTheme()
 
   return (
@@ -31,7 +30,7 @@ const CardImageOverlay = ({ image, overlayTitle, rounded, paletteColor = 'palett
       )}
       <OverlayTitleContainer>
         <TextElement>
-          <h3 style={{ color: theme[paletteColor] }}>{overlayTitle}</h3>
+          <h3>{overlayTitle}</h3>
         </TextElement>
       </OverlayTitleContainer>
     </CardImageOverlayStyled>
@@ -43,10 +42,9 @@ export default CardImageOverlay
 const CardImageOverlayStyled = styled.div<Pick<CardImageOverlayProps, 'rounded'>>`
   position: relative;
   width: 100%;
-  min-height: 140px;
+  min-height: 120px;
   border-radius: ${({ rounded }) => (rounded ? 'var(--radius-small)' : '0')};
   overflow: hidden;
-  background-color: ${({ theme }) => theme.surface2};
 `
 
 const ImageContainer = styled.div`
@@ -72,8 +70,8 @@ const StyledImage = styled.div`
 
 const OverlayTitleContainer = styled.div`
   position: absolute;
-  bottom: 15px;
-  left: 20px;
+  bottom: 23px;
+  left: 23px;
   z-index: 2;
 
   h3 {

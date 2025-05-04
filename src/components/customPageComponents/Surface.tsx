@@ -3,7 +3,6 @@ import styled from 'styled-components'
 const Surface = styled.div`
   display: flex;
   border-radius: var(--radius-big);
-  border: 1px solid ${({ theme }) => theme.borderPrimary};
   background-color: ${({ theme }) => theme.background2};
   padding: var(--spacing-6);
   max-width: var(--page-width);

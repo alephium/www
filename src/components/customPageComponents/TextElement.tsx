@@ -15,6 +15,7 @@ export interface TextElementProps {
 }
 
 const TextElement = styled.div<TextElementProps>`
+  position: relative;
   ${({ backgroundColor }) =>
     backgroundColor &&
     css`
@@ -50,6 +51,7 @@ const TextElement = styled.div<TextElementProps>`
 
     &:first-child {
       margin-top: 0;
+      padding-top: 0;
     }
 
     ${({ noHeadingsMargins }) =>
@@ -62,14 +64,15 @@ const TextElement = styled.div<TextElementProps>`
   > h1 {
     line-height: 1;
     font-family: 'Sentient';
-    font-size: var(--fontSize-64);
+    font-size: var(--fontSize-70);
     font-weight: var(--fontWeight-semiBold);
   }
 
   > h2 {
-    font-family: 'Sentient';
-    font-size: var(--fontSize-56);
+    font-family: 'Geist';
+    font-size: var(--fontSize-64);
     margin-bottom: var(--spacing-6);
+    font-weight: var(--fontWeight-semiBold);
     color: ${({ theme }) => theme.textPrimaryVariation};
     line-height: 1;
 
@@ -77,10 +80,17 @@ const TextElement = styled.div<TextElementProps>`
       font-size: inherit;
       color: ${({ theme }) => theme.textSecondary};
     }
+
+    hr {
+      height: 3px;
+      background-color: ${({ theme }) => theme.textPrimary};
+      margin: var(--spacing-5) 0 0;
+      border: none;
+    }
   }
 
   > h3 {
-    font-family: 'InterDisplay';
+    font-family: 'Geist';
     font-size: var(--fontSize-36);
     font-weight: var(--fontWeight-medium);
     margin-bottom: var(--spacing-2);
@@ -143,6 +153,11 @@ const TextElement = styled.div<TextElementProps>`
 
     > a {
       color: ${({ theme }) => theme.link};
+    }
+
+    &:first-child {
+      margin-top: 0;
+      padding-top: 0;
     }
   }
 

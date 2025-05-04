@@ -10,10 +10,11 @@ export const darkTheme: DefaultTheme = {
   textSecondary: 'rgba(255, 255, 255, 0.7)',
   textTertiary: 'rgba(255, 255, 255, 0.4)',
 
-  surface1: 'var(--color-grey-700)',
+  surface1: 'var(--color-grey-750)',
   surface2: 'var(--color-grey-800)',
-  background1: 'var(--color-grey-900)',
-  background2: 'var(--color-grey-950)',
+  background1: 'var(--color-grey-850)',
+  background2: 'var(--color-grey-900)',
+  background3: 'var(--color-grey-950)',
   backgroundContrast: 'var(--color-grey-800)',
 
   borderPrimary: 'rgba(255, 255, 255, 0.1)',
@@ -43,6 +44,7 @@ export const lightTheme: DefaultTheme = {
   surface2: '#FBFAF8',
   background1: '#F3F1EA',
   background2: '#E5E3DC',
+  background3: 'white',
   backgroundContrast: 'var(--color-grey-100)',
 
   borderPrimary: 'var(--border-primary-light)',
@@ -72,6 +74,7 @@ export const hackathonTheme: DefaultTheme = {
   surface2: 'var(--color-grey-850)',
   background1: 'var(--color-grey-950)',
   background2: '#000000',
+  background3: 'white',
   backgroundContrast: 'var(--color-grey-800)',
 
   borderPrimary: 'var(--color-grey-700)',

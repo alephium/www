@@ -7,8 +7,11 @@ import styled from 'styled-components'
 import { deviceBreakPoints } from '../../../styles/global-style'
 import Button from '../../Button'
 import CardImageOverlay from '../../customPageComponents/CardImageOverlay'
+import Grid from '../../customPageComponents/Grid'
+import SideBySide from '../../customPageComponents/SideBySide'
 import SubheaderContent from '../../customPageComponents/SubheaderContent'
 import SubpageSection from '../../customPageComponents/SubpageSection'
+import Surface from '../../customPageComponents/Surface'
 import TextCard from '../../customPageComponents/TextCard'
 import TextCardContent from '../../customPageComponents/TextCardContent'
 import TextElement from '../../customPageComponents/TextElement'
@@ -139,25 +142,31 @@ const HomepageIntroSection = () => {
           </strong>
         </p>
       </TextElement> */}
-
-      <TextElement isCentered>
-        <label>Start with Alephium</label>
-      </TextElement>
-
       <SubheaderContent isCentered>
-        <IntroColumns variants={cardContainerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-          {hardcodedCards.map((card) => (
-            <TextCard isAnimated variants={cardVariants} key={card.title}>
-              <CardImageOverlay image={card.image} overlayTitle={card.title} paletteColor={card.color} />
-              <TextCardContent>
-                <p>{card.description}</p>
-                <Button url={card.link.url} squared highlight>
-                  {card.actionText}
-                </Button>
-              </TextCardContent>
-            </TextCard>
-          ))}
-        </IntroColumns>
+        <SideBySide>
+          <Surface>
+            <TextElement>
+              <h2>
+                Start <br />
+                with Alephium
+                <hr />
+              </h2>
+            </TextElement>
+          </Surface>
+          <Grid gap="small" columns={2}>
+            {hardcodedCards.map((card) => (
+              <TextCard isAnimated variants={cardVariants} key={card.title} bgColor="surface2">
+                <CardImageOverlay image={card.image} overlayTitle={card.title} paletteColor={card.color as any} />
+                <TextCardContent>
+                  <p>{card.description}</p>
+                  <Button url={card.link.url} squared highlight>
+                    {card.actionText}
+                  </Button>
+                </TextCardContent>
+              </TextCard>
+            ))}
+          </Grid>
+        </SideBySide>
       </SubheaderContent>
     </SubpageSection>
   )

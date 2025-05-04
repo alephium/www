@@ -51,6 +51,8 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
 
           <HomepageIntroSection />
 
+          <SectionDivider />
+
           <HomepageStatsSection />
 
           <SectionDivider />
@@ -59,7 +61,7 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
 
           <SectionDivider />
 
-          <SubpageSection wide>
+          <SubpageSection fullWidth>
             <GatsbyImageWrapper
               image={lighthouseImage}
               alt="Lighthouse background"

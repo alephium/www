@@ -26,7 +26,7 @@ const SubpageHeroSection = forwardRef<HTMLElement, SubpageHeroSectionProps>(func
       <BackgroundMediaWrapper split={split}>{mediaContent}</BackgroundMediaWrapper>
       <HeroPageSectionContainer alignContent={alignContent} split={split}>
         <ContentWrapper alignContent={alignContent} split={split}>
-          <TitleShadow />
+          {!split && <TitleShadow />}
           <TextElementStyled split={split}>{children}</TextElementStyled>
         </ContentWrapper>
       </HeroPageSectionContainer>
@@ -76,7 +76,7 @@ const SubpageHeroSectionStyled = styled.section<Pick<SubpageHeroSectionProps, 'm
 const TextElementStyled = styled(TextElement)<Pick<SubpageHeroSectionProps, 'split'>>`
   max-width: 520px;
   width: fit-content;
-  margin: ${({ split }) => (split ? '0 var(--spacing-5)' : '0 auto')};
+  margin: ${({ split }) => (split ? 'var(--spacing-4) var(--spacing-10)' : '0 auto')};
   justify-content: center;
 
   > p {
@@ -98,7 +98,7 @@ const TextElementStyled = styled(TextElement)<Pick<SubpageHeroSectionProps, 'spl
 
   > hr {
     width: 90%;
-    height: 3px;
+    height: 4px;
     background-color: ${({ theme }) => theme.textPrimary};
     margin: var(--spacing-5) 0 0;
     border: none;

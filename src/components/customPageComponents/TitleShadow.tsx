@@ -12,15 +12,15 @@ const TitleShadowStyled = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  width: 180%;
-  height: 200%;
+  width: 160%;
+  height: 160%;
   border-radius: var(--radius-big);
-  transform: translateX(-30%) translateY(-30%);
+  transform: translateX(-20%) translateY(-20%);
 
   pointer-events: none;
   z-index: -1;
-  backdrop-filter: blur(40px) saturate(140%) brightness(0.8);
-  -webkit-backdrop-filter: blur(40px) saturate(140%) brightness(0.8);
+  backdrop-filter: blur(60px) saturate(160%) brightness(0.7);
+  -webkit-backdrop-filter: blur(60px) saturate(160%) brightness(0.7);
 
   /* Circular gradient mask for progressive fade */
   mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 60%);

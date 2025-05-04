@@ -88,7 +88,7 @@ const GlobalStyle = createGlobalStyle`
     --radius-big: 40px;
     --radius-full: 9999px;
 
-    --fontFamily-sans: "InterDisplay", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    --fontFamily-sans: "Geist", "InterDisplay", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
     --fontFamily-serif: "Times New Roman", Times, serif;
     --font-heading: var(--fontFamily-sans);
     --fontWeight-light: 300;
@@ -130,15 +130,15 @@ const GlobalStyle = createGlobalStyle`
     --color-grey-250: #c7c7c7;
     --color-grey-300: #868686;
     --color-grey-400: #6e6e6e;
-    --color-grey-500: #424242;
-    --color-grey-550: #3a3a3a;
-    --color-grey-600: #2c2c2c;
-    --color-grey-700: rgb(44, 44, 44);
-    --color-grey-750: rgb(41, 41, 41);
-    --color-grey-800: rgb(29, 29, 29);
-    --color-grey-850: rgb(21, 21, 21);
-    --color-grey-900: rgb(11, 11, 11);
-    --color-grey-950: rgb(10, 10, 10);
+    --color-grey-500:rgb(74, 74, 74);
+    --color-grey-550:rgb(70, 70, 70);
+    --color-grey-600:rgb(66, 66, 66);
+    --color-grey-700: rgb(53, 53, 53);
+    --color-grey-750: rgb(44, 44, 44);
+    --color-grey-800: rgb(38, 38, 38);
+    --color-grey-850: rgb(32, 32, 32);
+    --color-grey-900: rgb(23, 23, 23);
+    --color-grey-950: rgb(16, 16, 16);
     --color-black: #000;
     --color-salmon: #ff5d51;
     --color-blue: #4899ff;
@@ -156,7 +156,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: ${({ theme }) => theme.background1};
+    background-color: ${({ theme }) => theme.background3};
     color: ${({ theme }) => theme.textPrimary};
     font-family: var(--fontFamily-sans);
   }

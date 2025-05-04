@@ -15,6 +15,7 @@ declare module 'styled-components' {
     surface2: string
     background1: string
     background2: string
+    background3: string
     backgroundContrast: string
 
     borderPrimary: string

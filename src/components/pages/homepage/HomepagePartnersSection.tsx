@@ -119,6 +119,6 @@ const GradientOverlay = styled.div<{ position: 'left' | 'right'; visible: boolea
   z-index: 1;
   opacity: ${({ visible }) => (visible ? 1 : 0)};
   transition: opacity 0.1s ease;
-  background: linear-gradient(to ${({ position }) => position}, transparent, ${({ theme }) => theme.background1});
+  background: linear-gradient(to ${({ position }) => position}, transparent, ${({ theme }) => theme.background3});
   ${({ position }) => position}: 0;
 `

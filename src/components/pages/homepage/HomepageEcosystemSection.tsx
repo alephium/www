@@ -241,7 +241,7 @@ const HomepageEcosystemSection = () => {
   }
 
   return (
-    <SubpageSection wide>
+    <SubpageSection fullWidth>
       <NebulaBackground ref={nebulaRef} />
       <StarBackground ref={canvasRef} />
       <div style={{ position: 'relative', zIndex: 1 }}>

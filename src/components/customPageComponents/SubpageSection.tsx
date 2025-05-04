@@ -1,4 +1,3 @@
-import { colord } from 'colord'
 import { HTMLAttributes, ReactNode } from 'react'
 import styled, { css } from 'styled-components'
 
@@ -8,8 +7,9 @@ interface SubpageSectionProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode
   Parallax?: ReactNode
   wide?: boolean
+  fullWidth?: boolean
   narrow?: boolean
-  contrasted?: boolean
+  bgColor?: '1' | '2' | '3'
   border?: boolean
   isCentered?: boolean
   className?: string
@@ -25,14 +25,13 @@ const SubpageSection = ({ children, Parallax, ...props }: SubpageSectionProps) =
 export default SubpageSection
 
 const SubpageSectionStyled = styled(PageSectionContainer)<
-  Pick<SubpageSectionProps, 'contrasted' | 'isCentered' | 'border'>
+  Pick<SubpageSectionProps, 'bgColor' | 'isCentered' | 'border'>
 >`
   position: relative;
   justify-content: ${({ isCentered }) => (isCentered ? 'center' : 'flex-start')};
   padding-top: var(--spacing-14);
   padding-bottom: var(--spacing-14);
-  background-color: ${({ theme, contrasted }) =>
-    contrasted ? colord(theme.background1).lighten(0.08).toRgbString() : 'transparent'};
+  background-color: ${({ theme, bgColor }) => (bgColor ? theme[`background${bgColor}`] : 'transparent')};
   border-radius: var(--radius-big);
   overflow: hidden;
 

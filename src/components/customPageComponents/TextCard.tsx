@@ -14,7 +14,7 @@ interface TextCardProps extends TextElementProps {
   isAnimated?: boolean
   variants?: Variants
   border?: boolean
-  bgColor?: 'secondary' | 'tertiary'
+  bgColor?: 'surface1' | 'surface2' | 'background2' | 'background3'
 }
 
 const TextCard = ({
@@ -56,7 +56,7 @@ interface CardProps {
   url?: string
   isAnimated: boolean
   border?: boolean
-  bgColor?: 'secondary' | 'tertiary'
+  bgColor?: 'surface1' | 'surface2' | 'background2' | 'background3'
 }
 
 const Card = ({ children, url, isAnimated, border, bgColor }: CardProps) => {
@@ -121,12 +121,18 @@ const Card = ({ children, url, isAnimated, border, bgColor }: CardProps) => {
   )
 }
 
-const cardStyles = ({ border, bgColor }: { border?: boolean; bgColor?: 'secondary' | 'tertiary' }) => css`
+const cardStyles = ({
+  border,
+  bgColor
+}: {
+  border?: boolean
+  bgColor?: 'surface1' | 'surface2' | 'background2' | 'background3'
+}) => css`
   display: flex;
   position: relative;
   flex-direction: column;
   border-radius: var(--radius);
-  background-color: ${({ theme }) => (bgColor === 'tertiary' ? theme.background1 : theme.surface2)};
+  background-color: ${({ theme }) => theme[bgColor ?? 'surface2']};
   background-clip: padding-box;
   text-decoration: none;
   transition: all 0.1s ease-out;
@@ -141,7 +147,7 @@ const cardStyles = ({ border, bgColor }: { border?: boolean; bgColor?: 'secondar
       content: '';
       position: absolute;
       inset: 0;
-      border: 2px solid ${({ theme }) => theme.borderPrimary};
+      border: 1px solid ${({ theme }) => theme.borderPrimary};
       border-radius: inherit;
       backdrop-filter: saturate(200%) brightness(1.1);
       -webkit-backdrop-filter: saturate(200%) brightness(1.1);
@@ -220,9 +226,9 @@ const CardStyled = styled(motion.div)<{
   url?: string
   isAnimated: boolean
   border?: boolean
-  bgColor?: 'secondary' | 'tertiary'
+  bgColor?: 'surface1' | 'surface2' | 'background2' | 'background3'
 }>`
-  ${({ url, border, bgColor }) => cardStyles({ border, bgColor })}
+  ${({ border, bgColor }) => cardStyles({ border, bgColor })}
   ${({ url }) => url && 'transform-style: preserve-3d;'}
   width: 100%;
   height: 100%;
@@ -248,7 +254,7 @@ const CardStyled = styled(motion.div)<{
     `}
 
   .styled-image {
-    filter: grayscale(100%) brightness(0.2);
+    filter: blur(1px) brightness(0.5);
   }
 
   h3 {
@@ -257,10 +263,7 @@ const CardStyled = styled(motion.div)<{
 
   &:hover {
     .styled-image {
-      filter: grayscale(0%) brightness(1);
-    }
-    &:has(.styled-image) h3 {
-      color: var(--color-white) !important;
+      filter: blur(0px) brightness(1);
     }
   }
 `
