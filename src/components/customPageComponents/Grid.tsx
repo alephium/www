@@ -22,7 +22,7 @@ const Grid = styled.div<GridProps>`
           display: grid;
           grid-template-columns: repeat(${columns || 3}, minmax(0, 1fr));
         `}
-  gap: ${({ gap }) => (gap === 'small' ? 'var(--spacing-6)' : 'var(--spacing-12)')};
+  gap: ${({ gap }) => (gap === 'small' ? 'var(--spacing-2)' : 'var(--spacing-6)')};
 
   @media ${deviceBreakPoints.mobile} {
     grid-template-columns: repeat(${({ columns }) => (columns ? columns - 1 : 2)}, minmax(0, 1fr));

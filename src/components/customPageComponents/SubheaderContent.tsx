@@ -5,7 +5,7 @@ const SubheaderContent = styled.div<{ isCentered?: boolean }>`
   display: flex;
   flex-direction: column;
   gap: var(--spacing-4);
-  align-items: ${({ isCentered }) => (isCentered ? 'center' : 'flex-start')};
+  align-items: ${({ isCentered }) => (isCentered ? 'center' : 'initial')};
 `
 
 export default SubheaderContent

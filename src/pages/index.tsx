@@ -4,7 +4,6 @@ import Button from '../components/Button'
 import Page from '../components/customPageComponents/Page'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
-import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import HomepageEcosystemSection from '../components/pages/homepage/HomepageEcosystemSection'
 import HomepageHeroSection from '../components/pages/homepage/HomepageHeroSection'
 import HomepageIntroSection from '../components/pages/homepage/HomepageIntroSection'
@@ -62,16 +61,6 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
           <SectionDivider />
 
           <SubpageSection fullWidth>
-            <GatsbyImageWrapper
-              image={lighthouseImage}
-              alt="Lighthouse background"
-              style={{ height: '100%' }}
-              objectFit="cover"
-              objectPosition="top"
-              loading="lazy"
-              isBackground
-            />
-
             <TextElement isCentered>
               <h2>This is your moment.</h2>
               <p>

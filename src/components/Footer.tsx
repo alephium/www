@@ -119,6 +119,7 @@ const NavigationMenuSocialsStyled = styled(NavigationMenuSocials)`
 const FooterStyled = styled.div`
   padding: var(--spacing-12) 0;
   background-color: ${({ theme }) => theme.background3};
+  border-top: 1px solid ${({ theme }) => theme.borderPrimary};
   color: ${({ theme }) => theme.textPrimary};
   font-size: var(--fontSize-18);
 `

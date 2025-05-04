@@ -4,7 +4,6 @@ import Button from '../components/Button'
 import Grid from '../components/customPageComponents/Grid'
 import ImageIcon from '../components/customPageComponents/ImageIcon'
 import Page from '../components/customPageComponents/Page'
-import SideBySide from '../components/customPageComponents/SideBySide'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
 import SubpageImageHeroSection from '../components/customPageComponents/SubpageImageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
@@ -108,16 +107,14 @@ const CustomPage = (props: PageProps) => {
           <SectionDivider />
 
           <SubpageSection bgColor="3" wide>
-            <SideBySide>
-              <TextElement isCentered>
-                <h2>Why Alephium?</h2>
-                <p>
-                  Alephium combines <strong>the resilience of Proof-of-Work</strong> with{' '}
-                  <strong>sustainable high performance</strong>, and{' '}
-                  <strong>smart contracts that are both safe and easy to use</strong> for unmatched Web3 development.
-                </p>
-              </TextElement>
-            </SideBySide>
+            <TextElement isCentered>
+              <h2>Why Alephium?</h2>
+              <p>
+                Alephium combines <strong>the resilience of Proof-of-Work</strong> with{' '}
+                <strong>sustainable high performance</strong>, and{' '}
+                <strong>smart contracts that are both safe and easy to use</strong> for unmatched Web3 development.
+              </p>
+            </TextElement>
           </SubpageSection>
 
           <SectionDivider />

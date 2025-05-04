@@ -2,7 +2,6 @@ import { forwardRef, ReactNode } from 'react'
 import styled, { css } from 'styled-components'
 
 import { deviceBreakPoints } from '../../styles/global-style'
-import PageSectionContainer from '../PageSectionContainer'
 import TextElement from './TextElement'
 import TitleShadow from './TitleShadow'
 
@@ -57,8 +56,8 @@ const SubpageHeroSectionStyled = styled.section<Pick<SubpageHeroSectionProps, 'm
     inset: 0;
     border: 4px solid ${({ theme }) => theme.borderPrimary};
     border-radius: var(--radius-big);
-    backdrop-filter: saturate(200%) brightness(1.1);
-    -webkit-backdrop-filter: saturate(200%) brightness(1.1);
+    backdrop-filter: saturate(300%) brightness(1.1);
+    -webkit-backdrop-filter: saturate(300%) brightness(1.1);
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     mask-composite: exclude;
     -webkit-mask-composite: xor;
@@ -105,7 +104,7 @@ const TextElementStyled = styled(TextElement)<Pick<SubpageHeroSectionProps, 'spl
   }
 `
 
-const HeroPageSectionContainer = styled(PageSectionContainer)<Pick<SubpageHeroSectionProps, 'alignContent' | 'split'>>`
+const HeroPageSectionContainer = styled.div<Pick<SubpageHeroSectionProps, 'alignContent' | 'split'>>`
   flex-direction: column;
   position: relative;
   display: flex;
@@ -137,6 +136,7 @@ const ContentWrapper = styled.div<Pick<SubpageHeroSectionProps, 'alignContent' |
   position: relative;
   margin-top: 5%;
   margin-bottom: 5%;
+  margin-left: 5%;
   display: flex;
   flex-direction: column;
   z-index: 2;

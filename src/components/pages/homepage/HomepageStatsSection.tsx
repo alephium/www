@@ -123,13 +123,17 @@ const HomepageStatsSection = () => {
   }
 
   return (
-    <SubpageSectionStyled fullWidth bgColor="2">
+    <SubpageSectionStyled fullWidth bgColor="3">
       <TextElementStyled>
         <h2>
-          <small>Web3, </small>
+          <small>Web3,</small>
           <br />
           done right.
+          <hr />
         </h2>
+        <p>
+          Get <strong>why Alephium is different</strong>, in a glance.
+        </p>
       </TextElementStyled>
 
       <StatsContainer>
@@ -141,11 +145,11 @@ const HomepageStatsSection = () => {
             viewport={{ once: true }}
             variants={cardVariants}
           >
-            <TextCard>
-              <TextElement backgroundColor={theme.palette2}>
+            <TextCard border>
+              <TextElement>
                 <TextCardContent>
-                  <h3>Fast</h3>
-                  <TLDRSection>
+                  <h3 style={{ color: theme.palette2 }}>Fast</h3>
+                  <TLDRSection color={theme.palette2}>
                     <span>20,000+ transactions per second</span>
                   </TLDRSection>
                 </TextCardContent>
@@ -168,11 +172,11 @@ const HomepageStatsSection = () => {
             viewport={{ once: true }}
             variants={cardVariants}
           >
-            <TextCard>
-              <TextElement backgroundColor={theme.palette3}>
+            <TextCard border>
+              <TextElement color={theme.palette3}>
                 <TextCardContent>
-                  <h3>Scalable</h3>
-                  <TLDRSection>
+                  <h3 style={{ color: theme.palette3 }}>Scalable</h3>
+                  <TLDRSection color={theme.palette3}>
                     <span>{`${totalTransactions.value.toLocaleString()} total transactions`}</span>
                   </TLDRSection>
                 </TextCardContent>
@@ -195,11 +199,11 @@ const HomepageStatsSection = () => {
             viewport={{ once: true }}
             variants={cardVariants}
           >
-            <TextCard>
-              <TextElement backgroundColor={theme.palette4}>
+            <TextCard border>
+              <TextElement>
                 <TextCardContent>
-                  <h3>Secure</h3>
-                  <TLDRSection>
+                  <h3 style={{ color: theme.palette4 }}>Secure</h3>
+                  <TLDRSection color={theme.palette4}>
                     <span>125+ independent mining nodes</span>
                   </TLDRSection>
                 </TextCardContent>
@@ -222,10 +226,10 @@ const HomepageStatsSection = () => {
             viewport={{ once: true }}
             variants={cardVariants}
           >
-            <TextCard>
-              <TextElement backgroundColor={theme.palette1}>
+            <TextCard border>
+              <TextElement>
                 <TextCardContent>
-                  <h3>Sustainable</h3>
+                  <h3 style={{ color: theme.palette1 }}>Sustainable</h3>
                   <TLDRSection color={theme.palette1}>
                     <span>87% more efficient than PoW</span>
                   </TLDRSection>
@@ -248,10 +252,10 @@ const HomepageStatsSection = () => {
             viewport={{ once: true }}
             variants={cardVariants}
           >
-            <TextCard>
-              <TextElement backgroundColor={theme.palette6}>
+            <TextCard border>
+              <TextElement>
                 <TextCardContent>
-                  <h3>Programmable</h3>
+                  <h3 style={{ color: theme.palette6 }}>Programmable</h3>
                   <TLDRSection color={theme.palette6}>
                     <span>No compromise smart-contracts</span>
                   </TLDRSection>
@@ -274,10 +278,10 @@ const HomepageStatsSection = () => {
             viewport={{ once: true }}
             variants={cardVariants}
           >
-            <TextCard>
-              <TextElement backgroundColor={theme.palette5}>
+            <TextCard border>
+              <TextElement>
                 <TextCardContent>
-                  <h3>Developer-friendly</h3>
+                  <h3 style={{ color: theme.palette5 }}>Developer-friendly</h3>
                   <TLDRSection color={theme.palette5}>
                     <span>Super simple language and novel VM</span>
                   </TLDRSection>

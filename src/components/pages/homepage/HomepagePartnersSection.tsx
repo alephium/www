@@ -69,7 +69,7 @@ const PartnersGridContainer = styled.div`
 const PartnersGrid = styled.div`
   display: inline-flex;
   align-items: center;
-  gap: var(--spacing-6);
+  gap: var(--spacing-4);
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
@@ -96,16 +96,18 @@ const PartnerItem = styled.a`
   transition: transform 0.2s ease;
   position: relative;
   padding: 3px 0;
+  opacity: 0.8;
 
   &:hover {
     transform: translateY(-2px);
+    opacity: 1;
   }
 `
 
 const PartnerLogo = styled.img`
-  height: 38px;
+  height: 30px;
   width: auto;
-  max-width: 80px;
+  max-width: 60px;
   object-fit: contain;
   margin: 0 auto;
 `

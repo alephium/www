@@ -2,16 +2,12 @@ import { motion } from 'framer-motion'
 import { graphql, useStaticQuery } from 'gatsby'
 import { IGatsbyImageData } from 'gatsby-plugin-image'
 import { ReactNode, useMemo } from 'react'
-import styled from 'styled-components'
+import styled, { useTheme } from 'styled-components'
 
 import { deviceBreakPoints } from '../../../styles/global-style'
-import Button from '../../Button'
-import CardImageOverlay from '../../customPageComponents/CardImageOverlay'
 import Grid from '../../customPageComponents/Grid'
-import SideBySide from '../../customPageComponents/SideBySide'
 import SubheaderContent from '../../customPageComponents/SubheaderContent'
 import SubpageSection from '../../customPageComponents/SubpageSection'
-import Surface from '../../customPageComponents/Surface'
 import TextCard from '../../customPageComponents/TextCard'
 import TextCardContent from '../../customPageComponents/TextCardContent'
 import TextElement from '../../customPageComponents/TextElement'
@@ -53,6 +49,7 @@ interface Card {
 }
 
 const HomepageIntroSection = () => {
+  const theme = useTheme()
   const { lightRays, stream, greenWater, goldStream } = useStaticQuery<Queries.HomepageIntroQuery>(homepageIntroQuery)
 
   const hardcodedCards = useMemo<Card[]>(
@@ -123,7 +120,7 @@ const HomepageIntroSection = () => {
   )
 
   return (
-    <SubpageSection id="intro" isCentered>
+    <SubpageSection id="intro" bgColor="3">
       {/* <TextElement isCentered>
         <h2>
           A Network Built
@@ -142,31 +139,31 @@ const HomepageIntroSection = () => {
           </strong>
         </p>
       </TextElement> */}
-      <SubheaderContent isCentered>
-        <SideBySide>
-          <Surface>
-            <TextElement>
-              <h2>
-                Start <br />
-                with Alephium
-                <hr />
-              </h2>
-            </TextElement>
-          </Surface>
+      <SubheaderContent>
+        <SubheaderContent>
+          <TextElement>
+            <h2>
+              <small></small>Start
+              <br />
+              <small>with Alephium</small>
+              <hr />
+            </h2>
+            <p>
+              Don&apos;t waste time, <strong>jump right in.</strong>
+            </p>
+          </TextElement>
+
           <Grid gap="small" columns={2}>
             {hardcodedCards.map((card) => (
-              <TextCard isAnimated variants={cardVariants} key={card.title} bgColor="surface2">
-                <CardImageOverlay image={card.image} overlayTitle={card.title} paletteColor={card.color as any} />
+              <TextCard border url={card.link.url} isAnimated variants={cardVariants} key={card.title}>
                 <TextCardContent>
+                  <h3 style={{ color: theme[card.color] }}>{card.title}</h3>
                   <p>{card.description}</p>
-                  <Button url={card.link.url} squared highlight>
-                    {card.actionText}
-                  </Button>
                 </TextCardContent>
               </TextCard>
             ))}
           </Grid>
-        </SideBySide>
+        </SubheaderContent>
       </SubheaderContent>
     </SubpageSection>
   )

@@ -11,13 +11,13 @@ export const darkTheme: DefaultTheme = {
   textTertiary: 'rgba(255, 255, 255, 0.4)',
 
   surface1: 'var(--color-grey-750)',
-  surface2: 'var(--color-grey-800)',
+  surface2: 'var(--color-grey-900)',
   background1: 'var(--color-grey-850)',
-  background2: 'var(--color-grey-900)',
-  background3: 'var(--color-grey-950)',
+  background2: 'var(--color-grey-950)',
+  background3: 'var(--color-black)',
   backgroundContrast: 'var(--color-grey-800)',
 
-  borderPrimary: 'rgba(255, 255, 255, 0.1)',
+  borderPrimary: 'rgba(255, 255, 255, 0.15)',
 
   link: 'var(--color-white)',
   linkAlt: 'var(--color-grey-700)',

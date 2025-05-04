@@ -14,7 +14,7 @@ interface TextCardProps extends TextElementProps {
   isAnimated?: boolean
   variants?: Variants
   border?: boolean
-  bgColor?: 'surface1' | 'surface2' | 'background2' | 'background3'
+  bgColor?: 'surface1' | 'surface2'
 }
 
 const TextCard = ({
@@ -56,7 +56,7 @@ interface CardProps {
   url?: string
   isAnimated: boolean
   border?: boolean
-  bgColor?: 'surface1' | 'surface2' | 'background2' | 'background3'
+  bgColor?: TextCardProps['bgColor']
 }
 
 const Card = ({ children, url, isAnimated, border, bgColor }: CardProps) => {
@@ -121,18 +121,12 @@ const Card = ({ children, url, isAnimated, border, bgColor }: CardProps) => {
   )
 }
 
-const cardStyles = ({
-  border,
-  bgColor
-}: {
-  border?: boolean
-  bgColor?: 'surface1' | 'surface2' | 'background2' | 'background3'
-}) => css`
+const cardStyles = ({ border, bgColor }: { border?: boolean; bgColor?: TextCardProps['bgColor'] }) => css`
   display: flex;
   position: relative;
   flex-direction: column;
   border-radius: var(--radius);
-  background-color: ${({ theme }) => theme[bgColor ?? 'surface2']};
+  background-color: ${({ theme }) => (bgColor ? theme[bgColor] : 'transparent')};
   background-clip: padding-box;
   text-decoration: none;
   transition: all 0.1s ease-out;
@@ -147,7 +141,7 @@ const cardStyles = ({
       content: '';
       position: absolute;
       inset: 0;
-      border: 1px solid ${({ theme }) => theme.borderPrimary};
+      border: 4px solid ${({ theme }) => theme.borderPrimary};
       border-radius: inherit;
       backdrop-filter: saturate(200%) brightness(1.1);
       -webkit-backdrop-filter: saturate(200%) brightness(1.1);
@@ -192,7 +186,7 @@ const CardContainer = styled(motion.div)<{ isAnimated?: boolean }>`
   display: flex;
   position: relative;
   width: 100%;
-  max-width: 420px;
+  height: 100%;
 
   @media ${deviceBreakPoints.mobile} {
     min-width: 300px;
@@ -208,6 +202,11 @@ const TextElementStyled = styled(TextElement)`
 
   p {
     font-weight: var(--fontWeight-medium);
+  }
+
+  h3 {
+    position: relative;
+    padding-right: var(--spacing-6);
   }
 `
 
@@ -250,6 +249,21 @@ const CardStyled = styled(motion.div)<{
 
       &:hover ${GradientBorder} {
         opacity: 1;
+      }
+
+      h3::after {
+        content: '→';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: var(--fontSize-24);
+        transition: transform 0.3s ease, color 0.3s ease;
+        color: ${({ theme }) => theme.textTertiary};
+      }
+
+      &:hover h3::after {
+        color: ${({ theme }) => theme.textPrimary};
       }
     `}
 

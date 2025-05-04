@@ -19,7 +19,7 @@ const TextElement = styled.div<TextElementProps>`
   ${({ backgroundColor }) =>
     backgroundColor &&
     css`
-      background-color: ${backgroundColor};
+      background: linear-gradient(to right, ${backgroundColor}, transparent);
     `};
 
   * {
@@ -62,15 +62,16 @@ const TextElement = styled.div<TextElementProps>`
   }
 
   > h1 {
+    font-family: 'Geist';
     line-height: 1;
-    font-family: 'Sentient';
+
     font-size: var(--fontSize-70);
     font-weight: var(--fontWeight-semiBold);
   }
 
   > h2 {
     font-family: 'Geist';
-    font-size: var(--fontSize-64);
+    font-size: var(--fontSize-68);
     margin-bottom: var(--spacing-6);
     font-weight: var(--fontWeight-semiBold);
     color: ${({ theme }) => theme.textPrimaryVariation};
@@ -83,7 +84,7 @@ const TextElement = styled.div<TextElementProps>`
 
     hr {
       height: 3px;
-      background-color: ${({ theme }) => theme.textPrimary};
+      background: linear-gradient(to right, ${({ theme }) => theme.textPrimary}, transparent);
       margin: var(--spacing-5) 0 0;
       border: none;
     }
@@ -122,8 +123,8 @@ const TextElement = styled.div<TextElementProps>`
 
   > label {
     color: ${({ theme }) => theme.textTertiary};
-    font-size: var(--fontSize-18);
-    font-weight: var(--fontWeight-semiBold);
+    font-size: var(--fontSize-16);
+    font-weight: var(--fontWeight-medium);
     margin-bottom: var(--spacing-2);
     text-transform: uppercase;
   }
@@ -133,7 +134,7 @@ const TextElement = styled.div<TextElementProps>`
     color: ${({ theme }) => theme.textSecondary};
 
     font-size: var(--fontSize-24);
-    font-weight: var(--fontWeight-semiBold);
+    font-weight: var(--fontWeight-medium);
     line-height: 1.3;
     max-width: 700px;
 
