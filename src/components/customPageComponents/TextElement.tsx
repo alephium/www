@@ -83,10 +83,16 @@ const TextElement = styled.div<TextElementProps>`
     }
 
     hr {
-      height: 3px;
-      background: linear-gradient(to right, ${({ theme }) => theme.textPrimary}, transparent);
+      height: 16px;
+      background: linear-gradient(to right, ${({ theme }) => theme.textSecondary}, transparent);
       margin: var(--spacing-5) 0 0;
       border: none;
+      mask-image: url("data:image/svg+xml,%3Csvg width='100' height='16' viewBox='0 0 100 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 8 Q 12.5 0, 25 8 T 50 8 T 75 8 T 100 8' fill='none' stroke='black' stroke-width='4'/%3E%3C/svg%3E");
+      mask-size: 100px 16px;
+      mask-repeat: repeat-x;
+      -webkit-mask-image: url("data:image/svg+xml,%3Csvg width='100' height='16' viewBox='0 0 100 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 8 Q 12.5 0, 25 8 T 50 8 T 75 8 T 100 8' fill='none' stroke='black' stroke-width='4'/%3E%3C/svg%3E");
+      -webkit-mask-size: 100px 16px;
+      -webkit-mask-repeat: repeat-x;
     }
   }
 

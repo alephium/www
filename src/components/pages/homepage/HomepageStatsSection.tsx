@@ -132,7 +132,7 @@ const HomepageStatsSection = () => {
           <hr />
         </h2>
         <p>
-          Get <strong>why Alephium is different</strong>, in a glance.
+          Dive in. 🐠 <strong>Spot what makes Alephium stand apart.</strong>
         </p>
       </TextElementStyled>
 

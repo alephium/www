@@ -149,7 +149,7 @@ const HomepageIntroSection = () => {
               <hr />
             </h2>
             <p>
-              Don&apos;t waste time, <strong>jump right in.</strong>
+              Don&apos;t waste time, <strong>jump right in. 💦</strong>
             </p>
           </TextElement>
 
