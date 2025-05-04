@@ -8,15 +8,11 @@ import styled from 'styled-components'
 
 import Badge from '../components/Badge'
 import Button from '../components/Button'
-import CardImageOverlay from '../components/customPageComponents/CardImageOverlay'
-import CardsRow from '../components/customPageComponents/CardsRow'
 import Page from '../components/customPageComponents/Page'
 import SideBySide from '../components/customPageComponents/SideBySide'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import SubpageVideoHeroSection from '../components/customPageComponents/SubpageVideoHeroSection'
-import TextCard from '../components/customPageComponents/TextCard'
-import TextCardContent from '../components/customPageComponents/TextCardContent'
 import TextElement from '../components/customPageComponents/TextElement'
 import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import SectionDivider from '../components/SectionDivider'
@@ -104,46 +100,6 @@ const CustomPage = (props: PageProps) => {
               <strong>making Alephium&apos;s technology accessible for all.</strong>
             </p>
           </SubpageVideoHeroSection>
-
-          <SubpageSection>
-            <SubheaderContent isCentered>
-              <CardsRow>
-                <TextCard border>
-                  <CardImageOverlay
-                    image={securityImage?.childImageSharp?.gatsbyImageData}
-                    overlayTitle="Enhanced Security"
-                  />
-                  <TextCardContent>
-                    <p>
-                      Alephium&apos;s non-custodial wallets ensure that only you have access to your funds and private
-                      keys, which are fully encrypted on your device.
-                    </p>
-                  </TextCardContent>
-                </TextCard>
-                <TextCard border>
-                  <CardImageOverlay
-                    image={featuresImage?.childImageSharp?.gatsbyImageData}
-                    overlayTitle="Comprehensive Features"
-                  />
-                  <TextCardContent>
-                    <p>
-                      Whether you prefer desktop applications, browser extensions, or mobile apps, Alephium wallets
-                      allow you to manage ALPH tokens, engage with dApps, and more.
-                    </p>
-                  </TextCardContent>
-                </TextCard>
-                <TextCard border>
-                  <TextCardContent>
-                    <h3>Simple Setup</h3>
-                    <p>
-                      Getting started is straightforward — download your preferred wallet, set up your account, and
-                      you&apos;re ready to explore the Alephium ecosystem.
-                    </p>
-                  </TextCardContent>
-                </TextCard>
-              </CardsRow>
-            </SubheaderContent>
-          </SubpageSection>
 
           <SubpageSection>
             <SubheaderContent>

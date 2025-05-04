@@ -84,7 +84,11 @@ const CustomPage = (props: PageProps) => {
       content={
         <>
           <SubpageVideoHeroSection poster={heroImage} video={heroVideo}>
-            <h1>Get Started with Alephium</h1>
+            <h1>
+              Get Started
+              <br />
+              with Alephium
+            </h1>
             <p>
               <strong>Everything you need to begin your journey in the Alephium ecosystem.</strong>
             </p>
@@ -92,7 +96,7 @@ const CustomPage = (props: PageProps) => {
 
           <SectionDivider />
 
-          <SubpageSection bgColor="3" wide>
+          <SubpageSection bgColor="3" wide border>
             <TextElement isCentered>
               <h2>Why Alephium?</h2>
               <p>
@@ -207,6 +211,7 @@ const CustomPage = (props: PageProps) => {
             alignContent="center"
             bottomMargin
             minHeight="600px"
+            split
           >
             <TextElement isCentered>
               <h2>Explore the ecosystem</h2>

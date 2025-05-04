@@ -13,6 +13,7 @@ interface SubpageSectionProps extends HTMLAttributes<HTMLDivElement> {
   border?: boolean
   isCentered?: boolean
   className?: string
+  edgeGradient?: boolean
 }
 
 const SubpageSection = ({ children, Parallax, ...props }: SubpageSectionProps) => (
@@ -25,7 +26,7 @@ const SubpageSection = ({ children, Parallax, ...props }: SubpageSectionProps) =
 export default SubpageSection
 
 const SubpageSectionStyled = styled(PageSectionContainer)<
-  Pick<SubpageSectionProps, 'bgColor' | 'isCentered' | 'border'>
+  Pick<SubpageSectionProps, 'bgColor' | 'isCentered' | 'border' | 'edgeGradient'>
 >`
   position: relative;
   justify-content: ${({ isCentered }) => (isCentered ? 'center' : 'flex-start')};
@@ -39,5 +40,20 @@ const SubpageSectionStyled = styled(PageSectionContainer)<
     border &&
     css`
       box-shadow: inset 0 0 0 4px ${({ theme }) => theme.borderPrimary};
+    `}
+
+  ${({ edgeGradient, theme }) =>
+    edgeGradient &&
+    css`
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(180deg, ${theme.palette3}20 0%, transparent 10%);
+        pointer-events: none;
+      }
     `}
 `

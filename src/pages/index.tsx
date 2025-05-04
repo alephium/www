@@ -2,7 +2,6 @@ import { graphql, PageProps } from 'gatsby'
 
 import Button from '../components/Button'
 import Page from '../components/customPageComponents/Page'
-import SideBySide from '../components/customPageComponents/SideBySide'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import HomepageEcosystemSection from '../components/pages/homepage/HomepageEcosystemSection'
@@ -57,15 +56,15 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
 
           <SectionDivider />
 
-          <SideBySide>
-            <HomepageEcosystemSection />
-          </SideBySide>
-
-          <SectionDivider />
+          <HomepageEcosystemSection />
 
           <SubpageSection fullWidth>
             <TextElement isCentered>
-              <h2>This is your moment.</h2>
+              <h2>
+                <small>It&apos;s time</small>
+                <br />
+                to make waves.
+              </h2>
               <p>
                 Alephium isn&apos;t just a concept - it&apos;s something we build, together.{' '}
                 <strong>There&apos;s a place for you here and we can&apos;t wait to meet you.</strong>

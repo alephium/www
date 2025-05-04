@@ -55,7 +55,7 @@ const HomepageIntroSection = () => {
   const hardcodedCards = useMemo<Card[]>(
     () => [
       {
-        title: 'Exploring',
+        title: 'Get started',
         description: (
           <>
             Learn more about <strong>Alephium</strong> and start your journey.
@@ -69,7 +69,7 @@ const HomepageIntroSection = () => {
         color: 'palette3'
       },
       {
-        title: 'Building',
+        title: 'Build',
         description: (
           <>
             Explore the <strong>documentation</strong> and start building.
@@ -83,7 +83,7 @@ const HomepageIntroSection = () => {
         color: 'palette5'
       },
       {
-        title: 'Contributing',
+        title: 'Get involved',
         description: (
           <>
             <strong>Apply for a grant</strong> to develop your project on Alephium.
@@ -97,7 +97,7 @@ const HomepageIntroSection = () => {
         color: 'palette1'
       },
       {
-        title: 'Mining',
+        title: 'Mine',
         description: (
           <>
             <strong>Start mining</strong> Alephium and earn rewards.
