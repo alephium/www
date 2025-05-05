@@ -3,7 +3,6 @@ import { useState } from 'react'
 import styled from 'styled-components'
 
 import Toggle from '../Toggle'
-import TextElement from './customPageComponents/TextElement'
 import DualTimeline from './DualTimeline'
 
 export const milestonesQuery = graphql`
@@ -40,9 +39,6 @@ const PageSectionMilestones = () => {
 
   return (
     <SectionWrapper>
-      <TextElement isCentered>
-        <h2>Completed milestones</h2>
-      </TextElement>
       <ToggleSection>
         <ToggleLabel>Summarized</ToggleLabel>
         <Toggle toggled={showDetails} onToggle={handleShowDetailsToggle} />
@@ -57,10 +53,7 @@ const PageSectionMilestones = () => {
 
 export default PageSectionMilestones
 
-const SectionWrapper = styled.section`
-  padding-top: var(--spacing-16);
-  background-color: ${({ theme }) => theme.background1};
-`
+const SectionWrapper = styled.section``
 
 const Centered = styled.div`
   display: flex;

@@ -71,15 +71,8 @@ const walletsQuery = graphql`
 `
 
 const CustomPage = (props: PageProps) => {
-  const {
-    heroImage,
-    heroVideo,
-    desktopScreenshots,
-    extensionScreenshots,
-    mobileScreenshots,
-    securityImage,
-    featuresImage
-  } = useStaticQuery<Queries.WalletsPageQuery>(walletsQuery)
+  const { heroImage, heroVideo, desktopScreenshots, extensionScreenshots, mobileScreenshots } =
+    useStaticQuery<Queries.WalletsPageQuery>(walletsQuery)
   const wallets = useWallets()
 
   return (
@@ -93,7 +86,11 @@ const CustomPage = (props: PageProps) => {
       content={
         <>
           <SubpageVideoHeroSection poster={heroImage} video={heroVideo}>
-            <h1>Our Wallets, Designed for Humans.</h1>
+            <h1>
+              Our Wallets,
+              <br />
+              Designed for Humans.
+            </h1>
             <hr />
             <p>
               Our wallets are designed for ease-of-use,{' '}

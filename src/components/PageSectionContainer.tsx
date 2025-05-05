@@ -15,7 +15,7 @@ const PageSectionContainer = styled.div<PageSectionContainerProps>`
   flex-direction: column;
   justify-content: ${({ justifyContent }) => justifyContent || 'flex-start'};
   max-width: ${({ narrow, wide, fullWidth }) =>
-    narrow ? '680px' : fullWidth ? 'calc(100% - calc(var(--spacing-4) * 2))' : wide ? '90vw' : 'var(--page-width)'};
+    narrow ? '680px' : fullWidth ? 'calc(100% - calc(var(--spacing-4) * 2))' : wide ? '85vw' : 'var(--page-width)'};
   height: ${({ fullHeight }) => (fullHeight ? '100vh' : 'auto')};
   margin: 0 auto;
   position: relative;

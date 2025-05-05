@@ -247,6 +247,11 @@ const HomepageEcosystemSection = () => {
       <div style={{ position: 'relative', zIndex: 1 }}>
         <TextElement isCentered>
           <h2>Built on Alephium.</h2>
+          <p>
+            Alephium is home to hundreds of innovative dApps.
+            <br />
+            <strong>And many more to come.</strong>
+          </p>
         </TextElement>
         <LogosContainer onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
           <InnerContainer>
