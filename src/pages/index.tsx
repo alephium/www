@@ -1,9 +1,10 @@
 import { graphql, PageProps } from 'gatsby'
+import styled from 'styled-components'
 
 import Button from '../components/Button'
 import Page from '../components/customPageComponents/Page'
-import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
+import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import HomepageEcosystemSection from '../components/pages/homepage/HomepageEcosystemSection'
 import HomepageHeroSection from '../components/pages/homepage/HomepageHeroSection'
 import HomepageIntroSection from '../components/pages/homepage/HomepageIntroSection'
@@ -23,7 +24,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    lighthouseImage: file(relativePath: { eq: "lighthouse.png" }) {
+    seaImage: file(relativePath: { eq: "sea-night.png" }) {
       childImageSharp {
         gatsbyImageData(quality: 100)
       }
@@ -33,7 +34,7 @@ export const pageQuery = graphql`
 
 const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
   const content = props.data.allMarkdownRemark.nodes[0].frontmatter
-  const lighthouseImage = props.data.lighthouseImage?.childImageSharp?.gatsbyImageData
+  const seaImage = props.data.seaImage?.childImageSharp?.gatsbyImageData
 
   return (
     <Page
@@ -59,7 +60,12 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
 
           <HomepageEcosystemSection />
 
-          <SubpageSection fullWidth>
+          <SectionDivider />
+
+          <BottomSection>
+            <BottomBackgroundImageContainer>
+              <GatsbyImageWrapper image={seaImage} alt="Sea" />
+            </BottomBackgroundImageContainer>
             <TextElement isCentered>
               <h2>
                 <small>It&apos;s time</small>
@@ -67,16 +73,15 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
                 to make waves.
               </h2>
               <p>
-                Alephium isn&apos;t just a concept - it&apos;s something we build, together.{' '}
+                Alephium isn&apos;t just a vision, it&apos;s a fast growing ecosystem.
+                <br />
                 <strong>There&apos;s a place for you here and we can&apos;t wait to meet you.</strong>
               </p>
               <Button big highlight url="/get-started">
                 Get started
               </Button>
             </TextElement>
-          </SubpageSection>
-
-          <SectionDivider />
+          </BottomSection>
         </>
       }
     />
@@ -84,3 +89,15 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
 }
 
 export default IndexPage
+
+const BottomBackgroundImageContainer = styled.div`
+  position: absolute;
+  inset: 0;
+`
+
+const BottomSection = styled.div`
+  position: relative;
+  height: 600px;
+  width: 100%;
+  margin-top: var(--spacing-4);
+`
