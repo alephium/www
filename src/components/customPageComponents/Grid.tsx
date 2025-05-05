@@ -1,3 +1,5 @@
+import { motion, useInView } from 'framer-motion'
+import React, { useRef } from 'react'
 import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../../styles/global-style'
@@ -6,9 +8,10 @@ interface GridProps {
   gap?: 'large' | 'small'
   columns?: number
   isCentered?: boolean
+  children?: React.ReactNode
 }
 
-const Grid = styled.div<GridProps>`
+const StyledGrid = styled(motion.div)<GridProps>`
   ${({ isCentered, columns }) =>
     isCentered
       ? `
@@ -32,5 +35,46 @@ const Grid = styled.div<GridProps>`
     grid-template-columns: 1fr;
   }
 `
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1
+    }
+  }
+}
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: 'easeOut'
+    }
+  }
+}
+
+const Grid: React.FC<GridProps> = ({ children, ...props }) => {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: '-100px' })
+
+  return (
+    <StyledGrid
+      ref={ref}
+      variants={containerVariants}
+      initial="hidden"
+      animate={isInView ? 'visible' : 'hidden'}
+      {...props}
+    >
+      {React.Children.map(children, (child) => (
+        <motion.div variants={itemVariants}>{child}</motion.div>
+      ))}
+    </StyledGrid>
+  )
+}
 
 export default Grid

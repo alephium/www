@@ -34,7 +34,7 @@ type StatScalar = Stat<number>
 type StatScalarKeys = 'totalTransactions'
 type StatsScalarData = { [key in StatScalarKeys]: StatScalar }
 
-const HomepageStatsSection = () => {
+const HomepageUSPSection = () => {
   const theme = useTheme()
   const [explorerClient, setExplorerClient] = useState<ExplorerClient>()
   const [statsScalarData, setStatsScalarData] = useState<StatsScalarData>({
@@ -443,7 +443,7 @@ const Arrow = styled.span`
   line-height: 1;
 `
 
-export default HomepageStatsSection
+export default HomepageUSPSection
 
 const Stat = styled.div`
   font-size: var(--fontSize-28);

@@ -7,8 +7,9 @@ import TextElement from '../components/customPageComponents/TextElement'
 import HomepageEcosystemSection from '../components/pages/homepage/HomepageEcosystemSection'
 import HomepageHeroSection from '../components/pages/homepage/HomepageHeroSection'
 import HomepageIntroSection from '../components/pages/homepage/HomepageIntroSection'
+import HomepageNumbersSection from '../components/pages/homepage/HomepageNumbersSection'
 import HomepagePartnersSection from '../components/pages/homepage/HomepagePartnersSection'
-import HomepageStatsSection from '../components/pages/homepage/HomepageStatsSection'
+import HomepageUSPSection from '../components/pages/homepage/HomepageUSPSection'
 import SectionDivider from '../components/SectionDivider'
 
 export const pageQuery = graphql`
@@ -52,9 +53,11 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
 
           <SectionDivider />
 
-          <HomepageStatsSection />
+          <HomepageUSPSection />
 
           <SectionDivider />
+
+          <HomepageNumbersSection />
 
           <HomepageEcosystemSection />
 
