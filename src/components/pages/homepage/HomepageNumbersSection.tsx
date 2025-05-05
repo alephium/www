@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import styled from 'styled-components'
 
-import ArrowedLink from '../../../components/ArrowedLink'
 import Column from '../../../components/Columns/Column'
 import Columns from '../../../components/Columns/Columns'
 import NumbersInfo from '../../../components/NumbersInfo'
@@ -13,6 +12,10 @@ import SubsectionTextHeader from '../../../components/SubsectionTextHeader'
 import Waves from '../../../components/Wave/Waves'
 import { deviceBreakPoints } from '../../../styles/global-style'
 import { formatNumberForDisplay } from '../../../utils/numbers'
+import Button from '../../Button'
+import SubheaderContent from '../../customPageComponents/SubheaderContent'
+import SubpageSection from '../../customPageComponents/SubpageSection'
+import TextElement from '../../customPageComponents/TextElement'
 
 const baseUrl = 'https://backend.mainnet.alephium.org'
 const ONE_DAY = 1000 * 60 * 60 * 24
@@ -183,26 +186,28 @@ const HomepageNumbersSection = () => {
   ]
 
   return (
-    <NumbersSection>
-      <motion.div
-        initial={{ y: 50, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.5 }}
-        style={{ zIndex: 5000, width: '100%' }}
-        viewport={{ once: true }}
-      >
-        <PageSectionContainer>
-          <BorderedBox ref={boxRef}>
-            <ArrowedLinkStyled url="https://explorer.alephium.org/" target="_blank" rel="noopener noreferrer">
-              Check out our explorer
-            </ArrowedLinkStyled>
-            <ColumnsStyled>
-              {columns.map((column) => (
-                <NumbersColumn key={column.description}>
-                  <NumbersInfo {...column} />
-                </NumbersColumn>
-              ))}
-              {/*
+    <SubpageSection>
+      <TextElement>
+        <h2>Some Numbers.</h2>
+        <p>Let the facts speak for themselves.</p>
+      </TextElement>
+      <SubheaderContent>
+        <motion.div
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          style={{ zIndex: 5000, width: '100%' }}
+          viewport={{ once: true }}
+        >
+          <PageSectionContainer>
+            <BorderedBox ref={boxRef}>
+              <ColumnsStyled>
+                {columns.map((column) => (
+                  <NumbersColumn key={column.description}>
+                    <NumbersInfo {...column} />
+                  </NumbersColumn>
+                ))}
+                {/*
               <NumbersColumn>
                 <NumbersInfo
                   description="Active addresses"
@@ -211,58 +216,58 @@ const HomepageNumbersSection = () => {
                 />
               </NumbersColumn>
             */}
-              <NumbersColumn>
-                <NumbersInfo
-                  description="Chain TVL"
-                  value={
-                    chainTVL && protocolsStakingTVL
-                      ? '$' + formatNumberForDisplay(chainTVL + protocolsStakingTVL).join('')
-                      : '-'
-                  }
-                  isLoading={bridgeTVL === undefined}
-                />
-              </NumbersColumn>
-              <NumbersColumn>
-                <NumbersInfo
-                  description="Bridged TVL"
-                  value={bridgeTVL ? '$' + formatNumberForDisplay(bridgeTVL).join('') : '-'}
-                  isLoading={bridgeTVL === undefined}
-                />
-              </NumbersColumn>
-            </ColumnsStyled>
-            <Waves parentRef={boxRef} />
-          </BorderedBox>
-        </PageSectionContainer>
-      </motion.div>
-    </NumbersSection>
+                <NumbersColumn>
+                  <NumbersInfo
+                    description="Chain TVL"
+                    value={
+                      chainTVL && protocolsStakingTVL
+                        ? '$' + formatNumberForDisplay(chainTVL + protocolsStakingTVL).join('')
+                        : '-'
+                    }
+                    isLoading={bridgeTVL === undefined}
+                  />
+                </NumbersColumn>
+                <NumbersColumn>
+                  <NumbersInfo
+                    description="Bridged TVL"
+                    value={bridgeTVL ? '$' + formatNumberForDisplay(bridgeTVL).join('') : '-'}
+                    isLoading={bridgeTVL === undefined}
+                  />
+                </NumbersColumn>
+              </ColumnsStyled>
+              <ButtonContainer>
+                <Button url="https://explorer.alephium.org/" big highlight>
+                  Check out our explorer
+                </Button>
+              </ButtonContainer>
+              <Waves parentRef={boxRef} />
+            </BorderedBox>
+          </PageSectionContainer>
+        </motion.div>
+      </SubheaderContent>
+    </SubpageSection>
   )
 }
 
 export default HomepageNumbersSection
 
-const NumbersSection = styled.section`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: var(--spacing-12);
-  padding-bottom: var(--spacing-20);
-  background-color: ${({ theme }) => theme.background3};
-
-  @media ${deviceBreakPoints.mobile} {
-    margin-top: var(--spacing-6);
-    margin-bottom: var(--spacing-10);
-  }
-`
-
 const BorderedBox = styled.div`
   flex: 1;
-  border-radius: 30px;
-  background-color: ${({ theme }) => theme.surface1};
+  border-radius: var(--radius-big);
+  border: 4px solid ${({ theme }) => theme.borderPrimary};
   padding: var(--spacing-11);
   padding-bottom: var(--spacing-16);
   box-shadow: 0 50px 50px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   position: relative;
+  min-height: 200px;
+`
+
+const ButtonContainer = styled.div`
+  position: absolute;
+  bottom: var(--spacing-2);
+  right: var(--spacing-2);
+  z-index: 1;
 `
 
 const NumbersColumn = styled(Column)`
@@ -294,10 +299,6 @@ const NumbersColumn = styled(Column)`
 
 const SubsectionTextHeaderStyled = styled(SubsectionTextHeader)`
   margin-bottom: var(--spacing-4);
-`
-
-const ArrowedLinkStyled = styled(ArrowedLink)`
-  margin-bottom: var(--spacing-10);
 `
 
 const ColumnsStyled = styled(Columns)`

@@ -313,18 +313,6 @@ const NebulaBackground = styled.div`
   z-index: -1;
   will-change: transform;
   transform-origin: center;
-
-  &::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at 50% 50%, rgba(0, 0, 255, 0.12) 0%, transparent 25%),
-      radial-gradient(circle at 50% 50%, rgba(27, 19, 113, 0.1) 40%, transparent 65%),
-      radial-gradient(circle at 50% 50%, rgba(0, 21, 158, 0.165) 0%, transparent 35%),
-      radial-gradient(circle at 50% 50%, rgba(0, 7, 62, 0.1) 75%, transparent 85%),
-      radial-gradient(circle at 50% 50%, rgba(33, 33, 35, 0.133) 85%, transparent 100%);
-    filter: blur(40px);
-  }
 `
 
 const LogosContainer = styled.div`
