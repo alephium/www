@@ -9,7 +9,6 @@ import HomepageEcosystemSection from '../components/pages/homepage/HomepageEcosy
 import HomepageHeroSection from '../components/pages/homepage/HomepageHeroSection'
 import HomepageIntroSection from '../components/pages/homepage/HomepageIntroSection'
 import HomepageNumbersSection from '../components/pages/homepage/HomepageNumbersSection'
-import HomepagePartnersSection from '../components/pages/homepage/HomepagePartnersSection'
 import HomepageUSPSection from '../components/pages/homepage/HomepageUSPSection'
 import SectionDivider from '../components/SectionDivider'
 
@@ -47,8 +46,6 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
       content={
         <>
           <HomepageHeroSection />
-
-          {content?.partnersSection && <HomepagePartnersSection {...content.partnersSection} />}
 
           <HomepageIntroSection />
 

@@ -13,8 +13,8 @@ export interface MeshGradientEffectProps {
 }
 
 const MeshGradientEffect: React.FC<MeshGradientEffectProps> = ({
-  contrast = 1.5,
-  brightness = 1.0,
+  contrast = 1.0,
+  brightness = 1.5,
   blendMode = 'screen',
   speed = 0.25
 }) => {
@@ -31,7 +31,6 @@ const MeshGradientEffect: React.FC<MeshGradientEffectProps> = ({
 
     gl.clearColor(0, 0, 0, 0)
 
-    // Shader compile helper
     function compileShader(src: string, type: number) {
       const shader = gl.createShader(type)!
       gl.shaderSource(shader, src)
@@ -42,7 +41,6 @@ const MeshGradientEffect: React.FC<MeshGradientEffectProps> = ({
       return shader
     }
 
-    // Vertex shader
     const vsSource = `
       precision mediump float;
       attribute vec2 a_pos;
@@ -54,7 +52,7 @@ const MeshGradientEffect: React.FC<MeshGradientEffectProps> = ({
       }
     `
 
-    // Fragment shader with contrast, brightness, speed, swirls
+    // Fragment shader with softened swirls
     const fsSource = `
       precision mediump float;
       uniform float u_time;
@@ -64,22 +62,22 @@ const MeshGradientEffect: React.FC<MeshGradientEffectProps> = ({
       uniform float u_brightness;
       varying vec2 v_uv;
 
-      // aspect-aware swirl
+      // Reduced-intensity swirl
       vec2 swirlAspect(vec2 uv, vec2 center, float strength) {
         float aspect = u_resolution.x / u_resolution.y;
         vec2 p = (uv - center) * vec2(aspect, 1.0);
         float dist = length(p);
-        float angle = strength / (dist + 0.05);
-        float s = sin(angle), c = cos(angle);
+        // soften swirl: lower strength amplitude & larger falloff
+        float angle = (strength * 0.3) / (dist + 0.2);
+        float s = sin(angle);
+        float c = cos(angle);
         p = mat2(c, -s, s, c) * p;
         return center + p / vec2(aspect, 1.0);
       }
 
-      // apply contrast around midpoint 0.5
       vec3 applyContrast(vec3 c, float contrast) {
         return (c - 0.5) * contrast + 0.5;
       }
-      // simple brightness multiplier
       vec3 applyBrightness(vec3 c, float brightness) {
         return c * brightness;
       }
@@ -88,23 +86,15 @@ const MeshGradientEffect: React.FC<MeshGradientEffectProps> = ({
         float t = u_time * u_speed;
         vec2 uv = v_uv;
 
-        // dynamic swirl centers
-        vec2 c0 = vec2(0.3 + 0.05 * sin(t * 1.1), 0.4 + 0.05 * cos(t * 1.3));
-        vec2 c1 = vec2(0.7 + 0.05 * cos(t * 0.8), 0.6 + 0.05 * sin(t * 1.0));
-        vec2 c2 = vec2(0.4 + 0.05 * sin(t * 1.7), 0.8 + 0.05 * cos(t * 1.5));
-        vec2 c3 = vec2(0.6 + 0.05 * cos(t * 1.2), 0.2 + 0.05 * sin(t * 1.4));
+        // fewer, softer swirls
+        vec2 c0 = vec2(0.3 + 0.03 * sin(t * 1.1), 0.4 + 0.03 * cos(t * 1.3));
+        vec2 c1 = vec2(0.7 + 0.03 * cos(t * 0.8), 0.6 + 0.03 * sin(t * 1.0));
 
-        // evolving swirl strengths
-        float s0 = 0.6 + 0.3 * sin(t * 0.5);
-        float s1 = -0.6 + 0.3 * cos(t * 0.6);
-        float s2 = 0.5 + 0.2 * cos(t * 0.7);
-        float s3 = -0.5 + 0.2 * sin(t * 0.9);
+        float s0 = 0.3 + 0.1 * sin(t * 0.5);
+        float s1 = -0.3 + 0.1 * cos(t * 0.6);
 
-        // apply swirls
         uv = swirlAspect(uv, c0, s0);
         uv = swirlAspect(uv, c1, s1);
-        uv = swirlAspect(uv, c2, s2);
-        uv = swirlAspect(uv, c3, s3);
 
         // color ramps
         vec3 col1 = vec3(0.2, 0.4, 0.9);
@@ -115,7 +105,7 @@ const MeshGradientEffect: React.FC<MeshGradientEffectProps> = ({
         float m2 = smoothstep(0.0, 1.0, uv.y + 0.1);
         vec3 color = mix(mix(col1, col2, m1), mix(col3, col4, m1), m2);
 
-        // contrast then brightness
+        // contrast & brightness
         color = applyContrast(color, u_contrast);
         color = applyBrightness(color, u_brightness);
 
@@ -123,7 +113,6 @@ const MeshGradientEffect: React.FC<MeshGradientEffectProps> = ({
       }
     `
 
-    // compile & link
     const vertShader = compileShader(vsSource, gl.VERTEX_SHADER)
     const fragShader = compileShader(fsSource, gl.FRAGMENT_SHADER)
     const program = gl.createProgram()!
@@ -135,14 +124,13 @@ const MeshGradientEffect: React.FC<MeshGradientEffectProps> = ({
     }
     gl.useProgram(program)
 
-    // uniform locations
-    const uTimeLoc = gl.getUniformLocation(program, 'u_time')!
-    const uSpeedLoc = gl.getUniformLocation(program, 'u_speed')!
-    const uResLoc = gl.getUniformLocation(program, 'u_resolution')!
-    const uContrastLoc = gl.getUniformLocation(program, 'u_contrast')!
-    const uBrightLoc = gl.getUniformLocation(program, 'u_brightness')!
+    const uTime = gl.getUniformLocation(program, 'u_time')!
+    const uSpeed = gl.getUniformLocation(program, 'u_speed')!
+    const uRes = gl.getUniformLocation(program, 'u_resolution')!
+    const uContr = gl.getUniformLocation(program, 'u_contrast')!
+    const uBright = gl.getUniformLocation(program, 'u_brightness')!
 
-    // build mesh grid
+    // grid setup
     const GRID = 30
     const positions: number[] = []
     const uvCoords: number[] = []
@@ -159,8 +147,6 @@ const MeshGradientEffect: React.FC<MeshGradientEffectProps> = ({
         indices.push(i, i + 1, i + GRID + 1, i + 1, i + GRID + 2, i + GRID + 1)
       }
     }
-
-    // setup buffers
     function setupBuffer(data: Float32Array, attr: string, size: number) {
       const buf = gl.createBuffer()!
       gl.bindBuffer(gl.ARRAY_BUFFER, buf)
@@ -175,26 +161,24 @@ const MeshGradientEffect: React.FC<MeshGradientEffectProps> = ({
     gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, idxBuf)
     gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, new Uint16Array(indices), gl.STATIC_DRAW)
 
-    // resize
     function updateSize() {
       const w = canvas.parentElement?.clientWidth ?? window.innerWidth
       const h = canvas.parentElement?.clientHeight ?? window.innerHeight
       canvas.width = w
       canvas.height = h
       gl.viewport(0, 0, w, h)
-      gl.uniform2f(uResLoc, w, h)
+      gl.uniform2f(uRes, w, h)
     }
     updateSize()
     window.addEventListener('resize', updateSize)
 
-    // render loop
     function render() {
       gl.clear(gl.COLOR_BUFFER_BIT)
       const now = performance.now() * 0.001
-      gl.uniform1f(uTimeLoc, now)
-      gl.uniform1f(uSpeedLoc, speed)
-      gl.uniform1f(uContrastLoc, contrast)
-      gl.uniform1f(uBrightLoc, brightness)
+      gl.uniform1f(uTime, now)
+      gl.uniform1f(uSpeed, speed)
+      gl.uniform1f(uContr, contrast)
+      gl.uniform1f(uBright, brightness)
       gl.drawElements(gl.TRIANGLES, indices.length, gl.UNSIGNED_SHORT, 0)
       requestAnimationFrame(render)
     }

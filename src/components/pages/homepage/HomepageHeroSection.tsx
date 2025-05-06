@@ -1,3 +1,4 @@
+import { graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../../../styles/global-style'
@@ -6,13 +7,30 @@ import Button from '../../Button'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextElement from '../../customPageComponents/TextElement'
 import EddyBackground from '../../EddyBackground'
-import PageSectionContainer from '../../PageSectionContainer'
+import HomepagePartnersSection from './HomepagePartnersSection'
 
-const HomepageHeroSection = () => (
-  <PageSectionContainer fullWidth>
-    <EddyBackground />
-    <SubpageSection>
-      <TextElement isCentered>
+export const pageQuery = graphql`
+  query HeroSection {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/homepage.md/" } }) {
+      nodes {
+        frontmatter {
+          partnersSection {
+            ...HomepagePartnersSection
+          }
+        }
+      }
+    }
+  }
+`
+
+const HomepageHeroSection = () => {
+  const { allMarkdownRemark } = useStaticQuery<Queries.HeroSectionQuery>(pageQuery)
+  const content = allMarkdownRemark.nodes[0].frontmatter
+
+  return (
+    <SubpageSectionStyled wide>
+      <EddyBackground />
+      <TextElementStyled isCentered>
         <h1>The Web3 you were promised.</h1>
         <p>
           <strong>
@@ -21,7 +39,7 @@ const HomepageHeroSection = () => (
             only on Alephium.
           </strong>
         </p>
-      </TextElement>
+      </TextElementStyled>
 
       <Buttons>
         <Button big highlight url="https://docs.alephium.org">
@@ -29,11 +47,20 @@ const HomepageHeroSection = () => (
         </Button>
         <ArrowedLink url="/communities">Join the community</ArrowedLink>
       </Buttons>
-    </SubpageSection>
-  </PageSectionContainer>
-)
+      {content?.partnersSection && <HomepagePartnersSection {...content.partnersSection} />}
+    </SubpageSectionStyled>
+  )
+}
 
 export default HomepageHeroSection
+
+const SubpageSectionStyled = styled(SubpageSection)`
+  padding-bottom: var(--spacing-6);
+`
+
+const TextElementStyled = styled(TextElement)`
+  mix-blend-mode: difference;
+`
 
 const Buttons = styled.div`
   display: flex;

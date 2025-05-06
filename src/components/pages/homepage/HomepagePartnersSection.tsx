@@ -48,8 +48,6 @@ const HomepagePartnersSection = (content: Queries.HomepagePartnersSectionFragmen
               )
           )}
         </PartnersGrid>
-        <GradientOverlay position="left" visible={showLeftGradient} />
-        <GradientOverlay position="right" visible={showRightGradient} />
       </PartnersGridContainer>
     </SubheaderContent>
   )
@@ -64,6 +62,7 @@ const PartnersGridContainer = styled.div`
   justify-content: center;
   margin: 0 auto;
   overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, black 60px, black calc(100% - 60px), transparent);
 `
 
 const PartnersGrid = styled.div`
@@ -96,11 +95,9 @@ const PartnerItem = styled.a`
   transition: transform 0.2s ease;
   position: relative;
   padding: 3px 0;
-  opacity: 0.8;
 
   &:hover {
     transform: translateY(-2px);
-    opacity: 1;
   }
 `
 
@@ -110,17 +107,5 @@ const PartnerLogo = styled.img`
   max-width: 60px;
   object-fit: contain;
   margin: 0 auto;
-`
-
-const GradientOverlay = styled.div<{ position: 'left' | 'right'; visible: boolean }>`
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 60px;
-  pointer-events: none;
-  z-index: 1;
-  opacity: ${({ visible }) => (visible ? 1 : 0)};
-  transition: opacity 0.1s ease;
-  background: linear-gradient(to ${({ position }) => position}, transparent, ${({ theme }) => theme.background3});
-  ${({ position }) => position}: 0;
+  filter: brightness(0);
 `
