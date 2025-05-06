@@ -1,31 +1,27 @@
-import { graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../../../styles/global-style'
 import ArrowedLink from '../../ArrowedLink'
 import Button from '../../Button'
-import SubpageVideoHeroSection from '../../customPageComponents/SubpageVideoHeroSection'
+import SubpageSection from '../../customPageComponents/SubpageSection'
+import TextElement from '../../customPageComponents/TextElement'
+import EddyBackground from '../../EddyBackground'
+import PageSectionContainer from '../../PageSectionContainer'
 
-export const homepageHeroQuery = graphql`
-  query HomepageHero {
-    heroImage: file(relativePath: { eq: "lighthouse-daylight.png" }) {
-      ...HeroImage
-    }
-    heroVideo: file(relativePath: { eq: "lighthouse-daylight-scrub.mp4" }) {
-      publicURL
-    }
-  }
-`
-
-const HomepageHeroSection = () => {
-  const { heroImage, heroVideo } = useStaticQuery<Queries.HomepageHeroQuery>(homepageHeroQuery)
-
-  return (
-    <SubpageVideoHeroSection video={heroVideo} poster={heroImage}>
-      <h1>The Web3 you were promised.</h1>
-      <p>
-        <strong>Scalable Proof-of-Less-Work and secure Smart Contracts, only on Alephium.</strong>
-      </p>
+const HomepageHeroSection = () => (
+  <PageSectionContainer fullWidth>
+    <EddyBackground />
+    <SubpageSection>
+      <TextElement isCentered>
+        <h1>The Web3 you were promised.</h1>
+        <p>
+          <strong>
+            Scalable Proof-of-Less-Work and secure Smart Contracts,
+            <br />
+            only on Alephium.
+          </strong>
+        </p>
+      </TextElement>
 
       <Buttons>
         <Button big highlight url="https://docs.alephium.org">
@@ -33,14 +29,15 @@ const HomepageHeroSection = () => {
         </Button>
         <ArrowedLink url="/communities">Join the community</ArrowedLink>
       </Buttons>
-    </SubpageVideoHeroSection>
-  )
-}
+    </SubpageSection>
+  </PageSectionContainer>
+)
 
 export default HomepageHeroSection
 
 const Buttons = styled.div`
   display: flex;
+  justify-content: center;
   gap: var(--spacing-4);
   margin-top: var(--spacing-8);
 

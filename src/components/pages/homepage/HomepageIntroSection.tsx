@@ -143,9 +143,7 @@ const HomepageIntroSection = () => {
         <SubheaderContent>
           <TextElement>
             <h2>
-              Start
-              <br />
-              with Alephium
+              Start with Alephium.
               <hr />
             </h2>
             <p>

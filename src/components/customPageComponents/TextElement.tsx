@@ -71,10 +71,10 @@ const TextElement = styled.div<TextElementProps>`
 
   > h2 {
     font-family: 'Geist';
-    font-size: var(--fontSize-68);
+    font-size: var(--fontSize-60);
     margin-bottom: var(--spacing-6);
     font-weight: var(--fontWeight-semiBold);
-    color: ${({ theme }) => theme.textPrimaryVariation};
+    color: ${({ theme }) => theme.textPrimary};
     line-height: 1;
 
     small {

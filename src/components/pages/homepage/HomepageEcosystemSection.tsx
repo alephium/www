@@ -6,111 +6,215 @@ import Button from '../../Button'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextElement from '../../customPageComponents/TextElement'
 
-interface Star {
+interface LogoPosition {
   x: number
   y: number
   size: number
-  opacity: number
-  speed: number
   depth: number
 }
+
+const ROTATION_INTERVAL = 1500
+const FADE_DURATION = 1000
+const LOGOS_VISIBLE = 50
+const LOGOS_TO_ROTATE = 2
 
 const HomepageEcosystemSection = () => {
   const [dapps, setDapps] = useState<Array<{ name: string; media: { logoUrl: string } }>>([])
   const [hoverPosition, setHoverPosition] = useState<{ x: number; y: number } | null>(null)
   const [hoveredAppName, setHoveredAppName] = useState<string | null>(null)
-  const [isMobile, setIsMobile] = useState(false)
-  const canvasRef = useRef<HTMLCanvasElement>(null)
-  const starsRef = useRef<Star[]>([])
-  const zIndexOrderRef = useRef<number[]>([])
-  const nebulaRef = useRef<HTMLDivElement>(null)
+  const containerRef = useRef<HTMLDivElement>(null)
+  const allPositionsRef = useRef<LogoPosition[]>([])
 
   // Add refs for smooth animation
   const currentOffsetRef = useRef({ x: 0, y: 0 })
   const targetOffsetRef = useRef({ x: 0, y: 0 })
   const lastFrameTimeRef = useRef<number>(0)
 
+  // For each slot, track { currentDappIdx, nextDappIdx, fadeState }
+  interface LogoSlot {
+    currentDappIdx: number
+    nextDappIdx: number | null
+    fadeState: 'idle' | 'fading'
+  }
+  const [logoSlots, setLogoSlots] = useState<LogoSlot[]>([])
+  const [fadeIn, setFadeIn] = useState<boolean[]>([])
+
+  const initializeLogoPositions = (numLogos: number) => {
+    if (!containerRef.current) return
+
+    const container = containerRef.current
+    const containerWidth = container.offsetWidth
+    const containerHeight = container.offsetHeight
+    const centerX = containerWidth / 2
+    const centerY = containerHeight / 2
+    const buttonRadius = Math.max(Math.min(containerWidth, containerHeight) * 0.13, 60)
+    const minDistance = Math.max(Math.min(containerWidth, containerHeight) * 0.09, 40)
+    const maxAttempts = 300
+    const padding = 10
+
+    const positions: LogoPosition[] = []
+
+    for (let i = 0; i < numLogos; i++) {
+      let attempts = 0
+      let validPosition = false
+
+      while (!validPosition && attempts < maxAttempts) {
+        const x = Math.random() * (containerWidth - padding * 2) + padding
+        const y = Math.random() * (containerHeight - padding * 2) + padding
+
+        // Check distance from center (button)
+        const distanceFromCenter = Math.sqrt(Math.pow(x - centerX, 2) + Math.pow(y - centerY, 2))
+
+        // Check distance from other logos
+        const tooClose = positions.some((pos) => {
+          const distance = Math.sqrt(Math.pow(x - pos.x, 2) + Math.pow(y - pos.y, 2))
+          return distance < minDistance
+        })
+
+        if (distanceFromCenter > buttonRadius && !tooClose) {
+          const size = Math.random() * 0.4 + 0.6
+          const depth = Math.random() + 0.5
+          positions.push({ x, y, size, depth })
+          validPosition = true
+        }
+
+        attempts++
+      }
+    }
+
+    allPositionsRef.current = positions
+  }
+
   useEffect(() => {
     fetch('https://publicapi.alph.land/api/dapps').then((res) =>
       res.json().then((data) => {
         setDapps(data)
-        // Create a randomized z-index order
-        const order = Array.from({ length: data.length }, (_, i) => i)
-        for (let i = order.length - 1; i > 0; i--) {
-          const j = Math.floor(Math.random() * (i + 1))
-          ;[order[i], order[j]] = [order[j], order[i]]
-        }
-        zIndexOrderRef.current = order
       })
     )
-
-    // Initial check
-    const mediaQuery = window.matchMedia(deviceBreakPoints.mobile)
-    setIsMobile(mediaQuery.matches)
-
-    // Add resize listener
-    const handleResize = () => {
-      setIsMobile(mediaQuery.matches)
-    }
-
-    mediaQuery.addListener(handleResize)
-    return () => mediaQuery.removeListener(handleResize)
   }, [])
 
-  // Initialize stars
+  // On mount and when dapps or positions change, initialize logoSlots and fadeIn
   useEffect(() => {
-    const canvas = canvasRef.current
-    if (!canvas) return
+    if (dapps.length === 0 || allPositionsRef.current.length === 0) return
+    setLogoSlots(
+      Array.from({ length: LOGOS_VISIBLE }, (_, i) => ({
+        currentDappIdx: i % dapps.length,
+        nextDappIdx: null,
+        fadeState: 'idle'
+      }))
+    )
+    setFadeIn(Array.from({ length: LOGOS_VISIBLE }, () => false))
+  }, [dapps, allPositionsRef.current.length])
 
-    const ctx = canvas.getContext('2d', { alpha: true }) // Changed to true for transparency
-    if (!ctx) return
+  // Use ResizeObserver to handle container size changes
+  useEffect(() => {
+    if (!containerRef.current || dapps.length === 0) return
+    const container = containerRef.current
+    let throttleTimeout: ReturnType<typeof setTimeout> | null = null
 
-    // Set canvas size
-    const resizeCanvas = () => {
-      const rect = canvas.getBoundingClientRect()
-      canvas.width = rect.width * window.devicePixelRatio
-      canvas.height = rect.height * window.devicePixelRatio
-      ctx.scale(window.devicePixelRatio, window.devicePixelRatio)
+    const handleResize = () => {
+      initializeLogoPositions(LOGOS_VISIBLE)
     }
-    resizeCanvas()
-    window.addEventListener('resize', resizeCanvas)
 
-    // Create stars
-    const stars: Star[] = []
-    const numStars = 150 // Reduced number for better performance
-    for (let i = 0; i < numStars; i++) {
-      stars.push({
-        x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height,
-        size: Math.random() * 2 + 1,
-        opacity: Math.random() * 0.5 + 0.5,
-        speed: Math.random() * 0.2 + 0.1,
-        depth: Math.random() * 0.5 + 0.5
-      })
-    }
-    starsRef.current = stars
+    handleResize()
+
+    const resizeObserver = new window.ResizeObserver(() => {
+      if (throttleTimeout) return
+      throttleTimeout = setTimeout(() => {
+        handleResize()
+        throttleTimeout = null
+      }, 200)
+    })
+    resizeObserver.observe(container)
 
     return () => {
-      window.removeEventListener('resize', resizeCanvas)
+      resizeObserver.disconnect()
+      if (throttleTimeout) clearTimeout(throttleTimeout)
     }
-  }, [])
+  }, [dapps])
 
-  // Animation loop for stars with inertia
+  // Rotation effect: only change LOGOS_TO_ROTATE logos per interval, with crossfade
   useEffect(() => {
-    const canvas = canvasRef.current
-    const nebula = nebulaRef.current
-    if (!canvas || !nebula) return
+    if (dapps.length === 0 || logoSlots.length === 0) return
+    let timeout: ReturnType<typeof setTimeout>
+    let fadeTimeout: ReturnType<typeof setTimeout>
+    const interval = setInterval(() => {
+      // Pick LOGOS_TO_ROTATE random indices to update
+      const indicesToUpdate: number[] = []
+      const usedIndices = new Set<number>()
+      while (indicesToUpdate.length < LOGOS_TO_ROTATE && indicesToUpdate.length < logoSlots.length) {
+        const idx = Math.floor(Math.random() * logoSlots.length)
+        if (!usedIndices.has(idx)) {
+          indicesToUpdate.push(idx)
+          usedIndices.add(idx)
+        }
+      }
+      // Build a set of all currently visible dapp indices (including nextDappIdx for slots in crossfade)
+      const visibleDappIndices = new Set<number>()
+      logoSlots.forEach((slot) => {
+        if (slot.fadeState === 'fading' && slot.nextDappIdx !== null) {
+          visibleDappIndices.add(slot.nextDappIdx)
+        } else {
+          visibleDappIndices.add(slot.currentDappIdx)
+        }
+      })
+      // For each slot being updated, find the next available dapp index not in the set
+      const newSlots = logoSlots.map((slot, i) => {
+        if (!indicesToUpdate.includes(i)) return slot
+        let nextIdx = (slot.currentDappIdx + 1) % dapps.length
+        while (visibleDappIndices.has(nextIdx)) {
+          nextIdx = (nextIdx + 1) % dapps.length
+        }
+        visibleDappIndices.add(nextIdx)
+        return {
+          currentDappIdx: slot.currentDappIdx,
+          nextDappIdx: nextIdx,
+          fadeState: 'fading' as const
+        }
+      })
+      setLogoSlots(newSlots)
+      // Set fadeIn to false for these slots, then true after a short delay
+      setFadeIn((prev) => prev.map((v, i) => (indicesToUpdate.includes(i) ? false : v)))
+      fadeTimeout = setTimeout(() => {
+        setFadeIn((prev) => prev.map((v, i) => (indicesToUpdate.includes(i) ? true : v)))
+      }, 10)
+      // After fade duration, complete the swap
+      timeout = setTimeout(() => {
+        setLogoSlots((current) =>
+          current.map((slot, i) =>
+            indicesToUpdate.includes(i)
+              ? {
+                  currentDappIdx: slot.nextDappIdx ?? slot.currentDappIdx,
+                  nextDappIdx: null,
+                  fadeState: 'idle' as const
+                }
+              : slot
+          )
+        )
+        setFadeIn((prev) => prev.map((v, i) => (indicesToUpdate.includes(i) ? false : v)))
+      }, FADE_DURATION / 2)
+    }, ROTATION_INTERVAL)
+    return () => {
+      clearInterval(interval)
+      if (timeout) clearTimeout(timeout)
+      if (fadeTimeout) clearTimeout(fadeTimeout)
+    }
+  }, [dapps, logoSlots.length])
 
-    const ctx = canvas.getContext('2d', { alpha: true }) // Changed to true for transparency
-    if (!ctx) return
+  // Animation loop for parallax effect
+  useEffect(() => {
+    if (!containerRef.current) return
 
     const animate = (timestamp: number) => {
       if (!lastFrameTimeRef.current) lastFrameTimeRef.current = timestamp
       lastFrameTimeRef.current = timestamp
 
       // Calculate target offset based on hover position
-      const centerX = canvas.width / 2
-      const centerY = canvas.height / 2
+      const container = containerRef.current
+      if (!container) return
+
+      const centerX = container.offsetWidth / 2
+      const centerY = container.offsetHeight / 2
       const parallaxX = hoverPosition ? (hoverPosition.x - centerX) * 0.05 : 0
       const parallaxY = hoverPosition ? (hoverPosition.y - centerY) * 0.05 : 0
 
@@ -118,40 +222,11 @@ const HomepageEcosystemSection = () => {
       targetOffsetRef.current = { x: parallaxX, y: parallaxY }
 
       // Apply inertia to current offset
-      const inertia = 0.1 // Adjust this value to change the "weight" of the movement
+      const inertia = 0.1
       currentOffsetRef.current = {
         x: currentOffsetRef.current.x + (targetOffsetRef.current.x - currentOffsetRef.current.x) * inertia,
         y: currentOffsetRef.current.y + (targetOffsetRef.current.y - currentOffsetRef.current.y) * inertia
       }
-
-      // Update nebula position with slower parallax
-      const nebulaParallax = 0.3 // Slower than stars for depth effect
-      nebula.style.transform = `translate(${currentOffsetRef.current.x * nebulaParallax}px, ${
-        currentOffsetRef.current.y * nebulaParallax
-      }px)`
-
-      // Clear canvas with transparency
-      ctx.clearRect(0, 0, canvas.width, canvas.height)
-
-      // Draw stars with current offset
-      starsRef.current.forEach((star) => {
-        const offsetX = currentOffsetRef.current.x * star.depth
-        const offsetY = currentOffsetRef.current.y * star.depth
-        const x = star.x + offsetX
-        const y = star.y + offsetY
-
-        // Only draw stars that are visible
-        if (x >= -star.size && x <= canvas.width + star.size && y >= -star.size && y <= canvas.height + star.size) {
-          ctx.beginPath()
-          ctx.arc(x, y, star.size, 0, Math.PI * 2)
-          ctx.fillStyle = `rgba(255, 255, 255, ${star.opacity})`
-          ctx.fill()
-
-          // Update opacity for twinkling effect
-          star.opacity += Math.sin(timestamp * star.speed * 0.01) * 0.01
-          star.opacity = Math.max(0.3, Math.min(1, star.opacity))
-        }
-      })
 
       requestAnimationFrame(animate)
     }
@@ -160,79 +235,34 @@ const HomepageEcosystemSection = () => {
   }, [hoverPosition])
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect()
+    if (!containerRef.current) return
+    const rect = containerRef.current.getBoundingClientRect()
     const mouseX = e.clientX - rect.left
     const mouseY = e.clientY - rect.top
-
     setHoverPosition({ x: mouseX, y: mouseY })
-
-    // Find the closest app
+    // Find the closest app (current or next) in any slot
     let closestDistance = Infinity
     let closestAppName = null
-
-    dapps.forEach((dapp, index) => {
-      const position = calculatePosition(index, dapps.length)
-      const distance = Math.sqrt(Math.pow(mouseX - position.x, 2) + Math.pow(mouseY - position.y, 2))
-
-      if (distance <= 100 && distance < closestDistance) {
-        closestDistance = distance
-        closestAppName = dapp.name
-      }
+    logoSlots.forEach((slot, i) => {
+      const position = allPositionsRef.current[i]
+      if (!position) return
+      ;[slot.currentDappIdx, slot.nextDappIdx].forEach((dappIdx) => {
+        if (dappIdx === null || dappIdx === undefined) return
+        const dapp = dapps[dappIdx]
+        if (!dapp) return
+        const distance = Math.sqrt(Math.pow(mouseX - position.x, 2) + Math.pow(mouseY - position.y, 2))
+        if (distance <= 100 && distance < closestDistance) {
+          closestDistance = distance
+          closestAppName = dapp.name
+        }
+      })
     })
-
     setHoveredAppName(closestAppName)
   }
 
   const handleMouseLeave = () => {
     setHoverPosition(null)
     setHoveredAppName(null)
-  }
-
-  const calculatePosition = (index: number, total: number) => {
-    // Calculate base angle for this logo
-    const baseAngle = (index / total) * Math.PI * 2
-
-    if (isMobile) {
-      const centerPoint = 150
-      const radius = 85
-      return {
-        x: centerPoint + Math.cos(baseAngle) * radius,
-        y: centerPoint + Math.sin(baseAngle) * radius
-      }
-    } else {
-      const centerPoint = 300
-      const radius = 230
-      return {
-        x: centerPoint + Math.cos(baseAngle) * radius,
-        y: centerPoint + Math.sin(baseAngle) * radius
-      }
-    }
-  }
-
-  const calculateTransform = (position: { x: number; y: number }) => {
-    if (!hoverPosition) return { scale: 1, translateX: 0, translateY: 0, zIndex: 1 }
-
-    const distance = Math.sqrt(Math.pow(hoverPosition.x - position.x, 2) + Math.pow(hoverPosition.y - position.y, 2))
-
-    const maxDistance = 150
-    const minScale = 0.3
-    const maxScale = 1.2
-    const scale = Math.max(minScale, maxScale - (distance / maxDistance) * (maxScale - minScale))
-
-    const parallaxStrength = 20
-    const translateX = (position.x - hoverPosition.x) / parallaxStrength
-    const translateY = (position.y - hoverPosition.y) / parallaxStrength
-
-    // Only apply z-index changes within threshold distance
-    const zIndexThreshold = 200
-    const zIndex = distance <= zIndexThreshold ? Math.round((1 - distance / zIndexThreshold) * 100) : 1
-
-    return {
-      scale,
-      translateX,
-      translateY,
-      zIndex
-    }
   }
 
   const extractAppId = (logoUrl: string) => {
@@ -242,8 +272,6 @@ const HomepageEcosystemSection = () => {
 
   return (
     <SubpageSection fullWidth>
-      <NebulaBackground ref={nebulaRef} />
-      <StarBackground ref={canvasRef} />
       <div style={{ position: 'relative', zIndex: 1 }}>
         <TextElement isCentered>
           <h2>Built on Alephium.</h2>
@@ -253,33 +281,65 @@ const HomepageEcosystemSection = () => {
             <strong>And many more to come.</strong>
           </p>
         </TextElement>
-        <LogosContainer onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
-          <InnerContainer>
-            {dapps.map((dapp, index) => {
-              const position = calculatePosition(index, dapps.length)
-              const transform = calculateTransform(position)
-              const appId = extractAppId(dapp.media.logoUrl)
-              return (
-                <LogoWrapper
-                  key={index}
-                  isSelected={dapp.name === hoveredAppName}
-                  style={{
-                    left: `${position.x}px`,
-                    top: `${position.y}px`,
-                    transform: `translate(-50%, -50%) scale(${transform.scale}) translate(${transform.translateX}px, ${transform.translateY}px)`,
-                    zIndex: hoverPosition ? transform.zIndex : zIndexOrderRef.current[index]
-                  }}
-                >
-                  {appId && (
-                    <a href={`https://alph.land/${appId}`} target="_blank" rel="noopener noreferrer">
-                      <img src={dapp.media.logoUrl} alt={dapp.name} loading="lazy" />
-                    </a>
-                  )}
-                </LogoWrapper>
-              )
-            })}
-          </InnerContainer>
-          <HoveredAppName>{hoveredAppName}</HoveredAppName>
+        <LogosContainer ref={containerRef} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
+          {logoSlots.map((slot, index) => {
+            const position = allPositionsRef.current[index]
+            if (!position) return null
+            const parallaxX = position.depth ? currentOffsetRef.current.x * position.depth : 0
+            const parallaxY = position.depth ? currentOffsetRef.current.y * position.depth : 0
+            const dappCurrent = dapps[slot.currentDappIdx]
+            const dappNext = slot.nextDappIdx !== null ? dapps[slot.nextDappIdx] : null
+            // Crossfade: render both if fading, else just current
+            return (
+              <LogoWrapper
+                key={`${dappCurrent?.name ?? 'empty'}-${index}`}
+                isSelected={!!(hoveredAppName === dappCurrent?.name || (dappNext && hoveredAppName === dappNext.name))}
+                style={{
+                  left: `${position.x}px`,
+                  top: `${position.y}px`,
+                  transform: `translate(-50%, -50%) scale(${position.size}) translate(${parallaxX}px, ${parallaxY}px)`,
+                  zIndex: hoverPosition && position.depth ? Math.round(position.depth * 100) : 1
+                }}
+              >
+                {/* Current dapp icon */}
+                {dappCurrent && (
+                  <a
+                    href={`https://alph.land/${extractAppId(dappCurrent.media.logoUrl)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      position: 'absolute',
+                      width: '100%',
+                      height: '100%',
+                      opacity: slot.fadeState === 'fading' ? (fadeIn[index] ? 0 : 1) : 1,
+                      transition: `opacity ${FADE_DURATION / 2}ms cubic-bezier(0.4, 0, 0.2, 1)`
+                    }}
+                  >
+                    <img src={dappCurrent.media.logoUrl} alt={dappCurrent.name} loading="lazy" />
+                    {hoveredAppName === dappCurrent.name && <AppTooltip>{dappCurrent.name}</AppTooltip>}
+                  </a>
+                )}
+                {/* Next dapp icon (crossfade) */}
+                {dappNext && (
+                  <a
+                    href={`https://alph.land/${extractAppId(dappNext.media.logoUrl)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      position: 'absolute',
+                      width: '100%',
+                      height: '100%',
+                      opacity: slot.fadeState === 'fading' ? (fadeIn[index] ? 1 : 0) : 0,
+                      transition: `opacity ${FADE_DURATION / 2}ms cubic-bezier(0.4, 0, 0.2, 1)`
+                    }}
+                  >
+                    <img src={dappNext.media.logoUrl} alt={dappNext.name} loading="lazy" />
+                    {hoveredAppName === dappNext.name && <AppTooltip>{dappNext.name}</AppTooltip>}
+                  </a>
+                )}
+              </LogoWrapper>
+            )
+          })}
           <CenterButtonWrapper>
             <Button big highlight url="https://alph.land">
               Explore ecosystem
@@ -293,46 +353,16 @@ const HomepageEcosystemSection = () => {
 
 export default HomepageEcosystemSection
 
-const StarBackground = styled.canvas`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 0;
-`
-
-const NebulaBackground = styled.div`
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  pointer-events: none;
-  z-index: -1;
-  will-change: transform;
-  transform-origin: center;
-`
-
 const LogosContainer = styled.div`
   position: relative;
-  width: 600px;
+  width: 100%;
   height: 600px;
   margin: 0 auto;
   perspective: 1000px;
 
   @media ${deviceBreakPoints.mobile} {
-    width: 300px;
-    height: 300px;
+    height: 350px;
   }
-`
-
-const InnerContainer = styled.div`
-  position: absolute;
-  inset: 0;
-  transform-origin: center center;
-  will-change: transform;
 `
 
 const LogoWrapper = styled.div<{ isSelected?: boolean }>`
@@ -342,14 +372,15 @@ const LogoWrapper = styled.div<{ isSelected?: boolean }>`
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 0.15s ease-out;
-  will-change: transform;
+  transition: transform 0.15s ease-out, opacity ${FADE_DURATION}ms cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, opacity;
   border-radius: 50%;
   border: ${({ isSelected }) => (isSelected ? '6px solid white' : 'none')};
 
   @media ${deviceBreakPoints.mobile} {
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
+    border: ${({ isSelected }) => (isSelected ? '3px solid white' : 'none')};
   }
 
   a {
@@ -368,26 +399,42 @@ const LogoWrapper = styled.div<{ isSelected?: boolean }>`
     border-radius: 50%;
     transition: transform 0.15s ease-out;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-    background-color: ${({ theme }) => theme.bgSecondary};
+    background-color: ${({ theme }) => theme.background2};
   }
 `
 
-const HoveredAppName = styled.div`
+const AppTooltip = styled.div`
   position: absolute;
+  bottom: 100%;
   left: 50%;
-  top: 42%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
+  background-color: ${({ theme }) => theme.background2};
   color: ${({ theme }) => theme.textPrimary};
-  font-size: 1.2rem;
-  font-weight: 500;
-  text-align: center;
-  transition: opacity 0.15s ease-out;
-  opacity: ${({ children }) => (children ? 1 : 0)};
-  z-index: 1;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  white-space: nowrap;
   pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.2s ease-out;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 4px;
+    border-style: solid;
+    border-color: ${({ theme }) => theme.background2} transparent transparent transparent;
+  }
 
   @media ${deviceBreakPoints.mobile} {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    padding: 3px 6px;
   }
 `
 
@@ -396,5 +443,13 @@ const CenterButtonWrapper = styled.div`
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-2);
+  padding: var(--spacing-4);
+  border-radius: var(--radius-big);
+  backdrop-filter: blur(10px);
 `
