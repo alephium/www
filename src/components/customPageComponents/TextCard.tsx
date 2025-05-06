@@ -33,15 +33,15 @@ const TextCard = ({
   )
 
   const card = (
-    <CardContainer variants={variants} isAnimated={isAnimated || !!url}>
-      <Card url={url} isAnimated={isAnimated || !!url} border={border} bgColor={bgColor}>
+    <CardContainer variants={variants} isAnimated={isAnimated}>
+      <Card url={url} isAnimated={isAnimated} border={border} bgColor={bgColor}>
         {text}
       </Card>
     </CardContainer>
   )
 
   return url ? (
-    <SimpleLinkStyled url={url} isAnimated={isAnimated || !!url}>
+    <SimpleLinkStyled url={url} isAnimated={isAnimated}>
       {card}
     </SimpleLinkStyled>
   ) : (
@@ -109,7 +109,7 @@ const Card = ({ children, url, isAnimated, border, bgColor }: CardProps) => {
         x.set(0.5, true)
         y.set(0.5, true)
       }}
-      style={url ? { rotateY, rotateX } : undefined}
+      style={isAnimated ? { rotateY, rotateX } : undefined}
       url={url}
       isAnimated={isAnimated}
       border={border}
@@ -202,6 +202,7 @@ const TextElementStyled = styled(TextElement)`
 
   p {
     font-weight: var(--fontWeight-medium);
+    font-size: var(--fontSize-20);
   }
 
   h3 {
@@ -225,7 +226,7 @@ const CardStyled = styled(motion.div)<{
   url?: string
   isAnimated: boolean
   border?: boolean
-  bgColor?: 'surface1' | 'surface2' | 'background2' | 'background3'
+  bgColor?: TextCardProps['bgColor']
 }>`
   ${({ border, bgColor }) => cardStyles({ border, bgColor })}
   ${({ url }) => url && 'transform-style: preserve-3d;'}

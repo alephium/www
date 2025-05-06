@@ -143,9 +143,9 @@ const HomepageIntroSection = () => {
         <SubheaderContent>
           <TextElement>
             <h2>
-              <small></small>Start
+              Start
               <br />
-              <small>with Alephium</small>
+              with Alephium
               <hr />
             </h2>
             <p>
@@ -155,7 +155,7 @@ const HomepageIntroSection = () => {
 
           <Grid gap="small" columns={2}>
             {hardcodedCards.map((card) => (
-              <TextCard border url={card.link.url} isAnimated variants={cardVariants} key={card.title}>
+              <TextCard border url={card.link.url} variants={cardVariants} key={card.title}>
                 <TextCardContent>
                   <h3 style={{ color: theme[card.color] }}>{card.title}</h3>
                   <p>{card.description}</p>

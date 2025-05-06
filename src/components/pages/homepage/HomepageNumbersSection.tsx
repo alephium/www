@@ -201,6 +201,7 @@ const HomepageNumbersSection = () => {
         >
           <PageSectionContainer>
             <BorderedBox ref={boxRef}>
+              <RealTimeLabel>Real time data</RealTimeLabel>
               <ColumnsStyled>
                 {columns.map((column) => (
                   <NumbersColumn key={column.description}>
@@ -260,13 +261,36 @@ const BorderedBox = styled.div`
   box-shadow: 0 50px 50px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   position: relative;
-  min-height: 200px;
+  min-height: 230px;
+`
+
+const RealTimeLabel = styled.div`
+  position: absolute;
+  top: var(--spacing-3);
+  right: var(--spacing-3);
+  background: ${({ theme }) => theme.background1};
+  padding: var(--spacing-1) var(--spacing-2);
+  border-radius: var(--radius-small);
+  color: ${({ theme }) => theme.textSecondary};
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-1);
+
+  &::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: ${({ theme }) => theme.palette1};
+    border-radius: 50%;
+    display: inline-block;
+  }
 `
 
 const ButtonContainer = styled.div`
   position: absolute;
-  bottom: var(--spacing-2);
-  right: var(--spacing-2);
+  bottom: var(--spacing-3);
+  left: var(--spacing-3);
   z-index: 1;
 `
 

@@ -13,8 +13,8 @@ export const darkTheme: DefaultTheme = {
   surface1: 'var(--color-grey-750)',
   surface2: 'var(--color-grey-900)',
   background1: 'var(--color-grey-850)',
-  background2: 'var(--color-grey-950)',
-  background3: 'var(--color-black)',
+  background2: 'var(--color-grey-900)',
+  background3: 'var(--color-grey-950)',
   backgroundContrast: 'var(--color-grey-800)',
 
   borderPrimary: 'rgba(255, 255, 255, 0.15)',

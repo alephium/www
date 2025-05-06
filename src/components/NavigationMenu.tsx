@@ -264,7 +264,7 @@ const LogoTextStyled = styled(LogoText)`
 `
 
 const LinkStyle = css`
-  font-size: var(--fontSize-18);
+  font-size: var(--fontSize-16);
   font-weight: var(--fontWeight-medium);
   color: ${({ theme }) => theme.textPrimaryVariation};
 
@@ -312,7 +312,7 @@ const DrawerWrapper = styled.div`
 `
 
 const DrawerTitle = styled.span`
-  font-size: var(--fontSize-18);
+  font-size: var(--fontSize-16);
   color: ${({ theme }) => theme.textSecondary};
 `
 

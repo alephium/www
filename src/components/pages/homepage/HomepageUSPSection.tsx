@@ -126,7 +126,7 @@ const HomepageUSPSection = () => {
     <SubpageSectionStyled wide bgColor="3" edgeGradient>
       <TextElementStyled>
         <h2>
-          <small>Web3,</small>
+          Web3,
           <br />
           done right.
           <hr />
@@ -151,16 +151,16 @@ const HomepageUSPSection = () => {
                 <TextCardContent>
                   <h3 style={{ color: theme.palette2 }}>Fast</h3>
                   <TLDRSection color={theme.palette2}>
-                    <span>20,000+ transactions per second</span>
+                    <span>20,000+ tps, single-chain experience</span>
                   </TLDRSection>
                 </TextCardContent>
               </TextElement>
               <TextCardContent>
                 <TextElement noHeadingsMargins>
                   <p>
-                    Alephium moves as fast as you do. With block times of just 8 seconds, sharding, and
-                    Proof-of-Less-Work, it delivers <strong>fast, efficient, and reliable performance</strong> - ready
-                    to scale as adoption grows.
+                    Alephium’s BlockFlow sharding processes over 20,000 transactions per second while eliminating
+                    cross-chain complexity,{' '}
+                    <strong>delivering high throughput and the simplicity of a single-chain environment.</strong>
                   </p>
                 </TextElement>
               </TextCardContent>
@@ -185,9 +185,9 @@ const HomepageUSPSection = () => {
               <TextCardContent>
                 <TextElement noHeadingsMargins>
                   <p>
-                    Built to handle <strong>high throughput without sacrificing security</strong>, Alephium&apos;s
-                    architecture ensures that fees remain predictable and affordable - empowering developers and users
-                    alike.
+                    Alephium’s unique sharding design, built on its unique combination of UTXO and Proof-of-Work model
+                    together with a DAG data structure, delivers consistent performance at scale, keeping fees stable
+                    and affordable for both users and developers.
                   </p>
                 </TextElement>
               </TextCardContent>
@@ -331,7 +331,7 @@ const TextElementStyled = styled(TextElement)`
 
 const StatsContainer = styled.div`
   width: 100%;
-  padding: var(--spacing-4) 0;
+  padding-top: var(--spacing-4);
   position: relative;
 `
 
@@ -407,7 +407,7 @@ const ScrollButtonsContainer = styled.div`
   display: flex;
   gap: var(--spacing-2);
   justify-content: flex-end;
-  padding: 0 var(--spacing-4) var(--spacing-4);
+  padding-right: var(--spacing-6);
 `
 
 const ScrollButton = styled.button`

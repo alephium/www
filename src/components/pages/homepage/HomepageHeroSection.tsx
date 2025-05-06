@@ -24,7 +24,7 @@ const HomepageHeroSection = () => {
     <SubpageVideoHeroSection video={heroVideo} poster={heroImage}>
       <h1>The Web3 you were promised.</h1>
       <p>
-        Scalable Proof-of-Less-Work and secure Smart Contracts, <strong>only on Alephium.</strong>
+        <strong>Scalable Proof-of-Less-Work and secure Smart Contracts, only on Alephium.</strong>
       </p>
 
       <Buttons>

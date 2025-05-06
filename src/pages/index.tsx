@@ -68,7 +68,7 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
             </BottomBackgroundImageContainer>
             <TextElement isCentered>
               <h2>
-                <small>It&apos;s time</small>
+                It&apos;s time
                 <br />
                 to make waves.
               </h2>
@@ -93,6 +93,7 @@ export default IndexPage
 const BottomBackgroundImageContainer = styled.div`
   position: absolute;
   inset: 0;
+  opacity: 0.5;
 `
 
 const BottomSection = styled.div`
