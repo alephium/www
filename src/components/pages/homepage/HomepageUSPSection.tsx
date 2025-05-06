@@ -123,7 +123,7 @@ const HomepageUSPSection = () => {
   }
 
   return (
-    <SubpageSectionStyled wide bgColor="3" edgeGradient>
+    <SubpageSectionStyled wide edgeGradient>
       <TextElementStyled>
         <h2>
           Web3,
@@ -132,8 +132,10 @@ const HomepageUSPSection = () => {
           <hr />
         </h2>
         <p>
-          Dive in. 🐠 <br />
-          <strong>Discover what makes Alephium stand apart.</strong>
+          <strong>
+            Dive in. 🐠 <br />
+            Discover what makes Alephium stand apart.
+          </strong>
         </p>
       </TextElementStyled>
 
@@ -158,7 +160,7 @@ const HomepageUSPSection = () => {
               <TextCardContent>
                 <TextElement noHeadingsMargins>
                   <p>
-                    Alephium’s BlockFlow sharding processes over 20,000 transactions per second while eliminating
+                    Alephium's BlockFlow sharding processes over 20,000 transactions per second while eliminating
                     cross-chain complexity,{' '}
                     <strong>delivering high throughput and the simplicity of a single-chain environment.</strong>
                   </p>
@@ -185,7 +187,7 @@ const HomepageUSPSection = () => {
               <TextCardContent>
                 <TextElement noHeadingsMargins>
                   <p>
-                    Alephium’s unique sharding design, built on its unique combination of UTXO and Proof-of-Work model
+                    Alephium's unique sharding design, built on its unique combination of UTXO and Proof-of-Work model
                     together with a DAG data structure, delivers consistent performance at scale, keeping fees stable
                     and affordable for both users and developers.
                   </p>
@@ -300,8 +302,6 @@ const HomepageUSPSection = () => {
             </TextCard>
           </CardContainer>
         </CardsScroll>
-        <GradientOverlay position="left" visible={canScrollLeft} />
-        <GradientOverlay position="right" visible={canScrollRight} />
         <ScrollButtonsContainer>
           <ScrollButton onClick={() => handleScroll('left')} aria-label="Scroll cards left" disabled={!canScrollLeft}>
             <Arrow>←</Arrow>
@@ -340,7 +340,10 @@ const CardsScroll = styled.div`
   gap: ${CARD_GAP}px;
   overflow-x: auto;
   padding: var(--spacing-4) 0;
+  padding-left: calc((100% - var(--page-width)) / 2 + var(--spacing-4));
   scroll-snap-type: x mandatory;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 60px, black calc(100% - 60px), transparent);
+  mask-image: linear-gradient(to right, transparent, black 60px, black calc(100% - 60px), transparent);
 
   -webkit-overflow-scrolling: touch;
   margin-bottom: var(--spacing-4);
@@ -359,24 +362,15 @@ const CardsScroll = styled.div`
   }
 `
 
-const GradientOverlay = styled.div<{ position: 'left' | 'right'; visible: boolean }>`
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 60px;
-  pointer-events: none;
-  z-index: 1;
-  opacity: ${({ visible }) => (visible ? 1 : 0)};
-  transition: opacity 0.1s ease;
-  background: linear-gradient(to ${({ position }) => position}, transparent, ${({ theme }) => theme.background3});
-  ${({ position }) => position}: 0;
-`
-
 const CardContainer = styled(motion.div)`
   flex: 0 0 ${CARD_WIDTH}px;
   scroll-snap-align: start;
   position: relative;
   z-index: 0;
+
+  &:first-child {
+    padding-left: calc((100% - var(--page-width)));
+  }
 
   &:last-child {
     margin-right: var(--spacing-4);

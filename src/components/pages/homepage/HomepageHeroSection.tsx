@@ -31,12 +31,15 @@ const HomepageHeroSection = () => {
     <SubpageSectionStyled wide>
       <EddyBackground />
       <TextElementStyled isCentered>
-        <h1>The Web3 you were promised.</h1>
+        <h1>
+          The Web3
+          <br /> you were promised.
+        </h1>
         <p>
           <strong>
             Scalable Proof-of-Less-Work and secure Smart Contracts,
             <br />
-            only on Alephium.
+            <b>only on Alephium.</b>
           </strong>
         </p>
       </TextElementStyled>
@@ -45,7 +48,7 @@ const HomepageHeroSection = () => {
         <Button big highlight url="https://docs.alephium.org">
           Build on Alephium
         </Button>
-        <ArrowedLink url="/communities">Join the community</ArrowedLink>
+        <ArrowedLinkStyled url="/communities">Join the community</ArrowedLinkStyled>
       </Buttons>
       {content?.partnersSection && <HomepagePartnersSection {...content.partnersSection} />}
     </SubpageSectionStyled>
@@ -56,10 +59,14 @@ export default HomepageHeroSection
 
 const SubpageSectionStyled = styled(SubpageSection)`
   padding-bottom: var(--spacing-6);
+  padding-right: var(--spacing-4);
+  padding-left: var(--spacing-4);
 `
 
 const TextElementStyled = styled(TextElement)`
-  mix-blend-mode: difference;
+  * {
+    color: black !important;
+  }
 `
 
 const Buttons = styled.div`
@@ -74,5 +81,13 @@ const Buttons = styled.div`
 
   @media ${deviceBreakPoints.smallMobile} {
     margin-top: var(--spacing-2);
+  }
+`
+
+const ArrowedLinkStyled = styled(ArrowedLink)`
+  color: black;
+
+  * {
+    fill: black;
   }
 `

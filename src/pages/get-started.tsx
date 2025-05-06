@@ -84,12 +84,12 @@ const CustomPage = (props: PageProps) => {
         <>
           <SectionDivider />
 
-          <SubpageSection bgColor="3" wide border>
+          <SubpageSection bgColor="3" wide border edgeGradient>
             <TextElement isCentered>
               <h2>
                 Get Started
                 <br />
-                <small>with Alephium</small>
+                with Alephium
               </h2>
               <p>
                 Here&apos;s everything you need
@@ -226,7 +226,6 @@ const CustomPage = (props: PageProps) => {
                 Earn Rewards.
               </small>
             </h2>
-            <hr />
             <p>
               ALPH mining is <strong>efficient, accessible, and built for long-term sustainability.</strong>
             </p>

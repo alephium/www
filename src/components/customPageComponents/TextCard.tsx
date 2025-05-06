@@ -126,7 +126,7 @@ const cardStyles = ({ border, bgColor }: { border?: boolean; bgColor?: TextCardP
   position: relative;
   flex-direction: column;
   border-radius: var(--radius);
-  background-color: ${({ theme }) => (bgColor ? theme[bgColor] : 'transparent')};
+  background-color: ${({ theme }) => (bgColor ? theme[bgColor] : 'rgba(0, 0, 0, 0.5)')};
   background-clip: padding-box;
   text-decoration: none;
   transition: all 0.1s ease-out;
@@ -141,7 +141,7 @@ const cardStyles = ({ border, bgColor }: { border?: boolean; bgColor?: TextCardP
       content: '';
       position: absolute;
       inset: 0;
-      border: 4px solid ${({ theme }) => theme.borderPrimary};
+      border: 3px solid ${({ theme }) => theme.borderPrimary};
       border-radius: inherit;
       backdrop-filter: saturate(200%) brightness(1.1);
       -webkit-backdrop-filter: saturate(200%) brightness(1.1);
@@ -189,7 +189,7 @@ const CardContainer = styled(motion.div)<{ isAnimated?: boolean }>`
   height: 100%;
 
   @media ${deviceBreakPoints.mobile} {
-    min-width: 300px;
+    max-width: 80vw;
   }
 `
 

@@ -20,6 +20,8 @@ const LOGOS_TO_ROTATE = 2
 
 const HomepageEcosystemSection = () => {
   const [dapps, setDapps] = useState<Array<{ name: string; media: { logoUrl: string } }>>([])
+  const [isLoading, setIsLoading] = useState(true)
+  const [isInitialized, setIsInitialized] = useState(false)
   const [hoverPosition, setHoverPosition] = useState<{ x: number; y: number } | null>(null)
   const [hoveredAppName, setHoveredAppName] = useState<string | null>(null)
   const containerRef = useRef<HTMLDivElement>(null)
@@ -83,32 +85,46 @@ const HomepageEcosystemSection = () => {
     }
 
     allPositionsRef.current = positions
+    return positions
   }
 
+  // Initialize everything when the component mounts
   useEffect(() => {
-    fetch('https://publicapi.alph.land/api/dapps').then((res) =>
-      res.json().then((data) => {
+    const initialize = async () => {
+      try {
+        setIsLoading(true)
+        const response = await fetch('https://publicapi.alph.land/api/dapps')
+        const data = await response.json()
         setDapps(data)
-      })
-    )
-  }, [])
 
-  // On mount and when dapps or positions change, initialize logoSlots and fadeIn
-  useEffect(() => {
-    if (dapps.length === 0 || allPositionsRef.current.length === 0) return
-    setLogoSlots(
-      Array.from({ length: LOGOS_VISIBLE }, (_, i) => ({
-        currentDappIdx: i % dapps.length,
-        nextDappIdx: null,
-        fadeState: 'idle'
-      }))
-    )
-    setFadeIn(Array.from({ length: LOGOS_VISIBLE }, () => false))
-  }, [dapps, allPositionsRef.current.length])
+        // Initialize positions immediately after getting the data
+        if (containerRef.current) {
+          const positions = initializeLogoPositions(LOGOS_VISIBLE)
+          if (positions) {
+            setLogoSlots(
+              Array.from({ length: LOGOS_VISIBLE }, (_, i) => ({
+                currentDappIdx: i % data.length,
+                nextDappIdx: null,
+                fadeState: 'idle'
+              }))
+            )
+            setFadeIn(Array.from({ length: LOGOS_VISIBLE }, () => true))
+            setIsInitialized(true)
+          }
+        }
+      } catch (error) {
+        console.error('Error initializing ecosystem section:', error)
+      } finally {
+        setIsLoading(false)
+      }
+    }
+
+    initialize()
+  }, [])
 
   // Use ResizeObserver to handle container size changes
   useEffect(() => {
-    if (!containerRef.current || dapps.length === 0) return
+    if (!containerRef.current || !isInitialized) return
     const container = containerRef.current
     let throttleTimeout: ReturnType<typeof setTimeout> | null = null
 
@@ -131,7 +147,7 @@ const HomepageEcosystemSection = () => {
       resizeObserver.disconnect()
       if (throttleTimeout) clearTimeout(throttleTimeout)
     }
-  }, [dapps])
+  }, [isInitialized])
 
   // Rotation effect: only change LOGOS_TO_ROTATE logos per interval, with crossfade
   useEffect(() => {
@@ -282,64 +298,71 @@ const HomepageEcosystemSection = () => {
           </p>
         </TextElement>
         <LogosContainer ref={containerRef} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
-          {logoSlots.map((slot, index) => {
-            const position = allPositionsRef.current[index]
-            if (!position) return null
-            const parallaxX = position.depth ? currentOffsetRef.current.x * position.depth : 0
-            const parallaxY = position.depth ? currentOffsetRef.current.y * position.depth : 0
-            const dappCurrent = dapps[slot.currentDappIdx]
-            const dappNext = slot.nextDappIdx !== null ? dapps[slot.nextDappIdx] : null
-            // Crossfade: render both if fading, else just current
-            return (
-              <LogoWrapper
-                key={`${dappCurrent?.name ?? 'empty'}-${index}`}
-                isSelected={!!(hoveredAppName === dappCurrent?.name || (dappNext && hoveredAppName === dappNext.name))}
-                style={{
-                  left: `${position.x}px`,
-                  top: `${position.y}px`,
-                  transform: `translate(-50%, -50%) scale(${position.size}) translate(${parallaxX}px, ${parallaxY}px)`,
-                  zIndex: hoverPosition && position.depth ? Math.round(position.depth * 100) : 1
-                }}
-              >
-                {/* Current dapp icon */}
-                {dappCurrent && (
-                  <a
-                    href={`https://alph.land/${extractAppId(dappCurrent.media.logoUrl)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      position: 'absolute',
-                      width: '100%',
-                      height: '100%',
-                      opacity: slot.fadeState === 'fading' ? (fadeIn[index] ? 0 : 1) : 1,
-                      transition: `opacity ${FADE_DURATION / 2}ms cubic-bezier(0.4, 0, 0.2, 1)`
-                    }}
-                  >
-                    <img src={dappCurrent.media.logoUrl} alt={dappCurrent.name} loading="lazy" />
-                    {hoveredAppName === dappCurrent.name && <AppTooltip>{dappCurrent.name}</AppTooltip>}
-                  </a>
-                )}
-                {/* Next dapp icon (crossfade) */}
-                {dappNext && (
-                  <a
-                    href={`https://alph.land/${extractAppId(dappNext.media.logoUrl)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      position: 'absolute',
-                      width: '100%',
-                      height: '100%',
-                      opacity: slot.fadeState === 'fading' ? (fadeIn[index] ? 1 : 0) : 0,
-                      transition: `opacity ${FADE_DURATION / 2}ms cubic-bezier(0.4, 0, 0.2, 1)`
-                    }}
-                  >
-                    <img src={dappNext.media.logoUrl} alt={dappNext.name} loading="lazy" />
-                    {hoveredAppName === dappNext.name && <AppTooltip>{dappNext.name}</AppTooltip>}
-                  </a>
-                )}
-              </LogoWrapper>
-            )
-          })}
+          {isInitialized &&
+            logoSlots.map((slot, index) => {
+              const position = allPositionsRef.current[index]
+              if (!position) return null
+              const parallaxX = position.depth ? currentOffsetRef.current.x * position.depth : 0
+              const parallaxY = position.depth ? currentOffsetRef.current.y * position.depth : 0
+              const dappCurrent = dapps[slot.currentDappIdx]
+              const dappNext = slot.nextDappIdx !== null ? dapps[slot.nextDappIdx] : null
+
+              return (
+                <LogoWrapper
+                  key={`${dappCurrent?.name ?? 'empty'}-${index}`}
+                  isSelected={
+                    !!(hoveredAppName === dappCurrent?.name || (dappNext && hoveredAppName === dappNext.name))
+                  }
+                  style={{
+                    left: `${position.x}px`,
+                    top: `${position.y}px`,
+                    transform: `translate(-50%, -50%) scale(${position.size}) translate(${parallaxX}px, ${parallaxY}px)`,
+                    zIndex: hoverPosition && position.depth ? Math.round(position.depth * 100) : 1,
+                    opacity: 1
+                  }}
+                >
+                  {dappCurrent && (
+                    <a
+                      href={`https://alph.land/${extractAppId(dappCurrent.media.logoUrl)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        position: 'absolute',
+                        width: '100%',
+                        height: '100%',
+                        opacity: slot.fadeState === 'fading' ? (fadeIn[index] ? 0 : 1) : 1,
+                        transition: `opacity ${FADE_DURATION / 2}ms cubic-bezier(0.4, 0, 0.2, 1)`
+                      }}
+                    >
+                      <img
+                        src={dappCurrent.media.logoUrl}
+                        alt={dappCurrent.name}
+                        loading="eager"
+                        style={{ opacity: 1 }}
+                      />
+                      {hoveredAppName === dappCurrent.name && <AppTooltip>{dappCurrent.name}</AppTooltip>}
+                    </a>
+                  )}
+                  {dappNext && (
+                    <a
+                      href={`https://alph.land/${extractAppId(dappNext.media.logoUrl)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        position: 'absolute',
+                        width: '100%',
+                        height: '100%',
+                        opacity: slot.fadeState === 'fading' ? (fadeIn[index] ? 1 : 0) : 0,
+                        transition: `opacity ${FADE_DURATION / 2}ms cubic-bezier(0.4, 0, 0.2, 1)`
+                      }}
+                    >
+                      <img src={dappNext.media.logoUrl} alt={dappNext.name} loading="eager" style={{ opacity: 1 }} />
+                      {hoveredAppName === dappNext.name && <AppTooltip>{dappNext.name}</AppTooltip>}
+                    </a>
+                  )}
+                </LogoWrapper>
+              )
+            })}
           <CenterButtonWrapper>
             <Button big highlight url="https://alph.land">
               Explore ecosystem
@@ -376,6 +399,7 @@ const LogoWrapper = styled.div<{ isSelected?: boolean }>`
   will-change: transform, opacity;
   border-radius: 50%;
   border: ${({ isSelected }) => (isSelected ? '6px solid white' : 'none')};
+  opacity: 1;
 
   @media ${deviceBreakPoints.mobile} {
     width: 45px;
@@ -397,7 +421,7 @@ const LogoWrapper = styled.div<{ isSelected?: boolean }>`
     height: 100%;
     object-fit: contain;
     border-radius: 50%;
-    transition: transform 0.15s ease-out;
+    transition: transform 0.15s ease-out, opacity 0.3s ease-in;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
     background-color: ${({ theme }) => theme.background2};
   }
@@ -451,6 +475,6 @@ const CenterButtonWrapper = styled.div`
   gap: var(--spacing-2);
   padding: var(--spacing-6);
   border-radius: var(--radius-big);
-  backdrop-filter: blur(10px) brightness(110%);
-  border: 1px solid ${({ theme }) => theme.borderPrimary};
+  backdrop-filter: blur(10px) brightness(70%);
+  border: 3px solid ${({ theme }) => theme.borderPrimary};
 `

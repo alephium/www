@@ -30,8 +30,8 @@ const SubpageSectionStyled = styled(PageSectionContainer)<
 >`
   position: relative;
   justify-content: ${({ isCentered }) => (isCentered ? 'center' : 'flex-start')};
-  padding-top: var(--spacing-14);
-  padding-bottom: var(--spacing-14);
+  padding-top: var(--spacing-12);
+  padding-bottom: var(--spacing-12);
   background-color: ${({ theme, bgColor }) => (bgColor ? theme[`background${bgColor}`] : 'transparent')};
   border-radius: var(--radius-big);
   overflow: hidden;
@@ -49,11 +49,28 @@ const SubpageSectionStyled = styled(PageSectionContainer)<
         content: '';
         position: absolute;
         width: 100%;
-        height: 100%;
-        top: 0;
+        height: 60%;
+        bottom: 0;
         left: 0;
-        background: linear-gradient(180deg, ${theme.palette3}20 0%, transparent 10%);
+        background: radial-gradient(
+          circle at 130% 190%,
+          transparent 30%,
+          ${theme.palette4} 35%,
+          ${theme.palette3} 50%,
+          ${theme.textPrimary} 70%,
+          ${theme.palette3} 85%,
+          ${theme.palette4} 90%,
+          transparent 100%
+        );
+        mask-image: radial-gradient(ellipse 100% 60% at center bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+        -webkit-mask-image: radial-gradient(
+          ellipse 100% 50% at center bottom,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 0) 100%
+        );
         pointer-events: none;
+        filter: blur(40px);
+        opacity: 0.8;
       }
     `}
 `

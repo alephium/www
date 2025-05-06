@@ -1,16 +1,12 @@
-import { motion } from 'framer-motion'
 import { graphql, useStaticQuery } from 'gatsby'
 import { IGatsbyImageData } from 'gatsby-plugin-image'
 import { ReactNode, useMemo } from 'react'
 import styled, { useTheme } from 'styled-components'
 
-import { deviceBreakPoints } from '../../../styles/global-style'
 import Grid from '../../customPageComponents/Grid'
-import SubheaderContent from '../../customPageComponents/SubheaderContent'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextCard from '../../customPageComponents/TextCard'
 import TextCardContent from '../../customPageComponents/TextCardContent'
-import TextElement from '../../customPageComponents/TextElement'
 
 export const homepageIntroQuery = graphql`
   query HomepageIntro {
@@ -120,7 +116,7 @@ const HomepageIntroSection = () => {
   )
 
   return (
-    <SubpageSection id="intro" bgColor="3">
+    <SubpageSectionStyled id="intro" wide>
       {/* <TextElement isCentered>
         <h2>
           A Network Built
@@ -139,65 +135,27 @@ const HomepageIntroSection = () => {
           </strong>
         </p>
       </TextElement> */}
-      <SubheaderContent>
-        <SubheaderContent>
-          <TextElement>
-            <h2>
-              Start with Alephium.
-              <hr />
-            </h2>
-            <p>
-              Don&apos;t waste time, <strong>jump right in. 💦</strong>
-            </p>
-          </TextElement>
-
-          <Grid gap="small" columns={2}>
-            {hardcodedCards.map((card) => (
-              <TextCard border url={card.link.url} variants={cardVariants} key={card.title}>
-                <TextCardContent>
-                  <h3 style={{ color: theme[card.color] }}>{card.title}</h3>
-                  <p>{card.description}</p>
-                </TextCardContent>
-              </TextCard>
-            ))}
-          </Grid>
-        </SubheaderContent>
-      </SubheaderContent>
-    </SubpageSection>
+      <Grid gap="small" columns={4}>
+        {hardcodedCards.map((card) => (
+          <TextCard border url={card.link.url} variants={cardVariants} key={card.title}>
+            <TextCardContent>
+              <h3 style={{ color: theme[card.color] }}>{card.title}</h3>
+              <p>{card.description}</p>
+            </TextCardContent>
+          </TextCard>
+        ))}
+      </Grid>
+    </SubpageSectionStyled>
   )
 }
 
 export default HomepageIntroSection
 
-const cardContainerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
-      delayChildren: 0.2
-    }
-  }
-}
+const SubpageSectionStyled = styled(SubpageSection)`
+  padding-top: var(--spacing-6);
+`
 
 const cardVariants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 }
 }
-
-const IntroColumns = styled(motion.div)`
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  gap: 30px;
-
-  @media ${deviceBreakPoints.mobile} {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 0 var(--spacing-4);
-  }
-
-  @media ${deviceBreakPoints.ipad} {
-    flex-wrap: wrap;
-  }
-`

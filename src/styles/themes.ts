@@ -17,19 +17,19 @@ export const darkTheme: DefaultTheme = {
   background3: 'var(--color-grey-950)',
   backgroundContrast: 'var(--color-grey-800)',
 
-  borderPrimary: 'rgba(255, 255, 255, 0.15)',
+  borderPrimary: 'rgba(255, 255, 255, 0.2)',
 
   link: 'var(--color-white)',
   linkAlt: 'var(--color-grey-700)',
 
   separator: 'var(--color-grey-700)',
 
-  palette1: '#6dffbc',
-  palette2: '#ffd68c',
-  palette3: '#8de9ff',
-  palette4: '#f7b5ff',
+  palette1: '#5effb5',
+  palette2: '#ffd976',
+  palette3: '#7ae5ff',
+  palette4: '#f5a4ff',
   palette5: '#ff89cc',
-  palette6: '#ffb77d'
+  palette6: '#ffb579'
 }
 
 export const lightTheme: DefaultTheme = {

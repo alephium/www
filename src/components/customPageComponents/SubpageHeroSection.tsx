@@ -80,8 +80,8 @@ const TextElementStyled = styled(TextElement)<Pick<SubpageHeroSectionProps, 'spl
 
   > p {
     color: ${({ theme }) => theme.textSecondary};
-    font-size: var(--fontSize-32);
-    font-weight: var(--fontWeight-semiBold);
+    font-size: var(--fontSize-28);
+    font-weight: var(--fontWeight-medium);
     line-height: 1.3;
     z-index: 1;
 

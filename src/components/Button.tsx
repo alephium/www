@@ -118,7 +118,7 @@ const GradientBorder = styled.div<{ squared?: boolean }>`
   transition: opacity 0.3s ease;
   pointer-events: none;
   z-index: -1;
-  opacity: 0.7;
+  opacity: 0.8;
 
   &::before {
     content: '';

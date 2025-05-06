@@ -32,7 +32,6 @@ export const pageQuery = graphql`
 `
 
 const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
-  const content = props.data.allMarkdownRemark.nodes[0].frontmatter
   const seaImage = props.data.seaImage?.childImageSharp?.gatsbyImageData
 
   return (
@@ -48,8 +47,6 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
           <HomepageHeroSection />
 
           <HomepageIntroSection />
-
-          <SectionDivider />
 
           <HomepageUSPSection />
 
