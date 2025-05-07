@@ -20,15 +20,20 @@ const CardsHorizontalScroller = ({
   const scrollContainerRef = useRef<HTMLDivElement>(null)
   const [canScrollLeft, setCanScrollLeft] = useState(false)
   const [canScrollRight, setCanScrollRight] = useState(true)
+  const [showLeftMask, setShowLeftMask] = useState(true)
+  const [showRightMask, setShowRightMask] = useState(true)
 
   const checkScrollable = useCallback(() => {
     if (scrollContainerRef.current) {
       const container = scrollContainerRef.current
-      const canScrollLeft = container.scrollLeft > 0
+      const leftPadding = parseInt(getComputedStyle(container).paddingLeft)
+      const canScrollLeft = container.scrollLeft > leftPadding
       const canScrollRight = container.scrollLeft < container.scrollWidth - container.clientWidth
 
       setCanScrollLeft(canScrollLeft)
       setCanScrollRight(canScrollRight)
+      setShowLeftMask(canScrollLeft)
+      setShowRightMask(canScrollRight)
     }
   }, [])
 
@@ -60,7 +65,9 @@ const CardsHorizontalScroller = ({
 
   return (
     <StatsContainer>
-      <CardsScroll ref={scrollContainerRef}>{children}</CardsScroll>
+      <CardsScroll ref={scrollContainerRef} $showLeftMask={showLeftMask} $showRightMask={showRightMask}>
+        {children}
+      </CardsScroll>
       <ScrollButtonsContainer>
         <ScrollButton onClick={() => handleScroll('left')} aria-label="Scroll cards left" disabled={!canScrollLeft}>
           <Arrow>←</Arrow>
@@ -80,20 +87,42 @@ const StatsContainer = styled.div`
   position: relative;
 `
 
-const CardsScroll = styled.div`
+const CardsScroll = styled.div<{ $showLeftMask: boolean; $showRightMask: boolean }>`
   display: flex;
   gap: ${CARD_GAP}px;
   overflow-x: auto;
   padding: var(--spacing-4) 0;
   padding-left: calc((100% - var(--page-width)) / 2 + var(--spacing-4));
   scroll-snap-type: x mandatory;
-  -webkit-mask-image: linear-gradient(to right, transparent, black 60px, black calc(100% - 60px), transparent);
-  mask-image: linear-gradient(to right, transparent, black 60px, black calc(100% - 60px), transparent);
+  -webkit-mask-image: linear-gradient(
+    to right,
+    ${(props) => (props.$showLeftMask ? 'transparent' : 'black')},
+    black 60px,
+    black calc(100% - 60px),
+    ${(props) => (props.$showRightMask ? 'transparent' : 'black')}
+  );
+  mask-image: linear-gradient(
+    to right,
+    ${(props) => (props.$showLeftMask ? 'transparent' : 'black')},
+    black 60px,
+    black calc(100% - 60px),
+    ${(props) => (props.$showRightMask ? 'transparent' : 'black')}
+  );
 
   @media ${deviceBreakPoints.mobile} {
     gap: ${CARD_GAP / 2}px;
-    -webkit-mask-image: linear-gradient(to right, transparent, black 20px, black calc(100% - 20px), transparent);
-    mask-image: linear-gradient(to right, transparent, black 20px, black calc(100% - 20px), transparent);
+    -webkit-mask-image: linear-gradient(
+      to right,
+      ${(props) => (props.$showLeftMask ? 'transparent' : 'black')} 20px,
+      black calc(100% - 20px),
+      ${(props) => (props.$showRightMask ? 'transparent' : 'black')}
+    );
+    mask-image: linear-gradient(
+      to right,
+      ${(props) => (props.$showLeftMask ? 'transparent' : 'black')} 20px,
+      black calc(100% - 20px),
+      ${(props) => (props.$showRightMask ? 'transparent' : 'black')}
+    );
   }
 
   -webkit-overflow-scrolling: touch;
