@@ -472,7 +472,7 @@ const CenterButtonWrapper = styled.div`
   justify-content: center;
   gap: var(--spacing-2);
   padding: var(--spacing-6);
-  border-radius: var(--radius-big);
+  border-radius: 100px;
   backdrop-filter: blur(30px) brightness(40%);
   border: 3px solid ${({ theme }) => theme.borderPrimary};
 `
