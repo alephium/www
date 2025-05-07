@@ -1,10 +1,10 @@
 import { graphql, useStaticQuery } from 'gatsby'
 import { getImage } from 'gatsby-plugin-image'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 import GatsbyImageWrapper from '../../GatsbyImageWrapper'
 
-const COLUMN_SIZE = '200px'
+const COLUMN_SIZE = '280px'
 const ROW_SIZE = '240px'
 
 const HomepageCommunitySection = () => {
@@ -62,50 +62,83 @@ const HomepageCommunitySection = () => {
     { row: 2, col: 5, rowSpan: 1, colSpan: 1, img: normalImages[3] },
     { row: 1, col: 6, rowSpan: 1, colSpan: 1, img: normalImages[4] },
     { row: 2, col: 6, rowSpan: 1, colSpan: 1, img: normalImages[5] },
-    { row: 1, col: 8, rowSpan: 1, colSpan: 1, img: normalImages[6] },
-    { row: 2, col: 8, rowSpan: 1, colSpan: 1, img: normalImages[7] },
-    { row: 1, col: 10, rowSpan: 1, colSpan: 1, img: normalImages[8] },
-    { row: 2, col: 10, rowSpan: 1, colSpan: 1, img: normalImages[9] }
-  ].filter((item) => item.img)
+    { row: 1, col: 10, rowSpan: 1, colSpan: 1, img: normalImages[6] },
+    { row: 2, col: 10, rowSpan: 1, colSpan: 1, img: normalImages[7] },
+    { row: 1, col: 11, rowSpan: 1, colSpan: 1, img: normalImages[8] },
+    { row: 2, col: 11, rowSpan: 1, colSpan: 1, img: normalImages[9] }
+  ]
 
   // Compute number of columns and rows from gridLayout
   const NUM_COLS = Math.max(...gridLayout.map((item) => item.col + item.colSpan - 1))
   const NUM_ROWS = Math.max(...gridLayout.map((item) => item.row + item.rowSpan - 1))
 
+  // If not enough images, repeat normal images to fill the grid
+  for (let i = 0; i < gridLayout.length; i++) {
+    if (!gridLayout[i].img) {
+      gridLayout[i].img = normalImages[i % normalImages.length]
+    }
+  }
+
+  // Duplicate the grid for seamless scroll
+  const renderGrid = (keyPrefix = '') =>
+    gridLayout.map((item, idx) =>
+      item.img ? (
+        <ImageWrapper
+          key={keyPrefix + item.img.name + idx}
+          style={{
+            gridColumn: `${item.col} / span ${item.colSpan}`,
+            gridRow: `${item.row} / span ${item.rowSpan}`,
+            width: '100%'
+          }}
+        >
+          <GatsbyImageWrapper
+            image={item.img.image}
+            alt={`Community image ${idx + 1}`}
+            style={{ height: '100%' }}
+            objectFit="cover"
+          />
+        </ImageWrapper>
+      ) : null
+    )
+
   return (
-    <MosaicContainer>
-      <MosaicGrid columnSize={COLUMN_SIZE} rowSize={ROW_SIZE} numCols={NUM_COLS} numRows={NUM_ROWS}>
-        {gridLayout.map((item, idx) =>
-          item.img ? (
-            <ImageWrapper
-              key={item.img.name + idx}
-              style={{
-                gridColumn: `${item.col} / span ${item.colSpan}`,
-                gridRow: `${item.row} / span ${item.rowSpan}`,
-                width: '100%'
-              }}
-            >
-              <GatsbyImageWrapper
-                image={item.img.image}
-                alt={`Community image ${idx + 1}`}
-                style={{ height: '100%' }}
-                objectFit="cover"
-              />
-            </ImageWrapper>
-          ) : null
-        )}
-      </MosaicGrid>
-    </MosaicContainer>
+    <MosaicScrollWrapper>
+      <MosaicScrollTrack numCols={NUM_COLS} columnSize={COLUMN_SIZE}>
+        <MosaicGrid columnSize={COLUMN_SIZE} rowSize={ROW_SIZE} numCols={NUM_COLS} numRows={NUM_ROWS}>
+          {renderGrid('a-')}
+        </MosaicGrid>
+        <MosaicGrid columnSize={COLUMN_SIZE} rowSize={ROW_SIZE} numCols={NUM_COLS} numRows={NUM_ROWS}>
+          {renderGrid('b-')}
+        </MosaicGrid>
+      </MosaicScrollTrack>
+    </MosaicScrollWrapper>
   )
 }
 
 // --- Styles ---
-const MosaicContainer = styled.div`
+const MosaicScrollWrapper = styled.div`
   width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow-x: hidden;
   position: relative;
   padding: 2rem 0;
+`
+
+const scroll = keyframes`
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+`
+
+const MosaicScrollTrack = styled.div<{ numCols: number; columnSize: string }>`
+  display: flex;
+  width: calc(2 * ${({ numCols, columnSize }) => `(${numCols} * ${columnSize})`});
+  animation: ${scroll} 80s linear infinite;
+  &:hover {
+    animation-play-state: paused;
+  }
 `
 
 const MosaicGrid = styled.div<{ columnSize: string; rowSize: string; numCols: number; numRows: number }>`
