@@ -30,7 +30,7 @@ const ambassadorQuery = graphql`
 `
 
 const CustomPage = (props: PageProps) => {
-  const { heroImage, heroVideo, placeholderImage } = useStaticQuery<Queries.AmbassadorPageQuery>(ambassadorQuery)
+  const { heroImage, heroVideo } = useStaticQuery<Queries.AmbassadorPageQuery>(ambassadorQuery)
 
   return (
     <Page
@@ -42,35 +42,45 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageVideoHeroSection poster={heroImage} video={heroVideo} minHeight="400px">
+          <SectionDivider double />
+          <SubpageVideoHeroSection poster={heroImage} video={heroVideo} minHeight="400px" narrow>
             <h1>Alephium Ambassador Program</h1>
           </SubpageVideoHeroSection>
           <SubpageSection>
-            <TextElement>
-              <p>
-                <strong>
-                  Join the Alephium Ambassador Program and become a pivotal force in advancing the world&apos;s first
-                  operational sharded blockchain
-                </strong>
-                , designed for secure and efficient decentralized applications. As an ambassador, you&apos;ll play a
-                crucial role in expanding our community, sharing knowledge, and driving the adoption of Alephium&apos;s
-                technology.
-              </p>
-              <p>
-                <strong>Whether you&apos;re a developer, educator, content creator, or blockchain enthusiast</strong>,
-                there&apos;s a place for you in the Alephium community. Together, we can build a more scalable, secure,
-                and sustainable Web3.
-              </p>
-            </TextElement>
+            <Grid columns={2}>
+              <TextElement>
+                <p>
+                  <strong>
+                    Join the Alephium Ambassador Program and become a pivotal force in advancing the world&apos;s first
+                    operational sharded blockchain
+                  </strong>
+                  , designed for secure and efficient decentralized applications. As an ambassador, you&apos;ll play a
+                  crucial role in expanding our community, sharing knowledge, and driving the adoption of
+                  Alephium&apos;s technology.
+                </p>
+              </TextElement>
+              <TextElement>
+                <p>
+                  <strong>Whether you&apos;re a developer, educator, content creator, or blockchain enthusiast</strong>,
+                  there&apos;s a place for you in the Alephium community. Together, we can build a more scalable,
+                  secure, and sustainable Web3.
+                </p>
+              </TextElement>
+            </Grid>
           </SubpageSection>
 
           <WhySection />
 
           <SubpageSection>
             <TextElement>
-              <h2>What Does an Alephium Ambassador Do?</h2>
+              <h2>
+                What does an <br />
+                Alephium Ambassador do?
+              </h2>
               <p>
-                As an Alephium Ambassador, you can contribute in a variety of ways based on your skills and interests:
+                <strong>
+                  As an Alephium Ambassador, you can contribute in a variety of ways based on your skills and interests:
+                </strong>
               </p>
             </TextElement>
 
@@ -79,53 +89,7 @@ const CustomPage = (props: PageProps) => {
 
           <SectionDivider />
 
-          <SubpageSection>
-            <TextElement>
-              <h2>How to Join the Program</h2>
-            </TextElement>
-
-            <Grid columns={2} gap="small">
-              <ClickableBox align="top">
-                <Emoji>1️⃣</Emoji>
-                <TextElement isSmall noMargin>
-                  <p>
-                    <strong>Apply</strong> - Fill out the{' '}
-                    <SimpleLink url="https://docs.google.com/forms/d/e/1FAIpQLSfR0T6Fg3v8HU86wZJgQBXslRUJKS3bsiQb92-ZIyaaV4RreA/viewform?usp=sf_link">
-                      Ambassador Application Form
-                    </SimpleLink>{' '}
-                    and tell us about your skills, experience, and how you'd like to contribute to Alephium.
-                  </p>
-                </TextElement>
-              </ClickableBox>
-              <ClickableBox align="top">
-                <Emoji>2️⃣</Emoji>
-                <TextElement isSmall noMargin>
-                  <p>
-                    <strong>Onboarding</strong> - If selected, you&apos;ll receive an onboarding package with resources,
-                    guidelines, and access to the Alephium Ambassador community.
-                  </p>
-                </TextElement>
-              </ClickableBox>
-              <ClickableBox align="top">
-                <Emoji>3️⃣</Emoji>
-                <TextElement isSmall noMargin>
-                  <p>
-                    <strong>Start Contributing</strong> - Begin your journey by completing tasks, participating in
-                    initiatives, and collaborating with other ambassadors.
-                  </p>
-                </TextElement>
-              </ClickableBox>
-              <ClickableBox align="top">
-                <Emoji>4️⃣</Emoji>
-                <TextElement isSmall noMargin>
-                  <p>
-                    <strong>Grow and Earn</strong> - As you contribute, you&apos;ll earn rewards, gain recognition, and
-                    unlock new opportunities within the Alephium ecosystem.
-                  </p>
-                </TextElement>
-              </ClickableBox>
-            </Grid>
-          </SubpageSection>
+          <HowToApply />
 
           {/* Same image as in FAQ page can go here, like we do with the "Wallets" in /get-started */}
           <SubpageSection isCentered>
@@ -138,7 +102,7 @@ const CustomPage = (props: PageProps) => {
             </TextElement>
           </SubpageSection>
 
-          <SubpageSection border>
+          <SubpageSection border edgeGradient>
             <TextElement isCentered>
               <h2>Ready to Join?</h2>
               <p>
@@ -154,7 +118,8 @@ const CustomPage = (props: PageProps) => {
               </Button>
             </TextElement>
           </SubpageSection>
-          <SectionDivider />
+
+          <SectionDivider double />
         </>
       }
     />
@@ -217,6 +182,59 @@ const Cards = () => {
   )
 }
 
+const HowToApply = () => {
+  const theme = useTheme()
+
+  return (
+    <SubpageSection>
+      <TextElement>
+        <h2>How to Join the Program</h2>
+      </TextElement>
+
+      <Grid columns={2} gap="small">
+        <ClickableBox align="top">
+          <TextElement noMargin>
+            <p>
+              <strong style={{ color: theme.palette2 }}>Apply</strong> - Fill out the{' '}
+              <SimpleLink
+                highlight
+                url="https://docs.google.com/forms/d/e/1FAIpQLSfR0T6Fg3v8HU86wZJgQBXslRUJKS3bsiQb92-ZIyaaV4RreA/viewform?usp=sf_link"
+              >
+                Ambassador Application Form
+              </SimpleLink>{' '}
+              and tell us about your skills, experience, and how you'd like to contribute to Alephium.
+            </p>
+          </TextElement>
+        </ClickableBox>
+        <ClickableBox align="top">
+          <TextElement noMargin>
+            <p>
+              <strong style={{ color: theme.palette3 }}>Onboarding</strong> - If selected, you&apos;ll receive an
+              onboarding package with resources, guidelines, and access to the Alephium Ambassador community.
+            </p>
+          </TextElement>
+        </ClickableBox>
+        <ClickableBox align="top">
+          <TextElement noMargin>
+            <p>
+              <strong style={{ color: theme.palette4 }}>Start Contributing</strong> - Begin your journey by completing
+              tasks, participating in initiatives, and collaborating with other ambassadors.
+            </p>
+          </TextElement>
+        </ClickableBox>
+        <ClickableBox align="top">
+          <TextElement noMargin>
+            <p>
+              <strong style={{ color: theme.palette6 }}>Grow and Earn</strong> - As you contribute, you&apos;ll earn
+              rewards, gain recognition, and unlock new opportunities within the Alephium ecosystem.
+            </p>
+          </TextElement>
+        </ClickableBox>
+      </Grid>
+    </SubpageSection>
+  )
+}
+
 export default CustomPage
 
 const WhySection = () => {
@@ -225,7 +243,11 @@ const WhySection = () => {
   return (
     <SubpageSection>
       <TextElement>
-        <h2>Why Become an Alephium Ambassador?</h2>
+        <h2>
+          Why become
+          <br /> an Alephium Ambassador?
+          <hr />
+        </h2>
       </TextElement>
 
       <SubheaderContent>

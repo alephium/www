@@ -68,7 +68,7 @@ const StyledGrid = styled(motion.div)<GridProps>`
           display: grid;
           grid-template-columns: repeat(${columns || 3}, minmax(0, 1fr));
         `}
-  gap: ${({ gap }) => (gap === 'small' ? 'var(--spacing-2)' : 'var(--spacing-6)')};
+  gap: ${({ gap }) => (gap === 'small' ? 'var(--spacing-2)' : 'var(--spacing-8)')};
 
   @media ${deviceBreakPoints.mobile} {
     display: flex;

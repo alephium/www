@@ -2,10 +2,11 @@ import styled, { css } from 'styled-components'
 
 interface SectionDividerProps {
   border?: boolean
+  double?: boolean
 }
 
 const SectionDivider = styled.div<SectionDividerProps>`
-  ${({ border }) =>
+  ${({ border, double }) =>
     border
       ? css`
           height: 1px;
@@ -13,7 +14,7 @@ const SectionDivider = styled.div<SectionDividerProps>`
           width: 100%;
         `
       : css`
-          height: var(--spacing-4);
+          height: ${double ? 'var(--spacing-8)' : 'var(--spacing-4)'};
           width: 100%;
         `}
 `

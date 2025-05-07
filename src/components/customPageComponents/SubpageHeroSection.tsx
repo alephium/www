@@ -14,6 +14,7 @@ export interface SubpageHeroSectionProps extends React.HTMLAttributes<HTMLElemen
   bottomMargin?: boolean
   minHeight?: string
   split?: boolean
+  narrow?: boolean
 }
 
 const SubpageHeroSection = forwardRef<HTMLElement, SubpageHeroSectionProps>(function SubpageHeroSection(
@@ -35,13 +36,15 @@ const SubpageHeroSection = forwardRef<HTMLElement, SubpageHeroSectionProps>(func
 
 export default SubpageHeroSection
 
-const SubpageHeroSectionStyled = styled.section<Pick<SubpageHeroSectionProps, 'minHeight' | 'bottomMargin' | 'split'>>`
+const SubpageHeroSectionStyled = styled.section<
+  Pick<SubpageHeroSectionProps, 'minHeight' | 'bottomMargin' | 'split' | 'narrow'>
+>`
   position: relative;
   height: ${({ split, minHeight }) => (split ? minHeight || '75vh' : 'auto')};
   min-height: ${({ split, minHeight }) => (split ? 'unset' : minHeight || '75vh')};
   margin: auto;
   margin-bottom: ${({ bottomMargin }) => (bottomMargin ? 'var(--spacing-10)' : '0')};
-  width: 80vw;
+  width: ${({ narrow }) => (narrow ? 'var(--page-width)' : '80vw')};
   overflow: hidden;
   transition: all 0.4s ease-in;
   display: flex;

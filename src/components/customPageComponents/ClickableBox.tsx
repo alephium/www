@@ -17,7 +17,7 @@ const BoxStyles = css<ClickableBoxProps>`
   gap: var(--spacing-4);
   background-color: ${({ theme }) => theme.surface2};
   border-radius: var(--radius);
-  padding: var(--spacing-2);
+  padding: var(--spacing-4);
   &:hover {
     background-color: ${({ theme }) => theme.surface1};
   }
