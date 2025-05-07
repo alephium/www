@@ -5,6 +5,7 @@ import Button from '../components/Button'
 import Page from '../components/customPageComponents/Page'
 import TextElement from '../components/customPageComponents/TextElement'
 import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
+import HomepageCommunitySection from '../components/pages/homepage/HomepageCommunitySection'
 import HomepageEcosystemSection from '../components/pages/homepage/HomepageEcosystemSection'
 import HomepageHeroSection from '../components/pages/homepage/HomepageHeroSection'
 import HomepageIntroSection from '../components/pages/homepage/HomepageIntroSection'
@@ -54,6 +55,9 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
           <HomepageEcosystemSection />
 
           <SectionDivider />
+
+          <HomepageCommunitySection />
+
           <SectionDivider />
 
           <BottomSection>
