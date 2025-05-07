@@ -11,7 +11,6 @@ import HomepageIntroSection from '../components/pages/homepage/HomepageIntroSect
 import HomepageNumbersSection from '../components/pages/homepage/HomepageNumbersSection'
 import HomepageUSPSection from '../components/pages/homepage/HomepageUSPSection'
 import SectionDivider from '../components/SectionDivider'
-
 export const pageQuery = graphql`
   query IndexPage {
     allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/homepage.md/" } }) {
@@ -55,6 +54,7 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
           <HomepageEcosystemSection />
 
           <SectionDivider />
+          <SectionDivider />
 
           <BottomSection>
             <BottomBackgroundImageContainer>
@@ -95,4 +95,6 @@ const BottomSection = styled.div`
   height: 600px;
   width: 100%;
   margin-top: var(--spacing-4);
+  padding: 0 var(--spacing-4);
+  box-sizing: border-box;
 `

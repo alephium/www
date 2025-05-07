@@ -1,11 +1,11 @@
-import { graphql, PageProps, useStaticQuery } from 'gatsby'
+import { PageProps } from 'gatsby'
+import { useTheme } from 'styled-components'
 
 import Button from '../components/Button'
 import CardsRow from '../components/customPageComponents/CardsRow'
 import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
-import SubpageHeroSection from '../components/customPageComponents/SubpageImageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextCard from '../components/customPageComponents/TextCard'
 import TextCardContent from '../components/customPageComponents/TextCardContent'
@@ -13,16 +13,8 @@ import TextElement from '../components/customPageComponents/TextElement'
 import SectionDivider from '../components/SectionDivider'
 import SimpleLink from '../components/SimpleLink'
 
-const grantsQuery = graphql`
-  query GrantsPage {
-    heroImage: file(relativePath: { eq: "alephium-hackathon-lake.png" }) {
-      ...HeroImage
-    }
-  }
-`
-
 const CustomPage = (props: PageProps) => {
-  const { heroImage } = useStaticQuery<Queries.GrantsPageQuery>(grantsQuery)
+  const theme = useTheme()
 
   return (
     <Page
@@ -34,16 +26,21 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageHeroSection backgroundImage={heroImage}>
-            <h1>Alephium Grants & Funding Opportunities</h1>
-            <hr />
-            <p>
-              At Alephium, we believe that builders drive progress. Our Grants Program is designed to support
-              individuals and teams working on projects that expand and strengthen the Alephium ecosystem. Whether
-              you&apos;re developing DeFi applications, NFT platforms, decentralized services, integrations, or hardware
-              solutions, we want to assist you in bringing your idea to fruition on Alephium.
-            </p>
-          </SubpageHeroSection>
+          <SubpageSection wide border edgeGradient>
+            <TextElement isCentered>
+              <h1>
+                Alephium Grants
+                <br />& Funding Opportunities
+              </h1>
+              <p>
+                <strong>At Alephium, we believe that builders drive progress.</strong> Our Grants Program is designed to
+                support individuals and teams working on projects that expand and strengthen the Alephium ecosystem.
+                Whether you&apos;re developing DeFi applications, NFT platforms, decentralized services, integrations,
+                or hardware solutions,{' '}
+                <strong>we want to assist you in bringing your idea to fruition on Alephium.</strong>
+              </p>
+            </TextElement>
+          </SubpageSection>
 
           <SubpageSection>
             <TextElement>
@@ -52,7 +49,7 @@ const CustomPage = (props: PageProps) => {
 
             <SubheaderContent>
               <CardsRow>
-                <TextCard>
+                <TextCard border>
                   <TextCardContent>
                     <h3>Alephium Grants Fund</h3>
                     <p>
@@ -60,22 +57,27 @@ const CustomPage = (props: PageProps) => {
                       the Alephium network. We offer tailored support for projects at various stages of development.
                     </p>
                     <p>Ready to bring your Alephium project to life?</p>
-                    <Button url="https://docs.google.com/forms/d/e/1FAIpQLSexF7M7k7kDdJtsHKFGYZuw4uEP7dzRrxmTFaMQvdU8DdH3cA/viewform">
+                    <Button
+                      squared
+                      url="https://docs.google.com/forms/d/e/1FAIpQLSexF7M7k7kDdJtsHKFGYZuw4uEP7dzRrxmTFaMQvdU8DdH3cA/viewform"
+                    >
                       Learn & Apply
                     </Button>
                   </TextCardContent>
                 </TextCard>
-                <TextCard>
+                <TextCard border>
                   <TextCardContent>
                     <h3>Bug Bounty Program</h3>
                     <p>
                       Security is paramount at Alephium. We encourage individual developers to discover vulnerabilities
                       and exploits within the Alephium protocol or any of our code repositories.
                     </p>
-                    <Button url="/bounties">Learn more</Button>
+                    <Button squared url="/bounties">
+                      Learn more
+                    </Button>
                   </TextCardContent>
                 </TextCard>
-                <TextCard>
+                <TextCard border>
                   <TextCardContent>
                     <h3>Migration and Expansion Grants</h3>
                     <p>
@@ -97,8 +99,8 @@ const CustomPage = (props: PageProps) => {
             <TextElement>
               <h2>What Kind of Projects Do We Fund?</h2>
               <p>
-                We’re open to funding anything that improves the Alephium ecosystem. Some key areas we are excited
-                about:
+                <strong>We’re open to funding anything that improves the Alephium ecosystem. </strong>
+                Some key areas we are excited about:
               </p>
             </TextElement>
             <Grid columns={2} gap="small">

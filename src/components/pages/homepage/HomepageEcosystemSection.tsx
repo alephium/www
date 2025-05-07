@@ -292,9 +292,7 @@ const HomepageEcosystemSection = () => {
         <TextElement isCentered>
           <h2>Built on Alephium.</h2>
           <p>
-            Alephium is home to hundreds of innovative dApps.
-            <br />
-            <strong>And many more to come.</strong>
+            <strong>Alephium is home to hundreds of innovative dApps.</strong>
           </p>
         </TextElement>
         <LogosContainer ref={containerRef} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
@@ -365,7 +363,7 @@ const HomepageEcosystemSection = () => {
             })}
           <CenterButtonWrapper>
             <Button big highlight url="https://alph.land">
-              Explore ecosystem
+              Explore
             </Button>
           </CenterButtonWrapper>
         </LogosContainer>
@@ -475,6 +473,6 @@ const CenterButtonWrapper = styled.div`
   gap: var(--spacing-2);
   padding: var(--spacing-6);
   border-radius: var(--radius-big);
-  backdrop-filter: blur(10px) brightness(70%);
+  backdrop-filter: blur(30px) brightness(40%);
   border: 3px solid ${({ theme }) => theme.borderPrimary};
 `

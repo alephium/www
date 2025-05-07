@@ -51,10 +51,10 @@ const HomepageIntroSection = () => {
   const hardcodedCards = useMemo<Card[]>(
     () => [
       {
-        title: 'Get started',
+        title: 'Explore',
         description: (
           <>
-            Learn more about <strong>Alephium</strong> and start your journey.
+            Discover <strong>Alephium</strong> and start your journey.
           </>
         ),
         actionText: 'Learn More',
@@ -79,7 +79,7 @@ const HomepageIntroSection = () => {
         color: 'palette5'
       },
       {
-        title: 'Get involved',
+        title: 'Contribute',
         description: (
           <>
             <strong>Apply for a grant</strong> to develop your project on Alephium.

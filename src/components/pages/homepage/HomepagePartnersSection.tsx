@@ -2,6 +2,7 @@ import { graphql } from 'gatsby'
 import { useRef, useState } from 'react'
 import styled from 'styled-components'
 
+import { deviceBreakPoints } from '../../../styles/global-style'
 import SubheaderContent from '../../customPageComponents/SubheaderContent'
 import TextElement from '../../customPageComponents/TextElement'
 
@@ -63,6 +64,10 @@ const PartnersGridContainer = styled.div`
   margin: 0 auto;
   overflow: hidden;
   mask-image: linear-gradient(to right, transparent, black 60px, black calc(100% - 60px), transparent);
+
+  @media ${deviceBreakPoints.mobile} {
+    mask-image: linear-gradient(to right, transparent, black 20px, black calc(100% - 20px), transparent);
+  }
 `
 
 const PartnersGrid = styled.div`

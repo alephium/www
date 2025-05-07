@@ -85,7 +85,7 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageVideoHeroSection poster={heroImage} video={heroVideo}>
+          <SubpageVideoHeroSection poster={heroImage} video={heroVideo} minHeight={400}>
             <h1>
               Our Wallets,
               <br />

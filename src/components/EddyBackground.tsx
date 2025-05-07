@@ -36,8 +36,8 @@ export interface MeshGradientEffectProps {
 }
 
 const MeshGradientEffect: React.FC<MeshGradientEffectProps> = ({
-  contrast = 1.6,
-  brightness = 1.1,
+  contrast = 1.4,
+  brightness = 1.0,
   blendMode = 'screen',
   speed = 0.25,
   color1 = hexToRgb01('#ffffaa'),
@@ -257,5 +257,4 @@ const Canvas = styled.canvas<{ blendMode: string }>`
   z-index: -1;
   pointer-events: none;
   mix-blend-mode: ${(props) => props.blendMode};
-  filter: blur(40px);
 `

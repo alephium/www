@@ -118,6 +118,7 @@ const GlobalStyle = createGlobalStyle`
     --fontSize-64: 4.2rem;
     --fontSize-68: 4.25rem;
     --fontSize-70: 4.375rem;
+    --fontSize-80: 5rem;
     --lineHeight-22: 1.375rem;
     --lineHeight-26: 1.625rem;
     --lineHeight-28: 1.75rem;

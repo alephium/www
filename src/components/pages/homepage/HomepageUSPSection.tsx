@@ -5,6 +5,7 @@ import { graphql } from 'gatsby'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import styled, { useTheme } from 'styled-components'
 
+import { deviceBreakPoints } from '../../../styles/global-style'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextCard from '../../customPageComponents/TextCard'
 import TextCardContent from '../../customPageComponents/TextCardContent'
@@ -333,6 +334,7 @@ const StatsContainer = styled.div`
   width: 100%;
   padding-top: var(--spacing-4);
   position: relative;
+  padding-left: var(--spacing-4);
 `
 
 const CardsScroll = styled.div`
@@ -342,8 +344,14 @@ const CardsScroll = styled.div`
   padding: var(--spacing-4) 0;
   padding-left: calc((100% - var(--page-width)) / 2 + var(--spacing-4));
   scroll-snap-type: x mandatory;
-  -webkit-mask-image: linear-gradient(to right, transparent, black 60px, black calc(100% - 60px), transparent);
-  mask-image: linear-gradient(to right, transparent, black 60px, black calc(100% - 60px), transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 40px, black calc(100% - 40px), transparent);
+  mask-image: linear-gradient(to right, transparent, black 40px, black calc(100% - 40px), transparent);
+
+  @media ${deviceBreakPoints.mobile} {
+    gap: ${CARD_GAP / 2}px;
+    -webkit-mask-image: linear-gradient(to right, transparent, black 20px, black calc(100% - 20px), transparent);
+    mask-image: linear-gradient(to right, transparent, black 20px, black calc(100% - 20px), transparent);
+  }
 
   -webkit-overflow-scrolling: touch;
   margin-bottom: var(--spacing-4);
@@ -367,6 +375,10 @@ const CardContainer = styled(motion.div)`
   scroll-snap-align: start;
   position: relative;
   z-index: 0;
+
+  @media ${deviceBreakPoints.mobile} {
+    flex: 0 0 ${CARD_WIDTH / 1.3}px;
+  }
 
   &:first-child {
     padding-left: calc((100% - var(--page-width)));
@@ -401,7 +413,7 @@ const ScrollButtonsContainer = styled.div`
   display: flex;
   gap: var(--spacing-2);
   justify-content: flex-end;
-  padding-right: var(--spacing-6);
+  padding-right: var(--spacing-10);
 `
 
 const ScrollButton = styled.button`

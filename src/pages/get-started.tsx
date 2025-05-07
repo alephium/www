@@ -1,10 +1,8 @@
 import { graphql, PageProps, useStaticQuery } from 'gatsby'
 
 import Button from '../components/Button'
-import Background from '../components/customPageComponents/Background'
 import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
-import SideBySide from '../components/customPageComponents/SideBySide'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
 import SubpageImageHeroSection from '../components/customPageComponents/SubpageImageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
@@ -69,8 +67,7 @@ const exchangesQuery = graphql`
 `
 
 const CustomPage = (props: PageProps) => {
-  const { heroImage, heroVideo, treasureImage, mineImage, ecosystemImage } =
-    useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
+  const { treasureImage, mineImage, ecosystemImage } = useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
 
   return (
     <Page
@@ -84,7 +81,7 @@ const CustomPage = (props: PageProps) => {
         <>
           <SectionDivider />
 
-          <SubpageSection bgColor="3" wide border edgeGradient>
+          <SubpageSection bgColor="3" wide border edgeGradient gradientPosition="top">
             <TextElement isCentered>
               <h2>
                 Get Started
@@ -101,7 +98,7 @@ const CustomPage = (props: PageProps) => {
 
           <SectionDivider />
 
-          <SubpageImageHeroSection backgroundImage={treasureImage} minHeight="660px" split>
+          <SubpageImageHeroSection backgroundImage={treasureImage} minHeight="500px" split>
             <h2>Wallets</h2>
             <p>
               <strong>Your gateway to the Alephium ecosystem.</strong> Store, send, receive, swap, borrow, lend, and
@@ -149,60 +146,57 @@ const CustomPage = (props: PageProps) => {
             </SubheaderContent>
           </SubpageSection>*/}
 
-          <SubpageSection wide>
-            <SideBySide>
-              <Background>
-                <TextElement>
-                  <h2>
-                    Build on Alephium
-                    <hr />
-                  </h2>
-                  <p>
-                    With robust smart contract security, high-performance sharding, and a resilient Proof-of-Work
-                    foundation, <strong>Alephium gives you the tools to build better, safer, and faster.</strong>
-                  </p>
-                </TextElement>
-              </Background>
+          <SectionDivider />
 
-              <SubheaderContent>
-                <Grid columns={2} gap="small">
-                  <TextCard border url="https://docs.alephium.org/">
-                    <TextCardContent>
-                      <h3>Documentation</h3>
-                      <p>Documentation to get you going quick and easy.</p>
-                    </TextCardContent>
-                  </TextCard>
-                  <TextCard border url="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md">
-                    <TextCardContent>
-                      <h3>Grants</h3>
-                      <p>
-                        You have an idea, but no funding?
-                        <br />
-                        We can help.
-                      </p>
-                    </TextCardContent>
-                  </TextCard>
-                </Grid>
+          <SubpageSection wide bgColor="2" isCentered edgeGradient>
+            <TextElement isCentered>
+              <h2>Build on Alephium</h2>
+              <p>
+                With robust smart contract security, high-performance sharding, and a resilient Proof-of-Work
+                foundation, <strong>Alephium gives you the tools to build better, safer, and faster.</strong>
+              </p>
+            </TextElement>
 
-                <SectionDivider />
+            <SubheaderContent isCentered>
+              <Grid columns={2} gap="small">
+                <TextCard border url="https://docs.alephium.org/">
+                  <TextCardContent>
+                    <h3>Documentation</h3>
+                    <p>Documentation to get you going quick and easy.</p>
+                  </TextCardContent>
+                </TextCard>
+                <TextCard border url="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md">
+                  <TextCardContent>
+                    <h3>Grants</h3>
+                    <p>
+                      You have an idea, but no funding?
+                      <br />
+                      We can help.
+                    </p>
+                  </TextCardContent>
+                </TextCard>
+              </Grid>
 
-                <TextElement>
-                  <h3>Guides and tutorials</h3>
-                  <Button url="https://docs.alephium.org/ralph">Ralph Language</Button>
-                  <Button url="https://docs.alephium.org/sdk">SDK</Button>
-                  <Button url="https://www.youtube.com/playlist?list=PL8q8n0BHJS1PWP7t8ABECYdOaPM-hJmjx">
-                    Tutorials
-                  </Button>
-                </TextElement>
-              </SubheaderContent>
-            </SideBySide>
+              <SectionDivider />
+
+              <TextElement isCentered>
+                <h3>Guides and tutorials</h3>
+                <Button url="https://docs.alephium.org/ralph">Ralph Language</Button>
+                <Button url="https://docs.alephium.org/sdk">SDK</Button>
+                <Button url="https://www.youtube.com/playlist?list=PL8q8n0BHJS1PWP7t8ABECYdOaPM-hJmjx">
+                  Tutorials
+                </Button>
+              </TextElement>
+            </SubheaderContent>
           </SubpageSection>
+
+          <SectionDivider />
 
           <SubpageImageHeroSection
             backgroundImage={ecosystemImage}
             alignContent="center"
             bottomMargin
-            minHeight="600px"
+            minHeight="500px"
             split
           >
             <TextElement isCentered>

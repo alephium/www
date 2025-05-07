@@ -41,7 +41,7 @@ const SubpageHeroSectionStyled = styled.section<Pick<SubpageHeroSectionProps, 'm
   min-height: ${({ split, minHeight }) => (split ? 'unset' : minHeight || '75vh')};
   margin: auto;
   margin-bottom: ${({ bottomMargin }) => (bottomMargin ? 'var(--spacing-10)' : '0')};
-  width: 85vw;
+  width: 80vw;
   overflow: hidden;
   transition: all 0.4s ease-in;
   display: flex;

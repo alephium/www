@@ -49,15 +49,9 @@ partnersSection:
     - title: 'Dia'
       logo: '../images/svgs/dia-logo.svg'
       url: https://www.diadata.org/
-    - title: 'Crypto Valley Association'
-      logo: '../images/svgs/crypto-valley-association-vector-logo.svg'
-      url: https://cryptovalley.swiss/
     - title: 'Gate.io'
       logo: '../images/svgs/gateio-logo.svg'
       url: 'https://www.gate.io'
-    - title: 'G20'
-      logo: '../images/svgs/g20-logo.svg'
-      url: 'https://www.g20.group'
     - title: 'IceRiver'
       logo: '../images/svgs/iceriver-logo.svg'
       url: https://iceriver.eu/

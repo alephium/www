@@ -39,16 +39,15 @@ const HomepageHeroSection = () => {
           <strong>
             Scalable Proof-of-Less-Work and secure Smart Contracts,
             <br />
-            <b>only on Alephium.</b>
+            <b> only on Alephium.</b>
           </strong>
         </p>
       </TextElementStyled>
 
       <Buttons>
         <Button big highlight url="https://docs.alephium.org">
-          Build on Alephium
+          Start building
         </Button>
-        <ArrowedLinkStyled url="/communities">Join the community</ArrowedLinkStyled>
       </Buttons>
       {content?.partnersSection && <HomepagePartnersSection {...content.partnersSection} />}
     </SubpageSectionStyled>
@@ -73,10 +72,14 @@ const Buttons = styled.div`
   display: flex;
   justify-content: center;
   gap: var(--spacing-4);
-  margin-top: var(--spacing-8);
+  margin-top: var(--spacing-2);
+  margin-bottom: var(--spacing-4);
 
   @media ${deviceBreakPoints.mobile} {
     margin-top: var(--spacing-4);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   @media ${deviceBreakPoints.smallMobile} {

@@ -195,7 +195,7 @@ const HomepageNumbersSection = () => {
         <motion.div
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
+          transition={{ duration: 0.5 }}
           style={{ zIndex: 5000, width: '100%' }}
           viewport={{ once: true }}
         >

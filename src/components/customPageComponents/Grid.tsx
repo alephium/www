@@ -11,31 +11,6 @@ interface GridProps {
   children?: React.ReactNode
 }
 
-const StyledGrid = styled(motion.div)<GridProps>`
-  ${({ isCentered, columns }) =>
-    isCentered
-      ? `
-          display: inline-grid;
-          grid-auto-flow: column;
-          grid-auto-columns: 1fr;
-          justify-content: center;
-          margin: 0 auto;
-        `
-      : `
-          display: grid;
-          grid-template-columns: repeat(${columns || 3}, minmax(0, 1fr));
-        `}
-  gap: ${({ gap }) => (gap === 'small' ? 'var(--spacing-2)' : 'var(--spacing-6)')};
-
-  @media ${deviceBreakPoints.mobile} {
-    grid-template-columns: repeat(${({ columns }) => (columns ? columns - 1 : 2)}, minmax(0, 1fr));
-  }
-
-  @media ${deviceBreakPoints.smallMobile} {
-    grid-template-columns: 1fr;
-  }
-`
-
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -78,3 +53,30 @@ const Grid: React.FC<GridProps> = ({ children, ...props }) => {
 }
 
 export default Grid
+
+const StyledGrid = styled(motion.div)<GridProps>`
+  ${({ isCentered, columns }) =>
+    isCentered
+      ? `
+          display: inline-grid;
+          grid-auto-flow: column;
+          grid-auto-columns: 1fr;
+          justify-content: center;
+          margin: 0 auto;
+        `
+      : `
+          display: grid;
+          grid-template-columns: repeat(${columns || 3}, minmax(0, 1fr));
+        `}
+  gap: ${({ gap }) => (gap === 'small' ? 'var(--spacing-2)' : 'var(--spacing-6)')};
+
+  @media ${deviceBreakPoints.mobile} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media ${deviceBreakPoints.smallMobile} {
+    grid-template-columns: 1fr;
+  }
+`
