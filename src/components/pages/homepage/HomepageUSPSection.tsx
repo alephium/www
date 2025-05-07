@@ -6,6 +6,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import styled, { useTheme } from 'styled-components'
 
 import { deviceBreakPoints } from '../../../styles/global-style'
+import { formatNumberForDisplay } from '../../../utils/numbers'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextCard from '../../customPageComponents/TextCard'
 import TextCardContent from '../../customPageComponents/TextCardContent'
@@ -154,7 +155,7 @@ const HomepageUSPSection = () => {
                 <TextCardContent>
                   <h3 style={{ color: theme.palette2 }}>Fast</h3>
                   <TLDRSection color={theme.palette2}>
-                    <span>20,000+ tps, single-chain experience</span>
+                    <span>20,000+ tps, single-chain experience.</span>
                   </TLDRSection>
                 </TextCardContent>
               </TextElement>
@@ -181,16 +182,20 @@ const HomepageUSPSection = () => {
                 <TextCardContent>
                   <h3 style={{ color: theme.palette3 }}>Scalable</h3>
                   <TLDRSection color={theme.palette3}>
-                    <span>{`${totalTransactions.value.toLocaleString()} total transactions`}</span>
+                    <span>{`${formatNumberForDisplay(totalTransactions.value).join(
+                      ''
+                    )} transactions to date, low and predictable fees.`}</span>
                   </TLDRSection>
                 </TextCardContent>
               </TextElement>
               <TextCardContent>
                 <TextElement noHeadingsMargins>
                   <p>
-                    Alephium's unique sharding design, built on its unique combination of UTXO and Proof-of-Work model
-                    together with a DAG data structure, delivers consistent performance at scale, keeping fees stable
-                    and affordable for both users and developers.
+                    Alephium’s unique sharding design, built on its unique combination of UTXO and Proof-of-Work model
+                    together with a DAG data structure, delivers{' '}
+                    <strong>
+                      consistent performance at scale, keeping fees stable and affordable for both users and developers.
+                    </strong>
                   </p>
                 </TextElement>
               </TextCardContent>
@@ -208,16 +213,19 @@ const HomepageUSPSection = () => {
                 <TextCardContent>
                   <h3 style={{ color: theme.palette4 }}>Secure</h3>
                   <TLDRSection color={theme.palette4}>
-                    <span>125+ independent mining nodes</span>
+                    <span>0 exploits, 0 hacks, security by design.</span>
                   </TLDRSection>
                 </TextCardContent>
               </TextElement>
               <TextCardContent>
                 <TextElement noHeadingsMargins>
                   <p>
-                    With a truly decentralized Proof-of-Work model, Alephium operates independently of vulnerable
-                    central validators,{' '}
-                    <strong>ensuring maximum security, trustlessness, and censorship resistance.</strong>
+                    Alephium offers a robust, developer-friendly environment with{' '}
+                    <strong>built-in protections against common vulnerabilities</strong>. Its MEV-aware architecture and
+                    native safeguards{' '}
+                    <strong>
+                      prevent threats like reentrancy attacks, unlimited approvals, and flash loan exploits.
+                    </strong>
                   </p>
                 </TextElement>
               </TextCardContent>
@@ -235,15 +243,18 @@ const HomepageUSPSection = () => {
                 <TextCardContent>
                   <h3 style={{ color: theme.palette1 }}>Sustainable</h3>
                   <TLDRSection color={theme.palette1}>
-                    <span>87% more efficient than PoW</span>
+                    <span>The best of PoW, 87% less energy.</span>
                   </TLDRSection>
                 </TextCardContent>
               </TextElement>
               <TextCardContent>
                 <TextElement noHeadingsMargins>
                   <p>
-                    Alephium&apos;s Proof-of-Less-Work mechanism reduces energy consumption, making it{' '}
-                    <strong>one of the most sustainable and responsible blockchains</strong> built for the future.
+                    Alephium’s Proof-of-Less-Work consensus delivers true decentralization with a fraction of the
+                    energy.{' '}
+                    <strong>
+                      It retains the security and simplicity of traditional PoW while cutting energy use by over 87%.
+                    </strong>
                   </p>
                 </TextElement>
               </TextCardContent>
@@ -261,15 +272,18 @@ const HomepageUSPSection = () => {
                 <TextCardContent>
                   <h3 style={{ color: theme.palette6 }}>Programmable</h3>
                   <TLDRSection color={theme.palette6}>
-                    <span>No compromise smart-contracts</span>
+                    <span>Stateful UTXO, the best of Bitcoin and Ethereum.</span>
                   </TLDRSection>
                 </TextCardContent>
               </TextElement>
               <TextCardContent>
                 <TextElement noHeadingsMargins>
                   <p>
-                    Alephium&apos;s stateful UTXO model merges the best of both worlds -{' '}
-                    <strong>Ethereum-like smart contract flexibility with Bitcoin-level security.</strong>
+                    <strong>
+                      Alephium’s stateful UTXO model combines Ethereum’s flexibility with Bitcoin’s security.
+                    </strong>{' '}
+                    It enables powerful smart contracts with mutable state while ensuring robust, UTXO-based asset
+                    protection.
                   </p>
                 </TextElement>
               </TextCardContent>
@@ -287,16 +301,19 @@ const HomepageUSPSection = () => {
                 <TextCardContent>
                   <h3 style={{ color: theme.palette5 }}>Dev-friendly</h3>
                   <TLDRSection color={theme.palette5}>
-                    <span>Super simple language and novel VM</span>
+                    <span>Custom VM & language built for performance.</span>
                   </TLDRSection>
                 </TextCardContent>
               </TextElement>
               <TextCardContent>
                 <TextElement noHeadingsMargins>
                   <p>
-                    Alephium simplifies decentralized development with an optimized SDK, MEV-resistant design, and
-                    built-in security features{' '}
-                    <strong>making smart contracts and dApps both easier to build and inherently safer.</strong>
+                    Alephium empowers developers with its{' '}
+                    <strong>
+                      purpose-built Virtual Machine, intuitive SDK, and high-performance programming language
+                    </strong>
+                    , enabling efficient development and unlocking new possibilities for smart contracts, dApps, and
+                    tokens.
                   </p>
                 </TextElement>
               </TextCardContent>
