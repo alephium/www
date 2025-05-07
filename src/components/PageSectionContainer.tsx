@@ -26,7 +26,7 @@ const PageSectionContainer = styled.div<PageSectionContainerProps>`
   box-sizing: border-box;
 
   @media ${deviceBreakPoints.mobile} {
-    max-width: 90vw;
+    max-width: ${({ fullWidth }) => (fullWidth ? '100%' : '90vw')};
   }
 `
 

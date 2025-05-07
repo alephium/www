@@ -54,7 +54,7 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
 
           <HomepageEcosystemSection />
 
-          <SectionDivider />
+          <SectionDivider border />
 
           <HomepageCommunitySection />
 
@@ -95,6 +95,10 @@ const BottomBackgroundImageContainer = styled.div`
 `
 
 const BottomSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
   height: 600px;
   width: 100%;

@@ -2,10 +2,18 @@ import { graphql, useStaticQuery } from 'gatsby'
 import { getImage } from 'gatsby-plugin-image'
 import styled, { keyframes } from 'styled-components'
 
+import { deviceBreakPoints } from '../../../styles/global-style'
+import Button from '../../Button'
+import SubpageSection from '../../customPageComponents/SubpageSection'
+import TextElement from '../../customPageComponents/TextElement'
 import GatsbyImageWrapper from '../../GatsbyImageWrapper'
+import PageSectionContainer from '../../PageSectionContainer'
 
 const COLUMN_SIZE = '280px'
 const ROW_SIZE = '240px'
+const COLUMN_SIZE_MOBILE = '120px'
+const ROW_SIZE_MOBILE = '120px'
+const GRID_GAP = '1.5rem'
 
 const HomepageCommunitySection = () => {
   const data = useStaticQuery(graphql`
@@ -102,20 +110,33 @@ const HomepageCommunitySection = () => {
     )
 
   return (
-    <MosaicScrollWrapper>
-      <MosaicScrollTrack numCols={NUM_COLS} columnSize={COLUMN_SIZE}>
-        <MosaicGrid columnSize={COLUMN_SIZE} rowSize={ROW_SIZE} numCols={NUM_COLS} numRows={NUM_ROWS}>
-          {renderGrid('a-')}
-        </MosaicGrid>
-        <MosaicGrid columnSize={COLUMN_SIZE} rowSize={ROW_SIZE} numCols={NUM_COLS} numRows={NUM_ROWS}>
-          {renderGrid('b-')}
-        </MosaicGrid>
-      </MosaicScrollTrack>
-    </MosaicScrollWrapper>
+    <PageSectionContainer fullWidth>
+      <SubpageSection>
+        <TextElement isCentered>
+          <h2>
+            Be part of a <br />
+            bubbling community.
+          </h2>
+          <Button big highlight url="/communities">
+            Get on board
+          </Button>
+        </TextElement>
+      </SubpageSection>
+      <MosaicScrollWrapper>
+        <MosaicScrollTrack numCols={NUM_COLS} columnSize={COLUMN_SIZE}>
+          <MosaicGrid columnSize={COLUMN_SIZE} rowSize={ROW_SIZE} numCols={NUM_COLS} numRows={NUM_ROWS}>
+            {renderGrid('a-')}
+          </MosaicGrid>
+          <MosaicSpacer />
+          <MosaicGrid columnSize={COLUMN_SIZE} rowSize={ROW_SIZE} numCols={NUM_COLS} numRows={NUM_ROWS}>
+            {renderGrid('b-')}
+          </MosaicGrid>
+        </MosaicScrollTrack>
+      </MosaicScrollWrapper>
+    </PageSectionContainer>
   )
 }
 
-// --- Styles ---
 const MosaicScrollWrapper = styled.div`
   width: 100%;
   overflow-x: hidden;
@@ -134,10 +155,21 @@ const scroll = keyframes`
 
 const MosaicScrollTrack = styled.div<{ numCols: number; columnSize: string }>`
   display: flex;
-  width: calc(2 * ${({ numCols, columnSize }) => `(${numCols} * ${columnSize})`});
-  animation: ${scroll} 80s linear infinite;
+  width: calc(
+    2 *
+      (
+        (${(props) => props.numCols} * ${({ columnSize }) => columnSize}) + (${(props) => props.numCols} - 1) *
+          ${GRID_GAP}
+      )
+  );
+  animation: ${scroll} 100s linear infinite;
   &:hover {
     animation-play-state: paused;
+  }
+  @media ${deviceBreakPoints.mobile} {
+    width: calc(
+      2 * ((${(props) => props.numCols} * ${COLUMN_SIZE_MOBILE}) + (${(props) => props.numCols} - 1) * ${GRID_GAP})
+    );
   }
 `
 
@@ -145,9 +177,19 @@ const MosaicGrid = styled.div<{ columnSize: string; rowSize: string; numCols: nu
   display: grid;
   grid-template-columns: repeat(${(props) => props.numCols}, ${({ columnSize }) => columnSize});
   grid-template-rows: repeat(${(props) => props.numRows}, ${({ rowSize }) => rowSize});
-  gap: 1.5rem;
+  gap: ${GRID_GAP};
   align-items: stretch;
-  min-width: calc(${(props) => props.numCols} * ${({ columnSize }) => columnSize});
+  min-width: calc(
+    ${(props) => props.numCols} * ${({ columnSize }) => columnSize} + (${(props) => props.numCols} - 1) * ${GRID_GAP}
+  );
+
+  @media ${deviceBreakPoints.mobile} {
+    grid-template-columns: repeat(${(props) => props.numCols}, ${COLUMN_SIZE_MOBILE});
+    grid-template-rows: repeat(${(props) => props.numRows}, ${ROW_SIZE_MOBILE});
+    min-width: calc(
+      ${(props) => props.numCols} * ${COLUMN_SIZE_MOBILE} + (${(props) => props.numCols} - 1) * ${GRID_GAP}
+    );
+  }
 `
 
 const ImageWrapper = styled.div`
@@ -158,6 +200,12 @@ const ImageWrapper = styled.div`
   height: 100%;
   display: flex;
   align-items: stretch;
+`
+
+const MosaicSpacer = styled.div`
+  width: ${GRID_GAP};
+  min-width: ${GRID_GAP};
+  flex-shrink: 0;
 `
 
 export default HomepageCommunitySection

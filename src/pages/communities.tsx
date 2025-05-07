@@ -38,12 +38,13 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageVideoHeroSection poster={heroImage} video={heroVideo}>
+          <SubpageVideoHeroSection poster={heroImage} video={heroVideo} minHeight="130px">
             <h1>Online communities</h1>
-            <hr />
             <p>
-              We are lucky to have a very active community of builders, users & friends. Join the channels and groups
-              and help us launch Alephium to the stars!
+              <strong>
+                We are lucky to have a very active community of builders, users & friends. Join the channels and groups
+                and help us launch surf the Alephium wave.
+              </strong>
             </p>
           </SubpageVideoHeroSection>
 
@@ -71,8 +72,6 @@ const CustomPage = (props: PageProps) => {
               <Grid columns={3} gap="small"></Grid>
             </SubheaderContent>
           </SubpageSection>
-
-          <SectionDivider />
 
           <SubpageSection>
             <TextElement>
