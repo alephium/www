@@ -142,6 +142,14 @@ const MosaicScrollWrapper = styled.div`
   overflow-x: hidden;
   position: relative;
   padding: 2rem 0;
+
+  -webkit-mask-image: linear-gradient(to right, transparent, black 60px, black calc(100% - 60px), transparent);
+  mask-image: linear-gradient(to right, transparent, black 60px, black calc(100% - 60px), transparent);
+
+  @media ${deviceBreakPoints.mobile} {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 20px, black calc(100% - 20px), transparent);
+    mask-image: linear-gradient(to right, transparent, black 20px, black calc(100% - 20px), transparent);
+  }
 `
 
 const scroll = keyframes`
@@ -193,7 +201,7 @@ const MosaicGrid = styled.div<{ columnSize: string; rowSize: string; numCols: nu
 `
 
 const ImageWrapper = styled.div`
-  border-radius: 16px;
+  border-radius: var(--radius-small);
   overflow: hidden;
   background: #222;
   width: 100%;

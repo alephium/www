@@ -54,7 +54,7 @@ const SubpageHeroSectionStyled = styled.section<Pick<SubpageHeroSectionProps, 'm
     position: absolute;
     opacity: ${({ split }) => (split ? 0 : 1)};
     inset: 0;
-    border: 4px solid ${({ theme }) => theme.borderPrimary};
+    // border: 3px solid ${({ theme }) => theme.borderPrimary};
     border-radius: var(--radius-big);
     backdrop-filter: saturate(300%) brightness(1.1);
     -webkit-backdrop-filter: saturate(300%) brightness(1.1);
