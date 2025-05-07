@@ -1,4 +1,5 @@
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { motion, Variants } from 'framer-motion'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../../styles/global-style'
@@ -7,15 +8,30 @@ interface CardsHorizontalScrollerProps {
   children: React.ReactNode
   cardWidth?: number
   cardGap?: number
+  animateCards?: boolean
 }
 
 const CARD_WIDTH = 380
 const CARD_GAP = 24
 
+const cardVariants: Variants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.1,
+      duration: 0.5,
+      ease: 'easeOut'
+    }
+  })
+}
+
 const CardsHorizontalScroller = ({
   children,
   cardWidth = CARD_WIDTH,
-  cardGap = CARD_GAP
+  cardGap = CARD_GAP,
+  animateCards = false
 }: CardsHorizontalScrollerProps) => {
   const scrollContainerRef = useRef<HTMLDivElement>(null)
   const [canScrollLeft, setCanScrollLeft] = useState(false)
@@ -66,7 +82,17 @@ const CardsHorizontalScroller = ({
   return (
     <StatsContainer>
       <CardsScroll ref={scrollContainerRef} $showLeftMask={showLeftMask} $showRightMask={showRightMask}>
-        {children}
+        {React.Children.map(children, (child, index) => (
+          <CardContainer
+            custom={index}
+            initial={animateCards ? 'hidden' : undefined}
+            whileInView={animateCards ? 'visible' : undefined}
+            viewport={{ once: true }}
+            variants={animateCards ? cardVariants : undefined}
+          >
+            {child}
+          </CardContainer>
+        ))}
       </CardsScroll>
       <ScrollButtonsContainer>
         <ScrollButton onClick={() => handleScroll('left')} aria-label="Scroll cards left" disabled={!canScrollLeft}>
@@ -174,6 +200,32 @@ const ScrollButton = styled.button`
 
   &:active {
     transform: scale(0.95);
+  }
+`
+
+const CardContainer = styled(motion.div)`
+  flex: 0 0 ${CARD_WIDTH}px;
+  scroll-snap-align: start;
+  position: relative;
+  z-index: 0;
+
+  @media ${deviceBreakPoints.mobile} {
+    flex: 0 0 ${CARD_WIDTH / 1.3}px;
+  }
+
+  &:first-child {
+    padding-left: calc((100% - var(--page-width)));
+  }
+
+  &:last-child {
+    margin-right: var(--spacing-4);
+  }
+
+  &:hover {
+    filter: saturate(160%);
+  }
+  > div {
+    height: 100%;
   }
 `
 

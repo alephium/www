@@ -1,11 +1,9 @@
 import { ExplorerClient } from '@alephium/sdk'
 import { HttpResponse } from '@alephium/sdk/api/explorer'
-import { motion } from 'framer-motion'
 import { graphql } from 'gatsby'
 import { useCallback, useEffect, useState } from 'react'
 import styled, { useTheme } from 'styled-components'
 
-import { deviceBreakPoints } from '../../../styles/global-style'
 import { formatNumberForDisplay } from '../../../utils/numbers'
 import CardsHorizontalScroller from '../../common/CardsHorizontalScroller'
 import SubpageSection from '../../customPageComponents/SubpageSection'
@@ -102,184 +100,130 @@ const HomepageUSPSection = () => {
         </p>
       </TextElementStyled>
 
-      <CardsHorizontalScroller cardWidth={CARD_WIDTH} cardGap={CARD_GAP}>
-        <CardContainer
-          custom={0}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={cardVariants}
-        >
-          <TextCard border>
-            <TextElement>
-              <TextCardContent>
-                <h3 style={{ color: theme.palette2 }}>Fast</h3>
-                <TLDRSection color={theme.palette2}>
-                  <span>20,000+ tps, single-chain experience.</span>
-                </TLDRSection>
-              </TextCardContent>
-            </TextElement>
+      <CardsHorizontalScroller cardWidth={CARD_WIDTH} cardGap={CARD_GAP} animateCards>
+        <TextCard border>
+          <TextElement>
             <TextCardContent>
-              <TextElement noHeadingsMargins>
-                <p>
-                  Alephium&apos;s BlockFlow sharding processes over 20,000 transactions per second while eliminating
-                  cross-chain complexity,{' '}
-                  <strong>delivering high throughput and the simplicity of a single-chain environment.</strong>
-                </p>
-              </TextElement>
+              <h3 style={{ color: theme.palette2 }}>Fast</h3>
+              <TLDRSection color={theme.palette2}>
+                <span>20,000+ tps, single-chain experience.</span>
+              </TLDRSection>
             </TextCardContent>
-          </TextCard>
-        </CardContainer>
-        <CardContainer
-          custom={1}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={cardVariants}
-        >
-          <TextCard border>
-            <TextElement color={theme.palette3}>
-              <TextCardContent>
-                <h3 style={{ color: theme.palette3 }}>Scalable</h3>
-                <TLDRSection color={theme.palette3}>
-                  <span>{`${formatNumberForDisplay(totalTransactions.value).join(
-                    ''
-                  )} transactions to date, low and predictable fees.`}</span>
-                </TLDRSection>
-              </TextCardContent>
+          </TextElement>
+          <TextCardContent>
+            <TextElement noHeadingsMargins>
+              <p>
+                Alephium&apos;s BlockFlow sharding processes over 20,000 transactions per second while eliminating
+                cross-chain complexity,{' '}
+                <strong>delivering high throughput and the simplicity of a single-chain environment.</strong>
+              </p>
             </TextElement>
+          </TextCardContent>
+        </TextCard>
+        <TextCard border>
+          <TextElement color={theme.palette3}>
             <TextCardContent>
-              <TextElement noHeadingsMargins>
-                <p>
-                  Alephium&apos;s unique sharding design, built on its unique combination of UTXO and Proof-of-Work
-                  model together with a DAG data structure, delivers{' '}
-                  <strong>
-                    consistent performance at scale, keeping fees stable and affordable for both users and developers.
-                  </strong>
-                </p>
-              </TextElement>
+              <h3 style={{ color: theme.palette3 }}>Scalable</h3>
+              <TLDRSection color={theme.palette3}>
+                <span>{`${formatNumberForDisplay(totalTransactions.value).join(
+                  ''
+                )} transactions to date, low and predictable fees.`}</span>
+              </TLDRSection>
             </TextCardContent>
-          </TextCard>
-        </CardContainer>
-        <CardContainer
-          custom={2}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={cardVariants}
-        >
-          <TextCard border>
-            <TextElement>
-              <TextCardContent>
-                <h3 style={{ color: theme.palette4 }}>Secure</h3>
-                <TLDRSection color={theme.palette4}>
-                  <span>0 exploits, 0 hacks, security by design.</span>
-                </TLDRSection>
-              </TextCardContent>
+          </TextElement>
+          <TextCardContent>
+            <TextElement noHeadingsMargins>
+              <p>
+                Alephium&apos;s unique sharding design, built on its unique combination of UTXO and Proof-of-Work model
+                together with a DAG data structure, delivers{' '}
+                <strong>
+                  consistent performance at scale, keeping fees stable and affordable for both users and developers.
+                </strong>
+              </p>
             </TextElement>
+          </TextCardContent>
+        </TextCard>
+        <TextCard border>
+          <TextElement>
             <TextCardContent>
-              <TextElement noHeadingsMargins>
-                <p>
-                  Alephium offers a robust, developer-friendly environment with{' '}
-                  <strong>built-in protections against common vulnerabilities</strong>. Its MEV-aware architecture and
-                  native safeguards{' '}
-                  <strong>
-                    prevent threats like reentrancy attacks, unlimited approvals, and flash loan exploits.
-                  </strong>
-                </p>
-              </TextElement>
+              <h3 style={{ color: theme.palette4 }}>Secure</h3>
+              <TLDRSection color={theme.palette4}>
+                <span>0 exploits, 0 hacks, security by design.</span>
+              </TLDRSection>
             </TextCardContent>
-          </TextCard>
-        </CardContainer>
-        <CardContainer
-          custom={3}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={cardVariants}
-        >
-          <TextCard border>
-            <TextElement>
-              <TextCardContent>
-                <h3 style={{ color: theme.palette1 }}>Sustainable</h3>
-                <TLDRSection color={theme.palette1}>
-                  <span>The best of PoW, 87% less energy.</span>
-                </TLDRSection>
-              </TextCardContent>
+          </TextElement>
+          <TextCardContent>
+            <TextElement noHeadingsMargins>
+              <p>
+                Alephium offers a robust, developer-friendly environment with{' '}
+                <strong>built-in protections against common vulnerabilities</strong>. Its MEV-aware architecture and
+                native safeguards{' '}
+                <strong>prevent threats like reentrancy attacks, unlimited approvals, and flash loan exploits.</strong>
+              </p>
             </TextElement>
+          </TextCardContent>
+        </TextCard>
+        <TextCard border>
+          <TextElement>
             <TextCardContent>
-              <TextElement noHeadingsMargins>
-                <p>
-                  Alephium&apos;s Proof-of-Less-Work consensus delivers true decentralization with a fraction of the
-                  energy.{' '}
-                  <strong>
-                    It retains the security and simplicity of traditional PoW while cutting energy use by over 87%.
-                  </strong>
-                </p>
-              </TextElement>
+              <h3 style={{ color: theme.palette1 }}>Sustainable</h3>
+              <TLDRSection color={theme.palette1}>
+                <span>The best of PoW, 87% less energy.</span>
+              </TLDRSection>
             </TextCardContent>
-          </TextCard>
-        </CardContainer>
-        <CardContainer
-          custom={4}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={cardVariants}
-        >
-          <TextCard border>
-            <TextElement>
-              <TextCardContent>
-                <h3 style={{ color: theme.palette6 }}>Programmable</h3>
-                <TLDRSection color={theme.palette6}>
-                  <span>Stateful UTXO, the best of Bitcoin and Ethereum.</span>
-                </TLDRSection>
-              </TextCardContent>
+          </TextElement>
+          <TextCardContent>
+            <TextElement noHeadingsMargins>
+              <p>
+                Alephium&apos;s Proof-of-Less-Work consensus delivers true decentralization with a fraction of the
+                energy.{' '}
+                <strong>
+                  It retains the security and simplicity of traditional PoW while cutting energy use by over 87%.
+                </strong>
+              </p>
             </TextElement>
+          </TextCardContent>
+        </TextCard>
+        <TextCard border>
+          <TextElement>
             <TextCardContent>
-              <TextElement noHeadingsMargins>
-                <p>
-                  <strong>
-                    Alephium&apos;s stateful UTXO model combines Ethereum&apos;s flexibility with Bitcoin&apos;s
-                    security.
-                  </strong>{' '}
-                  It enables powerful smart contracts with mutable state while ensuring robust, UTXO-based asset
-                  protection.
-                </p>
-              </TextElement>
+              <h3 style={{ color: theme.palette6 }}>Programmable</h3>
+              <TLDRSection color={theme.palette6}>
+                <span>Stateful UTXO, the best of Bitcoin and Ethereum.</span>
+              </TLDRSection>
             </TextCardContent>
-          </TextCard>
-        </CardContainer>
-        <CardContainer
-          custom={5}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={cardVariants}
-        >
-          <TextCard border>
-            <TextElement>
-              <TextCardContent>
-                <h3 style={{ color: theme.palette5 }}>Dev-friendly</h3>
-                <TLDRSection color={theme.palette5}>
-                  <span>Custom VM & language built for performance.</span>
-                </TLDRSection>
-              </TextCardContent>
+          </TextElement>
+          <TextCardContent>
+            <TextElement noHeadingsMargins>
+              <p>
+                <strong>
+                  Alephium&apos;s stateful UTXO model combines Ethereum&apos;s flexibility with Bitcoin&apos;s security.
+                </strong>{' '}
+                It enables powerful smart contracts with mutable state while ensuring robust, UTXO-based asset
+                protection.
+              </p>
             </TextElement>
+          </TextCardContent>
+        </TextCard>
+        <TextCard border>
+          <TextElement>
             <TextCardContent>
-              <TextElement noHeadingsMargins>
-                <p>
-                  Alephium empowers developers with its{' '}
-                  <strong>
-                    purpose-built Virtual Machine, intuitive SDK, and high-performance programming language
-                  </strong>
-                  , enabling efficient development and unlocking new possibilities for smart contracts, dApps, and
-                  tokens.
-                </p>
-              </TextElement>
+              <h3 style={{ color: theme.palette5 }}>Dev-friendly</h3>
+              <TLDRSection color={theme.palette5}>
+                <span>Custom VM & language built for performance.</span>
+              </TLDRSection>
             </TextCardContent>
-          </TextCard>
-        </CardContainer>
+          </TextElement>
+          <TextCardContent>
+            <TextElement noHeadingsMargins>
+              <p>
+                Alephium empowers developers with its{' '}
+                <strong>purpose-built Virtual Machine, intuitive SDK, and high-performance programming language</strong>
+                , enabling efficient development and unlocking new possibilities for smart contracts, dApps, and tokens.
+              </p>
+            </TextElement>
+          </TextCardContent>
+        </TextCard>
       </CardsHorizontalScroller>
     </SubpageSectionStyled>
   )
@@ -293,32 +237,6 @@ const SubpageSectionStyled = styled(SubpageSection)`
 const TextElementStyled = styled(TextElement)`
   width: var(--page-width);
   margin: 0 auto;
-`
-
-const CardContainer = styled(motion.div)`
-  flex: 0 0 ${CARD_WIDTH}px;
-  scroll-snap-align: start;
-  position: relative;
-  z-index: 0;
-
-  @media ${deviceBreakPoints.mobile} {
-    flex: 0 0 ${CARD_WIDTH / 1.3}px;
-  }
-
-  &:first-child {
-    padding-left: calc((100% - var(--page-width)));
-  }
-
-  &:last-child {
-    margin-right: var(--spacing-4);
-  }
-
-  &:hover {
-    filter: saturate(160%);
-  }
-  > div {
-    height: 100%;
-  }
 `
 
 const TLDRSection = styled.div`

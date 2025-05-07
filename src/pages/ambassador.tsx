@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion'
 import { graphql, PageProps, useStaticQuery } from 'gatsby'
 import styled, { useTheme } from 'styled-components'
 
@@ -8,7 +7,6 @@ import ClickableBox from '../components/customPageComponents/ClickableBox'
 import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
-import SubpageImageHeroSection from '../components/customPageComponents/SubpageImageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import SubpageVideoHeroSection from '../components/customPageComponents/SubpageVideoHeroSection'
 import TextCard from '../components/customPageComponents/TextCard'
@@ -16,7 +14,6 @@ import TextCardContent from '../components/customPageComponents/TextCardContent'
 import TextElement from '../components/customPageComponents/TextElement'
 import SectionDivider from '../components/SectionDivider'
 import SimpleLink from '../components/SimpleLink'
-import { deviceBreakPoints } from '../styles/global-style'
 
 const ambassadorQuery = graphql`
   query AmbassadorPage {
@@ -131,26 +128,33 @@ const CustomPage = (props: PageProps) => {
           </SubpageSection>
 
           {/* Same image as in FAQ page can go here, like we do with the "Wallets" in /get-started */}
-          <SubpageImageHeroSection backgroundImage={placeholderImage} minHeight="300px">
-            <h2>Have questions?</h2>
-            <hr />
-            <p>Check our FAQ page for more information or join our community and contact our team.</p>
-            <Button url="/faq#ambassador-program">Check FAQ</Button>
-            <Button url="/discord">Join Discord</Button>
-          </SubpageImageHeroSection>
+          <SubpageSection isCentered>
+            <TextElement isCentered>
+              <h2>Have questions?</h2>
 
-          <SubpageSection>
+              <p>Check our FAQ page for more information or join our community and contact our team.</p>
+              <Button url="/faq#ambassador-program">Check FAQ</Button>
+              <Button url="/discord">Join Discord</Button>
+            </TextElement>
+          </SubpageSection>
+
+          <SubpageSection border>
             <TextElement isCentered>
               <h2>Ready to Join?</h2>
               <p>
                 Become a part of the Alephium Ambassador Program and help us build the future of finance. Together, we
                 can create a more scalable, secure, and sustainable world.
               </p>
-              <Button url="https://docs.google.com/forms/d/e/1FAIpQLSfR0T6Fg3v8HU86wZJgQBXslRUJKS3bsiQb92-ZIyaaV4RreA/viewform">
+              <Button
+                big
+                highlight
+                url="https://docs.google.com/forms/d/e/1FAIpQLSfR0T6Fg3v8HU86wZJgQBXslRUJKS3bsiQb92-ZIyaaV4RreA/viewform"
+              >
                 Apply Now
               </Button>
             </TextElement>
           </SubpageSection>
+          <SectionDivider />
         </>
       }
     />
@@ -161,70 +165,54 @@ const Cards = () => {
   const theme = useTheme()
 
   return (
-    <CardsHorizontalScroller>
-      <CardContainer>
-        <TextCard border>
+    <CardsHorizontalScroller animateCards>
+      <TextCard border>
+        <TextCardContent>
           <TextElement>
-            <TextCardContent>
-              <h3 style={{ color: theme.palette2 }}>Community Builders</h3>
-              <TextElement noHeadingsMargins>
-                <p>
-                  <strong>Organize and grow the community</strong> through local meetups, workshops, and hackathons.
-                  Moderate social channels and help expand Alephium&apos;s global presence through content translation.
-                </p>
-              </TextElement>
-            </TextCardContent>
+            <h3 style={{ color: theme.palette2 }}>Community Builders</h3>
+            <p>
+              <strong>Organize and grow the community</strong> through local meetups, workshops, and hackathons.
+              Moderate social channels and help expand Alephium&apos;s global presence through content translation.
+            </p>
           </TextElement>
-        </TextCard>
-      </CardContainer>
+        </TextCardContent>
+      </TextCard>
 
-      <CardContainer>
-        <TextCard border>
+      <TextCard border>
+        <TextCardContent>
           <TextElement>
-            <TextCardContent>
-              <h3 style={{ color: theme.palette3 }}>Educators</h3>
-              <TextElement noHeadingsMargins>
-                <p>
-                  <strong>Share knowledge and expertise</strong> by creating tutorials, guides, and educational content.
-                  Host webinars, AMAs, and live streams while mentoring new community members and developers.
-                </p>
-              </TextElement>
-            </TextCardContent>
+            <h3 style={{ color: theme.palette3 }}>Educators</h3>
+            <p>
+              <strong>Share knowledge and expertise</strong> by creating tutorials, guides, and educational content.
+              Host webinars, AMAs, and live streams while mentoring new community members and developers.
+            </p>
           </TextElement>
-        </TextCard>
-      </CardContainer>
+        </TextCardContent>
+      </TextCard>
 
-      <CardContainer>
-        <TextCard border>
+      <TextCard border>
+        <TextCardContent>
           <TextElement>
-            <TextCardContent>
-              <h3 style={{ color: theme.palette4 }}>Content Creators</h3>
-              <TextElement noHeadingsMargins>
-                <p>
-                  <strong>Create engaging content</strong> through blogs, videos, and graphics about Alephium. Share
-                  your work across social media platforms and develop creative campaigns to engage the community.
-                </p>
-              </TextElement>
-            </TextCardContent>
+            <h3 style={{ color: theme.palette4 }}>Content Creators</h3>
+            <p>
+              <strong>Create engaging content</strong> through blogs, videos, and graphics about Alephium. Share your
+              work across social media platforms and develop creative campaigns to engage the community.
+            </p>
           </TextElement>
-        </TextCard>
-      </CardContainer>
+        </TextCardContent>
+      </TextCard>
 
-      <CardContainer>
-        <TextCard border>
+      <TextCard border>
+        <TextCardContent>
           <TextElement>
-            <TextCardContent>
-              <h3 style={{ color: theme.palette6 }}>Developers</h3>
-              <TextElement noHeadingsMargins>
-                <p>
-                  <strong>Build and innovate</strong> by creating tools, dApps, and integrations for the Alephium
-                  ecosystem. Contribute to open-source projects and provide technical support to other developers.
-                </p>
-              </TextElement>
-            </TextCardContent>
+            <h3 style={{ color: theme.palette6 }}>Developers</h3>
+            <p>
+              <strong>Build and innovate</strong> by creating tools, dApps, and integrations for the Alephium ecosystem.
+              Contribute to open-source projects and provide technical support to other developers.
+            </p>
           </TextElement>
-        </TextCard>
-      </CardContainer>
+        </TextCardContent>
+      </TextCard>
     </CardsHorizontalScroller>
   )
 }
@@ -287,30 +275,4 @@ const Emoji = styled.div`
   height: 50px;
   border-radius: var(--radius-small);
   margin-bottom: var(--spacing-2);
-`
-
-const CardContainer = styled(motion.div)`
-  flex: 0 0 380px;
-  scroll-snap-align: start;
-  position: relative;
-  z-index: 0;
-
-  @media ${deviceBreakPoints.mobile} {
-    flex: 0 0 292px;
-  }
-
-  &:first-child {
-    padding-left: calc((100% - var(--page-width)));
-  }
-
-  &:last-child {
-    margin-right: var(--spacing-4);
-  }
-
-  &:hover {
-    filter: saturate(160%);
-  }
-  > div {
-    height: 100%;
-  }
 `
