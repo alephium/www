@@ -8,14 +8,14 @@ menuItems:
       - title: Ralph Language
         link: https://docs.alephium.org/ralph/
       - title: SDK
-        link: https://docs.alephium.org # TODO: Add right link to SDK subpage
+        link: https://docs.alephium.org/sdk/getting-started
       - title: Tutorials
         link: https://www.youtube.com/playlist?list=PL8q8n0BHJS1PWP7t8ABECYdOaPM-hJmjx
       - title: Roadmap
         link: /roadmap
       - title: Support
       - title: Discord
-        link: /discord
+        link: https://discord.gg/XC5JaaDT7z
       - title: Github
         link: https://github.com/alephium
   - title: Ecosystem
