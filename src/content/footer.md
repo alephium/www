@@ -5,7 +5,7 @@ columns:
       - text: Wallets
         url: /wallets
       - text: Grants
-        url: /grants
+        url: https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md
       - text: Bounties
         url: /bounties
       - text: Node operators
@@ -16,8 +16,6 @@ columns:
         url: /communities
       - text: Ambassador Program
         url: /ambassador
-      - text: FAQ
-        url: /faq
       - text: Brand Assets
         url: https://github.com/alephium/alephium-brand-guide
       - text: About

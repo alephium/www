@@ -10,7 +10,6 @@ import Badge from '../components/Badge'
 import Button from '../components/Button'
 import Page from '../components/customPageComponents/Page'
 import SideBySide from '../components/customPageComponents/SideBySide'
-import SubheaderContent from '../components/customPageComponents/SubheaderContent'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import SubpageVideoHeroSection from '../components/customPageComponents/SubpageVideoHeroSection'
 import TextElement from '../components/customPageComponents/TextElement'
@@ -85,7 +84,7 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageVideoHeroSection poster={heroImage} video={heroVideo} minHeight={400}>
+          <SubpageVideoHeroSection poster={heroImage} video={heroVideo} minHeight="400px">
             <h1>
               Our Wallets,
               <br />
@@ -98,110 +97,108 @@ const CustomPage = (props: PageProps) => {
             </p>
           </SubpageVideoHeroSection>
 
-          <SubpageSection>
-            <SubheaderContent>
-              <SideBySide reverseOnMobile>
-                <TextElement isBodySmall>
-                  <h3>
-                    Mobile Wallet
-                    <Badge color="palette6">iOS</Badge>
-                    <Badge color="palette1">Android</Badge>
-                  </h3>
-                  <p>
-                    Manage your ALPH tokens on the go with Alephium&apos;s mobile wallet, offering a balance between
-                    security and convenience.
-                  </p>
-                  <p>Features:</p>
-                  <ul>
-                    <li>Real-time balance updates</li>
-                    <li>QR code support for transactions</li>
-                    <li>Biometric security options</li>
-                    <li>WalletConnect integration for dApps</li>
-                  </ul>
+          <SectionDivider double />
+          <SubpageSection wide>
+            <SideBySide reverseOnMobile>
+              <TextElement isBodySmall>
+                <h3>Mobile Wallet</h3>
+                <div>
+                  <Badge color="palette3">iOS</Badge>
+                  <Badge color="palette1">Android</Badge>
+                </div>
+                <p>
+                  Manage your ALPH tokens on the go with Alephium&apos;s mobile wallet, offering a balance between
+                  security and convenience.
+                </p>
+                <p>Features:</p>
+                <ul>
+                  <li>Real-time balance updates</li>
+                  <li>QR code support for transactions</li>
+                  <li>Biometric security options</li>
+                  <li>WalletConnect integration for dApps</li>
+                </ul>
 
-                  <p>Download from:</p>
-                  <Button url={wallets?.mobile?.urls?.android ?? ''}>Android Google Play Store</Button>
-                  <Button url={wallets?.mobile?.urls?.ios ?? ''}>iOS App Store </Button>
-                </TextElement>
-                <WalletCarousel images={mobileScreenshots.nodes.map((node) => node.childImageSharp?.gatsbyImageData)} />
-              </SideBySide>
-              <SectionDivider />
-              <SideBySide reverseOnMobile>
-                <TextElement isBodySmall>
-                  <h3>
-                    Desktop Wallet
-                    <Badge color="palette1">Windows</Badge>
-                    <Badge color="palette2">MacOS</Badge>
-                    <Badge color="palette3">Linux</Badge>
-                  </h3>
-                  <p>
-                    Alephium&apos;s flagship desktop wallet is designed for both everyday transactions and advanced
-                    functionalities like smart contract deployment. It offers a comprehensive interface for managing
-                    your assets securely.
-                  </p>
-                  <p>Features:</p>
-                  <ul>
-                    <li>Full control over your private keys</li>
-                    <li>Support for multiple addresses</li>
-                    <li>Integration with hardware wallets</li>
-                    <li>Advanced transaction options</li>
-                  </ul>
-                  <p>Access the latest version from the official GitHub releases.</p>
-                  <Button url={wallets?.desktop?.url ?? ''}>Download</Button>
-                </TextElement>
-                <WalletCarousel
-                  images={desktopScreenshots.nodes.map((node) => node.childImageSharp?.gatsbyImageData)}
-                />
-              </SideBySide>
-              <SectionDivider />
-              <SideBySide reverseOnMobile>
-                <TextElement isBodySmall>
-                  <h3>
-                    Browser Extension Wallet
-                    <Badge color="palette4">Chrome</Badge>
-                    <Badge color="palette5">Firefox</Badge>
-                  </h3>
-                  <p>
-                    For seamless interaction with web-based dApps, the Alephium Extension Wallet integrates directly
-                    into your browser, providing quick and secure access to your assets.
-                  </p>
-                  <p>Features:</p>
-                  <ul>
-                    <li>Easy dApp connectivity</li>
-                    <li>Secure transaction approvals</li>
-                    <li>User-friendly interface</li>
-                  </ul>
+                <p>Download from:</p>
+                <Button url={wallets?.mobile?.urls?.android ?? ''}>Android Google Play Store</Button>
+                <Button url={wallets?.mobile?.urls?.ios ?? ''}>iOS App Store </Button>
+              </TextElement>
+              <WalletCarousel images={mobileScreenshots.nodes.map((node) => node.childImageSharp?.gatsbyImageData)} />
+            </SideBySide>
+            <SectionDivider />
+            <SideBySide reverseOnMobile>
+              <TextElement isBodySmall>
+                <h3>Desktop Wallet</h3>
+                <div>
+                  <Badge color="palette3">Windows</Badge>
+                  <Badge color="palette4">MacOS</Badge>
+                  <Badge color="palette6">Linux</Badge>
+                </div>
+                <p>
+                  Alephium&apos;s flagship desktop wallet is designed for both everyday transactions and advanced
+                  functionalities like smart contract deployment. It offers a comprehensive interface for managing your
+                  assets securely.
+                </p>
+                <p>Features:</p>
+                <ul>
+                  <li>Full control over your private keys</li>
+                  <li>Support for multiple addresses</li>
+                  <li>Integration with hardware wallets</li>
+                  <li>Advanced transaction options</li>
+                </ul>
+                <p>Access the latest version from the official GitHub releases.</p>
+                <Button url={wallets?.desktop?.url ?? ''}>Download</Button>
+              </TextElement>
+              <WalletCarousel images={desktopScreenshots.nodes.map((node) => node.childImageSharp?.gatsbyImageData)} />
+            </SideBySide>
+            <SectionDivider />
+            <SideBySide reverseOnMobile>
+              <TextElement isBodySmall>
+                <h3>Browser Extension Wallet</h3>
+                <div>
+                  <Badge color="palette3">Chrome</Badge>
+                  <Badge color="palette6">Firefox</Badge>
+                </div>
+                <p>
+                  For seamless interaction with web-based dApps, the Alephium Extension Wallet integrates directly into
+                  your browser, providing quick and secure access to your assets.
+                </p>
+                <p>Features:</p>
+                <ul>
+                  <li>Easy dApp connectivity</li>
+                  <li>Secure transaction approvals</li>
+                  <li>User-friendly interface</li>
+                </ul>
 
-                  <p>Available for:</p>
-                  <Button url={wallets?.extension?.urls?.chrome ?? ''}>Chrome</Button>
-                  <Button url={wallets?.extension?.urls?.firefox ?? ''}>Firefox</Button>
-                </TextElement>
-                <WalletCarousel
-                  images={extensionScreenshots.nodes.map((node) => node.childImageSharp?.gatsbyImageData)}
-                />
-              </SideBySide>
-              <SectionDivider />
+                <p>Available for:</p>
+                <Button url={wallets?.extension?.urls?.chrome ?? ''}>Chrome</Button>
+                <Button url={wallets?.extension?.urls?.firefox ?? ''}>Firefox</Button>
+              </TextElement>
+              <WalletCarousel
+                images={extensionScreenshots.nodes.map((node) => node.childImageSharp?.gatsbyImageData)}
+              />
+            </SideBySide>
+            <SectionDivider />
 
-              <SideBySide reverseOnMobile>
-                <TextElement>
-                  <h3>Hardware Wallet Support</h3>
-                  <p>
-                    For enhanced security, Alephium supports hardware wallets, allowing you to store your private keys
-                    offline and protect your assets from potential online threats..
-                  </p>
-                  <p>Supported Devices:</p>
-                  <ul>
-                    <li>
-                      <SimpleLink highlight url="https://docs.alephium.org/wallet/ledger">
-                        Ledger
-                      </SimpleLink>
-                    </li>
-                    <li>OneKey</li>
-                    <li>SafePal</li>
-                  </ul>
-                </TextElement>
-              </SideBySide>
-            </SubheaderContent>
+            <SideBySide reverseOnMobile>
+              <TextElement>
+                <h3>Hardware Wallet Support</h3>
+                <p>
+                  For enhanced security, Alephium supports hardware wallets, allowing you to store your private keys
+                  offline and protect your assets from potential online threats..
+                </p>
+                <p>Supported Devices:</p>
+                <ul>
+                  <li>
+                    <SimpleLink highlight url="https://docs.alephium.org/wallet/ledger">
+                      Ledger
+                    </SimpleLink>
+                  </li>
+                  <li>OneKey</li>
+                  <li>SafePal</li>
+                  <li>Tangem</li>
+                </ul>
+              </TextElement>
+            </SideBySide>
           </SubpageSection>
 
           <SectionDivider />

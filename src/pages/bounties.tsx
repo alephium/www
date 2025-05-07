@@ -1,16 +1,12 @@
 import { graphql, PageProps, useStaticQuery } from 'gatsby'
 
 import Button from '../components/Button'
-import CardsRow from '../components/customPageComponents/CardsRow'
 import Page from '../components/customPageComponents/Page'
-import SubheaderContent from '../components/customPageComponents/SubheaderContent'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import SubpageVideoHeroSection from '../components/customPageComponents/SubpageVideoHeroSection'
-import TextCard from '../components/customPageComponents/TextCard'
-import TextCardContent from '../components/customPageComponents/TextCardContent'
 import TextElement from '../components/customPageComponents/TextElement'
 import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
-import SimpleLink from '../components/SimpleLink'
+import SectionDivider from '../components/SectionDivider'
 
 const bountiesQuery = graphql`
   query BountiesPage {
@@ -41,21 +37,18 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageVideoHeroSection poster={heroImage} video={heroVideo}>
+          <SubpageVideoHeroSection poster={heroImage} video={heroVideo} narrow minHeight="300px">
             <h1>Alephium Bounty Program</h1>
-            <hr />
             <p>
-              As part of our mission to foster innovation and decentralization,{' '}
               <strong>
-                Alephium is launching a Bounty Program to reward builders, developers, and researchers who contribute to
-                the growth and security of the Alephium ecosystem.
+                Alephium Bounty Program rewards builders, developers, and researchers who contribute to the growth and
+                security of the Alephium ecosystem.
               </strong>
             </p>
           </SubpageVideoHeroSection>
 
           <SubpageSection>
-            <TextElement>
-              <h2>What is the bounty program?</h2>
+            <TextElement isCentered>
               <p>
                 The bounty program is designed to address key development needs, support ecosystem expansion, and
                 encourage community-driven solutions.{' '}
@@ -67,14 +60,14 @@ const CustomPage = (props: PageProps) => {
             </TextElement>
           </SubpageSection>
 
-          <SubpageSection>
+          {/*<SubpageSection>
             <TextElement>
               <h2>How to participate?</h2>
             </TextElement>
 
             <SubheaderContent>
-              <CardsRow>
-                <TextCard>
+              <Grid columns={3} gap="small">
+                <TextCard border>
                   <TextCardContent>
                     <h3>Suggest a Bounty</h3>
                     <p>
@@ -83,13 +76,13 @@ const CustomPage = (props: PageProps) => {
                     </p>
                   </TextCardContent>
                 </TextCard>
-                <TextCard>
+                <TextCard border>
                   <TextCardContent>
                     <h3>Work on an Existing Bounty</h3>
                     <p>If you’re ready to take on a bounty, browse the open opportunities and submit your interest.</p>
                   </TextCardContent>
                 </TextCard>
-                <TextCard>
+                <TextCard border>
                   <TextCardContent>
                     <h3>Improve Security</h3>
                     <p>
@@ -101,9 +94,9 @@ const CustomPage = (props: PageProps) => {
                     </Button>
                   </TextCardContent>
                 </TextCard>
-              </CardsRow>
+              </Grid>
             </SubheaderContent>
-          </SubpageSection>
+          </SubpageSection> */}
 
           {/* <SubpageSection>
             <TextElement>
@@ -220,6 +213,9 @@ const CustomPage = (props: PageProps) => {
             </TextElement>
           </SubpageSection>
 
+          <SectionDivider double />
+
+          {/*
           <SubpageSection>
             <TextElement isCentered>
               <h2>Need More Info?</h2>
@@ -230,6 +226,7 @@ const CustomPage = (props: PageProps) => {
               <Button url="/contact">Contact us</Button>
             </TextElement>
           </SubpageSection>
+          */}
         </>
       }
     />
