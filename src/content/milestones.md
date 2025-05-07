@@ -94,7 +94,27 @@ timelines:
           - row: 3
             text: 'Alephium Bridge to BSC on Testnet'
             when: '09.2024'
-
+      - year: 2025
+        entries:
+          - row: 1
+            text: 'Danube Network Upgrade on Testnet'
+            when: '05.2025'
+            content:
+              - 'Block time reduced from 16s to 8s'
+              - 'Sync Protocol V2 with parallel block downloads'
+              - 'Optimistic BlockFlow execution'
+              - 'Sustainable tail emission model'
+              - 'Groupless addresses and PassKey authentication'
+              - 'Chained contract calls and enhanced VM instructions'
+              - 'Simplified contract creation and bitwise operations for I256'
+              - 'Flexible new contract access'
+            isMajor: true
+          - row: 2
+            text: 'Danube Network Upgrade on Mainnet'
+            when: 'TBD'
+            content:
+              - 'Pending mainnet deployment'
+            isMajor: true  
   - title: Ecosystem
     years:
       - year: 2019
