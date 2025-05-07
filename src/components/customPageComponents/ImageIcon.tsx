@@ -47,18 +47,6 @@ const ImageIconContainer = styled.div<{ size?: number; rounded?: boolean; paddin
   position: relative;
   margin-bottom: ${({ noBottomMargin }) => (noBottomMargin ? '0' : 'var(--spacing-3)')};
   flex-shrink: 0;
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 2px solid ${({ theme }) => theme.borderPrimary};
-    border-radius: ${({ rounded }) => (rounded ? 'var(--radius-small)' : '0')};
-    pointer-events: none;
-  }
 `
 
 export default ImageIcon

@@ -7,19 +7,16 @@ import ImageIcon from '../components/customPageComponents/ImageIcon'
 import Page from '../components/customPageComponents/Page'
 import SideBySide from '../components/customPageComponents/SideBySide'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
-import SubpageHeroSection from '../components/customPageComponents/SubpageImageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
+import SectionDivider from '../components/SectionDivider'
 import SimpleLink from '../components/SimpleLink'
 
 const aboutQuery = graphql`
   query AboutPage {
     heroImage: file(relativePath: { eq: "alephium-hackathon-lake.png" }) {
       ...HeroImage
-    }
-    blobVideo: file(relativePath: { eq: "alephium-blob.mp4" }) {
-      publicURL
     }
     teamPhotos: allFile(filter: { relativeDirectory: { eq: "team" } }) {
       nodes {
@@ -29,7 +26,7 @@ const aboutQuery = graphql`
         }
       }
     }
-    ecosystemImage: file(relativePath: { eq: "ecosystem-islands.png" }) {
+    ecosystemImage: file(relativePath: { eq: "bay-tree-2.png" }) {
       childImageSharp {
         gatsbyImageData(quality: 80)
       }
@@ -38,8 +35,7 @@ const aboutQuery = graphql`
 `
 
 const CustomPage = (props: PageProps) => {
-  const { heroImage, blobVideo, teamPhotos, ecosystemImage } = useStaticQuery<Queries.AboutPageQuery>(aboutQuery)
-  const blobVideoUrl = blobVideo?.publicURL || undefined
+  const { teamPhotos, ecosystemImage } = useStaticQuery<Queries.AboutPageQuery>(aboutQuery)
   const ecosystemImageData = ecosystemImage?.childImageSharp?.gatsbyImageData || undefined
   const teamPhotosData = teamPhotos.nodes.map(({ name, childImageSharp }) => ({
     name,
@@ -56,57 +52,61 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageHeroSection backgroundImage={heroImage}>
-            <h1>Building Alephium</h1>
-            <hr />
-            <p>
-              Alephium was created to prove that decentralization, scalability, and energy efficiency can coexist.
-              Driven by breakthrough technology and a global network of contributors, we’re building blockchain
-              infrastructure ready for real-world applications.
-            </p>
-          </SubpageHeroSection>
+          <SectionDivider double />
+          <SubpageSection edgeGradient gradientPosition="top-right" noBottomPadding>
+            <TextElement noHeadingsMargins>
+              <h3>About</h3>
+              <h1>
+                Building Alephium <hr />
+              </h1>
+              <p>
+                <strong>
+                  Alephium was created to prove that decentralization, scalability, and energy efficiency can coexist.
+                  Driven by breakthrough technology and a global network of contributors, we're building blockchain
+                  infrastructure ready for real-world applications.
+                </strong>
+              </p>
+            </TextElement>
+          </SubpageSection>
 
           <SubpageSection>
-            <TextElement isCentered>
-              <h2>Why?</h2>
-            </TextElement>
-
-            <TextElement isCentered noTextCentering>
+            <TextElement>
               <p>
-                Alephium was born from a simple but powerful question: What should a blockchain for the next decade look
-                like? Inspired by Bitcoin’s robustness and shaped by a deep understanding of distributed systems and
-                consensus theory, Alephium set out to build infrastructure that doesn’t compromise; on decentralization,
-                security, or real scalability.
+                Alephium was born from a simple but powerful question:{' '}
+                <strong>what should a blockchain for the next decade look like?</strong> Inspired by Bitcoin's
+                robustness and shaped by a deep understanding of distributed systems and consensus theory, Alephium set
+                out to{' '}
+                <strong>
+                  build infrastructure that doesn't compromise; on decentralization, security, or real scalability.
+                </strong>
               </p>
               <p>
-                Conceived by Cheng Wang after witnessing firsthand how security and decentralization were increasingly
-                treated as trade-offs rather than essentials, Alephium reimagines blockchain from the ground up. Drawing
-                from deep expertise in consensus research and hands-on DeFi experience, the project addresses the
-                shortcomings that became evident as neither Bitcoin nor Ethereum could fully meet the needs of a
-                decentralized future. Bitcoin, while secure, lacked scalability and programmability. Ethereum introduced
-                flexibility through smart contracts but struggled with security vulnerabilities, complexity, and growing
-                centralization pressures.
+                Conceived by <strong>Cheng Wang</strong> after witnessing firsthand how security and decentralization
+                were increasingly treated as trade-offs rather than essentials, Alephium reimagines blockchain from the
+                ground up. Drawing from deep expertise in consensus research and hands-on DeFi experience, the project{' '}
+                <strong>
+                  addresses the shortcomings that became evident as neither Bitcoin nor Ethereum could fully meet the
+                  needs of a decentralized future.
+                </strong>{' '}
+                Bitcoin, while secure, lacked scalability and programmability. Ethereum introduced flexibility through
+                smart contracts but struggled with security vulnerabilities, complexity, and growing centralization
+                pressures.
               </p>
             </TextElement>
 
-            <TextElement isCentered>
-              {blobVideoUrl && (
-                <video src={blobVideoUrl} autoPlay muted loop playsInline style={{ width: '50%', height: 'auto' }} />
-              )}
-            </TextElement>
-
-            <TextElement isCentered noTextCentering>
+            <TextElement>
               <p>
                 Alephium offers a new path forward. By combining the resilience of Proof-of-Work with breakthrough
-                innovations like BlockFlow sharding, Proof-of-Less-Work, and a stateful UTXO model leveraged by a custom
-                virtual machine, Alephium delivers high throughput, energy efficiency, and secure smart contracts.
+                innovations like <strong>BlockFlow sharding</strong>, <strong>Proof-of-Less-Work</strong>, and a{' '}
+                <strong>stateful UTXO model</strong> leveraged by a custom virtual machine, Alephium delivers high
+                throughput, energy efficiency, and secure smart contracts.
               </p>
               <p>
-                Every layer of Alephium; from protocol design to tooling; is built with usability and accessibility in
-                mind, empowering both developers and end users. Alephium is designed to support real-world decentralized
-                applications at scale, where dApps are safe by design, running a node is accessible to all, and builders
-                can innovate with confidence.{' '}
-                <strong>Alephium is here to prove that scaling decentralization doesn’t mean sacrificing it.</strong>
+                Every layer of Alephium; from protocol design to tooling; is{' '}
+                <strong>built with usability and accessibility in mind</strong>, empowering both developers and end
+                users. Alephium is designed to support real-world decentralized applications at scale, where dApps are
+                safe by design, running a node is accessible to all, and builders can innovate with confidence. <br />
+                <strong>Alephium is here to prove that scaling decentralization doesn't mean sacrificing it.</strong>
               </p>
             </TextElement>
           </SubpageSection>
@@ -115,10 +115,10 @@ const CustomPage = (props: PageProps) => {
             <TextElement>
               <h2>Core Contributors</h2>
               <p>
-                Alephium is more than the sum of its core contributors. It is a community-first blockchain, and its
-                long-term evolution is guided not by any single team, but by the growing network of users, developers,
-                miners, and supporters who believe in the project's vision of decentralized, secure, and sustainable
-                infrastructure.
+                <strong>Alephium is more than the sum of its core contributors.</strong> It is a community-first
+                blockchain, and its long-term evolution is guided not by any single team, but by the growing network of
+                users, developers, miners, and supporters who believe in the project's vision of decentralized, secure,
+                and sustainable infrastructure.
               </p>
             </TextElement>
 
@@ -456,11 +456,11 @@ const CustomPage = (props: PageProps) => {
             </SubheaderContent>
           </SubpageSection>
 
-          <SubpageSection border>
+          <SubpageSection>
             <GatsbyImageWrapper
               image={ecosystemImageData}
               alt="Ecosystem background"
-              style={{ height: '100%' }}
+              style={{ height: '100%', opacity: 0.5 }}
               objectFit="cover"
               loading="lazy"
               isBackground
