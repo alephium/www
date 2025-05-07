@@ -49,7 +49,7 @@ class WaveEntity {
     }
     ctx.lineTo(width, height)
 
-    const gradient = ctx.createLinearGradient(0, height / 1.8, 0, height)
+    const gradient = ctx.createLinearGradient(0, height / 1.5, 0, height)
 
     gradient.addColorStop(0, this.gradientColors[0])
     gradient.addColorStop(1, this.gradientColors[1])

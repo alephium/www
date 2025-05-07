@@ -332,9 +332,9 @@ const TextElementStyled = styled(TextElement)`
 
 const StatsContainer = styled.div`
   width: 100%;
+  box-sizing: border-box;
   padding-top: var(--spacing-4);
   position: relative;
-  padding-left: var(--spacing-4);
 `
 
 const CardsScroll = styled.div`
@@ -344,8 +344,8 @@ const CardsScroll = styled.div`
   padding: var(--spacing-4) 0;
   padding-left: calc((100% - var(--page-width)) / 2 + var(--spacing-4));
   scroll-snap-type: x mandatory;
-  -webkit-mask-image: linear-gradient(to right, transparent, black 40px, black calc(100% - 40px), transparent);
-  mask-image: linear-gradient(to right, transparent, black 40px, black calc(100% - 40px), transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 60px, black calc(100% - 60px), transparent);
+  mask-image: linear-gradient(to right, transparent, black 60px, black calc(100% - 60px), transparent);
 
   @media ${deviceBreakPoints.mobile} {
     gap: ${CARD_GAP / 2}px;

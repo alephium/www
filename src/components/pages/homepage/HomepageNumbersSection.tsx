@@ -261,7 +261,7 @@ const BorderedBox = styled.div`
   box-shadow: 0 50px 50px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   position: relative;
-  min-height: 230px;
+  min-height: 200px;
 `
 
 const RealTimeLabel = styled.div`

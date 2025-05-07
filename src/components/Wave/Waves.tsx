@@ -54,6 +54,7 @@ const Waves = ({ parentRef }: { parentRef?: MutableRefObject<HTMLDivElement | nu
 
     if (canvasContextRef.current) {
       canvasContextRef.current.clearRect(0, 0, width, height)
+      canvasContextRef.current.globalCompositeOperation = 'luminosity'
       Object.entries(waves).forEach((w) => {
         w[1].draw(canvasContextRef.current as CanvasRenderingContext2D, width, height, delta.current / 20.0)
       })
@@ -73,17 +74,18 @@ const Waves = ({ parentRef }: { parentRef?: MutableRefObject<HTMLDivElement | nu
 }
 
 const waves: [WaveEntity, WaveEntity, WaveEntity] = [
-  new WaveEntity([0.0081, 0.028, 0.015], 1, 1, ['rgba(22, 204, 244, 0.8)', 'rgba(72, 58, 255, 0.2)']),
-  new WaveEntity([0.0032, 0.038, 0.005], 1, 1.2, ['rgba(255, 121, 244, 0.6)', 'rgba(16, 179, 248, 0.2)']),
-  new WaveEntity([0.0062, 0.048, 0.025], 1, 1, ['rgba(255, 244, 121, 0.5)', 'rgba(248, 171, 16, 0.2)'])
+  new WaveEntity([0.0081, 0.028, 0.015], 1, 0.1, ['rgba(74, 222, 255, 0.7)', 'rgba(126, 255, 191, 0.1)']),
+  new WaveEntity([0.0032, 0.038, 0.005], 1, 0.1, ['rgba(255, 167, 248, 0.8)', 'rgba(97, 208, 255, 0.1)']),
+  new WaveEntity([0.0062, 0.048, 0.025], 1, 0.1, ['rgba(255, 244, 120, 0.8)', 'rgba(255, 218, 144, 0.1)'])
 ]
 
 const CanvasContainer = styled.div`
   position: absolute;
-  bottom: -50px;
+  bottom: -10px;
   left: 0;
   right: 0;
   pointer-events: none;
+  opacity: 0.75;
 `
 
 export default Waves
