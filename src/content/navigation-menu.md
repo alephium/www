@@ -35,7 +35,7 @@ menuItems:
       - title: Mine ALPH
         link: https://docs.alephium.org/mining
       - title: Analytics
-        link: https://defillama.com/chain/Alephium
+        link: https://defillama.com/chain/Alephium?staking=true
   - title: Community
     items:
       - title: Get started

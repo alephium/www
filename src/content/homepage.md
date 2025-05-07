@@ -49,6 +49,9 @@ partnersSection:
     - title: 'Dia'
       logo: '../images/svgs/dia-logo.svg'
       url: https://www.diadata.org/
+    - title: 'Flux'
+      logo: '../images/svgs/flux-logo.svg'
+      url: 'https://runonflux.com'
     - title: 'Gate.io'
       logo: '../images/svgs/gateio-logo.svg'
       url: 'https://www.gate.io'

@@ -1,4 +1,5 @@
 import { graphql, PageProps, useStaticQuery } from 'gatsby'
+import { useTheme } from 'styled-components'
 
 import Button from '../components/Button'
 import Grid from '../components/customPageComponents/Grid'
@@ -68,6 +69,8 @@ const exchangesQuery = graphql`
 
 const CustomPage = (props: PageProps) => {
   const { treasureImage, mineImage, ecosystemImage } = useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
+
+  const theme = useTheme()
 
   return (
     <Page
@@ -150,7 +153,9 @@ const CustomPage = (props: PageProps) => {
 
           <SubpageSection wide bgColor="2" isCentered edgeGradient>
             <TextElement isCentered>
-              <h2>Build on Alephium</h2>
+              <h2>
+                <span>Build</span> on Alephium
+              </h2>
               <p>
                 With robust smart contract security, high-performance sharding, and a resilient Proof-of-Work
                 foundation, <strong>Alephium gives you the tools to build better, safer, and faster.</strong>
