@@ -228,11 +228,6 @@ const CustomPage = (props: PageProps) => {
             <p>
               ALPH mining is <strong>efficient, accessible, and built for long-term sustainability.</strong>
             </p>
-            <ul>
-              <li>Clear and fair emissions schedule</li>
-              <li>Energy efficient</li>
-              <li>Easy setup and quick start</li>
-            </ul>
             <Button big highlight url="https://docs.alephium.org/mining">
               Start mining
             </Button>

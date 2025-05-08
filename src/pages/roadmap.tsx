@@ -18,12 +18,10 @@ const CustomPage = (props: PageProps) => (
       <>
         <SubpageSection>
           <TextElement isCentered>
-            <h1>Alephium Roadmap & Milestones</h1>
-            <p>
-              At Alephium, we’re building the future of blockchain technology - one milestone at a time.
-              <br />
-              <strong>Explore our journey so far and what’s coming next.</strong>
-            </p>
+            <h1>
+              Alephium Roadmap
+              <br /> & Milestones
+            </h1>
           </TextElement>
         </SubpageSection>
 

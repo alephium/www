@@ -11,8 +11,6 @@ menuItems:
         link: https://docs.alephium.org/sdk/getting-started
       - title: Tutorials
         link: https://www.youtube.com/playlist?list=PL8q8n0BHJS1PWP7t8ABECYdOaPM-hJmjx
-      - title: Roadmap
-        link: /roadmap
       - title: Support
       - title: Discord
         link: https://discord.gg/XC5JaaDT7z
@@ -46,6 +44,8 @@ menuItems:
         link: /communities
       - title: Grants
         link: https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md
+      - title: Roadmap
+        link: /roadmap
 button:
   title: Bridge
   link: https://bridge.alephium.org/

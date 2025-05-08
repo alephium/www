@@ -1,6 +1,7 @@
 import { graphql, PageProps, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 
+import CommunityMosaic from '../components/CommunityMosaic'
 import ClickableBox from '../components/customPageComponents/ClickableBox'
 import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
@@ -42,8 +43,7 @@ const CustomPage = (props: PageProps) => {
             <h1>Online communities</h1>
             <p>
               <strong>
-                We are lucky to have a very active community of builders, users & friends. Join the channels and groups
-                and help us launch surf the Alephium wave.
+                We’re proud to have a thriving community of builders, users, and friends. Join the movement.
               </strong>
             </p>
           </SubpageVideoHeroSection>
@@ -72,6 +72,8 @@ const CustomPage = (props: PageProps) => {
               <Grid columns={3} gap="small"></Grid>
             </SubheaderContent>
           </SubpageSection>
+
+          <CommunityMosaic />
 
           <SubpageSection>
             <TextElement>
