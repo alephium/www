@@ -5,6 +5,7 @@ import { useCallback, useEffect, useState } from 'react'
 import styled, { useTheme } from 'styled-components'
 
 import { formatNumberForDisplay } from '../../../utils/numbers'
+import Button from '../../Button'
 import CardsHorizontalScroller from '../../common/CardsHorizontalScroller'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextCard from '../../customPageComponents/TextCard'
@@ -89,15 +90,13 @@ const HomepageUSPSection = () => {
 
       <CardsHorizontalScroller cardWidth={CARD_WIDTH} cardGap={CARD_GAP} animateCards>
         <TextCard border>
-          <TextElement>
-            <TextCardContent>
+          <TextCardContent>
+            <TextElement>
               <h3 style={{ color: theme.palette2 }}>Fast</h3>
               <TLDRSection color={theme.palette2}>
                 <span>20,000+ tps, single-chain experience.</span>
               </TLDRSection>
-            </TextCardContent>
-          </TextElement>
-          <TextCardContent>
+            </TextElement>
             <TextElement noHeadingsMargins>
               <p>
                 Alephium&apos;s BlockFlow sharding processes over 20,000 transactions per second while eliminating
@@ -105,20 +104,23 @@ const HomepageUSPSection = () => {
                 <strong>delivering high throughput and the simplicity of a single-chain environment.</strong>
               </p>
             </TextElement>
+            <FooterButtonContainer>
+              <Button squared url="https://docs.alephium.org/misc/Content/#blockflow">
+                Learn about BlockFlow
+              </Button>
+            </FooterButtonContainer>
           </TextCardContent>
         </TextCard>
         <TextCard border>
-          <TextElement color={theme.palette3}>
-            <TextCardContent>
+          <TextCardContent>
+            <TextElement color={theme.palette3}>
               <h3 style={{ color: theme.palette3 }}>Scalable</h3>
               <TLDRSection color={theme.palette3}>
                 <span>{`${formatNumberForDisplay(totalTransactions.value).join(
                   ''
                 )} transactions to date, low and predictable fees.`}</span>
               </TLDRSection>
-            </TextCardContent>
-          </TextElement>
-          <TextCardContent>
+            </TextElement>
             <TextElement noHeadingsMargins>
               <p>
                 Alephium&apos;s unique sharding design, built on its unique combination of UTXO and Proof-of-Work model
@@ -128,18 +130,21 @@ const HomepageUSPSection = () => {
                 </strong>
               </p>
             </TextElement>
+            <FooterButtonContainer>
+              <Button squared url="https://explorer.alephium.org">
+                Visit our explorer
+              </Button>
+            </FooterButtonContainer>
           </TextCardContent>
         </TextCard>
         <TextCard border>
-          <TextElement>
-            <TextCardContent>
+          <TextCardContent>
+            <TextElement>
               <h3 style={{ color: theme.palette4 }}>Secure</h3>
               <TLDRSection color={theme.palette4}>
                 <span>0 exploits, 0 hacks, security by design.</span>
               </TLDRSection>
-            </TextCardContent>
-          </TextElement>
-          <TextCardContent>
+            </TextElement>
             <TextElement noHeadingsMargins>
               <p>
                 Alephium offers a robust, developer-friendly environment with{' '}
@@ -148,39 +153,48 @@ const HomepageUSPSection = () => {
                 <strong>prevent threats like reentrancy attacks, unlimited approvals, and flash loan exploits.</strong>
               </p>
             </TextElement>
+            <FooterButtonContainer>
+              <Button
+                squared
+                url="https://medium.com/@alephium/meet-alphred-a-virtual-machine-like-no-others-85ce86540025"
+              >
+                See why we're secure
+              </Button>
+            </FooterButtonContainer>
           </TextCardContent>
         </TextCard>
         <TextCard border>
-          <TextElement>
-            <TextCardContent>
+          <TextCardContent>
+            <TextElement>
               <h3 style={{ color: theme.palette1 }}>Sustainable</h3>
               <TLDRSection color={theme.palette1}>
                 <span>The best of PoW, 87% less energy.</span>
               </TLDRSection>
-            </TextCardContent>
-          </TextElement>
-          <TextCardContent>
-            <TextElement noHeadingsMargins>
+            </TextElement>
+            <TextElement>
               <p>
-                Alephium&apos;s Proof-of-Less-Work consensus delivers true decentralization with a fraction of the
-                energy.{' '}
+                Alephium&apos;s <strong>Proof-of-Less-Wor</strong> consensus delivers true decentralization with a
+                fraction of the energy.{' '}
                 <strong>
                   It retains the security and simplicity of traditional PoW while cutting energy use by over 87%.
                 </strong>
               </p>
             </TextElement>
+            <FooterButtonContainer>
+              <Button squared url="https://docs.alephium.org/misc/Content/#proof-of-less-work">
+                Learn about PoLW
+              </Button>
+            </FooterButtonContainer>
           </TextCardContent>
         </TextCard>
         <TextCard border>
-          <TextElement>
-            <TextCardContent>
+          <TextCardContent>
+            <TextElement>
               <h3 style={{ color: theme.palette6 }}>Programmable</h3>
               <TLDRSection color={theme.palette6}>
                 <span>Stateful UTXO, the best of Bitcoin and Ethereum.</span>
               </TLDRSection>
-            </TextCardContent>
-          </TextElement>
-          <TextCardContent>
+            </TextElement>
             <TextElement noHeadingsMargins>
               <p>
                 <strong>
@@ -190,18 +204,21 @@ const HomepageUSPSection = () => {
                 protection.
               </p>
             </TextElement>
+            <FooterButtonContainer>
+              <Button squared url="https://docs.alephium.org/misc/Content/#stateful-utxo">
+                Learn about statefull UTXOs
+              </Button>
+            </FooterButtonContainer>
           </TextCardContent>
         </TextCard>
         <TextCard border>
-          <TextElement>
-            <TextCardContent>
+          <TextCardContent>
+            <TextElement>
               <h3 style={{ color: theme.palette5 }}>Dev-friendly</h3>
               <TLDRSection color={theme.palette5}>
                 <span>Custom VM & language built for performance.</span>
               </TLDRSection>
-            </TextCardContent>
-          </TextElement>
-          <TextCardContent>
+            </TextElement>
             <TextElement noHeadingsMargins>
               <p>
                 Alephium empowers developers with its{' '}
@@ -209,6 +226,11 @@ const HomepageUSPSection = () => {
                 , enabling efficient development and unlocking new possibilities for smart contracts, dApps, and tokens.
               </p>
             </TextElement>
+            <FooterButtonContainer>
+              <Button squared url="https://docs.alephium.org/misc/Content/#alphred-virtual-machine">
+                Learn about our VM
+              </Button>
+            </FooterButtonContainer>
           </TextCardContent>
         </TextCard>
       </CardsHorizontalScroller>
@@ -234,9 +256,18 @@ const TLDRSection = styled.div`
   color: ${({ color }) => color};
   font-size: var(--fontSize-22);
   font-weight: var(--fontWeight-semiBold);
+  margin-bottom: var(--spacing-4);
   width: 100%;
   box-sizing: border-box;
   opacity: 0.8;
+`
+
+const FooterButtonContainer = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: var(--spacing-2);
 `
 
 export default HomepageUSPSection
