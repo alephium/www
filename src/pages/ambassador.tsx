@@ -43,31 +43,11 @@ const CustomPage = (props: PageProps) => {
       content={
         <>
           <SectionDivider double />
-          <SubpageVideoHeroSection poster={heroImage} video={heroVideo} minHeight="400px" narrow>
+          <SubpageVideoHeroSection poster={heroImage} video={heroVideo} minHeight="400px">
             <h1>Alephium Ambassador Program</h1>
           </SubpageVideoHeroSection>
-          <SubpageSection>
-            <Grid columns={2}>
-              <TextElement>
-                <p>
-                  <strong>
-                    Join the Alephium Ambassador Program and become a pivotal force in advancing the world&apos;s first
-                    operational sharded blockchain
-                  </strong>
-                  , designed for secure and efficient decentralized applications. As an ambassador, you&apos;ll play a
-                  crucial role in expanding our community, sharing knowledge, and driving the adoption of
-                  Alephium&apos;s technology.
-                </p>
-              </TextElement>
-              <TextElement>
-                <p>
-                  <strong>Whether you&apos;re a developer, educator, content creator, or blockchain enthusiast</strong>,
-                  there&apos;s a place for you in the Alephium community. Together, we can build a more scalable,
-                  secure, and sustainable Web3.
-                </p>
-              </TextElement>
-            </Grid>
-          </SubpageSection>
+
+          <SectionDivider double />
 
           <WhySection />
 
@@ -90,17 +70,6 @@ const CustomPage = (props: PageProps) => {
           <SectionDivider />
 
           <HowToApply />
-
-          {/* Same image as in FAQ page can go here, like we do with the "Wallets" in /get-started */}
-          <SubpageSection isCentered>
-            <TextElement isCentered>
-              <h2>Have questions?</h2>
-
-              <p>Check our FAQ page for more information or join our community and contact our team.</p>
-              <Button url="/faq#ambassador-program">Check FAQ</Button>
-              <Button url="/discord">Join Discord</Button>
-            </TextElement>
-          </SubpageSection>
 
           <SubpageSection border edgeGradient>
             <TextElement isCentered>
