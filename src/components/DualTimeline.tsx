@@ -253,6 +253,7 @@ const When = styled.div`
 
 const DetailedContentList = styled.ul`
   padding: 0 15px;
+  font-size: var(--fontSize-18);
 `
 
 const ContentItem = styled.li`
@@ -378,7 +379,7 @@ const Entry = styled.div`
   align-self: stretch;
   justify-content: ${({ right }) => (right ? 'right' : 'left')};
   font-weight: var(--fontWeight-semiBold);
-  font-size: var(--fontSize-18);
+  font-size: var(--fontSize-22);
 `
 
 const Pair = styled.div`

@@ -67,7 +67,7 @@ const CustomPage = (props: PageProps) => {
 
           <SectionDivider />
 
-          <SubpageSection>
+          <SubpageSection border edgeGradient>
             <TextElement isCentered>
               <h2>Join Us on This Journey</h2>
               <p>
@@ -78,6 +78,7 @@ const CustomPage = (props: PageProps) => {
               </p>
             </TextElement>
           </SubpageSection>
+          <SectionDivider double />
         </>
       }
     />

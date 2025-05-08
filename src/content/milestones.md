@@ -26,9 +26,15 @@ timelines:
       - year: 2024
         entries:
           - row: 1
+            text: 'Bridge to BSC'
+            when: '11.2024'
+          - row: 2
             text: 'Alephium Bridge to BSC on Testnet'
             when: '09.2024'
-          - row: 2
+          - row: 3
+            text: 'DIA cross-chain Oracle integration'
+            when: '08.2024'
+          - row: 4
             text: 'Rhone Network Upgrade on Mainnet'
             when: '12.06.2024'
             content:
@@ -37,7 +43,7 @@ timelines:
               - 'Sequential transactions'
               - 'On-chain Gasless transactions'
             isMajor: true
-          - row: 3
+          - row: 5
             text: 'Ralph LSP Release'
             when: '04.2024'
       - year: 2023
@@ -117,13 +123,30 @@ timelines:
             isMajor: true
   - title: Ecosystem
     years:
+      - year: 2025
+        entries:
+          - row: 1
+            text: "Primevault's institutional custody & trading infrastructure for digital assets"
+            when: '03.2025'
+          - row: 2
+            text: 'Tangem wallet integration'
+            when: '03.2025'
+          - row: 3
+            text: 'Alchemy Pay, Gate Connect and TransFi Fiat Ramp integrations'
+            when: '02.2025'
       - year: 2024
         entries:
           - row: 1
+            text: 'Safepal wallet integration'
+            when: '12.2024'
+          - row: 2
             text: 'Alephium app on Ledger & OneKey Hardware Wallets'
             when: '10.2024'
             isMajor: true
-          - row: 2
+          - row: 3
+            text: 'Banxa Fiat Ramp integration'
+            when: '09.2024'
+          - row: 4
             text: "215'000+ active addresses (+200% YTD) and 19 PH/s of global hashrate (+13'500% YTD)"
             content:
               - "40+ projects on Alephium, Alephium nodes in 23+ countries"
@@ -133,32 +156,32 @@ timelines:
               - "21k+ NFT deployed on Alephium"
             when: "09.2024"
             isMajor: true
-          - row: 3
+          - row: 5
             text: 'First Oracles Integration - DIA'
             when: '07.2024'
-          - row: 4
+          - row: 6
             text: 'Bitmain & IceRiver ASIC Miners'
             when: '07.2024'
             isMajor: true
-          - row: 5
+          - row: 7
             text: 'Athens Builders Meetup #1'
             when: '06.2024'
             isMajor: true
-          - row: 6
+          - row: 8
             text: 'Ambassador Program Launch'
             when: '05.2024'
-          - row: 7
+          - row: 9
             text: '$60M TVL on Alephium'
             when: '04.2024'
-          - row: 8
+          - row: 10
             text: 'First ASIC Miner - Goldshell'
             when: '04.2024'
             isMajor: true
-          - row: 9
+          - row: 11
             text: 'First Hackathon - Buidl on Alephium #1 - Pioneers 🔥'
             when: '02.2024'
             isMajor: true
-          - row: 10
+          - row: 12
             text: '$21M TVL on Alephium'
             when: '01.2024'
       - year: 2023
@@ -167,19 +190,22 @@ timelines:
             text: '$9M TVL on Alephium'
             when: '12.2023'
           - row: 2
+            text: 'Dec-23 MEXC/Uniswap listings'
+            when: '12.2023'
+          - row: 3
             text: "Over 77'000 active addresses and 50'000+ GPUs on Alephium"
             when: "11.2023"
-          - row: 3
+          - row: 4
             text: 'Ethereum Bridge - Stablecoins on Alephium & Wrapped ALPH on Ethereum'
             when: '11.2023'
-          - row: 4
+          - row: 5
             text: 'First DAO - Blockflow Alliance DAO'
             when: '10.2023'
             isMajor: true
-          - row: 5
+          - row: 6
             text: 'First dApps on Alephium (Native DEX, NFT marketplace and more)'
             when: 'Q3.2023'
-          - row: 6
+          - row: 7
             text: 'NYM-Connect app integration'
             when: '07.2023'
       - year: 2022
