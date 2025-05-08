@@ -36,9 +36,7 @@ const SubpageHeroSection = forwardRef<HTMLElement, SubpageHeroSectionProps>(func
 
 export default SubpageHeroSection
 
-const SubpageHeroSectionStyled = styled.section<
-  Pick<SubpageHeroSectionProps, 'minHeight' | 'bottomMargin' | 'split' | 'narrow'>
->`
+const SubpageHeroSectionStyled = styled.section<SubpageHeroSectionProps>`
   position: relative;
   height: ${({ split, minHeight }) => (split ? minHeight || '75vh' : 'auto')};
   min-height: ${({ split, minHeight }) => (split ? 'unset' : minHeight || '75vh')};
@@ -68,10 +66,14 @@ const SubpageHeroSectionStyled = styled.section<
   }
 
   @media ${deviceBreakPoints.mobile} {
+    gap: 0;
+    box-sizing: border-box;
+    background-color: ${({ theme }) => theme.background2};
+    padding: var(--spacing-2);
     flex-direction: column;
     height: auto;
     min-height: ${({ minHeight }) => minHeight || '75vh'};
-    gap: 0;
+    width: 90vw;
   }
 `
 
@@ -121,11 +123,10 @@ const HeroPageSectionContainer = styled.div<Pick<SubpageHeroSectionProps, 'align
 
   ${({ split }) =>
     split &&
-    `
-    flex: none;
-    width: calc(50% - var(--spacing-3));
-    margin-left: 0;
-  `}
+    css`
+      flex: 1.5;
+      margin-left: 0;
+    `}
 
   @media ${deviceBreakPoints.mobile} {
     width: 100%;
@@ -146,15 +147,17 @@ const ContentWrapper = styled.div<Pick<SubpageHeroSectionProps, 'alignContent' |
 
   ${({ split }) =>
     split &&
-    `
-    margin: auto;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-  `}
+    css`
+      margin: auto;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    `}
 
   @media ${deviceBreakPoints.mobile} {
-    padding: var(--spacing-4);
+    width: 100%;
+    box-sizing: border-box;
+    padding: var(--spacing-6) var(--spacing-4);
   }
 `
 
@@ -172,6 +175,7 @@ const BackgroundMediaWrapper = styled.div<Pick<SubpageHeroSectionProps, 'split'>
   ${({ split }) =>
     split &&
     css`
+      flex: 1;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -181,12 +185,11 @@ const BackgroundMediaWrapper = styled.div<Pick<SubpageHeroSectionProps, 'split'>
         object-fit: cover;
         border-radius: var(--radius-big);
       }
-    `}
 
-  @media ${deviceBreakPoints.mobile} {
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-    height: 100%;
-  }
+      @media ${deviceBreakPoints.mobile} {
+        width: 100%;
+        max-height: 300px;
+        border-radius: calc(var(--radius-big) - var(--spacing-2));
+      }
+    `}
 `

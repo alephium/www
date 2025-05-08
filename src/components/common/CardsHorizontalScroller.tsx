@@ -139,13 +139,15 @@ const CardsScroll = styled.div<{ $showLeftMask: boolean; $showRightMask: boolean
     gap: ${CARD_GAP / 2}px;
     -webkit-mask-image: linear-gradient(
       to right,
-      ${(props) => (props.$showLeftMask ? 'transparent' : 'black')} 20px,
+      ${(props) => (props.$showLeftMask ? 'transparent' : 'black')},
+      black 20px,
       black calc(100% - 20px),
       ${(props) => (props.$showRightMask ? 'transparent' : 'black')}
     );
     mask-image: linear-gradient(
       to right,
-      ${(props) => (props.$showLeftMask ? 'transparent' : 'black')} 20px,
+      ${(props) => (props.$showLeftMask ? 'transparent' : 'black')},
+      black 20px,
       black calc(100% - 20px),
       ${(props) => (props.$showRightMask ? 'transparent' : 'black')}
     );

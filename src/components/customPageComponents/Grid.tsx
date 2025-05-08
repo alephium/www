@@ -73,10 +73,5 @@ const StyledGrid = styled(motion.div)<GridProps>`
   @media ${deviceBreakPoints.mobile} {
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-
-  @media ${deviceBreakPoints.smallMobile} {
-    grid-template-columns: 1fr;
   }
 `

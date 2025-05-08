@@ -1,8 +1,8 @@
 import { HTMLAttributes, ReactNode } from 'react'
 import styled, { css } from 'styled-components'
 
+import { deviceBreakPoints } from '../../styles/global-style'
 import PageSectionContainer from '../PageSectionContainer'
-
 type GradientPosition = 'top' | 'bottom' | 'bottom-right' | 'bottom-left' | 'top-right' | 'top-left'
 
 interface SubpageSectionProps extends HTMLAttributes<HTMLDivElement> {
@@ -42,6 +42,10 @@ const SubpageSectionStyled = styled(PageSectionContainer)<
   background-color: ${({ theme, bgColor }) => (bgColor ? theme[`background${bgColor}`] : 'transparent')};
   border-radius: var(--radius-big);
   overflow: hidden;
+
+  @media ${deviceBreakPoints.mobile} {
+    padding: var(--spacing-8) var(--spacing-4);
+  }
 
   ${({ border }) =>
     border &&
