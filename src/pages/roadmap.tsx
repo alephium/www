@@ -1,4 +1,4 @@
-import { PageProps } from 'gatsby'
+import { graphql, PageProps, useStaticQuery } from 'gatsby'
 import { useTheme } from 'styled-components'
 
 import Badge from '../components/Badge'
@@ -7,66 +7,82 @@ import CardFooterButtonContainer from '../components/common/CardFooterButtonCont
 import CardsHorizontalScroller from '../components/common/CardsHorizontalScroller'
 import Page from '../components/customPageComponents/Page'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
+import SubpageVideoHeroSection from '../components/customPageComponents/SubpageVideoHeroSection'
 import TextCard from '../components/customPageComponents/TextCard'
 import TextCardContent from '../components/customPageComponents/TextCardContent'
 import TextElement from '../components/customPageComponents/TextElement'
 import PageSectionMilestones from '../components/PageSectionMilestones'
 import SectionDivider from '../components/SectionDivider'
 
-const CustomPage = (props: PageProps) => (
-  <Page
-    {...props}
-    floatingMenu={false}
-    seo={{
-      title: 'Alephium Roadmap | Past Milestones & Future Vision',
-      description: 'Explore Alephium&apos;s journey and find out what&apos;s next. Built for real-world adoption.'
-    }}
-    content={
-      <>
-        <SubpageSection edgeGradient>
-          <TextElement>
-            <h1>
-              Alephium Roadmap
-              <br /> & Milestones
-            </h1>
-          </TextElement>
-        </SubpageSection>
-
-        <SubpageSection>
-          <TextElement>
-            <h2>
-              Our journey to true Web3,
-              <br />
-              one upgrade at a time.
-              <hr />
-            </h2>
-            <p>
-              From Leman to Rhone to Danube, <strong>this has always been the plan</strong>.
-              <strong> Now we're entering the chapter where it all comes together.</strong>
-            </p>
-          </TextElement>
-          <Cards />
-        </SubpageSection>
-
-        <PageSectionMilestones />
-
-        <SectionDivider />
-
-        <SubpageSection>
-          <TextElement isCentered>
-            <h2>Join Us on This Journey</h2>
-            <p>
-              Alephium&apos;s roadmap is a living document, evolving with the input of our community and the progress of
-              our technology. Stay up-to-date on our latest developments by following us on{' '}
-              <a href="https://x.com/alephium">Twitter</a>, or joining our{' '}
-              <a href="https://t.me/alephiumgroup">Telegram</a> group.
-            </p>
-          </TextElement>
-        </SubpageSection>
-      </>
+const roadmapQuery = graphql`
+  query RoadmapPage {
+    heroImage: file(relativePath: { eq: "bay-tree-2.png" }) {
+      ...HeroImage
     }
-  />
-)
+    heroVideo: file(relativePath: { eq: "bay-tree-2-scrub.mp4" }) {
+      publicURL
+    }
+  }
+`
+
+const CustomPage = (props: PageProps) => {
+  const { heroImage, heroVideo } = useStaticQuery<Queries.RoadmapPageQuery>(roadmapQuery)
+
+  return (
+    <Page
+      {...props}
+      floatingMenu={false}
+      seo={{
+        title: 'Alephium Roadmap | Past Milestones & Future Vision',
+        description: 'Explore Alephium&apos;s journey and find out what&apos;s next. Built for real-world adoption.'
+      }}
+      content={
+        <>
+          <SubpageVideoHeroSection video={heroVideo} poster={heroImage} minHeight="630px">
+            <TextElement>
+              <h1>
+                Alephium Roadmap
+                <br />& Milestones
+              </h1>
+            </TextElement>
+          </SubpageVideoHeroSection>
+
+          <SubpageSection>
+            <TextElement>
+              <h2>
+                Our journey to true Web3,
+                <br />
+                one upgrade at a time.
+                <hr />
+              </h2>
+              <p>
+                From Leman to Rhone to Danube, <strong>this has always been the plan</strong>.
+                <strong> Now we're entering the chapter where it all comes together.</strong>
+              </p>
+            </TextElement>
+            <Cards />
+          </SubpageSection>
+
+          <PageSectionMilestones />
+
+          <SectionDivider />
+
+          <SubpageSection>
+            <TextElement isCentered>
+              <h2>Join Us on This Journey</h2>
+              <p>
+                Alephium&apos;s roadmap is a living document, evolving with the input of our community and the progress
+                of our technology. Stay up-to-date on our latest developments by following us on{' '}
+                <a href="https://x.com/alephium">Twitter</a>, or joining our{' '}
+                <a href="https://t.me/alephiumgroup">Telegram</a> group.
+              </p>
+            </TextElement>
+          </SubpageSection>
+        </>
+      }
+    />
+  )
+}
 
 export default CustomPage
 
