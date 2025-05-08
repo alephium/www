@@ -7,7 +7,6 @@ import AlephiumLogo from './AlephiumLogo'
 import Column from './Columns/Column'
 import Columns from './Columns/Columns'
 import NavigationMenuSocials from './navigation/NavigationMenuSocials'
-import PageSectionContainer from './PageSectionContainer'
 import ScrollToTop from './ScrollToTop'
 import SimpleLink from './SimpleLink'
 
@@ -45,7 +44,7 @@ const Footer = () => {
       <ScrollToTop />
       <FooterStyled>
         <FooterContent>
-          <PageSectionContainerLeft>
+          <ContainerLeft>
             <BottomColumn>
               <LogosSection>
                 <LogoStyled gradientIndex={0} fill={theme.textPrimary} />
@@ -55,8 +54,8 @@ const Footer = () => {
               <NavigationMenuSocialsStyled enabledItems={bottomContent?.socials?.filter(notEmpty) ?? []} />
             </BottomColumn>
             <BottomColumnCenter>{bottomContent?.text}</BottomColumnCenter>
-          </PageSectionContainerLeft>
-          <PageSectionContainerStyled>
+          </ContainerLeft>
+          <ContainerRight>
             <FooterColumnsSection gap="var(--spacing-4)">
               {columnsContent?.map((column) => (
                 <Column key={column?.title}>
@@ -82,7 +81,7 @@ const Footer = () => {
                 </Column>
               ))}
             </FooterColumnsSection>
-          </PageSectionContainerStyled>
+          </ContainerRight>
         </FooterContent>
       </FooterStyled>
     </>
@@ -135,7 +134,8 @@ const FooterContent = styled.div`
   }
 `
 
-const PageSectionContainerLeft = styled(PageSectionContainer)`
+const ContainerLeft = styled.div`
+  flex: 1;
   display: flex;
   align-items: flex-start;
   gap: var(--spacing-4);
@@ -146,6 +146,20 @@ const PageSectionContainerLeft = styled(PageSectionContainer)`
     align-items: center;
     text-align: center;
     gap: var(--spacing-4);
+  }
+`
+
+const ContainerRight = styled.div`
+  flex: 1;
+  display: flex;
+  gap: var(--spacing-10);
+  justify-content: space-between;
+
+  @media ${deviceBreakPoints.mobile} {
+    flex-direction: column;
+    gap: var(--spacing-10);
+    align-items: center;
+    text-align: center;
   }
 `
 
@@ -192,17 +206,4 @@ const FooterColumn = styled.div`
 
 const FooterColumnsSection = styled(Columns)`
   flex-grow: 1;
-`
-
-const PageSectionContainerStyled = styled(PageSectionContainer)`
-  display: flex;
-  gap: var(--spacing-10);
-  justify-content: space-between;
-
-  @media ${deviceBreakPoints.mobile} {
-    flex-direction: column;
-    gap: var(--spacing-10);
-    align-items: center;
-    text-align: center;
-  }
 `

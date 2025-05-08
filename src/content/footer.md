@@ -2,24 +2,22 @@
 columns:
   - title: Resources
     links:
+      - text: Grants
+        url: https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md
       - text: Docs
         url: https://docs.alephium.org/
       - text: Blog
         url: https://medium.com/@alephium
-      - text: Alephium Whitepaper
-        url: https://github.com/alephium/white-paper/blob/master/alephium.pdf
-      - text: Proof of Less Work Whitepaper
-        url: https://github.com/alephium/white-paper/blob/master/polw.pdf
+      - text: Brand Assets
+        url: https://github.com/alephium/alephium-brand-guide
   - title: Alephium
     links:
-      - text: About
-        url: /about
+      - text: Contact
+        url: /contact
       - text: Terms & Conditions
         url: /terms-and-conditions
       - text: Privacy Policy
         url: /privacy-policy
-      - text: Contact
-        url: /contact
 bottom:
   text: Made with love️ by humans from Alephium.
   socials:
