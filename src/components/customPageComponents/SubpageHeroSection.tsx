@@ -3,7 +3,6 @@ import styled, { css } from 'styled-components'
 
 import { deviceBreakPoints } from '../../styles/global-style'
 import TextElement from './TextElement'
-import TitleShadow from './TitleShadow'
 
 export type SubpageHeroSectionAlignContent = 'left' | 'center' | 'bottom'
 
@@ -26,7 +25,6 @@ const SubpageHeroSection = forwardRef<HTMLElement, SubpageHeroSectionProps>(func
       <BackgroundMediaWrapper split={split}>{mediaContent}</BackgroundMediaWrapper>
       <HeroPageSectionContainer alignContent={alignContent} split={split}>
         <ContentWrapper alignContent={alignContent} split={split}>
-          {!split && <TitleShadow />}
           <TextElementStyled split={split}>{children}</TextElementStyled>
         </ContentWrapper>
       </HeroPageSectionContainer>

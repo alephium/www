@@ -38,7 +38,7 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageVideoHeroSection video={heroVideo} poster={heroImage} minHeight="630px">
+          <SubpageVideoHeroSection video={heroVideo} poster={heroImage} minHeight="630px" showReflections>
             <TextElement>
               <h1>
                 Alephium Roadmap

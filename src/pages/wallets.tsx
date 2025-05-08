@@ -90,7 +90,6 @@ const CustomPage = (props: PageProps) => {
               <br />
               Designed for Humans.
             </h1>
-            <hr />
             <p>
               Our wallets are designed for ease-of-use,{' '}
               <strong>making Alephium&apos;s technology accessible for all.</strong>

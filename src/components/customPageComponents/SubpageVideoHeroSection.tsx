@@ -1,10 +1,11 @@
-import { motion } from 'framer-motion'
+import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion'
 import { getImage, IGatsbyImageData } from 'gatsby-plugin-image'
 import { useEffect, useRef, useState } from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 
 import useIsMobile from '../../hooks/useIsMobile'
 import { darkTheme } from '../../styles/themes'
+import { getPointerRelativePositionInElement } from '../../utils/pointer'
 import GatsbyImageWrapper from '../GatsbyImageWrapper'
 import SubpageHeroSection, { SubpageHeroSectionProps } from './SubpageHeroSection'
 
@@ -31,6 +32,12 @@ const SubpageVideoHeroSection = ({ video, poster, children, ...props }: SubpageV
 
   const imageData = poster?.childImageSharp?.gatsbyImageData
   const image = imageData ? getImage(imageData) : undefined
+
+  // Add motion values for gradient position
+  const x = useMotionValue(0.5)
+  const y = useMotionValue(0.5)
+  const springX = useSpring(x, { stiffness: 500, damping: 60 })
+  const springY = useSpring(y, { stiffness: 500, damping: 60 })
 
   useEffect(() => {
     if (isMobile || !video?.publicURL) return
@@ -97,6 +104,11 @@ const SubpageVideoHeroSection = ({ video, poster, children, ...props }: SubpageV
     if (!rafIdRef.current) {
       rafIdRef.current = window.requestAnimationFrame(updateVideoTime)
     }
+
+    // Update gradient position
+    const { x: positionX, y: positionY } = getPointerRelativePositionInElement(e)
+    x.set(positionX, true)
+    y.set(positionY, true)
   }
 
   return (
@@ -115,6 +127,41 @@ const SubpageVideoHeroSection = ({ video, poster, children, ...props }: SubpageV
                 <source src={video.publicURL} type="video/mp4" />
               </VideoContainer>
             )}
+            <GradientOverlay
+              style={{
+                background: useTransform(
+                  [springX, springY],
+                  ([x, y]) =>
+                    `linear-gradient(${45 + y * 30}deg, 
+                      transparent 0%,
+                      rgba(255, 255, 255, 0.1) ${x * 100}%,
+                      ${darkTheme.palette2} ${x * 100 + 10}%,
+                      ${darkTheme.palette3} ${x * 100 + 20}%,
+                      rgba(255, 255, 255, 0.2) ${x * 100 + 30}%,
+                      ${darkTheme.palette4} ${x * 100 + 40}%,
+                      transparent 100%
+                    )`
+                )
+              }}
+            />
+            <GradientOverlay
+              style={{
+                background: useTransform(
+                  [springX, springY],
+                  ([x, y]) =>
+                    `linear-gradient(${135 + y * 30}deg,
+                      ${darkTheme.palette4} 0%,
+                      rgba(255, 255, 255, 0.15) ${x * 100 - 20}%,
+                      ${darkTheme.palette1} ${x * 100}%,
+                      ${darkTheme.palette2} ${x * 100 + 15}%,
+                      rgba(255, 255, 255, 0.1) ${x * 100 + 30}%,
+                      transparent 100%
+                    )`
+                ),
+                mixBlendMode: 'multiply',
+                opacity: 0.1
+              }}
+            />
           </PosterWrapper>
         }
         {...props}
@@ -150,4 +197,14 @@ const PosterImage = styled(motion(GatsbyImageWrapper))`
   height: 100%;
   object-fit: cover;
   z-index: 0;
+`
+
+const GradientOverlay = styled(motion.div)`
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 3;
+  opacity: 0.4;
+  mix-blend-mode: overlay;
+  transition: opacity 0.3s ease;
 `
