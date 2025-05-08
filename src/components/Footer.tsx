@@ -108,13 +108,15 @@ const FooterStyled = styled.div`
     left: 0;
     background: radial-gradient(
       circle at 0% 0%,
-      ${({ theme }) => theme.palette1} 0%,
-      ${({ theme }) => theme.palette4} 35%,
-      ${({ theme }) => theme.palette3} 50%,
-      ${({ theme }) => theme.palette1} 70%,
-      ${({ theme }) => theme.palette3} 85%,
-      ${({ theme }) => theme.palette4} 90%,
-      transparent 100%
+      transparent 0%,
+      transparent 10%,
+      ${({ theme }) => theme.textPrimary} 20%,
+      ${({ theme }) => theme.palette4} 25%,
+      ${({ theme }) => theme.palette6} 30%,
+      ${({ theme }) => theme.palette1} 40%,
+      ${({ theme }) => theme.palette3} 55%,
+      ${({ theme }) => theme.palette2} 60%,
+      transparent 65%
     );
     mask-image: radial-gradient(ellipse 100% 100% at left bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 80%);
     -webkit-mask-image: radial-gradient(ellipse 100% 100% at left bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 80%);
