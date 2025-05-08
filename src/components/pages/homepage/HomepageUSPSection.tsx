@@ -6,6 +6,7 @@ import styled, { useTheme } from 'styled-components'
 
 import { formatNumberForDisplay } from '../../../utils/numbers'
 import Button from '../../Button'
+import CardFooterButtonContainer from '../../common/CardFooterButtonContainer'
 import CardsHorizontalScroller from '../../common/CardsHorizontalScroller'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextCard from '../../customPageComponents/TextCard'
@@ -104,11 +105,11 @@ const HomepageUSPSection = () => {
                 <strong>delivering high throughput and the simplicity of a single-chain environment.</strong>
               </p>
             </TextElement>
-            <FooterButtonContainer>
+            <CardFooterButtonContainer>
               <Button squared url="https://docs.alephium.org/misc/Content/#blockflow">
                 Learn about BlockFlow
               </Button>
-            </FooterButtonContainer>
+            </CardFooterButtonContainer>
           </TextCardContent>
         </TextCard>
         <TextCard border>
@@ -130,11 +131,11 @@ const HomepageUSPSection = () => {
                 </strong>
               </p>
             </TextElement>
-            <FooterButtonContainer>
+            <CardFooterButtonContainer>
               <Button squared url="https://explorer.alephium.org">
                 Visit our explorer
               </Button>
-            </FooterButtonContainer>
+            </CardFooterButtonContainer>
           </TextCardContent>
         </TextCard>
         <TextCard border>
@@ -153,14 +154,14 @@ const HomepageUSPSection = () => {
                 <strong>prevent threats like reentrancy attacks, unlimited approvals, and flash loan exploits.</strong>
               </p>
             </TextElement>
-            <FooterButtonContainer>
+            <CardFooterButtonContainer>
               <Button
                 squared
                 url="https://medium.com/@alephium/meet-alphred-a-virtual-machine-like-no-others-85ce86540025"
               >
                 See why we're secure
               </Button>
-            </FooterButtonContainer>
+            </CardFooterButtonContainer>
           </TextCardContent>
         </TextCard>
         <TextCard border>
@@ -180,11 +181,11 @@ const HomepageUSPSection = () => {
                 </strong>
               </p>
             </TextElement>
-            <FooterButtonContainer>
+            <CardFooterButtonContainer>
               <Button squared url="https://docs.alephium.org/misc/Content/#proof-of-less-work">
                 Learn about PoLW
               </Button>
-            </FooterButtonContainer>
+            </CardFooterButtonContainer>
           </TextCardContent>
         </TextCard>
         <TextCard border>
@@ -204,11 +205,11 @@ const HomepageUSPSection = () => {
                 protection.
               </p>
             </TextElement>
-            <FooterButtonContainer>
+            <CardFooterButtonContainer>
               <Button squared url="https://docs.alephium.org/misc/Content/#stateful-utxo">
                 Learn about statefull UTXOs
               </Button>
-            </FooterButtonContainer>
+            </CardFooterButtonContainer>
           </TextCardContent>
         </TextCard>
         <TextCard border>
@@ -226,11 +227,11 @@ const HomepageUSPSection = () => {
                 , enabling efficient development and unlocking new possibilities for smart contracts, dApps, and tokens.
               </p>
             </TextElement>
-            <FooterButtonContainer>
+            <CardFooterButtonContainer>
               <Button squared url="https://docs.alephium.org/misc/Content/#alphred-virtual-machine">
                 Learn about our VM
               </Button>
-            </FooterButtonContainer>
+            </CardFooterButtonContainer>
           </TextCardContent>
         </TextCard>
       </CardsHorizontalScroller>
@@ -260,14 +261,6 @@ const TLDRSection = styled.div`
   width: 100%;
   box-sizing: border-box;
   opacity: 0.8;
-`
-
-const FooterButtonContainer = styled.div`
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin-top: var(--spacing-2);
 `
 
 export default HomepageUSPSection
