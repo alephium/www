@@ -51,16 +51,16 @@ const HomepageIntroSection = () => {
   const hardcodedCards = useMemo<Card[]>(
     () => [
       {
-        title: 'Explore',
+        title: 'Wallets',
         description: (
           <>
-            Discover <strong>Alephium</strong> and start your journey.
+            <strong>Get your user-friendly wallet.</strong> Your gateway to the Alephium ecosystem.
           </>
         ),
-        actionText: 'Learn More',
+        actionText: 'Wallets',
         image: lightRays?.childImageSharp?.gatsbyImageData,
         link: {
-          url: '/get-started'
+          url: '/wallets'
         },
         color: 'palette3'
       },
@@ -88,7 +88,7 @@ const HomepageIntroSection = () => {
         actionText: 'Start Contributing',
         image: greenWater?.childImageSharp?.gatsbyImageData,
         link: {
-          url: '/grants'
+          url: 'https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md'
         },
         color: 'palette1'
       },

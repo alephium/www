@@ -131,7 +131,7 @@ const FooterContent = styled.div`
   margin: 0 auto;
 
   @media ${deviceBreakPoints.mobile} {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: var(--spacing-4);
   }
 `

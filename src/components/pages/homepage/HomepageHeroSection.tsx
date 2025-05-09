@@ -37,7 +37,7 @@ const HomepageHeroSection = () => {
         </h1>
         <p>
           <strong>
-            Scalable Proof-of-Less-Work and secure Smart Contracts,
+            Fast & Scalable Proof-of-Work and secure Smart Contracts,
             <br />
             <b> only on Alephium.</b>
           </strong>
@@ -45,8 +45,8 @@ const HomepageHeroSection = () => {
       </TextElementStyled>
 
       <Buttons>
-        <Button big highlight url="https://docs.alephium.org">
-          Start building
+        <Button big highlight url="/get-started">
+          Get started
         </Button>
       </Buttons>
       {content?.partnersSection && <HomepagePartnersSection {...content.partnersSection} />}

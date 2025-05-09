@@ -18,15 +18,18 @@ menuItems:
         link: https://github.com/alephium
   - title: Ecosystem
     items:
-      - title: Projects and tools
+      - title: Tools
       - title: Wallets
         link: /wallets
-      - title: Dapps
-        link: https://alph.land
       - title: Bridge
         link: https://bridge.alephium.org/#/transfer
       - title: Explorer
         link: https://explorer.alephium.org
+      - title: Projects
+      - title: Dapps
+        link: https://alph.land
+      - title: Grants
+        link: /grants
       - title: Network
       - title: Node operations
         link: https://docs.alephium.org/full-node
@@ -42,10 +45,6 @@ menuItems:
         link: /ambassador
       - title: Online communities
         link: /communities
-      - title: Grants
-        link: https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md
-      - title: Roadmap
-        link: /roadmap
 button:
   title: Bridge
   link: https://bridge.alephium.org/
