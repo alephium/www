@@ -4,7 +4,6 @@ import { graphql } from 'gatsby'
 import { useCallback, useEffect, useState } from 'react'
 import styled, { useTheme } from 'styled-components'
 
-import { formatNumberForDisplay } from '../../../utils/numbers'
 import Button from '../../Button'
 import CardFooterButtonContainer from '../../common/CardFooterButtonContainer'
 import CardsHorizontalScroller from '../../common/CardsHorizontalScroller'
@@ -95,8 +94,28 @@ const HomepageUSPSection = () => {
             <TextElement>
               <h3 style={{ color: theme.palette2 }}>Fast</h3>
               <TLDRSection color={theme.palette2}>
-                <span>20,000+ tps, single-chain experience.</span>
+                <span>8 second block time, 2 BPS network throughput.</span>
               </TLDRSection>
+            </TextElement>
+            <TextElement noHeadingsMargins>
+              <p>
+                Each chain on Alephium now produces a block every 8 seconds. With parallel processing across the
+                network, Alephium achieves 2 blocks per second on average,
+                <strong>matching the speed of leading PoS networks without sacrificing decentralization.</strong>
+              </p>
+            </TextElement>
+            <CardFooterButtonContainer>
+              <Button squared highlight url="https://x.com/alephium/status/1920780688313233634">
+                Discover the Danube upgrade
+              </Button>
+            </CardFooterButtonContainer>
+          </TextCardContent>
+        </TextCard>
+        <TextCard border>
+          <TextCardContent>
+            <TextElement color={theme.palette3}>
+              <h3 style={{ color: theme.palette3 }}>Scalable</h3>
+              <TLDRSection color={theme.palette3}>20,000+ tps, single-chain experience.</TLDRSection>
             </TextElement>
             <TextElement noHeadingsMargins>
               <p>
@@ -107,33 +126,7 @@ const HomepageUSPSection = () => {
             </TextElement>
             <CardFooterButtonContainer>
               <Button squared url="https://docs.alephium.org/misc/Content/#blockflow">
-                Learn about BlockFlow
-              </Button>
-            </CardFooterButtonContainer>
-          </TextCardContent>
-        </TextCard>
-        <TextCard border>
-          <TextCardContent>
-            <TextElement color={theme.palette3}>
-              <h3 style={{ color: theme.palette3 }}>Scalable</h3>
-              <TLDRSection color={theme.palette3}>
-                <span>{`${formatNumberForDisplay(totalTransactions.value).join(
-                  ''
-                )} transactions to date, low and predictable fees.`}</span>
-              </TLDRSection>
-            </TextElement>
-            <TextElement noHeadingsMargins>
-              <p>
-                Alephium&apos;s unique sharding design, built on its unique combination of UTXO and Proof-of-Work model
-                together with a DAG data structure, delivers{' '}
-                <strong>
-                  consistent performance at scale, keeping fees stable and affordable for both users and developers.
-                </strong>
-              </p>
-            </TextElement>
-            <CardFooterButtonContainer>
-              <Button squared url="https://explorer.alephium.org">
-                Visit our explorer
+                Learn about Blockflow
               </Button>
             </CardFooterButtonContainer>
           </TextCardContent>
@@ -143,7 +136,7 @@ const HomepageUSPSection = () => {
             <TextElement>
               <h3 style={{ color: theme.palette4 }}>Secure</h3>
               <TLDRSection color={theme.palette4}>
-                <span>0 exploits, 0 hacks, security by design.</span>
+                <span>Security by design.</span>
               </TLDRSection>
             </TextElement>
             <TextElement noHeadingsMargins>
