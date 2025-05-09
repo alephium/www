@@ -31,39 +31,30 @@ pageSectionCtaContent:
 
 partnersSection:
   partners:
-    - title: 'Alchemy Pay'
-      logo: '../images/svgs/alchemy-pay-logo.svg'
-      url: https://www.bitcoinassociation.ch/
-    - title: 'Banxa'
-      logo: '../images/svgs/banxa-logo'
-      url: 'https://www.banxa.com'
-    - title: 'Bitget'
-      logo: '../images/svgs/bitget-logo'
-      url: 'https://www.bitget.com'
     - title: 'Bitmain'
       logo: '../images/svgs/bitmain-logo.svg'
       url: 'https://www.bitmain.com'
-    - title: 'Cetacean Capital'
-      logo: '../images/logos/cetacean-capital-icon.png'
-      url: https://cetacean.capital/
     - title: 'Dia'
       logo: '../images/svgs/dia-logo.svg'
       url: https://www.diadata.org/
     - title: 'Flux'
       logo: '../images/svgs/flux-logo.svg'
       url: 'https://runonflux.com'
-    - title: 'Gate.io'
-      logo: '../images/svgs/gateio-logo.svg'
-      url: 'https://www.gate.io'
+    - title: 'Goldshell'
+      logo: '../images/goldshell-logo.png'
+      url: 'https://www.goldshell.com/'
     - title: 'IceRiver'
       logo: '../images/svgs/iceriver-logo.svg'
       url: https://iceriver.eu/
     - title: 'Ledger'
       logo: '../images/svgs/ledger-logo.svg'
       url: https://www.ledger.com/
-    - title: 'MEXC'
-      logo: '../images/svgs/mexc-logo.svg'
-      url: https://www.mexc.com/
+    - title: 'OneKey'
+      logo: '../images/svgs/onekey-logo.svg'
+      url: https://www.onekey.so/
+    - title: 'Onramper'
+      logo: '../images/svgs/onramper-logo.svg'
+      url: https://onramper.com/
     - title: 'Primevault'
       logo: '../images/svgs/primevault-logo.svg'
       url: https://www.primevault.com/

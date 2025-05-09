@@ -207,7 +207,7 @@ const HomepageUSPSection = () => {
             </TextElement>
             <CardFooterButtonContainer>
               <Button squared url="https://docs.alephium.org/misc/Content/#stateful-utxo">
-                Learn about statefull UTXOs
+                Learn about stateful UTXOs
               </Button>
             </CardFooterButtonContainer>
           </TextCardContent>
