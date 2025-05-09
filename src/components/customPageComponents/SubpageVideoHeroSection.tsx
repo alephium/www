@@ -133,11 +133,11 @@ const SubpageVideoHeroSection = ({ video, poster, children, ...props }: SubpageV
                   [springX, springY],
                   ([x, y]) =>
                     `linear-gradient(${45 + y * 30}deg, 
-                      transparent 0%,
-                      rgba(255, 255, 255, 0.1) ${x * 100}%,
+                      rgba(34, 34, 34, 0.525) 0%,
+                      rgba(97, 97, 97, 0.1) ${x * 100}%,
                       ${darkTheme.palette2} ${x * 100 + 10}%,
                       ${darkTheme.palette3} ${x * 100 + 20}%,
-                      rgba(255, 255, 255, 0.2) ${x * 100 + 30}%,
+                      rgba(77, 77, 77, 0.2) ${x * 100 + 30}%,
                       ${darkTheme.palette4} ${x * 100 + 40}%,
                       transparent 100%
                     )`
@@ -151,11 +151,11 @@ const SubpageVideoHeroSection = ({ video, poster, children, ...props }: SubpageV
                   ([x, y]) =>
                     `linear-gradient(${135 + y * 30}deg,
                       ${darkTheme.palette4} 0%,
-                      rgba(255, 255, 255, 0.15) ${x * 100 - 20}%,
+                      rgba(130, 130, 130, 0.15) ${x * 100 - 20}%,
                       ${darkTheme.palette1} ${x * 100}%,
                       ${darkTheme.palette2} ${x * 100 + 15}%,
-                      rgba(255, 255, 255, 0.1) ${x * 100 + 30}%,
-                      transparent 100%
+                      rgba(94, 94, 94, 0.1) ${x * 100 + 30}%,
+                      rgba(24, 24, 24, 0.204) 100%,
                     )`
                 ),
                 mixBlendMode: 'multiply',

@@ -42,9 +42,7 @@ const CustomPage = (props: PageProps) => {
           <SubpageVideoHeroSection poster={heroImage} video={heroVideo} minHeight="130px">
             <h1>Online communities</h1>
             <p>
-              <strong>
-                We’re proud to have a thriving community of builders, users, and friends. Join the movement.
-              </strong>
+              <strong>Join our bubbling community of community of builders, users, partners and friends.</strong>
             </p>
           </SubpageVideoHeroSection>
 

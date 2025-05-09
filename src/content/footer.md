@@ -16,8 +16,8 @@ columns:
         url: /contact
       - text: Privacy Policy
         url: /privacy-policy
-      - title: Roadmap
-        link: /roadmap
+      - text: Roadmap
+        url: /roadmap
       - text: Terms & Conditions
         url: /terms-and-conditions
 bottom:

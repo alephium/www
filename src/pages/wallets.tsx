@@ -195,6 +195,7 @@ const CustomPage = (props: PageProps) => {
                   <li>OneKey</li>
                   <li>SafePal</li>
                   <li>Tangem</li>
+                  <li>Goldshell</li>
                 </ul>
               </TextElement>
             </SideBySide>
@@ -202,8 +203,8 @@ const CustomPage = (props: PageProps) => {
 
           <SectionDivider />
 
-          <SubpageSection>
-            <TextElement isSmall>
+          <SubpageSection style={{ opacity: 0.75 }}>
+            <TextElement isSmall isCentered noTextCentering>
               <h3>Security Reminder</h3>
               <p>
                 <hr />

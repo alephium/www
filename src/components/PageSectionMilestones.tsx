@@ -3,6 +3,8 @@ import { useState } from 'react'
 import styled from 'styled-components'
 
 import Toggle from '../Toggle'
+import SubpageSection from './customPageComponents/SubpageSection'
+import TextElement from './customPageComponents/TextElement'
 import DualTimeline from './DualTimeline'
 
 export const milestonesQuery = graphql`
@@ -39,6 +41,12 @@ const PageSectionMilestones = () => {
 
   return (
     <SectionWrapper>
+      <SubpageSection isCentered>
+        <TextElement isCentered>
+          <h1>Roadmap & Milestones</h1>
+          <p>A journey of core platform and ecosystem development.</p>
+        </TextElement>
+      </SubpageSection>
       <ToggleSection>
         <ToggleLabel>Summarized</ToggleLabel>
         <Toggle toggled={showDetails} onToggle={handleShowDetailsToggle} />

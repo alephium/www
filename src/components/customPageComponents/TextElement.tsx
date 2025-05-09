@@ -108,6 +108,14 @@ const TextElement = styled.div<TextElementProps>`
         font-size: var(--fontSize-24);
         line-height: var(--lineHeight-28);
       `}
+
+    ${({ isCentered }) =>
+      isCentered &&
+      css`
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+      `}
   }
 
   > h4 {

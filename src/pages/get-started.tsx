@@ -104,8 +104,7 @@ const CustomPage = (props: PageProps) => {
           <SubpageImageHeroSection backgroundImage={treasureImage} minHeight="500px" split>
             <h2>Wallets</h2>
             <p>
-              <strong>Your gateway to the Alephium ecosystem.</strong> Store, send, receive, swap, borrow, lend, and
-              more!
+              Your gateway to Alephium: <strong>store, swap, lend, and more!</strong>
             </p>
             <Button big highlight url="/wallets">
               Download a wallet
@@ -157,8 +156,8 @@ const CustomPage = (props: PageProps) => {
                 <span>Build</span> on Alephium
               </h2>
               <p>
-                With robust smart contract security, high-performance sharding, and a resilient Proof-of-Work
-                foundation, <strong>Alephium gives you the tools to build better, safer, and faster.</strong>
+                Alephium&apos;s scalable Proof-of-Less-Work and secure Smart Contracts give you the tools to{' '}
+                <strong>build better, faster and safer.</strong>
               </p>
             </TextElement>
 

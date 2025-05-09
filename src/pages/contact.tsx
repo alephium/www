@@ -49,7 +49,7 @@ const CustomPage = (props: PageProps) => (
         <SubpageSection>
           <TextElement isCentered>
             <h3>Build with us</h3>
-            <p>Not sure where to start? Dive into documentation for more resources or apply for a grant.</p>
+            <p>Not sure where to start? Dive into our documentation or apply for a grant.</p>
             <Button url="https://docs.alephium.org">Documentation</Button>
           </TextElement>
         </SubpageSection>

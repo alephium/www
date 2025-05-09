@@ -40,21 +40,16 @@ const CustomPage = (props: PageProps) => {
         <>
           <SubpageVideoHeroSection video={heroVideo} poster={heroImage} minHeight="630px" showReflections>
             <TextElement>
-              <h1>
-                Alephium Roadmap
-                <br />& Milestones
-              </h1>
+              <h1>Our Journey to True Web3.</h1>
+              <p>
+                <strong>Marked by purposeful upgrades, each advancing scalability, usability, and security.</strong>
+              </p>
             </TextElement>
           </SubpageVideoHeroSection>
 
           <SubpageSection>
             <TextElement>
-              <h2>
-                Our journey to true Web3,
-                <br />
-                one upgrade at a time.
-                <hr />
-              </h2>
+              <h2>One upgrade at a time.</h2>
               <p>
                 From Leman to Rhone to Danube, <strong>this has always been the plan</strong>.
                 <strong> Now we're entering the chapter where it all comes together.</strong>
