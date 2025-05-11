@@ -101,11 +101,11 @@ const HomepageUSPSection = () => {
               <p>
                 Each chain on Alephium now produces a block every 8 seconds. With parallel processing across the
                 network, Alephium achieves 2 blocks per second on average,
-                <strong>matching the speed of leading PoS networks without sacrificing decentralization.</strong>
+                <strong> matching the speed of leading PoS networks without sacrificing decentralization.</strong>
               </p>
             </TextElement>
             <CardFooterButtonContainer>
-              <Button squared highlight url="https://x.com/alephium/status/1920780688313233634">
+              <Button squared url="https://x.com/alephium/status/1920780688313233634">
                 Discover the Danube upgrade
               </Button>
             </CardFooterButtonContainer>
