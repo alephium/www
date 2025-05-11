@@ -155,7 +155,7 @@ const ContentWrapper = styled.div<Pick<SubpageHeroSectionProps, 'alignContent' |
   @media ${deviceBreakPoints.mobile} {
     width: 100%;
     box-sizing: border-box;
-    padding: var(--spacing-6) var(--spacing-4);
+    padding: var(--spacing-6) 0;
   }
 `
 

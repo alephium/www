@@ -183,6 +183,7 @@ export default styled(SimpleLinkComponent)`
 
   &:hover {
     cursor: pointer;
+    opacity: 0.8;
   }
 
   ${({ highlight }) => highlight && highlightStyles}

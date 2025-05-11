@@ -192,10 +192,26 @@ const CustomPage = (props: PageProps) => {
                       Ledger
                     </SimpleLink>
                   </li>
-                  <li>OneKey</li>
-                  <li>SafePal</li>
-                  <li>Tangem</li>
-                  <li>Goldshell</li>
+                  <li>
+                    <SimpleLink highlight url="https://onekey.so">
+                      OneKey
+                    </SimpleLink>
+                  </li>
+                  <li>
+                    <SimpleLink highlight url="https://www.safepal.com">
+                      SafePal
+                    </SimpleLink>
+                  </li>
+                  <li>
+                    <SimpleLink highlight url="https://tangem.com">
+                      Tangem
+                    </SimpleLink>
+                  </li>
+                  <li>
+                    <SimpleLink highlight url="https://www.goldshell.com">
+                      Goldshell
+                    </SimpleLink>
+                  </li>
                 </ul>
               </TextElement>
             </SideBySide>

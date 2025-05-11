@@ -235,17 +235,20 @@ const SubsectionItemLogoContainer = styled.div`
   right: 0;
   left: 0;
   opacity: 0;
-  transition: all 0.2s ease-out;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(-5px);
   padding: var(--spacing-2);
   display: flex;
+  will-change: opacity, transform;
 `
 
 const SubsectionItemLogo = styled.img`
   flex: 1;
-  transition: all 0.2s ease-out;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   max-width: 100%;
-  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  will-change: transform;
 `
 
 const SubsectionItem = styled(motion.div)`
@@ -259,16 +262,23 @@ const SubsectionItem = styled(motion.div)`
   box-sizing: border-box;
   border-radius: 16px;
   font-size: 13px;
+  overflow: hidden;
+  will-change: transform;
 
   &:hover {
     ${SubsectionItemTitle}.with-logo {
       opacity: 0;
       transform: translateY(-5px);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     ${SubsectionItemLogoContainer} {
       opacity: 1;
       transform: translateY(0);
+    }
+
+    ${SubsectionItemLogo} {
+      transform: scale(1.05);
     }
   }
 `
@@ -302,13 +312,25 @@ const containerVariants = {
     opacity: 1,
     transition: {
       delay: 0.2,
-      staggerChildren: 0.1,
-      delayChildren: 0.2
+      staggerChildren: 0.08,
+      delayChildren: 0.2,
+      duration: 0.4,
+      ease: [0.4, 0, 0.2, 1]
     }
   }
 }
 
 const itemVariants = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1 }
+  hidden: {
+    opacity: 0,
+    y: 10
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.4,
+      ease: [0.4, 0, 0.2, 1]
+    }
+  }
 }

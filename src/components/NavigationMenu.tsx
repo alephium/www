@@ -266,11 +266,6 @@ const LogoTextStyled = styled(LogoText)`
 const LinkStyle = css`
   font-size: var(--fontSize-16);
   font-weight: var(--fontWeight-medium);
-  color: ${({ theme }) => theme.textPrimaryVariation};
-
-  &:hover {
-    color: ${({ theme }) => theme.textPrimary};
-  }
 `
 
 const NavLink = styled(SimpleLink)`

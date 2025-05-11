@@ -2,6 +2,8 @@ import { colord } from 'colord'
 import { ReactNode } from 'react'
 import styled, { css } from 'styled-components'
 
+import { deviceBreakPoints } from '../../styles/global-style'
+
 export interface TextElementProps {
   children?: ReactNode
   isSmall?: boolean
@@ -67,6 +69,10 @@ const TextElement = styled.div<TextElementProps>`
 
     font-size: var(--fontSize-80);
     font-weight: var(--fontWeight-semiBold);
+
+    @media ${deviceBreakPoints.mobile} {
+      font-size: var(--fontSize-64);
+    }
   }
 
   > h2 {
