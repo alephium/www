@@ -6,7 +6,7 @@ timelines:
         entries:
           - row: 1
             text: 'Danube Network Upgrade on Mainnet'
-            when: 'TBD'
+            when: 'Soon'
             content:
               - 'Pending mainnet deployment'
             isMajor: true
@@ -23,18 +23,16 @@ timelines:
               - 'Simplified contract creation and bitwise operations for I256'
               - 'Flexible new contract access'
             isMajor: true
+          - row: 3
+            text: 'Mobile Wallet V2 & Desktop Wallet V3'
+            when: '01.2025'
+            isMajor: false
       - year: 2024
         entries:
           - row: 1
-            text: 'Bridge to BSC'
+            text: 'Alephium Bridge to BSC on Mainnet'
             when: '11.2024'
           - row: 2
-            text: 'Alephium Bridge to BSC on Testnet'
-            when: '09.2024'
-          - row: 3
-            text: 'DIA cross-chain Oracle integration'
-            when: '08.2024'
-          - row: 4
             text: 'Rhone Network Upgrade on Mainnet'
             when: '12.06.2024'
             content:
@@ -43,9 +41,10 @@ timelines:
               - 'Sequential transactions'
               - 'On-chain Gasless transactions'
             isMajor: true
-          - row: 5
-            text: 'Ralph LSP Release'
+          - row: 3
+            text: 'Ralph LSP'
             when: '04.2024'
+            isMajor: true
       - year: 2023
         entries:
           - row: 1
@@ -75,50 +74,47 @@ timelines:
               - 'Improved difficulty adjustment algorithm (DAA)'
             isMajor: true
           - row: 7
-            text: 'Browser Extension Wallet Launch'
+            text: 'Browser Extension Wallet'
             when: '03.2023'
             isMajor: true
-          - row: 8
-            text: 'More dApp prototypes (DEX, NFT marketplace)'
-            when: 'H1.2023'
       - year: 2022
         entries:
           - row: 1
-            text: 'Alpha version of multi-guardians bridge'
+            text: 'Alpha Multi-guardians Bridge'
             when: '11.2022'
           - row: 2
-            text: 'Leman Network Upgrade deployed on the testnet'
+            text: 'Leman Network Upgrade on Testnet'
             when: '06.2022'
-            isMajor: true
           - row: 3
             text: 'SDK Beta SDK'
             when: '06.2022'
+            isMajor: true
           - row: 4
-            text: '1st dApp prototype'
+            text: '1st dApp Prototype'
             when: '01.2022'
       - year: 2021
         entries:
           - row: 1
-            text: 'Mainnet launch'
+            text: 'Mainnet Launch'
             when: '08.11.2021'
             isMajor: true
           - row: 2
-            text: 'Desktop wallet & explorer public release'
+            text: 'Desktop Wallet & Explorer'
             when: '09.2021'
             isMajor: true
           - row: 3
-            text: 'Smart contract support'
+            text: 'Smart Contract Support'
             when: 'Q1.2021'
       - year: 2020
         entries:
           - row: 1
-            text: 'Testnet Launch'
+            text: 'Alephium Testnet Launch'
             when: '12.2020'
             isMajor: true
       - year: 2019
         entries:
           - row: 1
-            text: 'Whitepapers Release'
+            text: 'Alephium Whitepapers Release'
             when: '02.2019'
             isMajor: true
   - title: Ecosystem
@@ -126,87 +122,94 @@ timelines:
       - year: 2025
         entries:
           - row: 1
-            text: "Primevault's institutional custody & trading infrastructure for digital assets"
+            text: "DIA Randomness Oracle"
             when: '03.2025'
+            isMajor: true
           - row: 2
-            text: 'Tangem wallet integration'
+            text: 'Tangem Hardware Wallet Support'
             when: '03.2025'
           - row: 3
             text: 'Alchemy Pay, Gate Connect and TransFi Fiat Ramp integrations'
             when: '02.2025'
+          - row: 4
+            text: 'CryptoXR Hackathon'
+            when: '02.2025'
+            isMajor: true
+          - row: 5
+            text: "300'000+ Active Addresses (+40%) & 50 PH/s Hashrate (+160%)"
+            content:
+              - "70+ Live Projects"
+              - "130K+ Smart Contracts"
+              - "1K+ Tokens"
+              - "32,000+ NFTs & 400 collections"
+            when: "01.2025"
+            isMajor: true
       - year: 2024
         entries:
           - row: 1
-            text: 'Safepal wallet integration'
+            text: 'Safepal Hardware Wallet Support'
             when: '12.2024'
           - row: 2
-            text: 'Alephium app on Ledger & OneKey Hardware Wallets'
+            text: 'One Key Hardware Wallet Support'
+            when: '12.2024'
+          - row: 3
+            text: 'Ledger - 1st Hardware Wallet Support'
             when: '10.2024'
             isMajor: true
-          - row: 3
-            text: 'Banxa Fiat Ramp integration'
-            when: '09.2024'
           - row: 4
-            text: "215'000+ active addresses (+200% YTD) and 19 PH/s of global hashrate (+13'500% YTD)"
-            content:
-              - "40+ projects on Alephium, Alephium nodes in 23+ countries"
-              - "74K+ smart contract contracts"
-              - "750 tokens"
-              - "250 NFT collections"
-              - "21k+ NFT deployed on Alephium"
-            when: "09.2024"
+            text: 'Banxa - 1st Fiat Ramp integration'
+            when: '09.2024'
             isMajor: true
           - row: 5
-            text: 'First Oracles Integration - DIA'
-            when: '07.2024'
+            text: "215'000+ Active Addresses (+200% YTD) and 19 PH/s Hashrate (+13'500% YTD)"
+            content:
+              - "40+ Live Projects"
+              - "74K+ Smart Contracts"
+              - "750 tokens"
+              - "21k+ NFTs & 250 collections"
+            when: "09.2024"
+            isMajor: true
           - row: 6
+            text: 'DIA Price Oracles'
+            when: '08.2024'
+            isMajor: true
+          - row: 7
             text: 'Bitmain & IceRiver ASIC Miners'
             when: '07.2024'
             isMajor: true
-          - row: 7
+          - row: 8
             text: 'Athens Builders Meetup #1'
             when: '06.2024'
             isMajor: true
-          - row: 8
+          - row: 9
             text: 'Ambassador Program Launch'
             when: '05.2024'
-          - row: 9
-            text: '$60M TVL on Alephium'
-            when: '04.2024'
           - row: 10
-            text: 'First ASIC Miner - Goldshell'
+            text: 'FGoldshell - 1st ASIC Miner'
             when: '04.2024'
             isMajor: true
           - row: 11
-            text: 'First Hackathon - Buidl on Alephium #1 - Pioneers 🔥'
+            text: 'F1st Hackathon - Buidl on Alephium #1 - Pioneers'
             when: '02.2024'
             isMajor: true
-          - row: 12
-            text: '$21M TVL on Alephium'
-            when: '01.2024'
       - year: 2023
         entries:
           - row: 1
-            text: '$9M TVL on Alephium'
-            when: '12.2023'
-          - row: 2
-            text: 'Dec-23 MEXC/Uniswap listings'
-            when: '12.2023'
-          - row: 3
-            text: "Over 77'000 active addresses and 50'000+ GPUs on Alephium"
+            text: "77'000+ active addresses and 50'000+ GPUs"
             when: "11.2023"
-          - row: 4
+            isMajor: true
+          - row: 2
             text: 'Ethereum Bridge - Stablecoins on Alephium & Wrapped ALPH on Ethereum'
             when: '11.2023'
-          - row: 5
-            text: 'First DAO - Blockflow Alliance DAO'
+          - row: 3
+            text: 'First Community DAO - Blockflow Alliance'
             when: '10.2023'
             isMajor: true
-          - row: 6
-            text: 'First dApps on Alephium (Native DEX, NFT marketplace and more)'
+          - row: 4
+            text: 'First dApps (Native DEX, NFT marketplace and more)'
             when: 'Q3.2023'
-          - row: 7
-            text: 'NYM-Connect app integration'
+          - row: 5
+            text: 'NYM-Connect app Integration'
             when: '07.2023'
       - year: 2022
         entries:
@@ -217,30 +220,14 @@ timelines:
             text: 'Dappnode Integration'
             when: '10.2022'
           - row: 3
-            text: 'Initiation of marketing initiatives'
-            content:
-              - 'Sponsoring of ErgoHack'
-              - 'AMAs'
-              - 'Community competitions'
-              - 'Campaigns'
-              - 'Tech Talk Series, and more...'
-            when: 'Q3.2022'
-          - row: 4
-            text: 'First exchange listing: Gate.io'
+            text: 'First CEX listing'
             when: '12.01.2022'
             isMajor: true
       - year: 2021
         entries:
           - row: 1
             text: 'Mining ecosystem development'
-            description: 'Community pools, miners development, reference mining pool, and pool integration.'
             when: 'Q4.2021'
-          - row: 2
-            text: 'Joined the UTXO Alliance & Bitcoin Association Switzerland'
-            when: '11.2021'
-          - row: 3
-            text: '3rd party cloud mining service at Mainnet Launch'
-            when: '08.11.2021'
       - year: 2020
       - year: 2019
 ---
