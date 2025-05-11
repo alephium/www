@@ -156,7 +156,9 @@ const CustomPage = (props: PageProps) => {
                     <SimpleLink url="/roadmap">Explore the roadmap</SimpleLink>
                   </li>
                   <li>
-                    <SimpleLink url="/grants">Learn about grants</SimpleLink>
+                    <SimpleLink url="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md">
+                      Learn about grants
+                    </SimpleLink>
                   </li>
                   <li>
                     <SimpleLink url="https://www.youtube.com/playlist?list=PL8q8n0BHJS1PWP7t8ABECYdOaPM-hJmjx">

@@ -29,7 +29,7 @@ menuItems:
       - title: Dapps
         link: https://alph.land
       - title: Grants
-        link: /grants
+        link: https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md
       - title: Network
       - title: Node operations
         link: https://docs.alephium.org/full-node
