@@ -17,6 +17,7 @@ interface SubpageSectionProps extends HTMLAttributes<HTMLDivElement> {
   className?: string
   edgeGradient?: boolean
   gradientPosition?: GradientPosition
+  noTopPadding?: boolean
   noBottomPadding?: boolean
 }
 
@@ -32,12 +33,12 @@ export default SubpageSection
 const SubpageSectionStyled = styled(PageSectionContainer)<
   Pick<
     SubpageSectionProps,
-    'bgColor' | 'isCentered' | 'border' | 'edgeGradient' | 'gradientPosition' | 'noBottomPadding'
+    'bgColor' | 'isCentered' | 'border' | 'edgeGradient' | 'gradientPosition' | 'noBottomPadding' | 'noTopPadding'
   >
 >`
   position: relative;
   justify-content: ${({ isCentered }) => (isCentered ? 'center' : 'flex-start')};
-  padding-top: var(--spacing-12);
+  padding-top: ${({ noTopPadding }) => (noTopPadding ? '0' : 'var(--spacing-12)')};
   padding-bottom: ${({ noBottomPadding }) => (noBottomPadding ? '0' : 'var(--spacing-12)')};
   background-color: ${({ theme, bgColor }) => (bgColor ? theme[`background${bgColor}`] : 'transparent')};
   border-radius: var(--radius-big);

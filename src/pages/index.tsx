@@ -9,9 +9,11 @@ import HomepageCommunitySection from '../components/pages/homepage/HomepageCommu
 import HomepageEcosystemSection from '../components/pages/homepage/HomepageEcosystemSection'
 import HomepageHeroSection from '../components/pages/homepage/HomepageHeroSection'
 import HomepageIntroSection from '../components/pages/homepage/HomepageIntroSection'
+import HomepageNewsSection from '../components/pages/homepage/HomepageNewsSection'
 import HomepageNumbersSection from '../components/pages/homepage/HomepageNumbersSection'
 import HomepageUSPSection from '../components/pages/homepage/HomepageUSPSection'
 import SectionDivider from '../components/SectionDivider'
+
 export const pageQuery = graphql`
   query IndexPage {
     allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/homepage.md/" } }) {
@@ -45,6 +47,8 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
       content={
         <>
           <HomepageHeroSection />
+
+          <HomepageNewsSection />
 
           <HomepageIntroSection />
 

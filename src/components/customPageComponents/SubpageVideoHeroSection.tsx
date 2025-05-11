@@ -204,7 +204,7 @@ const GradientOverlay = styled(motion.div)`
   inset: 0;
   pointer-events: none;
   z-index: 3;
-  opacity: 0.4;
+  opacity: 0.2;
   mix-blend-mode: overlay;
   transition: opacity 0.3s ease;
 `
