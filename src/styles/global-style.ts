@@ -30,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
       font-size: 13px;
     }
 
-    --page-width: min(70vw, 1200px);
+    --page-width: min(75vw, 1400px);
     --page-width-shrinked: 68rem;
 
     --width-16: 1rem;

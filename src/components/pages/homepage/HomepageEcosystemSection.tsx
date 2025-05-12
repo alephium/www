@@ -5,6 +5,7 @@ import { deviceBreakPoints } from '../../../styles/global-style'
 import Button from '../../Button'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextElement from '../../customPageComponents/TextElement'
+import SectionDivider from '../../SectionDivider'
 
 interface LogoPosition {
   x: number
@@ -295,6 +296,7 @@ const HomepageEcosystemSection = () => {
             <strong>Alephium is home to hundreds of innovative dApps.</strong>
           </p>
         </TextElement>
+        <SectionDivider />
         <LogosContainer ref={containerRef} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
           {isInitialized &&
             logoSlots.map((slot, index) => {

@@ -116,7 +116,7 @@ const HomepageIntroSection = () => {
   )
 
   return (
-    <SubpageSectionStyled id="intro" wide>
+    <SubpageSectionStyled id="intro">
       {/* <TextElement isCentered>
         <h2>
           A Network Built

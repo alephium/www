@@ -11,7 +11,7 @@ const HomepageNewsSection = () => {
   const theme = useTheme()
 
   return (
-    <PageSectionContainer wide>
+    <PageSectionContainer>
       <NewsCard>
         <NewsCardContent>
           <Badge color="palette4" style={{ marginBottom: 10 }}>

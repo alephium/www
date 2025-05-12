@@ -2,7 +2,6 @@ import { graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../../../styles/global-style'
-import ArrowedLink from '../../ArrowedLink'
 import Button from '../../Button'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextElement from '../../customPageComponents/TextElement'
@@ -28,7 +27,7 @@ const HomepageHeroSection = () => {
   const content = allMarkdownRemark.nodes[0].frontmatter
 
   return (
-    <SubpageSectionStyled wide>
+    <SubpageSectionStyled>
       <EddyBackground />
       <TextElementStyled isCentered>
         <h1>
@@ -84,13 +83,5 @@ const Buttons = styled.div`
 
   @media ${deviceBreakPoints.smallMobile} {
     margin-top: var(--spacing-2);
-  }
-`
-
-const ArrowedLinkStyled = styled(ArrowedLink)`
-  color: black;
-
-  * {
-    fill: black;
   }
 `

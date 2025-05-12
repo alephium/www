@@ -67,7 +67,7 @@ const TextElement = styled.div<TextElementProps>`
     font-family: 'Geist';
     line-height: 1;
 
-    font-size: var(--fontSize-70);
+    font-size: var(--fontSize-72);
     font-weight: var(--fontWeight-semiBold);
 
     @media ${deviceBreakPoints.mobile} {
