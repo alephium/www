@@ -1,32 +1,20 @@
-import { graphql, PageProps, useStaticQuery } from 'gatsby'
+import { PageProps } from 'gatsby'
 import styled from 'styled-components'
 
 import CommunityMosaic from '../components/CommunityMosaic'
+import CardsRow from '../components/customPageComponents/CardsRow'
 import ClickableBox from '../components/customPageComponents/ClickableBox'
 import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
-import SubpageVideoHeroSection from '../components/customPageComponents/SubpageVideoHeroSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import SectionDivider from '../components/SectionDivider'
 import SocialMediaIcon from '../components/SocialMediaIcon'
 import useSocials from '../hooks/useSocials'
 import { getIconByName } from '../images/utils'
 
-const communitiesQuery = graphql`
-  query CommunitiesPage {
-    heroImage: file(relativePath: { eq: "geneva.png" }) {
-      ...HeroImage
-    }
-    heroVideo: file(relativePath: { eq: "geneva-scrub.mp4" }) {
-      publicURL
-    }
-  }
-`
-
 const CustomPage = (props: PageProps) => {
-  const { heroImage, heroVideo } = useStaticQuery<Queries.CommunitiesPageQuery>(communitiesQuery)
   const socials = useSocials()
 
   return (
@@ -39,12 +27,20 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageVideoHeroSection poster={heroImage} video={heroVideo} minHeight="130px">
-            <h1>Online communities</h1>
-            <p>
-              <strong>Join our bubbling community of community of builders, users, partners and friends.</strong>
-            </p>
-          </SubpageVideoHeroSection>
+          <SectionDivider />
+
+          <SubpageSection bgColor="2" wide border edgeGradient gradientPosition="top">
+            <TextElement isCentered>
+              <h2>
+                Online
+                <br />
+                Communities
+              </h2>
+              <p>
+                Join our bubbling community of community of <strong>builders, users, partners and friends.</strong>
+              </p>
+            </TextElement>
+          </SubpageSection>
 
           <SubpageSection>
             <TextElement>
@@ -53,7 +49,7 @@ const CustomPage = (props: PageProps) => {
             </TextElement>
 
             <SubheaderContent>
-              <Grid columns={4} gap="small">
+              <CardsRow>
                 {socials.map((social) => (
                   <ClickableBox key={social.node.name} url={social.node.url ?? ''}>
                     <SocialMediaIcon
@@ -66,8 +62,7 @@ const CustomPage = (props: PageProps) => {
                     </TextElement>
                   </ClickableBox>
                 ))}
-              </Grid>
-              <Grid columns={3} gap="small"></Grid>
+              </CardsRow>
             </SubheaderContent>
           </SubpageSection>
 
