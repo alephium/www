@@ -6,3 +6,6 @@ Disallow: /banxa-callback
 
 User-agent: *
 Disallow: /onramp-callback
+
+User-agent: *
+Disallow: /grant-application-callback
