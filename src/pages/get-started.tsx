@@ -166,8 +166,9 @@ const CustomPage = (props: PageProps) => {
                     <TextElement>
                       <h3>Decentralised Exchanges</h3>
                       <p>
-                        If you want more control, you can get ALPH using smart contracts. With a DEX, you can trade
-                        digital assets <strong>without handing over control of your funds</strong> to a company.
+                        If you want more control, you can get ALPH using smart contracts. With Decentralized Exchanges
+                        (DEX) you can trade digital assets <strong>without handing over control of your funds</strong>{' '}
+                        to a company.
                       </p>
                     </TextElement>
                     <CardFooterButtonContainer>
