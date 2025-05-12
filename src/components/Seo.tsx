@@ -5,10 +5,9 @@ export interface SeoProps {
   title?: string
   description?: string
   lang?: string
-  image?: any
 }
 
-const Seo = ({ title, description, lang = 'en', image: metaImage }: SeoProps) => {
+const Seo = ({ title, description, lang = 'en' }: SeoProps) => {
   const { site, image } = useStaticQuery(
     graphql`
       query {
@@ -22,8 +21,10 @@ const Seo = ({ title, description, lang = 'en', image: metaImage }: SeoProps) =>
             }
           }
         }
-        image: file(relativePath: { eq: "social-media-banner.png" }) {
-          publicURL
+        image: file(relativePath: { eq: "ogimage.png" }) {
+          childImageSharp {
+            gatsbyImageData(width: 1200, layout: FIXED)
+          }
         }
       }
     `
@@ -32,7 +33,7 @@ const Seo = ({ title, description, lang = 'en', image: metaImage }: SeoProps) =>
   const isTestSite = typeof window !== 'undefined' && window.location.hostname === 'www2.alephium.org'
 
   const metaDescription = description || site.siteMetadata.description
-  const metaImageAbsoluteUrl = `${site.siteMetadata.siteUrl}${image.publicURL}`
+  const metaImageAbsoluteUrl = `${site.siteMetadata.siteUrl}${image.childImageSharp.gatsbyImageData.images.fallback.src}`
   const titleContent = title || site.siteMetadata.title
 
   const metaBase = isTestSite ? [{ property: 'robots', content: 'noindex, nofollow' }] : []
@@ -75,7 +76,7 @@ const Seo = ({ title, description, lang = 'en', image: metaImage }: SeoProps) =>
         },
         {
           name: `twitter:card`,
-          content: `summary`
+          content: `summary_large_image`
         },
         {
           name: `twitter:creator`,
