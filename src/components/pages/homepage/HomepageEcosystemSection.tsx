@@ -233,7 +233,7 @@ const HomepageEcosystemSection = () => {
                       cursor: 'pointer'
                     }}
                   >
-                    <img src={dapp.media.logoUrl} alt={dapp.name} loading="eager" />
+                    <img src={dapp.media.logoUrl} alt={dapp.name} loading="lazy" />
                     {hoveredAppName === dapp.name && <AppTooltip>{dapp.name}</AppTooltip>}
                   </a>
                 </LogoWrapper>
