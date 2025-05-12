@@ -18,7 +18,7 @@ const HomepageNewsSection = () => {
             BREAKING NEWS 🔥
           </Badge>
           <TextElement isBodySmall noHeadingsMargins>
-            <h4 style={{ color: theme.palette4 }}>Danube Upgrade</h4>
+            <h2 style={{ color: theme.palette4 }}>Danube Upgrade</h2>
             <p>
               A major milestone towards true Web3. <strong>Going live soon.</strong>
             </p>
@@ -56,6 +56,13 @@ const NewsCard = styled.div<{ border?: boolean }>`
 
   @media ${deviceBreakPoints.mobile} {
     flex-direction: column;
+  }
+
+  h2 {
+    font-size: var(--fontSize-28);
+    line-height: var(--lineHeight-36);
+    font-weight: var(--fontWeight-medium);
+    margin-bottom: var(--spacing-2);
   }
 `
 
