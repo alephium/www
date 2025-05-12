@@ -74,7 +74,7 @@ const exchangesQuery = graphql`
 `
 
 const CustomPage = (props: PageProps) => {
-  const { treasureImage, mineImage, ecosystemImage } = useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
+  const { treasureImage, ecosystemImage } = useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
 
   return (
     <Page
@@ -321,24 +321,6 @@ const CustomPage = (props: PageProps) => {
 
           <SectionDivider />
 
-          <SubpageImageHeroSection backgroundImage={mineImage} minHeight="800px">
-            <h2>
-              Mine ALPH.
-              <small>
-                <br />
-                Secure the Network.
-                <br />
-                Earn Rewards.
-              </small>
-            </h2>
-            <p>
-              ALPH mining is <strong>efficient, accessible, and built for long-term sustainability.</strong>
-            </p>
-            <Button big highlight url="https://docs.alephium.org/mining">
-              Start mining
-            </Button>
-          </SubpageImageHeroSection>
-
           <SubpageSection>
             <TextElement isCentered>
               <h2>Not sure what to do first?</h2>
@@ -405,7 +387,8 @@ const EarnALPHSection = () => {
               <TextCardContent>
                 <h3 style={{ color: theme.palette4 }}>Mine</h3>
                 <p>
-                  <strong>Start mining</strong> Alephium and earn rewards.
+                  Start mining and earn rewards securing the network. ALPH mining is efficient, accessible, and built
+                  for long-term sustainability.
                 </p>
               </TextCardContent>
             </TextCard>
