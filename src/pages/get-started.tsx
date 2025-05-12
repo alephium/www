@@ -75,7 +75,6 @@ const exchangesQuery = graphql`
 
 const CustomPage = (props: PageProps) => {
   const { treasureImage, mineImage, ecosystemImage } = useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
-  const theme = useTheme()
 
   return (
     <Page
@@ -267,6 +266,24 @@ const CustomPage = (props: PageProps) => {
 
           <SectionDivider />
 
+          <SubpageImageHeroSection
+            backgroundImage={ecosystemImage}
+            alignContent="center"
+            bottomMargin
+            minHeight="500px"
+            split
+          >
+            <TextElement isCentered>
+              <h2>Explore the ecosystem</h2>
+              <p>
+                <strong>All the dApps, tools, integrations, partners and more, in one place.</strong>
+              </p>
+              <Button big highlight url="https://alph.land">
+                See all apps
+              </Button>
+            </TextElement>
+          </SubpageImageHeroSection>
+
           <SubpageSection wide bgColor="2" isCentered edgeGradient>
             <TextElement isCentered>
               <h2>
@@ -312,24 +329,6 @@ const CustomPage = (props: PageProps) => {
           </SubpageSection>
 
           <SectionDivider />
-
-          <SubpageImageHeroSection
-            backgroundImage={ecosystemImage}
-            alignContent="center"
-            bottomMargin
-            minHeight="500px"
-            split
-          >
-            <TextElement isCentered>
-              <h2>Explore the ecosystem</h2>
-              <p>
-                <strong>All the dApps, tools, integrations, partners and more, in one place.</strong>
-              </p>
-              <Button big highlight url="https://alph.land">
-                See all apps
-              </Button>
-            </TextElement>
-          </SubpageImageHeroSection>
 
           <SubpageImageHeroSection backgroundImage={mineImage} minHeight="800px">
             <h2>
