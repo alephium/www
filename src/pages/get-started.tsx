@@ -131,8 +131,6 @@ const CustomPage = (props: PageProps) => {
                   <TextCardContent>
                     <TextElement>
                       <h3>Alephium wallets</h3>
-                    </TextElement>
-                    <TextElement noHeadingsMargins>
                       <p>
                         You can get ALPH directly from the Alephium mobile and desktop wallets with a{' '}
                         <strong>debit/credit card, bank transfer or even Apple Pay.</strong> <br />
@@ -150,8 +148,6 @@ const CustomPage = (props: PageProps) => {
                   <TextCardContent>
                     <TextElement>
                       <h3>Centralised Exchanges</h3>
-                    </TextElement>
-                    <TextElement noHeadingsMargins>
                       <p>
                         Centralised Exchanges (CEX) are platforms where ALPH is available using traditional currencies.{' '}
                         <strong>They maintain custody over the ALPH</strong> you get until you transfer it to a wallet
@@ -169,8 +165,6 @@ const CustomPage = (props: PageProps) => {
                   <TextCardContent>
                     <TextElement>
                       <h3>Decentralised Exchanges</h3>
-                    </TextElement>
-                    <TextElement noHeadingsMargins>
                       <p>
                         If you want more control, you can get ALPH using smart contracts. With a DEX, you can trade
                         digital assets <strong>without handing over control of your funds</strong> to a company.
@@ -187,8 +181,6 @@ const CustomPage = (props: PageProps) => {
                   <TextCardContent>
                     <TextElement>
                       <h3>Bridged ALPH</h3>
-                    </TextElement>
-                    <TextElement>
                       <p>
                         You can also get ALPH on <strong>other networks like Ethereum and BSC</strong>. Just use the
                         Alephium Token Bridge to move it to native ALPH on the Alephium network.
@@ -205,8 +197,6 @@ const CustomPage = (props: PageProps) => {
                   <TextCardContent>
                     <TextElement>
                       <h3>From your peers</h3>
-                    </TextElement>
-                    <TextElement noHeadingsMargins>
                       <p>
                         Once you have an Alephium wallet, you just need to share your address to start sending and
                         receiving ALPH and other tokens directly with others.
