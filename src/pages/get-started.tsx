@@ -4,7 +4,7 @@ import { useTheme } from 'styled-components'
 import Button from '../components/Button'
 import CardFooterButtonContainer from '../components/common/CardFooterButtonContainer'
 import CardsHorizontalScroller from '../components/common/CardsHorizontalScroller'
-import CardsRow from '../components/customPageComponents/CardsRow'
+import CardsRow, { CardsRowSegment } from '../components/customPageComponents/CardsRow'
 import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
@@ -376,33 +376,39 @@ const EarnALPHSection = () => {
       </TextElement>
       <SubheaderContent>
         <CardsRow>
-          <TextCard border url="https://alph.land" variants={cardVariants}>
-            <TextCardContent>
-              <h3 style={{ color: theme.palette1 }}>Apps</h3>
-              <p>
-                Earn rewards by participating in select dApps on Alephium: provide liquidity, lend and more to start
-                generating yield.
-              </p>
-            </TextCardContent>
-          </TextCard>
-          <TextCard
-            border
-            url="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md"
-            variants={cardVariants}
-          >
-            <TextCardContent>
-              <h3 style={{ color: theme.palette2 }}>Grants & Bounties</h3>
-              <p>Apply for a grant to develop your project on Alephium.</p>
-            </TextCardContent>
-          </TextCard>
-          <TextCard border url="https://github.com/alephium/community/blob/master/BugBounty.md" variants={cardVariants}>
-            <TextCardContent>
-              <h3 style={{ color: theme.palette3 }}>Bugs</h3>
-              <p>
-                Help secure the network, earn rewards for responsibly reporting vulnerabilities based on their impact.
-              </p>
-            </TextCardContent>
-          </TextCard>
+          <CardsRowSegment minWidth={200}>
+            <TextCard border url="https://alph.land" variants={cardVariants}>
+              <TextCardContent>
+                <h3 style={{ color: theme.palette1 }}>Apps</h3>
+                <p>
+                  Earn rewards by participating in select dApps on Alephium: provide liquidity, lend and more to start
+                  generating yield.
+                </p>
+              </TextCardContent>
+            </TextCard>
+            <TextCard
+              border
+              url="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md"
+              variants={cardVariants}
+            >
+              <TextCardContent>
+                <h3 style={{ color: theme.palette2 }}>Grants & Bounties</h3>
+                <p>Apply for a grant to develop your project on Alephium.</p>
+              </TextCardContent>
+            </TextCard>
+            <TextCard
+              border
+              url="https://github.com/alephium/community/blob/master/BugBounty.md"
+              variants={cardVariants}
+            >
+              <TextCardContent>
+                <h3 style={{ color: theme.palette3 }}>Bugs</h3>
+                <p>
+                  Help secure the network, earn rewards for responsibly reporting vulnerabilities based on their impact.
+                </p>
+              </TextCardContent>
+            </TextCard>
+          </CardsRowSegment>
         </CardsRow>
       </SubheaderContent>
     </SubpageSection>

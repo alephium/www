@@ -2,7 +2,7 @@ import { PageProps } from 'gatsby'
 import styled from 'styled-components'
 
 import CommunityMosaic from '../components/CommunityMosaic'
-import CardsRow from '../components/customPageComponents/CardsRow'
+import CardsRow, { CardsRowSegment } from '../components/customPageComponents/CardsRow'
 import ClickableBox from '../components/customPageComponents/ClickableBox'
 import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
@@ -50,18 +50,34 @@ const CustomPage = (props: PageProps) => {
 
             <SubheaderContent>
               <CardsRow>
-                {socials.map((social) => (
-                  <ClickableBox key={social.node.name} url={social.node.url ?? ''}>
-                    <SocialMediaIcon
-                      name={social.node.name ?? ''}
-                      url={social.node.url ?? ''}
-                      ImageComponent={getIconByName(social.node.name ?? '')}
-                    />
-                    <TextElement isSmall noMargin>
-                      <h4>{social.node.name}</h4>
-                    </TextElement>
-                  </ClickableBox>
-                ))}
+                <CardsRowSegment minWidth={180}>
+                  {socials.slice(0, 4).map((social) => (
+                    <ClickableBox key={social.node.name} url={social.node.url ?? ''}>
+                      <SocialMediaIcon
+                        name={social.node.name ?? ''}
+                        url={social.node.url ?? ''}
+                        ImageComponent={getIconByName(social.node.name ?? '')}
+                      />
+                      <TextElement isSmall noMargin>
+                        <h4>{social.node.name}</h4>
+                      </TextElement>
+                    </ClickableBox>
+                  ))}
+                </CardsRowSegment>
+                <CardsRowSegment minWidth={180}>
+                  {socials.slice(4, 8).map((social) => (
+                    <ClickableBox key={social.node.name} url={social.node.url ?? ''}>
+                      <SocialMediaIcon
+                        name={social.node.name ?? ''}
+                        url={social.node.url ?? ''}
+                        ImageComponent={getIconByName(social.node.name ?? '')}
+                      />
+                      <TextElement isSmall noMargin>
+                        <h4>{social.node.name}</h4>
+                      </TextElement>
+                    </ClickableBox>
+                  ))}
+                </CardsRowSegment>
               </CardsRow>
             </SubheaderContent>
           </SubpageSection>

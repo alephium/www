@@ -3,7 +3,7 @@ import { IGatsbyImageData } from 'gatsby-plugin-image'
 import { ReactNode, useMemo } from 'react'
 import styled, { useTheme } from 'styled-components'
 
-import CardsRow from '../../customPageComponents/CardsRow'
+import CardsRow, { CardsRowSegment } from '../../customPageComponents/CardsRow'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextCard from '../../customPageComponents/TextCard'
 import TextCardContent from '../../customPageComponents/TextCardContent'
@@ -140,14 +140,26 @@ const HomepageIntroSection = () => {
         </p>
       </TextElement> */}
       <CardsRow>
-        {hardcodedCards.map((card) => (
-          <TextCard border url={card.link.url} variants={cardVariants} key={card.title}>
-            <TextCardContent>
-              <h3 style={{ color: card.color }}>{card.title}</h3>
-              <p>{card.description}</p>
-            </TextCardContent>
-          </TextCard>
-        ))}
+        <CardsRowSegment>
+          {hardcodedCards.slice(0, 2).map((card) => (
+            <TextCard border url={card.link.url} variants={cardVariants} key={card.title}>
+              <TextCardContent>
+                <h3 style={{ color: card.color }}>{card.title}</h3>
+                <p>{card.description}</p>
+              </TextCardContent>
+            </TextCard>
+          ))}
+        </CardsRowSegment>
+        <CardsRowSegment>
+          {hardcodedCards.slice(2, 4).map((card) => (
+            <TextCard border url={card.link.url} variants={cardVariants} key={card.title}>
+              <TextCardContent>
+                <h3 style={{ color: card.color }}>{card.title}</h3>
+                <p>{card.description}</p>
+              </TextCardContent>
+            </TextCard>
+          ))}
+        </CardsRowSegment>
       </CardsRow>
     </SubpageSectionStyled>
   )
