@@ -8,13 +8,16 @@ import styled from 'styled-components'
 
 import Badge from '../components/Badge'
 import Button from '../components/Button'
+import ClickableBox from '../components/customPageComponents/ClickableBox'
+import Grid from '../components/customPageComponents/Grid'
+import ImageIcon from '../components/customPageComponents/ImageIcon'
 import Page from '../components/customPageComponents/Page'
 import SideBySide from '../components/customPageComponents/SideBySide'
+import SubheaderContent from '../components/customPageComponents/SubheaderContent'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import SectionDivider from '../components/SectionDivider'
-import SimpleLink from '../components/SimpleLink'
 import useWallets from '../hooks/useWallets'
 
 const walletsQuery = graphql`
@@ -65,12 +68,35 @@ const walletsQuery = graphql`
         }
       }
     }
+    ledgerLogo: file(relativePath: { eq: "logos/ledger.svg" }) {
+      publicURL
+    }
+    onekeyLogo: file(relativePath: { eq: "logos/onekey.svg" }) {
+      publicURL
+    }
+    safepalLogo: file(relativePath: { eq: "logos/safepal.svg" }) {
+      publicURL
+    }
+    tangemLogo: file(relativePath: { eq: "logos/tangem.png" }) {
+      publicURL
+    }
+    goldshellLogo: file(relativePath: { eq: "logos/goldshell.png" }) {
+      publicURL
+    }
   }
 `
 
 const CustomPage = (props: PageProps) => {
-  const { desktopScreenshots, extensionScreenshots, mobileScreenshots } =
-    useStaticQuery<Queries.WalletsPageQuery>(walletsQuery)
+  const {
+    desktopScreenshots,
+    extensionScreenshots,
+    mobileScreenshots,
+    ledgerLogo,
+    onekeyLogo,
+    safepalLogo,
+    tangemLogo,
+    goldshellLogo
+  } = useStaticQuery<Queries.WalletsPageQuery>(walletsQuery)
   const wallets = useWallets()
 
   return (
@@ -181,45 +207,88 @@ const CustomPage = (props: PageProps) => {
                 images={extensionScreenshots.nodes.map((node) => node.childImageSharp?.gatsbyImageData)}
               />
             </SideBySide>
-            <SectionDivider />
+          </SubpageSection>
 
-            <SideBySide reverseOnMobile>
-              <TextElement>
-                <h3>Hardware Wallet Support</h3>
+          <SectionDivider />
+
+          <SubpageSection wide>
+            <SubheaderContent>
+              <TextElement isCentered>
+                <h2>Hardware Wallet Support</h2>
                 <p>
                   For enhanced security, Alephium supports hardware wallets, allowing you to store your private keys
-                  offline and protect your assets from potential online threats..
+                  offline and protect your assets from potential online threats.
                 </p>
-                <p>Supported Devices:</p>
-                <ul>
-                  <li>
-                    <SimpleLink highlight url="https://support.ledger.com/article/Alephium-ALPH">
-                      Ledger
-                    </SimpleLink>
-                  </li>
-                  <li>
-                    <SimpleLink highlight url="https://onekey.so">
-                      OneKey
-                    </SimpleLink>
-                  </li>
-                  <li>
-                    <SimpleLink highlight url="https://www.safepal.com">
-                      SafePal
-                    </SimpleLink>
-                  </li>
-                  <li>
-                    <SimpleLink highlight url="https://tangem.com">
-                      Tangem
-                    </SimpleLink>
-                  </li>
-                  <li>
-                    <SimpleLink highlight url="https://www.goldshell.com">
-                      Goldshell
-                    </SimpleLink>
-                  </li>
-                </ul>
               </TextElement>
-            </SideBySide>
+
+              <Grid columns={5} gap="small">
+                <ClickableBox url="https://support.ledger.com/article/Alephium-ALPH" orientation="vertical">
+                  <ImageIcon
+                    src={ledgerLogo?.publicURL ?? ''}
+                    alt="Ledger logo"
+                    rounded
+                    size={50}
+                    padding={10}
+                    noBottomMargin
+                  />
+                  <TextElement isSmall noMargin>
+                    <p>Ledger</p>
+                  </TextElement>
+                </ClickableBox>
+                <ClickableBox url="https://onekey.so" orientation="vertical">
+                  <ImageIcon
+                    src={onekeyLogo?.publicURL ?? ''}
+                    alt="Onekey logo"
+                    rounded
+                    size={50}
+                    padding={10}
+                    noBottomMargin
+                  />
+                  <TextElement isSmall noMargin>
+                    <p>OneKey</p>
+                  </TextElement>
+                </ClickableBox>
+                <ClickableBox url="https://www.safepal.com" orientation="vertical">
+                  <ImageIcon
+                    src={safepalLogo?.publicURL ?? ''}
+                    alt="SafePal logo"
+                    rounded
+                    size={50}
+                    padding={10}
+                    noBottomMargin
+                  />
+                  <TextElement isSmall noMargin>
+                    <p>SafePal</p>
+                  </TextElement>
+                </ClickableBox>
+                <ClickableBox url="https://tangem.com" orientation="vertical">
+                  <ImageIcon
+                    src={tangemLogo?.publicURL ?? ''}
+                    alt="Tangem logo"
+                    rounded
+                    size={50}
+                    padding={10}
+                    noBottomMargin
+                  />
+                  <TextElement isSmall noMargin>
+                    <p>Tangem</p>
+                  </TextElement>
+                </ClickableBox>
+                <ClickableBox url="https://www.goldshell.com" orientation="vertical">
+                  <ImageIcon
+                    src={goldshellLogo?.publicURL ?? ''}
+                    alt="Goldshell logo"
+                    rounded
+                    size={50}
+                    padding={10}
+                    noBottomMargin
+                  />
+                  <TextElement isSmall noMargin>
+                    <p>Goldshell</p>
+                  </TextElement>
+                </ClickableBox>
+              </Grid>
+            </SubheaderContent>
           </SubpageSection>
 
           <SectionDivider />

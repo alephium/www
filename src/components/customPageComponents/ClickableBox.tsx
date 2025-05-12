@@ -4,6 +4,7 @@ import SimpleLink, { SimpleLinkProps } from '../SimpleLink'
 
 interface ClickableBoxProps extends SimpleLinkProps {
   align?: 'top' | 'center'
+  orientation?: 'horizontal' | 'vertical'
 }
 
 const ClickableBox = (props: ClickableBoxProps) => (props.url ? <ClickableBoxStyled {...props} /> : <Box {...props} />)
@@ -33,4 +34,11 @@ const Box = styled.div<ClickableBoxProps>`
 
 const ClickableBoxStyled = styled(SimpleLink)<ClickableBoxProps>`
   ${BoxStyles}
+
+  ${({ orientation }) =>
+    orientation === 'vertical' &&
+    css`
+      flex-direction: column;
+      align-items: center;
+    `}
 `
