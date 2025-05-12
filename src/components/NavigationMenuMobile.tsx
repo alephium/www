@@ -156,7 +156,6 @@ export const navigationMenuQuery = graphql`
 
 const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean }>`
   position: static;
-  margin-top: 30px;
   margin-bottom: -100px;
   padding-right: 30px;
   padding-left: 30px;
