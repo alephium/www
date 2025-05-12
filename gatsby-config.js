@@ -148,7 +148,7 @@ module.exports = {
         directives: {
           'style-src': "'self' 'unsafe-inline' https://www.gstatic.com",
           'script-src':
-            "'self' 'unsafe-inline' 'unsafe-eval' https://translate.googleapis.com https://translate.google.com https://translate-pa.googleapis.com https://cdn.usefathom.com",
+            "'self' 'unsafe-inline' https://translate.googleapis.com https://translate.google.com https://translate-pa.googleapis.com https://cdn.usefathom.com",
           'default-src': "'none'",
           'manifest-src': "'self'",
           'connect-src':
