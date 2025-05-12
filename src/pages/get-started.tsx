@@ -364,8 +364,8 @@ const EarnALPHSection = () => {
               <TextCardContent>
                 <h3 style={{ color: theme.palette1 }}>Apps</h3>
                 <p>
-                  You can earn ALPH by using apps built on Alephium, participating in bounties, finding bugs in the
-                  network or mining.
+                  Earn rewards by participating in select dApps on Alephium: provide liquidity, lend and more to start
+                  generating yield.
                 </p>
               </TextCardContent>
             </TextCard>
