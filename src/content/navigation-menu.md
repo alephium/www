@@ -16,6 +16,8 @@ menuItems:
         link: https://discord.gg/XC5JaaDT7z
       - title: Github
         link: https://github.com/alephium
+      - title: Grants
+        link: https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md
   - title: Ecosystem
     items:
       - title: Tools
@@ -28,8 +30,6 @@ menuItems:
       - title: Projects
       - title: Dapps
         link: https://alph.land
-      - title: Grants
-        link: https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md
       - title: Network
       - title: Node operations
         link: https://docs.alephium.org/full-node
