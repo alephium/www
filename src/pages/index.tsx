@@ -40,7 +40,7 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
     <Page
       {...props}
       seo={{
-        title: 'Alephium | Scalable Proof-of-Work and secure Smart Contracts',
+        title: 'Alephium | The Web3 you were promised',
         description:
           'Alephium is the next generation PoW Layer 1 with smart contracts. Built for speed, security, and sustainability. Start building or join the community today.'
       }}
