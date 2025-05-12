@@ -1,115 +1,339 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import styled from 'styled-components'
 
+import { deviceBreakPoints } from '../../../styles/global-style'
 import Button from '../../Button'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextElement from '../../customPageComponents/TextElement'
+import SectionDivider from '../../SectionDivider'
+
+interface LogoPosition {
+  x: number
+  y: number
+  size: number
+  depth: number
+}
 
 const HomepageEcosystemSection = () => {
-  const [dappsLogos, setDappsLogos] = useState<string[]>([])
+  const [dapps, setDapps] = useState<Array<{ name: string; media: { logoUrl: string } }>>([])
+  const [isLoading, setIsLoading] = useState(true)
+  const [isInitialized, setIsInitialized] = useState(false)
+  const [hoverPosition, setHoverPosition] = useState<{ x: number; y: number } | null>(null)
+  const [hoveredAppName, setHoveredAppName] = useState<string | null>(null)
+  const containerRef = useRef<HTMLDivElement>(null)
+  const allPositionsRef = useRef<LogoPosition[]>([])
 
+  // Add refs for smooth animation
+  const currentOffsetRef = useRef({ x: 0, y: 0 })
+  const targetOffsetRef = useRef({ x: 0, y: 0 })
+  const lastFrameTimeRef = useRef<number>(0)
+
+  const initializeLogoPositions = (numLogos: number) => {
+    if (!containerRef.current) return
+
+    const container = containerRef.current
+    const containerWidth = container.offsetWidth
+    const containerHeight = container.offsetHeight
+    const centerX = containerWidth / 2
+    const centerY = containerHeight / 2
+    const buttonRadius = Math.max(Math.min(containerWidth, containerHeight) * 0.13, 60)
+    const minDistance = Math.max(Math.min(containerWidth, containerHeight) * 0.09, 40)
+    const maxAttempts = 300
+    const padding = 10
+
+    const positions: LogoPosition[] = []
+
+    for (let i = 0; i < numLogos; i++) {
+      let attempts = 0
+      let validPosition = false
+
+      while (!validPosition && attempts < maxAttempts) {
+        const x = Math.random() * (containerWidth - padding * 2) + padding
+        const y = Math.random() * (containerHeight - padding * 2) + padding
+
+        // Check distance from center (button)
+        const distanceFromCenter = Math.sqrt(Math.pow(x - centerX, 2) + Math.pow(y - centerY, 2))
+
+        // Check distance from other logos
+        const tooClose = positions.some((pos) => {
+          const distance = Math.sqrt(Math.pow(x - pos.x, 2) + Math.pow(y - pos.y, 2))
+          return distance < minDistance
+        })
+
+        if (distanceFromCenter > buttonRadius && !tooClose) {
+          const size = Math.random() * 0.5 + 0.8
+          const depth = Math.random() + 0.5
+          positions.push({ x, y, size, depth })
+          validPosition = true
+        }
+
+        attempts++
+      }
+    }
+
+    allPositionsRef.current = positions
+    return positions
+  }
+
+  // Initialize everything when the component mounts
   useEffect(() => {
-    fetch('https://publicapi.alph.land/api/dapps').then((res) =>
-      res.json().then((data) => {
-        setDappsLogos(data.map((dapp: { media: { logoUrl: string } }) => dapp.media.logoUrl))
-      })
-    )
+    const initialize = async () => {
+      try {
+        setIsLoading(true)
+        const response = await fetch('https://publicapi.alph.land/api/dapps')
+        const data = await response.json()
+        setDapps(data)
+        if (containerRef.current) {
+          const positions = initializeLogoPositions(data.length)
+          if (positions) setIsInitialized(true)
+        }
+      } catch (error) {
+        console.error('Error initializing ecosystem section:', error)
+      } finally {
+        setIsLoading(false)
+      }
+    }
+
+    initialize()
   }, [])
 
+  // Use ResizeObserver to handle container size changes
+  useEffect(() => {
+    if (!containerRef.current || !isInitialized) return
+    const container = containerRef.current
+    let throttleTimeout: ReturnType<typeof setTimeout> | null = null
+
+    const handleResize = () => {
+      if (dapps.length > 0) {
+        initializeLogoPositions(dapps.length)
+      }
+    }
+
+    handleResize()
+
+    const resizeObserver = new window.ResizeObserver(() => {
+      if (throttleTimeout) return
+      throttleTimeout = setTimeout(() => {
+        handleResize()
+        throttleTimeout = null
+      }, 200)
+    })
+    resizeObserver.observe(container)
+
+    return () => {
+      resizeObserver.disconnect()
+      if (throttleTimeout) clearTimeout(throttleTimeout)
+    }
+  }, [isInitialized, dapps.length])
+
+  // Animation loop for parallax effect
+  useEffect(() => {
+    if (!containerRef.current) return
+
+    const animate = (timestamp: number) => {
+      if (!lastFrameTimeRef.current) lastFrameTimeRef.current = timestamp
+      lastFrameTimeRef.current = timestamp
+
+      // Calculate target offset based on hover position
+      const container = containerRef.current
+      if (!container) return
+
+      const centerX = container.offsetWidth / 2
+      const centerY = container.offsetHeight / 2
+      const parallaxX = hoverPosition ? (hoverPosition.x - centerX) * 0.05 : 0
+      const parallaxY = hoverPosition ? (hoverPosition.y - centerY) * 0.05 : 0
+
+      // Update target offset
+      targetOffsetRef.current = { x: parallaxX, y: parallaxY }
+
+      // Apply inertia to current offset
+      const inertia = 0.1
+      currentOffsetRef.current = {
+        x: currentOffsetRef.current.x + (targetOffsetRef.current.x - currentOffsetRef.current.x) * inertia,
+        y: currentOffsetRef.current.y + (targetOffsetRef.current.y - currentOffsetRef.current.y) * inertia
+      }
+
+      requestAnimationFrame(animate)
+    }
+
+    requestAnimationFrame(animate)
+  }, [hoverPosition])
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!containerRef.current) return
+    const rect = containerRef.current.getBoundingClientRect()
+    const mouseX = e.clientX - rect.left
+    const mouseY = e.clientY - rect.top
+    setHoverPosition({ x: mouseX, y: mouseY })
+    // Find the closest app in dapps
+    let closestDistance = Infinity
+    let closestAppName = null
+    dapps.forEach((dapp, i) => {
+      const position = allPositionsRef.current[i]
+      if (!position) return
+      const distance = Math.sqrt(Math.pow(mouseX - position.x, 2) + Math.pow(mouseY - position.y, 2))
+      if (distance <= 100 && distance < closestDistance) {
+        closestDistance = distance
+        closestAppName = dapp.name
+      }
+    })
+    setHoveredAppName(closestAppName)
+  }
+
+  const handleMouseLeave = () => {
+    setHoverPosition(null)
+    setHoveredAppName(null)
+  }
+
+  const extractAppId = (logoUrl: string) => {
+    const match = logoUrl.match(/dapps\/([^/]+)/)
+    return match ? match[1] : null
+  }
+
   return (
-    <>
-      <SubpageSection dark>
+    <SubpageSection fullWidth>
+      <div style={{ position: 'relative', zIndex: 1 }}>
         <TextElement isCentered>
-          <h2>
-            Built on Alephium.
-            <br />
-            Built to last.
-          </h2>
+          <h2>Built on Alephium.</h2>
           <p>
-            Alephium is home to pioneers, combining <strong>strong technology and a bustling community</strong> to bring
-            the <strong>next generation of decentralized applications to life</strong>.
+            <strong>Alephium is home to hundreds of innovative dApps.</strong>
           </p>
-          <TextElement isCentered>
-            <Button big highlight url="https://alph.land">
-              Explore ecosystem
-            </Button>
-          </TextElement>
         </TextElement>
-        <LogosContainer>
-          {dappsLogos.map((logo, index) => (
-            <LogoWrapper key={index}>
-              <img src={logo} alt={`Dapp logo ${index}`} loading="lazy" />
-            </LogoWrapper>
-          ))}
-          <MoreWrapper key="more">
-            <a href="https://alph.land" target="_blank" rel="noopener noreferrer">
-              <span>See more on Alphland</span>
-              <span aria-hidden="true">→</span>
-            </a>
-          </MoreWrapper>
+        <SectionDivider />
+        <LogosContainer ref={containerRef} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
+          {isInitialized &&
+            dapps.map((dapp, index) => {
+              const position = allPositionsRef.current[index]
+              if (!position) return null
+              const parallaxX = position.depth ? currentOffsetRef.current.x * position.depth : 0
+              const parallaxY = position.depth ? currentOffsetRef.current.y * position.depth : 0
+              const blurAmount = Math.max((1 - position.depth) * 5, 0)
+              return (
+                <LogoWrapper
+                  key={dapp.name + index}
+                  style={{
+                    left: `${position.x}px`,
+                    top: `${position.y}px`,
+                    transform: `translate(-50%, -50%) translate(${parallaxX}px, ${parallaxY}px) scale(${
+                      position.size * position.depth
+                    })`,
+                    filter: `blur(${blurAmount}px)`
+                  }}
+                >
+                  <a
+                    href={`https://alph.land/${extractAppId(dapp.media.logoUrl)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItems: 'center',
+                      cursor: 'pointer'
+                    }}
+                  >
+                    <img src={dapp.media.logoUrl} alt={dapp.name} loading="lazy" />
+                    {hoveredAppName === dapp.name && <AppTooltip>{dapp.name}</AppTooltip>}
+                  </a>
+                </LogoWrapper>
+              )
+            })}
+          <CenterButtonWrapper>
+            <Button big highlight url="https://alph.land">
+              Explore
+            </Button>
+          </CenterButtonWrapper>
         </LogosContainer>
-      </SubpageSection>
-    </>
+      </div>
+    </SubpageSection>
   )
 }
 
+export default HomepageEcosystemSection
+
 const LogosContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem 0;
-  margin-top: var(--spacing-8);
+  position: relative;
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  perspective: 1000px;
+
+  @media ${deviceBreakPoints.mobile} {
+    height: 350px;
+  }
 `
 
 const LogoWrapper = styled.div`
-  width: 80px;
-  height: 80px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
+
+  @media ${deviceBreakPoints.mobile} {
+    width: 25px;
+    height: 25px;
+  }
 
   img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    border-radius: 9px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    background-color: ${({ theme }) => theme.background2};
   }
 `
 
-const MoreWrapper = styled(LogoWrapper)`
-  background-color: ${({ theme }) => theme.bgPrimary};
-  width: calc(80px * 3 + 1rem * 2);
-  border-radius: 9px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
+const AppTooltip = styled.div`
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: ${({ theme }) => theme.background2};
+  color: ${({ theme }) => theme.textPrimary};
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.2s ease-out;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
 
-  &:hover {
-    background-color: ${({ theme }) => theme.bgPrimary};
+  &::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 4px;
+    border-style: solid;
+    border-color: ${({ theme }) => theme.background2} transparent transparent transparent;
   }
 
-  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    color: inherit;
-    gap: 0.5rem;
-  }
-
-  span {
-    text-align: center;
-    font-size: var(--fontSize-20);
-    color: ${({ theme }) => theme.textSecondary};
-  }
-
-  span[aria-hidden='true'] {
-    display: inline-block;
-    transform: rotate(-45deg);
+  @media ${deviceBreakPoints.mobile} {
+    font-size: 0.8rem;
+    padding: 3px 6px;
   }
 `
 
-export default HomepageEcosystemSection
+const CenterButtonWrapper = styled.div`
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-2);
+  border-radius: 100px;
+  box-shadow: 0 0px 30px 30px rgba(255, 255, 255, 0.6);
+`

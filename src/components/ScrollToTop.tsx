@@ -25,16 +25,15 @@ const ScrollToTopButton = styled.div`
   position: absolute;
   right: 10vw;
   padding: 0 15px;
-  bottom: -20px;
+  top: 20px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background-color: ${({ theme }) => theme.bgPrimary};
   color: ${({ theme }) => theme.textSecondary};
-  border-radius: 100px;
   border: 1px solid ${({ theme }) => theme.borderPrimary};
+  border-radius: 100px;
   cursor: pointer;
 
   &:hover {

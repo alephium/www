@@ -8,48 +8,35 @@ menuItems:
       - title: Ralph Language
         link: https://docs.alephium.org/ralph/
       - title: SDK
-        link: https://docs.alephium.org # TODO: Add right link to SDK subpage
+        link: https://docs.alephium.org/sdk/getting-started
       - title: Tutorials
         link: https://www.youtube.com/playlist?list=PL8q8n0BHJS1PWP7t8ABECYdOaPM-hJmjx
-      - title: Roadmap
-        link: /roadmap
-      - title: Funding
-      - title: Grants
-        link: /grants
-      - title: Bounties
-        link: /bounties
       - title: Support
       - title: Discord
-        link: /discord
+        link: https://discord.gg/XC5JaaDT7z
       - title: Github
         link: https://github.com/alephium
+      - title: Grants
+        link: https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md
   - title: Ecosystem
     items:
-      - title: Projects and tools
+      - title: Tools
       - title: Wallets
         link: /wallets
-      - title: Dapps
-        link: https://alph.land
       - title: Bridge
         link: https://bridge.alephium.org/#/transfer
       - title: Explorer
         link: https://explorer.alephium.org
+      - title: Projects
+      - title: Dapps
+        link: https://alph.land
       - title: Network
       - title: Node operations
         link: https://docs.alephium.org/full-node
       - title: Mine ALPH
         link: https://docs.alephium.org/mining
       - title: Analytics
-        link: https://defillama.com/chain/Alephium
-  - title: Resources
-    items:
-      - title: Projects and tools
-      - title: FAQ
-        link: /faq
-      - title: Blog
-        link: https://medium.com/@alephium
-      - title: Brand Assets
-        link: https://github.com/alephium/alephium-brand-guide
+        link: https://defillama.com/chain/Alephium?staking=true
   - title: Community
     items:
       - title: Get started
@@ -58,12 +45,10 @@ menuItems:
         link: /ambassador
       - title: Online communities
         link: /communities
-      - title: Bounties
-        link: /bounties
 button:
   title: Bridge
   link: https://bridge.alephium.org/
 socialIcons:
   - Discord
-  - X
+  - Twitter/X
 ---

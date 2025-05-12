@@ -6,7 +6,7 @@ const TextCardContent = styled(TextElement)`
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding: var(--spacing-2);
+  padding: var(--spacing-3);
 
   p {
     flex: 1;

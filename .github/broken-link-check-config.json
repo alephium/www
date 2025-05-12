@@ -24,6 +24,9 @@
     },
     {
       "pattern": "^https://defillama.com/chain/Alephium"
+    },
+    {
+      "pattern": "^https://www.goldshell.com/"
     }
   ]
 }

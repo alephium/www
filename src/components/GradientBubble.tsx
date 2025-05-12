@@ -55,7 +55,7 @@ const BubbleContainer = styled.div`
 `
 
 const BubbleCenter = styled.div`
-  background-color: ${({ theme }) => theme.bgTertiary};
+  background-color: ${({ theme }) => theme.background1};
   height: 90%;
   width: 90%;
   border-radius: 600px;

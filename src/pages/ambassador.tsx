@@ -2,14 +2,14 @@ import { graphql, PageProps, useStaticQuery } from 'gatsby'
 import styled, { useTheme } from 'styled-components'
 
 import Button from '../components/Button'
+import CardsHorizontalScroller from '../components/common/CardsHorizontalScroller'
 import ClickableBox from '../components/customPageComponents/ClickableBox'
 import Grid from '../components/customPageComponents/Grid'
-import ImageIcon from '../components/customPageComponents/ImageIcon'
 import Page from '../components/customPageComponents/Page'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
-import SubpageImageHeroSection from '../components/customPageComponents/SubpageImageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
-import SubpageVideoHeroSection from '../components/customPageComponents/SubpageVideoHeroSection'
+import TextCard from '../components/customPageComponents/TextCard'
+import TextCardContent from '../components/customPageComponents/TextCardContent'
 import TextElement from '../components/customPageComponents/TextElement'
 import SectionDivider from '../components/SectionDivider'
 import SimpleLink from '../components/SimpleLink'
@@ -22,18 +22,6 @@ const ambassadorQuery = graphql`
     heroVideo: file(relativePath: { eq: "mountain-rainbow-scrub.mp4" }) {
       publicURL
     }
-    circlesIcon: file(relativePath: { eq: "circles-icon.png" }) {
-      ...Icon
-    }
-    goldIcon: file(relativePath: { eq: "gold-icon.png" }) {
-      ...Icon
-    }
-    blueTreeIcon: file(relativePath: { eq: "blue-tree-icon.png" }) {
-      ...Icon
-    }
-    rockPileIcon: file(relativePath: { eq: "rock-pile-icon.png" }) {
-      ...Icon
-    }
     placeholderImage: file(relativePath: { eq: "alephium-hackathon-lake.png" }) {
       ...HeroImage
     }
@@ -41,7 +29,7 @@ const ambassadorQuery = graphql`
 `
 
 const CustomPage = (props: PageProps) => {
-  const { heroImage, heroVideo, placeholderImage } = useStaticQuery<Queries.AmbassadorPageQuery>(ambassadorQuery)
+  const { heroImage, heroVideo } = useStaticQuery<Queries.AmbassadorPageQuery>(ambassadorQuery)
 
   return (
     <Page
@@ -53,189 +41,220 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageVideoHeroSection poster={heroImage} video={heroVideo}>
-            <h1>Alephium Ambassador Program</h1>
-            <hr />
-            <p>
-              Join the Alephium Ambassador Program and become a pivotal force in advancing the world's first operational
-              sharded blockchain, designed for secure and efficient decentralized applications. As an ambassador, you'll
-              play a crucial role in expanding our community, sharing knowledge, and driving the adoption of Alephium's
-              technology.
-            </p>
-            <p>
-              Whether you’re a developer, educator, content creator, or blockchain enthusiast, there’s a place for you
-              in the Alephium community. Together, we can build a more scalable, secure, and sustainable Web3.
-            </p>
-          </SubpageVideoHeroSection>
+          <SectionDivider />
+
+          <SubpageSection bgColor="3" wide border edgeGradient gradientPosition="top">
+            <TextElement isCentered>
+              <h2>
+                Become an Alephium
+                <br />
+                Ambassador
+              </h2>
+              <p>Help us grow Alephium, one Community at a time.</p>
+            </TextElement>
+          </SubpageSection>
+
+          <SectionDivider double />
 
           <WhySection />
 
-          <SectionDivider />
-
           <SubpageSection>
             <TextElement>
-              <h2>What Does an Alephium Ambassador Do?</h2>
+              <h2>
+                What does an <br />
+                Alephium Ambassador do?
+              </h2>
               <p>
-                As an Alephium Ambassador, you can contribute in a variety of ways based on your skills and interests:
+                <strong>
+                  As an Alephium Ambassador, you can contribute in a variety of ways based on your skills and interests:
+                </strong>
               </p>
             </TextElement>
 
-            <SubheaderContent>
-              <TextElement>
-                <h3>Community Builders</h3>
-                <ul>
-                  <li>Organize local meetups, workshops, and hackathons.</li>
-                  <li>Moderate Alephium's social channels and forums.</li>
-                  <li>Translate content and help grow Alephium's global presence.</li>
-                </ul>
-
-                <h3>Educators</h3>
-                <ul>
-                  <li>Create tutorials, guides, and educational content about Alephium.</li>
-                  <li>Host webinars, AMAs, and live streams to spread awareness.</li>
-                  <li>Mentor new community members and developers.</li>
-                </ul>
-
-                <h3>Content Creators</h3>
-                <ul>
-                  <li>Write blogs, create videos, or design graphics about Alephium.</li>
-                  <li>Share your work on social media and other platforms.</li>
-                  <li>Develop creative campaigns to engage the community.</li>
-                </ul>
-
-                <h3>Developers</h3>
-                <ul>
-                  <li>Build tools, dApps, or integrations for the Alephium ecosystem.</li>
-                  <li>Contribute to Alephium’s open-source projects.</li>
-                  <li>Provide technical support and guidance to other developers.</li>
-                </ul>
-              </TextElement>
-            </SubheaderContent>
+            <Cards />
           </SubpageSection>
 
           <SectionDivider />
 
-          <SubpageSection>
-            <TextElement>
-              <h2>How to Join the Program</h2>
-            </TextElement>
+          <HowToApply />
 
-            <Grid columns={2} gap="small">
-              <ClickableBox align="top">
-                <Emoji>1️⃣</Emoji>
-                <TextElement isSmall noMargin>
-                  <p>
-                    <strong>Apply</strong> - Fill out the{' '}
-                    <SimpleLink url="https://docs.google.com/forms/d/e/1FAIpQLSfR0T6Fg3v8HU86wZJgQBXslRUJKS3bsiQb92-ZIyaaV4RreA/viewform?usp=sf_link">
-                      Ambassador Application Form
-                    </SimpleLink>{' '}
-                    and tell us about your skills, experience, and how you’d like to contribute to Alephium.
-                  </p>
-                </TextElement>
-              </ClickableBox>
-              <ClickableBox align="top">
-                <Emoji>2️⃣</Emoji>
-                <TextElement isSmall noMargin>
-                  <p>
-                    <strong>Onboarding</strong> - If selected, you’ll receive an onboarding package with resources,
-                    guidelines, and access to the Alephium Ambassador community.
-                  </p>
-                </TextElement>
-              </ClickableBox>
-              <ClickableBox align="top">
-                <Emoji>3️⃣</Emoji>
-                <TextElement isSmall noMargin>
-                  <p>
-                    <strong>Start Contributing</strong> - Begin your journey by completing tasks, participating in
-                    initiatives, and collaborating with other ambassadors.
-                  </p>
-                </TextElement>
-              </ClickableBox>
-              <ClickableBox align="top">
-                <Emoji>4️⃣</Emoji>
-                <TextElement isSmall noMargin>
-                  <p>
-                    <strong>Grow and Earn</strong> - As you contribute, you’ll earn rewards, gain recognition, and
-                    unlock new opportunities within the Alephium ecosystem.
-                  </p>
-                </TextElement>
-              </ClickableBox>
-            </Grid>
-          </SubpageSection>
-
-          {/* Same image as in FAQ page can go here, like we do with the "Wallets" in /get-started */}
-          <SubpageImageHeroSection backgroundImage={placeholderImage} minHeight="300px">
-            <h2>Have questions?</h2>
-            <hr />
-            <p>Check our FAQ page for more information or join our community and contact our team.</p>
-            <Button url="/faq#ambassador-program">Check FAQ</Button>
-            <Button url="/discord">Join Discord</Button>
-          </SubpageImageHeroSection>
-
-          <SubpageSection>
+          <SubpageSection border edgeGradient>
             <TextElement isCentered>
               <h2>Ready to Join?</h2>
               <p>
                 Become a part of the Alephium Ambassador Program and help us build the future of finance. Together, we
                 can create a more scalable, secure, and sustainable world.
               </p>
-              <Button url="https://docs.google.com/forms/d/e/1FAIpQLSfR0T6Fg3v8HU86wZJgQBXslRUJKS3bsiQb92-ZIyaaV4RreA/viewform">
+              <Button
+                big
+                highlight
+                url="https://docs.google.com/forms/d/e/1FAIpQLSfR0T6Fg3v8HU86wZJgQBXslRUJKS3bsiQb92-ZIyaaV4RreA/viewform"
+              >
                 Apply Now
               </Button>
             </TextElement>
           </SubpageSection>
+
+          <SectionDivider double />
         </>
       }
     />
   )
 }
 
-export default CustomPage
+const Cards = () => {
+  const theme = useTheme()
 
-const WhySection = () => {
-  const { circlesIcon, goldIcon, blueTreeIcon, rockPileIcon } =
-    useStaticQuery<Queries.AmbassadorPageQuery>(ambassadorQuery)
+  return (
+    <CardsHorizontalScroller animateCards>
+      <TextCard border>
+        <TextCardContent>
+          <TextElement>
+            <h3 style={{ color: theme.palette2 }}>Community Builders</h3>
+            <p>
+              <strong>Organize and grow the community</strong> through local meetups, workshops, and hackathons.
+              Moderate social channels and help expand Alephium&apos;s global presence through content translation.
+            </p>
+          </TextElement>
+        </TextCardContent>
+      </TextCard>
+
+      <TextCard border>
+        <TextCardContent>
+          <TextElement>
+            <h3 style={{ color: theme.palette3 }}>Educators</h3>
+            <p>
+              <strong>Share knowledge and expertise</strong> by creating tutorials, guides, and educational content.
+              Host webinars, AMAs, and live streams while mentoring new community members and developers.
+            </p>
+          </TextElement>
+        </TextCardContent>
+      </TextCard>
+
+      <TextCard border>
+        <TextCardContent>
+          <TextElement>
+            <h3 style={{ color: theme.palette4 }}>Content Creators</h3>
+            <p>
+              <strong>Create engaging content</strong> through blogs, videos, and graphics about Alephium. Share your
+              work across social media platforms and develop creative campaigns to engage the community.
+            </p>
+          </TextElement>
+        </TextCardContent>
+      </TextCard>
+
+      <TextCard border>
+        <TextCardContent>
+          <TextElement>
+            <h3 style={{ color: theme.palette6 }}>Developers</h3>
+            <p>
+              <strong>Build and innovate</strong> by creating tools, dApps, and integrations for the Alephium ecosystem.
+              Contribute to open-source projects and provide technical support to other developers.
+            </p>
+          </TextElement>
+        </TextCardContent>
+      </TextCard>
+    </CardsHorizontalScroller>
+  )
+}
+
+const HowToApply = () => {
   const theme = useTheme()
 
   return (
     <SubpageSection>
       <TextElement>
-        <h2>Why Become an Alephium Ambassador?</h2>
+        <h2>How to Join the Program</h2>
+      </TextElement>
+
+      <Grid columns={2} gap="small">
+        <ClickableBox align="top">
+          <TextElement noMargin>
+            <p>
+              <strong style={{ color: theme.palette2 }}>Apply</strong> - Fill out the{' '}
+              <SimpleLink
+                highlight
+                url="https://docs.google.com/forms/d/e/1FAIpQLSfR0T6Fg3v8HU86wZJgQBXslRUJKS3bsiQb92-ZIyaaV4RreA/viewform?usp=sf_link"
+              >
+                Ambassador Application Form
+              </SimpleLink>{' '}
+              and tell us about your skills, experience, and how you'd like to contribute to Alephium.
+            </p>
+          </TextElement>
+        </ClickableBox>
+        <ClickableBox align="top">
+          <TextElement noMargin>
+            <p>
+              <strong style={{ color: theme.palette3 }}>Onboarding</strong> - If selected, you&apos;ll receive an
+              onboarding package with resources, guidelines, and access to the Alephium Ambassador community.
+            </p>
+          </TextElement>
+        </ClickableBox>
+        <ClickableBox align="top">
+          <TextElement noMargin>
+            <p>
+              <strong style={{ color: theme.palette4 }}>Start Contributing</strong> - Begin your journey by completing
+              tasks, participating in initiatives, and collaborating with other ambassadors.
+            </p>
+          </TextElement>
+        </ClickableBox>
+        <ClickableBox align="top">
+          <TextElement noMargin>
+            <p>
+              <strong style={{ color: theme.palette6 }}>Grow and Earn</strong> - As you contribute, you&apos;ll earn
+              rewards, gain recognition, and unlock new opportunities within the Alephium ecosystem.
+            </p>
+          </TextElement>
+        </ClickableBox>
+      </Grid>
+    </SubpageSection>
+  )
+}
+
+export default CustomPage
+
+const WhySection = () => {
+  const theme = useTheme()
+
+  return (
+    <SubpageSection>
+      <TextElement>
+        <h2>
+          Why become
+          <br /> an Alephium Ambassador?
+          <hr />
+        </h2>
       </TextElement>
 
       <SubheaderContent>
         <Grid columns={2}>
           <TextElement noHeadingsMargins>
-            <ImageIcon image={circlesIcon?.childImageSharp?.gatsbyImageData} alt="Make an Impact" size={82} rounded />
             <h3 style={{ color: theme.palette4 }}>Make an Impact</h3>
             <p>
-              <strong>Help redefine what’s possible</strong> in the world of decentralized technology. Your impact will
-              be felt across the ecosystem, from the developers building on Alephium to the users who benefit from its
-              scalability and efficiency.
+              <strong>Help redefine what&apos;s possible</strong> in the world of decentralized technology. Your impact
+              will be felt across the ecosystem, from the developers building on Alephium to the users who benefit from
+              its scalability and efficiency.
             </p>
           </TextElement>
 
           <TextElement noHeadingsMargins>
-            <ImageIcon image={blueTreeIcon?.childImageSharp?.gatsbyImageData} alt="Fast" size={82} rounded />
             <h3 style={{ color: theme.palette3 }}>Grow Your Skills</h3>
             <p>
-              You’ll be surrounded by experts from different domains and get{' '}
-              <strong>access to exclusive resources from Alephium’s core team.</strong>
+              You&apos;ll be surrounded by experts from different domains and get{' '}
+              <strong>access to exclusive resources from Alephium&apos;s core team.</strong>
             </p>
           </TextElement>
 
           <TextElement noHeadingsMargins>
-            <ImageIcon image={rockPileIcon?.childImageSharp?.gatsbyImageData} alt="Fast" size={82} rounded />
             <h3 style={{ color: theme.palette6 }}>Join a Global Network</h3>
             <p>
               <strong>Meet passionate innovators, join local communities, represent Alephium</strong> at local and
-              international events, and more. And don’t worry, we’ll be right beside you, ready to provide guidance to
-              help you succeed.
+              international events, and more. And don&apos;t worry, we&apos;ll be right beside you, ready to provide
+              guidance to help you succeed.
             </p>
           </TextElement>
 
           <TextElement noHeadingsMargins>
-            <ImageIcon image={goldIcon?.childImageSharp?.gatsbyImageData} alt="Earn Rewards" size={82} rounded />
             <h3 style={{ color: theme.palette2 }}>Earn Rewards</h3>
             <p>
               Limited-edition gear, ALPH coins, recognition on official channels, help opening doors to new professional

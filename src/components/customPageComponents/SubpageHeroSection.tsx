@@ -1,10 +1,8 @@
 import { forwardRef, ReactNode } from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 import { deviceBreakPoints } from '../../styles/global-style'
-import PageSectionContainer from '../PageSectionContainer'
 import TextElement from './TextElement'
-import TitleShadow from './TitleShadow'
 
 export type SubpageHeroSectionAlignContent = 'left' | 'center' | 'bottom'
 
@@ -12,20 +10,22 @@ export interface SubpageHeroSectionProps extends React.HTMLAttributes<HTMLElemen
   children: ReactNode
   mediaContent: ReactNode
   alignContent?: SubpageHeroSectionAlignContent
+  bottomMargin?: boolean
   minHeight?: string
+  split?: boolean
+  narrow?: boolean
 }
 
 const SubpageHeroSection = forwardRef<HTMLElement, SubpageHeroSectionProps>(function SubpageHeroSection(
-  { children, mediaContent, alignContent, ...props },
+  { children, mediaContent, alignContent, split, ...props },
   ref
 ) {
   return (
-    <SubpageHeroSectionStyled ref={ref} {...props}>
-      <BackgroundMediaWrapper>{mediaContent}</BackgroundMediaWrapper>
-      <HeroPageSectionContainer alignContent={alignContent}>
-        <ContentWrapper>
-          <TitleShadow />
-          <TextElementStyled>{children}</TextElementStyled>
+    <SubpageHeroSectionStyled ref={ref} split={split} {...props}>
+      <BackgroundMediaWrapper split={split}>{mediaContent}</BackgroundMediaWrapper>
+      <HeroPageSectionContainer alignContent={alignContent} split={split}>
+        <ContentWrapper alignContent={alignContent} split={split}>
+          <TextElementStyled split={split}>{children}</TextElementStyled>
         </ContentWrapper>
       </HeroPageSectionContainer>
     </SubpageHeroSectionStyled>
@@ -34,27 +34,57 @@ const SubpageHeroSection = forwardRef<HTMLElement, SubpageHeroSectionProps>(func
 
 export default SubpageHeroSection
 
-const SubpageHeroSectionStyled = styled.section<Pick<SubpageHeroSectionProps, 'minHeight'>>`
+const SubpageHeroSectionStyled = styled.section<SubpageHeroSectionProps>`
   position: relative;
-  min-height: ${({ minHeight }) => minHeight || '80vh'};
+  height: ${({ split, minHeight }) => (split ? minHeight || '75vh' : 'auto')};
+  min-height: ${({ split, minHeight }) => (split ? 'unset' : minHeight || '75vh')};
   margin: auto;
-  width: 90vw;
+  margin-bottom: ${({ bottomMargin }) => (bottomMargin ? 'var(--spacing-10)' : '0')};
+  width: ${({ narrow }) => (narrow ? 'var(--page-width)' : '80vw')};
   overflow: hidden;
   transition: all 0.4s ease-in;
   display: flex;
+  align-items: stretch;
   border-radius: var(--radius-big);
-  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5), inset 0px 0px 0px 2px ${({ theme }) => theme.borderPrimary};
+  gap: ${({ split }) => (split ? 'var(--spacing-4)' : '0')};
+
+  &::before {
+    content: '';
+    position: absolute;
+    opacity: ${({ split }) => (split ? 0 : 1)};
+    inset: 0;
+    // border: 3px solid ${({ theme }) => theme.borderPrimary};
+    border-radius: var(--radius-big);
+    backdrop-filter: saturate(300%) brightness(1.1);
+    -webkit-backdrop-filter: saturate(300%) brightness(1.1);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: xor;
+    z-index: 2;
+  }
+
+  @media ${deviceBreakPoints.mobile} {
+    gap: 0;
+    box-sizing: border-box;
+    background-color: ${({ theme }) => theme.background2};
+    padding: var(--spacing-2);
+    flex-direction: column;
+    height: auto;
+    min-height: ${({ minHeight }) => minHeight || '75vh'};
+    width: 90vw;
+  }
 `
 
-const TextElementStyled = styled(TextElement)`
+const TextElementStyled = styled(TextElement)<Pick<SubpageHeroSectionProps, 'split'>>`
   max-width: 520px;
   width: fit-content;
-  margin: 0 auto;
+  margin: ${({ split }) => (split ? 'var(--spacing-4) var(--spacing-10)' : '0 auto')};
   justify-content: center;
 
   > p {
     color: ${({ theme }) => theme.textSecondary};
-    font-weight: var(--fontWeight-semiBold);
+    font-size: var(--fontSize-22);
+    font-weight: var(--fontWeight-medium);
     line-height: 1.3;
     z-index: 1;
 
@@ -70,42 +100,94 @@ const TextElementStyled = styled(TextElement)`
 
   > hr {
     width: 90%;
-    height: 3px;
+    height: 4px;
     background-color: ${({ theme }) => theme.textPrimary};
     margin: var(--spacing-5) 0 0;
     border: none;
   }
 `
 
-const HeroPageSectionContainer = styled(PageSectionContainer)<Pick<SubpageHeroSectionProps, 'alignContent'>>`
+const HeroPageSectionContainer = styled.div<Pick<SubpageHeroSectionProps, 'alignContent' | 'split'>>`
   flex-direction: column;
   position: relative;
   display: flex;
-  flex: 1;
+  flex: ${({ alignContent }) => (alignContent === 'center' ? 'none' : '1')};
   justify-content: ${({ alignContent }) =>
     alignContent === 'bottom' ? 'flex-end' : alignContent === 'center' ? 'center' : 'flex-start'};
+  height: ${({ split }) => (split ? '100%' : 'auto')};
+  align-self: stretch;
+  border-radius: var(--radius-big);
+  background-color: ${({ theme, split }) => (split ? theme.surface2 : 'transparent')};
+
+  ${({ split }) =>
+    split &&
+    css`
+      flex: 1.5;
+      margin-left: 0;
+    `}
+
+  @media ${deviceBreakPoints.mobile} {
+    width: 100%;
+    margin-left: 0;
+    height: auto;
+  }
 `
 
-const ContentWrapper = styled.div<Pick<SubpageHeroSectionProps, 'alignContent'>>`
-  margin-right: auto;
+const ContentWrapper = styled.div<Pick<SubpageHeroSectionProps, 'alignContent' | 'split'>>`
+  margin-right: ${({ alignContent }) => (alignContent === 'center' ? 'initial' : 'auto')};
   position: relative;
   margin-top: 5%;
   margin-bottom: 5%;
+  margin-left: 5%;
   display: flex;
   flex-direction: column;
   z-index: 2;
 
+  ${({ split }) =>
+    split &&
+    css`
+      margin: auto;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    `}
+
   @media ${deviceBreakPoints.mobile} {
-    padding: var(--spacing-4);
+    width: 100%;
+    box-sizing: border-box;
+    padding: var(--spacing-6) 0;
   }
 `
 
-const BackgroundMediaWrapper = styled.div`
-  position: absolute;
+const BackgroundMediaWrapper = styled.div<Pick<SubpageHeroSectionProps, 'split'>>`
+  position: ${({ split }) => (split ? 'relative' : 'absolute')};
   top: 0;
   left: 0;
-  width: 100%;
+  width: ${({ split }) => (split ? 'calc(50% - var(--spacing-3))' : '100%')};
   height: 100%;
-  z-index: -1;
+  z-index: 1;
   overflow: hidden;
+  align-self: stretch;
+  border-radius: var(--radius-big);
+
+  ${({ split }) =>
+    split &&
+    css`
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      > * {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: var(--radius-big);
+      }
+
+      @media ${deviceBreakPoints.mobile} {
+        width: 100%;
+        max-height: 300px;
+        border-radius: calc(var(--radius-big) - var(--spacing-2));
+      }
+    `}
 `

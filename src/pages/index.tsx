@@ -1,16 +1,17 @@
 import { graphql, PageProps } from 'gatsby'
+import styled from 'styled-components'
 
 import Button from '../components/Button'
 import Page from '../components/customPageComponents/Page'
 import TextElement from '../components/customPageComponents/TextElement'
-import TitleShadow from '../components/customPageComponents/TitleShadow'
 import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
+import HomepageCommunitySection from '../components/pages/homepage/HomepageCommunitySection'
 import HomepageEcosystemSection from '../components/pages/homepage/HomepageEcosystemSection'
 import HomepageHeroSection from '../components/pages/homepage/HomepageHeroSection'
 import HomepageIntroSection from '../components/pages/homepage/HomepageIntroSection'
-import HomepagePartnersSection from '../components/pages/homepage/HomepagePartnersSection'
-import HomepageStatsSection from '../components/pages/homepage/HomepageStatsSection'
-import PageSectionContainer from '../components/PageSectionContainer'
+import HomepageNewsSection from '../components/pages/homepage/HomepageNewsSection'
+import HomepageNumbersSection from '../components/pages/homepage/HomepageNumbersSection'
+import HomepageUSPSection from '../components/pages/homepage/HomepageUSPSection'
 import SectionDivider from '../components/SectionDivider'
 
 export const pageQuery = graphql`
@@ -18,33 +19,28 @@ export const pageQuery = graphql`
     allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/homepage.md/" } }) {
       nodes {
         frontmatter {
-          intro {
-            ...HomepageIntroSection
-          }
-
           partnersSection {
             ...HomepagePartnersSection
           }
         }
       }
     }
-    lighthouseImage: file(relativePath: { eq: "lighthouse.png" }) {
+    seaImage: file(relativePath: { eq: "sea-night.png" }) {
       childImageSharp {
-        gatsbyImageData(quality: 80)
+        gatsbyImageData(quality: 100)
       }
     }
   }
 `
 
 const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
-  const content = props.data.allMarkdownRemark.nodes[0].frontmatter
-  const lighthouseImage = props.data.lighthouseImage?.childImageSharp?.gatsbyImageData
+  const seaImage = props.data.seaImage?.childImageSharp?.gatsbyImageData
 
   return (
     <Page
       {...props}
       seo={{
-        title: 'Alephium | Scalable Proof-of-Work Blockchain for Real-World Apps',
+        title: 'Alephium | The Web3 you were promised',
         description:
           'Alephium is the next generation PoW Layer 1 with smart contracts. Built for speed, security, and sustainability. Start building or join the community today.'
       }}
@@ -52,42 +48,44 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
         <>
           <HomepageHeroSection />
 
-          {content?.intro && (
-            <>
-              <HomepageIntroSection {...content.intro} />
-            </>
-          )}
+          <HomepageNewsSection />
 
-          <HomepageStatsSection />
+          <HomepageIntroSection />
+
+          <HomepageUSPSection />
+
+          <SectionDivider double />
+
+          <HomepageNumbersSection />
 
           <HomepageEcosystemSection />
 
-          {content?.partnersSection && <HomepagePartnersSection {...content.partnersSection} />}
+          <SectionDivider border />
+
+          <HomepageCommunitySection />
 
           <SectionDivider />
 
-          <PageSectionContainer fullHeight wide justifyContent="center">
-            <GatsbyImageWrapper
-              image={lighthouseImage}
-              alt="Lighthouse background"
-              style={{ height: '100%' }}
-              objectFit="cover"
-              loading="lazy"
-              isBackground
-            />
-
+          <BottomSection>
+            <BottomBackgroundImageContainer>
+              <GatsbyImageWrapper image={seaImage} alt="Sea" />
+            </BottomBackgroundImageContainer>
             <TextElement isCentered>
-              <TitleShadow />
-              <h2>This is your moment.</h2>
+              <h1>
+                It&apos;s time
+                <br />
+                to make waves.
+              </h1>
               <p>
-                Alephium isn’t just a concept - it’s something we build, together.{' '}
-                <strong>There’s a place for you here and we can’t wait to meet you.</strong>
+                Alephium isn&apos;t just a vision, it&apos;s a fast growing ecosystem.
+                <br />
+                <strong>There&apos;s a place for you here and we can&apos;t wait to meet you.</strong>
               </p>
               <Button big highlight url="/get-started">
                 Get started
               </Button>
             </TextElement>
-          </PageSectionContainer>
+          </BottomSection>
         </>
       }
     />
@@ -95,3 +93,22 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
 }
 
 export default IndexPage
+
+const BottomBackgroundImageContainer = styled.div`
+  position: absolute;
+  inset: 0;
+  opacity: 0.5;
+`
+
+const BottomSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 600px;
+  width: 100%;
+  margin-top: var(--spacing-4);
+  padding: 0 var(--spacing-4);
+  box-sizing: border-box;
+`

@@ -11,10 +11,12 @@ declare module 'styled-components' {
     textSecondary: string
     textTertiary: string
 
-    bgPrimary: string
-    bgSecondary: string
-    bgTertiary: string
-    bgSurface: string
+    surface1: string
+    surface2: string
+    background1: string
+    background2: string
+    background3: string
+    backgroundContrast: string
 
     borderPrimary: string
 

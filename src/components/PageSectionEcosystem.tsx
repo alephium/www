@@ -67,12 +67,14 @@ const HomepageEcosystemSection = ({
 
   return (
     <section className={className}>
-      <SectionTextHeader title={title} subtitle={subtitle} bigSubtitle bigText />
+      <SectionTextHeader titleRows={[title]} subtitleRows={[subtitle]} bigSubtitle bigText />
       <SectionContainer>
         <Subsections>
           {subsections.map(({ title, description, image, items }) => (
             <Subsection key={title} animateEntry>
-              <SubsectionImageContainer>{image && <img src={image.publicURL} alt={title} />}</SubsectionImageContainer>
+              <SubsectionImageContainer>
+                {image && <img src={image.publicURL} alt={title} loading="lazy" />}
+              </SubsectionImageContainer>
               <SubsectionTextContent>
                 <SubsectionTextHeader title={title} subtitle={description} />
                 <SubsectionItems variants={containerVariants}>
@@ -93,7 +95,7 @@ const HomepageEcosystemSection = ({
                               <>
                                 <SubsectionItemTitle className="with-logo">{title}</SubsectionItemTitle>
                                 <SubsectionItemLogoContainer>
-                                  <SubsectionItemLogo src={logo.publicURL} alt={title} />
+                                  <SubsectionItemLogo src={logo.publicURL} alt={title} loading="lazy" />
                                 </SubsectionItemLogoContainer>
                               </>
                             ) : (
@@ -124,7 +126,7 @@ const HomepageEcosystemSection = ({
                     trackingName={`ecosystem-section:${name.replaceAll(' ', '-')}-link`}
                   >
                     <ExchangeItem key={name}>
-                      <ExchangeLogo src={logo} alt={name} />
+                      <ExchangeLogo src={logo} alt={name} loading="lazy" />
                       <ExchangeName>{name}</ExchangeName>
                     </ExchangeItem>
                   </SimpleLink>
@@ -235,17 +237,20 @@ const SubsectionItemLogoContainer = styled.div`
   right: 0;
   left: 0;
   opacity: 0;
-  transition: all 0.2s ease-out;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(-5px);
   padding: var(--spacing-2);
   display: flex;
+  will-change: opacity, transform;
 `
 
 const SubsectionItemLogo = styled.img`
   flex: 1;
-  transition: all 0.2s ease-out;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   max-width: 100%;
-  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  will-change: transform;
 `
 
 const SubsectionItem = styled(motion.div)`
@@ -255,20 +260,27 @@ const SubsectionItem = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${({ theme }) => theme.bgPrimary};
+  background-color: ${({ theme }) => theme.surface1};
   box-sizing: border-box;
   border-radius: 16px;
   font-size: 13px;
+  overflow: hidden;
+  will-change: transform;
 
   &:hover {
     ${SubsectionItemTitle}.with-logo {
       opacity: 0;
       transform: translateY(-5px);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     ${SubsectionItemLogoContainer} {
       opacity: 1;
       transform: translateY(0);
+    }
+
+    ${SubsectionItemLogo} {
+      transform: scale(1.05);
     }
   }
 `
@@ -279,11 +291,11 @@ const ExchangeItem = styled.div`
   gap: var(--spacing-2);
   padding: var(--spacing-2);
   border-radius: 16px;
-  background-color: ${({ theme }) => theme.bgPrimary};
+  background-color: ${({ theme }) => theme.surface1};
   transition: all 0.2s ease-out;
 
   &:hover {
-    background-color: ${({ theme }) => theme.bgSurface};
+    background-color: ${({ theme }) => theme.surface2};
   }
 `
 
@@ -302,13 +314,25 @@ const containerVariants = {
     opacity: 1,
     transition: {
       delay: 0.2,
-      staggerChildren: 0.1,
-      delayChildren: 0.2
+      staggerChildren: 0.08,
+      delayChildren: 0.2,
+      duration: 0.4,
+      ease: [0.4, 0, 0.2, 1]
     }
   }
 }
 
 const itemVariants = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1 }
+  hidden: {
+    opacity: 0,
+    y: 10
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.4,
+      ease: [0.4, 0, 0.2, 1]
+    }
+  }
 }

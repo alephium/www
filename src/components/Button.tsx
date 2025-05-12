@@ -1,8 +1,8 @@
 import { useMotionValue, useSpring } from 'framer-motion'
 import { Link } from 'gatsby'
-import { ReactNode, useEffect, useRef } from 'react'
+import { ReactNode, RefObject, useEffect, useRef } from 'react'
 import { PointerEvent } from 'react'
-import styled, { css } from 'styled-components'
+import styled, { css, DefaultTheme } from 'styled-components'
 
 import Arrow from '../images/svgs/arrow-right.svg'
 import { getPointerRelativePositionInElement } from '../utils/pointer'
@@ -21,7 +21,8 @@ interface ButtonProps {
 }
 
 const Button = ({ onClick, className, children, url, disabled, highlight, squared }: ButtonProps) => {
-  const buttonRef = useRef<HTMLButtonElement | HTMLAnchorElement>(null)
+  const buttonRef = useRef<HTMLButtonElement>(null)
+  const anchorRef = useRef<HTMLAnchorElement | Link<any>>(null)
   const x = useMotionValue(0.5)
   const y = useMotionValue(0.5)
   const springX = useSpring(x, { stiffness: 200, damping: 20 })
@@ -29,24 +30,25 @@ const Button = ({ onClick, className, children, url, disabled, highlight, square
   const isInternalLink = url?.startsWith('/')
 
   const onMove = (e: PointerEvent) => {
-    if (!highlight) return
+    if (!highlight || disabled) return
     const { x: positionX, y: positionY } = getPointerRelativePositionInElement(e)
     x.set(positionX, true)
     y.set(positionY, true)
   }
 
   const onLeave = () => {
-    if (!highlight) return
+    if (!highlight || disabled) return
     x.set(0.5, true)
     y.set(0.5, true)
   }
 
   useEffect(() => {
-    if (!highlight) return
+    if (!highlight || disabled) return
     const updateGradientPosition = () => {
-      if (buttonRef.current) {
-        buttonRef.current.style.setProperty('--gradient-x', `${springX.get() * 100}%`)
-        buttonRef.current.style.setProperty('--gradient-y', `${springY.get() * 100}%`)
+      const currentRef = buttonRef.current || anchorRef.current
+      if (currentRef) {
+        currentRef.style.setProperty('--gradient-x', `${springX.get() * 100}%`)
+        currentRef.style.setProperty('--gradient-y', `${springY.get() * 100}%`)
       }
     }
     updateGradientPosition()
@@ -56,7 +58,7 @@ const Button = ({ onClick, className, children, url, disabled, highlight, square
       unsubscribeX()
       unsubscribeY()
     }
-  }, [springX, springY, highlight])
+  }, [springX, springY, highlight, disabled])
 
   const content = (
     <>
@@ -71,14 +73,13 @@ const Button = ({ onClick, className, children, url, disabled, highlight, square
     onPointerMove: onMove,
     onPointerLeave: onLeave
   }
-
   return isInternalLink && url ? (
-    <Link to={url} {...sharedProps}>
+    <Link to={url} ref={anchorRef as RefObject<Link<any>>} {...sharedProps}>
       {content}
     </Link>
   ) : url ? (
     <a
-      ref={buttonRef as React.RefObject<HTMLAnchorElement>}
+      ref={anchorRef as RefObject<HTMLAnchorElement>}
       href={url}
       target={(!isInternalLink && '_blank') || undefined}
       rel={(!isInternalLink && 'noopener') || undefined}
@@ -88,45 +89,100 @@ const Button = ({ onClick, className, children, url, disabled, highlight, square
       {content}
     </a>
   ) : (
-    <button
-      ref={buttonRef as React.RefObject<HTMLButtonElement>}
-      onClick={onClick}
-      disabled={disabled}
-      {...sharedProps}
-    >
+    <button ref={buttonRef} onClick={onClick} disabled={disabled} {...sharedProps}>
       {content}
     </button>
   )
 }
 
-export default styled(Button)`
+const getGradient = (theme: DefaultTheme) => `
+  radial-gradient(
+    circle at var(--gradient-x) var(--gradient-y),
+    ${theme.textPrimary} 20%,
+    ${theme.palette1} 35%,
+    ${theme.palette2} 40%,
+    ${theme.textPrimary} 50%,
+    ${theme.palette3} 60%,
+    ${theme.palette4} 100%
+  )
+`
+
+const getBorderRadius = (squared?: boolean) => (squared ? '12px' : '50px')
+const getInnerBorderRadius = (squared?: boolean) => (squared ? 'calc(12px - 3px)' : 'calc(50px - 3px)')
+
+const GradientBorder = styled.div<{ squared?: boolean }>`
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: ${({ theme }) => getGradient(theme)};
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.8;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    border-radius: ${({ squared }) => getInnerBorderRadius(squared)};
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px) saturate(180%);
+    z-index: 0;
+  }
+
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 1);
+    z-index: 1;
+  }
+`
+
+const ArrowStyled = styled(Arrow)<{ isExternal?: boolean }>`
+  ${({ isExternal }) =>
+    isExternal &&
+    css`
+      transform: rotate(-45deg);
+    `}
+`
+
+const StyledButton = styled(Button)`
   background-color: rgba(255, 255, 255, 0.9);
   color: black;
   --gradient-x: 50%;
   --gradient-y: 50%;
-  border-radius: ${({ squared }) => (squared ? '9px' : '50px')};
+  border-radius: ${({ squared }) => getBorderRadius(squared)};
   padding: 12px 20px;
-  border: 2px solid transparent;
   background-clip: padding-box;
   text-decoration: none;
   display: inline-flex;
   justify-content: ${({ textAlign }) => (textAlign === 'left' ? 'flex-start' : 'center')};
   position: relative;
   z-index: 0;
-  overflow: hidden;
 
-  /* The following rules are the same as in the ArrowedLink, maybe extract? */
   align-items: center;
   font-weight: var(--fontWeight-semiBold);
-  font-size: ${({ big }) => (big ? 'var(--fontSize-22)' : 'var(--fontSize-20)')};
+  font-size: ${({ big }) => (big ? 'var(--fontSize-22)' : 'var(--fontSize-18)')};
   transition: all 0.1s ease-out;
+
+  &:hover {
+    filter: saturate(160%);
+  }
 
   ${({ disabled }) =>
     !disabled
       ? css`
           &:hover {
             cursor: pointer;
-            background-color: rgba(255, 255, 255, 1);
+            transform: translateY(-2px);
           }
         `
       : css`
@@ -144,48 +200,29 @@ export default styled(Button)`
     highlight &&
     css`
       &:hover {
-        background-color: ${({ theme }) => theme.bgPrimary};
+        &::after {
+          opacity: 0.5;
+          transform: scale(1.02);
+        }
       }
 
-      /* show gradient border on hover */
+      &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        background: ${({ theme }) => getGradient(theme)};
+        filter: blur(7px);
+        opacity: 0;
+        transition: all 0.3s ease;
+        z-index: -2;
+        transform: translateY(0) scale(1);
+      }
+
       &:hover ${GradientBorder} {
         opacity: 1;
       }
     `}
 `
 
-// Gradient border overlay behind the button content
-const GradientBorder = styled.div<{ squared?: boolean }>`
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background: radial-gradient(
-    circle at var(--gradient-x) var(--gradient-y),
-    ${({ theme }) => theme.borderPrimary} 0%,
-    ${({ theme }) => theme.palette2} 35%,
-    ${({ theme }) => theme.palette1} 40%,
-    ${({ theme }) => theme.palette4} 50%,
-    ${({ theme }) => theme.palette3} 60%,
-    ${({ theme }) => theme.borderPrimary} 100%
-  );
-  transition: opacity 0.3s ease;
-  pointer-events: none;
-  z-index: -1;
-
-  &::before {
-    content: '';
-    position: absolute;
-    inset: 2px;
-    border-radius: ${({ squared }) => (squared ? 'calc(9px - 2px)' : 'calc(50px - 2px)')};
-    background: rgba(255, 255, 255, 0.9);
-    z-index: 0;
-  }
-`
-
-const ArrowStyled = styled(Arrow)<{ isExternal?: boolean }>`
-  ${({ isExternal }) =>
-    isExternal &&
-    css`
-      transform: rotate(-45deg);
-    `}
-`
+export default StyledButton

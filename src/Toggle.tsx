@@ -31,7 +31,7 @@ interface ToggleProps {
   className?: string
 }
 
-const toggleWidth = 70
+const toggleWidth = 60
 
 const Toggle = ({ toggled, onToggle, className, disabled, ToggleIcons, handleColors, label }: ToggleProps) => {
   const theme = useTheme()
@@ -39,14 +39,14 @@ const Toggle = ({ toggled, onToggle, className, disabled, ToggleIcons, handleCol
 
   const toggleBackgroundVariants = {
     off: {
-      backgroundColor: theme.bgPrimary
+      backgroundColor: theme.surface1
     },
-    on: { backgroundColor: handleColors ? theme.bgTertiary : '#2a51ff' }
+    on: { backgroundColor: handleColors ? theme.background1 : '#2a51ff' }
   }
 
   const handleContainerVariants = {
     off: { left: -2 },
-    on: { left: toggleWidth / 2 }
+    on: { left: toggleWidth / 2 - 2 }
   }
 
   const handleVariants = {
@@ -157,5 +157,9 @@ const ToggleIconContainer = styled.div`
 
   .toggle-icon {
     margin: auto;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    background: none;
   }
 `

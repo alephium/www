@@ -3,6 +3,7 @@ import { useState } from 'react'
 import styled from 'styled-components'
 
 import Toggle from '../Toggle'
+import SubpageSection from './customPageComponents/SubpageSection'
 import TextElement from './customPageComponents/TextElement'
 import DualTimeline from './DualTimeline'
 
@@ -40,9 +41,12 @@ const PageSectionMilestones = () => {
 
   return (
     <SectionWrapper>
-      <TextElement isCentered>
-        <h2>Completed milestones</h2>
-      </TextElement>
+      <SubpageSection isCentered>
+        <TextElement isCentered>
+          <h1>Roadmap & Milestones</h1>
+          <p>A journey of core platform and ecosystem development.</p>
+        </TextElement>
+      </SubpageSection>
       <ToggleSection>
         <ToggleLabel>Summarized</ToggleLabel>
         <Toggle toggled={showDetails} onToggle={handleShowDetailsToggle} />
@@ -57,10 +61,7 @@ const PageSectionMilestones = () => {
 
 export default PageSectionMilestones
 
-const SectionWrapper = styled.section`
-  padding-top: var(--spacing-16);
-  background-color: ${({ theme }) => theme.bgTertiary};
-`
+const SectionWrapper = styled.section``
 
 const Centered = styled.div`
   display: flex;

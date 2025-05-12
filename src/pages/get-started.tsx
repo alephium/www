@@ -1,26 +1,29 @@
 import { graphql, PageProps, useStaticQuery } from 'gatsby'
+import { useTheme } from 'styled-components'
 
 import Button from '../components/Button'
-import ClickableBox from '../components/customPageComponents/ClickableBox'
+import CardFooterButtonContainer from '../components/common/CardFooterButtonContainer'
+import CardsHorizontalScroller from '../components/common/CardsHorizontalScroller'
+import CardsRow, { CardsRowSegment } from '../components/customPageComponents/CardsRow'
 import Grid from '../components/customPageComponents/Grid'
-import ImageIcon from '../components/customPageComponents/ImageIcon'
 import Page from '../components/customPageComponents/Page'
-import SideBySide from '../components/customPageComponents/SideBySide'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
 import SubpageImageHeroSection from '../components/customPageComponents/SubpageImageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
-import SubpageVideoHeroSection from '../components/customPageComponents/SubpageVideoHeroSection'
 import TextCard from '../components/customPageComponents/TextCard'
 import TextCardContent from '../components/customPageComponents/TextCardContent'
 import TextElement from '../components/customPageComponents/TextElement'
-import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
+import SectionDivider from '../components/SectionDivider'
+
+const CARD_WIDTH = 380
+const CARD_GAP = 24
 
 const exchangesQuery = graphql`
   query GetStartedPage {
-    heroImage: file(relativePath: { eq: "build-mine-explore-poster.png" }) {
+    heroImage: file(relativePath: { eq: "mountain-paths.png" }) {
       ...HeroImage
     }
-    heroVideo: file(relativePath: { eq: "build-mine-explore-scrub.mp4" }) {
+    heroVideo: file(relativePath: { eq: "mountain-paths-scrub.mp4" }) {
       publicURL
     }
     ecosystemImage: file(relativePath: { eq: "ecosystem-islands.png" }) {
@@ -37,19 +40,6 @@ const exchangesQuery = graphql`
       childImageSharp {
         gatsbyImageData(quality: 100)
       }
-    }
-    documentationIcon: file(relativePath: { eq: "leaf-icon.png" }) {
-      childImageSharp {
-        gatsbyImageData(quality: 100)
-      }
-    }
-    goldIcon: file(relativePath: { eq: "gold-icon.png" }) {
-      childImageSharp {
-        gatsbyImageData(quality: 100)
-      }
-    }
-    blobVideo: file(relativePath: { eq: "alephium-blob.mp4" }) {
-      publicURL
     }
     desktopWallet: file(relativePath: { eq: "screenshots/desktop-wallet/desktop-wallet-1.png" }) {
       childImageSharp {
@@ -84,20 +74,7 @@ const exchangesQuery = graphql`
 `
 
 const CustomPage = (props: PageProps) => {
-  const {
-    exchangesContent,
-    heroImage,
-    heroVideo,
-    treasureImage,
-    blobVideo,
-    mineImage,
-    ecosystemImage,
-    documentationIcon,
-    goldIcon
-  } = useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
-  const exchanges = exchangesContent.nodes[0].frontmatter?.exchanges ?? []
-  const blobVideoUrl = blobVideo?.publicURL || undefined
-  const ecosystemImageData = ecosystemImage?.childImageSharp?.gatsbyImageData || undefined
+  const { treasureImage, mineImage, ecosystemImage } = useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
 
   return (
     <Page
@@ -109,67 +86,146 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageVideoHeroSection poster={heroImage} video={heroVideo} alignContent="bottom">
-            <h1>Get Started with Alephium</h1>
-            <hr />
-            <p>
-              <strong>
-                Whether you want to build, mine, or explore, this guide has everything you need to dive in.
-              </strong>
-            </p>
-          </SubpageVideoHeroSection>
+          <SectionDivider />
 
-          <SubpageSection>
-            <SideBySide>
-              <TextElement>
-                <h2>What is Alephium?</h2>
-                <p>
-                  <strong>Alephium is a next-generation Layer 1 blockchain</strong>, designed to deliver unmatched
-                  security without compromising scalability or energy efficiency.
-                </p>
-                <p>
-                  <strong>
-                    Applications built on Alephium run faster, cost less, and inherit the resilience of Proof-of-Work,
-                    ensuring your project is safe and scalable from day one.
-                  </strong>{' '}
-                  Whether you're launching dApps, creating digital assets, or integrating Web3 infrastructure, Alephium
-                  provides the robust security, flexibility and performance needed to push boundaries.
-                </p>
-                <p>
-                  <strong>It’s not just about building - it’s about building smarter.</strong> Alephium eliminates
-                  common smart contract vulnerabilities, reduces energy consumption by 87% compared to traditional PoW,
-                  and <strong>ensures long-term scalability without compromising security.</strong>
-                </p>
-              </TextElement>
-              <video muted playsInline preload="auto" autoPlay loop style={{ width: '100%', maxHeight: 500 }}>
-                <source src={blobVideoUrl} type="video/mp4" />
-              </video>
-            </SideBySide>
+          <SubpageSection bgColor="3" wide border edgeGradient gradientPosition="top">
+            <TextElement isCentered>
+              <h2>
+                Get Started
+                <br />
+                with Alephium
+              </h2>
+              <p>
+                Here&apos;s everything you need
+                <br />
+                <strong>to begin your journey in the Alephium ecosystem.</strong>
+              </p>
+            </TextElement>
           </SubpageSection>
 
-          <SubpageImageHeroSection backgroundImage={treasureImage} minHeight="660px">
+          <SectionDivider />
+
+          <SubpageImageHeroSection backgroundImage={treasureImage} minHeight="500px" split>
             <h2>Wallets</h2>
-            <hr />
             <p>
-              To interact with the Alephium ecosystem{' '}
-              <strong>you’ll need a wallet, which acts as your gateway to the network</strong>. With an Alephium wallet,
-              you can store, send, and receive ALPH, manage digital assets (stablecoins, NFTs) and seamlessly connect to
-              dApps.
+              Your gateway to Alephium: <strong>store, swap, lend, and more!</strong>
             </p>
-            <Button big url="/wallets">
-              Download a wallet
+            <Button big highlight url="/wallets">
+              Get a wallet
             </Button>
           </SubpageImageHeroSection>
 
-          <SubpageSection>
-            <TextElement>
+          <SectionDivider />
+
+          <SubpageSection wide>
+            <TextElement isCentered>
+              <h2>Get ALPH</h2>
+              <p>
+                The native token of Alephium. You can get it through your wallet, exchanges, other networks or your
+                peers.
+              </p>
+            </TextElement>
+            <SubheaderContent>
+              <CardsHorizontalScroller cardWidth={CARD_WIDTH} cardGap={CARD_GAP} animateCards>
+                <TextCard border>
+                  <TextCardContent>
+                    <TextElement>
+                      <h3>Alephium wallets</h3>
+                      <p>
+                        You can get ALPH directly from the Alephium mobile and desktop wallets with a{' '}
+                        <strong>debit/credit card, bank transfer or even Apple Pay.</strong> <br />
+                        <small>Geographical restrictions apply.</small>
+                      </p>
+                    </TextElement>
+                    <CardFooterButtonContainer>
+                      <Button squared url="https://x.com/alephium/status/1899529139331481881">
+                        More on on-ramps
+                      </Button>
+                    </CardFooterButtonContainer>
+                  </TextCardContent>
+                </TextCard>
+                <TextCard border>
+                  <TextCardContent>
+                    <TextElement>
+                      <h3>Centralised Exchanges</h3>
+                      <p>
+                        Centralised Exchanges (CEX) are platforms where ALPH is available using traditional currencies.{' '}
+                        <strong>They maintain custody over the ALPH</strong> you get until you transfer it to a wallet
+                        under your control.
+                      </p>
+                    </TextElement>
+                    <CardFooterButtonContainer>
+                      <Button squared url="https://www.coingecko.com/en/coins/alephium#markets">
+                        List of exchanges
+                      </Button>
+                    </CardFooterButtonContainer>
+                  </TextCardContent>
+                </TextCard>
+                <TextCard border>
+                  <TextCardContent>
+                    <TextElement>
+                      <h3>Decentralised Exchanges</h3>
+                      <p>
+                        If you want more control, you can get ALPH using smart contracts. With a DEX, you can trade
+                        digital assets <strong>without handing over control of your funds</strong> to a company.
+                      </p>
+                    </TextElement>
+                    <CardFooterButtonContainer>
+                      <Button squared url="https://www.coingecko.com/en/coins/alephium#markets">
+                        Try a DEX
+                      </Button>
+                    </CardFooterButtonContainer>
+                  </TextCardContent>
+                </TextCard>
+                <TextCard border>
+                  <TextCardContent>
+                    <TextElement>
+                      <h3>Bridged ALPH</h3>
+                      <p>
+                        You can also get ALPH on <strong>other networks like Ethereum and BSC</strong>. Just use the
+                        Alephium Token Bridge to move it to native ALPH on the Alephium network.
+                      </p>
+                    </TextElement>
+                    <CardFooterButtonContainer>
+                      <Button squared url="https://docs.alephium.org/infrastructure/the-bridge/">
+                        More on the bridge
+                      </Button>
+                    </CardFooterButtonContainer>
+                  </TextCardContent>
+                </TextCard>
+                <TextCard border>
+                  <TextCardContent>
+                    <TextElement>
+                      <h3>From your peers</h3>
+                      <p>
+                        Once you have an Alephium wallet, you just need to share your address to start sending and
+                        receiving ALPH and other tokens directly with others.
+                      </p>
+                    </TextElement>
+                    <CardFooterButtonContainer>
+                      <Button squared url="/wallets">
+                        More on wallets
+                      </Button>
+                    </CardFooterButtonContainer>
+                  </TextCardContent>
+                </TextCard>
+              </CardsHorizontalScroller>
+            </SubheaderContent>
+          </SubpageSection>
+
+          <SectionDivider />
+
+          <EarnALPHSection />
+
+          {/*<SubpageSection>
+            <TextElement isCentered>
               <h2>Get ALPH</h2>
               <p>
                 <strong>There are many ways to get ALPH.</strong> You can it some with traditional fiat currency,
                 exchanging it with another cryptocurrency, or bridging from another ecosystem.
               </p>
             </TextElement>
-            <SubheaderContent>
+            <SubheaderContent isCentered>
               <Grid columns={2} gap="small">
                 {exchanges.map(
                   (exchange) =>
@@ -196,52 +252,49 @@ const CustomPage = (props: PageProps) => {
               </Grid>
               <Button url="https://www.coingecko.com/en/coins/alephium#markets">See more ALPH markets</Button>
             </SubheaderContent>
-          </SubpageSection>
+          </SubpageSection>*/}
 
-          <SubpageSection border>
-            <GatsbyImageWrapper
-              image={ecosystemImageData}
-              alt="Ecosystem background"
-              style={{ height: '100%' }}
-              objectFit="cover"
-              loading="lazy"
-              isBackground
-            />
+          <SectionDivider />
+
+          <SubpageImageHeroSection
+            backgroundImage={ecosystemImage}
+            alignContent="center"
+            bottomMargin
+            minHeight="500px"
+            split
+          >
             <TextElement isCentered>
               <h2>Explore the ecosystem</h2>
               <p>
-                <strong>
-                  Discover innovative dApps and tokenized assets - trade, borrow, lend or earn ALPH, by engaging with
-                  DeFi protocols or contributing to the ecosystem.
-                </strong>
+                <strong>All the dApps, tools, integrations, partners and more, in one place.</strong>
               </p>
-              <Button big url="https://alph.land">
+              <Button big highlight url="https://alph.land">
                 See all apps
               </Button>
             </TextElement>
-          </SubpageSection>
+          </SubpageImageHeroSection>
 
-          <SubpageSection isCentered>
+          <SubpageSection wide bgColor="2" isCentered edgeGradient>
             <TextElement isCentered>
-              <h2>Build on Alephium</h2>
+              <h2>
+                <span>Build</span> on Alephium
+              </h2>
               <p>
-                With robust smart contract security, high-performance sharding, and a resilient Proof-of-Work
-                foundation, <strong>Alephium gives you the tools to build better, safer, and faster.</strong>
+                Alephium&apos;s scalable Proof-of-Less-Work and secure Smart Contracts give you the tools to{' '}
+                <strong>build better, faster and safer.</strong>
               </p>
             </TextElement>
 
-            <SubheaderContent>
-              <Grid columns={2} isCentered gap="small">
-                <TextCard url="https://docs.alephium.org/">
+            <SubheaderContent isCentered>
+              <Grid columns={2} gap="small">
+                <TextCard border url="https://docs.alephium.org/">
                   <TextCardContent>
-                    <ImageIcon image={documentationIcon?.childImageSharp?.gatsbyImageData} rounded />
                     <h3>Documentation</h3>
                     <p>Documentation to get you going quick and easy.</p>
                   </TextCardContent>
                 </TextCard>
-                <TextCard url="/grants">
+                <TextCard border url="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md">
                   <TextCardContent>
-                    <ImageIcon image={goldIcon?.childImageSharp?.gatsbyImageData} rounded />
                     <h3>Grants</h3>
                     <p>
                       You have an idea, but no funding?
@@ -251,8 +304,9 @@ const CustomPage = (props: PageProps) => {
                   </TextCardContent>
                 </TextCard>
               </Grid>
-            </SubheaderContent>
-            <SubheaderContent isCentered>
+
+              <SectionDivider />
+
               <TextElement isCentered>
                 <h3>Guides and tutorials</h3>
                 <Button url="https://docs.alephium.org/ralph">Ralph Language</Button>
@@ -264,27 +318,22 @@ const CustomPage = (props: PageProps) => {
             </SubheaderContent>
           </SubpageSection>
 
+          <SectionDivider />
+
           <SubpageImageHeroSection backgroundImage={mineImage} minHeight="800px">
             <h2>
               Mine ALPH.
-              <br />
-              Secure the Network.
-              <br />
-              Earn Rewards.
+              <small>
+                <br />
+                Secure the Network.
+                <br />
+                Earn Rewards.
+              </small>
             </h2>
-            <hr />
             <p>
-              ALPH mining is <strong>efficient, accessible, and built for long-term sustainability</strong>. Powered by
-              Proof-of-Less-Work,{' '}
-              <strong>Alephium reduces energy consumption by 87% compared to traditional PoW</strong>, making mining
-              more sustainable and rewarding.
+              ALPH mining is <strong>efficient, accessible, and built for long-term sustainability.</strong>
             </p>
-            <ul>
-              <li>Clear and fair emissions schedule</li>
-              <li>Energy efficient</li>
-              <li>Easy setup and quick start</li>
-            </ul>
-            <Button big url="https://docs.alephium.org/mining">
+            <Button big highlight url="https://docs.alephium.org/mining">
               Start mining
             </Button>
           </SubpageImageHeroSection>
@@ -307,3 +356,71 @@ const CustomPage = (props: PageProps) => {
 }
 
 export default CustomPage
+
+const cardVariants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 }
+}
+
+const EarnALPHSection = () => {
+  const theme = useTheme()
+
+  return (
+    <SubpageSection wide>
+      <TextElement isCentered>
+        <h2>Earn ALPH</h2>
+        <p>
+          You can earn ALPH by using apps built on Alephium, participating in grants and bounties (coming soon), finding
+          bugs in the network or mining.
+        </p>
+      </TextElement>
+      <SubheaderContent>
+        <CardsRow>
+          <CardsRowSegment>
+            <TextCard border url="https://alph.land" variants={cardVariants}>
+              <TextCardContent>
+                <h3 style={{ color: theme.palette1 }}>Apps</h3>
+                <p>
+                  Earn rewards by participating in select dApps on Alephium: provide liquidity, lend and more to start
+                  generating yield.
+                </p>
+              </TextCardContent>
+            </TextCard>
+            <TextCard
+              border
+              url="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md"
+              variants={cardVariants}
+            >
+              <TextCardContent>
+                <h3 style={{ color: theme.palette2 }}>Grants & Bounties</h3>
+                <p>Apply for a grant to develop your project on Alephium.</p>
+              </TextCardContent>
+            </TextCard>
+          </CardsRowSegment>
+          <CardsRowSegment>
+            <TextCard
+              border
+              url="https://github.com/alephium/community/blob/master/BugBounty.md"
+              variants={cardVariants}
+            >
+              <TextCardContent>
+                <h3 style={{ color: theme.palette3 }}>Bugs</h3>
+                <p>
+                  Help secure the network, earn rewards for responsibly reporting vulnerabilities based on their impact.
+                </p>
+              </TextCardContent>
+            </TextCard>
+            <TextCard border url="https://docs.alephium.org/mining" variants={cardVariants}>
+              <TextCardContent>
+                <h3 style={{ color: theme.palette4 }}>Mine</h3>
+                <p>
+                  <strong>Start mining</strong> Alephium and earn rewards.
+                </p>
+              </TextCardContent>
+            </TextCard>
+          </CardsRowSegment>
+        </CardsRow>
+      </SubheaderContent>
+    </SubpageSection>
+  )
+}

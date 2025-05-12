@@ -9,11 +9,9 @@ export const getPointerAbsolutePositionInElement = (e: PointerEvent) => {
   }
 }
 
-export const getPointerRelativePositionInElement = (e: PointerEvent) => {
-  const { x: posX, y: posY } = getPointerAbsolutePositionInElement(e)
-
-  return {
-    x: posX / e.currentTarget.clientWidth,
-    y: posY / e.currentTarget.clientHeight
-  }
+export const getPointerRelativePositionInElement = (e: React.PointerEvent) => {
+  const rect = e.currentTarget.getBoundingClientRect()
+  const x = (e.clientX - rect.left) / rect.width
+  const y = (e.clientY - rect.top) / rect.height
+  return { x, y }
 }

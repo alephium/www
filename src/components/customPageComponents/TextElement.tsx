@@ -1,5 +1,8 @@
+import { colord } from 'colord'
 import { ReactNode } from 'react'
 import styled, { css } from 'styled-components'
+
+import { deviceBreakPoints } from '../../styles/global-style'
 
 export interface TextElementProps {
   children?: ReactNode
@@ -10,16 +13,32 @@ export interface TextElementProps {
   className?: string
   noHeadingsMargins?: boolean
   noTextCentering?: boolean
+  backgroundColor?: string
+  isFootnote?: boolean
 }
 
 const TextElement = styled.div<TextElementProps>`
+  position: relative;
+  ${({ backgroundColor }) =>
+    backgroundColor &&
+    css`
+      background: linear-gradient(to right, ${backgroundColor}, transparent);
+    `};
+
+  * {
+    ${({ backgroundColor }) =>
+      backgroundColor &&
+      css`
+        color: ${colord(backgroundColor).isLight() ? 'var(--color-black)' : 'var(--color-white)'} !important;
+      `}
+  }
+
   ${({ isCentered, noTextCentering }) =>
     isCentered &&
     !noTextCentering &&
     css`
       text-align: center;
     `}
-
   ${({ noMargin }) =>
     noMargin &&
     css`
@@ -27,17 +46,15 @@ const TextElement = styled.div<TextElementProps>`
         margin: 0;
       }
     `}
-
-  > h1,
-  > h2,
-  > h3,
-  > h4 {
+      > h1,
+    > h2, > h3, > h4 {
     font-weight: var(--fontWeight-medium);
     color: ${({ theme }) => theme.textPrimary};
     white-space: pre-wrap;
 
     &:first-child {
       margin-top: 0;
+      padding-top: 0;
     }
 
     ${({ noHeadingsMargins }) =>
@@ -48,23 +65,47 @@ const TextElement = styled.div<TextElementProps>`
   }
 
   > h1 {
+    font-family: 'Geist';
     line-height: 1;
-    font-family: 'Sentient';
-    font-size: var(--fontSize-64);
+
+    font-size: var(--fontSize-72);
     font-weight: var(--fontWeight-semiBold);
+
+    @media ${deviceBreakPoints.mobile} {
+      font-size: var(--fontSize-64);
+    }
   }
 
   > h2 {
-    font-family: 'Sentient';
-    font-size: var(--fontSize-56);
-    margin-bottom: var(--spacing-6);
-    color: ${({ theme }) => theme.textPrimaryVariation};
+    font-family: 'Geist';
+    font-size: var(--fontSize-58);
+    margin-bottom: var(--spacing-4);
+    font-weight: var(--fontWeight-semiBold);
+    color: ${({ theme }) => theme.textPrimary};
     line-height: 1;
+
+    small {
+      font-size: inherit;
+      color: ${({ theme }) => theme.textSecondary};
+    }
+
+    hr {
+      height: 16px;
+      background: linear-gradient(to right, ${({ theme }) => theme.textPrimary}, transparent 30%);
+      margin: var(--spacing-5) 0 0;
+      border: none;
+      mask-image: url("data:image/svg+xml,%3Csvg width='100' height='16' viewBox='0 0 100 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 8 Q 12.5 0, 25 8 T 50 8 T 75 8 T 100 8' fill='none' stroke='black' stroke-width='3'/%3E%3C/svg%3E");
+      mask-size: 100px 16px;
+      mask-repeat: repeat-x;
+      -webkit-mask-image: url("data:image/svg+xml,%3Csvg width='100' height='16' viewBox='0 0 100 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 8 Q 12.5 0, 25 8 T 50 8 T 75 8 T 100 8' fill='none' stroke='black' stroke-width='3'/%3E%3C/svg%3E");
+      -webkit-mask-size: 100px 16px;
+      -webkit-mask-repeat: repeat-x;
+    }
   }
 
   > h3 {
-    font-family: 'InterDisplay';
-    font-size: var(--fontSize-36);
+    font-family: 'Geist';
+    font-size: var(--fontSize-38);
     font-weight: var(--fontWeight-medium);
     margin-bottom: var(--spacing-2);
 
@@ -73,6 +114,21 @@ const TextElement = styled.div<TextElementProps>`
       css`
         font-size: var(--fontSize-24);
         line-height: var(--lineHeight-28);
+      `}
+
+    ${({ isCentered }) =>
+      isCentered &&
+      css`
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+      `}
+
+      ${({ isFootnote }) =>
+      isFootnote &&
+      css`
+        font-size: var(--fontSize-18);
+        line-height: var(--lineHeight-24);
       `}
   }
 
@@ -93,12 +149,20 @@ const TextElement = styled.div<TextElementProps>`
     font-weight: inherit;
   }
 
+  > label {
+    color: ${({ theme }) => theme.background1};
+    font-size: var(--fontSize-14);
+    font-weight: var(--fontWeight-medium);
+    margin-bottom: var(--spacing-2);
+    text-transform: uppercase;
+  }
+
   p,
   ul {
     color: ${({ theme }) => theme.textSecondary};
 
-    font-size: var(--fontSize-24);
-    font-weight: var(--fontWeight-semiBold);
+    font-size: var(--fontSize-22);
+    font-weight: var(--fontWeight-medium);
     line-height: 1.3;
     max-width: 700px;
 
@@ -112,12 +176,25 @@ const TextElement = styled.div<TextElementProps>`
     ${({ isSmall, isBodySmall }) =>
       (isSmall || isBodySmall) &&
       css`
-        font-size: var(--fontSize-22);
+        font-size: var(--fontSize-18);
         line-height: var(--lineHeight-28);
+      `}
+
+    ${({ isFootnote }) =>
+      isFootnote &&
+      css`
+        font-size: var(--fontSize-18);
+        font-weight: var(--fontWeight-normal);
+        line-height: var(--lineHeight-24);
       `}
 
     > a {
       color: ${({ theme }) => theme.link};
+    }
+
+    &:first-child {
+      margin-top: 0;
+      padding-top: 0;
     }
   }
 
@@ -141,16 +218,26 @@ const TextElement = styled.div<TextElementProps>`
   }
 
   > ul {
-    padding-inline-start: 10px;
+    padding-inline-start: 0;
+    padding-left: 10px;
     list-style-type: none;
     color: ${({ theme }) => theme.textPrimary};
 
     > li {
-      margin-bottom: var(--spacing-1);
+      position: relative;
+      padding-left: 1.5em;
+      margin-bottom: var(--spacing-2);
 
       &:before {
         content: '—';
-        padding-right: 10px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        line-height: 1.3; /* Align the dash with text */
+      }
+
+      > span {
+        display: block;
       }
     }
   }

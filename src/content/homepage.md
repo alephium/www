@@ -31,30 +31,39 @@ pageSectionCtaContent:
 
 partnersSection:
   partners:
-    - title: 'Bitcoin Association Switzerland'
-      logo: '../images/svgs/bas-logo-white.svg'
-      url: https://www.bitcoinassociation.ch/
-    - title: 'Cetacean Capital'
-      logo: '../images/logos/cetacean-capital-icon.png'
-      url: https://cetacean.capital/
-    - title: 'Crypto Valley Association'
-      logo: '../images/svgs/crypto-valley-association-vector-logo.svg'
-      url: https://cryptovalley.swiss/
-    - title: 'Dappnode'
-      logo: '../images/logos/Dappnode-logo-bw.png'
-      url: https://dappnode.io
-    - title: 'Flux Labs'
-      logo: '../images/svgs/flux-seeklogo.com.svg'
-      url: https://runonflux.io/
-    - title: 'Hodling SA'
-      logo: '../images/svgs/hodling-icon-bw-darkBackground.svg'
-      url: https://www.hodling.ch/
-    - title: 'Leax'
-      logo: '../images/logos/leax.svg'
-      url: https://www.leax.ch/
-    - title: 'UTXO Alliance'
-      logo: '../images/svgs/utxo-aliance-logo-white.svg'
-      url: https://utxo-alliance.org/
+    - title: 'Bitmain'
+      logo: '../images/svgs/bitmain-logo.svg'
+      url: 'https://www.bitmain.com'
+    - title: 'Dia'
+      logo: '../images/svgs/dia-logo.svg'
+      url: https://www.diadata.org/
+    - title: 'Flux'
+      logo: '../images/svgs/flux-logo.svg'
+      url: 'https://runonflux.com'
+    - title: 'Goldshell'
+      logo: '../images/goldshell-logo.png'
+      url: 'https://www.goldshell.com/'
+    - title: 'IceRiver'
+      logo: '../images/svgs/iceriver-logo.svg'
+      url: https://iceriver.eu/
+    - title: 'Ledger'
+      logo: '../images/svgs/ledger-logo.svg'
+      url: https://www.ledger.com/
+    - title: 'OneKey'
+      logo: '../images/svgs/onekey-logo.svg'
+      url: https://www.onekey.so/
+    - title: 'Onramper'
+      logo: '../images/svgs/onramper-logo.svg'
+      url: https://onramper.com/
+    - title: 'Primevault'
+      logo: '../images/svgs/primevault-logo.svg'
+      url: https://www.primevault.com/
+    - title: 'SafePal'
+      logo: '../images/svgs/safepal-logo.svg'
+      url: https://www.safepal.com/
+    - title: 'Tangem'
+      logo: '../images/svgs/tangem-logo.svg'
+      url: https://www.tangem.com/
 
 todoListSection:
   title: What's next

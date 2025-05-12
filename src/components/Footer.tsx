@@ -7,7 +7,6 @@ import AlephiumLogo from './AlephiumLogo'
 import Column from './Columns/Column'
 import Columns from './Columns/Columns'
 import NavigationMenuSocials from './navigation/NavigationMenuSocials'
-import PageSectionContainer from './PageSectionContainer'
 import ScrollToTop from './ScrollToTop'
 import SimpleLink from './SimpleLink'
 
@@ -44,44 +43,46 @@ const Footer = () => {
     <>
       <ScrollToTop />
       <FooterStyled>
-        <PageSectionContainerStyled>
-          <FooterColumnsSection gap="var(--spacing-4)">
-            {columnsContent?.map((column) => (
-              <Column key={column?.title}>
-                <FooterColumn>
-                  <div className="title">{column?.title}</div>
-                  <ul>
-                    {column?.links?.map(
-                      (link) =>
-                        link?.text &&
-                        link?.url && (
-                          <li key={link.text}>
-                            <SimpleLink
-                              text={link.text}
-                              url={link.url}
-                              color={theme.textTertiary}
-                              trackingName={`footer:${link?.text?.replaceAll(' ', '-')}-link`}
-                            />
-                          </li>
-                        )
-                    )}
-                  </ul>
-                </FooterColumn>
-              </Column>
-            ))}
-          </FooterColumnsSection>
-        </PageSectionContainerStyled>
-        <PageSectionContainerBottom>
-          <BottomColumn>
-            <LogosSection>
-              <LogoStyled gradientIndex={0} fill={theme.textTertiary} />
-            </LogosSection>
-          </BottomColumn>
-          <BottomColumnCenter>{bottomContent?.text}</BottomColumnCenter>
-          <BottomColumn>
-            <NavigationMenuSocialsStyled enabledItems={bottomContent?.socials?.filter(notEmpty) ?? []} />
-          </BottomColumn>
-        </PageSectionContainerBottom>
+        <FooterContent>
+          <ContainerLeft>
+            <BottomColumn>
+              <LogosSection>
+                <LogoStyled gradientIndex={0} fill={theme.textPrimary} />
+              </LogosSection>
+            </BottomColumn>
+            <BottomColumn>
+              <NavigationMenuSocialsStyled enabledItems={bottomContent?.socials?.filter(notEmpty) ?? []} />
+            </BottomColumn>
+            <BottomColumnCenter>{bottomContent?.text}</BottomColumnCenter>
+          </ContainerLeft>
+          <ContainerRight>
+            <FooterColumnsSection gap="var(--spacing-4)">
+              {columnsContent?.map((column) => (
+                <Column key={column?.title}>
+                  <FooterColumn>
+                    <div className="title">{column?.title}</div>
+                    <ul>
+                      {column?.links?.map(
+                        (link) =>
+                          link?.text &&
+                          link?.url && (
+                            <li key={link.text}>
+                              <SimpleLink
+                                text={link.text}
+                                url={link.url}
+                                color={theme.textTertiary}
+                                trackingName={`footer:${link?.text?.replaceAll(' ', '-')}-link`}
+                              />
+                            </li>
+                          )
+                      )}
+                    </ul>
+                  </FooterColumn>
+                </Column>
+              ))}
+            </FooterColumnsSection>
+          </ContainerRight>
+        </FooterContent>
       </FooterStyled>
     </>
   )
@@ -89,11 +90,58 @@ const Footer = () => {
 
 export default Footer
 
-const PageSectionContainerBottom = styled(PageSectionContainer)`
+const FooterStyled = styled.div`
+  padding: var(--spacing-12) 0;
+  background-color: ${({ theme }) => theme.background3};
+  border-top: 1px solid ${({ theme }) => theme.borderPrimary};
+  color: ${({ theme }) => theme.textPrimary};
+  font-size: var(--fontSize-18);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(
+      circle at 0% 0%,
+      transparent 0%,
+      transparent 10%,
+      ${({ theme }) => theme.textPrimary} 20%,
+      ${({ theme }) => theme.palette4} 25%,
+      ${({ theme }) => theme.palette6} 30%,
+      ${({ theme }) => theme.palette1} 40%,
+      ${({ theme }) => theme.palette3} 55%,
+      ${({ theme }) => theme.palette2} 60%,
+      transparent 65%
+    );
+    mask-image: radial-gradient(ellipse 100% 100% at left bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 80%);
+    -webkit-mask-image: radial-gradient(ellipse 100% 100% at left bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 80%);
+    pointer-events: none;
+    opacity: 0.5;
+  }
+`
+
+const FooterContent = styled.div`
   display: flex;
-  align-items: center;
-  flex-direction: row;
-  padding: var(--spacing-12) 0 0;
+  width: var(--page-width);
+  margin: 0 auto;
+
+  @media ${deviceBreakPoints.mobile} {
+    flex-direction: column;
+    gap: var(--spacing-4);
+  }
+`
+
+const ContainerLeft = styled.div`
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-4);
+  flex-direction: column;
 
   @media ${deviceBreakPoints.mobile} {
     flex-direction: column;
@@ -103,9 +151,21 @@ const PageSectionContainerBottom = styled(PageSectionContainer)`
   }
 `
 
-const BottomColumn = styled.div`
+const ContainerRight = styled.div`
   flex: 1;
+  display: flex;
+  gap: var(--spacing-10);
+  justify-content: space-between;
+
+  @media ${deviceBreakPoints.mobile} {
+    flex-direction: column;
+    gap: var(--spacing-10);
+    align-items: center;
+    text-align: center;
+  }
 `
+
+const BottomColumn = styled.div``
 
 const BottomColumnCenter = styled(BottomColumn)`
   text-align: center;
@@ -116,18 +176,19 @@ const NavigationMenuSocialsStyled = styled(NavigationMenuSocials)`
   justify-content: flex-end;
 `
 
-const FooterStyled = styled.div`
-  padding: var(--spacing-12) 0;
-  background-color: ${({ theme }) => theme.bgSurface};
-  color: ${({ theme }) => theme.textPrimary};
-  font-size: var(--fontSize-18);
-  border-top: 1px solid ${({ theme }) => theme.separator};
+const LogoStyled = styled(AlephiumLogo)`
+  height: auto;
+  max-width: 30px;
+  position: relative;
+  z-index: 1;
 `
 
 const LogosSection = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  position: relative;
+  padding: 4px;
 `
 
 const FooterColumn = styled.div`
@@ -147,22 +208,4 @@ const FooterColumn = styled.div`
 
 const FooterColumnsSection = styled(Columns)`
   flex-grow: 1;
-`
-
-const PageSectionContainerStyled = styled(PageSectionContainer)`
-  display: flex;
-  gap: var(--spacing-10);
-  justify-content: space-between;
-
-  @media ${deviceBreakPoints.mobile} {
-    flex-direction: column;
-    gap: var(--spacing-10);
-    align-items: center;
-    text-align: center;
-  }
-`
-
-const LogoStyled = styled(AlephiumLogo)`
-  height: auto;
-  max-width: 30px;
 `

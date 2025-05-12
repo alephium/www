@@ -2,7 +2,7 @@ module.exports = {
   graphqlTypegen: true,
   siteMetadata: {
     siteUrl: 'https://alephium.org',
-    title: 'Alephium | Scalable Proof-of-Work Blockchain for Real-World Apps',
+    title: 'Alephium | Scalable Proof-of-Work and secure Smart Contracts.',
     description:
       'Alephium is the next generation PoW Layer 1 with smart contracts. Built for speed, security, and sustainability. Start building or join the community today.',
     social: {
@@ -148,7 +148,7 @@ module.exports = {
         directives: {
           'style-src': "'self' 'unsafe-inline' https://www.gstatic.com",
           'script-src':
-            "'self' 'unsafe-inline' 'unsafe-eval' https://gc.zgo.at https://translate.googleapis.com https://translate.google.com https://translate-pa.googleapis.com https://cdn.usefathom.com",
+            "'self' 'unsafe-inline' https://translate.googleapis.com https://translate.google.com https://translate-pa.googleapis.com https://cdn.usefathom.com",
           'default-src': "'none'",
           'manifest-src': "'self'",
           'connect-src':

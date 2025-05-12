@@ -14,7 +14,7 @@ interface TrackCardProp {
 const TrackCard = ({ illustration, title, description, className }: TrackCardProp) => {
   const theme = useTheme()
   return (
-    <TrackCardStyled className={className} borderColor={theme.bgPrimary} thickBorders bgColor={theme.bgSecondary}>
+    <TrackCardStyled className={className} borderColor={theme.surface1} thickBorders bgColor={theme.surface2}>
       <Illustration>{illustration}</Illustration>
       <TextContent>
         <h3>{title}</h3>
@@ -29,7 +29,7 @@ export default TrackCard
 const TrackCardStyled = styled(Card)`
   padding: 0;
   border-color: ${({ theme }) => theme.borderPrimary};
-  background-color: ${({ theme }) => theme.bgPrimary};
+  background-color: ${({ theme }) => theme.surface1};
   border-radius: 0;
 
   h3 {
@@ -39,7 +39,7 @@ const TrackCardStyled = styled(Card)`
 `
 
 const Illustration = styled.div`
-  background-color: ${({ theme }) => theme.bgSecondary};
+  background-color: ${({ theme }) => theme.surface2};
 `
 
 const TextContent = styled.div`

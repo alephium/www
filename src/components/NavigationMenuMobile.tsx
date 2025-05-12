@@ -82,7 +82,7 @@ const MobileNavigationMenuStyled = styled(motion.div)`
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: ${({ theme }) => theme.bgTertiary};
+  background-color: ${({ theme }) => theme.background1};
   z-index: 10000; // Terrible way to do this, but it would require a lot of rework on all other places that use z-index
   overflow: auto;
 `
@@ -156,7 +156,6 @@ export const navigationMenuQuery = graphql`
 
 const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean }>`
   position: static;
-  margin-top: 30px;
   margin-bottom: -100px;
   padding-right: 30px;
   padding-left: 30px;

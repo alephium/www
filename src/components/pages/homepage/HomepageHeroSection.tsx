@@ -2,57 +2,83 @@ import { graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../../../styles/global-style'
-import ArrowedLink from '../../ArrowedLink'
 import Button from '../../Button'
-import SubpageVideoHeroSection from '../../customPageComponents/SubpageVideoHeroSection'
+import SubpageSection from '../../customPageComponents/SubpageSection'
+import TextElement from '../../customPageComponents/TextElement'
+import EddyBackground from '../../EddyBackground'
+import HomepagePartnersSection from './HomepagePartnersSection'
 
-export const homepageHeroQuery = graphql`
-  query HomepageHero {
-    heroImage: file(relativePath: { eq: "lake-pan-poster.png" }) {
-      ...HeroImage
-    }
-    heroVideo: file(relativePath: { eq: "lake-pan-scrub.mp4" }) {
-      publicURL
+export const pageQuery = graphql`
+  query HeroSection {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/homepage.md/" } }) {
+      nodes {
+        frontmatter {
+          partnersSection {
+            ...HomepagePartnersSection
+          }
+        }
+      }
     }
   }
 `
 
 const HomepageHeroSection = () => {
-  const { heroImage, heroVideo } = useStaticQuery<Queries.HomepageHeroQuery>(homepageHeroQuery)
+  const { allMarkdownRemark } = useStaticQuery<Queries.HeroSectionQuery>(pageQuery)
+  const content = allMarkdownRemark.nodes[0].frontmatter
 
   return (
-    <SubpageVideoHeroSection video={heroVideo} poster={heroImage}>
-      <h1>
-        Engineered
-        <br />
-        for the Future.
-      </h1>
-      <hr />
-      <p>
-        <strong>
-          Alephium brings the security of Proof-of-Work, the scalability of sharding, and the power of smart contracts
-          to real-world applications
-        </strong>
-        .
-      </p>
+    <SubpageSectionStyled>
+      <EddyBackground />
+      <TextElementStyled isCentered>
+        <h1>
+          The Web3
+          <br /> you were promised.
+        </h1>
+        <p>
+          <strong>
+            Fast & Scalable Proof-of-Work and secure Smart Contracts,
+            <br />
+            <b> only on Alephium.</b>
+          </strong>
+        </p>
+      </TextElementStyled>
 
       <Buttons>
-        <Button url="https://docs.alephium.org">Build on Alephium</Button>
-        <ArrowedLink url="/communities">Join the community</ArrowedLink>
+        <Button big highlight url="/get-started">
+          Get started
+        </Button>
       </Buttons>
-    </SubpageVideoHeroSection>
+      {content?.partnersSection && <HomepagePartnersSection {...content.partnersSection} />}
+    </SubpageSectionStyled>
   )
 }
 
 export default HomepageHeroSection
 
+const SubpageSectionStyled = styled(SubpageSection)`
+  padding-bottom: var(--spacing-6);
+  padding-right: var(--spacing-4);
+  padding-left: var(--spacing-4);
+`
+
+const TextElementStyled = styled(TextElement)`
+  * {
+    color: black !important;
+  }
+`
+
 const Buttons = styled.div`
   display: flex;
+  justify-content: center;
   gap: var(--spacing-4);
-  margin-top: var(--spacing-8);
+  margin-top: var(--spacing-2);
+  margin-bottom: var(--spacing-4);
 
   @media ${deviceBreakPoints.mobile} {
     margin-top: var(--spacing-4);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   @media ${deviceBreakPoints.smallMobile} {

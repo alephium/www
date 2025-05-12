@@ -4,6 +4,7 @@ import SimpleLink, { SimpleLinkProps } from '../SimpleLink'
 
 interface ClickableBoxProps extends SimpleLinkProps {
   align?: 'top' | 'center'
+  orientation?: 'horizontal' | 'vertical'
 }
 
 const ClickableBox = (props: ClickableBoxProps) => (props.url ? <ClickableBoxStyled {...props} /> : <Box {...props} />)
@@ -15,11 +16,12 @@ const BoxStyles = css<ClickableBoxProps>`
   display: flex;
   align-items: ${({ align }) => (align === 'top' ? 'flex-start' : 'center')};
   gap: var(--spacing-4);
-  background-color: ${({ theme }) => theme.bgSecondary};
+  background-color: ${({ theme }) => theme.surface2};
   border-radius: var(--radius);
-  padding: var(--spacing-2);
+  padding: var(--spacing-4);
+
   &:hover {
-    background-color: ${({ theme }) => theme.bgPrimary};
+    background-color: ${({ theme }) => theme.surface1};
   }
 
   p + p {
@@ -33,4 +35,11 @@ const Box = styled.div<ClickableBoxProps>`
 
 const ClickableBoxStyled = styled(SimpleLink)<ClickableBoxProps>`
   ${BoxStyles}
+
+  ${({ orientation }) =>
+    orientation === 'vertical' &&
+    css`
+      flex-direction: column;
+      align-items: center;
+    `}
 `
