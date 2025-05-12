@@ -376,7 +376,7 @@ const EarnALPHSection = () => {
       </TextElement>
       <SubheaderContent>
         <CardsRow>
-          <CardsRowSegment minWidth={200}>
+          <CardsRowSegment>
             <TextCard border url="https://alph.land" variants={cardVariants}>
               <TextCardContent>
                 <h3 style={{ color: theme.palette1 }}>Apps</h3>
@@ -396,6 +396,8 @@ const EarnALPHSection = () => {
                 <p>Apply for a grant to develop your project on Alephium.</p>
               </TextCardContent>
             </TextCard>
+          </CardsRowSegment>
+          <CardsRowSegment>
             <TextCard
               border
               url="https://github.com/alephium/community/blob/master/BugBounty.md"
@@ -405,6 +407,14 @@ const EarnALPHSection = () => {
                 <h3 style={{ color: theme.palette3 }}>Bugs</h3>
                 <p>
                   Help secure the network, earn rewards for responsibly reporting vulnerabilities based on their impact.
+                </p>
+              </TextCardContent>
+            </TextCard>
+            <TextCard border url="https://docs.alephium.org/mining" variants={cardVariants}>
+              <TextCardContent>
+                <h3 style={{ color: theme.palette4 }}>Mine</h3>
+                <p>
+                  <strong>Start mining</strong> Alephium and earn rewards.
                 </p>
               </TextCardContent>
             </TextCard>
