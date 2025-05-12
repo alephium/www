@@ -1,8 +1,10 @@
 import { graphql, PageProps, useStaticQuery } from 'gatsby'
+import { useTheme } from 'styled-components'
 
 import Button from '../components/Button'
 import CardFooterButtonContainer from '../components/common/CardFooterButtonContainer'
 import CardsHorizontalScroller from '../components/common/CardsHorizontalScroller'
+import CardsRow from '../components/customPageComponents/CardsRow'
 import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
@@ -73,6 +75,7 @@ const exchangesQuery = graphql`
 
 const CustomPage = (props: PageProps) => {
   const { treasureImage, mineImage, ecosystemImage } = useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
+  const theme = useTheme()
 
   return (
     <Page
@@ -221,6 +224,10 @@ const CustomPage = (props: PageProps) => {
             </SubheaderContent>
           </SubpageSection>
 
+          <SectionDivider />
+
+          <EarnALPHSection />
+
           {/*<SubpageSection>
             <TextElement isCentered>
               <h2>Get ALPH</h2>
@@ -360,3 +367,55 @@ const CustomPage = (props: PageProps) => {
 }
 
 export default CustomPage
+
+const cardVariants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 }
+}
+
+const EarnALPHSection = () => {
+  const theme = useTheme()
+
+  return (
+    <SubpageSection wide>
+      <TextElement isCentered>
+        <h2>Earn ALPH</h2>
+        <p>
+          You can earn ALPH by using apps built on Alephium, participating in grants and bounties (coming soon), finding
+          bugs in the network or mining.
+        </p>
+      </TextElement>
+      <SubheaderContent>
+        <CardsRow>
+          <TextCard border url="https://alph.land" variants={cardVariants}>
+            <TextCardContent>
+              <h3 style={{ color: theme.palette1 }}>Apps</h3>
+              <p>
+                Earn rewards by participating in select dApps on Alephium: provide liquidity, lend and more to start
+                generating yield.
+              </p>
+            </TextCardContent>
+          </TextCard>
+          <TextCard
+            border
+            url="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md"
+            variants={cardVariants}
+          >
+            <TextCardContent>
+              <h3 style={{ color: theme.palette2 }}>Grants & Bounties</h3>
+              <p>Apply for a grant to develop your project on Alephium.</p>
+            </TextCardContent>
+          </TextCard>
+          <TextCard border url="https://github.com/alephium/community/blob/master/BugBounty.md" variants={cardVariants}>
+            <TextCardContent>
+              <h3 style={{ color: theme.palette3 }}>Bugs</h3>
+              <p>
+                Help secure the network, earn rewards for responsibly reporting vulnerabilities based on their impact.
+              </p>
+            </TextCardContent>
+          </TextCard>
+        </CardsRow>
+      </SubheaderContent>
+    </SubpageSection>
+  )
+}
