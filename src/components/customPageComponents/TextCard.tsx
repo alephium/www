@@ -274,7 +274,7 @@ const CardStyled = styled(motion.div)<{
         content: '→';
         position: absolute;
         right: 0;
-        top: 50%;
+        top: 25px;
         transform: translateY(-50%);
         font-size: var(--fontSize-24);
         transition: transform 0.3s ease, color 0.3s ease;
