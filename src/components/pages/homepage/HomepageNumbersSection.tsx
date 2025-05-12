@@ -255,7 +255,7 @@ export default HomepageNumbersSection
 const BorderedBox = styled.div`
   flex: 1;
   border-radius: var(--radius-big);
-  border: 3px solid ${({ theme }) => theme.borderPrimary};
+  border: 2px solid ${({ theme }) => theme.borderPrimary};
   padding: var(--spacing-11);
   padding-bottom: var(--spacing-16);
   box-shadow: 0 50px 50px rgba(0, 0, 0, 0.3);

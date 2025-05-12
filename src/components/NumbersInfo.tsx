@@ -22,6 +22,7 @@ export default styled(NumbersInfo)`
   .number {
     font-size: var(--fontSize-56);
     margin-bottom: var(--spacing-3);
+    color: ${({ theme }) => theme.textPrimary};
 
     & + div {
       font-size: var(--fontSize-22);

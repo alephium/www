@@ -71,11 +71,11 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
               <GatsbyImageWrapper image={seaImage} alt="Sea" />
             </BottomBackgroundImageContainer>
             <TextElement isCentered>
-              <h2>
+              <h1>
                 It&apos;s time
                 <br />
                 to make waves.
-              </h2>
+              </h1>
               <p>
                 Alephium isn&apos;t just a vision, it&apos;s a fast growing ecosystem.
                 <br />

@@ -6,7 +6,7 @@ export const darkTheme: DefaultTheme = {
   name: 'dark',
 
   textPrimary: 'var(--color-white)',
-  textPrimaryVariation: 'rgba(255, 255, 255, 0.9)',
+  textPrimaryVariation: 'rgba(255, 255, 255, 0.8)',
   textSecondary: 'rgba(255, 255, 255, 0.7)',
   textTertiary: 'rgba(255, 255, 255, 0.4)',
 

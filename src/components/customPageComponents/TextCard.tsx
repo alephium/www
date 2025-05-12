@@ -141,7 +141,7 @@ const cardStyles = ({ border, bgColor }: { border?: boolean; bgColor?: TextCardP
       content: '';
       position: absolute;
       inset: 0;
-      border: 3px solid ${({ theme }) => theme.borderPrimary};
+      border: 2px solid ${({ theme }) => theme.borderPrimary};
       border-radius: inherit;
       backdrop-filter: saturate(200%) brightness(1.1);
       -webkit-backdrop-filter: saturate(200%) brightness(1.1);
@@ -190,7 +190,7 @@ const GradientBorder = styled.div`
     -webkit-backdrop-filter: blur(100px) saturate(180%);
     opacity: 0;
     transition: opacity 0.3s ease;
-    z-index: 0;
+    z-index: -1;
   }
 `
 
@@ -215,7 +215,8 @@ const TextElementStyled = styled(TextElement)`
 
   p {
     font-weight: var(--fontWeight-medium);
-    font-size: var(--fontSize-20);
+    font-size: var(--fontSize-18);
+    line-height: 1.4;
   }
 
   h3 {

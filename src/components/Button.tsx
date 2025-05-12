@@ -170,7 +170,7 @@ const StyledButton = styled(Button)`
 
   align-items: center;
   font-weight: var(--fontWeight-semiBold);
-  font-size: ${({ big }) => (big ? 'var(--fontSize-22)' : 'var(--fontSize-20)')};
+  font-size: ${({ big }) => (big ? 'var(--fontSize-22)' : 'var(--fontSize-18)')};
   transition: all 0.1s ease-out;
 
   &:hover {

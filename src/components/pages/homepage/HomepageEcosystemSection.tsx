@@ -474,5 +474,5 @@ const CenterButtonWrapper = styled.div`
   padding: var(--spacing-6);
   border-radius: 100px;
   backdrop-filter: blur(30px) brightness(40%);
-  border: 3px solid ${({ theme }) => theme.borderPrimary};
+  border: 2px solid ${({ theme }) => theme.borderPrimary};
 `

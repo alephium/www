@@ -67,7 +67,7 @@ const TextElement = styled.div<TextElementProps>`
     font-family: 'Geist';
     line-height: 1;
 
-    font-size: var(--fontSize-80);
+    font-size: var(--fontSize-70);
     font-weight: var(--fontWeight-semiBold);
 
     @media ${deviceBreakPoints.mobile} {
@@ -77,8 +77,8 @@ const TextElement = styled.div<TextElementProps>`
 
   > h2 {
     font-family: 'Geist';
-    font-size: var(--fontSize-60);
-    margin-bottom: var(--spacing-6);
+    font-size: var(--fontSize-58);
+    margin-bottom: var(--spacing-4);
     font-weight: var(--fontWeight-semiBold);
     color: ${({ theme }) => theme.textPrimary};
     line-height: 1;
@@ -93,10 +93,10 @@ const TextElement = styled.div<TextElementProps>`
       background: linear-gradient(to right, ${({ theme }) => theme.textPrimary}, transparent 30%);
       margin: var(--spacing-5) 0 0;
       border: none;
-      mask-image: url("data:image/svg+xml,%3Csvg width='100' height='16' viewBox='0 0 100 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 8 Q 12.5 0, 25 8 T 50 8 T 75 8 T 100 8' fill='none' stroke='black' stroke-width='4'/%3E%3C/svg%3E");
+      mask-image: url("data:image/svg+xml,%3Csvg width='100' height='16' viewBox='0 0 100 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 8 Q 12.5 0, 25 8 T 50 8 T 75 8 T 100 8' fill='none' stroke='black' stroke-width='3'/%3E%3C/svg%3E");
       mask-size: 100px 16px;
       mask-repeat: repeat-x;
-      -webkit-mask-image: url("data:image/svg+xml,%3Csvg width='100' height='16' viewBox='0 0 100 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 8 Q 12.5 0, 25 8 T 50 8 T 75 8 T 100 8' fill='none' stroke='black' stroke-width='4'/%3E%3C/svg%3E");
+      -webkit-mask-image: url("data:image/svg+xml,%3Csvg width='100' height='16' viewBox='0 0 100 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 8 Q 12.5 0, 25 8 T 50 8 T 75 8 T 100 8' fill='none' stroke='black' stroke-width='3'/%3E%3C/svg%3E");
       -webkit-mask-size: 100px 16px;
       -webkit-mask-repeat: repeat-x;
     }
@@ -104,7 +104,7 @@ const TextElement = styled.div<TextElementProps>`
 
   > h3 {
     font-family: 'Geist';
-    font-size: var(--fontSize-42);
+    font-size: var(--fontSize-38);
     font-weight: var(--fontWeight-medium);
     margin-bottom: var(--spacing-2);
 
@@ -153,7 +153,7 @@ const TextElement = styled.div<TextElementProps>`
   ul {
     color: ${({ theme }) => theme.textSecondary};
 
-    font-size: var(--fontSize-24);
+    font-size: var(--fontSize-22);
     font-weight: var(--fontWeight-medium);
     line-height: 1.3;
     max-width: 700px;
@@ -168,7 +168,7 @@ const TextElement = styled.div<TextElementProps>`
     ${({ isSmall, isBodySmall }) =>
       (isSmall || isBodySmall) &&
       css`
-        font-size: var(--fontSize-22);
+        font-size: var(--fontSize-18);
         line-height: var(--lineHeight-28);
       `}
 
