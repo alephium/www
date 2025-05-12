@@ -7,8 +7,7 @@ module.exports = {
       'Alephium is the next generation PoW Layer 1 with smart contracts. Built for speed, security, and sustainability. Start building or join the community today.',
     social: {
       twitter: 'alephium'
-    },
-    image: `/social-media-banner.png`
+    }
   },
   plugins: [
     {
