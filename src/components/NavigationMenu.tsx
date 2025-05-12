@@ -3,7 +3,7 @@ import { graphql, Link, useStaticQuery } from 'gatsby'
 import throttle from 'lodash/throttle'
 import { ReactNode, useEffect, useRef, useState } from 'react'
 import { RiTranslate2 } from 'react-icons/ri'
-import { RiArrowDropDownLine, RiArrowDropUpLine, RiMenu3Fill } from 'react-icons/ri'
+import { RiMenu3Fill } from 'react-icons/ri'
 import styled, { css, useTheme } from 'styled-components'
 
 import useOnClickOutside from '../hooks/useOnClickOutside'
@@ -144,7 +144,6 @@ const NavigationDrawer = ({ title, Icon, className, children }: NavigationDrawer
     <DrawerWrapper className={className} ref={ref}>
       <DrawerTitleWrapper onClick={handleTitleClick}>
         {title ? <DrawerTitle>{title}</DrawerTitle> : Icon ? Icon : null}
-        <DrawerCarretWrapper>{isOpen ? <RiArrowDropUpLine /> : <RiArrowDropDownLine />}</DrawerCarretWrapper>
       </DrawerTitleWrapper>
       <AnimatePresence>
         {isOpen && (
@@ -210,7 +209,6 @@ const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean; scr
 const NavigationMenuStyled = styled.div`
   width: var(--page-width);
   display: flex;
-  justify-content: center;
   font-weight: var(--fontWeight-medium);
   z-index: 1;
   padding: 0 30px;
@@ -220,7 +218,6 @@ const NavigationMenuStyled = styled.div`
     margin-left: var(--spacing-3);
     gap: var(--spacing-5);
     align-items: center;
-    justify-content: center;
     flex: 1;
 
     & > :last-child {
@@ -245,9 +242,10 @@ const NavigationMenuStyled = styled.div`
 
 const MenuItems = styled.div`
   flex: 1;
-  gap: 20px;
-  justify-content: center;
+  gap: var(--spacing-4);
   display: flex;
+  margin-left: var(--spacing-6);
+  padding-top: 4px;
 `
 
 const LinkStyled = styled(Link)`
@@ -271,17 +269,6 @@ const LinkStyle = css`
 
 const NavLink = styled(SimpleLink)`
   ${LinkStyle};
-`
-
-const DrawerCarretWrapper = styled.div`
-  height: 100%;
-  width: 22px;
-  display: flex;
-  > * {
-    width: 100%;
-    height: 100%;
-    ${LinkStyle};
-  }
 `
 
 const DrawerTitleWrapper = styled.div`
@@ -308,13 +295,13 @@ const DrawerWrapper = styled.div`
 `
 
 const DrawerTitle = styled.span`
-  font-size: var(--fontSize-16);
-  color: ${({ theme }) => theme.textSecondary};
+  font-size: var(--fontSize-18);
+  color: ${({ theme }) => theme.textPrimaryVariation};
 `
 
 const Drawer = styled(motion.div)`
   position: absolute;
-  top: calc(100% + 30px);
+  top: calc(100% + 20px);
   left: -50%;
   right: 0;
   min-width: 250px;
