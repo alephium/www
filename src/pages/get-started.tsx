@@ -74,7 +74,7 @@ const exchangesQuery = graphql`
 `
 
 const CustomPage = (props: PageProps) => {
-  const { treasureImage, mineImage, ecosystemImage } = useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
+  const { treasureImage, ecosystemImage } = useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
 
   return (
     <Page
@@ -321,24 +321,6 @@ const CustomPage = (props: PageProps) => {
 
           <SectionDivider />
 
-          <SubpageImageHeroSection backgroundImage={mineImage} minHeight="800px">
-            <h2>
-              Mine ALPH.
-              <small>
-                <br />
-                Secure the Network.
-                <br />
-                Earn Rewards.
-              </small>
-            </h2>
-            <p>
-              ALPH mining is <strong>efficient, accessible, and built for long-term sustainability.</strong>
-            </p>
-            <Button big highlight url="https://docs.alephium.org/mining">
-              Start mining
-            </Button>
-          </SubpageImageHeroSection>
-
           <SubpageSection>
             <TextElement isCentered>
               <h2>Not sure what to do first?</h2>
@@ -371,8 +353,8 @@ const EarnALPHSection = () => {
       <TextElement isCentered>
         <h2>Earn ALPH</h2>
         <p>
-          You can earn ALPH by using apps built on Alephium, participating in grants and bounties (coming soon), finding
-          bugs in the network or mining.
+          You can earn ALPH by using apps built on Alephium, finding bugs in the code, mining and soon by participating
+          in bounties.
         </p>
       </TextElement>
       <SubheaderContent>
@@ -389,18 +371,6 @@ const EarnALPHSection = () => {
             </TextCard>
             <TextCard
               border
-              url="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md"
-              variants={cardVariants}
-            >
-              <TextCardContent>
-                <h3 style={{ color: theme.palette2 }}>Grants & Bounties</h3>
-                <p>Apply for a grant to develop your project on Alephium.</p>
-              </TextCardContent>
-            </TextCard>
-          </CardsRowSegment>
-          <CardsRowSegment>
-            <TextCard
-              border
               url="https://github.com/alephium/community/blob/master/BugBounty.md"
               variants={cardVariants}
             >
@@ -411,11 +381,23 @@ const EarnALPHSection = () => {
                 </p>
               </TextCardContent>
             </TextCard>
+          </CardsRowSegment>
+          <CardsRowSegment>
             <TextCard border url="https://docs.alephium.org/mining" variants={cardVariants}>
               <TextCardContent>
                 <h3 style={{ color: theme.palette4 }}>Mine</h3>
                 <p>
-                  <strong>Start mining</strong> Alephium and earn rewards.
+                  Start mining and earn rewards securing the network. ALPH mining is efficient, accessible, and built
+                  for long-term sustainability.
+                </p>
+              </TextCardContent>
+            </TextCard>
+            <TextCard border variants={cardVariants}>
+              <TextCardContent>
+                <h3 style={{ color: theme.palette2 }}>Bounties</h3>
+                <p>
+                  Our (coming soon) bounties program will reward developers, creators, and community members for
+                  tackling key projects that drive the growth and evolution of the Alephium ecosystem.
                 </p>
               </TextCardContent>
             </TextCard>
