@@ -353,8 +353,8 @@ const EarnALPHSection = () => {
       <TextElement isCentered>
         <h2>Earn ALPH</h2>
         <p>
-          You can earn ALPH by using apps built on Alephium, finding bugs in the network, mining and soon by
-          participating in bounties.
+          You can earn ALPH by using apps built on Alephium, finding bugs in the code, mining and soon by participating
+          in bounties.
         </p>
       </TextElement>
       <SubheaderContent>
