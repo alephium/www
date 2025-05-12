@@ -14,6 +14,7 @@ export interface TextElementProps {
   noHeadingsMargins?: boolean
   noTextCentering?: boolean
   backgroundColor?: string
+  isFootnote?: boolean
 }
 
 const TextElement = styled.div<TextElementProps>`
@@ -122,6 +123,13 @@ const TextElement = styled.div<TextElementProps>`
         margin-left: auto;
         margin-right: auto;
       `}
+
+      ${({ isFootnote }) =>
+      isFootnote &&
+      css`
+        font-size: var(--fontSize-18);
+        line-height: var(--lineHeight-24);
+      `}
   }
 
   > h4 {
@@ -170,6 +178,14 @@ const TextElement = styled.div<TextElementProps>`
       css`
         font-size: var(--fontSize-18);
         line-height: var(--lineHeight-28);
+      `}
+
+    ${({ isFootnote }) =>
+      isFootnote &&
+      css`
+        font-size: var(--fontSize-18);
+        font-weight: var(--fontWeight-normal);
+        line-height: var(--lineHeight-24);
       `}
 
     > a {

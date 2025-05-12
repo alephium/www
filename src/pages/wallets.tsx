@@ -224,11 +224,10 @@ const CustomPage = (props: PageProps) => {
 
           <SectionDivider />
 
-          <SubpageSection style={{ opacity: 0.75 }}>
-            <TextElement isSmall isCentered noTextCentering>
+          <SubpageSection style={{ opacity: 0.5 }}>
+            <TextElement isSmall isFootnote isCentered>
               <h3>Security Reminder</h3>
               <p>
-                <hr />
                 Always keep your seed phrase and private keys secure. Never share them with anyone, and be cautious of
                 phishing attempts.
               </p>
@@ -240,7 +239,6 @@ const CustomPage = (props: PageProps) => {
               <h3>Disclaimer</h3>
 
               <p>
-                <hr />
                 The list of wallets does not constitute an endorsement and is not exhaustive of all wallet options
                 available. Always do your own research before choosing a wallet. The list includes non-custodial
                 Alephium wallets.
