@@ -8,7 +8,6 @@ import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
-import SubpageVideoHeroSection from '../components/customPageComponents/SubpageVideoHeroSection'
 import TextCard from '../components/customPageComponents/TextCard'
 import TextCardContent from '../components/customPageComponents/TextCardContent'
 import TextElement from '../components/customPageComponents/TextElement'
@@ -42,10 +41,18 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SectionDivider double />
-          <SubpageVideoHeroSection poster={heroImage} video={heroVideo} minHeight="400px">
-            <h1>Alephium Ambassador Program</h1>
-          </SubpageVideoHeroSection>
+          <SectionDivider />
+
+          <SubpageSection bgColor="3" wide border edgeGradient gradientPosition="top">
+            <TextElement isCentered>
+              <h2>
+                Become an Alephium
+                <br />
+                Ambassador
+              </h2>
+              <p>Help us grow Alephium, one Community at a time.</p>
+            </TextElement>
+          </SubpageSection>
 
           <SectionDivider double />
 
