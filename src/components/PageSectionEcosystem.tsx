@@ -72,7 +72,9 @@ const HomepageEcosystemSection = ({
         <Subsections>
           {subsections.map(({ title, description, image, items }) => (
             <Subsection key={title} animateEntry>
-              <SubsectionImageContainer>{image && <img src={image.publicURL} alt={title} />}</SubsectionImageContainer>
+              <SubsectionImageContainer>
+                {image && <img src={image.publicURL} alt={title} loading="lazy" />}
+              </SubsectionImageContainer>
               <SubsectionTextContent>
                 <SubsectionTextHeader title={title} subtitle={description} />
                 <SubsectionItems variants={containerVariants}>
@@ -93,7 +95,7 @@ const HomepageEcosystemSection = ({
                               <>
                                 <SubsectionItemTitle className="with-logo">{title}</SubsectionItemTitle>
                                 <SubsectionItemLogoContainer>
-                                  <SubsectionItemLogo src={logo.publicURL} alt={title} />
+                                  <SubsectionItemLogo src={logo.publicURL} alt={title} loading="lazy" />
                                 </SubsectionItemLogoContainer>
                               </>
                             ) : (
@@ -124,7 +126,7 @@ const HomepageEcosystemSection = ({
                     trackingName={`ecosystem-section:${name.replaceAll(' ', '-')}-link`}
                   >
                     <ExchangeItem key={name}>
-                      <ExchangeLogo src={logo} alt={name} />
+                      <ExchangeLogo src={logo} alt={name} loading="lazy" />
                       <ExchangeName>{name}</ExchangeName>
                     </ExchangeItem>
                   </SimpleLink>
