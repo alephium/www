@@ -8,9 +8,7 @@ import Column from '../../../components/Columns/Column'
 import Columns from '../../../components/Columns/Columns'
 import NumbersInfo from '../../../components/NumbersInfo'
 import PageSectionContainer from '../../../components/PageSectionContainer'
-import SubsectionTextHeader from '../../../components/SubsectionTextHeader'
 import Waves from '../../../components/Wave/Waves'
-import { deviceBreakPoints } from '../../../styles/global-style'
 import { formatNumberForDisplay } from '../../../utils/numbers'
 import Button from '../../Button'
 import SubheaderContent from '../../customPageComponents/SubheaderContent'
@@ -37,7 +35,7 @@ type StatScalarKeys = 'hashrate' | 'circulatingSupply' | 'totalTransactions'
 
 type StatsScalarData = { [key in StatScalarKeys]: StatScalar }
 
-type ActiveAddressRes = { [alphThreshold: string]: { amount: number } }[]
+// type ActiveAddressRes = { [alphThreshold: string]: { amount: number } }[]
 
 type ChainsTVL = {
   gecko_id: string
@@ -59,7 +57,7 @@ const HomepageNumbersSection = () => {
     circulatingSupply: statScalarDefault,
     totalTransactions: statScalarDefault
   })
-  const [activeAddresses, setActiveAddresses] = useState<number>()
+  // const [activeAddresses, setActiveAddresses] = useState<number>()
   const [bridgeTVL, setBridgeTVL] = useState<number>()
   const [chainTVL, setChainTVL] = useState<number>()
   const [protocolsStakingTVL, setProtocolsStakingTVL] = useState<number>()
@@ -298,33 +296,14 @@ const NumbersColumn = styled(Column)`
   display: flex;
   align-items: center;
   z-index: 1;
-
-  &:not(:first-child) {
-    > div {
-      padding-left: var(--spacing-3);
-
-      @media ${deviceBreakPoints.mobile} {
-        padding-left: 0;
-        padding-top: var(--spacing-9);
-      }
-    }
-  }
-
-  &:not(:last-child) {
-    > div {
-      padding-right: var(--spacing-9);
-
-      @media ${deviceBreakPoints.mobile} {
-        padding-right: 0;
-      }
-    }
-  }
 `
 
-const SubsectionTextHeaderStyled = styled(SubsectionTextHeader)`
-  margin-bottom: var(--spacing-4);
-`
+// const SubsectionTextHeaderStyled = styled(SubsectionTextHeader)`
+//   margin-bottom: var(--spacing-4);
+// `
 
 const ColumnsStyled = styled(Columns)`
   align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--spacing-4);
 `

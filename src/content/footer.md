@@ -2,24 +2,28 @@
 columns:
   - title: Resources
     links:
-      - text: Blog
-        url: https://medium.com/@alephium
-      - text: Brand Assets
-        url: https://github.com/alephium/alephium-brand-guide
+      - text: Wallets
+        url: /wallets
       - text: Docs
         url: https://docs.alephium.org/
+      - text: Ecosystem
+        url: https://alph.land
       - text: Grants
         url: https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md
+      - text: Blog
+        url: https://medium.com/@alephium
   - title: Alephium
     links:
+      - text: Roadmap
+        url: /roadmap
       - text: Contact
         url: /contact
       - text: Privacy Policy
         url: /privacy-policy
-      - text: Roadmap
-        url: /roadmap
       - text: Terms & Conditions
         url: /terms-and-conditions
+      - text: Brand Assets
+        url: https://github.com/alephium/alephium-brand-guide
 bottom:
   text: Made with love️ by humans from Alephium.
   socials:

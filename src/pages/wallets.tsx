@@ -8,14 +8,16 @@ import styled from 'styled-components'
 
 import Badge from '../components/Badge'
 import Button from '../components/Button'
+import ClickableBox from '../components/customPageComponents/ClickableBox'
+import Grid from '../components/customPageComponents/Grid'
+import ImageIcon from '../components/customPageComponents/ImageIcon'
 import Page from '../components/customPageComponents/Page'
 import SideBySide from '../components/customPageComponents/SideBySide'
+import SubheaderContent from '../components/customPageComponents/SubheaderContent'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
-import SubpageVideoHeroSection from '../components/customPageComponents/SubpageVideoHeroSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import SectionDivider from '../components/SectionDivider'
-import SimpleLink from '../components/SimpleLink'
 import useWallets from '../hooks/useWallets'
 
 const walletsQuery = graphql`
@@ -66,12 +68,35 @@ const walletsQuery = graphql`
         }
       }
     }
+    ledgerLogo: file(relativePath: { eq: "logos/ledger.svg" }) {
+      publicURL
+    }
+    onekeyLogo: file(relativePath: { eq: "logos/onekey.svg" }) {
+      publicURL
+    }
+    safepalLogo: file(relativePath: { eq: "logos/safepal.svg" }) {
+      publicURL
+    }
+    tangemLogo: file(relativePath: { eq: "logos/tangem.png" }) {
+      publicURL
+    }
+    goldshellLogo: file(relativePath: { eq: "logos/goldshell.png" }) {
+      publicURL
+    }
   }
 `
 
 const CustomPage = (props: PageProps) => {
-  const { heroImage, heroVideo, desktopScreenshots, extensionScreenshots, mobileScreenshots } =
-    useStaticQuery<Queries.WalletsPageQuery>(walletsQuery)
+  const {
+    desktopScreenshots,
+    extensionScreenshots,
+    mobileScreenshots,
+    ledgerLogo,
+    onekeyLogo,
+    safepalLogo,
+    tangemLogo,
+    goldshellLogo
+  } = useStaticQuery<Queries.WalletsPageQuery>(walletsQuery)
   const wallets = useWallets()
 
   return (
@@ -84,17 +109,23 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageVideoHeroSection poster={heroImage} video={heroVideo} minHeight="400px">
-            <h1>
-              Our Wallets,
-              <br />
-              Designed for Humans.
-            </h1>
-            <p>
-              Our wallets are designed for ease-of-use,{' '}
-              <strong>making Alephium&apos;s technology accessible for all.</strong>
-            </p>
-          </SubpageVideoHeroSection>
+          <SectionDivider />
+
+          <SubpageSection bgColor="3" wide border edgeGradient gradientPosition="top">
+            <TextElement isCentered>
+              <h1>
+                Our Wallets,
+                <br />
+                Designed for Humans.
+              </h1>
+              <p>
+                Our wallets are designed for ease-of-use,{' '}
+                <strong>making Alephium&apos;s technology accessible for all.</strong>
+              </p>
+            </TextElement>
+          </SubpageSection>
+
+          <SectionDivider />
 
           <SectionDivider double />
           <SubpageSection wide>
@@ -176,54 +207,96 @@ const CustomPage = (props: PageProps) => {
                 images={extensionScreenshots.nodes.map((node) => node.childImageSharp?.gatsbyImageData)}
               />
             </SideBySide>
-            <SectionDivider />
-
-            <SideBySide reverseOnMobile>
-              <TextElement>
-                <h3>Hardware Wallet Support</h3>
-                <p>
-                  For enhanced security, Alephium supports hardware wallets, allowing you to store your private keys
-                  offline and protect your assets from potential online threats..
-                </p>
-                <p>Supported Devices:</p>
-                <ul>
-                  <li>
-                    <SimpleLink highlight url="https://docs.alephium.org/wallet/ledger">
-                      Ledger
-                    </SimpleLink>
-                  </li>
-                  <li>
-                    <SimpleLink highlight url="https://onekey.so">
-                      OneKey
-                    </SimpleLink>
-                  </li>
-                  <li>
-                    <SimpleLink highlight url="https://www.safepal.com">
-                      SafePal
-                    </SimpleLink>
-                  </li>
-                  <li>
-                    <SimpleLink highlight url="https://tangem.com">
-                      Tangem
-                    </SimpleLink>
-                  </li>
-                  <li>
-                    <SimpleLink highlight url="https://www.goldshell.com">
-                      Goldshell
-                    </SimpleLink>
-                  </li>
-                </ul>
-              </TextElement>
-            </SideBySide>
           </SubpageSection>
 
           <SectionDivider />
 
-          <SubpageSection style={{ opacity: 0.75 }}>
-            <TextElement isSmall isCentered noTextCentering>
+          <SubpageSection wide>
+            <SubheaderContent>
+              <TextElement isCentered>
+                <h2>Hardware Wallet Support</h2>
+                <p>
+                  For enhanced security, Alephium supports hardware wallets, allowing you to store your private keys
+                  offline and protect your assets from potential online threats.
+                </p>
+              </TextElement>
+
+              <Grid columns={5} gap="small">
+                <ClickableBox url="https://support.ledger.com/article/Alephium-ALPH" orientation="vertical">
+                  <ImageIcon
+                    src={ledgerLogo?.publicURL ?? ''}
+                    alt="Ledger logo"
+                    rounded
+                    size={50}
+                    padding={10}
+                    noBottomMargin
+                  />
+                  <TextElement isSmall noMargin>
+                    <p>Ledger</p>
+                  </TextElement>
+                </ClickableBox>
+                <ClickableBox url="https://onekey.so" orientation="vertical">
+                  <ImageIcon
+                    src={onekeyLogo?.publicURL ?? ''}
+                    alt="Onekey logo"
+                    rounded
+                    size={50}
+                    padding={10}
+                    noBottomMargin
+                  />
+                  <TextElement isSmall noMargin>
+                    <p>OneKey</p>
+                  </TextElement>
+                </ClickableBox>
+                <ClickableBox url="https://www.safepal.com" orientation="vertical">
+                  <ImageIcon
+                    src={safepalLogo?.publicURL ?? ''}
+                    alt="SafePal logo"
+                    rounded
+                    size={50}
+                    padding={10}
+                    noBottomMargin
+                  />
+                  <TextElement isSmall noMargin>
+                    <p>SafePal</p>
+                  </TextElement>
+                </ClickableBox>
+                <ClickableBox url="https://tangem.com" orientation="vertical">
+                  <ImageIcon
+                    src={tangemLogo?.publicURL ?? ''}
+                    alt="Tangem logo"
+                    rounded
+                    size={50}
+                    padding={10}
+                    noBottomMargin
+                  />
+                  <TextElement isSmall noMargin>
+                    <p>Tangem</p>
+                  </TextElement>
+                </ClickableBox>
+                <ClickableBox url="https://www.goldshell.com" orientation="vertical">
+                  <ImageIcon
+                    src={goldshellLogo?.publicURL ?? ''}
+                    alt="Goldshell logo"
+                    rounded
+                    size={50}
+                    padding={10}
+                    noBottomMargin
+                  />
+                  <TextElement isSmall noMargin>
+                    <p>Goldshell</p>
+                  </TextElement>
+                </ClickableBox>
+              </Grid>
+            </SubheaderContent>
+          </SubpageSection>
+
+          <SectionDivider />
+
+          <SubpageSection style={{ opacity: 0.5 }}>
+            <TextElement isSmall isFootnote isCentered>
               <h3>Security Reminder</h3>
               <p>
-                <hr />
                 Always keep your seed phrase and private keys secure. Never share them with anyone, and be cautious of
                 phishing attempts.
               </p>
@@ -235,7 +308,6 @@ const CustomPage = (props: PageProps) => {
               <h3>Disclaimer</h3>
 
               <p>
-                <hr />
                 The list of wallets does not constitute an endorsement and is not exhaustive of all wallet options
                 available. Always do your own research before choosing a wallet. The list includes non-custodial
                 Alephium wallets.

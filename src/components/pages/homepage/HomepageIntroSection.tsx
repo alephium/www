@@ -3,7 +3,7 @@ import { IGatsbyImageData } from 'gatsby-plugin-image'
 import { ReactNode, useMemo } from 'react'
 import styled, { useTheme } from 'styled-components'
 
-import Grid from '../../customPageComponents/Grid'
+import CardsRow, { CardsRowSegment } from '../../customPageComponents/CardsRow'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextCard from '../../customPageComponents/TextCard'
 import TextCardContent from '../../customPageComponents/TextCardContent'
@@ -62,7 +62,7 @@ const HomepageIntroSection = () => {
         link: {
           url: '/wallets'
         },
-        color: 'palette3'
+        color: theme.palette3
       },
       {
         title: 'Build',
@@ -76,7 +76,7 @@ const HomepageIntroSection = () => {
         link: {
           url: 'https://docs.alephium.org'
         },
-        color: 'palette5'
+        color: theme.palette5
       },
       {
         title: 'Contribute',
@@ -90,7 +90,7 @@ const HomepageIntroSection = () => {
         link: {
           url: 'https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md'
         },
-        color: 'palette1'
+        color: theme.palette1
       },
       {
         title: 'Mine',
@@ -104,11 +104,15 @@ const HomepageIntroSection = () => {
         link: {
           url: 'https://docs.alephium.org/mining'
         },
-        color: 'palette2'
+        color: theme.palette2
       }
     ],
     [
       lightRays?.childImageSharp?.gatsbyImageData,
+      theme.palette3,
+      theme.palette5,
+      theme.palette1,
+      theme.palette2,
       stream?.childImageSharp?.gatsbyImageData,
       greenWater?.childImageSharp?.gatsbyImageData,
       goldStream?.childImageSharp?.gatsbyImageData
@@ -135,16 +139,28 @@ const HomepageIntroSection = () => {
           </strong>
         </p>
       </TextElement> */}
-      <Grid gap="small" columns={4}>
-        {hardcodedCards.map((card) => (
-          <TextCard border url={card.link.url} variants={cardVariants} key={card.title}>
-            <TextCardContent>
-              <h3 style={{ color: theme[card.color] }}>{card.title}</h3>
-              <p>{card.description}</p>
-            </TextCardContent>
-          </TextCard>
-        ))}
-      </Grid>
+      <CardsRow>
+        <CardsRowSegment>
+          {hardcodedCards.slice(0, 2).map((card) => (
+            <TextCard border url={card.link.url} variants={cardVariants} key={card.title}>
+              <TextCardContent>
+                <h3 style={{ color: card.color }}>{card.title}</h3>
+                <p>{card.description}</p>
+              </TextCardContent>
+            </TextCard>
+          ))}
+        </CardsRowSegment>
+        <CardsRowSegment>
+          {hardcodedCards.slice(2, 4).map((card) => (
+            <TextCard border url={card.link.url} variants={cardVariants} key={card.title}>
+              <TextCardContent>
+                <h3 style={{ color: card.color }}>{card.title}</h3>
+                <p>{card.description}</p>
+              </TextCardContent>
+            </TextCard>
+          ))}
+        </CardsRowSegment>
+      </CardsRow>
     </SubpageSectionStyled>
   )
 }

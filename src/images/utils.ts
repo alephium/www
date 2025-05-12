@@ -13,7 +13,7 @@ export const getIconByName = (name: string) => {
       return DiscordIcon
     case 'Telegram':
       return TelegramIcon
-    case 'X':
+    case 'Twitter/X':
       return TwitterIcon
     case 'Reddit':
       return RedditIcon

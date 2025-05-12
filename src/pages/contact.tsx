@@ -1,18 +1,10 @@
-import { graphql, PageProps } from 'gatsby'
+import { PageProps } from 'gatsby'
 
 import Button from '../components/Button'
 import Page from '../components/customPageComponents/Page'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import SectionDivider from '../components/SectionDivider'
-
-const contactQuery = graphql`
-  query ContactPage {
-    heroImage: file(relativePath: { eq: "alephium-hackathon-lake.png" }) {
-      ...HeroImage
-    }
-  }
-`
 
 const CustomPage = (props: PageProps) => (
   <Page
@@ -24,6 +16,7 @@ const CustomPage = (props: PageProps) => (
     }}
     content={
       <>
+        <SectionDivider />
         <SubpageSection border edgeGradient>
           <TextElement isCentered>
             <h1>Contact Us</h1>
@@ -51,6 +44,7 @@ const CustomPage = (props: PageProps) => (
             <h3>Build with us</h3>
             <p>Not sure where to start? Dive into our documentation or apply for a grant.</p>
             <Button url="https://docs.alephium.org">Documentation</Button>
+            <Button url="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md">Grants</Button>
           </TextElement>
         </SubpageSection>
       </>

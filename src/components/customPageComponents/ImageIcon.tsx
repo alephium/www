@@ -22,17 +22,12 @@ const ImageIcon = ({ image, src, alt = '', rounded, size, padding, noBottomMargi
         <GatsbyImageWrapper
           image={image}
           alt={alt}
-          style={{ height: '100%', width: '100%', borderRadius: '6px' }}
+          style={{ height: '100%', borderRadius: '6px' }}
           objectFit="cover"
           loading="lazy"
         />
       ) : (
-        <img
-          src={src}
-          alt={alt}
-          style={{ height: '100%', width: '100%', objectFit: 'cover', borderRadius: '6px' }}
-          loading="lazy"
-        />
+        <img src={src} alt={alt} style={{ height: '100%', objectFit: 'cover', borderRadius: '6px' }} loading="lazy" />
       )}
     </ImageIconContainer>
   )
@@ -47,6 +42,9 @@ const ImageIconContainer = styled.div<{ size?: number; rounded?: boolean; paddin
   position: relative;
   margin-bottom: ${({ noBottomMargin }) => (noBottomMargin ? '0' : 'var(--spacing-3)')};
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
 
 export default ImageIcon
