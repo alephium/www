@@ -371,8 +371,8 @@ const EarnALPHSection = () => {
       <TextElement isCentered>
         <h2>Earn ALPH</h2>
         <p>
-          You can earn ALPH by using apps built on Alephium, participating in grants and bounties (coming soon), finding
-          bugs in the network or mining.
+          You can earn ALPH by using apps built on Alephium, finding bugs in the network, mining and soon by
+          participating in bounties.
         </p>
       </TextElement>
       <SubheaderContent>
@@ -382,23 +382,11 @@ const EarnALPHSection = () => {
               <TextCardContent>
                 <h3 style={{ color: theme.palette1 }}>Apps</h3>
                 <p>
-                  Earn rewards by participating in select dApps on Alephium: provide liquidity, lend and more to start
-                  generating yield.
+                  You can earn ALPH by using apps built on Alephium, participating in bounties, finding bugs in the
+                  network or mining.
                 </p>
               </TextCardContent>
             </TextCard>
-            <TextCard
-              border
-              url="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md"
-              variants={cardVariants}
-            >
-              <TextCardContent>
-                <h3 style={{ color: theme.palette2 }}>Grants & Bounties</h3>
-                <p>Apply for a grant to develop your project on Alephium.</p>
-              </TextCardContent>
-            </TextCard>
-          </CardsRowSegment>
-          <CardsRowSegment>
             <TextCard
               border
               url="https://github.com/alephium/community/blob/master/BugBounty.md"
@@ -411,11 +399,22 @@ const EarnALPHSection = () => {
                 </p>
               </TextCardContent>
             </TextCard>
+          </CardsRowSegment>
+          <CardsRowSegment>
             <TextCard border url="https://docs.alephium.org/mining" variants={cardVariants}>
               <TextCardContent>
                 <h3 style={{ color: theme.palette4 }}>Mine</h3>
                 <p>
                   <strong>Start mining</strong> Alephium and earn rewards.
+                </p>
+              </TextCardContent>
+            </TextCard>
+            <TextCard border variants={cardVariants}>
+              <TextCardContent>
+                <h3 style={{ color: theme.palette2 }}>Bounties</h3>
+                <p>
+                  Our (coming soon) bounties program will reward developers, creators, and community members for
+                  tackling key projects that drive the growth and evolution of the Alephium ecosystem.
                 </p>
               </TextCardContent>
             </TextCard>
