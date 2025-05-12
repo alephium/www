@@ -5,8 +5,10 @@ const CardsRow = styled.div`
   gap: var(--spacing-6);
   flex-wrap: wrap;
 
-  > div {
+  > div,
+  > a {
     flex: 1;
+    height: auto;
   }
 `
 
