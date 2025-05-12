@@ -1,6 +1,6 @@
+import { sortBy } from 'lodash'
 import { useEffect, useState } from 'react'
 import styled, { css } from 'styled-components'
-import { sortBy } from 'lodash'
 
 import { deviceBreakPoints, deviceSizes } from '../styles/global-style'
 
@@ -238,7 +238,7 @@ const Text = styled.div`
   ${({ isMajor }) =>
     isMajor &&
     css`
-      background: linear-gradient(30deg, #1cc2ff 0%, #2a63ff 70%, #436cff 100%);
+      background: linear-gradient(30deg, #81fff7 0%, #edff2a 70%, #ffa9eb 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -253,6 +253,7 @@ const When = styled.div`
 
 const DetailedContentList = styled.ul`
   padding: 0 15px;
+  font-size: var(--fontSize-18);
 `
 
 const ContentItem = styled.li`
@@ -269,7 +270,7 @@ const Container = styled.div<{ detailed: boolean }>`
     ${({ detailed }) =>
       !detailed &&
       css`
-        background: linear-gradient(30deg, #1cc2ff 0%, #2a63ff 70%, #436cff 100%);
+        background: linear-gradient(30deg, #fff 0%, #81fff7 50%, #edff2a 60%, #ffa9eb 70%, #fff 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -303,7 +304,7 @@ const Dot = styled.div`
     height: 13px;
     transform: translateY(60%);
     border-radius: 100%;
-    background: ${({ isMajor, theme }) => (isMajor ? '#2a8aff' : theme.textPrimary)};
+    background: ${({ isMajor, theme }) => (isMajor ? '#5ef2ff' : theme.textPrimary)};
     border: 3px solid black;
     position: absolute;
     content: '';
@@ -318,11 +319,9 @@ const Data = styled.div<{ hasBorder?: boolean }>`
   line-height: 22px;
   flex-direction: column;
   padding: var(--spacing-2);
-  border-radius: 9px;
+  border-radius: var(--radius-small);
   margin: var(--spacing-2);
-  background-color: ${({ theme }) => theme.bgSecondary};
-  box-shadow: ${({ hasBorder }) => (hasBorder ? `0 0 10px 1px rgba(42, 138, 255, 0.5)` : 'none')};
-  border: ${({ hasBorder }) => (hasBorder ? `1px solid rgb(42, 138, 255)` : 'none')};
+  border: ${({ hasBorder, theme }) => (hasBorder ? `3px solid ${theme.borderPrimary}` : 'none')};
 
   ${({ isSingle }) =>
     isSingle &&
@@ -380,7 +379,7 @@ const Entry = styled.div`
   align-self: stretch;
   justify-content: ${({ right }) => (right ? 'right' : 'left')};
   font-weight: var(--fontWeight-semiBold);
-  font-size: var(--fontSize-18);
+  font-size: var(--fontSize-22);
 `
 
 const Pair = styled.div`
@@ -398,9 +397,9 @@ const Entries = styled.div`
 `
 
 const yearSmallMobileBreakpoint = '(max-width: 510px)'
-const yearRowPositionDesktop = '80px'
-const yearRowPositionMobile = '70px'
-const yearRowPositionSmallMobile = '110px'
+const yearRowPositionDesktop = '0px'
+const yearRowPositionMobile = '0px'
+const yearRowPositionSmallMobile = '0px'
 
 const YearHeader = styled.div`
   position: sticky;
@@ -408,7 +407,6 @@ const YearHeader = styled.div`
   top: ${yearRowPositionDesktop};
   z-index: 3;
   height: ${headerHeight}px;
-  background-color: ${({ theme }) => theme.bgTertiary};
 
   > * {
     flex: 1;

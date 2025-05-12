@@ -1,140 +1,136 @@
-import styled, { css, useTheme } from 'styled-components'
-import { Link } from 'gatsby'
-
-import { deviceBreakPoints } from '../styles/global-style'
-
-import SimpleLink from './SimpleLink'
-import LogoText from '../images/svgs/logo-text.svg'
-import GitHubIcon from '../images/svgs/brand-icon-github.svg'
-import SocialMediaIcon from './SocialMediaIcon'
-import { AnimatePresence, motion, useMotionValueEvent, useScroll } from 'framer-motion'
-import { ReactNode, useRef, useState } from 'react'
+import { AnimatePresence, motion } from 'framer-motion'
+import { graphql, Link, useStaticQuery } from 'gatsby'
+import throttle from 'lodash/throttle'
+import { ReactNode, useEffect, useRef, useState } from 'react'
 import { RiTranslate2 } from 'react-icons/ri'
+import { RiMenu3Fill } from 'react-icons/ri'
+import styled, { css, useTheme } from 'styled-components'
 
-import HeroLogo from './Hero/HeroLogo'
-
-import { RiMenu3Fill, RiArrowDropDownLine, RiArrowDropUpLine } from 'react-icons/ri'
 import useOnClickOutside from '../hooks/useOnClickOutside'
+import LogoText from '../images/svgs/logo-text.svg'
+import { deviceBreakPoints } from '../styles/global-style'
+import { notEmpty } from '../utils/misc'
+import NavigationMenuSocials from './navigation/NavigationMenuSocials'
+import MobileNavigationMenu, { ToggleMobileNavButton } from './NavigationMenuMobile'
+import SimpleLink from './SimpleLink'
 import TranslateComponent from './TranslateComponent'
 
 interface NavigationMenuProps {
-  topOffset?: number
+  floating?: boolean
   className?: string
 }
 
-const detachScrollValue = 65
+const NavigationMenu = ({ className, floating = true }: NavigationMenuProps) => {
+  const lastScrollY = useRef(0)
+  const scrollThreshold = useRef(0)
 
-const NavigationMenu = ({ topOffset, className }: NavigationMenuProps) => {
-  const { scrollY } = useScroll()
-  const [isDetached, setIsDetached] = useState(false)
+  const [isHidden, setIsHidden] = useState(false)
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
 
-  useMotionValueEvent(scrollY, 'change', (latest) => {
-    if (latest > detachScrollValue && !isDetached) {
-      setIsDetached(true)
-    } else if (latest <= detachScrollValue && isDetached) {
-      setIsDetached(false)
-    }
-  })
+  useEffect(() => {
+    const handleScroll = throttle(() => {
+      const currentScrollY = window.scrollY
+      setScrolled(currentScrollY > 100)
 
-  const initialTop = topOffset || 0
+      const scrollDelta = currentScrollY - lastScrollY.current
+
+      if (currentScrollY < 10 || currentScrollY < lastScrollY.current) {
+        setIsHidden(false)
+        scrollThreshold.current = 0
+      } else if (scrollDelta > 0) {
+        if (scrollThreshold.current > 50) {
+          setIsHidden(true)
+        }
+        scrollThreshold.current += scrollDelta
+      }
+
+      lastScrollY.current = currentScrollY
+    }, 50)
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
-    <NavigationWrapper>
-      <NavigationMenuStyled
-        className={className}
-        animate={{
-          y: isDetached ? 30 : initialTop,
-          backgroundColor: isDetached ? 'rgba(30, 30, 30, 0.6)' : 'rgba(30, 30, 30, 0)',
-          boxShadow: isDetached ? '0px 5px 60px rgba(0, 0, 0, 0.5)' : 'none'
-        }}
-        transition={{ type: 'spring', stiffness: 200, damping: 50 }}
-      >
-        <div className="nav-item">
-          <LinkStyled to="/" title="Go to homepage">
-            <HeroLogoContainer>
-              <HeroLogoStyled gradientIndex={1} accentFill="rgba(255, 255, 255, 0.5" />
-            </HeroLogoContainer>
-            <LogoTextStyled />
-          </LinkStyled>
-        </div>
-        <NavigationItems className="nav-end" />
-        <MobileMenu />
-      </NavigationMenuStyled>
-    </NavigationWrapper>
+    <>
+      <NavigationWrapper isHidden={isHidden} floating={floating} scrolled={scrolled}>
+        <NavigationMenuStyled className={className}>
+          <div className="nav-item">
+            <LinkStyled to="/" title="Go to homepage">
+              <LogoTextStyled />
+            </LinkStyled>
+          </div>
+          <NavigationItems className="nav-end" />
+          <ToggleMobileNavButton onClick={() => setIsMobileNavOpen(true)} Icon={RiMenu3Fill} />
+        </NavigationMenuStyled>
+      </NavigationWrapper>
+      <AnimatePresence>
+        {isMobileNavOpen && <MobileNavigationMenu onCloseClick={() => setIsMobileNavOpen(false)} />}
+      </AnimatePresence>
+      <NavigationTopSpacing />
+    </>
   )
 }
+
+export default NavigationMenu
+
+const NavigationTopSpacing = styled.div`
+  width: 100%;
+  height: max(8vh, 70px);
+`
 
 const NavigationItems = ({ className }: { className?: string }) => {
   const theme = useTheme()
+  const data = useStaticQuery<Queries.NavigationMenuQuery>(navigationMenuQuery)
+
+  const menuItems = data.navmenu.nodes[0]?.frontmatter?.menuItems?.filter(notEmpty)
+  const socialIcons = data.navmenu.nodes[0]?.frontmatter?.socialIcons?.filter(notEmpty)
 
   return (
     <div className={className}>
-      <NavigationDrawer
-        title="Essentials"
-        items={[
-          { title: 'Wallets', url: '#wallets' },
-          { title: 'Bridge', url: 'https://bridge.alephium.org/', isNew: true, isExternal: true },
-          { title: 'Explorer', url: 'https://explorer.alephium.org/', isExternal: true }
-        ]}
-      />
-      <NavLink className="nav-item" url="#ecosystem" trackingName="main-nav:Ecosystem">
-        Ecosystem
-      </NavLink>
-      <NavLink className="nav-item" url="#community" trackingName="main-nav:community">
-        Community
-      </NavLink>
-      <NavLink
-        className="nav-item"
-        url="https://docs.alephium.org/dapps/"
-        newTab
-        trackingName="main-nav:build-dapp-link"
-      >
-        Build a dApp
-      </NavLink>
-      <NavigationDrawer
-        Icon={<RiTranslate2 color={theme.textSecondary} size={20} />}
-        Content={<TranslateComponent />}
-      />
-
-      <GithubButton
-        name="Github"
-        ImageComponent={GitHubIcon}
-        url="https://github.com/alephium"
-        trackingName="main-nav:github-link"
-      />
-    </div>
-  )
-}
-
-const MobileMenu = () => {
-  const [isOpen, setIsOpen] = useState(false)
-  const ref = useRef(null)
-
-  useOnClickOutside(ref, () => setIsOpen(false))
-
-  return (
-    <MobileMenuStyled ref={ref}>
-      <RiMenu3Fill size={20} style={{ cursor: 'pointer' }} onClick={() => setIsOpen(!isOpen)} />
-      <AnimatePresence>
-        {isOpen && (
-          <MobileNavContainer initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-            <MobileNav />
-          </MobileNavContainer>
+      <MenuItems>
+        {menuItems?.map(
+          ({ title, items }) =>
+            title &&
+            items && (
+              <NavigationDrawer key={title} title={title}>
+                {items.map(
+                  (item, index) =>
+                    item &&
+                    item.title && (
+                      <DrawerItem key={item.title} isLink={!!item.link}>
+                        {item.link ? (
+                          <NavLink key={index} url={item.link} text={item.title} />
+                        ) : (
+                          <DrawerItemTitle key={index}>{item.title}</DrawerItemTitle>
+                        )}
+                      </DrawerItem>
+                    )
+                )}
+              </NavigationDrawer>
+            )
         )}
-      </AnimatePresence>
-    </MobileMenuStyled>
+      </MenuItems>
+      {/*<ThemeToggle />*/}
+      <NavigationDrawer Icon={<RiTranslate2 color={theme.textSecondary} size={20} />}>
+        <TranslateComponent />
+      </NavigationDrawer>
+
+      {socialIcons && <NavigationMenuSocials enabledItems={socialIcons} />}
+    </div>
   )
 }
 
 interface NavigationDrawerProps {
   title?: string
   Icon?: ReactNode
-  items?: { title: string; url: string; isNew?: boolean; isExternal?: boolean }[]
-  Content?: ReactNode
+  children?: ReactNode
   className?: string
 }
 
-const NavigationDrawer = ({ title, Icon, items, Content, className }: NavigationDrawerProps) => {
+const NavigationDrawer = ({ title, Icon, className, children }: NavigationDrawerProps) => {
   const [isOpen, setIsOpen] = useState(false)
   const ref = useRef(null)
 
@@ -147,47 +143,62 @@ const NavigationDrawer = ({ title, Icon, items, Content, className }: Navigation
   return (
     <DrawerWrapper className={className} ref={ref}>
       <DrawerTitleWrapper onClick={handleTitleClick}>
-        {items && items.findIndex((i) => i.isNew) !== -1 && (
-          <NewItemBubble>
-            <NewItemBubbleEcho
-              initial={{ scale: 1, opacity: 0.7 }}
-              animate={{ scale: 3, opacity: 0 }}
-              transition={{ repeat: Infinity, duration: 2, repeatDelay: 1 }}
-            />
-          </NewItemBubble>
-        )}
         {title ? <DrawerTitle>{title}</DrawerTitle> : Icon ? Icon : null}
-        <DrawerCarretWrapper>{isOpen ? <RiArrowDropUpLine /> : <RiArrowDropDownLine />}</DrawerCarretWrapper>
       </DrawerTitleWrapper>
       <AnimatePresence>
         {isOpen && (
-          <Drawer initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-            {items
-              ? items.map((item, index) => (
-                  <DrawerItem key={item.title}>
-                    <NavLink key={index} url={item.url} text={item.title} newTab={item.isExternal} />
-                    {item.isNew && <NewBubble>New</NewBubble>}
-                  </DrawerItem>
-                ))
-              : Content || null}
-          </Drawer>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.1 }}
+          >
+            <Drawer>{children}</Drawer>
+          </motion.div>
         )}
       </AnimatePresence>
     </DrawerWrapper>
   )
 }
 
-export default NavigationMenu
+export const navigationMenuQuery = graphql`
+  query NavigationMenu {
+    navmenu: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/navigation-menu.md/" } }) {
+      nodes {
+        frontmatter {
+          menuItems {
+            title
+            items {
+              title
+              link
+            }
+          }
+          socialIcons
+        }
+      }
+    }
+  }
+`
 
-const NavigationWrapper = styled.div`
+const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean; scrolled: boolean }>`
   position: fixed;
-  top: 0;
+  top: ${({ isHidden }) => (isHidden ? '-100px' : 0)};
   right: 0;
   left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 72px;
   z-index: 10000;
+  transition: top 0.3s ease-in-out;
+  backdrop-filter: blur(100px) brightness(${({ scrolled }) => (scrolled ? '30%' : '100%')});
+  border-bottom: 1px solid ${({ theme, scrolled }) => (scrolled ? theme.borderPrimary : 'transparent')};
+
+  ${({ floating }) =>
+    !floating &&
+    css`
+      position: absolute;
+    `}
 
   @media ${deviceBreakPoints.ipad} {
     padding-right: 30px;
@@ -195,22 +206,19 @@ const NavigationWrapper = styled.div`
   }
 `
 
-const NavigationMenuStyled = styled(motion.div)`
-  width: calc(var(--page-width) - 100px);
+const NavigationMenuStyled = styled.div`
+  width: var(--page-width);
   display: flex;
-  justify-content: space-between;
   font-weight: var(--fontWeight-medium);
   z-index: 1;
-  backdrop-filter: blur(24px);
-  padding: 0 16px 0 12px;
-  height: 62px;
-  border-radius: 200px;
+  padding: 0 30px;
 
   .nav-end {
     display: flex;
     margin-left: var(--spacing-3);
     gap: var(--spacing-5);
     align-items: center;
+    flex: 1;
 
     & > :last-child {
       margin-top: 5px; // Github button
@@ -232,6 +240,14 @@ const NavigationMenuStyled = styled(motion.div)`
   }
 `
 
+const MenuItems = styled.div`
+  flex: 1;
+  gap: var(--spacing-4);
+  display: flex;
+  margin-left: var(--spacing-6);
+  padding-top: 4px;
+`
+
 const LinkStyled = styled(Link)`
   display: flex;
   align-items: center;
@@ -239,94 +255,20 @@ const LinkStyled = styled(Link)`
 `
 
 const LogoTextStyled = styled(LogoText)`
-  height: 26px;
+  height: 24px;
   fill: ${({ theme }) => theme.textPrimary};
   width: auto;
   transform: translateY(2px);
 `
 
-const HeroLogoContainer = styled.div`
-  background-color: ${({ theme }) => theme.bgPrimary};
-  border-radius: 40px;
-  height: 42px;
-  width: 42px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`
-
-const HeroLogoStyled = styled(HeroLogo)`
-  height: 26px;
-`
-
-const GithubButton = styled(SocialMediaIcon)`
-  svg {
-    width: 30px;
-    height: 30px;
-  }
-`
-
 const LinkStyle = css`
-  font-size: var(--fontSize-18);
-  color: ${({ theme }) => theme.textSecondary};
-
-  &:hover {
-    color: ${({ theme }) => theme.textPrimary};
-  }
+  font-size: var(--fontSize-16);
+  font-weight: var(--fontWeight-medium);
+  color: ${({ theme }) => theme.textPrimaryVariation};
 `
 
 const NavLink = styled(SimpleLink)`
   ${LinkStyle};
-`
-
-const MobileMenuStyled = styled.div`
-  position: relative;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  margin-right: 12px;
-
-  @media ${deviceBreakPoints.ipad} {
-    display: flex;
-  }
-`
-
-const MobileNavContainer = styled(motion.div)``
-
-const MobileNav = styled(NavigationItems)`
-  background-color: rgba(30, 30, 30, 0.8);
-  backdrop-filter: blur(24px);
-  min-width: 150px;
-  border-radius: 20px;
-  position: absolute;
-  top: 50px;
-  display: flex;
-  flex-direction: column;
-  right: 0px;
-  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.9);
-
-  > * {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 18px 12px !important;
-
-    &:not(:last-child) {
-      border-bottom: 1px solid ${({ theme }) => theme.borderPrimary};
-    }
-  }
-`
-
-const DrawerCarretWrapper = styled.div`
-  height: 100%;
-  width: 22px;
-  display: flex;
-  > * {
-    width: 100%;
-    height: 100%;
-    ${LinkStyle};
-  }
 `
 
 const DrawerTitleWrapper = styled.div`
@@ -348,47 +290,30 @@ const DrawerTitleWrapper = styled.div`
   }
 `
 
-const NewItemBubble = styled.span`
-  position: relative;
-  background-color: ${({ theme }) => theme.palette1};
-  height: 8px;
-  width: 8px;
-  margin-right: 8px;
-  margin-top: 2px;
-  border-radius: 50%;
-`
-
-const NewItemBubbleEcho = styled(motion.div)`
-  scale: 1;
-  position: absolute;
-  background-color: ${({ theme }) => theme.palette1};
-  height: 8px;
-  width: 8px;
-  border-radius: 50%;
-`
-
 const DrawerWrapper = styled.div`
   position: relative;
 `
 
 const DrawerTitle = styled.span`
   font-size: var(--fontSize-18);
-  color: ${({ theme }) => theme.textSecondary};
+  color: ${({ theme }) => theme.textPrimaryVariation};
 `
 
 const Drawer = styled(motion.div)`
   position: absolute;
-  top: calc(100% + 30px);
+  top: calc(100% + 20px);
   left: -50%;
   right: 0;
-  min-width: 200px;
-  background-color: rgba(30, 30, 30, 0.8);
-  border-radius: 20px;
-  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.8);
+  min-width: 250px;
+  background-color: ${({ theme }) => theme.background1};
+  border-radius: var(--radius-small);
+  border: 1px solid ${({ theme }) => theme.borderPrimary};
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   z-index: 1000;
   backdrop-filter: blur(24px);
+  padding-bottom: 8px;
 
   @media ${deviceBreakPoints.ipad} {
     top: 100%;
@@ -396,21 +321,20 @@ const Drawer = styled(motion.div)`
   }
 `
 
-const NewBubble = styled.div`
-  padding: 3px 6px;
-  color: white;
-  background-color: ${({ theme }) => theme.palette1};
-  border-radius: 20px;
-  font-size: var(--fontSize-14);
-`
-
-const DrawerItem = styled.div`
+const DrawerItem = styled.div<{ isLink: boolean }>`
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 18px;
 
-  &:not(:last-child) {
-    border-bottom: 1px solid ${({ theme }) => theme.borderPrimary};
+  > * {
+    padding: 12px 18px;
+    width: 100%;
   }
+`
+
+const DrawerItemTitle = styled.div`
+  text-transform: uppercase;
+  font-size: var(--fontSize-14);
+  color: ${({ theme }) => theme.textTertiary};
+  padding-top: 20px;
 `

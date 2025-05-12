@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+
 import HackathonSectionContainer from './HackathonSectionContainer'
 import HackathonSectionTitle from './HackathonSectionTitle'
 
@@ -16,14 +17,14 @@ interface GettingStartedSectionProps {
 const GettingStartedSection = ({ content: { title, subtitle, html }, className }: GettingStartedSectionProps) => (
   <div className={className}>
     <HackathonSectionContainer className={className}>
-      <HackathonSectionTitle title={title} subtitle={subtitle} bigSubtitle backgroundColor="bgTertiary" />
+      <HackathonSectionTitle titleRows={[title]} subtitleRows={[subtitle]} bigSubtitle backgroundColor="background1" />
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </HackathonSectionContainer>
   </div>
 )
 
 export default styled(GettingStartedSection)`
-  background-color: ${({ theme }) => theme.bgTertiary};
+  background-color: ${({ theme }) => theme.background1};
   color: ${({ theme }) => theme.textPrimary};
 
   h3 {

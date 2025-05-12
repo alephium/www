@@ -1,10 +1,10 @@
+import { graphql, useStaticQuery } from 'gatsby'
 import { FC } from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
+import { deviceBreakPoints } from '../styles/global-style'
 import Modal, { ModalProps } from './Modal'
 import TeamMember, { TeamMemberProps } from './TeamMember'
-import { deviceBreakPoints } from '../styles/global-style'
 
 const ModalAboutUs: FC<ModalProps> = ({ isOpen, setIsOpen }) => {
   const { teamData } = useStaticQuery(graphql`

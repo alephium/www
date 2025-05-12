@@ -1,11 +1,11 @@
 import styled from 'styled-components'
-import { deviceBreakPoints } from '../../../styles/global-style'
-import HackathonSectionContainer from './HackathonSectionContainer'
-import { H3, Paragraph } from './Texts'
-import SimpleLink from '../../SimpleLink'
-import lsw3Logo from '../../../images/logos/lsw3-logo.jpg'
-import cryptoXRLogo from '../../../images/logos/cryptoXR-logo.png'
+
 import alephiumLogo from '../../../images/logos/alephium-logo.png'
+import cryptoXRLogo from '../../../images/logos/cryptoXR-logo.png'
+import lsw3Logo from '../../../images/logos/lsw3-logo.jpg'
+import { deviceBreakPoints } from '../../../styles/global-style'
+import SimpleLink from '../../SimpleLink'
+import { H3, Paragraph } from './Texts'
 
 export type HackathonInfoSectionContentType = {
   participantsInfo: {
@@ -58,7 +58,7 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
     <Paragraph>
       The hackathon will take place exclusively on-site at <b>Auxerre Expo Parc (Auxerrexpo)</b> on Friday January, 31st
       and Saturday, February 1st, as part of CryptoXR. Detailed directions to the venue can be found on the official{' '}
-      <SimpleLink text="CryptoXR" url="https://cryptoxr.fr)" newTab /> website.
+      <SimpleLink text="CryptoXR" url="https://cryptoxr.fr)" /> website.
     </Paragraph>
     <Paragraph>
       <i>
@@ -73,9 +73,9 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
         <PartnerLogo>
           <img src={cryptoXRLogo} alt="CryptoXR Logo" decoding="async" loading="lazy" />
         </PartnerLogo>
-        <PartnerName text="Crypto XR" url="https://www.bitmain.com/" newTab></PartnerName>
+        <PartnerName text="Crypto XR" url="https://www.bitmain.com/"></PartnerName>
         <PartnerDescription>
-          Auxerre is set to become France’s Web3 capital from January 30 to February 1, 2025, as CryptoXR returns for
+          Auxerre is set to become France's Web3 capital from January 30 to February 1, 2025, as CryptoXR returns for
           its third edition. With over 3,000 visitors, 70+ speakers, and a 6,000 m² exhibition space, CryptoXR is one of
           the most accessible and inclusive Web3 events in France. Focused on federating and democratizing Web3
           technologies, the event brings together industry pioneers, local actors, and the broader public to celebrate
@@ -86,7 +86,7 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
         <PartnerLogo>
           <img src={lsw3Logo} alt="LSW3 Logo" decoding="async" loading="lazy" />
         </PartnerLogo>
-        <PartnerName text="LSW3" url="https://lsw3.fr" newTab />
+        <PartnerName text="LSW3" url="https://lsw3.fr" />
         <PartnerDescription>
           LSW3 is rapidly becoming one of the largest professional Web3 networks in France, with nearly 100 members,
           including major players like Binance, Morpho, and Vivendi, as well as representation from the French
@@ -100,13 +100,13 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
         <PartnerLogo>
           <img src={alephiumLogo} alt="Alephium Logo" decoding="async" loading="lazy" />
         </PartnerLogo>
-        <PartnerName text="Alephium" url="https://alephium.org" newTab />
+        <PartnerName text="Alephium" url="https://alephium.org" />
         <PartnerDescription>
           Alephium is a next-gen Proof-of-Work Layer 1 blockchain designed to tackle scalability, security, and
           sustainability, making it an ideal foundation for impactful, future-ready blockchain solutions. With BlockFlow
           technology, it supports over 10,000 tps, ensuring efficiency for global applications while maintaining a
           simple, single-chain experience. Its stateful UTXO model combines smart contract flexibility with UTXO
-          security, providing a secure environment for dApps and tokenized assets. Alephium’s Proof-of-Less-Work cuts
+          security, providing a secure environment for dApps and tokenized assets. Alephium's Proof-of-Less-Work cuts
           energy use by 87%, aligning with environmental goals without compromising decentralization. As the
           second-largest PoW blockchain by TVL after Bitcoin, Alephium powers DeFi, mining, and large-scale initiatives
           like the billion-dollar GIGATONS project.
@@ -141,7 +141,7 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
       </Paragraph>
       <ul>
         <li>
-          <b>Most Creative Project</b> – Celebrating exceptional creativity and originality in leveraging Alephium’s
+          <b>Most Creative Project</b> – Celebrating exceptional creativity and originality in leveraging Alephium's
           features.
         </li>
         <li>
@@ -152,7 +152,7 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
           <b>Best Code Quality</b> – Rewarding clean, efficient, and well-documented code that follows best practices.
         </li>
         <li>
-          <b>Best Security Project</b> – Honoring tools that enhance Alephium’s security, such as vulnerability
+          <b>Best Security Project</b> – Honoring tools that enhance Alephium's security, such as vulnerability
           scanners, testing frameworks, or monitoring systems.
         </li>
       </ul>
@@ -170,9 +170,9 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
           Total Prize Pool: <Badge>€3,000</Badge>
         </Paragraph>
         <Paragraph>
-          Solo developers, this is your time to shine! We’ve curated a variety of challenges tailored to individual
+          Solo developers, this is your time to shine! We've curated a variety of challenges tailored to individual
           contributors, offering flexible opportunities to showcase your skills and creativity. These challenges aim to
-          empower solo hackers to dive into Alephium’s ecosystem, solve puzzles, and create tools that benefit the
+          empower solo hackers to dive into Alephium's ecosystem, solve puzzles, and create tools that benefit the
           broader developer community. Here are some examples of potential challenges and rewards (final challenges to
           be defined):
         </Paragraph>
@@ -181,7 +181,7 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
             <b>
               Port a Simple Solidity Contract <Badge>Up to €500</Badge>
             </b>{' '}
-            – Select from a predefined list of Solidity contracts and port one to Alephium’s platform. This challenge
+            – Select from a predefined list of Solidity contracts and port one to Alephium's platform. This challenge
             tests your ability to adapt smart contracts to a new blockchain environment.
           </li>
           <li>
@@ -205,8 +205,8 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
       </Paragraph>
       <Paragraph>
         Participants can look forward to a host of surprises throughout the event! From exclusive goodies and swag to
-        bonus challenges and unexpected rewards, we’ve got plenty in store to make your hackathon experience
-        unforgettable. Whether it’s a token of appreciation or an extra boost of motivation, we’re here to ensure every
+        bonus challenges and unexpected rewards, we've got plenty in store to make your hackathon experience
+        unforgettable. Whether it's a token of appreciation or an extra boost of motivation, we're here to ensure every
         participant feels valued and inspired.
       </Paragraph>
     </PrizeList>
@@ -291,7 +291,7 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
         <SimpleLink text="here" url="https://forms.gle/rHGhpNpTNeZrMVdZ7" /> to secure your spot.
       </li>
       <li>
-        <b>Prepare</b>: Ahead of the event, we’ll send you some resources to help you get started. In the meantime, you
+        <b>Prepare</b>: Ahead of the event, we'll send you some resources to help you get started. In the meantime, you
         can already explore the <SimpleLink text="Alephium documentation" url="https://docs.alephium.org" /> to
         familiarize yourself with the chain and its features.
       </li>
@@ -300,19 +300,19 @@ const HackathonInfoSection = ({ className }: HackathonInfoSectionProps) => (
         exclusively on-site.
       </li>
       <li>
-        Join the Onboarding Session: Don’t miss the onboarding session on Friday, January 31st, where we’ll guide you
+        Join the Onboarding Session: Don't miss the onboarding session on Friday, January 31st, where we'll guide you
         through everything you need to know to kickstart your hackathon experience.
       </li>
     </ul>
     <Paragraph>
       If you have any questions about the hackathon or need assistance, feel free to email us at info@alephium.org or
-      Contact@lsw3.fr —we’re here to help!
+      Contact@lsw3.fr —we're here to help!
     </Paragraph>
   </div>
 )
 
 export default styled(HackathonInfoSection)`
-  background-color: ${({ theme }) => theme.bgTertiary};
+  background-color: ${({ theme }) => theme.background1};
 `
 
 const TimeLinesWrapper = styled.div`
@@ -328,14 +328,14 @@ const TimeLinesWrapper = styled.div`
 const ScheduleItems = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: ${({ theme }) => theme.bgSecondary};
+  background-color: ${({ theme }) => theme.surface2};
   border: 1px solid ${({ theme }) => theme.borderPrimary};
   border-radius: 22px;
   overflow: hidden;
 `
 
 const ScheduleItemsHeader = styled.div`
-  background-color: ${({ theme }) => theme.bgSurface};
+  background-color: ${({ theme }) => theme.surface1};
   border-bottom: 1px solid ${({ theme }) => theme.borderPrimary};
   padding: var(--spacing-2) var(--spacing-4);
   font-size: 20px;
@@ -379,7 +379,7 @@ const PrizeList = styled.div``
 const MainPrizesContainer = styled.div`
   font-size: 18px;
   padding: 20px;
-  background-color: ${({ theme }) => theme.bgPrimary};
+  background-color: ${({ theme }) => theme.surface1};
   border: 1px solid ${({ theme }) => theme.borderPrimary};
   border-radius: 22px;
 
@@ -408,7 +408,7 @@ const PartnerCard = styled.div`
   gap: 20px;
   padding: var(--spacing-3);
   border: 1px solid ${({ theme }) => theme.borderPrimary};
-  background-color: ${({ theme }) => theme.bgPrimary};
+  background-color: ${({ theme }) => theme.surface1};
   border-radius: 22px;
 
   @media ${deviceBreakPoints.mobile} {

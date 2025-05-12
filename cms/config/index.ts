@@ -1,10 +1,10 @@
 import {
-  titleFieldConfig,
-  subtitleFieldConfig,
-  urlFieldConfig,
   descriptionFieldConfig,
   linkFieldsConfig,
-  technologySubsectionFields
+  subtitleFieldConfig,
+  technologySubsectionFields,
+  titleFieldConfig,
+  urlFieldConfig
 } from './fields'
 
 const runningLocally = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
@@ -42,7 +42,7 @@ export default {
           fields: [
             {
               label: 'Technology section',
-              name: 'technologySection',
+              name: 'pageSectionTextImageAlternateContent',
               widget: 'object',
               required: true,
               fields: [
@@ -87,7 +87,7 @@ export default {
           fields: [
             {
               label: 'Header section',
-              name: 'headerSection',
+              name: 'pageSectionHeroContent',
               widget: 'object',
               required: true,
               fields: [
@@ -109,7 +109,7 @@ export default {
             },
             {
               label: 'Intro section',
-              name: 'introSection',
+              name: 'pageSectionLinkedCardsContent',
               widget: 'object',
               required: true,
               fields: [

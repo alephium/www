@@ -1,10 +1,9 @@
+import { useEffect, useState } from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 
+import PageSectionContainer from '../components/PageSectionContainer'
 import GlobalStyle from '../styles/global-style'
 import { darkTheme } from '../styles/themes'
-
-import PageSectionContainer from '../components/PageSectionContainer'
-import { useEffect, useState } from 'react'
 
 const CLOSE_ONRAMP_TAB_DEEP_LINK = 'alephium://close-onramp-tab'
 
@@ -43,6 +42,7 @@ const PageSectionContainerStyled = styled(PageSectionContainer)`
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 `
 
 const CountdownText = styled.h3`

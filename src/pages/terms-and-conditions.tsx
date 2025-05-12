@@ -1,46 +1,9 @@
-import styled, { ThemeProvider } from 'styled-components'
-import { graphql, PageProps } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 
-import GlobalStyle from '../styles/global-style'
-import { darkTheme } from '../styles/themes'
-
-import Seo from '../components/Seo'
-import PageSectionContainer from '../components/PageSectionContainer'
-import Footer from '../components/Footer'
-import NavigationMenu from '../components/NavigationMenu'
-
-interface TermsAndConditionsProps extends PageProps {
-  data: {
-    tc: {
-      nodes: {
-        html: string
-      }[]
-    }
-  }
-}
-
-const TermsAndConditions = (props: TermsAndConditionsProps) => (
-  <>
-    <Seo />
-    <ThemeProvider theme={darkTheme}>
-      <GlobalStyle />
-    </ThemeProvider>
-    <main>
-      <ThemeProvider theme={darkTheme}>
-        <NavigationMenu />
-        <PageSectionContainer style={{ paddingTop: 200, paddingBottom: 200 }}>
-          <TermsAndConditionsContent dangerouslySetInnerHTML={{ __html: props.data.tc.nodes[0].html }} />
-        </PageSectionContainer>
-        <Footer />
-      </ThemeProvider>
-    </main>
-  </>
-)
-
-export default TermsAndConditions
+import MarkdownPage from '../templates/markdown-page'
 
 export const pageQuery = graphql`
-  query {
+  query TermsAndConditionsPage {
     tc: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/terms-and-conditions.md/" } }) {
       nodes {
         html
@@ -49,12 +12,19 @@ export const pageQuery = graphql`
   }
 `
 
-const TermsAndConditionsContent = styled.div`
-  p,
-  ul {
-    color: var(--color-grey-250);
-    font-size: var(--fontSize-18);
-    line-height: var(--lineHeight-26);
-    font-weight: var(--fontWeight-medium);
-  }
-`
+const TermsAndConditions = () => {
+  const { tc } = useStaticQuery<Queries.TermsAndConditionsPageQuery>(pageQuery)
+
+  return (
+    <MarkdownPage
+      seo={{
+        title: 'Terms of Use | Alephium Tools',
+        description:
+          'Review the terms and conditions for using Alephium’s wallets, explorer, and bridge. Transparency and user control come first.'
+      }}
+      html={tc.nodes[0].html ?? ''}
+    />
+  )
+}
+
+export default TermsAndConditions

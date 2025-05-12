@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
-import SvgSunOverMountainsFront from '../images/sun-over-mountains-front.svg'
 import SvgSunOverMountainsBack from '../images/sun-over-mountains-back.svg'
+import SvgSunOverMountainsFront from '../images/sun-over-mountains-front.svg'
 import ParallaxWrapper from './ParallaxWrapper'
 
 const PageSectionSunOverTheMountains = () => (

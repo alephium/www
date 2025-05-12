@@ -4,7 +4,7 @@ title: Privacy policy
 
 # Alephium Privacy Policy
 
-_Last modified: June 10, 2024_
+_Last modified: May 12, 2025_
 
 This Privacy Policy (the “Policy”) explains how Alephium ("Panda Software SA", "Alephium Developer", the "Company", "we", "us" or "our") collects, uses, and shares data in connection with the Alephium website (alephium.org), the Alephium wallets and all of our other properties, products, and services (the “Services”). Your use of the Services is subject to this Policy as well as our Terms of Service.
 
@@ -20,7 +20,7 @@ This Privacy Policy (the “Policy”) explains how Alephium ("Panda Software SA
 
 Privacy is central to everything we do. Accordingly, we aspire to be transparent about what little data we do collect. We do not maintain user accounts and do not collect and store personal data, such as your name or internet protocol (“IP”) address.
 
-In our website at alephium.org we are using [GoatCounter](https://www.goatcounter.com/), a privacy-friendly web analytics tool. No personal information (such as IP address) is collected; a hash of the IP address, User-Agent, and a random number (“salt”) is kept in the process memory for 8 hours to identify a browsing session, and is never stored to disk.There is no information stored in the browser with cookies, localStorage, or other methods. The following information can be stored:
+In our website at alephium.org we are using [Fathom Analytics](https://usefathom.com/), a privacy-friendly web analytics tool. No personal information (such as IP address) is collected; a hash of the IP address, User-Agent, and a random number (“salt”) is kept in the process memory for 8 hours to identify a browsing session, and is never stored to disk. There is no information stored in the browser with cookies, localStorage, or other methods. The following information can be stored:
 
 - URL of the visited page.
 - Referer header.
@@ -70,11 +70,11 @@ The California Consumer Privacy Act of 2018 (“CCPA”) requires certain busine
 
 ## Disclosures for European Union Data Subjects
 
-We process personal data for the purposes described in the section titled “How We Use Data” above. Our bases for processing your data include: (i) you have given consent to the process to us or our service provides for one or more specific purposes; (ii) processing is necessary for the performance of a contract with you; (iii) processing is necessary for compliance with a legal obligation; and/or (iv) processing is necessary for the purposes of the legitimate interested pursued by us or a third party, and your interests and fundamental rights and freedoms do not override those interests.
+We process personal data for the purposes described in the section titled “How We Use Data” above. Our bases for processing your data include: (i) you have given consent to the process to us or our service provides for one or more specific purposes; (ii) processing is necessary for the performance of a contract with you; (iii) processing is necessary for compliance with a legal obligation; and/or (iv) processing is necessary for the purposes of the legitimate interests pursued by us or a third party, and your interests and fundamental rights and freedoms do not override those interests.
 
 Your rights under the General Data Protection Regulations (“GDPR”) include the right to (i) request access and obtain a copy of your personal data, (ii) request rectification or erasure of your personal data, (iii) object to or restrict the processing of your personal data; and (iv) request portability of your personal data. Additionally, you may withdraw your consent to our collection at any time. Nevertheless, we cannot edit or delete information that is stored on a particular blockchain. Information such as your transaction data, blockchain wallet address, and assets held by your address that may be related to the data we collect is beyond our control.
 
-To exercise any of your rights under the GDPR, please contact us at info@alephium.org. We may require additional information from you to process your request. Please note that we may retain information as necessary to fulfill the purpose for which it was collected and may continue to do so even after a data subject request in accordance with our legitimate interests, including to comply with our legal obligations, resolves disputes, prevent fraud, and enforce our agreements.
+To exercise any of your rights under the GDPR, please contact us at info@alephium.org. We may require additional information from you to process your request. Please note that we may retain information as necessary to fulfill the purpose for which it was collected and may continue to do so even after a data subject request in accordance with our legitimate interests, including to comply with our legal obligations, resolve disputes, prevent fraud, and enforce our agreements.
 
 ## Changes to this Policy
 

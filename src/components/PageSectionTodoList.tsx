@@ -1,12 +1,12 @@
-import styled, { css } from 'styled-components'
-
-import SectionTextHeader from './SectionTextHeader'
-import SvgStars from '../images/stars.svg'
-import { deviceBreakPoints } from '../styles/global-style'
+import { colord } from 'colord'
 import { AnimatePresence, motion, Variants } from 'framer-motion'
 import { useRef, useState } from 'react'
+import styled, { css } from 'styled-components'
+
 import useOnClickOutside from '../hooks/useOnClickOutside'
-import { colord } from 'colord'
+import SvgStars from '../images/stars.svg'
+import { deviceBreakPoints } from '../styles/global-style'
+import SectionTextHeader from './SectionTextHeader'
 
 export type PageSectionTodoListContentType = {
   title: string
@@ -26,7 +26,7 @@ interface Props {
 
 const PageSectionTodoList = ({ content: { title, subtitle, lists } }: Props) => (
   <SectionContainer>
-    <SectionTextHeader id="next" title={title} subtitle={subtitle} bigSubtitle bigText centered />
+    <SectionTextHeader id="next" titleRows={[title]} subtitleRows={[subtitle]} bigSubtitle bigText centered />
     <TodoListScrollableContainer>
       <TodoListsContainer>
         <TodoLists
@@ -204,14 +204,14 @@ const TodoItemContainer = styled(motion.div)`
   justify-content: center;
   position: relative;
   padding: 15px;
-  background-color: ${({ theme }) => theme.bgPrimary};
+  background-color: ${({ theme }) => theme.surface1};
   border-radius: 16px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 
   &:hover {
     cursor: pointer;
-    background-color: ${({ theme }) => colord(theme.bgPrimary).lighten(0.15).toHex()};
+    background-color: ${({ theme }) => colord(theme.surface1).lighten(0.15).toHex()};
     ${TodoLabel} {
       opacity: 0.8;
     }

@@ -1,15 +1,16 @@
+import { graphql, useStaticQuery } from 'gatsby'
 import { Helmet } from 'react-helmet'
-import { useStaticQuery, graphql } from 'gatsby'
 
 import SocialMediaBannerImage from '../images/social-media-banner.png'
 
-interface SeoProps {
+export interface SeoProps {
   title?: string
   description?: string
   lang?: string
+  image?: any
 }
 
-const Seo = ({ title, description, lang = 'en' }: SeoProps) => {
+const Seo = ({ title, description, lang = 'en', image: metaImage }: SeoProps) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -27,9 +28,13 @@ const Seo = ({ title, description, lang = 'en' }: SeoProps) => {
     `
   )
 
+  const isTestSite = typeof window !== 'undefined' && window.location.hostname === 'www2.alephium.org'
+
   const metaDescription = description || site.siteMetadata.description
   const metaImageAbsoluteUrl = `${site.siteMetadata.siteUrl}${SocialMediaBannerImage}`
   const titleContent = title || site.siteMetadata.title
+
+  const metaBase = isTestSite ? [{ property: 'robots', content: 'noindex, nofollow' }] : []
 
   return (
     <Helmet
@@ -38,6 +43,7 @@ const Seo = ({ title, description, lang = 'en' }: SeoProps) => {
       }}
       title={titleContent}
       meta={[
+        ...metaBase,
         {
           name: `description`,
           content: metaDescription
@@ -85,6 +91,10 @@ const Seo = ({ title, description, lang = 'en' }: SeoProps) => {
         {
           name: `twitter:image`,
           content: metaImageAbsoluteUrl
+        },
+        {
+          name: `google-site-verification`,
+          content: 'Z2_Eik2H9Cwj7ZzkG79O3WurVlU0Lz4Am4AVYgzaRKY'
         }
       ]}
     />

@@ -1,9 +1,9 @@
 import styled from 'styled-components'
-import TeamMember from '../../TeamMember'
+
 import { deviceBreakPoints } from '../../../styles/global-style'
-import HackathonSectionContainer from './HackathonSectionContainer'
-import { H3, Paragraph } from './Texts'
 import SimpleLink from '../../SimpleLink'
+import TeamMember from '../../TeamMember'
+import { H3, Paragraph } from './Texts'
 
 const HackathonJudgingSection = () => (
   <div>

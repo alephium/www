@@ -1,18 +1,17 @@
+import { motion } from 'framer-motion'
+import { sortBy } from 'lodash'
+import { useEffect, useState } from 'react'
 import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../styles/global-style'
-
-import SectionTextHeader from './SectionTextHeader'
-import PageSectionContainer from './PageSectionContainer'
-import SubsectionTextHeader from './SubsectionTextHeader'
-import SimpleLink from './SimpleLink'
-import Columns from './Columns/Columns'
-import { motion } from 'framer-motion'
-import { useEffect, useState } from 'react'
-import { sortBy } from 'lodash'
 import Button from './Button'
+import Columns from './Columns/Columns'
+import PageSectionContainer from './PageSectionContainer'
+import SectionTextHeader from './SectionTextHeader'
+import SimpleLink from './SimpleLink'
+import SubsectionTextHeader from './SubsectionTextHeader'
 
-export type PageSectionEcosystemContentType = {
+export type HomepageEcosystemSectionContentType = {
   title: string
   subtitle: string
   subsections: {
@@ -27,15 +26,18 @@ export type PageSectionEcosystemContentType = {
   }[]
 }
 
-interface PageSectionEcosystemProps {
-  content: PageSectionEcosystemContentType
+interface HomepageEcosystemSectionProps {
+  content: HomepageEcosystemSectionContentType
   className?: string
 }
 
 type Exchange = { name: string; logo: string; trade_url: string }
 type EchangesRes = { name: 'Alephium'; tickers: { market: Exchange; trade_url: string }[] }
 
-const PageSectionEcosystem = ({ content: { title, subtitle, subsections }, className }: PageSectionEcosystemProps) => {
+const HomepageEcosystemSection = ({
+  content: { title, subtitle, subsections },
+  className
+}: HomepageEcosystemSectionProps) => {
   const [exchanges, setExchanges] = useState<Exchange[]>()
 
   useEffect(() => {
@@ -65,19 +67,19 @@ const PageSectionEcosystem = ({ content: { title, subtitle, subsections }, class
 
   return (
     <section className={className}>
-      <SectionTextHeader title={title} subtitle={subtitle} bigSubtitle bigText />
+      <SectionTextHeader titleRows={[title]} subtitleRows={[subtitle]} bigSubtitle bigText />
       <SectionContainer>
         <Subsections>
           {subsections.map(({ title, description, image, items }) => (
             <Subsection key={title} animateEntry>
-              <SubsectionImageContainer>{image && <img src={image.publicURL} alt={title} />}</SubsectionImageContainer>
+              <SubsectionImageContainer>
+                {image && <img src={image.publicURL} alt={title} loading="lazy" />}
+              </SubsectionImageContainer>
               <SubsectionTextContent>
                 <SubsectionTextHeader title={title} subtitle={description} />
                 <SubsectionItems variants={containerVariants}>
                   {title === 'dApps & projects' ? (
-                    <Button newTab url="https://alph.land">
-                      Discover the Alephium ecosystem
-                    </Button>
+                    <Button url="https://alph.land">Discover the Alephium ecosystem</Button>
                   ) : (
                     items &&
                     items.map(({ title, logo, url }) =>
@@ -86,7 +88,6 @@ const PageSectionEcosystem = ({ content: { title, subtitle, subsections }, class
                           url={url}
                           text={title}
                           key={url}
-                          newTab
                           trackingName={`ecosystem-section:${title.replaceAll(' ', '-')}-link`}
                         >
                           <SubsectionItem key={title} variants={itemVariants}>
@@ -94,7 +95,7 @@ const PageSectionEcosystem = ({ content: { title, subtitle, subsections }, class
                               <>
                                 <SubsectionItemTitle className="with-logo">{title}</SubsectionItemTitle>
                                 <SubsectionItemLogoContainer>
-                                  <SubsectionItemLogo src={logo.publicURL} alt={title} />
+                                  <SubsectionItemLogo src={logo.publicURL} alt={title} loading="lazy" />
                                 </SubsectionItemLogoContainer>
                               </>
                             ) : (
@@ -122,11 +123,10 @@ const PageSectionEcosystem = ({ content: { title, subtitle, subsections }, class
                     url={trade_url}
                     text={name}
                     key={name}
-                    newTab
                     trackingName={`ecosystem-section:${name.replaceAll(' ', '-')}-link`}
                   >
                     <ExchangeItem key={name}>
-                      <ExchangeLogo src={logo} alt={name} />
+                      <ExchangeLogo src={logo} alt={name} loading="lazy" />
                       <ExchangeName>{name}</ExchangeName>
                     </ExchangeItem>
                   </SimpleLink>
@@ -140,9 +140,9 @@ const PageSectionEcosystem = ({ content: { title, subtitle, subsections }, class
   )
 }
 
-export default styled(PageSectionEcosystem)`
+export default styled(HomepageEcosystemSection)`
   padding-top: var(--spacing-16);
-  padding-bottom: var(--spacing-20);
+  padding-bottom: var(--spacing-16);
   position: relative;
 `
 
@@ -237,17 +237,20 @@ const SubsectionItemLogoContainer = styled.div`
   right: 0;
   left: 0;
   opacity: 0;
-  transition: all 0.2s ease-out;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(-5px);
   padding: var(--spacing-2);
   display: flex;
+  will-change: opacity, transform;
 `
 
 const SubsectionItemLogo = styled.img`
   flex: 1;
-  transition: all 0.2s ease-out;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   max-width: 100%;
-  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  will-change: transform;
 `
 
 const SubsectionItem = styled(motion.div)`
@@ -257,20 +260,27 @@ const SubsectionItem = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${({ theme }) => theme.bgPrimary};
+  background-color: ${({ theme }) => theme.surface1};
   box-sizing: border-box;
   border-radius: 16px;
   font-size: 13px;
+  overflow: hidden;
+  will-change: transform;
 
   &:hover {
     ${SubsectionItemTitle}.with-logo {
       opacity: 0;
       transform: translateY(-5px);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     ${SubsectionItemLogoContainer} {
       opacity: 1;
       transform: translateY(0);
+    }
+
+    ${SubsectionItemLogo} {
+      transform: scale(1.05);
     }
   }
 `
@@ -281,11 +291,11 @@ const ExchangeItem = styled.div`
   gap: var(--spacing-2);
   padding: var(--spacing-2);
   border-radius: 16px;
-  background-color: ${({ theme }) => theme.bgPrimary};
+  background-color: ${({ theme }) => theme.surface1};
   transition: all 0.2s ease-out;
 
   &:hover {
-    background-color: ${({ theme }) => theme.bgSurface};
+    background-color: ${({ theme }) => theme.surface2};
   }
 `
 
@@ -304,13 +314,25 @@ const containerVariants = {
     opacity: 1,
     transition: {
       delay: 0.2,
-      staggerChildren: 0.1,
-      delayChildren: 0.2
+      staggerChildren: 0.08,
+      delayChildren: 0.2,
+      duration: 0.4,
+      ease: [0.4, 0, 0.2, 1]
     }
   }
 }
 
 const itemVariants = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1 }
+  hidden: {
+    opacity: 0,
+    y: 10
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.4,
+      ease: [0.4, 0, 0.2, 1]
+    }
+  }
 }

@@ -1,45 +1,17 @@
-import { graphql, PageProps } from 'gatsby'
 import { useEffect } from 'react'
-import { PageSectionFollowUsContentType } from '../components/PageSectionFollowUs'
 
-interface DiscordPageProps extends PageProps {
-  data: {
-    homepage: {
-      nodes: {
-        frontmatter: {
-          followUsSection: PageSectionFollowUsContentType
-        }
-      }[]
-    }
-  }
-}
+import useSocials from '../hooks/useSocials'
 
-const DiscordPage = (props: DiscordPageProps) => {
-  const pageContent = props.data.homepage.nodes[0].frontmatter
-  const discordEntry = pageContent.followUsSection.socialMediaLinks.find(({ name }) => name === 'Discord')
+const DiscordPage = () => {
+  const socials = useSocials()
+
+  const discordEntry = socials?.find((social) => social.node?.name === 'Discord')?.node
 
   useEffect(() => {
-    if (discordEntry) window.location.replace(discordEntry.url)
+    if (discordEntry?.url) window.location.replace(discordEntry.url)
   }, [discordEntry])
 
   return null
 }
 
 export default DiscordPage
-
-export const pageQuery = graphql`
-  query {
-    homepage: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/homepage.md/" } }) {
-      nodes {
-        frontmatter {
-          followUsSection {
-            socialMediaLinks {
-              name
-              url
-            }
-          }
-        }
-      }
-    }
-  }
-`

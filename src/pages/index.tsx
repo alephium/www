@@ -1,257 +1,114 @@
-import styled, { ThemeProvider } from 'styled-components'
 import { graphql, PageProps } from 'gatsby'
+import styled from 'styled-components'
 
-import GlobalStyle from '../styles/global-style'
-import { darkTheme } from '../styles/themes'
-
-import Seo from '../components/Seo'
-import PageSectionHero, { PageSectionHeroContentType } from '../components/PageSectionHero'
-import PageSectionIntro, { PageSectionIntroContentType } from '../components/PageSectionIntro'
-import PageSectionEcosystem, { PageSectionEcosystemContentType } from '../components/PageSectionEcosystem'
-import PageSectionTechnology, { PageSectionTechnologyContentType } from '../components/PageSectionTechnology'
-import PageSectionNumbers, { PageSectionNumbersContentType } from '../components/PageSectionNumbers'
-import PageSectionMilestones, { PageSectionMilestonesContentType } from '../components/PageSectionMilestones'
-import PageSectionTodoList, { PageSectionTodoListContentType } from '../components/PageSectionTodoList'
-import PageSectionFollowUs, { PageSectionFollowUsContentType } from '../components/PageSectionFollowUs'
-import Footer, { FooterContentType } from '../components/Footer'
-import PageSectionShop, { PageSectionShopContentType } from '../components/PageSectionShop'
+import Button from '../components/Button'
+import Page from '../components/customPageComponents/Page'
+import TextElement from '../components/customPageComponents/TextElement'
+import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
+import HomepageCommunitySection from '../components/pages/homepage/HomepageCommunitySection'
+import HomepageEcosystemSection from '../components/pages/homepage/HomepageEcosystemSection'
+import HomepageHeroSection from '../components/pages/homepage/HomepageHeroSection'
+import HomepageIntroSection from '../components/pages/homepage/HomepageIntroSection'
+import HomepageNewsSection from '../components/pages/homepage/HomepageNewsSection'
+import HomepageNumbersSection from '../components/pages/homepage/HomepageNumbersSection'
+import HomepageUSPSection from '../components/pages/homepage/HomepageUSPSection'
 import SectionDivider from '../components/SectionDivider'
-import PageSectionWallets, { PageSectionWalletsContentType } from '../components/PageSectionWallets'
-import NavigationMenu from '../components/NavigationMenu'
-import TopBanner, { TopBannerContentType } from '../components/TopBanner'
-import { useEffect } from 'react'
 
-interface IndexPageProps extends PageProps {
-  data: {
-    homepage: {
-      nodes: {
-        frontmatter: {
-          topBanner: TopBannerContentType
-          headerSection: PageSectionHeroContentType
-          introSection: PageSectionIntroContentType
-          technologySection: PageSectionTechnologyContentType
-          numbersSection: PageSectionNumbersContentType
-          ecosystemSection: PageSectionEcosystemContentType
-          walletsSection: PageSectionWalletsContentType
-          milestonesSection: PageSectionMilestonesContentType
-          todoListSection: PageSectionTodoListContentType
-          shopSection: PageSectionShopContentType
-          followUsSection: PageSectionFollowUsContentType
+export const pageQuery = graphql`
+  query IndexPage {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/homepage.md/" } }) {
+      nodes {
+        frontmatter {
+          partnersSection {
+            ...HomepagePartnersSection
+          }
         }
-      }[]
+      }
     }
-    footer: {
-      nodes: {
-        frontmatter: FooterContentType
-      }[]
+    seaImage: file(relativePath: { eq: "sea-night.png" }) {
+      childImageSharp {
+        gatsbyImageData(quality: 100)
+      }
     }
   }
-}
+`
 
-const IndexPage = (props: IndexPageProps) => {
-  const pageContent = props.data.homepage.nodes[0].frontmatter
+const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
+  const seaImage = props.data.seaImage?.childImageSharp?.gatsbyImageData
 
   return (
-    <>
-      <Seo />
-      <ThemeProvider theme={darkTheme}>
-        <GlobalStyle />
-        <SiteWrapper>
-          <TopBanner content={pageContent.topBanner} />
-          <NavigationMenu topOffset={pageContent.topBanner.text ? 80 : 0} />
-          <ContentContainer>
-            <PageSectionHero content={pageContent.headerSection} />
-            <SectionDivider />
-            <PageSectionIntro content={pageContent.introSection} />
-            <SectionDivider />
-            <PageSectionTechnology content={pageContent.technologySection} minimal />
-            <PageSectionNumbers content={pageContent.numbersSection} />
-            <SectionDivider />
-            <PageSectionWallets content={pageContent.walletsSection} />
-            <SectionDivider />
-            <PageSectionEcosystem content={pageContent.ecosystemSection} />
-            <SectionDivider />
-            <PageSectionMilestones content={pageContent.milestonesSection} />
-            <SectionDivider />
-            <PageSectionTodoList content={pageContent.todoListSection} />
-            <SectionDivider />
-            <PageSectionShop content={pageContent.shopSection} />
-            <PageSectionFollowUs content={pageContent.followUsSection} />
-            <Footer />
-          </ContentContainer>
-        </SiteWrapper>
-      </ThemeProvider>
-    </>
+    <Page
+      {...props}
+      seo={{
+        title: 'Alephium | The Web3 you were promised',
+        description:
+          'Alephium is the next generation PoW Layer 1 with smart contracts. Built for speed, security, and sustainability. Start building or join the community today.'
+      }}
+      content={
+        <>
+          <HomepageHeroSection />
+
+          <HomepageNewsSection />
+
+          <HomepageIntroSection />
+
+          <HomepageUSPSection />
+
+          <SectionDivider double />
+
+          <HomepageNumbersSection />
+
+          <HomepageEcosystemSection />
+
+          <SectionDivider border />
+
+          <HomepageCommunitySection />
+
+          <SectionDivider />
+
+          <BottomSection>
+            <BottomBackgroundImageContainer>
+              <GatsbyImageWrapper image={seaImage} alt="Sea" />
+            </BottomBackgroundImageContainer>
+            <TextElement isCentered>
+              <h1>
+                It&apos;s time
+                <br />
+                to make waves.
+              </h1>
+              <p>
+                Alephium isn&apos;t just a vision, it&apos;s a fast growing ecosystem.
+                <br />
+                <strong>There&apos;s a place for you here and we can&apos;t wait to meet you.</strong>
+              </p>
+              <Button big highlight url="/get-started">
+                Get started
+              </Button>
+            </TextElement>
+          </BottomSection>
+        </>
+      }
+    />
   )
 }
 
 export default IndexPage
 
-const SiteWrapper = styled.main``
+const BottomBackgroundImageContainer = styled.div`
+  position: absolute;
+  inset: 0;
+  opacity: 0.5;
+`
 
-const ContentContainer = styled.div``
-
-export const pageQuery = graphql`
-  query {
-    homepage: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/homepage.md/" } }) {
-      nodes {
-        frontmatter {
-          topBanner {
-            text
-            linkText
-            url
-            color
-          }
-          headerSection {
-            dark {
-              title
-              subtitle
-            }
-            light {
-              title
-              subtitle
-            }
-          }
-          introSection {
-            title
-            subtitle
-            cards {
-              title
-              description
-              image {
-                publicURL
-              }
-              link {
-                url
-                newTab
-              }
-            }
-          }
-          ecosystemSection {
-            title
-            subtitle
-            subsections {
-              title
-              description
-              image {
-                publicURL
-              }
-              items {
-                title
-                url
-                logo {
-                  publicURL
-                }
-              }
-            }
-          }
-          technologySection {
-            title
-            subtitle
-            blockFlowSection {
-              title
-              description
-              links {
-                text
-                url
-                newTab
-              }
-            }
-            smartContractSection {
-              title
-              description
-              links {
-                text
-                url
-                newTab
-              }
-            }
-            polwSection {
-              title
-              description
-              links {
-                text
-                url
-                newTab
-              }
-            }
-            vmsSection {
-              title
-              description
-              links {
-                text
-              }
-            }
-          }
-          numbersSection {
-            title
-            subtitle
-          }
-          walletsSection {
-            title
-            subtitle
-            description
-            wallets {
-              title
-              description
-              screenshot {
-                publicURL
-              }
-              color
-              actions {
-                title
-                link
-              }
-            }
-          }
-          milestonesSection {
-            title
-            subtitle
-            timelines {
-              title
-              years {
-                year
-                entries {
-                  row
-                  text
-                  when
-                  content
-                  isMajor
-                }
-              }
-            }
-          }
-          todoListSection {
-            title
-            subtitle
-            lists {
-              title
-              items {
-                text
-                description
-              }
-            }
-          }
-          shopSection {
-            title
-            subtitle
-            description
-            link {
-              text
-              url
-            }
-          }
-          followUsSection {
-            title
-            subtitle
-            description
-            socialMediaLinks {
-              name
-              url
-            }
-          }
-        }
-      }
-    }
-  }
+const BottomSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 600px;
+  width: 100%;
+  margin-top: var(--spacing-4);
+  padding: 0 var(--spacing-4);
+  box-sizing: border-box;
 `

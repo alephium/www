@@ -1,17 +1,17 @@
 import { motion } from 'framer-motion'
 import { ReactNode, useRef, useState } from 'react'
 import styled, { useTheme } from 'styled-components'
+
 import useElementDistanceToTop from '../hooks/useElementDistanceToTop'
 import { deviceBreakPoints } from '../styles/global-style'
 import { toId } from '../utils/misc'
-
 import TextSnippet from './TextSnippet'
 
 interface SectionTextHeaderProps {
+  titleRows: string[]
+  subtitleRows?: string[]
   className?: string
   id?: string
-  title: string
-  subtitle: string
   bigSubtitle?: boolean
   bigText?: boolean
   centered?: boolean
@@ -23,8 +23,8 @@ interface SectionTextHeaderProps {
 const SectionTextHeader = ({
   className,
   id,
-  title,
-  subtitle,
+  titleRows,
+  subtitleRows,
   bigSubtitle,
   bigText,
   sticky,
@@ -47,16 +47,16 @@ const SectionTextHeader = ({
   }
 
   const borderBottom = bottomBorder && headingReachedTopOfScreen ? `1px solid rgba(255, 255, 255, 0.1)` : undefined
-  const backgroundColor = headingReachedTopOfScreen ? theme.bgTertiary : 'rgba(0, 0, 0, 0)'
+  const backgroundColor = headingReachedTopOfScreen ? theme.background1 : 'rgba(0, 0, 0, 0)'
 
   return (
     <>
-      <div ref={headingElementRef} id={toId(id || title)} />
+      <div ref={headingElementRef} id={toId(id || titleRows.join(' '))} />
       <motion.header className={className} animate={{ borderBottom, backgroundColor }}>
-        <StyledTextSnippet
-          title={title}
-          subtitle={subtitle}
-          anchor={id || title}
+        <TextSnippetStyled
+          title={titleRows.join('\n')}
+          subtitle={subtitleRows}
+          anchor={id || titleRows.join(' ')}
           bigTitle
           bigSubtitle={bigSubtitle}
           bigText={bigText}
@@ -65,16 +65,11 @@ const SectionTextHeader = ({
           style={{ transformOrigin: centered ? 'center' : 'left' }}
         >
           {children}
-        </StyledTextSnippet>
+        </TextSnippetStyled>
       </motion.header>
     </>
   )
 }
-
-const StyledTextSnippet = styled(TextSnippet)`
-  flex: 1;
-  max-width: var(--page-width);
-`
 
 export default styled(SectionTextHeader)`
   position: ${({ sticky }) => (sticky ? 'sticky' : 'relative')};
@@ -86,6 +81,8 @@ export default styled(SectionTextHeader)`
   display: flex;
   justify-content: center;
   padding: 0 var(--spacing-4);
+  padding-top: var(--spacing-16);
+  margin-bottom: var(--spacing-12);
   border-bottom: 1px solid transparent;
 
   @media ${deviceBreakPoints.mobile} {
@@ -110,4 +107,9 @@ export default styled(SectionTextHeader)`
     color: ${({ theme }) => theme.textSecondary};
     max-width: var(--width-564);
   }
+`
+
+const TextSnippetStyled = styled(TextSnippet)`
+  flex: 1;
+  max-width: var(--page-width);
 `

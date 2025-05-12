@@ -1,17 +1,16 @@
 import { FC, useEffect, useState } from 'react'
 import styled from 'styled-components'
 
-import SectionTextHeader from './SectionTextHeader'
-import PageSectionContainer from './PageSectionContainer'
-import Columns from './Columns/Columns'
-import Column from './Columns/Column'
-import ArrowedLink from './ArrowedLink'
-
-import tShirtPlaceholder from '../images/t-shirt-placeholder.png'
 import firstDesign from '../images/t-shirt-mountain.svg'
+import tShirtPlaceholder from '../images/t-shirt-placeholder.png'
 import secondDesign from '../images/t-shirt-rainbow-fill.svg'
 import thirdDesign from '../images/t-shirt-rainbow-stroke.svg'
 import fourthDesign from '../images/t-shirt-waves.svg'
+import ArrowedLink from './ArrowedLink'
+import Column from './Columns/Column'
+import Columns from './Columns/Columns'
+import PageSectionContainer from './PageSectionContainer'
+import SectionTextHeader from './SectionTextHeader'
 
 export interface PageSectionShopContentType {
   title: string
@@ -50,9 +49,9 @@ const Shop: FC<ShopProps> = ({ className, content }) => {
       <PageSectionContainer>
         <Columns>
           <Column vertialCenter>
-            <SectionTextHeader title={content.title} subtitle={content.subtitle} bigSubtitle bigText>
+            <SectionTextHeader titleRows={[content.title]} subtitleRows={[content.subtitle]} bigSubtitle bigText>
               <p>{content.description}</p>
-              <ArrowedLink url={content.link.url} newTab trackingName="shop-section:main-link">
+              <ArrowedLink url={content.link.url} trackingName="shop-section:main-link">
                 {content.link.text}
               </ArrowedLink>
             </SectionTextHeader>
@@ -80,7 +79,7 @@ const Shop: FC<ShopProps> = ({ className, content }) => {
 
 export default styled(Shop)`
   padding: var(--spacing-12) 0;
-  background-color: ${({ theme }) => theme.bgTertiary};
+  background-color: ${({ theme }) => theme.background1};
   color: ${({ theme }) => theme.textPrimary};
   align-items: center;
 

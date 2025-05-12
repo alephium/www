@@ -1,15 +1,13 @@
-import styled, { ThemeProvider } from 'styled-components'
 import { Link } from 'gatsby'
+import styled, { ThemeProvider } from 'styled-components'
 
+import HeroImage from '../components/Hero/HeroImage'
+import HeroLogo from '../components/Hero/HeroLogo'
+import NavigationMenu from '../components/NavigationMenu'
+import PageSectionContainer from '../components/PageSectionContainer'
+import TextSnippet from '../components/TextSnippet'
 import GlobalStyle from '../styles/global-style'
 import { darkTheme } from '../styles/themes'
-
-import NavigationMenu from '../components/NavigationMenu'
-import TextSnippet from '../components/TextSnippet'
-
-import HeroLogo from '../components/Hero/HeroLogo'
-import HeroImage from '../components/Hero/HeroImage'
-import PageSectionContainer from '../components/PageSectionContainer'
 
 const NotFoundPage = () => (
   <ThemeProvider theme={darkTheme}>
@@ -25,9 +23,11 @@ const NotFoundPage = () => (
         <CenteredContainer>
           <div className="contents">
             <HeroLogo gradientIndex={0} />
-            <h1>404 - Page not found</h1>
+            <h1>404</h1>
+            <h2>Oops! Looks like this block got orphaned...</h2>
+
             <TextSnippetStyled bigText>
-              Let&apos;s go back to the <Link to="/">home page</Link>.
+              Go back <Link to="/">home</Link> before this fork gets any weirder!
             </TextSnippetStyled>
           </div>
         </CenteredContainer>

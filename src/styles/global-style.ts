@@ -18,14 +18,19 @@ export const deviceBreakPoints = {
 const GlobalStyle = createGlobalStyle`
   ${normalize}
 
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
+  }
+
   :root {
     font-size: 15px;
 
     @media ${deviceBreakPoints.mobile} {
-      font-size: 12px;
+      font-size: 13px;
     }
 
-    --page-width: 72.5rem;
+    --page-width: min(80vw, 1400px);
     --page-width-shrinked: 68rem;
 
     --width-16: 1rem;
@@ -77,11 +82,13 @@ const GlobalStyle = createGlobalStyle`
     --spacing-34: 17rem;     // 272pt
     --spacing-35: 17.5rem;   // 280pt
 
-    --radius: 1rem;
-    --radius-small: 0.4rem;
+    --radius-tiny: 4px;
+    --radius-small: 12px;
+    --radius: 18px;
+    --radius-big: 28px;
     --radius-full: 9999px;
 
-    --fontFamily-sans: "Switzer", "Inter", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    --fontFamily-sans: "Geist", "InterDisplay", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
     --fontFamily-serif: "Times New Roman", Times, serif;
     --font-heading: var(--fontFamily-sans);
     --fontWeight-light: 300;
@@ -93,33 +100,49 @@ const GlobalStyle = createGlobalStyle`
     /* TODO: Maybe check https://www.designsystems.com/typography-guides/ for
     inspiration in defining a typography system */
     --fontSize-14: 0.875rem;
+    --fontSize-16: 1rem;
     --fontSize-18: 1.125rem;
+    --fontSize-20: 1.2rem;
+    --fontSize-22: 1.33rem;
     --fontSize-24: 1.5rem;
+    --fontSize-26: 1.66rem;
     --fontSize-28: 1.75rem;
+    --fontSize-32: 2rem;
     --fontSize-36: 2.25rem;
+    --fontSize-38: 2.33rem;
+    --fontSize-40: 2.5rem;
+    --fontSize-42: 2.75rem;
     --fontSize-50: 3.125rem;
     --fontSize-56: 3.5rem;
+    --fontSize-58: 3.75rem;
+    --fontSize-60: 4.0rem;
+    --fontSize-64: 4.2rem;
+    --fontSize-68: 4.25rem;
     --fontSize-70: 4.375rem;
+    --fontSize-72: 4.5rem;
+    --fontSize-80: 5rem;
     --lineHeight-22: 1.375rem;
     --lineHeight-26: 1.625rem;
     --lineHeight-28: 1.75rem;
+    --lineHeight-32: 2.00rem;
     --lineHeight-36: 2.25rem;
 
     --color-white: #fff;
     --color-grey: #f5f5f5;
-    --color-grey-100: #ddd;
-    --color-grey-200: #B7B7B7;
-    --color-grey-250: #979797;
-    --color-grey-300: #808080;
-    --color-grey-400: #6E6E6E;
-    --color-grey-500: #4C4C4C;
-    --color-grey-550: #414141;
-    --color-grey-600: #343434;
-    --color-grey-700: #262626;
-    --color-grey-800: #1B1B1B;
-    --color-grey-850: #141414;
-    --color-grey-900: #0f0f0f;
-    --color-grey-950: #0a0a0a;
+    --color-grey-100: #e8e8e8;
+    --color-grey-200: #d2d2d2;
+    --color-grey-250: #c7c7c7;
+    --color-grey-300: #868686;
+    --color-grey-400: #6e6e6e;
+    --color-grey-500:rgb(74, 74, 74);
+    --color-grey-550:rgb(70, 70, 70);
+    --color-grey-600:rgb(66, 66, 66);
+    --color-grey-700: rgb(53, 53, 53);
+    --color-grey-750: rgb(44, 44, 44);
+    --color-grey-800: rgb(38, 38, 38);
+    --color-grey-850: rgb(32, 32, 32);
+    --color-grey-900: rgb(23, 23, 23);
+    --color-grey-950: rgb(14, 14, 14);
     --color-black: #000;
     --color-salmon: #ff5d51;
     --color-blue: #4899ff;
@@ -136,40 +159,14 @@ const GlobalStyle = createGlobalStyle`
     --border-primary-light: 1px solid rgb(0, 0, 0, 0.08);
   }
 
-  html {
-    scroll-behavior: smooth;
-  }
-
   body {
-    background-color: ${({ theme }) => theme.bgTertiary};
+    background-color: ${({ theme }) => theme.background3};
     color: ${({ theme }) => theme.textPrimary};
     font-family: var(--fontFamily-sans);
-
-    &.ReactModal__Body--open {
-      overflow: hidden;
-    }
   }
 
   b {
     font-weight: 600;
-  }
-
-  // Modals
-  
-  .ReactModal__Overlay {
-    transition: opacity 500ms ease-in-out;
-    opacity: 0;
-  }
-
-  .ReactModal__Overlay {
-    transition: opacity 200ms ease-in-out;
-    background: rgba(0, 0, 0, 0.15);
-    &--after-open {
-        opacity: 1;
-    }
-    &--before-close {
-        opacity: 0;
-    }
   }
 `
 

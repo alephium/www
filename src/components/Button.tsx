@@ -1,65 +1,188 @@
-import { ReactNode } from 'react'
-import styled, { css } from 'styled-components'
+import { useMotionValue, useSpring } from 'framer-motion'
+import { Link } from 'gatsby'
+import { ReactNode, RefObject, useEffect, useRef } from 'react'
+import { PointerEvent } from 'react'
+import styled, { css, DefaultTheme } from 'styled-components'
 
 import Arrow from '../images/svgs/arrow-right.svg'
+import { getPointerRelativePositionInElement } from '../utils/pointer'
 
 interface ButtonProps {
   onClick?: () => void
   url?: string
-  newTab?: boolean
+  squared?: boolean
+  textAlign?: 'left' | 'center'
+  big?: boolean
   className?: string
   trackingName?: string
   disabled?: boolean
   children?: ReactNode
+  highlight?: boolean
 }
 
-const Button = ({ onClick, className, children, url, newTab, trackingName, disabled }: ButtonProps) =>
-  url ? (
-    <a
-      href={url}
-      className={`${className} button`}
-      target={(newTab && '_blank') || undefined}
-      rel={(newTab && 'noopener') || undefined}
-      data-goatcounter-click={trackingName}
-      onClick={(e) => disabled && e.preventDefault()}
-    >
+const Button = ({ onClick, className, children, url, disabled, highlight, squared }: ButtonProps) => {
+  const buttonRef = useRef<HTMLButtonElement>(null)
+  const anchorRef = useRef<HTMLAnchorElement | Link<any>>(null)
+  const x = useMotionValue(0.5)
+  const y = useMotionValue(0.5)
+  const springX = useSpring(x, { stiffness: 200, damping: 20 })
+  const springY = useSpring(y, { stiffness: 200, damping: 20 })
+  const isInternalLink = url?.startsWith('/')
+
+  const onMove = (e: PointerEvent) => {
+    if (!highlight || disabled) return
+    const { x: positionX, y: positionY } = getPointerRelativePositionInElement(e)
+    x.set(positionX, true)
+    y.set(positionY, true)
+  }
+
+  const onLeave = () => {
+    if (!highlight || disabled) return
+    x.set(0.5, true)
+    y.set(0.5, true)
+  }
+
+  useEffect(() => {
+    if (!highlight || disabled) return
+    const updateGradientPosition = () => {
+      const currentRef = buttonRef.current || anchorRef.current
+      if (currentRef) {
+        currentRef.style.setProperty('--gradient-x', `${springX.get() * 100}%`)
+        currentRef.style.setProperty('--gradient-y', `${springY.get() * 100}%`)
+      }
+    }
+    updateGradientPosition()
+    const unsubscribeX = springX.onChange(updateGradientPosition)
+    const unsubscribeY = springY.onChange(updateGradientPosition)
+    return () => {
+      unsubscribeX()
+      unsubscribeY()
+    }
+  }, [springX, springY, highlight, disabled])
+
+  const content = (
+    <>
       {children}
-      {!disabled && <Arrow className="arrow" />}
-    </a>
-  ) : (
-    <button
-      className={`${className} button`}
-      onClick={onClick}
-      data-goatcounter-click={trackingName}
-      disabled={disabled}
-    >
-      {children}
-      {!disabled && <Arrow className="arrow" />}
-    </button>
+      {!disabled && <ArrowStyled className="arrow" isExternal={!url?.startsWith('/')} />}
+      {highlight && <GradientBorder squared={squared} />}
+    </>
   )
 
-export default styled(Button)`
+  const sharedProps = {
+    className: `${className} button`,
+    onPointerMove: onMove,
+    onPointerLeave: onLeave
+  }
+  return isInternalLink && url ? (
+    <Link to={url} ref={anchorRef as RefObject<Link<any>>} {...sharedProps}>
+      {content}
+    </Link>
+  ) : url ? (
+    <a
+      ref={anchorRef as RefObject<HTMLAnchorElement>}
+      href={url}
+      target={(!isInternalLink && '_blank') || undefined}
+      rel={(!isInternalLink && 'noopener') || undefined}
+      onClick={(e) => disabled && e.preventDefault()}
+      {...sharedProps}
+    >
+      {content}
+    </a>
+  ) : (
+    <button ref={buttonRef} onClick={onClick} disabled={disabled} {...sharedProps}>
+      {content}
+    </button>
+  )
+}
+
+const getGradient = (theme: DefaultTheme) => `
+  radial-gradient(
+    circle at var(--gradient-x) var(--gradient-y),
+    ${theme.textPrimary} 20%,
+    ${theme.palette1} 35%,
+    ${theme.palette2} 40%,
+    ${theme.textPrimary} 50%,
+    ${theme.palette3} 60%,
+    ${theme.palette4} 100%
+  )
+`
+
+const getBorderRadius = (squared?: boolean) => (squared ? '12px' : '50px')
+const getInnerBorderRadius = (squared?: boolean) => (squared ? 'calc(12px - 3px)' : 'calc(50px - 3px)')
+
+const GradientBorder = styled.div<{ squared?: boolean }>`
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: ${({ theme }) => getGradient(theme)};
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.8;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    border-radius: ${({ squared }) => getInnerBorderRadius(squared)};
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px) saturate(180%);
+    z-index: 0;
+  }
+
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 1);
+    z-index: 1;
+  }
+`
+
+const ArrowStyled = styled(Arrow)<{ isExternal?: boolean }>`
+  ${({ isExternal }) =>
+    isExternal &&
+    css`
+      transform: rotate(-45deg);
+    `}
+`
+
+const StyledButton = styled(Button)`
   background-color: rgba(255, 255, 255, 0.9);
   color: black;
-  border-radius: 9px;
-  padding: 8px 12px;
-  border: 0 solid;
+  --gradient-x: 50%;
+  --gradient-y: 50%;
+  border-radius: ${({ squared }) => getBorderRadius(squared)};
+  padding: 12px 20px;
+  background-clip: padding-box;
   text-decoration: none;
   display: inline-flex;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  justify-content: ${({ textAlign }) => (textAlign === 'left' ? 'flex-start' : 'center')};
+  position: relative;
+  z-index: 0;
 
-  /* The following rules are the same as in the ArrowedLink, maybe extract? */
   align-items: center;
   font-weight: var(--fontWeight-semiBold);
+  font-size: ${({ big }) => (big ? 'var(--fontSize-22)' : 'var(--fontSize-18)')};
   transition: all 0.1s ease-out;
+
+  &:hover {
+    filter: saturate(160%);
+  }
 
   ${({ disabled }) =>
     !disabled
       ? css`
           &:hover {
             cursor: pointer;
-            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-            opacity: 0.7;
+            transform: translateY(-2px);
           }
         `
       : css`
@@ -68,14 +191,38 @@ export default styled(Button)`
         `}
 
   .arrow {
-    width: 11px;
-    margin-left: var(--spacing-1);
+    width: ${({ big }) => (big ? '16px' : '14px')};
+    margin-left: ${({ big }) => (big ? 'var(--spacing-2)' : 'var(--spacing-1)')};
     fill: inherit;
-
-    ${(props) =>
-      props.newTab &&
-      css`
-        transform: rotate(-45deg);
-      `}
   }
+
+  ${({ highlight }) =>
+    highlight &&
+    css`
+      &:hover {
+        &::after {
+          opacity: 0.5;
+          transform: scale(1.02);
+        }
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        background: ${({ theme }) => getGradient(theme)};
+        filter: blur(7px);
+        opacity: 0;
+        transition: all 0.3s ease;
+        z-index: -2;
+        transform: translateY(0) scale(1);
+      }
+
+      &:hover ${GradientBorder} {
+        opacity: 1;
+      }
+    `}
 `
+
+export default StyledButton

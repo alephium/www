@@ -1,17 +1,14 @@
 import { ElementType, ReactNode } from 'react'
 import styled, { css, useTheme } from 'styled-components'
 
-import SimpleLink from './SimpleLink'
-
 import Arrow from '../images/svgs/arrow-right.svg'
+import SimpleLink from './SimpleLink'
 
 export interface ArrowedLinkProps {
   className?: string
   IconComponent?: ElementType
   url?: string
   text?: string
-  newTab?: boolean
-  openModal?: (x: boolean) => void
   altColor?: boolean
   onlyText?: boolean
   emoji?: string
@@ -24,8 +21,6 @@ const ArrowedLink = ({
   children,
   IconComponent,
   url,
-  newTab,
-  openModal,
   altColor = false,
   emoji,
   trackingName
@@ -34,26 +29,29 @@ const ArrowedLink = ({
   const color = altColor ? theme.linkAlt : theme.link
 
   return (
-    <SimpleLink
+    <SimpleLinkStyled
       className={className}
       url={url}
-      newTab={newTab}
-      openModal={openModal}
       color={color}
       trackingName={trackingName}
+      altColor={altColor}
+      emoji={emoji}
+      isExternal={!url?.startsWith('/')}
     >
       {IconComponent && <IconComponent className="icon" />}
       {children}
       {(emoji && <span className="arrow emoji">{emoji}</span>) || <Arrow className="arrow" />}
-    </SimpleLink>
+    </SimpleLinkStyled>
   )
 }
 
-export default styled(ArrowedLink)`
+export default ArrowedLink
+
+const SimpleLinkStyled = styled(SimpleLink)<Pick<ArrowedLinkProps, 'altColor' | 'emoji'> & { isExternal?: boolean }>`
   display: flex;
   align-items: center;
-  font-weight: var(--fontWeight-medium);
-  font-size: var(--fontSize-18);
+  font-weight: var(--fontWeight-semiBold);
+  font-size: var(--fontSize-20);
 
   .icon {
     width: 1rem;
@@ -62,11 +60,11 @@ export default styled(ArrowedLink)`
   }
 
   .arrow {
-    width: 11px;
+    width: 14px;
     margin-left: var(--spacing-1);
     fill: ${({ theme, altColor }) => (altColor ? theme.linkAlt : theme.link)};
-    ${({ newTab, emoji }) =>
-      newTab &&
+    ${({ isExternal, emoji }) =>
+      isExternal &&
       !emoji &&
       css`
         transform: rotate(-45deg);
@@ -79,7 +77,7 @@ export default styled(ArrowedLink)`
       ${(props) =>
         !props.emoji
           ? css`
-              transform: translateX(var(--spacing-half)) ${props.newTab && 'rotate(-45deg)'};
+              transform: translateX(var(--spacing-half)) ${props.isExternal && 'rotate(-45deg)'};
             `
           : css`
               transform: translateY(calc(var(--spacing-half) * -1));

@@ -2,10 +2,9 @@ import { FC } from 'react'
 import ReactModal from 'react-modal'
 import styled from 'styled-components'
 
-import { deviceBreakPoints } from '../styles/global-style'
-
-import TextSnippet from './TextSnippet'
 import CloseIcon from '../images/svgs/close-line.svg'
+import { deviceBreakPoints } from '../styles/global-style'
+import TextSnippet from './TextSnippet'
 
 ReactModal.setAppElement('#___gatsby')
 
@@ -41,7 +40,7 @@ const Modal: FC<ModalProps> = ({ isOpen, setIsOpen, title, children, className }
 export default styled(Modal)`
   .modal {
     position: relative;
-    background-color: ${({ theme }) => theme.bgPrimary};
+    background-color: ${({ theme }) => theme.surface1};
     border-radius: var(--radius);
     border: 1px solid ${({ theme }) => theme.separator};
     max-height: 80%;

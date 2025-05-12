@@ -1,6 +1,7 @@
-import { useState, useEffect, ReactNode } from 'react'
-import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
+
+import { ReactNode, useEffect, useState } from 'react'
+import Zoom from 'react-medium-image-zoom'
 
 import { deviceSizes } from '../styles/global-style'
 

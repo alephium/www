@@ -1,4 +1,4 @@
-import { useEffect, RefObject, TouchEvent, ReactNode } from 'react'
+import { ReactNode, RefObject, TouchEvent, useEffect } from 'react'
 
 interface HeroSliderProps {
   heroElementRef: RefObject<HTMLElement>

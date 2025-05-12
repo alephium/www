@@ -15,6 +15,18 @@
     },
     {
       "pattern": "^https://alephium.myspreadshop.ch"
+    },
+    {
+      "pattern": "^https://www.mexc.com/exchange/ALPH_USDT"
+    },
+    {
+      "pattern": "^https://www.gate.io/trade/ALPH_USDT"
+    },
+    {
+      "pattern": "^https://defillama.com/chain/Alephium"
+    },
+    {
+      "pattern": "^https://www.goldshell.com/"
     }
   ]
 }

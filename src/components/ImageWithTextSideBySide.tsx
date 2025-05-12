@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import styled, { css } from 'styled-components'
+
 import { deviceBreakPoints } from '../styles/global-style'
 
 interface ImageWithTextSideBySideProps {

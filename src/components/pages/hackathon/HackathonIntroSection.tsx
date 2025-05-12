@@ -1,7 +1,8 @@
 import styled from 'styled-components'
+
+import { deviceBreakPoints } from '../../../styles/global-style'
 import Column from '../../Columns/Column'
 import Columns from '../../Columns/Columns'
-import { deviceBreakPoints } from '../../../styles/global-style'
 import HackathonSectionContainer from './HackathonSectionContainer'
 import HackathonSectionTitle from './HackathonSectionTitle'
 
