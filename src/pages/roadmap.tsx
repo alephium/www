@@ -5,7 +5,8 @@ import Badge from '../components/Badge'
 import Button from '../components/Button'
 import CardFooterButtonContainer from '../components/common/CardFooterButtonContainer'
 import CardsHorizontalScroller from '../components/common/CardsHorizontalScroller'
-import CardsRow from '../components/customPageComponents/CardsRow'
+import ClickableBox from '../components/customPageComponents/ClickableBox'
+import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
@@ -67,102 +68,7 @@ const CustomPage = (props: PageProps) => {
 
           <SectionDivider />
 
-          <SubpageSection wide>
-            <TextElement isCentered>
-              <h2>
-                What changes are
-                <br />
-                coming to Alephium?
-              </h2>
-              <p>
-                Danube isn’t just an upgrade, it’s <strong>the leap that enhances everything</strong> from wallet
-                simplicity to block speed and developer power, redefining what’s possible for a UTXO-based smart
-                contract chain.
-              </p>
-            </TextElement>
-
-            <SubheaderContent>
-              <CardsRow>
-                <TextCard border variants={cardVariants}>
-                  <TextCardContent>
-                    <h3>One Address for Everything</h3>
-                    <p>
-                      Before Danube, every Alephium wallet had multiple addresses associated with specific network shard
-                      groups.
-                    </p>
-                  </TextCardContent>
-                </TextCard>
-                <TextCard border variants={cardVariants}>
-                  <TextCardContent>
-                    <h3>8-Second Block Time</h3>
-                    <p>
-                      The network now processes an average of 2 blocks per second across all 4 chains, bringing Alephium
-                      on par with many leading proof-of-stake networks.
-                    </p>
-                  </TextCardContent>
-                </TextCard>
-                <TextCard border variants={cardVariants}>
-                  <TextCardContent>
-                    <h3>Chained Transactions</h3>
-                    <p>
-                      Call several smart contracts and use the assets created during those calls in the same
-                      transaction. The UTXO rules now apply at the function level.
-                    </p>
-                  </TextCardContent>
-                </TextCard>
-                <TextCard border variants={cardVariants}>
-                  <TextCardContent>
-                    <h3>Quick Sync for Nodes</h3>
-                    <p>
-                      Sync time is now up to three times faster. Nodes download a quick “skeleton” first, then fetch
-                      data in parallel. More efficient syncing = more nodes = stronger network.
-                    </p>
-                  </TextCardContent>
-                </TextCard>
-              </CardsRow>
-              <CardsRow>
-                <TextCard border variants={cardVariants}>
-                  <TextCardContent>
-                    <h3>Passkeys Support</h3>
-                    <p>
-                      Secure credentials stored on your device. You can log in using Face ID, Touch ID, or hardware keys
-                      like YubiKey. Seed phrases can still be used, but they’re no longer required at the start.
-                    </p>
-                  </TextCardContent>
-                </TextCard>
-                <TextCard border variants={cardVariants}>
-                  <TextCardContent>
-                    <h3>Sustainable Tokenomics</h3>
-                    <p>
-                      The hard cap has been removed and replaced with a tail emission model. After the initial 81 years,
-                      ALPH continues to be mined at a slow, steady pace. This ensures miners remain incentivized
-                      long-term .
-                    </p>
-                  </TextCardContent>
-                </TextCard>
-                <TextCard border variants={cardVariants}>
-                  <TextCardContent>
-                    <h3>Smarter Developer Tools</h3>
-                    <p>
-                      A new VM instruction lets contracts access the external user. Bitwise operations for 256-bit
-                      integers (I256) improve efficiency. The VM now auto-handles dust, contract, and map deposits, with
-                      assets and states instantly accessible by other contract calls.
-                    </p>
-                  </TextCardContent>
-                </TextCard>
-                <TextCard border variants={cardVariants}>
-                  <TextCardContent>
-                    <h3>Faster, Smarter Consensus</h3>
-                    <p>
-                      Danube optimizes Alephium’s BlockFlow consensus algorithm with an "optimistic" execution path.
-                      Network throughput and responsiveness are doubled (up to 20k transactions per second) without
-                      compromising consensus integrity.
-                    </p>
-                  </TextCardContent>
-                </TextCard>
-              </CardsRow>
-            </SubheaderContent>
-          </SubpageSection>
+          <ChangesSection />
 
           <SectionDivider />
 
@@ -274,4 +180,100 @@ const Cards = () => {
 const cardVariants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 }
+}
+
+const ChangesSection = () => {
+  const theme = useTheme()
+  return (
+    <SubpageSection wide>
+      <TextElement isCentered>
+        <h2>
+          What changes are
+          <br />
+          coming to Alephium?
+        </h2>
+        <p>
+          Danube isn’t just an upgrade, it’s <strong>the leap that enhances everything</strong> from wallet simplicity
+          to block speed and developer power, redefining what’s possible for a UTXO-based smart contract chain.
+        </p>
+      </TextElement>
+
+      <SubheaderContent>
+        <Grid columns={2} gap="small">
+          <ClickableBox>
+            <TextElement noMargin>
+              <p>
+                <strong style={{ color: theme.palette1 }}>One Address for Everything</strong> - Before Danube, every
+                Alephium wallet had multiple addresses associated with specific network shard groups.
+              </p>
+            </TextElement>
+          </ClickableBox>
+          <ClickableBox>
+            <TextElement noMargin>
+              <p>
+                <strong style={{ color: theme.palette2 }}>8-Second Block Time</strong> - The network now processes an
+                average of 2 blocks per second across all 4 chains, bringing Alephium on par with many leading
+                proof-of-stake networks.
+              </p>
+            </TextElement>
+          </ClickableBox>
+          <ClickableBox>
+            <TextElement noMargin>
+              <p>
+                <strong style={{ color: theme.palette3 }}>Chained Transactions</strong> - Call several smart contracts
+                and use the assets created during those calls in the same transaction. The UTXO rules now apply at the
+                function level.
+              </p>
+            </TextElement>
+          </ClickableBox>
+          <ClickableBox>
+            <TextElement noMargin>
+              <p>
+                <strong style={{ color: theme.palette4 }}>Quick Sync for Nodes</strong> - Sync time is now up to three
+                times faster. Nodes download a quick “skeleton” first, then fetch data in parallel. More efficient
+                syncing = more nodes = stronger network.
+              </p>
+            </TextElement>
+          </ClickableBox>
+          <ClickableBox>
+            <TextElement noMargin>
+              <p>
+                <strong style={{ color: theme.palette5 }}>Passkeys Support</strong> - Secure credentials stored on your
+                device. You can log in using Face ID, Touch ID, or hardware keys like YubiKey. Seed phrases can still be
+                used, but they’re no longer required at the start.
+              </p>
+            </TextElement>
+          </ClickableBox>
+          <ClickableBox>
+            <TextElement noMargin>
+              <p>
+                <strong style={{ color: theme.palette6 }}>Sustainable Tokenomics</strong> - The hard cap has been
+                removed and replaced with a tail emission model. After the initial 81 years, ALPH continues to be mined
+                at a slow, steady pace. This ensures miners remain incentivized long-term.
+              </p>
+            </TextElement>
+          </ClickableBox>
+          <ClickableBox>
+            <TextElement noMargin>
+              <p>
+                <strong style={{ color: theme.palette1 }}>Smarter Developer Tools</strong> - A new VM instruction lets
+                contracts access the external user. Bitwise operations for 256-bit integers (I256) improve efficiency.
+                The VM now auto-handles dust, contract, and map deposits, with assets and states instantly accessible by
+                other contract calls.
+              </p>
+            </TextElement>
+          </ClickableBox>
+          <ClickableBox>
+            <TextElement noMargin>
+              <p>
+                <strong style={{ color: theme.palette2 }}>Faster, Smarter Consensus</strong> - Danube optimizes
+                Alephium’s BlockFlow consensus algorithm with an "optimistic" execution path. Network throughput and
+                responsiveness are doubled (up to 20k transactions per second) without compromising consensus integrity.
+              </p>
+            </TextElement>
+          </ClickableBox>
+        </Grid>
+      </SubheaderContent>
+    </SubpageSection>
+  )
 }
