@@ -130,7 +130,7 @@ const CustomPage = (props: PageProps) => {
                 <TextCard border>
                   <TextCardContent>
                     <TextElement>
-                      <h3>Alephium wallets</h3>
+                      <h3>On-Ramps</h3>
                       <p>
                         You can get ALPH directly from the Alephium mobile and desktop wallets with a{' '}
                         <strong>debit/credit card, bank transfer or even Apple Pay.</strong> <br />
