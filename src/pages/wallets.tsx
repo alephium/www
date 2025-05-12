@@ -11,7 +11,6 @@ import Button from '../components/Button'
 import Page from '../components/customPageComponents/Page'
 import SideBySide from '../components/customPageComponents/SideBySide'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
-import SubpageVideoHeroSection from '../components/customPageComponents/SubpageVideoHeroSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import SectionDivider from '../components/SectionDivider'
@@ -70,7 +69,7 @@ const walletsQuery = graphql`
 `
 
 const CustomPage = (props: PageProps) => {
-  const { heroImage, heroVideo, desktopScreenshots, extensionScreenshots, mobileScreenshots } =
+  const { desktopScreenshots, extensionScreenshots, mobileScreenshots } =
     useStaticQuery<Queries.WalletsPageQuery>(walletsQuery)
   const wallets = useWallets()
 
@@ -84,17 +83,23 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageVideoHeroSection poster={heroImage} video={heroVideo} minHeight="400px">
-            <h1>
-              Our Wallets,
-              <br />
-              Designed for Humans.
-            </h1>
-            <p>
-              Our wallets are designed for ease-of-use,{' '}
-              <strong>making Alephium&apos;s technology accessible for all.</strong>
-            </p>
-          </SubpageVideoHeroSection>
+          <SectionDivider />
+
+          <SubpageSection bgColor="3" wide border edgeGradient gradientPosition="top">
+            <TextElement isCentered>
+              <h1>
+                Our Wallets,
+                <br />
+                Designed for Humans.
+              </h1>
+              <p>
+                Our wallets are designed for ease-of-use,{' '}
+                <strong>making Alephium&apos;s technology accessible for all.</strong>
+              </p>
+            </TextElement>
+          </SubpageSection>
+
+          <SectionDivider />
 
           <SectionDivider double />
           <SubpageSection wide>
