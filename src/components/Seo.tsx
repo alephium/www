@@ -9,7 +9,7 @@ export interface SeoProps {
 }
 
 const Seo = ({ title, description, lang = 'en', image: metaImage }: SeoProps) => {
-  const { site, socialMediaBanner } = useStaticQuery(
+  const { site } = useStaticQuery(
     graphql`
       query {
         site {
@@ -20,10 +20,8 @@ const Seo = ({ title, description, lang = 'en', image: metaImage }: SeoProps) =>
             social {
               twitter
             }
+            image
           }
-        }
-        socialMediaBanner: file(relativePath: { eq: "social-media-banner.png" }) {
-          publicURL
         }
       }
     `
@@ -32,7 +30,7 @@ const Seo = ({ title, description, lang = 'en', image: metaImage }: SeoProps) =>
   const isTestSite = typeof window !== 'undefined' && window.location.hostname === 'www2.alephium.org'
 
   const metaDescription = description || site.siteMetadata.description
-  const metaImageAbsoluteUrl = `${site.siteMetadata.siteUrl}${socialMediaBanner.publicURL}`
+  const metaImageAbsoluteUrl = `${site.siteMetadata.siteUrl}${site.siteMetadata.image}`
   const titleContent = title || site.siteMetadata.title
 
   const metaBase = isTestSite ? [{ property: 'robots', content: 'noindex, nofollow' }] : []
