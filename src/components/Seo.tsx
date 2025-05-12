@@ -1,8 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby'
 import { Helmet } from 'react-helmet'
 
-import SocialMediaBannerImage from '../images/social-media-banner.png'
-
 export interface SeoProps {
   title?: string
   description?: string
@@ -11,7 +9,7 @@ export interface SeoProps {
 }
 
 const Seo = ({ title, description, lang = 'en', image: metaImage }: SeoProps) => {
-  const { site } = useStaticQuery(
+  const { site, socialMediaBanner } = useStaticQuery(
     graphql`
       query {
         site {
@@ -24,6 +22,9 @@ const Seo = ({ title, description, lang = 'en', image: metaImage }: SeoProps) =>
             }
           }
         }
+        socialMediaBanner: file(relativePath: { eq: "social-media-banner.png" }) {
+          publicURL
+        }
       }
     `
   )
@@ -31,7 +32,7 @@ const Seo = ({ title, description, lang = 'en', image: metaImage }: SeoProps) =>
   const isTestSite = typeof window !== 'undefined' && window.location.hostname === 'www2.alephium.org'
 
   const metaDescription = description || site.siteMetadata.description
-  const metaImageAbsoluteUrl = `${site.siteMetadata.siteUrl}${SocialMediaBannerImage}`
+  const metaImageAbsoluteUrl = `${site.siteMetadata.siteUrl}${socialMediaBanner.publicURL}`
   const titleContent = title || site.siteMetadata.title
 
   const metaBase = isTestSite ? [{ property: 'robots', content: 'noindex, nofollow' }] : []
