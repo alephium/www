@@ -1,4 +1,4 @@
-const PostBodyComponents = [<script async src="/analytics-toggle.js" key="goatcounter-script"></script>]
+const PostBodyComponents = []
 
 export const onRenderBody = ({ setPostBodyComponents }) => {
   setPostBodyComponents(PostBodyComponents)
