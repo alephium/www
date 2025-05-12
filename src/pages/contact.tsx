@@ -16,6 +16,7 @@ const CustomPage = (props: PageProps) => (
     }}
     content={
       <>
+        <SectionDivider />
         <SubpageSection border edgeGradient>
           <TextElement isCentered>
             <h1>Contact Us</h1>
