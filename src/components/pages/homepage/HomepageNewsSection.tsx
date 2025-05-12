@@ -47,6 +47,8 @@ const NewsCard = styled.div<{ border?: boolean }>`
   padding-right: var(--spacing-8);
   border-radius: var(--radius);
   margin-top: var(--spacing-4);
+  flex-wrap: wrap;
+  gap: var(--spacing-4);
 
   p {
     margin-bottom: 0;
