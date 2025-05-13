@@ -22,10 +22,52 @@ jobs:
           node-version: 18
 
       - name: Build website
-        run: npm install gatsby-cli && npm run build
+        run: npm install gatsby-cli && npm run clean && npm run build
 
-      - name: Sync files to S3
-        run: aws s3 sync ./public/ s3://$AWS_BUCKET_NAME --acl public-read --delete --cache-control max-age=604800
+      - name: Sync long-term cacheable assets to S3
+        run: |
+          aws s3 sync ./public/ s3://$AWS_BUCKET_NAME \
+            --exclude "*.html" \
+            --exclude "*.js" \
+            --exclude "page-data/*" \
+            --exclude "rss.xml" \
+            --exclude "sitemap*.xml" \
+            --exclude "robots.txt" \
+            --acl public-read \
+            --delete \
+            --cache-control "public, max-age=604800"
+
+      - name: Sync hashed JavaScript files to S3
+        run: |
+          aws s3 sync ./public/ s3://$AWS_BUCKET_NAME \
+            --include "*-*.js" \
+            --include "*.js.map" \
+            --include "*.css" \
+            --acl public-read \
+            --delete \
+            --cache-control "public, max-age=604800"
+
+      - name: Sync dynamic content to S3
+        run: |
+          aws s3 sync ./public/ s3://$AWS_BUCKET_NAME \
+            --include "rss.xml" \
+            --include "sitemap*.xml" \
+            --include "robots.txt" \
+            --include "page-data/*" \
+            --include "*.js" \
+            --exclude "*-*.js" \
+            --exclude "*.js.map" \
+            --acl public-read \
+            --delete \
+            --cache-control "public, max-age=60, must-revalidate"
+
+      - name: Sync HTML files to S3
+        run: |
+          aws s3 sync ./public/ s3://$AWS_BUCKET_NAME \
+            --include "*.html" \
+            --acl public-read \
+            --delete \
+            --cache-control "public, max-age=60, must-revalidate"
 
       - name: Notify CloudFront about the changes
         run: aws cloudfront create-invalidation --distribution-id ${AWS_DISTRIBUTION_ID} --paths "/*"
