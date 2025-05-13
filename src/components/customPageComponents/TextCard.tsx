@@ -126,7 +126,7 @@ const cardStyles = ({ border, bgColor }: { border?: boolean; bgColor?: TextCardP
   position: relative;
   flex-direction: column;
   border-radius: var(--radius);
-  background-color: ${({ theme }) => theme.background2};
+  background-color: ${({ theme }) => (bgColor ? theme[bgColor] : theme.background2)};
   background-clip: padding-box;
   text-decoration: none;
   transition: all 0.1s ease-out;
@@ -169,7 +169,7 @@ const GradientBorder = styled.div`
   opacity: 0;
   pointer-events: none;
   z-index: -1;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.1s ease;
 
   &::before {
     content: '';
@@ -177,6 +177,8 @@ const GradientBorder = styled.div`
     inset: 2px;
     border-radius: calc(var(--radius) - 2px);
     background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(100px) saturate(180%);
+    -webkit-backdrop-filter: blur(100px) saturate(180%);
     z-index: 0;
   }
 
@@ -186,10 +188,8 @@ const GradientBorder = styled.div`
     inset: 2px;
     border-radius: calc(var(--radius) - 2px);
     background: rgba(19, 19, 19, 0.8);
-    backdrop-filter: blur(100px) saturate(180%);
-    -webkit-backdrop-filter: blur(100px) saturate(180%);
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.1s ease;
     z-index: -1;
   }
 `

@@ -12,7 +12,7 @@ interface CardsHorizontalScrollerProps {
 }
 
 const CARD_WIDTH = 380
-const CARD_GAP = 24
+const CARD_GAP = 28
 
 const cardVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
