@@ -14,8 +14,6 @@ columns:
         url: https://medium.com/@alephium
   - title: Alephium
     links:
-      - text: About
-        url: /about
       - text: Roadmap
         url: /roadmap
       - text: Contact
