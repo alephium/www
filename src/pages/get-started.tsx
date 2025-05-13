@@ -88,7 +88,7 @@ const CustomPage = (props: PageProps) => {
         <>
           <SectionDivider />
 
-          <SubpageSection bgColor="3" wide border edgeGradient gradientPosition="top">
+          <SubpageSection bgColor="2" wide border edgeGradient gradientPosition="bottom">
             <TextElement isCentered>
               <h2>
                 Get Started
@@ -275,7 +275,7 @@ const CustomPage = (props: PageProps) => {
             </TextElement>
           </SubpageImageHeroSection>
 
-          <SubpageSection wide bgColor="2" isCentered edgeGradient>
+          <SubpageSection wide isCentered edgeGradient border>
             <TextElement isCentered>
               <h2>
                 <span>Build</span> on Alephium

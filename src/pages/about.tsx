@@ -55,9 +55,12 @@ const CustomPage = (props: PageProps) => {
           <SectionDivider double />
           <SubpageSection edgeGradient gradientPosition="top-right" noBottomPadding>
             <TextElement noHeadingsMargins>
-              <h3>About</h3>
+              <h3>Alephium</h3>
               <h1>
-                Building Alephium <hr />
+                Building the Web3
+                <br />
+                we were promised
+                <hr />
               </h1>
               <p>
                 <strong>

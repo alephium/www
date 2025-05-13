@@ -72,19 +72,14 @@ const HomepageUSPSection = () => {
   const { totalTransactions } = statsScalarData
 
   return (
-    <SubpageSectionStyled wide edgeGradient>
+    <SubpageSectionStyled wide edgeGradient gradientPosition="bottom-left">
       <TextElementStyled>
-        <h2>
-          Web3,
-          <br />
-          done right.
-          <hr />
-        </h2>
+        <h2>Web3, done right.</h2>
         <p>
           <strong>
             Dive in. 🐠 <br />
-            Discover what makes Alephium stand apart.
           </strong>
+          Discover what makes Alephium stand apart.
         </p>
       </TextElementStyled>
 

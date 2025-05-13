@@ -56,7 +56,8 @@ const HomepageHeroSection = () => {
 export default HomepageHeroSection
 
 const SubpageSectionStyled = styled(SubpageSection)`
-  padding-bottom: var(--spacing-6);
+  padding-top: var(--spacing-12);
+  padding-bottom: var(--spacing-4);
   padding-right: var(--spacing-4);
   padding-left: var(--spacing-4);
 `
@@ -72,7 +73,7 @@ const Buttons = styled.div`
   justify-content: center;
   gap: var(--spacing-4);
   margin-top: var(--spacing-2);
-  margin-bottom: var(--spacing-4);
+  margin-bottom: var(--spacing-2);
 
   @media ${deviceBreakPoints.mobile} {
     margin-top: var(--spacing-4);

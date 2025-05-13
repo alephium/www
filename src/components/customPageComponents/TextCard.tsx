@@ -127,7 +127,6 @@ const cardStyles = ({ border, bgColor }: { border?: boolean; bgColor?: TextCardP
   flex-direction: column;
   border-radius: var(--radius);
   background-color: ${({ theme }) => (bgColor ? theme[bgColor] : theme.background2)};
-  background-clip: padding-box;
   text-decoration: none;
   transition: all 0.1s ease-out;
   background-size: cover;
@@ -137,25 +136,13 @@ const cardStyles = ({ border, bgColor }: { border?: boolean; bgColor?: TextCardP
 
   ${border &&
   css`
-    &::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      border: 1px solid ${({ theme }) => theme.borderPrimary};
-      border-radius: inherit;
-      backdrop-filter: saturate(200%) brightness(1.1);
-      -webkit-backdrop-filter: saturate(200%) brightness(1.1);
-      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-      mask-composite: exclude;
-      -webkit-mask-composite: xor;
-      pointer-events: none;
-    }
+    border: 1px solid ${({ theme }) => theme.borderPrimary};
   `}
 `
 
 const GradientBorder = styled.div`
   position: absolute;
-  inset: 0;
+  inset: -1px;
   border-radius: var(--radius);
   background: radial-gradient(
     circle at var(--gradient-x) var(--gradient-y),
