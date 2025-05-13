@@ -56,7 +56,6 @@ const CustomPage = (props: PageProps) => {
           <SectionDivider double />
           <SubpageSection edgeGradient gradientPosition="top-left">
             <TextElement noHeadingsMargins>
-              <h3>About</h3>
               <h1>
                 Building the Web3
                 <br />
@@ -95,18 +94,24 @@ const CustomPage = (props: PageProps) => {
                   But for years, reality lagged behind the vision: clunky UX, complex wallets, and slow networks were
                   the standard.
                 </strong>{' '}
-                <br />
+              </p>
+              <p>
                 <strong>At Alephium, we’re determined to close that gap.</strong> With Danube, we’re not just upgrading
                 the network; we’re making the most ambitious leap in our history.{' '}
                 <strong>Danube is the moment where everything clicks</strong>, from wallet simplicity to developer
-                power, block speed to onboarding. <br />
-                It doesn’t just enhance our protocol, it redefines what’s possible for a UTXO-based smart contract
-                chain. Alephium was born from the belief that decentralization, scalability, and energy efficiency can
-                coexist without compromise. We combine Bitcoin’s resilience with cutting-edge innovations like BlockFlow
-                sharding, Proof-of-Less-Work, and a stateful UTXO model,{' '}
-                <strong>delivering high throughput, energy efficiency, and secure smart contracts.</strong> We’re
-                committed to building infrastructure that empowers developers and users alike, supporting real-world
-                decentralized applications with ease, security, and confidence.{' '}
+                power, block speed to onboarding.
+              </p>
+              <p>
+                It doesn’t just enhance our protocol,{' '}
+                <strong>it redefines what’s possible for a UTXO-based smart contract chain.</strong> Alephium was born
+                from the belief that decentralization, scalability, and energy efficiency can coexist without
+                compromise. We combine Bitcoin’s resilience with cutting-edge innovations like BlockFlow sharding,
+                Proof-of-Less-Work, and a stateful UTXO model,{' '}
+                <strong>delivering high throughput, energy efficiency, and secure smart contracts.</strong>
+              </p>
+              <p>
+                We’re committed to building infrastructure that empowers developers and users alike, supporting
+                real-world decentralized applications with ease, security, and confidence.{' '}
                 <strong>Alephium proves that scaling decentralization doesn’t mean sacrificing it.</strong>
               </p>
             </TextElement>
@@ -219,8 +224,8 @@ const CustomPage = (props: PageProps) => {
 
                 <ClickableBox>
                   <ImageIcon
-                    image={teamPhotosData.find(({ name }) => name === 'simer')?.image}
-                    alt="Simer Plaha"
+                    image={teamPhotosData.find(({ name }) => name === 'pawel')?.image}
+                    alt="Pawel Rejkowicz"
                     rounded
                     size={50}
                     padding={10}
@@ -228,7 +233,7 @@ const CustomPage = (props: PageProps) => {
                   />
                   <TextElement isSmall noMargin>
                     <p>
-                      <strong>Simer Plaha</strong> - Core DB Developer
+                      <strong>Pawel Rejkowicz</strong> - Core Developer
                     </p>
                     {/* <p>
                       Simer, based in Sydney, Australia, holds a Bachelor's in IT with a major in Software Engineering
