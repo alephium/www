@@ -9,16 +9,6 @@ export interface MetaSeoProps {
 
 export const metaSeoQuery = graphql`
   query MetaSeoData {
-    site {
-      siteMetadata {
-        title
-        description
-        siteUrl
-        social {
-          twitter
-        }
-      }
-    }
     image: file(relativePath: { eq: "ogimage.png" }) {
       childImageSharp {
         gatsbyImageData(width: 1200, layout: FIXED)
@@ -27,14 +17,18 @@ export const metaSeoQuery = graphql`
   }
 `
 
+const defaultTitle = 'Alephium | The Web3 you were promised'
+const defaultDescription =
+  'Alephium is the next generation PoW Layer 1 with smart contracts. Built for speed, security, and sustainability. Start building or join the community today.'
+
 export const MetaSeo = ({ title, description, lang = 'en' }: MetaSeoProps) => {
-  const { site, image } = useStaticQuery<Queries.MetaSeoDataQuery>(metaSeoQuery)
+  const { image } = useStaticQuery<Queries.MetaSeoDataQuery>(metaSeoQuery)
 
   const isTestSite = typeof window !== 'undefined' && window.location.hostname === 'www2.alephium.org'
 
-  const metaDescription = description || site?.siteMetadata?.description
-  const metaImageAbsoluteUrl = `${site?.siteMetadata?.siteUrl}${image?.childImageSharp?.gatsbyImageData.images.fallback?.src}`
-  const titleContent = title || site?.siteMetadata?.title
+  const metaDescription = description || defaultDescription
+  const metaImageAbsoluteUrl = `https://alephium.org${image?.childImageSharp?.gatsbyImageData.images.fallback?.src}`
+  const titleContent = title || defaultTitle
 
   const metaBase = isTestSite ? [{ property: 'robots', content: 'noindex, nofollow' }] : []
 
@@ -43,24 +37,24 @@ export const MetaSeo = ({ title, description, lang = 'en' }: MetaSeoProps) => {
       htmlAttributes={{
         lang
       }}
-      title={titleContent ?? ''}
+      title={titleContent}
       meta={[
         ...metaBase,
         {
           name: `description`,
-          content: metaDescription ?? ''
+          content: metaDescription
         },
         {
           property: `og:title`,
-          content: titleContent ?? ''
+          content: titleContent
         },
         {
           property: `og:site_name`,
-          content: titleContent ?? ''
+          content: titleContent
         },
         {
           property: `og:description`,
-          content: metaDescription ?? ''
+          content: metaDescription
         },
         {
           property: `og:type`,
@@ -68,11 +62,11 @@ export const MetaSeo = ({ title, description, lang = 'en' }: MetaSeoProps) => {
         },
         {
           property: `og:url`,
-          content: site?.siteMetadata?.siteUrl ?? ''
+          content: 'https://alephium.org'
         },
         {
           property: `og:image`,
-          content: metaImageAbsoluteUrl ?? ''
+          content: metaImageAbsoluteUrl
         },
         {
           name: `twitter:card`,
@@ -80,19 +74,19 @@ export const MetaSeo = ({ title, description, lang = 'en' }: MetaSeoProps) => {
         },
         {
           name: `twitter:creator`,
-          content: site?.siteMetadata?.social?.twitter || ``
+          content: 'alephium'
         },
         {
           name: `twitter:title`,
-          content: titleContent ?? ''
+          content: titleContent
         },
         {
           name: `twitter:description`,
-          content: metaDescription ?? ''
+          content: metaDescription
         },
         {
           name: `twitter:image`,
-          content: metaImageAbsoluteUrl ?? ''
+          content: metaImageAbsoluteUrl
         },
         {
           name: `google-site-verification`,
