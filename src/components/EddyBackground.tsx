@@ -36,8 +36,8 @@ export interface MeshGradientEffectProps {
 }
 
 const MeshGradientEffect: React.FC<MeshGradientEffectProps> = ({
-  contrast = 1.4,
-  brightness = 0.9,
+  contrast = 1.3,
+  brightness = 0.8,
   blendMode = 'screen',
   speed = 0.25,
   color1 = hexToRgb01('#ffffaa'),

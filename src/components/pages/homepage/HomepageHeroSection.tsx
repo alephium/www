@@ -27,7 +27,7 @@ const HomepageHeroSection = () => {
   const content = allMarkdownRemark.nodes[0].frontmatter
 
   return (
-    <SubpageSectionStyled>
+    <SubpageSectionStyled wide>
       <EddyBackground />
       <TextElementStyled isCentered>
         <h1>

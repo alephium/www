@@ -88,7 +88,7 @@ const CustomPage = (props: PageProps) => {
         <>
           <SectionDivider />
 
-          <SubpageSection bgColor="2" wide border edgeGradient gradientPosition="bottom">
+          <SubpageSection wide edgeGradient gradientPosition="top">
             <TextElement isCentered>
               <h2>
                 Get Started
@@ -105,7 +105,7 @@ const CustomPage = (props: PageProps) => {
 
           <SectionDivider />
 
-          <SubpageImageHeroSection backgroundImage={treasureImage} minHeight="500px" split>
+          <SubpageImageHeroSection backgroundImage={treasureImage} minHeight="400px" split narrow>
             <h2>Wallets</h2>
             <p>
               Your gateway to Alephium: <strong>store, swap, lend, and more!</strong>
@@ -117,101 +117,99 @@ const CustomPage = (props: PageProps) => {
 
           <SectionDivider />
 
-          <SubpageSection wide>
-            <TextElement isCentered>
+          <SubpageSection noBottomPadding>
+            <TextElement>
               <h2>Get ALPH</h2>
               <p>
                 The native token of Alephium. You can get it through your wallet, exchanges, other networks or your
                 peers.
               </p>
             </TextElement>
-            <SubheaderContent>
-              <CardsHorizontalScroller cardWidth={CARD_WIDTH} cardGap={CARD_GAP} animateCards>
-                <TextCard border>
-                  <TextCardContent>
-                    <TextElement>
-                      <h3>On-Ramps</h3>
-                      <p>
-                        You can get ALPH directly from the Alephium mobile and desktop wallets with a{' '}
-                        <strong>debit/credit card, bank transfer or even Apple Pay.</strong> <br />
-                        <small>Geographical restrictions apply.</small>
-                      </p>
-                    </TextElement>
-                    <CardFooterButtonContainer>
-                      <Button squared url="https://x.com/alephium/status/1899529139331481881">
-                        More on on-ramps
-                      </Button>
-                    </CardFooterButtonContainer>
-                  </TextCardContent>
-                </TextCard>
-                <TextCard border>
-                  <TextCardContent>
-                    <TextElement>
-                      <h3>Centralised Exchanges</h3>
-                      <p>
-                        Centralised Exchanges (CEX) are platforms where ALPH is available using traditional currencies.{' '}
-                        <strong>They maintain custody over the ALPH</strong> you get until you transfer it to a wallet
-                        under your control.
-                      </p>
-                    </TextElement>
-                    <CardFooterButtonContainer>
-                      <Button squared url="https://www.coingecko.com/en/coins/alephium#markets">
-                        List of exchanges
-                      </Button>
-                    </CardFooterButtonContainer>
-                  </TextCardContent>
-                </TextCard>
-                <TextCard border>
-                  <TextCardContent>
-                    <TextElement>
-                      <h3>Decentralised Exchanges</h3>
-                      <p>
-                        If you want more control, you can get ALPH using smart contracts. With Decentralized Exchanges
-                        (DEX) you can trade digital assets <strong>without handing over control of your funds</strong>{' '}
-                        to a company.
-                      </p>
-                    </TextElement>
-                    <CardFooterButtonContainer>
-                      <Button squared url="https://www.coingecko.com/en/coins/alephium#markets">
-                        Try a DEX
-                      </Button>
-                    </CardFooterButtonContainer>
-                  </TextCardContent>
-                </TextCard>
-                <TextCard border>
-                  <TextCardContent>
-                    <TextElement>
-                      <h3>Bridged ALPH</h3>
-                      <p>
-                        You can also get ALPH on <strong>other networks like Ethereum and BSC</strong>. Just use the
-                        Alephium Token Bridge to move it to native ALPH on the Alephium network.
-                      </p>
-                    </TextElement>
-                    <CardFooterButtonContainer>
-                      <Button squared url="https://docs.alephium.org/infrastructure/the-bridge/">
-                        More on the bridge
-                      </Button>
-                    </CardFooterButtonContainer>
-                  </TextCardContent>
-                </TextCard>
-                <TextCard border>
-                  <TextCardContent>
-                    <TextElement>
-                      <h3>From your peers</h3>
-                      <p>
-                        Once you have an Alephium wallet, you just need to share your address to start sending and
-                        receiving ALPH and other tokens directly with others.
-                      </p>
-                    </TextElement>
-                    <CardFooterButtonContainer>
-                      <Button squared url="/wallets">
-                        More on wallets
-                      </Button>
-                    </CardFooterButtonContainer>
-                  </TextCardContent>
-                </TextCard>
-              </CardsHorizontalScroller>
-            </SubheaderContent>
+            <CardsHorizontalScroller cardWidth={CARD_WIDTH} cardGap={CARD_GAP} animateCards>
+              <TextCard border>
+                <TextCardContent>
+                  <TextElement>
+                    <h3>On-Ramps</h3>
+                    <p>
+                      You can get ALPH directly from the Alephium mobile and desktop wallets with a{' '}
+                      <strong>debit/credit card, bank transfer or even Apple Pay.</strong> <br />
+                      <small>Geographical restrictions apply.</small>
+                    </p>
+                  </TextElement>
+                  <CardFooterButtonContainer>
+                    <Button squared url="https://x.com/alephium/status/1899529139331481881">
+                      More on on-ramps
+                    </Button>
+                  </CardFooterButtonContainer>
+                </TextCardContent>
+              </TextCard>
+              <TextCard border>
+                <TextCardContent>
+                  <TextElement>
+                    <h3>Centralised Exchanges</h3>
+                    <p>
+                      Centralised Exchanges (CEX) are platforms where ALPH is available using traditional currencies.{' '}
+                      <strong>They maintain custody over the ALPH</strong> you get until you transfer it to a wallet
+                      under your control.
+                    </p>
+                  </TextElement>
+                  <CardFooterButtonContainer>
+                    <Button squared url="https://www.coingecko.com/en/coins/alephium#markets">
+                      List of exchanges
+                    </Button>
+                  </CardFooterButtonContainer>
+                </TextCardContent>
+              </TextCard>
+              <TextCard border>
+                <TextCardContent>
+                  <TextElement>
+                    <h3>Decentralised Exchanges</h3>
+                    <p>
+                      If you want more control, you can get ALPH using smart contracts. With Decentralized Exchanges
+                      (DEX) you can trade digital assets <strong>without handing over control of your funds</strong> to
+                      a company.
+                    </p>
+                  </TextElement>
+                  <CardFooterButtonContainer>
+                    <Button squared url="https://www.coingecko.com/en/coins/alephium#markets">
+                      Try a DEX
+                    </Button>
+                  </CardFooterButtonContainer>
+                </TextCardContent>
+              </TextCard>
+              <TextCard border>
+                <TextCardContent>
+                  <TextElement>
+                    <h3>Bridged ALPH</h3>
+                    <p>
+                      You can also get ALPH on <strong>other networks like Ethereum and BSC</strong>. Just use the
+                      Alephium Token Bridge to move it to native ALPH on the Alephium network.
+                    </p>
+                  </TextElement>
+                  <CardFooterButtonContainer>
+                    <Button squared url="https://docs.alephium.org/infrastructure/the-bridge/">
+                      More on the bridge
+                    </Button>
+                  </CardFooterButtonContainer>
+                </TextCardContent>
+              </TextCard>
+              <TextCard border>
+                <TextCardContent>
+                  <TextElement>
+                    <h3>From your peers</h3>
+                    <p>
+                      Once you have an Alephium wallet, you just need to share your address to start sending and
+                      receiving ALPH and other tokens directly with others.
+                    </p>
+                  </TextElement>
+                  <CardFooterButtonContainer>
+                    <Button squared url="/wallets">
+                      More on wallets
+                    </Button>
+                  </CardFooterButtonContainer>
+                </TextCardContent>
+              </TextCard>
+            </CardsHorizontalScroller>
           </SubpageSection>
 
           <SectionDivider />
@@ -275,7 +273,7 @@ const CustomPage = (props: PageProps) => {
             </TextElement>
           </SubpageImageHeroSection>
 
-          <SubpageSection wide isCentered edgeGradient border>
+          <SubpageSection isCentered edgeGradient border>
             <TextElement isCentered>
               <h2>
                 <span>Build</span> on Alephium
@@ -349,8 +347,8 @@ const EarnALPHSection = () => {
   const theme = useTheme()
 
   return (
-    <SubpageSection wide>
-      <TextElement isCentered>
+    <SubpageSection>
+      <TextElement>
         <h2>Earn ALPH</h2>
         <p>
           You can earn ALPH by using apps built on Alephium, finding bugs in the code, mining and soon by participating
