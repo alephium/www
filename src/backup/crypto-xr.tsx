@@ -2,6 +2,7 @@ import { graphql, PageProps } from 'gatsby'
 import styled, { ThemeProvider } from 'styled-components'
 
 import Footer from '../components/Footer'
+import { MetaSeo } from '../components/MetaSeo'
 import NavigationMenu from '../components/NavigationMenu'
 import HackathonInfoSection, {
   HackathonInfoSectionContentType
@@ -9,7 +10,6 @@ import HackathonInfoSection, {
 import HackathonJudgingSection from '../components/pages/hackathon/HackathonJudgingSection'
 import HackathonLandingSection from '../components/pages/hackathon/HackathonLandingSection'
 import HackathonSectionContainer from '../components/pages/hackathon/HackathonSectionContainer'
-import Seo from '../components/Seo'
 import GlobalStyle, { deviceBreakPoints } from '../styles/global-style'
 import { hackathonTheme } from '../styles/themes'
 
@@ -33,7 +33,7 @@ const IndexPage = (props: HackathonPageProps) => {
     <>
       <ThemeProvider theme={hackathonTheme}>
         <Wrapper>
-          <Seo />
+          <MetaSeo />
           <GlobalStyle />
           <NavigationMenuStyled />
           <HackathonLandingSection />

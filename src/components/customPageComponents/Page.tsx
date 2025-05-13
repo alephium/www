@@ -4,18 +4,18 @@ import { ReactNode } from 'react'
 import { ThemeProvider } from '../../contexts/ThemeContext'
 import GlobalStyle from '../../styles/global-style'
 import Footer from '../Footer'
+import { MetaSeo, MetaSeoProps } from '../MetaSeo'
 import NavigationMenu from '../NavigationMenu'
-import Seo, { SeoProps } from '../Seo'
 
 interface CustomPageProps extends PageProps {
   content: ReactNode
   floatingMenu?: boolean
-  seo?: SeoProps
+  seo?: MetaSeoProps
 }
 
 const Page = ({ content, seo, floatingMenu = true }: CustomPageProps) => (
   <>
-    <Seo {...seo} />
+    <MetaSeo {...seo} />
     <ThemeProvider>
       <GlobalStyle />
       <main>

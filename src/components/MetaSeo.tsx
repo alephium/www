@@ -1,40 +1,40 @@
 import { graphql, useStaticQuery } from 'gatsby'
 import { Helmet } from 'react-helmet'
 
-export interface SeoProps {
+export interface MetaSeoProps {
   title?: string
   description?: string
   lang?: string
 }
 
-const Seo = ({ title, description, lang = 'en' }: SeoProps) => {
-  const { site, image } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            siteUrl
-            social {
-              twitter
-            }
-          }
-        }
-        image: file(relativePath: { eq: "ogimage.png" }) {
-          childImageSharp {
-            gatsbyImageData(width: 1200, layout: FIXED)
-          }
+export const metaSeoQuery = graphql`
+  query MetaSeoData {
+    site {
+      siteMetadata {
+        title
+        description
+        siteUrl
+        social {
+          twitter
         }
       }
-    `
-  )
+    }
+    image: file(relativePath: { eq: "ogimage.png" }) {
+      childImageSharp {
+        gatsbyImageData(width: 1200, layout: FIXED)
+      }
+    }
+  }
+`
+
+export const MetaSeo = ({ title, description, lang = 'en' }: MetaSeoProps) => {
+  const { site, image } = useStaticQuery<Queries.MetaSeoDataQuery>(metaSeoQuery)
 
   const isTestSite = typeof window !== 'undefined' && window.location.hostname === 'www2.alephium.org'
 
-  const metaDescription = description || site.siteMetadata.description
-  const metaImageAbsoluteUrl = `${site.siteMetadata.siteUrl}${image.childImageSharp.gatsbyImageData.images.fallback.src}`
-  const titleContent = title || site.siteMetadata.title
+  const metaDescription = description || site?.siteMetadata?.description
+  const metaImageAbsoluteUrl = `${site?.siteMetadata?.siteUrl}${image?.childImageSharp?.gatsbyImageData.images.fallback?.src}`
+  const titleContent = title || site?.siteMetadata?.title
 
   const metaBase = isTestSite ? [{ property: 'robots', content: 'noindex, nofollow' }] : []
 
@@ -43,24 +43,24 @@ const Seo = ({ title, description, lang = 'en' }: SeoProps) => {
       htmlAttributes={{
         lang
       }}
-      title={titleContent}
+      title={titleContent ?? ''}
       meta={[
         ...metaBase,
         {
           name: `description`,
-          content: metaDescription
+          content: metaDescription ?? ''
         },
         {
           property: `og:title`,
-          content: titleContent
+          content: titleContent ?? ''
         },
         {
           property: `og:site_name`,
-          content: titleContent
+          content: titleContent ?? ''
         },
         {
           property: `og:description`,
-          content: metaDescription
+          content: metaDescription ?? ''
         },
         {
           property: `og:type`,
@@ -68,11 +68,11 @@ const Seo = ({ title, description, lang = 'en' }: SeoProps) => {
         },
         {
           property: `og:url`,
-          content: site.siteMetadata.siteUrl
+          content: site?.siteMetadata?.siteUrl ?? ''
         },
         {
           property: `og:image`,
-          content: metaImageAbsoluteUrl
+          content: metaImageAbsoluteUrl ?? ''
         },
         {
           name: `twitter:card`,
@@ -80,19 +80,19 @@ const Seo = ({ title, description, lang = 'en' }: SeoProps) => {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata?.social?.twitter || ``
+          content: site?.siteMetadata?.social?.twitter || ``
         },
         {
           name: `twitter:title`,
-          content: titleContent
+          content: titleContent ?? ''
         },
         {
           name: `twitter:description`,
-          content: metaDescription
+          content: metaDescription ?? ''
         },
         {
           name: `twitter:image`,
-          content: metaImageAbsoluteUrl
+          content: metaImageAbsoluteUrl ?? ''
         },
         {
           name: `google-site-verification`,
@@ -102,5 +102,3 @@ const Seo = ({ title, description, lang = 'en' }: SeoProps) => {
     />
   )
 }
-
-export default Seo

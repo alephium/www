@@ -2,20 +2,20 @@ import styled, { ThemeProvider } from 'styled-components'
 
 import TextElement from '../components/customPageComponents/TextElement'
 import Footer from '../components/Footer'
+import { MetaSeo, MetaSeoProps } from '../components/MetaSeo'
 import NavigationMenu from '../components/NavigationMenu'
 import PageSectionContainer from '../components/PageSectionContainer'
-import Seo, { SeoProps } from '../components/Seo'
 import GlobalStyle from '../styles/global-style'
 import { darkTheme } from '../styles/themes'
 
 interface MarkdownPageProps {
-  seo: SeoProps
+  seo: MetaSeoProps
   html: string
 }
 
 const MarkdownPage = ({ seo, html }: MarkdownPageProps) => (
   <>
-    <Seo {...seo} />
+    <MetaSeo {...seo} />
     <ThemeProvider theme={darkTheme}>
       <GlobalStyle />
     </ThemeProvider>
