@@ -1,40 +1,34 @@
 import { graphql, useStaticQuery } from 'gatsby'
 import { Helmet } from 'react-helmet'
 
-export interface SeoProps {
+export interface MetaSeoProps {
   title?: string
   description?: string
   lang?: string
 }
 
-const Seo = ({ title, description, lang = 'en' }: SeoProps) => {
-  const { site, image } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            siteUrl
-            social {
-              twitter
-            }
-          }
-        }
-        image: file(relativePath: { eq: "ogimage.png" }) {
-          childImageSharp {
-            gatsbyImageData(width: 1200, layout: FIXED)
-          }
-        }
+export const metaSeoQuery = graphql`
+  query MetaSeoData {
+    image: file(relativePath: { eq: "ogimage.png" }) {
+      childImageSharp {
+        gatsbyImageData(width: 1200, layout: FIXED)
       }
-    `
-  )
+    }
+  }
+`
+
+const defaultTitle = 'Alephium | The Web3 you were promised'
+const defaultDescription =
+  'Alephium is the next generation PoW Layer 1 with smart contracts. Built for speed, security, and sustainability. Start building or join the community today.'
+
+export const MetaSeo = ({ title, description, lang = 'en' }: MetaSeoProps) => {
+  const { image } = useStaticQuery<Queries.MetaSeoDataQuery>(metaSeoQuery)
 
   const isTestSite = typeof window !== 'undefined' && window.location.hostname === 'www2.alephium.org'
 
-  const metaDescription = description || site.siteMetadata.description
-  const metaImageAbsoluteUrl = `${site.siteMetadata.siteUrl}${image.childImageSharp.gatsbyImageData.images.fallback.src}`
-  const titleContent = title || site.siteMetadata.title
+  const metaDescription = description || defaultDescription
+  const metaImageAbsoluteUrl = `https://alephium.org${image?.childImageSharp?.gatsbyImageData.images.fallback?.src}`
+  const titleContent = title || defaultTitle
 
   const metaBase = isTestSite ? [{ property: 'robots', content: 'noindex, nofollow' }] : []
 
@@ -68,7 +62,7 @@ const Seo = ({ title, description, lang = 'en' }: SeoProps) => {
         },
         {
           property: `og:url`,
-          content: site.siteMetadata.siteUrl
+          content: 'https://alephium.org'
         },
         {
           property: `og:image`,
@@ -80,7 +74,7 @@ const Seo = ({ title, description, lang = 'en' }: SeoProps) => {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata?.social?.twitter || ``
+          content: 'alephium'
         },
         {
           name: `twitter:title`,
@@ -102,5 +96,3 @@ const Seo = ({ title, description, lang = 'en' }: SeoProps) => {
     />
   )
 }
-
-export default Seo
