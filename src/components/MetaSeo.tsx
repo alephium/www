@@ -1,4 +1,3 @@
-import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 
 export interface MetaSeoProps {
@@ -7,15 +6,15 @@ export interface MetaSeoProps {
   lang?: string
 }
 
-export const metaSeoQuery = graphql`
-  query MetaSeoData {
-    image: file(relativePath: { eq: "ogimage.png" }) {
-      childImageSharp {
-        gatsbyImageData(width: 1200, layout: FIXED)
-      }
-    }
-  }
-`
+// export const metaSeoQuery = graphql`
+//   query MetaSeoData {
+//     image: file(relativePath: { eq: "ogimage.png" }) {
+//       childImageSharp {
+//         gatsbyImageData(width: 1200, layout: FIXED)
+//       }
+//     }
+//   }
+// `
 
 const defaultTitle = 'Alephium | The Web3 you were promised'
 const defaultDescription =
@@ -27,7 +26,7 @@ export const MetaSeo = ({ title, description, lang = 'en' }: MetaSeoProps) => {
   const isTestSite = typeof window !== 'undefined' && window.location.hostname === 'www2.alephium.org'
 
   const metaDescription = description || defaultDescription
-  const metaImageAbsoluteUrl = `https://alephium.org/ogimage.png`
+  const metaImageAbsoluteUrl = `https://alephium.org/ogimage-1.png`
   const titleContent = title || defaultTitle
 
   const metaBase = isTestSite ? [{ property: 'robots', content: 'noindex, nofollow' }] : []
