@@ -10,6 +10,7 @@ import SubheaderContent from '../components/customPageComponents/SubheaderConten
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
+import NetworkUpgradesCardScroller from '../components/NetworkUpgradesCardScroller'
 import SectionDivider from '../components/SectionDivider'
 import SimpleLink from '../components/SimpleLink'
 
@@ -53,7 +54,7 @@ const CustomPage = (props: PageProps) => {
       content={
         <>
           <SectionDivider double />
-          <SubpageSection edgeGradient gradientPosition="top-left" noBottomPadding>
+          <SubpageSection edgeGradient gradientPosition="top-left">
             <TextElement noHeadingsMargins>
               <h3>About</h3>
               <h1>
@@ -72,7 +73,18 @@ const CustomPage = (props: PageProps) => {
             </TextElement>
           </SubpageSection>
 
-          <SubpageSection>
+          <SubpageSection noBottomPadding>
+            <TextElement>
+              <h2>One upgrade at a time.</h2>
+              <p>
+                From Leman to Rhone to Danube, <strong>this has always been the plan</strong>. Now we&apos;re entering
+                the chapter <strong>where it all comes together.</strong>
+              </p>
+            </TextElement>
+            <NetworkUpgradesCardScroller />
+          </SubpageSection>
+
+          <SubpageSection noBottomPadding>
             <TextElement>
               <h2>Our convictions</h2>
               <p>
@@ -87,13 +99,15 @@ const CustomPage = (props: PageProps) => {
                 <strong>At Alephium, we’re determined to close that gap.</strong> With Danube, we’re not just upgrading
                 the network; we’re making the most ambitious leap in our history.{' '}
                 <strong>Danube is the moment where everything clicks</strong>, from wallet simplicity to developer
-                power, block speed to onboarding. It doesn’t just enhance our protocol, it redefines what’s possible for
-                a UTXO-based smart contract chain. Alephium was born from the belief that decentralization, scalability,
-                and energy efficiency can coexist without compromise. We combine Bitcoin’s resilience with cutting-edge
-                innovations like BlockFlow sharding, Proof-of-Less-Work, and a stateful UTXO model, delivering high
-                throughput, energy efficiency, and secure smart contracts. We’re committed to building infrastructure
-                that empowers developers and users alike, supporting real-world decentralized applications with ease,
-                security, and confidence. Alephium proves that scaling decentralization doesn’t mean sacrificing it.
+                power, block speed to onboarding. <br />
+                It doesn’t just enhance our protocol, it redefines what’s possible for a UTXO-based smart contract
+                chain. Alephium was born from the belief that decentralization, scalability, and energy efficiency can
+                coexist without compromise. We combine Bitcoin’s resilience with cutting-edge innovations like BlockFlow
+                sharding, Proof-of-Less-Work, and a stateful UTXO model,{' '}
+                <strong>delivering high throughput, energy efficiency, and secure smart contracts.</strong> We’re
+                committed to building infrastructure that empowers developers and users alike, supporting real-world
+                decentralized applications with ease, security, and confidence.{' '}
+                <strong>Alephium proves that scaling decentralization doesn’t mean sacrificing it.</strong>
               </p>
             </TextElement>
           </SubpageSection>
@@ -491,17 +505,26 @@ const CustomPage = (props: PageProps) => {
             </SideBySide>
           </SubpageSection>
 
-          <SubpageSection>
+          <SubpageSection border edgeGradient>
             <TextElement isCentered>
-              <h2>Connect with Alephium</h2>
+              <h1>Contact Us</h1>
               <p>
-                Ready to build, explore, or connect? Whether you're a developer, a community member, or a partner, there
-                are many ways to get involved with Alephium.
+                Got questions, feedback, or just want to say hi? <br /> We’re here for you.
               </p>
-              <Button url="/communities">Join the Community</Button>
-              <Button url="https://docs.alephium.org/">Build with us</Button>
+            </TextElement>
+            <TextElement isCentered>
+              <Button squared url="mailto:info@alephium.org">
+                General
+              </Button>
+              <Button squared url="mailto:business@alephium.org">
+                Business and Partnerships
+              </Button>
+              <Button squared url="mailto:press@alephium.org">
+                Press
+              </Button>
             </TextElement>
           </SubpageSection>
+          <SectionDivider double />
         </>
       }
     />

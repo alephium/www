@@ -1,0 +1,94 @@
+import { useTheme } from 'styled-components'
+
+import Badge from './Badge'
+import Button from './Button'
+import CardFooterButtonContainer from './common/CardFooterButtonContainer'
+import CardsHorizontalScroller from './common/CardsHorizontalScroller'
+import TextCard from './customPageComponents/TextCard'
+import TextCardContent from './customPageComponents/TextCardContent'
+import TextElement from './customPageComponents/TextElement'
+
+const NetworkUpgradesCardScroller = () => {
+  const theme = useTheme()
+
+  return (
+    <CardsHorizontalScroller cardWidth={380} cardGap={24} animateCards>
+      <TextCard border>
+        <TextCardContent>
+          <TextElement>
+            <h3 style={{ color: theme.palette3, paddingRight: 0 }}>
+              Leman<Badge color="palette3">March 30, 2023</Badge>
+            </h3>
+
+            <p>
+              Leman, the first post-mainnet upgrade, refined Alephium&apos;s developer stack, enabling dApp creation
+              with enhanced smart contracts, a stronger VM, and improved APIs, laying the groundwork for our builder
+              ecosystem.
+            </p>
+          </TextElement>
+          <CardFooterButtonContainer>
+            <Button highlight squared url="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a">
+              More on Leman upgrade
+            </Button>
+          </CardFooterButtonContainer>
+        </TextCardContent>
+      </TextCard>
+      <TextCard border>
+        <TextCardContent>
+          <TextElement>
+            <h3 style={{ color: theme.palette2, paddingRight: 0 }}>
+              Rhone<Badge color="palette2">Jun 12, 2024</Badge>
+            </h3>
+            <p>
+              Then came Rhone, our first big leap forward. Block times dropped from 64 to 16 seconds, smart contracts
+              got more powerful, and dApp performance improved across the board. Rhone was about making Alephium
+              stronger, faster, and ready to compete with the best L1s in the space.
+            </p>
+          </TextElement>
+          <CardFooterButtonContainer>
+            <Button
+              highlight
+              squared
+              url="https://medium.com/@alephium/rh%C3%B4ne-network-upgrade-activated-cbeb298585fe"
+            >
+              More on Rhone upgrade
+            </Button>
+          </CardFooterButtonContainer>
+        </TextCardContent>
+      </TextCard>
+      <TextCard border>
+        <TextCardContent>
+          <TextElement>
+            <h3 style={{ color: theme.palette4, paddingRight: 0 }}>
+              Danube<Badge color="palette4">Upcoming</Badge>
+            </h3>
+            <p>
+              Danube marks a shift, this is where the vision of Web3 starts to feel real. Where onboarding doesn&apos;t
+              require a technical manual. Where developers aren&apos;t boxed in by protocol constraints. Danube brings
+              the features, UX, and dev experience that many other chains talk about - but few deliver.
+            </p>
+          </TextElement>
+          <CardFooterButtonContainer>
+            <Button highlight squared url="https://x.com/alephium/status/1920780688313233634">
+              More on Danube upgrade
+            </Button>
+          </CardFooterButtonContainer>
+        </TextCardContent>
+      </TextCard>
+      <TextCard border>
+        <TextCardContent>
+          <TextElement>
+            <h3>Next?</h3>
+            <p>
+              We continue to build. The next upgrade of the Danube era will focus on strengthening Alephium&apos;s core
+              - enhancing performance, expanding smart contract capabilities, and setting the stage for high-impact apps
+              that showcase the true utility of ALPH.
+            </p>
+          </TextElement>
+        </TextCardContent>
+      </TextCard>
+    </CardsHorizontalScroller>
+  )
+}
+
+export default NetworkUpgradesCardScroller
