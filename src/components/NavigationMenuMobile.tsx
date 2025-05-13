@@ -180,6 +180,8 @@ const NavLink = styled(SimpleLink)`
   font-size: var(--fontSize-18);
   color: ${({ theme }) => theme.textPrimaryVariation};
   font-weight: var(--fontWeight-semiBold);
+  padding: 8px 0;
+  width: 100%;
 
   &:hover {
     color: ${({ theme }) => theme.textPrimary};
@@ -245,13 +247,12 @@ const MobileSubItems = styled(motion.div)`
   overflow: hidden;
 `
 
-const MobileSubItem = styled.div`
-  padding: 8px 0;
-`
+const MobileSubItem = styled.div``
 
 const MobileSubItemTitle = styled.div`
   font-size: var(--fontSize-14);
   font-weight: var(--fontWeight-medium);
   color: ${({ theme }) => theme.textTertiary};
   text-transform: uppercase;
+  padding: 8px 0;
 `
