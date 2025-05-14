@@ -4,7 +4,7 @@ import { deviceBreakPoints } from '../../styles/global-style'
 
 const CardsRow = styled.div`
   display: flex;
-  gap: var(--spacing-6);
+  gap: var(--spacing-4);
   flex-wrap: wrap;
 
   > div {
@@ -16,7 +16,7 @@ export default CardsRow
 
 export const CardsRowSegment = styled.div<{ minWidth?: number }>`
   display: flex;
-  gap: var(--spacing-6);
+  gap: var(--spacing-4);
   flex-wrap: wrap;
 
   > div,

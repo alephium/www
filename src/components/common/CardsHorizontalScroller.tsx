@@ -12,7 +12,7 @@ interface CardsHorizontalScrollerProps {
 }
 
 const CARD_WIDTH = 380
-const CARD_GAP = 24
+const CARD_GAP = 28
 
 const cardVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
@@ -43,8 +43,8 @@ const CardsHorizontalScroller = ({
     if (scrollContainerRef.current) {
       const container = scrollContainerRef.current
       const leftPadding = parseInt(getComputedStyle(container).paddingLeft)
-      const canScrollLeft = container.scrollLeft > leftPadding
-      const canScrollRight = container.scrollLeft < container.scrollWidth - container.clientWidth
+      const canScrollLeft = container.scrollLeft > leftPadding + 20
+      const canScrollRight = container.scrollLeft < container.scrollWidth - container.clientWidth - 20
 
       setCanScrollLeft(canScrollLeft)
       setCanScrollRight(canScrollRight)

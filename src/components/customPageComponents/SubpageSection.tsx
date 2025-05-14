@@ -51,7 +51,7 @@ const SubpageSectionStyled = styled(PageSectionContainer)<
   ${({ border }) =>
     border &&
     css`
-      box-shadow: inset 0 0 0 4px ${({ theme }) => theme.borderPrimary};
+      box-shadow: inset 0 0 0 1px ${({ theme }) => theme.borderPrimary};
     `}
 
   ${({ edgeGradient, gradientPosition = 'bottom', theme }) =>
@@ -62,6 +62,7 @@ const SubpageSectionStyled = styled(PageSectionContainer)<
         position: absolute;
         width: 100%;
         height: 50%;
+        max-height: 200px;
         ${gradientPosition.includes('top') ? 'top: 0;' : 'bottom: 0;'}
         ${gradientPosition.includes('left')
           ? 'left: 0;'
@@ -71,27 +72,26 @@ const SubpageSectionStyled = styled(PageSectionContainer)<
         background: radial-gradient(
           circle at ${gradientPosition.includes('right') ? '140%' : gradientPosition.includes('left') ? '-40%' : '50%'} 
           ${gradientPosition.includes('top') ? '-90%' : '190%'},
-          transparent 30%,
-          ${theme.palette4} 35%,
-          ${theme.palette3} 50%,
-          ${theme.textPrimary} 70%,
+          transparent 60%,
+          ${theme.palette4} 65%,
+          ${theme.palette2} 70%,
+          ${theme.palette1} 75%,
           ${theme.palette3} 85%,
-          ${theme.palette4} 90%,
           transparent 100%
         );
         mask-image: radial-gradient(
-          ellipse 100% 60% at center ${gradientPosition.includes('top') ? 'top' : 'bottom'},
+          ellipse 100% 80% at center ${gradientPosition.includes('top') ? 'top' : 'bottom'},
           rgba(0, 0, 0, 1) 0%,
           rgba(0, 0, 0, 0) 100%
         );
         -webkit-mask-image: radial-gradient(
-          ellipse 100% 50% at center ${gradientPosition.includes('top') ? 'top' : 'bottom'},
+          ellipse 100% 80% at center ${gradientPosition.includes('top') ? 'top' : 'bottom'},
           rgba(0, 0, 0, 1) 0%,
           rgba(0, 0, 0, 0) 100%
         );
         pointer-events: none;
-        filter: blur(40px);
-        opacity: 0.5;
+        mix-blend-mode: screen;
+        filter: blur(70px) saturate(1.7) brightness(1.1);
       }
     `}
 `

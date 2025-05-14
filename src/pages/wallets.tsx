@@ -111,7 +111,7 @@ const CustomPage = (props: PageProps) => {
         <>
           <SectionDivider />
 
-          <SubpageSection bgColor="3" wide border edgeGradient gradientPosition="top">
+          <SubpageSection bgColor="2" wide border edgeGradient gradientPosition="top">
             <TextElement isCentered>
               <h1>
                 Our Wallets,
@@ -127,7 +127,6 @@ const CustomPage = (props: PageProps) => {
 
           <SectionDivider />
 
-          <SectionDivider double />
           <SubpageSection wide>
             <SideBySide reverseOnMobile>
               <TextElement isBodySmall>

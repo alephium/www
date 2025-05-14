@@ -36,12 +36,12 @@ export interface MeshGradientEffectProps {
 }
 
 const MeshGradientEffect: React.FC<MeshGradientEffectProps> = ({
-  contrast = 1.4,
-  brightness = 1.0,
+  contrast = 1.3,
+  brightness = 0.8,
   blendMode = 'screen',
   speed = 0.25,
   color1 = hexToRgb01('#ffffaa'),
-  color2 = hexToRgb01('#4eb9c5'),
+  color2 = hexToRgb01('#57d4e1'),
   color3 = hexToRgb01('#ff99ff'),
   color4 = hexToRgb01('#99a3ff')
 }) => {
@@ -164,8 +164,8 @@ const MeshGradientEffect: React.FC<MeshGradientEffectProps> = ({
 
         // vignette effect
         float dist = distance(uv, vec2(0.5, 0.5));
-        float vignette = smoothstep(0.5, 0.8, dist);
-        color *= 1.0 - vignette;
+        float vignette = smoothstep(0.5, 0.01, dist);
+        color *= 1.0 + vignette;
 
         gl_FragColor = vec4(color, 1.0);
       }

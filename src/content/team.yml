@@ -40,3 +40,6 @@
 - name: Bertrand Caffi
   role: Business Development
   image: ../images/team/bertrand.jpeg
+- name: Pawel Rejkowicz
+  role: Core Developer
+  image: ../images/team/pawel.jpeg

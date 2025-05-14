@@ -335,5 +335,5 @@ const CenterButtonWrapper = styled.div`
   justify-content: center;
   gap: var(--spacing-2);
   border-radius: 100px;
-  box-shadow: 0 0px 30px 30px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0px 30px 30px rgba(255, 255, 255, 0.3);
 `

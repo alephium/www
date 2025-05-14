@@ -10,6 +10,7 @@ import SubheaderContent from '../components/customPageComponents/SubheaderConten
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
+import NetworkUpgradesCardScroller from '../components/NetworkUpgradesCardScroller'
 import SectionDivider from '../components/SectionDivider'
 import SimpleLink from '../components/SimpleLink'
 
@@ -53,60 +54,65 @@ const CustomPage = (props: PageProps) => {
       content={
         <>
           <SectionDivider double />
-          <SubpageSection edgeGradient gradientPosition="top-right" noBottomPadding>
+          <SubpageSection edgeGradient gradientPosition="top-left">
             <TextElement noHeadingsMargins>
-              <h3>About</h3>
               <h1>
-                Building Alephium <hr />
+                Building the Web3
+                <br />
+                we were promised
+                <hr />
               </h1>
               <p>
                 <strong>
-                  Alephium was created to prove that decentralization, scalability, and energy efficiency can coexist.
-                  Driven by breakthrough technology and a global network of contributors, we're building blockchain
-                  infrastructure ready for real-world applications.
+                  The Web3 we were promised wasn’t just about decentralization, it was about ease. Systems that empower
+                  people without confusion, allow developers to build freely, and make users feel confident, not
+                  cautious.
                 </strong>
               </p>
             </TextElement>
           </SubpageSection>
 
-          <SubpageSection>
+          <SubpageSection noBottomPadding>
             <TextElement>
+              <h2>One upgrade at a time.</h2>
               <p>
-                Alephium was born from a simple but powerful question:{' '}
-                <strong>what should a blockchain for the next decade look like?</strong> Inspired by Bitcoin's
-                robustness and shaped by a deep understanding of distributed systems and consensus theory, Alephium set
-                out to{' '}
-                <strong>
-                  build infrastructure that doesn't compromise; on decentralization, security, or real scalability.
-                </strong>
-              </p>
-              <p>
-                Conceived by <strong>Cheng Wang</strong> after witnessing firsthand how security and decentralization
-                were increasingly treated as trade-offs rather than essentials, Alephium reimagines blockchain from the
-                ground up. Drawing from deep expertise in consensus research and hands-on DeFi experience, the project{' '}
-                <strong>
-                  addresses the shortcomings that became evident as neither Bitcoin nor Ethereum could fully meet the
-                  needs of a decentralized future.
-                </strong>{' '}
-                Bitcoin, while secure, lacked scalability and programmability. Ethereum introduced flexibility through
-                smart contracts but struggled with security vulnerabilities, complexity, and growing centralization
-                pressures.
+                From Leman to Rhone to Danube, <strong>this has always been the plan</strong>. Now we&apos;re entering
+                the chapter <strong>where it all comes together.</strong>
               </p>
             </TextElement>
+            <NetworkUpgradesCardScroller />
+          </SubpageSection>
 
+          <SubpageSection noBottomPadding>
             <TextElement>
+              <h2>Our convictions</h2>
               <p>
-                Alephium offers a new path forward. By combining the resilience of Proof-of-Work with breakthrough
-                innovations like <strong>BlockFlow sharding</strong>, <strong>Proof-of-Less-Work</strong>, and a{' '}
-                <strong>stateful UTXO model</strong> leveraged by a custom virtual machine, Alephium delivers high
-                throughput, energy efficiency, and secure smart contracts.
+                <strong>They told us Web3 would be accessible. Fast. Intuitive. Secure.</strong> A future where
+                decentralization didn’t mean compromise, where user experience matched the ideals of sovereignty and
+                interoperability.{' '}
+                <strong>
+                  But for years, reality lagged behind the vision: clunky UX, complex wallets, and slow networks were
+                  the standard.
+                </strong>{' '}
               </p>
               <p>
-                Every layer of Alephium; from protocol design to tooling; is{' '}
-                <strong>built with usability and accessibility in mind</strong>, empowering both developers and end
-                users. Alephium is designed to support real-world decentralized applications at scale, where dApps are
-                safe by design, running a node is accessible to all, and builders can innovate with confidence. <br />
-                <strong>Alephium is here to prove that scaling decentralization doesn't mean sacrificing it.</strong>
+                <strong>At Alephium, we’re determined to close that gap.</strong> With Danube, we’re not just upgrading
+                the network; we’re making the most ambitious leap in our history.{' '}
+                <strong>Danube is the moment where everything clicks</strong>, from wallet simplicity to developer
+                power, block speed to onboarding.
+              </p>
+              <p>
+                It doesn’t just enhance our protocol,{' '}
+                <strong>it redefines what’s possible for a UTXO-based smart contract chain.</strong> Alephium was born
+                from the belief that decentralization, scalability, and energy efficiency can coexist without
+                compromise. We combine Bitcoin’s resilience with cutting-edge innovations like BlockFlow sharding,
+                Proof-of-Less-Work, and a stateful UTXO model,{' '}
+                <strong>delivering high throughput, energy efficiency, and secure smart contracts.</strong>
+              </p>
+              <p>
+                We’re committed to building infrastructure that empowers developers and users alike, supporting
+                real-world decentralized applications with ease, security, and confidence.{' '}
+                <strong>Alephium proves that scaling decentralization doesn’t mean sacrificing it.</strong>
               </p>
             </TextElement>
           </SubpageSection>
@@ -115,10 +121,8 @@ const CustomPage = (props: PageProps) => {
             <TextElement>
               <h2>Core Contributors</h2>
               <p>
-                <strong>Alephium is more than the sum of its core contributors.</strong> It is a community-first
-                blockchain, and its long-term evolution is guided not by any single team, but by the growing network of
-                users, developers, miners, and supporters who believe in the project's vision of decentralized, secure,
-                and sustainable infrastructure.
+                Alephium is a community-first blockchain, shaped not by a single team, but by a growing network of
+                users, developers, miners, partners and friends.
               </p>
             </TextElement>
 
@@ -220,8 +224,8 @@ const CustomPage = (props: PageProps) => {
 
                 <ClickableBox>
                   <ImageIcon
-                    image={teamPhotosData.find(({ name }) => name === 'simer')?.image}
-                    alt="Simer Plaha"
+                    image={teamPhotosData.find(({ name }) => name === 'pawel')?.image}
+                    alt="Pawel Rejkowicz"
                     rounded
                     size={50}
                     padding={10}
@@ -229,7 +233,7 @@ const CustomPage = (props: PageProps) => {
                   />
                   <TextElement isSmall noMargin>
                     <p>
-                      <strong>Simer Plaha</strong> - Core DB Developer
+                      <strong>Pawel Rejkowicz</strong> - Core Developer
                     </p>
                     {/* <p>
                       Simer, based in Sydney, Australia, holds a Bachelor's in IT with a major in Software Engineering
@@ -506,17 +510,26 @@ const CustomPage = (props: PageProps) => {
             </SideBySide>
           </SubpageSection>
 
-          <SubpageSection>
+          <SubpageSection border edgeGradient>
             <TextElement isCentered>
-              <h2>Connect with Alephium</h2>
+              <h1>Contact Us</h1>
               <p>
-                Ready to build, explore, or connect? Whether you're a developer, a community member, or a partner, there
-                are many ways to get involved with Alephium.
+                Got questions, feedback, or just want to say hi? <br /> We’re here for you.
               </p>
-              <Button url="/communities">Join the Community</Button>
-              <Button url="https://docs.alephium.org/">Build with us</Button>
+            </TextElement>
+            <TextElement isCentered>
+              <Button squared url="mailto:info@alephium.org">
+                General
+              </Button>
+              <Button squared url="mailto:business@alephium.org">
+                Business and Partnerships
+              </Button>
+              <Button squared url="mailto:press@alephium.org">
+                Press
+              </Button>
             </TextElement>
           </SubpageSection>
+          <SectionDivider double />
         </>
       }
     />
