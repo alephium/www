@@ -287,7 +287,7 @@ const CustomPage = (props: PageProps) => {
                   </TextElement>
                 </ClickableBox>
 
-                <ClickableBox url="https://twitter.com/FanAlph">
+                <ClickableBox url="https://x.com/ALPH_CNintern">
                   <Emoji>🍵</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
