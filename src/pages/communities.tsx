@@ -103,7 +103,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🥖</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Telegram <strong>France</strong>
+                      Alephium Telegram <strong>French</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -112,7 +112,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🥨</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Telegram <strong>Germany</strong>
+                      Alephium Telegram <strong>German</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -121,7 +121,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🐟</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Telegram <strong>Portugal/Brazil</strong>
+                      Alephium Telegram <strong>Portuguese/Brazilian</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -130,7 +130,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🥃</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Telegram <strong>Russia</strong>
+                      Alephium Telegram <strong>Russian</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -139,7 +139,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🍷</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Telegram <strong>Spain</strong>
+                      Alephium Telegram <strong>Spanish</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -148,7 +148,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🍵</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Telegram <strong>China</strong>
+                      Alephium Telegram <strong>Chinese</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -157,7 +157,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🍢</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Telegram <strong>Turkey</strong>
+                      Alephium Telegram <strong>Turkish</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -166,7 +166,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🍟</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Telegram <strong>The Netherlands</strong>
+                      Alephium Telegram <strong>Dutch</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -175,7 +175,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🍜</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Telegram <strong>Vietnam</strong>
+                      Alephium Telegram <strong>Vietnamese</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -184,7 +184,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🥥</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Telegram <strong>Indonesia</strong>
+                      Alephium Telegram <strong>Indonesian</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -193,7 +193,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🥩</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Telegram <strong>Poland</strong>
+                      Alephium Telegram <strong>Polish</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -202,7 +202,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🥗</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Telegram <strong>Greece</strong>
+                      Alephium Telegram <strong>Greek</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -211,7 +211,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🍛</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Telegram <strong>India</strong>
+                      Alephium Telegram <strong>Indian</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -220,7 +220,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🍕</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Telegram <strong>Italy</strong>
+                      Alephium Telegram <strong>Italian</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -238,7 +238,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🍲</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Telegram <strong>Nigeria</strong>
+                      Alephium Telegram <strong>Nigerian</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -255,7 +255,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🥖</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Twitter/X <strong>France</strong>
+                      Alephium Twitter/X <strong>French</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -264,7 +264,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🥨</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Twitter/X <strong>Germany</strong>
+                      Alephium Twitter/X <strong>German</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -273,7 +273,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🐟</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Twitter/X <strong>Portugal/Brazil</strong>
+                      Alephium Twitter/X <strong>Portuguese/Brazilian</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -282,7 +282,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🥃</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Twitter/X <strong>Russia</strong>
+                      Alephium Twitter/X <strong>Russian</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -291,7 +291,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🍵</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Twitter/X <strong>China</strong>
+                      Alephium Twitter/X <strong>Chinese</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -300,7 +300,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🍢</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Twitter/X <strong>Turkey</strong>
+                      Alephium Twitter/X <strong>Turkish</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -309,7 +309,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🍟</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Twitter/X <strong>Netherlands</strong>
+                      Alephium Twitter/X <strong>Dutch</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -318,7 +318,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🍜</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Twitter/X <strong>Vietnam</strong>
+                      Alephium Twitter/X <strong>Vietnamese</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -327,7 +327,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🥥</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Twitter/X <strong>Indonesia</strong>
+                      Alephium Twitter/X <strong>Indonesian</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -336,7 +336,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🥩</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Twitter/X <strong>Poland</strong>
+                      Alephium Twitter/X <strong>Polish</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -345,7 +345,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🥗</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Twitter/X <strong>Greece</strong>
+                      Alephium Twitter/X <strong>Greek</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -354,7 +354,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🍕</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Twitter/X <strong>Italy</strong>
+                      Alephium Twitter/X <strong>Italian</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -372,7 +372,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🥟</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Twitter/X <strong>Ukraine</strong>
+                      Alephium Twitter/X <strong>Ukrainian</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -398,7 +398,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🥖</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Blog <strong>France</strong>
+                      Alephium Blog <strong>French</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -407,7 +407,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🥨</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Blog <strong>Germany</strong>
+                      Alephium Blog <strong>German</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -416,7 +416,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🐟</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Blog <strong>Portugal/Brazil</strong>
+                      Alephium Blog <strong>Portuguese/Brazilian</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -425,7 +425,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🍜</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Blog <strong>Vietnam</strong>
+                      Alephium Blog <strong>Vietnamese</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
@@ -434,7 +434,7 @@ const CustomPage = (props: PageProps) => {
                   <Emoji>🍕</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
-                      Alephium Blog <strong>Italy</strong>
+                      Alephium Blog <strong>Italian</strong>
                     </p>
                   </TextElement>
                 </ClickableBox>
