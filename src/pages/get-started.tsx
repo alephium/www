@@ -74,7 +74,7 @@ const exchangesQuery = graphql`
 `
 
 const CustomPage = (props: PageProps) => {
-  const { ecosystemImage } = useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
+  const { ecosystemImage, mineImage } = useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
 
   return (
     <Page
@@ -195,6 +195,26 @@ const CustomPage = (props: PageProps) => {
             </SubheaderContent>
           </SubpageSection>
 
+          <SectionDivider double />
+
+          <SubpageImageHeroSection backgroundImage={mineImage} minHeight="500px" narrow>
+            <h2>
+              Mine ALPH.
+              <small>
+                <br />
+                Secure the Network.
+                <br />
+                Earn Rewards.
+              </small>
+            </h2>
+            <p>
+              <strong>ALPH mining is efficient, accessible, and built for long-term sustainability.</strong>
+            </p>
+            <Button big highlight url="https://docs.alephium.org/mining">
+              Start mining
+            </Button>
+          </SubpageImageHeroSection>
+
           <SectionDivider />
 
           <SubpageSection>
@@ -228,7 +248,7 @@ const GetAlphSection = () => {
 
   return (
     <>
-      <SubpageSection wide edgeGradient gradientPosition="top">
+      <SubpageSection edgeGradient gradientPosition="top">
         <TextElement isCentered>
           <h2>
             Get Started
@@ -257,7 +277,7 @@ const GetAlphSection = () => {
 
       <SectionDivider />
 
-      <SubpageSection noBottomPadding>
+      <SubpageSection>
         <TextElement>
           <h2>Get ALPH</h2>
           <p>
