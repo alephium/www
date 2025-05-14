@@ -251,7 +251,7 @@ const CustomPage = (props: PageProps) => {
               </TextElement>
 
               <Grid columns={3} gap="small">
-                <ClickableBox url="https://twitter.com/Alephiumfr">
+                <ClickableBox url="https://x.com/Alephiumfr">
                   <Emoji>🥖</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
@@ -260,7 +260,7 @@ const CustomPage = (props: PageProps) => {
                   </TextElement>
                 </ClickableBox>
 
-                <ClickableBox url="https://twitter.com/Alephiumde">
+                <ClickableBox url="https://x.com/Alephiumde">
                   <Emoji>🥨</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
@@ -269,7 +269,7 @@ const CustomPage = (props: PageProps) => {
                   </TextElement>
                 </ClickableBox>
 
-                <ClickableBox url="https://twitter.com/Alephium_pt">
+                <ClickableBox url="https://x.com/Alephium_pt">
                   <Emoji>🐟</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
@@ -278,7 +278,7 @@ const CustomPage = (props: PageProps) => {
                   </TextElement>
                 </ClickableBox>
 
-                <ClickableBox url="https://twitter.com/AlephiumRU">
+                <ClickableBox url="https://x.com/AlephiumRU">
                   <Emoji>🥃</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
@@ -296,7 +296,7 @@ const CustomPage = (props: PageProps) => {
                   </TextElement>
                 </ClickableBox>
 
-                <ClickableBox url="https://twitter.com/AlphTurkey">
+                <ClickableBox url="https://x.com/AlphTurkey">
                   <Emoji>🍢</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
@@ -305,7 +305,7 @@ const CustomPage = (props: PageProps) => {
                   </TextElement>
                 </ClickableBox>
 
-                <ClickableBox url="https://twitter.com/AlephiumNL">
+                <ClickableBox url="https://x.com/AlephiumNL">
                   <Emoji>🍟</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
@@ -314,7 +314,7 @@ const CustomPage = (props: PageProps) => {
                   </TextElement>
                 </ClickableBox>
 
-                <ClickableBox url="https://twitter.com/AlephiumVN">
+                <ClickableBox url="https://x.com/AlephiumVN">
                   <Emoji>🍜</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
@@ -323,7 +323,7 @@ const CustomPage = (props: PageProps) => {
                   </TextElement>
                 </ClickableBox>
 
-                <ClickableBox url="https://twitter.com/AlephiumID">
+                <ClickableBox url="https://x.com/AlephiumID">
                   <Emoji>🥥</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
@@ -332,7 +332,7 @@ const CustomPage = (props: PageProps) => {
                   </TextElement>
                 </ClickableBox>
 
-                <ClickableBox url="https://twitter.com/AlephiumPoland">
+                <ClickableBox url="https://x.com/AlephiumPoland">
                   <Emoji>🥩</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
@@ -341,7 +341,7 @@ const CustomPage = (props: PageProps) => {
                   </TextElement>
                 </ClickableBox>
 
-                <ClickableBox url="https://twitter.com/AlephiumGreece">
+                <ClickableBox url="https://x.com/AlephiumGreece">
                   <Emoji>🥗</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
@@ -350,7 +350,7 @@ const CustomPage = (props: PageProps) => {
                   </TextElement>
                 </ClickableBox>
 
-                <ClickableBox url="https://twitter.com/Alephium_it">
+                <ClickableBox url="https://x.com/Alephium_it">
                   <Emoji>🍕</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
@@ -359,7 +359,7 @@ const CustomPage = (props: PageProps) => {
                   </TextElement>
                 </ClickableBox>
 
-                <ClickableBox url="https://twitter.com/AlephiumArabia">
+                <ClickableBox url="https://x.com/AlephiumArabia">
                   <Emoji>🥙</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
@@ -368,7 +368,7 @@ const CustomPage = (props: PageProps) => {
                   </TextElement>
                 </ClickableBox>
 
-                <ClickableBox url="https://twitter.com/Alephiumua">
+                <ClickableBox url="https://x.com/Alephiumua">
                   <Emoji>🥟</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
@@ -377,7 +377,7 @@ const CustomPage = (props: PageProps) => {
                   </TextElement>
                 </ClickableBox>
 
-                <ClickableBox url="https://twitter.com/alephiumafrique">
+                <ClickableBox url="https://x.com/alephiumafrique">
                   <Emoji>🌍</Emoji>
                   <TextElement isSmall noMargin>
                     <p>
