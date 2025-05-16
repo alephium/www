@@ -29,6 +29,5 @@ bottom:
   socials:
     - Discord
     - Telegram
-    - X
-    - GitHub
+    - Twitter/X
 ---

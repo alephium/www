@@ -63,7 +63,7 @@ partnersSection:
       url: https://www.safepal.com/
     - title: 'Tangem'
       logo: '../images/svgs/tangem-logo.svg'
-      url: https://www.tangem.com/
+      url: https://tangem.com/
 
 todoListSection:
   title: What's next
