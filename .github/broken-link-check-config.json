@@ -27,6 +27,9 @@
     },
     {
       "pattern": "^https://www.goldshell.com/"
+    },
+    {
+      "pattern": "^https://tangem.com/"
     }
   ]
 }
