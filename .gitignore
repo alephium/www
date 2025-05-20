@@ -4,3 +4,4 @@ public
 .vscode
 .DS_Store
 /src/gatsby-types.d.ts
+.env

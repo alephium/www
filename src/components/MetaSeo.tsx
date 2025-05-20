@@ -26,7 +26,7 @@ export const MetaSeo = ({ title, description, lang = 'en' }: MetaSeoProps) => {
   const isTestSite = typeof window !== 'undefined' && window.location.hostname === 'www2.alephium.org'
 
   const metaDescription = description || defaultDescription
-  const metaImageAbsoluteUrl = `https://alephium.org/ogimage-1.png`
+  const metaImageAbsoluteUrl = `https://${process.env.GATSBY_ALEPHIUM_HOSTNAME}/ogimage-1.png`
   const titleContent = title || defaultTitle
 
   const metaBase = isTestSite ? [{ property: 'robots', content: 'noindex, nofollow' }] : []
@@ -61,7 +61,7 @@ export const MetaSeo = ({ title, description, lang = 'en' }: MetaSeoProps) => {
         },
         {
           property: `og:url`,
-          content: 'https://alephium.org'
+          content: `https://${process.env.GATSBY_ALEPHIUM_HOSTNAME}`
         },
         {
           property: `og:image`,
