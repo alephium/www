@@ -30,7 +30,7 @@ jobs:
           node-version: 18.12.1
 
       - name: Build website
-        run: npm install gatsby-cli && npm run build
+        run: npm install gatsby-cli && npm run clean && npm run build
 
       - name: Deploy to S3
         run: npm run deploy
