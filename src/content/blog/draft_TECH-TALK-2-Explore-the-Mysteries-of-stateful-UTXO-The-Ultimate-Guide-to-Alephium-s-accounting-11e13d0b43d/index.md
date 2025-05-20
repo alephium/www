@@ -183,5 +183,3 @@ If the liquidity pool is deep enough, it will not be a problem, as you can split
 40 - Vladimir Moshnyager: **If developers want their code to be stored in the state, do they have to pay for it? How long does this storage last? Can they destroy it?**
 
 **Cheng Wang:** Yes. Contract storage is a huge problem right now for Ethereum. For every transaction, you need to find the data on a database with 140 gigabytes. You need to access a few data from these huge states, execute the smart contract, and then modify the states. It's not efficient.
-
-[View original.](https://medium.com/p/11e13d0b43d)

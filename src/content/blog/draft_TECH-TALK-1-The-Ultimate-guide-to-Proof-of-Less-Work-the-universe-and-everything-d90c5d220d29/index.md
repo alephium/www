@@ -167,5 +167,3 @@ We do believe that over the long term, the blockchain space will be a mix of Lev
 It will of course be possible to build L2s on top of Alephium, nothing in our design prevents that. For some L2s, it might be a bit more complicated, because our L1 level is very lightweight, which means there are some very heavy cryptographic primitives that we have not included, at least as of yet. For example, some zk-level2s tools would be hard to implement on top of Alephium today, but if we see demand for these and the cryptography becomes efficient, we’ll add support for these at a later point in time, that shouldn’t be much of a problem.
 
 **Thanks a lot for that discussion, it’s been fascinating, enlightening and a lot to take in!**
-
-[View original.](https://medium.com/p/d90c5d220d29)

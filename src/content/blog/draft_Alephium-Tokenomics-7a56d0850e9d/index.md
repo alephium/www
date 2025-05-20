@@ -96,5 +96,3 @@ _Total Supply:_ This is the number of ALPH in existence today. Basically, the su
 _Maximum Supply:_ The theoretical maximum of ALPH that can exist, it is set at 1 billion. However, it will never be reached due to the various deflationary mechanisms of Alphium.
 
 If you have extra questions, you are welcome to reach out on our <a href="http://alephium.org/discord" class="markup--anchor markup--p-anchor" data-href="http://alephium.org/discord" rel="noopener" target="_blank">Discord</a> or in the <a href="https://t.me/alephiumgroup" class="markup--anchor markup--p-anchor" data-href="https://t.me/alephiumgroup" rel="noopener" target="_blank">Alephium Telegram channel</a>. Don’t forget to follow <a href="https://twitter.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium" rel="noopener" target="_blank">@alephium on Twitter</a> to stay up-to-date.
-
-[View original.](https://medium.com/p/7a56d0850e9d)

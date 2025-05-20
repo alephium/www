@@ -393,5 +393,3 @@ It means losing the point if we try to have multiple clients because you cannot 
 Vladimir Moshnyager: **What would you say to a DeFi dev or entrepreneur to convince him to come and try stateful UTXO?**
 
 **Cheng Wang:** Right now, we are still in the very early stage. And that is an advantage. With the upcoming Leman Network Upgrade, we will introduce more features for smart contract development, a bridge to Ethereum, and much more. Now would be an excellent time to learn how to code with Alpehium. We have a lot of innovative stuff here. With our growing community, your project would be well-placed to take advantage of this.
-
-[View original.](https://medium.com/p/93df94f064ed)
