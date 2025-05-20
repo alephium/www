@@ -2,6 +2,8 @@
 
 ## Development
 
+Clone `.env.example` into `.env`.
+
 ```shell
 npm run start
 ```

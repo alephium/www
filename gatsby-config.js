@@ -1,7 +1,11 @@
+require('dotenv').config({
+  path: `.env`
+})
+
 module.exports = {
   graphqlTypegen: true,
   siteMetadata: {
-    siteUrl: 'https://alephium.org',
+    siteUrl: `https://${process.env.GATSBY_ALEPHIUM_HOSTNAME}`,
     title: 'Alephium | Scalable Proof-of-Work and secure Smart Contracts.',
     description:
       'Alephium is the next generation PoW Layer 1 with smart contracts. Built for speed, security, and sustainability. Start building or join the community today.',
@@ -164,6 +168,14 @@ module.exports = {
       options: {
         siteId: 'CHLDDGXF',
         includedDomains: ['alephium.org']
+      }
+    },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: process.env.AWS_BUCKET_NAME,
+        protocol: 'https',
+        hostname: process.env.GATSBY_ALEPHIUM_HOSTNAME
       }
     }
   ]
