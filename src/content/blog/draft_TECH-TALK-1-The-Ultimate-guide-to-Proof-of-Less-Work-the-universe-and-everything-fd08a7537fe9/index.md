@@ -181,5 +181,3 @@ It will of course be possible to build L2s on top of Alephium, nothing in our de
 Bitcoin’s lightning network is an interesting L2 seeing a lot of growth. It’s an interesting architecture preserving space on L1 and speed and cost on L2. Since Alephium is also based on the UTXO model, it should be possible to build something similar to the lightning protocol on top of it!
 
 #### **Thanks a lot for that discussion, it’s been fascinating, enlightening and a lot to take in!**
-
-[View original.](https://medium.com/p/fd08a7537fe9)

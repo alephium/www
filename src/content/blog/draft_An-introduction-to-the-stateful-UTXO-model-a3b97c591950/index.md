@@ -103,5 +103,3 @@ The stateful UTXO introduces the UTXO model to handle the tokens inside an accou
 As mentioned before, the EVM (Ethereum Virtual Machine) doesn’t know if a transaction is handling a token or not, but in Alephium, it’s very different. The virtual machine knows precisely \[how?\] that a token transfer is happening to a smart contract. In this case, the virtual machine verifies \[EXAMPLES\] the transfer to check if it is submitted accordingly to the smart contract rules.
 
 Another benefit is the possibility to have, by design, the possibility of upgrading (or migrating) a smart contract if this logic is implemented on it. Alephium has a virtual machine instruction for that as a built-in feature. This allows the developers to upgrade the smart contract to restore the logic and fix bugs. The current option on EVM is to use proxy contracts to enable this migration in a very complex arrangement.
-
-[View original.](https://medium.com/p/a3b97c591950)

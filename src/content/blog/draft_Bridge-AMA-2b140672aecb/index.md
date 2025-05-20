@@ -75,5 +75,3 @@ Personally, the success of the DEX has been highly motivating. We plan to develo
 ---
 
 This is the end of Part I! Keep posted as Part II comes next week. If you have questions, please come to Alephium’s <a href="https://discord.gg/XsGpZ5VDTM" class="markup--anchor markup--p-anchor" data-href="https://discord.gg/XsGpZ5VDTM" rel="noopener" target="_blank"><strong>Discord</strong></a>, <a href="https://t.me/alephiumgroup" class="markup--anchor markup--p-anchor" data-href="https://t.me/alephiumgroup" rel="noopener" target="_blank"><strong>Telegram</strong></a>, or reach out on <a href="https://twitter.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium" rel="noopener" target="_blank"><strong>Twitter</strong></a>!
-
-[View original.](https://medium.com/p/2b140672aecb)

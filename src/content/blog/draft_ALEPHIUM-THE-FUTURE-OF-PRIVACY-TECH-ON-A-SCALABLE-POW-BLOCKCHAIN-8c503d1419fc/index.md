@@ -49,5 +49,3 @@ And here’s why:
 Alephium is building the future of the scalable layer 1. It wants to provide the best protocol on which to build privacy tech. Its unique combination of advanced cryptographic standards, the sUTXO model treating tokens as first-class citizens, and commitment to security features like the Asset Permission System make it an ideal platform for developers and users. Its privacy-related features, devs and community provide a sound foundation for privacy-mindful developers to build their tools/dApps.
 
 Come build the future of privacy tech on Alephium. Tell us what you need, dive into our documentation, join our Discord server and apply for a grant!
-
-[View original.](https://medium.com/p/8c503d1419fc)

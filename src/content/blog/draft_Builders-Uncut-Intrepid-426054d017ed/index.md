@@ -84,5 +84,3 @@ Twitter: <a href="https://x.com/intrepid_crypto" class="markup--anchor markup--p
 ---
 
 For any questions or feedback, reach out to us on <a href="http://alephium.org/discord" class="markup--anchor markup--p-anchor" data-href="http://alephium.org/discord" rel="noopener ugc nofollow noopener noopener" target="_blank">Discord</a> or <a href="https://t.me/alephiumgroup" class="markup--anchor markup--p-anchor" data-href="https://t.me/alephiumgroup" rel="noopener ugc nofollow noopener noopener" target="_blank">Telegram</a>, and follow <a href="https://x.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://x.com/alephium" rel="noopener ugc nofollow noopener noopener" target="_blank">@alephium on Twitter</a> for the latest updates!
-
-[View original.](https://medium.com/p/426054d017ed)

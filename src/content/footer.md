@@ -30,4 +30,5 @@ bottom:
     - Discord
     - Telegram
     - Twitter/X
+    - GitHub
 ---

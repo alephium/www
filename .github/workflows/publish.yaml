@@ -32,8 +32,8 @@ jobs:
       - name: Build website
         run: npm install gatsby-cli && npm run build
 
-      - name: Sync files to S3
-        run: aws s3 sync ./public/ s3://$AWS_BUCKET_NAME --acl public-read --delete --cache-control max-age=604800
+      - name: Deploy to S3
+        run: npm run deploy
 
       - name: Notify CloudFront about the changes
         run: aws cloudfront create-invalidation --distribution-id ${AWS_DISTRIBUTION_ID} --paths "/*"
