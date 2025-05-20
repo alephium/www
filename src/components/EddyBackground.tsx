@@ -1,5 +1,24 @@
-import React, { useEffect, useRef } from 'react'
+import { graphql, useStaticQuery } from 'gatsby'
+import { FC, useEffect, useRef, useState } from 'react'
 import styled from 'styled-components'
+
+import useIsMobile from '../hooks/useIsMobile'
+import GatsbyImageWrapper from './GatsbyImageWrapper'
+
+const backgroundQuery = graphql`
+  query BackgroundQuery {
+    placeholderImage: file(relativePath: { eq: "hero-gradient.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(
+          width: 1920
+          layout: CONSTRAINED
+          transformOptions: { fit: COVER, cropFocus: CENTER }
+          quality: 80
+        )
+      }
+    }
+  }
+`
 
 /**
  * Convert a hex color string to an [r, g, b] array in 0–1 range.
@@ -35,7 +54,7 @@ export interface MeshGradientEffectProps {
   color4?: [number, number, number]
 }
 
-const MeshGradientEffect: React.FC<MeshGradientEffectProps> = ({
+const MeshGradientEffect: FC<MeshGradientEffectProps> = ({
   contrast = 1.3,
   brightness = 0.8,
   blendMode = 'screen',
@@ -46,28 +65,38 @@ const MeshGradientEffect: React.FC<MeshGradientEffectProps> = ({
   color4 = hexToRgb01('#99a3ff')
 }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null)
+  const [isWebGLReady, setIsWebGLReady] = useState(false)
+  const isMobile = useIsMobile()
+
+  const data = useStaticQuery(backgroundQuery)
 
   useEffect(() => {
+    if (isMobile) return
+
     const canvas = canvasRef.current
-    if (!canvas) return
+    if (!canvas) {
+      return
+    }
+
     const [r1, g1, b1] = color1
     const [r2, g2, b2] = color2
     const [r3, g3, b3] = color3
     const [r4, g4, b4] = color4
     const gl = canvas.getContext('webgl')
     if (!gl) {
-      console.error('WebGL not supported')
       return
     }
 
     gl.clearColor(0, 0, 0, 0)
 
     function compileShader(src: string, type: number) {
-      const shader = gl.createShader(type)!
+      if (!gl) return null
+      const shader = gl.createShader(type)
+      if (!shader) return null
       gl.shaderSource(shader, src)
       gl.compileShader(shader)
       if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
-        console.error(gl.getShaderInfoLog(shader))
+        return null
       }
       return shader
     }
@@ -173,20 +202,33 @@ const MeshGradientEffect: React.FC<MeshGradientEffectProps> = ({
 
     const vertShader = compileShader(vsSource, gl.VERTEX_SHADER)
     const fragShader = compileShader(fsSource, gl.FRAGMENT_SHADER)
-    const program = gl.createProgram()!
+    if (!vertShader || !fragShader) {
+      return
+    }
+
+    const program = gl.createProgram()
+    if (!program) {
+      return
+    }
+
     gl.attachShader(program, vertShader)
     gl.attachShader(program, fragShader)
     gl.linkProgram(program)
     if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
-      console.error(gl.getProgramInfoLog(program))
+      return
     }
     gl.useProgram(program)
 
-    const uTime = gl.getUniformLocation(program, 'u_time')!
-    const uSpeed = gl.getUniformLocation(program, 'u_speed')!
-    const uRes = gl.getUniformLocation(program, 'u_resolution')!
-    const uContr = gl.getUniformLocation(program, 'u_contrast')!
-    const uBright = gl.getUniformLocation(program, 'u_brightness')!
+    const uTime = gl.getUniformLocation(program, 'u_time')
+    const uSpeed = gl.getUniformLocation(program, 'u_speed')
+    const uRes = gl.getUniformLocation(program, 'u_resolution')
+    const uContr = gl.getUniformLocation(program, 'u_contrast')
+    const uBright = gl.getUniformLocation(program, 'u_brightness')
+
+    if (!uTime || !uSpeed || !uRes || !uContr || !uBright) {
+      console.error('Failed to get uniform locations')
+      return
+    }
 
     // grid setup
     const GRID = 30
@@ -205,21 +247,31 @@ const MeshGradientEffect: React.FC<MeshGradientEffectProps> = ({
         indices.push(i, i + 1, i + GRID + 1, i + 1, i + GRID + 2, i + GRID + 1)
       }
     }
+
     function setupBuffer(data: Float32Array, attr: string, size: number) {
-      const buf = gl.createBuffer()!
+      if (!gl || !program) return
+      const buf = gl.createBuffer()
+      if (!buf) return
       gl.bindBuffer(gl.ARRAY_BUFFER, buf)
       gl.bufferData(gl.ARRAY_BUFFER, data, gl.STATIC_DRAW)
       const loc = gl.getAttribLocation(program, attr)
+      if (loc === -1) return
       gl.enableVertexAttribArray(loc)
       gl.vertexAttribPointer(loc, size, gl.FLOAT, false, 0, 0)
     }
+
     setupBuffer(new Float32Array(positions), 'a_pos', 2)
     setupBuffer(new Float32Array(uvCoords), 'a_uv', 2)
-    const idxBuf = gl.createBuffer()!
+
+    const idxBuf = gl.createBuffer()
+    if (!idxBuf) {
+      return
+    }
     gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, idxBuf)
     gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, new Uint16Array(indices), gl.STATIC_DRAW)
 
     function updateSize() {
+      if (!canvas || !gl || !uRes) return
       const w = canvas.parentElement?.clientWidth ?? window.innerWidth
       const h = canvas.parentElement?.clientHeight ?? window.innerHeight
       canvas.width = w
@@ -231,7 +283,12 @@ const MeshGradientEffect: React.FC<MeshGradientEffectProps> = ({
     window.addEventListener('resize', updateSize)
 
     function render() {
+      if (!gl || !uTime || !uSpeed || !uContr || !uBright || !program) return
       gl.clear(gl.COLOR_BUFFER_BIT)
+
+      // Make sure program is bound before setting uniforms
+      gl.useProgram(program)
+
       const now = performance.now() * 0.001
       gl.uniform1f(uTime, now)
       gl.uniform1f(uSpeed, speed)
@@ -240,10 +297,31 @@ const MeshGradientEffect: React.FC<MeshGradientEffectProps> = ({
       gl.drawElements(gl.TRIANGLES, indices.length, gl.UNSIGNED_SHORT, 0)
       requestAnimationFrame(render)
     }
-    render()
-  }, [contrast, brightness, speed, color1, color2, color3, color4])
 
-  return <Canvas ref={canvasRef} blendMode={blendMode} />
+    render()
+    setIsWebGLReady(true)
+
+    return () => {
+      window.removeEventListener('resize', updateSize)
+      setIsWebGLReady(false)
+    }
+  }, [isMobile, contrast, brightness, speed, color1, color2, color3, color4])
+
+  return (
+    <>
+      <Canvas ref={canvasRef} blendMode={blendMode} style={{ display: isWebGLReady ? 'block' : 'none' }} />
+      {!isWebGLReady && (
+        <PlaceholderContainer>
+          <GatsbyImageWrapper
+            image={data.placeholderImage.childImageSharp.gatsbyImageData}
+            alt="Loading gradient background"
+            style={{ width: '100%', height: '100%' }}
+            objectFit="cover"
+          />
+        </PlaceholderContainer>
+      )}
+    </>
+  )
 }
 
 export default MeshGradientEffect
@@ -257,4 +335,15 @@ const Canvas = styled.canvas<{ blendMode: string }>`
   z-index: -1;
   pointer-events: none;
   mix-blend-mode: ${(props) => props.blendMode};
+  background-color: #000;
+`
+
+const PlaceholderContainer = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
 `
