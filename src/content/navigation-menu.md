@@ -49,5 +49,6 @@ button:
   title: Bridge
   link: https://bridge.alephium.org/
 socialIcons:
-  - GitHub
+  - Twitter/X
+  - Discord
 ---
