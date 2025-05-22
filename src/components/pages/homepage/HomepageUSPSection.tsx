@@ -162,7 +162,7 @@ const HomepageUSPSection = () => {
             </TextElement>
             <TextElement>
               <p>
-                Alephium&apos;s <strong>Proof-of-Less-Wor</strong> consensus delivers true decentralization with a
+                Alephium&apos;s <strong>Proof-of-Less-Work</strong> consensus delivers true decentralization with a
                 fraction of the energy.{' '}
                 <strong>
                   It retains the security and simplicity of traditional PoW while cutting energy use by over 87%.
