@@ -204,11 +204,17 @@ const TextElementStyled = styled(TextElement)`
     font-weight: var(--fontWeight-medium);
     font-size: var(--fontSize-18);
     line-height: 1.4;
+    margin-bottom: 0;
   }
 
-  h3 {
+  h3,
+  h4 {
     position: relative;
     padding-right: var(--spacing-6);
+
+    &:only-child {
+      margin-bottom: 0;
+    }
   }
 `
 
@@ -257,7 +263,8 @@ const CardStyled = styled(motion.div)<{
         opacity: 1;
       }
 
-      h3::after {
+      h3::after,
+      h4::after {
         content: '→';
         position: absolute;
         right: 0;
@@ -277,8 +284,13 @@ const CardStyled = styled(motion.div)<{
     filter: blur(1px) brightness(0.5);
   }
 
-  h3 {
+  h3,
+  h4 {
     transition: color 0.3s ease;
+  }
+
+  h4 {
+    margin-bottom: var(--spacing-2);
   }
 
   &:hover {
