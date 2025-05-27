@@ -17,7 +17,7 @@ menuItems:
       - title: Github
         link: https://github.com/alephium
       - title: Grants
-        link: https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md
+        link: /grants
   - title: Ecosystem
     items:
       - title: Tools

@@ -16,7 +16,7 @@ const Accordion = ({ title, children, className }: AccordionProps) => {
 
   return (
     <AccordionContainer className={className}>
-      <AccordionHeader onClick={() => setIsOpen(!isOpen)}>
+      <AccordionHeader onClick={() => setIsOpen(!isOpen)} isOpen={isOpen}>
         <AccordionTitle>{title}</AccordionTitle>
         <AccordionIcon>{isOpen ? <RiArrowDropUpLine /> : <RiArrowDropDownLine />}</AccordionIcon>
       </AccordionHeader>
@@ -41,18 +41,16 @@ const Accordion = ({ title, children, className }: AccordionProps) => {
 export default Accordion
 
 const AccordionContainer = styled.div`
-  border: 1px solid ${({ theme }) => theme.separator};
-  border-radius: var(--radius);
-  margin-bottom: var(--spacing-4);
+  border-radius: var(--radius-small);
   overflow: hidden;
 `
 
-const AccordionHeader = styled.div`
+const AccordionHeader = styled.div<{ isOpen: boolean }>`
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: var(--spacing-1) var(--spacing-3);
-  background-color: ${({ theme }) => theme.surface2};
+  background-color: ${({ theme, isOpen }) => (isOpen ? theme.surface1 : theme.surface2)};
   cursor: pointer;
   transition: background-color 0.2s ease;
 

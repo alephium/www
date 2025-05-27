@@ -29,7 +29,7 @@ const CustomPage = (props: PageProps) => {
         <>
           <SectionDivider />
 
-          <SubpageSection bgColor="2" wide border edgeGradient gradientPosition="top">
+          <SubpageSection bgColor="2" border edgeGradient gradientPosition="top">
             <TextElement isCentered>
               <h2>
                 Online
