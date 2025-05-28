@@ -1,3 +1,4 @@
+import { colord } from 'colord'
 import { useMotionValue, useSpring } from 'framer-motion'
 import { Link } from 'gatsby'
 import { ReactNode, RefObject, useEffect, useRef } from 'react'
@@ -107,7 +108,7 @@ const getGradient = (theme: DefaultTheme) => `
   )
 `
 
-const getBorderRadius = (squared?: boolean) => (squared ? '12px' : '50px')
+const getBorderRadius = (squared?: boolean) => (squared ? '9px' : '50px')
 const getInnerBorderRadius = (squared?: boolean) => (squared ? 'calc(12px - 3px)' : 'calc(50px - 3px)')
 
 const GradientBorder = styled.div<{ squared?: boolean }>`
@@ -125,7 +126,7 @@ const GradientBorder = styled.div<{ squared?: boolean }>`
     position: absolute;
     inset: 4px;
     border-radius: ${({ squared }) => getInnerBorderRadius(squared)};
-    background: rgba(255, 255, 255, 0.8);
+    background: ${({ theme }) => colord(theme.textPrimary).alpha(0.8).toHex()};
     backdrop-filter: blur(10px) saturate(180%);
     z-index: 0;
   }
@@ -155,8 +156,8 @@ const ArrowStyled = styled(Arrow)<{ isExternal?: boolean }>`
 `
 
 const StyledButton = styled(Button)`
-  background-color: rgba(255, 255, 255, 0.9);
-  color: black;
+  background-color: ${({ theme }) => colord(theme.textPrimary).alpha(0.9).toHex()};
+  color: ${({ theme }) => colord(theme.textPrimary).invert().toHex()};
   --gradient-x: 50%;
   --gradient-y: 50%;
   border-radius: ${({ squared }) => getBorderRadius(squared)};
@@ -193,7 +194,7 @@ const StyledButton = styled(Button)`
   .arrow {
     width: ${({ big }) => (big ? '16px' : '14px')};
     margin-left: ${({ big }) => (big ? 'var(--spacing-2)' : 'var(--spacing-1)')};
-    fill: inherit;
+    fill: ${({ theme }) => colord(theme.textPrimary).invert().toHex()};
   }
 
   ${({ highlight }) =>

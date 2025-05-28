@@ -147,7 +147,7 @@ const TextElement = styled.div<TextElementProps>`
   }
 
   * strong {
-    color: var(--color-white);
+    color: ${({ theme }) => theme.textPrimary};
     font-weight: inherit;
   }
 

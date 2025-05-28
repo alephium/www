@@ -309,7 +309,7 @@ const MeshGradientEffect: FC<MeshGradientEffectProps> = ({
 
   return (
     <>
-      <Canvas ref={canvasRef} blendMode={blendMode} style={{ display: isWebGLReady ? 'block' : 'none' }} />
+      <Canvas ref={canvasRef} style={{ display: isWebGLReady ? 'block' : 'none' }} />
       {!isWebGLReady && (
         <PlaceholderContainer>
           <GatsbyImageWrapper
@@ -326,7 +326,7 @@ const MeshGradientEffect: FC<MeshGradientEffectProps> = ({
 
 export default MeshGradientEffect
 
-const Canvas = styled.canvas<{ blendMode: string }>`
+const Canvas = styled.canvas`
   position: absolute;
   top: 0;
   left: 0;
@@ -334,7 +334,6 @@ const Canvas = styled.canvas<{ blendMode: string }>`
   height: 100%;
   z-index: -1;
   pointer-events: none;
-  mix-blend-mode: ${(props) => props.blendMode};
   background-color: #000;
 `
 

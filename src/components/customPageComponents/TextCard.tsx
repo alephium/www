@@ -241,6 +241,7 @@ const CardStyled = styled(motion.div)<{
   height: 100%;
   position: relative;
   overflow: hidden;
+  box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.05);
 
   @media ${deviceBreakPoints.mobile} {
     & + & {
