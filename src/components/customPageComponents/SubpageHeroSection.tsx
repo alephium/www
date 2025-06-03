@@ -21,7 +21,7 @@ const SubpageHeroSection = forwardRef<HTMLElement, SubpageHeroSectionProps>(func
   ref
 ) {
   return (
-    <SubpageHeroSectionStyled ref={ref} split={split} {...props}>
+    <SubpageHeroSectionStyled ref={ref} split={split} mediaContent={mediaContent} {...props}>
       <BackgroundMediaWrapper split={split}>{mediaContent}</BackgroundMediaWrapper>
       <HeroPageSectionContainer alignContent={alignContent} split={split}>
         <ContentWrapper alignContent={alignContent} split={split}>
@@ -42,7 +42,6 @@ const SubpageHeroSectionStyled = styled.section<SubpageHeroSectionProps>`
   margin-bottom: ${({ bottomMargin }) => (bottomMargin ? 'var(--spacing-10)' : '0')};
   width: ${({ narrow }) => (narrow ? 'var(--page-width)' : '80vw')};
   overflow: hidden;
-  transition: all 0.4s ease-in;
   display: flex;
   align-items: stretch;
   border-radius: var(--radius-big);

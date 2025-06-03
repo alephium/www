@@ -10,6 +10,7 @@ import { deviceBreakPoints } from '../styles/global-style'
 import { notEmpty } from '../utils/misc'
 import NavigationMenuSocials from './navigation/NavigationMenuSocials'
 import SimpleLink from './SimpleLink'
+import ThemeToggle from './ThemeToggle'
 import TranslateComponent from './TranslateComponent'
 
 interface MobileNavigationMenuProps {
@@ -69,6 +70,8 @@ const MobileNavigationMenu = ({ onCloseClick }: MobileNavigationMenuProps) => {
             <NavigationMenuSocials enabledItems={socialIcons} />
           </MobileMenuItem>
         )}
+
+        <ThemeToggle />
       </MobileMenuItems>
     </MobileNavigationMenuStyled>
   )

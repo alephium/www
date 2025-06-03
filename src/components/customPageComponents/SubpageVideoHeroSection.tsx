@@ -1,7 +1,7 @@
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion'
 import { getImage, IGatsbyImageData } from 'gatsby-plugin-image'
 import { useEffect, useRef, useState } from 'react'
-import styled, { ThemeProvider } from 'styled-components'
+import styled from 'styled-components'
 
 import useIsMobile from '../../hooks/useIsMobile'
 import { darkTheme } from '../../styles/themes'
@@ -112,27 +112,24 @@ const SubpageVideoHeroSection = ({ video, poster, children, ...props }: SubpageV
   }
 
   return (
-    <ThemeProvider theme={darkTheme}>
-      <SubpageHeroSection
-        ref={innerRef}
-        onPointerMove={!isMobile ? handlePointerMove : undefined}
-        mediaContent={
-          <PosterWrapper>
-            {poster && !videoLoaded && (
-              <PosterImage image={image} alt="" style={{ height: '100%' }} objectFit="cover" />
-            )}
+    <SubpageHeroSection
+      ref={innerRef}
+      onPointerMove={!isMobile ? handlePointerMove : undefined}
+      mediaContent={
+        <PosterWrapper>
+          {poster && !videoLoaded && <PosterImage image={image} alt="" style={{ height: '100%' }} objectFit="cover" />}
 
-            {!isMobile && video?.publicURL && (
-              <VideoContainer ref={videoRef} muted playsInline preload="auto">
-                <source src={video.publicURL} type="video/mp4" />
-              </VideoContainer>
-            )}
-            <GradientOverlay
-              style={{
-                background: useTransform(
-                  [springX, springY],
-                  ([x, y]) =>
-                    `linear-gradient(${45 + y * 30}deg, 
+          {!isMobile && video?.publicURL && (
+            <VideoContainer ref={videoRef} muted playsInline preload="auto">
+              <source src={video.publicURL} type="video/mp4" />
+            </VideoContainer>
+          )}
+          <GradientOverlay
+            style={{
+              background: useTransform(
+                [springX, springY],
+                ([x, y]) =>
+                  `linear-gradient(${45 + y * 30}deg, 
                       rgba(34, 34, 34, 0.525) 0%,
                       rgba(97, 97, 97, 0.1) ${x * 100}%,
                       ${darkTheme.palette2} ${x * 100 + 10}%,
@@ -141,15 +138,15 @@ const SubpageVideoHeroSection = ({ video, poster, children, ...props }: SubpageV
                       ${darkTheme.palette4} ${x * 100 + 40}%,
                       transparent 100%
                     )`
-                )
-              }}
-            />
-            <GradientOverlay
-              style={{
-                background: useTransform(
-                  [springX, springY],
-                  ([x, y]) =>
-                    `linear-gradient(${135 + y * 30}deg,
+              )
+            }}
+          />
+          <GradientOverlay
+            style={{
+              background: useTransform(
+                [springX, springY],
+                ([x, y]) =>
+                  `linear-gradient(${135 + y * 30}deg,
                       ${darkTheme.palette4} 0%,
                       rgba(130, 130, 130, 0.15) ${x * 100 - 20}%,
                       ${darkTheme.palette1} ${x * 100}%,
@@ -157,18 +154,17 @@ const SubpageVideoHeroSection = ({ video, poster, children, ...props }: SubpageV
                       rgba(94, 94, 94, 0.1) ${x * 100 + 30}%,
                       rgba(24, 24, 24, 0.204) 100%,
                     )`
-                ),
-                mixBlendMode: 'multiply',
-                opacity: 0.1
-              }}
-            />
-          </PosterWrapper>
-        }
-        {...props}
-      >
-        {children}
-      </SubpageHeroSection>
-    </ThemeProvider>
+              ),
+              mixBlendMode: 'multiply',
+              opacity: 0.1
+            }}
+          />
+        </PosterWrapper>
+      }
+      {...props}
+    >
+      {children}
+    </SubpageHeroSection>
   )
 }
 

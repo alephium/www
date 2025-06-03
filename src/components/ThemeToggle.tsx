@@ -24,7 +24,6 @@ export default ThemeToggle
 const ThemeToggleStyled = styled.div`
   display: flex;
   align-items: center;
-  margin-left: var(--spacing-4);
 
   .toggle-icon {
     stroke-width: 0;

@@ -16,7 +16,8 @@ const BoxStyles = css<ClickableBoxProps>`
   display: flex;
   align-items: ${({ align }) => (align === 'top' ? 'flex-start' : 'center')};
   gap: var(--spacing-4);
-  background-color: ${({ theme }) => theme.surface2};
+  background-color: ${({ theme }) => theme.background2};
+  border: 1px solid ${({ theme }) => theme.borderPrimary};
   border-radius: var(--radius);
   padding: var(--spacing-4);
 

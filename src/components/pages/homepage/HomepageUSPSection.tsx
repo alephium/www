@@ -234,6 +234,7 @@ const SubpageSectionStyled = styled(SubpageSection)`
 
 const TextElementStyled = styled(TextElement)`
   width: var(--page-width);
+  padding: 0 var(--spacing-4);
   margin: 0 auto;
 `
 

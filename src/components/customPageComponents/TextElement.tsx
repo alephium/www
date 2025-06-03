@@ -44,7 +44,12 @@ const TextElement = styled.div<TextElementProps>`
     isCentered &&
     css`
       * > hr {
-        background: linear-gradient(to right, transparent 25%, var(--color-white) 50%, transparent 75%) !important;
+        background: linear-gradient(
+          to right,
+          transparent 25%,
+          ${({ theme }) => theme.borderPrimary} 50%,
+          transparent 75%
+        ) !important;
       }
     `};
 
@@ -103,8 +108,8 @@ const TextElement = styled.div<TextElementProps>`
     }
 
     hr {
-      height: 2px;
-      background: linear-gradient(to right, ${({ theme }) => theme.textPrimary}, transparent 50%);
+      height: 3px;
+      background: linear-gradient(to right, ${({ theme }) => theme.borderPrimary}, transparent 50%);
       border: none;
     }
   }

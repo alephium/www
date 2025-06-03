@@ -49,7 +49,7 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageSection border edgeGradient>
+          <SubpageSection edgeGradient gradientPosition="top" fullWidth>
             <TextElement isCentered>
               <h1>Grants and Funding</h1>
               <p>
