@@ -127,7 +127,7 @@ const CustomPage = (props: PageProps) => {
             </SubheaderContent>
           </SubpageSection>*/}
 
-          <SectionDivider />
+          <SectionDivider border />
 
           <SubpageImageHeroSection
             backgroundImage={ecosystemImage}
@@ -147,7 +147,7 @@ const CustomPage = (props: PageProps) => {
             </TextElement>
           </SubpageImageHeroSection>
 
-          <SubpageSection isCentered edgeGradient border>
+          <SubpageSection isCentered edgeGradient border bgColor="2" wide>
             <TextElement isCentered>
               <h2>
                 <span>Build</span> on Alephium
@@ -193,7 +193,7 @@ const CustomPage = (props: PageProps) => {
 
           <SectionDivider double />
 
-          <SubpageImageHeroSection backgroundImage={mineImage} minHeight="500px" narrow>
+          <SubpageImageHeroSection backgroundImage={mineImage} minHeight="500px">
             <h2>
               Mine ALPH.
               <small>
@@ -244,13 +244,13 @@ const GetAlphSection = () => {
 
   return (
     <>
-      <SubpageSection edgeGradient gradientPosition="top">
+      <SubpageSection edgeGradient gradientPosition="top" fullWidth>
         <TextElement isCentered>
-          <h2>
+          <h1>
             Get Started
             <br />
             with Alephium
-          </h2>
+          </h1>
           <p>
             Here&apos;s everything you need
             <br />
@@ -261,7 +261,7 @@ const GetAlphSection = () => {
 
       <SectionDivider />
 
-      <SubpageImageHeroSection backgroundImage={treasureImage} minHeight="400px" split narrow>
+      <SubpageImageHeroSection backgroundImage={treasureImage} minHeight="400px" split>
         <h2>Wallets</h2>
         <p>
           Your gateway to Alephium: <strong>store, swap, lend, and more!</strong>
@@ -271,7 +271,7 @@ const GetAlphSection = () => {
         </Button>
       </SubpageImageHeroSection>
 
-      <SectionDivider />
+      <SectionDivider border />
 
       <SubpageSection>
         <TextElement>

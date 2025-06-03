@@ -80,6 +80,10 @@ const TextElement = styled.div<TextElementProps>`
     font-size: var(--fontSize-72);
     font-weight: var(--fontWeight-semiBold);
 
+    + p {
+      font-size: var(--fontSize-26);
+    }
+
     @media ${deviceBreakPoints.mobile} {
       font-size: var(--fontSize-64);
     }
@@ -88,7 +92,7 @@ const TextElement = styled.div<TextElementProps>`
   > h2 {
     font-family: 'Geist';
     font-size: var(--fontSize-58);
-    margin-bottom: var(--spacing-4);
+    margin-bottom: var(--spacing-6);
     font-weight: var(--fontWeight-semiBold);
     color: ${({ theme }) => theme.textPrimary};
     line-height: 1;
@@ -152,7 +156,7 @@ const TextElement = styled.div<TextElementProps>`
   }
 
   > label {
-    color: ${({ theme }) => theme.background1};
+    color: ${({ theme }) => theme.textSecondary};
     font-size: var(--fontSize-14);
     font-weight: var(--fontWeight-medium);
     margin-bottom: var(--spacing-2);

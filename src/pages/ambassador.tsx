@@ -41,20 +41,16 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SectionDivider />
-
-          <SubpageSection bgColor="3" wide border edgeGradient gradientPosition="top">
+          <SubpageSection fullWidth edgeGradient gradientPosition="top">
             <TextElement isCentered>
-              <h2>
+              <h1>
                 Become an Alephium
                 <br />
                 Ambassador
-              </h2>
+              </h1>
               <p>Help us grow Alephium, one Community at a time.</p>
             </TextElement>
           </SubpageSection>
-
-          <SectionDivider double />
 
           <WhySection />
 
@@ -222,7 +218,6 @@ const WhySection = () => {
         <h2>
           Why become
           <br /> an Alephium Ambassador?
-          <hr />
         </h2>
       </TextElement>
 

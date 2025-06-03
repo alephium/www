@@ -34,6 +34,4 @@ const Page = ({ content, seo, floatingMenu = true }: CustomPageProps) => (
 
 export default Page
 
-const PageContainer = styled.main`
-  padding-top: var(--spacing-4);
-`
+const PageContainer = styled.main``

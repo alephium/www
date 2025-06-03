@@ -84,7 +84,7 @@ export default NavigationMenu
 
 const NavigationTopSpacing = styled.div`
   width: 100%;
-  height: max(8vh, 70px);
+  height: 70px;
 `
 
 const NavigationItems = ({ className }: { className?: string }) => {

@@ -47,6 +47,7 @@ const SubpageHeroSectionStyled = styled.section<SubpageHeroSectionProps>`
   align-items: stretch;
   border-radius: var(--radius-big);
   gap: ${({ split }) => (split ? 'var(--spacing-4)' : '0')};
+  flex-direction: row-reverse;
 
   &::before {
     content: '';
@@ -117,7 +118,7 @@ const HeroPageSectionContainer = styled.div<Pick<SubpageHeroSectionProps, 'align
   height: ${({ split }) => (split ? '100%' : 'auto')};
   align-self: stretch;
   border-radius: var(--radius-big);
-  background-color: ${({ theme, split }) => (split ? theme.surface2 : 'transparent')};
+  background-color: ${({ theme, split }) => (split ? theme.background2 : 'transparent')};
 
   ${({ split }) =>
     split &&

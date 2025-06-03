@@ -218,7 +218,7 @@ const CardStyled = styled(motion.div)<{
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
-  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.025);
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.05);
 
   ${({ border }) =>
     border &&

@@ -56,7 +56,7 @@ const HomepageHeroSection = () => {
 export default HomepageHeroSection
 
 const SubpageSectionStyled = styled(SubpageSection)`
-  padding-top: var(--spacing-12);
+  margin-top: var(--spacing-6);
   padding-bottom: var(--spacing-4);
   padding-right: var(--spacing-4);
   padding-left: var(--spacing-4);

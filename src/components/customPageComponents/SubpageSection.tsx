@@ -37,7 +37,7 @@ const SubpageSectionStyled = styled(PageSectionContainer)<SubpageSectionProps>`
   padding-top: ${({ noTopPadding }) => (noTopPadding ? '0' : 'var(--spacing-12)')};
   padding-bottom: ${({ noBottomPadding }) => (noBottomPadding ? '0' : 'var(--spacing-12)')};
   background-color: ${({ theme, bgColor }) => (bgColor ? theme[`background${bgColor}`] : 'transparent')};
-  border-radius: var(--radius-big);
+  border-radius: ${({ fullWidth }) => (fullWidth ? '0' : 'var(--radius-big)')};
   overflow: ${({ overflow }) => overflow || 'hidden'};
 
   @media ${deviceBreakPoints.mobile} {

@@ -109,7 +109,7 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageSection bgColor="2" wide border edgeGradient gradientPosition="top">
+          <SubpageSection fullWidth edgeGradient gradientPosition="top">
             <TextElement isCentered>
               <h1>
                 Our Wallets,
@@ -151,7 +151,7 @@ const CustomPage = (props: PageProps) => {
               </TextElement>
               <WalletCarousel images={mobileScreenshots.nodes.map((node) => node.childImageSharp?.gatsbyImageData)} />
             </SideBySide>
-            <SectionDivider />
+            <SectionDivider border />
             <SideBySide reverseOnMobile>
               <TextElement isBodySmall>
                 <h3>Desktop Wallet</h3>
@@ -177,7 +177,7 @@ const CustomPage = (props: PageProps) => {
               </TextElement>
               <WalletCarousel images={desktopScreenshots.nodes.map((node) => node.childImageSharp?.gatsbyImageData)} />
             </SideBySide>
-            <SectionDivider />
+            <SectionDivider border />
             <SideBySide reverseOnMobile>
               <TextElement isBodySmall>
                 <h3>Browser Extension Wallet</h3>
@@ -354,7 +354,7 @@ const CarouselContainer = styled.div`
   width: 100%;
   position: relative;
   margin-bottom: 20px;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: ${({ theme }) => theme.background2};
   padding: var(--spacing-2);
   padding-bottom: var(--spacing-6);
   border-radius: var(--radius);
