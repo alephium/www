@@ -74,9 +74,9 @@ const Waves = ({ parentRef }: { parentRef?: MutableRefObject<HTMLDivElement | nu
 }
 
 const waves: [WaveEntity, WaveEntity, WaveEntity] = [
-  new WaveEntity([0.0041, 0.02, 0.008], 1.5, 0.1, ['rgba(107, 255, 255, 0.7)', 'rgba(126, 255, 203, 0.1)']),
-  new WaveEntity([0.0172, 0.014, 0.005], 1.7, 0.1, ['rgba(255, 167, 248, 0.8)', 'rgba(255, 136, 245, 0.1)']),
-  new WaveEntity([0.0182, 0.022, 0.005], 1.3, 0.1, ['rgba(255, 243, 110, 0.814)', 'rgba(248, 255, 144, 0.1)'])
+  new WaveEntity([0.0041, 0.02, 0.008], 1.5, 0.1, ['rgba(107, 255, 255, 0.7)', 'rgba(126, 255, 203, 0)']),
+  new WaveEntity([0.0172, 0.014, 0.005], 1.7, 0.1, ['rgba(255, 167, 248, 0.8)', 'rgba(255, 136, 245, 0)']),
+  new WaveEntity([0.0182, 0.022, 0.005], 1.3, 0.1, ['rgba(255, 243, 110, 0.814)', 'rgba(248, 255, 144, 0)'])
 ]
 
 const CanvasContainer = styled.div`

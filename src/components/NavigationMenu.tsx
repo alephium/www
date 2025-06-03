@@ -6,6 +6,7 @@ import { RiTranslate2 } from 'react-icons/ri'
 import { RiMenu3Fill } from 'react-icons/ri'
 import styled, { css, useTheme } from 'styled-components'
 
+import useIsMobile from '../hooks/useIsMobile'
 import useOnClickOutside from '../hooks/useOnClickOutside'
 import LogoText from '../images/svgs/logo-text.svg'
 import { deviceBreakPoints } from '../styles/global-style'
@@ -28,9 +29,13 @@ const NavigationMenu = ({ className, floating = true }: NavigationMenuProps) => 
   const [isHidden, setIsHidden] = useState(false)
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const isMobile = useIsMobile()
 
   useEffect(() => {
     const handleScroll = throttle(() => {
+      console.log('isMobile', isMobile)
+      if (!isMobile) return
+
       const currentScrollY = window.scrollY
       setScrolled(currentScrollY > 100)
 
@@ -192,8 +197,8 @@ const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean; scr
   height: 72px;
   z-index: 10000;
   transition: top 0.3s ease-in-out;
-  backdrop-filter: blur(100px) brightness(${({ scrolled }) => (scrolled ? '30%' : '100%')});
-  border-bottom: 1px solid ${({ theme, scrolled }) => (scrolled ? theme.borderPrimary : 'transparent')};
+  background-color: ${({ theme }) => theme.background1};
+  border-bottom: 1px solid ${({ theme }) => theme.borderPrimary};
 
   ${({ floating }) =>
     !floating &&
@@ -257,9 +262,12 @@ const LinkStyled = styled(Link)`
 
 const LogoTextStyled = styled(LogoText)`
   height: 24px;
-  fill: ${({ theme }) => theme.textPrimary};
   width: auto;
   transform: translateY(2px);
+
+  * {
+    fill: ${({ theme }) => theme.textPrimary} !important;
+  }
 `
 
 const LinkStyle = css`

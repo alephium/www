@@ -1,3 +1,4 @@
+import { colord } from 'colord'
 import { motion, useMotionValue, useSpring, useTransform, Variants } from 'framer-motion'
 import { PointerEvent, ReactNode, useEffect, useRef } from 'react'
 import styled, { css } from 'styled-components'
@@ -121,38 +122,20 @@ const Card = ({ children, url, isAnimated, border, bgColor }: CardProps) => {
   )
 }
 
-const cardStyles = ({ border, bgColor }: { border?: boolean; bgColor?: TextCardProps['bgColor'] }) => css`
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  border-radius: var(--radius);
-  background-color: ${({ theme }) => (bgColor ? theme[bgColor] : theme.background2)};
-  text-decoration: none;
-  transition: all 0.1s ease-out;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
-
-  ${border &&
-  css`
-    border: 1px solid ${({ theme }) => theme.borderPrimary};
-  `}
-`
-
 const GradientBorder = styled.div`
   position: absolute;
   inset: -1px;
   border-radius: var(--radius);
   background: radial-gradient(
     circle at var(--gradient-x) var(--gradient-y),
-    ${({ theme }) => theme.borderPrimary} 30%,
+    ${({ theme }) => theme.borderPrimary} 20%,
     ${({ theme }) => theme.palette2} 35%,
     ${({ theme }) => theme.palette1} 40%,
     ${({ theme }) => theme.palette4} 50%,
     ${({ theme }) => theme.palette3} 60%,
-    ${({ theme }) => theme.borderPrimary} 70%
+    ${({ theme }) => theme.borderPrimary} 90%
   );
+  filter: saturate(110%) brightness(1.1);
   opacity: 0;
   pointer-events: none;
   z-index: -1;
@@ -161,23 +144,12 @@ const GradientBorder = styled.div`
   &::before {
     content: '';
     position: absolute;
-    inset: 2px;
+    inset: 3px;
     border-radius: calc(var(--radius) - 2px);
-    background: rgba(0, 0, 0, 0.8);
+    background-color: ${({ theme }) => colord(theme.background1).alpha(1).toHex()};
     backdrop-filter: blur(100px) saturate(180%);
     -webkit-backdrop-filter: blur(100px) saturate(180%);
     z-index: 0;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    inset: 2px;
-    border-radius: calc(var(--radius) - 2px);
-    background: rgba(19, 19, 19, 0.8);
-    opacity: 0;
-    transition: opacity 0.1s ease;
-    z-index: -1;
   }
 `
 
@@ -235,13 +207,30 @@ const CardStyled = styled(motion.div)<{
   border?: boolean
   bgColor?: TextCardProps['bgColor']
 }>`
-  ${({ border, bgColor }) => cardStyles({ border, bgColor })}
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  border-radius: var(--radius);
+  background-color: ${({ theme, bgColor }) => (bgColor ? theme[bgColor] : theme.background2)};
+  text-decoration: none;
+  transition: all 0.1s ease-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.025);
+
+  ${({ border }) =>
+    border &&
+    css`
+      box-shadow: inset 0 0 0 1px ${({ theme }) => theme.borderPrimary}, 0 10px 30px 0 rgba(0, 0, 0, 0.025);
+    `}
+
   ${({ url }) => url && 'transform-style: preserve-3d;'}
   width: 100%;
   height: 100%;
   position: relative;
   overflow: hidden;
-  box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.05);
 
   @media ${deviceBreakPoints.mobile} {
     & + & {

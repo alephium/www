@@ -183,7 +183,6 @@ export default styled(SimpleLinkComponent)`
 
   &:hover {
     cursor: pointer;
-    filter: brightness(1.3);
     opacity: 1;
     color: ${({ theme }) => theme.textPrimary};
     transition: all 0.1s ease-out;

@@ -184,7 +184,7 @@ const HomepageNumbersSection = () => {
   ]
 
   return (
-    <SubpageSection>
+    <SubpageSection overflow="visible">
       <TextElement>
         <h2>Some Numbers.</h2>
         <p>Let the facts speak for themselves.</p>
@@ -257,10 +257,10 @@ const BorderedBox = styled.div`
   background-color: ${({ theme }) => theme.background2};
   padding: var(--spacing-11);
   padding-bottom: var(--spacing-16);
-  box-shadow: 0 50px 50px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   position: relative;
   min-height: 200px;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.05);
 `
 
 const RealTimeLabel = styled.div`

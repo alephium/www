@@ -120,7 +120,7 @@ const HomepageIntroSection = () => {
   )
 
   return (
-    <SubpageSectionStyled id="intro">
+    <SubpageSectionStyled id="intro" noTopPadding overflow="visible">
       {/* <TextElement isCentered>
         <h2>
           A Network Built

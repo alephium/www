@@ -19,6 +19,7 @@ interface ButtonProps {
   disabled?: boolean
   children?: ReactNode
   highlight?: boolean
+  invert?: boolean
 }
 
 const Button = ({ onClick, className, children, url, disabled, highlight, squared }: ButtonProps) => {
@@ -154,8 +155,9 @@ const ArrowStyled = styled(Arrow)<{ isExternal?: boolean }>`
 `
 
 const StyledButton = styled(Button)`
-  background-color: ${({ theme }) => colord(theme.textPrimary).alpha(0.9).toHex()};
-  color: ${({ theme }) => colord(theme.textPrimary).invert().toHex()};
+  background-color: ${({ theme, invert }) =>
+    invert ? theme.background1 : colord(theme.textPrimary).alpha(0.9).toHex()};
+  color: ${({ theme, invert }) => (invert ? theme.textPrimary : colord(theme.textPrimary).invert().toHex())};
   --gradient-x: 50%;
   --gradient-y: 50%;
   border-radius: ${({ squared }) => getBorderRadius(squared)};
@@ -198,6 +200,8 @@ const StyledButton = styled(Button)`
   ${({ highlight }) =>
     highlight &&
     css`
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+
       &:hover {
         &::after {
           opacity: 0.5;

@@ -1,5 +1,5 @@
 import { graphql, PageProps } from 'gatsby'
-import styled from 'styled-components'
+import styled, { useTheme } from 'styled-components'
 
 import Button from '../components/Button'
 import Page from '../components/customPageComponents/Page'
@@ -9,7 +9,7 @@ import HomepageCommunitySection from '../components/pages/homepage/HomepageCommu
 import HomepageEcosystemSection from '../components/pages/homepage/HomepageEcosystemSection'
 import HomepageHeroSection from '../components/pages/homepage/HomepageHeroSection'
 import HomepageIntroSection from '../components/pages/homepage/HomepageIntroSection'
-import HomepageNewsSection from '../components/pages/homepage/HomepageNewsSection'
+import HomepageNewsPopup from '../components/pages/homepage/HomepageNewsPopup'
 import HomepageNumbersSection from '../components/pages/homepage/HomepageNumbersSection'
 import HomepageUSPSection from '../components/pages/homepage/HomepageUSPSection'
 import SectionDivider from '../components/SectionDivider'
@@ -25,7 +25,12 @@ export const pageQuery = graphql`
         }
       }
     }
-    seaImage: file(relativePath: { eq: "sea-night.png" }) {
+    seaImageNight: file(relativePath: { eq: "sea-night.png" }) {
+      childImageSharp {
+        gatsbyImageData(quality: 100)
+      }
+    }
+    seaImageDay: file(relativePath: { eq: "sea-day.png" }) {
       childImageSharp {
         gatsbyImageData(quality: 100)
       }
@@ -33,62 +38,71 @@ export const pageQuery = graphql`
   }
 `
 
-const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => {
-  const seaImage = props.data.seaImage?.childImageSharp?.gatsbyImageData
+const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => (
+  <Page
+    {...props}
+    seo={{
+      title: 'Alephium | The Web3 you were promised',
+      description:
+        'Alephium is the next generation PoW Layer 1 with smart contracts. Built for speed, security, and sustainability. Start building or join the community today.'
+    }}
+    content={
+      <>
+        <HomepageNewsPopup />
+
+        <HomepageHeroSection />
+
+        <HomepageIntroSection />
+
+        <HomepageUSPSection />
+
+        <SectionDivider double />
+
+        <HomepageNumbersSection />
+
+        <HomepageEcosystemSection />
+
+        <SectionDivider border />
+
+        <HomepageCommunitySection />
+
+        <SectionDivider />
+
+        <BottomSection {...props} />
+      </>
+    }
+  />
+)
+
+const BottomSection = (props: PageProps<Queries.IndexPageQuery>) => {
+  const theme = useTheme()
+
+  const seaImage =
+    theme.name === 'dark'
+      ? props.data.seaImageNight?.childImageSharp?.gatsbyImageData
+      : props.data.seaImageDay?.childImageSharp?.gatsbyImageData
 
   return (
-    <Page
-      {...props}
-      seo={{
-        title: 'Alephium | The Web3 you were promised',
-        description:
-          'Alephium is the next generation PoW Layer 1 with smart contracts. Built for speed, security, and sustainability. Start building or join the community today.'
-      }}
-      content={
-        <>
-          <HomepageHeroSection />
-
-          <HomepageNewsSection />
-
-          <HomepageIntroSection />
-
-          <HomepageUSPSection />
-
-          <SectionDivider double />
-
-          <HomepageNumbersSection />
-
-          <HomepageEcosystemSection />
-
-          <SectionDivider border />
-
-          <HomepageCommunitySection />
-
-          <SectionDivider />
-
-          <BottomSection>
-            <BottomBackgroundImageContainer>
-              <GatsbyImageWrapper image={seaImage} alt="Sea" />
-            </BottomBackgroundImageContainer>
-            <TextElement isCentered>
-              <h1>
-                It&apos;s time
-                <br />
-                to make waves.
-              </h1>
-              <p>
-                Alephium isn&apos;t just a vision, it&apos;s a fast growing ecosystem.
-                <br />
-                <strong>There&apos;s a place for you here and we can&apos;t wait to meet you.</strong>
-              </p>
-              <Button big highlight url="/get-started">
-                Get started
-              </Button>
-            </TextElement>
-          </BottomSection>
-        </>
-      }
-    />
+    <BottomSectionStyled>
+      <BottomBackgroundImageContainer>
+        <GatsbyImageWrapper image={seaImage} alt="Sea" />
+      </BottomBackgroundImageContainer>
+      <TextElement isCentered>
+        <h1>
+          It&apos;s time
+          <br />
+          to make waves.
+        </h1>
+        <p>
+          Alephium isn&apos;t just a vision, it&apos;s a fast growing ecosystem.
+          <br />
+          <strong>There&apos;s a place for you here and we can&apos;t wait to meet you.</strong>
+        </p>
+        <Button big highlight url="/get-started">
+          Get started
+        </Button>
+      </TextElement>
+    </BottomSectionStyled>
   )
 }
 
@@ -97,10 +111,10 @@ export default IndexPage
 const BottomBackgroundImageContainer = styled.div`
   position: absolute;
   inset: 0;
-  opacity: 0.5;
+  opacity: 0.7;
 `
 
-const BottomSection = styled.div`
+const BottomSectionStyled = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;

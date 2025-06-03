@@ -108,7 +108,7 @@ export const StyledToggle = styled(motion.div)<Omit<ToggleProps, 'onToggle' | 't
   overflow: hidden;
   cursor: pointer;
   box-sizing: content-box;
-  border: 1px solid ${({ theme }) => theme.textPrimary};
+  border: 1px solid ${({ theme }) => theme.borderPrimary};
 
   &:focus {
     outline: none;

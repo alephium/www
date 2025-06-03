@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby'
 import { FC, useEffect, useRef, useState } from 'react'
-import styled from 'styled-components'
+import styled, { useTheme } from 'styled-components'
 
 import useIsMobile from '../hooks/useIsMobile'
 import GatsbyImageWrapper from './GatsbyImageWrapper'
@@ -54,19 +54,11 @@ export interface MeshGradientEffectProps {
   color4?: [number, number, number]
 }
 
-const MeshGradientEffect: FC<MeshGradientEffectProps> = ({
-  contrast = 1.3,
-  brightness = 0.8,
-  blendMode = 'screen',
-  speed = 0.25,
-  color1 = hexToRgb01('#ffffaa'),
-  color2 = hexToRgb01('#57d4e1'),
-  color3 = hexToRgb01('#ff99ff'),
-  color4 = hexToRgb01('#99a3ff')
-}) => {
+const MeshGradientEffect: FC<MeshGradientEffectProps> = ({ contrast = 1.3, brightness = 0.8, speed = 0.25 }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const [isWebGLReady, setIsWebGLReady] = useState(false)
   const isMobile = useIsMobile()
+  const theme = useTheme()
 
   const data = useStaticQuery(backgroundQuery)
 
@@ -78,10 +70,10 @@ const MeshGradientEffect: FC<MeshGradientEffectProps> = ({
       return
     }
 
-    const [r1, g1, b1] = color1
-    const [r2, g2, b2] = color2
-    const [r3, g3, b3] = color3
-    const [r4, g4, b4] = color4
+    const [r1, g1, b1] = hexToRgb01(theme.palette1)
+    const [r2, g2, b2] = hexToRgb01(theme.palette2)
+    const [r3, g3, b3] = hexToRgb01(theme.palette3)
+    const [r4, g4, b4] = hexToRgb01(theme.palette4)
     const gl = canvas.getContext('webgl')
     if (!gl) {
       return
@@ -292,8 +284,8 @@ const MeshGradientEffect: FC<MeshGradientEffectProps> = ({
       const now = performance.now() * 0.001
       gl.uniform1f(uTime, now)
       gl.uniform1f(uSpeed, speed)
-      gl.uniform1f(uContr, contrast)
-      gl.uniform1f(uBright, brightness)
+      gl.uniform1f(uContr, theme.name === 'dark' ? 1.3 : 0.7)
+      gl.uniform1f(uBright, theme.name === 'dark' ? 0.8 : 1.3)
       gl.drawElements(gl.TRIANGLES, indices.length, gl.UNSIGNED_SHORT, 0)
       requestAnimationFrame(render)
     }
@@ -305,7 +297,7 @@ const MeshGradientEffect: FC<MeshGradientEffectProps> = ({
       window.removeEventListener('resize', updateSize)
       setIsWebGLReady(false)
     }
-  }, [isMobile, contrast, brightness, speed, color1, color2, color3, color4])
+  }, [isMobile, contrast, brightness, speed, theme.palette1, theme.palette2, theme.palette3, theme.palette4])
 
   return (
     <>

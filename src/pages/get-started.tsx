@@ -86,10 +86,6 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SectionDivider />
-
-          <SectionDivider />
-
           <GetAlphSection />
 
           {/*<EarnALPHSection />*/}

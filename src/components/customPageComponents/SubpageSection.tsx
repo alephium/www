@@ -19,6 +19,7 @@ interface SubpageSectionProps extends HTMLAttributes<HTMLDivElement> {
   gradientPosition?: GradientPosition
   noTopPadding?: boolean
   noBottomPadding?: boolean
+  overflow?: 'hidden' | 'visible'
 }
 
 const SubpageSection = ({ children, Parallax, ...props }: SubpageSectionProps) => (
@@ -30,19 +31,14 @@ const SubpageSection = ({ children, Parallax, ...props }: SubpageSectionProps) =
 
 export default SubpageSection
 
-const SubpageSectionStyled = styled(PageSectionContainer)<
-  Pick<
-    SubpageSectionProps,
-    'bgColor' | 'isCentered' | 'border' | 'edgeGradient' | 'gradientPosition' | 'noBottomPadding' | 'noTopPadding'
-  >
->`
+const SubpageSectionStyled = styled(PageSectionContainer)<SubpageSectionProps>`
   position: relative;
   justify-content: ${({ isCentered }) => (isCentered ? 'center' : 'flex-start')};
   padding-top: ${({ noTopPadding }) => (noTopPadding ? '0' : 'var(--spacing-12)')};
   padding-bottom: ${({ noBottomPadding }) => (noBottomPadding ? '0' : 'var(--spacing-12)')};
   background-color: ${({ theme, bgColor }) => (bgColor ? theme[`background${bgColor}`] : 'transparent')};
   border-radius: var(--radius-big);
-  overflow: hidden;
+  overflow: ${({ overflow }) => overflow || 'hidden'};
 
   @media ${deviceBreakPoints.mobile} {
     padding: var(--spacing-8) var(--spacing-4);
@@ -90,7 +86,6 @@ const SubpageSectionStyled = styled(PageSectionContainer)<
           rgba(0, 0, 0, 0) 100%
         );
         pointer-events: none;
-        mix-blend-mode: screen;
         filter: blur(70px) saturate(1.7) brightness(1.1);
       }
     `}
