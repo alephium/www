@@ -25,7 +25,9 @@ const SubpageHeroSection = forwardRef<HTMLElement, SubpageHeroSectionProps>(func
       <BackgroundMediaWrapper split={split}>{mediaContent}</BackgroundMediaWrapper>
       <HeroPageSectionContainer alignContent={alignContent} split={split}>
         <ContentWrapper alignContent={alignContent} split={split}>
-          <TextElementStyled split={split}>{children}</TextElementStyled>
+          <TextElementStyled split={split} isCentered={alignContent === 'center'}>
+            {children}
+          </TextElementStyled>
         </ContentWrapper>
       </HeroPageSectionContainer>
     </SubpageHeroSectionStyled>
@@ -111,7 +113,7 @@ const HeroPageSectionContainer = styled.div<Pick<SubpageHeroSectionProps, 'align
   flex-direction: column;
   position: relative;
   display: flex;
-  flex: ${({ alignContent }) => (alignContent === 'center' ? 'none' : '1')};
+  flex: 1;
   justify-content: ${({ alignContent }) =>
     alignContent === 'bottom' ? 'flex-end' : alignContent === 'center' ? 'center' : 'flex-start'};
   height: ${({ split }) => (split ? '100%' : 'auto')};
@@ -139,6 +141,12 @@ const ContentWrapper = styled.div<Pick<SubpageHeroSectionProps, 'alignContent' |
   margin-top: 5%;
   margin-bottom: 5%;
   margin-left: 5%;
+  ${({ alignContent }) =>
+    alignContent === 'center' &&
+    css`
+      margin: auto;
+    `}
+
   display: flex;
   flex-direction: column;
   z-index: 2;

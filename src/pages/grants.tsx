@@ -204,7 +204,7 @@ const CustomPage = (props: PageProps) => {
                 <TextCard border>
                   <TextCardContent>
                     <TextElement>
-                      <CardImage image={blockflowDAOLogo?.childImageSharp?.gatsbyImageData} />
+                      <CardImageStyled image={blockflowDAOLogo?.childImageSharp?.gatsbyImageData} />
                       <h4>Blockflow DAO</h4>
                       <p>
                         The Alephium DAO offers its own community-driven grants to support ecosystem growth. These
@@ -221,7 +221,7 @@ const CustomPage = (props: PageProps) => {
                 <TextCard border>
                   <TextCardContent>
                     <TextElement>
-                      <CardImage src={primevaultLogo?.publicURL ?? ''} />
+                      <CardImageStyled src={primevaultLogo?.publicURL ?? ''} />
                       <h4>Primevault</h4>
                       <p>
                         In partnership with Primevault, projects building on Alephium can access free platform credits
@@ -238,7 +238,7 @@ const CustomPage = (props: PageProps) => {
                 <TextCard border>
                   <TextCardContent>
                     <TextElement>
-                      <CardImage image={contribiumLogo?.childImageSharp?.gatsbyImageData} />
+                      <CardImageStyled image={contribiumLogo?.childImageSharp?.gatsbyImageData} />
                       <h4>Contribium</h4>
                       <p>
                         The Alephium Foundation also collaborates with Contribium, a platform for bounties and small
@@ -383,4 +383,7 @@ const ProjectTypesGrid = styled(Grid)`
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+`
+const CardImageStyled = styled(CardImage)`
+  filter: ${({ theme }) => (theme.name === 'light' ? 'invert(1)' : 'none')};
 `

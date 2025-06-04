@@ -6,26 +6,28 @@ import GatsbyImageWrapper from '../GatsbyImageWrapper'
 interface CardImageProps {
   image?: IGatsbyImageData
   src?: string
+  className?: string
 }
 
-const CardImage = ({ image, src }: CardImageProps) => {
+const CardImage = ({ image, src, className }: CardImageProps) => {
   if (!src && !image) return null
 
   return (
     <>
-      <CardImageStyled>
+      <CardImageStyled className={className}>
         {image ? (
           <>
             <GatsbyImageWrapper
               image={image}
               style={{ height: '100%' }}
               objectFit="contain"
+              objectPosition="left"
               loading="lazy"
               alt="Card image"
             />
           </>
         ) : (
-          <img src={src} alt="Card image" style={{ objectFit: 'contain' }} />
+          <img src={src} alt="Card image" style={{ objectFit: 'contain', objectPosition: 'left' }} />
         )}
       </CardImageStyled>
     </>
@@ -34,7 +36,7 @@ const CardImage = ({ image, src }: CardImageProps) => {
 
 export default CardImage
 
-const CardImageStyled = styled.div`
+const CardImageStyled = styled.div<{ className?: string }>`
   position: relative;
   width: 100%;
   height: 150px;
