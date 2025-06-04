@@ -83,7 +83,7 @@ const HomepageUSPSection = () => {
         </p>
       </TextElementStyled>
 
-      <CardsHorizontalScroller cardWidth={CARD_WIDTH} cardGap={CARD_GAP} animateCards>
+      <CardsHorizontalScroller cardWidth={CARD_WIDTH} cardGap={CARD_GAP} animateCards additionalLeftPadding>
         <TextCard border>
           <TextCardContent>
             <TextElement>
