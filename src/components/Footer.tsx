@@ -110,7 +110,6 @@ const FooterStyled = styled.div`
       circle at 0% 0%,
       transparent 0%,
       transparent 10%,
-      ${({ theme }) => theme.textPrimary} 20%,
       ${({ theme }) => theme.palette4} 25%,
       ${({ theme }) => theme.palette6} 30%,
       ${({ theme }) => theme.palette1} 40%,

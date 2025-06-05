@@ -1,3 +1,4 @@
+import { colord } from 'colord'
 import { useEffect, useRef, useState } from 'react'
 import styled from 'styled-components'
 
@@ -207,7 +208,7 @@ const HomepageEcosystemSection = () => {
               if (!position) return null
               const parallaxX = position.depth ? currentOffsetRef.current.x * position.depth : 0
               const parallaxY = position.depth ? currentOffsetRef.current.y * position.depth : 0
-              const blurAmount = Math.max((1 - position.depth) * 5, 0)
+              const blurAmount = Math.max((1 - position.depth) * 3, 0)
               return (
                 <LogoWrapper
                   key={dapp.name + index}
@@ -283,7 +284,6 @@ const LogoWrapper = styled.div`
     height: 100%;
     object-fit: contain;
     border-radius: 50%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
     background-color: ${({ theme }) => theme.background2};
   }
 `
@@ -293,8 +293,8 @@ const AppTooltip = styled.div`
   bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: ${({ theme }) => theme.background2};
-  color: ${({ theme }) => theme.textPrimary};
+  background-color: ${({ theme }) => theme.textPrimary};
+  color: ${({ theme }) => theme.background2};
   padding: 4px 8px;
   border-radius: 4px;
   font-size: 0.9rem;
@@ -303,7 +303,6 @@ const AppTooltip = styled.div`
   opacity: 1;
   transition: opacity 0.2s ease-out;
   margin-bottom: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   z-index: 1000;
 
   &::after {
@@ -327,6 +326,9 @@ const CenterButtonWrapper = styled.div`
   position: absolute;
   left: 50%;
   top: 50%;
+  padding: 30px;
+  backdrop-filter: blur(30px) saturate(180%) brightness(1.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
   transform: translate(-50%, -50%);
   z-index: 1000;
   display: flex;
@@ -335,5 +337,5 @@ const CenterButtonWrapper = styled.div`
   justify-content: center;
   gap: var(--spacing-2);
   border-radius: 100px;
-  box-shadow: 0 0px 30px 30px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0px 30px 10px ${({ theme }) => colord(theme.textPrimary).alpha(0.3).toHex()};
 `

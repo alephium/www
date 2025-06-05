@@ -1,28 +1,17 @@
-import { Link } from 'gatsby'
-import styled, { ThemeProvider } from 'styled-components'
+import { Link, PageProps } from 'gatsby'
+import styled from 'styled-components'
 
-import HeroImage from '../components/Hero/HeroImage'
-import HeroLogo from '../components/Hero/HeroLogo'
-import NavigationMenu from '../components/NavigationMenu'
+import Page from '../components/customPageComponents/Page'
 import PageSectionContainer from '../components/PageSectionContainer'
 import TextSnippet from '../components/TextSnippet'
-import GlobalStyle from '../styles/global-style'
-import { darkTheme } from '../styles/themes'
 
-const NotFoundPage = () => (
-  <ThemeProvider theme={darkTheme}>
-    <GlobalStyle />
-    <main style={{ height: '100vh' }}>
-      <HeroImage layer="back" slide={0} parallaxSpeed={12} />
-      <HeroImage layer="middle" slide={0} parallaxSpeed={8} />
-      <HeroImage layer="front" slide={0} parallaxSpeed={2} />
-      <PageSectionContainer>
-        <div className="navigation-menu-wrapper">
-          <NavigationMenu />
-        </div>
+const NotFoundPage = (props: PageProps) => (
+  <Page
+    {...props}
+    content={
+      <Container>
         <CenteredContainer>
           <div className="contents">
-            <HeroLogo gradientIndex={0} />
             <h1>404</h1>
             <h2>Oops! Looks like this block got orphaned...</h2>
 
@@ -31,9 +20,9 @@ const NotFoundPage = () => (
             </TextSnippetStyled>
           </div>
         </CenteredContainer>
-      </PageSectionContainer>
-    </main>
-  </ThemeProvider>
+      </Container>
+    }
+  />
 )
 
 export default NotFoundPage
@@ -45,6 +34,10 @@ const TextSnippetStyled = styled(TextSnippet)`
     color: ${({ theme }) => theme.textPrimary};
     text-decoration: none;
   }
+`
+
+const Container = styled(PageSectionContainer)`
+  height: 70vh;
 `
 
 const CenteredContainer = styled.div`

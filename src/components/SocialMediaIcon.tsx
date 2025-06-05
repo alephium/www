@@ -46,8 +46,11 @@ export default styled(SocialMediaIcon)`
   svg {
     width: 60px;
     height: 60px;
-    fill: ${({ theme }) => theme.textPrimary};
     opacity: 0.8;
+
+    * {
+      fill: ${({ theme }) => theme.textPrimary} !important;
+    }
   }
 
   transition: all 0.1s ease-out;

@@ -295,7 +295,7 @@ const ExchangeItem = styled.div`
   transition: all 0.2s ease-out;
 
   &:hover {
-    background-color: ${({ theme }) => theme.surface2};
+    background-color: ${({ theme }) => theme.background1};
   }
 `
 

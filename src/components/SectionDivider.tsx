@@ -10,6 +10,8 @@ const SectionDivider = styled.div<SectionDividerProps>`
     border
       ? css`
           height: 1px;
+          margin-top: var(--spacing-14);
+          margin-bottom: var(--spacing-14);
           background-color: ${({ theme }) => theme.separator};
           width: 100%;
         `

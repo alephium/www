@@ -72,7 +72,7 @@ const HomepageUSPSection = () => {
   const { totalTransactions } = statsScalarData
 
   return (
-    <SubpageSectionStyled wide edgeGradient gradientPosition="bottom-left">
+    <SubpageSectionStyled wide edgeGradient gradientPosition="bottom-left" border bgColor="1">
       <TextElementStyled>
         <h2>Web3, done right.</h2>
         <p>
@@ -83,7 +83,7 @@ const HomepageUSPSection = () => {
         </p>
       </TextElementStyled>
 
-      <CardsHorizontalScroller cardWidth={CARD_WIDTH} cardGap={CARD_GAP} animateCards>
+      <CardsHorizontalScroller cardWidth={CARD_WIDTH} cardGap={CARD_GAP} animateCards additionalLeftPadding>
         <TextCard border>
           <TextCardContent>
             <TextElement>
@@ -234,6 +234,7 @@ const SubpageSectionStyled = styled(SubpageSection)`
 
 const TextElementStyled = styled(TextElement)`
   width: var(--page-width);
+  padding: 0 var(--spacing-4);
   margin: 0 auto;
 `
 

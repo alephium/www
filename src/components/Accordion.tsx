@@ -50,7 +50,7 @@ const AccordionHeader = styled.div<{ isOpen: boolean }>`
   justify-content: space-between;
   align-items: center;
   padding: var(--spacing-1) var(--spacing-3);
-  background-color: ${({ theme, isOpen }) => (isOpen ? theme.surface1 : theme.surface2)};
+  background-color: ${({ theme, isOpen }) => (isOpen ? theme.background1 : theme.background2)};
   cursor: pointer;
   transition: background-color 0.2s ease;
 

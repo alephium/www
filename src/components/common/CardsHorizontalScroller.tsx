@@ -8,6 +8,7 @@ interface CardsHorizontalScrollerProps {
   children: React.ReactNode
   cardWidth?: number
   cardGap?: number
+  additionalLeftPadding?: boolean
   animateCards?: boolean
 }
 
@@ -31,7 +32,8 @@ const CardsHorizontalScroller = ({
   children,
   cardWidth = CARD_WIDTH,
   cardGap = CARD_GAP,
-  animateCards = false
+  animateCards = false,
+  additionalLeftPadding = false
 }: CardsHorizontalScrollerProps) => {
   const scrollContainerRef = useRef<HTMLDivElement>(null)
   const [canScrollLeft, setCanScrollLeft] = useState(false)
@@ -81,7 +83,12 @@ const CardsHorizontalScroller = ({
 
   return (
     <StatsContainer>
-      <CardsScroll ref={scrollContainerRef} $showLeftMask={showLeftMask} $showRightMask={showRightMask}>
+      <CardsScroll
+        ref={scrollContainerRef}
+        $showLeftMask={showLeftMask}
+        $showRightMask={showRightMask}
+        $additionalLeftPadding={additionalLeftPadding}
+      >
         {React.Children.map(children, (child, index) => (
           <CardContainer
             custom={index}
@@ -113,7 +120,29 @@ const StatsContainer = styled.div`
   position: relative;
 `
 
-const CardsScroll = styled.div<{ $showLeftMask: boolean; $showRightMask: boolean }>`
+const CardContainer = styled(motion.div)`
+  flex: 0 0 ${CARD_WIDTH}px;
+  scroll-snap-align: start;
+  position: relative;
+  z-index: 0;
+
+  @media ${deviceBreakPoints.mobile} {
+    flex: 0 0 ${CARD_WIDTH / 1.3}px;
+  }
+
+  &:last-child {
+    margin-right: var(--spacing-4);
+  }
+
+  &:hover {
+    filter: saturate(160%);
+  }
+  > div {
+    height: 100%;
+  }
+`
+
+const CardsScroll = styled.div<{ $showLeftMask: boolean; $showRightMask: boolean; $additionalLeftPadding: boolean }>`
   display: flex;
   gap: ${CARD_GAP}px;
   overflow-x: auto;
@@ -150,6 +179,13 @@ const CardsScroll = styled.div<{ $showLeftMask: boolean; $showRightMask: boolean
       black 20px,
       black calc(100% - 20px),
       ${(props) => (props.$showRightMask ? 'transparent' : 'black')}
+    );
+  }
+
+  ${CardContainer}:first-child {
+    padding-left: max(
+      calc((100% - var(--page-width)) + var(--spacing-4)),
+      ${(props) => (props.$additionalLeftPadding ? 'var(--spacing-4)' : '0')}
     );
   }
 
@@ -202,32 +238,6 @@ const ScrollButton = styled.button`
 
   &:active {
     transform: scale(0.95);
-  }
-`
-
-const CardContainer = styled(motion.div)`
-  flex: 0 0 ${CARD_WIDTH}px;
-  scroll-snap-align: start;
-  position: relative;
-  z-index: 0;
-
-  @media ${deviceBreakPoints.mobile} {
-    flex: 0 0 ${CARD_WIDTH / 1.3}px;
-  }
-
-  &:first-child {
-    padding-left: calc((100% - var(--page-width)));
-  }
-
-  &:last-child {
-    margin-right: var(--spacing-4);
-  }
-
-  &:hover {
-    filter: saturate(160%);
-  }
-  > div {
-    height: 100%;
   }
 `
 

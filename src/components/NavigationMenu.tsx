@@ -6,6 +6,7 @@ import { RiTranslate2 } from 'react-icons/ri'
 import { RiMenu3Fill } from 'react-icons/ri'
 import styled, { css, useTheme } from 'styled-components'
 
+import useIsMobile from '../hooks/useIsMobile'
 import useOnClickOutside from '../hooks/useOnClickOutside'
 import LogoText from '../images/svgs/logo-text.svg'
 import { deviceBreakPoints } from '../styles/global-style'
@@ -13,6 +14,7 @@ import { notEmpty } from '../utils/misc'
 import NavigationMenuSocials from './navigation/NavigationMenuSocials'
 import MobileNavigationMenu, { ToggleMobileNavButton } from './NavigationMenuMobile'
 import SimpleLink from './SimpleLink'
+import ThemeToggle from './ThemeToggle'
 import TranslateComponent from './TranslateComponent'
 
 interface NavigationMenuProps {
@@ -27,9 +29,12 @@ const NavigationMenu = ({ className, floating = true }: NavigationMenuProps) => 
   const [isHidden, setIsHidden] = useState(false)
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const isMobile = useIsMobile()
 
   useEffect(() => {
     const handleScroll = throttle(() => {
+      if (!isMobile) return
+
       const currentScrollY = window.scrollY
       setScrolled(currentScrollY > 100)
 
@@ -78,7 +83,7 @@ export default NavigationMenu
 
 const NavigationTopSpacing = styled.div`
   width: 100%;
-  height: max(8vh, 70px);
+  height: 70px;
 `
 
 const NavigationItems = ({ className }: { className?: string }) => {
@@ -113,7 +118,7 @@ const NavigationItems = ({ className }: { className?: string }) => {
             )
         )}
       </MenuItems>
-      {/*<ThemeToggle />*/}
+      <ThemeToggle />
       <NavigationDrawer Icon={<RiTranslate2 color={theme.textSecondary} size={20} />}>
         <TranslateComponent />
       </NavigationDrawer>
@@ -191,8 +196,8 @@ const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean; scr
   height: 72px;
   z-index: 10000;
   transition: top 0.3s ease-in-out;
-  backdrop-filter: blur(100px) brightness(${({ scrolled }) => (scrolled ? '30%' : '100%')});
-  border-bottom: 1px solid ${({ theme, scrolled }) => (scrolled ? theme.borderPrimary : 'transparent')};
+  background-color: ${({ theme }) => theme.background1};
+  border-bottom: 1px solid ${({ theme }) => theme.borderPrimary};
 
   ${({ floating }) =>
     !floating &&
@@ -256,9 +261,12 @@ const LinkStyled = styled(Link)`
 
 const LogoTextStyled = styled(LogoText)`
   height: 24px;
-  fill: ${({ theme }) => theme.textPrimary};
   width: auto;
   transform: translateY(2px);
+
+  * {
+    fill: ${({ theme }) => theme.textPrimary} !important;
+  }
 `
 
 const LinkStyle = css`
@@ -308,7 +316,7 @@ const Drawer = styled(motion.div)`
   background-color: ${({ theme }) => theme.background1};
   border-radius: var(--radius-small);
   border: 1px solid ${({ theme }) => theme.borderPrimary};
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   z-index: 1000;

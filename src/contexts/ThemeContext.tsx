@@ -19,19 +19,46 @@ export const useTheme = () => {
 }
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
-  const [theme, setTheme] = useState<ThemeType>('dark')
+  const [theme, setTheme] = useState<ThemeType>(() => {
+    // Check if we're in a browser environment
+    if (typeof window !== 'undefined') {
+      const savedTheme = localStorage.getItem('theme') as ThemeType
+      if (savedTheme) return savedTheme
+
+      // If no saved theme, use system preference
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+    }
+
+    return 'light'
+  })
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme') as ThemeType
-    if (savedTheme) {
-      setTheme(savedTheme)
+    // Only run in browser environment otherwise Gatsby will complain when building
+    if (typeof window === 'undefined') return
+
+    // Listen for system theme changes
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+
+    const handleChange = (e: MediaQueryListEvent) => {
+      const newTheme = e.matches ? 'dark' : 'light'
+      setTheme(newTheme)
+      localStorage.setItem('theme', newTheme)
+    }
+
+    mediaQuery.addEventListener('change', handleChange)
+
+    return () => {
+      mediaQuery.removeEventListener('change', handleChange)
     }
   }, [])
 
   const toggleTheme = () => {
     const newTheme = theme === 'dark' ? 'light' : 'dark'
     setTheme(newTheme)
-    localStorage.setItem('theme', newTheme)
+    // Only set localStorage in browser environment
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('theme', newTheme)
+    }
   }
 
   const currentTheme = theme === 'dark' ? darkTheme : lightTheme

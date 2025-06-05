@@ -11,13 +11,20 @@ interface ImageIconProps {
   size?: number
   padding?: number
   noBottomMargin?: boolean
+  className?: string
 }
 
-const ImageIcon = ({ image, src, alt = '', rounded, size, padding, noBottomMargin }: ImageIconProps) => {
+const ImageIcon = ({ image, src, alt = '', rounded, size, padding, noBottomMargin, className }: ImageIconProps) => {
   if (!image && !src) return null
 
   return (
-    <ImageIconContainer size={size} rounded={rounded} padding={padding} noBottomMargin={noBottomMargin}>
+    <ImageIconContainer
+      size={size}
+      rounded={rounded}
+      padding={padding}
+      noBottomMargin={noBottomMargin}
+      className={className}
+    >
       {image ? (
         <GatsbyImageWrapper
           image={image}

@@ -139,19 +139,6 @@ const highlightStyles = css<SimpleLinkProps>`
     pointer-events: none;
   }
 
-  &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background: ${({ theme }) => theme.textPrimary};
-    opacity: 1;
-    transition: opacity 0.1s ease-out;
-    pointer-events: none;
-  }
-
   &:hover::before {
     opacity: 1;
     background: ${({ theme }) => getGradient(theme)};
@@ -173,7 +160,7 @@ const highlightStyles = css<SimpleLinkProps>`
 export default styled(SimpleLinkComponent)`
   text-decoration: none;
   color: ${({ theme, color }) => (color ? color : theme.link)};
-  text-decoration-style: dotted;
+  text-decoration: ${({ highlight }) => (highlight ? 'underline' : 'dotted')};
   display: inline-block;
 
   svg {
@@ -183,7 +170,6 @@ export default styled(SimpleLinkComponent)`
 
   &:hover {
     cursor: pointer;
-    filter: brightness(1.3);
     opacity: 1;
     color: ${({ theme }) => theme.textPrimary};
     transition: all 0.1s ease-out;
@@ -196,9 +182,8 @@ const Anchor = styled.a<{ highlight?: boolean; color?: string }>`
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  text-decoration: none;
   color: ${({ theme, color }) => (color ? color : theme.link)};
-  text-decoration-style: dotted;
+  text-decoration: ${({ highlight }) => (highlight ? 'underline' : 'dotted')};
 
   svg {
     fill: ${({ theme, color }) => (color ? color : theme.textPrimary)};

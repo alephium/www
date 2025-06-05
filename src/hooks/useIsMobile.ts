@@ -25,15 +25,12 @@ const useIsMobile = () => {
       const userAgent = navigator.userAgent.toLowerCase()
       const isMobileUserAgent = /android|webos|iphone|ipad|ipod|iemobile|opera mini/i.test(userAgent)
 
-      // Check for reduced motion preference
-      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-
       // Check for data saver mode and slow connection
       const connection = navigator.connection
       const isDataSaver = connection?.saveData === true
       const isSlowConnection = connection?.effectiveType === 'slow-2g' || connection?.effectiveType === '2g'
 
-      setIsMobile(hasTouch && (isMobileUserAgent || prefersReducedMotion || isDataSaver || isSlowConnection))
+      setIsMobile(hasTouch && (isMobileUserAgent || isDataSaver || isSlowConnection))
     }
 
     checkMobile()
