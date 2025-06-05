@@ -17,12 +17,12 @@ export interface SubpageHeroSectionProps extends React.HTMLAttributes<HTMLElemen
 }
 
 const SubpageHeroSection = forwardRef<HTMLElement, SubpageHeroSectionProps>(function SubpageHeroSection(
-  { children, mediaContent, alignContent, split, ...props },
+  { children, alignContent, split, ...props },
   ref
 ) {
   return (
-    <SubpageHeroSectionStyled ref={ref} split={split} mediaContent={mediaContent} {...props}>
-      <BackgroundMediaWrapper split={split}>{mediaContent}</BackgroundMediaWrapper>
+    <SubpageHeroSectionStyled ref={ref} split={split} {...props}>
+      <BackgroundMediaWrapper split={split}>{props.mediaContent}</BackgroundMediaWrapper>
       <HeroPageSectionContainer alignContent={alignContent} split={split}>
         <ContentWrapper alignContent={alignContent} split={split}>
           <TextElementStyled split={split} isCentered={alignContent === 'center'}>

@@ -49,7 +49,7 @@ const TextElement = styled.div<TextElementProps>`
           transparent 25%,
           ${({ theme }) => theme.borderPrimary} 50%,
           transparent 75%
-        ) !important;
+        );
       }
     `};
 

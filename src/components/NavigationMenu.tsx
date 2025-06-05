@@ -33,7 +33,6 @@ const NavigationMenu = ({ className, floating = true }: NavigationMenuProps) => 
 
   useEffect(() => {
     const handleScroll = throttle(() => {
-      console.log('isMobile', isMobile)
       if (!isMobile) return
 
       const currentScrollY = window.scrollY
@@ -317,7 +316,7 @@ const Drawer = styled(motion.div)`
   background-color: ${({ theme }) => theme.background1};
   border-radius: var(--radius-small);
   border: 1px solid ${({ theme }) => theme.borderPrimary};
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   z-index: 1000;

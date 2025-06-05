@@ -30,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
       font-size: 13px;
     }
 
-    --page-width: min(80vw, 1400px);
+    --page-width: min(85vw, 1400px);
     --page-width-shrinked: 68rem;
 
     --width-16: 1rem;
@@ -83,9 +83,9 @@ const GlobalStyle = createGlobalStyle`
     --spacing-35: 17.5rem;   // 280pt
 
     --radius-tiny: 4px;
-    --radius-small: 12px;
-    --radius: 16px;
-    --radius-big: 23px;
+    --radius-small: 9px;
+    --radius: 14px;
+    --radius-big: 19px;
     --radius-full: 9999px;
 
     --fontFamily-sans: "Geist", "InterDisplay", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;

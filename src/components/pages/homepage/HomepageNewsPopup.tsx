@@ -13,24 +13,20 @@ const HomepageNewsPopup = () => {
   const [isMounted, setIsMounted] = useState(false)
   const [isVisible, setIsVisible] = useState(true)
 
-  const handleClose = () => {
-    setIsVisible(false)
-  }
-
-  const handleOpen = () => {
-    setIsVisible(true)
-  }
+  const toggleVisibility = (visible: boolean) => setIsVisible(visible)
 
   useEffect(() => {
-    setTimeout(() => {
+    const timeout = setTimeout(() => {
       setIsMounted(true)
     }, 3000)
+
+    return () => clearTimeout(timeout)
   }, [])
 
   return (
     <PageSectionContainer>
       <NewsCard
-        onClick={() => !isVisible && handleOpen()}
+        onClick={() => !isVisible && toggleVisibility(true)}
         animate={!isMounted ? 'hidden' : isVisible ? 'visible' : 'slideOut'}
         style={{
           cursor: !isVisible ? 'pointer' : 'default'
@@ -70,7 +66,7 @@ const HomepageNewsPopup = () => {
           }
         }}
       >
-        <CloseButton onClick={handleClose}>×</CloseButton>
+        <CloseButton onClick={() => toggleVisibility(false)}>×</CloseButton>
         <NewsCardContent>
           <Badge color="palette4" style={{ marginBottom: 10 }}>
             BREAKING NEWS 🔥
