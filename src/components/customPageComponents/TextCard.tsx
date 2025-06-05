@@ -280,7 +280,7 @@ const CardStyled = styled(motion.div)<{
   }
 
   h4 {
-    margin-bottom: var(--spacing-2);
+    margin-bottom: 0;
   }
 
   &:hover {

@@ -3,10 +3,10 @@ import { useEffect, useState } from 'react'
 import styled, { useTheme } from 'styled-components'
 
 import { deviceBreakPoints } from '../../../styles/global-style'
+import { isMobile } from '../../../utils/misc'
 import Badge from '../../Badge'
 import Button from '../../Button'
 import TextElement from '../../customPageComponents/TextElement'
-import PageSectionContainer from '../../PageSectionContainer'
 
 const HomepageNewsPopup = () => {
   const theme = useTheme()
@@ -24,9 +24,10 @@ const HomepageNewsPopup = () => {
   }, [])
 
   return (
-    <PageSectionContainer>
+    <NewsCardContainer>
       <NewsCard
         onClick={() => !isVisible && toggleVisibility(true)}
+        initial="hidden"
         animate={!isMounted ? 'hidden' : isVisible ? 'visible' : 'slideOut'}
         style={{
           cursor: !isVisible ? 'pointer' : 'default'
@@ -55,12 +56,12 @@ const HomepageNewsPopup = () => {
           },
           slideOut: {
             opacity: 1,
-            y: 0,
-            x: 'calc(100% - 10px)',
+            y: isMobile ? '130%' : 0,
+            x: isMobile ? 0 : '100%',
             transition: {
               type: 'spring',
-              stiffness: 100,
-              damping: 15,
+              stiffness: 200,
+              damping: 20,
               duration: 0.5
             }
           }
@@ -84,16 +85,32 @@ const HomepageNewsPopup = () => {
           Learn more about Danube
         </Button>
       </NewsCard>
-    </PageSectionContainer>
+    </NewsCardContainer>
   )
 }
 
 export default HomepageNewsPopup
 
-const NewsCard = styled(motion.div)<{ border?: boolean }>`
+const NewsCardContainer = styled.div`
   position: fixed;
+  display: flex;
   bottom: var(--spacing-4);
   right: var(--spacing-4);
+  left: var(--spacing-4);
+  z-index: 2;
+  justify-content: flex-end;
+  pointer-events: none;
+
+  @media ${deviceBreakPoints.mobile} {
+    justify-content: center;
+    bottom: var(--spacing-2);
+    right: var(--spacing-2);
+    left: var(--spacing-2);
+  }
+`
+
+const NewsCard = styled(motion.div)<{ border?: boolean }>`
+  position: relative;
   width: 400px;
   display: flex;
   flex-direction: column;
@@ -105,14 +122,10 @@ const NewsCard = styled(motion.div)<{ border?: boolean }>`
   border-radius: var(--radius);
   flex-wrap: wrap;
   gap: var(--spacing-2);
-  z-index: 10000;
+  pointer-events: auto;
 
   p {
     margin-bottom: 0;
-  }
-
-  @media ${deviceBreakPoints.mobile} {
-    flex-direction: column;
   }
 
   h2 {
@@ -120,6 +133,12 @@ const NewsCard = styled(motion.div)<{ border?: boolean }>`
     line-height: var(--lineHeight-36);
     font-weight: var(--fontWeight-medium);
     margin-bottom: var(--spacing-2);
+  }
+
+  @media ${deviceBreakPoints.mobile} {
+    flex: 1;
+    width: auto;
+    max-width: 400px;
   }
 `
 

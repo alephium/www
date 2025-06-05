@@ -194,7 +194,6 @@ const HomepageNumbersSection = () => {
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
-          style={{ zIndex: 5000, width: '100%' }}
           viewport={{ once: true }}
         >
           <PageSectionContainer>
@@ -260,7 +259,7 @@ const BorderedBox = styled.div`
   overflow: hidden;
   position: relative;
   min-height: 200px;
-  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 20px 30px 0 rgba(19, 14, 14, 0.05);
 `
 
 const RealTimeLabel = styled.div`

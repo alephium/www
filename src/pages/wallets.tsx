@@ -220,7 +220,7 @@ const CustomPage = (props: PageProps) => {
 
               <Grid columns={5} gap="small">
                 <ClickableBox url="https://support.ledger.com/article/Alephium-ALPH" orientation="vertical">
-                  <ImageIcon
+                  <ImageIconStyled
                     src={ledgerLogo?.publicURL ?? ''}
                     alt="Ledger logo"
                     rounded
@@ -233,7 +233,7 @@ const CustomPage = (props: PageProps) => {
                   </TextElement>
                 </ClickableBox>
                 <ClickableBox url="https://onekey.so" orientation="vertical">
-                  <ImageIcon
+                  <ImageIconStyled
                     src={onekeyLogo?.publicURL ?? ''}
                     alt="Onekey logo"
                     rounded
@@ -246,7 +246,7 @@ const CustomPage = (props: PageProps) => {
                   </TextElement>
                 </ClickableBox>
                 <ClickableBox url="https://www.safepal.com" orientation="vertical">
-                  <ImageIcon
+                  <ImageIconStyled
                     src={safepalLogo?.publicURL ?? ''}
                     alt="SafePal logo"
                     rounded
@@ -259,7 +259,7 @@ const CustomPage = (props: PageProps) => {
                   </TextElement>
                 </ClickableBox>
                 <ClickableBox url="https://tangem.com" orientation="vertical">
-                  <ImageIcon
+                  <ImageIconStyled
                     src={tangemLogo?.publicURL ?? ''}
                     alt="Tangem logo"
                     rounded
@@ -272,7 +272,7 @@ const CustomPage = (props: PageProps) => {
                   </TextElement>
                 </ClickableBox>
                 <ClickableBox url="https://www.goldshell.com" orientation="vertical">
-                  <ImageIcon
+                  <ImageIconStyled
                     src={goldshellLogo?.publicURL ?? ''}
                     alt="Goldshell logo"
                     rounded
@@ -359,6 +359,7 @@ const CarouselContainer = styled.div`
   padding-bottom: var(--spacing-6);
   border-radius: var(--radius);
   border: 1px solid ${({ theme }) => theme.borderPrimary};
+  box-sizing: border-box;
 
   .slick-dots {
     bottom: -30px;
@@ -374,4 +375,8 @@ const CarouselContainer = styled.div`
       }
     }
   }
+`
+
+const ImageIconStyled = styled(ImageIcon)`
+  filter: ${({ theme }) => (theme.name === 'light' ? 'invert(1)' : 'none')};
 `

@@ -166,7 +166,7 @@ const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean }>`
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10000;
+  z-index: 2;
 `
 
 const NavigationMenuStyled = styled.div`
@@ -174,7 +174,6 @@ const NavigationMenuStyled = styled.div`
   display: flex;
   justify-content: center;
   font-weight: var(--fontWeight-medium);
-  z-index: 1;
   padding: 0 30px;
   height: 62px;
 `

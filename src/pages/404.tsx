@@ -8,11 +8,6 @@ import TextSnippet from '../components/TextSnippet'
 const NotFoundPage = (props: PageProps) => (
   <Page
     {...props}
-    seo={{
-      title: 'Alephium | The Web3 you were promised',
-      description:
-        'Alephium is the next generation PoW Layer 1 with smart contracts. Built for speed, security, and sustainability. Start building or join the community today.'
-    }}
     content={
       <Container>
         <CenteredContainer>
