@@ -1,5 +1,5 @@
 import { graphql } from 'gatsby'
-import { useRef, useState } from 'react'
+import { useRef } from 'react'
 import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../../../styles/global-style'
@@ -20,16 +20,6 @@ export const query = graphql`
 
 const HomepagePartnersSection = (content: Queries.HomepagePartnersSectionFragment) => {
   const gridRef = useRef<HTMLDivElement>(null)
-  const [showLeftGradient, setShowLeftGradient] = useState(true)
-  const [showRightGradient, setShowRightGradient] = useState(true)
-
-  const handleScroll = () => {
-    if (gridRef.current) {
-      const { scrollLeft, scrollWidth, clientWidth } = gridRef.current
-      setShowLeftGradient(scrollLeft > 0)
-      setShowRightGradient(scrollLeft < scrollWidth - clientWidth - 1)
-    }
-  }
 
   return (
     <SubheaderContent isCentered>
@@ -38,7 +28,7 @@ const HomepagePartnersSection = (content: Queries.HomepagePartnersSectionFragmen
       </TextElement>
 
       <PartnersGridContainer>
-        <PartnersGrid ref={gridRef} onScroll={handleScroll}>
+        <PartnersGrid ref={gridRef}>
           {content?.partners?.map(
             (partner) =>
               partner?.title &&
@@ -112,5 +102,5 @@ const PartnerLogo = styled.img`
   max-width: 60px;
   object-fit: contain;
   margin: 0 auto;
-  filter: brightness(0);
+  filter: ${({ theme }) => (theme.name === 'light' ? 'brightness(0)' : 'brightness(1)')};
 `

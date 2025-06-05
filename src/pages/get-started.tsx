@@ -262,7 +262,7 @@ const GetAlphSection = () => {
       <SectionDivider />
 
       <SubpageImageHeroSection backgroundImage={treasureImage} minHeight="600px" alignContent="center">
-        <h2>Wallets</h2>
+        <h1>Wallets</h1>
         <p>
           Your gateway to Alephium: <strong>store, swap, lend, and more!</strong>
         </p>

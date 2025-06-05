@@ -8,7 +8,6 @@ import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import HomepageCommunitySection from '../components/pages/homepage/HomepageCommunitySection'
 import HomepageEcosystemSection from '../components/pages/homepage/HomepageEcosystemSection'
 import HomepageHeroSection from '../components/pages/homepage/HomepageHeroSection'
-import HomepageIntroSection from '../components/pages/homepage/HomepageIntroSection'
 import HomepageNewsPopup from '../components/pages/homepage/HomepageNewsPopup'
 import HomepageNumbersSection from '../components/pages/homepage/HomepageNumbersSection'
 import HomepageUSPSection from '../components/pages/homepage/HomepageUSPSection'
@@ -52,7 +51,7 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => (
 
         <HomepageHeroSection />
 
-        <HomepageIntroSection />
+        {/* <HomepageIntroSection /> */}
 
         <HomepageUSPSection />
 

@@ -6,6 +6,7 @@ import Button from '../../Button'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextElement from '../../customPageComponents/TextElement'
 import EddyBackground from '../../EddyBackground'
+import HomepageIntroSection from './HomepageIntroSection'
 import HomepagePartnersSection from './HomepagePartnersSection'
 
 export const pageQuery = graphql`
@@ -27,7 +28,7 @@ const HomepageHeroSection = () => {
   const content = allMarkdownRemark.nodes[0].frontmatter
 
   return (
-    <SubpageSectionStyled>
+    <SubpageSectionStyled fullWidth>
       <EddyBackground />
       <TextElementStyled isCentered>
         <h1>
@@ -35,9 +36,9 @@ const HomepageHeroSection = () => {
           <br /> you were promised.
         </h1>
         <p>
+          Fast & Scalable Proof-of-Work and secure Smart Contracts,
+          <br />
           <strong>
-            Fast & Scalable Proof-of-Work and secure Smart Contracts,
-            <br />
             <b> only on Alephium.</b>
           </strong>
         </p>
@@ -49,6 +50,7 @@ const HomepageHeroSection = () => {
         </Button>
       </Buttons>
       {content?.partnersSection && <HomepagePartnersSection {...content.partnersSection} />}
+      <HomepageIntroSection />
     </SubpageSectionStyled>
   )
 }
@@ -56,17 +58,13 @@ const HomepageHeroSection = () => {
 export default HomepageHeroSection
 
 const SubpageSectionStyled = styled(SubpageSection)`
-  margin-top: var(--spacing-6);
   padding-bottom: var(--spacing-4);
   padding-right: var(--spacing-4);
   padding-left: var(--spacing-4);
+  overflow: visible;
 `
 
-const TextElementStyled = styled(TextElement)`
-  * {
-    color: black !important;
-  }
-`
+const TextElementStyled = styled(TextElement)``
 
 const Buttons = styled.div`
   display: flex;

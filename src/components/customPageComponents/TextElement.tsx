@@ -86,7 +86,7 @@ const TextElement = styled.div<TextElementProps>`
     font-weight: var(--fontWeight-semiBold);
 
     + p {
-      font-size: var(--fontSize-26);
+      font-size: var(--fontSize-24);
     }
 
     @media ${deviceBreakPoints.mobile} {

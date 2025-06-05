@@ -218,12 +218,12 @@ const CardStyled = styled(motion.div)<{
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
-  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.075);
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
 
   ${({ border }) =>
     border &&
     css`
-      box-shadow: inset 0 0 0 1px ${({ theme }) => theme.borderPrimary}, 0 10px 30px 0 rgba(0, 0, 0, 0.025);
+      box-shadow: inset 0 0 0 1px ${({ theme }) => theme.borderPrimary}, 0 10px 30px 0 rgba(0, 0, 0, 0.1);
     `}
 
   ${({ url }) => url && 'transform-style: preserve-3d;'}

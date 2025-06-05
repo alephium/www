@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components'
 
 import { deviceBreakPoints } from '../../styles/global-style'
 import PageSectionContainer from '../PageSectionContainer'
-type GradientPosition = 'top' | 'bottom' | 'bottom-right' | 'bottom-left' | 'top-right' | 'top-left'
+type GradientPosition = 'top' | 'bottom' | 'bottom-right' | 'bottom-left' | 'top-right' | 'top-left' | 'left' | 'right'
 
 interface SubpageSectionProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode

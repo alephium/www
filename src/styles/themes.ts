@@ -17,16 +17,16 @@ export const darkTheme: DefaultTheme = {
   background3: 'var(--color-grey-950)',
   backgroundContrast: 'var(--color-grey-800)',
 
-  borderPrimary: 'rgba(255, 255, 255, 0.1)',
+  borderPrimary: 'rgba(255, 255, 255, 0.08)',
 
   link: 'var(--color-white)',
   linkAlt: 'var(--color-grey-700)',
 
   separator: 'var(--color-grey-700)',
 
-  palette1: '#5effb5',
+  palette1: '#55eca7',
   palette2: '#ffd976',
-  palette3: '#7ae5ff',
+  palette3: '#4086f9',
   palette4: '#f5a4ff',
   palette5: '#ff89cc',
   palette6: '#ffb579'
@@ -47,19 +47,19 @@ export const lightTheme: DefaultTheme = {
   background3: '#ffffff',
   backgroundContrast: '#000000',
 
-  borderPrimary: 'rgba(0, 0, 0, 0.1)',
+  borderPrimary: 'rgba(0, 0, 0, 0.08)',
 
   link: '#000000',
   linkAlt: 'var(--color-black)',
 
   separator: 'var(--color-grey-100)',
 
-  palette1: '#4bda98',
-  palette2: '#f5b529',
-  palette3: '#41c6e5',
-  palette4: '#de5dee',
-  palette5: '#e24ea2',
-  palette6: '#f69344'
+  palette1: '#67d7a1',
+  palette2: '#f5bf48',
+  palette3: '#4475ec',
+  palette4: '#df74fa',
+  palette5: '#e562a3',
+  palette6: '#f69b62'
 }
 
 export const hackathonTheme: DefaultTheme = {
