@@ -270,7 +270,8 @@ const Container = styled.div<{ detailed: boolean }>`
     ${({ detailed }) =>
       !detailed &&
       css`
-        background: linear-gradient(30deg, #fff 0%, #81fff7 50%, #edff2a 60%, #ffa9eb 70%, #fff 100%);
+        background: ${({ theme }) =>
+          `linear-gradient(30deg, ${theme.palette3} 0%, ${theme.palette5} 50%, ${theme.palette4} 60%, ${theme.palette5} 70%, ${theme.palette6} 100%)`};
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -321,7 +322,8 @@ const Data = styled.div<{ hasBorder?: boolean }>`
   padding: var(--spacing-2);
   border-radius: var(--radius-small);
   margin: var(--spacing-2);
-  border: ${({ hasBorder, theme }) => (hasBorder ? `3px solid ${theme.borderPrimary}` : 'none')};
+  border: ${({ hasBorder, theme }) => (hasBorder ? `2px solid ${theme.borderPrimary}` : 'none')};
+  background-color: ${({ theme }) => theme.background2};
 
   ${({ isSingle }) =>
     isSingle &&

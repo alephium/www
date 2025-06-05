@@ -35,15 +35,13 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SectionDivider />
-
-          <SubpageSection bgColor="1" wide border edgeGradient gradientPosition="top">
+          <SubpageSection fullWidth edgeGradient gradientPosition="top">
             <TextElement isCentered>
-              <h2>
+              <h1>
                 Our Journey to
                 <br />
                 True Web3
-              </h2>
+              </h1>
               <p>
                 Marked by purposeful upgrades, each advancing <strong>scalability, usability, and security.</strong>
               </p>

@@ -39,7 +39,7 @@ const Toggle = ({ toggled, onToggle, className, disabled, ToggleIcons, handleCol
 
   const toggleBackgroundVariants = {
     off: {
-      backgroundColor: theme.surface1
+      backgroundColor: theme.background2
     },
     on: { backgroundColor: handleColors ? theme.background1 : '#2a51ff' }
   }
@@ -50,8 +50,8 @@ const Toggle = ({ toggled, onToggle, className, disabled, ToggleIcons, handleCol
   }
 
   const handleVariants = {
-    off: { backgroundColor: handleColors?.[0] ?? 'var(--color-white)' },
-    on: { backgroundColor: handleColors?.[1] ?? 'var(--color-white)' }
+    off: { backgroundColor: handleColors?.[0] ?? theme.textPrimary },
+    on: { backgroundColor: handleColors?.[1] ?? theme.textPrimary }
   }
 
   const toggleState = toggled ? 'on' : 'off'

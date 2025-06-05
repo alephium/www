@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
 
+import { deviceBreakPoints } from '../../styles/global-style'
 import SimpleLink, { SimpleLinkProps } from '../SimpleLink'
 
 interface ClickableBoxProps extends SimpleLinkProps {
@@ -20,6 +21,8 @@ const BoxStyles = css<ClickableBoxProps>`
   border: 1px solid ${({ theme }) => theme.borderPrimary};
   border-radius: var(--radius);
   padding: var(--spacing-4);
+  height: 100%;
+  box-sizing: border-box;
 
   &:hover {
     background-color: ${({ theme }) => theme.surface1};
@@ -27,6 +30,12 @@ const BoxStyles = css<ClickableBoxProps>`
 
   p + p {
     margin-top: var(--spacing-2);
+  }
+
+  @media ${deviceBreakPoints.mobile} {
+    text-align: center;
+    padding: var(--spacing-4) 0;
+    justify-content: center;
   }
 `
 

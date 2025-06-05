@@ -58,7 +58,7 @@ const CustomPage = (props: PageProps) => {
             <TextElement>
               <h2>
                 What does an <br />
-                Alephium Ambassador do?
+                Ambassador do?
               </h2>
               <p>
                 <strong>
@@ -217,7 +217,8 @@ const WhySection = () => {
       <TextElement>
         <h2>
           Why become
-          <br /> an Alephium Ambassador?
+          <br />
+          Ambassador?
         </h2>
       </TextElement>
 

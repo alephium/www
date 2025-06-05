@@ -49,7 +49,7 @@ export const lightTheme: DefaultTheme = {
 
   borderPrimary: 'rgba(0, 0, 0, 0.1)',
 
-  link: 'var(--color-blue)',
+  link: '#000000',
   linkAlt: 'var(--color-black)',
 
   separator: 'var(--color-grey-100)',

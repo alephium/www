@@ -112,6 +112,10 @@ const TextElement = styled.div<TextElementProps>`
       background: linear-gradient(to right, ${({ theme }) => theme.borderPrimary}, transparent 50%);
       border: none;
     }
+
+    @media ${deviceBreakPoints.mobile} {
+      font-size: var(--fontSize-50);
+    }
   }
 
   > h3 {
