@@ -65,7 +65,7 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => (
 
         <HomepageCommunitySection />
 
-        <SectionDivider />
+        <SectionDivider double />
 
         <BottomSection {...props} />
       </>
@@ -110,7 +110,14 @@ export default IndexPage
 const BottomBackgroundImageContainer = styled.div`
   position: absolute;
   inset: 0;
-  opacity: 0.7;
+  opacity: 0.5;
+  mask-image: linear-gradient(to bottom, transparent, black 200px);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 200px);
+
+  img {
+    position: relative;
+    z-index: 0;
+  }
 `
 
 const BottomSectionStyled = styled.div`

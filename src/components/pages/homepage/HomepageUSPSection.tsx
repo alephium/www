@@ -87,8 +87,8 @@ const HomepageUSPSection = () => {
         <TextCard border>
           <TextCardContent>
             <TextElement>
-              <h3 style={{ color: theme.palette2 }}>Fast</h3>
-              <TLDRSection color={theme.palette2}>
+              <h3>Fast ⚡</h3>
+              <TLDRSection>
                 <span>8 second block time, 2 BPS network throughput.</span>
               </TLDRSection>
             </TextElement>
@@ -108,9 +108,9 @@ const HomepageUSPSection = () => {
         </TextCard>
         <TextCard border>
           <TextCardContent>
-            <TextElement color={theme.palette3}>
-              <h3 style={{ color: theme.palette3 }}>Scalable</h3>
-              <TLDRSection color={theme.palette3}>20,000+ tps, single-chain experience.</TLDRSection>
+            <TextElement>
+              <h3>Scalable 🪜</h3>
+              <TLDRSection>20,000+ tps, single-chain experience.</TLDRSection>
             </TextElement>
             <TextElement noHeadingsMargins>
               <p>
@@ -129,8 +129,8 @@ const HomepageUSPSection = () => {
         <TextCard border>
           <TextCardContent>
             <TextElement>
-              <h3 style={{ color: theme.palette4 }}>Secure</h3>
-              <TLDRSection color={theme.palette4}>
+              <h3>Secure 🔒</h3>
+              <TLDRSection>
                 <span>Security by design.</span>
               </TLDRSection>
             </TextElement>
@@ -155,8 +155,8 @@ const HomepageUSPSection = () => {
         <TextCard border>
           <TextCardContent>
             <TextElement>
-              <h3 style={{ color: theme.palette1 }}>Sustainable</h3>
-              <TLDRSection color={theme.palette1}>
+              <h3>Sustainable 🌱</h3>
+              <TLDRSection>
                 <span>The best of PoW, 87% less energy.</span>
               </TLDRSection>
             </TextElement>
@@ -179,8 +179,8 @@ const HomepageUSPSection = () => {
         <TextCard border>
           <TextCardContent>
             <TextElement>
-              <h3 style={{ color: theme.palette6 }}>Programmable</h3>
-              <TLDRSection color={theme.palette6}>
+              <h3>Programmable 🧩</h3>
+              <TLDRSection>
                 <span>Stateful UTXO, the best of Bitcoin and Ethereum.</span>
               </TLDRSection>
             </TextElement>
@@ -203,8 +203,8 @@ const HomepageUSPSection = () => {
         <TextCard border>
           <TextCardContent>
             <TextElement>
-              <h3 style={{ color: theme.palette5 }}>Dev-friendly</h3>
-              <TLDRSection color={theme.palette5}>
+              <h3>Dev-friendly 🧑‍💻</h3>
+              <TLDRSection>
                 <span>Custom VM & language built for performance.</span>
               </TLDRSection>
             </TextElement>

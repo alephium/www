@@ -25,10 +25,10 @@ export const darkTheme: DefaultTheme = {
   separator: 'var(--color-grey-700)',
 
   palette1: '#4eb1ff',
-  palette2: '#ffb85f',
-  palette3: '#5e5dff',
-  palette4: '#ac55ff',
-  palette5: '#ff80a1',
+  palette2: '#ffbf4c',
+  palette3: '#6073ff',
+  palette4: '#ef53ee',
+  palette5: '#ff678e',
   palette6: '#ffbc70'
 }
 
@@ -56,8 +56,8 @@ export const lightTheme: DefaultTheme = {
 
   palette1: '#469df9',
   palette2: '#ffa42b',
-  palette3: '#3e4bf7',
-  palette4: '#a378ff',
+  palette3: '#4069ff',
+  palette4: '#ff67f6',
   palette5: '#ff6b96',
   palette6: '#ffa055'
 }

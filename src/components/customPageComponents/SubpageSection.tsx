@@ -68,16 +68,17 @@ const SubpageSectionStyled = styled(PageSectionContainer)<SubpageSectionProps>`
         background: radial-gradient(
           circle at ${gradientPosition.includes('right') ? '140%' : gradientPosition.includes('left') ? '-40%' : '50%'} 
           ${gradientPosition.includes('top') ? '-100%' : '100%'},
-          ${theme.palette2} 0%,
-          ${theme.palette6} 5%,
+          ${theme.palette6} 0%,
           ${theme.palette5} 10%,
-          ${theme.palette1} 35%,
-          ${theme.palette3} 50%,
+          ${theme.palette1} 25%,
+          ${theme.palette5} 28%,
+          ${theme.palette3} 30%,
           transparent 100%
         );
         pointer-events: none;
-        filter: blur(40px) brightness(${theme.name === 'dark' ? 1.2 : 1.4}) saturate(${theme.name === 'dark' ? 1.2 : 1})
-          contrast(${theme.name === 'dark' ? 1 : 1});
+        opacity: 0.8;
+        filter: blur(60px) brightness(${theme.name === 'dark' ? 1.3 : 1.4})
+          saturate(${theme.name === 'dark' ? 1.2 : 1.6});
       }
     `}
 `

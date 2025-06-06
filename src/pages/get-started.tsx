@@ -149,9 +149,7 @@ const CustomPage = (props: PageProps) => {
 
           <SubpageSection isCentered edgeGradient border bgColor="2" wide>
             <TextElement isCentered>
-              <h2>
-                <span>Build</span> on Alephium
-              </h2>
+              <h2>Build on Alephium</h2>
               <p>
                 Alephium&apos;s scalable Proof-of-Less-Work and secure Smart Contracts give you the tools to{' '}
                 <strong>build better, faster and safer.</strong>
@@ -285,7 +283,7 @@ const GetAlphSection = () => {
             <TextCard border>
               <TextCardContent>
                 <TextElement>
-                  <h3 style={{ color: theme.palette1 }}>On-Ramps</h3>
+                  <h3>On-Ramps</h3>
                   <p>
                     You can get ALPH directly from the Alephium mobile and desktop wallets with a{' '}
                     <strong>debit/credit card, bank transfer or even Apple Pay.</strong> <br />
@@ -302,7 +300,7 @@ const GetAlphSection = () => {
             <TextCard border>
               <TextCardContent>
                 <TextElement>
-                  <h3 style={{ color: theme.palette2 }}>Centralised Exchanges</h3>
+                  <h3>Centralised Exchanges</h3>
                   <p>
                     Centralised Exchanges (CEX) are platforms where ALPH is available using traditional currencies.{' '}
                     <strong>They maintain custody over the ALPH</strong> you get until you transfer it to a wallet under
@@ -319,7 +317,7 @@ const GetAlphSection = () => {
             <TextCard border>
               <TextCardContent>
                 <TextElement>
-                  <h3 style={{ color: theme.palette3 }}>Decentralised Exchanges</h3>
+                  <h3>Decentralised Exchanges</h3>
                   <p>
                     If you want more control, you can get ALPH using smart contracts. With Decentralized Exchanges (DEX)
                     you can trade digital assets <strong>without handing over control of your funds</strong> to a
@@ -336,7 +334,7 @@ const GetAlphSection = () => {
             <TextCard border>
               <TextCardContent>
                 <TextElement>
-                  <h3 style={{ color: theme.palette4 }}>Bridged ALPH</h3>
+                  <h3>Bridged ALPH</h3>
                   <p>
                     You can also get ALPH on <strong>other networks like Ethereum and BSC</strong>. Just use the
                     Alephium Token Bridge to move it to native ALPH on the Alephium network.
@@ -352,7 +350,7 @@ const GetAlphSection = () => {
             <TextCard border>
               <TextCardContent>
                 <TextElement>
-                  <h3 style={{ color: theme.palette6 }}>From your peers</h3>
+                  <h3>From your peers</h3>
                   <p>
                     Once you have an Alephium wallet, you just need to share your address to start sending and receiving
                     ALPH and other tokens directly with others.
