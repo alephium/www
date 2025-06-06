@@ -57,8 +57,8 @@ const SubpageSectionStyled = styled(PageSectionContainer)<SubpageSectionProps>`
         content: '';
         position: absolute;
         width: 100%;
-        height: 50%;
-        max-height: 200px;
+        height: 20%;
+        max-height: 50px;
         ${gradientPosition.includes('top') ? 'top: 0;' : 'bottom: 0;'}
         ${gradientPosition.includes('left')
           ? 'left: 0;'
@@ -67,26 +67,17 @@ const SubpageSectionStyled = styled(PageSectionContainer)<SubpageSectionProps>`
           : 'left: 0;'}
         background: radial-gradient(
           circle at ${gradientPosition.includes('right') ? '140%' : gradientPosition.includes('left') ? '-40%' : '50%'} 
-          ${gradientPosition.includes('top') ? '-90%' : '190%'},
-          transparent 60%,
-          ${theme.palette4} 65%,
-          ${theme.palette2} 70%,
-          ${theme.palette1} 75%,
-          ${theme.palette3} 85%,
+          ${gradientPosition.includes('top') ? '-100%' : '100%'},
+          ${theme.palette2} 0%,
+          ${theme.palette6} 5%,
+          ${theme.palette5} 10%,
+          ${theme.palette1} 35%,
+          ${theme.palette3} 50%,
           transparent 100%
         );
-        mask-image: radial-gradient(
-          ellipse 100% 80% at center ${gradientPosition.includes('top') ? 'top' : 'bottom'},
-          rgba(0, 0, 0, 1) 0%,
-          rgba(0, 0, 0, 0) 100%
-        );
-        -webkit-mask-image: radial-gradient(
-          ellipse 100% 80% at center ${gradientPosition.includes('top') ? 'top' : 'bottom'},
-          rgba(0, 0, 0, 1) 0%,
-          rgba(0, 0, 0, 0) 100%
-        );
         pointer-events: none;
-        filter: blur(70px) saturate(1.7) brightness(1.1);
+        filter: blur(40px) brightness(${theme.name === 'dark' ? 1.2 : 1.4}) saturate(${theme.name === 'dark' ? 1.2 : 1})
+          contrast(${theme.name === 'dark' ? 1 : 1});
       }
     `}
 `

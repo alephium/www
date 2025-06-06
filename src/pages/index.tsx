@@ -59,9 +59,9 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => (
 
         <HomepageNumbersSection />
 
-        <HomepageEcosystemSection />
+        <SectionDivider double />
 
-        <SectionDivider border />
+        <HomepageEcosystemSection />
 
         <HomepageCommunitySection />
 

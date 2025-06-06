@@ -62,6 +62,9 @@ const SubpageSectionStyled = styled(SubpageSection)`
   padding-right: var(--spacing-4);
   padding-left: var(--spacing-4);
   overflow: visible;
+  min-height: 80vh;
+  justify-content: center;
+  gap: var(--spacing-4);
 `
 
 const TextElementStyled = styled(TextElement)``

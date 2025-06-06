@@ -1,5 +1,7 @@
 import { FC } from 'react'
-import styled, { useTheme } from 'styled-components'
+import styled, { DefaultTheme, useTheme } from 'styled-components'
+
+import { deviceBreakPoints } from '../styles/global-style'
 
 export interface MeshGradientEffectProps {
   /** Not used in static version, but kept for API compatibility */
@@ -16,9 +18,8 @@ export interface MeshGradientEffectProps {
 const MeshGradientEffect: FC<MeshGradientEffectProps> = () => {
   const theme = useTheme()
 
-  // Left and right gradients as separate containers
-  const leftGradient = `radial-gradient(circle at 0% 50%, ${theme.palette2} 20%, ${theme.palette5} 30%, ${theme.palette3} 50%, transparent 70%)`
-  const rightGradient = `radial-gradient(circle at 100% 50%, ${theme.palette2} 20%, ${theme.palette5} 30%, ${theme.palette3} 50%, transparent 70%)`
+  const leftGradient = `radial-gradient(circle at 0% 50%, ${theme.palette2} 10%, ${theme.palette5} 20%, ${theme.palette1} 60%, ${theme.palette3} 70%, transparent 80%)`
+  const rightGradient = `radial-gradient(circle at 100% 50%, ${theme.palette2} 10%, ${theme.palette5} 20%, ${theme.palette1} 60%, ${theme.palette3} 70%, transparent 80%)`
 
   return (
     <EddyBackgroundContainer>
@@ -36,6 +37,12 @@ const MeshGradientEffect: FC<MeshGradientEffectProps> = () => {
 
 export default MeshGradientEffect
 
+const getColorFilters = (theme: DefaultTheme) => `
+    brightness(${theme.name === 'dark' ? 1.2 : 1.4})
+    saturate(${theme.name === 'dark' ? 1.2 : 1})
+    contrast(${theme.name === 'dark' ? 1 : 1});
+`
+
 const EddyBackgroundContainer = styled.div`
   position: absolute;
   inset: 0;
@@ -49,8 +56,12 @@ const GradientContainer = styled.div`
   height: 100%;
   z-index: -1;
   pointer-events: none;
-  filter: blur(70px) brightness(${({ theme }) => (theme.name === 'dark' ? 0.8 : 1.2)})
-    saturate(${({ theme }) => (theme.name === 'dark' ? 1.1 : 0.8)});
+  filter: blur(90px) ${({ theme }) => getColorFilters(theme)};
+  opacity: 0.8;
   background-size: 65% 75%;
   background-repeat: no-repeat;
+
+  @media ${deviceBreakPoints.mobile} {
+    filter: blur(70px) ${({ theme }) => getColorFilters(theme)};
+  }
 `

@@ -141,7 +141,7 @@ const GlobalStyle = createGlobalStyle`
     --color-grey-750: rgb(44, 44, 44);
     --color-grey-800: rgb(38, 38, 38);
     --color-grey-850: rgb(32, 32, 32);
-    --color-grey-900: rgb(23, 23, 23);
+    --color-grey-900: rgb(20, 20, 20);
     --color-grey-950: rgb(14, 14, 14);
     --color-black: #000;
     --color-salmon: #ff5d51;

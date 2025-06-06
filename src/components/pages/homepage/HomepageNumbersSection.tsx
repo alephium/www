@@ -258,7 +258,7 @@ const BorderedBox = styled.div`
   padding-bottom: var(--spacing-16);
   overflow: hidden;
   position: relative;
-  min-height: 200px;
+  min-height: 150px;
   box-shadow: 0 20px 30px 0 rgba(19, 14, 14, 0.05);
 `
 

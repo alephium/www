@@ -2,10 +2,9 @@ import Button from '../../Button'
 import CommunityMosaic from '../../CommunityMosaic'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextElement from '../../customPageComponents/TextElement'
-import PageSectionContainer from '../../PageSectionContainer'
 
 const HomepageCommunitySection = () => (
-  <PageSectionContainer fullWidth>
+  <SubpageSection fullWidth>
     <SubpageSection>
       <TextElement isCentered>
         <h2>
@@ -18,7 +17,7 @@ const HomepageCommunitySection = () => (
       </TextElement>
     </SubpageSection>
     <CommunityMosaic />
-  </PageSectionContainer>
+  </SubpageSection>
 )
 
 export default HomepageCommunitySection

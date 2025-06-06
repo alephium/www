@@ -128,14 +128,15 @@ const GradientBorder = styled.div`
   border-radius: var(--radius);
   background: radial-gradient(
     circle at var(--gradient-x) var(--gradient-y),
-    ${({ theme }) => theme.borderPrimary} 20%,
-    ${({ theme }) => theme.palette2} 35%,
-    ${({ theme }) => theme.palette1} 40%,
-    ${({ theme }) => theme.palette4} 50%,
-    ${({ theme }) => theme.palette3} 60%,
-    ${({ theme }) => theme.borderPrimary} 90%
+    ${({ theme }) => theme.borderPrimary} 10%,
+    ${({ theme }) => theme.palette6} 20%,
+    ${({ theme }) => theme.palette5} 30%,
+    ${({ theme }) => theme.palette1} 60%,
+    ${({ theme }) => theme.palette3} 90%,
+    ${({ theme }) => theme.borderPrimary} 100%
   );
-  filter: saturate(110%) brightness(1.1);
+  filter: blur(3px) saturate(${({ theme }) => (theme.name === 'light' ? 1.2 : 1)})
+    brightness(${({ theme }) => (theme.name === 'light' ? 1 : 1.5)});
   opacity: 0;
   pointer-events: none;
   z-index: -1;
@@ -211,7 +212,7 @@ const CardStyled = styled(motion.div)<{
   position: relative;
   flex-direction: column;
   border-radius: var(--radius);
-  background-color: ${({ theme, bgColor }) => (bgColor ? theme[bgColor] : theme.background2)};
+  background-color: ${({ theme, bgColor }) => (bgColor ? theme[bgColor] : theme.background1)};
   text-decoration: none;
   transition: all 0.1s ease-out;
   background-size: cover;
@@ -219,6 +220,16 @@ const CardStyled = styled(motion.div)<{
   background-repeat: no-repeat;
   overflow: hidden;
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+
+  &:hover::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius);
+    box-shadow: inset 0 0 0 1px ${({ theme }) => theme.textPrimary};
+    mix-blend-mode: overlay;
+    pointer-events: none;
+  }
 
   ${({ border }) =>
     border &&
