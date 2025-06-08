@@ -56,7 +56,7 @@ const NavigationMenu = ({ className, floating = true }: NavigationMenuProps) => 
     window.addEventListener('scroll', handleScroll)
 
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  }, [isMobile])
 
   return (
     <>
