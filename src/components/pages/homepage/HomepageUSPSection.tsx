@@ -109,7 +109,7 @@ const HomepageUSPSection = () => {
         <TextCard border>
           <TextCardContent>
             <TextElement>
-              <h3>Scalable 🪜</h3>
+              <h3>Scalable ⛓️</h3>
               <TLDRSection>20,000+ tps, single-chain experience.</TLDRSection>
             </TextElement>
             <TextElement noHeadingsMargins>

@@ -31,7 +31,7 @@ const MobileNavigationMenu = ({ onCloseClick }: MobileNavigationMenuProps) => {
     <MobileNavigationMenuStyled initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
       <NavigationWrapper isHidden={false} floating={false}>
         <NavigationMenuStyled>
-          <ToggleMobileNavButton onClick={onCloseClick} Icon={RiCloseLine} />
+          <MobileNavButtons onMenuButtonClick={onCloseClick} Icon={RiCloseLine} />
         </NavigationMenuStyled>
       </NavigationWrapper>
 
@@ -70,8 +70,6 @@ const MobileNavigationMenu = ({ onCloseClick }: MobileNavigationMenuProps) => {
             <NavigationMenuSocials enabledItems={socialIcons} />
           </MobileMenuItem>
         )}
-
-        <ThemeToggle />
       </MobileMenuItems>
     </MobileNavigationMenuStyled>
   )
@@ -128,14 +126,15 @@ const MobileMenuExpandableItem = ({
 }
 
 interface ToggleMobileNavButtonProps {
-  onClick: () => void
+  onMenuButtonClick: () => void
   Icon: IconType
 }
 
-export const ToggleMobileNavButton = ({ onClick, Icon }: ToggleMobileNavButtonProps) => (
-  <ToggleMobileNavButtonStyled onClick={onClick}>
-    <Icon size={20} style={{ cursor: 'pointer' }} />
-  </ToggleMobileNavButtonStyled>
+export const MobileNavButtons = ({ onMenuButtonClick, Icon }: ToggleMobileNavButtonProps) => (
+  <MobileNavButtonsStyled>
+    <ThemeToggle />
+    <Icon size={20} style={{ cursor: 'pointer' }} onClick={onMenuButtonClick} />
+  </MobileNavButtonsStyled>
 )
 
 export const navigationMenuQuery = graphql`
@@ -190,12 +189,12 @@ const NavLink = styled(SimpleLink)`
   }
 `
 
-const ToggleMobileNavButtonStyled = styled.div`
+const MobileNavButtonsStyled = styled.div`
   position: relative;
   display: none;
   justify-content: center;
   align-items: center;
-
+  gap: var(--spacing-4);
   margin-left: auto;
   padding-right: 30px;
   margin-right: -30px;

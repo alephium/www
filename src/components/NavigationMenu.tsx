@@ -12,7 +12,7 @@ import LogoText from '../images/svgs/logo-text.svg'
 import { deviceBreakPoints } from '../styles/global-style'
 import { notEmpty } from '../utils/misc'
 import NavigationMenuSocials from './navigation/NavigationMenuSocials'
-import MobileNavigationMenu, { ToggleMobileNavButton } from './NavigationMenuMobile'
+import MobileNavigationMenu, { MobileNavButtons } from './NavigationMenuMobile'
 import SimpleLink from './SimpleLink'
 import ThemeToggle from './ThemeToggle'
 import TranslateComponent from './TranslateComponent'
@@ -68,7 +68,7 @@ const NavigationMenu = ({ className, floating = true }: NavigationMenuProps) => 
             </LinkStyled>
           </div>
           <NavigationItems className="nav-end" />
-          <ToggleMobileNavButton onClick={() => setIsMobileNavOpen(true)} Icon={RiMenu3Fill} />
+          <MobileNavButtons onMenuButtonClick={() => setIsMobileNavOpen(true)} Icon={RiMenu3Fill} />
         </NavigationMenuStyled>
       </NavigationWrapper>
       <AnimatePresence>
