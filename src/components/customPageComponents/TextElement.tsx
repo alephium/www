@@ -229,6 +229,12 @@ const TextElement = styled.div<TextElementProps>`
 
     & + a {
       margin-left: var(--spacing-2);
+
+      @media ${deviceBreakPoints.mobile} {
+        margin-top: var(--spacing-1);
+        margin-right: var(--spacing-1);
+        margin-left: var(--spacing-1);
+      }
     }
   }
 
