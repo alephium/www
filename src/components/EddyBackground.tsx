@@ -19,8 +19,8 @@ export interface MeshGradientEffectProps {
 const MeshGradientEffect: FC<MeshGradientEffectProps> = ({ className }) => {
   const theme = useTheme()
 
-  const leftGradient = `radial-gradient(circle at 0% 50%, ${theme.palette2} 10%, ${theme.palette5} 20%, ${theme.palette1} 60%, ${theme.palette3} 70%, transparent 80%)`
-  const rightGradient = `radial-gradient(circle at 100% 50%, ${theme.palette2} 10%, ${theme.palette5} 20%, ${theme.palette1} 60%, ${theme.palette3} 70%, transparent 80%)`
+  const leftGradient = `radial-gradient(circle at 0% 50%, ${theme.palette2} 15%, ${theme.palette5} 30%, ${theme.palette1} 50%, ${theme.palette3} 60%, transparent 70%)`
+  const rightGradient = `radial-gradient(circle at 100% 50%, ${theme.palette2} 15%, ${theme.palette5} 30%, ${theme.palette1} 50%, ${theme.palette3} 60%, transparent 70%)`
 
   return (
     <EddyBackgroundContainer className={className}>
@@ -41,7 +41,7 @@ export default MeshGradientEffect
 const getColorFilters = (theme: DefaultTheme) => `
     brightness(${theme.name === 'dark' ? 1 : 1.4})
     saturate(${theme.name === 'dark' ? 1.3 : 1})
-    contrast(${theme.name === 'dark' ? 1 : 1});
+    contrast(${theme.name === 'dark' ? 1.2 : 1});
 `
 
 const EddyBackgroundContainer = styled.div`

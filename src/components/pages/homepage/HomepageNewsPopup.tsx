@@ -27,12 +27,8 @@ const HomepageNewsPopup = () => {
   return (
     <NewsCardContainer>
       <NewsCard
-        onClick={() => !isVisible && toggleVisibility(true)}
         initial="hidden"
         animate={!isMounted ? 'hidden' : isVisible ? 'visible' : 'slideOut'}
-        style={{
-          cursor: !isVisible ? 'pointer' : 'default'
-        }}
         variants={{
           hidden: {
             opacity: 0,
@@ -40,8 +36,7 @@ const HomepageNewsPopup = () => {
             transition: {
               type: 'spring',
               stiffness: 100,
-              damping: 15,
-              duration: 0.5
+              damping: 15
             }
           },
           visible: {
@@ -52,18 +47,18 @@ const HomepageNewsPopup = () => {
               type: 'spring',
               stiffness: 100,
               damping: 15,
-              duration: 0.5
+              bounce: 0
             }
           },
           slideOut: {
-            opacity: 1,
-            y: isMobile ? '130%' : 0,
+            opacity: 0,
+            y: isMobile ? '140%' : 0,
             x: isMobile ? 0 : '100%',
             transition: {
               type: 'spring',
               stiffness: 200,
               damping: 20,
-              duration: 0.5
+              bounce: 0
             }
           }
         }}
