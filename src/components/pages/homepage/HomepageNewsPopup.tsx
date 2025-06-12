@@ -118,7 +118,7 @@ const NewsCard = styled(motion.div)<{ border?: boolean }>`
   border: 1px solid ${({ theme }) => theme.borderPrimary};
   background-color: ${({ theme }) => colord(theme.background1).lighten(0.15).alpha(0.7).toHex()};
   backdrop-filter: blur(60px) saturate(3) brightness(1.2);
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, ${({ theme }) => (theme.name === 'light' ? 0.2 : 0.4)});
   border-radius: var(--radius-large);
   padding: var(--spacing-3);
   border-radius: var(--radius);

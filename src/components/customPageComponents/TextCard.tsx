@@ -1,9 +1,10 @@
 import { colord } from 'colord'
 import { motion, useMotionValue, useSpring, useTransform, Variants } from 'framer-motion'
 import { PointerEvent, ReactNode, useEffect, useRef } from 'react'
-import styled, { css } from 'styled-components'
+import styled, { css, useTheme } from 'styled-components'
 
 import { deviceBreakPoints } from '../../styles/global-style'
+import { getColordColor } from '../../styles/themes'
 import { getPointerRelativePositionInElement } from '../../utils/pointer'
 import SimpleLink from '../SimpleLink'
 import TextElement, { TextElementProps } from './TextElement'
@@ -63,6 +64,7 @@ interface CardProps {
 const Card = ({ children, url, isAnimated, border, bgColor }: CardProps) => {
   const angle = 1.2
   const cardRef = useRef<HTMLDivElement>(null)
+  const theme = useTheme()
 
   const y = useMotionValue(0.5)
   const x = useMotionValue(0.5)
@@ -94,6 +96,13 @@ const Card = ({ children, url, isAnimated, border, bgColor }: CardProps) => {
       unsubscribeY()
     }
   }, [springX, springY])
+
+  useEffect(() => {
+    if (cardRef.current && !bgColor) {
+      const computedColor = getColordColor(theme.background1).alpha(0.7).toHex()
+      cardRef.current.style.backgroundColor = computedColor
+    }
+  }, [theme.background1, bgColor])
 
   const onMove = (e: PointerEvent) => {
     const { x: positionX, y: positionY } = getPointerRelativePositionInElement(e)
@@ -212,14 +221,15 @@ const CardStyled = styled(motion.div)<{
   position: relative;
   flex-direction: column;
   border-radius: var(--radius);
-  background-color: ${({ theme, bgColor }) => (bgColor ? theme[bgColor] : theme.background1)};
+  background-color: ${({ theme, bgColor }) => (bgColor ? theme[bgColor] : 'transparent')};
+  backdrop-filter: blur(50px) saturate(120%) brightness(1.1);
   text-decoration: none;
   transition: all 0.1s ease-out;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
-  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, ${({ theme }) => (theme.name === 'light' ? 0.1 : 0.4)});
 
   &:hover::after {
     content: '';
@@ -234,7 +244,8 @@ const CardStyled = styled(motion.div)<{
   ${({ border }) =>
     border &&
     css`
-      box-shadow: inset 0 0 0 1px ${({ theme }) => theme.borderPrimary}, 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+      box-shadow: inset 0 0 0 1px ${({ theme }) => theme.borderPrimary},
+        0 10px 30px 0 rgba(0, 0, 0, ${({ theme }) => (theme.name === 'light' ? 0.1 : 0.4)});
     `}
 
   ${({ url }) => url && 'transform-style: preserve-3d;'}

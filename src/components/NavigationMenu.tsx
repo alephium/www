@@ -200,7 +200,7 @@ const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean; scr
 
   border: 1px solid ${({ theme }) => theme.borderPrimary};
   border-radius: var(--radius-full);
-  box-shadow: 0 20px 20px rgba(0, 0, 0, ${({ theme }) => (theme.name === 'dark' ? 0.1 : 0.025)});
+  box-shadow: 0 20px 20px rgba(0, 0, 0, ${({ theme }) => (theme.name === 'dark' ? 0.4 : 0.025)});
 
   ${({ floating }) =>
     !floating &&
