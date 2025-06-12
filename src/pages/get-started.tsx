@@ -147,7 +147,7 @@ const CustomPage = (props: PageProps) => {
             </TextElement>
           </SubpageImageHeroSection>
 
-          <SubpageSection isCentered edgeGradient border bgColor="2" wide>
+          <SubpageSection isCentered edgeGradient border="all" bgColor="2" wide>
             <TextElement isCentered>
               <h2>Build on Alephium</h2>
               <p>
@@ -271,7 +271,7 @@ const GetAlphSection = () => {
 
       <SectionDivider double />
 
-      <SubpageSection bgColor="2" fullWidth edgeGradient gradientPosition="top" border>
+      <SubpageSection bgColor="2" fullWidth edgeGradient border="top-bottom" gradientPosition="top">
         <SubpageSection>
           <TextElement>
             <h2>Get ALPH</h2>

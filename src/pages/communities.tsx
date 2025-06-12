@@ -26,7 +26,7 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageSection edgeGradient gradientPosition="top" fullWidth>
+          <SubpageSection edgeGradient fullWidth border="bottom">
             <TextElement isCentered>
               <h1>
                 Online

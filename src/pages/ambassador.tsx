@@ -41,7 +41,7 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageSection fullWidth edgeGradient gradientPosition="top">
+          <SubpageSection fullWidth edgeGradient border="bottom">
             <TextElement isCentered>
               <h1>
                 Become an Alephium
@@ -74,7 +74,7 @@ const CustomPage = (props: PageProps) => {
 
           <HowToApply />
 
-          <SubpageSection border edgeGradient>
+          <SubpageSection border="all" edgeGradient>
             <TextElement isCentered>
               <h2>Ready to Join?</h2>
               <p>

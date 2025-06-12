@@ -39,8 +39,8 @@ const MeshGradientEffect: FC<MeshGradientEffectProps> = ({ className }) => {
 export default MeshGradientEffect
 
 const getColorFilters = (theme: DefaultTheme) => `
-    brightness(${theme.name === 'dark' ? 1.3 : 1.4})
-    saturate(${theme.name === 'dark' ? 1.2 : 1})
+    brightness(${theme.name === 'dark' ? 1 : 1.4})
+    saturate(${theme.name === 'dark' ? 1.3 : 1})
     contrast(${theme.name === 'dark' ? 1 : 1});
 `
 

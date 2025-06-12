@@ -12,7 +12,7 @@ interface SubpageSectionProps extends HTMLAttributes<HTMLDivElement> {
   fullWidth?: boolean
   narrow?: boolean
   bgColor?: '1' | '2' | '3'
-  border?: boolean
+  border?: 'top' | 'bottom' | 'top-bottom' | 'all'
   isCentered?: boolean
   className?: string
   edgeGradient?: boolean
@@ -47,7 +47,23 @@ const SubpageSectionStyled = styled(PageSectionContainer)<SubpageSectionProps>`
   ${({ border }) =>
     border &&
     css`
-      box-shadow: inset 0 0 0 1px ${({ theme }) => theme.borderPrimary};
+      ${border === 'top' &&
+      css`
+        box-shadow: inset 0 1px 0 0 ${({ theme }) => theme.borderPrimary};
+      `}
+      ${border === 'bottom' &&
+      css`
+        box-shadow: inset 0 -1px 0 0 ${({ theme }) => theme.borderPrimary};
+      `}
+      ${border === 'top-bottom' &&
+      css`
+        box-shadow: inset 0 1px 0 0 ${({ theme }) => theme.borderPrimary},
+          inset 0 -1px 0 0 ${({ theme }) => theme.borderPrimary};
+      `}
+      ${border === 'all' &&
+      css`
+        box-shadow: inset 0 0 0 1px ${({ theme }) => theme.borderPrimary};
+      `}
     `}
 
   ${({ edgeGradient, gradientPosition = 'bottom', theme }) =>
@@ -57,8 +73,8 @@ const SubpageSectionStyled = styled(PageSectionContainer)<SubpageSectionProps>`
         content: '';
         position: absolute;
         width: 100%;
-        height: 20%;
-        max-height: 50px;
+        height: 15%;
+        max-height: 40px;
         ${gradientPosition.includes('top') ? 'top: 0;' : 'bottom: 0;'}
         ${gradientPosition.includes('left')
           ? 'left: 0;'
@@ -77,8 +93,7 @@ const SubpageSectionStyled = styled(PageSectionContainer)<SubpageSectionProps>`
         );
         pointer-events: none;
         opacity: 0.8;
-        filter: blur(60px) brightness(${theme.name === 'dark' ? 1.3 : 1.4})
-          saturate(${theme.name === 'dark' ? 1.2 : 1.6});
+        filter: blur(60px) brightness(${theme.name === 'dark' ? 1 : 1.4}) saturate(${theme.name === 'dark' ? 1 : 1.6});
       }
     `}
 `

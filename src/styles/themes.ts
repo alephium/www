@@ -25,12 +25,12 @@ export const darkTheme: DefaultTheme = {
 
   separator: 'var(--color-grey-700)',
 
-  palette1: '#4eb1ff',
-  palette2: '#ffd64c',
-  palette3: '#6073ff',
-  palette4: '#ef53ee',
-  palette5: '#ff678e',
-  palette6: '#ffbc70'
+  palette1: '#89cbff',
+  palette2: '#ffe283',
+  palette3: '#9aa6ff',
+  palette4: '#ef9cee',
+  palette5: '#ff9db6',
+  palette6: '#ffce97'
 }
 
 export const lightTheme: DefaultTheme = {
