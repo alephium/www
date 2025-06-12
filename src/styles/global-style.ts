@@ -30,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
       font-size: 13px;
     }
 
-    --page-width: min(80vw, 1400px);
+    --page-width: min(85vw, 1400px);
     --page-width-shrinked: 68rem;
 
     --width-16: 1rem;
@@ -83,9 +83,9 @@ const GlobalStyle = createGlobalStyle`
     --spacing-35: 17.5rem;   // 280pt
 
     --radius-tiny: 4px;
-    --radius-small: 12px;
-    --radius: 16px;
-    --radius-big: 23px;
+    --radius-small: 9px;
+    --radius: 14px;
+    --radius-big: 19px;
     --radius-full: 9999px;
 
     --fontFamily-sans: "Geist", "InterDisplay", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
@@ -120,6 +120,7 @@ const GlobalStyle = createGlobalStyle`
     --fontSize-68: 4.25rem;
     --fontSize-70: 4.375rem;
     --fontSize-72: 4.5rem;
+    --fontSize-76: 4.75rem;
     --fontSize-80: 5rem;
     --lineHeight-22: 1.375rem;
     --lineHeight-26: 1.625rem;
@@ -134,15 +135,15 @@ const GlobalStyle = createGlobalStyle`
     --color-grey-250: #c7c7c7;
     --color-grey-300: #868686;
     --color-grey-400: #6e6e6e;
-    --color-grey-500:rgb(74, 74, 74);
-    --color-grey-550:rgb(70, 70, 70);
-    --color-grey-600:rgb(66, 66, 66);
-    --color-grey-700: rgb(53, 53, 53);
-    --color-grey-750: rgb(44, 44, 44);
-    --color-grey-800: rgb(38, 38, 38);
-    --color-grey-850: rgb(32, 32, 32);
-    --color-grey-900: rgb(23, 23, 23);
-    --color-grey-950: rgb(14, 14, 14);
+    --color-grey-500: #4a4a4a;
+    --color-grey-550: #464646;
+    --color-grey-600: #424242;
+    --color-grey-700: #353535;
+    --color-grey-750: #2c2c2c;
+    --color-grey-800: #262626;
+    --color-grey-850: #202020;
+    --color-grey-900: #141414;
+    --color-grey-950: #0e0e0e;
     --color-black: #000;
     --color-salmon: #ff5d51;
     --color-blue: #4899ff;

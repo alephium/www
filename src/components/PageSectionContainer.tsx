@@ -10,6 +10,7 @@ export interface PageSectionContainerProps {
   fullHeight?: boolean
   contrasted?: boolean
   justifyContent?: 'center' | 'flex-start'
+  bgColor?: '1' | '2' | '3'
 }
 
 const PageSectionContainer = styled.div<PageSectionContainerProps>`
@@ -17,12 +18,16 @@ const PageSectionContainer = styled.div<PageSectionContainerProps>`
   flex-direction: column;
   justify-content: ${({ justifyContent }) => justifyContent || 'flex-start'};
   max-width: ${({ narrow, wide, fullWidth }) =>
-    narrow ? '680px' : fullWidth ? '100%' : wide ? '80vw' : 'var(--page-width)'};
+    narrow ? '680px' : fullWidth ? '100%' : wide ? '88vw' : 'var(--page-width)'};
   height: ${({ fullHeight }) => (fullHeight ? '100vh' : 'auto')};
   margin: 0 auto;
   position: relative;
-  background-color: ${({ theme, contrasted }) =>
-    contrasted ? colord(theme.background1).lighten(0.1).toRgbString() : 'none'};
+  background-color: ${({ theme, contrasted, bgColor }) =>
+    contrasted
+      ? colord(theme.background1).lighten(0.1).toRgbString()
+      : bgColor
+      ? theme[`background${bgColor}`]
+      : 'none'};
   box-sizing: border-box;
 
   @media ${deviceBreakPoints.mobile} {

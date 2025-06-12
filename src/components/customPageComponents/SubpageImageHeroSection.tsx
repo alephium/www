@@ -1,6 +1,6 @@
 import { getImage, IGatsbyImageData } from 'gatsby-plugin-image'
 import { ReactNode } from 'react'
-import { ThemeProvider } from 'styled-components'
+import { ThemeProvider, useTheme } from 'styled-components'
 
 import { darkTheme } from '../../styles/themes'
 import GatsbyImageWrapper from '../GatsbyImageWrapper'
@@ -20,19 +20,22 @@ const SubpageImageHeroSection = ({
   children,
   backgroundImage,
   backgroundImageAlt = '',
+  split,
   ...props
 }: SubpageImageHeroSectionProps) => {
   const imageData = backgroundImage?.childImageSharp?.gatsbyImageData
   const image = imageData ? getImage(imageData) : undefined
+  const theme = useTheme()
 
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={backgroundImage && !split ? darkTheme : theme}>
       <SubpageHeroSection
         mediaContent={
           backgroundImage && (
             <GatsbyImageWrapper image={image} alt={backgroundImageAlt} style={{ height: '100%' }} objectFit="cover" />
           )
         }
+        split={split}
         {...props}
       >
         {children}

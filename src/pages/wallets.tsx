@@ -109,9 +109,7 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SectionDivider />
-
-          <SubpageSection bgColor="2" wide border edgeGradient gradientPosition="top">
+          <SubpageSection fullWidth edgeGradient border="bottom">
             <TextElement isCentered>
               <h1>
                 Our Wallets,
@@ -153,7 +151,7 @@ const CustomPage = (props: PageProps) => {
               </TextElement>
               <WalletCarousel images={mobileScreenshots.nodes.map((node) => node.childImageSharp?.gatsbyImageData)} />
             </SideBySide>
-            <SectionDivider />
+            <SectionDivider border />
             <SideBySide reverseOnMobile>
               <TextElement isBodySmall>
                 <h3>Desktop Wallet</h3>
@@ -179,7 +177,7 @@ const CustomPage = (props: PageProps) => {
               </TextElement>
               <WalletCarousel images={desktopScreenshots.nodes.map((node) => node.childImageSharp?.gatsbyImageData)} />
             </SideBySide>
-            <SectionDivider />
+            <SectionDivider border />
             <SideBySide reverseOnMobile>
               <TextElement isBodySmall>
                 <h3>Browser Extension Wallet</h3>
@@ -222,7 +220,7 @@ const CustomPage = (props: PageProps) => {
 
               <Grid columns={5} gap="small">
                 <ClickableBox url="https://support.ledger.com/article/Alephium-ALPH" orientation="vertical">
-                  <ImageIcon
+                  <ImageIconStyled
                     src={ledgerLogo?.publicURL ?? ''}
                     alt="Ledger logo"
                     rounded
@@ -235,7 +233,7 @@ const CustomPage = (props: PageProps) => {
                   </TextElement>
                 </ClickableBox>
                 <ClickableBox url="https://onekey.so" orientation="vertical">
-                  <ImageIcon
+                  <ImageIconStyled
                     src={onekeyLogo?.publicURL ?? ''}
                     alt="Onekey logo"
                     rounded
@@ -248,7 +246,7 @@ const CustomPage = (props: PageProps) => {
                   </TextElement>
                 </ClickableBox>
                 <ClickableBox url="https://www.safepal.com" orientation="vertical">
-                  <ImageIcon
+                  <ImageIconStyled
                     src={safepalLogo?.publicURL ?? ''}
                     alt="SafePal logo"
                     rounded
@@ -261,7 +259,7 @@ const CustomPage = (props: PageProps) => {
                   </TextElement>
                 </ClickableBox>
                 <ClickableBox url="https://tangem.com" orientation="vertical">
-                  <ImageIcon
+                  <ImageIconStyled
                     src={tangemLogo?.publicURL ?? ''}
                     alt="Tangem logo"
                     rounded
@@ -274,7 +272,7 @@ const CustomPage = (props: PageProps) => {
                   </TextElement>
                 </ClickableBox>
                 <ClickableBox url="https://www.goldshell.com" orientation="vertical">
-                  <ImageIcon
+                  <ImageIconStyled
                     src={goldshellLogo?.publicURL ?? ''}
                     alt="Goldshell logo"
                     rounded
@@ -356,11 +354,12 @@ const CarouselContainer = styled.div`
   width: 100%;
   position: relative;
   margin-bottom: 20px;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: ${({ theme }) => theme.background2};
   padding: var(--spacing-2);
   padding-bottom: var(--spacing-6);
   border-radius: var(--radius);
   border: 1px solid ${({ theme }) => theme.borderPrimary};
+  box-sizing: border-box;
 
   .slick-dots {
     bottom: -30px;
@@ -376,4 +375,8 @@ const CarouselContainer = styled.div`
       }
     }
   }
+`
+
+const ImageIconStyled = styled(ImageIcon)`
+  filter: ${({ theme }) => (theme.name === 'light' ? 'invert(1)' : 'none')};
 `

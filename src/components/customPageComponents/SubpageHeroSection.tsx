@@ -17,15 +17,17 @@ export interface SubpageHeroSectionProps extends React.HTMLAttributes<HTMLElemen
 }
 
 const SubpageHeroSection = forwardRef<HTMLElement, SubpageHeroSectionProps>(function SubpageHeroSection(
-  { children, mediaContent, alignContent, split, ...props },
+  { children, alignContent, split, ...props },
   ref
 ) {
   return (
     <SubpageHeroSectionStyled ref={ref} split={split} {...props}>
-      <BackgroundMediaWrapper split={split}>{mediaContent}</BackgroundMediaWrapper>
+      <BackgroundMediaWrapper split={split}>{props.mediaContent}</BackgroundMediaWrapper>
       <HeroPageSectionContainer alignContent={alignContent} split={split}>
         <ContentWrapper alignContent={alignContent} split={split}>
-          <TextElementStyled split={split}>{children}</TextElementStyled>
+          <TextElementStyled split={split} isCentered={alignContent === 'center'}>
+            {children}
+          </TextElementStyled>
         </ContentWrapper>
       </HeroPageSectionContainer>
     </SubpageHeroSectionStyled>
@@ -40,13 +42,13 @@ const SubpageHeroSectionStyled = styled.section<SubpageHeroSectionProps>`
   min-height: ${({ split, minHeight }) => (split ? 'unset' : minHeight || '75vh')};
   margin: auto;
   margin-bottom: ${({ bottomMargin }) => (bottomMargin ? 'var(--spacing-10)' : '0')};
-  width: ${({ narrow }) => (narrow ? 'var(--page-width)' : '80vw')};
+  width: ${({ narrow }) => (narrow ? 'var(--page-width)' : '85vw')};
   overflow: hidden;
-  transition: all 0.4s ease-in;
   display: flex;
   align-items: stretch;
   border-radius: var(--radius-big);
   gap: ${({ split }) => (split ? 'var(--spacing-4)' : '0')};
+  flex-direction: row-reverse;
 
   &::before {
     content: '';
@@ -111,13 +113,13 @@ const HeroPageSectionContainer = styled.div<Pick<SubpageHeroSectionProps, 'align
   flex-direction: column;
   position: relative;
   display: flex;
-  flex: ${({ alignContent }) => (alignContent === 'center' ? 'none' : '1')};
+  flex: 1;
   justify-content: ${({ alignContent }) =>
     alignContent === 'bottom' ? 'flex-end' : alignContent === 'center' ? 'center' : 'flex-start'};
   height: ${({ split }) => (split ? '100%' : 'auto')};
   align-self: stretch;
   border-radius: var(--radius-big);
-  background-color: ${({ theme, split }) => (split ? theme.surface2 : 'transparent')};
+  background-color: ${({ theme, split }) => (split ? theme.background2 : 'transparent')};
 
   ${({ split }) =>
     split &&
@@ -139,6 +141,12 @@ const ContentWrapper = styled.div<Pick<SubpageHeroSectionProps, 'alignContent' |
   margin-top: 5%;
   margin-bottom: 5%;
   margin-left: 5%;
+  ${({ alignContent }) =>
+    alignContent === 'center' &&
+    css`
+      margin: auto;
+    `}
+
   display: flex;
   flex-direction: column;
   z-index: 2;

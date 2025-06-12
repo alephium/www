@@ -2,17 +2,20 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { graphql, Link, useStaticQuery } from 'gatsby'
 import throttle from 'lodash/throttle'
 import { ReactNode, useEffect, useRef, useState } from 'react'
-import { RiTranslate2 } from 'react-icons/ri'
+import { RiCloseLine, RiTranslate2 } from 'react-icons/ri'
 import { RiMenu3Fill } from 'react-icons/ri'
 import styled, { css, useTheme } from 'styled-components'
 
+import useIsMobile from '../hooks/useIsMobile'
 import useOnClickOutside from '../hooks/useOnClickOutside'
 import LogoText from '../images/svgs/logo-text.svg'
 import { deviceBreakPoints } from '../styles/global-style'
+import { getColordColor } from '../styles/themes'
 import { notEmpty } from '../utils/misc'
 import NavigationMenuSocials from './navigation/NavigationMenuSocials'
-import MobileNavigationMenu, { ToggleMobileNavButton } from './NavigationMenuMobile'
+import MobileNavigationMenu, { MobileNavButtons } from './NavigationMenuMobile'
 import SimpleLink from './SimpleLink'
+import ThemeToggle from './ThemeToggle'
 import TranslateComponent from './TranslateComponent'
 
 interface NavigationMenuProps {
@@ -27,11 +30,12 @@ const NavigationMenu = ({ className, floating = true }: NavigationMenuProps) => 
   const [isHidden, setIsHidden] = useState(false)
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const isMobile = useIsMobile()
 
   useEffect(() => {
     const handleScroll = throttle(() => {
       const currentScrollY = window.scrollY
-      setScrolled(currentScrollY > 100)
+      setScrolled(currentScrollY > 20)
 
       const scrollDelta = currentScrollY - lastScrollY.current
 
@@ -51,7 +55,7 @@ const NavigationMenu = ({ className, floating = true }: NavigationMenuProps) => 
     window.addEventListener('scroll', handleScroll)
 
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  }, [isMobile])
 
   return (
     <>
@@ -63,23 +67,18 @@ const NavigationMenu = ({ className, floating = true }: NavigationMenuProps) => 
             </LinkStyled>
           </div>
           <NavigationItems className="nav-end" />
-          <ToggleMobileNavButton onClick={() => setIsMobileNavOpen(true)} Icon={RiMenu3Fill} />
+          <MobileNavButtons
+            onMenuButtonClick={() => setIsMobileNavOpen(!isMobileNavOpen)}
+            Icon={isMobileNavOpen ? RiCloseLine : RiMenu3Fill}
+          />
         </NavigationMenuStyled>
       </NavigationWrapper>
-      <AnimatePresence>
-        {isMobileNavOpen && <MobileNavigationMenu onCloseClick={() => setIsMobileNavOpen(false)} />}
-      </AnimatePresence>
-      <NavigationTopSpacing />
+      <AnimatePresence>{isMobileNavOpen && <MobileNavigationMenu />}</AnimatePresence>
     </>
   )
 }
 
 export default NavigationMenu
-
-const NavigationTopSpacing = styled.div`
-  width: 100%;
-  height: max(8vh, 70px);
-`
 
 const NavigationItems = ({ className }: { className?: string }) => {
   const theme = useTheme()
@@ -113,11 +112,11 @@ const NavigationItems = ({ className }: { className?: string }) => {
             )
         )}
       </MenuItems>
-      {/*<ThemeToggle />*/}
+      <ThemeToggle />
       <NavigationDrawer Icon={<RiTranslate2 color={theme.textSecondary} size={20} />}>
         <TranslateComponent />
       </NavigationDrawer>
-
+      <VerticalDivider />
       {socialIcons && <NavigationMenuSocials enabledItems={socialIcons} />}
     </div>
   )
@@ -182,17 +181,26 @@ export const navigationMenuQuery = graphql`
 
 const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean; scrolled: boolean }>`
   position: fixed;
-  top: ${({ isHidden }) => (isHidden ? '-100px' : 0)};
+  top: ${({ isHidden }) => (isHidden ? '-10px' : 'var(--spacing-3)')};
+  opacity: ${({ isHidden }) => (isHidden ? 0 : 1)};
+  width: 60vw;
+  min-width: 800px;
+  max-width: 700px;
   right: 0;
   left: 0;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 72px;
+  height: 56px;
   z-index: 10000;
-  transition: top 0.3s ease-in-out;
-  backdrop-filter: blur(100px) brightness(${({ scrolled }) => (scrolled ? '30%' : '100%')});
-  border-bottom: 1px solid ${({ theme, scrolled }) => (scrolled ? theme.borderPrimary : 'transparent')};
+  transition: top 0.2s ease-out, opacity 0.2s ease-out;
+  background-color: ${({ theme }) => getColordColor(theme.background1).alpha(0.85).toHex()};
+  backdrop-filter: blur(40px) saturate(120%);
+
+  border: 1px solid ${({ theme }) => theme.borderPrimary};
+  border-radius: var(--radius-full);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, ${({ theme }) => (theme.name === 'dark' ? 0.4 : 0.025)});
 
   ${({ floating }) =>
     !floating &&
@@ -201,8 +209,8 @@ const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean; scr
     `}
 
   @media ${deviceBreakPoints.ipad} {
-    padding-right: 30px;
-    padding-left: 30px;
+    width: 90vw;
+    min-width: auto;
   }
 `
 
@@ -211,12 +219,12 @@ const NavigationMenuStyled = styled.div`
   display: flex;
   font-weight: var(--fontWeight-medium);
   z-index: 1;
-  padding: 0 30px;
+  padding: 0 24px;
 
   .nav-end {
     display: flex;
     margin-left: var(--spacing-3);
-    gap: var(--spacing-5);
+    gap: var(--spacing-4);
     align-items: center;
     flex: 1;
 
@@ -255,10 +263,13 @@ const LinkStyled = styled(Link)`
 `
 
 const LogoTextStyled = styled(LogoText)`
-  height: 24px;
-  fill: ${({ theme }) => theme.textPrimary};
+  height: 22px;
   width: auto;
   transform: translateY(2px);
+
+  * {
+    fill: ${({ theme }) => theme.textPrimary} !important;
+  }
 `
 
 const LinkStyle = css`
@@ -295,7 +306,7 @@ const DrawerWrapper = styled.div`
 `
 
 const DrawerTitle = styled.span`
-  font-size: var(--fontSize-18);
+  font-size: var(--fontSize-16);
   color: ${({ theme }) => theme.textPrimaryVariation};
 `
 
@@ -308,7 +319,7 @@ const Drawer = styled(motion.div)`
   background-color: ${({ theme }) => theme.background1};
   border-radius: var(--radius-small);
   border: 1px solid ${({ theme }) => theme.borderPrimary};
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   z-index: 1000;
@@ -337,4 +348,10 @@ const DrawerItemTitle = styled.div`
   font-size: var(--fontSize-14);
   color: ${({ theme }) => theme.textTertiary};
   padding-top: 20px;
+`
+
+const VerticalDivider = styled.div`
+  width: 1px;
+  height: 100%;
+  background-color: ${({ theme }) => theme.borderPrimary};
 `

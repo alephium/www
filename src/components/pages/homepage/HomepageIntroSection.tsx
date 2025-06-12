@@ -54,7 +54,7 @@ const HomepageIntroSection = () => {
         title: 'Wallets',
         description: (
           <>
-            <strong>Get your user-friendly wallet.</strong> Your gateway to the Alephium ecosystem.
+            Get one of the <strong>user-friendly Alephium wallets.</strong>
           </>
         ),
         actionText: 'Wallets',
@@ -120,7 +120,7 @@ const HomepageIntroSection = () => {
   )
 
   return (
-    <SubpageSectionStyled id="intro">
+    <SubpageSectionStyled id="intro" noTopPadding overflow="visible">
       {/* <TextElement isCentered>
         <h2>
           A Network Built
@@ -144,7 +144,7 @@ const HomepageIntroSection = () => {
           {hardcodedCards.slice(0, 2).map((card) => (
             <TextCard border url={card.link.url} variants={cardVariants} key={card.title}>
               <TextCardContent>
-                <h3 style={{ color: card.color }}>{card.title}</h3>
+                <h4 style={{ color: card.color }}>{card.title}</h4>
                 <p>{card.description}</p>
               </TextCardContent>
             </TextCard>
@@ -154,7 +154,7 @@ const HomepageIntroSection = () => {
           {hardcodedCards.slice(2, 4).map((card) => (
             <TextCard border url={card.link.url} variants={cardVariants} key={card.title}>
               <TextCardContent>
-                <h3 style={{ color: card.color }}>{card.title}</h3>
+                <h4 style={{ color: card.color }}>{card.title}</h4>
                 <p>{card.description}</p>
               </TextCardContent>
             </TextCard>
@@ -168,7 +168,7 @@ const HomepageIntroSection = () => {
 export default HomepageIntroSection
 
 const SubpageSectionStyled = styled(SubpageSection)`
-  padding-top: var(--spacing-6);
+  padding-top: var(--spacing-8);
 `
 
 const cardVariants = {

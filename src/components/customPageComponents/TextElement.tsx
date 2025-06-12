@@ -44,7 +44,12 @@ const TextElement = styled.div<TextElementProps>`
     isCentered &&
     css`
       * > hr {
-        background: linear-gradient(to right, transparent 25%, var(--color-white) 50%, transparent 75%) !important;
+        background: linear-gradient(
+          to right,
+          transparent 25%,
+          ${({ theme }) => theme.borderPrimary} 50%,
+          transparent 75%
+        );
       }
     `};
 
@@ -75,10 +80,14 @@ const TextElement = styled.div<TextElementProps>`
 
   > h1 {
     font-family: 'Geist';
-    line-height: 1;
+    line-height: 0.9;
 
-    font-size: var(--fontSize-72);
+    font-size: var(--fontSize-76);
     font-weight: var(--fontWeight-semiBold);
+
+    + p {
+      font-size: var(--fontSize-24);
+    }
 
     @media ${deviceBreakPoints.mobile} {
       font-size: var(--fontSize-64);
@@ -88,7 +97,7 @@ const TextElement = styled.div<TextElementProps>`
   > h2 {
     font-family: 'Geist';
     font-size: var(--fontSize-58);
-    margin-bottom: var(--spacing-4);
+    margin-bottom: var(--spacing-6);
     font-weight: var(--fontWeight-semiBold);
     color: ${({ theme }) => theme.textPrimary};
     line-height: 1;
@@ -99,9 +108,13 @@ const TextElement = styled.div<TextElementProps>`
     }
 
     hr {
-      height: 2px;
-      background: linear-gradient(to right, ${({ theme }) => theme.textPrimary}, transparent 50%);
+      height: 3px;
+      background: linear-gradient(to right, ${({ theme }) => theme.borderPrimary}, transparent 50%);
       border: none;
+    }
+
+    @media ${deviceBreakPoints.mobile} {
+      font-size: var(--fontSize-50);
     }
   }
 
@@ -147,12 +160,12 @@ const TextElement = styled.div<TextElementProps>`
   }
 
   * strong {
-    color: var(--color-white);
+    color: ${({ theme }) => theme.textPrimary};
     font-weight: inherit;
   }
 
   > label {
-    color: ${({ theme }) => theme.background1};
+    color: ${({ theme }) => theme.textSecondary};
     font-size: var(--fontSize-14);
     font-weight: var(--fontWeight-medium);
     margin-bottom: var(--spacing-2);
@@ -216,6 +229,12 @@ const TextElement = styled.div<TextElementProps>`
 
     & + a {
       margin-left: var(--spacing-2);
+
+      @media ${deviceBreakPoints.mobile} {
+        margin-top: var(--spacing-1);
+        margin-right: var(--spacing-1);
+        margin-left: var(--spacing-1);
+      }
     }
   }
 

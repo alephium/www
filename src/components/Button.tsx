@@ -1,3 +1,4 @@
+import { colord } from 'colord'
 import { useMotionValue, useSpring } from 'framer-motion'
 import { Link } from 'gatsby'
 import { ReactNode, RefObject, useEffect, useRef } from 'react'
@@ -18,6 +19,7 @@ interface ButtonProps {
   disabled?: boolean
   children?: ReactNode
   highlight?: boolean
+  invert?: boolean
 }
 
 const Button = ({ onClick, className, children, url, disabled, highlight, squared }: ButtonProps) => {
@@ -98,16 +100,14 @@ const Button = ({ onClick, className, children, url, disabled, highlight, square
 const getGradient = (theme: DefaultTheme) => `
   radial-gradient(
     circle at var(--gradient-x) var(--gradient-y),
-    ${theme.textPrimary} 20%,
-    ${theme.palette1} 35%,
-    ${theme.palette2} 40%,
-    ${theme.textPrimary} 50%,
-    ${theme.palette3} 60%,
-    ${theme.palette4} 100%
+    ${theme.palette5} 25%,
+    ${theme.palette4} 40%,
+    ${theme.palette3} 80%,
+    ${theme.palette1} 100%
   )
 `
 
-const getBorderRadius = (squared?: boolean) => (squared ? '12px' : '50px')
+const getBorderRadius = (squared?: boolean) => (squared ? '9px' : '50px')
 const getInnerBorderRadius = (squared?: boolean) => (squared ? 'calc(12px - 3px)' : 'calc(50px - 3px)')
 
 const GradientBorder = styled.div<{ squared?: boolean }>`
@@ -118,15 +118,15 @@ const GradientBorder = styled.div<{ squared?: boolean }>`
   transition: opacity 0.3s ease;
   pointer-events: none;
   z-index: -1;
-  opacity: 0.8;
+  opacity: 0.5;
 
   &::before {
     content: '';
     position: absolute;
     inset: 4px;
     border-radius: ${({ squared }) => getInnerBorderRadius(squared)};
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px) saturate(180%);
+    background: ${({ theme }) => theme.textPrimary};
+    filter: blur(2px);
     z-index: 0;
   }
 
@@ -155,8 +155,9 @@ const ArrowStyled = styled(Arrow)<{ isExternal?: boolean }>`
 `
 
 const StyledButton = styled(Button)`
-  background-color: rgba(255, 255, 255, 0.9);
-  color: black;
+  background-color: ${({ theme, invert }) =>
+    invert ? theme.background1 : colord(theme.textPrimary).alpha(0.9).toHex()};
+  color: ${({ theme, invert }) => (invert ? theme.textPrimary : colord(theme.textPrimary).invert().toHex())};
   --gradient-x: 50%;
   --gradient-y: 50%;
   border-radius: ${({ squared }) => getBorderRadius(squared)};
@@ -174,7 +175,7 @@ const StyledButton = styled(Button)`
   transition: all 0.1s ease-out;
 
   &:hover {
-    filter: saturate(160%);
+    filter: saturate(140%) brightness(${({ theme }) => (theme.name === 'light' ? 1.5 : 1)});
   }
 
   ${({ disabled }) =>
@@ -193,12 +194,14 @@ const StyledButton = styled(Button)`
   .arrow {
     width: ${({ big }) => (big ? '16px' : '14px')};
     margin-left: ${({ big }) => (big ? 'var(--spacing-2)' : 'var(--spacing-1)')};
-    fill: inherit;
+    fill: ${({ theme }) => colord(theme.textPrimary).invert().toHex()};
   }
 
   ${({ highlight }) =>
     highlight &&
     css`
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+
       &:hover {
         &::after {
           opacity: 0.5;

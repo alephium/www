@@ -41,20 +41,16 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SectionDivider />
-
-          <SubpageSection bgColor="3" wide border edgeGradient gradientPosition="top">
+          <SubpageSection fullWidth edgeGradient border="bottom">
             <TextElement isCentered>
-              <h2>
+              <h1>
                 Become an Alephium
                 <br />
                 Ambassador
-              </h2>
+              </h1>
               <p>Help us grow Alephium, one Community at a time.</p>
             </TextElement>
           </SubpageSection>
-
-          <SectionDivider double />
 
           <WhySection />
 
@@ -62,7 +58,7 @@ const CustomPage = (props: PageProps) => {
             <TextElement>
               <h2>
                 What does an <br />
-                Alephium Ambassador do?
+                Ambassador do?
               </h2>
               <p>
                 <strong>
@@ -78,7 +74,7 @@ const CustomPage = (props: PageProps) => {
 
           <HowToApply />
 
-          <SubpageSection border edgeGradient>
+          <SubpageSection border="all" edgeGradient>
             <TextElement isCentered>
               <h2>Ready to Join?</h2>
               <p>
@@ -221,8 +217,8 @@ const WhySection = () => {
       <TextElement>
         <h2>
           Why become
-          <br /> an Alephium Ambassador?
-          <hr />
+          <br />
+          Ambassador?
         </h2>
       </TextElement>
 

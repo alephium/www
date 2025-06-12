@@ -103,25 +103,19 @@ const FooterStyled = styled.div`
     content: '';
     position: absolute;
     width: 100%;
-    height: 80%;
+    height: 60%;
     bottom: 0;
-    left: 0;
     background: radial-gradient(
-      circle at 0% 0%,
-      transparent 0%,
-      transparent 10%,
-      ${({ theme }) => theme.textPrimary} 20%,
-      ${({ theme }) => theme.palette4} 25%,
-      ${({ theme }) => theme.palette6} 30%,
+      circle at 0% 100%,
+      ${({ theme }) => theme.palette2} 0%,
+      ${({ theme }) => theme.palette4} 10%,
       ${({ theme }) => theme.palette1} 40%,
-      ${({ theme }) => theme.palette3} 55%,
-      ${({ theme }) => theme.palette2} 60%,
+      ${({ theme }) => theme.palette3} 60%,
       transparent 65%
     );
-    mask-image: radial-gradient(ellipse 100% 100% at left bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 80%);
-    -webkit-mask-image: radial-gradient(ellipse 100% 100% at left bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 80%);
     pointer-events: none;
-    opacity: 0.5;
+    filter: blur(100px) saturate(1.2) brightness(1.1);
+    opacity: 0.3;
   }
 `
 

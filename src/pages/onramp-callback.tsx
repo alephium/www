@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
-import styled, { ThemeProvider } from 'styled-components'
+import styled from 'styled-components'
 
 import PageSectionContainer from '../components/PageSectionContainer'
+import { ThemeProvider } from '../contexts/ThemeContext'
 import GlobalStyle from '../styles/global-style'
-import { darkTheme } from '../styles/themes'
 
 const CLOSE_ONRAMP_TAB_DEEP_LINK = 'alephium://close-onramp-tab'
 
@@ -21,7 +21,7 @@ const OnrampCallbackPage = () => {
   }, [countdown])
 
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider>
       <GlobalStyle />
       <main style={{ height: '100vh' }}>
         <PageSectionContainerStyled>

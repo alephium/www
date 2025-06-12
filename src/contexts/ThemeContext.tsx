@@ -19,23 +19,35 @@ export const useTheme = () => {
 }
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
-  const [theme, setTheme] = useState<ThemeType>('dark')
+  const [theme, setTheme] = useState<ThemeType>('light')
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme') as ThemeType
-    if (savedTheme) {
-      setTheme(savedTheme)
+    const saved = window.localStorage.getItem('theme') as ThemeType | null
+    const system = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+    setTheme(saved ?? system)
+    setMounted(true)
+
+    // listen for system theme changes
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+    const handleChange = (e: MediaQueryListEvent) => {
+      const newT: ThemeType = e.matches ? 'dark' : 'light'
+      setTheme(newT)
+      window.localStorage.setItem('theme', newT)
     }
+    mediaQuery.addEventListener('change', handleChange)
+    return () => mediaQuery.removeEventListener('change', handleChange)
   }, [])
 
   const toggleTheme = () => {
-    const newTheme = theme === 'dark' ? 'light' : 'dark'
-    setTheme(newTheme)
-    localStorage.setItem('theme', newTheme)
+    const next = theme === 'dark' ? 'light' : 'dark'
+    setTheme(next)
+    window.localStorage.setItem('theme', next)
   }
 
-  const currentTheme = theme === 'dark' ? darkTheme : lightTheme
+  if (!mounted) return null // avoid SSR hydration mismatch
 
+  const currentTheme = theme === 'dark' ? darkTheme : lightTheme
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <StyledThemeProvider theme={currentTheme}>{children}</StyledThemeProvider>

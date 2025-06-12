@@ -6,6 +6,7 @@ import Button from '../../Button'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextElement from '../../customPageComponents/TextElement'
 import EddyBackground from '../../EddyBackground'
+import HomepageIntroSection from './HomepageIntroSection'
 import HomepagePartnersSection from './HomepagePartnersSection'
 
 export const pageQuery = graphql`
@@ -27,21 +28,21 @@ const HomepageHeroSection = () => {
   const content = allMarkdownRemark.nodes[0].frontmatter
 
   return (
-    <SubpageSectionStyled>
-      <EddyBackground />
-      <TextElementStyled isCentered>
+    <SubpageSectionStyled fullWidth>
+      <EddyBackgroundStyled />
+      <TextElement isCentered>
         <h1>
           The Web3
           <br /> you were promised.
         </h1>
         <p>
+          Fast & Scalable Proof-of-Work and secure Smart Contracts,
+          <br />
           <strong>
-            Fast & Scalable Proof-of-Work and secure Smart Contracts,
-            <br />
             <b> only on Alephium.</b>
           </strong>
         </p>
-      </TextElementStyled>
+      </TextElement>
 
       <Buttons>
         <Button big highlight url="/get-started">
@@ -49,6 +50,7 @@ const HomepageHeroSection = () => {
         </Button>
       </Buttons>
       {content?.partnersSection && <HomepagePartnersSection {...content.partnersSection} />}
+      <HomepageIntroSection />
     </SubpageSectionStyled>
   )
 }
@@ -56,16 +58,13 @@ const HomepageHeroSection = () => {
 export default HomepageHeroSection
 
 const SubpageSectionStyled = styled(SubpageSection)`
-  padding-top: var(--spacing-12);
   padding-bottom: var(--spacing-4);
   padding-right: var(--spacing-4);
   padding-left: var(--spacing-4);
-`
-
-const TextElementStyled = styled(TextElement)`
-  * {
-    color: black !important;
-  }
+  overflow: visible;
+  min-height: 80vh;
+  justify-content: center;
+  gap: var(--spacing-4);
 `
 
 const Buttons = styled.div`
@@ -85,4 +84,8 @@ const Buttons = styled.div`
   @media ${deviceBreakPoints.smallMobile} {
     margin-top: var(--spacing-2);
   }
+`
+
+const EddyBackgroundStyled = styled(EddyBackground)`
+  margin-top: -100px;
 `
