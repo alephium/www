@@ -2,7 +2,6 @@ import { PageProps } from 'gatsby'
 import styled from 'styled-components'
 
 import CommunityMosaic from '../components/CommunityMosaic'
-import CardsRow, { CardsRowSegment } from '../components/customPageComponents/CardsRow'
 import ClickableBox from '../components/customPageComponents/ClickableBox'
 import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
@@ -27,7 +26,7 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageSection edgeGradient gradientPosition="top" fullWidth>
+          <SubpageSection edgeGradient fullWidth border="bottom">
             <TextElement isCentered>
               <h1>
                 Online
@@ -47,36 +46,20 @@ const CustomPage = (props: PageProps) => {
             </TextElement>
 
             <SubheaderContent>
-              <CardsRow>
-                <CardsRowSegment minWidth={180}>
-                  {socials.slice(0, 4).map((social) => (
-                    <ClickableBox key={social.node.name} url={social.node.url ?? ''}>
-                      <SocialMediaIcon
-                        name={social.node.name ?? ''}
-                        url={social.node.url ?? ''}
-                        ImageComponent={getIconByName(social.node.name ?? '')}
-                      />
-                      <TextElement isSmall noMargin>
-                        <h4>{social.node.name}</h4>
-                      </TextElement>
-                    </ClickableBox>
-                  ))}
-                </CardsRowSegment>
-                <CardsRowSegment minWidth={180}>
-                  {socials.slice(4, 8).map((social) => (
-                    <ClickableBox key={social.node.name} url={social.node.url ?? ''}>
-                      <SocialMediaIcon
-                        name={social.node.name ?? ''}
-                        url={social.node.url ?? ''}
-                        ImageComponent={getIconByName(social.node.name ?? '')}
-                      />
-                      <TextElement isSmall noMargin>
-                        <h4>{social.node.name}</h4>
-                      </TextElement>
-                    </ClickableBox>
-                  ))}
-                </CardsRowSegment>
-              </CardsRow>
+              <Grid columns={3} gap="small">
+                {socials.slice(0, 8).map((social) => (
+                  <ClickableBox key={social.node.name} url={social.node.url ?? ''}>
+                    <SocialMediaIcon
+                      name={social.node.name ?? ''}
+                      url={social.node.url ?? ''}
+                      ImageComponent={getIconByName(social.node.name ?? '')}
+                    />
+                    <TextElement isSmall noMargin>
+                      <h4>{social.node.name}</h4>
+                    </TextElement>
+                  </ClickableBox>
+                ))}
+              </Grid>
             </SubheaderContent>
           </SubpageSection>
 
@@ -447,7 +430,7 @@ const CustomPage = (props: PageProps) => {
               <h2>Want to be featured?</h2>
               <p>
                 If you run an Alephium community account in your language and want to be featured here, send a message
-                to admins in official channels and we’ll add you in a flash!
+                to admins in official channels and we'll add you in a flash!
               </p>
             </TextElement>
           </SubpageSection>

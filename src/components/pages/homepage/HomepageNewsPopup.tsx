@@ -1,3 +1,4 @@
+import { colord } from 'colord'
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import styled, { useTheme } from 'styled-components'
@@ -26,12 +27,8 @@ const HomepageNewsPopup = () => {
   return (
     <NewsCardContainer>
       <NewsCard
-        onClick={() => !isVisible && toggleVisibility(true)}
         initial="hidden"
         animate={!isMounted ? 'hidden' : isVisible ? 'visible' : 'slideOut'}
-        style={{
-          cursor: !isVisible ? 'pointer' : 'default'
-        }}
         variants={{
           hidden: {
             opacity: 0,
@@ -39,8 +36,7 @@ const HomepageNewsPopup = () => {
             transition: {
               type: 'spring',
               stiffness: 100,
-              damping: 15,
-              duration: 0.5
+              damping: 15
             }
           },
           visible: {
@@ -51,29 +47,29 @@ const HomepageNewsPopup = () => {
               type: 'spring',
               stiffness: 100,
               damping: 15,
-              duration: 0.5
+              bounce: 0
             }
           },
           slideOut: {
-            opacity: 1,
-            y: isMobile ? '130%' : 0,
+            opacity: 0,
+            y: isMobile ? '140%' : 0,
             x: isMobile ? 0 : '100%',
             transition: {
               type: 'spring',
               stiffness: 200,
               damping: 20,
-              duration: 0.5
+              bounce: 0
             }
           }
         }}
       >
         <CloseButton onClick={() => toggleVisibility(false)}>×</CloseButton>
         <NewsCardContent>
-          <Badge color="palette4" style={{ marginBottom: 10 }}>
+          <Badge color="palette5" style={{ marginBottom: 10 }}>
             BREAKING NEWS 🔥
           </Badge>
           <TextElement isBodySmall noHeadingsMargins>
-            <h2 style={{ color: theme.palette4 }}>Danube Upgrade</h2>
+            <h2 style={{ color: theme.palette5 }}>Danube Upgrade</h2>
             <p>
               A major milestone towards true Web3.
               <br />
@@ -114,9 +110,10 @@ const NewsCard = styled(motion.div)<{ border?: boolean }>`
   width: 400px;
   display: flex;
   flex-direction: column;
-  border: 2px solid ${({ theme }) => theme.palette4};
-  background-color: ${({ theme }) => theme.background1};
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+  border: 1px solid ${({ theme }) => theme.borderPrimary};
+  background-color: ${({ theme }) => colord(theme.background1).lighten(0.15).alpha(0.7).toHex()};
+  backdrop-filter: blur(60px) saturate(3) brightness(1.2);
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, ${({ theme }) => (theme.name === 'light' ? 0.2 : 0.4)});
   border-radius: var(--radius-large);
   padding: var(--spacing-3);
   border-radius: var(--radius);
@@ -154,7 +151,7 @@ const CloseButton = styled.button`
   background: none;
   border: none;
   font-size: 24px;
-  color: ${({ theme }) => theme.palette4};
+  color: ${({ theme }) => theme.palette5};
   cursor: pointer;
   padding: 0;
   width: 24px;

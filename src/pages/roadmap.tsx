@@ -35,7 +35,7 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageSection fullWidth edgeGradient gradientPosition="top">
+          <SubpageSection fullWidth edgeGradient border="bottom">
             <TextElement isCentered>
               <h1>
                 Our Journey to
@@ -67,7 +67,7 @@ const CustomPage = (props: PageProps) => {
 
           <PageSectionMilestones />
 
-          <SubpageSection border edgeGradient>
+          <SubpageSection border="all" edgeGradient>
             <TextElement isCentered>
               <h2>Join Us on This Journey</h2>
               <p>

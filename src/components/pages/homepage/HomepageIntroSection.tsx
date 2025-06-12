@@ -168,7 +168,7 @@ const HomepageIntroSection = () => {
 export default HomepageIntroSection
 
 const SubpageSectionStyled = styled(SubpageSection)`
-  padding-top: var(--spacing-6);
+  padding-top: var(--spacing-8);
 `
 
 const cardVariants = {

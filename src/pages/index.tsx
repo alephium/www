@@ -8,7 +8,6 @@ import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import HomepageCommunitySection from '../components/pages/homepage/HomepageCommunitySection'
 import HomepageEcosystemSection from '../components/pages/homepage/HomepageEcosystemSection'
 import HomepageHeroSection from '../components/pages/homepage/HomepageHeroSection'
-import HomepageIntroSection from '../components/pages/homepage/HomepageIntroSection'
 import HomepageNewsPopup from '../components/pages/homepage/HomepageNewsPopup'
 import HomepageNumbersSection from '../components/pages/homepage/HomepageNumbersSection'
 import HomepageUSPSection from '../components/pages/homepage/HomepageUSPSection'
@@ -52,7 +51,7 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => (
 
         <HomepageHeroSection />
 
-        <HomepageIntroSection />
+        {/* <HomepageIntroSection /> */}
 
         <HomepageUSPSection />
 
@@ -60,13 +59,13 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => (
 
         <HomepageNumbersSection />
 
-        <HomepageEcosystemSection />
+        <SectionDivider double />
 
-        <SectionDivider border />
+        <HomepageEcosystemSection />
 
         <HomepageCommunitySection />
 
-        <SectionDivider />
+        <SectionDivider double />
 
         <BottomSection {...props} />
       </>
@@ -111,7 +110,14 @@ export default IndexPage
 const BottomBackgroundImageContainer = styled.div`
   position: absolute;
   inset: 0;
-  opacity: 0.7;
+  opacity: 0.5;
+  mask-image: linear-gradient(to bottom, transparent, black 200px);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 200px);
+
+  img {
+    position: relative;
+    z-index: 0;
+  }
 `
 
 const BottomSectionStyled = styled.div`

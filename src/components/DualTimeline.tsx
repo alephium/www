@@ -238,7 +238,8 @@ const Text = styled.div`
   ${({ isMajor }) =>
     isMajor &&
     css`
-      background: linear-gradient(30deg, #81fff7 0%, #edff2a 70%, #ffa9eb 100%);
+      background: ${({ theme }) =>
+        `linear-gradient(30deg, ${theme.palette3} 0%, ${theme.palette5} 50%, ${theme.palette4} 60%, ${theme.palette5} 70%, ${theme.palette6} 100%)`};
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;

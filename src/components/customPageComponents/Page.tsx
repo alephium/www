@@ -22,11 +22,9 @@ const Page = ({ content, seo, floatingMenu = true }: CustomPageProps) => (
       <PageContainer>
         <NavigationMenu floating={floatingMenu} />
 
-        <div>
-          {content}
+        <ContentContainer>{content}</ContentContainer>
 
-          <Footer />
-        </div>
+        <Footer />
       </PageContainer>
     </ThemeProvider>
   </>
@@ -35,3 +33,7 @@ const Page = ({ content, seo, floatingMenu = true }: CustomPageProps) => (
 export default Page
 
 const PageContainer = styled.main``
+
+const ContentContainer = styled.div`
+  padding-top: var(--spacing-16);
+`

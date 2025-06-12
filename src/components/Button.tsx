@@ -100,10 +100,10 @@ const Button = ({ onClick, className, children, url, disabled, highlight, square
 const getGradient = (theme: DefaultTheme) => `
   radial-gradient(
     circle at var(--gradient-x) var(--gradient-y),
-    ${theme.palette1} 35%,
-    ${theme.palette2} 40%,
-    ${theme.palette3} 60%,
-    ${theme.palette4} 100%
+    ${theme.palette5} 25%,
+    ${theme.palette4} 40%,
+    ${theme.palette3} 80%,
+    ${theme.palette1} 100%
   )
 `
 
@@ -118,7 +118,7 @@ const GradientBorder = styled.div<{ squared?: boolean }>`
   transition: opacity 0.3s ease;
   pointer-events: none;
   z-index: -1;
-  opacity: 0;
+  opacity: 0.5;
 
   &::before {
     content: '';
@@ -175,7 +175,7 @@ const StyledButton = styled(Button)`
   transition: all 0.1s ease-out;
 
   &:hover {
-    filter: saturate(160%);
+    filter: saturate(140%) brightness(${({ theme }) => (theme.name === 'light' ? 1.5 : 1)});
   }
 
   ${({ disabled }) =>

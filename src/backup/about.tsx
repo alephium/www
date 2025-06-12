@@ -510,7 +510,7 @@ const CustomPage = (props: PageProps) => {
             </SideBySide>
           </SubpageSection>
 
-          <SubpageSection border edgeGradient>
+          <SubpageSection border="all" edgeGradient>
             <TextElement isCentered>
               <h1>Contact Us</h1>
               <p>

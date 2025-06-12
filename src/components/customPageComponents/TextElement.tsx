@@ -80,13 +80,13 @@ const TextElement = styled.div<TextElementProps>`
 
   > h1 {
     font-family: 'Geist';
-    line-height: 1;
+    line-height: 0.9;
 
-    font-size: var(--fontSize-72);
+    font-size: var(--fontSize-76);
     font-weight: var(--fontWeight-semiBold);
 
     + p {
-      font-size: var(--fontSize-26);
+      font-size: var(--fontSize-24);
     }
 
     @media ${deviceBreakPoints.mobile} {
@@ -229,6 +229,12 @@ const TextElement = styled.div<TextElementProps>`
 
     & + a {
       margin-left: var(--spacing-2);
+
+      @media ${deviceBreakPoints.mobile} {
+        margin-top: var(--spacing-1);
+        margin-right: var(--spacing-1);
+        margin-left: var(--spacing-1);
+      }
     }
   }
 

@@ -109,7 +109,7 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageSection fullWidth edgeGradient gradientPosition="top">
+          <SubpageSection fullWidth edgeGradient border="bottom">
             <TextElement isCentered>
               <h1>
                 Our Wallets,

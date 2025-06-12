@@ -16,7 +16,7 @@ const SectionDivider = styled.div<SectionDividerProps>`
           width: 100%;
         `
       : css`
-          height: ${double ? 'var(--spacing-8)' : 'var(--spacing-4)'};
+          height: ${double ? 'var(--spacing-12)' : 'var(--spacing-4)'};
           width: 100%;
         `}
 `

@@ -1,3 +1,4 @@
+import { colord } from 'colord'
 import { DefaultTheme } from 'styled-components'
 
 export type ThemeType = 'light' | 'dark' | 'hackathon'
@@ -8,7 +9,7 @@ export const darkTheme: DefaultTheme = {
   textPrimary: '#ffffff',
   textPrimaryVariation: 'rgba(255, 255, 255, 0.8)',
   textSecondary: 'rgba(255, 255, 255, 0.7)',
-  textTertiary: 'rgba(255, 255, 255, 0.4)',
+  textTertiary: 'rgba(255, 255, 255,  0.4)',
 
   surface1: 'var(--color-grey-750)',
   surface2: 'var(--color-grey-900)',
@@ -17,19 +18,19 @@ export const darkTheme: DefaultTheme = {
   background3: 'var(--color-grey-950)',
   backgroundContrast: 'var(--color-grey-800)',
 
-  borderPrimary: 'rgba(255, 255, 255, 0.1)',
+  borderPrimary: 'rgba(255, 255, 255, 0.08)',
 
   link: 'var(--color-white)',
   linkAlt: 'var(--color-grey-700)',
 
   separator: 'var(--color-grey-700)',
 
-  palette1: '#5effb5',
-  palette2: '#ffd976',
-  palette3: '#7ae5ff',
-  palette4: '#f5a4ff',
-  palette5: '#ff89cc',
-  palette6: '#ffb579'
+  palette1: '#89cbff',
+  palette2: '#ffe283',
+  palette3: '#9aa6ff',
+  palette4: '#ef9cee',
+  palette5: '#ff9db6',
+  palette6: '#ffce97'
 }
 
 export const lightTheme: DefaultTheme = {
@@ -47,19 +48,19 @@ export const lightTheme: DefaultTheme = {
   background3: '#ffffff',
   backgroundContrast: '#000000',
 
-  borderPrimary: 'rgba(0, 0, 0, 0.1)',
+  borderPrimary: 'rgba(0, 0, 0, 0.08)',
 
   link: '#000000',
   linkAlt: 'var(--color-black)',
 
   separator: 'var(--color-grey-100)',
 
-  palette1: '#4bda98',
-  palette2: '#f5b529',
-  palette3: '#41c6e5',
-  palette4: '#de5dee',
-  palette5: '#e24ea2',
-  palette6: '#f69344'
+  palette1: '#469df9',
+  palette2: '#ffa42b',
+  palette3: '#4069ff',
+  palette4: '#ff67f6',
+  palette5: '#ff6b96',
+  palette6: '#ffa055'
 }
 
 export const hackathonTheme: DefaultTheme = {
@@ -90,4 +91,27 @@ export const hackathonTheme: DefaultTheme = {
   palette4: '#FF259D',
   palette5: '#e7409f',
   palette6: '#FF259D'
+}
+
+// Utilities
+
+export const getComputedColor = (cssVar: string): string => {
+  // If it's not a CSS variable, return as is
+  if (!cssVar.startsWith('var(--')) {
+    return cssVar
+  }
+
+  // Extract the variable name
+  const varName = cssVar.match(/var\(--([^)]+)\)/)?.[1]
+  if (!varName) return cssVar
+
+  // Get the computed value
+  const computedValue = getComputedStyle(document.documentElement).getPropertyValue(`--${varName}`).trim()
+
+  return computedValue
+}
+
+export const getColordColor = (cssVar: string) => {
+  const computedColor = getComputedColor(cssVar)
+  return colord(computedColor)
 }

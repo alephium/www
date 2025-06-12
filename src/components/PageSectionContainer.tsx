@@ -10,6 +10,7 @@ export interface PageSectionContainerProps {
   fullHeight?: boolean
   contrasted?: boolean
   justifyContent?: 'center' | 'flex-start'
+  bgColor?: '1' | '2' | '3'
 }
 
 const PageSectionContainer = styled.div<PageSectionContainerProps>`
@@ -21,8 +22,12 @@ const PageSectionContainer = styled.div<PageSectionContainerProps>`
   height: ${({ fullHeight }) => (fullHeight ? '100vh' : 'auto')};
   margin: 0 auto;
   position: relative;
-  background-color: ${({ theme, contrasted }) =>
-    contrasted ? colord(theme.background1).lighten(0.1).toRgbString() : 'none'};
+  background-color: ${({ theme, contrasted, bgColor }) =>
+    contrasted
+      ? colord(theme.background1).lighten(0.1).toRgbString()
+      : bgColor
+      ? theme[`background${bgColor}`]
+      : 'none'};
   box-sizing: border-box;
 
   @media ${deviceBreakPoints.mobile} {

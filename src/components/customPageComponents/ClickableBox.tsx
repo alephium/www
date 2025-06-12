@@ -34,7 +34,7 @@ const BoxStyles = css<ClickableBoxProps>`
 
   @media ${deviceBreakPoints.mobile} {
     text-align: center;
-    padding: var(--spacing-4) 0;
+    padding: var(--spacing-4) var(--spacing-3);
     justify-content: center;
   }
 `
