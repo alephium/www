@@ -1,9 +1,9 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { graphql, useStaticQuery } from 'gatsby'
-import { ReactNode, useState } from 'react'
+import { ReactNode, useEffect, useState } from 'react'
 import { IconType } from 'react-icons'
 import { RiTranslate2 } from 'react-icons/ri'
-import { RiArrowDropDownLine, RiArrowDropUpLine, RiCloseLine } from 'react-icons/ri'
+import { RiArrowDropDownLine, RiArrowDropUpLine } from 'react-icons/ri'
 import styled, { useTheme } from 'styled-components'
 
 import { deviceBreakPoints } from '../styles/global-style'
@@ -13,28 +13,30 @@ import SimpleLink from './SimpleLink'
 import ThemeToggle from './ThemeToggle'
 import TranslateComponent from './TranslateComponent'
 
-interface MobileNavigationMenuProps {
-  onCloseClick: () => void
-}
-
-const MobileNavigationMenu = ({ onCloseClick }: MobileNavigationMenuProps) => {
+const MobileNavigationMenu = () => {
   const data = useStaticQuery<Queries.NavigationMenuQuery>(navigationMenuQuery)
   const menuItems = data.navmenu.nodes[0]?.frontmatter?.menuItems?.filter(notEmpty)
   const socialIcons = data.navmenu.nodes[0]?.frontmatter?.socialIcons?.filter(notEmpty)
   const [expandedItem, setExpandedItem] = useState<string | null>(null)
+
+  useEffect(() => {
+    document.body.style.overflow = 'hidden'
+    return () => {
+      document.body.style.overflow = 'unset'
+    }
+  }, [])
 
   const toggleItem = (title: string) => {
     setExpandedItem((prev) => (prev === title ? null : title))
   }
 
   return (
-    <MobileNavigationMenuStyled initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-      <NavigationWrapper isHidden={false} floating={false}>
-        <NavigationMenuStyled>
-          <MobileNavButtons onMenuButtonClick={onCloseClick} Icon={RiCloseLine} />
-        </NavigationMenuStyled>
-      </NavigationWrapper>
-
+    <MobileNavigationMenuStyled
+      initial={{ opacity: 0, y: -10 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -10 }}
+      transition={{ type: 'spring', bounce: 0 }}
+    >
       <MobileMenuItems>
         {menuItems?.map(
           ({ title, items }) =>
@@ -79,13 +81,19 @@ export default MobileNavigationMenu
 
 const MobileNavigationMenuStyled = styled(motion.div)`
   position: fixed;
-  top: 0;
+  top: 100px;
   left: 0;
-  width: 100%;
-  height: 100vh;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 90vw;
+  height: calc(100vh - 140px);
+  border-radius: var(--radius-big);
+  border: 1px solid ${({ theme }) => theme.borderPrimary};
   background-color: ${({ theme }) => theme.background1};
   z-index: 10000; // Terrible way to do this, but it would require a lot of rework on all other places that use z-index
   overflow: auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, ${({ theme }) => (theme.name === 'dark' ? 0.5 : 0.1)});
 `
 
 interface MobileMenuExpandableItemProps {
@@ -156,27 +164,6 @@ export const navigationMenuQuery = graphql`
   }
 `
 
-const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean }>`
-  position: static;
-  margin-bottom: -100px;
-  padding-right: 30px;
-  padding-left: 30px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 2;
-`
-
-const NavigationMenuStyled = styled.div`
-  width: var(--page-width);
-  display: flex;
-  justify-content: center;
-  font-weight: var(--fontWeight-medium);
-  padding: 0 30px;
-  height: 62px;
-`
-
 const NavLink = styled(SimpleLink)`
   font-size: var(--fontSize-18);
   color: ${({ theme }) => theme.textPrimaryVariation};
@@ -209,7 +196,6 @@ const MobileMenuItems = styled.div`
   flex-direction: column;
   padding: 20px;
   gap: 20px;
-  margin-top: 100px;
 `
 
 const MobileMenuItem = styled.div`

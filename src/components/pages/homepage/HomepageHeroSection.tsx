@@ -29,8 +29,8 @@ const HomepageHeroSection = () => {
 
   return (
     <SubpageSectionStyled fullWidth>
-      <EddyBackground />
-      <TextElementStyled isCentered>
+      <EddyBackgroundStyled />
+      <TextElement isCentered>
         <h1>
           The Web3
           <br /> you were promised.
@@ -42,7 +42,7 @@ const HomepageHeroSection = () => {
             <b> only on Alephium.</b>
           </strong>
         </p>
-      </TextElementStyled>
+      </TextElement>
 
       <Buttons>
         <Button big highlight url="/get-started">
@@ -67,8 +67,6 @@ const SubpageSectionStyled = styled(SubpageSection)`
   gap: var(--spacing-4);
 `
 
-const TextElementStyled = styled(TextElement)``
-
 const Buttons = styled.div`
   display: flex;
   justify-content: center;
@@ -86,4 +84,8 @@ const Buttons = styled.div`
   @media ${deviceBreakPoints.smallMobile} {
     margin-top: var(--spacing-2);
   }
+`
+
+const EddyBackgroundStyled = styled(EddyBackground)`
+  margin-top: -100px;
 `

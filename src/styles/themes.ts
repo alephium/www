@@ -1,3 +1,4 @@
+import { colord } from 'colord'
 import { DefaultTheme } from 'styled-components'
 
 export type ThemeType = 'light' | 'dark' | 'hackathon'
@@ -8,7 +9,7 @@ export const darkTheme: DefaultTheme = {
   textPrimary: '#ffffff',
   textPrimaryVariation: 'rgba(255, 255, 255, 0.8)',
   textSecondary: 'rgba(255, 255, 255, 0.7)',
-  textTertiary: 'rgba(255, 255, 255, 0.4)',
+  textTertiary: 'rgba(255, 255, 255,  0.4)',
 
   surface1: 'var(--color-grey-750)',
   surface2: 'var(--color-grey-900)',
@@ -25,7 +26,7 @@ export const darkTheme: DefaultTheme = {
   separator: 'var(--color-grey-700)',
 
   palette1: '#4eb1ff',
-  palette2: '#ffbf4c',
+  palette2: '#ffd64c',
   palette3: '#6073ff',
   palette4: '#ef53ee',
   palette5: '#ff678e',
@@ -90,4 +91,27 @@ export const hackathonTheme: DefaultTheme = {
   palette4: '#FF259D',
   palette5: '#e7409f',
   palette6: '#FF259D'
+}
+
+// Utilities
+
+export const getComputedColor = (cssVar: string): string => {
+  // If it's not a CSS variable, return as is
+  if (!cssVar.startsWith('var(--')) {
+    return cssVar
+  }
+
+  // Extract the variable name
+  const varName = cssVar.match(/var\(--([^)]+)\)/)?.[1]
+  if (!varName) return cssVar
+
+  // Get the computed value
+  const computedValue = getComputedStyle(document.documentElement).getPropertyValue(`--${varName}`).trim()
+
+  return computedValue
+}
+
+export const getColordColor = (cssVar: string) => {
+  const computedColor = getComputedColor(cssVar)
+  return colord(computedColor)
 }

@@ -13,16 +13,17 @@ export interface MeshGradientEffectProps {
   color2?: [number, number, number]
   color3?: [number, number, number]
   color4?: [number, number, number]
+  className?: string
 }
 
-const MeshGradientEffect: FC<MeshGradientEffectProps> = () => {
+const MeshGradientEffect: FC<MeshGradientEffectProps> = ({ className }) => {
   const theme = useTheme()
 
   const leftGradient = `radial-gradient(circle at 0% 50%, ${theme.palette2} 10%, ${theme.palette5} 20%, ${theme.palette1} 60%, ${theme.palette3} 70%, transparent 80%)`
   const rightGradient = `radial-gradient(circle at 100% 50%, ${theme.palette2} 10%, ${theme.palette5} 20%, ${theme.palette1} 60%, ${theme.palette3} 70%, transparent 80%)`
 
   return (
-    <EddyBackgroundContainer>
+    <EddyBackgroundContainer className={className}>
       <GradientContainer
         style={{ backgroundImage: leftGradient, left: 0, backgroundPosition: '0% 50%' }}
         aria-hidden="true"
@@ -38,7 +39,7 @@ const MeshGradientEffect: FC<MeshGradientEffectProps> = () => {
 export default MeshGradientEffect
 
 const getColorFilters = (theme: DefaultTheme) => `
-    brightness(${theme.name === 'dark' ? 1.2 : 1.4})
+    brightness(${theme.name === 'dark' ? 1.3 : 1.4})
     saturate(${theme.name === 'dark' ? 1.2 : 1})
     contrast(${theme.name === 'dark' ? 1 : 1});
 `

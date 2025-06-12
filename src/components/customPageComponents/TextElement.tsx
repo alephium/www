@@ -80,9 +80,9 @@ const TextElement = styled.div<TextElementProps>`
 
   > h1 {
     font-family: 'Geist';
-    line-height: 1;
+    line-height: 0.9;
 
-    font-size: var(--fontSize-72);
+    font-size: var(--fontSize-76);
     font-weight: var(--fontWeight-semiBold);
 
     + p {

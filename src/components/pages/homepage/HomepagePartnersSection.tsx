@@ -26,7 +26,6 @@ const HomepagePartnersSection = (content: Queries.HomepagePartnersSectionFragmen
       <TextElement isCentered>
         <label>Trusted by</label>
       </TextElement>
-
       <PartnersGridContainer>
         <PartnersGrid ref={gridRef}>
           {content?.partners?.map(
@@ -54,6 +53,12 @@ const PartnersGridContainer = styled.div`
   margin: 0 auto;
   overflow: hidden;
   mask-image: linear-gradient(to right, transparent, black 60px, black calc(100% - 60px), transparent);
+  opacity: 0.6;
+
+  &:hover {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+  }
 
   @media ${deviceBreakPoints.mobile} {
     mask-image: linear-gradient(to right, transparent, black 20px, black calc(100% - 20px), transparent);
