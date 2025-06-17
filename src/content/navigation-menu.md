@@ -16,8 +16,8 @@ menuItems:
         link: https://discord.gg/XC5JaaDT7z
       - title: Github
         link: https://github.com/alephium
-      - title: Grants
-        link: /grants
+      # - title: Grants
+      #   link: /grants
   - title: Ecosystem
     items:
       - title: Tools
