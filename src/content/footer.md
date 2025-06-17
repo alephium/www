@@ -8,8 +8,8 @@ columns:
         url: https://docs.alephium.org/
       - text: Ecosystem
         url: https://alph.land
-      - text: Grants
-        url: /grants
+      #- text: Grants
+      #  url: /grants
       - text: Blog
         url: https://medium.com/@alephium
   - title: Alephium
