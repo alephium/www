@@ -58,7 +58,7 @@ const GradientContainer = styled.div`
   z-index: -1;
   pointer-events: none;
   filter: blur(90px) ${({ theme }) => getColorFilters(theme)};
-  opacity: 0.8;
+  opacity: ${({ theme }) => (theme.name === 'dark' ? 0.4 : 0.8)};
   background-size: 65% 75%;
   background-repeat: no-repeat;
 
