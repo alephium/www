@@ -36,10 +36,10 @@ const HomepageHeroSection = () => {
           <br /> you were promised.
         </h1>
         <p>
-          Fast & Scalable Proof-of-Work and secure Smart Contracts,
+          Scalability, smart contracts, and real decentralization without the tradeoffs.
           <br />
           <strong>
-            <b> only on Alephium.</b>
+            <b>Only on Alephium.</b>
           </strong>
         </p>
       </TextElement>
