@@ -36,7 +36,8 @@ const HomepageHeroSection = () => {
           <br /> you were promised.
         </h1>
         <p>
-          Scalability, smart contracts, and real decentralization without the tradeoffs.
+          Scalability, smart contracts, and real decentralization <br />
+          without the tradeoffs.
           <br />
           <strong>
             <b>Only on Alephium.</b>
