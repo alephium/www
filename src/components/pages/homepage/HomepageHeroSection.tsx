@@ -124,7 +124,7 @@ const TextElementWithReflection = styled(TextElement)`
       opacity: 0;
     }
     to {
-      opacity: 1;
+      opacity: 0.8;
     }
   }
 `

@@ -72,7 +72,7 @@ const HomepageUSPSection = () => {
   const { totalTransactions } = statsScalarData
 
   return (
-    <SubpageSectionStyled wide bgColor="2">
+    <SubpageSectionStyled wide bgColor="2" border="all">
       <TextElementStyled>
         <h2>Web3, done right.</h2>
         <p>

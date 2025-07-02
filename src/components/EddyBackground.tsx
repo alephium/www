@@ -15,8 +15,8 @@ const EddyBackground = ({ className }: { className?: string }) => {
         initial={{ scaleX: 0.5, scaleY: 0.5, opacity: 0 }}
         animate={{
           scaleX: 1,
-          scaleY: 1,
-          opacity: theme.name === 'dark' ? 0.8 : 0.7
+          scaleY: 0.8,
+          opacity: 1
         }}
         transition={{
           duration: 2,

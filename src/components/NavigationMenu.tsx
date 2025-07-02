@@ -181,11 +181,8 @@ export const navigationMenuQuery = graphql`
 
 const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean; scrolled: boolean }>`
   position: fixed;
-  top: ${({ isHidden }) => (isHidden ? '5px' : 'var(--spacing-3)')};
-  opacity: ${({ isHidden }) => (isHidden ? 0 : 1)};
-  width: 60vw;
+  top: 0;
   min-width: 800px;
-  max-width: 700px;
   right: 0;
   left: 0;
   margin: 0 auto;
@@ -194,13 +191,12 @@ const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean; scr
   justify-content: center;
   height: 56px;
   z-index: 10000;
-  transition: top 0.2s ease-out, opacity 0.2s ease-out, border 0.5s ease-out, box-shadow 0.5s ease-out;
+  transition: top 0.2s ease-out, opacity 0.2s ease-out, background-color 0.5s ease-out, box-shadow 0.5s ease-out;
   background-color: ${({ theme, scrolled }) =>
     scrolled ? getColordColor(theme.background1).alpha(0.85).toHex() : 'transparent'};
   backdrop-filter: ${({ scrolled, theme }) =>
     scrolled ? `blur(30px) ${theme.name === 'dark' ? 'brightness(0.5)' : 'brightness(1.3)'}` : 'none'};
-  border: ${({ theme, scrolled }) => (scrolled ? `1px solid ${theme.borderPrimary}` : '1px solid transparent')};
-  border-radius: var(--radius-full);
+  border-bottom: 1px solid ${({ theme }) => theme.borderPrimary};
   box-shadow: ${({ theme, scrolled }) =>
     scrolled ? `0 10px 20px rgba(0, 0, 0, ${theme.name === 'dark' ? 0.2 : 0.025})` : 'none'};
 
@@ -211,7 +207,6 @@ const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean; scr
     `}
 
   @media ${deviceBreakPoints.ipad} {
-    width: 90vw;
     min-width: auto;
   }
 `
