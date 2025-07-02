@@ -35,7 +35,7 @@ const NavigationMenu = ({ className, floating = true }: NavigationMenuProps) => 
   useEffect(() => {
     const handleScroll = throttle(() => {
       const currentScrollY = window.scrollY
-      setScrolled(currentScrollY > 20)
+      setScrolled(currentScrollY > 50)
 
       const scrollDelta = currentScrollY - lastScrollY.current
 
@@ -181,7 +181,7 @@ export const navigationMenuQuery = graphql`
 
 const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean; scrolled: boolean }>`
   position: fixed;
-  top: ${({ isHidden }) => (isHidden ? '-10px' : 'var(--spacing-3)')};
+  top: ${({ isHidden }) => (isHidden ? '5px' : 'var(--spacing-3)')};
   opacity: ${({ isHidden }) => (isHidden ? 0 : 1)};
   width: 60vw;
   min-width: 800px;
@@ -194,13 +194,15 @@ const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean; scr
   justify-content: center;
   height: 56px;
   z-index: 10000;
-  transition: top 0.2s ease-out, opacity 0.2s ease-out;
-  background-color: ${({ theme }) => getColordColor(theme.background1).alpha(0.85).toHex()};
-  backdrop-filter: blur(40px) saturate(120%);
+  transition: top 0.2s ease-out, opacity 0.2s ease-out, border 0.5s ease-out, box-shadow 0.5s ease-out;
+  background-color: ${({ theme, scrolled }) =>
+    scrolled ? getColordColor(theme.background1).alpha(0.85).toHex() : 'transparent'};
+  backdrop-filter: ${({ scrolled }) => (scrolled ? 'blur(40px) saturate(120%)' : 'none')};
 
-  border: 1px solid ${({ theme }) => theme.borderPrimary};
+  border: ${({ theme, scrolled }) => (scrolled ? `1px solid ${theme.borderPrimary}` : '1px solid transparent')};
   border-radius: var(--radius-full);
-  box-shadow: 0 20px 20px rgba(0, 0, 0, ${({ theme }) => (theme.name === 'dark' ? 0.4 : 0.025)});
+  box-shadow: ${({ theme, scrolled }) =>
+    scrolled ? `0 20px 20px rgba(0, 0, 0, ${theme.name === 'dark' ? 0.4 : 0.025})` : 'none'};
 
   ${({ floating }) =>
     !floating &&
