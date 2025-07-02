@@ -1,5 +1,5 @@
 import { graphql, useStaticQuery } from 'gatsby'
-import styled from 'styled-components'
+import styled, { useTheme } from 'styled-components'
 
 import { deviceBreakPoints } from '../../../styles/global-style'
 import Button from '../../Button'
@@ -25,14 +25,16 @@ export const pageQuery = graphql`
 const HomepageHeroSection = () => {
   const { allMarkdownRemark } = useStaticQuery<Queries.HeroSectionQuery>(pageQuery)
   const content = allMarkdownRemark.nodes[0].frontmatter
+  const theme = useTheme()
 
   return (
     <SubpageSectionStyled fullWidth>
       <EddyBackgroundStyled />
-      <TextElement isCentered>
+      <TextElementWithReflection isCentered>
         <h1>
           The Web3
-          <br /> you were promised.
+          <br />
+          <span className="gradient-text">you were promised.</span>
         </h1>
         <p>
           Scalability, smart contracts, and real decentralization <br />
@@ -42,7 +44,7 @@ const HomepageHeroSection = () => {
             <b>Only on Alephium.</b>
           </strong>
         </p>
-      </TextElement>
+      </TextElementWithReflection>
 
       <Buttons>
         <Button big highlight url="/get-started">
@@ -87,4 +89,42 @@ const Buttons = styled.div`
 
 const EddyBackgroundStyled = styled(EddyBackground)`
   margin-top: -100px;
+`
+
+const TextElementWithReflection = styled(TextElement)`
+  position: relative;
+
+  .gradient-text {
+    position: relative;
+    display: inline;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 65%;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      background: radial-gradient(
+        circle,
+        ${({ theme }) => (theme.name === 'dark' ? theme.palette2 : theme.palette4)} 0%,
+        ${({ theme }) => (theme.name === 'dark' ? theme.palette5 : theme.palette3)} 60%
+      );
+      mix-blend-mode: ${({ theme }) => (theme.name === 'dark' ? 'multiply' : 'screen')};
+      filter: blur(20px);
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0;
+      animation: fadeInMask 2s ease-out forwards;
+    }
+  }
+
+  @keyframes fadeInMask {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 `

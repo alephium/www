@@ -4,7 +4,7 @@ import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextElement from '../../customPageComponents/TextElement'
 
 const HomepageCommunitySection = () => (
-  <SubpageSection fullWidth>
+  <SubpageSection wide>
     <SubpageSection>
       <TextElement isCentered>
         <h2>

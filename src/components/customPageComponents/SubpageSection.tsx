@@ -82,7 +82,11 @@ const SubpageSectionStyled = styled(PageSectionContainer)<SubpageSectionProps>`
           ? 'right: 0;'
           : 'left: 0;'}
         background: radial-gradient(
-          circle at ${gradientPosition.includes('right') ? '140%' : gradientPosition.includes('left') ? '-40%' : '50%'} 
+          ellipse at ${gradientPosition.includes('right')
+          ? '140%'
+          : gradientPosition.includes('left')
+          ? '-40%'
+          : '50%'} 
           ${gradientPosition.includes('top') ? '-100%' : '100%'},
           ${theme.palette6} 0%,
           ${theme.palette5} 10%,
@@ -91,7 +95,7 @@ const SubpageSectionStyled = styled(PageSectionContainer)<SubpageSectionProps>`
         );
         pointer-events: none;
         opacity: 1;
-        filter: blur(60px) brightness(${theme.name === 'dark' ? 1 : 1.2});
+        filter: blur(40px) brightness(${theme.name === 'dark' ? 1 : 1.2});
       }
     `}
 `

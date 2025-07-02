@@ -111,7 +111,7 @@ const NewsCard = styled(motion.div)<{ border?: boolean }>`
   display: flex;
   flex-direction: column;
   border: 1px solid ${({ theme }) => theme.borderPrimary};
-  background-color: ${({ theme }) => colord(theme.background1).lighten(0.15).alpha(0.7).toHex()};
+  background-color: ${({ theme }) => colord(theme.background1).lighten(0.15).alpha(0.9).toHex()};
   backdrop-filter: blur(60px) saturate(3) brightness(1.2);
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, ${({ theme }) => (theme.name === 'light' ? 0.2 : 0.4)});
   border-radius: var(--radius-large);

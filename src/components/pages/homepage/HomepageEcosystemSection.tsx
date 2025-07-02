@@ -192,7 +192,7 @@ const HomepageEcosystemSection = () => {
   }
 
   return (
-    <SubpageSection fullWidth bgColor="2" edgeGradient gradientPosition="bottom">
+    <SubpageSection wide bgColor="2" edgeGradient gradientPosition="bottom">
       <div style={{ position: 'relative', zIndex: 1 }}>
         <TextElement isCentered>
           <h2>Built on Alephium.</h2>
