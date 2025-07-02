@@ -6,7 +6,6 @@ import Button from '../../Button'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextElement from '../../customPageComponents/TextElement'
 import EddyBackground from '../../EddyBackground'
-import HomepageIntroSection from './HomepageIntroSection'
 import HomepagePartnersSection from './HomepagePartnersSection'
 
 export const pageQuery = graphql`
@@ -51,7 +50,6 @@ const HomepageHeroSection = () => {
         </Button>
       </Buttons>
       {content?.partnersSection && <HomepagePartnersSection {...content.partnersSection} />}
-      <HomepageIntroSection />
     </SubpageSectionStyled>
   )
 }
@@ -63,7 +61,7 @@ const SubpageSectionStyled = styled(SubpageSection)`
   padding-right: var(--spacing-4);
   padding-left: var(--spacing-4);
   overflow: visible;
-  min-height: 80vh;
+  min-height: 75vh;
   justify-content: center;
   gap: var(--spacing-4);
 `
@@ -73,7 +71,7 @@ const Buttons = styled.div`
   justify-content: center;
   gap: var(--spacing-4);
   margin-top: var(--spacing-2);
-  margin-bottom: var(--spacing-2);
+  margin-bottom: var(--spacing-20);
 
   @media ${deviceBreakPoints.mobile} {
     margin-top: var(--spacing-4);

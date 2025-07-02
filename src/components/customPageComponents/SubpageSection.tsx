@@ -86,14 +86,12 @@ const SubpageSectionStyled = styled(PageSectionContainer)<SubpageSectionProps>`
           ${gradientPosition.includes('top') ? '-100%' : '100%'},
           ${theme.palette6} 0%,
           ${theme.palette5} 10%,
-          ${theme.palette1} 25%,
-          ${theme.palette5} 28%,
           ${theme.palette3} 30%,
           transparent 100%
         );
         pointer-events: none;
-        opacity: 0.8;
-        filter: blur(60px) brightness(${theme.name === 'dark' ? 1 : 1.4}) saturate(${theme.name === 'dark' ? 1 : 1.6});
+        opacity: 1;
+        filter: blur(60px) brightness(${theme.name === 'dark' ? 1 : 1.2});
       }
     `}
 `

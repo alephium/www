@@ -197,12 +197,12 @@ const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean; scr
   transition: top 0.2s ease-out, opacity 0.2s ease-out, border 0.5s ease-out, box-shadow 0.5s ease-out;
   background-color: ${({ theme, scrolled }) =>
     scrolled ? getColordColor(theme.background1).alpha(0.85).toHex() : 'transparent'};
-  backdrop-filter: ${({ scrolled }) => (scrolled ? 'blur(40px) saturate(120%)' : 'none')};
-
+  backdrop-filter: ${({ scrolled, theme }) =>
+    scrolled ? `blur(30px) ${theme.name === 'dark' ? 'brightness(0.5)' : 'brightness(1.3)'}` : 'none'};
   border: ${({ theme, scrolled }) => (scrolled ? `1px solid ${theme.borderPrimary}` : '1px solid transparent')};
   border-radius: var(--radius-full);
   box-shadow: ${({ theme, scrolled }) =>
-    scrolled ? `0 20px 20px rgba(0, 0, 0, ${theme.name === 'dark' ? 0.4 : 0.025})` : 'none'};
+    scrolled ? `0 10px 20px rgba(0, 0, 0, ${theme.name === 'dark' ? 0.2 : 0.025})` : 'none'};
 
   ${({ floating }) =>
     !floating &&
@@ -325,7 +325,6 @@ const Drawer = styled(motion.div)`
   display: flex;
   flex-direction: column;
   z-index: 1000;
-  backdrop-filter: blur(24px);
   padding-bottom: 8px;
 
   @media ${deviceBreakPoints.ipad} {
