@@ -102,14 +102,21 @@ const HomepageEcosystemSection = () => {
     if (!containerRef.current || !isInitialized) return
     const container = containerRef.current
     let throttleTimeout: ReturnType<typeof setTimeout> | null = null
+    let lastWidth = container.offsetWidth
+    let lastHeight = container.offsetHeight
 
     const handleResize = () => {
       if (dapps.length > 0) {
-        initializeLogoPositions(dapps.length)
+        const currentWidth = container.offsetWidth
+        const currentHeight = container.offsetHeight
+
+        if (currentWidth !== lastWidth || currentHeight !== lastHeight) {
+          lastWidth = currentWidth
+          lastHeight = currentHeight
+          initializeLogoPositions(dapps.length)
+        }
       }
     }
-
-    handleResize()
 
     const resizeObserver = new window.ResizeObserver(() => {
       if (throttleTimeout) return
