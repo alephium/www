@@ -1,3 +1,4 @@
+import { colord } from 'colord'
 import { motion } from 'framer-motion'
 import styled, { DefaultTheme, useTheme } from 'styled-components'
 
@@ -6,16 +7,20 @@ import { deviceBreakPoints } from '../styles/global-style'
 const EddyBackground = ({ className }: { className?: string }) => {
   const theme = useTheme()
 
-  const bottomGradient = `radial-gradient(circle at 50% 100%, ${theme.palette2} 10%, ${theme.palette5} 40%, ${theme.palette3} 70%, transparent 90%)`
+  const bottomGradient = `radial-gradient(circle at 50% 120%, ${theme.palette2} 15%, ${theme.palette5} 35%, ${colord(
+    theme.palette3
+  )
+    .alpha(theme.name === 'dark' ? 0.5 : 0.3)
+    .toHex()} 55%, transparent 65%)`
 
   return (
     <EddyBackgroundContainer className={className}>
       <GradientContainer
-        style={{ backgroundImage: bottomGradient, backgroundPosition: '50% 100%', transformOrigin: '50% 100%' }}
-        initial={{ scaleX: 0.5, scaleY: 0.5, opacity: 0 }}
+        style={{ backgroundImage: bottomGradient, transformOrigin: '50% 100%' }}
+        initial={{ scaleX: 0.3, scaleY: 0.3, opacity: 0 }}
         animate={{
-          scaleX: 1,
-          scaleY: 0.8,
+          scaleX: 0.7,
+          scaleY: 0.5,
           opacity: 1
         }}
         transition={{
@@ -45,11 +50,10 @@ const GradientContainer = styled(motion.div)`
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 80%;
+  height: 100%;
   z-index: -1;
   pointer-events: none;
-  filter: blur(80px) ${({ theme }) => getColorFilters(theme)};
-  background-size: 80% 60%;
+  filter: blur(70px) ${({ theme }) => getColorFilters(theme)};
   background-repeat: no-repeat;
 
   @media ${deviceBreakPoints.mobile} {

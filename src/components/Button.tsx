@@ -101,9 +101,7 @@ const getGradient = (theme: DefaultTheme) => `
   radial-gradient(
     circle at var(--gradient-x) var(--gradient-y),
     ${theme.palette5} 25%,
-    ${theme.palette4} 40%,
-    ${theme.palette3} 80%,
-    ${theme.palette1} 100%
+    ${theme.palette2} 100%
   )
 `
 
@@ -175,7 +173,7 @@ const StyledButton = styled(Button)`
   transition: all 0.1s ease-out;
 
   &:hover {
-    filter: saturate(140%) brightness(${({ theme }) => (theme.name === 'light' ? 1.5 : 1)});
+    filter: saturate(120%) brightness(${({ theme }) => (theme.name === 'light' ? 1.3 : 1)});
   }
 
   ${({ disabled }) =>

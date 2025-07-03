@@ -1,5 +1,6 @@
+import { motion, useScroll, useTransform } from 'framer-motion'
 import { graphql, useStaticQuery } from 'gatsby'
-import styled, { useTheme } from 'styled-components'
+import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../../../styles/global-style'
 import Button from '../../Button'
@@ -25,38 +26,49 @@ export const pageQuery = graphql`
 const HomepageHeroSection = () => {
   const { allMarkdownRemark } = useStaticQuery<Queries.HeroSectionQuery>(pageQuery)
   const content = allMarkdownRemark.nodes[0].frontmatter
-  const theme = useTheme()
+  const { scrollY } = useScroll()
+
+  const opacity = useTransform(scrollY, [100, 1000], [1, 0])
 
   return (
-    <SubpageSectionStyled fullWidth>
-      <EddyBackgroundStyled />
-      <TextElementWithReflection isCentered>
-        <h1>
-          The Web3
-          <br />
-          <span className="gradient-text">you were promised.</span>
-        </h1>
-        <p>
-          Scalability, smart contracts, and real decentralization <br />
-          without the tradeoffs.
-          <br />
-          <strong>
-            <b>Only on Alephium.</b>
-          </strong>
-        </p>
-      </TextElementWithReflection>
+    <SectionWrapper>
+      <motion.div style={{ opacity }}>
+        <SubpageSectionStyled fullWidth>
+          <EddyBackgroundStyled />
+          <TextElementWithReflection isCentered>
+            <h1>
+              The <span className="gradient-text">Web3</span>
+              <br />
+              you were promised.
+            </h1>
+            <p>
+              Scalability, smart contracts, and real decentralization <br />
+              without the tradeoffs.
+              <br />
+              <strong>
+                <b>Only on Alephium.</b>
+              </strong>
+            </p>
+          </TextElementWithReflection>
 
-      <Buttons>
-        <Button big highlight url="/get-started">
-          Get started
-        </Button>
-      </Buttons>
-      {content?.partnersSection && <HomepagePartnersSection {...content.partnersSection} />}
-    </SubpageSectionStyled>
+          <Buttons>
+            <Button big highlight url="/get-started">
+              Get started
+            </Button>
+          </Buttons>
+          {content?.partnersSection && <HomepagePartnersSection {...content.partnersSection} />}
+        </SubpageSectionStyled>
+      </motion.div>
+    </SectionWrapper>
   )
 }
 
 export default HomepageHeroSection
+
+const SectionWrapper = styled.div`
+  position: sticky;
+  top: 0;
+`
 
 const SubpageSectionStyled = styled(SubpageSection)`
   padding-bottom: var(--spacing-4);
@@ -95,28 +107,16 @@ const TextElementWithReflection = styled(TextElement)`
   position: relative;
 
   .gradient-text {
-    position: relative;
+    background: radial-gradient(
+      circle at 100% 0%,
+      ${({ theme }) => theme.palette5} 0%,
+      ${({ theme }) => theme.palette5} 20%,
+      ${({ theme }) => theme.palette2} 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     display: inline;
-
-    &::after {
-      content: '';
-      position: absolute;
-      top: 65%;
-      left: 0;
-      width: 100%;
-      height: 50%;
-      background: radial-gradient(
-        circle,
-        ${({ theme }) => (theme.name === 'dark' ? theme.palette2 : theme.palette4)} 0%,
-        ${({ theme }) => (theme.name === 'dark' ? theme.palette5 : theme.palette3)} 60%
-      );
-      mix-blend-mode: ${({ theme }) => (theme.name === 'dark' ? 'multiply' : 'screen')};
-      filter: blur(20px);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0;
-      animation: fadeInMask 2s ease-out forwards;
-    }
   }
 
   @keyframes fadeInMask {
