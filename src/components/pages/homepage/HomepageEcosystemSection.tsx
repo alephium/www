@@ -1,4 +1,3 @@
-import { colord } from 'colord'
 import { useEffect, useRef, useState } from 'react'
 import styled from 'styled-components'
 
@@ -337,5 +336,5 @@ const CenterButtonWrapper = styled.div`
   justify-content: center;
   gap: var(--spacing-2);
   border-radius: 100px;
-  box-shadow: 0 0px 30px 10px ${({ theme }) => colord(theme.textPrimary).alpha(0.3).toHex()};
+  box-shadow: 0 0px 30px 10px rgba(0, 0, 0, 0.1);
 `

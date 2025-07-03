@@ -11,6 +11,7 @@ const HomepageCommunitySection = () => (
           Be part of a <br />
           bubbling community.
         </h2>
+        <p>Check out our official and community-led channels.</p>
         <Button big highlight url="/communities">
           Get on board
         </Button>
