@@ -43,9 +43,9 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => (
     {...props}
     content={
       <>
-        <HomepageNewsPopup />
-
         <HomepageHeroSection />
+
+        <HomepageNewsPopup />
 
         <HomepageUSPSection />
 

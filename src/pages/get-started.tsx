@@ -271,7 +271,7 @@ const GetAlphSection = () => {
 
       <SectionDivider double />
 
-      <SubpageSection bgColor="2" fullWidth edgeGradient border="top-bottom" gradientPosition="top">
+      <SubpageSection bgColor="2" fullWidth edgeGradient gradientPosition="top">
         <SubpageSection>
           <TextElement>
             <h2>Get ALPH</h2>

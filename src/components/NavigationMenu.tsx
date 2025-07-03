@@ -197,8 +197,7 @@ const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean; scr
   backdrop-filter: ${({ scrolled, theme }) =>
     scrolled ? `blur(30px) ${theme.name === 'dark' ? 'brightness(0.5)' : 'brightness(1.3)'}` : 'none'};
   border-bottom: 1px solid ${({ theme }) => theme.borderPrimary};
-  box-shadow: ${({ theme, scrolled }) =>
-    scrolled ? `0 10px 20px rgba(0, 0, 0, ${theme.name === 'dark' ? 0.2 : 0.025})` : 'none'};
+  box-shadow: ${({ theme }) => `0 10px 80px rgba(0, 0, 0, ${theme.name === 'dark' ? 0.2 : 0.1})`};
 
   ${({ floating }) =>
     !floating &&

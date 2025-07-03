@@ -11,6 +11,7 @@ import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextCard from '../../customPageComponents/TextCard'
 import TextCardContent from '../../customPageComponents/TextCardContent'
 import TextElement from '../../customPageComponents/TextElement'
+import GradientText from '../../GradientText'
 
 const CARD_WIDTH = 380
 const CARD_GAP = 24
@@ -74,7 +75,9 @@ const HomepageUSPSection = () => {
   return (
     <SubpageSectionStyled fullWidth bgColor="2">
       <TextElementStyled>
-        <h2>Web3, done right.</h2>
+        <h2>
+          Web3, <GradientText>done right.</GradientText>
+        </h2>
         <p>
           <strong>
             Dive in. 🐠 <br />

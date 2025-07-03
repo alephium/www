@@ -44,7 +44,7 @@ export const lightTheme: DefaultTheme = {
   surface1: 'var(--color-white)',
   surface2: '#FBFAF8',
   background1: '#ffffff',
-  background2: '#f6f6f6',
+  background2: '#f7f7f7',
   background3: '#ffffff',
   backgroundContrast: '#000000',
 

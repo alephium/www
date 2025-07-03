@@ -17,9 +17,9 @@ const EddyBackground = ({ className }: { className?: string }) => {
     <EddyBackgroundContainer className={className}>
       <GradientContainer
         style={{ backgroundImage: bottomGradient, transformOrigin: '50% 100%' }}
-        initial={{ scaleX: 0.3, scaleY: 0.3, opacity: 0 }}
+        initial={{ scaleX: 0.1, scaleY: 0.1, opacity: 0 }}
         animate={{
-          scaleX: 0.7,
+          scaleX: 0.6,
           scaleY: 0.5,
           opacity: 1
         }}

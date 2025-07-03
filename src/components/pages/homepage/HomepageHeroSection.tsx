@@ -1,3 +1,5 @@
+import { colord, extend } from 'colord'
+import mixPlugin from 'colord/plugins/mix'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
@@ -7,7 +9,10 @@ import Button from '../../Button'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextElement from '../../customPageComponents/TextElement'
 import EddyBackground from '../../EddyBackground'
+import GradientText from '../../GradientText'
 import HomepagePartnersSection from './HomepagePartnersSection'
+
+extend([mixPlugin])
 
 export const pageQuery = graphql`
   query HeroSection {
@@ -33,30 +38,36 @@ const HomepageHeroSection = () => {
   return (
     <SectionWrapper>
       <motion.div style={{ opacity }}>
-        <SubpageSectionStyled fullWidth>
+        <SubpageSectionStyled fullWidth noTopPadding>
           <EddyBackgroundStyled />
-          <TextElementWithReflection isCentered>
-            <h1>
-              The <span className="gradient-text">Web3</span>
-              <br />
-              you were promised.
-            </h1>
-            <p>
-              Scalability, smart contracts, and real decentralization <br />
-              without the tradeoffs.
-              <br />
-              <strong>
-                <b>Only on Alephium.</b>
-              </strong>
-            </p>
-          </TextElementWithReflection>
+          <TextAndButton>
+            <TextElementWithReflection isCentered>
+              <h1>
+                The Web3
+                <br />
+                <DiscreetGradientText>you were promised.</DiscreetGradientText>
+              </h1>
+              <p>
+                Scalability, smart contracts, and real decentralization <br />
+                without the tradeoffs.
+                <br />
+                <strong>
+                  <GradientText>
+                    <b>Only on Alephium.</b>
+                  </GradientText>
+                </strong>
+              </p>
+            </TextElementWithReflection>
 
-          <Buttons>
-            <Button big highlight url="/get-started">
-              Get started
-            </Button>
-          </Buttons>
-          {content?.partnersSection && <HomepagePartnersSection {...content.partnersSection} />}
+            <Buttons>
+              <Button big highlight url="/get-started">
+                Get started
+              </Button>
+            </Buttons>
+          </TextAndButton>
+          <PartnersSectionWrapper>
+            {content?.partnersSection && <HomepagePartnersSection {...content.partnersSection} />}
+          </PartnersSectionWrapper>
         </SubpageSectionStyled>
       </motion.div>
     </SectionWrapper>
@@ -76,8 +87,49 @@ const SubpageSectionStyled = styled(SubpageSection)`
   padding-left: var(--spacing-4);
   overflow: visible;
   min-height: 75vh;
+  gap: var(--spacing-4);
+`
+
+const TextAndButton = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   gap: var(--spacing-4);
+  flex: 1;
+`
+
+const DiscreetGradientText = styled.span`
+  background: radial-gradient(
+    ellipse 200% 100% at 50% 100%,
+    ${({ theme }) =>
+        colord(theme.palette2)
+          .mix(theme.textPrimary, theme.name === 'dark' ? 0.35 : 0.5)
+          .toHex()}
+      10%,
+    ${({ theme }) =>
+        colord(theme.palette5)
+          .mix(theme.textPrimary, theme.name === 'dark' ? 0.45 : 0.65)
+          .toHex()}
+      20%,
+    ${({ theme }) => colord(theme.textPrimary).toHex()} 30%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  animation: revealGradient 2s ease-out forwards;
+
+  @keyframes revealGradient {
+    0% {
+      background-position: 50% 0%;
+    }
+    100% {
+      background-position: 50% 100%;
+    }
+  }
 `
 
 const Buttons = styled.div`
@@ -85,7 +137,6 @@ const Buttons = styled.div`
   justify-content: center;
   gap: var(--spacing-4);
   margin-top: var(--spacing-2);
-  margin-bottom: var(--spacing-20);
 
   @media ${deviceBreakPoints.mobile} {
     margin-top: var(--spacing-4);
@@ -106,19 +157,6 @@ const EddyBackgroundStyled = styled(EddyBackground)`
 const TextElementWithReflection = styled(TextElement)`
   position: relative;
 
-  .gradient-text {
-    background: radial-gradient(
-      circle at 100% 0%,
-      ${({ theme }) => theme.palette5} 0%,
-      ${({ theme }) => theme.palette5} 20%,
-      ${({ theme }) => theme.palette2} 100%
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline;
-  }
-
   @keyframes fadeInMask {
     from {
       opacity: 0;
@@ -127,4 +165,12 @@ const TextElementWithReflection = styled(TextElement)`
       opacity: 0.8;
     }
   }
+`
+
+const PartnersSectionWrapper = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 `
