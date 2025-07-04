@@ -25,11 +25,17 @@ export const pageQuery = graphql`
         }
       }
     }
+    boatLineImage: file(relativePath: { eq: "boat-line.png" }) {
+      publicURL
+    }
+    birdsLineImage: file(relativePath: { eq: "birds-line.png" }) {
+      publicURL
+    }
   }
 `
 
 const HomepageHeroSection = () => {
-  const { allMarkdownRemark } = useStaticQuery<Queries.HeroSectionQuery>(pageQuery)
+  const { allMarkdownRemark, boatLineImage, birdsLineImage } = useStaticQuery<Queries.HeroSectionQuery>(pageQuery)
   const content = allMarkdownRemark.nodes[0].frontmatter
   const { scrollY } = useScroll()
 
@@ -69,6 +75,8 @@ const HomepageHeroSection = () => {
             {content?.partnersSection && <HomepagePartnersSection {...content.partnersSection} />}
           </PartnersSectionWrapper>
         </SubpageSectionStyled>
+        <BoatLineImage imageUrl={boatLineImage?.publicURL || ''} />
+        <BirdsLineImage imageUrl={birdsLineImage?.publicURL || ''} />
       </motion.div>
     </SectionWrapper>
   )
@@ -173,4 +181,45 @@ const PartnersSectionWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+`
+
+const BoatLineImage = styled.div<{ imageUrl?: string }>`
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  background-image: url(${({ imageUrl }) => imageUrl || ''});
+  background-size: contain;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 140px;
+  z-index: 1;
+  transform: scaleX(-1);
+  opacity: 0.5;
+
+  @media ${deviceBreakPoints.mobile} {
+    width: 150px;
+    height: 75px;
+  }
+`
+
+const BirdsLineImage = styled.div<{ imageUrl?: string }>`
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  background-image: url(${({ imageUrl }) => imageUrl || ''});
+  background-size: contain;
+  background-position: top left;
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 140px;
+  z-index: 1;
+  opacity: 0.5;
+
+  @media ${deviceBreakPoints.mobile} {
+    top: 100px;
+    left: 50px;
+    width: 150px;
+    height: 75px;
+  }
 `
