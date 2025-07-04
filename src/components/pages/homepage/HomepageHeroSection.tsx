@@ -96,6 +96,41 @@ const SubpageSectionStyled = styled(SubpageSection)`
   overflow: visible;
   min-height: 75vh;
   gap: var(--spacing-4);
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background: ${({ theme }) => theme.background2};
+    clip-path: polygon(
+      0% 100%,
+      5% 80%,
+      10% 90%,
+      15% 70%,
+      20% 85%,
+      25% 75%,
+      30% 90%,
+      35% 80%,
+      40% 95%,
+      45% 85%,
+      50% 100%,
+      55% 80%,
+      60% 90%,
+      65% 75%,
+      70% 85%,
+      75% 80%,
+      80% 95%,
+      85% 85%,
+      90% 90%,
+      95% 80%,
+      100% 100%
+    );
+    z-index: 1;
+  }
 `
 
 const TextAndButton = styled.div`
@@ -205,8 +240,8 @@ const BoatLineImage = styled.div<{ imageUrl?: string }>`
 
 const BirdsLineImage = styled.div<{ imageUrl?: string }>`
   position: absolute;
-  top: 100px;
-  left: 100px;
+  top: 130px;
+  left: 130px;
   background-image: url(${({ imageUrl }) => imageUrl || ''});
   background-size: contain;
   background-position: top left;
