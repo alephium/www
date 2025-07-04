@@ -419,6 +419,15 @@ const CustomPage = (props: PageProps) => {
                     </p>
                   </TextElement>
                 </ClickableBox>
+
+                <ClickableBox url="https://medium.com/@Alph-Indonesia">
+                  <Emoji>🥥</Emoji>
+                  <TextElement isSmall noMargin>
+                    <p>
+                      Alephium Blog <strong>Indonesian</strong>
+                    </p>
+                  </TextElement>
+                </ClickableBox>
               </Grid>
             </SubheaderContent>
           </SubpageSection>
