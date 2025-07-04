@@ -4,9 +4,11 @@ import { ReactNode, useMemo } from 'react'
 import styled, { useTheme } from 'styled-components'
 
 import CardsRow, { CardsRowSegment } from '../../customPageComponents/CardsRow'
+import SubheaderContent from '../../customPageComponents/SubheaderContent'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextCard from '../../customPageComponents/TextCard'
 import TextCardContent from '../../customPageComponents/TextCardContent'
+import TextElement from '../../customPageComponents/TextElement'
 
 export const homepageIntroQuery = graphql`
   query HomepageIntro {
@@ -120,47 +122,35 @@ const HomepageIntroSection = () => {
   )
 
   return (
-    <SubpageSectionStyled id="intro" noTopPadding overflow="visible">
-      {/* <TextElement isCentered>
-        <h2>
-          A Network Built
-          <br />
-          by Visionaries
-        </h2>
-        <p>
-          <strong>Alephium is more than a blockchain</strong> - it&apos;s a movement driven by those who refuse to
-          compromise on security. Built and secured by a community of miners, developers, and innovators, Alephium
-          embodies the core strengths of Proof-of-Work while pioneering energy efficiency and scalability.
-        </p>
-        <p>
-          <strong>
-            We&apos;re not here to follow trends - we&apos;re here to build a secure and sustainable foundation for the
-            future of finance.
-          </strong>
-        </p>
-      </TextElement> */}
-      <CardsRow>
-        <CardsRowSegment>
-          {hardcodedCards.slice(0, 2).map((card) => (
-            <TextCard border url={card.link.url} variants={cardVariants} key={card.title}>
-              <TextCardContent>
-                <h4 style={{ color: card.color }}>{card.title}</h4>
-                <p>{card.description}</p>
-              </TextCardContent>
-            </TextCard>
-          ))}
-        </CardsRowSegment>
-        <CardsRowSegment>
-          {hardcodedCards.slice(2, 4).map((card) => (
-            <TextCard border url={card.link.url} variants={cardVariants} key={card.title}>
-              <TextCardContent>
-                <h4 style={{ color: card.color }}>{card.title}</h4>
-                <p>{card.description}</p>
-              </TextCardContent>
-            </TextCard>
-          ))}
-        </CardsRowSegment>
-      </CardsRow>
+    <SubpageSectionStyled id="intro" overflow="visible">
+      <TextElement>
+        <h2>Quick start</h2>
+        <p>Get in and start right away.</p>
+      </TextElement>
+      <SubheaderContent>
+        <CardsRow>
+          <CardsRowSegment>
+            {hardcodedCards.slice(0, 2).map((card) => (
+              <TextCard border url={card.link.url} variants={cardVariants} key={card.title}>
+                <TextCardContent>
+                  <h4 style={{ color: card.color }}>{card.title}</h4>
+                  <p>{card.description}</p>
+                </TextCardContent>
+              </TextCard>
+            ))}
+          </CardsRowSegment>
+          <CardsRowSegment>
+            {hardcodedCards.slice(2, 4).map((card) => (
+              <TextCard border url={card.link.url} variants={cardVariants} key={card.title}>
+                <TextCardContent>
+                  <h4 style={{ color: card.color }}>{card.title}</h4>
+                  <p>{card.description}</p>
+                </TextCardContent>
+              </TextCard>
+            ))}
+          </CardsRowSegment>
+        </CardsRow>
+      </SubheaderContent>
     </SubpageSectionStyled>
   )
 }

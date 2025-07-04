@@ -25,12 +25,12 @@ export const darkTheme: DefaultTheme = {
 
   separator: 'var(--color-grey-700)',
 
-  palette1: '#89cbff',
-  palette2: '#ffe283',
-  palette3: '#9aa6ff',
-  palette4: '#ef9cee',
-  palette5: '#ff9db6',
-  palette6: '#ffce97'
+  palette1: '#89ffc4',
+  palette2: '#ffe88b',
+  palette3: '#4758ff',
+  palette4: '#f193f0',
+  palette5: '#ff8ab8',
+  palette6: '#7efbff'
 }
 
 export const lightTheme: DefaultTheme = {
@@ -44,7 +44,7 @@ export const lightTheme: DefaultTheme = {
   surface1: 'var(--color-white)',
   surface2: '#FBFAF8',
   background1: '#ffffff',
-  background2: '#fafafa',
+  background2: '#f7f7f7',
   background3: '#ffffff',
   backgroundContrast: '#000000',
 
@@ -55,12 +55,12 @@ export const lightTheme: DefaultTheme = {
 
   separator: 'var(--color-grey-100)',
 
-  palette1: '#469df9',
-  palette2: '#ffa42b',
-  palette3: '#4069ff',
-  palette4: '#ff67f6',
-  palette5: '#ff6b96',
-  palette6: '#ffa055'
+  palette1: '#5ade94',
+  palette2: '#ffca42',
+  palette3: '#6984ff',
+  palette4: '#ff77f7',
+  palette5: '#ff8fd0',
+  palette6: '#a1e9ff'
 }
 
 export const hackathonTheme: DefaultTheme = {
