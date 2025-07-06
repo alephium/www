@@ -193,7 +193,7 @@ const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean; scr
   z-index: 10000;
   transition: top 0.2s ease-out, opacity 0.2s ease-out, background-color 0.5s ease-out, box-shadow 0.5s ease-out;
   background-color: ${({ theme, scrolled }) =>
-    scrolled ? getColordColor(theme.background1).alpha(0.85).toHex() : 'transparent'};
+    scrolled ? getColordColor(theme.background2).alpha(0.85).toHex() : theme.background3};
   backdrop-filter: ${({ scrolled, theme }) =>
     scrolled ? `blur(30px) ${theme.name === 'dark' ? 'brightness(0.5)' : 'brightness(1.3)'}` : 'none'};
   border-bottom: 1px solid ${({ theme }) => theme.borderPrimary};

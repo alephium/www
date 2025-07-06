@@ -25,7 +25,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    boatLineImage: file(relativePath: { eq: "boat-line.png" }) {
+    cityscapeLineImage: file(relativePath: { eq: "cityscape-line.png" }) {
       publicURL
     }
     birdsLineImage: file(relativePath: { eq: "birds-line.png" }) {
@@ -35,7 +35,7 @@ export const pageQuery = graphql`
 `
 
 const HomepageHeroSection = () => {
-  const { allMarkdownRemark, boatLineImage, birdsLineImage } = useStaticQuery<Queries.HeroSectionQuery>(pageQuery)
+  const { allMarkdownRemark, cityscapeLineImage, birdsLineImage } = useStaticQuery<Queries.HeroSectionQuery>(pageQuery)
   const content = allMarkdownRemark.nodes[0].frontmatter
   const { scrollY } = useScroll()
 
@@ -47,6 +47,7 @@ const HomepageHeroSection = () => {
         <SubpageSectionStyled fullWidth noTopPadding>
           <EddyBackgroundStyled />
           <TextAndButton>
+            <ConcentricEllipses />
             <TextElementWithReflection isCentered>
               <h1>
                 The Web3
@@ -75,10 +76,36 @@ const HomepageHeroSection = () => {
             {content?.partnersSection && <HomepagePartnersSection {...content.partnersSection} />}
           </PartnersSectionWrapper>
         </SubpageSectionStyled>
-        <BoatLineImage imageUrl={boatLineImage?.publicURL || ''} />
+        <CityscapeLineImage imageUrl={cityscapeLineImage?.publicURL || ''} />
         <BirdsLineImage imageUrl={birdsLineImage?.publicURL || ''} />
       </motion.div>
     </SectionWrapper>
+  )
+}
+
+const ConcentricEllipses = () => {
+  const numEllipses = 10
+  const baseWidth = 400
+  const baseHeight = 240
+  const widthIncrement = 200
+  const heightIncrement = 120
+  const baseOpacity = 0.8
+  const opacityDecay = 0.05
+
+  const ellipseConfigs = Array.from({ length: numEllipses }, (_, index) => {
+    const width = baseWidth + index * widthIncrement
+    const height = baseHeight + index * heightIncrement
+    const opacity = Math.max(baseOpacity - index * opacityDecay, 0.05)
+
+    return { width, height, opacity }
+  })
+
+  return (
+    <EllipseContainer>
+      {ellipseConfigs.map((config, index) => (
+        <Ellipse key={index} width={config.width} height={config.height} delay={index} opacity={config.opacity} />
+      ))}
+    </EllipseContainer>
   )
 }
 
@@ -140,6 +167,44 @@ const TextAndButton = styled.div`
   justify-content: center;
   gap: var(--spacing-4);
   flex: 1;
+  position: relative;
+`
+
+const EllipseContainer = styled.div`
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 0;
+`
+
+const Ellipse = styled.span<{ width: number; height: number; delay: number; opacity: number }>`
+  position: absolute;
+  border: 2px dashed ${({ theme }) => colord(theme.textPrimary).alpha(0.08).toHex()};
+  border-radius: 50%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: ${({ width }) => width}px;
+  height: ${({ height }) => height}px;
+  opacity: ${({ opacity }) => opacity};
+  animation: pulseEllipse 6s ease-in-out infinite ${({ delay }) => delay}s;
+
+  @keyframes pulseEllipse {
+    0%,
+    100% {
+      transform: translateX(-50%) scale(1);
+    }
+    50% {
+      transform: translateX(-50%) scale(1.02);
+    }
+  }
+
+  @media ${deviceBreakPoints.mobile} {
+    width: ${({ width }) => width * 0.75}px;
+    height: ${({ height }) => height * 0.75}px;
+  }
 `
 
 const DiscreetGradientText = styled.span`
@@ -218,18 +283,17 @@ const PartnersSectionWrapper = styled.div`
   justify-content: flex-end;
 `
 
-const BoatLineImage = styled.div<{ imageUrl?: string }>`
+const CityscapeLineImage = styled.div<{ imageUrl?: string }>`
   position: absolute;
-  bottom: -5px;
-  right: 0;
+  bottom: -2px;
+  right: -30px;
   background-image: url(${({ imageUrl }) => imageUrl || ''});
   background-size: contain;
   background-position: bottom right;
   background-repeat: no-repeat;
-  width: 180px;
+  width: 400px;
   height: 140px;
   z-index: 1;
-  transform: scaleX(-1);
   opacity: 0.5;
 
   @media ${deviceBreakPoints.mobile} {
