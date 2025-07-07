@@ -25,17 +25,17 @@ export const pageQuery = graphql`
         }
       }
     }
-    cityscapeLineImage: file(relativePath: { eq: "cityscape-line.png" }) {
+    cityscapeImage: file(relativePath: { eq: "cityscape.png" }) {
       publicURL
     }
-    birdsLineImage: file(relativePath: { eq: "birds-line.png" }) {
+    birdsImage: file(relativePath: { eq: "birds.png" }) {
       publicURL
     }
   }
 `
 
 const HomepageHeroSection = () => {
-  const { allMarkdownRemark, cityscapeLineImage, birdsLineImage } = useStaticQuery<Queries.HeroSectionQuery>(pageQuery)
+  const { allMarkdownRemark, cityscapeImage, birdsImage } = useStaticQuery<Queries.HeroSectionQuery>(pageQuery)
   const content = allMarkdownRemark.nodes[0].frontmatter
   const { scrollY } = useScroll()
 
@@ -46,8 +46,8 @@ const HomepageHeroSection = () => {
       <motion.div style={{ opacity }}>
         <SubpageSectionStyled fullWidth noTopPadding>
           <EddyBackgroundStyled />
+          <ConcentricEllipses />
           <TextAndButton>
-            <ConcentricEllipses />
             <TextElementWithReflection isCentered>
               <h1>
                 The Web3
@@ -76,8 +76,8 @@ const HomepageHeroSection = () => {
             {content?.partnersSection && <HomepagePartnersSection {...content.partnersSection} />}
           </PartnersSectionWrapper>
         </SubpageSectionStyled>
-        <CityscapeLineImage imageUrl={cityscapeLineImage?.publicURL || ''} />
-        <BirdsLineImage imageUrl={birdsLineImage?.publicURL || ''} />
+        <CityscapeImage imageUrl={cityscapeImage?.publicURL || ''} />
+        <BirdsImage imageUrl={birdsImage?.publicURL || ''} />
       </motion.div>
     </SectionWrapper>
   )
@@ -89,8 +89,8 @@ const ConcentricEllipses = () => {
   const baseHeight = 240
   const widthIncrement = 200
   const heightIncrement = 120
-  const baseOpacity = 0.8
-  const opacityDecay = 0.05
+  const baseOpacity = 0.9
+  const opacityDecay = 0.08
 
   const ellipseConfigs = Array.from({ length: numEllipses }, (_, index) => {
     const width = baseWidth + index * widthIncrement
@@ -102,8 +102,8 @@ const ConcentricEllipses = () => {
 
   return (
     <EllipseContainer>
-      {ellipseConfigs.map((config, index) => (
-        <Ellipse key={index} width={config.width} height={config.height} delay={index} opacity={config.opacity} />
+      {ellipseConfigs.map(({ width, height, opacity }, index) => (
+        <Ellipse key={index} width={width} height={height} delay={index} opacity={opacity} />
       ))}
     </EllipseContainer>
   )
@@ -114,6 +114,8 @@ export default HomepageHeroSection
 const SectionWrapper = styled.div`
   position: sticky;
   top: 0;
+  width: 100%;
+  overflow: hidden;
 `
 
 const SubpageSectionStyled = styled(SubpageSection)`
@@ -172,11 +174,12 @@ const TextAndButton = styled.div`
 
 const EllipseContainer = styled.div`
   position: absolute;
-  bottom: -100%;
+  bottom: -25%;
   left: 50%;
   transform: translateX(-50%);
   pointer-events: none;
   z-index: 0;
+  mix-blend-mode: screen;
 `
 
 const Ellipse = styled.span<{ width: number; height: number; delay: number; opacity: number }>`
@@ -283,10 +286,10 @@ const PartnersSectionWrapper = styled.div`
   justify-content: flex-end;
 `
 
-const CityscapeLineImage = styled.div<{ imageUrl?: string }>`
+const CityscapeImage = styled.div<{ imageUrl?: string }>`
   position: absolute;
-  bottom: -2px;
-  right: -30px;
+  bottom: 0px;
+  right: -50px;
   background-image: url(${({ imageUrl }) => imageUrl || ''});
   background-size: contain;
   background-position: bottom right;
@@ -294,15 +297,15 @@ const CityscapeLineImage = styled.div<{ imageUrl?: string }>`
   width: 400px;
   height: 140px;
   z-index: 1;
-  opacity: 0.5;
+  opacity: ${({ theme }) => (theme.name === 'dark' ? 0.3 : 0.4)};
 
   @media ${deviceBreakPoints.mobile} {
-    width: 150px;
+    width: 350px;
     height: 75px;
   }
 `
 
-const BirdsLineImage = styled.div<{ imageUrl?: string }>`
+const BirdsImage = styled.div<{ imageUrl?: string }>`
   position: absolute;
   top: 130px;
   left: 130px;
@@ -313,7 +316,7 @@ const BirdsLineImage = styled.div<{ imageUrl?: string }>`
   width: 180px;
   height: 140px;
   z-index: 1;
-  opacity: 0.5;
+  opacity: ${({ theme }) => (theme.name === 'dark' ? 0.3 : 0.4)};
 
   @media ${deviceBreakPoints.mobile} {
     top: 100px;
