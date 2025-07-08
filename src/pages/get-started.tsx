@@ -181,7 +181,7 @@ const CustomPage = (props: PageProps) => {
               <TextElement isCentered>
                 <h3>Guides and tutorials</h3>
                 <Button url="https://docs.alephium.org/ralph">Ralph Language</Button>
-                <Button url="https://docs.alephium.org/sdk">SDK</Button>
+                <Button url="https://docs.alephium.org/sdk/getting-started">SDK</Button>
                 <Button url="https://www.youtube.com/playlist?list=PL8q8n0BHJS1PWP7t8ABECYdOaPM-hJmjx">
                   Tutorials
                 </Button>
