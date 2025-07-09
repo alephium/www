@@ -11,7 +11,6 @@ import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextCard from '../../customPageComponents/TextCard'
 import TextCardContent from '../../customPageComponents/TextCardContent'
 import TextElement from '../../customPageComponents/TextElement'
-import GradientText from '../../GradientText'
 
 const CARD_WIDTH = 380
 const CARD_GAP = 24
@@ -73,11 +72,9 @@ const HomepageUSPSection = () => {
   const { totalTransactions } = statsScalarData
 
   return (
-    <SubpageSectionStyled fullWidth bgColor="2">
+    <SubpageSection bgColor="3" fullWidth>
       <TextElementStyled>
-        <h2>
-          Web3, <GradientText>done right.</GradientText>
-        </h2>
+        <h2>Web3, done right.</h2>
         <p>
           <strong>
             Dive in. 🐠 <br />
@@ -226,14 +223,9 @@ const HomepageUSPSection = () => {
           </TextCardContent>
         </TextCard>
       </CardsHorizontalScroller>
-    </SubpageSectionStyled>
+    </SubpageSection>
   )
 }
-
-const SubpageSectionStyled = styled(SubpageSection)`
-  padding-right: 0;
-  padding-left: 0;
-`
 
 const TextElementStyled = styled(TextElement)`
   width: var(--page-width);

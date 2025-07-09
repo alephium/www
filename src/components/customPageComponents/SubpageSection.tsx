@@ -2,16 +2,12 @@ import { HTMLAttributes, ReactNode } from 'react'
 import styled, { css } from 'styled-components'
 
 import { deviceBreakPoints } from '../../styles/global-style'
-import PageSectionContainer from '../PageSectionContainer'
+import PageSectionContainer, { PageSectionContainerProps } from '../PageSectionContainer'
 type GradientPosition = 'top' | 'bottom' | 'bottom-right' | 'bottom-left' | 'top-right' | 'top-left' | 'left' | 'right'
 
-interface SubpageSectionProps extends HTMLAttributes<HTMLDivElement> {
+interface SubpageSectionProps extends PageSectionContainerProps, HTMLAttributes<HTMLDivElement> {
   children: ReactNode
   Parallax?: ReactNode
-  wide?: boolean
-  fullWidth?: boolean
-  narrow?: boolean
-  bgColor?: '1' | '2' | '3'
   border?: 'top' | 'bottom' | 'top-bottom' | 'all'
   isCentered?: boolean
   className?: string
@@ -37,7 +33,7 @@ const SubpageSectionStyled = styled(PageSectionContainer)<SubpageSectionProps>`
   padding-top: ${({ noTopPadding }) => (noTopPadding ? '0' : 'var(--spacing-12)')};
   padding-bottom: ${({ noBottomPadding }) => (noBottomPadding ? '0' : 'var(--spacing-12)')};
   background-color: ${({ theme, bgColor }) => (bgColor ? theme[`background${bgColor}`] : 'transparent')};
-  border-radius: ${({ fullWidth }) => (fullWidth ? '0' : 'var(--radius-big)')};
+  border-radius: ${({ fullWidth }) => (fullWidth ? '0' : 'var(--radius-huge)')};
   overflow: ${({ overflow }) => overflow || 'hidden'};
 
   @media ${deviceBreakPoints.mobile} {

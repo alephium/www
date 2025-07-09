@@ -86,7 +86,7 @@ const TextElement = styled.div<TextElementProps>`
     font-weight: var(--fontWeight-semiBold);
 
     + p {
-      font-size: var(--fontSize-24);
+      font-size: var(--fontSize-28);
     }
 
     @media ${deviceBreakPoints.mobile} {
@@ -96,8 +96,8 @@ const TextElement = styled.div<TextElementProps>`
 
   > h2 {
     font-family: 'Geist';
-    font-size: var(--fontSize-58);
-    margin-bottom: var(--spacing-6);
+    font-size: var(--fontSize-56);
+    margin-bottom: var(--spacing-4);
     font-weight: var(--fontWeight-semiBold);
     color: ${({ theme }) => theme.textPrimary};
     line-height: 1;

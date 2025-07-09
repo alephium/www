@@ -5,7 +5,6 @@ import { deviceBreakPoints } from '../../../styles/global-style'
 import Button from '../../Button'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextElement from '../../customPageComponents/TextElement'
-import GradientText from '../../GradientText'
 import SectionDivider from '../../SectionDivider'
 
 interface LogoPosition {
@@ -199,12 +198,10 @@ const HomepageEcosystemSection = () => {
   }
 
   return (
-    <SubpageSection wide bgColor="2" edgeGradient gradientPosition="bottom">
+    <SubpageSection wide bgColor="1">
       <div style={{ position: 'relative', zIndex: 1 }}>
         <TextElement isCentered>
-          <h2>
-            Built on <GradientText>Alephium.</GradientText>
-          </h2>
+          <h2>Built on Alephium.</h2>
           <p>
             <strong>Alephium is home to hundreds of innovative dApps.</strong>
           </p>

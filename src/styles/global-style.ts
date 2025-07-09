@@ -84,8 +84,9 @@ const GlobalStyle = createGlobalStyle`
 
     --radius-tiny: 4px;
     --radius-small: 9px;
-    --radius: 14px;
+    --radius: 12px;
     --radius-big: 19px;
+    --radius-huge: 40px;
     --radius-full: 9999px;
 
     --fontFamily-sans: "Geist", "InterDisplay", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;

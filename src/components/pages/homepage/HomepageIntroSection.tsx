@@ -64,7 +64,7 @@ const HomepageIntroSection = () => {
         link: {
           url: '/wallets'
         },
-        color: theme.palette3
+        color: theme.textPrimary
       },
       {
         title: 'Build',
@@ -78,7 +78,7 @@ const HomepageIntroSection = () => {
         link: {
           url: 'https://docs.alephium.org'
         },
-        color: theme.palette5
+        color: theme.textPrimary
       },
       {
         title: 'Contribute',
@@ -92,7 +92,7 @@ const HomepageIntroSection = () => {
         link: {
           url: '/grants'
         },
-        color: theme.palette1
+        color: theme.textPrimary
       },
       {
         title: 'Mine',
@@ -106,15 +106,12 @@ const HomepageIntroSection = () => {
         link: {
           url: 'https://docs.alephium.org/mining'
         },
-        color: theme.palette2
+        color: theme.textPrimary
       }
     ],
     [
       lightRays?.childImageSharp?.gatsbyImageData,
-      theme.palette3,
-      theme.palette5,
-      theme.palette1,
-      theme.palette2,
+      theme.textPrimary,
       stream?.childImageSharp?.gatsbyImageData,
       greenWater?.childImageSharp?.gatsbyImageData,
       goldStream?.childImageSharp?.gatsbyImageData

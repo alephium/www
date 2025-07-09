@@ -189,15 +189,14 @@ const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean; scr
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 56px;
+  height: 70px;
   z-index: 10000;
   transition: top 0.2s ease-out, opacity 0.2s ease-out, background-color 0.5s ease-out, box-shadow 0.5s ease-out;
   background-color: ${({ theme, scrolled }) =>
-    scrolled ? getColordColor(theme.background2).alpha(0.85).toHex() : theme.background3};
-  backdrop-filter: ${({ scrolled, theme }) =>
-    scrolled ? `blur(30px) ${theme.name === 'dark' ? 'brightness(0.5)' : 'brightness(1.3)'}` : 'none'};
-  border-bottom: 1px solid ${({ theme }) => theme.borderPrimary};
-  box-shadow: ${({ theme }) => `0 10px 80px rgba(0, 0, 0, ${theme.name === 'dark' ? 0.2 : 0.1})`};
+    scrolled ? getColordColor(theme.background2).alpha(0.85).toHex() : 'transparent'};
+  backdrop-filter: ${({ scrolled, theme }) => (scrolled ? `blur(30px)` : 'blur(0px)')};
+  box-shadow: ${({ scrolled, theme }) =>
+    scrolled ? `0 10px 80px rgba(0, 0, 0, ${theme.name === 'dark' ? 0.2 : 0.1})` : 'none'};
 
   ${({ floating }) =>
     !floating &&

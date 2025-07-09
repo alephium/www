@@ -160,9 +160,6 @@ const MosaicScrollTrack = styled.div<{ numCols: number; columnSize: string }>`
       )
   );
   animation: ${scroll} 100s linear infinite;
-  &:hover {
-    animation-play-state: paused;
-  }
   @media ${deviceBreakPoints.mobile} {
     width: calc(
       2 * ((${(props) => props.numCols} * ${COLUMN_SIZE_MOBILE}) + (${(props) => props.numCols} - 1) * ${GRID_GAP})
