@@ -6,7 +6,7 @@ export type ThemeType = 'light' | 'dark' | 'hackathon'
 export const darkTheme: DefaultTheme = {
   name: 'dark',
 
-  textPrimary: '#ffffff',
+  textPrimary: '#f5f5f7',
   textPrimaryVariation: 'rgba(255, 255, 255, 0.8)',
   textSecondary: 'rgba(255, 255, 255, 0.7)',
   textTertiary: 'rgba(255, 255, 255,  0.4)',
@@ -18,18 +18,18 @@ export const darkTheme: DefaultTheme = {
   background3: 'var(--color-grey-950)',
   backgroundContrast: 'var(--color-grey-800)',
 
-  borderPrimary: 'rgba(255, 255, 255, 0.08)',
+  borderPrimary: 'rgba(255, 255, 255, 0.075)',
 
-  link: 'var(--color-white)',
+  link: '#66a4fa',
   linkAlt: 'var(--color-grey-700)',
 
   separator: 'var(--color-grey-700)',
 
   palette1: '#89ffc4',
-  palette2: '#ffe88b',
-  palette3: '#4758ff',
-  palette4: '#f193f0',
-  palette5: '#ff8ab8',
+  palette2: '#ffc48b',
+  palette3: '#6b8dff',
+  palette4: '#faa0f9',
+  palette5: '#ff8a97',
   palette6: '#7efbff'
 }
 
@@ -44,22 +44,22 @@ export const lightTheme: DefaultTheme = {
   surface1: 'var(--color-white)',
   surface2: '#FBFAF8',
   background1: '#ffffff',
-  background2: '#f7f7f7',
-  background3: '#ffffff',
+  background2: '#fdfdfd',
+  background3: '#f5f5f5',
   backgroundContrast: '#000000',
 
-  borderPrimary: 'rgba(0, 0, 0, 0.08)',
+  borderPrimary: 'rgba(0, 0, 0, 0.06)',
 
-  link: '#000000',
+  link: '#1485ea',
   linkAlt: 'var(--color-black)',
 
   separator: 'var(--color-grey-100)',
 
   palette1: '#5ade94',
   palette2: '#ffca42',
-  palette3: '#6984ff',
-  palette4: '#ff77f7',
-  palette5: '#ff8fd0',
+  palette3: '#7bb7ff',
+  palette4: '#ff89c6',
+  palette5: '#ff8fa3',
   palette6: '#a1e9ff'
 }
 

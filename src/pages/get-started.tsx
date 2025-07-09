@@ -127,8 +127,6 @@ const CustomPage = (props: PageProps) => {
             </SubheaderContent>
           </SubpageSection>*/}
 
-          <SectionDivider double />
-
           <SubpageImageHeroSection
             backgroundImage={ecosystemImage}
             alignContent="center"
@@ -147,7 +145,7 @@ const CustomPage = (props: PageProps) => {
             </TextElement>
           </SubpageImageHeroSection>
 
-          <SubpageSection isCentered edgeGradient border="all" bgColor="2" wide>
+          <SubpageSection isCentered bgColor="2">
             <TextElement isCentered>
               <h2>Build on Alephium</h2>
               <p>
@@ -257,8 +255,6 @@ const GetAlphSection = () => {
         </TextElement>
       </SubpageSection>
 
-      <SectionDivider />
-
       <SubpageImageHeroSection backgroundImage={treasureImage} minHeight="600px" alignContent="center">
         <h1>Wallets</h1>
         <p>
@@ -269,9 +265,7 @@ const GetAlphSection = () => {
         </Button>
       </SubpageImageHeroSection>
 
-      <SectionDivider double />
-
-      <SubpageSection bgColor="2" fullWidth edgeGradient gradientPosition="top">
+      <SubpageSection>
         <SubpageSection>
           <TextElement>
             <h2>Get ALPH</h2>

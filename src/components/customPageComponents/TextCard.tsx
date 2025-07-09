@@ -4,7 +4,6 @@ import { PointerEvent, ReactNode, useEffect, useRef } from 'react'
 import styled, { css, useTheme } from 'styled-components'
 
 import { deviceBreakPoints } from '../../styles/global-style'
-import { getColordColor } from '../../styles/themes'
 import { getPointerRelativePositionInElement } from '../../utils/pointer'
 import SimpleLink from '../SimpleLink'
 import TextElement, { TextElementProps } from './TextElement'
@@ -97,13 +96,6 @@ const Card = ({ children, url, isAnimated, border, bgColor }: CardProps) => {
     }
   }, [springX, springY])
 
-  useEffect(() => {
-    if (cardRef.current && !bgColor) {
-      const computedColor = getColordColor(theme.background1).alpha(0.7).toHex()
-      cardRef.current.style.backgroundColor = computedColor
-    }
-  }, [theme.background1, bgColor])
-
   const onMove = (e: PointerEvent) => {
     const { x: positionX, y: positionY } = getPointerRelativePositionInElement(e)
 
@@ -134,7 +126,7 @@ const Card = ({ children, url, isAnimated, border, bgColor }: CardProps) => {
 const GradientBorder = styled.div`
   position: absolute;
   inset: -1px;
-  border-radius: var(--radius);
+  border-radius: var(--radius-big);
   background: radial-gradient(
     circle at var(--gradient-x) var(--gradient-y),
     ${({ theme }) => theme.borderPrimary} 10%,
@@ -154,7 +146,7 @@ const GradientBorder = styled.div`
     content: '';
     position: absolute;
     inset: 3px;
-    border-radius: calc(var(--radius) - 2px);
+    border-radius: calc(var(--radius-big) - 2px);
     background-color: ${({ theme }) => colord(theme.background1).alpha(1).toHex()};
     backdrop-filter: blur(100px) saturate(180%);
     -webkit-backdrop-filter: blur(100px) saturate(180%);
@@ -182,7 +174,7 @@ const TextElementStyled = styled(TextElement)`
   height: 100%;
 
   p {
-    font-weight: var(--fontWeight-medium);
+    font-weight: var(--fontWeight-regular);
     font-size: var(--fontSize-18);
     line-height: 1.4;
     margin-bottom: 0;
@@ -219,8 +211,8 @@ const CardStyled = styled(motion.div)<{
   display: flex;
   position: relative;
   flex-direction: column;
-  border-radius: var(--radius);
-  background-color: ${({ theme, bgColor }) => (bgColor ? theme[bgColor] : 'transparent')};
+  border-radius: var(--radius-big);
+  background-color: ${({ theme, bgColor }) => (bgColor ? theme[bgColor] : theme.background1)};
   backdrop-filter: blur(50px) saturate(120%) brightness(1.1);
   text-decoration: none;
   transition: all 0.1s ease-out;
@@ -228,23 +220,12 @@ const CardStyled = styled(motion.div)<{
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
-  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, ${({ theme }) => (theme.name === 'light' ? 0.05 : 0.2)});
-
-  &:hover::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: var(--radius);
-    box-shadow: inset 0 0 0 1px ${({ theme }) => theme.textPrimary};
-    mix-blend-mode: overlay;
-    pointer-events: none;
-  }
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
 
   ${({ border }) =>
     border &&
     css`
-      box-shadow: inset 0 0 0 1px ${({ theme }) => theme.borderPrimary},
-        0 10px 50px 0 rgba(0, 0, 0, ${({ theme }) => (theme.name === 'light' ? 0.05 : 0.2)});
+      box-shadow: inset 0 0 0 1px ${({ theme }) => theme.borderPrimary};
     `}
 
   ${({ url }) => url && 'transform-style: preserve-3d;'}

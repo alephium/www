@@ -79,14 +79,14 @@ const TextElement = styled.div<TextElementProps>`
   }
 
   > h1 {
-    font-family: 'Geist';
+    font-family: 'Inter';
     line-height: 0.9;
 
     font-size: var(--fontSize-76);
     font-weight: var(--fontWeight-semiBold);
 
     + p {
-      font-size: var(--fontSize-24);
+      font-size: var(--fontSize-26);
     }
 
     @media ${deviceBreakPoints.mobile} {
@@ -95,9 +95,9 @@ const TextElement = styled.div<TextElementProps>`
   }
 
   > h2 {
-    font-family: 'Geist';
-    font-size: var(--fontSize-58);
-    margin-bottom: var(--spacing-6);
+    font-family: 'Inter';
+    font-size: var(--fontSize-50);
+    margin-bottom: var(--spacing-4);
     font-weight: var(--fontWeight-semiBold);
     color: ${({ theme }) => theme.textPrimary};
     line-height: 1;
@@ -119,8 +119,8 @@ const TextElement = styled.div<TextElementProps>`
   }
 
   > h3 {
-    font-family: 'Geist';
-    font-size: var(--fontSize-38);
+    font-family: 'Inter';
+    font-size: var(--fontSize-36);
     font-weight: var(--fontWeight-medium);
     margin-bottom: var(--spacing-2);
 

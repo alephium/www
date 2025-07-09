@@ -162,16 +162,17 @@ export default styled(SimpleLinkComponent)`
   color: ${({ theme, color }) => (color ? color : theme.link)};
   text-decoration: ${({ highlight }) => (highlight ? 'underline' : 'dotted')};
   display: inline-block;
+  font-size: var(--fontSize-18);
 
   svg {
-    fill: ${({ theme, color }) => (color ? color : theme.textPrimary)};
+    fill: ${({ theme, color }) => (color ? color : theme.link)};
     vertical-align: middle;
   }
 
   &:hover {
     cursor: pointer;
     opacity: 1;
-    color: ${({ theme }) => theme.textPrimary};
+    color: ${({ theme }) => theme.link};
     transition: all 0.1s ease-out;
   }
 

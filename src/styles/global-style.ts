@@ -30,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
       font-size: 13px;
     }
 
-    --page-width: min(85vw, 1400px);
+    --page-width: min(90vw, 1600px);
     --page-width-shrinked: 68rem;
 
     --width-16: 1rem;
@@ -84,11 +84,12 @@ const GlobalStyle = createGlobalStyle`
 
     --radius-tiny: 4px;
     --radius-small: 9px;
-    --radius: 14px;
-    --radius-big: 19px;
+    --radius: 12px;
+    --radius-big: 16px;
+    --radius-huge: 40px;
     --radius-full: 9999px;
 
-    --fontFamily-sans: "Geist", "InterDisplay", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    --fontFamily-sans: "InterDisplay", "Geist", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
     --fontFamily-serif: "Times New Roman", Times, serif;
     --font-heading: var(--fontFamily-sans);
     --fontWeight-light: 300;
@@ -140,9 +141,9 @@ const GlobalStyle = createGlobalStyle`
     --color-grey-600: #424242;
     --color-grey-700: #353535;
     --color-grey-750: #2c2c2c;
-    --color-grey-800: #262626;
-    --color-grey-850: #212121;
-    --color-grey-900: #171717;
+    --color-grey-800: #282828;
+    --color-grey-850: #232323;
+    --color-grey-900: #191919;
     --color-grey-950: #121212;
     --color-black: #000;
     --color-salmon: #ff5d51;

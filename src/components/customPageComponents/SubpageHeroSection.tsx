@@ -42,7 +42,7 @@ const SubpageHeroSectionStyled = styled.section<SubpageHeroSectionProps>`
   min-height: ${({ split, minHeight }) => (split ? 'unset' : minHeight || '75vh')};
   margin: auto;
   margin-bottom: ${({ bottomMargin }) => (bottomMargin ? 'var(--spacing-10)' : '0')};
-  width: ${({ narrow }) => (narrow ? 'var(--page-width)' : '85vw')};
+  width: ${({ narrow }) => (narrow ? 'var(--page-width)' : '80vw')};
   overflow: hidden;
   display: flex;
   align-items: stretch;

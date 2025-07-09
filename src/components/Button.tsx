@@ -101,7 +101,7 @@ const getGradient = (theme: DefaultTheme) => `
   radial-gradient(
     circle at var(--gradient-x) var(--gradient-y),
     ${theme.palette5} 25%,
-    ${theme.palette2} 100%
+    ${theme.palette4} 100%
   )
 `
 
@@ -198,8 +198,6 @@ const StyledButton = styled(Button)`
   ${({ highlight }) =>
     highlight &&
     css`
-      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
-
       &:hover {
         &::after {
           opacity: 0.5;
