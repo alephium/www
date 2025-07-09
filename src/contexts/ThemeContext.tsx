@@ -19,13 +19,12 @@ export const useTheme = () => {
 }
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
-  const [theme, setTheme] = useState<ThemeType>('light')
+  const [theme, setTheme] = useState<ThemeType>('dark')
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
     const saved = window.localStorage.getItem('theme') as ThemeType | null
-    const system = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-    setTheme(saved ?? system)
+    setTheme(saved ?? 'dark')
     setMounted(true)
 
     // listen for system theme changes

@@ -1,68 +1,95 @@
-import { FC } from 'react'
+import { colord } from 'colord'
+import { motion } from 'framer-motion'
 import styled, { DefaultTheme, useTheme } from 'styled-components'
 
 import { deviceBreakPoints } from '../styles/global-style'
 
-export interface MeshGradientEffectProps {
-  /** Not used in static version, but kept for API compatibility */
-  contrast?: number
-  brightness?: number
-  blendMode?: string
-  speed?: number
-  color1?: [number, number, number]
-  color2?: [number, number, number]
-  color3?: [number, number, number]
-  color4?: [number, number, number]
-  className?: string
-}
-
-const MeshGradientEffect: FC<MeshGradientEffectProps> = ({ className }) => {
+const EddyBackground = ({ className }: { className?: string }) => {
   const theme = useTheme()
 
-  const leftGradient = `radial-gradient(circle at 0% 50%, ${theme.palette2} 15%, ${theme.palette5} 30%, ${theme.palette1} 50%, ${theme.palette3} 60%, transparent 70%)`
-  const rightGradient = `radial-gradient(circle at 100% 50%, ${theme.palette2} 15%, ${theme.palette5} 30%, ${theme.palette1} 50%, ${theme.palette3} 60%, transparent 70%)`
+  const bottomGradient = `radial-gradient(circle at 50% 120%, ${theme.palette2} 0%, ${theme.palette4} 35%, ${colord(
+    theme.palette3
+  )
+    .alpha(theme.name === 'dark' ? 0.5 : 0.3)
+    .toHex()} 55%, transparent 65%)`
+
+  const backgroundGradient = `linear-gradient(to bottom left, ${theme.palette2} 0%, ${theme.palette4} 20%, ${theme.palette3} 50%, ${theme.palette5} 100%)`
 
   return (
     <EddyBackgroundContainer className={className}>
-      <GradientContainer
-        style={{ backgroundImage: leftGradient, left: 0, backgroundPosition: '0% 50%' }}
+      <Background />
+      <BottomGradientContainer
+        style={{ backgroundImage: bottomGradient, transformOrigin: '50% 100%' }}
+        initial={{ scaleX: 0.1, scaleY: 0.1, opacity: 0 }}
+        animate={{
+          scaleX: 0.8,
+          scaleY: 0.5,
+          opacity: 1
+        }}
+        transition={{
+          duration: 2,
+          ease: [0.25, 0.46, 0.45, 0.94]
+        }}
         aria-hidden="true"
       />
-      <GradientContainer
-        style={{ backgroundImage: rightGradient, right: 0, backgroundPosition: '100% 50%' }}
-        aria-hidden="true"
+      <BackgroundGradientContainer
+        style={{ backgroundImage: backgroundGradient }}
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: theme.name === 'dark' ? 0.5 : 1,
+          transition: {
+            duration: 2,
+            ease: [0.25, 0.46, 0.45, 0.94]
+          }
+        }}
       />
     </EddyBackgroundContainer>
   )
 }
 
-export default MeshGradientEffect
+export default EddyBackground
 
 const getColorFilters = (theme: DefaultTheme) => `
-    brightness(${theme.name === 'dark' ? 1 : 1.4})
-    saturate(${theme.name === 'dark' ? 1.3 : 1})
-    contrast(${theme.name === 'dark' ? 1.2 : 1});
+    brightness(${theme.name === 'dark' ? 1 : 1.15})
 `
 
 const EddyBackgroundContainer = styled.div`
   position: absolute;
   inset: 0;
-  z-index: -1;
+  z-index: 0;
 `
 
-const GradientContainer = styled.div`
+const Background = styled.div`
   position: absolute;
-  top: 0;
-  width: 50%;
-  height: 100%;
-  z-index: -1;
+  inset: 0;
+  background-color: ${({ theme }) => theme.background3};
   pointer-events: none;
-  filter: blur(90px) ${({ theme }) => getColorFilters(theme)};
-  opacity: ${({ theme }) => (theme.name === 'dark' ? 0.4 : 0.8)};
-  background-size: 65% 75%;
+  border-radius: calc(var(--radius-huge) - var(--spacing-2));
+  filter: blur(40px);
+`
+
+const BottomGradientContainer = styled(motion.div)`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  filter: blur(70px) ${({ theme }) => getColorFilters(theme)};
   background-repeat: no-repeat;
 
   @media ${deviceBreakPoints.mobile} {
     filter: blur(70px) ${({ theme }) => getColorFilters(theme)};
   }
+`
+
+const BackgroundGradientContainer = styled(motion.div)`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  filter: blur(40px);
 `

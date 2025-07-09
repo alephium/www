@@ -1,92 +1,239 @@
-import { graphql, useStaticQuery } from 'gatsby'
+import { colord, extend } from 'colord'
+import mixPlugin from 'colord/plugins/mix'
+import { motion, useScroll, useTransform } from 'framer-motion'
 import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../../../styles/global-style'
+import { lightTheme } from '../../../styles/themes'
+import AlephiumLogo from '../../AlephiumLogo'
 import Button from '../../Button'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextElement from '../../customPageComponents/TextElement'
 import EddyBackground from '../../EddyBackground'
-import HomepageIntroSection from './HomepageIntroSection'
-import HomepagePartnersSection from './HomepagePartnersSection'
 
-export const pageQuery = graphql`
-  query HeroSection {
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/homepage.md/" } }) {
-      nodes {
-        frontmatter {
-          partnersSection {
-            ...HomepagePartnersSection
-          }
-        }
-      }
-    }
-  }
-`
+extend([mixPlugin])
 
 const HomepageHeroSection = () => {
-  const { allMarkdownRemark } = useStaticQuery<Queries.HeroSectionQuery>(pageQuery)
-  const content = allMarkdownRemark.nodes[0].frontmatter
+  const { scrollY } = useScroll()
+  const opacity = useTransform(scrollY, [100, 1000], [1, 0])
 
   return (
-    <SubpageSectionStyled fullWidth>
-      <EddyBackgroundStyled />
-      <TextElement isCentered>
-        <h1>
-          The Web3
-          <br /> you were promised.
-        </h1>
-        <p>
-          Scalability, smart contracts, and real decentralization <br />
-          without the tradeoffs.
-          <br />
-          <strong>
-            <b>Only on Alephium.</b>
-          </strong>
-        </p>
-      </TextElement>
+    <SectionWrapper style={{ opacity }}>
+      <SubpageSectionStyled noTopPadding bgColor="2" wide>
+        <EddyBackground />
+        <ConcentricEllipses />
+        <TopSection>
+          <TextElementWithReflection isCentered>
+            <h1>Web3, as Promised.</h1>
+            <p>
+              Easy to build on. Safe to use. Ready to grow. <br />
+              <strong>
+                <b>No tradeoffs.</b>
+              </strong>
+            </p>
+          </TextElementWithReflection>
 
-      <Buttons>
-        <Button big highlight url="/get-started">
-          Get started
-        </Button>
-      </Buttons>
-      {content?.partnersSection && <HomepagePartnersSection {...content.partnersSection} />}
-      <HomepageIntroSection />
-    </SubpageSectionStyled>
+          <Buttons>
+            <Button big highlight url="/get-started">
+              Get started
+            </Button>
+          </Buttons>
+        </TopSection>
+
+        <BottomSection>
+          <AlephiumLogoContainer>
+            <AlephiumLogo
+              fill={lightTheme.textPrimary}
+              gradientIndex={0}
+              innerShadowColor={colord(lightTheme.palette4).alpha(0.2).toHex()}
+            />
+          </AlephiumLogoContainer>
+        </BottomSection>
+      </SubpageSectionStyled>
+    </SectionWrapper>
+  )
+}
+
+const ConcentricEllipses = () => {
+  const numEllipses = 8
+  const baseWidth = 650
+  const baseHeight = 400
+  const widthIncrement = 200
+  const heightIncrement = 120
+  const baseOpacity = 0.5
+  const opacityDecay = 0.08
+
+  const ellipseConfigs = Array.from({ length: numEllipses }, (_, index) => {
+    const width = baseWidth + index * widthIncrement
+    const height = baseHeight + index * heightIncrement
+    const opacity = Math.max(baseOpacity - index * opacityDecay, 0.05)
+
+    return { width, height, opacity }
+  })
+
+  return (
+    <EllipseContainer>
+      {ellipseConfigs.map(({ width, height, opacity }, index) => (
+        <Ellipse key={index} width={width} height={height} delay={index} opacity={opacity} />
+      ))}
+    </EllipseContainer>
   )
 }
 
 export default HomepageHeroSection
+
+const SectionWrapper = styled(motion.div)`
+  width: 100%;
+  padding-top: 10vh !important;
+`
 
 const SubpageSectionStyled = styled(SubpageSection)`
   padding-bottom: var(--spacing-4);
   padding-right: var(--spacing-4);
   padding-left: var(--spacing-4);
   overflow: visible;
-  min-height: 80vh;
+  min-height: 68vh;
+  gap: var(--spacing-4);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid ${({ theme }) => theme.background1};
+`
+
+const TopSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   gap: var(--spacing-4);
+  flex: 2;
+  position: relative;
+`
+
+const EllipseContainer = styled.div`
+  position: absolute;
+  bottom: -15%;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 0;
+`
+
+const Ellipse = styled.span<{ width: number; height: number; delay: number; opacity: number }>`
+  position: absolute;
+  border: 2px dashed
+    ${({ theme }) =>
+      colord(theme.textPrimary)
+        .alpha(theme.name === 'dark' ? 0.2 : 0.1)
+        .toHex()};
+  border-radius: 50%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: ${({ width }) => width}px;
+  height: ${({ height }) => height}px;
+  opacity: ${({ opacity }) => opacity};
+  animation: pulseEllipse 6s ease-in-out infinite ${({ delay }) => delay}s;
+
+  @keyframes pulseEllipse {
+    0%,
+    100% {
+      transform: translateX(-50%) scale(1);
+    }
+    50% {
+      transform: translateX(-50%) scale(1.05);
+    }
+  }
+
+  @media ${deviceBreakPoints.mobile} {
+    width: ${({ width }) => width * 0.75}px;
+    height: ${({ height }) => height * 0.75}px;
+  }
+`
+
+const DiscreetGradientText = styled.span`
+  background: radial-gradient(
+    ellipse 200% 100% at 50% 100%,
+    ${({ theme }) =>
+        colord(theme.palette2)
+          .mix(theme.textPrimary, theme.name === 'dark' ? 0.6 : 0.8)
+          .toHex()}
+      10%,
+    ${({ theme }) =>
+        colord(theme.palette5)
+          .mix(theme.textPrimary, theme.name === 'dark' ? 0.6 : 0.8)
+          .toHex()}
+      20%,
+    ${({ theme }) => colord(theme.textPrimary).toHex()} 30%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  animation: revealGradient 2s ease-out forwards;
+
+  @keyframes revealGradient {
+    0% {
+      background-position: 50% 0%;
+    }
+    100% {
+      background-position: 50% 100%;
+    }
+  }
 `
 
 const Buttons = styled.div`
   display: flex;
   justify-content: center;
-  gap: var(--spacing-4);
-  margin-top: var(--spacing-2);
-  margin-bottom: var(--spacing-2);
 
   @media ${deviceBreakPoints.mobile} {
-    margin-top: var(--spacing-4);
+    margin-top: var(--spacing-2);
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
   @media ${deviceBreakPoints.smallMobile} {
-    margin-top: var(--spacing-2);
+    margin-top: 0;
   }
 `
 
-const EddyBackgroundStyled = styled(EddyBackground)`
-  margin-top: -100px;
+const AlephiumLogoContainer = styled.div`
+  position: absolute;
+  height: 240px;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media ${deviceBreakPoints.mobile} {
+    height: 180px;
+  }
+
+  @media ${deviceBreakPoints.smallMobile} {
+    height: 130px;
+    bottom: -30px;
+  }
+`
+
+const TextElementWithReflection = styled(TextElement)`
+  position: relative;
+
+  @keyframes fadeInMask {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0.8;
+    }
+  }
+`
+
+const BottomSection = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 `

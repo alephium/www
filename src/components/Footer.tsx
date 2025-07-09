@@ -102,19 +102,18 @@ const FooterStyled = styled.div`
   &::before {
     content: '';
     position: absolute;
-    width: 100%;
+    width: 50%;
     height: 60%;
     bottom: 0;
     background: radial-gradient(
       circle at 0% 100%,
       ${({ theme }) => theme.palette2} 0%,
-      ${({ theme }) => theme.palette4} 10%,
-      ${({ theme }) => theme.palette1} 40%,
+      ${({ theme }) => theme.palette4} 30%,
       ${({ theme }) => theme.palette3} 60%,
       transparent 65%
     );
     pointer-events: none;
-    filter: blur(100px) saturate(1.2) brightness(1.1);
+    filter: blur(80px) saturate(1.2) brightness(1.1);
     opacity: 0.3;
   }
 `

@@ -20,7 +20,7 @@ export default styled(NumbersInfo)`
   color: ${({ theme }) => theme.textPrimaryVariation};
 
   .number {
-    font-size: var(--fontSize-56);
+    font-size: var(--fontSize-64);
     margin-bottom: var(--spacing-3);
     color: ${({ theme }) => theme.textPrimary};
 

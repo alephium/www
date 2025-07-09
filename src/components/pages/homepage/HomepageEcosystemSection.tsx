@@ -1,4 +1,3 @@
-import { colord } from 'colord'
 import { useEffect, useRef, useState } from 'react'
 import styled from 'styled-components'
 
@@ -103,14 +102,21 @@ const HomepageEcosystemSection = () => {
     if (!containerRef.current || !isInitialized) return
     const container = containerRef.current
     let throttleTimeout: ReturnType<typeof setTimeout> | null = null
+    let lastWidth = container.offsetWidth
+    let lastHeight = container.offsetHeight
 
     const handleResize = () => {
       if (dapps.length > 0) {
-        initializeLogoPositions(dapps.length)
+        const currentWidth = container.offsetWidth
+        const currentHeight = container.offsetHeight
+
+        if (currentWidth !== lastWidth || currentHeight !== lastHeight) {
+          lastWidth = currentWidth
+          lastHeight = currentHeight
+          initializeLogoPositions(dapps.length)
+        }
       }
     }
-
-    handleResize()
 
     const resizeObserver = new window.ResizeObserver(() => {
       if (throttleTimeout) return
@@ -192,7 +198,7 @@ const HomepageEcosystemSection = () => {
   }
 
   return (
-    <SubpageSection fullWidth bgColor="2" border="top-bottom" edgeGradient gradientPosition="bottom">
+    <SubpageSection wide bgColor="1">
       <div style={{ position: 'relative', zIndex: 1 }}>
         <TextElement isCentered>
           <h2>Built on Alephium.</h2>
@@ -337,5 +343,5 @@ const CenterButtonWrapper = styled.div`
   justify-content: center;
   gap: var(--spacing-2);
   border-radius: 100px;
-  box-shadow: 0 0px 30px 10px ${({ theme }) => colord(theme.textPrimary).alpha(0.3).toHex()};
+  box-shadow: 0 0px 30px 10px rgba(0, 0, 0, 0.1);
 `

@@ -72,7 +72,7 @@ const HomepageUSPSection = () => {
   const { totalTransactions } = statsScalarData
 
   return (
-    <SubpageSectionStyled wide border="all" bgColor="2">
+    <SubpageSection bgColor="3" fullWidth>
       <TextElementStyled>
         <h2>Web3, done right.</h2>
         <p>
@@ -223,14 +223,9 @@ const HomepageUSPSection = () => {
           </TextCardContent>
         </TextCard>
       </CardsHorizontalScroller>
-    </SubpageSectionStyled>
+    </SubpageSection>
   )
 }
-
-const SubpageSectionStyled = styled(SubpageSection)`
-  padding-right: 0;
-  padding-left: 0;
-`
 
 const TextElementStyled = styled(TextElement)`
   width: var(--page-width);

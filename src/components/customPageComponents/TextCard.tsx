@@ -140,8 +140,7 @@ const GradientBorder = styled.div`
     ${({ theme }) => theme.borderPrimary} 10%,
     ${({ theme }) => theme.palette6} 20%,
     ${({ theme }) => theme.palette5} 30%,
-    ${({ theme }) => theme.palette1} 60%,
-    ${({ theme }) => theme.palette3} 90%,
+    ${({ theme }) => theme.palette3} 70%,
     ${({ theme }) => theme.borderPrimary} 100%
   );
   filter: blur(3px) saturate(${({ theme }) => (theme.name === 'light' ? 1.2 : 1)})
@@ -229,23 +228,13 @@ const CardStyled = styled(motion.div)<{
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
-  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, ${({ theme }) => (theme.name === 'light' ? 0.1 : 0.4)});
-
-  &:hover::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: var(--radius);
-    box-shadow: inset 0 0 0 1px ${({ theme }) => theme.textPrimary};
-    mix-blend-mode: overlay;
-    pointer-events: none;
-  }
+  box-shadow: 0 1010px 0 rgba(0, 0, 0, ${({ theme }) => (theme.name === 'light' ? 0.01 : 0.2)});
 
   ${({ border }) =>
     border &&
     css`
       box-shadow: inset 0 0 0 1px ${({ theme }) => theme.borderPrimary},
-        0 10px 30px 0 rgba(0, 0, 0, ${({ theme }) => (theme.name === 'light' ? 0.1 : 0.4)});
+        0 10px 10px 0 rgba(0, 0, 0, ${({ theme }) => (theme.name === 'light' ? 0.01 : 0.2)});
     `}
 
   ${({ url }) => url && 'transform-style: preserve-3d;'}

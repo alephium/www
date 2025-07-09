@@ -35,5 +35,7 @@ export default Page
 const PageContainer = styled.main``
 
 const ContentContainer = styled.div`
-  padding-top: var(--spacing-16);
+  > :first-child {
+    padding-top: var(--spacing-20);
+  }
 `
