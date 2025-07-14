@@ -14,8 +14,8 @@ export const darkTheme: DefaultTheme = {
   surface1: 'var(--color-grey-750)',
   surface2: 'var(--color-grey-900)',
   background1: 'var(--color-grey-850)',
-  background2: 'var(--color-grey-900)',
-  background3: 'var(--color-grey-950)',
+  background2: 'var(--color-grey-950)',
+  background3: '#0d0d0d',
   backgroundContrast: 'var(--color-grey-800)',
 
   borderPrimary: 'rgba(255, 255, 255, 0.075)',
@@ -25,7 +25,7 @@ export const darkTheme: DefaultTheme = {
 
   separator: 'var(--color-grey-700)',
 
-  palette1: '#66a4fa',
+  palette1: '#54c0fa',
   palette2: '#ffc48b',
   palette3: '#89ffc4',
   palette4: '#faa0f9',
@@ -44,8 +44,8 @@ export const lightTheme: DefaultTheme = {
   surface1: 'var(--color-white)',
   surface2: '#FBFAF8',
   background1: '#ffffff',
-  background2: '#fdfdfd',
-  background3: '#f5f5f5',
+  background2: '#f7f7f7',
+  background3: '#f2f2f2',
   backgroundContrast: '#000000',
 
   borderPrimary: 'rgba(0, 0, 0, 0.06)',

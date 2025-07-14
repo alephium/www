@@ -1,15 +1,21 @@
 import { colord } from 'colord'
 import { motion } from 'framer-motion'
+import { ReactNode } from 'react'
 import styled, { DefaultTheme, useTheme } from 'styled-components'
 
 import { deviceBreakPoints } from '../styles/global-style'
 
-const EddyBackground = ({ className }: { className?: string }) => {
+interface GlowingContainerProps {
+  className?: string
+  children?: ReactNode
+}
+
+const GlowingContainer = ({ className, children }: GlowingContainerProps) => {
   const theme = useTheme()
 
-  const bottomGradient = `radial-gradient(circle at 50% 120%, ${theme.palette1} 10%, ${theme.palette1} 35%, ${colord(
-    theme.palette6
-  )
+  const bottomGradient = `radial-gradient(circle at 50% 100%, ${colord(theme.palette1).lighten(0.25).toHex()} 15%, ${
+    theme.palette1
+  } 25%, ${theme.palette1} 35%, ${colord(theme.palette6)
     .alpha(theme.name === 'dark' ? 0.5 : 0.3)
     .toHex()} 45%, transparent 65%)`
 
@@ -32,6 +38,7 @@ const EddyBackground = ({ className }: { className?: string }) => {
         }}
         aria-hidden="true"
       />
+      {children}
       <BackgroundGradientContainer
         style={{ backgroundImage: backgroundGradient }}
         initial={{ opacity: 0 }}
@@ -47,7 +54,7 @@ const EddyBackground = ({ className }: { className?: string }) => {
   )
 }
 
-export default EddyBackground
+export default GlowingContainer
 
 const getColorFilters = (theme: DefaultTheme) => `
     brightness(${theme.name === 'dark' ? 1 : 1.2})
@@ -62,20 +69,20 @@ const EddyBackgroundContainer = styled.div`
 const Background = styled.div`
   position: absolute;
   inset: 0;
-  background-color: ${({ theme }) => theme.background3};
+  background-color: ${({ theme }) => (theme.name === 'dark' ? theme.background3 : theme.background1)};
   pointer-events: none;
   border-radius: calc(var(--radius-huge) - var(--spacing-2));
-  filter: blur(40px);
+  filter: blur(50px);
 `
 
 const BottomGradientContainer = styled(motion.div)`
   position: absolute;
-  bottom: 0;
+  bottom: -50px;
   left: 0;
   width: 100%;
   height: 100%;
   pointer-events: none;
-  filter: blur(90px) ${({ theme }) => getColorFilters(theme)};
+  filter: blur(70px) ${({ theme }) => getColorFilters(theme)};
   background-repeat: no-repeat;
 
   @media ${deviceBreakPoints.mobile} {

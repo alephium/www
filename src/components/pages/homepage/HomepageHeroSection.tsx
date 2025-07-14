@@ -9,7 +9,7 @@ import AlephiumLogo from '../../AlephiumLogo'
 import Button from '../../Button'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextElement from '../../customPageComponents/TextElement'
-import EddyBackground from '../../EddyBackground'
+import GlowingContainer from '../../GlowingContainer'
 
 extend([mixPlugin])
 
@@ -20,7 +20,9 @@ const HomepageHeroSection = () => {
   return (
     <SectionWrapper style={{ opacity }}>
       <SubpageSectionStyled noTopPadding bgColor="2">
-        <EddyBackground />
+        <GlowingContainer>
+          <RipplesBackgroundContainer></RipplesBackgroundContainer>
+        </GlowingContainer>
         <ConcentricEllipses />
         <TopSection>
           <TextElementWithReflection isCentered>
@@ -45,7 +47,7 @@ const HomepageHeroSection = () => {
             <AlephiumLogo
               fill={lightTheme.textPrimary}
               gradientIndex={0}
-              innerShadowColor={colord(lightTheme.palette1).lighten(0.2).alpha(0.3).toHex()}
+              innerGlowColor={colord(lightTheme.palette1).lighten(0.2).alpha(0.3).toHex()}
             />
           </AlephiumLogoContainer>
         </BottomSection>
@@ -61,7 +63,7 @@ const ConcentricEllipses = () => {
   const widthIncrement = 160
   const heightIncrement = 100
   const baseOpacity = 0.5
-  const opacityDecay = 0.05
+  const opacityDecay = 0.075
 
   const ellipseConfigs = Array.from({ length: numEllipses }, (_, index) => {
     const width = baseWidth + index * widthIncrement
@@ -92,7 +94,7 @@ const SubpageSectionStyled = styled(SubpageSection)`
   padding-right: var(--spacing-4);
   padding-left: var(--spacing-4);
   overflow: visible;
-  min-height: 68vh;
+  min-height: 65vh;
   gap: var(--spacing-4);
   position: relative;
   overflow: hidden;
@@ -123,6 +125,18 @@ const TopSection = styled.div`
   position: relative;
 `
 
+const RipplesBackgroundContainer = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 1;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+`
+
 const EllipseContainer = styled.div`
   position: absolute;
   bottom: -15%;
@@ -137,7 +151,7 @@ const Ellipse = styled.span<{ width: number; height: number; delay: number; opac
   border: 2px dashed
     ${({ theme }) =>
       colord(theme.textPrimary)
-        .alpha(theme.name === 'dark' ? 0.2 : 0.1)
+        .alpha(theme.name === 'dark' ? 0.25 : 0.2)
         .toHex()};
   border-radius: 50%;
   bottom: 0;
@@ -182,7 +196,7 @@ const Buttons = styled.div`
 
 const AlephiumLogoContainer = styled.div`
   position: absolute;
-  height: 240px;
+  height: 280px;
   bottom: -50px;
   left: 50%;
   transform: translateX(-50%);

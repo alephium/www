@@ -65,7 +65,7 @@ const HomepageNewsPopup = () => {
       >
         <CloseButton onClick={() => toggleVisibility(false)}>×</CloseButton>
         <NewsCardContent>
-          <Badge color="palette1" style={{ marginBottom: 10 }}>
+          <Badge color="link" style={{ marginBottom: 10 }}>
             BREAKING NEWS 🔥
           </Badge>
           <TextElement isBodySmall noHeadingsMargins>
