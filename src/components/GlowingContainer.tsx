@@ -19,8 +19,6 @@ const GlowingContainer = ({ className, children }: GlowingContainerProps) => {
     .alpha(theme.name === 'dark' ? 0.5 : 0.3)
     .toHex()} 45%, transparent 65%)`
 
-  const backgroundGradient = `linear-gradient(to bottom left, ${theme.palette6} 0%, ${theme.palette1} 20%, ${theme.palette6} 50%, ${theme.palette1} 100%)`
-
   return (
     <EddyBackgroundContainer className={className}>
       <Background />
@@ -39,17 +37,6 @@ const GlowingContainer = ({ className, children }: GlowingContainerProps) => {
         aria-hidden="true"
       />
       {children}
-      <BackgroundGradientContainer
-        style={{ backgroundImage: backgroundGradient }}
-        initial={{ opacity: 0 }}
-        animate={{
-          opacity: 1,
-          transition: {
-            duration: 2,
-            ease: [0.25, 0.46, 0.45, 0.94]
-          }
-        }}
-      />
     </EddyBackgroundContainer>
   )
 }
@@ -69,10 +56,8 @@ const EddyBackgroundContainer = styled.div`
 const Background = styled.div`
   position: absolute;
   inset: 0;
-  background-color: ${({ theme }) => (theme.name === 'dark' ? theme.background3 : theme.background1)};
+  background-color: ${({ theme }) => theme.background3};
   pointer-events: none;
-  border-radius: calc(var(--radius-huge) - var(--spacing-2));
-  filter: blur(50px);
 `
 
 const BottomGradientContainer = styled(motion.div)`
@@ -88,14 +73,4 @@ const BottomGradientContainer = styled(motion.div)`
   @media ${deviceBreakPoints.mobile} {
     filter: blur(70px) ${({ theme }) => getColorFilters(theme)};
   }
-`
-
-const BackgroundGradientContainer = styled(motion.div)`
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  pointer-events: none;
 `

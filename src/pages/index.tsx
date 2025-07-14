@@ -41,7 +41,7 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => (
 
         <HomepagePartnersSection />
 
-        <SectionDivider />
+        <SectionDivider border pageWidth />
 
         <HomepageNewsPopup />
 

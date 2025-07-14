@@ -127,6 +127,8 @@ const CustomPage = (props: PageProps) => {
             </SubheaderContent>
           </SubpageSection>*/}
 
+          <SectionDivider border pageWidth />
+
           <SubpageImageHeroSection
             backgroundImage={ecosystemImage}
             alignContent="center"

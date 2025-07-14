@@ -30,8 +30,8 @@ export default SubpageSection
 const SubpageSectionStyled = styled(PageSectionContainer)<SubpageSectionProps>`
   position: relative;
   justify-content: ${({ isCentered }) => (isCentered ? 'center' : 'flex-start')};
-  padding-top: ${({ noTopPadding }) => (noTopPadding ? '0' : 'var(--spacing-12)')};
-  padding-bottom: ${({ noBottomPadding }) => (noBottomPadding ? '0' : 'var(--spacing-12)')};
+  padding-top: ${({ noTopPadding }) => (noTopPadding ? '0' : 'var(--spacing-8)')};
+  padding-bottom: ${({ noBottomPadding }) => (noBottomPadding ? '0' : 'var(--spacing-8)')};
   background-color: ${({ theme, bgColor }) => (bgColor ? theme[`background${bgColor}`] : 'transparent')};
   border-radius: ${({ fullWidth }) => (fullWidth ? '0' : 'var(--radius-huge)')};
   overflow: ${({ overflow }) => overflow || 'hidden'};

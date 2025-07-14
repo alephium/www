@@ -18,7 +18,7 @@ export const darkTheme: DefaultTheme = {
   background3: '#0d0d0d',
   backgroundContrast: 'var(--color-grey-800)',
 
-  borderPrimary: 'rgba(255, 255, 255, 0.075)',
+  borderPrimary: 'rgba(255, 255, 255, 0.08)',
 
   link: '#66a4fa',
   linkAlt: 'var(--color-grey-700)',
@@ -48,7 +48,7 @@ export const lightTheme: DefaultTheme = {
   background3: '#f2f2f2',
   backgroundContrast: '#000000',
 
-  borderPrimary: 'rgba(0, 0, 0, 0.06)',
+  borderPrimary: 'rgba(0, 0, 0, 0.08)',
 
   link: '#1485ea',
   linkAlt: 'var(--color-black)',

@@ -19,11 +19,10 @@ const HomepageHeroSection = () => {
 
   return (
     <SectionWrapper style={{ opacity }}>
-      <SubpageSectionStyled noTopPadding bgColor="2">
+      <SubpageSectionStyled noTopPadding bgColor="2" fullWidth>
         <GlowingContainer>
-          <RipplesBackgroundContainer></RipplesBackgroundContainer>
+          <ConcentricEllipses />
         </GlowingContainer>
-        <ConcentricEllipses />
         <TopSection>
           <TextElementWithReflection isCentered>
             <h1>Web3, as Promised.</h1>
@@ -94,21 +93,19 @@ const SubpageSectionStyled = styled(SubpageSection)`
   padding-right: var(--spacing-4);
   padding-left: var(--spacing-4);
   overflow: visible;
-  min-height: 65vh;
+  min-height: 55vh;
   gap: var(--spacing-4);
   position: relative;
   overflow: hidden;
-  box-shadow: 0 10px 20px 0 ${({ theme }) => colord(theme.palette1).alpha(0.3).toHex()};
 
   &:after {
     content: '';
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    box-shadow: inset 0 0 0 1px ${({ theme }) => theme.textPrimary};
-    border-radius: calc(var(--radius-huge));
+    box-shadow: inset 0 -2px 0 2px ${({ theme }) => theme.textPrimary};
     mix-blend-mode: overlay;
     opacity: 0.5;
     pointer-events: none;
@@ -121,20 +118,8 @@ const TopSection = styled.div`
   align-items: center;
   justify-content: center;
   gap: var(--spacing-4);
-  flex: 2;
+  flex: 1;
   position: relative;
-`
-
-const RipplesBackgroundContainer = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  opacity: 1;
-  pointer-events: none;
-  mix-blend-mode: overlay;
 `
 
 const EllipseContainer = styled.div`
@@ -225,7 +210,7 @@ const TextElementWithReflection = styled(TextElement)`
 `
 
 const BottomSection = styled.div`
-  flex: 0.5;
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
