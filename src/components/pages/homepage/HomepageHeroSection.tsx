@@ -45,7 +45,7 @@ const HomepageHeroSection = () => {
             <AlephiumLogo
               fill={lightTheme.textPrimary}
               gradientIndex={0}
-              innerShadowColor={colord(lightTheme.palette4).alpha(0.2).toHex()}
+              innerShadowColor={colord(lightTheme.palette1).lighten(0.2).alpha(0.3).toHex()}
             />
           </AlephiumLogoContainer>
         </BottomSection>
@@ -96,7 +96,7 @@ const SubpageSectionStyled = styled(SubpageSection)`
   gap: var(--spacing-4);
   position: relative;
   overflow: hidden;
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 20px 0 ${({ theme }) => colord(theme.palette1).alpha(0.3).toHex()};
 
   &:after {
     content: '';

@@ -65,11 +65,11 @@ const HomepageNewsPopup = () => {
       >
         <CloseButton onClick={() => toggleVisibility(false)}>×</CloseButton>
         <NewsCardContent>
-          <Badge color="palette5" style={{ marginBottom: 10 }}>
+          <Badge color="palette1" style={{ marginBottom: 10 }}>
             BREAKING NEWS 🔥
           </Badge>
           <TextElement isBodySmall noHeadingsMargins>
-            <h2 style={{ color: theme.palette5 }}>Danube Upgrade</h2>
+            <h2>Danube Upgrade 🌊</h2>
             <p>
               A major milestone towards true Web3.
               <br />
@@ -113,7 +113,7 @@ const NewsCard = styled(motion.div)<{ border?: boolean }>`
   border: 1px solid ${({ theme }) => theme.borderPrimary};
   background-color: ${({ theme }) => colord(theme.background1).lighten(0.15).alpha(0.9).toHex()};
   backdrop-filter: blur(60px) saturate(3) brightness(1.2);
-  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, ${({ theme }) => (theme.name === 'light' ? 0.2 : 0.4)});
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, ${({ theme }) => (theme.name === 'light' ? 0.1 : 0.3)});
   border-radius: var(--radius-large);
   padding: var(--spacing-3);
   border-radius: var(--radius);
@@ -151,7 +151,7 @@ const CloseButton = styled.button`
   background: none;
   border: none;
   font-size: 24px;
-  color: ${({ theme }) => theme.palette5};
+  color: ${({ theme }) => theme.textPrimary};
   cursor: pointer;
   padding: 0;
   width: 24px;

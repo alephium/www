@@ -7,13 +7,13 @@ import { deviceBreakPoints } from '../styles/global-style'
 const EddyBackground = ({ className }: { className?: string }) => {
   const theme = useTheme()
 
-  const bottomGradient = `radial-gradient(circle at 50% 120%, ${theme.palette2} 0%, ${theme.palette4} 35%, ${colord(
-    theme.palette3
+  const bottomGradient = `radial-gradient(circle at 50% 120%, ${theme.palette1} 10%, ${theme.palette1} 35%, ${colord(
+    theme.palette6
   )
     .alpha(theme.name === 'dark' ? 0.5 : 0.3)
     .toHex()} 45%, transparent 65%)`
 
-  const backgroundGradient = `linear-gradient(to bottom left, ${theme.palette2} 0%, ${theme.palette4} 20%, ${theme.palette3} 50%, ${theme.palette5} 100%)`
+  const backgroundGradient = `linear-gradient(to bottom left, ${theme.palette6} 0%, ${theme.palette1} 20%, ${theme.palette6} 50%, ${theme.palette1} 100%)`
 
   return (
     <EddyBackgroundContainer className={className}>
@@ -65,7 +65,7 @@ const Background = styled.div`
   background-color: ${({ theme }) => theme.background3};
   pointer-events: none;
   border-radius: calc(var(--radius-huge) - var(--spacing-2));
-  filter: blur(50px);
+  filter: blur(40px);
 `
 
 const BottomGradientContainer = styled(motion.div)`

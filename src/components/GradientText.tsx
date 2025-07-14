@@ -14,11 +14,7 @@ const GradientText = ({ children, className }: GradientTextProps) => (
 const GradientTextStyled = styled.span`
   background: radial-gradient(
     circle at 100% 0%,
-    ${({ theme, color }) =>
-        colord(color || theme.palette5)
-          .lighten(0.1)
-          .toHex()}
-      0%,
+    ${({ theme, color }) => (color ? colord(color).lighten(0.1).toHex() : theme.palette4)} 0%,
     ${({ theme, color }) => (color ? color : theme.palette5)} 40%
   );
   background-clip: text;

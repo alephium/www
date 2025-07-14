@@ -25,12 +25,12 @@ export const darkTheme: DefaultTheme = {
 
   separator: 'var(--color-grey-700)',
 
-  palette1: '#89ffc4',
+  palette1: '#66a4fa',
   palette2: '#ffc48b',
-  palette3: '#6b8dff',
+  palette3: '#89ffc4',
   palette4: '#faa0f9',
   palette5: '#ff8a97',
-  palette6: '#7efbff'
+  palette6: '#132dc8'
 }
 
 export const lightTheme: DefaultTheme = {
@@ -55,9 +55,9 @@ export const lightTheme: DefaultTheme = {
 
   separator: 'var(--color-grey-100)',
 
-  palette1: '#5ade94',
+  palette1: '#1485ea',
   palette2: '#ffca42',
-  palette3: '#7bb7ff',
+  palette3: '#5ade94',
   palette4: '#ff89c6',
   palette5: '#ff8fa3',
   palette6: '#a1e9ff'

@@ -124,7 +124,7 @@ const GradientBorder = styled.div<{ squared?: boolean }>`
     inset: 4px;
     border-radius: ${({ squared }) => getInnerBorderRadius(squared)};
     background: ${({ theme }) => theme.textPrimary};
-    filter: blur(2px);
+
     z-index: 0;
   }
 
@@ -173,7 +173,7 @@ const StyledButton = styled(Button)`
   transition: all 0.1s ease-out;
 
   &:hover {
-    filter: saturate(120%) brightness(${({ theme }) => (theme.name === 'light' ? 1.3 : 1)});
+    filter: saturate(120%);
   }
 
   ${({ disabled }) =>
