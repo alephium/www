@@ -27,7 +27,7 @@ const exchangesQuery = graphql`
     heroVideo: file(relativePath: { eq: "mountain-paths-scrub.mp4" }) {
       publicURL
     }
-    ecosystemImage: file(relativePath: { eq: "ecosystem-islands.png" }) {
+    ecosystemImage: file(relativePath: { eq: "rock-pile.png" }) {
       childImageSharp {
         gatsbyImageData(quality: 80)
       }
@@ -106,9 +106,8 @@ const PageContent = () => {
         <TextElement isCentered>
           <h2>
             <GradientText color1={theme.palette6} color2={theme.palette1}>
-              Explore
-            </GradientText>{' '}
-            the ecosystem
+              Explore the ecosystem
+            </GradientText>
           </h2>
           <p>
             <strong>All the dApps, tools, integrations, partners and more, in one place.</strong>
@@ -124,7 +123,7 @@ const PageContent = () => {
       <SubpageSection isCentered>
         <TextElement isCentered>
           <h2>
-            <GradientText>Build</GradientText> on Alephium
+            <GradientText>Build on Alephium</GradientText>
           </h2>
           <p>
             Alephium&apos;s scalable Proof-of-Less-Work and secure Smart Contracts give you the tools to{' '}
