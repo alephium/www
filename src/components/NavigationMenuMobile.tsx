@@ -10,7 +10,6 @@ import { deviceBreakPoints } from '../styles/global-style'
 import { notEmpty } from '../utils/misc'
 import NavigationMenuSocials from './navigation/NavigationMenuSocials'
 import SimpleLink from './SimpleLink'
-import ThemeToggle from './ThemeToggle'
 import TranslateComponent from './TranslateComponent'
 
 const MobileNavigationMenu = () => {
@@ -140,7 +139,6 @@ interface ToggleMobileNavButtonProps {
 
 export const MobileNavButtons = ({ onMenuButtonClick, Icon }: ToggleMobileNavButtonProps) => (
   <MobileNavButtonsStyled>
-    <ThemeToggle />
     <Icon size={20} style={{ cursor: 'pointer' }} onClick={onMenuButtonClick} />
   </MobileNavButtonsStyled>
 )
