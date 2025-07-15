@@ -92,6 +92,8 @@ const HomepageUSPSection = () => {
             </TextElement>
             <p>
               <Badge color="palette4">New</Badge>
+            </p>
+            <p>
               <SimpleLink url="https://x.com/alephium/status/1920780688313233634" showArrow highlight>
                 Discover the Danube upgrade
               </SimpleLink>
