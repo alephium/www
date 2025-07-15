@@ -60,7 +60,7 @@ const NetworkUpgradesCardScroller = () => {
         <TextCardContent>
           <TextElement>
             <h3 style={{ color: theme.palette4, paddingRight: 0 }}>
-              Danube<Badge color="palette4">Upcoming</Badge>
+              Danube<Badge color="palette4">Jul 15, 2025</Badge>
             </h3>
             <p>
               Danube marks a shift, this is where the vision of Web3 starts to feel real. Where onboarding doesn&apos;t
