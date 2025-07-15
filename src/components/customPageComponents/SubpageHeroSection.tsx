@@ -13,7 +13,7 @@ export interface SubpageHeroSectionProps extends React.HTMLAttributes<HTMLElemen
   bottomMargin?: boolean
   minHeight?: string
   split?: boolean
-  narrow?: boolean
+  wide?: boolean
 }
 
 const SubpageHeroSection = forwardRef<HTMLElement, SubpageHeroSectionProps>(function SubpageHeroSection(
@@ -42,11 +42,11 @@ const SubpageHeroSectionStyled = styled.section<SubpageHeroSectionProps>`
   min-height: ${({ split, minHeight }) => (split ? 'unset' : minHeight || '75vh')};
   margin: auto;
   margin-bottom: ${({ bottomMargin }) => (bottomMargin ? 'var(--spacing-10)' : '0')};
-  width: ${({ narrow }) => (narrow ? 'var(--page-width)' : '85vw')};
+  width: ${({ wide }) => (wide ? '80vw' : 'var(--page-width)')};
   overflow: hidden;
   display: flex;
   align-items: stretch;
-  border-radius: var(--radius-big);
+  border-radius: var(--radius-huge);
   gap: ${({ split }) => (split ? 'var(--spacing-4)' : '0')};
   flex-direction: row-reverse;
 
@@ -56,7 +56,7 @@ const SubpageHeroSectionStyled = styled.section<SubpageHeroSectionProps>`
     opacity: ${({ split }) => (split ? 0 : 1)};
     inset: 0;
     // border: 3px solid ${({ theme }) => theme.borderPrimary};
-    border-radius: var(--radius-big);
+    border-radius: var(--radius-huge);
     backdrop-filter: saturate(300%) brightness(1.1);
     -webkit-backdrop-filter: saturate(300%) brightness(1.1);
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -68,7 +68,7 @@ const SubpageHeroSectionStyled = styled.section<SubpageHeroSectionProps>`
   @media ${deviceBreakPoints.mobile} {
     gap: 0;
     box-sizing: border-box;
-    background-color: ${({ theme }) => theme.background2};
+    background-color: ${({ theme }) => theme.background1};
     padding: var(--spacing-2);
     flex-direction: column;
     height: auto;
@@ -118,8 +118,8 @@ const HeroPageSectionContainer = styled.div<Pick<SubpageHeroSectionProps, 'align
     alignContent === 'bottom' ? 'flex-end' : alignContent === 'center' ? 'center' : 'flex-start'};
   height: ${({ split }) => (split ? '100%' : 'auto')};
   align-self: stretch;
-  border-radius: var(--radius-big);
-  background-color: ${({ theme, split }) => (split ? theme.background2 : 'transparent')};
+  border-radius: var(--radius-huge);
+  background-color: ${({ theme, split }) => (split ? theme.background1 : 'transparent')};
 
   ${({ split }) =>
     split &&
@@ -176,7 +176,7 @@ const BackgroundMediaWrapper = styled.div<Pick<SubpageHeroSectionProps, 'split'>
   z-index: 1;
   overflow: hidden;
   align-self: stretch;
-  border-radius: var(--radius-big);
+  border-radius: var(--radius-huge);
 
   ${({ split }) =>
     split &&
@@ -189,13 +189,13 @@ const BackgroundMediaWrapper = styled.div<Pick<SubpageHeroSectionProps, 'split'>
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: var(--radius-big);
+        border-radius: var(--radius-huge);
       }
 
       @media ${deviceBreakPoints.mobile} {
         width: 100%;
         max-height: 300px;
-        border-radius: calc(var(--radius-big) - var(--spacing-2));
+        border-radius: calc(var(--radius-huge) - var(--spacing-2));
       }
     `}
 `

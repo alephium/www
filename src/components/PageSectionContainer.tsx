@@ -5,6 +5,7 @@ import { deviceBreakPoints } from '../styles/global-style'
 
 export interface PageSectionContainerProps {
   wide?: boolean
+  extraWide?: boolean
   narrow?: boolean
   fullWidth?: boolean
   fullHeight?: boolean
@@ -17,8 +18,8 @@ const PageSectionContainer = styled.div<PageSectionContainerProps>`
   display: flex;
   flex-direction: column;
   justify-content: ${({ justifyContent }) => justifyContent || 'flex-start'};
-  max-width: ${({ narrow, wide, fullWidth }) =>
-    narrow ? '680px' : fullWidth ? '100%' : wide ? '88vw' : 'var(--page-width)'};
+  width: ${({ narrow, wide, fullWidth, extraWide }) =>
+    narrow ? '680px' : fullWidth ? '100%' : wide ? '80vw' : extraWide ? 'calc(100vw - 40px)' : 'var(--page-width)'};
   height: ${({ fullHeight }) => (fullHeight ? '100vh' : 'auto')};
   margin: 0 auto;
   position: relative;

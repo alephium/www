@@ -13,7 +13,7 @@ interface CardProps extends HTMLMotionProps<'div'> {
 const Card = ({ className, children, ...props }: CardProps) => {
   // Removing props that should not go to the motion.div
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const { borderColor, thickBorders, bgColor, shadow, ...remainingProps } = props
+  const { borderColor, thickBorders, shadow, ...remainingProps } = props
 
   return (
     <motion.div className={className} {...remainingProps}>
@@ -23,12 +23,13 @@ const Card = ({ className, children, ...props }: CardProps) => {
 }
 
 export default styled(Card)`
+  position: relative;
   padding: 41px 30px 25px 34px;
   border-radius: 20px;
-  background-color: ${({ theme }) => theme.background1};
+  background-color: ${({ theme, bgColor }) => bgColor || theme.background2};
   background-clip: padding-box;
   text-decoration: none;
+  overflow: hidden;
   ${({ shadow }) => shadow && 'box-shadow: 0px 22px 30px rgba(0, 0, 0, 0.47);'}
-
   transition: all 0.1s ease-out;
 `

@@ -1,11 +1,12 @@
-import { colord } from 'colord'
 import { useEffect, useRef, useState } from 'react'
-import styled from 'styled-components'
+import styled, { useTheme } from 'styled-components'
 
 import { deviceBreakPoints } from '../../../styles/global-style'
 import Button from '../../Button'
+import ConcentricEllipses from '../../ConcentricEllipses'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextElement from '../../customPageComponents/TextElement'
+import GlowingContainer from '../../GlowingContainer'
 import SectionDivider from '../../SectionDivider'
 
 interface LogoPosition {
@@ -16,6 +17,7 @@ interface LogoPosition {
 }
 
 const HomepageEcosystemSection = () => {
+  const theme = useTheme()
   const [dapps, setDapps] = useState<Array<{ name: string; media: { logoUrl: string } }>>([])
   const [isLoading, setIsLoading] = useState(true)
   const [isInitialized, setIsInitialized] = useState(false)
@@ -103,14 +105,21 @@ const HomepageEcosystemSection = () => {
     if (!containerRef.current || !isInitialized) return
     const container = containerRef.current
     let throttleTimeout: ReturnType<typeof setTimeout> | null = null
+    let lastWidth = container.offsetWidth
+    let lastHeight = container.offsetHeight
 
     const handleResize = () => {
       if (dapps.length > 0) {
-        initializeLogoPositions(dapps.length)
+        const currentWidth = container.offsetWidth
+        const currentHeight = container.offsetHeight
+
+        if (currentWidth !== lastWidth || currentHeight !== lastHeight) {
+          lastWidth = currentWidth
+          lastHeight = currentHeight
+          initializeLogoPositions(dapps.length)
+        }
       }
     }
-
-    handleResize()
 
     const resizeObserver = new window.ResizeObserver(() => {
       if (throttleTimeout) return
@@ -192,15 +201,14 @@ const HomepageEcosystemSection = () => {
   }
 
   return (
-    <SubpageSection fullWidth bgColor="2" border="top-bottom" edgeGradient gradientPosition="bottom">
-      <div style={{ position: 'relative', zIndex: 1 }}>
-        <TextElement isCentered>
-          <h2>Built on Alephium.</h2>
-          <p>
-            <strong>Alephium is home to hundreds of innovative dApps.</strong>
-          </p>
-        </TextElement>
-        <SectionDivider />
+    <SubpageSection fullWidth bgColor="3">
+      <GlowingContainer
+        style={{ position: 'relative', zIndex: 1 }}
+        centerGlowColor={theme.palette4}
+        peripheralGlowColor={theme.palette5}
+        glowOpacity={0.3}
+        glowBottomOffset={0}
+      >
         <LogosContainer ref={containerRef} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
           {isInitialized &&
             dapps.map((dapp, index) => {
@@ -240,13 +248,17 @@ const HomepageEcosystemSection = () => {
                 </LogoWrapper>
               )
             })}
-          <CenterButtonWrapper>
-            <Button big highlight url="https://alph.land">
-              Explore
-            </Button>
-          </CenterButtonWrapper>
         </LogosContainer>
-      </div>
+        <SectionDivider double />
+        <TextElement isCentered>
+          <h2>Built on Alephium.</h2>
+          <p>Alephium is home to hundreds of innovative dApps.</p>
+          <Button big highlight url="https://alph.land">
+            Explore on alph.land
+          </Button>
+        </TextElement>
+        <ConcentricEllipses baseColor={theme.palette4} bottomOffset="50" />
+      </GlowingContainer>
     </SubpageSection>
   )
 }
@@ -272,7 +284,7 @@ const LogoWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+  border-radius: var(--radius-small);
 
   @media ${deviceBreakPoints.mobile} {
     width: 25px;
@@ -283,7 +295,7 @@ const LogoWrapper = styled.div`
     width: 100%;
     height: 100%;
     object-fit: contain;
-    border-radius: 50%;
+    border-radius: var(--radius-small);
     background-color: ${({ theme }) => theme.background2};
   }
 `
@@ -337,5 +349,5 @@ const CenterButtonWrapper = styled.div`
   justify-content: center;
   gap: var(--spacing-2);
   border-radius: 100px;
-  box-shadow: 0 0px 30px 10px ${({ theme }) => colord(theme.textPrimary).alpha(0.3).toHex()};
+  box-shadow: 0 0px 30px 10px rgba(0, 0, 0, 0.1);
 `

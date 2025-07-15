@@ -1,34 +1,43 @@
-import { graphql } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 import { useRef } from 'react'
 import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../../../styles/global-style'
-import SubheaderContent from '../../customPageComponents/SubheaderContent'
+import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextElement from '../../customPageComponents/TextElement'
 
-export const query = graphql`
-  fragment HomepagePartnersSection on MarkdownRemarkFrontmatterPartnersSection {
-    partners {
-      title
-      url
-      logo {
-        publicURL
+export const partnersQuery = graphql`
+  query HomepagePartnersSection {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/homepage.md/" } }) {
+      nodes {
+        frontmatter {
+          partnersSection {
+            partners {
+              title
+              url
+              logo {
+                publicURL
+              }
+            }
+          }
+        }
       }
     }
   }
 `
 
-const HomepagePartnersSection = (content: Queries.HomepagePartnersSectionFragment) => {
+const HomepagePartnersSection = () => {
   const gridRef = useRef<HTMLDivElement>(null)
+  const data = useStaticQuery<Queries.HomepagePartnersSectionQuery>(partnersQuery)
 
   return (
-    <SubheaderContent isCentered>
+    <SubpageSectionStyled noTopPadding noBottomPadding wide>
       <TextElement isCentered>
         <label>Trusted by</label>
       </TextElement>
       <PartnersGridContainer>
         <PartnersGrid ref={gridRef}>
-          {content?.partners?.map(
+          {data.allMarkdownRemark.nodes[0].frontmatter?.partnersSection?.partners?.map(
             (partner) =>
               partner?.title &&
               partner?.logo?.publicURL && (
@@ -39,11 +48,20 @@ const HomepagePartnersSection = (content: Queries.HomepagePartnersSectionFragmen
           )}
         </PartnersGrid>
       </PartnersGridContainer>
-    </SubheaderContent>
+    </SubpageSectionStyled>
   )
 }
 
 export default HomepagePartnersSection
+
+const SubpageSectionStyled = styled(SubpageSection)`
+  padding: var(--spacing-4) 0;
+  gap: var(--spacing-3);
+  justify-content: center;
+  align-items: center;
+  height: 12vh;
+  min-height: 160px;
+`
 
 const PartnersGridContainer = styled.div`
   position: relative;
@@ -53,12 +71,6 @@ const PartnersGridContainer = styled.div`
   margin: 0 auto;
   overflow: hidden;
   mask-image: linear-gradient(to right, transparent, black 60px, black calc(100% - 60px), transparent);
-  opacity: 0.6;
-
-  &:hover {
-    opacity: 1;
-    transition: opacity 0.4s ease;
-  }
 
   @media ${deviceBreakPoints.mobile} {
     mask-image: linear-gradient(to right, transparent, black 20px, black calc(100% - 20px), transparent);
@@ -102,9 +114,9 @@ const PartnerItem = styled.a`
 `
 
 const PartnerLogo = styled.img`
-  height: 30px;
+  height: 40px;
   width: auto;
-  max-width: 60px;
+  max-width: 80px;
   object-fit: contain;
   margin: 0 auto;
   filter: ${({ theme }) => (theme.name === 'light' ? 'brightness(0)' : 'brightness(1)')};

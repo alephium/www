@@ -5,13 +5,22 @@ interface AlephiumLogoProps {
   fill?: string
   accentFill?: string
   gradientIndex: number
+  innerGlowColor?: string
+  outerGlowColor?: string
 }
 
-const AlephiumLogo = ({ className, fill = 'white', accentFill, gradientIndex, ...props }: AlephiumLogoProps) => (
+const AlephiumLogo = ({
+  className,
+  fill = 'white',
+  gradientIndex,
+  innerGlowColor,
+  outerGlowColor,
+  ...props
+}: AlephiumLogoProps) => (
   <svg
     width="100%"
     height="100%"
-    viewBox="0 0 268 454"
+    viewBox="-40 -40 348 534"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -20,18 +29,21 @@ const AlephiumLogo = ({ className, fill = 'white', accentFill, gradientIndex, ..
     className={className}
     {...props}
   >
-    <g transform="matrix(1,0,0,1,-1334,-4506)">
+    <g transform="matrix(1,0,0,1,-1334,-4506)" filter={innerGlowColor ? 'url(#inner-glow)' : undefined}>
       <g id="logo-light" transform="matrix(1.02904,0,0,1,1269.09,-0.201119)">
         <rect x="63.112" y="4506.2" width="260.243" height="453.499" style={{ fill: 'none' }} />
-        <clipPath id="_clip1">
-          <rect x="63.112" y="4506.2" width="260.243" height="453.499" />
-        </clipPath>
-        <g clipPath="url(#_clip1)">
+        {!outerGlowColor && (
+          <clipPath id="_clip1">
+            <rect x="63.112" y="4506.2" width="260.243" height="453.499" />
+          </clipPath>
+        )}
+        <g clipPath={!outerGlowColor ? 'url(#_clip1)' : undefined}>
           <g transform="matrix(1,0,0,1,-0.0464983,0)">
             <g transform="matrix(0.46324,0,0,0.476693,63.1121,4506.2)">
               <path
                 d="M187.296,627.61C187.296,615.272 177.581,606.969 165.616,609.078L21.68,634.454C9.715,636.564 -0,648.293 -0,660.63L-0,932.485C-0,944.822 9.715,953.126 21.68,951.016L165.616,925.64C177.581,923.531 187.296,911.802 187.296,899.464L187.296,627.61Z"
                 style={{ fill, fillRule: 'nonzero' }}
+                filter={outerGlowColor ? 'url(#outer-glow)' : undefined}
               />
             </g>
             <g transform="matrix(0.46324,0,0,0.476693,63.1121,4506.2)">
@@ -40,12 +52,14 @@ const AlephiumLogo = ({ className, fill = 'white', accentFill, gradientIndex, ..
                 fill={fill}
                 animate={{ rotateY: gradientIndex * 360 }}
                 transition={{ duration: 0.3 }}
+                filter={outerGlowColor ? 'url(#outer-glow)' : undefined}
               />
             </g>
             <g transform="matrix(0.46324,0,0,0.476693,63.1121,4506.2)">
               <path
                 d="M210.743,82.363C205.186,70.124 190.266,62.023 177.446,64.283L23.229,91.472C10.408,93.732 4.512,105.503 10.069,117.742L351.145,868.949C356.702,881.188 371.622,889.29 384.442,887.029L538.659,859.841C551.479,857.581 557.376,845.809 551.819,833.57L210.743,82.363Z"
                 style={{ fill, fillRule: 'nonzero' }}
+                filter={outerGlowColor ? 'url(#outer-glow)' : undefined}
               />
             </g>
           </g>
@@ -59,6 +73,19 @@ const AlephiumLogo = ({ className, fill = 'white', accentFill, gradientIndex, ..
         <stop offset="50%" style={{ stopColor: gradientIndex === 0 ? '#0800ff' : '#00e1ff' }} />
         <stop offset="100%" style={{ stopColor: gradientIndex === 0 ? '#00eeff' : '#f784ff' }} />
       </linearGradient>
+      {innerGlowColor && (
+        <filter id="inner-glow">
+          <feFlood floodColor={innerGlowColor} />
+          <feComposite operator="out" in2="SourceGraphic" />
+          <feGaussianBlur stdDeviation="10" />
+          <feComposite operator="atop" in2="SourceGraphic" />
+        </filter>
+      )}
+      {outerGlowColor && (
+        <filter id="outer-glow" x="-40%" y="-40%" width="180%" height="180%">
+          <feDropShadow dx="0" dy="0" stdDeviation="20" floodColor={outerGlowColor} />
+        </filter>
+      )}
     </defs>
   </svg>
 )

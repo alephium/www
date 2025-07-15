@@ -9,8 +9,8 @@
   font-family: 'InterDisplay';
   font-style: normal;
   font-display: swap;
-  font-weight: 400;
-  src: url('../fonts/InterDisplay-Regular.woff2') format('woff2');
+  font-weight: 500;
+  src: url('../fonts/InterDisplay-Medium.woff2') format('woff2');
 }
 
 @font-face {

@@ -35,7 +35,7 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageSection fullWidth edgeGradient border="bottom">
+          <SubpageSection edgeGradient border="bottom">
             <TextElement isCentered>
               <h1>
                 Our Journey to
@@ -95,7 +95,7 @@ const cardVariants = {
 const ChangesSection = () => {
   const theme = useTheme()
   return (
-    <SubpageSection wide>
+    <SubpageSection>
       <TextElement isCentered>
         <h2>
           What changes are
@@ -114,73 +114,69 @@ const ChangesSection = () => {
           <ClickableBox>
             <TextElement noMargin>
               <p>
-                <strong style={{ color: theme.palette1 }}>One Address for Everything</strong> - Before Danube, every
-                Alephium wallet had multiple addresses associated with specific network shard groups.
+                <strong>One Address for Everything</strong> - Before Danube, every Alephium wallet had multiple
+                addresses associated with specific network shard groups.
               </p>
             </TextElement>
           </ClickableBox>
           <ClickableBox>
             <TextElement noMargin>
               <p>
-                <strong style={{ color: theme.palette2 }}>8-Second Block Time</strong> - The network now processes an
-                average of 2 blocks per second across all 4 chains, bringing Alephium on par with many leading
-                proof-of-stake networks.
+                <strong>8-Second Block Time</strong> - The network now processes an average of 2 blocks per second
+                across all 4 chains, bringing Alephium on par with many leading proof-of-stake networks.
               </p>
             </TextElement>
           </ClickableBox>
           <ClickableBox>
             <TextElement noMargin>
               <p>
-                <strong style={{ color: theme.palette3 }}>Chained Transactions</strong> - Call several smart contracts
-                and use the assets created during those calls in the same transaction. The UTXO rules now apply at the
-                function level.
+                <strong>Chained Transactions</strong> - Call several smart contracts and use the assets created during
+                those calls in the same transaction. The UTXO rules now apply at the function level.
               </p>
             </TextElement>
           </ClickableBox>
           <ClickableBox>
             <TextElement noMargin>
               <p>
-                <strong style={{ color: theme.palette4 }}>Quick Sync for Nodes</strong> - Sync time is now up to three
-                times faster. Nodes download a quick &quot;skeleton&quot; first, then fetch data in parallel. More
-                efficient syncing = more nodes = stronger network.
+                <strong>Quick Sync for Nodes</strong> - Sync time is now up to three times faster. Nodes download a
+                quick &quot;skeleton&quot; first, then fetch data in parallel. More efficient syncing = more nodes =
+                stronger network.
               </p>
             </TextElement>
           </ClickableBox>
           <ClickableBox>
             <TextElement noMargin>
               <p>
-                <strong style={{ color: theme.palette5 }}>Passkeys Support</strong> - Secure credentials stored on your
-                device. You can log in using Face ID, Touch ID, or hardware keys like YubiKey. Seed phrases can still be
-                used, but they&apos;re no longer required at the start.
+                <strong>Passkeys Support</strong> - Secure credentials stored on your device. You can log in using Face
+                ID, Touch ID, or hardware keys like YubiKey. Seed phrases can still be used, but they&apos;re no longer
+                required at the start.
               </p>
             </TextElement>
           </ClickableBox>
           <ClickableBox>
             <TextElement noMargin>
               <p>
-                <strong style={{ color: theme.palette6 }}>Sustainable Tokenomics</strong> - The hard cap has been
-                removed and replaced with a tail emission model. After the initial 81 years, ALPH continues to be mined
-                at a slow, steady pace. This ensures miners remain incentivized long-term.
+                <strong>Sustainable Tokenomics</strong> - The hard cap has been removed and replaced with a tail
+                emission model. After the initial 81 years, ALPH continues to be mined at a slow, steady pace. This
+                ensures miners remain incentivized long-term.
               </p>
             </TextElement>
           </ClickableBox>
           <ClickableBox>
             <TextElement noMargin>
               <p>
-                <strong style={{ color: theme.palette1 }}>Smarter Developer Tools</strong> - A new VM instruction lets
-                contracts access the external user. Bitwise operations for 256-bit integers (I256) improve efficiency.
-                The VM now auto-handles dust, contract, and map deposits, with assets and states instantly accessible by
-                other contract calls.
+                <strong>Smarter Developer Tools</strong> - A new VM instruction lets contracts access the external user.
+                Bitwise operations for 256-bit integers (I256) improve efficiency. The VM now auto-handles dust,
+                contract, and map deposits, with assets and states instantly accessible by other contract calls.
               </p>
             </TextElement>
           </ClickableBox>
           <ClickableBox>
             <TextElement noMargin>
               <p>
-                <strong style={{ color: theme.palette2 }}>Faster, Smarter Consensus</strong> - Danube optimizes
-                Alephium&apos;s BlockFlow consensus algorithm with an &quot;optimistic&quot; execution path. Network
-                throughput and responsiveness are doubled (up to 20k transactions per second) without compromising
-                consensus integrity.
+                <strong>Faster, Smarter Consensus</strong> - Danube optimizes Alephium&apos;s BlockFlow consensus
+                algorithm with an &quot;optimistic&quot; execution path. Network throughput and responsiveness are
+                doubled (up to 20k transactions per second) without compromising consensus integrity.
               </p>
             </TextElement>
           </ClickableBox>

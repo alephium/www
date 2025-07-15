@@ -101,9 +101,7 @@ const getGradient = (theme: DefaultTheme) => `
   radial-gradient(
     circle at var(--gradient-x) var(--gradient-y),
     ${theme.palette5} 25%,
-    ${theme.palette4} 40%,
-    ${theme.palette3} 80%,
-    ${theme.palette1} 100%
+    ${theme.palette4} 100%
   )
 `
 
@@ -118,7 +116,7 @@ const GradientBorder = styled.div<{ squared?: boolean }>`
   transition: opacity 0.3s ease;
   pointer-events: none;
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0;
 
   &::before {
     content: '';
@@ -126,7 +124,7 @@ const GradientBorder = styled.div<{ squared?: boolean }>`
     inset: 4px;
     border-radius: ${({ squared }) => getInnerBorderRadius(squared)};
     background: ${({ theme }) => theme.textPrimary};
-    filter: blur(2px);
+
     z-index: 0;
   }
 
@@ -155,8 +153,7 @@ const ArrowStyled = styled(Arrow)<{ isExternal?: boolean }>`
 `
 
 const StyledButton = styled(Button)`
-  background-color: ${({ theme, invert }) =>
-    invert ? theme.background1 : colord(theme.textPrimary).alpha(0.9).toHex()};
+  background-color: ${({ theme, invert }) => (invert ? theme.background1 : theme.textPrimary)};
   color: ${({ theme, invert }) => (invert ? theme.textPrimary : colord(theme.textPrimary).invert().toHex())};
   --gradient-x: 50%;
   --gradient-y: 50%;
@@ -175,7 +172,7 @@ const StyledButton = styled(Button)`
   transition: all 0.1s ease-out;
 
   &:hover {
-    filter: saturate(140%) brightness(${({ theme }) => (theme.name === 'light' ? 1.5 : 1)});
+    filter: saturate(140%);
   }
 
   ${({ disabled }) =>
@@ -188,7 +185,6 @@ const StyledButton = styled(Button)`
         `
       : css`
           cursor: default;
-          opacity: 0.7;
         `}
 
   .arrow {
@@ -200,8 +196,6 @@ const StyledButton = styled(Button)`
   ${({ highlight }) =>
     highlight &&
     css`
-      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
-
       &:hover {
         &::after {
           opacity: 0.5;

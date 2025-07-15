@@ -30,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
       font-size: 13px;
     }
 
-    --page-width: min(85vw, 1400px);
+    --page-width: min(80vw, 1200px);
     --page-width-shrinked: 68rem;
 
     --width-16: 1rem;
@@ -83,12 +83,13 @@ const GlobalStyle = createGlobalStyle`
     --spacing-35: 17.5rem;   // 280pt
 
     --radius-tiny: 4px;
-    --radius-small: 9px;
-    --radius: 14px;
-    --radius-big: 19px;
+    --radius-small: 7px;
+    --radius: 10px;
+    --radius-big: 14px;
+    --radius-huge: 28px;
     --radius-full: 9999px;
 
-    --fontFamily-sans: "Geist", "InterDisplay", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    --fontFamily-sans: "InterDisplay", "Geist", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
     --fontFamily-serif: "Times New Roman", Times, serif;
     --font-heading: var(--fontFamily-sans);
     --fontWeight-light: 300;
@@ -140,10 +141,10 @@ const GlobalStyle = createGlobalStyle`
     --color-grey-600: #424242;
     --color-grey-700: #353535;
     --color-grey-750: #2c2c2c;
-    --color-grey-800: #262626;
-    --color-grey-850: #202020;
-    --color-grey-900: #141414;
-    --color-grey-950: #0e0e0e;
+    --color-grey-800: #282828;
+    --color-grey-850: #232323;
+    --color-grey-900: #1c1c1c;
+    --color-grey-950: #121212;
     --color-black: #000;
     --color-salmon: #ff5d51;
     --color-blue: #4899ff;

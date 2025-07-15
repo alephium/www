@@ -6,31 +6,31 @@ export type ThemeType = 'light' | 'dark' | 'hackathon'
 export const darkTheme: DefaultTheme = {
   name: 'dark',
 
-  textPrimary: '#ffffff',
+  textPrimary: '#f5f5f7',
   textPrimaryVariation: 'rgba(255, 255, 255, 0.8)',
   textSecondary: 'rgba(255, 255, 255, 0.7)',
   textTertiary: 'rgba(255, 255, 255,  0.4)',
 
   surface1: 'var(--color-grey-750)',
   surface2: 'var(--color-grey-900)',
-  background1: 'var(--color-grey-850)',
-  background2: 'var(--color-grey-900)',
-  background3: 'var(--color-grey-950)',
+  background1: 'var(--color-grey-900)',
+  background2: 'var(--color-grey-950)',
+  background3: '#000',
   backgroundContrast: 'var(--color-grey-800)',
 
-  borderPrimary: 'rgba(255, 255, 255, 0.08)',
+  borderPrimary: 'rgba(255, 255, 255, 0.1)',
 
-  link: 'var(--color-white)',
+  link: '#66a4fa',
   linkAlt: 'var(--color-grey-700)',
 
   separator: 'var(--color-grey-700)',
 
-  palette1: '#89cbff',
-  palette2: '#ffe283',
-  palette3: '#9aa6ff',
-  palette4: '#ef9cee',
-  palette5: '#ff9db6',
-  palette6: '#ffce97'
+  palette1: '#54c0fa',
+  palette2: '#ffc48b',
+  palette3: '#89ffc4',
+  palette4: '#faa0f9',
+  palette5: '#ff8a97',
+  palette6: '#132dc8'
 }
 
 export const lightTheme: DefaultTheme = {
@@ -44,23 +44,23 @@ export const lightTheme: DefaultTheme = {
   surface1: 'var(--color-white)',
   surface2: '#FBFAF8',
   background1: '#ffffff',
-  background2: '#fafafa',
-  background3: '#ffffff',
+  background2: '#f7f7f7',
+  background3: '#f2f2f2',
   backgroundContrast: '#000000',
 
   borderPrimary: 'rgba(0, 0, 0, 0.08)',
 
-  link: '#000000',
+  link: '#1485ea',
   linkAlt: 'var(--color-black)',
 
   separator: 'var(--color-grey-100)',
 
-  palette1: '#469df9',
-  palette2: '#ffa42b',
-  palette3: '#4069ff',
-  palette4: '#ff67f6',
-  palette5: '#ff6b96',
-  palette6: '#ffa055'
+  palette1: '#29a0f9',
+  palette2: '#ffca42',
+  palette3: '#5ade94',
+  palette4: '#e4539e',
+  palette5: '#ff6179',
+  palette6: '#a1e9ff'
 }
 
 export const hackathonTheme: DefaultTheme = {

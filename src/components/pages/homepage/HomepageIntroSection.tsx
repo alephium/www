@@ -1,18 +1,28 @@
 import { graphql, useStaticQuery } from 'gatsby'
 import { IGatsbyImageData } from 'gatsby-plugin-image'
 import { ReactNode, useMemo } from 'react'
-import styled, { useTheme } from 'styled-components'
+import { useTheme } from 'styled-components'
 
-import CardsRow, { CardsRowSegment } from '../../customPageComponents/CardsRow'
+import BentoLayout, { BentoItem } from '../../BentoLayout'
+import Card from '../../Card'
+import CardImage from '../../customPageComponents/CardImage'
+import SubheaderContent from '../../customPageComponents/SubheaderContent'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextCard from '../../customPageComponents/TextCard'
 import TextCardContent from '../../customPageComponents/TextCardContent'
+import TextElement from '../../customPageComponents/TextElement'
+import GradientText from '../../GradientText'
 
 export const homepageIntroQuery = graphql`
   query HomepageIntro {
-    lightRays: file(relativePath: { eq: "light-rays.png" }) {
+    treasureImage: file(relativePath: { eq: "treasure.png" }) {
       childImageSharp {
         gatsbyImageData(quality: 100)
+      }
+    }
+    mineImage: file(relativePath: { eq: "mine.png" }) {
+      childImageSharp {
+        gatsbyImageData(quality: 100, transformOptions: { cropFocus: ENTROPY })
       }
     }
     stream: file(relativePath: { eq: "stream.png" }) {
@@ -46,9 +56,10 @@ interface Card {
 
 const HomepageIntroSection = () => {
   const theme = useTheme()
-  const { lightRays, stream, greenWater, goldStream } = useStaticQuery<Queries.HomepageIntroQuery>(homepageIntroQuery)
+  const { treasureImage, stream, greenWater, mineImage } =
+    useStaticQuery<Queries.HomepageIntroQuery>(homepageIntroQuery)
 
-  const hardcodedCards = useMemo<Card[]>(
+  const cardsData = useMemo<Card[]>(
     () => [
       {
         title: 'Wallets',
@@ -58,11 +69,11 @@ const HomepageIntroSection = () => {
           </>
         ),
         actionText: 'Wallets',
-        image: lightRays?.childImageSharp?.gatsbyImageData,
+        image: treasureImage?.childImageSharp?.gatsbyImageData,
         link: {
           url: '/wallets'
         },
-        color: theme.palette3
+        color: theme.textPrimary
       },
       {
         title: 'Build',
@@ -76,7 +87,7 @@ const HomepageIntroSection = () => {
         link: {
           url: 'https://docs.alephium.org'
         },
-        color: theme.palette5
+        color: theme.textPrimary
       },
       {
         title: 'Contribute',
@@ -90,7 +101,7 @@ const HomepageIntroSection = () => {
         link: {
           url: '/grants'
         },
-        color: theme.palette1
+        color: theme.textPrimary
       },
       {
         title: 'Mine',
@@ -100,78 +111,78 @@ const HomepageIntroSection = () => {
           </>
         ),
         actionText: 'Start Mining',
-        image: goldStream?.childImageSharp?.gatsbyImageData,
+        image: mineImage?.childImageSharp?.gatsbyImageData,
         link: {
           url: 'https://docs.alephium.org/mining'
         },
-        color: theme.palette2
+        color: theme.textPrimary
       }
     ],
     [
-      lightRays?.childImageSharp?.gatsbyImageData,
-      theme.palette3,
-      theme.palette5,
-      theme.palette1,
-      theme.palette2,
+      treasureImage?.childImageSharp?.gatsbyImageData,
+      theme.textPrimary,
       stream?.childImageSharp?.gatsbyImageData,
       greenWater?.childImageSharp?.gatsbyImageData,
-      goldStream?.childImageSharp?.gatsbyImageData
+      mineImage?.childImageSharp?.gatsbyImageData
     ]
   )
 
   return (
-    <SubpageSectionStyled id="intro" noTopPadding overflow="visible">
-      {/* <TextElement isCentered>
-        <h2>
-          A Network Built
-          <br />
-          by Visionaries
-        </h2>
-        <p>
-          <strong>Alephium is more than a blockchain</strong> - it&apos;s a movement driven by those who refuse to
-          compromise on security. Built and secured by a community of miners, developers, and innovators, Alephium
-          embodies the core strengths of Proof-of-Work while pioneering energy efficiency and scalability.
-        </p>
-        <p>
-          <strong>
-            We&apos;re not here to follow trends - we&apos;re here to build a secure and sustainable foundation for the
-            future of finance.
-          </strong>
-        </p>
-      </TextElement> */}
-      <CardsRow>
-        <CardsRowSegment>
-          {hardcodedCards.slice(0, 2).map((card) => (
-            <TextCard border url={card.link.url} variants={cardVariants} key={card.title}>
+    <SubpageSection id="intro" overflow="visible">
+      <TextElement>
+        <h2>Quick start</h2>
+        <p>Dive into the Alephium ecosystem 🐠</p>
+      </TextElement>
+      <SubheaderContent>
+        <BentoLayout columns={4} animateItems={true}>
+          <BentoItem colSpan={2} rowSpan={2}>
+            <TextCard url={cardsData[0].link.url}>
+              <CardImage image={cardsData[0].image} />
               <TextCardContent>
-                <h4 style={{ color: card.color }}>{card.title}</h4>
-                <p>{card.description}</p>
+                <TextElement>
+                  <h4 style={{ color: cardsData[0].color }}>{cardsData[0].title}</h4>
+                  <p>{cardsData[0].description}</p>
+                </TextElement>
               </TextCardContent>
             </TextCard>
-          ))}
-        </CardsRowSegment>
-        <CardsRowSegment>
-          {hardcodedCards.slice(2, 4).map((card) => (
-            <TextCard border url={card.link.url} variants={cardVariants} key={card.title}>
+          </BentoItem>
+          <BentoItem colSpan={1} rowSpan={1}>
+            <TextCard url={cardsData[1].link.url}>
               <TextCardContent>
-                <h4 style={{ color: card.color }}>{card.title}</h4>
-                <p>{card.description}</p>
+                <TextElement>
+                  <h4>
+                    <GradientText>{cardsData[1].title}</GradientText>
+                  </h4>
+                  <p>{cardsData[1].description}</p>
+                </TextElement>
               </TextCardContent>
             </TextCard>
-          ))}
-        </CardsRowSegment>
-      </CardsRow>
-    </SubpageSectionStyled>
+          </BentoItem>
+          <BentoItem colSpan={1} rowSpan={2}>
+            <TextCard url={cardsData[3].link.url}>
+              <CardImage image={cardsData[3].image} zoom={{ scale: 1.8, x: 70, y: 30 }} />
+              <TextCardContent>
+                <TextElement>
+                  <h4 style={{ color: cardsData[3].color }}>{cardsData[3].title}</h4>
+                  <p>{cardsData[3].description}</p>
+                </TextElement>
+              </TextCardContent>
+            </TextCard>
+          </BentoItem>
+          <BentoItem colSpan={1} rowSpan={1}>
+            <TextCard url={cardsData[2].link.url}>
+              <TextCardContent>
+                <TextElement>
+                  <h4 style={{ color: cardsData[2].color }}>{cardsData[2].title}</h4>
+                  <p>{cardsData[2].description}</p>
+                </TextElement>
+              </TextCardContent>
+            </TextCard>
+          </BentoItem>
+        </BentoLayout>
+      </SubheaderContent>
+    </SubpageSection>
   )
 }
 
 export default HomepageIntroSection
-
-const SubpageSectionStyled = styled(SubpageSection)`
-  padding-top: var(--spacing-8);
-`
-
-const cardVariants = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1 }
-}

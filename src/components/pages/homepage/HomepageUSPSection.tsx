@@ -2,15 +2,15 @@ import { ExplorerClient } from '@alephium/sdk'
 import { HttpResponse } from '@alephium/sdk/api/explorer'
 import { graphql } from 'gatsby'
 import { useCallback, useEffect, useState } from 'react'
-import styled, { useTheme } from 'styled-components'
+import styled from 'styled-components'
 
-import Button from '../../Button'
-import CardFooterButtonContainer from '../../common/CardFooterButtonContainer'
+import Badge from '../../Badge'
 import CardsHorizontalScroller from '../../common/CardsHorizontalScroller'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextCard from '../../customPageComponents/TextCard'
 import TextCardContent from '../../customPageComponents/TextCardContent'
 import TextElement from '../../customPageComponents/TextElement'
+import SimpleLink from '../../SimpleLink'
 
 const CARD_WIDTH = 380
 const CARD_GAP = 24
@@ -37,7 +37,6 @@ type StatScalarKeys = 'totalTransactions'
 type StatsScalarData = { [key in StatScalarKeys]: StatScalar }
 
 const HomepageUSPSection = () => {
-  const theme = useTheme()
   const [explorerClient, setExplorerClient] = useState<ExplorerClient>()
   const [statsScalarData, setStatsScalarData] = useState<StatsScalarData>({
     totalTransactions: statScalarDefault
@@ -72,25 +71,17 @@ const HomepageUSPSection = () => {
   const { totalTransactions } = statsScalarData
 
   return (
-    <SubpageSectionStyled wide border="all" bgColor="2">
+    <SubpageSection bgColor="3" fullWidth>
       <TextElementStyled>
         <h2>Web3, done right.</h2>
-        <p>
-          <strong>
-            Dive in. 🐠 <br />
-          </strong>
-          Discover what makes Alephium stand apart.
-        </p>
       </TextElementStyled>
 
       <CardsHorizontalScroller cardWidth={CARD_WIDTH} cardGap={CARD_GAP} animateCards additionalLeftPadding>
-        <TextCard border>
+        <TextCard>
           <TextCardContent>
             <TextElement>
               <h3>Fast ⚡</h3>
-              <TLDRSection>
-                <span>8 second block time, 2 BPS network throughput.</span>
-              </TLDRSection>
+              <TLDRSection>8 second block time, 2 BPS network throughput.</TLDRSection>
             </TextElement>
             <TextElement noHeadingsMargins>
               <p>
@@ -99,14 +90,15 @@ const HomepageUSPSection = () => {
                 <strong> matching the speed of leading PoS networks without sacrificing decentralization.</strong>
               </p>
             </TextElement>
-            <CardFooterButtonContainer>
-              <Button squared url="https://x.com/alephium/status/1920780688313233634">
+            <p>
+              <Badge color="palette4">New</Badge>
+              <SimpleLink url="https://x.com/alephium/status/1920780688313233634" showArrow highlight>
                 Discover the Danube upgrade
-              </Button>
-            </CardFooterButtonContainer>
+              </SimpleLink>
+            </p>
           </TextCardContent>
         </TextCard>
-        <TextCard border>
+        <TextCard>
           <TextCardContent>
             <TextElement>
               <h3>Scalable ⛓️</h3>
@@ -119,14 +111,14 @@ const HomepageUSPSection = () => {
                 <strong>delivering high throughput and the simplicity of a single-chain environment.</strong>
               </p>
             </TextElement>
-            <CardFooterButtonContainer>
-              <Button squared url="https://docs.alephium.org/misc/Content/#blockflow">
-                Learn about Blockflow
-              </Button>
-            </CardFooterButtonContainer>
+            <SimpleLink
+              url="https://docs.alephium.org/misc/Content/#blockflow"
+              showArrow
+              text="Learn about Blockflow"
+            />
           </TextCardContent>
         </TextCard>
-        <TextCard border>
+        <TextCard>
           <TextCardContent>
             <TextElement>
               <h3>Secure 🔒</h3>
@@ -142,17 +134,14 @@ const HomepageUSPSection = () => {
                 <strong>prevent threats like reentrancy attacks, unlimited approvals, and flash loan exploits.</strong>
               </p>
             </TextElement>
-            <CardFooterButtonContainer>
-              <Button
-                squared
-                url="https://medium.com/@alephium/meet-alphred-a-virtual-machine-like-no-others-85ce86540025"
-              >
-                See why we're secure
-              </Button>
-            </CardFooterButtonContainer>
+            <SimpleLink
+              url="https://medium.com/@alephium/meet-alphred-a-virtual-machine-like-no-others-85ce86540025"
+              showArrow
+              text="See why we're secure"
+            />
           </TextCardContent>
         </TextCard>
-        <TextCard border>
+        <TextCard>
           <TextCardContent>
             <TextElement>
               <h3>Sustainable 🌱</h3>
@@ -169,14 +158,14 @@ const HomepageUSPSection = () => {
                 </strong>
               </p>
             </TextElement>
-            <CardFooterButtonContainer>
-              <Button squared url="https://docs.alephium.org/misc/Content/#proof-of-less-work">
-                Learn about PoLW
-              </Button>
-            </CardFooterButtonContainer>
+            <SimpleLink
+              url="https://docs.alephium.org/misc/Content/#proof-of-less-work"
+              showArrow
+              text="Learn about PoLW"
+            />
           </TextCardContent>
         </TextCard>
-        <TextCard border>
+        <TextCard>
           <TextCardContent>
             <TextElement>
               <h3>Programmable 🧩</h3>
@@ -193,14 +182,14 @@ const HomepageUSPSection = () => {
                 protection.
               </p>
             </TextElement>
-            <CardFooterButtonContainer>
-              <Button squared url="https://docs.alephium.org/misc/Content/#stateful-utxo">
-                Learn about stateful UTXOs
-              </Button>
-            </CardFooterButtonContainer>
+            <SimpleLink
+              url="https://docs.alephium.org/misc/Content/#stateful-utxo"
+              showArrow
+              text="Learn about stateful UTXOs"
+            />
           </TextCardContent>
         </TextCard>
-        <TextCard border>
+        <TextCard>
           <TextCardContent>
             <TextElement>
               <h3>Dev-friendly 🧑‍💻</h3>
@@ -215,22 +204,17 @@ const HomepageUSPSection = () => {
                 , enabling efficient development and unlocking new possibilities for smart contracts, dApps, and tokens.
               </p>
             </TextElement>
-            <CardFooterButtonContainer>
-              <Button squared url="https://docs.alephium.org/misc/Content/#alphred-virtual-machine">
-                Learn about our VM
-              </Button>
-            </CardFooterButtonContainer>
+            <SimpleLink
+              url="https://docs.alephium.org/misc/Content/#alphred-virtual-machine"
+              showArrow
+              text="Learn about our VM"
+            />
           </TextCardContent>
         </TextCard>
       </CardsHorizontalScroller>
-    </SubpageSectionStyled>
+    </SubpageSection>
   )
 }
-
-const SubpageSectionStyled = styled(SubpageSection)`
-  padding-right: 0;
-  padding-left: 0;
-`
 
 const TextElementStyled = styled(TextElement)`
   width: var(--page-width);
@@ -243,13 +227,11 @@ const TLDRSection = styled.div`
   align-items: center;
   border-radius: var(--radius-small);
   margin-top: var(--spacing-2);
-  color: ${({ color }) => color};
   font-size: var(--fontSize-22);
-  font-weight: var(--fontWeight-semiBold);
+  font-weight: var(--fontWeight-medium);
   margin-bottom: var(--spacing-4);
   width: 100%;
   box-sizing: border-box;
-  opacity: 0.8;
 `
 
 export default HomepageUSPSection

@@ -2,6 +2,7 @@ import { graphql, PageProps, useStaticQuery } from 'gatsby'
 import styled, { useTheme } from 'styled-components'
 
 import Button from '../components/Button'
+import Card from '../components/Card'
 import CardsHorizontalScroller from '../components/common/CardsHorizontalScroller'
 import ClickableBox from '../components/customPageComponents/ClickableBox'
 import Grid from '../components/customPageComponents/Grid'
@@ -41,7 +42,7 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageSection fullWidth edgeGradient border="bottom">
+          <SubpageSection edgeGradient border="bottom">
             <TextElement isCentered>
               <h1>
                 Become an Alephium
@@ -74,24 +75,7 @@ const CustomPage = (props: PageProps) => {
 
           <HowToApply />
 
-          <SubpageSection border="all" edgeGradient>
-            <TextElement isCentered>
-              <h2>Ready to Join?</h2>
-              <p>
-                Become a part of the Alephium Ambassador Program and help us build the future of finance. Together, we
-                can create a more scalable, secure, and sustainable world.
-              </p>
-              <Button
-                big
-                highlight
-                url="https://docs.google.com/forms/d/e/1FAIpQLSfR0T6Fg3v8HU86wZJgQBXslRUJKS3bsiQb92-ZIyaaV4RreA/viewform"
-              >
-                Apply Now
-              </Button>
-            </TextElement>
-          </SubpageSection>
-
-          <SectionDivider double />
+          <BottomSection />
         </>
       }
     />
@@ -167,7 +151,7 @@ const HowToApply = () => {
         <ClickableBox align="top">
           <TextElement noMargin>
             <p>
-              <strong style={{ color: theme.palette2 }}>Apply</strong> - Fill out the{' '}
+              <strong>Apply</strong> - Fill out the{' '}
               <SimpleLink
                 highlight
                 url="https://docs.google.com/forms/d/e/1FAIpQLSfR0T6Fg3v8HU86wZJgQBXslRUJKS3bsiQb92-ZIyaaV4RreA/viewform?usp=sf_link"
@@ -181,28 +165,52 @@ const HowToApply = () => {
         <ClickableBox align="top">
           <TextElement noMargin>
             <p>
-              <strong style={{ color: theme.palette3 }}>Onboarding</strong> - If selected, you&apos;ll receive an
-              onboarding package with resources, guidelines, and access to the Alephium Ambassador community.
+              <strong>Onboarding</strong> - If selected, you&apos;ll receive an onboarding package with resources,
+              guidelines, and access to the Alephium Ambassador community.
             </p>
           </TextElement>
         </ClickableBox>
         <ClickableBox align="top">
           <TextElement noMargin>
             <p>
-              <strong style={{ color: theme.palette4 }}>Start Contributing</strong> - Begin your journey by completing
-              tasks, participating in initiatives, and collaborating with other ambassadors.
+              <strong>Start Contributing</strong> - Begin your journey by completing tasks, participating in
+              initiatives, and collaborating with other ambassadors.
             </p>
           </TextElement>
         </ClickableBox>
         <ClickableBox align="top">
           <TextElement noMargin>
             <p>
-              <strong style={{ color: theme.palette6 }}>Grow and Earn</strong> - As you contribute, you&apos;ll earn
-              rewards, gain recognition, and unlock new opportunities within the Alephium ecosystem.
+              <strong>Grow and Earn</strong> - As you contribute, you&apos;ll earn rewards, gain recognition, and unlock
+              new opportunities within the Alephium ecosystem.
             </p>
           </TextElement>
         </ClickableBox>
       </Grid>
+    </SubpageSection>
+  )
+}
+
+const BottomSection = () => {
+  const theme = useTheme()
+  return (
+    <SubpageSection>
+      <Card bgColor={theme.background1}>
+        <TextElement isCentered>
+          <h2>Ready to Join?</h2>
+          <p>
+            Become a part of the Alephium Ambassador Program and help us build the future of finance. Together, we can
+            create a more scalable, secure, and sustainable world.
+          </p>
+          <Button
+            big
+            highlight
+            url="https://docs.google.com/forms/d/e/1FAIpQLSfR0T6Fg3v8HU86wZJgQBXslRUJKS3bsiQb92-ZIyaaV4RreA/viewform"
+          >
+            Apply Now
+          </Button>
+        </TextElement>
+      </Card>
     </SubpageSection>
   )
 }
@@ -225,7 +233,7 @@ const WhySection = () => {
       <SubheaderContent>
         <Grid columns={2}>
           <TextElement noHeadingsMargins>
-            <h3 style={{ color: theme.palette4 }}>Make an Impact</h3>
+            <h3>Make an Impact 🚀</h3>
             <p>
               <strong>Help redefine what&apos;s possible</strong> in the world of decentralized technology. Your impact
               will be felt across the ecosystem, from the developers building on Alephium to the users who benefit from
@@ -234,7 +242,7 @@ const WhySection = () => {
           </TextElement>
 
           <TextElement noHeadingsMargins>
-            <h3 style={{ color: theme.palette3 }}>Grow Your Skills</h3>
+            <h3>Grow Your Skills 📚</h3>
             <p>
               You&apos;ll be surrounded by experts from different domains and get{' '}
               <strong>access to exclusive resources from Alephium&apos;s core team.</strong>
@@ -242,7 +250,7 @@ const WhySection = () => {
           </TextElement>
 
           <TextElement noHeadingsMargins>
-            <h3 style={{ color: theme.palette6 }}>Join a Global Network</h3>
+            <h3>Join a Global Network 🌍</h3>
             <p>
               <strong>Meet passionate innovators, join local communities, represent Alephium</strong> at local and
               international events, and more. And don&apos;t worry, we&apos;ll be right beside you, ready to provide
@@ -251,7 +259,7 @@ const WhySection = () => {
           </TextElement>
 
           <TextElement noHeadingsMargins>
-            <h3 style={{ color: theme.palette2 }}>Earn Rewards</h3>
+            <h3>Earn Rewards 💰</h3>
             <p>
               Limited-edition gear, ALPH coins, recognition on official channels, help opening doors to new professional
               opportunities, and support to attend Web3 events, conferences, and hackathons.

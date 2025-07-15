@@ -35,7 +35,7 @@ const NavigationMenu = ({ className, floating = true }: NavigationMenuProps) => 
   useEffect(() => {
     const handleScroll = throttle(() => {
       const currentScrollY = window.scrollY
-      setScrolled(currentScrollY > 20)
+      setScrolled(currentScrollY > 50)
 
       const scrollDelta = currentScrollY - lastScrollY.current
 
@@ -181,26 +181,23 @@ export const navigationMenuQuery = graphql`
 
 const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean; scrolled: boolean }>`
   position: fixed;
-  top: ${({ isHidden }) => (isHidden ? '-10px' : 'var(--spacing-3)')};
-  opacity: ${({ isHidden }) => (isHidden ? 0 : 1)};
-  width: 60vw;
+  top: 0;
   min-width: 800px;
-  max-width: 700px;
   right: 0;
   left: 0;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 56px;
+  height: 70px;
   z-index: 10000;
-  transition: top 0.2s ease-out, opacity 0.2s ease-out;
-  background-color: ${({ theme }) => getColordColor(theme.background1).alpha(0.85).toHex()};
-  backdrop-filter: blur(40px) saturate(120%);
-
-  border: 1px solid ${({ theme }) => theme.borderPrimary};
-  border-radius: var(--radius-full);
-  box-shadow: 0 20px 20px rgba(0, 0, 0, ${({ theme }) => (theme.name === 'dark' ? 0.4 : 0.025)});
+  transition: top 0.2s ease-out, opacity 0.2s ease-out, background-color 0.5s ease-out, box-shadow 0.5s ease-out;
+  border-bottom: 1px solid ${({ theme }) => theme.borderPrimary};
+  background-color: ${({ theme, scrolled }) =>
+    scrolled ? getColordColor(theme.background2).alpha(0.85).toHex() : 'transparent'};
+  backdrop-filter: ${({ scrolled }) => (scrolled ? `blur(30px)` : 'blur(0px)')};
+  box-shadow: ${({ scrolled, theme }) =>
+    scrolled ? `0 10px 80px rgba(0, 0, 0, ${theme.name === 'dark' ? 0.2 : 0.1})` : 'none'};
 
   ${({ floating }) =>
     !floating &&
@@ -209,7 +206,6 @@ const NavigationWrapper = styled.div<{ isHidden: boolean; floating: boolean; scr
     `}
 
   @media ${deviceBreakPoints.ipad} {
-    width: 90vw;
     min-width: auto;
   }
 `
@@ -323,7 +319,6 @@ const Drawer = styled(motion.div)`
   display: flex;
   flex-direction: column;
   z-index: 1000;
-  backdrop-filter: blur(24px);
   padding-bottom: 8px;
 
   @media ${deviceBreakPoints.ipad} {

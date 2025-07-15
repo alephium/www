@@ -32,7 +32,9 @@ const SubpageImageHeroSection = ({
       <SubpageHeroSection
         mediaContent={
           backgroundImage && (
-            <GatsbyImageWrapper image={image} alt={backgroundImageAlt} style={{ height: '100%' }} objectFit="cover" />
+            <ThemeProvider theme={theme}>
+              <GatsbyImageWrapper image={image} alt={backgroundImageAlt} style={{ height: '100%' }} objectFit="cover" />
+            </ThemeProvider>
           )
         }
         split={split}

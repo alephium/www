@@ -1,17 +1,14 @@
 import { addApostrophes, ExplorerClient } from '@alephium/sdk'
 import { HttpResponse } from '@alephium/sdk/api/explorer'
-import { motion } from 'framer-motion'
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import styled from 'styled-components'
 
 import Column from '../../../components/Columns/Column'
-import Columns from '../../../components/Columns/Columns'
 import NumbersInfo from '../../../components/NumbersInfo'
-import PageSectionContainer from '../../../components/PageSectionContainer'
-import Waves from '../../../components/Wave/Waves'
+import { deviceBreakPoints } from '../../../styles/global-style'
 import { formatNumberForDisplay } from '../../../utils/numbers'
 import Button from '../../Button'
-import SubheaderContent from '../../customPageComponents/SubheaderContent'
+import Card from '../../Card'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextElement from '../../customPageComponents/TextElement'
 
@@ -61,8 +58,6 @@ const HomepageNumbersSection = () => {
   const [bridgeTVL, setBridgeTVL] = useState<number>()
   const [chainTVL, setChainTVL] = useState<number>()
   const [protocolsStakingTVL, setProtocolsStakingTVL] = useState<number>()
-
-  const boxRef = useRef<HTMLDivElement>(null)
 
   const updateStatsScalar = useCallback(
     (key: StatScalarKeys, value: StatScalar['value']) => {
@@ -184,92 +179,54 @@ const HomepageNumbersSection = () => {
   ]
 
   return (
-    <SubpageSection overflow="visible">
-      <TextElement>
-        <h2>Some Numbers.</h2>
-        <p>Let the facts speak for themselves.</p>
-      </TextElement>
-      <SubheaderContent>
-        <motion.div
-          initial={{ y: 50, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-        >
-          <PageSectionContainer>
-            <BorderedBox ref={boxRef}>
-              <RealTimeLabel>Real time data</RealTimeLabel>
-              <ColumnsStyled>
-                {columns.map((column) => (
-                  <NumbersColumn key={column.description}>
-                    <NumbersInfo {...column} />
-                  </NumbersColumn>
-                ))}
-                {/*
-              <NumbersColumn>
-                <NumbersInfo
-                  description="Active addresses"
-                  value={activeAddresses?.toString()}
-                  isLoading={activeAddresses === undefined}
-                />
-              </NumbersColumn>
-            */}
-                <NumbersColumn>
-                  <NumbersInfo
-                    description="Chain TVL"
-                    value={
-                      chainTVL && protocolsStakingTVL
-                        ? '$' + formatNumberForDisplay(chainTVL + protocolsStakingTVL).join('')
-                        : '-'
-                    }
-                    isLoading={bridgeTVL === undefined}
-                  />
-                </NumbersColumn>
-                <NumbersColumn>
-                  <NumbersInfo
-                    description="Bridged TVL"
-                    value={bridgeTVL ? '$' + formatNumberForDisplay(bridgeTVL).join('') : '-'}
-                    isLoading={bridgeTVL === undefined}
-                  />
-                </NumbersColumn>
-              </ColumnsStyled>
-              <ButtonContainer>
-                <Button url="https://explorer.alephium.org/" big highlight>
-                  Check out our explorer
-                </Button>
-              </ButtonContainer>
-              <Waves parentRef={boxRef} />
-            </BorderedBox>
-          </PageSectionContainer>
-        </motion.div>
-      </SubheaderContent>
+    <SubpageSection>
+      <MainContainer>
+        <TextElement>
+          <h2>Some Numbers.</h2>
+          <p>Let the facts speak for themselves.</p>
+          <ButtonContainer>
+            <Button url="https://explorer.alephium.org/" big highlight>
+              Check out our explorer
+            </Button>
+          </ButtonContainer>
+        </TextElement>
+        <NumbersContainer>
+          <RealTimeLabel>Real time data</RealTimeLabel>
+          {columns.map((column) => (
+            <NumbersInfo key={column.description} {...column} />
+          ))}
+          <NumbersColumn>
+            <NumbersInfo
+              description="Chain TVL"
+              value={
+                chainTVL && protocolsStakingTVL
+                  ? '$' + formatNumberForDisplay(chainTVL + protocolsStakingTVL).join('')
+                  : '-'
+              }
+              isLoading={bridgeTVL === undefined}
+            />
+          </NumbersColumn>
+          <NumbersInfo
+            description="Bridged TVL"
+            value={bridgeTVL ? '$' + formatNumberForDisplay(bridgeTVL).join('') : '-'}
+            isLoading={bridgeTVL === undefined}
+          />
+        </NumbersContainer>
+      </MainContainer>
     </SubpageSection>
   )
 }
 
 export default HomepageNumbersSection
 
-const BorderedBox = styled.div`
-  flex: 1;
-  border-radius: var(--radius-big);
-  border: 1px solid ${({ theme }) => theme.borderPrimary};
-  background-color: ${({ theme }) => theme.background2};
-  padding: var(--spacing-11);
-  padding-bottom: var(--spacing-16);
-  overflow: hidden;
-  position: relative;
-  min-height: 150px;
-  box-shadow: 0 20px 30px 0 rgba(19, 14, 14, 0.05);
-`
-
 const RealTimeLabel = styled.div`
   position: absolute;
   top: var(--spacing-3);
   right: var(--spacing-3);
-  background: ${({ theme }) => theme.background1};
+  background: ${({ theme }) => theme.textPrimary};
   padding: var(--spacing-1) var(--spacing-2);
   border-radius: var(--radius-small);
-  color: ${({ theme }) => theme.textSecondary};
+  color: ${({ theme }) => theme.background3};
   z-index: 1;
   display: flex;
   align-items: center;
@@ -277,19 +234,27 @@ const RealTimeLabel = styled.div`
 
   &::before {
     content: '';
-    width: 6px;
-    height: 6px;
-    background: ${({ theme }) => theme.palette1};
+    width: 8px;
+    height: 8px;
+    background: ${({ theme }) => theme.palette4};
     border-radius: 50%;
     display: inline-block;
+    animation: blink 2s ease-in-out infinite;
+  }
+
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.3;
+    }
   }
 `
 
 const ButtonContainer = styled.div`
-  position: absolute;
-  bottom: var(--spacing-3);
-  left: var(--spacing-3);
-  z-index: 1;
+  margin-top: var(--spacing-6);
 `
 
 const NumbersColumn = styled(Column)`
@@ -298,12 +263,25 @@ const NumbersColumn = styled(Column)`
   z-index: 1;
 `
 
-// const SubsectionTextHeaderStyled = styled(SubsectionTextHeader)`
-//   margin-bottom: var(--spacing-4);
-// `
+const MainContainer = styled.div`
+  display: flex;
+  gap: var(--spacing-12);
 
-const ColumnsStyled = styled(Columns)`
+  > * {
+    flex: 1;
+  }
+
+  @media ${deviceBreakPoints.mobile} {
+    flex-direction: column;
+  }
+`
+
+const NumbersContainer = styled(Card)`
+  display: flex;
+  position: relative;
   align-items: baseline;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: var(--spacing-4);
+  background-color: ${({ theme }) => (theme.name === 'dark' ? theme.background2 : theme.background1)};
 `

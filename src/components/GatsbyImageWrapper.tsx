@@ -9,6 +9,12 @@ interface GatsbyImageWrapperProps extends Omit<GatsbyImageProps, 'image'> {
   preserveWidth?: boolean
   center?: boolean
   rounded?: boolean
+  style?: React.CSSProperties
+  zoom?: {
+    scale?: number
+    x?: number
+    y?: number
+  }
 }
 
 const GatsbyImageWrapper: React.FC<GatsbyImageWrapperProps> = ({
@@ -19,12 +25,21 @@ const GatsbyImageWrapper: React.FC<GatsbyImageWrapperProps> = ({
   preserveWidth = false,
   center = false,
   rounded = false,
+  style,
+  zoom,
   ...props
 }) => {
   if (!image) return null
 
   return (
-    <StyledGatsbyImage isBackground={isBackground} preserveWidth={preserveWidth} center={center} rounded={rounded}>
+    <StyledGatsbyImage
+      isBackground={isBackground}
+      preserveWidth={preserveWidth}
+      center={center}
+      rounded={rounded}
+      style={style}
+      zoom={zoom}
+    >
       <GatsbyImage image={image} alt={alt} className={className} {...props} />
     </StyledGatsbyImage>
   )
@@ -36,6 +51,11 @@ const StyledGatsbyImage = styled.div<{
   preserveWidth?: boolean
   center?: boolean
   rounded?: boolean
+  zoom?: {
+    scale?: number
+    x?: number
+    y?: number
+  }
 }>`
   width: 100%;
   height: 100%;
@@ -73,6 +93,7 @@ const StyledGatsbyImage = styled.div<{
     width: ${({ preserveWidth }) => (preserveWidth ? 'auto' : '100%')};
     object-fit: cover;
     opacity: 1 !important;
+    filter: brightness(${({ theme }) => (theme.name === 'dark' ? 0.9 : 1.1)});
 
     ${({ center }) =>
       center &&
@@ -85,6 +106,14 @@ const StyledGatsbyImage = styled.div<{
       rounded &&
       css`
         border-radius: 100%;
+      `}
+
+    ${({ zoom }) =>
+      zoom &&
+      css`
+        transform: scale(${zoom.scale || 1.5}) !important;
+        transform-origin: center !important;
+        object-position: ${zoom.x || 30}% ${zoom.y || -30}% !important;
       `}
   }
 `

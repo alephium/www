@@ -1,6 +1,8 @@
 import { FC } from 'react'
 import styled from 'styled-components'
 
+import GradientText from './GradientText'
+
 interface NumbersInfoProps {
   value?: string
   isLoading: boolean
@@ -10,22 +12,27 @@ interface NumbersInfoProps {
 
 const NumbersInfo: FC<NumbersInfoProps> = ({ value, isLoading, description, className }) => (
   <div className={className}>
-    {isLoading ? '-' : <div className="number">{value}</div>}
-    <div>{description}</div>
+    {isLoading ? (
+      '-'
+    ) : (
+      <NumberContainer className="number">
+        <GradientText>{value}</GradientText>
+      </NumberContainer>
+    )}
+    <DescriptionContainer>{description}</DescriptionContainer>
   </div>
 )
 
-export default styled(NumbersInfo)`
-  font-weight: var(--fontWeight-medium);
-  color: ${({ theme }) => theme.textPrimaryVariation};
+export default NumbersInfo
 
-  .number {
-    font-size: var(--fontSize-56);
-    margin-bottom: var(--spacing-3);
+const NumberContainer = styled.div`
+    font-size: var(--fontSize-80);
+    margin-bottom: var(--spacing-1);
     color: ${({ theme }) => theme.textPrimary};
-
-    & + div {
-      font-size: var(--fontSize-22);
-    }
   }
+`
+
+const DescriptionContainer = styled.div`
+  font-size: var(--fontSize-24);
+  color: ${({ theme }) => theme.textTertiary};
 `

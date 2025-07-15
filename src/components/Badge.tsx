@@ -8,7 +8,6 @@ const Badge = styled.span<{ color: string }>`
   font-size: var(--fontSize-16);
   font-weight: var(--fontWeight-normal);
   margin-right: 8px;
-  vertical-align: middle;
   line-height: 1;
   background-color: ${({ theme, color }) =>
     colord(theme[color as keyof typeof theme])

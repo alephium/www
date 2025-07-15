@@ -1,16 +1,17 @@
 import { colord } from 'colord'
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
-import styled, { useTheme } from 'styled-components'
+import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../../../styles/global-style'
 import { isMobile } from '../../../utils/misc'
 import Badge from '../../Badge'
 import Button from '../../Button'
+import CardFooterButtonContainer from '../../common/CardFooterButtonContainer'
 import TextElement from '../../customPageComponents/TextElement'
+import GradientText from '../../GradientText'
 
 const HomepageNewsPopup = () => {
-  const theme = useTheme()
   const [isMounted, setIsMounted] = useState(false)
   const [isVisible, setIsVisible] = useState(true)
 
@@ -69,17 +70,20 @@ const HomepageNewsPopup = () => {
             BREAKING NEWS 🔥
           </Badge>
           <TextElement isBodySmall noHeadingsMargins>
-            <h2 style={{ color: theme.palette5 }}>Danube Upgrade</h2>
+            <h2>Danube Upgrade 🌊</h2>
             <p>
-              A major milestone towards true Web3.
-              <br />
-              <strong>Going live soon.</strong>
+              <strong>
+                <GradientText>LIVE TODAY</GradientText>
+              </strong>
+              <br />A major milestone towards true Web3.
             </p>
           </TextElement>
         </NewsCardContent>
-        <Button squared url="https://x.com/alephium/status/1920780688313233634">
-          Learn more about Danube
-        </Button>
+        <CardFooterButtonContainer>
+          <Button squared url="https://x.com/alephium/status/1920780688313233634">
+            Learn more about Danube
+          </Button>
+        </CardFooterButtonContainer>
       </NewsCard>
     </NewsCardContainer>
   )
@@ -110,10 +114,10 @@ const NewsCard = styled(motion.div)<{ border?: boolean }>`
   width: 400px;
   display: flex;
   flex-direction: column;
-  border: 1px solid ${({ theme }) => theme.borderPrimary};
-  background-color: ${({ theme }) => colord(theme.background1).lighten(0.15).alpha(0.7).toHex()};
+  border: 1px solid ${({ theme }) => theme.palette5};
+  background-color: ${({ theme }) => colord(theme.background1).lighten(0.15).alpha(0.9).toHex()};
   backdrop-filter: blur(60px) saturate(3) brightness(1.2);
-  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, ${({ theme }) => (theme.name === 'light' ? 0.2 : 0.4)});
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, ${({ theme }) => (theme.name === 'light' ? 0.1 : 0.3)});
   border-radius: var(--radius-large);
   padding: var(--spacing-3);
   border-radius: var(--radius);
@@ -151,7 +155,7 @@ const CloseButton = styled.button`
   background: none;
   border: none;
   font-size: 24px;
-  color: ${({ theme }) => theme.palette5};
+  color: ${({ theme }) => theme.textPrimary};
   cursor: pointer;
   padding: 0;
   width: 24px;

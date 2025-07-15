@@ -5,7 +5,7 @@ import { deviceBreakPoints } from '../../styles/global-style'
 const SideBySide = styled.div<{ reverseOnMobile?: boolean }>`
   width: 100%;
   display: flex;
-  gap: var(--spacing-4);
+  gap: var(--spacing-6);
 
   > * {
     flex: 1;
