@@ -79,7 +79,7 @@ const TextElement = styled.div<TextElementProps>`
   }
 
   > h1 {
-    font-family: 'Inter';
+    font-family: 'InterDisplay';
     line-height: 0.9;
 
     font-size: var(--fontSize-76);
@@ -95,7 +95,7 @@ const TextElement = styled.div<TextElementProps>`
   }
 
   > h2 {
-    font-family: 'Inter';
+    font-family: 'InterDisplay';
     font-size: var(--fontSize-50);
     margin-bottom: var(--spacing-4);
     font-weight: var(--fontWeight-semiBold);
@@ -119,7 +119,7 @@ const TextElement = styled.div<TextElementProps>`
   }
 
   > h3 {
-    font-family: 'Inter';
+    font-family: 'InterDisplay';
     font-size: var(--fontSize-36);
     font-weight: var(--fontWeight-medium);
     margin-bottom: var(--spacing-2);
