@@ -206,7 +206,7 @@ const HomepageEcosystemSection = () => {
         style={{ position: 'relative', zIndex: 1 }}
         centerGlowColor={theme.palette4}
         peripheralGlowColor={theme.palette5}
-        glowOpacity={0.2}
+        glowOpacity={0.3}
         glowBottomOffset={0}
       >
         <LogosContainer ref={containerRef} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>

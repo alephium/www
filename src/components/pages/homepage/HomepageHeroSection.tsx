@@ -1,6 +1,6 @@
 import { colord, extend } from 'colord'
 import mixPlugin from 'colord/plugins/mix'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../../../styles/global-style'
@@ -14,47 +14,42 @@ import GlowingContainer from '../../GlowingContainer'
 
 extend([mixPlugin])
 
-const HomepageHeroSection = () => {
-  const { scrollY } = useScroll()
-  const opacity = useTransform(scrollY, [100, 1000], [1, 0])
+const HomepageHeroSection = () => (
+  <SectionWrapper>
+    <SubpageSectionStyled noTopPadding bgColor="3" fullWidth>
+      <GlowingContainer>
+        <ConcentricEllipses />
+      </GlowingContainer>
+      <TopSection>
+        <TextElementWithReflection isCentered>
+          <h1>Web3, as Promised.</h1>
+          <p>
+            Easy to build on. Safe to use. Ready to grow. <br />
+            <strong>
+              <b>No tradeoffs.</b>
+            </strong>
+          </p>
+        </TextElementWithReflection>
 
-  return (
-    <SectionWrapper style={{ opacity }}>
-      <SubpageSectionStyled noTopPadding bgColor="3" fullWidth>
-        <GlowingContainer>
-          <ConcentricEllipses />
-        </GlowingContainer>
-        <TopSection>
-          <TextElementWithReflection isCentered>
-            <h1>Web3, as Promised.</h1>
-            <p>
-              Easy to build on. Safe to use. Ready to grow. <br />
-              <strong>
-                <b>No tradeoffs.</b>
-              </strong>
-            </p>
-          </TextElementWithReflection>
+        <Buttons>
+          <Button big highlight url="/get-started">
+            Get started
+          </Button>
+        </Buttons>
+      </TopSection>
 
-          <Buttons>
-            <Button big highlight url="/get-started">
-              Get started
-            </Button>
-          </Buttons>
-        </TopSection>
-
-        <BottomSection>
-          <AlephiumLogoContainer>
-            <AlephiumLogo
-              fill={lightTheme.textPrimary}
-              gradientIndex={0}
-              innerGlowColor={colord(lightTheme.palette1).lighten(0.2).alpha(0.3).toHex()}
-            />
-          </AlephiumLogoContainer>
-        </BottomSection>
-      </SubpageSectionStyled>
-    </SectionWrapper>
-  )
-}
+      <BottomSection>
+        <AlephiumLogoContainer>
+          <AlephiumLogo
+            fill={lightTheme.textPrimary}
+            gradientIndex={0}
+            innerGlowColor={colord(lightTheme.palette1).lighten(0.2).alpha(0.3).toHex()}
+          />
+        </AlephiumLogoContainer>
+      </BottomSection>
+    </SubpageSectionStyled>
+  </SectionWrapper>
+)
 
 export default HomepageHeroSection
 
@@ -68,7 +63,8 @@ const SubpageSectionStyled = styled(SubpageSection)`
   padding-right: var(--spacing-4);
   padding-left: var(--spacing-4);
   overflow: visible;
-  min-height: 65vh;
+  height: 65vh;
+  min-height: 800px;
   gap: var(--spacing-4);
   position: relative;
   overflow: hidden;
@@ -99,7 +95,7 @@ const TopSection = styled.div`
   align-items: center;
   justify-content: center;
   gap: var(--spacing-4);
-  flex: 1;
+  flex: 1.5;
   position: relative;
 `
 

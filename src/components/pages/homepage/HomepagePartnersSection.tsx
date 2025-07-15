@@ -60,6 +60,7 @@ const SubpageSectionStyled = styled(SubpageSection)`
   justify-content: center;
   align-items: center;
   height: 12vh;
+  min-height: 160px;
 `
 
 const PartnersGridContainer = styled.div`
