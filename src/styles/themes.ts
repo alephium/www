@@ -58,8 +58,8 @@ export const lightTheme: DefaultTheme = {
   palette1: '#29a0f9',
   palette2: '#ffca42',
   palette3: '#5ade94',
-  palette4: '#ff6eb9',
-  palette5: '#ff8587',
+  palette4: '#e4539e',
+  palette5: '#ff6179',
   palette6: '#a1e9ff'
 }
 

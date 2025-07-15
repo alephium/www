@@ -13,7 +13,6 @@ import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextCard from '../components/customPageComponents/TextCard'
 import TextCardContent from '../components/customPageComponents/TextCardContent'
 import TextElement from '../components/customPageComponents/TextElement'
-import Glow from '../components/Glow'
 import GradientText from '../components/GradientText'
 import SectionDivider from '../components/SectionDivider'
 
@@ -75,165 +74,131 @@ const exchangesQuery = graphql`
   }
 `
 
-const CustomPage = (props: PageProps) => {
+const GetStartedPage = (props: PageProps) => (
+  <Page
+    {...props}
+    seo={{
+      title: 'Get Started with Alephium | Build, Mine, Explore',
+      description:
+        'Begin your Alephium journey - whether you want to build, mine, or explore. Learn everything you need to join the future of decentralized finance.'
+    }}
+    content={<PageContent />}
+  />
+)
+
+const PageContent = () => {
   const { ecosystemImage, mineImage } = useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
+  const theme = useTheme()
 
   return (
-    <Page
-      {...props}
-      seo={{
-        title: 'Get Started with Alephium | Build, Mine, Explore',
-        description:
-          'Begin your Alephium journey - whether you want to build, mine, or explore. Learn everything you need to join the future of decentralized finance.'
-      }}
-      content={
-        <>
-          <GetAlphSection />
+    <>
+      <GetAlphSection />
 
-          {/*<EarnALPHSection />*/}
+      <SectionDivider />
 
-          {/*<SubpageSection>
-            <TextElement isCentered>
-              <h2>Get ALPH</h2>
-              <p>
-                <strong>There are many ways to get ALPH.</strong> You can it some with traditional fiat currency,
-                exchanging it with another cryptocurrency, or bridging from another ecosystem.
-              </p>
-            </TextElement>
-            <SubheaderContent isCentered>
-              <Grid columns={2} gap="small">
-                {exchanges.map(
-                  (exchange) =>
-                    exchange &&
-                    exchange.title &&
-                    exchange.url && (
-                      <ClickableBox key={exchange.title} url={exchange.url}>
-                        <ImageIcon
-                          src={exchange.logo?.publicURL ?? ''}
-                          alt={exchange.title}
-                          rounded
-                          size={50}
-                          padding={10}
-                          noBottomMargin
-                        />
-                        <TextElement isSmall noMargin>
-                          <p>
-                            <strong>{exchange.title}</strong> — {exchange.description}
-                          </p>
-                        </TextElement>
-                      </ClickableBox>
-                    )
-                )}
-              </Grid>
-              <Button url="https://www.coingecko.com/en/coins/alephium#markets">See more ALPH markets</Button>
-            </SubheaderContent>
-          </SubpageSection>*/}
+      <SubpageImageHeroSection
+        backgroundImage={ecosystemImage}
+        alignContent="center"
+        bottomMargin
+        minHeight="500px"
+        split
+      >
+        <TextElement isCentered>
+          <h2>
+            <GradientText color1={theme.palette6} color2={theme.palette1}>
+              Explore
+            </GradientText>{' '}
+            the ecosystem
+          </h2>
+          <p>
+            <strong>All the dApps, tools, integrations, partners and more, in one place.</strong>
+          </p>
+          <Button big highlight url="https://alph.land">
+            See all apps
+          </Button>
+        </TextElement>
+      </SubpageImageHeroSection>
 
-          <SectionDivider border pageWidth />
+      <SectionDivider border pageWidth />
 
-          <SubpageImageHeroSection
-            backgroundImage={ecosystemImage}
-            alignContent="center"
-            bottomMargin
-            minHeight="500px"
-            split
-          >
-            <TextElement isCentered>
-              <h2>Explore the ecosystem</h2>
-              <p>
-                <strong>All the dApps, tools, integrations, partners and more, in one place.</strong>
-              </p>
-              <Button big highlight url="https://alph.land">
-                See all apps
-              </Button>
-            </TextElement>
-          </SubpageImageHeroSection>
+      <SubpageSection isCentered>
+        <TextElement isCentered>
+          <h2>
+            <GradientText>Build</GradientText> on Alephium
+          </h2>
+          <p>
+            Alephium&apos;s scalable Proof-of-Less-Work and secure Smart Contracts give you the tools to{' '}
+            <strong>build better, faster and safer.</strong>
+          </p>
+        </TextElement>
 
-          <SubpageSection isCentered bgColor="2">
-            <Glow position="bottom" />
-            <TextElement isCentered>
-              <h2>
-                <GradientText>Build</GradientText> on Alephium
-              </h2>
-              <p>
-                Alephium&apos;s scalable Proof-of-Less-Work and secure Smart Contracts give you the tools to{' '}
-                <strong>build better, faster and safer.</strong>
-              </p>
-            </TextElement>
-
-            <SubheaderContent isCentered>
-              <Grid columns={2} gap="small">
-                <TextCard url="https://docs.alephium.org/">
-                  <TextCardContent>
-                    <h3>Documentation</h3>
-                    <p>Documentation to get you going quick and easy.</p>
-                  </TextCardContent>
-                </TextCard>
-                <TextCard url="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md">
-                  <TextCardContent>
-                    <h3>Grants</h3>
-                    <p>
-                      You have an idea, but no funding?
-                      <br />
-                      We can help.
-                    </p>
-                  </TextCardContent>
-                </TextCard>
-              </Grid>
-
-              <SectionDivider />
-
-              <TextElement isCentered>
-                <h3>Guides and tutorials</h3>
-                <Button url="https://docs.alephium.org/ralph">Ralph Language</Button>
-                <Button url="https://docs.alephium.org/sdk">SDK</Button>
-                <Button url="https://www.youtube.com/playlist?list=PL8q8n0BHJS1PWP7t8ABECYdOaPM-hJmjx">
-                  Tutorials
-                </Button>
-              </TextElement>
-            </SubheaderContent>
-          </SubpageSection>
-
-          <SectionDivider double />
-
-          <SubpageImageHeroSection backgroundImage={mineImage} minHeight="500px">
-            <h2>
-              Mine ALPH.
-              <small>
-                <br />
-                Secure the Network.
-                <br />
-                Earn Rewards.
-              </small>
-            </h2>
-            <p>
-              <strong>ALPH mining is efficient, accessible, and built for long-term sustainability.</strong>
-            </p>
-            <Button big highlight url="https://docs.alephium.org/mining">
-              Start mining
-            </Button>
-          </SubpageImageHeroSection>
+        <SubheaderContent isCentered>
+          <Grid columns={2} gap="small">
+            <TextCard url="https://docs.alephium.org/">
+              <TextCardContent>
+                <h3>Documentation</h3>
+                <p>Documentation to get you going quick and easy.</p>
+              </TextCardContent>
+            </TextCard>
+            <TextCard url="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md">
+              <TextCardContent>
+                <h3>Grants</h3>
+                <p>
+                  You have an idea, but no funding?
+                  <br />
+                  We can help.
+                </p>
+              </TextCardContent>
+            </TextCard>
+          </Grid>
 
           <SectionDivider />
 
-          <SubpageSection>
-            <TextElement isCentered>
-              <h2>Not sure what to do first?</h2>
-              <p>
-                No worries! Join our community and explore, there are many ways you can leave your mark on Alephium.
-              </p>
-              <Button big highlight url="/communities">
-                See our communities
-              </Button>
-            </TextElement>
-          </SubpageSection>
-        </>
-      }
-    />
+          <TextElement isCentered>
+            <h3>Guides and tutorials</h3>
+            <Button url="https://docs.alephium.org/ralph">Ralph Language</Button>
+            <Button url="https://docs.alephium.org/sdk">SDK</Button>
+            <Button url="https://www.youtube.com/playlist?list=PL8q8n0BHJS1PWP7t8ABECYdOaPM-hJmjx">Tutorials</Button>
+          </TextElement>
+        </SubheaderContent>
+      </SubpageSection>
+
+      <SectionDivider border pageWidth />
+
+      <SubpageImageHeroSection backgroundImage={mineImage} minHeight="500px">
+        <h2>
+          Mine ALPH.
+          <small>
+            <br />
+            Secure the Network.
+            <br />
+            Earn Rewards.
+          </small>
+        </h2>
+        <p>
+          <strong>ALPH mining is efficient, accessible, and built for long-term sustainability.</strong>
+        </p>
+        <Button big highlight url="https://docs.alephium.org/mining">
+          Start mining
+        </Button>
+      </SubpageImageHeroSection>
+
+      <SectionDivider />
+
+      <SubpageSection>
+        <TextElement isCentered>
+          <h2>Not sure what to do first?</h2>
+          <p>No worries! Join our community and explore, there are many ways you can leave your mark on Alephium.</p>
+          <Button big highlight url="/communities">
+            See our communities
+          </Button>
+        </TextElement>
+      </SubpageSection>
+    </>
   )
 }
 
-export default CustomPage
+export default GetStartedPage
 
 const cardVariants = {
   hidden: { opacity: 0 },
@@ -270,15 +235,16 @@ const GetAlphSection = () => {
         </Button>
       </SubpageImageHeroSection>
 
+      <SectionDivider />
+
       <SubpageSection fullWidth>
-        <SubpageSection>
-          <TextElementStyled>
-            <h2>Get ALPH</h2>
-            <p>
-              The native token of Alephium. You can get it through your wallet, exchanges, other networks or your peers.
-            </p>
-          </TextElementStyled>
-        </SubpageSection>
+        <TextElementStyled>
+          <h2>Get ALPH</h2>
+          <p>
+            The native token of Alephium. You can get it through your wallet, exchanges, other networks or your peers.
+          </p>
+        </TextElementStyled>
+
         <CardsHorizontalScroller cardWidth={CARD_WIDTH} cardGap={CARD_GAP} animateCards additionalLeftPadding>
           <TextCard>
             <TextCardContent>
@@ -433,6 +399,5 @@ const EarnALPHSection = () => {
 
 const TextElementStyled = styled(TextElement)`
   width: var(--page-width);
-  padding-bottom: 0;
   margin: 0 auto;
 `

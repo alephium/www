@@ -45,7 +45,7 @@ const itemVariants: Variants = {
 export const BentoLayout: React.FC<BentoLayoutProps> = ({
   children,
   columns = 4,
-  gap = 'medium',
+  gap = 'small',
   animateItems = true,
   className
 }) => {
@@ -83,9 +83,9 @@ const BentoContainer = styled(motion.div)<{
   $columns: number
   $gap: 'small' | 'medium' | 'large'
 }>`
-  display: grid !important;
-  grid-template-columns: repeat(${({ $columns }) => $columns}, 1fr) !important;
-  grid-auto-rows: 1fr !important;
+  display: grid;
+  grid-template-columns: repeat(${({ $columns }) => $columns}, 1fr);
+  grid-auto-rows: 1fr;
   gap: ${({ $gap }) => {
     switch ($gap) {
       case 'small':
@@ -95,18 +95,19 @@ const BentoContainer = styled(motion.div)<{
       default:
         return 'var(--spacing-4)'
     }
-  }} !important;
+  }};
   width: 100%;
   min-height: 400px;
 
   @media ${deviceBreakPoints.mobile} {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: var(--spacing-3) !important;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: var(--spacing-3);
   }
 
   @media ${deviceBreakPoints.ipad} {
-    grid-template-columns: 1fr !important;
-    gap: var(--spacing-3) !important;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-3);
   }
 `
 
@@ -118,9 +119,9 @@ const BentoItemStyled = styled(motion.div)<{
   $colSpan: number
   $rowSpan: number
 }>`
-  grid-column: span ${({ $colSpan }) => Math.min($colSpan, 4)} !important;
-  grid-row: span ${({ $rowSpan }) => Math.min($rowSpan, 4)} !important;
-  display: flex !important;
+  grid-column: span ${({ $colSpan }) => Math.min($colSpan, 4)};
+  grid-row: span ${({ $rowSpan }) => Math.min($rowSpan, 4)};
+  display: flex;
   flex-direction: column;
   overflow: hidden;
 
@@ -138,6 +139,12 @@ const BentoItemStyled = styled(motion.div)<{
   @media ${deviceBreakPoints.mobile} {
     grid-column: span 1 !important;
     grid-row: span 1 !important;
+
+    /* On mobile, let cards fit their content instead of forcing 100% height */
+    > * {
+      height: auto !important;
+      flex: none;
+    }
   }
 
   @media ${deviceBreakPoints.ipad} {

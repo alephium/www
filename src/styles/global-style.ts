@@ -86,7 +86,7 @@ const GlobalStyle = createGlobalStyle`
     --radius-small: 7px;
     --radius: 10px;
     --radius-big: 14px;
-    --radius-huge: 40px;
+    --radius-huge: 28px;
     --radius-full: 9999px;
 
     --fontFamily-sans: "InterDisplay", "Geist", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
@@ -143,7 +143,7 @@ const GlobalStyle = createGlobalStyle`
     --color-grey-750: #2c2c2c;
     --color-grey-800: #282828;
     --color-grey-850: #232323;
-    --color-grey-900: #191919;
+    --color-grey-900: #1c1c1c;
     --color-grey-950: #121212;
     --color-black: #000;
     --color-salmon: #ff5d51;

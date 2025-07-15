@@ -238,8 +238,7 @@ const Text = styled.div`
   ${({ isMajor }) =>
     isMajor &&
     css`
-      background: ${({ theme }) =>
-        `linear-gradient(30deg, ${theme.palette3} 0%, ${theme.palette5} 50%, ${theme.palette4} 60%, ${theme.palette5} 70%, ${theme.palette6} 100%)`};
+      background: ${({ theme }) => `linear-gradient(30deg, ${theme.palette1} 0%, ${theme.palette6} 100%)`};
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -271,8 +270,7 @@ const Container = styled.div<{ detailed: boolean }>`
     ${({ detailed }) =>
       !detailed &&
       css`
-        background: ${({ theme }) =>
-          `linear-gradient(30deg, ${theme.palette3} 0%, ${theme.palette5} 50%, ${theme.palette4} 60%, ${theme.palette5} 70%, ${theme.palette6} 100%)`};
+        background: ${({ theme }) => `linear-gradient(30deg, ${theme.palette4} 0%, ${theme.palette5} 100%)`};
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;

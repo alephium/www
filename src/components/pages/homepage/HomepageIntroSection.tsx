@@ -11,12 +11,18 @@ import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextCard from '../../customPageComponents/TextCard'
 import TextCardContent from '../../customPageComponents/TextCardContent'
 import TextElement from '../../customPageComponents/TextElement'
+import GradientText from '../../GradientText'
 
 export const homepageIntroQuery = graphql`
   query HomepageIntro {
-    lightRays: file(relativePath: { eq: "light-rays.png" }) {
+    treasureImage: file(relativePath: { eq: "treasure.png" }) {
       childImageSharp {
         gatsbyImageData(quality: 100)
+      }
+    }
+    mineImage: file(relativePath: { eq: "mine.png" }) {
+      childImageSharp {
+        gatsbyImageData(quality: 100, transformOptions: { cropFocus: ENTROPY })
       }
     }
     stream: file(relativePath: { eq: "stream.png" }) {
@@ -50,9 +56,10 @@ interface Card {
 
 const HomepageIntroSection = () => {
   const theme = useTheme()
-  const { lightRays, stream, greenWater, goldStream } = useStaticQuery<Queries.HomepageIntroQuery>(homepageIntroQuery)
+  const { treasureImage, stream, greenWater, mineImage } =
+    useStaticQuery<Queries.HomepageIntroQuery>(homepageIntroQuery)
 
-  const hardcodedCards = useMemo<Card[]>(
+  const cardsData = useMemo<Card[]>(
     () => [
       {
         title: 'Wallets',
@@ -62,7 +69,7 @@ const HomepageIntroSection = () => {
           </>
         ),
         actionText: 'Wallets',
-        image: lightRays?.childImageSharp?.gatsbyImageData,
+        image: treasureImage?.childImageSharp?.gatsbyImageData,
         link: {
           url: '/wallets'
         },
@@ -104,7 +111,7 @@ const HomepageIntroSection = () => {
           </>
         ),
         actionText: 'Start Mining',
-        image: goldStream?.childImageSharp?.gatsbyImageData,
+        image: mineImage?.childImageSharp?.gatsbyImageData,
         link: {
           url: 'https://docs.alephium.org/mining'
         },
@@ -112,11 +119,11 @@ const HomepageIntroSection = () => {
       }
     ],
     [
-      lightRays?.childImageSharp?.gatsbyImageData,
+      treasureImage?.childImageSharp?.gatsbyImageData,
       theme.textPrimary,
       stream?.childImageSharp?.gatsbyImageData,
       greenWater?.childImageSharp?.gatsbyImageData,
-      goldStream?.childImageSharp?.gatsbyImageData
+      mineImage?.childImageSharp?.gatsbyImageData
     ]
   )
 
@@ -127,44 +134,47 @@ const HomepageIntroSection = () => {
         <p>Dive into the Alephium ecosystem 🐠</p>
       </TextElement>
       <SubheaderContent>
-        <BentoLayout columns={4} gap="medium" animateItems={true}>
+        <BentoLayout columns={4} animateItems={true}>
           <BentoItem colSpan={2} rowSpan={2}>
-            <TextCard url={hardcodedCards[0].link.url}>
+            <TextCard url={cardsData[0].link.url}>
+              <CardImage image={cardsData[0].image} />
               <TextCardContent>
-                <CardImage image={hardcodedCards[0].image} />
                 <TextElement>
-                  <h4 style={{ color: hardcodedCards[0].color }}>{hardcodedCards[0].title}</h4>
-                  <p>{hardcodedCards[0].description}</p>
+                  <h4 style={{ color: cardsData[0].color }}>{cardsData[0].title}</h4>
+                  <p>{cardsData[0].description}</p>
                 </TextElement>
               </TextCardContent>
             </TextCard>
           </BentoItem>
           <BentoItem colSpan={1} rowSpan={1}>
-            <TextCard url={hardcodedCards[1].link.url}>
+            <TextCard url={cardsData[1].link.url}>
               <TextCardContent>
                 <TextElement>
-                  <h4 style={{ color: hardcodedCards[1].color }}>{hardcodedCards[1].title}</h4>
-                  <p>{hardcodedCards[1].description}</p>
+                  <h4>
+                    <GradientText>{cardsData[1].title}</GradientText>
+                  </h4>
+                  <p>{cardsData[1].description}</p>
+                </TextElement>
+              </TextCardContent>
+            </TextCard>
+          </BentoItem>
+          <BentoItem colSpan={1} rowSpan={2}>
+            <TextCard url={cardsData[3].link.url}>
+              <CardImage image={cardsData[3].image} zoom={{ scale: 1.8, x: 70, y: 30 }} />
+              <TextCardContent>
+                <TextElement>
+                  <h4 style={{ color: cardsData[3].color }}>{cardsData[3].title}</h4>
+                  <p>{cardsData[3].description}</p>
                 </TextElement>
               </TextCardContent>
             </TextCard>
           </BentoItem>
           <BentoItem colSpan={1} rowSpan={1}>
-            <TextCard url={hardcodedCards[2].link.url}>
+            <TextCard url={cardsData[2].link.url}>
               <TextCardContent>
                 <TextElement>
-                  <h4 style={{ color: hardcodedCards[2].color }}>{hardcodedCards[2].title}</h4>
-                  <p>{hardcodedCards[2].description}</p>
-                </TextElement>
-              </TextCardContent>
-            </TextCard>
-          </BentoItem>
-          <BentoItem colSpan={2} rowSpan={1}>
-            <TextCard url={hardcodedCards[3].link.url}>
-              <TextCardContent>
-                <TextElement>
-                  <h4 style={{ color: hardcodedCards[3].color }}>{hardcodedCards[3].title}</h4>
-                  <p>{hardcodedCards[3].description}</p>
+                  <h4 style={{ color: cardsData[2].color }}>{cardsData[2].title}</h4>
+                  <p>{cardsData[2].description}</p>
                 </TextElement>
               </TextCardContent>
             </TextCard>

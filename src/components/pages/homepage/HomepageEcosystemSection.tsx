@@ -207,6 +207,7 @@ const HomepageEcosystemSection = () => {
         centerGlowColor={theme.palette4}
         peripheralGlowColor={theme.palette5}
         glowOpacity={0.2}
+        glowBottomOffset={0}
       >
         <LogosContainer ref={containerRef} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
           {isInitialized &&
@@ -256,7 +257,7 @@ const HomepageEcosystemSection = () => {
             Explore on alph.land
           </Button>
         </TextElement>
-        <ConcentricEllipses baseColor={theme.palette4} />
+        <ConcentricEllipses baseColor={theme.palette4} bottomOffset="50" />
       </GlowingContainer>
     </SubpageSection>
   )

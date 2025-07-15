@@ -7,9 +7,14 @@ interface CardImageProps {
   image?: IGatsbyImageData
   src?: string
   className?: string
+  zoom?: {
+    scale?: number
+    x?: number
+    y?: number
+  }
 }
 
-const CardImage = ({ image, src, className }: CardImageProps) => {
+const CardImage = ({ image, src, className, zoom }: CardImageProps) => {
   if (!src && !image) return null
 
   return (
@@ -17,17 +22,19 @@ const CardImage = ({ image, src, className }: CardImageProps) => {
       <CardImageStyled className={className}>
         {image ? (
           <>
-            <GatsbyImageWrapper
-              image={image}
-              style={{ height: '100%' }}
-              objectFit="contain"
-              objectPosition="left"
-              loading="lazy"
-              alt="Card image"
-            />
+            <GatsbyImageWrapper image={image} objectFit="cover" loading="lazy" alt="Card image" zoom={zoom} />
           </>
         ) : (
-          <img src={src} alt="Card image" style={{ objectFit: 'contain', objectPosition: 'left' }} />
+          <img
+            src={src}
+            alt="Card image"
+            style={{
+              objectFit: 'cover',
+              transform: zoom ? `scale(${zoom.scale || 1.5})` : undefined,
+              transformOrigin: 'center',
+              objectPosition: zoom ? `${zoom.x || 30}% ${zoom.y || -30}%` : 'center'
+            }}
+          />
         )}
       </CardImageStyled>
     </>
@@ -38,9 +45,9 @@ export default CardImage
 
 const CardImageStyled = styled.div<{ className?: string }>`
   position: relative;
-  width: 100%;
-  height: 150px;
-  border-radius: var(--radius-small);
+  margin: var(--spacing-1);
+  border-radius: calc(var(--radius-big) - var(--spacing-1));
+  height: 200px;
   overflow: hidden;
   display: flex;
   align-items: center;

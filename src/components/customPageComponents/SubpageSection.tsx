@@ -34,7 +34,6 @@ const SubpageSectionStyled = styled(PageSectionContainer)<SubpageSectionProps>`
   padding-top: ${({ noTopPadding }) => (noTopPadding ? '0' : 'var(--spacing-10)')};
   padding-bottom: ${({ noBottomPadding }) => (noBottomPadding ? '0' : 'var(--spacing-10)')};
   background-color: ${({ theme, bgColor }) => (bgColor ? theme[`background${bgColor}`] : 'transparent')};
-  border-radius: ${({ fullWidth }) => (fullWidth ? '0' : 'var(--radius-huge)')};
   overflow: ${({ overflow }) => overflow || 'hidden'};
 
   @media ${deviceBreakPoints.mobile} {

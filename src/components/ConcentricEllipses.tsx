@@ -5,9 +5,10 @@ import { deviceBreakPoints } from '../styles/global-style'
 
 interface ConcentricEllipsesProps {
   baseColor?: string
+  bottomOffset?: string
 }
 
-const ConcentricEllipses = ({ baseColor }: ConcentricEllipsesProps) => {
+const ConcentricEllipses = ({ baseColor, bottomOffset = '-15%' }: ConcentricEllipsesProps) => {
   const numEllipses = 12
   const baseWidth = 400
   const baseHeight = 350
@@ -25,7 +26,7 @@ const ConcentricEllipses = ({ baseColor }: ConcentricEllipsesProps) => {
   })
 
   return (
-    <EllipseContainer>
+    <EllipseContainer bottomOffset={bottomOffset}>
       {ellipseConfigs.map(({ width, height, opacity }, index) => (
         <Ellipse key={index} width={width} height={height} delay={index} opacity={opacity} baseColor={baseColor} />
       ))}
@@ -33,9 +34,9 @@ const ConcentricEllipses = ({ baseColor }: ConcentricEllipsesProps) => {
   )
 }
 
-const EllipseContainer = styled.div`
+const EllipseContainer = styled.div<{ bottomOffset: string }>`
   position: absolute;
-  bottom: -15%;
+  bottom: ${({ bottomOffset }) => bottomOffset};
   left: 50%;
   transform: translateX(-50%);
   pointer-events: none;

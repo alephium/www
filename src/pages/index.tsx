@@ -55,7 +55,7 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => (
 
         <HomepageIntroSection />
 
-        <SectionDivider double border pageWidth />
+        <SectionDivider double />
 
         <HomepageEcosystemSection />
 
@@ -108,7 +108,7 @@ export default IndexPage
 const BottomBackgroundImageContainer = styled.div`
   position: absolute;
   inset: 0;
-  opacity: 0.5;
+  opacity: 1;
   mask-image: linear-gradient(to bottom, transparent, black 200px);
   -webkit-mask-image: linear-gradient(to bottom, transparent, black 200px);
 

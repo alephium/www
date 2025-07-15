@@ -5,6 +5,7 @@ import styled from 'styled-components'
 
 import Column from '../../../components/Columns/Column'
 import NumbersInfo from '../../../components/NumbersInfo'
+import { deviceBreakPoints } from '../../../styles/global-style'
 import { formatNumberForDisplay } from '../../../utils/numbers'
 import Button from '../../Button'
 import Card from '../../Card'
@@ -268,6 +269,10 @@ const MainContainer = styled.div`
 
   > * {
     flex: 1;
+  }
+
+  @media ${deviceBreakPoints.mobile} {
+    flex-direction: column;
   }
 `
 

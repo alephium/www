@@ -148,8 +148,9 @@ const TextElement = styled.div<TextElementProps>`
   }
 
   > h4 {
-    font-size: var(--fontSize-28);
+    font-size: var(--fontSize-32);
     line-height: var(--lineHeight-36);
+    font-weight: var(--fontWeight-semiBold);
 
     ${({ isSmall }) =>
       isSmall &&
@@ -161,7 +162,7 @@ const TextElement = styled.div<TextElementProps>`
 
   * strong {
     color: ${({ theme }) => theme.textPrimary};
-    font-weight: inherit;
+    font-weight: var(--fontWeight-semiBold);
   }
 
   > label {

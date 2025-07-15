@@ -11,6 +11,7 @@ interface GlowingContainerProps {
   centerGlowColor?: string
   peripheralGlowColor?: string
   glowOpacity?: number
+  glowBottomOffset?: number
   style?: CSSProperties
 }
 
@@ -20,6 +21,7 @@ const GlowingContainer = ({
   centerGlowColor,
   peripheralGlowColor,
   glowOpacity,
+  glowBottomOffset,
   style
 }: GlowingContainerProps) => {
   const theme = useTheme()
@@ -37,7 +39,11 @@ const GlowingContainer = ({
   return (
     <EddyBackgroundContainer className={className} style={style}>
       <BottomGradientContainer
-        style={{ backgroundImage: bottomGradient, transformOrigin: '50% 100%' }}
+        style={{
+          backgroundImage: bottomGradient,
+          transformOrigin: '50% 100%',
+          bottom: `${glowBottomOffset}px`
+        }}
         initial={{ scaleX: 0.1, scaleY: 0.1, opacity: 0 }}
         animate={{
           scaleX: 0.8,
@@ -69,7 +75,6 @@ const EddyBackgroundContainer = styled.div`
 
 const BottomGradientContainer = styled(motion.div)`
   position: absolute;
-  bottom: -50px;
   left: 0;
   width: 100%;
   height: 100%;

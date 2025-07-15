@@ -116,7 +116,6 @@ const CardsHorizontalScroller = ({
 const StatsContainer = styled.div`
   width: 100%;
   box-sizing: border-box;
-  padding-top: var(--spacing-4);
   position: relative;
 `
 

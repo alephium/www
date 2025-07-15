@@ -7,7 +7,9 @@ import { deviceBreakPoints } from '../../../styles/global-style'
 import { isMobile } from '../../../utils/misc'
 import Badge from '../../Badge'
 import Button from '../../Button'
+import CardFooterButtonContainer from '../../common/CardFooterButtonContainer'
 import TextElement from '../../customPageComponents/TextElement'
+import GradientText from '../../GradientText'
 
 const HomepageNewsPopup = () => {
   const [isMounted, setIsMounted] = useState(false)
@@ -70,15 +72,18 @@ const HomepageNewsPopup = () => {
           <TextElement isBodySmall noHeadingsMargins>
             <h2>Danube Upgrade 🌊</h2>
             <p>
-              A major milestone towards true Web3.
-              <br />
-              <strong>Going live soon.</strong>
+              <strong>
+                <GradientText>LIVE TODAY</GradientText>
+              </strong>
+              <br />A major milestone towards true Web3.
             </p>
           </TextElement>
         </NewsCardContent>
-        <Button squared url="https://x.com/alephium/status/1920780688313233634">
-          Learn more about Danube
-        </Button>
+        <CardFooterButtonContainer>
+          <Button squared url="https://x.com/alephium/status/1920780688313233634">
+            Learn more about Danube
+          </Button>
+        </CardFooterButtonContainer>
       </NewsCard>
     </NewsCardContainer>
   )
@@ -109,7 +114,7 @@ const NewsCard = styled(motion.div)<{ border?: boolean }>`
   width: 400px;
   display: flex;
   flex-direction: column;
-  border: 1px solid ${({ theme }) => theme.borderPrimary};
+  border: 1px solid ${({ theme }) => theme.palette5};
   background-color: ${({ theme }) => colord(theme.background1).lighten(0.15).alpha(0.9).toHex()};
   backdrop-filter: blur(60px) saturate(3) brightness(1.2);
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, ${({ theme }) => (theme.name === 'light' ? 0.1 : 0.3)});

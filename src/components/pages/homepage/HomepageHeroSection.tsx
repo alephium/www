@@ -20,7 +20,7 @@ const HomepageHeroSection = () => {
 
   return (
     <SectionWrapper style={{ opacity }}>
-      <SubpageSectionStyled noTopPadding bgColor="3" wide>
+      <SubpageSectionStyled noTopPadding bgColor="3" fullWidth>
         <GlowingContainer>
           <ConcentricEllipses />
         </GlowingContainer>

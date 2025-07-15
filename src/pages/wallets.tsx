@@ -109,7 +109,7 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageSection fullWidth edgeGradient border="bottom">
+          <SubpageSection edgeGradient border="bottom">
             <TextElement isCentered>
               <h1>
                 Our Wallets,
@@ -125,7 +125,7 @@ const CustomPage = (props: PageProps) => {
 
           <SectionDivider />
 
-          <SubpageSection wide>
+          <SubpageSection>
             <SideBySide reverseOnMobile>
               <TextElement isBodySmall>
                 <h3>Mobile Wallet</h3>
@@ -208,7 +208,7 @@ const CustomPage = (props: PageProps) => {
 
           <SectionDivider />
 
-          <SubpageSection wide>
+          <SubpageSection>
             <SubheaderContent>
               <TextElement isCentered>
                 <h2>Hardware Wallet Support</h2>
@@ -357,8 +357,7 @@ const CarouselContainer = styled.div`
   background-color: ${({ theme }) => theme.background2};
   padding: var(--spacing-2);
   padding-bottom: var(--spacing-6);
-  border-radius: var(--radius);
-  border: 1px solid ${({ theme }) => theme.borderPrimary};
+  border-radius: var(--radius-big);
   box-sizing: border-box;
 
   .slick-dots {

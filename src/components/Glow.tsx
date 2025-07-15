@@ -4,6 +4,9 @@ type GradientPosition = 'top' | 'bottom' | 'left' | 'right' | 'top-left' | 'top-
 
 interface GlowProps {
   position?: GradientPosition
+  color?: string
+  radius?: number
+  opacity?: number
   className?: string
 }
 
@@ -16,7 +19,7 @@ const Glow = styled.div<GlowProps>`
   bottom: 0;
   z-index: 0;
 
-  ${({ position = 'bottom', theme }) => css`
+  ${({ position = 'bottom', color, radius = 20, opacity = 1, theme }) => css`
     &::before {
       content: '';
       position: absolute;
@@ -64,13 +67,13 @@ const Glow = styled.div<GlowProps>`
         : position.includes('bottom')
         ? '100%'
         : '50%'},
-        ${theme.palette1} 0%,
-        ${theme.palette6} 30%,
+        ${color || theme.palette1} 0%,
+        ${color || theme.palette6} 30%,
         transparent 60%
       );
       pointer-events: none;
-      opacity: 1;
-      filter: blur(20px) brightness(${theme.name === 'dark' ? 1.4 : 1});
+      opacity: ${opacity};
+      filter: blur(${radius}px) brightness(${theme.name === 'dark' ? 1.4 : 1});
     }
   `}
 `
