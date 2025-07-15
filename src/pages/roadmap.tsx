@@ -98,9 +98,9 @@ const ChangesSection = () => {
     <SubpageSection>
       <TextElement isCentered>
         <h2>
-          What changes are
+          What are the latest
           <br />
-          coming to Alephium?
+          changes in Alephium?
         </h2>
         <p>
           Danube isn&apos;t just an upgrade, it&apos;s <strong>the leap that enhances everything</strong> from wallet
