@@ -83,9 +83,9 @@ const GlobalStyle = createGlobalStyle`
     --spacing-35: 17.5rem;   // 280pt
 
     --radius-tiny: 4px;
-    --radius-small: 9px;
-    --radius: 12px;
-    --radius-big: 16px;
+    --radius-small: 7px;
+    --radius: 10px;
+    --radius-big: 14px;
     --radius-huge: 40px;
     --radius-full: 9999px;
 

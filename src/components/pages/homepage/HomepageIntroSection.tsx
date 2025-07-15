@@ -5,6 +5,7 @@ import { useTheme } from 'styled-components'
 
 import BentoLayout, { BentoItem } from '../../BentoLayout'
 import Card from '../../Card'
+import CardImage from '../../customPageComponents/CardImage'
 import SubheaderContent from '../../customPageComponents/SubheaderContent'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextCard from '../../customPageComponents/TextCard'
@@ -128,8 +129,9 @@ const HomepageIntroSection = () => {
       <SubheaderContent>
         <BentoLayout columns={4} gap="medium" animateItems={true}>
           <BentoItem colSpan={2} rowSpan={2}>
-            <TextCard url={hardcodedCards[0].link.url} border>
+            <TextCard url={hardcodedCards[0].link.url}>
               <TextCardContent>
+                <CardImage image={hardcodedCards[0].image} />
                 <TextElement>
                   <h4 style={{ color: hardcodedCards[0].color }}>{hardcodedCards[0].title}</h4>
                   <p>{hardcodedCards[0].description}</p>
@@ -138,7 +140,7 @@ const HomepageIntroSection = () => {
             </TextCard>
           </BentoItem>
           <BentoItem colSpan={1} rowSpan={1}>
-            <TextCard url={hardcodedCards[1].link.url} border>
+            <TextCard url={hardcodedCards[1].link.url}>
               <TextCardContent>
                 <TextElement>
                   <h4 style={{ color: hardcodedCards[1].color }}>{hardcodedCards[1].title}</h4>
@@ -148,7 +150,7 @@ const HomepageIntroSection = () => {
             </TextCard>
           </BentoItem>
           <BentoItem colSpan={1} rowSpan={1}>
-            <TextCard url={hardcodedCards[2].link.url} border>
+            <TextCard url={hardcodedCards[2].link.url}>
               <TextCardContent>
                 <TextElement>
                   <h4 style={{ color: hardcodedCards[2].color }}>{hardcodedCards[2].title}</h4>
@@ -158,7 +160,7 @@ const HomepageIntroSection = () => {
             </TextCard>
           </BentoItem>
           <BentoItem colSpan={2} rowSpan={1}>
-            <TextCard url={hardcodedCards[3].link.url} border>
+            <TextCard url={hardcodedCards[3].link.url}>
               <TextCardContent>
                 <TextElement>
                   <h4 style={{ color: hardcodedCards[3].color }}>{hardcodedCards[3].title}</h4>

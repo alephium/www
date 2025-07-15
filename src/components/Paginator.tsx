@@ -57,7 +57,7 @@ const DotContainer = styled.div`
   height: 10px;
   width: 10px;
   border-radius: 10px;
-  border: 3px solid white;
+  border: 3px solid ${({ theme }) => theme.textPrimary};
   cursor: pointer;
 `
 
@@ -65,7 +65,7 @@ const Dot = styled(motion.div)`
   height: 10px;
   width: 10px;
   border-radius: 10px;
-  background-color: white;
+  background-color: ${({ theme }) => theme.textPrimary};
 `
 
 const PausePlayIcon = styled.div`

@@ -238,6 +238,17 @@ const RealTimeLabel = styled.div`
     background: ${({ theme }) => theme.palette4};
     border-radius: 50%;
     display: inline-block;
+    animation: blink 2s ease-in-out infinite;
+  }
+
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.3;
+    }
   }
 `
 
