@@ -10,11 +10,8 @@ const HomepageCommunitySection = () => (
   <SubpageSection fullWidth>
     <CommunityMosaic />
     <TextElementStyled isCentered>
-      <h2 style={{ margin: 0 }}>
-        Be part of a <br />
-        bubbling community.
-      </h2>
-      <p>Check out our official and community-led channels.</p>
+      <h2 style={{ margin: 0 }}>Join a bubbling community.</h2>
+      <p>Check out the official and community-led channels.</p>
       <Button big highlight url="/communities">
         Get on board
       </Button>
@@ -31,10 +28,10 @@ const TextElementStyled = styled(TextElement)`
   transform: translate(-50%, -50%);
   z-index: 1;
   text-align: center;
-  background-color: ${({ theme }) => colord(theme.background1).alpha(0.8).toHex()};
+  background-color: ${({ theme }) => colord(theme.background1).alpha(0.85).toHex()};
   border-radius: var(--radius-big);
-  padding: var(--spacing-6) var(--spacing-12);
+  padding: var(--spacing-6) var(--spacing-8);
   border: 1px solid ${({ theme }) => theme.borderPrimary};
-  backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(30px) saturate(180%);
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 `

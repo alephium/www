@@ -7,6 +7,7 @@ import { deviceBreakPoints } from '../../../styles/global-style'
 import { lightTheme } from '../../../styles/themes'
 import AlephiumLogo from '../../AlephiumLogo'
 import Button from '../../Button'
+import ConcentricEllipses from '../../ConcentricEllipses'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextElement from '../../customPageComponents/TextElement'
 import GlowingContainer from '../../GlowingContainer'
@@ -19,7 +20,7 @@ const HomepageHeroSection = () => {
 
   return (
     <SectionWrapper style={{ opacity }}>
-      <SubpageSectionStyled noTopPadding bgColor="2" fullWidth>
+      <SubpageSectionStyled noTopPadding bgColor="3" wide>
         <GlowingContainer>
           <ConcentricEllipses />
         </GlowingContainer>
@@ -55,32 +56,6 @@ const HomepageHeroSection = () => {
   )
 }
 
-const ConcentricEllipses = () => {
-  const numEllipses = 12
-  const baseWidth = 400
-  const baseHeight = 350
-  const widthIncrement = 160
-  const heightIncrement = 100
-  const baseOpacity = 0.5
-  const opacityDecay = 0.075
-
-  const ellipseConfigs = Array.from({ length: numEllipses }, (_, index) => {
-    const width = baseWidth + index * widthIncrement
-    const height = baseHeight + index * heightIncrement
-    const opacity = Math.max(baseOpacity - index * opacityDecay, 0.05)
-
-    return { width, height, opacity }
-  })
-
-  return (
-    <EllipseContainer>
-      {ellipseConfigs.map(({ width, height, opacity }, index) => (
-        <Ellipse key={index} width={width} height={height} delay={index} opacity={opacity} />
-      ))}
-    </EllipseContainer>
-  )
-}
-
 export default HomepageHeroSection
 
 const SectionWrapper = styled(motion.div)`
@@ -93,7 +68,7 @@ const SubpageSectionStyled = styled(SubpageSection)`
   padding-right: var(--spacing-4);
   padding-left: var(--spacing-4);
   overflow: visible;
-  min-height: 55vh;
+  min-height: 65vh;
   gap: var(--spacing-4);
   position: relative;
   overflow: hidden;
@@ -104,8 +79,14 @@ const SubpageSectionStyled = styled(SubpageSection)`
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    box-shadow: inset 0 -2px 0 2px ${({ theme }) => theme.textPrimary};
+    height: 3px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      ${({ theme }) => theme.textPrimary} 15%,
+      ${({ theme }) => theme.textPrimary} 85%,
+      transparent 100%
+    );
     mix-blend-mode: overlay;
     opacity: 0.5;
     pointer-events: none;
@@ -120,47 +101,6 @@ const TopSection = styled.div`
   gap: var(--spacing-4);
   flex: 1;
   position: relative;
-`
-
-const EllipseContainer = styled.div`
-  position: absolute;
-  bottom: -15%;
-  left: 50%;
-  transform: translateX(-50%);
-  pointer-events: none;
-  z-index: 0;
-`
-
-const Ellipse = styled.span<{ width: number; height: number; delay: number; opacity: number }>`
-  position: absolute;
-  border: 2px dashed
-    ${({ theme }) =>
-      colord(theme.textPrimary)
-        .alpha(theme.name === 'dark' ? 0.25 : 0.2)
-        .toHex()};
-  border-radius: 50%;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: ${({ width }) => width}px;
-  height: ${({ height }) => height}px;
-  opacity: ${({ opacity }) => opacity};
-  animation: pulseEllipse 6s ease-in-out infinite ${({ delay }) => delay}s;
-
-  @keyframes pulseEllipse {
-    0%,
-    100% {
-      transform: translateX(-50%) scale(1);
-    }
-    50% {
-      transform: translateX(-50%) scale(1.05);
-    }
-  }
-
-  @media ${deviceBreakPoints.mobile} {
-    width: ${({ width }) => width * 0.75}px;
-    height: ${({ height }) => height * 0.75}px;
-  }
 `
 
 const Buttons = styled.div`

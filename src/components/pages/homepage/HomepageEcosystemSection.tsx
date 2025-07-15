@@ -1,10 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
-import styled from 'styled-components'
+import styled, { useTheme } from 'styled-components'
 
 import { deviceBreakPoints } from '../../../styles/global-style'
 import Button from '../../Button'
+import ConcentricEllipses from '../../ConcentricEllipses'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextElement from '../../customPageComponents/TextElement'
+import GlowingContainer from '../../GlowingContainer'
 import SectionDivider from '../../SectionDivider'
 
 interface LogoPosition {
@@ -15,6 +17,7 @@ interface LogoPosition {
 }
 
 const HomepageEcosystemSection = () => {
+  const theme = useTheme()
   const [dapps, setDapps] = useState<Array<{ name: string; media: { logoUrl: string } }>>([])
   const [isLoading, setIsLoading] = useState(true)
   const [isInitialized, setIsInitialized] = useState(false)
@@ -198,15 +201,13 @@ const HomepageEcosystemSection = () => {
   }
 
   return (
-    <SubpageSection wide bgColor="1">
-      <div style={{ position: 'relative', zIndex: 1 }}>
-        <TextElement isCentered>
-          <h2>Built on Alephium.</h2>
-          <p>
-            <strong>Alephium is home to hundreds of innovative dApps.</strong>
-          </p>
-        </TextElement>
-        <SectionDivider />
+    <SubpageSection fullWidth bgColor="3">
+      <GlowingContainer
+        style={{ position: 'relative', zIndex: 1 }}
+        centerGlowColor={theme.palette4}
+        peripheralGlowColor={theme.palette5}
+        glowOpacity={0.2}
+      >
         <LogosContainer ref={containerRef} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
           {isInitialized &&
             dapps.map((dapp, index) => {
@@ -246,13 +247,17 @@ const HomepageEcosystemSection = () => {
                 </LogoWrapper>
               )
             })}
-          <CenterButtonWrapper>
-            <Button big highlight url="https://alph.land">
-              Explore
-            </Button>
-          </CenterButtonWrapper>
         </LogosContainer>
-      </div>
+        <SectionDivider double />
+        <TextElement isCentered>
+          <h2>Built on Alephium.</h2>
+          <p>Alephium is home to hundreds of innovative dApps.</p>
+          <Button big highlight url="https://alph.land">
+            Explore on alph.land
+          </Button>
+        </TextElement>
+        <ConcentricEllipses baseColor={theme.palette4} />
+      </GlowingContainer>
     </SubpageSection>
   )
 }

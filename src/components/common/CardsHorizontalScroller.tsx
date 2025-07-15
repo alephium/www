@@ -217,9 +217,9 @@ const ScrollButton = styled.button`
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: var(--color-white);
+  background: ${({ theme }) => theme.background1};
   border: none;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -233,7 +233,7 @@ const ScrollButton = styled.button`
   }
 
   &:hover {
-    transform: scale(1.05);
+    opacity: 0.8;
   }
 
   &:active {
@@ -244,6 +244,7 @@ const ScrollButton = styled.button`
 const Arrow = styled.span`
   font-size: 24px;
   line-height: 1;
+  color: ${({ theme }) => theme.textPrimary};
 `
 
 export default CardsHorizontalScroller

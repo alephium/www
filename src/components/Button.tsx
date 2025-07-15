@@ -173,7 +173,7 @@ const StyledButton = styled(Button)`
   transition: all 0.1s ease-out;
 
   &:hover {
-    filter: saturate(120%);
+    filter: saturate(140%);
   }
 
   ${({ disabled }) =>

@@ -47,13 +47,15 @@ const IndexPage = (props: PageProps<Queries.IndexPageQuery>) => (
 
         <HomepageUSPSection />
 
+        <SectionDivider border pageWidth />
+
         <HomepageNumbersSection />
 
-        <SectionDivider double />
+        <SectionDivider border pageWidth />
 
         <HomepageIntroSection />
 
-        <SectionDivider double />
+        <SectionDivider double border pageWidth />
 
         <HomepageEcosystemSection />
 

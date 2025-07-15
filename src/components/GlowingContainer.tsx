@@ -1,6 +1,6 @@
 import { colord } from 'colord'
 import { motion } from 'framer-motion'
-import { ReactNode } from 'react'
+import { CSSProperties, ReactNode } from 'react'
 import styled, { DefaultTheme, useTheme } from 'styled-components'
 
 import { deviceBreakPoints } from '../styles/global-style'
@@ -8,27 +8,41 @@ import { deviceBreakPoints } from '../styles/global-style'
 interface GlowingContainerProps {
   className?: string
   children?: ReactNode
+  centerGlowColor?: string
+  peripheralGlowColor?: string
+  glowOpacity?: number
+  style?: CSSProperties
 }
 
-const GlowingContainer = ({ className, children }: GlowingContainerProps) => {
+const GlowingContainer = ({
+  className,
+  children,
+  centerGlowColor,
+  peripheralGlowColor,
+  glowOpacity,
+  style
+}: GlowingContainerProps) => {
   const theme = useTheme()
 
-  const bottomGradient = `radial-gradient(circle at 50% 100%, ${colord(theme.palette1).lighten(0.25).toHex()} 15%, ${
-    theme.palette1
-  } 25%, ${theme.palette1} 35%, ${colord(theme.palette6)
+  // Use provided colors or fall back to theme colors
+  const primaryColor = centerGlowColor || theme.palette1
+  const secondaryColor = peripheralGlowColor || theme.palette6
+
+  const bottomGradient = `radial-gradient(circle at 50% 100%, ${colord(primaryColor)
+    .lighten(0.25)
+    .toHex()} 15%, ${primaryColor} 25%, ${primaryColor} 35%, ${colord(secondaryColor)
     .alpha(theme.name === 'dark' ? 0.5 : 0.3)
     .toHex()} 45%, transparent 65%)`
 
   return (
-    <EddyBackgroundContainer className={className}>
-      <Background />
+    <EddyBackgroundContainer className={className} style={style}>
       <BottomGradientContainer
         style={{ backgroundImage: bottomGradient, transformOrigin: '50% 100%' }}
         initial={{ scaleX: 0.1, scaleY: 0.1, opacity: 0 }}
         animate={{
           scaleX: 0.8,
           scaleY: 0.6,
-          opacity: 1
+          opacity: glowOpacity || 1
         }}
         transition={{
           duration: 2,
@@ -51,13 +65,6 @@ const EddyBackgroundContainer = styled.div`
   position: absolute;
   inset: 0;
   z-index: 0;
-`
-
-const Background = styled.div`
-  position: absolute;
-  inset: 0;
-  background-color: ${({ theme }) => theme.background3};
-  pointer-events: none;
 `
 
 const BottomGradientContainer = styled(motion.div)`

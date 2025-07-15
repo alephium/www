@@ -1,4 +1,3 @@
-import { colord } from 'colord'
 import { motion, useMotionValue, useSpring, useTransform, Variants } from 'framer-motion'
 import { PointerEvent, ReactNode, useEffect, useRef } from 'react'
 import styled, { css, useTheme } from 'styled-components'
@@ -129,14 +128,11 @@ const GradientBorder = styled.div`
   border-radius: var(--radius-big);
   background: radial-gradient(
     circle at var(--gradient-x) var(--gradient-y),
-    ${({ theme }) => theme.borderPrimary} 10%,
-    ${({ theme }) => theme.palette6} 20%,
-    ${({ theme }) => theme.palette5} 30%,
-    ${({ theme }) => theme.palette3} 70%,
-    ${({ theme }) => theme.borderPrimary} 100%
+    ${({ theme }) => theme.palette4} 20%,
+    ${({ theme }) => theme.palette5} 70%
   );
-  filter: blur(3px) saturate(${({ theme }) => (theme.name === 'light' ? 1.2 : 1)})
-    brightness(${({ theme }) => (theme.name === 'light' ? 1 : 1.5)});
+  filter: saturate(${({ theme }) => (theme.name === 'light' ? 1.4 : 1)})
+    brightness(${({ theme }) => (theme.name === 'light' ? 1.3 : 1)});
   opacity: 0;
   pointer-events: none;
   z-index: -1;
@@ -147,9 +143,7 @@ const GradientBorder = styled.div`
     position: absolute;
     inset: 3px;
     border-radius: calc(var(--radius-big) - 2px);
-    background-color: ${({ theme }) => colord(theme.background1).alpha(1).toHex()};
-    backdrop-filter: blur(100px) saturate(180%);
-    -webkit-backdrop-filter: blur(100px) saturate(180%);
+    background-color: ${({ theme }) => theme.background2};
     z-index: 0;
   }
 `

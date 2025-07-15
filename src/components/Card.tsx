@@ -23,12 +23,13 @@ const Card = ({ className, children, ...props }: CardProps) => {
 }
 
 export default styled(Card)`
+  position: relative;
   padding: 41px 30px 25px 34px;
   border-radius: 20px;
-  background-color: ${({ theme }) => theme.background1};
+  background-color: ${({ theme }) => theme.background2};
   background-clip: padding-box;
   text-decoration: none;
+  overflow: hidden;
   ${({ shadow }) => shadow && 'box-shadow: 0px 22px 30px rgba(0, 0, 0, 0.47);'}
-
   transition: all 0.1s ease-out;
 `

@@ -1,7 +1,7 @@
 import { colord } from 'colord'
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
-import styled, { useTheme } from 'styled-components'
+import styled from 'styled-components'
 
 import { deviceBreakPoints } from '../../../styles/global-style'
 import { isMobile } from '../../../utils/misc'
@@ -10,7 +10,6 @@ import Button from '../../Button'
 import TextElement from '../../customPageComponents/TextElement'
 
 const HomepageNewsPopup = () => {
-  const theme = useTheme()
   const [isMounted, setIsMounted] = useState(false)
   const [isVisible, setIsVisible] = useState(true)
 

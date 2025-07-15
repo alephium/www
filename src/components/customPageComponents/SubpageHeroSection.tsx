@@ -13,7 +13,7 @@ export interface SubpageHeroSectionProps extends React.HTMLAttributes<HTMLElemen
   bottomMargin?: boolean
   minHeight?: string
   split?: boolean
-  narrow?: boolean
+  wide?: boolean
 }
 
 const SubpageHeroSection = forwardRef<HTMLElement, SubpageHeroSectionProps>(function SubpageHeroSection(
@@ -42,7 +42,7 @@ const SubpageHeroSectionStyled = styled.section<SubpageHeroSectionProps>`
   min-height: ${({ split, minHeight }) => (split ? 'unset' : minHeight || '75vh')};
   margin: auto;
   margin-bottom: ${({ bottomMargin }) => (bottomMargin ? 'var(--spacing-10)' : '0')};
-  width: ${({ narrow }) => (narrow ? 'var(--page-width)' : '80vw')};
+  width: ${({ wide }) => (wide ? '80vw' : 'var(--page-width)')};
   overflow: hidden;
   display: flex;
   align-items: stretch;

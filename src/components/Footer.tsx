@@ -107,9 +107,9 @@ const FooterStyled = styled.div`
     bottom: 0;
     background: radial-gradient(
       circle at 0% 100%,
-      ${({ theme }) => theme.palette2} 0%,
-      ${({ theme }) => theme.palette4} 30%,
-      ${({ theme }) => theme.palette3} 60%,
+      ${({ theme }) => theme.palette1} 0%,
+      ${({ theme }) => theme.palette6} 30%,
+      ${({ theme }) => theme.palette4} 60%,
       transparent 65%
     );
     pointer-events: none;

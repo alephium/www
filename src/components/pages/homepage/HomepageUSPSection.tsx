@@ -4,8 +4,7 @@ import { graphql } from 'gatsby'
 import { useCallback, useEffect, useState } from 'react'
 import styled from 'styled-components'
 
-import Button from '../../Button'
-import CardFooterButtonContainer from '../../common/CardFooterButtonContainer'
+import Badge from '../../Badge'
 import CardsHorizontalScroller from '../../common/CardsHorizontalScroller'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextCard from '../../customPageComponents/TextCard'
@@ -91,13 +90,12 @@ const HomepageUSPSection = () => {
                 <strong> matching the speed of leading PoS networks without sacrificing decentralization.</strong>
               </p>
             </TextElement>
-            <CardFooterButtonContainer>
-              <SimpleLink
-                url="https://x.com/alephium/status/1920780688313233634"
-                showArrow
-                text="Discover the Danube upgrade"
-              />
-            </CardFooterButtonContainer>
+            <p>
+              <Badge color="palette4">New</Badge>
+              <SimpleLink url="https://x.com/alephium/status/1920780688313233634" showArrow highlight>
+                Discover the Danube upgrade
+              </SimpleLink>
+            </p>
           </TextCardContent>
         </TextCard>
         <TextCard>
@@ -113,11 +111,11 @@ const HomepageUSPSection = () => {
                 <strong>delivering high throughput and the simplicity of a single-chain environment.</strong>
               </p>
             </TextElement>
-            <CardFooterButtonContainer>
-              <Button squared url="https://docs.alephium.org/misc/Content/#blockflow">
-                Learn about Blockflow
-              </Button>
-            </CardFooterButtonContainer>
+            <SimpleLink
+              url="https://docs.alephium.org/misc/Content/#blockflow"
+              showArrow
+              text="Learn about Blockflow"
+            />
           </TextCardContent>
         </TextCard>
         <TextCard>
@@ -136,14 +134,11 @@ const HomepageUSPSection = () => {
                 <strong>prevent threats like reentrancy attacks, unlimited approvals, and flash loan exploits.</strong>
               </p>
             </TextElement>
-            <CardFooterButtonContainer>
-              <Button
-                squared
-                url="https://medium.com/@alephium/meet-alphred-a-virtual-machine-like-no-others-85ce86540025"
-              >
-                See why we're secure
-              </Button>
-            </CardFooterButtonContainer>
+            <SimpleLink
+              url="https://medium.com/@alephium/meet-alphred-a-virtual-machine-like-no-others-85ce86540025"
+              showArrow
+              text="See why we're secure"
+            />
           </TextCardContent>
         </TextCard>
         <TextCard>
@@ -163,11 +158,11 @@ const HomepageUSPSection = () => {
                 </strong>
               </p>
             </TextElement>
-            <CardFooterButtonContainer>
-              <Button squared url="https://docs.alephium.org/misc/Content/#proof-of-less-work">
-                Learn about PoLW
-              </Button>
-            </CardFooterButtonContainer>
+            <SimpleLink
+              url="https://docs.alephium.org/misc/Content/#proof-of-less-work"
+              showArrow
+              text="Learn about PoLW"
+            />
           </TextCardContent>
         </TextCard>
         <TextCard>
@@ -187,11 +182,11 @@ const HomepageUSPSection = () => {
                 protection.
               </p>
             </TextElement>
-            <CardFooterButtonContainer>
-              <Button squared url="https://docs.alephium.org/misc/Content/#stateful-utxo">
-                Learn about stateful UTXOs
-              </Button>
-            </CardFooterButtonContainer>
+            <SimpleLink
+              url="https://docs.alephium.org/misc/Content/#stateful-utxo"
+              showArrow
+              text="Learn about stateful UTXOs"
+            />
           </TextCardContent>
         </TextCard>
         <TextCard>
@@ -209,11 +204,11 @@ const HomepageUSPSection = () => {
                 , enabling efficient development and unlocking new possibilities for smart contracts, dApps, and tokens.
               </p>
             </TextElement>
-            <CardFooterButtonContainer>
-              <Button squared url="https://docs.alephium.org/misc/Content/#alphred-virtual-machine">
-                Learn about our VM
-              </Button>
-            </CardFooterButtonContainer>
+            <SimpleLink
+              url="https://docs.alephium.org/misc/Content/#alphred-virtual-machine"
+              showArrow
+              text="Learn about our VM"
+            />
           </TextCardContent>
         </TextCard>
       </CardsHorizontalScroller>

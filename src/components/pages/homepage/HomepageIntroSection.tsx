@@ -1,9 +1,10 @@
 import { graphql, useStaticQuery } from 'gatsby'
 import { IGatsbyImageData } from 'gatsby-plugin-image'
 import { ReactNode, useMemo } from 'react'
-import styled, { useTheme } from 'styled-components'
+import { useTheme } from 'styled-components'
 
-import CardsRow, { CardsRowSegment } from '../../customPageComponents/CardsRow'
+import BentoLayout, { BentoItem } from '../../BentoLayout'
+import Card from '../../Card'
 import SubheaderContent from '../../customPageComponents/SubheaderContent'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextCard from '../../customPageComponents/TextCard'
@@ -119,46 +120,57 @@ const HomepageIntroSection = () => {
   )
 
   return (
-    <SubpageSectionStyled id="intro" overflow="visible">
+    <SubpageSection id="intro" overflow="visible">
       <TextElement>
         <h2>Quick start</h2>
-        <p>Get in and start right away.</p>
+        <p>Dive into the Alephium ecosystem 🐠</p>
       </TextElement>
       <SubheaderContent>
-        <CardsRow>
-          <CardsRowSegment>
-            {hardcodedCards.slice(0, 2).map((card) => (
-              <TextCard border url={card.link.url} variants={cardVariants} key={card.title}>
-                <TextCardContent>
-                  <h4 style={{ color: card.color }}>{card.title}</h4>
-                  <p>{card.description}</p>
-                </TextCardContent>
-              </TextCard>
-            ))}
-          </CardsRowSegment>
-          <CardsRowSegment>
-            {hardcodedCards.slice(2, 4).map((card) => (
-              <TextCard border url={card.link.url} variants={cardVariants} key={card.title}>
-                <TextCardContent>
-                  <h4 style={{ color: card.color }}>{card.title}</h4>
-                  <p>{card.description}</p>
-                </TextCardContent>
-              </TextCard>
-            ))}
-          </CardsRowSegment>
-        </CardsRow>
+        <BentoLayout columns={4} gap="medium" animateItems={true}>
+          <BentoItem colSpan={2} rowSpan={2}>
+            <TextCard url={hardcodedCards[0].link.url} border>
+              <TextCardContent>
+                <TextElement>
+                  <h4 style={{ color: hardcodedCards[0].color }}>{hardcodedCards[0].title}</h4>
+                  <p>{hardcodedCards[0].description}</p>
+                </TextElement>
+              </TextCardContent>
+            </TextCard>
+          </BentoItem>
+          <BentoItem colSpan={1} rowSpan={1}>
+            <TextCard url={hardcodedCards[1].link.url} border>
+              <TextCardContent>
+                <TextElement>
+                  <h4 style={{ color: hardcodedCards[1].color }}>{hardcodedCards[1].title}</h4>
+                  <p>{hardcodedCards[1].description}</p>
+                </TextElement>
+              </TextCardContent>
+            </TextCard>
+          </BentoItem>
+          <BentoItem colSpan={1} rowSpan={1}>
+            <TextCard url={hardcodedCards[2].link.url} border>
+              <TextCardContent>
+                <TextElement>
+                  <h4 style={{ color: hardcodedCards[2].color }}>{hardcodedCards[2].title}</h4>
+                  <p>{hardcodedCards[2].description}</p>
+                </TextElement>
+              </TextCardContent>
+            </TextCard>
+          </BentoItem>
+          <BentoItem colSpan={2} rowSpan={1}>
+            <TextCard url={hardcodedCards[3].link.url} border>
+              <TextCardContent>
+                <TextElement>
+                  <h4 style={{ color: hardcodedCards[3].color }}>{hardcodedCards[3].title}</h4>
+                  <p>{hardcodedCards[3].description}</p>
+                </TextElement>
+              </TextCardContent>
+            </TextCard>
+          </BentoItem>
+        </BentoLayout>
       </SubheaderContent>
-    </SubpageSectionStyled>
+    </SubpageSection>
   )
 }
 
 export default HomepageIntroSection
-
-const SubpageSectionStyled = styled(SubpageSection)`
-  padding-top: var(--spacing-8);
-`
-
-const cardVariants = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1 }
-}

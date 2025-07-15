@@ -1,15 +1,13 @@
 import { addApostrophes, ExplorerClient } from '@alephium/sdk'
 import { HttpResponse } from '@alephium/sdk/api/explorer'
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import styled from 'styled-components'
 
 import Column from '../../../components/Columns/Column'
-import Columns from '../../../components/Columns/Columns'
 import NumbersInfo from '../../../components/NumbersInfo'
-import PageSectionContainer from '../../../components/PageSectionContainer'
 import { formatNumberForDisplay } from '../../../utils/numbers'
 import Button from '../../Button'
-import SubheaderContent from '../../customPageComponents/SubheaderContent'
+import Card from '../../Card'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextElement from '../../customPageComponents/TextElement'
 
@@ -59,8 +57,6 @@ const HomepageNumbersSection = () => {
   const [bridgeTVL, setBridgeTVL] = useState<number>()
   const [chainTVL, setChainTVL] = useState<number>()
   const [protocolsStakingTVL, setProtocolsStakingTVL] = useState<number>()
-
-  const boxRef = useRef<HTMLDivElement>(null)
 
   const updateStatsScalar = useCallback(
     (key: StatScalarKeys, value: StatScalar['value']) => {
@@ -183,56 +179,39 @@ const HomepageNumbersSection = () => {
 
   return (
     <SubpageSection>
-      <SubpageSection>
+      <MainContainer>
         <TextElement>
           <h2>Some Numbers.</h2>
           <p>Let the facts speak for themselves.</p>
-          <RealTimeLabel>Real time data</RealTimeLabel>
+          <ButtonContainer>
+            <Button url="https://explorer.alephium.org/" big highlight>
+              Check out our explorer
+            </Button>
+          </ButtonContainer>
         </TextElement>
-        <SubheaderContent>
-          <PageSectionContainer>
-            <ColumnsStyled>
-              {columns.map((column) => (
-                <NumbersColumn key={column.description}>
-                  <NumbersInfo {...column} />
-                </NumbersColumn>
-              ))}
-              {/*
-              <NumbersColumn>
-                <NumbersInfo
-                  description="Active addresses"
-                  value={activeAddresses?.toString()}
-                  isLoading={activeAddresses === undefined}
-                />
-              </NumbersColumn>
-            */}
-              <NumbersColumn>
-                <NumbersInfo
-                  description="Chain TVL"
-                  value={
-                    chainTVL && protocolsStakingTVL
-                      ? '$' + formatNumberForDisplay(chainTVL + protocolsStakingTVL).join('')
-                      : '-'
-                  }
-                  isLoading={bridgeTVL === undefined}
-                />
-              </NumbersColumn>
-              <NumbersColumn>
-                <NumbersInfo
-                  description="Bridged TVL"
-                  value={bridgeTVL ? '$' + formatNumberForDisplay(bridgeTVL).join('') : '-'}
-                  isLoading={bridgeTVL === undefined}
-                />
-              </NumbersColumn>
-            </ColumnsStyled>
-            <ButtonContainer>
-              <Button url="https://explorer.alephium.org/" big highlight>
-                Check out our explorer
-              </Button>
-            </ButtonContainer>
-          </PageSectionContainer>
-        </SubheaderContent>
-      </SubpageSection>
+        <NumbersContainer>
+          <RealTimeLabel>Real time data</RealTimeLabel>
+          {columns.map((column) => (
+            <NumbersInfo key={column.description} {...column} />
+          ))}
+          <NumbersColumn>
+            <NumbersInfo
+              description="Chain TVL"
+              value={
+                chainTVL && protocolsStakingTVL
+                  ? '$' + formatNumberForDisplay(chainTVL + protocolsStakingTVL).join('')
+                  : '-'
+              }
+              isLoading={bridgeTVL === undefined}
+            />
+          </NumbersColumn>
+          <NumbersInfo
+            description="Bridged TVL"
+            value={bridgeTVL ? '$' + formatNumberForDisplay(bridgeTVL).join('') : '-'}
+            isLoading={bridgeTVL === undefined}
+          />
+        </NumbersContainer>
+      </MainContainer>
     </SubpageSection>
   )
 }
@@ -243,10 +222,10 @@ const RealTimeLabel = styled.div`
   position: absolute;
   top: var(--spacing-3);
   right: var(--spacing-3);
-  background: ${({ theme }) => theme.background1};
+  background: ${({ theme }) => theme.textPrimary};
   padding: var(--spacing-1) var(--spacing-2);
   border-radius: var(--radius-small);
-  color: ${({ theme }) => theme.textSecondary};
+  color: ${({ theme }) => theme.background3};
   z-index: 1;
   display: flex;
   align-items: center;
@@ -254,9 +233,9 @@ const RealTimeLabel = styled.div`
 
   &::before {
     content: '';
-    width: 6px;
-    height: 6px;
-    background: ${({ theme }) => theme.palette1};
+    width: 8px;
+    height: 8px;
+    background: ${({ theme }) => theme.palette4};
     border-radius: 50%;
     display: inline-block;
   }
@@ -272,12 +251,21 @@ const NumbersColumn = styled(Column)`
   z-index: 1;
 `
 
-// const SubsectionTextHeaderStyled = styled(SubsectionTextHeader)`
-//   margin-bottom: var(--spacing-4);
-// `
+const MainContainer = styled.div`
+  display: flex;
+  gap: var(--spacing-12);
 
-const ColumnsStyled = styled(Columns)`
+  > * {
+    flex: 1;
+  }
+`
+
+const NumbersContainer = styled(Card)`
+  display: flex;
+  position: relative;
   align-items: baseline;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: var(--spacing-4);
+  background-color: ${({ theme }) => (theme.name === 'dark' ? theme.background2 : theme.background1)};
 `

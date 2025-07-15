@@ -1,21 +1,19 @@
-import { colord } from 'colord'
 import styled from 'styled-components'
 
 interface GradientTextProps {
   children: React.ReactNode
-  color?: string
+  color1?: string
+  color2?: string
   className?: string
 }
 
-const GradientText = ({ children, className }: GradientTextProps) => (
-  <GradientTextStyled className={className}>{children}</GradientTextStyled>
-)
+const GradientText = (props: GradientTextProps) => <GradientTextStyled {...props} />
 
-const GradientTextStyled = styled.span`
+const GradientTextStyled = styled.span<GradientTextProps>`
   background: radial-gradient(
     circle at 100% 0%,
-    ${({ theme, color }) => (color ? colord(color).lighten(0.1).toHex() : theme.palette4)} 0%,
-    ${({ theme, color }) => (color ? color : theme.palette5)} 40%
+    ${({ theme, color1 }) => (color1 ? color1 : theme.palette4)} 0%,
+    ${({ theme, color2 }) => (color2 ? color2 : theme.palette5)} 60%
   );
   background-clip: text;
   -webkit-background-clip: text;

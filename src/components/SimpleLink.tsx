@@ -111,12 +111,8 @@ const SimpleLinkComponent = ({
 const getGradient = (theme: DefaultTheme) => `
   radial-gradient(
     circle at var(--gradient-x) var(--gradient-y),
-    ${theme.textPrimary} 0%,
-    ${theme.palette1} 35%,
-    ${theme.palette2} 40%,
-    ${theme.textPrimary} 50%,
-    ${theme.palette1} 60%,
-    ${theme.palette4} 100%
+    ${theme.palette5} 15%,
+    ${theme.palette4} 70%
   )
 `
 
@@ -139,6 +135,10 @@ const highlightStyles = css<SimpleLinkProps>`
     pointer-events: none;
   }
 
+  &:hover {
+    color: ${({ theme }) => theme.palette4};
+  }
+
   &:hover::before {
     opacity: 1;
     background: ${({ theme }) => getGradient(theme)};
@@ -150,11 +150,6 @@ const highlightStyles = css<SimpleLinkProps>`
   &:hover::after {
     background: ${({ theme }) => getGradient(theme)};
   }
-
-  &:hover svg {
-    fill: currentColor;
-    color: transparent;
-  }
 `
 
 export default styled(SimpleLinkComponent)`
@@ -163,11 +158,6 @@ export default styled(SimpleLinkComponent)`
   text-decoration: ${({ highlight }) => (highlight ? 'underline' : 'dotted')};
   display: inline-block;
   font-size: var(--fontSize-18);
-
-  svg {
-    fill: ${({ theme, color }) => (color ? color : theme.link)};
-    vertical-align: middle;
-  }
 
   &:hover {
     cursor: pointer;
@@ -182,13 +172,9 @@ export default styled(SimpleLinkComponent)`
 const Anchor = styled.a<{ highlight?: boolean; color?: string }>`
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 5px;
   color: ${({ theme, color }) => (color ? color : theme.link)};
   text-decoration: ${({ highlight }) => (highlight ? 'underline' : 'dotted')};
-
-  svg {
-    fill: ${({ theme, color }) => (color ? color : theme.textPrimary)};
-  }
 
   &:hover {
     cursor: pointer;

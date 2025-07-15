@@ -13,12 +13,12 @@ export const darkTheme: DefaultTheme = {
 
   surface1: 'var(--color-grey-750)',
   surface2: 'var(--color-grey-900)',
-  background1: 'var(--color-grey-850)',
+  background1: 'var(--color-grey-900)',
   background2: 'var(--color-grey-950)',
-  background3: '#0d0d0d',
+  background3: '#000',
   backgroundContrast: 'var(--color-grey-800)',
 
-  borderPrimary: 'rgba(255, 255, 255, 0.08)',
+  borderPrimary: 'rgba(255, 255, 255, 0.1)',
 
   link: '#66a4fa',
   linkAlt: 'var(--color-grey-700)',
@@ -55,11 +55,11 @@ export const lightTheme: DefaultTheme = {
 
   separator: 'var(--color-grey-100)',
 
-  palette1: '#1485ea',
+  palette1: '#29a0f9',
   palette2: '#ffca42',
   palette3: '#5ade94',
-  palette4: '#ff89c6',
-  palette5: '#ff8fa3',
+  palette4: '#ff6eb9',
+  palette5: '#ff8587',
   palette6: '#a1e9ff'
 }
 
