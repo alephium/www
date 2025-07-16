@@ -17,7 +17,7 @@ const CustomPage = (props: PageProps) => (
     content={
       <>
         <SectionDivider />
-        <SubpageSection border edgeGradient>
+        <SubpageSection edgeGradient>
           <TextElement isCentered>
             <h1>Contact Us</h1>
             <p>
@@ -44,7 +44,7 @@ const CustomPage = (props: PageProps) => (
             <h3>Build with us</h3>
             <p>Not sure where to start? Dive into our documentation or apply for a grant.</p>
             <Button url="https://docs.alephium.org">Documentation</Button>
-            <Button url="/grants">Grants</Button>
+            <Button url="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md">Grants</Button>
           </TextElement>
         </SubpageSection>
       </>

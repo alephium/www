@@ -22,12 +22,15 @@ const HomepageHeroSection = () => (
       </GlowingContainer>
       <TopSection>
         <TextElementWithReflection isCentered>
-          <h1>Web3, as Promised.</h1>
+          <h1>
+            The Web3
+            <br />
+            you were promised.
+          </h1>
           <p>
-            Easy to build on. Safe to use. Ready to grow. <br />
-            <strong>
-              <b>No tradeoffs.</b>
-            </strong>
+            Easy to build on. Safe to use. Ready to grow.
+            <br />
+            <strong>No tradeoffs.</strong>
           </p>
         </TextElementWithReflection>
 

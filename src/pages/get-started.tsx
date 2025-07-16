@@ -4,7 +4,6 @@ import styled, { useTheme } from 'styled-components'
 import Button from '../components/Button'
 import CardFooterButtonContainer from '../components/common/CardFooterButtonContainer'
 import CardsHorizontalScroller from '../components/common/CardsHorizontalScroller'
-import CardsRow, { CardsRowSegment } from '../components/customPageComponents/CardsRow'
 import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
@@ -21,13 +20,7 @@ const CARD_GAP = 24
 
 const exchangesQuery = graphql`
   query GetStartedPage {
-    heroImage: file(relativePath: { eq: "mountain-paths.png" }) {
-      ...HeroImage
-    }
-    heroVideo: file(relativePath: { eq: "mountain-paths-scrub.mp4" }) {
-      publicURL
-    }
-    ecosystemImage: file(relativePath: { eq: "ecosystem-islands.png" }) {
+    ecosystemImage: file(relativePath: { eq: "rock-pile.png" }) {
       childImageSharp {
         gatsbyImageData(quality: 80)
       }
@@ -40,35 +33,6 @@ const exchangesQuery = graphql`
     mineImage: file(relativePath: { eq: "mine.png" }) {
       childImageSharp {
         gatsbyImageData(quality: 100)
-      }
-    }
-    desktopWallet: file(relativePath: { eq: "screenshots/desktop-wallet/desktop-wallet-1.png" }) {
-      childImageSharp {
-        gatsbyImageData(width: 500, quality: 100)
-      }
-    }
-    extensionWallet: file(relativePath: { eq: "screenshots/extension-wallet/extension-1.png" }) {
-      childImageSharp {
-        gatsbyImageData(height: 280, quality: 100)
-      }
-    }
-    mobileWallet: file(relativePath: { eq: "screenshots/mobile-wallet/mobile-wallet-1.png" }) {
-      childImageSharp {
-        gatsbyImageData(height: 280, quality: 100)
-      }
-    }
-    exchangesContent: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/exchanges.md/" } }) {
-      nodes {
-        frontmatter {
-          exchanges {
-            title
-            description
-            url
-            logo {
-              publicURL
-            }
-          }
-        }
       }
     }
   }
@@ -106,9 +70,8 @@ const PageContent = () => {
         <TextElement isCentered>
           <h2>
             <GradientText color1={theme.palette6} color2={theme.palette1}>
-              Explore
-            </GradientText>{' '}
-            the ecosystem
+              Explore the ecosystem
+            </GradientText>
           </h2>
           <p>
             <strong>All the dApps, tools, integrations, partners and more, in one place.</strong>
@@ -124,7 +87,7 @@ const PageContent = () => {
       <SubpageSection isCentered>
         <TextElement isCentered>
           <h2>
-            <GradientText>Build</GradientText> on Alephium
+            <GradientText>Build on Alephium</GradientText>
           </h2>
           <p>
             Alephium&apos;s scalable Proof-of-Less-Work and secure Smart Contracts give you the tools to{' '}
@@ -331,69 +294,6 @@ const GetAlphSection = () => {
         </CardsHorizontalScroller>
       </SubpageSection>
     </>
-  )
-}
-
-const EarnALPHSection = () => {
-  const theme = useTheme()
-
-  return (
-    <SubpageSection>
-      <TextElement>
-        <h2>Earn ALPH</h2>
-        <p>
-          You can earn ALPH by using apps built on Alephium, finding bugs in the code, mining and soon by participating
-          in bounties.
-        </p>
-      </TextElement>
-      <SubheaderContent>
-        <CardsRow>
-          <CardsRowSegment>
-            <TextCard border url="https://alph.land" variants={cardVariants}>
-              <TextCardContent>
-                <h3 style={{ color: theme.palette1 }}>Apps</h3>
-                <p>
-                  Earn rewards by participating in select dApps on Alephium: provide liquidity, lend and more to start
-                  generating yield.
-                </p>
-              </TextCardContent>
-            </TextCard>
-            <TextCard
-              border
-              url="https://github.com/alephium/community/blob/master/BugBounty.md"
-              variants={cardVariants}
-            >
-              <TextCardContent>
-                <h3 style={{ color: theme.palette3 }}>Bugs</h3>
-                <p>
-                  Help secure the network, earn rewards for responsibly reporting vulnerabilities based on their impact.
-                </p>
-              </TextCardContent>
-            </TextCard>
-          </CardsRowSegment>
-          <CardsRowSegment>
-            <TextCard border url="https://docs.alephium.org/mining" variants={cardVariants}>
-              <TextCardContent>
-                <h3 style={{ color: theme.palette4 }}>Mine</h3>
-                <p>
-                  Start mining and earn rewards securing the network. ALPH mining is efficient, accessible, and built
-                  for long-term sustainability.
-                </p>
-              </TextCardContent>
-            </TextCard>
-            <TextCard border variants={cardVariants}>
-              <TextCardContent>
-                <h3 style={{ color: theme.palette2 }}>Bounties</h3>
-                <p>
-                  Our (coming soon) bounties program will reward developers, creators, and community members for
-                  tackling key projects that drive the growth and evolution of the Alephium ecosystem.
-                </p>
-              </TextCardContent>
-            </TextCard>
-          </CardsRowSegment>
-        </CardsRow>
-      </SubheaderContent>
-    </SubpageSection>
   )
 }
 

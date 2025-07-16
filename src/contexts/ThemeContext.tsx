@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from 'react'
+import { createContext, useContext, useState } from 'react'
 import { ThemeProvider as StyledThemeProvider } from 'styled-components'
 
 import { darkTheme, lightTheme, ThemeType } from '../styles/themes'
@@ -20,9 +20,11 @@ export const useTheme = () => {
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   const [theme, setTheme] = useState<ThemeType>('dark')
+
+  /*
   const [mounted, setMounted] = useState(false)
 
-  useEffect(() => {
+   useEffect(() => {
     const saved = window.localStorage.getItem('theme') as ThemeType | null
     setTheme(saved ?? 'dark')
     setMounted(true)
@@ -36,7 +38,7 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     }
     mediaQuery.addEventListener('change', handleChange)
     return () => mediaQuery.removeEventListener('change', handleChange)
-  }, [])
+  }, []) */
 
   const toggleTheme = () => {
     const next = theme === 'dark' ? 'light' : 'dark'
@@ -44,7 +46,7 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     window.localStorage.setItem('theme', next)
   }
 
-  if (!mounted) return null // avoid SSR hydration mismatch
+  // if (!mounted) return null // avoid SSR hydration mismatch
 
   const currentTheme = theme === 'dark' ? darkTheme : lightTheme
   return (

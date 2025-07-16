@@ -99,7 +99,7 @@ const HomepageIntroSection = () => {
         actionText: 'Start Contributing',
         image: greenWater?.childImageSharp?.gatsbyImageData,
         link: {
-          url: '/grants'
+          url: 'https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md'
         },
         color: theme.textPrimary
       },
@@ -160,7 +160,7 @@ const HomepageIntroSection = () => {
           </BentoItem>
           <BentoItem colSpan={1} rowSpan={2}>
             <TextCard url={cardsData[3].link.url}>
-              <CardImage image={cardsData[3].image} zoom={{ scale: 1.8, x: 70, y: 30 }} />
+              <CardImage image={cardsData[3].image} zoom={{ scale: 1.5, x: 70, y: 30 }} />
               <TextCardContent>
                 <TextElement>
                   <h4 style={{ color: cardsData[3].color }}>{cardsData[3].title}</h4>

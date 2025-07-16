@@ -6,9 +6,7 @@ timelines:
         entries:
           - row: 1
             text: 'Danube Network Upgrade on Mainnet'
-            when: 'Soon'
-            content:
-              - 'Pending mainnet deployment'
+            when: '07.2025'
             isMajor: true
           - row: 2
             text: 'Danube Network Upgrade on Testnet'

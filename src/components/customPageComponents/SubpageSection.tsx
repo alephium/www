@@ -1,7 +1,6 @@
 import { HTMLAttributes, ReactNode } from 'react'
 import styled, { css } from 'styled-components'
 
-import { deviceBreakPoints } from '../../styles/global-style'
 import Glow from '../Glow'
 import PageSectionContainer, { PageSectionContainerProps } from '../PageSectionContainer'
 
@@ -35,10 +34,6 @@ const SubpageSectionStyled = styled(PageSectionContainer)<SubpageSectionProps>`
   padding-bottom: ${({ noBottomPadding }) => (noBottomPadding ? '0' : 'var(--spacing-10)')};
   background-color: ${({ theme, bgColor }) => (bgColor ? theme[`background${bgColor}`] : 'transparent')};
   overflow: ${({ overflow }) => overflow || 'hidden'};
-
-  @media ${deviceBreakPoints.mobile} {
-    padding: var(--spacing-8) var(--spacing-4);
-  }
 
   ${({ border }) =>
     border &&
