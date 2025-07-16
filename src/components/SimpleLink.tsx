@@ -157,7 +157,7 @@ export default styled(SimpleLinkComponent)`
   color: ${({ theme, color }) => (color ? color : theme.link)};
   text-decoration: ${({ highlight }) => (highlight ? 'underline' : 'dotted')};
   display: inline-block;
-  font-size: var(--fontSize-18);
+  font-size: max(1em, var(--fontSize-18));
 
   &:hover {
     cursor: pointer;
@@ -175,6 +175,7 @@ const Anchor = styled.a<{ highlight?: boolean; color?: string }>`
   gap: 5px;
   color: ${({ theme, color }) => (color ? color : theme.link)};
   text-decoration: ${({ highlight }) => (highlight ? 'underline' : 'dotted')};
+  font-size: max(1em, var(--fontSize-18));
 
   &:hover {
     cursor: pointer;
