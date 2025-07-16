@@ -252,7 +252,7 @@ const HomepageEcosystemSection = () => {
         <SectionDivider double />
         <TextElement isCentered>
           <h2>Built on Alephium.</h2>
-          <p>Alephium is home to hundreds of innovative dApps.</p>
+          <p>Alephium is home to a thriving community of innovative dApps.</p>
           <Button big highlight url="https://alph.land">
             Explore on alph.land
           </Button>
