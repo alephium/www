@@ -175,7 +175,36 @@ module.exports = {
       options: {
         bucketName: process.env.AWS_BUCKET_NAME,
         protocol: 'https',
-        hostname: process.env.GATSBY_ALEPHIUM_HOSTNAME
+        hostname: process.env.GATSBY_ALEPHIUM_HOSTNAME,
+        headers: {
+          // HTML files - never cache (check for updates on every request)
+          '*.html': {
+            'Cache-Control': 'max-age=0, must-revalidate'
+          },
+          // Page data - never cache (check for updates on every request)
+          'page-data/*.json': {
+            'Cache-Control': 'max-age=0, must-revalidate'
+          },
+          // App data - never cache (check for updates on every request)
+          'page-data/app-data.json': {
+            'Cache-Control': 'max-age=0, must-revalidate'
+          },
+          // Static files - cache forever (content-hashed filenames)
+          'static/*': {
+            'Cache-Control': 'public, max-age=31536000, immutable'
+          },
+          // JavaScript and CSS - cache forever (content-hashed filenames)
+          '*.js': {
+            'Cache-Control': 'public, max-age=31536000, immutable'
+          },
+          '*.css': {
+            'Cache-Control': 'public, max-age=31536000, immutable'
+          },
+          // All other assets - cache forever (content-hashed filenames)
+          '*.{png,jpg,jpeg,gif,svg,webp,ico,mp4,woff2,ttf}': {
+            'Cache-Control': 'public, max-age=31536000, immutable'
+          }
+        }
       }
     }
   ]
