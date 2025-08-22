@@ -118,14 +118,7 @@ export const pageQuery = graphql`
         #   title
         #   description
         # }
-        featuredImage {
-          desktop: childImageSharp {
-            gatsbyImageData(width: 1920, layout: CONSTRAINED, transformOptions: { fit: COVER, cropFocus: CENTER })
-          }
-          seo: childImageSharp {
-            gatsbyImageData(width: 1200, layout: FIXED)
-          }
-        }
+        featuredImage
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
