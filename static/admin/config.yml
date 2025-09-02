@@ -1,7 +1,9 @@
 # local_backend: true
 
 backend:
-  name: git-gateway
+  name: github
+  repo: alephium/www
+  branch: integrate-cms # TODO: Change to master
 
 media_folder: 'src/images/uploads'
 
