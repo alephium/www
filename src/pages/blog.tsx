@@ -8,6 +8,7 @@ import SubpageHeroSection from '../components/customPageComponents/SubpageImageH
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextCard from '../components/customPageComponents/TextCard'
 import TextElement from '../components/customPageComponents/TextElement'
+import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import Search from '../components/Search'
 import SectionDivider from '../components/SectionDivider'
 
@@ -30,7 +31,11 @@ export const query = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
-          featuredImage
+          featuredImage {
+            childImageSharp {
+              gatsbyImageData(width: 800)
+            }
+          }
         }
       }
     }
@@ -82,18 +87,16 @@ const CustomPage = (props: PageProps) => {
               <Grid columns={3} gap="small">
                 {filteredPosts.map((post) => (
                   <TextCardStyled key={post.fields?.slug} url={post.fields?.slug ?? ''}>
-                    <TextElement>
+                    <TextElement style={{ padding: '20px' }}>
                       <h3>{post.frontmatter?.title}</h3>
                       <p>{post.frontmatter?.description}</p>
                     </TextElement>
                     {post.frontmatter?.featuredImage && (
                       <ImageContainer>
-                        <img
-                          src={`/src/content/blog/${post.fields?.slug?.split('/').pop()}/${
-                            post.frontmatter.featuredImage
-                          }`}
+                        <GatsbyImageWrapper
+                          image={post.frontmatter.featuredImage.childImageSharp?.gatsbyImageData}
                           alt={post.frontmatter?.title ?? ''}
-                          style={{ width: '100%', height: '200px', objectFit: 'cover' }}
+                          style={{ width: '100%', height: '200px' }}
                         />
                       </ImageContainer>
                     )}

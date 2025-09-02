@@ -1,5 +1,4 @@
 import { graphql, Link, PageProps } from 'gatsby'
-import { getImage } from 'gatsby-plugin-image'
 import styled from 'styled-components'
 
 import Page from '../components/customPageComponents/Page'
@@ -11,27 +10,17 @@ import SectionDivider from '../components/SectionDivider'
 const BlogPostTemplate = (props: PageProps<Queries.BlogPostBySlugQuery>) => {
   const post = props.data.markdownRemark
   const { previous, next } = props.data
-  const desktopImage = post?.frontmatter?.featuredImage?.desktop
-  const seoImage = post?.frontmatter?.featuredImage?.seo
-
-  const featuredImage = desktopImage ? getImage(desktopImage) : null
-
-  const subtitle = <div></div>
 
   return (
     <Page
       {...props}
       seo={{
         title: post?.frontmatter?.title || '',
-        description: post?.frontmatter?.description || post?.excerpt || '',
-        image: seoImage
+        description: post?.frontmatter?.description || post?.excerpt || ''
       }}
       content={
         <>
-          <SubpageHeroSection
-            backgroundImage={featuredImage || undefined}
-            backgroundImageAlt={post?.frontmatter?.title || 'Blog post featured image'}
-          >
+          <SubpageHeroSection>
             <h1>{post?.frontmatter?.title}</h1>
             <hr />
             <p>{post?.frontmatter?.description}</p>
@@ -114,11 +103,6 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
-        # seo {
-        #   title
-        #   description
-        # }
-        featuredImage
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
