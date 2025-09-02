@@ -1,7 +1,7 @@
 import { colord } from 'colord'
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
-import styled from 'styled-components'
+import styled, { useTheme } from 'styled-components'
 
 import { deviceBreakPoints } from '../../../styles/global-style'
 import { isMobile } from '../../../utils/misc'
@@ -9,11 +9,11 @@ import Badge from '../../Badge'
 import Button from '../../Button'
 import CardFooterButtonContainer from '../../common/CardFooterButtonContainer'
 import TextElement from '../../customPageComponents/TextElement'
-import GradientText from '../../GradientText'
 
 const HomepageNewsPopup = () => {
   const [isMounted, setIsMounted] = useState(false)
   const [isVisible, setIsVisible] = useState(true)
+  const theme = useTheme()
 
   const toggleVisibility = (visible: boolean) => setIsVisible(visible)
 
@@ -66,22 +66,21 @@ const HomepageNewsPopup = () => {
       >
         <CloseButton onClick={() => toggleVisibility(false)}>×</CloseButton>
         <NewsCardContent>
-          <Badge color="palette5" style={{ marginBottom: 10 }}>
+          <Badge color="palette2" style={{ marginBottom: 10 }}>
             BREAKING NEWS 🔥
           </Badge>
-          <TextElement isBodySmall noHeadingsMargins>
-            <h2>Danube Upgrade 🌊</h2>
+          <TextElement noHeadingsMargins>
+            <h2 style={{ color: theme.palette1 }}>Alephium: Phase 2</h2>
             <p>
-              <strong>
-                <GradientText>LIVE TODAY</GradientText>
-              </strong>
-              <br />A major milestone towards true Web3.
+              <strong>Now begins the second chapter.</strong>
+              <br />
+              From Scalable Infrastructure to Aligned Economics.
             </p>
           </TextElement>
         </NewsCardContent>
         <CardFooterButtonContainer>
-          <Button squared url="https://x.com/alephium/status/1920780688313233634">
-            Learn more about Danube
+          <Button squared url="https://x.com/alephium/status/1958886335202435548">
+            Read the article
           </Button>
         </CardFooterButtonContainer>
       </NewsCard>
@@ -114,8 +113,8 @@ const NewsCard = styled(motion.div)<{ border?: boolean }>`
   width: 400px;
   display: flex;
   flex-direction: column;
-  border: 1px solid ${({ theme }) => theme.palette5};
-  background-color: ${({ theme }) => colord(theme.background1).lighten(0.15).alpha(0.9).toHex()};
+  border: 2px solid ${({ theme }) => theme.textPrimary};
+  background-color: ${({ theme }) => colord(theme.background2).darken(0.15).alpha(0.8).toHex()};
   backdrop-filter: blur(60px) saturate(3) brightness(1.2);
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, ${({ theme }) => (theme.name === 'light' ? 0.1 : 0.3)});
   border-radius: var(--radius-large);
@@ -130,7 +129,7 @@ const NewsCard = styled(motion.div)<{ border?: boolean }>`
   }
 
   h2 {
-    font-size: var(--fontSize-28);
+    font-size: var(--fontSize-36);
     line-height: var(--lineHeight-36);
     font-weight: var(--fontWeight-medium);
     margin-bottom: var(--spacing-2);

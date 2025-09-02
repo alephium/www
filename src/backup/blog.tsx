@@ -8,7 +8,6 @@ import SubpageHeroSection from '../components/customPageComponents/SubpageImageH
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextCard from '../components/customPageComponents/TextCard'
 import TextElement from '../components/customPageComponents/TextElement'
-import ResponsiveImage from '../components/ResponsiveImage'
 import Search from '../components/Search'
 import SectionDivider from '../components/SectionDivider'
 
@@ -31,16 +30,7 @@ export const query = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
-          featuredImage {
-            childImageSharp {
-              gatsbyImageData(
-                width: 526
-                height: 200
-                layout: CONSTRAINED
-                transformOptions: { fit: COVER, cropFocus: CENTER }
-              )
-            }
-          }
+          featuredImage
         }
       }
     }
@@ -96,13 +86,14 @@ const CustomPage = (props: PageProps) => {
                       <h3>{post.frontmatter?.title}</h3>
                       <p>{post.frontmatter?.description}</p>
                     </TextElement>
-                    {post.frontmatter?.featuredImage && post.frontmatter?.featuredImage?.childImageSharp && (
+                    {post.frontmatter?.featuredImage && (
                       <ImageContainer>
-                        <ResponsiveImage
-                          image={{
-                            altText: post.frontmatter?.title ?? '',
-                            src: post.frontmatter?.featuredImage
-                          }}
+                        <img
+                          src={`/src/content/blog/${post.fields?.slug?.split('/').pop()}/${
+                            post.frontmatter.featuredImage
+                          }`}
+                          alt={post.frontmatter?.title ?? ''}
+                          style={{ width: '100%', height: '200px', objectFit: 'cover' }}
                         />
                       </ImageContainer>
                     )}
