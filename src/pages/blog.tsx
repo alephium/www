@@ -18,7 +18,10 @@ export const query = graphql`
       ...HeroImage
     }
     allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "blog" } }, frontmatter: { draft: { ne: true } } }
+      filter: {
+        fields: { contentType: { eq: "blog" } }
+        # frontmatter: { draft: { ne: true } }
+      }
       sort: { frontmatter: { date: DESC } }
     ) {
       totalCount
