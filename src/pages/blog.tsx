@@ -4,13 +4,11 @@ import styled from 'styled-components'
 
 import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
-import SubpageHeroSection from '../components/customPageComponents/SubpageImageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextCard from '../components/customPageComponents/TextCard'
 import TextElement from '../components/customPageComponents/TextElement'
 import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import Search from '../components/Search'
-import SectionDivider from '../components/SectionDivider'
 
 export const query = graphql`
   query BlogPosts {
@@ -69,12 +67,12 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageHeroSection backgroundImage={data.heroImage}>
-            <h1>Alephium blog</h1>
-            <p>News, updates, and insights from the Alephium ecosystem.</p>
-          </SubpageHeroSection>
-
-          <SectionDivider />
+          <SubpageSection fullWidth>
+            <TextElement isCentered>
+              <h1>Alephium blog</h1>
+              <p>News, updates, and insights from the Alephium ecosystem.</p>
+            </TextElement>
+          </SubpageSection>
 
           <SubpageSection wide>
             <SearchContainer>
