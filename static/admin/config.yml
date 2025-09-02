@@ -1,9 +1,12 @@
-# local_backend: true
+# local_backend: true # Enable when working locally
 
 backend:
   name: github
   repo: alephium/www
   branch: integrate-cms # TODO: Change to master
+  squash_merges: true
+
+publish_mode: editorial_workflow
 
 media_folder: 'src/images/uploads'
 
