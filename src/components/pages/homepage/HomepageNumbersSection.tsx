@@ -76,7 +76,7 @@ const HomepageNumbersSection = () => {
         const res = await fetch('https://api.llama.fi/v2/chains')
         const tvl = (await res.json()) as ChainsTVL
 
-        setChainTVL(tvl.find((d) => d.gecko_id === 'alephium')?.tvl)
+        setChainTVL(tvl.find((d) => d?.gecko_id === 'alephium')?.tvl)
       } catch (e) {
         console.error('Error fetching chain TVL:', e)
       }
@@ -91,7 +91,7 @@ const HomepageNumbersSection = () => {
         const tvls = (await res.json()) as ProtocolsTVLs
 
         setProtocolsStakingTVL(
-          tvls.filter((t) => t.chain === 'Alephium').reduce((acc, { staking }) => acc + staking, 0)
+          tvls.filter((t) => t.chain === 'Alephium').reduce((acc, protocol) => acc + (protocol?.staking ?? 0), 0)
         )
       } catch (e) {
         console.error('Error fetching protocols TVL:', e)
