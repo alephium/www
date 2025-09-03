@@ -15,7 +15,7 @@ The site is now running at http://localhost:8000
 In a new terminal, run:
 
 ```shell
-npx netlify-cms-proxy-server
+npx decap-server
 ```
 
 The CMS is now runnign at http://localhost:8000/admin/

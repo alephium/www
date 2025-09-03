@@ -4,12 +4,11 @@ import styled from 'styled-components'
 
 import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
-import SubpageHeroSection from '../components/customPageComponents/SubpageImageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextCard from '../components/customPageComponents/TextCard'
 import TextElement from '../components/customPageComponents/TextElement'
+import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import Search from '../components/Search'
-import SectionDivider from '../components/SectionDivider'
 
 export const query = graphql`
   query BlogPosts {
@@ -17,7 +16,10 @@ export const query = graphql`
       ...HeroImage
     }
     allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "blog" } }, frontmatter: { draft: { ne: true } } }
+      filter: {
+        fields: { contentType: { eq: "blog" } }
+        # frontmatter: { draft: { ne: true } }
+      }
       sort: { frontmatter: { date: DESC } }
     ) {
       totalCount
@@ -30,7 +32,11 @@ export const query = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
-          featuredImage
+          featuredImage {
+            childImageSharp {
+              gatsbyImageData(width: 800)
+            }
+          }
         }
       }
     }
@@ -61,12 +67,12 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageHeroSection backgroundImage={data.heroImage}>
-            <h1>Alephium blog</h1>
-            <p>News, updates, and insights from the Alephium ecosystem.</p>
-          </SubpageHeroSection>
-
-          <SectionDivider />
+          <SubpageSection fullWidth>
+            <TextElement isCentered>
+              <h1>Alephium blog</h1>
+              <p>News, updates, and insights from the Alephium ecosystem.</p>
+            </TextElement>
+          </SubpageSection>
 
           <SubpageSection wide>
             <SearchContainer>
@@ -82,18 +88,16 @@ const CustomPage = (props: PageProps) => {
               <Grid columns={3} gap="small">
                 {filteredPosts.map((post) => (
                   <TextCardStyled key={post.fields?.slug} url={post.fields?.slug ?? ''}>
-                    <TextElement>
+                    <TextElement style={{ padding: '20px' }}>
                       <h3>{post.frontmatter?.title}</h3>
                       <p>{post.frontmatter?.description}</p>
                     </TextElement>
                     {post.frontmatter?.featuredImage && (
                       <ImageContainer>
-                        <img
-                          src={`/src/content/blog/${post.fields?.slug?.split('/').pop()}/${
-                            post.frontmatter.featuredImage
-                          }`}
+                        <GatsbyImageWrapper
+                          image={post.frontmatter.featuredImage.childImageSharp?.gatsbyImageData}
                           alt={post.frontmatter?.title ?? ''}
-                          style={{ width: '100%', height: '200px', objectFit: 'cover' }}
+                          style={{ width: '100%', height: '200px' }}
                         />
                       </ImageContainer>
                     )}

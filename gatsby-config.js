@@ -74,27 +74,18 @@ module.exports = {
       },
       __key: 'pages'
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     path: `${__dirname}/src/content/blog`,
-    //     name: `blog`
-    //   }
-    // },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: 'content',
-        path: './src/content',
-        ignore: ['**/blog/**'] // Completely exclude blog directory from main content source
+        path: `${__dirname}/src/content/blog`,
+        name: `blog`
       }
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'blog',
-        path: './src/content/blog',
-        ignore: ['**/*.{jpg,jpeg,png,gif,webp}'] // Only process markdown files, not images
+        name: 'content',
+        path: './src/content'
       }
     },
     {
@@ -105,15 +96,7 @@ module.exports = {
         }
       }
     },
-    // TODO: Re-enable when CMS is correctly set up
-    // {
-    //   resolve: 'gatsby-plugin-netlify-cms',
-    //   options: {
-    //     manualInit: true,
-    //     modulePath: './cms/index.ts',
-    //     enableIdentityWidget: false
-    //   }
-    // },
+    `gatsby-plugin-decap-cms`,
     {
       resolve: `gatsby-plugin-feed`,
       options: {
