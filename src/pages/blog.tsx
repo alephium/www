@@ -85,9 +85,9 @@ const CustomPage = (props: PageProps) => {
                 <p>Try adjusting your search query</p>
               </NoResults>
             ) : (
-              <Grid columns={3} gap="small">
+              <Grid columns={3} gap="large">
                 {filteredPosts.map((post) => (
-                  <TextCardStyled key={post.fields?.slug} url={post.fields?.slug ?? ''}>
+                  <TextCardStyled key={post.fields?.slug} url={post.fields?.slug ?? ''} border>
                     <TextElement style={{ padding: '20px' }}>
                       <h3>{post.frontmatter?.title}</h3>
                       <p>{post.frontmatter?.description}</p>
@@ -111,6 +111,8 @@ const CustomPage = (props: PageProps) => {
     />
   )
 }
+
+const BlogCard = styled.div``
 
 export default CustomPage
 

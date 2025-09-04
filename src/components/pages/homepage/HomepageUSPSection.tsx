@@ -71,7 +71,7 @@ const HomepageUSPSection = () => {
   const { totalTransactions } = statsScalarData
 
   return (
-    <SubpageSection bgColor="3" fullWidth>
+    <SubpageSection bgColor="3">
       <TextElementStyled>
         <h2>Web3, done right.</h2>
       </TextElementStyled>
@@ -218,7 +218,6 @@ const HomepageUSPSection = () => {
 
 const TextElementStyled = styled(TextElement)`
   width: var(--page-width);
-  padding: 0 var(--spacing-4);
   margin: 0 auto;
 `
 

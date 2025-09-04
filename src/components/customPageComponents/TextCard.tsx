@@ -1,6 +1,6 @@
 import { motion, useMotionValue, useSpring, useTransform, Variants } from 'framer-motion'
 import { PointerEvent, ReactNode, useEffect, useRef } from 'react'
-import styled, { css, useTheme } from 'styled-components'
+import styled, { css } from 'styled-components'
 
 import { deviceBreakPoints } from '../../styles/global-style'
 import { getPointerRelativePositionInElement } from '../../utils/pointer'
@@ -62,7 +62,6 @@ interface CardProps {
 const Card = ({ children, url, isAnimated, border, bgColor }: CardProps) => {
   const angle = 1.2
   const cardRef = useRef<HTMLDivElement>(null)
-  const theme = useTheme()
 
   const y = useMotionValue(0.5)
   const x = useMotionValue(0.5)
@@ -206,7 +205,7 @@ const CardStyled = styled(motion.div)<{
   position: relative;
   flex-direction: column;
   border-radius: var(--radius-big);
-  background-color: ${({ theme, bgColor }) => (bgColor ? theme[bgColor] : theme.background1)};
+  background-color: ${({ theme, bgColor }) => (bgColor ? theme[bgColor] : theme.background2)};
   backdrop-filter: blur(50px) saturate(120%) brightness(1.1);
   text-decoration: none;
   transition: all 0.1s ease-out;
