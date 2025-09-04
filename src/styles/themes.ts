@@ -15,10 +15,10 @@ export const darkTheme: DefaultTheme = {
   surface2: 'var(--color-grey-900)',
   background1: 'var(--color-grey-900)',
   background2: 'var(--color-grey-950)',
-  background3: '#000',
+  background3: '#0d0d0d',
   backgroundContrast: 'var(--color-grey-800)',
 
-  borderPrimary: 'rgba(255, 255, 255, 0.1)',
+  borderPrimary: 'rgba(255, 255, 255, 0.12)',
 
   link: '#66a4fa',
   linkAlt: 'var(--color-grey-700)',

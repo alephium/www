@@ -219,7 +219,7 @@ const CardStyled = styled(motion.div)<{
   ${({ border }) =>
     border &&
     css`
-      box-shadow: inset 0 0 0 1px ${({ theme }) => theme.borderPrimary};
+      border: 1px solid ${({ theme }) => theme.borderPrimary};
     `}
 
   ${({ url }) => url && 'transform-style: preserve-3d;'}
