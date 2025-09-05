@@ -8,6 +8,7 @@ import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import Search from '../components/Search'
+import SimpleLink from '../components/SimpleLink'
 import SimpleLoader from '../components/SimpleLoader'
 import useIntersectionObserver from '../hooks/useIntersectionObserver'
 
@@ -99,39 +100,37 @@ const CustomPage = (props: PageProps) => {
         description: ''
       }}
       content={
-        <>
-          <SubpageSection>
-            <TextElement isCentered>
-              <h1>Alephium blog</h1>
-              <p>News, updates, and insights from the Alephium ecosystem.</p>
-            </TextElement>
+        <SubpageSectionStyled>
+          <TextElement isCentered>
+            <h1>Alephium blog</h1>
+            <p>News, updates, and insights from the Alephium ecosystem.</p>
+          </TextElement>
 
-            <SearchContainer>
-              <Search value={searchQuery} onChange={setSearchQuery} placeholder="Search articles..." />
-            </SearchContainer>
+          <SearchContainer>
+            <Search value={searchQuery} onChange={setSearchQuery} placeholder="Search articles..." />
+          </SearchContainer>
 
-            {filteredPosts.length === 0 ? (
-              <NoResults>
-                <h3>No articles found</h3>
-                <p>Try adjusting your search query</p>
-              </NoResults>
-            ) : (
-              <>
-                <Grid columns={3} gap="large">
-                  {visiblePosts.map((post) => (
-                    <BlogCard key={post.fields?.slug} post={post} />
-                  ))}
-                </Grid>
+          {filteredPosts.length === 0 ? (
+            <NoResults>
+              <h3>No articles found</h3>
+              <p>Try adjusting your search query</p>
+            </NoResults>
+          ) : (
+            <>
+              <Grid columns={3} gap="large">
+                {visiblePosts.map((post) => (
+                  <BlogCard key={post.fields?.slug} post={post} />
+                ))}
+              </Grid>
 
-                {hasMorePosts && (
-                  <LoadMoreContainer>
-                    <LoadMoreTrigger ref={loadMoreRef}>{isLoading && <SimpleLoader />}</LoadMoreTrigger>
-                  </LoadMoreContainer>
-                )}
-              </>
-            )}
-          </SubpageSection>
-        </>
+              {hasMorePosts && (
+                <LoadMoreContainer>
+                  <LoadMoreTrigger ref={loadMoreRef}>{isLoading && <SimpleLoader />}</LoadMoreTrigger>
+                </LoadMoreContainer>
+              )}
+            </>
+          )}
+        </SubpageSectionStyled>
       }
     />
   )
@@ -148,24 +147,30 @@ const BlogCard = ({ post }: BlogCardProps) => {
   }
 
   return (
-    <BlogCardContainer>
-      <ImageContainer>
-        <GatsbyImageWrapper
-          image={post.frontmatter.featuredImage.childImageSharp?.gatsbyImageData}
-          alt={post.frontmatter.title ?? ''}
-          style={{ width: '100%', height: '200px' }}
-        />
-      </ImageContainer>
-      <TextElement isBodySmall>
-        <h4 style={{ marginBottom: '10px' }}>{post.frontmatter.title}</h4>
-        <label>{post.frontmatter.date}</label>
-        <p>{post.frontmatter.description}</p>
-      </TextElement>
-    </BlogCardContainer>
+    <SimpleLink url={post.fields?.slug}>
+      <BlogCardContainer>
+        <ImageContainer>
+          <GatsbyImageWrapper
+            image={post.frontmatter.featuredImage.childImageSharp?.gatsbyImageData}
+            alt={post.frontmatter.title ?? ''}
+            style={{ width: '100%', height: '200px' }}
+          />
+        </ImageContainer>
+        <TextElement isBodySmall>
+          <h4 style={{ marginBottom: '10px' }}>{post.frontmatter.title}</h4>
+          <label>{post.frontmatter.date}</label>
+          <p>{post.frontmatter.description}</p>
+        </TextElement>
+      </BlogCardContainer>
+    </SimpleLink>
   )
 }
 
 export default CustomPage
+
+const SubpageSectionStyled = styled(SubpageSection)`
+  width: calc(var(--page-width) + 30px);
+`
 
 const ImageContainer = styled.div`
   width: 100%;
@@ -190,9 +195,25 @@ const NoResults = styled.div`
 `
 
 const BlogCardContainer = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: var(--spacing-4);
+  padding: 10px;
+
+  &:hover {
+    ::before {
+      position: absolute;
+      content: '';
+      inset: 0;
+      border-radius: var(--radius-big);
+      background-color: ${({ theme }) => theme.background2};
+    }
+
+    h4 {
+      color: ${({ theme }) => theme.palette5};
+    }
+  }
 `
 
 const LoadMoreContainer = styled.div`
