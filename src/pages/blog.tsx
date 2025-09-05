@@ -1,5 +1,5 @@
 import { graphql, PageProps, useStaticQuery } from 'gatsby'
-import { useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import styled from 'styled-components'
 
 import Grid from '../components/customPageComponents/Grid'
@@ -8,6 +8,8 @@ import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import Search from '../components/Search'
+import SimpleLoader from '../components/SimpleLoader'
+import useIntersectionObserver from '../hooks/useIntersectionObserver'
 
 export const query = graphql`
   query BlogPosts {
@@ -46,16 +48,48 @@ const CustomPage = (props: PageProps) => {
   const data = useStaticQuery<Queries.BlogPostsQuery>(query)
 
   const [searchQuery, setSearchQuery] = useState('')
+  const [visibleCount, setVisibleCount] = useState(9)
+  const [isLoading, setIsLoading] = useState(false)
 
   const posts = data.allMarkdownRemark.nodes
 
-  const filteredPosts = posts.filter((post) => {
-    const title = post.frontmatter?.title?.toLowerCase() || ''
-    const description = post.frontmatter?.description?.toLowerCase() || ''
-    const query = searchQuery.toLowerCase()
+  const filteredPosts = useMemo(
+    () =>
+      posts.filter((post) => {
+        const title = post.frontmatter?.title?.toLowerCase() || ''
+        const description = post.frontmatter?.description?.toLowerCase() || ''
+        const query = searchQuery.toLowerCase()
 
-    return title.includes(query) || description.includes(query)
+        return title.includes(query) || description.includes(query)
+      }),
+    [posts, searchQuery]
+  )
+
+  const visiblePosts = filteredPosts.slice(0, visibleCount)
+  const hasMorePosts = visibleCount < filteredPosts.length
+
+  // Intersection observer for infinite scroll
+  const [loadMoreRef, isLoadMoreVisible] = useIntersectionObserver({
+    threshold: 0.1,
+    rootMargin: '100px'
   })
+
+  const loadMorePosts = useCallback(() => {
+    if (isLoading || !hasMorePosts) return
+
+    setIsLoading(true)
+    // Simulate loading delay for better UX
+    setTimeout(() => {
+      setVisibleCount((prev) => Math.min(prev + 6, filteredPosts.length))
+      setIsLoading(false)
+    }, 800)
+  }, [isLoading, hasMorePosts, filteredPosts.length])
+
+  useEffect(() => {
+    if (isLoadMoreVisible && hasMorePosts && !isLoading) {
+      loadMorePosts()
+    }
+  }, [isLoadMoreVisible, hasMorePosts, isLoading, loadMorePosts])
 
   return (
     <Page
@@ -82,11 +116,19 @@ const CustomPage = (props: PageProps) => {
                 <p>Try adjusting your search query</p>
               </NoResults>
             ) : (
-              <Grid columns={3} gap="large">
-                {filteredPosts.map((post) => (
-                  <BlogCard key={post.fields?.slug} post={post} />
-                ))}
-              </Grid>
+              <>
+                <Grid columns={3} gap="large">
+                  {visiblePosts.map((post) => (
+                    <BlogCard key={post.fields?.slug} post={post} />
+                  ))}
+                </Grid>
+
+                {hasMorePosts && (
+                  <LoadMoreContainer>
+                    <LoadMoreTrigger ref={loadMoreRef}>{isLoading && <SimpleLoader />}</LoadMoreTrigger>
+                  </LoadMoreContainer>
+                )}
+              </>
             )}
           </SubpageSection>
         </>
@@ -151,4 +193,18 @@ const BlogCardContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: var(--spacing-4);
+`
+
+const LoadMoreContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: var(--spacing-8);
+  padding: var(--spacing-4);
+`
+
+const LoadMoreTrigger = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
 `
