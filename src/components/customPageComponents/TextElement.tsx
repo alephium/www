@@ -148,9 +148,9 @@ const TextElement = styled.div<TextElementProps>`
   }
 
   > h4 {
-    font-size: var(--fontSize-32);
+    font-size: var(--fontSize-28);
     line-height: var(--lineHeight-36);
-    font-weight: var(--fontWeight-semiBold);
+    font-weight: var(--fontWeight-medium);
 
     ${({ isSmall }) =>
       isSmall &&

@@ -213,7 +213,6 @@ const NavigationMenuStyled = styled.div`
   display: flex;
   font-weight: var(--fontWeight-medium);
   z-index: 1;
-  padding: 0 24px;
 
   .nav-end {
     display: flex;

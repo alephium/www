@@ -146,8 +146,8 @@ const CardsScroll = styled.div<{ $showLeftMask: boolean; $showRightMask: boolean
   gap: ${CARD_GAP}px;
   overflow-x: auto;
   padding: var(--spacing-4) 0;
-  padding-left: calc((100% - var(--page-width)) / 2 + var(--spacing-4));
   scroll-snap-type: x mandatory;
+  box-sizing: content-box;
   -webkit-mask-image: linear-gradient(
     to right,
     ${(props) => (props.$showLeftMask ? 'transparent' : 'black')},
@@ -178,13 +178,6 @@ const CardsScroll = styled.div<{ $showLeftMask: boolean; $showRightMask: boolean
       black 20px,
       black calc(100% - 20px),
       ${(props) => (props.$showRightMask ? 'transparent' : 'black')}
-    );
-  }
-
-  ${CardContainer}:first-child {
-    padding-left: max(
-      calc((100% - var(--page-width)) + var(--spacing-4)),
-      ${(props) => (props.$additionalLeftPadding ? 'var(--spacing-4)' : '0')}
     );
   }
 

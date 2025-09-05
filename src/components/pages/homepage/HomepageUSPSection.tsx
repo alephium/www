@@ -71,13 +71,13 @@ const HomepageUSPSection = () => {
   const { totalTransactions } = statsScalarData
 
   return (
-    <SubpageSection bgColor="3" fullWidth>
+    <SubpageSection bgColor="3">
       <TextElementStyled>
         <h2>Web3, done right.</h2>
       </TextElementStyled>
 
       <CardsHorizontalScroller cardWidth={CARD_WIDTH} cardGap={CARD_GAP} animateCards additionalLeftPadding>
-        <TextCard>
+        <TextCard border>
           <TextCardContent>
             <TextElement>
               <h3>Fast ⚡</h3>
@@ -98,7 +98,7 @@ const HomepageUSPSection = () => {
             </p>
           </TextCardContent>
         </TextCard>
-        <TextCard>
+        <TextCard border>
           <TextCardContent>
             <TextElement>
               <h3>Scalable ⛓️</h3>
@@ -118,7 +118,7 @@ const HomepageUSPSection = () => {
             />
           </TextCardContent>
         </TextCard>
-        <TextCard>
+        <TextCard border>
           <TextCardContent>
             <TextElement>
               <h3>Secure 🔒</h3>
@@ -141,7 +141,7 @@ const HomepageUSPSection = () => {
             />
           </TextCardContent>
         </TextCard>
-        <TextCard>
+        <TextCard border>
           <TextCardContent>
             <TextElement>
               <h3>Sustainable 🌱</h3>
@@ -165,7 +165,7 @@ const HomepageUSPSection = () => {
             />
           </TextCardContent>
         </TextCard>
-        <TextCard>
+        <TextCard border>
           <TextCardContent>
             <TextElement>
               <h3>Programmable 🧩</h3>
@@ -189,7 +189,7 @@ const HomepageUSPSection = () => {
             />
           </TextCardContent>
         </TextCard>
-        <TextCard>
+        <TextCard border>
           <TextCardContent>
             <TextElement>
               <h3>Dev-friendly 🧑‍💻</h3>
@@ -218,7 +218,6 @@ const HomepageUSPSection = () => {
 
 const TextElementStyled = styled(TextElement)`
   width: var(--page-width);
-  padding: 0 var(--spacing-4);
   margin: 0 auto;
 `
 

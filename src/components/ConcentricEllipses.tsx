@@ -15,7 +15,7 @@ const ConcentricEllipses = ({ baseColor, bottomOffset = '-15%' }: ConcentricElli
   const widthIncrement = 160
   const heightIncrement = 100
   const baseOpacity = 0.8
-  const opacityDecay = 0.1
+  const opacityDecay = 0.17
 
   const ellipseConfigs = Array.from({ length: numEllipses }, (_, index) => {
     const width = baseWidth + index * widthIncrement

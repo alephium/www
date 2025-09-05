@@ -136,7 +136,7 @@ const HomepageIntroSection = () => {
       <SubheaderContent>
         <BentoLayout columns={4} animateItems={true}>
           <BentoItem colSpan={2} rowSpan={2}>
-            <TextCard url={cardsData[0].link.url}>
+            <TextCard url={cardsData[0].link.url} border>
               <CardImage image={cardsData[0].image} />
               <TextCardContent>
                 <TextElement>
@@ -147,7 +147,7 @@ const HomepageIntroSection = () => {
             </TextCard>
           </BentoItem>
           <BentoItem colSpan={1} rowSpan={1}>
-            <TextCard url={cardsData[1].link.url}>
+            <TextCard url={cardsData[1].link.url} border>
               <TextCardContent>
                 <TextElement>
                   <h4>
@@ -159,7 +159,7 @@ const HomepageIntroSection = () => {
             </TextCard>
           </BentoItem>
           <BentoItem colSpan={1} rowSpan={2}>
-            <TextCard url={cardsData[3].link.url}>
+            <TextCard url={cardsData[3].link.url} border>
               <CardImage image={cardsData[3].image} zoom={{ scale: 1.5, x: 70, y: 30 }} />
               <TextCardContent>
                 <TextElement>
@@ -170,7 +170,7 @@ const HomepageIntroSection = () => {
             </TextCard>
           </BentoItem>
           <BentoItem colSpan={1} rowSpan={1}>
-            <TextCard url={cardsData[2].link.url}>
+            <TextCard url={cardsData[2].link.url} border>
               <TextCardContent>
                 <TextElement>
                   <h4 style={{ color: cardsData[2].color }}>{cardsData[2].title}</h4>

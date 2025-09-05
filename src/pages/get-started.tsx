@@ -58,8 +58,6 @@ const PageContent = () => {
     <>
       <GetAlphSection />
 
-      <SectionDivider />
-
       <SubpageImageHeroSection
         backgroundImage={ecosystemImage}
         alignContent="center"
@@ -69,9 +67,7 @@ const PageContent = () => {
       >
         <TextElement isCentered>
           <h2>
-            <GradientText color1={theme.palette6} color2={theme.palette1}>
-              Explore the ecosystem
-            </GradientText>
+            <GradientText>Explore the ecosystem</GradientText>
           </h2>
           <p>
             <strong>All the dApps, tools, integrations, partners and more, in one place.</strong>
@@ -87,7 +83,9 @@ const PageContent = () => {
       <SubpageSection isCentered>
         <TextElement isCentered>
           <h2>
-            <GradientText>Build on Alephium</GradientText>
+            <GradientText color1={theme.palette6} color2={theme.palette1}>
+              Build on Alephium
+            </GradientText>
           </h2>
           <p>
             Alephium&apos;s scalable Proof-of-Less-Work and secure Smart Contracts give you the tools to{' '}
@@ -97,13 +95,13 @@ const PageContent = () => {
 
         <SubheaderContent isCentered>
           <Grid columns={2} gap="small">
-            <TextCard url="https://docs.alephium.org/">
+            <TextCard url="https://docs.alephium.org/" border>
               <TextCardContent>
                 <h3>Documentation</h3>
                 <p>Documentation to get you going quick and easy.</p>
               </TextCardContent>
             </TextCard>
-            <TextCard url="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md">
+            <TextCard url="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" border>
               <TextCardContent>
                 <h3>Grants</h3>
                 <p>
@@ -200,7 +198,7 @@ const GetAlphSection = () => {
 
       <SectionDivider />
 
-      <SubpageSection fullWidth>
+      <SubpageSection>
         <TextElementStyled>
           <h2>Get ALPH</h2>
           <p>
@@ -209,7 +207,7 @@ const GetAlphSection = () => {
         </TextElementStyled>
 
         <CardsHorizontalScroller cardWidth={CARD_WIDTH} cardGap={CARD_GAP} animateCards additionalLeftPadding>
-          <TextCard>
+          <TextCard border>
             <TextCardContent>
               <TextElement>
                 <h3>On-Ramps</h3>
@@ -226,7 +224,7 @@ const GetAlphSection = () => {
               </CardFooterButtonContainer>
             </TextCardContent>
           </TextCard>
-          <TextCard>
+          <TextCard border>
             <TextCardContent>
               <TextElement>
                 <h3>Centralised Exchanges</h3>
@@ -243,7 +241,7 @@ const GetAlphSection = () => {
               </CardFooterButtonContainer>
             </TextCardContent>
           </TextCard>
-          <TextCard>
+          <TextCard border>
             <TextCardContent>
               <TextElement>
                 <h3>Decentralised Exchanges</h3>
@@ -259,7 +257,7 @@ const GetAlphSection = () => {
               </CardFooterButtonContainer>
             </TextCardContent>
           </TextCard>
-          <TextCard>
+          <TextCard border>
             <TextCardContent>
               <TextElement>
                 <h3>Bridged ALPH</h3>
@@ -275,7 +273,7 @@ const GetAlphSection = () => {
               </CardFooterButtonContainer>
             </TextCardContent>
           </TextCard>
-          <TextCard>
+          <TextCard border>
             <TextCardContent>
               <TextElement>
                 <h3>From your peers</h3>
