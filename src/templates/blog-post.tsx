@@ -41,40 +41,38 @@ const BlogPostTemplate = (props: PageProps<Queries.BlogPostBySlugQuery>) => {
 
           <SectionDivider />
 
-          <SubpageSection>
-            <nav className="blog-post-nav">
-              <ul
-                style={{
-                  display: `flex`,
-                  flexWrap: `wrap`,
-                  justifyContent: `space-between`,
-                  listStyle: `none`,
-                  padding: 0
-                }}
-              >
-                <li>
-                  {previous && (
-                    <>
-                      <span>← </span>
-                      <StyledGatsbyLink to={previous.fields?.slug ?? ''} rel="prev">
-                        {previous.frontmatter?.title}
-                      </StyledGatsbyLink>
-                    </>
-                  )}
-                </li>
-                <li>
-                  {next && (
-                    <>
-                      <StyledGatsbyLink to={next.fields?.slug ?? ''} rel="next">
-                        {next.frontmatter?.title}
-                      </StyledGatsbyLink>
-                      <span> →</span>
-                    </>
-                  )}
-                </li>
-              </ul>
-            </nav>
-          </SubpageSection>
+          <nav className="blog-post-nav">
+            <ul
+              style={{
+                display: `flex`,
+                flexWrap: `wrap`,
+                justifyContent: `space-between`,
+                listStyle: `none`,
+                padding: 0
+              }}
+            >
+              <li>
+                {previous && (
+                  <>
+                    <span>← </span>
+                    <StyledGatsbyLink to={previous.fields?.slug ?? ''} rel="prev">
+                      {previous.frontmatter?.title}
+                    </StyledGatsbyLink>
+                  </>
+                )}
+              </li>
+              <li>
+                {next && (
+                  <>
+                    <StyledGatsbyLink to={next.fields?.slug ?? ''} rel="next">
+                      {next.frontmatter?.title}
+                    </StyledGatsbyLink>
+                    <span> →</span>
+                  </>
+                )}
+              </li>
+            </ul>
+          </nav>
         </SubpageSection>
       }
     />
