@@ -82,7 +82,7 @@ const CardsHorizontalScroller = ({
   }
 
   return (
-    <StatsContainer>
+    <ScrollerContainer>
       <CardsScroll
         ref={scrollContainerRef}
         $showLeftMask={showLeftMask}
@@ -91,6 +91,7 @@ const CardsHorizontalScroller = ({
       >
         {React.Children.map(children, (child, index) => (
           <CardContainer
+            key={index}
             custom={index}
             initial={animateCards ? 'hidden' : undefined}
             whileInView={animateCards ? 'visible' : undefined}
@@ -109,13 +110,12 @@ const CardsHorizontalScroller = ({
           <Arrow>→</Arrow>
         </ScrollButton>
       </ScrollButtonsContainer>
-    </StatsContainer>
+    </ScrollerContainer>
   )
 }
 
-const StatsContainer = styled.div`
+const ScrollerContainer = styled.div`
   width: 100%;
-  box-sizing: border-box;
   position: relative;
 `
 
@@ -146,8 +146,11 @@ const CardsScroll = styled.div<{ $showLeftMask: boolean; $showRightMask: boolean
   gap: ${CARD_GAP}px;
   overflow-x: auto;
   padding: var(--spacing-4) 0;
+  padding-left: ${({ $additionalLeftPadding }) =>
+    $additionalLeftPadding ? 'calc((100% - var(--page-width)) / 2)' : 'var(--spacing-4)'};
   scroll-snap-type: x mandatory;
-  box-sizing: content-box;
+  scroll-padding-left: ${({ $additionalLeftPadding }) =>
+    $additionalLeftPadding ? 'calc((100% - var(--page-width)) / 2)' : '0'};
   -webkit-mask-image: linear-gradient(
     to right,
     ${(props) => (props.$showLeftMask ? 'transparent' : 'black')},

@@ -205,7 +205,7 @@ const CardStyled = styled(motion.div)<{
   position: relative;
   flex-direction: column;
   border-radius: var(--radius-big);
-  background-color: ${({ theme, bgColor }) => (bgColor ? theme[bgColor] : theme.background2)};
+  background-color: ${({ theme, bgColor }) => (bgColor ? theme[bgColor] : theme.background1)};
   backdrop-filter: blur(50px) saturate(120%) brightness(1.1);
   text-decoration: none;
   transition: all 0.1s ease-out;
