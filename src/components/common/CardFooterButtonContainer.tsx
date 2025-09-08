@@ -6,6 +6,7 @@ const CardFooterButtonContainer = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   margin-top: var(--spacing-2);
+  padding: var(--spacing-2);
 `
 
 export default CardFooterButtonContainer

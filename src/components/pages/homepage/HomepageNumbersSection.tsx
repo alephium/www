@@ -283,6 +283,7 @@ const NumbersContainer = styled(Card)`
   flex-direction: column;
   flex-wrap: wrap;
   gap: var(--spacing-8);
+  padding: var(--spacing-4);
   background-color: ${({ theme }) => (theme.name === 'dark' ? theme.background2 : theme.background1)};
   padding-top: var(--spacing-8);
   border: 1px solid ${({ theme }) => theme.borderPrimary};
