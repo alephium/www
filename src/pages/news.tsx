@@ -1,7 +1,8 @@
 import { graphql, PageProps, useStaticQuery } from 'gatsby'
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useMemo, useState } from 'react'
 import styled from 'styled-components'
 
+import Button from '../components/Button'
 import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
@@ -10,7 +11,6 @@ import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import Search from '../components/Search'
 import SimpleLink from '../components/SimpleLink'
 import SimpleLoader from '../components/SimpleLoader'
-import useIntersectionObserver from '../hooks/useIntersectionObserver'
 
 export const query = graphql`
   query NewsPosts {
@@ -89,12 +89,6 @@ const CustomPage = (props: PageProps) => {
   const visiblePosts = filteredPosts.slice(0, visibleCount)
   const hasMorePosts = visibleCount < filteredPosts.length
 
-  // Intersection observer for infinite scroll
-  const [loadMoreRef, isLoadMoreVisible] = useIntersectionObserver({
-    threshold: 0.1,
-    rootMargin: '100px'
-  })
-
   const loadMorePosts = useCallback(() => {
     if (isLoading || !hasMorePosts) return
 
@@ -105,12 +99,6 @@ const CustomPage = (props: PageProps) => {
       setIsLoading(false)
     }, 800)
   }, [isLoading, hasMorePosts, filteredPosts.length])
-
-  useEffect(() => {
-    if (isLoadMoreVisible && hasMorePosts && !isLoading) {
-      loadMorePosts()
-    }
-  }, [isLoadMoreVisible, hasMorePosts, isLoading, loadMorePosts])
 
   return (
     <Page
@@ -145,7 +133,15 @@ const CustomPage = (props: PageProps) => {
 
               {hasMorePosts && (
                 <LoadMoreContainer>
-                  <LoadMoreTrigger ref={loadMoreRef}>{isLoading && <SimpleLoader />}</LoadMoreTrigger>
+                  <Button onClick={loadMorePosts} disabled={isLoading} squared secondary>
+                    {isLoading ? (
+                      <>
+                        <SimpleLoader />
+                      </>
+                    ) : (
+                      'See more posts'
+                    )}
+                  </Button>
                 </LoadMoreContainer>
               )}
             </>
@@ -241,11 +237,4 @@ const LoadMoreContainer = styled.div`
   justify-content: center;
   margin-top: var(--spacing-8);
   padding: var(--spacing-4);
-`
-
-const LoadMoreTrigger = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 60px;
 `

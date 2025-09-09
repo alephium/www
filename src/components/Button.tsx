@@ -66,7 +66,7 @@ const Button = ({ onClick, className, children, url, disabled, highlight, square
   const content = (
     <>
       {children}
-      {!disabled && <ArrowStyled className="arrow" isExternal={!url?.startsWith('/')} />}
+      {url && !disabled && <ArrowStyled className="arrow" isExternal={!url?.startsWith('/')} />}
       {highlight && <GradientBorder squared={squared} />}
     </>
   )
@@ -168,6 +168,7 @@ const StyledButton = styled(Button)`
   justify-content: ${({ textAlign }) => (textAlign === 'left' ? 'flex-start' : 'center')};
   position: relative;
   z-index: 0;
+  border: 0;
 
   align-items: center;
   font-weight: var(--fontWeight-semiBold);
