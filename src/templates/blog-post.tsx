@@ -2,7 +2,6 @@ import { graphql, Link, PageProps } from 'gatsby'
 import styled from 'styled-components'
 
 import Page from '../components/customPageComponents/Page'
-import SubpageHeroSection from '../components/customPageComponents/SubpageImageHeroSection'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import SectionDivider from '../components/SectionDivider'
@@ -19,72 +18,62 @@ const BlogPostTemplate = (props: PageProps<Queries.BlogPostBySlugQuery>) => {
         description: post?.frontmatter?.description || post?.excerpt || ''
       }}
       content={
-        <>
-          <SubpageHeroSection>
-            <h1>{post?.frontmatter?.title}</h1>
-            <hr />
-            <p>{post?.frontmatter?.description}</p>
-            <p>
-              {post?.frontmatter?.date && (
-                <>
-                  <time dateTime={post.frontmatter.date}>{post.frontmatter.date}</time>
-                  <span> · </span>
-                </>
-              )}
-              {post?.timeToRead && `${post.timeToRead} min read`}
-            </p>
-          </SubpageHeroSection>
-
-          <SectionDivider />
-
+        <SubpageSection narrow>
           <BackToBlog>
             <span>← </span>
             <StyledGatsbyLink to="/blog">Back to blog</StyledGatsbyLink>
           </BackToBlog>
-
-          <SubpageSection narrow>
-            <article itemScope itemType="http://schema.org/Article">
-              <TextElement isSmall dangerouslySetInnerHTML={{ __html: post?.html || '' }} itemProp="articleBody" />
-            </article>
-          </SubpageSection>
+          <DateAndTimeToRead>
+            {post?.frontmatter?.date && (
+              <>
+                <time dateTime={post.frontmatter.date}>{post.frontmatter.date}</time>
+                <span> · </span>
+              </>
+            )}
+            {post?.timeToRead && `${post.timeToRead} min read`}
+          </DateAndTimeToRead>
 
           <SectionDivider />
 
-          <SubpageSection>
-            <nav className="blog-post-nav">
-              <ul
-                style={{
-                  display: `flex`,
-                  flexWrap: `wrap`,
-                  justifyContent: `space-between`,
-                  listStyle: `none`,
-                  padding: 0
-                }}
-              >
-                <li>
-                  {previous && (
-                    <>
-                      <span>← </span>
-                      <StyledGatsbyLink to={previous.fields?.slug ?? ''} rel="prev">
-                        {previous.frontmatter?.title}
-                      </StyledGatsbyLink>
-                    </>
-                  )}
-                </li>
-                <li>
-                  {next && (
-                    <>
-                      <StyledGatsbyLink to={next.fields?.slug ?? ''} rel="next">
-                        {next.frontmatter?.title}
-                      </StyledGatsbyLink>
-                      <span> →</span>
-                    </>
-                  )}
-                </li>
-              </ul>
-            </nav>
-          </SubpageSection>
-        </>
+          <ArticleStyled itemScope itemType="http://schema.org/Article">
+            <TextElement isSmall dangerouslySetInnerHTML={{ __html: post?.html || '' }} itemProp="articleBody" />
+          </ArticleStyled>
+
+          <SectionDivider />
+
+          <nav className="blog-post-nav">
+            <ul
+              style={{
+                display: `flex`,
+                flexWrap: `wrap`,
+                justifyContent: `space-between`,
+                listStyle: `none`,
+                padding: 0
+              }}
+            >
+              <li>
+                {previous && (
+                  <>
+                    <span>← </span>
+                    <StyledGatsbyLink to={previous.fields?.slug ?? ''} rel="prev">
+                      {previous.frontmatter?.title}
+                    </StyledGatsbyLink>
+                  </>
+                )}
+              </li>
+              <li>
+                {next && (
+                  <>
+                    <StyledGatsbyLink to={next.fields?.slug ?? ''} rel="next">
+                      {next.frontmatter?.title}
+                    </StyledGatsbyLink>
+                    <span> →</span>
+                  </>
+                )}
+              </li>
+            </ul>
+          </nav>
+        </SubpageSection>
       }
     />
   )
@@ -103,6 +92,11 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        featuredImage {
+          childImageSharp {
+            gatsbyImageData(quality: 100)
+          }
+        }
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
@@ -125,10 +119,38 @@ export const pageQuery = graphql`
 `
 
 const StyledGatsbyLink = styled(Link)`
-  color: ${({ theme }) => theme.link};
+  color: ${({ theme }) => theme.textPrimary};
 `
 
-const BackToBlog = styled.div`
-  margin-top: var(--spacing-4);
-  margin-left: var(--spacing-4);
+const BackToBlog = styled.div``
+
+const DateAndTimeToRead = styled.p`
+  color: ${({ theme }) => theme.textSecondary};
+`
+
+const ArticleStyled = styled.article`
+  * {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h3:first-child {
+    font-size: var(--fontSize-36);
+    margin-bottom: var(--spacing-4);
+    line-height: 1.2;
+  }
+
+  p {
+    margin: var(--spacing-6) auto !important;
+  }
+
+  figcaption {
+    color: ${({ theme }) => theme.textTertiary};
+    margin-top: var(--spacing-2);
+  }
+
+  .gatsby-resp-image-wrapper {
+    max-width: 700px !important;
+  }
 `

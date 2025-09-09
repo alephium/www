@@ -285,4 +285,5 @@ const NumbersContainer = styled(Card)`
   gap: var(--spacing-8);
   background-color: ${({ theme }) => (theme.name === 'dark' ? theme.background2 : theme.background1)};
   padding-top: var(--spacing-8);
+  border: 1px solid ${({ theme }) => theme.borderPrimary};
 `
