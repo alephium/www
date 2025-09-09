@@ -1,6 +1,7 @@
 ---
 date: 2022-08-30 12:53:03.942000+00:00
 description: A Technical Promenade, part 1
+spotlight: false
 featuredImage: image_2e664b2caf.png
 title: Block Time and Block Size
 ---

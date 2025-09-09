@@ -1,6 +1,7 @@
 ---
 date: 2023-04-04 12:19:17.715000+00:00
 description: All answers about the exciting new developments in Alephium’s ecosystem!
+spotlight: false
 featuredImage: image_bcc69de2ae.jpeg
 title: AMA Session — Writen format
 ---

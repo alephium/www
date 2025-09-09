@@ -2,6 +2,7 @@
 date: 2024-04-06 15:51:49.879000+00:00
 description: Regularly, we put the spotlight on an active member of the Alephium community.
   This is an opportunity to showcase their contributions to…
+spotlight: false
 featuredImage: image_5ef627d235.png
 title: 'Community Highlight #18, Mowreez'
 ---

@@ -2,6 +2,7 @@
 date: 2024-06-20 10:56:41.449000+00:00
 description: As we are getting closer from the start of the first builders meetup,
   which will take place IRL in Athens on June 21–23, we’re very happy…
+spotlight: false
 featuredImage: image_2bae752aa5.png
 title: Full Builders Meetup Program Announced!
 ---

@@ -2,6 +2,7 @@
 date: 2023-04-19 13:09:21.468000+00:00
 description: Once in a while, the spotlight is put on one active member of the Alephium
   community. This is an opportunity to showcase community members’…
+spotlight: false
 featuredImage: image_7718c9cccb.jpg
 title: 'Community Highlight #8, Jorge'
 ---

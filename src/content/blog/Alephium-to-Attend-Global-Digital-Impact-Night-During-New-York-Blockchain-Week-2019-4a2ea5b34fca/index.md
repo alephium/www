@@ -2,6 +2,7 @@
 date: 2019-05-10 18:23:08.630000+00:00
 description: The Alephium team will be attending the Global Digital Impact Night during
   New York Blockchain Week 2019.
+spotlight: false
 featuredImage: image_b30cd714a7.png
 title: Alephium to Attend Global Digital Impact Night During New York Blockchain Week
   2019

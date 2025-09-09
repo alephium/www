@@ -2,6 +2,7 @@
 date: 2024-02-13 13:37:08.514000+00:00
 description: Our ecosystem thrives with developers building amazing projects on top
   of Alephium, delivering a unique experience and providing real…
+spotlight: false
 featuredImage: image_bdb32de17e.jpg
 title: 'Builders Highlight #7: AlphPad'
 ---

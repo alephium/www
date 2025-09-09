@@ -2,6 +2,7 @@
 date: 2023-11-23 13:21:57.897000+00:00
 description: Regularly, we put the spotlight on an active member of the Alephium community.
   This is an opportunity to showcase their contributions to…
+spotlight: false
 featuredImage: image_099d09e906.png
 title: 'Community Highlight #15, Yulius aka Chris45'
 ---

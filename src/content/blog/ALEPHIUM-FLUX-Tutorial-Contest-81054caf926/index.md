@@ -2,6 +2,7 @@
 date: 2022-12-01 14:07:11.315000+00:00
 description: Thanks to Flux, it is easier than ever to run an Alephium full node.
   But it could become even easier. All it takes is a little distribution…
+spotlight: false
 featuredImage: image_8778565d71.jpeg
 title: ALEPHIUM/FLUX Tutorial Contest
 ---

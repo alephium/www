@@ -2,6 +2,7 @@
 date: 2022-10-21 08:55:23.407000+00:00
 description: Alephium is committed to building and delivering a secure and reliable
   blockchain. With that in mind, we have recently completed a security…
+spotlight: false
 featuredImage: image_396067c811.jpeg
 title: Security Assessment by Inference
 ---

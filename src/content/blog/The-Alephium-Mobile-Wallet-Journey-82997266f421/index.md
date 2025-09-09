@@ -2,6 +2,7 @@
 date: 2024-01-04 09:34:01.540000+00:00
 description: The Alephium Mobile Wallet is a great addition to the current set of
   wallets developed by the core contributors. It is available for…
+spotlight: false
 featuredImage: image_f3c0a097ca.jpg
 title: The Alephium Mobile Wallet Journey!
 ---

@@ -2,6 +2,7 @@
 date: 2023-08-18 12:29:21.741000+00:00
 description: Regularly, we put the spotlight on an active member of the Alephium community.
   This is an opportunity to showcase their contributions to…
+spotlight: false
 featuredImage: image_614403f8d4.jpg
 title: 'Community Highlight #12, Sam a.k.a energy45'
 ---

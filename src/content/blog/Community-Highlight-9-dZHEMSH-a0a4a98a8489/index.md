@@ -2,6 +2,7 @@
 date: 2023-05-22 13:06:16.351000+00:00
 description: Once in a while, the spotlight is put on one active member of the Alephium
   community. This is an opportunity to showcase community members’…
+spotlight: false
 featuredImage: image_72f3bdfbea.png
 title: 'Community Highlight #9, dZHEMSH'
 ---

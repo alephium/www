@@ -2,6 +2,7 @@
 date: 2023-12-29 09:40:10.375000+00:00
 description: We are thrilled to see many new faces in our community! Alephium community
   channels have recently grown tremendously, and we thought it…
+spotlight: false
 featuredImage: image_b1b0cc53a2.png
 title: The Hitchhiker’s guide to Alephium’s community
 ---

@@ -1,6 +1,7 @@
 ---
 date: 2023-07-26 14:16:32.447000+00:00
 description: How to create a token faucet and deploy it on Alephium
+spotlight: false
 featuredImage: image_fa86c86a57.jpg
 title: First Developer Workshop — Build a Token Faucet
 ---

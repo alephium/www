@@ -2,6 +2,7 @@
 date: 2024-08-18 17:57:20.687000+00:00
 description: This serie of interviews was conducted at the Athens Builders Meetup,
   which took place at the end of June 2024. If you’re just discovering…
+spotlight: false
 featuredImage: image_0f5b4b5f54.png
 title: Builders Uncut — Linx Labs
 ---

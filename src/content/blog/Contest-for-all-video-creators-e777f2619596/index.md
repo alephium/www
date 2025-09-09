@@ -1,6 +1,7 @@
 ---
 date: 2022-03-17 09:24:59.276000+00:00
 description: Prizes for a total of 10’000 ALPH 💰
+spotlight: false
 featuredImage: image_fb9ec1d3ef.jpg
 title: ✨Contest for all video creators 🚀
 ---

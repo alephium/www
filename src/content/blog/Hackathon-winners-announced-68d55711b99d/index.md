@@ -2,6 +2,7 @@
 date: 2024-03-22 16:41:54.726000+00:00
 description: The first Alephium Hackathon “Pioneers”, took place online between the
   12th & 26th of February. After carefully reviewing all final…
+spotlight: false
 featuredImage: image_b3deda2ce3.gif
 title: Hackathon winners announced!
 ---

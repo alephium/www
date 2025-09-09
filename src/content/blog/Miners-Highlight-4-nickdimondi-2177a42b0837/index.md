@@ -2,6 +2,7 @@
 date: 2024-03-07 17:10:35.427000+00:00
 description: The Alephium blockchain relies heavily on the contributions of miners
   to maintain its integrity and functionality. Recognizing the…
+spotlight: false
 featuredImage: image_53565e03c5.png
 title: 'Miners’ Highlight #4: nickdimondi'
 ---

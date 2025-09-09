@@ -2,6 +2,7 @@
 date: 2024-10-06 09:37:12.874000+00:00
 description: The blockchain hashrate is directly correlated with network security.
   As a Proof-of-work blockchain, Alephium relies on active ecosystem…
+spotlight: false
 featuredImage: image_b9699193dd.png
 title: 'Hashrate Series #4: ICERIVER'
 ---

@@ -2,6 +2,7 @@
 date: 2024-08-23 08:05:22.102000+00:00
 description: This interview was conducted around the Athens Builders Meetup, which
   took place at the end of June 2024. If you’re just discovering…
+spotlight: false
 featuredImage: image_593e134906.png
 title: Builders Uncut — Ulam Labs
 ---

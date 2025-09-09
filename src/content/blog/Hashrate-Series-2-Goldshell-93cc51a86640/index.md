@@ -2,6 +2,7 @@
 date: 2024-09-01 11:16:28.900000+00:00
 description: The blockchain hashrate is directly correlated with network security.
   As a Proof-of-work blockchain, Alephium relies on active ecosystem…
+spotlight: false
 featuredImage: image_0f660632a8.jpeg
 title: 'Hashrate Series #2: Goldshell'
 ---

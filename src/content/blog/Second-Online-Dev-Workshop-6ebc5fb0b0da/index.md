@@ -1,6 +1,7 @@
 ---
 date: 2023-09-25 16:58:22.500000+00:00
 description: Re-implementing the friend.tech smart contract to RALPH with @h0ngcha0
+spotlight: false
 featuredImage: image_2e556d5afc.png
 title: Second Online Dev Workshop!
 ---

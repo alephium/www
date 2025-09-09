@@ -1,6 +1,7 @@
 ---
 date: 2022-09-13 12:39:56.929000+00:00
 description: A Technical Promenade, part 2
+spotlight: false
 featuredImage: image_47ac4eb526.jpg
 title: Transactions Per Second (TPS)
 ---

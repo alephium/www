@@ -2,6 +2,7 @@
 date: 2023-10-13 15:43:32.773000+00:00
 description: Regularly, we put the spotlight on an active member of the Alephium community.
   This is an opportunity to showcase their contributions to…
+spotlight: false
 featuredImage: image_c1fa21c0b7.jpg
 title: 'Community Highlight #14, AnimalManJan'
 ---

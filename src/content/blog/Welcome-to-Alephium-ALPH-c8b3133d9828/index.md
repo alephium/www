@@ -2,6 +2,7 @@
 date: 2022-08-08 13:20:13.095000+00:00
 description: Here’s all the information you need to get started with Alephium ! And
   if that’s not enough, check our website or come talk to us on…
+spotlight: false
 featuredImage: image_d51d7c42be.jpeg
 title: 🚀 Welcome to Alephium (ALPH)
 ---

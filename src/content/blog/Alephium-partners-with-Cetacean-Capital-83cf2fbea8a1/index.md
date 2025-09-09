@@ -2,6 +2,7 @@
 date: 2022-04-12 07:06:52.155000+00:00
 description: Lausanne, Switzerland, April 12th, 2022 — Alephium, an innovative Layer
   1 blockchain announces Cetacean Capital as a new strategic partner…
+spotlight: false
 featuredImage: image_7f746d6c9c.jpg
 title: Alephium partners with Cetacean Capital
 ---

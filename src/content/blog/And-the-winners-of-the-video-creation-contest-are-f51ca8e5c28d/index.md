@@ -2,6 +2,7 @@
 date: 2022-04-21 09:29:12.943000+00:00
 description: Back in March 2022, we launched a community video contest and the results
   are in!
+spotlight: false
 featuredImage: image_ec866fe64a.jpg
 title: And the winners of the video creation contest are…
 ---

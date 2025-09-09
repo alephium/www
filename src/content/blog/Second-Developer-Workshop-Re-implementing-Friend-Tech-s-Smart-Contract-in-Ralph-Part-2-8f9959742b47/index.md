@@ -2,6 +2,7 @@
 date: 2023-11-28 15:43:03.432000+00:00
 description: Welcome to the second part of this dev workshop session! Please make
   sure you go through the first part (here) as part 2 starts where Part…
+spotlight: false
 featuredImage: image_e39b6d207c.jpg
 title: 'Second Developer Workshop: Re-implementing Friend.Tech’s Smart Contract in
   Ralph — Part 2'

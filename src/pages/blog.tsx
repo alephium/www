@@ -17,14 +17,31 @@ export const query = graphql`
     heroImage: file(relativePath: { eq: "alephium-hackathon-lake.png" }) {
       ...HeroImage
     }
-    allMarkdownRemark(
-      filter: {
-        fields: { contentType: { eq: "blog" } }
-        # frontmatter: { draft: { ne: true } }
-      }
+    spotlightPosts: allMarkdownRemark(
+      filter: { fields: { contentType: { eq: "blog" } }, frontmatter: { spotlight: { eq: true } } }
       sort: { frontmatter: { date: DESC } }
     ) {
-      totalCount
+      nodes {
+        excerpt
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          description
+          featuredImage {
+            childImageSharp {
+              gatsbyImageData(width: 800)
+            }
+          }
+        }
+      }
+    }
+    remainingPosts: allMarkdownRemark(
+      filter: { fields: { contentType: { eq: "blog" } }, frontmatter: { spotlight: { ne: true } } }
+      sort: { frontmatter: { date: DESC } }
+    ) {
       nodes {
         excerpt
         fields {
@@ -52,7 +69,10 @@ const CustomPage = (props: PageProps) => {
   const [visibleCount, setVisibleCount] = useState(9)
   const [isLoading, setIsLoading] = useState(false)
 
-  const posts = data.allMarkdownRemark.nodes
+  const spotlightPosts = data.spotlightPosts.nodes
+  const remainingPosts = data.remainingPosts.nodes
+
+  const posts = useMemo(() => [...spotlightPosts, ...remainingPosts], [spotlightPosts, remainingPosts])
 
   const filteredPosts = useMemo(
     () =>

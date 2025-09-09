@@ -2,6 +2,7 @@
 date: 2023-02-15 13:42:16.309000+00:00
 description: Once in a while, the spotlight is put on one active member of the Alephium
   community. This is an opportunity to showcase community…
+spotlight: false
 featuredImage: image_e16d660d23.jpg
 title: 'Community Highlight #6, Waldi — Zkit/beats'
 ---

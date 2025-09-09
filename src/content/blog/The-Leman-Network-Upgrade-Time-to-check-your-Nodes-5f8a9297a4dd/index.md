@@ -2,6 +2,7 @@
 date: 2023-03-01 14:54:01.680000+00:00
 description: Are you sure you have everything updated? A lot has been done since the
   previous announcement. Here is what you need to do!
+spotlight: false
 featuredImage: image_466c174731.jpeg
 title: 'The Leman Network Upgrade: Time to check your Nodes!'
 ---

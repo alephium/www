@@ -1,6 +1,7 @@
 ---
 date: 2023-04-13 18:29:31.542000+00:00
 description: Trading starts on April 17th, 17:00 CEST
+spotlight: false
 featuredImage: image_b896a5d3ac.jpg
 title: Alephium’s native token ALPH on Bitmart
 ---

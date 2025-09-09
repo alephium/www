@@ -2,6 +2,7 @@
 date: 2023-03-13 15:37:46.355000+00:00
 description: Once in a while, the spotlight is put on one active member of the Alephium
   community. This is an opportunity to showcase community members’…
+spotlight: false
 featuredImage: image_07072c30f3.jpg
 title: 'Community Highlight #7, Oheka'
 ---

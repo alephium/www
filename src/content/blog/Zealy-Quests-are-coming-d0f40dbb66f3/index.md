@@ -2,6 +2,7 @@
 date: 2023-09-04 14:43:00.172000+00:00
 description: As the community expands, and more non-tech people join us, we need different
   tools, and different ways of showing, exploring and…
+spotlight: false
 featuredImage: image_c497e1e421.jpg
 title: Zealy Quests are coming!
 ---

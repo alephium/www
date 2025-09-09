@@ -2,6 +2,7 @@
 date: 2023-11-03 14:03:20.452000+00:00
 description: Our ecosystem thrives with developers building amazing projects on top
   of Alephium delivering a unique experience and providing real…
+spotlight: false
 featuredImage: image_233bde702f.png
 title: 'Builders Highlight #5: Deadrare'
 ---

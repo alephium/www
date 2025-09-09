@@ -2,6 +2,7 @@
 date: 2024-07-12 14:48:00.732000+00:00
 description: If you couldn’t come… Doesn’t mean you can’t see the presentations! Find
   them all here and watch them at your convenience.
+spotlight: false
 featuredImage: image_ef1fd8e881.jpg
 title: All the Athens Meetup Presentations!
 ---

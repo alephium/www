@@ -2,6 +2,7 @@
 date: 2023-08-28 15:19:59.729000+00:00
 description: Our ecosystem thrives with developers building amazing stuff on top of
   Alephium (services, dApps, etc…) that deliver a unique experience…
+spotlight: false
 featuredImage: image_c5a50dcd6b.jpeg
 title: 'Builders Highlight #3: Ayin'
 ---

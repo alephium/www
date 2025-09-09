@@ -2,6 +2,7 @@
 date: 2023-09-15 15:57:59.026000+00:00
 description: Regularly, we put the spotlight on an active member of the Alephium community.
   This is an opportunity to showcase their contributions to…
+spotlight: false
 featuredImage: image_f1d3742125.jpg
 title: 'Community Highlight #13, Ryan'
 ---

@@ -2,6 +2,7 @@
 date: 2022-10-27 12:01:43.406000+00:00
 description: 'Alephium is announcing its first Network Upgrade: The Leman Network
   Upgrade. This name is a tribute to the lake around which a significant…'
+spotlight: false
 featuredImage: image_8e4b384c80.jpg
 title: Announcing the Leman Network Upgrade
 ---

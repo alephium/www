@@ -1,6 +1,7 @@
 ---
 date: 2022-02-09 10:14:03.517000+00:00
 description: The team has spoken & the favorite name suggestions are 🥁
+spotlight: false
 featuredImage: image_48a75b1094.jpg
 title: The results of Alephium’s naming competition are in!
 ---

@@ -2,6 +2,7 @@
 date: 2024-03-25 14:45:25.896000+00:00
 description: Regularly, we put the spotlight on an active member of the Alephium community.
   This is an opportunity to showcase their contributions to…
+spotlight: false
 featuredImage: image_9af9187077.jpg
 title: 'Community Highlight #17, AlexandrianWisdom'
 ---

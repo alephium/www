@@ -2,6 +2,7 @@
 date: 2023-05-26 12:34:26.671000+00:00
 description: Alephium’s ecosystem thrives with developers building amazing stuff on
   top of Alephium (services, dApps, etc…) that deliver a unique…
+spotlight: false
 featuredImage: image_f807a06471.png
 title: 'Builders Highlight: Sahhar'
 ---

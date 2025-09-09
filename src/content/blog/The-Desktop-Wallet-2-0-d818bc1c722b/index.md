@@ -2,6 +2,7 @@
 date: 2023-05-08 15:02:30.374000+00:00
 description: It’s a big one! Token support, dApp connectivity, and a lot more in this
   feature-rich release!
+spotlight: false
 featuredImage: image_12c93c0df8.png
 title: The Desktop Wallet 2.0
 ---

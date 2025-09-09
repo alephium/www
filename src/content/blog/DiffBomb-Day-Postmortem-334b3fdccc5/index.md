@@ -1,6 +1,7 @@
 ---
 date: 2022-12-21 14:16:06.820000+00:00
 description: TL;DR
+spotlight: false
 featuredImage: image_c961ca7340.png
 title: DiffBomb Day Postmortem
 ---
