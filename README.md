@@ -18,4 +18,4 @@ In a new terminal, run:
 npx decap-server
 ```
 
-The CMS is now runnign at http://localhost:8000/admin/
+The CMS is now running at http://localhost:8000/admin/

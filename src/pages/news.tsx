@@ -13,12 +13,12 @@ import SimpleLoader from '../components/SimpleLoader'
 import useIntersectionObserver from '../hooks/useIntersectionObserver'
 
 export const query = graphql`
-  query BlogPosts {
+  query NewsPosts {
     heroImage: file(relativePath: { eq: "alephium-hackathon-lake.png" }) {
       ...HeroImage
     }
     spotlightPosts: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "blog" } }, frontmatter: { spotlight: { eq: true } } }
+      filter: { fields: { contentType: { eq: "news" } }, frontmatter: { spotlight: { eq: true } } }
       sort: { frontmatter: { date: DESC } }
     ) {
       nodes {
@@ -39,7 +39,7 @@ export const query = graphql`
       }
     }
     remainingPosts: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "blog" } }, frontmatter: { spotlight: { ne: true } } }
+      filter: { fields: { contentType: { eq: "news" } }, frontmatter: { spotlight: { ne: true } } }
       sort: { frontmatter: { date: DESC } }
     ) {
       nodes {
@@ -63,7 +63,7 @@ export const query = graphql`
 `
 
 const CustomPage = (props: PageProps) => {
-  const data = useStaticQuery<Queries.BlogPostsQuery>(query)
+  const data = useStaticQuery<Queries.NewsPostsQuery>(query)
 
   const [searchQuery, setSearchQuery] = useState('')
   const [visibleCount, setVisibleCount] = useState(9)
@@ -122,7 +122,7 @@ const CustomPage = (props: PageProps) => {
       content={
         <SubpageSectionStyled>
           <TextElement isCentered>
-            <h1>Alephium blog</h1>
+            <h1>Alephium News</h1>
             <p>News, updates, and insights from the Alephium ecosystem.</p>
           </TextElement>
 
@@ -139,7 +139,7 @@ const CustomPage = (props: PageProps) => {
             <>
               <Grid columns={3} gap="large">
                 {visiblePosts.map((post) => (
-                  <BlogCard key={post.fields?.slug} post={post} />
+                  <NewsCard key={post.fields?.slug} post={post} />
                 ))}
               </Grid>
 
@@ -157,18 +157,18 @@ const CustomPage = (props: PageProps) => {
 }
 
 // TODO: Extract to separate file if used in other places
-interface BlogCardProps {
-  post: Queries.BlogPostsQuery['allMarkdownRemark']['nodes'][number]
+interface NewsCardProps {
+  post: Queries.NewsPostsQuery['allMarkdownRemark']['nodes'][number]
 }
 
-const BlogCard = ({ post }: BlogCardProps) => {
+const NewsCard = ({ post }: NewsCardProps) => {
   if (!post.frontmatter?.featuredImage) {
     return null
   }
 
   return (
     <SimpleLink url={post.fields?.slug}>
-      <BlogCardContainer>
+      <NewsCardContainer>
         <ImageContainer>
           <GatsbyImageWrapper
             image={post.frontmatter.featuredImage.childImageSharp?.gatsbyImageData}
@@ -181,7 +181,7 @@ const BlogCard = ({ post }: BlogCardProps) => {
           <label>{post.frontmatter.date}</label>
           <p>{post.frontmatter.description}</p>
         </TextElement>
-      </BlogCardContainer>
+      </NewsCardContainer>
     </SimpleLink>
   )
 }
@@ -214,7 +214,7 @@ const NoResults = styled.div`
   }
 `
 
-const BlogCardContainer = styled.div`
+const NewsCardContainer = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;

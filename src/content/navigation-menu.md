@@ -39,6 +39,8 @@ menuItems:
         link: https://defillama.com/chain/Alephium?staking=true
   - title: Community
     items:
+      - title: News
+        link: /news
       - title: Get started
         link: /get-started
       - title: Ambassador Program

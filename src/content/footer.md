@@ -10,8 +10,8 @@ columns:
         url: https://alph.land
       #- text: Grants
       #  url: /grants
-      - text: Blog
-        url: https://medium.com/@alephium
+      - text: News
+        url: /news
   - title: Alephium
     links:
       - text: Roadmap
