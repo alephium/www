@@ -12,19 +12,16 @@ const CardText = ({ children, ...textElementProps }: CardTextProps) => (
 )
 
 const CardTextStyled = styled(TextElement)`
-  flex: 1;
   display: flex;
   flex-direction: column;
   padding: var(--spacing-3);
-  width: 100%;
-  height: 100%;
   gap: var(--spacing-2);
 
   p {
     flex: 1;
-    font-weight: var(--fontWeight-regular);
+    font-weight: var(--fontWeight-normal);
     font-size: var(--fontSize-18);
-    line-height: 1.4;
+    line-height: 1.5;
     margin-bottom: 0;
   }
 

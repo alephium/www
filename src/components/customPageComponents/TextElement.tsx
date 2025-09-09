@@ -19,6 +19,7 @@ export interface TextElementProps {
 
 const TextElement = styled.div<TextElementProps>`
   position: relative;
+
   ${({ backgroundColor }) =>
     backgroundColor &&
     css`
@@ -83,7 +84,7 @@ const TextElement = styled.div<TextElementProps>`
     line-height: 0.9;
 
     font-size: var(--fontSize-76);
-    font-weight: var(--fontWeight-semiBold);
+    font-weight: var(--fontWeight-medium);
 
     + p {
       font-size: var(--fontSize-26);
@@ -98,7 +99,7 @@ const TextElement = styled.div<TextElementProps>`
     font-family: 'InterDisplay';
     font-size: var(--fontSize-50);
     margin-bottom: var(--spacing-4);
-    font-weight: var(--fontWeight-semiBold);
+    font-weight: var(--fontWeight-medium);
     color: ${({ theme }) => theme.textPrimary};
     line-height: 1;
 
@@ -120,7 +121,7 @@ const TextElement = styled.div<TextElementProps>`
 
   > h3 {
     font-family: 'InterDisplay';
-    font-size: var(--fontSize-36);
+    font-size: var(--fontSize-32);
     font-weight: var(--fontWeight-medium);
     margin-bottom: var(--spacing-2);
 
@@ -162,7 +163,7 @@ const TextElement = styled.div<TextElementProps>`
 
   * strong {
     color: ${({ theme }) => theme.textPrimary};
-    font-weight: var(--fontWeight-semiBold);
+    font-weight: var(--fontWeight-medium);
   }
 
   > label {
@@ -181,6 +182,7 @@ const TextElement = styled.div<TextElementProps>`
     font-weight: var(--fontWeight-medium);
     line-height: 1.3;
     max-width: 700px;
+    margin: 0;
 
     ${({ isCentered }) =>
       isCentered &&
@@ -209,7 +211,6 @@ const TextElement = styled.div<TextElementProps>`
     }
 
     &:first-child {
-      margin-top: 0;
       padding-top: 0;
     }
   }
@@ -226,7 +227,7 @@ const TextElement = styled.div<TextElementProps>`
 
   /* Buttons */
   > a {
-    margin-top: var(--spacing-2);
+    margin-top: var(--spacing-4);
 
     & + a {
       margin-left: var(--spacing-2);

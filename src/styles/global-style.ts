@@ -115,6 +115,7 @@ const GlobalStyle = createGlobalStyle`
     --fontSize-26: 1.66rem;
     --fontSize-28: 1.75rem;
     --fontSize-32: 2rem;
+    --fontSize-34: 2.125rem;
     --fontSize-36: 2.25rem;
     --fontSize-38: 2.33rem;
     --fontSize-40: 2.5rem;

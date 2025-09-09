@@ -155,7 +155,7 @@ const ArrowStyled = styled(Arrow)<{ isExternal?: boolean }>`
 
 const StyledButton = styled(Button)`
   background-color: ${({ theme, invert, secondary }) =>
-    invert ? theme.background1 : secondary ? theme.textTertiary : theme.textPrimary};
+    invert ? theme.background1 : secondary ? colord(theme.textPrimary).alpha(0.1).toHex() : theme.textPrimary};
   color: ${({ theme, invert, secondary }) =>
     invert ? theme.textPrimary : secondary ? theme.textPrimary : colord(theme.textPrimary).invert().toHex()};
   --gradient-x: 50%;
