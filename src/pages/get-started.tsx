@@ -161,11 +161,6 @@ const PageContent = () => {
 
 export default GetStartedPage
 
-const cardVariants = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1 }
-}
-
 const GetAlphSection = () => {
   const { treasureImage } = useStaticQuery<Queries.GetStartedPageQuery>(exchangesQuery)
 
