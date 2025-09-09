@@ -1,6 +1,7 @@
 ---
 date: 2024-09-03 16:14:48.298000+00:00
 description: Bridge assets from and to BNB Smart Chain Testnet
+spotlight: false
 featuredImage: image_39fa5f38bb.png
 title: The BSC/Alephium Bridge is live on Testnet!
 ---

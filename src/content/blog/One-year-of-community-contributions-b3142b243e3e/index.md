@@ -2,6 +2,7 @@
 date: 2023-01-13 16:15:05.799000+00:00
 description: A year ago, Alephium created the community rewards and the grants programs
   to encourage the involvement of the community in all aspects of…
+spotlight: false
 featuredImage: image_2a378a7f2f.gif
 title: One year of community contributions
 ---

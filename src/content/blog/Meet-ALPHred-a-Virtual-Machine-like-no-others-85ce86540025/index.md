@@ -2,6 +2,7 @@
 date: 2023-01-18 14:30:50.649000+00:00
 description: This is the third of a series of technical innovations brought by Alephium.
   Find the previous ones here (PolW) and here (sUTXO). Here we…
+spotlight: false
 featuredImage: image_de012354c9.jpeg
 title: Meet ALPHred, a Virtual Machine like no others
 ---

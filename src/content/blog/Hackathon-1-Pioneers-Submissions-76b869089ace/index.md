@@ -2,6 +2,7 @@
 date: 2024-03-11 16:12:51.964000+00:00
 description: After two weeks of intense coding, debugging, building & good vibes,
   teams or individuals have submitted their projects. While the jury is…
+spotlight: false
 featuredImage: image_eb8b965219.png
 title: 'Hackathon #1- Pioneers — Submissions'
 ---

@@ -2,6 +2,7 @@
 date: 2023-11-06 15:29:26.299000+00:00
 description: Welcome to the second developer workshop! If you missed the first one,
   we dived into the basics of Ralph programming language, along with…
+spotlight: false
 featuredImage: image_7c0c9f04f9.png
 title: 'Second Developer Workshop: Re-implementing Friend.Tech’s Smart Contract in
   Ralph'

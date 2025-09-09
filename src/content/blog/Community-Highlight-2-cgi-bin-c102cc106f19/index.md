@@ -2,6 +2,7 @@
 date: 2022-11-03 16:05:01.716000+00:00
 description: 'This is episode #2 in our series of highlights where once in a while
   we put the spotlight on one active member of our community. This is an…'
+spotlight: false
 featuredImage: image_30dfdcb286.jpg
 title: 'Community Highlight #2, cgi-bin'
 ---

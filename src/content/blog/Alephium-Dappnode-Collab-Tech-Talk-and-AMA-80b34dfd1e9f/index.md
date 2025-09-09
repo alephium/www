@@ -2,6 +2,7 @@
 date: 2022-10-28 14:13:38.218000+00:00
 description: We are really proud of Alephium’s addition as a part of Dappnode’s package
   offering! We share Dappnode’s commitment to a decentralized…
+spotlight: false
 featuredImage: image_91b67983ba.png
 title: 'Alephium &amp; Dappnode: Collab, Tech Talk, and AMA'
 ---

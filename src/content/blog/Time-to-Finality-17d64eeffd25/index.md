@@ -1,6 +1,7 @@
 ---
 date: 2022-09-20 14:05:54.857000+00:00
 description: A Technical Promenade, part 3
+spotlight: false
 featuredImage: image_1a832ca4ff.jpg
 title: Time to Finality
 ---

@@ -1,6 +1,7 @@
 ---
 date: 2023-03-30 13:10:04.628000+00:00
 description: New features & tools to support a thriving Alephium Ecosystem
+spotlight: false
 featuredImage: image_ae3e3a21fd.jpeg
 title: The Leman Network Upgrade is Live!
 ---

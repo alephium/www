@@ -2,6 +2,7 @@
 date: 2022-09-06 13:19:46.098000+00:00
 description: On Thursday, August 25th, 2022, Alephium’s team conducted an AMA on our
   Discord as a follow-up discussion with Cheng Wang, inventor of…
+spotlight: false
 featuredImage: image_1d46b897a3.jpg
 title: 'TECH TALK #1 — Proof-of-Less-Work AMA'
 ---

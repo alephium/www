@@ -1,6 +1,7 @@
 ---
 date: 2023-03-17 13:57:08.047000+00:00
 description: Full Node v2.0.0 released; All nodes need to update before activation
+spotlight: false
 featuredImage: image_241f33d0fd.jpg
 title: Leman Network Upgrade Activation on March 30th!
 ---

@@ -22,5 +22,6 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Spotlight', name: 'spotlight', widget: 'boolean' }
       - { label: 'Featured Image', name: 'featuredImage', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }

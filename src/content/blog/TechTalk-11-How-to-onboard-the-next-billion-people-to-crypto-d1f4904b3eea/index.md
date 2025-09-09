@@ -2,6 +2,7 @@
 date: 2023-08-02 16:02:20.857000+00:00
 description: 'Mikaël Vaivre is Alephium’s lead front-end developer, and he’s been
   the guest of our TechTalk #11! While Mika is fairly discreet, and…'
+spotlight: false
 featuredImage: image_50aac2130d.png
 title: 'TechTalk #11 — How to onboard the next billion people to crypto?'
 ---

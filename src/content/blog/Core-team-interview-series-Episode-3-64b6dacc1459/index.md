@@ -1,6 +1,7 @@
 ---
 date: 2022-03-21 16:28:48.809000+00:00
 description: Presenting the humans developing the Back-end.
+spotlight: false
 featuredImage: image_e6ce249ae6.jpg
 title: Core team interview series. Episode 3
 ---

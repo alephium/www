@@ -2,6 +2,7 @@
 date: 2019-05-10 18:19:50.706000+00:00
 description: Alephium aims to scale blockchains to handle tens of thousands of transactions
   per second (10,000+ TPS) in an open, permissionless network.
+spotlight: false
 featuredImage: image_73be516f6b.png
 title: Alephium Pushes the Boundaries of Blockchain Performance &amp; Scalability
 ---

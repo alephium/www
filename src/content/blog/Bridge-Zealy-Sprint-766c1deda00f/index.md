@@ -1,6 +1,7 @@
 ---
 date: 2023-11-29 14:06:15.371000+00:00
 description: Spread the word about the bridge & share 3’000 $ALPH in prize!
+spotlight: false
 featuredImage: image_0a276df54e.jpg
 title: Bridge Zealy Sprint
 ---

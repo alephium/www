@@ -2,6 +2,7 @@
 date: 2022-11-17 17:18:14.134000+00:00
 description: Combining the expressiveness of the account model & security of the UTXO
   model.
+spotlight: false
 featuredImage: image_0e0226c293.jpg
 title: An introduction to the stateful UTXO model
 ---

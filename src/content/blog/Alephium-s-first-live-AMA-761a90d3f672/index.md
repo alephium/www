@@ -2,6 +2,7 @@
 date: 2021-11-05 15:36:35.780000+00:00
 description: On November 3rd, 2021 the Alephium team answered all the questions sourced
   from the community. A warm thank you to everyone for asking so…
+spotlight: false
 featuredImage: image_0b65cf3212.jpg
 title: Alephium’s first live AMA
 ---

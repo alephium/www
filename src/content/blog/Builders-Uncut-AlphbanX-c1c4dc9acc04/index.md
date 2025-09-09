@@ -2,6 +2,7 @@
 date: 2024-09-18 09:04:15.307000+00:00
 description: This interview was conducted around the Athens Builders Meetup, which
   took place at the end of June 2024. If you’re just discovering…
+spotlight: false
 featuredImage: image_7a7462f53a.png
 title: Builders Uncut — AlphbanX
 ---

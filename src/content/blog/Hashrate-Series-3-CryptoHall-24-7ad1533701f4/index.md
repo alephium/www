@@ -2,6 +2,7 @@
 date: 2024-09-18 09:07:51.547000+00:00
 description: The blockchain hashrate is directly correlated with network security.
   As a Proof-of-work blockchain, Alephium relies on active ecosystem…
+spotlight: false
 featuredImage: image_9fb00a1330.png
 title: 'Hashrate Series #3: CryptoHall 24'
 ---

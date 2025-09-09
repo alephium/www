@@ -2,6 +2,7 @@
 date: 2022-12-15 16:18:10.111000+00:00
 description: Once in a while, the spotlight is put on one active member of the Alephium
   community. This is an opportunity to showcase community members’…
+spotlight: false
 featuredImage: image_5945f1f277.png
 title: 'Community Highlight #3, digdug'
 ---

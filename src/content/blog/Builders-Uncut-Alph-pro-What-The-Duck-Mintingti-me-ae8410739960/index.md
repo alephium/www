@@ -2,6 +2,7 @@
 date: 2024-08-14 13:43:07.996000+00:00
 description: This interview was conducted around the Athens Builders Meetup, which
   took place at the end of June 2024. If you’re just discovering…
+spotlight: false
 featuredImage: image_ff04b57175.png
 title: Builders Uncut —Alph.pro, What The Duck &amp; Mintingti.me
 ---

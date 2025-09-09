@@ -2,6 +2,7 @@
 date: 2024-01-11 16:30:53.602000+00:00
 description: The Alephium blockchain, like many decentralized networks, relies heavily
   on the contributions of miners to maintain its integrity and…
+spotlight: false
 featuredImage: image_e1d2ef76d7.png
 title: 'Miners’ Highlight #1 — Jake aka Hiram Abiff .’.'
 ---

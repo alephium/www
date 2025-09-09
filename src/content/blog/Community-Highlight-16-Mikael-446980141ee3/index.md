@@ -2,6 +2,7 @@
 date: 2024-03-12 10:20:23.845000+00:00
 description: Regularly, we put the spotlight on an active member of the Alephium community.
   This is an opportunity to showcase their contributions to…
+spotlight: false
 featuredImage: image_da6bf8d8d8.jpg
 title: 'Community Highlight #16, Mikael'
 ---

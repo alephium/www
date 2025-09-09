@@ -2,6 +2,7 @@
 date: 2023-06-20 13:23:04.857000+00:00
 description: 'This article follows Alephium’s Tech Talk #10, where Alexis Roussel
   from NYM delves into the fascinating realm of mix networks and their…'
+spotlight: false
 featuredImage: image_32222cf239.jpg
 title: 'Tech Talk #10 — NYM, Alexis Roussel &amp; the Future of Privacy'
 ---

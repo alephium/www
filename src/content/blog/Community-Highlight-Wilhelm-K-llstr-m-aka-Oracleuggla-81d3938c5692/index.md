@@ -2,6 +2,7 @@
 date: 2022-10-14 09:10:11.698000+00:00
 description: Alephium takes an organic approach to community building. We believe
   actions speak louder than words…
+spotlight: false
 featuredImage: image_b43f0a37be.jpeg
 title: Community Highlight, Wilhelm Källström aka “Oracleuggla”
 ---

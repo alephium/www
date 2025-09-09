@@ -2,6 +2,7 @@
 date: 2023-12-18 16:57:35.288000+00:00
 description: Following the success of our previous community initiatives, we’re thrilled
   to introduce the next chapter in Alephium’s community…
+spotlight: false
 featuredImage: image_a2ab6ff67c.jpg
 title: Alephium launches its Ambassador Program
 ---

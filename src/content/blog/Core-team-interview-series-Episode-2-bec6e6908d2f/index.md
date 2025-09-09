@@ -1,6 +1,7 @@
 ---
 date: 2022-03-14 12:35:58.446000+00:00
 description: Presenting the humans behind operations, marketing and community.
+spotlight: false
 featuredImage: image_a509233072.jpg
 title: Core team interview series. Episode 2
 ---

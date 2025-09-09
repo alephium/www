@@ -1,6 +1,7 @@
 ---
 date: 2024-01-19 14:13:31.154000+00:00
 description: Applications are open, apply now!
+spotlight: true
 featuredImage: image_f92c0445fe.jpg
 title: 'Alephium #1 Hackathon — Pioneers!'
 ---

@@ -1,6 +1,7 @@
 ---
 date: 2023-07-11 15:29:33.781000+00:00
 description: “Using the SDK to write a simple dApp” with @h0ngcha0 & @polarker
+spotlight: false
 featuredImage: image_720f550b88.png
 title: First Online Dev Workshop!
 ---

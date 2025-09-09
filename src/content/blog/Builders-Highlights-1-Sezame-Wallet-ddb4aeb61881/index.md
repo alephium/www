@@ -2,6 +2,7 @@
 date: 2023-06-23 13:47:11.907000+00:00
 description: Alephium’s ecosystem thrives with developers building amazing stuff on
   top of Alephium (services, dApps, etc…) that deliver a unique…
+spotlight: false
 featuredImage: image_e2c600aac0.png
 title: 'Builders Highlights #1: Sezame Wallet'
 ---
