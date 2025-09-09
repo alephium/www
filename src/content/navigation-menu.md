@@ -45,6 +45,8 @@ menuItems:
         link: /get-started
       - title: Ambassador Program
         link: /ambassador
+      - title: Grants
+        link: https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md
       - title: Online communities
         link: /communities
 button:
