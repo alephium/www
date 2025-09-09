@@ -14,6 +14,7 @@ const CardText = ({ children, ...textElementProps }: CardTextProps) => (
 const CardTextStyled = styled(TextElement)`
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   padding: var(--spacing-3);
   gap: var(--spacing-2);
 
