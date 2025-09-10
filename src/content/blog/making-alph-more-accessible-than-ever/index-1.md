@@ -5,6 +5,10 @@ date: 2025-03-11T12:00:00.000Z
 spotlight: true
 featuredImage: onramper1.webp
 ---
+# Making ALPH More Accessible Than Ever
+
+![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*rJSxs-EP2nWkQMuNp6KY0w.png)
+
 One of the biggest barriers in crypto is onboarding. Moving from a bank account or credit card to an on-chain wallet can be a complicated, frustrating process with too many steps, stopping many users in their tracks.
 
 That’s why Alephium has integrated Onramper, a leading fiat-to-crypto on-ramp aggregator. This integration allows users to buy ALPH seamlessly with fiat currency in a single step, eliminating unnecessary friction.
@@ -66,16 +70,10 @@ Aggregating multiple on-ramp providers ensures global access, more payment optio
 
 Please note that, even though Onramper supports [28+ providers](https://docs.onramper.com/docs/onramp-providers), as a Layer 1 blockchain, Alephium must integrate each on-ramp provider separately. Below are the currently supported providers:
 
-*   [Alchemy Pay](https://alchemypay.org/)
-
-
-*   [Banxa](https://banxa.com/)
-
-
-*   [GateConnect](https://gate.lt/connect/)
-
-
-*   [TransFi](https://www.transfi.com/)
+* [Alchemy Pay](https://alchemypay.org/)
+* [Banxa](https://banxa.com/)
+* [GateConnect](https://gate.lt/connect/)
+* [TransFi](https://www.transfi.com/)
 
   \*\*
 
