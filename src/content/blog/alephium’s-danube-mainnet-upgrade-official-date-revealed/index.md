@@ -5,6 +5,10 @@ date: 2025-07-02T12:01:00.000Z
 spotlight: true
 featuredImage: danube2.webp
 ---
+# Alephium’s Danube Mainnet Upgrade: Official Date Revealed!
+
+![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*VJ8D8Z0vRv4TWOzidSMjqg.png)
+
 We are thrilled to announce that Alephium’s highly anticipated Danube network upgrade will activate on **Tuesday, July 15, 2025, at 12:00 GMT+02:00**!
 
 Danube is not just another upgrade. It is a leap forward for Web3 usability, scalability, and security. This milestone brings Alephium closer to the Web3 experience we were all promised: fast, accessible, and truly decentralized.
