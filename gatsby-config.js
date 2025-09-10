@@ -35,6 +35,12 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: 'gatsby-remark-embed-video',
+            options: {
+              width: 700
+            }
+          },
+          {
             resolve: 'gatsby-remark-images',
             options: {
               linkImagesToOriginal: false
@@ -44,6 +50,12 @@ module.exports = {
             resolve: `gatsby-remark-images-medium-zoom`,
             options: {
               //...
+            }
+          },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`
             }
           }
         ]
@@ -96,7 +108,12 @@ module.exports = {
         }
       }
     },
-    `gatsby-plugin-decap-cms`,
+    {
+      resolve: 'gatsby-plugin-decap-cms',
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`
+      }
+    },
     {
       resolve: `gatsby-plugin-feed`,
       options: {
