@@ -36,17 +36,16 @@ const NewsPostTemplate = (props: PageProps<Queries.NewsPostBySlugQuery>) => {
 
           <SectionDivider />
 
-          <TextElement isSmall>
-            <h1>{post?.frontmatter?.title}</h1>
-          </TextElement>
-
-          <GatsbyImageWrapper
-            image={post?.frontmatter?.featuredImage?.childImageSharp?.gatsbyImageData}
-            alt={post?.frontmatter?.title ?? ''}
-            style={{ width: '100%', height: 'auto' }}
-          />
-
           <ArticleStyled itemScope itemType="http://schema.org/Article">
+            <TextElement isSmall>
+              <h1>{post?.frontmatter?.title}</h1>
+            </TextElement>
+
+            <GatsbyImageWrapper
+              image={post?.frontmatter?.featuredImage?.childImageSharp?.gatsbyImageData}
+              alt={post?.frontmatter?.title ?? ''}
+              style={{ width: '100%', height: 'auto', marginBottom: 'var(--spacing-6)' }}
+            />
             <TextElement isSmall dangerouslySetInnerHTML={{ __html: post?.html || '' }} itemProp="articleBody" />
           </ArticleStyled>
 
@@ -140,8 +139,6 @@ const DateAndTimeToRead = styled.p`
 `
 
 const ArticleStyled = styled.article`
-  margin-top: var(--spacing-12);
-
   * {
     width: 100%;
     margin-left: auto;
@@ -155,7 +152,11 @@ const ArticleStyled = styled.article`
   }
 
   p {
-    margin: var(--spacing-6) auto !important;
+    margin: var(--spacing-6) auto;
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
   figcaption {
