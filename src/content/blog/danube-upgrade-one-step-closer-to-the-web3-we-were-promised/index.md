@@ -1,7 +1,7 @@
 ---
 title: "Danube Upgrade: One Step Closer to The Web3 We Were Promised"
 description: Danube Upgrade Update
-date: 2025-05-09T12:00:00.000Z
+date: 2025-03-07T12:00:00.000Z
 spotlight: true
 featuredImage: danube1.webp
 ---
