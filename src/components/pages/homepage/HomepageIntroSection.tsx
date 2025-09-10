@@ -5,12 +5,10 @@ import { useTheme } from 'styled-components'
 
 import BentoLayout, { BentoItem } from '../../BentoLayout'
 import Card from '../../Card'
+import CardText from '../../CardText'
 import CardImage from '../../customPageComponents/CardImage'
 import SubheaderContent from '../../customPageComponents/SubheaderContent'
 import SubpageSection from '../../customPageComponents/SubpageSection'
-import TextCard from '../../customPageComponents/TextCard'
-import TextCardContent from '../../customPageComponents/TextCardContent'
-import TextElement from '../../customPageComponents/TextElement'
 import GradientText from '../../GradientText'
 
 export const homepageIntroQuery = graphql`
@@ -129,55 +127,47 @@ const HomepageIntroSection = () => {
 
   return (
     <SubpageSection id="intro" overflow="visible">
-      <TextElement>
+      <CardText>
         <h2>Quick start</h2>
         <p>Dive into the Alephium ecosystem 🐠</p>
-      </TextElement>
+      </CardText>
       <SubheaderContent>
         <BentoLayout columns={4} animateItems={true}>
           <BentoItem colSpan={2} rowSpan={2}>
-            <TextCard url={cardsData[0].link.url} border>
+            <Card url={cardsData[0].link.url} border>
               <CardImage image={cardsData[0].image} />
-              <TextCardContent>
-                <TextElement>
-                  <h4 style={{ color: cardsData[0].color }}>{cardsData[0].title}</h4>
-                  <p>{cardsData[0].description}</p>
-                </TextElement>
-              </TextCardContent>
-            </TextCard>
+              <CardText>
+                <h4 style={{ color: cardsData[0].color }}>{cardsData[0].title}</h4>
+                <p>{cardsData[0].description}</p>
+              </CardText>
+            </Card>
           </BentoItem>
           <BentoItem colSpan={1} rowSpan={1}>
-            <TextCard url={cardsData[1].link.url} border>
-              <TextCardContent>
-                <TextElement>
-                  <h4>
-                    <GradientText>{cardsData[1].title}</GradientText>
-                  </h4>
-                  <p>{cardsData[1].description}</p>
-                </TextElement>
-              </TextCardContent>
-            </TextCard>
+            <Card url={cardsData[1].link.url} border>
+              <CardText>
+                <h4>
+                  <GradientText>{cardsData[1].title}</GradientText>
+                </h4>
+                <p>{cardsData[1].description}</p>
+              </CardText>
+            </Card>
           </BentoItem>
           <BentoItem colSpan={1} rowSpan={2}>
-            <TextCard url={cardsData[3].link.url} border>
+            <Card url={cardsData[3].link.url} border>
               <CardImage image={cardsData[3].image} zoom={{ scale: 1.5, x: 70, y: 30 }} />
-              <TextCardContent>
-                <TextElement>
-                  <h4 style={{ color: cardsData[3].color }}>{cardsData[3].title}</h4>
-                  <p>{cardsData[3].description}</p>
-                </TextElement>
-              </TextCardContent>
-            </TextCard>
+              <CardText>
+                <h4 style={{ color: cardsData[3].color }}>{cardsData[3].title}</h4>
+                <p>{cardsData[3].description}</p>
+              </CardText>
+            </Card>
           </BentoItem>
           <BentoItem colSpan={1} rowSpan={1}>
-            <TextCard url={cardsData[2].link.url} border>
-              <TextCardContent>
-                <TextElement>
-                  <h4 style={{ color: cardsData[2].color }}>{cardsData[2].title}</h4>
-                  <p>{cardsData[2].description}</p>
-                </TextElement>
-              </TextCardContent>
-            </TextCard>
+            <Card url={cardsData[2].link.url} border>
+              <CardText>
+                <h4 style={{ color: cardsData[2].color }}>{cardsData[2].title}</h4>
+                <p>{cardsData[2].description}</p>
+              </CardText>
+            </Card>
           </BentoItem>
         </BentoLayout>
       </SubheaderContent>

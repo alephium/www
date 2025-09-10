@@ -12,6 +12,7 @@ interface ButtonProps {
   onClick?: () => void
   url?: string
   squared?: boolean
+  secondary?: boolean
   textAlign?: 'left' | 'center'
   big?: boolean
   className?: string
@@ -22,7 +23,7 @@ interface ButtonProps {
   invert?: boolean
 }
 
-const Button = ({ onClick, className, children, url, disabled, highlight, squared }: ButtonProps) => {
+const Button = ({ onClick, className, children, url, disabled, highlight, squared, secondary }: ButtonProps) => {
   const buttonRef = useRef<HTMLButtonElement>(null)
   const anchorRef = useRef<HTMLAnchorElement | Link<any>>(null)
   const x = useMotionValue(0.5)
@@ -65,7 +66,7 @@ const Button = ({ onClick, className, children, url, disabled, highlight, square
   const content = (
     <>
       {children}
-      {!disabled && <ArrowStyled className="arrow" isExternal={!url?.startsWith('/')} />}
+      {url && !disabled && <ArrowStyled className="arrow" isExternal={!url?.startsWith('/')} />}
       {highlight && <GradientBorder squared={squared} />}
     </>
   )
@@ -106,7 +107,7 @@ const getGradient = (theme: DefaultTheme) => `
 `
 
 const getBorderRadius = (squared?: boolean) => (squared ? '9px' : '50px')
-const getInnerBorderRadius = (squared?: boolean) => (squared ? 'calc(12px - 3px)' : 'calc(50px - 3px)')
+const getInnerBorderRadius = (squared?: boolean) => (squared ? 'calc(12px - 5px)' : 'calc(50px - 5px)')
 
 const GradientBorder = styled.div<{ squared?: boolean }>`
   position: absolute;
@@ -153,8 +154,10 @@ const ArrowStyled = styled(Arrow)<{ isExternal?: boolean }>`
 `
 
 const StyledButton = styled(Button)`
-  background-color: ${({ theme, invert }) => (invert ? theme.background1 : theme.textPrimary)};
-  color: ${({ theme, invert }) => (invert ? theme.textPrimary : colord(theme.textPrimary).invert().toHex())};
+  background-color: ${({ theme, invert, secondary }) =>
+    invert ? theme.background1 : secondary ? colord(theme.textPrimary).alpha(0.1).toHex() : theme.textPrimary};
+  color: ${({ theme, invert, secondary }) =>
+    invert ? theme.textPrimary : secondary ? theme.textPrimary : colord(theme.textPrimary).invert().toHex()};
   --gradient-x: 50%;
   --gradient-y: 50%;
   border-radius: ${({ squared }) => getBorderRadius(squared)};
@@ -165,6 +168,7 @@ const StyledButton = styled(Button)`
   justify-content: ${({ textAlign }) => (textAlign === 'left' ? 'flex-start' : 'center')};
   position: relative;
   z-index: 0;
+  border: 0;
 
   align-items: center;
   font-weight: var(--fontWeight-semiBold);
@@ -190,7 +194,7 @@ const StyledButton = styled(Button)`
   .arrow {
     width: ${({ big }) => (big ? '16px' : '14px')};
     margin-left: ${({ big }) => (big ? 'var(--spacing-2)' : 'var(--spacing-1)')};
-    fill: ${({ theme }) => colord(theme.textPrimary).invert().toHex()};
+    fill: ${({ theme, secondary }) => (secondary ? theme.textPrimary : colord(theme.textPrimary).invert().toHex())};
   }
 
   ${({ highlight }) =>

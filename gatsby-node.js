@@ -26,15 +26,15 @@ exports.onCreateWebpackConfig = ({ actions }) => {
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
-  // Define a template for blog post
-  const blogPost = path.resolve(`./src/templates/blog-post.tsx`)
+  // Define a template for news posts
+  const newsPost = path.resolve(`./src/templates/news-post.tsx`)
 
-  // Get all markdown blog posts sorted by date
+  // Get all markdown news posts sorted by date
   const result = await graphql(
     `
       {
         allMarkdownRemark(
-          filter: { fields: { contentType: { eq: "blog" } } }
+          filter: { fields: { contentType: { eq: "news" } } }
           sort: { frontmatter: { date: DESC } }
           limit: 1000
         ) {
@@ -53,14 +53,14 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   )
 
   if (result.errors) {
-    reporter.panicOnBuild(`There was an error loading your blog posts`, result.errors)
+    reporter.panicOnBuild(`There was an error loading your news posts`, result.errors)
     return
   }
 
   const posts = result.data.allMarkdownRemark.nodes
 
-  // Create blog posts pages
-  // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
+  // Create news posts pages
+  // But only if there's at least one markdown file found at "content/news" (defined in gatsby-config.js)
   // `context` is available in the template as a prop and as a variable in GraphQL
 
   if (posts.length > 0) {
@@ -70,7 +70,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
       createPage({
         path: post.fields.slug,
-        component: blogPost,
+        component: newsPost,
         context: {
           id: post.id,
           slug: post.fields.slug,
@@ -95,7 +95,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       slugPrefix = `/${type}`
     }
 
-    if (type === 'blog') {
+    if (type === 'news') {
       slugPrefix = `${slugPrefix}/post`
     }
 
@@ -120,7 +120,7 @@ exports.createSchemaCustomization = ({ actions }) => {
 
   // Also explicitly define the Markdown frontmatter
   // This way the "MarkdownRemark" queries will return `null` even when no
-  // blog posts are stored inside "content/blog" instead of returning an error
+  // news posts are stored inside "content/news" instead of returning an error
   createTypes(`
     type SiteSiteMetadata {
       author: Author

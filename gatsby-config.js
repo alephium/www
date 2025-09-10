@@ -77,8 +77,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/content/blog`,
-        name: `blog`
+        path: `${__dirname}/src/content/news`,
+        name: `news`
       }
     },
     {
@@ -114,7 +114,7 @@ module.exports = {
               ),
             query: `{
               allMarkdownRemark(
-                filter: {fields: {contentType: {eq: "blog"}}}
+                filter: {fields: {contentType: {eq: "news"}}}
                 sort: {frontmatter: {date: DESC}}
               ) {
                 nodes {
@@ -131,7 +131,7 @@ module.exports = {
               }
             }`,
             output: '/rss.xml',
-            title: "Alephium's Blog RSS Feed"
+            title: "Alephium's News RSS Feed"
           }
         ]
       }

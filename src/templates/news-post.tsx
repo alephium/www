@@ -6,7 +6,7 @@ import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import SectionDivider from '../components/SectionDivider'
 
-const BlogPostTemplate = (props: PageProps<Queries.BlogPostBySlugQuery>) => {
+const NewsPostTemplate = (props: PageProps<Queries.NewsPostBySlugQuery>) => {
   const post = props.data.markdownRemark
   const { previous, next } = props.data
 
@@ -19,10 +19,10 @@ const BlogPostTemplate = (props: PageProps<Queries.BlogPostBySlugQuery>) => {
       }}
       content={
         <SubpageSection narrow>
-          <BackToBlog>
+          <BackToHome>
             <span>← </span>
-            <StyledGatsbyLink to="/blog">Back to blog</StyledGatsbyLink>
-          </BackToBlog>
+            <StyledGatsbyLink to="/news">Back to homepage</StyledGatsbyLink>
+          </BackToHome>
           <DateAndTimeToRead>
             {post?.frontmatter?.date && (
               <>
@@ -41,7 +41,7 @@ const BlogPostTemplate = (props: PageProps<Queries.BlogPostBySlugQuery>) => {
 
           <SectionDivider />
 
-          <nav className="blog-post-nav">
+          <nav className="news-post-nav">
             <ul
               style={{
                 display: `flex`,
@@ -79,10 +79,10 @@ const BlogPostTemplate = (props: PageProps<Queries.BlogPostBySlugQuery>) => {
   )
 }
 
-export default BlogPostTemplate
+export default NewsPostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($id: String!, $previousPostId: String, $nextPostId: String) {
+  query NewsPostBySlug($id: String!, $previousPostId: String, $nextPostId: String) {
     markdownRemark(id: { eq: $id }) {
       id
       excerpt(pruneLength: 160)
@@ -122,7 +122,7 @@ const StyledGatsbyLink = styled(Link)`
   color: ${({ theme }) => theme.textPrimary};
 `
 
-const BackToBlog = styled.div``
+const BackToHome = styled.div``
 
 const DateAndTimeToRead = styled.p`
   color: ${({ theme }) => theme.textSecondary};

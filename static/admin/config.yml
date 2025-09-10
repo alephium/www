@@ -11,9 +11,9 @@ publish_mode: editorial_workflow
 media_folder: 'src/images/uploads'
 
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'src/content/blog'
+  - name: 'posts'
+    label: 'Posts'
+    folder: 'src/content/news'
     create: true
     path: '{{slug}}/index'
     media_folder: ''
