@@ -7,10 +7,6 @@ featuredImage: image_0b65cf3212.jpg
 title: Alephium’s first live AMA
 ---
 
-### Alephium’s first live AMA
-
-![](image_0b65cf3212.jpg)
-
 ### On November 3rd, 2021 the Alephium team answered all the questions sourced from the community. A warm thank you to everyone for asking so many interesting questions! Below you will find the transcript of the AMA. Each question deep links to the corresponding passage in the video.
 
 <figure id="2f10" class="graf graf--figure graf--iframe graf-after--h3">

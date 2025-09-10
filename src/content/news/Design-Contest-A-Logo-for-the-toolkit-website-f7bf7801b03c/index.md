@@ -6,10 +6,6 @@ featuredImage: image_bc20f08d26.jpg
 title: 'Design Contest: A Logo for the toolkit website!'
 ---
 
-### **Design Contest: A Logo for the toolkit website!**
-
-![](image_bc20f08d26.jpg)
-
 Propose a design for the Alephium Toolkit website and win 1500 \$ALPH!
 
 The core team released the Multisig Wallet Creation tool last week, the first in the <a href="https://alephium.github.io/alephium-toolkit/" class="markup--anchor markup--p-anchor" data-href="https://alephium.github.io/alephium-toolkit/" rel="noopener" target="_blank">Alephium Toolkit</a>! <a href="https://medium.com/@alephium/alephium-multisig-gui-is-here-4b23bec7e2f" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/alephium-multisig-gui-is-here-4b23bec7e2f" target="_blank">Here</a>, you’ll find a detailed tutorial on how to use it. The toolkit is a simple web app with handy tools for wallets, tokens, and NFTs. It’s still in the early stage of development, but the long-term goals are to provide:

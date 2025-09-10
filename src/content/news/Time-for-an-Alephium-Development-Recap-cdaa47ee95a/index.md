@@ -7,11 +7,7 @@ featuredImage: image_4b8769284a.jpeg
 title: Time for an Alephium Development Recap
 ---
 
-### Time for an Alephium Development Recap
-
 #### Alephium has made great progress lately and a lot of work has been put down on various repositories. It’s time for an update!
-
-![](image_4b8769284a.jpeg)
 
 ### Full-Node
 

@@ -7,10 +7,6 @@ featuredImage: image_a2ab6ff67c.jpg
 title: Alephium launches its Ambassador Program
 ---
 
-### **Alephium launches its Ambassador Program**
-
-![](image_a2ab6ff67c.jpg)
-
 Following the success of our previous community initiatives, we’re thrilled to introduce the next chapter in Alephium’s community engagement: the Ambassador program!
 
 ### **The Evolution of Alephium’s Community Engagement**

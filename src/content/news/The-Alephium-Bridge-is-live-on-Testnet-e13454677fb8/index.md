@@ -7,14 +7,7 @@ featuredImage: image_9ee06c07f7.png
 title: The Alephium Bridge is live on Testnet!
 ---
 
-### The Alephium Bridge is live on Testnet!
-
 #### Bridge assets from and to Ethereum Goerli Testnet and BNB Smart Chain Testnet
-
-<figure id="5852" class="graf graf--figure graf-after--h4">
-<img src="image_9ee06c07f7.png" class="graf-image" data-image-id="1*0vI31sjZQuuALIG2s4dSXg.png" data-width="2874" data-height="1188" data-is-featured="true" />
-<figcaption>This is the hitchiker’s guide to Alephium’s first testnet bridge!</figcaption>
-</figure>
 
 A key to the future of Alephium is the ability to move tokens cross-chain, and since before the Leman Upgrade was ready, a lot of work has gone on working on the first bridge to another chain.
 

@@ -6,8 +6,6 @@ featuredImage: image_e28cc04c7e.jpg
 title: Alephium Core Contributors
 ---
 
-### Alephium Core Contributors
-
 #### Interviews of the humans behind Alephium.
 
 For its team, Alephium is privileging agility and efficiency over hyper-growth. We do not stay at a human size because we think it is more efficient, but because Alephium strives to be a decentralised, community driven project. This means the project in itself is much larger than a team can ever be. Communication, trust, openness and transparency is paramount in such a set-up.

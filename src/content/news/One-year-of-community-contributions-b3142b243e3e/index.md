@@ -7,11 +7,7 @@ featuredImage: image_2a378a7f2f.gif
 title: One year of community contributions
 ---
 
-### **One year of community contributions**
-
 _A_ <a href="https://medium.com/@alephium/introducing-community-rewards-f4638bbf14bf" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/introducing-community-rewards-f4638bbf14bf" target="_blank"><em>year ago</em></a>_, Alephium created the_ <a href="https://github.com/alephium/community" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/community" rel="noopener" target="_blank"><em>community rewards</em></a> _and the_ <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" rel="noopener" target="_blank"><em>grants programs</em></a> _to encourage the involvement of the community in all aspects of the project. It is still ongoing, head over to_ <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" rel="noopener" target="_blank"><em>GitHub and apply</em></a>_!_
-
-![](image_2a378a7f2f.gif)
 
 This is a retrospective of contributions by the Alephium community during 2022. Rewards and Grants have been distributed from the <a href="https://medium.com/@alephium/tokenomics-of-alephium-61d59b51029c" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/tokenomics-of-alephium-61d59b51029c" target="_blank">Ecosystem Development allocation</a> to deserving individuals & projects, many of which can be found in the <a href="https://github.com/alephium/awesome-alephium" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/awesome-alephium" rel="noopener" target="_blank">Awesome Alephium repository</a>. As it’s impossible to mention all contributions, this is not an exhaustive list!
 

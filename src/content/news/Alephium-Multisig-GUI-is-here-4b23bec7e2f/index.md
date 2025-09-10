@@ -6,13 +6,9 @@ featuredImage: image_674414bc53.png
 title: Alephium Multisig GUI is here!
 ---
 
-### **Alephium Multisig GUI is here!**
-
 #### The Alephium Toolkit: A Guide to Creating a Multisig Wallet
 
 _Multisignature wallets are essential to a maturing infrastructure, as they provide more granularity & security in managing \$ALPH wallets. The core-team is very happy to unveil the Multisig Wallet Creation tool, the first in the_ <a href="https://alephium.github.io/alephium-toolkit/" class="markup--anchor markup--p-anchor" data-href="https://alephium.github.io/alephium-toolkit/" rel="noopener" target="_blank"><em>Alephium Toolkit</em></a>_!_
-
-![](image_674414bc53.png)
 
 #### **Why use a Multisig?**
 

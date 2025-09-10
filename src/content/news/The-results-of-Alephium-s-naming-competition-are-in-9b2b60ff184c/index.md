@@ -6,8 +6,6 @@ featuredImage: image_48a75b1094.jpg
 title: The results of Alephium’s naming competition are in!
 ---
 
-### The results of Alephium’s naming competition are in!
-
 #### The team has spoken & the favorite name suggestions are 🥁
 
 ### Team’s Favorites

@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Page from '../components/customPageComponents/Page'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
+import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import SectionDivider from '../components/SectionDivider'
 
 const NewsPostTemplate = (props: PageProps<Queries.NewsPostBySlugQuery>) => {
@@ -34,6 +35,16 @@ const NewsPostTemplate = (props: PageProps<Queries.NewsPostBySlugQuery>) => {
           </DateAndTimeToRead>
 
           <SectionDivider />
+
+          <TextElement isSmall>
+            <h1>{post?.frontmatter?.title}</h1>
+          </TextElement>
+
+          <GatsbyImageWrapper
+            image={post?.frontmatter?.featuredImage?.childImageSharp?.gatsbyImageData}
+            alt={post?.frontmatter?.title ?? ''}
+            style={{ width: '100%', height: 'auto' }}
+          />
 
           <ArticleStyled itemScope itemType="http://schema.org/Article">
             <TextElement isSmall dangerouslySetInnerHTML={{ __html: post?.html || '' }} itemProp="articleBody" />
@@ -94,7 +105,7 @@ export const pageQuery = graphql`
         description
         featuredImage {
           childImageSharp {
-            gatsbyImageData(quality: 100)
+            gatsbyImageData(quality: 100, width: 700)
           }
         }
       }
@@ -129,6 +140,8 @@ const DateAndTimeToRead = styled.p`
 `
 
 const ArticleStyled = styled.article`
+  margin-top: var(--spacing-12);
+
   * {
     width: 100%;
     margin-left: auto;

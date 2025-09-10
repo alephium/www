@@ -7,10 +7,6 @@ featuredImage: image_ef7dfbeb3a.png
 title: What is Alephium? Unpacking UTXO Sharding, Proof of Less Work, and DeFi Security
 ---
 
-### What is Alephium? Unpacking UTXO Sharding, Proof of Less Work, and DeFi Security
-
-![](image_ef7dfbeb3a.png)
-
 Alephium attended Singapore Token 2049 and Maud was interviewed by Defiant news there. She shared a bit about Alephium’s history, the current state and what the future holds. The full video interview is available here:
 
 <figure id="421a" class="graf graf--figure graf--iframe graf-after--p">

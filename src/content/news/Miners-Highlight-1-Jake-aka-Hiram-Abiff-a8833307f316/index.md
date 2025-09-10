@@ -7,10 +7,6 @@ featuredImage: image_e1d2ef76d7.png
 title: 'Miners’ Highlight #1 — Jake aka Hiram Abiff .’.'
 ---
 
-### Miners’ Highlight \#2 — Jake aka Hiram Abiff .’.
-
-![](image_e1d2ef76d7.png)
-
 _The Alephium blockchain, like many decentralized networks, relies heavily on the contributions of miners to maintain its integrity and functionality. Recognizing the significance of these contributors, we are launching a series of articles titled “Miners’ Highlight.” By focusing on their contributions, challenges, and experiences, we aim to better understand the mining process and its importance. You can find_ <a href="https://medium.com/@alephium/miners-highlight-1-cedric-crispin-c4ed456f6d10" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/miners-highlight-1-cedric-crispin-c4ed456f6d10" target="_blank"><em>#1 here</em></a>_._
 
 _Hiram Abiff .’., a miner passionate about Alephium, decentralisation and family!_

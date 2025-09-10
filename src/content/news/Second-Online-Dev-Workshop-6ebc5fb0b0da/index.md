@@ -6,11 +6,7 @@ featuredImage: image_2e556d5afc.png
 title: Second Online Dev Workshop!
 ---
 
-### Second Online Dev Workshop!
-
 #### Re-implementing the friend.tech smart contract to RALPH with <a href="https://github.com/h0ngcha0" class="markup--anchor markup--h4-anchor" data-href="https://github.com/h0ngcha0" rel="noopener ugc nofollow noopener" target="_blank">@h0ngcha0</a>
-
-![](image_2e556d5afc.png)
 
 ### When? September 30th (sat) — 3PM CET and October 7th (sat) — 3PM CET Where? <a href="https://meet.google.com/icj-vxpo-hqn" class="markup--anchor markup--h3-anchor" data-href="https://meet.google.com/icj-vxpo-hqn" rel="nofollow noopener" target="_blank">https://meet.google.com/icj-vxpo-hqn</a> Who? <a href="https://github.com/h0ngcha0" class="markup--anchor markup--h3-anchor" data-href="https://github.com/h0ngcha0" rel="noopener ugc nofollow noopener" target="_blank">@h0ngcha0</a>
 

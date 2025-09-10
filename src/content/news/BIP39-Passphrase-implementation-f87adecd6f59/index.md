@@ -7,14 +7,7 @@ featuredImage: image_962a6c58d3.jpg
 title: BIP39 Passphrase implementation
 ---
 
-### BIP39 Passphrase implementation
-
 #### To keep giving our users more tools to secure their ALPH, we’ve implemented the BIP39 passphrase feature in the desktop wallet v1.3.0!
-
-<figure id="4e45" class="graf graf--figure graf-after--h4">
-<img src="image_962a6c58d3.jpg" class="graf-image" data-image-id="0*6IncMm2ok_TT0dYc" data-width="768" data-height="432" data-is-featured="true" />
-<figcaption>Desktop Wallet v1.3.0. Implementing BIP39 Passphrase specification from the Bitcoin Improvement Proposal</figcaption>
-</figure>
 
 **_DISCLAIMER:_** _THIS IS AN ADVANCED SECURITY FEATURE. YOU NEED TO BE VERY WELL ORGANIZED TO USE IT SAFELY. MOST PEOPLE PROBABLY DON’T NEED TO USE IT, AND RISK LOSING THEIR PASSPHRASE, THEREBY LOSING THEIR FUNDS._
 

@@ -6,11 +6,7 @@ featuredImage: image_a708db8d02.jpg
 title: Alephium Launches Browser Extension Wallet
 ---
 
-### Alephium Launches Browser Extension Wallet
-
 #### Download it and try the new features on Alephium Testnet!
-
-![](image_1054d4c1f5.jpg)
 
 > Important Notice
 

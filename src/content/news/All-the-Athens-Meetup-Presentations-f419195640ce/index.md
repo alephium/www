@@ -7,11 +7,7 @@ featuredImage: image_ef1fd8e881.jpg
 title: All the Athens Meetup Presentations!
 ---
 
-### **All the Athens Meetup Presentations!**
-
 _If you couldn’t come… Doesn’t mean you can’t see the presentations! Find them all here and watch them at your convenience._
-
-![](image_ef1fd8e881.jpg)
 
 Alephium’s first builders meetup was held in Athens June 21–23 2024. It has been an incredible gathering where the builders of ecosystem’s projects were able to meet & mingle with core contributors in an insightful, joyous & studious atmosphere.
 

@@ -7,11 +7,7 @@ featuredImage: image_da60a03774.jpg
 title: 'Community Highlight #4, MontaiL'
 ---
 
-### Community Highlight \#4, MontaiL
-
 #### Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’ contributions to the ecosystem, what drives them and what they are passionate about! More episodes: <a href="https://medium.com/@alephium/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" target="_blank"><em>#1 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-cgi-bin-c102cc106f19" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-cgi-bin-c102cc106f19" target="_blank"><em>#2 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-3-digdug-48a7ec868504" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-3-digdug-48a7ec868504" target="_blank"><em>#3 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-5-txn-71c4fd76ffe8" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-5-txn-71c4fd76ffe8" rel="noopener" target="_blank">#5 here</a> and <a href="https://medium.com/@alephium/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" rel="noopener" target="_blank">#6 here</a>.
-
-![](image_da60a03774.jpg)
 
 **This young blood is a creative and engaged Alephium OG. Joining the** <a href="https://alephium.org/discord" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/discord" rel="noopener" target="_blank"><strong>Discord</strong></a> **early on, he quickly made himself a comfortable spot in the community with a friendly can-do attitude, a steady supply of home-cooked memes and by helping many peers getting familiar with Alephium. Please give a warm applause for MontaiL!**
 

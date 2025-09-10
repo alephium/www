@@ -6,11 +6,7 @@ featuredImage: image_4b7ae278af.jpeg
 title: DEX Prototype Live on Testnet
 ---
 
-### DEX Prototype Live on Testnet
-
 #### Proof-of-Concept to showcase dApps building on Alephium
-
-![](image_4b7ae278af.jpeg)
 
 Alephium is excited to announce the release of a DEX prototype!
 

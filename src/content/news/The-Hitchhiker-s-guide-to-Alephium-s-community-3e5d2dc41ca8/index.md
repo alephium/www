@@ -7,10 +7,6 @@ featuredImage: image_b1b0cc53a2.png
 title: The Hitchhiker’s guide to Alephium’s community
 ---
 
-### **The Hitchhiker’s guide to Alephium’s community**
-
-![](image_b1b0cc53a2.png)
-
 _We are thrilled to see many new faces in our community! Alephium community channels have recently grown tremendously, and we thought it might be a good time to write a little community guide to ensure everyone knows where to find the informations they need & navigate our various channels._
 
 ### → Discord

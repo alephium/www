@@ -4,13 +4,8 @@ description: Welcome to the second developer workshop! If you missed the first o
   we dived into the basics of Ralph programming language, along with…
 spotlight: false
 featuredImage: image_7c0c9f04f9.png
-title: 'Second Developer Workshop: Re-implementing Friend.Tech’s Smart Contract in
-  Ralph'
+title: 'Second Developer Workshop: Re-implementing Friend.Tech’s Smart Contract in Ralph'
 ---
-
-### Second Developer Workshop: Re-implementing Friend.Tech’s Smart Contract in Ralph
-
-![](image_7c0c9f04f9.png)
 
 Welcome to the second developer workshop! If you missed the first one, we dived into the basics of Ralph programming language, along with its SDK and CLI build tools, crafting a simple token faucet. It’s been a fantastic experience, you can find it <a href="https://medium.com/@alephium/first-developer-workshop-build-a-token-faucet-a6bb2aa7bf68" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/first-developer-workshop-build-a-token-faucet-a6bb2aa7bf68" target="_blank">here</a> or on <a href="https://www.youtube.com/watch?v=YblUxEcXQuY" class="markup--anchor markup--p-anchor" data-href="https://www.youtube.com/watch?v=YblUxEcXQuY" rel="noopener" target="_blank">YouTube</a> and <a href="https://github.com/alephium/dev-workshop-01" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/dev-workshop-01" rel="noopener" target="_blank">GitHub</a>.
 

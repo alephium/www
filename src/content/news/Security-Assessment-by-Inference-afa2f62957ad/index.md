@@ -7,13 +7,6 @@ featuredImage: image_396067c811.jpeg
 title: Security Assessment by Inference
 ---
 
-### Security Assessment by Inference
-
-<figure id="2c69" class="graf graf--figure graf-after--h3">
-<img src="image_396067c811.jpeg" class="graf-image" data-image-id="1*KQRVW_KbI_dXN3R5C_PR_A.jpeg" data-width="1024" data-height="576" data-is-featured="true" />
-<figcaption>Security Assessment by Inference</figcaption>
-</figure>
-
 Alephium is committed to building and delivering a secure and reliable blockchain. With that in mind, we have recently completed a security assessment of critical parts of our code. This assessment was conducted by <a href="https://inference.ag/" class="markup--anchor markup--p-anchor" data-href="https://inference.ag/" rel="noopener" target="_blank">Inference</a> and specifically covered:
 
 - <a href="https://en.wikipedia.org/wiki/Cryptographic_primitive" class="markup--anchor markup--li-anchor" data-href="https://en.wikipedia.org/wiki/Cryptographic_primitive" rel="noopener" target="_blank">Cryptographic Primitives</a> in <a href="https://github.com/alephium/alephium/tree/master/crypto/src/main/sca" class="markup--anchor markup--li-anchor" data-href="https://github.com/alephium/alephium/tree/master/crypto/src/main/sca" rel="noopener" target="_blank">https://github.com/alephium/alephium/tree/master/crypto/src/main/sca la/org/alephium/crypto</a>, including AES, BLAKE2b, BLAKE3, Ed25519, BIP32 key derivation, and other algorithms;

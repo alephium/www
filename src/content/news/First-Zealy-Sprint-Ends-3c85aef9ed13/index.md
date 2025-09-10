@@ -7,14 +7,7 @@ featuredImage: image_99207765f0.jpg
 title: First Zealy Sprint Ends
 ---
 
-### First Zealy Sprint Ends
-
 _The Zealy sprint has come to an end on Dec 17h at 3PM CET, marking the end of a fun and instructive period about the Alephium Bridge and the broader ecosystem!_
-
-<figure id="3823" class="graf graf--figure graf-after--p">
-<img src="image_99207765f0.jpg" class="graf-image" data-image-id="0*IxGlAubqHVvM4itB" data-width="470" data-height="500" data-is-featured="true" />
-<figcaption><em>The creativity of Zealy Memeoooors is literally infinite</em></figcaption>
-</figure>
 
 We want to thank our community for its impressive participation in the Zealy sprint and add a special thanks to the <a href="https://twitter.com/Blockflow_DAO" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/Blockflow_DAO" rel="noopener" target="_blank">Blockflow Alliance DAO</a> which is co-sponsoring this first sprint edition!
 

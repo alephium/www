@@ -7,10 +7,6 @@ featuredImage: image_1e2a26d3d1.png
 title: Builders Uncut — Sezame Wallet
 ---
 
-### Builders Uncut — Sezame Wallet
-
-![](image_1e2a26d3d1.png)
-
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
 Here, Tobias (a founding member of <a href="https://sezame.app/" class="markup--anchor markup--p-anchor" data-href="https://sezame.app/" rel="noopener" target="_blank">Sezame Wallet</a>) discusses the project’s journey in the Alephium ecosystem. He highlights the creation of a mobile wallet with integrated cloud mining, making Alephium accessible to non-technical users, and shares their plans for the future. Find the full (slightly edited) transcript below if you prefer reading.

@@ -7,14 +7,7 @@ featuredImage: image_ec866fe64a.jpg
 title: And the winners of the video creation contest are…
 ---
 
-### And the winners of the video creation contest are…
-
 #### Back in March 2022, we launched a community video contest and the results are in!
-
-<figure id="27ce" class="graf graf--figure graf-after--h4">
-<img src="image_ec866fe64a.jpg" class="graf-image" data-image-id="0*i5LAF3AmPrunnZLb" data-width="936" data-height="527" data-is-featured="true" />
-<figcaption>Video creation contest</figcaption>
-</figure>
 
 After reaching the deadline for submission on the 15th of April, we had received a whopping fifteen (15) contributions from the video creators in our community. All of whom blessed us with their interpretation of how to best leverage motion design to explain what Alephium is, in a wide range of styles and expressions.
 

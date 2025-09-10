@@ -7,10 +7,6 @@ featuredImage: image_699016be4c.jpg
 title: Verification of bridge contracts, tokens &amp; token lists
 ---
 
-### **Verification of bridge contracts, tokens & token lists**
-
-![](image_699016be4c.jpg)
-
 > Note: This article was edited on Nov 20th, 2024 — Adding information regarding Binance Smart Chain contracts
 
 _As we’ve welcomed new users with the bridge, here’s a post so you can verify what you are interacting with._

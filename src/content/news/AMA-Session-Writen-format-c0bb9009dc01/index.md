@@ -6,11 +6,7 @@ featuredImage: image_bcc69de2ae.jpeg
 title: AMA Session — Writen format
 ---
 
-### AMA Session — Writen format
-
 #### All answers about the exciting new developments in Alephium’s ecosystem!
-
-![](image_bcc69de2ae.jpeg)
 
 On March 28th, Alephium held an <a href="https://www.youtube.com/watch?v=Gf1mDGddM2I" class="markup--anchor markup--p-anchor" data-href="https://www.youtube.com/watch?v=Gf1mDGddM2I" rel="noopener" target="_blank">AMA session</a> with the community, to answer questions about the <a href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a" target="_blank">Leman Network Upgrade</a>. This medium article has some of the most relevant questions.
 

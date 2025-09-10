@@ -7,14 +7,7 @@ featuredImage: image_4c7ef37863.jpg
 title: Alephium — H1 Project Update
 ---
 
-### **Alephium — H1 Project Update**
-
 #### The first half of 2022 was a vigorous but exciting, fun and rewarding period for Alephium in terms of milestones and growth. Here’s a look back at some of the highlights, what they meant for us, for the community and what we learned.
-
-<figure id="8d6d" class="graf graf--figure graf-after--h4 graf--trailing">
-<img src="image_4c7ef37863.jpg" class="graf-image" data-image-id="0*O0f5D-jMha9RR4C7" data-width="768" data-height="432" data-is-featured="true" />
-<figcaption>Alephium H1 Project update</figcaption>
-</figure>
 
 ---
 

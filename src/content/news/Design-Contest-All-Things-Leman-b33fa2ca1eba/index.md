@@ -6,11 +6,7 @@ featuredImage: image_61d13457bc.jpg
 title: 'Design Contest: All Things Leman'
 ---
 
-### Design Contest: All Things Leman
-
 #### The best design will be featured in Alephium’s SWALPH shop!
-
-![](image_61d13457bc.jpg)
 
 The Alephium community is invited to participate in a design contest to celebrate the <a href="https://medium.com/@alephium/leman-network-upgrade-activation-on-march-30th-606884904c0c" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/leman-network-upgrade-activation-on-march-30th-606884904c0c" target="_blank">Leman Network Upgrade activation</a>! Use your creativity to come up with cool new Alephium-related graphic material!
 

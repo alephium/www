@@ -7,15 +7,11 @@ featuredImage: image_73be516f6b.png
 title: Alephium Pushes the Boundaries of Blockchain Performance &amp; Scalability
 ---
 
-### Alephium Pushes the Boundaries of Blockchain Performance & Scalability
-
 When assessing the seemingly countless blockchain platforms appearing in recent years, neither users nor critics fail to emphasize scalability. Recently, with the development of sharding technology, real improvements are being made in the area of blockchain scalability. One project, in particular, has built a powerful new technology with the potential to vastly improve the scalability of public chains. <a href="http://pr.report/Lr8w4Saq" class="markup--anchor markup--p-anchor" data-href="http://pr.report/Lr8w4Saq" rel="nofollow noopener noopener" target="_blank">Alephium</a>, the brainchild project of Cheng Wang, aims to scale blockchains to handle tens of thousands of transactions per second (10,000+ TPS) in an open, permissionless network. Its core algorithm, called BlockFlow, combines sharding technology with DAG (Directed Acyclic Graph) and utilizes a scalable UTXO (Unspent Transaction Output) model to resolve the inefficiency of sharding performance during cross-shard transactions. By breaking down smart contracts into token protocols and data protocols, Alephium allows developers to build dApps that support high concurrency scenarios while maintaining the Turing-complete functionalities of smart contracts.
 
 **How does Alephium differ from existing sharding projects?**
 
 Alephium is simple, efficient, secure, and pragmatic. However, the most significant feature of Alephium is its native support for cross-shard transactions which provides a user experience similar to single-chain platforms. Alephium’s core BlockFlow algorithm follows the same minimal network assumptions as Bitcoin — an open and asynchronous network. As a permissionless and decentralized platform, everyone can contribute to Alephium’s consensus and safety.
-
-![](image_73be516f6b.png)
 
 **Methods of Sharding**
 

@@ -6,11 +6,7 @@ featuredImage: image_6170abf307.png
 title: Browser Wallet Extension v0.7.0 has been released
 ---
 
-### Browser Wallet Extension v0.7.0 has been released
-
 Featuring: Ledger Integration
-
-![](image_6170abf307.png)
 
 > UPDATE: Alephium has an official integration with Ledger! you can find all details <a href="https://medium.com/@alephium/alephium-available-on-ledger-hardware-wallets-27fa77f928ab" class="markup--anchor markup--pullquote-anchor" data-href="https://medium.com/@alephium/alephium-available-on-ledger-hardware-wallets-27fa77f928ab" target="_blank">here</a>
 

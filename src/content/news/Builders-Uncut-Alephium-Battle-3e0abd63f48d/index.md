@@ -7,10 +7,6 @@ featuredImage: image_8ce8d2d172.png
 title: Builders Uncut — Alephium Battle
 ---
 
-### Builders Uncut — Alephium Battle
-
-![](image_8ce8d2d172.png)
-
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
 Here, development team members Lorenzo and Eduardo discuss their backgrounds in tech and crypto, their passion for gaming, and the inspiration behind their project, <a href="https://alephium-battle.vercel.app/" class="markup--anchor markup--p-anchor" data-href="https://alephium-battle.vercel.app/" rel="noopener" target="_blank">Alephium Battle</a>. They share insights on the game’s development, the success of their first tournament, and their plans for future updates.

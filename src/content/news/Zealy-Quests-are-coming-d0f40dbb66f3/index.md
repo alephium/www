@@ -7,10 +7,6 @@ featuredImage: image_c497e1e421.jpg
 title: Zealy Quests are coming!
 ---
 
-### Zealy Quests are coming!
-
-![](image_c497e1e421.jpg)
-
 As the community expands, and more non-tech people join us, we need different tools, and different ways of showing, exploring and explaining what Alephium is about!
 
 Do you want to test your knowledge of Alephium?   

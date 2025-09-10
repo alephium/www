@@ -7,14 +7,7 @@ featuredImage: image_53565e03c5.png
 title: 'Miners’ Highlight #4: nickdimondi'
 ---
 
-### Miners’ Highlight \#4: nickdimondi
-
 _The Alephium blockchain relies heavily on the contributions of miners to maintain its integrity and functionality. Recognizing the significance of these contributors is the object of this article series titled “Miners’ Highlight.” By focusing on their contributions, challenges, and experiences, we aim to better understand the mining process, its importance & those who make it possible. You can find_ <a href="https://medium.com/@alephium/miners-highlight-1-cedric-crispin-c4ed456f6d10" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/miners-highlight-1-cedric-crispin-c4ed456f6d10" rel="noopener" target="_blank"><em>#1 here</em></a>, <a href="https://medium.com/@alephium/miners-highlight-1-jake-aka-hiram-abiff-a8833307f316" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/miners-highlight-1-jake-aka-hiram-abiff-a8833307f316" rel="noopener" target="_blank"><em>#2 here</em></a>, _and_ <a href="https://medium.com/@alephium/miners-highlight-3-bokiko-7b2a22ea0253" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/miners-highlight-3-bokiko-7b2a22ea0253" target="_blank"><em>#3 here</em></a>_._
-
-<figure id="6f47" class="graf graf--figure graf-after--p">
-<img src="image_53565e03c5.png" class="graf-image" data-image-id="1*nhLsCNoiro18-F9pMO0-5g.png" data-width="960" data-height="1280" data-is-featured="true" />
-<figcaption>Nick Dimondi learned about crypto at Clubhouse and loves to talk about crypto, mining and liberty.</figcaption>
-</figure>
 
 #### What can we call you, and where should we picture you?
 

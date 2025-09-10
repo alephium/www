@@ -7,15 +7,11 @@ featuredImage: image_e2c600aac0.png
 title: 'Builders Highlights #1: Sezame Wallet'
 ---
 
-### Builders Highlights \#1: Sezame Wallet
-
 #### _Alephium’s ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience and provide real utility for the users. In the Builders Highlight series, these builders will share more about their projects, and also their thoughts and insights on why building on Alephium!_
 
 _Disclaimer: While Alephium is happy to support a growing developer community, it would like to make it clear that it does not endorse, audit, or review any software presented in this series, and encourages all users to make informed decisions and take personal responsibility for their actions._
 
 The second builder in the series is the <a href="https://twitter.com/SesameWallet" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/SesameWallet" rel="noopener" target="_blank">Sezame team</a>, the developers behind the <a href="https://sezame.app/" class="markup--anchor markup--p-anchor" data-href="https://sezame.app/" rel="noopener" target="_blank">Sezame mobile wallet</a>, available on the <a href="https://play.google.com/store/apps/details?id=org.maze2.sezamewallet" class="markup--anchor markup--p-anchor" data-href="https://play.google.com/store/apps/details?id=org.maze2.sezamewallet" rel="noopener" target="_blank">Google Play store</a> and <a href="https://apps.apple.com/us/app/sezame-wallet/id1618252953" class="markup--anchor markup--p-anchor" data-href="https://apps.apple.com/us/app/sezame-wallet/id1618252953" rel="noopener" target="_blank">App Store</a>:
-
-![](image_e2c600aac0.png)
 
 ### Tell us a little bit about your project. What is it, what does it, and how does it interact with the Alephium blockchain?
 

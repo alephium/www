@@ -7,10 +7,6 @@ featuredImage: image_9c872051c7.png
 title: Alephium Tokenomics
 ---
 
-### Alephium Tokenomics
-
-![](image_71eaa07df3.jpg)
-
 _Updated: The tokenomics were published on Oct 5, 2021. We updated this article in February of 2024 to better address the most frequently asked questions._
 
 ### Introducing ALPH

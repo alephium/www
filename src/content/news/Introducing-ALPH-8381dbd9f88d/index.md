@@ -7,13 +7,6 @@ featuredImage: image_f958d8e5c7.jpeg
 title: Introducing ALPH
 ---
 
-### Introducing ALPH
-
-<figure id="4d2d" class="graf graf--figure graf-after--h3">
-<img src="image_f958d8e5c7.jpeg" class="graf-image" data-image-id="1*amQziQeFfHl-YNyQGNw0Gg.jpeg" data-width="700" data-height="307" data-is-featured="true" />
-<figcaption>Introducing ALPH, our token ticker symbol</figcaption>
-</figure>
-
 #### We’re happy to announce that the Alephium token ticker symbol is officially **ALPH.**
 
 As we are starting discussion with venues for the public sale, it was important for the project to choose its official token ticker symbol.

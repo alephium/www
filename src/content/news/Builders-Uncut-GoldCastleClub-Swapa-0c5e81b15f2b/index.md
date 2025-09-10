@@ -7,10 +7,6 @@ featuredImage: image_8b1f840790.png
 title: Builders Uncut — GoldCastleClub &amp; Swapa
 ---
 
-### Builders Uncut — GoldCastleClub & Swapa
-
-![](image_8b1f840790.png)
-
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
 Here, Esse shared his crypto journey, his excitement about Swapa, and the next steps for GoldCastleClub. Find the full (slightly edited) transcript below if you prefer reading.

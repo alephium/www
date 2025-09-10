@@ -7,10 +7,6 @@ featuredImage: image_f759de7098.jpg
 title: Gate.io first to list Alephium (ALPH)
 ---
 
-### **Gate.io first to list Alephium (ALPH)**
-
-![](image_f759de7098.jpg)
-
 **Lausanne, Switzerland, Jan 12, 2022** — Alephium, an innovative Layer 1 blockchain announces today its <a href="https://www.gate.io/fr/trade/ALPH_USDT" class="markup--anchor markup--p-anchor" data-href="https://www.gate.io/fr/trade/ALPH_USDT" rel="noopener" target="_blank">first official listing</a> on the top 10 exchange Gate.io.
 
 ### **Gate.io First to List ALPH Token**

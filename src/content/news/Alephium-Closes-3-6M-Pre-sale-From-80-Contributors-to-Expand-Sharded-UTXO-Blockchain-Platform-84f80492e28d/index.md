@@ -8,10 +8,6 @@ title: Alephium Closes $3.6M Pre-sale From 80 Contributors to Expand Sharded UTX
   Blockchain Platform
 ---
 
-### Alephium Closes \$3.6M Pre-sale From 80 Contributors to Expand Sharded UTXO Blockchain Platform
-
-![](image_bc8b20f285.jpeg)
-
 Lausanne, Switzerland, September 9th, 2021 — <a href="https://alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/" rel="noopener" target="_blank">Alephium</a>, a simple and efficient sharding-based blockchain, has pre-sold for over \$3.6 million of tokens to several major funds and a large number of small buyers, with over 80 contributions.
 
 The pre-sale was led by <a href="https://alphemy.capital/" class="markup--anchor markup--p-anchor" data-href="https://alphemy.capital/" rel="noopener" target="_blank">Alphemy Capital</a>, with participation from <a href="https://www.whitepapercapital.com/" class="markup--anchor markup--p-anchor" data-href="https://www.whitepapercapital.com/" rel="noopener" target="_blank">White Paper Capital</a> and <a href="https://archery.fund/" class="markup--anchor markup--p-anchor" data-href="https://archery.fund/" rel="noopener" target="_blank">Archery Blockchain</a>. A significant portion of the pre-sale was funded by individuals, with 76% providing less than \$50,000 and 91% less than \$100,000. Over half of the purchasers were Swiss residents.

@@ -6,13 +6,6 @@ featuredImage: image_2e22410376.jpg
 title: TTxOO 2 — The road to Self-Custody
 ---
 
-### TTxOO 2 — The road to Self-Custody
-
-<figure id="fd3c" class="graf graf--figure graf-after--h3">
-<img src="image_2e22410376.jpg" class="graf-image" data-image-id="0*unNFtqS7tw65Gbd9" data-width="1024" data-height="576" data-is-featured="true" />
-<figcaption>Our Tech Talk x Open Office happens every last thursday of the month</figcaption>
-</figure>
-
 ### Introduction
 
 On Thursday, August 4th, on <a href="https://discord.gg/JErgRBfRSB" class="markup--anchor markup--p-anchor" data-href="https://discord.gg/JErgRBfRSB" rel="noopener" target="_blank">our Discord</a>, during the latest TTxOO, our good friends from <a href="https://hodling.ch/" class="markup--anchor markup--p-anchor" data-href="https://hodling.ch/" rel="noopener" target="_blank">Hodling</a> joined us to talk about the different levels of crypto-assets custody and their benefits, requirements, and challenges in a presentation called **“The Road to secure self-custody.”**

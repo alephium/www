@@ -6,11 +6,7 @@ featuredImage: image_d5eb2b15c9.png
 title: 'Weekly #DevUpdate'
 ---
 
-### Weekly \#DevUpdate
-
 #### Week 33 Milestones & progress on dev on Alephium!
-
-![](image_d5eb2b15c9.png)
 
 Greetings to the Alephium community and all tech enthusiasts! We’re back with another weekly development update to keep you informed about our latest advancements and milestones.
 

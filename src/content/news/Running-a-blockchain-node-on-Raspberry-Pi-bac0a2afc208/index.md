@@ -6,10 +6,6 @@ featuredImage: image_2bac85bda4.jpeg
 title: Running a blockchain node on Raspberry Pi
 ---
 
-### Running a blockchain node on Raspberry Pi
-
-![](image_2bac85bda4.jpeg)
-
 ### The Decentralization bottleneck
 
 Decentralization is one of the biggest promises of crypto-economics. It is the given that draws a perpendicular from the contemporary system of centralized banking. With a little skills and some hardware, anyone can participate in the maintenance of a decentralized blockchain. And we’re invited to! Effectively distributing the power of consensus across many small actors, such as you and me. However, this decentralization may exist in theory, there’s a bottleneck to it: if say, only a few united people were to actually operate a networked blockchain, it would in practice become a centralized system. This means that decentralization relies on a social factor: our willingness to participate in the maintenance of the infrastructure.

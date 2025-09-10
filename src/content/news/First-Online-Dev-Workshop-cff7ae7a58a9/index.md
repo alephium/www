@@ -6,11 +6,7 @@ featuredImage: image_720f550b88.png
 title: First Online Dev Workshop!
 ---
 
-### First Online Dev Workshop!
-
 #### “Using the SDK to write a simple dApp” with <a href="https://github.com/h0ngcha0" class="markup--anchor markup--h4-anchor" data-href="https://github.com/h0ngcha0" rel="noopener" target="_blank">@h0ngcha0</a> & <a href="https://github.com/polarker" class="markup--anchor markup--h4-anchor" data-href="https://github.com/polarker" rel="noopener" target="_blank">@polarker</a>
-
-![](image_720f550b88.png)
 
 #### _When?_ Saturday, July 15th — 3PM to 4PM-ish _Where?_ <a href="http://meet.google.com/fqi-uwpq-aio" class="markup--anchor markup--h4-anchor" data-href="http://meet.google.com/fqi-uwpq-aio" rel="noopener" target="_blank">meet.google.com/fqi-uwpq-aio</a> _Who?_ <a href="https://github.com/h0ngcha0" class="markup--anchor markup--h4-anchor" data-href="https://github.com/h0ngcha0" rel="noopener" target="_blank">@h0ngcha0</a> & <a href="https://github.com/polarker" class="markup--anchor markup--h4-anchor" data-href="https://github.com/polarker" rel="noopener" target="_blank">@polarker</a>
 

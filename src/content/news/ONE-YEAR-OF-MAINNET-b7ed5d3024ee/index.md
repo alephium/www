@@ -7,10 +7,6 @@ featuredImage: image_d76cbbd7f1.jpg
 title: ONE YEAR OF MAINNET
 ---
 
-### ONE YEAR OF MAINNET
-
-![](image_d76cbbd7f1.jpg)
-
 _To celebrate the first anniversary of Alephium’s mainnet launch (8th of November 2021), Alephium’s core team was asked for their insight on the past year. Here’s a small retrospective of what happened, where Alephium is today, and where it is going!_
 
 **The Front End**

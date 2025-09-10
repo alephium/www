@@ -7,10 +7,6 @@ featuredImage: image_dc132e8c03.jpeg
 title: Alephium Partners with Hacken to Enhance Blockchain Security
 ---
 
-### Alephium Partners with Hacken to Enhance Blockchain Security
-
-![](image_dc132e8c03.jpeg)
-
 We are pleased to announce a strategic partnership between **Alephium** and **Hacken**, a leading cybersecurity firm specializing in blockchain and Web3 security. This collaboration underscores Alephium’s commitment to building a secure, scalable, and resilient blockchain ecosystem.
 
 As the first operational sharded blockchain operating on Proof of Less Work, Alephium is designed to deliver high scalability, energy efficiency, and decentralization. By partnering with Hacken, we aim to further strengthen the security of our ecosystem, ensuring that anyone can interact with Alephium with confidence.

@@ -6,11 +6,7 @@ featuredImage: image_05a75ee0d0.jpg
 title: 'AI-Powered Improved Docs: Explaining Alephium Full Node Code'
 ---
 
-### AI-Powered Improved Docs: Explaining Alephium Full Node Code
-
 #### New documentation was created with the help of Autodoc
-
-![](image_05a75ee0d0.jpg)
 
 AI-powered tools have become increasingly popular for various tasks, including code documentation. <a href="https://github.com/context-labs/autodoc" class="markup--anchor markup--p-anchor" data-href="https://github.com/context-labs/autodoc" rel="noopener" target="_blank">Autodoc</a> by <a href="https://github.com/context-labs/autodoc" class="markup--anchor markup--p-anchor" data-href="https://github.com/context-labs/autodoc" rel="noopener" target="_blank">Sam Hogan</a> leverages OpenAI’s GPT-4 to parse automatically and document source code. This article will discuss how Alephium used Autodoc to generate documentation for the Alephium full-node source code.
 

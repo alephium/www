@@ -8,10 +8,6 @@ title: Alephium continues its engagement for decentralization and partners with 
   cloud-based…
 ---
 
-### **Alephium continues its engagement for decentralization and partners with the cloud-based decentralized computational network FluxLabs (Flux)**
-
-![](image_d1ac826df6.jpg)
-
 <a href="https://alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/" rel="noopener" target="_blank">Alephium</a>, a highly performant, secure, and energy-efficient sharded blockchain network for DeFi & dApps and <a href="https://runonflux.io/" class="markup--anchor markup--p-anchor" data-href="https://runonflux.io/" rel="noopener" target="_blank">FluxLabs</a> (Flux), a new generation of scalable decentralized cloud infrastructure, announced today their partnership, reinforcing their engagement towards blockchain decentralization.
 
 As of today, users can deploy the Alephium full-node on the Flux infrastructure. Running nodes on a truly decentralized infrastructure ensures high resilience to both system failure and outside attempts at censorship.

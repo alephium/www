@@ -6,11 +6,7 @@ featuredImage: image_0a276df54e.jpg
 title: Bridge Zealy Sprint
 ---
 
-### **Bridge Zealy Sprint**
-
 #### _Spread the word about the bridge & share 3’000 \$ALPH in prize!_
-
-![](image_0a276df54e.jpg)
 
 _The bridge has launched two weeks ago, there’s been more than_ <a href="https://explorer.bridge.alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://explorer.bridge.alephium.org/" rel="noopener" target="_blank"><em>400 transfers since</em></a>_, it has more than_ <a href="https://defillama.com/protocol/alephium-bridge" class="markup--anchor markup--p-anchor" data-href="https://defillama.com/protocol/alephium-bridge" rel="noopener" target="_blank"><em>1.2M in TVL</em></a> _and wrapped \$ALPH has more than 500_ <a href="https://etherscan.io/token/0x590f820444fa3638e022776752c5eef34e2f89a6" class="markup--anchor markup--p-anchor" data-href="https://etherscan.io/token/0x590f820444fa3638e022776752c5eef34e2f89a6" rel="noopener" target="_blank"><em>holders</em></a> _on ethereum!_
 

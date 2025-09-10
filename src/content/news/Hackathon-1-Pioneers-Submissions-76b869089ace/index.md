@@ -7,10 +7,6 @@ featuredImage: image_eb8b965219.png
 title: 'Hackathon #1- Pioneers — Submissions'
 ---
 
-### Hackathon \#1- Pioneers — Submissions
-
-![](image_eb8b965219.png)
-
 _After two weeks of intense coding, debugging, building & good vibes, teams or individuals have submitted their projects. While the jury is judging & because it doesn’t stop with the end of the hackathon, here’s a recap of all projects, with all the information & links to follow them as they keep evolving over the next few weeks & months!_
 
 From Alephium’s core-contributor’s perspective, it’s been an incredible experience to imagine & organize that hackathon. But the event itself has been nothing short of absolutely fantastic.

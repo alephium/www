@@ -7,10 +7,6 @@ featuredImage: image_4c1492d719.png
 title: Builders Uncut — Mobula
 ---
 
-### Builders Uncut — Mobula
-
-![](image_4c1492d719.png)
-
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
 Here, we have a conversation with Teo & Sacha & about <a href="http://mobula.io" class="markup--anchor markup--p-anchor" data-href="http://mobula.io" rel="noopener" target="_blank">Mobula</a>, a data product that integrates various chains, including Alephium. Find the full (slightly edited) transcript below if you prefer reading!

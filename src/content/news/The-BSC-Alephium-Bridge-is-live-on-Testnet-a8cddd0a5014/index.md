@@ -6,11 +6,7 @@ featuredImage: image_39fa5f38bb.png
 title: The BSC/Alephium Bridge is live on Testnet!
 ---
 
-### The BSC/Alephium Bridge is live on Testnet!
-
 #### Bridge assets from and to BNB Smart Chain Testnet
-
-![](image_39fa5f38bb.png)
 
 This is the hitchhiker’s guide to Alephium’s second testnet bridge!
 

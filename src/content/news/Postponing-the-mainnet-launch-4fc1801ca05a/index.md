@@ -7,10 +7,6 @@ featuredImage: image_ff0fc54346.jpeg
 title: Postponing the mainnet launch
 ---
 
-### Postponing the mainnet launch
-
-![](image_ff0fc54346.jpeg)
-
 #### Launching a mainnet is no small task for a small team; in addition to the many technical challenges it poses, there are a lot of non-technical topics to be addressed.
 
 In Alephium’s case, one critical task is gathering all the public addresses of the numerous pre-sale participants. It is necessary as these will be part of the genesis block and allow for the pre-sale participants to receive their allocated tokens over a period of time.

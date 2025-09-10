@@ -1,13 +1,10 @@
 ---
-title: "Alephium’s Danube Mainnet Upgrade: Official Date Revealed!"
+title: 'Alephium’s Danube Mainnet Upgrade: Official Date Revealed!'
 description: When is Danube going live on Alephium?
 date: 2025-07-02T12:01:00.000Z
 spotlight: true
 featuredImage: danube2.webp
 ---
-# Alephium’s Danube Mainnet Upgrade: Official Date Revealed!
-
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*VJ8D8Z0vRv4TWOzidSMjqg.png)
 
 We are thrilled to announce that Alephium’s highly anticipated Danube network upgrade will activate on **Tuesday, July 15, 2025, at 12:00 GMT+02:00**!
 
@@ -17,27 +14,27 @@ Danube is not just another upgrade. It is a leap forward for Web3 usability, sca
 
 Danube delivers new features that set Alephium apart:
 
-* **8-Second Block Times & 2 Blocks Per Second (BPS) Network Throughput**
+- **8-Second Block Times & 2 Blocks Per Second (BPS) Network Throughput**
 
 Alephium now produces blocks twice as fast, matching leading Proof of Stake chains. Confirmations feel instant, boosting dApp responsiveness and user experience.
 
-* **Optimized Consensus & Syncing**
+- **Optimized Consensus & Syncing**
 
 Alephium’s BlockFlow processes transactions more efficiently, enabling over 20,000 TPS and up to three times faster node sync. The result is greater scalability and decentralization with lower overhead.
 
-* **Seamless Scalability with Groupless Addresses**
+- **Seamless Scalability with Groupless Addresses**
 
 Scaling without complexity. Alephium’s Groupless Addresses unify balances and abstract shard logic, making sharding invisible to users. Danube delivers the most advanced and user-friendly sharding implementation to date.
 
-* **Secure, Seedless Onboarding**
+- **Secure, Seedless Onboarding**
 
 Native Passkey support enables login with Face ID, Touch ID, or YubiKey. Seed phrases are optional, lowering the barrier to entry and bringing Web2-grade ease to Web3.
 
-* **Chained Transactions**
+- **Chained Transactions**
 
 Transaction caller’s assets can now be reused across multiple contract calls within a single TxScript (e.g., A→B→C swaps). This improves composability for dApps, streamlining complex flows without sacrificing the security benefits of the UTXO model.
 
-* **Enhanced Developer Experience**
+- **Enhanced Developer Experience**
 
 Developers benefit from improved tooling, cleaner logic, and more expressive power: automatic handling of dust amounts, contract deposit and map entry deposit, I256 bitwise operations, and better mechanisms for caller identification simplify smart contract design.
 

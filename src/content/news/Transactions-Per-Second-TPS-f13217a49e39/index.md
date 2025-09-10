@@ -6,11 +6,7 @@ featuredImage: image_47ac4eb526.jpg
 title: Transactions Per Second (TPS)
 ---
 
-### Transactions Per Second (TPS)
-
 A Technical Promenade, part 2
-
-![](image_6588b1e5d9.png)
 
 _This is part of a series of regular articles on key concepts for understanding_ <a href="https://alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/" rel="noopener" target="_blank"><em>Alephium</em></a> _in particular and blockchains in general. If you’re pondering on which chain to build your dApps, if you’re a curious crypto-traveler, or a fellow decentralization enthusiast, welcome!_
 

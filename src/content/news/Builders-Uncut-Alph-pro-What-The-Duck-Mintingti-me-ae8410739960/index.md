@@ -7,10 +7,6 @@ featuredImage: image_ff04b57175.png
 title: Builders Uncut —Alph.pro, What The Duck &amp; Mintingti.me
 ---
 
-### Builders Uncut —Alph.pro, What The Duck & Mintingti.me
-
-![](image_ff04b57175.png)
-
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
 Here, <a href="https://x.com/0x_reed" class="markup--anchor markup--p-anchor" data-href="https://x.com/0x_reed" rel="noopener" target="_blank">Reed</a> shares his crypto journey, the experiments around NFTs and news about his projects deployed on Alephium. Here’s the full video interview. Find the full (slightly edited) transcript below if you prefer reading.

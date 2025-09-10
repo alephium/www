@@ -4,12 +4,8 @@ description: We are really proud of Alephium’s addition as a part of Dappnode�
   offering! We share Dappnode’s commitment to a decentralized…
 spotlight: false
 featuredImage: image_91b67983ba.png
-title: 'Alephium &amp; Dappnode: Collab, Tech Talk, and AMA'
+title: 'Alephium & Dappnode: Collab, Tech Talk, and AMA'
 ---
-
-### Alephium & Dappnode: Collab, Tech Talk, and AMA
-
-![](image_91b67983ba.png)
 
 We are really proud of Alephium’s addition as a part of <a href="https://www.dappnode.io/" class="markup--anchor markup--p-anchor" data-href="https://www.dappnode.io/" rel="noopener" target="_blank">Dappnode</a>’s package offering! We share Dappnode’s commitment to a decentralized future and believe tools like this are key to making it happen.
 

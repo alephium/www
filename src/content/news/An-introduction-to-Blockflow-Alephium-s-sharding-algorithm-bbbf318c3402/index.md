@@ -7,10 +7,6 @@ featuredImage: image_0006903410.jpg
 title: 'An introduction to Blockflow: Alephium’s sharding algorithm'
 ---
 
-### An introduction to Blockflow: Alephium’s sharding algorithm
-
-![](image_0006903410.jpg)
-
 _This is the fourth of a series of technical innovations brought by Alephium. Find the previous ones_ <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" target="_blank"><em>here</em></a> _(PolW),_ <a href="https://medium.com/p/8de3b0f76749" class="markup--anchor markup--p-anchor" data-href="https://medium.com/p/8de3b0f76749" target="_blank"><em>here</em></a> _(sUTXO), and_ <a href="https://medium.com/@alephium/meet-alphred-a-virtual-machine-like-no-others-85ce86540025" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/meet-alphred-a-virtual-machine-like-no-others-85ce86540025" target="_blank"><em>here</em></a> _(Alphred VM). This article will dive into the concepts of sharding and the inner workings of Blockflow to explain how it enhances the performance of the Alephium blockchain._
 
 **_TL;DR — Alephium is a sharded blockchain: its state is divided into groups, and the transactions are processed in parallel by several blockchains to increase throughput. Its sharding algorithm is called_** <a href="https://github.com/alephium/white-paper" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/white-paper" rel="noopener" target="_blank"><strong><em>Blockflow</em></strong></a>**_, and allows for huge UX improvements with single-step cross-group transactions. It also manages the relationship between blocks in all chains, allowing high transactions-per-second numbers while maintaining ledger integrity._**

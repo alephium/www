@@ -7,10 +7,6 @@ featuredImage: image_596cb91bc2.png
 title: 'Miners’ Highlight #1 — Cedric Crispin'
 ---
 
-### Miners’ Highlight \#1 — Cedric Crispin
-
-![](image_01ab6ae1df.jpg)
-
 _The Alephium blockchain, like many decentralized networks, relies heavily on the contributions of miners to maintain its integrity and functionality. Recognizing the significance of these contributors, we are launching a series of articles titled “Miners’ Highlight.” By focusing on their contributions, challenges, and experiences, we aim to understand the mining process and its importance better._
 
 _Cedric Crispin, a French miner passionate about Alephium, decentralisation and aerial photography, is starting this series!_

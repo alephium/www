@@ -7,10 +7,6 @@ featuredImage: image_6a65a64e2a.jpg
 title: The Bridge to BSC is live!
 ---
 
-### The Bridge to BSC is live!
-
-![](image_6a65a64e2a.jpg)
-
 _Tl;dr — New bridge ALPH \<\> BSC / The Faucet / I’m new, coming from BSC/BNB — What do I do in \$ALPH’s ecosystem? / Contracts & tokens / FAQ_
 
 Alephium’s commitment to the multichain world is renewed! A year after the bridge to/from Ethereum, Alephium is proud to announce its newest bridge to the BSC chain, connecting to the huge and rich world of the BNB Chain!

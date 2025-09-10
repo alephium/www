@@ -4,13 +4,8 @@ description: Welcome to the second part of this dev workshop session! Please mak
   sure you go through the first part (here) as part 2 starts where Part…
 spotlight: false
 featuredImage: image_e39b6d207c.jpg
-title: 'Second Developer Workshop: Re-implementing Friend.Tech’s Smart Contract in
-  Ralph — Part 2'
+title: 'Second Developer Workshop: Re-implementing Friend.Tech’s Smart Contract in Ralph — Part 2'
 ---
-
-### Second Developer Workshop: Re-implementing Friend.Tech’s Smart Contract in Ralph — Part 2
-
-![](image_e39b6d207c.jpg)
 
 Welcome to the second part of this dev workshop session! Please make sure you go through the first part (<a href="https://medium.com/@alephium/second-developer-workshop-re-implementing-friend-techs-smart-contract-in-ralph-806e3f6551aa" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/second-developer-workshop-re-implementing-friend-techs-smart-contract-in-ralph-806e3f6551aa" target="_blank">here</a>) as part 2 starts where Part I ended.
 

@@ -7,11 +7,7 @@ featuredImage: image_f807a06471.png
 title: 'Builders Highlight: Sahhar'
 ---
 
-### Builders Highlight: Sahhar
-
 #### _Alephium’s ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience and provide real utility for the users. In the Builders Highlight series, these builders will share more about their projects and also their thoughts and insights on why building on Alephium!_
-
-![](image_f807a06471.png)
 
 > _🚨_ _Disclaimer: While Alephium is happy to support a growing developer community, it would like to make it clear that it does not endorse, audit, or review any software presented in this series, and encourages all users to make informed decisions and take personal responsibility for their actions._
 

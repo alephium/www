@@ -7,10 +7,6 @@ featuredImage: image_0f5b4b5f54.png
 title: Builders Uncut — Linx Labs
 ---
 
-### Builders Uncut — Linx Labs
-
-![](image_0f5b4b5f54.png)
-
 _This serie of interviews was conducted at the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
 Here, Radu, from <a href="https://x.com/linx_labs" class="markup--anchor markup--p-anchor" data-href="https://x.com/linx_labs" rel="noopener" target="_blank">Linx Labs</a> shares the latest developments on <a href="https://linxotc.com/" class="markup--anchor markup--p-anchor" data-href="https://linxotc.com/" rel="noopener" target="_blank">Linx OTC</a>, plans for the upcoming lending platform and his vision for the future of Alephium’s DeFi Ecosystem.Find the full (slightly edited) transcript below if you prefer reading.

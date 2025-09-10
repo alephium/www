@@ -7,10 +7,6 @@ featuredImage: image_593e134906.png
 title: Builders Uncut — Ulam Labs
 ---
 
-### Builders Uncut — Ulam Labs
-
-![](image_593e134906.png)
-
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
 Here, we have a conversation with with Lukasz about <a href="https://ulam.io/" class="markup--anchor markup--p-anchor" data-href="https://ulam.io/" rel="noopener" target="_blank">Ulam Labs</a>, a company devoted to full-cycle software development, focusing on fintech and which started offering an auditing service to Alephium projects. Find the full (slightly edited) transcript below if you prefer reading.

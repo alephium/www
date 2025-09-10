@@ -7,10 +7,6 @@ featuredImage: image_7a7462f53a.png
 title: Builders Uncut — AlphbanX
 ---
 
-### Builders Uncut — AlphbanX
-
-![](image_7a7462f53a.png)
-
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
 Here, Timothy, the founder of <a href="https://www.alphbanx.com/" class="markup--anchor markup--p-anchor" data-href="https://www.alphbanx.com/" rel="noopener" target="_blank">AlphBanx</a>, shares his journey into crypto, his discovery of Alephium, and the innovative approach of AlphBanx in the DeFi space. He discusses the project’s focus on user-friendly design, the importance of community involvement, and plans for integration with the Alephium ecosystem. Find the full (slightly edited) transcript below if you prefer reading.

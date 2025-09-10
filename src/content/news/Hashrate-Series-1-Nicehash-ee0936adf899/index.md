@@ -7,11 +7,7 @@ featuredImage: image_05e9596be1.jpg
 title: 'Hashrate Series #1: Nicehash'
 ---
 
-### Hashrate Series \#1: Nicehash
-
 _The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem actors to sustain and improve Alephium’s reliability. This series is about them, and we are starting it with Nicehash!_
-
-![](image_05e9596be1.jpg)
 
 #### Can you tell us a bit about Nicehash? When was it founded? By whom? Where? And why? Can you tell us a bit about its history?
 

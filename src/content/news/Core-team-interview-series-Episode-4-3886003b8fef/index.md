@@ -6,11 +6,7 @@ featuredImage: image_0416b8898f.jpeg
 title: Core team interview series. Episode 4
 ---
 
-### Core team interview series. Episode 4
-
 **This article was updated:** <a href="https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0" rel="nofollow" target="_blank">https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0</a>
-
-![](image_0416b8898f.jpeg)
 
 _For its team, Alephium is privileging agility and efficiency over hyper-growth. The project does stay at a human size not because it is more efficient, but because Alephium strives to be a decentralized, community-driven project. This means the project in itself is much larger than a team can ever be. Communication, trust, openness, and transparency are paramount in such a setup._
 

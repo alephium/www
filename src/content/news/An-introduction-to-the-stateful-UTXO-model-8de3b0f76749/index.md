@@ -7,11 +7,7 @@ featuredImage: image_0e0226c293.jpg
 title: An introduction to the stateful UTXO model
 ---
 
-### An introduction to the stateful UTXO model
-
 _Combining the expressiveness of the account model & security of the UTXO model._
-
-![](image_0e0226c293.jpg)
 
 _This article is a high-level overview of what the stateful UTXO model is, why it was invented, how it works and what it allows. The stateful UTXO model (sUTXO) is one of the main innovations brought by Alephium, along with_ <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" target="_blank"><em>Proof-of-less-work (PoLW),</em></a> _the Blockflow sharding algorithm, the_ <a href="https://medium.com/@alephium/meet-alphred-a-virtual-machine-like-no-others-85ce86540025" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/meet-alphred-a-virtual-machine-like-no-others-85ce86540025" target="_blank"><em>Alphred Virtual Machine</em></a>_, and the Ralph programming language._
 

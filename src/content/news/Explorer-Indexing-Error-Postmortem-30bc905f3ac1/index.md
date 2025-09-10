@@ -7,12 +7,8 @@ featuredImage: image_258aa64275.jpg
 title: Explorer Indexing Error Postmortem
 ---
 
-### Explorer Indexing Error Postmortem
-
 **What happened — Timeline of events?  
 **At 11:58 CET on January 18th, 2022, user @Kanto explained on discord that he could not deposit funds on Gate.io « due to technical maintenance ».
-
-![](image_258aa64275.jpg)
 
 At 12:27 CET, our core-dev acknowledged the problem, and explained we were in contact with Gate.io to solve the issue.
 

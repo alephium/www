@@ -7,10 +7,6 @@ featuredImage: image_42696665b2.jpg
 title: Alephium available on Ledger Hardware Wallets
 ---
 
-### **Alephium available on Ledger Hardware Wallets**
-
-![](image_42696665b2.jpg)
-
 **Alephium x Ledger—**Alephium is thrilled to announce its integration with Ledger hardware wallets, which will give users enhanced security and control over their digital assets.
 
 **Ledger Wallets** — This integration allows users to securely store, send tokens, and interact with decentralized applications (dApps) while keeping their assets protected offline with the full suite of recent Ledger HW (Nano S+ / Nano X / Stax / Flex) — (note that it’s not available for the Nano S)

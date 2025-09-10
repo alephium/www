@@ -7,10 +7,6 @@ featuredImage: image_819f6611c3.png
 title: 'The Leman Network Upgrade AMA: Most relevant topics and questions'
 ---
 
-### The Leman Network Upgrade AMA: Most relevant topics and questions
-
-![](image_819f6611c3.png)
-
 The <a href="https://medium.com/@alephium/announcing-the-leman-network-upgrade-c01a81e65f0e" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/announcing-the-leman-network-upgrade-c01a81e65f0e" target="_blank">Leman Upgrade</a> is a significant update in the main components of the Alephium blockchain. It’s been in the works since the mainnet launch, and last week there was a Tech Talk with Cheng and Hongchao where a lot was discussed and revealed. This article summarizes the most important topics and you can watch the full video recording <a href="https://www.youtube.com/watch?v=n7ycJUIfbVg" class="markup--anchor markup--p-anchor" data-href="https://www.youtube.com/watch?v=n7ycJUIfbVg" rel="noopener" target="_blank">here</a>.
 
 ### A (big) step forward

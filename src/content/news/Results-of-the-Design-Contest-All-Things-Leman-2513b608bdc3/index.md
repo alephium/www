@@ -6,11 +6,7 @@ featuredImage: image_33aa09a8e0.jpg
 title: 'Results of the Design Contest: All Things Leman'
 ---
 
-### Results of the Design Contest: All Things Leman
-
 The winning design is already featured in Alephium’s SWALPH shop!
-
-![](image_33aa09a8e0.jpg)
 
 THE RESULTS ARE IN! Alephium invited its community to a design contest to celebrate the <a href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a" target="_blank">Leman Network Upgrade activation</a>! The community answered the call and came up with some fantastic entries.
 

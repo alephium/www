@@ -7,10 +7,6 @@ featuredImage: image_ece5e4ea45.jpg
 title: WELCOME BLOCKFLOW ALLIANCE DAO!
 ---
 
-### **WELCOME BLOCKFLOW ALLIANCE DAO!**
-
-![](image_ece5e4ea45.jpg)
-
 Daily, we strive to enhance our decentralized infrastructure, inspired by Satoshi Nakamoto’s vision for a permissionless future. We offer developers advanced tools, precise documentation, and direct access to our core team on Discord. Our commitment to user-friendly front-end tools reflects our investment in top-tier UI and UX.
 
 But today, it’s about the community. And the community is going one step further, stronger, faster!

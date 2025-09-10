@@ -7,15 +7,11 @@ featuredImage: image_c6af9d3393.jpeg
 title: 🚀 Welcome to Alephium (ALPH) !
 ---
 
-### 🚀 **Welcome to Alephium (ALPH)**
-
 #### Here’s all the information you need to get started with Alephium ! And if that’s not enough, come talk to us on <a href="https://discord.gg/JErgRBfRSB" class="markup--anchor markup--h4-anchor" data-href="https://discord.gg/JErgRBfRSB" rel="noopener" target="_blank">Discord</a>, <a href="https://t.me/alephiumgroup" class="markup--anchor markup--h4-anchor" data-href="https://t.me/alephiumgroup" rel="noopener" target="_blank">Telegram</a> or <a href="https://www.reddit.com/r/Alephium/" class="markup--anchor markup--h4-anchor" data-href="https://www.reddit.com/r/Alephium/" rel="noopener" target="_blank">Reddit</a> !
 
 **If you’re looking for dev/mining info, you’ll find it at the end of this post !**
 
 \- <a href="https://medium.com/@s_64606/bienvenue-sur-alephium-alph-854b237f6e9" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@s_64606/bienvenue-sur-alephium-alph-854b237f6e9" target="_blank">Traduction Française</a> (Community translated)
-
-![](image_c6af9d3393.jpeg)
 
 ### 🐥 **What is Alephium?**
 

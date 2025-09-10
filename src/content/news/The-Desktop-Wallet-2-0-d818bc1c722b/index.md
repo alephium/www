@@ -7,11 +7,7 @@ featuredImage: image_12c93c0df8.png
 title: The Desktop Wallet 2.0
 ---
 
-### The Desktop Wallet 2.0
-
 #### It’s a big one! Token support, dApp connectivity, and a lot more in this feature-rich release!
-
-![](image_12c93c0df8.png)
 
 Alephium is thrilled to announce the release of Desktop Wallet 2.0. You can upgrade directly (since version 1.5.0) from your wallet by clicking on the pop-up that will appear when you access the wallet, or by downloading <a href="https://github.com/alephium/desktop-wallet/releases/latest" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/desktop-wallet/releases/latest" rel="noopener" target="_blank">the latest release</a>.
 

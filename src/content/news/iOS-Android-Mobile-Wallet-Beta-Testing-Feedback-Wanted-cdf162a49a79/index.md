@@ -7,10 +7,6 @@ featuredImage: image_ffe6369434.png
 title: iOS + Android — Mobile Wallet Beta Testing, Feedback Wanted!
 ---
 
-### **iOS + Android — Mobile Wallet Beta Testing, Feedback Wanted!**
-
-![](image_ffe6369434.png)
-
 Alephium is very happy to announce that the mobile wallet for iOS and Android are ready for beta testing, and calls for user feedback!
 
 The mobile wallet is the third developed by the team (after the desktop wallet and the browser extension), it marks a significant step in making Alephium more widely accessible and easier to use on the go.

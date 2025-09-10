@@ -7,10 +7,6 @@ featuredImage: image_d408df4bbf.png
 title: Builders Uncut — Alphaga
 ---
 
-### Builders Uncut — Alphaga
-
-![](image_d408df4bbf.png)
-
 _This serie of interviews was conducted at the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
 Here, we are happy to welcome Kylian from <a href="https://alphaga.app/" class="markup--anchor markup--p-anchor" data-href="https://alphaga.app/" rel="noopener" target="_blank">Alphaga</a>, an NFT marketplace which just <a href="https://x.com/AlphagaMarket/status/1825261461137994234" class="markup--anchor markup--p-anchor" data-href="https://x.com/AlphagaMarket/status/1825261461137994234" rel="noopener" target="_blank">launched</a> on mainnet! Find the full (slightly edited) transcript below if you prefer reading.

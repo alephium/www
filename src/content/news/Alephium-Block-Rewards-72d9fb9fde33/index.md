@@ -7,11 +7,7 @@ featuredImage: image_becedcf971.jpg
 title: Alephium Block Rewards
 ---
 
-### Alephium Block Rewards
-
 #### An in-depth analysis of the Block rewards, explaining the time-based and hashrate-based components of the reward emission rates.
-
-![](image_e02f52d122.jpeg)
 
 **_Disclaimer: This article was edited on June 12th, 2024 when block time was reduced from 64 to 16s_**
 

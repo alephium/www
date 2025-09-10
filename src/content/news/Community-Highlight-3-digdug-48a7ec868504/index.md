@@ -7,14 +7,7 @@ featuredImage: image_5945f1f277.png
 title: 'Community Highlight #3, digdug'
 ---
 
-### Community Highlight \#3, digdug
-
 #### _Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’ contributions to the ecosystem, what drives them and what they are passionate about! More episodes:_ <a href="https://medium.com/@alephium/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" target="_blank"><em>#1 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-cgi-bin-c102cc106f19" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-cgi-bin-c102cc106f19" target="_blank"><em>#2 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-4-montail-e24fd88882a0" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-4-montail-e24fd88882a0" target="_blank"><em>#4 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-5-txn-71c4fd76ffe8" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-5-txn-71c4fd76ffe8" rel="noopener" target="_blank">#5 here</a> and <a href="https://medium.com/@alephium/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" rel="noopener" target="_blank">#6 here</a>._._
-
-<figure id="8001" class="graf graf--figure graf-after--h4">
-<img src="image_5945f1f277.png" class="graf-image" data-image-id="1*sVu6kgtQgolsluyt9FVWnw.png" data-width="1080" data-height="1080" data-is-featured="true" />
-<figcaption>Stable Diffuse prompt: <em>Digdug, from Texas,USA, has an eclectic background. He’s been involved in crypto since 2012. In the style of Studio Ghibli</em></figcaption>
-</figure>
 
 **In a jungle of Buidlers, Miners, Hodlers, Solar- and Lunar-punks, this peer stands out through engagement and amicability. With eloquence and a very good meme-game, he types through the chat in a fine balance between technological moonshots and realism. Give it up for Alephium OG Digdug, a central pillar in the Discord channels’ atmosphere and a subtly interrogating voice of the community.**
 
