@@ -5,6 +5,8 @@ date: 2025-07-16T12:00:00.000Z
 spotlight: true
 featuredImage: danube3.webp
 ---
+# Danube Upgrade: Everything You Need to Know + FAQ
+
 After a year of building, we are proud to announce that the Danube network upgrade was activated on July 15, 2025, at 12:00 GMT+02:00.
 
 Building on the momentum of previous upgrades like Leman and Rhone, Danube introduces major performance and usability improvements while preserving our core principles of decentralization, security, and energy efficiency. From faster block times and invisible sharding to seedless wallet onboarding and advanced smart contract tooling, Danube represents a significant leap forward in Web3 accessibility.
@@ -37,13 +39,9 @@ All node operators should have updated to v4.0.0 **before July 15th** to ensur
 * **Node version required:**
 
   [ Download the latest node](https://github.com/alephium/alephium/releases/latest)
-
-
 * **Upgrade instructions:**
 
   [ Danube Upgrade Docs](https://docs.alephium.org/integration/danube-upgrade/)
-
-
 
 ## What Comes With Danube
 
