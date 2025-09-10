@@ -5,6 +5,10 @@ date: 2025-03-07T12:00:00.000Z
 spotlight: true
 featuredImage: danube1.webp
 ---
+# Danube Upgrade: One Step Closer to The Web3 We Were Promised
+
+![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*3vbLzZauAoEpbHsrNyyXwQ.png)
+
 They told us Web3 would be accessible. Fast. Intuitive. Secure. A future where decentralization didn’t mean compromise, where user experience matched the ideals of sovereignty and interoperability. But for years, reality lagged behind the vision. Clunky UX, complex wallets, and slow networks were the standard.
 
 With Danube, Alephium sets out to close that gap.
@@ -35,9 +39,10 @@ Each component of the upgrade touched a different layer of Alephium’s stack:
 
 * Wallet logic overhauled for intuitive access and single-address UX
 * A reworked syncing protocol based on Ethereum’s “skeleton sync”
-*   [New VM capabilities](https://x.com/wachmc/status/1873794077021384711)
+* [New VM capabilities](https://x.com/wachmc/status/1873794077021384711)
 
    for smart contract composability
+
 * Optimizations to BlockFlow, Alephium’s sharded consensus engine
 * The tokenomics model was updated with sustainable tail emissions
 
@@ -69,8 +74,6 @@ Alephium used to produce a new block every 16 seconds per chain. That was alread
 **Now with Danube:**
 
 * Confirmations come twice as fast, block time is cut from 16 seconds to
-
-   
 
   **8 seconds**
 
@@ -191,9 +194,10 @@ Danube optimizes Alephium’s BlockFlow consensus algorithm with an “optimisti
 **Now with Danube:**
 
 * Blocks can be executed more quickly under common conditions.
-*   [Messages move more efficiently](https://x.com/hongchao/status/1878740787988512885)
+* [Messages move more efficiently](https://x.com/hongchao/status/1878740787988512885)
 
   .
+
 * Transaction processing happens in parallel with fewer delays.
 * Network throughput and responsiveness are doubled (up to 20k transactions per second) without compromising consensus integrity.
 
@@ -212,8 +216,6 @@ Danube upgrade marks a pivotal shift, both in what Alephium *is* and what it 
    More powerful tooling, less boilerplate, and newfound flexibility across chained calls and contract logic. Bitwise logic, simplified contract deposits, and external caller access all help reduce friction and unlock advanced dApp logic. More information: 
 
   <https://docs.alephium.org/ralph/danube-features/#tldr>
-
-
 * **For miners and nodes:**
 
    More frequent blocks, faster syncing, and fewer orphaned blocks — without disrupting the reward schedule. The new tail emission model ensures long-term sustainability for miner incentives.
