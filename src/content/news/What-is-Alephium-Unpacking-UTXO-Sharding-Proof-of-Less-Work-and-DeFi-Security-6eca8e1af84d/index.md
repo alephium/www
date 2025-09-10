@@ -1,5 +1,5 @@
 ---
-date: 2024-11-04 17:36:49.665000+00:00
+date: 2024-11-04T17:36:49.665000Z
 description: Alephium attended Singapore Token 2049 and Maud was interviewed by Defiant
   news there. She shared a bit about Alephium’s history, the…
 spotlight: false
@@ -7,17 +7,9 @@ featuredImage: image_ef7dfbeb3a.png
 title: What is Alephium? Unpacking UTXO Sharding, Proof of Less Work, and DeFi Security
 ---
 
-### What is Alephium? Unpacking UTXO Sharding, Proof of Less Work, and DeFi Security
-
-![](image_ef7dfbeb3a.png)
-
 Alephium attended Singapore Token 2049 and Maud was interviewed by Defiant news there. She shared a bit about Alephium’s history, the current state and what the future holds. The full video interview is available here:
 
-<figure id="421a" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=bCdjsGuT4Rc" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=bCdjsGuT4Rc`
 
 If you prefer reading, the full (slightly edited) transcript is below.
 

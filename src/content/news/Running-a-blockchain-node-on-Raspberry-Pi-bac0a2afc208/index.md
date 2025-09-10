@@ -1,14 +1,10 @@
 ---
-date: 2021-10-14 09:59:55.248000+00:00
+date: 2021-10-14T09:59:55.248000Z
 description: The Decentralization bottleneck
 spotlight: false
 featuredImage: image_2bac85bda4.jpeg
 title: Running a blockchain node on Raspberry Pi
 ---
-
-### Running a blockchain node on Raspberry Pi
-
-![](image_2bac85bda4.jpeg)
 
 ### The Decentralization bottleneck
 

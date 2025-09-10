@@ -1,5 +1,5 @@
 ---
-date: 2024-08-14 13:43:07.996000+00:00
+date: 2024-08-14T13:43:07.996000Z
 description: This interview was conducted around the Athens Builders Meetup, which
   took place at the end of June 2024. If you’re just discovering…
 spotlight: false
@@ -7,19 +7,11 @@ featuredImage: image_ff04b57175.png
 title: Builders Uncut —Alph.pro, What The Duck &amp; Mintingti.me
 ---
 
-### Builders Uncut —Alph.pro, What The Duck & Mintingti.me
-
-![](image_ff04b57175.png)
-
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
 Here, <a href="https://x.com/0x_reed" class="markup--anchor markup--p-anchor" data-href="https://x.com/0x_reed" rel="noopener" target="_blank">Reed</a> shares his crypto journey, the experiments around NFTs and news about his projects deployed on Alephium. Here’s the full video interview. Find the full (slightly edited) transcript below if you prefer reading.
 
-<figure id="732f" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=qcaY14_y7wI" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=qcaY14_y7wI`
 
 #### Hey Reed! It’s a pleasure to meet you in person finally!
 
@@ -114,11 +106,7 @@ Twitter: <a href="https://x.com/0x_reed" class="markup--anchor markup--p-anchor"
 
 Reed was a speaker at the Athens Builders Meetup!
 
-<figure id="75ad" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=_eIxfM-O09Q" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=_eIxfM-O09Q`
 
 You can also find all the talks of the Athens Builders Meetup <a href="https://medium.com/@alephium/all-the-athens-meetup-presentations-f419195640ce?source=user_profile---------0----------------------------" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/all-the-athens-meetup-presentations-f419195640ce?source=user_profile---------0----------------------------" target="_blank">here</a>.
 

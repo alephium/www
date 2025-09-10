@@ -1,16 +1,12 @@
 ---
-date: 2024-09-03 16:14:48.298000+00:00
+date: 2024-09-03T16:14:48.298000Z
 description: Bridge assets from and to BNB Smart Chain Testnet
 spotlight: false
 featuredImage: image_39fa5f38bb.png
 title: The BSC/Alephium Bridge is live on Testnet!
 ---
 
-### The BSC/Alephium Bridge is live on Testnet!
-
 #### Bridge assets from and to BNB Smart Chain Testnet
-
-![](image_39fa5f38bb.png)
 
 This is the hitchhiker’s guide to Alephium’s second testnet bridge!
 

@@ -1,5 +1,5 @@
 ---
-date: 2024-10-21 08:17:06.469000+00:00
+date: 2024-10-21T08:17:06.469000Z
 description: The blockchain hashrate is directly correlated with network security.
   As a Proof-of-work blockchain, Alephium relies on active ecosystem…
 spotlight: false
@@ -7,19 +7,11 @@ featuredImage: image_73a6ea4a32.png
 title: 'Hashrate Series #5: Hearst'
 ---
 
-### Hashrate Series \#5: Hearst
-
 _The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem actors to sustain and improve Alephium’s reliability. This series is about them, and after_ <a href="https://medium.com/@alephium/hashrate-series-1-nicehash-ee0936adf899" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/hashrate-series-1-nicehash-ee0936adf899" rel="noopener" target="_blank"><em>Nicehash</em></a>, <a href="https://medium.com/@alephium/hashrate-series-2-goldshell-93cc51a86640" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/hashrate-series-2-goldshell-93cc51a86640" rel="noopener" target="_blank"><em>Goldshell</em></a>_,_ <a href="https://medium.com/@alephium/hashrate-series-3-cryptohall-24-7ad1533701f4" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/hashrate-series-3-cryptohall-24-7ad1533701f4" target="_blank"><em>Cryptohall24,</em></a> _and_ <a href="https://medium.com/@alephium/hashrate-series-4-iceriver-063f52b7c431" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/hashrate-series-4-iceriver-063f52b7c431" target="_blank"><em>ICERIVER</em></a>, _please welcome Hearst._
-
-![](image_73a6ea4a32.png)
 
 Here, <a href="https://x.com/LoicRicci" class="markup--anchor markup--p-anchor" data-href="https://x.com/LoicRicci" rel="noopener" target="_blank">Loic</a> shares his crypto journey and how Hearst came to be. The full video interview is available here.
 
-<figure id="5d3d" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=z0FaUrh6iXw" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=z0FaUrh6iXw`
 
 If you prefer reading, the full (slightly edited) transcript is below.
 
@@ -90,11 +82,7 @@ Website:\_ <a href="https://hearstcorporation.io/" class="markup--anchor markup-
 
 Loic was a speaker at the Athens Builders Meetup!
 
-<figure id="11da" class="graf graf--figure graf--iframe graf-after--p graf--trailing">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=8QwhDKPVqhY" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=8QwhDKPVqhY`
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-date: 2023-09-28 16:34:51.022000+00:00
+date: 2023-09-28T16:34:51.022000Z
 description: Our ecosystem thrives with developers building amazing stuff on top of
   Alephium (services, dApps, etc…) that deliver a unique experience…
 spotlight: false
@@ -7,11 +7,7 @@ featuredImage: image_61abe28f4e.jpg
 title: 'Builders Highlight #4: No Trust Verify'
 ---
 
-### Builders Highlight \#4: No Trust Verify
-
 _Our ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience and provide real utility for the users. In the Builders Highlight series, these builders will share more about their projects, thoughts, and insights on why building on Alephium! You can find_ <a href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" rel="noopener" target="_blank"><em>#1 here</em></a>_,_ <a href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" rel="noopener" target="_blank"><em>#2 here</em></a> _and_ <a href="https://medium.com/@alephium/builders-highlight-3-ayin-6be4a6bd4ec2" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-3-ayin-6be4a6bd4ec2" target="_blank"><em>#3</em></a>_!_
-
-![](image_61abe28f4e.jpg)
 
 This episode is about No Trust Verify, creator of the first ever token on mainnet (ALF), now introducing <a href="https://walph.io" class="markup--anchor markup--p-anchor" data-href="https://walph.io" rel="noopener" target="_blank">Walph</a>, the first decentralized lottery powered by Alephium! <a href="https://twitter.com/cg1_bin" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/cg1_bin" rel="noopener" target="_blank">cgi-bin</a> and <a href="https://twitter.com/Oheka32" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/Oheka32" rel="noopener" target="_blank">Oheka</a> & other NTV members are hyperactive community members & fantastic builders, and we thank them for their time!
 

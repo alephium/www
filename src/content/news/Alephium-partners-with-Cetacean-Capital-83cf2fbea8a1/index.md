@@ -1,5 +1,5 @@
 ---
-date: 2022-04-12 07:06:52.155000+00:00
+date: 2022-04-12T07:06:52.155000Z
 description: Lausanne, Switzerland, April 12th, 2022 — Alephium, an innovative Layer
   1 blockchain announces Cetacean Capital as a new strategic partner…
 spotlight: false
@@ -7,15 +7,11 @@ featuredImage: image_7f746d6c9c.jpg
 title: Alephium partners with Cetacean Capital
 ---
 
-### **Alephium partners with Cetacean Capital**
-
 #### _Lausanne, Switzerland,_ April 12th, 2022* — Alephium, an innovative Layer 1 blockchain announces* <a href="https://cetacean.capital/" class="markup--anchor markup--h4-anchor" data-href="https://cetacean.capital/" rel="noopener" target="_blank"><em>Cetacean Capital</em></a> _as a new strategic partner, a huge win for Alephium’s ecosystem._
 
 \- <a href="https://medium.com/@Oheka/alephium-sassocie-%C3%A0-cetacean-capital-413630aeee94" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@Oheka/alephium-sassocie-%C3%A0-cetacean-capital-413630aeee94" target="_blank">Traduction Française</a> (Community translated)
 
 - <a href="https://medium.com/@alephium-pt/alephium-se-associa-%C3%A0-cetacean-capital-5b1f14a9e0d8" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium-pt/alephium-se-associa-%C3%A0-cetacean-capital-5b1f14a9e0d8" target="_blank">Tradução portuguesa</a> (Community translated)
-
-![](image_7f746d6c9c.jpg)
 
 _« After months of efforts to launch the mainnet last November and following our first listing on top-10 exchange Gate.io in January, we are proud and humbled to welcome Cetacean Capital as a strategic partner to join in on our mission to build the DeFi infrastructure of tomorrow. » commented_ Cheng Wang, Founder and Core Developer of <a href="https://alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/" rel="noopener" target="_blank">Alephium</a>.
 

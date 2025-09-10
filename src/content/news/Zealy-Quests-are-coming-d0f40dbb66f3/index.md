@@ -1,15 +1,11 @@
 ---
-date: 2023-09-04 14:43:00.172000+00:00
+date: 2023-09-04T14:43:00.172000Z
 description: As the community expands, and more non-tech people join us, we need different
   tools, and different ways of showing, exploring and…
 spotlight: false
 featuredImage: image_c497e1e421.jpg
 title: Zealy Quests are coming!
 ---
-
-### Zealy Quests are coming!
-
-![](image_c497e1e421.jpg)
 
 As the community expands, and more non-tech people join us, we need different tools, and different ways of showing, exploring and explaining what Alephium is about!
 

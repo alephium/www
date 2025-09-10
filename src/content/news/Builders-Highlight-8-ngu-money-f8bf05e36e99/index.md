@@ -1,15 +1,11 @@
 ---
-date: 2024-03-01 15:24:32.761000+00:00
+date: 2024-03-01T15:24:32.761000Z
 description: Our ecosystem thrives with developers building amazing projects on top
   of Alephium, delivering a unique experience and providing real…
 spotlight: false
 featuredImage: image_0408f23a12.jpg
 title: 'Builders Highlight #8: ngu.money'
 ---
-
-### **Builders Highlight \#8: ngu.money**
-
-![](image_0408f23a12.jpg)
 
 _Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real utility for users. In the Builders Highlight series, they share more about their projects, thoughts, and insights on why building on Alephium. You can find_ <a href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" rel="noopener" target="_blank"><em>#1 here</em></a>_,_ <a href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" rel="noopener" target="_blank"><em>#2 here</em></a>, <a href="https://medium.com/@alephium/builders-highlight-3-ayin-6be4a6bd4ec2" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-3-ayin-6be4a6bd4ec2" rel="noopener" target="_blank"><em>#3 here</em></a>, <a href="https://medium.com/@alephium/builders-highlight-4-no-trust-verify-9ea495ca826f" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-4-no-trust-verify-9ea495ca826f" rel="noopener" target="_blank"><em>#4 here</em></a>, <a href="https://medium.com/@alephium/builders-highlight-5-deadrare-d5ff90d6161e" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-5-deadrare-d5ff90d6161e" rel="noopener" target="_blank"><em>#5 here</em></a>, <a href="https://medium.com/@alephium/builders-highlight-6-what-the-duck-0aedc602ecfd" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-6-what-the-duck-0aedc602ecfd" rel="noopener" target="_blank"><em>#6 here</em></a>, and <a href="https://medium.com/@alephium/builders-highlight-7-alphpad-bbd4f4a34fd5" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-7-alphpad-bbd4f4a34fd5" target="_blank"><em>#7 here</em></a>_!_
 

@@ -1,16 +1,12 @@
 ---
-date: 2024-01-19 14:13:31.154000+00:00
+date: 2024-01-19T14:13:31.154000Z
 description: Applications are open, apply now!
 spotlight: true
 featuredImage: image_f92c0445fe.jpg
 title: 'Alephium #1 Hackathon — Pioneers!'
 ---
 
-### Alephium \#1 Hackathon — Pioneers!
-
 #### Applications are open, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDsa1CwJeg-fxrWb1gVWefP4iJoNoZwNe0PNwk94GqmcMkHg/viewform?usp=sharing" class="markup--anchor markup--h4-anchor" data-href="https://docs.google.com/forms/d/e/1FAIpQLSdDsa1CwJeg-fxrWb1gVWefP4iJoNoZwNe0PNwk94GqmcMkHg/viewform?usp=sharing" rel="noopener" target="_blank">apply now</a>!
-
-![](image_f92c0445fe.jpg)
 
 _TL;DR — The Alephium hackathon will take place from 12th to 26th February 2024. With a prize pool of up to_ **_\$70,000 in ALPH_** _tokens, sponsored by Alephium,_ <a href="https://www.bitmain.com/" class="markup--anchor markup--p-anchor" data-href="https://www.bitmain.com/" rel="noopener" target="_blank"><em>Bitmain</em></a>_, the_ <a href="https://twitter.com/Blockflow_DAO" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/Blockflow_DAO" rel="noopener" target="_blank"><em>Blockflow Alliance DAO</em></a>_,_ <a href="https://cetacean.capital/" class="markup--anchor markup--p-anchor" data-href="https://cetacean.capital/" rel="noopener" target="_blank"><em>Cetacean Capital</em></a> _&_ <a href="https://dappnode.com/" class="markup--anchor markup--p-anchor" data-href="https://dappnode.com/" rel="noopener" target="_blank"><em>Dappnode</em></a>_. It will reward teams building across 3 main categories (dApps, tooling & interoperability) as well as offering bounties for solo hackers & teams!_
 

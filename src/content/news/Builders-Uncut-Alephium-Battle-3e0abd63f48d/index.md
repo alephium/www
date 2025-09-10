@@ -1,5 +1,5 @@
 ---
-date: 2024-09-12 09:52:36.624000+00:00
+date: 2024-09-12T09:52:36.624000Z
 description: This interview was conducted around the Athens Builders Meetup, which
   took place at the end of June 2024. If you’re just discovering…
 spotlight: false
@@ -7,21 +7,13 @@ featuredImage: image_8ce8d2d172.png
 title: Builders Uncut — Alephium Battle
 ---
 
-### Builders Uncut — Alephium Battle
-
-![](image_8ce8d2d172.png)
-
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
 Here, development team members Lorenzo and Eduardo discuss their backgrounds in tech and crypto, their passion for gaming, and the inspiration behind their project, <a href="https://alephium-battle.vercel.app/" class="markup--anchor markup--p-anchor" data-href="https://alephium-battle.vercel.app/" rel="noopener" target="_blank">Alephium Battle</a>. They share insights on the game’s development, the success of their first tournament, and their plans for future updates.
 
 If you prefer reading, find the full (slightly edited) transcript below.
 
-<figure id="f262" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=ULxQ5oputqs" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=ULxQ5oputqs`
 
 #### Can you introduce yourself?
 

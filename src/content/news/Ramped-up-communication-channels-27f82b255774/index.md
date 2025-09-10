@@ -1,18 +1,11 @@
 ---
-date: 2021-08-23 15:32:58.223000+00:00
+date: 2021-08-23T15:32:58.223000Z
 description: With the launch of mainnet approaching, we are accommodating for our
   growing community. We hope this will ease the exchange between the…
 spotlight: false
 featuredImage: image_0b3323e072.png
 title: Ramped up communication channels
 ---
-
-### Ramped up communication channels
-
-<figure id="ce13" class="graf graf--figure graf-after--h3">
-<img src="image_0b3323e072.png" class="graf-image" data-image-id="1*ZLMtVI2-Y2Y5Zd9DFdNIpQ.png" data-width="700" data-height="307" />
-<figcaption>Get ready for mainnet, enter the channels</figcaption>
-</figure>
 
 #### With the launch of mainnet approaching, we are accommodating for our growing community. We hope this will ease the exchange between the diverse fauna of developers, users and general enthusiasts populating the project. To that end we have set-up a range of channels that we’d like to invite you to!
 

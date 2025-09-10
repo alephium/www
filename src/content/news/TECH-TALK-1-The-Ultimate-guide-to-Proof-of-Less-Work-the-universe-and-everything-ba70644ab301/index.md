@@ -1,5 +1,5 @@
 ---
-date: 2022-07-05 08:56:12.147000+00:00
+date: 2022-07-05T08:56:12.147000Z
 description: A discussion with Cheng Wang, inventor of PoLW and founder of Alephium
 spotlight: false
 featuredImage: image_a8ea38700f.png
@@ -7,14 +7,7 @@ title: 'TECH TALK #1 — The Ultimate guide to Proof-of-Less-Work, the unive
   everything…'
 ---
 
-### **TECH TALK \#1 — The Ultimate guide to Proof-of-Less-Work, the universe and everything…**
-
 #### A discussion with Cheng Wang, inventor of PoLW and founder of Alephium
-
-<figure id="4a3a" class="graf graf--figure graf-after--h4">
-<img src="image_a8ea38700f.png" class="graf-image" data-image-id="1*-BvfzX39-H2zUFJW4vYtBw.png" data-width="936" data-height="527" data-is-featured="true" />
-<figcaption>The Ultimate guide to Proof-of-Less-Work, the universe and everything…</figcaption>
-</figure>
 
 > This is the first of a series of interviews on the technical innovations brought to the world by Alephium. The discussion was conducted in February 2022, in a virtual format in presence of most of the Alephium team who contributed to the questions and ensuing exchange. The following has been edited for clarity, concision and optimized for readability. It’s been followed by an AMA you can find as a <a href="https://youtu.be/Oi4AsqVY0YA" class="markup--anchor markup--blockquote-anchor" data-href="https://youtu.be/Oi4AsqVY0YA" rel="noopener" target="_blank">video</a> or in <a href="https://medium.com/@alephium/tech-talk-1-proof-of-less-work-ama-3d5afbf78c71" class="markup--anchor markup--blockquote-anchor" data-href="https://medium.com/@alephium/tech-talk-1-proof-of-less-work-ama-3d5afbf78c71" target="_blank">text</a>!
 

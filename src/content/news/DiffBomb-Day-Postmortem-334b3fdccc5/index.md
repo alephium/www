@@ -1,12 +1,10 @@
 ---
-date: 2022-12-21 14:16:06.820000+00:00
+date: 2022-12-21T14:16:06.820000Z
 description: TL;DR
 spotlight: false
 featuredImage: image_c961ca7340.png
 title: DiffBomb Day Postmortem
 ---
-
-### DiffBomb Day Postmortem
 
 **TL;DR**
 
@@ -17,8 +15,6 @@ This increase in hashrate was caused by a very steep increase in difficulty, whi
 The root cause was soon identified, a patch was issued and deployed by full-node runners, including mining pools and others across the community, and the whole chain was back to a stable functioning in less than 36h.
 
 **What happened?**
-
-![](image_c961ca7340.png)
 
 First symptoms — At 3:27PM on December 8th, <a href="https://twitter.com/therealmontail" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/therealmontail" rel="noopener" target="_blank">MontaiL</a> was the first to signal on <a href="http://alephium.org/discord" class="markup--anchor markup--p-anchor" data-href="http://alephium.org/discord" rel="noopener" target="_blank">Alephium’s discord</a> that there seemed to be an anomaly with the network hashrate. Over the next few hours, the community could observe a very significant linear **increase in hashrate**, whether it was through mining pools <a href="https://poolbay.io/crypto/5798/alephium" class="markup--anchor markup--p-anchor" data-href="https://poolbay.io/crypto/5798/alephium" rel="noopener" target="_blank">dashboards</a> or other services.
 

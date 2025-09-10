@@ -1,5 +1,5 @@
 ---
-date: 2022-04-21 09:29:12.943000+00:00
+date: 2022-04-21T09:29:12.943000Z
 description: Back in March 2022, we launched a community video contest and the results
   are in!
 spotlight: false
@@ -7,14 +7,7 @@ featuredImage: image_ec866fe64a.jpg
 title: And the winners of the video creation contest are…
 ---
 
-### And the winners of the video creation contest are…
-
 #### Back in March 2022, we launched a community video contest and the results are in!
-
-<figure id="27ce" class="graf graf--figure graf-after--h4">
-<img src="image_ec866fe64a.jpg" class="graf-image" data-image-id="0*i5LAF3AmPrunnZLb" data-width="936" data-height="527" data-is-featured="true" />
-<figcaption>Video creation contest</figcaption>
-</figure>
 
 After reaching the deadline for submission on the 15th of April, we had received a whopping fifteen (15) contributions from the video creators in our community. All of whom blessed us with their interpretation of how to best leverage motion design to explain what Alephium is, in a wide range of styles and expressions.
 
@@ -37,10 +30,6 @@ Throwing this contest was a great deal of fun for us, and we hope you enjoyed it
 
 Here is the play-list of the all the videos that were submitted
 
-<figure id="02e2" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=vrj3fj4RQMM" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=vrj3fj4RQMM`
 
 **On behalf of the entire Alephium team we’d like to thank everyone for their participation and look forward to future creative ventures with you!**

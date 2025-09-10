@@ -1,15 +1,11 @@
 ---
-date: 2023-08-28 15:19:59.729000+00:00
+date: 2023-08-28T15:19:59.729000Z
 description: Our ecosystem thrives with developers building amazing stuff on top of
   Alephium (services, dApps, etc…) that deliver a unique experience…
 spotlight: false
 featuredImage: image_c5a50dcd6b.jpeg
 title: 'Builders Highlight #3: Ayin'
 ---
-
-### Builders Highlight \#3: Ayin
-
-![](image_c5a50dcd6b.jpeg)
 
 _Our ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience and provide real utility for the users. In the Builders Highlight series, these builders will share more about their projects, thoughts, and insights on why building on Alephium! You can find_ <a href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" target="_blank"><em>#1 here</em></a> _and_ <a href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" target="_blank"><em>#2 here</em></a>_._
 

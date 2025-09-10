@@ -1,5 +1,5 @@
 ---
-date: 2024-09-26 14:50:05.477000+00:00
+date: 2024-09-26T14:50:05.477000Z
 description: This interview was conducted around the Athens Builders Meetup, which
   took place at the end of June 2024. If you’re just discovering…
 spotlight: false
@@ -7,19 +7,11 @@ featuredImage: image_b4fcd9699a.png
 title: Builders Uncut — Pyreplay
 ---
 
-### Builders Uncut — Pyreplay
-
-![](image_b4fcd9699a.png)
-
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
 Jonas, aka <a href="https://x.com/fugashu_codes" class="markup--anchor markup--p-anchor" data-href="https://x.com/fugashu_codes" rel="noopener" target="_blank">Fugashu</a>, and his partner <a href="https://x.com/notdimfred" class="markup--anchor markup--p-anchor" data-href="https://x.com/notdimfred" rel="noopener" target="_blank">Dmitrij</a> share their journey into crypto, their projects <a href="http://Alph.Land" class="markup--anchor markup--p-anchor" data-href="http://Alph.Land" rel="noopener" target="_blank">Alph.Land</a> and <a href="https://www.pyreplay.com/" class="markup--anchor markup--p-anchor" data-href="https://www.pyreplay.com/" rel="noopener" target="_blank">PyrePlay</a> on Alephium, and the supportive community that drew them to the platform. They also discussed their experience at the Alephium Builders meetup and their plans for PyrePlay’s future. Find the full (slightly edited) transcript below if you prefer reading.
 
-<figure id="578e" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=LMgsXYtiY4M" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=LMgsXYtiY4M`
 
 #### Who are you, and what do you do?
 
@@ -78,11 +70,7 @@ Discord: <a href="https://discord.gg/BHUx8KqvSF" class="markup--anchor markup--p
 
 Dimi was a speaker at the Athens Builders Meetup!
 
-<figure id="7790" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=iVoNJRzxLGU" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=iVoNJRzxLGU`
 
 You can also find all the talks of the Athens Builders Meetup <a href="https://medium.com/@alephium/all-the-athens-meetup-presentations-f419195640ce" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/all-the-athens-meetup-presentations-f419195640ce" rel="noopener" target="_blank">here</a>.
 

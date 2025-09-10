@@ -1,18 +1,11 @@
 ---
-date: 2022-10-21 08:55:23.407000+00:00
+date: 2022-10-21T08:55:23.407000Z
 description: Alephium is committed to building and delivering a secure and reliable
   blockchain. With that in mind, we have recently completed a security…
 spotlight: false
 featuredImage: image_396067c811.jpeg
 title: Security Assessment by Inference
 ---
-
-### Security Assessment by Inference
-
-<figure id="2c69" class="graf graf--figure graf-after--h3">
-<img src="image_396067c811.jpeg" class="graf-image" data-image-id="1*KQRVW_KbI_dXN3R5C_PR_A.jpeg" data-width="1024" data-height="576" data-is-featured="true" />
-<figcaption>Security Assessment by Inference</figcaption>
-</figure>
 
 Alephium is committed to building and delivering a secure and reliable blockchain. With that in mind, we have recently completed a security assessment of critical parts of our code. This assessment was conducted by <a href="https://inference.ag/" class="markup--anchor markup--p-anchor" data-href="https://inference.ag/" rel="noopener" target="_blank">Inference</a> and specifically covered:
 

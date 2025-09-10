@@ -1,5 +1,5 @@
 ---
-date: 2022-11-17 17:18:14.134000+00:00
+date: 2022-11-17T17:18:14.134000Z
 description: Combining the expressiveness of the account model & security of the UTXO
   model.
 spotlight: false
@@ -7,11 +7,7 @@ featuredImage: image_0e0226c293.jpg
 title: An introduction to the stateful UTXO model
 ---
 
-### An introduction to the stateful UTXO model
-
 _Combining the expressiveness of the account model & security of the UTXO model._
-
-![](image_0e0226c293.jpg)
 
 _This article is a high-level overview of what the stateful UTXO model is, why it was invented, how it works and what it allows. The stateful UTXO model (sUTXO) is one of the main innovations brought by Alephium, along with_ <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" target="_blank"><em>Proof-of-less-work (PoLW),</em></a> _the Blockflow sharding algorithm, the_ <a href="https://medium.com/@alephium/meet-alphred-a-virtual-machine-like-no-others-85ce86540025" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/meet-alphred-a-virtual-machine-like-no-others-85ce86540025" target="_blank"><em>Alphred Virtual Machine</em></a>_, and the Ralph programming language._
 
@@ -77,17 +73,9 @@ This is a huge improvement for developers, as the ability to have an upgraded ac
 
 There will be more details on the sUTXO model in an upcoming interview with <a href="https://twitter.com/wachmc" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/wachmc" rel="noopener" target="_blank">Cheng Wang</a> on the topic, as it is a pivotal piece of Alephium’s tech stack. Below are two videos of him presenting the sUTXO model and its interaction with Alephium’s VM & programming language, one at EthCC, and the other on Crypto Talk Series.
 
-<figure id="0427" class="graf graf--figure graf--iframe graf-after--p">
+`video: https://www.youtube.com/watch?v=VVYH9rBJAdA`
 
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=VVYH9rBJAdA" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
-
-<figure id="28b1" class="graf graf--figure graf--iframe graf-after--figure">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=r_5U7ZgByt4" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=r_5U7ZgByt4`
 
 #### The next post in the tech series will feature <a href="https://medium.com/@alephium/meet-alphred-a-virtual-machine-like-no-others-85ce86540025" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/meet-alphred-a-virtual-machine-like-no-others-85ce86540025" target="_blank"><strong>Alphred, the Virtual Machine!</strong></a> **To know** <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" target="_blank"><strong>more about PoLW here.</strong></a>
 

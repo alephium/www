@@ -1,5 +1,5 @@
 ---
-date: 2024-09-06 13:28:58.200000+00:00
+date: 2024-09-06T13:28:58.200000Z
 description: This interview was conducted around the Athens Builders Meetup, which
   took place at the end of June 2024. If you’re just discovering…
 spotlight: false
@@ -7,19 +7,11 @@ featuredImage: image_1e2a26d3d1.png
 title: Builders Uncut — Sezame Wallet
 ---
 
-### Builders Uncut — Sezame Wallet
-
-![](image_1e2a26d3d1.png)
-
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
 Here, Tobias (a founding member of <a href="https://sezame.app/" class="markup--anchor markup--p-anchor" data-href="https://sezame.app/" rel="noopener" target="_blank">Sezame Wallet</a>) discusses the project’s journey in the Alephium ecosystem. He highlights the creation of a mobile wallet with integrated cloud mining, making Alephium accessible to non-technical users, and shares their plans for the future. Find the full (slightly edited) transcript below if you prefer reading.
 
-<figure id="e49a" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=_tvCwzxQhdM" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=_tvCwzxQhdM`
 
 #### Can you introduce yourself and tell us a bit about Sezame Wallet?
 

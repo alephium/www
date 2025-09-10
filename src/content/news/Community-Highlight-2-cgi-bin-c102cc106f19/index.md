@@ -1,5 +1,5 @@
 ---
-date: 2022-11-03 16:05:01.716000+00:00
+date: 2022-11-03T16:05:01.716000Z
 description: 'This is episode #2 in our series of highlights where once in a while
   we put the spotlight on one active member of our community. This is an…'
 spotlight: false
@@ -7,18 +7,11 @@ featuredImage: image_30dfdcb286.jpg
 title: 'Community Highlight #2, cgi-bin'
 ---
 
-### Community Highlight \#2, cgi-bin
-
 #### This is episode \#2 in our series of highlights where once in a while we put the spotlight on one active member of our community. This is an opportunity for us to showcase their contributions to our ecosystem, what drives them and what they are passionate about! You can find episode <a href="https://medium.com/@alephium/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" target="_blank">#1 here</a>, <a href="https://medium.com/@alephium/community-highlight-3-digdug-48a7ec868504" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-3-digdug-48a7ec868504" target="_blank">#3here</a>, <a href="https://medium.com/@alephium/community-highlight-4-montail-e24fd88882a0" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-4-montail-e24fd88882a0" target="_blank">#4 here</a>, <a href="https://medium.com/@alephium/community-highlight-5-txn-71c4fd76ffe8" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-5-txn-71c4fd76ffe8" rel="noopener" target="_blank">#5 here</a> and <a href="https://medium.com/@alephium/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" rel="noopener" target="_blank">#6 here</a>..
 
 ---
 
 Today we thank CGI-BIN, a recognizable voice on our Telegram & Discord channels, as well as on Twitter! A very helpful and reactive presence, knowledgeable about Alephium in particular and crypto in general.
-
-<figure id="27ff" class="graf graf--figure graf-after--p">
-<img src="image_30dfdcb286.jpg" class="graf-image" data-image-id="0*fB6GAPmj_PxudeDv" data-width="512" data-height="512" data-is-featured="true" />
-<figcaption>Stable Diffusion image of cgi-bin</figcaption>
-</figure>
 
 #### What can we call you and where should we picture you?
 

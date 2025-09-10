@@ -1,16 +1,12 @@
 ---
-date: 2023-11-09 17:01:31.560000+00:00
+date: 2023-11-09T17:01:31.560000Z
 description: How does it work? How to use it? About the guardians, and more…
 spotlight: false
 featuredImage: image_bfb2d7bedf.jpg
 title: The Alephium Bridge
 ---
 
-### The Alephium Bridge
-
 #### How does it work? How to use it? About the guardians, and more…
-
-![](image_bfb2d7bedf.jpg)
 
 _This article was updated to reflect the new conditions after the_ <a href="https://medium.com/@alephium/rh%C3%B4ne-network-upgrade-activated-cbeb298585fe" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/rh%C3%B4ne-network-upgrade-activated-cbeb298585fe" target="_blank"><em>Rhône Network Upgrade</em></a>_: bridging from Alephium to Ethereum requires at least 205 blocks_ **_and_** _at least 55 minutes._
 

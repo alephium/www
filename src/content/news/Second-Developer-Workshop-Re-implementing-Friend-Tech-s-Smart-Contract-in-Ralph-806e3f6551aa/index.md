@@ -1,16 +1,11 @@
 ---
-date: 2023-11-06 15:29:26.299000+00:00
+date: 2023-11-06T15:29:26.299000Z
 description: Welcome to the second developer workshop! If you missed the first one,
   we dived into the basics of Ralph programming language, along with…
 spotlight: false
 featuredImage: image_7c0c9f04f9.png
-title: 'Second Developer Workshop: Re-implementing Friend.Tech’s Smart Contract in
-  Ralph'
+title: 'Second Developer Workshop: Re-implementing Friend.Tech’s Smart Contract in Ralph'
 ---
-
-### Second Developer Workshop: Re-implementing Friend.Tech’s Smart Contract in Ralph
-
-![](image_7c0c9f04f9.png)
 
 Welcome to the second developer workshop! If you missed the first one, we dived into the basics of Ralph programming language, along with its SDK and CLI build tools, crafting a simple token faucet. It’s been a fantastic experience, you can find it <a href="https://medium.com/@alephium/first-developer-workshop-build-a-token-faucet-a6bb2aa7bf68" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/first-developer-workshop-build-a-token-faucet-a6bb2aa7bf68" target="_blank">here</a> or on <a href="https://www.youtube.com/watch?v=YblUxEcXQuY" class="markup--anchor markup--p-anchor" data-href="https://www.youtube.com/watch?v=YblUxEcXQuY" rel="noopener" target="_blank">YouTube</a> and <a href="https://github.com/alephium/dev-workshop-01" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/dev-workshop-01" rel="noopener" target="_blank">GitHub</a>.
 
@@ -86,11 +81,7 @@ The workshop assumes that you have at least some familiarity with the command li
 
 You can follow the full detailed workshop in the following video. Here’s the <a href="https://github.com/alephium/dev-workshop-02/blob/session-1/contracts/friend_tech.ral" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/dev-workshop-02/blob/session-1/contracts/friend_tech.ral" rel="noopener" target="_blank">full code</a> of the Ralph implementation, and this article highlights the main steps for easier comprehension:
 
-<figure id="e82d" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=gi2sxvB9Np8" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=gi2sxvB9Np8`
 
 ### Step 1: Contract Ownership
 

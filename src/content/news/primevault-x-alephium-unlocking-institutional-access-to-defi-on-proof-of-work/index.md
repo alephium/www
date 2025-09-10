@@ -1,14 +1,11 @@
 ---
-title: "PrimeVault x Alephium: Unlocking Institutional Access to DeFi on
-  Proof-of-Work"
+title: 'PrimeVault x Alephium: Unlocking Institutional Access to DeFi on
+  Proof-of-Work'
 description: What comes after a major partnership? Explore.
 date: 2025-07-25T20:01:00.000Z
 spotlight: true
 featuredImage: primevault1.webp
 ---
-# PrimeVault x Alephium: Unlocking Institutional Access to DeFi on Proof-of-Work
-
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*haY5OQrhRO599MvnSQ60Hg.png)
 
 Alephium was built for real-world finance as a secure, scalable, and powerful infrastructure for the next wave of decentralized applications. But one thing was missing: institutional-grade custody.
 
@@ -20,19 +17,23 @@ For institutional players, security, compliance, and seamless infrastructure are
 
 With PrimeVault integrated into Alephium, institutions can now access:
 
-* **On-chain custody and compliance frameworks**
+- **On-chain custody and compliance frameworks**
 
   , supporting programmable settlement, KYC layers, and institutional access controls.
-* **Structured DeFi strategies**
+
+- **Structured DeFi strategies**
 
   , including automated yield products, lending markets, and risk-managed vaults.
-* **Decentralized trading and liquidity provision**
+
+- **Decentralized trading and liquidity provision**
 
   , with high-throughput performance and finality guarantees.
-* **Tokenized real-world assets (RWAs)**
+
+- **Tokenized real-world assets (RWAs)**
 
   , enabling exposure to off-chain financial products within programmable, permissionless environments.
-* And more.
+
+- And more.
 
 This unlocks a whole new segment of capital and users for the Alephium ecosystem without compromising on decentralization or performance.
 
@@ -42,12 +43,13 @@ This unlocks a whole new segment of capital and users for the Alephium ecosystem
 
 This isn’t just theoretical. We’re already seeing institutional teams use this infrastructure:
 
-* **WeMine**
+- **WeMine**
 
   , a new mining dApp built on Alephium, is working with PrimeVault to custody mined ALPH and access both CeFi and DeFi rails.
-* **Market makers**
 
-   in our ecosystem are using PrimeVault’s MPC stack to securely provision liquidity across CEXs and DEXs, boosting capital efficiency while maintaining top-tier security.
+- **Market makers**
+
+  in our ecosystem are using PrimeVault’s MPC stack to securely provision liquidity across CEXs and DEXs, boosting capital efficiency while maintaining top-tier security.
 
 *“For WeMine, PrimeVault’s integration into Alephium has been a game-changer. It gives us a secure and compliant framework to store mined ALPH while tapping into on-chain DeFi rails with confidence. We see this as a foundational layer for scaling decentralized mining investments to institutional standards”,* **said Maxime Slemett, CPO of WeMine**
 
@@ -61,9 +63,9 @@ The focus? Real-world financial apps. Builders of automated strategies, tokenize
 
 Grant recipients get more than just funding, they’ll gain:
 
-* Priority access to PrimeVault’s infrastructure and API
-* Support from their engineering team
-* Direct connectivity to regulated liquidity partners
+- Priority access to PrimeVault’s infrastructure and API
+- Support from their engineering team
+- Direct connectivity to regulated liquidity partners
 
 This is a huge opportunity for teams looking to build production-grade, institution-ready products on Alephium. This grant program shows PrimeVault’s long-term commitment to supporting Alephium and teams building serious, production-grade on-chain finance.
 
@@ -75,17 +77,17 @@ Here’s what powers it:
 
 **From PrimeVault:**
 
-* MPC custody with Trusted Execution Environments (TEEs)
-* Formal verification and programmable policy controls
-* Seamless integrations with both CeFi and DeFi venues
-* A simple, fast UI that institutions like
+- MPC custody with Trusted Execution Environments (TEEs)
+- Formal verification and programmable policy controls
+- Seamless integrations with both CeFi and DeFi venues
+- A simple, fast UI that institutions like
 
 **From Alephium:**
 
-* Native sharding and PoW architecture with 8-second blocks
-* 20,000 TPS throughput and horizontal scalability
-* Security-first smart contracts with sUTXO architecture
-* UX that feels like Web 2
+- Native sharding and PoW architecture with 8-second blocks
+- 20,000 TPS throughput and horizontal scalability
+- Security-first smart contracts with sUTXO architecture
+- UX that feels like Web 2
 
 *“Alephium has built one of the most technically advanced Layer-1s on the market, and institutional demand for access is accelerating. Bitcoin, while the largest and most secure digital asset, has traditionally been limited in programmability. Alephium bridges that gap, combining Bitcoin’s core principles with a high-performance architecture for smart contracts and a modern UX layer as a first-class primitive. We’re excited to enable institutional access to this next evolution with the security and efficiency they expect”,* **said Akansh Jain, Co-founder and CBO of PrimeVault.**
 
@@ -105,10 +107,10 @@ Join the Alephium ecosystem → [https://alephium.org](https://alephium.org/)
 
 Founded in 2022, PrimeVault delivers crypto custody, token operations, and institutional market connectivity for financial institutions and token foundations. Backed by Y Combinator, HashKey Capital, Arrington Capital, and others, the PrimeVault team has decades of experience in FinTech and cybersecurity. Headquartered in San Francisco, they’re building the infrastructure that powers institutional finance in Web3.
 
-***Learn more at** [primevault.com](http://primevault.com/)*
+**\*Learn more at** [primevault.com](http://primevault.com/)\*
 
 ### About Alephium
 
 Alephium is the only scalable Layer 1 blockchain powered by Proof-of-Work and native sharding. Its unique sUTXO model enables secure and expressive smart contracts, while maintaining decentralization and efficiency. With the Danube Upgrade, Alephium delivers the speed of PoS chains without sacrificing trust assumptions. Alephium is building the execution layer for real-world decentralized finance, fast, secure, and ready for what’s next.
 
-***Learn more at** [alephium.org](http://alephium.org/)*
+**\*Learn more at** [alephium.org](http://alephium.org/)\*

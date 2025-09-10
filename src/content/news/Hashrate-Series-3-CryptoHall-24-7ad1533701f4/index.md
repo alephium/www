@@ -1,5 +1,5 @@
 ---
-date: 2024-09-18 09:07:51.547000+00:00
+date: 2024-09-18T09:07:51.547000Z
 description: The blockchain hashrate is directly correlated with network security.
   As a Proof-of-work blockchain, Alephium relies on active ecosystem…
 spotlight: false
@@ -7,19 +7,11 @@ featuredImage: image_9fb00a1330.png
 title: 'Hashrate Series #3: CryptoHall 24'
 ---
 
-### Hashrate Series \#3: CryptoHall 24
-
 _The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem actors to sustain and improve Alephium’s reliability. This series is about them, and after_ <a href="https://medium.com/@alephium/hashrate-series-1-nicehash-ee0936adf899" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/hashrate-series-1-nicehash-ee0936adf899" target="_blank"><em>Nicehash</em></a> _and_ <a href="https://medium.com/@alephium/hashrate-series-2-goldshell-93cc51a86640" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/hashrate-series-2-goldshell-93cc51a86640" target="_blank"><em>Goldshell</em></a>_, please welcome CryptoHall 24._
-
-![](image_9fb00a1330.png)
 
 Here, Frederick shares his crypto journey, and how CryptoHall24 came to be. Here’s the full video interview. If you prefer reading, find the full (slightly edited) transcript below.
 
-<figure id="d2f0" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=UvXz443eWng" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=UvXz443eWng`
 
 #### This is the first video interview in our Hashrate series, which is usually in written format. A few months ago, <a href="https://youtu.be/XudpYH4znnQ?feature=shared" class="markup--anchor markup--h4-anchor" data-href="https://youtu.be/XudpYH4znnQ?feature=shared" rel="noopener" target="_blank">you interviewed Maud</a>, and it was an enjoyable experience for everyone. So, welcome again.
 

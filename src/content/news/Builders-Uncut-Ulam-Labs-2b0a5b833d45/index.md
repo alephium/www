@@ -1,5 +1,5 @@
 ---
-date: 2024-08-23 08:05:22.102000+00:00
+date: 2024-08-23T08:05:22.102000Z
 description: This interview was conducted around the Athens Builders Meetup, which
   took place at the end of June 2024. If you’re just discovering…
 spotlight: false
@@ -7,19 +7,11 @@ featuredImage: image_593e134906.png
 title: Builders Uncut — Ulam Labs
 ---
 
-### Builders Uncut — Ulam Labs
-
-![](image_593e134906.png)
-
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
 Here, we have a conversation with with Lukasz about <a href="https://ulam.io/" class="markup--anchor markup--p-anchor" data-href="https://ulam.io/" rel="noopener" target="_blank">Ulam Labs</a>, a company devoted to full-cycle software development, focusing on fintech and which started offering an auditing service to Alephium projects. Find the full (slightly edited) transcript below if you prefer reading.
 
-<figure id="af9a" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=F2iH-M23CHE" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=F2iH-M23CHE`
 
 #### Hi, Lukasz. How are you? It’s good to have you with us for the interview.
 

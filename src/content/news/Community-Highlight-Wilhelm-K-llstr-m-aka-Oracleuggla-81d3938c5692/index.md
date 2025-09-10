@@ -1,5 +1,5 @@
 ---
-date: 2022-10-14 09:10:11.698000+00:00
+date: 2022-10-14T09:10:11.698000Z
 description: Alephium takes an organic approach to community building. We believe
   actions speak louder than words…
 spotlight: false
@@ -7,16 +7,9 @@ featuredImage: image_b43f0a37be.jpeg
 title: Community Highlight, Wilhelm Källström aka “Oracleuggla”
 ---
 
-### Community Highlight \#1, Wilhelm Källström aka “Oracleuggla”
-
 #### Alephium takes an organic approach to community building. We believe actions speak louder than words and that we rally people together around the quality of those actions. We’ve been incredibly fortunate to attract a diverse, and self-driven community. More episodes: <a href="https://medium.com/@alephium/community-highlight-cgi-bin-c102cc106f19" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-cgi-bin-c102cc106f19" target="_blank">#2 here</a>, <a href="https://medium.com/@alephium/community-highlight-3-digdug-48a7ec868504" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-3-digdug-48a7ec868504" target="_blank">#3here</a>, <a href="https://medium.com/@alephium/community-highlight-4-montail-e24fd88882a0" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-4-montail-e24fd88882a0" target="_blank">#4 here,</a> <a href="https://medium.com/@alephium/community-highlight-5-txn-71c4fd76ffe8" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-5-txn-71c4fd76ffe8" target="_blank">#5 here</a> and <a href="https://medium.com/@alephium/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" target="_blank">#6 here</a>.
 
 This series of highlights aims at showcasing this community by putting the spotlight on one actively contributing member at a time. This is an opportunity for us to put into the light contributions from the community along with the things they are passionate about and what drives them.
-
-<figure id="5ecf" class="graf graf--figure graf-after--p">
-<img src="image_b43f0a37be.jpeg" class="graf-image" data-image-id="1*JucdJ8bf0F4eM_gILz9exQ.jpeg" data-width="1024" data-height="1024" data-is-featured="true" />
-<figcaption>Wilhelm Källström</figcaption>
-</figure>
 
 #### What can we call you and where should we picture you?
 

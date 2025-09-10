@@ -1,17 +1,10 @@
 ---
-date: 2022-08-11 16:13:20.641000+00:00
+date: 2022-08-11T16:13:20.641000Z
 description: Introduction
 spotlight: false
 featuredImage: image_2e22410376.jpg
 title: TTxOO 2 — The road to Self-Custody
 ---
-
-### TTxOO 2 — The road to Self-Custody
-
-<figure id="fd3c" class="graf graf--figure graf-after--h3">
-<img src="image_2e22410376.jpg" class="graf-image" data-image-id="0*unNFtqS7tw65Gbd9" data-width="1024" data-height="576" data-is-featured="true" />
-<figcaption>Our Tech Talk x Open Office happens every last thursday of the month</figcaption>
-</figure>
 
 ### Introduction
 

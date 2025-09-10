@@ -1,5 +1,5 @@
 ---
-date: 2024-07-12 14:48:00.732000+00:00
+date: 2024-07-12T14:48:00.732000Z
 description: If you couldn’t come… Doesn’t mean you can’t see the presentations! Find
   them all here and watch them at your convenience.
 spotlight: false
@@ -7,11 +7,7 @@ featuredImage: image_ef1fd8e881.jpg
 title: All the Athens Meetup Presentations!
 ---
 
-### **All the Athens Meetup Presentations!**
-
 _If you couldn’t come… Doesn’t mean you can’t see the presentations! Find them all here and watch them at your convenience._
-
-![](image_ef1fd8e881.jpg)
 
 Alephium’s first builders meetup was held in Athens June 21–23 2024. It has been an incredible gathering where the builders of ecosystem’s projects were able to meet & mingle with core contributors in an insightful, joyous & studious atmosphere.
 
@@ -37,52 +33,32 @@ We’ve worked hard at making them accessible in a simple way. If you can’t he
 
 _An overview of Alephium’s history, current developments and what’s on the roadmap. — _<a href="https://drive.google.com/file/d/1-MFgpjilqH8LxITpHz5Itv9q6Bt6Mmtw/view?usp=sharing" class="markup--anchor markup--p-anchor" data-href="https://drive.google.com/file/d/1-MFgpjilqH8LxITpHz5Itv9q6Bt6Mmtw/view?usp=sharing" rel="noopener" target="_blank"><strong>Deck</strong></a>
 
-<figure id="74c1" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=Xz87UAsqbJA" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=Xz87UAsqbJA`
 
 #### **Exploring Dapp Development Across Blockchain Ecosystems: Why Alephium Stands Out**
 
 \*Presentation covering a range of UTXO-based blockchains, highlighting the development experience on each of them & the strong points of Alephium. **\*— **<a href="https://drive.google.com/file/d/16z2ATyTi5U6aQpb6b-zSSWFnswNCUVWU/view?usp=sharing" class="markup--anchor markup--p-anchor" data-href="https://drive.google.com/file/d/16z2ATyTi5U6aQpb6b-zSSWFnswNCUVWU/view?usp=sharing" rel="noopener" target="_blank"><strong>Deck</strong></a>
 
-<figure id="49a6" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=jhzjXJjMDSk" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=jhzjXJjMDSk`
 
 #### **Bridging Mining, DeFi & Sustainability**
 
 By Loïc Ricci of <a href="https://x.com/Hearst_io" class="markup--anchor markup--p-anchor" data-href="https://x.com/Hearst_io" rel="noopener" target="_blank">Hearst</a> (<a href="https://x.com/Hearst_io" class="markup--anchor markup--p-anchor" data-href="https://x.com/Hearst_io" rel="noopener" target="_blank">X profile</a>, <a href="https://hearst-capital.com/" class="markup--anchor markup--p-anchor" data-href="https://hearst-capital.com/" rel="noopener" target="_blank">Website</a>)  
 \*Hearst’s overview, focusing on the solutions offering: An integrated experience of running mining equipments, leveraging DeFi protocols to increase returns and exploring sustainability in energy sources & how it interacts with Alephium & its ecosystem. **\*— **<a href="https://drive.google.com/file/d/1mpi4aOMAVg8fTt3qiVYlGC0Z8iIWfgNB/view?usp=sharing" class="markup--anchor markup--p-anchor" data-href="https://drive.google.com/file/d/1mpi4aOMAVg8fTt3qiVYlGC0Z8iIWfgNB/view?usp=sharing" rel="noopener" target="_blank"><strong>Deck</strong></a>
 
-<figure id="a947" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=8QwhDKPVqhY" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=8QwhDKPVqhY`
 
 #### **dApps, under the hood**
 
 _Presentation of the “_<a href="https://alephium-decoder.softfork.se/" class="markup--anchor markup--p-anchor" data-href="https://alephium-decoder.softfork.se/" rel="noopener" target="_blank"><em>Alephium Decoder</em></a>\*”, a powerful tool that enables developers to investigate smart contracts and transaction scripts to verify their correctness + a description of all the steps of a transaction!**\* — **<a href="https://drive.google.com/file/d/1YKPXM2J7UBGkTCDH_0l8YfHPZAbc5ifE/view?usp=sharing" class="markup--anchor markup--p-anchor" data-href="https://drive.google.com/file/d/1YKPXM2J7UBGkTCDH_0l8YfHPZAbc5ifE/view?usp=sharing" rel="noopener" target="_blank"><strong>Deck</strong></a>
 
-<figure id="4fee" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=sEZaT2zG6jo" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=sEZaT2zG6jo`
 
 #### **Leveraging Merkle Trees for Scalable and Secure Offchain Storage on Alephium**
 
 \*Merkle trees are an efficient way to ensure that data is verifiable without needing to store it on-chain. Dimfred’s presentation shows their benefits, trade-offs, and possible applications. **\*— **<a href="https://drive.google.com/file/d/1tHcHYLBdEWw_gM2O9AK0pUPUBk2Hubfw/view?usp=sharing" class="markup--anchor markup--p-anchor" data-href="https://drive.google.com/file/d/1tHcHYLBdEWw_gM2O9AK0pUPUBk2Hubfw/view?usp=sharing" rel="noopener" target="_blank"><strong>Deck</strong></a>
 
-<figure id="29c9" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=iVoNJRzxLGU" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=iVoNJRzxLGU`
 
 #### **An introduction to** <a href="https://github.com/alephium/ralph-lsp" class="markup--anchor markup--h4-anchor" data-href="https://github.com/alephium/ralph-lsp" rel="noopener" target="_blank"><strong>Ralph LSP</strong></a>
 
@@ -90,93 +66,57 @@ By Thomas, core-contributor, Alephium.
 
 \*Thomas introduces the Ralph LSP tool, designed to make it easier for devs to code on Alephium. It has features like auto-completion and others, helping developers to check their code. He also provides a live demonstration of its main features. **\*— **<a href="https://drive.google.com/file/d/1bzHdmHFXHmVAVt4kLzMXU1GFZZYAIEo4/view?usp=sharing" class="markup--anchor markup--p-anchor" data-href="https://drive.google.com/file/d/1bzHdmHFXHmVAVt4kLzMXU1GFZZYAIEo4/view?usp=sharing" rel="noopener" target="_blank"><strong>Deck</strong></a>
 
-<figure id="6aa3" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=fQ78BlgAEEM" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=fQ78BlgAEEM`
 
 #### **Stablecoins: The Keystone of Crypto Stability and Trust**
 
 By Timothy of <a href="https://x.com/alephiumbank" class="markup--anchor markup--p-anchor" data-href="https://x.com/alephiumbank" rel="noopener" target="_blank">AlphBanx</a> (<a href="https://www.alphbanx.com/" class="markup--anchor markup--p-anchor" data-href="https://www.alphbanx.com/" rel="noopener" target="_blank">Website</a>, <a href="https://discord.com/invite/56rgKJ9HGW" class="markup--anchor markup--p-anchor" data-href="https://discord.com/invite/56rgKJ9HGW" rel="noopener" target="_blank">Discord</a>, <a href="https://t.me/AlphBanX" class="markup--anchor markup--p-anchor" data-href="https://t.me/AlphBanX" rel="noopener" target="_blank">Telegram</a>)  
 \*In this presentation, Timothy explains how Alphbanx works and all the protection layers built into the protocol to sustain its stablecoin peg. **\*— **<a href="https://drive.google.com/file/d/1rirr4fYKju9kfHCxLCLufszFWZUzIx58/view?usp=sharing" class="markup--anchor markup--p-anchor" data-href="https://drive.google.com/file/d/1rirr4fYKju9kfHCxLCLufszFWZUzIx58/view?usp=sharing" rel="noopener" target="_blank"><strong>Deck</strong></a>
 
-<figure id="b402" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=9hAYzsLmIBc" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=9hAYzsLmIBc`
 
 #### **On-chain NFTs**
 
 \*Reed presents his latest creation, an NFT collection in which all data (including images) is on the chain. He shows how he leveraged SVG images to build the collection & evokes the flexibility of Alephium’s smart contract language. **\*— **<a href="https://drive.google.com/file/d/1DBSAqPMi54H9DufeLWDlqPhhzyI1aftg/view?usp=sharing" class="markup--anchor markup--p-anchor" data-href="https://drive.google.com/file/d/1DBSAqPMi54H9DufeLWDlqPhhzyI1aftg/view?usp=sharing" rel="noopener" target="_blank"><strong>Deck</strong></a>
 
-<figure id="0e93" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=_eIxfM-O09Q" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=_eIxfM-O09Q`
 
 #### **How to work with Alephium blockchain data? Indexing & defi position tracking**
 
 by <a href="https://x.com/Mobulaio" class="markup--anchor markup--p-anchor" data-href="https://x.com/Mobulaio" rel="noopener" target="_blank">Mobula</a> (<a href="https://mobula.io/" class="markup--anchor markup--p-anchor" data-href="https://mobula.io/" rel="noopener" target="_blank">Website</a>, <a href="https://discord.com/invite/2a8hqNzkzN" class="markup--anchor markup--p-anchor" data-href="https://discord.com/invite/2a8hqNzkzN" rel="noopener" target="_blank">Discord</a>, <a href="https://t.me/MobulaFi" class="markup--anchor markup--p-anchor" data-href="https://t.me/MobulaFi" rel="noopener" target="_blank">Telegram</a>)  
 \*Mobula shows what it takes to index data on Alephium and what the requisites are to ensure the data collected is reliable! **\*— **<a href="https://drive.google.com/file/d/1PrkX1nUZ5cc89MJ2YvpbKC2ssrnx8VZi/view?usp=sharing" class="markup--anchor markup--p-anchor" data-href="https://drive.google.com/file/d/1PrkX1nUZ5cc89MJ2YvpbKC2ssrnx8VZi/view?usp=sharing" rel="noopener" target="_blank"><strong>Deck</strong></a>
 
-<figure id="f315" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=YdPTqEx8sZQ" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=YdPTqEx8sZQ`
 
 #### **How to structure a DEX**
 
 _Ignacio Mosqueira lays the foundation for building a DEX that solves the issues of attracting liquidity, high-selling pressure of the DEX’s native token and how to protect liquidity providers against MEV, IL and LRV._
 
-<figure id="25aa" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=dM_n35widic" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=dM_n35widic`
 
 #### **The challenge of bootstrapping a full node**
 
 \*Benoit shows 3 different ways of bootstrapping an Alephium full node and compares the benefits and drawbacks of each. **\*— **<a href="https://drive.google.com/file/d/1cNmOIspqu7NOwwFb61LMahgNNdBL4Evf/view?usp=sharing" class="markup--anchor markup--p-anchor" data-href="https://drive.google.com/file/d/1cNmOIspqu7NOwwFb61LMahgNNdBL4Evf/view?usp=sharing" rel="noopener" target="_blank"><strong>Deck</strong></a>
 
-<figure id="7ffd" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=MPH6zIB3xA0" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=MPH6zIB3xA0`
 
 #### **How to DAO? A Workshop**
 
 _Hux explains the origins of DAOs and shows that they are one natural way of organizing populations/companies/communities. To achieve this goal, the participants need to learn how to make coordinated decisions and align together._
 
-<figure id="3e00" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=gGL4KkMjcd4" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=gGL4KkMjcd4`
 
 #### **UI/UX Workshop**
 
 \*Mika explains the concepts behind Alephium’s UI/UX approach, and opens a Q&A session with the participants, brainstorming ideas and collecting feedback on the current versions of the wallets and explorer. **\*— **<a href="https://drive.google.com/file/d/1IJ0hH9znBS5GGVVIQrILfn1Cz4VJAQj-/view?usp=sharing" class="markup--anchor markup--p-anchor" data-href="https://drive.google.com/file/d/1IJ0hH9znBS5GGVVIQrILfn1Cz4VJAQj-/view?usp=sharing" rel="noopener" target="_blank"><strong>Deck</strong></a>
 
-<figure id="86c1" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=cmFdfcPPTgk" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=cmFdfcPPTgk`
 
 #### **Twitter Marketing 101 Workshop**
 
 _Vlad details the strategy behind Alephium’s Twitter presence, and how projects could manage their Twitter accounts by becoming real Medias. Participants are gathered in teams to analyze a few projects and work on target, tone & key messages._
 
-<figure id="0455" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=IYyoDoZ_IYw" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=IYyoDoZ_IYw`
 
 ### **Our Sponsors & Supporters**
 

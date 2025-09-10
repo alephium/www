@@ -1,16 +1,12 @@
 ---
-date: 2023-11-23 15:31:22.684000+00:00
+date: 2023-11-23T15:31:22.684000Z
 description: How to bridge your tokens + what to do on the Alephium Ecosystem
 spotlight: false
 featuredImage: image_9b721622a7.png
 title: 'Alephium Bridge: The Tutorial'
 ---
 
-### Alephium Bridge: The Tutorial
-
 #### How to bridge your tokens + what to do on the Alephium Ecosystem
-
-![](image_9b721622a7.png)
 
 _This tutorial was updated to reflect the new conditions after the_ <a href="https://medium.com/@alephium/rh%C3%B4ne-network-upgrade-activated-cbeb298585fe" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/rh%C3%B4ne-network-upgrade-activated-cbeb298585fe" target="_blank"><em>Rhône Network Upgrade</em></a>_: bridging from Alephium to Ethereum requires at least 205 blocks_ **_and_** _at least 55 minutes._
 
@@ -26,11 +22,7 @@ Here you will find a detailed step-by-step guide on how to bridge your tokens!
 
 First, if you’re into video tutorials, here you go:
 
-<figure id="dd74" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=xoYVzbwBAjg" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=xoYVzbwBAjg`
 
 #### In writing
 

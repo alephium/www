@@ -1,16 +1,12 @@
 ---
-date: 2023-03-08 12:35:48.426000+00:00
+date: 2023-03-08T12:35:48.426000Z
 description: A Collective Effort by the Community
 spotlight: false
 featuredImage: image_337a30a98f.jpg
 title: Alephium Listed on Tradeogre Exchange
 ---
 
-### Alephium Listed on Tradeogre Exchange
-
 #### A Collective Effort by the Community
-
-![](image_337a30a98f.jpg)
 
 Alephium, the first operational sharded L1 blockchain scaling and enhancing PoW & UTXO concepts, has been listed on its second exchange: <a href="https://tradeogre.com/exchange/BTC-ALPH" class="markup--anchor markup--p-anchor" data-href="https://tradeogre.com/exchange/BTC-ALPH" rel="noopener" target="_blank">Tradeogre.com</a>! This is a significant milestone for Alephium, made possible due to its community push to get Alephium’s native token ALPH listed on a new exchange.
 

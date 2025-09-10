@@ -86,6 +86,13 @@ const TextElement = styled.div<TextElementProps>`
     font-size: var(--fontSize-76);
     font-weight: var(--fontWeight-medium);
 
+    ${({ isSmall }) =>
+      isSmall &&
+      css`
+        font-size: var(--fontSize-50);
+        line-height: 1;
+      `}
+
     + p {
       font-size: var(--fontSize-26);
     }

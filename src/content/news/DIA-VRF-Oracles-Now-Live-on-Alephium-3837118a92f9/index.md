@@ -1,15 +1,11 @@
 ---
-date: 2025-03-07 14:21:31.795000+00:00
+date: 2025-03-07T14:21:31.795000Z
 description: After bringing price oracles to Alephium, DIA now introduces Verifiable
   Random Function (VRF) oracles to the ecosystem. This integration…
 spotlight: false
 featuredImage: image_7fb863be9a.png
 title: DIA VRF Oracles Now Live on Alephium
 ---
-
-### **DIA VRF Oracles Now Live on Alephium**
-
-![](image_7fb863be9a.png)
 
 After bringing price oracles to Alephium, DIA now introduces <a href="https://docs.alephium.org/infrastructure/Oracles/#randomness-oracles" class="markup--anchor markup--p-anchor" data-href="https://docs.alephium.org/infrastructure/Oracles/#randomness-oracles" rel="noopener" target="_blank">Verifiable Random Function (VRF) oracles</a> to the ecosystem. This integration enhances trustless randomness generation for a variety of decentralized applications, including gaming, lotteries, and NFT distributions.
 
@@ -51,4 +47,4 @@ This latest DIA integration marks a significant milestone for Alephium, enabling
 
 Alephium is a next-generation Proof-of-Work blockchain combining scalability, energy efficiency, and smart contract capabilities to enable decentralized solutions for a better future.
 
-<a href="https://alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/" rel="noopener" target="_blank">Website</a> \| <a href="https://docs.alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://docs.alephium.org/" rel="noopener" target="_blank">Docs</a> \| <a href="https://github.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium" rel="noopener" target="_blank">GitHub</a> \| <a href="https://twitter.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium" rel="noopener" target="_blank">Twitter</a> \| <a href="https://alephium.org/Discord" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/Discord" rel="noopener" target="_blank">Discord</a>\| <a href="https://github.com/alephium/white-paper" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/white-paper" rel="noopener" target="_blank">Whitepaper</a> \| <a href="https://www.alph.land/" class="markup--anchor markup--p-anchor" data-href="https://www.alph.land/" rel="noopener" target="_blank">Ecosystem</a>
+<a href="https://alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/" rel="noopener" target="_blank">Website</a> \| <a href="https://docs.alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://docs.alephium.org/" rel="noopener" target="_blank">Docs</a> \| <a href="https://github.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium" rel="noopener" target="_blank">GitHub</a> \| <a href="https://twitter.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium" rel="noopener" target="_blank">Twitter</a> \| <a href="https://alephium.org/discord" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/discord" rel="noopener" target="_blank">Discord</a>\| <a href="https://github.com/alephium/white-paper" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/white-paper" rel="noopener" target="_blank">Whitepaper</a> \| <a href="https://www.alph.land/" class="markup--anchor markup--p-anchor" data-href="https://www.alph.land/" rel="noopener" target="_blank">Ecosystem</a>

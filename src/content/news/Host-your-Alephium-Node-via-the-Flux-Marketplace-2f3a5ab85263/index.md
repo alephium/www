@@ -1,15 +1,11 @@
 ---
-date: 2022-11-23 15:42:04.309000+00:00
+date: 2022-11-23T15:42:04.309000Z
 description: Alephium’s partnership with Flux Official to support Alephium’s full
   node running on a web3 cloud infrastructure is another step towards…
 spotlight: false
 featuredImage: image_ec0a7e367d.png
 title: Host your Alephium Node via the Flux Marketplace
 ---
-
-### Host your Alephium Node via the Flux Marketplace
-
-![](image_ec0a7e367d.png)
 
 <a href="https://medium.com/@alephium/alephium-continues-its-engagement-for-decentralization-and-partners-with-the-cloud-based-f9c5baebe5b2" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/alephium-continues-its-engagement-for-decentralization-and-partners-with-the-cloud-based-f9c5baebe5b2" target="_blank">Alephium’s partnership</a> with <a href="https://medium.com/u/1c37e86f5d23" class="markup--user markup--p-user" data-href="https://medium.com/u/1c37e86f5d23" data-anchor-type="2" data-user-id="1c37e86f5d23" data-action-value="1c37e86f5d23" data-action="show-user-card" data-action-type="hover" target="_blank">Flux Official</a> to support Alephium’s full node running on a web3 cloud infrastructure is another step towards demonstrating decentralization as a core value. Find here a detailed walkthrough on how to set up a node with Flux.
 

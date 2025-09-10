@@ -1,5 +1,5 @@
 ---
-date: 2022-05-27 12:21:53.876000+00:00
+date: 2022-05-27T12:21:53.876000Z
 description: The first half of 2022 was a vigorous but exciting, fun and rewarding
   period for Alephium in terms of milestones and growth. Read about…
 spotlight: false
@@ -7,14 +7,7 @@ featuredImage: image_4c7ef37863.jpg
 title: Alephium — H1 Project Update
 ---
 
-### **Alephium — H1 Project Update**
-
 #### The first half of 2022 was a vigorous but exciting, fun and rewarding period for Alephium in terms of milestones and growth. Here’s a look back at some of the highlights, what they meant for us, for the community and what we learned.
-
-<figure id="8d6d" class="graf graf--figure graf-after--h4 graf--trailing">
-<img src="image_4c7ef37863.jpg" class="graf-image" data-image-id="0*O0f5D-jMha9RR4C7" data-width="768" data-height="432" data-is-featured="true" />
-<figcaption>Alephium H1 Project update</figcaption>
-</figure>
 
 ---
 
@@ -142,9 +135,3 @@ The road ahead is long, but the journey is rewarding. We have many exciting thin
 We’re thrilled to share this journey with you and we are always open to your feedback and suggestions. If you haven’t already, come join the discussion on our <a href="https://twitter.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium" rel="noopener" target="_blank">Twitter</a>, <a href="https://discord.gg/JErgRBfRSB" class="markup--anchor markup--p-anchor" data-href="https://discord.gg/JErgRBfRSB" rel="noopener" target="_blank">Discord server</a>, our <a href="https://t.me/alephiumgroup" class="markup--anchor markup--p-anchor" data-href="https://t.me/alephiumgroup" rel="noopener" target="_blank">Telegram group</a> or the <a href="https://www.reddit.com/r/Alephium/" class="markup--anchor markup--p-anchor" data-href="https://www.reddit.com/r/Alephium/" rel="noopener" target="_blank">Subreddit</a>. We can’t wait to meet you!
 
 <a href="https://www.youtube.com/watch?v=VQQA3GRx_es" class="markup--anchor markup--p-anchor" data-href="https://www.youtube.com/watch?v=VQQA3GRx_es" rel="noopener" target="_blank"><strong>Let the spring ring in!</strong></a>
-
-<figure id="6ad7" class="graf graf--figure graf--iframe graf-after--p graf--trailing">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-JavaScript kann nicht ausgeführt werden.
-</figure>

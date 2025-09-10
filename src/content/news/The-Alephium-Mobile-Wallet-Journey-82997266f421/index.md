@@ -1,15 +1,11 @@
 ---
-date: 2024-01-04 09:34:01.540000+00:00
+date: 2024-01-04T09:34:01.540000Z
 description: The Alephium Mobile Wallet is a great addition to the current set of
   wallets developed by the core contributors. It is available for…
 spotlight: false
 featuredImage: image_f3c0a097ca.jpg
 title: The Alephium Mobile Wallet Journey!
 ---
-
-### The Alephium Mobile Wallet Journey!
-
-![](image_f3c0a097ca.jpg)
 
 _The Alephium Mobile Wallet is a great addition to the current set of wallets developed by the core contributors. It is available for_ <a href="https://play.google.com/store/apps/details?id=org.alephium.wallet" class="markup--anchor markup--p-anchor" data-href="https://play.google.com/store/apps/details?id=org.alephium.wallet" rel="noopener" target="_blank"><em>Android</em></a> _and_ <a href="https://apps.apple.com/ch/app/alephium-wallet/id6469043072?l=en-GB" class="markup--anchor markup--p-anchor" data-href="https://apps.apple.com/ch/app/alephium-wallet/id6469043072?l=en-GB" rel="noopener" target="_blank"><em>iOS</em></a>_. It’s easy to use, fun and good-looking! Try it!_
 

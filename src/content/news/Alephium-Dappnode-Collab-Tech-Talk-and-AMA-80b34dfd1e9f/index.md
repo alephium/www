@@ -1,15 +1,11 @@
 ---
-date: 2022-10-28 14:13:38.218000+00:00
+date: 2022-10-28T14:13:38.218000Z
 description: We are really proud of Alephium’s addition as a part of Dappnode’s package
   offering! We share Dappnode’s commitment to a decentralized…
 spotlight: false
 featuredImage: image_91b67983ba.png
-title: 'Alephium &amp; Dappnode: Collab, Tech Talk, and AMA'
+title: 'Alephium & Dappnode: Collab, Tech Talk, and AMA'
 ---
-
-### Alephium & Dappnode: Collab, Tech Talk, and AMA
-
-![](image_91b67983ba.png)
 
 We are really proud of Alephium’s addition as a part of <a href="https://www.dappnode.io/" class="markup--anchor markup--p-anchor" data-href="https://www.dappnode.io/" rel="noopener" target="_blank">Dappnode</a>’s package offering! We share Dappnode’s commitment to a decentralized future and believe tools like this are key to making it happen.
 
@@ -53,8 +49,4 @@ We also had a Tech Talk with Dappnode, where <a href="https://medium.com/@pol.la
 
 That was an interesting conversation about decentralization, technical stuff, and some hidden gems inside Dappnode software! We highly recommend you check the recording below:
 
-<figure id="9860" class="graf graf--figure graf--iframe graf-after--p graf--trailing">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=wzobAlPR11s" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=wzobAlPR11s`

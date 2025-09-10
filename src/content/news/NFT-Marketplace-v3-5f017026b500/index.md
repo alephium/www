@@ -1,5 +1,5 @@
 ---
-date: 2023-09-19 16:13:50.477000+00:00
+date: 2023-09-19T16:13:50.477000Z
 description: We launched the NFT marketplace as a prototype to show what can be done
   with NFTs on Alephium. We received a lot of feedback from the…
 spotlight: false
@@ -7,11 +7,7 @@ featuredImage: image_4e8b3c6145.png
 title: NFT Marketplace v3
 ---
 
-### NFT Marketplace v3
-
 #### We launched the NFT marketplace as a prototype to show what can be done with NFTs on Alephium. We received a lot of feedback from the community. With the v3 we are improving the whole experience and adding a new, exciting feature: the Flow!
-
-![](image_4e8b3c6145.png)
 
 Access it here: <a href="https://testnet.nft.alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://testnet.nft.alephium.org/" rel="noopener" target="_blank">https://testnet.nft.alephium.org/</a>
 
@@ -37,11 +33,7 @@ We’ve created a special collection for you to be able to test Batch Minting fo
 
 Go and test <a href="https://v3.testnet.nft.alephium.org/collection-details?collectionId=c22369b5ab21a3b24db12a883b53a9213f22e713ff486a3b22d2d4cb943a9700" class="markup--anchor markup--p-anchor" data-href="https://v3.testnet.nft.alephium.org/collection-details?collectionId=c22369b5ab21a3b24db12a883b53a9213f22e713ff486a3b22d2d4cb943a9700" rel="noopener" target="_blank">minting one (or more)</a> of our ALPH EVERYWHERE testnet NFTs.
 
-<figure id="b95e" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=V3RePAazEMY" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=V3RePAazEMY`
 
 They even have hidden traits ̶a̶n̶d̶ ̶s̶o̶m̶e̶ ̶g̶o̶l̶d̶e̶n̶ ̶t̶i̶c̶k̶e̶t̶s̶…
 

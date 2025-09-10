@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Page from '../components/customPageComponents/Page'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
+import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import SectionDivider from '../components/SectionDivider'
 
 const NewsPostTemplate = (props: PageProps<Queries.NewsPostBySlugQuery>) => {
@@ -36,6 +37,15 @@ const NewsPostTemplate = (props: PageProps<Queries.NewsPostBySlugQuery>) => {
           <SectionDivider />
 
           <ArticleStyled itemScope itemType="http://schema.org/Article">
+            <TextElement isSmall>
+              <h1>{post?.frontmatter?.title}</h1>
+            </TextElement>
+
+            <GatsbyImageWrapper
+              image={post?.frontmatter?.featuredImage?.childImageSharp?.gatsbyImageData}
+              alt={post?.frontmatter?.title ?? ''}
+              style={{ width: '100%', height: 'auto', marginBottom: 'var(--spacing-6)' }}
+            />
             <TextElement isSmall dangerouslySetInnerHTML={{ __html: post?.html || '' }} itemProp="articleBody" />
           </ArticleStyled>
 
@@ -94,7 +104,7 @@ export const pageQuery = graphql`
         description
         featuredImage {
           childImageSharp {
-            gatsbyImageData(quality: 100)
+            gatsbyImageData(quality: 100, width: 700)
           }
         }
       }
@@ -142,7 +152,11 @@ const ArticleStyled = styled.article`
   }
 
   p {
-    margin: var(--spacing-6) auto !important;
+    margin: var(--spacing-6) auto;
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
   figcaption {

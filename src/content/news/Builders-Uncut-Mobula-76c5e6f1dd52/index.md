@@ -1,5 +1,5 @@
 ---
-date: 2024-08-14 15:56:46.468000+00:00
+date: 2024-08-14T15:56:46.468000Z
 description: This interview was conducted around the Athens Builders Meetup, which
   took place at the end of June 2024. If you’re just discovering…
 spotlight: false
@@ -7,19 +7,11 @@ featuredImage: image_4c1492d719.png
 title: Builders Uncut — Mobula
 ---
 
-### Builders Uncut — Mobula
-
-![](image_4c1492d719.png)
-
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
 Here, we have a conversation with Teo & Sacha & about <a href="http://mobula.io" class="markup--anchor markup--p-anchor" data-href="http://mobula.io" rel="noopener" target="_blank">Mobula</a>, a data product that integrates various chains, including Alephium. Find the full (slightly edited) transcript below if you prefer reading!
 
-<figure id="af9a" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=JkHRwwAn-II" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=JkHRwwAn-II`
 
 #### Hi, I’m really happy to have you guys from Mobula. You’ve integrated Alephium into your data product. Your product is similar to Coingecko but covers many more chains. So, welcome!
 
@@ -94,11 +86,7 @@ Telegram — <a href="https://t.me/MobulaFi" class="markup--anchor markup--p
 
 Mobula’s founder gave a fantastic talk in our first Athens Builders Meetup!
 
-<figure id="a8e7" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=YdPTqEx8sZQ" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=YdPTqEx8sZQ`
 
 You can also find all the talks of the Athens Builders Meetup <a href="https://medium.com/@alephium/all-the-athens-meetup-presentations-f419195640ce?source=user_profile---------0----------------------------" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/all-the-athens-meetup-presentations-f419195640ce?source=user_profile---------0----------------------------" target="_blank">here</a>.
 

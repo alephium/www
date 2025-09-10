@@ -1,5 +1,5 @@
 ---
-date: 2023-01-18 14:30:50.649000+00:00
+date: 2023-01-18T14:30:50.649000Z
 description: This is the third of a series of technical innovations brought by Alephium.
   Find the previous ones here (PolW) and here (sUTXO). Here we…
 spotlight: false
@@ -7,11 +7,7 @@ featuredImage: image_de012354c9.jpeg
 title: Meet ALPHred, a Virtual Machine like no others
 ---
 
-### Meet ALPHred, a Virtual Machine like no others
-
 _This is the third of a series of technical innovations brought by Alephium. Find the previous ones_ <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" target="_blank"><em>here</em></a> _(PolW) and_ <a href="https://medium.com/p/8de3b0f76749" class="markup--anchor markup--p-anchor" data-href="https://medium.com/p/8de3b0f76749" target="_blank"><em>here</em></a> _(sUTXO). Here we examine what a virtual machine is, what function it fills in blockchains and what distinguishes Alephium’s VM (called Alphred) from others._
-
-![](image_de012354c9.jpeg)
 
 ### _What is a VM?_
 

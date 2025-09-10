@@ -1,15 +1,11 @@
 ---
-date: 2024-01-25 15:48:47.283000+00:00
+date: 2024-01-25T15:48:47.283000Z
 description: The Alephium Mobile Wallet is a great addition to the current set of
   wallets developed by the core contributors. It is available for…
 spotlight: false
 featuredImage: image_d30da0b756.jpg
 title: The Alephium Mobile Wallet Journey!
 ---
-
-### The Alephium Mobile Wallet Journey!
-
-![](image_d30da0b756.jpg)
 
 _The Alephium Mobile Wallet is a great addition to the current set of wallets developed by the core contributors. It is available for_ <a href="https://play.google.com/store/apps/details?id=org.alephium.wallet" class="markup--anchor markup--p-anchor" data-href="https://play.google.com/store/apps/details?id=org.alephium.wallet" rel="noopener" target="_blank"><em>Android</em></a> _and_ <a href="https://apps.apple.com/ch/app/alephium-wallet/id6469043072?l=en-GB" class="markup--anchor markup--p-anchor" data-href="https://apps.apple.com/ch/app/alephium-wallet/id6469043072?l=en-GB" rel="noopener" target="_blank"><em>iOS</em></a>_. It’s easy to use, fun and good-looking! Go try it! Here’s a free conversation on the conception, challenges, and choices made by_ <a href="https://twitter.com/mika_pote" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/mika_pote" rel="noopener" target="_blank"><em>Mikaël Vaivre</em></a> _and_ <a href="https://twitter.com/_nop33" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/_nop33" rel="noopener" target="_blank"><em>Ilias Trichopoulos</em></a> _while building the mobile wallet. We give it to you as is because it’s important to show what’s going on behind the scenes in the technical-designer minds of the front-end contributors! It seems so easy when you’re using the wallet, yet to get there… the journey is long and arduous, full of research, experiments, technological challenges and a hardcore dedication to user-centric design!_
 

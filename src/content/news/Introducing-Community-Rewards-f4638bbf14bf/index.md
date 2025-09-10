@@ -1,5 +1,5 @@
 ---
-date: 2021-12-09 14:32:39.777000+00:00
+date: 2021-12-09T14:32:39.777000Z
 description: It’s been a month since the Alephium mainnet launch and many positive
   things have been accomplished thanks to the amazing community …
 spotlight: false
@@ -7,11 +7,7 @@ featuredImage: image_af0df79ed4.jpeg
 title: Introducing Community Rewards
 ---
 
-### Introducing Community Rewards
-
 #### It’s been a month since the Alephium mainnet launch and many positive things have been accomplished thanks to the amazing community that has gathered around the project. People from all over the world, exchanging tips, tricks and ideas, building and improving upon Alephium.
-
-![](image_af0df79ed4.jpeg)
 
 **\[UPDATED July 12th 2022 —_ The Grants & Rewards program has been updated and can be found_** <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" rel="noopener" target="_blank"><strong><em>here</em></strong></a>**_\]_**
 

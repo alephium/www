@@ -1,5 +1,5 @@
 ---
-date: 2023-05-26 12:34:26.671000+00:00
+date: 2023-05-26T12:34:26.671000Z
 description: Alephium’s ecosystem thrives with developers building amazing stuff on
   top of Alephium (services, dApps, etc…) that deliver a unique…
 spotlight: false
@@ -7,11 +7,7 @@ featuredImage: image_f807a06471.png
 title: 'Builders Highlight: Sahhar'
 ---
 
-### Builders Highlight: Sahhar
-
 #### _Alephium’s ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience and provide real utility for the users. In the Builders Highlight series, these builders will share more about their projects and also their thoughts and insights on why building on Alephium!_
-
-![](image_f807a06471.png)
 
 > _🚨_ _Disclaimer: While Alephium is happy to support a growing developer community, it would like to make it clear that it does not endorse, audit, or review any software presented in this series, and encourages all users to make informed decisions and take personal responsibility for their actions._
 
@@ -35,11 +31,7 @@ I used <a href="https://flutter.dev/" class="markup--anchor markup--p-anchor" da
 
 The multisig wallet! It’s still using the <a href="https://docs.alephium.org/dapps/public-services/#node-and-explorer-apis" class="markup--anchor markup--p-anchor" data-href="https://docs.alephium.org/dapps/public-services/#node-and-explorer-apis" rel="noopener" target="_blank">node API</a> to sign the transaction, but I’ll make the algorithm run locally soon.
 
-<figure id="6f0f" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=uAseUydyddw" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=uAseUydyddw`
 
 #### Could you tell us about some of the challenges you faced while building and how you overcame them?
 

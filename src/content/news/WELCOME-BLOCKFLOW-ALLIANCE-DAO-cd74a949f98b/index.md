@@ -1,15 +1,11 @@
 ---
-date: 2023-10-03 15:39:38.643000+00:00
+date: 2023-10-03T15:39:38.643000Z
 description: Daily, we strive to enhance our decentralized infrastructure, inspired
   by Satoshi Nakamoto’s vision for a permissionless future. We offer…
 spotlight: false
 featuredImage: image_ece5e4ea45.jpg
 title: WELCOME BLOCKFLOW ALLIANCE DAO!
 ---
-
-### **WELCOME BLOCKFLOW ALLIANCE DAO!**
-
-![](image_ece5e4ea45.jpg)
 
 Daily, we strive to enhance our decentralized infrastructure, inspired by Satoshi Nakamoto’s vision for a permissionless future. We offer developers advanced tools, precise documentation, and direct access to our core team on Discord. Our commitment to user-friendly front-end tools reflects our investment in top-tier UI and UX.
 

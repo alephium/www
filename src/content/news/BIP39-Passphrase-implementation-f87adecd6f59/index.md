@@ -1,5 +1,5 @@
 ---
-date: 2022-08-09 14:34:19.192000+00:00
+date: 2022-08-09T14:34:19.192000Z
 description: To keep giving our users more tools to secure their ALPH, we’ve implemented
   the BIP39 passphrase feature in the desktop wallet v1.3.0!
 spotlight: false
@@ -7,14 +7,7 @@ featuredImage: image_962a6c58d3.jpg
 title: BIP39 Passphrase implementation
 ---
 
-### BIP39 Passphrase implementation
-
 #### To keep giving our users more tools to secure their ALPH, we’ve implemented the BIP39 passphrase feature in the desktop wallet v1.3.0!
-
-<figure id="4e45" class="graf graf--figure graf-after--h4">
-<img src="image_962a6c58d3.jpg" class="graf-image" data-image-id="0*6IncMm2ok_TT0dYc" data-width="768" data-height="432" data-is-featured="true" />
-<figcaption>Desktop Wallet v1.3.0. Implementing BIP39 Passphrase specification from the Bitcoin Improvement Proposal</figcaption>
-</figure>
 
 **_DISCLAIMER:_** _THIS IS AN ADVANCED SECURITY FEATURE. YOU NEED TO BE VERY WELL ORGANIZED TO USE IT SAFELY. MOST PEOPLE PROBABLY DON’T NEED TO USE IT, AND RISK LOSING THEIR PASSPHRASE, THEREBY LOSING THEIR FUNDS._
 
@@ -128,11 +121,7 @@ Logging out and logging in again, with the correct Passphrase this time, will gi
 
 You can then create your **Wallet \#3** with a different passphrase which will contain the bulk of your assets.
 
-<figure id="bce0" class="graf graf--figure graf--iframe graf-after--p graf--trailing">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=a1nK9pYfKcQ" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=a1nK9pYfKcQ`
 
 ---
 

@@ -1,15 +1,11 @@
 ---
-date: 2021-11-10 16:57:25.588000+00:00
+date: 2021-11-10T16:57:25.588000Z
 description: We live in an age of constant change and technological progress. The
   Blockchain industry is a great illustration of that. Blockchain is…
 spotlight: false
 featuredImage: image_08487c6165.jpeg
 title: Alephium joins the UTXO Alliance
 ---
-
-### Alephium joins the UTXO Alliance
-
-![](image_08487c6165.jpeg)
 
 We live in an age of constant change and technological progress. The Blockchain industry is a great illustration of that. Blockchain is about decentralization, and how to foster interoperability better than through cooperation?
 

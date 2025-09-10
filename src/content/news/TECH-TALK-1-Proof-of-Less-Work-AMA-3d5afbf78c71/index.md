@@ -1,5 +1,5 @@
 ---
-date: 2022-09-06 13:19:46.098000+00:00
+date: 2022-09-06T13:19:46.098000Z
 description: On Thursday, August 25th, 2022, Alephium’s team conducted an AMA on our
   Discord as a follow-up discussion with Cheng Wang, inventor of…
 spotlight: false
@@ -7,19 +7,11 @@ featuredImage: image_1d46b897a3.jpg
 title: 'TECH TALK #1 — Proof-of-Less-Work AMA'
 ---
 
-### **TECH TALK \#1 — Proof-of-Less-Work AMA**
-
 #### On Thursday, August 25th, 2022, Alephium’s team conducted an <a href="https://www.youtube.com/watch?v=Oi4AsqVY0YA" class="markup--anchor markup--h4-anchor" data-href="https://www.youtube.com/watch?v=Oi4AsqVY0YA" rel="noopener" target="_blank">AMA on our Discord</a> as a <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" target="_blank">follow-up</a> discussion with Cheng Wang, inventor of PoLW and founder of Alephium.
-
-![](image_1d46b897a3.jpg)
 
 > You’ll find the original article on PoLW <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" class="markup--anchor markup--blockquote-anchor" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" target="_blank">here,</a> the whitepaper <a href="https://github.com/alephium/white-paper/blob/master/alephium.pdf" class="markup--anchor markup--blockquote-anchor" data-href="https://github.com/alephium/white-paper/blob/master/alephium.pdf" rel="noopener" target="_blank">here</a>, and the code <a href="https://github.com/alephium/alephium/blob/master/protocol/src/main/scala/org/alephium/protocol/mining/Emission.scala" class="markup--anchor markup--blockquote-anchor" data-href="https://github.com/alephium/alephium/blob/master/protocol/src/main/scala/org/alephium/protocol/mining/Emission.scala" rel="noopener" target="_blank">here</a>. This is a lightly edited transcript of the following video of the AMA:
 
-<figure id="32ad" class="graf graf--figure graf--iframe graf-after--blockquote">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=Oi4AsqVY0YA" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=Oi4AsqVY0YA`
 
 **Vladimir Moshnyager — First, we’d like to thank everyone who participated in the AMA. Thanks also for the excellent questions sent by our community through Twitter, discord, telegram, and Reddit! They immensely helped us prepare and get the best answers you’ll find here. Thanks to** <a href="https://twitter.com/wachmc" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/wachmc" rel="noopener" target="_blank"><strong>@wachmc</strong></a> **for taking the time and answering those queries with candor and good vibes! And to** <a href="https://medium.com/@heptazoid" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@heptazoid" rel="noopener noreferrer" target="_blank">@heptazoid</a> **for setting us up nicely!**
 

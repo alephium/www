@@ -1,16 +1,12 @@
 ---
-date: 2022-09-20 14:05:54.857000+00:00
+date: 2022-09-20T14:05:54.857000Z
 description: A Technical Promenade, part 3
 spotlight: false
 featuredImage: image_1a832ca4ff.jpg
 title: Time to Finality
 ---
 
-### Time to Finality
-
 #### A Technical Promenade, part 3
-
-![](image_bd91bd99b5.png)
 
 _This is part of a series of regular articles on key concepts for understanding_ <a href="https://alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/" rel="noopener" target="_blank"><em>Alephium</em></a> _in particular and blockchains in general. If you’re pondering on which chain to build your dApps, if you’re a curious crypto-traveler, or a fellow decentralization enthusiast, welcome!_
 

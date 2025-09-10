@@ -1,3 +1,5 @@
 dirs:
   - src/content
   - src/pages
+ignorePatterns:
+  - pattern: '^https://banxa.com/'

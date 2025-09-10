@@ -1,15 +1,11 @@
 ---
-date: 2023-07-25 15:42:41.058000+00:00
+date: 2023-07-25T15:42:41.058000Z
 description: Alephium’s ecosystem thrives with developers building amazing stuff on
   top of Alephium (services, dApps, etc…) that deliver a unique…
 spotlight: false
 featuredImage: image_9aa99da3ce.jpg
 title: 'Builders Highlights #2: Alphpaca NFTs'
 ---
-
-### Builders Highlights \#2: Alphpaca NFTs
-
-![](image_9aa99da3ce.jpg)
 
 _Alephium’s ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience and provide real utility for the users. In the Builders Highlight series, these builders will share more about their projects, thoughts, and insights on why building on Alephium!_
 

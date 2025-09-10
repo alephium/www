@@ -1,16 +1,12 @@
 ---
-date: 2023-03-21 15:39:30.918000+00:00
+date: 2023-03-21T15:39:30.918000Z
 description: Proof-of-Concept to showcase dApps building on Alephium
 spotlight: false
 featuredImage: image_4b7ae278af.jpeg
 title: DEX Prototype Live on Testnet
 ---
 
-### DEX Prototype Live on Testnet
-
 #### Proof-of-Concept to showcase dApps building on Alephium
-
-![](image_4b7ae278af.jpeg)
 
 Alephium is excited to announce the release of a DEX prototype!
 

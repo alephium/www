@@ -1,5 +1,5 @@
 ---
-date: 2023-08-02 16:02:20.857000+00:00
+date: 2023-08-02T16:02:20.857000Z
 description: 'Mikaël Vaivre is Alephium’s lead front-end developer, and he’s been
   the guest of our TechTalk #11! While Mika is fairly discreet, and…'
 spotlight: false
@@ -7,21 +7,13 @@ featuredImage: image_50aac2130d.png
 title: 'TechTalk #11 — How to onboard the next billion people to crypto?'
 ---
 
-### TechTalk \#11 — How to onboard the next billion people to crypto?
-
-![](image_50aac2130d.png)
-
 Mikaël Vaivre is Alephium’s lead front-end developer, and he’s been the guest of our TechTalk \#11! While Mika is fairly discreet, and Alephium users might not have had the chance to see him a lot, his work has touched their digital experiences in more ways than they realize. Whether they used the <a href="https://alephium.org/#wallets" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/#wallets" rel="noopener" target="_blank">desktop wallet</a>, browsed the Alephium <a href="https://alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/" rel="noopener" target="_blank">website</a>, or used the <a href="https://explorer.alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://explorer.alephium.org/" rel="noopener" target="_blank">explorer</a>, Mika’s creativity and expertise and his fruitful collaboration with <a href="https://github.com/nop33" class="markup--anchor markup--p-anchor" data-href="https://github.com/nop33" rel="noopener" target="_blank">Ilias</a>) have shaped these experiences.
 
 <a href="https://twitter.com/mika_pote" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/mika_pote" rel="noopener" target="_blank">Mika’s</a> trajectory in the world of technology began as an environmental engineer studying in Lausanne. However, he quickly entered the startup realm in a car automation company, where he crossed paths with <a href="https://twitter.com/wachmc" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/wachmc" rel="noopener" target="_blank">Cheng</a>. His next step led him to the blockchain world at <a href="https://lykke.com/" class="markup--anchor markup--p-anchor" data-href="https://lykke.com/" rel="noopener" target="_blank">LYKKE,</a> one of the pioneering Swiss exchanges, and since 2019, Mika has been an integral part of Alephium.
 
 You can watch the presentation here:
 
-<figure id="c3d9" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=QHmb87sT9nI" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=QHmb87sT9nI`
 
 Now, let’s dive into Mika’s presentation: **How can we onboard the next billion people to crypto?**
 

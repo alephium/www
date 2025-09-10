@@ -1,24 +1,16 @@
 ---
-date: 2023-07-26 14:16:32.447000+00:00
+date: 2023-07-26T14:16:32.447000Z
 description: How to create a token faucet and deploy it on Alephium
 spotlight: false
 featuredImage: image_fa86c86a57.jpg
 title: First Developer Workshop — Build a Token Faucet
 ---
 
-### First Developer Workshop — Build a Token Faucet
-
 #### How to create a token faucet and deploy it on Alephium
-
-![](image_fa86c86a57.jpg)
 
 On July 15th, <a href="https://github.com/h0ngcha0" class="markup--anchor markup--p-anchor" data-href="https://github.com/h0ngcha0" rel="noopener" target="_blank">Hongchao</a> and <a href="https://twitter.com/wachmc" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/wachmc" rel="noopener" target="_blank">Cheng</a> hosted a workshop on creating a token faucet using Alephium’s dev tooling. This article summarizes all steps in that process and offers additional resources for further explanations. If you prefer to watch the whole video of the workshop, here it is:
 
-<figure id="8cea" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=YblUxEcXQuY" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=YblUxEcXQuY`
 
 So let’s start, but first, you need to install some software!
 

@@ -1,19 +1,12 @@
 ---
-date: 2022-08-30 12:53:03.942000+00:00
+date: 2022-08-30T12:53:03.942000Z
 description: A Technical Promenade, part 1
 spotlight: false
 featuredImage: image_2e664b2caf.png
 title: Block Time and Block Size
 ---
 
-### Block Time and Block Size
-
 #### A Technical Promenade, part 1
-
-<figure id="dbf8" class="graf graf--figure graf-after--h4">
-<img src="image_2e664b2caf.png" class="graf-image" data-image-id="1*sLP--DmIrIxJP5rzLWeQdQ.png" data-width="768" data-height="432" data-is-featured="true" />
-<figcaption>A technical promenade: Block Time and Block Size</figcaption>
-</figure>
 
 > This is the first of a multiple-times-per-month series of articles on key concepts for understanding Alephium in particular and blockchains in general if you’re pondering on which chain to build your dApps, if you’re a curious crypto-traveler or a fellow decentralization enthusiast, welcome! We will start with simple concepts like block time and size, then travel through transactions-per-second, wander around time-to-finality, and venture into sharding land and so many other fascinating crypto territories…
 

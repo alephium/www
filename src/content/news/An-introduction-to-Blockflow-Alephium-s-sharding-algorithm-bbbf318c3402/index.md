@@ -1,15 +1,11 @@
 ---
-date: 2023-07-28 13:05:23.630000+00:00
+date: 2023-07-28T13:05:23.630000Z
 description: This is the fourth of a series of technical innovations brought by Alephium.
   Find the previous ones here (PolW), here (sUTXO), and here…
 spotlight: false
 featuredImage: image_0006903410.jpg
 title: 'An introduction to Blockflow: Alephium’s sharding algorithm'
 ---
-
-### An introduction to Blockflow: Alephium’s sharding algorithm
-
-![](image_0006903410.jpg)
 
 _This is the fourth of a series of technical innovations brought by Alephium. Find the previous ones_ <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" target="_blank"><em>here</em></a> _(PolW),_ <a href="https://medium.com/p/8de3b0f76749" class="markup--anchor markup--p-anchor" data-href="https://medium.com/p/8de3b0f76749" target="_blank"><em>here</em></a> _(sUTXO), and_ <a href="https://medium.com/@alephium/meet-alphred-a-virtual-machine-like-no-others-85ce86540025" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/meet-alphred-a-virtual-machine-like-no-others-85ce86540025" target="_blank"><em>here</em></a> _(Alphred VM). This article will dive into the concepts of sharding and the inner workings of Blockflow to explain how it enhances the performance of the Alephium blockchain._
 

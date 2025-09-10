@@ -1,16 +1,12 @@
 ---
-date: 2024-10-23 08:26:59.371000+00:00
+date: 2024-10-23T08:26:59.371000Z
 description: How to install the Alephium App in your Ledger Nano S
 spotlight: false
 featuredImage: image_b03ee75ea8.jpeg
 title: Alephium 🤝 Ledger Nano S
 ---
 
-### Alephium 🤝 Ledger Nano S
-
 #### How to install the Alephium App in your Ledger Nano S
-
-![](image_b03ee75ea8.jpeg)
 
 **_🚨 This tutorial is exclusively for the Nano S._** _If you have a Ledger version that is NOT the Nano S, (S+, X, Flex or Stax) you must use the Ledger Live to download the Alephium app, please follow the (much easier) instructions_ <a href="https://docs.alephium.org/wallet/ledger/" class="markup--anchor markup--p-anchor" data-href="https://docs.alephium.org/wallet/ledger/" rel="noopener noreferrer nofollow noopener" target="_blank"><em>here.</em></a>
 
