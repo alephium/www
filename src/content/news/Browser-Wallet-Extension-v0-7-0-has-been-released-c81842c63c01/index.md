@@ -1,5 +1,5 @@
 ---
-date: 2023-05-16 14:57:00.483000+00:00
+date: 2023-05-16T14:57:00.483000Z
 description: 'Featuring: Ledger Integration'
 spotlight: false
 featuredImage: image_6170abf307.png

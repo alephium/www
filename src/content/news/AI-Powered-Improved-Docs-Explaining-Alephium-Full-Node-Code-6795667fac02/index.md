@@ -1,5 +1,5 @@
 ---
-date: 2023-03-31 12:54:28.661000+00:00
+date: 2023-03-31T12:54:28.661000Z
 description: New documentation was created with the help of Autodoc
 spotlight: false
 featuredImage: image_05a75ee0d0.jpg

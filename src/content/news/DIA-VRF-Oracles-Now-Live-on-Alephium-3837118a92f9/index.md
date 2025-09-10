@@ -1,5 +1,5 @@
 ---
-date: 2025-03-07 14:21:31.795000+00:00
+date: 2025-03-07T14:21:31.795000Z
 description: After bringing price oracles to Alephium, DIA now introduces Verifiable
   Random Function (VRF) oracles to the ecosystem. This integration…
 spotlight: false

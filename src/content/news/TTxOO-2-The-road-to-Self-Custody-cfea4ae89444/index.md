@@ -1,5 +1,5 @@
 ---
-date: 2022-08-11 16:13:20.641000+00:00
+date: 2022-08-11T16:13:20.641000Z
 description: Introduction
 spotlight: false
 featuredImage: image_2e22410376.jpg

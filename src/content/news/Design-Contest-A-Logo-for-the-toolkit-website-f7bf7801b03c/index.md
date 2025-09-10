@@ -1,5 +1,5 @@
 ---
-date: 2023-09-07 12:58:47.578000+00:00
+date: 2023-09-07T12:58:47.578000Z
 description: Propose a design for the Alephium Toolkit website and win 1500 $ALPH!
 spotlight: false
 featuredImage: image_bc20f08d26.jpg

@@ -1,5 +1,5 @@
 ---
-date: 2023-11-06 15:29:26.299000+00:00
+date: 2023-11-06T15:29:26.299000Z
 description: Welcome to the second developer workshop! If you missed the first one,
   we dived into the basics of Ralph programming language, along with…
 spotlight: false

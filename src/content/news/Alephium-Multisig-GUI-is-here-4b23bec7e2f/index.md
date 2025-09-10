@@ -1,5 +1,5 @@
 ---
-date: 2023-09-01 11:50:48.968000+00:00
+date: 2023-09-01T11:50:48.968000Z
 description: 'The Alephium Toolkit: A Guide to Creating a Multisig Wallet'
 spotlight: false
 featuredImage: image_674414bc53.png

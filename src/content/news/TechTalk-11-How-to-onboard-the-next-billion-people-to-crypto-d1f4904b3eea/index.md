@@ -1,5 +1,5 @@
 ---
-date: 2023-08-02 16:02:20.857000+00:00
+date: 2023-08-02T16:02:20.857000Z
 description: 'Mikaël Vaivre is Alephium’s lead front-end developer, and he’s been
   the guest of our TechTalk #11! While Mika is fairly discreet, and…'
 spotlight: false

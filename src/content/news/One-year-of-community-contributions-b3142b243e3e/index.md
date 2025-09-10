@@ -1,5 +1,5 @@
 ---
-date: 2023-01-13 16:15:05.799000+00:00
+date: 2023-01-13T16:15:05.799000Z
 description: A year ago, Alephium created the community rewards and the grants programs
   to encourage the involvement of the community in all aspects of…
 spotlight: false

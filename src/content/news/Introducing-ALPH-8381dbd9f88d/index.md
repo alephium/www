@@ -1,5 +1,5 @@
 ---
-date: 2021-08-27 11:36:54.213000+00:00
+date: 2021-08-27T11:36:54.213000Z
 description: We’re happy to announce that the Alephium token ticker symbol is officially
   ALPH.
 spotlight: false

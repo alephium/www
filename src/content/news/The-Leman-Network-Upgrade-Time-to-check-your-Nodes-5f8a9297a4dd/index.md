@@ -1,5 +1,5 @@
 ---
-date: 2023-03-01 14:54:01.680000+00:00
+date: 2023-03-01T14:54:01.680000Z
 description: Are you sure you have everything updated? A lot has been done since the
   previous announcement. Here is what you need to do!
 spotlight: false

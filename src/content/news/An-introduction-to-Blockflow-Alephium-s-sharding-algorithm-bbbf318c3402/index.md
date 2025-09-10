@@ -1,5 +1,5 @@
 ---
-date: 2023-07-28 13:05:23.630000+00:00
+date: 2023-07-28T13:05:23.630000Z
 description: This is the fourth of a series of technical innovations brought by Alephium.
   Find the previous ones here (PolW), here (sUTXO), and here…
 spotlight: false

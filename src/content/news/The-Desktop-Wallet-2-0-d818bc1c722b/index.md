@@ -1,5 +1,5 @@
 ---
-date: 2023-05-08 15:02:30.374000+00:00
+date: 2023-05-08T15:02:30.374000Z
 description: It’s a big one! Token support, dApp connectivity, and a lot more in this
   feature-rich release!
 spotlight: false

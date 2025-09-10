@@ -1,5 +1,5 @@
 ---
-date: 2022-11-17 17:18:14.134000+00:00
+date: 2022-11-17T17:18:14.134000Z
 description: Combining the expressiveness of the account model & security of the UTXO
   model.
 spotlight: false

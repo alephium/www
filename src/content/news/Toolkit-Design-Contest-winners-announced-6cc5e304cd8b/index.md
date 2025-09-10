@@ -1,5 +1,5 @@
 ---
-date: 2023-09-29 14:39:19.449000+00:00
+date: 2023-09-29T14:39:19.449000Z
 description: Following the release of the Multisig GUI, Alephium launched a design
   contest to find a logo for the toolkit website! And now, we announce…
 spotlight: false

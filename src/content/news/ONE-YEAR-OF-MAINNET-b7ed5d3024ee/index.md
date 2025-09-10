@@ -1,5 +1,5 @@
 ---
-date: 2022-11-09 13:15:44.633000+00:00
+date: 2022-11-09T13:15:44.633000Z
 description: To celebrate the first anniversary of Alephium’s mainnet launch (8th
   of November 2021), Alephium’s core team was asked for their insight on…
 spotlight: false

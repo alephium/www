@@ -1,5 +1,5 @@
 ---
-date: 2023-08-16 15:52:52.305000+00:00
+date: 2023-08-16T15:52:52.305000Z
 description: Week 32 Milestones & progress on dev on Alephium!
 spotlight: false
 featuredImage: image_4db7db9502.png

@@ -1,5 +1,5 @@
 ---
-date: 2023-06-20 13:23:04.857000+00:00
+date: 2023-06-20T13:23:04.857000Z
 description: 'This article follows Alephium’s Tech Talk #10, where Alexis Roussel
   from NYM delves into the fascinating realm of mix networks and their…'
 spotlight: false

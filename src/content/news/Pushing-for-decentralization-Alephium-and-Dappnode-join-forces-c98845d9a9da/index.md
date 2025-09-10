@@ -1,5 +1,5 @@
 ---
-date: 2022-10-24 13:00:21.819000+00:00
+date: 2022-10-24T13:00:21.819000Z
 description: Neuchâtel, Switzerland & Zug, Switzerland September 22nd, 2022 — Alephium,
   a highly performant, secure, and energy-efficient sharded…
 spotlight: false

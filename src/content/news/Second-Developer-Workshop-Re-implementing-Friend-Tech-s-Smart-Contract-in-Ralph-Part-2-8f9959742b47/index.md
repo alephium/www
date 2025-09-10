@@ -1,5 +1,5 @@
 ---
-date: 2023-11-28 15:43:03.432000+00:00
+date: 2023-11-28T15:43:03.432000Z
 description: Welcome to the second part of this dev workshop session! Please make
   sure you go through the first part (here) as part 2 starts where Part…
 spotlight: false

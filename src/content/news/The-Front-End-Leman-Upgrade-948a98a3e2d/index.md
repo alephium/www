@@ -1,5 +1,5 @@
 ---
-date: 2022-12-22 13:31:59.903000+00:00
+date: 2022-12-22T13:31:59.903000Z
 description: The coming Leman upgrade approaches. Simultaneously, the front-end suite
   of tools is seeing more than a simple refresh.
 spotlight: false

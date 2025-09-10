@@ -1,5 +1,5 @@
 ---
-date: 2022-08-30 12:53:03.942000+00:00
+date: 2022-08-30T12:53:03.942000Z
 description: A Technical Promenade, part 1
 spotlight: false
 featuredImage: image_2e664b2caf.png

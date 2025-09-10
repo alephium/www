@@ -1,5 +1,5 @@
 ---
-date: 2022-05-27 12:21:53.876000+00:00
+date: 2022-05-27T12:21:53.876000Z
 description: The first half of 2022 was a vigorous but exciting, fun and rewarding
   period for Alephium in terms of milestones and growth. Read about…
 spotlight: false

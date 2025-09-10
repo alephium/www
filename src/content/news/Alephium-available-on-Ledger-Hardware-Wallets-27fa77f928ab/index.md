@@ -1,5 +1,5 @@
 ---
-date: 2024-10-10 16:32:52.147000+00:00
+date: 2024-10-10T16:32:52.147000Z
 description: Alephium x Ledger—Alephium is thrilled to announce its integration with
   Ledger hardware wallets, which will give users enhanced security…
 spotlight: false

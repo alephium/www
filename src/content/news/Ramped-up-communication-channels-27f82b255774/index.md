@@ -1,5 +1,5 @@
 ---
-date: 2021-08-23 15:32:58.223000+00:00
+date: 2021-08-23T15:32:58.223000Z
 description: With the launch of mainnet approaching, we are accommodating for our
   growing community. We hope this will ease the exchange between the…
 spotlight: false

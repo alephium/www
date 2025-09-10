@@ -1,5 +1,5 @@
 ---
-date: 2022-03-14 12:35:58.446000+00:00
+date: 2022-03-14T12:35:58.446000Z
 description: Presenting the humans behind operations, marketing and community.
 spotlight: false
 featuredImage: image_a509233072.jpg

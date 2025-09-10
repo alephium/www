@@ -1,5 +1,5 @@
 ---
-date: 2023-12-29 09:40:10.375000+00:00
+date: 2023-12-29T09:40:10.375000Z
 description: We are thrilled to see many new faces in our community! Alephium community
   channels have recently grown tremendously, and we thought it…
 spotlight: false

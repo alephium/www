@@ -1,5 +1,5 @@
 ---
-date: 2019-05-10 18:23:08.630000+00:00
+date: 2019-05-10T18:23:08.630000Z
 description: The Alephium team will be attending the Global Digital Impact Night during
   New York Blockchain Week 2019.
 spotlight: false

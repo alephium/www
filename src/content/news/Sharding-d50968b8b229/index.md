@@ -1,5 +1,5 @@
 ---
-date: 2023-02-22 13:42:39.451000+00:00
+date: 2023-02-22T13:42:39.451000Z
 description: A Technical Promenade, part 4
 spotlight: false
 featuredImage: image_ace28503b1.jpeg

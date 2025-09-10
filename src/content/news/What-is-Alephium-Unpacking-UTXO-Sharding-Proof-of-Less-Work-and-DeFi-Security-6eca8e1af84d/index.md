@@ -1,5 +1,5 @@
 ---
-date: 2024-11-04 17:36:49.665000+00:00
+date: 2024-11-04T17:36:49.665000Z
 description: Alephium attended Singapore Token 2049 and Maud was interviewed by Defiant
   news there. She shared a bit about Alephium’s history, the…
 spotlight: false

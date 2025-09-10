@@ -1,5 +1,5 @@
 ---
-date: 2022-10-27 12:01:43.406000+00:00
+date: 2022-10-27T12:01:43.406000Z
 description: 'Alephium is announcing its first Network Upgrade: The Leman Network
   Upgrade. This name is a tribute to the lake around which a significant…'
 spotlight: false

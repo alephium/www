@@ -1,5 +1,5 @@
 ---
-date: 2022-07-05 08:56:12.147000+00:00
+date: 2022-07-05T08:56:12.147000Z
 description: A discussion with Cheng Wang, inventor of PoLW and founder of Alephium
 spotlight: false
 featuredImage: image_a8ea38700f.png

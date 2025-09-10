@@ -1,5 +1,5 @@
 ---
-date: 2024-03-11 16:12:51.964000+00:00
+date: 2024-03-11T16:12:51.964000Z
 description: After two weeks of intense coding, debugging, building & good vibes,
   teams or individuals have submitted their projects. While the jury is…
 spotlight: false

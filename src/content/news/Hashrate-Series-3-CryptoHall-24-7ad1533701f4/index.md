@@ -1,5 +1,5 @@
 ---
-date: 2024-09-18 09:07:51.547000+00:00
+date: 2024-09-18T09:07:51.547000Z
 description: The blockchain hashrate is directly correlated with network security.
   As a Proof-of-work blockchain, Alephium relies on active ecosystem…
 spotlight: false

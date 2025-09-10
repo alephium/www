@@ -1,5 +1,5 @@
 ---
-date: 2023-02-27 13:59:09.585000+00:00
+date: 2023-02-27T13:59:09.585000Z
 description: Alephium hosted a Twitter Space on 24/01/2023 with Jordan from Nervos
   Network and Cheng Wang & Hongchao Liu from Alephium to talk about…
 spotlight: false

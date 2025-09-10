@@ -1,5 +1,5 @@
 ---
-date: 2024-01-19 14:13:31.154000+00:00
+date: 2024-01-19T14:13:31.154000Z
 description: Applications are open, apply now!
 spotlight: true
 featuredImage: image_f92c0445fe.jpg

@@ -1,5 +1,5 @@
 ---
-date: 2022-10-21 08:55:23.407000+00:00
+date: 2022-10-21T08:55:23.407000Z
 description: Alephium is committed to building and delivering a secure and reliable
   blockchain. With that in mind, we have recently completed a security…
 spotlight: false

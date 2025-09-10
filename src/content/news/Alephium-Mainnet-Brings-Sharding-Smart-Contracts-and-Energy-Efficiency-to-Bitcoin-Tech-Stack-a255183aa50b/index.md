@@ -1,5 +1,5 @@
 ---
-date: 2021-11-09 07:57:14.606000+00:00
+date: 2021-11-09T07:57:14.606000Z
 description: Lausanne, Switzerland — November 9 th, 2021 Alephium, the first operational
   sharded blockchain bringing scalability, ETH-inspired smart…
 spotlight: false

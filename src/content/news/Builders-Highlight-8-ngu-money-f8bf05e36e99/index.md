@@ -1,5 +1,5 @@
 ---
-date: 2024-03-01 15:24:32.761000+00:00
+date: 2024-03-01T15:24:32.761000Z
 description: Our ecosystem thrives with developers building amazing projects on top
   of Alephium, delivering a unique experience and providing real…
 spotlight: false

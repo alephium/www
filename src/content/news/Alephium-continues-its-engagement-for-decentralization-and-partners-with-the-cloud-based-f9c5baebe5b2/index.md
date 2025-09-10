@@ -1,5 +1,5 @@
 ---
-date: 2022-11-22 11:12:05.457000+00:00
+date: 2022-11-22T11:12:05.457000Z
 description: Alephium, a highly performant, secure, and energy-efficient sharded blockchain
   network for DeFi & dApps and FluxLabs (Flux), a new…
 spotlight: false

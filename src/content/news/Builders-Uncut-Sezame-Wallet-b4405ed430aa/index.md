@@ -1,5 +1,5 @@
 ---
-date: 2024-09-06 13:28:58.200000+00:00
+date: 2024-09-06T13:28:58.200000Z
 description: This interview was conducted around the Athens Builders Meetup, which
   took place at the end of June 2024. If you’re just discovering…
 spotlight: false

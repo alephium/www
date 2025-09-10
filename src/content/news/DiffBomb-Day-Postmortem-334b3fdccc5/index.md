@@ -1,5 +1,5 @@
 ---
-date: 2022-12-21 14:16:06.820000+00:00
+date: 2022-12-21T14:16:06.820000Z
 description: TL;DR
 spotlight: false
 featuredImage: image_c961ca7340.png

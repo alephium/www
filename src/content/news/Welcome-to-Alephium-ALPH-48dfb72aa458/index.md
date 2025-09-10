@@ -1,5 +1,5 @@
 ---
-date: 2022-01-10 13:52:06.799000+00:00
+date: 2022-01-10T13:52:06.799000Z
 description: Here’s all the information you need to get started with Alephium ! And
   if that’s not enough, come talk to us on Discord, Telegram or…
 spotlight: false

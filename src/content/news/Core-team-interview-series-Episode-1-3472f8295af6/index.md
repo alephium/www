@@ -1,5 +1,5 @@
 ---
-date: 2022-03-09 15:36:33.257000+00:00
+date: 2022-03-09T15:36:33.257000Z
 description: Read the first part of the core team interview series! In this edition
   we present to you the humans building the Front-end of Alephium.
 spotlight: false

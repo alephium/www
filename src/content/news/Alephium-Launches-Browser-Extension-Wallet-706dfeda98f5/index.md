@@ -1,5 +1,5 @@
 ---
-date: 2023-03-14 13:59:07.975000+00:00
+date: 2023-03-14T13:59:07.975000Z
 description: Download it and try the new features on Alephium Testnet!
 spotlight: false
 featuredImage: image_a708db8d02.jpg

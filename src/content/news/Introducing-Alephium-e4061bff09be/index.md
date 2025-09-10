@@ -1,5 +1,5 @@
 ---
-date: 2019-05-09 21:08:23.040000+00:00
+date: 2019-05-09T21:08:23.040000Z
 description: We are building the first scalable blockchain platform that supports
   cross-shard transactions natively
 spotlight: false

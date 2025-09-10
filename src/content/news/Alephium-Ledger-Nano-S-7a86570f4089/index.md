@@ -1,5 +1,5 @@
 ---
-date: 2024-10-23 08:26:59.371000+00:00
+date: 2024-10-23T08:26:59.371000Z
 description: How to install the Alephium App in your Ledger Nano S
 spotlight: false
 featuredImage: image_b03ee75ea8.jpeg

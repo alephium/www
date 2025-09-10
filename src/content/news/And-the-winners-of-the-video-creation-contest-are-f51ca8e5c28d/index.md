@@ -1,5 +1,5 @@
 ---
-date: 2022-04-21 09:29:12.943000+00:00
+date: 2022-04-21T09:29:12.943000Z
 description: Back in March 2022, we launched a community video contest and the results
   are in!
 spotlight: false

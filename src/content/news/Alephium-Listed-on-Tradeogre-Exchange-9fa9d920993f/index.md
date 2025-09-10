@@ -1,5 +1,5 @@
 ---
-date: 2023-03-08 12:35:48.426000+00:00
+date: 2023-03-08T12:35:48.426000Z
 description: A Collective Effort by the Community
 spotlight: false
 featuredImage: image_337a30a98f.jpg

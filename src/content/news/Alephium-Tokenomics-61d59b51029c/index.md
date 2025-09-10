@@ -1,5 +1,5 @@
 ---
-date: 2021-10-05 10:18:04.453000+00:00
+date: 2021-10-05T10:18:04.453000Z
 description: 'Updated: The tokenomics were published on Oct 5, 2021. We updated this
   article in February of 2024 to better address the most frequently…'
 spotlight: false

@@ -1,5 +1,5 @@
 ---
-date: 2024-03-25 14:45:25.896000+00:00
+date: 2024-03-25T14:45:25.896000Z
 description: Regularly, we put the spotlight on an active member of the Alephium community.
   This is an opportunity to showcase their contributions to…
 spotlight: false

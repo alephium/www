@@ -1,5 +1,5 @@
 ---
-date: 2023-08-11 14:13:30.302000+00:00
+date: 2023-08-11T14:13:30.302000Z
 description: A discussion with Cheng Wang, inventor of stateful UTXO and founder of
   Alephium
 spotlight: false

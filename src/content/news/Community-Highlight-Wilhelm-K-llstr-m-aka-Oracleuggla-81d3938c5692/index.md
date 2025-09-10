@@ -1,5 +1,5 @@
 ---
-date: 2022-10-14 09:10:11.698000+00:00
+date: 2022-10-14T09:10:11.698000Z
 description: Alephium takes an organic approach to community building. We believe
   actions speak louder than words…
 spotlight: false

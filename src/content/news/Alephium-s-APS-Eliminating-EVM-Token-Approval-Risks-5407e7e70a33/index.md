@@ -1,5 +1,5 @@
 ---
-date: 2023-06-13 12:24:16.559000+00:00
+date: 2023-06-13T12:24:16.559000Z
 description: This article will explore Alephium’s Asset Permission System (APS) and
   discuss its security enhancements over the Ethereum Virtual Machine…
 spotlight: false

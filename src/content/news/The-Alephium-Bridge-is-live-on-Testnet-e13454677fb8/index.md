@@ -1,5 +1,5 @@
 ---
-date: 2023-05-19 13:46:53.177000+00:00
+date: 2023-05-19T13:46:53.177000Z
 description: Bridge assets from and to Ethereum Goerli Testnet and BNB Smart Chain
   Testnet
 spotlight: false

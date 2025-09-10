@@ -1,5 +1,5 @@
 ---
-date: 2025-02-18 14:00:26.801000+00:00
+date: 2025-02-18T14:00:26.801000Z
 description: We are pleased to announce a strategic partnership between Alephium and
   Hacken, a leading cybersecurity firm specializing in blockchain and…
 spotlight: false

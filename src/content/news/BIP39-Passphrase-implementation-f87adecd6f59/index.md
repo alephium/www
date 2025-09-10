@@ -1,5 +1,5 @@
 ---
-date: 2022-08-09 14:34:19.192000+00:00
+date: 2022-08-09T14:34:19.192000Z
 description: To keep giving our users more tools to secure their ALPH, we’ve implemented
   the BIP39 passphrase feature in the desktop wallet v1.3.0!
 spotlight: false

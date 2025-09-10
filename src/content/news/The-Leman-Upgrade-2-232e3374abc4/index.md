@@ -1,5 +1,5 @@
 ---
-date: 2022-12-20 15:47:15.162000+00:00
+date: 2022-12-20T15:47:15.162000Z
 description: An intermediary update on the road to the Leman Upgrade
 spotlight: false
 featuredImage: image_1c78dbc4c1.jpg

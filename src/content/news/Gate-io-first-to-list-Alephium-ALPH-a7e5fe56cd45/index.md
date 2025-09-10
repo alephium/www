@@ -1,5 +1,5 @@
 ---
-date: 2022-01-12 08:41:16.698000+00:00
+date: 2022-01-12T08:41:16.698000Z
 description: Lausanne, Switzerland, Jan 12, 2022 — Alephium, an innovative Layer 1
   blockchain announces today its first official listing on the top 10…
 spotlight: false

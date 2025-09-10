@@ -1,5 +1,5 @@
 ---
-date: 2023-09-14 09:25:46.826000+00:00
+date: 2023-09-14T09:25:46.826000Z
 description: Interviews of the humans behind Alephium.
 spotlight: false
 featuredImage: image_e28cc04c7e.jpg

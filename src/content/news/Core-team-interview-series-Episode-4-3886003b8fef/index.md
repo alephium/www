@@ -1,5 +1,5 @@
 ---
-date: 2023-01-06 16:29:48.501000+00:00
+date: 2023-01-06T16:29:48.501000Z
 description: 'This article was updated: https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0'
 spotlight: false
 featuredImage: image_0416b8898f.jpeg

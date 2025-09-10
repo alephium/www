@@ -1,5 +1,5 @@
 ---
-date: 2022-11-23 15:42:04.309000+00:00
+date: 2022-11-23T15:42:04.309000Z
 description: Alephium’s partnership with Flux Official to support Alephium’s full
   node running on a web3 cloud infrastructure is another step towards…
 spotlight: false

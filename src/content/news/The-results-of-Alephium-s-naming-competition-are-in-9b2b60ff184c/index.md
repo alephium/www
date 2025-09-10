@@ -1,5 +1,5 @@
 ---
-date: 2022-02-09 10:14:03.517000+00:00
+date: 2022-02-09T10:14:03.517000Z
 description: The team has spoken & the favorite name suggestions are 🥁
 spotlight: false
 featuredImage: image_48a75b1094.jpg

@@ -1,5 +1,5 @@
 ---
-date: 2024-11-20 16:09:04.341000+00:00
+date: 2024-11-20T16:09:04.341000Z
 description: Tl;dr — New bridge ALPH <> BSC / The Faucet / I’m new, coming from BSC/BNB — What
   do I do in $ALPH’s ecosystem? / Contracts & tokens / FAQ
 spotlight: false

@@ -1,5 +1,5 @@
 ---
-date: 2023-10-03 15:39:38.643000+00:00
+date: 2023-10-03T15:39:38.643000Z
 description: Daily, we strive to enhance our decentralized infrastructure, inspired
   by Satoshi Nakamoto’s vision for a permissionless future. We offer…
 spotlight: false

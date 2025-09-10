@@ -1,5 +1,5 @@
 ---
-date: 2021-12-09 14:32:39.777000+00:00
+date: 2021-12-09T14:32:39.777000Z
 description: It’s been a month since the Alephium mainnet launch and many positive
   things have been accomplished thanks to the amazing community …
 spotlight: false

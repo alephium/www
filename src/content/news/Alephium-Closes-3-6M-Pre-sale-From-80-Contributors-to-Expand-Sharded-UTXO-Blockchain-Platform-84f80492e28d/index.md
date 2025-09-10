@@ -1,5 +1,5 @@
 ---
-date: 2021-09-09 16:56:46.757000+00:00
+date: 2021-09-09T16:56:46.757000Z
 description: Lausanne, Switzerland, September 7th, 2021 — Alephium, a simple and efficient
   sharding-based blockchain, has pre-sold for over $3.6…
 spotlight: false

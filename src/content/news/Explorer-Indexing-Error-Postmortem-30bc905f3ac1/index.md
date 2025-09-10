@@ -1,5 +1,5 @@
 ---
-date: 2022-01-20 09:27:26.089000+00:00
+date: 2022-01-20T09:27:26.089000Z
 description: What happened — Timeline of events? At 11:58 CET on January 18th, 2022,
   user @Kanto explained on discord that he could not deposit funds…
 spotlight: false

@@ -1,5 +1,5 @@
 ---
-date: 2023-08-31 14:34:52.764000+00:00
+date: 2023-08-31T14:34:52.764000Z
 description: Week 34 Milestones & progress on dev on Alephium!
 spotlight: false
 featuredImage: image_a2c24405e4.png

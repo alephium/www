@@ -1,5 +1,5 @@
 ---
-date: 2022-11-03 16:05:01.716000+00:00
+date: 2022-11-03T16:05:01.716000Z
 description: 'This is episode #2 in our series of highlights where once in a while
   we put the spotlight on one active member of our community. This is an…'
 spotlight: false

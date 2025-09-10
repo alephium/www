@@ -1,5 +1,5 @@
 ---
-date: 2023-11-29 14:06:15.371000+00:00
+date: 2023-11-29T14:06:15.371000Z
 description: Spread the word about the bridge & share 3’000 $ALPH in prize!
 spotlight: false
 featuredImage: image_0a276df54e.jpg

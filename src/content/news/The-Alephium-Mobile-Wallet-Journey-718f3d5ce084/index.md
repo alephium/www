@@ -1,5 +1,5 @@
 ---
-date: 2024-01-25 15:48:47.283000+00:00
+date: 2024-01-25T15:48:47.283000Z
 description: The Alephium Mobile Wallet is a great addition to the current set of
   wallets developed by the core contributors. It is available for…
 spotlight: false

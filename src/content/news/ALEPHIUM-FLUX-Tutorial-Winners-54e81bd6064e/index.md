@@ -1,5 +1,5 @@
 ---
-date: 2023-01-17 14:18:22.744000+00:00
+date: 2023-01-17T14:18:22.744000Z
 description: On December 1st in 2022, the community was encouraged to enter a contest
   to produce the best tutorial about how to run an Alephium full…
 spotlight: false

@@ -1,5 +1,5 @@
 ---
-date: 2023-11-23 15:31:22.684000+00:00
+date: 2023-11-23T15:31:22.684000Z
 description: How to bridge your tokens + what to do on the Alephium Ecosystem
 spotlight: false
 featuredImage: image_9b721622a7.png

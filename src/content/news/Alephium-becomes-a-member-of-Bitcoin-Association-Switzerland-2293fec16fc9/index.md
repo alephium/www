@@ -1,5 +1,5 @@
 ---
-date: 2021-11-24 14:17:40.891000+00:00
+date: 2021-11-24T14:17:40.891000Z
 description: Alephium is thrilled to join forces with the oldest Fintech association
   in Switzerland and one of the oldest still active Bitcoin…
 spotlight: false

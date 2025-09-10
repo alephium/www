@@ -1,5 +1,5 @@
 ---
-date: 2023-05-26 12:34:26.671000+00:00
+date: 2023-05-26T12:34:26.671000Z
 description: Alephium’s ecosystem thrives with developers building amazing stuff on
   top of Alephium (services, dApps, etc…) that deliver a unique…
 spotlight: false

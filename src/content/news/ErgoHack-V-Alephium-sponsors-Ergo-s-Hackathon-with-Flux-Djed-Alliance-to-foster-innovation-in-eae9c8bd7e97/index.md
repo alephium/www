@@ -1,5 +1,5 @@
 ---
-date: 2022-09-27 09:18:53.371000+00:00
+date: 2022-09-27T09:18:53.371000Z
 description: ErgoHack V — Alephium is a proud partner & sponsor of ErgoHack V, along
   with Flux and Djed Alliance. ErgoHack V, Ergo Foundation’s fifth…
 spotlight: false

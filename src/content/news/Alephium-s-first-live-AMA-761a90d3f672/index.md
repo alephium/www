@@ -1,5 +1,5 @@
 ---
-date: 2021-11-05 15:36:35.780000+00:00
+date: 2021-11-05T15:36:35.780000Z
 description: On November 3rd, 2021 the Alephium team answered all the questions sourced
   from the community. A warm thank you to everyone for asking so…
 spotlight: false

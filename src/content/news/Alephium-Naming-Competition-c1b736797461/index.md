@@ -1,5 +1,5 @@
 ---
-date: 2022-01-31 13:28:49.350000+00:00
+date: 2022-01-31T13:28:49.350000Z
 description: Naming can be fun, but good naming is hard. Alephium has identified three
   items that desperately need naming, and we’d like to ask you for…
 spotlight: false

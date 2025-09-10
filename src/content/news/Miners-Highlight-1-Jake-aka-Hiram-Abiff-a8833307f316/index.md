@@ -1,5 +1,5 @@
 ---
-date: 2024-01-11 16:30:53.602000+00:00
+date: 2024-01-11T16:30:53.602000Z
 description: The Alephium blockchain, like many decentralized networks, relies heavily
   on the contributions of miners to maintain its integrity and…
 spotlight: false

@@ -1,5 +1,5 @@
 ---
-date: 2024-01-02 10:52:33.342000+00:00
+date: 2024-01-02T10:52:33.342000Z
 description: One month after the release of the bridge on mainnet, Cheng, Hongchao
   & Maud were interviewed by Vladimir in a Twitter space AMA. You can…
 spotlight: false
