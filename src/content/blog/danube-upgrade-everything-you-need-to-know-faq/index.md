@@ -7,6 +7,8 @@ featuredImage: danube3.webp
 ---
 # Danube Upgrade: Everything You Need to Know + FAQ
 
+![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*b7hf3vnksON2uNANw3ca3w.png)
+
 After a year of building, we are proud to announce that the Danube network upgrade was activated on July 15, 2025, at 12:00 GMT+02:00.
 
 Building on the momentum of previous upgrades like Leman and Rhone, Danube introduces major performance and usability improvements while preserving our core principles of decentralization, security, and energy efficiency. From faster block times and invisible sharding to seedless wallet onboarding and advanced smart contract tooling, Danube represents a significant leap forward in Web3 accessibility.
