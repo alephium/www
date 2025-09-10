@@ -21,7 +21,7 @@ With a micro learning approach proven to increase retention by up to 80% while s
 * Community First: Learn alongside others, share progress, and compete on leaderboards
 * Already trusted by 10,000+ learners, Learnify is pioneering the future of decentralized education.
 
-
+![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*EgrwkHvOizqqZkts-EV1xQ.png)
 
 ## Learn about Alephium by Playing
 
@@ -41,7 +41,7 @@ You’ll explore what Alephium is, how it works, and what makes it different fro
 * Why Alephium’s approach to smart contracts and scalability is unique
 * No blockchain experience required. You don’t even need a wallet to start. Learnify guides you step-by-step, and yes, you can claim real rewards as you learn.
 
-
+![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*2D5Gx8dUtqdR6ENQ4XFLDw.jpeg)
 
 ### Already Using Alephium? Earn ALPH by Proving Your Knowledge
 
@@ -58,7 +58,7 @@ Here’s how:
 
 Whether you’re here to sharpen your skills or pick up a few tokens, the rewards are real.
 
-
+![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*jEzw7FgtUTDjS_OzrGhy6w.png)
 
 ## Why Learnify + Alephium Matters
 
