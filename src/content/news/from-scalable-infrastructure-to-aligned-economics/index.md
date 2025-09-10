@@ -14,8 +14,6 @@ Now, with the infrastructure in place, Alephium enters its next chapter: Phase T
 
 In this article, we will explore in detail what Alephium Phase 2 is, how we got here, and where we’re going next.
 
-
-
 ## Phase One: Scalable, Secure, Easy to Use Infrastructure
 
 The foundation is already live and battle-tested.
@@ -28,8 +26,6 @@ While most Layer 1s abandoned PoW for complex, high-overhead PoS systems, Alephi
 * UX as a Protocol Primitive: built-in DevX improvements, fast confirmations, and no fragmentation.
 
 Alephium is already proving that Layer 1s don’t need to choose between decentralization, performance, and usability. It’s scalable, secure, easy to use, and ready for what comes next.
-
-
 
 ## Phase Two: Activating Aligned Economics
 
@@ -45,8 +41,6 @@ This is Alephium’s vision for a next-generation Layer 1:
 * Fee-generating rather than inflationary.
 * Aligned rather than extractive.
 * Composable rather than siloed.
-
-
 
 ## Strategic Building Blocks
 
@@ -65,11 +59,7 @@ Key features include:
 
 This isn’t a dApp competing for market share. It’s a native platform designed to drive adoption and growth across the entire Alephium ecosystem.
 
-
-
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*HuOt1y5yVkyVcmny_g8t3Q.png)
-
-
+![](aligned2.webp)
 
 ### 2. Staked ALPH (xALPH)
 
@@ -81,8 +71,6 @@ By staking and locking ALPH tokens into xALPH, participants gain access to:
 * Governance, through the DAO framework.
 * And much more.
 
-
-
 ### 3. Community Driven Ecosystem Growth
 
 Alephium is also laying the groundwork so multiple community driven initiatives can emerge, each focused on different areas such as marketing, developer support, onboarding new builders or liquidity.
@@ -93,9 +81,7 @@ Alephium is also laying the groundwork so multiple community driven initiatives 
 
 As more community initiatives emerge, Alephium’s governance and funding become more decentralized, helping the ecosystem grow in a community-driven way.
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*bVYkkotN28DQ38mKg13hyQ.png)
-
-
+![](aligned3.webp)
 
 ### 4. Infrastructure Performance Enhancements
 
@@ -105,8 +91,6 @@ Alephium’s R&D continues to push forward:
 * UX/DevX enhancements.
 * Support for increasingly complex and high-throughput applications.
 * All while preserving the decentralization, security, and core principles of PoW.
-
-
 
 ## The Aligned Ecosystem Loop
 
@@ -118,9 +102,7 @@ Each component strengthens the others: infrastructure drives usage, usage fuels 
 
 Together, they form the aligned ecosystem loop, a self-sustaining cycle designed for long-term resilience and community-driven growth.
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*wPkzNZBrM4x0uvkzI-RwgQ.png)
-
-
+![](aligned4.webp)
 
 ## Roadmap Highlights
 
@@ -132,9 +114,7 @@ During this journey, we will keep the community updated on our progress, finding
 
 Finally, please note that this roadmap is limited to Phase 2 items and does not reflect the full scope of activities.
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*c-fybS8FXQB-eyouv6RS6Q.png)
-
-
+![](aligned5.webp)
 
 ## Final Thoughts
 
