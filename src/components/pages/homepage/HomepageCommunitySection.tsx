@@ -10,7 +10,7 @@ const HomepageCommunitySection = () => (
   <SubpageSection fullWidth>
     <CommunityMosaic />
     <TextElementStyled isCentered>
-      <h2 style={{ margin: 0 }}>Join a bubbling community.</h2>
+      <h2>Join a bubbling community.</h2>
       <p>Check out the official and community-led channels.</p>
       <Button big highlight url="/communities">
         Get on board

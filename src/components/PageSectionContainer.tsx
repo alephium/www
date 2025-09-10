@@ -19,7 +19,7 @@ const PageSectionContainer = styled.div<PageSectionContainerProps>`
   flex-direction: column;
   justify-content: ${({ justifyContent }) => justifyContent || 'flex-start'};
   width: ${({ narrow, wide, fullWidth, extraWide }) =>
-    narrow ? '680px' : fullWidth ? '100%' : wide ? '80vw' : extraWide ? 'calc(100vw - 40px)' : 'var(--page-width)'};
+    narrow ? '700px' : fullWidth ? '100%' : wide ? '80vw' : extraWide ? 'calc(100vw - 40px)' : 'var(--page-width)'};
   height: ${({ fullHeight }) => (fullHeight ? '100vh' : 'auto')};
   margin: 0 auto;
   position: relative;

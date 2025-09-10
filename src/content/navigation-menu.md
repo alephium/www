@@ -39,10 +39,14 @@ menuItems:
         link: https://defillama.com/chain/Alephium?staking=true
   - title: Community
     items:
+      - title: News
+        link: /news
       - title: Get started
         link: /get-started
       - title: Ambassador Program
         link: /ambassador
+      - title: Grants
+        link: https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md
       - title: Online communities
         link: /communities
 button:

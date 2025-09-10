@@ -8,12 +8,12 @@ columns:
         url: https://docs.alephium.org/
       - text: Ecosystem
         url: https://alph.land
-      #- text: Grants
-      #  url: /grants
-      - text: Blog
-        url: https://medium.com/@alephium
+      - text: Grants
+        url: https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md
   - title: Alephium
     links:
+      - text: News
+        url: /news
       - text: Roadmap
         url: /roadmap
       - text: Contact

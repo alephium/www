@@ -97,17 +97,11 @@ const BentoContainer = styled(motion.div)<{
     }
   }};
   width: 100%;
-  min-height: 400px;
 
   @media ${deviceBreakPoints.mobile} {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: auto;
-    gap: var(--spacing-3);
-  }
-
-  @media ${deviceBreakPoints.ipad} {
     grid-template-columns: 1fr;
     gap: var(--spacing-3);
+    grid-auto-rows: auto;
   }
 `
 

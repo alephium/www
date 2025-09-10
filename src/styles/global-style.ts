@@ -18,6 +18,12 @@ export const deviceBreakPoints = {
 const GlobalStyle = createGlobalStyle`
   ${normalize}
 
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
   @keyframes twinkle {
     0%, 100% { opacity: 0.3; }
     50% { opacity: 1; }
@@ -30,7 +36,7 @@ const GlobalStyle = createGlobalStyle`
       font-size: 13px;
     }
 
-    --page-width: min(80vw, 1200px);
+    --page-width: min(82vw, 1240px);
     --page-width-shrinked: 68rem;
 
     --width-16: 1rem;
@@ -109,6 +115,7 @@ const GlobalStyle = createGlobalStyle`
     --fontSize-26: 1.66rem;
     --fontSize-28: 1.75rem;
     --fontSize-32: 2rem;
+    --fontSize-34: 2.125rem;
     --fontSize-36: 2.25rem;
     --fontSize-38: 2.33rem;
     --fontSize-40: 2.5rem;
@@ -143,7 +150,7 @@ const GlobalStyle = createGlobalStyle`
     --color-grey-750: #2c2c2c;
     --color-grey-800: #282828;
     --color-grey-850: #232323;
-    --color-grey-900: #1c1c1c;
+    --color-grey-900: #171717;
     --color-grey-950: #121212;
     --color-black: #000;
     --color-salmon: #ff5d51;

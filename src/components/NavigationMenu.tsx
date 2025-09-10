@@ -213,7 +213,6 @@ const NavigationMenuStyled = styled.div`
   display: flex;
   font-weight: var(--fontWeight-medium);
   z-index: 1;
-  padding: 0 24px;
 
   .nav-end {
     display: flex;
@@ -306,12 +305,13 @@ const DrawerTitle = styled.span`
 
 const Drawer = styled(motion.div)`
   position: absolute;
-  top: calc(100% + 20px);
+  top: calc(100% + 12px);
   left: -50%;
   right: 0;
   min-width: 250px;
   background-color: ${({ theme }) => theme.background1};
   border-radius: var(--radius-small);
+  border: 1px solid ${({ theme }) => theme.borderPrimary};
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.8);
   display: flex;
   flex-direction: column;

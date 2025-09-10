@@ -3,14 +3,13 @@ import styled, { useTheme } from 'styled-components'
 
 import Button from '../components/Button'
 import Card from '../components/Card'
+import CardText from '../components/CardText'
 import CardsHorizontalScroller from '../components/common/CardsHorizontalScroller'
 import ClickableBox from '../components/customPageComponents/ClickableBox'
 import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
-import TextCard from '../components/customPageComponents/TextCard'
-import TextCardContent from '../components/customPageComponents/TextCardContent'
 import TextElement from '../components/customPageComponents/TextElement'
 import SectionDivider from '../components/SectionDivider'
 import SimpleLink from '../components/SimpleLink'
@@ -87,53 +86,45 @@ const Cards = () => {
 
   return (
     <CardsHorizontalScroller animateCards>
-      <TextCard border>
-        <TextCardContent>
-          <TextElement>
-            <h3 style={{ color: theme.palette2 }}>Community Builders</h3>
-            <p>
-              <strong>Organize and grow the community</strong> through local meetups, workshops, and hackathons.
-              Moderate social channels and help expand Alephium&apos;s global presence through content translation.
-            </p>
-          </TextElement>
-        </TextCardContent>
-      </TextCard>
+      <Card border>
+        <CardText>
+          <h3 style={{ color: theme.palette2 }}>Community Builders</h3>
+          <p>
+            <strong>Organize and grow the community</strong> through local meetups, workshops, and hackathons. Moderate
+            social channels and help expand Alephium&apos;s global presence through content translation.
+          </p>
+        </CardText>
+      </Card>
 
-      <TextCard border>
-        <TextCardContent>
-          <TextElement>
-            <h3 style={{ color: theme.palette3 }}>Educators</h3>
-            <p>
-              <strong>Share knowledge and expertise</strong> by creating tutorials, guides, and educational content.
-              Host webinars, AMAs, and live streams while mentoring new community members and developers.
-            </p>
-          </TextElement>
-        </TextCardContent>
-      </TextCard>
+      <Card border>
+        <CardText>
+          <h3 style={{ color: theme.palette3 }}>Educators</h3>
+          <p>
+            <strong>Share knowledge and expertise</strong> by creating tutorials, guides, and educational content. Host
+            webinars, AMAs, and live streams while mentoring new community members and developers.
+          </p>
+        </CardText>
+      </Card>
 
-      <TextCard border>
-        <TextCardContent>
-          <TextElement>
-            <h3 style={{ color: theme.palette4 }}>Content Creators</h3>
-            <p>
-              <strong>Create engaging content</strong> through blogs, videos, and graphics about Alephium. Share your
-              work across social media platforms and develop creative campaigns to engage the community.
-            </p>
-          </TextElement>
-        </TextCardContent>
-      </TextCard>
+      <Card border>
+        <CardText>
+          <h3 style={{ color: theme.palette4 }}>Content Creators</h3>
+          <p>
+            <strong>Create engaging content</strong> through blogs, videos, and graphics about Alephium. Share your work
+            across social media platforms and develop creative campaigns to engage the community.
+          </p>
+        </CardText>
+      </Card>
 
-      <TextCard border>
-        <TextCardContent>
-          <TextElement>
-            <h3 style={{ color: theme.palette6 }}>Developers</h3>
-            <p>
-              <strong>Build and innovate</strong> by creating tools, dApps, and integrations for the Alephium ecosystem.
-              Contribute to open-source projects and provide technical support to other developers.
-            </p>
-          </TextElement>
-        </TextCardContent>
-      </TextCard>
+      <Card border>
+        <CardText>
+          <h3 style={{ color: theme.palette6 }}>Developers</h3>
+          <p>
+            <strong>Build and innovate</strong> by creating tools, dApps, and integrations for the Alephium ecosystem.
+            Contribute to open-source projects and provide technical support to other developers.
+          </p>
+        </CardText>
+      </Card>
     </CardsHorizontalScroller>
   )
 }
@@ -191,29 +182,24 @@ const HowToApply = () => {
   )
 }
 
-const BottomSection = () => {
-  const theme = useTheme()
-  return (
-    <SubpageSection>
-      <Card bgColor={theme.background1}>
-        <TextElement isCentered>
-          <h2>Ready to Join?</h2>
-          <p>
-            Become a part of the Alephium Ambassador Program and help us build the future of finance. Together, we can
-            create a more scalable, secure, and sustainable world.
-          </p>
-          <Button
-            big
-            highlight
-            url="https://docs.google.com/forms/d/e/1FAIpQLSfR0T6Fg3v8HU86wZJgQBXslRUJKS3bsiQb92-ZIyaaV4RreA/viewform"
-          >
-            Apply Now
-          </Button>
-        </TextElement>
-      </Card>
-    </SubpageSection>
-  )
-}
+const BottomSection = () => (
+  <SubpageSection>
+    <TextElement isCentered>
+      <h2>Ready to Join?</h2>
+      <p>
+        Become a part of the Alephium Ambassador Program and help us build the future of finance. Together, we can
+        create a more scalable, secure, and sustainable world.
+      </p>
+      <Button
+        big
+        highlight
+        url="https://docs.google.com/forms/d/e/1FAIpQLSfR0T6Fg3v8HU86wZJgQBXslRUJKS3bsiQb92-ZIyaaV4RreA/viewform"
+      >
+        Apply Now
+      </Button>
+    </TextElement>
+  </SubpageSection>
+)
 
 export default CustomPage
 
