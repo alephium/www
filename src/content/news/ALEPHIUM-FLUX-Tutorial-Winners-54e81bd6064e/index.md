@@ -19,11 +19,7 @@ Actually… we got several. Picking the champion was no easy task, we loved your
 
 #### A <a href="https://youtu.be/xelpHE1Z0hA" class="markup--anchor markup--h4-anchor" data-href="https://youtu.be/xelpHE1Z0hA" rel="noopener" target="_blank">video</a> by <a href="https://www.youtube.com/@Crypto-Animation" class="markup--anchor markup--h4-anchor" data-href="https://www.youtube.com/@Crypto-Animation" rel="noopener" target="_blank">Crypto Animation</a>
 
-<figure id="5fcf" class="graf graf--figure graf--iframe graf-after--h4">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=xelpHE1Z0hA" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=xelpHE1Z0hA`
 
 ### 1st place (article) A <a href="https://medium.com/@Oheka/2134def9b7d0" class="markup--anchor markup--h3-anchor" data-href="https://medium.com/@Oheka/2134def9b7d0" target="_blank">blog post</a> by <a href="https://medium.com/@Oheka" class="markup--anchor markup--h3-anchor" data-href="https://medium.com/@Oheka" target="_blank">Oheka</a>
 

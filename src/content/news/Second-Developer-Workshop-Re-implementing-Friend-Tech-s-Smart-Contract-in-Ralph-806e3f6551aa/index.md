@@ -81,11 +81,7 @@ The workshop assumes that you have at least some familiarity with the command li
 
 You can follow the full detailed workshop in the following video. Here’s the <a href="https://github.com/alephium/dev-workshop-02/blob/session-1/contracts/friend_tech.ral" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/dev-workshop-02/blob/session-1/contracts/friend_tech.ral" rel="noopener" target="_blank">full code</a> of the Ralph implementation, and this article highlights the main steps for easier comprehension:
 
-<figure id="e82d" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=gi2sxvB9Np8" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=gi2sxvB9Np8`
 
 ### Step 1: Contract Ownership
 

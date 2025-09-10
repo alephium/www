@@ -121,11 +121,7 @@ Logging out and logging in again, with the correct Passphrase this time, will gi
 
 You can then create your **Wallet \#3** with a different passphrase which will contain the bulk of your assets.
 
-<figure id="bce0" class="graf graf--figure graf--iframe graf-after--p graf--trailing">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=a1nK9pYfKcQ" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=a1nK9pYfKcQ`
 
 ---
 

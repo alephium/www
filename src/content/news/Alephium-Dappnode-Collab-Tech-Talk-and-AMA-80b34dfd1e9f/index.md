@@ -49,8 +49,4 @@ We also had a Tech Talk with Dappnode, where <a href="https://medium.com/@pol.la
 
 That was an interesting conversation about decentralization, technical stuff, and some hidden gems inside Dappnode software! We highly recommend you check the recording below:
 
-<figure id="9860" class="graf graf--figure graf--iframe graf-after--p graf--trailing">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=wzobAlPR11s" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=wzobAlPR11s`

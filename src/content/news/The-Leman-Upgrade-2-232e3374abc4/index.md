@@ -16,12 +16,7 @@ A lot of <a href="https://twitter.com/alephium/status/1589991470676615168" class
 
 An <a href="https://alephium-nft.softfork.se/my-nfts" class="markup--anchor markup--p-anchor" data-href="https://alephium-nft.softfork.se/my-nfts" rel="noopener" target="_blank">NFT project prototype</a> has been deployed on the devnet. <a href="https://xoxo.art" class="markup--anchor markup--p-anchor" data-href="https://xoxo.art" rel="noopener" target="_blank">A community project</a> is developing an NFT platform; it is expected to be released on the testnet soon!
 
-<figure id="1246" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=UkpsI1JenNM" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-<figcaption>xoxo.art teaser is still an early peek in what the NFT platform will be!</figcaption>
-</figure>
+`video: https://www.youtube.com/watch?v=UkpsI1JenNM`
 
 The **Alephium-Ethereum Bridge** is now fully functional on the devnet and has been deployed to the testnet. It is now possible to make token transfers using the <a href="https://portal-bridge.wormhole-testnet.softfork.se/." class="markup--anchor markup--p-anchor" data-href="https://portal-bridge.wormhole-testnet.softfork.se/." rel="noopener" target="_blank">Bridge Portal</a>. Track & follow its performance and metrics on this <a href="https://monitoring.wormhole-testnet.softfork.se/d/-GcztLMnz/wormhole-testnet-v2?orgId=1&amp;from=now-5m&amp;to=now" class="markup--anchor markup--p-anchor" data-href="https://monitoring.wormhole-testnet.softfork.se/d/-GcztLMnz/wormhole-testnet-v2?orgId=1&amp;from=now-5m&amp;to=now" rel="noopener" target="_blank">website</a>.
 

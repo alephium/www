@@ -23,11 +23,7 @@ The Hackathon \#1 — Pioneers was a 14-day sprint during which developers g
 
 Here’s the list of all submissions, with links to PoCs, dApps or tools when available. Some hackathon participants presented their projects in our third open-office, right after the hackathon closing, watch them <a href="https://www.youtube.com/watch?v=2J-mwe9TN5s" class="markup--anchor markup--p-anchor" data-href="https://www.youtube.com/watch?v=2J-mwe9TN5s" rel="noopener" target="_blank">here</a>:
 
-<figure id="5b1f" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=2J-mwe9TN5s" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=2J-mwe9TN5s`
 
 #### LinxOTC — Main Track — dApps
 

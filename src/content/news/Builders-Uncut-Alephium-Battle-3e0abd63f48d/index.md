@@ -13,11 +13,7 @@ Here, development team members Lorenzo and Eduardo discuss their backgrounds in 
 
 If you prefer reading, find the full (slightly edited) transcript below.
 
-<figure id="f262" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=ULxQ5oputqs" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=ULxQ5oputqs`
 
 #### Can you introduce yourself?
 

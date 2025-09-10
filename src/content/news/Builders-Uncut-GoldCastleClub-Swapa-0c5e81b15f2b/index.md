@@ -11,11 +11,7 @@ _This interview was conducted around the Athens Builders Meetup, which took plac
 
 Here, Esse shared his crypto journey, his excitement about Swapa, and the next steps for GoldCastleClub. Find the full (slightly edited) transcript below if you prefer reading.
 
-<figure id="732f" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=NLVdO093DiA" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=NLVdO093DiA`
 
 #### Can you tell us how you came to crypto and landed at Alephium?
 

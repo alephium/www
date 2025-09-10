@@ -11,11 +11,7 @@ _This serie of interviews was conducted at the Athens Builders Meetup, which too
 
 Here, Radu, from <a href="https://x.com/linx_labs" class="markup--anchor markup--p-anchor" data-href="https://x.com/linx_labs" rel="noopener" target="_blank">Linx Labs</a> shares the latest developments on <a href="https://linxotc.com/" class="markup--anchor markup--p-anchor" data-href="https://linxotc.com/" rel="noopener" target="_blank">Linx OTC</a>, plans for the upcoming lending platform and his vision for the future of Alephium’s DeFi Ecosystem.Find the full (slightly edited) transcript below if you prefer reading.
 
-<figure id="732f" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=yfgOOLGjp4E" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=yfgOOLGjp4E`
 
 #### Can you present yourself briefly and the project that you are building?
 

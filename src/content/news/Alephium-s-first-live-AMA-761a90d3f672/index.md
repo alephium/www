@@ -9,11 +9,7 @@ title: Alephium’s first live AMA
 
 ### On November 3rd, 2021 the Alephium team answered all the questions sourced from the community. A warm thank you to everyone for asking so many interesting questions! Below you will find the transcript of the AMA. Each question deep links to the corresponding passage in the video.
 
-<figure id="2f10" class="graf graf--figure graf--iframe graf-after--h3">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=yq6A99DI1nk" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=yq6A99DI1nk`
 
 #### **Do you think 10,000 transactions per second is still attractive compared to for example Solana’s 70,000 transactions per second? \[**<a href="https://www.youtube.com/watch?v=yq6A99DI1nk&amp;t=348s" class="markup--anchor markup--h4-anchor" data-href="https://www.youtube.com/watch?v=yq6A99DI1nk&amp;t=348s" rel="noopener" target="_blank"><strong>Video Deep-link</strong></a>**\]**
 

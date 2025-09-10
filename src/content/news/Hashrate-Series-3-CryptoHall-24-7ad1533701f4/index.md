@@ -11,11 +11,7 @@ _The blockchain hashrate is directly correlated with network security. As a Proo
 
 Here, Frederick shares his crypto journey, and how CryptoHall24 came to be. Here’s the full video interview. If you prefer reading, find the full (slightly edited) transcript below.
 
-<figure id="d2f0" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=UvXz443eWng" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=UvXz443eWng`
 
 #### This is the first video interview in our Hashrate series, which is usually in written format. A few months ago, <a href="https://youtu.be/XudpYH4znnQ?feature=shared" class="markup--anchor markup--h4-anchor" data-href="https://youtu.be/XudpYH4znnQ?feature=shared" rel="noopener" target="_blank">you interviewed Maud</a>, and it was an enjoyable experience for everyone. So, welcome again.
 

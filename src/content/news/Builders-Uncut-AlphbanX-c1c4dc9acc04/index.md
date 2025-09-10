@@ -11,11 +11,7 @@ _This interview was conducted around the Athens Builders Meetup, which took plac
 
 Here, Timothy, the founder of <a href="https://www.alphbanx.com/" class="markup--anchor markup--p-anchor" data-href="https://www.alphbanx.com/" rel="noopener" target="_blank">AlphBanx</a>, shares his journey into crypto, his discovery of Alephium, and the innovative approach of AlphBanx in the DeFi space. He discusses the project’s focus on user-friendly design, the importance of community involvement, and plans for integration with the Alephium ecosystem. Find the full (slightly edited) transcript below if you prefer reading.
 
-<figure id="2d12" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=OE3rCD0i12M" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=OE3rCD0i12M`
 
 #### What is your name and what do you do?
 
@@ -75,11 +71,7 @@ Discord: <a href="https://discord.gg/56rgKJ9HGW" class="markup--anchor markup--p
 
 Timothy was a speaker at the Athens Builders Meetup!
 
-<figure id="592a" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=9hAYzsLmIBc" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=9hAYzsLmIBc`
 
 You can also find all the talks of the Athens Builders Meetup <a href="https://medium.com/@alephium/all-the-athens-meetup-presentations-f419195640ce" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/all-the-athens-meetup-presentations-f419195640ce" rel="noopener" target="_blank">here</a>.
 

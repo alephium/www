@@ -11,11 +11,7 @@ _The blockchain hashrate is directly correlated with network security. As a Proo
 
 Here, <a href="https://x.com/LoicRicci" class="markup--anchor markup--p-anchor" data-href="https://x.com/LoicRicci" rel="noopener" target="_blank">Loic</a> shares his crypto journey and how Hearst came to be. The full video interview is available here.
 
-<figure id="5d3d" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=z0FaUrh6iXw" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=z0FaUrh6iXw`
 
 If you prefer reading, the full (slightly edited) transcript is below.
 
@@ -86,11 +82,7 @@ Website:\_ <a href="https://hearstcorporation.io/" class="markup--anchor markup-
 
 Loic was a speaker at the Athens Builders Meetup!
 
-<figure id="11da" class="graf graf--figure graf--iframe graf-after--p graf--trailing">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=8QwhDKPVqhY" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=8QwhDKPVqhY`
 
 ---
 

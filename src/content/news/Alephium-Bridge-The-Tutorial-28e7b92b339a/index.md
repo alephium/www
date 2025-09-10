@@ -22,11 +22,7 @@ Here you will find a detailed step-by-step guide on how to bridge your tokens!
 
 First, if you’re into video tutorials, here you go:
 
-<figure id="dd74" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=xoYVzbwBAjg" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=xoYVzbwBAjg`
 
 #### In writing
 

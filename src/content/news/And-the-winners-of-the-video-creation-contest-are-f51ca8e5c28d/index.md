@@ -30,10 +30,6 @@ Throwing this contest was a great deal of fun for us, and we hope you enjoyed it
 
 Here is the play-list of the all the videos that were submitted
 
-<figure id="02e2" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=vrj3fj4RQMM" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=vrj3fj4RQMM`
 
 **On behalf of the entire Alephium team we’d like to thank everyone for their participation and look forward to future creative ventures with you!**

@@ -31,11 +31,7 @@ I used <a href="https://flutter.dev/" class="markup--anchor markup--p-anchor" da
 
 The multisig wallet! It’s still using the <a href="https://docs.alephium.org/dapps/public-services/#node-and-explorer-apis" class="markup--anchor markup--p-anchor" data-href="https://docs.alephium.org/dapps/public-services/#node-and-explorer-apis" rel="noopener" target="_blank">node API</a> to sign the transaction, but I’ll make the algorithm run locally soon.
 
-<figure id="6f0f" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=uAseUydyddw" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=uAseUydyddw`
 
 #### Could you tell us about some of the challenges you faced while building and how you overcame them?
 

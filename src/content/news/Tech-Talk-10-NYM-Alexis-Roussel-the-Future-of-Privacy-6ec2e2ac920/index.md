@@ -9,11 +9,7 @@ title: 'Tech Talk #10 — NYM, Alexis Roussel &amp; the Future of Privacy'
 
 _This article follows_ <a href="https://www.youtube.com/watch?v=pImANSvO6WQ" class="markup--anchor markup--p-anchor" data-href="https://www.youtube.com/watch?v=pImANSvO6WQ" rel="noopener" target="_blank"><em>Alephium’s Tech Talk #10</em></a>_, where Alexis Roussel from_ <a href="https://nymtech.net/" class="markup--anchor markup--p-anchor" data-href="https://nymtech.net/" rel="noopener" target="_blank"><em>NYM</em></a> _delves into the fascinating realm of_ <a href="https://en.wikipedia.org/wiki/Mix_network" class="markup--anchor markup--p-anchor" data-href="https://en.wikipedia.org/wiki/Mix_network" rel="noopener" target="_blank"><em>mix networks</em></a> _and their crucial role in enhancing privacy, specifically in the context of cryptocurrency transactions. You’ll find first a little recap of what mix networks are, why they are useful and how NYM is bringing privacy to the masses, and then an edited version of the Q&A Alexis Roussel had with the community._
 
-<figure id="efea" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=pImANSvO6WQ" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=pImANSvO6WQ`
 
 <a href="https://twitter.com/alexis_roussel" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alexis_roussel" rel="noopener" target="_blank">Alexis Roussel</a> is an accomplished technology and privacy advocate, currently COO of NYM. With a deep understanding of technology and its impact on society, Alexis has dedicated his career to championing digital integrity and empowering individuals to maintain control over their personal data. He is a former president of the <a href="https://www.partipirate.ch/" class="markup--anchor markup--p-anchor" data-href="https://www.partipirate.ch/" rel="noopener" target="_blank">Pirate Party of Switzerland</a>, and the co-founder of <a href="https://bity.com/" class="markup--anchor markup--p-anchor" data-href="https://bity.com/" rel="noopener" target="_blank">Bity</a>, one of the first crypto brokers in Switzerland.
 

@@ -11,11 +11,7 @@ _This interview was conducted around the Athens Builders Meetup, which took plac
 
 Here, Tobias (a founding member of <a href="https://sezame.app/" class="markup--anchor markup--p-anchor" data-href="https://sezame.app/" rel="noopener" target="_blank">Sezame Wallet</a>) discusses the project’s journey in the Alephium ecosystem. He highlights the creation of a mobile wallet with integrated cloud mining, making Alephium accessible to non-technical users, and shares their plans for the future. Find the full (slightly edited) transcript below if you prefer reading.
 
-<figure id="e49a" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=_tvCwzxQhdM" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=_tvCwzxQhdM`
 
 #### Can you introduce yourself and tell us a bit about Sezame Wallet?
 

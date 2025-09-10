@@ -13,11 +13,7 @@ Mikaël Vaivre is Alephium’s lead front-end developer, and he’s been the gue
 
 You can watch the presentation here:
 
-<figure id="c3d9" class="graf graf--figure graf--iframe graf-after--p">
-
-<h1 id="ein-fehler-ist-aufgetreten." class="message">Ein Fehler ist aufgetreten.</h1>
-<a href="https://www.youtube.com/watch?v=QHmb87sT9nI" target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</figure>
+`video: https://www.youtube.com/watch?v=QHmb87sT9nI`
 
 Now, let’s dive into Mika’s presentation: **How can we onboard the next billion people to crypto?**
 
