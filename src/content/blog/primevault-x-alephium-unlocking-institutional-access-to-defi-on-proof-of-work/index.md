@@ -6,6 +6,8 @@ date: 2025-07-25T12:01:00.000Z
 spotlight: true
 featuredImage: primevault1.webp
 ---
+# PrimeVault x Alephium: Unlocking Institutional Access to DeFi on Proof-of-Work
+
 Alephium was built for real-world finance as a secure, scalable, and powerful infrastructure for the next wave of decentralized applications. But one thing was missing: institutional-grade custody.
 
 That’s why we’re excited to announce our partnership with PrimeVault, a next-gen institutional custody and DeFi platform. Together, we’re bringing secure, compliant access to Alephium’s DeFi ecosystem, backed by powerful automation, custody, and liquidity tools trusted by financial institutions worldwide.
@@ -101,10 +103,10 @@ Join the Alephium ecosystem → [https://alephium.org](https://alephium.org/)
 
 Founded in 2022, PrimeVault delivers crypto custody, token operations, and institutional market connectivity for financial institutions and token foundations. Backed by Y Combinator, HashKey Capital, Arrington Capital, and others, the PrimeVault team has decades of experience in FinTech and cybersecurity. Headquartered in San Francisco, they’re building the infrastructure that powers institutional finance in Web3.
 
-***Learn more at** [primevault.com](http://primevault.com/)*
+**\*Learn more at** [primevault.com](http://primevault.com/)*
 
 ### About Alephium
 
 Alephium is the only scalable Layer 1 blockchain powered by Proof-of-Work and native sharding. Its unique sUTXO model enables secure and expressive smart contracts, while maintaining decentralization and efficiency. With the Danube Upgrade, Alephium delivers the speed of PoS chains without sacrificing trust assumptions. Alephium is building the execution layer for real-world decentralized finance, fast, secure, and ready for what’s next.
 
-***Learn more at** [alephium.org](http://alephium.org/)*
+**\*Learn more at** [alephium.org](http://alephium.org/)*
