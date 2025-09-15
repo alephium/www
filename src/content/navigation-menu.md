@@ -16,8 +16,6 @@ menuItems:
         link: https://discord.gg/XC5JaaDT7z
       - title: Github
         link: https://github.com/alephium
-      # - title: Grants
-      #   link: /grants
   - title: Ecosystem
     items:
       - title: Tools
@@ -46,7 +44,7 @@ menuItems:
       - title: Ambassador Program
         link: /ambassador
       - title: Grants
-        link: https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md
+        link: /grants
       - title: Online communities
         link: /communities
 button:

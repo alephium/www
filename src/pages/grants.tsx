@@ -3,6 +3,8 @@ import styled, { useTheme } from 'styled-components'
 
 import Accordion from '../components/Accordion'
 import Button from '../components/Button'
+import Card from '../components/Card'
+import CardText from '../components/CardText'
 import CardFooterButtonContainer from '../components/common/CardFooterButtonContainer'
 import CardImage from '../components/customPageComponents/CardImage'
 import { CardsRowSegment } from '../components/customPageComponents/CardsRow'
@@ -11,8 +13,6 @@ import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
 import SubheaderContent from '../components/customPageComponents/SubheaderContent'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
-import TextCard from '../components/customPageComponents/TextCard'
-import TextCardContent from '../components/customPageComponents/TextCardContent'
 import TextElement from '../components/customPageComponents/TextElement'
 import SectionDivider from '../components/SectionDivider'
 import SimpleLink from '../components/SimpleLink'
@@ -70,10 +70,7 @@ const CustomPage = (props: PageProps) => {
 
           <SubpageSection id="foundation-grants">
             <TextElement>
-              <h2>
-                Alephium Foundation Grants
-                <hr />
-              </h2>
+              <h2>Alephium Foundation Grants</h2>
               <p>
                 The Alephium Foundation offers grants to support builders growing the ecosystem. If you&apos;re building
                 on Alephium, <strong>apply below to get started.</strong>
@@ -161,9 +158,7 @@ const CustomPage = (props: PageProps) => {
 
           <SubpageSection id="ecosystem-funding" noTopPadding>
             <TextElement>
-              <h2>
-                Ecosystem Funding <hr />
-              </h2>
+              <h2>Ecosystem Grant Programs</h2>
               <p>
                 Beyond the Alephium Foundation, various funding options exist, depending on your project&apos;s stage,
                 location, or focus.
@@ -201,59 +196,43 @@ const CustomPage = (props: PageProps) => {
 
             <SubheaderContent>
               <CardsRowSegment>
-                <TextCard border>
-                  <TextCardContent>
-                    <TextElement>
-                      <CardImageStyled image={blockflowDAOLogo?.childImageSharp?.gatsbyImageData} />
-                      <h4>Blockflow DAO</h4>
-                      <p>
-                        The Alephium DAO offers its own community-driven grants to support ecosystem growth. These
-                        grants are proposed, voted on, and funded directly by the DAO.
-                      </p>
+                <Card border>
+                  <CardImageStyled image={blockflowDAOLogo?.childImageSharp?.gatsbyImageData} />
+                  <CardText>
+                    <h4>Blockflow DAO</h4>
+                    <p>
+                      The Alephium DAO offers its own community-driven grants to support ecosystem growth. These grants
+                      are proposed, voted on, and funded directly by the DAO.
+                    </p>
+                  </CardText>
+                  <CardFooterButtonContainer>
+                    <Button squared url="#">
+                      Apply here
+                    </Button>
+                  </CardFooterButtonContainer>
+                </Card>
+                <Card border>
+                  <CardImageStyled src={primevaultLogo?.publicURL ?? ''} />
+                  <CardText>
+                    <h4>Primevault</h4>
+                    <p>
+                      In partnership with Primevault, projects building on Alephium can access free platform credits and
+                      potential funding to leverage PrimeVault&#39;s institutional-grade custody infrastructure.
+                    </p>
+                  </CardText>
+                  <CardFooterButtonContainer>
+                    <Button squared url="#">
+                      Apply here
+                    </Button>
+                  </CardFooterButtonContainer>
+                </Card>
+                <Card border>
+                  <CenteredTextContainer>
+                    <TextElement isCentered isBodySmall>
+                      <p>More coming soon...</p>
                     </TextElement>
-                    <CardFooterButtonContainer>
-                      <Button squared url="#">
-                        Apply here
-                      </Button>
-                    </CardFooterButtonContainer>
-                  </TextCardContent>
-                </TextCard>
-                <TextCard border>
-                  <TextCardContent>
-                    <TextElement>
-                      <CardImageStyled src={primevaultLogo?.publicURL ?? ''} />
-                      <h4>Primevault</h4>
-                      <p>
-                        In partnership with Primevault, projects building on Alephium can access free platform credits
-                        and potential funding to leverage PrimeVault&#39;s institutional-grade custody infrastructure.
-                      </p>
-                    </TextElement>
-                    <CardFooterButtonContainer>
-                      <Button squared url="#">
-                        Apply here
-                      </Button>
-                    </CardFooterButtonContainer>
-                  </TextCardContent>
-                </TextCard>
-                <TextCard border>
-                  <TextCardContent>
-                    <TextElement>
-                      <CardImageStyled image={contribiumLogo?.childImageSharp?.gatsbyImageData} />
-                      <h4>Contribium</h4>
-                      <p>
-                        The Alephium Foundation also collaborates with Contribium, a platform for bounties and small
-                        grants. It allows anyone to sponsor tasks or initiatives, while enabling developers to earn
-                        rewards for completing ecosystem work, contributing to open-source projects, or launching new
-                        ideas.
-                      </p>
-                    </TextElement>
-                    <CardFooterButtonContainer>
-                      <Button squared url="#">
-                        Apply here
-                      </Button>
-                    </CardFooterButtonContainer>
-                  </TextCardContent>
-                </TextCard>
+                  </CenteredTextContainer>
+                </Card>
               </CardsRowSegment>
             </SubheaderContent>
           </SubpageSection>
@@ -343,26 +322,26 @@ const HowToApply = () => {
       </TextElement>
       <SubheaderContent>
         <CardsRowSegment>
-          <TextCard border url="https://tally.so/r/mZWdzy">
-            <TextCardContent>
+          <Card border url="https://tally.so/r/mZWdzy">
+            <CardText>
               <h4 style={{ color: theme.palette3 }}>Profit-Oriented Applications</h4>
-            </TextCardContent>
-          </TextCard>
-          <TextCard border url="https://tally.so/r/3lg5vV">
-            <TextCardContent>
+            </CardText>
+          </Card>
+          <Card border url="https://tally.so/r/3lg5vV">
+            <CardText>
               <h4 style={{ color: theme.palette4 }}>Infrastructure & Core Tooling</h4>
-            </TextCardContent>
-          </TextCard>
-          <TextCard border url="https://tally.so/r/nP4grx">
-            <TextCardContent>
+            </CardText>
+          </Card>
+          <Card border url="https://tally.so/r/nP4grx">
+            <CardText>
               <h4 style={{ color: theme.palette1 }}>Developer Experience & Education</h4>
-            </TextCardContent>
-          </TextCard>
-          <TextCard border url="https://tally.so/r/mDbYWEy">
-            <TextCardContent>
+            </CardText>
+          </Card>
+          <Card border url="https://tally.so/r/mDbYWEy">
+            <CardText>
               <h4 style={{ color: theme.palette2 }}>Community & Ecosystem Growth</h4>
-            </TextCardContent>
-          </TextCard>
+            </CardText>
+          </Card>
         </CardsRowSegment>
       </SubheaderContent>
     </>
@@ -386,4 +365,13 @@ const ProjectTypesGrid = styled(Grid)`
 `
 const CardImageStyled = styled(CardImage)`
   filter: ${({ theme }) => (theme.name === 'light' ? 'invert(1)' : 'none')};
+  margin: var(--spacing-3);
+  margin-bottom: var(--spacing-2);
+`
+
+const CenteredTextContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 `
