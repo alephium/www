@@ -9,7 +9,7 @@ columns:
       - text: Ecosystem
         url: https://alph.land
       - text: Grants
-        url: https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md
+        url: /grants
   - title: Alephium
     links:
       - text: News
