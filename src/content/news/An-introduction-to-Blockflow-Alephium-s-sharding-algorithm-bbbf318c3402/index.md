@@ -1,15 +1,14 @@
 ---
-date: 2023-07-28T13:05:23.630000Z
-description: This is the fourth of a series of technical innovations brought by Alephium.
-  Find the previous ones here (PolW), here (sUTXO), and here…
+title: "An introduction to Blockflow: Alephium’s sharding algorithm"
+description: This is the fourth of a series of technical innovations brought by
+  Alephium. Find the previous ones here (PolW), here (sUTXO), and here…
+date: 2023-07-28T13:05:23.630Z
 spotlight: false
 featuredImage: image_0006903410.jpg
-title: 'An introduction to Blockflow: Alephium’s sharding algorithm'
 ---
+*This is the fourth of a series of technical innovations brought by Alephium. Find the previous ones* <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" target="_blank"><em>here</em></a> *(PolW),* <a href="https://medium.com/p/8de3b0f76749" class="markup--anchor markup--p-anchor" data-href="https://medium.com/p/8de3b0f76749" target="_blank"><em>here</em></a> *(sUTXO), and* <a href="https://medium.com/@alephium/meet-alphred-a-virtual-machine-like-no-others-85ce86540025" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/meet-alphred-a-virtual-machine-like-no-others-85ce86540025" target="_blank"><em>here</em></a> *(Alphred VM). This article will dive into the concepts of sharding and the inner workings of Blockflow to explain how it enhances the performance of the Alephium blockchain.*
 
-_This is the fourth of a series of technical innovations brought by Alephium. Find the previous ones_ <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" target="_blank"><em>here</em></a> _(PolW),_ <a href="https://medium.com/p/8de3b0f76749" class="markup--anchor markup--p-anchor" data-href="https://medium.com/p/8de3b0f76749" target="_blank"><em>here</em></a> _(sUTXO), and_ <a href="https://medium.com/@alephium/meet-alphred-a-virtual-machine-like-no-others-85ce86540025" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/meet-alphred-a-virtual-machine-like-no-others-85ce86540025" target="_blank"><em>here</em></a> _(Alphred VM). This article will dive into the concepts of sharding and the inner workings of Blockflow to explain how it enhances the performance of the Alephium blockchain._
-
-**_TL;DR — Alephium is a sharded blockchain: its state is divided into groups, and the transactions are processed in parallel by several blockchains to increase throughput. Its sharding algorithm is called_** <a href="https://github.com/alephium/white-paper" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/white-paper" rel="noopener" target="_blank"><strong><em>Blockflow</em></strong></a>**_, and allows for huge UX improvements with single-step cross-group transactions. It also manages the relationship between blocks in all chains, allowing high transactions-per-second numbers while maintaining ledger integrity._**
+***TL;DR — Alephium is a sharded blockchain: its state is divided into groups, and the transactions are processed in parallel by several blockchains to increase throughput. Its sharding algorithm is called*** <a href="https://github.com/alephium/white-paper" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/white-paper" rel="noopener" target="_blank"><strong><em>Blockflow</em></strong></a>***, and allows for huge UX improvements with single-step cross-group transactions. It also manages the relationship between blocks in all chains, allowing high transactions-per-second numbers while maintaining ledger integrity.***
 
 ### **Sharding in a Blockchain Context**
 
@@ -39,13 +38,13 @@ Addresses are organized into distinct groups, with the mainnet currently compris
 
 ### Transaction-Level Sharding:
 
-Transactions are partitioned in specific blockchains, defined by the transaction’s origin and destination group. If there are G groups on the network, there are G\*G chains. As a result, the mainnet currently has 16 chains and can scale to 1024.
+Transactions are partitioned in specific blockchains, defined by the transaction’s origin and destination group. If there are G groups on the network, there are G*G chains. As a result, the mainnet currently has 16 chains and can scale to 1024.
 
 Whether the user transacts between addresses in the same group or across groups, transactions are seamlessly handled in a single step by dedicated blockchains, sharing identical characteristics and secured by Alephium’s innovative Proof of Less Work (PoLW) mechanism.
 
 This approach contrasts with traditional sharding methods in account-based chains, where cross-chain transactions are necessary and result in significant degradation of the user experience and increased complexities and security considerations.
 
-> _A_ <a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph" class="markup--anchor markup--blockquote-anchor" data-href="https://en.wikipedia.org/wiki/Directed_acyclic_graph" rel="noopener" target="_blank"><em>Directed Acyclic Graph</em></a> _is a data structure that can conceptually represent a series of activities and their interrelationships. Comprised of nodes interconnected by directed edges, it ensures the orderly treatment of sequences of transactions, prevents double-spending of coins, and safeguards against network rejections. It’s like a safety check to maintain fair and secure transactions or a transaction family tree._
+> *A* <a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph" class="markup--anchor markup--blockquote-anchor" data-href="https://en.wikipedia.org/wiki/Directed_acyclic_graph" rel="noopener" target="_blank"><em>Directed Acyclic Graph</em></a> *is a data structure that can conceptually represent a series of activities and their interrelationships. Comprised of nodes interconnected by directed edges, it ensures the orderly treatment of sequences of transactions, prevents double-spending of coins, and safeguards against network rejections. It’s like a safety check to maintain fair and secure transactions or a transaction family tree.*
 
 ![](image_d67b115025.jpg)
 
@@ -55,14 +54,14 @@ The complexity here is understanding how these blocks are connected to previous 
 
 > The shards of other sharded blockchains are called groups on Alephium. These groups are a logical division of the blockchain’s state and all the addresses created on it. The groups keep records of the state of all chains connected to them, including assets, contract states and contract logic. This is the first level of sharding.
 
-Each blockchain is responsible for processing transactions from one group to another group. We use the notation (_“from”,”to”_). Although that seems difficult to understand, you need to visualize that every chain originates from a group and that in every group, there’s a chain connecting to the other groups besides the one that is internal to that group. This is the second level of sharding.
+Each blockchain is responsible for processing transactions from one group to another group. We use the notation (*“from”,”to”*). Although that seems difficult to understand, you need to visualize that every chain originates from a group and that in every group, there’s a chain connecting to the other groups besides the one that is internal to that group. This is the second level of sharding.
 
 So as of today, you get (each (x,x) is a chain):
 
-Group 0 is: **(0,0)** — (0,1) — (0,2) — (0,3)  
-Group 1 is: **(1,1)** — (1,0) — (1,2) — (1,3)  
-Group 2 is **(2,2)** — (2,0) — (2,1) — (2,3)  
-Group 3 is **(3,3) **— (3,0) — (3,1) — (3,2)
+Group 0 is: **(0,0)** — (0,1) — (0,2) — (0,3)\
+Group 1 is: **(1,1)** — (1,0) — (1,2) — (1,3)\
+Group 2 is **(2,2)** — (2,0) — (2,1) — (2,3)\
+Group 3 is **(3,3)** — (3,0) — (3,1) — (3,2)
 
 ![](image_d0bdef3914.png)
 
@@ -74,7 +73,7 @@ So every chains either an **inter**group (0,1) or an **intra**group (1,1) chain.
 
 To give you an example for a block mined on chain (1,0), there are 7 dependencies:
 
-Four dependencies from each other chain inside the group, so (1,0) — (1,1) — (1,2) — (1,3).  
+Four dependencies from each other chain inside the group, so (1,0) — (1,1) — (1,2) — (1,3).\
 Three dependencies from each other group (the intragroup chains): (0,0) — (2,2) — (3,3).
 
 ![](image_4465e60953.png)
@@ -87,7 +86,7 @@ This allows something unique: **asset transfers between groups in one step!** No
 
 An illustration:
 
-Bob has an address in group 0. He wants to send \$ALPH to Alice, who has her address in group 3. He creates the transaction on <a href="https://github.com/alephium/desktop-wallet/releases/latest/" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/desktop-wallet/releases/latest/" rel="noopener" target="_blank">the superb desktop wallet</a>, enters Alice’s address, and presses “send”. What happens?
+Bob has an address in group 0. He wants to send $ALPH to Alice, who has her address in group 3. He creates the transaction on <a href="https://github.com/alephium/desktop-wallet/releases/latest/" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/desktop-wallet/releases/latest/" rel="noopener" target="_blank">the superb desktop wallet</a>, enters Alice’s address, and presses “send”. What happens?
 
 ![](image_928f442cdb.png)
 
@@ -101,7 +100,7 @@ This is essentially how the cross-group single-step transaction is done: as a ne
 
 ### In conclusion…
 
-As a sharded blockchain, Alephium can increase its throughput by adding more shards. Currently, it stands on 400 <a href="https://medium.com/@alephium/transactions-per-second-tps-f13217a49e39" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/transactions-per-second-tps-f13217a49e39" target="_blank">transactions per second</a> (and it can reach 10,000 TPS with 1024 chains). And Blockflow is the core Alephium technology enabling such a scalable blockchain. Incidentally, BlockFlow was the first name of Alephium!
+As a sharded blockchain, Alephium can increase its throughput by adding more shards. Currently, it stands on 800 <a href="https://medium.com/@alephium/transactions-per-second-tps-f13217a49e39" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/transactions-per-second-tps-f13217a49e39" target="_blank">transactions per second</a> (and it can reach 20,000 TPS with 1024 chains). And Blockflow is the core Alephium technology enabling such a scalable blockchain. Incidentally, BlockFlow was the first name of Alephium!
 
 By leveraging the consensus rules within the DAG-based structure, BlockFlow ensures the correctness and security of transactions across all groups. This sets it apart from traditional sharding algorithms as it offers a more efficient and a better Developer and User Experience due to single step cross-group transactions.
 
