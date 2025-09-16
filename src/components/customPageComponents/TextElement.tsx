@@ -156,7 +156,7 @@ const TextElement = styled.div<TextElementProps>`
   }
 
   > h4 {
-    font-size: var(--fontSize-28);
+    font-size: var(--fontSize-26);
     line-height: var(--lineHeight-36);
     font-weight: var(--fontWeight-medium);
 

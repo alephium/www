@@ -108,45 +108,48 @@ const CustomPage = (props: PageProps) => {
         description: ''
       }}
       content={
-        <SubpageSectionStyled>
-          <TextElement isCentered>
-            <h1>Alephium News</h1>
-            <p>News, updates, and insights from the Alephium ecosystem.</p>
-          </TextElement>
+        <>
+          <SubpageSectionStyled edgeGradient gradientPosition="bottom">
+            <TextElement isCentered>
+              <h1>Alephium News</h1>
+              <p>News, updates, and insights from the Alephium ecosystem.</p>
+            </TextElement>
+            <SearchContainer>
+              <Search value={searchQuery} onChange={setSearchQuery} placeholder="Search articles..." />
+            </SearchContainer>
+          </SubpageSectionStyled>
 
-          <SearchContainer>
-            <Search value={searchQuery} onChange={setSearchQuery} placeholder="Search articles..." />
-          </SearchContainer>
+          <SubpageSection>
+            {filteredPosts.length === 0 ? (
+              <NoResults>
+                <h3>No articles found</h3>
+                <p>Try adjusting your search query</p>
+              </NoResults>
+            ) : (
+              <>
+                <Grid columns={3} gap="large">
+                  {visiblePosts.map((post) => (
+                    <NewsCard key={post.fields?.slug} post={post} />
+                  ))}
+                </Grid>
 
-          {filteredPosts.length === 0 ? (
-            <NoResults>
-              <h3>No articles found</h3>
-              <p>Try adjusting your search query</p>
-            </NoResults>
-          ) : (
-            <>
-              <Grid columns={3} gap="large">
-                {visiblePosts.map((post) => (
-                  <NewsCard key={post.fields?.slug} post={post} />
-                ))}
-              </Grid>
-
-              {hasMorePosts && (
-                <LoadMoreContainer>
-                  <Button onClick={loadMorePosts} disabled={isLoading} squared secondary>
-                    {isLoading ? (
-                      <>
-                        <SimpleLoader />
-                      </>
-                    ) : (
-                      'See more posts'
-                    )}
-                  </Button>
-                </LoadMoreContainer>
-              )}
-            </>
-          )}
-        </SubpageSectionStyled>
+                {hasMorePosts && (
+                  <LoadMoreContainer>
+                    <Button onClick={loadMorePosts} disabled={isLoading} squared secondary>
+                      {isLoading ? (
+                        <>
+                          <SimpleLoader />
+                        </>
+                      ) : (
+                        'See more posts'
+                      )}
+                    </Button>
+                  </LoadMoreContainer>
+                )}
+              </>
+            )}
+          </SubpageSection>
+        </>
       }
     />
   )
@@ -174,8 +177,8 @@ const NewsCard = ({ post }: NewsCardProps) => {
         </ImageContainer>
         <TextElement isBodySmall>
           <h4 style={{ marginBottom: '10px' }}>{post.frontmatter.title}</h4>
-          <label>{post.frontmatter.date}</label>
-          <p>{post.frontmatter.description}</p>
+          <ArticleDate>{post.frontmatter.date}</ArticleDate>
+          <p style={{ opacity: 0.6 }}>{post.frontmatter.description}</p>
         </TextElement>
       </NewsCardContainer>
     </SimpleLink>
@@ -222,12 +225,13 @@ const NewsCardContainer = styled.div`
       position: absolute;
       content: '';
       inset: 0;
+      border: 1px solid ${({ theme }) => theme.borderSecondary};
       border-radius: var(--radius-big);
       background-color: ${({ theme }) => theme.background2};
     }
 
-    h4 {
-      color: ${({ theme }) => theme.palette5};
+    p {
+      opacity: 1 !important;
     }
   }
 `
@@ -237,4 +241,11 @@ const LoadMoreContainer = styled.div`
   justify-content: center;
   margin-top: var(--spacing-8);
   padding: var(--spacing-4);
+`
+
+const ArticleDate = styled.p`
+  color: ${({ theme }) => theme.textSecondary};
+  padding-bottom: var(--spacing-2);
+  text-transform: uppercase;
+  font-size: var(--fontSize-14) !important;
 `

@@ -19,6 +19,7 @@ declare module 'styled-components' {
     backgroundContrast: string
 
     borderPrimary: string
+    borderSecondary: string
 
     link: string
     linkAlt: string

@@ -19,6 +19,7 @@ export const darkTheme: DefaultTheme = {
   backgroundContrast: 'var(--color-grey-800)',
 
   borderPrimary: 'rgba(255, 255, 255, 0.12)',
+  borderSecondary: 'rgba(255, 255, 255, 0.08)',
 
   link: '#66a4fa',
   linkAlt: 'var(--color-grey-700)',
@@ -49,6 +50,7 @@ export const lightTheme: DefaultTheme = {
   backgroundContrast: '#000000',
 
   borderPrimary: 'rgba(0, 0, 0, 0.08)',
+  borderSecondary: 'rgba(0, 0, 0, 0.04)',
 
   link: '#1485ea',
   linkAlt: 'var(--color-black)',
@@ -79,6 +81,7 @@ export const hackathonTheme: DefaultTheme = {
   backgroundContrast: 'var(--color-grey-800)',
 
   borderPrimary: 'var(--color-grey-700)',
+  borderSecondary: 'var(--color-grey-600)',
 
   link: 'var(--color-grey-100)',
   linkAlt: 'var(--color-white)',

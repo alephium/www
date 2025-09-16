@@ -75,7 +75,7 @@ const Glow = styled.div<GlowProps>`
       opacity: ${opacity};
       filter: blur(${radius}px) brightness(${theme.name === 'dark' ? 1.4 : 1});
     }
-  `}
+  `};
 `
 
 export default Glow
