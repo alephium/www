@@ -53,38 +53,30 @@ const NewsPostTemplate = (props: PageProps<Queries.NewsPostBySlugQuery>) => {
 
             <SectionDivider />
 
-            <nav className="news-post-nav">
-              <ul
-                style={{
-                  display: `flex`,
-                  flexWrap: `wrap`,
-                  justifyContent: `space-between`,
-                  listStyle: `none`,
-                  padding: 0
-                }}
-              >
-                <li>
+            <NewsPostNav>
+              <NavigationList>
+                <NavigationItem>
                   {previous && (
                     <>
-                      <span>← </span>
+                      <div>←</div>
                       <StyledGatsbyLink to={previous.fields?.slug ?? ''} rel="prev">
                         {previous.frontmatter?.title}
                       </StyledGatsbyLink>
                     </>
                   )}
-                </li>
-                <li>
+                </NavigationItem>
+                <NavigationItem>
                   {next && (
                     <>
+                      <div>→</div>
                       <StyledGatsbyLink to={next.fields?.slug ?? ''} rel="next">
                         {next.frontmatter?.title}
                       </StyledGatsbyLink>
-                      <span> →</span>
                     </>
                   )}
-                </li>
-              </ul>
-            </nav>
+                </NavigationItem>
+              </NavigationList>
+            </NewsPostNav>
           </SubpageSection>
           <TableOfContents htmlContent={post?.html || ''} />
         </>
@@ -158,13 +150,12 @@ const ArticleStyled = styled.article`
   h2 {
     font-size: var(--fontSize-28);
     margin-top: var(--spacing-8);
-    margin-bottom: var(--spacing-4);
+    margin-bottom: var(--spacing-3);
   }
 
   h3 {
     font-size: var(--fontSize-24);
     margin-top: var(--spacing-6);
-    margin-bottom: var(--spacing-4);
     line-height: 1.2;
   }
 
@@ -173,11 +164,14 @@ const ArticleStyled = styled.article`
     transition: color 0.3s ease;
   }
 
-  p {
-    margin: var(--spacing-4) auto;
+  p,
+  ul,
+  ol {
+    margin-top: var(--spacing-3);
     line-height: 1.7;
     font-family: 'Source Serif';
     font-weight: 350;
+    font-size: 1.2rem;
 
     &:first-child {
       margin-top: 0;
@@ -189,6 +183,12 @@ const ArticleStyled = styled.article`
     font-weight: 350;
   }
 
+  ol {
+    li + li {
+      margin-top: var(--spacing-2);
+    }
+  }
+
   figcaption {
     color: ${({ theme }) => theme.textTertiary};
     margin-top: var(--spacing-2);
@@ -196,5 +196,43 @@ const ArticleStyled = styled.article`
 
   .gatsby-resp-image-wrapper {
     max-width: 700px !important;
+  }
+
+  blockquote {
+    border-left: 4px solid ${({ theme }) => theme.borderPrimary};
+    margin: var(--spacing-6) auto;
+    line-height: 1.6;
+    font-family: 'Source Serif';
+    font-weight: 350;
+    background-color: ${({ theme }) => theme.surface2};
+    padding: var(--spacing-1);
+    padding-left: var(--spacing-2);
+
+    p {
+      margin: 0;
+      color: ${({ theme }) => theme.textPrimary};
+    }
+
+    em {
+      opacity: 0.8;
+    }
+  }
+`
+
+const NewsPostNav = styled.nav``
+
+const NavigationList = styled.ul`
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing-4);
+  list-style: none;
+  padding: 0;
+`
+
+const NavigationItem = styled.li`
+  line-height: 1.5;
+
+  &:last-child {
+    text-align: right;
   }
 `

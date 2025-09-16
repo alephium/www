@@ -11,6 +11,7 @@ const TableOfContents = ({ htmlContent }: TableOfContentsProps) => {
   const tocItems = useTableOfContents(htmlContent)
   const [activeId, setActiveId] = useState<string>('')
   const [highlightedId, setHighlightedId] = useState<string>('')
+  const [isScrolledDown, setIsScrolledDown] = useState<boolean>(false)
 
   // Update the HTML content with IDs when tocItems change
   useEffect(() => {
@@ -104,6 +105,24 @@ const TableOfContents = ({ htmlContent }: TableOfContentsProps) => {
     }
   }, [tocItems, activeId])
 
+  // Handle TOC scroll detection for top mask
+  useEffect(() => {
+    const tocContainer = document.querySelector('[data-toc-container]') as HTMLElement
+    if (!tocContainer) return
+
+    const handleTocScroll = () => {
+      const scrollTop = tocContainer.scrollTop
+      setIsScrolledDown(scrollTop > 10) // Show top mask when scrolled more than 10px
+    }
+
+    tocContainer.addEventListener('scroll', handleTocScroll, { passive: true })
+    handleTocScroll() // Check initial state
+
+    return () => {
+      tocContainer.removeEventListener('scroll', handleTocScroll)
+    }
+  }, [tocItems])
+
   const handleClick = (id: string) => {
     const element = document.getElementById(id)
     if (element) {
@@ -145,7 +164,7 @@ const TableOfContents = ({ htmlContent }: TableOfContentsProps) => {
   if (tocItems.length === 0) return null
 
   return (
-    <TocContainer>
+    <TocContainer data-toc-container isScrolledDown={isScrolledDown}>
       <TocTitle>Table of Contents</TocTitle>
       <TocList>
         {tocItems.map((item) => (
@@ -167,7 +186,7 @@ const TableOfContents = ({ htmlContent }: TableOfContentsProps) => {
   )
 }
 
-const TocContainer = styled.div`
+const TocContainer = styled.div<{ isScrolledDown: boolean }>`
   position: fixed;
   top: var(--spacing-20);
   left: 32px;
@@ -176,6 +195,16 @@ const TocContainer = styled.div`
   overflow-y: auto;
   padding: 24px;
   z-index: 100;
+
+  /* Dynamic mask based on scroll position */
+  mask-image: ${({ isScrolledDown }) =>
+    isScrolledDown
+      ? `linear-gradient(to bottom, transparent 0%, black 20px, black calc(100% - 20px), transparent 100%)`
+      : `linear-gradient(to bottom, black 0%, black calc(100% - 20px), transparent 100%)`};
+  -webkit-mask-image: ${({ isScrolledDown }) =>
+    isScrolledDown
+      ? `linear-gradient(to bottom, transparent 0%, black 20px, black calc(100% - 20px), transparent 100%)`
+      : `linear-gradient(to bottom, black 0%, black calc(100% - 20px), transparent 100%)`};
 
   @media (max-width: 1200px) {
     display: none; // Hide on smaller screens to avoid clutter
@@ -213,7 +242,7 @@ const TocLink = styled.a<{ isActive: boolean }>`
   text-decoration: none;
   font-size: 14px;
   line-height: 1.4;
-  padding: 2px 0;
+  padding: var(--spacing-1) 0;
   transition: color 0.2s ease;
   border-left: 1px solid ${({ theme, isActive }) => (isActive ? theme.textPrimary : 'transparent')};
   padding-left: ${({ isActive }) => (isActive ? '12px' : '0')};

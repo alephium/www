@@ -168,6 +168,7 @@ const NewsCard = ({ post }: NewsCardProps) => {
   return (
     <SimpleLink url={post.fields?.slug}>
       <NewsCardContainer>
+        <ArticleDate>{post.frontmatter.date}</ArticleDate>
         <ImageContainer>
           <GatsbyImageWrapper
             image={post.frontmatter.featuredImage.childImageSharp?.gatsbyImageData}
@@ -177,7 +178,6 @@ const NewsCard = ({ post }: NewsCardProps) => {
         </ImageContainer>
         <TextElement isBodySmall>
           <h4 style={{ marginBottom: '10px' }}>{post.frontmatter.title}</h4>
-          <ArticleDate>{post.frontmatter.date}</ArticleDate>
           <ArticleDescription style={{ opacity: 0.6 }}>{post.frontmatter.description}</ArticleDescription>
         </TextElement>
       </NewsCardContainer>
@@ -217,20 +217,16 @@ const NewsCardContainer = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-4);
+  gap: var(--spacing-2);
   padding: 10px;
 
   &:hover {
-    ::before {
-      position: absolute;
-      content: '';
-      inset: 0;
-      border: 1px solid ${({ theme }) => theme.borderSecondary};
-      border-radius: var(--radius-big);
-    }
-
     p {
       opacity: 0.9 !important;
+    }
+
+    img {
+      filter: brightness(1.1);
     }
   }
 `
@@ -243,9 +239,10 @@ const LoadMoreContainer = styled.div`
 `
 
 const ArticleDate = styled.p`
-  color: ${({ theme }) => theme.textSecondary};
+  color: ${({ theme }) => theme.textTertiary};
   text-transform: uppercase;
   font-size: var(--fontSize-14) !important;
+  margin: 0;
 `
 
 const ArticleDescription = styled.p``

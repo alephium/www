@@ -7,12 +7,12 @@ export const darkTheme: DefaultTheme = {
   name: 'dark',
 
   textPrimary: '#f5f5f7',
-  textPrimaryVariation: 'rgba(255, 255, 255, 0.8)',
-  textSecondary: 'rgba(255, 255, 255, 0.7)',
+  textPrimaryVariation: 'rgba(255, 255, 255, 0.7)',
+  textSecondary: 'rgba(255, 255, 255, 0.65)',
   textTertiary: 'rgba(255, 255, 255,  0.4)',
 
   surface1: 'var(--color-grey-750)',
-  surface2: 'var(--color-grey-900)',
+  surface2: 'var(--color-grey-850)',
   background1: 'var(--color-grey-900)',
   background2: 'var(--color-grey-950)',
   background3: '#0d0d0d',

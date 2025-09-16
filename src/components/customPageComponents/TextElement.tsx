@@ -261,7 +261,7 @@ const TextElement = styled.div<TextElementProps>`
         position: absolute;
         left: 0;
         top: 0;
-        line-height: 1.3; /* Align the dash with text */
+        line-height: 150%; /* Align the dash with text */
       }
 
       > span {

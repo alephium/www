@@ -49,7 +49,7 @@ So far, the upgrade has been met with excitement from developers and users alike
 
 Here’s what Danube brings to Alephium:
 
-## 1. One Address for Everything — Groupless Addresses
+### 1. One Address for Everything — Groupless Addresses
 
 Before Danube, every Alephium wallet had multiple addresses associated with specific network shard groups. For example, if you wanted to use a dApp that existed on group 2 but your wallet defaulted to group 0, the interaction would fail unless you switched manually. Confusing, right?
 
@@ -64,7 +64,7 @@ New users can jump in without needing to understand technical details like shard
 
 More info: <https://x.com/wachmc/status/1864319275630260539>
 
-## 2. Faster Confirmations — 8-Second Block Time
+### 2. Faster Confirmations — 8-Second Block Time
 
 Alephium used to produce a new block every 16 seconds per chain. That was already a pretty advanced step for a PoW blockchain, but now, with faster apps and real-time dApps becoming the norm, Alephium is moving even quicker.
 
@@ -87,7 +87,7 @@ Alephium used to produce a new block every 16 seconds per chain. That was alread
 **Why this matters:**
 Whether you’re sending ALPH, trading tokens, or playing a blockchain game, everything happens faster. It makes dApps feel more responsive, which is essential for a good user experience.
 
-## 3. Do More in One Step — Chained Transactions
+### 3. Do More in One Step — Chained Transactions
 
 Alephium’s UTXO-based model was designed for security and determinism, but until now, that came with trade-offs. While you could call multiple smart contracts in a single transaction, you couldn’t use the assets or outputs created by one call as inputs for another within the same transaction.
 
@@ -103,7 +103,7 @@ This meant developers had to split multi-step flows (like token swaps or contrac
 **Why this matters:**
 This unlocks more advanced and efficient dApps, especially in DeFi. It saves users time, lowers fees, and simplifies the entire flow. Developers can build powerful, Ethereum-style flows on a UTXO model, without sacrificing security.
 
-## 4. Quick Sync for Nodes — Sync Protocol v2
+### 4. Quick Sync for Nodes — Sync Protocol v2
 
 Syncing a new node used to be a slow process, sometimes taking more than a day, especially if one peer on the network lagged behind. That made it harder for newcomers to participate and slowed down the growth of decentralization.
 
@@ -116,7 +116,7 @@ Syncing a new node used to be a slow process, sometimes taking more than a day, 
 **Why this matters:**
 If you’ve ever tried to run a full node, you know that setup time matters. Now, more people can run nodes with less effort, making Alephium more decentralized and resilient.
 
-## 5. No Passwords Needed — Passkeys Support
+### 5. No Passwords Needed — Passkeys Support
 
 Seed phrases are powerful but risky. If you lose them, you lose access. If someone else steals them, they can drain your wallet. That’s a huge barrier for everyday users.
 
@@ -129,7 +129,7 @@ Seed phrases are powerful but risky. If you lose them, you lose access. If someo
 **Why this matters:**
 This is the easiest and safest way to onboard new users. No more fear of forgetting your seed phrase. No more typing 24 random words. Just tap and go.
 
-## 6. Sustainable Tokenomics — Tail Emissions
+### 6. Sustainable Tokenomics — Tail Emissions
 
 One of Alephium’s goals with the Danube upgrade wasn’t just technical, it was educational. Tokenomics should be easy to understand, especially for newcomers. Before Danube, Alephium followed a capped emission model with an 81-year horizon. While technically sound, it led to a lot of confusion.
 
@@ -138,18 +138,10 @@ The issue wasn’t the cap itself, it was the perception created by it. Newcomer
 **Danube introduces a more sustainable and intuitive approach:**
 
 - The hard cap has been removed and replaced with a tail emission model.
-- After the initial 81 years, ALPH continues to be mined at a
-
-  _slow, steady pace_
-
-  .
+- After the initial 81 years, ALPH continues to be mined at a _slow, steady pace_.
 
 - This ensures miners remain incentivized long-term.
-- This aligns Alephium with battle-tested models like Monero’s, where the supply is infinite but
-
-  _inflation trends to zero_
-
-  .
+- This aligns Alephium with battle-tested models like Monero’s, where the supply is infinite but _inflation trends to zero_.
 
 - The mechanisms of the
 
@@ -157,32 +149,19 @@ The issue wasn’t the cap itself, it was the perception created by it. Newcomer
 
   also remain in place.
 
-- Crucially, the original
-
-  **emission curve**
-
-  for the first 81 years
-
-  **remains unchanged**
-
-  , it’s just extended for the long term.
+- Crucially, the original **emission curve** for the first 81 years **remains unchanged**, it’s just extended for the long term.
 
 **Why this matters:**
 
 For new users, it eliminates a non-issue that often caused unnecessary doubt. There’s no “cliff” to explain, no awkward edge case — just a sustainable, ongoing model that ensures miners are always incentivized and the network remains secure. It’s simpler, clearer, and more aligned with Alephium’s long-term vision.
 
-## 7. Smarter Developer Tools — Simplified Contracts
+### 7. Smarter Developer Tools — Simplified Contracts
 
 Danube is a huge leap for Alephium’s developer experience too. Several improvements were introduced to reduce complexity and unlock new contract capabilities.
 
 **Now with Danube:**
 
-- A new VM instruction allows contracts to access the
-
-  _external_
-
-  user who triggered a transaction (not just the last internal call).
-
+- A new VM instruction allows contracts to access the _external_ user who triggered a transaction (not just the last internal call).
 - Bitwise operations are now available for 256-bit integers (I256) allowing more efficient logic.
 - Dust amounts, contract deposits, and map deposits are handled automatically by the VM, developers no longer need to specify them manually.
 - Assets and contract states created during a transaction can be accessed immediately by other contract calls, enabling new patterns.
@@ -190,16 +169,14 @@ Danube is a huge leap for Alephium’s developer experience too. Several improve
 **Why this matters:**
 These are quiet changes with big effects. They reduce errors, simplify code, and unlock powerful patterns for DeFi, identity, and beyond.
 
-## 8. Optimized BlockFlow Execution — Faster, Smarter Consensus
+### 8. Optimized BlockFlow Execution — Faster, Smarter Consensus
 
 Danube optimizes Alephium’s BlockFlow consensus algorithm with an “optimistic” execution path.
 
 **Now with Danube:**
 
 - Blocks can be executed more quickly under common conditions.
-- [Messages move more efficiently](https://x.com/hongchao/status/1878740787988512885)
-
-  .
+- [Messages move more efficiently](https://x.com/hongchao/status/1878740787988512885).
 
 - Transaction processing happens in parallel with fewer delays.
 - Network throughput and responsiveness are doubled (up to 20k transactions per second) without compromising consensus integrity.
