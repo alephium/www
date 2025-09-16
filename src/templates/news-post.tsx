@@ -5,6 +5,7 @@ import Page from '../components/customPageComponents/Page'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
+import TableOfContents from '../components/pages/news/TableOfContents'
 import SectionDivider from '../components/SectionDivider'
 
 const NewsPostTemplate = (props: PageProps<Queries.NewsPostBySlugQuery>) => {
@@ -19,71 +20,74 @@ const NewsPostTemplate = (props: PageProps<Queries.NewsPostBySlugQuery>) => {
         description: post?.frontmatter?.description || post?.excerpt || ''
       }}
       content={
-        <SubpageSection narrow>
-          <BackToHome>
-            <span>← </span>
-            <StyledGatsbyLink to="/news">Back to homepage</StyledGatsbyLink>
-          </BackToHome>
-          <DateAndTimeToRead>
-            {post?.frontmatter?.date && (
-              <>
-                <time dateTime={post.frontmatter.date}>{post.frontmatter.date}</time>
-                <span> · </span>
-              </>
-            )}
-            {post?.timeToRead && `${post.timeToRead} min read`}
-          </DateAndTimeToRead>
+        <>
+          <SubpageSection narrow>
+            <BackToHome>
+              <span>← </span>
+              <StyledGatsbyLink to="/news">Back to homepage</StyledGatsbyLink>
+            </BackToHome>
+            <DateAndTimeToRead>
+              {post?.frontmatter?.date && (
+                <>
+                  <time dateTime={post.frontmatter.date}>{post.frontmatter.date}</time>
+                  <span> · </span>
+                </>
+              )}
+              {post?.timeToRead && `${post.timeToRead} min read`}
+            </DateAndTimeToRead>
 
-          <SectionDivider />
+            <SectionDivider />
 
-          <ArticleStyled itemScope itemType="http://schema.org/Article">
-            <TextElement isSmall>
-              <h1>{post?.frontmatter?.title}</h1>
-            </TextElement>
+            <ArticleStyled itemScope itemType="http://schema.org/Article">
+              <TextElement isSmall>
+                <h1>{post?.frontmatter?.title}</h1>
+              </TextElement>
 
-            <GatsbyImageWrapper
-              image={post?.frontmatter?.featuredImage?.childImageSharp?.gatsbyImageData}
-              alt={post?.frontmatter?.title ?? ''}
-              style={{ width: '100%', height: 'auto', marginBottom: 'var(--spacing-6)' }}
-            />
-            <TextElement isSmall dangerouslySetInnerHTML={{ __html: post?.html || '' }} itemProp="articleBody" />
-          </ArticleStyled>
+              <GatsbyImageWrapper
+                image={post?.frontmatter?.featuredImage?.childImageSharp?.gatsbyImageData}
+                alt={post?.frontmatter?.title ?? ''}
+                style={{ width: '100%', height: 'auto', marginBottom: 'var(--spacing-6)' }}
+              />
+              <TextElement isSmall dangerouslySetInnerHTML={{ __html: post?.html || '' }} itemProp="articleBody" />
+            </ArticleStyled>
 
-          <SectionDivider />
+            <SectionDivider />
 
-          <nav className="news-post-nav">
-            <ul
-              style={{
-                display: `flex`,
-                flexWrap: `wrap`,
-                justifyContent: `space-between`,
-                listStyle: `none`,
-                padding: 0
-              }}
-            >
-              <li>
-                {previous && (
-                  <>
-                    <span>← </span>
-                    <StyledGatsbyLink to={previous.fields?.slug ?? ''} rel="prev">
-                      {previous.frontmatter?.title}
-                    </StyledGatsbyLink>
-                  </>
-                )}
-              </li>
-              <li>
-                {next && (
-                  <>
-                    <StyledGatsbyLink to={next.fields?.slug ?? ''} rel="next">
-                      {next.frontmatter?.title}
-                    </StyledGatsbyLink>
-                    <span> →</span>
-                  </>
-                )}
-              </li>
-            </ul>
-          </nav>
-        </SubpageSection>
+            <nav className="news-post-nav">
+              <ul
+                style={{
+                  display: `flex`,
+                  flexWrap: `wrap`,
+                  justifyContent: `space-between`,
+                  listStyle: `none`,
+                  padding: 0
+                }}
+              >
+                <li>
+                  {previous && (
+                    <>
+                      <span>← </span>
+                      <StyledGatsbyLink to={previous.fields?.slug ?? ''} rel="prev">
+                        {previous.frontmatter?.title}
+                      </StyledGatsbyLink>
+                    </>
+                  )}
+                </li>
+                <li>
+                  {next && (
+                    <>
+                      <StyledGatsbyLink to={next.fields?.slug ?? ''} rel="next">
+                        {next.frontmatter?.title}
+                      </StyledGatsbyLink>
+                      <span> →</span>
+                    </>
+                  )}
+                </li>
+              </ul>
+            </nav>
+          </SubpageSection>
+          <TableOfContents htmlContent={post?.html || ''} />
+        </>
       }
     />
   )
@@ -143,6 +147,23 @@ const ArticleStyled = styled.article`
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  h1 {
+    font-size: var(--fontSize-36);
+  }
+
+  h2 {
+    font-size: var(--fontSize-28);
+  }
+
+  h3 {
+    font-size: var(--fontSize-24);
+  }
+
+  h2,
+  h3 {
+    transition: color 0.3s ease;
   }
 
   h3:first-child {

@@ -11,7 +11,7 @@ Alephium was built for real-world finance as a secure, scalable, and powerful in
 
 That’s why we’re excited to announce our partnership with PrimeVault, a next-gen institutional custody and DeFi platform. Together, we’re bringing secure, compliant access to Alephium’s DeFi ecosystem, backed by powerful automation, custody, and liquidity tools trusted by financial institutions worldwide.
 
-## **Why This Partnership Matters**
+## Why This Partnership Matters
 
 For institutional players, security, compliance, and seamless infrastructure are non-negotiable. PrimeVault delivers exactly that through MPC custody, programmable vaults, and automated workflows.
 
