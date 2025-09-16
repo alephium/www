@@ -269,6 +269,10 @@ const TextElement = styled.div<TextElementProps>`
       > span {
         display: block;
       }
+
+      > p {
+        margin-bottom: 0;
+      }
     }
   }
 

@@ -17,21 +17,13 @@ For institutional players, security, compliance, and seamless infrastructure are
 
 With PrimeVault integrated into Alephium, institutions can now access:
 
-- **On-chain custody and compliance frameworks**
+- **On-chain custody and compliance frameworks**, supporting programmable settlement, KYC layers, and institutional access controls.
 
-  , supporting programmable settlement, KYC layers, and institutional access controls.
+- **Structured DeFi strategies**, including automated yield products, lending markets, and risk-managed vaults.
 
-- **Structured DeFi strategies**
+- **Decentralized trading and liquidity provision**, with high-throughput performance and finality guarantees.
 
-  , including automated yield products, lending markets, and risk-managed vaults.
-
-- **Decentralized trading and liquidity provision**
-
-  , with high-throughput performance and finality guarantees.
-
-- **Tokenized real-world assets (RWAs)**
-
-  , enabling exposure to off-chain financial products within programmable, permissionless environments.
+- **Tokenized real-world assets (RWAs)**, enabling exposure to off-chain financial products within programmable, permissionless environments.
 
 - And more.
 

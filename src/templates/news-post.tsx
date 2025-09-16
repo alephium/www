@@ -151,14 +151,21 @@ const ArticleStyled = styled.article`
 
   h1 {
     font-size: var(--fontSize-36);
+    margin-bottom: var(--spacing-6);
+    line-height: 1.2;
   }
 
   h2 {
     font-size: var(--fontSize-28);
+    margin-top: var(--spacing-8);
+    margin-bottom: var(--spacing-4);
   }
 
   h3 {
     font-size: var(--fontSize-24);
+    margin-top: var(--spacing-6);
+    margin-bottom: var(--spacing-4);
+    line-height: 1.2;
   }
 
   h2,
@@ -166,14 +173,9 @@ const ArticleStyled = styled.article`
     transition: color 0.3s ease;
   }
 
-  h3:first-child {
-    font-size: var(--fontSize-36);
-    margin-bottom: var(--spacing-4);
-    line-height: 1.2;
-  }
-
   p {
-    margin: var(--spacing-6) auto;
+    margin: var(--spacing-4) auto;
+    line-height: 1.7;
 
     &:first-child {
       margin-top: 0;
