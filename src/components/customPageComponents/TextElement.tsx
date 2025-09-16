@@ -183,13 +183,11 @@ const TextElement = styled.div<TextElementProps>`
 
   p,
   ul {
-    color: ${({ theme }) => theme.textSecondary};
-
+    color: ${({ theme }) => theme.textPrimaryVariation};
     font-size: var(--fontSize-22);
     font-weight: var(--fontWeight-medium);
     line-height: 1.3;
     max-width: 700px;
-    margin: 0;
 
     ${({ isCentered }) =>
       isCentered &&

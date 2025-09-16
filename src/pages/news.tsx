@@ -178,7 +178,7 @@ const NewsCard = ({ post }: NewsCardProps) => {
         <TextElement isBodySmall>
           <h4 style={{ marginBottom: '10px' }}>{post.frontmatter.title}</h4>
           <ArticleDate>{post.frontmatter.date}</ArticleDate>
-          <p style={{ opacity: 0.6 }}>{post.frontmatter.description}</p>
+          <ArticleDescription style={{ opacity: 0.6 }}>{post.frontmatter.description}</ArticleDescription>
         </TextElement>
       </NewsCardContainer>
     </SimpleLink>
@@ -227,11 +227,10 @@ const NewsCardContainer = styled.div`
       inset: 0;
       border: 1px solid ${({ theme }) => theme.borderSecondary};
       border-radius: var(--radius-big);
-      background-color: ${({ theme }) => theme.background2};
     }
 
     p {
-      opacity: 1 !important;
+      opacity: 0.9 !important;
     }
   }
 `
@@ -245,7 +244,8 @@ const LoadMoreContainer = styled.div`
 
 const ArticleDate = styled.p`
   color: ${({ theme }) => theme.textSecondary};
-  padding-bottom: var(--spacing-2);
   text-transform: uppercase;
   font-size: var(--fontSize-14) !important;
 `
+
+const ArticleDescription = styled.p``

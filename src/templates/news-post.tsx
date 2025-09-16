@@ -176,10 +176,17 @@ const ArticleStyled = styled.article`
   p {
     margin: var(--spacing-4) auto;
     line-height: 1.7;
+    font-family: 'Source Serif';
+    font-weight: 350;
 
     &:first-child {
       margin-top: 0;
     }
+  }
+
+  ul {
+    font-family: 'Source Serif';
+    font-weight: 350;
   }
 
   figcaption {
