@@ -24,7 +24,7 @@ const NewsPostTemplate = (props: PageProps<Queries.NewsPostBySlugQuery>) => {
           <SubpageSection narrow noTopPadding>
             <BackToHome>
               <span>← </span>
-              <StyledGatsbyLink to="/news">Back to homepage</StyledGatsbyLink>
+              <BackButton onClick={() => window.history.back()}>Back to all news</BackButton>
             </BackToHome>
             <DateAndTimeToRead>
               {post?.frontmatter?.date && (
@@ -130,6 +130,21 @@ const ArticleWrapper = styled.div`
 
 const StyledGatsbyLink = styled(Link)`
   color: ${({ theme }) => theme.textPrimary};
+`
+
+const BackButton = styled.button`
+  background: none;
+  border: none;
+  color: ${({ theme }) => theme.textPrimary};
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0;
+  text-decoration: underline;
+
+  &:hover {
+    opacity: 0.8;
+  }
 `
 
 const BackToHome = styled.div``

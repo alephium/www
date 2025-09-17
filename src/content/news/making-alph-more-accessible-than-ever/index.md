@@ -84,9 +84,9 @@ _\*Please note that geographical restrictions and supported services may vary de
 
 _\*\* Integration expected to be live by the end of March 2025._
 
-## — — — — — — — — — — — — — — — — — — — — — — —
+— — — — — — — — — — — — — — — — — — — — — — —
 
-### About Alephium
+## About Alephium
 
 Alephium is a next-generation Proof-of-Work blockchain combining scalability, energy efficiency, and smart contract capabilities to enable decentralized solutions for a better future.
 

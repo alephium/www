@@ -62,11 +62,12 @@ export const query = graphql`
   }
 `
 
+let visibleCount = 9
+
 const CustomPage = (props: PageProps) => {
   const data = useStaticQuery<Queries.NewsPostsQuery>(query)
 
   const [searchQuery, setSearchQuery] = useState('')
-  const [visibleCount, setVisibleCount] = useState(9)
   const [isLoading, setIsLoading] = useState(false)
 
   const spotlightPosts = data.spotlightPosts.nodes
@@ -95,7 +96,7 @@ const CustomPage = (props: PageProps) => {
     setIsLoading(true)
     // Simulate loading delay for better UX
     setTimeout(() => {
-      setVisibleCount((prev) => Math.min(prev + 6, filteredPosts.length))
+      visibleCount = Math.min(visibleCount + 6, filteredPosts.length)
       setIsLoading(false)
     }, 800)
   }, [isLoading, hasMorePosts, filteredPosts.length])
