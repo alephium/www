@@ -129,10 +129,10 @@ const CustomPage = (props: PageProps) => {
             <SideBySide reverseOnMobile>
               <TextElement isBodySmall>
                 <h3>Mobile Wallet</h3>
-                <div>
+                <BadgeList>
                   <Badge color="palette3">iOS</Badge>
                   <Badge color="palette1">Android</Badge>
-                </div>
+                </BadgeList>
                 <p>
                   Manage your ALPH tokens on the go with Alephium&apos;s mobile wallet, offering a balance between
                   security and convenience.
@@ -155,11 +155,11 @@ const CustomPage = (props: PageProps) => {
             <SideBySide reverseOnMobile>
               <TextElement isBodySmall>
                 <h3>Desktop Wallet</h3>
-                <div>
+                <BadgeList>
                   <Badge color="palette3">Windows</Badge>
                   <Badge color="palette4">MacOS</Badge>
                   <Badge color="palette6">Linux</Badge>
-                </div>
+                </BadgeList>
                 <p>
                   Alephium&apos;s flagship desktop wallet is designed for both everyday transactions and advanced
                   functionalities like smart contract deployment. It offers a comprehensive interface for managing your
@@ -181,10 +181,10 @@ const CustomPage = (props: PageProps) => {
             <SideBySide reverseOnMobile>
               <TextElement isBodySmall>
                 <h3>Browser Extension Wallet</h3>
-                <div>
+                <BadgeList>
                   <Badge color="palette3">Chrome</Badge>
                   <Badge color="palette6">Firefox</Badge>
-                </div>
+                </BadgeList>
                 <p>
                   For seamless interaction with web-based dApps, the Alephium Extension Wallet integrates directly into
                   your browser, providing quick and secure access to your assets.
@@ -378,4 +378,9 @@ const CarouselContainer = styled.div`
 
 const ImageIconStyled = styled(ImageIcon)`
   filter: ${({ theme }) => (theme.name === 'light' ? 'invert(1)' : 'none')};
+`
+
+const BadgeList = styled.div`
+  display: flex;
+  gap: var(--spacing-1);
 `

@@ -1,13 +1,17 @@
 import { colord } from 'colord'
 import styled from 'styled-components'
 
-const Badge = styled.span<{ color: string }>`
+interface BadgeProps {
+  color: string
+  compact?: boolean
+}
+
+const Badge = styled.span<BadgeProps>`
   display: inline-block;
-  padding: 6px 8px;
-  border-radius: 6px;
-  font-size: var(--fontSize-16);
+  padding: ${({ compact }) => (compact ? '4px 6px' : '6px 8px')};
+  border-radius: ${({ compact }) => (compact ? '4px' : '6px')};
+  font-size: ${({ compact }) => (compact ? 'var(--fontSize-12)' : 'var(--fontSize-16)')};
   font-weight: var(--fontWeight-normal);
-  margin-right: 8px;
   line-height: 1;
   background-color: ${({ theme, color }) =>
     colord(theme[color as keyof typeof theme])

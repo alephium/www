@@ -1,6 +1,7 @@
 import { graphql, Link, PageProps } from 'gatsby'
 import styled from 'styled-components'
 
+import Badge from '../components/Badge'
 import Page from '../components/customPageComponents/Page'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
@@ -26,6 +27,9 @@ const NewsPostTemplate = (props: PageProps<Queries.NewsPostBySlugQuery>) => {
               <span>← </span>
               <BackButton onClick={() => window.history.back()}>Back to all news</BackButton>
             </BackToHome>
+
+            <SectionDivider />
+
             <DateAndTimeToRead>
               {post?.frontmatter?.date && (
                 <>
@@ -34,10 +38,15 @@ const NewsPostTemplate = (props: PageProps<Queries.NewsPostBySlugQuery>) => {
                 </>
               )}
               {post?.timeToRead && `${post.timeToRead} min read`}
+              {post?.frontmatter?.spotlight && (
+                <>
+                  <span> · </span>
+                  <Badge color="palette2" compact>
+                    Spotlight
+                  </Badge>
+                </>
+              )}
             </DateAndTimeToRead>
-
-            <SectionDivider />
-
             <ArticleStyled itemScope itemType="http://schema.org/Article">
               <TextElement isSmall>
                 <h1>{post?.frontmatter?.title}</h1>
@@ -98,6 +107,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        spotlight
         featuredImage {
           childImageSharp {
             gatsbyImageData(quality: 100, width: 700)
@@ -150,6 +160,9 @@ const BackButton = styled.button`
 const BackToHome = styled.div``
 
 const DateAndTimeToRead = styled.p`
+  display: flex;
+  gap: var(--spacing-1);
+  align-items: center;
   color: ${({ theme }) => theme.textSecondary};
 `
 

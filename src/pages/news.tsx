@@ -2,6 +2,7 @@ import { graphql, PageProps, useStaticQuery } from 'gatsby'
 import { useCallback, useMemo, useState } from 'react'
 import styled from 'styled-components'
 
+import Badge from '../components/Badge'
 import Button from '../components/Button'
 import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
@@ -30,6 +31,7 @@ export const query = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          spotlight
           featuredImage {
             childImageSharp {
               gatsbyImageData(width: 800)
@@ -51,6 +53,7 @@ export const query = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          spotlight
           featuredImage {
             childImageSharp {
               gatsbyImageData(width: 800)
@@ -169,7 +172,14 @@ const NewsCard = ({ post }: NewsCardProps) => {
   return (
     <SimpleLink url={post.fields?.slug}>
       <NewsCardContainer>
-        <ArticleDate>{post.frontmatter.date}</ArticleDate>
+        <ArticleMeta>
+          <ArticleDate>{post.frontmatter.date}</ArticleDate>
+          {post.frontmatter.spotlight && (
+            <Badge color="palette2" compact>
+              Spotlight
+            </Badge>
+          )}
+        </ArticleMeta>
         <ImageContainer>
           <GatsbyImageWrapper
             image={post.frontmatter.featuredImage.childImageSharp?.gatsbyImageData}
@@ -237,6 +247,12 @@ const LoadMoreContainer = styled.div`
   justify-content: center;
   margin-top: var(--spacing-8);
   padding: var(--spacing-4);
+`
+
+const ArticleMeta = styled.div`
+  display: flex;
+  gap: var(--spacing-1);
+  align-items: center;
 `
 
 const ArticleDate = styled.p`
