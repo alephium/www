@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import styled from 'styled-components'
 
 import { useTableOfContents } from '../../../hooks/useTableOfContents'
+import { useTocIntersection } from '../../../hooks/useTocIntersection'
 
 interface TableOfContentsProps {
   htmlContent: string
@@ -9,15 +10,12 @@ interface TableOfContentsProps {
 
 const TableOfContents = ({ htmlContent }: TableOfContentsProps) => {
   const tocItems = useTableOfContents(htmlContent)
-  const [activeId, setActiveId] = useState<string>('')
-  const [highlightedId, setHighlightedId] = useState<string>('')
+  const { activeId, highlightedId, handleClick } = useTocIntersection(tocItems)
   const [isScrolledDown, setIsScrolledDown] = useState<boolean>(false)
 
-  // Update the HTML content with IDs when tocItems change
   useEffect(() => {
     if (tocItems.length === 0) return
 
-    // Find the article content and add IDs to headers
     const articleElement = document.querySelector('article')
     if (!articleElement) return
 
@@ -30,7 +28,6 @@ const TableOfContents = ({ htmlContent }: TableOfContentsProps) => {
       const tocItem = tocItems[index]
       if (tocItem && !header.id) {
         header.id = tocItem.id
-        // Add a data attribute to identify which headers we can highlight
         header.setAttribute('data-toc-header', 'true')
       }
     })
@@ -45,104 +42,25 @@ const TableOfContents = ({ htmlContent }: TableOfContentsProps) => {
   }, [tocItems])
 
   useEffect(() => {
-    if (tocItems.length === 0) return
-
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY
-      let closestSectionId = ''
-      let closestDistance = Infinity
-
-      // Find the header closest to the top of the screen
-      for (let i = 0; i < tocItems.length; i++) {
-        const element = document.getElementById(tocItems[i].id)
-        if (element) {
-          const elementTop = element.offsetTop
-          const distance = Math.abs(elementTop - scrollPosition)
-
-          // Prefer headers that are at or above the scroll position
-          if (elementTop <= scrollPosition && distance < closestDistance) {
-            closestDistance = distance
-            closestSectionId = tocItems[i].id
-          }
-        }
-      }
-
-      // If no header is above the scroll position, find the closest one overall
-      if (!closestSectionId) {
-        for (let i = 0; i < tocItems.length; i++) {
-          const element = document.getElementById(tocItems[i].id)
-          if (element) {
-            const distance = Math.abs(element.offsetTop - scrollPosition)
-            if (distance < closestDistance) {
-              closestDistance = distance
-              closestSectionId = tocItems[i].id
-            }
-          }
-        }
-      }
-
-      if (closestSectionId && closestSectionId !== activeId) {
-        setActiveId(closestSectionId)
-      }
-    }
-
-    let scrollTimeout: NodeJS.Timeout | null = null
-    const debouncedScroll = () => {
-      if (scrollTimeout) {
-        clearTimeout(scrollTimeout)
-      }
-      scrollTimeout = setTimeout(handleScroll, 50)
-    }
-
-    window.addEventListener('scroll', debouncedScroll, { passive: true })
-    handleScroll()
-
-    return () => {
-      window.removeEventListener('scroll', debouncedScroll)
-      if (scrollTimeout) {
-        clearTimeout(scrollTimeout)
-      }
-    }
-  }, [tocItems, activeId])
-
-  // Handle TOC scroll detection for top mask
-  useEffect(() => {
     const tocContainer = document.querySelector('[data-toc-container]') as HTMLElement
     if (!tocContainer) return
 
     const handleTocScroll = () => {
       const scrollTop = tocContainer.scrollTop
-      setIsScrolledDown(scrollTop > 10) // Show top mask when scrolled more than 10px
+      setIsScrolledDown(scrollTop > 10)
     }
 
     tocContainer.addEventListener('scroll', handleTocScroll, { passive: true })
-    handleTocScroll() // Check initial state
+    handleTocScroll()
 
     return () => {
       tocContainer.removeEventListener('scroll', handleTocScroll)
     }
   }, [tocItems])
 
-  const handleClick = (id: string) => {
-    const element = document.getElementById(id)
-    if (element) {
-      setTimeout(() => {
-        setHighlightedId(id)
-
-        setTimeout(() => {
-          setHighlightedId('')
-        }, 1000)
-      }, 800)
-
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    }
-  }
-
-  // Apply highlight styling directly to DOM elements
   useEffect(() => {
     if (!highlightedId) return
 
-    // Find the specific header by ID instead of using data attribute
     const targetHeader = document.getElementById(highlightedId)
     if (targetHeader) {
       targetHeader.style.color = '#fbbf24'
@@ -196,7 +114,6 @@ const TocContainer = styled.div<{ isScrolledDown: boolean }>`
   padding: 24px;
   z-index: 100;
 
-  /* Dynamic mask based on scroll position */
   mask-image: ${({ isScrolledDown }) =>
     isScrolledDown
       ? `linear-gradient(to bottom, transparent 0%, black 20px, black calc(100% - 20px), transparent 100%)`
@@ -207,7 +124,7 @@ const TocContainer = styled.div<{ isScrolledDown: boolean }>`
       : `linear-gradient(to bottom, black 0%, black calc(100% - 20px), transparent 100%)`};
 
   @media (max-width: 1200px) {
-    display: none; // Hide on smaller screens to avoid clutter
+    display: none;
   }
 `
 
@@ -242,14 +159,16 @@ const TocLink = styled.a<{ isActive: boolean }>`
   text-decoration: none;
   font-size: 14px;
   line-height: 1.4;
-  padding: var(--spacing-1) 0;
-  transition: color 0.2s ease;
+  margin-top: var(--spacing-2);
+  transition: transform 0.3s ease;
   border-left: 1px solid ${({ theme, isActive }) => (isActive ? theme.textPrimary : 'transparent')};
   padding-left: ${({ isActive }) => (isActive ? '12px' : '0')};
   margin-left: ${({ isActive }) => (isActive ? '-12px' : '0')};
+  transform: ${({ isActive }) => (isActive ? 'translateX(2px)' : 'translateX(0)')};
 
   &:hover {
-    color: ${({ theme }) => theme.textPrimaryVariation};
+    color: ${({ theme }) => theme.textPrimary};
+    transform: translateX(2px);
   }
 `
 
