@@ -39,14 +39,11 @@ export const useTocIntersection = (tocItems: TocItem[]) => {
   useEffect(() => {
     if (tocItems.length === 0) return
 
-    const setInitialState = () => {
-      if (tocItems.length > 0) {
-        activeIdRef.current = tocItems[0].id
-        setActiveId(tocItems[0].id)
-      }
+    if (tocItems.length > 0) {
+      activeIdRef.current = tocItems[0].id
+      setActiveId(tocItems[0].id)
     }
 
-    setInitialState()
     window.addEventListener('scroll', handleScroll, { passive: true })
 
     return () => {

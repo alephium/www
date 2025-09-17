@@ -161,7 +161,7 @@ const ArticleStyled = styled.article`
 
   h2,
   h3 {
-    transition: color 0.3s ease;
+    transition: color 1s ease;
   }
 
   p,
