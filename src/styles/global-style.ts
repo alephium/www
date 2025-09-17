@@ -177,6 +177,15 @@ const GlobalStyle = createGlobalStyle`
   b {
     font-weight: 600;
   }
+
+  // Blog post styles overrides
+  .medium-zoom-overlay {
+    background: ${({ theme }) => theme.background3} !important;
+  }
+
+  .medium-zoom-image {
+    box-shadow: none !important;
+  }
 `
 
 export default GlobalStyle
