@@ -106,6 +106,7 @@ const GlobalStyle = createGlobalStyle`
 
     /* TODO: Maybe check https://www.designsystems.com/typography-guides/ for
     inspiration in defining a typography system */
+    --fontSize-12: 0.75rem;
     --fontSize-14: 0.875rem;
     --fontSize-16: 1rem;
     --fontSize-18: 1.125rem;
