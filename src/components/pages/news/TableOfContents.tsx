@@ -82,30 +82,42 @@ const TableOfContents = ({ htmlContent }: TableOfContentsProps) => {
   if (tocItems.length === 0) return null
 
   return (
-    <TocContainer data-toc-container isScrolledDown={isScrolledDown}>
-      <TocTitle>Table of Contents</TocTitle>
-      <TocList>
-        {tocItems.map((item) => (
-          <TocListItem key={item.id} level={item.level}>
-            <TocLink
-              href={`#${item.id}`}
-              onClick={(e) => {
-                e.preventDefault()
-                handleClick(item.id)
-              }}
-              isActive={activeId === item.id}
-            >
-              {item.title}
-            </TocLink>
-          </TocListItem>
-        ))}
-      </TocList>
-    </TocContainer>
+    <TocWrapper>
+      <TocContainer data-toc-container isScrolledDown={isScrolledDown}>
+        <TocTitle>Table of Contents</TocTitle>
+        <TocList>
+          {tocItems.map((item) => (
+            <TocListItem key={item.id} level={item.level}>
+              <TocLink
+                href={`#${item.id}`}
+                onClick={(e) => {
+                  e.preventDefault()
+                  handleClick(item.id)
+                }}
+                isActive={activeId === item.id}
+              >
+                {item.title}
+              </TocLink>
+            </TocListItem>
+          ))}
+        </TocList>
+      </TocContainer>
+    </TocWrapper>
   )
 }
 
+const TocWrapper = styled.div`
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: calc((100% - 700px) / 2);
+  top: 0;
+  bottom: 0;
+  height: 100%;
+`
+
 const TocContainer = styled.div<{ isScrolledDown: boolean }>`
-  position: fixed;
+  position: sticky;
   top: var(--spacing-20);
   left: 32px;
   max-width: 280px;

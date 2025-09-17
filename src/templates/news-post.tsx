@@ -20,8 +20,8 @@ const NewsPostTemplate = (props: PageProps<Queries.NewsPostBySlugQuery>) => {
         description: post?.frontmatter?.description || post?.excerpt || ''
       }}
       content={
-        <>
-          <SubpageSection narrow>
+        <ArticleWrapper>
+          <SubpageSection narrow noTopPadding>
             <BackToHome>
               <span>← </span>
               <StyledGatsbyLink to="/news">Back to homepage</StyledGatsbyLink>
@@ -79,7 +79,7 @@ const NewsPostTemplate = (props: PageProps<Queries.NewsPostBySlugQuery>) => {
             </NewsPostNav>
           </SubpageSection>
           <TableOfContents htmlContent={post?.html || ''} />
-        </>
+        </ArticleWrapper>
       }
     />
   )
@@ -122,6 +122,10 @@ export const pageQuery = graphql`
       }
     }
   }
+`
+
+const ArticleWrapper = styled.div`
+  position: relative;
 `
 
 const StyledGatsbyLink = styled(Link)`
