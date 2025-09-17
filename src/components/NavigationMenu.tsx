@@ -32,6 +32,11 @@ const NavigationMenu = ({ className, floating = true }: NavigationMenuProps) => 
   const isMobile = useIsMobile()
 
   useEffect(() => {
+    const currentScrollY = window.scrollY
+    setScrolled(currentScrollY > 50)
+  }, [])
+
+  useEffect(() => {
     const handleScroll = throttle(() => {
       const currentScrollY = window.scrollY
       setScrolled(currentScrollY > 50)

@@ -62,11 +62,12 @@ export const query = graphql`
   }
 `
 
+let visibleCount = 9
+
 const CustomPage = (props: PageProps) => {
   const data = useStaticQuery<Queries.NewsPostsQuery>(query)
 
   const [searchQuery, setSearchQuery] = useState('')
-  const [visibleCount, setVisibleCount] = useState(9)
   const [isLoading, setIsLoading] = useState(false)
 
   const spotlightPosts = data.spotlightPosts.nodes
@@ -95,7 +96,7 @@ const CustomPage = (props: PageProps) => {
     setIsLoading(true)
     // Simulate loading delay for better UX
     setTimeout(() => {
-      setVisibleCount((prev) => Math.min(prev + 6, filteredPosts.length))
+      visibleCount = Math.min(visibleCount + 6, filteredPosts.length)
       setIsLoading(false)
     }, 800)
   }, [isLoading, hasMorePosts, filteredPosts.length])
@@ -108,45 +109,48 @@ const CustomPage = (props: PageProps) => {
         description: ''
       }}
       content={
-        <SubpageSectionStyled>
-          <TextElement isCentered>
-            <h1>Alephium News</h1>
-            <p>News, updates, and insights from the Alephium ecosystem.</p>
-          </TextElement>
+        <>
+          <SubpageSectionStyled edgeGradient gradientPosition="bottom">
+            <TextElement isCentered>
+              <h1>Alephium News</h1>
+              <p>News, updates, and insights from the Alephium ecosystem.</p>
+            </TextElement>
+            <SearchContainer>
+              <Search value={searchQuery} onChange={setSearchQuery} placeholder="Search articles..." />
+            </SearchContainer>
+          </SubpageSectionStyled>
 
-          <SearchContainer>
-            <Search value={searchQuery} onChange={setSearchQuery} placeholder="Search articles..." />
-          </SearchContainer>
+          <SubpageSection>
+            {filteredPosts.length === 0 ? (
+              <NoResults>
+                <h3>No articles found</h3>
+                <p>Try adjusting your search query</p>
+              </NoResults>
+            ) : (
+              <>
+                <Grid columns={3} gap="large">
+                  {visiblePosts.map((post) => (
+                    <NewsCard key={post.fields?.slug} post={post} />
+                  ))}
+                </Grid>
 
-          {filteredPosts.length === 0 ? (
-            <NoResults>
-              <h3>No articles found</h3>
-              <p>Try adjusting your search query</p>
-            </NoResults>
-          ) : (
-            <>
-              <Grid columns={3} gap="large">
-                {visiblePosts.map((post) => (
-                  <NewsCard key={post.fields?.slug} post={post} />
-                ))}
-              </Grid>
-
-              {hasMorePosts && (
-                <LoadMoreContainer>
-                  <Button onClick={loadMorePosts} disabled={isLoading} squared secondary>
-                    {isLoading ? (
-                      <>
-                        <SimpleLoader />
-                      </>
-                    ) : (
-                      'See more posts'
-                    )}
-                  </Button>
-                </LoadMoreContainer>
-              )}
-            </>
-          )}
-        </SubpageSectionStyled>
+                {hasMorePosts && (
+                  <LoadMoreContainer>
+                    <Button onClick={loadMorePosts} disabled={isLoading} squared secondary>
+                      {isLoading ? (
+                        <>
+                          <SimpleLoader />
+                        </>
+                      ) : (
+                        'See more posts'
+                      )}
+                    </Button>
+                  </LoadMoreContainer>
+                )}
+              </>
+            )}
+          </SubpageSection>
+        </>
       }
     />
   )
@@ -165,6 +169,7 @@ const NewsCard = ({ post }: NewsCardProps) => {
   return (
     <SimpleLink url={post.fields?.slug}>
       <NewsCardContainer>
+        <ArticleDate>{post.frontmatter.date}</ArticleDate>
         <ImageContainer>
           <GatsbyImageWrapper
             image={post.frontmatter.featuredImage.childImageSharp?.gatsbyImageData}
@@ -174,8 +179,7 @@ const NewsCard = ({ post }: NewsCardProps) => {
         </ImageContainer>
         <TextElement isBodySmall>
           <h4 style={{ marginBottom: '10px' }}>{post.frontmatter.title}</h4>
-          <label>{post.frontmatter.date}</label>
-          <p>{post.frontmatter.description}</p>
+          <ArticleDescription style={{ opacity: 0.6 }}>{post.frontmatter.description}</ArticleDescription>
         </TextElement>
       </NewsCardContainer>
     </SimpleLink>
@@ -214,20 +218,16 @@ const NewsCardContainer = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-4);
+  gap: var(--spacing-2);
   padding: 10px;
 
   &:hover {
-    ::before {
-      position: absolute;
-      content: '';
-      inset: 0;
-      border-radius: var(--radius-big);
-      background-color: ${({ theme }) => theme.background2};
+    p {
+      opacity: 0.9 !important;
     }
 
-    h4 {
-      color: ${({ theme }) => theme.palette5};
+    img {
+      filter: brightness(1.1);
     }
   }
 `
@@ -238,3 +238,12 @@ const LoadMoreContainer = styled.div`
   margin-top: var(--spacing-8);
   padding: var(--spacing-4);
 `
+
+const ArticleDate = styled.p`
+  color: ${({ theme }) => theme.textTertiary};
+  text-transform: uppercase;
+  font-size: var(--fontSize-14) !important;
+  margin: 0;
+`
+
+const ArticleDescription = styled.p``

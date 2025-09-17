@@ -55,6 +55,12 @@
   src: url('../fonts/Geist-Variable.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Source Serif';
+  font-weight: 100 1000;
+  src: url('../fonts/SourceSerif-Variable.ttf') format('truetype');
+}
+
 h2,
 h3 {
   font-weight: 600;

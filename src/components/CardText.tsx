@@ -20,14 +20,16 @@ const CardTextStyled = styled(TextElement)`
 
   p {
     flex: 1;
-    font-weight: var(--fontWeight-normal);
+    font-weight: var(--fontWeight-medium);
     font-size: var(--fontSize-18);
     line-height: 1.5;
     margin-bottom: 0;
+    margin-top: 0;
   }
 
   h3 {
     margin: 0;
+    margin-bottom: var(--spacing-1);
     position: relative;
     padding-right: var(--spacing-6);
 

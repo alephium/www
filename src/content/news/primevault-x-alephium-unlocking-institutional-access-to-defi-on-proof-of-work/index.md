@@ -11,27 +11,19 @@ Alephium was built for real-world finance as a secure, scalable, and powerful in
 
 That’s why we’re excited to announce our partnership with PrimeVault, a next-gen institutional custody and DeFi platform. Together, we’re bringing secure, compliant access to Alephium’s DeFi ecosystem, backed by powerful automation, custody, and liquidity tools trusted by financial institutions worldwide.
 
-## **Why This Partnership Matters**
+## Why This Partnership Matters
 
 For institutional players, security, compliance, and seamless infrastructure are non-negotiable. PrimeVault delivers exactly that through MPC custody, programmable vaults, and automated workflows.
 
 With PrimeVault integrated into Alephium, institutions can now access:
 
-- **On-chain custody and compliance frameworks**
+- **On-chain custody and compliance frameworks**, supporting programmable settlement, KYC layers, and institutional access controls.
 
-  , supporting programmable settlement, KYC layers, and institutional access controls.
+- **Structured DeFi strategies**, including automated yield products, lending markets, and risk-managed vaults.
 
-- **Structured DeFi strategies**
+- **Decentralized trading and liquidity provision**, with high-throughput performance and finality guarantees.
 
-  , including automated yield products, lending markets, and risk-managed vaults.
-
-- **Decentralized trading and liquidity provision**
-
-  , with high-throughput performance and finality guarantees.
-
-- **Tokenized real-world assets (RWAs)**
-
-  , enabling exposure to off-chain financial products within programmable, permissionless environments.
+- **Tokenized real-world assets (RWAs)**, enabling exposure to off-chain financial products within programmable, permissionless environments.
 
 - And more.
 
@@ -43,13 +35,9 @@ This unlocks a whole new segment of capital and users for the Alephium ecosystem
 
 This isn’t just theoretical. We’re already seeing institutional teams use this infrastructure:
 
-- **WeMine**
+- **WeMine**, a new mining dApp built on Alephium, is working with PrimeVault to custody mined ALPH and access both CeFi and DeFi rails.
 
-  , a new mining dApp built on Alephium, is working with PrimeVault to custody mined ALPH and access both CeFi and DeFi rails.
-
-- **Market makers**
-
-  in our ecosystem are using PrimeVault’s MPC stack to securely provision liquidity across CEXs and DEXs, boosting capital efficiency while maintaining top-tier security.
+- **Market makers** in our ecosystem are using PrimeVault’s MPC stack to securely provision liquidity across CEXs and DEXs, boosting capital efficiency while maintaining top-tier security.
 
 *“For WeMine, PrimeVault’s integration into Alephium has been a game-changer. It gives us a secure and compliant framework to store mined ALPH while tapping into on-chain DeFi rails with confidence. We see this as a foundational layer for scaling decentralized mining investments to institutional standards”,* **said Maxime Slemett, CPO of WeMine**
 
@@ -107,10 +95,10 @@ Join the Alephium ecosystem → [https://alephium.org](https://alephium.org/)
 
 Founded in 2022, PrimeVault delivers crypto custody, token operations, and institutional market connectivity for financial institutions and token foundations. Backed by Y Combinator, HashKey Capital, Arrington Capital, and others, the PrimeVault team has decades of experience in FinTech and cybersecurity. Headquartered in San Francisco, they’re building the infrastructure that powers institutional finance in Web3.
 
-**\*Learn more at** [primevault.com](http://primevault.com/)\*
+**Learn more at** [primevault.com](http://primevault.com/)
 
 ### About Alephium
 
 Alephium is the only scalable Layer 1 blockchain powered by Proof-of-Work and native sharding. Its unique sUTXO model enables secure and expressive smart contracts, while maintaining decentralization and efficiency. With the Danube Upgrade, Alephium delivers the speed of PoS chains without sacrificing trust assumptions. Alephium is building the execution layer for real-world decentralized finance, fast, secure, and ready for what’s next.
 
-**\*Learn more at** [alephium.org](http://alephium.org/)\*
+**Learn more at** [alephium.org](http://alephium.org/)

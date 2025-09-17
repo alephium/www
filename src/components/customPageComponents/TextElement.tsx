@@ -156,7 +156,7 @@ const TextElement = styled.div<TextElementProps>`
   }
 
   > h4 {
-    font-size: var(--fontSize-28);
+    font-size: var(--fontSize-26);
     line-height: var(--lineHeight-36);
     font-weight: var(--fontWeight-medium);
 
@@ -183,13 +183,11 @@ const TextElement = styled.div<TextElementProps>`
 
   p,
   ul {
-    color: ${({ theme }) => theme.textSecondary};
-
+    color: ${({ theme }) => theme.textPrimaryVariation};
     font-size: var(--fontSize-22);
     font-weight: var(--fontWeight-medium);
     line-height: 1.3;
     max-width: 700px;
-    margin: 0;
 
     ${({ isCentered }) =>
       isCentered &&
@@ -263,11 +261,15 @@ const TextElement = styled.div<TextElementProps>`
         position: absolute;
         left: 0;
         top: 0;
-        line-height: 1.3; /* Align the dash with text */
+        line-height: 150%; /* Align the dash with text */
       }
 
       > span {
         display: block;
+      }
+
+      > p {
+        margin-bottom: 0;
       }
     }
   }

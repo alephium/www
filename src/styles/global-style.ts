@@ -68,7 +68,7 @@ const GlobalStyle = createGlobalStyle`
     --spacing-14: 7rem;      // 112pt
     --spacing-15: 7.5rem;    // 120pt
     --spacing-16: 8rem;      // 128pt
- /* --spacing-17: 8.5rem;    // 136pt
+    /* --spacing-17: 8.5rem;    // 136pt
     --spacing-18: 9rem;      // 144pt
     --spacing-19: 9.5rem;    // 152pt */
     --spacing-20: 10rem;     // 160pt
@@ -176,6 +176,15 @@ const GlobalStyle = createGlobalStyle`
 
   b {
     font-weight: 600;
+  }
+
+  // Blog post styles overrides
+  .medium-zoom-overlay {
+    background: ${({ theme }) => theme.background3} !important;
+  }
+
+  .medium-zoom-image {
+    box-shadow: none !important;
   }
 `
 
