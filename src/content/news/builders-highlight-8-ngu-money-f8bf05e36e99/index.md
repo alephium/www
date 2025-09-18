@@ -19,7 +19,7 @@ NGU Money is an innovative cryptocurrency platform, defined by its deflationary 
 
 NGU Money encompasses several key components:
 
-**1. NGU Signals:** A powerhouse in crypto trading with an 80%+ win rate on 200 coins, offering alerts for making informed decisions: [https://app.ngu.money/subscribe](https://app.ngu.money/subscribe)
+**1. NGU Signals:** A powerhouse in crypto trading with an 80%+ win rate on 200 coins, offering alerts for making informed decisions.
 
 **2. Utility:** Beyond its origin as a meme coin, NGU is introducing Trade Battle Utility, adding a competitive dimension to the trading experience.
 
@@ -53,7 +53,7 @@ The growth and evolution of the Alephium ecosystem have been remarkable, with si
 
 ## **Where can we stay in touch with your project & with you?**
 
-Interested parties are encouraged to follow our [official website](https://ngu.money/), [Twitter](https://twitter.com/numbergoup_ngu), [Telegram](https://t.me/numbergoup_ngu), and [Discord](https://discord.gg/ngu) channels to stay updated on NGU Money and engage with the project. These platforms are regularly updated with the latest news, developments, and opportunities for community interaction.
+Interested parties are encouraged to follow our official website (ngu.money), [Twitter](https://twitter.com/numbergoup_ngu), [Telegram](https://t.me/numbergoup_ngu), and [Discord](https://discord.gg/ngu) channels to stay updated on NGU Money and engage with the project. These platforms are regularly updated with the latest news, developments, and opportunities for community interaction.
 
 Thank you, NGU.money team, for your answers! Alephium is thrilled to have such ambitious builders in the community! You can find the ngu.money official site here, and we wish ngu.money fruitful ventures ahead!
 

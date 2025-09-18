@@ -55,7 +55,7 @@ Here’s the list of all submissions, with links to PoCs, dApps or tools when av
 
 **Donera** is a crowdfunding app like GoFundMe. The MVP includes creating a fund, donating ALPH to it, finalising and browsing active funds, and viewing and donating to an individual fund. The first funds exist already!
 
-**Links:** [Website](https://hackathon.donera.app/) [Twitter](https://twitter.com/Ross_Weir) [Github](https://github.com/ross-weir/Donera)
+**Links:** [Twitter](https://twitter.com/Ross_Weir) [Github](https://github.com/ross-weir/Donera)
 
 #### Alph.pro DeFi Dashboard — Main Track — dApps
 
@@ -89,7 +89,7 @@ A “proof file” has to be generated for each file in the Merkle tree to assoc
 
 **ChronoSwap** is implementing a decentralized exchange (DEX) that enables seamless token trading and later cross-chain bridging. It allows users to participate in their protocol’s growth through staking actively.
 
-Links: [Website](https://chronoswap.app/) [Github](https://github.com/ChronoSwap-DEX/Hackaton-ChronoSwap) [Video Presentation](https://www.youtube.com/watch?v=2J-mwe9TN5s&amp;t=765s)
+Links: [Github](https://github.com/ChronoSwap-DEX/Hackaton-ChronoSwap) [Video Presentation](https://www.youtube.com/watch?v=2J-mwe9TN5s&amp;t=765s)
 
 #### Alph Dabbler — Main Track — dApps
 
@@ -105,7 +105,7 @@ Links: [Docs](https://docs.google.com/spreadsheets/d/1xC4cUNHIoYC6XPAUy10tURnotd
 
 **Squirrel** is a faucet contract/website for the SQRL token.
 
-**Links:** [Github](https://github.com/AdamCooke00/squirrelalph) [Website](https://squirrelalph.vercel.app/)
+**Links:** [Github](https://github.com/AdamCooke00/squirrelalph)
 
 #### Alph.pro Indexer — Main Track — Tooling
 
@@ -113,7 +113,7 @@ Links: [Docs](https://docs.google.com/spreadsheets/d/1xC4cUNHIoYC6XPAUy10tURnotd
 
 **Alph.pro Indexer** started as a simple backend for a specific dashboard, however it has grown into an extensible plugin system where adding new ‘indexers’ for specific purposes (i.e. tracking ayin pool reserves) is quite easy. This info is exposed through a powerful rest API with swagger documentation with info about nfts, tokens, users and more
 
-**Links:** [Website](https://indexer.alph.pro/) [Twitter](https://twitter.com/AIphPro) [Video Presentation](https://www.youtube.com/watch?v=2J-mwe9TN5s&amp;t=1726s)
+**Links:** [Twitter](https://twitter.com/AIphPro) [Video Presentation](https://www.youtube.com/watch?v=2J-mwe9TN5s&amp;t=1726s)
 
 #### DEXTools/DEXScreener — Main Track — Tooling
 
@@ -121,7 +121,7 @@ Links: [Docs](https://docs.google.com/spreadsheets/d/1xC4cUNHIoYC6XPAUy10tURnotd
 
 **Rakku** is building a DEXTool-like platform with advanced token price charts. Its initial featureset includes tracking every transaction done for each liquidity pool and showing LIVE prices of tokens of the Alephium ecosystem. Rakku is running its Alephium full nodes on Flux.
 
-**Links:** [Twitter](https://twitter.com/RakkuBetAleph) [Website](https://rakku.vercel.app/dextools) [Video Presentation](https://www.youtube.com/watch?v=2J-mwe9TN5s&amp;t=116s)
+**Links:** [Twitter](https://twitter.com/RakkuBetAleph) [Video Presentation](https://www.youtube.com/watch?v=2J-mwe9TN5s&amp;t=116s)
 
 #### DISCORD TIPPER BOT — Main Track — Tooling
 
@@ -169,7 +169,7 @@ Link: [Github](https://github.com/georgesmith9914/airbrain-builder-python-backen
 
 **Starfish Identity** uses a DID Registry to manage public keys for off-chain authentication, message verification and web3 profiles.
 
-**Links:** [Github](https://github.com/cocabana/starfish) [Website](https://starfish-f3983.web.app/) [Video Presentation](https://www.youtube.com/watch?v=2J-mwe9TN5s&amp;t=2780s)
+**Links:** [Website](https://starfish-f3983.web.app/) [Video Presentation](https://www.youtube.com/watch?v=2J-mwe9TN5s&amp;t=2780s)
 
 #### Sezame Oracle — Main Track — Interoperability
 
@@ -193,7 +193,7 @@ The implementation is inspired by [OpenZeppelin ETH](https://github.com/OpenZepp
 
 ![](image_dce82d9dfa.jpg)
 
-**TipALPH** was built by No Trust Verify. It is a tipping bot for Telegram, similar to [LightningTipBot](https://github.com/LightningTipBot/LightningTipBot) for Alephium.
+**TipALPH** was built by No Trust Verify. It is a tipping bot for Telegram, similar to LightningTipBot for Alephium.
 
 **Links:** [Twitter](https://twitter.com/notrustverif) [Telegram](https://t.me/TipALPHBot) [Video Presentation](https://www.youtube.com/watch?v=2J-mwe9TN5s&amp;t=394s)
 
@@ -209,9 +209,9 @@ The implementation is inspired by [OpenZeppelin ETH](https://github.com/OpenZepp
 
 ![](image_ef44c59dad.jpg)
 
-**Description:** Noodz’s mission is to support the growth of the Alephium community through memes and open-source code. For the hackathon, they have worked on 4 contracts: Airdrop Contract, Initial Coin Offering (ICO) contract, Coin Flip Contract, Pinko Contract. They have since completed their ICO and released their first [token builder app](https://tools.noodz.io/).
+**Description:** Noodz’s mission is to support the growth of the Alephium community through memes and open-source code. For the hackathon, they have worked on 4 contracts: Airdrop Contract, Initial Coin Offering (ICO) contract, Coin Flip Contract, Pinko Contract. They have since completed their ICO and released their first token builder app.
 
-**Links:** [Website](https://www.noodz.io/) [Twitter](https://twitter.com/NoodlesAlph) [Telegram](https://t.me/NoodlesToken)
+**Links:** [Twitter](https://twitter.com/NoodlesAlph) [Telegram](https://t.me/NoodlesToken)
 
 #### Alph.pro Vending Machine — Track — Bounties
 

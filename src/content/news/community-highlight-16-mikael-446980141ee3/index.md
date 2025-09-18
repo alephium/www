@@ -35,7 +35,7 @@ Another thing I love seeing is the hash rate increasing. While it won’t happen
 
 [Ayin](http://ayin.app) is one of the major projects I’ve always followed, and I am excited to see what kind of new features they will be rolling out in the future. AlphPad looks to be another promising one for kickstarting new projects on Alephium.
 
-And how could I not mention the only [Number Go Up](https://ngu.money/), which has just been slaying it recently!
+And how could I not mention the only Number Go Up, which has just been slaying it recently!
 
 #### **Where do you see Alephium as a project being in the next two years?**
 

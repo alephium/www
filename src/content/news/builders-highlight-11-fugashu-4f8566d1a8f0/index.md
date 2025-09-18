@@ -91,7 +91,7 @@ Alph.land, Stats, and the Blockchain Visualizer are all open-source projects, an
 
 [alph.land](http://alph.land)
 
-[visualizer.alph.land](http://visualizer.alph.land,)
+[visualizer.alph.land](http://visualizer.alph.land)
 
 [stats.alph.land](http://stats.alph.land)
 
