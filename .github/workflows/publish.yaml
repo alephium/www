@@ -29,8 +29,22 @@ jobs:
         with:
           node-version: 18.12.1
 
+      - name: Caching Gatsby
+        id: gatsby-cache-build
+        uses: actions/cache@v4
+        with:
+          path: |
+            public
+            .cache
+          key: ${{ runner.os }}-gatsby-build-${{ github.run_id }}
+          restore-keys: |
+            ${{ runner.os }}-gatsby-build-
+
       - name: Build website
-        run: npm install gatsby-cli && npm run clean && npm run build
+        run: npm install gatsby-cli && npm run build --log-pages
+        env:
+          GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES: true
+          CI: true
 
       - name: Deploy to S3
         run: npm run deploy
