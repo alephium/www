@@ -24,7 +24,10 @@ Mr. Wang added about the mainnet, “Alephium offers a whole new programming par
 
 For further information, please contact <a href="mailto:press@alephium.org" class="markup--anchor markup--p-anchor" data-href="mailto:press@alephium.org" target="_blank">press@alephium.org</a>
 
-**About Alephium  
-**Alephium is the first operational sharded blockchain bringing scalability, ETH-inspired smart contracts and Dapps capabilities to Bitcoin’s proven core technologies while ensuring better performance and improved energy efficiency. Alephium also focuses on usability and accessibility making it the perfect platform to support decentralized applications and open protocols.
+---
+
+**About Alephium**
+
+Alephium is the first operational sharded blockchain bringing scalability, ETH-inspired smart contracts and Dapps capabilities to Bitcoin’s proven core technologies while ensuring better performance and improved energy efficiency. Alephium also focuses on usability and accessibility making it the perfect platform to support decentralized applications and open protocols.
 
 #### To find out more, visit <a href="https://alephium.org/" class="markup--anchor markup--h4-anchor" data-href="https://alephium.org/" rel="noopener" target="_blank">https://alephium.org/</a>

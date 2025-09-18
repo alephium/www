@@ -23,6 +23,8 @@ _“After over 3 years focussed exclusively on research and development, we are 
 Alphemy Capital focuses exclusively on technologies that will constitute the fundamental infrastructure of the global economy, particularly those which safeguard decentralization to the benefit and for the sustainable growth of the future web ecosystem.   
 _“Blockchain technologies need to address scalability and energy consumption issues to reach mass adoption. Alephium proposes a unique approach to sharding and smart contracts on the Bitcoin technology stack while tackling energy concerns with its Proof of Less Work algorithm. It is a really promising project in the sharding blockchain domain and we look forward to seeing how it will develop.”_ said Alphemy Capital.
 
-### **About Alephium**
+---
+
+**About Alephium**
 
 <a href="https://alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/" rel="noopener" target="_blank">Alephium</a> is the first operational sharded blockchain bringing versatility, scalability, and energy efficiency to Bitcoin’s proven core technologies while offering better performance and secure smart contracts. Alephium also focuses on usability and accessibility, making it the perfect platform to support decentralized applications and open protocols.

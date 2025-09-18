@@ -35,13 +35,9 @@ Following Alephium’s naming convention, all network upgrades are named after b
 
 All node operators should have updated to v4.0.0 **before July 15th** to ensure uninterrupted participation in the network. If you haven’t already done so, please do it as soon as possible.
 
-- **Node version required:**
+- **Node version required:** [Download the latest node](https://github.com/alephium/alephium/releases/latest)
 
-  [ Download the latest node](https://github.com/alephium/alephium/releases/latest)
-
-- **Upgrade instructions:**
-
-  [ Danube Upgrade Docs](https://docs.alephium.org/integration/danube-upgrade/)
+- **Upgrade instructions:** [Danube Upgrade Docs](https://docs.alephium.org/integration/danube-upgrade/)
 
 ## What Comes With Danube
 

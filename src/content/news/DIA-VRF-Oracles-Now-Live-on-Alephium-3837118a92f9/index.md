@@ -43,6 +43,8 @@ For more details, visit:
 
 This latest DIA integration marks a significant milestone for Alephium, enabling **provably fair randomness** and strengthening the foundation for decentralized innovation.
 
+---
+
 **About Alephium**
 
 Alephium is a next-generation Proof-of-Work blockchain combining scalability, energy efficiency, and smart contract capabilities to enable decentralized solutions for a better future.

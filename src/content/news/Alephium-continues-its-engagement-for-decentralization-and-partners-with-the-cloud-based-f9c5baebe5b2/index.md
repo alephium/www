@@ -22,6 +22,8 @@ Alephium proves that blockchain scalability and programmability can be achieved 
 
 “It warms my heart to see new Layer 1 protocols popping off, having its core roots attached to the decentralized ethos of POW. They designed their own Proof-Of-Less-Work consensus to mild the main attack vector of POW critics, such as we plan with POUW. ” explained Lukas Mattecka, Lead Business Developer of Flux. “I am anticipating a flourishing partnership with Alephium. Onwards and Upwards!”
 
+---
+
 **About Alephium**
 
 <a href="https://alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/" rel="noopener" target="_blank">Alephium</a> is the first operational sharded L1 blockchain scaling and enhancing PoW & UTXO concepts. Decentralization, self-sovereignty, and security meet high-performance, accessibility, and energy efficiency in a dev-friendly network optimized for DeFi & smart contract applications.

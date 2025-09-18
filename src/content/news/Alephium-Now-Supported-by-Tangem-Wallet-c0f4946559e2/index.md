@@ -37,6 +37,8 @@ To begin managing your ALPH with Tangem Wallet, simply download or update the Ta
 
 The Alephium-Tangem integration is another step forward in making ALPH more accessible, secure, and user-friendly. We are excited to see how this partnership enhances the Alephium ecosystem and empowers our community with greater flexibility and control over their assets.
 
+---
+
 **About Alephium**
 
 Alephium is a next-generation Proof-of-Work blockchain combining scalability, energy efficiency, and smart contract capabilities to enable decentralized solutions for a better future.

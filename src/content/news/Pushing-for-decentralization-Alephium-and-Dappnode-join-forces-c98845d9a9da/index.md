@@ -21,7 +21,9 @@ _“It is a key milestone for Alephium to be available on Dappnode. We are very 
 
 _“We are so happy to participate in Alephium’s decentralization process. Thanks to our software, Alephium will become a truly decentralized network, and everyone in our communities will be able to run nodes easily and without complications”_ said Pol Lanski, Dappnode’s COO
 
-#### **About Alephium**
+---
+
+**About Alephium**
 
 <a href="https://alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/" rel="noopener" target="_blank">Alephium</a> is the first operational layer1 sharded blockchain scaling and improving Bitcoin core technologies, Proof of Work & UTXO. It delivers a highly performant, secure, and energy efficient network that focuses on usability and accessibility.
 

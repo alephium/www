@@ -76,15 +76,13 @@ Please note that, even though Onramper supports [28+ providers](https://docs.on
 - [GateConnect](https://gate.lt/connect/)
 - [TransFi](https://www.transfi.com/)
 
-  \*\*
-
 _We are continuously working to integrate more providers over time to expand our coverage and improve accessibility._
 
-_\*Please note that geographical restrictions and supported services may vary depending on your country of citizenship. For more details, visit [Alchemy Pay](https://alchemypay.org/), [Banxa](https://banxa.com/), [GateConnect ](https://gate.lt/connect/)and [TransFi](https://www.transfi.com/)._
+_\* Please note that geographical restrictions and supported services may vary depending on your country of citizenship. For more details, visit [Alchemy Pay](https://alchemypay.org/), [Banxa](https://banxa.com/), [GateConnect ](https://gate.lt/connect/)and [TransFi](https://www.transfi.com/)._
 
 _\*\* Integration expected to be live by the end of March 2025._
 
-— — — — — — — — — — — — — — — — — — — — — — —
+---
 
 ## About Alephium
 

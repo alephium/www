@@ -49,4 +49,4 @@ Stay tuned for updates on joint initiatives and security enhancements as we cont
 
 For more information about Hacken’s security services, visit <a href="https://hackenio.cc/3Qko1S9" class="markup--anchor markup--p-anchor" data-href="https://hackenio.cc/3Qko1S9" rel="noopener" target="_blank">hacken.io</a>.
 
-To learn more about Alephium, visit alephium.org.
+To learn more about Alephium, visit [alephium.org](https://alephium.org).

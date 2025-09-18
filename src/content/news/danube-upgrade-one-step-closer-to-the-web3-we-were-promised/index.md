@@ -36,10 +36,7 @@ Each component of the upgrade touched a different layer of Alephium’s stack:
 
 - Wallet logic overhauled for intuitive access and single-address UX
 - A reworked syncing protocol based on Ethereum’s “skeleton sync”
-- [New VM capabilities](https://x.com/wachmc/status/1873794077021384711)
-
-  for smart contract composability
-
+- [New VM capabilities](https://x.com/wachmc/status/1873794077021384711) for smart contract composability
 - Optimizations to BlockFlow, Alephium’s sharded consensus engine
 - The tokenomics model was updated with sustainable tail emissions
 
@@ -70,17 +67,9 @@ Alephium used to produce a new block every 16 seconds per chain. That was alread
 
 **Now with Danube:**
 
-- Confirmations come twice as fast, block time is cut from 16 seconds to
+- Confirmations come twice as fast, block time is cut from 16 seconds to **8 seconds**.
 
-  **8 seconds**
-
-  .
-
-- The network now processes an average of
-
-  **2 blocks per second**
-
-  across all chains; bringing Alephium on par with many leading proof-of-stake networks.
+- The network now processes an average of **2 blocks per second** across all chains; bringing Alephium on par with many leading proof-of-stake networks.
 
 - The network can handle more activity without changing token emissions.
 
@@ -143,11 +132,7 @@ The issue wasn’t the cap itself, it was the perception created by it. Newcomer
 - This ensures miners remain incentivized long-term.
 - This aligns Alephium with battle-tested models like Monero’s, where the supply is infinite but _inflation trends to zero_.
 
-- The mechanisms of the
-
-  [Alephium’s deflatory forces](https://medium.com/@alephium/tokenomics-of-alephium-61d59b51029c)
-
-  also remain in place.
+- The mechanisms of the [Alephium’s deflatory forces](https://medium.com/@alephium/tokenomics-of-alephium-61d59b51029c) also remain in place.
 
 - Crucially, the original **emission curve** for the first 81 years **remains unchanged**, it’s just extended for the long term.
 
@@ -220,17 +205,13 @@ Danube is [live on testnet](https://x.com/wachmc/status/1918290191950794758) �
 
   A 30-day campaign with 30,000 ALPH in rewards is mobilizing creators to spread the word.
 
-- Looking forward, Alephium is entering
-
-  **a new phase of growth.**
+- Looking forward, Alephium is entering **a new phase of growth.**
 
   With Danube laying the groundwork, the focus will now turn to strengthening the foundations even further — refining performance, exploring better UX through lower latency, and continuing to improve smart contract capabilities to support more sophisticated use cases.
 
-- At the same time, the ecosystem will shift toward
-
-  **showcasing what’s possible**
-
-  with the Danube upgrade. We expect to see new high-quality applications launching on Alephium, both from the community and through collaborative initiatives, designed to unlock more value and real-world usage for ALPH across DeFi and beyond.
+- At the same time, the ecosystem will shift toward **showcasing what’s possible** with the Danube upgrade.
+  
+  We expect to see new high-quality applications launching on Alephium, both from the community and through collaborative initiatives, designed to unlock more value and real-world usage for ALPH across DeFi and beyond.
 
 The Danube is the bedrock. From here, Alephium’s growth will accelerate, on-chain and off.
 
