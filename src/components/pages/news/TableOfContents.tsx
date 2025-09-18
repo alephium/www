@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import styled from 'styled-components'
 
 import { useTableOfContents } from '../../../hooks/useTableOfContents'
@@ -12,6 +12,9 @@ const TableOfContents = ({ htmlContent }: TableOfContentsProps) => {
   const tocItems = useTableOfContents(htmlContent)
   const { activeId, highlightedId, handleClick } = useTocIntersection(tocItems)
   const [isScrolledDown, setIsScrolledDown] = useState<boolean>(false)
+  const tocContainerRef = useRef<HTMLDivElement>(null)
+  const activeLinkRef = useRef<HTMLAnchorElement>(null)
+  const isUserInteractingRef = useRef<boolean>(false)
 
   useEffect(() => {
     if (tocItems.length === 0) return
@@ -67,6 +70,45 @@ const TableOfContents = ({ htmlContent }: TableOfContentsProps) => {
     }
   }, [highlightedId])
 
+  // Auto-scroll TOC when active item is out of view (but not when user is clicking)
+  useEffect(() => {
+    if (!activeId || !tocContainerRef.current || !activeLinkRef.current || isUserInteractingRef.current) return
+
+    const container = tocContainerRef.current
+    const activeLink = activeLinkRef.current
+
+    const containerRect = container.getBoundingClientRect()
+    const linkRect = activeLink.getBoundingClientRect()
+
+    const isAboveView = linkRect.top < containerRect.top
+    const isBelowView = linkRect.bottom > containerRect.bottom
+
+    if (isAboveView || isBelowView) {
+      // Calculate the scroll position to center the active link
+      const linkOffsetTop = activeLink.offsetTop
+      const containerHeight = container.clientHeight
+      const linkHeight = activeLink.offsetHeight
+
+      // Center the link in the container
+      const targetScrollTop = linkOffsetTop - containerHeight / 2 + linkHeight / 2
+
+      container.scrollTo({
+        top: Math.max(0, targetScrollTop)
+      })
+    }
+  }, [activeId])
+
+  // Handle user interaction to prevent auto-scroll conflicts
+  const handleTocClick = (id: string) => {
+    isUserInteractingRef.current = true
+    handleClick(id)
+
+    // Reset the flag after a short delay to allow auto-scroll to resume
+    setTimeout(() => {
+      isUserInteractingRef.current = false
+    }, 1000)
+  }
+
   useEffect(
     () => () => {
       if (highlightedId) {
@@ -83,16 +125,17 @@ const TableOfContents = ({ htmlContent }: TableOfContentsProps) => {
 
   return (
     <TocWrapper>
-      <TocContainer data-toc-container isScrolledDown={isScrolledDown}>
+      <TocContainer ref={tocContainerRef} data-toc-container isScrolledDown={isScrolledDown}>
         <TocTitle>Table of Contents</TocTitle>
         <TocList>
           {tocItems.map((item) => (
             <TocListItem key={item.id} level={item.level}>
               <TocLink
+                ref={activeId === item.id ? activeLinkRef : null}
                 href={`#${item.id}`}
                 onClick={(e) => {
                   e.preventDefault()
-                  handleClick(item.id)
+                  handleTocClick(item.id)
                 }}
                 isActive={activeId === item.id}
               >
