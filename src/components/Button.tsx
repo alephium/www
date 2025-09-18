@@ -155,9 +155,10 @@ const ArrowStyled = styled(Arrow)<{ isExternal?: boolean }>`
 
 const StyledButton = styled(Button)`
   background-color: ${({ theme, invert, secondary }) =>
-    invert ? theme.background1 : secondary ? colord(theme.textPrimary).alpha(0.1).toHex() : theme.textPrimary};
+    invert ? theme.background1 : secondary ? 'transparent' : theme.textPrimary};
   color: ${({ theme, invert, secondary }) =>
-    invert ? theme.textPrimary : secondary ? theme.textPrimary : colord(theme.textPrimary).invert().toHex()};
+    invert ? theme.textPrimary : secondary ? theme.textPrimaryVariation : colord(theme.textPrimary).invert().toHex()};
+  border: ${({ secondary, theme }) => (secondary ? `1px solid ${theme.borderPrimary}` : 'none')};
   --gradient-x: 50%;
   --gradient-y: 50%;
   border-radius: ${({ squared }) => getBorderRadius(squared)};
@@ -168,15 +169,15 @@ const StyledButton = styled(Button)`
   justify-content: ${({ textAlign }) => (textAlign === 'left' ? 'flex-start' : 'center')};
   position: relative;
   z-index: 0;
-  border: 0;
 
   align-items: center;
-  font-weight: var(--fontWeight-semiBold);
+  font-weight: var(--fontWeight-medium);
   font-size: ${({ big }) => (big ? 'var(--fontSize-22)' : 'var(--fontSize-18)')};
   transition: all 0.1s ease-out;
 
   &:hover {
     filter: saturate(140%);
+    color: ${({ theme, secondary }) => (secondary ? theme.textPrimary : colord(theme.textPrimary).invert().toHex())};
   }
 
   ${({ disabled }) =>
