@@ -35,6 +35,9 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: 'gatsby-remark-external-links'
+          },
+          {
             resolve: 'gatsby-remark-embed-video',
             options: {
               width: 700
