@@ -200,6 +200,7 @@ const ArticleStyled = styled.article`
   ul,
   ol {
     margin-top: var(--spacing-3);
+    color: ${({ theme }) => theme.textPrimary};
     line-height: 1.7;
     font-family: 'Source Serif';
     font-weight: 350;
