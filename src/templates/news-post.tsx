@@ -192,6 +192,10 @@ const ArticleStyled = styled.article`
     transition: color 1s ease;
   }
 
+  a {
+    color: ${({ theme }) => theme.link};
+  }
+
   p,
   ul,
   ol {
