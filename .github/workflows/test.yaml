@@ -7,11 +7,15 @@ on:
   # pull_request:
 
 jobs:
-  broken-link-check:
+  linkChecker:
     runs-on: ubuntu-latest
+    # permissions:
+      # issues: write # required for peter-evans/create-issue-from-file
     steps:
       - uses: actions/checkout@v4
-      - name: Run linkspector
-        uses: umbrelladocs/action-linkspector@v1
+
+      - name: Link Checker
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
         with:
-          config_file: '.github/.linkspector.yml'
+          fail: true
