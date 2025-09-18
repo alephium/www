@@ -9,7 +9,7 @@ title: Hackathon winners announced!
 
 _The first Alephium Hackathon “Pioneers”, took place online between the 12th & 26th of February. After carefully reviewing all final submissions, the jury & partners (Bitmain, Blockflow Alliance DAO, Cetacean Capital &_ <a href="https://link.dappnode.io/dappnode" data-href="https://link.dappnode.io/dappnode"><em>Dappnode</em></a>_) are ready to announce the winners._
 
-The whole Alephium core-team has been blown away by the energy of participants and the quality of the submissions. It wishes to express to all participants its immense pleasure to see Alephium’s tools, languages & protocol used with so much creativity & dedication. The jury has taken its time to evaluate each submission on its own merit, according to the criteria exposed [here](/hackathon).
+The whole Alephium core-team has been blown away by the energy of participants and the quality of the submissions. It wishes to express to all participants its immense pleasure to see Alephium’s tools, languages & protocol used with so much creativity & dedication. The jury has taken its time to evaluate each submission on its own merit, according to the criteria.
 
 Two weeks of intense building have ended up with 26 submissions from the 105 participants, for either the main track prizes or the bounties. Of these, 18 were qualified for the Main prizes (tooling, dapps & interoperability) and 8 were considered for the bounties. If you want to see a description of all submissions, head up <a href="https://medium.com/@alephium/hackathon-1-pioneers-submissions-76b869089ace" data-href="https://medium.com/@alephium/hackathon-1-pioneers-submissions-76b869089ace">here</a>.
 
