@@ -13,10 +13,10 @@ For its team, Alephium is privileging agility and efficiency over hyper-growth. 
 In fact, we haven’t communicated much about ourselves so far because we think _who we are_ is less relevant than _what we deliver_. To nevertheless shed some light on who we are and what we do, we decided to share a little about ourselves with the community through a small series of interviews.
 
 _This is an updated version of the previously released articles available here:\***\*  
-\*\***Ep.1:_ <a href="https://medium.com/@alephium/3472f8295af6" data-href="https://medium.com/@alephium/3472f8295af6" rel="nofollow"><em>https://medium.com/@alephium/3472f8295af6</em></a>_  
-Ep.2:_ <a href="https://medium.com/@alephium/bec6e6908d2f" data-href="https://medium.com/@alephium/bec6e6908d2f" rel="nofollow"><em>https://medium.com/@alephium/bec6e6908d2f</em></a>_  
-Ep.3:_ <a href="https://medium.com/@alephium/64b6dacc1459" data-href="https://medium.com/@alephium/64b6dacc1459" rel="nofollow"><em>https://medium.com/@alephium/64b6dacc1459</em></a>_  
-Ep.4:_ <a href="https://medium.com/@alephium/3886003b8fef" data-href="https://medium.com/@alephium/3886003b8fef" rel="nofollow"><em>https://medium.com/@alephium/3886003b8fef</em></a>
+\*\***Ep.1:_ <a href="https://medium.com/@alephium/3472f8295af6"  rel="nofollow"><em>https://medium.com/@alephium/3472f8295af6</em></a>_  
+Ep.2:_ <a href="https://medium.com/@alephium/bec6e6908d2f"  rel="nofollow"><em>https://medium.com/@alephium/bec6e6908d2f</em></a>_  
+Ep.3:_ <a href="https://medium.com/@alephium/64b6dacc1459"  rel="nofollow"><em>https://medium.com/@alephium/64b6dacc1459</em></a>_  
+Ep.4:_ <a href="https://medium.com/@alephium/3886003b8fef"  rel="nofollow"><em>https://medium.com/@alephium/3886003b8fef</em></a>
 
 ### Backend Team
 
@@ -38,8 +38,8 @@ Math and coding are my hobbies …
 
 #### Got links?
 
-- <a href="https://github.com/polarker" data-href="https://github.com/polarker">https://github.com/polarker</a>
-- <a href="https://twitter.com/wachmc" data-href="https://twitter.com/wachmc">https://twitter.com/wachmc</a>
+- <a href="https://github.com/polarker" >https://github.com/polarker</a>
+- <a href="https://twitter.com/wachmc" >https://twitter.com/wachmc</a>
 
 #### How/when did you come across crypto?
 
@@ -75,7 +75,7 @@ I studied computer science at EPFL, where I did a bachelor/master degree. Before
 
 #### Do you have funny, sporty, geeky or cranky hobbies?
 
-I used to do traditional Swiss wrestling: <a href="https://www.youtube.com/watch?v=TN3MCKCTtrg" data-href="https://www.youtube.com/watch?v=TN3MCKCTtrg">https://www.youtube.com/watch?v=TN3MCKCTtrg</a>
+I used to do traditional Swiss wrestling: <a href="https://www.youtube.com/watch?v=TN3MCKCTtrg" >https://www.youtube.com/watch?v=TN3MCKCTtrg</a>
 
 Now I’m more into music: guitar/alphorn/singing.
 
@@ -117,7 +117,7 @@ No.
 
 #### Got links?
 
-- <a href="https://github.com/lbqds" data-href="https://github.com/lbqds">https://github.com/lbqds</a>
+- <a href="https://github.com/lbqds" >https://github.com/lbqds</a>
 
 #### How/when did you come across crypto?
 
@@ -153,12 +153,12 @@ SEU, China; CTH, Sweden.
 
 ### Got links?
 
-- <a href="https://hongchao.me/" data-href="https://hongchao.me/">https://hongchao.me</a>
-- <a href="https://github.com/h0ngcha0" data-href="https://github.com/h0ngcha0">https://github.com/h0ngcha0</a>
+- <a href="https://hongchao.me/" >https://hongchao.me</a>
+- <a href="https://github.com/h0ngcha0" >https://github.com/h0ngcha0</a>
 
 #### How/when did you come across crypto?
 
-Read <a href="https://www.economist.com/leaders/2015/10/31/the-trust-machine" data-href="https://www.economist.com/leaders/2015/10/31/the-trust-machine">The trust machine</a> article in the Economist magazine in 2015.
+Read <a href="https://www.economist.com/leaders/2015/10/31/the-trust-machine" >The trust machine</a> article in the Economist magazine in 2015.
 
 > I like Bitcoin. Alephium builds upon Bitcoin’s core abstractions and improves in both scalability and expressivity.
 
@@ -196,7 +196,7 @@ I’ve been snowboarding for more than 20 years, teaching trampoline to my kids,
 
 #### Got links?
 
-- <a href="https://www.linkedin.com/in/benoitperroud/" data-href="https://www.linkedin.com/in/benoitperroud/">https://www.linkedin.com/in/benoitperroud/</a>
+- <a href="https://www.linkedin.com/in/benoitperroud/" >https://www.linkedin.com/in/benoitperroud/</a>
 
 My socials are probably not interesting enough to be shared.
 
@@ -244,10 +244,10 @@ Computational geometry & physics.
 
 #### Got links?
 
-- <a href="https://twitter.com/SimerPlaha" data-href="https://twitter.com/SimerPlaha">https://twitter.com/SimerPlaha</a>
-- <a href="https://github.com/simerplaha/" data-href="https://github.com/simerplaha/">https://github.com/simerplaha/</a>
-- <a href="https://linkedin.com/in/simerplaha" data-href="https://linkedin.com/in/simerplaha">https://linkedin.com/in/simerplaha</a>
-- <a href="https://dev.to/simerplaha" data-href="https://dev.to/simerplaha">https://dev.to/simerplaha</a>
+- <a href="https://twitter.com/SimerPlaha" >https://twitter.com/SimerPlaha</a>
+- <a href="https://github.com/simerplaha/" >https://github.com/simerplaha/</a>
+- <a href="https://linkedin.com/in/simerplaha" >https://linkedin.com/in/simerplaha</a>
+- <a href="https://dev.to/simerplaha" >https://dev.to/simerplaha</a>
 
 #### How/when did you come across crypto?
 
@@ -292,7 +292,7 @@ Yes! A bit of everything really. Running, biking, geeking, designing and drawing
 
 #### Got links?
 
-<a href="https://www.linkedin.com/in/mika%C3%ABl-vaivre-05526337" data-href="https://www.linkedin.com/in/mika%C3%ABl-vaivre-05526337">https://www.linkedin.com/in/mika%C3%ABl-vaivre-05526337</a>
+<a href="https://www.linkedin.com/in/mika%C3%ABl-vaivre-05526337" >https://www.linkedin.com/in/mika%C3%ABl-vaivre-05526337</a>
 
 #### How/when did you come across crypto?
 
@@ -332,11 +332,11 @@ I love messing around with knobs. Particularly, knobs that control some sort of 
 
 #### Got links?
 
-<a href="https://www.linkedin.com/in/iliastrichopoulos/" data-href="https://www.linkedin.com/in/iliastrichopoulos/">https://www.linkedin.com/in/iliastrichopoulos/</a>  
-<a href="https://iliascreates.com/" data-href="https://iliascreates.com/">https://iliascreates.com</a>  
-<a href="https://twitter.com/_nop33" data-href="https://twitter.com/_nop33">https://twitter.com/\_nop33</a>  
-<a href="https://github.com/nop33" data-href="https://github.com/nop33">https://github.com/nop33</a>  
-<a href="https://soundcloud.com/imfetamin" data-href="https://soundcloud.com/imfetamin">https://soundcloud.com/imfetamin</a>
+<a href="https://www.linkedin.com/in/iliastrichopoulos/" >https://www.linkedin.com/in/iliastrichopoulos/</a>  
+<a href="https://iliascreates.com/" >https://iliascreates.com</a>  
+<a href="https://twitter.com/_nop33" >https://twitter.com/\_nop33</a>  
+<a href="https://github.com/nop33" >https://github.com/nop33</a>  
+<a href="https://soundcloud.com/imfetamin" >https://soundcloud.com/imfetamin</a>
 
 #### How/when did you come across crypto?
 
@@ -378,7 +378,7 @@ Not many people know this but I used to do ski competitions when I was younger, 
 
 #### Got links?
 
-<a href="https://www.linkedin.com/in/maud-simon-01073394/" data-href="https://www.linkedin.com/in/maud-simon-01073394/">https://www.linkedin.com/in/maud-simon-01073394/</a>
+<a href="https://www.linkedin.com/in/maud-simon-01073394/" >https://www.linkedin.com/in/maud-simon-01073394/</a>
 
 #### How/when did you come across crypto?
 
@@ -422,7 +422,7 @@ During my free time you can find me on my bike exploring enduro trails in the mo
 
 #### Got links?
 
-<a href="https://www.linkedin.com/in/philipp-richner-2b0b82a5/" data-href="https://www.linkedin.com/in/philipp-richner-2b0b82a5/">https://www.linkedin.com/in/philipp-richner-2b0b82a5/</a>
+<a href="https://www.linkedin.com/in/philipp-richner-2b0b82a5/" >https://www.linkedin.com/in/philipp-richner-2b0b82a5/</a>
 
 #### How/when did you come across crypto?
 
@@ -498,9 +498,9 @@ I am a very happy person, my hobbies are my job. I try hard to align what I do f
 
 #### Got links?
 
-<a href="https://twitter.com/_polto_" data-href="https://twitter.com/_polto_">https://twitter.com/_polto_</a> (I am not very active on twitter)
+<a href="https://twitter.com/_polto_" >https://twitter.com/_polto_</a> (I am not very active on twitter)
 
-<a href="https://www.linkedin.com/in/polto/" data-href="https://www.linkedin.com/in/polto/">https://www.linkedin.com/in/polto/</a>
+<a href="https://www.linkedin.com/in/polto/" >https://www.linkedin.com/in/polto/</a>
 
 #### How/when did you come across crypto?
 
@@ -528,7 +528,7 @@ No bullshit!
 
 #### What should we call you, and where are you located?
 
-My name is <a href="https://twitter.com/jameskbh" data-href="https://twitter.com/jameskbh">Thiago Freitas</a>, and I’m currently living in Lisbon, Portugal.
+My name is <a href="https://twitter.com/jameskbh" >Thiago Freitas</a>, and I’m currently living in Lisbon, Portugal.
 
 #### What/where did you study? What are your past notable experiences?
 

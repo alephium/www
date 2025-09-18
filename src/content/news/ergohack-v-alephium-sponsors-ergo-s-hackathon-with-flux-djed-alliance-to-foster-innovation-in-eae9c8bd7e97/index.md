@@ -22,7 +22,7 @@ The Alephium prize pool will consist of:
 2nd Prize: 7k ALPH  
 3rd Prize: 3k ALPH
 
-In addition to Alephium’s prizes, participants can earn prizes in sigUSD, DACAU & FLUX! Find out the details on <a href="https://ergoplatform.org/en/blog/ErgoHack-5-Prizes/" data-href="https://ergoplatform.org/en/blog/ErgoHack-5-Prizes/">ErgoHack V Prizes page!</a>
+In addition to Alephium’s prizes, participants can earn prizes in sigUSD, DACAU & FLUX! Find out the details on <a href="https://ergoplatform.org/en/blog/ErgoHack-5-Prizes/" >ErgoHack V Prizes page!</a>
 
 **Evaluation Criterias — **The submissions will be assessed by taking into consideration the following:
 
@@ -31,8 +31,8 @@ In addition to Alephium’s prizes, participants can earn prizes in sigUSD, DACA
 - Code quality
 - Quality of user interface
 
-**Register Now! — **Applications are currently being accepted until October 2nd. Apply <a href="https://q9fwzopidh8.typeform.com/to/hEeZFF4c?typeform-source=3qml8hniame.typeform.com" data-href="https://q9fwzopidh8.typeform.com/to/hEeZFF4c?typeform-source=3qml8hniame.typeform.com">here</a>.
+**Register Now! — **Applications are currently being accepted until October 2nd. Apply <a href="https://q9fwzopidh8.typeform.com/to/hEeZFF4c?typeform-source=3qml8hniame.typeform.com" >here</a>.
 
-Additional information: <a href="https://ergohack.io/" data-href="https://ergohack.io/">Hackathon website</a>.
+Additional information: <a href="https://ergohack.io/" >Hackathon website</a>.
 
-Discover our code on <a href="https://github.com/alephium" data-href="https://github.com/alephium">GitHub</a> (<a href="https://github.com/alephium/alephium-web3" data-href="https://github.com/alephium/alephium-web3">SDK</a>, <a href="https://github.com/alephium/alephium" data-href="https://github.com/alephium/alephium">Full Node</a>, <a href="https://github.com/alephium/explorer" data-href="https://github.com/alephium/explorer">Explorer</a>), talk tech on <a href="https://discord.gg/h7cXXy4FEY" data-href="https://discord.gg/h7cXXy4FEY">Discord</a>, meet the community on <a href="https://t.me/Alephium_Announcement" data-href="https://t.me/Alephium_Announcement">Telegram</a> or interact with us on : <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium">Twitter</a> & <a href="https://www.reddit.com/r/Alephium/" data-href="https://www.reddit.com/r/Alephium/">Reddit</a> .
+Discover our code on <a href="https://github.com/alephium" >GitHub</a> (<a href="https://github.com/alephium/alephium-web3" >SDK</a>, <a href="https://github.com/alephium/alephium" >Full Node</a>, <a href="https://github.com/alephium/explorer" >Explorer</a>), talk tech on <a href="https://discord.gg/h7cXXy4FEY" >Discord</a>, meet the community on <a href="https://t.me/Alephium_Announcement" >Telegram</a> or interact with us on : <a href="https://twitter.com/alephium" >Twitter</a> & <a href="https://www.reddit.com/r/Alephium/" >Reddit</a> .

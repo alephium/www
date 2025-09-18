@@ -25,11 +25,11 @@ A smart contract programming language allows developers to create cool programs 
 
 ---
 
-### To participate and get a chance to win ALPH rewards, share your name proposals in the \#💡suggestions channel on our Discord by following this link: <a href="https://discord.gg/s82ZXRw4Dc."data-href="https://discord.gg/s82ZXRw4Dc.">https://discord.gg/s82ZXRw4Dc.</a>
+### To participate and get a chance to win ALPH rewards, share your name proposals in the \#💡suggestions channel on our Discord by following this link: <a href="https://discord.gg/s82ZXRw4Dc.">https://discord.gg/s82ZXRw4Dc.</a>
 
 **The naming competition starts on January 31st, 2022 at 3:00pm CET and ends on February 2nd, 2022 at 18:00 CET.**
 
-Involving the community is a good way to pool great resources of imagination and come up with the best, most accurate names for things. <a href="https://www.nytimes.com/2016/03/22/world/europe/boaty-mcboatface-what-you-get-when-you-let-the-internet-decide.html" data-href="https://www.nytimes.com/2016/03/22/world/europe/boaty-mcboatface-what-you-get-when-you-let-the-internet-decide.html">But it can also be tricky as many naming contests have ended up with all sorts of crazy user-suggested names.</a>
+Involving the community is a good way to pool great resources of imagination and come up with the best, most accurate names for things. <a href="https://www.nytimes.com/2016/03/22/world/europe/boaty-mcboatface-what-you-get-when-you-let-the-internet-decide.html" >But it can also be tricky as many naming contests have ended up with all sorts of crazy user-suggested names.</a>
 
 We are curious to see what our community can come up with while retaining some agency on our brand, so we invite you to propose the names of your choice and let the Alephium team vote for its favorite names in several categories.
 
@@ -49,7 +49,7 @@ _(We reserve the right to create new categories on the fly, remove them or chang
 
 #### **_Rules_**
 
-_Of course this naming event is to be governed by a set of rules. For your convenience we publish them here but you will also be able to find them in this_ <a href="https://github.com/alephium/community" data-href="https://github.com/alephium/community"><em>GitHub repository.</em></a> _These rules may be subject to change in the near or distant future and read as the following:_
+_Of course this naming event is to be governed by a set of rules. For your convenience we publish them here but you will also be able to find them in this_ <a href="https://github.com/alephium/community" ><em>GitHub repository.</em></a> _These rules may be subject to change in the near or distant future and read as the following:_
 
 _This is an experimental and discretionary rewards program for our active Alephium community to encourage and reward those who are contributing and helping to improve the Alephium platform, ecosystem and community._
 
@@ -69,5 +69,5 @@ _Alephium reserves the right to discontinue the Program at any time without noti
 _Are not eligible for rewards:_
 
 - _Individuals who have not reached legal majority age in their country of residence._
-- _Individuals on sanctions lists or who are in countries listed on_ <a href="https://www.seco.admin.ch/seco/fr/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen/sanktionen-embargos/sanktionsmassnahmen.html" data-href="https://www.seco.admin.ch/seco/fr/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen/sanktionen-embargos/sanktionsmassnahmen.html"><em>SECO’s sanctions list</em></a> _or where crypto-assets have been banned._
+- _Individuals on sanctions lists or who are in countries listed on_ <a href="https://www.seco.admin.ch/seco/fr/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen/sanktionen-embargos/sanktionsmassnahmen.html" ><em>SECO’s sanctions list</em></a> _or where crypto-assets have been banned._
 - _Alephium employees, consultants and their families._

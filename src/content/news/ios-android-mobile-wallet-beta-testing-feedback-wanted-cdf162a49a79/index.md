@@ -15,15 +15,15 @@ A first phase of internal testing has been completed, and the app has gone throu
 
 #### **For iOS **users
 
-The official testing platform of Apple is called TestFlight. To install the mobile wallet on your iOS device, get it here: <a href="https://testflight.apple.com/join/oRHkgVPU" data-href="https://testflight.apple.com/join/oRHkgVPU">https://testflight.apple.com/join/oRHkgVPU</a>.
+The official testing platform of Apple is called TestFlight. To install the mobile wallet on your iOS device, get it here: <a href="https://testflight.apple.com/join/oRHkgVPU" >https://testflight.apple.com/join/oRHkgVPU</a>.
 
 If you already have the TestFlight app, you will be able to install the Alephium Mobile Wallet app directly. If you don’t, please install TestFlight, and the wallet afterwards.
 
 #### **For Android users**
 
-To download the app, please follow this link to the playstore: <a href="https://play.google.com/store/apps/details?id=org.alephium.wallet" data-href="https://play.google.com/store/apps/details?id=org.alephium.wallet">https://play.google.com/store/apps/details?id=org.alephium.wallet</a>
+To download the app, please follow this link to the playstore: <a href="https://play.google.com/store/apps/details?id=org.alephium.wallet" >https://play.google.com/store/apps/details?id=org.alephium.wallet</a>
 
-**Please share your feedback with us on discord** <a href="https://discord.com/channels/747741246667227157/878206973781368842" data-href="https://discord.com/channels/747741246667227157/878206973781368842"><strong>here</strong></a> **or github** <a href="https://github.com/alephium/mobile-wallet" data-href="https://github.com/alephium/mobile-wallet"><strong>there</strong></a>**.**
+**Please share your feedback with us on discord** <a href="https://discord.com/channels/747741246667227157/878206973781368842" ><strong>here</strong></a> **or github** <a href="https://github.com/alephium/mobile-wallet" ><strong>there</strong></a>**.**
 
 _(as of now, the app is available only in english)_
 

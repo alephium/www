@@ -10,11 +10,11 @@ title: 'TECH TALK #2 — Mysteries of stateful UTXO: The Ultimate Guide to A
 
 _A discussion with Cheng Wang, inventor of stateful UTXO and founder of Alephium_
 
-_This is the second of a series of interviews on the technical innovations brought to the world by Alephium. The discussion was conducted in a virtual format in the presence of most of the Alephium team who contributed to the questions and ensuing exchange. The following has been edited for clarity, concision and optimized for readability and cut into two parts, this is part 2. It has already been preceded by an_ <a href="https://medium.com/@alephium/an-introduction-to-the-stateful-utxo-model-8de3b0f76749" data-href="https://medium.com/@alephium/an-introduction-to-the-stateful-utxo-model-8de3b0f76749"><em>Introduction to sUTXO</em></a> _and_ <a href="https://twitter.com/alephium/status/1615389097744568320" data-href="https://twitter.com/alephium/status/1615389097744568320"><em>many</em></a> <a href="https://twitter.com/alephium/status/1599808960038461447" data-href="https://twitter.com/alephium/status/1599808960038461447"><em>twitter</em></a> <a href="https://twitter.com/alephium/status/1602684789655420928" data-href="https://twitter.com/alephium/status/1602684789655420928"><em>threads</em></a>_._
+_This is the second of a series of interviews on the technical innovations brought to the world by Alephium. The discussion was conducted in a virtual format in the presence of most of the Alephium team who contributed to the questions and ensuing exchange. The following has been edited for clarity, concision and optimized for readability and cut into two parts, this is part 2. It has already been preceded by an_ <a href="https://medium.com/@alephium/an-introduction-to-the-stateful-utxo-model-8de3b0f76749" ><em>Introduction to sUTXO</em></a> _and_ <a href="https://twitter.com/alephium/status/1615389097744568320" ><em>many</em></a> <a href="https://twitter.com/alephium/status/1599808960038461447" ><em>twitter</em></a> <a href="https://twitter.com/alephium/status/1602684789655420928" ><em>threads</em></a>_._
 
 _TL;DR — On the topic of state size, contract storage rent and upgradability / About NFT implementations / Exploring the main benefits of sUTXO: security / Regarding the benefits of building with statefulUTXO_
 
-_If you just stumbled here, find part 1_ <a href="https://medium.com/@alephium/tech-talk-2-mysteries-of-stateful-utxo-the-ultimate-guide-to-alephiums-accounting-model-and-de2cf2063615" data-href="https://medium.com/@alephium/tech-talk-2-mysteries-of-stateful-utxo-the-ultimate-guide-to-alephiums-accounting-model-and-de2cf2063615"><em>here</em></a>_._
+_If you just stumbled here, find part 1_ <a href="https://medium.com/@alephium/tech-talk-2-mysteries-of-stateful-utxo-the-ultimate-guide-to-alephiums-accounting-model-and-de2cf2063615" ><em>here</em></a>_._
 
 #### On the topic of state size, contract storage rent and upgradability
 
@@ -126,7 +126,7 @@ For example, when you mint your NFT and store it in your wallet, a potential bug
 
 This level of protection is a unique characteristic of the sUTXO model.
 
-**VM: How does the sUTXO design inherently prevent flash loan attacks? To my understanding, you were among the first to suggest implementing flash loans on Ethereum with** <a href="https://github.com/uniflash/uniflash" data-href="https://github.com/uniflash/uniflash"><strong>UniFlash</strong></a> **correct?**
+**VM: How does the sUTXO design inherently prevent flash loan attacks? To my understanding, you were among the first to suggest implementing flash loans on Ethereum with** <a href="https://github.com/uniflash/uniflash" ><strong>UniFlash</strong></a> **correct?**
 
 CW: Indeed, I was. However, flashloan is a double-edged tool. I believe the harm it can cause potentially outweighs the benefits it brings. While not everyone may agree with this viewpoint, we can concur that it has its upsides and downsides. In our case, we’ve adopted a more conservative technology design approach, not only in the realm of DeFi. A flash loan is an extreme use case. We counter it by adopting the input and output paradigm similar to Bitcoin or the eUTXO model.
 
@@ -172,6 +172,6 @@ I believe now is an excellent time to familiarize yourself with coding in Alephi
 
 ---
 
-Have you built something or have a nice idea and want to request a grant or reward? You can access the Alephium <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" data-href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md">Community Grants &amp; Reward Program</a> page for more info!
+Have you built something or have a nice idea and want to request a grant or reward? You can access the Alephium <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" >Community Grants &amp; Reward Program</a> page for more info!
 
-If you have questions or suggestions, please come to Alephium’s [Discord](/discord), <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Telegram</a>, or reach out on <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium">Twitter</a>!
+If you have questions or suggestions, please come to Alephium’s [Discord](/discord), <a href="https://t.me/alephiumgroup" >Telegram</a>, or reach out on <a href="https://twitter.com/alephium" >Twitter</a>!

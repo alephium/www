@@ -10,9 +10,9 @@ title: 'TECH TALK #2 — Mysteries of stateful UTXO: The Ultimate Guide to A
 
 _A discussion with Cheng Wang, inventor of stateful UTXO and founder of Alephium_
 
-_This is the second of a series of interviews on the technical innovations brought to the world by Alephium. The discussion was conducted in a virtual format in the presence of most of the Alephium team who contributed to the questions and ensuing exchange. The following has been edited for clarity, concision and optimized for readability and cut into 2 parts, this is part 1. It has already been preceded by an_ <a href="https://medium.com/@alephium/an-introduction-to-the-stateful-utxo-model-8de3b0f76749" data-href="https://medium.com/@alephium/an-introduction-to-the-stateful-utxo-model-8de3b0f76749"><em>Introduction to sUTXO</em></a> _and_ <a href="https://twitter.com/alephium/status/1615389097744568320" data-href="https://twitter.com/alephium/status/1615389097744568320"><em>many</em></a> <a href="https://twitter.com/alephium/status/1599808960038461447" data-href="https://twitter.com/alephium/status/1599808960038461447"><em>Twitter</em></a> <a href="https://twitter.com/alephium/status/1602684789655420928" data-href="https://twitter.com/alephium/status/1602684789655420928"><em>threads</em></a>_._
+_This is the second of a series of interviews on the technical innovations brought to the world by Alephium. The discussion was conducted in a virtual format in the presence of most of the Alephium team who contributed to the questions and ensuing exchange. The following has been edited for clarity, concision and optimized for readability and cut into 2 parts, this is part 1. It has already been preceded by an_ <a href="https://medium.com/@alephium/an-introduction-to-the-stateful-utxo-model-8de3b0f76749" ><em>Introduction to sUTXO</em></a> _and_ <a href="https://twitter.com/alephium/status/1615389097744568320" ><em>many</em></a> <a href="https://twitter.com/alephium/status/1599808960038461447" ><em>Twitter</em></a> <a href="https://twitter.com/alephium/status/1602684789655420928" ><em>threads</em></a>_._
 
-_TL;DR — An introduction on ledger-accounting models / What is stateful utxo / About tokens as first class citizen / About merkle trees, separation of contract states and assets / You can find Part 2_ <a href="https://medium.com/@alephium/tech-talk-2-mysteries-of-stateful-utxo-the-ultimate-guide-to-alephiums-accounting-model-and-f6b6868ef873" data-href="https://medium.com/@alephium/tech-talk-2-mysteries-of-stateful-utxo-the-ultimate-guide-to-alephiums-accounting-model-and-f6b6868ef873"><em>here</em></a>_!_
+_TL;DR — An introduction on ledger-accounting models / What is stateful utxo / About tokens as first class citizen / About merkle trees, separation of contract states and assets / You can find Part 2_ <a href="https://medium.com/@alephium/tech-talk-2-mysteries-of-stateful-utxo-the-ultimate-guide-to-alephiums-accounting-model-and-f6b6868ef873" ><em>here</em></a>_!_
 
 #### **AN INTRODUCTION TO LEDGER-ACCOUNTING MODELS**
 
@@ -28,17 +28,17 @@ Although it’s a functional tool for accounting, it does have some drawbacks: i
 
 CW: There are two big families of accounting systems in blockchain: the various UTXO systems and the account models. From the perspective of a developer, the first one is characterized by its immutability properties (UTXO), and the other is mainly used for its mutability & expressive qualities (the account model)
 
-When Satoshi invented Bitcoin 10 years ago, it was not designed for the dApps use case. It’s very natural that other developers subsequently came up with different models to get around this, like the extended UTXO (eUTXO) popularized by <a href="https://docs.cardano.org/learn/eutxo-explainer/" data-href="https://docs.cardano.org/learn/eutxo-explainer/">Cardano</a> or <a href="https://dav009.medium.com/learning-ergo-101-blockchain-paradigm-eutxo-c90b0274cf5e" data-href="https://dav009.medium.com/learning-ergo-101-blockchain-paradigm-eutxo-c90b0274cf5e">Ergo</a>, the <a href="https://medium.com/nervosnetwork/https-medium-com-nervosnetwork-cell-model-7323fca57571" data-href="https://medium.com/nervosnetwork/https-medium-com-nervosnetwork-cell-model-7323fca57571">Nervos</a> cell model, and Alephium’s stateful UTXO (sUTXO) model.
+When Satoshi invented Bitcoin 10 years ago, it was not designed for the dApps use case. It’s very natural that other developers subsequently came up with different models to get around this, like the extended UTXO (eUTXO) popularized by <a href="https://docs.cardano.org/learn/eutxo-explainer/" >Cardano</a> or <a href="https://dav009.medium.com/learning-ergo-101-blockchain-paradigm-eutxo-c90b0274cf5e" >Ergo</a>, the <a href="https://medium.com/nervosnetwork/https-medium-com-nervosnetwork-cell-model-7323fca57571" >Nervos</a> cell model, and Alephium’s stateful UTXO (sUTXO) model.
 
 **VM: What problems arise with these alternatives? Why not employ the UTXO model, the account model, or one of the other UTXO variants?**
 
 CW: The UTXO model's main limitation is its essential property: immutability. That which makes it extraordinarily safe to handle assets makes it inconvenient to build applications on top because there’s no access to the mutable “state”.
 
-Conversely, the account model (mainly popularized by Ethereum) gives developers and smart contracts broad access to all information stored in the state and much better, thereby significantly enhancing <a href="https://en.wikipedia.org/wiki/Expressive_power_%28computer_science%29" data-href="https://en.wikipedia.org/wiki/Expressive_power_(computer_science)">expressiveness</a>.
+Conversely, the account model (mainly popularized by Ethereum) gives developers and smart contracts broad access to all information stored in the state and much better, thereby significantly enhancing <a href="https://en.wikipedia.org/wiki/Expressive_power_%28computer_science%29" >expressiveness</a>.
 
 This feature enables the creation of powerful decentralized applications but complicates security. Excessive access and freedom have often led to disastrous consequences, and simple bugs have repeatedly caused significant financial losses for users on many account-based chains due to challenges in effectively securing assets.
 
-The eUTXO model is one of the most well-known UTXO variants. It has advanced the programmability of the UTXO model by allowing arbitrary logic in the lockup scripts of UTXOs. While it preserves the immutability of the classic UTXO model, it raises <a href="https://liberlion.medium.com/concurrency-in-the-eutxo-model-is-not-a-problem-but-a-challenge-db4b395a8eda" data-href="https://liberlion.medium.com/concurrency-in-the-eutxo-model-is-not-a-problem-but-a-challenge-db4b395a8eda">challenges</a> when it comes to the concurrent execution of smart contract transactions.
+The eUTXO model is one of the most well-known UTXO variants. It has advanced the programmability of the UTXO model by allowing arbitrary logic in the lockup scripts of UTXOs. While it preserves the immutability of the classic UTXO model, it raises <a href="https://liberlion.medium.com/concurrency-in-the-eutxo-model-is-not-a-problem-but-a-challenge-db4b395a8eda" >challenges</a> when it comes to the concurrent execution of smart contract transactions.
 
 I like both the immutability, security, and determinism of the UTXO sets, and the expressiveness properties of the account model, so I decided to build stateful UTXO, which would combine the best of both worlds!
 
@@ -46,7 +46,7 @@ I like both the immutability, security, and determinism of the UTXO sets, and th
 
 **VM: Can you tell us more precisely how you got the idea of stateful UTXO? What’s the context & evolution that led you to invent this?**
 
-**CW:** It’s been the evolution of an idea! In 2017 and 2018, I was laser-focused on how to scale an L1. That’s when I first conceived of the <a href="https://github.com/alephium/white-paper/blob/master/alephium.pdf" data-href="https://github.com/alephium/white-paper/blob/master/alephium.pdf">Blockflow sharding algorithm</a>. It was designed to be way simpler than the (ever-shifting) <a href="https://members.delphidigital.io/reports/the-hitchhikers-guide-to-ethereum/" data-href="https://members.delphidigital.io/reports/the-hitchhikers-guide-to-ethereum/">scaling roadmap</a> of Ethereum 2.0, and was exciting, so I got my hands dirty to build it.
+**CW:** It’s been the evolution of an idea! In 2017 and 2018, I was laser-focused on how to scale an L1. That’s when I first conceived of the <a href="https://github.com/alephium/white-paper/blob/master/alephium.pdf" >Blockflow sharding algorithm</a>. It was designed to be way simpler than the (ever-shifting) <a href="https://members.delphidigital.io/reports/the-hitchhikers-guide-to-ethereum/" >scaling roadmap</a> of Ethereum 2.0, and was exciting, so I got my hands dirty to build it.
 
 I realized that this could only be achieved with the UTXO model because the input-output paradigm and on-chain immutability were crucial to building the sharding structure. Using the account model would have been impossible due to its mutability and the inability to parallelize transaction execution.
 
@@ -56,7 +56,7 @@ At the same time, DeFi summer demonstrated the power of decentralized apps to th
 
 **VM: What do you mean by sharding and scalable UTXO, and in which way is it more scalable than the standard UTXO model?**
 
-CW: Our Blockflow architecture works like this: <a href="https://medium.com/@alephium/an-introduction-to-blockflow-alephiums-sharding-algorithm-bbbf318c3402" data-href="https://medium.com/@alephium/an-introduction-to-blockflow-alephiums-sharding-algorithm-bbbf318c3402">We have G groups, and then we have G x G blockchains</a>. UTXO is used on top of this to transact between the groups. This is what I meant by a scalable UTXO model: it is based on the UTXO model, but we scale it via sharding using the Blockflow algorithm and transactions can happen on-chain in parallel.
+CW: Our Blockflow architecture works like this: <a href="https://medium.com/@alephium/an-introduction-to-blockflow-alephiums-sharding-algorithm-bbbf318c3402" >We have G groups, and then we have G x G blockchains</a>. UTXO is used on top of this to transact between the groups. This is what I meant by a scalable UTXO model: it is based on the UTXO model, but we scale it via sharding using the Blockflow algorithm and transactions can happen on-chain in parallel.
 
 VM: **What is the stateful UTXO model and how does it work at a high level?**
 
@@ -106,7 +106,7 @@ VM: **If the tokens are native in Alephium, does this mean I can pay GAS in any 
 
 CW: No. In our design, only the built-in token can be used to pay for transaction fees (gas). Using arbitrary tokens to pay for gas can be difficult because it requires an oracle to accurately determine the token’s price before the transaction. Additionally, allowing arbitrary tokens to pay for gas can make the design and code more complex, which may not be worth the added complexity. Instead, using the built-in token, or blockchain token, to pay for gas fees ensures that there is demand for the token. This helps to create a sustainable model for the platform.
 
-VM: **Cosmos studied the possibility of** <a href="https://docs.cosmos.network/main/core/tips#fee-payers-market" data-href="https://docs.cosmos.network/main/core/tips#fee-payers-market"><strong>paying for the gas with UST</strong></a> **at one time.**
+VM: **Cosmos studied the possibility of** <a href="https://docs.cosmos.network/main/core/tips#fee-payers-market" ><strong>paying for the gas with UST</strong></a> **at one time.**
 
 CW: Using stablecoins as a method to pay transaction fees on a blockchain platform has its pros and cons and can be interesting for future research. On the plus side, it offers stability. However, if a stablecoin loses its peg, it could impact the blockchain’s functionality. This could necessitate updates to the blockchain to either remove or add stablecoins as a valid form of payment, a process which can be complicated and time-consuming.
 
@@ -116,7 +116,7 @@ VM: **Alephium’s UTXO is called _stateful_ UTXO. Can you just explain what “
 
 CW: State can be defined as a set of variables describing a certain system (in this case the Alephium blockchain) at a specific time. Every action like a transaction between two addresses or a smart contract interaction will create/update the state.
 
-In fact, in Alephium, there are several types of data contained in the state: UTXO sets (describing address balances), smart contract logic (the “programs”) and smart contracts data. All of these together describe the state of Alephium, and are stored in <a href="https://ethereum.org/pt/developers/docs/data-structures-and-encoding/patricia-merkle-trie/" data-href="https://ethereum.org/pt/developers/docs/data-structures-and-encoding/patricia-merkle-trie/">Merkle Trees</a>.
+In fact, in Alephium, there are several types of data contained in the state: UTXO sets (describing address balances), smart contract logic (the “programs”) and smart contracts data. All of these together describe the state of Alephium, and are stored in <a href="https://ethereum.org/pt/developers/docs/data-structures-and-encoding/patricia-merkle-trie/" >Merkle Trees</a>.
 
 VM: **Can you tell us more about this? Where is the state actually stored, and how? Why have more than one merkle tree?**
 
@@ -161,4 +161,4 @@ Eth core researchers are actively researching this direction, but all solutions 
 
 ---
 
-This is the end of Part 1! And you can keep reading Part 2 <a href="https://medium.com/@alephium/tech-talk-2-mysteries-of-stateful-utxo-the-ultimate-guide-to-alephiums-accounting-model-and-f6b6868ef873" data-href="https://medium.com/@alephium/tech-talk-2-mysteries-of-stateful-utxo-the-ultimate-guide-to-alephiums-accounting-model-and-f6b6868ef873">here</a>! If you have questions on this topic, please come to Alephium’s <a href="https://discord.gg/XsGpZ5VDTM" data-href="https://discord.gg/XsGpZ5VDTM"><strong>Discord</strong></a>, <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup"><strong>Telegram</strong></a>, or reach out on <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium"><strong>Twitter</strong></a>!
+This is the end of Part 1! And you can keep reading Part 2 <a href="https://medium.com/@alephium/tech-talk-2-mysteries-of-stateful-utxo-the-ultimate-guide-to-alephiums-accounting-model-and-f6b6868ef873" >here</a>! If you have questions on this topic, please come to Alephium’s <a href="https://discord.gg/XsGpZ5VDTM" ><strong>Discord</strong></a>, <a href="https://t.me/alephiumgroup" ><strong>Telegram</strong></a>, or reach out on <a href="https://twitter.com/alephium" ><strong>Twitter</strong></a>!

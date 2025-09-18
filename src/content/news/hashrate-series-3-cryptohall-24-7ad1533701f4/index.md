@@ -7,13 +7,13 @@ featuredImage: image_9fb00a1330.png
 title: 'Hashrate Series #3: CryptoHall 24'
 ---
 
-_The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem actors to sustain and improve Alephium’s reliability. This series is about them, and after_ <a href="https://medium.com/@alephium/hashrate-series-1-nicehash-ee0936adf899" data-href="https://medium.com/@alephium/hashrate-series-1-nicehash-ee0936adf899"><em>Nicehash</em></a> _and_ <a href="https://medium.com/@alephium/hashrate-series-2-goldshell-93cc51a86640" data-href="https://medium.com/@alephium/hashrate-series-2-goldshell-93cc51a86640"><em>Goldshell</em></a>_, please welcome CryptoHall 24._
+_The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem actors to sustain and improve Alephium’s reliability. This series is about them, and after_ <a href="https://medium.com/@alephium/hashrate-series-1-nicehash-ee0936adf899" ><em>Nicehash</em></a> _and_ <a href="https://medium.com/@alephium/hashrate-series-2-goldshell-93cc51a86640" ><em>Goldshell</em></a>_, please welcome CryptoHall 24._
 
 Here, Frederick shares his crypto journey, and how CryptoHall24 came to be. Here’s the full video interview. If you prefer reading, find the full (slightly edited) transcript below.
 
 `video: https://www.youtube.com/watch?v=UvXz443eWng`
 
-#### This is the first video interview in our Hashrate series, which is usually in written format. A few months ago, <a href="https://youtu.be/XudpYH4znnQ?feature=shared" data-href="https://youtu.be/XudpYH4znnQ?feature=shared">you interviewed Maud</a>, and it was an enjoyable experience for everyone. So, welcome again.
+#### This is the first video interview in our Hashrate series, which is usually in written format. A few months ago, <a href="https://youtu.be/XudpYH4znnQ?feature=shared" >you interviewed Maud</a>, and it was an enjoyable experience for everyone. So, welcome again.
 
 Thank you!
 
@@ -23,11 +23,11 @@ Yes, I’m Frederick. I’ll be 30 in two weeks, so I’m hitting the big 3–0 
 
 #### That’s not a typical job for a 30-year-old in Düsseldorf! I imagine you don’t have many competitors around. Can you tell us more about CryptoHall 24 — when and how it was founded, and how you got into this industry?
 
-CryptoHall 24 is actually my second company. I also run another company called <a href="https://en.myshoefitter.com/" data-href="https://en.myshoefitter.com/">MyShoeFitter</a>. In collaboration with the <a href="https://www.fraunhofer.de/en.html" data-href="https://www.fraunhofer.de/en.html">Fraunhofer Institute</a>, we developed an AI model in 2019 to measure feet using pictures. The idea was to help people find the perfect shoe size when shopping online by comparing foot measurements with the shoe’s internal dimensions.
+CryptoHall 24 is actually my second company. I also run another company called <a href="https://en.myshoefitter.com/" >MyShoeFitter</a>. In collaboration with the <a href="https://www.fraunhofer.de/en.html" >Fraunhofer Institute</a>, we developed an AI model in 2019 to measure feet using pictures. The idea was to help people find the perfect shoe size when shopping online by comparing foot measurements with the shoe’s internal dimensions.
 
 #### The Fraunhofer Institute, where MP3 was invented, right?
 
-Yes, correct. The project was mainly developed during the COVID pandemic, but it faced delays due to the lockdowns, which affected our work with the Fraunhofer Institute. During that time, I became a father and needed to find a way to support my family. After exploring various options, I discovered crypto trading, which was stressful and not for me. Then, I stumbled upon a YouTube video by German YouTuber <a href="https://www.youtube.com/@TorbenPlatzer" data-href="https://www.youtube.com/@TorbenPlatzer">Thorben Platzer</a> about crypto mining. The idea of having a computer work for you while you do minimal maintenance was fascinating to me, and that’s how I got into it.
+Yes, correct. The project was mainly developed during the COVID pandemic, but it faced delays due to the lockdowns, which affected our work with the Fraunhofer Institute. During that time, I became a father and needed to find a way to support my family. After exploring various options, I discovered crypto trading, which was stressful and not for me. Then, I stumbled upon a YouTube video by German YouTuber <a href="https://www.youtube.com/@TorbenPlatzer" >Thorben Platzer</a> about crypto mining. The idea of having a computer work for you while you do minimal maintenance was fascinating to me, and that’s how I got into it.
 
 #### So, you started with mining, but what made you transition to building a company like CryptoHall 24?
 
@@ -103,9 +103,9 @@ We’re looking to expand internationally. Currently, our main market is the Ger
 
 If you’re interested in Alephium or crypto mining in general, I highly encourage you to get involved. Whether it’s setting up a small home miner or investing in larger ASICs, the experience is not only rewarding financially but also provides a deeper understanding of the blockchain space. And, of course, if you need any hardware or hosting services, feel free to contact us at CryptoHall 24.
 
-_Twitter & other socials links:_ <a href="https://x.com/cryptohall24" data-href="https://x.com/cryptohall24" rel="nofollow noopener"><em>https://x.com/cryptohall24</em></a>_,   
-Website:_ <a href="https://www.cryptohall24.com/en" data-href="https://www.cryptohall24.com/en" rel="nofollow noopener"><em>https://www.cryptohall24.com/en</em></a>
+_Twitter & other socials links:_ <a href="https://x.com/cryptohall24"  rel="nofollow noopener"><em>https://x.com/cryptohall24</em></a>_,   
+Website:_ <a href="https://www.cryptohall24.com/en"  rel="nofollow noopener"><em>https://www.cryptohall24.com/en</em></a>
 
 ---
 
-That is the end of this interview! If you are interested or have extra questions, you are welcome to reach out on our [Discord](/discord), or in the <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Alephium Telegram channel</a>. Don’t forget to follow <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium">@alephium on Twitter</a> to stay up-to-date.
+That is the end of this interview! If you are interested or have extra questions, you are welcome to reach out on our [Discord](/discord), or in the <a href="https://t.me/alephiumgroup" >Alephium Telegram channel</a>. Don’t forget to follow <a href="https://twitter.com/alephium" >@alephium on Twitter</a> to stay up-to-date.

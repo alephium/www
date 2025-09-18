@@ -15,11 +15,11 @@ Goldshell started in 2017 with a team that’s been deep in the world of integra
 
 **You guys were the first ASICs suppliers to the Alephium mining community, from April 2024! Before diving in the how & why, can you tell us how your experience of the Alephium core-contributors & the community was?**
 
-Working with the Alephium community has been a bit like a treasure hunt — full of discoveries. We’ve connected through AMA sessions, kept up with their tech updates, and even tried some fun stuff like launching miner-related NFTs on <a href="https://deadrare.io/" data-href="https://deadrare.io/">Deadrare</a>. This was our first time merging physical products with the digital world, and it was a blast. It added a whole new level of engagement for users, turning mining into more than just a technical process.
+Working with the Alephium community has been a bit like a treasure hunt — full of discoveries. We’ve connected through AMA sessions, kept up with their tech updates, and even tried some fun stuff like launching miner-related NFTs on <a href="https://deadrare.io/" >Deadrare</a>. This was our first time merging physical products with the digital world, and it was a blast. It added a whole new level of engagement for users, turning mining into more than just a technical process.
 
 **You’ve already announced a second generation of ASICs miners (Goldshell AL BOX II PLUS). Can you tell us more about this product?**
 
-We recently rolled out the <a href="https://www.goldshell.com/product/goldshell-al-box-%E2%85%B1-plus/" data-href="https://www.goldshell.com/product/goldshell-al-box-%E2%85%B1-plus/">AL BOX II PLUS</a>, which packs more punch and makes things a lot easier by integrating the power supply right into the machine. Before, we had to remind people, “Hey, don’t forget to buy that power supply!” Now, it’s just plug-and-play, like setting up a toaster. We also introduced the ECHO series, which we like to call our “silent powerhouse.” It’s perfect for those who need solid performance but also want something super quiet — ideal for people with data centers or low energy costs.
+We recently rolled out the <a href="https://www.goldshell.com/product/goldshell-al-box-%E2%85%B1-plus/" >AL BOX II PLUS</a>, which packs more punch and makes things a lot easier by integrating the power supply right into the machine. Before, we had to remind people, “Hey, don’t forget to buy that power supply!” Now, it’s just plug-and-play, like setting up a toaster. We also introduced the ECHO series, which we like to call our “silent powerhouse.” It’s perfect for those who need solid performance but also want something super quiet — ideal for people with data centers or low energy costs.
 
 **How did you first discover Alephium, and what caught your attention? What factors do you consider when evaluating a PoW chain for investment?**
 
@@ -47,7 +47,7 @@ Alephium isn’t our first rodeo. We’ve developed ASIC miners for other PoW ch
 
 **It seems you have a line of products specifically designed for home miners. Most ASICs are usually conceived for bigger, more professional operations. Can you tell us more about why you are targeting the home miner market?**
 
-We’re all about making mining more accessible. Traditional ASIC miners are often big, complicated, and costly — pretty intimidating for the average person. We wanted to break down those barriers, so we focused on balancing performance with ease of use. Since our acquisition by <a href="https://intchains.com/" data-href="https://intchains.com/">Intchains</a>, we’ve had the resources to create products that really fit the needs of home users, making mining something that’s easy, fun, and open to everyone.
+We’re all about making mining more accessible. Traditional ASIC miners are often big, complicated, and costly — pretty intimidating for the average person. We wanted to break down those barriers, so we focused on balancing performance with ease of use. Since our acquisition by <a href="https://intchains.com/" >Intchains</a>, we’ve had the resources to create products that really fit the needs of home users, making mining something that’s easy, fun, and open to everyone.
 
 **What new developments and directions will Goldshell explore in the future?**
 
@@ -57,8 +57,8 @@ Looking ahead, we’re diving deeper into blockchain infrastructure and explorin
 
 We’re always looking for new ways to collaborate, whether it’s with dApps, developer communities, or NFT projects. We’d love to see creative uses of our miners, like designing unique versions that can bring even more exposure. We’re excited to work with more partners and keep building a brighter future for crypto together!
 
-_Twitter & other socials links:_ <a href="https://x.com/goldshellminer" data-href="https://x.com/goldshellminer"><em>https://x.com/goldshellminer</em></a>_,_ <a href="https://t.co/tg2fxjuAR9" data-href="https://t.co/tg2fxjuAR9"><em>discord.gg/goldshellminer</em></a>_  
-Here’s the_ <a href="https://x.com/i/spaces/1BRJjPeAbYNKw" data-href="https://x.com/i/spaces/1BRJjPeAbYNKw"><em>X Space with Maud &amp; Goldshell</em></a> _at the occasion of the AL1 launch!_
+_Twitter & other socials links:_ <a href="https://x.com/goldshellminer" ><em>https://x.com/goldshellminer</em></a>_,_ <a href="https://t.co/tg2fxjuAR9" ><em>discord.gg/goldshellminer</em></a>_  
+Here’s the_ <a href="https://x.com/i/spaces/1BRJjPeAbYNKw" ><em>X Space with Maud &amp; Goldshell</em></a> _at the occasion of the AL1 launch!_
 
 _Website: goldshell.com_
 
@@ -66,4 +66,4 @@ _Website: goldshell.com_
 
 ---
 
-That is the end of this interview! If you are interested or have extra questions, you are welcome to reach out on our [Discord](/discord), or in the <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Alephium Telegram channel</a>. Don’t forget to follow <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium">@alephium on Twitter</a> to stay up-to-date.
+That is the end of this interview! If you are interested or have extra questions, you are welcome to reach out on our [Discord](/discord), or in the <a href="https://t.me/alephiumgroup" >Alephium Telegram channel</a>. Don’t forget to follow <a href="https://twitter.com/alephium" >@alephium on Twitter</a> to stay up-to-date.

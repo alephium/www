@@ -46,7 +46,7 @@ The changes are not expected to significantly impact miners in the short term, a
 
 #### Schnorr Signatures Support
 
-<a href="https://twitter.com/alephium/status/1638541074074578946" data-href="https://twitter.com/alephium/status/1638541074074578946">Schnorr Signatures</a> are a type of digital signature algorithm that was first proposed by Claus-Peter Schnorr in 1989. They are similar in function to other digital signature algorithms, such as the widely used RSA and Elliptic Curve Digital Signature Algorithm (ECDSA), but have some advantages over those algorithms in terms of efficiency and security.
+<a href="https://twitter.com/alephium/status/1638541074074578946" >Schnorr Signatures</a> are a type of digital signature algorithm that was first proposed by Claus-Peter Schnorr in 1989. They are similar in function to other digital signature algorithms, such as the widely used RSA and Elliptic Curve Digital Signature Algorithm (ECDSA), but have some advantages over those algorithms in terms of efficiency and security.
 
 Schnorr signatures can be used to create multisignature schemes, where multiple parties can jointly sign a transaction or message. This can be useful in situations where a group of people or organizations need to collectively authorize an action.
 
@@ -54,7 +54,7 @@ In addition, Schnorr signatures support a technique called “key aggregation”
 
 Now the Alephium blockchain enabled:
 
-- Interaction with <a href="https://nostr.com/" data-href="https://nostr.com/">Nostr</a> and other Schnorr-based apps;
+- Interaction with <a href="https://nostr.com/" >Nostr</a> and other Schnorr-based apps;
 - Increased privacy;
 - Compression of tx data on-chain in case of multisig and coin-join or atomic swap;
 - Interoperability with other Schnorr-based chains & protocols.
@@ -95,4 +95,4 @@ Now that the network is upgraded, different initiatives will be developed in par
 
 ---
 
-If you have questions or want to know more, please come to Alephium’s [Discord](/discord), <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Telegram</a>, or reach out on <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium">Twitter</a>!
+If you have questions or want to know more, please come to Alephium’s [Discord](/discord), <a href="https://t.me/alephiumgroup" >Telegram</a>, or reach out on <a href="https://twitter.com/alephium" >Twitter</a>!

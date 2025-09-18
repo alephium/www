@@ -13,7 +13,7 @@ _Cedric Crispin, a French miner passionate about Alephium, decentralisation and 
 
 #### **What can we call you, and where should we picture you?**
 
-My name is the same of my mining pool: <a href="https://alephium.cedric-crispin.com/" data-href="https://alephium.cedric-crispin.com/">Cedric CRISPIN</a>. I’m from France, more specifically, the French West Indies (Martinique).
+My name is the same of my mining pool: <a href="https://alephium.cedric-crispin.com/" >Cedric CRISPIN</a>. I’m from France, more specifically, the French West Indies (Martinique).
 
 #### **Can you tell us a bit about yourself, your passion for mining, and your background story?**
 
@@ -21,7 +21,7 @@ I’m currently a Python lead developer in a web agency. I graduated with a degr
 
 #### **When & how did you get into mining cryptocurrency?**
 
-Before I truly got involved in mining, I had one major event in my life. In 2014, my Thai fiancee, whom I met a couple of years before, got a job opportunity in her home country, and she asked me if I would accept to follow her and live there. Of course, I said yes. For two reasons: discovering her roots in Southeast Asia and Thailand would have been an <a href="https://www.instagram.com/blackmennewstyle/" data-href="https://www.instagram.com/blackmennewstyle/">incredible playground for aerial videography/photography</a>, which is also one of my big passions (it is still to this day, despite all the unfair regulations created against “consumer class drones”).
+Before I truly got involved in mining, I had one major event in my life. In 2014, my Thai fiancee, whom I met a couple of years before, got a job opportunity in her home country, and she asked me if I would accept to follow her and live there. Of course, I said yes. For two reasons: discovering her roots in Southeast Asia and Thailand would have been an <a href="https://www.instagram.com/blackmennewstyle/" >incredible playground for aerial videography/photography</a>, which is also one of my big passions (it is still to this day, despite all the unfair regulations created against “consumer class drones”).
 
 It was only around 2017 when I experienced my very first attempt at GPU mining, but back then, we were living in a rented apartment, and the owner was nefariously known for cheating on the electricity bills.
 
@@ -43,7 +43,7 @@ Since I started mining, I have always wanted to learn about running a pool, and 
 
 <figure id="549f" class="graf graf--figure graf-after--p">
 <img src="image_596cb91bc2.png" class="graf-image" data-image-id="1*l5QFRKKcBxI8NEL-gBxbpQ.png" data-width="1318" data-height="595" />
-<figcaption><a href="https://alephium.cedric-crispin.com/" class="markup--anchor markup--figure-anchor" data-href="https://alephium.cedric-crispin.com/" rel="nofollow noopener">https://alephium.cedric-crispin.com/</a></figcaption>
+<figcaption><a href="https://alephium.cedric-crispin.com/" class="markup--anchor markup--figure-anchor"  rel="nofollow noopener">https://alephium.cedric-crispin.com/</a></figcaption>
 </figure>
 
 But I think the main reason which pushed me to create my mining pool is the same reason which also pushed me not to use HiveOS and developed my own mining scripts while using bare bone OS like GNU/Linux Debian and Ubuntu: I always wanted as much as possible to be in control of the software I use.
@@ -68,8 +68,8 @@ Decentralize the ALPH PoW network and any other network. Participate in communit
 
 #### **Social networks:**
 
-<a href="https://twitter.com/Cedric_Crispin" data-href="https://twitter.com/Cedric_Crispin">https://twitter.com/Cedric_Crispin</a>
+<a href="https://twitter.com/Cedric_Crispin" >https://twitter.com/Cedric_Crispin</a>
 
 ---
 
-That is the end of this interview! If you are interested or have extra questions, you are welcome to reach out on our [Discord](/discord), or in the <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Alephium Telegram channel</a>. Don’t forget to follow <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium">@alephium on Twitter</a> to stay up-to-date.
+That is the end of this interview! If you are interested or have extra questions, you are welcome to reach out on our [Discord](/discord), or in the <a href="https://t.me/alephiumgroup" >Alephium Telegram channel</a>. Don’t forget to follow <a href="https://twitter.com/alephium" >@alephium on Twitter</a> to stay up-to-date.

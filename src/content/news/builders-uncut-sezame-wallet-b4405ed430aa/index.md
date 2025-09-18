@@ -9,7 +9,7 @@ title: Builders Uncut — Sezame Wallet
 
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
-Here, Tobias (a founding member of <a href="https://sezame.app/" data-href="https://sezame.app/">Sezame Wallet</a>) discusses the project’s journey in the Alephium ecosystem. He highlights the creation of a mobile wallet with integrated cloud mining, making Alephium accessible to non-technical users, and shares their plans for the future. Find the full (slightly edited) transcript below if you prefer reading.
+Here, Tobias (a founding member of <a href="https://sezame.app/" >Sezame Wallet</a>) discusses the project’s journey in the Alephium ecosystem. He highlights the creation of a mobile wallet with integrated cloud mining, making Alephium accessible to non-technical users, and shares their plans for the future. Find the full (slightly edited) transcript below if you prefer reading.
 
 `video: https://www.youtube.com/watch?v=_tvCwzxQhdM`
 
@@ -68,10 +68,10 @@ I’m excited about the future and eager to update everyone on our progress.
 **Links:**
 
 **Sezame Wallet**  
-Website: <a href="https://sezame.app/" data-href="https://sezame.app/" rel="nofollow noopener">https://sezame.app/</a>  
-Twitter: <a href="https://twitter.com/SesameWallet" data-href="https://twitter.com/SesameWallet" rel="nofollow noopener">https://twitter.com/SesameWallet</a>  
-Telegram: <a href="https://t.me/sesamewalletgroup" data-href="https://t.me/sesamewalletgroup" rel="nofollow noopener">https://t.me/sesamewalletgroup</a>
+Website: <a href="https://sezame.app/"  rel="nofollow noopener">https://sezame.app/</a>  
+Twitter: <a href="https://twitter.com/SesameWallet"  rel="nofollow noopener">https://twitter.com/SesameWallet</a>  
+Telegram: <a href="https://t.me/sesamewalletgroup"  rel="nofollow noopener">https://t.me/sesamewalletgroup</a>
 
 ---
 
-For any questions or feedback, reach out to us on [Discord](/discord) or <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Telegram</a>, and follow <a href="https://x.com/alephium" data-href="https://x.com/alephium">@alephium on Twitter</a> for the latest updates!
+For any questions or feedback, reach out to us on [Discord](/discord) or <a href="https://t.me/alephiumgroup" >Telegram</a>, and follow <a href="https://x.com/alephium" >@alephium on Twitter</a> for the latest updates!

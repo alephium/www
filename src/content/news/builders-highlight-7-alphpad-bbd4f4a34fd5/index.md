@@ -7,17 +7,17 @@ featuredImage: image_bdb32de17e.jpg
 title: 'Builders Highlight #7: AlphPad'
 ---
 
-_Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real utility for users. In the Builders Highlight series, they share more about their projects, thoughts, and insights on why building on Alephium. You can find_ <a href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" data-href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881"><em>#1 here</em></a>_,_ <a href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" data-href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c"><em>#2 here</em></a>, <a href="https://medium.com/@alephium/builders-highlight-3-ayin-6be4a6bd4ec2" data-href="https://medium.com/@alephium/builders-highlight-3-ayin-6be4a6bd4ec2"><em>#3 here</em></a>, <a href="https://medium.com/@alephium/builders-highlight-4-no-trust-verify-9ea495ca826f" data-href="https://medium.com/@alephium/builders-highlight-4-no-trust-verify-9ea495ca826f"><em>#4 here</em></a>, <a href="https://medium.com/@alephium/builders-highlight-5-deadrare-d5ff90d6161e" data-href="https://medium.com/@alephium/builders-highlight-5-deadrare-d5ff90d6161e"><em>#5 here</em></a>, _and_ <a href="https://medium.com/@alephium/builders-highlight-6-what-the-duck-0aedc602ecfd" data-href="https://medium.com/@alephium/builders-highlight-6-what-the-duck-0aedc602ecfd"><em>#6 here</em></a>_!_
+_Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real utility for users. In the Builders Highlight series, they share more about their projects, thoughts, and insights on why building on Alephium. You can find_ <a href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" ><em>#1 here</em></a>_,_ <a href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" ><em>#2 here</em></a>, <a href="https://medium.com/@alephium/builders-highlight-3-ayin-6be4a6bd4ec2" ><em>#3 here</em></a>, <a href="https://medium.com/@alephium/builders-highlight-4-no-trust-verify-9ea495ca826f" ><em>#4 here</em></a>, <a href="https://medium.com/@alephium/builders-highlight-5-deadrare-d5ff90d6161e" ><em>#5 here</em></a>, _and_ <a href="https://medium.com/@alephium/builders-highlight-6-what-the-duck-0aedc602ecfd" ><em>#6 here</em></a>_!_
 
-This episode is about <a href="https://alphpad.com" data-href="https://alphpad.com">AlphPad</a>, an Alephium-native launchpad for IDOs. Here they share a little bit about his inspiration, the challenges this project brought, and some plans for the future.
+This episode is about <a href="https://alphpad.com" >AlphPad</a>, an Alephium-native launchpad for IDOs. Here they share a little bit about his inspiration, the challenges this project brought, and some plans for the future.
 
 #### **Please tell us a bit about yourself. What is it you do? (as a job, as a hobby, or in general!)**
 
-<a href="https://twitter.com/tinfoilhatc4t" data-href="https://twitter.com/tinfoilhatc4t">Tinfoil Cat</a>: We are a small and lean team that has been deeply involved in the crypto space for a long time. We’ve witnessed the inception of many trends like DeFi, NFTs, etc. Passionate about crypto, we both started as miners, transitioned to investing and on-chain ecosystems, and are now focusing on development.
+<a href="https://twitter.com/tinfoilhatc4t" >Tinfoil Cat</a>: We are a small and lean team that has been deeply involved in the crypto space for a long time. We’ve witnessed the inception of many trends like DeFi, NFTs, etc. Passionate about crypto, we both started as miners, transitioned to investing and on-chain ecosystems, and are now focusing on development.
 
 #### Tell us a little bit about your project. What is it, what does it do, and how does it interact with the Alephium blockchain?
 
-<a href="https://twitter.com/krk0d3r" data-href="https://twitter.com/krk0d3r">krk0d3r</a>: We’re developing a <a href="https://twitter.com/alphpad" data-href="https://twitter.com/alphpad">token launchpad</a> with a clear mission: to empower the next wave of innovative blockchain projects on Alephium. As strong believers in Alephium’s potential, we want to contribute to its burgeoning ecosystem.
+<a href="https://twitter.com/krk0d3r" >krk0d3r</a>: We’re developing a <a href="https://twitter.com/alphpad" >token launchpad</a> with a clear mission: to empower the next wave of innovative blockchain projects on Alephium. As strong believers in Alephium’s potential, we want to contribute to its burgeoning ecosystem.
 
 #### How did you find out about Alephium? What motivated you to develop on the Alephium blockchain, and what sets it apart from other blockchain platforms?
 
@@ -53,18 +53,18 @@ Tinfoil Cat: Presenting our project to the Alephium community was met with incre
 
 #### Where can we stay in touch with your project & with you? Is it possible to contribute?
 
-Tinfoil cat: You can follow us on major <a href="https://twitter.com/alphpad" data-href="https://twitter.com/alphpad">social platforms</a>; find the links at the bottom of our website. Currently, we’re focused on a small, dedicated team, but as the project evolves, more opportunities for community contribution will open up.
+Tinfoil cat: You can follow us on major <a href="https://twitter.com/alphpad" >social platforms</a>; find the links at the bottom of our website. Currently, we’re focused on a small, dedicated team, but as the project evolves, more opportunities for community contribution will open up.
 
 #### Anything else you’d want to add?
 
 Tinfoil cat: Embarking on this journey with Alph at this moment is exhilarating. It’s a golden opportunity to be early in a rising ecosystem. We have ambitious plans for the future and hope the community will join us on this exciting journey.
 
-_Thanks,_ <a href="https://twitter.com/tinfoilhatc4t" data-href="https://twitter.com/tinfoilhatc4t"><em>Tinfoil Cat</em></a> _and_ <a href="https://twitter.com/krk0d3r" data-href="https://twitter.com/krk0d3r"><em>krk0der</em></a>, _for your answers! Alephium is thrilled to have such talent builders in the community! You can find the AlphPad site_ <a href="https://alphpad.com/" data-href="https://alphpad.com/"><em>here</em></a>_, and the Twitter account_ <a href="https://twitter.com/alphpad" data-href="https://twitter.com/alphpad"><em>here</em></a>_._
+_Thanks,_ <a href="https://twitter.com/tinfoilhatc4t" ><em>Tinfoil Cat</em></a> _and_ <a href="https://twitter.com/krk0d3r" ><em>krk0der</em></a>, _for your answers! Alephium is thrilled to have such talent builders in the community! You can find the AlphPad site_ <a href="https://alphpad.com/" ><em>here</em></a>_, and the Twitter account_ <a href="https://twitter.com/alphpad" ><em>here</em></a>_._
 
 _Disclaimer: While Alephium is happy to support a growing developer community, it would like to clarify that it does not endorse, audit, or review any software presented in this series and encourages all users to make informed decisions and take personal responsibility for their actions._
 
 ---
 
-Have you built something or have a nice idea and want to request a grant or reward? You can access the <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" data-href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md">Alephium Community Grants &amp; Reward Program page</a> for more info!
+Have you built something or have a nice idea and want to request a grant or reward? You can access the <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" >Alephium Community Grants &amp; Reward Program page</a> for more info!
 
-If you need help or have extra questions, you are welcome to reach out in the \# 🎨dev-dapp channel on [Discord](/discord), or in the Alephium <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Telegram</a> channel. Don’t forget to follow <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium">@alephium on Twitter</a> to stay up-to-date.
+If you need help or have extra questions, you are welcome to reach out in the \# 🎨dev-dapp channel on [Discord](/discord), or in the Alephium <a href="https://t.me/alephiumgroup" >Telegram</a> channel. Don’t forget to follow <a href="https://twitter.com/alephium" >@alephium on Twitter</a> to stay up-to-date.

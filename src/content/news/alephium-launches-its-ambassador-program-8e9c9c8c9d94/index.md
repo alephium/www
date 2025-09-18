@@ -13,7 +13,7 @@ Following the success of our previous community initiatives, we’re thrilled to
 
 At Alephium, since the beginning of our journey, we’ve been in close contact with our community and have evolved from its feedback and help, as we are today.
 
-In the past 2 years, the <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" data-href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md">community rewards</a> have allowed us to <a href="https://medium.com/@alephium/one-year-of-community-contributions-b3142b243e3e" data-href="https://medium.com/@alephium/one-year-of-community-contributions-b3142b243e3e">reward community members</a> for their awesome contributions (of which there are many!). But as we continue to grow and evolve, we recognize the need for a more structured and inclusive approach to community engagement.
+In the past 2 years, the <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" >community rewards</a> have allowed us to <a href="https://medium.com/@alephium/one-year-of-community-contributions-b3142b243e3e" >reward community members</a> for their awesome contributions (of which there are many!). But as we continue to grow and evolve, we recognize the need for a more structured and inclusive approach to community engagement.
 
 ### **Enter the Ambassador program!**
 
@@ -55,13 +55,13 @@ And more… (any other idea? Send it to us!)
 
 The first program will onboard up to 10 Ambassadors for the first cohort.
 
-Please submit your candidacy <a href="https://forms.gle/e4BVqssCHPVnGpWS7" data-href="https://forms.gle/e4BVqssCHPVnGpWS7">here</a> by the 20th of January, 2024.
+Please submit your candidacy <a href="https://forms.gle/e4BVqssCHPVnGpWS7" >here</a> by the 20th of January, 2024.
 
 Alephium will evaluate the submissions and reach out to all applicants via email with feedback on their applications. Those who will be accepted in the first cohort will then be onboarded into the program. We will re-open the program again once we gather our learnings from the first cohort.
 
 To be eligible to participate in the program, Ambassador applicants will need to be willing to commit for at least 3 months, as well as pass some eligibility criteria.
 
-If you have more questions, please email <a href="mailto:community@alephium.org" data-href="mailto:community@alephium.org">community@alephium.org</a>.
+If you have more questions, please email <a href="mailto:community@alephium.org" >community@alephium.org</a>.
 
 ### **Program Structure and Perks**
 
@@ -81,9 +81,9 @@ It’s ok! You have 2 more ways to still contribute and be rewarded!
 
 First, you can still claim community rewards, with two important differences:
 
-- you will now need to signal to us your content through <a href="https://docs.google.com/forms/d/e/1FAIpQLSeaSouXl-Hwd_lZohwgysqk-8whc9bydHuVpSCr1C6IoDHuoA/viewform" data-href="https://docs.google.com/forms/d/e/1FAIpQLSeaSouXl-Hwd_lZohwgysqk-8whc9bydHuVpSCr1C6IoDHuoA/viewform">this form</a>.
+- you will now need to signal to us your content through <a href="https://docs.google.com/forms/d/e/1FAIpQLSeaSouXl-Hwd_lZohwgysqk-8whc9bydHuVpSCr1C6IoDHuoA/viewform" >this form</a>.
 - the scope of things that will be rewarded will be narrowed down. Only the out-of-the-ordinary / most extraordinary proposals will be awarded through the community rewards program going forward.
 
-Second, we will ramp up our use of the <a href="https://zealy.io/c/alephium/questboard" data-href="https://zealy.io/c/alephium/questboard">Zealy quest platform</a>, giving monthly rewards to the most active & efficient users! We are still designing that program and will update you here when it’s done.
+Second, we will ramp up our use of the <a href="https://zealy.io/c/alephium/questboard" >Zealy quest platform</a>, giving monthly rewards to the most active & efficient users! We are still designing that program and will update you here when it’s done.
 
-So, what are you waiting for? Ready to join us to advance the cause of Alephium? Start <a href="https://forms.gle/e4BVqssCHPVnGpWS7" data-href="https://forms.gle/e4BVqssCHPVnGpWS7">here</a>!
+So, what are you waiting for? Ready to join us to advance the cause of Alephium? Start <a href="https://forms.gle/e4BVqssCHPVnGpWS7" >here</a>!

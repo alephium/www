@@ -7,9 +7,9 @@ featuredImage: image_34436381c0.jpg
 title: 'Builders Highlight #13: Phoenix Finance'
 ---
 
-_Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real utility for users. In the Builders Highlight series, they share more about their projects, thoughts, and insights on why building on Alephium. You can find_ <a href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" data-href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881"><em>Sezame Wallet</em></a>_,_ <a href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" data-href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c"><em>Alphpaca NFTs</em></a>, <a href="https://medium.com/@alephium/builders-highlight-3-ayin-6be4a6bd4ec2" data-href="https://medium.com/@alephium/builders-highlight-3-ayin-6be4a6bd4ec2"><em>Ayin</em></a>, <a href="https://medium.com/@alephium/builders-highlight-4-no-trust-verify-9ea495ca826f" data-href="https://medium.com/@alephium/builders-highlight-4-no-trust-verify-9ea495ca826f"><em>No Trust, Verify</em></a>, <a href="https://medium.com/@alephium/builders-highlight-5-deadrare-d5ff90d6161e" data-href="https://medium.com/@alephium/builders-highlight-5-deadrare-d5ff90d6161e"><em>Deadrare</em></a>, <a href="https://medium.com/@alephium/builders-highlight-6-what-the-duck-0aedc602ecfd" data-href="https://medium.com/@alephium/builders-highlight-6-what-the-duck-0aedc602ecfd"><em>What the Duck</em></a>, <a href="https://medium.com/@alephium/builders-highlight-7-alphpad-bbd4f4a34fd5" data-href="https://medium.com/@alephium/builders-highlight-7-alphpad-bbd4f4a34fd5"><em>Alphpad</em></a>, <a href="https://medium.com/@alephium/builders-highlight-8-ngu-money-f8bf05e36e99" data-href="https://medium.com/@alephium/builders-highlight-8-ngu-money-f8bf05e36e99"><em>NGU</em></a>_,_ <a href="https://medium.com/@alephium/builders-highlight-9-mobula-f9c45dc6c691" data-href="https://medium.com/@alephium/builders-highlight-9-mobula-f9c45dc6c691"><em>Mobula,</em></a> <a href="https://medium.com/@alephium/builders-highlight-10-amolyus-39e03b6bd3f0" data-href="https://medium.com/@alephium/builders-highlight-10-amolyus-39e03b6bd3f0"><em>Amolyus</em></a>, <a href="https://medium.com/@alephium/builders-highlight-11-fugashu-4f8566d1a8f0" data-href="https://medium.com/@alephium/builders-highlight-11-fugashu-4f8566d1a8f0"><em>Fugashu</em></a> _and_ <a href="https://medium.com/@alephium/builders-highlight-12-linx-0c9a315956fd" data-href="https://medium.com/@alephium/builders-highlight-12-linx-0c9a315956fd"><em>Linx</em></a> _episodes here!_
+_Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real utility for users. In the Builders Highlight series, they share more about their projects, thoughts, and insights on why building on Alephium. You can find_ <a href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" ><em>Sezame Wallet</em></a>_,_ <a href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" ><em>Alphpaca NFTs</em></a>, <a href="https://medium.com/@alephium/builders-highlight-3-ayin-6be4a6bd4ec2" ><em>Ayin</em></a>, <a href="https://medium.com/@alephium/builders-highlight-4-no-trust-verify-9ea495ca826f" ><em>No Trust, Verify</em></a>, <a href="https://medium.com/@alephium/builders-highlight-5-deadrare-d5ff90d6161e" ><em>Deadrare</em></a>, <a href="https://medium.com/@alephium/builders-highlight-6-what-the-duck-0aedc602ecfd" ><em>What the Duck</em></a>, <a href="https://medium.com/@alephium/builders-highlight-7-alphpad-bbd4f4a34fd5" ><em>Alphpad</em></a>, <a href="https://medium.com/@alephium/builders-highlight-8-ngu-money-f8bf05e36e99" ><em>NGU</em></a>_,_ <a href="https://medium.com/@alephium/builders-highlight-9-mobula-f9c45dc6c691" ><em>Mobula,</em></a> <a href="https://medium.com/@alephium/builders-highlight-10-amolyus-39e03b6bd3f0" ><em>Amolyus</em></a>, <a href="https://medium.com/@alephium/builders-highlight-11-fugashu-4f8566d1a8f0" ><em>Fugashu</em></a> _and_ <a href="https://medium.com/@alephium/builders-highlight-12-linx-0c9a315956fd" ><em>Linx</em></a> _episodes here!_
 
-Today, we welcome <a href="https://twitter.com/PhoenixErgo" data-href="https://twitter.com/PhoenixErgo">Phoenix Finance!</a> They built a DeFi platform where users can deposit ALPH and receive HodlAPH in return. The longer they hold the asset, the higher its price.
+Today, we welcome <a href="https://twitter.com/PhoenixErgo" >Phoenix Finance!</a> They built a DeFi platform where users can deposit ALPH and receive HodlAPH in return. The longer they hold the asset, the higher its price.
 
 Here, they share some insights into how they got into crypto, how they started building their products, and their plans for the future!
 
@@ -17,9 +17,9 @@ Here, they share some insights into how they got into crypto, how they started b
 
 Hello, my name is Shishir. However, I am often known as MGpai across several online communities.
 
-Today, I am joining as part of <a href="https://www.phoenixfi.app/" data-href="https://www.phoenixfi.app/">Phoenix Finance</a>. Our other member behind it is Luca, known as LGD.
+Today, I am joining as part of <a href="https://www.phoenixfi.app/" >Phoenix Finance</a>. Our other member behind it is Luca, known as LGD.
 
-I am from Boston, and LGD is from Montreal. Currently, I am a full-time second-year student studying Computer Science. I also work part-time as a backend and blockchain developer at <a href="https://www.zengate.global/" data-href="https://www.zengate.global/">Zengate Global</a>. LGD recently graduated college and works full-time at Zengate Global.
+I am from Boston, and LGD is from Montreal. Currently, I am a full-time second-year student studying Computer Science. I also work part-time as a backend and blockchain developer at <a href="https://www.zengate.global/" >Zengate Global</a>. LGD recently graduated college and works full-time at Zengate Global.
 
 #### Can you tell us a bit about your journey in tech/crypto?
 
@@ -31,17 +31,17 @@ I discovered BTC and ETH early on and was captivated by them. However, I soon le
 
 I learned about Alephium through the Ergo community and found it very similar. The community was welcoming, and I had very easy access to the core developers. I find this to be huge. Core developers wrote the protocol; they have knowledge that lets people easily contribute to creating dApps to the chain.
 
-I also love the protocol on Alephium. I think it’s brilliant that the <a href="https://medium.com/@alephium/an-introduction-to-the-stateful-utxo-model-8de3b0f76749" data-href="https://medium.com/@alephium/an-introduction-to-the-stateful-utxo-model-8de3b0f76749">UTXO and account model are combined</a>. The UTXO model, the foundation of Bitcoin, is a robust and secure way to transfer value. Meanwhile, the account model simplifies the process of creating complex smart contracts, providing developers with a more intuitive and efficient framework compared to working solely within the constraints of the UTXO model.
+I also love the protocol on Alephium. I think it’s brilliant that the <a href="https://medium.com/@alephium/an-introduction-to-the-stateful-utxo-model-8de3b0f76749" >UTXO and account model are combined</a>. The UTXO model, the foundation of Bitcoin, is a robust and secure way to transfer value. Meanwhile, the account model simplifies the process of creating complex smart contracts, providing developers with a more intuitive and efficient framework compared to working solely within the constraints of the UTXO model.
 
 #### You have participated in the hackathon and won a prize. How was your experience hacking in there? How’s the learning curve to get going? What took the most time to grasp?
 
-I enjoyed building <a href="https://medium.com/@alephium/hackathon-winners-announced-68d55711b99d" data-href="https://medium.com/@alephium/hackathon-winners-announced-68d55711b99d">hodlALPH on Alephium</a>. The learning curve is really smooth. I was able to pick up the smart contract language, Ralph, within a few days and start building. If I had any questions, the core developers responded almost instantly!
+I enjoyed building <a href="https://medium.com/@alephium/hackathon-winners-announced-68d55711b99d" >hodlALPH on Alephium</a>. The learning curve is really smooth. I was able to pick up the smart contract language, Ralph, within a few days and start building. If I had any questions, the core developers responded almost instantly!
 
 The hardest concept for me, which I pestered Cheng with, was the asset permission system. This probably took me around a week to fully grasp. I think with better documentation, examples, and videos, this process could be smoother for other developers.
 
 #### How did you get the idea of Phoenix finance? What made you want to implement it on Alephium? Your project has been commended for the creativity of its maths. Can you explain the concept and why you think it works over the long run?
 
-Phoenix Finance formed to bring degen finance on-chain. The concept of the “hodl game” originated from <a href="https://paleo.woltzenlogel.org/" data-href="https://paleo.woltzenlogel.org/">Bruno Woltzenlogel Paleo</a>, a mathematics professor who has written the algorithmic stablecoin protocols behind Djed (Cardano) and SigUSD (Ergo).
+Phoenix Finance formed to bring degen finance on-chain. The concept of the “hodl game” originated from <a href="https://paleo.woltzenlogel.org/" >Bruno Woltzenlogel Paleo</a>, a mathematics professor who has written the algorithmic stablecoin protocols behind Djed (Cardano) and SigUSD (Ergo).
 
 In 2020, while working on minimizing these designs by removing the oracle and reserve coin components, Bruno discovered something that wasn’t stable at all. This was initially dismissed as impractical. However, in 2023, when Bruno discussed this concept with Kushti, the founder of Ergo, Kushti recognized its potential appeal to risk-seeking DeFi enthusiasts, known as “degens.” This realization led to the birth of the hodlcoin game concept.
 
@@ -51,7 +51,7 @@ This concept is very simple. A user deposits ALPH with the bank to get back Hodl
 
 For instance, 1 hodlALPH could be worth 1.5 ALPH. This increase now will motivate others to leave by claiming their ALPH. They still need to pay their bank fee. As each person pays the fee, the price keeps on increasing perpetually. It is impossible for the price ever to go down. In fact, the price has been mathematically proven always to increase! This is a fun game as other factors, such as ALPH/USD, could motivate outcomes.
 
-The short math paper can be read here: <a href="https://eprint.iacr.org/2023/1029" data-href="https://eprint.iacr.org/2023/1029">https://eprint.iacr.org/2023/1029</a>
+The short math paper can be read here: <a href="https://eprint.iacr.org/2023/1029" >https://eprint.iacr.org/2023/1029</a>
 
 #### How do you see the future of the Phoenix? What’s on your roadmap? How do you add features to PhoenixFinance? What would be the Phoenix moonshot?
 
@@ -65,7 +65,7 @@ I think Alephium is doing a wonderful job fostering its development community. A
 
 #### Where can we stay in touch with your project & with you? Is it possible to contribute?
 
-The best way to stay in touch with Phoenix Finance would be by following our Twitter/x page: <a href="https://twitter.com/PhoenixErgo" data-href="https://twitter.com/PhoenixErgo">https://twitter.com/PhoenixErgo</a>
+The best way to stay in touch with Phoenix Finance would be by following our Twitter/x page: <a href="https://twitter.com/PhoenixErgo" >https://twitter.com/PhoenixErgo</a>
 
 You can also contact me via Discord: Mgpai
 
@@ -75,13 +75,13 @@ Thank you for having me on.
 
 **Links:**
 
-Github repo link: <a href="https://github.com/PhoenixErgo" data-href="https://github.com/PhoenixErgo">https://github.com/PhoenixErgo</a>
+Github repo link: <a href="https://github.com/PhoenixErgo" >https://github.com/PhoenixErgo</a>
 
-Twitter handle: <a href="https://twitter.com/PhoenixErgo" data-href="https://twitter.com/PhoenixErgo">https://twitter.com/PhoenixErgo</a>
+Twitter handle: <a href="https://twitter.com/PhoenixErgo" >https://twitter.com/PhoenixErgo</a>
 
-Telegram: <a href="https://t.me/hodlCoinGame" data-href="https://t.me/hodlCoinGame">https://t.me/hodlCoinGame</a>
+Telegram: <a href="https://t.me/hodlCoinGame" >https://t.me/hodlCoinGame</a>
 
-Website: <a href="https://www.phoenixfi.app/" data-href="https://www.phoenixfi.app/">https://www.phoenixfi.app/</a>
+Website: <a href="https://www.phoenixfi.app/" >https://www.phoenixfi.app/</a>
 
 Thank you, Phoenix Finance, for your answers!
 
@@ -89,4 +89,4 @@ Thank you, Phoenix Finance, for your answers!
 
 _Disclaimer: While Alephium is happy to support a growing developer community, it would like to clarify that it does not endorse, audit, or review any software presented in this series and encourages all users to make informed decisions and take personal responsibility for their actions._
 
-Have you built something or have a nice idea and want to request a grant or reward? You can access the <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" data-href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md">Alephium Community Grants &amp; Reward Program page</a> for more info!
+Have you built something or have a nice idea and want to request a grant or reward? You can access the <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" >Alephium Community Grants &amp; Reward Program page</a> for more info!

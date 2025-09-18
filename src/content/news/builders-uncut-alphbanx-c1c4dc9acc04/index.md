@@ -9,13 +9,13 @@ title: Builders Uncut — AlphbanX
 
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
-Here, Timothy, the founder of <a href="https://www.alphbanx.com/" data-href="https://www.alphbanx.com/">AlphBanx</a>, shares his journey into crypto, his discovery of Alephium, and the innovative approach of AlphBanx in the DeFi space. He discusses the project’s focus on user-friendly design, the importance of community involvement, and plans for integration with the Alephium ecosystem. Find the full (slightly edited) transcript below if you prefer reading.
+Here, Timothy, the founder of <a href="https://www.alphbanx.com/" >AlphBanx</a>, shares his journey into crypto, his discovery of Alephium, and the innovative approach of AlphBanx in the DeFi space. He discusses the project’s focus on user-friendly design, the importance of community involvement, and plans for integration with the Alephium ecosystem. Find the full (slightly edited) transcript below if you prefer reading.
 
 `video: https://www.youtube.com/watch?v=OE3rCD0i12M`
 
 #### What is your name and what do you do?
 
-My name is Timothy, and I’m the founder of <a href="https://www.alphbanx.com/" data-href="https://www.alphbanx.com/">AlphBanx</a>. We’re focused on building a stablecoin on the Alephium blockchain.
+My name is Timothy, and I’m the founder of <a href="https://www.alphbanx.com/" >AlphBanx</a>. We’re focused on building a stablecoin on the Alephium blockchain.
 
 #### How did you get into crypto?
 
@@ -37,7 +37,7 @@ Our main focus is on user experience. We want to make sure that anyone, even a t
 
 #### How do you plan to integrate with the Alephium ecosystem?
 
-We’ve been building relationships with other projects in the Alephium ecosystem, like <a href="http://ayin.app" data-href="http://ayin.app">Ayin</a> and <a href="http://sezame.app" data-href="http://sezame.app">Sezame Wallet</a>. The goal is to create seamless integrations that allow users to manage their loans and interact with other DeFi services directly from their wallets. This will increase the utility of both AlphBanx and the overall ecosystem.
+We’ve been building relationships with other projects in the Alephium ecosystem, like <a href="http://ayin.app" >Ayin</a> and <a href="http://sezame.app" >Sezame Wallet</a>. The goal is to create seamless integrations that allow users to manage their loans and interact with other DeFi services directly from their wallets. This will increase the utility of both AlphBanx and the overall ecosystem.
 
 #### How important is community to AlphBanx?
 
@@ -63,9 +63,9 @@ This is the end of our interview. Thank you, Timothy, for taking the time to do 
 
 Links:
 
-Website: <a href="https://www.alphbanx.com/" data-href="https://www.alphbanx.com/" rel="nofollow noopener">https://www.alphbanx.com/</a>  
-Twitter: <a href="https://twitter.com/alephiumbank" data-href="https://twitter.com/alephiumbank" rel="nofollow noopener">https://twitter.com/alephiumbank</a>  
-Discord: <a href="https://discord.gg/56rgKJ9HGW" data-href="https://discord.gg/56rgKJ9HGW" rel="nofollow noopener">https://discord.gg/56rgKJ9HGW</a>
+Website: <a href="https://www.alphbanx.com/"  rel="nofollow noopener">https://www.alphbanx.com/</a>  
+Twitter: <a href="https://twitter.com/alephiumbank"  rel="nofollow noopener">https://twitter.com/alephiumbank</a>  
+Discord: <a href="https://discord.gg/56rgKJ9HGW"  rel="nofollow noopener">https://discord.gg/56rgKJ9HGW</a>
 
 ---
 
@@ -73,8 +73,8 @@ Timothy was a speaker at the Athens Builders Meetup!
 
 `video: https://www.youtube.com/watch?v=9hAYzsLmIBc`
 
-You can also find all the talks of the Athens Builders Meetup <a href="https://medium.com/@alephium/all-the-athens-meetup-presentations-f419195640ce" data-href="https://medium.com/@alephium/all-the-athens-meetup-presentations-f419195640ce">here</a>.
+You can also find all the talks of the Athens Builders Meetup <a href="https://medium.com/@alephium/all-the-athens-meetup-presentations-f419195640ce" >here</a>.
 
 ---
 
-For any questions or feedback, reach out to us on [Discord](/discord) or <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Telegram</a>, and follow <a href="https://x.com/alephium" data-href="https://x.com/alephium">@alephium on Twitter</a> for the latest updates!
+For any questions or feedback, reach out to us on [Discord](/discord) or <a href="https://t.me/alephiumgroup" >Telegram</a>, and follow <a href="https://x.com/alephium" >@alephium on Twitter</a> for the latest updates!

@@ -31,6 +31,6 @@ Our explorer backend’s indexing relies on this full node indexing, some of the
 **Solution?  
 **The potential issue was identified previously, it was known that it had a very low probability of occuring (~35 / 1’500'000) that the update would not keep the orphaned blocks in the right order.
 
-That allowed the team to quickly work on a fix, test it and deploy it. You can find it <a href="https://github.com/alephium/alephium/pull/502" data-href="https://github.com/alephium/alephium/pull/502">here</a>.
+That allowed the team to quickly work on a fix, test it and deploy it. You can find it <a href="https://github.com/alephium/alephium/pull/502" >here</a>.
 
 Gate.io whose teams are on a very different timezone then had to pick it up on their side and reopen deposits. This was tested at 10:50 CET on January 19th and was working then.

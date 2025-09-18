@@ -8,7 +8,7 @@ title: AMA Session — Writen format
 
 #### All answers about the exciting new developments in Alephium’s ecosystem!
 
-On March 28th, Alephium held an <a href="https://www.youtube.com/watch?v=Gf1mDGddM2I" data-href="https://www.youtube.com/watch?v=Gf1mDGddM2I">AMA session</a> with the community, to answer questions about the <a href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a" data-href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a">Leman Network Upgrade</a>. This medium article has some of the most relevant questions.
+On March 28th, Alephium held an <a href="https://www.youtube.com/watch?v=Gf1mDGddM2I" >AMA session</a> with the community, to answer questions about the <a href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a" >Leman Network Upgrade</a>. This medium article has some of the most relevant questions.
 
 ### Token Support
 
@@ -16,9 +16,9 @@ On March 28th, Alephium held an <a href="https://www.youtube.com/watch?v=Gf1mDGd
 
 A: Minting a token on the Alephium blockchain is fairly easy.
 
-A contract needs to be created when issuing a token. There is an endpoint in the full node to do that. In the <a href="https://docs.alephium.org/dapps/build-dapp-from-scratch/#create-a-new-dapp-project-token-faucet" data-href="https://docs.alephium.org/dapps/build-dapp-from-scratch/#create-a-new-dapp-project-token-faucet">Getting Started guide of the Alephium docs</a>, you can find an example of issuing tokens for a Token Faucet from the command line.
+A contract needs to be created when issuing a token. There is an endpoint in the full node to do that. In the <a href="https://docs.alephium.org/dapps/build-dapp-from-scratch/#create-a-new-dapp-project-token-faucet" >Getting Started guide of the Alephium docs</a>, you can find an example of issuing tokens for a Token Faucet from the command line.
 
-A few <a href="https://docs.alephium.org/ralph/built-in-functions/" data-href="https://docs.alephium.org/ralph/built-in-functions/">built-in functions</a> in Ralph allow the creation of tokens in the smart contract pretty straightforwardly.
+A few <a href="https://docs.alephium.org/ralph/built-in-functions/" >built-in functions</a> in Ralph allow the creation of tokens in the smart contract pretty straightforwardly.
 
 **Q: How much would it cost to a Developer or a Team of Developers to create a token on the Alephium chain?**
 
@@ -31,13 +31,13 @@ However, contracts might contain important metadata that gives the token its mea
 
 **Q: How will tokens be managed and controlled by their creator/developer?**
 
-A: Alephium has developed an <a href="https://docs.alephium.org/ralph/asset-permission-system/" data-href="https://docs.alephium.org/ralph/asset-permission-system/">Asset Permission System</a> that allows developers to define specific rules and conditions for using users’ tokens. This system lets developers specify whether a function uses user or contract tokens. Developers and users can approve the exact amount of tokens for each call, avoiding the need for unlimited authorization as required in EVM. At the asset level, the management of tokens is similar to the management of UTXO in Bitcoin, where once the token is in a user’s wallet, they have full ownership of their UTXO and tokens and can spend them as they wish.
+A: Alephium has developed an <a href="https://docs.alephium.org/ralph/asset-permission-system/" >Asset Permission System</a> that allows developers to define specific rules and conditions for using users’ tokens. This system lets developers specify whether a function uses user or contract tokens. Developers and users can approve the exact amount of tokens for each call, avoiding the need for unlimited authorization as required in EVM. At the asset level, the management of tokens is similar to the management of UTXO in Bitcoin, where once the token is in a user’s wallet, they have full ownership of their UTXO and tokens and can spend them as they wish.
 
 **Q: Are there plans to make it easier to create tokens on Alephium, a token standard like ERC-20?**
 
 The core dev team has been developing token standards for Alephium, including those for fungible and non-fungible tokens. It drew inspiration from the existing work done by Ethereum and merged those ideas with our stateful UTXO model. On the Alephium model, tokens become first-class citizens in the blockchain, making it much easier to build advanced tokens on top of it. Alephium token standards are simpler, more developer-friendly, and, most importantly, more secure than those used in the EVM. Let’s elaborate on this.
 
-The IFungibleToken standard was introduced in the <a href="https://github.com/alephium/alephium-web3" data-href="https://github.com/alephium/alephium-web3">Alephium Web3 SDK</a>, which tells what metadata to expect for fungible tokens. It is similar to ERC20, but simpler because the UTXO model natively and safely supports transfer methods. To create tokens, you can use the VM’s instructions. They can be held by either a contract or a user address. The fungible token standard was used in the DEX prototype and bridge. In the DEX, the TokenPair contract holds all the liquidity tokens and only gives them to users when they add liquidity. In the bridge, the TokenWrapper contract maps tokens from another chain to Alephium and sends them to users once their transfer transaction on the source chain is successful.
+The IFungibleToken standard was introduced in the <a href="https://github.com/alephium/alephium-web3" >Alephium Web3 SDK</a>, which tells what metadata to expect for fungible tokens. It is similar to ERC20, but simpler because the UTXO model natively and safely supports transfer methods. To create tokens, you can use the VM’s instructions. They can be held by either a contract or a user address. The fungible token standard was used in the DEX prototype and bridge. In the DEX, the TokenPair contract holds all the liquidity tokens and only gives them to users when they add liquidity. In the bridge, the TokenWrapper contract maps tokens from another chain to Alephium and sends them to users once their transfer transaction on the source chain is successful.
 
 Like IFungibleTokens, the INFT and INFTCollection interfaces were created in the Web3 SDK, which stores or points to the metadata for a particular NFT or NFT collection (EIP-721). The NFT prototype was adapted to use these interfaces to support a few common use cases, such as pre-minting and open minting, etc.
 
@@ -48,7 +48,7 @@ its own Contract Address needs to be added manually to the wallet to be visible,
 
 A: Great question. It’s quite a UX issue on EVM that users have to add tokens manually, but it’s not a problem on Alephium.
 
-With the UTXO model, the token becomes the first class citizen on Alephium, making it possible to retrieve a user’s all tokens and display them in the wallet. We also have a <a href="https://github.com/alephium/token-list" data-href="https://github.com/alephium/token-list">repo called token-list</a> to store more metadata for tokens, such as logos, making the display more user-friendly. Currently, our extension wallet works nicely in this way.
+With the UTXO model, the token becomes the first class citizen on Alephium, making it possible to retrieve a user’s all tokens and display them in the wallet. We also have a <a href="https://github.com/alephium/token-list" >repo called token-list</a> to store more metadata for tokens, such as logos, making the display more user-friendly. Currently, our extension wallet works nicely in this way.
 
 We are also working on introducing a standard identifier to the contract system, which can fetch token information based on the token type. This feature will be introduced to the extension wallet soon.
 
@@ -58,7 +58,7 @@ As a result, for users, there is no need to add tokens manually due to our token
 
 **Q: The Leman Network Upgrade appears to provide substantial token support to all the software within the ecosystem. Can you provide more information on what the core team and community can expect to build on top of it in the near future?**
 
-A: In the near future, Alephium has some exciting launches planned. The core dev team has been developing and testing the d<a href="https://medium.com/@alephium/dex-prototype-live-on-testnet-bac5e7d095ce" data-href="https://medium.com/@alephium/dex-prototype-live-on-testnet-bac5e7d095ce">ecentralized exchange (DEX)</a>, bridge, and <a href="https://github.com/alephium/alephium-nft" data-href="https://github.com/alephium/alephium-nft">NFT features</a> for a while. Additionally, community developers have been contributing to these efforts, which is fantastic news.
+A: In the near future, Alephium has some exciting launches planned. The core dev team has been developing and testing the d<a href="https://medium.com/@alephium/dex-prototype-live-on-testnet-bac5e7d095ce" >ecentralized exchange (DEX)</a>, bridge, and <a href="https://github.com/alephium/alephium-nft" >NFT features</a> for a while. Additionally, community developers have been contributing to these efforts, which is fantastic news.
 
 The core devs will focus on infrastructure and prototyping the most important DeFi primitives such as oracle, stablecoin, and lending protocol. They are also exploring new use cases, such as decentralized social networks, which they believe could be a significant development. With its new Schnorr signature, the Leman upgrade has opened up exciting possibilities for projects with Bitcoin and the Nostr protocol.
 
@@ -112,11 +112,11 @@ A: As explained above, the UI will account for the addition of token support. Yo
 
 A: If Alephium is the one bridging existing stable coins and therefore offering an Alephium-wrapped stablecoin, we will favor bridging decentralized stablecoins to avoid the risks you mention. Issuers of centralized stablecoins can decide whether the Alephium functionalities block them from issuing their stablecoin natively on Alephium. If the private keys own the UTXOs, they can’t be confiscated/frozen, but you can technically enforce workarounds by restricting transfers of the stablecoins to addresses.
 
-**Q: What does it mean** <a href="https://twitter.com/alephium/status/1638541074074578946" data-href="https://twitter.com/alephium/status/1638541074074578946"><strong>Schnorr Signatures</strong></a> **support for the average user and dApps developers?**
+**Q: What does it mean** <a href="https://twitter.com/alephium/status/1638541074074578946" ><strong>Schnorr Signatures</strong></a> **support for the average user and dApps developers?**
 
 A: Schnorr signatures are supported at two levels: wallet and VM.
 
-Only the <a href="https://medium.com/@alephium/alephium-launches-browser-extension-wallet-706dfeda98f5" data-href="https://medium.com/@alephium/alephium-launches-browser-extension-wallet-706dfeda98f5">extension wallet</a> currently supports Schnorr signatures.   
+Only the <a href="https://medium.com/@alephium/alephium-launches-browser-extension-wallet-706dfeda98f5" >extension wallet</a> currently supports Schnorr signatures.   
 The VM gained Schnorr support after the Leman upgrade and provides the following:
 
 - interaction with Nostr and other Schnorr-based apps
@@ -152,4 +152,4 @@ A: There are different things to look for when building a DEX:
 
 ---
 
-If you have questions or want to know more, please come to Alephium’s [Discord](/discord), <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Telegram</a>, or reach out on <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium">Twitter</a>!
+If you have questions or want to know more, please come to Alephium’s [Discord](/discord), <a href="https://t.me/alephiumgroup" >Telegram</a>, or reach out on <a href="https://twitter.com/alephium" >Twitter</a>!

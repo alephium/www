@@ -9,7 +9,7 @@ title: Builders Uncut — Ulam Labs
 
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
-Here, we have a conversation with with Lukasz about <a href="https://ulam.io/" data-href="https://ulam.io/">Ulam Labs</a>, a company devoted to full-cycle software development, focusing on fintech and which started offering an auditing service to Alephium projects. Find the full (slightly edited) transcript below if you prefer reading.
+Here, we have a conversation with with Lukasz about <a href="https://ulam.io/" >Ulam Labs</a>, a company devoted to full-cycle software development, focusing on fintech and which started offering an auditing service to Alephium projects. Find the full (slightly edited) transcript below if you prefer reading.
 
 `video: https://www.youtube.com/watch?v=F2iH-M23CHE`
 
@@ -19,7 +19,7 @@ Nice to meet you again.
 
 #### We didn’t have time to interview everyone at the Builders meetup, so now we’re catching up with the projects we missed. Can you tell us a bit about yourself? What’s your background, what do you do, and what is your crypto journey? How did you first get into crypto?
 
-I’m now a big blockchain enthusiast, but it wasn’t always this way. In 2017, I got really into blockchain. I started with Ethereum because it was the first place where you could do smart contracts. That was very exciting to me. I got into programming on the blockchain by hacking into it. There was an interesting game called <a href="https://capturetheether.com/" data-href="https://capturetheether.com/">Capture the Ether</a>. You’d get these smart contracts and have to hack them. It was awesome. You had to steal the ETH inside the smart contract. The puzzles were crazy, and it got me into cybersecurity. Now I’ve been working on smart contracts at Ulam Labs for the past three years.
+I’m now a big blockchain enthusiast, but it wasn’t always this way. In 2017, I got really into blockchain. I started with Ethereum because it was the first place where you could do smart contracts. That was very exciting to me. I got into programming on the blockchain by hacking into it. There was an interesting game called <a href="https://capturetheether.com/" >Capture the Ether</a>. You’d get these smart contracts and have to hack them. It was awesome. You had to steal the ETH inside the smart contract. The puzzles were crazy, and it got me into cybersecurity. Now I’ve been working on smart contracts at Ulam Labs for the past three years.
 
 #### Did you already have a background in computer science, or did you just start geeking out and hacking?
 
@@ -35,7 +35,7 @@ Sure. My second project at Ulam Labs was an exchange built on Algorand called Pa
 
 #### Interesting. So, you built it for someone else, or you built and operated it?
 
-We built it for our client, the <a href="https://www.pact.fi/" data-href="https://www.pact.fi/">Pact exchange</a>.
+We built it for our client, the <a href="https://www.pact.fi/" >Pact exchange</a>.
 
 #### Ulam Labs is the company built around you. Do you have co-founders and other people in the company?
 
@@ -75,7 +75,7 @@ From a technical side, the software category doesn’t matter. Some categories a
 
 #### What about the language? In the case of Alephium, it’s Ralph, a language Alephium introduced. You’ve had experience with a wide range of languages, so what do you think about Ralph? How does it optimize security and help developers make fewer mistakes?
 
-In the past, I’ve seen many programming languages like MOVE and those on Algorand, and of course, Ethereum with the EVM and Solidity. I’m very happy with <a href="https://docs.alephium.org/ralph/" data-href="https://docs.alephium.org/ralph/">Ralph</a> because it’s an evolution, not a complete revolution. It’s the next step with asset management and UTXOs. It does its job well without making development unnecessarily hard. Some languages limit you for safety, leading to workarounds that make things worse.
+In the past, I’ve seen many programming languages like MOVE and those on Algorand, and of course, Ethereum with the EVM and Solidity. I’m very happy with <a href="https://docs.alephium.org/ralph/" >Ralph</a> because it’s an evolution, not a complete revolution. It’s the next step with asset management and UTXOs. It does its job well without making development unnecessarily hard. Some languages limit you for safety, leading to workarounds that make things worse.
 
 #### There’s a cartoon from XKCD showing the whole stack held by one tiny speck. It’s good to hear that Alephium’s design is pragmatic, allowing people to do things without reinventing the wheel.
 
@@ -91,7 +91,7 @@ It’s a bit of a secret right now, but I’ll be building something on Alephium
 
 #### That’s exciting to hear. People are building a lot of stuff now, and that’s great. What was your impression of the first builders’ meetup in Athens?
 
-The people there were amazing. <a href="https://medium.com/@alephium/all-the-athens-meetup-presentations-f419195640ce" data-href="https://medium.com/@alephium/all-the-athens-meetup-presentations-f419195640ce">Meeting different builders</a> in person gave a completely different feeling. Seeing the faces behind the projects gave a different vibe than just using the app or chatting on Discord.
+The people there were amazing. <a href="https://medium.com/@alephium/all-the-athens-meetup-presentations-f419195640ce" >Meeting different builders</a> in person gave a completely different feeling. Seeing the faces behind the projects gave a different vibe than just using the app or chatting on Discord.
 
 ![](image_73f9605c03.jpg)
 
@@ -113,9 +113,9 @@ It’s sooner. 😉
 
 #### Links
 
-Twitter — <a href="https://x.com/ulamlabs" data-href="https://x.com/ulamlabs" rel="nofollow noopener noopener">https://x.com/ulamlabs</a>  
-Website — <a href="https://ulam.io/" data-href="https://ulam.io/" rel="nofollow noopener noopener">https://ulam.io/</a>
+Twitter — <a href="https://x.com/ulamlabs"  rel="nofollow noopener noopener">https://x.com/ulamlabs</a>  
+Website — <a href="https://ulam.io/"  rel="nofollow noopener noopener">https://ulam.io/</a>
 
 ---
 
-For any questions or feedback, reach out to us on [Discord](/discord) or <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Telegram</a>, and follow <a href="https://x.com/alephium" data-href="https://x.com/alephium">@alephium on Twitter</a> for the latest updates!
+For any questions or feedback, reach out to us on [Discord](/discord) or <a href="https://t.me/alephiumgroup" >Telegram</a>, and follow <a href="https://x.com/alephium" >@alephium on Twitter</a> for the latest updates!

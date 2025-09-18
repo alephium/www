@@ -80,7 +80,7 @@ NFT being self-contained, in the sense that it doesn’t require any bridges on 
 
 Security is key for mining pools. But the tricky part is the algorithm to distribute rewards as the amount of mining-pool members and the hashrate increase. Right now we are building small to medium-sized pools. These could be scaled to several terahash. However, larger pools would need greater expertise in the domain than is currently available. The pools first need improved source code and better testing, after which there will be a need to implement data analysis. Integrating a UI would be a welcomed addition. Some of this is already being built by a team member who has managed to resolve most of the issues reported.   
 Ideally, the development of the mining pool needs to be passed on to the community. This poses interesting challenges in how to help community operators and professional pools to collaborate.   
-The handover has already begun! A 3rd party pool called <a href="https://pool.devgent.net/" data-href="https://pool.devgent.net/">Devgent</a> has been created by a community member and it is currently open for registrations. And a second 3rd party pool is in the way of integrating Alephium support.
+The handover has already begun! A 3rd party pool called <a href="https://pool.devgent.net/" >Devgent</a> has been created by a community member and it is currently open for registrations. And a second 3rd party pool is in the way of integrating Alephium support.
 
 #### Explorer
 

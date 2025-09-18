@@ -16,46 +16,46 @@ The root cause was soon identified, a patch was issued and deployed by full-node
 
 **What happened?**
 
-First symptoms — At 3:27PM on December 8th, <a href="https://twitter.com/therealmontail" data-href="https://twitter.com/therealmontail">MontaiL</a> was the first to signal on [Alephium’s discord](/discord) that there seemed to be an anomaly with the network hashrate. Over the next few hours, the community could observe a very significant linear **increase in hashrate**, whether it was through mining pools <a href="https://poolbay.io/crypto/5798/alephium" data-href="https://poolbay.io/crypto/5798/alephium">dashboards</a> or other services.
+First symptoms — At 3:27PM on December 8th, <a href="https://twitter.com/therealmontail" >MontaiL</a> was the first to signal on [Alephium’s discord](/discord) that there seemed to be an anomaly with the network hashrate. Over the next few hours, the community could observe a very significant linear **increase in hashrate**, whether it was through mining pools <a href="https://poolbay.io/crypto/5798/alephium" >dashboards</a> or other services.
 
 ![](image_f232413241.png)
 
 *Cascading effects — *The hashrate that is observable from the full node is an estimation computed from block difficulties during a period of time. During the DiffBomb day, what people could see was in fact a trompe-l’oeil caused by the increase in difficulty.
 
-By the end of the day, it resulted in a significant delay between blocks as you can see in the following screenshot of the <a href="https://explorer.alephium.org/" data-href="https://explorer.alephium.org/">explorer</a> taken at 00:20 CET.
+By the end of the day, it resulted in a significant delay between blocks as you can see in the following screenshot of the <a href="https://explorer.alephium.org/" >explorer</a> taken at 00:20 CET.
 
 ![](image_722d4a1400.png)
 
 *Identifying the cause — *By that time, the team was entertaining several hypotheses that could potentially explain the observed effects (ASICs testing, a DOS attack, others…).
 
-During the investigations, the team made sure to keep the community informed of its progress (<a href="https://discord.com/channels/747741246667227157/877932296005619754/1050441346445475940" data-href="https://discord.com/channels/747741246667227157/877932296005619754/1050441346445475940">1</a>, <a href="https://discord.com/channels/747741246667227157/877932296005619754/1050477852107214859" data-href="https://discord.com/channels/747741246667227157/877932296005619754/1050477852107214859">2</a>, <a href="https://twitter.com/alephium/status/1600963960781406209?s=20&amp;t=7s71FLpAhPRy3zvgOrycKw" data-href="https://twitter.com/alephium/status/1600963960781406209?s=20&amp;t=7s71FLpAhPRy3zvgOrycKw">3</a>).
+During the investigations, the team made sure to keep the community informed of its progress (<a href="https://discord.com/channels/747741246667227157/877932296005619754/1050441346445475940" >1</a>, <a href="https://discord.com/channels/747741246667227157/877932296005619754/1050477852107214859" >2</a>, <a href="https://twitter.com/alephium/status/1600963960781406209?s=20&amp;t=7s71FLpAhPRy3zvgOrycKw" >3</a>).
 
-A bit before 4am CET, <a href="https://discord.com/channels/747741246667227157/877932296005619754/1050605637433823394" data-href="https://discord.com/channels/747741246667227157/877932296005619754/1050605637433823394">Cheng Wang shared in the Discord</a> that the issue had been identified as well as a remediation plan drafted.
+A bit before 4am CET, <a href="https://discord.com/channels/747741246667227157/877932296005619754/1050605637433823394" >Cheng Wang shared in the Discord</a> that the issue had been identified as well as a remediation plan drafted.
 
 ![](image_4d6cc7d908.png)
 
-The <a href="https://github.com/alephium/dev-alephium/blob/6ab14d5161b95dacec6b14c47b4f2a8591264920/flow/src/test/scala/org/alephium/flow/core/ChainDifficultyAdjustmentSpec.scala" data-href="https://github.com/alephium/dev-alephium/blob/6ab14d5161b95dacec6b14c47b4f2a8591264920/flow/src/test/scala/org/alephium/flow/core/ChainDifficultyAdjustmentSpec.scala">difficulty bomb</a> was triggered on December 8th, 2022, exactly 1 year and 1 month after mainnet launch (which happened at 3:54PM CET on November 8th, 2021).
+The <a href="https://github.com/alephium/dev-alephium/blob/6ab14d5161b95dacec6b14c47b4f2a8591264920/flow/src/test/scala/org/alephium/flow/core/ChainDifficultyAdjustmentSpec.scala" >difficulty bomb</a> was triggered on December 8th, 2022, exactly 1 year and 1 month after mainnet launch (which happened at 3:54PM CET on November 8th, 2021).
 
-The Difficulty Bomb is a mechanism <a href="https://www.nicehash.com/blog/post/the-ethereum-difficulty-bomb-and-its-effects-on-mining-rewards" data-href="https://www.nicehash.com/blog/post/the-ethereum-difficulty-bomb-and-its-effects-on-mining-rewards">designed</a> to ensure coordination on a protocol upgrade at least once every 13 months in the case of Alephium. It was configured to be automatically pushed every time an upgrade happens. The <a href="https://medium.com/@alephium/announcing-the-leman-network-upgrade-c01a81e65f0e" data-href="https://medium.com/@alephium/announcing-the-leman-network-upgrade-c01a81e65f0e">Leman Upgrade</a>, coming in early 2023, got more ambitious than anticipated and therefore was not completed in the adjustment window.
+The Difficulty Bomb is a mechanism <a href="https://www.nicehash.com/blog/post/the-ethereum-difficulty-bomb-and-its-effects-on-mining-rewards" >designed</a> to ensure coordination on a protocol upgrade at least once every 13 months in the case of Alephium. It was configured to be automatically pushed every time an upgrade happens. The <a href="https://medium.com/@alephium/announcing-the-leman-network-upgrade-c01a81e65f0e" >Leman Upgrade</a>, coming in early 2023, got more ambitious than anticipated and therefore was not completed in the adjustment window.
 
 The DiffBomb was implemented in the early days of the Alephium network. It was not documented or communicated appropriately. Due to a recent hardware upgrade (and Murphy’s law), some of us didn’t have the usual full node running at home, hindering key team members ability to run comprehensive analytics. Regrettably, in the middle of this stressful situation, it all resulted in a delay identifying the DiffBomb as the root cause for the observed behavior.
 
 **The remediation**
 
-As soon as the issue was identified, the Alephium dev team started to work on a <a href="https://github.com/alephium/dev-alephium/pull/784" data-href="https://github.com/alephium/dev-alephium/pull/784">patch</a> to upgrade the full node code with two objectives:
+As soon as the issue was identified, the Alephium dev team started to work on a <a href="https://github.com/alephium/dev-alephium/pull/784" >patch</a> to upgrade the full node code with two objectives:
 
 - Shifting back to the difficulty that was prevalent before the DiffBomb triggering,
 - Removing the DiffBomb.
 
-At 10:27AM CET, a <a href="https://twitter.com/alephium/status/1601146526583037953" data-href="https://twitter.com/alephium/status/1601146526583037953">publication</a> informed the community of what was coming, and at 2:40PM CET a <a href="https://twitter.com/alephium/status/1601210162676568065" data-href="https://twitter.com/alephium/status/1601210162676568065">detailed next steps roadmap</a> was released.
+At 10:27AM CET, a <a href="https://twitter.com/alephium/status/1601146526583037953" >publication</a> informed the community of what was coming, and at 2:40PM CET a <a href="https://twitter.com/alephium/status/1601210162676568065" >detailed next steps roadmap</a> was released.
 
-After intensive testing & code review, the <a href="https://github.com/alephium/dev-alephium/pull/784" data-href="https://github.com/alephium/dev-alephium/pull/784">patch</a> (including an activation timestamp setup for 8PM CET) was released and <a href="https://twitter.com/alephium/status/1601250719180259333?s=20&amp;t=XS5jD7GJWtkrx6VS0BoswQ" data-href="https://twitter.com/alephium/status/1601250719180259333?s=20&amp;t=XS5jD7GJWtkrx6VS0BoswQ">announced</a> a bit after 5PM CET.
+After intensive testing & code review, the <a href="https://github.com/alephium/dev-alephium/pull/784" >patch</a> (including an activation timestamp setup for 8PM CET) was released and <a href="https://twitter.com/alephium/status/1601250719180259333?s=20&amp;t=XS5jD7GJWtkrx6VS0BoswQ" >announced</a> a bit after 5PM CET.
 
 ![](image_3b57a04bf4.jpg)
 
-At 7PM, most mining pools and services had updated their full nodes, and the Alephium team released <a href="https://docs.google.com/spreadsheets/d/1xI2hwg0T1C5nv6xTI91El6W5xDozp3fV0XQWwdWx9RM/edit#gid=0" data-href="https://docs.google.com/spreadsheets/d/1xI2hwg0T1C5nv6xTI91El6W5xDozp3fV0XQWwdWx9RM/edit#gid=0">an excel sheet</a> to help the community stay informed of the state of the upgrade.
+At 7PM, most mining pools and services had updated their full nodes, and the Alephium team released <a href="https://docs.google.com/spreadsheets/d/1xI2hwg0T1C5nv6xTI91El6W5xDozp3fV0XQWwdWx9RM/edit#gid=0" >an excel sheet</a> to help the community stay informed of the state of the upgrade.
 
-At 8PM CET, <a href="https://twitter.com/alephium/status/1601302539822977024" data-href="https://twitter.com/alephium/status/1601302539822977024">activation had gone smoothly</a>, the network had upgraded successfully, difficulty was back to normal, hashrate had normalized, and block production was going as expected.
+At 8PM CET, <a href="https://twitter.com/alephium/status/1601302539822977024" >activation had gone smoothly</a>, the network had upgraded successfully, difficulty was back to normal, hashrate had normalized, and block production was going as expected.
 
 ![](image_e61817ec9e.jpg)
 
@@ -65,9 +65,9 @@ After a year of a fairly smooth ride, Alephium met its first big test with the D
 
 _Run more full nodes:_ Ensure that more people in the dev team have a full node running at all times, this will decrease reaction time and improve immediate data analysis.
 
-_Expose the difficulty metric in the full node:_ To bring more transparency and ease future analysis, we want to make it easier to <a href="https://github.com/alephium/alephium/issues/806" data-href="https://github.com/alephium/alephium/issues/806">see the difficulty</a> at any point in time, directly from the full node.
+_Expose the difficulty metric in the full node:_ To bring more transparency and ease future analysis, we want to make it easier to <a href="https://github.com/alephium/alephium/issues/806" >see the difficulty</a> at any point in time, directly from the full node.
 
-_Document more:_ It was always the plan to document the technology and code more, and the team has started a <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301">significant</a> <a href="https://docs.alephium.org/dapps/getting-started" data-href="https://docs.alephium.org/dapps/getting-started">effort</a> in that regard. Alephium team will up the ante here, and provide more documentation.
+_Document more:_ It was always the plan to document the technology and code more, and the team has started a <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" >significant</a> <a href="https://docs.alephium.org/dapps/getting-started" >effort</a> in that regard. Alephium team will up the ante here, and provide more documentation.
 
 _Communicate more:_ The constant communication has been useful to minimize disruption to all parties involved. The community support, questioning, presence and stimulating challenges have been humbling and amazingly helpful.
 
@@ -77,6 +77,6 @@ The DiffBomb day has been Alephium’s most serious test so far. With the combin
 
 The community has been a tremendous help and stimulation the whole time. Once the patch was ready, it’s been deployed quickly by full nodes runners, private individuals, miners, pools or services providers.
 
-Alephium can’t be more grateful to have such a challenging, informed, <a href="https://discord.com/channels/747741246667227157/747998352842686545/1050543317206704178" data-href="https://discord.com/channels/747741246667227157/747998352842686545/1050543317206704178">fun</a> and passionate community.
+Alephium can’t be more grateful to have such a challenging, informed, <a href="https://discord.com/channels/747741246667227157/747998352842686545/1050543317206704178" >fun</a> and passionate community.
 
 This pushes us to do better, build better, always.

@@ -8,7 +8,7 @@ title: Alephium Listed on Tradeogre Exchange
 
 #### A Collective Effort by the Community
 
-Alephium, the first operational sharded L1 blockchain scaling and enhancing PoW & UTXO concepts, has been listed on its second exchange: <a href="https://tradeogre.com/exchange/BTC-ALPH" data-href="https://tradeogre.com/exchange/BTC-ALPH">Tradeogre.com</a>! This is a significant milestone for Alephium, made possible due to its community push to get Alephium’s native token ALPH listed on a new exchange.
+Alephium, the first operational sharded L1 blockchain scaling and enhancing PoW & UTXO concepts, has been listed on its second exchange: <a href="https://tradeogre.com/exchange/BTC-ALPH" >Tradeogre.com</a>! This is a significant milestone for Alephium, made possible due to its community push to get Alephium’s native token ALPH listed on a new exchange.
 
 ### “Wen new listing”
 
@@ -22,9 +22,9 @@ The listing on Tradeogre is a big step towards greater circulation of ALPH, as i
 
 ![](image_6f668840a4.jpg)
 
-The trading pair is ALPH/BTC, the market is already live and you can access it <a href="https://tradeogre.com/exchange/BTC-ALPH" data-href="https://tradeogre.com/exchange/BTC-ALPH">here</a>
+The trading pair is ALPH/BTC, the market is already live and you can access it <a href="https://tradeogre.com/exchange/BTC-ALPH" >here</a>
 
-To be able to trade on Tradeogre, you must register using an email, and it is a good security practice to set up 2-factor authentication. You can register <a href="https://tradeogre.com/account/signin" data-href="https://tradeogre.com/account/signin">here</a>. After that, go to the “Balances” section to be able to make your deposit.
+To be able to trade on Tradeogre, you must register using an email, and it is a good security practice to set up 2-factor authentication. You can register <a href="https://tradeogre.com/account/signin" >here</a>. After that, go to the “Balances” section to be able to make your deposit.
 
 ![](image_da12a9de73.jpg)
 
@@ -34,4 +34,4 @@ Choose the currency you want to send and click on “Deposit”. This will open 
 
 ---
 
-If you need assistance, you are welcome to reach out to the community channels on [Discord](/discord), <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Telegram</a>. And follow <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium">@alephium on Twitter</a> to stay up-to-date.
+If you need assistance, you are welcome to reach out to the community channels on [Discord](/discord), <a href="https://t.me/alephiumgroup" >Telegram</a>. And follow <a href="https://twitter.com/alephium" >@alephium on Twitter</a> to stay up-to-date.

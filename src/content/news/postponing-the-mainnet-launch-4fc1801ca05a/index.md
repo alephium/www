@@ -17,4 +17,4 @@ As a result, we have decided to **postpone the mainnet launch to October**.
 
 The realization that having a little extra-time would be beneficial to the entire project has been overwhelmingly welcomed internally. This will not only allow a smoother start on a human level, it would give the opportunity to push a few improvements to the full node and test them thoroughly.
 
-We know many of you are impatiently waiting for the mainnet to get up and running and we are sorry to have you waiting a little more. But we are confident that this period of extra time will tighten the solidity and overall stability that you have come to expect from <a href="https://github.com/alephium" data-href="https://github.com/alephium">Alephium.</a>
+We know many of you are impatiently waiting for the mainnet to get up and running and we are sorry to have you waiting a little more. But we are confident that this period of extra time will tighten the solidity and overall stability that you have come to expect from <a href="https://github.com/alephium" >Alephium.</a>

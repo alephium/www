@@ -7,11 +7,11 @@ featuredImage: image_ec0a7e367d.png
 title: Host your Alephium Node via the Flux Marketplace
 ---
 
-<a href="https://medium.com/@alephium/alephium-continues-its-engagement-for-decentralization-and-partners-with-the-cloud-based-f9c5baebe5b2" data-href="https://medium.com/@alephium/alephium-continues-its-engagement-for-decentralization-and-partners-with-the-cloud-based-f9c5baebe5b2">Alephium’s partnership</a> with <a href="https://medium.com/u/1c37e86f5d23" class="markup--user markup--p-user" data-href="https://medium.com/u/1c37e86f5d23" data-anchor-type="2" data-user-id="1c37e86f5d23" data-action-value="1c37e86f5d23" data-action="show-user-card" data-action-type="hover">Flux Official</a> to support Alephium’s full node running on a web3 cloud infrastructure is another step towards demonstrating decentralization as a core value. Find here a detailed walkthrough on how to set up a node with Flux.
+<a href="https://medium.com/@alephium/alephium-continues-its-engagement-for-decentralization-and-partners-with-the-cloud-based-f9c5baebe5b2" >Alephium’s partnership</a> with <a href="https://medium.com/u/1c37e86f5d23" class="markup--user markup--p-user"  data-anchor-type="2" data-user-id="1c37e86f5d23" data-action-value="1c37e86f5d23" data-action="show-user-card" data-action-type="hover">Flux Official</a> to support Alephium’s full node running on a web3 cloud infrastructure is another step towards demonstrating decentralization as a core value. Find here a detailed walkthrough on how to set up a node with Flux.
 
 ### Flux — The Web3 Cloud
 
-The Flux Cloud is a decentralized cloud computing system based on thousands of single servers worldwide. Each server provides computational resources and is rewarded with 50% of the <a href="https://runonflux.io/flux-nodes.html" data-href="https://runonflux.io/flux-nodes.html">total block reward</a>.
+The Flux Cloud is a decentralized cloud computing system based on thousands of single servers worldwide. Each server provides computational resources and is rewarded with 50% of the <a href="https://runonflux.io/flux-nodes.html" >total block reward</a>.
 
 There are plenty of advantages to using Flux instead of traditional Web2 infrastructure providers:
 
@@ -24,16 +24,16 @@ There are plenty of advantages to using Flux instead of traditional Web2 infrast
 
 ### Alephium node on Flux — a tutorial
 
-Before following the tutorial, you will need to install the <a href="https://zelcore.io/" data-href="https://zelcore.io/">zelcore wallet</a>, and own some FLUX (<a href="https://runonflux.io/buy-flux.html" data-href="https://runonflux.io/buy-flux.html">find how here</a>).
+Before following the tutorial, you will need to install the <a href="https://zelcore.io/" >zelcore wallet</a>, and own some FLUX (<a href="https://runonflux.io/buy-flux.html" >find how here</a>).
 
 ![](image_d648d485af.png)
 
-1.  First head over to <a href="https://home.runonflux.io/" data-href="https://home.runonflux.io/">https://home.runonflux.io/</a>
-2.  Once there, log in using your ZelID. It is an instance of the <a href="https://zelcore.io/" data-href="https://zelcore.io/">Zelcore Wallet</a>.
+1.  First head over to <a href="https://home.runonflux.io/" >https://home.runonflux.io/</a>
+2.  Once there, log in using your ZelID. It is an instance of the <a href="https://zelcore.io/" >Zelcore Wallet</a>.
 
 ![](image_3dbacefda5.png)
 
-3\. Now that you are authenticated, head to the <a href="https://home.runonflux.io/apps/marketplace" data-href="https://home.runonflux.io/apps/marketplace">Flux Marketplace</a> and look for the **Alephium Node** Application. You will see something very similar to this:
+3\. Now that you are authenticated, head to the <a href="https://home.runonflux.io/apps/marketplace" >Flux Marketplace</a> and look for the **Alephium Node** Application. You will see something very similar to this:
 
 ![](image_f6a7689187.png)
 
@@ -67,7 +67,7 @@ Before following the tutorial, you will need to install the <a href="https://zel
 
 ### Monitoring of your instances
 
-When logged in via your ZelID, you can head over to <a href="https://home.runonflux.io/apps/globalapps" data-href="https://home.runonflux.io/apps/globalapps">https://home.runonflux.io/apps/globalapps</a> and to the “My Apps” Tab. Here you can manage and visit the Alephium Node deployments you have done so far.
+When logged in via your ZelID, you can head over to <a href="https://home.runonflux.io/apps/globalapps" >https://home.runonflux.io/apps/globalapps</a> and to the “My Apps” Tab. Here you can manage and visit the Alephium Node deployments you have done so far.
 
 ![](image_d501b22a34.png)
 
@@ -84,7 +84,7 @@ Click on the arrow pointing down to see your application specifications and the 
 
 **Remember, your Alephium Node is only subscribed for 22,000 Flux blocks which are ~ 44,000 minutes, so around one month. You will need to renew the payment monthly, so your Node does not get kicked off the network.**
 
-1.  Visit <a href="https://home.runonflux.io/" data-href="https://home.runonflux.io/">https://home.runonflux.io/</a> and log in with your ZelID
+1.  Visit <a href="https://home.runonflux.io/" >https://home.runonflux.io/</a> and log in with your ZelID
 2.  Navigate to “Apps”, “Global Apps”, “My Apps”
 3.  Click “Manage”, “Manage App”, “Update Specifications”
 4.  Leave all the variables like they are, Click “Compute Update Message”
@@ -94,4 +94,4 @@ Click on the arrow pointing down to see your application specifications and the 
 
 **Have Fun supporting the Alephium Blockchain with decentralized infrastructure!**
 
-_If you have more questions on the topic, please come to Alephium’s_ <a href="https://discord.gg/JErgRBfRSB" data-href="https://discord.gg/JErgRBfRSB"><em>Discord</em></a>_,_ <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup"><em>Telegram</em></a>_, or reach out on_ <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium"><em>Twitter</em></a>_!_
+_If you have more questions on the topic, please come to Alephium’s_ <a href="https://discord.gg/JErgRBfRSB" ><em>Discord</em></a>_,_ <a href="https://t.me/alephiumgroup" ><em>Telegram</em></a>_, or reach out on_ <a href="https://twitter.com/alephium" ><em>Twitter</em></a>_!_

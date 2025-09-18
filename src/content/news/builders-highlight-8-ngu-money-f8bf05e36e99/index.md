@@ -7,7 +7,7 @@ featuredImage: image_0408f23a12.jpg
 title: 'Builders Highlight #8: ngu.money'
 ---
 
-_Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real utility for users. In the Builders Highlight series, they share more about their projects, thoughts, and insights on why building on Alephium. You can find_ <a href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" data-href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881"><em>#1 here</em></a>_,_ <a href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" data-href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c"><em>#2 here</em></a>, <a href="https://medium.com/@alephium/builders-highlight-3-ayin-6be4a6bd4ec2" data-href="https://medium.com/@alephium/builders-highlight-3-ayin-6be4a6bd4ec2"><em>#3 here</em></a>, <a href="https://medium.com/@alephium/builders-highlight-4-no-trust-verify-9ea495ca826f" data-href="https://medium.com/@alephium/builders-highlight-4-no-trust-verify-9ea495ca826f"><em>#4 here</em></a>, <a href="https://medium.com/@alephium/builders-highlight-5-deadrare-d5ff90d6161e" data-href="https://medium.com/@alephium/builders-highlight-5-deadrare-d5ff90d6161e"><em>#5 here</em></a>, <a href="https://medium.com/@alephium/builders-highlight-6-what-the-duck-0aedc602ecfd" data-href="https://medium.com/@alephium/builders-highlight-6-what-the-duck-0aedc602ecfd"><em>#6 here</em></a>, and <a href="https://medium.com/@alephium/builders-highlight-7-alphpad-bbd4f4a34fd5" data-href="https://medium.com/@alephium/builders-highlight-7-alphpad-bbd4f4a34fd5"><em>#7 here</em></a>_!_
+_Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real utility for users. In the Builders Highlight series, they share more about their projects, thoughts, and insights on why building on Alephium. You can find_ <a href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" ><em>#1 here</em></a>_,_ <a href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" ><em>#2 here</em></a>, <a href="https://medium.com/@alephium/builders-highlight-3-ayin-6be4a6bd4ec2" ><em>#3 here</em></a>, <a href="https://medium.com/@alephium/builders-highlight-4-no-trust-verify-9ea495ca826f" ><em>#4 here</em></a>, <a href="https://medium.com/@alephium/builders-highlight-5-deadrare-d5ff90d6161e" ><em>#5 here</em></a>, <a href="https://medium.com/@alephium/builders-highlight-6-what-the-duck-0aedc602ecfd" ><em>#6 here</em></a>, and <a href="https://medium.com/@alephium/builders-highlight-7-alphpad-bbd4f4a34fd5" ><em>#7 here</em></a>_!_
 
 This episode is about ngu.money, an Alephium-native platform featuring the \$NGU token while offering advanced trading tools and a soon-to-be Launchpad as a Service (LaaS). Here, they share some insights into their way of thinking & plans for the future!
 
@@ -19,11 +19,11 @@ NGU Money is an innovative cryptocurrency platform, defined by its deflationary 
 
 NGU Money encompasses several key components:
 
-**1. NGU Signals:** A powerhouse in crypto trading with an 80%+ win rate on 200 coins, offering alerts for making informed decisions: <a href="https://app.ngu.money/subscribe" data-href="https://app.ngu.money/subscribe">https://app.ngu.money/subscribe</a>
+**1. NGU Signals:** A powerhouse in crypto trading with an 80%+ win rate on 200 coins, offering alerts for making informed decisions: <a href="https://app.ngu.money/subscribe" >https://app.ngu.money/subscribe</a>
 
 **2. Utility:** Beyond its origin as a meme coin, NGU is introducing Trade Battle Utility, adding a competitive dimension to the trading experience.
 
-**3. NFT Collection:** The Alpha Bulls NFT Collection, achieving rapid success and high rankings on DEADRARE.io, showcases NGU’s strong footing in the NFT space: <a href="https://deadrare.io/collection/alpha-bulls" data-href="https://deadrare.io/collection/alpha-bulls">https://deadrare.io/collection/alpha-bulls</a>
+**3. NFT Collection:** The Alpha Bulls NFT Collection, achieving rapid success and high rankings on DEADRARE.io, showcases NGU’s strong footing in the NFT space: <a href="https://deadrare.io/collection/alpha-bulls" >https://deadrare.io/collection/alpha-bulls</a>
 
 **4. NGU Tip Wallet:** An on-chain Alephium wallet facilitates secure and easy tipping within the NGU community via Discord, enhancing the project’s community engagement.
 
@@ -45,7 +45,7 @@ We engage with the Alephium community through collaborative projects, events, an
 
 #### **Which projects or dApps built on Alephium & part of that ecosystem, are you most intrigued/excited about?**
 
-The team is intrigued by projects like ayin.app, which has facilitated \$NGU trading, and Deadrare, an NFT marketplace where NGU listed its first NFT collection, “<a href="https://deadrare.io/collection/alpha-bulls" data-href="https://deadrare.io/collection/alpha-bulls">Alphabulls</a>,” achieving instant success.
+The team is intrigued by projects like ayin.app, which has facilitated \$NGU trading, and Deadrare, an NFT marketplace where NGU listed its first NFT collection, “<a href="https://deadrare.io/collection/alpha-bulls" >Alphabulls</a>,” achieving instant success.
 
 #### **What’s your view on the ecosystem growth and evolution of the past few months? What are you looking forward to the most in Alephium?**
 
@@ -53,7 +53,7 @@ The growth and evolution of the Alephium ecosystem have been remarkable, with si
 
 #### **Where can we stay in touch with your project & with you?**
 
-Interested parties are encouraged to follow our <a href="https://ngu.money/" data-href="https://ngu.money/">official website</a>, <a href="https://twitter.com/numbergoup_ngu" data-href="https://twitter.com/numbergoup_ngu">Twitter</a>, <a href="https://t.me/numbergoup_ngu" data-href="https://t.me/numbergoup_ngu">Telegram</a>, and <a href="https://discord.gg/ngu" data-href="https://discord.gg/ngu">Discord</a> channels to stay updated on NGU Money and engage with the project. These platforms are regularly updated with the latest news, developments, and opportunities for community interaction.
+Interested parties are encouraged to follow our <a href="https://ngu.money/" >official website</a>, <a href="https://twitter.com/numbergoup_ngu" >Twitter</a>, <a href="https://t.me/numbergoup_ngu" >Telegram</a>, and <a href="https://discord.gg/ngu" >Discord</a> channels to stay updated on NGU Money and engage with the project. These platforms are regularly updated with the latest news, developments, and opportunities for community interaction.
 
 Thank you, NGU.money team, for your answers! Alephium is thrilled to have such ambitious builders in the community! You can find the ngu.money official site here, and we wish ngu.money fruitful ventures ahead!
 
@@ -61,6 +61,6 @@ Thank you, NGU.money team, for your answers! Alephium is thrilled to have such a
 
 _Disclaimer: While Alephium is happy to support a growing developer community, it would like to clarify that it does not endorse, audit, or review any software presented in this series and encourages all users to make informed decisions and take personal responsibility for their actions._
 
-Have you built something or have a nice idea and want to request a grant or reward? You can access the <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" data-href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md">Alephium Community Grants &amp; Reward Program page</a> for more info!
+Have you built something or have a nice idea and want to request a grant or reward? You can access the <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" >Alephium Community Grants &amp; Reward Program page</a> for more info!
 
-If you need help or have extra questions, you are welcome to reach out in the \# 🎨dev-dapp channel on [Discord](/discord), or in the Alephium <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Telegram</a> channel. Don’t forget to follow <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium">@alephium on Twitter</a> to stay up-to-date.
+If you need help or have extra questions, you are welcome to reach out in the \# 🎨dev-dapp channel on [Discord](/discord), or in the Alephium <a href="https://t.me/alephiumgroup" >Telegram</a> channel. Don’t forget to follow <a href="https://twitter.com/alephium" >@alephium on Twitter</a> to stay up-to-date.

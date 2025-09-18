@@ -10,13 +10,13 @@ title: DEX Prototype Live on Testnet
 
 Alephium is excited to announce the release of a DEX prototype!
 
-You can access it here: <a href="https://alephium.github.io/alephium-dex" data-href="https://alephium.github.io/alephium-dex"></a> 🔗<a href="https://github.com/alephium/alephium-dex/tree/master/contracts" data-href="https://github.com/alephium/alephium-dex/tree/master/contracts">https://github.com/alephium/alephium-dex/tree/master/contracts</a>
+You can access it here: <a href="https://alephium.github.io/alephium-dex" ></a> 🔗<a href="https://github.com/alephium/alephium-dex/tree/master/contracts" >https://github.com/alephium/alephium-dex/tree/master/contracts</a>
 
 While this prototype is not meant to be a production-ready project, it is an excellent sample of what can be built on Alephium.
 
 The core devs have written and tested the contracts extensively to ensure their reliability and efficiency. The community should find them easy to fork and use as a starting point for their own projects.
 
-To showcase and test the prototype, a very simple UI is available. You can access it here: <a href="https://alephium.github.io/alephium-dex" data-href="https://alephium.github.io/alephium-dex">https://alephium.github.io/alephium-dex</a>
+To showcase and test the prototype, a very simple UI is available. You can access it here: <a href="https://alephium.github.io/alephium-dex" >https://alephium.github.io/alephium-dex</a>
 
 _Please note that the UI is provided for testing convenience purposes but isn’t meant as a demonstration of the intended user experience of production-ready applications on Alephium. When building the prototype, the focus_ **_was exclusively on the contracts and ensuring a reliable base_** _for people to build on._
 
@@ -28,11 +28,11 @@ To connect with the DEX on Testnet, you need first to install the Alephium brows
 
 #### **Download the extension wallet**
 
-🔵 <a href="https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj" data-href="https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj">Google Chrome store.</a>
+🔵 <a href="https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj" >Google Chrome store.</a>
 
-🟠 <a href="https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/" data-href="https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/">Firefox Store.</a>
+🟠 <a href="https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/" >Firefox Store.</a>
 
-More details <a href="https://medium.com/@alephium/alephium-launches-browser-extension-wallet-706dfeda98f5" data-href="https://medium.com/@alephium/alephium-launches-browser-extension-wallet-706dfeda98f5">about the extension wallet</a>.
+More details <a href="https://medium.com/@alephium/alephium-launches-browser-extension-wallet-706dfeda98f5" >about the extension wallet</a>.
 
 #### Creating an address in group 0
 
@@ -44,7 +44,7 @@ Once on the Testnet, make sure to create or use a wallet with an address in grou
 
 #### Connecting to the DEX
 
-Go to <a href="https://alephium.github.io/alephium-dex" data-href="https://alephium.github.io/alephium-dex">https://alephium.github.io/alephium-dex</a> click on “Connect Alephium,” and choose “Extension Wallet” from the options on the pop-up.
+Go to <a href="https://alephium.github.io/alephium-dex" >https://alephium.github.io/alephium-dex</a> click on “Connect Alephium,” and choose “Extension Wallet” from the options on the pop-up.
 
 ![](image_4bba1797a4.jpg)
 
@@ -66,4 +66,4 @@ Alephium believes that the future of decentralized finance lies in community-dri
 
 Thank you for your continued support! Alephium looks forward to seeing what the community will create with this prototype.
 
-If you need assistance, you are welcome to reach out in the community channels on [Discord](/discord), <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Telegram</a>. And follow <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium">@alephium on Twitte</a>r to stay up-to-date.
+If you need assistance, you are welcome to reach out in the community channels on [Discord](/discord), <a href="https://t.me/alephiumgroup" >Telegram</a>. And follow <a href="https://twitter.com/alephium" >@alephium on Twitte</a>r to stay up-to-date.

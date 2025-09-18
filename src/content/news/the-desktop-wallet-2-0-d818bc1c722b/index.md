@@ -9,9 +9,9 @@ title: The Desktop Wallet 2.0
 
 #### It’s a big one! Token support, dApp connectivity, and a lot more in this feature-rich release!
 
-Alephium is thrilled to announce the release of Desktop Wallet 2.0. You can upgrade directly (since version 1.5.0) from your wallet by clicking on the pop-up that will appear when you access the wallet, or by downloading <a href="https://github.com/alephium/desktop-wallet/releases/latest" data-href="https://github.com/alephium/desktop-wallet/releases/latest">the latest release</a>.
+Alephium is thrilled to announce the release of Desktop Wallet 2.0. You can upgrade directly (since version 1.5.0) from your wallet by clicking on the pop-up that will appear when you access the wallet, or by downloading <a href="https://github.com/alephium/desktop-wallet/releases/latest" >the latest release</a>.
 
-The <a href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a" data-href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a">Leman Network Upgrade</a> and the capabilities it unleashed on the network made it the perfect timing for a redesign of the wallet. It now provides many new features and an even more intuitive User Interface.
+The <a href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a" >Leman Network Upgrade</a> and the capabilities it unleashed on the network made it the perfect timing for a redesign of the wallet. It now provides many new features and an even more intuitive User Interface.
 
 ### A New Design
 
@@ -41,9 +41,9 @@ For those coming from the EVM context, there is no need to create multiple trans
 
 ### Welcome WalletConnect
 
-The Desktop Wallet can now interacts with dApps directly using the WalletConnect protocol. You can comfortably use this <a href="https://walletconnect.com/" data-href="https://walletconnect.com/">awesome open-source protocol</a> to connect to dApps. When you connect your wallet to a dApp through WalletConnect, it’s easy to sign transactions, view account balances, and more.
+The Desktop Wallet can now interacts with dApps directly using the WalletConnect protocol. You can comfortably use this <a href="https://walletconnect.com/" >awesome open-source protocol</a> to connect to dApps. When you connect your wallet to a dApp through WalletConnect, it’s easy to sign transactions, view account balances, and more.
 
-The example below shows a swap transaction in the <a href="https://alephium.github.io/alephium-dex" data-href="https://alephium.github.io/alephium-dex">Alephium DEX</a> (on testnet).
+The example below shows a swap transaction in the <a href="https://alephium.github.io/alephium-dex" >Alephium DEX</a> (on testnet).
 
 ![](image_44f65e2601.gif)
 
@@ -90,4 +90,4 @@ The Front End contributors will closely monitor the performance of this new rele
 
 ![](image_73cba478dc.png)
 
-If you have questions or suggestions, please come to Alephium’s [Discord](/discord), <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Telegram</a>, or reach out on <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium">Twitter</a>!
+If you have questions or suggestions, please come to Alephium’s [Discord](/discord), <a href="https://t.me/alephiumgroup" >Telegram</a>, or reach out on <a href="https://twitter.com/alephium" >Twitter</a>!

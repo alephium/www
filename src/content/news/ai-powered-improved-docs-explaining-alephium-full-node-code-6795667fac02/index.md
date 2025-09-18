@@ -8,7 +8,7 @@ title: 'AI-Powered Improved Docs: Explaining Alephium Full Node Code'
 
 ## New documentation was created with the help of Autodoc
 
-AI-powered tools have become increasingly popular for various tasks, including code documentation. <a href="https://github.com/context-labs/autodoc" data-href="https://github.com/context-labs/autodoc">Autodoc</a> by <a href="https://github.com/context-labs/autodoc" data-href="https://github.com/context-labs/autodoc">Sam Hogan</a> leverages OpenAI’s GPT-4 to parse automatically and document source code. This article will discuss how Alephium used Autodoc to generate documentation for the Alephium full-node source code.
+AI-powered tools have become increasingly popular for various tasks, including code documentation. <a href="https://github.com/context-labs/autodoc" >Autodoc</a> by <a href="https://github.com/context-labs/autodoc" >Sam Hogan</a> leverages OpenAI’s GPT-4 to parse automatically and document source code. This article will discuss how Alephium used Autodoc to generate documentation for the Alephium full-node source code.
 
 ## About Autodoc
 
@@ -20,7 +20,7 @@ The generated documentation is stored in the codebase, so developers can easily 
 
 Alephium used Autodoc to parse and document the Alephium full-node source code. After installing the Autodoc CLI tool and setting up the OpenAI API key, the next step was to run the **_doc init_** and **_doc index_** commands to generate the documentation for the codebase. Autodoc created markdown files for each file and folder in the repository, making it easy to navigate and understand the different components of the Alephium full node source code. You can access the docs here:
 
-🔗<a href="https://github.com/alephium/alephium/tree/master/autodoc/docs/markdown" data-href="https://github.com/alephium/alephium/tree/master/autodoc/docs/markdown">https://github.com/alephium/alephium/tree/master/autodoc/docs/markdown</a>
+🔗<a href="https://github.com/alephium/alephium/tree/master/autodoc/docs/markdown" >https://github.com/alephium/alephium/tree/master/autodoc/docs/markdown</a>
 
 Each file created has a link to the code file in the repository.
 
@@ -34,4 +34,4 @@ This was a great addition to the source code documentation, freeing the Alephium
 
 ---
 
-You are invited to take a look at the documentation, and if you need any assistance, you are welcome to reach out in the community channels on [Discord](/discord), and <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Telegram</a>. And follow <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium">@alephium on Twitter</a> to stay up-to-date.
+You are invited to take a look at the documentation, and if you need any assistance, you are welcome to reach out in the community channels on [Discord](/discord), and <a href="https://t.me/alephiumgroup" >Telegram</a>. And follow <a href="https://twitter.com/alephium" >@alephium on Twitter</a> to stay up-to-date.

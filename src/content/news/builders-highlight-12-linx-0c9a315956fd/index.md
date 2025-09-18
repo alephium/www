@@ -7,15 +7,15 @@ featuredImage: image_589079dadd.png
 title: 'Builders Highlight #12: Linx'
 ---
 
-_Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real utility for users. In the Builders Highlight series, they share more about their projects, thoughts, and insights on why building on Alephium. You can find_ <a href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" data-href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881"><em>Sezame Wallet</em></a>_,_ <a href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" data-href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c"><em>Alphpaca NFTs</em></a>, <a href="https://medium.com/@alephium/builders-highlight-3-ayin-6be4a6bd4ec2" data-href="https://medium.com/@alephium/builders-highlight-3-ayin-6be4a6bd4ec2"><em>Ayin</em></a>, <a href="https://medium.com/@alephium/builders-highlight-4-no-trust-verify-9ea495ca826f" data-href="https://medium.com/@alephium/builders-highlight-4-no-trust-verify-9ea495ca826f"><em>No Trust, Verify</em></a>, <a href="https://medium.com/@alephium/builders-highlight-5-deadrare-d5ff90d6161e" data-href="https://medium.com/@alephium/builders-highlight-5-deadrare-d5ff90d6161e"><em>Deadrare</em></a>, <a href="https://medium.com/@alephium/builders-highlight-6-what-the-duck-0aedc602ecfd" data-href="https://medium.com/@alephium/builders-highlight-6-what-the-duck-0aedc602ecfd"><em>What the Duck</em></a>, <a href="https://medium.com/@alephium/builders-highlight-7-alphpad-bbd4f4a34fd5" data-href="https://medium.com/@alephium/builders-highlight-7-alphpad-bbd4f4a34fd5"><em>Alphpad</em></a>, <a href="https://medium.com/@alephium/builders-highlight-8-ngu-money-f8bf05e36e99" data-href="https://medium.com/@alephium/builders-highlight-8-ngu-money-f8bf05e36e99"><em>NGU</em></a>_,_ <a href="https://medium.com/@alephium/builders-highlight-9-mobula-f9c45dc6c691" data-href="https://medium.com/@alephium/builders-highlight-9-mobula-f9c45dc6c691"><em>Mobula,</em></a> <a href="https://medium.com/@alephium/builders-highlight-10-amolyus-39e03b6bd3f0" data-href="https://medium.com/@alephium/builders-highlight-10-amolyus-39e03b6bd3f0"><em>Amolyus</em></a>, _and_ <a href="https://medium.com/@alephium/builders-highlight-11-fugashu-4f8566d1a8f0" data-href="https://medium.com/@alephium/builders-highlight-11-fugashu-4f8566d1a8f0"><em>Fugashu</em></a> _episodes here!_
+_Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real utility for users. In the Builders Highlight series, they share more about their projects, thoughts, and insights on why building on Alephium. You can find_ <a href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" ><em>Sezame Wallet</em></a>_,_ <a href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" ><em>Alphpaca NFTs</em></a>, <a href="https://medium.com/@alephium/builders-highlight-3-ayin-6be4a6bd4ec2" ><em>Ayin</em></a>, <a href="https://medium.com/@alephium/builders-highlight-4-no-trust-verify-9ea495ca826f" ><em>No Trust, Verify</em></a>, <a href="https://medium.com/@alephium/builders-highlight-5-deadrare-d5ff90d6161e" ><em>Deadrare</em></a>, <a href="https://medium.com/@alephium/builders-highlight-6-what-the-duck-0aedc602ecfd" ><em>What the Duck</em></a>, <a href="https://medium.com/@alephium/builders-highlight-7-alphpad-bbd4f4a34fd5" ><em>Alphpad</em></a>, <a href="https://medium.com/@alephium/builders-highlight-8-ngu-money-f8bf05e36e99" ><em>NGU</em></a>_,_ <a href="https://medium.com/@alephium/builders-highlight-9-mobula-f9c45dc6c691" ><em>Mobula,</em></a> <a href="https://medium.com/@alephium/builders-highlight-10-amolyus-39e03b6bd3f0" ><em>Amolyus</em></a>, _and_ <a href="https://medium.com/@alephium/builders-highlight-11-fugashu-4f8566d1a8f0" ><em>Fugashu</em></a> _episodes here!_
 
-Today, we welcome <a href="https://twitter.com/linx_labs" data-href="https://twitter.com/linx_labs">LinxLabs</a>! They built a <a href="https://linxwallet.xyz/" data-href="https://linxwallet.xyz/">beautiful wallet</a> and, with their OTC platform, were one of our <a href="https://medium.com/@alephium/hackathon-winners-announced-68d55711b99d" data-href="https://medium.com/@alephium/hackathon-winners-announced-68d55711b99d">hackathon winners</a>.
+Today, we welcome <a href="https://twitter.com/linx_labs" >LinxLabs</a>! They built a <a href="https://linxwallet.xyz/" >beautiful wallet</a> and, with their OTC platform, were one of our <a href="https://medium.com/@alephium/hackathon-winners-announced-68d55711b99d" >hackathon winners</a>.
 
 Here, they share some insights into how they got into crypto, how they started building their products, and their plans for the future!
 
 #### Hi! Please tell us a bit about yourself & your co-workers. Who are you? Where are you? (if you want!) What do you do? (As a job, as a hobby, or in general!)
 
-We are the Linx Labs team run by <a href="https://twitter.com/raduC22" data-href="https://twitter.com/raduC22">Radu Ciobanu</a>, <a href="https://twitter.com/FlorisdBest" data-href="https://twitter.com/FlorisdBest">Floor de Best</a> and Raul Canta.
+We are the Linx Labs team run by <a href="https://twitter.com/raduC22" >Radu Ciobanu</a>, <a href="https://twitter.com/FlorisdBest" >Floor de Best</a> and Raul Canta.
 
 About Floor: Lifelong entrepreneur from the Netherlands, married, proud dad of 2 sons and living in Spain. Full stack developer in the Linx Labs team and is into Brazilian Jiu Jitsu and Tinkering as a hobby.
 
@@ -39,7 +39,7 @@ Last year, someone suggested we look into Alephium as an investment, and we were
 
 This was our first hackathon participation, so we can’t really compare, but overall, it was a great experience. When we started, we had no experience yet with Ralph and smart contracts on Alephium, but within a couple of days, we had the first version of our contracts running on devnet.
 
-The <a href="http://docs.alephium.org" data-href="http://docs.alephium.org">documentation</a> was good, but what helped the most was some example contracts from other projects like <a href="https://github.com/alephium/alephium-dex" data-href="https://github.com/alephium/alephium-dex">alephium-dex</a> and <a href="https://github.com/alephium/alephium-nft" data-href="https://github.com/alephium/alephium-nft">alephium-nft-marketplace</a> and the direct technical support from the team. Even though we didn’t really encounter anything that we couldn’t grasp, it took a bit to fully understand the limitations between shards and how that influences the smart contracts/frontend.
+The <a href="http://docs.alephium.org" >documentation</a> was good, but what helped the most was some example contracts from other projects like <a href="https://github.com/alephium/alephium-dex" >alephium-dex</a> and <a href="https://github.com/alephium/alephium-nft" >alephium-nft-marketplace</a> and the direct technical support from the team. Even though we didn’t really encounter anything that we couldn’t grasp, it took a bit to fully understand the limitations between shards and how that influences the smart contracts/frontend.
 
 #### Tell us a little bit about Linx Labs’s history! What’s the Linx Wallet & Linx OTC origin story?
 
@@ -67,19 +67,19 @@ Start. Go through the documentation, talk with someone from the team and just st
 
 #### Where can we stay in touch with your project & with you? Is it possible to contribute?
 
-You can follow us on X (formerly Twitter): <a href="https://twitter.com/linx_labs" data-href="https://twitter.com/linx_labs">https://twitter.com/linx_labs</a>
+You can follow us on X (formerly Twitter): <a href="https://twitter.com/linx_labs" >https://twitter.com/linx_labs</a>
 
 **Or come chat in Discord or Telegram:**
 
-Discord 🔗 <a href="https://discord.com/invite/6kcuU7Tt22" data-href="https://discord.com/invite/6kcuU7Tt22">https://discord.com/invite/6kcuU7Tt22</a>
+Discord 🔗 <a href="https://discord.com/invite/6kcuU7Tt22" >https://discord.com/invite/6kcuU7Tt22</a>
 
-Telegram 🔗 <a href="https://t.me/linx_wallet_chat" data-href="https://t.me/linx_wallet_chat">https://t.me/linx_wallet_chat</a>
+Telegram 🔗 <a href="https://t.me/linx_wallet_chat" >https://t.me/linx_wallet_chat</a>
 
 **Download Linx Wallet**
 
-IOS 🔗 <a href="https://apps.apple.com/us/app/thinedgelabs-linx-wallet/id6450412379" data-href="https://apps.apple.com/us/app/thinedgelabs-linx-wallet/id6450412379">https://apps.apple.com/us/app/thinedgelabs-linx-wallet/id6450412379</a>
+IOS 🔗 <a href="https://apps.apple.com/us/app/thinedgelabs-linx-wallet/id6450412379" >https://apps.apple.com/us/app/thinedgelabs-linx-wallet/id6450412379</a>
 
-Android 🔗 <a href="https://play.google.com/store/apps/details?id=com.thinedgelabs.linx_wallet" data-href="https://play.google.com/store/apps/details?id=com.thinedgelabs.linx_wallet">https://play.google.com/store/apps/details?id=com.thinedgelabs.linx_wallet</a>
+Android 🔗 <a href="https://play.google.com/store/apps/details?id=com.thinedgelabs.linx_wallet" >https://play.google.com/store/apps/details?id=com.thinedgelabs.linx_wallet</a>
 
 Thank you, LinxLabs, for your answers!
 
@@ -87,4 +87,4 @@ Thank you, LinxLabs, for your answers!
 
 _Disclaimer: While Alephium is happy to support a growing developer community, it would like to clarify that it does not endorse, audit, or review any software presented in this series and encourages all users to make informed decisions and take personal responsibility for their actions._
 
-Have you built something or have a nice idea and want to request a grant or reward? You can access the <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" data-href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md">Alephium Community Grants &amp; Reward Program page</a> for more info!
+Have you built something or have a nice idea and want to request a grant or reward? You can access the <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" >Alephium Community Grants &amp; Reward Program page</a> for more info!

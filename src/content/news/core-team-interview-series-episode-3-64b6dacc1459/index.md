@@ -8,13 +8,13 @@ title: Core team interview series. Episode 3
 
 #### Presenting the humans developing the Back-end.
 
-**This article was updated:** <a href="https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0" data-href="https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0" rel="nofollow">https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0</a>
+**This article was updated:** <a href="https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0"  rel="nofollow">https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0</a>
 
 _For its team, Alephium is privileging agility and efficiency over hyper-growth. We do not stay at a human size because we think it is more efficient, but because Alephium strives to be a decentralized, community driven project. This means the project in itself is much larger than a team can ever be. Communication, trust, openness and transparency is paramount in such a set-up._
 
 _To shed some light on who we are and what we do, we decided to share a little about ourselves with the community through a small series of interviews._
 
-Read the <a href="https://medium.com/@alephium/core-team-interview-series-episode-1-3472f8295af6" data-href="https://medium.com/@alephium/core-team-interview-series-episode-1-3472f8295af6">1st part here</a> and the <a href="https://medium.com/@alephium/core-team-interview-series-episode-2-bec6e6908d2f" data-href="https://medium.com/@alephium/core-team-interview-series-episode-2-bec6e6908d2f">2nd part here.</a>
+Read the <a href="https://medium.com/@alephium/core-team-interview-series-episode-1-3472f8295af6" >1st part here</a> and the <a href="https://medium.com/@alephium/core-team-interview-series-episode-2-bec6e6908d2f" >2nd part here.</a>
 
 The Back-end is the heart of the system, but it is also a less obvious part of the development to the average observer: the less a back-end gets noticed the better job it is doing.
 
@@ -34,7 +34,7 @@ I studied computer science at EPFL, where I did a bachelor/master degree. Before
 
 #### Do you have funny, sporty, geeky or cranky hobbies?
 
-I used to do traditional Swiss wrestling: <a href="https://www.youtube.com/watch?v=TN3MCKCTtrg" data-href="https://www.youtube.com/watch?v=TN3MCKCTtrg">https://www.youtube.com/watch?v=TN3MCKCTtrg</a>
+I used to do traditional Swiss wrestling: <a href="https://www.youtube.com/watch?v=TN3MCKCTtrg" >https://www.youtube.com/watch?v=TN3MCKCTtrg</a>
 
 Now I’m more into music: guitar/alphorn/singing.
 
@@ -74,7 +74,7 @@ No.
 
 #### Got links?
 
-- <a href="https://github.com/lbqds" data-href="https://github.com/lbqds">https://github.com/lbqds</a>
+- <a href="https://github.com/lbqds" >https://github.com/lbqds</a>
 
 #### How/when did you come across crypto?
 
@@ -110,12 +110,12 @@ SEU, China; CTH, Sweden.
 
 #### Got links?
 
-- <a href="https://hongchao.me" data-href="https://hongchao.me">https://hongchao.me</a>
-- <a href="https://github.com/h0ngcha0" data-href="https://github.com/h0ngcha0">https://github.com/h0ngcha0</a>
+- <a href="https://hongchao.me" >https://hongchao.me</a>
+- <a href="https://github.com/h0ngcha0" >https://github.com/h0ngcha0</a>
 
 #### How/when did you come across crypto?
 
-Read <a href="https://www.economist.com/leaders/2015/10/31/the-trust-machine" data-href="https://www.economist.com/leaders/2015/10/31/the-trust-machine">The trust machine</a> article in the Economist magazine in 2015.
+Read <a href="https://www.economist.com/leaders/2015/10/31/the-trust-machine" >The trust machine</a> article in the Economist magazine in 2015.
 
 > I like Bitcoin. Alephium builds upon Bitcoin’s core abstractions and improves in both scalability and expressivity.
 
@@ -153,7 +153,7 @@ I’ve been snowboarding for more than 20 years, teaching trampoline to my kids,
 
 #### Got links?
 
-- <a href="https://www.linkedin.com/in/benoitperroud/" data-href="https://www.linkedin.com/in/benoitperroud/">https://www.linkedin.com/in/benoitperroud/</a>
+- <a href="https://www.linkedin.com/in/benoitperroud/" >https://www.linkedin.com/in/benoitperroud/</a>
 
 My socials are probably not interesting enough to be shared.
 
@@ -201,10 +201,10 @@ Computational geometry & physics.
 
 #### Got links?
 
-- <a href="https://twitter.com/SimerPlaha" data-href="https://twitter.com/SimerPlaha">https://twitter.com/SimerPlaha</a>
-- <a href="https://github.com/simerplaha/" data-href="https://github.com/simerplaha/">https://github.com/simerplaha/</a>
-- <a href="https://linkedin.com/in/simerplaha" data-href="https://linkedin.com/in/simerplaha">https://linkedin.com/in/simerplaha</a>
-- <a href="https://dev.to/simerplaha" data-href="https://dev.to/simerplaha">https://dev.to/simerplaha</a>
+- <a href="https://twitter.com/SimerPlaha" >https://twitter.com/SimerPlaha</a>
+- <a href="https://github.com/simerplaha/" >https://github.com/simerplaha/</a>
+- <a href="https://linkedin.com/in/simerplaha" >https://linkedin.com/in/simerplaha</a>
+- <a href="https://dev.to/simerplaha" >https://dev.to/simerplaha</a>
 
 #### How/when did you come across crypto?
 
@@ -247,8 +247,8 @@ Math and coding are my hobbies …
 
 #### Got links?
 
-- <a href="https://github.com/polarker" data-href="https://github.com/polarker">https://github.com/polarker</a>
-- <a href="https://twitter.com/wachmc" data-href="https://twitter.com/wachmc">https://twitter.com/wachmc</a>
+- <a href="https://github.com/polarker" >https://github.com/polarker</a>
+- <a href="https://twitter.com/wachmc" >https://twitter.com/wachmc</a>
 
 #### How/when did you come across crypto?
 
@@ -270,4 +270,4 @@ To solve the scalability and security challenge of blockchain with high quality 
 
 ---
 
-**This concludes this serie of interviews. I you have any questions or want to get to know us better, come say hi to us on our** <a href="https://discord.gg/JErgRBfRSB" data-href="https://discord.gg/JErgRBfRSB"><strong>discord</strong></a>**! We’re looking forward to see you there!**
+**This concludes this serie of interviews. I you have any questions or want to get to know us better, come say hi to us on our** <a href="https://discord.gg/JErgRBfRSB" ><strong>discord</strong></a>**! We’re looking forward to see you there!**

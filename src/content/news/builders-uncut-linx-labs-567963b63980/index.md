@@ -9,15 +9,15 @@ title: Builders Uncut — Linx Labs
 
 _This serie of interviews was conducted at the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
-Here, Radu, from <a href="https://x.com/linx_labs" data-href="https://x.com/linx_labs">Linx Labs</a> shares the latest developments on <a href="https://linxotc.com/" data-href="https://linxotc.com/">Linx OTC</a>, plans for the upcoming lending platform and his vision for the future of Alephium’s DeFi Ecosystem.Find the full (slightly edited) transcript below if you prefer reading.
+Here, Radu, from <a href="https://x.com/linx_labs" >Linx Labs</a> shares the latest developments on <a href="https://linxotc.com/" >Linx OTC</a>, plans for the upcoming lending platform and his vision for the future of Alephium’s DeFi Ecosystem.Find the full (slightly edited) transcript below if you prefer reading.
 
 `video: https://www.youtube.com/watch?v=yfgOOLGjp4E`
 
 #### Can you present yourself briefly and the project that you are building?
 
-I’m Radu, a co-founder of Linx. We are building on Alephium. We started as a DeFi project and began our journey a couple of years ago on a different chain, where we built a <a href="http://LinxWallet.xyz" data-href="http://LinxWallet.xyz">wallet</a>. We solved the user experience problem effectively, so users no longer have to care about shards and can enjoy a smooth experience sending tokens. We then switched to Alephium to make everything easier.
+I’m Radu, a co-founder of Linx. We are building on Alephium. We started as a DeFi project and began our journey a couple of years ago on a different chain, where we built a <a href="http://LinxWallet.xyz" >wallet</a>. We solved the user experience problem effectively, so users no longer have to care about shards and can enjoy a smooth experience sending tokens. We then switched to Alephium to make everything easier.
 
-Recently, we launched a platform called <a href="https://linxotc.com/" data-href="https://linxotc.com/">Linx OTC</a>, allowing users to swap tokens without a middleman. Alephium enables this unique feature, allowing OTC trades without an escrow, which is quite amazing. Next, we are working on a peer-to-peer lending platform, simplifying lending to the bare minimum. You can choose the duration of the loan, the collateral as a lender, and the interest you want to earn. It’s as simple as possible.
+Recently, we launched a platform called <a href="https://linxotc.com/" >Linx OTC</a>, allowing users to swap tokens without a middleman. Alephium enables this unique feature, allowing OTC trades without an escrow, which is quite amazing. Next, we are working on a peer-to-peer lending platform, simplifying lending to the bare minimum. You can choose the duration of the loan, the collateral as a lender, and the interest you want to earn. It’s as simple as possible.
 
 ![](image_9def256581.png)
 
@@ -61,11 +61,11 @@ Go Alephium, that’s all.
 
 #### Links:
 
-Website: <a href="https://linxotc.com/" data-href="https://linxotc.com/" rel="nofollow noopener noopener">https://linxotc.com/</a>  
-Twitter: <a href="https://x.com/linx_labs" data-href="https://x.com/linx_labs" rel="nofollow noopener noopener">https://x.com/linx_labs</a>  
-Telegram: <a href="https://t.me/linx_wallet_chat" data-href="https://t.me/linx_wallet_chat" rel="nofollow noopener noopener">https://t.me/linx_wallet_chat</a>  
-Discord: <a href="https://discord.com/invite/g434BaWTFb" data-href="https://discord.com/invite/g434BaWTFb" rel="nofollow noopener noopener">https://discord.com/invite/g434BaWTFb</a>
+Website: <a href="https://linxotc.com/"  rel="nofollow noopener noopener">https://linxotc.com/</a>  
+Twitter: <a href="https://x.com/linx_labs"  rel="nofollow noopener noopener">https://x.com/linx_labs</a>  
+Telegram: <a href="https://t.me/linx_wallet_chat"  rel="nofollow noopener noopener">https://t.me/linx_wallet_chat</a>  
+Discord: <a href="https://discord.com/invite/g434BaWTFb"  rel="nofollow noopener noopener">https://discord.com/invite/g434BaWTFb</a>
 
 ---
 
-For any questions or feedback, reach out to us on [Discord](/discord) or <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup" rel="noopener ugc nofollow noopener noopener noopener noopener noopener">Telegram</a>, and follow <a href="https://x.com/alephium" data-href="https://x.com/alephium" rel="noopener ugc nofollow noopener noopener noopener noopener noopener">@alephium on Twitter</a> for the latest updates!
+For any questions or feedback, reach out to us on [Discord](/discord) or <a href="https://t.me/alephiumgroup"  rel="noopener ugc nofollow noopener noopener noopener noopener noopener">Telegram</a>, and follow <a href="https://x.com/alephium"  rel="noopener ugc nofollow noopener noopener noopener noopener noopener">@alephium on Twitter</a> for the latest updates!

@@ -7,7 +7,7 @@ featuredImage: image_7f9966ba82.png
 title: Alephium Now Supported by Tangem Wallet
 ---
 
-We are thrilled to announce that Alephium (ALPH) is now supported by <a href="https://tangem.com/en/" data-href="https://tangem.com/en/">Tangem wallet</a>. This integration allows ALPH holders to securely store, receive, and manage their assets with Tangem’s innovative card-based hardware wallets, equipped with NFC technology and compatible with both Android and iOS devices.
+We are thrilled to announce that Alephium (ALPH) is now supported by <a href="https://tangem.com/en/" >Tangem wallet</a>. This integration allows ALPH holders to securely store, receive, and manage their assets with Tangem’s innovative card-based hardware wallets, equipped with NFC technology and compatible with both Android and iOS devices.
 
 ### Enhanced Security and Convenience
 
@@ -43,4 +43,4 @@ The Alephium-Tangem integration is another step forward in making ALPH more acce
 
 Alephium is a next-generation Proof-of-Work blockchain combining scalability, energy efficiency, and smart contract capabilities to enable decentralized solutions for a better future.
 
-[Website](/) \| <a href="https://docs.alephium.org/" data-href="https://docs.alephium.org/">Docs</a> \| <a href="https://github.com/alephium" data-href="https://github.com/alephium">GitHub</a> \| <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium">Twitter</a> \| [Discord](/discord) \| <a href="https://medium.com/@alephium" data-href="https://medium.com/@alephium">Medium</a> \| <a href="https://github.com/alephium/white-paper" data-href="https://github.com/alephium/white-paper">Whitepaper</a> \| <a href="https://www.alph.land/" data-href="https://www.alph.land/">Ecosystem</a>
+[Website](/) \| <a href="https://docs.alephium.org/" >Docs</a> \| <a href="https://github.com/alephium" >GitHub</a> \| <a href="https://twitter.com/alephium" >Twitter</a> \| [Discord](/discord) \| <a href="https://medium.com/@alephium" >Medium</a> \| <a href="https://github.com/alephium/white-paper" >Whitepaper</a> \| <a href="https://www.alph.land/" >Ecosystem</a>

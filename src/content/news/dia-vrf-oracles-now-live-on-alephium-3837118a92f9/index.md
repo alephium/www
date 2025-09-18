@@ -7,7 +7,7 @@ featuredImage: image_7fb863be9a.png
 title: DIA VRF Oracles Now Live on Alephium
 ---
 
-After bringing price oracles to Alephium, DIA now introduces <a href="https://docs.alephium.org/infrastructure/Oracles/#randomness-oracles" data-href="https://docs.alephium.org/infrastructure/Oracles/#randomness-oracles">Verifiable Random Function (VRF) oracles</a> to the ecosystem. This integration enhances trustless randomness generation for a variety of decentralized applications, including gaming, lotteries, and NFT distributions.
+After bringing price oracles to Alephium, DIA now introduces <a href="https://docs.alephium.org/infrastructure/Oracles/#randomness-oracles" >Verifiable Random Function (VRF) oracles</a> to the ecosystem. This integration enhances trustless randomness generation for a variety of decentralized applications, including gaming, lotteries, and NFT distributions.
 
 ### What is VRF and How Does It Work?
 
@@ -37,9 +37,9 @@ Alephium developers can now integrate DIA’s **price oracles and VRF solutions*
 
 For more details, visit:
 
-- <a href="https://www.diadata.org/blog/post/dia-price-oracles-alephium-mainnet/" data-href="https://www.diadata.org/blog/post/dia-price-oracles-alephium-mainnet/">DIA Price Oracles on Alephium</a>
-- <a href="https://www.diadata.org/onchain-randomness/" data-href="https://www.diadata.org/onchain-randomness/">DIA VRF Documentation</a>
-- <a href="https://docs.alephium.org/infrastructure/Oracles/" data-href="https://docs.alephium.org/infrastructure/Oracles/">Alephium Oracles Documentation</a>
+- <a href="https://www.diadata.org/blog/post/dia-price-oracles-alephium-mainnet/" >DIA Price Oracles on Alephium</a>
+- <a href="https://www.diadata.org/onchain-randomness/" >DIA VRF Documentation</a>
+- <a href="https://docs.alephium.org/infrastructure/Oracles/" >Alephium Oracles Documentation</a>
 
 This latest DIA integration marks a significant milestone for Alephium, enabling **provably fair randomness** and strengthening the foundation for decentralized innovation.
 
@@ -49,4 +49,4 @@ This latest DIA integration marks a significant milestone for Alephium, enabling
 
 Alephium is a next-generation Proof-of-Work blockchain combining scalability, energy efficiency, and smart contract capabilities to enable decentralized solutions for a better future.
 
-[Website](/) \| <a href="https://docs.alephium.org/" data-href="https://docs.alephium.org/">Docs</a> \| <a href="https://github.com/alephium" data-href="https://github.com/alephium">GitHub</a> \| <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium">Twitter</a> \| [Discord](/discord)\| <a href="https://github.com/alephium/white-paper" data-href="https://github.com/alephium/white-paper">Whitepaper</a> \| <a href="https://www.alph.land/" data-href="https://www.alph.land/">Ecosystem</a>
+[Website](/) \| <a href="https://docs.alephium.org/" >Docs</a> \| <a href="https://github.com/alephium" >GitHub</a> \| <a href="https://twitter.com/alephium" >Twitter</a> \| [Discord](/discord)\| <a href="https://github.com/alephium/white-paper" >Whitepaper</a> \| <a href="https://www.alph.land/" >Ecosystem</a>

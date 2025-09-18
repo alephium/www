@@ -10,7 +10,7 @@ title: Alephium Closes $3.6M Pre-sale From 80 Contributors to Expand Sharded UTX
 
 Lausanne, Switzerland, September 9th, 2021 — [Alephium](/), a simple and efficient sharding-based blockchain, has pre-sold for over \$3.6 million of tokens to several major funds and a large number of small buyers, with over 80 contributions.
 
-The pre-sale was led by <a href="https://alphemy.capital/" data-href="https://alphemy.capital/">Alphemy Capital</a>, with participation from <a href="https://www.whitepapercapital.com/" data-href="https://www.whitepapercapital.com/">White Paper Capital</a> and <a href="https://archery.fund/" data-href="https://archery.fund/">Archery Blockchain</a>. A significant portion of the pre-sale was funded by individuals, with 76% providing less than \$50,000 and 91% less than \$100,000. Over half of the purchasers were Swiss residents.
+The pre-sale was led by <a href="https://alphemy.capital/" >Alphemy Capital</a>, with participation from <a href="https://www.whitepapercapital.com/" >White Paper Capital</a> and <a href="https://archery.fund/" >Archery Blockchain</a>. A significant portion of the pre-sale was funded by individuals, with 76% providing less than \$50,000 and 91% less than \$100,000. Over half of the purchasers were Swiss residents.
 
 The Alephium blockchain is powered by the unique BlockFlow sharding architecture, based on stateful UTXO transactions. Native single-step cross-shard transactions ensure that Alephium is as efficient as a single-chain blockchain while spreading the transaction load between nodes.
 

@@ -9,7 +9,7 @@ title: Builders Uncut — Alphaga
 
 _This serie of interviews was conducted at the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
-Here, we are happy to welcome Kylian from <a href="https://alphaga.app/" data-href="https://alphaga.app/">Alphaga</a>, an NFT marketplace which just <a href="https://x.com/AlphagaMarket/status/1825261461137994234" data-href="https://x.com/AlphagaMarket/status/1825261461137994234">launched</a> on mainnet! Find the full (slightly edited) transcript below if you prefer reading.
+Here, we are happy to welcome Kylian from <a href="https://alphaga.app/" >Alphaga</a>, an NFT marketplace which just <a href="https://x.com/AlphagaMarket/status/1825261461137994234" >launched</a> on mainnet! Find the full (slightly edited) transcript below if you prefer reading.
 
 `video: https://www.youtube.com/watch?v=v3atVG_ssew`
 
@@ -19,7 +19,7 @@ I’ve been involved in the crypto world since around 2019, having interacted wi
 
 #### You have actually answered my next question, which is, “How did you find out about Alephium?” So, I guess it was through your co-founder. Do you know how he found it?
 
-I think he told me he found it through <a href="https://medium.com/@alephium/builders-uncut-mobula-76c5e6f1dd52" data-href="https://medium.com/@alephium/builders-uncut-mobula-76c5e6f1dd52">Mobula</a>. I’m not sure how specifically, but I think this is how he learned about it.
+I think he told me he found it through <a href="https://medium.com/@alephium/builders-uncut-mobula-76c5e6f1dd52" >Mobula</a>. I’m not sure how specifically, but I think this is how he learned about it.
 
 #### Which chains have you been doing NFT stuff in the past?
 
@@ -65,9 +65,9 @@ We also are working on DAO in the future. So this is something we really want to
 
 #### How many of you are building ALPHAGA?
 
-So we are a team of four people at the moment. So, I am working mostly on the marketing and communication side. “OverGames”, which came to the meetup, is the web developer. So he’s working on the front and back end side. We have Kryptox with the designers and the designer of Alphaga. So he’s the one who made everything that looks nice for Alphaga. And we have Benjamin, the smart contract developer who works on many other projects on Alephium, such as <a href="https://x.com/alphpacas" data-href="https://x.com/alphpacas">Alphpacas</a>.
+So we are a team of four people at the moment. So, I am working mostly on the marketing and communication side. “OverGames”, which came to the meetup, is the web developer. So he’s working on the front and back end side. We have Kryptox with the designers and the designer of Alphaga. So he’s the one who made everything that looks nice for Alphaga. And we have Benjamin, the smart contract developer who works on many other projects on Alephium, such as <a href="https://x.com/alphpacas" >Alphpacas</a>.
 
-#### Yeah, he’s <a href="https://x.com/BenLarkey" data-href="https://x.com/BenLarkey">BenLarkey</a>.
+#### Yeah, he’s <a href="https://x.com/BenLarkey" >BenLarkey</a>.
 
 That’s pretty much it at the moment. We are a team of four, and we hope to hire more people in the future. And so we really want to be open to the community what we said and not stay only between us. So, in the future, we’d love to hire new people and developers, for example.
 
@@ -79,7 +79,7 @@ This is why we want to propose a grant program to help those people build good s
 
 This is something we really want to be. And of course on our platform we can answer questions if people have any questions, like we’re really open to the people if you have any questions and we can help them do stuff if needed.
 
-#### Are you considering offering capabilities for generative artists, similar to <a href="https://www.fxhash.xyz/" data-href="https://www.fxhash.xyz/">Fxhash</a> on Tezos or <a href="https://foundation.app/" data-href="https://foundation.app/">Foundation</a> on EVM? Is this something you’re planning for the future?
+#### Are you considering offering capabilities for generative artists, similar to <a href="https://www.fxhash.xyz/" >Fxhash</a> on Tezos or <a href="https://foundation.app/" >Foundation</a> on EVM? Is this something you’re planning for the future?
 
 We really want to add more things to Alphaga. So, one thing I can say at the moment is that we’re working on video NFTs, so that people can buy and sell NFTs videos on our platform. So, this is something we don’t currently find on Alephium. So it’s not just an image. We can have a cover, we can have a video for the profile of the collection. So this is something we’ve been really working on. And in the future, it will be possible to have generative NFT, like you said. It’s not possible yet, but we’re working on being open and having the most things we can on Alphaga.
 
@@ -102,11 +102,11 @@ To be honest, since I’m not really a developer, I was scared that I was not go
 ---
 
 **Links:**  
-Website: <a href="https://alphaga.app/" data-href="https://alphaga.app/">https://alphaga.app/</a>   
-Twitter: <a href="https://x.com/AlphagaMarket" data-href="https://x.com/AlphagaMarket">https://x.com/AlphagaMarket</a>  
-Telegram: <a href="https://t.me/+y2wHXrmssEg2YjUx" data-href="https://t.me/+y2wHXrmssEg2YjUx">https://t.me/+y2wHXrmssEg2YjUx</a>  
-Discord: <a href="https://discord.gg/ctkjBKrbvp" data-href="https://discord.gg/ctkjBKrbvp">https://discord.gg/ctkjBKrbvp</a>
+Website: <a href="https://alphaga.app/" >https://alphaga.app/</a>   
+Twitter: <a href="https://x.com/AlphagaMarket" >https://x.com/AlphagaMarket</a>  
+Telegram: <a href="https://t.me/+y2wHXrmssEg2YjUx" >https://t.me/+y2wHXrmssEg2YjUx</a>  
+Discord: <a href="https://discord.gg/ctkjBKrbvp" >https://discord.gg/ctkjBKrbvp</a>
 
 ---
 
-For any questions or feedback, reach out to us on [Discord](/discord) or <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Telegram</a>, and follow <a href="https://x.com/alephium" data-href="https://x.com/alephium">@alephium on Twitter</a> for the latest updates!
+For any questions or feedback, reach out to us on [Discord](/discord) or <a href="https://t.me/alephiumgroup" >Telegram</a>, and follow <a href="https://x.com/alephium" >@alephium on Twitter</a> for the latest updates!

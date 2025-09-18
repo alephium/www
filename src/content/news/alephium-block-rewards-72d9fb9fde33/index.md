@@ -11,7 +11,7 @@ title: Alephium Block Rewards
 
 **_Disclaimer: This article was edited on June 12th, 2024 when block time was reduced from 64 to 16s_**
 
-Mining is a critical component of maintaining and developing a public ledger. It is the process of validating transactions and adding them to the Alephium blockchain. In addition, mining is the only way to issue new Alephium tokens. A consensus protocol has been implemented to ensure only Alephium miners can mine and validate transactions. In Alephium, this is called <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301">“Proof-of-Less-Work” (PoLW)</a>.
+Mining is a critical component of maintaining and developing a public ledger. It is the process of validating transactions and adding them to the Alephium blockchain. In addition, mining is the only way to issue new Alephium tokens. A consensus protocol has been implemented to ensure only Alephium miners can mine and validate transactions. In Alephium, this is called <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" >“Proof-of-Less-Work” (PoLW)</a>.
 
 For this process to be decentralized, having as many miners participating as possible is important. Hence, to incentivize the mining, the blockchain rewards the miner who successfully issues a new block and facilitates the transactions.
 
@@ -25,7 +25,7 @@ The mining reward is bound by two curves based on hashrate and timestamp. At a g
 
 > Block Reward = min (time-based reward, hashrate-based reward)**.**
 
-<a href="https://github.com/alephium/alephium/blob/master/protocol/src/main/scala/org/alephium/protocol/mining/Emission.scala" data-href="https://github.com/alephium/alephium/blob/master/protocol/src/main/scala/org/alephium/protocol/mining/Emission.scala">Mining Reward GitHub Implementation</a>
+<a href="https://github.com/alephium/alephium/blob/master/protocol/src/main/scala/org/alephium/protocol/mining/Emission.scala" >Mining Reward GitHub Implementation</a>
 
 #### Timestamp
 
@@ -33,7 +33,7 @@ The time-based reward emission rate for the first four years evolves as follows:
 
 <figure id="f8c7" class="graf graf--figure graf-after--p">
 <img src="image_becedcf971.jpg" class="graf-image" data-image-id="0*rDS3EQHgKpfB7DrG" data-width="1200" data-height="742" />
-<figcaption>If you want to know the precise numbers, <a href="https://github.com/alephium/alephium/blob/master/protocol/src/main/resources/time-inflation.csv" class="markup--anchor markup--figure-anchor" data-href="https://github.com/alephium/alephium/blob/master/protocol/src/main/resources/time-inflation.csv">here is the GitHub CSV file.</a></figcaption>
+<figcaption>If you want to know the precise numbers, <a href="https://github.com/alephium/alephium/blob/master/protocol/src/main/resources/time-inflation.csv" class="markup--anchor markup--figure-anchor" >here is the GitHub CSV file.</a></figcaption>
 </figure>
 
 Over four years, the time-based mining reward drops gradually from 15 ALPH (shared by 16 chains) per block period (16 seconds) to 5 ALPH. After 4 years, the time-based reward will be fixed to 5 ALPH per block period and drops to 0 ALPH after 82 years.
@@ -42,7 +42,7 @@ Over four years, the time-based mining reward drops gradually from 15 ALPH (shar
 
 <figure id="f83a" class="graf graf--figure graf-after--h4">
 <img src="image_c9069ba7e9.jpeg" class="graf-image" data-image-id="1*u09fRk117tukjKx9AVeWig.jpeg" data-width="786" data-height="486" />
-<figcaption>If you want to know the precise numbers, <a href="https://github.com/alephium/alephium/blob/master/protocol/src/main/resources/hashrate-inflation.csv" class="markup--anchor markup--figure-anchor" data-href="https://github.com/alephium/alephium/blob/master/protocol/src/main/resources/hashrate-inflation.csv">here is the GitHub CSV file.</a> (The first column is the log_2 of the network hashrate, a value of 8 means the network hashrate is 2**8 hash/second)</figcaption>
+<figcaption>If you want to know the precise numbers, <a href="https://github.com/alephium/alephium/blob/master/protocol/src/main/resources/hashrate-inflation.csv" class="markup--anchor markup--figure-anchor" >here is the GitHub CSV file.</a> (The first column is the log_2 of the network hashrate, a value of 8 means the network hashrate is 2**8 hash/second)</figcaption>
 </figure>
 
 - <span id="e7a1">*When the hashrate remains within the \[0 hash/sec, 1 Ph/sec\] range.   

@@ -7,11 +7,11 @@ featuredImage: image_d51d7c42be.jpeg
 title: 🚀 Welcome to Alephium (ALPH)
 ---
 
-#### Here’s all the information you need to get started with Alephium ! And if that’s not enough, check our [website](/) or come talk to us on <a href="https://discord.gg/JErgRBfRSB" data-href="https://discord.gg/JErgRBfRSB">Discord</a>, <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Telegram</a> or <a href="https://www.reddit.com/r/Alephium/" data-href="https://www.reddit.com/r/Alephium/">Reddit</a> !
+#### Here’s all the information you need to get started with Alephium ! And if that’s not enough, check our [website](/) or come talk to us on <a href="https://discord.gg/JErgRBfRSB" >Discord</a>, <a href="https://t.me/alephiumgroup" >Telegram</a> or <a href="https://www.reddit.com/r/Alephium/" >Reddit</a> !
 
 ---
 
-### 🐥 What is Alephium?<a href="https://wiki.alephium.org/5min-overview#-what-is-alephium"data-href="https://wiki.alephium.org/5min-overview#-what-is-alephium" title="Direct link to heading">​</a>
+### 🐥 What is Alephium?<a href="https://wiki.alephium.org/5min-overview#-what-is-alephium" title="Direct link to heading">​</a>
 
 Alephium is the first live Layer 1 sharded blockchain scaling and improving on Bitcoin core technologies, Proof of Work & UTXO. It delivers a highly performant, secure DeFi & Dapps platform with enhanced energy efficiency.
 
@@ -21,7 +21,7 @@ Alephium is the first live Layer 1 sharded blockchain scaling and improving on B
 
 ---
 
-### 💎 Why is Alephium special?<a href="https://wiki.alephium.org/5min-overview#-why-is-alephium-special"data-href="https://wiki.alephium.org/5min-overview#-why-is-alephium-special" title="Direct link to heading">​</a>
+### 💎 Why is Alephium special?<a href="https://wiki.alephium.org/5min-overview#-why-is-alephium-special" title="Direct link to heading">​</a>
 
 On top of an awesome team, an outstanding community and a lot of energy, here are our technical specificities:
 
@@ -37,13 +37,13 @@ It has its own programming language for dApps. Ralph is similar to the Rust synt
 
 Putting all these innovations together, Alephium delivers a highly demanded solution in the industry: a scalable blockchain improving on mature ideas from Bitcoin to deliver reliable, powerful and secure DeFi and dApps capabilities. And we’re live!
 
-Check out our <a href="https://github.com/alephium/white-paper" data-href="https://github.com/alephium/white-paper">whitepapers</a>!
+Check out our <a href="https://github.com/alephium/white-paper" >whitepapers</a>!
 
 ---
 
-### Milestones & Roadmap<a href="https://wiki.alephium.org/5min-overview#milestones--roadmap"data-href="https://wiki.alephium.org/5min-overview#milestones--roadmap" title="Direct link to heading">​</a>
+### Milestones & Roadmap<a href="https://wiki.alephium.org/5min-overview#milestones--roadmap" title="Direct link to heading">​</a>
 
-### 🚀 Completed Milestones<a href="https://wiki.alephium.org/5min-overview#-completed-milestones"data-href="https://wiki.alephium.org/5min-overview#-completed-milestones" title="Direct link to heading">​</a>
+### 🚀 Completed Milestones<a href="https://wiki.alephium.org/5min-overview#-completed-milestones" title="Direct link to heading">​</a>
 
 Core Platform
 
@@ -63,7 +63,7 @@ Ecosystem
 - 12.01.2022 — First exchange listing: Gate.io
 - 02.2022–9 mining pools on Alephium
 
-### 🛣️ Roadmap<a href="https://wiki.alephium.org/5min-overview#%EF%B8%8F-roadmap"data-href="https://wiki.alephium.org/5min-overview#%EF%B8%8F-roadmap" title="Direct link to heading">​</a>
+### 🛣️ Roadmap<a href="https://wiki.alephium.org/5min-overview#%EF%B8%8F-roadmap" title="Direct link to heading">​</a>
 
 The network is young and growing rapidly. We will update the roadmap to reflect the latest priorities.
 
@@ -90,7 +90,7 @@ Ecosystem
 - Additional CEX listing
 - 3rd party dApps (NFT, DEX, stablecoin) on Alephium
 
-### 🛡 Our tokenomics<a href="https://wiki.alephium.org/5min-overview#-our-tokenomics"data-href="https://wiki.alephium.org/5min-overview#-our-tokenomics" title="Direct link to heading">​</a>
+### 🛡 Our tokenomics<a href="https://wiki.alephium.org/5min-overview#-our-tokenomics" title="Direct link to heading">​</a>
 
 The token supply on Alephium is limited with a hardcap of 1 billion. At Mainnet Launch (11.8.21), an initial supply of 140M tokens (14% of the hardcap) was mined with the genesis block. The remaining supply of ALPH tokens will be mined over the years. Of these 140M tokens:
 
@@ -104,41 +104,41 @@ The token supply on Alephium is limited with a hardcap of 1 billion. At Mainnet 
 
 In addition, half of the transaction fees are burned with each block and Proof of Less Work enables internal mining cost through burning when the hashrate and energy consumption are significantly high.
 
-Find more details in our <a href="https://medium.com/@alephium/tokenomics-of-alephium-61d59b51029c" data-href="https://medium.com/@alephium/tokenomics-of-alephium-61d59b51029c" rel="noopener noreferrer">Tokenomics Medium article</a>.
+Find more details in our <a href="https://medium.com/@alephium/tokenomics-of-alephium-61d59b51029c"  rel="noopener noreferrer">Tokenomics Medium article</a>.
 
 ---
 
-### 🏋️‍♀️ Our team<a href="https://wiki.alephium.org/5min-overview#%EF%B8%8F%EF%B8%8F-our-team"data-href="https://wiki.alephium.org/5min-overview#%EF%B8%8F%EF%B8%8F-our-team" title="Direct link to heading">​</a>
+### 🏋️‍♀️ Our team<a href="https://wiki.alephium.org/5min-overview#%EF%B8%8F%EF%B8%8F-our-team" title="Direct link to heading">​</a>
 
 The core team counts 14 members. 9 are tech team members and the remaining 5 are part of the operations team. Come say hello on Discord!
 
-<a href="https://twitter.com/wachmc" data-href="https://twitter.com/wachmc">@ChengWang#1571</a> 🛠 is our founder, core dev, double PhD dropout in Math & CS, grand wizard of Alephium, working from Lausanne, Switzerland 🇨🇭
+<a href="https://twitter.com/wachmc" >@ChengWang#1571</a> 🛠 is our founder, core dev, double PhD dropout in Math & CS, grand wizard of Alephium, working from Lausanne, Switzerland 🇨🇭
 
-<a href="https://twitter.com/s0ukie" data-href="https://twitter.com/s0ukie">@s0ukie#8277</a> ⚙️ is our Chief of Staff, without whom nothing moves, previously @Lykke and @Bestmile. Working from Zürich, Switzerland 🇨🇭
+<a href="https://twitter.com/s0ukie" >@s0ukie#8277</a> ⚙️ is our Chief of Staff, without whom nothing moves, previously @Lykke and @Bestmile. Working from Zürich, Switzerland 🇨🇭
 
-<a href="http://twitter.com/heptazoid" data-href="http://twitter.com/heptazoid">@setto#4764</a> 🕹 is our community magician ! Creative, attentive and a constant presence on our Discord & Telegram, working from Sweden 🇸🇪
+<a href="http://twitter.com/heptazoid" >@setto#4764</a> 🕹 is our community magician ! Creative, attentive and a constant presence on our Discord & Telegram, working from Sweden 🇸🇪
 
-Meet the rest of the team on our [website](/) or on <a href="https://www.linkedin.com/company/alephium/people/" data-href="https://www.linkedin.com/company/alephium/people/">Linkedin</a>.
+Meet the rest of the team on our [website](/) or on <a href="https://www.linkedin.com/company/alephium/people/" >Linkedin</a>.
 
 ---
 
-### 🎯 Meet us, join us, talk to us\!<a href="https://wiki.alephium.org/5min-overview#-meet-us-join-us-talk-to-us"data-href="https://wiki.alephium.org/5min-overview#-meet-us-join-us-talk-to-us" title="Direct link to heading">​</a>
+### 🎯 Meet us, join us, talk to us\!<a href="https://wiki.alephium.org/5min-overview#-meet-us-join-us-talk-to-us" title="Direct link to heading">​</a>
 
-### Talk with us<a href="https://wiki.alephium.org/5min-overview#talk-with-us"data-href="https://wiki.alephium.org/5min-overview#talk-with-us" title="Direct link to heading">​</a>
+### Talk with us<a href="https://wiki.alephium.org/5min-overview#talk-with-us" title="Direct link to heading">​</a>
 
-- <a href="https://discord.gg/JErgRBfRSB" data-href="https://discord.gg/JErgRBfRSB">Discord</a>
-- <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Telegram</a>
-- <a href="https://www.reddit.com/r/Alephium/" data-href="https://www.reddit.com/r/Alephium/">Reddit</a>
+- <a href="https://discord.gg/JErgRBfRSB" >Discord</a>
+- <a href="https://t.me/alephiumgroup" >Telegram</a>
+- <a href="https://www.reddit.com/r/Alephium/" >Reddit</a>
 
-### Connect with us<a href="https://wiki.alephium.org/5min-overview#connect-with-us"data-href="https://wiki.alephium.org/5min-overview#connect-with-us" title="Direct link to heading">​</a>
+### Connect with us<a href="https://wiki.alephium.org/5min-overview#connect-with-us" title="Direct link to heading">​</a>
 
-- <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium">Twitter</a>
-- <a href="https://www.linkedin.com/company/alephium" data-href="https://www.linkedin.com/company/alephium">LinkedIn</a>
-- <a href="https://www.facebook.com/alephium" data-href="https://www.facebook.com/alephium">Facebook</a>
+- <a href="https://twitter.com/alephium" >Twitter</a>
+- <a href="https://www.linkedin.com/company/alephium" >LinkedIn</a>
+- <a href="https://www.facebook.com/alephium" >Facebook</a>
 
-### Read, setup, explore, contribute<a href="https://wiki.alephium.org/5min-overview#read-setup-explore-contribute"data-href="https://wiki.alephium.org/5min-overview#read-setup-explore-contribute" title="Direct link to heading">​</a>
+### Read, setup, explore, contribute<a href="https://wiki.alephium.org/5min-overview#read-setup-explore-contribute" title="Direct link to heading">​</a>
 
 - [Website](/)
-- <a href="https://github.com/alephium/white-paper" data-href="https://github.com/alephium/white-paper">Whitepapers</a>
-- <a href="https://medium.com/@alephium" data-href="https://medium.com/@alephium" rel="noopener noreferrer">Medium</a>
-- <a href="https://github.com/alephium" data-href="https://github.com/alephium">GitHub</a>
+- <a href="https://github.com/alephium/white-paper" >Whitepapers</a>
+- <a href="https://medium.com/@alephium"  rel="noopener noreferrer">Medium</a>
+- <a href="https://github.com/alephium" >GitHub</a>

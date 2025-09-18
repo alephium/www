@@ -9,7 +9,7 @@ title: Builders Uncut —Alph.pro, What The Duck &amp; Mintingti.me
 
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
-Here, <a href="https://x.com/0x_reed" data-href="https://x.com/0x_reed">Reed</a> shares his crypto journey, the experiments around NFTs and news about his projects deployed on Alephium. Here’s the full video interview. Find the full (slightly edited) transcript below if you prefer reading.
+Here, <a href="https://x.com/0x_reed" >Reed</a> shares his crypto journey, the experiments around NFTs and news about his projects deployed on Alephium. Here’s the full video interview. Find the full (slightly edited) transcript below if you prefer reading.
 
 `video: https://www.youtube.com/watch?v=qcaY14_y7wI`
 
@@ -21,9 +21,9 @@ I believe we’ve been interacting since I joined Alephium in November. And then
 
 Yeah, I’ve been following crypto for a long time. I think I first started playing with bitcoin around 2010. I was mining on my laptop, but never took it too seriously. I was always into the technical side and playing with it. Back then, I wasn’t even a developer yet, so I was just exploring and learning.
 
-Later, I became a full-stack web developer, and then I re-found crypto after gaining some web development experience. Around 2020, I started becoming a crypto developer. I found the Fantom network, started on Ethereum, of course, but spent quite a bit of time there, building. I built a portfolio management dashboard, and it went quite well. Then, some friends who had started <a href="http://ayin.app" data-href="http://ayin.app">Ayin</a> invited me to check out Alephium.
+Later, I became a full-stack web developer, and then I re-found crypto after gaining some web development experience. Around 2020, I started becoming a crypto developer. I found the Fantom network, started on Ethereum, of course, but spent quite a bit of time there, building. I built a portfolio management dashboard, and it went quite well. Then, some friends who had started <a href="http://ayin.app" >Ayin</a> invited me to check out Alephium.
 
-#### I didn’t know that! So you came in with a splash during the Hackaton, with <a href="http://alph.pro" data-href="http://alph.pro">Alph.pro</a>, right?
+#### I didn’t know that! So you came in with a splash during the Hackaton, with <a href="http://alph.pro" >Alph.pro</a>, right?
 
 Yeah, that was the main piece. I realized my vision had different parts, so I modularized them into individual projects.
 
@@ -31,13 +31,13 @@ Yeah, that was the main piece. I realized my vision had different parts, so I mo
 
 A Discord bot handles token prices and tipping, which is non-custodial. It integrates with your Alph wallet using WalletConnect behind the scenes. The indexer is easy to self-host and scans the node in the explorer. It has a plugin system, so you can write new plugins with about 50 to 100 lines of code to integrate new DEXs.
 
-#### But actually, that wasn’t the first thing we knew you for. The first thing was <a href="https://deadrare.io/collection/shades-of-defi" data-href="https://deadrare.io/collection/shades-of-defi">Shades of DeFi</a>.
+#### But actually, that wasn’t the first thing we knew you for. The first thing was <a href="https://deadrare.io/collection/shades-of-defi" >Shades of DeFi</a>.
 
 Yeah, that was my first project and collection. It inspired me to keep building on Alephium. Shades of DeFi was 32 items, just colour squares. I got the colours by taking common, iconic functions from EVM smart contracts and converting their hex values to colours. That’s where the Shades of DeFi colours came from.
 
-#### I thought there was some kind of poetic value to the collection. And it came at the beginning of DeadRare. I saw it was the 9th collection on their dashboard. Then, there was the <a href="https://snacks.alph.pro/" data-href="https://snacks.alph.pro/">snack vending machine during the hackathon</a>.
+#### I thought there was some kind of poetic value to the collection. And it came at the beginning of DeadRare. I saw it was the 9th collection on their dashboard. Then, there was the <a href="https://snacks.alph.pro/" >snack vending machine during the hackathon</a>.
 
-Oh, yeah. We were having open office calls, and a few of us joked about the lack of snacks. My friend <a href="https://x.com/rabTAI" data-href="https://x.com/rabTAI">Rabtai</a> did the contract side, and I did the front end.
+Oh, yeah. We were having open office calls, and a few of us joked about the lack of snacks. My friend <a href="https://x.com/rabTAI" >Rabtai</a> did the contract side, and I did the front end.
 
 #### Is it still active?
 
@@ -51,7 +51,7 @@ I’m not sure where Rabtai is from. We met on Discord while working on the Fant
 
 Yes, originally, What the Duck was just an NFT series, similar to Shades of DeFi. Then, people on Discord suggested turning it into a game. It’s called Quack Attack. You can log in as your duck, waddle around, and see everyone else. I’m remaking it with a more scalable architecture using Godot as the game engine.
 
-#### So, you also released another NFT collection called <a href="http://mintingti.me" data-href="http://mintingti.me">Minting Time</a>. It has the SVG on-chain and is animated.
+#### So, you also released another NFT collection called <a href="http://mintingti.me" >Minting Time</a>. It has the SVG on-chain and is animated.
 
 Yes, Minting Time came from my work on Quack Attack and What the Duck. I’m researching dynamic on-chain NFTs. My goal with Quack Attack is to have a gamified, customizable system where you can collect items and equip them. Minting Time was a proof of concept for how I envision the game working.
 
@@ -90,17 +90,17 @@ No, just glad to be here. Looking forward to the next one.
 #### Links:
 
 **Alph.pro**  
-Website: <a href="https://alph.pro/" data-href="https://alph.pro/" rel="nofollow noopener noopener">https://alph.pro/</a>  
-Twitter: <a href="https://x.com/Alphdotpro" data-href="https://x.com/Alphdotpro" rel="nofollow noopener noopener">https://x.com/Alphdotpro</a>  
-Discord: <a href="https://discord.gg/pfcR8EQZjb" data-href="https://discord.gg/pfcR8EQZjb" rel="nofollow noopener noopener">https://discord.gg/pfcR8EQZjb</a>
+Website: <a href="https://alph.pro/"  rel="nofollow noopener noopener">https://alph.pro/</a>  
+Twitter: <a href="https://x.com/Alphdotpro"  rel="nofollow noopener noopener">https://x.com/Alphdotpro</a>  
+Discord: <a href="https://discord.gg/pfcR8EQZjb"  rel="nofollow noopener noopener">https://discord.gg/pfcR8EQZjb</a>
 
 **What the Duck**  
-Website: <a href="https://theducklounge.com" data-href="https://theducklounge.com">https://theducklounge.com</a>  
-Twitter: <a href="https://x.com/alph_ducks" data-href="https://x.com/alph_ducks" rel="nofollow noopener noopener">https://x.com/alph_ducks</a>
+Website: <a href="https://theducklounge.com" >https://theducklounge.com</a>  
+Twitter: <a href="https://x.com/alph_ducks"  rel="nofollow noopener noopener">https://x.com/alph_ducks</a>
 
 **Mintingti.me**  
-Website: <a href="https://mintingti.me/" data-href="https://mintingti.me/" rel="nofollow noopener noopener">https://mintingti.me/</a>  
-Twitter: <a href="https://x.com/0x_reed" data-href="https://x.com/0x_reed" rel="nofollow noopener noopener">https://x.com/0x_reed</a>
+Website: <a href="https://mintingti.me/"  rel="nofollow noopener noopener">https://mintingti.me/</a>  
+Twitter: <a href="https://x.com/0x_reed"  rel="nofollow noopener noopener">https://x.com/0x_reed</a>
 
 ---
 
@@ -108,8 +108,8 @@ Reed was a speaker at the Athens Builders Meetup!
 
 `video: https://www.youtube.com/watch?v=_eIxfM-O09Q`
 
-You can also find all the talks of the Athens Builders Meetup <a href="https://medium.com/@alephium/all-the-athens-meetup-presentations-f419195640ce?source=user_profile---------0----------------------------" data-href="https://medium.com/@alephium/all-the-athens-meetup-presentations-f419195640ce?source=user_profile---------0----------------------------">here</a>.
+You can also find all the talks of the Athens Builders Meetup <a href="https://medium.com/@alephium/all-the-athens-meetup-presentations-f419195640ce?source=user_profile---------0----------------------------" >here</a>.
 
 ---
 
-For any questions or feedback, reach out to us on [Discord](/discord) or <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup" rel="noopener ugc nofollow noopener noopener noopener noopener noopener noopener">Telegram</a>, and follow <a href="https://x.com/alephium" data-href="https://x.com/alephium" rel="noopener ugc nofollow noopener noopener noopener noopener noopener noopener">@alephium on Twitter</a> for the latest updates!
+For any questions or feedback, reach out to us on [Discord](/discord) or <a href="https://t.me/alephiumgroup"  rel="noopener ugc nofollow noopener noopener noopener noopener noopener noopener">Telegram</a>, and follow <a href="https://x.com/alephium"  rel="noopener ugc nofollow noopener noopener noopener noopener noopener noopener">@alephium on Twitter</a> for the latest updates!

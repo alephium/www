@@ -7,9 +7,9 @@ featuredImage: image_50aac2130d.png
 title: 'TechTalk #11 — How to onboard the next billion people to crypto?'
 ---
 
-Mikaël Vaivre is Alephium’s lead front-end developer, and he’s been the guest of our TechTalk \#11! While Mika is fairly discreet, and Alephium users might not have had the chance to see him a lot, his work has touched their digital experiences in more ways than they realize. Whether they used the [desktop wallet](/wallets), browsed the Alephium [Website](/), or used the <a href="https://explorer.alephium.org/" data-href="https://explorer.alephium.org/">explorer</a>, Mika’s creativity and expertise and his fruitful collaboration with <a href="https://github.com/nop33" data-href="https://github.com/nop33">Ilias</a>) have shaped these experiences.
+Mikaël Vaivre is Alephium’s lead front-end developer, and he’s been the guest of our TechTalk \#11! While Mika is fairly discreet, and Alephium users might not have had the chance to see him a lot, his work has touched their digital experiences in more ways than they realize. Whether they used the [desktop wallet](/wallets), browsed the Alephium [Website](/), or used the <a href="https://explorer.alephium.org/" >explorer</a>, Mika’s creativity and expertise and his fruitful collaboration with <a href="https://github.com/nop33" >Ilias</a>) have shaped these experiences.
 
-<a href="https://twitter.com/mika_pote" data-href="https://twitter.com/mika_pote">Mika’s</a> trajectory in the world of technology began as an environmental engineer studying in Lausanne. However, he quickly entered the startup realm in a car automation company, where he crossed paths with <a href="https://twitter.com/wachmc" data-href="https://twitter.com/wachmc">Cheng</a>. His next step led him to the blockchain world at <a href="https://lykke.com/" data-href="https://lykke.com/">LYKKE,</a> one of the pioneering Swiss exchanges, and since 2019, Mika has been an integral part of Alephium.
+<a href="https://twitter.com/mika_pote" >Mika’s</a> trajectory in the world of technology began as an environmental engineer studying in Lausanne. However, he quickly entered the startup realm in a car automation company, where he crossed paths with <a href="https://twitter.com/wachmc" >Cheng</a>. His next step led him to the blockchain world at <a href="https://lykke.com/" >LYKKE,</a> one of the pioneering Swiss exchanges, and since 2019, Mika has been an integral part of Alephium.
 
 You can watch the presentation here:
 
@@ -57,7 +57,7 @@ An excellent example of this approach is the effort to integrate desktop wallets
 
 ![](image_b700f411ca.jpg)
 
-Here you can find the <a href="https://slides.com/mikaelvaivre/deck" data-href="https://slides.com/mikaelvaivre/deck">full presentation</a>!
+Here you can find the <a href="https://slides.com/mikaelvaivre/deck" >full presentation</a>!
 
 ### Q&A Session:
 
@@ -75,7 +75,7 @@ We prioritize the desktop wallet because it allows us to offer a seamless user e
 
 Both wallets serve different purposes and attract different users, contributing to the overall accessibility of our platform.
 
-**Alephium, thanks to its** <a href="https://medium.com/@alephium/an-introduction-to-blockflow-alephiums-sharding-algorithm-bbbf318c3402" data-href="https://medium.com/@alephium/an-introduction-to-blockflow-alephiums-sharding-algorithm-bbbf318c3402"><strong>single-step cross-group</strong></a> **design, abstracts a lot of the technical complexity of sharded blockchains away, but people will sometimes still need to understand which group they are. Same with the minimum requirement for sending tokens, people need to pay a 0.001 ALPH fee for “UTXO storage”. And the deployment of smart contracts that requires a storage rent of 1 ALPH. What’s your design process to integrate the technical peculiarities into a manageable experience for a normal user who is not an engineer?**
+**Alephium, thanks to its** <a href="https://medium.com/@alephium/an-introduction-to-blockflow-alephiums-sharding-algorithm-bbbf318c3402" ><strong>single-step cross-group</strong></a> **design, abstracts a lot of the technical complexity of sharded blockchains away, but people will sometimes still need to understand which group they are. Same with the minimum requirement for sending tokens, people need to pay a 0.001 ALPH fee for “UTXO storage”. And the deployment of smart contracts that requires a storage rent of 1 ALPH. What’s your design process to integrate the technical peculiarities into a manageable experience for a normal user who is not an engineer?**
 
 Our design process revolves around simplicity and education.
 
@@ -89,11 +89,11 @@ We take inspiration from centralized products with excellent user experiences an
 
 **WEN MOBILE WALLET?**
 
-The <a href="https://github.com/alephium/mobile-wallet" data-href="https://github.com/alephium/mobile-wallet">mobile wallet</a> is already in development, and we have already ported most features from the desktop wallet. Although it requires optimization and fine-tuning to work smoothly across various devices and operating systems, we are making good progress.
+The <a href="https://github.com/alephium/mobile-wallet" >mobile wallet</a> is already in development, and we have already ported most features from the desktop wallet. Although it requires optimization and fine-tuning to work smoothly across various devices and operating systems, we are making good progress.
 
 **The extension wallet is markedly different from the desktop wallet, will it be integrated soon in the front-end designed family of wallets?**
 
-The extension wallet (<a href="https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj" data-href="https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj">Chrome</a>, <a href="https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/" data-href="https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/">Firefox</a>) provides connection directly into the browser, making it useful for different interactions. While the form factor is similar, we still plan to offer both wallets as they cater to different user needs. Our goal is to refine the mobile wallet and eventually port its design to the extension, ensuring a consistent user experience across all our products.
+The extension wallet (<a href="https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj" >Chrome</a>, <a href="https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/" >Firefox</a>) provides connection directly into the browser, making it useful for different interactions. While the form factor is similar, we still plan to offer both wallets as they cater to different user needs. Our goal is to refine the mobile wallet and eventually port its design to the extension, ensuring a consistent user experience across all our products.
 
 **The explorer is a critical component of a decentralized infrastructure, as it will be, for many people, the only way to observe what actually happens. UX for tech people is command line/node debug/logs, UX for retail is the explorer. What does an explorer good enough look like?**
 
@@ -129,4 +129,4 @@ There are numerous areas of focus for the team. One exciting possibility is help
 
 ---
 
-You can reach us through <a href="https://discord.gg/XsGpZ5VDTM" data-href="https://discord.gg/XsGpZ5VDTM">Discord</a>, <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Telegram</a> and <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium">Twitter</a>. Stay tuned for the next Tech Talk, and thank you for your support!
+You can reach us through <a href="https://discord.gg/XsGpZ5VDTM" >Discord</a>, <a href="https://t.me/alephiumgroup" >Telegram</a> and <a href="https://twitter.com/alephium" >Twitter</a>. Stay tuned for the next Tech Talk, and thank you for your support!

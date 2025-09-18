@@ -21,29 +21,29 @@ _You’ll find the smart contract’s addresses on either side of the bridge, th
 
 This is the Wormhole bridge contracts architecture on the eth side. This will allow you to know the official address of all the contracts, so you can be aware of fake contracts.
 
-**BridgeImplementation **— <a href="https://etherscan.io/address/0x0F843945075DF4EA9C8a21f0e0CcFD5eB073eEAb#contracts" data-href="https://etherscan.io/address/0x0F843945075DF4EA9C8a21f0e0CcFD5eB073eEAb#contracts">https://etherscan.io/address/0x0F843945075DF4EA9C8a21f0e0CcFD5eB073eEAb#contracts</a>
+**BridgeImplementation **— <a href="https://etherscan.io/address/0x0F843945075DF4EA9C8a21f0e0CcFD5eB073eEAb#contracts" >https://etherscan.io/address/0x0F843945075DF4EA9C8a21f0e0CcFD5eB073eEAb#contracts</a>
 
-**TokenBridge **— <a href="https://etherscan.io/address/0x579a3bDE631c3d8068CbFE3dc45B0F14EC18dD43#code" data-href="https://etherscan.io/address/0x579a3bDE631c3d8068CbFE3dc45B0F14EC18dD43#code">https://etherscan.io/address/0x579a3bDE631c3d8068CbFE3dc45B0F14EC18dD43#code</a>
+**TokenBridge **— <a href="https://etherscan.io/address/0x579a3bDE631c3d8068CbFE3dc45B0F14EC18dD43#code" >https://etherscan.io/address/0x579a3bDE631c3d8068CbFE3dc45B0F14EC18dD43#code</a>
 
-**TokenImplementation** — <a href="https://etherscan.io/address/0xdeb8c2C57c7de48D3Ad5a980be3DD23868262b6A#code" data-href="https://etherscan.io/address/0xdeb8c2C57c7de48D3Ad5a980be3DD23868262b6A#code">https://etherscan.io/address/0xdeb8c2C57c7de48D3Ad5a980be3DD23868262b6A#code</a>
+**TokenImplementation** — <a href="https://etherscan.io/address/0xdeb8c2C57c7de48D3Ad5a980be3DD23868262b6A#code" >https://etherscan.io/address/0xdeb8c2C57c7de48D3Ad5a980be3DD23868262b6A#code</a>
 
-**Wormhole (governance)** — <a href="https://etherscan.io/address/0x01e82b67367dE9f805E55de730D5007a752912A8#code" data-href="https://etherscan.io/address/0x01e82b67367dE9f805E55de730D5007a752912A8#code">https://etherscan.io/address/0x01e82b67367dE9f805E55de730D5007a752912A8#code</a>
+**Wormhole (governance)** — <a href="https://etherscan.io/address/0x01e82b67367dE9f805E55de730D5007a752912A8#code" >https://etherscan.io/address/0x01e82b67367dE9f805E55de730D5007a752912A8#code</a>
 
 #### **Alephium**
 
 And these are the contracts on Alephium’s side:
 
-TokenBridge — <a href="https://explorer.alephium.org/addresses/23Fj7xr1pxWfYLixz3aBC3u5dUJVpAjXArbpiYWxeGjQT" data-href="https://explorer.alephium.org/addresses/23Fj7xr1pxWfYLixz3aBC3u5dUJVpAjXArbpiYWxeGjQT">https://explorer.alephium.org/addresses/23Fj7xr1pxWfYLixz3aBC3u5dUJVpAjXArbpiYWxeGjQT</a>
+TokenBridge — <a href="https://explorer.alephium.org/addresses/23Fj7xr1pxWfYLixz3aBC3u5dUJVpAjXArbpiYWxeGjQT" >https://explorer.alephium.org/addresses/23Fj7xr1pxWfYLixz3aBC3u5dUJVpAjXArbpiYWxeGjQT</a>
 
-GovernanceContract — <a href="https://explorer.alephium.org/addresses/uvVP76UfwQ1fmPTZWojUGYY2tKyuKe7Br76KDecfMbjM" data-href="https://explorer.alephium.org/addresses/uvVP76UfwQ1fmPTZWojUGYY2tKyuKe7Br76KDecfMbjM">https://explorer.alephium.org/addresses/uvVP76UfwQ1fmPTZWojUGYY2tKyuKe7Br76KDecfMbjM</a>
+GovernanceContract — <a href="https://explorer.alephium.org/addresses/uvVP76UfwQ1fmPTZWojUGYY2tKyuKe7Br76KDecfMbjM" >https://explorer.alephium.org/addresses/uvVP76UfwQ1fmPTZWojUGYY2tKyuKe7Br76KDecfMbjM</a>
 
 #### **Binance Smart Chain**
 
 The Wormhole Bridge Addresses on BSC are
 
-GovernanceContract — 0xE674e61111ecE5988113DA56f0b2Cc3CB22D5304 / Check it on BSCscan <a href="https://bscscan.com/address/0xE674e61111ecE5988113DA56f0b2Cc3CB22D5304" data-href="https://bscscan.com/address/0xE674e61111ecE5988113DA56f0b2Cc3CB22D5304" rel="noopener noreferrer nofollow noopener">here</a>.
+GovernanceContract — 0xE674e61111ecE5988113DA56f0b2Cc3CB22D5304 / Check it on BSCscan <a href="https://bscscan.com/address/0xE674e61111ecE5988113DA56f0b2Cc3CB22D5304"  rel="noopener noreferrer nofollow noopener">here</a>.
 
-TokenBridge — 0x2971F580C34d3D584e0342741c6a622f69424dD8 / Check it on BSCscan <a href="https://bscscan.com/address/0x2971F580C34d3D584e0342741c6a622f69424dD8" data-href="https://bscscan.com/address/0x2971F580C34d3D584e0342741c6a622f69424dD8" rel="noopener noreferrer nofollow noopener">here</a>.
+TokenBridge — 0x2971F580C34d3D584e0342741c6a622f69424dD8 / Check it on BSCscan <a href="https://bscscan.com/address/0x2971F580C34d3D584e0342741c6a622f69424dD8"  rel="noopener noreferrer nofollow noopener">here</a>.
 
 ### **Tokens**
 
@@ -51,25 +51,25 @@ First, here’s the wrapped ALPH token contract:
 
 On the **Ethereum** side -
 
-<a href="https://etherscan.io/token/0x590F820444fA3638e022776752c5eEF34E2F89A6#code" class="markup--anchor markup--mixtapeEmbed-anchor" data-href="https://etherscan.io/token/0x590F820444fA3638e022776752c5eEF34E2F89A6#code" title="https://etherscan.io/token/0x590F820444fA3638e022776752c5eEF34E2F89A6#code"><strong>Alephium (AlphBridge) (ALPH) Token Tracker | Etherscan</strong><br />
+<a href="https://etherscan.io/token/0x590F820444fA3638e022776752c5eEF34E2F89A6#code" class="markup--anchor markup--mixtapeEmbed-anchor"  title="https://etherscan.io/token/0x590F820444fA3638e022776752c5eEF34E2F89A6#code"><strong>Alephium (AlphBridge) (ALPH) Token Tracker | Etherscan</strong><br />
 <em>Alephium (AlphBridge) (ALPH) Token Tracker on Etherscan shows the price of the Token $1.37, total supply…</em>etherscan.io</a><a href="https://etherscan.io/token/0x590F820444fA3638e022776752c5eEF34E2F89A6#code" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="b3c7ee57fb9197a7a0685b9f5e445ea5" data-thumbnail-img-id="0*-GU1rW80AcTRUB6u" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*-GU1rW80AcTRUB6u);"></a>
 
-On the **Binance Smart Chain** side — <a href="https://bscscan.com/address/0x8683BA2F8b0f69b2105f26f488bADe1d3AB4dec8" data-href="https://bscscan.com/address/0x8683BA2F8b0f69b2105f26f488bADe1d3AB4dec8" rel="nofollow noopener">https://bscscan.com/address/0x8683BA2F8b0f69b2105f26f488bADe1d3AB4dec8</a>
+On the **Binance Smart Chain** side — <a href="https://bscscan.com/address/0x8683BA2F8b0f69b2105f26f488bADe1d3AB4dec8"  rel="nofollow noopener">https://bscscan.com/address/0x8683BA2F8b0f69b2105f26f488bADe1d3AB4dec8</a>
 
 > _Side note — because non-native stable coins are not fungible, we’re introducing naming changes._ On Alephium, USDT & USDC bridged from BSC will be named respectively USDTbsc & USDCbsc. The same goes for Ethereum-bridged stables, which are renamed USDTeth & USDCeth. Before bridging for swapping purposes, please make sure there’s liquidity on the DEX for the token you’re bridging!
 
 #### ETH tokens
 
-And here are the wrapped assets contracts on the Alephium side — <a href="https://explorer.alephium.org/addresses/zSRgc7goAYUgYsEBYdAzogyyeKv3ne3uvWb3VDtxnaEK" data-href="https://explorer.alephium.org/addresses/zSRgc7goAYUgYsEBYdAzogyyeKv3ne3uvWb3VDtxnaEK">USDT</a>eth — <a href="https://explorer.alephium.org/addresses/22Nb9JajRpAh9A2fWNgoKt867PA6zNyi541rtoraDfKXV" data-href="https://explorer.alephium.org/addresses/22Nb9JajRpAh9A2fWNgoKt867PA6zNyi541rtoraDfKXV">USDC</a> eth— <a href="https://explorer.alephium.org/addresses/xoDuoek5V2T1dL2HWwvbHT1JEHjMjtJfJoUS2xKsjFg3" data-href="https://explorer.alephium.org/addresses/xoDuoek5V2T1dL2HWwvbHT1JEHjMjtJfJoUS2xKsjFg3">DAI</a> — <a href="https://explorer.alephium.org/addresses/vP6XSUyjmgWCB2B9tD5Rqun56WJqDdExWnfwZVEqzhQb" data-href="https://explorer.alephium.org/addresses/vP6XSUyjmgWCB2B9tD5Rqun56WJqDdExWnfwZVEqzhQb">wETH</a> — <a href="https://explorer.alephium.org/addresses/xUTp3RXGJ1fJpCGqsAY6GgyfRQ3WQ1MdcYR1SiwndAbR" data-href="https://explorer.alephium.org/addresses/xUTp3RXGJ1fJpCGqsAY6GgyfRQ3WQ1MdcYR1SiwndAbR">wBTC</a>
+And here are the wrapped assets contracts on the Alephium side — <a href="https://explorer.alephium.org/addresses/zSRgc7goAYUgYsEBYdAzogyyeKv3ne3uvWb3VDtxnaEK" >USDT</a>eth — <a href="https://explorer.alephium.org/addresses/22Nb9JajRpAh9A2fWNgoKt867PA6zNyi541rtoraDfKXV" >USDC</a> eth— <a href="https://explorer.alephium.org/addresses/xoDuoek5V2T1dL2HWwvbHT1JEHjMjtJfJoUS2xKsjFg3" >DAI</a> — <a href="https://explorer.alephium.org/addresses/vP6XSUyjmgWCB2B9tD5Rqun56WJqDdExWnfwZVEqzhQb" >wETH</a> — <a href="https://explorer.alephium.org/addresses/xUTp3RXGJ1fJpCGqsAY6GgyfRQ3WQ1MdcYR1SiwndAbR" >wBTC</a>
 
 And here are the list of the ones than can be registered for bridging:
 
-- On Alephium, the verified tokens appear as “verified” within all our wallets and can be bridged over to Ethereum through our UI: <a href="https://github.com/alephium/token-list" data-href="https://github.com/alephium/token-list">https://github.com/alephium/token-list</a>
-- On Ethereum, this is the 1inch token list we’re using for tokens that can be bridged to Alephium through the frontend provided by Alephium — <a href="https://tokenlists.org/token-list?url=tokens.1inch.eth" data-href="https://tokenlists.org/token-list?url=tokens.1inch.eth">https://tokenlists.org/token-list?url=tokens.1inch.eth</a>
+- On Alephium, the verified tokens appear as “verified” within all our wallets and can be bridged over to Ethereum through our UI: <a href="https://github.com/alephium/token-list" >https://github.com/alephium/token-list</a>
+- On Ethereum, this is the 1inch token list we’re using for tokens that can be bridged to Alephium through the frontend provided by Alephium — <a href="https://tokenlists.org/token-list?url=tokens.1inch.eth" >https://tokenlists.org/token-list?url=tokens.1inch.eth</a>
 
 #### BSC tokens
 
-At launch, <a href="https://x.com/search?q=%24BNB&amp;src=cashtag_click" data-href="https://x.com/search?q=%24BNB&amp;src=cashtag_click" rel="noopener noreferrer nofollow noopener">$BNB</a>, <a href="https://x.com/search?q=%24USDT&amp;src=cashtag_click" data-href="https://x.com/search?q=%24USDT&amp;src=cashtag_click" rel="noopener noreferrer nofollow noopener">$USDT</a>, and <a href="https://x.com/search?q=%24USDC&amp;src=cashtag_click" data-href="https://x.com/search?q=%24USDC&amp;src=cashtag_click" rel="noopener noreferrer nofollow noopener">$USDC</a> will be bridgeable on Alephium’s front-end bridge UI. They will also appear as “verified” on Alephium’s family of wallets (desktop, mobile, and browser extension). If you want to bridge another token, you’ll need to register it. You can register all tokens on <a href="https://tokens.coingecko.com/binance-smart-chain/all.json" data-href="https://tokens.coingecko.com/binance-smart-chain/all.json" rel="noopener noreferrer nofollow noopener">this list</a>.
+At launch, <a href="https://x.com/search?q=%24BNB&amp;src=cashtag_click"  rel="noopener noreferrer nofollow noopener">$BNB</a>, <a href="https://x.com/search?q=%24USDT&amp;src=cashtag_click"  rel="noopener noreferrer nofollow noopener">$USDT</a>, and <a href="https://x.com/search?q=%24USDC&amp;src=cashtag_click"  rel="noopener noreferrer nofollow noopener">$USDC</a> will be bridgeable on Alephium’s front-end bridge UI. They will also appear as “verified” on Alephium’s family of wallets (desktop, mobile, and browser extension). If you want to bridge another token, you’ll need to register it. You can register all tokens on <a href="https://tokens.coingecko.com/binance-smart-chain/all.json"  rel="noopener noreferrer nofollow noopener">this list</a>.
 
 ### **Verified markets — DEXes**
 
@@ -89,35 +89,35 @@ Here are the pairs you can trade on AYIN (and there are more), always check liqu
 
 **BSC tokens**
 
-At launch, there are pools on <a href="https://x.com/@ayincoin" data-href="https://x.com/@ayincoin" rel="noopener noreferrer nofollow noopener">@ayincoin</a>, <a href="https://x.com/@CandySwapALPH" data-href="https://x.com/@CandySwapALPH" rel="noopener noreferrer nofollow noopener">@CandySwapALPH</a>, <a href="https://x.com/@ElexiumFinance" data-href="https://x.com/@ElexiumFinance" rel="noopener noreferrer nofollow noopener">@ElexiumFinance</a> ( <a href="https://explorer.alephium.org/addresses/zWgFBQP8UDivtStTpVbp7JL3JBxvJ5VLvpu1kQU1kUwZ" data-href="https://explorer.alephium.org/addresses/zWgFBQP8UDivtStTpVbp7JL3JBxvJ5VLvpu1kQU1kUwZ" rel="noopener noreferrer nofollow noopener">ALPH/BNB</a> — <a href="https://explorer.alephium.org/addresses/uuJ2XQgoraiiUeiwmwfkzWhHYZE4ZmHzz2o25xFGBSBy" data-href="https://explorer.alephium.org/addresses/uuJ2XQgoraiiUeiwmwfkzWhHYZE4ZmHzz2o25xFGBSBy" rel="noopener noreferrer nofollow noopener">USDTeth/USDTbsc</a> — <a href="https://explorer.alephium.org/addresses/ubFr1VZmfc4zkRQJYm1Mx74mcHzLoDy1QLvxeA5JG9rX" data-href="https://explorer.alephium.org/addresses/ubFr1VZmfc4zkRQJYm1Mx74mcHzLoDy1QLvxeA5JG9rX" rel="noopener noreferrer nofollow noopener">ALPH/USDTbsc</a>) & <a href="https://x.com/@alphswaps" data-href="https://x.com/@alphswaps" rel="noopener noreferrer nofollow noopener">@alphswaps</a> . Most of the DEXs will have pools at bridge’s launch or soon after.
+At launch, there are pools on <a href="https://x.com/@ayincoin"  rel="noopener noreferrer nofollow noopener">@ayincoin</a>, <a href="https://x.com/@CandySwapALPH"  rel="noopener noreferrer nofollow noopener">@CandySwapALPH</a>, <a href="https://x.com/@ElexiumFinance"  rel="noopener noreferrer nofollow noopener">@ElexiumFinance</a> ( <a href="https://explorer.alephium.org/addresses/zWgFBQP8UDivtStTpVbp7JL3JBxvJ5VLvpu1kQU1kUwZ"  rel="noopener noreferrer nofollow noopener">ALPH/BNB</a> — <a href="https://explorer.alephium.org/addresses/uuJ2XQgoraiiUeiwmwfkzWhHYZE4ZmHzz2o25xFGBSBy"  rel="noopener noreferrer nofollow noopener">USDTeth/USDTbsc</a> — <a href="https://explorer.alephium.org/addresses/ubFr1VZmfc4zkRQJYm1Mx74mcHzLoDy1QLvxeA5JG9rX"  rel="noopener noreferrer nofollow noopener">ALPH/USDTbsc</a>) & <a href="https://x.com/@alphswaps"  rel="noopener noreferrer nofollow noopener">@alphswaps</a> . Most of the DEXs will have pools at bridge’s launch or soon after.
 
 #### ETH — wALPH at Uniswap
 
-<a href="https://app.uniswap.org/explore/tokens/ethereum/0x590f820444fa3638e022776752c5eef34e2f89a6" data-href="https://app.uniswap.org/explore/tokens/ethereum/0x590f820444fa3638e022776752c5eef34e2f89a6" rel="nofollow noopener">https://app.uniswap.org/explore/tokens/ethereum/0x590f820444fa3638e022776752c5eef34e2f89a6</a>
+<a href="https://app.uniswap.org/explore/tokens/ethereum/0x590f820444fa3638e022776752c5eef34e2f89a6"  rel="nofollow noopener">https://app.uniswap.org/explore/tokens/ethereum/0x590f820444fa3638e022776752c5eef34e2f89a6</a>
 
 #### BSC — wALPH at PancakeSwap
 
-wALPH/BNB — <a href="https://pancakeswap.finance/?inputCurrency=0x8683BA2F8b0f69b2105f26f488bADe1d3AB4dec8&amp;outputCurrency=BNB" data-href="https://pancakeswap.finance/?inputCurrency=0x8683BA2F8b0f69b2105f26f488bADe1d3AB4dec8&amp;outputCurrency=BNB" rel="nofollow noopener">https://pancakeswap.finance/?inputCurrency=0x8683BA2F8b0f69b2105f26f488bADe1d3AB4dec8&amp;outputCurrency=BNB</a>
+wALPH/BNB — <a href="https://pancakeswap.finance/?inputCurrency=0x8683BA2F8b0f69b2105f26f488bADe1d3AB4dec8&amp;outputCurrency=BNB"  rel="nofollow noopener">https://pancakeswap.finance/?inputCurrency=0x8683BA2F8b0f69b2105f26f488bADe1d3AB4dec8&amp;outputCurrency=BNB</a>
 
-wALPH/USDT — <a href="https://pancakeswap.finance/?inputCurrency=0x8683BA2F8b0f69b2105f26f488bADe1d3AB4dec8&amp;outputCurrency=0x55d398326f99059fF775485246999027B3197955" data-href="https://pancakeswap.finance/?inputCurrency=0x8683BA2F8b0f69b2105f26f488bADe1d3AB4dec8&amp;outputCurrency=0x55d398326f99059fF775485246999027B3197955" rel="nofollow noopener">https://pancakeswap.finance/?inputCurrency=0x8683BA2F8b0f69b2105f26f488bADe1d3AB4dec8&amp;outputCurrency=0x55d398326f99059fF775485246999027B3197955</a>
+wALPH/USDT — <a href="https://pancakeswap.finance/?inputCurrency=0x8683BA2F8b0f69b2105f26f488bADe1d3AB4dec8&amp;outputCurrency=0x55d398326f99059fF775485246999027B3197955"  rel="nofollow noopener">https://pancakeswap.finance/?inputCurrency=0x8683BA2F8b0f69b2105f26f488bADe1d3AB4dec8&amp;outputCurrency=0x55d398326f99059fF775485246999027B3197955</a>
 
-As a reminder, you can check on <a href="https://www.coingecko.com/en/coins/alephium" data-href="https://www.coingecko.com/en/coins/alephium">Coingecko</a> all the exchanges that listed ALPH.
+As a reminder, you can check on <a href="https://www.coingecko.com/en/coins/alephium" >Coingecko</a> all the exchanges that listed ALPH.
 
 ### **Wallets**
 
-Desktop wallet — Mac, Windows, Linux — <a href="https://github.com/alephium/desktop-wallet/releases/latest" data-href="https://github.com/alephium/desktop-wallet/releases/latest">https://github.com/alephium/desktop-wallet/releases/latest</a>
+Desktop wallet — Mac, Windows, Linux — <a href="https://github.com/alephium/desktop-wallet/releases/latest" >https://github.com/alephium/desktop-wallet/releases/latest</a>
 
-Mobile wallet — Android — <a href="https://play.google.com/store/apps/details?id=org.alephium.wallet" data-href="https://play.google.com/store/apps/details?id=org.alephium.wallet">https://play.google.com/store/apps/details?id=org.alephium.wallet</a>
+Mobile wallet — Android — <a href="https://play.google.com/store/apps/details?id=org.alephium.wallet" >https://play.google.com/store/apps/details?id=org.alephium.wallet</a>
 
-Mobile wallet — iOS — <a href="https://apps.apple.com/us/app/alephium-wallet/id6469043072" data-href="https://apps.apple.com/us/app/alephium-wallet/id6469043072">https://apps.apple.com/us/app/alephium-wallet/id6469043072</a>
+Mobile wallet — iOS — <a href="https://apps.apple.com/us/app/alephium-wallet/id6469043072" >https://apps.apple.com/us/app/alephium-wallet/id6469043072</a>
 
-Browser extension — Chrome — <a href="https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj" data-href="https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj">https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj</a>
+Browser extension — Chrome — <a href="https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj" >https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj</a>
 
-Browser extension — Firefox — <a href="https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/" data-href="https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/">https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/</a>
+Browser extension — Firefox — <a href="https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/" >https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/</a>
 
-3rd party mobile wallet — Sezame wallet <a href="https://sezame.app/" data-href="https://sezame.app/">https://sezame.app/</a>
+3rd party mobile wallet — Sezame wallet <a href="https://sezame.app/" >https://sezame.app/</a>
 
-3rd party mobile wallet — Sahhar wallet <a href="https://play.google.com/store/apps/details?id=com.sahhar.sahhar_wallet&amp;hl=en&amp;gl=US" data-href="https://play.google.com/store/apps/details?id=com.sahhar.sahhar_wallet&amp;hl=en&amp;gl=US">https://play.google.com/store/apps/details?id=com.sahhar.sahhar_wallet&amp;hl=en&amp;gl=US</a>
+3rd party mobile wallet — Sahhar wallet <a href="https://play.google.com/store/apps/details?id=com.sahhar.sahhar_wallet&amp;hl=en&amp;gl=US" >https://play.google.com/store/apps/details?id=com.sahhar.sahhar_wallet&amp;hl=en&amp;gl=US</a>
 
 ---
 
@@ -125,4 +125,4 @@ Be careful out there, it’s a wild world!
 
 And now back to building.
 
-As always, let us know on <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium">Twitter</a>, [Discord](/discord), <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Telegram</a> or <a href="https://www.reddit.com/r/Alephium/" data-href="https://www.reddit.com/r/Alephium/">Reddit</a> if you have any questions!
+As always, let us know on <a href="https://twitter.com/alephium" >Twitter</a>, [Discord](/discord), <a href="https://t.me/alephiumgroup" >Telegram</a> or <a href="https://www.reddit.com/r/Alephium/" >Reddit</a> if you have any questions!
