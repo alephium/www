@@ -1,3 +1,4 @@
+import { colord } from 'colord'
 import { graphql, Link, PageProps } from 'gatsby'
 import styled from 'styled-components'
 
@@ -193,22 +194,31 @@ const ArticleStyled = styled.article`
   }
 
   a {
-    color: ${({ theme }) => theme.link};
+    color: ${({ theme }) => theme.textPrimary} !important;
+    text-underline-offset: 3px !important;
+    text-decoration-style: dotted;
+    &:hover {
+      text-decoration-style: solid;
+    }
   }
 
   p,
   ul,
   ol {
     margin-top: var(--spacing-3);
-    color: ${({ theme }) => theme.textPrimary};
+    color: ${({ theme }) => theme.textPrimaryVariation};
     line-height: 1.7;
     font-family: 'Source Serif';
     font-weight: 350;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
 
     &:first-child {
       margin-top: 0;
     }
+  }
+
+  strong {
+    color: ${({ theme }) => colord(theme.textPrimaryVariation).alpha(0.9).toHex()};
   }
 
   ul {
