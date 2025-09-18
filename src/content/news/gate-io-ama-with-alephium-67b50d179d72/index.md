@@ -56,7 +56,7 @@ On the 15th of February 2022, Gate.io hosted an AMA with Alephium in their Engli
 
 > _Alephium delivers a scalable dApp &DeFi platform that is as secure as bitcoin, as programmable as Ethereum while keeping decentralization & trustlessness as core values._
 
-> _More here :_ [https://medium.com/@alephium/welcome-to-alephium-alph-48dfb72aa458](/news/post/welcome-to-alephium-alph-48dfb72aa458)
+> _More here:_ [Welcome to Alephium](/news/post/welcome-to-alephium-alph-48dfb72aa458)
 
 > _& here_ [https://hackernoon.com/what-is-sharding-and-utxo-scaling-for-blockchain](https://hackernoon.com/what-is-sharding-and-utxo-scaling-for-blockchain)
 
@@ -74,7 +74,7 @@ On the 15th of February 2022, Gate.io hosted an AMA with Alephium in their Engli
 
 > _The rest of the tokens (86%) will be used for mining rewards and ensure the processing of transactions on the Alephium blockchain over the next 80 years._
 
-> _Read more on our tokenomics here:_ [https://medium.com/@alephium/alephium-tokenomics-61d59b51029c](/news/post/alephium-tokenomics-61d59b51029c)
+> _Read more on [our tokenomics here](/news/post/alephium-tokenomics-61d59b51029c)
 
 **tomrodg / Gateio**
 
@@ -104,7 +104,7 @@ On the 15th of February 2022, Gate.io hosted an AMA with Alephium in their Engli
 
 > **_Marketing & awareness 🗣_** _We keep pushing for qualified awareness, organic growth and community development._
 
-> _Read more about it here:_ [https://medium.com/@alephium/alephium-q1-project-update-50f4a7b354b0](/news/post/alephium-q1-project-update-50f4a7b354b0)
+> _Read more about it [here](/news/post/alephium-q1-project-update-50f4a7b354b0)_
 
 **tomrodg / Gateio**
 
@@ -164,7 +164,7 @@ On the 15th of February 2022, Gate.io hosted an AMA with Alephium in their Engli
 > Medium :_ [https://medium.com/@alephium](https://medium.com/@alephium)_  
 > Github:_ [https://github.com/alephium](https://github.com/alephium)
 
-> _For revenues, we started a community reward program in December 2021 you can read more about it here:_ [https://medium.com/@alephium/introducing-community-rewards-f4638bbf14bf](/news/post/introducing-community-rewards-f4638bbf14bf) _We are also looking into giving grants to interesting dApps projects. Of course, mining will also bring you reward._
+> _For revenues, we started a community reward program in December 2021 you can read more about it [here](/news/post/introducing-community-rewards-f4638bbf14bf). _We are also looking into giving grants to interesting dApps projects. Of course, mining will also bring you reward._
 
 **Q: PomPayPi**
 
@@ -238,7 +238,7 @@ On the 15th of February 2022, Gate.io hosted an AMA with Alephium in their Engli
 
 > _We see our miners, mining pools and mining community increasing & improving every day. We see the need for our chain in this new multichain world. We see the need for DeFi on UTXO, we see the need for scaling, and we are the best positioned on those. So yes, we are confident, and hard at work!_
 
-> _Not only do we take into account community feedback, we actively solicit it, and act on it! Every day! We have a community rewards program to reward feedback, help and good ideas. See it here :_ [https://medium.com/@alephium/introducing-community-rewards-f4638bbf14bf](/news/post/introducing-community-rewards-f4638bbf14bf)
+> _Not only do we take into account community feedback, we actively solicit it, and act on it! Every day! We have a community rewards program to reward feedback, help and good ideas. See it [here](/news/post/introducing-community-rewards-f4638bbf14bf).
 
 **Q: Ok Good**
 
@@ -320,7 +320,7 @@ On the 15th of February 2022, Gate.io hosted an AMA with Alephium in their Engli
 
 **A: Maud / Alephium**
 
-> [https://medium.com/@alephium/introducing-community-rewards-f4638bbf14bf](/news/post/introducing-community-rewards-f4638bbf14bf)
+[Introducing community rewards](/news/post/introducing-community-rewards-f4638bbf14bf)
 
 **Q: Luffy Boy**
 

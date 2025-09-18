@@ -1,12 +1,12 @@
 ---
 date: 2023-01-06T16:29:48.501000Z
-description: 'This article was updated: https://medium.com/@alephium/alephium-core-contributors-f35eeaeaf0a0'
+description: 'For its team, Alephium is privileging agility and efficiency over hyper-growth.'
 spotlight: false
 featuredImage: image_0416b8898f.jpeg
 title: Core team interview series. Episode 4
 ---
 
-**This article was updated:** [https://medium.com/@alephium/alephium-core-contributors-f35eeaeaf0a0](/news/post/alephium-core-contributors-f35eeaeaf0a0)
+[This article was updated](/news/post/alephium-core-contributors-f35eeaeaf0a0)
 
 _For its team, Alephium is privileging agility and efficiency over hyper-growth. The project does stay at a human size not because it is more efficient, but because Alephium strives to be a decentralized, community-driven project. This means the project in itself is much larger than a team can ever be. Communication, trust, openness, and transparency are paramount in such a setup._
 
