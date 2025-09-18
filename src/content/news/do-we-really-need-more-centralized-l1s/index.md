@@ -51,7 +51,7 @@ It was said **Proof-of-Work** couldn’t scale without compromises, both mathema
 
 We've shown that true decentralization, high performance, and usability **don't actually have to be mutually exclusive**, as critics previously thought.
 
-**Phase 2** is where our infrastructure [evolves and aligns](https://medium.com/@alephium/from-scalable-infrastructure-to-aligned-economics-0a51764491c9). We’re programming a **self-sustaining ecosystem** for the community and $ALPH holders. This is our “why”, our **North Star**. As in the past, we are **building for long-term endurance**, not trends that are gone in a flash.
+**Phase 2** is where our infrastructure [evolves and aligns](/news/post/from-scalable-infrastructure-to-aligned-economics). We’re programming a **self-sustaining ecosystem** for the community and $ALPH holders. This is our “why”, our **North Star**. As in the past, we are **building for long-term endurance**, not trends that are gone in a flash.
 
 We’re launching our own Core dApp as a **native growth engine** and **definitive proof-of-concept**. Once launched, we’ll enter a new economic model where infrastructure, economics, and governance are properly **aligned**.
 
