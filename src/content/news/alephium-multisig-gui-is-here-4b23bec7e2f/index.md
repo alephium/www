@@ -14,7 +14,7 @@ _Multisignature wallets are essential to a maturing infrastructure, as they prov
 
 A multisig (multi-signature) wallet in cryptocurrency is used for enhanced security and joint control of assets. It requires multiple signatures to authorize a transaction, making it harder for attackers to access funds. It’s useful for people or organizations needing consensus before spending, serves as a backup solution if one key is lost, helps in regulatory compliance, and reduces the single point of failure risk associated with single key wallets.
 
-Whether you want to have a setup where more than one person is in charge of funds (for example when funds belong to a company or association), or you want to have multiple keys for your own wallet, it is a good security practice to have it in a multisig wallet. We’ve talked about it <a href="https://medium.com/@alephium/ttxoo-2-the-road-to-self-custody-cfea4ae89444" >in the past</a>!
+Whether you want to have a setup where more than one person is in charge of funds (for example when funds belong to a company or association), or you want to have multiple keys for your own wallet, it is a good security practice to have it in a multisig wallet. We’ve talked about it <a href="/news/post/ttxoo-2-the-road-to-self-custody-cfea4ae89444" >in the past</a>!
 
 Use the following guide to create a multisig wallet, and learn how to prepare transactions, sign and send them. Do not hesitate to let us know if you have any questions in our [Discord](/discord).
 
@@ -127,7 +127,7 @@ At this stage, the wallet has been created, a transaction has been built and dis
 
 And that’s it!
 
-You have successfully created and created and used a Multisig wallet to send a transaction on Alephium. For those who value both security and flexibility and need a way to share the funds ownership with others, a Multisig wallet is a powerful tool to have in your crypto arsenal. Remember, the future of finance is not just about owning digital assets but <a href="https://medium.com/@alephium/ttxoo-2-the-road-to-self-custody-cfea4ae89444" >securing them smartly</a>.
+You have successfully created and created and used a Multisig wallet to send a transaction on Alephium. For those who value both security and flexibility and need a way to share the funds ownership with others, a Multisig wallet is a powerful tool to have in your crypto arsenal. Remember, the future of finance is not just about owning digital assets but <a href="/news/post/ttxoo-2-the-road-to-self-custody-cfea4ae89444" >securing them smartly</a>.
 
 _Let us know what you think, follow the evolution of the code on_ <a href="https://github.com/alephium" ><em>Github</em></a>_, follow the news on_ <a href="https://twitter.com/alephium" ><em>Twitter</em></a> _&_ <a href="https://medium.com/@alephium" ><em>Medium</em></a> _or come interact onboard on_ <a href="https://discord.com/invite/GEbcpajCJG" ><em>Discord</em></a> _&_ <a href="https://t.me/alephiumgroup" ><em>Telegram</em></a>_!_
 

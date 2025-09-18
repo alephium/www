@@ -73,7 +73,7 @@ Timothy was a speaker at the Athens Builders Meetup!
 
 `video: https://www.youtube.com/watch?v=9hAYzsLmIBc`
 
-You can also find all the talks of the Athens Builders Meetup <a href="https://medium.com/@alephium/all-the-athens-meetup-presentations-f419195640ce" >here</a>.
+You can also find all the talks of the Athens Builders Meetup <a href="/news/post/all-the-athens-meetup-presentations-f419195640ce" >here</a>.
 
 ---
 

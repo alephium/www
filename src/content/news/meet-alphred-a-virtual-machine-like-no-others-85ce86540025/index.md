@@ -7,7 +7,7 @@ featuredImage: image_de012354c9.jpeg
 title: Meet ALPHred, a Virtual Machine like no others
 ---
 
-_This is the third of a series of technical innovations brought by Alephium. Find the previous ones_ <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" ><em>here</em></a> _(PolW) and_ <a href="https://medium.com/p/8de3b0f76749" ><em>here</em></a> _(sUTXO). Here we examine what a virtual machine is, what function it fills in blockchains and what distinguishes Alephium’s VM (called Alphred) from others._
+_This is the third of a series of technical innovations brought by Alephium. Find the previous ones_ <a href="/news/post/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" ><em>here</em></a> _(PolW) and_ <a href="https://medium.com/p/8de3b0f76749" ><em>here</em></a> _(sUTXO). Here we examine what a virtual machine is, what function it fills in blockchains and what distinguishes Alephium’s VM (called Alphred) from others._
 
 ### _What is a VM?_
 
@@ -45,7 +45,7 @@ The choice of a VM and the corresponding toolset (programming Language, compiler
 
 ### _Alephium’s tooling: Alphred & Ralph_
 
-Alephium’s stateful UTXO combines UTXO & account model and has <a href="https://medium.com/@alephium/an-introduction-to-the-stateful-utxo-model-8de3b0f76749" >smart contract capabilities</a>. It needs a VM to execute the smart contract’s instructions in a totally different runtime environment than other blockchains with enhanced security and performance features.
+Alephium’s stateful UTXO combines UTXO & account model and has <a href="/news/post/an-introduction-to-the-stateful-utxo-model-8de3b0f76749" >smart contract capabilities</a>. It needs a VM to execute the smart contract’s instructions in a totally different runtime environment than other blockchains with enhanced security and performance features.
 
 This imposed the decision to create a new VM, specifically designed to take advantage of sUTXO’s strengths. Like Alephium’s full nodes, the VM <a href="https://twitter.com/alephium/status/1592536671177699328" >is written in Scala for enhanced security</a> and named **Alphred**.
 

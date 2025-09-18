@@ -53,7 +53,7 @@ Twitter is the center of our public life, where real-time updates, long-form wri
 
 <a href="https://twitter.com/nymproject" ><strong>Alephium Twitter</strong></a>
 
-**Our friends often translate our posts there too! In** <a href="https://twitter.com/Alephiumfr" ><strong>French</strong></a>**,** <a href="https://twitter.com/Alephiumde" ><strong>German</strong></a> **&** <a href="https://twitter.com/Alephiumua" ><strong>Ukrainian</strong></a> **(thanks to** <a href="https://medium.com/@alephium/community-highlight-6-waldi-zkit-beats-37af1f6df3b8?source=your_stories_page-------------------------------------" ><strong>Waldi</strong></a> **&** <a href="https://medium.com/@alephium/community-highlight-7-oheka-13d8b4ae025e?source=your_stories_page-------------------------------------" ><strong>Oheka</strong></a>**)**
+**Our friends often translate our posts there too! In** <a href="https://twitter.com/Alephiumfr" ><strong>French</strong></a>**,** <a href="https://twitter.com/Alephiumde" ><strong>German</strong></a> **&** <a href="https://twitter.com/Alephiumua" ><strong>Ukrainian</strong></a> **(thanks to** <a href="/news/post/community-highlight-6-waldi-zkit-beats-37af1f6df3b8?source=your_stories_page-------------------------------------" ><strong>Waldi</strong></a> **&** <a href="/news/post/community-highlight-7-oheka-13d8b4ae025e?source=your_stories_page-------------------------------------" ><strong>Oheka</strong></a>**)**
 
 ### → Articles & updates
 
@@ -61,13 +61,13 @@ For those who like reading, our Medium provides updates on Alephium’s technolo
 
 **Here’s the official** <a href="https://medium.com/@alephium" ><strong>Alephium</strong></a> **medium.**
 
-And here are the community-led translations in <a href="https://medium.com/@Alph-Indonesia" >Indonesian</a> (thank you <a href="https://medium.com/@alephium/community-highlight-15-yulius-aka-chris45-036ae41a8037" >Chris</a>!), <a href="https://medium.com/alephiumfr" >French</a> (thank you <a href="https://medium.com/@alephium/builders-highlight-4-no-trust-verify-9ea495ca826f" >NTV</a>!) & <a href="https://discord.com/channels/747741246667227157/747998352842686545/1190685377321771078" >Ukrainian</a> by <a href="https://twitter.com/ustyianskyi" >Nazar</a>.
+And here are the community-led translations in <a href="https://medium.com/@Alph-Indonesia" >Indonesian</a> (thank you <a href="/news/post/community-highlight-15-yulius-aka-chris45-036ae41a8037" >Chris</a>!), <a href="https://medium.com/alephiumfr" >French</a> (thank you <a href="/news/post/builders-highlight-4-no-trust-verify-9ea495ca826f" >NTV</a>!) & <a href="https://discord.com/channels/747741246667227157/747998352842686545/1190685377321771078" >Ukrainian</a> by <a href="https://twitter.com/ustyianskyi" >Nazar</a>.
 
 ### → Reddit & YouTube
 
 Reddit has a very lively crypto community! Alephium is present there, with a small but active community. Our Youtube channel is where you’ll find tutorials, podcasts, dev workshops, recorded twitter spaces & AMAs!
 
-For example find the tutorial on how to use the bridge on <a href="https://www.youtube.com/watch?v=xoYVzbwBAjg" >Youtube</a> (as a video), and on <a href="https://medium.com/@alephium/alephiumalephium-bridge-the-tutorial-28e7b92b339a?source=user_profile---------7----------------------------" >Medium</a> (as text).
+For example find the tutorial on how to use the bridge on <a href="https://www.youtube.com/watch?v=xoYVzbwBAjg" >Youtube</a> (as a video), and on <a href="/news/post/alephiumalephium-bridge-the-tutorial-28e7b92b339a?source=user_profile---------7----------------------------" >Medium</a> (as text).
 
 **Alephium** <a href="https://www.reddit.com/r/Alephium/" ><strong>Reddit</strong></a>\*\*  
 \*\*<a href="https://www.youtube.com/@alephium" ><strong>Alephium YouTube</strong></a>
@@ -94,7 +94,7 @@ The Alephium community spans the world. Even if they care about different things
 
 **The core-contributors**
 
-All the core contributors are <a href="https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0" >doxxed</a> (and you can find them on the website & on Linkedin) and actively participating in our channels! From the obvious ones managing coms & community management, to the core devs, front-end devs or backend infra devs, everyone is there, accessible & active in front & with the whole community. (find them with their role!)
+All the core contributors are <a href="/news/post/alephium-contributors-f35eeaeaf0a0" >doxxed</a> (and you can find them on the website & on Linkedin) and actively participating in our channels! From the obvious ones managing coms & community management, to the core devs, front-end devs or backend infra devs, everyone is there, accessible & active in front & with the whole community. (find them with their role!)
 
 **New Members**
 

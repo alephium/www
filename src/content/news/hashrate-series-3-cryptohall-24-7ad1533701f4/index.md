@@ -7,7 +7,7 @@ featuredImage: image_9fb00a1330.png
 title: 'Hashrate Series #3: CryptoHall 24'
 ---
 
-_The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem actors to sustain and improve Alephium’s reliability. This series is about them, and after_ <a href="https://medium.com/@alephium/hashrate-series-1-nicehash-ee0936adf899" ><em>Nicehash</em></a> _and_ <a href="https://medium.com/@alephium/hashrate-series-2-goldshell-93cc51a86640" ><em>Goldshell</em></a>_, please welcome CryptoHall 24._
+_The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem actors to sustain and improve Alephium’s reliability. This series is about them, and after_ <a href="/news/post/hashrate-series-1-nicehash-ee0936adf899" ><em>Nicehash</em></a> _and_ <a href="/news/post/hashrate-series-2-goldshell-93cc51a86640" ><em>Goldshell</em></a>_, please welcome CryptoHall 24._
 
 Here, Frederick shares his crypto journey, and how CryptoHall24 came to be. Here’s the full video interview. If you prefer reading, find the full (slightly edited) transcript below.
 

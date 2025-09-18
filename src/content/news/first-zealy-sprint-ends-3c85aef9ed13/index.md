@@ -85,7 +85,7 @@ Join us in thanking the <a href="https://twitter.com/Blockflow_DAO" >BlockFlow A
 As the Zealy sprint concludes, there is plenty of ways for you to continue to engage with Alephium and our amazing community and ecosystem:
 
 - Our regular Zealy quests will come back with new challenges next year!
-- The <a href="https://medium.com/@alephium/alephium-launches-its-ambassador-program-8e9c9c8c9d94" >Ambassador program</a> launched literally yesterday! If you want some more involvement, come and apply!
+- The <a href="/news/post/alephium-launches-its-ambassador-program-8e9c9c8c9d94" >Ambassador program</a> launched literally yesterday! If you want some more involvement, come and apply!
 - The community rewards program is still open! Signal your contributions through <a href="https://docs.google.com/forms/d/e/1FAIpQLSeaSouXl-Hwd_lZohwgysqk-8whc9bydHuVpSCr1C6IoDHuoA/viewform" >this form</a> (but only the most extraordinary contributions will be rewarded!).
 
 As always, join us on <a href="https://twitter.com/alephium" >Twitter</a>, [Discord](/discord), <a href="https://t.me/alephiumgroup" >Telegram</a> or <a href="https://www.reddit.com/r/Alephium/" >Reddit</a>!

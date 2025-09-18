@@ -7,7 +7,7 @@ featuredImage: image_233bde702f.png
 title: 'Builders Highlight #5: Deadrare'
 ---
 
-_Our ecosystem thrives with developers building amazing projects on top of Alephium delivering a unique experience and providing real utility for users. In the Builders Highlight series, they share more about their projects, thoughts, and insights on why building on Alephium. You can find_ <a href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" ><em>#1 here</em></a>_,_ <a href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" ><em>#2 here</em></a>, <a href="https://medium.com/@alephium/builders-highlight-3-ayin-6be4a6bd4ec2" ><em>#3 here</em></a> _and_ <a href="https://medium.com/@alephium/builders-highlight-4-no-trust-verify-9ea495ca826f" ><em>#4 here</em></a>_!_
+_Our ecosystem thrives with developers building amazing projects on top of Alephium delivering a unique experience and providing real utility for users. In the Builders Highlight series, they share more about their projects, thoughts, and insights on why building on Alephium. You can find_ <a href="/news/post/builders-highlight-sezame-wallet-ddb4aeb61881" ><em>#1 here</em></a>_,_ <a href="/news/post/builders-highlight-alphpaca-nfts-99c69775f04c" ><em>#2 here</em></a>, <a href="/news/post/builders-highlight-3-ayin-6be4a6bd4ec2" ><em>#3 here</em></a> _and_ <a href="/news/post/builders-highlight-4-no-trust-verify-9ea495ca826f" ><em>#4 here</em></a>_!_
 
 This episode is about <a href="https://deadrare.io/" >Deadrare.io</a>, the first ever NFT Marketplace on mainnet, discover a little bit more about its values, the team’s vision of Alephium, and the tech behind a cool NFT Marketplace!
 

@@ -7,7 +7,7 @@ featuredImage: image_a3d0edd3a7.jpg
 title: Toolkit Design Contest winners announced!
 ---
 
-_Following the_ <a href="https://medium.com/@alephium/alephium-multisig-gui-is-here-4b23bec7e2f" ><em>release of the Multisig GUI</em></a>_, Alephium launched a_ <a href="https://medium.com/@alephium/design-contest-a-logo-for-the-toolkit-website-f7bf7801b03c" ><em>design contest</em></a> _to find a logo for the_ <a href="https://alephium.github.io/alephium-toolkit/" ><em>toolkit website</em></a>_! And now, we announce a winner, 2 runner-ups and special mentions!_
+_Following the_ <a href="/news/post/alephium-multisig-gui-is-here-4b23bec7e2f" ><em>release of the Multisig GUI</em></a>_, Alephium launched a_ <a href="/news/post/design-contest-a-logo-for-the-toolkit-website-f7bf7801b03c" ><em>design contest</em></a> _to find a logo for the_ <a href="https://alephium.github.io/alephium-toolkit/" ><em>toolkit website</em></a>_! And now, we announce a winner, 2 runner-ups and special mentions!_
 
 **Thank you!**
 

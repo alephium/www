@@ -29,9 +29,9 @@ The remaining 140 million ALPH (14% of the max supply) were minted with the gene
 
 ### Mining Emissions
 
-As Alephium uses <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" >Proof of (Less) Work</a>, 860 million ALPH will be mined and distributed to the miners who secure the network as block rewards. There is no halving on Alephium, the block reward is adjusted dynamically depending on the network hashrate and timestamp.
+As Alephium uses <a href="/news/post/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" >Proof of (Less) Work</a>, 860 million ALPH will be mined and distributed to the miners who secure the network as block rewards. There is no halving on Alephium, the block reward is adjusted dynamically depending on the network hashrate and timestamp.
 
-You will find the full details & calculations of the mining rewards in <a href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33" >this article</a>.
+You will find the full details & calculations of the mining rewards in <a href="/news/post/alephium-block-rewards-72d9fb9fde33" >this article</a>.
 
 The core emission schedule works like this: the block reward is bound by two curves based on hashrate and timestamp. At a given time and for a given hashrate, the reward per block equals the minimum between the time-based and hashrate-based rewards.
 
@@ -44,7 +44,7 @@ When this article was last updated, the average block reward was 2.43 ALPH, resu
 While inflationary, thanks to mining, Alephium also has deflationary forces:
 
 - 100% of the transaction fees are burned. (Before the Leman Network Upgrade in March 2023, only 50% of the transaction fees were burned).
-- <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" >Alephium’s Proof of Less Work</a> will require coin burning when it’ll be triggered to internalize part of the mining cost through the upfront burning of ALPH.
+- <a href="/news/post/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" >Alephium’s Proof of Less Work</a> will require coin burning when it’ll be triggered to internalize part of the mining cost through the upfront burning of ALPH.
 
 ### Genesis Allocation & Vesting Schedule
 
@@ -58,7 +58,7 @@ _Please note that according to CoinmarketCap’s official methodology, Ecosystem
 
 #### Sales allocation vesting
 
-Three sales events were held for ALPH: seed sale, <a href="https://medium.com/@alephium/alephium-closes-3-6m-pre-sale-from-80-contributors-to-expand-sharded-utxo-blockchain-platform-84f80492e28d" >pre-sale</a>, and <a href="https://medium.com/@alephium/alephium-partners-with-cetacean-capital-83cf2fbea8a1" >private sale</a>. A total of 62,951,077 ALPH were sold and locked for periods varying between 2 to 4 years. The unlock schedule is detailed below.
+Three sales events were held for ALPH: seed sale, <a href="/news/post/alephium-closes-3-6m-pre-sale-from-80-contributors-to-expand-sharded-utxo-blockchain-platform-84f80492e28d" >pre-sale</a>, and <a href="/news/post/alephium-partners-with-cetacean-capital-83cf2fbea8a1" >private sale</a>. A total of 62,951,077 ALPH were sold and locked for periods varying between 2 to 4 years. The unlock schedule is detailed below.
 
 ![](image_1d52ed10a4.png)
 
@@ -80,7 +80,7 @@ You can check the <a href="https://alph-richlist.vercel.app/" >Alephium Rich Lis
 
 **Is Alephium deflationary?**
 
-While Alephium has several deflationary forces, the <a href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33" >emissions of ALPH</a> still exceed them as of today.
+While Alephium has several deflationary forces, the <a href="/news/post/alephium-block-rewards-72d9fb9fde33" >emissions of ALPH</a> still exceed them as of today.
 
 **What is the difference between Circulating Supply, Total Supply and Maximum Supply?**
 
@@ -108,7 +108,7 @@ _Updated: The tokenomics were published on Oct 5, 2021. To address many question
 
 Alephium is the first operational sharded blockchain bringing scalability, ETH-inspired secure smart contracts, and energy efficiency to Bitcoin’s proven core technologies (UTXO and Proof-Of-Work) while ensuring better performance. Alephium also focuses on usability and accessibility making it the perfect blockchain to support decentralized applications and open protocols.
 
-Alephium is built on the BlockFlow and PoLW algorithms. BlockFLow delivers efficient and practical stateful UTXO sharding. <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" >PoLW uses a clever combination of physical work and token economics</a> to dynamically adjust the work required to mine new blocks, ensuring a reduced energy footprint compared to classic Nakamoto PoW mining.
+Alephium is built on the BlockFlow and PoLW algorithms. BlockFLow delivers efficient and practical stateful UTXO sharding. <a href="/news/post/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" >PoLW uses a clever combination of physical work and token economics</a> to dynamically adjust the work required to mine new blocks, ensuring a reduced energy footprint compared to classic Nakamoto PoW mining.
 
 As in many other blockchain networks, the token mechanism of Alephium is crucial for its operation.
 
@@ -124,7 +124,7 @@ As Alephium uses Proof of (Less) Work, staking isn’t supported natively on Ale
 
 At Mainnet Launch, an initial supply 140M tokens (14% of the HardCap) was minted with the genesis block. Most of which are vesting over years (see below).
 
-The remaining supply of ALPH (86% or 860 million ALPH) tokens will be <a href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33" >mined</a> over the next ~82 years (from 2021). The theoretical hardcap is 1 billion ALPH but it will never be reached due to deflationary forces like transaction fee burning (see below in the FAQ).
+The remaining supply of ALPH (86% or 860 million ALPH) tokens will be <a href="/news/post/alephium-block-rewards-72d9fb9fde33" >mined</a> over the next ~82 years (from 2021). The theoretical hardcap is 1 billion ALPH but it will never be reached due to deflationary forces like transaction fee burning (see below in the FAQ).
 
 <figure id="b5a9" class="graf graf--figure graf--iframe graf-after--p">
 
@@ -148,7 +148,7 @@ You’ll notice the graph doesn’t reach 140M tokens, that’s because not all 
 
 ### Sales token vesting
 
-Three sales events were held for ALPH tokens: seed sale, <a href="https://medium.com/@alephium/alephium-closes-3-6m-pre-sale-from-80-contributors-to-expand-sharded-utxo-blockchain-platform-84f80492e28d" >pre-sale</a>, and <a href="https://medium.com/@alephium/alephium-partners-with-cetacean-capital-83cf2fbea8a1" >private sale</a>. A total of 62,951,077 ALPH tokens were sold (and locked), leaving 17,048,943 for future sales (and unlocked).
+Three sales events were held for ALPH tokens: seed sale, <a href="/news/post/alephium-closes-3-6m-pre-sale-from-80-contributors-to-expand-sharded-utxo-blockchain-platform-84f80492e28d" >pre-sale</a>, and <a href="/news/post/alephium-partners-with-cetacean-capital-83cf2fbea8a1" >private sale</a>. A total of 62,951,077 ALPH tokens were sold (and locked), leaving 17,048,943 for future sales (and unlocked).
 
 The distribution schedule is detailed here:
 
@@ -183,13 +183,13 @@ You can check the <a href="https://alph-richlist.vercel.app/" >Alephium Rich Lis
 
 **Is Alephium deflationary?**
 
-Not as of today. Tokens are awarded to miners, according to the rules defined <a href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33" >here</a>.
+Not as of today. Tokens are awarded to miners, according to the rules defined <a href="/news/post/alephium-block-rewards-72d9fb9fde33" >here</a>.
 
 But there are deflationary forces at play too:
 
 - 100% of the transaction fees are burned. The implementation of the recently improved <a href="https://github.com/alephium/alephium/blob/master/docs/proposals/lemanDAA.md" >DAA</a> has increased that from 50% to 100%.
 - Each smart contract needs the storage of 1 ALPH as contract storage rent. While not technically burning tokens (because these are retrievable), this potentially reduces available tokens from circulation.
-- When triggered, <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" >Alephium’s Proof of Less Work</a> will internalize part of the mining cost through the upfront burning of ALPH.
+- When triggered, <a href="/news/post/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" >Alephium’s Proof of Less Work</a> will internalize part of the mining cost through the upfront burning of ALPH.
 
 **What is the difference between Circulating supply, Total supply and Maximum Supply?**
 
@@ -219,7 +219,7 @@ As in many other blockchain networks, the token mechanism of Alephium is crucial
 
 ### Introducing ALPH
 
-The Alephium token recently <a href="https://medium.com/@alephium/introducing-alph-8381dbd9f88d" >adopted its official ticker symbol ALPH.</a> It contributes to the blockchain’s decentralization and overall security by incentivizing miners to process blocks on the Alephium blockchain.
+The Alephium token recently <a href="/news/post/introducing-alph-8381dbd9f88d" >adopted its official ticker symbol ALPH.</a> It contributes to the blockchain’s decentralization and overall security by incentivizing miners to process blocks on the Alephium blockchain.
 
 Mining is a core mechanism of the Alephium blockchain: it is the mechanism by which transaction records are added and verified across the network. The token also secures the Alephium network against DDoS and spam attacks via transaction fees payable in ALPH tokens.
 
@@ -235,13 +235,13 @@ The initial supply of tokens will be allocated over time as follows:
 - 30M tokens (3%) will be allocated for community and ecosystem development. These tokens will be locked for 4 years, and be vested 10M, 10M, 5M, 5M each year in quarters accordingly.
 - 30M tokens (3%) will be allocated to reward the team and support future developments of Alephium. These tokens will be locked for three years and be vested 10M, 10M, and 10M each year in quarters accordingly.
 
-The rest of the token supply (86% or 860'000'000 ALPH) <a href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33" >will be mined</a> over the next **~82 years** (from 2021) to ensure transaction processing and smart contract execution on the Alephium blockchain.  
+The rest of the token supply (86% or 860'000'000 ALPH) <a href="/news/post/alephium-block-rewards-72d9fb9fde33" >will be mined</a> over the next **~82 years** (from 2021) to ensure transaction processing and smart contract execution on the Alephium blockchain.  
 **After being mined, ALPH is locked for 500 minutes.**
 
 There are several deflationary forces in Alephium’s tokenomics, including:
 
 - 100% of the transaction fees are burned with each block.
-- When triggered, <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" >Alephium’s Proof of Less Work</a> internalizes part of the mining cost through the upfront burning of ALPH.
+- When triggered, <a href="/news/post/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" >Alephium’s Proof of Less Work</a> internalizes part of the mining cost through the upfront burning of ALPH.
 
 <figure id="7f99" class="graf graf--figure graf-after--li graf--trailing">
 <img src="image_eeb8d1f4c3.png" class="graf-image" data-image-id="1*YjGQ0H2PWMhX9AIi9dUSkg.png" data-width="1140" data-height="674" />

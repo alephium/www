@@ -7,7 +7,7 @@ featuredImage: image_61abe28f4e.jpg
 title: 'Builders Highlight #4: No Trust Verify'
 ---
 
-_Our ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience and provide real utility for the users. In the Builders Highlight series, these builders will share more about their projects, thoughts, and insights on why building on Alephium! You can find_ <a href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" ><em>#1 here</em></a>_,_ <a href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" ><em>#2 here</em></a> _and_ <a href="https://medium.com/@alephium/builders-highlight-3-ayin-6be4a6bd4ec2" ><em>#3</em></a>_!_
+_Our ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience and provide real utility for the users. In the Builders Highlight series, these builders will share more about their projects, thoughts, and insights on why building on Alephium! You can find_ <a href="/news/post/builders-highlight-sezame-wallet-ddb4aeb61881" ><em>#1 here</em></a>_,_ <a href="/news/post/builders-highlight-alphpaca-nfts-99c69775f04c" ><em>#2 here</em></a> _and_ <a href="/news/post/builders-highlight-3-ayin-6be4a6bd4ec2" ><em>#3</em></a>_!_
 
 This episode is about No Trust Verify, creator of the first ever token on mainnet (ALF), now introducing <a href="https://walph.io" >Walph</a>, the first decentralized lottery powered by Alephium! <a href="https://twitter.com/cg1_bin" >cgi-bin</a> and <a href="https://twitter.com/Oheka32" >Oheka</a> & other NTV members are hyperactive community members & fantastic builders, and we thank them for their time!
 

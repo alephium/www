@@ -19,7 +19,7 @@ You chose the format: A blog post, a Twitter thread, or a video. Your imaginatio
 
 **For Whom?**
 
-For this tutorial, you need to assume the audience is making their first step in the world of FLUX & Alephium, <a href="https://medium.com/@alephium/host-your-alephium-node-via-the-flux-marketplace-2f3a5ab85263" >similar to this one</a>. Bonus points for those who do an ELI5 tutorial or one that a grandma could understand :)
+For this tutorial, you need to assume the audience is making their first step in the world of FLUX & Alephium, <a href="/news/post/host-your-alephium-node-via-the-flux-marketplace-2f3a5ab85263" >similar to this one</a>. Bonus points for those who do an ELI5 tutorial or one that a grandma could understand :)
 
 #### By You!
 
@@ -29,11 +29,11 @@ Be creative, let your personality shine through, or don’t! Be authoritative, c
 
 - The submission deadline is the **9th of January 2023 at 11:59 PM CET**.
 - The tutorial must be submitted using the submission form (see below).
-- It should accurately include the basics covered <a href="https://medium.com/@alephium/host-your-alephium-node-via-the-flux-marketplace-2f3a5ab85263" >in this post</a>.
+- It should accurately include the basics covered <a href="/news/post/host-your-alephium-node-via-the-flux-marketplace-2f3a5ab85263" >in this post</a>.
 - These links must appear in the submission (if it’s a video, you can put them in the description):
 
 **Alephium**: [Website](/), <a href="https://t.me/alephiumgroup" >Telegram</a>, [Discord](/discord), <a href="https://twitter.com/alephium" >Twitter</a>  
-**Flux**: <a href="https://medium.com/@alephium/host-your-alephium-node-via-the-flux-marketplace-2f3a5ab85263" >Tutorial</a>, <a href="https://runonflux.io/" >Website</a>, <a href="https://zelcore.io/" >Zelcore</a>
+**Flux**: <a href="/news/post/host-your-alephium-node-via-the-flux-marketplace-2f3a5ab85263" >Tutorial</a>, <a href="https://runonflux.io/" >Website</a>, <a href="https://zelcore.io/" >Zelcore</a>
 
 ### 🗳️ How to submit the tutorial
 

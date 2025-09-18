@@ -8,7 +8,7 @@ title: Alephium’s native token ALPH on Bitmart
 
 #### Trading starts on April 17th, 17:00 CEST
 
-Following the successful deployment of the <a href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a" >Leman Network Upgrade</a>, Alephium is thrilled to announce that its native token, ALPH, will be listed at <a href="https://www.bitmart.com/" >Bitmart</a> on April 17th, 17:00 CEST. Currently at \#22 in the Coinmarketcap ranking, with over USD 700 million in trading volume, Bitmart is a leading digital asset trading platform that provides a secure, reliable, and user-friendly trading experience to a global audience, including US citizens/residents.
+Following the successful deployment of the <a href="/news/post/the-leman-network-upgrade-is-live-f52c89b7dd6a" >Leman Network Upgrade</a>, Alephium is thrilled to announce that its native token, ALPH, will be listed at <a href="https://www.bitmart.com/" >Bitmart</a> on April 17th, 17:00 CEST. Currently at \#22 in the Coinmarketcap ranking, with over USD 700 million in trading volume, Bitmart is a leading digital asset trading platform that provides a secure, reliable, and user-friendly trading experience to a global audience, including US citizens/residents.
 
 Bitmart platform offers a wide range of cryptocurrencies for trading, and this listing is a massive milestone for Alephium as it expands its reach to a wider user-base and marks a significant step forward for the project. You can open your account at Bitmart here: <a href="https://www.bitmart.com/register" >https://www.bitmart.com/register</a>.
 

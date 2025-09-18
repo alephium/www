@@ -9,7 +9,7 @@ title: 'TECH TALK #1 — The Ultimate guide to Proof-of-Less-Work, the unive
 
 #### A discussion with Cheng Wang, inventor of PoLW and founder of Alephium
 
-> This is the first of a series of interviews on the technical innovations brought to the world by Alephium. The discussion was conducted in February 2022, in a virtual format in presence of most of the Alephium team who contributed to the questions and ensuing exchange. The following has been edited for clarity, concision and optimized for readability. It’s been followed by an AMA you can find as a <a href="https://youtu.be/Oi4AsqVY0YA" >video</a> or in <a href="https://medium.com/@alephium/tech-talk-1-proof-of-less-work-ama-3d5afbf78c71" >text</a>!
+> This is the first of a series of interviews on the technical innovations brought to the world by Alephium. The discussion was conducted in February 2022, in a virtual format in presence of most of the Alephium team who contributed to the questions and ensuing exchange. The following has been edited for clarity, concision and optimized for readability. It’s been followed by an AMA you can find as a <a href="https://youtu.be/Oi4AsqVY0YA" >video</a> or in <a href="/news/post/tech-talk-1-proof-of-less-work-ama-3d5afbf78c71" >text</a>!
 
 ### **ORIGINS**
 
@@ -143,7 +143,7 @@ The mining rewards are themselves divided in two: a time-based component and a h
 
 The time based component starts fairly high and diminishes linearly for 4 years, because we want to incentivize people to mine more in the beginning to kickstart the network: it helps secure it AND it increases the fair distribution of coins into more pockets, which is important for the decentralization of Alephium.
 
-Similarly, the hashrate based reward will be used to incentivise miners to mine up to a certain point, increasing emissions. But then, reaching a bigger level of hashrate (by an order of magnitude), it’ll even start diminishing because that’s where PoLW is activated. You can find more detailed information about this mechanism <a href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33" >in our article here</a>.
+Similarly, the hashrate based reward will be used to incentivise miners to mine up to a certain point, increasing emissions. But then, reaching a bigger level of hashrate (by an order of magnitude), it’ll even start diminishing because that’s where PoLW is activated. You can find more detailed information about this mechanism <a href="/news/post/alephium-block-rewards-72d9fb9fde33" >in our article here</a>.
 
 **Why is Alephium burning half of the transaction fees?**
 
@@ -188,8 +188,8 @@ Bitcoin’s lightning network is an interesting L2 seeing a lot of growth. It’
 
 **Thanks a lot for that discussion, it’s been fascinating, enlightening and a lot to take in!**
 
-If you want to know more about PoLW, head to the subsequent AMA! In <a href="https://youtu.be/Oi4AsqVY0YA" >video</a> or in <a href="https://medium.com/@alephium/tech-talk-1-proof-of-less-work-ama-3d5afbf78c71" >text</a>!
+If you want to know more about PoLW, head to the subsequent AMA! In <a href="https://youtu.be/Oi4AsqVY0YA" >video</a> or in <a href="/news/post/tech-talk-1-proof-of-less-work-ama-3d5afbf78c71" >text</a>!
 
-#### **Read** <a href="https://medium.com/@alephium/an-introduction-to-the-stateful-utxo-model-8de3b0f76749" ><strong>an introduction to sUTXO here</strong></a> **and** <a href="https://medium.com/@alephium/meet-alphred-a-virtual-machine-like-no-others-85ce86540025" ><strong>ALPHred the Virtual Machine here</strong></a>**.**
+#### **Read** <a href="/news/post/an-introduction-to-the-stateful-utxo-model-8de3b0f76749" ><strong>an introduction to sUTXO here</strong></a> **and** <a href="/news/post/meet-alphred-a-virtual-machine-like-no-others-85ce86540025" ><strong>ALPHred the Virtual Machine here</strong></a>**.**
 
 > _If you have more questions on the topic, please come in our_ <a href="https://discord.gg/JErgRBfRSB" ><em>Discord</em></a>_, on_ <a href="https://t.me/alephiumgroup" ><em>Telegram</em></a> _or ping us on_ <a href="https://twitter.com/alephium" ><em>Twitter</em></a>_!_

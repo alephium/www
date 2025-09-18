@@ -7,7 +7,7 @@ featuredImage: image_53565e03c5.png
 title: 'Miners’ Highlight #4: nickdimondi'
 ---
 
-_The Alephium blockchain relies heavily on the contributions of miners to maintain its integrity and functionality. Recognizing the significance of these contributors is the object of this article series titled “Miners’ Highlight.” By focusing on their contributions, challenges, and experiences, we aim to better understand the mining process, its importance & those who make it possible. You can find_ <a href="https://medium.com/@alephium/miners-highlight-1-cedric-crispin-c4ed456f6d10" ><em>#1 here</em></a>, <a href="https://medium.com/@alephium/miners-highlight-1-jake-aka-hiram-abiff-a8833307f316" ><em>#2 here</em></a>, _and_ <a href="https://medium.com/@alephium/miners-highlight-3-bokiko-7b2a22ea0253" ><em>#3 here</em></a>_._
+_The Alephium blockchain relies heavily on the contributions of miners to maintain its integrity and functionality. Recognizing the significance of these contributors is the object of this article series titled “Miners’ Highlight.” By focusing on their contributions, challenges, and experiences, we aim to better understand the mining process, its importance & those who make it possible. You can find_ <a href="/news/post/miners-highlight-1-cedric-crispin-c4ed456f6d10" ><em>#1 here</em></a>, <a href="/news/post/miners-highlight-1-jake-aka-hiram-abiff-a8833307f316" ><em>#2 here</em></a>, _and_ <a href="/news/post/miners-highlight-3-bokiko-7b2a22ea0253" ><em>#3 here</em></a>_._
 
 #### What can we call you, and where should we picture you?
 

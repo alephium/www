@@ -70,7 +70,7 @@ Download the latest version of the browser extension wallet here:
 
 #### **Security**
 
-The <a href="https://medium.com/@alephium/announcing-the-leman-network-upgrade-c01a81e65f0e" >Leman Network Upgrade</a> includes new features at the language (Ralph) and <a href="https://medium.com/@alephium/meet-alphred-a-virtual-machine-like-no-others-85ce86540025" >Virtual Machine</a> (Alphred) level, which will aid developers in creating complex dApps more easily.
+The <a href="/news/post/announcing-the-leman-network-upgrade-c01a81e65f0e" >Leman Network Upgrade</a> includes new features at the language (Ralph) and <a href="/news/post/meet-alphred-a-virtual-machine-like-no-others-85ce86540025" >Virtual Machine</a> (Alphred) level, which will aid developers in creating complex dApps more easily.
 
 #### **Bridge**
 
@@ -80,7 +80,7 @@ The Leman Upgrade clears the way for Alephium Bridge deployment, connecting Alep
 
 The Leman Upgrade has new Virtual Machine instructions and built-in functions. The “Sub-contract” concept and new built-in functions for debugging, asserting, logging, migrating existing contracts, burning tokens, etc., to improve the dApp development experience.
 
-New Node/Explorer APIs, web3 library, and wallets (through WalletConnect & <a href="https://medium.com/@alephium/alephium-launches-browser-extension-wallet-706dfeda98f5" >browser extension</a>) will help reduce the required software development cycle to build dApps on Alephium.
+New Node/Explorer APIs, web3 library, and wallets (through WalletConnect & <a href="/news/post/alephium-launches-browser-extension-wallet-706dfeda98f5" >browser extension</a>) will help reduce the required software development cycle to build dApps on Alephium.
 
 ---
 

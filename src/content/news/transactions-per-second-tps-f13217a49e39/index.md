@@ -10,7 +10,7 @@ A Technical Promenade, part 2
 
 _This is part of a series of regular articles on key concepts for understanding [Alephium](/) in particular and blockchains in general. If you’re pondering on which chain to build your dApps, if you’re a curious crypto-traveler, or a fellow decentralization enthusiast, welcome!_
 
-In our <a href="https://medium.com/@alephium/block-time-and-block-size-16e37292444f" >previous post</a>, we explored **Block Time and Block Size** concepts and their nuances. Now is the time to dive into the depths of the calculation of transaction speed with Transactions Per Second (TPS). Here again, each blockchain has its own way of calculating it, and we are going through some of these particularities. Come along with us in this new chapter of our technical promenade…
+In our <a href="/news/post/block-time-and-block-size-16e37292444f" >previous post</a>, we explored **Block Time and Block Size** concepts and their nuances. Now is the time to dive into the depths of the calculation of transaction speed with Transactions Per Second (TPS). Here again, each blockchain has its own way of calculating it, and we are going through some of these particularities. Come along with us in this new chapter of our technical promenade…
 
 ### Now, what is TPS?
 
@@ -77,4 +77,4 @@ Another issue with relying on TPS to evaluate the network speed is that it consi
 
 ### Next step: “What is finality?”
 
-In part 3, as we saw that speed is not enough to declare a transaction as final, we will explore the concept of finality and how each blockchain defines if and the period of time needed for it. <a href="https://medium.com/@alephium/time-to-finality-17d64eeffd25" >Our next article will cover TTF (Time To Finality)</a>. Stay tuned on our <a href="https://twitter.com/alephium" >Twitter</a>, <a href="https://discord.gg/h7cXXy4FEY" >Discord</a>, <a href="https://t.me/Alephium_Announcement" >Telegram</a>, or <a href="https://www.reddit.com/r/Alephium/" >Reddit</a> to see it fresh off the press!
+In part 3, as we saw that speed is not enough to declare a transaction as final, we will explore the concept of finality and how each blockchain defines if and the period of time needed for it. <a href="/news/post/time-to-finality-17d64eeffd25" >Our next article will cover TTF (Time To Finality)</a>. Stay tuned on our <a href="https://twitter.com/alephium" >Twitter</a>, <a href="https://discord.gg/h7cXXy4FEY" >Discord</a>, <a href="https://t.me/Alephium_Announcement" >Telegram</a>, or <a href="https://www.reddit.com/r/Alephium/" >Reddit</a> to see it fresh off the press!

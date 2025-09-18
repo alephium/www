@@ -11,7 +11,7 @@ title: Alephium Block Rewards
 
 **_Disclaimer: This article was edited on June 12th, 2024 when block time was reduced from 64 to 16s_**
 
-Mining is a critical component of maintaining and developing a public ledger. It is the process of validating transactions and adding them to the Alephium blockchain. In addition, mining is the only way to issue new Alephium tokens. A consensus protocol has been implemented to ensure only Alephium miners can mine and validate transactions. In Alephium, this is called <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" >“Proof-of-Less-Work” (PoLW)</a>.
+Mining is a critical component of maintaining and developing a public ledger. It is the process of validating transactions and adding them to the Alephium blockchain. In addition, mining is the only way to issue new Alephium tokens. A consensus protocol has been implemented to ensure only Alephium miners can mine and validate transactions. In Alephium, this is called <a href="/news/post/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" >“Proof-of-Less-Work” (PoLW)</a>.
 
 For this process to be decentralized, having as many miners participating as possible is important. Hence, to incentivize the mining, the blockchain rewards the miner who successfully issues a new block and facilitates the transactions.
 

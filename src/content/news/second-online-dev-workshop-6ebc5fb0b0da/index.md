@@ -10,7 +10,7 @@ title: Second Online Dev Workshop!
 
 ### When? September 30th (sat) — 3PM CET and October 7th (sat) — 3PM CET Where? <a href="https://meet.google.com/icj-vxpo-hqn" rel="nofollow noopener">https://meet.google.com/icj-vxpo-hqn</a> Who? <a href="https://github.com/h0ngcha0">@h0ngcha0</a>
 
-Following the success of our <a href="https://medium.com/@alephium/first-developer-workshop-build-a-token-faucet-a6bb2aa7bf68" >first dev workshop</a> in July, we are having the next one! We will be re-implementing the <a href="http://friend.tech" >friend.tech</a> smart contract in RALPH.
+Following the success of our <a href="/news/post/first-developer-workshop-build-a-token-faucet-a6bb2aa7bf68" >first dev workshop</a> in July, we are having the next one! We will be re-implementing the <a href="http://friend.tech" >friend.tech</a> smart contract in RALPH.
 
 #### What is friend.tech
 
@@ -20,7 +20,7 @@ For context: <a href="https://beincrypto.com/learn/friend-tech-explained/" >http
 
 ### Workshop Agenda
 
-This time it will require two sessions, one about sub-contracts, and the other one about the <a href="https://medium.com/@alephium/alephiums-aps-eliminating-evm-token-approval-risks-5407e7e70a33" >APS (Asset Permission System)</a>.
+This time it will require two sessions, one about sub-contracts, and the other one about the <a href="/news/post/alephiums-aps-eliminating-evm-token-approval-risks-5407e7e70a33" >APS (Asset Permission System)</a>.
 
 **For the first session:**
 

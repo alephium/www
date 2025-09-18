@@ -8,13 +8,13 @@ title: 'Alephium Bridge: The Tutorial'
 
 #### How to bridge your tokens + what to do on the Alephium Ecosystem
 
-_This tutorial was updated to reflect the new conditions after the_ <a href="https://medium.com/@alephium/rh%C3%B4ne-network-upgrade-activated-cbeb298585fe" ><em>Rhône Network Upgrade</em></a>_: bridging from Alephium to Ethereum requires at least 205 blocks_ **_and_** _at least 55 minutes._
+_This tutorial was updated to reflect the new conditions after the_ <a href="/news/post/rh%C3%B4ne-network-upgrade-activated-cbeb298585fe" ><em>Rhône Network Upgrade</em></a>_: bridging from Alephium to Ethereum requires at least 205 blocks_ **_and_** _at least 55 minutes._
 
 Welcome to the Alephium Bridge Tutorial!
 
-So we launched the bridge! It’s been quite an effort, if you want to know more about this, read <a href="https://twitter.com/alephium/status/1722661768131178556" >that</a> (twitter thread) or <a href="https://medium.com/@alephium/the-alephium-bridge-a787d90b2e4a" >that</a> (full article on the bridge).
+So we launched the bridge! It’s been quite an effort, if you want to know more about this, read <a href="https://twitter.com/alephium/status/1722661768131178556" >that</a> (twitter thread) or <a href="/news/post/the-alephium-bridge-a787d90b2e4a" >that</a> (full article on the bridge).
 
-One last thing before we start, if you want to verify contract addresses, token contracts and other token lists, <a href="https://medium.com/@alephium/verification-of-bridge-contracts-tokens-token-lists-76e5c237bf52" >here you go</a>.
+One last thing before we start, if you want to verify contract addresses, token contracts and other token lists, <a href="/news/post/verification-of-bridge-contracts-tokens-token-lists-76e5c237bf52" >here you go</a>.
 
 Here you will find a detailed step-by-step guide on how to bridge your tokens!
 
@@ -40,7 +40,7 @@ It works with any of our [wallets](/wallets)! But for this tutorial, we chose to
 
 If you are bridging from Ethereum to Alephium (and for the “redeem” step if you’re bridging the other way around) you’ll need to pay some gas fees (and it can get quite expensive at times).
 
-Alephium’s gas fees are very low. And if you are bridging from Ethereum to Alephium, as a celebratory gesture a faucet has been implemented dishing out a single ALPH for every transaction in this direction (read more about this <a href="https://medium.com/@alephium/the-alephium-bridge-a787d90b2e4a" >here</a>).
+Alephium’s gas fees are very low. And if you are bridging from Ethereum to Alephium, as a celebratory gesture a faucet has been implemented dishing out a single ALPH for every transaction in this direction (read more about this <a href="/news/post/the-alephium-bridge-a787d90b2e4a" >here</a>).
 
 **3. A new address on “Group 0”**
 
@@ -198,7 +198,7 @@ Once the transaction is confirmed, your tokens should appear in your Metamask wa
 
 > WALPH Contract Address : 0x590F820444fA3638e022776752c5eEF34E2F89A6
 
-We hope this tutorial was of use to you, for more information consider referring to the official medium article detailing all contracts and addresses right <a href="https://medium.com/@alephium/verification-of-bridge-contracts-tokens-token-lists-76e5c237bf52" >here</a>
+We hope this tutorial was of use to you, for more information consider referring to the official medium article detailing all contracts and addresses right <a href="/news/post/verification-of-bridge-contracts-tokens-token-lists-76e5c237bf52" >here</a>
 
 If you bridged some ERC-20 tokens and you don’t know what to do? Here is a list of things you can try out:
 

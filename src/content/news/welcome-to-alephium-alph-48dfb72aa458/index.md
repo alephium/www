@@ -130,7 +130,7 @@ The token supply on Alephium is limited with a hardcap of 1 billion. At Mainnet 
 
 In addition, half of the transaction fees are burned with each block and Proof of Less Work enables internal mining cost through burning when the hashrate and energy consumption are significantly high.
 
-**More details here :** <a href="https://medium.com/@alephium/tokenomics-of-alephium-61d59b51029c" ><strong>https://medium.com/@alephium/tokenomics-of-alephium-61d59b51029c</strong></a>
+**More details here :** <a href="/news/post/tokenomics-of-alephium-61d59b51029c" ><strong>https://medium.com/@alephium/tokenomics-of-alephium-61d59b51029c</strong></a>
 
 ### 🏋️‍♀️ **Our team**
 
@@ -180,7 +180,7 @@ Telegram 🇹🇷: <a href="https://t.me/alephium_tr"  rel="nofollow noopener no
 ### **Our partners**
 
 - UTXO Alliance : <a href="https://utxo-alliance.org/" >https://utxo-alliance.org/</a>
-- Bitcoin Association Switzerland : <a href="https://medium.com/@alephium/alephium-becomes-a-member-of-bitcoin-association-switzerland-2293fec16fc9" >https://medium.com/@alephium/alephium-becomes-a-member-of-bitcoin-association-switzerland-2293fec16fc9</a>
+- Bitcoin Association Switzerland : <a href="/news/post/alephium-becomes-a-member-of-bitcoin-association-switzerland-2293fec16fc9" >https://medium.com/@alephium/alephium-becomes-a-member-of-bitcoin-association-switzerland-2293fec16fc9</a>
 - Cetacean Capital: <a href="https://cetacean.capital/"  rel="nofollow noopener">https://cetacean.capital</a>
 - Crypto Valley Association : <a href="https://cryptovalley.swiss/"  rel="nofollow noopener">https://cryptovalley.swiss/</a>
 - Dappnode: <a href="https://dappnode.io"  rel="nofollow noopener">https://dappnode.io</a>

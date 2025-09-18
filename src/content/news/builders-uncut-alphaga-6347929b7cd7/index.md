@@ -19,7 +19,7 @@ I’ve been involved in the crypto world since around 2019, having interacted wi
 
 #### You have actually answered my next question, which is, “How did you find out about Alephium?” So, I guess it was through your co-founder. Do you know how he found it?
 
-I think he told me he found it through <a href="https://medium.com/@alephium/builders-uncut-mobula-76c5e6f1dd52" >Mobula</a>. I’m not sure how specifically, but I think this is how he learned about it.
+I think he told me he found it through <a href="/news/post/builders-uncut-mobula-76c5e6f1dd52" >Mobula</a>. I’m not sure how specifically, but I think this is how he learned about it.
 
 #### Which chains have you been doing NFT stuff in the past?
 

@@ -7,7 +7,7 @@ featuredImage: image_9f37a62eb7.png
 title: Bridge AMA — The Alephium Bridge — part 2 — The roadmap
 ---
 
-_One month after the release of the_ <a href="https://bridge.alephium.org/#/transfer" ><em>bridge</em></a> _on mainnet, Cheng, Hongchao & Maud were interviewed by Vladimir in a Twitter space AMA. You can listen to the Twitter space itself_ <a href="https://twitter.com/i/spaces/1mrGmydQreMGy" ><em>here</em></a>_, or read on at your own pace! This article is a lightly edited version of the AMA, to improve the clarity and readability. This is part 2 of 3, and you can find part 1_ <a href="https://medium.com/@alephium/the-alephium-bridge-ama-part-1-bd6536ea9cdc" ><em>here</em></a>_._
+_One month after the release of the_ <a href="https://bridge.alephium.org/#/transfer" ><em>bridge</em></a> _on mainnet, Cheng, Hongchao & Maud were interviewed by Vladimir in a Twitter space AMA. You can listen to the Twitter space itself_ <a href="https://twitter.com/i/spaces/1mrGmydQreMGy" ><em>here</em></a>_, or read on at your own pace! This article is a lightly edited version of the AMA, to improve the clarity and readability. This is part 2 of 3, and you can find part 1_ <a href="/news/post/the-alephium-bridge-ama-part-1-bd6536ea9cdc" ><em>here</em></a>_._
 
 ### The Roadmap
 
@@ -15,13 +15,13 @@ _After achieving significant milestones, there is always a period of adjustment 
 
 #### **Vladimir: Cheng has hinted at the next network upgrade on Discord. Could you share more details about this upgrade? Specifically, what are the focal points of the upcoming upgrade, and what time frame are we looking at for its implementation?**
 
-Cheng: The <a href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a" >first network upgrade, Leman</a>, was huge. It improved Alephium significantly, enabling the current dapps. This upgrade was designed alongside the development of the bridge and the DEX. Key features included the dApps subcontract system, the APS system, and a new difficulty adjustment algorithm for stabilizing difficulty changes across different channels. Given that it was the first network upgrade for a new layer one with a new virtual machine and programming language, some refinement post-launch was expected.
+Cheng: The <a href="/news/post/the-leman-network-upgrade-is-live-f52c89b7dd6a" >first network upgrade, Leman</a>, was huge. It improved Alephium significantly, enabling the current dapps. This upgrade was designed alongside the development of the bridge and the DEX. Key features included the dApps subcontract system, the APS system, and a new difficulty adjustment algorithm for stabilizing difficulty changes across different channels. Given that it was the first network upgrade for a new layer one with a new virtual machine and programming language, some refinement post-launch was expected.
 
 Since then, the foundation has proved to be robust, evidenced by the successful development of products like the DEX, the Alephium Bridge, and <a href="https://deadrare.io/" >Deadrare NFT Marketplace</a>. We’ve also received valuable feedback from the community and developers. The next upgrade will focus on improving the blockchain based on this feedback, specifically targeting user and developer experiences. This focus aims to address common feedback and is anticipated to boost adoption significantly.
 
 #### **Vladimir: Can you tell us more about the block time reduction? You’ve mentioned it a few times on Discord. Why did you decide that was one of the priorities? Is reducing the block time safe?**
 
-Cheng: <a href="https://medium.com/@alephium/block-time-and-block-size-16e37292444f" >Block time</a> reduction is a highly debated topic in the proof of work space, and there’s no consensus on the ideal block time for proof of work blockchains. Longer block times mean a more lightweight chain regarding storage and CPU computation, as the <a href="https://www.bitstamp.net/learn/blockchain/what-are-orphan-uncle-and-stale-blocks/" >uncle/orphan blocks</a> rate is lower. However, shorter block times are more user-friendly, especially for non-technical users, as they don’t have to wonder why <a href="https://medium.com/@alephium/transactions-per-second-tps-f13217a49e39" >transactions take so long</a> to be included in the blockchain. Shorter block times also have technical advantages, such as a smaller mempool in normal cases, simplifying development both on the full node side and in applications interacting with the mempool.
+Cheng: <a href="/news/post/block-time-and-block-size-16e37292444f" >Block time</a> reduction is a highly debated topic in the proof of work space, and there’s no consensus on the ideal block time for proof of work blockchains. Longer block times mean a more lightweight chain regarding storage and CPU computation, as the <a href="https://www.bitstamp.net/learn/blockchain/what-are-orphan-uncle-and-stale-blocks/" >uncle/orphan blocks</a> rate is lower. However, shorter block times are more user-friendly, especially for non-technical users, as they don’t have to wonder why <a href="/news/post/transactions-per-second-tps-f13217a49e39" >transactions take so long</a> to be included in the blockchain. Shorter block times also have technical advantages, such as a smaller mempool in normal cases, simplifying development both on the full node side and in applications interacting with the mempool.
 
 The challenge lies in finding a balance that allows the blockchain to function efficiently, even at a large scale, similar to networks like Bitcoin or Ethereum. A major concern is block propagation time in large networks; a block time that is too short could increase the number of orphan/uncle blocks, affecting network security. Currently, the parameters selected by Ethereum represent a solid choice. We plan to adopt a similar approach for our next upgrade, but there might be room to reduce the block time further in the long term.
 
@@ -39,7 +39,7 @@ Cheng: We plan to adjust token emissions to ensure the total emission remains co
 
 When we reduce the block time from 64 seconds to 16 seconds, the block reward will be decreased by a factor of four. However, this adjustment alone is insufficient due to the presence of orphan blocks in the blockchain, similar to the proof-of-work version of Ethereum. Consequently, we will also reward miners for these orphan blocks. This requires us to allocate a portion of the main chain’s reward to these orphan blocks. To do this effectively, we first need to estimate the orphan rate. We plan to use data from the Ethereum proof-of-work chain as a reference, making necessary adjustments to fit our context.
 
-#### **Vladimir: In the big picture, it doesn’t change anything to the** <a href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33" ><strong>token emission schedule</strong></a>**. It doesn’t change much for the miners too, correct?**
+#### **Vladimir: In the big picture, it doesn’t change anything to the** <a href="/news/post/alephium-block-rewards-72d9fb9fde33" ><strong>token emission schedule</strong></a>**. It doesn’t change much for the miners too, correct?**
 
 Cheng: The block time change will not change the overall emission.
 
@@ -59,7 +59,7 @@ Hongchao: I don’t know whether you can completely remove that, the goal is to 
 
 #### **Vladimir: Maud wants to add something.**
 
-Maud: Indeed, as previously mentioned, there are various methods to enhance the user experience, involving wallet improvements and backend developments. Modifications at the blockchain or endpoint level could also facilitate smoother interactions. It’s important to recognize that, despite the existing challenges, our sharding experience remains comparatively smooth. Our UTXO-based design enables us to implement <a href="https://medium.com/@alephium/an-introduction-to-blockflow-alephiums-sharding-algorithm-bbbf318c3402" >a more user-friendly sharding design</a>. While it’s not flawless, it’s encouraging to know that refining this aspect will be a primary focus moving forward.
+Maud: Indeed, as previously mentioned, there are various methods to enhance the user experience, involving wallet improvements and backend developments. Modifications at the blockchain or endpoint level could also facilitate smoother interactions. It’s important to recognize that, despite the existing challenges, our sharding experience remains comparatively smooth. Our UTXO-based design enables us to implement <a href="/news/post/an-introduction-to-blockflow-alephiums-sharding-algorithm-bbbf318c3402" >a more user-friendly sharding design</a>. While it’s not flawless, it’s encouraging to know that refining this aspect will be a primary focus moving forward.
 
 #### **Vladimir: The process of building and optimizing, with its continuous back-and-forth dynamic, is indeed fascinating. This leads me to a question for Chang regarding other exciting elements on the roadmap, such as gasless transaction support and developing more proof of concepts. These proof of concepts for dApps are crucial as they provide foundational blueprints for teams to build upon, evidenced by their instrumental role in developing the DEX and the NFT marketplace.**
 
@@ -89,7 +89,7 @@ Another application I’m keen to see evolve is intent-based trading. Many decen
 
 Given that these are relatively early-stage projects, we can adopt and adapt these new protocol types. Our use of the UTXO model aligns well with the order book style of dApps, offering a significant advantage for implementing intent-based trading protocols and facilitating peer-to-peer transactions. Unlike Ethereum’s model, which typically allows only one sender per transaction, our platform can handle multiple senders, opening up a range of new use cases. I am particularly excited to see experiments and developments in this area, as they promise to bring innovative and diverse functionalities to our platform.
 
-_That is the end of part 2 of the AMA transcript!_ <a href="https://medium.com/@alephium/bridge-ama-the-alephium-bridge-part-3-the-hackathon-grants-more-07942544dcc7" ><em>Part 3</em></a> _comes next week!_
+_That is the end of part 2 of the AMA transcript!_ <a href="/news/post/bridge-ama-the-alephium-bridge-part-3-the-hackathon-grants-more-07942544dcc7" ><em>Part 3</em></a> _comes next week!_
 
 ---
 

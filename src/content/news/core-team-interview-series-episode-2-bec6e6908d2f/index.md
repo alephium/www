@@ -8,13 +8,13 @@ title: Core team interview series. Episode 2
 
 #### Presenting the humans behind operations, marketing and community.
 
-**This article was updated:** <a href="https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0"  rel="nofollow">https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0</a>
+**This article was updated:** <a href="/news/post/alephium-contributors-f35eeaeaf0a0"  rel="nofollow">https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0</a>
 
 _For its team, Alephium is privileging agility and efficiency over hyper-growth. We do not stay at a human size because we think it is more efficient, but because Alephium strives to be a decentralized, community driven project. This means the project in itself is much larger than a team can ever be. Communication, trust, openness and transparency is paramount in such a set-up._
 
 _To shed some light on who we are and what we do, we decided to share a little about ourselves with the community through a small series of interviews._
 
-<a href="https://medium.com/@alephium/core-team-interview-series-episode-1-3472f8295af6" >Read the 1st part here</a>
+<a href="/news/post/core-team-interview-series-episode-1-3472f8295af6" >Read the 1st part here</a>
 
 There’s always the need for structured operations and communications in innovation! These crucial aspects allow us to create a solid ground for Alephium to consistently deliver outstanding tech. From development to marketing, we build meticulously and steadily, rain or shine, FOMO or <a href="https://slangit.com/meaning/jomo" >JOMO</a>, for the long run!
 
@@ -224,4 +224,4 @@ The team and the community, laying sound foundations for a healthy and thriving 
 
 ---
 
-**This concludes the second chapter of three in this series. In the next publication we’ll** <a href="https://medium.com/@alephium/core-team-interview-series-episode-3-64b6dacc1459" ><strong>get acquainted with the Node-developers.</strong></a>
+**This concludes the second chapter of three in this series. In the next publication we’ll** <a href="/news/post/core-team-interview-series-episode-3-64b6dacc1459" ><strong>get acquainted with the Node-developers.</strong></a>

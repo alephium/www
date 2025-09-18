@@ -7,9 +7,9 @@ featuredImage: image_2a378a7f2f.gif
 title: One year of community contributions
 ---
 
-_A_ <a href="https://medium.com/@alephium/introducing-community-rewards-f4638bbf14bf" ><em>year ago</em></a>_, Alephium created the_ <a href="https://github.com/alephium/community" ><em>community rewards</em></a> _and the_ <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" ><em>grants programs</em></a> _to encourage the involvement of the community in all aspects of the project. It is still ongoing, head over to_ <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" ><em>GitHub and apply</em></a>_!_
+_A_ <a href="/news/post/introducing-community-rewards-f4638bbf14bf" ><em>year ago</em></a>_, Alephium created the_ <a href="https://github.com/alephium/community" ><em>community rewards</em></a> _and the_ <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" ><em>grants programs</em></a> _to encourage the involvement of the community in all aspects of the project. It is still ongoing, head over to_ <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" ><em>GitHub and apply</em></a>_!_
 
-This is a retrospective of contributions by the Alephium community during 2022. Rewards and Grants have been distributed from the <a href="https://medium.com/@alephium/tokenomics-of-alephium-61d59b51029c" >Ecosystem Development allocation</a> to deserving individuals & projects, many of which can be found in the <a href="https://github.com/alephium/awesome-alephium" >Awesome Alephium repository</a>. As it’s impossible to mention all contributions, this is not an exhaustive list!
+This is a retrospective of contributions by the Alephium community during 2022. Rewards and Grants have been distributed from the <a href="/news/post/tokenomics-of-alephium-61d59b51029c" >Ecosystem Development allocation</a> to deserving individuals & projects, many of which can be found in the <a href="https://github.com/alephium/awesome-alephium" >Awesome Alephium repository</a>. As it’s impossible to mention all contributions, this is not an exhaustive list!
 
 Alephium is immensely grateful to the community for its efforts, big and small, and this article is to be read as a testament to that strong BUIDL energy.
 
@@ -48,7 +48,7 @@ In November 2022, a new community-built mobile wallet appeared! <a href="https:/
 
 ![](image_ad3169a179.gif)
 
-By the way, Alephium’s <a href="https://medium.com/@alephium/the-front-end-leman-upgrade-948a98a3e2d" >new mobile wallet is coming very soon!</a>
+By the way, Alephium’s <a href="/news/post/the-front-end-leman-upgrade-948a98a3e2d" >new mobile wallet is coming very soon!</a>
 
 **Bots and Utilities**
 
@@ -82,7 +82,7 @@ While the network matures, builders are building. Even if the tooling is at an e
 
 <a href="https://xoxo.art/" >XoXo</a> is one of these. It’s building an NFT platform that poetically claims to “mint emotions”. A front- and a backend are being built & tested right now.
 
-The full spectrum of Smart Contract possibilities offered by the <a href="https://medium.com/@alephium/announcing-the-leman-network-upgrade-c01a81e65f0e" >Leman Upgrade</a> will be especially useful to projects like XoXo!
+The full spectrum of Smart Contract possibilities offered by the <a href="/news/post/announcing-the-leman-network-upgrade-c01a81e65f0e" >Leman Upgrade</a> will be especially useful to projects like XoXo!
 
 <a href="https://youtu.be/UkpsI1JenNM" >https://youtu.be/UkpsI1JenNM</a>
 
@@ -104,7 +104,7 @@ A huge amount of videos have been <a href="https://www.youtube.com/@alephium/pla
 
 Part of the community reward budget is allocated to “Special Events.” These are meant to incentivize actions such as helping the core team debugging Release Candidates or participating in competitions with prizes such as Hackathons, or occasion-specific contests.
 
-In 2022, Alephium supported the <a href="https://ergoplatform.org/en/blog/ErgoHack-5-Results/" >Ergo Hack V</a>, and <a href="https://medium.com/@alephium/alephium-naming-competition-c1b736797461" >organized a naming competition</a>, <a href="https://medium.com/@alephium/contest-for-all-video-creators-e777f2619596" >a video competition</a>, and <a href="https://medium.com/@alephium/alephium-flux-tutorial-contest-81054caf926" >a tutorial competition</a>. <a href="https://medium.com/@alephium/and-the-winners-of-the-video-creation-contest-are-f51ca8e5c28d" >Reviewing the videos from the contest</a> was a great deal of fun & the jury rewarded <a href="https://youtu.be/_2S_BAHf3b8" ><strong>Zionafari</strong></a> & 2 others for their contributions.
+In 2022, Alephium supported the <a href="https://ergoplatform.org/en/blog/ErgoHack-5-Results/" >Ergo Hack V</a>, and <a href="/news/post/alephium-naming-competition-c1b736797461" >organized a naming competition</a>, <a href="/news/post/contest-for-all-video-creators-e777f2619596" >a video competition</a>, and <a href="/news/post/alephium-flux-tutorial-contest-81054caf926" >a tutorial competition</a>. <a href="/news/post/and-the-winners-of-the-video-creation-contest-are-f51ca8e5c28d" >Reviewing the videos from the contest</a> was a great deal of fun & the jury rewarded <a href="https://youtu.be/_2S_BAHf3b8" ><strong>Zionafari</strong></a> & 2 others for their contributions.
 
 During 2023 a lot is already planned!
 

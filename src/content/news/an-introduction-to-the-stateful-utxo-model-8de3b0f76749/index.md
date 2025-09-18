@@ -9,7 +9,7 @@ title: An introduction to the stateful UTXO model
 
 _Combining the expressiveness of the account model & security of the UTXO model._
 
-_This article is a high-level overview of what the stateful UTXO model is, why it was invented, how it works and what it allows. The stateful UTXO model (sUTXO) is one of the main innovations brought by Alephium, along with_ <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" ><em>Proof-of-less-work (PoLW),</em></a> _the Blockflow sharding algorithm, the_ <a href="https://medium.com/@alephium/meet-alphred-a-virtual-machine-like-no-others-85ce86540025" ><em>Alphred Virtual Machine</em></a>_, and the Ralph programming language._
+_This article is a high-level overview of what the stateful UTXO model is, why it was invented, how it works and what it allows. The stateful UTXO model (sUTXO) is one of the main innovations brought by Alephium, along with_ <a href="/news/post/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" ><em>Proof-of-less-work (PoLW),</em></a> _the Blockflow sharding algorithm, the_ <a href="/news/post/meet-alphred-a-virtual-machine-like-no-others-85ce86540025" ><em>Alphred Virtual Machine</em></a>_, and the Ralph programming language._
 
 ### What are the UTXO & Account Model?
 
@@ -77,6 +77,6 @@ There will be more details on the sUTXO model in an upcoming interview with <a h
 
 `video: https://www.youtube.com/watch?v=r_5U7ZgByt4`
 
-#### The next post in the tech series will feature <a href="https://medium.com/@alephium/meet-alphred-a-virtual-machine-like-no-others-85ce86540025" ><strong>Alphred, the Virtual Machine!</strong></a> **To know** <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" ><strong>more about PoLW here.</strong></a>
+#### The next post in the tech series will feature <a href="/news/post/meet-alphred-a-virtual-machine-like-no-others-85ce86540025" ><strong>Alphred, the Virtual Machine!</strong></a> **To know** <a href="/news/post/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" ><strong>more about PoLW here.</strong></a>
 
 _If you have more questions on the topic, please come to Alephium’s_ <a href="https://discord.gg/JErgRBfRSB" ><em>Discord</em></a>_,_ <a href="https://t.me/alephiumgroup" ><em>Telegram</em></a>_, or reach out on_ <a href="https://twitter.com/alephium" ><em>Twitter</em></a>_!_

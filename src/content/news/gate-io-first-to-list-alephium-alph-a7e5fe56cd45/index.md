@@ -37,7 +37,7 @@ Alephiumis live and fully functional since November 8th, 2021. Its mainnet, arou
 
 ---
 
-_To learn more about [Alephium](/), get in touch on_ <a href="https://discord.gg/JErgRBfRSB" ><em>Discord</em></a> _or_ <a href="https://t.me/alephiumgroup" ><em>Telegram</em></a>_, contribute on_ <a href="https://github.com/alephium" ><em>GitHub</em></a>_, follow us on_ <a href="https://twitter.com/alephium" ><em>Twitter</em></a> _or read us on_ <a href="https://medium.com/@alephium" ><em>Medium</em></a>_ !_ <a href="https://medium.com/@alephium/welcome-to-alephium-alph-48dfb72aa458" >Or discover Alephium in 5’!</a>
+_To learn more about [Alephium](/), get in touch on_ <a href="https://discord.gg/JErgRBfRSB" ><em>Discord</em></a> _or_ <a href="https://t.me/alephiumgroup" ><em>Telegram</em></a>_, contribute on_ <a href="https://github.com/alephium" ><em>GitHub</em></a>_, follow us on_ <a href="https://twitter.com/alephium" ><em>Twitter</em></a> _or read us on_ <a href="https://medium.com/@alephium" ><em>Medium</em></a>_ !_ <a href="/news/post/welcome-to-alephium-alph-48dfb72aa458" >Or discover Alephium in 5’!</a>
 
 ---
 

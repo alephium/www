@@ -7,7 +7,7 @@ featuredImage: image_7c0c9f04f9.png
 title: 'Second Developer Workshop: Re-implementing Friend.Tech’s Smart Contract in Ralph'
 ---
 
-Welcome to the second developer workshop! If you missed the first one, we dived into the basics of Ralph programming language, along with its SDK and CLI build tools, crafting a simple token faucet. It’s been a fantastic experience, you can find it <a href="https://medium.com/@alephium/first-developer-workshop-build-a-token-faucet-a6bb2aa7bf68" >here</a> or on <a href="https://www.youtube.com/watch?v=YblUxEcXQuY" >YouTube</a> and <a href="https://github.com/alephium/dev-workshop-01" >GitHub</a>.
+Welcome to the second developer workshop! If you missed the first one, we dived into the basics of Ralph programming language, along with its SDK and CLI build tools, crafting a simple token faucet. It’s been a fantastic experience, you can find it <a href="/news/post/first-developer-workshop-build-a-token-faucet-a6bb2aa7bf68" >here</a> or on <a href="https://www.youtube.com/watch?v=YblUxEcXQuY" >YouTube</a> and <a href="https://github.com/alephium/dev-workshop-01" >GitHub</a>.
 
 In response to feedback from our previous workshop, we’ve shortened this session, splitting it into two. The goal of this workshop is to re-implement the smart contract part of a dApp called <a href="https://www.friend.tech/" >Friend.Tech</a>. This time, we’re not starting from scratch, we’re starting from a solidity smart contract.
 
@@ -23,7 +23,7 @@ The platform promotes itself by saying, “Trade with your friends in our market
 
 **Simplicity:** Despite its popularity, the smart contract for Friend Tech is not overly complicated, making it a great example for educational purposes.
 
-**Sophistication:** While simple, the contract is sophisticated enough to demonstrate advanced features in Ralph, such as subcontracts and the <a href="https://medium.com/@alephium/alephiums-aps-eliminating-evm-token-approval-risks-5407e7e70a33" >asset permission system (APS)</a>. Especially on how APS makes it simpler and safer to build dApps on Alephium.
+**Sophistication:** While simple, the contract is sophisticated enough to demonstrate advanced features in Ralph, such as subcontracts and the <a href="/news/post/alephiums-aps-eliminating-evm-token-approval-risks-5407e7e70a33" >asset permission system (APS)</a>. Especially on how APS makes it simpler and safer to build dApps on Alephium.
 
 ### What does the Solidity Smart Contract look like?
 

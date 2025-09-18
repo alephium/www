@@ -47,7 +47,7 @@ Making the app efficient and smooth was also something that we focused on, and w
 
 **Vladimir Moshnyager: Did you enjoy the process of building the mobile app?**
 
-**Mikaël Vaivre:** Yes, I enjoyed it, but it was more challenging than expected, especially designing the UI. <a href="https://medium.com/@alephium/techtalk-11-how-to-onboard-the-next-billion-people-to-crypto-d1f4904b3eea" >Making something look simple is really hard</a>. Up to the end of the process, I was tweaking UI elements to ensure they felt smooth on the mobile phone.
+**Mikaël Vaivre:** Yes, I enjoyed it, but it was more challenging than expected, especially designing the UI. <a href="/news/post/techtalk-11-how-to-onboard-the-next-billion-people-to-crypto-d1f4904b3eea" >Making something look simple is really hard</a>. Up to the end of the process, I was tweaking UI elements to ensure they felt smooth on the mobile phone.
 
 I had the basic UI layout ready quite early in the design process. However, I faced challenges in managing contrasts. One question arose as to whether to encase the content within boxes or allow it to float freely in the UI. I also deliberated on whether to use borders in certain areas, considering the limitations of a small screen which can be used in various settings.
 
@@ -137,7 +137,7 @@ _Testing and Final Tweaks:_ The last phase involves testing and refinement. It e
 
 **Mikaël Vaivre:** Everything is possible, but I believe It’s too soon for us. We need to make sure that we are delivering a great experience and we have a solid foundation to move forward with new features. We are proud of what we have now, and a list of things that will keep us busy for some time!
 
-If you want more about Mika and his design process, he has spoken in past summer’s techtalk, explaining his vision of UI & UX, for which you can find the video <a href="https://www.youtube.com/watch?v=QHmb87sT9nI" >here</a>, the slides <a href="https://slides.com/mikaelvaivre/deck" >there</a> and a <a href="https://medium.com/@alephium/techtalk-11-how-to-onboard-the-next-billion-people-to-crypto-d1f4904b3eea" >full article</a>! If you enjoy this kind of content, we also did a twitter space dedicated to UI/UX and wallets <a href="https://twitter.com/alephium/status/1695058454233174520" >here</a>.
+If you want more about Mika and his design process, he has spoken in past summer’s techtalk, explaining his vision of UI & UX, for which you can find the video <a href="https://www.youtube.com/watch?v=QHmb87sT9nI" >here</a>, the slides <a href="https://slides.com/mikaelvaivre/deck" >there</a> and a <a href="/news/post/techtalk-11-how-to-onboard-the-next-billion-people-to-crypto-d1f4904b3eea" >full article</a>! If you enjoy this kind of content, we also did a twitter space dedicated to UI/UX and wallets <a href="https://twitter.com/alephium/status/1695058454233174520" >here</a>.
 
 The Alephium Mobile Wallet blends robust technology, user-centric design, and a vision to provide a seamless crypto management experience. It is available on <a href="https://play.google.com/store/apps/details?id=org.alephium.wallet" >Google Play</a> and on the <a href="https://apps.apple.com/us/app/alephium-wallet/id6469043072" >iOS App Store</a>.
 

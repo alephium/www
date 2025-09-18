@@ -7,7 +7,7 @@ featuredImage: image_b9699193dd.png
 title: 'Hashrate Series #4: ICERIVER'
 ---
 
-_The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem actors to sustain and improve Alephium’s reliability. This series is about them, and after_ <a href="https://medium.com/@alephium/hashrate-series-1-nicehash-ee0936adf899" ><em>Nicehash</em></a>, <a href="https://medium.com/@alephium/hashrate-series-2-goldshell-93cc51a86640" ><em>Goldshell</em></a>_, and_ <a href="https://medium.com/@alephium/hashrate-series-3-cryptohall-24-7ad1533701f4" ><em>CryptoHall 24</em></a>_, please welcome ICERIVER._
+_The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem actors to sustain and improve Alephium’s reliability. This series is about them, and after_ <a href="/news/post/hashrate-series-1-nicehash-ee0936adf899" ><em>Nicehash</em></a>, <a href="/news/post/hashrate-series-2-goldshell-93cc51a86640" ><em>Goldshell</em></a>_, and_ <a href="/news/post/hashrate-series-3-cryptohall-24-7ad1533701f4" ><em>CryptoHall 24</em></a>_, please welcome ICERIVER._
 
 #### Can you introduce yourself and share the story of Iceriver? When was it founded & where? It’s relatively more recent than most ASIC manufacturers. How has been your journey so far?
 

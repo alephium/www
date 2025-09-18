@@ -25,7 +25,7 @@ Some of our sponsors who made the meetup possible were able to attend. We were l
 
 ### **Show me the meetup!**
 
-In general, the aim of the meetup was to provide a time for cross-pollinating ideas, meeting long-known discord usernames IRL & learn from each other. The following presentations follow the schedule of the meetup (if you want more details on the schedule, find it <a href="https://medium.com/@alephium/full-builders-meetup-program-announced-cda1af0e1355" >here</a>.).
+In general, the aim of the meetup was to provide a time for cross-pollinating ideas, meeting long-known discord usernames IRL & learn from each other. The following presentations follow the schedule of the meetup (if you want more details on the schedule, find it <a href="/news/post/full-builders-meetup-program-announced-cda1af0e1355" >here</a>.).
 
 We’ve worked hard at making them accessible in a simple way. If you can’t hear well enough, you can activate the subtitles. If for some reason you can’t read well enough on the presentations, we have included them as a link so you can download them:
 

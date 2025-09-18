@@ -32,7 +32,7 @@ To connect with the DEX on Testnet, you need first to install the Alephium brows
 
 🟠 <a href="https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/" >Firefox Store.</a>
 
-More details <a href="https://medium.com/@alephium/alephium-launches-browser-extension-wallet-706dfeda98f5" >about the extension wallet</a>.
+More details <a href="/news/post/alephium-launches-browser-extension-wallet-706dfeda98f5" >about the extension wallet</a>.
 
 #### Creating an address in group 0
 

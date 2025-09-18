@@ -8,7 +8,7 @@ title: Browser Wallet Extension v0.7.0 has been released
 
 Featuring: Ledger Integration
 
-> UPDATE: Alephium has an official integration with Ledger! you can find all details <a href="https://medium.com/@alephium/alephium-available-on-ledger-hardware-wallets-27fa77f928ab" class="markup--anchor markup--pullquote-anchor" >here</a>
+> UPDATE: Alephium has an official integration with Ledger! you can find all details <a href="/news/post/alephium-available-on-ledger-hardware-wallets-27fa77f928ab" class="markup--anchor markup--pullquote-anchor" >here</a>
 
 > UPDATE 2: If you are a Ledger Nano S owner, the installation process is detailed <a href="https://medium.com/p/7a86570f4089/edit" >here</a>.
 

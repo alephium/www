@@ -36,7 +36,7 @@ A bit before 4am CET, <a href="https://discord.com/channels/747741246667227157/8
 
 The <a href="https://github.com/alephium/dev-alephium/blob/6ab14d5161b95dacec6b14c47b4f2a8591264920/flow/src/test/scala/org/alephium/flow/core/ChainDifficultyAdjustmentSpec.scala" >difficulty bomb</a> was triggered on December 8th, 2022, exactly 1 year and 1 month after mainnet launch (which happened at 3:54PM CET on November 8th, 2021).
 
-The Difficulty Bomb is a mechanism <a href="https://www.nicehash.com/blog/post/the-ethereum-difficulty-bomb-and-its-effects-on-mining-rewards" >designed</a> to ensure coordination on a protocol upgrade at least once every 13 months in the case of Alephium. It was configured to be automatically pushed every time an upgrade happens. The <a href="https://medium.com/@alephium/announcing-the-leman-network-upgrade-c01a81e65f0e" >Leman Upgrade</a>, coming in early 2023, got more ambitious than anticipated and therefore was not completed in the adjustment window.
+The Difficulty Bomb is a mechanism <a href="https://www.nicehash.com/blog/post/the-ethereum-difficulty-bomb-and-its-effects-on-mining-rewards" >designed</a> to ensure coordination on a protocol upgrade at least once every 13 months in the case of Alephium. It was configured to be automatically pushed every time an upgrade happens. The <a href="/news/post/announcing-the-leman-network-upgrade-c01a81e65f0e" >Leman Upgrade</a>, coming in early 2023, got more ambitious than anticipated and therefore was not completed in the adjustment window.
 
 The DiffBomb was implemented in the early days of the Alephium network. It was not documented or communicated appropriately. Due to a recent hardware upgrade (and Murphy’s law), some of us didn’t have the usual full node running at home, hindering key team members ability to run comprehensive analytics. Regrettably, in the middle of this stressful situation, it all resulted in a delay identifying the DiffBomb as the root cause for the observed behavior.
 
@@ -67,7 +67,7 @@ _Run more full nodes:_ Ensure that more people in the dev team have a full node 
 
 _Expose the difficulty metric in the full node:_ To bring more transparency and ease future analysis, we want to make it easier to <a href="https://github.com/alephium/alephium/issues/806" >see the difficulty</a> at any point in time, directly from the full node.
 
-_Document more:_ It was always the plan to document the technology and code more, and the team has started a <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" >significant</a> <a href="https://docs.alephium.org/dapps/getting-started" >effort</a> in that regard. Alephium team will up the ante here, and provide more documentation.
+_Document more:_ It was always the plan to document the technology and code more, and the team has started a <a href="/news/post/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" >significant</a> <a href="https://docs.alephium.org/dapps/getting-started" >effort</a> in that regard. Alephium team will up the ante here, and provide more documentation.
 
 _Communicate more:_ The constant communication has been useful to minimize disruption to all parties involved. The community support, questioning, presence and stimulating challenges have been humbling and amazingly helpful.
 

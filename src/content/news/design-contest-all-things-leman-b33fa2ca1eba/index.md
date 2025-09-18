@@ -8,7 +8,7 @@ title: 'Design Contest: All Things Leman'
 
 #### The best design will be featured in Alephium’s SWALPH shop!
 
-The Alephium community is invited to participate in a design contest to celebrate the <a href="https://medium.com/@alephium/leman-network-upgrade-activation-on-march-30th-606884904c0c" >Leman Network Upgrade activation</a>! Use your creativity to come up with cool new Alephium-related graphic material!
+The Alephium community is invited to participate in a design contest to celebrate the <a href="/news/post/leman-network-upgrade-activation-on-march-30th-606884904c0c" >Leman Network Upgrade activation</a>! Use your creativity to come up with cool new Alephium-related graphic material!
 
 ### “Wen”? How?
 

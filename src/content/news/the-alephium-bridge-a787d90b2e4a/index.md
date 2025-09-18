@@ -8,7 +8,7 @@ title: The Alephium Bridge
 
 #### How does it work? How to use it? About the guardians, and more…
 
-_This article was updated to reflect the new conditions after the_ <a href="https://medium.com/@alephium/rh%C3%B4ne-network-upgrade-activated-cbeb298585fe" ><em>Rhône Network Upgrade</em></a>_: bridging from Alephium to Ethereum requires at least 205 blocks_ **_and_** _at least 55 minutes._
+_This article was updated to reflect the new conditions after the_ <a href="/news/post/rh%C3%B4ne-network-upgrade-activated-cbeb298585fe" ><em>Rhône Network Upgrade</em></a>_: bridging from Alephium to Ethereum requires at least 205 blocks_ **_and_** _at least 55 minutes._
 
 The need for secure and efficient cross-chain transfers is growing with the emergence of the multichain world. Alephium’s core contributors have invested significant efforts to build a battle-tested solution for its first bridge to/from Ethereum (and other chains might follow).
 

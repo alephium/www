@@ -6,13 +6,13 @@ date: 2023-07-28T13:05:23.630Z
 spotlight: false
 featuredImage: image_0006903410.jpg
 ---
-*This is the fourth of a series of technical innovations brought by Alephium. Find the previous ones* <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" ><em>here</em></a> *(PolW),* <a href="https://medium.com/p/8de3b0f76749" ><em>here</em></a> *(sUTXO), and* <a href="https://medium.com/@alephium/meet-alphred-a-virtual-machine-like-no-others-85ce86540025" ><em>here</em></a> *(Alphred VM). This article will dive into the concepts of sharding and the inner workings of Blockflow to explain how it enhances the performance of the Alephium blockchain.*
+*This is the fourth of a series of technical innovations brought by Alephium. Find the previous ones* <a href="/news/post/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" ><em>here</em></a> *(PolW),* <a href="https://medium.com/p/8de3b0f76749" ><em>here</em></a> *(sUTXO), and* <a href="/news/post/meet-alphred-a-virtual-machine-like-no-others-85ce86540025" ><em>here</em></a> *(Alphred VM). This article will dive into the concepts of sharding and the inner workings of Blockflow to explain how it enhances the performance of the Alephium blockchain.*
 
 ***TL;DR — Alephium is a sharded blockchain: its state is divided into groups, and the transactions are processed in parallel by several blockchains to increase throughput. Its sharding algorithm is called*** <a href="https://github.com/alephium/white-paper" ><strong><em>Blockflow</em></strong></a>***, and allows for huge UX improvements with single-step cross-group transactions. It also manages the relationship between blocks in all chains, allowing high transactions-per-second numbers while maintaining ledger integrity.***
 
 ### **Sharding in a Blockchain Context**
 
-<a href="https://medium.com/@alephium/sharding-d50968b8b229" >Sharding</a> is a database management technique that involves breaking down larger datasets into smaller, more manageable pieces. When dealing with large databases, it becomes impractical to handle all the data on a single machine or in a single table. Sharding enables the database to be distributed across multiple machines by creating multiple smaller tables, allowing parallelizing tasks to improve throughput.
+<a href="/news/post/sharding-d50968b8b229" >Sharding</a> is a database management technique that involves breaking down larger datasets into smaller, more manageable pieces. When dealing with large databases, it becomes impractical to handle all the data on a single machine or in a single table. Sharding enables the database to be distributed across multiple machines by creating multiple smaller tables, allowing parallelizing tasks to improve throughput.
 
 It’s the same in a blockchain context: sharding increases throughput by parallelizing transactions. This comes at the cost of added complexity because it becomes harder to maintain a secure and consistent ledger. Every sharded blockchain addresses these tradeoffs in different ways:
 
@@ -100,7 +100,7 @@ This is essentially how the cross-group single-step transaction is done: as a ne
 
 ### In conclusion…
 
-As a sharded blockchain, Alephium can increase its throughput by adding more shards. Currently, it stands on 800 <a href="https://medium.com/@alephium/transactions-per-second-tps-f13217a49e39" >transactions per second</a> (and it can reach 20,000 TPS with 1024 chains). And Blockflow is the core Alephium technology enabling such a scalable blockchain. Incidentally, BlockFlow was the first name of Alephium!
+As a sharded blockchain, Alephium can increase its throughput by adding more shards. Currently, it stands on 800 <a href="/news/post/transactions-per-second-tps-f13217a49e39" >transactions per second</a> (and it can reach 20,000 TPS with 1024 chains). And Blockflow is the core Alephium technology enabling such a scalable blockchain. Incidentally, BlockFlow was the first name of Alephium!
 
 By leveraging the consensus rules within the DAG-based structure, BlockFlow ensures the correctness and security of transactions across all groups. This sets it apart from traditional sharding algorithms as it offers a more efficient and a better Developer and User Experience due to single step cross-group transactions.
 

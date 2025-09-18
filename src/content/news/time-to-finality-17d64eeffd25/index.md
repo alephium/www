@@ -10,7 +10,7 @@ title: Time to Finality
 
 _This is part of a series of regular articles on key concepts for understanding [Alephium](/) in particular and blockchains in general. If you’re pondering on which chain to build your dApps, if you’re a curious crypto-traveler, or a fellow decentralization enthusiast, welcome!_
 
-In our last <a href="https://medium.com/@alephium/transactions-per-second-tps-f13217a49e39" >post,</a> we dove into the Transactions Per Second (TPS) definition & mathematics! Now we will explore the **Time To Finality (TTF)** metric. Despite not having a rocket science formula to calculate it, this is a key value for the financial transfer aspect of blockchain transactions.
+In our last <a href="/news/post/transactions-per-second-tps-f13217a49e39" >post,</a> we dove into the Transactions Per Second (TPS) definition & mathematics! Now we will explore the **Time To Finality (TTF)** metric. Despite not having a rocket science formula to calculate it, this is a key value for the financial transfer aspect of blockchain transactions.
 
 ### What is Time to Finality (TTF)?
 

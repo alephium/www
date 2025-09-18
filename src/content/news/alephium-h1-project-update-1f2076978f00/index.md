@@ -61,11 +61,11 @@ The SDK is now compatible with browser and React Native environments, in additio
 
 #### Listing on Gate.IO
 
-During the second week of 2022, <a href="https://medium.com/@alephium/gate-io-first-to-list-alephium-alph-a7e5fe56cd45" >Alephium got listed on Gate.IO.</a> This was a major milestone for the project. For the first time, the community was able to <a href="https://www.gate.io/trade/ALPH_USDT" >buy and sell ALPH</a> on an exchange. We took great pride in it, as getting listed first on a top-10 exchange is hard! It opened the floodgates to a new crowd of retail investors and miners, who grew our communications channels significantly and from which we learned a lot! We had anticipated this and <a href="https://medium.com/@alephium/welcome-to-alephium-alph-48dfb72aa458" >created accessible material</a> to welcome new members of the community and help them get oriented within the project.
+During the second week of 2022, <a href="/news/post/gate-io-first-to-list-alephium-alph-a7e5fe56cd45" >Alephium got listed on Gate.IO.</a> This was a major milestone for the project. For the first time, the community was able to <a href="https://www.gate.io/trade/ALPH_USDT" >buy and sell ALPH</a> on an exchange. We took great pride in it, as getting listed first on a top-10 exchange is hard! It opened the floodgates to a new crowd of retail investors and miners, who grew our communications channels significantly and from which we learned a lot! We had anticipated this and <a href="/news/post/welcome-to-alephium-alph-48dfb72aa458" >created accessible material</a> to welcome new members of the community and help them get oriented within the project.
 
 #### Strategic Partnership
 
-In mid-april, we officialised a <a href="https://medium.com/@alephium/alephium-partners-with-cetacean-capital-83cf2fbea8a1" >partnership with Cetacean Capital</a>. Its unique mix of diverse skills and long time in crypto, completely peer-to-peer organization and exceptionally entrepreneurial mindset makes it a very special partner. The long-term commitment it’s taking with Alephium will allow the project to leverage Cetacean’s heavy marketing chops and its institutional credibility.
+In mid-april, we officialised a <a href="/news/post/alephium-partners-with-cetacean-capital-83cf2fbea8a1" >partnership with Cetacean Capital</a>. Its unique mix of diverse skills and long time in crypto, completely peer-to-peer organization and exceptionally entrepreneurial mindset makes it a very special partner. The long-term commitment it’s taking with Alephium will allow the project to leverage Cetacean’s heavy marketing chops and its institutional credibility.
 
 There are more partners to come and we are looking forward to revealing the next one during Q2.
 
@@ -77,13 +77,13 @@ After the initial listing, our Twitter followers tripled (to almost 6k) and both
 
 #### Naming contest
 
-In the 5th week, we queried the community through <a href="https://medium.com/@alephium/alephium-naming-competition-c1b736797461" >a naming contest.</a> There were many parts of the project that needed naming and it was clear for everyone involved that these names had to be sourced from the community.
+In the 5th week, we queried the community through <a href="/news/post/alephium-naming-competition-c1b736797461" >a naming contest.</a> There were many parts of the project that needed naming and it was clear for everyone involved that these names had to be sourced from the community.
 
 The smallest denomination, or the Satoshi equivalent of ALPH became the SET, Alephium’s custom Virtual Machine became ALPHRED, and Alephium’s smart contract programming language got baptized RALPH.
 
 #### Gate.IO AMA
 
-We held our <a href="https://medium.com/@alephium/gate-io-ama-with-alephium-67b50d179d72" >first external AMA within the Gate.io channels.</a> It was, to say the least, an interesting and high-intensity experience!
+We held our <a href="/news/post/gate-io-ama-with-alephium-67b50d179d72" >first external AMA within the Gate.io channels.</a> It was, to say the least, an interesting and high-intensity experience!
 
 <figure id="b557" class="graf graf--figure graf--iframe graf-after--p">
 <h1 id="not-acceptable">406 Not Acceptable</h1>
@@ -93,7 +93,7 @@ We held our <a href="https://medium.com/@alephium/gate-io-ama-with-alephium-67b5
 
 #### Team interview series
 
-During the 10th week, we started publishing a series covering the individuals behind the project: the team. We felt it was important to let the community get to know us better as we value transparency. We divided the article into 3 episodes: <a href="https://medium.com/@alephium/core-team-interview-series-episode-1-3472f8295af6" >Front-end devs</a>, <a href="https://medium.com/@alephium/core-team-interview-series-episode-2-bec6e6908d2f" >operations and communication team</a> and finally <a href="https://medium.com/@alephium/core-team-interview-series-episode-3-64b6dacc1459" >back-end devs</a>.
+During the 10th week, we started publishing a series covering the individuals behind the project: the team. We felt it was important to let the community get to know us better as we value transparency. We divided the article into 3 episodes: <a href="/news/post/core-team-interview-series-episode-1-3472f8295af6" >Front-end devs</a>, <a href="/news/post/core-team-interview-series-episode-2-bec6e6908d2f" >operations and communication team</a> and finally <a href="/news/post/core-team-interview-series-episode-3-64b6dacc1459" >back-end devs</a>.
 
 #### Paris Blockchain Week Summit
 

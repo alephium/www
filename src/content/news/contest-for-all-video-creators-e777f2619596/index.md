@@ -18,7 +18,7 @@ title: ✨Contest for all video creators 🚀
 
 #### _What?_
 
-We need an accessible video introduction to Alephium. It should at least cover all the basics included in the <a href="https://medium.com/@alephium/welcome-to-alephium-alph-48dfb72aa458" >“Welcome to Alephium” Medium article</a>.
+We need an accessible video introduction to Alephium. It should at least cover all the basics included in the <a href="/news/post/welcome-to-alephium-alph-48dfb72aa458" >“Welcome to Alephium” Medium article</a>.
 
 #### _For who?_
 
@@ -42,7 +42,7 @@ And of course, here you will find additional useful resources:
 
 ### 📝Rules
 
-- Video must accurately include the basics covered in our <a href="https://medium.com/@alephium/welcome-to-alephium-alph-48dfb72aa458" >“Welcome to Alephium” Medium article</a>.
+- Video must accurately include the basics covered in our <a href="/news/post/welcome-to-alephium-alph-48dfb72aa458" >“Welcome to Alephium” Medium article</a>.
 - Video should not exceed 5 minutes.
 - Video may be in any language.
 - Deadline to upload the video: 2022–04–15 23:59 CET.

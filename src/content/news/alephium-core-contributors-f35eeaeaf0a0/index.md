@@ -13,10 +13,10 @@ For its team, Alephium is privileging agility and efficiency over hyper-growth. 
 In fact, we haven’t communicated much about ourselves so far because we think _who we are_ is less relevant than _what we deliver_. To nevertheless shed some light on who we are and what we do, we decided to share a little about ourselves with the community through a small series of interviews.
 
 _This is an updated version of the previously released articles available here:\***\*  
-\*\***Ep.1:_ <a href="https://medium.com/@alephium/3472f8295af6"  rel="nofollow"><em>https://medium.com/@alephium/3472f8295af6</em></a>_  
-Ep.2:_ <a href="https://medium.com/@alephium/bec6e6908d2f"  rel="nofollow"><em>https://medium.com/@alephium/bec6e6908d2f</em></a>_  
-Ep.3:_ <a href="https://medium.com/@alephium/64b6dacc1459"  rel="nofollow"><em>https://medium.com/@alephium/64b6dacc1459</em></a>_  
-Ep.4:_ <a href="https://medium.com/@alephium/3886003b8fef"  rel="nofollow"><em>https://medium.com/@alephium/3886003b8fef</em></a>
+\*\***Ep.1:_ <a href="/news/post/3472f8295af6"  rel="nofollow"><em>https://medium.com/@alephium/3472f8295af6</em></a>_  
+Ep.2:_ <a href="/news/post/bec6e6908d2f"  rel="nofollow"><em>https://medium.com/@alephium/bec6e6908d2f</em></a>_  
+Ep.3:_ <a href="/news/post/64b6dacc1459"  rel="nofollow"><em>https://medium.com/@alephium/64b6dacc1459</em></a>_  
+Ep.4:_ <a href="/news/post/3886003b8fef"  rel="nofollow"><em>https://medium.com/@alephium/3886003b8fef</em></a>
 
 ### Backend Team
 

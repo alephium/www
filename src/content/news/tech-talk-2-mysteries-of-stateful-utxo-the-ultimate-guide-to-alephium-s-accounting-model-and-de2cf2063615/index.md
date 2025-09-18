@@ -10,9 +10,9 @@ title: 'TECH TALK #2 — Mysteries of stateful UTXO: The Ultimate Guide to A
 
 _A discussion with Cheng Wang, inventor of stateful UTXO and founder of Alephium_
 
-_This is the second of a series of interviews on the technical innovations brought to the world by Alephium. The discussion was conducted in a virtual format in the presence of most of the Alephium team who contributed to the questions and ensuing exchange. The following has been edited for clarity, concision and optimized for readability and cut into 2 parts, this is part 1. It has already been preceded by an_ <a href="https://medium.com/@alephium/an-introduction-to-the-stateful-utxo-model-8de3b0f76749" ><em>Introduction to sUTXO</em></a> _and_ <a href="https://twitter.com/alephium/status/1615389097744568320" ><em>many</em></a> <a href="https://twitter.com/alephium/status/1599808960038461447" ><em>Twitter</em></a> <a href="https://twitter.com/alephium/status/1602684789655420928" ><em>threads</em></a>_._
+_This is the second of a series of interviews on the technical innovations brought to the world by Alephium. The discussion was conducted in a virtual format in the presence of most of the Alephium team who contributed to the questions and ensuing exchange. The following has been edited for clarity, concision and optimized for readability and cut into 2 parts, this is part 1. It has already been preceded by an_ <a href="/news/post/an-introduction-to-the-stateful-utxo-model-8de3b0f76749" ><em>Introduction to sUTXO</em></a> _and_ <a href="https://twitter.com/alephium/status/1615389097744568320" ><em>many</em></a> <a href="https://twitter.com/alephium/status/1599808960038461447" ><em>Twitter</em></a> <a href="https://twitter.com/alephium/status/1602684789655420928" ><em>threads</em></a>_._
 
-_TL;DR — An introduction on ledger-accounting models / What is stateful utxo / About tokens as first class citizen / About merkle trees, separation of contract states and assets / You can find Part 2_ <a href="https://medium.com/@alephium/tech-talk-2-mysteries-of-stateful-utxo-the-ultimate-guide-to-alephiums-accounting-model-and-f6b6868ef873" ><em>here</em></a>_!_
+_TL;DR — An introduction on ledger-accounting models / What is stateful utxo / About tokens as first class citizen / About merkle trees, separation of contract states and assets / You can find Part 2_ <a href="/news/post/tech-talk-2-mysteries-of-stateful-utxo-the-ultimate-guide-to-alephiums-accounting-model-and-f6b6868ef873" ><em>here</em></a>_!_
 
 #### **AN INTRODUCTION TO LEDGER-ACCOUNTING MODELS**
 
@@ -56,7 +56,7 @@ At the same time, DeFi summer demonstrated the power of decentralized apps to th
 
 **VM: What do you mean by sharding and scalable UTXO, and in which way is it more scalable than the standard UTXO model?**
 
-CW: Our Blockflow architecture works like this: <a href="https://medium.com/@alephium/an-introduction-to-blockflow-alephiums-sharding-algorithm-bbbf318c3402" >We have G groups, and then we have G x G blockchains</a>. UTXO is used on top of this to transact between the groups. This is what I meant by a scalable UTXO model: it is based on the UTXO model, but we scale it via sharding using the Blockflow algorithm and transactions can happen on-chain in parallel.
+CW: Our Blockflow architecture works like this: <a href="/news/post/an-introduction-to-blockflow-alephiums-sharding-algorithm-bbbf318c3402" >We have G groups, and then we have G x G blockchains</a>. UTXO is used on top of this to transact between the groups. This is what I meant by a scalable UTXO model: it is based on the UTXO model, but we scale it via sharding using the Blockflow algorithm and transactions can happen on-chain in parallel.
 
 VM: **What is the stateful UTXO model and how does it work at a high level?**
 
@@ -161,4 +161,4 @@ Eth core researchers are actively researching this direction, but all solutions 
 
 ---
 
-This is the end of Part 1! And you can keep reading Part 2 <a href="https://medium.com/@alephium/tech-talk-2-mysteries-of-stateful-utxo-the-ultimate-guide-to-alephiums-accounting-model-and-f6b6868ef873" >here</a>! If you have questions on this topic, please come to Alephium’s <a href="https://discord.gg/XsGpZ5VDTM" ><strong>Discord</strong></a>, <a href="https://t.me/alephiumgroup" ><strong>Telegram</strong></a>, or reach out on <a href="https://twitter.com/alephium" ><strong>Twitter</strong></a>!
+This is the end of Part 1! And you can keep reading Part 2 <a href="/news/post/tech-talk-2-mysteries-of-stateful-utxo-the-ultimate-guide-to-alephiums-accounting-model-and-f6b6868ef873" >here</a>! If you have questions on this topic, please come to Alephium’s <a href="https://discord.gg/XsGpZ5VDTM" ><strong>Discord</strong></a>, <a href="https://t.me/alephiumgroup" ><strong>Telegram</strong></a>, or reach out on <a href="https://twitter.com/alephium" ><strong>Twitter</strong></a>!

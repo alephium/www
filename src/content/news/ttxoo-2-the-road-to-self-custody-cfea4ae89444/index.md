@@ -83,7 +83,7 @@ One improvement to this setup is to have the wallet installed on a device that i
 
 **Pros — **Adding a passphrase to the previous setup will increase the security level of your backups and your access to funds. <a href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki" >Codified by BIP39</a>, it offers the option to add a passphrase on top of your seed phrase (12 or 24 words) for enhanced protection.
 
-<a href="https://medium.com/@alephium/bip39-passphrase-implementation-f87adecd6f59" >Alephium Desktop wallet last update added the passphrase feature</a>, which gives our users an extra layer of protection.
+<a href="/news/post/bip39-passphrase-implementation-f87adecd6f59" >Alephium Desktop wallet last update added the passphrase feature</a>, which gives our users an extra layer of protection.
 
 This configuration also allows you to use plausible deniability in situations where something may compromise your security or put you at risk. For example, you can use the same seed phrase to manage different segregated wallets where each wallet has an additional passphrase. In addition, you can create addresses for specific purposes, like a situation requiring a valid address, but you don’t want to provide your main one.
 

@@ -9,7 +9,7 @@ title: Core team interview series. Episode 1
 
 #### Presenting the humans building the Front-end
 
-**This article was updated:** <a href="https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0"  rel="nofollow">https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0</a>
+**This article was updated:** <a href="/news/post/alephium-contributors-f35eeaeaf0a0"  rel="nofollow">https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0</a>
 
 For its team, Alephium is privileging agility and efficiency over hyper-growth. We do not stay at a human size because we think it is more efficient, but because Alephium strives to be a decentralised, community driven project. This means the project in itself is much larger than a team can ever be. Communication, trust, openness and transparency is paramount in such a set-up.
 
@@ -148,4 +148,4 @@ These are my utmost important points when it comes to Alephium: developer safety
 
 ---
 
-#### This concludes the first chapter of three in this series. In the next publication we’ll get acquainted with the people responsible for <a href="https://medium.com/@alephium/core-team-interview-series-episode-2-bec6e6908d2f" >operations, marketing and communication,</a> followed by <a href="https://medium.com/@alephium/core-team-interview-series-episode-3-64b6dacc1459" >the folks building the Node.</a>
+#### This concludes the first chapter of three in this series. In the next publication we’ll get acquainted with the people responsible for <a href="/news/post/core-team-interview-series-episode-2-bec6e6908d2f" >operations, marketing and communication,</a> followed by <a href="/news/post/core-team-interview-series-episode-3-64b6dacc1459" >the folks building the Node.</a>

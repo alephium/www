@@ -7,9 +7,9 @@ featuredImage: image_1d46b897a3.jpg
 title: 'TECH TALK #1 — Proof-of-Less-Work AMA'
 ---
 
-#### On Thursday, August 25th, 2022, Alephium’s team conducted an <a href="https://www.youtube.com/watch?v=Oi4AsqVY0YA" >AMA on our Discord</a> as a <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" >follow-up</a> discussion with Cheng Wang, inventor of PoLW and founder of Alephium.
+#### On Thursday, August 25th, 2022, Alephium’s team conducted an <a href="https://www.youtube.com/watch?v=Oi4AsqVY0YA" >AMA on our Discord</a> as a <a href="/news/post/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" >follow-up</a> discussion with Cheng Wang, inventor of PoLW and founder of Alephium.
 
-> You’ll find the original article on PoLW <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" >here,</a> the whitepaper <a href="https://github.com/alephium/white-paper/blob/master/alephium.pdf" >here</a>, and the code <a href="https://github.com/alephium/alephium/blob/master/protocol/src/main/scala/org/alephium/protocol/mining/Emission.scala" >here</a>. This is a lightly edited transcript of the following video of the AMA:
+> You’ll find the original article on PoLW <a href="/news/post/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" >here,</a> the whitepaper <a href="https://github.com/alephium/white-paper/blob/master/alephium.pdf" >here</a>, and the code <a href="https://github.com/alephium/alephium/blob/master/protocol/src/main/scala/org/alephium/protocol/mining/Emission.scala" >here</a>. This is a lightly edited transcript of the following video of the AMA:
 
 `video: https://www.youtube.com/watch?v=Oi4AsqVY0YA`
 
@@ -67,7 +67,7 @@ Cheng Wang: I don’t think so. If the token’s value drops a lot, this will be
 
 #### MINING REWARD — Which part of the miners’ mining reward needs to be burned once PoLW is activated? The hashrate-based reward, the time-based reward, or both? \[<a href="https://www.youtube.com/watch?v=Oi4AsqVY0YA&amp;t=720s" >🔗📺</a>\]
 
-Cheng Wang: The mining reward will use <a href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33" >both</a>, and both might play a factor in the final amount of burning.
+Cheng Wang: The mining reward will use <a href="/news/post/alephium-block-rewards-72d9fb9fde33" >both</a>, and both might play a factor in the final amount of burning.
 
 **Vladimir Moshnyager: If I understand correctly, I don’t burn part of the reward itself. Instead, I have to burn coins in the input to the coinbase transaction before getting the reward from the output of that same transaction, right?**
 
@@ -87,7 +87,7 @@ Cheng Wang: The protocol introduced transaction fees to incentivize miners to in
 
 #### SIMULATION — If there are 1,5 EH/s of hashrate on the network, and we’re in the middle of 2024, what is the amount of ALPHs to burn to be able to mine? \[<a href="https://www.youtube.com/watch?v=Oi4AsqVY0YA&amp;t=1047s" >🔗📺</a>\]
 
-Cheng Wang: I have no idea about this. If you ask me right now, what is 99 times 77? I have no idea! <a href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33" >We published the formula</a> and the graphs for the reward of the two curves and how to calculate it.
+Cheng Wang: I have no idea about this. If you ask me right now, what is 99 times 77? I have no idea! <a href="/news/post/alephium-block-rewards-72d9fb9fde33" >We published the formula</a> and the graphs for the reward of the two curves and how to calculate it.
 
 In the future, when the hashrate is high enough, and PoLW is activated, we will provide some front-end tools for people to calculate the amount of coin to burn at any given time.
 

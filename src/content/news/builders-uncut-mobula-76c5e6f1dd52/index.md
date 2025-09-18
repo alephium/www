@@ -88,7 +88,7 @@ Mobula’s founder gave a fantastic talk in our first Athens Builders Meetup!
 
 `video: https://www.youtube.com/watch?v=YdPTqEx8sZQ`
 
-You can also find all the talks of the Athens Builders Meetup <a href="https://medium.com/@alephium/all-the-athens-meetup-presentations-f419195640ce?source=user_profile---------0----------------------------" >here</a>.
+You can also find all the talks of the Athens Builders Meetup <a href="/news/post/all-the-athens-meetup-presentations-f419195640ce?source=user_profile---------0----------------------------" >here</a>.
 
 ---
 

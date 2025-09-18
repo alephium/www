@@ -11,7 +11,7 @@ title: The Desktop Wallet 2.0
 
 Alephium is thrilled to announce the release of Desktop Wallet 2.0. You can upgrade directly (since version 1.5.0) from your wallet by clicking on the pop-up that will appear when you access the wallet, or by downloading <a href="https://github.com/alephium/desktop-wallet/releases/latest" >the latest release</a>.
 
-The <a href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a" >Leman Network Upgrade</a> and the capabilities it unleashed on the network made it the perfect timing for a redesign of the wallet. It now provides many new features and an even more intuitive User Interface.
+The <a href="/news/post/the-leman-network-upgrade-is-live-f52c89b7dd6a" >Leman Network Upgrade</a> and the capabilities it unleashed on the network made it the perfect timing for a redesign of the wallet. It now provides many new features and an even more intuitive User Interface.
 
 ### A New Design
 

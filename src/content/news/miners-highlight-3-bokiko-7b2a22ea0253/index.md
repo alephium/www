@@ -7,7 +7,7 @@ featuredImage: image_d6e64d41b3.jpg
 title: 'Miners’ Highlight #3: Bokiko'
 ---
 
-_The Alephium blockchain, like many decentralized networks, relies heavily on the contributions of miners to maintain its integrity and functionality. Recognizing the significance of these contributors, we are launching a series of articles titled “Miners’ Highlight.” By focusing on their contributions, challenges, and experiences, we aim to better understand the mining process and its importance. You can find_ <a href="https://medium.com/@alephium/miners-highlight-1-cedric-crispin-c4ed456f6d10" ><em>#1 here</em></a> _and_ <a href="https://medium.com/@alephium/miners-highlight-1-jake-aka-hiram-abiff-a8833307f316" ><em>#2 here</em></a>_._
+_The Alephium blockchain, like many decentralized networks, relies heavily on the contributions of miners to maintain its integrity and functionality. Recognizing the significance of these contributors, we are launching a series of articles titled “Miners’ Highlight.” By focusing on their contributions, challenges, and experiences, we aim to better understand the mining process and its importance. You can find_ <a href="/news/post/miners-highlight-1-cedric-crispin-c4ed456f6d10" ><em>#1 here</em></a> _and_ <a href="/news/post/miners-highlight-1-jake-aka-hiram-abiff-a8833307f316" ><em>#2 here</em></a>_._
 
 _Bokiko, a crypto enthusiast, shares his passion for mining and Alephium._
 

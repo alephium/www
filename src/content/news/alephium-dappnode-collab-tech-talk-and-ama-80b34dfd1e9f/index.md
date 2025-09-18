@@ -39,7 +39,7 @@ Going through the Dappnode Core path, you will have to download the Dappnode sof
 
 ![](image_e0ed2b9423.jpg)
 
-After the node is up and running you can connect your Alephium Desktop Wallet to it, and send your transactions directly from your node. By the way, our upcoming mobile wallet & browser extension will also be connectable! <a href="https://medium.com/@alephium/ttxoo-2-the-road-to-self-custody-cfea4ae89444" >You can now easily move forward on the “Road to self-custody”!</a>
+After the node is up and running you can connect your Alephium Desktop Wallet to it, and send your transactions directly from your node. By the way, our upcoming mobile wallet & browser extension will also be connectable! <a href="/news/post/ttxoo-2-the-road-to-self-custody-cfea4ae89444" >You can now easily move forward on the “Road to self-custody”!</a>
 
 ![](image_ca1cac4237.jpg)
 

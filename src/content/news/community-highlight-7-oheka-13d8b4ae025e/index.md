@@ -7,7 +7,7 @@ featuredImage: image_07072c30f3.jpg
 title: 'Community Highlight #7, Oheka'
 ---
 
-#### _Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’ contributions to the ecosystem, what drives them, and what they are passionate about! More episodes:_ <a href="https://medium.com/@alephium/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" ><em>#1 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-cgi-bin-c102cc106f19" ><em>#2 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-3-digdug-48a7ec868504" ><em>#3 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-4-montail-e24fd88882a0" ><em>#4 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-5-txn-71c4fd76ffe8" ><em>#5 here</em></a>, _and_ <a href="https://medium.com/@alephium/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" ><em>#6 here</em></a>_._
+#### _Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’ contributions to the ecosystem, what drives them, and what they are passionate about! More episodes:_ <a href="/news/post/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" ><em>#1 here</em></a>_,_ <a href="/news/post/community-highlight-cgi-bin-c102cc106f19" ><em>#2 here</em></a>_,_ <a href="/news/post/community-highlight-3-digdug-48a7ec868504" ><em>#3 here</em></a>_,_ <a href="/news/post/community-highlight-4-montail-e24fd88882a0" ><em>#4 here</em></a>_,_ <a href="/news/post/community-highlight-5-txn-71c4fd76ffe8" ><em>#5 here</em></a>, _and_ <a href="/news/post/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" ><em>#6 here</em></a>_._
 
 **Today’s spotlight is shining on the very definition of an “Alephium OG”. Not only did they join the project’s community very early on, they instinctively began helping their peers to better understand the intricacies and specifics of the project. Oheka is the type of person that will not rest on trust as a given; only verifiable facts are meaningful to them. While this is not rare in the educated fringes of the crypto space, Oheka is generous about their findings. They continuously encourage their fellow Alephians to do their own research by showing the way into the knowledge base.**
 
@@ -27,11 +27,11 @@ I heard about it from Polto, and I watched Cheng Wang’s presentation about sha
 
 #### What excites you about Alephium?
 
-Alephium has a real value proposition with a unique approach to <a href="https://docs.alephium.org/glossary#sharding" >sharding</a> and <a href="https://docs.alephium.org/dapps/getting-started" >smart contracts</a> based on the Bitcoin technology stack (Proof-Of-Work and UTXO) while addressing energy issues with its <a href="https://medium.com/@alephium/tech-talk-1-proof-of-less-work-ama-3d5afbf78c71" >Proof of Less Work</a> algorithm.
+Alephium has a real value proposition with a unique approach to <a href="https://docs.alephium.org/glossary#sharding" >sharding</a> and <a href="https://docs.alephium.org/dapps/getting-started" >smart contracts</a> based on the Bitcoin technology stack (Proof-Of-Work and UTXO) while addressing energy issues with its <a href="/news/post/tech-talk-1-proof-of-less-work-ama-3d5afbf78c71" >Proof of Less Work</a> algorithm.
 
 In my opinion, the Alephium project proposes a new paradigm that is an interesting approach to the <a href="https://coinmarketcap.com/alexandria/glossary/blockchain-trilemma" >blockchain trilemma</a>: security — decentralization — scalability.
 
-> The fact that it is based on the Bitcoin technology stack, the ease of <a href="https://medium.com/@alephium/running-a-blockchain-node-on-raspberry-pi-bac0a2afc208" class="markup--anchor markup--pullquote-anchor" >running a full-node</a>, and its approach to sharding Alephium has all the qualities in hand to answer this.
+> The fact that it is based on the Bitcoin technology stack, the ease of <a href="/news/post/running-a-blockchain-node-on-raspberry-pi-bac0a2afc208" class="markup--anchor markup--pullquote-anchor" >running a full-node</a>, and its approach to sharding Alephium has all the qualities in hand to answer this.
 
 In addition, I really appreciate the [transparency and the listening](/discord) of the Alephium team towards the community and its way of involving it.
 
@@ -43,7 +43,7 @@ In order to attract developers and future users, it is important for the project
 
 #### What makes you excited about the future of Alephium?
 
-In the short term, without much suspense, like many in the community, I am looking forward to the <a href="https://medium.com/@alephium/announcing-the-leman-network-upgrade-c01a81e65f0e" >Leman network upgrade</a> which will be a catalyst for the development of the project. In the future, I look forward to seeing more and more developers come and build the dApps and thus grow the Alephium ecosystem.
+In the short term, without much suspense, like many in the community, I am looking forward to the <a href="/news/post/announcing-the-leman-network-upgrade-c01a81e65f0e" >Leman network upgrade</a> which will be a catalyst for the development of the project. In the future, I look forward to seeing more and more developers come and build the dApps and thus grow the Alephium ecosystem.
 
 ![](image_8f83d4c492.jpg)
 

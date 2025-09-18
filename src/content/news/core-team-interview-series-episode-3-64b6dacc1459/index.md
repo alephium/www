@@ -8,13 +8,13 @@ title: Core team interview series. Episode 3
 
 #### Presenting the humans developing the Back-end.
 
-**This article was updated:** <a href="https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0"  rel="nofollow">https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0</a>
+**This article was updated:** <a href="/news/post/alephium-contributors-f35eeaeaf0a0"  rel="nofollow">https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0</a>
 
 _For its team, Alephium is privileging agility and efficiency over hyper-growth. We do not stay at a human size because we think it is more efficient, but because Alephium strives to be a decentralized, community driven project. This means the project in itself is much larger than a team can ever be. Communication, trust, openness and transparency is paramount in such a set-up._
 
 _To shed some light on who we are and what we do, we decided to share a little about ourselves with the community through a small series of interviews._
 
-Read the <a href="https://medium.com/@alephium/core-team-interview-series-episode-1-3472f8295af6" >1st part here</a> and the <a href="https://medium.com/@alephium/core-team-interview-series-episode-2-bec6e6908d2f" >2nd part here.</a>
+Read the <a href="/news/post/core-team-interview-series-episode-1-3472f8295af6" >1st part here</a> and the <a href="/news/post/core-team-interview-series-episode-2-bec6e6908d2f" >2nd part here.</a>
 
 The Back-end is the heart of the system, but it is also a less obvious part of the development to the average observer: the less a back-end gets noticed the better job it is doing.
 

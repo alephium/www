@@ -18,7 +18,7 @@ A lot of chains make very different choices on these parameters, and that has de
 
 **Block time** in a blockchain is what it takes for a block to be checked by the miners (or validators on PoS blockchains). In Alephium, this is set to 6̶4̶ ̶s̶e̶c̶o̶n̶d̶s̶ \* **16 seconds.**
 
-_\* With the introduction of the_ <a href="https://medium.com/@alephium/rh%C3%B4ne-network-upgrade-activated-cbeb298585fe" >Rhône Network Upgrade</a>, _the block time was reduced to 16 seconds. That was possible with the adoption of the Ghost algorithm, and it is translated into an enhanced user experience._
+_\* With the introduction of the_ <a href="/news/post/rh%C3%B4ne-network-upgrade-activated-cbeb298585fe" >Rhône Network Upgrade</a>, _the block time was reduced to 16 seconds. That was possible with the adoption of the Ghost algorithm, and it is translated into an enhanced user experience._
 
 **Block size** can be measured in two ways: It refers to the total **amount of data** in the block, or the **maximal computational power (gas)** each block can handle.
 
@@ -56,4 +56,4 @@ And then you have a lot of other ways of doing things… For example, Monero has
 
 In part 2, coming later this month, since we now understand the frequency of blocks and the number of transactions they can contain, we are ready to calculate transaction velocity!
 
-Our next article will cover <a href="https://medium.com/@alephium/transactions-per-second-tps-f13217a49e39" >TPS (Transactions Per Second).</a> Stay tuned on our <a href="https://twitter.com/alephium" >Twitter</a>, <a href="https://discord.gg/h7cXXy4FEY" >Discord</a>, <a href="https://t.me/Alephium_Announcement" >Telegram</a>, or <a href="https://www.reddit.com/r/Alephium/" >Reddit</a> to see it fresh off the press!
+Our next article will cover <a href="/news/post/transactions-per-second-tps-f13217a49e39" >TPS (Transactions Per Second).</a> Stay tuned on our <a href="https://twitter.com/alephium" >Twitter</a>, <a href="https://discord.gg/h7cXXy4FEY" >Discord</a>, <a href="https://t.me/Alephium_Announcement" >Telegram</a>, or <a href="https://www.reddit.com/r/Alephium/" >Reddit</a> to see it fresh off the press!

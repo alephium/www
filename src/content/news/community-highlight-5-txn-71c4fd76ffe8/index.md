@@ -7,7 +7,7 @@ featuredImage: image_54693bf29f.png
 title: 'Community Highlight #5, TxN'
 ---
 
-#### _Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’ contributions to the ecosystem, what drives them, and what they are passionate about! More episodes:_ <a href="https://medium.com/@alephium/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" ><em>#1 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-cgi-bin-c102cc106f19" ><em>#2 here</em></a>_,_ <a href="https://medium.com/@alephium/community-highlight-3-digdug-48a7ec868504" ><em>#3 here</em></a>, <a href="https://medium.com/@alephium/community-highlight-4-montail-e24fd88882a0" ><em>#4 here</em></a> _and_ <a href="https://medium.com/@alephium/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" ><em>#6 here</em></a>_._
+#### _Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’ contributions to the ecosystem, what drives them, and what they are passionate about! More episodes:_ <a href="/news/post/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" ><em>#1 here</em></a>_,_ <a href="/news/post/community-highlight-cgi-bin-c102cc106f19" ><em>#2 here</em></a>_,_ <a href="/news/post/community-highlight-3-digdug-48a7ec868504" ><em>#3 here</em></a>, <a href="/news/post/community-highlight-4-montail-e24fd88882a0" ><em>#4 here</em></a> _and_ <a href="/news/post/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" ><em>#6 here</em></a>_._
 
 **TxN is a humble person, keeping things to their essence. Even if his words are sparse, he has a unique way with them that he applies to translations from English to Vietnamese. Since very early on, he’s been the south-eastern Asian link of Alephium, representing the community through many different initiatives, both on-line and away from keyboard. This is the person we have to thank for the Vietnamese translation of the** <a href="https://github.com/alephium/desktop-wallet/blob/master/locales/vi-VN/translation.json" ><strong>Desktop Wallet UI</strong></a> **and for making sure our Vietnamese peers have a clear and user-friendly path into the community.**
 
@@ -35,7 +35,7 @@ I have made the <a href="https://github.com/alephium/desktop-wallet/blob/master/
 
 #### What makes you excited about the future of Alephium?
 
-Alephium’s team is working hard and smart on the <a href="https://medium.com/@alephium/announcing-the-leman-network-upgrade-c01a81e65f0e" >Leman Network Upgrade</a> to release the bridge and DEX. All of this is what makes me super interested.
+Alephium’s team is working hard and smart on the <a href="/news/post/announcing-the-leman-network-upgrade-c01a81e65f0e" >Leman Network Upgrade</a> to release the bridge and DEX. All of this is what makes me super interested.
 
 #### What advice do you have for people getting started with translating software?
 

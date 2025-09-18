@@ -57,7 +57,7 @@ title: Gate.io AMA with Alephium
 
 > _Alephium delivers a scalable dApp &DeFi platform that is as secure as bitcoin, as programmable as Ethereum while keeping decentralization & trustlessness as core values._
 
-> _More here :_ <a href="https://medium.com/@alephium/welcome-to-alephium-alph-48dfb72aa458"  rel="noopener nofollow ugc"><em>https://medium.com/@alephium/welcome-to-alephium-alph-48dfb72aa458</em></a>
+> _More here :_ <a href="/news/post/welcome-to-alephium-alph-48dfb72aa458"  rel="noopener nofollow ugc"><em>https://medium.com/@alephium/welcome-to-alephium-alph-48dfb72aa458</em></a>
 
 > _& here_ <a href="https://hackernoon.com/what-is-sharding-and-utxo-scaling-for-blockchain" ><em>https://hackernoon.com/what-is-sharding-and-utxo-scaling-for-blockchain</em></a>
 
@@ -75,7 +75,7 @@ title: Gate.io AMA with Alephium
 
 > _The rest of the tokens (86%) will be used for mining rewards and ensure the processing of transactions on the Alephium blockchain over the next 80 years._
 
-> _Read more on our tokenomics here:_ <a href="https://medium.com/@alephium/tokenomics-of-alephium-61d59b51029c"  rel="noopener nofollow ugc"><em>https://medium.com/@alephium/tokenomics-of-alephium-61d59b51029c</em></a>
+> _Read more on our tokenomics here:_ <a href="/news/post/tokenomics-of-alephium-61d59b51029c"  rel="noopener nofollow ugc"><em>https://medium.com/@alephium/tokenomics-of-alephium-61d59b51029c</em></a>
 
 **tomrodg / Gateio**
 
@@ -105,7 +105,7 @@ title: Gate.io AMA with Alephium
 
 > **_Marketing & awareness 🗣_** _We keep pushing for qualified awareness, organic growth and community development._
 
-> _Read more about it here:_ <a href="https://medium.com/@alephium/alephium-q1-project-update-50f4a7b354b0"  rel="noopener nofollow ugc"><em>https://medium.com/@alephium/alephium-q1-project-update-50f4a7b354b0</em></a>
+> _Read more about it here:_ <a href="/news/post/alephium-q1-project-update-50f4a7b354b0"  rel="noopener nofollow ugc"><em>https://medium.com/@alephium/alephium-q1-project-update-50f4a7b354b0</em></a>
 
 **tomrodg / Gateio**
 
@@ -165,7 +165,7 @@ title: Gate.io AMA with Alephium
 > Medium :_ <a href="https://medium.com/@alephium"  rel="noopener nofollow ugc"><em>https://medium.com/@alephium</em></a>_  
 > Github:_ <a href="https://github.com/alephium" ><em>https://github.com/alephium</em></a>
 
-> _For revenues, we started a community reward program in December 2021 you can read more about it here:_ <a href="https://medium.com/@alephium/introducing-community-rewards-f4638bbf14bf"  rel="noopener nofollow ugc"><em>https://medium.com/@alephium/introducing-community-rewards-f4638bbf14bf</em></a> _We are also looking into giving grants to interesting dApps projects. Of course, mining will also bring you reward._
+> _For revenues, we started a community reward program in December 2021 you can read more about it here:_ <a href="/news/post/introducing-community-rewards-f4638bbf14bf"  rel="noopener nofollow ugc"><em>https://medium.com/@alephium/introducing-community-rewards-f4638bbf14bf</em></a> _We are also looking into giving grants to interesting dApps projects. Of course, mining will also bring you reward._
 
 **Q: PomPayPi**
 
@@ -239,7 +239,7 @@ title: Gate.io AMA with Alephium
 
 > _We see our miners, mining pools and mining community increasing & improving every day. We see the need for our chain in this new multichain world. We see the need for DeFi on UTXO, we see the need for scaling, and we are the best positioned on those. So yes, we are confident, and hard at work!_
 
-> _Not only do we take into account community feedback, we actively solicit it, and act on it! Every day! We have a community rewards program to reward feedback, help and good ideas. See it here :_ <a href="https://medium.com/@alephium/introducing-community-rewards-f4638bbf14bf"  rel="noopener nofollow ugc"><em>https://medium.com/@alephium/introducing-community-rewards-f4638bbf14bf</em></a>
+> _Not only do we take into account community feedback, we actively solicit it, and act on it! Every day! We have a community rewards program to reward feedback, help and good ideas. See it here :_ <a href="/news/post/introducing-community-rewards-f4638bbf14bf"  rel="noopener nofollow ugc"><em>https://medium.com/@alephium/introducing-community-rewards-f4638bbf14bf</em></a>
 
 **Q: Ok Good**
 
@@ -321,7 +321,7 @@ title: Gate.io AMA with Alephium
 
 **A: Maud / Alephium**
 
-> <a href="https://medium.com/@alephium/introducing-community-rewards-f4638bbf14bf"  rel="noopener nofollow ugc"><em>https://medium.com/@alephium/introducing-community-rewards-f4638bbf14bf</em></a>
+> <a href="/news/post/introducing-community-rewards-f4638bbf14bf"  rel="noopener nofollow ugc"><em>https://medium.com/@alephium/introducing-community-rewards-f4638bbf14bf</em></a>
 
 **Q: Luffy Boy**
 

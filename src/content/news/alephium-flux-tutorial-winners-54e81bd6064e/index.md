@@ -7,7 +7,7 @@ featuredImage: image_c88240f459.jpg
 title: ALEPHIUM/FLUX Tutorial Winners
 ---
 
-#### On December 1st in 2022, the community was encouraged to <a href="https://medium.com/@alephium/alephium-flux-tutorial-contest-81054caf926" >enter a contest</a> to produce the best tutorial about how to run an <a href="https://github.com/alephium/alephium/" >Alephium full node</a> on <a href="https://runonflux.io/" >FLUX</a>. The results came in and we are pleased with them.
+#### On December 1st in 2022, the community was encouraged to <a href="/news/post/alephium-flux-tutorial-contest-81054caf926" >enter a contest</a> to produce the best tutorial about how to run an <a href="https://github.com/alephium/alephium/" >Alephium full node</a> on <a href="https://runonflux.io/" >FLUX</a>. The results came in and we are pleased with them.
 
 It might seem like a trivial exercise but decentralization is not only about tools: in order to happen the skills required need to be evenly distributed. By participating the contestants have helped their peers to run their own full-node: everybody wins. A big thank you to everyone who participated.
 
@@ -53,7 +53,7 @@ Other participants will receive a small participation prize as a token of apprec
 
 ### The Process
 
-A jury of team-members from Flux and Alephium collaborated to pick the winner. The judges observed technical depth, accuracy, visual form. They also made sure the contributions adhere to <a href="https://medium.com/@alephium/alephium-flux-tutorial-contest-81054caf926#6cf2" >the rules and submissions guidelines</a> and applications were bound to the <a href="https://github.com/alephium/community/blob/master/RewardProgramRules.md#eligibility-criteria" >eligibility criterias</a>. **The winners will soon be contacted individually and asked for the necessary information to receive their prizes.**
+A jury of team-members from Flux and Alephium collaborated to pick the winner. The judges observed technical depth, accuracy, visual form. They also made sure the contributions adhere to <a href="/news/post/alephium-flux-tutorial-contest-81054caf926#6cf2" >the rules and submissions guidelines</a> and applications were bound to the <a href="https://github.com/alephium/community/blob/master/RewardProgramRules.md#eligibility-criteria" >eligibility criterias</a>. **The winners will soon be contacted individually and asked for the necessary information to receive their prizes.**
 
 ### Thank You
 

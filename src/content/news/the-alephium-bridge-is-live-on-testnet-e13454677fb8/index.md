@@ -88,7 +88,7 @@ Once on the page, click on the “connect” button. A prompt will appear, and y
 
 ![](image_2d2e9c8e57.png)
 
-You can use the <a href="https://medium.com/@alephium/alephium-launches-browser-extension-wallet-706dfeda98f5" >Extension Wallet</a> or the <a href="https://medium.com/@alephium/the-desktop-wallet-2-0-d818bc1c722b" >Desktop Wallet</a>. (the WalletConnect option is currently not supported).
+You can use the <a href="/news/post/alephium-launches-browser-extension-wallet-706dfeda98f5" >Extension Wallet</a> or the <a href="/news/post/the-desktop-wallet-2-0-d818bc1c722b" >Desktop Wallet</a>. (the WalletConnect option is currently not supported).
 
 After choosing your connection method, you can see your address below the two chains form.
 
@@ -265,7 +265,7 @@ This will send the information to your Goerli ETH Wallet. Review all information
 
 ![](image_c2cde03d94.png)
 
-There is a waiting period regarding the <a href="https://medium.com/@alephium/time-to-finality-17d64eeffd25" >time to finality</a>. It can take up to 15 minutes to finalize the transaction.
+There is a waiting period regarding the <a href="/news/post/time-to-finality-17d64eeffd25" >time to finality</a>. It can take up to 15 minutes to finalize the transaction.
 
 ![](image_0ed8c468e0.png)
 
@@ -457,7 +457,7 @@ This will send the information to your BSC Testnet Wallet. Review all informatio
 
 ![](image_30bb3501f6.png)
 
-There is a waiting period regarding the <a href="https://medium.com/@alephium/time-to-finality-17d64eeffd25" >time to finality</a>. You will see that it is faster than the 15 minutes to finalize the transaction on the Goerli ETH Testnet.
+There is a waiting period regarding the <a href="/news/post/time-to-finality-17d64eeffd25" >time to finality</a>. You will see that it is faster than the 15 minutes to finalize the transaction on the Goerli ETH Testnet.
 
 After the waiting period, you can redeem the WBNB in your Alephium wallet. Then, click on the “redeem” button.
 

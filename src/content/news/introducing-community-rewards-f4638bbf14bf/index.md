@@ -15,7 +15,7 @@ By design Alephium is public, open and decentralized. However, true decentraliza
 
 We’d like to introduce you to the first iteration of the **Alephium Community reward program**. It is composed of 3 pillars: Development Bounties, Engagement Rewards & Special “Events” rewards.
 
-Rewards are meant to be distributed at the end of each month from the <a href="https://medium.com/@alephium/tokenomics-of-alephium-61d59b51029c" >Ecosystem Development allocation</a>. Although the exact moment of each distribution may vary according to workload. The project is young and a lot has to be learned by doing, one thing that is certain is that such a program needs a certain degree of dynamic and will evolve through time. The first distribution will happen this month.
+Rewards are meant to be distributed at the end of each month from the <a href="/news/post/tokenomics-of-alephium-61d59b51029c" >Ecosystem Development allocation</a>. Although the exact moment of each distribution may vary according to workload. The project is young and a lot has to be learned by doing, one thing that is certain is that such a program needs a certain degree of dynamic and will evolve through time. The first distribution will happen this month.
 
 Some of our community’s contributions can be found in the <a href="https://github.com/alephium/awesome-alephium" >Awesome Alephium repository</a>, you are welcome to add yours!
 

@@ -35,7 +35,7 @@ We intentionally keep the core team small and agile. We have around 15 people, t
 
 **For those unfamiliar with Alephium, can you introduce the platform and explain what makes it unique in the blockchain space?**
 
-Alephium was created as an alternative, resilient, and sustainable infrastructure for decentralized applications, smart contracts, and tokens. It’s built on a UTXO model and uses Proof of Work (PoW) but with key innovations. First, our sharded chain allows us to scale to 10,000 transactions per second on layer one, while being a PoW chain. Second, we introduced Proof of Less Work, which reduces energy consumption by up to 87% without compromising security. Lastly, our <a href="https://medium.com/@alephium/an-introduction-to-the-stateful-utxo-model-8de3b0f76749" >stateful UTXO</a> model offers the flexibility of smart contracts with the security of the UTXO model, making it easier and more secure to develop on Alephium.
+Alephium was created as an alternative, resilient, and sustainable infrastructure for decentralized applications, smart contracts, and tokens. It’s built on a UTXO model and uses Proof of Work (PoW) but with key innovations. First, our sharded chain allows us to scale to 10,000 transactions per second on layer one, while being a PoW chain. Second, we introduced Proof of Less Work, which reduces energy consumption by up to 87% without compromising security. Lastly, our <a href="/news/post/an-introduction-to-the-stateful-utxo-model-8de3b0f76749" >stateful UTXO</a> model offers the flexibility of smart contracts with the security of the UTXO model, making it easier and more secure to develop on Alephium.
 
 **How does Alephium fit within the DeFi space, and what makes it particularly suited for DeFi applications?**
 

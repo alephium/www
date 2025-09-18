@@ -7,7 +7,7 @@ featuredImage: image_30dfdcb286.jpg
 title: 'Community Highlight #2, cgi-bin'
 ---
 
-#### This is episode \#2 in our series of highlights where once in a while we put the spotlight on one active member of our community. This is an opportunity for us to showcase their contributions to our ecosystem, what drives them and what they are passionate about! You can find episode <a href="https://medium.com/@alephium/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" >#1 here</a>, <a href="https://medium.com/@alephium/community-highlight-3-digdug-48a7ec868504" >#3here</a>, <a href="https://medium.com/@alephium/community-highlight-4-montail-e24fd88882a0" >#4 here</a>, <a href="https://medium.com/@alephium/community-highlight-5-txn-71c4fd76ffe8" >#5 here</a> and <a href="https://medium.com/@alephium/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" >#6 here</a>..
+#### This is episode \#2 in our series of highlights where once in a while we put the spotlight on one active member of our community. This is an opportunity for us to showcase their contributions to our ecosystem, what drives them and what they are passionate about! You can find episode <a href="/news/post/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" >#1 here</a>, <a href="/news/post/community-highlight-3-digdug-48a7ec868504" >#3here</a>, <a href="/news/post/community-highlight-4-montail-e24fd88882a0" >#4 here</a>, <a href="/news/post/community-highlight-5-txn-71c4fd76ffe8" >#5 here</a> and <a href="/news/post/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" >#6 here</a>..
 
 ---
 
@@ -55,4 +55,4 @@ For me, the open source and libre ideologies are proof that together humans can 
 
 **You can follow cgi-bin on** <a href="https://twitter.com/cg1_bin" ><strong>Twitter</strong></a> **and** <a href="https://github.com/sven-hash/" ><strong>GitHub</strong></a> **and for everyone keen on data privacy, have a look at their other project** <a href="https://nym.notrustverify.ch/" ><strong>NoTrustVerify.ch</strong></a>
 
-**Find episode** <a href="https://medium.com/@alephium/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" ><strong>#1 here,</strong></a> <a href="https://medium.com/@alephium/community-highlight-3-digdug-48a7ec868504" ><strong>#3 here</strong></a> **and** <a href="https://medium.com/@alephium/community-highlight-4-montail-e24fd88882a0" ><strong>#4 here</strong></a>.
+**Find episode** <a href="/news/post/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" ><strong>#1 here,</strong></a> <a href="/news/post/community-highlight-3-digdug-48a7ec868504" ><strong>#3 here</strong></a> **and** <a href="/news/post/community-highlight-4-montail-e24fd88882a0" ><strong>#4 here</strong></a>.

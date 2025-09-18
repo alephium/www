@@ -7,7 +7,7 @@ featuredImage: image_077fd88379.png
 title: Bridge AMA — The Alephium Bridge — part 3 — The hackathon, grants &amp; more
 ---
 
-_One month after the release of the_ <a href="https://bridge.alephium.org/#/transfer" ><em>bridge</em></a> _on mainnet, Cheng, Hongchao & Maud were interviewed by Vladimir in a Twitter space AMA. You can listen to the Twitter space itself_ <a href="https://twitter.com/i/spaces/1mrGmydQreMGy" ><em>here</em></a>_, or read on at your own pace! This article is a lightly edited version of the AMA, to improve the clarity and readability. This is part 3 of 3 and you can find part 1_ <a href="https://medium.com/@alephium/the-alephium-bridge-ama-part-1-bd6536ea9cdc" ><em>here</em></a> _and part 2_ <a href="https://medium.com/@alephium/bridge-ama-the-alephium-bridge-part-2-the-roadmap-d18e312df102" ><em>here</em></a>_._
+_One month after the release of the_ <a href="https://bridge.alephium.org/#/transfer" ><em>bridge</em></a> _on mainnet, Cheng, Hongchao & Maud were interviewed by Vladimir in a Twitter space AMA. You can listen to the Twitter space itself_ <a href="https://twitter.com/i/spaces/1mrGmydQreMGy" ><em>here</em></a>_, or read on at your own pace! This article is a lightly edited version of the AMA, to improve the clarity and readability. This is part 3 of 3 and you can find part 1_ <a href="/news/post/the-alephium-bridge-ama-part-1-bd6536ea9cdc" ><em>here</em></a> _and part 2_ <a href="/news/post/bridge-ama-the-alephium-bridge-part-2-the-roadmap-d18e312df102" ><em>here</em></a>_._
 
 ### Hackathon
 
@@ -67,7 +67,7 @@ Besides that, we continue to engage in discussions with larger exchanges. Meetin
 
 #### **Vladimir: Cheng, what made you want to create Alephium and BlockFlow? And the side question is: what were your thoughts going with the DAG structure instead of traditional blockchain?**
 
-Cheng: It’s been about six years since I conceptualized <a href="https://medium.com/@alephium/an-introduction-to-blockflow-alephiums-sharding-algorithm-bbbf318c3402" >BlockFlow</a>. The exact moment of inspiration is a bit hazy, but my motivation stemmed from following Ethereum’s sharding developments for one to two years. Eventually, I grew impatient with their progress and decided to try a simpler approach. This led me to extensive research and the discovery of the BlockFlow algorithm, which became the foundation for starting the Alephium project.
+Cheng: It’s been about six years since I conceptualized <a href="/news/post/an-introduction-to-blockflow-alephiums-sharding-algorithm-bbbf318c3402" >BlockFlow</a>. The exact moment of inspiration is a bit hazy, but my motivation stemmed from following Ethereum’s sharding developments for one to two years. Eventually, I grew impatient with their progress and decided to try a simpler approach. This led me to extensive research and the discovery of the BlockFlow algorithm, which became the foundation for starting the Alephium project.
 
 The use of a Directed Acyclic Graph (DAG) structure seemed intuitive for scaling a blockchain horizontally. DAG is a widely used data structure in computer science, not just in blockchain technology. It’s prevalent in various algorithms, and you can even find DAG structures in Bitcoin’s memory pool.
 

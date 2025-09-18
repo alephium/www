@@ -6,11 +6,11 @@ featuredImage: image_0416b8898f.jpeg
 title: Core team interview series. Episode 4
 ---
 
-**This article was updated:** <a href="https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0"  rel="nofollow">https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0</a>
+**This article was updated:** <a href="/news/post/alephium-contributors-f35eeaeaf0a0"  rel="nofollow">https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0</a>
 
 _For its team, Alephium is privileging agility and efficiency over hyper-growth. The project does stay at a human size not because it is more efficient, but because Alephium strives to be a decentralized, community-driven project. This means the project in itself is much larger than a team can ever be. Communication, trust, openness, and transparency are paramount in such a setup._
 
-_To shed some light on who we are and what we do, we decided to share a little about ourselves with the community through a small series of interviews. Read the_ <a href="https://medium.com/@alephium/core-team-interview-series-episode-1-3472f8295af6" ><em>1st</em></a>_,_ <a href="https://medium.com/@alephium/core-team-interview-series-episode-2-bec6e6908d2f" ><em>2nd</em></a>_, and_ <a href="https://medium.com/@alephium/core-team-interview-series-episode-3-64b6dacc1459" ><em>3rd part</em></a>_._
+_To shed some light on who we are and what we do, we decided to share a little about ourselves with the community through a small series of interviews. Read the_ <a href="/news/post/core-team-interview-series-episode-1-3472f8295af6" ><em>1st</em></a>_,_ <a href="/news/post/core-team-interview-series-episode-2-bec6e6908d2f" ><em>2nd</em></a>_, and_ <a href="/news/post/core-team-interview-series-episode-3-64b6dacc1459" ><em>3rd part</em></a>_._
 
 ---
 

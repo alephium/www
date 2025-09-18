@@ -7,9 +7,9 @@ featuredImage: image_c5a50dcd6b.jpeg
 title: 'Builders Highlight #3: Ayin'
 ---
 
-_Our ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience and provide real utility for the users. In the Builders Highlight series, these builders will share more about their projects, thoughts, and insights on why building on Alephium! You can find_ <a href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" ><em>#1 here</em></a> _and_ <a href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" ><em>#2 here</em></a>_._
+_Our ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience and provide real utility for the users. In the Builders Highlight series, these builders will share more about their projects, thoughts, and insights on why building on Alephium! You can find_ <a href="/news/post/builders-highlight-sezame-wallet-ddb4aeb61881" ><em>#1 here</em></a> _and_ <a href="/news/post/builders-highlight-alphpaca-nfts-99c69775f04c" ><em>#2 here</em></a>_._
 
-This episode is about <a href="http://ayin.app" >Ayin</a>, the first DEX available on Alephium Mainnet. We thank <a href="https://medium.com/@alephium/community-highlight-11-dr-jekyll-165ab9a51880" >Dr Jekyll</a> and 0dd431c8 for the nice interview!
+This episode is about <a href="http://ayin.app" >Ayin</a>, the first DEX available on Alephium Mainnet. We thank <a href="/news/post/community-highlight-11-dr-jekyll-165ab9a51880" >Dr Jekyll</a> and 0dd431c8 for the nice interview!
 
 ### **Tell us a little bit about your project. What is it, what does it do, and how does it interact with the Alephium blockchain?**
 
@@ -27,7 +27,7 @@ You can seamlessly swap between token pairs and use the Utility Token, \$AYIN, t
 
 Reading anything the team puts out, like the <a href="https://github.com/alephium/white-paper" >whitepaper</a>, is enough for me.
 
-I like the <a href="https://medium.com/@alephium/an-introduction-to-blockflow-alephiums-sharding-algorithm-bbbf318c3402" >novel approach of sharding</a> that is fully implemented already and not just promised \*\*cough ETH\*\*.
+I like the <a href="/news/post/an-introduction-to-blockflow-alephiums-sharding-algorithm-bbbf318c3402" >novel approach of sharding</a> that is fully implemented already and not just promised \*\*cough ETH\*\*.
 
 There is no “pick a chain” when doing tx, and you can seamlessly use the tech whether you are a PhD in astrophysics or Jim from down the road who just heard about Bitcoin.
 

@@ -25,7 +25,7 @@ The stack is constantly upgraded to increase performance, security, user experie
 
 ![](image_c375eb956a.png)
 
-Since the <a href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a" >Leman Upgrade</a>, all the tech stack has been updated, worked on, and optimized. The <a href="https://bridge.alephium.org/" >bridge</a> was launched, major improvements to SDK & devX have been implemented, and a lot of new features for the full node were shipped, as well as multiple dApps proof-of-concepts. More integrations, a new [Extension wallet](/wallets) &amp; multiple versions of the [mobile wallet](/wallets) & explorer have been released.
+Since the <a href="/news/post/the-leman-network-upgrade-is-live-f52c89b7dd6a" >Leman Upgrade</a>, all the tech stack has been updated, worked on, and optimized. The <a href="https://bridge.alephium.org/" >bridge</a> was launched, major improvements to SDK & devX have been implemented, and a lot of new features for the full node were shipped, as well as multiple dApps proof-of-concepts. More integrations, a new [Extension wallet](/wallets) &amp; multiple versions of the [mobile wallet](/wallets) & explorer have been released.
 
 This is Alephium’s third Network Upgrade! The first one happened on December 9th, 2021, and the second one on April 30th, 2022. Network upgrades are the sign of a healthy, active, and **consistently improving technical community.**
 
@@ -109,7 +109,7 @@ We’ve assembled here the most asked question about the Rhône Upgrade!
 
 **Q: Will the Rhone Network Upgrade change \$ALPH emission/issuance?**
 
-A: No. The Upgrade will also reduce the reward for each block mined, so the <a href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33" >current emission schedule</a> will not change.
+A: No. The Upgrade will also reduce the reward for each block mined, so the <a href="/news/post/alephium-block-rewards-72d9fb9fde33" >current emission schedule</a> will not change.
 
 **Q. Will the Rhone Upgrade Network increase the** <a href="https://x.com/alephium/status/1797311071121772903" ><strong>Transactions Per Second (TPS)</strong></a>**?**
 

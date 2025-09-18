@@ -8,7 +8,7 @@ title: AMA Session — Writen format
 
 #### All answers about the exciting new developments in Alephium’s ecosystem!
 
-On March 28th, Alephium held an <a href="https://www.youtube.com/watch?v=Gf1mDGddM2I" >AMA session</a> with the community, to answer questions about the <a href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a" >Leman Network Upgrade</a>. This medium article has some of the most relevant questions.
+On March 28th, Alephium held an <a href="https://www.youtube.com/watch?v=Gf1mDGddM2I" >AMA session</a> with the community, to answer questions about the <a href="/news/post/the-leman-network-upgrade-is-live-f52c89b7dd6a" >Leman Network Upgrade</a>. This medium article has some of the most relevant questions.
 
 ### Token Support
 
@@ -58,7 +58,7 @@ As a result, for users, there is no need to add tokens manually due to our token
 
 **Q: The Leman Network Upgrade appears to provide substantial token support to all the software within the ecosystem. Can you provide more information on what the core team and community can expect to build on top of it in the near future?**
 
-A: In the near future, Alephium has some exciting launches planned. The core dev team has been developing and testing the d<a href="https://medium.com/@alephium/dex-prototype-live-on-testnet-bac5e7d095ce" >ecentralized exchange (DEX)</a>, bridge, and <a href="https://github.com/alephium/alephium-nft" >NFT features</a> for a while. Additionally, community developers have been contributing to these efforts, which is fantastic news.
+A: In the near future, Alephium has some exciting launches planned. The core dev team has been developing and testing the d<a href="/news/post/dex-prototype-live-on-testnet-bac5e7d095ce" >ecentralized exchange (DEX)</a>, bridge, and <a href="https://github.com/alephium/alephium-nft" >NFT features</a> for a while. Additionally, community developers have been contributing to these efforts, which is fantastic news.
 
 The core devs will focus on infrastructure and prototyping the most important DeFi primitives such as oracle, stablecoin, and lending protocol. They are also exploring new use cases, such as decentralized social networks, which they believe could be a significant development. With its new Schnorr signature, the Leman upgrade has opened up exciting possibilities for projects with Bitcoin and the Nostr protocol.
 
@@ -116,7 +116,7 @@ A: If Alephium is the one bridging existing stable coins and therefore offering 
 
 A: Schnorr signatures are supported at two levels: wallet and VM.
 
-Only the <a href="https://medium.com/@alephium/alephium-launches-browser-extension-wallet-706dfeda98f5" >extension wallet</a> currently supports Schnorr signatures.   
+Only the <a href="/news/post/alephium-launches-browser-extension-wallet-706dfeda98f5" >extension wallet</a> currently supports Schnorr signatures.   
 The VM gained Schnorr support after the Leman upgrade and provides the following:
 
 - interaction with Nostr and other Schnorr-based apps

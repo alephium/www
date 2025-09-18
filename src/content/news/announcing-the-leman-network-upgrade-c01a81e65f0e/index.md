@@ -39,6 +39,6 @@ In the coming weeks, we will share more on the technical roadmap and the timelin
 
 We’re expecting to activate the Leman Upgrade on the mainnet at the beginning of 2023. Please, be aware that this might change, as we will always prioritize thorough testing and security!
 
-**Find the** <a href="https://medium.com/@alephium/the-leman-upgrade-2-232e3374abc4" ><strong>2nd part of this article here.</strong></a> **If you want to know more about it’s** <a href="https://medium.com/@alephium/the-front-end-leman-upgrade-948a98a3e2d" ><strong>impact on the frontend, head over here.</strong></a>
+**Find the** <a href="/news/post/the-leman-upgrade-2-232e3374abc4" ><strong>2nd part of this article here.</strong></a> **If you want to know more about it’s** <a href="/news/post/the-front-end-leman-upgrade-948a98a3e2d" ><strong>impact on the frontend, head over here.</strong></a>
 
 As always, you can follow the evolution of our code on <a href="https://github.com/alephium" >Github</a>, our news on <a href="https://twitter.com/alephium" >Twitter</a> & <a href="https://medium.com/@alephium" >Medium</a> or come interact with us on <a href="https://discord.com/invite/GEbcpajCJG" >Discord</a> & <a href="https://t.me/alephiumgroup" >Telegram</a>.

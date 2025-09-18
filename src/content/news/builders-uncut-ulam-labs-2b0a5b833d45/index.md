@@ -91,7 +91,7 @@ It’s a bit of a secret right now, but I’ll be building something on Alephium
 
 #### That’s exciting to hear. People are building a lot of stuff now, and that’s great. What was your impression of the first builders’ meetup in Athens?
 
-The people there were amazing. <a href="https://medium.com/@alephium/all-the-athens-meetup-presentations-f419195640ce" >Meeting different builders</a> in person gave a completely different feeling. Seeing the faces behind the projects gave a different vibe than just using the app or chatting on Discord.
+The people there were amazing. <a href="/news/post/all-the-athens-meetup-presentations-f419195640ce" >Meeting different builders</a> in person gave a completely different feeling. Seeing the faces behind the projects gave a different vibe than just using the app or chatting on Discord.
 
 ![](image_73f9605c03.jpg)
 
