@@ -9,6 +9,14 @@
   font-family: 'InterDisplay';
   font-style: normal;
   font-display: swap;
+  font-weight: 400;
+  src: url('../fonts/InterDisplay-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'InterDisplay';
+  font-style: normal;
+  font-display: swap;
   font-weight: 500;
   src: url('../fonts/InterDisplay-Medium.woff2') format('woff2');
 }
@@ -45,6 +53,12 @@
   font-family: 'Geist';
   font-weight: 100 1000;
   src: url('../fonts/Geist-Variable.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Serif';
+  font-weight: 100 1000;
+  src: url('../fonts/SourceSerif-Variable.ttf') format('truetype');
 }
 
 h2,

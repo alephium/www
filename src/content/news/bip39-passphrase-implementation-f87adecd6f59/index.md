@@ -1,0 +1,135 @@
+---
+date: 2022-08-09T14:34:19.192000Z
+description: To keep giving our users more tools to secure their ALPH, we’ve implemented
+  the BIP39 passphrase feature in the desktop wallet v1.3.0!
+spotlight: false
+featuredImage: image_962a6c58d3.jpg
+title: BIP39 Passphrase implementation
+---
+To keep giving our users more tools to secure their ALPH, we’ve implemented the BIP39 passphrase feature in the desktop wallet v1.3.0!
+
+**_DISCLAIMER:_** _THIS IS AN ADVANCED SECURITY FEATURE. YOU NEED TO BE VERY WELL ORGANIZED TO USE IT SAFELY. MOST PEOPLE PROBABLY DON’T NEED TO USE IT, AND RISK LOSING THEIR PASSPHRASE, THEREBY LOSING THEIR FUNDS._
+
+**_DISCLAIMER 2: IF YOU LOSE (OR FORGET) YOUR PASSPHRASE, YOU LOSE YOUR FUNDS PERMANENTLY._**
+
+Here you’ll find a description of the BIP39 feature **we have** [implemented in our desktop wallet,](https://github.com/alephium/desktop-wallet/releases/latest/) why it is used, a tutorial (and a video) on how to set it up, and some best practices!
+
+---
+
+## What is a “BIP39 Passphrase”?
+
+It is an optional, advanced security feature that allows you to create a new wallet by adding an additional passphrase to the 24 words of your Secret Recovery Phrase.
+
+Originating from the [39th Bitcoin Improvement Proposal (=BIP)](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki), it has become a standard for the broader crypto community. Think of it as a 25th word added to your seed (= Secret Recovery Phrase), except that you have full control over this one: it is not restricted to the dictionary words as the others are. It can be composed of all characters: A-Z, a-z, 0–9, special characters i.e. ASCII characters.
+
+The Secret Recovery Phrase of 24 words that is generated when you create a new wallet is by itself a wallet with an empty (“”) passphrase. When you add a passphrase, it creates a **different,** brand new wallet.
+
+You can therefore have one Secret Recovery Phrase with multiple passphrases to create multiple different wallets.
+
+![](image_5f122d5ae0.jpg)
+
+Three different wallets derived from the same Secret Recovery Phrase
+
+---
+
+## Why is it used?
+
+The best way to put it is [“Plausible Deniability”](https://en.wikipedia.org/wiki/Plausible_deniability). As explained by Wikipedia:
+
+> The term typically implies forethought, such as intentionally setting up the conditions for the plausible avoidance of responsibility for one’s future actions or knowledge.
+
+And here’s an excellent comic of the no less excellent [XKCD](https://xkcd.com) explaining in very few words why one might need plausible deniability in crypto:
+
+![](image_f921ac9506.jpg)
+
+XKCD 538 — [https://xkcd.com/538/](https://xkcd.com/538/)
+
+In the case of a wallet containing cryptocurrencies and/or assets, this refers to the unfortunate scenario where an attacker either gains access to your Secret Recovery Phrase or forces you to reveal your wallet password and/or your 24-word Secret Recovery Phrase (also known as the “\$5 wrench attack”).
+
+The Passphrase feature can help you secure most of your wealth as well as your physical safety by convincing the attacker that they have gained access to _the entirety_ of your funds… while in fact they have not!
+
+![](image_2738b197d4.jpg)
+
+Two wallets have been compromised (Wallets #1 and #2) but not the hidden one (Wallet #3).
+
+Let’s explore this with an example:
+
+### The setup
+
+- You are a proud owner of 10'000 ALPH.
+- You have created a “normal wallet” (no Passphrase) with the name **_Wallet \#1_**. You have transferred 100 ALPH to it.
+- You have created a “hidden wallet” called **_Wallet \#2_** with the passphrase “_letsUnlockAHiddenWallet”_. You have transferred 900 ALPH to it.
+- You have created yet another “hidden wallet” called **_Wallet \#3_** with the passphrase “_youCanNeverGuessThat!”_. You have transferred the remaining 9'000 ALPH to it.
+
+### The attack
+
+- An attacker physically threatens you (with a wrench, a gun, or any other way) to unlock **_Wallet \#1_** on your desktop, the attacker steals the 100 ALPH that your seed phrase reveals.
+- The attacker knows about the Passphrase feature and once again threatens to get your Passphrase, then you can deny that you use this feature and there will be no way for the attacker to prove whether you use it or not.
+- Nevertheless, you have one additional level of deniability by deciding to give them the passphrase to **_Wallet \#2_** and the attacker steals the 900 ALPH.
+- Convinced that they have stolen all your funds, the attacker is no longer interested in extorting you. You have successfully managed to secure your safety and most of your funds safely stored in **_Wallet \#3_** (and that can go on and on and on… as you can have an unlimited number of passphrases…).
+
+Another scenario in which it’s good to have a passphrase is if you’d leave your Secret Recovery Phrase in a bank vault or in your will. Now the backup of your seed (24 words) is more secure because it’s incomplete in any one place.
+
+You can keep your Secret Recovery Phrase in a safe at the bank, and your passphrase somewhere else. If a bank employee (or your lawyer) looks into the safe for the 24 words, now he still need to guess a complicated passphrase or find the passphrase that is stored elsewhere!
+
+---
+
+## Tutorial — How to create the wallets
+
+### The “normal wallet”
+
+![](image_6acd5c3cb8.jpg)
+
+Wallet #1, no Passphrase
+
+Open the Alephium Desktop Wallet and create a new (standard) wallet. This one is called **_Wallet \#1_**, and the password is “_myVeryStrongPassw0rd”_.
+
+You then transfer a small amount of ALPH to it. In this example, we’ll transfer 100 ALPH.
+
+(of course naming conventions, passwords & amounts are here only for illustration purposes, use your own imagination and system for all this!)
+
+### The “hidden wallet”
+
+![](image_4e2408c99e.jpg)
+
+Wallet #2, with a passphrase
+
+The next time you open your wallet, you select that you want to login to **_Wallet \#1_** and you provide your password “_myVeryStrongPassw0rd”_. BUT Instead of clicking _Login_ directly, you click on the _“Optional passphrase”_ link.
+
+Then, you enter the Passphrase “_letsUnlockAHiddenWallet”_, and then click _Login_.
+
+This gives you access to a completely new wallet (let’s call it **_Wallet \#2_**). Its balance will be 0, because it’s an entirely different wallet as **_wallet \#1_** because of the passphrase.
+
+You decide to transfer 1'000 ALPH to the **Wallet \#2**.
+
+### The other “hidden wallets”
+
+![](image_b0905c76bc.jpg)
+
+Wallet #3, with another passphrase
+
+When you logout and you try to login into your “hidden wallet” again, if you enter your chosen Passphrase wrong (for example you enter “_letsUnlockAHidden\***\*w\*\***allet_“ instead of “*letsUnlockAHidden\***\*W\*\***allet”* — notice the lower case w instead of W), you will gain access to yet another new “hidden wallet” with 0 funds.
+
+Logging out and logging in again, with the correct Passphrase this time, will give you access to your “hidden wallet” with the 1'000 ALPH in it.
+
+You can then create your **Wallet \#3** with a different passphrase which will contain the bulk of your assets.
+
+`video: https://www.youtube.com/watch?v=a1nK9pYfKcQ`
+
+---
+
+## Best practices when using a Passphrase
+
+### **You must store & remember your Passphrase verbatim and in extenso.**
+
+Changing a single character (even, for example, from lower to upper-case), will result in the generation of a completely new wallet. As a result, it is imperative to:
+
+1.  Choose a Passphrase that you can remember and enter it correctly before sending any funds to the generated wallet.
+2.  Remember it perfectly character by character.
+3.  The passphrase should be [long and strong,](https://apvhyngqeo.cloudimg.io/v7/https://allsafeit.com/wp-content/uploads/2021/07/Social-Media-Brute-Force-Password-Attacks-sq.png?w=800&amp;h=800&amp;org_if_sml=1) otherwise it may be prone to brute-force attacks by anyone aware of the seed phrase.
+
+**IF YOU LOSE OR FORGET YOUR PASSPHRASE, YOU WILL LOSE YOUR FUNDS PERMANENTLY**
+
+---
+
+In the future, we will bring the metadata storage feature so that you can label your addresses in the Passphrase-enabled wallets. Stay tuned and always keep your desktop wallet app up to date!

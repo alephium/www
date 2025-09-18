@@ -7,6 +7,7 @@ import { deviceBreakPoints } from '../../../styles/global-style'
 import { isMobile } from '../../../utils/misc'
 import Badge from '../../Badge'
 import Button from '../../Button'
+import CardText from '../../CardText'
 import CardFooterButtonContainer from '../../common/CardFooterButtonContainer'
 import TextElement from '../../customPageComponents/TextElement'
 
@@ -64,25 +65,23 @@ const HomepageNewsPopup = () => {
           }
         }}
       >
-        <CloseButton onClick={() => toggleVisibility(false)}>×</CloseButton>
-        <NewsCardContent>
-          <Badge color="palette2" style={{ marginBottom: 10 }}>
-            BREAKING NEWS 🔥
-          </Badge>
+        <CardText>
+          <Badge color="palette2">BREAKING NEWS 🔥</Badge>
           <TextElement noHeadingsMargins>
-            <h2 style={{ color: theme.palette1 }}>Alephium: Phase 2</h2>
+            <h2 style={{ color: theme.palette2 }}>Alephium: Phase 2</h2>
             <p>
               <strong>Now begins the second chapter.</strong>
               <br />
               From Scalable Infrastructure to Aligned Economics.
             </p>
           </TextElement>
-        </NewsCardContent>
+        </CardText>
         <CardFooterButtonContainer>
           <Button squared url="https://x.com/alephium/status/1958886335202435548">
             Read the article
           </Button>
         </CardFooterButtonContainer>
+        <CloseButton onClick={() => toggleVisibility(false)}>×</CloseButton>
       </NewsCard>
     </NewsCardContainer>
   )
@@ -117,11 +116,8 @@ const NewsCard = styled(motion.div)<{ border?: boolean }>`
   background-color: ${({ theme }) => colord(theme.background2).darken(0.15).alpha(0.8).toHex()};
   backdrop-filter: blur(60px) saturate(3) brightness(1.2);
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, ${({ theme }) => (theme.name === 'light' ? 0.1 : 0.3)});
-  border-radius: var(--radius-large);
-  padding: var(--spacing-3);
-  border-radius: var(--radius);
+  border-radius: var(--radius-big);
   flex-wrap: wrap;
-  gap: var(--spacing-2);
   pointer-events: auto;
 
   p {
@@ -140,11 +136,6 @@ const NewsCard = styled(motion.div)<{ border?: boolean }>`
     width: auto;
     max-width: 400px;
   }
-`
-
-const NewsCardContent = styled.div`
-  flex-direction: column;
-  flex: 1;
 `
 
 const CloseButton = styled.button`

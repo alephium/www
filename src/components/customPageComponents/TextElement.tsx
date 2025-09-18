@@ -19,6 +19,7 @@ export interface TextElementProps {
 
 const TextElement = styled.div<TextElementProps>`
   position: relative;
+
   ${({ backgroundColor }) =>
     backgroundColor &&
     css`
@@ -83,7 +84,14 @@ const TextElement = styled.div<TextElementProps>`
     line-height: 0.9;
 
     font-size: var(--fontSize-76);
-    font-weight: var(--fontWeight-semiBold);
+    font-weight: var(--fontWeight-medium);
+
+    ${({ isSmall }) =>
+      isSmall &&
+      css`
+        font-size: var(--fontSize-50);
+        line-height: 1;
+      `}
 
     + p {
       font-size: var(--fontSize-26);
@@ -98,7 +106,7 @@ const TextElement = styled.div<TextElementProps>`
     font-family: 'InterDisplay';
     font-size: var(--fontSize-50);
     margin-bottom: var(--spacing-4);
-    font-weight: var(--fontWeight-semiBold);
+    font-weight: var(--fontWeight-medium);
     color: ${({ theme }) => theme.textPrimary};
     line-height: 1;
 
@@ -120,7 +128,7 @@ const TextElement = styled.div<TextElementProps>`
 
   > h3 {
     font-family: 'InterDisplay';
-    font-size: var(--fontSize-36);
+    font-size: var(--fontSize-32);
     font-weight: var(--fontWeight-medium);
     margin-bottom: var(--spacing-2);
 
@@ -148,9 +156,9 @@ const TextElement = styled.div<TextElementProps>`
   }
 
   > h4 {
-    font-size: var(--fontSize-32);
+    font-size: var(--fontSize-26);
     line-height: var(--lineHeight-36);
-    font-weight: var(--fontWeight-semiBold);
+    font-weight: var(--fontWeight-medium);
 
     ${({ isSmall }) =>
       isSmall &&
@@ -162,7 +170,7 @@ const TextElement = styled.div<TextElementProps>`
 
   * strong {
     color: ${({ theme }) => theme.textPrimary};
-    font-weight: var(--fontWeight-semiBold);
+    font-weight: var(--fontWeight-medium);
   }
 
   > label {
@@ -175,8 +183,7 @@ const TextElement = styled.div<TextElementProps>`
 
   p,
   ul {
-    color: ${({ theme }) => theme.textSecondary};
-
+    color: ${({ theme }) => theme.textPrimaryVariation};
     font-size: var(--fontSize-22);
     font-weight: var(--fontWeight-medium);
     line-height: 1.3;
@@ -209,7 +216,6 @@ const TextElement = styled.div<TextElementProps>`
     }
 
     &:first-child {
-      margin-top: 0;
       padding-top: 0;
     }
   }
@@ -226,7 +232,7 @@ const TextElement = styled.div<TextElementProps>`
 
   /* Buttons */
   > a {
-    margin-top: var(--spacing-2);
+    margin-top: var(--spacing-4);
 
     & + a {
       margin-left: var(--spacing-2);
@@ -255,11 +261,15 @@ const TextElement = styled.div<TextElementProps>`
         position: absolute;
         left: 0;
         top: 0;
-        line-height: 1.3; /* Align the dash with text */
+        line-height: 150%; /* Align the dash with text */
       }
 
       > span {
         display: block;
+      }
+
+      > p {
+        margin-bottom: 0;
       }
     }
   }

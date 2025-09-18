@@ -1,0 +1,27 @@
+# local_backend: true # Enable when working locally
+
+backend:
+  name: github
+  repo: alephium/www
+  branch: master
+  squash_merges: true
+
+publish_mode: editorial_workflow
+
+media_folder: 'src/images/uploads'
+
+collections:
+  - name: 'posts'
+    label: 'Posts'
+    folder: 'src/content/news'
+    create: true
+    path: '{{slug}}/index'
+    media_folder: ''
+    public_folder: ''
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Spotlight', name: 'spotlight', widget: 'boolean' }
+      - { label: 'Featured Image', name: 'featuredImage', widget: 'image' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
