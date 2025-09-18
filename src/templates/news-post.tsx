@@ -25,7 +25,7 @@ const NewsPostTemplate = (props: PageProps<Queries.NewsPostBySlugQuery>) => {
           <SubpageSection narrow noTopPadding>
             <BackToHome>
               <span>← </span>
-              <BackButton onClick={() => window.history.back()}>Back to all news</BackButton>
+              <BackLink to="/news">Back to all news</BackLink>
             </BackToHome>
 
             <SectionDivider />
@@ -142,15 +142,11 @@ const StyledGatsbyLink = styled(Link)`
   color: ${({ theme }) => theme.textPrimary};
 `
 
-const BackButton = styled.button`
-  background: none;
-  border: none;
+const BackLink = styled(Link)`
   color: ${({ theme }) => theme.textPrimary};
-  cursor: pointer;
+  text-decoration: underline;
   font-size: inherit;
   font-family: inherit;
-  padding: 0;
-  text-decoration: underline;
 
   &:hover {
     opacity: 0.8;

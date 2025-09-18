@@ -12,6 +12,7 @@ import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import Search from '../components/Search'
 import SimpleLink from '../components/SimpleLink'
 import SimpleLoader from '../components/SimpleLoader'
+import useWindowScrollRestoration from '../hooks/useWindowScrollRestoration'
 
 export const query = graphql`
   query NewsPosts {
@@ -69,6 +70,7 @@ let visibleCount = 9
 
 const CustomPage = (props: PageProps) => {
   const data = useStaticQuery<Queries.NewsPostsQuery>(query)
+  useWindowScrollRestoration({ key: 'news-page' })
 
   const [searchQuery, setSearchQuery] = useState('')
   const [isLoading, setIsLoading] = useState(false)
@@ -161,7 +163,9 @@ const CustomPage = (props: PageProps) => {
 
 // TODO: Extract to separate file if used in other places
 interface NewsCardProps {
-  post: Queries.NewsPostsQuery['allMarkdownRemark']['nodes'][number]
+  post:
+    | Queries.NewsPostsQuery['spotlightPosts']['nodes'][number]
+    | Queries.NewsPostsQuery['remainingPosts']['nodes'][number]
 }
 
 const NewsCard = ({ post }: NewsCardProps) => {
