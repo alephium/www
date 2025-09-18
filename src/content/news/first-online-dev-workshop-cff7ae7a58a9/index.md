@@ -5,24 +5,21 @@ spotlight: false
 featuredImage: image_720f550b88.png
 title: First Online Dev Workshop!
 ---
+“Using the SDK to write a simple dApp” with [@h0ngcha0](https://github.com/h0ngcha0) & [@polarker](https://github.com/polarker)
 
-#### “Using the SDK to write a simple dApp” with [@h0ngcha0](https://github.com/h0ngcha0) & [@polarker](https://github.com/polarker)
+_When?_ Saturday, July 15th — 3PM to 4PM-ish _Where?_ [meet.google.com/fqi-uwpq-aio](http://meet.google.com/fqi-uwpq-aio) _Who?_ [@h0ngcha0](https://github.com/h0ngcha0) & [@polarker](https://github.com/polarker)
 
-#### _When?_ Saturday, July 15th — 3PM to 4PM-ish _Where?_ [meet.google.com/fqi-uwpq-aio](http://meet.google.com/fqi-uwpq-aio) _Who?_ [@h0ngcha0](https://github.com/h0ngcha0) & [@polarker](https://github.com/polarker)
+This is a workshop for developers looking to dive into [RALPH](https://docs.alephium.org/ralph/getting-started/) and how to get started writing code in production on Alephium.
 
-> This is a workshop for developers looking to dive into [RALPH](https://docs.alephium.org/ralph/getting-started/) and how to get started writing code in production on Alephium.
+Are you:
 
-> Are you:
+- 🛠️ Interested in building dApps?  
+- 🔥 Have an idea for a service?  
+- 👨‍💻 Like to get your hands dirty?
 
-> 🛠️ Interested in building dApps?  
-> 🔥 Have an idea for a service?  
-> 👨‍💻 Like to get your hands dirty?
+Then this is for you!
 
-> Then this is for you!
-
----
-
-### Workshop Agenda
+## Workshop Agenda
 
 - Implement a token faucet smart contract
 - Using CLI tool to build and deploy the smart contract locally
@@ -31,16 +28,15 @@ title: First Online Dev Workshop!
 - Deploy smart contracts to testnet
 - (Bonus) Smart contract testing using SDK
 
----
-
-### Dev environment to setup before the workshop
+## Dev environment to setup before the workshop
 
 - Install node and yarn
 - Install docker & docker-compose
 - Clone [https://github.com/alephium/alephium-stack](https://github.com/alephium/alephium-stack) repo and able to run _make start-devnet_ to get full node and explorer up and running
-- <span id="43d0">Install extension wallet  
-  Chrome: [https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj](https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj)  
-  Firefox: [https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/](https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/) — Create an account for devnet</span>
+- Install extension wallet  
+   - [Chrome](https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj)
+   - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/)
+- Create an account for devnet
 
 [Set up a reminder here on Discord!](https://discord.gg/eccjKX5g?event=1128346091822264413)
 

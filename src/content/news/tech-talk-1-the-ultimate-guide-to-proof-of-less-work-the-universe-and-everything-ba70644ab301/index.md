@@ -6,12 +6,11 @@ featuredImage: image_a8ea38700f.png
 title: 'TECH TALK #1 — The Ultimate guide to Proof-of-Less-Work, the universe and
   everything…'
 ---
-
-#### A discussion with Cheng Wang, inventor of PoLW and founder of Alephium
+A discussion with Cheng Wang, inventor of PoLW and founder of Alephium
 
 > This is the first of a series of interviews on the technical innovations brought to the world by Alephium. The discussion was conducted in February 2022, in a virtual format in presence of most of the Alephium team who contributed to the questions and ensuing exchange. The following has been edited for clarity, concision and optimized for readability. It’s been followed by an AMA you can find as a [video](https://youtu.be/Oi4AsqVY0YA) or in [text](/news/post/tech-talk-1-proof-of-less-work-ama-3d5afbf78c71)!
 
-### **ORIGINS**
+## **ORIGINS**
 
 **Vladimir Moshnyager: Hi** [Cheng](https://twitter.com/wachmc)**, before diving deep in the Proof-of-Less-work consensus mechanism, which is the main topic of our discussion today, I’d like a bit of context, and start at the beginning. The start of your itinerary, and of the ideas which would end up in your creation: when did you get into crypto at all?**
 
@@ -36,7 +35,7 @@ I was a researcher there for almost three years and I wrote a paper on linear-ti
 
 ---
 
-### **WHAT IS PoLW AND HOW DOES IT WORK**
+## **WHAT IS PoLW AND HOW DOES IT WORK**
 
 **Let’s dive into Proof-of-Less-Work (which we’ll call PoLW from now on). How did you get to the idea of PoLW? When was it conceived and what it is?**
 
@@ -131,7 +130,7 @@ _In terms of attacks,_ PoS has an inherent advantage in having teams and people 
 
 ---
 
-### **ABOUT MINING REWARD, FINALITY, ASICS & OTHER DISTINGUISHED TOPICS**
+## **ABOUT MINING REWARD, FINALITY, ASICS & OTHER DISTINGUISHED TOPICS**
 
 **We’ve talked a lot about the consensus mechanism here, but can you explain how does the block rewards mechanism work? It’s not so easy to understand either, and Alephium’s solution seems quite original!**
 
@@ -190,6 +189,6 @@ Bitcoin’s lightning network is an interesting L2 seeing a lot of growth. It’
 
 If you want to know more about PoLW, head to the subsequent AMA! In [video](https://youtu.be/Oi4AsqVY0YA) or in [text](/news/post/tech-talk-1-proof-of-less-work-ama-3d5afbf78c71)!
 
-#### **Read** [an introduction to sUTXO here](/news/post/an-introduction-to-the-stateful-utxo-model-8de3b0f76749) **and** [ALPHred the Virtual Machine here](/news/post/meet-alphred-a-virtual-machine-like-no-others-85ce86540025)**.**
+**Read** [an introduction to sUTXO here](/news/post/an-introduction-to-the-stateful-utxo-model-8de3b0f76749) **and** [ALPHred the Virtual Machine here](/news/post/meet-alphred-a-virtual-machine-like-no-others-85ce86540025)**.**
 
-> _If you have more questions on the topic, please come in our_ [Discord](https://discord.gg/JErgRBfRSB)_, on_ [Telegram](https://t.me/alephiumgroup) _or ping us on_ [Twitter](https://twitter.com/alephium)_!_
+_If you have more questions on the topic, please come in our_ [Discord](https://discord.gg/JErgRBfRSB)_, on_ [Telegram](https://t.me/alephiumgroup) _or ping us on_ [Twitter](https://twitter.com/alephium)_!_

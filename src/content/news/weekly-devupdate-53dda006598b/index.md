@@ -5,50 +5,49 @@ spotlight: false
 featuredImage: image_a2c24405e4.png
 title: 'Weekly #DevUpdate'
 ---
-
-#### Week 34 Milestones & progress on dev on Alephium!
+Week 34 Milestones & progress on dev on Alephium!
 
 🎇 Multisig Toolkit got its final details; Mobile wallet development is going strong, and the UI/UX Twitter Space with Swissborg & [lace.io](https://www.lace.io/) was a blast!
 
-### Backend Team Updates
+## Backend Team Updates
 
-#### Full Node Adjustments
+### Full Node Adjustments
 
 The `useAssetsInContract` function signature has been removed from the Full Node for streamlining purposes, simplifying the function call processes for developers.
 
-#### Software Development Kit (SDK)
+### Software Development Kit (SDK)
 
 Several important changes have been made to the SDK. A new interface called `INFTCollectionWithRoyalty` has been introduced to better handle royalties in NFT transactions. Additionally, a bug that incorrectly displayed the wallet as connected even after disconnection has been fixed. The SDK now also includes an auto-disconnect feature when users switch networks in decentralized applications.
 
-#### NFT Marketplace
+### NFT Marketplace
 
 User Interface (UI) improvements have been made based on customer feedback. Additional features have been implemented, including more flexible royalty support options for NFT transactions.
 
 ---
 
-### Frontend Team Updates
+## Frontend Team Updates
 
-#### Mobile Wallet
+### Mobile Wallet
 
 Several improvements have been made to the mobile wallet, including a complete overhaul of modals and progress on WalletConnect integration. Layout components have also been refactored, and a new architecture has been adopted.
 
-#### Desktop Wallet
+### Desktop Wallet
 
 The Desktop Wallet now supports signing of unsigned transactions, adding another layer of security for users. Version 2.1.5 has been released, incorporating these new features.
 
-#### Explorer
+### Explorer
 
 The display of total amounts on transaction pages has been enhanced for better clarity. Ongoing work includes efforts to make the interface adaptable to various operating systems’ themes and to offer multi-language support.
 
 ---
 
-### Marketing and Content Team Update
+## Marketing and Content Team Update
 
 Preparations for Developer Workshop \#2 and TechTalk in September are in progress. Revisions to the Ambassador Program and updates to tokenomics, FAQ, and welcome documents too.
 
 Putting the Final touches to Zealy, and preparation for a video summarizing Alephium in 5 minutes as well as recap of the UI/UX Twitter Space event with @swissborg and @lace_io. Thanks to [@Ronnie_best_er](https://twitter.com/Ronnie_best_er), [@MathieuHJ](https://twitter.com/MathieuHJ), and [@mika_pote](https://twitter.com/mika_pote) for [this awesome discussion](https://youtu.be/VK4QtY_q1ek?si=Gialxp0F1_Z5f-0o)!
 
-### Community update from @Discord
+## Community update from @Discord
 
 - Buzzing due to a release by [@VLADxVLADxVLAD](https://twitter.com/VLADxVLADxVLAD).
 - Discussion on Minerstat bug affecting hashrate reporting.
@@ -57,13 +56,9 @@ Putting the Final touches to Zealy, and preparation for a video summarizing Alep
 
 Check all progress on [GitHub](https://github.com/alephium)!
 
-<figure id="8ae9" class="graf graf--figure graf--iframe graf-after--p">
-<blockquote>
-[](https://twitter.com/alephium/status/1695081967006441623)
-</blockquote>
-</figure>
+https://twitter.com/alephium/status/1695081967006441623
 
-#### Discord conversations past week
+### Discord conversations past week
 
 - Discord shockwave due to Vlad’s release
 - Minerstat bug with hashrate reporting

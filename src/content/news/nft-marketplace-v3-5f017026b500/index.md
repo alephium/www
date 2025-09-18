@@ -6,8 +6,7 @@ spotlight: false
 featuredImage: image_4e8b3c6145.png
 title: NFT Marketplace v3
 ---
-
-#### We launched the NFT marketplace as a prototype to show what can be done with NFTs on Alephium. We received a lot of feedback from the community. With the v3 we are improving the whole experience and adding a new, exciting feature: the Flow!
+We launched the NFT marketplace as a prototype to show what can be done with NFTs on Alephium. We received a lot of feedback from the community. With the v3 we are improving the whole experience and adding a new, exciting feature: the Flow!
 
 Access it here: [https://testnet.nft.alephium.org/](https://testnet.nft.alephium.org/)
 

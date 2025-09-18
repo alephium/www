@@ -7,15 +7,15 @@ featuredImage: image_da60a03774.jpg
 title: 'Community Highlight #4, MontaiL'
 ---
 
-#### Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’ contributions to the ecosystem, what drives them and what they are passionate about! More episodes: [#1 here](/news/post/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692)_,_ [#2 here](/news/post/community-highlight-cgi-bin-c102cc106f19)_,_ [#3 here](/news/post/community-highlight-3-digdug-48a7ec868504)_,_ [#5 here](/news/post/community-highlight-5-txn-71c4fd76ffe8) and [#6 here](/news/post/community-highlight-6-waldi-zkit-beats-37af1f6df3b8).
+**Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’ contributions to the ecosystem, what drives them and what they are passionate about! More episodes: [#1 here](/news/post/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692)_,_ [#2 here](/news/post/community-highlight-cgi-bin-c102cc106f19)_,_ [#3 here](/news/post/community-highlight-3-digdug-48a7ec868504)_,_ [#5 here](/news/post/community-highlight-5-txn-71c4fd76ffe8) and [#6 here](/news/post/community-highlight-6-waldi-zkit-beats-37af1f6df3b8).**
 
-**This young blood is a creative and engaged Alephium OG. Joining the [Discord](/discord) **early on, he quickly made himself a comfortable spot in the community with a friendly can-do attitude, a steady supply of home-cooked memes and by helping many peers getting familiar with Alephium. Please give a warm applause for MontaiL!**
+**This young blood is a creative and engaged Alephium OG. Joining the [Discord](/discord) early on, he quickly made himself a comfortable spot in the community with a friendly can-do attitude, a steady supply of home-cooked memes and by helping many peers getting familiar with Alephium. Please give a warm applause for MontaiL!**
 
-#### What can we call you and where should we picture you?
+## What can we call you and where should we picture you?
 
 You can call me Monty or MontaiL. Where I am located geographically is not of importance in this space. But imagine a nerd dealing with life in a dying city. Where everyday less and less people reside. Those truly interested will find me.
 
-#### Tell us about yourself/your persona.
+## Tell us about yourself/your persona.
 
 Oh me, yes. I am a 21 year old Internet Adventurer. I have experimented with all sorts of hobbies and projects. I have gone from Hosting Minecraft Discord and other Groups/Servers, to creating virtual content for a game called VRChat, dabbling with Game Making, Content Creation, Video Editing and even Art.
 
@@ -25,13 +25,13 @@ I am a big Japanese Cars Guy. I can name you almost every car there is. And I dr
 
 I am a big nerd, while by my profile picture most can tell that I am a furry. Well _was_ a furry, until it became popular and ultimately ruined. I remained but a survivor of what once was a community. But I made the art and it does represent me.
 
-#### How did you find out about Alephium?
+## How did you find out about Alephium?
 
 Not too long ago, on a fateful evening, a person whom I’ve met in real life introduced me to Alephium. At first I was skeptical of it but then I looked deeper into it and I was already hooked.
 
 I am actually surprised by how unpopular and under the radar this project has remained so far. I do speculate that it might be because of the recent Bear Market. So hopefully with the end of this bear-cycle we will see some attention flow into Alephium, bringing us some new comrades.
 
-#### What excites you about Alephium?
+## What excites you about Alephium?
 
 Oh man, while I may not be fully aware of what’s coming, I do feel anxiety from the news revealed so far. [Leman upgrade,](/news/post/announcing-the-leman-network-upgrade-c01a81e65f0e) [Bridge,](https://github.com/alephium/wormhole-fork) CEX, [DEXes](https://github.com/alephium/alephium-web3) it’s the buzzwords most crypto lovers love to read. Including me.
 
@@ -39,7 +39,7 @@ But what I am concerned about is if the project suddenly gained a ton of tractio
 
 I do have high hopes for the Alephium ecosystem. With the sleek designs I’ve seen so far I have been very impressed. Most projects prefer to make simple but functional UI. But on Alephium it is just mind boggling! Because it has both a very [endearing and eye-pleasing UI](/news/post/the-front-end-leman-upgrade-948a98a3e2d) and the Functionality in one package. I think in the future this functionality and design will attract more people due to how easy it makes it to work with it. And I hope the ecosystem follows the same direction.
 
-#### How do you contribute to the Alephium ecosystem?
+## How do you contribute to the Alephium ecosystem?
 
 I am usually around cheerleading, and doing a bit of newbie trolling. I find it very fun to make a little fun of the people who have not spent the time to sit down and read but instead come asking what the contract address for Alephium is, haha!
 
@@ -49,7 +49,7 @@ I was around when the [DiffBomb](/news/post/diffbomb-day-postmortem-334b3fdccc5)
 
 I have also done a creative thing or two, like 3D Renders and animations. Other than that, I stick around and poke my nose here and there. I do have a different humor than most community members, which could be because of our age differences coming from different generations etc. Humor is subjective.
 
-#### What makes you excited about the future of Alephium?
+## What makes you excited about the future of Alephium?
 
 I am very curious to see to what extent Alephium will grow. Will it survive the Bear Market? What will happen once CBDCs and Digital IDs roll around? Will crypto get regulated so badly that it will have to go Lunarpunk? Will the entire space make it out of these terrible times of recession, financial crises and even war?
 
@@ -57,7 +57,7 @@ Even through all of that I am hopeful to see Alephium grow an ecosystem of funct
 
 Good Luck team and I will be here for a while! I hope you are ready for more of my humor.
 
-#### How do you envision the interactions between blockchain tech and tools for building digital worlds in the future?
+## How do you envision the interactions between blockchain tech and tools for building digital worlds in the future?
 
 This is complicated. First we need to understand some things: people want convenience, people don’t like spending money and they don’t like trying new things. We have seen it happen over and over again with the Play-to-earn Metaverse projects: they get a boom, they gain a lot of players, the players run the project dry and then they leave. But while the Play-to-earn model may not work anymore, I believe there is a way to connect both blockchain tech and the tools for building digital media.
 
@@ -71,8 +71,8 @@ If a Digital World wants to connect the Real World with blockchain, it needs to 
 
 And it’s important to remember this quote. “PEOPLE DO NOT LIKE SPENDING MONEY”
 
-#### This concludes \#4 of the community highlights. Thank you MontaiL for staying true to yourself and bringing your quirky humor to the community. The future feels safer with people like yourself taking part in building it!
+This concludes \#4 of the community highlights. Thank you MontaiL for staying true to yourself and bringing your quirky humor to the community. The future feels safer with people like yourself taking part in building it!
 
-#### You can follow MontaiL on [Twitter](https://twitter.com/therealmontail).
+You can follow MontaiL on [Twitter](https://twitter.com/therealmontail).
 
 **We’ll be back with another episode of the community highlights in February 2023! Meanwhile you can follow Alephium on** [Github](https://github.com/alephium/)**,** [Twitter](https://twitter.com/alephium)**. Join the conversation on [Discord](/discord)**, [Telegram](https://t.me/alephiumgroup) **or** [Reddit](https://www.reddit.com/r/alephium)**.**

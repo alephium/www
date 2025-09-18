@@ -58,10 +58,10 @@ Each blockchain is responsible for processing transactions from one group to ano
 
 So as of today, you get (each (x,x) is a chain):
 
-Group 0 is: **(0,0)** — (0,1) — (0,2) — (0,3)\
-Group 1 is: **(1,1)** — (1,0) — (1,2) — (1,3)\
-Group 2 is **(2,2)** — (2,0) — (2,1) — (2,3)\
-Group 3 is **(3,3)** — (3,0) — (3,1) — (3,2)
+> Group 0 is: **(0,0)** — (0,1) — (0,2) — (0,3)\
+> Group 1 is: **(1,1)** — (1,0) — (1,2) — (1,3)\
+> Group 2 is **(2,2)** — (2,0) — (2,1) — (2,3)\
+> Group 3 is **(3,3)** — (3,0) — (3,1) — (3,2)
 
 ![](image_d0bdef3914.png)
 

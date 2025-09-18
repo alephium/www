@@ -5,8 +5,7 @@ spotlight: false
 featuredImage: image_bfb2d7bedf.jpg
 title: The Alephium Bridge
 ---
-
-#### How does it work? How to use it? About the guardians, and more…
+How does it work? How to use it? About the guardians, and more…
 
 _This article was updated to reflect the new conditions after the_ [Rhône Network Upgrade](/news/post/rh%C3%B4ne-network-upgrade-activated-cbeb298585fe)_: bridging from Alephium to Ethereum requires at least 205 blocks_ **_and_** _at least 55 minutes._
 

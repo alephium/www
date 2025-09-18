@@ -16,19 +16,19 @@ _This article follows_ [Alephium’s Tech Talk #10](https://www.youtube.com/watc
 He is a co-author of the book “[Our Precious Digital Integrity,](https://www.slatkine.com/fr/editions-slatkine/74977-book-07211052-9782832110522.html)” written with [Grégoire Barbey](https://twitter.com/GregoireBarbey), and firmly believes that crypto technology, with its emphasis on user control and public infrastructure, plays a pivotal role in shaping a responsible and human-centric digital society.  
 [Thanks to their advocacy, Digital Integrity was actually voted into law (at 94%!) in the canton of Geneva last weekend!](https://euro.dayfr.com/local/395852.html)
 
-**The Importance of Privacy in the Digital Age**
+## The Importance of Privacy in the Digital Age
 
 In the context of heavy data collection and surveillance, privacy has emerged as a fundamental human right. Individuals and organizations alike face threats to their personal data, ranging from state surveillance to data breaches by malicious actors.
 
 The [Cambridge Analytica](https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal) scandal and other high-profile data incidents have heightened public awareness regarding the vulnerability of personal information. Consequently, there is a growing consensus on the need for robust privacy solutions to empower individuals and protect their digital identities.
 
-**Understanding Mixnets and Their Role in Privacy Enhancement**
+## Understanding Mixnets and Their Role in Privacy Enhancement*
 
 [Mixnets](https://en.wikipedia.org/wiki/Mix_network), a concept rooted in the pioneering work of [David Chaum](https://en.wikipedia.org/wiki/David_Chaum) in the 1980s, are a crucial tool for enhancing privacy in digital communications. At their core, mixnets are decentralized networks that employ a series of anonymizing relays to obfuscate the origin and destination of data packets.
 
 By shuffling and encrypting packets, mixnets introduce significant noise, making it nearly impossible for adversaries to trace and monitor communication patterns. Mixnets provide a powerful defense against traffic analysis and enable individuals to communicate privately and anonymously.
 
-**The Technical Framework of NYM’s Mixnet Solution**
+## The Technical Framework of NYM’s Mixnet Solution
 
 ![](image_32222cf239.jpg)
 
@@ -36,7 +36,7 @@ NYM’s mixnet solution employs a sophisticated technical framework to maximize 
 
 One key advantage of NYM’s approach is the scalability potential of mixnets. Unlike traditional anonymization methods that can slow down network throughput as the number of participants increases, mixnets exhibit linear scalability. As the network expands, adding additional mix nodes enables higher throughput without compromising privacy.
 
-**Alephium + NYM: An Opportunity for Increased Privacy in Transactions**
+## Alephium + NYM: An Opportunity for Increased Privacy in Transactions
 
 ![](image_9cb6c26956.jpg)
 
@@ -48,11 +48,11 @@ In the same way, crypto wallets can also take advantage of NYM mixnets when send
 
 [(and guess who’s considering adding this as a feature?)](https://github.com/alephium/desktop-wallet/issues/496)
 
-**The Road Ahead: Privacy, Democracy, and Technological Progress**
+## The Road Ahead: Privacy, Democracy, and Technological Progress
 
 Privacy is not a matter of personal preference but a basic item of democracy and human rights. Projects like NYM are at the forefront of empowering individuals with greater control over their personal data and online interactions, ushering in a more private, secure, and democratic network.
 
-### Q&A Session
+## Q&A Session
 
 _After the NYM project presentation, a Q&A session was held, and a few of these questions are listed below. You can watch all of them in the_ [TT#10 video](https://www.youtube.com/watch?v=pImANSvO6WQ)_. (the Q&A has been edited (& chatGPT’d) for concision and reading pleasure)_
 

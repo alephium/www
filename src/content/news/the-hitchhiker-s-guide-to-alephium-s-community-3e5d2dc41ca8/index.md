@@ -9,11 +9,11 @@ title: The Hitchhiker’s guide to Alephium’s community
 
 _We are thrilled to see many new faces in our community! Alephium community channels have recently grown tremendously, and we thought it might be a good time to write a little community guide to ensure everyone knows where to find the informations they need & navigate our various channels._
 
-### → Discord
+### Discord
 
 Alephium’s Discord is the comprehensive community hub with channels for everyone from developers, miners, traders, regular lounge discussion and various language groups. [Alephium’s Discord](/discord) is the main forum for you to engage with the community!
 
-### → Telegram channels
+### Telegram channels
 
 Our global Telegram group makes it easy to stay updated or enjoying casual conversations! We have terrific community mods in there, and they are crazy helpful for newcomers & tech-savvy users alike.
 
@@ -47,7 +47,7 @@ Indonesian 🇮🇩 — [https://t.me/AlephiumID](https://t.me/AlephiumID)
 French 🇫🇷 — [https://t.me/Alephiumfr](https://t.me/Alephiumfr)  
 Poland 🇵🇱 — [https://t.me/alephiumPL](https://t.me/alephiumPL)
 
-### → Twitter
+### Twitter
 
 Twitter is the center of our public life, where real-time updates, long-form writings, public interactions and announcements happen every day!
 
@@ -55,7 +55,7 @@ Twitter is the center of our public life, where real-time updates, long-form wri
 
 **Our friends often translate our posts there too! In** [French](https://twitter.com/Alephiumfr)**,** [German](https://twitter.com/Alephiumde) **&** [Ukrainian](https://twitter.com/Alephiumua) **(thanks to** [Waldi](/news/post/community-highlight-6-waldi-zkit-beats-37af1f6df3b8?source=your_stories_page-------------------------------------) **&** [Oheka](/news/post/community-highlight-7-oheka-13d8b4ae025e?source=your_stories_page-------------------------------------)**)**
 
-### → Articles & updates
+### Articles & updates
 
 For those who like reading, our Medium provides updates on Alephium’s technology, wallets, roadmap, partnerships, and community campaigns. With the community’s help they are available in multiple languages, and are a resource for in-depth understanding
 
@@ -63,16 +63,16 @@ For those who like reading, our Medium provides updates on Alephium’s technolo
 
 And here are the community-led translations in [Indonesian](https://medium.com/@Alph-Indonesia) (thank you [Chris](/news/post/community-highlight-15-yulius-aka-chris45-036ae41a8037)!), [French](https://medium.com/alephiumfr) (thank you [NTV](/news/post/builders-highlight-4-no-trust-verify-9ea495ca826f)!) & [Ukrainian](https://discord.com/channels/747741246667227157/747998352842686545/1190685377321771078) by [Nazar](https://twitter.com/ustyianskyi).
 
-### → Reddit & YouTube
+### Reddit & YouTube
 
 Reddit has a very lively crypto community! Alephium is present there, with a small but active community. Our Youtube channel is where you’ll find tutorials, podcasts, dev workshops, recorded twitter spaces & AMAs!
 
 For example find the tutorial on how to use the bridge on [Youtube](https://www.youtube.com/watch?v=xoYVzbwBAjg) (as a video), and on [Medium](/news/post/alephiumalephium-bridge-the-tutorial-28e7b92b339a?source=user_profile---------7----------------------------) (as text).
 
-**Alephium** [Reddit](https://www.reddit.com/r/Alephium/)\*\*  
-\*\*[Alephium YouTube](https://www.youtube.com/@alephium)
+- [Alephium Reddit](https://www.reddit.com/r/Alephium/)
+- [Alephium YouTube](https://www.youtube.com/@alephium)
 
-### → For devs
+### For devs
 
 Github is the beating heart of Alephium’s developement! As everything is open-source, you can follow the development of any component of the protocol. And contribute too!
 
@@ -80,7 +80,7 @@ The docs give you access to the documentation produced by the team, on a wide ra
 
 [GitHub](https://github.com/alephium) **//** [Docs](https://docs.alephium.org)
 
-### → Our website + other Resources
+### Our website + other Resources
 
 On top of being beautifully designed by our front-end contributors, it’s an easy door to everything and everywhere! In particular you’ll find links to all [wallets](/wallets), the [bridge](https://bridge.alephium.org/), the [bridge explorer](https://explorer.bridge.alephium.org/), the [roadmap](/roadmap), and more!
 
@@ -88,7 +88,7 @@ You can find all dApps on [Alph.land](http://Alph.land)!
 
 The rich list, & many other useful things can be found on [Awesome Alephium](https://github.com/alephium/awesome-alephium).
 
-### → Who is in the channels?
+### Who is in the channels?
 
 The Alephium community spans the world. Even if they care about different things each one plays an important role for the success of the Alephium mission: **A scalable, secure and Decentralized Blockchain for All.**
 

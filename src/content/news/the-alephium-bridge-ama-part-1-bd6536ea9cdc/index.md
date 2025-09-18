@@ -11,11 +11,11 @@ _One month after the release of the_ [bridge](https://bridge.alephium.org/#/tran
 
 _You can listen to the Twitter space itself_ [here](https://twitter.com/i/spaces/1mrGmydQreMGy)_, or read on at your own pace! This article is a lightly edited version of the AMA, to improve the clarity and readability. This is part 1 of 3._
 
-**Intro & bridge stats**
+## Intro & bridge stats
 
 Over the past month (as of 12.7.23), we have observed a significant uptick in activity. This includes approximately 5,000 new live addresses and nearly 4,000 [wallet](/wallets) activations across both desktop and mobile platforms, excluding extensions. The statistics from [Ayin](https://ayin.app/) (our native DEX) indicate a trading volume exceeding \$3 million, over thousands of transactions. Additionally, the number [of $ALPH Ethereum holders](https://etherscan.io/token/0x590f820444fa3638e022776752c5eef34e2f89a6) is approaching a thousand. There has been almost 600 bridge transfers, amounting to a total value of \$2.5 million. The Total Value Locked (TVL) on the [Alephium Bridge](https://bridge.alephium.org/#/transfer), as reported by [DefiLlama](https://defillama.com/protocol/alephium-bridge), currently stands at \$1.8 million.
 
-**The Alephium Bridge**
+## The Alephium Bridge
 
 **Vladimir: Can you tell us a bit about the story about the bridge? How long did it take to get there? How did you decide to go for a warm whole fork? What was the process with the guardians?**
 

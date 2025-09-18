@@ -5,12 +5,11 @@ spotlight: true
 featuredImage: image_f92c0445fe.jpg
 title: 'Alephium #1 Hackathon — Pioneers!'
 ---
-
-#### Applications are open, [apply now](https://docs.google.com/forms/d/e/1FAIpQLSdDsa1CwJeg-fxrWb1gVWefP4iJoNoZwNe0PNwk94GqmcMkHg/viewform?usp=sharing)!
+Applications are open, [apply now](https://docs.google.com/forms/d/e/1FAIpQLSdDsa1CwJeg-fxrWb1gVWefP4iJoNoZwNe0PNwk94GqmcMkHg/viewform?usp=sharing)!
 
 _TL;DR — The Alephium hackathon will take place from 12th to 26th February 2024. With a prize pool of up to_ **_\$70,000 in ALPH_** _tokens, sponsored by Alephium,_ [Bitmain](https://www.bitmain.com/)_, the_ [Blockflow Alliance DAO](https://twitter.com/Blockflow_DAO)_,_ [Cetacean Capital](https://cetacean.capital/) _&_ [Dappnode](https://dappnode.com/)_. It will reward teams building across 3 main categories (dApps, tooling & interoperability) as well as offering bounties for solo hackers & teams!_
 
-### When & where?
+## When & where?
 
 The hackathon will happen exclusively online, from February 12th to 26th. Main communication hub for the hackathon will be [our Discord](/discord) and you can join the hackathon channels already:
 
@@ -22,7 +21,7 @@ The hackathon will happen exclusively online, from February 12th to 26th. Main c
 
 ---
 
-### What are the Prizes?
+## What are the Prizes?
 
 The main prizes are tiered to recognize the top five submissions:
 
@@ -50,11 +49,11 @@ _Note: The distribution of prizes is subject to the discretion of the jury and m
 
 ---
 
-### What can I build?
+## What can I build?
 
 Participants can engage in one of two primary participation methods: embarking on the main quests or tackling side quests called bounties.
 
-#### **Main quests**
+### **Main quests**
 
 Participants can participate either as teams or as solo hackers and complete projects in the following categories: and complete projects in the following categories:
 
@@ -64,7 +63,7 @@ Participants can participate either as teams or as solo hackers and complete pro
 
 _Can I join with an existing project? Those who wish to start with a pre-existing project can do so, but only the progress made during the hackathon will be considered for evaluation and judging. Clear objectives will need to be set at the beginning of the hackathon to facilitate this assessment._
 
-#### **Bounties**
+### **Bounties**
 
 These are specific/smaller tasks or challenges that participants can complete for rewards. If you are a solo hacker and want to participate in the hackathon, this is the way (teams can also do bounties!).
 
@@ -118,22 +117,20 @@ _For submission, the process is the same as for main quests. Once you have chose
 
 ---
 
-### What is the Hackathon Schedule?
+## What is the Hackathon Schedule?
 
-- J̶**a̶n̶u̶a̶r̶y̶ ̶1̶9̶t̶h̶ ̶-̶ ̶**A̶n̶n̶o̶u̶n̶c̶e̶m̶e̶n̶t̶ ̶a̶n̶d̶ ̶O̶p̶e̶n̶i̶n̶g̶ ̶o̶f̶ ̶A̶p̶p̶l̶i̶c̶a̶t̶i̶o̶n̶s̶.̶
-- ̶**J̶a̶n̶u̶a̶r̶y̶ ̶3̶1̶s̶t̶ ̶-̶ ̶**O̶p̶e̶n̶i̶n̶g̶ ̶o̶f̶ ̶t̶h̶e̶ ̶s̶p̶e̶c̶i̶a̶l̶ ̶D̶i̶s̶c̶o̶r̶d̶ ̶C̶h̶a̶n̶n̶e̶l̶ ̶f̶o̶r̶ ̶t̶e̶a̶m̶ ̶f̶i̶n̶d̶i̶n̶g̶ ̶a̶n̶d̶ ̶g̶e̶n̶e̶r̶a̶l̶ ̶c̶h̶a̶t̶.̶
-- <span id="66eb">̶**F̶e̶b̶r̶u̶a̶r̶y̶ ̶1̶2̶t̶h̶ ̶-̶** ̶H̶a̶c̶k̶a̶t̶h̶o̶n̶ ̶K̶i̶c̶k̶-̶o̶f̶f̶ ̶L̶i̶v̶e̶ ̶E̶v̶e̶n̶t̶ ̶&̶ ̶O̶f̶f̶i̶c̶i̶a̶l̶ ̶s̶t̶a̶r̶t̶ ̶o̶f̶ ̶t̶h̶e̶ ̶h̶a̶c̶k̶a̶t̶h̶o̶n̶!̶ ̶  
-  ̶A̶ ̶o̶n̶e̶-̶h̶o̶u̶r̶ ̶k̶i̶c̶k̶o̶f̶f̶ ̶L̶i̶v̶e̶ ̶E̶v̶e̶n̶t̶ ̶w̶i̶t̶h̶ ̶t̶h̶e̶ ̶t̶e̶a̶m̶.̶ ̶@̶h̶0̶n̶g̶c̶h̶a̶o̶ ̶w̶i̶l̶l̶ ̶h̶e̶l̶p̶ ̶s̶e̶t̶ ̶u̶p̶ ̶y̶o̶u̶r̶ ̶d̶e̶v̶e̶l̶o̶p̶m̶e̶n̶t̶ ̶e̶n̶v̶i̶r̶o̶n̶m̶e̶n̶t̶,̶ ̶@̶z̶i̶p̶p̶y̶ ̶r̶e̶c̶a̶p̶ ̶t̶h̶e̶ ̶p̶r̶o̶c̶e̶s̶s̶,̶ ̶@̶M̶a̶u̶d̶ ̶,̶ ̶@̶m̶i̶k̶a̶ ̶&̶ ̶@̶c̶h̶e̶n̶g̶ ̶w̶i̶l̶l̶ ̶b̶e̶ ̶t̶h̶e̶r̶e̶.̶ ̶T̶h̶i̶s̶ ̶w̶i̶l̶l̶ ̶b̶e̶ ̶f̶o̶l̶l̶o̶w̶e̶d̶ ̶b̶y̶ ̶a̶n̶ ̶o̶p̶e̶n̶ ̶o̶f̶f̶i̶c̶e̶ ̶&̶ ̶Q̶&̶A̶!̶</span>
-- <span id="ce04">̶**F̶e̶b̶r̶u̶a̶r̶y̶ ̶1̶6̶t̶h̶ ̶&̶ ̶2̶0̶t̶h̶ ̶-̶** ̶O̶p̶e̶n̶ ̶O̶f̶f̶i̶c̶e̶ ̶H̶o̶u̶r̶s̶ ̶&̶ ̶L̶i̶v̶e̶ ̶S̶u̶p̶p̶o̶r̶t̶  
-  ̶T̶h̶e̶s̶e̶ ̶o̶n̶e̶-̶h̶o̶u̶r̶ ̶s̶e̶s̶s̶i̶o̶n̶s̶ ̶w̶i̶l̶l̶ ̶a̶l̶l̶o̶w̶ ̶p̶a̶r̶t̶i̶c̶i̶p̶a̶n̶t̶s̶ ̶t̶o̶ ̶e̶n̶g̶a̶g̶e̶ ̶w̶i̶t̶h̶ ̶t̶h̶e̶ ̶c̶o̶r̶e̶ ̶c̶o̶n̶t̶r̶i̶b̶u̶t̶o̶r̶s̶ ̶a̶n̶d̶ ̶s̶e̶e̶k̶ ̶a̶s̶s̶i̶s̶t̶a̶n̶c̶e̶ ̶o̶r̶ ̶c̶l̶a̶r̶i̶f̶i̶c̶a̶t̶i̶o̶n̶ ̶o̶n̶ ̶t̶h̶e̶i̶r̶ ̶p̶r̶o̶j̶e̶c̶t̶s̶.̶</span>
-- **February 26th** — Submission deadline: All projects must be submitted by 11:59 PM CET.
-- **First Half of March** — Winners Announcement
+- January 19th: Announcement and Opening of Applications.
+- January 31st: Opening of thte special Discord channel for team finding and general chat.
+- February 12th: Hachathon Kick off Live Event & Official start of the hackathon! A one hour kickoff live event with the team. @h0ngchao will help set up your development environment, @zippy recap the process, @Maid, @mika & @cheng will b ethere. This will be followed by an open office & Q&A
+- February 16th & 20th: Open Office Hours & Live Support. These one hour sessions will allow participants to engage with the core contributors and seek assistance or clarification on their projects.
+- February 26th: Submission deadline: All projects must be submitted by 11:59 PM CET.
+- First Half of March: Winners Announcement
 
 Throughout the hackathon, the core contributors will be readily available on the Discord channels to provide assistance and guidance.
 
 ---
 
-### How can I participate?
+## How can I participate?
 
 First, you need to apply! Join by completing the form [here](https://docs.google.com/forms/d/e/1FAIpQLSdDsa1CwJeg-fxrWb1gVWefP4iJoNoZwNe0PNwk94GqmcMkHg/viewform?usp=sharing)!
 
@@ -145,7 +142,7 @@ At the end of the hackathon, the teams & individuals will need to submit their w
 
 ---
 
-### Who’s in the Jury?
+## Who’s in the Jury?
 
 We’ve assembled a knowledgeable, exigent but amicable & engaged jury. This jury will distribute the main prizes, bounties rewards & honorable mentions:
 
@@ -165,7 +162,7 @@ Partner jury — Dappnode
 
 ---
 
-### What will be the jury’s criteria?
+## What will be the jury’s criteria?
 
 Participants are encouraged to be creative and propose projects that resonate with their interests, as long as they align with Alephium’s framework and fit into one of the proposed categories.
 
@@ -179,7 +176,7 @@ Here is how the jury will evaluate your project:
 
 ---
 
-### What are the rules?
+## What are the rules?
 
 - **Age and Legal Requirements:** Participants must be at least 18 years old, or have reached the age of majority in their jurisdiction, whichever is greater. Compliance with the terms and conditions outlined [here](https://drive.google.com/file/d/1l6zPHBKYiJshTbEBB__W1a8nxOrNDfZF/view?usp=sharing) is mandatory.
 - **Adherence to Themes:** Projects should align with the hackathon’s themes and categories. Creativity is encouraged, but relevance to Alephium’s ecosystem is essential.
@@ -190,7 +187,7 @@ Participants will be required to submit their work through a form that will be c
 
 ---
 
-### What happens after the hackathon?
+## What happens after the hackathon?
 
 Participating projects can subsequently apply to Alephium’s [grant program](https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md#grants).
 
@@ -200,7 +197,7 @@ The Blockflow DAO also expressed interest in helping quality projects develop fu
 
 ---
 
-### Where do I start? Where’s the doc?
+## Where do I start? Where’s the doc?
 
 [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdDsa1CwJeg-fxrWb1gVWefP4iJoNoZwNe0PNwk94GqmcMkHg/viewform?usp=sf_link) to apply and start your project!
 
@@ -222,7 +219,7 @@ We can’t wait to be there!
 
 ---
 
-### Who are the hackathon partners & sponsors?
+## Who are the hackathon partners & sponsors?
 
 [BITMAIN](https://www.bitmain.com/) is a global leader in digital currency mining servers and is committed to creating a better digital world. With cutting-edge hash-rate efficiency technologies, they drive secure, stable hashrate infrastructure, fueling innovation in the web 3.0 era.
 

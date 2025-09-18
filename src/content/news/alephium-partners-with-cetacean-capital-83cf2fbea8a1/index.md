@@ -6,8 +6,7 @@ spotlight: false
 featuredImage: image_7f746d6c9c.jpg
 title: Alephium partners with Cetacean Capital
 ---
-
-#### _Lausanne, Switzerland,_ April 12th, 2022* — Alephium, an innovative Layer 1 blockchain announces* [Cetacean Capital](https://cetacean.capital/) _as a new strategic partner, a huge win for Alephium’s ecosystem._
+_Lausanne, Switzerland,_ April 12th, 2022* — Alephium, an innovative Layer 1 blockchain announces* [Cetacean Capital](https://cetacean.capital/) _as a new strategic partner, a huge win for Alephium’s ecosystem._
 
 \- [Traduction Française](https://medium.com/@Oheka/alephium-sassocie-%C3%A0-cetacean-capital-413630aeee94) (Community translated)
 

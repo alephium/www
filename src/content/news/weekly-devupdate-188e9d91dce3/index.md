@@ -5,26 +5,25 @@ spotlight: false
 featuredImage: image_4db7db9502.png
 title: 'Weekly #DevUpdate'
 ---
+Week 32 Milestones & progress on dev on Alephium!
 
-#### Week 32 Milestones & progress on dev on Alephium!
-
-1.  **Launch of NFT Marketplace V2 for Internal Testing**
+## 1. **Launch of NFT Marketplace V2 for Internal Testing**
 
 We’re thrilled to announce that the second version of our NFT Marketplace has been released for internal testing. This version promises enhanced features, improved user experience, and a more streamlined process for artists and collectors alike.
 
-**2. Mobile Wallet — Coming Soon!**
+## **2. Mobile Wallet — Coming Soon!**
 
 Our team has been working diligently on the mobile wallet, and we’re excited to share that it’s just around the corner. Soon, you’ll be able to manage your Alephium assets on the go with ease and security.
 
-**3. Introduction of sUTXO Longform — The sUTXO longform is now out!**
+## **3. Introduction of sUTXO Longform — The sUTXO longform is now out!**
 
 This is a significant step forward in our commitment to transparency and providing our community with in-depth insights into our developments.
 
-**4. Zealy.io Quests — Almost Ready**
+## **4. Zealy.io Quests — Almost Ready**
 
 In collaboration with Zealy.io, we’re on the brink of launching quests. Stay tuned for more details and get ready to embark on exciting new adventures!
 
-**Frontend Team Updates:**
+## **Frontend Team Updates:**
 
 ![](image_e5f46088fe.png)
 
@@ -32,7 +31,7 @@ In collaboration with Zealy.io, we’re on the brink of launching quests. Stay t
 - Mobile Wallet: Desktop wallet import by QR code scanning method, general data loading speed improvements, and animation additions.
 - Explorer: Endpoints upgrade and a new way to compute the total ALPH in the transactions. Check it out at [explorer.alephium.org](https://explorer.alephium.org/).
 
-**Backend Team Updates:**
+## **Backend Team Updates:**
 
 ![](image_404c00a3c8.png)
 
@@ -41,7 +40,7 @@ In collaboration with Zealy.io, we’re on the brink of launching quests. Stay t
 - SDK: Improved hooks and updated the full node to the latest version ([v2.5.0](https://github.com/alephium/alephium/releases/tag/v2.5.0)).
 - Bridge: Optional Alephium full node for bridge’s Guardians.
 
-**Marketing & Content Team Updates:**
+## **Marketing & Content Team Updates:**
 
 ![](image_10fd906bca.jpeg)
 

@@ -17,7 +17,7 @@ You can watch the presentation here:
 
 Now, let’s dive into Mika’s presentation: **How can we onboard the next billion people to crypto?**
 
-### Iterate (a lot)
+## Iterate (a lot)
 
 ![](image_21fcf1053a.jpg)
 
@@ -27,7 +27,7 @@ This experience teaches that investing time and effort in good design yields rem
 
 ![](image_3f312b825e.jpg)
 
-### Don’t be scared to try (live)
+## Don’t be scared to try (live)
 
 ![](image_67053511c7.jpg)
 
@@ -35,7 +35,7 @@ True innovation occurs when ideas are implemented, even if it involves taking ri
 
 At Alephium, user feedback is invaluable in refining products and identifying areas for improvement. A product can’t be considered a success until real users validate its usability and functionality. Being willing to take risks and try new things allows us to fail fast and fix any issues promptly. Through this process of experimentation, we continually iterate and improve our products, making them more user-friendly and effective.
 
-### Simple is beautiful (but hard)
+## Simple is beautiful (but hard)
 
 ![](image_11dbe41d10.jpg)
 
@@ -49,7 +49,7 @@ By carefully considering user interactions and flows, we hide away unnecessary c
 
 ![](image_8f8c373fce.jpg)
 
-### Don’t reinvent the wheel (but sometimes do)
+## Don’t reinvent the wheel (but sometimes do)
 
 Drawing inspiration from successful products and innovations is essential to Alephium’s design philosophy. The experiences and best practices from widely adopted products are considered when exploring new ideas and integrating features. This process helps to identify opportunities for innovation and improvement, enhancing the products’ appeal and functionality.
 
@@ -59,9 +59,9 @@ An excellent example of this approach is the effort to integrate desktop wallets
 
 Here you can find the [full presentation](https://slides.com/mikaelvaivre/deck)!
 
-### Q&A Session:
+## Q&A Session:
 
-#### UI/UX
+### UI/UX
 
 **When we look at what you guys produce in the front-end, we can see there’s plenty of space, of air between things, and that you tend to abstract as much as possible the complexity of the interface. Why is that? Who’s the target audience of the tools you are developing?**
 
@@ -85,7 +85,7 @@ We always start with the simplest solution, hiding complexities as much as possi
 
 We take inspiration from centralized products with excellent user experiences and try to replicate those in our design. While decentralization introduces challenges, we believe it’s an intermediary step. By constantly refining and optimizing our user interfaces, we work towards bridging the gap between the ease of use in centralized products and the decentralization benefits we offer.
 
-#### Other wallets / the explorer
+### Other wallets / the explorer
 
 **WEN MOBILE WALLET?**
 
@@ -99,13 +99,13 @@ The extension wallet ([Chrome](https://chrome.google.com/webstore/detail/alephiu
 
 An ideal explorer provides users with clear insights into the blockchain’s activities without overwhelming them with technical jargon. We aim to strike the right balance between being informative and user-friendly. A good explorer should be easily navigable, visually appealing, and deliver relevant information in a concise manner, making it accessible to both technical and non-technical users.
 
-#### The brand
+### The brand
 
 **The Alephium brand is constantly evolving. In that regard, it’s fairly atypical as it’s a constant evolution, that can affect all its components: the logo has changed colors, the layout, the colors of the palette, etc… How do you think about this evolution? Where is it leading, from where, and why?**
 
 The brand’s constant evolution reflects the fast-moving nature of the industry and our desire to adapt and improve continuously. It allows us to stay fresh and relevant while maintaining brand recognition through consistent elements like the logo shape and name. As we progress, we will likely converge and stabilize, but for now, the evolving brand keeps us adaptive and in sync with market demands.
 
-#### From the community
+### From the community
 
 **Is it very different in terms of UX to work on a sharding chain than a non-sharding one?**
 

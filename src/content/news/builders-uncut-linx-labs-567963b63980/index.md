@@ -58,8 +58,7 @@ It’s not necessarily about building faster or better, but fostering connection
 Go Alephium, that’s all.
 
 ---
-
-#### Links:
+Links:
 
 Website: [https://linxotc.com/](https://linxotc.com/)  
 Twitter: [https://x.com/linx_labs](https://x.com/linx_labs)  

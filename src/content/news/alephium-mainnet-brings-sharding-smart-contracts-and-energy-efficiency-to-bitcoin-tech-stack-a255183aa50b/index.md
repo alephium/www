@@ -8,9 +8,9 @@ title: Alephium Mainnet Brings Sharding, Smart Contracts, and Energy Efficiency 
   Bitcoin Tech Stack
 ---
 
-#### **Lausanne, Switzerland — November 9 th, 2021**
+**Lausanne, Switzerland — November 9 th, 2021**
 
-#### Alephium, the first operational sharded blockchain bringing scalability, ETH-inspired smart contracts, and improved energy efficiency to Bitcoin’s proven core technologies, has launched its mainnet just two months after announcing the closing of \$3.6M pre-sale.
+**Alephium, the first operational sharded blockchain bringing scalability, ETH-inspired smart contracts, and improved energy efficiency to Bitcoin’s proven core technologies, has launched its mainnet just two months after announcing the closing of \$3.6M pre-sale.**
 
 Cheng Wang, Core Developer of Alephium said: “After over 3 years of development under the radar, we are proud to announce the launch of the Alephium Mainnet. It’s made to support powerful, scalable yet user-friendly decentralized applications and protocols. We welcome the community of developers and miners to join us in improving the ecosystem one project at a time.”
 
@@ -30,4 +30,4 @@ For further information, please contact [press@alephium.org](mailto:press@alephi
 
 Alephium is the first operational sharded blockchain bringing scalability, ETH-inspired smart contracts and Dapps capabilities to Bitcoin’s proven core technologies while ensuring better performance and improved energy efficiency. Alephium also focuses on usability and accessibility making it the perfect platform to support decentralized applications and open protocols.
 
-#### To find out more, visit [alephium.org](/)
+**To find out more, visit [alephium.org](/)**

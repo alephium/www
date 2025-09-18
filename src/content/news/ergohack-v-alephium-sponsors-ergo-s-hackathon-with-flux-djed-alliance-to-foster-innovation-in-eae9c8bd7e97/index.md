@@ -7,8 +7,7 @@ featuredImage: image_a12638ff85.jpg
 title: ErgoHack V — Alephium sponsors Ergo’s Hackathon with Flux &amp; Djed Alliance
   to foster innovation in…
 ---
-
-#### ErgoHack V — Alephium is a proud partner & sponsor of ErgoHack V, along with Flux and Djed Alliance. ErgoHack V, Ergo Foundation’s fifth hackathon runs on Oct 3rd — 20th.
+ErgoHack V — Alephium is a proud partner & sponsor of ErgoHack V, along with Flux and Djed Alliance. ErgoHack V, Ergo Foundation’s fifth hackathon runs on Oct 3rd — 20th.
 
 Alephium is thrilled to support ErgoHack V. With shared ethos and technologies, Ergo and Alephium are committed to pushing forward UTXO and interoperability research and actively support open-source development.
 

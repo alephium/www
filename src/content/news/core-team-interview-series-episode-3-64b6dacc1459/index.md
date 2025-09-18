@@ -5,8 +5,7 @@ spotlight: false
 featuredImage: image_e6ce249ae6.jpg
 title: Core team interview series. Episode 3
 ---
-
-#### Presenting the humans developing the Back-end.
+Presenting the humans developing the Back-end.
 
 **This article was updated:** [https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0](/news/post/alephium-contributors-f35eeaeaf0a0)
 

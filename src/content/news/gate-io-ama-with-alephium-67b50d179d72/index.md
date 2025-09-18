@@ -6,8 +6,7 @@ spotlight: false
 featuredImage: image_e59ff2119e.jpg
 title: Gate.io AMA with Alephium
 ---
-
-#### On the 15th of February 2022, Gate.io hosted an AMA with Alephium in their English Telegram-group. This is the transcript from that event.
+On the 15th of February 2022, Gate.io hosted an AMA with Alephium in their English Telegram-group. This is the transcript from that event.
 
 **tomrodg / Gateio**
 

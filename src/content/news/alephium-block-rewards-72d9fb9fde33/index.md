@@ -7,7 +7,7 @@ featuredImage: image_becedcf971.jpg
 title: Alephium Block Rewards
 ---
 
-#### An in-depth analysis of the Block rewards, explaining the time-based and hashrate-based components of the reward emission rates.
+**An in-depth analysis of the Block rewards, explaining the time-based and hashrate-based components of the reward emission rates.**
 
 **_Disclaimer: This article was edited on June 12th, 2024 when block time was reduced from 64 to 16s_**
 
@@ -17,40 +17,38 @@ For this process to be decentralized, having as many miners participating as pos
 
 At the time of writing this article, Alephium Mainnet has 16 shards live, and the average block time is 16 seconds.
 
-### Block Rewards (a.k.a Mining Rewards)
+## Block Rewards (a.k.a Mining Rewards)
 
 Alephium’s reward for newly generated blocks is also called Mining Reward (MR). After distribution, the block rewards are locked for 500 minutes.
 
 The mining reward is bound by two curves based on hashrate and timestamp. At a given time and for a given hashrate, the reward per block equals the minimum between the time-based reward and the hashrate-based reward.
 
-> Block Reward = min (time-based reward, hashrate-based reward)**.**
+> Block Reward = min(time-based reward, hashrate-based reward)
 
 [Mining Reward GitHub Implementation](https://github.com/alephium/alephium/blob/master/protocol/src/main/scala/org/alephium/protocol/mining/Emission.scala)
 
-#### Timestamp
+## Timestamp
 
 The time-based reward emission rate for the first four years evolves as follows:
 
-<figure id="f8c7" class="graf graf--figure graf-after--p">
-<img src="image_becedcf971.jpg" class="graf-image" data-image-id="0*rDS3EQHgKpfB7DrG" data-width="1200" data-height="742" />
-<figcaption>If you want to know the precise numbers, [here is the GitHub CSV file.](https://github.com/alephium/alephium/blob/master/protocol/src/main/resources/time-inflation.csv)</figcaption>
-</figure>
+![](image_becedcf971.jpg)
+
+If you want to know the precise numbers, [here is the GitHub CSV file.](https://github.com/alephium/alephium/blob/master/protocol/src/main/resources/time-inflation.csv)
 
 Over four years, the time-based mining reward drops gradually from 15 ALPH (shared by 16 chains) per block period (16 seconds) to 5 ALPH. After 4 years, the time-based reward will be fixed to 5 ALPH per block period and drops to 0 ALPH after 82 years.
 
-#### Hashrate
+## Hashrate
 
-<figure id="f83a" class="graf graf--figure graf-after--h4">
-<img src="image_c9069ba7e9.jpeg" class="graf-image" data-image-id="1*u09fRk117tukjKx9AVeWig.jpeg" data-width="786" data-height="486" />
-<figcaption>If you want to know the precise numbers, [here is the GitHub CSV file.](https://github.com/alephium/alephium/blob/master/protocol/src/main/resources/hashrate-inflation.csv) (The first column is the log_2 of the network hashrate, a value of 8 means the network hashrate is 2**8 hash/second)</figcaption>
-</figure>
+![](image_c9069ba7e9.jpeg)
 
-- <span id="e7a1">*When the hashrate remains within the \[0 hash/sec, 1 Ph/sec\] range.   
-  *The hashrate-based mining reward increases gradually from 0 ALPH to 15 ALPH (shared by 16 chains) per block period with a minimum of 7.5 ALPH guaranteed. The idea is to incentivize more miners to join the project without only benefitting the early adopters.</span>
-- <span id="6606">*When the hashrate is within the \[1 Ph/sec, 1 Eh/sec\] range  
-  *The hashrate-based gradually decreases from 15 ALPH to 5 ALPH per block period.</span>
-- <span id="1c43">*When the network hashrate is within the \[1 Eh/sec, 128Eh/sec\] range  
-  *The hashrate-based gradually decreases from 5 ALPH to 0 ALPH.</span>
+If you want to know the precise numbers, [here is the GitHub CSV file.](https://github.com/alephium/alephium/blob/master/protocol/src/main/resources/hashrate-inflation.csv) (The first column is the log_2 of the network hashrate, a value of 8 means the network hashrate is 2**8 hash/second)
+
+- *When the hashrate remains within the \[0 hash/sec, 1 Ph/sec\] range.   
+  *The hashrate-based mining reward increases gradually from 0 ALPH to 15 ALPH (shared by 16 chains) per block period with a minimum of 7.5 ALPH guaranteed. The idea is to incentivize more miners to join the project without only benefitting the early adopters.
+- *When the hashrate is within the \[1 Ph/sec, 1 Eh/sec\] range  
+  *The hashrate-based gradually decreases from 15 ALPH to 5 ALPH per block period.
+- *When the network hashrate is within the \[1 Eh/sec, 128Eh/sec\] range  
+  *The hashrate-based gradually decreases from 5 ALPH to 0 ALPH.
 
 **Note:**
 
@@ -60,10 +58,6 @@ Over four years, the time-based mining reward drops gradually from 15 ALPH (shar
 ### Orphan and Uncle Blocks
 
 Alephium uses the ghost algorithm similar to ETH. A main chain block may reference uncle blocks, and both the miner of the main chain block and the miner of the uncle block will receive rewards.
-
-<figure id="aa12" class="graf graf--figure graf--iframe graf-after--p">
-
-</figure>
 
 You may need to wait for a while to confirm whether an orphan block is an uncle block. If the height of the orphan block is `h`, it can be referenced by a main chain block with a height in the range of `[h+1, h+7]`. Therefore, you need to wait about `7 * 16s`. However, due to variability in block time, you may need to wait longer to ensure that the uncle block miners receive their rewards.
 

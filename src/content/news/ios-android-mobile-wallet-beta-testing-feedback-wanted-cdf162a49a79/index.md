@@ -13,13 +13,13 @@ The mobile wallet is the third developed by the team (after the desktop wallet a
 
 A first phase of internal testing has been completed, and the app has gone through initial approval stages on the appstore. We can now invite people to install the app.
 
-#### **For iOS **users
+## For iOS users
 
 The official testing platform of Apple is called TestFlight. To install the mobile wallet on your iOS device, get it here: [https://testflight.apple.com/join/oRHkgVPU](https://testflight.apple.com/join/oRHkgVPU).
 
 If you already have the TestFlight app, you will be able to install the Alephium Mobile Wallet app directly. If you don’t, please install TestFlight, and the wallet afterwards.
 
-#### **For Android users**
+## **For Android users**
 
 To download the app, please follow this link to the playstore: [https://play.google.com/store/apps/details?id=org.alephium.wallet](https://play.google.com/store/apps/details?id=org.alephium.wallet)
 

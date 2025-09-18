@@ -11,7 +11,7 @@ _Our ecosystem thrives with developers building amazing stuff on top of Alephium
 
 This episode is about [Ayin](http://ayin.app), the first DEX available on Alephium Mainnet. We thank [Dr Jekyll](/news/post/community-highlight-11-dr-jekyll-165ab9a51880) and 0dd431c8 for the nice interview!
 
-### **Tell us a little bit about your project. What is it, what does it do, and how does it interact with the Alephium blockchain?**
+## Tell us a little bit about your project. What is it, what does it do, and how does it interact with the Alephium blockchain?
 
 ![](image_b7debe4600.png)
 
@@ -23,7 +23,7 @@ You can seamlessly swap between token pairs and use the Utility Token, \$AYIN, t
 
 [GitHub](https://github.com/0dd431c8/ayin-swap)
 
-### What motivated you to develop on Alephium, and what sets it apart from other blockchain platforms?
+## What motivated you to develop on Alephium, and what sets it apart from other blockchain platforms?
 
 Reading anything the team puts out, like the [whitepaper](https://github.com/alephium/white-paper), is enough for me.
 
@@ -37,17 +37,17 @@ Alephium has it all. [New novel tech](/),</a> a great team, a [great community](
 
 The team has been instrumental in allowing us to understand [Ralph](https://docs.alephium.org/ralph/getting-started) and build properly and giving us direct access to all of them in all facets of development from SC dev to marketing, which is more than probably any core L1 team can say for themselves on any chain. Big ups to them!
 
-### What tech stack did you use in your project?
+## What tech stack did you use in your project?
 
 [React](https://react.dev/)+[redux](https://redux.js.org/) combo for the front end.
 
-### **What did you consider when choosing the right tech stack for your project?**
+## What did you consider when choosing the right tech stack for your project?
 
 We’ve decided to go with React because the Alph team is focused on supporting React first, so we chose it to deliver as quickly as possible.
 
 We plan to switch to Solid.js + Effector soon after we are on top of everything and if it still seems like something that would benefit us.
 
-### **What features are you most proud of?**
+## What features are you most proud of?
 
 It is xAYIN, the staked version of AYIN.
 
@@ -55,7 +55,7 @@ It is xAYIN, the staked version of AYIN.
 
 ![](image_7f83206a7f.png)
 
-### Could you tell us about some of the challenges you faced while building, and how you overcame them?
+## Could you tell us about some of the challenges you faced while building, and how you overcame them?
 
 Honestly, nearly everything was broken/red when we started testing as well as on my end trying to figure out the tokenomics with no idea of the demand in the Alephium ecosystem. The latter is an ongoing problem.
 
@@ -69,7 +69,7 @@ I am hoping once the team is less swamped, that thorough update to the documenta
 
 To anyone who wants to build, I suggest reaching out to Cheng. You will get tailored 1on1 help not just from him but the whole team, including things unrelated to dev work.
 
-### What has been the most rewarding part of developing your project, and why?
+## What has been the most rewarding part of developing your project, and why?
 
 Watching it come together, as always. It’s a relief once it becomes clear that this will actually launch. The most rewarding part has been after launch, though. Watching ayin be successful, in many ways other than just speculation, has been a great experience.
 
@@ -79,7 +79,7 @@ We have so much support and that’s just the people that are participating, it 
 
 Very happy with what we have accomplished and are continuing to work on!
 
-### What do you think are some of the future potential use cases of Alephium that could be explored?
+## What do you think are some of the future potential use cases of Alephium that could be explored?
 
 I am honestly not entirely across everything myself and am still learning about some of the mechanisms of Alephium as it’s big brain stuff. I’d be excited to see anything.
 
@@ -87,7 +87,7 @@ I’m not an NFT maxi, really, but would be cool to see a marketplace come, lend
 
 I want to see what novel approaches devs can take within these things as well as it’s always impossible to tell what some smart mind will come up with in a new environment to push their goals for a protocol through the parameters of a certain chain and the way it runs.
 
-### Lastly, what advice would you give to someone looking to build on Alephium, based on your experience?
+## Lastly, what advice would you give to someone looking to build on Alephium, based on your experience?
 
 Absolutely reach out to the core team. Get involved in the discord dev channels and community channels. Most of all don’t be scared by new language/environment/non-evm. _“0dd”_ picked it up very quickly after the Lehman upgrade and with the team explaining things that weren’t obvious in dm. Most of all, go for it and good Luck!
 

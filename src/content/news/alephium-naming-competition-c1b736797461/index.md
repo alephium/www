@@ -9,23 +9,23 @@ title: Alephium Naming Competition
 
 ### Naming can be fun, but good naming is hard. Alephium has identified three items that desperately need naming, and we’d like to ask you for your creative input. How should we name the following items?
 
-#### **The smallest denomination of ALPH**
+## **The smallest denomination of ALPH**
 
 Bitcoin has the Satoshi (1 Satoshi = 0,0000001 BTC), Ethereum has the wei (1 wei = 0,000000000000000001 ETH, or 1 ETH = 1'000'000'000'000'000'000 wei).
 
 **Similarly to ETH, ALPH’s smallest denomination also has 18 decimals (so 0,000000000000000001 ALPH) and we need a name for it!**
 
-#### **Alephium’s custom Virtual Machine**
+## **Alephium’s custom Virtual Machine**
 
 A VM (or Virtual Machine) is what makes a blockchain more “intelligent” and “programmable” than just a transaction mechanism. It’s where the smart contracts live. Ethereum has the EVM (Ethereum Virtual Machine). **What is Alephium’s custom Virtual Machine going to be called?**
 
-#### **Alephium’s smart contract programming language.**
+## **Alephium’s smart contract programming language.**
 
 A smart contract programming language allows developers to create cool programs on a specific blockchain (like dApps for NFTs, DeFi or other use cases). ETH has Solidity, others have Pact, YUL or Rust… **Help us find ours!**
 
 ---
 
-### To participate and get a chance to win ALPH rewards, share your name proposals in the \#💡suggestions channel on our Discord by following this link: [https://discord.gg/s82ZXRw4Dc.](https://discord.gg/s82ZXRw4Dc.)
+To participate and get a chance to win ALPH rewards, share your name proposals in the \#💡suggestions channel on our Discord by following this link: [https://discord.gg/s82ZXRw4Dc.](https://discord.gg/s82ZXRw4Dc.)
 
 **The naming competition starts on January 31st, 2022 at 3:00pm CET and ends on February 2nd, 2022 at 18:00 CET.**
 
@@ -46,8 +46,7 @@ _(We reserve the right to create new categories on the fly, remove them or chang
 **Winners will be announced on February 4th, 2022. If several persons have given the same name, the person who proposed the name first is the one that will be rewarded!**
 
 ---
-
-#### **_Rules_**
+**_Rules_**
 
 _Of course this naming event is to be governed by a set of rules. For your convenience we publish them here but you will also be able to find them in this_ [GitHub repository.](https://github.com/alephium/community) _These rules may be subject to change in the near or distant future and read as the following:_
 
@@ -64,7 +63,7 @@ _Alephium considers a number of variables in determining rewards. Determinations
 
 _Alephium reserves the right to discontinue the Program at any time without notice._
 
-#### **_Eligibility Criteria_**
+## **_Eligibility Criteria_**
 
 _Are not eligible for rewards:_
 

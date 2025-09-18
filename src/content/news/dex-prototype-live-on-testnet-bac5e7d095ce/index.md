@@ -5,8 +5,7 @@ spotlight: false
 featuredImage: image_4b7ae278af.jpeg
 title: DEX Prototype Live on Testnet
 ---
-
-#### Proof-of-Concept to showcase dApps building on Alephium
+Proof-of-Concept to showcase dApps building on Alephium
 
 Alephium is excited to announce the release of a DEX prototype!
 
@@ -22,11 +21,11 @@ _Please note that the UI is provided for testing convenience purposes but isn’
 
 ---
 
-### How to interact with the DEX via the UI
+## How to interact with the DEX via the UI
 
 To connect with the DEX on Testnet, you need first to install the Alephium browser extension wallet:
 
-#### **Download the extension wallet**
+### **Download the extension wallet**
 
 🔵 [Google Chrome store.](https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj)
 
@@ -34,7 +33,7 @@ To connect with the DEX on Testnet, you need first to install the Alephium brows
 
 More details [about the extension wallet](/news/post/alephium-launches-browser-extension-wallet-706dfeda98f5).
 
-#### Creating an address in group 0
+### Creating an address in group 0
 
 Once the extension wallet is installed, connect to the Testnet (you can change the network you’re connected to on the top right of the extension).
 
@@ -42,7 +41,7 @@ Once the extension wallet is installed, connect to the Testnet (you can change t
 
 Once on the Testnet, make sure to create or use a wallet with an address in group 0 to be able to connect to the DEX.
 
-#### Connecting to the DEX
+### Connecting to the DEX
 
 Go to [https://alephium.github.io/alephium-dex](https://alephium.github.io/alephium-dex) click on “Connect Alephium,” and choose “Extension Wallet” from the options on the pop-up.
 
@@ -50,7 +49,7 @@ Go to [https://alephium.github.io/alephium-dex](https://alephium.github.io/aleph
 
 After connecting, the first page is the “Swap” page, where you can select the cryptocurrencies you want to exchange.
 
-#### Requesting test \$ALPH
+### Requesting test \$ALPH
 
 Don’t have \$ALPH in your wallet? You can request some right from the wallet! Click “Add funds” on the main page and then “Request \$ALPH”. You will receive 12 Testnet \$ALPH in a few minutes.
 

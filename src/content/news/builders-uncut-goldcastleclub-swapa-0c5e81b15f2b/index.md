@@ -62,8 +62,7 @@ Hopefully, it will be within weeks. (Note: It is already [live on testnet](https
 Everything has been great so far. Some documentation needs to be more detailed, but getting answers from the community and core devs has been fantastic. The interactions in the [Discord dev channel](/discord) have been very helpful.
 
 ---
-
-#### Links:
+Links:
 
 **Gold Castle Club  
 **Website: [https://goldcastle.club/](https://goldcastle.club/)  

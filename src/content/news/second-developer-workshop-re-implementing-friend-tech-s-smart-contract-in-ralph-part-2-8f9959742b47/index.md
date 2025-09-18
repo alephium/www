@@ -9,7 +9,7 @@ title: 'Second Developer Workshop: Re-implementing Friend.Tech’s Smart Contrac
 
 Welcome to the second part of this dev workshop session! Please make sure you go through the first part ([here](/news/post/second-developer-workshop-re-implementing-friend-techs-smart-contract-in-ralph-806e3f6551aa)) as part 2 starts where Part I ended.
 
-### A small reminder of part 1
+## A small reminder of part 1
 
 [Friend.tech](https://twitter.com/friendtech) operates as a decentralized social token-driven platform [launched in August 2023](https://decrypt.co/resources/what-is-friend-tech-the-social-token-driven-decentralized-social-network) on the Base blockchain. It allows its users to trade “keys”, formerly termed “shares”, associated with X (formerly Twitter) profiles. Owning these keys grants entry to exclusive chatrooms and special content from the respective X account holder.
 
@@ -19,13 +19,13 @@ The platform promotes itself by saying, “Trade with your friends in our market
 
 The “get price” function was also created, and it calculates the share price, considering both the protocol fee and subject fee. This function serves as the basis for determining buy and sell prices. This session focuses on implementing the buy and sell shares functions. If you haven’t done it yet, here is what you need to prepare your environment.
 
-### Ralph Implementation
+## Ralph Implementation
 
 You can follow the full detailed workshop in the following video. Here’s the [full code](https://github.com/alephium/dev-workshop-02/blob/session-1/contracts/friend_tech.ral) of the Ralph implementation and this article highlights the main steps for easier comprehension:
 
 `video: https://www.youtube.com/watch?v=Xgt3_HwoUOc`
 
-### Recap: Subcontract Structure
+## Recap: Subcontract Structure
 
 In the previous session, three essential contracts were created. First is the “Friend.tech” contract, which is the primary contract. From there, by providing the subject’s address, a subcontract was generated, it is called “SubjectShare.” This contract tracks the total balance specific to the designated subject.
 
@@ -33,17 +33,13 @@ In the previous session, three essential contracts were created. First is the �
 
 Subsequently, upon obtaining the holder’s address, another subcontract named “SubjectShareBalance” was created. This subcontract is responsible for monitoring the balance of the holder concerning the subject in question. This hierarchical structure encapsulates our subcontract system.
 
-### Buy and Sell Shares Functions
+## Buy and Sell Shares Functions
 
 Our current objective is to implement the “buy shares” and “sell shares” functions within the “Friend.tech” contract. The approach involves progressing step by step from the bottom up on the subcontract structure.
 
-### “SubjectShareBalances” contract
+## “SubjectShareBalances” contract
 
 Our initial focus lies in creating a function responsible for updating the balance within the “SubjectShareBalances”. Examining the contract, we notice it contains two functions: “add balance” and “reduce balance.”
-
-<figure id="5ef5" class="graf graf--figure graf--iframe graf-after--p">
-
-</figure>
 
 There are interesting things here: There are precautions to restrict access to these functions. Only the parent contract, which is “Subject Share,” has the authority to call these functions and make balance updates. This is accomplished by requiring the correct contract ID to be provided when invoking these functions. Any attempts by unauthorized callers will result in an exception being thrown. Once we’ve verified the caller’s correctness, we proceed to update the balance accordingly.
 
@@ -51,11 +47,8 @@ Another noteworthy feature is that when the balance reaches zero, this contract 
 
 With these balance update functions in place, our next step is to shift our focus a bit higher up in the hierarchy and proceed with the implementation of the “buy” and “sell” functions at this level.
 
-### “SubjectShares” contract
+## “SubjectShares” contract
 
-<figure id="f22d" class="graf graf--figure graf--iframe graf-after--h3">
-
-</figure>
 
 Let’s examine the “SubjectShares” contract, focusing on its “buy” and “sell” functions. The “buy” function accepts three parameters: the buyer’s address, the desired share quantity, and the subject fee, which must be paid when buying or selling shares to the subject.
 
@@ -65,27 +58,15 @@ After confirming the caller’s identity, this subject’s total supply of share
 
 On the other hand, if the buyer is another entity, the code proceeds to verify whether a subcontract already exists for this holder. If one exists, it indicates that this holder already possesses some shares. In contrast, if no subcontract is found, it suggests that the holder has no shares associated with this subject. To ascertain this, the holder’s address is used as the key to retrieve the contract ID of the existing subcontract. Subsequently, the “contract exists” function is employed to confirm its existence.
 
-<figure id="3441" class="graf graf--figure graf--iframe graf-after--p">
-
-</figure>
-
 If the subcontract is not found to exist, it is created. To accomplish this, the “copyCreateSubContract” function is utilized, which is considered more efficient than the alternative “createSubContract!” function since it doesn’t require the provision of additional code. Instead, it uses the holder’s address as the key and initializes the subcontract’s fields, which include the holder, subject share contract ID, and the initial balance. This ensures that the holder’s balance for this subject is appropriately initialized. Next, the creation of this subcontract can be considered.
 
 However, if the subcontract already exists, the process involves invoking the recently crafted “add balance” function from the prior commit to update the balance. Once the balance has been addressed, the next step is to transfer the subject fee to the particular contract in question.
-
-<figure id="2d5f" class="graf graf--figure graf--iframe graf-after--p">
-
-</figure>
 
 When selling shares, the process is essentially the reverse. First, there’s a confirmation of having an adequate balance. Then, the “subContractId!” function is utilized to obtain the contract ID of the subject share balance contract. Subsequently, the “reduce balance” function is called. If this contract doesn’t exist, the entire operation will not succeed. Once the call is made, the balance is reduced, and the subject fee is transferred to the contract.
 
 In summary, both the buy and sell functions serve two primary purposes: managing the balance for the holder and regulating the total supply for the subject. Additionally, they facilitate the transfer of the subject fee to the subject share contract.
 
-### Friend.tech smart contract
-
-<figure id="1b24" class="graf graf--figure graf--iframe graf-after--h3">
-
-</figure>
+## Friend.tech smart contract
 
 The subsequent step involves moving up the hierarchy and implementing the “buy shares” and “sell shares” functions within the “Friend.tech” smart contract. These functions are highlighted as the next focal points of development.
 
@@ -101,15 +82,7 @@ In this scenario, if there’s an attempt to update the balance, and it necessit
 
 Subsequently, once the requisite amount of approved assets has been obtained, the code invokes the “buy” function, providing it with the approved asset amount in ALPH.
 
-<figure id="01f3" class="graf graf--figure graf--iframe graf-after--p">
-
-</figure>
-
 It is worth highlighting here how this underscores the effectiveness of the asset permission system. Irrespective of the buyer’s initial balancer, this particular line of code, **enclosed within square brackets, strictly limits the expenditure within the function’s scope**. It enforces precise control over the amount of ALPH that can be spent, showcasing the power of the Asset Permission System.
-
-<figure id="3cb7" class="graf graf--figure graf--iframe graf-after--p">
-
-</figure>
 
 In contrast, when this subcontract is absent, it implies that no one has previously acquired shares for this particular subject. In such a case, the buyer must also be the subject themselves. Consequently, a new subcontract is established for the subject, and essential parameters are configured.
 
@@ -117,23 +90,15 @@ Creating a new subject share contract initializes with crucial values for the su
 
 In essence, the creation of a new subject shares contract serves the purpose of monitoring the total balance of the subject. It efficiently manages the balance and facilitates the subject fee payment to the subject. Subsequently, the protocol fee, as well as the share price, is paid. The total amount required from the buyer for this contract includes the share price and the protocol fee, both of which are updated accordingly. While a separate accounting is maintained for the protocol fee, the total amount covers the share price and the protocol fee combined. Following these actions, an event is emitted, signifying the completion of the “buy” function.
 
-<figure id="9341" class="graf graf--figure graf--iframe graf-after--p">
-
-</figure>
-
 The “sell shares” function operates in a manner opposite to the “buy” function. It begins by checking two conditions: firstly, there must be available shares for the specific subject, and secondly, there must be sufficient shares owned by the seller. This verification process is essential before proceeding.
 
 Subsequently, the code calculates the sale price, considering the protocol and subject fees. It then proceeds to pay the seller this calculated price. The sale price is determined by deducting both the subject fee and protocol fee, resulting in the net revenue received by the seller.
-
-<figure id="1609" class="graf graf--figure graf--iframe graf-after--p">
-
-</figure>
 
 The protocol fee being paid from within the Friend.tech smart contract is sent to the total protocol fee. This process represents an internal transfer of funds within the smart contract.
 
 Besides that, the smart contract, since it deducts the subject fee from the total payout, pays the subject fee to the subject. This is depicted in the code snippet, where funds are transferred from the self-address (which is the protocol itself) to cover the subject fee. **This operation is another example of the Asset Permission System capabilities. While the Friend.tech smart contract has access to a lot assets, including the share price and protocol fees, it is only approved to spend the exact subject fee amount within the scope of the “sell” function.** This ensures the proper handling of subject fees and maintains balance integrity within the subcontracts, namely the “subjectShare” and “subjectShareBalance” contracts. Following the execution of these actions, a trade event is emitted to mark the completion of the “sell shares” function.
 
-### Tests and Recap
+## Tests and Recap
 
 Several tests are provided in the [GitHub repository](https://github.com/alephium/dev-workshop-02/blob/session-1/test/integration/friend-tech.test.ts) to verify if the implementation works as expected, especially all the math related to the price calculation and the fee deduction.
 

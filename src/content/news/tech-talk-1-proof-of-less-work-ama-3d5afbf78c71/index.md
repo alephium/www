@@ -6,8 +6,7 @@ spotlight: false
 featuredImage: image_1d46b897a3.jpg
 title: 'TECH TALK #1 — Proof-of-Less-Work AMA'
 ---
-
-#### On Thursday, August 25th, 2022, Alephium’s team conducted an [AMA on our Discord](https://www.youtube.com/watch?v=Oi4AsqVY0YA) as a [follow-up](/news/post/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301) discussion with Cheng Wang, inventor of PoLW and founder of Alephium.
+On Thursday, August 25th, 2022, Alephium’s team conducted an [AMA on our Discord](https://www.youtube.com/watch?v=Oi4AsqVY0YA) as a [follow-up](/news/post/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301) discussion with Cheng Wang, inventor of PoLW and founder of Alephium.
 
 > You’ll find the original article on PoLW [here,](/news/post/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301) the whitepaper [here](https://github.com/alephium/white-paper/blob/master/alephium.pdf), and the code [here](https://github.com/alephium/alephium/blob/master/protocol/src/main/scala/org/alephium/protocol/mining/Emission.scala). This is a lightly edited transcript of the following video of the AMA:
 
@@ -16,8 +15,7 @@ title: 'TECH TALK #1 — Proof-of-Less-Work AMA'
 **Vladimir Moshnyager — First, we’d like to thank everyone who participated in the AMA. Thanks also for the excellent questions sent by our community through Twitter, discord, telegram, and Reddit! They immensely helped us prepare and get the best answers you’ll find here. Thanks to** [@wachmc](https://twitter.com/wachmc) **for taking the time and answering those queries with candor and good vibes! And to** [@heptazoid](https://medium.com/@heptazoid) **for setting us up nicely!**
 
 ---
-
-#### **ORIGINS & WHAT IS PoLW AND HOW DOES IT WORK?**
+**ORIGINS & WHAT IS PoLW AND HOW DOES IT WORK?**
 
 #### Vladimir Moshnyager: How did you end up at the EPFL? Do you enjoy being in Switzerland? \[[🔗📺](https://www.youtube.com/watch?v=Oi4AsqVY0YA&amp;t=131s)\]
 

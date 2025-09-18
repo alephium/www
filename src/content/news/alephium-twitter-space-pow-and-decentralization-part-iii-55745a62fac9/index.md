@@ -7,7 +7,7 @@ featuredImage: image_495e4a591f.jpg
 title: Alephium Twitter Space — PoW and Decentralization, part III
 ---
 
-#### Alephium hosted a Twitter Space on 24/01/2023 with [Jordan](https://twitter.com/jordan_mack) from [Nervos Network](http://www.nervos.com) and [Cheng Wang](https://twitter.com/wachmc) & [Hongchao Liu](https://twitter.com/hongchao) from [Alephium](/) to talk about Proof of Work (PoW) and Decentralization.
+Alephium hosted a Twitter Space on 24/01/2023 with [Jordan](https://twitter.com/jordan_mack) from [Nervos Network](http://www.nervos.com) and [Cheng Wang](https://twitter.com/wachmc) & [Hongchao Liu](https://twitter.com/hongchao) from [Alephium](/) to talk about Proof of Work (PoW) and Decentralization.
 
 This series reached the last part. You can find the part I [here](/news/post/alephium-twitter-space-pow-and-decentralization-part-i-a7c84ed91f90), part II [here](/news/post/alephium-twitter-space-pow-and-decentralization-part-ii-c2a1d31f334e), and access the whole conversation [here](https://www.youtube.com/watch?v=FLmxAHolDMc).
 

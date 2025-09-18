@@ -5,8 +5,7 @@ spotlight: false
 featuredImage: image_2e664b2caf.png
 title: Block Time and Block Size
 ---
-
-#### A Technical Promenade, part 1
+A Technical Promenade, part 1
 
 > This is the first of a multiple-times-per-month series of articles on key concepts for understanding Alephium in particular and blockchains in general if you’re pondering on which chain to build your dApps, if you’re a curious crypto-traveler or a fellow decentralization enthusiast, welcome! We will start with simple concepts like block time and size, then travel through transactions-per-second, wander around time-to-finality, and venture into sharding land and so many other fascinating crypto territories…
 
@@ -24,10 +23,9 @@ _\* With the introduction of the_ [Rhône Network Upgrade](/news/post/rh%C3%B4ne
 
 ### What is Block Time ?
 
-<figure id="adae" class="graf graf--figure graf-after--h3">
-<img src="image_77bad79c4b.jpeg" class="graf-image" data-image-id="1*MjiLucU5DpdMa7VBzr76LQ.jpeg" data-width="2500" data-height="1916" />
-<figcaption>One way to look at the Mempool: <strong>The Disintegration of the Persistence of Memory</strong> <em>by Dali</em></figcaption>
-</figure>
+![](image_77bad79c4b.jpeg)
+
+One way to look at the Mempool: The Disintegration of the Persistence of Memory by Dali
 
 When a user does a transaction from his wallet, it is first broadcasted to the network, where a full node picks it up, checks for validity, and adds it into the mempool, where it is still unconfirmed. And then, two things can happen: either it expires without being confirmed because most blockchains have an expiry time for transactions to be picked up and confirmed, or it gets picked up by a block producer to be confirmed.
 
@@ -39,10 +37,9 @@ In PoS, Block Time is defined much more directly and has nothing to do with diff
 
 ### What is Block Size?
 
-<figure id="da97" class="graf graf--figure graf-after--h3">
-<img src="image_63eb791c84.png" class="graf-image" data-image-id="1*UVPCzJGd7GPVEqTE_fSkWA.png" data-width="1210" data-height="1372" />
-<figcaption>A visual representation of a block by César Baldaccini, <strong><em>Compression of silver-plated metal cutlery sculpture</em></strong></figcaption>
-</figure>
+![](image_63eb791c84.png)
+
+A visual representation of a block by César Baldaccini, Compression of silver-plated metal cutlery sculpture
 
 **Block size** is measured in different ways. For some coins, it’s defined by the number of transactions it can hold expressed in MegaBytes (Bitcoin is 1MB, Zcash is 2MB…). That means that the total **amount of data** in the block cannot exceed a specific limit. The bigger the block, the more transactions…
 

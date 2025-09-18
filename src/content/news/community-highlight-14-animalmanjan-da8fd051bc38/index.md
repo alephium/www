@@ -11,15 +11,15 @@ _Regularly, we put the spotlight on an active member of the Alephium community. 
 
 _He is an animal lover with an animal care business and spends his free time_ [riding around with his dog, Bishop](https://www.youtube.com/@animalmanjan2988)_. Really active on Discord, he is an important contributor to the good-vibes-only crowd. Check the interview to know more about him!_
 
-#### What can we call you, and where should we picture you?
+## What can we call you, and where should we picture you?
 
 I go by Jan, and you can picture me in a shabby old mobile home on the top of a mountain overlooking Pittsburgh.
 
-#### Tell us about yourself/your persona
+## Tell us about yourself/your persona
 
 I take care of a previously abused pit bull, a couple of giant snakes that no one wants, a few other snakes and lizards, and around 20 tarantulas. I got into Alephium because of mining, and mining helps heat my trailer and keep my exotic animals warm.
 
-#### How did you find out about Alephium?
+## How did you find out about Alephium?
 
 I’ve actually been into crypto for quite a long time. I kicked myself in the butt a million times over about the opportunities I missed at the beginning. One thing that did work out for me was the \$40 worth of ETH that I forgot about for over 5 years. When I restored the wallet, I found I had \$300 and started minting NFTs to support my business and got into blockchain gaming. Absolutely none of that worked out well, but this one coin I started dual mining on my lhr3060 did pretty well.
 
@@ -27,15 +27,15 @@ When I started mining ALPH, I found that my video card seemed to run more stable
 
 The community of Alephians is really what kept me here. I have churned and dumped a bunch of different cryptos over my time, but ALPH is special to me. Foremost, I care about the burning mechanism that will reduce energy consumption eventually, because I am a miner, but I also care about the environmental impact of what we are doing. The second major factor that kept me in was the build-before-shilling mentality.
 
-#### What excites you about Alephium?
+## What excites you about Alephium?
 
 From my trailer park perspective, adoption is the thing that takes us to the Promised Land. Bridges, DEXs, CEXs, and all that jazz are just part of the building necessary for this coin to ever have use and purpose. For instance, when I got into AYIN, I expected to take bullets. Someone has to jump first to start the pile of bodies necessary to build the on-ramp. I will admit, I took some profits when the coins I got practically for free went 3x in value. I’m proud of it. I even bought more later.
 
-#### What excites you about the future of Alephium?
+## What excites you about the future of Alephium?
 
 One of these days, a real Utility will come. On that day, the world will realize the value proposition that Alephium has to offer. It will be the best-priced chain to provide the features and benefits that the market will be looking for. When that day comes, I will be vested in ALPH, AYIN, and other Alephium derivatives very nicely and will finally be able to buy my dog new brakes for his motorcycle. We didn’t get to ride once this year… We’ll get there… just keep building…
 
-#### What do you like to do in your free time? Any hobbies?
+## What do you like to do in your free time? Any hobbies?
 
 My free time is caring for my animals, building my clothing line and [YouTube channels](https://www.youtube.com/@animalmanjan2988) and spending time with my girl and my dog, but I need ALPH to moon to fix my motorcycle.
 

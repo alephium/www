@@ -9,7 +9,7 @@ title: Meet ALPHred, a Virtual Machine like no others
 
 _This is the third of a series of technical innovations brought by Alephium. Find the previous ones_ [here](/news/post/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301) _(PolW) and_ [here](https://medium.com/p/8de3b0f76749) _(sUTXO). Here we examine what a virtual machine is, what function it fills in blockchains and what distinguishes Alephium’s VM (called Alphred) from others._
 
-### _What is a VM?_
+## What is a VM?
 
 A virtual machine (VM) is a software program that emulates the functionality of a physical computer. There are multiple kinds of virtual machines and virtualization systems: some allow people to play games on a platform it was not meant to be played on, and some to [run a windows](https://www.parallels.com/) OS on a [Mac](https://www.vmware.com/) or Linux computer. Some are built to run programs in a decentralized manner on multiple machines.
 
@@ -17,7 +17,7 @@ Another useful feature of the VM is that it lives somewhere in a simulated place
 
 ![](image_689f114b5a.jpg)
 
-### _Virtual machines and the blockchain world_
+## Virtual machines and the blockchain world
 
 Bitcoin has, by design a [very crude and limited virtual machine](https://en.bitcoin.it/wiki/Script). Its very basic programmability and lack of Turing completeness still allow bitcoin to be efficient at what it does: maintaining a functional unified ledger of addresses and balances across thousands of nodes. But that’s it, “money” doesn’t have much to execute, there’s (almost) no possibility of smart contracts as is, which is why most of the dApps action happens elsewhere, and no information from the outside world can enter the network. This enables a lean design, a secure network, but of limited functionality: it’s a distributed ledger.
 
@@ -29,7 +29,7 @@ The example shown above is the [Ethereum Virtual Machine](https://ethereum.org/e
 
 ![](image_b344e555a6.jpg)
 
-### _Many blockchains, many VMs_
+## Many blockchains, many VMs
 
 When other blockchain projects emerged after Ethereum, they had two options: either develop their own virtual machine (VM) to suit their requirements or adopt the Ethereum Virtual Machine (EVM) to facilitate running the same smart contracts as Ethereum. [Fantom](https://fantom.foundation/) and [Avalanche](https://www.avax.network/) chose the latter and are [EVM-compatible](https://medium.com/eligma-blog/what-are-evm-compatible-blockchains-64f91c97038e), while [Polkadot](https://wiki.polkadot.network/docs/learn-wasm), [Solana](https://docs.solana.com/developing/on-chain-programs/overview), and [Cosmos](https://v1.cosmos.network/intro) decided to build their own VMs.
 
@@ -43,7 +43,7 @@ The choice of a VM and the corresponding toolset (programming Language, compiler
 
 ![](image_8ec5757380.jpg)
 
-### _Alephium’s tooling: Alphred & Ralph_
+## Alephium’s tooling: Alphred & Ralph
 
 Alephium’s stateful UTXO combines UTXO & account model and has [smart contract capabilities](/news/post/an-introduction-to-the-stateful-utxo-model-8de3b0f76749). It needs a VM to execute the smart contract’s instructions in a totally different runtime environment than other blockchains with enhanced security and performance features.
 
@@ -53,7 +53,7 @@ Similarly to the EVM with Solidity, Alphred has a [domain-specific language](htt
 
 The combination of Ralph (the language) and Alphred (the VM) has a lot of benefits, of which a few are outlined here:
 
-#### _Better UX, DevX & Security when moving assets_
+### Better UX, DevX & Security when moving assets
 
 An asset permission system controls access to and interaction with specific assets on the blockchain. For example, it would give a framework on what a smart contract a user is interacting with can access in the user’s account: a specific NFT, all NFTs, a specific amount of tokens, etc…
 
@@ -61,19 +61,19 @@ In Ethereum, when a user wants to transact anything other than ETH, he is greete
 
 ![](image_e4e02428f3.jpg)
 
-#### _MEV-aware design_
+### MEV-aware design
 
 A basic mechanism of MEV (Miner Extractable Value) is to find arbitrage opportunities and try to extract value from block production. The “MEV searchers” are able to do it because they can speculate on transaction ordering by digging into mempools. One of the incentives to try it is because this process can be (almost) risk-free: if the proposed transaction does not execute, there is no financial loss except for gas fee.
 
 On Alephium, as each transaction follows the Input/Output paradigm, a complex MEV operation would require multiple sequential transactions. This would make the operation more prone to competition, as other users could counter-run any of the transactions. As a result: more competition on MEV, more risks for MEV searchers, and therefore, higher costs. Compared to the EVM, MEV searchers cannot create complicated arbitrage operations in a single transaction. They can only do the same thing as normal users. This makes the protocol more resilient against MEV.
 
-#### _Flash loan resistant_
+### Flash loan resistant
 
 A flash loan bundles successive transactions inside one block with conditional execution. It requires interacting with several smart contracts in the same transaction to take a loan, use it in a dApp and repay it. If the repayment doesn’t happen, then none of the transactions happened. This works well in the account model blockchains.
 
 Alephium is UTXO-based, meaning the Input/Output paradigm dictates that output only can be used after the transaction is broadcasted to the network. Therefore, a loan can’t be instantly repaid in the same transaction. This makes [flash loans](https://coinmarketcap.com/alexandria/glossary/flash-loan) impossible by default.
 
-#### _More secure by design_
+### More secure by design
 
 It is hard to write secure smart contracts on most blockchains, in part because their programming languages and VMs give developers “too much freedom”. When they write code and rely on external sources (like [libraries](https://docs.openzeppelin.com/contracts/2.x/api/math)) to perform verifications, there is too much room for error, and bugs may happen, often critical.
 
@@ -89,19 +89,19 @@ Alphred [returns an exception](https://docs.oracle.com/javase/tutorial/essential
 
 The built-in [type system](https://en.wikipedia.org/wiki/Type_system) can verify the type of the functions and variables by itself, making the code less error-prone. These protections help to prevent the deployment of faulty smart contracts, letting the developer focus on other things.
 
-#### Lightweight/customizable contract events
+### Lightweight/customizable contract events
 
 Whenever someone uses a smart contract, it emits [contract events](https://techblog.geekyants.com/an-introduction-to-events-in-solidity), which are very useful for devs & services to monitor on-chain activity. For example, if an analyst wants to understand how a DEX is used or which pools are the most popular, he can check the contract events of swaps or failed swaps, etc… On most EVM chains, those contract events are automatically generated and stored on-chain for all smart contracts forever.
 
 In Alphred, the contract events are possible, activated by default, and can be disabled: they are entirely configurable and optional. If someone is only interested in the events emitted by a particular DEX, they can just listen to those. This should lead to more responsible, targeted use and less useless data stored because a more lightweight chain is better for node operators & decentralization.
 
-#### Bytecode with improved readability
+### Bytecode with improved readability
 
 When a developer writes a smart contract, he does it in a high-level, human-readable language like Solidity, or in our case, Ralph. When a user interacts with a smart contract, it is executed by a compiler which will interpret the human-readable code (written by the developer) into [bytecode](https://www.techtarget.com/whatis/definition/bytecode) that the VM will run. Bytecode is usually hard to read, which makes checking it a clumsy and time-consuming task.
 
 Alphred/Ralph bytecode was built with human readability in mind, rendering it easier to analyze/verify without extra software. This is helpful when performing unit tests and verifying an instruction’s return value because it makes it more efficient to verify the code & detect bugs early.
 
-### _In conclusion (TL;DR)…_
+## In conclusion (TL;DR)
 
 A Virtual Machine executes smart contract code and updates the blockchain state. Each blockchain implements a VM design targeted at achieving specific goals.
 
@@ -109,4 +109,4 @@ In the case of Alephium, the combination of Alphred (the VM) and Ralph (the prog
 
 This was only a short introduction to the main features of Alphred. A coming and detailed article, plus some Twitter threads, will shed more light on Alphred in the coming weeks.
 
-If you have questions on this topic, please come to Alephium’s [Discord](https://discord.gg/JErgRBfRSB), [Telegram](https://t.me/alephiumgroup), or reach out on [Twitter](https://twitter.com/alephium)!
+If you have questions on this topic, please come to Alephium’s [Discord](/discord), [Telegram](https://t.me/alephiumgroup), or reach out on [Twitter](https://twitter.com/alephium)!

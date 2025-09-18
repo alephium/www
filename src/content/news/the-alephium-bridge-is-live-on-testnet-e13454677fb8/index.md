@@ -6,8 +6,7 @@ spotlight: false
 featuredImage: image_9ee06c07f7.png
 title: The Alephium Bridge is live on Testnet!
 ---
-
-#### Bridge assets from and to Ethereum Goerli Testnet and BNB Smart Chain Testnet
+Bridge assets from and to Ethereum Goerli Testnet and BNB Smart Chain Testnet
 
 A key to the future of Alephium is the ability to move tokens cross-chain, and since before the Leman Upgrade was ready, a lot of work has gone on working on the first bridge to another chain.
 
@@ -25,30 +24,22 @@ In this article, you will find all you need to successfully bridge two ways from
 
 This includes the following steps:
 
-> What do you need to know beforehand to connect to the bridge?
-
-> How to connect to the Bridge?
-
-> How to connect to the Goerli Ethereum Testnet?
-
-> How to bridge an asset from Alephium to Goerli?
-
-> How to bridge an asset from Goerli to Alephium?
-
-> How to connect to the BSC Testnet?
-
-> How to bridge an asset from Alephium to BSC Testnet?
-
-> How to bridge an asset from BSC Testnet to Alephium?
+- What do you need to know beforehand to connect to the bridge?
+- How to connect to the Bridge?
+- How to connect to the Goerli Ethereum Testnet?
+- How to bridge an asset from Alephium to Goerli?
+- How to bridge an asset from Goerli to Alephium?
+- How to connect to the BSC Testnet?
+- How to bridge an asset from Alephium to BSC Testnet?
+- How to bridge an asset from BSC Testnet to Alephium?
 
 Let’s get started!
 
-### 1 — What you need to know before connecting to the bridge
+## 1. What you need to know before connecting to the bridge
 
-<figure id="95fa" class="graf graf--figure graf-after--h3">
-<img src="image_1cba43d838.png" class="graf-image" data-image-id="1*ZObINXgYH-n36EiZxE4aGQ.png" data-width="2878" data-height="1190" />
-<figcaption>Get ready for a transformative experience</figcaption>
-</figure>
+![](image_1cba43d838.png)
+
+Get ready for a transformative experience
 
 _🚨 It is not yet possible to use the bridge on the mainnet   
 🚨 Before starting, make sure you are connected to Alephium’s testnet!  
@@ -73,12 +64,11 @@ You can ask for some right from the wallet!
 
 ![](image_4827281ff4.png)
 
-### 2 — How to connect to the bridge?
+## 2. How to connect to the bridge?
 
-<figure id="c047" class="graf graf--figure graf-after--h3">
-<img src="image_8b1cb8874d.png" class="graf-image" data-image-id="1*JvEpK8zI9Ocpr27_IktV4g.png" data-width="2880" data-height="1186" />
-<figcaption>Hop on the wagon and let’s go!</figcaption>
-</figure>
+![](image_8b1cb8874d.png)
+
+Hop on the wagon and let’s go!
 
 To connect to the bridge, go to [https://portal-bridge.wormhole-testnet.alephium.org](https://portal-bridge.wormhole-testnet.alephium.org/)
 
@@ -96,12 +86,11 @@ After choosing your connection method, you can see your address below the two ch
 
 The token bridge helps to send a token from one network to another. Now that you’re connected on Alephium’s side, it is time to connect to the other side: The first destination, the Goerli Ethereum testnet.
 
-### 3 — How to connect to the Goerli Ethereum testnet?
+## 3. How to connect to the Goerli Ethereum testnet?
 
-<figure id="2747" class="graf graf--figure graf-after--h3">
-<img src="image_5d5d1ccad8.png" class="graf-image" data-image-id="1*ZCbruOp6T_n49kcJMCzWIQ.png" data-width="2870" data-height="1182" />
-<figcaption>Goerli workers fixing transactions</figcaption>
-</figure>
+![](image_5d5d1ccad8.png)
+
+Goerli workers fixing transactions
 
 To connect to the Goerli Ethereum testnet, you will need a wallet. In this example, we’ll use [Metamask](https://metamask.io/) but it would work similarly with other wallets.
 
@@ -131,12 +120,11 @@ After receiving the ETH Goerli tokens, your Metamask wallet will be able to pay 
 
 ![](image_d10506a337.png)
 
-### 4-How to bridge an asset from Alephium to Goerli?
+## 4. w to bridge an asset from Alephium to Goerli?
 
-<figure id="f2da" class="graf graf--figure graf-after--h3">
-<img src="image_7bcb1b0662.png" class="graf-image" data-image-id="1*4J-XOCg1NOGaqQiBAyPN3g.png" data-width="2870" data-height="1188" />
-<figcaption>Let’s get those tokens moving.</figcaption>
-</figure>
+![](image_7bcb1b0662.png)
+
+Let’s get those tokens moving.
 
 With your Alephium wallet connected on the bridge page, select the asset you want to bridge from Alephium to Goerli.
 
@@ -212,12 +200,11 @@ If, for some reason, you left the bridge page before redeeming your tokens, you 
 
 Your Goerli ETH wallet will then show the transaction for our review. Check if everything is fine and click on “Confirm.”
 
-### 5- How to bridge an asset from Goerli to Alephium?
+## 5. ow to bridge an asset from Goerli to Alephium?
 
-<figure id="ada2" class="graf graf--figure graf-after--h3">
-<img src="image_ebf7d75f48.png" class="graf-image" data-image-id="1*Dkerqp_sgWMWe1SQLqkpww.png" data-width="2880" data-height="1188" />
-<figcaption>And back!</figcaption>
-</figure>
+![](image_ebf7d75f48.png)
+
+And back!
 
 🚨 _Before starting the process, make sure you are connected to the Goerli Ethereum Testnet on Metamask!_
 
@@ -307,7 +294,7 @@ If, for some reason, you left the bridge page before redeeming your tokens, you 
 
 ![](image_7e368043d3.png)
 
-### 6 — How to connect to the BSC Testnet?
+## 6. How to connect to the BSC Testnet?
 
 To connect to the BSC Testnet, you will need a wallet. [Metamask](https://metamask.io/) is one of the available choices and will be used in this example.
 
@@ -339,7 +326,7 @@ After receiving the tBNB funds, your Metamask wallet can pay the transaction fee
 
 ![](image_ab987fdeea.png)
 
-### 7 — How to bridge an asset from Alephium to BSC Testnet?
+## 7. How to bridge an asset from Alephium to BSC Testnet?
 
 With your Alephium wallet connected on the bridge page, select the destination network to the BSC testnet.
 
@@ -419,7 +406,7 @@ Insert the following information:
 
 Now the token is displayed in your wallet.
 
-### 8 — How to bridge an asset from BSC Testnet to Alephium?
+## 8. How to bridge an asset from BSC Testnet to Alephium?
 
 🚨 _Before starting the process, ensure you are connected to the BSC Testnet!_
 

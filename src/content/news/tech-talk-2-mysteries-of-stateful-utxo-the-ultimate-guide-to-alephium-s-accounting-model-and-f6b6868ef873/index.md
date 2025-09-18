@@ -16,7 +16,7 @@ _TL;DR — On the topic of state size, contract storage rent and upgradabili
 
 _If you just stumbled here, find part 1_ [here](/news/post/tech-talk-2-mysteries-of-stateful-utxo-the-ultimate-guide-to-alephiums-accounting-model-and-de2cf2063615)_._
 
-#### On the topic of state size, contract storage rent and upgradability
+## On the topic of state size, contract storage rent and upgradability
 
 **VM: If developers want their code stored in the state, do they have to pay for it? How long does this storage last? Can they destroy it?**
 
@@ -58,7 +58,7 @@ CW: It would be less than 1 KB. It’s quite interesting actually; we compared t
 
 CW: There are likely more than 10 million smart contracts on Ethereum. In our case, the number will be less than the circulating supply of ALPH. I don’t see this as a problem because there will be a natural balance. If there are more contracts to be deployed, it indicates high demand. The market will accordingly adjust the price. In such a scenario, storage becomes quite expensive. Consequently, the price for depositing will rise, and the market will make the necessary adjustments.
 
-#### About NFT implementations
+## About NFT implementations
 
 **VM: How does the NFT minting process work as a native token? How do you determine the number of NFTs that will be in a series, and so on?**
 
@@ -100,7 +100,7 @@ CW: Yes, that’s the practical approach. In some cases, it would be good to tra
 
 The smart contract is written so that, when I’m the owner, I can sell the NFT to you, for example, and then you become the owner, and then you get permission to destroy the contract.
 
-#### Exploring the main benefits of sUTXO: security and functionality
+## Exploring the main benefits of sUTXO: security and functionality
 
 **VM: How does the separation of token, contract state, and contract code bring about novelty? What does it provide that isn’t possible in the existing paradigm? What does it allow that we haven’t seen before in Bitcoin, Ethereum, or any other blockchains?**
 

@@ -5,8 +5,7 @@ spotlight: false
 featuredImage: image_bcc69de2ae.jpeg
 title: AMA Session — Writen format
 ---
-
-#### All answers about the exciting new developments in Alephium’s ecosystem!
+All answers about the exciting new developments in Alephium’s ecosystem!
 
 On March 28th, Alephium held an [AMA session](https://www.youtube.com/watch?v=Gf1mDGddM2I) with the community, to answer questions about the [Leman Network Upgrade](/news/post/the-leman-network-upgrade-is-live-f52c89b7dd6a). This medium article has some of the most relevant questions.
 

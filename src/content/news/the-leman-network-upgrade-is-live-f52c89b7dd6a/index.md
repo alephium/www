@@ -5,30 +5,29 @@ spotlight: false
 featuredImage: image_ae3e3a21fd.jpeg
 title: The Leman Network Upgrade is Live!
 ---
-
-#### New features & tools to support a thriving Alephium Ecosystem
+New features & tools to support a thriving Alephium Ecosystem
 
 The Leman Network Upgrade was activated on the mainnet at 10:00 GMT, March 30th, 2023! The Alephium blockchain is running without any issues, producing blocks at a stable rate. While the core developers will remain closely monitoring the network, it is time to thank the awesome support of all community members and service providers who made this possible!
 
 This network upgrade is the culmination of over a year of hard work and dedication from many contributors, and it represents a significant milestone for our community. It is also the first step towards the growth of the Alephium ecosystem, with an enhanced developer experience to build decentralized applications (DApps) on Alephium.
 
-### New and Improved Features
+## New and Improved Features
 
 The Leman Network Upgrade now gives the users and developers access, among other innovations, to the following:
 
-#### Sub-contracts and Dynamic Array Indexing
+### Sub-contracts and Dynamic Array Indexing
 
 Sub-contract resembles the map data structure but eliminates some of the security issues of the maps in other blockchains. It increases the expressivity of the language without compromising security.
 
 Dynamic array indexing is a feature that enables smart contracts to store and retrieve data more efficiently and flexibly. With dynamic array indexing, smart contracts can access specific data elements within an array based on their index, allowing for faster and more precise data retrieval.
 
-#### External Call System
+### External Call System
 
 The external call system is a security feature introduced to improve smart contracts' security. It helps to prevent public functions of the smart contracts from being called by unintended callers, if these methods have the ability to mutate the state of the contracts. By default, it requires contracts to specify which external callers are allowed to interact with them. When a caller calls a public function of a contract, the external call check system ensures that the caller is allowed to do so.
 
 This system provides an additional layer of security for smart contracts and can help to prevent a range of attacks related to unintended or unauthorized calls to methods. Making the external call system a default feature for all smart contracts makes it easier for developers to create more secure and resilient decentralized applications.
 
-#### Storage separation between immutable and mutable fields
+### Storage separation between immutable and mutable fields
 
 In the context of blockchain smart contracts, “immutable” means that once a variable or data structure has been defined, it cannot be changed. “Mutable” means the opposite, that the value of a variable or data structure can be modified after it has been defined. it is important to have both mutable and immutable fields, as some data needs to be changeable while others need to be unchangeable for the system’s integrity.
 
@@ -36,7 +35,7 @@ The separation of immutable and mutable fields means they are stored in differen
 
 Separating these two types of fields and storing them in different locations, allows for greater security and efficiency and helps to prevent unintended changes or modifications to the smart contract.
 
-#### Improved Difficulty Adjustment Algorithm (DAA)
+### Improved Difficulty Adjustment Algorithm (DAA)
 
 The Alephium Blockchain activated an improved way of adjusting the mining difficulty in different chains to ensure fair mining incentives across all chains. The previous method allowed each chain to have a different difficulty level, which could result in uneven distribution of mining power and rewards. The activated method adjusts the difficulty level based on the estimation done for all chains to make sure that all chains have the same difficulty level at a specific time.
 
@@ -44,7 +43,7 @@ To avoid fluctuation in the hashpower of each chain caused by transaction fees, 
 
 The changes are not expected to significantly impact miners in the short term, as the number of transactions is currently low. However, in the long term, miners will continue to mine for profit, and the implemented changes will ensure fair mining incentives across all chains.
 
-#### Schnorr Signatures Support
+### Schnorr Signatures Support
 
 [Schnorr Signatures](https://twitter.com/alephium/status/1638541074074578946) are a type of digital signature algorithm that was first proposed by Claus-Peter Schnorr in 1989. They are similar in function to other digital signature algorithms, such as the widely used RSA and Elliptic Curve Digital Signature Algorithm (ECDSA), but have some advantages over those algorithms in terms of efficiency and security.
 
@@ -61,7 +60,7 @@ Now the Alephium blockchain enabled:
 
 Currently, the browser wallet extension already supports the Schnorr type of account and can interact with the Nortr protocol.
 
-#### Automatic generation of TypeScript code from smart contracts
+### Automatic generation of TypeScript code from smart contracts
 
 When developers write smart contracts, they usually need to interact with them from other parts of their application code. To do this, they typically need to import a JSON file that describes the smart contract’s interface, which can be cumbersome and error-prone.
 
@@ -69,15 +68,15 @@ To simplify this process, Alephium offers a code generation tool that automatica
 
 This can significantly speed up the development process and reduce the likelihood of errors or inconsistencies between the smart contract and the application code that interacts with it.
 
-#### Secure, efficient, and friendly development toolkits
+### Secure, efficient, and friendly development toolkits
 
 A collection of new tools have immensely improved the developer experience, making it easier and faster for developers to build on top of our platform. The Web3 SDK provides a comprehensive set of APIs and libraries, while the extension wallet allows easy interaction with dApps. React support and project templates streamline the development process and reduce the time it takes to get up and running with a new project. Moreover, the VScode extension for writing smart contracts provides developers with a familiar and powerful toolset that makes it easy to write secure and efficient contracts. By highlighting these tools, more developers would be onboarded and encouraged to build on Alephium and make the most of these powerful features.
 
-### Future developments
+## Future developments
 
 Now that the network is upgraded, different initiatives will be developed in parallel. Some of these initiatives are
 
-#### Code-related
+### Code-related
 
 - **Bridge:** deployment on the mainnet of the wormhole-based Alephium-Ethereum Bridge done by the core development team and then looking for other ecosystems to bridge to;
 - **Wallets:** New Desktop Wallet and the debut of the Mobile Wallet with token support, dApps interaction, and wallet-connect support; Improved User Experience for the Browser Wallet Extension with additional features such as NFT support.
@@ -85,7 +84,7 @@ Now that the network is upgraded, different initiatives will be developed in par
 - **Light clients, optimizations to storage, test coverages:** general network optimizations and exploring new directions to leverage the scalability of the blockchain;
 - **Integrations** with wallets (Ledger, for example) and payments services.
 
-#### Community Development
+### Community Development
 
 - Launch of the \#BuildonAlephium Hackathon Series
 - Presence in dev events

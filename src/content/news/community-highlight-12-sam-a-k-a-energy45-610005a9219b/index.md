@@ -11,21 +11,21 @@ _Regularly, we put the spotlight on an active member of the Alephium community. 
 
 _An IT guy that has been around since before the launch of mainnet, he is an active member of the community (he also mines and runs a node!). But there is more to that in_ [Sam](http://www.linkedin.com/in/samuelberclaz)_, a.k.a energy45, read on!_
 
-### Tell us about yourself/your persona
+## Tell us about yourself/your persona
 
 I’m 40 years old, I have 2 children, and more than 20 years in SME IT management, currently consulting in IT. I like to analyze things from an helicopter POV, find solutions out of the box, be the best human being I can afford, and understand people and things with empathy. Love is the key to everything.
 
 In that sense, I love my job since it unites perfectly technical and human dimensions.
 
-### How did you find out about Alephium?
+## How did you find out about Alephium?
 
 Shortly (a few months) before the mainnet launch, an old friend and colleague active in Alephium’s community got me into the adventure. He talked to me about Alephium, which quickly got my primary attraction in the crypto world.
 
-### What excites you about Alephium?
+## What excites you about Alephium?
 
 New [technical paradigm](/) new trilemma approach/compromise, [wonderful community](/discord), very responsive and involved team.
 
-### What excites you about the future of Alephium?
+## What excites you about the future of Alephium?
 
 My previous answer was a view of Alephium from the outside. But when you do your own little research, you begin to understand what’s under the hood…
 
@@ -37,13 +37,13 @@ Did you know that more attack vectors are due to your [EVM implementation](/news
 
 To this, I had nothing consistent to answer, so I got a ride. Alephium’s exciting part for me is all the potential for such an undervalued solution.
 
-### How do you contribute to the Alephium ecosystem?
+## How do you contribute to the Alephium ecosystem?
 
 - Mining and running a node;
 - being a part of Alephium’s discord’s life, answering DMs, questions, contributing to review some tweets, wearing an [Alephium T-shirt](https://alephium.myspreadshop.ch/);
 - Getting my daughter into the game.
 
-### What do you like to do in your free time? Any hobbies?
+## What do you like to do in your free time? Any hobbies?
 
 I like philosophy, psychology, geeking, exchanging with people, and inline roller.
 

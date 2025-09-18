@@ -5,20 +5,19 @@ spotlight: false
 featuredImage: image_e28cc04c7e.jpg
 title: Alephium Core Contributors
 ---
-
-#### Interviews of the humans behind Alephium.
+Interviews of the humans behind Alephium.
 
 For its team, Alephium is privileging agility and efficiency over hyper-growth. We do not stay at a human size because we think it is more efficient, but because Alephium strives to be a decentralised, community driven project. This means the project in itself is much larger than a team can ever be. Communication, trust, openness and transparency is paramount in such a set-up.
 
 In fact, we haven’t communicated much about ourselves so far because we think _who we are_ is less relevant than _what we deliver_. To nevertheless shed some light on who we are and what we do, we decided to share a little about ourselves with the community through a small series of interviews.
 
-_This is an updated version of the previously released articles available here:\***\*  
-\*\***Ep.1:_ [https://medium.com/@alephium/3472f8295af6](/news/post/3472f8295af6)_  
-Ep.2:_ [https://medium.com/@alephium/bec6e6908d2f](/news/post/bec6e6908d2f)_  
-Ep.3:_ [https://medium.com/@alephium/64b6dacc1459](/news/post/64b6dacc1459)_  
-Ep.4:_ [https://medium.com/@alephium/3886003b8fef](/news/post/3886003b8fef)
+This is an updated version of the previously released articles available here:
+- Ep.1: [https://medium.com/@alephium/3472f8295af6](/news/post/3472f8295af6)
+- Ep.2: [https://medium.com/@alephium/bec6e6908d2f](/news/post/bec6e6908d2f)
+- Ep.3: [https://medium.com/@alephium/64b6dacc1459](/news/post/64b6dacc1459)
+- Ep.4: [https://medium.com/@alephium/3886003b8fef](/news/post/3886003b8fef)
 
-### Backend Team
+## Backend Team
 
 ### Cheng
 
@@ -59,8 +58,6 @@ I am involved in all of the technical stuff in Alephium. I focus more on the cor
 
 To solve the scalability and security challenges of blockchain with high-quality code.
 
----
-
 ### Thomas
 
 ![](image_038cafbfdd.jpg)
@@ -96,8 +93,6 @@ I’m a core developer, as I joined quite early the project I had the opportunit
 #### What is it you care the most for in our creation?
 
 I would say our team, even though it’s a small one, everyone is where they should be and we built great stuff thanks to that.
-
----
 
 ### muchen
 
@@ -137,8 +132,6 @@ I’m working on the bridge now, I’m good at reading codes and understanding h
 
 What I care about the most is how we can attract more developers.
 
----
-
 ### h0ngcha0
 
 ![](image_13566e263f.jpg)
@@ -151,7 +144,7 @@ h0ngcha0, Sweden.
 
 SEU, China; CTH, Sweden.
 
-### Got links?
+#### Got links?
 
 - [https://hongchao.me](https://hongchao.me/)
 - [https://github.com/h0ngcha0](https://github.com/h0ngcha0)
@@ -175,8 +168,6 @@ Core contributor.
 #### What is it you care the most for in our creation?
 
 Build alternatives in this increasingly polarizing world.
-
----
 
 ### Benoit
 
@@ -219,8 +210,6 @@ But if I was forced to choose a title, I’d call myself Plumbing engineer. Or C
 #### What is it you care the most for in our creation?
 
 Blockflow technology is so simple that many other projects are asking themselves why they didn’t think about it already. And bringing stability and resiliency to this awesome technology is what I care the most about this creation.
-
----
 
 ### Simer
 
@@ -270,11 +259,9 @@ Database-related software development.
 1.  Alpehium’s scalability.
 2.  High performance & testable code.
 
----
+## Frontend Team
 
-### Frontend Team
-
-### Mika — UX/UI
+### Mika
 
 ![](image_11d3f144d4.jpeg)
 
@@ -312,9 +299,7 @@ I’m the front-end product guy! (chief of product, for those who care about tit
 
 Efficiency, robustness and accessibility.
 
----
-
-### Ilias— UX/UI
+### Ilias
 
 ![](image_a4cb064ac9.jpeg)
 
@@ -333,7 +318,6 @@ I love messing around with knobs. Particularly, knobs that control some sort of 
 #### Got links?
 
 [https://www.linkedin.com/in/iliastrichopoulos/](https://www.linkedin.com/in/iliastrichopoulos/)  
-[https://iliascreates.com](https://iliascreates.com/)  
 [https://twitter.com/\_nop33](https://twitter.com/_nop33)  
 [https://github.com/nop33](https://github.com/nop33)  
 [https://soundcloud.com/imfetamin](https://soundcloud.com/imfetamin)
@@ -356,11 +340,10 @@ I am a frontend engineer and my responsibility is to create beautiful, performan
 
 I believe that blockchain technology has a lot to offer and that it’s here to stay. Apart from the technological challenges that some of the smartest people in the space are currently keeping themselves busy with, one of the clunkiest things at the moment is user experience. I want to dedicate my technical and human skills towards improving the experience people have when interacting with blockchains so that their true benefits can shine. Part of Alephium’s mission is to make this technology more accessible and usable than it is today. A for Adoption. A for Alephium. 🚀
 
----
 
-### Operations and Marketing
+## Operations and Marketing
 
-### Maud-OPS
+### Maud
 
 ![](image_2a739dc68e.jpg)
 
@@ -402,9 +385,7 @@ I’m currently Chief of Staff. What it concretely means at Alephium is that I o
 
 Blockchain will transform our society in many ways. I want to actively contribute to this change. Specifically, beyond the technological innovations, I am passionate about how the blockchain space has already challenged the way individuals traditionally work together. Blockchain bring together diverse and complementary talents, distributed around the world, working asynchronously towards a common goal.
 
----
-
-### Philipp-OPS
+### Philipp
 
 ![](image_9b104d85f9.jpg)
 
@@ -442,8 +423,6 @@ As CFO I’m responsible for all finance related topics at Alephium.
 
 I’d say overall the most important point for me is to see Alephium achieve its goals and create a healthy ecosystem. I see my contribution to this by ensuring to diligently run my department so that people can focus on their core tasks and build the ecosystem.
 
----
-
 ### Vlad
 
 ![](image_8382aaa0a6.jpg)
@@ -477,8 +456,6 @@ I’m helping to shape the communications and marketing of Alephium. The goal is
 #### What is it you care the most for in our creation?
 
 I like the unbending tech ambition to bring the absolute best of crypto in all aspects and I like the proximity of the team to the community.
-
----
 
 ### Polto
 
@@ -519,8 +496,6 @@ I am mostly connecting people, helping to find the best partners, working on the
 #### What is it you care the most for in our creation?
 
 No bullshit!
-
----
 
 ### Thiago
 

@@ -11,15 +11,15 @@ _The Alephium blockchain, like many decentralized networks, relies heavily on th
 
 _Cedric Crispin, a French miner passionate about Alephium, decentralisation and aerial photography, is starting this series!_
 
-#### **What can we call you, and where should we picture you?**
+## **What can we call you, and where should we picture you?**
 
 My name is the same of my mining pool: [Cedric CRISPIN](https://alephium.cedric-crispin.com/). I’m from France, more specifically, the French West Indies (Martinique).
 
-#### **Can you tell us a bit about yourself, your passion for mining, and your background story?**
+## **Can you tell us a bit about yourself, your passion for mining, and your background story?**
 
 I’m currently a Python lead developer in a web agency. I graduated with a degree in computer science back in 2008. And I have been working in the IT/data-center realm since then. I actually discovered \`Bitcoin\` the year after my graduation, but sadly, I was so excited about getting my very first job, that I totally neglected it back then. I still remember how popular it was in the French IT/Cryptography scene. Everyone was sharing its white paper and discussing how disruptive it could be.
 
-#### **When & how did you get into mining cryptocurrency?**
+## **When & how did you get into mining cryptocurrency?**
 
 Before I truly got involved in mining, I had one major event in my life. In 2014, my Thai fiancee, whom I met a couple of years before, got a job opportunity in her home country, and she asked me if I would accept to follow her and live there. Of course, I said yes. For two reasons: discovering her roots in Southeast Asia and Thailand would have been an [incredible playground for aerial videography/photography](https://www.instagram.com/blackmennewstyle/), which is also one of my big passions (it is still to this day, despite all the unfair regulations created against “consumer class drones”).
 
@@ -29,22 +29,21 @@ I had the perfect opportunity to explore it when we bought our first place in 20
 
 I think that, like many people, I learned about GPU mining through YouTube, which is not really the best place to start because a lot of concepts about GPU mining are lacking in the YouTube mining space: node software, network decentralization, pool latency, pool reward systems (PPLNS, PROP, etc…). The focus is way too directed on the profits aspect of it and not enough on the educational and technical aspects.
 
-#### **How long have you been mining Alephium?**
+## **How long have you been mining Alephium?**
 
 I have been mining ALPH since its launch during the human malware pandemic outbreak. I saw an interview with Cheng Wang, when he was introducing his new blockchain, and I really felt like it was an interesting project to support.
 
-#### **What made you switch to mining Alephium?**
+## **What made you switch to mining Alephium?**
 
 Obviously, it's PoW algorithm (blake3), which is very cool on GPU since it’s mostly a core-intensive algorithm.
 
-#### **What inspired you to create your own mining pool on Alephium? What is the size of your mining operation? Where do you see it going?**
+## **What inspired you to create your own mining pool on Alephium? What is the size of your mining operation? Where do you see it going?**
 
 Since I started mining, I have always wanted to learn about running a pool, and since my very first experimentation, I noticed it relies on programming languages and software which are very close to my daily job, so I had no excuse not to learn except, as always, the lack of free time.
 
-<figure id="549f" class="graf graf--figure graf-after--p">
-<img src="image_596cb91bc2.png" class="graf-image" data-image-id="1*l5QFRKKcBxI8NEL-gBxbpQ.png" data-width="1318" data-height="595" />
-<figcaption>[https://alephium.cedric-crispin.com/](https://alephium.cedric-crispin.com/)</figcaption>
-</figure>
+![](image_596cb91bc2.png)
+
+[https://alephium.cedric-crispin.com/](https://alephium.cedric-crispin.com/)
 
 But I think the main reason which pushed me to create my mining pool is the same reason which also pushed me not to use HiveOS and developed my own mining scripts while using bare bone OS like GNU/Linux Debian and Ubuntu: I always wanted as much as possible to be in control of the software I use.
 
@@ -54,7 +53,7 @@ Sadly in Thailand, home owners can only have a maximum of 50A panel breaker for 
 
 My pool, due to its location, is probably not suitable for everyone. It’s located in Thailand, so miners in Southeast Asia will probably always be advantaged in terms of pool latency. But I do have miners from the US and Canada, who claim that the 300ms of latency they are experiencing is not really an issue so far since they are able to find a lot of blocks.
 
-#### **We’ve seen you’re passionate about hashrate distribution and decentralization. Can you tell us more about it?**
+## **We’ve seen you’re passionate about hashrate distribution and decentralization. Can you tell us more about it?**
 
 A good miner and a good pool operator must be able, at least, to understand how a node software works and be fully aware of its importance. They must be properly aware of all the implications behind most POW algorithms and how they fully extend to the mining hardware. I also think it is very important for them to participate in most of the communities around all the projects they are interested in because a good actor in the crypto space should always want to push the community forward when he/she goes forward.
 
@@ -62,11 +61,11 @@ A good miner and a good pool operator must be able, at least, to understand how 
 
 I would love it if my mining pool could help decentralize the POW network hashrate on ALPH, but sadly, miners are generally not very cooperative and always prefer selecting the top pools.
 
-#### **Anything else you’d like to share with the community?**
+## **Anything else you’d like to share with the community?**
 
 Decentralize the ALPH PoW network and any other network. Participate in communities you truly enjoy, especially if you have skills they can use. Chase passions and dreams instead of just money, don’t be afraid to take risks and fail, always share your true wealth: Knowledge ❤
 
-#### **Social networks:**
+## **Social networks:**
 
 [https://twitter.com/Cedric_Crispin](https://twitter.com/Cedric_Crispin)
 

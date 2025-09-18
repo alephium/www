@@ -22,10 +22,9 @@ Most ALPH (86% of the max supply or 860 million ALPH) will be mined over ~82 yea
 
 The remaining 140 million ALPH (14% of the max supply) were minted with the genesis block for the Ecosystem, Sales, Team & Treasury allocations (and vest over time, see Genesis Allocation & Vesting Schedule section below).
 
-<figure id="1158" class="graf graf--figure graf-after--p">
-<img src="image_9c872051c7.png" class="graf-image" data-image-id="1*7CUw_vtudapR4kvE2MY29w.png" data-width="1280" data-height="600" />
-<figcaption>Total emission and Genesis Allocation</figcaption>
-</figure>
+![](image_9c872051c7.png)
+
+Total emission and Genesis Allocation
 
 ### Mining Emissions
 
@@ -35,7 +34,7 @@ You will find the full details & calculations of the mining rewards in [this art
 
 The core emission schedule works like this: the block reward is bound by two curves based on hashrate and timestamp. At a given time and for a given hashrate, the reward per block equals the minimum between the time-based and hashrate-based rewards.
 
-> Block Reward = min (time-based reward, hashrate-based reward).
+> Block Reward = min(time-based reward, hashrate-based reward)
 
 When this article was last updated, the average block reward was 2.43 ALPH, resulting in approximately 50’554 ALPH mined daily (you can check the calculation [here](https://docs.alephium.org/frequently-asked-questions#how-many-coins-are-mined-per-day)).
 
@@ -96,7 +95,7 @@ If you have extra questions, you are welcome to reach out on our [Discord](/disc
 
 ---
 
-**Previous version of the document — *September, 2023***
+## Previous version of the document — September, 2023
 
 ### Alephium Tokenomics
 
@@ -126,10 +125,6 @@ At Mainnet Launch, an initial supply 140M tokens (14% of the HardCap) was minted
 
 The remaining supply of ALPH (86% or 860 million ALPH) tokens will be [mined](/news/post/alephium-block-rewards-72d9fb9fde33) over the next ~82 years (from 2021). The theoretical hardcap is 1 billion ALPH but it will never be reached due to deflationary forces like transaction fee burning (see below in the FAQ).
 
-<figure id="b5a9" class="graf graf--figure graf--iframe graf-after--p">
-
-</figure>
-
 The genesis tokens are allocated as follows:
 
 - **80M** (8%) for past and upcoming **sales**, subject to on-chain lock with vesting periods varying from 2 to 4 years, unlocked quarterly (see below for details).
@@ -139,10 +134,6 @@ The genesis tokens are allocated as follows:
 ### Tokens vesting global view
 
 Of the 140M tokens mined at genesis, almost all of them are vesting over 2 to 4 years. Here’s the global unlock/vesting tokens graph, outlining how the initial unlocks are happening over the 3 different pockets of tokens:
-
-<figure id="bb5d" class="graf graf--figure graf--iframe graf-after--p">
-
-</figure>
 
 You’ll notice the graph doesn’t reach 140M tokens, that’s because not all of the sales-allocated tokens have been sold yet.
 
@@ -203,7 +194,7 @@ _Maximum Supply:_ The theoretical maximum of ALPH tokens, set at 1 billion. It w
 
 ---
 
-**Previous version of the document — *Oct 5, 2021***
+## Previous version of the document — Oct 5, 2021
 
 ### Tokenomics of Alephium
 
@@ -243,8 +234,6 @@ There are several deflationary forces in Alephium’s tokenomics, including:
 - 100% of the transaction fees are burned with each block.
 - When triggered, [Alephium’s Proof of Less Work](/news/post/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301) internalizes part of the mining cost through the upfront burning of ALPH.
 
-<figure id="7f99" class="graf graf--figure graf-after--li graf--trailing">
-<img src="image_eeb8d1f4c3.png" class="graf-image" data-image-id="1*YjGQ0H2PWMhX9AIi9dUSkg.png" data-width="1140" data-height="674" />
-<figcaption><em>This graph represents the estimated high-level overview of the token release schedule of Alephium for the 4 years after the mainnet launch. <br />
-</em><strong><em>Please note that: 1.</em></strong> <em>The Sales component might be lower than depicted. Indeed, any remaining, unsold token will be burnt, resulting in a smaller release supply.</em> <strong><em>2.</em></strong> <em>In practice, the mining reward depends on block time and hashrate. As a result, depending on the effective hashrate, it is possible that fewer tokens will be mined over the 4 years following the mainnet launch.</em></figcaption>
-</figure>
+![](image_eeb8d1f4c3.png)
+
+This graph represents the estimated high-level overview of the token release schedule of Alephium for the 4 years after the mainnet launch. Please note that: 1. The Sales component might be lower than depicted. Indeed, any remaining, unsold token will be burnt, resulting in a smaller release supply. 2. In practice, the mining reward depends on block time and hashrate. As a result, depending on the effective hashrate, it is possible that fewer tokens will be mined over the 4 years following the mainnet launch.

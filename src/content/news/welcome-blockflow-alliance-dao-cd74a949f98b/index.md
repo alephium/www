@@ -13,15 +13,14 @@ But today, it’s about the community. And the community is going one step furth
 
 ![](image_145c98fcf9.png)
 
-#### **Welcome Blockflow Alliance DAO!**
+## **Welcome Blockflow Alliance DAO!**
 
 The first community-run DAO has been announced yesterday, and has given itself the following objectives:
 
-> _Boosting Adoption and Usage: \[…\]  
-> Expanding the Community: \[…\]  
-> Nurturing Development: \[…\]_
-
-> _Promoting the Alephium Ecosystem: \[…\]_
+- Boosting Adoption and Usage
+- Expanding the Community  
+- Nurturing Development
+- Promoting the Alephium Ecosystem
 
 It is being built around well-known and highly respected community members, [cgi-bin](https://twitter.com/cg1_bin), [Oheka](https://twitter.com/Oheka32), [Diomark](https://twitter.com/diomark), [Ryannn](https://twitter.com/RyanRit91769208), [hEAdroom](https://twitter.com/headroomcapital) & [Waldi](https://twitter.com/zkitbeats).
 

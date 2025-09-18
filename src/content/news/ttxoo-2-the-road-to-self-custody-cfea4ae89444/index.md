@@ -12,10 +12,9 @@ On Thursday, August 4th, on [our Discord](https://discord.gg/JErgRBfRSB), during
 
 This article is a recap of the presentation and Q&A we had with the community.
 
-<figure id="02cc" class="graf graf--figure graf-after--p">
-<img src="image_17a120a7ac.jpg" class="graf-image" data-image-id="0*wK7HdybySNK4dnKh" data-width="1600" data-height="898" />
-<figcaption>Our friends from Holding graced us with their time and expertise</figcaption>
-</figure>
+![](image_17a120a7ac.jpg)
+
+Our friends from Holding graced us with their time and expertise
 
 [Hodling SA](https://hodling.ch/) _provides non-custodial bitcoin storage solutions for owners of large bitcoin balances. They have developed procedures backed by years of Bitcoin and finance expertise to help users securely and efficiently manage their funds. In addition, they offer multisignature wallet services, cryptocurrency concierge services, and workshops on Bitcoin fundamentals._
 
@@ -35,19 +34,17 @@ When thinking about this topic, a good solution has to take into account the fol
 
 Hodling’s talk presents a ladder of seven incrementally more secure & sovereign custody levels. As you move up, these setups are incrementally more technically complex and pricey. Before choosing its setup, one must consider the trade-offs and be careful not to overcomplicate things. **The complexity level must make sense for the capital at stake.**
 
-<figure id="f00c" class="graf graf--figure graf-after--p">
-<img src="https://cdn-images-1.medium.com/max/800/0*qUAFXcD7pXQ1zaXY" class="graf-image" data-image-id="0*qUAFXcD7pXQ1zaXY" data-width="1024" data-height="475" />
-<figcaption>The road to self custody is steep! And masterfully illustrated by [Set Hallstrom](https://medium.com/u/3341dd76fc9a)</figcaption>
-</figure>
+![](https://cdn-images-1.medium.com/max/800/0*qUAFXcD7pXQ1zaXY)
+
+The road to self custody is steep! And masterfully illustrated by [Set Hallstrom](https://medium.com/u/3341dd76fc9a)
 
 _These seven steps on the road to self-custody are tailor-made for the state of the Alephium ecosystem of tools and services as it is today. Even if most of these steps are adaptable for other crypto-assets, the talk focused on what’s possible for ALPHs today._
 
 ### 1/7 — Custody on an Exchange
 
-<figure id="2c57" class="graf graf--figure graf-after--h3">
-<img src="image_5d59965781.jpg" class="graf-image" data-image-id="0*5JFG5uXcsnjhEXNv" data-width="1024" data-height="768" />
-<figcaption>[Andreas M. Antonopoulos](https://medium.com/u/898f59563d67) rules</figcaption>
-</figure>
+![](image_5d59965781.jpg)
+
+[Andreas M. Antonopoulos](https://medium.com/u/898f59563d67) rules
 
 **Pros **— To buy and hold your assets on a centralized exchange has advantages. First, you don’t need a crypto wallet. It is the simplest way to have some kind of interaction with crypto assets.
 
@@ -59,10 +56,9 @@ _These seven steps on the road to self-custody are tailor-made for the state of 
 
 ### 2/7 — Phone/Computer Hot Wallet with a Proper Backup
 
-<figure id="7571" class="graf graf--figure graf-after--h3">
-<img src="image_a784811e10.jpg" class="graf-image" data-image-id="0*3xVY637Hd7LW7cUU" data-width="1252" data-height="870" />
-<figcaption>We said Proper Backups!</figcaption>
-</figure>
+![](image_a784811e10.jpg)
+
+We said Proper Backups!
 
 **Pros — **To have direct access to your assets using your computer or phone is an improvement from the previous level in terms of custody. And you dispose of your own backups.
 
@@ -76,10 +72,9 @@ One improvement to this setup is to have the wallet installed on a device that i
 
 ### 3/7 — Phone/Computer Hot Wallet with a Proper Backup & a Passphrase
 
-<figure id="48bb" class="graf graf--figure graf-after--h3">
-<img src="image_303e05347e.jpg" class="graf-image" data-image-id="0*LR6HJjwZ1urGs4fe" data-width="539" data-height="290" />
-<figcaption>This is actually a good PassPhrase that no-one would think of</figcaption>
-</figure>
+![](image_303e05347e.jpg)
+
+This is actually a good PassPhrase that no-one would think of
 
 **Pros — **Adding a passphrase to the previous setup will increase the security level of your backups and your access to funds. [Codified by BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki), it offers the option to add a passphrase on top of your seed phrase (12 or 24 words) for enhanced protection.
 
@@ -95,10 +90,9 @@ This configuration also allows you to use plausible deniability in situations wh
 
 ### 4/7 — Phone/Computer Hot Wallet with a Proper Backup, a Passphrase & a Full Node
 
-<figure id="5284" class="graf graf--figure graf-after--h3">
-<img src="image_47d4dc8d97.jpg" class="graf-image" data-image-id="0*3M9IgzvfLpFvWx76" data-width="500" data-height="500" />
-<figcaption>Philosoraptor knows.</figcaption>
-</figure>
+![](image_47d4dc8d97.jpg)
+
+Philosoraptor knows.
 
 **Pros — **So far, the connection between your wallet and the blockchain used remote nodes, where a bad actor could access your informations. An upgrade in your setup’s custody, security, and sovereignty is to connect it to [a full blockchain node](https://en.bitcoin.it/wiki/Full_node) that you control.
 
@@ -114,10 +108,9 @@ This hardware can be anything supported by [JVM](https://en.wikipedia.org/wiki/J
 
 ### 5/7 — Node Wallet
 
-<figure id="06ec" class="graf graf--figure graf-after--h3">
-<img src="image_6059edecca.png" class="graf-image" data-image-id="1*kM6c1-mpVfVGA6oTToeqDg.png" data-width="1602" data-height="890" />
-<figcaption>Swagger is awesome</figcaption>
-</figure>
+![](image_6059edecca.png)
+
+Swagger is awesome
 
 **Pros **— The next step is an improvement on the flexibility of your setup, as the [node wallet](https://wiki.alephium.org/wallet/Wallet-Guide) (which is directly included in the node’s code) has many more features than the desktop wallet. For example, it can do time-locked transactions, create multi-signature wallets, and/or interact with smart contracts.
 
@@ -135,10 +128,9 @@ This hardware can be anything supported by [JVM](https://en.wikipedia.org/wiki/J
 
 The communication method between these machines is via a QR Code or physical media, like a USB key or an SD card, which the user must only use for this purpose (to transfer information between these two pieces of equipment).
 
-<figure id="5641" class="graf graf--figure graf-after--p">
-<img src="image_3c6dbe823b.jpg" class="graf-image" data-image-id="0*5z7HCedzSav48Kaa" data-width="714" data-height="337" />
-<figcaption>This is an air-gapped computer on a nineties diagram</figcaption>
-</figure>
+![](image_3c6dbe823b.jpg)
+
+This is an air-gapped computer on a nineties diagram
 
 **Cons — **As the signer device is segregated from the internet, all transactions must be manually processed and delivered to the device. And the same process happens after the signature. But beware! Air-gapping a computer is [not a silver bullet!](https://shiftcrypto.ch/blog/does-airgap-make-bitcoin-hardware-wallets-more-secure/) Remember [Stuxnet](https://en.wikipedia.org/wiki/Stuxnet)? But it is a good enough solution in the absence of hardware wallet support.
 
@@ -146,10 +138,9 @@ The communication method between these machines is via a QR Code or physical med
 
 ### 7/7 — Node Multisignature Wallet with Offline Cosigners
 
-<figure id="fbce" class="graf graf--figure graf-after--h3">
-<img src="image_de02d7437c.jpg" class="graf-image" data-image-id="0*cEuO2_8bj5IN0UuX" data-width="1420" data-height="916" />
-<figcaption>Multisigs are important security tools</figcaption>
-</figure>
+![](image_de02d7437c.jpg)
+
+Multisigs are important security tools
 
 **Pros — **The last and most secure/sovereign setup for Alephium is a full node wallet with a multisignature wallet. For each transaction to be broadcasted to the network, it must be signed by a specific number of cosigners.
 

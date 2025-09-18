@@ -5,12 +5,11 @@ spotlight: false
 featuredImage: image_a708db8d02.jpg
 title: Alephium Launches Browser Extension Wallet
 ---
+Download it and try the new features on Alephium Testnet!
 
-#### Download it and try the new features on Alephium Testnet!
+## Important Notice
 
-> Important Notice
-
-> As this is the first release of the browser extension wallet, the community is invited to download it and test the new wallet features. **_It is very important to securely store your seed phrase if you intend to use it on the mainnet_**, to be able to retrieve your funds if an error happens. In case you find any bugs, or if you want to make any suggestions for improvements, please reach out to the [dev-wallet channel on Discord](/discord).
+As this is the first release of the browser extension wallet, the community is invited to download it and test the new wallet features. **_It is very important to securely store your seed phrase if you intend to use it on the mainnet_**, to be able to retrieve your funds if an error happens. In case you find any bugs, or if you want to make any suggestions for improvements, please reach out to the [dev-wallet channel on Discord](/discord).
 
 ---
 
@@ -18,57 +17,54 @@ Alephium launched its browser extension wallet, designed to provide a secure and
 
 This wallet was based on the [Argent X](https://github.com/argentlabs/argent-x) wallet, with changes and improvements to make it suitable for the Alephium blockchain. It is **fully compatible with the current mainnet** and includes features that will be available after the Leman Network Upgrade, like Schnorr signatures, addresses book, token lists, etc. These new features can already be tried on Alephium’s testnet and are explained in more detail below.
 
-#### ⬇️ Download the extension wallet
+### ⬇️ Download the extension wallet
 
-🔵 [Google Chrome store.](https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj)\*\*  
-\*\*🟠 [Firefox Store.](https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/)
+🔵 [Google Chrome store.](https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj)
 
-### Main Features
+🟠 [Firefox Store.](https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/)
 
-#### dApp Support
+## Main Features
+
+### dApp Support
 
 One of the standout features of the Alephium browser extension wallet is its robust **dApp support**. The wallet was built to be compatible with decentralized applications deployed on the Alephium network, making it easy for users to interact with their favorite dApps seamlessly.
 
 ![](image_830b55ca45.jpg)
 
-#### Token Faucet
+### Token Faucet
 
 Another feature of the Alephium browser extension wallet is its **token faucet** support (a feature enabled on Alephium’s Devnet and Testnet only). This allows users to obtain small amounts of Alephium tokens for testing purposes easily. You just need to click on the “add funds” button and then on the “request \$ALPH” to receive the tokens.
 
-<figure id="7d07" class="graf graf--figure graf-after--p">
-<img src="image_a708db8d02.jpg" class="graf-image" data-image-id="0*w1NdObOGLccSFMbM" data-width="355" data-height="594" />
-<figcaption>Request $ALPH on Testnet and Devnet</figcaption>
-</figure>
+![](image_a708db8d02.jpg)
 
-#### Token List
+Request $ALPH on Testnet and Devnet
+
+### Token List
 
 The wallet includes **token list** support, allowing users to easily view and manage their token balances and transactions. This feature makes it easy for users to keep track of their digital assets and ensure they are always up-to-date.
 
-<figure id="f7d8" class="graf graf--figure graf-after--p">
-<img src="image_ff29a51d32.jpg" class="graf-image" data-image-id="0*SorkPY1hgYsB9LaX" data-width="355" data-height="583" />
-<figcaption>Add token form</figcaption>
-</figure>
+![](image_ff29a51d32.jpg)
 
-#### Address Book
+Add token form
+
+### Address Book
 
 The Alephium browser extension wallet has an **address book** feature for users who repeatedly send transactions to the same addresses. This allows users to save frequently used addresses, helps to avoid typos, and makes it quick and easy to send transactions to the same recipient multiple times.
 
-<figure id="8496" class="graf graf--figure graf-after--p">
-<img src="image_e24e700430.jpg" class="graf-image" data-image-id="0*ukVh4XgFErHbrXfK" data-width="355" data-height="589" />
-<figcaption>Address book</figcaption>
-</figure>
+![](image_e24e700430.jpg)
 
-#### Schnorr Signatures
+Address book
+
+### Schnorr Signatures
 
 Finally, the wallet features **Schnorr Signatures**. This is a more [advanced signature algorithm](https://en.wikipedia.org/wiki/Schnorr_signature) designed to be faster and more efficient than the traditional ECDSA signature algorithm. Schnorr signatures allow users to securely sign messages and verify their authenticity, ensuring their transactions are always secure and tamper-proof. It also provides faster transaction processing times and lower transaction fees.   
 This feature enables [nostr](https://nostr.com/) support, making the wallet capable of signing messages in the social network. It could also be leveraged in other Schnorr-based applications.
 
-<figure id="fd0d" class="graf graf--figure graf-after--p">
-<img src="image_a2ab67a85a.jpg" class="graf-image" data-image-id="0*CFq37mhs9sgEJktE" data-width="351" data-height="577" />
-<figcaption>Schnorr signature option</figcaption>
-</figure>
+![](image_a2ab67a85a.jpg)
 
-### Using it on Testnet
+Schnorr signature option
+
+## Using it on Testnet
 
 The Alephium browser extension wallet is a powerful tool with advanced options and an intuitive design, ready to support the new features introduced with the Leman Network upgrade. You can use it on the Testnet to experience a first taste of Alephium post-Leman Upgrade!
 

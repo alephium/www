@@ -6,8 +6,7 @@ spotlight: false
 featuredImage: image_8778565d71.jpeg
 title: ALEPHIUM/FLUX Tutorial Contest
 ---
-
-#### Thanks to [Flux](https://runonflux.io/), it is easier than ever to run an Alephium full node. But it could become even easier. All it takes is a little distribution of knowledge!
+Thanks to [Flux](https://runonflux.io/), it is easier than ever to run an Alephium full node. But it could become even easier. All it takes is a little distribution of knowledge!
 
 Help decentralize the skills required to run a full-node and enter our Tutorial contest: **Produce the best tutorial on how to run an Alephium full node on FLUX and win prizes!**
 

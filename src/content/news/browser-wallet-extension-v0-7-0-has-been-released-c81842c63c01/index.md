@@ -20,16 +20,20 @@ Featuring: Ledger Integration
 
 🚨 _The Ledger app only works with the latest version (v0.7.0) of the extension wallet for now._
 
-**1 — Download the new wallet release** from: Chrome — [Extension Wallet](https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj) / Firefox — [Extension Wallet](https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/)
+## 1. Download the new wallet release
 
-**2 — Install the necessary software (if you already have PIP & Python installed, jump to step 3)**
+From: Chrome — [Extension Wallet](https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj) / Firefox — [Extension Wallet](https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/)
+
+## 2.Install the necessary software
+
+If you already have PIP & Python installed, jump to step 3.
 
 You will need Python and PIP installed on your computer to get the Alephium App on your Ledger:
 
 - Python ([how to for Windows](https://www.simplilearn.com/tutorials/python-tutorial/python-installation-on-windows#:~:text=To%20download%20Python%2C%20you%20need,then%20select%20the%20Windows%20option.), [how to for Mac](https://docs.python.org/3/using/mac.html), [how to for Linux](https://docs.python-guide.org/starting/install3/linux/))
 - PIP ([how to for Windows](https://www.dataquest.io/blog/install-pip-windows/), [how to for Mac](https://www.groovypost.com/howto/install-pip-on-a-mac/), [how to for Linux](https://docs.python-guide.org/starting/install3/linux/))
 
-**3 — Install the Ledger Python Library**
+## 3. Install the Ledger Python Library
 
 ![](image_db53d15aaa.png)
 
@@ -44,17 +48,17 @@ This will make all upgrades and install the Ledger Wallet Library that will be n
 
 ![](image_7889d7e170.gif)
 
-**4 — Download the Alephium Ledger App to your computer**
+## 4. Download the Alephium Ledger App to your computer
 
 Go to the following GitHub repository: [https://github.com/alephium/ledger-alephium](https://github.com/alephium/ledger-alephium/tree/master/release) and download it.
 
-_🚨To download the repository, click on the “Code” green button and choose “Download Zip.”_
+_🚨 To download the repository, click on the “Code” green button and choose “Download Zip.”_
 
 ![](image_66daf415fe.png)
 
 Download and unzip it in a folder you have easy access to and all read/write permissions.
 
-**5 — Install the Alephium App on your Ledger Device**
+## 5. Install the Alephium App on your Ledger Device
 
 Your Ledger now needs to be connected to your computer and unlocked.
 
@@ -78,7 +82,7 @@ When successful, the Alephium icon will appear on your device.
 
 Now you are ready to use your Ledger to sign transactions on Alephium! **🎉**
 
-**6 — Use your Ledger with the Extension Wallet**
+## 6. Use your Ledger with the Extension Wallet
 
 Go to the browser where you installed the browser extension wallet, and open it.
 
@@ -93,7 +97,7 @@ Create a new address in your extension wallet: Click on the current address name
 
 ![](image_6745633ac7.gif)
 
-**7 — Use the Ledger Device to send a transaction!**
+## 7. Use the Ledger Device to send a transaction!
 
 All the steps here are the usual ones we have seen before using the extension wallet:
 
@@ -117,7 +121,7 @@ Sign the transaction in your Ledger Device, and follow its completion in “Acti
 
 ![](image_e61f266056.png)
 
-**8 — Use the Ledger Device to interact with dApps in Alephium**
+## 8. Use the Ledger Device to interact with dApps in Alephium
 
 Now that you have a already sign a transaction with yout Ledger Device, it is time to connect it to a dApp. This process is also straightforward.
 

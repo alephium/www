@@ -5,8 +5,7 @@ spotlight: false
 featuredImage: image_ace28503b1.jpeg
 title: Sharding
 ---
-
-#### A Technical Promenade, part 4
+A Technical Promenade, part 4
 
 _This is part of a series of regular articles on key concepts for understanding [Alephium](/) in particular and blockchains in general. If you’re pondering on which chain to build your dApps, if you’re a curious crypto-traveler, or a fellow decentralization enthusiast, welcome! You can find the previous articles in the series here. (_[#1](/news/post/block-time-and-block-size-16e37292444f)_,_ [#2](/news/post/transactions-per-second-tps-f13217a49e39)_,_ [#3](/news/post/time-to-finality-17d64eeffd25)_)_
 
@@ -34,10 +33,9 @@ Alephium created the [stateful UTXO](/news/post/an-introduction-to-the-stateful-
 
 Alephium’s mainnet is currently divided into four groups, which four shards in each group. These 16 shards allow the blockchain to process 400 [transactions per second](/news/post/transactions-per-second-tps-f13217a49e39) (TPS). Every shard is built as a blockchain to guarantee its internal transaction ordering. It can process blocks and transactions in parallel with other shards, leveraging the UTXOs’ immutability, as long as the order does not violate the basic dependencies between them.
 
-<figure id="162b" class="graf graf--figure graf-after--p">
-<img src="image_ace28503b1.jpeg" class="graf-image" data-image-id="1*8yJkYe9rlbXVAwKxEk_95g.jpeg" data-width="798" data-height="798" />
-<figcaption>Blockflow Algorithm — Source: [alephium.org](/)</figcaption>
-</figure>
+![](image_ace28503b1.jpeg)
+
+Blockflow Algorithm — Source: [alephium.org](/)
 
 These dependencies are related to the creation and consumption of the UTXOs. They form a structure resembling a [directed acyclic graph (DAG)](https://en.wikipedia.org/wiki/Directed_acyclic_graph), with the transactions as nodes and dependencies as edges. The Blockflow sharding algorithm uses this structure to create a series of rules to ensure that **cross-shard synchronization** is maintained when creating a new block on a shard. The PoLW is used as the **consensus mechanism** to reach finality for all blocks produced by the shards, following similar rules.
 

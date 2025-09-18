@@ -11,7 +11,7 @@ _Our ecosystem thrives with developers building amazing projects on top of Aleph
 
 This episode is about [Amolyus](https://twitter.com/amolyus), prolific builder of 2 NFT collections and a token (LFG) as well as of a lively community. The whole thing is growing to become an ecosystem on its own! Here, they share some insights into their way of thinking, their relationship with Alephiu, and their plans for the future.
 
-#### Hi! Please tell us a bit about yourself. What do you do? Have you been in crypto for a long time? What’s your story?
+## Hi! Please tell us a bit about yourself. What do you do? Have you been in crypto for a long time? What’s your story?
 
 Hello! I’m a digital artist and creator. While I didn’t start in the crypto space from its infancy, my journey began in 2016 with mining, and since then, my involvement has significantly deepened. Initially, my life focus was on 3D art and animation, creating visuals and narratives that resonated with audiences.
 
@@ -21,13 +21,13 @@ My work is fueled by a passion to challenge and expand the definitions of owners
 
 My mission is to inspire, engage, and empower creators and collectors alike, creating a community where creativity flourishes in sync with technology.
 
-#### How did you find out about Alephium? What motivated you to develop on Alephium blockchain, and what set it apart from other blockchain platforms?
+## How did you find out about Alephium? What motivated you to develop on Alephium blockchain, and what set it apart from other blockchain platforms?
 
 Starting as a Bitcoin maximalist, I was drawn to Alephium for its [take on Proof of Work](/news/post/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301), which resonates with my belief in tying digital value to real world resources. Unlike the PoS of Ethereum and others, which I view as creating money out of thin air, just like central banks.
 
 Also fundamental to me were its scalability and smart contract support, together with a user-friendly platform. Now that I have started working on Alephium, I truly believe that its amazing technologies, ease of use, and incredibly supportive and positive community, can make it a leader in the blockchain industry.
 
-#### Tell us a little bit about your project. What is Amolyus? What’s the story behind your NFT collection? Aside from the obvious Punks influence, what else influenced your NFT designs?
+## Tell us a little bit about your project. What is Amolyus? What’s the story behind your NFT collection? Aside from the obvious Punks influence, what else influenced your NFT designs?
 
 Amolyus is my digital identity, and a hub for builders. If you have ideas and the skills to match, we are building an ecosystem to bring those ideas to life.
 
@@ -37,7 +37,7 @@ We are experimenting with the token itself, integrating it into future platforms
 
 ![](image_6c59583916.jpeg)
 
-#### How did you build/tailor the rarity of the collection? What did you have in mind? How did you decide on the number of NFTs? Mint price?
+## How did you build/tailor the rarity of the collection? What did you have in mind? How did you decide on the number of NFTs? Mint price?
 
 Choosing the right number for our NFT aimed to balance between creating a strong community and ensuring sufficient number of tokens to enable a good volume for trading.
 
@@ -45,7 +45,7 @@ The decision to settle on 5,000 pieces was driven by the desire to cultivate a c
 
 The mint price was set to encourage a wide range of participants to explore and enjoy the NFT space on Alephium. It was about opening the doors to the NFT world, allowing everyone the opportunity to experiment and engage with the collection. The aim was to make the experience as inclusive and enjoyable as possible.
 
-#### You have now introduced your token, \$LFG. Can you share the vision behind it? Are there any interesting details you can share with us?
+## You have now introduced your token, \$LFG. Can you share the vision behind it? Are there any interesting details you can share with us?
 
 LFG is the currency of our ecosystem, and the name symbolises the drive and optimism channeled into this ecosystem. The name and the rocket logo also pay homage to the crypto spirit.
 
@@ -53,7 +53,7 @@ Creating LFG, instead of using Alephium as currency itself, gives us the freedom
 
 ![](image_1af25965eb.jpeg)
 
-#### We saw that the project is building a community treasury. What are the plans for it? Is there any relationship with Nouns?
+## We saw that the project is building a community treasury. What are the plans for it? Is there any relationship with Nouns?
 
 Our community treasury is set up with a clear focus on finance operations and projects that enrich our ecosystem, making sure that every action we take delivers real value back to those who are part of it.
 
@@ -61,7 +61,7 @@ Anyone in our community can propose projects within the Alephium ecosystem for f
 
 As for Nouns, I know there is a DAO, but I am not familiar with the specifics of how they operate. The community-building side of the project has been fascinating to follow.
 
-#### Where do these writing skills come from? What’s the end goal for the Amolyus community?
+## Where do these writing skills come from? What’s the end goal for the Amolyus community?
 
 The writing and community engagement come from genuine passion and a commitment to transparency. It’s about sharing our vision in a way that is accessible and engaging. The ultimate aim for the Amolyus community is to create a vibrant, self-sustaining ecosystem where innovation, creativity, and collaboration can flourish.
 
@@ -69,7 +69,7 @@ We envision a space where everyone feels empowered to contribute, share ideas, a
 
 ![](image_aa432c6044.jpeg)
 
-#### What is the most rewarding part of developing Amolyus, and why? What advice would you give to someone looking to build on Alephium, based on your experience? In your opinion, how can the Alephium ecosystem foster a more vibrant developer community?
+## What is the most rewarding part of developing Amolyus, and why? What advice would you give to someone looking to build on Alephium, based on your experience? In your opinion, how can the Alephium ecosystem foster a more vibrant developer community?
 
 The most fulfilling aspect is to bring to life what I feel should exist. This process is incredibly rewarding, not just in the achievement of building something, but in the journey of learning, adapting, and overcoming challenges along the way.
 
@@ -77,7 +77,7 @@ To those considering building on Alephium, my advice is to dive in and build wha
 
 I believe Alephium has all the ingredients for a dynamic developer community. I believe that fostering an environment that supports and celebrates experimentation, risk-taking, and collaboration, can cultivate a truly vibrant and innovative community of developers.
 
-#### Can you tell us a bit more about the future of the project? Do you have a public roadmap anywhere? Would you share some alpha with the readers?
+## Can you tell us a bit more about the future of the project? Do you have a public roadmap anywhere? Would you share some alpha with the readers?
 
 Our plan is to unfold the project’s future piece by piece, maintaining an element of surprise. Right now, the focus is on our upcoming DAO portal. This platform will initially enable community voting on project direction, giving each Taler holder a role in these decisions. Each Taler equates to a base amount of votes, with the addition of LFG to boost that voting power. The DAO portal is also where we aim to launch our first services, aimed at generating sustainable income.
 
@@ -85,7 +85,7 @@ This income will be shared equally with our community, 50/50. To give an example
 
 These initiatives take time to develop, but expect the unexpected. Just as with Talers and Rockets — no previews, no leaks, just a sudden reveal. We plan to keep delivering the unexpected.
 
-#### Where can we stay in touch with your project & with you? Is it possible to contribute?
+## Where can we stay in touch with your project & with you? Is it possible to contribute?
 
 The best way to keep up with our project and directly engage with us is through our official social media channels and our [Discord](https://x.com/amolyus/status/1778032614269731263?s=46&amp;t=SqzCIOvHHX1YEQ19X4WZkQ). Here, you’ll find the latest updates, discussions, and insights into our development process. For those looking to contribute, we are always on the lookout for passionate individuals who share our vision.
 

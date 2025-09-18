@@ -110,8 +110,7 @@ It’s sooner. 😉
 #### Nice. We’ll be looking forward to it!
 
 ---
-
-#### Links
+Links
 
 Twitter — [https://x.com/ulamlabs](https://x.com/ulamlabs)  
 Website — [https://ulam.io/](https://ulam.io/)

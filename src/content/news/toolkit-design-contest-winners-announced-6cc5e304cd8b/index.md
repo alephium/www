@@ -17,7 +17,7 @@ Between careful minimalism and colourful illustration, the range of propositions
 
 After careful review, the jury, composed of several core contributors of Alephium, selected the winner and runner-ups! Together they’ll walk away with our undying gratitude and 1’500 \$ALPH!
 
-#### **The winner**
+## **The winner**
 
 ![](image_7f9430f81c.jpg)
 
@@ -27,7 +27,7 @@ Congratulations on a nice design! We’ve already put it on the website [here](h
 
 Edgar walks away with 1’000 \$ALPH!
 
-#### **The runner ups**
+## **The runner ups**
 
 ![](image_586fe0bd67.jpg)
 
@@ -41,7 +41,7 @@ Here as a GIF: (see it better & with music [here](https://www.linkedin.com/feed/
 
 Each of them walks away with 250 \$ALPH!
 
-#### **Special mentions**
+## **Special mentions**
 
 ![](image_b352ff15de.jpg)
 

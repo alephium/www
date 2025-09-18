@@ -11,7 +11,7 @@ _The Alephium Mobile Wallet is a great addition to the current set of wallets de
 
 _Here’s a free conversation on the conception, challenges, and choices made by_ [Mikaël Vaivre](https://twitter.com/mika_pote) _and_ [Ilias Trichopoulos](https://twitter.com/_nop33) _while building the mobile wallet. We give it to you as is, because it’s important to show what’s going on behind the scenes, in the technical-designer minds of the front-end contributors! It seems so easy when you’re using the wallet, yet to get there… the journey is long and arduous, full of research, experiments, technological challenges and a hardcore dedication to user-centric design!_
 
-### Genesis of the Alephium Mobile Wallet & Biggest Challenges
+## Genesis of the Alephium Mobile Wallet & Biggest Challenges
 
 **Vladimir Moshnyager: When did you start working on the Alephium Mobile Wallet?**
 
@@ -43,7 +43,7 @@ Our approach harmonizes these differences, ensuring seamless navigation and usab
 
 Making the app efficient and smooth was also something that we focused on, and we had to add several components by hand (meaning we had to code them) to create this experience that shares the same visuals and feeling as the desktop wallet.
 
-### Reflection on the Process
+## Reflection on the Process
 
 ![](image_278d927760.jpg)
 
@@ -67,7 +67,7 @@ To do that, you need to reduce the onboarding steps as much as possible while ke
 
 The work done on the Wallet Connect integration is also something I’m proud of. To be able to implement most of the features that we have on the desktop wallet is a great achievement. For the first version (v1), to be this feature-rich and to run smoothly is really cool.
 
-### Research about Mobile Wallets
+## Research about Mobile Wallets
 
 **Vladimir Moshnyager: Which wallets did you research, and which ones do you use yourself?**
 
@@ -79,7 +79,7 @@ We researched many crypto wallets like MyEtherWallet, MetaMask, Rainbow, and Led
 
 One that really stood out was Rainbow, as it was really user-friendly. We can say that our wallet is a mix of both worlds, trying to be something that is familiar to new users and that has a balance between being too serious and funny. As we are dealing with money, we need to make the user feel that it’s a safe space, is not complicated, but also it is not a joke.
 
-### Target Audience and Usage
+## Target Audience and Usage
 
 ![](image_fed0ee8b68.jpg)
 
@@ -101,7 +101,7 @@ One that really stood out was Rainbow, as it was really user-friendly. We can sa
 
 More seriously, it’s more likely to check balances, transaction statuses, and send small to medium-sized transactions on the go. And of course it’s super practical for interacting with dApps, in part due to the phone’s camera for scanning QR codes.
 
-### The tech under the hood (and the creation process)
+## The tech under the hood (and the creation process)
 
 **Vladimir Moshnyager: What are the basic technologies used?**
 
@@ -119,7 +119,7 @@ _Development and Iteration:_ Once the mock-ups are at that ‘good enough’ sta
 
 _Testing and Final Tweaks:_ The last phase involves testing and refinement. It encompasses the remaining fifth of the entire procedure. As someone who works on design but also into development, I implement the last adjustments directly within the application during this stage.
 
-### Looking at the future
+## Looking at the future
 
 ![](image_116dfcde28.jpg)
 

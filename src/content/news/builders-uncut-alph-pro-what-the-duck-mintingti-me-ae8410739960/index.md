@@ -86,8 +86,7 @@ It was awesome. I got to meet a lot of Discord usernames in person. There were l
 No, just glad to be here. Looking forward to the next one.
 
 ---
-
-#### Links:
+Links:
 
 **Alph.pro**  
 Website: [https://alph.pro/](https://alph.pro/)  

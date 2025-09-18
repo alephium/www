@@ -5,8 +5,7 @@ spotlight: false
 featuredImage: image_39fa5f38bb.png
 title: The BSC/Alephium Bridge is live on Testnet!
 ---
-
-#### Bridge assets from and to BNB Smart Chain Testnet
+Bridge assets from and to BNB Smart Chain Testnet
 
 This is the hitchhiker’s guide to Alephium’s second testnet bridge!
 
@@ -34,7 +33,7 @@ Let’s get started!
 
 Please if in the course of testing, you found something, please give us your feedback in the \# 🎨dev-dapp channel on [Discord](/discord)!
 
-### 1 — What you need to know before connecting to the bridge
+## 1 — What you need to know before connecting to the bridge
 
 ![](image_27977a430d.png)
 
@@ -44,7 +43,7 @@ _🚨 It is not yet possible to use the \$BSC bridge on the mainnet 
 🚨 Before starting, make sure you are connected to Alephium’s testnet!  
 🚨 You need an address in Group 0 (on Alephium testnet). And test \$ALPH tokens🚨 You can use any of the wallets (desktop, mobile or the browser extension), we’ve just used the latter here for the sake of the tutorial._
 
-#### **How do you create an address in Group 0?**
+### **How do you create an address in Group 0?**
 
 - Open the Browser Extension Wallet:
 - Click on the current address name, and then in the “+” icon.
@@ -55,7 +54,7 @@ _🚨 It is not yet possible to use the \$BSC bridge on the mainnet 
 
 (this also works on the mobile or desktop wallet — see [here](https://x.com/alephium/status/1825536444754264354))
 
-#### **How to request test \$ALPH tokens?**
+### **How to request test \$ALPH tokens?**
 
 Don’t have \$ALPH in your wallet?
 
@@ -65,7 +64,7 @@ You can ask for some right from the wallet!
 
 ![](image_b9d0a94383.png)
 
-### 2 — How to connect to the bridge?
+## 2 — How to connect to the bridge?
 
 ![](image_dd7ec46f48.png)
 
@@ -87,7 +86,7 @@ After choosing your connection method, you can see your address below the two ch
 
 The token bridge helps to send a token from one network to another. Now that you’re connected on Alephium’s side, it is time to connect to the other side: The BSC Testnet.
 
-### 3 — How do you connect to the BSC Testnet?
+## 3 — How do you connect to the BSC Testnet?
 
 To connect to the BSC Testnet, you will need a wallet. [Metamask](https://metamask.io/) is one of the available choices and will be used in this example.
 
@@ -119,7 +118,7 @@ After receiving the tBNB funds, your Metamask wallet can pay the transaction fee
 
 ![](image_7b3af85295.png)
 
-### 4 — How to bridge an asset from Alephium to BSC Testnet?
+## 4 — How to bridge an asset from Alephium to BSC Testnet?
 
 With your Alephium wallet connected on the bridge page, select the destination network to the BSC testnet.
 
@@ -169,7 +168,7 @@ Your BSC testnet wallet will then show the transaction for your review. If every
 
 When the transaction is confirmed on the blockchain, you can check the assets in your wallet.
 
-### 5 — **Using the “Redeem” section of the bridge**.
+## 5 — **Using the “Redeem” section of the bridge**.
 
 If, for some reason, you left the bridge page before redeeming your tokens, you can always get your transaction hash from [https://testnet.alephium.org/](https://testnet.alephium.org/). Then, click “Redeem” on the bridge page, paste the tx hash into the “source TX” field, and click “Recover.”
 
@@ -181,7 +180,7 @@ You will be sent to the redemption section and can proceed with the transaction.
 
 Your BSC testnet wallet will then show the transaction for review. If everything is fine, click on “Confirm.”
 
-### 6 — **How to add ALPH to your Metamask on BSC Testnet**
+## 6 — **How to add ALPH to your Metamask on BSC Testnet**
 
 After redeeming your tokens, you will be able to see the transaction on BSCscan and click on the “Add to Metamask” button to add the token on your wallet.
 
@@ -207,7 +206,7 @@ Now, the token is displayed in your wallet.
 
 ![](image_fec57c6897.png)
 
-### 7 — How to bridge an asset from BSC Testnet to Alephium?
+## 7 — How to bridge an asset from BSC Testnet to Alephium?
 
 🚨 _Before starting the process, ensure you are connected to the BSC Testnet!_
 
@@ -255,7 +254,7 @@ Your Alephium Wallet will show you a transaction to sign. Review and information
 
 You can verify the transaction at [https://explorer.testnet.alephium.org/](https://explorer.testnet.alephium.org/)
 
-### **8 — Using the “Redeem” section of the bridge**.
+## **8 — Using the “Redeem” section of the bridge**.
 
 If, for some reason, you left the bridge page before redeeming your tokens, you can always get your transaction hash from [https://explorer.testnet.alephium.org/](https://explorer.testnet.alephium.org/), and then click “Redeem” on the bridge page, paste it into the “source TX” field, and click “Recover.”
 

@@ -15,6 +15,6 @@ On May 13th, BitMax.io and Block72 will host their Global Digital Impact Night. 
 
 Alephium, the first scalable blockchain platform to natively support cross-shard transactions, will present their project and discuss how Alephium scales blockchain to handle tens of thousands of transactions per second in an open, secure, permission-less network. The founding team invites you to the Sky Bar in Times Square, NYC at 6:30pm local time on May 13th to learn more about their innovative project.
 
-### ABOUT ALEPHIUM:
+## About Alephium
 
 Alephium was founded by cryptography and distributed computing expert Cheng Wang. The project aims to scale blockchain to handle tens of thousands of transactions per second. Its core algorithm called BlockFlow combines sharding technology with DAG (Directed Acyclic Graph) and utilizes a scalable UTXO (Unspent Transaction Output) model to resolve the inefficiency of sharding performance during cross-shard transactions. By breaking down smart contracts into token protocols and data protocols, Alephium allows developers to build dApps that support high concurrency scenarios while maintaining the Turing-complete functionalities of smart contracts.

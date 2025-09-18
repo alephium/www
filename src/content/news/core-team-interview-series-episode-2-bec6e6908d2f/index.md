@@ -5,8 +5,7 @@ spotlight: false
 featuredImage: image_a509233072.jpg
 title: Core team interview series. Episode 2
 ---
-
-#### Presenting the humans behind operations, marketing and community.
+Presenting the humans behind operations, marketing and community.
 
 **This article was updated:** [https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0](/news/post/alephium-contributors-f35eeaeaf0a0)
 

@@ -19,7 +19,7 @@ title: Alephium available on Ledger Hardware Wallets
 
 ![](image_f965b63d0b.jpg)
 
-#### **How to get started?**
+## **How to get started?**
 
 1.  Open the Ledger Live, connect your Ledger device and access the “My Ledger” tab.
 2.  [Install](https://support.ledger.com/article/Alephium-ALPH) the Alephium app on your Ledger Nano S+ / Nano X / Stax / Flex.

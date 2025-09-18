@@ -6,8 +6,7 @@ spotlight: false
 featuredImage: image_d51d7c42be.jpeg
 title: 🚀 Welcome to Alephium (ALPH)
 ---
-
-#### Here’s all the information you need to get started with Alephium ! And if that’s not enough, check our [website](/) or come talk to us on [Discord](https://discord.gg/JErgRBfRSB), [Telegram](https://t.me/alephiumgroup) or [Reddit](https://www.reddit.com/r/Alephium/) !
+Here’s all the information you need to get started with Alephium ! And if that’s not enough, check our [website](/) or come talk to us on [Discord](https://discord.gg/JErgRBfRSB), [Telegram](https://t.me/alephiumgroup) or [Reddit](https://www.reddit.com/r/Alephium/) !
 
 ---
 

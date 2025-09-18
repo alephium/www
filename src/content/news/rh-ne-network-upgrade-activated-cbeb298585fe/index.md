@@ -11,7 +11,7 @@ _After over one year of building and testing new features, Alephium is excited t
 
 _Tl-dr — Why the Rhône Network Upgrade — What’s in the Rhône upgrade? — FAQ on the Rhône upgrade_
 
-### Thank you!
+## Thank you!
 
 The Rhône Network Upgrade was activated on mainnet at 10:00 AM GMT on June 12th, 2024. The chain is running smoothly (and fast!). Most observable nodes are on an [upgraded full node version](https://www.alephium.world/) (if you didn’t, [upgrade now](https://github.com/alephium/alephium/releases)!). The core devs will continue to monitor the network closely, but it’s high time to thank the community, node runners & service providers for their incredible support.
 
@@ -19,7 +19,7 @@ This network upgrade, which started with a less ambitious roadmap ended up being
 
 ![](image_6df4bb30d3.jpg)
 
-### **Why the Rhône Network Upgrade?**
+## **Why the Rhône Network Upgrade?**
 
 The stack is constantly upgraded to increase performance, security, user experience & devX. New features and improvements can usually be done in a backwards-compatible way. Sometimes they can’t (eg. Blocktime reduction), hence the need for a Network Upgrade.
 
@@ -31,13 +31,13 @@ This is Alephium’s third Network Upgrade! The first one happened on December 9
 
 Why the name? The Rhône river originates where some of Alephium’s roots are: in Switzerland! It fills the Leman lake with fresh water from the glaciers and flows through France towards the Mediterranean. From the highest summits of Europe to the cradle of commerce of the world. At times, tumultuous & agitated, at other times calm & wide, ever flowing, it’s a vital river for navigation, irrigation & energy! It also indicates continuity with the previous Network Upgrade activated in April ’23 and opens up exciting naming possibilities for future ones!
 
-### **What’s in the Rhône Upgrade?**
+## **What’s in the Rhône Upgrade?**
 
 The Rhône Network Upgrade gives both users and developers access, among other innovations, to the following improvements. It keeps true to the tagline of Alephium: **_“Scalable for devs, secure for users, decentralized for all”_**. But what’s in there?
 
 ![](image_a9b2438f51.jpeg)
 
-#### **User Experience Enhancements**
+### **User Experience Enhancements**
 
 _Blocktime Reduction (from 64 to 16 seconds)_
 
@@ -54,7 +54,7 @@ The Upgrade will reduce the contract storage rent fee by 90%, lowering the cost 
 
 ![](image_c021984cc3.jpeg)
 
-#### **Developer Experience Improvements**
+### **Developer Experience Improvements**
 
 _Introduction of Mapping_
 
@@ -91,7 +91,7 @@ _New Built-In Functions _— Added minimalContractDeposit, mapEntryDeposit, 
 
 [See the full changelog here](https://github.com/alephium/alephium/blob/master/docs/rhone-upgrade.md).
 
-### **What comes now?**
+## **What comes now?**
 
 ![](image_7d9d9f5aea.png)
 
@@ -101,7 +101,7 @@ We’ll also be working on more full-nodes optimizations, and more tools to ease
 
 Also, as mentioned, [we might get further on blocktime reduction](https://x.com/wachmc/status/1773344856745837006)… But that’s for another day!
 
-### **Rhône FAQ**
+## **Rhône FAQ**
 
 We’ve assembled here the most asked question about the Rhône Upgrade!
 
@@ -137,7 +137,7 @@ Yes, If you are a mining pool, please upgrade your node to [3.1.x](https://githu
 
 A: The [Alephium Bridge](https://bridge.alephium.org/) confirmation time will be reduced to 53 minutes or 200 blocks (whichever takes longer). Each exchange is free to decide the amount of time/blocks it wants to use in its process.
 
-### **Questions & Feedback?**
+## **Questions & Feedback?**
 
 You can find extra information about the upgrade on our [docs](http://docs.alephium.org)!
 

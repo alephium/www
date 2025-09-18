@@ -14,7 +14,7 @@ _This is the second of a series of interviews on the technical innovations broug
 
 _TL;DR — An introduction on ledger-accounting models / What is stateful utxo / About tokens as first class citizen / About merkle trees, separation of contract states and assets / You can find Part 2_ [here](/news/post/tech-talk-2-mysteries-of-stateful-utxo-the-ultimate-guide-to-alephiums-accounting-model-and-f6b6868ef873)_!_
 
-#### **AN INTRODUCTION TO LEDGER-ACCOUNTING MODELS**
+## AN INTRODUCTION TO LEDGER-ACCOUNTING MODELS
 
 **Vladimir Moshnyager: Hi Cheng, before we delve into our main subject today, stateful UTXO, I’d like to start with some background to understand what we’re discussing. Could you briefly explain the UTXO model?**
 
@@ -42,7 +42,7 @@ The eUTXO model is one of the most well-known UTXO variants. It has advanced the
 
 I like both the immutability, security, and determinism of the UTXO sets, and the expressiveness properties of the account model, so I decided to build stateful UTXO, which would combine the best of both worlds!
 
-#### **WHAT IS STATEFUL UTXO**
+## WHAT IS STATEFUL UTXO
 
 **VM: Can you tell us more precisely how you got the idea of stateful UTXO? What’s the context & evolution that led you to invent this?**
 
@@ -84,7 +84,7 @@ Bitcoin’s code is complex and requires almost everything to be built from scra
 
 Alephium has been building such an infrastructure for the past four years, from conceptualizing the sharding algorithm, to actually building a brand new virtual machine and creating a domain specific language to allow developers to build more secure dApps…
 
-#### About tokens as first-class citizen
+## About tokens as first-class citizen
 
 **VM: The only state equivalent on classic UTXO sets is the native token, but with Alephium, all tokens can run natively, in the UTXOs, without containers. That’s why you’re saying that those are first-class citizens? Can you explain more about how that works and what it allows for?**
 
@@ -110,7 +110,7 @@ VM: **Cosmos studied the possibility of** [paying for the gas with UST](https://
 
 CW: Using stablecoins as a method to pay transaction fees on a blockchain platform has its pros and cons and can be interesting for future research. On the plus side, it offers stability. However, if a stablecoin loses its peg, it could impact the blockchain’s functionality. This could necessitate updates to the blockchain to either remove or add stablecoins as a valid form of payment, a process which can be complicated and time-consuming.
 
-#### **About Merkle trees, separation of contract states and assets**
+## **About Merkle trees, separation of contract states and assets**
 
 VM: **Alephium’s UTXO is called _stateful_ UTXO. Can you just explain what “state” means in the blockchain context? Can you explain what the Alephium state looks like? What is in there, and how is it different from the others?**
 

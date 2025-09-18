@@ -14,10 +14,9 @@ In our [previous post](/news/post/block-time-and-block-size-16e37292444f), we ex
 
 ### Now, what is TPS?
 
-<figure id="7964" class="graf graf--figure graf-after--h3">
-<img src="image_47ac4eb526.jpg" class="graf-image" data-image-id="0*g1ROu9IwhhHOR87y" data-width="1309" data-height="1600" />
-<figcaption>Dali did the math to get the “Maximum Speed of Raphael’s Madonna”…</figcaption>
-</figure>
+![](image_47ac4eb526.jpg)
+
+Dali did the math to get the “Maximum Speed of Raphael’s Madonna”…
 
 This fancy acronym you might see very often in new Layer 1 and/or Layer 2 advertising means “Transaction Per Second.” This measure comes from the [database systems](https://en.wikipedia.org/wiki/Transactions_per_second) environment, and it’s a helpful metric to measure how many transactions theoretically can happen in one second in a given system.
 
@@ -32,10 +31,9 @@ The number of transactions per block on a “data amount” blockchain (such as 
 
 For example, let’s compute Bitcoin’s number of transactions per block and TPS.
 
-<figure id="a452" class="graf graf--figure graf-after--p">
-<img src="image_80f97e8f9e.jpg" class="graf-image" data-image-id="0*EynnVGOTUyrlMpYe" data-width="1028" data-height="322" />
-<figcaption>Source: [Bitcoin Visuals](https://bitcoinvisuals.com/chain-tx-size)</figcaption>
-</figure>
+![](image_80f97e8f9e.jpg)
+
+Source: [Bitcoin Visuals](https://bitcoinvisuals.com/chain-tx-size)
 
 First, we need to compute the number of transactions per block:  
 Number of transactions per block = Block size in bytes / average transaction size in bytes
@@ -51,10 +49,9 @@ Disclaimer: This is how it works in theory, in practice, there are complexities 
 
 Cheat code: Skip the maths, and just go to a blockchain explorer, and they give you [the live data](https://blockchair.com/bitcoin). You can also [check this chart,](https://blockchair.com/bitcoin/charts/transactions-per-second) and you’ll see our result is right in line with historical data: TPS on Bitcoin usually fluctuates between 2 and 4 TPS. One of the best websites to have all this data in the smallest details is [mempool.space](https://mempool.space/fr/).
 
-<figure id="03e6" class="graf graf--figure graf-after--p">
-<img src="image_6b3024b107.jpg" class="graf-image" data-image-id="0*gcSWfz4pY4CA6xJQ" data-width="1400" data-height="908" />
-<figcaption>Edward Hopper, had a very different vision of “Gas” in the forties…</figcaption>
-</figure>
+![](image_6b3024b107.jpg)
+
+Edward Hopper, had a very different vision of “Gas” in the forties…
 
 On a “gas limit” blockchain (Ethereum, Avalanche… or Alephium), we have a completely different beast than with Bitcoin because here, what people pay for as fees is not block space, but computational cost.
 

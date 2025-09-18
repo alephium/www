@@ -7,7 +7,7 @@ featuredImage: image_0b3323e072.png
 title: Ramped up communication channels
 ---
 
-#### With the launch of mainnet approaching, we are accommodating for our growing community. We hope this will ease the exchange between the diverse fauna of developers, users and general enthusiasts populating the project. To that end we have set-up a range of channels that we’d like to invite you to!
+With the launch of mainnet approaching, we are accommodating for our growing community. We hope this will ease the exchange between the diverse fauna of developers, users and general enthusiasts populating the project. To that end we have set-up a range of channels that we’d like to invite you to!
 
 ### GitHub
 

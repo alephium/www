@@ -6,18 +6,17 @@ spotlight: false
 featuredImage: image_962a6c58d3.jpg
 title: BIP39 Passphrase implementation
 ---
-
-#### To keep giving our users more tools to secure their ALPH, we’ve implemented the BIP39 passphrase feature in the desktop wallet v1.3.0!
+To keep giving our users more tools to secure their ALPH, we’ve implemented the BIP39 passphrase feature in the desktop wallet v1.3.0!
 
 **_DISCLAIMER:_** _THIS IS AN ADVANCED SECURITY FEATURE. YOU NEED TO BE VERY WELL ORGANIZED TO USE IT SAFELY. MOST PEOPLE PROBABLY DON’T NEED TO USE IT, AND RISK LOSING THEIR PASSPHRASE, THEREBY LOSING THEIR FUNDS._
 
 **_DISCLAIMER 2: IF YOU LOSE (OR FORGET) YOUR PASSPHRASE, YOU LOSE YOUR FUNDS PERMANENTLY._**
 
-#### Here you’ll find a description of the BIP39 feature **we have** [implemented in our desktop wallet,](https://github.com/alephium/desktop-wallet/releases/latest/) why it is used, a tutorial (and a video) on how to set it up, and some best practices!
+Here you’ll find a description of the BIP39 feature **we have** [implemented in our desktop wallet,](https://github.com/alephium/desktop-wallet/releases/latest/) why it is used, a tutorial (and a video) on how to set it up, and some best practices!
 
 ---
 
-### What is a “BIP39 Passphrase”?
+## What is a “BIP39 Passphrase”?
 
 It is an optional, advanced security feature that allows you to create a new wallet by adding an additional passphrase to the 24 words of your Secret Recovery Phrase.
 
@@ -27,14 +26,13 @@ The Secret Recovery Phrase of 24 words that is generated when you create a new w
 
 You can therefore have one Secret Recovery Phrase with multiple passphrases to create multiple different wallets.
 
-<figure id="22fa" class="graf graf--figure graf-after--p graf--trailing">
-<img src="image_5f122d5ae0.jpg" class="graf-image" data-image-id="0*qdpOElF_lCcBtrO7" data-width="1161" data-height="569" />
-<figcaption>Three different wallets derived from the same Secret Recovery Phrase</figcaption>
-</figure>
+![](image_5f122d5ae0.jpg)
+
+Three different wallets derived from the same Secret Recovery Phrase
 
 ---
 
-### Why is it used?
+## Why is it used?
 
 The best way to put it is [“Plausible Deniability”](https://en.wikipedia.org/wiki/Plausible_deniability). As explained by Wikipedia:
 
@@ -42,30 +40,28 @@ The best way to put it is [“Plausible Deniability”](https://en.wikipedia.org
 
 And here’s an excellent comic of the no less excellent [XKCD](https://xkcd.com) explaining in very few words why one might need plausible deniability in crypto:
 
-<figure id="8248" class="graf graf--figure graf-after--p">
-<img src="image_f921ac9506.jpg" class="graf-image" data-image-id="0*w6lGms1-xxDgHQ2d" data-width="448" data-height="274" />
-<figcaption>XKCD 538 — [https://xkcd.com/538/](https://xkcd.com/538/)</figcaption>
-</figure>
+![](image_f921ac9506.jpg)
+
+XKCD 538 — [https://xkcd.com/538/](https://xkcd.com/538/)
 
 In the case of a wallet containing cryptocurrencies and/or assets, this refers to the unfortunate scenario where an attacker either gains access to your Secret Recovery Phrase or forces you to reveal your wallet password and/or your 24-word Secret Recovery Phrase (also known as the “\$5 wrench attack”).
 
 The Passphrase feature can help you secure most of your wealth as well as your physical safety by convincing the attacker that they have gained access to _the entirety_ of your funds… while in fact they have not!
 
-<figure id="7d42" class="graf graf--figure graf-after--p">
-<img src="image_2738b197d4.jpg" class="graf-image" data-image-id="0*LrHuZaRl-iyAMxW6" data-width="1024" data-height="553" />
-<figcaption>Two wallets have been compromised (Wallets #1 and #2) but not the hidden one (Wallet #3).</figcaption>
-</figure>
+![](image_2738b197d4.jpg)
+
+Two wallets have been compromised (Wallets #1 and #2) but not the hidden one (Wallet #3).
 
 Let’s explore this with an example:
 
-#### The setup:
+### The setup
 
 - You are a proud owner of 10'000 ALPH.
 - You have created a “normal wallet” (no Passphrase) with the name **_Wallet \#1_**. You have transferred 100 ALPH to it.
 - You have created a “hidden wallet” called **_Wallet \#2_** with the passphrase “_letsUnlockAHiddenWallet”_. You have transferred 900 ALPH to it.
 - You have created yet another “hidden wallet” called **_Wallet \#3_** with the passphrase “_youCanNeverGuessThat!”_. You have transferred the remaining 9'000 ALPH to it.
 
-#### The attack:
+### The attack
 
 - An attacker physically threatens you (with a wrench, a gun, or any other way) to unlock **_Wallet \#1_** on your desktop, the attacker steals the 100 ALPH that your seed phrase reveals.
 - The attacker knows about the Passphrase feature and once again threatens to get your Passphrase, then you can deny that you use this feature and there will be no way for the attacker to prove whether you use it or not.
@@ -78,14 +74,13 @@ You can keep your Secret Recovery Phrase in a safe at the bank, and your passphr
 
 ---
 
-### Tutorial — How to create the wallets
+## Tutorial — How to create the wallets
 
-#### The “normal wallet”
+### The “normal wallet”
 
-<figure id="ba63" class="graf graf--figure graf-after--h4">
-<img src="image_6acd5c3cb8.jpg" class="graf-image" data-image-id="0*mDJ7GLQPKOTzXf_a" data-width="539" data-height="229" />
-<figcaption>Wallet #1, no Passphrase</figcaption>
-</figure>
+![](image_6acd5c3cb8.jpg)
+
+Wallet #1, no Passphrase
 
 Open the Alephium Desktop Wallet and create a new (standard) wallet. This one is called **_Wallet \#1_**, and the password is “_myVeryStrongPassw0rd”_.
 
@@ -93,12 +88,11 @@ You then transfer a small amount of ALPH to it. In this example, we’ll transfe
 
 (of course naming conventions, passwords & amounts are here only for illustration purposes, use your own imagination and system for all this!)
 
-#### The “hidden wallet”
+### The “hidden wallet”
 
-<figure id="c360" class="graf graf--figure graf-after--h4">
-<img src="image_4e2408c99e.jpg" class="graf-image" data-image-id="0*7XA_NOjgHZNdB58T" data-width="539" data-height="290" />
-<figcaption>Wallet #2, with a passphrase</figcaption>
-</figure>
+![](image_4e2408c99e.jpg)
+
+Wallet #2, with a passphrase
 
 The next time you open your wallet, you select that you want to login to **_Wallet \#1_** and you provide your password “_myVeryStrongPassw0rd”_. BUT Instead of clicking _Login_ directly, you click on the _“Optional passphrase”_ link.
 
@@ -108,12 +102,11 @@ This gives you access to a completely new wallet (let’s call it **_Wallet \#2_
 
 You decide to transfer 1'000 ALPH to the **Wallet \#2**.
 
-#### The other “hidden wallets”
+### The other “hidden wallets”
 
-<figure id="bf25" class="graf graf--figure graf-after--h4">
-<img src="image_b0905c76bc.jpg" class="graf-image" data-image-id="0*VE7J2FCehK7CruMd" data-width="539" data-height="290" />
-<figcaption>Wallet #3, with another passphrase</figcaption>
-</figure>
+![](image_b0905c76bc.jpg)
+
+Wallet #3, with another passphrase
 
 When you logout and you try to login into your “hidden wallet” again, if you enter your chosen Passphrase wrong (for example you enter “_letsUnlockAHidden\***\*w\*\***allet_“ instead of “*letsUnlockAHidden\***\*W\*\***allet”* — notice the lower case w instead of W), you will gain access to yet another new “hidden wallet” with 0 funds.
 
@@ -125,9 +118,9 @@ You can then create your **Wallet \#3** with a different passphrase which will c
 
 ---
 
-### Best practices when using a Passphrase
+## Best practices when using a Passphrase
 
-#### **You must store & remember your Passphrase verbatim and in extenso.**
+### **You must store & remember your Passphrase verbatim and in extenso.**
 
 Changing a single character (even, for example, from lower to upper-case), will result in the generation of a completely new wallet. As a result, it is imperative to:
 

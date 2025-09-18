@@ -13,7 +13,7 @@ _Disclaimer: While Alephium is happy to support a growing developer community, i
 
 The third builder in the series is [Benjamin](https://twitter.com/BenLarkey), the developer behind the [Alphpaca NFT collection](https://testnet.nft.alephium.org/collection-details?collectionId=e0385e13db8a162d6d419b4b4665d802fe547176143dbd0c7226db02b681fb00). He’s a very regular, insightful & knowledgeable presence in our discord. You can check the project’s website [here](https://www.alphpaca.dev/), its GitHub [here](https://github.com/larkben/Ergollamas-Alphpacas) or contact the project Discord [here](https://discord.gg/9eBCchJvn7).
 
-#### Tell us a little bit about your project. What is it, what does it, and how does it interact with the Alephium blockchain?
+## Tell us a little bit about your project. What is it, what does it, and how does it interact with the Alephium blockchain?
 
 ALPHpaca’s is a tea / sparkling water-driven passion project. The project itself is 1152 (128 x 128) pixel Alpacas. Alephium being able to run on 16 shards (as of now) is half the inspiration for the tokennomics and the features surrounding the art; 16 is a multiple of 1152 and 128. Alephium is an amazing place to launch an NFT project (or any project, more on that later). This is due to users’ enhanced ownership over their tokens on Alephium vs a blockchain like Ethereum.
 
@@ -23,7 +23,7 @@ It is my promise to ALPHpaca holders to do everything my mind can comprehend to 
 
 ![](image_f43a0567ee.jpg)
 
-#### What motivated you to develop on Alephium blockchain, and what set it apart from other blockchain platforms?
+## What motivated you to develop on Alephium blockchain, and what set it apart from other blockchain platforms?
 
 Everyone knows the testing involved in making any project run smoothly, and for a college student like myself, paying high gas fees was just not an option. Competing with thousands of other projects for market share, albeit with more eyes, is incredibly hard for a one-man operation. Many of the top projects on Ethereum, however, are just art. I want to create something artistic yet inspirational for anyone wanting to build on Alephium (If I can do it, you can do it is the mentality).
 
@@ -31,7 +31,7 @@ I love seeing new art be created, so for me, just art is sometimes good enough b
 
 That said, the stack is getting better and more understandable every day. It didn’t make any sense at first, but a little frustration and patience are all that is required when learning something new. Practice makes perfect.
 
-#### What tech stack did you use in your project? What did you consider when choosing the right tech stack for your project?
+## What tech stack did you use in your project? What did you consider when choosing the right tech stack for your project?
 
 I so far have taken bits and pieces from multiple Alephium repos; while I’m still far from a proper minting machine at the moment, every day, I figure out something new and can build further and further towards resources that I will be making open source so every Alephium user can join in on the fun of being able to create a minting machine.
 
@@ -39,7 +39,7 @@ In any tech stack, if the documentation is good and the product works well, I’
 
 ![](image_92539f7304.jpg)
 
-#### What features are you most proud of?
+## What features are you most proud of?
 
 The main things aren’t built yet, but I’m proud of my dedication to onboard tech-savvy users and just users who want to create but have no interest in learning the stack.
 
@@ -47,7 +47,7 @@ I plan to make anything made for ALPHpacas completely open source and extremely 
 
 The plans for this bot are to be able to display on-chain metrics such as how centralized NFTs are or if ALPHpaca whales are selling or buying, or if new whales are forming. Bringing this data to ALPHpacas and other projects brings valuable data back to users and useful data to project teams.
 
-#### Could you tell us about some of the challenges you faced while building and how you overcame them?
+## Could you tell us about some of the challenges you faced while building and how you overcame them?
 
 I suspect there will be some very big challenges in the near future, but in my experience, the key to solving anything with code is either to explain every little part of your code to a rubber duck and have it make sense or just take a break and come back to it.
 
@@ -55,17 +55,17 @@ The current cycle involves swapping between the ALPH contract stack and making a
 
 ![](image_8055e6e707.jpg)
 
-#### What has been the most rewarding part of developing your project, and why?
+## What has been the most rewarding part of developing your project, and why?
 
 The most rewarding part of development is seeing other people happy about your project. Seeing ALPHpacas receiving more recognition tells me I’m on the right path and there’s no slowing me down. Jokes aside, I will be happy to help onboard those who lack a technical background. I think these people will make Alephium shine.
 
-#### What do you think are some of the future potential use cases of Alephium that could be explored?
+## What do you think are some of the future potential use cases of Alephium that could be explored?
 
 I think this idea of Alephium users having first-class rights over their tokens rather than a contract in most cases allows for some interesting things; I don’t know a lot, so I’m sure Cheng could fill in the gaps where I am mistaken or where things need clarification but to me, it sounds like some interesting opportunities lie there.
 
 I think one of the use cases that is never mentioned but should be is that Cheng is a resource; he’s here to help anyone build something, no matter what exactly it might be.
 
-#### Lastly, what advice would you give to someone looking to build on Alephium, based on your experience?
+## Lastly, what advice would you give to someone looking to build on Alephium, based on your experience?
 
 Based on my little experience developing, I’d say my developer career officially started in May of this year. That doesn’t sound long but I have learned a lot, to say the least, no matter where I went, I never felt as valued as I did talking, developing, and just being a part of the Alephium space.
 
