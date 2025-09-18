@@ -1,0 +1,91 @@
+---
+date: 2023-12-19T16:12:20.534000Z
+description: The Zealy sprint has come to an end on Dec 17h at 3PM CET, marking the
+  end of a fun and instructive period about the Alephium Bridge and…
+spotlight: false
+featuredImage: image_99207765f0.jpg
+title: First Zealy Sprint Ends
+---
+
+_The Zealy sprint has come to an end on Dec 17h at 3PM CET, marking the end of a fun and instructive period about the Alephium Bridge and the broader ecosystem!_
+
+We want to thank our community for its impressive participation in the Zealy sprint and add a special thanks to the [Blockflow Alliance DAO](https://twitter.com/Blockflow_DAO) which is co-sponsoring this first sprint edition!
+
+### Awesome Engagement!
+
+Throughout the sprint, the community completed over 19,000 quests! The event saw the participation of more than 1,000 people, each giving its best (and sometimes worst) with new content and funny memes in the overarching goal of raising awareness about Alephium!
+
+Here are some of the most notable memes in no particular order (some are 🔥). We got more than 300 of them, our chief reviewer still has trouble sleeping at night.
+
+![](image_c76c8db66f.jpeg)
+
+![](image_9a8733c9b6.jpeg)
+
+![](image_37c1433421.jpeg)
+
+![](image_ff30f11250.jpeg)
+
+![](image_ffcd2e0197.png)
+
+![](image_f57f12f159.png)
+
+![](image_468da4ea51.jpeg)
+
+![](image_69fa84175e.png)
+
+![](image_f6324f9207.jpeg)
+
+![](image_d136898ad5.jpeg)
+
+![](image_79a3983a22.jpeg)
+
+![](image_b810187ef2.png)
+
+![](image_38259817c4.jpeg)
+
+![](image_156a04d18a.png)
+
+![](image_c593c7b36d.jpeg)
+
+![](image_25ea303587.jpeg)
+
+![](image_819848973a.jpeg)
+
+![](image_91439db3e3.jpeg)
+
+![](image_2f68e0af40.jpeg)
+
+![](image_5ddb09b09a.png)
+
+![](image_b2ae5df149.png)
+
+![](image_79624c45ef.jpeg)
+
+![](image_273332e90f.jpeg)
+
+![](image_844329abcf.jpeg)
+
+![](image_b9562f323a.jpeg)
+
+![](image_82015e738a.jpeg)
+
+### And the winners are…
+
+It has been a tight race! And some of you are very fierce competitors! There’s very little XP or quest completion differences between the winners and the rest!
+
+The Top 10 winners will receive 200 ALPH each. The next 20 winners will receive 50 ALPH each. All of them will be contacted by email to complete the mandatory rewards agreement. Keep an eye on your inbox! Here are the winners:
+
+- TOP 10: strvzt.eth, jimboarr.eth, I’m xie, andigokil, ofordile, Qira, roberto1516, DON T 笨､, VNGNZ, and dhatboi.
+- NEXT 20: joelchido, ohang, NilGir, Antu_xyz, Diamanté, Phenom99, Yorubahoekage, tenma_mei, zey_zey, Sibeliphant, Ebublaq, Jubayr, Sami♧, KHAID, Youngc, Okeruru, ADIBOYYY, Ele03, Siam07, and Churchill7508
+
+Join us in thanking the [BlockFlow Alliance DAO](https://twitter.com/Blockflow_DAO) as half of the rewards come from them!
+
+### Now what? (Looking Ahead)
+
+As the Zealy sprint concludes, there is plenty of ways for you to continue to engage with Alephium and our amazing community and ecosystem:
+
+- Our regular Zealy quests will come back with new challenges next year!
+- The [Ambassador program](/news/post/alephium-launches-its-ambassador-program-8e9c9c8c9d94) launched literally yesterday! If you want some more involvement, come and apply!
+- The community rewards program is still open! Signal your contributions through [this form](https://docs.google.com/forms/d/e/1FAIpQLSeaSouXl-Hwd_lZohwgysqk-8whc9bydHuVpSCr1C6IoDHuoA/viewform) (but only the most extraordinary contributions will be rewarded!).
+
+As always, join us on [Twitter](https://twitter.com/alephium), [Discord](/discord), [Telegram](https://t.me/alephiumgroup) or [Reddit](https://www.reddit.com/r/Alephium/)!

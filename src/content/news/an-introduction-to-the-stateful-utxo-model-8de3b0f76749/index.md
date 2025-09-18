@@ -1,0 +1,82 @@
+---
+date: 2022-11-17T17:18:14.134000Z
+description: Combining the expressiveness of the account model & security of the UTXO
+  model.
+spotlight: false
+featuredImage: image_0e0226c293.jpg
+title: An introduction to the stateful UTXO model
+---
+
+_Combining the expressiveness of the account model & security of the UTXO model._
+
+_This article is a high-level overview of what the stateful UTXO model is, why it was invented, how it works and what it allows. The stateful UTXO model (sUTXO) is one of the main innovations brought by Alephium, along with_ [Proof-of-less-work (PoLW),](/news/post/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301) _the Blockflow sharding algorithm, the_ [Alphred Virtual Machine](/news/post/meet-alphred-a-virtual-machine-like-no-others-85ce86540025)_, and the Ralph programming language._
+
+### What are the UTXO & Account Model?
+
+The UTXO and account-based models are accounting standards most commonly used in blockchains. Both of them allow users & systems to keep track of balances of crypto assets.
+
+![](image_bd9dd39ced.jpg)
+
+The classical UTXO (Unspent Transaction Output) model is famously used to keep track of accounting [in the Bitcoin blockchain](https://river.com/learn/bitcoins-utxo-model/). It is also found in Bitcoin Cash, Zcash, Litecoin, Dogecoin, Dash, and more…
+
+In [UTXO](https://www.geeksforgeeks.org/what-is-unspent-transaction-output-utxo/), there are no accounts nor balances at the protocol layer, just transactions. Coins are stored as a ledger of unspent transactions output (UTXO) & new transactions consume existing UTXOs to produce new UTXOs. At any point in time, for a wallet to show its balance to a user, it must accumulate all UTXOs associated with the public addresses of that particular user because what is stored is the set of all UTXOs, not a list of accounts & balances.
+
+This model is simple to understand conceptually, it scales well and is very transparent. It has a few downsides: it doesn’t have a state and is not expressive enough for developers, meaning it’s hard to build complex programs on top of it.
+
+[The account model](https://www.horizen.io/blockchain-academy/technology/expert/utxo-vs-account-model/#:~:text=The%20account%20model%20keeps%20track,set%20of%20all%20transaction%20outputs.) is more intuitive and closer to a classic database. It records the increase/decrease in balances of addresses when transactions happen. These changes are written in the blockchain, creating a global state (a global record of the current balance in all addresses). This structure is more accessible and easier to master for developers, enabling a more “[expressive](https://en.wikipedia.org/wiki/Expressive_power_%28computer_science%29)” system: developers can build more complex & powerful programs (called smart contracts).
+
+The account model also has limitations: parallel execution is hard, [MEV](https://blog.chain.link/what-is-miner-extractable-value-mev/#:~:text=One%20such%20example%20is%20Miner,excluding%20transactions%20within%20a%20block.) is a constant drag, and it often lacks enough security checks to be secure at the smart contract level.
+
+### Stateful UTXO: The best of both worlds
+
+The stateful UTXO (sUTXO) model combines the advantages of both: it benefits from the security of the UTXO model and the expressiveness of the account model.
+
+It achieves this by actually using both… but for different things! UTXOs are used for assets/tokens and the account model for smart contracts and states.
+
+![](image_c000c42616.jpg)
+
+### Tokens as first-class citizens
+
+In sUTXO, all tokens are handled natively and stored in UTXOs exactly like ALPHs. This is in contrast to Bitcoin, which can’t handle tokens. But it also marks a big difference with Ethereum because it requires containers such as ERC20 and 721 to handle tokens, which introduces complexity and often led to security risks in the past.
+
+This approach is called “Tokens as first-class citizens.” No need to create standards and no risks in the implementation: it’s all there, natively! [The VM (virtual machine](https://youtu.be/VVYH9rBJAdA)) also allows for built-in checks to increase transfer security.
+
+It is, of course, possible to create new standards on top of Alephium for tokens with different features, but the core functions (issuance, transfer, accounting) are built-in.
+
+### State: Smart (and secure) Contracts
+
+What’s called the “[state](https://en.wikipedia.org/wiki/State_%28computer_science%29)” in computer science, can be viewed as “storage.” A stateful system “stores” what happened before and can use items from its memory to build on new actions.
+
+sUTXO is called “stateful” because it adds an element of “state” to the classic UTXO model, which is stateless. As [Seba explains](https://www.seba.swiss/research/A-Beginner-s-Guide-to-Blockchain-Accounting-Standards#:~:text=UTXOs%20are%20stateless%2C%20meaning%20no,smart%20contracts%2C%20that%20are%20stateful.): “_UTXOs are stateless, meaning no two transactions can affect the same UTXO. Transactions do not refer to any input outside of the consumed UTXOs. As UTXOs can be executed in parallel, they are not well suited for applications, such as smart contracts, that are stateful._“
+
+That is super useful for developers who want to build programs leveraging the state of the blockchain: the famous smart contracts! Developers use those smart contracts to build decentralized applications. And those dApps allow people to use the blockchain for useful things: borrow, lend, trade, create & trade NFTs, play games, and invent the future!
+
+### A forest of Merkle trees to keep it clean!
+
+[Merkle trees](https://www.simplilearn.com/tutorials/blockchain-tutorial/merkle-tree-in-blockchain#:~:text=KanpurEnroll%20Now-,What%20Is%20a%20Merkle%20Tree%3F,data%20more%20efficiently%20and%20securely.) are a special data structure used to store information verifiably. Alephium uses three Merkle Trees per group: one for the assets (the [UTXO set](https://river.com/learn/terms/u/utxo-set/)), one for the contract states, and another for the contract logic (its code).
+
+This is great, because for a given smart contract, the data in the state Merkle tree might change often, but the code/logic Merkle tree will be immutable! This allows Alephium to avoid being too bloated with useless code & data.
+
+And to keep things as lightweight as possible, sUTXO enables [state storage rent](https://arxiv.org/pdf/2210.13670.pdf): when a smart contract is deployed, its developer has to pay a deposit of 1 ALPH to protect the state layer against spamming.
+
+The contract deployer will be returned this deposit when the smart contract is destroyed and removed from the blockchain!
+
+### sUTXO & Alphred VM work well together!
+
+sUTXO has many added benefits when combined with other Alephium’s innovations! For example, the Alephium virtual machine (Alphred) knows precisely that a token transfer is happening to a smart contract. In this case, the [virtual machine verifies](https://youtu.be/VVYH9rBJAdA) the transfer to check if it is submitted according to the smart contract rules.
+
+Alephium also has built-in virtual machine instructions for upgrading or migrating a smart contract. This permits the developers to upgrade the smart contract to restore the logic and fix bugs. The current option on EVM is to use proxy contracts to enable this migration, which adds a lot of complexity.
+
+### Why should you care?
+
+This is a huge improvement for developers, as the ability to have an upgraded account model with a dedicated model for token handling (UTXO) makes the sUTXO model a solid foundation for building smart contracts with the assurance that secure asset management is a priority.
+
+There will be more details on the sUTXO model in an upcoming interview with [Cheng Wang](https://twitter.com/wachmc) on the topic, as it is a pivotal piece of Alephium’s tech stack. Below are two videos of him presenting the sUTXO model and its interaction with Alephium’s VM & programming language, one at EthCC, and the other on Crypto Talk Series.
+
+`video: https://www.youtube.com/watch?v=VVYH9rBJAdA`
+
+`video: https://www.youtube.com/watch?v=r_5U7ZgByt4`
+
+#### The next post in the tech series will feature [Alphred, the Virtual Machine!](/news/post/meet-alphred-a-virtual-machine-like-no-others-85ce86540025) **To know** [more about PoLW here.](/news/post/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301)
+
+_If you have more questions on the topic, please come to Alephium’s_ [Discord](https://discord.gg/JErgRBfRSB)_,_ [Telegram](https://t.me/alephiumgroup)_, or reach out on_ [Twitter](https://twitter.com/alephium)_!_

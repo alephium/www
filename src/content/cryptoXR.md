@@ -18,7 +18,7 @@ hackathonInfo:
   participantsInfo:
     title: When & where?
     description: "The hackathon will happen exclusively online, from February 12th to 26th. 
-    Main communication hub for the hackathon will be [our discord](http://www.alephium.org/discord) (see below).
+    Main communication hub for the hackathon will be [our discord](/discord) (see below).
     Until we release the hackathon channels, join the developer channel!"
   prerequisites:
     title: Prerequisites

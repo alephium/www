@@ -29,7 +29,7 @@ Learning about Alephium has never been easier or more rewarding.
 
 Whether you’re just entering Web3 or already navigating dApps and wallets, Learnify makes understanding Alephium feel like playing a game. Each topic is presented through short, digestible quests. No whitepapers, no technical jargon dumps. Just intuitive questions, visuals, and instant feedback.
 
-Learn more here [https://app.learnify.xyz/map/alephium-101 ](https://app.learnify.xyz/map/alephium-101)
+Learn more here: [https://app.learnify.xyz/map/alephium-101](https://app.learnify.xyz/map/alephium-101)
 
 You’ll explore what Alephium is, how it works, and what makes it different from the rest and every completed mission brings you one step closer to earning real $ALPH coins.
 

@@ -35,13 +35,9 @@ Following Alephium’s naming convention, all network upgrades are named after b
 
 All node operators should have updated to v4.0.0 **before July 15th** to ensure uninterrupted participation in the network. If you haven’t already done so, please do it as soon as possible.
 
-- **Node version required:**
+- **Node version required:** [Download the latest node](https://github.com/alephium/alephium/releases/latest)
 
-  [ Download the latest node](https://github.com/alephium/alephium/releases/latest)
-
-- **Upgrade instructions:**
-
-  [ Danube Upgrade Docs](https://docs.alephium.org/integration/danube-upgrade/)
+- **Upgrade instructions:** [Danube Upgrade Docs](https://docs.alephium.org/integration/danube-upgrade/)
 
 ## What Comes With Danube
 
@@ -243,7 +239,7 @@ The dev team will also shift more focus toward ecosystem support and tooling, gi
 
 The Danube upgrade marks a pivotal moment in Alephium’s evolution, from an experimental proof-of-work chain into a scalable, developer-friendly smart contract platform ready for mainstream DeFi adoption.
 
-Whether you’re building dApps, running nodes, or just exploring the space, this upgrade brings smoother workflows, faster interactions, and fewer trade-offs. Visit [alephium.org](http://alephium.org/) to learn more about Alephium and join us in building the Web3 you were promised!
+Whether you’re building dApps, running nodes, or just exploring the space, this upgrade brings smoother workflows, faster interactions, and fewer trade-offs. Visit [alephium.org](/) to learn more about Alephium and join us in building the Web3 you were promised!
 
 ## Have questions?
 
