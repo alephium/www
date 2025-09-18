@@ -7,7 +7,7 @@ featuredImage: image_466c174731.jpeg
 title: 'The Leman Network Upgrade: Time to check your Nodes!'
 ---
 
-#### Are you sure you have everything updated? A lot has been done since the <a href="/news/post/the-leman-upgrade-2-232e3374abc4" >previous announcement</a> and the <a href="/news/post/the-leman-upgrade-ama-most-relevant-topics-and-questions-1fbbc68d4237" >“Hard” Talk</a> held in January, and this post is an invitation for you to update your nodes.
+#### Are you sure you have everything updated? A lot has been done since the [previous announcement](/news/post/the-leman-upgrade-2-232e3374abc4) and the [“Hard” Talk](/news/post/the-leman-upgrade-ama-most-relevant-topics-and-questions-1fbbc68d4237) held in January, and this post is an invitation for you to update your nodes.
 
 February was a productive month with the release of the Full Node `v1.7.0`. After intensive testing, it is considered to be the last stable version before the Leman Network Upgrade.
 
@@ -38,13 +38,13 @@ Who & What:
 
 #### Full Node: v1.7.1
 
-Download it here: 🔗 <a href="https://github.com/alephium/alephium/releases/tag/v1.7.1" >https://github.com/alephium/alephium/releases/tag/v1.7.1</a>
+Download it here: 🔗 [https://github.com/alephium/alephium/releases/tag/v1.7.1](https://github.com/alephium/alephium/releases/tag/v1.7.1)
 
 This release is backward compatible with the current Mainnet, so you don’t have to worry about compatibility issues. Download the `.jar` file from the GitHub page.
 
 #### Explorer-backend v1.13.0
 
-Download it here: 🔗 <a href="https://github.com/alephium/explorer-backend/releases/tag/v1.13.0" >https://github.com/alephium/explorer-backend/releases/tag/v1.13.0</a>
+Download it here: 🔗 [https://github.com/alephium/explorer-backend/releases/tag/v1.13.0](https://github.com/alephium/explorer-backend/releases/tag/v1.13.0)
 
 This additional download is only needed for those running the explorer backend locally. However, it is mandatory for compatibility with full node `v1.7.0`. If that is the case, download it from the GitHub page.
 
@@ -59,4 +59,4 @@ The Leman Network Upgrade is closer than ever! Here is what you can expect next:
 
 ---
 
-**If you need assistance, you are welcome to reach out in the community channels on [Discord](/discord)**, <a href="https://t.me/alephiumgroup" ><strong>Telegram</strong></a>**. And follow** <a href="https://twitter.com/alephium" ><strong>@alephium on Twitter</strong></a> **to stay up-to-date.**
+**If you need assistance, you are welcome to reach out in the community channels on [Discord](/discord)**, [Telegram](https://t.me/alephiumgroup)**. And follow** [@alephium on Twitter](https://twitter.com/alephium) **to stay up-to-date.**

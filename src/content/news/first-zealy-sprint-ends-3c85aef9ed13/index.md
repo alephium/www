@@ -9,7 +9,7 @@ title: First Zealy Sprint Ends
 
 _The Zealy sprint has come to an end on Dec 17h at 3PM CET, marking the end of a fun and instructive period about the Alephium Bridge and the broader ecosystem!_
 
-We want to thank our community for its impressive participation in the Zealy sprint and add a special thanks to the <a href="https://twitter.com/Blockflow_DAO" >Blockflow Alliance DAO</a> which is co-sponsoring this first sprint edition!
+We want to thank our community for its impressive participation in the Zealy sprint and add a special thanks to the [Blockflow Alliance DAO](https://twitter.com/Blockflow_DAO) which is co-sponsoring this first sprint edition!
 
 ### Awesome Engagement!
 
@@ -78,14 +78,14 @@ The Top 10 winners will receive 200 ALPH each. The next 20 winners will receive 
 - TOP 10: strvzt.eth, jimboarr.eth, I’m xie, andigokil, ofordile, Qira, roberto1516, DON T 笨､, VNGNZ, and dhatboi.
 - NEXT 20: joelchido, ohang, NilGir, Antu_xyz, Diamanté, Phenom99, Yorubahoekage, tenma_mei, zey_zey, Sibeliphant, Ebublaq, Jubayr, Sami♧, KHAID, Youngc, Okeruru, ADIBOYYY, Ele03, Siam07, and Churchill7508
 
-Join us in thanking the <a href="https://twitter.com/Blockflow_DAO" >BlockFlow Alliance DAO</a> as half of the rewards come from them!
+Join us in thanking the [BlockFlow Alliance DAO](https://twitter.com/Blockflow_DAO) as half of the rewards come from them!
 
 ### Now what? (Looking Ahead)
 
 As the Zealy sprint concludes, there is plenty of ways for you to continue to engage with Alephium and our amazing community and ecosystem:
 
 - Our regular Zealy quests will come back with new challenges next year!
-- The <a href="/news/post/alephium-launches-its-ambassador-program-8e9c9c8c9d94" >Ambassador program</a> launched literally yesterday! If you want some more involvement, come and apply!
-- The community rewards program is still open! Signal your contributions through <a href="https://docs.google.com/forms/d/e/1FAIpQLSeaSouXl-Hwd_lZohwgysqk-8whc9bydHuVpSCr1C6IoDHuoA/viewform" >this form</a> (but only the most extraordinary contributions will be rewarded!).
+- The [Ambassador program](/news/post/alephium-launches-its-ambassador-program-8e9c9c8c9d94) launched literally yesterday! If you want some more involvement, come and apply!
+- The community rewards program is still open! Signal your contributions through [this form](https://docs.google.com/forms/d/e/1FAIpQLSeaSouXl-Hwd_lZohwgysqk-8whc9bydHuVpSCr1C6IoDHuoA/viewform) (but only the most extraordinary contributions will be rewarded!).
 
-As always, join us on <a href="https://twitter.com/alephium" >Twitter</a>, [Discord](/discord), <a href="https://t.me/alephiumgroup" >Telegram</a> or <a href="https://www.reddit.com/r/Alephium/" >Reddit</a>!
+As always, join us on [Twitter](https://twitter.com/alephium), [Discord](/discord), [Telegram](https://t.me/alephiumgroup) or [Reddit](https://www.reddit.com/r/Alephium/)!

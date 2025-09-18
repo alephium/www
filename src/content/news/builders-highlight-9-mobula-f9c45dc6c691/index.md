@@ -7,7 +7,7 @@ featuredImage: image_55f9265a02.png
 title: 'Builders Highlight #9: Mobula'
 ---
 
-_Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real utility for users. In the Builders Highlight series, they share more about their projects, thoughts, and insights on why building on Alephium. You can find_ <a href="/news/post/builders-highlight-sezame-wallet-ddb4aeb61881" ><em>#1 here</em></a>_,_ <a href="/news/post/builders-highlight-alphpaca-nfts-99c69775f04c" ><em>#2 here</em></a>, <a href="/news/post/builders-highlight-3-ayin-6be4a6bd4ec2" ><em>#3 here</em></a>, <a href="/news/post/builders-highlight-4-no-trust-verify-9ea495ca826f" ><em>#4 here</em></a>, <a href="/news/post/builders-highlight-5-deadrare-d5ff90d6161e" ><em>#5 here</em></a>, <a href="/news/post/builders-highlight-6-what-the-duck-0aedc602ecfd" ><em>#6 here</em></a>, <a href="/news/post/builders-highlight-7-alphpad-bbd4f4a34fd5" ><em>#7 here</em></a>, _and_ <a href="/news/post/builders-highlight-8-ngu-money-f8bf05e36e99" ><em>#8 here</em></a>_!_
+_Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real utility for users. In the Builders Highlight series, they share more about their projects, thoughts, and insights on why building on Alephium. You can find_ [#1 here](/news/post/builders-highlight-sezame-wallet-ddb4aeb61881)_,_ [#2 here](/news/post/builders-highlight-alphpaca-nfts-99c69775f04c), [#3 here](/news/post/builders-highlight-3-ayin-6be4a6bd4ec2), [#4 here](/news/post/builders-highlight-4-no-trust-verify-9ea495ca826f), [#5 here](/news/post/builders-highlight-5-deadrare-d5ff90d6161e), [#6 here](/news/post/builders-highlight-6-what-the-duck-0aedc602ecfd), [#7 here](/news/post/builders-highlight-7-alphpad-bbd4f4a34fd5), _and_ [#8 here](/news/post/builders-highlight-8-ngu-money-f8bf05e36e99)_!_
 
 This episode is about Mobula, a multichain DeFi Dashboard that integrated Alephium and our ecosystem? Here, they share some insights into their way of thinking, their relationship with Alephiumm and their plans for the future.
 
@@ -19,7 +19,7 @@ We are based in France, more specifically in Toulouse, the city of aeronautics a
 
 I generally dedicate my days and nights to building and leading Mobula, learning more about blockchain technology, and improving my coding skills.
 
-#### How did “<a href="http://mobula.io/" >Mobula.io</a>” come to be?
+#### How did “[Mobula.io](http://mobula.io/)” come to be?
 
 Mobula was established in the last quarter of 2022 after noticing discrepancies between the asset values listed by CMC and CG and their actual values on the blockchains. To share real values on our app, we developed specialized tools and accumulated extensive know-how for data collection. As other projects and companies expressed interest in this data, we decided to offer it through our APIs.
 
@@ -85,22 +85,22 @@ Data warehousing will likely encourage more teams to engage with Alephium, offer
 
 You’ll be welcome to join our:
 
-Discord: <a href="https://discord.gg/JVT7xKm3AD" >https://discord.gg/JVT7xKm3AD</a>
+Discord: [https://discord.gg/JVT7xKm3AD](https://discord.gg/JVT7xKm3AD)
 
-Twitter: <a href="https://x.com/Mobulaio" >https://x.com/Mobulaio</a>
+Twitter: [https://x.com/Mobulaio](https://x.com/Mobulaio)
 
-Telegram: <a href="https://t.me/MobulaFi" >https://t.me/MobulaFi</a>
+Telegram: [https://t.me/MobulaFi](https://t.me/MobulaFi)
 
 #### Anything else you’d want to add?
 
-Mobula is looking to recruit three to five developers. If you would like to join the team or suggest developers who could add value to Mobula, please contact Sacha at <a href="mailto:contact@mobulalabs.org" >contact@mobulalabs.org</a> or <a href="https://t.me/NBMSacha" >https://t.me/NBMSacha</a>.
+Mobula is looking to recruit three to five developers. If you would like to join the team or suggest developers who could add value to Mobula, please contact Sacha at [contact@mobulalabs.org](mailto:contact@mobulalabs.org) or [https://t.me/NBMSacha](https://t.me/NBMSacha).
 
-Thank you, Mobula team, for your answers! Alephium is thrilled to have such ambitious builders in the community! You can find the Mobula official site <a href="http://mobula.io" >here</a>, and we wish Mobula fruitful ventures ahead!
+Thank you, Mobula team, for your answers! Alephium is thrilled to have such ambitious builders in the community! You can find the Mobula official site [here](http://mobula.io), and we wish Mobula fruitful ventures ahead!
 
 ---
 
 _Disclaimer: While Alephium is happy to support a growing developer community, it would like to clarify that it does not endorse, audit, or review any software presented in this series and encourages all users to make informed decisions and take personal responsibility for their actions._
 
-Have you built something or have a nice idea and want to request a grant or reward? You can access the <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" >Alephium Community Grants &amp; Reward Program page</a> for more info!
+Have you built something or have a nice idea and want to request a grant or reward? You can access the [Alephium Community Grants &amp; Reward Program page](https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md) for more info!
 
-If you need help or have extra questions, you are welcome to reach out in the \# 🎨dev-dapp channel on [Discord](/discord), or in the Alephium <a href="https://t.me/alephiumgroup" >Telegram</a> channel. Don’t forget to follow <a href="https://twitter.com/alephium" >@alephium on Twitter</a> to stay up-to-date.
+If you need help or have extra questions, you are welcome to reach out in the \# 🎨dev-dapp channel on [Discord](/discord), or in the Alephium [Telegram](https://t.me/alephiumgroup) channel. Don’t forget to follow [@alephium on Twitter](https://twitter.com/alephium) to stay up-to-date.

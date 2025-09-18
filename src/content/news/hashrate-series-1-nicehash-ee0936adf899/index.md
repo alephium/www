@@ -11,7 +11,7 @@ _The blockchain hashrate is directly correlated with network security. As a Proo
 
 #### Can you tell us a bit about Nicehash? When was it founded? By whom? Where? And why? Can you tell us a bit about its history?
 
-<a href="https://www.nicehash.com/" >NiceHash</a> was founded in 2014 by two university students in Slovenia, and we are the world’s leading hashrate marketplace, with an open platform for buying and selling computing power for mining cryptocurrency. We were founded in response to many of the cloud mining scams in the early days of mining, as an open, transparent alternative to those sites.
+[NiceHash](https://www.nicehash.com/) was founded in 2014 by two university students in Slovenia, and we are the world’s leading hashrate marketplace, with an open platform for buying and selling computing power for mining cryptocurrency. We were founded in response to many of the cloud mining scams in the early days of mining, as an open, transparent alternative to those sites.
 
 We are actually celebrating 10 years of our company this year! As a Bitcoin-focused platform, we provide a complete ecosystem of mining, software, hashrate and payment solutions, with the goal of accelerating cryptocurrency adoption worldwide.
 
@@ -29,7 +29,7 @@ We actually see the core of mining remaining on Proof of Work. Projects like Eth
 
 I remember hearing about Alephium in 2021 when GPU miners knew the merge was coming for Ethereum and were already starting to look for alternatives and Alephium was one that was talked about.
 
-I admire the Alephium community, as they truly support each other and advocate for the project. We wanted to onboard Alephium as soon as possible, but with the nature of our open hashrate market we are conscious of making sure there is enough network hashrate, to avoid centralization. We are happy to now <a href="https://www.nicehash.com/my/marketplace/ALEPHIUM" >have it available</a>.
+I admire the Alephium community, as they truly support each other and advocate for the project. We wanted to onboard Alephium as soon as possible, but with the nature of our open hashrate market we are conscious of making sure there is enough network hashrate, to avoid centralization. We are happy to now [have it available](https://www.nicehash.com/my/marketplace/ALEPHIUM).
 
 #### With your current multi-cycle mining experience, what’s your outlook for this one? How would you advise people to stay updated with mining trends and evolutions of the market? Can you give an example of how a recent trend affected a mining decision?
 
@@ -43,12 +43,12 @@ ASICs coming to Alephium is very interesting, I think as long as the code allows
 
 ![](image_27d1407388.png)
 
-We’d love to invite everyone to our <a href="http://www.nicehashx.com" >Conference</a> this November to learn all about cryptocurrency and how you can use it in your business or e-commerce. We'd also like to celebrate 10 years of NiceHash! We would love to see the Alephium crowd there!
+We’d love to invite everyone to our [Conference](http://www.nicehashx.com) this November to learn all about cryptocurrency and how you can use it in your business or e-commerce. We'd also like to celebrate 10 years of NiceHash! We would love to see the Alephium crowd there!
 
-_Twitter & other socials links:_ <a href="http://www.nicehash.com/links" ><em>www.nicehash.com/links</em></a>
+_Twitter & other socials links:_ [www.nicehash.com/links](http://www.nicehash.com/links)
 
-_Website:_ <a href="http://www.nicehash.com" ><em>www.nicehash.com</em></a>
+_Website:_ [www.nicehash.com](http://www.nicehash.com)
 
 ---
 
-That is the end of this interview! If you are interested or have extra questions, you are welcome to reach out on our [Discord](/discord), or in the <a href="https://t.me/alephiumgroup" >Alephium Telegram channel</a>. Don’t forget to follow <a href="https://twitter.com/alephium" >@alephium on Twitter</a> to stay up-to-date.
+That is the end of this interview! If you are interested or have extra questions, you are welcome to reach out on our [Discord](/discord), or in the [Alephium Telegram channel](https://t.me/alephiumgroup). Don’t forget to follow [@alephium on Twitter](https://twitter.com/alephium) to stay up-to-date.

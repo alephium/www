@@ -34,15 +34,15 @@ Ensure you’re running the latest version of our Desktop Wallet (v2.1.4) to ben
 
 ![](image_9ef8460a7f.png)
 
-- In collaboration with <a href="https://twitter.com/zealy_io" >Zealy.io</a>, we’re putting the final touches on the pre-launch.
-- Dive deep into the sUTXO world with the second part of our long-form interview where <a href="https://twitter.com/wachmc" >@wachmc</a> explores the advantages of sUTXO, emphasizing its developer-friendly nature, enhanced security, and optimized state size for better dApps.
+- In collaboration with [Zealy.io](https://twitter.com/zealy_io), we’re putting the final touches on the pre-launch.
+- Dive deep into the sUTXO world with the second part of our long-form interview where [@wachmc](https://twitter.com/wachmc) explores the advantages of sUTXO, emphasizing its developer-friendly nature, enhanced security, and optimized state size for better dApps.
 - Additional content includes a guide on acquiring testnet tokens, the 12th edition of our Community Highlight, and more.
 
 **Community (Discord hot topics)**
 
-- The main conversations in our <a href="https://discord.com/" >Discord</a> community revolved around topics like hashrate distribution, the shutdown of txbit, and the identification of BOT scammers disrupting the server. We also discussed the launch of a new LP staking pool on <a href="https://twitter.com/ayincoin" >Ayincoin</a> by <a href="https://twitter.com/AlfnotAlph" >@AlfnotAlph</a>, the MEXC listing, the bridge, and the conversation around <a href="https://twitter.com/ben_larkey" >@ben_larkey’s</a> NFT marketplace.
+- The main conversations in our [Discord](https://discord.com/) community revolved around topics like hashrate distribution, the shutdown of txbit, and the identification of BOT scammers disrupting the server. We also discussed the launch of a new LP staking pool on [Ayincoin](https://twitter.com/ayincoin) by [@AlfnotAlph](https://twitter.com/AlfnotAlph), the MEXC listing, the bridge, and the conversation around [@ben_larkey’s](https://twitter.com/ben_larkey) NFT marketplace.
 
-For those interested in the technical details, everything in Alephium is open source. You can check our progress and dive into the code on our <a href="https://github.com/alephium" >GitHub</a>.
+For those interested in the technical details, everything in Alephium is open source. You can check our progress and dive into the code on our [GitHub](https://github.com/alephium).
 
 ---
 

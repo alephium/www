@@ -9,7 +9,7 @@ title: Builders Uncut — Mobula
 
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
-Here, we have a conversation with Teo & Sacha & about <a href="http://mobula.io" >Mobula</a>, a data product that integrates various chains, including Alephium. Find the full (slightly edited) transcript below if you prefer reading!
+Here, we have a conversation with Teo & Sacha & about [Mobula](http://mobula.io), a data product that integrates various chains, including Alephium. Find the full (slightly edited) transcript below if you prefer reading!
 
 `video: https://www.youtube.com/watch?v=JkHRwwAn-II`
 
@@ -77,10 +77,10 @@ Of course, if we’re invited.😉
 
 #### Links
 
-Twitter — <a href="https://x.com/Mobulaio"  rel="nofollow noopener noopener">https://x.com/Mobulaio</a>  
-Website — <a href="https://mobula.io/" >https://mobula.io/</a>   
-Discord — <a href="https://discord.com/invite/2a8hqNzkzN" >https://discord.com/invite/2a8hqNzkzN</a>   
-Telegram — <a href="https://t.me/MobulaFi" >https://t.me/MobulaFi</a>
+Twitter — [https://x.com/Mobulaio](https://x.com/Mobulaio)  
+Website — [https://mobula.io/](https://mobula.io/)   
+Discord — [https://discord.com/invite/2a8hqNzkzN](https://discord.com/invite/2a8hqNzkzN)   
+Telegram — [https://t.me/MobulaFi](https://t.me/MobulaFi)
 
 ---
 
@@ -88,8 +88,8 @@ Mobula’s founder gave a fantastic talk in our first Athens Builders Meetup!
 
 `video: https://www.youtube.com/watch?v=YdPTqEx8sZQ`
 
-You can also find all the talks of the Athens Builders Meetup <a href="/news/post/all-the-athens-meetup-presentations-f419195640ce?source=user_profile---------0----------------------------" >here</a>.
+You can also find all the talks of the Athens Builders Meetup [here](/news/post/all-the-athens-meetup-presentations-f419195640ce?source=user_profile---------0----------------------------).
 
 ---
 
-For any questions or feedback, reach out to us on [Discord](/discord) or <a href="https://t.me/alephiumgroup" >Telegram</a>, and follow <a href="https://x.com/alephium" >@alephium on Twitter</a> for the latest updates!
+For any questions or feedback, reach out to us on [Discord](/discord) or [Telegram](https://t.me/alephiumgroup), and follow [@alephium on Twitter](https://x.com/alephium) for the latest updates!

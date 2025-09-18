@@ -7,24 +7,24 @@ featuredImage: image_32222cf239.jpg
 title: 'Tech Talk #10 — NYM, Alexis Roussel &amp; the Future of Privacy'
 ---
 
-_This article follows_ <a href="https://www.youtube.com/watch?v=pImANSvO6WQ" ><em>Alephium’s Tech Talk #10</em></a>_, where Alexis Roussel from_ <a href="https://nymtech.net/" ><em>NYM</em></a> _delves into the fascinating realm of_ <a href="https://en.wikipedia.org/wiki/Mix_network" ><em>mix networks</em></a> _and their crucial role in enhancing privacy, specifically in the context of cryptocurrency transactions. You’ll find first a little recap of what mix networks are, why they are useful and how NYM is bringing privacy to the masses, and then an edited version of the Q&A Alexis Roussel had with the community._
+_This article follows_ [Alephium’s Tech Talk #10](https://www.youtube.com/watch?v=pImANSvO6WQ)_, where Alexis Roussel from_ [NYM](https://nymtech.net/) _delves into the fascinating realm of_ [mix networks](https://en.wikipedia.org/wiki/Mix_network) _and their crucial role in enhancing privacy, specifically in the context of cryptocurrency transactions. You’ll find first a little recap of what mix networks are, why they are useful and how NYM is bringing privacy to the masses, and then an edited version of the Q&A Alexis Roussel had with the community._
 
 `video: https://www.youtube.com/watch?v=pImANSvO6WQ`
 
-<a href="https://twitter.com/alexis_roussel" >Alexis Roussel</a> is an accomplished technology and privacy advocate, currently COO of NYM. With a deep understanding of technology and its impact on society, Alexis has dedicated his career to championing digital integrity and empowering individuals to maintain control over their personal data. He is a former president of the <a href="https://www.partipirate.ch/" >Pirate Party of Switzerland</a>, and the co-founder of <a href="https://bity.com/" >Bity</a>, one of the first crypto brokers in Switzerland.
+[Alexis Roussel](https://twitter.com/alexis_roussel) is an accomplished technology and privacy advocate, currently COO of NYM. With a deep understanding of technology and its impact on society, Alexis has dedicated his career to championing digital integrity and empowering individuals to maintain control over their personal data. He is a former president of the [Pirate Party of Switzerland](https://www.partipirate.ch/), and the co-founder of [Bity](https://bity.com/), one of the first crypto brokers in Switzerland.
 
-He is a co-author of the book “<a href="https://www.slatkine.com/fr/editions-slatkine/74977-book-07211052-9782832110522.html" >Our Precious Digital Integrity,</a>” written with <a href="https://twitter.com/GregoireBarbey" >Grégoire Barbey</a>, and firmly believes that crypto technology, with its emphasis on user control and public infrastructure, plays a pivotal role in shaping a responsible and human-centric digital society.  
-<a href="https://euro.dayfr.com/local/395852.html" >Thanks to their advocacy, Digital Integrity was actually voted into law (at 94%!) in the canton of Geneva last weekend!</a>
+He is a co-author of the book “[Our Precious Digital Integrity,](https://www.slatkine.com/fr/editions-slatkine/74977-book-07211052-9782832110522.html)” written with [Grégoire Barbey](https://twitter.com/GregoireBarbey), and firmly believes that crypto technology, with its emphasis on user control and public infrastructure, plays a pivotal role in shaping a responsible and human-centric digital society.  
+[Thanks to their advocacy, Digital Integrity was actually voted into law (at 94%!) in the canton of Geneva last weekend!](https://euro.dayfr.com/local/395852.html)
 
 **The Importance of Privacy in the Digital Age**
 
 In the context of heavy data collection and surveillance, privacy has emerged as a fundamental human right. Individuals and organizations alike face threats to their personal data, ranging from state surveillance to data breaches by malicious actors.
 
-The <a href="https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal" >Cambridge Analytica</a> scandal and other high-profile data incidents have heightened public awareness regarding the vulnerability of personal information. Consequently, there is a growing consensus on the need for robust privacy solutions to empower individuals and protect their digital identities.
+The [Cambridge Analytica](https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal) scandal and other high-profile data incidents have heightened public awareness regarding the vulnerability of personal information. Consequently, there is a growing consensus on the need for robust privacy solutions to empower individuals and protect their digital identities.
 
 **Understanding Mixnets and Their Role in Privacy Enhancement**
 
-<a href="https://en.wikipedia.org/wiki/Mix_network" >Mixnets</a>, a concept rooted in the pioneering work of <a href="https://en.wikipedia.org/wiki/David_Chaum" >David Chaum</a> in the 1980s, are a crucial tool for enhancing privacy in digital communications. At their core, mixnets are decentralized networks that employ a series of anonymizing relays to obfuscate the origin and destination of data packets.
+[Mixnets](https://en.wikipedia.org/wiki/Mix_network), a concept rooted in the pioneering work of [David Chaum](https://en.wikipedia.org/wiki/David_Chaum) in the 1980s, are a crucial tool for enhancing privacy in digital communications. At their core, mixnets are decentralized networks that employ a series of anonymizing relays to obfuscate the origin and destination of data packets.
 
 By shuffling and encrypting packets, mixnets introduce significant noise, making it nearly impossible for adversaries to trace and monitor communication patterns. Mixnets provide a powerful defense against traffic analysis and enable individuals to communicate privately and anonymously.
 
@@ -42,11 +42,11 @@ One key advantage of NYM’s approach is the scalability potential of mixnets. U
 
 Cryptocurrencies present a unique context where privacy is essential (and hard to achieve). While traditional financial systems rely on trusted intermediaries such as banks, they operate on decentralized networks, offering new possibilities for financial autonomy and privacy.
 
-NYM introduced a client inside the <a href="https://github.com/ChainSafe/rust-libp2p-nym" >Libp2p framework</a>, allowing network participants (like node operators) to participate in the network consensus without revealing their IP or physical location to the rest of the network.
+NYM introduced a client inside the [Libp2p framework](https://github.com/ChainSafe/rust-libp2p-nym), allowing network participants (like node operators) to participate in the network consensus without revealing their IP or physical location to the rest of the network.
 
-In the same way, crypto wallets can also take advantage of NYM mixnets when sending transactions to the network. Nym provides software called <a href="https://shipyard.nymtech.net/nym-connect/" >NYM Connect</a> that makes their integration easier and abstracts away complexity from the user.
+In the same way, crypto wallets can also take advantage of NYM mixnets when sending transactions to the network. Nym provides software called [NYM Connect](https://shipyard.nymtech.net/nym-connect/) that makes their integration easier and abstracts away complexity from the user.
 
-<a href="https://github.com/alephium/desktop-wallet/issues/496" >(and guess who’s considering adding this as a feature?)</a>
+[(and guess who’s considering adding this as a feature?)](https://github.com/alephium/desktop-wallet/issues/496)
 
 **The Road Ahead: Privacy, Democracy, and Technological Progress**
 
@@ -54,7 +54,7 @@ Privacy is not a matter of personal preference but a basic item of democracy and
 
 ### Q&A Session
 
-_After the NYM project presentation, a Q&A session was held, and a few of these questions are listed below. You can watch all of them in the_ <a href="https://www.youtube.com/watch?v=pImANSvO6WQ" ><em>TT#10 video</em></a>_. (the Q&A has been edited (& chatGPT’d) for concision and reading pleasure)_
+_After the NYM project presentation, a Q&A session was held, and a few of these questions are listed below. You can watch all of them in the_ [TT#10 video](https://www.youtube.com/watch?v=pImANSvO6WQ)_. (the Q&A has been edited (& chatGPT’d) for concision and reading pleasure)_
 
 **Q: You are clearly an activist at heart, you clearly have a vision for data in society. So my first question would be: what is the use case? Why do you think this is important?**
 
@@ -74,7 +74,7 @@ A: Right now, the network is free to use. However, it is intended to be a paid s
 
 **Q: How do you handle the ideal number of mixing nodes versus the network’s throughput? How do you preserve decentralization, anonymity sets, and scale simultaneously?**
 
-That’s a question tied to future development. As of now, the current number of mixed nodes is manually fixed within the system. However, this can be altered; we can decrease or increase it. A model has been devised by <a href="https://twitter.com/claudsdayz" >Claudia</a> to measure the level of anonymity in a network, based on the volume of traffic, available bandwidth, and delay placed on the packet. The more traffic inside, the more we can reduce the delay, making the network speedier while still maintaining the same level of anonymity. If there are only a few people using the mixed nodes, then you need to slow down significantly to ensure adequate mixing.
+That’s a question tied to future development. As of now, the current number of mixed nodes is manually fixed within the system. However, this can be altered; we can decrease or increase it. A model has been devised by [Claudia](https://twitter.com/claudsdayz) to measure the level of anonymity in a network, based on the volume of traffic, available bandwidth, and delay placed on the packet. The more traffic inside, the more we can reduce the delay, making the network speedier while still maintaining the same level of anonymity. If there are only a few people using the mixed nodes, then you need to slow down significantly to ensure adequate mixing.
 
 The same goes for the size of the bandwidth. If you have too much bandwidth, it’s like a large river; you can see bits of water everywhere. Therefore, you need to maintain a consistent level of ‘water.’ As traffic increases, you can widen the network by adding layers of nodes or computers to each layer. Conversely, if the traffic decreases, you could reduce the nodes to maintain sufficient traffic levels. We have this concept of the active set of computers and the non-active set ready to jump in when needed. Right now, this number is fixed manually, but eventually, it will be automatically adjusted by the system based on the actual volume of traffic.
 
@@ -116,6 +116,6 @@ I feel that being part of this movement and pushing it in the right direction, a
 
 **At Alephium, we have plenty to discuss in the coming weeks — the hackathon, the ambassador program, the bridge, the mobile wallet, and much more.**
 
-**We’ll keep you updated through** <a href="https://discord.gg/XsGpZ5VDTM" ><strong>Discord</strong></a>**,** <a href="https://t.me/alephiumgroup" ><strong>Telegram</strong></a> **and** <a href="https://twitter.com/alephium" ><strong>Twitter</strong></a>**. Stay tuned, and thank you for your support!**
+**We’ll keep you updated through** [Discord](https://discord.gg/XsGpZ5VDTM)**,** [Telegram](https://t.me/alephiumgroup) **and** [Twitter](https://twitter.com/alephium)**. Stay tuned, and thank you for your support!**
 
 ![](image_01a8c2e59d.png)

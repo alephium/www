@@ -19,7 +19,7 @@ I’ve been in crypto for a few years, initially as a regular user. I started wi
 
 #### Did you learn how to code in the process?
 
-Yes, I knew a little, but I learned a lot quickly with Gold Castle Club. <a href="https://docs.alephium.org/ralph" >Ralph</a>, the Alephium language is very good for beginners.
+Yes, I knew a little, but I learned a lot quickly with Gold Castle Club. [Ralph](https://docs.alephium.org/ralph), the Alephium language is very good for beginners.
 
 #### You started one ambitious project and then a second one, Swapa. How are you handling both?
 
@@ -47,7 +47,7 @@ Someone in the Discord suggested a “ve” DEX on Alephium, like Pancake Swap. 
 
 ![](image_e1d9067777.png)
 
-I don’t see Deadrare’s DEX (<a href="https://candyswap.gg/" >Candyswap</a>) as a competitor because it’s an order book DEX, and we’ll work in synergy. People will provide liquidity where they can get rewards, so tokenomics is crucial.
+I don’t see Deadrare’s DEX ([Candyswap](https://candyswap.gg/)) as a competitor because it’s an order book DEX, and we’ll work in synergy. People will provide liquidity where they can get rewards, so tokenomics is crucial.
 
 #### Will you incentivize token holders to vote for specific pools?
 
@@ -55,7 +55,7 @@ Yes, people can add bribes to any pool to incentivize voting. Swapa will add bri
 
 #### When will it be out?
 
-Hopefully, it will be within weeks. (Note: It is already <a href="https://x.com/alphswaps/status/1817568165242847704" >live on testnet</a>). We’re also contacting hongchao for contract audits.
+Hopefully, it will be within weeks. (Note: It is already [live on testnet](https://x.com/alphswaps/status/1817568165242847704)). We’re also contacting hongchao for contract audits.
 
 #### Is there anything you need that you haven’t found yet? How can we support builders better?
 
@@ -66,17 +66,17 @@ Everything has been great so far. Some documentation needs to be more detailed, 
 #### Links:
 
 **Gold Castle Club  
-**Website: <a href="https://goldcastle.club/"  rel="nofollow noopener noopener">https://goldcastle.club/</a>  
-Twitter: <a href="https://x.com/GoldCastleClub"  rel="nofollow noopener noopener">https://x.com/GoldCastleClub</a>  
-Telegram: <a href="https://t.me/goldcastleclub"  rel="nofollow noopener noopener">https://t.me/goldcastleclub</a>  
-Discord: <a href="https://discord.gg/dtemyQ8wce"  rel="nofollow noopener noopener">https://discord.gg/dtemyQ8wce</a>
+**Website: [https://goldcastle.club/](https://goldcastle.club/)  
+Twitter: [https://x.com/GoldCastleClub](https://x.com/GoldCastleClub)  
+Telegram: [https://t.me/goldcastleclub](https://t.me/goldcastleclub)  
+Discord: [https://discord.gg/dtemyQ8wce](https://discord.gg/dtemyQ8wce)
 
 **Swapa**  
-Website: <a href="https://swapa.exchange/"  rel="nofollow noopener noopener">https://swapa.exchange/</a>  
-Twitter: <a href="https://x.com/alphswaps"  rel="nofollow noopener noopener">https://x.com/alphswaps</a>  
-Telegram: <a href="https://t.co/hTmllPb8CU"  rel="noopener noreferrer nofollow noopener noopener">https://t.me/swapadex</a>  
-Discord: <a href="https://t.co/S3cCZXWfwP"  rel="noopener noreferrer nofollow noopener noopener">discord.gg/6zEezaNyND</a>
+Website: [https://swapa.exchange/](https://swapa.exchange/)  
+Twitter: [https://x.com/alphswaps](https://x.com/alphswaps)  
+Telegram: [https://t.me/swapadex](https://t.co/hTmllPb8CU)  
+Discord: [discord.gg/6zEezaNyND](https://t.co/S3cCZXWfwP)
 
 ---
 
-For any questions or feedback, reach out to us on [Discord](/discord) or <a href="https://t.me/alephiumgroup"  rel="noopener ugc nofollow noopener noopener noopener noopener">Telegram</a>, and follow <a href="https://x.com/alephium"  rel="noopener ugc nofollow noopener noopener noopener noopener">@alephium on Twitter</a> for the latest updates!
+For any questions or feedback, reach out to us on [Discord](/discord) or [Telegram](https://t.me/alephiumgroup), and follow [@alephium on Twitter](https://x.com/alephium) for the latest updates!

@@ -28,9 +28,9 @@ Users running a full node locally must update their software to v2.0.0.
 
 #### **External Full Node**
 
-<a href="https://dappnode.io/" ><strong>Dappnode</strong></a>**:** There is nothing to do for users using Dappnode with auto-update options checked. If not, the user must go to the Alephium package and click the upgrade/update button.
+[Dappnode](https://dappnode.io/)**:** There is nothing to do for users using Dappnode with auto-update options checked. If not, the user must go to the Alephium package and click the upgrade/update button.
 
-<a href="https://runonflux.io/" ><strong>Flux</strong></a>**:** No action is required from users using Flux.
+[Flux](https://runonflux.io/)**:** No action is required from users using Flux.
 
 #### **Services providers**
 
@@ -38,11 +38,11 @@ The latest Full Node v2.0.0 and Explorer Backend 1.13.1 (if necessary) must be i
 
 Download the latest version of the Full Node (v2.0.0) here:
 
-🔗 <a href="https://github.com/alephium/alephium/releases/latest" >https://github.com/alephium/alephium/releases/latest</a>
+🔗 [https://github.com/alephium/alephium/releases/latest](https://github.com/alephium/alephium/releases/latest)
 
 Download the latest version of the Explorer Backend (v1.13.1) here:
 
-🔗 <a href="https://github.com/alephium/explorer-backend/releases/latest" >https://github.com/alephium/explorer-backend/releases/latest</a>
+🔗 [https://github.com/alephium/explorer-backend/releases/latest](https://github.com/alephium/explorer-backend/releases/latest)
 
 All impacted users are encouraged to update their nodes before the activation timestamp to ensure uninterrupted access to the Alephium blockchain.
 
@@ -54,7 +54,7 @@ The Leman-ready desktop wallet version is the v1.5.3. **_All users must upgrade 
 
 If your Desktop Wallet prompts a message asking you to upgrade to the latest version, please follow its instructions. Alternatively, you can download the latest version of the Desktop Wallet directly here:
 
-🔗 <a href="https://github.com/alephium/desktop-wallet/releases/latest" >https://github.com/alephium/desktop-wallet/releases/latest</a>
+🔗 [https://github.com/alephium/desktop-wallet/releases/latest](https://github.com/alephium/desktop-wallet/releases/latest)
 
 #### **Browser Extension Wallet**
 
@@ -62,15 +62,15 @@ The browser extension wallet is ready for the Leman Network Upgrade.
 
 Download the latest version of the browser extension wallet here:
 
-🔗 <a href="https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj" >Google Chrome store.</a>
+🔗 [Google Chrome store.](https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj)
 
-🔗 <a href="https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/" >Firefox Store.</a>
+🔗 [Firefox Store.](https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/)
 
 ### Leman Network Upgrade Enhancements
 
 #### **Security**
 
-The <a href="/news/post/announcing-the-leman-network-upgrade-c01a81e65f0e" >Leman Network Upgrade</a> includes new features at the language (Ralph) and <a href="/news/post/meet-alphred-a-virtual-machine-like-no-others-85ce86540025" >Virtual Machine</a> (Alphred) level, which will aid developers in creating complex dApps more easily.
+The [Leman Network Upgrade](/news/post/announcing-the-leman-network-upgrade-c01a81e65f0e) includes new features at the language (Ralph) and [Virtual Machine](/news/post/meet-alphred-a-virtual-machine-like-no-others-85ce86540025) (Alphred) level, which will aid developers in creating complex dApps more easily.
 
 #### **Bridge**
 
@@ -80,8 +80,8 @@ The Leman Upgrade clears the way for Alephium Bridge deployment, connecting Alep
 
 The Leman Upgrade has new Virtual Machine instructions and built-in functions. The “Sub-contract” concept and new built-in functions for debugging, asserting, logging, migrating existing contracts, burning tokens, etc., to improve the dApp development experience.
 
-New Node/Explorer APIs, web3 library, and wallets (through WalletConnect & <a href="/news/post/alephium-launches-browser-extension-wallet-706dfeda98f5" >browser extension</a>) will help reduce the required software development cycle to build dApps on Alephium.
+New Node/Explorer APIs, web3 library, and wallets (through WalletConnect & [browser extension](/news/post/alephium-launches-browser-extension-wallet-706dfeda98f5)) will help reduce the required software development cycle to build dApps on Alephium.
 
 ---
 
-If you need assistance, you are welcome to reach out in the community channels on [Discord](/discord), <a href="https://t.me/alephiumgroup" >Telegram</a>. And follow <a href="https://twitter.com/alephium" >@alephium on Twitter</a> to stay up-to-date.
+If you need assistance, you are welcome to reach out in the community channels on [Discord](/discord), [Telegram](https://t.me/alephiumgroup). And follow [@alephium on Twitter](https://twitter.com/alephium) to stay up-to-date.

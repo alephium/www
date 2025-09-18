@@ -9,13 +9,13 @@ title: Builders Uncut — Pyreplay
 
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
-Jonas, aka <a href="https://x.com/fugashu_codes" >Fugashu</a>, and his partner <a href="https://x.com/notdimfred" >Dmitrij</a> share their journey into crypto, their projects <a href="http://Alph.Land" >Alph.Land</a> and <a href="https://www.pyreplay.com/" >PyrePlay</a> on Alephium, and the supportive community that drew them to the platform. They also discussed their experience at the Alephium Builders meetup and their plans for PyrePlay’s future. Find the full (slightly edited) transcript below if you prefer reading.
+Jonas, aka [Fugashu](https://x.com/fugashu_codes), and his partner [Dmitrij](https://x.com/notdimfred) share their journey into crypto, their projects [Alph.Land](http://Alph.Land) and [PyrePlay](https://www.pyreplay.com/) on Alephium, and the supportive community that drew them to the platform. They also discussed their experience at the Alephium Builders meetup and their plans for PyrePlay’s future. Find the full (slightly edited) transcript below if you prefer reading.
 
 `video: https://www.youtube.com/watch?v=LMgsXYtiY4M`
 
 #### Who are you, and what do you do?
 
-I’m Jonas, but you might know me better as <a href="https://x.com/fugashu_codes" >Fugashu</a>. Since November last year, I’ve been building on Alephium, creating projects like <a href="http://alph.land" >Alph.Land</a> and <a href="https://www.pyreplay.com/" >PyrePlay</a>. I’m very active in the Alephium Discord community. My partner, <a href="https://x.com/notdimfred" >Dmitrij</a>, handles the backend work and smart contract development for PyrePlay.
+I’m Jonas, but you might know me better as [Fugashu](https://x.com/fugashu_codes). Since November last year, I’ve been building on Alephium, creating projects like [Alph.Land](http://alph.land) and [PyrePlay](https://www.pyreplay.com/). I’m very active in the Alephium Discord community. My partner, [Dmitrij](https://x.com/notdimfred), handles the backend work and smart contract development for PyrePlay.
 
 #### How did you get into crypto?
 
@@ -39,7 +39,7 @@ PyrePlay is a gaming platform on the Alephium blockchain. I’ve been a gamer si
 
 #### How do NFTs fit into PyrePlay?
 
-We <a href="https://deadrare.io/collection/pyreplay-founder-cards" >released NFTs</a> that act like founder packages. If you hold one of these NFTs, you’re basically part of the PyrePlay family. You’ll get a share of the platform fees, cheaper entry to games, and the satisfaction of knowing you’re helping to shape the development of PyrePlay.
+We [released NFTs](https://deadrare.io/collection/pyreplay-founder-cards) that act like founder packages. If you hold one of these NFTs, you’re basically part of the PyrePlay family. You’ll get a share of the platform fees, cheaper entry to games, and the satisfaction of knowing you’re helping to shape the development of PyrePlay.
 
 ![](image_851b6bea33.png)
 
@@ -58,13 +58,13 @@ What we really appreciate about Alephium is the strong community and the incredi
 **Links:**
 
 **Alph.land**  
-Website: <a href="https://www.alph.land/"  rel="nofollow noopener">https://www.alph.land/</a>  
-Visualizer: <a href="https://t.co/pUXfpQOUCp"  rel="noopener noreferrer nofollow noopener">https://visualizer.alph.land</a>
+Website: [https://www.alph.land/](https://www.alph.land/)  
+Visualizer: [https://visualizer.alph.land](https://t.co/pUXfpQOUCp)
 
 **Pyreplay**  
-Website: <a href="https://www.pyreplay.com/"  rel="nofollow noopener">https://www.pyreplay.com/</a>  
-Twitter: <a href="https://twitter.com/PyreplayDotCom"  rel="nofollow noopener">https://twitter.com/PyreplayDotCom</a>  
-Discord: <a href="https://discord.gg/BHUx8KqvSF"  rel="nofollow noopener">https://discord.gg/BHUx8KqvSF</a>
+Website: [https://www.pyreplay.com/](https://www.pyreplay.com/)  
+Twitter: [https://twitter.com/PyreplayDotCom](https://twitter.com/PyreplayDotCom)  
+Discord: [https://discord.gg/BHUx8KqvSF](https://discord.gg/BHUx8KqvSF)
 
 ---
 
@@ -72,8 +72,8 @@ Dimi was a speaker at the Athens Builders Meetup!
 
 `video: https://www.youtube.com/watch?v=iVoNJRzxLGU`
 
-You can also find all the talks of the Athens Builders Meetup <a href="/news/post/all-the-athens-meetup-presentations-f419195640ce" >here</a>.
+You can also find all the talks of the Athens Builders Meetup [here](/news/post/all-the-athens-meetup-presentations-f419195640ce).
 
 ---
 
-For any questions or feedback, reach out to us on [Discord](/discord) or <a href="https://t.me/alephiumgroup" >Telegram</a>, and follow <a href="https://x.com/alephium" >@alephium on Twitter</a> for the latest updates!
+For any questions or feedback, reach out to us on [Discord](/discord) or [Telegram](https://t.me/alephiumgroup), and follow [@alephium on Twitter](https://x.com/alephium) for the latest updates!

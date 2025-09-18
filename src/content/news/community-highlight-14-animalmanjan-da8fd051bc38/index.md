@@ -7,9 +7,9 @@ featuredImage: image_c1fa21c0b7.jpg
 title: 'Community Highlight #14, AnimalManJan'
 ---
 
-_Regularly, we put the spotlight on an active member of the Alephium community. This is an opportunity to showcase their contributions to the ecosystem, what drives them and what they are passionate about! More episodes:_ <a href="/news/post/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" ><em>#1</em></a>_,_ <a href="/news/post/community-highlight-cgi-bin-c102cc106f19" ><em>#2</em></a>_,_ <a href="/news/post/community-highlight-3-digdug-48a7ec868504" ><em>#3</em></a>_,_ <a href="/news/post/community-highlight-4-montail-e24fd88882a0" ><em>#4</em></a>_,_ <a href="/news/post/community-highlight-5-txn-71c4fd76ffe8" ><em>#5</em></a>_,_ <a href="/news/post/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" ><em>#6</em></a>_,_ <a href="/news/post/community-highlight-7-oheka-13d8b4ae025e" ><em>#7</em></a>_,_ <a href="/news/post/community-highlight-8-jorge-438510785041" ><em>#8</em></a>_,_ <a href="/news/post/community-highlight-9-dzhemsh-a0a4a98a8489" ><em>#9</em></a>_,_ <a href="/news/post/community-highlight-10-lx-aka-lix-fde724cf8d81" ><em>#10</em></a>_,_ <a href="/news/post/community-highlight-11-dr-jekyll-165ab9a51880" ><em>#11</em></a>, <a href="/news/post/community-highlight-12-sam-a-k-a-energy45-610005a9219b" ><em>#12</em></a>, and <a href="/news/post/community-highlight-13-ryan-5dbbeaf859e4" >#13</a>_._
+_Regularly, we put the spotlight on an active member of the Alephium community. This is an opportunity to showcase their contributions to the ecosystem, what drives them and what they are passionate about! More episodes:_ [#1](/news/post/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692)_,_ [#2](/news/post/community-highlight-cgi-bin-c102cc106f19)_,_ [#3](/news/post/community-highlight-3-digdug-48a7ec868504)_,_ [#4](/news/post/community-highlight-4-montail-e24fd88882a0)_,_ [#5](/news/post/community-highlight-5-txn-71c4fd76ffe8)_,_ [#6](/news/post/community-highlight-6-waldi-zkit-beats-37af1f6df3b8)_,_ [#7](/news/post/community-highlight-7-oheka-13d8b4ae025e)_,_ [#8](/news/post/community-highlight-8-jorge-438510785041)_,_ [#9](/news/post/community-highlight-9-dzhemsh-a0a4a98a8489)_,_ [#10](/news/post/community-highlight-10-lx-aka-lix-fde724cf8d81)_,_ [#11](/news/post/community-highlight-11-dr-jekyll-165ab9a51880), [#12](/news/post/community-highlight-12-sam-a-k-a-energy45-610005a9219b), and [#13](/news/post/community-highlight-13-ryan-5dbbeaf859e4)_._
 
-_He is an animal lover with an animal care business and spends his free time_ <a href="https://www.youtube.com/@animalmanjan2988" ><em>riding around with his dog, Bishop</em></a>_. Really active on Discord, he is an important contributor to the good-vibes-only crowd. Check the interview to know more about him!_
+_He is an animal lover with an animal care business and spends his free time_ [riding around with his dog, Bishop](https://www.youtube.com/@animalmanjan2988)_. Really active on Discord, he is an important contributor to the good-vibes-only crowd. Check the interview to know more about him!_
 
 #### What can we call you, and where should we picture you?
 
@@ -37,10 +37,10 @@ One of these days, a real Utility will come. On that day, the world will realize
 
 #### What do you like to do in your free time? Any hobbies?
 
-My free time is caring for my animals, building my clothing line and <a href="https://www.youtube.com/@animalmanjan2988" >YouTube channels</a> and spending time with my girl and my dog, but I need ALPH to moon to fix my motorcycle.
+My free time is caring for my animals, building my clothing line and [YouTube channels](https://www.youtube.com/@animalmanjan2988) and spending time with my girl and my dog, but I need ALPH to moon to fix my motorcycle.
 
 ---
 
 _This concludes \#14 of the community highlights. Thank you AnimalManJan for sharing your passion with the Alephium community and contributing all across! We’ll return with another episode of the community highlights in November 2023!_
 
-_Meanwhile, you can follow[Alephium](/)on_ <a href="https://github.com/alephium/" ><em>Github</em></a>_,_ <a href="https://twitter.com/alephium" ><em>Twitter</em></a>_. Join the conversation on_ [Discord](/discord)_,_ <a href="https://t.me/alephiumgroup" ><em>Telegram</em></a> _or_ <a href="https://www.reddit.com/r/alephium" ><em>Reddit</em></a>_._
+_Meanwhile, you can follow[Alephium](/)on_ [Github](https://github.com/alephium/)_,_ [Twitter](https://twitter.com/alephium)_. Join the conversation on_ [Discord](/discord)_,_ [Telegram](https://t.me/alephiumgroup) _or_ [Reddit](https://www.reddit.com/r/alephium)_._

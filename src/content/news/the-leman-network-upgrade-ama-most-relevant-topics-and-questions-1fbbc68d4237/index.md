@@ -7,7 +7,7 @@ featuredImage: image_819f6611c3.png
 title: 'The Leman Network Upgrade AMA: Most relevant topics and questions'
 ---
 
-The <a href="/news/post/announcing-the-leman-network-upgrade-c01a81e65f0e" >Leman Upgrade</a> is a significant update in the main components of the Alephium blockchain. It’s been in the works since the mainnet launch, and last week there was a Tech Talk with Cheng and Hongchao where a lot was discussed and revealed. This article summarizes the most important topics and you can watch the full video recording <a href="https://www.youtube.com/watch?v=n7ycJUIfbVg" >here</a>.
+The [Leman Upgrade](/news/post/announcing-the-leman-network-upgrade-c01a81e65f0e) is a significant update in the main components of the Alephium blockchain. It’s been in the works since the mainnet launch, and last week there was a Tech Talk with Cheng and Hongchao where a lot was discussed and revealed. This article summarizes the most important topics and you can watch the full video recording [here](https://www.youtube.com/watch?v=n7ycJUIfbVg).
 
 ### A (big) step forward
 
@@ -17,7 +17,7 @@ Question: **What is the Leman Upgrade? Why have we talked about it for so long, 
 
 Question: **When will it activate? How will we know?**
 
-**Cheng:** All planned features and changes were introduced in the <a href="https://github.com/alephium/alephium/releases/latest" >latest full-node</a> release. These improvements are under testing and, when cleared, will be available for the whole community.
+**Cheng:** All planned features and changes were introduced in the [latest full-node](https://github.com/alephium/alephium/releases/latest) release. These improvements are under testing and, when cleared, will be available for the whole community.
 
 Question: **What are the main changes? What does the Leman Upgrade make possible that wasn’t possible before?**
 
@@ -35,7 +35,7 @@ Question: **Will the bridge be available after the mainnet upgrade from day one?
 
 **Hongchao:** After the mainnet upgrade, some time will be spent monitoring the network. There is no specific date for launching the bridge on the mainnet since the bridge’s security is critical for Alephium’s ecosystem, and it makes sense to be extra careful with this piece of infrastructure.
 
-The bridge is already <a href="https://portal-bridge.wormhole-testnet.softfork.se/" >deployed on testnet</a> (which is Leman compatible). Its components have been tested, from UI to the smart contract, from Guardians to infrastructure. The goal is to be very confident about the code, make sure it is correct and secure, and gain more operational experience.
+The bridge is already [deployed on testnet](https://portal-bridge.wormhole-testnet.softfork.se/) (which is Leman compatible). Its components have been tested, from UI to the smart contract, from Guardians to infrastructure. The goal is to be very confident about the code, make sure it is correct and secure, and gain more operational experience.
 
 Question: **Which tokens will be supported on the bridge?**
 
@@ -81,9 +81,9 @@ Question: **Can you talk to us about the NFTs? Can we already mint NFTs? Can you
 
 **Hongchao:** We have deployed the NFT prototype on testnet, together with the extension wallet, you should be able to mint an NFT there.
 
-The NFT Marketplace is available at <a href="https://nft.alephium-testnet.softfork.se/" >https://nft.alephium-testnet.softfork.se/</a>
+The NFT Marketplace is available at [https://nft.alephium-testnet.softfork.se/](https://nft.alephium-testnet.softfork.se/)
 
-And you can download the browser extension wallet at <a href="https://github.com/alephium/extension-wallet/releases/latest" >https://github.com/alephium/extension-wallet/releases/latest</a>
+And you can download the browser extension wallet at [https://github.com/alephium/extension-wallet/releases/latest](https://github.com/alephium/extension-wallet/releases/latest)
 
 ### Other topics
 
@@ -139,4 +139,4 @@ Other integrations with wallets and payments services are also on the radar, and
 
 Alephium has made significant strides in the past year to make the platform more developer-friendly and versatile, with the ability to bridge any tokens between Ethereum and Alephium, plans to bridge to other chains, and improvements to the SDK, VM, and Ralph. These changes have made writing smart contracts and developing on the Alephium platform more enjoyable and secure. The team is also working on making the mobile wallet available on iOS and Android, integrating a ledger into the extension wallet, and developing prototypes for key dApps such as the bridge, a DEX, and NFT prototypes. Now it’s time for the community to continue to experiment and build on the platform!
 
-If you have questions or want to know more, please come to Alephium’s <a href="https://discord.gg/JErgRBfRSB" >Discord</a>, <a href="https://t.me/alephiumgroup" >Telegram</a>, or reach out on <a href="https://twitter.com/alephium" >Twitter</a>!
+If you have questions or want to know more, please come to Alephium’s [Discord](https://discord.gg/JErgRBfRSB), [Telegram](https://t.me/alephiumgroup), or reach out on [Twitter](https://twitter.com/alephium)!

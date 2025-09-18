@@ -7,9 +7,9 @@ featuredImage: image_44c631f654.jpg
 title: 'Builders Highlight #11: Fugashu'
 ---
 
-_Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real utility for users. In the Builders Highlight series, they share more about their projects, thoughts, and insights on why building on Alephium. You can find_ <a href="/news/post/builders-highlight-sezame-wallet-ddb4aeb61881" ><em>#1</em></a>_,_ <a href="/news/post/builders-highlight-alphpaca-nfts-99c69775f04c" ><em>#2</em></a>, <a href="/news/post/builders-highlight-3-ayin-6be4a6bd4ec2" ><em>#3</em></a>, <a href="/news/post/builders-highlight-4-no-trust-verify-9ea495ca826f" ><em>#4</em></a>, <a href="/news/post/builders-highlight-5-deadrare-d5ff90d6161e" ><em>#5</em></a>, <a href="/news/post/builders-highlight-6-what-the-duck-0aedc602ecfd" ><em>#6</em></a>, <a href="/news/post/builders-highlight-7-alphpad-bbd4f4a34fd5" ><em>#7</em></a>, <a href="/news/post/builders-highlight-8-ngu-money-f8bf05e36e99" ><em>#8</em></a>_,_ <a href="/news/post/builders-highlight-9-mobula-f9c45dc6c691" ><em>#9,</em></a> _and_ <a href="/news/post/builders-highlight-10-amolyus-39e03b6bd3f0" ><em>#10</em></a> _here!_
+_Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real utility for users. In the Builders Highlight series, they share more about their projects, thoughts, and insights on why building on Alephium. You can find_ [#1](/news/post/builders-highlight-sezame-wallet-ddb4aeb61881)_,_ [#2](/news/post/builders-highlight-alphpaca-nfts-99c69775f04c), [#3](/news/post/builders-highlight-3-ayin-6be4a6bd4ec2), [#4](/news/post/builders-highlight-4-no-trust-verify-9ea495ca826f), [#5](/news/post/builders-highlight-5-deadrare-d5ff90d6161e), [#6](/news/post/builders-highlight-6-what-the-duck-0aedc602ecfd), [#7](/news/post/builders-highlight-7-alphpad-bbd4f4a34fd5), [#8](/news/post/builders-highlight-8-ngu-money-f8bf05e36e99)_,_ [#9,](/news/post/builders-highlight-9-mobula-f9c45dc6c691) _and_ [#10](/news/post/builders-highlight-10-amolyus-39e03b6bd3f0) _here!_
 
-Today, we welcome <a href="https://twitter.com/fugashu_codes" >Fugashu</a>! Hyperactive, and builder of many things! Starting with <a href="https://stats.alph.land/" >useful</a> <a href="https://stats.alph.land/" >ecosystem</a> <a href="https://visualizer.alph.land/" >tools</a> such as alph.land and the visualizer, he is now focused on a gaming platform called <a href="https://www.pyreplay.com/" >Pyreplay</a>.
+Today, we welcome [Fugashu](https://twitter.com/fugashu_codes)! Hyperactive, and builder of many things! Starting with [useful](https://stats.alph.land/) [ecosystem](https://stats.alph.land/) [tools](https://visualizer.alph.land/) such as alph.land and the visualizer, he is now focused on a gaming platform called [Pyreplay](https://www.pyreplay.com/).
 
 Here, he shares with us some insights his life in Alephium’s ecosystem, tools & world, and his plans for the future!
 
@@ -29,29 +29,29 @@ I quickly immersed myself in the field, built an Ethereum mining rig, invested s
 
 I learned about Alephium through a German Telegram group that shares new blockchain projects. What initially attracted me was the user-friendly interface and robust toolset of Alephium’s platform.
 
-After researching, I was impressed by its unique features, such as the <a href="/news/post/alephiums-aps-eliminating-evm-token-approval-risks-5407e7e70a33#:~:text=Understanding%20Alephium%27s%20Asset%20Permission%20System&amp;text=One%20important%20feature%20of%20the,These%20transactions%20can%20support%20TxScript." >Asset Permission System</a> and the <a href="/news/post/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" >Proof of Less Work</a> concept, which are not typically found in EVM-based platforms. The strong academic contributions from Cheng and industry connections to Vitalik also significantly influenced my decision to build on Alephium.
+After researching, I was impressed by its unique features, such as the [Asset Permission System](/news/post/alephiums-aps-eliminating-evm-token-approval-risks-5407e7e70a33#:~:text=Understanding%20Alephium%27s%20Asset%20Permission%20System&amp;text=One%20important%20feature%20of%20the,These%20transactions%20can%20support%20TxScript.) and the [Proof of Less Work](/news/post/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301) concept, which are not typically found in EVM-based platforms. The strong academic contributions from Cheng and industry connections to Vitalik also significantly influenced my decision to build on Alephium.
 
 #### You’ve been one of the big winners of the hackathon. How was your experience hacking in there? How’s the learning curve to get going? What took the most time to grasp?
 
 ![](image_ec682126a5.png)
 
-<a href="/news/post/hackathon-1-pioneers-submissions-76b869089ace" >Participating in the hackathon</a> was an amazing experience. I was particularly drawn to the challenge of visualizing Alephium’s sharding algorithm through a 3D interactive environment, a task that required me to learn <a href="https://threejs.org/" >Three.js</a> from scratch. Developing both the front-end visualizer and an efficient backend to manage real-time data was challenging, especially while juggling a full-time job.
+[Participating in the hackathon](/news/post/hackathon-1-pioneers-submissions-76b869089ace) was an amazing experience. I was particularly drawn to the challenge of visualizing Alephium’s sharding algorithm through a 3D interactive environment, a task that required me to learn [Three.js](https://threejs.org/) from scratch. Developing both the front-end visualizer and an efficient backend to manage real-time data was challenging, especially while juggling a full-time job.
 
 On the backend, we set up a buffer to manage incoming blocks and introduced an open-source websocket that streams block data in real time. Initially, we encountered some challenges with the websocket intermittently blocking our Redis worker, which was quite troublesome.
 
-After some investigation, we determined that the problem stemmed from the library we were using. I’m proud that we managed to deliver a functional product within two weeks and also secure a <a href="/news/post/hackathon-winners-announced-68d55711b99d" >top prize</a> and the <a href="https://twitter.com/alephium/status/1771598954373038443" >Bitmain special prize</a>!
+After some investigation, we determined that the problem stemmed from the library we were using. I’m proud that we managed to deliver a functional product within two weeks and also secure a [top prize](/news/post/hackathon-winners-announced-68d55711b99d) and the [Bitmain special prize](https://twitter.com/alephium/status/1771598954373038443)!
 
 #### **Tell us a little bit about your history with Alephium, because it’s been a little while you’ve been around! First you built alph.land, then the visualizer for the hackathon and since then you created both a NFT collection & are working on a game! Let’s start with alph.land… What’s your vision for its development?**
 
 ![](image_14373b0f8b.png)
 
-<a href="http://alph.land" >Alph.land</a> serves as a virtual information hub where newcomers can easily discover and explore ongoing projects within the Alephium blockchain. My vision for alph.land is to continue enhancing its functionality to better serve the community’s needs, with success indicators being frequent community engagement and new project integrations & pull requests.
+[Alph.land](http://alph.land) serves as a virtual information hub where newcomers can easily discover and explore ongoing projects within the Alephium blockchain. My vision for alph.land is to continue enhancing its functionality to better serve the community’s needs, with success indicators being frequent community engagement and new project integrations & pull requests.
 
 #### What about the stats/visualizer? Your project has been commended for enhancing the understanding of the Alephium blockchain. What inspired you to focus on visualizing the blockflow sharding algorithm? Will you evolve it to visualize more things? Or was it a one-off for the hackathon?
 
 ![](image_ec682126a5.png)
 
-<a href="https://stats.alph.land/" >The stats dashboard</a> was initially a proof of concept, and we plan to include more statistics in the future. A community member introduced me to the idea of the <a href="https://visualizer.alph.land/" >visualizer.</a> Having long been interested in 3D web development, I decided to dive in!
+[The stats dashboard](https://stats.alph.land/) was initially a proof of concept, and we plan to include more statistics in the future. A community member introduced me to the idea of the [visualizer.](https://visualizer.alph.land/) Having long been interested in 3D web development, I decided to dive in!
 
 The results have been quite impressive, at least to me. As a teacher who enjoys sharing knowledge, I see this as a fantastic tool to help others grasp complex technical papers and algorithms through visual representation. While I may enhance or add more statistics to this project, my current focus is entirely on developing Pyreplay. :)
 
@@ -59,7 +59,7 @@ The results have been quite impressive, at least to me. As a teacher who enjoys 
 
 ![](image_d7e2e86f1a.png)
 
-<a href="http://pyreplay.com" >Pyreplay</a> is envisioned as a competitive arcade platform where users can engage in various mini-games and classic arcade challenges. The overwhelming support from the Alephium community, evidenced by our NFT collection selling out in just four hours, was truly heartening. These NFTs not only offer holders reduced gameplay costs but also a share in the project’s revenue, embedding them deeply into the ecosystem of Pyreplay. Thank you to everyone who has supports me on this journey and believes in the same vision!
+[Pyreplay](http://pyreplay.com) is envisioned as a competitive arcade platform where users can engage in various mini-games and classic arcade challenges. The overwhelming support from the Alephium community, evidenced by our NFT collection selling out in just four hours, was truly heartening. These NFTs not only offer holders reduced gameplay costs but also a share in the project’s revenue, embedding them deeply into the ecosystem of Pyreplay. Thank you to everyone who has supports me on this journey and believes in the same vision!
 
 #### How do you see the future of the Pyreplay? What’s on your roadmap? What would be the Pyreplay moonshot?
 
@@ -81,21 +81,21 @@ Alph.land, Stats, and the Blockchain Visualizer are all open-source projects, an
 
 **Github repo links:**
 
-<a href="https://github.com/CodeBaristas"  rel="nofollow noopener">https://github.com/CodeBaristas</a>,
+[https://github.com/CodeBaristas](https://github.com/CodeBaristas),
 
-<a href="https://github.com/Fugashu"  rel="nofollow noopener">https://github.com/Fugashu</a>,
+[https://github.com/Fugashu](https://github.com/Fugashu),
 
-<a href="https://github.com/Cojodi/alphland"  rel="nofollow noopener">https://github.com/Cojodi/alphland</a>
+[https://github.com/Cojodi/alphland](https://github.com/Cojodi/alphland)
 
 **Websites:**
 
-<a href="http://alph.land" >alph.land</a>
+[alph.land](http://alph.land)
 
-<a href="http://visualizer.alph.land," >visualizer.alph.land</a>
+[visualizer.alph.land](http://visualizer.alph.land,)
 
-<a href="http://stats.alph.land" >stats.alph.land</a>
+[stats.alph.land](http://stats.alph.land)
 
-<a href="http://docs.pyreplay.com" >docs.pyreplay.com</a>
+[docs.pyreplay.com](http://docs.pyreplay.com)
 
 Thank you, Fugashu, for your answers!
 
@@ -103,4 +103,4 @@ Thank you, Fugashu, for your answers!
 
 _Disclaimer: While Alephium is happy to support a growing developer community, it would like to clarify that it does not endorse, audit, or review any software presented in this series and encourages all users to make informed decisions and take personal responsibility for their actions._
 
-Have you built something or have a nice idea and want to request a grant or reward? You can access the <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" >Alephium Community Grants &amp; Reward Program page</a> for more info!
+Have you built something or have a nice idea and want to request a grant or reward? You can access the [Alephium Community Grants &amp; Reward Program page](https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md) for more info!

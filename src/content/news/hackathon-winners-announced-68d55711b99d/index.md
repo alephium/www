@@ -7,11 +7,11 @@ featuredImage: image_b3deda2ce3.gif
 title: Hackathon winners announced!
 ---
 
-_The first Alephium Hackathon “Pioneers”, took place online between the 12th & 26th of February. After carefully reviewing all final submissions, the jury & partners (Bitmain, Blockflow Alliance DAO, Cetacean Capital &_ <a href="https://link.dappnode.io/dappnode" ><em>Dappnode</em></a>_) are ready to announce the winners._
+_The first Alephium Hackathon “Pioneers”, took place online between the 12th & 26th of February. After carefully reviewing all final submissions, the jury & partners (Bitmain, Blockflow Alliance DAO, Cetacean Capital &_ [Dappnode](https://link.dappnode.io/dappnode)_) are ready to announce the winners._
 
 The whole Alephium core-team has been blown away by the energy of participants and the quality of the submissions. It wishes to express to all participants its immense pleasure to see Alephium’s tools, languages & protocol used with so much creativity & dedication. The jury has taken its time to evaluate each submission on its own merit, according to the criteria.
 
-Two weeks of intense building have ended up with 26 submissions from the 105 participants, for either the main track prizes or the bounties. Of these, 18 were qualified for the Main prizes (tooling, dapps & interoperability) and 8 were considered for the bounties. If you want to see a description of all submissions, head up <a href="/news/post/hackathon-1-pioneers-submissions-76b869089ace" >here</a>.
+Two weeks of intense building have ended up with 26 submissions from the 105 participants, for either the main track prizes or the bounties. Of these, 18 were qualified for the Main prizes (tooling, dapps & interoperability) and 8 were considered for the bounties. If you want to see a description of all submissions, head up [here](/news/post/hackathon-1-pioneers-submissions-76b869089ace).
 
 ### **MAIN PRIZES**
 
@@ -23,7 +23,7 @@ _The Jury has slightly edited the prize pools, to adapt to the final submission 
 
 _Invariant DEX is a permissionless AMM DEX featuring a concentrated liquidity mechanism. The team has focused on prioritizing smart contract development and testing the programming capabilities of Alephium VM along with the Ralph programming language._
 
-_Links:_ <a href="https://invariant.app/swap" ><em>Website</em></a> <a href="https://twitter.com/invariant_labs" ><em>Twitter</em></a> <a href="https://t.co/PCUvmh1Zsv" ><em>Github</em></a>
+_Links:_ [Website](https://invariant.app/swap) [Twitter](https://twitter.com/invariant_labs) [Github](https://t.co/PCUvmh1Zsv)
 
 #### \#2 Winner — **LinxOTC \***— wins \$10’000\*
 
@@ -31,7 +31,7 @@ _Links:_ <a href="https://invariant.app/swap" ><em>Website</em></a> <a href="htt
 
 LinxOTC is a platform for P2P trading and lending on Alephium. Linx Labs, a well-known contributor to Kadena’s ecosystem, is adding p2p lending specifically during the hackathon, an Oracle-free solution where people can lend and borrow from each other.
 
-Links: <a href="https://twitter.com/linx_labs" >Twitter</a> <a href="https://t.co/KpsiZDSDfc" >Discord</a> <a href="https://t.co/spY3IH1sRY" >Telegram</a> <a href="https://www.youtube.com/watch?v=2J-mwe9TN5s&amp;t=1168s" >Video Presentation</a>
+Links: [Twitter](https://twitter.com/linx_labs) [Discord](https://t.co/KpsiZDSDfc) [Telegram](https://t.co/spY3IH1sRY) [Video Presentation](https://www.youtube.com/watch?v=2J-mwe9TN5s&amp;t=1168s)
 
 #### \#3 Winner — **Alph.Pro Indexer \***— wins \$6’000\*
 
@@ -39,7 +39,7 @@ Links: <a href="https://twitter.com/linx_labs" >Twitter</a> <a href="https://t.c
 
 _Alph.pro Indexer started as a simple backend for a specific dashboard, it has grown into an extensible plugin system where adding new ‘indexers’ for specific purposes (i.e. tracking ayin pool reserves) is quite easy. This info is exposed through a powerful rest API with swagger documentation with info about NFTs, tokens, users, and more. Serves as the basis for the Alph.pro dashboard._
 
-Links: <a href="https://indexer.alph.pro/" >Website</a> <a href="https://twitter.com/AIphPro" >Twitter</a> <a href="https://www.youtube.com/watch?v=2J-mwe9TN5s&amp;t=1726s" >Video Presentation</a>
+Links: [Website](https://indexer.alph.pro/) [Twitter](https://twitter.com/AIphPro) [Video Presentation](https://www.youtube.com/watch?v=2J-mwe9TN5s&amp;t=1726s)
 
 #### \#4 Winner — **Donera \***— wins \$5’000\*
 
@@ -47,7 +47,7 @@ Links: <a href="https://indexer.alph.pro/" >Website</a> <a href="https://twitter
 
 Donera is a crowdfunding app like GoFundMe. The MVP includes creating a fund, donating ALPH to it, finalizing and browsing active funds, and viewing and donating to an individual fund. The first funds exist already!
 
-Links: <a href="https://hackathon.donera.app/" ><strong></strong> Website</a> <a href="https://twitter.com/Ross_Weir" >Twitter</a> <a href="https://github.com/ross-weir/Donera" >Github</a>
+Links: [Website](https://hackathon.donera.app/) [Twitter](https://twitter.com/Ross_Weir) [Github](https://github.com/ross-weir/Donera)
 
 #### \#5 Winner — **Alephium Stats / Blockchain Visualizer \***— wins \$4’000\*
 
@@ -55,7 +55,7 @@ Links: <a href="https://hackathon.donera.app/" ><strong></strong> Website</a> <a
 
 The Alephium Blockflow Visualizer and Stats Dashboard is a comprehensive suite of tools designed to enhance the understanding and accessibility of the Alephium blockchain.
 
-Links: <a href="https://visualizer.alph.land/" >Website</a> <a href="https://github.com/CodeBaristas/alephium-visualizer-frontend" >Github</a> <a href="https://twitter.com/fugashu_codes" >Twitter</a>
+Links: [Website](https://visualizer.alph.land/) [Github](https://github.com/CodeBaristas/alephium-visualizer-frontend) [Twitter](https://twitter.com/fugashu_codes)
 
 #### \#6, \#7, \#8, \#9 in no particular order — *each wins 2’000\$*
 
@@ -89,11 +89,11 @@ Blockflow Alliance is Alephium’s first-ever community DAO, dedicated to boosti
 
 Cetacean Capital aims to be DeFi’s most loved, efficient, and profitable Investment DAO. As individuals, its members have incredible skills, experience, knowledge and contacts, in the crypto-space for many years.
 
-#### <a href="https://link.dappnode.io/dappnode" ><strong>Dappnode</strong></a> **prize goes to Sezame \***— a home node\* <a href="https://dappnode.com/collections/all/products/home-i532-4n" ><em>i532–4N model</em></a>
+#### [Dappnode](https://link.dappnode.io/dappnode) **prize goes to Sezame \***— a home node\* [i532–4N model](https://dappnode.com/collections/all/products/home-i532-4n)
 
-> “At <a href="https://link.dappnode.io/dappnode" >Dappnode</a>, we’re excited to be part of Alephium’s hackathon as sponsors. These initiatives are crucial for cultivating the skills and talent of builders within the ecosystem.”
+> “At [Dappnode](https://link.dappnode.io/dappnode), we’re excited to be part of Alephium’s hackathon as sponsors. These initiatives are crucial for cultivating the skills and talent of builders within the ecosystem.”
 
-Dappnode is the self-owned infrastructure layer for a human-centric, data-sovereign, private-by-design internet. <a href="https://link.dappnode.io/dappnode" >Dappnode</a> lowers the barrier of entry for non-tech-savvy participants.
+Dappnode is the self-owned infrastructure layer for a human-centric, data-sovereign, private-by-design internet. [Dappnode](https://link.dappnode.io/dappnode) lowers the barrier of entry for non-tech-savvy participants.
 
 ---
 
@@ -107,31 +107,31 @@ _There have been two kinds of bounties: 6 submissions were self defined bounties
 
 Fun NFT office snack dispenser for your next online office meeting. Buy any amount of each food offered as long as they are still available. As of writing, beer & popcorn & pizza are sold out!
 
-#### Links: <a href="https://snacks.alph.pro/" ><strong></strong> Website</a> <a href="https://x.com/AIphPro" >Twitter</a> <a href="https://www.youtube.com/watch?v=2J-mwe9TN5s&amp;t=1607s" >Video Presentation</a>
+#### Links: [Website](https://snacks.alph.pro/) [Twitter](https://x.com/AIphPro) [Video Presentation](https://www.youtube.com/watch?v=2J-mwe9TN5s&amp;t=1607s)
 
 #### **Merkle Tree Proof for allowlist** — *wins 2’000\$*
 
 > **This bounty has been completed flawlessly. It’s a very useful library for other dApps, with tests and demonstrations!**
 
-Merkle trees are essential in blockchain and dApp development, they facilitate implementations where the entire set of data can’t be stored on chain and a solution is needed to verify a set of data exists and is valid without having the entire dataset for verification purposes. The implementation is inspired by <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/cryptography/MerkleProof.sol" >OpenZeppelin ETH</a> library, in an attempt to provide a standardized reliable implementation of Merkle proofs on Alephium
+Merkle trees are essential in blockchain and dApp development, they facilitate implementations where the entire set of data can’t be stored on chain and a solution is needed to verify a set of data exists and is valid without having the entire dataset for verification purposes. The implementation is inspired by [OpenZeppelin ETH](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/cryptography/MerkleProof.sol) library, in an attempt to provide a standardized reliable implementation of Merkle proofs on Alephium
 
-Links: <a href="https://github.com/krk0d3r/alephium-merkle-proofs" ><strong></strong> Github</a> <a href="https://twitter.com/krk0d3r" >Twitter</a>
+Links: [Github](https://github.com/krk0d3r/alephium-merkle-proofs) [Twitter](https://twitter.com/krk0d3r)
 
 #### **Notrustverif’s TipAlph **— *wins 2’000\$*
 
 > **The TipBot is all around a well-functioning product, working really well on telegram, allowing anyone to tip ALPH or any other token with a very simple UX.**
 
-TipALPH was built by No Trust Verify. It is a tipping bot for Telegram, similar to <a href="https://github.com/LightningTipBot/LightningTipBot" >LightningTipBot</a> for Alephium.
+TipALPH was built by No Trust Verify. It is a tipping bot for Telegram, similar to [LightningTipBot](https://github.com/LightningTipBot/LightningTipBot) for Alephium.
 
-Links: <a href="https://twitter.com/notrustverif" >Twitter</a> <a href="https://t.me/TipALPHBot" >Telegram</a> <a href="https://www.youtube.com/watch?v=2J-mwe9TN5s&amp;t=394s" >Video Presentation</a>
+Links: [Twitter](https://twitter.com/notrustverif) [Telegram](https://t.me/TipALPHBot) [Video Presentation](https://www.youtube.com/watch?v=2J-mwe9TN5s&amp;t=394s)
 
 #### **Alph.pro Defi DiscordBot **— *wins 2’000\$*
 
 > **The Alph.pro Defi DiscordBot is a well thought one swiss army knife bot for Discord. It even includes a non-custodial tipbot that works really well and offers an interesting tool for payment!**
 
-Alph.pro Discord Bot is a bot aiming to be a ‘one stop shop’ for Discord helpers to provide token prices and details, LP info, and more. Try it out in <a href="https://discord.gg/pfcR8EQZjb" >What The Duck discord</a>.
+Alph.pro Discord Bot is a bot aiming to be a ‘one stop shop’ for Discord helpers to provide token prices and details, LP info, and more. Try it out in [What The Duck discord](https://discord.gg/pfcR8EQZjb).
 
-Links: <a href="https://twitter.com/AlphdotPro" >Twitter</a> <a href="https://www.youtube.com/watch?v=2J-mwe9TN5s&amp;t=3205s" >Video Presentation</a>
+Links: [Twitter](https://twitter.com/AlphdotPro) [Video Presentation](https://www.youtube.com/watch?v=2J-mwe9TN5s&amp;t=3205s)
 
 #### **Noodle Token **— *wins 1’000\$*
 
@@ -139,7 +139,7 @@ Links: <a href="https://twitter.com/AlphdotPro" >Twitter</a> <a href="https://ww
 
 _Description: Noodz has worked on 4 contracts: Airdrop Contract, Initial Coin Offering (ICO) contract, Coin Flip Contract, Pinko Contract. They have since completed their ICO and released their first token builder app._
 
-Links: <a href="https://www.noodz.io/" >Website</a> <a href="https://twitter.com/NoodlesAlph" >Twitter</a> <a href="https://t.me/NoodlesToken" >Telegram</a>
+Links: [Website](https://www.noodz.io/) [Twitter](https://twitter.com/NoodlesAlph) [Telegram](https://t.me/NoodlesToken)
 
 ---
 

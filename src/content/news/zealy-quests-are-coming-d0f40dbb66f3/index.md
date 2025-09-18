@@ -19,7 +19,7 @@ Join our Zealy.io page and be on top of what is happening, while earning XP poin
 
 ### How to join?
 
-Get to our Zealy community <a href="https://zealy.io/c/alephium" >here</a>. If you’re not subscribed already, create a Zealy account, it’s easy and fast!
+Get to our Zealy community [here](https://zealy.io/c/alephium). If you’re not subscribed already, create a Zealy account, it’s easy and fast!
 
 You will see that our quests are divided into categories, which will help you go through specific areas of Alephium’s ecosystem.
 
@@ -37,7 +37,7 @@ To engage with a quest, clickon it and a popup will appear with more information
 
 Remember that some quests must be done in a sequence, so you must complete the previous ones to unlock them!
 
-Your tasks are different on each quest. Some require you to go to a website, RT or like posts on <a href="https://twitter.com/alephium" >Twitter</a>, while others will ask you to provide a link, image, text, video, and so on.
+Your tasks are different on each quest. Some require you to go to a website, RT or like posts on [Twitter](https://twitter.com/alephium), while others will ask you to provide a link, image, text, video, and so on.
 
 Some are daily tasks you can do every day to increase your XP count.
 

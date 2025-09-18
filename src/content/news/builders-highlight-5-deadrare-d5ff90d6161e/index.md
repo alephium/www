@@ -7,13 +7,13 @@ featuredImage: image_233bde702f.png
 title: 'Builders Highlight #5: Deadrare'
 ---
 
-_Our ecosystem thrives with developers building amazing projects on top of Alephium delivering a unique experience and providing real utility for users. In the Builders Highlight series, they share more about their projects, thoughts, and insights on why building on Alephium. You can find_ <a href="/news/post/builders-highlight-sezame-wallet-ddb4aeb61881" ><em>#1 here</em></a>_,_ <a href="/news/post/builders-highlight-alphpaca-nfts-99c69775f04c" ><em>#2 here</em></a>, <a href="/news/post/builders-highlight-3-ayin-6be4a6bd4ec2" ><em>#3 here</em></a> _and_ <a href="/news/post/builders-highlight-4-no-trust-verify-9ea495ca826f" ><em>#4 here</em></a>_!_
+_Our ecosystem thrives with developers building amazing projects on top of Alephium delivering a unique experience and providing real utility for users. In the Builders Highlight series, they share more about their projects, thoughts, and insights on why building on Alephium. You can find_ [#1 here](/news/post/builders-highlight-sezame-wallet-ddb4aeb61881)_,_ [#2 here](/news/post/builders-highlight-alphpaca-nfts-99c69775f04c), [#3 here](/news/post/builders-highlight-3-ayin-6be4a6bd4ec2) _and_ [#4 here](/news/post/builders-highlight-4-no-trust-verify-9ea495ca826f)_!_
 
-This episode is about <a href="https://deadrare.io/" >Deadrare.io</a>, the first ever NFT Marketplace on mainnet, discover a little bit more about its values, the team’s vision of Alephium, and the tech behind a cool NFT Marketplace!
+This episode is about [Deadrare.io](https://deadrare.io/), the first ever NFT Marketplace on mainnet, discover a little bit more about its values, the team’s vision of Alephium, and the tech behind a cool NFT Marketplace!
 
 #### Tell us a bit about yourself. Who are you? Where are you from? What’s you’re training & main activity?
 
-Deadrare’s team is anonymous, known only as <a href="http://twitter.com/Splinter"  title="Twitter profile for @Splinter">@Splinter</a> on discord. We focus on making services which don’t rely on trust and live forever on the blockchain.
+Deadrare’s team is anonymous, known only as [@Splinter](http://twitter.com/Splinter) on discord. We focus on making services which don’t rely on trust and live forever on the blockchain.
 
 #### Tell us a little bit about your project. What is it, what does it do, and how does it interact with the Alephium blockchain?
 
@@ -78,12 +78,12 @@ Head on over to the Alephium discord and start chatting to the core developers a
 
 We highly value the core team's approach to growing the ecosystem, remaining neutral and inviting other developers to build independently. This will be crucial for creating a thriving ecosystem on Alephium.
 
-_Thanks, Deadrare, for your answers! Alephium is thrilled to have such talent builders in the community! You can find the Deadrare site_ <a href="https://deadrare.io/" ><em>here</em></a>_, and the Deadrare Twitter account_ <a href="https://twitter.com/DeadRareNFT" ><em>here</em></a>_._
+_Thanks, Deadrare, for your answers! Alephium is thrilled to have such talent builders in the community! You can find the Deadrare site_ [here](https://deadrare.io/)_, and the Deadrare Twitter account_ [here](https://twitter.com/DeadRareNFT)_._
 
 ---
 
 _Disclaimer: While Alephium is happy to support a growing developer community, it would like to clarify that it does not endorse, audit, or review any software presented in this series and encourages all users to make informed decisions and take personal responsibility for their actions._
 
-Have you built something or have a nice idea and want to request a grant or reward? You can access the <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" >Alephium Community Grants &amp; Reward Program page</a> for more info!
+Have you built something or have a nice idea and want to request a grant or reward? You can access the [Alephium Community Grants &amp; Reward Program page](https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md) for more info!
 
-If you need help or have extra questions, you are welcome to reach out in the \# 🎨dev-dapp channel on [Discord](/discord), or in the Alephium <a href="https://t.me/alephiumgroup" >Telegram</a> channel. Don’t forget to follow <a href="https://twitter.com/alephium" >@alephium on Twitter</a> to stay up-to-date.
+If you need help or have extra questions, you are welcome to reach out in the \# 🎨dev-dapp channel on [Discord](/discord), or in the Alephium [Telegram](https://t.me/alephiumgroup) channel. Don’t forget to follow [@alephium on Twitter](https://twitter.com/alephium) to stay up-to-date.

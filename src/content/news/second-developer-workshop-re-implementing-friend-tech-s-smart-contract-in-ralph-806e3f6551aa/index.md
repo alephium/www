@@ -7,13 +7,13 @@ featuredImage: image_7c0c9f04f9.png
 title: 'Second Developer Workshop: Re-implementing Friend.Tech’s Smart Contract in Ralph'
 ---
 
-Welcome to the second developer workshop! If you missed the first one, we dived into the basics of Ralph programming language, along with its SDK and CLI build tools, crafting a simple token faucet. It’s been a fantastic experience, you can find it <a href="/news/post/first-developer-workshop-build-a-token-faucet-a6bb2aa7bf68" >here</a> or on <a href="https://www.youtube.com/watch?v=YblUxEcXQuY" >YouTube</a> and <a href="https://github.com/alephium/dev-workshop-01" >GitHub</a>.
+Welcome to the second developer workshop! If you missed the first one, we dived into the basics of Ralph programming language, along with its SDK and CLI build tools, crafting a simple token faucet. It’s been a fantastic experience, you can find it [here](/news/post/first-developer-workshop-build-a-token-faucet-a6bb2aa7bf68) or on [YouTube](https://www.youtube.com/watch?v=YblUxEcXQuY) and [GitHub](https://github.com/alephium/dev-workshop-01).
 
-In response to feedback from our previous workshop, we’ve shortened this session, splitting it into two. The goal of this workshop is to re-implement the smart contract part of a dApp called <a href="https://www.friend.tech/" >Friend.Tech</a>. This time, we’re not starting from scratch, we’re starting from a solidity smart contract.
+In response to feedback from our previous workshop, we’ve shortened this session, splitting it into two. The goal of this workshop is to re-implement the smart contract part of a dApp called [Friend.Tech](https://www.friend.tech/). This time, we’re not starting from scratch, we’re starting from a solidity smart contract.
 
 ### What is Friend.Tech?
 
-<a href="https://twitter.com/friendtech" >Friend.tech</a> operates as a decentralized social token-driven platform <a href="https://decrypt.co/resources/what-is-friend-tech-the-social-token-driven-decentralized-social-network" >launched in august 2023</a> on the Base blockchain. It allows its users to trade “keys”, formerly termed “shares”, associated with X (formerly Twitter) profiles. Owning these keys grants entry to exclusive chatrooms and special content from the respective X account holder.
+[Friend.tech](https://twitter.com/friendtech) operates as a decentralized social token-driven platform [launched in august 2023](https://decrypt.co/resources/what-is-friend-tech-the-social-token-driven-decentralized-social-network) on the Base blockchain. It allows its users to trade “keys”, formerly termed “shares”, associated with X (formerly Twitter) profiles. Owning these keys grants entry to exclusive chatrooms and special content from the respective X account holder.
 
 The platform promotes itself by saying, “Trade with your friends in our marketplace.” Fans can buy and sell shares, with the price directly tied to the number of outstanding shares. This creates an opportunity for early supporters to profit as the individual’s fan base grows. It’s an interesting experiment in the social token trend narrative.
 
@@ -23,15 +23,15 @@ The platform promotes itself by saying, “Trade with your friends in our market
 
 **Simplicity:** Despite its popularity, the smart contract for Friend Tech is not overly complicated, making it a great example for educational purposes.
 
-**Sophistication:** While simple, the contract is sophisticated enough to demonstrate advanced features in Ralph, such as subcontracts and the <a href="/news/post/alephiums-aps-eliminating-evm-token-approval-risks-5407e7e70a33" >asset permission system (APS)</a>. Especially on how APS makes it simpler and safer to build dApps on Alephium.
+**Sophistication:** While simple, the contract is sophisticated enough to demonstrate advanced features in Ralph, such as subcontracts and the [asset permission system (APS)](/news/post/alephiums-aps-eliminating-evm-token-approval-risks-5407e7e70a33). Especially on how APS makes it simpler and safer to build dApps on Alephium.
 
 ### What does the Solidity Smart Contract look like?
 
-The Friend.Tech smart contract can be found <a href="https://basescan.org/address/0xcf205808ed36593aa40a44f10c7f7c2f67d4a4d4#code" >here</a>. In this section, we’ll explain some of its notable features, so it is easier to understand the Ralph implementation.
+The Friend.Tech smart contract can be found [here](https://basescan.org/address/0xcf205808ed36593aa40a44f10c7f7c2f67d4a4d4#code). In this section, we’ll explain some of its notable features, so it is easier to understand the Ralph implementation.
 
 **Mappings**
 
-The solidity contract has two <a href="https://docs.soliditylang.org/en/v0.8.22/types.html#mapping-types" >mappings</a> (a way to store values): one represents the balance of all holders of a specific subject. And other that represents the total of outstanding shares of a subject. The latter is used to calculate the buy and sell prices.
+The solidity contract has two [mappings](https://docs.soliditylang.org/en/v0.8.22/types.html#mapping-types) (a way to store values): one represents the balance of all holders of a specific subject. And other that represents the total of outstanding shares of a subject. The latter is used to calculate the buy and sell prices.
 
 <figure id="3dcb" class="graf graf--figure graf--iframe graf-after--p">
 
@@ -67,19 +67,19 @@ After this overview, it is time to implement this on Ralph! Before starting, ple
 
 ### Setting up the Environment — Installation Steps
 
-1 — <a href="https://docs.docker.com/get-docker/" >Docker</a> and <a href="https://docs.docker.com/compose/install/" >Docker-Compose</a>: Docker is required for containerization, and Docker Compose is essential for orchestrating the containers. Make sure you have both Docker and Docker Compose installed on your machine.
+1 — [Docker](https://docs.docker.com/get-docker/) and [Docker-Compose](https://docs.docker.com/compose/install/): Docker is required for containerization, and Docker Compose is essential for orchestrating the containers. Make sure you have both Docker and Docker Compose installed on your machine.
 
-2 — <a href="https://www.npmjs.com/" >Npm</a> and <a href="https://github.com/nvm-sh/nvm" >nvm</a>: To use command-line tools to help you install the different JavaScript packages and manage their dependencies.
+2 — [Npm](https://www.npmjs.com/) and [nvm](https://github.com/nvm-sh/nvm): To use command-line tools to help you install the different JavaScript packages and manage their dependencies.
 
-3 — Browser Extension Wallet (<a href="https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj" >Chrome</a>, <a href="https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/" >Firefox</a>): you will use it to interact with the smart contract.
+3 — Browser Extension Wallet ([Chrome](https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/)): you will use it to interact with the smart contract.
 
-4 — Clone the workshop <a href="https://github.com/alephium/dev-workshop-02" >GitHub repository</a> to access all the files you will need to follow this workshop.
+4 — Clone the workshop [GitHub repository](https://github.com/alephium/dev-workshop-02) to access all the files you will need to follow this workshop.
 
-The workshop assumes that you have at least some familiarity with the command line interface; if you don’t, you can find some help <a href="https://www.youtube.com/watch?v=YblUxEcXQuY&amp;t=115s" >here</a>.
+The workshop assumes that you have at least some familiarity with the command line interface; if you don’t, you can find some help [here](https://www.youtube.com/watch?v=YblUxEcXQuY&amp;t=115s).
 
 ### Ralph Implementation
 
-You can follow the full detailed workshop in the following video. Here’s the <a href="https://github.com/alephium/dev-workshop-02/blob/session-1/contracts/friend_tech.ral" >full code</a> of the Ralph implementation, and this article highlights the main steps for easier comprehension:
+You can follow the full detailed workshop in the following video. Here’s the [full code](https://github.com/alephium/dev-workshop-02/blob/session-1/contracts/friend_tech.ral) of the Ralph implementation, and this article highlights the main steps for easier comprehension:
 
 `video: https://www.youtube.com/watch?v=gi2sxvB9Np8`
 
@@ -87,7 +87,7 @@ You can follow the full detailed workshop in the following video. Here’s the <
 
 The first step starts with a minimalistic Friend.Tech smart contract comprising a single readable field and a function to update the owner field. Packed with it, there is a deployment and a transaction script to call it, alongside a simple test to verify the ownership update functionality.
 
-Transaction scripts are a flexible tool to call smart contracts and, if you want more information about them, you can check the first dev workshop, where they were <a href="https://www.youtube.com/watch?v=YblUxEcXQuY&amp;t=2080s" >explained in more details</a>.
+Transaction scripts are a flexible tool to call smart contracts and, if you want more information about them, you can check the first dev workshop, where they were [explained in more details](https://www.youtube.com/watch?v=YblUxEcXQuY&amp;t=2080s).
 
 <figure id="7168" class="graf graf--figure graf--iframe graf-after--p">
 
@@ -144,4 +144,4 @@ The pricing functions created resembles those in the original Solidity contract.
 
 In the following session, we’ll delve into implementing the buy and sell shares functions, which will also entail updating the balances, thus creating and destroying subcontracts as needed. On these, you can see the Asset Permission System in action.
 
-Let us know on <a href="https://twitter.com/alephium" >Twitter</a>, [Discord](/discord), <a href="https://t.me/alephiumgroup" >Telegram</a> or <a href="https://www.reddit.com/r/Alephium/" >Reddit</a> if you have any questions!
+Let us know on [Twitter](https://twitter.com/alephium), [Discord](/discord), [Telegram](https://t.me/alephiumgroup) or [Reddit](https://www.reddit.com/r/Alephium/) if you have any questions!

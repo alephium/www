@@ -23,24 +23,24 @@ The first community-run DAO has been announced yesterday, and has given itself t
 
 > _Promoting the Alephium Ecosystem: \[…\]_
 
-It is being built around well-known and highly respected community members, <a href="https://twitter.com/cg1_bin" >cgi-bin</a>, <a href="https://twitter.com/Oheka32" >Oheka</a>, <a href="https://twitter.com/diomark" >Diomark</a>, <a href="https://twitter.com/RyanRit91769208" >Ryannn</a>, <a href="https://twitter.com/headroomcapital" >hEAdroom</a> & <a href="https://twitter.com/zkitbeats" >Waldi</a>.
+It is being built around well-known and highly respected community members, [cgi-bin](https://twitter.com/cg1_bin), [Oheka](https://twitter.com/Oheka32), [Diomark](https://twitter.com/diomark), [Ryannn](https://twitter.com/RyanRit91769208), [hEAdroom](https://twitter.com/headroomcapital) & [Waldi](https://twitter.com/zkitbeats).
 
 Whether it’s by improving education and onboarding, expanding marketing efforts, leading independent listing efforts or contributing to external wallet integrations, such a community DAO can do many things.
 
 It will require the community’s creativity and efforts!
 
-<a href="https://discord.com/channels/747741246667227157/1156214551939919962" ><strong>General Chat</strong></a>**:** This channel will serve as a hub for community discussions on various topics related to the DAO.
+[General Chat](https://discord.com/channels/747741246667227157/1156214551939919962)**:** This channel will serve as a hub for community discussions on various topics related to the DAO.
 
-<a href="https://discord.com/channels/747741246667227157/1156240220530938017" ><strong>DAO Suggestions</strong></a>**:** This channel will act as the governance center, where proposals can be submitted, and community members can cast their votes.
+[DAO Suggestions](https://discord.com/channels/747741246667227157/1156240220530938017)**:** This channel will act as the governance center, where proposals can be submitted, and community members can cast their votes.
 
-If you are interested, join the two dedicated Discord channels: A <a href="https://discord.com/channels/747741246667227157/1156214551939919962" >General chat</a> will serve as a hub for community discussions, and a <a href="https://discord.com/channels/747741246667227157/1156240220530938017" >Suggestions channel</a> will be the governance centre of the DAO, where community members can vote!
+If you are interested, join the two dedicated Discord channels: A [General chat](https://discord.com/channels/747741246667227157/1156214551939919962) will serve as a hub for community discussions, and a [Suggestions channel](https://discord.com/channels/747741246667227157/1156240220530938017) will be the governance centre of the DAO, where community members can vote!
 
-The DAO is a multisig, and <a href="https://explorer.alephium.org/addresses/oBfmYWmmcBqrfCLzsLPYM9YiNs38JZDHYpiqkDtSm4QuPfyTFavbTtTeGztjUn6E61k7VSC6FtiGj6yqBiaeFgfPANVHYBUZr5vRoKhGtVRXHNyCHSPoKN1ha2HGwLqT2uwJQsFWWLtczqJzD1ae8bXAgRnceyF1NSzBTB9CtQK5cRcxotZzDC6tz6GNaLq4SoFDhWm2St2mXwQ8RPn5KwrZ7t8QurgnbH8aP9Sve9SBTRWZBqwHZ1LWoGhG3LKmx2vNXyGiX" >its address is visible here</a>.
+The DAO is a multisig, and [its address is visible here](https://explorer.alephium.org/addresses/oBfmYWmmcBqrfCLzsLPYM9YiNs38JZDHYpiqkDtSm4QuPfyTFavbTtTeGztjUn6E61k7VSC6FtiGj6yqBiaeFgfPANVHYBUZr5vRoKhGtVRXHNyCHSPoKN1ha2HGwLqT2uwJQsFWWLtczqJzD1ae8bXAgRnceyF1NSzBTB9CtQK5cRcxotZzDC6tz6GNaLq4SoFDhWm2St2mXwQ8RPn5KwrZ7t8QurgnbH8aP9Sve9SBTRWZBqwHZ1LWoGhG3LKmx2vNXyGiX).
 
 The Blockflow Alliance DAO has applied for a grant with Alephium, via the grants & rewards program for \$ALPH out of the ecosystem funds. This request is being reviewed as we speak, and after careful consideration and the usual process, a decision will be made and announced.
 
-This first DAO is a pioneer toward a future with multiple DAOs focused on different aspects of the expansion of the Alephium Universe! If you have ideas, skills, stamina & enthusiasm, <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" >join our grants program</a>!
+This first DAO is a pioneer toward a future with multiple DAOs focused on different aspects of the expansion of the Alephium Universe! If you have ideas, skills, stamina & enthusiasm, [join our grants program](https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md)!
 
 **We are extremely grateful to have such engaged and capable community members, and we can’t wait to see what comes out of it. This marks an important milestone for Alephium and its ecosystem.**
 
-_Follow [Alephium](/) on_ <a href="https://github.com/alephium/" ><em>Github</em></a>_,_ <a href="https://twitter.com/alephium" ><em>Twitter</em></a>_. Join the conversation on_ [Discord](/discord)_,_ <a href="https://t.me/alephiumgroup" ><em>Telegram</em></a> _or_ <a href="https://www.reddit.com/r/alephium" ><em>Reddit</em></a>_._
+_Follow [Alephium](/) on_ [Github](https://github.com/alephium/)_,_ [Twitter](https://twitter.com/alephium)_. Join the conversation on_ [Discord](/discord)_,_ [Telegram](https://t.me/alephiumgroup) _or_ [Reddit](https://www.reddit.com/r/alephium)_._

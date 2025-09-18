@@ -22,7 +22,7 @@ Most importantly, its stateful UTXO model combines the advantages of both UTXO m
 
 Mr. Wang added about the mainnet, “Alephium offers a whole new programming paradigm for decentralized applications, ideally suited for performance-oriented and secure DeFI. Leveraging Alephium’s custom virtual machine, DApps can now benefit from the security offered by the stateful UTXO model without sacrificing the power and expressiveness of smart contracts”.
 
-For further information, please contact <a href="mailto:press@alephium.org" >press@alephium.org</a>
+For further information, please contact [press@alephium.org](mailto:press@alephium.org)
 
 ---
 

@@ -8,7 +8,7 @@ title: 'Weekly #DevUpdate'
 
 #### Week 34 Milestones & progress on dev on Alephium!
 
-🎇 Multisig Toolkit got its final details; Mobile wallet development is going strong, and the UI/UX Twitter Space with Swissborg & <a href="https://www.lace.io/" >lace.io</a> was a blast!
+🎇 Multisig Toolkit got its final details; Mobile wallet development is going strong, and the UI/UX Twitter Space with Swissborg & [lace.io](https://www.lace.io/) was a blast!
 
 ### Backend Team Updates
 
@@ -46,20 +46,20 @@ The display of total amounts on transaction pages has been enhanced for better c
 
 Preparations for Developer Workshop \#2 and TechTalk in September are in progress. Revisions to the Ambassador Program and updates to tokenomics, FAQ, and welcome documents too.
 
-Putting the Final touches to Zealy, and preparation for a video summarizing Alephium in 5 minutes as well as recap of the UI/UX Twitter Space event with @swissborg and @lace_io. Thanks to <a href="https://twitter.com/Ronnie_best_er" >@Ronnie_best_er</a>, <a href="https://twitter.com/MathieuHJ" >@MathieuHJ</a>, and <a href="https://twitter.com/mika_pote" >@mika_pote</a> for <a href="https://youtu.be/VK4QtY_q1ek?si=Gialxp0F1_Z5f-0o" >this awesome discussion</a>!
+Putting the Final touches to Zealy, and preparation for a video summarizing Alephium in 5 minutes as well as recap of the UI/UX Twitter Space event with @swissborg and @lace_io. Thanks to [@Ronnie_best_er](https://twitter.com/Ronnie_best_er), [@MathieuHJ](https://twitter.com/MathieuHJ), and [@mika_pote](https://twitter.com/mika_pote) for [this awesome discussion](https://youtu.be/VK4QtY_q1ek?si=Gialxp0F1_Z5f-0o)!
 
 ### Community update from @Discord
 
-- Buzzing due to a release by <a href="https://twitter.com/VLADxVLADxVLAD" >@VLADxVLADxVLAD</a>.
+- Buzzing due to a release by [@VLADxVLADxVLAD](https://twitter.com/VLADxVLADxVLAD).
 - Discussion on Minerstat bug affecting hashrate reporting.
-- Talks about potential new listing on <a href="https://twitter.com/MEXC_Official" >@MEXC_Official</a>.
-- Discussion with <a href="https://medium.com/u/5b08e6838f2c" class="markup--user markup--li-user"  data-anchor-type="2" data-user-id="5b08e6838f2c" data-action-value="5b08e6838f2c" data-action="show-user-card" data-action-type="hover">cheng wang</a> on the bridge.
+- Talks about potential new listing on [@MEXC_Official](https://twitter.com/MEXC_Official).
+- Discussion with [cheng wang](https://medium.com/u/5b08e6838f2c) on the bridge.
 
-Check all progress on <a href="https://github.com/alephium" >GitHub</a>!
+Check all progress on [GitHub](https://github.com/alephium)!
 
 <figure id="8ae9" class="graf graf--figure graf--iframe graf-after--p">
 <blockquote>
-<a href="https://twitter.com/alephium/status/1695081967006441623"></a>
+[](https://twitter.com/alephium/status/1695081967006441623)
 </blockquote>
 </figure>
 
@@ -70,7 +70,7 @@ Check all progress on <a href="https://github.com/alephium" >GitHub</a>!
 - Talks of new CEX listing
 - Bridge convo with @wachmc and clarifications
 
-For those interested in the technical details, everything in Alephium is open source. You can check our progress and dive into the code on our <a href="https://github.com/alephium" >GitHub</a>.
+For those interested in the technical details, everything in Alephium is open source. You can check our progress and dive into the code on our [GitHub](https://github.com/alephium).
 
 ---
 

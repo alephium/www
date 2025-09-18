@@ -7,11 +7,11 @@ featuredImage: image_53565e03c5.png
 title: 'Miners’ Highlight #4: nickdimondi'
 ---
 
-_The Alephium blockchain relies heavily on the contributions of miners to maintain its integrity and functionality. Recognizing the significance of these contributors is the object of this article series titled “Miners’ Highlight.” By focusing on their contributions, challenges, and experiences, we aim to better understand the mining process, its importance & those who make it possible. You can find_ <a href="/news/post/miners-highlight-1-cedric-crispin-c4ed456f6d10" ><em>#1 here</em></a>, <a href="/news/post/miners-highlight-1-jake-aka-hiram-abiff-a8833307f316" ><em>#2 here</em></a>, _and_ <a href="/news/post/miners-highlight-3-bokiko-7b2a22ea0253" ><em>#3 here</em></a>_._
+_The Alephium blockchain relies heavily on the contributions of miners to maintain its integrity and functionality. Recognizing the significance of these contributors is the object of this article series titled “Miners’ Highlight.” By focusing on their contributions, challenges, and experiences, we aim to better understand the mining process, its importance & those who make it possible. You can find_ [#1 here](/news/post/miners-highlight-1-cedric-crispin-c4ed456f6d10), [#2 here](/news/post/miners-highlight-1-jake-aka-hiram-abiff-a8833307f316), _and_ [#3 here](/news/post/miners-highlight-3-bokiko-7b2a22ea0253)_._
 
 #### What can we call you, and where should we picture you?
 
-I go by <a href="https://twitter.com/NickDimondi" >Nick</a>.
+I go by [Nick](https://twitter.com/NickDimondi).
 
 #### Tell us a bit about yourself, your passion for mining, and your background story.
 
@@ -27,9 +27,9 @@ I first learned about Alephium in early 2023 from a contact I made at Flux. He s
 
 I see the future of mining Alephium changing over the next few years as the project becomes more mainstream and adoption quickens.
 
-#### You’ve invited Maud twice to participate in X Spaces. I see you are involved in <a href="https://www.youtube.com/channel/UCB8sMtMOYVY_m6jYZcnQdUA" >Blockchain Basement</a>, <a href="https://www.coindesk.com/tag/nick-dimondi/" >Coindesk interviews,</a> Discover Crypto & more… Can you tell us more about this media side of your activities?
+#### You’ve invited Maud twice to participate in X Spaces. I see you are involved in [Blockchain Basement](https://www.youtube.com/channel/UCB8sMtMOYVY_m6jYZcnQdUA), [Coindesk interviews,](https://www.coindesk.com/tag/nick-dimondi/) Discover Crypto & more… Can you tell us more about this media side of your activities?
 
-I’m the main producer at <a href="https://www.youtube.com/@DiscoverCrypto_" >Discover Crypto</a> and co-host of Blockchain Basement. I also run a crypto mining X Spaces to stay engaged with the community. My background originally was in TV production, so working in media was a natural extension of my skill set.
+I’m the main producer at [Discover Crypto](https://www.youtube.com/@DiscoverCrypto_) and co-host of Blockchain Basement. I also run a crypto mining X Spaces to stay engaged with the community. My background originally was in TV production, so working in media was a natural extension of my skill set.
 
 #### What would you recommend to someone just getting started with mining Alephium?
 
@@ -49,4 +49,4 @@ The mining, crypto, and Alephium communities must be aware of the changing playi
 
 ---
 
-That is the end of this interview! If you are interested or have extra questions, you are welcome to reach out on our [Discord](/discord), or in the <a href="https://t.me/alephiumgroup" >Alephium Telegram channel</a>. Don’t forget to follow <a href="https://twitter.com/alephium" >@alephium on Twitter</a> to stay up-to-date.
+That is the end of this interview! If you are interested or have extra questions, you are welcome to reach out on our [Discord](/discord), or in the [Alephium Telegram channel](https://t.me/alephiumgroup). Don’t forget to follow [@alephium on Twitter](https://twitter.com/alephium) to stay up-to-date.

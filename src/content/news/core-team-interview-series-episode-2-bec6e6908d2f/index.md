@@ -8,15 +8,15 @@ title: Core team interview series. Episode 2
 
 #### Presenting the humans behind operations, marketing and community.
 
-**This article was updated:** <a href="/news/post/alephium-contributors-f35eeaeaf0a0"  rel="nofollow">https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0</a>
+**This article was updated:** [https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0](/news/post/alephium-contributors-f35eeaeaf0a0)
 
 _For its team, Alephium is privileging agility and efficiency over hyper-growth. We do not stay at a human size because we think it is more efficient, but because Alephium strives to be a decentralized, community driven project. This means the project in itself is much larger than a team can ever be. Communication, trust, openness and transparency is paramount in such a set-up._
 
 _To shed some light on who we are and what we do, we decided to share a little about ourselves with the community through a small series of interviews._
 
-<a href="/news/post/core-team-interview-series-episode-1-3472f8295af6" >Read the 1st part here</a>
+[Read the 1st part here](/news/post/core-team-interview-series-episode-1-3472f8295af6)
 
-There’s always the need for structured operations and communications in innovation! These crucial aspects allow us to create a solid ground for Alephium to consistently deliver outstanding tech. From development to marketing, we build meticulously and steadily, rain or shine, FOMO or <a href="https://slangit.com/meaning/jomo" >JOMO</a>, for the long run!
+There’s always the need for structured operations and communications in innovation! These crucial aspects allow us to create a solid ground for Alephium to consistently deliver outstanding tech. From development to marketing, we build meticulously and steadily, rain or shine, FOMO or [JOMO](https://slangit.com/meaning/jomo), for the long run!
 
 **5 individuals are tasked with this and we are happy to introduce you to Maud, Philipp, Vlad, Polto and Set!**
 
@@ -40,7 +40,7 @@ Not many people know this but I used to do ski competitions when I was younger, 
 
 #### Got links?
 
-<a href="https://www.linkedin.com/in/maud-simon-01073394/" >https://www.linkedin.com/in/maud-simon-01073394/</a>
+[https://www.linkedin.com/in/maud-simon-01073394/](https://www.linkedin.com/in/maud-simon-01073394/)
 
 #### How/when did you come across crypto?
 
@@ -84,7 +84,7 @@ During my free time you can find me on my bike exploring enduro trails in the mo
 
 #### Got links?
 
-<a href="https://www.linkedin.com/in/philipp-richner-2b0b82a5/" >https://www.linkedin.com/in/philipp-richner-2b0b82a5/</a>
+[https://www.linkedin.com/in/philipp-richner-2b0b82a5/](https://www.linkedin.com/in/philipp-richner-2b0b82a5/)
 
 #### How/when did you come across crypto?
 
@@ -160,9 +160,9 @@ I am a very happy person, my hobbies are my job. I try hard to align what I do f
 
 #### Got links?
 
-<a href="https://twitter.com/_polto_" >https://twitter.com/_polto_</a> (I am not very active on twitter)
+[https://twitter.com/_polto_](https://twitter.com/_polto_) (I am not very active on twitter)
 
-<a href="https://www.linkedin.com/in/polto/" >https://www.linkedin.com/in/polto/</a>
+[https://www.linkedin.com/in/polto/](https://www.linkedin.com/in/polto/)
 
 #### How/when did you come across crypto?
 
@@ -202,11 +202,11 @@ I spend a notable amount of my time searching for new music or making music. Thi
 
 #### Got links?
 
-Dial <a href="https://set.hallstrom.ch" >https://set.hallstrom.ch</a> for doxxing and <a href="https://v.basspistol.org/c/tosettosetto/" >https://v.basspistol.org/c/tosettosetto/</a> for music.
+Dial [https://set.hallstrom.ch](https://set.hallstrom.ch) for doxxing and [https://v.basspistol.org/c/tosettosetto/](https://v.basspistol.org/c/tosettosetto/) for music.
 
 #### How/when did you come across crypto?
 
-Back during the <a href="https://en.wikipedia.org/wiki/Occupy_Wall_Street" >Occupy Wall Street</a> social-media infused phenomenon, I got acquainted with the <a href="https://p2pfoundation.net/" >P2P Foundation.</a> At the time I was lurking there for it’s qualities as a hive-mind for economic reform. There i read about these “bit coins” around 2011, but couldn’t really wrap my head around the concept. A couple years later, through close friends in the tech-scene, it became clear to me that Bitcoin is here to stay and blockchain technology will become an important part of human society’s future infrastructure.
+Back during the [Occupy Wall Street](https://en.wikipedia.org/wiki/Occupy_Wall_Street) social-media infused phenomenon, I got acquainted with the [P2P Foundation.](https://p2pfoundation.net/) At the time I was lurking there for it’s qualities as a hive-mind for economic reform. There i read about these “bit coins” around 2011, but couldn’t really wrap my head around the concept. A couple years later, through close friends in the tech-scene, it became clear to me that Bitcoin is here to stay and blockchain technology will become an important part of human society’s future infrastructure.
 
 > There is so much noise in the “crypto-project” space. What attracted me was just that: here comes an open source blockchain project making music instead of noise!
 
@@ -224,4 +224,4 @@ The team and the community, laying sound foundations for a healthy and thriving 
 
 ---
 
-**This concludes the second chapter of three in this series. In the next publication we’ll** <a href="/news/post/core-team-interview-series-episode-3-64b6dacc1459" ><strong>get acquainted with the Node-developers.</strong></a>
+**This concludes the second chapter of three in this series. In the next publication we’ll** [get acquainted with the Node-developers.](/news/post/core-team-interview-series-episode-3-64b6dacc1459)

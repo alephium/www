@@ -8,7 +8,7 @@ title: ✨Contest for all video creators 🚀
 
 ### Prizes for a total of 10’000 ALPH 💰
 
-🐰 It’s quite a trip down the YouTube-hole to watch the <a href="https://www.youtube.com/results?search_query=alephium" >video content created around the topic of Alephium</a>. Miners are showing us so much love, and there are a lot of really on point tutorials. It’s overwhelming to be frank!
+🐰 It’s quite a trip down the YouTube-hole to watch the [video content created around the topic of Alephium](https://www.youtube.com/results?search_query=alephium). Miners are showing us so much love, and there are a lot of really on point tutorials. It’s overwhelming to be frank!
 
 **However, we’re missing a good video-introduction to Alephium and we’d like your help. To this end, we’re launching a video creation contest for an Alephium introduction.**
 
@@ -18,7 +18,7 @@ title: ✨Contest for all video creators 🚀
 
 #### _What?_
 
-We need an accessible video introduction to Alephium. It should at least cover all the basics included in the <a href="/news/post/welcome-to-alephium-alph-48dfb72aa458" >“Welcome to Alephium” Medium article</a>.
+We need an accessible video introduction to Alephium. It should at least cover all the basics included in the [“Welcome to Alephium” Medium article](/news/post/welcome-to-alephium-alph-48dfb72aa458).
 
 #### _For who?_
 
@@ -36,37 +36,37 @@ If you stumble upon something in the article that you find unclear, the team wil
 And of course, here you will find additional useful resources:
 
 - [Website](/)
-- <a href="https://medium.com/@alephium" >Alephium Blog</a>
-- <a href="https://github.com/alephium/white-paper" >White Papers</a>
-- <a href="https://github.com/alephium/alephium-brand-guide" >Branding material</a>
+- [Alephium Blog](https://medium.com/@alephium)
+- [White Papers](https://github.com/alephium/white-paper)
+- [Branding material](https://github.com/alephium/alephium-brand-guide)
 
 ### 📝Rules
 
-- Video must accurately include the basics covered in our <a href="/news/post/welcome-to-alephium-alph-48dfb72aa458" >“Welcome to Alephium” Medium article</a>.
+- Video must accurately include the basics covered in our [“Welcome to Alephium” Medium article](/news/post/welcome-to-alephium-alph-48dfb72aa458).
 - Video should not exceed 5 minutes.
 - Video may be in any language.
 - Deadline to upload the video: 2022–04–15 23:59 CET.
 - These links and infos MUST appear in the video description:
 
 > **Talk with Alephium  
-> **Discord : <a href="https://discord.gg/JErgRBfRSB" >https://discord.gg/JErgRBfRSB<br /> > </a>Telegram : <a href="https://t.me/alephiumgroup" >https://t.me/alephiumgroup<br /> > </a>Reddit : <a href="https://www.reddit.com/r/Alephium/" >https://www.reddit.com/r/Alephium/</a>
+> **Discord : [https://discord.gg/JErgRBfRSB >](https://discord.gg/JErgRBfRSB)Telegram : [https://t.me/alephiumgroup >](https://t.me/alephiumgroup)Reddit : [https://www.reddit.com/r/Alephium/](https://www.reddit.com/r/Alephium/)
 
 > **Connect with Alephium  
-> **Twitter : <a href="https://twitter.com/alephium" >https://twitter.com/alephium<br /> > </a>LinkedIn : <a href="https://www.linkedin.com/company/alephium" >https://www.linkedin.com/company/alephium<br /> > </a>Facebook : <a href="https://www.facebook.com/alephium" >https://www.facebook.com/alephium</a>
+> **Twitter : [https://twitter.com/alephium >](https://twitter.com/alephium)LinkedIn : [https://www.linkedin.com/company/alephium >](https://www.linkedin.com/company/alephium)Facebook : [https://www.facebook.com/alephium](https://www.facebook.com/alephium)
 
 > **Read, setup, explore, contribute  
-> **Website : [alephium.org](/) <br/> Whitepapers : <a href="https://github.com/alephium/white-paper" >https://github.com/alephium/white-paper<br /> > </a>Medium : <a href="https://medium.com/@alephium" >https://medium.com/@alephium<br /> > </a>Github: <a href="https://github.com/alephium" >https://github.com/alephium</a>
+> **Website : [alephium.org](/) <br/> Whitepapers : [https://github.com/alephium/white-paper >](https://github.com/alephium/white-paper)Medium : [https://medium.com/@alephium >](https://medium.com/@alephium)Github: [https://github.com/alephium](https://github.com/alephium)
 
 ### 🎥How to submit the video
 
 - Upload your video to youtube or vimeo.
 - Add the **\#Alephium** and **\#ALPH** hashtags
-- Paste the link to the video and your email address using this <a href="https://forms.gle/LeNyEbX1KL5ZoJkLA" ><strong>submission form</strong></a>
+- Paste the link to the video and your email address using this [submission form](https://forms.gle/LeNyEbX1KL5ZoJkLA)
 
 ### 💰Prizes
 
 The best submissions will be rewarded with prizes totalling 10’000 ALPH.
 
-Please note that prize eligibility is conditioned to Alephium’s <a href="https://github.com/alephium/community/blob/master/RewardProgramRules.md" >Reward Program Rules</a>, make sure you are eligible before entering the contest.
+Please note that prize eligibility is conditioned to Alephium’s [Reward Program Rules](https://github.com/alephium/community/blob/master/RewardProgramRules.md), make sure you are eligible before entering the contest.
 
 #### **We can’t wait to binge watch your material! Give it your best shot, director!**

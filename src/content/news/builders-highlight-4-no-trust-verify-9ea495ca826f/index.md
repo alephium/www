@@ -7,13 +7,13 @@ featuredImage: image_61abe28f4e.jpg
 title: 'Builders Highlight #4: No Trust Verify'
 ---
 
-_Our ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience and provide real utility for the users. In the Builders Highlight series, these builders will share more about their projects, thoughts, and insights on why building on Alephium! You can find_ <a href="/news/post/builders-highlight-sezame-wallet-ddb4aeb61881" ><em>#1 here</em></a>_,_ <a href="/news/post/builders-highlight-alphpaca-nfts-99c69775f04c" ><em>#2 here</em></a> _and_ <a href="/news/post/builders-highlight-3-ayin-6be4a6bd4ec2" ><em>#3</em></a>_!_
+_Our ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience and provide real utility for the users. In the Builders Highlight series, these builders will share more about their projects, thoughts, and insights on why building on Alephium! You can find_ [#1 here](/news/post/builders-highlight-sezame-wallet-ddb4aeb61881)_,_ [#2 here](/news/post/builders-highlight-alphpaca-nfts-99c69775f04c) _and_ [#3](/news/post/builders-highlight-3-ayin-6be4a6bd4ec2)_!_
 
-This episode is about No Trust Verify, creator of the first ever token on mainnet (ALF), now introducing <a href="https://walph.io" >Walph</a>, the first decentralized lottery powered by Alephium! <a href="https://twitter.com/cg1_bin" >cgi-bin</a> and <a href="https://twitter.com/Oheka32" >Oheka</a> & other NTV members are hyperactive community members & fantastic builders, and we thank them for their time!
+This episode is about No Trust Verify, creator of the first ever token on mainnet (ALF), now introducing [Walph](https://walph.io), the first decentralized lottery powered by Alephium! [cgi-bin](https://twitter.com/cg1_bin) and [Oheka](https://twitter.com/Oheka32) & other NTV members are hyperactive community members & fantastic builders, and we thank them for their time!
 
 ### **Tell us a bit about yourself. Who are you? Where are you from? What’s your training & main activity? (this one is optional, but is always nice to know a bit about the founder/dev)**
 
-We are going by <a href="https://notrustverify.ch" >No Trust Verify</a>, mostly from Switzerland and our main activity is experimenting with a fondness for privacy, self-sovereignty and trustless organization. We actively <a href="https://github.com/notrustverify" >contribute</a> to many projects, such as Nym, where we manage the infrastructure, develop applications such as <a href="https://pastenym.ch/" >pastenym.ch</a>, and educate and raise awareness of privacy issues. Likewise, we are also active on Alephium in various ways, whether by managing certain components such as full node or backend explorer, being active in the community or helping to integrate NymConnect into the Alephium ecosystem.
+We are going by [No Trust Verify](https://notrustverify.ch), mostly from Switzerland and our main activity is experimenting with a fondness for privacy, self-sovereignty and trustless organization. We actively [contribute](https://github.com/notrustverify) to many projects, such as Nym, where we manage the infrastructure, develop applications such as [pastenym.ch](https://pastenym.ch/), and educate and raise awareness of privacy issues. Likewise, we are also active on Alephium in various ways, whether by managing certain components such as full node or backend explorer, being active in the community or helping to integrate NymConnect into the Alephium ecosystem.
 
 ![](image_d8c67fefb0.png)
 
@@ -67,12 +67,12 @@ In the future, it will be fascinating to explore the opportunities sharding offe
 
 Be sure to consult the documentation, join our Discord community, and don’t hesitate to ask questions. Doing so will not only enhance your understanding but also contribute to Ralph becoming the best smart-contract language.
 
-_Thanks, No Trust Verify, for your answers! Alephium is thrilled to have such talent builders in the community! You can find the WALPH_ <a href="https://walph.io" ><em>here</em></a>_, and the WALPH Twitter account_ <a href="https://twitter.com/WalphLottery" ><em>here</em></a>_._
+_Thanks, No Trust Verify, for your answers! Alephium is thrilled to have such talent builders in the community! You can find the WALPH_ [here](https://walph.io)_, and the WALPH Twitter account_ [here](https://twitter.com/WalphLottery)_._
 
 ---
 
 _Disclaimer: While Alephium is happy to support a growing developer community, it would like to clarify that it does not endorse, audit, or review any software presented in this series and encourages all users to make informed decisions and take personal responsibility for their actions._
 
-Have you built something or have a nice idea and want to request a grant or reward? You can access the <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" >Alephium Community Grants &amp; Reward Program page</a> for more info!
+Have you built something or have a nice idea and want to request a grant or reward? You can access the [Alephium Community Grants &amp; Reward Program page](https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md) for more info!
 
-If you need help or have extra questions, you are welcome to reach out in the \# 🎨dev-dapp channel on [Discord](/discord), or in the Alephium <a href="https://t.me/alephiumgroup" >Telegram</a> channel. Don’t forget to follow <a href="https://twitter.com/alephium" >@alephium on Twitter</a> to stay up-to-date.
+If you need help or have extra questions, you are welcome to reach out in the \# 🎨dev-dapp channel on [Discord](/discord), or in the Alephium [Telegram](https://t.me/alephiumgroup) channel. Don’t forget to follow [@alephium on Twitter](https://twitter.com/alephium) to stay up-to-date.

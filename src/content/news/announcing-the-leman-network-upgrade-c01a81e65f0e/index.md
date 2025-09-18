@@ -11,7 +11,7 @@ Alephium is announcing its first Network Upgrade: **The Leman Network Upgrade**.
 
 **Why a network upgrade?**
 
-In the past few months, the Alephium team has been working on improvements for its whole tech stack: the <a href="https://wiki.alephium.org/ralph/getting-started" >Ralph programming language</a>, the <a href="https://github.com/alephium/alephium/tree/master/protocol/src/main/scala/org/alephium/protocol/vm" >Alphred Virtual Machine</a>, <a href="https://github.com/alephium/alephium" >Node APIs</a>, etc…
+In the past few months, the Alephium team has been working on improvements for its whole tech stack: the [Ralph programming language](https://wiki.alephium.org/ralph/getting-started), the [Alphred Virtual Machine](https://github.com/alephium/alephium/tree/master/protocol/src/main/scala/org/alephium/protocol/vm), [Node APIs](https://github.com/alephium/alephium), etc…
 
 The goal has been to increase the performance and security of the whole stack, as well as enabling a top-of-the-class dApp developer experience. Some of you might already have tested these changes on the latest version of the testnet that was deployed past July.
 
@@ -39,6 +39,6 @@ In the coming weeks, we will share more on the technical roadmap and the timelin
 
 We’re expecting to activate the Leman Upgrade on the mainnet at the beginning of 2023. Please, be aware that this might change, as we will always prioritize thorough testing and security!
 
-**Find the** <a href="/news/post/the-leman-upgrade-2-232e3374abc4" ><strong>2nd part of this article here.</strong></a> **If you want to know more about it’s** <a href="/news/post/the-front-end-leman-upgrade-948a98a3e2d" ><strong>impact on the frontend, head over here.</strong></a>
+**Find the** [2nd part of this article here.](/news/post/the-leman-upgrade-2-232e3374abc4) **If you want to know more about it’s** [impact on the frontend, head over here.](/news/post/the-front-end-leman-upgrade-948a98a3e2d)
 
-As always, you can follow the evolution of our code on <a href="https://github.com/alephium" >Github</a>, our news on <a href="https://twitter.com/alephium" >Twitter</a> & <a href="https://medium.com/@alephium" >Medium</a> or come interact with us on <a href="https://discord.com/invite/GEbcpajCJG" >Discord</a> & <a href="https://t.me/alephiumgroup" >Telegram</a>.
+As always, you can follow the evolution of our code on [Github](https://github.com/alephium), our news on [Twitter](https://twitter.com/alephium) & [Medium](https://medium.com/@alephium) or come interact with us on [Discord](https://discord.com/invite/GEbcpajCJG) & [Telegram](https://t.me/alephiumgroup).

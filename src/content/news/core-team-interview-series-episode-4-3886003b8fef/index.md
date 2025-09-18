@@ -6,11 +6,11 @@ featuredImage: image_0416b8898f.jpeg
 title: Core team interview series. Episode 4
 ---
 
-**This article was updated:** <a href="/news/post/alephium-contributors-f35eeaeaf0a0"  rel="nofollow">https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0</a>
+**This article was updated:** [https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0](/news/post/alephium-contributors-f35eeaeaf0a0)
 
 _For its team, Alephium is privileging agility and efficiency over hyper-growth. The project does stay at a human size not because it is more efficient, but because Alephium strives to be a decentralized, community-driven project. This means the project in itself is much larger than a team can ever be. Communication, trust, openness, and transparency are paramount in such a setup._
 
-_To shed some light on who we are and what we do, we decided to share a little about ourselves with the community through a small series of interviews. Read the_ <a href="/news/post/core-team-interview-series-episode-1-3472f8295af6" ><em>1st</em></a>_,_ <a href="/news/post/core-team-interview-series-episode-2-bec6e6908d2f" ><em>2nd</em></a>_, and_ <a href="/news/post/core-team-interview-series-episode-3-64b6dacc1459" ><em>3rd part</em></a>_._
+_To shed some light on who we are and what we do, we decided to share a little about ourselves with the community through a small series of interviews. Read the_ [1st](/news/post/core-team-interview-series-episode-1-3472f8295af6)_,_ [2nd](/news/post/core-team-interview-series-episode-2-bec6e6908d2f)_, and_ [3rd part](/news/post/core-team-interview-series-episode-3-64b6dacc1459)_._
 
 ---
 
@@ -34,11 +34,11 @@ I love playing tag rugby and deep inside I am a nerd. I love board games, comic 
 
 ### 4 — Got links? Got a profile picture we should use?
 
-You’ll find me on <a href="https://www.linkedin.com/in/marina-miranda-de-mattos-667945130/" >LinkedIn</a> and on <a href="https://twitter.com/MarinadeMattos2" >Twitter</a>.
+You’ll find me on [LinkedIn](https://www.linkedin.com/in/marina-miranda-de-mattos-667945130/) and on [Twitter](https://twitter.com/MarinadeMattos2).
 
 ### 5 — How/when did you come across crypto?
 
-Like many people, I learned about crypto in 2017 when a broker tried to sell me some Bitcoins. I realized that there had to be a better way to be part of it all and started looking into it for myself. I found the entire space quite exciting and decided I would love to work with it. It was then in 2018 that I joined <a href="https://lykke.com/" >Lykke</a>, a Cryptoexchange established in 2016, as the Head of Customer Success and expanded my knowledge in various areas. Lykke is
+Like many people, I learned about crypto in 2017 when a broker tried to sell me some Bitcoins. I realized that there had to be a better way to be part of it all and started looking into it for myself. I found the entire space quite exciting and decided I would love to work with it. It was then in 2018 that I joined [Lykke](https://lykke.com/), a Cryptoexchange established in 2016, as the Head of Customer Success and expanded my knowledge in various areas. Lykke is
 
 ### 6 — How did you come across Alephium and what attracted you to the project?
 
@@ -58,7 +58,7 @@ I think Blockchain has the power to change people’s lives and I would like to 
 
 ### 1 — What should we call you, and where are you located?
 
-My name is <a href="https://twitter.com/jameskbh" >Thiago Freitas</a>, and I’m currently living in Lisbon, Portugal
+My name is [Thiago Freitas](https://twitter.com/jameskbh), and I’m currently living in Lisbon, Portugal
 
 ### 2 — What/where did you study? What are your past notable experiences?
 
@@ -104,7 +104,7 @@ My main interest is to play table-tennis with family or friends, which is consid
 
 ### 4 — Got links? Got a profile picture we should use?
 
-You can find some of my work on <a href="https://github.com/suyanlong" >GitHub</a>.
+You can find some of my work on [GitHub](https://github.com/suyanlong).
 
 ### 5 — How/when did you come across crypto?
 
@@ -116,7 +116,7 @@ On GitHub, I discovered the Alephium project while learning about blockchain rel
 
 ### 7 — What are you doing at Alephium?
 
-I’m currently working on the <a href="https://github.com/alephium/ralph-vscode" >ralph-vscode</a> plugin in Alephium.
+I’m currently working on the [ralph-vscode](https://github.com/alephium/ralph-vscode) plugin in Alephium.
 
 ### 8 — What is it you care the most for with Alephium?
 
@@ -126,4 +126,4 @@ What I care the most about is that the community members can understand the Alep
 
 **This concludes the fourth chapter in this series. There’s no doubt that more episodes will be needed as the project progresses and grows. Stay tuned!**
 
-**_You can follow Alephium on_** <a href="https://github.com/alephium/" ><strong><em>Github</em></strong></a>**_,_** <a href="https://twitter.com/alephium" ><strong><em>Twitter</em></strong></a>**_. Join the conversation on_** [Discord](/discord)**_,_** <a href="https://t.me/alephiumgroup" ><strong><em>Telegram</em></strong></a> **_or_** <a href="https://www.reddit.com/r/alephium" ><strong><em>Reddit</em></strong></a>**_._**
+**_You can follow Alephium on_** [Github](https://github.com/alephium/)**_,_** [Twitter](https://twitter.com/alephium)**_. Join the conversation on_** [Discord](/discord)**_,_** [Telegram](https://t.me/alephiumgroup) **_or_** [Reddit](https://www.reddit.com/r/alephium)**_._**

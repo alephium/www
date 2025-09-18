@@ -43,7 +43,7 @@ title: Gate.io AMA with Alephium
 
 > _Thanks to stateful UTXO & sharding, it is programmable, secure & scalable._
 
-> _More here :_ <a href="https://wiki.alephium.org/Frequently-Asked-Questions.html" ><em>https://wiki.alephium.org/Frequently-Asked-Questions.html</em></a>
+> _More here :_ [https://wiki.alephium.org/Frequently-Asked-Questions.html](https://wiki.alephium.org/Frequently-Asked-Questions.html)
 
 **tomrodg / Gateio**
 
@@ -57,9 +57,9 @@ title: Gate.io AMA with Alephium
 
 > _Alephium delivers a scalable dApp &DeFi platform that is as secure as bitcoin, as programmable as Ethereum while keeping decentralization & trustlessness as core values._
 
-> _More here :_ <a href="/news/post/welcome-to-alephium-alph-48dfb72aa458"  rel="noopener nofollow ugc"><em>https://medium.com/@alephium/welcome-to-alephium-alph-48dfb72aa458</em></a>
+> _More here :_ [https://medium.com/@alephium/welcome-to-alephium-alph-48dfb72aa458](/news/post/welcome-to-alephium-alph-48dfb72aa458)
 
-> _& here_ <a href="https://hackernoon.com/what-is-sharding-and-utxo-scaling-for-blockchain" ><em>https://hackernoon.com/what-is-sharding-and-utxo-scaling-for-blockchain</em></a>
+> _& here_ [https://hackernoon.com/what-is-sharding-and-utxo-scaling-for-blockchain](https://hackernoon.com/what-is-sharding-and-utxo-scaling-for-blockchain)
 
 **tomrodg / Gateio**
 
@@ -69,13 +69,13 @@ title: Gate.io AMA with Alephium
 
 **Maud / Alephium**
 
-> _Sure! ALPH is our official ticker, and we’ve been trading happily on_ <a href="https://Gate.io" ><em>Gate.io</em></a> _for more than a month already. As of today, the total circulating supply is around 48M ALPH. Trade here :_ <a href="https://gate.io/trade/ALPH_USDT" ><em>gate.io/trade/ALPH_USDT</em></a>
+> _Sure! ALPH is our official ticker, and we’ve been trading happily on_ [Gate.io](https://Gate.io) _for more than a month already. As of today, the total circulating supply is around 48M ALPH. Trade here :_ [gate.io/trade/ALPH_USDT](https://gate.io/trade/ALPH_USDT)
 
 > _At mainnet launch (last November), 140M ALPH were minted with the Genesis block and allocated to : sales (80M = 8%), community & ecosystem development (30M = 3%) and team & development (30M = 3%). These tokens have verifiable on-chain lock with vesting periods ranging from 2 to 4 years._
 
 > _The rest of the tokens (86%) will be used for mining rewards and ensure the processing of transactions on the Alephium blockchain over the next 80 years._
 
-> _Read more on our tokenomics here:_ <a href="/news/post/tokenomics-of-alephium-61d59b51029c"  rel="noopener nofollow ugc"><em>https://medium.com/@alephium/tokenomics-of-alephium-61d59b51029c</em></a>
+> _Read more on our tokenomics here:_ [https://medium.com/@alephium/tokenomics-of-alephium-61d59b51029c](/news/post/tokenomics-of-alephium-61d59b51029c)
 
 **tomrodg / Gateio**
 
@@ -99,13 +99,13 @@ title: Gate.io AMA with Alephium
 
 > **_Explorer 🔭_** _Better readability, more metrics & a lot more improvements per request of the community!_
 
-> **_Listings ⚖️_** _After our first listing (welcome_ <a href="https://gate.io" ><em>gate.io</em></a>_ !), we keep pushing for more listings! Stay tuned!_
+> **_Listings ⚖️_** _After our first listing (welcome_ [gate.io](https://gate.io)_ !), we keep pushing for more listings! Stay tuned!_
 
 > **_Strategic partnerships 🤝_** _We will keep looking for new partners for the Alephium family, they help us grow, they challenge us, they open doors for us!_
 
 > **_Marketing & awareness 🗣_** _We keep pushing for qualified awareness, organic growth and community development._
 
-> _Read more about it here:_ <a href="/news/post/alephium-q1-project-update-50f4a7b354b0"  rel="noopener nofollow ugc"><em>https://medium.com/@alephium/alephium-q1-project-update-50f4a7b354b0</em></a>
+> _Read more about it here:_ [https://medium.com/@alephium/alephium-q1-project-update-50f4a7b354b0](/news/post/alephium-q1-project-update-50f4a7b354b0)
 
 **tomrodg / Gateio**
 
@@ -117,15 +117,15 @@ title: Gate.io AMA with Alephium
 
 > **🛠 If you’re a dev, start here :**
 
-> Here’s our latest code update : <a href="https://github.com/alephium/alephium/releases/latest/" >https://github.com/alephium/alephium/releases/latest/</a>  
-> Come commit and pull request with us : <a href="https://github.com/alephium" >https://github.com/alephium</a>  
-> Wiki : <a href="https://github.com/alephium/wiki" >https://github.com/alephium/wiki</a>
+> Here’s our latest code update : [https://github.com/alephium/alephium/releases/latest/](https://github.com/alephium/alephium/releases/latest/)  
+> Come commit and pull request with us : [https://github.com/alephium](https://github.com/alephium)  
+> Wiki : [https://github.com/alephium/wiki](https://github.com/alephium/wiki)
 
 > **⛏If you’re a miner, start here !**
 
-> Start by joining the dedicated Mining channel on discord : <a href="https://discord.gg/53QSMpKZyR" >https://discord.gg/53QSMpKZyR</a>  
-> Find our Miner starter pack on Github : <a href="https://github.com/alephium/alephium-miner-getting-started" >https://github.com/alephium/alephium-miner-getting-started</a>  
-> The list of all mining pools is updated here: <a href="https://wiki.alephium.org/Pool-Mining-Guide.html#community-pools"  rel="nofollow noopener">https://wiki.alephium.org/Pool-Mining-Guide.html#community-pools</a>
+> Start by joining the dedicated Mining channel on discord : [https://discord.gg/53QSMpKZyR](https://discord.gg/53QSMpKZyR)  
+> Find our Miner starter pack on Github : [https://github.com/alephium/alephium-miner-getting-started](https://github.com/alephium/alephium-miner-getting-started)  
+> The list of all mining pools is updated here: [https://wiki.alephium.org/Pool-Mining-Guide.html#community-pools](https://wiki.alephium.org/Pool-Mining-Guide.html#community-pools)
 
 **Tom Rodriguez / Gate.io**
 
@@ -145,7 +145,7 @@ title: Gate.io AMA with Alephium
 
 **A: Cheng / Alephium**
 
-> _Sharding is the most promising layer1 one scaling solution, same as sharding for database scaling. However, sharding is very challenging, and so far no project has done it right. We are the first sharded blockchain with nice user experience. For the long term, I believe sharding and layer 2 will be the best combo. For more reasoning, you could check this article by Vitalik:_ <a href="https://vitalik.ca/general/2021/04/07/sharding.html" ><em>https://vitalik.ca/general/2021/04/07/sharding.html</em></a>
+> _Sharding is the most promising layer1 one scaling solution, same as sharding for database scaling. However, sharding is very challenging, and so far no project has done it right. We are the first sharded blockchain with nice user experience. For the long term, I believe sharding and layer 2 will be the best combo. For more reasoning, you could check this article by Vitalik:_ [https://vitalik.ca/general/2021/04/07/sharding.html](https://vitalik.ca/general/2021/04/07/sharding.html)
 
 **Q: starcrypto fi**
 
@@ -155,17 +155,17 @@ title: Gate.io AMA with Alephium
 
 > _If you want to Talk with us, join us here :_
 
-> _Discord :_ <a href="https://discord.gg/JErgRBfRSB" ><em>https://discord.gg/JErgRBfRSB</em></a>_  
-> Telegram :_ <a href="https://t.me/alephiumgroup" ><em>https://t.me/alephiumgroup</em></a>_  
-> Twitter :_ <a href="https://twitter.com/alephium" ><em>https://twitter.com/alephium</em></a>
+> _Discord :_ [https://discord.gg/JErgRBfRSB](https://discord.gg/JErgRBfRSB)_  
+> Telegram :_ [https://t.me/alephiumgroup](https://t.me/alephiumgroup)_  
+> Twitter :_ [https://twitter.com/alephium](https://twitter.com/alephium)
 
 > _If you want to read, setup, explore and contribute, head there :_
 
 > _Website : [alephium.org](/)_  
-> Medium :_ <a href="https://medium.com/@alephium"  rel="noopener nofollow ugc"><em>https://medium.com/@alephium</em></a>_  
-> Github:_ <a href="https://github.com/alephium" ><em>https://github.com/alephium</em></a>
+> Medium :_ [https://medium.com/@alephium](https://medium.com/@alephium)_  
+> Github:_ [https://github.com/alephium](https://github.com/alephium)
 
-> _For revenues, we started a community reward program in December 2021 you can read more about it here:_ <a href="/news/post/introducing-community-rewards-f4638bbf14bf"  rel="noopener nofollow ugc"><em>https://medium.com/@alephium/introducing-community-rewards-f4638bbf14bf</em></a> _We are also looking into giving grants to interesting dApps projects. Of course, mining will also bring you reward._
+> _For revenues, we started a community reward program in December 2021 you can read more about it here:_ [https://medium.com/@alephium/introducing-community-rewards-f4638bbf14bf](/news/post/introducing-community-rewards-f4638bbf14bf) _We are also looking into giving grants to interesting dApps projects. Of course, mining will also bring you reward._
 
 **Q: PomPayPi**
 
@@ -181,7 +181,7 @@ title: Gate.io AMA with Alephium
 
 **A: Vlad / Alephium**
 
-> _We are not a Proof of Stake chain, so there is no native staking. Later on, when there will be more DeFi dApps, they might offer staking! In addition,_ <a href="https://Gate.io" ><em>Gate.io</em></a> _offers HODL & EARN as well as Liquidity pool for ALPH._
+> _We are not a Proof of Stake chain, so there is no native staking. Later on, when there will be more DeFi dApps, they might offer staking! In addition,_ [Gate.io](https://Gate.io) _offers HODL & EARN as well as Liquidity pool for ALPH._
 
 **Q: Svenhash**
 
@@ -219,7 +219,7 @@ title: Gate.io AMA with Alephium
 
 **A: Vlad / Alephium**
 
-> _Find it on_ <a href="https://Gate.io" ><em>Gate.io</em></a>_!_
+> _Find it on_ [Gate.io](https://Gate.io)_!_
 
 **Q: Zach Sams**
 
@@ -239,7 +239,7 @@ title: Gate.io AMA with Alephium
 
 > _We see our miners, mining pools and mining community increasing & improving every day. We see the need for our chain in this new multichain world. We see the need for DeFi on UTXO, we see the need for scaling, and we are the best positioned on those. So yes, we are confident, and hard at work!_
 
-> _Not only do we take into account community feedback, we actively solicit it, and act on it! Every day! We have a community rewards program to reward feedback, help and good ideas. See it here :_ <a href="/news/post/introducing-community-rewards-f4638bbf14bf"  rel="noopener nofollow ugc"><em>https://medium.com/@alephium/introducing-community-rewards-f4638bbf14bf</em></a>
+> _Not only do we take into account community feedback, we actively solicit it, and act on it! Every day! We have a community rewards program to reward feedback, help and good ideas. See it here :_ [https://medium.com/@alephium/introducing-community-rewards-f4638bbf14bf](/news/post/introducing-community-rewards-f4638bbf14bf)
 
 **Q: Ok Good**
 
@@ -255,7 +255,7 @@ title: Gate.io AMA with Alephium
 
 **A: Maud / Alephium**
 
-> _Our mainnet is already live and we’ve successfully implemented the innovations described in our whitepapers._ <a href="https://github.com/alephium/white-paper/"  rel="nofollow noopener"><em>https://github.com/alephium/white-paper/</em></a>
+> _Our mainnet is already live and we’ve successfully implemented the innovations described in our whitepapers._ [https://github.com/alephium/white-paper/](https://github.com/alephium/white-paper/)
 
 **Q: Zeliha Gün**
 
@@ -321,7 +321,7 @@ title: Gate.io AMA with Alephium
 
 **A: Maud / Alephium**
 
-> <a href="/news/post/introducing-community-rewards-f4638bbf14bf"  rel="noopener nofollow ugc"><em>https://medium.com/@alephium/introducing-community-rewards-f4638bbf14bf</em></a>
+> [https://medium.com/@alephium/introducing-community-rewards-f4638bbf14bf](/news/post/introducing-community-rewards-f4638bbf14bf)
 
 **Q: Luffy Boy**
 
@@ -333,12 +333,12 @@ title: Gate.io AMA with Alephium
 
 > _We have at least 6 NON-OFFICIAL local communities already :_
 
-> _RU 🇷🇺_ <a href="https://t.me/alephiumgroup_ru" ><em>https://t.me/alephiumgroup*ru</em></a>*  
-> TR 🇹🇷* <a href="https://t.me/alephium_tr" ><em>https://t.me/alephium_tr</em></a>*  
-> VN 🇻🇳* <a href="https://t.me/alephiumvn" ><em>https://t.me/alephiumvn</em></a>*  
-> NL 🇳🇱* <a href="https://t.me/AlephiumgroupNL" ><em>https://t.me/AlephiumgroupNL</em></a>*  
-> PT 🇧🇷🇵🇹* <a href="https://t.me/Alephium_pt" ><em>https://t.me/Alephium_pt</em></a>*  
-> SP 🇪🇸\_ <a href="https://t.me/minerosAlephium" ><em>https://t.me/minerosAlephium</em></a>
+> _RU 🇷🇺_ [https://t.me/alephiumgroup*ru](https://t.me/alephiumgroup_ru)*  
+> TR 🇹🇷* [https://t.me/alephium_tr](https://t.me/alephium_tr)*  
+> VN 🇻🇳* [https://t.me/alephiumvn](https://t.me/alephiumvn)*  
+> NL 🇳🇱* [https://t.me/AlephiumgroupNL](https://t.me/AlephiumgroupNL)*  
+> PT 🇧🇷🇵🇹* [https://t.me/Alephium_pt](https://t.me/Alephium_pt)*  
+> SP 🇪🇸\_ [https://t.me/minerosAlephium](https://t.me/minerosAlephium)
 
 > _If you want to create one for your country, let us know!_
 
@@ -384,7 +384,7 @@ title: Gate.io AMA with Alephium
 
 **A: polto / Alephium**
 
-> _First of all we delivered the mainnet with all the functionality we promised in our WP. Also, please see the activity and the code quality on our github :_ <a href="https://github.com/alephium/" ><em>https://github.com/alephium/</em></a>_ , please feel free to contribute._
+> _First of all we delivered the mainnet with all the functionality we promised in our WP. Also, please see the activity and the code quality on our github :_ [https://github.com/alephium/](https://github.com/alephium/)_ , please feel free to contribute._
 
 ---
 
@@ -394,7 +394,7 @@ title: Gate.io AMA with Alephium
 
 > Alright, thank you very much Alephium team
 
-> Tom Rodriguez — \[Check <a href="https://Gate.io" >Gate.io</a> telegram group admins\], \[2/15/22 2:44 PM\]
+> Tom Rodriguez — \[Check [Gate.io](https://Gate.io) telegram group admins\], \[2/15/22 2:44 PM\]
 
 > Now, I know that you have shared this information already but since we are reaching the end of the AMA, it would be good to do it one more time.
 
@@ -404,18 +404,18 @@ title: Gate.io AMA with Alephium
 
 > _If you want to Talk with us, join us here :_
 
-> _Discord :_ <a href="https://discord.gg/JErgRBfRSB" ><em>https://discord.gg/JErgRBfRSB</em></a>_  
-> Telegram :_ <a href="https://t.me/alephiumgroup" ><em>https://t.me/alephiumgroup</em></a>_  
-> Twitter :_ <a href="https://twitter.com/alephium" ><em>https://twitter.com/alephium</em></a>
+> _Discord :_ [https://discord.gg/JErgRBfRSB](https://discord.gg/JErgRBfRSB)_  
+> Telegram :_ [https://t.me/alephiumgroup](https://t.me/alephiumgroup)_  
+> Twitter :_ [https://twitter.com/alephium](https://twitter.com/alephium)
 
 > _If you want to read, setup, explore and contribute, head there :_
 
 > _Website : [alephium.org](/)_  
-> Medium :_ <a href="https://medium.com/@alephium"  rel="noopener nofollow ugc"><em>https://medium.com/@alephium</em></a>_  
-> Github:_ <a href="https://github.com/alephium" ><em>https://github.com/alephium</em></a>
+> Medium :_ [https://medium.com/@alephium](https://medium.com/@alephium)_  
+> Github:_ [https://github.com/alephium](https://github.com/alephium)
 
 > _Here, of course, you can interact with ALPH :_
 
-> _Wallet:_ <a href="https://github.com/alephium/alephium-wallet/releases/latest" ><em>https://github.com/alephium/alephium-wallet/releases/latest</em></a>_  
-> Explorer:_ <a href="https://github.com/alephium/explorer" ><em>https://github.com/alephium/explorer</em></a>_  
-> Exchange:_ <a href="https://Gate.io" ><em>Gate.io</em></a>_ :_ <a href="https://www.gate.io/fr/trade/ALPH_USDT" ><em>https://www.gate.io/fr/trade/ALPH_USDT</em></a>
+> _Wallet:_ [https://github.com/alephium/alephium-wallet/releases/latest](https://github.com/alephium/alephium-wallet/releases/latest)_  
+> Explorer:_ [https://github.com/alephium/explorer](https://github.com/alephium/explorer)_  
+> Exchange:_ [Gate.io](https://Gate.io)_ :_ [https://www.gate.io/fr/trade/ALPH_USDT](https://www.gate.io/fr/trade/ALPH_USDT)

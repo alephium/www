@@ -16,12 +16,12 @@ title: Alephium Launches Browser Extension Wallet
 
 Alephium launched its browser extension wallet, designed to provide a secure and convenient way for users to manage their digital assets and interact with decentralized applications (dApps) on the Alephium network.
 
-This wallet was based on the <a href="https://github.com/argentlabs/argent-x" >Argent X</a> wallet, with changes and improvements to make it suitable for the Alephium blockchain. It is **fully compatible with the current mainnet** and includes features that will be available after the Leman Network Upgrade, like Schnorr signatures, addresses book, token lists, etc. These new features can already be tried on Alephium’s testnet and are explained in more detail below.
+This wallet was based on the [Argent X](https://github.com/argentlabs/argent-x) wallet, with changes and improvements to make it suitable for the Alephium blockchain. It is **fully compatible with the current mainnet** and includes features that will be available after the Leman Network Upgrade, like Schnorr signatures, addresses book, token lists, etc. These new features can already be tried on Alephium’s testnet and are explained in more detail below.
 
 #### ⬇️ Download the extension wallet
 
-🔵 <a href="https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj" ><strong>Google Chrome store.</strong></a>\*\*  
-\*\*🟠 <a href="https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/" ><strong>Firefox Store.</strong></a>
+🔵 [Google Chrome store.](https://chrome.google.com/webstore/detail/alephium-extension-wallet/gdokollfhmnbfckbobkdbakhilldkhcj)\*\*  
+\*\*🟠 [Firefox Store.](https://addons.mozilla.org/en-US/firefox/addon/alephiumextensionwallet/)
 
 ### Main Features
 
@@ -60,8 +60,8 @@ The Alephium browser extension wallet has an **address book** feature for users 
 
 #### Schnorr Signatures
 
-Finally, the wallet features **Schnorr Signatures**. This is a more <a href="https://en.wikipedia.org/wiki/Schnorr_signature" >advanced signature algorithm</a> designed to be faster and more efficient than the traditional ECDSA signature algorithm. Schnorr signatures allow users to securely sign messages and verify their authenticity, ensuring their transactions are always secure and tamper-proof. It also provides faster transaction processing times and lower transaction fees.   
-This feature enables <a href="https://nostr.com/" >nostr</a> support, making the wallet capable of signing messages in the social network. It could also be leveraged in other Schnorr-based applications.
+Finally, the wallet features **Schnorr Signatures**. This is a more [advanced signature algorithm](https://en.wikipedia.org/wiki/Schnorr_signature) designed to be faster and more efficient than the traditional ECDSA signature algorithm. Schnorr signatures allow users to securely sign messages and verify their authenticity, ensuring their transactions are always secure and tamper-proof. It also provides faster transaction processing times and lower transaction fees.   
+This feature enables [nostr](https://nostr.com/) support, making the wallet capable of signing messages in the social network. It could also be leveraged in other Schnorr-based applications.
 
 <figure id="fd0d" class="graf graf--figure graf-after--p">
 <img src="image_a2ab67a85a.jpg" class="graf-image" data-image-id="0*CFq37mhs9sgEJktE" data-width="351" data-height="577" />
@@ -72,7 +72,7 @@ This feature enables <a href="https://nostr.com/" >nostr</a> support, making the
 
 The Alephium browser extension wallet is a powerful tool with advanced options and an intuitive design, ready to support the new features introduced with the Leman Network upgrade. You can use it on the Testnet to experience a first taste of Alephium post-Leman Upgrade!
 
-Access the **Testnet NFT Marketplace** here: <a href="https://nft.alephium-testnet.softfork.se/"  rel="nofollow noopener noopener noopener">https://nft.alephium-testnet.softfork.se/</a>
+Access the **Testnet NFT Marketplace** here: [https://nft.alephium-testnet.softfork.se/](https://nft.alephium-testnet.softfork.se/)
 
 **Obs: Make sure that your testnet address is on group 0!**
 
@@ -86,4 +86,4 @@ Feel free to list it and buy any NFT listed here!
 
 ---
 
-If you need assistance, you are welcome to reach out in the community channels on [Discord](/discord), <a href="https://t.me/alephiumgroup" >Telegram</a>. And follow <a href="https://twitter.com/alephium" >@alephium on Twitte</a>r to stay up-to-date.
+If you need assistance, you are welcome to reach out in the community channels on [Discord](/discord), [Telegram](https://t.me/alephiumgroup). And follow [@alephium on Twitte](https://twitter.com/alephium)r to stay up-to-date.

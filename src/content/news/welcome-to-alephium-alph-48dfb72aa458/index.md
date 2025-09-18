@@ -7,11 +7,11 @@ featuredImage: image_c6af9d3393.jpeg
 title: 🚀 Welcome to Alephium (ALPH) !
 ---
 
-#### Here’s all the information you need to get started with Alephium ! And if that’s not enough, come talk to us on <a href="https://discord.gg/JErgRBfRSB" >Discord</a>, <a href="https://t.me/alephiumgroup" >Telegram</a> or <a href="https://www.reddit.com/r/Alephium/" >Reddit</a> !
+#### Here’s all the information you need to get started with Alephium ! And if that’s not enough, come talk to us on [Discord](https://discord.gg/JErgRBfRSB), [Telegram](https://t.me/alephiumgroup) or [Reddit](https://www.reddit.com/r/Alephium/) !
 
 **If you’re looking for dev/mining info, you’ll find it at the end of this post !**
 
-\- <a href="https://medium.com/@s_64606/bienvenue-sur-alephium-alph-854b237f6e9" >Traduction Française</a> (Community translated)
+\- [Traduction Française](https://medium.com/@s_64606/bienvenue-sur-alephium-alph-854b237f6e9) (Community translated)
 
 ### 🐥 **What is Alephium?**
 
@@ -33,7 +33,7 @@ On top of an awesome team, an outstanding community and a lot of energy, here ar
 
 Putting all these innovations together, Alephium delivers a highly demanded solution in the industry: a scalable blockchain improving on mature ideas from Bitcoin to deliver reliable, powerful and secure DeFi and dApps capabilities. And we’re live!
 
-**Our whitepapers are here :** <a href="https://github.com/alephium/white-paper" ><strong>https://github.com/alephium/white-paper</strong></a>
+**Our whitepapers are here :** [https://github.com/alephium/white-paper](https://github.com/alephium/white-paper)
 
 ### 🚀 **Milestones & Roadmap**
 
@@ -130,7 +130,7 @@ The token supply on Alephium is limited with a hardcap of 1 billion. At Mainnet 
 
 In addition, half of the transaction fees are burned with each block and Proof of Less Work enables internal mining cost through burning when the hashrate and energy consumption are significantly high.
 
-**More details here :** <a href="/news/post/tokenomics-of-alephium-61d59b51029c" ><strong>https://medium.com/@alephium/tokenomics-of-alephium-61d59b51029c</strong></a>
+**More details here :** [https://medium.com/@alephium/tokenomics-of-alephium-61d59b51029c](/news/post/tokenomics-of-alephium-61d59b51029c)
 
 ### 🏋️‍♀️ **Our team**
 
@@ -140,79 +140,79 @@ The core team counts 14 members. 9 are tech team members and the remaining 5 are
 
 **@s0ukie#8277** ⚙️ is our Chief of Staff, without whom nothing moves, previously @Lykke and @Bestmile. Working from Zürich, Switzerland 🇨🇭
 
-Meet the rest of the team on our website or on Linkedin : <a href="https://www.linkedin.com/company/alephium/people/" >https://www.linkedin.com/company/alephium/people/</a>
+Meet the rest of the team on our website or on Linkedin : [https://www.linkedin.com/company/alephium/people/](https://www.linkedin.com/company/alephium/people/)
 
 ### 🎯 **Meet us, join us, talk to us!**
 
 #### **Talk with us**
 
-Discord : <a href="https://discord.gg/JErgRBfRSB" >https://discord.gg/JErgRBfRSB</a>  
-Telegram : <a href="https://t.me/alephiumgroup" >https://t.me/alephiumgroup</a>  
-Reddit : <a href="https://www.reddit.com/r/Alephium/" >https://www.reddit.com/r/Alephium/</a>
+Discord : [https://discord.gg/JErgRBfRSB](https://discord.gg/JErgRBfRSB)  
+Telegram : [https://t.me/alephiumgroup](https://t.me/alephiumgroup)  
+Reddit : [https://www.reddit.com/r/Alephium/](https://www.reddit.com/r/Alephium/)
 
 #### **Connect with us**
 
-Twitter : <a href="https://twitter.com/alephium" >https://twitter.com/alephium</a>  
-LinkedIn : <a href="https://www.linkedin.com/company/alephium" >https://www.linkedin.com/company/alephium</a>  
-Facebook : <a href="https://www.facebook.com/alephium" >https://www.facebook.com/alephium</a>
+Twitter : [https://twitter.com/alephium](https://twitter.com/alephium)  
+LinkedIn : [https://www.linkedin.com/company/alephium](https://www.linkedin.com/company/alephium)  
+Facebook : [https://www.facebook.com/alephium](https://www.facebook.com/alephium)
 
 #### **Read, setup, explore, contribute**
 
 Website : [alephium.org](/)  
-Whitepapers : <a href="https://github.com/alephium/white-paper" >https://github.com/alephium/white-paper</a>  
-Medium : <a href="https://medium.com/@alephium" >https://medium.com/@alephium</a>  
-Github: <a href="https://github.com/alephium" >https://github.com/alephium</a>
+Whitepapers : [https://github.com/alephium/white-paper](https://github.com/alephium/white-paper)  
+Medium : [https://medium.com/@alephium](https://medium.com/@alephium)  
+Github: [https://github.com/alephium](https://github.com/alephium)
 
 #### **Non-official Content & Communities (not moderated, endorsed or managed by Alephium)**
 
-Telegram 🇷🇺: <a href="https://t.me/alephiumgroup_ru"  rel="nofollow noopener noopener">https://t.me/alephiumgroup_ru</a>  
-Telegram 🇹🇷: <a href="https://t.me/alephium_tr"  rel="nofollow noopener noopener">https://t.me/alephium_tr</a>  
-<a href="https://www.youtube.com/playlist?list=PL8q8n0BHJS1P4-22OaT_w3vwNZVwiQt6s" >Youtube videos 🇷🇺</a>  
-<a href="https://www.youtube.com/playlist?list=PL8q8n0BHJS1OJIUOh0yANAEKdSUG8DdDG" >Youtube videos 🇹🇷</a>  
-<a href="https://www.youtube.com/playlist?list=PL8q8n0BHJS1Nd0nxGfsNJzNnAeHoXhezz" >Youtube videos 🌎</a>
+Telegram 🇷🇺: [https://t.me/alephiumgroup_ru](https://t.me/alephiumgroup_ru)  
+Telegram 🇹🇷: [https://t.me/alephium_tr](https://t.me/alephium_tr)  
+[Youtube videos 🇷🇺](https://www.youtube.com/playlist?list=PL8q8n0BHJS1P4-22OaT_w3vwNZVwiQt6s)  
+[Youtube videos 🇹🇷](https://www.youtube.com/playlist?list=PL8q8n0BHJS1OJIUOh0yANAEKdSUG8DdDG)  
+[Youtube videos 🌎](https://www.youtube.com/playlist?list=PL8q8n0BHJS1Nd0nxGfsNJzNnAeHoXhezz)
 
 #### **Buy/sell (Jan 12th onward)**
 
-- Gate.io — USDT : <a href="https://www.gate.io/fr/trade/ALPH_USDT" >https://www.gate.io/fr/trade/ALPH_USDT</a>
-- TradeOgre — USDT : <a href="https://tradeogre.com/exchange/USDT-ALPH"  rel="nofollow noopener">https://tradeogre.com/exchange/USDT-ALPH</a>
-- TradeOgre — BTC : <a href="https://tradeogre.com/exchange/USDT-ALPH"  rel="nofollow noopener">https://tradeogre.com/exchange/BTC-ALPH</a>
+- Gate.io — USDT : [https://www.gate.io/fr/trade/ALPH_USDT](https://www.gate.io/fr/trade/ALPH_USDT)
+- TradeOgre — USDT : [https://tradeogre.com/exchange/USDT-ALPH](https://tradeogre.com/exchange/USDT-ALPH)
+- TradeOgre — BTC : [https://tradeogre.com/exchange/BTC-ALPH](https://tradeogre.com/exchange/USDT-ALPH)
 
 ### **Our partners**
 
-- UTXO Alliance : <a href="https://utxo-alliance.org/" >https://utxo-alliance.org/</a>
-- Bitcoin Association Switzerland : <a href="/news/post/alephium-becomes-a-member-of-bitcoin-association-switzerland-2293fec16fc9" >https://medium.com/@alephium/alephium-becomes-a-member-of-bitcoin-association-switzerland-2293fec16fc9</a>
-- Cetacean Capital: <a href="https://cetacean.capital/"  rel="nofollow noopener">https://cetacean.capital</a>
-- Crypto Valley Association : <a href="https://cryptovalley.swiss/"  rel="nofollow noopener">https://cryptovalley.swiss/</a>
-- Dappnode: <a href="https://dappnode.io"  rel="nofollow noopener">https://dappnode.io</a>
-- Ergo : <a href="https://ergoplatform.org/"  rel="nofollow noopener">https://ergoplatform.org/</a>
-- Flux Labs : <a href="https://runonflux.io/fluxlabs.html"  rel="nofollow noopener">https://runonflux.io/fluxlabs.html</a>
-- Hodling SA : <a href="https://www.hodling.ch/"  rel="nofollow noopener">https://www.hodling.ch/</a>
+- UTXO Alliance : [https://utxo-alliance.org/](https://utxo-alliance.org/)
+- Bitcoin Association Switzerland : [https://medium.com/@alephium/alephium-becomes-a-member-of-bitcoin-association-switzerland-2293fec16fc9](/news/post/alephium-becomes-a-member-of-bitcoin-association-switzerland-2293fec16fc9)
+- Cetacean Capital: [https://cetacean.capital](https://cetacean.capital/)
+- Crypto Valley Association : [https://cryptovalley.swiss/](https://cryptovalley.swiss/)
+- Dappnode: [https://dappnode.io](https://dappnode.io)
+- Ergo : [https://ergoplatform.org/](https://ergoplatform.org/)
+- Flux Labs : [https://runonflux.io/fluxlabs.html](https://runonflux.io/fluxlabs.html)
+- Hodling SA : [https://www.hodling.ch/](https://www.hodling.ch/)
 
 ### **🛠 If you’re a dev, start here:**
 
-Here’s our latest code update: <a href="https://github.com/alephium/alephium/releases/latest/" >https://github.com/alephium/alephium/releases/latest/</a>
+Here’s our latest code update: [https://github.com/alephium/alephium/releases/latest/](https://github.com/alephium/alephium/releases/latest/)
 
-Come commit and pull request with us: <a href="https://github.com/alephium" >https://github.com/alephium</a>
+Come commit and pull request with us: [https://github.com/alephium](https://github.com/alephium)
 
-Full node : <a href="https://github.com/alephium/alephium" >https://github.com/alephium/alephium</a>  
-Wallet : <a href="https://github.com/alephium/alephium-wallet/releases/latest" >https://github.com/alephium/alephium-wallet/releases/latest</a>  
-Explorer : <a href="https://github.com/alephium/explorer" >https://github.com/alephium/explorer</a>  
-JS/TS lib : <a href="https://github.com/alephium/alephium-js" >https://github.com/alephium/alephium-js</a>  
-Wiki : <a href="https://github.com/alephium/wiki" >https://github.com/alephium/wiki</a>  
-Awesome Alphium ! <a href="https://github.com/alephium/awesome-alephium" >https://github.com/alephium/awesome-alephium</a>
+Full node : [https://github.com/alephium/alephium](https://github.com/alephium/alephium)  
+Wallet : [https://github.com/alephium/alephium-wallet/releases/latest](https://github.com/alephium/alephium-wallet/releases/latest)  
+Explorer : [https://github.com/alephium/explorer](https://github.com/alephium/explorer)  
+JS/TS lib : [https://github.com/alephium/alephium-js](https://github.com/alephium/alephium-js)  
+Wiki : [https://github.com/alephium/wiki](https://github.com/alephium/wiki)  
+Awesome Alphium ! [https://github.com/alephium/awesome-alephium](https://github.com/alephium/awesome-alephium)
 
 ### **⛏ If you’re a miner, start here !**
 
-Start by joining the dedicated Mining channel on discord : <a href="https://discord.gg/53QSMpKZyR" >https://discord.gg/53QSMpKZyR</a>
+Start by joining the dedicated Mining channel on discord : [https://discord.gg/53QSMpKZyR](https://discord.gg/53QSMpKZyR)
 
-Find our Miner starter pack on Github : <a href="https://github.com/alephium/alephium-miner-getting-started" >https://github.com/alephium/alephium-miner-getting-started</a>
+Find our Miner starter pack on Github : [https://github.com/alephium/alephium-miner-getting-started](https://github.com/alephium/alephium-miner-getting-started)
 
 And the specific repos :
 
-- <a href="https://github.com/alephium/gpu-miner" >https://github.com/alephium/gpu-miner</a>
-- <a href="https://github.com/alephium/fpga-miner" >https://github.com/alephium/fpga-miner</a>
-- <a href="https://github.com/alephium/mining-pool" >https://github.com/alephium/mining-pool</a>
+- [https://github.com/alephium/gpu-miner](https://github.com/alephium/gpu-miner)
+- [https://github.com/alephium/fpga-miner](https://github.com/alephium/fpga-miner)
+- [https://github.com/alephium/mining-pool](https://github.com/alephium/mining-pool)
 
-And here is a video of how to get started for solo mining : <a href="https://www.youtube.com/watch?v=hdPH6inWjhc" >https://www.youtube.com/watch?v=hdPH6inWjhc</a>
+And here is a video of how to get started for solo mining : [https://www.youtube.com/watch?v=hdPH6inWjhc](https://www.youtube.com/watch?v=hdPH6inWjhc)
 
-And if you’d rather join a pool, you will find list of available pools at the time of writing <a href="https://wiki.alephium.org/Pool-Mining-Guide.html#community-pools" >here.</a>
+And if you’d rather join a pool, you will find list of available pools at the time of writing [here.](https://wiki.alephium.org/Pool-Mining-Guide.html#community-pools)

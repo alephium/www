@@ -7,7 +7,7 @@ featuredImage: image_5945f1f277.png
 title: 'Community Highlight #3, digdug'
 ---
 
-#### _Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’ contributions to the ecosystem, what drives them and what they are passionate about! More episodes:_ <a href="/news/post/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" ><em>#1 here</em></a>_,_ <a href="/news/post/community-highlight-cgi-bin-c102cc106f19" ><em>#2 here</em></a>_,_ <a href="/news/post/community-highlight-4-montail-e24fd88882a0" ><em>#4 here</em></a>_,_ <a href="/news/post/community-highlight-5-txn-71c4fd76ffe8" >#5 here</a> and <a href="/news/post/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" >#6 here</a>._._
+#### _Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’ contributions to the ecosystem, what drives them and what they are passionate about! More episodes:_ [#1 here](/news/post/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692)_,_ [#2 here](/news/post/community-highlight-cgi-bin-c102cc106f19)_,_ [#4 here](/news/post/community-highlight-4-montail-e24fd88882a0)_,_ [#5 here](/news/post/community-highlight-5-txn-71c4fd76ffe8) and [#6 here](/news/post/community-highlight-6-waldi-zkit-beats-37af1f6df3b8)._._
 
 **In a jungle of Buidlers, Miners, Hodlers, Solar- and Lunar-punks, this peer stands out through engagement and amicability. With eloquence and a very good meme-game, he types through the chat in a fine balance between technological moonshots and realism. Give it up for Alephium OG Digdug, a central pillar in the Discord channels’ atmosphere and a subtly interrogating voice of the community.**
 
@@ -50,8 +50,8 @@ The most important boxes of a project for me:
 3.  <span id="6a0a">**_What is the value proposition of the project, and is it reasonable?_**  
     If a project has trouble clearly defining what problem(s) it is they are intending to solve with their tech, this does not help build confidence. Furthermore, how reasonable is the solution being proposed? How many rugpulls does the crypto industry have to go through before realizing extraordinary claims require extraordinary proof? Not just some 3 page whitepaper with equations and schematics. Alephium’s proposal makes sense, is realistic, and most importantly, it backs up these claims by having a working mainnet that reflects them.</span>
 
-#### Thank you digdug for your dedication to enhance the signal with your eloquence! **You can follow digdug on **<a href="https://twitter.com/_digdug_" ><strong>Twitter</strong></a>
+#### Thank you digdug for your dedication to enhance the signal with your eloquence! **You can follow digdug on **[Twitter](https://twitter.com/_digdug_)
 
 ---
 
-We’ll be back with another episode of the community highlights in 2023! **You can follow Alephium on** <a href="https://github.com/alephium/" ><strong>Github</strong></a>**,** <a href="https://twitter.com/alephium" ><strong>Twitter</strong></a>**. Join the conversation on [Discord](/discord)**, <a href="https://t.me/alephiumgroup" ><strong>Telegram</strong></a> **or** <a href="https://www.reddit.com/r/alephium" ><strong>Reddit</strong></a>**.**
+We’ll be back with another episode of the community highlights in 2023! **You can follow Alephium on** [Github](https://github.com/alephium/)**,** [Twitter](https://twitter.com/alephium)**. Join the conversation on [Discord](/discord)**, [Telegram](https://t.me/alephiumgroup) **or** [Reddit](https://www.reddit.com/r/alephium)**.**

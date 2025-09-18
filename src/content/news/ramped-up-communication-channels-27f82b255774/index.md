@@ -11,19 +11,19 @@ title: Ramped up communication channels
 
 ### GitHub
 
-<a href="https://github.com/Alephium"  rel="nofollow noopener">https://github.com/Alephium</a>
+[https://github.com/Alephium](https://github.com/Alephium)
 
 Github remains the best way to keep track of what is going on with the Alephium project and what the team is currently working on. The project is entirely opensource and we welcome community contributions.
 
 ### Discord
 
-<a href="https://discord.gg/JErgRBfRSB"  rel="nofollow noopener">https://discord.gg/JErgRBfRSB</a>  
+[https://discord.gg/JErgRBfRSB](https://discord.gg/JErgRBfRSB)  
 For the more technically inclined users. Here we’re hoping to share knowledge and skills. In the various rooms you will be able to query the core-team for anything regarding development for the full-node, the block explorer or the wallet. But we have also prepared a few rooms for general discussion. A great place to make new friends and build up your hands-on experience with Alephium.
 
 ### Telegram
 
-<a href="https://t.me/alephiumgroup"  rel="nofollow noopener noopener">https://t.me/alephiumgroup</a>  
-Our now pretty well frequented Telegram-group will remain as a more generalist discussion hub. A great place to get to know your fellow enthusiast, grow your network and make friends! If you’d rather just take part of announcements on Telegram and casually enter the discussion you can join our Announcement Channel here: <a href="https://t.me/Alephium_Announcement"  rel="nofollow noopener noopener">https://t.me/Alephium_Announcement</a>
+[https://t.me/alephiumgroup](https://t.me/alephiumgroup)  
+Our now pretty well frequented Telegram-group will remain as a more generalist discussion hub. A great place to get to know your fellow enthusiast, grow your network and make friends! If you’d rather just take part of announcements on Telegram and casually enter the discussion you can join our Announcement Channel here: [https://t.me/Alephium_Announcement](https://t.me/Alephium_Announcement)
 
 ### Blog
 
@@ -31,16 +31,16 @@ In order to share the more insightful articles we author, we’ve set-up a blog 
 
 ### Reddit
 
-<a href="https://www.reddit.com/r/Alephium/"  rel="nofollow noopener noopener">https://www.reddit.com/r/Alephium/</a>  
+[https://www.reddit.com/r/Alephium/](https://www.reddit.com/r/Alephium/)  
 Reddit is a huge corner of Internet interaction and we think it’s important to have a sub there.
 
 ### Social Media
 
 To reach out to the masses and cut through the noise, we also have a few accounts on the mainstream networks. For now you will find us on:
 
-- <a href="https://twitter.com/alephium"  rel="nofollow noopener noopener">Twitter</a>
-- <a href="https://www.facebook.com/alephium"  rel="nofollow noopener noopener">Facebook</a>
-- <a href="https://www.linkedin.com/company/alephium/"  rel="nofollow noopener noopener">LinkedIn</a>
+- [Twitter](https://twitter.com/alephium)
+- [Facebook](https://www.facebook.com/alephium)
+- [LinkedIn](https://www.linkedin.com/company/alephium/)
 
 We’ll do our best to assist wherever it may be needed. Other channels might appear throughout our journey… Only our community and time can tell what will fit.
 

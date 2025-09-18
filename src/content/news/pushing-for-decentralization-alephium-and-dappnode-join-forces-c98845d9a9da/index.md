@@ -7,7 +7,7 @@ featuredImage: image_5ebd70f452.jpeg
 title: Pushing for decentralization, Alephium and Dappnode join forces …
 ---
 
-**_Neuchâtel, Switzerland & Zug, Switzerland September 22nd, 2022 _**— [Alephium](/), a highly performant, secure, and energy-efficient sharded blockchain network for DeFi & dApps and <a href="https://dappnode.io/" >Dappnode</a> an open source, censorship-resistant platform for deploying and hosting DApps, P2P clients and blockchain nodes, announce today their collaboration to advance decentralization, security, and accessibility of critical infrastructure.
+**_Neuchâtel, Switzerland & Zug, Switzerland September 22nd, 2022 _**— [Alephium](/), a highly performant, secure, and energy-efficient sharded blockchain network for DeFi & dApps and [Dappnode](https://dappnode.io/) an open source, censorship-resistant platform for deploying and hosting DApps, P2P clients and blockchain nodes, announce today their collaboration to advance decentralization, security, and accessibility of critical infrastructure.
 
 As of today, Alephium full-node, explorer, and wallet backend packages are available on Dappnode, allowing anyone to run and build on their own Alephium infrastructure in a few clicks.
 
@@ -29,4 +29,4 @@ _“We are so happy to participate in Alephium’s decentralization process. Tha
 
 #### **About Dappnode**
 
-<a href="https://dappnode.io" >Dappnode</a> is a free and open source software that allows users all over the world to participate in creating a decentralized infrastructure layer to power web3 and be rewarded for it.
+[Dappnode](https://dappnode.io) is a free and open source software that allows users all over the world to participate in creating a decentralized infrastructure layer to power web3 and be rewarded for it.

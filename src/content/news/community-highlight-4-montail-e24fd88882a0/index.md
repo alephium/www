@@ -7,7 +7,7 @@ featuredImage: image_da60a03774.jpg
 title: 'Community Highlight #4, MontaiL'
 ---
 
-#### Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’ contributions to the ecosystem, what drives them and what they are passionate about! More episodes: <a href="/news/post/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" ><em>#1 here</em></a>_,_ <a href="/news/post/community-highlight-cgi-bin-c102cc106f19" ><em>#2 here</em></a>_,_ <a href="/news/post/community-highlight-3-digdug-48a7ec868504" ><em>#3 here</em></a>_,_ <a href="/news/post/community-highlight-5-txn-71c4fd76ffe8" >#5 here</a> and <a href="/news/post/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" >#6 here</a>.
+#### Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’ contributions to the ecosystem, what drives them and what they are passionate about! More episodes: [#1 here](/news/post/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692)_,_ [#2 here](/news/post/community-highlight-cgi-bin-c102cc106f19)_,_ [#3 here](/news/post/community-highlight-3-digdug-48a7ec868504)_,_ [#5 here](/news/post/community-highlight-5-txn-71c4fd76ffe8) and [#6 here](/news/post/community-highlight-6-waldi-zkit-beats-37af1f6df3b8).
 
 **This young blood is a creative and engaged Alephium OG. Joining the [Discord](/discord) **early on, he quickly made himself a comfortable spot in the community with a friendly can-do attitude, a steady supply of home-cooked memes and by helping many peers getting familiar with Alephium. Please give a warm applause for MontaiL!**
 
@@ -33,11 +33,11 @@ I am actually surprised by how unpopular and under the radar this project has re
 
 #### What excites you about Alephium?
 
-Oh man, while I may not be fully aware of what’s coming, I do feel anxiety from the news revealed so far. <a href="/news/post/announcing-the-leman-network-upgrade-c01a81e65f0e" >Leman upgrade,</a> <a href="https://github.com/alephium/wormhole-fork" >Bridge,</a> CEX, <a href="https://github.com/alephium/alephium-web3" >DEXes</a> it’s the buzzwords most crypto lovers love to read. Including me.
+Oh man, while I may not be fully aware of what’s coming, I do feel anxiety from the news revealed so far. [Leman upgrade,](/news/post/announcing-the-leman-network-upgrade-c01a81e65f0e) [Bridge,](https://github.com/alephium/wormhole-fork) CEX, [DEXes](https://github.com/alephium/alephium-web3) it’s the buzzwords most crypto lovers love to read. Including me.
 
 But what I am concerned about is if the project suddenly gained a ton of traction would it fizzle out just as quickly? We have seen this happen times over again with many different projects. Which also worries me. I am the kind of guy to try to look on both the good side and bad side of things. So we will see where that goes.
 
-I do have high hopes for the Alephium ecosystem. With the sleek designs I’ve seen so far I have been very impressed. Most projects prefer to make simple but functional UI. But on Alephium it is just mind boggling! Because it has both a very <a href="/news/post/the-front-end-leman-upgrade-948a98a3e2d" >endearing and eye-pleasing UI</a> and the Functionality in one package. I think in the future this functionality and design will attract more people due to how easy it makes it to work with it. And I hope the ecosystem follows the same direction.
+I do have high hopes for the Alephium ecosystem. With the sleek designs I’ve seen so far I have been very impressed. Most projects prefer to make simple but functional UI. But on Alephium it is just mind boggling! Because it has both a very [endearing and eye-pleasing UI](/news/post/the-front-end-leman-upgrade-948a98a3e2d) and the Functionality in one package. I think in the future this functionality and design will attract more people due to how easy it makes it to work with it. And I hope the ecosystem follows the same direction.
 
 #### How do you contribute to the Alephium ecosystem?
 
@@ -45,7 +45,7 @@ I am usually around cheerleading, and doing a bit of newbie trolling. I find it 
 
 I will be honest: I am not a blockchain developer. But at least i know about code to read some C# scripts and fix a thing or two in Unity Engine. However, I do try to contribute with useful advice and words. Like helping miners figure out settings and what miners to use. What overclocks they should make, And where they can buy some Alephium from.
 
-I was around when the <a href="/news/post/diffbomb-day-postmortem-334b3fdccc5" >DiffBomb</a> happened and tried my best to keep the atmosphere positive by joking or telling people to quit spreading FUD (Fear, Uncertainty, and Doubt) and that everything was alright. Even though not all of them listened to me since this is the Crypto space; once something goes kaput everybody freaks out. But I believe I did my service as the one insignificant guy trying his best to prevent panic and doing his best to help the project in dire need. Such as keeping my miner running even when my reward was close to zero.
+I was around when the [DiffBomb](/news/post/diffbomb-day-postmortem-334b3fdccc5) happened and tried my best to keep the atmosphere positive by joking or telling people to quit spreading FUD (Fear, Uncertainty, and Doubt) and that everything was alright. Even though not all of them listened to me since this is the Crypto space; once something goes kaput everybody freaks out. But I believe I did my service as the one insignificant guy trying his best to prevent panic and doing his best to help the project in dire need. Such as keeping my miner running even when my reward was close to zero.
 
 I have also done a creative thing or two, like 3D Renders and animations. Other than that, I stick around and poke my nose here and there. I do have a different humor than most community members, which could be because of our age differences coming from different generations etc. Humor is subjective.
 
@@ -61,7 +61,7 @@ Good Luck team and I will be here for a while! I hope you are ready for more of 
 
 This is complicated. First we need to understand some things: people want convenience, people don’t like spending money and they don’t like trying new things. We have seen it happen over and over again with the Play-to-earn Metaverse projects: they get a boom, they gain a lot of players, the players run the project dry and then they leave. But while the Play-to-earn model may not work anymore, I believe there is a way to connect both blockchain tech and the tools for building digital media.
 
-If we take for example Unity Engine which is what I use along with the VRChat SDK, players are supposed to make their own Games inside Unity using the Game’s SDK. Then they need to upload it so they can play it with their friends in the game itself. Well, while that is all good, there is an untapped market for actual ASSET/PREFAB items which could be made easier to purchase. Let’s take the Asset Stores such as <a href="https://gumroad.com/" >Gumroad</a> or <a href="https://www.vrcarena.com/" >VRCArena</a>, which are both websites where players of VRChat can buy assets for their Avatars or their worlds including of course the <a href="https://assetstore.unity.com/" >Unity Asset Store</a>. The problem with most of these webstores is that they charge the creator a large fee in order to sell their prefabs there.
+If we take for example Unity Engine which is what I use along with the VRChat SDK, players are supposed to make their own Games inside Unity using the Game’s SDK. Then they need to upload it so they can play it with their friends in the game itself. Well, while that is all good, there is an untapped market for actual ASSET/PREFAB items which could be made easier to purchase. Let’s take the Asset Stores such as [Gumroad](https://gumroad.com/) or [VRCArena](https://www.vrcarena.com/), which are both websites where players of VRChat can buy assets for their Avatars or their worlds including of course the [Unity Asset Store](https://assetstore.unity.com/). The problem with most of these webstores is that they charge the creator a large fee in order to sell their prefabs there.
 
 ![](image_4967e654f6.jpg)
 
@@ -73,6 +73,6 @@ And it’s important to remember this quote. “PEOPLE DO NOT LIKE SPENDING MONE
 
 #### This concludes \#4 of the community highlights. Thank you MontaiL for staying true to yourself and bringing your quirky humor to the community. The future feels safer with people like yourself taking part in building it!
 
-#### You can follow MontaiL on <a href="https://twitter.com/therealmontail" >Twitter</a>.
+#### You can follow MontaiL on [Twitter](https://twitter.com/therealmontail).
 
-**We’ll be back with another episode of the community highlights in February 2023! Meanwhile you can follow Alephium on** <a href="https://github.com/alephium/" ><strong>Github</strong></a>**,** <a href="https://twitter.com/alephium" ><strong>Twitter</strong></a>**. Join the conversation on [Discord](/discord)**, <a href="https://t.me/alephiumgroup" ><strong>Telegram</strong></a> **or** <a href="https://www.reddit.com/r/alephium" ><strong>Reddit</strong></a>**.**
+**We’ll be back with another episode of the community highlights in February 2023! Meanwhile you can follow Alephium on** [Github](https://github.com/alephium/)**,** [Twitter](https://twitter.com/alephium)**. Join the conversation on [Discord](/discord)**, [Telegram](https://t.me/alephiumgroup) **or** [Reddit](https://www.reddit.com/r/alephium)**.**

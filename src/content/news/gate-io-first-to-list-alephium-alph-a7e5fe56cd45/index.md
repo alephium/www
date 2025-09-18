@@ -7,7 +7,7 @@ featuredImage: image_f759de7098.jpg
 title: Gate.io first to list Alephium (ALPH)
 ---
 
-**Lausanne, Switzerland, Jan 12, 2022** — Alephium, an innovative Layer 1 blockchain announces today its <a href="https://www.gate.io/fr/trade/ALPH_USDT" >first official listing</a> on the top 10 exchange Gate.io.
+**Lausanne, Switzerland, Jan 12, 2022** — Alephium, an innovative Layer 1 blockchain announces today its [first official listing](https://www.gate.io/fr/trade/ALPH_USDT) on the top 10 exchange Gate.io.
 
 ### **Gate.io First to List ALPH Token**
 
@@ -37,7 +37,7 @@ Alephiumis live and fully functional since November 8th, 2021. Its mainnet, arou
 
 ---
 
-_To learn more about [Alephium](/), get in touch on_ <a href="https://discord.gg/JErgRBfRSB" ><em>Discord</em></a> _or_ <a href="https://t.me/alephiumgroup" ><em>Telegram</em></a>_, contribute on_ <a href="https://github.com/alephium" ><em>GitHub</em></a>_, follow us on_ <a href="https://twitter.com/alephium" ><em>Twitter</em></a> _or read us on_ <a href="https://medium.com/@alephium" ><em>Medium</em></a>_ !_ <a href="/news/post/welcome-to-alephium-alph-48dfb72aa458" >Or discover Alephium in 5’!</a>
+_To learn more about [Alephium](/), get in touch on_ [Discord](https://discord.gg/JErgRBfRSB) _or_ [Telegram](https://t.me/alephiumgroup)_, contribute on_ [GitHub](https://github.com/alephium)_, follow us on_ [Twitter](https://twitter.com/alephium) _or read us on_ [Medium](https://medium.com/@alephium)_ !_ [Or discover Alephium in 5’!](/news/post/welcome-to-alephium-alph-48dfb72aa458)
 
 ---
 

@@ -7,13 +7,13 @@ featuredImage: image_d6e64d41b3.jpg
 title: 'Miners’ Highlight #3: Bokiko'
 ---
 
-_The Alephium blockchain, like many decentralized networks, relies heavily on the contributions of miners to maintain its integrity and functionality. Recognizing the significance of these contributors, we are launching a series of articles titled “Miners’ Highlight.” By focusing on their contributions, challenges, and experiences, we aim to better understand the mining process and its importance. You can find_ <a href="/news/post/miners-highlight-1-cedric-crispin-c4ed456f6d10" ><em>#1 here</em></a> _and_ <a href="/news/post/miners-highlight-1-jake-aka-hiram-abiff-a8833307f316" ><em>#2 here</em></a>_._
+_The Alephium blockchain, like many decentralized networks, relies heavily on the contributions of miners to maintain its integrity and functionality. Recognizing the significance of these contributors, we are launching a series of articles titled “Miners’ Highlight.” By focusing on their contributions, challenges, and experiences, we aim to better understand the mining process and its importance. You can find_ [#1 here](/news/post/miners-highlight-1-cedric-crispin-c4ed456f6d10) _and_ [#2 here](/news/post/miners-highlight-1-jake-aka-hiram-abiff-a8833307f316)_._
 
 _Bokiko, a crypto enthusiast, shares his passion for mining and Alephium._
 
 #### **What can we call you, and where should we picture you?**
 
-You can call me <a href="https://twitter.com/Bokiko_io" >Bokiko</a>. Picture me in my home lab, surrounded by the hum of servers and the glow of monitors, constantly exploring the dynamic world of crypto mining.
+You can call me [Bokiko](https://twitter.com/Bokiko_io). Picture me in my home lab, surrounded by the hum of servers and the glow of monitors, constantly exploring the dynamic world of crypto mining.
 
 #### **Tell us a bit about yourself, your passion for mining, and your background story.**
 
@@ -29,13 +29,13 @@ I started mining ALPH quite early, drawn to its technical specs, particularly it
 
 <figure id="ce21" class="graf graf--figure graf--iframe graf-after--p">
 <blockquote>
-<a href="https://twitter.com/Bokiko_io/status/1489685936665411586"></a>
+[](https://twitter.com/Bokiko_io/status/1489685936665411586)
 </blockquote>
 </figure>
 
 #### **You run the cloudiko.io mining pool. What motivated you to add Alephium to it?**
 
-My partner <a href="https://twitter.com/CloudBasedMe" >@cloudbasedme</a> and I founded <a href="http://cloudiko.io" >cloudiko.io</a> out of our shared enthusiasm for expanding our crypto journey. As miners ourselves, we’ve always been keen on supporting networks and had our share of observations and issues with various pools we mined in. This led us to the idea of creating a pool that we personally mine in. The concept was simple: anyone who joins us is essentially joining our hashrate, ensuring they receive the same level of service we provide to our own rigs. In a gesture of goodwill, we even made the pool fee-free for the first six months, starting June 2023.
+My partner [@cloudbasedme](https://twitter.com/CloudBasedMe) and I founded [cloudiko.io](http://cloudiko.io) out of our shared enthusiasm for expanding our crypto journey. As miners ourselves, we’ve always been keen on supporting networks and had our share of observations and issues with various pools we mined in. This led us to the idea of creating a pool that we personally mine in. The concept was simple: anyone who joins us is essentially joining our hashrate, ensuring they receive the same level of service we provide to our own rigs. In a gesture of goodwill, we even made the pool fee-free for the first six months, starting June 2023.
 
 Our focus on Alephium, which we mine personally, was a key reason for adding it to our pool. It was about contributing to the decentralization of hashrate and offering miners diverse options. We handle everything from running the pool to providing support. My partner, in particular, deserves special credit as the technical brain of this project.
 
@@ -77,4 +77,4 @@ This positive attitude tends to be reciprocated, creating a supportive and colla
 
 ---
 
-That is the end of this interview! If you are interested or have extra questions, you are welcome to reach out on our [Discord](/discord), or in the <a href="https://t.me/alephiumgroup" >Alephium Telegram channel</a>. Don’t forget to follow <a href="https://twitter.com/alephium" >@alephium on Twitter</a> to stay up-to-date.
+That is the end of this interview! If you are interested or have extra questions, you are welcome to reach out on our [Discord](/discord), or in the [Alephium Telegram channel](https://t.me/alephiumgroup). Don’t forget to follow [@alephium on Twitter](https://twitter.com/alephium) to stay up-to-date.

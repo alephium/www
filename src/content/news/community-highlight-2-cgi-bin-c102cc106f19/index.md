@@ -7,7 +7,7 @@ featuredImage: image_30dfdcb286.jpg
 title: 'Community Highlight #2, cgi-bin'
 ---
 
-#### This is episode \#2 in our series of highlights where once in a while we put the spotlight on one active member of our community. This is an opportunity for us to showcase their contributions to our ecosystem, what drives them and what they are passionate about! You can find episode <a href="/news/post/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" >#1 here</a>, <a href="/news/post/community-highlight-3-digdug-48a7ec868504" >#3here</a>, <a href="/news/post/community-highlight-4-montail-e24fd88882a0" >#4 here</a>, <a href="/news/post/community-highlight-5-txn-71c4fd76ffe8" >#5 here</a> and <a href="/news/post/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" >#6 here</a>..
+#### This is episode \#2 in our series of highlights where once in a while we put the spotlight on one active member of our community. This is an opportunity for us to showcase their contributions to our ecosystem, what drives them and what they are passionate about! You can find episode [#1 here](/news/post/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692), [#3here](/news/post/community-highlight-3-digdug-48a7ec868504), [#4 here](/news/post/community-highlight-4-montail-e24fd88882a0), [#5 here](/news/post/community-highlight-5-txn-71c4fd76ffe8) and [#6 here](/news/post/community-highlight-6-waldi-zkit-beats-37af1f6df3b8)..
 
 ---
 
@@ -15,7 +15,7 @@ Today we thank CGI-BIN, a recognizable voice on our Telegram & Discord channels,
 
 #### What can we call you and where should we picture you?
 
-Right now my nickname is <a href="https://twitter.com/cg1_bin" >cgi-bin</a>, but I love changing my handle so maybe in a few years it will be completely different. You could picture me working on a computer surrounded by Swiss mountains.
+Right now my nickname is [cgi-bin](https://twitter.com/cg1_bin), but I love changing my handle so maybe in a few years it will be completely different. You could picture me working on a computer surrounded by Swiss mountains.
 
 #### Tell us about yourself/your persona.
 
@@ -31,11 +31,11 @@ The innovations Alephium brings with blockflow and sharding, it is disrupting th
 
 #### How do you contribute to the Alephium ecosystem?
 
-I started by developing a small bot in Python to get some stats for the miners. Then I developed a Telegram and Twitter bot to share insights from the chain and send alerts when a certain amount is transferred or bought. You can find the code of these projects <a href="https://github.com/sven-hash/whaleswatcher" >here</a> and you can see it in action on telegram <a href="https://t.me/alephiumin" >here</a> and <a href="https://t.me/alphwhalesalert" >here</a>.
+I started by developing a small bot in Python to get some stats for the miners. Then I developed a Telegram and Twitter bot to share insights from the chain and send alerts when a certain amount is transferred or bought. You can find the code of these projects [here](https://github.com/sven-hash/whaleswatcher) and you can see it in action on telegram [here](https://t.me/alephiumin) and [here](https://t.me/alphwhalesalert).
 
-I built another application that publishes some stats. Like the list of active addresses ordered by their amount or the initial balance of the genesis addresses. The code is <a href="https://github.com/sven-hash/alephium-stats" >here</a>. It uses the tool that powers Wilhelm Källberg’s <a href="https://alph-top.web.app" >Alph Top</a>.
+I built another application that publishes some stats. Like the list of active addresses ordered by their amount or the initial balance of the genesis addresses. The code is [here](https://github.com/sven-hash/alephium-stats). It uses the tool that powers Wilhelm Källberg’s [Alph Top](https://alph-top.web.app).
 
-There’s a <a href="https://node-alephium.ono.re/docs/" >public fullnode</a> that I’m running <a href="https://node-alephium.ono.re" ></a> available for people who want to learn and contribute without having to start a fullnode and a <a href="https://alephium-backend.ono.re/docs/" >public backend explorer</a>. The idea is to allow them to become independent and to help to decentralize the network.
+There’s a [public fullnode](https://node-alephium.ono.re/docs/) that I’m running [](https://node-alephium.ono.re) available for people who want to learn and contribute without having to start a fullnode and a [public backend explorer](https://alephium-backend.ono.re/docs/). The idea is to allow them to become independent and to help to decentralize the network.
 
 Last but not least I’m a community moderator for Alephium.
 
@@ -53,6 +53,6 @@ For me, the open source and libre ideologies are proof that together humans can 
 
 ---
 
-**You can follow cgi-bin on** <a href="https://twitter.com/cg1_bin" ><strong>Twitter</strong></a> **and** <a href="https://github.com/sven-hash/" ><strong>GitHub</strong></a> **and for everyone keen on data privacy, have a look at their other project** <a href="https://nym.notrustverify.ch/" ><strong>NoTrustVerify.ch</strong></a>
+**You can follow cgi-bin on** [Twitter](https://twitter.com/cg1_bin) **and** [GitHub](https://github.com/sven-hash/) **and for everyone keen on data privacy, have a look at their other project** [NoTrustVerify.ch](https://nym.notrustverify.ch/)
 
-**Find episode** <a href="/news/post/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" ><strong>#1 here,</strong></a> <a href="/news/post/community-highlight-3-digdug-48a7ec868504" ><strong>#3 here</strong></a> **and** <a href="/news/post/community-highlight-4-montail-e24fd88882a0" ><strong>#4 here</strong></a>.
+**Find episode** [#1 here,](/news/post/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692) [#3 here](/news/post/community-highlight-3-digdug-48a7ec868504) **and** [#4 here](/news/post/community-highlight-4-montail-e24fd88882a0).

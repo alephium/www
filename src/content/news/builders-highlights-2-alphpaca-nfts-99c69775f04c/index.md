@@ -11,7 +11,7 @@ _Alephium’s ecosystem thrives with developers building amazing stuff on top of
 
 _Disclaimer: While Alephium is happy to support a growing developer community, it would like to clarify that it does not endorse, audit, or review any software presented in this series and encourages all users to make informed decisions and take personal responsibility for their actions._
 
-The third builder in the series is <a href="https://twitter.com/BenLarkey" >Benjamin</a>, the developer behind the <a href="https://testnet.nft.alephium.org/collection-details?collectionId=e0385e13db8a162d6d419b4b4665d802fe547176143dbd0c7226db02b681fb00" >Alphpaca NFT collection</a>. He’s a very regular, insightful & knowledgeable presence in our discord. You can check the project’s website <a href="https://www.alphpaca.dev/" >here</a>, its GitHub <a href="https://github.com/larkben/Ergollamas-Alphpacas" >here</a> or contact the project Discord <a href="https://discord.gg/9eBCchJvn7" >here</a>.
+The third builder in the series is [Benjamin](https://twitter.com/BenLarkey), the developer behind the [Alphpaca NFT collection](https://testnet.nft.alephium.org/collection-details?collectionId=e0385e13db8a162d6d419b4b4665d802fe547176143dbd0c7226db02b681fb00). He’s a very regular, insightful & knowledgeable presence in our discord. You can check the project’s website [here](https://www.alphpaca.dev/), its GitHub [here](https://github.com/larkben/Ergollamas-Alphpacas) or contact the project Discord [here](https://discord.gg/9eBCchJvn7).
 
 #### Tell us a little bit about your project. What is it, what does it, and how does it interact with the Alephium blockchain?
 
@@ -71,8 +71,8 @@ Based on my little experience developing, I’d say my developer career official
 
 If you want to develop on Alephium, just go for it; eventually, you’ll finally push that first smart contract or test token contract to mainnet, and a whole world of new things opens up at your fingertips. The community is active, thriving, and motivational. I’ll stop there: it’s better for you to see it yourself.
 
-Thanks, Benjamin, for your answers! Alephium is thrilled to have such talent builders in the community! You can find the Alphaca NFT collection on testnet on <a href="https://testnet.nft.alephium.org/collection-details?collectionId=e0385e13db8a162d6d419b4b4665d802fe547176143dbd0c7226db02b681fb00" >Alephium’s NFT marketplace</a>!
+Thanks, Benjamin, for your answers! Alephium is thrilled to have such talent builders in the community! You can find the Alphaca NFT collection on testnet on [Alephium’s NFT marketplace](https://testnet.nft.alephium.org/collection-details?collectionId=e0385e13db8a162d6d419b4b4665d802fe547176143dbd0c7226db02b681fb00)!
 
-Have you built something or have a nice idea and want to request a grant or reward? You can access the <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" >Alephium Community Grants &amp; Reward Program page</a> for more info!
+Have you built something or have a nice idea and want to request a grant or reward? You can access the [Alephium Community Grants &amp; Reward Program page](https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md) for more info!
 
-If you need help or have extra questions, you are welcome to reach out in the \# 🎨dev-dapp channel on [Discord](/discord), or in the Alephium <a href="https://t.me/alephiumgroup" >Telegram</a> channel. Don’t forget to follow <a href="https://twitter.com/alephium" >@alephium on Twitter</a> to stay up-to-date.
+If you need help or have extra questions, you are welcome to reach out in the \# 🎨dev-dapp channel on [Discord](/discord), or in the Alephium [Telegram](https://t.me/alephiumgroup) channel. Don’t forget to follow [@alephium on Twitter](https://twitter.com/alephium) to stay up-to-date.

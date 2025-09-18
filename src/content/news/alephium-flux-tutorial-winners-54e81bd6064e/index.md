@@ -7,7 +7,7 @@ featuredImage: image_c88240f459.jpg
 title: ALEPHIUM/FLUX Tutorial Winners
 ---
 
-#### On December 1st in 2022, the community was encouraged to <a href="/news/post/alephium-flux-tutorial-contest-81054caf926" >enter a contest</a> to produce the best tutorial about how to run an <a href="https://github.com/alephium/alephium/" >Alephium full node</a> on <a href="https://runonflux.io/" >FLUX</a>. The results came in and we are pleased with them.
+#### On December 1st in 2022, the community was encouraged to [enter a contest](/news/post/alephium-flux-tutorial-contest-81054caf926) to produce the best tutorial about how to run an [Alephium full node](https://github.com/alephium/alephium/) on [FLUX](https://runonflux.io/). The results came in and we are pleased with them.
 
 It might seem like a trivial exercise but decentralization is not only about tools: in order to happen the skills required need to be evenly distributed. By participating the contestants have helped their peers to run their own full-node: everybody wins. A big thank you to everyone who participated.
 
@@ -17,32 +17,32 @@ Actually… we got several. Picking the champion was no easy task, we loved your
 
 ### 1st place (video)
 
-#### A <a href="https://youtu.be/xelpHE1Z0hA" >video</a> by <a href="https://www.youtube.com/@Crypto-Animation" >Crypto Animation</a>
+#### A [video](https://youtu.be/xelpHE1Z0hA) by [Crypto Animation](https://www.youtube.com/@Crypto-Animation)
 
 `video: https://www.youtube.com/watch?v=xelpHE1Z0hA`
 
-### 1st place (article) A <a href="https://medium.com/@Oheka/2134def9b7d0">blog post</a> by <a href="https://medium.com/@Oheka">Oheka</a>
+### 1st place (article) A [blog post](https://medium.com/@Oheka/2134def9b7d0) by [Oheka](https://medium.com/@Oheka)
 
 <figure id="05a2" class="graf graf--figure graf--iframe graf-after--h3">
 <blockquote>
-<a href="https://twitter.com/Oheka32/status/1603326387158392832"></a>
+[](https://twitter.com/Oheka32/status/1603326387158392832)
 </blockquote>
 </figure>
 
-### 1st place (Twitter thread) <a href="https://emojipedia.org/thread/" rel="noreferrer noopener noopener">🧵</a> by <a href="https://twitter.com/CryptoBlock177">@CryptoBlock177</a>
+### 1st place (Twitter thread) [🧵](https://emojipedia.org/thread/) by [@CryptoBlock177](https://twitter.com/CryptoBlock177)
 
 <figure id="bfb6" class="graf graf--figure graf--iframe graf-after--h3">
 <blockquote>
-<a href="https://twitter.com/CryptoBlock177/status/1602903695242452992"></a>
+[](https://twitter.com/CryptoBlock177/status/1602903695242452992)
 </blockquote>
 </figure>
 
 ### 2nd place
 
-- A <a href="https://www.youtube.com/watch?v=nj4Ypgj0Xow" >video</a> by <a href="https://www.youtube.com/@leftychris1058" >LeftyChris</a>
-- A <a href="https://www.youtube.com/watch?v=ALrV-axWowY" >video</a> by <a href="https://www.youtube.com/@galosf" >Galo Salame</a>
-- A <a href="https://steemit.com/alephium/@cryptoraspberry/host-your-own-alephium-node-on-decentralized-web-3-0-flux-tutorial" >blog post</a> by <a href="https://steemit.com/@cryptoraspberry" >Cryptoraspberry</a>
-- A <a href="https://twitter.com/weineil_/status/1612568785948495903" >Twitter thread</a> by <a href="https://twitter.com/weineil_" >@weineil\_</a>
+- A [video](https://www.youtube.com/watch?v=nj4Ypgj0Xow) by [LeftyChris](https://www.youtube.com/@leftychris1058)
+- A [video](https://www.youtube.com/watch?v=ALrV-axWowY) by [Galo Salame](https://www.youtube.com/@galosf)
+- A [blog post](https://steemit.com/alephium/@cryptoraspberry/host-your-own-alephium-node-on-decentralized-web-3-0-flux-tutorial) by [Cryptoraspberry](https://steemit.com/@cryptoraspberry)
+- A [Twitter thread](https://twitter.com/weineil_/status/1612568785948495903) by [@weineil\_](https://twitter.com/weineil_)
 
 Other participants will receive a small participation prize as a token of appreciation.
 
@@ -53,7 +53,7 @@ Other participants will receive a small participation prize as a token of apprec
 
 ### The Process
 
-A jury of team-members from Flux and Alephium collaborated to pick the winner. The judges observed technical depth, accuracy, visual form. They also made sure the contributions adhere to <a href="/news/post/alephium-flux-tutorial-contest-81054caf926#6cf2" >the rules and submissions guidelines</a> and applications were bound to the <a href="https://github.com/alephium/community/blob/master/RewardProgramRules.md#eligibility-criteria" >eligibility criterias</a>. **The winners will soon be contacted individually and asked for the necessary information to receive their prizes.**
+A jury of team-members from Flux and Alephium collaborated to pick the winner. The judges observed technical depth, accuracy, visual form. They also made sure the contributions adhere to [the rules and submissions guidelines](/news/post/alephium-flux-tutorial-contest-81054caf926#6cf2) and applications were bound to the [eligibility criterias](https://github.com/alephium/community/blob/master/RewardProgramRules.md#eligibility-criteria). **The winners will soon be contacted individually and asked for the necessary information to receive their prizes.**
 
 ### Thank You
 

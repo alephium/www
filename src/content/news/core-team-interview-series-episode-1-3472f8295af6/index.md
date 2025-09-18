@@ -9,7 +9,7 @@ title: Core team interview series. Episode 1
 
 #### Presenting the humans building the Front-end
 
-**This article was updated:** <a href="/news/post/alephium-contributors-f35eeaeaf0a0"  rel="nofollow">https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0</a>
+**This article was updated:** [https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0](/news/post/alephium-contributors-f35eeaeaf0a0)
 
 For its team, Alephium is privileging agility and efficiency over hyper-growth. We do not stay at a human size because we think it is more efficient, but because Alephium strives to be a decentralised, community driven project. This means the project in itself is much larger than a team can ever be. Communication, trust, openness and transparency is paramount in such a set-up.
 
@@ -40,7 +40,7 @@ Yes! A bit of everything really. Running, biking, geeking, designing and drawing
 
 #### **Got links?**
 
-<a href="https://www.linkedin.com/in/mika%C3%ABl-vaivre-05526337" >https://www.linkedin.com/in/mika%C3%ABl-vaivre-05526337</a>
+[https://www.linkedin.com/in/mika%C3%ABl-vaivre-05526337](https://www.linkedin.com/in/mika%C3%ABl-vaivre-05526337)
 
 #### **How/when did you come across crypto?**
 
@@ -83,11 +83,11 @@ I love messing around with knobs. Particularly, knobs that control some sort of 
 
 #### **Got links?**
 
-<a href="https://www.linkedin.com/in/iliastrichopoulos/" >https://www.linkedin.com/in/iliastrichopoulos/</a>   
-<a href="https://iliascreates.com" >https://iliascreates.com</a>  
-<a href="https://twitter.com/_nop33" >https://twitter.com/\_nop33</a>  
-<a href="https://github.com/nop33" >https://github.com/nop33</a>  
-<a href="https://soundcloud.com/imfetamin" >https://soundcloud.com/imfetamin</a>
+[https://www.linkedin.com/in/iliastrichopoulos/](https://www.linkedin.com/in/iliastrichopoulos/)   
+[https://iliascreates.com](https://iliascreates.com)  
+[https://twitter.com/\_nop33](https://twitter.com/_nop33)  
+[https://github.com/nop33](https://github.com/nop33)  
+[https://soundcloud.com/imfetamin](https://soundcloud.com/imfetamin)
 
 #### **How/when did you come across crypto?**
 
@@ -148,4 +148,4 @@ These are my utmost important points when it comes to Alephium: developer safety
 
 ---
 
-#### This concludes the first chapter of three in this series. In the next publication we’ll get acquainted with the people responsible for <a href="/news/post/core-team-interview-series-episode-2-bec6e6908d2f" >operations, marketing and communication,</a> followed by <a href="/news/post/core-team-interview-series-episode-3-64b6dacc1459" >the folks building the Node.</a>
+#### This concludes the first chapter of three in this series. In the next publication we’ll get acquainted with the people responsible for [operations, marketing and communication,](/news/post/core-team-interview-series-episode-2-bec6e6908d2f) followed by [the folks building the Node.](/news/post/core-team-interview-series-episode-3-64b6dacc1459)

@@ -7,9 +7,9 @@ featuredImage: image_da6bf8d8d8.jpg
 title: 'Community Highlight #16, Mikael'
 ---
 
-_Regularly, we put the spotlight on an active member of the Alephium community. This is an opportunity to showcase their contributions to the ecosystem, what drives them and what they are passionate about! More episodes:_ <a href="/news/post/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692" ><em>#1</em></a>_,_ <a href="/news/post/community-highlight-cgi-bin-c102cc106f19" ><em>#2</em></a>_,_ <a href="/news/post/community-highlight-3-digdug-48a7ec868504" ><em>#3</em></a>_,_ <a href="/news/post/community-highlight-4-montail-e24fd88882a0" ><em>#4</em></a>_,_ <a href="/news/post/community-highlight-5-txn-71c4fd76ffe8" ><em>#5</em></a>_,_ <a href="/news/post/community-highlight-6-waldi-zkit-beats-37af1f6df3b8" ><em>#6</em></a>_,_ <a href="/news/post/community-highlight-7-oheka-13d8b4ae025e" ><em>#7</em></a>_,_ <a href="/news/post/community-highlight-8-jorge-438510785041" ><em>#8</em></a>_,_ <a href="/news/post/community-highlight-9-dzhemsh-a0a4a98a8489" ><em>#9</em></a>_,_ <a href="/news/post/community-highlight-10-lx-aka-lix-fde724cf8d81" ><em>#10</em></a>_,_ <a href="/news/post/community-highlight-11-dr-jekyll-165ab9a51880" ><em>#11</em></a>, <a href="/news/post/community-highlight-12-sam-a-k-a-energy45-610005a9219b" ><em>#12</em></a>, <a href="/news/post/community-highlight-13-ryan-5dbbeaf859e4" >#13</a>, \#<a href="/news/post/community-highlight-14-animalmanjan-da8fd051bc38" >14</a>, <a href="/news/post/community-highlight-15-yulius-aka-chris45-036ae41a8037" ><em>and</em> #15</a>_._
+_Regularly, we put the spotlight on an active member of the Alephium community. This is an opportunity to showcase their contributions to the ecosystem, what drives them and what they are passionate about! More episodes:_ [#1](/news/post/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692)_,_ [#2](/news/post/community-highlight-cgi-bin-c102cc106f19)_,_ [#3](/news/post/community-highlight-3-digdug-48a7ec868504)_,_ [#4](/news/post/community-highlight-4-montail-e24fd88882a0)_,_ [#5](/news/post/community-highlight-5-txn-71c4fd76ffe8)_,_ [#6](/news/post/community-highlight-6-waldi-zkit-beats-37af1f6df3b8)_,_ [#7](/news/post/community-highlight-7-oheka-13d8b4ae025e)_,_ [#8](/news/post/community-highlight-8-jorge-438510785041)_,_ [#9](/news/post/community-highlight-9-dzhemsh-a0a4a98a8489)_,_ [#10](/news/post/community-highlight-10-lx-aka-lix-fde724cf8d81)_,_ [#11](/news/post/community-highlight-11-dr-jekyll-165ab9a51880), [#12](/news/post/community-highlight-12-sam-a-k-a-energy45-610005a9219b), [#13](/news/post/community-highlight-13-ryan-5dbbeaf859e4), \#[14](/news/post/community-highlight-14-animalmanjan-da8fd051bc38), [and #15](/news/post/community-highlight-15-yulius-aka-chris45-036ae41a8037)_._
 
-<a href="http://twitter.com/precursor_orb" ><em>Mikael</em></a> _is a dev and a nature lover. And it turns out he likes Alephium a lot_ 😉*. Check the interview to know more about him!*
+[Mikael](http://twitter.com/precursor_orb) _is a dev and a nature lover. And it turns out he likes Alephium a lot_ 😉*. Check the interview to know more about him!*
 
 #### **What can we call you, and where should we picture you?**
 
@@ -33,9 +33,9 @@ Another thing I love seeing is the hash rate increasing. While it won’t happen
 
 #### **Which projects and dapps are you excited about?**
 
-<a href="http://ayin.app" >Ayin</a> is one of the major projects I’ve always followed, and I am excited to see what kind of new features they will be rolling out in the future. AlphPad looks to be another promising one for kickstarting new projects on Alephium.
+[Ayin](http://ayin.app) is one of the major projects I’ve always followed, and I am excited to see what kind of new features they will be rolling out in the future. AlphPad looks to be another promising one for kickstarting new projects on Alephium.
 
-And how could I not mention the only <a href="https://ngu.money/" >Number Go Up</a>, which has just been slaying it recently!
+And how could I not mention the only [Number Go Up](https://ngu.money/), which has just been slaying it recently!
 
 #### **Where do you see Alephium as a project being in the next two years?**
 
@@ -49,4 +49,4 @@ Just wanted to give huge props to the core team for being so humble and just bri
 
 _This concludes \#16 of the community highlights. Thank you, Mikael, for sharing your passion with the Alephium community and contributing all across! We’ll return with another episode of the community highlights in March 2024!_
 
-_Meanwhile, you can follow[Alephium](/)on_ <a href="https://github.com/alephium/" ><em>Github</em></a>_,_ <a href="https://twitter.com/alephium" ><em>Twitter</em></a>_. Join the conversation on_ [Discord](/discord)_,_ <a href="https://t.me/alephiumgroup" ><em>Telegram</em></a> _or_ <a href="https://www.reddit.com/r/alephium" ><em>Reddit</em></a>_._
+_Meanwhile, you can follow[Alephium](/)on_ [Github](https://github.com/alephium/)_,_ [Twitter](https://twitter.com/alephium)_. Join the conversation on_ [Discord](/discord)_,_ [Telegram](https://t.me/alephiumgroup) _or_ [Reddit](https://www.reddit.com/r/alephium)_._
