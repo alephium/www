@@ -9,13 +9,13 @@ title: Builders Uncut — Pyreplay
 
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
-Jonas, aka <a href="https://x.com/fugashu_codes" class="markup--anchor markup--p-anchor" data-href="https://x.com/fugashu_codes" rel="noopener" target="_blank">Fugashu</a>, and his partner <a href="https://x.com/notdimfred" class="markup--anchor markup--p-anchor" data-href="https://x.com/notdimfred" rel="noopener" target="_blank">Dmitrij</a> share their journey into crypto, their projects <a href="http://Alph.Land" class="markup--anchor markup--p-anchor" data-href="http://Alph.Land" rel="noopener" target="_blank">Alph.Land</a> and <a href="https://www.pyreplay.com/" class="markup--anchor markup--p-anchor" data-href="https://www.pyreplay.com/" rel="noopener" target="_blank">PyrePlay</a> on Alephium, and the supportive community that drew them to the platform. They also discussed their experience at the Alephium Builders meetup and their plans for PyrePlay’s future. Find the full (slightly edited) transcript below if you prefer reading.
+Jonas, aka <a href="https://x.com/fugashu_codes" data-href="https://x.com/fugashu_codes">Fugashu</a>, and his partner <a href="https://x.com/notdimfred" data-href="https://x.com/notdimfred">Dmitrij</a> share their journey into crypto, their projects <a href="http://Alph.Land" data-href="http://Alph.Land">Alph.Land</a> and <a href="https://www.pyreplay.com/" data-href="https://www.pyreplay.com/">PyrePlay</a> on Alephium, and the supportive community that drew them to the platform. They also discussed their experience at the Alephium Builders meetup and their plans for PyrePlay’s future. Find the full (slightly edited) transcript below if you prefer reading.
 
 `video: https://www.youtube.com/watch?v=LMgsXYtiY4M`
 
 #### Who are you, and what do you do?
 
-I’m Jonas, but you might know me better as <a href="https://x.com/fugashu_codes" class="markup--anchor markup--p-anchor" data-href="https://x.com/fugashu_codes" rel="noopener" target="_blank">Fugashu</a>. Since November last year, I’ve been building on Alephium, creating projects like <a href="http://alph.land" class="markup--anchor markup--p-anchor" data-href="http://alph.land" rel="noopener" target="_blank">Alph.Land</a> and <a href="https://www.pyreplay.com/" class="markup--anchor markup--p-anchor" data-href="https://www.pyreplay.com/" rel="noopener" target="_blank">PyrePlay</a>. I’m very active in the Alephium Discord community. My partner, <a href="https://x.com/notdimfred" class="markup--anchor markup--p-anchor" data-href="https://x.com/notdimfred" rel="noopener" target="_blank">Dmitrij</a>, handles the backend work and smart contract development for PyrePlay.
+I’m Jonas, but you might know me better as <a href="https://x.com/fugashu_codes" data-href="https://x.com/fugashu_codes">Fugashu</a>. Since November last year, I’ve been building on Alephium, creating projects like <a href="http://alph.land" data-href="http://alph.land">Alph.Land</a> and <a href="https://www.pyreplay.com/" data-href="https://www.pyreplay.com/">PyrePlay</a>. I’m very active in the Alephium Discord community. My partner, <a href="https://x.com/notdimfred" data-href="https://x.com/notdimfred">Dmitrij</a>, handles the backend work and smart contract development for PyrePlay.
 
 #### How did you get into crypto?
 
@@ -39,7 +39,7 @@ PyrePlay is a gaming platform on the Alephium blockchain. I’ve been a gamer si
 
 #### How do NFTs fit into PyrePlay?
 
-We <a href="https://deadrare.io/collection/pyreplay-founder-cards" class="markup--anchor markup--p-anchor" data-href="https://deadrare.io/collection/pyreplay-founder-cards" rel="noopener" target="_blank">released NFTs</a> that act like founder packages. If you hold one of these NFTs, you’re basically part of the PyrePlay family. You’ll get a share of the platform fees, cheaper entry to games, and the satisfaction of knowing you’re helping to shape the development of PyrePlay.
+We <a href="https://deadrare.io/collection/pyreplay-founder-cards" data-href="https://deadrare.io/collection/pyreplay-founder-cards">released NFTs</a> that act like founder packages. If you hold one of these NFTs, you’re basically part of the PyrePlay family. You’ll get a share of the platform fees, cheaper entry to games, and the satisfaction of knowing you’re helping to shape the development of PyrePlay.
 
 ![](image_851b6bea33.png)
 
@@ -58,13 +58,13 @@ What we really appreciate about Alephium is the strong community and the incredi
 **Links:**
 
 **Alph.land**  
-Website: <a href="https://www.alph.land/" class="markup--anchor markup--p-anchor" data-href="https://www.alph.land/" rel="nofollow noopener" target="_blank">https://www.alph.land/</a>  
-Visualizer: <a href="https://t.co/pUXfpQOUCp" class="markup--anchor markup--p-anchor" data-href="https://t.co/pUXfpQOUCp" rel="noopener noreferrer nofollow noopener" target="_blank">https://visualizer.alph.land</a>
+Website: <a href="https://www.alph.land/" data-href="https://www.alph.land/" rel="nofollow noopener">https://www.alph.land/</a>  
+Visualizer: <a href="https://t.co/pUXfpQOUCp" data-href="https://t.co/pUXfpQOUCp" rel="noopener noreferrer nofollow noopener">https://visualizer.alph.land</a>
 
 **Pyreplay**  
-Website: <a href="https://www.pyreplay.com/" class="markup--anchor markup--p-anchor" data-href="https://www.pyreplay.com/" rel="nofollow noopener" target="_blank">https://www.pyreplay.com/</a>  
-Twitter: <a href="https://twitter.com/PyreplayDotCom" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/PyreplayDotCom" rel="nofollow noopener" target="_blank">https://twitter.com/PyreplayDotCom</a>  
-Discord: <a href="https://discord.gg/BHUx8KqvSF" class="markup--anchor markup--p-anchor" data-href="https://discord.gg/BHUx8KqvSF" rel="nofollow noopener" target="_blank">https://discord.gg/BHUx8KqvSF</a>
+Website: <a href="https://www.pyreplay.com/" data-href="https://www.pyreplay.com/" rel="nofollow noopener">https://www.pyreplay.com/</a>  
+Twitter: <a href="https://twitter.com/PyreplayDotCom" data-href="https://twitter.com/PyreplayDotCom" rel="nofollow noopener">https://twitter.com/PyreplayDotCom</a>  
+Discord: <a href="https://discord.gg/BHUx8KqvSF" data-href="https://discord.gg/BHUx8KqvSF" rel="nofollow noopener">https://discord.gg/BHUx8KqvSF</a>
 
 ---
 
@@ -72,8 +72,8 @@ Dimi was a speaker at the Athens Builders Meetup!
 
 `video: https://www.youtube.com/watch?v=iVoNJRzxLGU`
 
-You can also find all the talks of the Athens Builders Meetup <a href="https://medium.com/@alephium/all-the-athens-meetup-presentations-f419195640ce" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/all-the-athens-meetup-presentations-f419195640ce" rel="noopener" target="_blank">here</a>.
+You can also find all the talks of the Athens Builders Meetup <a href="https://medium.com/@alephium/all-the-athens-meetup-presentations-f419195640ce" data-href="https://medium.com/@alephium/all-the-athens-meetup-presentations-f419195640ce">here</a>.
 
 ---
 
-For any questions or feedback, reach out to us on <a href="http://alephium.org/discord" class="markup--anchor markup--p-anchor" data-href="http://alephium.org/discord" rel="noopener ugc nofollow noopener noopener" target="_blank">Discord</a> or <a href="https://t.me/alephiumgroup" class="markup--anchor markup--p-anchor" data-href="https://t.me/alephiumgroup" rel="noopener ugc nofollow noopener noopener" target="_blank">Telegram</a>, and follow <a href="https://x.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://x.com/alephium" rel="noopener ugc nofollow noopener noopener" target="_blank">@alephium on Twitter</a> for the latest updates!
+For any questions or feedback, reach out to us on [Discord](/discord) or <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Telegram</a>, and follow <a href="https://x.com/alephium" data-href="https://x.com/alephium">@alephium on Twitter</a> for the latest updates!

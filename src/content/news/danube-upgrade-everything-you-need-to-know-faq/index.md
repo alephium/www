@@ -239,7 +239,7 @@ The dev team will also shift more focus toward ecosystem support and tooling, gi
 
 The Danube upgrade marks a pivotal moment in Alephium’s evolution, from an experimental proof-of-work chain into a scalable, developer-friendly smart contract platform ready for mainstream DeFi adoption.
 
-Whether you’re building dApps, running nodes, or just exploring the space, this upgrade brings smoother workflows, faster interactions, and fewer trade-offs. Visit [alephium.org](http://alephium.org/) to learn more about Alephium and join us in building the Web3 you were promised!
+Whether you’re building dApps, running nodes, or just exploring the space, this upgrade brings smoother workflows, faster interactions, and fewer trade-offs. Visit [alephium.org](/) to learn more about Alephium and join us in building the Web3 you were promised!
 
 ## Have questions?
 

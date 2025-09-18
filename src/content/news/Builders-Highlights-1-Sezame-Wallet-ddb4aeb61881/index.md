@@ -11,7 +11,7 @@ title: 'Builders Highlights #1: Sezame Wallet'
 
 _Disclaimer: While Alephium is happy to support a growing developer community, it would like to make it clear that it does not endorse, audit, or review any software presented in this series, and encourages all users to make informed decisions and take personal responsibility for their actions._
 
-The second builder in the series is the <a href="https://twitter.com/SesameWallet" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/SesameWallet" rel="noopener" target="_blank">Sezame team</a>, the developers behind the <a href="https://sezame.app/" class="markup--anchor markup--p-anchor" data-href="https://sezame.app/" rel="noopener" target="_blank">Sezame mobile wallet</a>, available on the <a href="https://play.google.com/store/apps/details?id=org.maze2.sezamewallet" class="markup--anchor markup--p-anchor" data-href="https://play.google.com/store/apps/details?id=org.maze2.sezamewallet" rel="noopener" target="_blank">Google Play store</a> and <a href="https://apps.apple.com/us/app/sezame-wallet/id1618252953" class="markup--anchor markup--p-anchor" data-href="https://apps.apple.com/us/app/sezame-wallet/id1618252953" rel="noopener" target="_blank">App Store</a>:
+The second builder in the series is the <a href="https://twitter.com/SesameWallet" data-href="https://twitter.com/SesameWallet">Sezame team</a>, the developers behind the <a href="https://sezame.app/" data-href="https://sezame.app/">Sezame mobile wallet</a>, available on the <a href="https://play.google.com/store/apps/details?id=org.maze2.sezamewallet" data-href="https://play.google.com/store/apps/details?id=org.maze2.sezamewallet">Google Play store</a> and <a href="https://apps.apple.com/us/app/sezame-wallet/id1618252953" data-href="https://apps.apple.com/us/app/sezame-wallet/id1618252953">App Store</a>:
 
 ### Tell us a little bit about your project. What is it, what does it, and how does it interact with the Alephium blockchain?
 
@@ -23,7 +23,7 @@ We love the concept of ALPH : Mixing the decentralization resulting in proof of
 
 ### What tech stack did you use in your project? What did you consider when choosing the right tech stack for your project?
 
-We used React native for our mobile app. We made this choice mainly because there was an <a href="https://github.com/alephium/alephium-web3" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/alephium-web3" rel="noopener" target="_blank">Alephium SDK</a> on node.js.
+We used React native for our mobile app. We made this choice mainly because there was an <a href="https://github.com/alephium/alephium-web3" data-href="https://github.com/alephium/alephium-web3">Alephium SDK</a> on node.js.
 
 ### What features are you most proud of?
 
@@ -55,10 +55,10 @@ Everything is still to be done within the ALPH ecosystem: from NFTs, custom toke
 
 If you have an idea to build, but you’re not sure about all aspects: Ask the ALPH team! Their insight and help have been of immense help to us on every step of the journey!
 
-Thanks, Sezame for your answers! Alephium is thrilled to have such talent builders in the community! You can find <a href="https://sezame.app/" class="markup--anchor markup--p-anchor" data-href="https://sezame.app/" rel="noopener" target="_blank">Sezame</a> on the <a href="https://play.google.com/store/apps/details?id=org.maze2.sezamewallet" class="markup--anchor markup--p-anchor" data-href="https://play.google.com/store/apps/details?id=org.maze2.sezamewallet" rel="noopener" target="_blank">play store</a> or the <a href="https://apps.apple.com/us/app/sezame-wallet/id1618252953" class="markup--anchor markup--p-anchor" data-href="https://apps.apple.com/us/app/sezame-wallet/id1618252953" rel="noopener" target="_blank">appstore</a>!
+Thanks, Sezame for your answers! Alephium is thrilled to have such talent builders in the community! You can find <a href="https://sezame.app/" data-href="https://sezame.app/">Sezame</a> on the <a href="https://play.google.com/store/apps/details?id=org.maze2.sezamewallet" data-href="https://play.google.com/store/apps/details?id=org.maze2.sezamewallet">play store</a> or the <a href="https://apps.apple.com/us/app/sezame-wallet/id1618252953" data-href="https://apps.apple.com/us/app/sezame-wallet/id1618252953">appstore</a>!
 
 ---
 
-Have you built something or have a nice idea and want to request a grant or reward? You can access the <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" rel="noopener" target="_blank">Alephium Community Grants &amp; Reward Program page</a> for more info!
+Have you built something or have a nice idea and want to request a grant or reward? You can access the <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" data-href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md">Alephium Community Grants &amp; Reward Program page</a> for more info!
 
-If you need help or have extra questions, you are welcome to reach out on <a href="https://alephium.org/discord/" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/discord/" rel="noopener" target="_blank">Discord</a> or on the Alephium <a href="https://t.me/alephiumgroup" class="markup--anchor markup--p-anchor" data-href="https://t.me/alephiumgroup" rel="noopener" target="_blank">Telegram</a> channel. Don’t forget to follow <a href="https://twitter.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium" rel="noopener" target="_blank">@alephium on Twitter</a> to stay up-to-date.
+If you need help or have extra questions, you are welcome to reach out on [Discord](/discord) or on the Alephium <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Telegram</a> channel. Don’t forget to follow <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium">@alephium on Twitter</a> to stay up-to-date.

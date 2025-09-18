@@ -7,39 +7,39 @@ featuredImage: image_c5a50dcd6b.jpeg
 title: 'Builders Highlight #3: Ayin'
 ---
 
-_Our ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience and provide real utility for the users. In the Builders Highlight series, these builders will share more about their projects, thoughts, and insights on why building on Alephium! You can find_ <a href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" target="_blank"><em>#1 here</em></a> _and_ <a href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" target="_blank"><em>#2 here</em></a>_._
+_Our ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience and provide real utility for the users. In the Builders Highlight series, these builders will share more about their projects, thoughts, and insights on why building on Alephium! You can find_ <a href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881" data-href="https://medium.com/@alephium/builders-highlight-sezame-wallet-ddb4aeb61881"><em>#1 here</em></a> _and_ <a href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c" data-href="https://medium.com/@alephium/builders-highlight-alphpaca-nfts-99c69775f04c"><em>#2 here</em></a>_._
 
-This episode is about <a href="http://ayin.app" class="markup--anchor markup--p-anchor" data-href="http://ayin.app" rel="noopener" target="_blank">Ayin</a>, the first DEX available on Alephium Mainnet. We thank <a href="https://medium.com/@alephium/community-highlight-11-dr-jekyll-165ab9a51880" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/community-highlight-11-dr-jekyll-165ab9a51880" target="_blank">Dr Jekyll</a> and 0dd431c8 for the nice interview!
+This episode is about <a href="http://ayin.app" data-href="http://ayin.app">Ayin</a>, the first DEX available on Alephium Mainnet. We thank <a href="https://medium.com/@alephium/community-highlight-11-dr-jekyll-165ab9a51880" data-href="https://medium.com/@alephium/community-highlight-11-dr-jekyll-165ab9a51880">Dr Jekyll</a> and 0dd431c8 for the nice interview!
 
 ### **Tell us a little bit about your project. What is it, what does it do, and how does it interact with the Alephium blockchain?**
 
 ![](image_b7debe4600.png)
 
-Our project is a <a href="https://www.ayin.app/" class="markup--anchor markup--p-anchor" data-href="https://www.ayin.app/" rel="noopener" target="_blank">DEX</a>. It allows users to trade anything people list as a pair on it, and also the tokens we approve if they are on Alephium L1.
+Our project is a <a href="https://www.ayin.app/" data-href="https://www.ayin.app/">DEX</a>. It allows users to trade anything people list as a pair on it, and also the tokens we approve if they are on Alephium L1.
 
 Our DEX interacts through multiple smart contracts, and the user can earn yield as a Liquidity Provider, be a staker, a sale participant or a trader.
 
 You can seamlessly swap between token pairs and use the Utility Token, \$AYIN, to interact with different features in the app!
 
-<a href="https://github.com/0dd431c8/ayin-swap" class="markup--anchor markup--p-anchor" data-href="https://github.com/0dd431c8/ayin-swap" rel="noopener" target="_blank">GitHub</a>
+<a href="https://github.com/0dd431c8/ayin-swap" data-href="https://github.com/0dd431c8/ayin-swap">GitHub</a>
 
 ### What motivated you to develop on Alephium, and what sets it apart from other blockchain platforms?
 
-Reading anything the team puts out, like the <a href="https://github.com/alephium/white-paper" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/white-paper" rel="noopener" target="_blank">whitepaper</a>, is enough for me.
+Reading anything the team puts out, like the <a href="https://github.com/alephium/white-paper" data-href="https://github.com/alephium/white-paper">whitepaper</a>, is enough for me.
 
-I like the <a href="https://medium.com/@alephium/an-introduction-to-blockflow-alephiums-sharding-algorithm-bbbf318c3402" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/an-introduction-to-blockflow-alephiums-sharding-algorithm-bbbf318c3402" target="_blank">novel approach of sharding</a> that is fully implemented already and not just promised \*\*cough ETH\*\*.
+I like the <a href="https://medium.com/@alephium/an-introduction-to-blockflow-alephiums-sharding-algorithm-bbbf318c3402" data-href="https://medium.com/@alephium/an-introduction-to-blockflow-alephiums-sharding-algorithm-bbbf318c3402">novel approach of sharding</a> that is fully implemented already and not just promised \*\*cough ETH\*\*.
 
 There is no “pick a chain” when doing tx, and you can seamlessly use the tech whether you are a PhD in astrophysics or Jim from down the road who just heard about Bitcoin.
 
 As I have always said, I like to be early on things when building before a chain is crowded or there is little support/ a lot of rivalry going on, and also for tight-knit communities.
 
-Alephium has it all. <a href="http://www.alephium.org" class="markup--anchor markup--p-anchor" data-href="http://www.alephium.org" rel="noopener" target="_blank">New novel tech,</a> a great team, a <a href="http://alephium.org/discord" class="markup--anchor markup--p-anchor" data-href="http://alephium.org/discord" rel="noopener" target="_blank">great community</a>, and not yet crowded or full of scams.
+Alephium has it all. [New novel tech](/),</a> a great team, a [great community](/discord), and not yet crowded or full of scams.
 
-The team has been instrumental in allowing us to understand <a href="https://docs.alephium.org/ralph/getting-started" class="markup--anchor markup--p-anchor" data-href="https://docs.alephium.org/ralph/getting-started" rel="noopener" target="_blank">Ralph</a> and build properly and giving us direct access to all of them in all facets of development from SC dev to marketing, which is more than probably any core L1 team can say for themselves on any chain. Big ups to them!
+The team has been instrumental in allowing us to understand <a href="https://docs.alephium.org/ralph/getting-started" data-href="https://docs.alephium.org/ralph/getting-started">Ralph</a> and build properly and giving us direct access to all of them in all facets of development from SC dev to marketing, which is more than probably any core L1 team can say for themselves on any chain. Big ups to them!
 
 ### What tech stack did you use in your project?
 
-<a href="https://react.dev/" class="markup--anchor markup--p-anchor" data-href="https://react.dev/" rel="noopener" target="_blank">React</a>+<a href="https://redux.js.org/" class="markup--anchor markup--p-anchor" data-href="https://redux.js.org/" rel="noopener" target="_blank">redux</a> combo for the front end.
+<a href="https://react.dev/" data-href="https://react.dev/">React</a>+<a href="https://redux.js.org/" data-href="https://redux.js.org/">redux</a> combo for the front end.
 
 ### **What did you consider when choosing the right tech stack for your project?**
 
@@ -91,12 +91,12 @@ I want to see what novel approaches devs can take within these things as well as
 
 Absolutely reach out to the core team. Get involved in the discord dev channels and community channels. Most of all don’t be scared by new language/environment/non-evm. _“0dd”_ picked it up very quickly after the Lehman upgrade and with the team explaining things that weren’t obvious in dm. Most of all, go for it and good Luck!
 
-_Thanks, 0dd431c8 and drjekyll5376, for your answers! Alephium is thrilled to have such talent builders in the community! You can find the AYIN DEX_ <a href="https://www.ayin.app/" class="markup--anchor markup--p-anchor" data-href="https://www.ayin.app/" rel="noopener" target="_blank"><em>here</em></a>_!_
+_Thanks, 0dd431c8 and drjekyll5376, for your answers! Alephium is thrilled to have such talent builders in the community! You can find the AYIN DEX_ <a href="https://www.ayin.app/" data-href="https://www.ayin.app/"><em>here</em></a>_!_
 
 ---
 
 _Disclaimer: While Alephium is happy to support a growing developer community, it would like to clarify that it does not endorse, audit, or review any software presented in this series and encourages all users to make informed decisions and take personal responsibility for their actions._
 
-Have you built something or have a nice idea and want to request a grant or reward? You can access the <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" rel="noopener ugc nofollow noopener" target="_blank">Alephium Community Grants &amp; Reward Program page</a> for more info!
+Have you built something or have a nice idea and want to request a grant or reward? You can access the <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" data-href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md">Alephium Community Grants &amp; Reward Program page</a> for more info!
 
-If you need help or have extra questions, you are welcome to reach out in the \# 🎨dev-dapp channel on <a href="https://alephium.org/discord/" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/discord/" rel="noopener ugc nofollow noopener" target="_blank">Discord</a>, or in the Alephium <a href="https://t.me/alephiumgroup" class="markup--anchor markup--p-anchor" data-href="https://t.me/alephiumgroup" rel="noopener ugc nofollow noopener" target="_blank">Telegram</a> channel. Don’t forget to follow <a href="https://twitter.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium" rel="noopener ugc nofollow noopener" target="_blank">@alephium on Twitter</a> to stay up-to-date.
+If you need help or have extra questions, you are welcome to reach out in the \# 🎨dev-dapp channel on [Discord](/discord), or in the Alephium <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Telegram</a> channel. Don’t forget to follow <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium">@alephium on Twitter</a> to stay up-to-date.

@@ -6,11 +6,11 @@ featuredImage: image_0416b8898f.jpeg
 title: Core team interview series. Episode 4
 ---
 
-**This article was updated:** <a href="https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0" rel="nofollow" target="_blank">https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0</a>
+**This article was updated:** <a href="https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0" data-href="https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0" rel="nofollow">https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0</a>
 
 _For its team, Alephium is privileging agility and efficiency over hyper-growth. The project does stay at a human size not because it is more efficient, but because Alephium strives to be a decentralized, community-driven project. This means the project in itself is much larger than a team can ever be. Communication, trust, openness, and transparency are paramount in such a setup._
 
-_To shed some light on who we are and what we do, we decided to share a little about ourselves with the community through a small series of interviews. Read the_ <a href="https://medium.com/@alephium/core-team-interview-series-episode-1-3472f8295af6" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/core-team-interview-series-episode-1-3472f8295af6" target="_blank"><em>1st</em></a>_,_ <a href="https://medium.com/@alephium/core-team-interview-series-episode-2-bec6e6908d2f" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/core-team-interview-series-episode-2-bec6e6908d2f" target="_blank"><em>2nd</em></a>_, and_ <a href="https://medium.com/@alephium/core-team-interview-series-episode-3-64b6dacc1459" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/core-team-interview-series-episode-3-64b6dacc1459" target="_blank"><em>3rd part</em></a>_._
+_To shed some light on who we are and what we do, we decided to share a little about ourselves with the community through a small series of interviews. Read the_ <a href="https://medium.com/@alephium/core-team-interview-series-episode-1-3472f8295af6" data-href="https://medium.com/@alephium/core-team-interview-series-episode-1-3472f8295af6"><em>1st</em></a>_,_ <a href="https://medium.com/@alephium/core-team-interview-series-episode-2-bec6e6908d2f" data-href="https://medium.com/@alephium/core-team-interview-series-episode-2-bec6e6908d2f"><em>2nd</em></a>_, and_ <a href="https://medium.com/@alephium/core-team-interview-series-episode-3-64b6dacc1459" data-href="https://medium.com/@alephium/core-team-interview-series-episode-3-64b6dacc1459"><em>3rd part</em></a>_._
 
 ---
 
@@ -34,11 +34,11 @@ I love playing tag rugby and deep inside I am a nerd. I love board games, comic 
 
 ### 4 — Got links? Got a profile picture we should use?
 
-You’ll find me on <a href="https://www.linkedin.com/in/marina-miranda-de-mattos-667945130/" class="markup--anchor markup--p-anchor" data-href="https://www.linkedin.com/in/marina-miranda-de-mattos-667945130/" rel="noopener" target="_blank">LinkedIn</a> and on <a href="https://twitter.com/MarinadeMattos2" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/MarinadeMattos2" rel="noopener" target="_blank">Twitter</a>.
+You’ll find me on <a href="https://www.linkedin.com/in/marina-miranda-de-mattos-667945130/" data-href="https://www.linkedin.com/in/marina-miranda-de-mattos-667945130/">LinkedIn</a> and on <a href="https://twitter.com/MarinadeMattos2" data-href="https://twitter.com/MarinadeMattos2">Twitter</a>.
 
 ### 5 — How/when did you come across crypto?
 
-Like many people, I learned about crypto in 2017 when a broker tried to sell me some Bitcoins. I realized that there had to be a better way to be part of it all and started looking into it for myself. I found the entire space quite exciting and decided I would love to work with it. It was then in 2018 that I joined <a href="https://lykke.com/" class="markup--anchor markup--p-anchor" data-href="https://lykke.com/" rel="noopener" target="_blank">Lykke</a>, a Cryptoexchange established in 2016, as the Head of Customer Success and expanded my knowledge in various areas. Lykke is
+Like many people, I learned about crypto in 2017 when a broker tried to sell me some Bitcoins. I realized that there had to be a better way to be part of it all and started looking into it for myself. I found the entire space quite exciting and decided I would love to work with it. It was then in 2018 that I joined <a href="https://lykke.com/" data-href="https://lykke.com/">Lykke</a>, a Cryptoexchange established in 2016, as the Head of Customer Success and expanded my knowledge in various areas. Lykke is
 
 ### 6 — How did you come across Alephium and what attracted you to the project?
 
@@ -58,7 +58,7 @@ I think Blockchain has the power to change people’s lives and I would like to 
 
 ### 1 — What should we call you, and where are you located?
 
-My name is <a href="https://twitter.com/jameskbh" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/jameskbh" rel="noopener" target="_blank">Thiago Freitas</a>, and I’m currently living in Lisbon, Portugal
+My name is <a href="https://twitter.com/jameskbh" data-href="https://twitter.com/jameskbh">Thiago Freitas</a>, and I’m currently living in Lisbon, Portugal
 
 ### 2 — What/where did you study? What are your past notable experiences?
 
@@ -104,7 +104,7 @@ My main interest is to play table-tennis with family or friends, which is consid
 
 ### 4 — Got links? Got a profile picture we should use?
 
-You can find some of my work on <a href="https://github.com/suyanlong" class="markup--anchor markup--p-anchor" data-href="https://github.com/suyanlong" rel="noopener" target="_blank">GitHub</a>.
+You can find some of my work on <a href="https://github.com/suyanlong" data-href="https://github.com/suyanlong">GitHub</a>.
 
 ### 5 — How/when did you come across crypto?
 
@@ -116,7 +116,7 @@ On GitHub, I discovered the Alephium project while learning about blockchain rel
 
 ### 7 — What are you doing at Alephium?
 
-I’m currently working on the <a href="https://github.com/alephium/ralph-vscode" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/ralph-vscode" rel="noopener" target="_blank">ralph-vscode</a> plugin in Alephium.
+I’m currently working on the <a href="https://github.com/alephium/ralph-vscode" data-href="https://github.com/alephium/ralph-vscode">ralph-vscode</a> plugin in Alephium.
 
 ### 8 — What is it you care the most for with Alephium?
 
@@ -126,4 +126,4 @@ What I care the most about is that the community members can understand the Alep
 
 **This concludes the fourth chapter in this series. There’s no doubt that more episodes will be needed as the project progresses and grows. Stay tuned!**
 
-**_You can follow Alephium on_** <a href="https://github.com/alephium/" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/" rel="noopener ugc nofollow noopener" target="_blank"><strong><em>Github</em></strong></a>**_,_** <a href="https://twitter.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium" rel="noopener ugc nofollow noopener" target="_blank"><strong><em>Twitter</em></strong></a>**_. Join the conversation on_** <a href="https://alephium.org/discord" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/discord" rel="noopener ugc nofollow noopener" target="_blank"><strong><em>Discord</em></strong></a>**_,_** <a href="https://t.me/alephiumgroup" class="markup--anchor markup--p-anchor" data-href="https://t.me/alephiumgroup" rel="noopener ugc nofollow noopener" target="_blank"><strong><em>Telegram</em></strong></a> **_or_** <a href="https://www.reddit.com/r/alephium" class="markup--anchor markup--p-anchor" data-href="https://www.reddit.com/r/alephium" rel="noopener ugc nofollow noopener" target="_blank"><strong><em>Reddit</em></strong></a>**_._**
+**_You can follow Alephium on_** <a href="https://github.com/alephium/" data-href="https://github.com/alephium/"><strong><em>Github</em></strong></a>**_,_** <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium"><strong><em>Twitter</em></strong></a>**_. Join the conversation on_** [Discord](/discord)**_,_** <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup"><strong><em>Telegram</em></strong></a> **_or_** <a href="https://www.reddit.com/r/alephium" data-href="https://www.reddit.com/r/alephium"><strong><em>Reddit</em></strong></a>**_._**

@@ -13,13 +13,13 @@ Do you want to test your knowledge of Alephium? 
 Do you want to explain to someone how to get in the ecosystem easily in a gamified way?  
 Do you want to test new features and be in the loop of what’s coming?
 
-Join our Zealy.io page and be on top of what is happening, while earning XP points that unlock new roles at <a href="http://alephium.org/discord" class="markup--anchor markup--p-anchor" data-href="http://alephium.org/discord" rel="noopener" target="_blank">Discord</a> and other perks that will be announced at a later point (but that are really cool!).
+Join our Zealy.io page and be on top of what is happening, while earning XP points that unlock new roles at [Discord](/discord) and other perks that will be announced at a later point (but that are really cool!).
 
 ![](image_bbba10fd77.jpg)
 
 ### How to join?
 
-Get to our Zealy community <a href="https://zealy.io/c/alephium" class="markup--anchor markup--p-anchor" data-href="https://zealy.io/c/alephium" rel="noopener" target="_blank">here</a>. If you’re not subscribed already, create a Zealy account, it’s easy and fast!
+Get to our Zealy community <a href="https://zealy.io/c/alephium" data-href="https://zealy.io/c/alephium">here</a>. If you’re not subscribed already, create a Zealy account, it’s easy and fast!
 
 You will see that our quests are divided into categories, which will help you go through specific areas of Alephium’s ecosystem.
 
@@ -37,7 +37,7 @@ To engage with a quest, clickon it and a popup will appear with more information
 
 Remember that some quests must be done in a sequence, so you must complete the previous ones to unlock them!
 
-Your tasks are different on each quest. Some require you to go to a website, RT or like posts on <a href="https://twitter.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium" rel="noopener" target="_blank">Twitter</a>, while others will ask you to provide a link, image, text, video, and so on.
+Your tasks are different on each quest. Some require you to go to a website, RT or like posts on <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium">Twitter</a>, while others will ask you to provide a link, image, text, video, and so on.
 
 Some are daily tasks you can do every day to increase your XP count.
 
@@ -45,7 +45,7 @@ Some are daily tasks you can do every day to increase your XP count.
 
 ### XP Levels (Ranks)
 
-As you go through the quests, you gain XP points. The XP points are used to level up your account, and each level gives you a different role at <a href="http://alephium.org/discord" class="markup--anchor markup--p-anchor" data-href="http://alephium.org/discord" rel="noopener" target="_blank">Alephium’s Discord server</a>!
+As you go through the quests, you gain XP points. The XP points are used to level up your account, and each level gives you a different role at [Alephium’s Discord server](/discord)!
 
 But they are hard to get!
 

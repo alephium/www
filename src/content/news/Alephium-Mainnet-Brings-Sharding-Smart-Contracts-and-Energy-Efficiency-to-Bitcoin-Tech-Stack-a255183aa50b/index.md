@@ -22,7 +22,7 @@ Most importantly, its stateful UTXO model combines the advantages of both UTXO m
 
 Mr. Wang added about the mainnet, “Alephium offers a whole new programming paradigm for decentralized applications, ideally suited for performance-oriented and secure DeFI. Leveraging Alephium’s custom virtual machine, DApps can now benefit from the security offered by the stateful UTXO model without sacrificing the power and expressiveness of smart contracts”.
 
-For further information, please contact <a href="mailto:press@alephium.org" class="markup--anchor markup--p-anchor" data-href="mailto:press@alephium.org" target="_blank">press@alephium.org</a>
+For further information, please contact <a href="mailto:press@alephium.org" data-href="mailto:press@alephium.org">press@alephium.org</a>
 
 ---
 
@@ -30,4 +30,4 @@ For further information, please contact <a href="mailto:press@alephium.org" clas
 
 Alephium is the first operational sharded blockchain bringing scalability, ETH-inspired smart contracts and Dapps capabilities to Bitcoin’s proven core technologies while ensuring better performance and improved energy efficiency. Alephium also focuses on usability and accessibility making it the perfect platform to support decentralized applications and open protocols.
 
-#### To find out more, visit <a href="https://alephium.org/" class="markup--anchor markup--h4-anchor" data-href="https://alephium.org/" rel="noopener" target="_blank">https://alephium.org/</a>
+#### To find out more, visit [alephium.org](/)

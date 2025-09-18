@@ -7,11 +7,11 @@ featuredImage: image_b9699193dd.png
 title: 'Hashrate Series #4: ICERIVER'
 ---
 
-_The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem actors to sustain and improve Alephium’s reliability. This series is about them, and after_ <a href="https://medium.com/@alephium/hashrate-series-1-nicehash-ee0936adf899" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/hashrate-series-1-nicehash-ee0936adf899" target="_blank"><em>Nicehash</em></a>, <a href="https://medium.com/@alephium/hashrate-series-2-goldshell-93cc51a86640" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/hashrate-series-2-goldshell-93cc51a86640" target="_blank"><em>Goldshell</em></a>_, and_ <a href="https://medium.com/@alephium/hashrate-series-3-cryptohall-24-7ad1533701f4" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/hashrate-series-3-cryptohall-24-7ad1533701f4" target="_blank"><em>CryptoHall 24</em></a>_, please welcome ICERIVER._
+_The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem actors to sustain and improve Alephium’s reliability. This series is about them, and after_ <a href="https://medium.com/@alephium/hashrate-series-1-nicehash-ee0936adf899" data-href="https://medium.com/@alephium/hashrate-series-1-nicehash-ee0936adf899"><em>Nicehash</em></a>, <a href="https://medium.com/@alephium/hashrate-series-2-goldshell-93cc51a86640" data-href="https://medium.com/@alephium/hashrate-series-2-goldshell-93cc51a86640"><em>Goldshell</em></a>_, and_ <a href="https://medium.com/@alephium/hashrate-series-3-cryptohall-24-7ad1533701f4" data-href="https://medium.com/@alephium/hashrate-series-3-cryptohall-24-7ad1533701f4"><em>CryptoHall 24</em></a>_, please welcome ICERIVER._
 
 #### Can you introduce yourself and share the story of Iceriver? When was it founded & where? It’s relatively more recent than most ASIC manufacturers. How has been your journey so far?
 
-The story of <a href="http://iceriver.io" class="markup--anchor markup--p-anchor" data-href="http://iceriver.io" rel="noopener" target="_blank">ICERIVER</a> began with a passion for crypto mining technology and a keen insight into market demands. Our company was founded in 2019 and is headquartered in Hong Kong. As a relatively new ASIC manufacturer, we are dedicated to providing cryptocurrency miners with efficient and stable mining solutions, while upholding our vision that “Crypto mining should be accessible to everyone.” Through innovative hardware solutions, we aim to enhance the performance and efficiency of mining machines, while lowering the barriers to mining, enabling more people to participate and truly realizing the decentralization of blockchain.
+The story of <a href="http://iceriver.io" data-href="http://iceriver.io">ICERIVER</a> began with a passion for crypto mining technology and a keen insight into market demands. Our company was founded in 2019 and is headquartered in Hong Kong. As a relatively new ASIC manufacturer, we are dedicated to providing cryptocurrency miners with efficient and stable mining solutions, while upholding our vision that “Crypto mining should be accessible to everyone.” Through innovative hardware solutions, we aim to enhance the performance and efficiency of mining machines, while lowering the barriers to mining, enabling more people to participate and truly realizing the decentralization of blockchain.
 
 With the launch of our first miner, we quickly gained recognition in the market. Our products have been widely praised by miners for their superior performance and cost-effectiveness, helping us establish a strong market reputation. Since then, we have continuously optimized our products and services to meet the diverse needs of different markets and customers.
 
@@ -67,7 +67,7 @@ Secondly, we assessed the capability and dedication of the project team. The Ale
 
 Considering all these factors, we believe Alephium is a PoW blockchain worthy of investment and ASIC miner development. Therefore, we decided to allocate resources to design and produce high-performance ASIC miners to support the growth of its ecosystem.
 
-#### Can you describe & give us more details about the ICERIVER <a href="https://www.iceriver.io/product/iceriver-alph-al0/" class="markup--anchor markup--h4-anchor" data-href="https://www.iceriver.io/product/iceriver-alph-al0/" rel="noopener" target="_blank">ALPH AL0</a>?
+#### Can you describe & give us more details about the ICERIVER <a href="https://www.iceriver.io/product/iceriver-alph-al0/" data-href="https://www.iceriver.io/product/iceriver-alph-al0/">ALPH AL0</a>?
 
 ![](image_73426157cb.png)
 
@@ -111,11 +111,11 @@ We encourage users to share their experiences and suggestions with us to help co
 
 Thank you for the support and attention from the community. We look forward to growing and progressing together with everyone. If you have any questions or suggestions, please feel free to contact us at any time.
 
-_Twitter & other socials links:_ <a href="https://x.com/IceRiverMiner" class="markup--anchor markup--p-anchor" data-href="https://x.com/IceRiverMiner" rel="noopener" target="_blank"><em>https://x.com/IceRiverMiner</em></a>_  
-Website:_ <a href="http://www.iceriver.io" class="markup--anchor markup--p-anchor" data-href="http://www.iceriver.io" rel="noopener" target="_blank"><em>www.iceriver.io</em></a>
+_Twitter & other socials links:_ <a href="https://x.com/IceRiverMiner" data-href="https://x.com/IceRiverMiner"><em>https://x.com/IceRiverMiner</em></a>_  
+Website:_ <a href="http://www.iceriver.io" data-href="http://www.iceriver.io"><em>www.iceriver.io</em></a>
 
 ![](image_7cd362878a.png)
 
 ---
 
-That is the end of this interview! If you are interested or have extra questions, you are welcome to reach out on our <a href="http://alephium.org/discord" class="markup--anchor markup--p-anchor" data-href="http://alephium.org/discord" rel="noopener ugc nofollow noopener" target="_blank">Discord</a>, or in the <a href="https://t.me/alephiumgroup" class="markup--anchor markup--p-anchor" data-href="https://t.me/alephiumgroup" rel="noopener ugc nofollow noopener" target="_blank">Alephium Telegram channel</a>. Don’t forget to follow <a href="https://twitter.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium" rel="noopener ugc nofollow noopener" target="_blank">@alephium on Twitter</a> to stay up-to-date.
+That is the end of this interview! If you are interested or have extra questions, you are welcome to reach out on our [Discord](/discord), or in the <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Alephium Telegram channel</a>. Don’t forget to follow <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium">@alephium on Twitter</a> to stay up-to-date.

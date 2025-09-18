@@ -47,6 +47,6 @@ The collaboration between Alephium and Hacken marks a significant step forward i
 
 Stay tuned for updates on joint initiatives and security enhancements as we continue to strengthen the Alephium ecosystem.
 
-For more information about Hacken’s security services, visit <a href="https://hackenio.cc/3Qko1S9" class="markup--anchor markup--p-anchor" data-href="https://hackenio.cc/3Qko1S9" rel="noopener" target="_blank">hacken.io</a>.
+For more information about Hacken’s security services, visit <a href="https://hackenio.cc/3Qko1S9" data-href="https://hackenio.cc/3Qko1S9">hacken.io</a>.
 
-To learn more about Alephium, visit [alephium.org](https://alephium.org).
+To learn more about Alephium, visit [alephium.org](/).

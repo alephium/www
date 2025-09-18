@@ -13,7 +13,7 @@ title: BIP39 Passphrase implementation
 
 **_DISCLAIMER 2: IF YOU LOSE (OR FORGET) YOUR PASSPHRASE, YOU LOSE YOUR FUNDS PERMANENTLY._**
 
-#### Here you’ll find a description of the BIP39 feature **we have** <a href="https://github.com/alephium/desktop-wallet/releases/latest/" class="markup--anchor markup--h4-anchor" data-href="https://github.com/alephium/desktop-wallet/releases/latest/" rel="noopener" target="_blank"><strong>implemented in our desktop wallet</strong>,</a> why it is used, a tutorial (and a video) on how to set it up, and some best practices!
+#### Here you’ll find a description of the BIP39 feature **we have** <a href="https://github.com/alephium/desktop-wallet/releases/latest/" data-href="https://github.com/alephium/desktop-wallet/releases/latest/"><strong>implemented in our desktop wallet</strong>,</a> why it is used, a tutorial (and a video) on how to set it up, and some best practices!
 
 ---
 
@@ -21,7 +21,7 @@ title: BIP39 Passphrase implementation
 
 It is an optional, advanced security feature that allows you to create a new wallet by adding an additional passphrase to the 24 words of your Secret Recovery Phrase.
 
-Originating from the <a href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki" class="markup--anchor markup--p-anchor" data-href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki" rel="noopener" target="_blank">39th Bitcoin Improvement Proposal (=BIP)</a>, it has become a standard for the broader crypto community. Think of it as a 25th word added to your seed (= Secret Recovery Phrase), except that you have full control over this one: it is not restricted to the dictionary words as the others are. It can be composed of all characters: A-Z, a-z, 0–9, special characters i.e. ASCII characters.
+Originating from the <a href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki" data-href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki">39th Bitcoin Improvement Proposal (=BIP)</a>, it has become a standard for the broader crypto community. Think of it as a 25th word added to your seed (= Secret Recovery Phrase), except that you have full control over this one: it is not restricted to the dictionary words as the others are. It can be composed of all characters: A-Z, a-z, 0–9, special characters i.e. ASCII characters.
 
 The Secret Recovery Phrase of 24 words that is generated when you create a new wallet is by itself a wallet with an empty (“”) passphrase. When you add a passphrase, it creates a **different,** brand new wallet.
 
@@ -36,15 +36,15 @@ You can therefore have one Secret Recovery Phrase with multiple passphrases to c
 
 ### Why is it used?
 
-The best way to put it is <a href="https://en.wikipedia.org/wiki/Plausible_deniability" class="markup--anchor markup--p-anchor" data-href="https://en.wikipedia.org/wiki/Plausible_deniability" rel="noopener" target="_blank">“Plausible Deniability”</a>. As explained by Wikipedia:
+The best way to put it is <a href="https://en.wikipedia.org/wiki/Plausible_deniability" data-href="https://en.wikipedia.org/wiki/Plausible_deniability">“Plausible Deniability”</a>. As explained by Wikipedia:
 
 > The term typically implies forethought, such as intentionally setting up the conditions for the plausible avoidance of responsibility for one’s future actions or knowledge.
 
-And here’s an excellent comic of the no less excellent <a href="https://xkcd.com" class="markup--anchor markup--p-anchor" data-href="https://xkcd.com" rel="noopener" target="_blank">XKCD</a> explaining in very few words why one might need plausible deniability in crypto:
+And here’s an excellent comic of the no less excellent <a href="https://xkcd.com" data-href="https://xkcd.com">XKCD</a> explaining in very few words why one might need plausible deniability in crypto:
 
 <figure id="8248" class="graf graf--figure graf-after--p">
 <img src="image_f921ac9506.jpg" class="graf-image" data-image-id="0*w6lGms1-xxDgHQ2d" data-width="448" data-height="274" />
-<figcaption>XKCD 538 — <a href="https://xkcd.com/538/" class="markup--anchor markup--figure-anchor" data-href="https://xkcd.com/538/" rel="nofollow noopener" target="_blank">https://xkcd.com/538/</a></figcaption>
+<figcaption>XKCD 538 — <a href="https://xkcd.com/538/" class="markup--anchor markup--figure-anchor" data-href="https://xkcd.com/538/" rel="nofollow noopener">https://xkcd.com/538/</a></figcaption>
 </figure>
 
 In the case of a wallet containing cryptocurrencies and/or assets, this refers to the unfortunate scenario where an attacker either gains access to your Secret Recovery Phrase or forces you to reveal your wallet password and/or your 24-word Secret Recovery Phrase (also known as the “\$5 wrench attack”).
@@ -133,7 +133,7 @@ Changing a single character (even, for example, from lower to upper-case), will 
 
 1.  Choose a Passphrase that you can remember and enter it correctly before sending any funds to the generated wallet.
 2.  Remember it perfectly character by character.
-3.  The passphrase should be <a href="https://apvhyngqeo.cloudimg.io/v7/https://allsafeit.com/wp-content/uploads/2021/07/Social-Media-Brute-Force-Password-Attacks-sq.png?w=800&amp;h=800&amp;org_if_sml=1" class="markup--anchor markup--li-anchor" data-href="https://apvhyngqeo.cloudimg.io/v7/https://allsafeit.com/wp-content/uploads/2021/07/Social-Media-Brute-Force-Password-Attacks-sq.png?w=800&amp;h=800&amp;org_if_sml=1" rel="noopener" target="_blank">long and strong,</a> otherwise it may be prone to brute-force attacks by anyone aware of the seed phrase.
+3.  The passphrase should be <a href="https://apvhyngqeo.cloudimg.io/v7/https://allsafeit.com/wp-content/uploads/2021/07/Social-Media-Brute-Force-Password-Attacks-sq.png?w=800&amp;h=800&amp;org_if_sml=1" data-href="https://apvhyngqeo.cloudimg.io/v7/https://allsafeit.com/wp-content/uploads/2021/07/Social-Media-Brute-Force-Password-Attacks-sq.png?w=800&amp;h=800&amp;org_if_sml=1">long and strong,</a> otherwise it may be prone to brute-force attacks by anyone aware of the seed phrase.
 
 **IF YOU LOSE OR FORGET YOUR PASSPHRASE, YOU WILL LOSE YOUR FUNDS PERMANENTLY**
 

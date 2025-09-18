@@ -7,11 +7,11 @@ featuredImage: image_53565e03c5.png
 title: 'Miners’ Highlight #4: nickdimondi'
 ---
 
-_The Alephium blockchain relies heavily on the contributions of miners to maintain its integrity and functionality. Recognizing the significance of these contributors is the object of this article series titled “Miners’ Highlight.” By focusing on their contributions, challenges, and experiences, we aim to better understand the mining process, its importance & those who make it possible. You can find_ <a href="https://medium.com/@alephium/miners-highlight-1-cedric-crispin-c4ed456f6d10" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/miners-highlight-1-cedric-crispin-c4ed456f6d10" rel="noopener" target="_blank"><em>#1 here</em></a>, <a href="https://medium.com/@alephium/miners-highlight-1-jake-aka-hiram-abiff-a8833307f316" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/miners-highlight-1-jake-aka-hiram-abiff-a8833307f316" rel="noopener" target="_blank"><em>#2 here</em></a>, _and_ <a href="https://medium.com/@alephium/miners-highlight-3-bokiko-7b2a22ea0253" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/miners-highlight-3-bokiko-7b2a22ea0253" target="_blank"><em>#3 here</em></a>_._
+_The Alephium blockchain relies heavily on the contributions of miners to maintain its integrity and functionality. Recognizing the significance of these contributors is the object of this article series titled “Miners’ Highlight.” By focusing on their contributions, challenges, and experiences, we aim to better understand the mining process, its importance & those who make it possible. You can find_ <a href="https://medium.com/@alephium/miners-highlight-1-cedric-crispin-c4ed456f6d10" data-href="https://medium.com/@alephium/miners-highlight-1-cedric-crispin-c4ed456f6d10"><em>#1 here</em></a>, <a href="https://medium.com/@alephium/miners-highlight-1-jake-aka-hiram-abiff-a8833307f316" data-href="https://medium.com/@alephium/miners-highlight-1-jake-aka-hiram-abiff-a8833307f316"><em>#2 here</em></a>, _and_ <a href="https://medium.com/@alephium/miners-highlight-3-bokiko-7b2a22ea0253" data-href="https://medium.com/@alephium/miners-highlight-3-bokiko-7b2a22ea0253"><em>#3 here</em></a>_._
 
 #### What can we call you, and where should we picture you?
 
-I go by <a href="https://twitter.com/NickDimondi" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/NickDimondi" rel="noopener" target="_blank">Nick</a>.
+I go by <a href="https://twitter.com/NickDimondi" data-href="https://twitter.com/NickDimondi">Nick</a>.
 
 #### Tell us a bit about yourself, your passion for mining, and your background story.
 
@@ -27,9 +27,9 @@ I first learned about Alephium in early 2023 from a contact I made at Flux. He s
 
 I see the future of mining Alephium changing over the next few years as the project becomes more mainstream and adoption quickens.
 
-#### You’ve invited Maud twice to participate in X Spaces. I see you are involved in <a href="https://www.youtube.com/channel/UCB8sMtMOYVY_m6jYZcnQdUA" class="markup--anchor markup--h4-anchor" data-href="https://www.youtube.com/channel/UCB8sMtMOYVY_m6jYZcnQdUA" rel="noopener" target="_blank">Blockchain Basement</a>, <a href="https://www.coindesk.com/tag/nick-dimondi/" class="markup--anchor markup--h4-anchor" data-href="https://www.coindesk.com/tag/nick-dimondi/" rel="noopener" target="_blank">Coindesk interviews,</a> Discover Crypto & more… Can you tell us more about this media side of your activities?
+#### You’ve invited Maud twice to participate in X Spaces. I see you are involved in <a href="https://www.youtube.com/channel/UCB8sMtMOYVY_m6jYZcnQdUA" data-href="https://www.youtube.com/channel/UCB8sMtMOYVY_m6jYZcnQdUA">Blockchain Basement</a>, <a href="https://www.coindesk.com/tag/nick-dimondi/" data-href="https://www.coindesk.com/tag/nick-dimondi/">Coindesk interviews,</a> Discover Crypto & more… Can you tell us more about this media side of your activities?
 
-I’m the main producer at <a href="https://www.youtube.com/@DiscoverCrypto_" class="markup--anchor markup--p-anchor" data-href="https://www.youtube.com/@DiscoverCrypto_" rel="noopener" target="_blank">Discover Crypto</a> and co-host of Blockchain Basement. I also run a crypto mining X Spaces to stay engaged with the community. My background originally was in TV production, so working in media was a natural extension of my skill set.
+I’m the main producer at <a href="https://www.youtube.com/@DiscoverCrypto_" data-href="https://www.youtube.com/@DiscoverCrypto_">Discover Crypto</a> and co-host of Blockchain Basement. I also run a crypto mining X Spaces to stay engaged with the community. My background originally was in TV production, so working in media was a natural extension of my skill set.
 
 #### What would you recommend to someone just getting started with mining Alephium?
 
@@ -49,4 +49,4 @@ The mining, crypto, and Alephium communities must be aware of the changing playi
 
 ---
 
-That is the end of this interview! If you are interested or have extra questions, you are welcome to reach out on our <a href="http://alephium.org/discord" class="markup--anchor markup--p-anchor" data-href="http://alephium.org/discord" rel="noopener ugc nofollow noopener" target="_blank">Discord</a>, or in the <a href="https://t.me/alephiumgroup" class="markup--anchor markup--p-anchor" data-href="https://t.me/alephiumgroup" rel="noopener ugc nofollow noopener" target="_blank">Alephium Telegram channel</a>. Don’t forget to follow <a href="https://twitter.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium" rel="noopener ugc nofollow noopener" target="_blank">@alephium on Twitter</a> to stay up-to-date.
+That is the end of this interview! If you are interested or have extra questions, you are welcome to reach out on our [Discord](/discord), or in the <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Alephium Telegram channel</a>. Don’t forget to follow <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium">@alephium on Twitter</a> to stay up-to-date.

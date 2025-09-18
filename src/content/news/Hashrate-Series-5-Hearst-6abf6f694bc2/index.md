@@ -7,9 +7,9 @@ featuredImage: image_73a6ea4a32.png
 title: 'Hashrate Series #5: Hearst'
 ---
 
-_The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem actors to sustain and improve Alephium’s reliability. This series is about them, and after_ <a href="https://medium.com/@alephium/hashrate-series-1-nicehash-ee0936adf899" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/hashrate-series-1-nicehash-ee0936adf899" rel="noopener" target="_blank"><em>Nicehash</em></a>, <a href="https://medium.com/@alephium/hashrate-series-2-goldshell-93cc51a86640" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/hashrate-series-2-goldshell-93cc51a86640" rel="noopener" target="_blank"><em>Goldshell</em></a>_,_ <a href="https://medium.com/@alephium/hashrate-series-3-cryptohall-24-7ad1533701f4" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/hashrate-series-3-cryptohall-24-7ad1533701f4" target="_blank"><em>Cryptohall24,</em></a> _and_ <a href="https://medium.com/@alephium/hashrate-series-4-iceriver-063f52b7c431" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/hashrate-series-4-iceriver-063f52b7c431" target="_blank"><em>ICERIVER</em></a>, _please welcome Hearst._
+_The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem actors to sustain and improve Alephium’s reliability. This series is about them, and after_ <a href="https://medium.com/@alephium/hashrate-series-1-nicehash-ee0936adf899" data-href="https://medium.com/@alephium/hashrate-series-1-nicehash-ee0936adf899"><em>Nicehash</em></a>, <a href="https://medium.com/@alephium/hashrate-series-2-goldshell-93cc51a86640" data-href="https://medium.com/@alephium/hashrate-series-2-goldshell-93cc51a86640"><em>Goldshell</em></a>_,_ <a href="https://medium.com/@alephium/hashrate-series-3-cryptohall-24-7ad1533701f4" data-href="https://medium.com/@alephium/hashrate-series-3-cryptohall-24-7ad1533701f4"><em>Cryptohall24,</em></a> _and_ <a href="https://medium.com/@alephium/hashrate-series-4-iceriver-063f52b7c431" data-href="https://medium.com/@alephium/hashrate-series-4-iceriver-063f52b7c431"><em>ICERIVER</em></a>, _please welcome Hearst._
 
-Here, <a href="https://x.com/LoicRicci" class="markup--anchor markup--p-anchor" data-href="https://x.com/LoicRicci" rel="noopener" target="_blank">Loic</a> shares his crypto journey and how Hearst came to be. The full video interview is available here.
+Here, <a href="https://x.com/LoicRicci" data-href="https://x.com/LoicRicci">Loic</a> shares his crypto journey and how Hearst came to be. The full video interview is available here.
 
 `video: https://www.youtube.com/watch?v=z0FaUrh6iXw`
 
@@ -23,7 +23,7 @@ It was 2013, and tech companies were booming, so I jumped in, starting an e-comm
 
 #### **It’s a fascinating journey. You and your co-founder, Adrien, eventually created Hearst. Can you introduce us to Adrien and share a bit about how you two came together to launch Hearst?**
 
-Sure. <a href="https://x.com/ANejkovic" class="markup--anchor markup--p-anchor" data-href="https://x.com/ANejkovic" rel="noopener" target="_blank">Adrien</a> is a long-time friend, and we’ve known each other for over 15 years. He started his career in finance, building a forex fund in Luxembourg before moving into crypto. Adrian was well-connected in the crypto space and began mining Ethereum and Bitcoin early on. We reconnected around that time, and with my background in innovation and his expertise in mining, we decided to build something together. That’s how <a href="https://hearstcorporation.io/" class="markup--anchor markup--p-anchor" data-href="https://hearstcorporation.io/" rel="noopener" target="_blank">Hearst</a> was born — combining my knowledge of innovation with Adrien’s mining experience to explore new opportunities in the blockchain space.
+Sure. <a href="https://x.com/ANejkovic" data-href="https://x.com/ANejkovic">Adrien</a> is a long-time friend, and we’ve known each other for over 15 years. He started his career in finance, building a forex fund in Luxembourg before moving into crypto. Adrian was well-connected in the crypto space and began mining Ethereum and Bitcoin early on. We reconnected around that time, and with my background in innovation and his expertise in mining, we decided to build something together. That’s how <a href="https://hearstcorporation.io/" data-href="https://hearstcorporation.io/">Hearst</a> was born — combining my knowledge of innovation with Adrien’s mining experience to explore new opportunities in the blockchain space.
 
 #### **So, Hearst was built on this combination of innovation and mining expertise. Can you give us an overview of what Hearst is doing today?**
 
@@ -41,7 +41,7 @@ We’re currently in the process of fundraising to launch our first proof-of-con
 
 #### **Alephium has sustainability embedded in its DNA through its Proof of Less Work (PoLW). How did you discover Alephium, and what made you decide to get involved in the community?**
 
-We first got in touch with Alephium through a client of ours, <a href="https://x.com/swissborg" class="markup--anchor markup--p-anchor" data-href="https://x.com/swissborg" rel="noopener" target="_blank">Swissborg</a>, who connected us with the Alephium Foundation. From the beginning, I was impressed by the technology and innovation behind Alephium. The BlockFlow sharding and the efficiency of the Blake3 algorithm really set it apart.
+We first got in touch with Alephium through a client of ours, <a href="https://x.com/swissborg" data-href="https://x.com/swissborg">Swissborg</a>, who connected us with the Alephium Foundation. From the beginning, I was impressed by the technology and innovation behind Alephium. The BlockFlow sharding and the efficiency of the Blake3 algorithm really set it apart.
 
 But beyond the technology, the people in the Alephium community are amazing — incredibly professional, and there’s a great vibe. Everything just clicks, and it feels like the right place for us to be, both in terms of the tech and the community spirit.
 
@@ -75,8 +75,8 @@ I just want to say that I’m really excited about where Alephium and Hearst are
 
 ---
 
-_Twitter & other social links:_ <a href="https://x.com/Hearst_io" class="markup--anchor markup--p-anchor" data-href="https://x.com/Hearst_io" rel="nofollow noopener" target="_blank"><em>https://x.com/Hearst*io</em></a>*  
-Website:\_ <a href="https://hearstcorporation.io/" class="markup--anchor markup--p-anchor" data-href="https://hearstcorporation.io/" rel="nofollow noopener" target="_blank"><em>https://hearstcorporation.io/</em></a>
+_Twitter & other social links:_ <a href="https://x.com/Hearst_io" data-href="https://x.com/Hearst_io" rel="nofollow noopener"><em>https://x.com/Hearst*io</em></a>*  
+Website:\_ <a href="https://hearstcorporation.io/" data-href="https://hearstcorporation.io/" rel="nofollow noopener"><em>https://hearstcorporation.io/</em></a>
 
 ---
 
@@ -86,4 +86,4 @@ Loic was a speaker at the Athens Builders Meetup!
 
 ---
 
-That is the end of this interview! If you are interested or have extra questions, you are welcome to reach out on our <a href="http://alephium.org/discord" class="markup--anchor markup--p-anchor" data-href="http://alephium.org/discord" rel="noopener ugc nofollow noopener" target="_blank">Discord</a>, or in the <a href="https://t.me/alephiumgroup" class="markup--anchor markup--p-anchor" data-href="https://t.me/alephiumgroup" rel="noopener ugc nofollow noopener" target="_blank">Alephium Telegram channel</a>. Don’t forget to follow <a href="https://twitter.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium" rel="noopener ugc nofollow noopener" target="_blank">@alephium on Twitter</a> to stay up-to-date.
+That is the end of this interview! If you are interested or have extra questions, you are welcome to reach out on our [Discord](/discord), or in the <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Alephium Telegram channel</a>. Don’t forget to follow <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium">@alephium on Twitter</a> to stay up-to-date.

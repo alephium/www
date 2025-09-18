@@ -7,7 +7,7 @@ featuredImage: image_f759de7098.jpg
 title: Gate.io first to list Alephium (ALPH)
 ---
 
-**Lausanne, Switzerland, Jan 12, 2022** — Alephium, an innovative Layer 1 blockchain announces today its <a href="https://www.gate.io/fr/trade/ALPH_USDT" class="markup--anchor markup--p-anchor" data-href="https://www.gate.io/fr/trade/ALPH_USDT" rel="noopener" target="_blank">first official listing</a> on the top 10 exchange Gate.io.
+**Lausanne, Switzerland, Jan 12, 2022** — Alephium, an innovative Layer 1 blockchain announces today its <a href="https://www.gate.io/fr/trade/ALPH_USDT" data-href="https://www.gate.io/fr/trade/ALPH_USDT">first official listing</a> on the top 10 exchange Gate.io.
 
 ### **Gate.io First to List ALPH Token**
 
@@ -37,7 +37,7 @@ Alephiumis live and fully functional since November 8th, 2021. Its mainnet, arou
 
 ---
 
-_To learn more about_ <a href="https://alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/" rel="noopener" target="_blank"><em>Alephium</em></a>_, get in touch on_ <a href="https://discord.gg/JErgRBfRSB" class="markup--anchor markup--p-anchor" data-href="https://discord.gg/JErgRBfRSB" rel="noopener" target="_blank"><em>Discord</em></a> _or_ <a href="https://t.me/alephiumgroup" class="markup--anchor markup--p-anchor" data-href="https://t.me/alephiumgroup" rel="noopener" target="_blank"><em>Telegram</em></a>_, contribute on_ <a href="https://github.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium" rel="noopener" target="_blank"><em>GitHub</em></a>_, follow us on_ <a href="https://twitter.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium" rel="noopener" target="_blank"><em>Twitter</em></a> _or read us on_ <a href="https://medium.com/@alephium" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium" target="_blank"><em>Medium</em></a>_ !_ <a href="https://medium.com/@alephium/welcome-to-alephium-alph-48dfb72aa458" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/welcome-to-alephium-alph-48dfb72aa458" target="_blank">Or discover Alephium in 5’!</a>
+_To learn more about [Alephium](/), get in touch on_ <a href="https://discord.gg/JErgRBfRSB" data-href="https://discord.gg/JErgRBfRSB"><em>Discord</em></a> _or_ <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup"><em>Telegram</em></a>_, contribute on_ <a href="https://github.com/alephium" data-href="https://github.com/alephium"><em>GitHub</em></a>_, follow us on_ <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium"><em>Twitter</em></a> _or read us on_ <a href="https://medium.com/@alephium" data-href="https://medium.com/@alephium"><em>Medium</em></a>_ !_ <a href="https://medium.com/@alephium/welcome-to-alephium-alph-48dfb72aa458" data-href="https://medium.com/@alephium/welcome-to-alephium-alph-48dfb72aa458">Or discover Alephium in 5’!</a>
 
 ---
 

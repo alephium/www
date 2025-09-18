@@ -8,9 +8,9 @@ title: Alephium’s native token ALPH on Bitmart
 
 #### Trading starts on April 17th, 17:00 CEST
 
-Following the successful deployment of the <a href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a" target="_blank">Leman Network Upgrade</a>, Alephium is thrilled to announce that its native token, ALPH, will be listed at <a href="https://www.bitmart.com/" class="markup--anchor markup--p-anchor" data-href="https://www.bitmart.com/" rel="noopener" target="_blank">Bitmart</a> on April 17th, 17:00 CEST. Currently at \#22 in the Coinmarketcap ranking, with over USD 700 million in trading volume, Bitmart is a leading digital asset trading platform that provides a secure, reliable, and user-friendly trading experience to a global audience, including US citizens/residents.
+Following the successful deployment of the <a href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a" data-href="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a">Leman Network Upgrade</a>, Alephium is thrilled to announce that its native token, ALPH, will be listed at <a href="https://www.bitmart.com/" data-href="https://www.bitmart.com/">Bitmart</a> on April 17th, 17:00 CEST. Currently at \#22 in the Coinmarketcap ranking, with over USD 700 million in trading volume, Bitmart is a leading digital asset trading platform that provides a secure, reliable, and user-friendly trading experience to a global audience, including US citizens/residents.
 
-Bitmart platform offers a wide range of cryptocurrencies for trading, and this listing is a massive milestone for Alephium as it expands its reach to a wider user-base and marks a significant step forward for the project. You can open your account at Bitmart here: <a href="https://www.bitmart.com/register" class="markup--anchor markup--p-anchor" data-href="https://www.bitmart.com/register" rel="noopener" target="_blank">https://www.bitmart.com/register</a>.
+Bitmart platform offers a wide range of cryptocurrencies for trading, and this listing is a massive milestone for Alephium as it expands its reach to a wider user-base and marks a significant step forward for the project. You can open your account at Bitmart here: <a href="https://www.bitmart.com/register" data-href="https://www.bitmart.com/register">https://www.bitmart.com/register</a>.
 
 ### Listing Details:
 
@@ -40,4 +40,4 @@ There are two verification levels; choose the one that better fits your needs an
 
 ---
 
-If you have questions or want to know more, please come to Alephium’s <a href="http://alephium.org/discord" class="markup--anchor markup--p-anchor" data-href="http://alephium.org/discord" rel="noopener" target="_blank">Discord</a>, <a href="https://t.me/alephiumgroup" class="markup--anchor markup--p-anchor" data-href="https://t.me/alephiumgroup" rel="noopener" target="_blank">Telegram</a>, or reach out on <a href="https://twitter.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium" rel="noopener" target="_blank">Twitter</a>!
+If you have questions or want to know more, please come to Alephium’s [Discord](/discord), <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Telegram</a>, or reach out on <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium">Twitter</a>!

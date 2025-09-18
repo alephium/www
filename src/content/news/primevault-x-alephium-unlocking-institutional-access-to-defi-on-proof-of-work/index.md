@@ -89,7 +89,7 @@ If you’re building for institutions — or *are* one — this is your moment
 
 **Ready to build the future of finance?**
 
-Join the Alephium ecosystem → [https://alephium.org](https://alephium.org/)
+Join the Alephium ecosystem → [https://alephium.org](/)
 
 ### About PrimeVault
 
@@ -101,4 +101,4 @@ Founded in 2022, PrimeVault delivers crypto custody, token operations, and insti
 
 Alephium is the only scalable Layer 1 blockchain powered by Proof-of-Work and native sharding. Its unique sUTXO model enables secure and expressive smart contracts, while maintaining decentralization and efficiency. With the Danube Upgrade, Alephium delivers the speed of PoS chains without sacrificing trust assumptions. Alephium is building the execution layer for real-world decentralized finance, fast, secure, and ready for what’s next.
 
-**Learn more at** [alephium.org](http://alephium.org/)
+**Learn more at** [alephium.org](/)

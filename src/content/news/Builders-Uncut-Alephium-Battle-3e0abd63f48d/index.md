@@ -9,7 +9,7 @@ title: Builders Uncut — Alephium Battle
 
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
-Here, development team members Lorenzo and Eduardo discuss their backgrounds in tech and crypto, their passion for gaming, and the inspiration behind their project, <a href="https://alephium-battle.vercel.app/" class="markup--anchor markup--p-anchor" data-href="https://alephium-battle.vercel.app/" rel="noopener" target="_blank">Alephium Battle</a>. They share insights on the game’s development, the success of their first tournament, and their plans for future updates.
+Here, development team members Lorenzo and Eduardo discuss their backgrounds in tech and crypto, their passion for gaming, and the inspiration behind their project, <a href="https://alephium-battle.vercel.app/" data-href="https://alephium-battle.vercel.app/">Alephium Battle</a>. They share insights on the game’s development, the success of their first tournament, and their plans for future updates.
 
 If you prefer reading, find the full (slightly edited) transcript below.
 
@@ -70,10 +70,10 @@ If you prefer reading, find the full (slightly edited) transcript below.
 ---
 
 **Links:**  
-Website: <a href="https://alephium-battle.vercel.app/" class="markup--anchor markup--p-anchor" data-href="https://alephium-battle.vercel.app/" rel="nofollow noopener" target="_blank">https://alephium-battle.vercel.app/</a>  
-Twitter: <a href="https://twitter.com/AlephiumBattle" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/AlephiumBattle" rel="nofollow noopener" target="_blank">https://twitter.com/AlephiumBattle</a>  
-Discord: <a href="https://discord.gg/YGW9BJZYmB" class="markup--anchor markup--p-anchor" data-href="https://discord.gg/YGW9BJZYmB" rel="nofollow noopener" target="_blank">https://discord.gg/YGW9BJZYmB</a>
+Website: <a href="https://alephium-battle.vercel.app/" data-href="https://alephium-battle.vercel.app/" rel="nofollow noopener">https://alephium-battle.vercel.app/</a>  
+Twitter: <a href="https://twitter.com/AlephiumBattle" data-href="https://twitter.com/AlephiumBattle" rel="nofollow noopener">https://twitter.com/AlephiumBattle</a>  
+Discord: <a href="https://discord.gg/YGW9BJZYmB" data-href="https://discord.gg/YGW9BJZYmB" rel="nofollow noopener">https://discord.gg/YGW9BJZYmB</a>
 
 ---
 
-For any questions or feedback, reach out to us on <a href="http://alephium.org/discord" class="markup--anchor markup--p-anchor" data-href="http://alephium.org/discord" rel="noopener ugc nofollow noopener" target="_blank">Discord</a> or <a href="https://t.me/alephiumgroup" class="markup--anchor markup--p-anchor" data-href="https://t.me/alephiumgroup" rel="noopener ugc nofollow noopener" target="_blank">Telegram</a>, and follow <a href="https://x.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://x.com/alephium" rel="noopener ugc nofollow noopener" target="_blank">@alephium on Twitter</a> for the latest updates!
+For any questions or feedback, reach out to us on [Discord](/discord) or <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Telegram</a>, and follow <a href="https://x.com/alephium" data-href="https://x.com/alephium">@alephium on Twitter</a> for the latest updates!

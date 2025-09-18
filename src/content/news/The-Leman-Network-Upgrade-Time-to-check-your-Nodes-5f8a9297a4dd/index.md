@@ -7,7 +7,7 @@ featuredImage: image_466c174731.jpeg
 title: 'The Leman Network Upgrade: Time to check your Nodes!'
 ---
 
-#### Are you sure you have everything updated? A lot has been done since the <a href="https://medium.com/@alephium/the-leman-upgrade-2-232e3374abc4" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/the-leman-upgrade-2-232e3374abc4" target="_blank">previous announcement</a> and the <a href="https://medium.com/@alephium/the-leman-upgrade-ama-most-relevant-topics-and-questions-1fbbc68d4237" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/the-leman-upgrade-ama-most-relevant-topics-and-questions-1fbbc68d4237" target="_blank">“Hard” Talk</a> held in January, and this post is an invitation for you to update your nodes.
+#### Are you sure you have everything updated? A lot has been done since the <a href="https://medium.com/@alephium/the-leman-upgrade-2-232e3374abc4" data-href="https://medium.com/@alephium/the-leman-upgrade-2-232e3374abc4">previous announcement</a> and the <a href="https://medium.com/@alephium/the-leman-upgrade-ama-most-relevant-topics-and-questions-1fbbc68d4237" data-href="https://medium.com/@alephium/the-leman-upgrade-ama-most-relevant-topics-and-questions-1fbbc68d4237">“Hard” Talk</a> held in January, and this post is an invitation for you to update your nodes.
 
 February was a productive month with the release of the Full Node `v1.7.0`. After intensive testing, it is considered to be the last stable version before the Leman Network Upgrade.
 
@@ -38,13 +38,13 @@ Who & What:
 
 #### Full Node: v1.7.1
 
-Download it here: 🔗 <a href="https://github.com/alephium/alephium/releases/tag/v1.7.1" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/alephium/releases/tag/v1.7.1" rel="noopener" target="_blank">https://github.com/alephium/alephium/releases/tag/v1.7.1</a>
+Download it here: 🔗 <a href="https://github.com/alephium/alephium/releases/tag/v1.7.1" data-href="https://github.com/alephium/alephium/releases/tag/v1.7.1">https://github.com/alephium/alephium/releases/tag/v1.7.1</a>
 
 This release is backward compatible with the current Mainnet, so you don’t have to worry about compatibility issues. Download the `.jar` file from the GitHub page.
 
 #### Explorer-backend v1.13.0
 
-Download it here: 🔗 <a href="https://github.com/alephium/explorer-backend/releases/tag/v1.13.0" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/explorer-backend/releases/tag/v1.13.0" rel="noopener" target="_blank">https://github.com/alephium/explorer-backend/releases/tag/v1.13.0</a>
+Download it here: 🔗 <a href="https://github.com/alephium/explorer-backend/releases/tag/v1.13.0" data-href="https://github.com/alephium/explorer-backend/releases/tag/v1.13.0">https://github.com/alephium/explorer-backend/releases/tag/v1.13.0</a>
 
 This additional download is only needed for those running the explorer backend locally. However, it is mandatory for compatibility with full node `v1.7.0`. If that is the case, download it from the GitHub page.
 
@@ -59,4 +59,4 @@ The Leman Network Upgrade is closer than ever! Here is what you can expect next:
 
 ---
 
-**If you need assistance, you are welcome to reach out in the community channels on** <a href="https://alephium.org/discord" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/discord" rel="noopener" target="_blank"><strong>Discord</strong></a>**,** <a href="https://t.me/alephiumgroup" class="markup--anchor markup--p-anchor" data-href="https://t.me/alephiumgroup" rel="noopener" target="_blank"><strong>Telegram</strong></a>**. And follow** <a href="https://twitter.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium" rel="noopener" target="_blank"><strong>@alephium on Twitter</strong></a> **to stay up-to-date.**
+**If you need assistance, you are welcome to reach out in the community channels on [Discord](/discord)**, <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup"><strong>Telegram</strong></a>**. And follow** <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium"><strong>@alephium on Twitter</strong></a> **to stay up-to-date.**

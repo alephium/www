@@ -17,9 +17,9 @@ This means transferring test tokens from Alephium’s testnet to Ethereum’s an
 
 You can interact with the testnet bridge using the following addresses:
 
-Connect to the bridge via the portal URL: <a href="https://testnet.bridge.alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://testnet.bridge.alephium.org/" rel="noopener noreferrer noopener" target="_blank">https://testnet.bridge.alephium.org/</a>
+Connect to the bridge via the portal URL: <a href="https://testnet.bridge.alephium.org/" data-href="https://testnet.bridge.alephium.org/">https://testnet.bridge.alephium.org/</a>
 
-Bridge explorer: <a href="https://explorer.wormhole-testnet.alephium.org/explorer/" class="markup--anchor markup--p-anchor" data-href="https://explorer.wormhole-testnet.alephium.org/explorer/" rel="noopener" target="_blank">https://explorer.wormhole-testnet.alephium.org/explorer/</a>
+Bridge explorer: <a href="https://explorer.wormhole-testnet.alephium.org/explorer/" data-href="https://explorer.wormhole-testnet.alephium.org/explorer/">https://explorer.wormhole-testnet.alephium.org/explorer/</a>
 
 In this article, you will find all you need to successfully bridge two ways from Alephium testnet to Ethereum’s Goerli and BSC’s Testnet!
 
@@ -80,7 +80,7 @@ You can ask for some right from the wallet!
 <figcaption>Hop on the wagon and let’s go!</figcaption>
 </figure>
 
-To connect to the bridge, go to <a href="https://portal-bridge.wormhole-testnet.alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://portal-bridge.wormhole-testnet.alephium.org/" rel="noopener" target="_blank">https://portal-bridge.wormhole-testnet.alephium.org</a>
+To connect to the bridge, go to <a href="https://portal-bridge.wormhole-testnet.alephium.org/" data-href="https://portal-bridge.wormhole-testnet.alephium.org/">https://portal-bridge.wormhole-testnet.alephium.org</a>
 
 ![](image_cb924097f9.png)
 
@@ -88,7 +88,7 @@ Once on the page, click on the “connect” button. A prompt will appear, and y
 
 ![](image_2d2e9c8e57.png)
 
-You can use the <a href="https://medium.com/@alephium/alephium-launches-browser-extension-wallet-706dfeda98f5" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/alephium-launches-browser-extension-wallet-706dfeda98f5" target="_blank">Extension Wallet</a> or the <a href="https://medium.com/@alephium/the-desktop-wallet-2-0-d818bc1c722b" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/the-desktop-wallet-2-0-d818bc1c722b" target="_blank">Desktop Wallet</a>. (the WalletConnect option is currently not supported).
+You can use the <a href="https://medium.com/@alephium/alephium-launches-browser-extension-wallet-706dfeda98f5" data-href="https://medium.com/@alephium/alephium-launches-browser-extension-wallet-706dfeda98f5">Extension Wallet</a> or the <a href="https://medium.com/@alephium/the-desktop-wallet-2-0-d818bc1c722b" data-href="https://medium.com/@alephium/the-desktop-wallet-2-0-d818bc1c722b">Desktop Wallet</a>. (the WalletConnect option is currently not supported).
 
 After choosing your connection method, you can see your address below the two chains form.
 
@@ -103,7 +103,7 @@ The token bridge helps to send a token from one network to another. Now that you
 <figcaption>Goerli workers fixing transactions</figcaption>
 </figure>
 
-To connect to the Goerli Ethereum testnet, you will need a wallet. In this example, we’ll use <a href="https://metamask.io/" class="markup--anchor markup--p-anchor" data-href="https://metamask.io/" rel="noopener" target="_blank">Metamask</a> but it would work similarly with other wallets.
+To connect to the Goerli Ethereum testnet, you will need a wallet. In this example, we’ll use <a href="https://metamask.io/" data-href="https://metamask.io/">Metamask</a> but it would work similarly with other wallets.
 
 🚨 _If using Metamask, before starting the process, go to the “advanced settings”, and make sure that the “show test networks” toggle is activated!_
 
@@ -123,9 +123,9 @@ You will see that the network name has changed to “Goerli test network.”
 
 You will need enough GoerliETH to pay the fast fee for your incoming transaction on the Goerli Testnet (and send it to the Alephium Testnet).
 
-You can get 0.2 GoerliETH/day (It requires a subscription) here: <a href="https://goerlifaucet.com/" class="markup--anchor markup--p-anchor" data-href="https://goerlifaucet.com/" rel="noopener" target="_blank">https://goerlifaucet.com/</a>
+You can get 0.2 GoerliETH/day (It requires a subscription) here: <a href="https://goerlifaucet.com/" data-href="https://goerlifaucet.com/">https://goerlifaucet.com/</a>
 
-<a href="https://faucet.quicknode.com/ethereum/goerli" class="markup--anchor markup--p-anchor" data-href="https://faucet.quicknode.com/ethereum/goerli" rel="noopener" target="_blank">https://faucet.quicknode.com/ethereum/goerli</a> is another option (no subscription), but not as reliable and fast as the previous one. It provides 0.005 GoerliETH/day.
+<a href="https://faucet.quicknode.com/ethereum/goerli" data-href="https://faucet.quicknode.com/ethereum/goerli">https://faucet.quicknode.com/ethereum/goerli</a> is another option (no subscription), but not as reliable and fast as the previous one. It provides 0.005 GoerliETH/day.
 
 After receiving the ETH Goerli tokens, your Metamask wallet will be able to pay the transaction fee for the bridge of the target chain.
 
@@ -206,7 +206,7 @@ Now you can see your \$ALPH in your Wallet.
 
 **Using the “Redeem” section of the bridge**.
 
-If, for some reason, you left the bridge page before redeeming your tokens, you can always get your transaction hash from <a href="https://explorer.testnet.alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://explorer.testnet.alephium.org/" rel="noopener" target="_blank">https://explorer.testnet.alephium.org/</a>, and then click “Redeem” on the bridge page, paste it into the “source TX” field, and click “Recover.”
+If, for some reason, you left the bridge page before redeeming your tokens, you can always get your transaction hash from <a href="https://explorer.testnet.alephium.org/" data-href="https://explorer.testnet.alephium.org/">https://explorer.testnet.alephium.org/</a>, and then click “Redeem” on the bridge page, paste it into the “source TX” field, and click “Recover.”
 
 ![](image_48e18dc248.png)
 
@@ -225,7 +225,7 @@ With your Goerli ETH wallet connected on the bridge page, select the asset you w
 
 ![](image_29c23d962c.png)
 
-The default asset is ETH, but you can choose ALPH as well by copying the contract address found on this page: <a href="https://goerli.etherscan.io/token/0x1c5252a1996f82495579f16e5932d71d35db5a03" class="markup--anchor markup--p-anchor" data-href="https://goerli.etherscan.io/token/0x1c5252a1996f82495579f16e5932d71d35db5a03" rel="noopener" target="_blank">https://goerli.etherscan.io/token/0x1c5252a1996f82495579f16e5932d71d35db5a03</a>
+The default asset is ETH, but you can choose ALPH as well by copying the contract address found on this page: <a href="https://goerli.etherscan.io/token/0x1c5252a1996f82495579f16e5932d71d35db5a03" data-href="https://goerli.etherscan.io/token/0x1c5252a1996f82495579f16e5932d71d35db5a03">https://goerli.etherscan.io/token/0x1c5252a1996f82495579f16e5932d71d35db5a03</a>
 
 > Or by copying the contract address: 0x1C5252a1996F82495579F16e5932D71d35dB5a03
 
@@ -265,7 +265,7 @@ This will send the information to your Goerli ETH Wallet. Review all information
 
 ![](image_c2cde03d94.png)
 
-There is a waiting period regarding the <a href="https://medium.com/@alephium/time-to-finality-17d64eeffd25" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/time-to-finality-17d64eeffd25" target="_blank">time to finality</a>. It can take up to 15 minutes to finalize the transaction.
+There is a waiting period regarding the <a href="https://medium.com/@alephium/time-to-finality-17d64eeffd25" data-href="https://medium.com/@alephium/time-to-finality-17d64eeffd25">time to finality</a>. It can take up to 15 minutes to finalize the transaction.
 
 ![](image_0ed8c468e0.png)
 
@@ -277,7 +277,7 @@ Your Alephium Wallet will show you a transaction to sign. Review and information
 
 ![](image_2ec097e1ef.png)
 
-You can verify the transaction on <a href="https://explorer.testnet.alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://explorer.testnet.alephium.org/" rel="noopener" target="_blank">https://explorer.testnet.alephium.org/</a>
+You can verify the transaction on <a href="https://explorer.testnet.alephium.org/" data-href="https://explorer.testnet.alephium.org/">https://explorer.testnet.alephium.org/</a>
 
 **How to add ETH to your Browser Extension Wallet**
 
@@ -303,19 +303,19 @@ The token is now showing in your wallet.
 
 **Using the “Redeem” section of the bridge**.
 
-If, for some reason, you left the bridge page before redeeming your tokens, you can always get your transaction hash from <a href="https://explorer.testnet.alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://explorer.testnet.alephium.org/" rel="noopener" target="_blank">https://explorer.testnet.alephium.org/</a>, and then click “Redeem” on the bridge page, paste it into the “source TX” field, and click “Recover.”
+If, for some reason, you left the bridge page before redeeming your tokens, you can always get your transaction hash from <a href="https://explorer.testnet.alephium.org/" data-href="https://explorer.testnet.alephium.org/">https://explorer.testnet.alephium.org/</a>, and then click “Redeem” on the bridge page, paste it into the “source TX” field, and click “Recover.”
 
 ![](image_7e368043d3.png)
 
 ### 6 — How to connect to the BSC Testnet?
 
-To connect to the BSC Testnet, you will need a wallet. <a href="https://metamask.io/" class="markup--anchor markup--p-anchor" data-href="https://metamask.io/" rel="noopener" target="_blank">Metamask</a> is one of the available choices and will be used in this example.
+To connect to the BSC Testnet, you will need a wallet. <a href="https://metamask.io/" data-href="https://metamask.io/">Metamask</a> is one of the available choices and will be used in this example.
 
 🚨 When _using Metamask, before starting the process, go to the “advanced settings” and make sure that the “show test networks” toggle is activated!_
 
 ![](image_27d29f0087.png)
 
-If you don’t have the BSC Testnet in your wallet, go to the <a href="https://chainlist.org/?search=BSC&amp;testnets=true" class="markup--anchor markup--p-anchor" data-href="https://chainlist.org/?search=BSC&amp;testnets=true" rel="noopener" target="_blank">Chainlist website</a> to add it. Then, connect your wallet, ensure the “include testnet” checkbox is checked, and click the “Add to Metamask” button.
+If you don’t have the BSC Testnet in your wallet, go to the <a href="https://chainlist.org/?search=BSC&amp;testnets=true" data-href="https://chainlist.org/?search=BSC&amp;testnets=true">Chainlist website</a> to add it. Then, connect your wallet, ensure the “include testnet” checkbox is checked, and click the “Add to Metamask” button.
 
 ![](image_eba1e02c19.png)
 
@@ -333,7 +333,7 @@ You will see that the network name has changed to “Binace Smart Chain test net
 
 You will need enough test BNB to pay the fas fee for your incoming transaction on the BSC Testnet (and send it to the Alephium Testnet).
 
-You can get 0.05 BNB per day from <a href="https://faucet.quicknode.com/binance-smart-chain/bnb-testnet/" class="markup--anchor markup--p-anchor" data-href="https://faucet.quicknode.com/binance-smart-chain/bnb-testnet/" rel="noopener" target="_blank">https://faucet.quicknode.com/binance-smart-chain/bnb-testnet/</a>
+You can get 0.05 BNB per day from <a href="https://faucet.quicknode.com/binance-smart-chain/bnb-testnet/" data-href="https://faucet.quicknode.com/binance-smart-chain/bnb-testnet/">https://faucet.quicknode.com/binance-smart-chain/bnb-testnet/</a>
 
 After receiving the tBNB funds, your Metamask wallet can pay the transaction fee for the bridge on the target chain.
 
@@ -391,7 +391,7 @@ When the transaction is confirmed on the blockchain, you can check the assets in
 
 **Using the “Redeem” section of the bridge**.
 
-If, for some reason, you left the bridge page before redeeming your tokens, you can always get your transaction hash from <a href="https://explorer.testnet.alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://explorer.testnet.alephium.org/" rel="noopener" target="_blank">https://explorer.testnet.alephium.org/</a>. Then, click “Redeem” on the bridge page, paste the tx hash into the “source TX” field, and click “Recover.”
+If, for some reason, you left the bridge page before redeeming your tokens, you can always get your transaction hash from <a href="https://explorer.testnet.alephium.org/" data-href="https://explorer.testnet.alephium.org/">https://explorer.testnet.alephium.org/</a>. Then, click “Redeem” on the bridge page, paste the tx hash into the “source TX” field, and click “Recover.”
 
 ![](image_91c4f90c23.png)
 
@@ -457,7 +457,7 @@ This will send the information to your BSC Testnet Wallet. Review all informatio
 
 ![](image_30bb3501f6.png)
 
-There is a waiting period regarding the <a href="https://medium.com/@alephium/time-to-finality-17d64eeffd25" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/time-to-finality-17d64eeffd25" target="_blank">time to finality</a>. You will see that it is faster than the 15 minutes to finalize the transaction on the Goerli ETH Testnet.
+There is a waiting period regarding the <a href="https://medium.com/@alephium/time-to-finality-17d64eeffd25" data-href="https://medium.com/@alephium/time-to-finality-17d64eeffd25">time to finality</a>. You will see that it is faster than the 15 minutes to finalize the transaction on the Goerli ETH Testnet.
 
 After the waiting period, you can redeem the WBNB in your Alephium wallet. Then, click on the “redeem” button.
 
@@ -467,7 +467,7 @@ Your Alephium Wallet will show you a transaction to sign. Review and information
 
 ![](image_55a53f9a1c.png)
 
-You can verify the transaction on <a href="https://explorer.testnet.alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://explorer.testnet.alephium.org/" rel="noopener" target="_blank">https://explorer.testnet.alephium.org/</a>
+You can verify the transaction on <a href="https://explorer.testnet.alephium.org/" data-href="https://explorer.testnet.alephium.org/">https://explorer.testnet.alephium.org/</a>
 
 **How to add ETH to your Browser Extension Wallet**
 
@@ -489,7 +489,7 @@ Fill all the fields with the following:
 
 > Decimals: 18
 
-> Logo URI: <a href="https://raw.githubusercontent.com/alephium/tokens-meta/master/logos/WBNB.png" class="markup--anchor markup--blockquote-anchor" data-href="https://raw.githubusercontent.com/alephium/tokens-meta/master/logos/WBNB.png" rel="noopener" target="_blank">https://raw.githubusercontent.com/alephium/tokens-meta/master/logos/WBNB.png</a>
+> Logo URI: <a href="https://raw.githubusercontent.com/alephium/tokens-meta/master/logos/WBNB.png" data-href="https://raw.githubusercontent.com/alephium/tokens-meta/master/logos/WBNB.png">https://raw.githubusercontent.com/alephium/tokens-meta/master/logos/WBNB.png</a>
 
 ![](image_e9d043592f.png)
 
@@ -497,7 +497,7 @@ The token is now showing in your wallet.
 
 **Using the “Redeem” section of the bridge**.
 
-If, for some reason, you left the bridge page before redeeming your tokens, you can always get your transaction hash from <a href="https://explorer.testnet.alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://explorer.testnet.alephium.org/" rel="noopener" target="_blank">https://explorer.testnet.alephium.org/</a>, and then click “Redeem” on the bridge page, paste it into the “source TX” field, and click “Recover.”
+If, for some reason, you left the bridge page before redeeming your tokens, you can always get your transaction hash from <a href="https://explorer.testnet.alephium.org/" data-href="https://explorer.testnet.alephium.org/">https://explorer.testnet.alephium.org/</a>, and then click “Redeem” on the bridge page, paste it into the “source TX” field, and click “Recover.”
 
 ![](image_5a1656b698.png)
 
@@ -509,4 +509,4 @@ This finishes the basic tutorial, but there are other transfers you can do, like
 - ALPH from the Goerli Testnet to BSC Testnet
 - WETH from Alephium to the BSC Testnet
 
-If you need help or have extra questions, you are welcome to reach out in the \# 🎨dev-dapp channel on <a href="https://alephium.org/discord/" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/discord/" rel="noopener" target="_blank">Discord</a>, or in the Alephium <a href="https://t.me/alephiumgroup" class="markup--anchor markup--p-anchor" data-href="https://t.me/alephiumgroup" rel="noopener" target="_blank">Telegram</a> channel. Don’t forget to follow <a href="https://twitter.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium" rel="noopener" target="_blank">@alephium on Twitter</a> to stay up-to-date.
+If you need help or have extra questions, you are welcome to reach out in the \# 🎨dev-dapp channel on [Discord](/discord), or in the Alephium <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Telegram</a> channel. Don’t forget to follow <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium">@alephium on Twitter</a> to stay up-to-date.

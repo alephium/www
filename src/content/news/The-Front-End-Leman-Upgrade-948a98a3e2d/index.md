@@ -7,7 +7,7 @@ featuredImage: image_6e8c9c7e33.png
 title: The Front End Leman Upgrade
 ---
 
-#### _The coming_ <a href="https://medium.com/@alephium/announcing-the-leman-network-upgrade-c01a81e65f0e" class="markup--anchor markup--h4-anchor" data-href="https://medium.com/@alephium/announcing-the-leman-network-upgrade-c01a81e65f0e" target="_blank"><em>Leman upgrade approaches.</em></a> _Simultaneously, the front-end suite of tools is seeing more than a simple refresh._
+#### _The coming_ <a href="https://medium.com/@alephium/announcing-the-leman-network-upgrade-c01a81e65f0e" data-href="https://medium.com/@alephium/announcing-the-leman-network-upgrade-c01a81e65f0e"><em>Leman upgrade approaches.</em></a> _Simultaneously, the front-end suite of tools is seeing more than a simple refresh._
 
 The front end covers all the parts of Alephium that users interact with: the explorer, website, and desktop wallet are its most visible parts. All of these will see a significant evolution of their functionality and UX in the first quarter of 2023.
 

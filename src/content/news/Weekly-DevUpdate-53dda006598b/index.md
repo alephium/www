@@ -8,7 +8,7 @@ title: 'Weekly #DevUpdate'
 
 #### Week 34 Milestones & progress on dev on Alephium!
 
-🎇 Multisig Toolkit got its final details; Mobile wallet development is going strong, and the UI/UX Twitter Space with Swissborg & <a href="https://www.lace.io/" class="markup--anchor markup--p-anchor" data-href="https://www.lace.io/" rel="noopener" target="_blank">lace.io</a> was a blast!
+🎇 Multisig Toolkit got its final details; Mobile wallet development is going strong, and the UI/UX Twitter Space with Swissborg & <a href="https://www.lace.io/" data-href="https://www.lace.io/">lace.io</a> was a blast!
 
 ### Backend Team Updates
 
@@ -46,16 +46,16 @@ The display of total amounts on transaction pages has been enhanced for better c
 
 Preparations for Developer Workshop \#2 and TechTalk in September are in progress. Revisions to the Ambassador Program and updates to tokenomics, FAQ, and welcome documents too.
 
-Putting the Final touches to Zealy, and preparation for a video summarizing Alephium in 5 minutes as well as recap of the UI/UX Twitter Space event with @swissborg and @lace_io. Thanks to <a href="https://twitter.com/Ronnie_best_er" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/Ronnie_best_er" rel="noopener" target="_blank">@Ronnie_best_er</a>, <a href="https://twitter.com/MathieuHJ" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/MathieuHJ" rel="noopener" target="_blank">@MathieuHJ</a>, and <a href="https://twitter.com/mika_pote" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/mika_pote" rel="noopener" target="_blank">@mika_pote</a> for <a href="https://youtu.be/VK4QtY_q1ek?si=Gialxp0F1_Z5f-0o" class="markup--anchor markup--p-anchor" data-href="https://youtu.be/VK4QtY_q1ek?si=Gialxp0F1_Z5f-0o" rel="noopener" target="_blank">this awesome discussion</a>!
+Putting the Final touches to Zealy, and preparation for a video summarizing Alephium in 5 minutes as well as recap of the UI/UX Twitter Space event with @swissborg and @lace_io. Thanks to <a href="https://twitter.com/Ronnie_best_er" data-href="https://twitter.com/Ronnie_best_er">@Ronnie_best_er</a>, <a href="https://twitter.com/MathieuHJ" data-href="https://twitter.com/MathieuHJ">@MathieuHJ</a>, and <a href="https://twitter.com/mika_pote" data-href="https://twitter.com/mika_pote">@mika_pote</a> for <a href="https://youtu.be/VK4QtY_q1ek?si=Gialxp0F1_Z5f-0o" data-href="https://youtu.be/VK4QtY_q1ek?si=Gialxp0F1_Z5f-0o">this awesome discussion</a>!
 
 ### Community update from @Discord
 
-- Buzzing due to a release by <a href="https://twitter.com/VLADxVLADxVLAD" class="markup--anchor markup--li-anchor" data-href="https://twitter.com/VLADxVLADxVLAD" rel="noopener" target="_blank">@VLADxVLADxVLAD</a>.
+- Buzzing due to a release by <a href="https://twitter.com/VLADxVLADxVLAD" data-href="https://twitter.com/VLADxVLADxVLAD">@VLADxVLADxVLAD</a>.
 - Discussion on Minerstat bug affecting hashrate reporting.
-- Talks about potential new listing on <a href="https://twitter.com/MEXC_Official" class="markup--anchor markup--li-anchor" data-href="https://twitter.com/MEXC_Official" rel="noopener" target="_blank">@MEXC_Official</a>.
-- Discussion with <a href="https://medium.com/u/5b08e6838f2c" class="markup--user markup--li-user" data-href="https://medium.com/u/5b08e6838f2c" data-anchor-type="2" data-user-id="5b08e6838f2c" data-action-value="5b08e6838f2c" data-action="show-user-card" data-action-type="hover" target="_blank">cheng wang</a> on the bridge.
+- Talks about potential new listing on <a href="https://twitter.com/MEXC_Official" data-href="https://twitter.com/MEXC_Official">@MEXC_Official</a>.
+- Discussion with <a href="https://medium.com/u/5b08e6838f2c" class="markup--user markup--li-user" data-href="https://medium.com/u/5b08e6838f2c" data-anchor-type="2" data-user-id="5b08e6838f2c" data-action-value="5b08e6838f2c" data-action="show-user-card" data-action-type="hover">cheng wang</a> on the bridge.
 
-Check all progress on <a href="https://github.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium" rel="noopener" target="_blank">GitHub</a>!
+Check all progress on <a href="https://github.com/alephium" data-href="https://github.com/alephium">GitHub</a>!
 
 <figure id="8ae9" class="graf graf--figure graf--iframe graf-after--p">
 <blockquote>
@@ -70,7 +70,7 @@ Check all progress on <a href="https://github.com/alephium" class="markup--ancho
 - Talks of new CEX listing
 - Bridge convo with @wachmc and clarifications
 
-For those interested in the technical details, everything in Alephium is open source. You can check our progress and dive into the code on our <a href="https://github.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium" rel="noopener ugc nofollow noopener" target="_blank">GitHub</a>.
+For those interested in the technical details, everything in Alephium is open source. You can check our progress and dive into the code on our <a href="https://github.com/alephium" data-href="https://github.com/alephium">GitHub</a>.
 
 ---
 

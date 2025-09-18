@@ -11,7 +11,7 @@ _Updated: The tokenomics were published on Oct 5, 2021. We updated this article 
 
 ### Introducing ALPH
 
-The Alephium token’s official ticker symbol is <a href="https://coinmarketcap.com/currencies/alephium/" class="markup--anchor markup--p-anchor" data-href="https://coinmarketcap.com/currencies/alephium/" rel="noopener" target="_blank">ALPH</a>. It contributes to the blockchain’s decentralization and overall security by incentivizing miners to process blocks on the Alephium blockchain.
+The Alephium token’s official ticker symbol is <a href="https://coinmarketcap.com/currencies/alephium/" data-href="https://coinmarketcap.com/currencies/alephium/">ALPH</a>. It contributes to the blockchain’s decentralization and overall security by incentivizing miners to process blocks on the Alephium blockchain.
 
 Mining is a core mechanism of the Alephium blockchain: it is the mechanism by which transaction records are added and verified across the network. The token also secures the Alephium network against DDoS and spam attacks via transaction fees payable in ALPH.
 
@@ -29,22 +29,22 @@ The remaining 140 million ALPH (14% of the max supply) were minted with the gene
 
 ### Mining Emissions
 
-As Alephium uses <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" target="_blank">Proof of (Less) Work</a>, 860 million ALPH will be mined and distributed to the miners who secure the network as block rewards. There is no halving on Alephium, the block reward is adjusted dynamically depending on the network hashrate and timestamp.
+As Alephium uses <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301">Proof of (Less) Work</a>, 860 million ALPH will be mined and distributed to the miners who secure the network as block rewards. There is no halving on Alephium, the block reward is adjusted dynamically depending on the network hashrate and timestamp.
 
-You will find the full details & calculations of the mining rewards in <a href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33" target="_blank">this article</a>.
+You will find the full details & calculations of the mining rewards in <a href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33" data-href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33">this article</a>.
 
 The core emission schedule works like this: the block reward is bound by two curves based on hashrate and timestamp. At a given time and for a given hashrate, the reward per block equals the minimum between the time-based and hashrate-based rewards.
 
 > Block Reward = min (time-based reward, hashrate-based reward).
 
-When this article was last updated, the average block reward was 2.43 ALPH, resulting in approximately 50’554 ALPH mined daily (you can check the calculation <a href="https://docs.alephium.org/frequently-asked-questions#how-many-coins-are-mined-per-day" class="markup--anchor markup--p-anchor" data-href="https://docs.alephium.org/frequently-asked-questions#how-many-coins-are-mined-per-day" rel="noopener" target="_blank">here</a>).
+When this article was last updated, the average block reward was 2.43 ALPH, resulting in approximately 50’554 ALPH mined daily (you can check the calculation <a href="https://docs.alephium.org/frequently-asked-questions#how-many-coins-are-mined-per-day" data-href="https://docs.alephium.org/frequently-asked-questions#how-many-coins-are-mined-per-day">here</a>).
 
 #### Deflationary forces
 
 While inflationary, thanks to mining, Alephium also has deflationary forces:
 
 - 100% of the transaction fees are burned. (Before the Leman Network Upgrade in March 2023, only 50% of the transaction fees were burned).
-- <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" class="markup--anchor markup--li-anchor" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" target="_blank">Alephium’s Proof of Less Work</a> will require coin burning when it’ll be triggered to internalize part of the mining cost through the upfront burning of ALPH.
+- <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301">Alephium’s Proof of Less Work</a> will require coin burning when it’ll be triggered to internalize part of the mining cost through the upfront burning of ALPH.
 
 ### Genesis Allocation & Vesting Schedule
 
@@ -58,7 +58,7 @@ _Please note that according to CoinmarketCap’s official methodology, Ecosystem
 
 #### Sales allocation vesting
 
-Three sales events were held for ALPH: seed sale, <a href="https://medium.com/@alephium/alephium-closes-3-6m-pre-sale-from-80-contributors-to-expand-sharded-utxo-blockchain-platform-84f80492e28d" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/alephium-closes-3-6m-pre-sale-from-80-contributors-to-expand-sharded-utxo-blockchain-platform-84f80492e28d" target="_blank">pre-sale</a>, and <a href="https://medium.com/@alephium/alephium-partners-with-cetacean-capital-83cf2fbea8a1" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/alephium-partners-with-cetacean-capital-83cf2fbea8a1" target="_blank">private sale</a>. A total of 62,951,077 ALPH were sold and locked for periods varying between 2 to 4 years. The unlock schedule is detailed below.
+Three sales events were held for ALPH: seed sale, <a href="https://medium.com/@alephium/alephium-closes-3-6m-pre-sale-from-80-contributors-to-expand-sharded-utxo-blockchain-platform-84f80492e28d" data-href="https://medium.com/@alephium/alephium-closes-3-6m-pre-sale-from-80-contributors-to-expand-sharded-utxo-blockchain-platform-84f80492e28d">pre-sale</a>, and <a href="https://medium.com/@alephium/alephium-partners-with-cetacean-capital-83cf2fbea8a1" data-href="https://medium.com/@alephium/alephium-partners-with-cetacean-capital-83cf2fbea8a1">private sale</a>. A total of 62,951,077 ALPH were sold and locked for periods varying between 2 to 4 years. The unlock schedule is detailed below.
 
 ![](image_1d52ed10a4.png)
 
@@ -76,15 +76,15 @@ The ALPH allocated to the **Ecosystem** and for the **Treasury** follows this un
 
 **Where can I see the top Alephium wallets?**
 
-You can check the <a href="https://alph-richlist.vercel.app/" class="markup--anchor markup--p-anchor" data-href="https://alph-richlist.vercel.app/" rel="noopener" target="_blank">Alephium Rich List</a> to see the addresses with the most substantial balances. Find more <a href="https://status.notrustverify.ch/d/MggjRL1Vz/on-chain-stats?orgId=1" class="markup--anchor markup--p-anchor" data-href="https://status.notrustverify.ch/d/MggjRL1Vz/on-chain-stats?orgId=1" rel="noopener" target="_blank">stats</a> here & tools <a href="https://github.com/alephium/awesome-alephium" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/awesome-alephium" rel="noopener" target="_blank">here</a>. The Explorer is your go-to for checking the balance of a specific wallet.
+You can check the <a href="https://alph-richlist.vercel.app/" data-href="https://alph-richlist.vercel.app/">Alephium Rich List</a> to see the addresses with the most substantial balances. Find more <a href="https://status.notrustverify.ch/d/MggjRL1Vz/on-chain-stats?orgId=1" data-href="https://status.notrustverify.ch/d/MggjRL1Vz/on-chain-stats?orgId=1">stats</a> here & tools <a href="https://github.com/alephium/awesome-alephium" data-href="https://github.com/alephium/awesome-alephium">here</a>. The Explorer is your go-to for checking the balance of a specific wallet.
 
 **Is Alephium deflationary?**
 
-While Alephium has several deflationary forces, the <a href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33" target="_blank">emissions of ALPH</a> still exceed them as of today.
+While Alephium has several deflationary forces, the <a href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33" data-href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33">emissions of ALPH</a> still exceed them as of today.
 
 **What is the difference between Circulating Supply, Total Supply and Maximum Supply?**
 
-The definitions we are using for these terms come <a href="https://support.coinmarketcap.com/hc/en-us/articles/360043396252-Supply-Circulating-Total-Max-" class="markup--anchor markup--p-anchor" data-href="https://support.coinmarketcap.com/hc/en-us/articles/360043396252-Supply-Circulating-Total-Max-" rel="noopener" target="_blank">from coinmarketcap</a>. We have to comply with their definitions if we want to be correctly represented there:
+The definitions we are using for these terms come <a href="https://support.coinmarketcap.com/hc/en-us/articles/360043396252-Supply-Circulating-Total-Max-" data-href="https://support.coinmarketcap.com/hc/en-us/articles/360043396252-Supply-Circulating-Total-Max-">from coinmarketcap</a>. We have to comply with their definitions if we want to be correctly represented there:
 
 _Circulating Supply:_ Circulating Supply is the best approximation of the number of assets circulating in the market and the general public’s hands. Are not part of the Circulating Supply ALPH that is locked (via smart contracts or legal contracts), allocated to the team or private sale participants, or in Ecosystem/Bounty/Marketing initiatives**.**
 
@@ -92,7 +92,7 @@ _Total Supply:_ This is the number of ALPH in existence today. Basically, the su
 
 _Maximum Supply:_ The theoretical maximum of ALPH that can exist, it is set at 1 billion. However, it will never be reached due to the various deflationary mechanisms of Alphium.
 
-If you have extra questions, you are welcome to reach out on our <a href="http://alephium.org/discord" class="markup--anchor markup--p-anchor" data-href="http://alephium.org/discord" rel="noopener" target="_blank">Discord</a> or in the <a href="https://t.me/alephiumgroup" class="markup--anchor markup--p-anchor" data-href="https://t.me/alephiumgroup" rel="noopener" target="_blank">Alephium Telegram channel</a>. Don’t forget to follow <a href="https://twitter.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium" rel="noopener" target="_blank">@alephium on Twitter</a> to stay up-to-date.
+If you have extra questions, you are welcome to reach out on our [Discord](/discord) or in the <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Alephium Telegram channel</a>. Don’t forget to follow <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium">@alephium on Twitter</a> to stay up-to-date.
 
 ---
 
@@ -108,13 +108,13 @@ _Updated: The tokenomics were published on Oct 5, 2021. To address many question
 
 Alephium is the first operational sharded blockchain bringing scalability, ETH-inspired secure smart contracts, and energy efficiency to Bitcoin’s proven core technologies (UTXO and Proof-Of-Work) while ensuring better performance. Alephium also focuses on usability and accessibility making it the perfect blockchain to support decentralized applications and open protocols.
 
-Alephium is built on the BlockFlow and PoLW algorithms. BlockFLow delivers efficient and practical stateful UTXO sharding. <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" target="_blank">PoLW uses a clever combination of physical work and token economics</a> to dynamically adjust the work required to mine new blocks, ensuring a reduced energy footprint compared to classic Nakamoto PoW mining.
+Alephium is built on the BlockFlow and PoLW algorithms. BlockFLow delivers efficient and practical stateful UTXO sharding. <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301">PoLW uses a clever combination of physical work and token economics</a> to dynamically adjust the work required to mine new blocks, ensuring a reduced energy footprint compared to classic Nakamoto PoW mining.
 
 As in many other blockchain networks, the token mechanism of Alephium is crucial for its operation.
 
 ### Introducing ALPH
 
-The Alephium token recently adopted its official ticker symbol <a href="https://coinmarketcap.com/currencies/alephium/" class="markup--anchor markup--p-anchor" data-href="https://coinmarketcap.com/currencies/alephium/" rel="noopener" target="_blank">ALPH</a>. It contributes to the blockchain’s decentralization and overall security by incentivizing miners to process blocks on the Alephium blockchain.
+The Alephium token recently adopted its official ticker symbol <a href="https://coinmarketcap.com/currencies/alephium/" data-href="https://coinmarketcap.com/currencies/alephium/">ALPH</a>. It contributes to the blockchain’s decentralization and overall security by incentivizing miners to process blocks on the Alephium blockchain.
 
 Mining is a core mechanism of the Alephium blockchain: it is the mechanism by which transaction records are added and verified across the network. The token also secures the Alephium network against DDoS and spam attacks via transaction fees payable in ALPH tokens.
 
@@ -124,7 +124,7 @@ As Alephium uses Proof of (Less) Work, staking isn’t supported natively on Ale
 
 At Mainnet Launch, an initial supply 140M tokens (14% of the HardCap) was minted with the genesis block. Most of which are vesting over years (see below).
 
-The remaining supply of ALPH (86% or 860 million ALPH) tokens will be <a href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33" target="_blank">mined</a> over the next ~82 years (from 2021). The theoretical hardcap is 1 billion ALPH but it will never be reached due to deflationary forces like transaction fee burning (see below in the FAQ).
+The remaining supply of ALPH (86% or 860 million ALPH) tokens will be <a href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33" data-href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33">mined</a> over the next ~82 years (from 2021). The theoretical hardcap is 1 billion ALPH but it will never be reached due to deflationary forces like transaction fee burning (see below in the FAQ).
 
 <figure id="b5a9" class="graf graf--figure graf--iframe graf-after--p">
 
@@ -148,7 +148,7 @@ You’ll notice the graph doesn’t reach 140M tokens, that’s because not all 
 
 ### Sales token vesting
 
-Three sales events were held for ALPH tokens: seed sale, <a href="https://medium.com/@alephium/alephium-closes-3-6m-pre-sale-from-80-contributors-to-expand-sharded-utxo-blockchain-platform-84f80492e28d" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/alephium-closes-3-6m-pre-sale-from-80-contributors-to-expand-sharded-utxo-blockchain-platform-84f80492e28d" target="_blank">pre-sale</a>, and <a href="https://medium.com/@alephium/alephium-partners-with-cetacean-capital-83cf2fbea8a1" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/alephium-partners-with-cetacean-capital-83cf2fbea8a1" target="_blank">private sale</a>. A total of 62,951,077 ALPH tokens were sold (and locked), leaving 17,048,943 for future sales (and unlocked).
+Three sales events were held for ALPH tokens: seed sale, <a href="https://medium.com/@alephium/alephium-closes-3-6m-pre-sale-from-80-contributors-to-expand-sharded-utxo-blockchain-platform-84f80492e28d" data-href="https://medium.com/@alephium/alephium-closes-3-6m-pre-sale-from-80-contributors-to-expand-sharded-utxo-blockchain-platform-84f80492e28d">pre-sale</a>, and <a href="https://medium.com/@alephium/alephium-partners-with-cetacean-capital-83cf2fbea8a1" data-href="https://medium.com/@alephium/alephium-partners-with-cetacean-capital-83cf2fbea8a1">private sale</a>. A total of 62,951,077 ALPH tokens were sold (and locked), leaving 17,048,943 for future sales (and unlocked).
 
 The distribution schedule is detailed here:
 
@@ -179,21 +179,21 @@ At the time this entry was last updated the average block reward was: 2.87 ALPH 
 
 **Where can I see the richest wallets?**
 
-You can check the <a href="https://alph-richlist.vercel.app/" class="markup--anchor markup--p-anchor" data-href="https://alph-richlist.vercel.app/" rel="noopener" target="_blank">Alephium Rich List</a> or <a href="https://alph-top.web.app/" class="markup--anchor markup--p-anchor" data-href="https://alph-top.web.app/" rel="noopener" target="_blank">Alph Top</a> to see the addresses with the most substantial balances. Find more <a href="https://status.notrustverify.ch/d/MggjRL1Vz/on-chain-stats?orgId=1" class="markup--anchor markup--p-anchor" data-href="https://status.notrustverify.ch/d/MggjRL1Vz/on-chain-stats?orgId=1" rel="noopener" target="_blank">stats</a> here & tools <a href="https://github.com/alephium/awesome-alephium" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/awesome-alephium" rel="noopener" target="_blank">here</a>. To check the balance of a specific wallet, the <a href="https://explorer.alephium.org/" class="markup--anchor markup--p-anchor" data-href="https://explorer.alephium.org/" rel="noopener" target="_blank">Explorer</a> is your go-to.
+You can check the <a href="https://alph-richlist.vercel.app/" data-href="https://alph-richlist.vercel.app/">Alephium Rich List</a> or <a href="https://alph-top.web.app/" data-href="https://alph-top.web.app/">Alph Top</a> to see the addresses with the most substantial balances. Find more <a href="https://status.notrustverify.ch/d/MggjRL1Vz/on-chain-stats?orgId=1" data-href="https://status.notrustverify.ch/d/MggjRL1Vz/on-chain-stats?orgId=1">stats</a> here & tools <a href="https://github.com/alephium/awesome-alephium" data-href="https://github.com/alephium/awesome-alephium">here</a>. To check the balance of a specific wallet, the <a href="https://explorer.alephium.org/" data-href="https://explorer.alephium.org/">Explorer</a> is your go-to.
 
 **Is Alephium deflationary?**
 
-Not as of today. Tokens are awarded to miners, according to the rules defined <a href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33" target="_blank">here</a>.
+Not as of today. Tokens are awarded to miners, according to the rules defined <a href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33" data-href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33">here</a>.
 
 But there are deflationary forces at play too:
 
-- 100% of the transaction fees are burned. The implementation of the recently improved <a href="https://github.com/alephium/alephium/blob/master/docs/proposals/lemanDAA.md" class="markup--anchor markup--li-anchor" data-href="https://github.com/alephium/alephium/blob/master/docs/proposals/lemanDAA.md" rel="noopener" target="_blank">DAA</a> has increased that from 50% to 100%.
+- 100% of the transaction fees are burned. The implementation of the recently improved <a href="https://github.com/alephium/alephium/blob/master/docs/proposals/lemanDAA.md" data-href="https://github.com/alephium/alephium/blob/master/docs/proposals/lemanDAA.md">DAA</a> has increased that from 50% to 100%.
 - Each smart contract needs the storage of 1 ALPH as contract storage rent. While not technically burning tokens (because these are retrievable), this potentially reduces available tokens from circulation.
-- When triggered, <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" class="markup--anchor markup--li-anchor" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" target="_blank">Alephium’s Proof of Less Work</a> will internalize part of the mining cost through the upfront burning of ALPH.
+- When triggered, <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301">Alephium’s Proof of Less Work</a> will internalize part of the mining cost through the upfront burning of ALPH.
 
 **What is the difference between Circulating supply, Total supply and Maximum Supply?**
 
-The definitions we are using for these terms come <a href="https://support.coinmarketcap.com/hc/en-us/articles/360043396252-Supply-Circulating-Total-Max-" class="markup--anchor markup--p-anchor" data-href="https://support.coinmarketcap.com/hc/en-us/articles/360043396252-Supply-Circulating-Total-Max-" rel="noopener" target="_blank">from coinmarketcap</a>. We have to comply with their definitions if we want to be correctly represented there:
+The definitions we are using for these terms come <a href="https://support.coinmarketcap.com/hc/en-us/articles/360043396252-Supply-Circulating-Total-Max-" data-href="https://support.coinmarketcap.com/hc/en-us/articles/360043396252-Supply-Circulating-Total-Max-">from coinmarketcap</a>. We have to comply with their definitions if we want to be correctly represented there:
 
 _Circulating Supply:_ Circulating Supply is the best approximation of the number of assets circulating in the market and the general public’s hands. Are not part of the Circulating Supply assets that are locked (via smart contracts or legal contracts), allocated to the team or private investors, or in Ecosystem/Bounty/Marketing initiatives**.**
 
@@ -219,7 +219,7 @@ As in many other blockchain networks, the token mechanism of Alephium is crucial
 
 ### Introducing ALPH
 
-The Alephium token recently <a href="https://medium.com/@alephium/introducing-alph-8381dbd9f88d" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/introducing-alph-8381dbd9f88d" target="_blank">adopted its official ticker symbol ALPH.</a> It contributes to the blockchain’s decentralization and overall security by incentivizing miners to process blocks on the Alephium blockchain.
+The Alephium token recently <a href="https://medium.com/@alephium/introducing-alph-8381dbd9f88d" data-href="https://medium.com/@alephium/introducing-alph-8381dbd9f88d">adopted its official ticker symbol ALPH.</a> It contributes to the blockchain’s decentralization and overall security by incentivizing miners to process blocks on the Alephium blockchain.
 
 Mining is a core mechanism of the Alephium blockchain: it is the mechanism by which transaction records are added and verified across the network. The token also secures the Alephium network against DDoS and spam attacks via transaction fees payable in ALPH tokens.
 
@@ -235,13 +235,13 @@ The initial supply of tokens will be allocated over time as follows:
 - 30M tokens (3%) will be allocated for community and ecosystem development. These tokens will be locked for 4 years, and be vested 10M, 10M, 5M, 5M each year in quarters accordingly.
 - 30M tokens (3%) will be allocated to reward the team and support future developments of Alephium. These tokens will be locked for three years and be vested 10M, 10M, and 10M each year in quarters accordingly.
 
-The rest of the token supply (86% or 860'000'000 ALPH) <a href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33" target="_blank">will be mined</a> over the next **~82 years** (from 2021) to ensure transaction processing and smart contract execution on the Alephium blockchain.  
+The rest of the token supply (86% or 860'000'000 ALPH) <a href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33" data-href="https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33">will be mined</a> over the next **~82 years** (from 2021) to ensure transaction processing and smart contract execution on the Alephium blockchain.  
 **After being mined, ALPH is locked for 500 minutes.**
 
 There are several deflationary forces in Alephium’s tokenomics, including:
 
 - 100% of the transaction fees are burned with each block.
-- When triggered, <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" class="markup--anchor markup--li-anchor" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" target="_blank">Alephium’s Proof of Less Work</a> internalizes part of the mining cost through the upfront burning of ALPH.
+- When triggered, <a href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301" data-href="https://medium.com/@alephium/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301">Alephium’s Proof of Less Work</a> internalizes part of the mining cost through the upfront burning of ALPH.
 
 <figure id="7f99" class="graf graf--figure graf-after--li graf--trailing">
 <img src="image_eeb8d1f4c3.png" class="graf-image" data-image-id="1*YjGQ0H2PWMhX9AIi9dUSkg.png" data-width="1140" data-height="674" />

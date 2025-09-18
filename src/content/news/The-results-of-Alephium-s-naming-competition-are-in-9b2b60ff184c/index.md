@@ -13,7 +13,7 @@ title: The results of Alephium’s naming competition are in!
 #### Smallest Denomination
 
 **Set _(digdug#5494) — 40 ALPH (40 \* 10¹⁸ Sets)  
-_**Relating to the math behind Aleph, namely the <a href="https://en.wikipedia.org/wiki/Set_theory" class="markup--anchor markup--p-anchor" data-href="https://en.wikipedia.org/wiki/Set_theory" rel="noopener" target="_blank">Set Theory.</a> Easy on the tongue. Phonetically close to both “Cent” and “Sat’”. The fact that one of the team members’ first name is Set has nothing to do with it!
+_**Relating to the math behind Aleph, namely the <a href="https://en.wikipedia.org/wiki/Set_theory" data-href="https://en.wikipedia.org/wiki/Set_theory">Set Theory.</a> Easy on the tongue. Phonetically close to both “Cent” and “Sat’”. The fact that one of the team members’ first name is Set has nothing to do with it!
 
 <figure id="9ae3" class="graf graf--figure graf-after--p">
 <img src="image_48a75b1094.jpg" class="graf-image" data-image-id="0*8EsjVRRWWr-GlOjD" data-width="1041" data-height="1041" data-is-featured="true" />
@@ -23,7 +23,7 @@ _**Relating to the math behind Aleph, namely the <a href="https://en.wikipedia.o
 #### Virtual Machine
 
 **Alphred _(eyettea#6915) — 0 ALPH  
-_**Eyettea is a team member and we are not entitled to rewards. More ALPH for the others! \o/ However, the name Alphred immediately stuck! It was an obvious match for everyone. And Batman’s butler, <a href="https://en.wikipedia.org/wiki/Alfred_Pennyworth" class="markup--anchor markup--p-anchor" data-href="https://en.wikipedia.org/wiki/Alfred_Pennyworth" rel="noopener" target="_blank">Mr. Pennyworth</a> would agree! 🦇
+_**Eyettea is a team member and we are not entitled to rewards. More ALPH for the others! \o/ However, the name Alphred immediately stuck! It was an obvious match for everyone. And Batman’s butler, <a href="https://en.wikipedia.org/wiki/Alfred_Pennyworth" data-href="https://en.wikipedia.org/wiki/Alfred_Pennyworth">Mr. Pennyworth</a> would agree! 🦇
 
 #### Smart Contract Language
 

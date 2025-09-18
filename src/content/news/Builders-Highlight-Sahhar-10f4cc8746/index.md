@@ -13,7 +13,7 @@ title: 'Builders Highlight: Sahhar'
 
 ---
 
-The first builder in the series is **Sahhar**, the community developer behind the <a href="https://github.com/sahharYoucef/alephium_wallet" class="markup--anchor markup--p-anchor" data-href="https://github.com/sahharYoucef/alephium_wallet" rel="noopener" target="_blank">Sahhar Mobile Wallet</a> available on the <a href="https://play.google.com/store/apps/details?id=com.sahhar.sahhar_wallet" class="markup--anchor markup--p-anchor" data-href="https://play.google.com/store/apps/details?id=com.sahhar.sahhar_wallet" rel="noopener" target="_blank">Google Play store</a>. It features advanced security options, like multisig management, but don’t take our word for it, let’s see what Sahhar has to say about his project:
+The first builder in the series is **Sahhar**, the community developer behind the <a href="https://github.com/sahharYoucef/alephium_wallet" data-href="https://github.com/sahharYoucef/alephium_wallet">Sahhar Mobile Wallet</a> available on the <a href="https://play.google.com/store/apps/details?id=com.sahhar.sahhar_wallet" data-href="https://play.google.com/store/apps/details?id=com.sahhar.sahhar_wallet">Google Play store</a>. It features advanced security options, like multisig management, but don’t take our word for it, let’s see what Sahhar has to say about his project:
 
 #### Tell us a little bit about your project. What is it, what does it, and how does it interact with the Alephium blockchain?
 
@@ -21,15 +21,15 @@ It is a wallet for mobile, built using a cross-platform framework called Flutter
 
 #### What motivated you to develop on Alephium blockchain, and what set it apart from other blockchain platforms?
 
-I joined the <a href="https://t.me/alephiumgroup" class="markup--anchor markup--p-anchor" data-href="https://t.me/alephiumgroup" rel="noopener" target="_blank">Alephium group chat</a> in its early days, and I noticed that there was a lot of work and development happening in the background, and <a href="https://github.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium" rel="noopener" target="_blank">GitHub</a> was always on fire! Cheng also was followed by Kushti, founder of Ergo, who is one of the best blockchain developers, in my opinion, and was also a member of the Alephium group chat.
+I joined the <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Alephium group chat</a> in its early days, and I noticed that there was a lot of work and development happening in the background, and <a href="https://github.com/alephium" data-href="https://github.com/alephium">GitHub</a> was always on fire! Cheng also was followed by Kushti, founder of Ergo, who is one of the best blockchain developers, in my opinion, and was also a member of the Alephium group chat.
 
 #### What tech stack did you use in your project? What did you consider when choosing the right tech stack for your project?
 
-I used <a href="https://flutter.dev/" class="markup--anchor markup--p-anchor" data-href="https://flutter.dev/" rel="noopener" target="_blank">Flutter/Dart,</a> which is a framework created by Google for building cross-platform apps. It’s really fast and gives native apps equivalent performance when compared to other frameworks like <a href="https://reactnative.dev/" class="markup--anchor markup--p-anchor" data-href="https://reactnative.dev/" rel="noopener" target="_blank">React Native</a>, and you can build on iOS, Android, Windows, Mac, and Web using a single codebase.
+I used <a href="https://flutter.dev/" data-href="https://flutter.dev/">Flutter/Dart,</a> which is a framework created by Google for building cross-platform apps. It’s really fast and gives native apps equivalent performance when compared to other frameworks like <a href="https://reactnative.dev/" data-href="https://reactnative.dev/">React Native</a>, and you can build on iOS, Android, Windows, Mac, and Web using a single codebase.
 
 #### What features are you most proud of?
 
-The multisig wallet! It’s still using the <a href="https://docs.alephium.org/dapps/public-services/#node-and-explorer-apis" class="markup--anchor markup--p-anchor" data-href="https://docs.alephium.org/dapps/public-services/#node-and-explorer-apis" rel="noopener" target="_blank">node API</a> to sign the transaction, but I’ll make the algorithm run locally soon.
+The multisig wallet! It’s still using the <a href="https://docs.alephium.org/dapps/public-services/#node-and-explorer-apis" data-href="https://docs.alephium.org/dapps/public-services/#node-and-explorer-apis">node API</a> to sign the transaction, but I’ll make the algorithm run locally soon.
 
 `video: https://www.youtube.com/watch?v=uAseUydyddw`
 
@@ -47,12 +47,12 @@ DeFi is one of the strongest use cases for blockchain technology, and as Alephiu
 
 #### Lastly, what advice would you give to someone looking to build on Alephium, based on your experience?
 
-My advice is for devs to <a href="https://docs.alephium.org/dapps/build-dapp-from-scratch" class="markup--anchor markup--p-anchor" data-href="https://docs.alephium.org/dapps/build-dapp-from-scratch" rel="noopener" target="_blank">find out how to build</a> on Alephium. There are a lot of good opportunities for building interesting stuff! Alephium is giving rewards for interesting and good projects, so they have a nice opportunity to mirror projects from other chains to Alephium while benefiting from Alephium’s unique chain features, like high speed and low transaction fees.
+My advice is for devs to <a href="https://docs.alephium.org/dapps/build-dapp-from-scratch" data-href="https://docs.alephium.org/dapps/build-dapp-from-scratch">find out how to build</a> on Alephium. There are a lot of good opportunities for building interesting stuff! Alephium is giving rewards for interesting and good projects, so they have a nice opportunity to mirror projects from other chains to Alephium while benefiting from Alephium’s unique chain features, like high speed and low transaction fees.
 
-Thanks, Sahhar for your answers! Alephium is thrilled to have such talent builders in the community! You can find Sahhar on <a href="https://github.com/sahharYoucef" class="markup--anchor markup--p-anchor" data-href="https://github.com/sahharYoucef" rel="noopener" target="_blank">GitHub</a> or <a href="https://twitter.com/SahharYoucef" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/SahharYoucef" rel="noopener" target="_blank">Twitter</a>, or in our <a href="http://alephium.org/discord" class="markup--anchor markup--p-anchor" data-href="http://alephium.org/discord" rel="noopener" target="_blank">Discord</a>!
+Thanks, Sahhar for your answers! Alephium is thrilled to have such talent builders in the community! You can find Sahhar on <a href="https://github.com/sahharYoucef" data-href="https://github.com/sahharYoucef">GitHub</a> or <a href="https://twitter.com/SahharYoucef" data-href="https://twitter.com/SahharYoucef">Twitter</a>, or in our [Discord](/discord)!
 
 ---
 
-Have you built something or have a nice idea and want to request a grant or reward? You can access the <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" class="markup--anchor markup--p-anchor" data-href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" rel="noopener" target="_blank">Alephium Community Grants &amp; Reward Program page</a> for more info!
+Have you built something or have a nice idea and want to request a grant or reward? You can access the <a href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" data-href="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md">Alephium Community Grants &amp; Reward Program page</a> for more info!
 
-If you need help or have extra questions, you are welcome to reach out in the \# 🎨dev-dapp channel on <a href="https://alephium.org/discord/" class="markup--anchor markup--p-anchor" data-href="https://alephium.org/discord/" rel="noopener" target="_blank">Discord</a>, or in the Alephium <a href="https://t.me/alephiumgroup" class="markup--anchor markup--p-anchor" data-href="https://t.me/alephiumgroup" rel="noopener" target="_blank">Telegram</a> channel. Don’t forget to follow <a href="https://twitter.com/alephium" class="markup--anchor markup--p-anchor" data-href="https://twitter.com/alephium" rel="noopener" target="_blank">@alephium on Twitter</a> to stay up-to-date.
+If you need help or have extra questions, you are welcome to reach out in the \# 🎨dev-dapp channel on [Discord](/discord), or in the Alephium <a href="https://t.me/alephiumgroup" data-href="https://t.me/alephiumgroup">Telegram</a> channel. Don’t forget to follow <a href="https://twitter.com/alephium" data-href="https://twitter.com/alephium">@alephium on Twitter</a> to stay up-to-date.
