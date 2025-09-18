@@ -75,7 +75,7 @@ We prioritize the desktop wallet because it allows us to offer a seamless user e
 
 Both wallets serve different purposes and attract different users, contributing to the overall accessibility of our platform.
 
-**Alephium, thanks to its** [single-step cross-group](/news/post/an-introduction-to-blockflow-alephiums-sharding-algorithm-bbbf318c3402) **design, abstracts a lot of the technical complexity of sharded blockchains away, but people will sometimes still need to understand which group they are. Same with the minimum requirement for sending tokens, people need to pay a 0.001 ALPH fee for “UTXO storage”. And the deployment of smart contracts that requires a storage rent of 1 ALPH. What’s your design process to integrate the technical peculiarities into a manageable experience for a normal user who is not an engineer?**
+**Alephium, thanks to its** [single-step cross-group](/news/post/an-introduction-to-blockflow-alephium-s-sharding-algorithm-bbbf318c3402) **design, abstracts a lot of the technical complexity of sharded blockchains away, but people will sometimes still need to understand which group they are. Same with the minimum requirement for sending tokens, people need to pay a 0.001 ALPH fee for “UTXO storage”. And the deployment of smart contracts that requires a storage rent of 1 ALPH. What’s your design process to integrate the technical peculiarities into a manageable experience for a normal user who is not an engineer?**
 
 Our design process revolves around simplicity and education.
 

@@ -24,7 +24,7 @@ For context: [https://beincrypto.com/learn/friend-tech-explained/](https://beinc
 
 ## Workshop Agenda
 
-This time it will require two sessions, one about sub-contracts, and the other one about the [APS (Asset Permission System)](/news/post/alephiums-aps-eliminating-evm-token-approval-risks-5407e7e70a33).
+This time it will require two sessions, one about sub-contracts, and the other one about the [APS (Asset Permission System)](/news/post/alephium-s-aps-eliminating-evm-token-approval-risks-5407e7e70a33).
 
 **For the first session:**
 

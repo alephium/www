@@ -7,7 +7,7 @@ featuredImage: image_2adc785dc9.jpg
 title: 'Builders Highlight #6: What the Duck'
 ---
 
-_Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real utility for users. In the Builders Highlight series, they share more about their projects, thoughts, and insights on why building on Alephium. You can find_ [#1 here](/news/post/builders-highlight-sezame-wallet-ddb4aeb61881)_,_ [#2 here](/news/post/builders-highlight-alphpaca-nfts-99c69775f04c), [#3 here](/news/post/builders-highlight-3-ayin-6be4a6bd4ec2), [#4 here](/news/post/builders-highlight-4-no-trust-verify-9ea495ca826f), _and_ [#5 here](/news/post/builders-highlight-5-deadrare-d5ff90d6161e)_!_
+_Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real utility for users. In the Builders Highlight series, they share more about their projects, thoughts, and insights on why building on Alephium. You can find_ [#1 here](/news/post/builders-highlights-1-sezame-wallet-ddb4aeb61881)_,_ [#2 here](/news/post/builders-highlights-2-alphpaca-nfts-99c69775f04c), [#3 here](/news/post/builders-highlight-3-ayin-6be4a6bd4ec2), [#4 here](/news/post/builders-highlight-4-no-trust-verify-9ea495ca826f), _and_ [#5 here](/news/post/builders-highlight-5-deadrare-d5ff90d6161e)_!_
 
 This episode is about [What The Duck](https://theducklounge.com/#/), a one-man project by [0x_reed](https://twitter.com/0x_reed) that blends [an NFT collection](https://deadrare.io/collection/what-the-duck) and online gaming. Here he shares a little bit about his inspiration, the challenges this project brought, and some plans for the future.
 

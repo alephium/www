@@ -6,7 +6,7 @@ spotlight: false
 featuredImage: image_b43f0a37be.jpeg
 title: Community Highlight, Wilhelm Källström aka “Oracleuggla”
 ---
-Alephium takes an organic approach to community building. We believe actions speak louder than words and that we rally people together around the quality of those actions. We’ve been incredibly fortunate to attract a diverse, and self-driven community. More episodes: [#2 here](/news/post/community-highlight-cgi-bin-c102cc106f19), [#3here](/news/post/community-highlight-3-digdug-48a7ec868504), [#4 here,](/news/post/community-highlight-4-montail-e24fd88882a0) [#5 here](/news/post/community-highlight-5-txn-71c4fd76ffe8) and [#6 here](/news/post/community-highlight-6-waldi-zkit-beats-37af1f6df3b8).
+Alephium takes an organic approach to community building. We believe actions speak louder than words and that we rally people together around the quality of those actions. We’ve been incredibly fortunate to attract a diverse, and self-driven community. More episodes: [#2 here](/news/post/community-highlight-2-cgi-bin-c102cc106f19), [#3here](/news/post/community-highlight-3-digdug-48a7ec868504), [#4 here,](/news/post/community-highlight-4-montail-e24fd88882a0) [#5 here](/news/post/community-highlight-5-txn-71c4fd76ffe8) and [#6 here](/news/post/community-highlight-6-waldi-zkit-beats-37af1f6df3b8).
 
 This series of highlights aims at showcasing this community by putting the spotlight on one actively contributing member at a time. This is an opportunity for us to put into the light contributions from the community along with the things they are passionate about and what drives them.
 
@@ -54,4 +54,4 @@ The adoption of Blockchain in my generation is growing day by day, nowadays I he
 
 ---
 
-**This concludes the first edition of this series. Thank you Wilhelm for your time and efforts! Find episode** [#2 here](/news/post/community-highlight-cgi-bin-c102cc106f19)**,** [#3 here](/news/post/community-highlight-3-digdug-48a7ec868504) **and** [#4 here](/news/post/community-highlight-4-montail-e24fd88882a0). **Meanwhile do not hesitate to tell us on** [Discord](https://discord.gg/JErgRBfRSB) **who’d you want to know more about!**
+**This concludes the first edition of this series. Thank you Wilhelm for your time and efforts! Find episode** [#2 here](/news/post/community-highlight-2-cgi-bin-c102cc106f19)**,** [#3 here](/news/post/community-highlight-3-digdug-48a7ec868504) **and** [#4 here](/news/post/community-highlight-4-montail-e24fd88882a0). **Meanwhile do not hesitate to tell us on** [Discord](https://discord.gg/JErgRBfRSB) **who’d you want to know more about!**

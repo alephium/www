@@ -19,7 +19,7 @@ Alephium’s core contributors have invested significant efforts to build & test
 >
 > [https://bridge.alephium.org](https://bridge.alephium.org/)
 
-It works exactly the same way as Ethereum’s one, so you won’t be surprised if you’ve already used the other one before. If you didn’t, here is a [step-by-step tutorial on how to connect with the Bridge](https://medium.com/@alephium/the-bsc-alephium-bridge-is-live-on-testnet-a8cddd0a5014).
+It works exactly the same way as Ethereum’s one, so you won’t be surprised if you’ve already used the other one before. If you didn’t, here is a [step-by-step tutorial on how to connect with the Bridge](/news/post/the-bsc-alephium-bridge-is-live-on-testnet-a8cddd0a5014).
 
 If you’re using the front-end, you’ll need a BSC wallet (like Metamask for example), and an [Alephium Wallet](/wallets).
 

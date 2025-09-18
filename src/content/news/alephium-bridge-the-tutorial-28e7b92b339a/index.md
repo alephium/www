@@ -7,7 +7,7 @@ title: 'Alephium Bridge: The Tutorial'
 ---
 How to bridge your tokens + what to do on the Alephium Ecosystem
 
-_This tutorial was updated to reflect the new conditions after the_ [Rhône Network Upgrade](/news/post/rh%C3%B4ne-network-upgrade-activated-cbeb298585fe)_: bridging from Alephium to Ethereum requires at least 205 blocks_ **_and_** _at least 55 minutes._
+_This tutorial was updated to reflect the new conditions after the_ [Rhône Network Upgrade](/news/post/rh-ne-network-upgrade-activated-cbeb298585fe)_: bridging from Alephium to Ethereum requires at least 205 blocks_ **_and_** _at least 55 minutes._
 
 Welcome to the Alephium Bridge Tutorial!
 

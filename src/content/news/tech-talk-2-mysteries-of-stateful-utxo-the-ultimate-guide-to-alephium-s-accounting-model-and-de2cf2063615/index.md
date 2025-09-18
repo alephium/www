@@ -56,7 +56,7 @@ At the same time, DeFi summer demonstrated the power of decentralized apps to th
 
 **VM: What do you mean by sharding and scalable UTXO, and in which way is it more scalable than the standard UTXO model?**
 
-CW: Our Blockflow architecture works like this: [We have G groups, and then we have G x G blockchains](/news/post/an-introduction-to-blockflow-alephiums-sharding-algorithm-bbbf318c3402). UTXO is used on top of this to transact between the groups. This is what I meant by a scalable UTXO model: it is based on the UTXO model, but we scale it via sharding using the Blockflow algorithm and transactions can happen on-chain in parallel.
+CW: Our Blockflow architecture works like this: [We have G groups, and then we have G x G blockchains](/news/post/an-introduction-to-blockflow-alephium-s-sharding-algorithm-bbbf318c3402). UTXO is used on top of this to transact between the groups. This is what I meant by a scalable UTXO model: it is based on the UTXO model, but we scale it via sharding using the Blockflow algorithm and transactions can happen on-chain in parallel.
 
 VM: **What is the stateful UTXO model and how does it work at a high level?**
 

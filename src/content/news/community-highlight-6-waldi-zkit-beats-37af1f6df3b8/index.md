@@ -7,7 +7,7 @@ featuredImage: image_e16d660d23.jpg
 title: 'Community Highlight #6, Waldi — Zkit/beats'
 ---
 
-**Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’ contributions to the ecosystem, what drives them, and what they are passionate about! More episodes: [#1 here](/news/post/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692), [#2 here](/news/post/community-highlight-cgi-bin-c102cc106f19), [#3 here](/news/post/community-highlight-3-digdug-48a7ec868504), [#4 here](/news/post/community-highlight-4-montail-e24fd88882a0), and [#5 here.](/news/post/community-highlight-5-txn-71c4fd76ffe8)**
+**Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’ contributions to the ecosystem, what drives them, and what they are passionate about! More episodes: [#1 here](/news/post/community-highlight-wilhelm-k-llstr-m-aka-oracleuggla-81d3938c5692), [#2 here](/news/post/community-highlight-2-cgi-bin-c102cc106f19), [#3 here](/news/post/community-highlight-3-digdug-48a7ec868504), [#4 here](/news/post/community-highlight-4-montail-e24fd88882a0), and [#5 here.](/news/post/community-highlight-5-txn-71c4fd76ffe8)**
 
 **In this edition, we introduce you to Waldi, also known as Zkit/beats, a humble community member that has made himself a name in the community through some serious promotion work. Many peers might have him to thank for even hearing about the project in the first place. His Twitter threads, translation work, and thoughtful feedback in the channels have helped set a constructive tone and brought the golden linen of the project to the attention of many newcomers.**
 

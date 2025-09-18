@@ -7,7 +7,7 @@ featuredImage: image_da60a03774.jpg
 title: 'Community Highlight #4, MontaiL'
 ---
 
-**Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’ contributions to the ecosystem, what drives them and what they are passionate about! More episodes: [#1 here](/news/post/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692)_,_ [#2 here](/news/post/community-highlight-cgi-bin-c102cc106f19)_,_ [#3 here](/news/post/community-highlight-3-digdug-48a7ec868504)_,_ [#5 here](/news/post/community-highlight-5-txn-71c4fd76ffe8) and [#6 here](/news/post/community-highlight-6-waldi-zkit-beats-37af1f6df3b8).**
+**Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’ contributions to the ecosystem, what drives them and what they are passionate about! More episodes: [#1 here](/news/post/community-highlight-wilhelm-k-llstr-m-aka-oracleuggla-81d3938c5692)_,_ [#2 here](/news/post/community-highlight-2-cgi-bin-c102cc106f19)_,_ [#3 here](/news/post/community-highlight-3-digdug-48a7ec868504)_,_ [#5 here](/news/post/community-highlight-5-txn-71c4fd76ffe8) and [#6 here](/news/post/community-highlight-6-waldi-zkit-beats-37af1f6df3b8).**
 
 **This young blood is a creative and engaged Alephium OG. Joining the [Discord](/discord) early on, he quickly made himself a comfortable spot in the community with a friendly can-do attitude, a steady supply of home-cooked memes and by helping many peers getting familiar with Alephium. Please give a warm applause for MontaiL!**
 

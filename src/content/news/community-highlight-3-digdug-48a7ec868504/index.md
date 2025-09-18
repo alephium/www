@@ -7,7 +7,7 @@ featuredImage: image_5945f1f277.png
 title: 'Community Highlight #3, digdug'
 ---
 
-**Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’ contributions to the ecosystem, what drives them and what they are passionate about! More episodes:_ [#1 here](/news/post/community-highlight-wilhelm-k%C3%A4llstr%C3%B6m-aka-oracleuggla-81d3938c5692)_,_ [#2 here](/news/post/community-highlight-cgi-bin-c102cc106f19)_,_ [#4 here](/news/post/community-highlight-4-montail-e24fd88882a0)_,_ [#5 here](/news/post/community-highlight-5-txn-71c4fd76ffe8) and [#6 here](/news/post/community-highlight-6-waldi-zkit-beats-37af1f6df3b8).**
+**Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’ contributions to the ecosystem, what drives them and what they are passionate about! More episodes:_ [#1 here](/news/post/community-highlight-wilhelm-k-llstr-m-aka-oracleuggla-81d3938c5692)_,_ [#2 here](/news/post/community-highlight-2-cgi-bin-c102cc106f19)_,_ [#4 here](/news/post/community-highlight-4-montail-e24fd88882a0)_,_ [#5 here](/news/post/community-highlight-5-txn-71c4fd76ffe8) and [#6 here](/news/post/community-highlight-6-waldi-zkit-beats-37af1f6df3b8).**
 
 **In a jungle of Buidlers, Miners, Hodlers, Solar- and Lunar-punks, this peer stands out through engagement and amicability. With eloquence and a very good meme-game, he types through the chat in a fine balance between technological moonshots and realism. Give it up for Alephium OG Digdug, a central pillar in the Discord channels’ atmosphere and a subtly interrogating voice of the community.**
 

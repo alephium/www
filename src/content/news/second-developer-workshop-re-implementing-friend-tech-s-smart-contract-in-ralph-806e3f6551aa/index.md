@@ -23,7 +23,7 @@ The platform promotes itself by saying, “Trade with your friends in our market
 
 **Simplicity:** Despite its popularity, the smart contract for Friend Tech is not overly complicated, making it a great example for educational purposes.
 
-**Sophistication:** While simple, the contract is sophisticated enough to demonstrate advanced features in Ralph, such as subcontracts and the [asset permission system (APS)](/news/post/alephiums-aps-eliminating-evm-token-approval-risks-5407e7e70a33). Especially on how APS makes it simpler and safer to build dApps on Alephium.
+**Sophistication:** While simple, the contract is sophisticated enough to demonstrate advanced features in Ralph, such as subcontracts and the [asset permission system (APS)](/news/post/alephium-s-aps-eliminating-evm-token-approval-risks-5407e7e70a33). Especially on how APS makes it simpler and safer to build dApps on Alephium.
 
 ## What does the Solidity Smart Contract look like?
 

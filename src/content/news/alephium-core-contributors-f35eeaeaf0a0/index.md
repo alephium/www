@@ -12,10 +12,10 @@ For its team, Alephium is privileging agility and efficiency over hyper-growth. 
 In fact, we haven’t communicated much about ourselves so far because we think _who we are_ is less relevant than _what we deliver_. To nevertheless shed some light on who we are and what we do, we decided to share a little about ourselves with the community through a small series of interviews.
 
 This is an updated version of the previously released articles available here:
-- Ep.1: [https://medium.com/@alephium/3472f8295af6](/news/post/3472f8295af6)
-- Ep.2: [https://medium.com/@alephium/bec6e6908d2f](/news/post/bec6e6908d2f)
-- Ep.3: [https://medium.com/@alephium/64b6dacc1459](/news/post/64b6dacc1459)
-- Ep.4: [https://medium.com/@alephium/3886003b8fef](/news/post/3886003b8fef)
+- [Ep.1](/news/post/core-team-interview-series-episode-1-3472f8295af6)
+- [Ep.2](/news/post/core-team-interview-series-episode-2-bec6e6908d2f)
+- [Ep.3](/news/post/core-team-interview-series-episode-3-64b6dacc1459)
+- [Ep.4](/news/post/core-team-interview-series-episode-4-3886003b8fef)
 
 ## Backend Team
 

@@ -7,7 +7,7 @@ featuredImage: image_c5a50dcd6b.jpeg
 title: 'Builders Highlight #3: Ayin'
 ---
 
-_Our ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience and provide real utility for the users. In the Builders Highlight series, these builders will share more about their projects, thoughts, and insights on why building on Alephium! You can find_ [#1 here](/news/post/builders-highlight-sezame-wallet-ddb4aeb61881) _and_ [#2 here](/news/post/builders-highlight-alphpaca-nfts-99c69775f04c)_._
+_Our ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience and provide real utility for the users. In the Builders Highlight series, these builders will share more about their projects, thoughts, and insights on why building on Alephium! You can find_ [#1 here](/news/post/builders-highlights-1-sezame-wallet-ddb4aeb61881) _and_ [#2 here](/news/post/builders-highlights-2-alphpaca-nfts-99c69775f04c)_._
 
 This episode is about [Ayin](http://ayin.app), the first DEX available on Alephium Mainnet. We thank [Dr Jekyll](/news/post/community-highlight-11-dr-jekyll-165ab9a51880) and 0dd431c8 for the nice interview!
 
@@ -27,7 +27,7 @@ You can seamlessly swap between token pairs and use the Utility Token, \$AYIN, t
 
 Reading anything the team puts out, like the [whitepaper](https://github.com/alephium/white-paper), is enough for me.
 
-I like the [novel approach of sharding](/news/post/an-introduction-to-blockflow-alephiums-sharding-algorithm-bbbf318c3402) that is fully implemented already and not just promised \*\*cough ETH\*\*.
+I like the [novel approach of sharding](/news/post/an-introduction-to-blockflow-alephium-s-sharding-algorithm-bbbf318c3402) that is fully implemented already and not just promised \*\*cough ETH\*\*.
 
 There is no “pick a chain” when doing tx, and you can seamlessly use the tech whether you are a PhD in astrophysics or Jim from down the road who just heard about Bitcoin.
 

@@ -129,7 +129,7 @@ The token supply on Alephium is limited with a hardcap of 1 billion. At Mainnet 
 
 In addition, half of the transaction fees are burned with each block and Proof of Less Work enables internal mining cost through burning when the hashrate and energy consumption are significantly high.
 
-**More details here :** [https://medium.com/@alephium/tokenomics-of-alephium-61d59b51029c](/news/post/tokenomics-of-alephium-61d59b51029c)
+**More details [here](/news/post/alephium-tokenomics-61d59b51029c)**
 
 ## 🏋️‍♀️ **Our team**
 
@@ -179,7 +179,7 @@ Telegram 🇹🇷: [https://t.me/alephium_tr](https://t.me/alephium_tr)
 ## **Our partners**
 
 - UTXO Alliance : [https://utxo-alliance.org/](https://utxo-alliance.org/)
-- Bitcoin Association Switzerland : [https://medium.com/@alephium/alephium-becomes-a-member-of-bitcoin-association-switzerland-2293fec16fc9](/news/post/alephium-becomes-a-member-of-bitcoin-association-switzerland-2293fec16fc9)
+- [Bitcoin Association Switzerland](/news/post/alephium-becomes-a-member-of-bitcoin-association-switzerland-2293fec16fc9)
 - Cetacean Capital: [https://cetacean.capital](https://cetacean.capital/)
 - Crypto Valley Association : [https://cryptovalley.swiss/](https://cryptovalley.swiss/)
 - Dappnode: [https://dappnode.io](https://dappnode.io)

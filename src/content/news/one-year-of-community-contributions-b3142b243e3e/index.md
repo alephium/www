@@ -9,7 +9,7 @@ title: One year of community contributions
 
 _A_ [year ago](/news/post/introducing-community-rewards-f4638bbf14bf)_, Alephium created the_ [community rewards](https://github.com/alephium/community) _and the_ [grants programs](https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md) _to encourage the involvement of the community in all aspects of the project. It is still ongoing, head over to_ [GitHub and apply](https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md)_!_
 
-This is a retrospective of contributions by the Alephium community during 2022. Rewards and Grants have been distributed from the [Ecosystem Development allocation](/news/post/tokenomics-of-alephium-61d59b51029c) to deserving individuals & projects, many of which can be found in the [Awesome Alephium repository](https://github.com/alephium/awesome-alephium). As it’s impossible to mention all contributions, this is not an exhaustive list!
+This is a retrospective of contributions by the Alephium community during 2022. Rewards and Grants have been distributed from the [Ecosystem Development allocation](/news/post/alephium-tokenomics-61d59b51029c) to deserving individuals & projects, many of which can be found in the [Awesome Alephium repository](https://github.com/alephium/awesome-alephium). As it’s impossible to mention all contributions, this is not an exhaustive list!
 
 Alephium is immensely grateful to the community for its efforts, big and small, and this article is to be read as a testament to that strong BUIDL energy.
 
