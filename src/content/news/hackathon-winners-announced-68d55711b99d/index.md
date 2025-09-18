@@ -39,7 +39,7 @@ Links: [Twitter](https://twitter.com/linx_labs) [Discord](https://t.co/KpsiZDSDf
 
 _Alph.pro Indexer started as a simple backend for a specific dashboard, it has grown into an extensible plugin system where adding new ‘indexers’ for specific purposes (i.e. tracking ayin pool reserves) is quite easy. This info is exposed through a powerful rest API with swagger documentation with info about NFTs, tokens, users, and more. Serves as the basis for the Alph.pro dashboard._
 
-Links: [Website](https://indexer.alph.pro/) [Twitter](https://twitter.com/AIphPro) [Video Presentation](https://www.youtube.com/watch?v=2J-mwe9TN5s&amp;t=1726s)
+Links: [Twitter](https://twitter.com/AIphPro) [Video Presentation](https://www.youtube.com/watch?v=2J-mwe9TN5s&amp;t=1726s)
 
 ### \#4 Winner — **Donera \***— wins \$5’000\*
 
@@ -47,7 +47,7 @@ Links: [Website](https://indexer.alph.pro/) [Twitter](https://twitter.com/AIphPr
 
 Donera is a crowdfunding app like GoFundMe. The MVP includes creating a fund, donating ALPH to it, finalizing and browsing active funds, and viewing and donating to an individual fund. The first funds exist already!
 
-Links: [Website](https://hackathon.donera.app/) [Twitter](https://twitter.com/Ross_Weir) [Github](https://github.com/ross-weir/Donera)
+Links: [Twitter](https://twitter.com/Ross_Weir) [Github](https://github.com/ross-weir/Donera)
 
 ### \#5 Winner — **Alephium Stats / Blockchain Visualizer \***— wins \$4’000\*
 
@@ -89,7 +89,7 @@ Blockflow Alliance is Alephium’s first-ever community DAO, dedicated to boosti
 
 Cetacean Capital aims to be DeFi’s most loved, efficient, and profitable Investment DAO. As individuals, its members have incredible skills, experience, knowledge and contacts, in the crypto-space for many years.
 
-### [Dappnode](https://link.dappnode.io/dappnode) **prize goes to Sezame \***— a home node\* [i532–4N model](https://dappnode.com/collections/all/products/home-i532-4n)
+### [Dappnode](https://link.dappnode.io/dappnode) prize goes to Sezame: a home node i532–4N model
 
 > “At [Dappnode](https://link.dappnode.io/dappnode), we’re excited to be part of Alephium’s hackathon as sponsors. These initiatives are crucial for cultivating the skills and talent of builders within the ecosystem.”
 
@@ -121,7 +121,7 @@ Links: [Github](https://github.com/krk0d3r/alephium-merkle-proofs) [Twitter](htt
 
 > **The TipBot is all around a well-functioning product, working really well on telegram, allowing anyone to tip ALPH or any other token with a very simple UX.**
 
-TipALPH was built by No Trust Verify. It is a tipping bot for Telegram, similar to [LightningTipBot](https://github.com/LightningTipBot/LightningTipBot) for Alephium.
+TipALPH was built by No Trust Verify. It is a tipping bot for Telegram, similar to LightningTipBot for Alephium.
 
 Links: [Twitter](https://twitter.com/notrustverif) [Telegram](https://t.me/TipALPHBot) [Video Presentation](https://www.youtube.com/watch?v=2J-mwe9TN5s&amp;t=394s)
 
@@ -139,7 +139,7 @@ Links: [Twitter](https://twitter.com/AlphdotPro) [Video Presentation](https://ww
 
 _Description: Noodz has worked on 4 contracts: Airdrop Contract, Initial Coin Offering (ICO) contract, Coin Flip Contract, Pinko Contract. They have since completed their ICO and released their first token builder app._
 
-Links: [Website](https://www.noodz.io/) [Twitter](https://twitter.com/NoodlesAlph) [Telegram](https://t.me/NoodlesToken)
+Links: [Twitter](https://twitter.com/NoodlesAlph) [Telegram](https://t.me/NoodlesToken)
 
 ---
 

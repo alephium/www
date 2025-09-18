@@ -38,7 +38,7 @@ In addition to the main prizes, special partner prizes add an extra chance to ge
 - **Bitmain’s Choice:** A project aligning with the Bitmain’s values will receive \$2,500 in ALPH tokens.
 - **Blockflow’s Choice:** A project aligning with the Blockflow Alliance’s ethos will receive \$2,500 in ALPH tokens.
 - **Cetacean’s Choice:** An award of \$2,500 in ALPH tokens for a project that resonates with Cetacean Capital’s vision.
-- **Dappnode’s Choice:** The project which encourages self-hosting & desintermediation the most will win a [Dappnode home i532–4N model](https://dappnode.com/collections/all/products/home-i532-4n) (1745€ value!)
+- **Dappnode’s Choice:** The project which encourages self-hosting & desintermediation the most will win a Dappnode home i532–4N model (1745€ value!)
 
 The hackathon also features bounties and honors to encourage a wide range of contributions:
 
@@ -211,7 +211,7 @@ For the doc, start here!
 - Workshop \#1 with h0ngchao [How to Build a Faucet](/news/post/first-developer-workshop-build-a-token-faucet-a6bb2aa7bf68) — [video](https://www.youtube.com/watch?time_continue=2&amp;v=YblUxEcXQuY&amp;embeds_widget_referrer=https%3A%2F%2Fmedium.com%2F%40alephium%2Ffirst-developer-workshop-build-a-token-faucet-a6bb2aa7bf68&amp;embeds_referring_euri=https%3A%2F%2Fcdn.embedly.com%2F&amp;embeds_referring_origin=https%3A%2F%2Fcdn.embedly.com&amp;source_ve_path=Mjg2NjY&amp;feature=emb_logo)
 - Workshop \#2 with h0ngchao [How to implement friend.tech on Alephium, part 1](/news/post/second-developer-workshop-re-implementing-friend-techs-smart-contract-in-ralph-806e3f6551aa) and [part 2](/news/post/second-developer-workshop-re-implementing-friend-techs-smart-contract-in-ralph-part-2-8f9959742b47) — [video 1](https://www.youtube.com/watch?v=gi2sxvB9Np8), [video 2](https://www.youtube.com/watch?v=Xgt3_HwoUOc)
 
-To know more about Alephium in general, start [here](https://x.com/alephium/status/1726249933374959943?s=20) and in our [docs](https://docs.alephium.org/)! And read more [there](https://x.com/alephium/status/1744795616818217432?s=20)! Our bible of content is [here](https://docs.alephium.org/Content), and our medium is [here](https://medium.com/@alephium).
+To know more about Alephium in general, start [here](https://x.com/alephium/status/1726249933374959943?s=20) and in our [docs](https://docs.alephium.org/)! And read more [there](https://x.com/alephium/status/1744795616818217432?s=20)! Our [bible of content is here](https://docs.alephium.org/misc/Content), and our [Medium is here](https://medium.com/@alephium).
 
 We can’t wait to be there!
 
