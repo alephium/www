@@ -129,7 +129,7 @@ The token supply on Alephium is limited with a hardcap of 1 billion. At Mainnet 
 
 In addition, half of the transaction fees are burned with each block and Proof of Less Work enables internal mining cost through burning when the hashrate and energy consumption are significantly high.
 
-**More details here :** [https://medium.com/@alephium/tokenomics-of-alephium-61d59b51029c](/news/post/tokenomics-of-alephium-61d59b51029c)
+**More details here :** [https://medium.com/@alephium/alephium-tokenomics-61d59b51029c](/news/post/alephium-tokenomics-61d59b51029c)
 
 ## 🏋️‍♀️ **Our team**
 

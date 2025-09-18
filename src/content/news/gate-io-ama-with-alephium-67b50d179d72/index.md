@@ -74,7 +74,7 @@ On the 15th of February 2022, Gate.io hosted an AMA with Alephium in their Engli
 
 > _The rest of the tokens (86%) will be used for mining rewards and ensure the processing of transactions on the Alephium blockchain over the next 80 years._
 
-> _Read more on our tokenomics here:_ [https://medium.com/@alephium/tokenomics-of-alephium-61d59b51029c](/news/post/tokenomics-of-alephium-61d59b51029c)
+> _Read more on our tokenomics here:_ [https://medium.com/@alephium/alephium-tokenomics-61d59b51029c](/news/post/alephium-tokenomics-61d59b51029c)
 
 **tomrodg / Gateio**
 

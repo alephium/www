@@ -17,7 +17,7 @@ A lot of chains make very different choices on these parameters, and that has de
 
 **Block time** in a blockchain is what it takes for a block to be checked by the miners (or validators on PoS blockchains). In Alephium, this is set to 6̶4̶ ̶s̶e̶c̶o̶n̶d̶s̶ \* **16 seconds.**
 
-_\* With the introduction of the_ [Rhône Network Upgrade](/news/post/rh%C3%B4ne-network-upgrade-activated-cbeb298585fe), _the block time was reduced to 16 seconds. That was possible with the adoption of the Ghost algorithm, and it is translated into an enhanced user experience._
+_\* With the introduction of the_ [Rhône Network Upgrade](/news/post/rh-ne-network-upgrade-activated-cbeb298585fe), _the block time was reduced to 16 seconds. That was possible with the adoption of the Ghost algorithm, and it is translated into an enhanced user experience._
 
 **Block size** can be measured in two ways: It refers to the total **amount of data** in the block, or the **maximal computational power (gas)** each block can handle.
 

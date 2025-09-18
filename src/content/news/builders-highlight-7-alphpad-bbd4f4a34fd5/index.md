@@ -7,7 +7,7 @@ featuredImage: image_bdb32de17e.jpg
 title: 'Builders Highlight #7: AlphPad'
 ---
 
-_Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real utility for users. In the Builders Highlight series, they share more about their projects, thoughts, and insights on why building on Alephium. You can find_ [#1 here](/news/post/builders-highlight-sezame-wallet-ddb4aeb61881)_,_ [#2 here](/news/post/builders-highlight-alphpaca-nfts-99c69775f04c), [#3 here](/news/post/builders-highlight-3-ayin-6be4a6bd4ec2), [#4 here](/news/post/builders-highlight-4-no-trust-verify-9ea495ca826f), [#5 here](/news/post/builders-highlight-5-deadrare-d5ff90d6161e), _and_ [#6 here](/news/post/builders-highlight-6-what-the-duck-0aedc602ecfd)_!_
+_Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real utility for users. In the Builders Highlight series, they share more about their projects, thoughts, and insights on why building on Alephium. You can find_ [#1 here](/news/post/builders-highlights-1-sezame-wallet-ddb4aeb61881)_,_ [#2 here](/news/post/builders-highlights-2-alphpaca-nfts-99c69775f04c), [#3 here](/news/post/builders-highlight-3-ayin-6be4a6bd4ec2), [#4 here](/news/post/builders-highlight-4-no-trust-verify-9ea495ca826f), [#5 here](/news/post/builders-highlight-5-deadrare-d5ff90d6161e), _and_ [#6 here](/news/post/builders-highlight-6-what-the-duck-0aedc602ecfd)_!_
 
 This episode is about [AlphPad](https://alphpad.com), an Alephium-native launchpad for IDOs. Here they share a little bit about his inspiration, the challenges this project brought, and some plans for the future.
 

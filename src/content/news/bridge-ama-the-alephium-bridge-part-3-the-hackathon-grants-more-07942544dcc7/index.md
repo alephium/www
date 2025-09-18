@@ -67,7 +67,7 @@ Besides that, we continue to engage in discussions with larger exchanges. Meetin
 
 **Vladimir: Cheng, what made you want to create Alephium and BlockFlow? And the side question is: what were your thoughts going with the DAG structure instead of traditional blockchain?**
 
-Cheng: It’s been about six years since I conceptualized [BlockFlow](/news/post/an-introduction-to-blockflow-alephiums-sharding-algorithm-bbbf318c3402). The exact moment of inspiration is a bit hazy, but my motivation stemmed from following Ethereum’s sharding developments for one to two years. Eventually, I grew impatient with their progress and decided to try a simpler approach. This led me to extensive research and the discovery of the BlockFlow algorithm, which became the foundation for starting the Alephium project.
+Cheng: It’s been about six years since I conceptualized [BlockFlow](/news/post/an-introduction-to-blockflow-alephium-s-sharding-algorithm-bbbf318c3402). The exact moment of inspiration is a bit hazy, but my motivation stemmed from following Ethereum’s sharding developments for one to two years. Eventually, I grew impatient with their progress and decided to try a simpler approach. This led me to extensive research and the discovery of the BlockFlow algorithm, which became the foundation for starting the Alephium project.
 
 The use of a Directed Acyclic Graph (DAG) structure seemed intuitive for scaling a blockchain horizontally. DAG is a widely used data structure in computer science, not just in blockchain technology. It’s prevalent in various algorithms, and you can even find DAG structures in Bitcoin’s memory pool.
 

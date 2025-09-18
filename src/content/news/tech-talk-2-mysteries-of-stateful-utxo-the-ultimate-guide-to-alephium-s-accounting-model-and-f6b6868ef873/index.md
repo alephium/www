@@ -14,7 +14,7 @@ _This is the second of a series of interviews on the technical innovations broug
 
 _TL;DR — On the topic of state size, contract storage rent and upgradability / About NFT implementations / Exploring the main benefits of sUTXO: security / Regarding the benefits of building with statefulUTXO_
 
-_If you just stumbled here, find part 1_ [here](/news/post/tech-talk-2-mysteries-of-stateful-utxo-the-ultimate-guide-to-alephiums-accounting-model-and-de2cf2063615)_._
+_If you just stumbled here, find part 1_ [here](/news/post/tech-talk-2-mysteries-of-stateful-utxo-the-ultimate-guide-to-alephium-s-accounting-model-and-de2cf2063615)_._
 
 ## On the topic of state size, contract storage rent and upgradability
 

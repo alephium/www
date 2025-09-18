@@ -132,7 +132,7 @@ The issue wasn’t the cap itself, it was the perception created by it. Newcomer
 - This ensures miners remain incentivized long-term.
 - This aligns Alephium with battle-tested models like Monero’s, where the supply is infinite but _inflation trends to zero_.
 
-- The mechanisms of the [Alephium’s deflatory forces](https://medium.com/@alephium/tokenomics-of-alephium-61d59b51029c) also remain in place.
+- The mechanisms of the [Alephium’s deflatory forces](https://medium.com/@alephium/alephium-tokenomics-61d59b51029c) also remain in place.
 
 - Crucially, the original **emission curve** for the first 81 years **remains unchanged**, it’s just extended for the long term.
 

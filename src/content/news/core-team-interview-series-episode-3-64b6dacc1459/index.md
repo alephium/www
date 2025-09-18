@@ -7,7 +7,7 @@ title: Core team interview series. Episode 3
 ---
 Presenting the humans developing the Back-end.
 
-**This article was updated:** [https://medium.com/@alephium/alephium-contributors-f35eeaeaf0a0](/news/post/alephium-contributors-f35eeaeaf0a0)
+**This article was updated:** [https://medium.com/@alephium/alephium-core-contributors-f35eeaeaf0a0](/news/post/alephium-core-contributors-f35eeaeaf0a0)
 
 _For its team, Alephium is privileging agility and efficiency over hyper-growth. We do not stay at a human size because we think it is more efficient, but because Alephium strives to be a decentralized, community driven project. This means the project in itself is much larger than a team can ever be. Communication, trust, openness and transparency is paramount in such a set-up._
 

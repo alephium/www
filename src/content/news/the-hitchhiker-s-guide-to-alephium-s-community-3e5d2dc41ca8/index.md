@@ -94,7 +94,7 @@ The Alephium community spans the world. Even if they care about different things
 
 **The core-contributors**
 
-All the core contributors are [doxxed](/news/post/alephium-contributors-f35eeaeaf0a0) (and you can find them on the website & on Linkedin) and actively participating in our channels! From the obvious ones managing coms & community management, to the core devs, front-end devs or backend infra devs, everyone is there, accessible & active in front & with the whole community. (find them with their role!)
+All the core contributors are [doxxed](/news/post/alephium-core-contributors-f35eeaeaf0a0) (and you can find them on the website & on Linkedin) and actively participating in our channels! From the obvious ones managing coms & community management, to the core devs, front-end devs or backend infra devs, everyone is there, accessible & active in front & with the whole community. (find them with their role!)
 
 **New Members**
 

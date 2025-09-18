@@ -43,7 +43,7 @@ Question: **Can you tell us more about the Leman Network Upgrade?**
 
 **Hongchao:** I’m a core dev at Alephium, and my name is Hongchao. I am keenly interested in asymmetric technologies, especially blockchain, and their potential to empower ordinary people. This initially drew me to Alephium and has kept me engaged in the project ever since.
 
-[The Leman Upgrade](/news/post/the-leman-upgrade-ama-most-relevant-topics-and-questions-1fbbc68d4237) is a significant milestone in Alephium’s history and has been in the works for some time now. It brings numerous updates to the platform’s functionality, security, and performance. These updates aim to make smart contract development more efficient, secure, and user-friendly.
+[The Leman Upgrade](/news/post/the-leman-network-upgrade-ama-most-relevant-topics-and-questions-1fbbc68d4237) is a significant milestone in Alephium’s history and has been in the works for some time now. It brings numerous updates to the platform’s functionality, security, and performance. These updates aim to make smart contract development more efficient, secure, and user-friendly.
 
 One of the key updates in the Leman Upgrade is the introduction of a new set of Virtual Machine (VM) instructions and building functions. These functions make smart contract development more efficient by providing dynamic array indexing, secure subcontract systems, and building functions to facilitate debugging and logging. These updates help to streamline the development process and make it easier for developers to build secure and reliable decentralized applications.
 
