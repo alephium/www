@@ -22,7 +22,7 @@ const SimpleLoaderContainer = styled.div`
   justify-content: center;
   gap: 8px;
   width: 40px;
-  height: 40px;
+  height: 20px;
 
   ${LoaderDot}:nth-child(1) {
     animation-delay: -0.24s;
