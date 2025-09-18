@@ -15,24 +15,29 @@ export const useTocIntersection = (tocItems: TocItem[]) => {
   const handleScroll = useCallback(() => {
     if (tocItems.length === 0) return
 
-    const scrollPosition = window.scrollY
-    let currentSection = ''
+    const scrollPaddingTop = 120
+    const effectiveTop = scrollPaddingTop
+
+    let closestSection = ''
+    let closestDistance = Infinity
 
     for (let i = 0; i < tocItems.length; i++) {
       const element = document.getElementById(tocItems[i].id)
       if (element) {
-        const elementTop = element.offsetTop
-        if (elementTop <= scrollPosition) {
-          currentSection = tocItems[i].id
-        } else {
-          break
+        const rect = element.getBoundingClientRect()
+        const elementTop = rect.top
+        const distanceFromTop = Math.abs(elementTop - effectiveTop)
+
+        if (distanceFromTop < closestDistance) {
+          closestDistance = distanceFromTop
+          closestSection = tocItems[i].id
         }
       }
     }
 
-    if (currentSection && currentSection !== activeIdRef.current) {
-      activeIdRef.current = currentSection
-      setActiveId(currentSection)
+    if (closestSection && closestSection !== activeIdRef.current) {
+      activeIdRef.current = closestSection
+      setActiveId(closestSection)
     }
   }, [tocItems])
 
