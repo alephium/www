@@ -88,4 +88,4 @@ _\*\* Integration expected to be live by the end of March 2025._
 
 Alephium is a next-generation Proof-of-Work blockchain combining scalability, energy efficiency, and smart contract capabilities to enable decentralized solutions for a better future.
 
-[Website](/) |[ Docs](https://docs.alephium.org/) |[ GitHub](https://github.com/alephium) |[ Twitter](https://twitter.com/alephium) |[ Discord](/discord) |[ ](https://medium.com/@alephium)[Whitepaper](https://github.com/alephium/white-paper) |[ Ecosystem](https://www.alph.land/)
+[Website](/) | [Docs](https://docs.alephium.org/) | [GitHub](https://github.com/alephium) | [Twitter](https://twitter.com/alephium) | [Discord](/discord) | [Medium](https://medium.com/@alephium) | [Whitepaper](https://github.com/alephium/white-paper) | [Ecosystem](https://www.alph.land/)

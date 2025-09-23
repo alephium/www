@@ -75,7 +75,7 @@ This might evolve to be shorter as the hashrate increases, (as it already did!) 
 
 The Alephium Bridge is a sophisticated system with various components that work together to achieve efficient cross-chain communication. It is what’s called a lock & mint bridge, built on top of a fork of Wormhole. Out of all the available options (and there are many), Alephium chose to build on wormhole precisely because it’s open source with considerable TVL and has survived multiple incidents in the past; it has shown resilience and strength like no other bridge protocol. It is also very well documented!
 
-You can find the Alephium Bridge code [here](https://github.com/alephium/wormhole-fork) & additional information, including the guardians [here](/news/post/the-alephium-bridge-a787d90b2e4a).
+You can find the [Alephium Bridge code here](https://github.com/alephium/wormhole-fork) & [additional information, including the guardians here](/news/post/the-alephium-bridge-a787d90b2e4a).
 
 ## Are you stopping here? Will there be more bridges?
 

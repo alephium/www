@@ -24,10 +24,10 @@ Alephium proves that blockchain scalability and programmability can be achieved 
 
 ---
 
-**About Alephium**
+## About Alephium
 
 [Alephium](/) is the first operational sharded L1 blockchain scaling and enhancing PoW & UTXO concepts. Decentralization, self-sovereignty, and security meet high-performance, accessibility, and energy efficiency in a dev-friendly network optimized for DeFi & smart contract applications.
 
-**About FluxLabs**
+## About FluxLabs
 
 FluxLabs is an incubation and acceleration project for blockchain and technology-based projects with a focus on early stage start-ups in the emerging blockchain and cryptocurrency industries. It empowers Web3 decentralization.

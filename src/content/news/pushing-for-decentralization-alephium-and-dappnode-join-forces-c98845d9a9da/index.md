@@ -23,10 +23,10 @@ _“We are so happy to participate in Alephium’s decentralization process. Tha
 
 ---
 
-**About Alephium**
+## About Alephium
 
 [Alephium](/) is the first operational layer1 sharded blockchain scaling and improving Bitcoin core technologies, Proof of Work & UTXO. It delivers a highly performant, secure, and energy efficient network that focuses on usability and accessibility.
 
-**About Dappnode**
+## About Dappnode
 
 [Dappnode](https://dappnode.io) is a free and open source software that allows users all over the world to participate in creating a decentralized infrastructure layer to power web3 and be rewarded for it.

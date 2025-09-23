@@ -41,10 +41,10 @@ _To learn more about [Alephium](/), get in touch on_ [Discord](https://discord.g
 
 ---
 
-**About Alephium**
+## About Alephium
 
 Alephium is the first operational Layer 1 sharded blockchain scaling and improving on Bitcoin core technologies, Proof of Work & UTXO. It delivers a highly performant, secure DeFi & Dapps platform with enhanced energy efficiency.
 
-**Contact**
+## Contact
 
 press@alephium.org

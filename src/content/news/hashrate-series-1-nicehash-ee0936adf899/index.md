@@ -45,9 +45,8 @@ ASICs coming to Alephium is very interesting, I think as long as the code allows
 
 We’d love to invite everyone to our [Conference](http://www.nicehashx.com) this November to learn all about cryptocurrency and how you can use it in your business or e-commerce. We'd also like to celebrate 10 years of NiceHash! We would love to see the Alephium crowd there!
 
-_Twitter & other socials links:_ [www.nicehash.com/links](http://www.nicehash.com/links)
-
-_Website:_ [www.nicehash.com](http://www.nicehash.com)
+Twitter & other socials links: [www.nicehash.com/links](http://www.nicehash.com/links)  
+Website: [www.nicehash.com](http://www.nicehash.com)
 
 ---
 

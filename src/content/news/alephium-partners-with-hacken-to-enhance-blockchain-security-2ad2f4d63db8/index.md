@@ -11,7 +11,7 @@ We are pleased to announce a strategic partnership between **Alephium** and **Ha
 
 As the first operational sharded blockchain operating on Proof of Less Work, Alephium is designed to deliver high scalability, energy efficiency, and decentralization. By partnering with Hacken, we aim to further strengthen the security of our ecosystem, ensuring that anyone can interact with Alephium with confidence.
 
-### What This Partnership Entails
+## What This Partnership Entails
 
 Under this agreement, Hacken will provide a comprehensive suite of security services tailored to the Alephium ecosystem, including:
 
@@ -23,7 +23,7 @@ Under this agreement, Hacken will provide a comprehensive suite of security serv
 - Proof of Reserves: Strengthening transparency and compliance for ecosystem participants.
 - CCSS Audit & Tokenomics Audit: Validating security measures for token models and custodial services.
 
-### Benefits for Alephium Projects
+## Benefits for Alephium Projects
 
 Projects building on Alephium will gain exclusive access to Hacken’s security expertise, including:
 
@@ -35,13 +35,13 @@ Projects building on Alephium will gain exclusive access to Hacken’s security 
 
 **Bug Bounty Hosting:** Free listing on HackenProof, including triage services at no cost to participating projects.
 
-### A Shared Commitment to Security
+## A Shared Commitment to Security
 
 This partnership reflects a shared vision between Alephium and Hacken to create a safer and more secure Web3 ecosystem. Hacken’s extensive experience in blockchain security, combined with Alephium’s innovative technology, will set a new standard for ecosystem-wide security.
 
 By integrating Hacken’s expertise, Alephium aims to provide developers and users with the tools and confidence they need to innovate and grow within a secure environment.
 
-### Looking Ahead
+## Looking Ahead
 
 The collaboration between Alephium and Hacken marks a significant step forward in our mission to build the safest infrastructure in Web3. Together, we will work to ensure that Alephium remains a trusted and resilient ecosystem for developers, businesses, and users worldwide.
 
