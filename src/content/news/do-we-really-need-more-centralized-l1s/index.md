@@ -5,7 +5,7 @@ date: 2025-09-18T19:00:00.000Z
 spotlight: true
 featuredImage: onemorel1.png
 ---
-Op-ed by Joseph Kennedy, Marketing & Growth, Alephium.
+Op-ed by Pepper, Marketing & Growth, Alephium.
 
 **Hello and welcome! This is the first column article from our new Head of Marketing, Joseph. He’ll be researching and commenting on some of the most current blockchain discussions, providing context and connection to Alephium. Other contributors will soon be joining as we aim to make this space a popular hub of activity.** 
 
