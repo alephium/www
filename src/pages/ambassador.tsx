@@ -49,6 +49,8 @@ const CustomPage = (props: PageProps) => {
                 Ambassador
               </h1>
               <p>Help us grow Alephium, one Community at a time.</p>
+
+              <Button url="https://t.me/+jiPAqkUlt1w2MjY0">Get started</Button>
             </TextElement>
           </SubpageSection>
 
@@ -88,10 +90,20 @@ const Cards = () => {
     <CardsHorizontalScroller animateCards>
       <Card border>
         <CardText>
+          <h3 style={{ color: theme.palette4 }}>Content Creators</h3>
+          <p>
+            <strong>Create engaging content</strong> and share tweets, blogs, videos, and graphics about Alephium. Share
+            your work across social media platforms and develop creative campaigns to engage the community.
+          </p>
+        </CardText>
+      </Card>
+
+      <Card border>
+        <CardText>
           <h3 style={{ color: theme.palette2 }}>Community Builders</h3>
           <p>
-            <strong>Organize and grow the community</strong> through local meetups, workshops, and hackathons. Moderate
-            social channels and help expand Alephium&apos;s global presence through content translation.
+            <strong>Organize and grow the local community</strong>, moderate social channels, and help expand
+            Alephium&apos;s global presence through content translation.
           </p>
         </CardText>
       </Card>
@@ -102,26 +114,6 @@ const Cards = () => {
           <p>
             <strong>Share knowledge and expertise</strong> by creating tutorials, guides, and educational content. Host
             webinars, AMAs, and live streams while mentoring new community members and developers.
-          </p>
-        </CardText>
-      </Card>
-
-      <Card border>
-        <CardText>
-          <h3 style={{ color: theme.palette4 }}>Content Creators</h3>
-          <p>
-            <strong>Create engaging content</strong> through blogs, videos, and graphics about Alephium. Share your work
-            across social media platforms and develop creative campaigns to engage the community.
-          </p>
-        </CardText>
-      </Card>
-
-      <Card border>
-        <CardText>
-          <h3 style={{ color: theme.palette6 }}>Developers</h3>
-          <p>
-            <strong>Build and innovate</strong> by creating tools, dApps, and integrations for the Alephium ecosystem.
-            Contribute to open-source projects and provide technical support to other developers.
           </p>
         </CardText>
       </Card>
@@ -142,22 +134,15 @@ const HowToApply = () => {
         <ClickableBox align="top">
           <TextElement noMargin>
             <p>
-              <strong>Apply</strong> - Fill out the{' '}
-              <SimpleLink
-                highlight
-                url="https://docs.google.com/forms/d/e/1FAIpQLSfR0T6Fg3v8HU86wZJgQBXslRUJKS3bsiQb92-ZIyaaV4RreA/viewform?usp=sf_link"
-              >
-                Ambassador Application Form
+              <strong>Join</strong> - Join the{' '}
+              <SimpleLink highlight url="https://t.me/+jiPAqkUlt1w2MjY0">
+                Alephium Squires group
               </SimpleLink>{' '}
-              and tell us about your skills, experience, and how you'd like to contribute to Alephium.
-            </p>
-          </TextElement>
-        </ClickableBox>
-        <ClickableBox align="top">
-          <TextElement noMargin>
-            <p>
-              <strong>Onboarding</strong> - If selected, you&apos;ll receive an onboarding package with resources,
-              guidelines, and access to the Alephium Ambassador community.
+              read the{' '}
+              <SimpleLink highlight url="https://alephium.gitbook.io/alph-squires">
+                guide
+              </SimpleLink>{' '}
+              and get started within minutes! The first level of our ambassador program is open to everyone!
             </p>
           </TextElement>
         </ClickableBox>
@@ -173,7 +158,8 @@ const HowToApply = () => {
           <TextElement noMargin>
             <p>
               <strong>Grow and Earn</strong> - As you contribute, you&apos;ll earn rewards, gain recognition, and unlock
-              new opportunities within the Alephium ecosystem.
+              new opportunities within the Alephium ecosystem. The best Squires will be promoted to the Alephium Guard.
+              This is the second level of our ambassador program, designed for our top supporters!
             </p>
           </TextElement>
         </ClickableBox>
@@ -187,15 +173,11 @@ const BottomSection = () => (
     <TextElement isCentered>
       <h2>Ready to Join?</h2>
       <p>
-        Become a part of the Alephium Ambassador Program and help us build the future of finance. Together, we can
+        Become a member of the Alephium Ambassador Program and help us build the future of finance. Together, we can
         create a more scalable, secure, and sustainable world.
       </p>
-      <Button
-        big
-        highlight
-        url="https://docs.google.com/forms/d/e/1FAIpQLSfR0T6Fg3v8HU86wZJgQBXslRUJKS3bsiQb92-ZIyaaV4RreA/viewform"
-      >
-        Apply Now
+      <Button big highlight url="https://t.me/+jiPAqkUlt1w2MjY0">
+        Join Us Now
       </Button>
     </TextElement>
   </SubpageSection>
@@ -210,7 +192,7 @@ const WhySection = () => {
     <SubpageSection>
       <TextElement>
         <h2>
-          Why become
+          Why become an
           <br />
           Ambassador?
         </h2>
@@ -239,16 +221,16 @@ const WhySection = () => {
             <h3>Join a Global Network 🌍</h3>
             <p>
               <strong>Meet passionate innovators, join local communities, represent Alephium</strong> at local and
-              international events, and more. And don&apos;t worry, we&apos;ll be right beside you, ready to provide
-              guidance to help you succeed.
+              international events, and more. And don&apos;t worry, we&apos;ll be right beside you, ready to guide you
+              and help you succeed.
             </p>
           </TextElement>
 
           <TextElement noHeadingsMargins>
             <h3>Earn Rewards 💰</h3>
             <p>
-              Limited-edition gear, ALPH coins, recognition on official channels, help opening doors to new professional
-              opportunities, and support to attend Web3 events, conferences, and hackathons.
+              Limited-edition gear, ALPH coins, recognition on official channels, and access to new professional
+              opportunities.
             </p>
           </TextElement>
         </Grid>
