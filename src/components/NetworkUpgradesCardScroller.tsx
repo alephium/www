@@ -13,11 +13,10 @@ const NetworkUpgradesCardScroller = () => {
   return (
     <CardsHorizontalScroller cardWidth={380} cardGap={24} animateCards>
       <Card border>
-        <h3 style={{ color: theme.palette3, paddingRight: 0 }}>
-          Leman<Badge color="palette3">March 30, 2023</Badge>
-        </h3>
-
         <CardText>
+          <h3 style={{ color: theme.palette3, paddingRight: 0, alignItems: 'center', display: 'flex' }}>
+            Leman<Badge color="palette3">March 30, 2023</Badge>
+          </h3>
           <p>
             Leman, the first post-mainnet upgrade, refined Alephium&apos;s developer stack, enabling dApp creation with
             enhanced smart contracts, a stronger VM, and improved APIs, laying the groundwork for our builder ecosystem.
@@ -30,10 +29,10 @@ const NetworkUpgradesCardScroller = () => {
         </CardFooterButtonContainer>
       </Card>
       <Card border>
-        <h3 style={{ color: theme.palette2, paddingRight: 0 }}>
-          Rhone<Badge color="palette2">Jun 12, 2024</Badge>
-        </h3>
         <CardText>
+          <h3 style={{ color: theme.palette2, paddingRight: 0, alignItems: 'center', display: 'flex' }}>
+            Rhone<Badge color="palette2">Jun 12, 2024</Badge>
+          </h3>
           <p>
             Then came Rhone, our first big leap forward. Block times dropped from 64 to 16 seconds, smart contracts got
             more powerful, and dApp performance improved across the board. Rhone was about making Alephium stronger,
@@ -51,10 +50,10 @@ const NetworkUpgradesCardScroller = () => {
         </CardFooterButtonContainer>
       </Card>
       <Card border>
-        <h3 style={{ color: theme.palette4, paddingRight: 0 }}>
-          Danube<Badge color="palette4">Jul 15, 2025</Badge>
-        </h3>
         <CardText>
+          <h3 style={{ color: theme.palette4, paddingRight: 0, alignItems: 'center', display: 'flex' }}>
+            Danube<Badge color="palette4">Jul 15, 2025</Badge>
+          </h3>
           <p>
             Danube marks a shift, this is where the vision of Web3 starts to feel real. Where onboarding doesn&apos;t
             require a technical manual. Where developers aren&apos;t boxed in by protocol constraints. Danube brings the
@@ -68,8 +67,8 @@ const NetworkUpgradesCardScroller = () => {
         </CardFooterButtonContainer>
       </Card>
       <Card border>
-        <h3>Next?</h3>
         <CardText>
+          <h3 style={{ alignItems: 'center', display: 'flex' }}>Next?</h3>
           <p>
             We continue to build. The next upgrade of the Danube era will focus on strengthening Alephium&apos;s core -
             enhancing performance, expanding smart contract capabilities, and setting the stage for high-impact apps
