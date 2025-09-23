@@ -19,7 +19,8 @@ const NewsPostTemplate = (props: PageProps<Queries.NewsPostBySlugQuery>) => {
       {...props}
       seo={{
         title: post?.frontmatter?.title || '',
-        description: post?.frontmatter?.description || post?.excerpt || ''
+        description: post?.frontmatter?.seoDescription || post?.frontmatter?.description || post?.excerpt || '',
+        ogDescription: post?.frontmatter?.description || post?.frontmatter?.seoDescription || post?.excerpt || ''
       }}
       content={
         <ArticleWrapper>
@@ -108,6 +109,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        seoDescription
         spotlight
         featuredImage {
           childImageSharp {
