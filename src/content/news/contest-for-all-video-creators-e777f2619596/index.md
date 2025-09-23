@@ -36,7 +36,7 @@ If you stumble upon something in the article that you find unclear, the team wil
 And of course, here you will find additional useful resources:
 
 - [Website](/)
-- [Alephium Blog](https://medium.com/@alephium)
+- [Alephium Blog](/news)
 - [White Papers](https://github.com/alephium/white-paper)
 - [Branding material](https://github.com/alephium/alephium-brand-guide)
 

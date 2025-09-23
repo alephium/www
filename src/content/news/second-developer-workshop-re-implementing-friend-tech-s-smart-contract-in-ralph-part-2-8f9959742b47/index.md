@@ -7,7 +7,7 @@ featuredImage: image_e39b6d207c.jpg
 title: 'Second Developer Workshop: Re-implementing Friend.Tech’s Smart Contract in Ralph — Part 2'
 ---
 
-Welcome to the second part of this dev workshop session! Please make sure you go through the first part ([here](/news/post/second-developer-workshop-re-implementing-friend-techs-smart-contract-in-ralph-806e3f6551aa)) as part 2 starts where Part I ended.
+Welcome to the second part of this dev workshop session! Please make sure you go through the [first part](/news/post/second-developer-workshop-re-implementing-friend-tech-s-smart-contract-in-ralph-806e3f6551aa) as part 2 starts where Part I ended.
 
 ## A small reminder of part 1
 
@@ -15,7 +15,7 @@ Welcome to the second part of this dev workshop session! Please make sure you go
 
 The platform promotes itself by saying, “Trade with your friends in our marketplace.” Fans can buy and sell shares, with the price directly tied to the number of outstanding shares. This creates an opportunity for early supporters to profit as the individual’s fan base grows, and the protocol and subject also collect fees on each trade happening on the shares. It is an interesting experiment in the social token trend narrative.
 
-[In the previous session](/news/post/second-developer-workshop-re-implementing-friend-techs-smart-contract-in-ralph-806e3f6551aa), both the protocol fee and subject fee percentage were successfully implemented, along with the necessary functions to set them. Additionally, the ownership feature and a mechanism to maintain the balance of each holder for a subject was introduced, as well as tracking the total outstanding number of shares for that subject. Instead of relying on the mapping data structure like in Solidity, Ralph’s subcontracts were used to achieve this.
+[In the previous session](/news/post/second-developer-workshop-re-implementing-friend-tech-s-smart-contract-in-ralph-806e3f6551aa), both the protocol fee and subject fee percentage were successfully implemented, along with the necessary functions to set them. Additionally, the ownership feature and a mechanism to maintain the balance of each holder for a subject was introduced, as well as tracking the total outstanding number of shares for that subject. Instead of relying on the mapping data structure like in Solidity, Ralph’s subcontracts were used to achieve this.
 
 The “get price” function was also created, and it calculates the share price, considering both the protocol fee and subject fee. This function serves as the basis for determining buy and sell prices. This session focuses on implementing the buy and sell shares functions. If you haven’t done it yet, here is what you need to prepare your environment.
 

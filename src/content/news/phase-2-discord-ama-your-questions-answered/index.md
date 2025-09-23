@@ -19,19 +19,22 @@ Ok, let’s begin, starting with…
 
 
 > Do you already know how the fees will be dispatched between stakers and buybacks/burn?
-> *MiniJudie*
+>
+> -*MiniJudie*
 
 **Cheng:** We want to follow the industry standard, which allows us some important flexibility. The distribution depends on the stages and amounts, but one thing is clear: all the swap fees collected by the Core dApp will be distributed to the community. We will likely start with a 50/50 split.
 
 
 > What is the timeline for the Core DEX? Is there already some progress on the smart contracts for the dapp?
-> *Mad Scientist*
+>
+> -*Mad Scientist*
 
 **Hongchao:** We’ve made great progress on the smart contracts side, and we’ve also started working on the SDK, Backend, and Frontend for the Core dApp as well. The launch date is yet to be announced.
 
 
 > There are already several protocols enabling staking on more widely used blockchains. So what will be the unique features of this app that will attract people who use other chains, other than staking and the governance system?
-> *fares8796*
+> 
+> -*fares8796*
 
 **Hongchao:** Assuming we are talking about other PoS chains there.
 
@@ -42,13 +45,15 @@ Ok, let’s begin, starting with…
 
 
 > Will certain liquidity pools be incentivized too? Will you add liquidity to certain pools? To which pools?
-> *Mad Scientist*
+> 
+> -*Mad Scientist*
 
 **Cheng:** Yes, we have plans for that and are open to further ideas from the Alephium community.
 
 
 > How will the new core dApp integrate with Alephium’s ecosystem loop (staking, protocol-owned liquidity, and DAOs), and what real utility or yield opportunities will it unlock for $ALPH holders?
-> *Kingsley*
+> 
+> -*Kingsley*
 
 **Hongchao:** There are two things to consider.
 
@@ -57,35 +62,41 @@ Ok, let’s begin, starting with…
 
 
 > How do you plan to offer perpetuals on the new DEX without KYC?
-> *Splinter*
+> 
+> -*Splinter*
 
 **Cheng:** A Perp DEX doesn’t require KYC. The main challenges are trading volume and risk management. It can only happen when the ecosystem is more mature. Also, when the volume is not that high, leverage is probably safer with lending protocols.
 
 
 > The core dApp is described as protocol-owned and fee-sharing. How do you ensure this doesn’t centralize both capital and incentives into one dApp, making the ecosystem dependent on its success/failure, instead of fostering resilience through multiple builders? Is the goal for the core dApp to remain the “flagship” forever, or do you see it more as a bootstrap tool until independent builders deploy competing or complementary dApps?
-> *JULES-VERNE*
+> 
+> -*JULES-VERNE*
 
 **Hongchao:** The goal is a thriving ecosystem with many independent builders. The Core dApp provides essential financial primitives and building blocks, such as a high-quality DEX with deep liquidity. This benefits the entire ecosystem. Its success should be measured not only by its own adoption, but by its ability to attract and empower other builders, including those creating competing dApps.
 
 
 > Since all swap fees go to stakers and buybacks, doesn’t this risk over-incentivizing passive holders vs. active builders? How do you balance rewarding token holders with ensuring devs & projects get the capital and incentives they need?
-> *JULES-VERNE*
+> 
+> -*JULES-VERNE*
 
 **Hongchao:** Through ALPH buybacks and fee distribution to ALPH stakers, the Core dApp will reward the long term holders of ALPH while strengthening its demand. A stronger ALPH expands the value available to all ecosystem projects, which benefits all active builders.
 
 > Will the fee-sharing model extend to other dApps built on Alephium, or will only the core dApp funnel revenue to xALPH stakers? This seems key to whether the ecosystem decentralizes or centralizes around one hub.
-> *JULES-VERNE*
+> 
+> -*JULES-VERNE*
 
 **Hongchao:** ALPH staking is designed to enhance the alignment and composability of the ecosystem, but dApps have the freedom to decide whether they want to design its fee mechanisms around ALPH staking.
 
 > Gigatons and others are positioning Alephium for institutional-grade tokenization. How will the super dApp integrate with (or support) this use case without turning into a closed, permissioned system that limits smaller players?
-> *JULES-VERNE*
+> 
+> -*JULES-VERNE*
 
 **Hongchao:** Decentralization is a principle we believe in and abide by. The Core dApp will focus on the core building blocks (DEX) that benefit the entire ecosystem. It will be open source, transparent, permissionless, and easy to integrate by anyone.
 
 
 > If xALPH stakers capture all fees, do they also get to decide which future dApps are considered “core” and plugged into this fee loop? If so, how do you prevent this from becoming oligarchic governance?
-> *JULES-VERNE*
+> 
+> -*JULES-VERNE*
 
 **Hongchao:**
 
@@ -97,21 +108,24 @@ The aligned loop is coming!
 
 
 > How do you plan to attract the first liquidity and traders to the Core DEX? It’s usually tough at the start since liquidity is fragmented and people don’t switch to a new DEX without strong incentives. Will the team provide some initial liquidity, or are you planning special rewards/bonuses for early LPs and xALPH stakers to kickstart adoption?
-> *EraOjdanic*
+> 
+> -*EraOjdanic*
 
 **Cheng:** We’ll likely need to run a liquidity mining program to attract users, similar to Uniswap. We’re also planning to add other incentives, such as a referral program in the DEX contracts.
 
 
 
 > Love the direction we are heading! However, how will the dApp benefit the ecosystem projects such as AlphBanx? There have been discussions and concerns within the community who are worried the dApp will suck the liquidity away from ecosystem tokens. (Not FUD, I would just like more clarity around this topic).
-> *The Pleb Investor*
+> 
+> -*The Pleb Investor*
 
 **Hongchao:** I think it is not a zero-sum game with the ecosystem projects. If we get the flywheel spinning and make the pie bigger (ALPH price goes up) the TVL would be a lot bigger for AlphBanx as well. There is a situation where everyone can win.
 
 
 
 > How will you avoid fee redistribution creating constant sell pressure with stakers dumping their rewards ?
-> *fares8796*
+> 
+> -*fares8796*
 
 **Cheng:** The key is to reward long-term stakers. We can do this in a few ways, like VE or withdraw locking. Withdraw locking is a simpler, more flexible option, so we’ll likely go with that.
 
@@ -119,7 +133,8 @@ The distribution ratio between staking and buyback & burn is critical too.
 
 
 > Tell us more about the governance/DAO aspect of staking in the Core dApp.
-> *Mad Scientist*
+> 
+> -*Mad Scientist*
 
 Cheng: It’s been the plan to have more DAOs, and xALPH can be leveraged for voting if it’s needed.
 

@@ -202,7 +202,7 @@ Computational geometry & physics.
 
 - [https://twitter.com/SimerPlaha](https://twitter.com/SimerPlaha)
 - [https://github.com/simerplaha/](https://github.com/simerplaha/)
-- [https://linkedin.com/in/simerplaha](https://linkedin.com/in/simerplaha)
+- [https://www.linkedin.com/in/simerplaha/](https://www.linkedin.com/in/simerplaha/)
 - [https://dev.to/simerplaha](https://dev.to/simerplaha)
 
 #### How/when did you come across crypto?

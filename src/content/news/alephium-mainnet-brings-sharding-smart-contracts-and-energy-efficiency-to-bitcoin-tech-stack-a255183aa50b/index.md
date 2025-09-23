@@ -26,8 +26,6 @@ For further information, please contact [press@alephium.org](mailto:press@alephi
 
 ---
 
-**About Alephium**
+## About Alephium
 
 Alephium is the first operational sharded blockchain bringing scalability, ETH-inspired smart contracts and Dapps capabilities to Bitcoin’s proven core technologies while ensuring better performance and improved energy efficiency. Alephium also focuses on usability and accessibility making it the perfect platform to support decentralized applications and open protocols.
-
-**To find out more, visit [alephium.org](/)**

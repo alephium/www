@@ -12,7 +12,7 @@ _The_ [previous announcement](/news/post/announcing-the-leman-network-upgrade-c0
 
 ### What is Alephium doing?
 
-A lot of [work has been done on the full node code](https://twitter.com/alephium/status/1589991470676615168), and the [SDK](https://github.com/alephium/js-sdk/releases) went into a huge refactor in the past few weeks. This brings the mainnet closer to the network upgrade. The devnet and testnet are already Leman-compatible for a while now.
+A lot of [work has been done on the full node code](https://twitter.com/alephium/status/1589991470676615168), and the SDK went into a huge refactor in the past few weeks. This brings the mainnet closer to the network upgrade. The devnet and testnet are already Leman-compatible for a while now.
 
 An [NFT project prototype](https://alephium-nft.softfork.se/my-nfts) has been deployed on the devnet. [A community project](https://xoxo.art) is developing an NFT platform; it is expected to be released on the testnet soon!
 

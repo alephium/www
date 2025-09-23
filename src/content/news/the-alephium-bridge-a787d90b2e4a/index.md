@@ -23,7 +23,7 @@ The Alephium Bridge is a sophisticated system with various components that work 
 
 Out of all the available options (and there are [many](https://zeeprime.capital/the-bridges-are-dead-long-live-the-bridges)), Alephium chose to build on wormhole precisely because it’s open source with considerable TVL and has survived multiple incidents in the past, it has shown resilience and strength like no other bridge protocol. It is also very well [documented](https://docs.wormhole.com/wormhole/)!
 
-You can find the Alephium Bridge code [here](https://github.com/alephium/wormhole-fork).
+You can find the [Alephium Bridge code here](https://github.com/alephium/wormhole-fork).
 
 **Do tokens actually travel between chains?**
 

@@ -57,10 +57,9 @@ Looking ahead, we’re diving deeper into blockchain infrastructure and explorin
 
 We’re always looking for new ways to collaborate, whether it’s with dApps, developer communities, or NFT projects. We’d love to see creative uses of our miners, like designing unique versions that can bring even more exposure. We’re excited to work with more partners and keep building a brighter future for crypto together!
 
-_Twitter & other socials links:_ [https://x.com/goldshellminer](https://x.com/goldshellminer)_,_ [discord.gg/goldshellminer](https://t.co/tg2fxjuAR9)_  
-Here’s the_ [X Space with Maud &amp; Goldshell](https://x.com/i/spaces/1BRJjPeAbYNKw) _at the occasion of the AL1 launch!_
-
-_Website: goldshell.com_
+Twitter & other socials links: [https://x.com/goldshellminer](https://x.com/goldshellminer), [discord.gg/goldshellminer](https://t.co/tg2fxjuAR9)  
+Here’s the [X Space with Maud &amp; Goldshell](https://x.com/i/spaces/1BRJjPeAbYNKw) at the occasion of the AL1 launch!  
+Website: goldshell.com
 
 ![](image_2e7056085c.jpg)
 

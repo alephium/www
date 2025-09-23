@@ -25,6 +25,6 @@ _“Blockchain technologies need to address scalability and energy consumption i
 
 ---
 
-**About Alephium**
+## About Alephium
 
 [Alephium](/) is the first operational sharded blockchain bringing versatility, scalability, and energy efficiency to Bitcoin’s proven core technologies while offering better performance and secure smart contracts. Alephium also focuses on usability and accessibility, making it the perfect platform to support decentralized applications and open protocols.

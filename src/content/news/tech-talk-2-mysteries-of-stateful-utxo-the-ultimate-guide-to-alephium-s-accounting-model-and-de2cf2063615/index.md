@@ -12,7 +12,7 @@ _A discussion with Cheng Wang, inventor of stateful UTXO and founder of Alephium
 
 _This is the second of a series of interviews on the technical innovations brought to the world by Alephium. The discussion was conducted in a virtual format in the presence of most of the Alephium team who contributed to the questions and ensuing exchange. The following has been edited for clarity, concision and optimized for readability and cut into 2 parts, this is part 1. It has already been preceded by an_ [Introduction to sUTXO](/news/post/an-introduction-to-the-stateful-utxo-model-8de3b0f76749) _and_ [many](https://twitter.com/alephium/status/1615389097744568320) [Twitter](https://twitter.com/alephium/status/1599808960038461447) [threads](https://twitter.com/alephium/status/1602684789655420928)_._
 
-_TL;DR — An introduction on ledger-accounting models / What is stateful utxo / About tokens as first class citizen / About merkle trees, separation of contract states and assets / You can find Part 2_ [here](/news/post/tech-talk-2-mysteries-of-stateful-utxo-the-ultimate-guide-to-alephiums-accounting-model-and-f6b6868ef873)_!_
+_TL;DR — An introduction on ledger-accounting models / What is stateful utxo / About tokens as first class citizen / About merkle trees, separation of contract states and assets / You can find [Part 2 here](/news/post/tech-talk-2-mysteries-of-stateful-utxo-the-ultimate-guide-to-alephium-s-accounting-model-and-f6b6868ef873)!_
 
 ## AN INTRODUCTION TO LEDGER-ACCOUNTING MODELS
 
@@ -161,4 +161,4 @@ Eth core researchers are actively researching this direction, but all solutions 
 
 ---
 
-This is the end of Part 1! And you can keep reading Part 2 [here](/news/post/tech-talk-2-mysteries-of-stateful-utxo-the-ultimate-guide-to-alephiums-accounting-model-and-f6b6868ef873)! If you have questions on this topic, please come to Alephium’s [Discord](https://discord.gg/XsGpZ5VDTM), [Telegram](https://t.me/alephiumgroup), or reach out on [Twitter](https://twitter.com/alephium)!
+This is the end of Part 1! And you can keep reading [Part 2 here](/news/post/tech-talk-2-mysteries-of-stateful-utxo-the-ultimate-guide-to-alephium-s-accounting-model-and-f6b6868ef873)! If you have questions on this topic, please come to Alephium’s [Discord](https://discord.gg/XsGpZ5VDTM), [Telegram](https://t.me/alephiumgroup), or reach out on [Twitter](https://twitter.com/alephium)!
