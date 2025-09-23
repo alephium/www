@@ -27,9 +27,9 @@ Users running a full node locally must update their software to v2.0.0.
 
 ### **External Full Node**
 
-[Dappnode](https://dappnode.io/)**:** There is nothing to do for users using Dappnode with auto-update options checked. If not, the user must go to the Alephium package and click the upgrade/update button.
+[Dappnode](https://dappnode.com/): There is nothing to do for users using Dappnode with auto-update options checked. If not, the user must go to the Alephium package and click the upgrade/update button.
 
-[Flux](https://runonflux.io/)**:** No action is required from users using Flux.
+[Flux](https://runonflux.io/): No action is required from users using Flux.
 
 ### **Services providers**
 

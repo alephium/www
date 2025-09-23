@@ -7,7 +7,7 @@ featuredImage: image_b3deda2ce3.gif
 title: Hackathon winners announced!
 ---
 
-_The first Alephium Hackathon “Pioneers”, took place online between the 12th & 26th of February. After carefully reviewing all final submissions, the jury & partners (Bitmain, Blockflow Alliance DAO, Cetacean Capital &_ [Dappnode](https://link.dappnode.io/dappnode)_) are ready to announce the winners._
+_The first Alephium Hackathon “Pioneers”, took place online between the 12th & 26th of February. After carefully reviewing all final submissions, the jury & partners (Bitmain, Blockflow Alliance DAO, Cetacean Capital &_ [Dappnode](https://dappnode.com)_) are ready to announce the winners._
 
 The whole Alephium core-team has been blown away by the energy of participants and the quality of the submissions. It wishes to express to all participants its immense pleasure to see Alephium’s tools, languages & protocol used with so much creativity & dedication. The jury has taken its time to evaluate each submission on its own merit, according to the criteria.
 
@@ -89,11 +89,11 @@ Blockflow Alliance is Alephium’s first-ever community DAO, dedicated to boosti
 
 Cetacean Capital aims to be DeFi’s most loved, efficient, and profitable Investment DAO. As individuals, its members have incredible skills, experience, knowledge and contacts, in the crypto-space for many years.
 
-### [Dappnode](https://link.dappnode.io/dappnode) prize goes to Sezame: a home node i532–4N model
+### [Dappnode](https://dappnode.com) prize goes to Sezame: a home node i532–4N model
 
-> “At [Dappnode](https://link.dappnode.io/dappnode), we’re excited to be part of Alephium’s hackathon as sponsors. These initiatives are crucial for cultivating the skills and talent of builders within the ecosystem.”
+> “At [Dappnode](https://dappnode.com), we’re excited to be part of Alephium’s hackathon as sponsors. These initiatives are crucial for cultivating the skills and talent of builders within the ecosystem.”
 
-Dappnode is the self-owned infrastructure layer for a human-centric, data-sovereign, private-by-design internet. [Dappnode](https://link.dappnode.io/dappnode) lowers the barrier of entry for non-tech-savvy participants.
+Dappnode is the self-owned infrastructure layer for a human-centric, data-sovereign, private-by-design internet. [Dappnode](https://dappnode.com) lowers the barrier of entry for non-tech-savvy participants.
 
 ---
 

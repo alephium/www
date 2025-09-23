@@ -28,9 +28,9 @@ Whether it’s by improving education and onboarding, expanding marketing effort
 
 It will require the community’s creativity and efforts!
 
-[General Chat](https://discord.com/channels/747741246667227157/1156214551939919962)**:** This channel will serve as a hub for community discussions on various topics related to the DAO.
+[General Chat](https://discord.com/channels/747741246667227157/1156214551939919962): This channel will serve as a hub for community discussions on various topics related to the DAO.
 
-[DAO Suggestions](https://discord.com/channels/747741246667227157/1156240220530938017)**:** This channel will act as the governance center, where proposals can be submitted, and community members can cast their votes.
+[DAO Suggestions](https://discord.com/channels/747741246667227157/1156240220530938017): This channel will act as the governance center, where proposals can be submitted, and community members can cast their votes.
 
 If you are interested, join the two dedicated Discord channels: A [General chat](https://discord.com/channels/747741246667227157/1156214551939919962) will serve as a hub for community discussions, and a [Suggestions channel](https://discord.com/channels/747741246667227157/1156240220530938017) will be the governance centre of the DAO, where community members can vote!
 

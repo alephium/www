@@ -31,7 +31,7 @@ The example shown above is the [Ethereum Virtual Machine](https://ethereum.org/e
 
 ## Many blockchains, many VMs
 
-When other blockchain projects emerged after Ethereum, they had two options: either develop their own virtual machine (VM) to suit their requirements or adopt the Ethereum Virtual Machine (EVM) to facilitate running the same smart contracts as Ethereum. [Fantom](https://fantom.foundation/) and [Avalanche](https://www.avax.network/) chose the latter and are [EVM-compatible](https://medium.com/eligma-blog/what-are-evm-compatible-blockchains-64f91c97038e), while [Polkadot](https://wiki.polkadot.network/docs/learn-wasm), [Solana](https://docs.solana.com/developing/on-chain-programs/overview), and Cosmos decided to build their own VMs.
+When other blockchain projects emerged after Ethereum, they had two options: either develop their own virtual machine (VM) to suit their requirements or adopt the Ethereum Virtual Machine (EVM) to facilitate running the same smart contracts as Ethereum. [Fantom](https://fantom.foundation/) and [Avalanche](https://www.avax.network/) chose the latter and are [EVM-compatible](https://medium.com/eligma-blog/what-are-evm-compatible-blockchains-64f91c97038e), while [Polkadot](https://wiki.polkadot.com/docs/learn-wasm), [Solana](https://docs.solana.com/developing/on-chain-programs/overview), and Cosmos decided to build their own VMs.
 
 Polkadot and Cosmos opted to use WebAssembly ([Wasm](https://blog.devgenius.io/webassembly-wasm-in-blockchain-f651a8ac767b)). This allowed them to support a wider range of programming languages (e.g. Rust, Golang, and C++), making it easier for more developers already familiar with these languages to work on smart contract development and expand their ecosystem.
 

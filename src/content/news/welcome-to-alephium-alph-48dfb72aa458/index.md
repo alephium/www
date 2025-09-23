@@ -182,7 +182,7 @@ Telegram 🇹🇷: [https://t.me/alephium_tr](https://t.me/alephium_tr)
 - [Bitcoin Association Switzerland](/news/post/alephium-becomes-a-member-of-bitcoin-association-switzerland-2293fec16fc9)
 - Cetacean Capital: [https://cetacean.capital](https://cetacean.capital/)
 - Crypto Valley Association: [https://cryptovalley.swiss/](https://cryptovalley.swiss/)
-- Dappnode: [https://dappnode.io](https://dappnode.io)
+- Dappnode: [https://dappnode.com](https://dappnode.com)
 - Ergo: [https://ergoplatform.org/](https://ergoplatform.org/)
 - Flux Labs
 - Hodling SA: [https://www.hodling.ch/](https://www.hodling.ch/)

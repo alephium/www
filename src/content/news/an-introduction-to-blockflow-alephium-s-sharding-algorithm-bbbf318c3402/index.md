@@ -16,7 +16,7 @@ featuredImage: image_0006903410.jpg
 
 It’s the same in a blockchain context: sharding increases throughput by parallelizing transactions. This comes at the cost of added complexity because it becomes harder to maintain a secure and consistent ledger. Every sharded blockchain addresses these tradeoffs in different ways:
 
-[Polkadot](https://polkadot.network/), a multi-chain platform developed by the Web3 Foundation, introduces a sharding mechanism known as “parachains.” [Parachains](https://polkadot.network/blog/polkadot-v1-0-sharding-and-economic-security) are individual chains that run in parallel, interconnected through a central relay chain called the “Polkadot Relay Chain.”
+[Polkadot](https://polkadot.com/), a multi-chain platform developed by the Web3 Foundation, introduces a sharding mechanism known as “parachains.” [Parachains](https://polkadot.com/blog/polkadot-v1-0-sharding-and-economic-security) are individual chains that run in parallel, interconnected through a central relay chain called the “Polkadot Relay Chain.”
 
 [Zilliqa](https://www.zilliqa.com/) implements sharding differently. It uses network-level sharding to scale the blockchain by splitting transactions into smaller blocks. However, it does not support state sharding, the global state of the blockchain has to be shared by all shards, which limits its scalability.
 

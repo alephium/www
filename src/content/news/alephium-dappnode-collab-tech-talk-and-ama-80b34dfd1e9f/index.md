@@ -7,7 +7,7 @@ featuredImage: image_91b67983ba.png
 title: 'Alephium & Dappnode: Collab, Tech Talk, and AMA'
 ---
 
-We are really proud of Alephium’s addition as a part of [Dappnode](https://www.dappnode.io/)’s package offering! We share Dappnode’s commitment to a decentralized future and believe tools like this are key to making it happen.
+We are really proud of Alephium’s addition as a part of [Dappnode](https://www.dappnode.com/)’s package offering! We share Dappnode’s commitment to a decentralized future and believe tools like this are key to making it happen.
 
 Here’s a quick dive into what Dappnode is, what they built with Alephium, how to set up your node, and a small Q&A from the Tech Talk we had with them.
 
@@ -17,7 +17,7 @@ Dappnode is building open-source software to make decentralized infrastructure e
 
 It was born in 2017 to address a political censorship issue in Catalunya. During a referendum, the [central government demanded](https://www.independent.co.uk/news/world/europe/catalan-independence-referendum-spain-websites-blocked-spanish-constitution-votes-a7971751.html) that the ISP (internet service provider) block access to political opponents’ websites. That ignited a fiery spark & strong motivation to provide software and hardware to ease access to decentralized infrastructure for non-technical people.
 
-They have two product offerings: [Open source software](https://docs.dappnode.io/) for you to run a node on your machine and [plug-and-play hardware](https://www.dappnode.io/collections/frontpage) that allows you to do that with only a few clicks.
+They have two product offerings: [Open source software](https://docs.dappnode.io/) for you to run a node on your machine and [plug-and-play hardware](https://www.dappnode.com/collections/frontpage) that allows you to do that with only a few clicks.
 
 ![](image_290b718e45.jpg)
 
@@ -35,7 +35,7 @@ For the Dappnode Home, all it takes is to select the package at their store and 
 
 ![](image_98b926b87f.jpg)
 
-Going through the Dappnode Core path, you will have to download the Dappnode software to your machine. Follow the steps laid down by their [documentation](https://docs.dappnode.io/get-started/installation/custom-hardware/installation/overview). Everything is well explained, and you can ask for help on their [Discord](https://discord.com/invite/c28an8dA5k).
+Going through the Dappnode Core path, you will have to download the Dappnode software to your machine. Follow the steps laid down by their [documentation](https://docs.dappnode.io). Everything is well explained, and you can ask for help on their [Discord](https://discord.com/invite/c28an8dA5k).
 
 ![](image_e0ed2b9423.jpg)
 

@@ -84,7 +84,7 @@ I love messing around with knobs. Particularly, knobs that control some sort of 
 [https://iliascreates.com](https://iliascreates.com)  
 [https://twitter.com/\_nop33](https://twitter.com/_nop33)  
 [https://github.com/nop33](https://github.com/nop33)  
-[https://soundcloud.com/imfetamin](https://soundcloud.com/imfetamin)
+[https://soundcloud.com/djfetamin](https://soundcloud.com/djfetamin)
 
 ### **How/when did you come across crypto?**
 

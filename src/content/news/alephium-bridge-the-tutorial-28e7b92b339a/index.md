@@ -5,11 +5,12 @@ spotlight: false
 featuredImage: image_9b721622a7.png
 title: 'Alephium Bridge: The Tutorial'
 ---
-How to bridge your tokens + what to do on the Alephium Ecosystem
+
+How to bridge your tokens + what to do on the Alephium Ecosystem.
 
 _This tutorial was updated to reflect the new conditions after the_ [Rhône Network Upgrade](/news/post/rh-ne-network-upgrade-activated-cbeb298585fe)_: bridging from Alephium to Ethereum requires at least 205 blocks_ **_and_** _at least 55 minutes._
 
-Welcome to the Alephium Bridge Tutorial!
+## Welcome to the Alephium Bridge Tutorial!
 
 So we launched the bridge! It’s been quite an effort, if you want to know more about this, read [that](https://twitter.com/alephium/status/1722661768131178556) (twitter thread) or [that](/news/post/the-alephium-bridge-a787d90b2e4a) (full article on the bridge).
 
@@ -17,13 +18,13 @@ One last thing before we start, if you want to verify contract addresses, token 
 
 Here you will find a detailed step-by-step guide on how to bridge your tokens!
 
-**Here’s the bridge URL**: [https://bridge.alephium.org/](https://www.youtube.com/redirect?event=video_description&amp;redir_token=QUFFLUhqbWtib04tU2ZMS2FEdm15Tml3SUVuUTduQk1VQXxBQ3Jtc0ttcDJpOVRHSDBIRFZlZENHY1ZqQ2RCMDlXMEY2RVpoTUQzZF9mTzlvR1BJZU0wV2J2M1FvTEg3SWVaTEU3T0RoS0RGN0lYUmdJZVRuY3p0cFBBTUM0YzhxTndfd3A5ZTZ3aTJxckx1LWVJdTlYN2VvQQ&amp;q=https%3A%2F%2Fbridge.alephium.org%2F&amp;v=xoYVzbwBAjg)
+**Here’s the bridge URL**: https://bridge.alephium.org/
 
 First, if you’re into video tutorials, here you go:
 
 `video: https://www.youtube.com/watch?v=xoYVzbwBAjg`
 
-#### In writing
+## In writing
 
 If you feel that you prefer a slow-paced guide, the written version is for you!
 
@@ -81,7 +82,7 @@ For our case that is going to be the mobile wallet.
 
 In order to connect the mobile wallet, please pick the “Wallet Connect” option from the pop-up menu on screen.
 
-#### _The process shouldn’t be any more different than with any of the other two options._
+_The process shouldn’t be any more different than with any of the other two options._
 
 ![](image_73ecad4fc5.jpg)
 
@@ -201,9 +202,9 @@ We hope this tutorial was of use to you, for more information consider referring
 
 If you bridged some ERC-20 tokens and you don’t know what to do? Here is a list of things you can try out:
 
-**Experience the first alephium DEX:** [https://www.ayin.app/](https://www.youtube.com/redirect?event=video_description&amp;redir_token=QUFFLUhqbVAwOTRqcl9QNWkwR25iZXIzWlRPNnNWVW5GZ3xBQ3Jtc0trdFdQV1ZDV21hUE9ZSWhfd3hEYUhNdkdBZTU4NmVXTWh4T1hfZ2hxUFM2QXVWbjU3cHNBanotSG03TEcyd2NwcVNlU0NHM3E5MU5tSDl2Y3NodWFYQzlVNTU5VmJ6MTVNOEJZQVZlNWYtV0V3dEdnMA&amp;q=https%3A%2F%2Fwww.ayin.app%2F&amp;v=xoYVzbwBAjg)**  
-Snatch some NFTs from Deadrare:** [https://deadrare.io/](https://www.youtube.com/redirect?event=video_description&amp;redir_token=QUFFLUhqbG1zMDFTWVV1bklCdHZnVGM2eFI5aEdtMFQyd3xBQ3Jtc0trOFp5aHpMdjMxb1U0Ny1oOS1ZTHo0Zl85aUE4NlhIUzhGV2lfaGpIV3hxMjZWdjA1cVdVazQwcC1TTmtuTFhqQWs4bnJEc0VKVmFXZDV2ZWNqM2dpTHNyZ3RTRDYzaWsxX0FyRExpUUg0aENybVFVVQ&amp;q=https%3A%2F%2Fdeadrare.io%2F&amp;v=xoYVzbwBAjg)**  
-Try your luck over at walph.io:** [https://walph.io/](https://www.youtube.com/redirect?event=video_description&amp;redir_token=QUFFLUhqa25yeWc0NVBzdWNCaUxUWTVaUFFpejRhZnVkQXxBQ3Jtc0ttMlJCOGxMNVhfS3Rsbk9BR3l2RXNDZFNwTlBWeGlpX0JSWFk1bUg3aFVNRGU1UEpmYkw0UXNjMy1TTlhoTEdNaXIzQWtIb01uZmFrb3pwbi0yV2M3YURiUG5pRzBLMFVsUjl6QkZ5eWowUHFPSlpoSQ&amp;q=https%3A%2F%2Fwalph.io%2F&amp;v=xoYVzbwBAjg)
+[Experience the first alephium DEX](https://www.ayin.app/)  
+[Snatch some NFTs from Deadrare](https://deadrare.io/)  
+Try your luck over at walph.io
 
 ---
 
