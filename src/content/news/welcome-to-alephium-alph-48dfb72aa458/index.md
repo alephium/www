@@ -139,27 +139,27 @@ The core team counts 14 members. 9 are tech team members and the remaining 5 are
 
 **@s0ukie#8277** ⚙️ is our Chief of Staff, without whom nothing moves, previously @Lykke and @Bestmile. Working from Zürich, Switzerland 🇨🇭
 
-Meet the rest of the team on our website or on Linkedin : [https://www.linkedin.com/company/alephium/people/](https://www.linkedin.com/company/alephium/people/)
+Meet the rest of the team on our website or on Linkedin: [https://www.linkedin.com/company/alephium/people/](https://www.linkedin.com/company/alephium/people/)
 
 ## 🎯 **Meet us, join us, talk to us!**
 
 ### **Talk with us**
 
-Discord : [https://discord.gg/JErgRBfRSB](https://discord.gg/JErgRBfRSB)  
-Telegram : [https://t.me/alephiumgroup](https://t.me/alephiumgroup)  
-Reddit : [https://www.reddit.com/r/Alephium/](https://www.reddit.com/r/Alephium/)
+Discord: [https://discord.gg/JErgRBfRSB](https://discord.gg/JErgRBfRSB)  
+Telegram: [https://t.me/alephiumgroup](https://t.me/alephiumgroup)  
+Reddit: [https://www.reddit.com/r/Alephium/](https://www.reddit.com/r/Alephium/)
 
 ### **Connect with us**
 
-Twitter : [https://twitter.com/alephium](https://twitter.com/alephium)  
-LinkedIn : [https://www.linkedin.com/company/alephium](https://www.linkedin.com/company/alephium)  
-Facebook : [https://www.facebook.com/alephium](https://www.facebook.com/alephium)
+Twitter: [https://twitter.com/alephium](https://twitter.com/alephium)  
+LinkedIn: [https://www.linkedin.com/company/alephium](https://www.linkedin.com/company/alephium)  
+Facebook: [https://www.facebook.com/alephium](https://www.facebook.com/alephium)
 
 ### **Read, setup, explore, contribute**
 
-Website : [alephium.org](/)  
-Whitepapers : [https://github.com/alephium/white-paper](https://github.com/alephium/white-paper)  
-Medium : [https://medium.com/@alephium](https://medium.com/@alephium)  
+Website: [alephium.org](/)  
+Whitepapers: [https://github.com/alephium/white-paper](https://github.com/alephium/white-paper)  
+Medium: [https://medium.com/@alephium](https://medium.com/@alephium)  
 Github: [https://github.com/alephium](https://github.com/alephium)
 
 ### **Non-official Content & Communities (not moderated, endorsed or managed by Alephium)**
@@ -172,20 +172,20 @@ Telegram 🇹🇷: [https://t.me/alephium_tr](https://t.me/alephium_tr)
 
 ### **Buy/sell (Jan 12th onward)**
 
-- Gate.io — USDT : [https://www.gate.io/fr/trade/ALPH_USDT](https://www.gate.io/fr/trade/ALPH_USDT)
-- TradeOgre — USDT : [https://tradeogre.com/exchange/USDT-ALPH](https://tradeogre.com/exchange/USDT-ALPH)
-- TradeOgre — BTC : [https://tradeogre.com/exchange/BTC-ALPH](https://tradeogre.com/exchange/USDT-ALPH)
+- Gate.io — USDT: [https://www.gate.io/fr/trade/ALPH_USDT](https://www.gate.io/fr/trade/ALPH_USDT)
+- TradeOgre — USDT: [https://tradeogre.com/exchange/USDT-ALPH](https://tradeogre.com/exchange/USDT-ALPH)
+- TradeOgre — BTC: [https://tradeogre.com/exchange/BTC-ALPH](https://tradeogre.com/exchange/USDT-ALPH)
 
 ## **Our partners**
 
-- UTXO Alliance : [https://utxo-alliance.org/](https://utxo-alliance.org/)
+- UTXO Alliance: [https://utxo-alliance.org/](https://utxo-alliance.org/)
 - [Bitcoin Association Switzerland](/news/post/alephium-becomes-a-member-of-bitcoin-association-switzerland-2293fec16fc9)
 - Cetacean Capital: [https://cetacean.capital](https://cetacean.capital/)
-- Crypto Valley Association : [https://cryptovalley.swiss/](https://cryptovalley.swiss/)
+- Crypto Valley Association: [https://cryptovalley.swiss/](https://cryptovalley.swiss/)
 - Dappnode: [https://dappnode.io](https://dappnode.io)
-- Ergo : [https://ergoplatform.org/](https://ergoplatform.org/)
-- Flux Labs : [https://runonflux.io/fluxlabs.html](https://runonflux.io/fluxlabs.html)
-- Hodling SA : [https://www.hodling.ch/](https://www.hodling.ch/)
+- Ergo: [https://ergoplatform.org/](https://ergoplatform.org/)
+- Flux Labs
+- Hodling SA: [https://www.hodling.ch/](https://www.hodling.ch/)
 
 ## **🛠 If you’re a dev, start here:**
 
@@ -193,18 +193,17 @@ Here’s our latest code update: [https://github.com/alephium/alephium/releases/
 
 Come commit and pull request with us: [https://github.com/alephium](https://github.com/alephium)
 
-Full node : [https://github.com/alephium/alephium](https://github.com/alephium/alephium)  
-Wallet : [https://github.com/alephium/alephium-wallet/releases/latest](https://github.com/alephium/alephium-wallet/releases/latest)  
-Explorer : [https://github.com/alephium/explorer](https://github.com/alephium/explorer)  
-JS/TS lib : [https://github.com/alephium/alephium-js](https://github.com/alephium/alephium-js)  
-Wiki : [https://github.com/alephium/wiki](https://github.com/alephium/wiki)  
-Awesome Alphium ! [https://github.com/alephium/awesome-alephium](https://github.com/alephium/awesome-alephium)
+[Full node](https://github.com/alephium/alephium)  
+[Wallets & Explorer](https://github.com/alephium/alephium-frontend/releases/latest)  
+[SDK][https://github.com/alephium/alephium-web3](https://github.com/alephium/alephium-web3)  
+[Wiki](https://github.com/alephium/wiki)  
+[Awesome Alephium](https://github.com/alephium/awesome-alephium)
 
 ## **⛏ If you’re a miner, start here !**
 
-Start by joining the dedicated Mining channel on discord : [https://discord.gg/53QSMpKZyR](https://discord.gg/53QSMpKZyR)
+Start by joining the dedicated Mining channel on discord: [https://discord.gg/53QSMpKZyR](https://discord.gg/53QSMpKZyR)
 
-Find our Miner starter pack on Github : [https://github.com/alephium/alephium-miner-getting-started](https://github.com/alephium/alephium-miner-getting-started)
+Find our Miner starter pack on Github: [https://github.com/alephium/alephium-miner-getting-started](https://github.com/alephium/alephium-miner-getting-started)
 
 And the specific repos :
 
@@ -212,6 +211,6 @@ And the specific repos :
 - [https://github.com/alephium/fpga-miner](https://github.com/alephium/fpga-miner)
 - [https://github.com/alephium/mining-pool](https://github.com/alephium/mining-pool)
 
-And here is a video of how to get started for solo mining : [https://www.youtube.com/watch?v=hdPH6inWjhc](https://www.youtube.com/watch?v=hdPH6inWjhc)
+And here is a video of how to get started for solo mining: [https://www.youtube.com/watch?v=hdPH6inWjhc](https://www.youtube.com/watch?v=hdPH6inWjhc)
 
 And if you’d rather join a pool, you will find list of available pools at the time of writing [here.](https://wiki.alephium.org/Pool-Mining-Guide.html#community-pools)

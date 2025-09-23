@@ -30,4 +30,4 @@ Alephium proves that blockchain scalability and programmability can be achieved 
 
 **About FluxLabs**
 
-[FluxLabs](https://runonflux.io/fluxlabs.html) is an incubation and acceleration project for blockchain and technology-based projects with a focus on early stage start-ups in the emerging blockchain and cryptocurrency industries. It empowers Web3 decentralization.
+FluxLabs is an incubation and acceleration project for blockchain and technology-based projects with a focus on early stage start-ups in the emerging blockchain and cryptocurrency industries. It empowers Web3 decentralization.

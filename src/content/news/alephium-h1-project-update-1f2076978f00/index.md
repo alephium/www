@@ -44,7 +44,7 @@ Statistics shown in the explorer
 
 ### JS-SDK
 
-We have deprecated alephium-js in favor of the new [@alephium/sdk package](https://github.com/alephium/js-sdk/):
+We have deprecated alephium-js in favor of the new @alephium/sdk package.
 
 We learned from our mistakes when introducing breaking changes in a minor version of alephium-js without clarifying it to our dev users and without using a `0.X.X` package version. We created a new package (`0.X.X`) and a clear message in the `README` that breaking changes will from now be introduced in **minor** versions and that users of the package should lock the version of the package in their projects. We will make sure to announce all breaking changes in the release notes, please make sure to read them!
 

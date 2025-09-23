@@ -67,7 +67,7 @@ And here are the community-led translations in [Indonesian](https://medium.com/@
 
 Reddit has a very lively crypto community! Alephium is present there, with a small but active community. Our Youtube channel is where you’ll find tutorials, podcasts, dev workshops, recorded twitter spaces & AMAs!
 
-For example find the tutorial on how to use the bridge on [Youtube](https://www.youtube.com/watch?v=xoYVzbwBAjg) (as a video), and on [Medium](/news/post/alephiumalephium-bridge-the-tutorial-28e7b92b339a?source=user_profile---------7----------------------------) (as text).
+For example find the tutorial on how to use the bridge on [Youtube](https://www.youtube.com/watch?v=xoYVzbwBAjg) (as a video), and on [our blog](/news/post/alephium-bridge-the-tutorial-28e7b92b339a) (as text).
 
 - [Alephium Reddit](https://www.reddit.com/r/Alephium/)
 - [Alephium YouTube](https://www.youtube.com/@alephium)
