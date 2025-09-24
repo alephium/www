@@ -1,5 +1,7 @@
 import CMS from 'decap-cms-app'
 
+import styles from './cms.css'
+
 CMS.registerEditorComponent({
   // Internal id of the component
   id: 'video',
@@ -25,3 +27,5 @@ CMS.registerEditorComponent({
     return obj.url
   }
 })
+
+CMS.registerPreviewStyle(styles.toString(), { raw: true })

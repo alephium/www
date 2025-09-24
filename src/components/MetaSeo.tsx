@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet'
 export interface MetaSeoProps {
   title?: string
   description?: string
+  ogDescription?: string
   lang?: string
 }
 
@@ -20,12 +21,13 @@ const defaultTitle = 'Alephium | The Web3 you were promised'
 const defaultDescription =
   'Alephium is the next generation PoW Layer 1 with smart contracts. Built for speed, security, and sustainability. Start building or join the community today.'
 
-export const MetaSeo = ({ title, description, lang = 'en' }: MetaSeoProps) => {
+export const MetaSeo = ({ title, description, ogDescription, lang = 'en' }: MetaSeoProps) => {
   // const { image } = useStaticQuery<Queries.MetaSeoDataQuery>(metaSeoQuery)
 
   const isTestSite = typeof window !== 'undefined' && window.location.hostname === 'www2.alephium.org'
 
   const metaDescription = description || defaultDescription
+  const metaOgDescription = ogDescription || metaDescription
   const metaImageAbsoluteUrl = `https://${process.env.GATSBY_ALEPHIUM_HOSTNAME}/ogimage-1.png`
   const titleContent = title || defaultTitle
 
@@ -53,7 +55,7 @@ export const MetaSeo = ({ title, description, lang = 'en' }: MetaSeoProps) => {
         },
         {
           property: `og:description`,
-          content: metaDescription
+          content: metaOgDescription
         },
         {
           property: `og:type`,
@@ -81,7 +83,7 @@ export const MetaSeo = ({ title, description, lang = 'en' }: MetaSeoProps) => {
         },
         {
           name: `twitter:description`,
-          content: metaDescription
+          content: metaOgDescription
         },
         {
           name: `twitter:image`,
