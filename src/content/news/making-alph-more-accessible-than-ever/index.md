@@ -1,9 +1,13 @@
 ---
 title: Making ALPH More Accessible Than Ever
-description: "Making ALPH more accessible than ever with Onramper integration, breaking down crypto onboarding barriers and simplifying the transition from bank accounts to on-chain wallets."
+description: Making ALPH more accessible than ever with Onramper integration,
+  breaking down crypto onboarding barriers and simplifying the transition from
+  bank accounts to on-chain wallets.
+seoDescription: Alephium Onramper integration - making ALPH more accessible than
+  ever. Breaking down crypto onboarding barriers and simplifying wallet
+  transitions.
 date: 2025-03-11T12:00:00.000Z
-seoDescription: "Alephium Onramper integration - making ALPH more accessible than ever. Breaking down crypto onboarding barriers and simplifying wallet transitions."
-spotlight: true
+spotlight: false
 featuredImage: onramper1.webp
 ---
 One of the biggest barriers in crypto is onboarding. Moving from a bank account or credit card to an on-chain wallet can be a complicated, frustrating process with too many steps, stopping many users in their tracks.
