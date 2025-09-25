@@ -1,8 +1,13 @@
 ---
 title: "Phase 2: From Scalable Infrastructure to Aligned Economics"
-description: "Phase 2: From Scalable Infrastructure to Aligned Economics - They said Layer 1 blockchains had to compromise: performance for decentralization, usability for security. Alephium chose a different path."
+description: "Phase 2: From Scalable Infrastructure to Aligned Economics - They
+  said Layer 1 blockchains had to compromise: performance for decentralization,
+  usability for security. Alephium chose a different path."
+seoDescription: Alephium Phase 2 scalable infrastructure to aligned economics -
+  Layer 1 blockchain without compromise. Performance, decentralization,
+  usability, and security.
 date: 2025-08-22T12:01:00.000Z
-seoDescription: "Alephium Phase 2 scalable infrastructure to aligned economics - Layer 1 blockchain without compromise. Performance, decentralization, usability, and security."
+spotlight: true
 featuredImage: aligned1.webp
 ---
 They said Layer 1 blockchains had to compromise: performance for decentralization, usability for security. Alephium chose a different path.
