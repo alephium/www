@@ -1,10 +1,13 @@
 ---
-date: 2024-01-19T14:13:31.154000Z
-description: "Join Alephium's first hackathon with $70,000 in prizes! Build dApps, tooling, and interoperability solutions on Alephium's sharded blockchain platform."
-seoDescription: "Alephium #1 Hackathon Pioneers - $70,000 prize pool for dApps, tooling & interoperability. Feb 12-26, 2024. Apply now!"
-spotlight: true
-featuredImage: image_f92c0445fe.jpg
 title: "Alephium #1 Hackathon — Pioneers!"
+description: Join Alephium's first hackathon with $70,000 in prizes! Build
+  dApps, tooling, and interoperability solutions on Alephium's sharded
+  blockchain platform.
+seoDescription: "Alephium #1 Hackathon Pioneers - $70,000 prize pool for dApps,
+  tooling & interoperability. Feb 12-26, 2024. Apply now!"
+date: 2024-01-19T14:13:31.154Z
+spotlight: false
+featuredImage: image_f92c0445fe.jpg
 ---
 Applications are open, [apply now](https://docs.google.com/forms/d/e/1FAIpQLSdDsa1CwJeg-fxrWb1gVWefP4iJoNoZwNe0PNwk94GqmcMkHg/viewform?usp=sharing)!
 
