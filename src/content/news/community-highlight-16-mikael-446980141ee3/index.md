@@ -1,7 +1,7 @@
 ---
 date: 2024-03-12T10:20:23.845000Z
-description: Regularly, we put the spotlight on an active member of the Alephium community.
-  This is an opportunity to showcase their contributions to…
+description: "Community Highlight #16: Meet Mikael, an active member of the Alephium community showcasing their contributions, passion, and dedication to the ecosystem."
+seoDescription: "Alephium Community Highlight #16 Mikael - active community member showcase. Contributions, passion, and dedication to blockchain ecosystem."
 spotlight: false
 featuredImage: image_da6bf8d8d8.jpg
 title: 'Community Highlight #16, Mikael'

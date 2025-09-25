@@ -1,7 +1,7 @@
 ---
 date: 2023-01-17T14:18:22.744000Z
-description: On December 1st in 2022, the community was encouraged to enter a contest
-  to produce the best tutorial about how to run an Alephium full…
+description: "Celebrating the winners of the Alephium/Flux tutorial contest! Discover the best tutorials for running Alephium full nodes on Flux decentralized infrastructure."
+seoDescription: "Alephium Flux tutorial contest winners announced - best guides for running full nodes on Flux. Video, article, and Twitter thread winners revealed."
 spotlight: false
 featuredImage: image_c88240f459.jpg
 title: ALEPHIUM/FLUX Tutorial Winners

@@ -1,7 +1,7 @@
 ---
 date: 2023-08-16T15:52:52.305000Z
-description: Week 32 Milestones & progress on dev on Alephium!
-spotlight: false
+description: "Weekly DevUpdate: Week 32 milestones and development progress on Alephium! Stay informed about the latest advancements and technical developments in the ecosystem."
+seoDescription: "Alephium Weekly DevUpdate Week 32 - development milestones and progress. Latest blockchain advancements and technical ecosystem developments."
 featuredImage: image_4db7db9502.png
 title: 'Weekly #DevUpdate'
 ---

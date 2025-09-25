@@ -1,11 +1,10 @@
 ---
-title: Alephium available on Ledger Hardware Wallets
-description: TL;DR Better Alephium functionality with HWs.
-seoDescription: Alephium now integrates with Ledger hardware wallets, giving
-  users enhanced security and control over their digital assets.
-date: 2024-10-10T16:32:52.147Z
+date: 2024-10-10T16:32:52.147000Z
+description: "Alephium integrates with Ledger hardware wallets, providing enhanced security for storing, sending tokens, and interacting with dApps while keeping private keys offline."
+seoDescription: "Alephium Ledger integration - secure hardware wallet support for ALPH tokens. Enhanced security for storing and managing Alephium assets offline."
 spotlight: false
 featuredImage: image_42696665b2.jpg
+title: Alephium available on Ledger Hardware Wallets
 ---
 
 ## Alephium x Ledger

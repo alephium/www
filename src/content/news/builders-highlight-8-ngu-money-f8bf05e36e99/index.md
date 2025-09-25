@@ -1,7 +1,7 @@
 ---
 date: 2024-03-01T15:24:32.761000Z
-description: Our ecosystem thrives with developers building amazing projects on top
-  of Alephium, delivering a unique experience and providing real…
+description: "Builders Highlight #8: Meet ngu.money, showcasing innovative DeFi projects built on Alephium that deliver unique experiences and real utility for users."
+seoDescription: "Alephium Builders Highlight #8 ngu.money - DeFi projects on Alephium blockchain. Developer showcase and ecosystem project spotlight."
 spotlight: false
 featuredImage: image_0408f23a12.jpg
 title: 'Builders Highlight #8: ngu.money'

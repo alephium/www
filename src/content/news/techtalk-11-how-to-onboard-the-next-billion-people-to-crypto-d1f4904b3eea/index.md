@@ -1,15 +1,14 @@
 ---
 date: 2023-08-02T16:02:20.857000Z
-description: 'Mikaël Vaivre is Alephium’s lead front-end developer, and he’s been
-  the guest of our TechTalk #11! While Mika is fairly discreet, and…'
-spotlight: false
+description: "Tech Talk #11: How to onboard the next billion people to crypto, featuring insights from industry experts on making cryptocurrency accessible to mainstream users."
+seoDescription: "Alephium Tech Talk #11 - how to onboard next billion people to crypto. Industry experts discuss making cryptocurrency accessible to mainstream users."
 featuredImage: image_50aac2130d.png
 title: 'TechTalk #11 — How to onboard the next billion people to crypto?'
 ---
 
-Mikaël Vaivre is Alephium’s lead front-end developer, and he’s been the guest of our TechTalk \#11! While Mika is fairly discreet, and Alephium users might not have had the chance to see him a lot, his work has touched their digital experiences in more ways than they realize. Whether they used the [desktop wallet](/wallets), browsed the Alephium [Website](/), or used the [explorer](https://explorer.alephium.org/), Mika’s creativity and expertise and his fruitful collaboration with [Ilias](https://github.com/nop33)) have shaped these experiences.
+Mikaël Vaivre is Alephium’s lead front-end developer, and he’s been the guest of our TechTalk \#11! While Mika is fairly discreet, and Alephium users might not have had the chance to see him a lot, his work has touched their digital experiences in more ways than they realize. Whether they used the [desktop wallet](/wallets), browsed the Alephium [Website](/), or used the [explorer](https://explorer.alephium.org/), Mika’s creativity and expertise and his fruitful collaboration with [Ilias](https://github.com/nop33) have shaped these experiences.
 
-[Mika’s](https://twitter.com/mika_pote) trajectory in the world of technology began as an environmental engineer studying in Lausanne. However, he quickly entered the startup realm in a car automation company, where he crossed paths with [Cheng](https://twitter.com/wachmc). His next step led him to the blockchain world at [LYKKE,](https://lykke.com/) one of the pioneering Swiss exchanges, and since 2019, Mika has been an integral part of Alephium.
+[Mika’s](https://twitter.com/mika_pote) trajectory in the world of technology began as an environmental engineer studying in Lausanne. However, he quickly entered the startup realm in a car automation company, where he crossed paths with [Cheng](https://twitter.com/wachmc). His next step led him to the blockchain world at [LYKKE](https://lykke.com/), one of the pioneering Swiss exchanges, and since 2019, Mika has been an integral part of Alephium.
 
 You can watch the presentation here:
 

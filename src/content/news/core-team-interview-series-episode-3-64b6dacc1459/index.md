@@ -1,6 +1,7 @@
 ---
 date: 2022-03-21T16:28:48.809000Z
-description: Presenting the humans developing the Back-end.
+description: "Core Team Interview Series Episode 3: Meet the humans developing the back-end of Alephium, showcasing the talented developers behind the blockchain infrastructure."
+seoDescription: "Alephium Core Team Interview Episode 3 - back-end developers showcase. Meet the humans developing Alephium's blockchain infrastructure."
 spotlight: false
 featuredImage: image_e6ce249ae6.jpg
 title: Core team interview series. Episode 3

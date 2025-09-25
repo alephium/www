@@ -1,7 +1,7 @@
 ---
 date: 2023-11-03T14:03:20.452000Z
-description: Our ecosystem thrives with developers building amazing projects on top
-  of Alephium delivering a unique experience and providing real…
+description: "Builders Highlight #5: Meet Deadrare, showcasing innovative NFT projects built on Alephium that deliver unique experiences and real utility for users."
+seoDescription: "Alephium Builders Highlight #5 Deadrare - NFT projects on Alephium blockchain. Developer showcase and ecosystem project spotlight."
 spotlight: false
 featuredImage: image_233bde702f.png
 title: 'Builders Highlight #5: Deadrare'

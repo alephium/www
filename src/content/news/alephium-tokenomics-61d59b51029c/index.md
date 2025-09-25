@@ -1,7 +1,7 @@
 ---
 date: 2021-10-05T10:18:04.453000Z
-description: 'Updated: The tokenomics were published on Oct 5, 2021. We updated this
-  article in February of 2024 to better address the most frequently…'
+description: "Comprehensive overview of Alephium's tokenomics, covering token distribution, emission rates, mining rewards, and economic model for the sharded blockchain platform."
+seoDescription: "Alephium tokenomics - token distribution, emission rates, mining rewards, economic model. Comprehensive guide to ALPH token economics and blockchain incentives."
 spotlight: false
 featuredImage: image_9c872051c7.png
 title: Alephium Tokenomics

@@ -1,7 +1,7 @@
 ---
 date: 2022-04-21T09:29:12.943000Z
-description: Back in March 2022, we launched a community video contest and the results
-  are in!
+description: "Celebrating the winners of Alephium's community video creation contest launched in March 2022! Discover the creative content showcasing the blockchain platform."
+seoDescription: "Alephium video creation contest winners announced - March 2022 community contest results. Creative blockchain content showcasing platform features."
 spotlight: false
 featuredImage: image_ec866fe64a.jpg
 title: And the winners of the video creation contest are…

@@ -1,12 +1,11 @@
 ---
-title: "Danube Upgrade: Everything You Need to Know + FAQ"
-description: TL;DR Faster, Simpler, Developer-centric, Long-term improvements
-seoDescription: Faster block times, invisible sharding, seedless wallet
-  onboarding and advanced smart contract tooling. Danube is a huge leap forward
-  for Web3 accessibility.
+title: 'Danube Upgrade: Everything You Need to Know + FAQ'
+description: "Learn everything you need to know about the Danube Upgrade on Alephium, including comprehensive FAQ and details about the major network upgrade activated on July 15, 2025."
 date: 2025-07-16T12:00:00.000Z
+seoDescription: "Alephium Danube Upgrade FAQ - everything you need to know about major network upgrade. Comprehensive guide to July 15, 2025 activation."
 spotlight: true
 featuredImage: danube3.webp
+title: "Danube Upgrade: Everything You Need to Know + FAQ"
 ---
 
 After a year of building, we are proud to announce that the Danube network upgrade was activated on July 15, 2025, at 12:00 GMT+02:00.

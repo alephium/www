@@ -1,7 +1,7 @@
 ---
 date: 2023-09-28T16:34:51.022000Z
-description: Our ecosystem thrives with developers building amazing stuff on top of
-  Alephium (services, dApps, etc…) that deliver a unique experience…
+description: "Builders Highlight #4: Meet No Trust Verify, showcasing innovative projects built on Alephium that deliver unique experiences and real utility for users."
+seoDescription: "Alephium Builders Highlight #4 No Trust Verify - innovative projects on Alephium blockchain. Developer showcase and ecosystem project spotlight."
 spotlight: false
 featuredImage: image_61abe28f4e.jpg
 title: 'Builders Highlight #4: No Trust Verify'

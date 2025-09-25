@@ -1,7 +1,7 @@
 ---
 date: 2022-10-27T12:01:43.406000Z
-description: 'Alephium is announcing its first Network Upgrade: The Leman Network
-  Upgrade. This name is a tribute to the lake around which a significant…'
+description: "Alephium announces its first Network Upgrade: The Leman Network Upgrade, named after Lake Geneva, bringing significant improvements to the blockchain platform."
+seoDescription: "Alephium Leman Network Upgrade announcement - first major blockchain upgrade named after Lake Geneva. Significant platform improvements and enhancements."
 spotlight: false
 featuredImage: image_8e4b384c80.jpg
 title: Announcing the Leman Network Upgrade

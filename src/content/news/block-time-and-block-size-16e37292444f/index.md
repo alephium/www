@@ -1,6 +1,7 @@
 ---
 date: 2022-08-30T12:53:03.942000Z
-description: A Technical Promenade, part 1
+description: "Technical exploration of block time and block size concepts in Alephium and blockchain technology, part of a comprehensive series on key blockchain fundamentals."
+seoDescription: "Alephium block time and block size technical guide - blockchain fundamentals series. Understanding blockchain performance metrics and technical concepts."
 spotlight: false
 featuredImage: image_2e664b2caf.png
 title: Block Time and Block Size

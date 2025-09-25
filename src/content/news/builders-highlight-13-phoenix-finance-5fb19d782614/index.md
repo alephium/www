@@ -1,7 +1,7 @@
 ---
 date: 2024-05-18T17:21:46.819000Z
-description: Our ecosystem thrives with developers building amazing projects on top
-  of Alephium, delivering a unique experience and providing real…
+description: "Builders Highlight #13: Meet Phoenix Finance, showcasing innovative DeFi projects built on Alephium that deliver unique experiences and real utility for users."
+seoDescription: "Alephium Builders Highlight #13 Phoenix Finance - DeFi projects on Alephium blockchain. Developer showcase and ecosystem project spotlight."
 spotlight: false
 featuredImage: image_34436381c0.jpg
 title: 'Builders Highlight #13: Phoenix Finance'

@@ -1,7 +1,7 @@
 ---
 date: 2024-04-27T16:11:20.970000Z
-description: Our ecosystem thrives with developers building amazing projects on top
-  of Alephium, delivering a unique experience and providing real…
+description: "Builders Highlight #12: Meet Linx, showcasing innovative projects built on Alephium that deliver unique experiences and real utility for users in the ecosystem."
+seoDescription: "Alephium Builders Highlight #12 Linx - innovative projects on Alephium blockchain. Developer showcase and ecosystem project spotlight."
 spotlight: false
 featuredImage: image_589079dadd.png
 title: 'Builders Highlight #12: Linx'

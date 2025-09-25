@@ -1,7 +1,7 @@
 ---
 date: 2022-09-06T13:19:46.098000Z
-description: On Thursday, August 25th, 2022, Alephium’s team conducted an AMA on our
-  Discord as a follow-up discussion with Cheng Wang, inventor of…
+description: "Tech Talk #1 Proof-of-Less-Work AMA: Follow-up discussion with Cheng Wang, inventor of PoLW and founder of Alephium, covering the innovative consensus mechanism."
+seoDescription: "Alephium Tech Talk #1 Proof-of-Less-Work AMA - Cheng Wang discussion. Innovative consensus mechanism and blockchain technology insights."
 spotlight: false
 featuredImage: image_1d46b897a3.jpg
 title: 'TECH TALK #1 — Proof-of-Less-Work AMA'

@@ -1,7 +1,7 @@
 ---
 date: 2022-05-27T12:21:53.876000Z
-description: The first half of 2022 was a vigorous but exciting, fun and rewarding
-  period for Alephium in terms of milestones and growth. Read about…
+description: "Alephium's H1 2022 project update covering milestones, growth, and exciting developments in the first half of the year, showcasing progress and achievements."
+seoDescription: "Alephium H1 2022 project update - milestones, growth, and achievements in first half of year. Blockchain development progress and community highlights."
 spotlight: false
 featuredImage: image_4c7ef37863.jpg
 title: Alephium — H1 Project Update

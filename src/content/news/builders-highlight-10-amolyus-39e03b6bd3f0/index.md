@@ -1,7 +1,7 @@
 ---
 date: 2024-04-13T16:03:32.024000Z
-description: Our ecosystem thrives with developers building amazing projects on top
-  of Alephium, delivering a unique experience and providing real…
+description: "Builders Highlight #10: Meet Amolyus, showcasing innovative projects built on Alephium that deliver unique experiences and real utility for users in the ecosystem."
+seoDescription: "Alephium Builders Highlight #10 Amolyus - innovative projects on Alephium blockchain. Developer showcase and ecosystem project spotlight."
 spotlight: false
 featuredImage: image_f00a81ad55.png
 title: 'Builders Highlight #10: Amolyus'

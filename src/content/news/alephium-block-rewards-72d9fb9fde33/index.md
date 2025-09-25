@@ -1,7 +1,7 @@
 ---
 date: 2021-11-22T15:06:08.158000Z
-description: An in-depth analysis of the Block rewards, explaining the time-based
-  and hashrate-based components of the reward emission rates.
+description: "An in-depth analysis of Alephium's block rewards system, explaining the time-based and hashrate-based components of the reward emission rates and mining incentives."
+seoDescription: "Alephium block rewards analysis - time-based and hashrate-based emission rates. Mining incentives, uncle blocks, and transaction fee burning explained."
 spotlight: false
 featuredImage: image_becedcf971.jpg
 title: Alephium Block Rewards

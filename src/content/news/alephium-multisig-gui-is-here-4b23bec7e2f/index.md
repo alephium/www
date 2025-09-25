@@ -1,6 +1,7 @@
 ---
 date: 2023-09-01T11:50:48.968000Z
-description: 'The Alephium Toolkit: A Guide to Creating a Multisig Wallet'
+description: "The Alephium Toolkit now includes a comprehensive GUI for creating multisig wallets, providing enhanced security and collaborative asset management for users."
+seoDescription: "Alephium multisig GUI launch - comprehensive toolkit for creating multisig wallets. Enhanced security and collaborative asset management features."
 spotlight: false
 featuredImage: image_674414bc53.png
 title: Alephium Multisig GUI is here!

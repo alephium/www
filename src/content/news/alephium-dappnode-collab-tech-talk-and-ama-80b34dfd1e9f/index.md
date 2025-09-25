@@ -1,7 +1,7 @@
 ---
 date: 2022-10-28T14:13:38.218000Z
-description: We are really proud of Alephium’s addition as a part of Dappnode’s package
-  offering! We share Dappnode’s commitment to a decentralized…
+description: "Alephium joins Dappnode's package offering, enabling easy full-node deployment with local chain explorer and monitoring dashboard for enhanced decentralization."
+seoDescription: "Alephium Dappnode integration - easy full-node deployment with local explorer and monitoring. Decentralized infrastructure for blockchain nodes."
 spotlight: false
 featuredImage: image_91b67983ba.png
 title: 'Alephium & Dappnode: Collab, Tech Talk, and AMA'

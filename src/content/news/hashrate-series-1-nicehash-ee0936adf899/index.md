@@ -1,7 +1,7 @@
 ---
 date: 2024-07-25T17:24:31.557000Z
-description: The blockchain hashrate is directly correlated with network security.
-  As a Proof-of-work blockchain, Alephium relies on active ecosystem…
+description: "Hashrate Series #1: Meet Nicehash, a key ecosystem actor sustaining Alephium's network security through Proof-of-Work mining and hashrate contribution."
+seoDescription: "Alephium Hashrate Series #1 Nicehash - Proof-of-Work mining ecosystem actor. Network security and hashrate contribution showcase."
 spotlight: false
 featuredImage: image_05e9596be1.jpg
 title: 'Hashrate Series #1: Nicehash'

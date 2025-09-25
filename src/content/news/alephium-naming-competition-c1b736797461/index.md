@@ -1,7 +1,7 @@
 ---
 date: 2022-01-31T13:28:49.350000Z
-description: Naming can be fun, but good naming is hard. Alephium has identified three
-  items that desperately need naming, and we’d like to ask you for…
+description: "Join Alephium's naming competition! Help name three important items in the ecosystem and showcase your creativity while contributing to the project's development."
+seoDescription: "Alephium naming competition - help name ecosystem items. Community creativity contest for blockchain project development and naming."
 spotlight: false
 featuredImage: image_5e2e1482cf.png
 title: Alephium Naming Competition
