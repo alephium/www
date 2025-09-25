@@ -34,7 +34,7 @@ const CustomPage = (props: PageProps) => {
                 Communities
               </h1>
               <p>
-                Join our bubbling community of community of <strong>builders, users, partners and friends.</strong>
+                Join our bubbling community of <strong>builders, users, partners, and friends.</strong>
               </p>
             </TextElement>
           </SubpageSection>
