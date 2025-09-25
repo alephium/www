@@ -1,8 +1,9 @@
 ---
 title: "Phase 2 Discord AMA: Your Questions, Answered!"
-description: As we gear up for the next stage of our ecosystem development,
-  Phase 2, led by our highly anticipated Core dApp and ALPH staking, we wanted
-  to hear and answer your burning questions.
+description: TL;DR Cheng and Hongchao answer your best questions.
+seoDescription: As Alephium prepares for the next stage of ecosystem
+  development, Phase 2, led by our highly anticipated Core dApp and ALPH
+  staking, we wanted to hear and answer your burning questions.
 date: 2025-09-03T20:01:00.000Z
 spotlight: true
 featuredImage: discord-ama-2-.png
