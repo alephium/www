@@ -1,6 +1,8 @@
 ---
-title: 'Danube Upgrade: One Step Closer to The Web3 We Were Promised'
-description: Danube Upgrade Update
+title: "Danube Upgrade: One Step Closer to The Web3 We Were Promised"
+description: TL;DR Danube brings huge upgrades to Alephium.
+seoDescription: "Danube isn’t just a network upgrade, it’s the most ambitious
+  leap in Alephium’s history, the moment in which everything clicks. "
 date: 2025-03-07T12:00:00.000Z
 spotlight: true
 featuredImage: danube1.webp
