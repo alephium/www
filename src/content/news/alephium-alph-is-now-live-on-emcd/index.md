@@ -26,7 +26,8 @@ With EMCD’s robust platform, the Alephium ecosystem gains:
 
 ### Quotes
 
-“The Alephium network is purpose-built to combine the best of Bitcoin’s security and Proof-of-Work with a high-performance, sharded architecture. Our collaboration with EMCD brings our native utility coin to a platform trusted by hundreds of thousands of users for mining and trading. This is a crucial step in expanding our ecosystem and giving our mining community another strong and reliable option,” said an Alephium Spokesperson.
+> The Alephium network is purpose-built to combine the best of Bitcoin’s security and Proof-of-Work with a high-performance, sharded architecture. Our collaboration with EMCD brings our native utility coin to a platform trusted by hundreds of thousands of users for mining and trading. This is a crucial step in expanding our ecosystem and giving our mining community another strong and reliable option\
+> *\- Alephium Spokesperson.*
 
 ## About EMCD
 
@@ -39,5 +40,5 @@ Alephium is a scalable Layer 1 blockchain powered by Proof-of-Work and native sh
 #### Ready to get started?
 
 * Open a wallet and [trade $ALPH on EMCD here](https://emcd.onelink.me/FCtc/alph).
-* [Learn more](http://www.alephium.org) about Alephium.
+* [Learn more](/) about Alephium.
 * Join the [Alephium community](https://linktree.com/alephium).
