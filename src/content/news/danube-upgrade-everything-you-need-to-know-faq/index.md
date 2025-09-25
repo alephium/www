@@ -1,6 +1,9 @@
 ---
-title: 'Danube Upgrade: Everything You Need to Know + FAQ'
-description: Learn everything you need to know about the Danube Upgrade on Alephium
+title: "Danube Upgrade: Everything You Need to Know + FAQ"
+description: TL;DR Faster, Simpler, Developer-centric, Long-term improvements
+seoDescription: Faster block times, invisible sharding, seedless wallet
+  onboarding and advanced smart contract tooling. Danube is a huge leap forward
+  for Web3 accessibility.
 date: 2025-07-16T12:00:00.000Z
 spotlight: true
 featuredImage: danube3.webp
