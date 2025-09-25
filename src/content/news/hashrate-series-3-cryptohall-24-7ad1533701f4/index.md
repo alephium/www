@@ -1,10 +1,11 @@
 ---
-date: 2024-09-18T09:07:51.547000Z
-description: The blockchain hashrate is directly correlated with network security.
-  As a Proof-of-work blockchain, Alephium relies on active ecosystem…
+title: "Hashrate Series #3: CryptoHall 24"
+description: TL;DR We interview Frederick from CryptoHall 24
+seoDescription: "Frederick shares his crypto journey, background, and how
+  CryptoHall 24 came to be in this blockchain interview. "
+date: 2024-09-18T09:07:51.547Z
 spotlight: false
 featuredImage: image_9fb00a1330.png
-title: 'Hashrate Series #3: CryptoHall 24'
 ---
 
 _The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem actors to sustain and improve Alephium’s reliability. This series is about them, and after_ [Nicehash](/news/post/hashrate-series-1-nicehash-ee0936adf899) _and_ [Goldshell](/news/post/hashrate-series-2-goldshell-93cc51a86640)_, please welcome CryptoHall 24._
