@@ -1,6 +1,7 @@
 ---
 date: 2022-07-05T08:56:12.147000Z
-description: A discussion with Cheng Wang, inventor of PoLW and founder of Alephium
+description: "Tech Talk #1: The ultimate guide to Proof-of-Less-Work, featuring a discussion with Cheng Wang, inventor of PoLW and founder of Alephium."
+seoDescription: "Alephium Tech Talk #1 Proof-of-Less-Work ultimate guide - Cheng Wang discussion. Innovative consensus mechanism and blockchain technology insights."
 spotlight: false
 featuredImage: image_a8ea38700f.png
 title: 'TECH TALK #1 — The Ultimate guide to Proof-of-Less-Work, the universe and

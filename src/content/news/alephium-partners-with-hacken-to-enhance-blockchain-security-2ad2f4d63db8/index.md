@@ -1,7 +1,7 @@
 ---
 date: 2025-02-18T14:00:26.801000Z
-description: We are pleased to announce a strategic partnership between Alephium and
-  Hacken, a leading cybersecurity firm specializing in blockchain and…
+description: "Alephium partners with Hacken, a leading cybersecurity firm, to enhance blockchain security and build a more secure, scalable, and resilient ecosystem."
+seoDescription: "Alephium Hacken partnership - cybersecurity firm collaboration for blockchain security. Enhanced security, scalability, and resilience for Web3 ecosystem."
 spotlight: false
 featuredImage: image_dc132e8c03.jpeg
 title: Alephium Partners with Hacken to Enhance Blockchain Security

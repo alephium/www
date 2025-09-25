@@ -1,6 +1,7 @@
 ---
 date: 2023-02-22T13:42:39.451000Z
-description: A Technical Promenade, part 4
+description: "Technical exploration of sharding concepts in Alephium and blockchain technology, part 4 of a comprehensive series on key blockchain fundamentals."
+seoDescription: "Alephium sharding technical guide - blockchain fundamentals series part 4. Understanding sharding concepts and blockchain scalability."
 spotlight: false
 featuredImage: image_ace28503b1.jpeg
 title: Sharding

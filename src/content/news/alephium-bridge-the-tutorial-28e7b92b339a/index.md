@@ -1,6 +1,7 @@
 ---
 date: 2023-11-23T15:31:22.684000Z
-description: How to bridge your tokens + what to do on the Alephium Ecosystem
+description: "Step-by-step tutorial on how to bridge tokens between Alephium and Ethereum, plus discover what you can do with bridged tokens in the Alephium ecosystem."
+seoDescription: "Alephium Bridge tutorial - step-by-step guide to bridge tokens between Alephium and Ethereum. Learn token bridging and ecosystem exploration."
 spotlight: false
 featuredImage: image_9b721622a7.png
 title: 'Alephium Bridge: The Tutorial'

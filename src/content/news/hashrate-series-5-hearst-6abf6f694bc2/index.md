@@ -1,7 +1,7 @@
 ---
 date: 2024-10-21T08:17:06.469000Z
-description: The blockchain hashrate is directly correlated with network security.
-  As a Proof-of-work blockchain, Alephium relies on active ecosystem…
+description: "Hashrate Series #5: Meet Hearst, another key ecosystem actor sustaining Alephium's network security through Proof-of-Work mining and hashrate contribution."
+seoDescription: "Alephium Hashrate Series #5 Hearst - Proof-of-Work mining ecosystem actor. Network security and hashrate contribution showcase."
 spotlight: false
 featuredImage: image_73a6ea4a32.png
 title: 'Hashrate Series #5: Hearst'

@@ -1,8 +1,7 @@
 ---
 date: 2023-05-08T15:02:30.374000Z
-description: It’s a big one! Token support, dApp connectivity, and a lot more in this
-  feature-rich release!
-spotlight: false
+description: "The Desktop Wallet 2.0 is here! Token support, dApp connectivity, and a lot more in this feature-rich release that enhances the Alephium desktop experience."
+seoDescription: "Alephium Desktop Wallet 2.0 release - token support, dApp connectivity, feature-rich update. Enhanced desktop experience for Alephium users."
 featuredImage: image_12c93c0df8.png
 title: The Desktop Wallet 2.0
 ---

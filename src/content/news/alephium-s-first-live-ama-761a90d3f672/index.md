@@ -1,7 +1,7 @@
 ---
 date: 2021-11-05T15:36:35.780000Z
-description: On November 3rd, 2021 the Alephium team answered all the questions sourced
-  from the community. A warm thank you to everyone for asking so…
+description: "Alephium's first live AMA session on November 3rd, 2021, where the team answered community questions about the project, technology, and future developments."
+seoDescription: "Alephium first live AMA - November 3rd, 2021 community Q&A session. Team answers questions about blockchain technology and project developments."
 spotlight: false
 featuredImage: image_0b65cf3212.jpg
 title: Alephium’s first live AMA

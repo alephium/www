@@ -1,7 +1,7 @@
 ---
 date: 2023-06-23T13:47:11.907000Z
-description: Alephium’s ecosystem thrives with developers building amazing stuff on
-  top of Alephium (services, dApps, etc…) that deliver a unique…
+description: "Builders Highlights #1: Meet Sezame Wallet, showcasing innovative wallet projects built on Alephium that deliver unique experiences and real utility for users."
+seoDescription: "Alephium Builders Highlights #1 Sezame Wallet - innovative wallet projects on Alephium blockchain. Developer showcase and ecosystem project spotlight."
 spotlight: false
 featuredImage: image_e2c600aac0.png
 title: 'Builders Highlights #1: Sezame Wallet'

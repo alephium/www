@@ -1,7 +1,7 @@
 ---
 date: 2024-01-02T10:52:33.342000Z
-description: One month after the release of the bridge on mainnet, Cheng, Hongchao
-  & Maud were interviewed by Vladimir in a Twitter space AMA. You can…
+description: "Part 3 of the Alephium Bridge AMA series covering hackathon plans, grants, and additional developments, concluding the comprehensive discussion with the team."
+seoDescription: "Alephium Bridge AMA Part 3 - hackathon plans, grants, and developments. Final part of Twitter Space interview series with team insights."
 spotlight: false
 featuredImage: image_077fd88379.png
 title: Bridge AMA — The Alephium Bridge — part 3 — The hackathon, grants &amp; more

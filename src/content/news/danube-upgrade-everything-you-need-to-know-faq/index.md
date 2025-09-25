@@ -1,7 +1,8 @@
 ---
 title: 'Danube Upgrade: Everything You Need to Know + FAQ'
-description: Learn everything you need to know about the Danube Upgrade on Alephium
+description: "Learn everything you need to know about the Danube Upgrade on Alephium, including comprehensive FAQ and details about the major network upgrade activated on July 15, 2025."
 date: 2025-07-16T12:00:00.000Z
+seoDescription: "Alephium Danube Upgrade FAQ - everything you need to know about major network upgrade. Comprehensive guide to July 15, 2025 activation."
 spotlight: true
 featuredImage: danube3.webp
 ---

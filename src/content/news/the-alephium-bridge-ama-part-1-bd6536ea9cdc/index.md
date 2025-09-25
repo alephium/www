@@ -1,8 +1,7 @@
 ---
 date: 2023-12-15T16:29:25.284000Z
-description: One month after the release of the bridge on mainnet, Cheng, Hongchao
-  & Maud were interviewed by Vladimir in a Twitter space AMA. Where are…
-spotlight: false
+description: "The Alephium Bridge AMA Part 1: Learn about the bridge's architecture, security model, and how it enables seamless cross-chain transfers between Alephium and Ethereum."
+seoDescription: "Alephium Bridge AMA Part 1 - architecture, security model, cross-chain transfers. Twitter Space interview with team insights on bridge development."
 featuredImage: image_1f582eb3bd.jpg
 title: The Alephium Bridge AMA — part 1
 ---

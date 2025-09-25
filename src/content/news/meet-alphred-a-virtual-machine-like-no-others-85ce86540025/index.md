@@ -1,7 +1,7 @@
 ---
 date: 2023-01-18T14:30:50.649000Z
-description: This is the third of a series of technical innovations brought by Alephium.
-  Find the previous ones here (PolW) and here (sUTXO). Here we…
+description: "Meet ALPHred, Alephium's unique virtual machine that distinguishes itself from others in the blockchain space, examining its function and innovative features."
+seoDescription: "Alephium ALPHred virtual machine - unique blockchain VM like no others. Technical innovation and virtual machine features showcase."
 spotlight: false
 featuredImage: image_de012354c9.jpeg
 title: Meet ALPHred, a Virtual Machine like no others

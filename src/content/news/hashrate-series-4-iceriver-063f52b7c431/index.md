@@ -1,7 +1,7 @@
 ---
 date: 2024-10-06T09:37:12.874000Z
-description: The blockchain hashrate is directly correlated with network security.
-  As a Proof-of-work blockchain, Alephium relies on active ecosystem…
+description: "Hashrate Series #4: Meet ICERIVER, another key ecosystem actor sustaining Alephium's network security through Proof-of-Work mining and hashrate contribution."
+seoDescription: "Alephium Hashrate Series #4 ICERIVER - Proof-of-Work mining ecosystem actor. Network security and hashrate contribution showcase."
 spotlight: false
 featuredImage: image_b9699193dd.png
 title: 'Hashrate Series #4: ICERIVER'

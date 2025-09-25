@@ -1,6 +1,7 @@
 ---
 date: 2023-05-16T14:57:00.483000Z
-description: 'Featuring: Ledger Integration'
+description: "Alephium Browser Wallet Extension v0.7.0 released featuring Ledger integration, providing enhanced security and hardware wallet support for users."
+seoDescription: "Alephium Browser Wallet Extension v0.7.0 release - Ledger integration feature. Enhanced security with hardware wallet support for browser extension."
 spotlight: false
 featuredImage: image_6170abf307.png
 title: Browser Wallet Extension v0.7.0 has been released

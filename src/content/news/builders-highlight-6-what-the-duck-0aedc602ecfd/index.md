@@ -1,7 +1,7 @@
 ---
 date: 2024-01-22T15:54:45.700000Z
-description: Our ecosystem thrives with developers building amazing projects on top
-  of Alephium, delivering a unique experience and providing real…
+description: "Builders Highlight #6: Meet What the Duck, showcasing innovative projects built on Alephium that deliver unique experiences and real utility for users."
+seoDescription: "Alephium Builders Highlight #6 What the Duck - innovative projects on Alephium blockchain. Developer showcase and ecosystem project spotlight."
 spotlight: false
 featuredImage: image_2adc785dc9.jpg
 title: 'Builders Highlight #6: What the Duck'

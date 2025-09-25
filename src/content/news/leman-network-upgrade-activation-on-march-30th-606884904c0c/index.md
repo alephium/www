@@ -1,6 +1,7 @@
 ---
 date: 2023-03-17T13:57:08.047000Z
-description: Full Node v2.0.0 released; All nodes need to update before activation
+description: "Leman Network Upgrade activation scheduled for March 30th, 2023 at 10:00 AM GMT. Full Node v2.0.0 released with enhanced dev tools for growing ecosystem support."
+seoDescription: "Alephium Leman Network Upgrade activation March 30th, 2023 - Full Node v2.0.0 released. Enhanced dev tools for growing ecosystem support."
 spotlight: false
 featuredImage: image_241f33d0fd.jpg
 title: Leman Network Upgrade Activation on March 30th!

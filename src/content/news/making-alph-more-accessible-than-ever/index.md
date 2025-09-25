@@ -1,7 +1,8 @@
 ---
 title: Making ALPH More Accessible Than Ever
-description: Alephium integrates Onramper
+description: "Making ALPH more accessible than ever with Onramper integration, breaking down crypto onboarding barriers and simplifying the transition from bank accounts to on-chain wallets."
 date: 2025-03-11T12:00:00.000Z
+seoDescription: "Alephium Onramper integration - making ALPH more accessible than ever. Breaking down crypto onboarding barriers and simplifying wallet transitions."
 spotlight: true
 featuredImage: onramper1.webp
 ---

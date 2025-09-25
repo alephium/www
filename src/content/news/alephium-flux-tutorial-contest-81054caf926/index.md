@@ -1,7 +1,7 @@
 ---
 date: 2022-12-01T14:07:11.315000Z
-description: Thanks to Flux, it is easier than ever to run an Alephium full node.
-  But it could become even easier. All it takes is a little distribution…
+description: "Join the Alephium/Flux tutorial contest to create the best guide on running an Alephium full node on Flux decentralized infrastructure. Win prizes totaling 2,000 ALPH & 500 FLUX!"
+seoDescription: "Alephium Flux tutorial contest - create best guide for running full node on Flux. Win 2,000 ALPH & 500 FLUX prizes. Decentralized infrastructure tutorials."
 spotlight: false
 featuredImage: image_8778565d71.jpeg
 title: ALEPHIUM/FLUX Tutorial Contest

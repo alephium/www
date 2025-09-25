@@ -1,7 +1,7 @@
 ---
 date: 2024-04-20T13:26:33.259000Z
-description: Our ecosystem thrives with developers building amazing projects on top
-  of Alephium, delivering a unique experience and providing real…
+description: "Builders Highlight #11: Meet Fugashu, featuring innovative projects built on Alephium that deliver unique experiences and real utility for users in the ecosystem."
+seoDescription: "Alephium Builders Highlight #11 Fugashu - innovative projects on Alephium blockchain. Developer showcase and ecosystem project spotlight."
 spotlight: false
 featuredImage: image_44c631f654.jpg
 title: 'Builders Highlight #11: Fugashu'

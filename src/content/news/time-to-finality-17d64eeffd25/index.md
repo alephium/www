@@ -1,7 +1,7 @@
 ---
 date: 2022-09-20T14:05:54.857000Z
-description: A Technical Promenade, part 3
-spotlight: false
+description: "Technical exploration of time to finality concepts in Alephium and blockchain technology, part 3 of a comprehensive series on key blockchain fundamentals."
+seoDescription: "Alephium time to finality technical guide - blockchain fundamentals series part 3. Understanding finality concepts and transaction confirmation."
 featuredImage: image_1a832ca4ff.jpg
 title: Time to Finality
 ---

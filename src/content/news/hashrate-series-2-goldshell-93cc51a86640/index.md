@@ -1,7 +1,7 @@
 ---
 date: 2024-09-01T11:16:28.900000Z
-description: The blockchain hashrate is directly correlated with network security.
-  As a Proof-of-work blockchain, Alephium relies on active ecosystem…
+description: "Hashrate Series #2: Meet Goldshell, another key ecosystem actor sustaining Alephium's network security through Proof-of-Work mining and hashrate contribution."
+seoDescription: "Alephium Hashrate Series #2 Goldshell - Proof-of-Work mining ecosystem actor. Network security and hashrate contribution showcase."
 spotlight: false
 featuredImage: image_0f660632a8.jpeg
 title: 'Hashrate Series #2: Goldshell'

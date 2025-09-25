@@ -1,8 +1,8 @@
 ---
 title: "An introduction to Blockflow: Alephium’s sharding algorithm"
-description: This is the fourth of a series of technical innovations brought by
-  Alephium. Find the previous ones here (PolW), here (sUTXO), and here…
+description: "Introduction to Blockflow, Alephium's innovative sharding algorithm that enhances blockchain performance through advanced sharding concepts and technical innovations."
 date: 2023-07-28T13:05:23.630Z
+seoDescription: "Blockflow sharding algorithm introduction - Alephium's innovative blockchain sharding technology. Technical guide to sharding concepts and performance enhancement."
 spotlight: false
 featuredImage: image_0006903410.jpg
 ---

@@ -1,6 +1,7 @@
 ---
 date: 2024-10-23T08:26:59.371000Z
-description: How to install the Alephium App in your Ledger Nano S
+description: "Step-by-step tutorial on how to install the Alephium app on your Ledger Nano S hardware wallet for enhanced security and offline key management."
+seoDescription: "Alephium Ledger Nano S tutorial - install Alephium app on hardware wallet. Step-by-step guide for enhanced security and offline key management."
 spotlight: false
 featuredImage: image_b03ee75ea8.jpeg
 title: Alephium 🤝 Ledger Nano S

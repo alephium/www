@@ -1,7 +1,7 @@
 ---
 date: 2024-01-11T16:30:53.602000Z
-description: The Alephium blockchain, like many decentralized networks, relies heavily
-  on the contributions of miners to maintain its integrity and…
+description: "Miners' Highlight #1: Meet Jake (aka Hiram Abiff), showcasing the contributions of miners who maintain Alephium's blockchain integrity and functionality."
+seoDescription: "Alephium Miners Highlight #1 Jake Hiram Abiff - miner contributions showcase. Blockchain integrity and functionality maintenance spotlight."
 spotlight: false
 featuredImage: image_e1d2ef76d7.png
 title: 'Miners’ Highlight #1 — Jake aka Hiram Abiff .’.'
