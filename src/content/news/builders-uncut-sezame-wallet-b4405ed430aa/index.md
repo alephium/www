@@ -1,25 +1,25 @@
 ---
-date: 2024-09-06T13:28:58.200000Z
-description: This interview was conducted around the Athens Builders Meetup, which
-  took place at the end of June 2024. If you’re just discovering…
+title: Builders Uncut — Sezame Wallet
+description: TL;DR Meet Tobias from Sezame.
+seoDescription: "Tobias (a founding member of Sezame Wallet) discusses the
+  project’s journey in the Alephium ecosystem. "
+date: 2024-09-06T13:28:58.200Z
 spotlight: false
 featuredImage: image_1e2a26d3d1.png
-title: Builders Uncut — Sezame Wallet
 ---
-
-_This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
+*This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!*
 
 Here, Tobias (a founding member of [Sezame Wallet](https://sezame.app/)) discusses the project’s journey in the Alephium ecosystem. He highlights the creation of a mobile wallet with integrated cloud mining, making Alephium accessible to non-technical users, and shares their plans for the future. Find the full (slightly edited) transcript below if you prefer reading.
 
 `video: https://www.youtube.com/watch?v=_tvCwzxQhdM`
 
-## Can you introduce yourself and tell us a bit about Sezame Wallet?
+> ## Can you introduce yourself and tell us a bit about Sezame Wallet?
 
 I’m Tobias, one of the founding members of Sezame Wallet. We recognized the potential in Alephium early on and wanted to build something that made this technology accessible. We started with a mobile wallet because having your assets easily accessible on your phone is essential.
 
 We also launched cloud mining, which allowed non-technical users to participate in mining Alephium even before any exchanges or DEXs were available.
 
-## How did Sezame Wallet get started on Alephium?
+> ## How did Sezame Wallet get started on Alephium?
 
 We got involved with Alephium during its testnet phase back in 2021. We were among the first to release a mobile wallet integrated with cloud mining on the platform.
 
@@ -27,7 +27,7 @@ Our goal was to make Alephium’s technology available to a broader audience, an
 
 ![](image_3976c548f5.png)
 
-## How did your team come together, and what drew you to Alephium?
+> ## How did your team come together, and what drew you to Alephium?
 
 Our team comprises six founders with diverse backgrounds — some in tech, others in crypto investment, and a few just passionate about new technologies.
 
@@ -37,7 +37,7 @@ And our next question was: is there a team that can deliver on such bold claims?
 
 After meeting the team and seeing their ambitious roadmap, we believed they had the skills and experience to deliver something exceptional.
 
-## How have Alephium and its community evolved since you first got involved?
+> ## How have Alephium and its community evolved since you first got involved?
 
 Initially, we were concerned about whether Cheng’s knowledge could be effectively shared within the community. Over time, though, we’ve seen an incredible increase in the number of people capable of contributing and answering questions.
 
@@ -45,33 +45,33 @@ The ecosystem has grown naturally, with more people adding their expertise, crea
 
 We see an increasing number of people who can build and exchange their wisdom and experience with others. It’s been a real pleasure to explore the possibilities and see what Alephium is capable of, not only from the core team but also from the ecosystem.
 
-## What’s the current focus for Sesame Wallet, and what can we expect in the future?
+> ## What’s the current focus for Sesame Wallet, and what can we expect in the future?
 
 Right now, we’re carefully planning the next update for our wallet. Our focus is on making it more functional and user-friendly, particularly for non-technical users.
 
 Features like lending and swapping are on the roadmap, but we’re taking our time to ensure everything is seamless. The timing of our next release will depend on the partnerships we forge in the coming months.
 
-## **After meeting with other builders in Athens, what upcoming developments are you most excited about?**
+> ## After meeting with other builders in Athens, what upcoming developments are you most excited about?
 
 I’m particularly excited about the development of lending platforms like AlphBanX. The idea of using ALPH as collateral while still maintaining liquidity is brilliant.
 
 For those of us who believe in Alephium’s long-term potential, it’s a way to stay invested without selling our assets.
 
-## Any final thoughts before we wrap up?
+> ## Any final thoughts before we wrap up?
 
 I want to thank you for this opportunity to share what we’ve been working on. We’re committed to the Alephium ecosystem and look forward to contributing more as we go forward.
 
 I’m excited about the future and eager to update everyone on our progress.
 
----
+- - -
 
 **Links:**
 
-**Sezame Wallet**  
-Website: [https://sezame.app/](https://sezame.app/)  
-Twitter: [https://twitter.com/SesameWallet](https://twitter.com/SesameWallet)  
-Telegram: [https://t.me/sesamewalletgroup](https://t.me/sesamewalletgroup)
+**Sezame Wallet**\
+Website: <https://sezame.app/>\
+Twitter: <https://twitter.com/SesameWallet>\
+Telegram: <https://t.me/sesamewalletgroup>
 
----
+- - -
 
 For any questions or feedback, reach out to us on [Discord](/discord) or [Telegram](https://t.me/alephiumgroup), and follow [@alephium on Twitter](https://x.com/alephium) for the latest updates!
