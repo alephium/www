@@ -1,6 +1,9 @@
 ---
 title: "Learn, Play, Earn: Alephium is now on Learnify!"
-description: Web3 is complex. Learning it shouldn’t be.
+description: TL;DR Web3 is complex. Learning it shouldn’t be.
+seoDescription: Web3 is complex. Learning it shouldn’t be. Enter Learnify, a
+  gamified learning platform built on Alephium that turns curiosity into tokens,
+  and confusion into mastery.
 date: 2025-08-07T12:12:00.000Z
 spotlight: true
 featuredImage: learnify1.webp
@@ -29,11 +32,11 @@ Learning about Alephium has never been easier or more rewarding.
 
 Whether you’re just entering Web3 or already navigating dApps and wallets, Learnify makes understanding Alephium feel like playing a game. Each topic is presented through short, digestible quests. No whitepapers, no technical jargon dumps. Just intuitive questions, visuals, and instant feedback.
 
-Learn more here: [https://app.learnify.xyz/map/alephium-101](https://app.learnify.xyz/map/alephium-101)
+Learn more here: <https://app.learnify.xyz/map/alephium-101>
 
 You’ll explore what Alephium is, how it works, and what makes it different from the rest and every completed mission brings you one step closer to earning real $ALPH coins.
 
-**Discover:**
+### **Discover:**
 
 * What is ALPH and how does Alephium’s Proof-of-Less-Work work?
 * How to use Alephium wallets and bridge to other chains
@@ -43,11 +46,9 @@ You’ll explore what Alephium is, how it works, and what makes it different fro
 
 ![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*2D5Gx8dUtqdR6ENQ4XFLDw.jpeg)
 
-### Already Using Alephium? Earn ALPH by Proving Your Knowledge
+## Already Using Alephium? Earn ALPH by Proving Your Knowledge
 
 If you’re already familiar with Alephium, Learnify isn’t just a chance to learn more, it’s your chance to earn ALPH by completing gamified quests.
-
-
 
 Here’s how:
 
@@ -73,12 +74,8 @@ Together, Alephium and Learnify are:
 
 This is more than a campaign, it’s a step toward a more inclusive, open, and interactive Web3 ecosystem.
 
-
-
-### Ready to Play and Earn?
+## Ready to Play and Earn?
 
 Start your Alephium journey now. Join Learnify and unlock the Web3 you were promised. Learn. Play. Earn ALPH.
-
-
 
 Here is your technical journey to Alephium: https://app.learnify.xyz/map/alephium-technical
