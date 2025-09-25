@@ -1,14 +1,14 @@
 ---
 title: Alephium ($ALPH) is Now Live on EMCD
-description: "Alephium ($ALPH) has now been listed on EMCD.io, one of the
-  world's leading cryptocurrency exchanges and mining pools. "
-seoDescription: Alephium ($ALPH) has now been listed on EMCD, one of the world's
-  leading cryptocurrency exchanges and mining pools. Find ALPH in their mobile
-  mining wallet.
+description: Alephium ($ALPH) has now been listed on EMCD.io, a crypto ecosystem
+  based on one of the world’s top 10 mining pools.
+seoDescription: "Important Listing: Alephium ($ALPH) has now been listed on
+  EMCD, a crypto ecosystem based on one of the world’s top 10 mining pools. "
 date: 1905-09-25T17:00:00.000Z
+spotlight: true
 featuredImage: emcdlisting.png
 ---
-Alephium ($ALPH) has now been listed on [EMCD](http://www.emcd.io), one of the world's **leading crypto exchanges and mining pools**. 
+Alephium ($ALPH) has now been listed on [EMCD](http://www.emcd.io), a crypto ecosystem based on **one of the world’s top 10 mining pools**.
 
 On the road to launching our Core dApp and ALPH staking, this partnership marks another step forward in Alephium’s mission to bring the power of secure, scalable, and sustainable Proof-of-Work to a much wider audience.
 
