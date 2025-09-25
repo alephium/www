@@ -1,7 +1,7 @@
 ---
 date: 2023-03-31T12:54:28.661000Z
-description: New documentation was created with the help of Autodoc
-seoDescription: New documentation was created with the help of Autodoc
+description: "Discover how Alephium leveraged AI-powered Autodoc to automatically generate comprehensive documentation for the full-node source code, improving developer onboarding."
+seoDescription: "AI-powered Autodoc generates comprehensive Alephium full-node documentation using GPT-4. Automated code documentation for better developer experience."
 spotlight: false
 featuredImage: image_05a75ee0d0.jpg
 title: 'AI-Powered Improved Docs: Explaining Alephium Full Node Code'

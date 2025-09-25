@@ -1,8 +1,7 @@
 ---
 date: 2024-04-06T15:51:49.879000Z
-description: Regularly, we put the spotlight on an active member of the Alephium community.
-  This is an opportunity to showcase their contributions to…
-spotlight: false
+description: "Community Highlight #18: Meet Mowreez, an active member of the Alephium community showcasing their contributions, passion, and dedication to the ecosystem."
+seoDescription: "Alephium Community Highlight #18 Mowreez - active community member showcase. Contributions, passion, and dedication to blockchain ecosystem."
 featuredImage: image_5ef627d235.png
 title: 'Community Highlight #18, Mowreez'
 ---

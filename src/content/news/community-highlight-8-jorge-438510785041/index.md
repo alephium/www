@@ -1,8 +1,7 @@
 ---
 date: 2023-04-19T13:09:21.468000Z
-description: Once in a while, the spotlight is put on one active member of the Alephium
-  community. This is an opportunity to showcase community members’…
-spotlight: false
+description: "Community Highlight #8: Meet Jorge, an active member of the Alephium community showcasing their contributions, passion, and dedication to the ecosystem."
+seoDescription: "Alephium Community Highlight #8 Jorge - active community member showcase. Contributions, passion, and dedication to blockchain ecosystem."
 featuredImage: image_7718c9cccb.jpg
 title: 'Community Highlight #8, Jorge'
 ---

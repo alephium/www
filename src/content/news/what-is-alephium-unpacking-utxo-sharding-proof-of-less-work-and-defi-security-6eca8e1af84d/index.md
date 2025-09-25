@@ -1,12 +1,9 @@
 ---
-title: What is Alephium? Unpacking UTXO Sharding, Proof of Less Work, and DeFi
-  Security
-description: TL;DR Highlights + Video of Maud's "Defiant" interview
-seoDescription: Alephium attended Singapore's Token2049 event, where COO Maud
-  Bannwart was interviewed by crypto media giant "The Defiant".
-date: 2024-11-04T17:36:49.665Z
-spotlight: false
+date: 2024-11-04T17:36:49.665000Z
+description: "What is Alephium? Unpacking UTXO Sharding, Proof of Less Work, and DeFi Security - Alephium attended Singapore Token 2049 and Maud was interviewed by Defiant news."
+seoDescription: "What is Alephium - UTXO sharding, Proof of Less Work, DeFi security. Singapore Token 2049 Defiant news interview with Maud about Alephium history and future."
 featuredImage: image_ef7dfbeb3a.png
+title: What is Alephium? Unpacking UTXO Sharding, Proof of Less Work, and DeFi Security
 ---
 Alephium attended Singapore Token 2049 and Maud was interviewed by Defiant news there. She shared a bit about Alephium’s history, the current state and what the future holds. The full video interview is available here:
 

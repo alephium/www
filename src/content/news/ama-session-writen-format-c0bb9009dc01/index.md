@@ -1,6 +1,7 @@
 ---
 date: 2023-04-04T12:19:17.715000Z
-description: All answers about the exciting new developments in Alephium’s ecosystem!
+description: "Written format of Alephium's AMA session covering exciting new developments in the ecosystem, including answers about the Leman Network Upgrade and community questions."
+seoDescription: "Alephium AMA session written format - answers about Leman Network Upgrade and ecosystem developments. Community Q&A about blockchain innovations."
 spotlight: false
 featuredImage: image_bcc69de2ae.jpeg
 title: AMA Session — Writen format

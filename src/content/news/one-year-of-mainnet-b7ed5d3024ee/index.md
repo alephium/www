@@ -1,7 +1,7 @@
 ---
 date: 2022-11-09T13:15:44.633000Z
-description: To celebrate the first anniversary of Alephium’s mainnet launch (8th
-  of November 2021), Alephium’s core team was asked for their insight on…
+description: "Celebrating one year of Alephium's mainnet launch! Core team insights on the past year, current status, and future direction of the blockchain platform."
+seoDescription: "Alephium one year of mainnet - first anniversary celebration. Core team insights on past year, current status, and future direction."
 spotlight: false
 featuredImage: image_d76cbbd7f1.jpg
 title: ONE YEAR OF MAINNET

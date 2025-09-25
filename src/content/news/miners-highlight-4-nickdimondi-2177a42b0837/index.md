@@ -1,8 +1,7 @@
 ---
 date: 2024-03-07T17:10:35.427000Z
-description: The Alephium blockchain relies heavily on the contributions of miners
-  to maintain its integrity and functionality. Recognizing the…
-spotlight: false
+description: "Miners' Highlight #4: Meet nickdimondi, showcasing the contributions of miners who maintain Alephium's blockchain integrity and functionality."
+seoDescription: "Alephium Miners Highlight #4 nickdimondi - miner contributions showcase. Blockchain integrity and functionality maintenance spotlight."
 featuredImage: image_53565e03c5.png
 title: 'Miners’ Highlight #4: nickdimondi'
 ---

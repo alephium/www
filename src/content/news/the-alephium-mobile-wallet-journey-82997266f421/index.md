@@ -1,8 +1,7 @@
 ---
 date: 2024-01-04T09:34:01.540000Z
-description: The Alephium Mobile Wallet is a great addition to the current set of
-  wallets developed by the core contributors. It is available for…
-spotlight: false
+description: "The Alephium Mobile Wallet Journey! Discover the great addition to the current set of wallets, available for Android and iOS with easy-to-use, fun, and good-looking interface."
+seoDescription: "Alephium Mobile Wallet Journey - Android and iOS wallet addition. Easy-to-use, fun, good-looking interface for mobile cryptocurrency management."
 featuredImage: image_f3c0a097ca.jpg
 title: The Alephium Mobile Wallet Journey!
 ---

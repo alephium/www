@@ -1,8 +1,7 @@
 ---
 date: 2023-05-19T13:46:53.177000Z
-description: Bridge assets from and to Ethereum Goerli Testnet and BNB Smart Chain
-  Testnet
-spotlight: false
+description: "The Alephium Bridge is now live on testnet! Test cross-chain transfers between Alephium and Ethereum testnets, explore the bridge functionality, and help identify any issues before mainnet launch."
+seoDescription: "Alephium Bridge testnet launch - cross-chain transfers between Alephium and Ethereum testnets. Test bridge functionality before mainnet launch."
 featuredImage: image_9ee06c07f7.png
 title: The Alephium Bridge is live on Testnet!
 ---

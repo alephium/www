@@ -1,7 +1,7 @@
 ---
 date: 2022-11-17T17:18:14.134000Z
-description: Combining the expressiveness of the account model & security of the UTXO
-  model.
+description: "Introduction to Alephium's stateful UTXO model, combining the expressiveness of the account model with the security of the UTXO model for enhanced blockchain functionality."
+seoDescription: "Alephium stateful UTXO model introduction - combines account model expressiveness with UTXO security. Enhanced blockchain functionality and smart contract capabilities."
 spotlight: false
 featuredImage: image_0e0226c293.jpg
 title: An introduction to the stateful UTXO model

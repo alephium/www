@@ -1,11 +1,9 @@
 ---
-title: Builders Uncut — Alephium Battle
-description: "TL;DR Meet Lorenzo and Eduardo. "
-seoDescription: '"Alephium Battle" development team, Lorenzo and Eduardo,
-  discuss their backgrounds in tech and crypto. '
-date: 2024-09-12T09:52:36.624Z
-spotlight: false
+date: 2024-09-12T09:52:36.624000Z
+description: "Builders Uncut: Meet Alephium Battle, an in-depth interview conducted around the Athens Builders Meetup showcasing innovative projects in the Alephium ecosystem."
+seoDescription: "Alephium Builders Uncut Alephium Battle - Athens Builders Meetup interview. In-depth developer showcase and ecosystem project spotlight."
 featuredImage: image_8ce8d2d172.png
+title: Builders Uncut — Alephium Battle
 ---
 *This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!*
 

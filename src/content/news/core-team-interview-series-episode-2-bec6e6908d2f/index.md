@@ -1,7 +1,7 @@
 ---
 date: 2022-03-14T12:35:58.446000Z
-description: Presenting the humans behind operations, marketing and community.
-spotlight: false
+description: "Core Team Interview Series Episode 2: Presenting the humans behind operations, marketing, and community, showcasing the talented team members driving Alephium's success."
+seoDescription: "Alephium Core Team Interview Episode 2 - operations, marketing, community team showcase. Meet the humans behind Alephium's success and team members."
 featuredImage: image_a509233072.jpg
 title: Core team interview series. Episode 2
 ---

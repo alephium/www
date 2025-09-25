@@ -1,7 +1,7 @@
 ---
 date: 2023-10-09T16:23:10.788000Z
-description: The Blockflow Alliance, the first ever DAO for community development
-  on Alephium, has recently been created. Its main contributors and…
+description: "The Blockflow Alliance DAO, the first community development DAO on Alephium, has its grant request approved, supporting community-driven ecosystem development."
+seoDescription: "Blockflow Alliance DAO grant approved - first community development DAO on Alephium. Ecosystem fund support for community-driven blockchain development."
 spotlight: false
 featuredImage: image_c3ece7bf57.jpg
 title: Blockflow Alliance DAO grant request approved

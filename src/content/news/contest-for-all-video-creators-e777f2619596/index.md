@@ -1,6 +1,7 @@
 ---
 date: 2022-03-17T09:24:59.276000Z
-description: Prizes for a total of 10’000 ALPH 💰
+description: "Join Alephium's video creation contest with prizes totaling 10,000 ALPH! Showcase your creativity and help promote the blockchain platform through engaging video content."
+seoDescription: "Alephium video creation contest - 10,000 ALPH prizes for creators. Showcase creativity and promote blockchain platform through engaging video content."
 spotlight: false
 featuredImage: image_fb9ec1d3ef.jpg
 title: ✨Contest for all video creators 🚀

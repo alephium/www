@@ -1,6 +1,7 @@
 ---
 date: 2023-03-08T12:35:48.426000Z
-description: A Collective Effort by the Community
+description: "Alephium achieves another milestone with its listing on TradeOgre exchange, made possible through collective community effort and support for the sharded blockchain platform."
+seoDescription: "Alephium TradeOgre exchange listing - community-driven milestone. ALPH token trading on second exchange. Sharded blockchain platform growth."
 spotlight: false
 featuredImage: image_337a30a98f.jpg
 title: Alephium Listed on Tradeogre Exchange

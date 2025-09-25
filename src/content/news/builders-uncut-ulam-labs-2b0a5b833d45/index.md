@@ -1,8 +1,7 @@
 ---
 date: 2024-08-23T08:05:22.102000Z
-description: This interview was conducted around the Athens Builders Meetup, which
-  took place at the end of June 2024. If you’re just discovering…
-spotlight: false
+description: "Builders Uncut: Meet Ulam Labs, an in-depth interview conducted around the Athens Builders Meetup showcasing innovative projects in the Alephium ecosystem."
+seoDescription: "Alephium Builders Uncut Ulam Labs - Athens Builders Meetup interview. In-depth developer showcase and ecosystem project spotlight."
 featuredImage: image_593e134906.png
 title: Builders Uncut — Ulam Labs
 ---

@@ -1,7 +1,7 @@
 ---
 date: 2022-12-21T14:16:06.820000Z
-description: TL;DR
-spotlight: false
+description: "DiffBomb Day Postmortem: Analysis of the December 21st, 2022 incident that affected Alephium's network difficulty adjustment mechanism and block production."
+seoDescription: "Alephium DiffBomb Day postmortem - December 21st, 2022 incident analysis. Network difficulty adjustment mechanism and block production investigation."
 featuredImage: image_c961ca7340.png
 title: DiffBomb Day Postmortem
 ---

@@ -1,7 +1,7 @@
 ---
 date: 2022-08-09T14:34:19.192000Z
-description: To keep giving our users more tools to secure their ALPH, we’ve implemented
-  the BIP39 passphrase feature in the desktop wallet v1.3.0!
+description: "Alephium implements BIP39 passphrase feature in desktop wallet v1.3.0, providing users with enhanced security tools to protect their ALPH tokens and assets."
+seoDescription: "Alephium BIP39 passphrase implementation - desktop wallet v1.3.0 security feature. Enhanced ALPH token protection with passphrase functionality."
 spotlight: false
 featuredImage: image_962a6c58d3.jpg
 title: BIP39 Passphrase implementation

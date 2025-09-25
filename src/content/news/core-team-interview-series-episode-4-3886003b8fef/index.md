@@ -1,7 +1,7 @@
 ---
 date: 2023-01-06T16:29:48.501000Z
-description: 'For its team, Alephium is privileging agility and efficiency over hyper-growth.'
-spotlight: false
+description: "Core Team Interview Series Episode 4: For its team, Alephium is privileging agility and efficiency over hyper-growth, showcasing the strategic approach to team development."
+seoDescription: "Alephium Core Team Interview Episode 4 - agility and efficiency over hyper-growth. Strategic team development approach and team interview series."
 featuredImage: image_0416b8898f.jpeg
 title: Core team interview series. Episode 4
 ---

@@ -1,11 +1,10 @@
 ---
-title: "Hashrate Series #4: ICERIVER"
-description: TL;DR The ICERIVER story.
-seoDescription: The blockchain hashrate is directly correlated with network
-  security. We interview ICERIVER to learn more.
-date: 2024-10-06T09:37:12.874Z
+date: 2024-10-06T09:37:12.874000Z
+description: "Hashrate Series #4: Meet ICERIVER, another key ecosystem actor sustaining Alephium's network security through Proof-of-Work mining and hashrate contribution."
+seoDescription: "Alephium Hashrate Series #4 ICERIVER - Proof-of-Work mining ecosystem actor. Network security and hashrate contribution showcase."
 spotlight: false
 featuredImage: image_b9699193dd.png
+title: "Hashrate Series #4: ICERIVER"
 ---
 
 _The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem actors to sustain and improve Alephium’s reliability. This series is about them, and after_ [Nicehash](/news/post/hashrate-series-1-nicehash-ee0936adf899), [Goldshell](/news/post/hashrate-series-2-goldshell-93cc51a86640)_, and_ [CryptoHall 24](/news/post/hashrate-series-3-cryptohall-24-7ad1533701f4)_, please welcome ICERIVER._

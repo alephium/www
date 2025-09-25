@@ -1,7 +1,7 @@
 ---
 date: 2023-12-18T16:57:35.288000Z
-description: Following the success of our previous community initiatives, we’re thrilled
-  to introduce the next chapter in Alephium’s community…
+description: "Alephium launches its Ambassador Program, the next chapter in community engagement, empowering passionate community members to represent and grow the ecosystem."
+seoDescription: "Alephium Ambassador Program launch - community engagement initiative. Empower passionate members to represent and grow the Alephium ecosystem."
 spotlight: false
 featuredImage: image_a2ab6ff67c.jpg
 title: Alephium launches its Ambassador Program

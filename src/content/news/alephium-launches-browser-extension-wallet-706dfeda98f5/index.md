@@ -1,6 +1,7 @@
 ---
 date: 2023-03-14T13:59:07.975000Z
-description: Download it and try the new features on Alephium Testnet!
+description: "Alephium launches its browser extension wallet with dApp support, token faucet, address book, and Schnorr signatures. Download and try new features on Testnet!"
+seoDescription: "Alephium browser extension wallet launch - dApp support, token faucet, address book, Schnorr signatures. Download Chrome and Firefox extensions."
 spotlight: false
 featuredImage: image_a708db8d02.jpg
 title: Alephium Launches Browser Extension Wallet

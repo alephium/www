@@ -1,8 +1,7 @@
 ---
 date: 2022-10-21T08:55:23.407000Z
-description: Alephium is committed to building and delivering a secure and reliable
-  blockchain. With that in mind, we have recently completed a security…
-spotlight: false
+description: "Security Assessment by Inference: Alephium is committed to building a secure and reliable blockchain, recently completing a security assessment of critical parts of our code."
+seoDescription: "Alephium Security Assessment by Inference - secure blockchain commitment. Critical code security assessment and reliable blockchain development."
 featuredImage: image_396067c811.jpeg
 title: Security Assessment by Inference
 ---

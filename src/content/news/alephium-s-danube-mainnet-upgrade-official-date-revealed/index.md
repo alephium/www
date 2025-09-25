@@ -1,11 +1,8 @@
 ---
-title: "Alephium’s Danube Mainnet Upgrade: Official Date Revealed!"
-description: TL;DR Tuesday, July 15, 2025, at 12:00 GMT+02:00
-seoDescription: We are thrilled to announce that Alephium’s highly anticipated
-  Danube network upgrade will activate on Tuesday, July 15, 2025, at 12:00
-  GMT+02:00!.
+title: 'Alephium’s Danube Mainnet Upgrade: Official Date Revealed!'
+description: "Alephium's Danube Mainnet Upgrade: Official Date Revealed! When is Danube going live on Alephium? The highly anticipated Danube network upgrade will activate on Tuesday, July 15, 2025."
 date: 2025-07-02T12:01:00.000Z
-spotlight: true
+seoDescription: "Alephium Danube Mainnet Upgrade official date revealed - July 15, 2025 activation. Danube network upgrade announcement and mainnet launch date."
 featuredImage: danube2.webp
 ---
 

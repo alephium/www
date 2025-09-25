@@ -1,11 +1,9 @@
 ---
-title: Builders Uncut — Sezame Wallet
-description: TL;DR Meet Tobias from Sezame.
-seoDescription: "Tobias (a founding member of Sezame Wallet) discusses the
-  project’s journey in the Alephium ecosystem. "
-date: 2024-09-06T13:28:58.200Z
-spotlight: false
+date: 2024-09-06T13:28:58.200000Z
+description: "Builders Uncut: Meet Sezame Wallet, an in-depth interview conducted around the Athens Builders Meetup showcasing innovative projects in the Alephium ecosystem."
+seoDescription: "Alephium Builders Uncut Sezame Wallet - Athens Builders Meetup interview. In-depth developer showcase and ecosystem project spotlight."
 featuredImage: image_1e2a26d3d1.png
+title: Builders Uncut — Sezame Wallet
 ---
 *This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!*
 

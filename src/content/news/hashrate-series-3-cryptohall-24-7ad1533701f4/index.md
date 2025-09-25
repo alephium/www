@@ -1,7 +1,7 @@
 ---
 date: 2024-09-18T09:07:51.547000Z
-description: The blockchain hashrate is directly correlated with network security.
-  As a Proof-of-work blockchain, Alephium relies on active ecosystem…
+description: "Hashrate Series #3: Meet CryptoHall 24, another key ecosystem actor sustaining Alephium's network security through Proof-of-Work mining and hashrate contribution."
+seoDescription: "Alephium Hashrate Series #3 CryptoHall 24 - Proof-of-Work mining ecosystem actor. Network security and hashrate contribution showcase."
 spotlight: false
 featuredImage: image_9fb00a1330.png
 title: 'Hashrate Series #3: CryptoHall 24'

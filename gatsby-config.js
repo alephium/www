@@ -172,7 +172,8 @@ module.exports = {
             "'self' backend.mainnet.alephium.org api.github.com https://api.coingecko.com https://alph-richlist.vercel.app https://api.llama.fi https://translate.googleapis.com https://translate-pa.googleapis.com https://*.usefathom.com https://publicapi.alph.land",
           'img-src':
             "'self' https://cdn.usefathom.com https://cdn-images-1.medium.com https://pbs.twimg.com/ https://media.licdn.com https://assets.coingecko.com https://fonts.gstatic.com https://www.gstatic.com https://www.google.com https://translate.googleapis.com https://translate.google.com data: blob: https://www2.alephium.org blob: https://www.alephium.org https://publicapi.alph.land",
-          'media-src': "'self'"
+          'media-src': "'self'",
+          'frame-src': "'self' https://www.youtube.com"
         }
       }
     },

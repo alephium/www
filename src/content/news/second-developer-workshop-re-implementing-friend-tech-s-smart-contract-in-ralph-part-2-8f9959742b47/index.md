@@ -1,7 +1,7 @@
 ---
 date: 2023-11-28T15:43:03.432000Z
-description: Welcome to the second part of this dev workshop session! Please make
-  sure you go through the first part (here) as part 2 starts where Part…
+description: "Second Developer Workshop Part 2: Continue re-implementing Friend.Tech's smart contract in Ralph, building on the foundation from Part 1 with advanced concepts."
+seoDescription: "Alephium Developer Workshop Part 2 - re-implementing Friend.Tech smart contract in Ralph. Advanced smart contract development concepts."
 spotlight: false
 featuredImage: image_e39b6d207c.jpg
 title: 'Second Developer Workshop: Re-implementing Friend.Tech’s Smart Contract in Ralph — Part 2'

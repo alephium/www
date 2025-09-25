@@ -1,7 +1,7 @@
 ---
 date: 2024-09-18T09:04:15.307000Z
-description: This interview was conducted around the Athens Builders Meetup, which
-  took place at the end of June 2024. If you’re just discovering…
+description: "Builders Uncut: Meet AlphbanX, an in-depth interview conducted around the Athens Builders Meetup showcasing innovative projects in the Alephium ecosystem."
+seoDescription: "Alephium Builders Uncut AlphbanX - Athens Builders Meetup interview. In-depth developer showcase and ecosystem project spotlight."
 spotlight: false
 featuredImage: image_7a7462f53a.png
 title: Builders Uncut — AlphbanX

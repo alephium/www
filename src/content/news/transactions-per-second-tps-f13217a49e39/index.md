@@ -1,7 +1,7 @@
 ---
 date: 2022-09-13T12:39:56.929000Z
-description: A Technical Promenade, part 2
-spotlight: false
+description: "Technical exploration of transactions per second (TPS) concepts in Alephium and blockchain technology, part 2 of a comprehensive series on key blockchain fundamentals."
+seoDescription: "Alephium TPS transactions per second technical guide - blockchain fundamentals series part 2. Understanding TPS metrics and performance."
 featuredImage: image_47ac4eb526.jpg
 title: Transactions Per Second (TPS)
 ---

@@ -1,12 +1,8 @@
 ---
-title: "PrimeVault x Alephium: Unlocking Institutional Access to DeFi on
-  Proof-of-Work"
-description: TL;DR Alephium partners with PrimeVault. What comes next?
-seoDescription: Together with PrimeVault, a next-gen institutional custody and
-  DeFi platform, we’re bringing secure, compliant access to Alephium’s DeFi
-  ecosystem.
+title: 'PrimeVault x Alephium: Unlocking Institutional Access to DeFi on Proof-of-Work'
+description: "PrimeVault x Alephium: Unlocking Institutional Access to DeFi on Proof-of-Work - Explore what comes after a major partnership and discover institutional-grade custody solutions."
 date: 2025-07-25T20:01:00.000Z
-spotlight: true
+seoDescription: "PrimeVault Alephium partnership - institutional access to DeFi on Proof-of-Work. Major partnership announcement and institutional-grade custody solutions."
 featuredImage: primevault1.webp
 ---
 

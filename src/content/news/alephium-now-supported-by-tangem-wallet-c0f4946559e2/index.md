@@ -1,12 +1,10 @@
 ---
-title: Alephium Now Supported by Tangem Wallet
-description: TL;DR Store, receive, and manage ALPH with a Tangem card wallet.
-seoDescription: Alephium (ALPH) is now supported by Tangem card-based hardware
-  wallets, allowing ALPH holders to securely store, receive, and manage their
-  assets.
-date: 2025-03-07T18:03:34.593Z
+date: 2025-03-07T18:03:34.593000Z
+description: "Alephium (ALPH) is now supported by Tangem wallet, enabling secure storage and management of assets with innovative card-based hardware wallets featuring NFC technology."
+seoDescription: "Alephium Tangem wallet support - secure ALPH storage with card-based hardware wallets. NFC technology for Android and iOS compatibility."
 spotlight: false
 featuredImage: image_7f9966ba82.png
+title: Alephium Now Supported by Tangem Wallet
 ---
 We are thrilled to announce that Alephium (ALPH) is now supported by [Tangem wallet](https://tangem.com/en/). This integration allows ALPH holders to securely store, receive, and manage their assets with Tangem’s innovative card-based hardware wallets, equipped with NFC technology and compatible with both Android and iOS devices.
 

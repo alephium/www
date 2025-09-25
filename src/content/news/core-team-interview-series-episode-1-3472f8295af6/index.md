@@ -1,7 +1,7 @@
 ---
 date: 2022-03-09T15:36:33.257000Z
-description: Read the first part of the core team interview series! In this edition
-  we present to you the humans building the Front-end of Alephium.
+description: "Core Team Interview Series Episode 1: Meet the humans building the front-end of Alephium, showcasing the talented developers behind the user interface and experience."
+seoDescription: "Alephium Core Team Interview Episode 1 - front-end developers showcase. Meet the humans building Alephium's user interface and experience."
 spotlight: false
 featuredImage: image_90cd721d79.jpeg
 title: Core team interview series. Episode 1

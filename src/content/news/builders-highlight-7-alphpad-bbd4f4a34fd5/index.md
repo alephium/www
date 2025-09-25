@@ -1,7 +1,7 @@
 ---
 date: 2024-02-13T13:37:08.514000Z
-description: Our ecosystem thrives with developers building amazing projects on top
-  of Alephium, delivering a unique experience and providing real…
+description: "Builders Highlight #7: Meet AlphPad, showcasing innovative launchpad projects built on Alephium that deliver unique experiences and real utility for users."
+seoDescription: "Alephium Builders Highlight #7 AlphPad - launchpad projects on Alephium blockchain. Developer showcase and ecosystem project spotlight."
 spotlight: false
 featuredImage: image_bdb32de17e.jpg
 title: 'Builders Highlight #7: AlphPad'

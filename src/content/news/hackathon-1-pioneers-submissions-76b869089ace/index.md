@@ -1,7 +1,7 @@
 ---
 date: 2024-03-11T16:12:51.964000Z
-description: After two weeks of intense coding, debugging, building & good vibes,
-  teams or individuals have submitted their projects. While the jury is…
+description: "Hackathon #1 Pioneers Submissions: After two weeks of intense coding and building, teams have submitted their innovative projects. Explore all submissions and follow their evolution."
+seoDescription: "Alephium Hackathon #1 Pioneers submissions - innovative projects after two weeks of coding. Explore all hackathon submissions and follow evolution."
 spotlight: false
 featuredImage: image_eb8b965219.png
 title: 'Hackathon #1- Pioneers — Submissions'

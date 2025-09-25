@@ -1,8 +1,7 @@
 ---
 date: 2022-11-03T16:05:01.716000Z
-description: 'This is episode #2 in our series of highlights where once in a while
-  we put the spotlight on one active member of our community. This is an…'
-spotlight: false
+description: "Community Highlight #2: Meet cgi-bin, an active member of the Alephium community showcasing their contributions, passion, and dedication to the ecosystem."
+seoDescription: "Alephium Community Highlight #2 cgi-bin - active community member showcase. Contributions, passion, and dedication to blockchain ecosystem."
 featuredImage: image_30dfdcb286.jpg
 title: 'Community Highlight #2, cgi-bin'
 ---

@@ -1,7 +1,7 @@
 ---
 date: 2019-05-09T21:08:23.040000Z
-description: We are building the first scalable blockchain platform that supports
-  cross-shard transactions natively
+description: "Introducing Alephium, the first scalable blockchain platform that supports cross-shard transactions natively, combining sharding technology with DAG and UTXO model."
+seoDescription: "Introducing Alephium - first scalable blockchain with native cross-shard transactions. BlockFlow sharding, DAG, UTXO model for high-performance dApps."
 spotlight: false
 featuredImage: image_369322765d.jpeg
 title: Introducing Alephium

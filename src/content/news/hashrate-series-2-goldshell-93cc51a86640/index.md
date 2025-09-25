@@ -1,9 +1,8 @@
 ---
 title: "Hashrate Series #2: Goldshell"
-description: TL;DR Meet Goldshell.
-seoDescription: Meet Goldshell. Their team has been deep in the world of
-  integrated circuits and crypto for over a decade.
-date: 2024-09-01T11:16:28.900Z
+date: 2024-09-01T11:16:28.900000Z
+description: "Hashrate Series #2: Meet Goldshell, another key ecosystem actor sustaining Alephium's network security through Proof-of-Work mining and hashrate contribution."
+seoDescription: "Alephium Hashrate Series #2 Goldshell - Proof-of-Work mining ecosystem actor. Network security and hashrate contribution showcase."
 spotlight: false
 featuredImage: image_0f660632a8.jpeg
 ---

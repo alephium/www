@@ -1,8 +1,7 @@
 ---
 date: 2023-09-29T14:39:19.449000Z
-description: Following the release of the Multisig GUI, Alephium launched a design
-  contest to find a logo for the toolkit website! And now, we announce…
-spotlight: false
+description: "Toolkit Design Contest winners announced! Following the release of the Multisig GUI, Alephium launched a design contest to find a logo for the toolkit website."
+seoDescription: "Alephium Toolkit Design Contest winners announced - Multisig GUI release. Logo design contest for toolkit website winners and runner-ups."
 featuredImage: image_a3d0edd3a7.jpg
 title: Toolkit Design Contest winners announced!
 ---

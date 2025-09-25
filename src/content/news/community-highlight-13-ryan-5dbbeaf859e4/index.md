@@ -1,8 +1,7 @@
 ---
 date: 2023-09-15T15:57:59.026000Z
-description: Regularly, we put the spotlight on an active member of the Alephium community.
-  This is an opportunity to showcase their contributions to…
-spotlight: false
+description: "Community Highlight #13: Meet Ryan, an active member of the Alephium community showcasing their contributions, passion, and dedication to the ecosystem."
+seoDescription: "Alephium Community Highlight #13 Ryan - active community member showcase. Contributions, passion, and dedication to blockchain ecosystem."
 featuredImage: image_f1d3742125.jpg
 title: 'Community Highlight #13, Ryan'
 ---

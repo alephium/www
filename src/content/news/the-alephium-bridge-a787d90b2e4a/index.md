@@ -1,6 +1,7 @@
 ---
 date: 2023-11-09T17:01:31.560000Z
-description: How does it work? How to use it? About the guardians, and more…
+description: "Learn how the Alephium Bridge works, how to use it, and discover the guardian network that secures cross-chain transfers between Alephium and Ethereum."
+seoDescription: "Alephium Bridge tutorial - secure cross-chain transfers between Alephium and Ethereum. Learn about guardian network, lock & mint mechanism, and token bridging."
 spotlight: false
 featuredImage: image_bfb2d7bedf.jpg
 title: The Alephium Bridge

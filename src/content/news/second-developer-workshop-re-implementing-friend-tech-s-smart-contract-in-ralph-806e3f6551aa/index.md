@@ -1,8 +1,7 @@
 ---
 date: 2023-11-06T15:29:26.299000Z
-description: Welcome to the second developer workshop! If you missed the first one,
-  we dived into the basics of Ralph programming language, along with…
-spotlight: false
+description: "Second Developer Workshop: Re-implementing Friend.Tech's Smart Contract in Ralph - Learn advanced Ralph programming concepts and build sophisticated smart contracts."
+seoDescription: "Alephium Second Developer Workshop - re-implementing Friend.Tech smart contract in Ralph. Advanced Ralph programming concepts and smart contract development."
 featuredImage: image_7c0c9f04f9.png
 title: 'Second Developer Workshop: Re-implementing Friend.Tech’s Smart Contract in Ralph'
 ---

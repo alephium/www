@@ -1,7 +1,7 @@
 ---
 date: 2023-03-30T13:10:04.628000Z
-description: New features & tools to support a thriving Alephium Ecosystem
-spotlight: false
+description: "The Leman Network Upgrade is Live! New features & tools to support a thriving Alephium Ecosystem, activated on mainnet at 10:00 GMT, March 30th, 2023."
+seoDescription: "Alephium Leman Network Upgrade live - new features and tools for thriving ecosystem. Mainnet activation March 30th, 2023 at 10:00 GMT."
 featuredImage: image_ae3e3a21fd.jpeg
 title: The Leman Network Upgrade is Live!
 ---

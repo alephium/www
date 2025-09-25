@@ -1,7 +1,7 @@
 ---
 date: 2023-02-17T14:18:49.087000Z
-description: Alephium hosted a Twitter Space on 24/01/2023 with Jordan from Nervos
-  Network and Cheng Wang & Hongchao Liu from Alephium to talk about…
+description: "Part II of Alephium's Twitter Space discussion on Proof of Work and Decentralization, continuing the conversation with Nervos Network about blockchain consensus mechanisms."
+seoDescription: "Alephium Twitter Space PoW and Decentralization Part II - continued discussion with Nervos Network. Blockchain consensus mechanisms and decentralization."
 spotlight: false
 featuredImage: image_3667c58cbb.jpg
 title: Alephium Twitter Space — PoW and Decentralization, part II

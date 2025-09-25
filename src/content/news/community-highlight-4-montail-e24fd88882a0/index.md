@@ -1,8 +1,7 @@
 ---
 date: 2023-01-20T13:38:20.431000Z
-description: Once in a while, the spotlight is put on one active member of the Alephium
-  community. This is an opportunity to showcase community members’…
-spotlight: false
+description: "Community Highlight #4: Meet MontaiL, an active member of the Alephium community showcasing their contributions, passion, and dedication to the ecosystem."
+seoDescription: "Alephium Community Highlight #4 MontaiL - active community member showcase. Contributions, passion, and dedication to blockchain ecosystem."
 featuredImage: image_da60a03774.jpg
 title: 'Community Highlight #4, MontaiL'
 ---

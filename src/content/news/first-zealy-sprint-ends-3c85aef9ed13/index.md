@@ -1,8 +1,7 @@
 ---
 date: 2023-12-19T16:12:20.534000Z
-description: The Zealy sprint has come to an end on Dec 17h at 3PM CET, marking the
-  end of a fun and instructive period about the Alephium Bridge and…
-spotlight: false
+description: "First Zealy Sprint Ends: The community engagement campaign concludes on December 17th, marking the end of a fun and instructive period about the Alephium Bridge and ecosystem."
+seoDescription: "Alephium First Zealy Sprint Ends - community engagement campaign concludes December 17th. Bridge and ecosystem education period completed."
 featuredImage: image_99207765f0.jpg
 title: First Zealy Sprint Ends
 ---

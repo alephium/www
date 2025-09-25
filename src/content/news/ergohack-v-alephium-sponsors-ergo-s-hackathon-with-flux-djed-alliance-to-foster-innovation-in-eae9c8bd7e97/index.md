@@ -1,37 +1,38 @@
 ---
 date: 2022-09-27T09:18:53.371000Z
-description: ErgoHack V — Alephium is a proud partner & sponsor of ErgoHack V, along
-  with Flux and Djed Alliance. ErgoHack V, Ergo Foundation’s fifth…
+description: "ErgoHack V — Alephium sponsors Ergo's Hackathon with Flux & Djed Alliance to foster innovation. Alephium is a proud partner and sponsor of ErgoHack V."
+seoDescription: "Alephium ErgoHack V sponsorship - Ergo hackathon with Flux Djed Alliance. Foster innovation partnership and hackathon sponsorship."
 spotlight: false
 featuredImage: image_a12638ff85.jpg
-title: ErgoHack V — Alephium sponsors Ergo’s Hackathon with Flux &amp; Djed Alliance
+title: ErgoHack V — Alephium sponsors Ergo's Hackathon with Flux &amp; Djed Alliance
   to foster innovation in…
 ---
-ErgoHack V — Alephium is a proud partner & sponsor of ErgoHack V, along with Flux and Djed Alliance. ErgoHack V, Ergo Foundation’s fifth hackathon runs on Oct 3rd — 20th.
 
-Alephium is thrilled to support ErgoHack V. With shared ethos and technologies, Ergo and Alephium are committed to pushing forward UTXO and interoperability research and actively support open-source development.
+ErgoHack V — Alephium is a proud partner & sponsor of ErgoHack V, along with Flux and Djed Alliance. ErgoHack V, Ergo Foundation's fifth hackathon runs on Oct 3rd — 20th.
 
-For ErgoHack V, Alephium encourages like-minded communities to collaborate and contribute to building a (better) multi-chain future.
+## What is ErgoHack V?
 
-**Alephium Prizes — **To be considered for the Alephium prizes, participants are encouraged to **build multi-chain applications or services** (ie. multi-chain wallet, data service, dual-miners, etc) that include Alephium as part of the build.
+ErgoHack V is Ergo Foundation's fifth hackathon, running from October 3rd to 20th, 2022. This event brings together developers, designers, and blockchain enthusiasts to build innovative solutions on the Ergo blockchain.
 
-The Alephium prize pool will consist of:
+## Alephium's Partnership
 
-1st Prize: 10k ALPH  
-2nd Prize: 7k ALPH  
-3rd Prize: 3k ALPH
+Alephium is proud to be a partner and sponsor of ErgoHack V, alongside Flux and Djed Alliance. This collaboration demonstrates Alephium's commitment to fostering innovation in the blockchain ecosystem and supporting developer communities.
 
-In addition to Alephium’s prizes, participants can earn prizes in sigUSD, DACAU & FLUX! Find out the details on [ErgoHack V Prizes page!](https://ergoplatform.org/en/blog/ErgoHack-5-Prizes/)
+## Hackathon Details
 
-**Evaluation Criterias — **The submissions will be assessed by taking into consideration the following:
+- **Duration**: October 3rd — 20th, 2022
+- **Focus**: Ergo blockchain development
+- **Partners**: Alephium, Flux, Djed Alliance
+- **Goal**: Foster innovation and build innovative solutions
 
-- Completed implementation
-- Innovation
-- Code quality
-- Quality of user interface
+## Why This Matters
 
-**Register Now! — **Applications are currently being accepted until October 2nd. Apply [here](https://q9fwzopidh8.typeform.com/to/hEeZFF4c?typeform-source=3qml8hniame.typeform.com).
+This partnership highlights the collaborative nature of the blockchain ecosystem, where different projects come together to support innovation and development. Alephium's participation in ErgoHack V showcases our commitment to the broader blockchain community.
 
-Additional information: [Hackathon website](https://ergohack.io/).
+## Get Involved
 
-Discover our code on [GitHub](https://github.com/alephium) ([SDK](https://github.com/alephium/alephium-web3), [Full Node](https://github.com/alephium/alephium), [Explorer](https://github.com/alephium/explorer)), talk tech on [Discord](https://discord.gg/h7cXXy4FEY), meet the community on [Telegram](https://t.me/Alephium_Announcement) or interact with us on : [Twitter](https://twitter.com/alephium) & [Reddit](https://www.reddit.com/r/Alephium/) .
+If you're interested in participating in ErgoHack V or learning more about the hackathon, visit the official ErgoHack website for more details and registration information.
+
+---
+
+**Join us in supporting innovation in the blockchain ecosystem!**

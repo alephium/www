@@ -1,6 +1,7 @@
 ---
 date: 2023-09-14T09:25:46.826000Z
-description: Interviews of the humans behind Alephium.
+description: "Meet the humans behind Alephium through detailed interviews with core contributors, showcasing the team's expertise and passion for blockchain innovation."
+seoDescription: "Alephium core contributors interviews - meet the team behind the sharded blockchain. Developer profiles, backgrounds, and blockchain innovation stories."
 spotlight: false
 featuredImage: image_e28cc04c7e.jpg
 title: Alephium Core Contributors

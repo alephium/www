@@ -1,8 +1,7 @@
 ---
 date: 2023-10-03T15:39:38.643000Z
-description: Daily, we strive to enhance our decentralized infrastructure, inspired
-  by Satoshi Nakamoto’s vision for a permissionless future. We offer…
-spotlight: false
+description: "WELCOME BLOCKFLOW ALLIANCE DAO! Daily, we strive to enhance our decentralized infrastructure, inspired by Satoshi Nakamoto's vision for a permissionless future."
+seoDescription: "Alephium Blockflow Alliance DAO welcome - decentralized infrastructure enhancement. Satoshi Nakamoto vision for permissionless future and developer tools."
 featuredImage: image_ece5e4ea45.jpg
 title: WELCOME BLOCKFLOW ALLIANCE DAO!
 ---

@@ -1,7 +1,7 @@
 ---
 date: 2024-07-12T14:48:00.732000Z
-description: If you couldn’t come… Doesn’t mean you can’t see the presentations! Find
-  them all here and watch them at your convenience.
+description: "Watch all Athens meetup presentations at your convenience! Access comprehensive presentations from the Alephium community event, covering blockchain developments and ecosystem updates."
+seoDescription: "Alephium Athens meetup presentations - watch all blockchain community event presentations. Comprehensive coverage of ecosystem developments and updates."
 spotlight: false
 featuredImage: image_ef1fd8e881.jpg
 title: All the Athens Meetup Presentations!

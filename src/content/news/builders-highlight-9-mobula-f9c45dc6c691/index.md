@@ -1,7 +1,7 @@
 ---
 date: 2024-03-30T16:25:24.920000Z
-description: Our ecosystem thrives with developers building amazing projects on top
-  of Alephium, delivering a unique experience and providing real…
+description: "Builders Highlight #9: Meet Mobula, showcasing innovative data and analytics projects built on Alephium that deliver unique experiences and real utility for users."
+seoDescription: "Alephium Builders Highlight #9 Mobula - data analytics projects on Alephium blockchain. Developer showcase and ecosystem project spotlight."
 spotlight: false
 featuredImage: image_55f9265a02.png
 title: 'Builders Highlight #9: Mobula'

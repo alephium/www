@@ -1,8 +1,7 @@
 ---
 date: 2023-12-22T13:12:09.941000Z
-description: The Alephium blockchain, like many decentralized networks, relies heavily
-  on the contributions of miners to maintain its integrity and…
-spotlight: false
+description: "Miners' Highlight #1: Meet Cedric Crispin, showcasing the contributions of miners who maintain Alephium's blockchain integrity and functionality."
+seoDescription: "Alephium Miners Highlight #1 Cedric Crispin - miner contributions showcase. Blockchain integrity and functionality maintenance spotlight."
 featuredImage: image_596cb91bc2.png
 title: 'Miners’ Highlight #1 — Cedric Crispin'
 ---

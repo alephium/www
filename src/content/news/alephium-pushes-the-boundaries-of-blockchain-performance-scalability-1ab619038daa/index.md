@@ -1,7 +1,7 @@
 ---
 date: 2019-05-10T18:19:50.706000Z
-description: Alephium aims to scale blockchains to handle tens of thousands of transactions
-  per second (10,000+ TPS) in an open, permissionless network.
+description: "Alephium pushes blockchain boundaries with 10,000+ TPS performance through BlockFlow algorithm, combining sharding technology with DAG and scalable UTXO model."
+seoDescription: "Alephium blockchain performance - 10,000+ TPS scalability with BlockFlow algorithm. Sharding, DAG, UTXO model for high-performance dApps."
 spotlight: false
 featuredImage: image_73be516f6b.png
 title: Alephium Pushes the Boundaries of Blockchain Performance & Scalability

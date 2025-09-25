@@ -1,8 +1,7 @@
 ---
 date: 2023-05-22T13:06:16.351000Z
-description: Once in a while, the spotlight is put on one active member of the Alephium
-  community. This is an opportunity to showcase community members’…
-spotlight: false
+description: "Community Highlight #9: Meet dZHEMSH, an active member of the Alephium community showcasing their contributions, passion, and dedication to the ecosystem."
+seoDescription: "Alephium Community Highlight #9 dZHEMSH - active community member showcase. Contributions, passion, and dedication to blockchain ecosystem."
 featuredImage: image_72f3bdfbea.png
 title: 'Community Highlight #9, dZHEMSH'
 ---

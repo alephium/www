@@ -1,15 +1,15 @@
 ---
 date: 2022-11-23T15:42:04.309000Z
-description: Alephium’s partnership with Flux Official to support Alephium’s full
-  node running on a web3 cloud infrastructure is another step towards…
+description: "Host your Alephium node via the Flux marketplace! Learn how to deploy and run an Alephium full node on decentralized web3 cloud infrastructure with this detailed tutorial."
+seoDescription: "Alephium node Flux marketplace tutorial - deploy full node on web3 cloud infrastructure. Decentralized hosting guide with Flux marketplace walkthrough."
 spotlight: false
 featuredImage: image_ec0a7e367d.png
 title: Host your Alephium Node via the Flux Marketplace
 ---
 
-[Alephium’s partnership](/news/post/alephium-continues-its-engagement-for-decentralization-and-partners-with-the-cloud-based-f9c5baebe5b2) with [Flux Official](https://medium.com/u/1c37e86f5d23) to support Alephium’s full node running on a web3 cloud infrastructure is another step towards demonstrating decentralization as a core value. Find here a detailed walkthrough on how to set up a node with Flux.
+[Alephium's partnership](/news/post/alephium-continues-its-engagement-for-decentralization-and-partners-with-the-cloud-based-f9c5baebe5b2) with [Flux Official](https://medium.com/u/1c37e86f5d23) to support Alephium's full node running on a web3 cloud infrastructure is another step towards demonstrating decentralization as a core value. Find here a detailed walkthrough on how to set up a node with Flux.
 
-### Flux — The Web3 Cloud
+### Flux — The Web3 Cloud
 
 The Flux Cloud is a decentralized cloud computing system based on thousands of single servers worldwide. Each server provides computational resources and is rewarded with 50% of the [total block reward](https://runonflux.io/flux-nodes.html).
 
@@ -22,7 +22,7 @@ There are plenty of advantages to using Flux instead of traditional Web2 infrast
 
 **Let's proceed with the guide on deploying your own Alephium Node via the Flux Marketplace!**
 
-### Alephium node on Flux — a tutorial
+### Alephium node on Flux — a tutorial
 
 Before following the tutorial, you will need to install the [zelcore wallet](https://zelcore.io/), and own some FLUX ([find how here](https://runonflux.io/buy-flux.html)).
 
@@ -55,7 +55,7 @@ Before following the tutorial, you will need to install the [zelcore wallet](htt
 
 ![](image_f9bcd73197.png)
 
-9\. Select “Pay with Zelcore” to make the payment for the app.
+9\. Select "Pay with Zelcore" to make the payment for the app.
 
 ![](image_73c2d35c8c.png)
 
@@ -67,7 +67,7 @@ Before following the tutorial, you will need to install the [zelcore wallet](htt
 
 ### Monitoring of your instances
 
-When logged in via your ZelID, you can head over to [https://home.runonflux.io/apps/globalapps](https://home.runonflux.io/apps/globalapps) and to the “My Apps” Tab. Here you can manage and visit the Alephium Node deployments you have done so far.
+When logged in via your ZelID, you can head over to [https://home.runonflux.io/apps/globalapps](https://home.runonflux.io/apps/globalapps) and to the "My Apps" Tab. Here you can manage and visit the Alephium Node deployments you have done so far.
 
 ![](image_d501b22a34.png)
 
@@ -77,21 +77,21 @@ Click on the arrow pointing down to see your application specifications and the 
 
 **With Flux Cloud your Alephium Node is redundant! That means it is always running on a minimum of three instances simultaneously. You can check the Logs of the individual IPs to see the Node syncing properly.**
 
-1.  Visit one IP by clicking on “Visit FluxNode”
+1.  Visit one IP by clicking on "Visit FluxNode"
 2.  Log in with your ZelID
-3.  Navigate to “Apps”, “Local Apps”, “My Local Apps”
-4.  Click “Manage”, “Manage App”, “Log File”
+3.  Navigate to "Apps", "Local Apps", "My Local Apps"
+4.  Click "Manage", "Manage App", "Log File"
 
 **Remember, your Alephium Node is only subscribed for 22,000 Flux blocks which are ~ 44,000 minutes, so around one month. You will need to renew the payment monthly, so your Node does not get kicked off the network.**
 
 1.  Visit [https://home.runonflux.io/](https://home.runonflux.io/) and log in with your ZelID
-2.  Navigate to “Apps”, “Global Apps”, “My Apps”
-3.  Click “Manage”, “Manage App”, “Update Specifications”
-4.  Leave all the variables like they are, Click “Compute Update Message”
-5.  Sign the Message with the ZelID App and click “Update Flux App” after
-6.  Click on“Pay with Zelcore” to make the Flux Payment
+2.  Navigate to "Apps", "Global Apps", "My Apps"
+3.  Click "Manage", "Manage App", "Update Specifications"
+4.  Leave all the variables like they are, Click "Compute Update Message"
+5.  Sign the Message with the ZelID App and click "Update Flux App" after
+6.  Click on"Pay with Zelcore" to make the Flux Payment
 7.  Voilà! Your Node has been renewed for 22,000 blocks
 
 **Have Fun supporting the Alephium Blockchain with decentralized infrastructure!**
 
-_If you have more questions on the topic, please come to Alephium’s_ [Discord](https://discord.gg/JErgRBfRSB)_,_ [Telegram](https://t.me/alephiumgroup)_, or reach out on_ [Twitter](https://twitter.com/alephium)_!_
+_If you have more questions on the topic, please come to Alephium's_ [Discord](https://discord.gg/JErgRBfRSB)_,_ [Telegram](https://t.me/alephiumgroup)_, or reach out on_ [Twitter](https://twitter.com/alephium)_!_

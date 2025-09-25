@@ -1,7 +1,7 @@
 ---
 date: 2023-03-27T12:51:19.587000Z
-description: The best design will be featured in Alephium’s SWALPH shop!
-spotlight: false
+description: "Design Contest: All Things Leman - The best design will be featured in Alephium's SWALPH shop! Celebrate the Leman Network Upgrade with creative graphic material."
+seoDescription: "Alephium Design Contest All Things Leman - best design featured in SWALPH shop. Celebrate Leman Network Upgrade with creative graphics."
 featuredImage: image_61d13457bc.jpg
 title: 'Design Contest: All Things Leman'
 ---

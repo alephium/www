@@ -1,8 +1,7 @@
 ---
 date: 2023-02-02T17:58:20.195000Z
-description: Once in a while, the spotlight is put on one active member of the Alephium
-  community. This is an opportunity to showcase community members’…
-spotlight: false
+description: "Community Highlight #5: Meet TxN, an active member of the Alephium community showcasing their contributions, passion, and dedication to the ecosystem."
+seoDescription: "Alephium Community Highlight #5 TxN - active community member showcase. Contributions, passion, and dedication to blockchain ecosystem."
 featuredImage: image_54693bf29f.png
 title: 'Community Highlight #5, TxN'
 ---
