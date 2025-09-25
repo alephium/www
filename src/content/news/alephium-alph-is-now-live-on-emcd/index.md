@@ -37,7 +37,7 @@ Founded in 2017, EMCD is a global crypto infrastructure platform trusted by over
 
 Alephium is a scalable Layer 1 blockchain powered by Proof-of-Work and native sharding. Its unique sUTXO model enables secure and expressive smart contracts, while maintaining decentralization and efficiency. With the Danube Upgrade, Alephium delivers the speed of PoS chains without sacrificing trust assumptions. The recent announcement of Phase 2: Aligned Economics, will see the Core Development team build and integrate a new DEX and ALPH staking. 
 
-#### Ready to get started?
+## Ready to get started?
 
 * Open a wallet and [trade $ALPH on EMCD here](https://emcd.onelink.me/FCtc/alph).
 * [Learn more](/) about Alephium.
