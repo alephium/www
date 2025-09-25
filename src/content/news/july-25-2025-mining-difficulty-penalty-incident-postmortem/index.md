@@ -23,11 +23,7 @@ This chain-hopping behavior created large imbalances between chains and triggere
 
 Thanks to the mining pools’ swift action, readiness to adapt, and the strong cooperation of node operators and the wider community, the issue was resolved within 24 hours without an urgent network upgrade, with the network remaining secure, all transactions processed, and greater resilience going forward.
 
-
-
 ![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*NzbKtJ4VmsYsM99kjBx_xA.jpeg "Reported network hashrate estimate")
-
-
 
 Reported Network Hashrate Estimate
 
@@ -38,8 +34,6 @@ Alephium’s DAA (Difficulty Adjustment Algorithm) adjusts difficulty based on n
 * Single-chain mining: pointing all hashrate to one chain.
 * Chain-hopping: moving all hashrate from chain to chain to target whichever currently has the lowest difficulty.
 
-
-
 On July 25, two factors coincided:
 
 1. Hashrate concentration increased. When a mining pool stopped mining Alephium, its share of the hashrate disappeared, leaving the remaining pools with a larger proportion of the total.
@@ -47,27 +41,19 @@ On July 25, two factors coincided:
 
 The DAA detected these imbalances and applied strong penalties to keep all chains in sync. These penalties increased the difficulty across the network far above normal levels.
 
-
-
 ![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*KNgUPP-AF4DY7U1tszBDVA.png "Reported network hashrate estimate")
-
-
 
 Reported Network Hashrate Estimate
 
-### Why this looked like a hashrate spike:
+## Why this looked like a hashrate spike:
 
 Displayed hashrate on explorers is calculated based on Difficulty and Target Block Time, where target block time is fixed. During the incident, the higher difficulty caused block times to slow down, but this was not reflected in the formula. As a result, the displayed hashrate appeared much higher than reality, even though the actual hashrate (the total computing power on the network) didn’t change. In short, the network hashrate did not suddenly increase, it only looked that way because of how the displayed hashrate is calculated. The displayed hashrate increased because difficulty went up; the target block time is fixed in the formula.
 
-
-
 ![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*e7XiP_Pjy55zE7JGdlhNRA.png "Total reported hashrates per second")
-
-
 
 Reported Total Transactions Per Second
 
-### Timeline
+## Timeline
 
 * 1:00 p.m. CET (Jul 25): Network difficulty slowly begins to rise.
 * 3:00–5:00 p.m. CET (Jul 25): Difficulty and displayed hashrate reach record highs. Block times lengthen noticeably. Investigation begins.
@@ -78,9 +64,7 @@ Reported Total Transactions Per Second
 * 12:00 p.m. CET (Jul 26): Difficulty reduced from over 25× the baseline to \~5×. Block times improve from a peak of \~2.5 minutes to ~60 seconds.
 * 6:00 p.m. CET (Jul 26): Situation resolved. Difficulty and block times are back to normal (~8 seconds per block). No urgent upgrade required; network stable.
 
-
-
-### Outcome
+## Outcome
 
 * This event had no impact on funds, finality, or network security
 * Relevant mining pools adjusted their distribution algorithm to avoid overloading individual chains.
@@ -90,15 +74,11 @@ Reported Total Transactions Per Second
 
 This resolution was only possible thanks to the mining pools’ swift action and readiness to adapt, and the cooperation of node operators across the network.
 
-
-
 ![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*l_8GD4eqG7-Ndl1kA6x8CQ.png "Reported block time")
-
-
 
 Reported Block Time
 
-### Impact
+## Impact
 
 * Security: Never compromised, the network remained fully operational and all transactions were processed.
 * Performance: Block times peaked at \~2.5 minutes during the height of the incident (normal is \~8 seconds).
@@ -108,9 +88,7 @@ Lessons Learned
 
 ![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*TmEe0ybTUHYwmeSIwW7WHw.png)
 
-
-
-### Next Steps
+## Next Steps
 
 Continue monitoring miner distribution and network metrics in the coming weeks.
 
@@ -118,7 +96,7 @@ Evaluate whether a more moderate penalty setting could prevent similar disruptio
 
 Implement refinements to the DAA in a future planned upgrade.
 
-### Conclusion
+## Conclusion
 
 **July 25–26 was a powerful reminder of what we are building and who we are building it with.**
 
