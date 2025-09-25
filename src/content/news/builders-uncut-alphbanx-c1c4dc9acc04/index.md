@@ -1,10 +1,11 @@
 ---
-date: 2024-09-18T09:04:15.307000Z
-description: This interview was conducted around the Athens Builders Meetup, which
-  took place at the end of June 2024. If you’re just discovering…
+title: Builders Uncut — AlphbanX
+description: TL;DR Meet Timothy, AlphBanx.
+seoDescription: "This interview with Timothy from AlphBanx was conducted at the
+  Athens Builders Meetup, June 2024. "
+date: 2024-09-18T09:04:15.307Z
 spotlight: false
 featuredImage: image_7a7462f53a.png
-title: Builders Uncut — AlphbanX
 ---
 
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
