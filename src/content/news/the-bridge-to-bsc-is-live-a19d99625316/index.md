@@ -1,10 +1,12 @@
 ---
-date: 2024-11-20T16:09:04.341000Z
-description: Tl;dr — New bridge ALPH <> BSC / The Faucet / I’m new, coming from BSC/BNB — What
-  do I do in $ALPH’s ecosystem? / Contracts & tokens / FAQ
+title: The Bridge to BSC is live!
+description: TL;DR  New bridge ALPH <> BSC
+seoDescription: A year after the bridge to/from Ethereum, Alephium proudly
+  announces its newest bridge to the BSC chain, connecting to the rich and vast
+  world of the BNB Chain!
+date: 2024-11-20T16:09:04.341Z
 spotlight: false
 featuredImage: image_6a65a64e2a.jpg
-title: The Bridge to BSC is live!
 ---
 
 _Tl;dr — New bridge ALPH \<\> BSC / The Faucet / I’m new, coming from BSC/BNB — What do I do in \$ALPH’s ecosystem? / Contracts & tokens / FAQ_
