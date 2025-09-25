@@ -1,9 +1,11 @@
 ---
-date: 2024-09-03T16:14:48.298000Z
-description: Bridge assets from and to BNB Smart Chain Testnet
+title: The BSC/Alephium Bridge is live on Testnet!
+description: TL;DR Bridge BNB<>ALPH (testnet)
+seoDescription: Explore how the BSC/Alephium Bridge Testnet works and how you
+  can try it out for yourself.
+date: 2024-09-03T16:14:48.298Z
 spotlight: false
 featuredImage: image_39fa5f38bb.png
-title: The BSC/Alephium Bridge is live on Testnet!
 ---
 Bridge assets from and to BNB Smart Chain Testnet
 
