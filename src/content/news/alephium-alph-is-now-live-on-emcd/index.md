@@ -4,7 +4,7 @@ description: Alephium ($ALPH) has now been listed on EMCD.io, a crypto ecosystem
   based on one of the world’s top 10 mining pools.
 seoDescription: "Important Listing: Alephium ($ALPH) has now been listed on
   EMCD, a crypto ecosystem based on one of the world’s top 10 mining pools. "
-date: 1905-09-25T17:00:00.000Z
+date: 2025-09-25T19:48:00.000Z
 spotlight: true
 featuredImage: emcdlisting.png
 ---
