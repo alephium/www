@@ -1,11 +1,8 @@
 ---
 title: "Learn, Play, Earn: Alephium is now on Learnify!"
-description: TL;DR Web3 is complex. Learning it shouldn’t be.
-seoDescription: Web3 is complex. Learning it shouldn’t be. Enter Learnify, a
-  gamified learning platform built on Alephium that turns curiosity into tokens,
-  and confusion into mastery.
+description: "Learn, Play, Earn: Alephium is now on Learnify! Discover the gamified learning platform that turns curiosity into tokens and confusion into mastery with real rewards."
 date: 2025-08-07T12:12:00.000Z
-spotlight: true
+seoDescription: "Alephium Learnify partnership - gamified learning platform. Learn Web3, earn tokens, master Layer 1 blockchain with real rewards."
 featuredImage: learnify1.webp
 ---
 Web3 is complex. Learning it shouldn’t be. Enter Learnify, a gamified learning platform that turns curiosity into tokens, and confusion into mastery. Now, thanks to Alephium’s new partnership, you can learn the ins and outs of one of the most innovative Layer 1s on the market and earn real rewards along the way.

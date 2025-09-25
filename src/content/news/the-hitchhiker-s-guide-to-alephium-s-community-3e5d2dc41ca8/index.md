@@ -1,8 +1,7 @@
 ---
 date: 2023-12-29T09:40:10.375000Z
-description: We are thrilled to see many new faces in our community! Alephium community
-  channels have recently grown tremendously, and we thought it…
-spotlight: false
+description: "The Hitchhiker's guide to Alephium's community: We are thrilled to see many new faces in our community! Alephium community channels have grown tremendously."
+seoDescription: "Alephium Hitchhiker's guide to community - new faces and growing channels. Community guide for navigating various channels and finding information."
 featuredImage: image_b1b0cc53a2.png
 title: The Hitchhiker’s guide to Alephium’s community
 ---

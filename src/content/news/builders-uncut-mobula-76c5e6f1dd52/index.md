@@ -1,8 +1,7 @@
 ---
 date: 2024-08-14T15:56:46.468000Z
-description: This interview was conducted around the Athens Builders Meetup, which
-  took place at the end of June 2024. If you’re just discovering…
-spotlight: false
+description: "Builders Uncut: Meet Mobula, an in-depth interview conducted around the Athens Builders Meetup showcasing innovative projects in the Alephium ecosystem."
+seoDescription: "Alephium Builders Uncut Mobula - Athens Builders Meetup interview. In-depth developer showcase and ecosystem project spotlight."
 featuredImage: image_4c1492d719.png
 title: Builders Uncut — Mobula
 ---

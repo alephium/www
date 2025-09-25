@@ -1,8 +1,7 @@
 ---
 date: 2024-08-18T17:57:20.687000Z
-description: This serie of interviews was conducted at the Athens Builders Meetup,
-  which took place at the end of June 2024. If you’re just discovering…
-spotlight: false
+description: "Builders Uncut: Meet Linx Labs, an in-depth interview conducted around the Athens Builders Meetup showcasing innovative projects in the Alephium ecosystem."
+seoDescription: "Alephium Builders Uncut Linx Labs - Athens Builders Meetup interview. In-depth developer showcase and ecosystem project spotlight."
 featuredImage: image_0f5b4b5f54.png
 title: Builders Uncut — Linx Labs
 ---

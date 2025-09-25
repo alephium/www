@@ -1,8 +1,7 @@
 ---
 date: 2023-11-23T13:21:57.897000Z
-description: Regularly, we put the spotlight on an active member of the Alephium community.
-  This is an opportunity to showcase their contributions to…
-spotlight: false
+description: "Community Highlight #15: Meet Yulius aka Chris45, an active member of the Alephium community showcasing their contributions, passion, and dedication to the ecosystem."
+seoDescription: "Alephium Community Highlight #15 Yulius Chris45 - active community member showcase. Contributions, passion, and dedication to blockchain ecosystem."
 featuredImage: image_099d09e906.png
 title: 'Community Highlight #15, Yulius aka Chris45'
 ---

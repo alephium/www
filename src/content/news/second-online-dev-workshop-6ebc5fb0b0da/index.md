@@ -1,7 +1,7 @@
 ---
 date: 2023-09-25T16:58:22.500000Z
-description: Re-implementing the friend.tech smart contract to RALPH with @h0ngcha0
-spotlight: false
+description: "Second Online Dev Workshop! Re-implementing the friend.tech smart contract to RALPH with @h0ngcha0, showcasing advanced smart contract development techniques."
+seoDescription: "Alephium Second Online Dev Workshop - friend.tech smart contract RALPH implementation. Advanced smart contract development techniques with h0ngcha0."
 featuredImage: image_2e556d5afc.png
 title: Second Online Dev Workshop!
 ---

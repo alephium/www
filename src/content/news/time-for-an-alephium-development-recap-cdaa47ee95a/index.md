@@ -1,8 +1,7 @@
 ---
 date: 2021-12-02T16:24:45.341000Z
-description: Alephium has made great progress lately and a lot of work has been put
-  down on various repositories. It’s time for an update!
-spotlight: false
+description: "Time for an Alephium Development Recap: Alephium has made great progress lately with significant work across various repositories. It's time for an update!"
+seoDescription: "Alephium Development Recap - great progress across repositories. Significant work update and development progress summary."
 featuredImage: image_4b8769284a.jpeg
 title: Time for an Alephium Development Recap
 ---

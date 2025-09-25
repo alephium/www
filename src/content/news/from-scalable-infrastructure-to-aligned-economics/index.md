@@ -1,11 +1,8 @@
 ---
 title: "Phase 2: From Scalable Infrastructure to Aligned Economics"
-description: "TL;DR Alephium refused to compromise. "
-seoDescription: "They said Layer 1 blockchains had to compromise: performance
-  for decentralization, usability for security. Alephium chose a different path.
-  Welcome to Phase 2."
+description: "Phase 2: From Scalable Infrastructure to Aligned Economics - They said Layer 1 blockchains had to compromise: performance for decentralization, usability for security. Alephium chose a different path."
 date: 2025-08-22T12:01:00.000Z
-spotlight: true
+seoDescription: "Alephium Phase 2 scalable infrastructure to aligned economics - Layer 1 blockchain without compromise. Performance, decentralization, usability, and security."
 featuredImage: aligned1.webp
 ---
 They said Layer 1 blockchains had to compromise: performance for decentralization, usability for security. Alephium chose a different path.

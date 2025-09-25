@@ -1,8 +1,7 @@
 ---
 date: 2021-09-28T12:14:10.521000Z
-description: Launching a mainnet is no small task for a small team; in addition to
-  the many technical challenges it poses, there are …
-spotlight: false
+description: "Postponing the mainnet launch: Launching a mainnet is no small task for a small team, with many technical and non-technical challenges to address."
+seoDescription: "Alephium postponing mainnet launch - small team technical challenges. Mainnet launch delay and non-technical topics addressed."
 featuredImage: image_ff0fc54346.jpeg
 title: Postponing the mainnet launch
 ---

@@ -1,8 +1,7 @@
 ---
 date: 2023-09-04T14:43:00.172000Z
-description: As the community expands, and more non-tech people join us, we need different
-  tools, and different ways of showing, exploring and…
-spotlight: false
+description: "Zealy Quests are coming! As the community expands and more non-tech people join, we need different tools and ways of showing, exploring, and explaining Alephium."
+seoDescription: "Alephium Zealy Quests coming - community expansion tools. Different ways of showing, exploring, and explaining Alephium for non-tech users."
 featuredImage: image_c497e1e421.jpg
 title: Zealy Quests are coming!
 ---
@@ -19,7 +18,7 @@ Join our Zealy.io page and be on top of what is happening, while earning XP poin
 
 ### How to join?
 
-Get to our Zealy community [here](https://zealy.io/c/alephium). If you’re not subscribed already, create a Zealy account, it’s easy and fast!
+Get to our [Zealy community here](https://zealy.io/c/alephium). If you’re not subscribed already, create a Zealy account, it’s easy and fast!
 
 You will see that our quests are divided into categories, which will help you go through specific areas of Alephium’s ecosystem.
 

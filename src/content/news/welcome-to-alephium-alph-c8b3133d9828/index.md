@@ -1,8 +1,7 @@
 ---
 date: 2022-08-08T13:20:13.095000Z
-description: Here’s all the information you need to get started with Alephium ! And
-  if that’s not enough, check our website or come talk to us on…
-spotlight: false
+description: "🚀 Welcome to Alephium (ALPH)! Here's all the information you need to get started with Alephium, and if that's not enough, check our website or come talk to us on Discord, Telegram, or Reddit!"
+seoDescription: "Welcome to Alephium ALPH - get started information and community resources. Discord, Telegram, Reddit community channels and getting started guide."
 featuredImage: image_d51d7c42be.jpeg
 title: 🚀 Welcome to Alephium (ALPH)
 ---

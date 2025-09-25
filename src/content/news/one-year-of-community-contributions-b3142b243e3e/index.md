@@ -1,8 +1,7 @@
 ---
 date: 2023-01-13T16:15:05.799000Z
-description: A year ago, Alephium created the community rewards and the grants programs
-  to encourage the involvement of the community in all aspects of…
-spotlight: false
+description: "One year of community contributions: A year ago, Alephium created the community rewards and grants programs to encourage community involvement in all aspects of the project."
+seoDescription: "Alephium one year community contributions - community rewards and grants programs. Community involvement encouragement and project participation."
 featuredImage: image_2a378a7f2f.gif
 title: One year of community contributions
 ---

@@ -1,7 +1,7 @@
 ---
 date: 2022-08-11T16:13:20.641000Z
-description: Introduction
-spotlight: false
+description: "TTxOO 2 — The road to Self-Custody: Introduction to the journey towards self-custody solutions and decentralized financial independence."
+seoDescription: "TTxOO 2 road to self-custody - journey towards self-custody solutions. Decentralized financial independence and custody introduction."
 featuredImage: image_2e22410376.jpg
 title: TTxOO 2 — The road to Self-Custody
 ---

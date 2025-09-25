@@ -1,8 +1,7 @@
 ---
 date: 2021-12-09T14:32:39.777000Z
-description: It’s been a month since the Alephium mainnet launch and many positive
-  things have been accomplished thanks to the amazing community …
-spotlight: false
+description: "Introducing Community Rewards: One month after Alephium mainnet launch, celebrate the amazing community contributions and discover the new rewards program for active participants."
+seoDescription: "Alephium Community Rewards program introduction - one month after mainnet launch. Celebrate community contributions and discover rewards for active participants."
 featuredImage: image_af0df79ed4.jpeg
 title: Introducing Community Rewards
 ---

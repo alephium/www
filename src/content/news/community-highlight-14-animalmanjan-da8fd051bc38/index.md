@@ -1,8 +1,7 @@
 ---
 date: 2023-10-13T15:43:32.773000Z
-description: Regularly, we put the spotlight on an active member of the Alephium community.
-  This is an opportunity to showcase their contributions to…
-spotlight: false
+description: "Community Highlight #14: Meet AnimalManJan, an active member of the Alephium community showcasing their contributions, passion, and dedication to the ecosystem."
+seoDescription: "Alephium Community Highlight #14 AnimalManJan - active community member showcase. Contributions, passion, and dedication to blockchain ecosystem."
 featuredImage: image_c1fa21c0b7.jpg
 title: 'Community Highlight #14, AnimalManJan'
 ---

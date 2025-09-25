@@ -1,7 +1,7 @@
 ---
 date: 2022-12-20T15:47:15.162000Z
-description: An intermediary update on the road to the Leman Upgrade
-spotlight: false
+description: "The Leman Upgrade #2: An intermediary update on the road to the Leman Upgrade, providing insights into the development progress and upcoming changes."
+seoDescription: "Alephium Leman Upgrade #2 - intermediary update on development progress. Road to Leman Upgrade insights and upcoming changes."
 featuredImage: image_1c78dbc4c1.jpg
 title: 'The Leman Upgrade #2'
 ---

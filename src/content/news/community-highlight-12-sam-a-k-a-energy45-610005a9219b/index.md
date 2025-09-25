@@ -1,8 +1,7 @@
 ---
 date: 2023-08-18T12:29:21.741000Z
-description: Regularly, we put the spotlight on an active member of the Alephium community.
-  This is an opportunity to showcase their contributions to…
-spotlight: false
+description: "Community Highlight #12: Meet Sam a.k.a energy45, an active member of the Alephium community showcasing their contributions, passion, and dedication to the ecosystem."
+seoDescription: "Alephium Community Highlight #12 Sam energy45 - active community member showcase. Contributions, passion, and dedication to blockchain ecosystem."
 featuredImage: image_614403f8d4.jpg
 title: 'Community Highlight #12, Sam a.k.a energy45'
 ---

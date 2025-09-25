@@ -1,8 +1,7 @@
 ---
 date: 2021-08-23T15:32:58.223000Z
-description: With the launch of mainnet approaching, we are accommodating for our
-  growing community. We hope this will ease the exchange between the…
-spotlight: false
+description: "Ramped up communication channels: With mainnet launch approaching, discover the expanded communication channels designed to accommodate the growing Alephium community."
+seoDescription: "Alephium ramped up communication channels - mainnet launch approaching. Expanded channels for growing community and developer exchange."
 featuredImage: image_0b3323e072.png
 title: Ramped up communication channels
 ---

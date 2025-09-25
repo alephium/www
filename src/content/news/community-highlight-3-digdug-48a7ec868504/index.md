@@ -1,8 +1,7 @@
 ---
 date: 2022-12-15T16:18:10.111000Z
-description: Once in a while, the spotlight is put on one active member of the Alephium
-  community. This is an opportunity to showcase community members’…
-spotlight: false
+description: "Community Highlight #3: Meet digdug, an active member of the Alephium community showcasing their contributions, passion, and dedication to the ecosystem."
+seoDescription: "Alephium Community Highlight #3 digdug - active community member showcase. Contributions, passion, and dedication to blockchain ecosystem."
 featuredImage: image_5945f1f277.png
 title: 'Community Highlight #3, digdug'
 ---
