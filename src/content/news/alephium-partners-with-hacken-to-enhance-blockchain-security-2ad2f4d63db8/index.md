@@ -1,12 +1,12 @@
 ---
-date: 2025-02-18T14:00:26.801000Z
-description: We are pleased to announce a strategic partnership between Alephium and
-  Hacken, a leading cybersecurity firm specializing in blockchain and…
+title: Alephium Partners with Hacken to Enhance Blockchain Security
+description: TL;DR We've beefed up the security.
+seoDescription: We are pleased to announce a strategic partnership between
+  Alephium and Hacken, a leading blockchain cybersecurity firm.
+date: 2025-02-18T14:00:26.801Z
 spotlight: false
 featuredImage: image_dc132e8c03.jpeg
-title: Alephium Partners with Hacken to Enhance Blockchain Security
 ---
-
 We are pleased to announce a strategic partnership between **Alephium** and **Hacken**, a leading cybersecurity firm specializing in blockchain and Web3 security. This collaboration underscores Alephium’s commitment to building a secure, scalable, and resilient blockchain ecosystem.
 
 As the first operational sharded blockchain operating on Proof of Less Work, Alephium is designed to deliver high scalability, energy efficiency, and decentralization. By partnering with Hacken, we aim to further strengthen the security of our ecosystem, ensuring that anyone can interact with Alephium with confidence.
@@ -15,13 +15,13 @@ As the first operational sharded blockchain operating on Proof of Less Work, Ale
 
 Under this agreement, Hacken will provide a comprehensive suite of security services tailored to the Alephium ecosystem, including:
 
-- Smart Contract Audits: Ensuring the reliability and security of on-chain code.
-- Blockchain Protocol Audits: Evaluating the integrity and resilience of Alephium’s core infrastructure.
-- Penetration Testing: Identifying vulnerabilities in web, mobile, API, and cloud applications.
-- dApp Audits: Enhancing the security of decentralized applications running on Alephium.
-- Bug Bounty Programs: Leveraging ethical hacking through HackenProof to uncover and resolve vulnerabilities.
-- Proof of Reserves: Strengthening transparency and compliance for ecosystem participants.
-- CCSS Audit & Tokenomics Audit: Validating security measures for token models and custodial services.
+* Smart Contract Audits: Ensuring the reliability and security of on-chain code.
+* Blockchain Protocol Audits: Evaluating the integrity and resilience of Alephium’s core infrastructure.
+* Penetration Testing: Identifying vulnerabilities in web, mobile, API, and cloud applications.
+* dApp Audits: Enhancing the security of decentralized applications running on Alephium.
+* Bug Bounty Programs: Leveraging ethical hacking through HackenProof to uncover and resolve vulnerabilities.
+* Proof of Reserves: Strengthening transparency and compliance for ecosystem participants.
+* CCSS Audit & Tokenomics Audit: Validating security measures for token models and custodial services.
 
 ## Benefits for Alephium Projects
 
