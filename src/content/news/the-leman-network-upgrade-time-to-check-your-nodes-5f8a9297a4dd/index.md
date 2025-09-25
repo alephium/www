@@ -1,8 +1,7 @@
 ---
 date: 2023-03-01T14:54:01.680000Z
-description: Are you sure you have everything updated? A lot has been done since the
-  previous announcement. Here is what you need to do!
-spotlight: false
+description: "The Leman Network Upgrade: Time to check your Nodes! Ensure you have everything updated with the latest changes and prepare for the upcoming network upgrade."
+seoDescription: "Alephium Leman Network Upgrade - time to check your nodes. Ensure everything updated with latest changes and prepare for upcoming network upgrade."
 featuredImage: image_466c174731.jpeg
 title: 'The Leman Network Upgrade: Time to check your Nodes!'
 ---

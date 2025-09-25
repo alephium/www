@@ -1,7 +1,7 @@
 ---
 date: 2023-03-21T15:39:30.918000Z
-description: Proof-of-Concept to showcase dApps building on Alephium
-spotlight: false
+description: "DEX prototype goes live on Alephium testnet! Proof-of-concept showcasing dApps building on Alephium with decentralized exchange functionality."
+seoDescription: "Alephium DEX prototype testnet launch - proof-of-concept dApp showcase. Decentralized exchange functionality on Alephium blockchain."
 featuredImage: image_4b7ae278af.jpeg
 title: DEX Prototype Live on Testnet
 ---

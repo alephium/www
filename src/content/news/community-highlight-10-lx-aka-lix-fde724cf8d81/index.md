@@ -1,8 +1,7 @@
 ---
 date: 2023-06-16T13:23:48.959000Z
-description: Once in a while, the spotlight is put on one active member of the Alephium
-  community. This is an opportunity to showcase community members’…
-spotlight: false
+description: "Community Highlight #10: Meet Lx aka Lix, an active member of the Alephium community showcasing their contributions, passion, and dedication to the ecosystem."
+seoDescription: "Alephium Community Highlight #10 Lx aka Lix - active community member showcase. Contributions, passion, and dedication to blockchain ecosystem."
 featuredImage: image_0bfe58a249.jpg
 title: 'Community Highlight #10, Lx aka Lix'
 ---

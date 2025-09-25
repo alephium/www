@@ -1,8 +1,7 @@
 ---
 date: 2024-03-25T14:45:25.896000Z
-description: Regularly, we put the spotlight on an active member of the Alephium community.
-  This is an opportunity to showcase their contributions to…
-spotlight: false
+description: "Community Highlight #17: Meet AlexandrianWisdom, an active member of the Alephium community showcasing their contributions, passion, and dedication to the ecosystem."
+seoDescription: "Alephium Community Highlight #17 AlexandrianWisdom - active community member showcase. Contributions, passion, and dedication to blockchain ecosystem."
 featuredImage: image_9af9187077.jpg
 title: 'Community Highlight #17, AlexandrianWisdom'
 ---

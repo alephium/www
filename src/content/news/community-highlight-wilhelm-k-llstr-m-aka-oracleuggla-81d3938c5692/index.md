@@ -1,8 +1,7 @@
 ---
 date: 2022-10-14T09:10:11.698000Z
-description: Alephium takes an organic approach to community building. We believe
-  actions speak louder than words…
-spotlight: false
+description: "Community Highlight: Meet Wilhelm Källström aka Oracleuggla, an active member of the Alephium community showcasing their contributions, passion, and dedication to the ecosystem."
+seoDescription: "Alephium Community Highlight Wilhelm Källström Oracleuggla - active community member showcase. Contributions, passion, and dedication to blockchain ecosystem."
 featuredImage: image_b43f0a37be.jpeg
 title: Community Highlight, Wilhelm Källström aka “Oracleuggla”
 ---
