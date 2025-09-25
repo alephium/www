@@ -34,8 +34,12 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          'gatsby-remark-external-links',
           {
-            resolve: 'gatsby-remark-external-links'
+            resolve: 'gatsby-remark-autolink-headers',
+            options: {
+              icon: '<svg />'
+            }
           },
           {
             resolve: 'gatsby-remark-embed-video',

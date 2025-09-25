@@ -187,6 +187,16 @@ const GlobalStyle = createGlobalStyle`
   .medium-zoom-image {
     box-shadow: none !important;
   }
+
+  .anchor.before {
+    transform: none;
+    height: 100%;
+    padding: 10px;
+
+    > svg {
+      display: none;
+    }
+  }
 `
 
 export default GlobalStyle
