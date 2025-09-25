@@ -1,9 +1,12 @@
 ---
 title: "Phase 2 Discord AMA: Your Questions, Answered!"
-description: "Phase 2 Discord AMA: Your questions answered! As we gear up for Phase 2 with Core dApp and ALPH staking, explore the comprehensive Q&A covering ecosystem development."
+description: "Phase 2 Discord AMA: Your questions answered! As we gear up for
+  Phase 2 with Core dApp and ALPH staking, explore the comprehensive Q&A
+  covering ecosystem development."
+seoDescription: Alephium Phase 2 Discord AMA - questions answered about Core
+  dApp and ALPH staking. Comprehensive Q&A covering ecosystem development.
 date: 2025-09-03T20:01:00.000Z
-seoDescription: "Alephium Phase 2 Discord AMA - questions answered about Core dApp and ALPH staking. Comprehensive Q&A covering ecosystem development."
-spotlight: true
+spotlight: false
 featuredImage: discord-ama-2-.png
 ---
 **You went above and beyond, giving us a lot to think about! From the mechanics of fee distribution to the long-term vision for the ecosystem, the discussion covered a wide range of topics.**
