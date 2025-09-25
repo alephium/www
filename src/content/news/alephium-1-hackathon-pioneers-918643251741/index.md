@@ -1,9 +1,11 @@
 ---
-date: 2024-01-19T14:13:31.154000Z
-description: Applications are open, apply now!
+title: "Alephium #1 Hackathon — Pioneers!"
+description: TL;DR Applications are open, apply now!
+seoDescription: The Alephium hackathon will take place from 12th to 26th
+  February 2024. With a prize pool of up to $70,000 in $ALPH tokens.
+date: 2024-01-19T14:13:31.154Z
 spotlight: true
 featuredImage: image_f92c0445fe.jpg
-title: 'Alephium #1 Hackathon — Pioneers!'
 ---
 Applications are open, [apply now](https://docs.google.com/forms/d/e/1FAIpQLSdDsa1CwJeg-fxrWb1gVWefP4iJoNoZwNe0PNwk94GqmcMkHg/viewform?usp=sharing)!
 
