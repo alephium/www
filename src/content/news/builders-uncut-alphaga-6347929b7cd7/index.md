@@ -1,8 +1,7 @@
 ---
 date: 2024-08-21T15:05:27.459000Z
-description: This serie of interviews was conducted at the Athens Builders Meetup,
-  which took place at the end of June 2024. If you’re just discovering…
-spotlight: false
+description: "Builders Uncut: Meet Alphaga, an in-depth interview conducted around the Athens Builders Meetup showcasing innovative projects in the Alephium ecosystem."
+seoDescription: "Alephium Builders Uncut Alphaga - Athens Builders Meetup interview. In-depth developer showcase and ecosystem project spotlight."
 featuredImage: image_d408df4bbf.png
 title: Builders Uncut — Alphaga
 ---

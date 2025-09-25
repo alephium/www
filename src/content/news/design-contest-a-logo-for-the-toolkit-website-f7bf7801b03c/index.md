@@ -1,7 +1,7 @@
 ---
 date: 2023-09-07T12:58:47.578000Z
-description: Propose a design for the Alephium Toolkit website and win 1500 $ALPH!
-spotlight: false
+description: "Design Contest: A Logo for the toolkit website! Propose a design for the Alephium Toolkit website and win 1500 ALPH in this creative community contest."
+seoDescription: "Alephium Design Contest - logo for toolkit website. Win 1500 ALPH in creative community contest. Propose design for Alephium Toolkit website."
 featuredImage: image_bc20f08d26.jpg
 title: 'Design Contest: A Logo for the toolkit website!'
 ---

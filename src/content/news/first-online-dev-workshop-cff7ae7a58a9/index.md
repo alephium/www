@@ -1,7 +1,7 @@
 ---
 date: 2023-07-11T15:29:33.781000Z
-description: “Using the SDK to write a simple dApp” with @h0ngcha0 & @polarker
-spotlight: false
+description: "First Online Dev Workshop: Learn how to use the SDK to write a simple dApp with Hongchao and Polarker. Join the interactive development session!"
+seoDescription: "Alephium First Online Dev Workshop - learn SDK dApp development with Hongchao and Polarker. Interactive development session and tutorial."
 featuredImage: image_720f550b88.png
 title: First Online Dev Workshop!
 ---

@@ -1,7 +1,7 @@
 ---
 date: 2023-04-14T16:37:30.059000Z
-description: The winning design is already featured in Alephium’s SWALPH shop!
-spotlight: false
+description: "Results of the Design Contest: All Things Leman - The winning design is already featured in Alephium's SWALPH shop! Celebrate the creative community contest winners."
+seoDescription: "Alephium Design Contest All Things Leman results - winning design featured in SWALPH shop. Creative community contest winners announced."
 featuredImage: image_33aa09a8e0.jpg
 title: 'Results of the Design Contest: All Things Leman'
 ---

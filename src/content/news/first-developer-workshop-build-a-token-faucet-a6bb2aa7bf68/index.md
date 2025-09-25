@@ -1,7 +1,7 @@
 ---
 date: 2023-07-26T14:16:32.447000Z
-description: How to create a token faucet and deploy it on Alephium
-spotlight: false
+description: "First Developer Workshop: Learn how to create a token faucet and deploy it on Alephium using the blockchain's development tooling and Ralph smart contract language."
+seoDescription: "Alephium First Developer Workshop - build token faucet tutorial. Learn Ralph smart contract development and Alephium deployment using dev tooling."
 featuredImage: image_fa86c86a57.jpg
 title: First Developer Workshop — Build a Token Faucet
 ---

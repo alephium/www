@@ -1,6 +1,6 @@
 ---
 date: 2021-10-14T09:59:55.248000Z
-description: The Decentralization bottleneck
+description: "Running a blockchain node on Raspberry Pi: Learn how to run an Alephium full node on Raspberry Pi hardware, addressing the decentralization bottleneck with affordable hardware solutions."
 spotlight: false
 featuredImage: image_2bac85bda4.jpeg
 title: Running a blockchain node on Raspberry Pi

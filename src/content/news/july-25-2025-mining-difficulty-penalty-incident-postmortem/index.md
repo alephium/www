@@ -1,8 +1,8 @@
 ---
 title: July 25, 2025 - Mining Difficulty Penalty Incident Postmortem
-description: Something went wrong. Allow us to explain.
+description: "July 25, 2025 Mining Difficulty Penalty Incident Postmortem: Analysis of the network difficulty increase that slowed block production and created the appearance of a hashrate spike."
 date: 2025-08-15T12:00:00.000Z
-spotlight: true
+seoDescription: "Alephium July 25, 2025 mining difficulty penalty incident postmortem - network difficulty analysis. Block production slowdown and hashrate spike investigation."
 featuredImage: mining1.webp
 ---
 ## Summary (TL;DR)

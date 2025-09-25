@@ -1,8 +1,7 @@
 ---
 date: 2024-09-06T13:28:58.200000Z
-description: This interview was conducted around the Athens Builders Meetup, which
-  took place at the end of June 2024. If you’re just discovering…
-spotlight: false
+description: "Builders Uncut: Meet Sezame Wallet, an in-depth interview conducted around the Athens Builders Meetup showcasing innovative projects in the Alephium ecosystem."
+seoDescription: "Alephium Builders Uncut Sezame Wallet - Athens Builders Meetup interview. In-depth developer showcase and ecosystem project spotlight."
 featuredImage: image_1e2a26d3d1.png
 title: Builders Uncut — Sezame Wallet
 ---

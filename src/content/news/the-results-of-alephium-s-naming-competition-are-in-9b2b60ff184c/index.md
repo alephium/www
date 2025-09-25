@@ -1,7 +1,7 @@
 ---
 date: 2022-02-09T10:14:03.517000Z
-description: The team has spoken & the favorite name suggestions are 🥁
-spotlight: false
+description: "The results of Alephium's naming competition are in! Discover the team's favorite name suggestions and celebrate the community's creativity in naming ecosystem components."
+seoDescription: "Alephium naming competition results announced - team's favorite name suggestions revealed. Community creativity in naming ecosystem components showcased."
 featuredImage: image_48a75b1094.jpg
 title: The results of Alephium’s naming competition are in!
 ---
