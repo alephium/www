@@ -1,10 +1,11 @@
 ---
-date: 2024-10-21T08:17:06.469000Z
-description: The blockchain hashrate is directly correlated with network security.
-  As a Proof-of-work blockchain, Alephium relies on active ecosystem…
+title: "Hashrate Series #5: Hearst"
+description: TL;DR We speak to Loic from Hearst.
+seoDescription: "As a Proof-of-work blockchain, Alephium relies on active
+  ecosystem actors to sustain and improve Alephium’s reliability. "
+date: 2024-10-21T08:17:06.469Z
 spotlight: false
 featuredImage: image_73a6ea4a32.png
-title: 'Hashrate Series #5: Hearst'
 ---
 
 _The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem actors to sustain and improve Alephium’s reliability. This series is about them, and after_ [Nicehash](/news/post/hashrate-series-1-nicehash-ee0936adf899), [Goldshell](/news/post/hashrate-series-2-goldshell-93cc51a86640)_,_ [Cryptohall24,](/news/post/hashrate-series-3-cryptohall-24-7ad1533701f4) _and_ [ICERIVER](/news/post/hashrate-series-4-iceriver-063f52b7c431), _please welcome Hearst._
