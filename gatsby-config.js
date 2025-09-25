@@ -42,6 +42,9 @@ module.exports = {
             }
           },
           {
+            resolve: 'gatsby-remark-check-links'
+          },
+          {
             resolve: 'gatsby-remark-embed-video',
             options: {
               width: 700
