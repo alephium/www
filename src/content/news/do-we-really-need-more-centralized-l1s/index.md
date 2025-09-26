@@ -1,16 +1,18 @@
 ---
 title: Do We Really Need More Centralized L1s?
-description: This is the first column article from our new Head of Marketing &
-  Growth, Joseph. He’ll be researching and commenting on some of the most
-  current blockchain discussions, providing context and making the connection to
-  Alephium.
+description: Read Pepper's first column, discussing the rise of corporate-backed
+  layer-1 blockchains. What does this trend mean for Web3, and where does
+  Alephium fit?
+seoDescription: Read Pepper's first column, discussing the rise of
+  corporate-backed layer-1 blockchains. What does this trend mean for Web3, and
+  where does Alephium fit?
 date: 2025-09-18T19:00:00.000Z
 spotlight: true
 featuredImage: onemorel1.png
 ---
-Op-ed by Pepper, Marketing & Growth, Alephium.
+Op-ed by **Pepper**, Marketing & Growth, Alephium.
 
-**Hello and welcome! This is the first column article from our new Head of Marketing & Growth, Joseph. He’ll be researching and commenting on some of the most current blockchain discussions, providing context and making the connection to Alephium. Other contributors will soon be joining as we aim to make this space a popular hub of activity.** 
+**Hello and welcome! This is the first column article from Pepper, our new Head of Marketing & Growth. He’ll be researching and commenting on some of the most current blockchain discussions, providing context and making the connection to Alephium. Other contributors will soon be joining as we aim to make this space a popular hub of activity.** 
 
 *Note: The views and opinions expressed in this column are those of the author and may not reflect the official stance of Alephium.*
 
@@ -24,11 +26,11 @@ The **crypto industry** moves in waves, often riding tempestuous storms. Now, th
 
 **Google**, **Stripe**, **Circle**, **Tether**, and **Bitfinex** have all set about **building** **[new L1 blockchains](https://thedefiant.io/news/research-and-opinion/crypto-web3-experts-question-corp-chains-like-tempo)**. I think it’s pretty fair to say that this means we can restate the importance of the base layer. I think it also means that “L2 season” could be ending.
 
-All of this new L1 development raises an **important question**: “*Do we really need more L1s?:*
+All of this new L1 development raises an **important question**: “*Do we really need more L1s?"*
 
 An even more important question… “*Do we really need more L1s that are centralized, built on a Web2 foundation, and are backed by corporate giants?”*
 
-I’ll leave the answer up to you. First things first,read my first Alephium column below and make your minds up for yourselves.
+I’ll leave the answer up to you. First things first, read my first Alephium column below and make your minds up for yourselves.
 
 *P.S. If you’re new to Alephium, it is a PoW Layer-1 blockchain and has [recently announced](https://x.com/alephium/status/1958886335202435548) that it is entering “Phase 2: Aligned Economics”. This development will see the devs build a Core dApp as a strategic addition to our chain.*
 
@@ -40,7 +42,7 @@ Add in access to talent, influence, market dominance, and an established user ba
 
 That’s why I’m sure it’s pretty much inevitable that **Google**, **Stripe**, **Circle**, **Tether**, and **Bitfinex** will succeed with their L1s. Success, though, has different forms and different definitions. 
 
-**Allow me to play devil’s advocate.** 
+### **Playing Devil’s Advocate**
 
 For those of you who believe in the **core ethos of Web3** and **Bitcoin-like fundamentals**, these platforms may not be aligned with your ideals.
 
@@ -90,7 +92,7 @@ They’ve shown that decentralization, high performance, and usability **don't a
 
 Alephium is launching its own Core dApp as a **native growth engine** and **definitive proof-of-concept**. Once launched, it will enter a new economic model where infrastructure, economics, and governance are properly **aligned**.
 
-In this new system, there will also be more **involvement from DAOs**. Alephium DAOs will put marketing and development resources where they belong: in community hands. No boardroom votes, no Cap Table politics, just directed **momentum toward adoption**. That’s how decentralized networks can **scale their influence**. 
+In this new system, there will also be more **involvement from DAOs**. Alephium DAOs will put marketing and development resources where they belong: in community hands. No boardroom votes, no cap table politics, just directed **momentum toward adoption**. That’s how decentralized networks can **scale their influence**. 
 
 ## Your Coin, Working for You
 
@@ -114,7 +116,7 @@ The **rise of corporate-backed L1s** shows the **risks of consolidated power**. 
 
 Right now, the team is **empowering the community** and ecosystem to drive the network's growth and activity from within.
 
-Community-driven initiatives like the BlockFlow Alliance DAO, are a key part of **its second phase**. These initiatives empower the community to allocate resources toward marketing, developer support, and onboarding. 
+Community-driven initiatives like the BlockFlow Alliance DAO are a key part of **its second phase**. These initiatives empower the community to allocate resources toward marketing, developer support, and onboarding. 
 
 Build with Alephium, and you're betting on:
 
