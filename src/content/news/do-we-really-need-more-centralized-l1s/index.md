@@ -76,7 +76,7 @@ With this approach, Alephium ensured it could be **resilient by design** and **b
 
 This Satoshi-like ideology is why Alephium can combine the decentralization of Bitcoin with the smart contract flexibility of Ethereum, all without the trade-offs others have willingly accepted. **All native, no asterisks**. 
 
-While that may not have translated into an enormous TVL (yet), I believe that the ongoing improvements, upgrades, and especially the **unique economic design of a protocol-owned Core dApp** will eventually attract it. 
+While that may not have translated into an enormous TVL (yet), I believe that the ongoing improvements, upgrades, and especially the **unique economic design of a [protocol-owned Core dApp](/news/post/from-scalable-infrastructure-to-aligned-economics/#1-core-dapp)** will eventually attract it. 
 
 ## From Foundations to Functions: Phase 1 & 2
 
@@ -88,7 +88,7 @@ It was said **Proof-of-Work** couldn’t scale without compromises, both mathema
 
 They’ve shown that decentralization, high performance, and usability **don't actually have to be mutually exclusive**, as critics previously thought. The Alephium devs achieved it.
 
-**Phase 2** is where the infrastructure [evolves and aligns](https://medium.com/@alephium/from-scalable-infrastructure-to-aligned-economics-0a51764491c9). They are programming a **self-sustaining ecosystem** for the community and $ALPH holders. That is their **North Star**. As was the case in the past, they are **building for long-term endurance**, not trends that are gone in a flash.
+**Phase 2** is where the infrastructure [evolves and aligns](/news/post/from-scalable-infrastructure-to-aligned-economics/). They are programming a **self-sustaining ecosystem** for the community and $ALPH holders. That is their **North Star**. As was the case in the past, they are **building for long-term endurance**, not trends that are gone in a flash.
 
 Alephium is launching its own Core dApp as a **native growth engine** and **definitive proof-of-concept**. Once launched, it will enter a new economic model where infrastructure, economics, and governance are properly **aligned**.
 
@@ -132,4 +132,4 @@ The next decade belongs to teams who ignore short-term trends and build long-ter
 
 —-----
 
-*[Pepper's](www.x.com/bigpepghost) **next article** will take an even deeper look at the rise of Centralized L1s, helping people to better understand why they might be a concern for Web3 and the principles of decentralization.*
+*[Pepper's](https://x.com/bigpepghost) **next article** will take an even deeper look at the rise of Centralized L1s, helping people to better understand why they might be a concern for Web3 and the principles of decentralization.*
