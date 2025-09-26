@@ -132,4 +132,4 @@ The next decade belongs to teams who ignore short-term trends and build long-ter
 
 —-----
 
-*Pepper's **next article** will take an even deeper look at the rise of Centralized L1s, helping people to better understand why they might be a concern for Web3 and the principles of decentralization.*
+*[Pepper's](www.x.com/bigpepghost) **next article** will take an even deeper look at the rise of Centralized L1s, helping people to better understand why they might be a concern for Web3 and the principles of decentralization.*
