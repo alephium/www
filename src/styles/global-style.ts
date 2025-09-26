@@ -189,7 +189,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .anchor.before {
-    transform: none;
+    transform: none !important;
     height: 100%;
     padding: 10px;
 
