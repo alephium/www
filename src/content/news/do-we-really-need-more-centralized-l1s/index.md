@@ -16,7 +16,7 @@ Op-ed by **Pepper**, Marketing & Growth, Alephium.
 
 *Note: The views and opinions expressed in this column are those of the author and may not reflect the official stance of Alephium.*
 
-—----------
+- - -
 
 ## Next-Gen PoW Is More Relevant Than Ever
 
@@ -42,7 +42,7 @@ Add in access to talent, influence, market dominance, and an established user ba
 
 That’s why I’m sure it’s pretty much inevitable that **Google**, **Stripe**, **Circle**, **Tether**, and **Bitfinex** will succeed with their L1s. Success, though, has different forms and different definitions. 
 
-### **Playing Devil’s Advocate**
+### Playing Devil’s Advocate
 
 For those of you who believe in the **core ethos of Web3** and **Bitcoin-like fundamentals**, these platforms may not be aligned with your ideals.
 
