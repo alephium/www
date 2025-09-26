@@ -6,7 +6,7 @@ description: Read Pepper's first column, discussing the rise of corporate-backed
 seoDescription: Read Pepper's first column, discussing the rise of
   corporate-backed layer-1 blockchains. What does this trend mean for Web3, and
   where does Alephium fit?
-date: 2025-09-18T19:00:00.000Z
+date: 2025-09-26T02:00:00.000Z
 spotlight: true
 featuredImage: onemorel1.png
 ---
