@@ -6,6 +6,14 @@ on:
   pull_request:
   workflow_dispatch:
 
+env:
+  AWS_ACCESS_KEY_ID: ${{ secrets.TEST_AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.TEST_AWS_SECRET_ACCESS_KEY }}
+  AWS_DEFAULT_REGION: eu-central-1
+  AWS_DISTRIBUTION_ID: ${{ secrets.TEST_AWS_DISTRIBUTION_ID }}
+  AWS_BUCKET_NAME: ${{ secrets.TEST_AWS_BUCKET_NAME }}
+  GATSBY_ALEPHIUM_HOSTNAME: alephium.org
+
 jobs:
   linkChecker:
     runs-on: ubuntu-latest
@@ -14,9 +22,33 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Setup node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 18
+
+      - name: Caching Gatsby
+        id: gatsby-cache-build
+        uses: actions/cache@v4
+        with:
+          path: |
+            public
+            .cache
+          key: ${{ runner.os }}-gatsby-build-${{ github.run_id }}
+          restore-keys: |
+            ${{ runner.os }}-gatsby-build-
+
+      - name: Build website
+        run: npm install gatsby-cli && npm run build --log-pages
+        env:
+          GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES: true
+          CI: true
+
       - name: Link Checker
         id: lychee
         uses: lycheeverse/lychee-action@v2
         with:
           fail: true
-          args: --exclude-all-private --exclude '^file:' --exclude '^https://www.linkedin.com' --accept '100..=103,200..=299,403,429' './**/*'
+          args: --base-url https://alephium.org --exclude-all-private --exclude '^file:' --exclude '^https://www.linkedin.com' --accept '100..=103,200..=299,403,429' './**/*.html'
+          workingDirectory: public
+
