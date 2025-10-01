@@ -9,7 +9,7 @@ title: 'Builders Highlight #3: Ayin'
 
 _Our ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience and provide real utility for the users. In the Builders Highlight series, these builders will share more about their projects, thoughts, and insights on why building on Alephium! You can find_ [#1 here](/news/post/builders-highlights-1-sezame-wallet-ddb4aeb61881) _and_ [#2 here](/news/post/builders-highlights-2-alphpaca-nfts-99c69775f04c)_._
 
-This episode is about [Ayin](http://ayin.app), the first DEX available on Alephium Mainnet. We thank [Dr Jekyll](/news/post/community-highlight-11-dr-jekyll-165ab9a51880) and 0dd431c8 for the nice interview!
+This episode is about [Ayin](http://ayin.app), the first DEX available on Alephium Mainnet. We thank Dr Jekyll and 0dd431c8 for the nice interview!
 
 ## Tell us a little bit about your project. What is it, what does it do, and how does it interact with the Alephium blockchain?
 

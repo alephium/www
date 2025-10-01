@@ -4,7 +4,9 @@ description: "Community Highlight #2: Meet cgi-bin, an active member of the Alep
 seoDescription: "Alephium Community Highlight #2 cgi-bin - active community member showcase. Contributions, passion, and dedication to blockchain ecosystem."
 featuredImage: image_30dfdcb286.jpg
 title: 'Community Highlight #2, cgi-bin'
+archived: true
 ---
+
 This is episode \#2 in our series of highlights where once in a while we put the spotlight on one active member of our community. This is an opportunity for us to showcase their contributions to our ecosystem, what drives them and what they are passionate about! You can find episode [#1 here](/news/post/community-highlight-wilhelm-k-llstr-m-aka-oracleuggla-81d3938c5692), [#3here](/news/post/community-highlight-3-digdug-48a7ec868504), [#4 here](/news/post/community-highlight-4-montail-e24fd88882a0), [#5 here](/news/post/community-highlight-5-txn-71c4fd76ffe8) and [#6 here](/news/post/community-highlight-6-waldi-zkit-beats-37af1f6df3b8)..
 
 ---

@@ -20,7 +20,10 @@ export const query = graphql`
       ...HeroImage
     }
     spotlightPosts: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "news" } }, frontmatter: { spotlight: { eq: true } } }
+      filter: {
+        fields: { contentType: { eq: "news" } }
+        frontmatter: { spotlight: { eq: true }, archived: { ne: true } }
+      }
       sort: { frontmatter: { date: DESC } }
     ) {
       nodes {
@@ -42,7 +45,10 @@ export const query = graphql`
       }
     }
     remainingPosts: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "news" } }, frontmatter: { spotlight: { ne: true } } }
+      filter: {
+        fields: { contentType: { eq: "news" } }
+        frontmatter: { spotlight: { ne: true }, archived: { ne: true } }
+      }
       sort: { frontmatter: { date: DESC } }
     ) {
       nodes {

@@ -4,7 +4,9 @@ description: "Community Highlight: Meet Wilhelm Källström aka Oracleuggla, an 
 seoDescription: "Alephium Community Highlight Wilhelm Källström Oracleuggla - active community member showcase. Contributions, passion, and dedication to blockchain ecosystem."
 featuredImage: image_b43f0a37be.jpeg
 title: Community Highlight, Wilhelm Källström aka “Oracleuggla”
+archived: true
 ---
+
 Alephium takes an organic approach to community building. We believe actions speak louder than words and that we rally people together around the quality of those actions. We’ve been incredibly fortunate to attract a diverse, and self-driven community. More episodes: [#2 here](/news/post/community-highlight-2-cgi-bin-c102cc106f19), [#3here](/news/post/community-highlight-3-digdug-48a7ec868504), [#4 here,](/news/post/community-highlight-4-montail-e24fd88882a0) [#5 here](/news/post/community-highlight-5-txn-71c4fd76ffe8) and [#6 here](/news/post/community-highlight-6-waldi-zkit-beats-37af1f6df3b8).
 
 This series of highlights aims at showcasing this community by putting the spotlight on one actively contributing member at a time. This is an opportunity for us to put into the light contributions from the community along with the things they are passionate about and what drives them.

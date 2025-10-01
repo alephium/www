@@ -52,7 +52,7 @@ Twitter is the center of our public life, where real-time updates, long-form wri
 
 [Alephium Twitter](https://twitter.com/nymproject)
 
-**Our friends often translate our posts there too! In** [French](https://twitter.com/Alephiumfr)**,** [German](https://twitter.com/Alephiumde) **&** [Ukrainian](https://twitter.com/Alephiumua) **(thanks to** [Waldi](/news/post/community-highlight-6-waldi-zkit-beats-37af1f6df3b8?source=your_stories_page-------------------------------------) **&** [Oheka](/news/post/community-highlight-7-oheka-13d8b4ae025e?source=your_stories_page-------------------------------------)**)**
+**Our friends often translate our posts there too! In [French](https://twitter.com/Alephiumfr), [German](https://twitter.com/Alephiumde) & [Ukrainian](https://twitter.com/Alephiumua) (thanks to Waldi & Oheka)**
 
 ### Articles & updates
 
@@ -60,7 +60,7 @@ For those who like reading, our Medium provides updates on Alephium’s technolo
 
 **Here’s the official** [Alephium](https://medium.com/@alephium) **medium.**
 
-And here are the community-led translations in [Indonesian](https://medium.com/@Alph-Indonesia) (thank you [Chris](/news/post/community-highlight-15-yulius-aka-chris45-036ae41a8037)!), [French](https://medium.com/alephiumfr) (thank you [NTV](/news/post/builders-highlight-4-no-trust-verify-9ea495ca826f)!) & [Ukrainian](https://discord.com/channels/747741246667227157/747998352842686545/1190685377321771078) by [Nazar](https://twitter.com/ustyianskyi).
+And here are the community-led translations in [Indonesian](https://medium.com/@Alph-Indonesia) (thank you Chris!), [French](https://medium.com/alephiumfr) (thank you [NTV](/news/post/builders-highlight-4-no-trust-verify-9ea495ca826f)!) & [Ukrainian](https://discord.com/channels/747741246667227157/747998352842686545/1190685377321771078) by [Nazar](https://twitter.com/ustyianskyi).
 
 ### Reddit & YouTube
 
