@@ -133,7 +133,7 @@ const HomepageUSPSection = () => {
                 Alephium offers a robust, developer-friendly environment with{' '}
                 <strong>built-in protections against common vulnerabilities</strong>. Its MEV-aware architecture and
                 native safeguards{' '}
-                <strong>prevent threats like reentrancy attacks, unlimited approvals, and flash loan exploits.</strong>
+                <strong>prevent threats like reentrancy attacks and unlimited approvals.</strong>
               </p>
             </CardText>
             <CardFooterButtonContainer>
