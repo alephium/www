@@ -4,6 +4,7 @@ description: "Community Highlight #11: Meet Dr. Jekyll, an active member of the 
 seoDescription: "Alephium Community Highlight #11 Dr. Jekyll - active community member showcase. Contributions, passion, and dedication to blockchain ecosystem."
 featuredImage: image_92cdd5b71f.png
 title: 'Community Highlight #11, Dr. Jekyll'
+archived: true
 ---
 
 **Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’ contributions to the ecosystem, what drives them, and what they are passionate about! More episodes: [#1 here](/news/post/community-highlight-wilhelm-k-llstr-m-aka-oracleuggla-81d3938c5692), [#2 here](/news/post/community-highlight-2-cgi-bin-c102cc106f19), [#3 here](/news/post/community-highlight-3-digdug-48a7ec868504), [#4 here](/news/post/community-highlight-4-montail-e24fd88882a0), [#5 here](/news/post/community-highlight-5-txn-71c4fd76ffe8) , [#6 here](/news/post/community-highlight-6-waldi-zkit-beats-37af1f6df3b8), [#7 here](/news/post/community-highlight-7-oheka-13d8b4ae025e), [#8 here](/news/post/community-highlight-8-jorge-438510785041), [#9 here](/news/post/community-highlight-9-dzhemsh-a0a4a98a8489), and [#10 here](/news/post/community-highlight-10-lx-aka-lix-fde724cf8d81).**

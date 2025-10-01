@@ -34,7 +34,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     `
       {
         allMarkdownRemark(
-          filter: { fields: { contentType: { eq: "news" } } }
+          filter: { fields: { contentType: { eq: "news" } }, frontmatter: { archived: { ne: true } } }
           sort: { frontmatter: { date: DESC } }
           limit: 1000
         ) {

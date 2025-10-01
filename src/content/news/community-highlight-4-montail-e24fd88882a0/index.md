@@ -4,6 +4,7 @@ description: "Community Highlight #4: Meet MontaiL, an active member of the Alep
 seoDescription: "Alephium Community Highlight #4 MontaiL - active community member showcase. Contributions, passion, and dedication to blockchain ecosystem."
 featuredImage: image_da60a03774.jpg
 title: 'Community Highlight #4, MontaiL'
+archived: true
 ---
 
 **Once in a while, the spotlight is put on one active member of the Alephium community. This is an opportunity to showcase community members’ contributions to the ecosystem, what drives them and what they are passionate about! More episodes: [#1 here](/news/post/community-highlight-wilhelm-k-llstr-m-aka-oracleuggla-81d3938c5692)_,_ [#2 here](/news/post/community-highlight-2-cgi-bin-c102cc106f19)_,_ [#3 here](/news/post/community-highlight-3-digdug-48a7ec868504)_,_ [#5 here](/news/post/community-highlight-5-txn-71c4fd76ffe8) and [#6 here](/news/post/community-highlight-6-waldi-zkit-beats-37af1f6df3b8).**

@@ -4,6 +4,7 @@ description: "Community Highlight #12: Meet Sam a.k.a energy45, an active member
 seoDescription: "Alephium Community Highlight #12 Sam energy45 - active community member showcase. Contributions, passion, and dedication to blockchain ecosystem."
 featuredImage: image_614403f8d4.jpg
 title: 'Community Highlight #12, Sam a.k.a energy45'
+archived: true
 ---
 
 _Regularly, we put the spotlight on an active member of the Alephium community. This is an opportunity to showcase their contributions to the ecosystem, what drives them and what they are passionate about! More episodes:_ [#1](/news/post/community-highlight-wilhelm-k-llstr-m-aka-oracleuggla-81d3938c5692)_,_ [#2](/news/post/community-highlight-2-cgi-bin-c102cc106f19)_,_ [#3](/news/post/community-highlight-3-digdug-48a7ec868504)_,_ [#4](/news/post/community-highlight-4-montail-e24fd88882a0)_,_ [#5](/news/post/community-highlight-5-txn-71c4fd76ffe8)_,_ [#6](/news/post/community-highlight-6-waldi-zkit-beats-37af1f6df3b8)_,_ [#7](/news/post/community-highlight-7-oheka-13d8b4ae025e)_,_ [#8](/news/post/community-highlight-8-jorge-438510785041)_,_ [#9](/news/post/community-highlight-9-dzhemsh-a0a4a98a8489)_,_ [#10](/news/post/community-highlight-10-lx-aka-lix-fde724cf8d81)_, and_ [#11](/news/post/community-highlight-11-dr-jekyll-165ab9a51880)_._
