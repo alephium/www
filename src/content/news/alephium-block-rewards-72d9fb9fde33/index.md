@@ -1,15 +1,90 @@
 ---
-date: 2021-11-22T15:06:08.158000Z
-description: "An in-depth analysis of Alephium's block rewards system, explaining the time-based and hashrate-based components of the reward emission rates and mining incentives."
-seoDescription: "Alephium block rewards analysis - time-based and hashrate-based emission rates. Mining incentives, uncle blocks, and transaction fee burning explained."
+title: Alephium Block Rewards
+description: An in-depth analysis of Alephium's block rewards system, explaining
+  the time-based and hashrate-based components of the reward emission rates and
+  mining incentives.
+seoDescription: Alephium block rewards analysis - time-based and hashrate-based
+  emission rates. Mining incentives, uncle blocks, and transaction fee burning
+  explained.
+date: 2021-11-22T15:06:08.158Z
 spotlight: false
 featuredImage: image_becedcf971.jpg
-title: Alephium Block Rewards
 ---
+**An in-depth analysis of the Block rewards, explaining the time-based and hashrate-based components of the reward emission rates.**
+
+***Disclaimer: This article was updated on July 4th, 2025, following the Danube network upgrade, which reduced block time from 16 seconds to 8 seconds.***
+
+Mining is a critical component of maintaining and developing a public ledger. It is the process of validating transactions and adding them to the Alephium blockchain. In addition, mining is the only way to issue new Alephium tokens. A consensus protocol has been implemented to ensure only Alephium miners can mine and validate transactions. In Alephium, this is called [“Proof-of-Less-Work” (PoLW)](/news/post/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301).
+
+For this process to be decentralized, having as many miners participating as possible is important. Hence, to incentivize the mining, the blockchain rewards the miner who successfully issues a new block and facilitates the transactions.
+
+At the time of writing this article, Alephium Mainnet has 16 shards live, and the average block time is 8 seconds.
+
+## Block Rewards (a.k.a Mining Rewards)
+
+Alephium’s reward for newly generated blocks is also called Mining Reward (MR). After distribution, the block rewards are locked for 500 minutes.
+
+The mining reward is bound by two curves based on hashrate and timestamp. At a given time and for a given hashrate, the reward per block equals the minimum between the time-based reward and the hashrate-based reward.
+
+> Block Reward = min(time-based reward, hashrate-based reward)
+
+[Mining Reward GitHub Implementation](https://github.com/alephium/alephium/blob/master/protocol/src/main/scala/org/alephium/protocol/mining/Emission.scala)
+
+## Timestamp
+
+The time-based reward emission rate for the first four years evolves as follows:
+
+![](image_becedcf971.jpg)
+
+If you want to know the precise numbers, [here is the GitHub CSV file.](https://github.com/alephium/alephium/blob/master/protocol/src/main/resources/time-inflation.csv)
+
+Over four years, the time-based mining reward drops gradually from 7.5 ALPH (shared by 16 chains) per block period to 2.5 ALPH. After 4 years, the time-based reward will be fixed to 2.5 ALPH per block period.
+
+Note: The block period was 64 seconds at mainnet launch, reduced to 16 seconds with the Rhône network upgrade in 2024, and to 8 seconds with the Danube upgrade in July 2025. As the emission schedule was to remain unchanged, the block reward was reduced proportionally.
+
+## Hashrate
+
+![](image_c9069ba7e9.jpeg)
+
+If you want to know the precise numbers, [here is the GitHub CSV file.](https://github.com/alephium/alephium/blob/master/protocol/src/main/resources/hashrate-inflation.csv) (The first column is the log_2 of the network hashrate, a value of 8 means the network hashrate is 2\*\*8 hash/second)
+
+* When the hashrate remains within the \[0 hash/sec, 1 Ph/sec] range.
+  The hashrate-based mining reward increases gradually from 0 ALPH to 7.5 ALPH (shared by 16 chains) per block period with a minimum of 3.75 ALPH guaranteed. The idea is to incentivize more miners to join the project without only benefitting the early adopters.
+* When the hashrate is within the \[1 Ph/sec, 1 Eh/sec] range
+  The hashrate-based reward gradually decreases from 7.5 ALPH to 2.5 ALPH per block period.
+* When the network hashrate is within the \[1 Eh/sec, 128Eh/sec] range
+  The hashrate-based reward gradually decreases from 2.5 ALPH to 0 ALPH.
+
+**Note:**
+
+1. The inflation rates are estimations, as the block time is very dynamic on a real network.
+2. When the hashrate surpasses 1 Eh/sec, PoLW will be triggered.
+
+### Orphan and Uncle Blocks
+
+Alephium uses the ghost algorithm similar to ETH. A main chain block may reference uncle blocks, and both the miner of the main chain block and the miner of the uncle block will receive rewards.
+
+You may need to wait for a while to confirm whether an orphan block is an uncle block. If the height of the orphan block is `h`, it can be referenced by a main chain block with a height in the range of `[h+1, h+7]`. Therefore, you need to wait about `7 * 16s`. However, due to variability in block time, you may need to wait longer to ensure that the uncle block miners receive their rewards.
+
+The max reward is 7/8th of the regular reward and is defined by the time/distance between the main chain block and the uncle block. If the uncle block hash is added quickly to the new block header (e.g., the uncle block happened just before the “nephew” one), it will receive 7/8 of the regular reward. OTOH, if it is farther (i.e., it happens seven blocks after the uncle was produced), it will receive 1/8 of the regular reward.
+
+If an uncle block is not referenced by any mainchain block, it means that the uncle block is an orphan block and will not receive any rewards.
+
+### Transaction Fee (TF)
+
+Transaction Fees are a way for network participants to incentivize miners to process their transactions faster. In the Alephium Blockchain, all Transaction Fees are burnt, to keep the mining incentives equally distributed between all chains.
+
+- - -
+
+*Disclaimer: This document is for informational purposes only. Nothing in this document shall be deemed to constitute a prospectus of any sort or a solicitation for investment. The information in this document does not constitute a recommendation by any person to purchase any ALPH Tokens, or any other cryptographic token or currency, or to purchase any equity or other investment in any entity and no person has authorized any person to make any such recommendations.*
+
+- - -
+
+## Previous version of the document — June, 2025
 
 **An in-depth analysis of the Block rewards, explaining the time-based and hashrate-based components of the reward emission rates.**
 
-**_Disclaimer: This article was edited on June 12th, 2024 when block time was reduced from 64 to 16s_**
+***Disclaimer: This article was edited on June 12th, 2024 when block time was reduced from 64 to 16s***
 
 Mining is a critical component of maintaining and developing a public ledger. It is the process of validating transactions and adding them to the Alephium blockchain. In addition, mining is the only way to issue new Alephium tokens. A consensus protocol has been implemented to ensure only Alephium miners can mine and validate transactions. In Alephium, this is called [“Proof-of-Less-Work” (PoLW)](/news/post/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301).
 
@@ -41,14 +116,11 @@ Over four years, the time-based mining reward drops gradually from 15 ALPH (shar
 
 ![](image_c9069ba7e9.jpeg)
 
-If you want to know the precise numbers, [here is the GitHub CSV file.](https://github.com/alephium/alephium/blob/master/protocol/src/main/resources/hashrate-inflation.csv) (The first column is the log_2 of the network hashrate, a value of 8 means the network hashrate is 2**8 hash/second)
+If you want to know the precise numbers, [here is the GitHub CSV file.](https://github.com/alephium/alephium/blob/master/protocol/src/main/resources/hashrate-inflation.csv) (The first column is the log_2 of the network hashrate, a value of 8 means the network hashrate is 2\*\*8 hash/second)
 
-- *When the hashrate remains within the \[0 hash/sec, 1 Ph/sec\] range.   
-  *The hashrate-based mining reward increases gradually from 0 ALPH to 15 ALPH (shared by 16 chains) per block period with a minimum of 7.5 ALPH guaranteed. The idea is to incentivize more miners to join the project without only benefitting the early adopters.
-- *When the hashrate is within the \[1 Ph/sec, 1 Eh/sec\] range  
-  *The hashrate-based gradually decreases from 15 ALPH to 5 ALPH per block period.
-- *When the network hashrate is within the \[1 Eh/sec, 128Eh/sec\] range  
-  *The hashrate-based gradually decreases from 5 ALPH to 0 ALPH.
+* *When the hashrate remains within the \[0 hash/sec, 1 Ph/sec] range. *The hashrate-based mining reward increases gradually from 0 ALPH to 15 ALPH (shared by 16 chains) per block period with a minimum of 7.5 ALPH guaranteed. The idea is to incentivize more miners to join the project without only benefitting the early adopters.
+* *When the hashrate is within the \[1 Ph/sec, 1 Eh/sec] range*The hashrate-based gradually decreases from 15 ALPH to 5 ALPH per block period.
+* *When the network hashrate is within the \[1 Eh/sec, 128Eh/sec] range*The hashrate-based gradually decreases from 5 ALPH to 0 ALPH.
 
 **Note:**
 
@@ -57,9 +129,9 @@ If you want to know the precise numbers, [here is the GitHub CSV file.](https://
 
 ### Orphan and Uncle Blocks
 
-Alephium uses the ghost algorithm similar to ETH. A main chain block may reference uncle blocks, and both the miner of the main chain block and the miner of the uncle block will receive rewards.
+Alephium uses the ghost algorithm similar to ETH. A main chain block may reference uncle blocks, and both the miner of the main chain block and the miner of the [uncle block](https://x.com/alephium/status/1844762425876508908) will receive rewards.
 
-You may need to wait for a while to confirm whether an orphan block is an uncle block. If the height of the orphan block is `h`, it can be referenced by a main chain block with a height in the range of `[h+1, h+7]`. Therefore, you need to wait about `7 * 16s`. However, due to variability in block time, you may need to wait longer to ensure that the uncle block miners receive their rewards.
+You may need to wait for a while to confirm whether an orphan block is an uncle block. If the height of the orphan block is `h`, it can be referenced by a main chain block with a height in the range of `[h+1, h+7]`. Therefore, you need to wait about `7 * 8s`. However, due to variability in block time, you may need to wait longer to ensure that the uncle block miners receive their rewards.
 
 The max reward is 7/8th of the regular reward and is defined by the time/distance between the main chain block and the uncle block. If the uncle block hash is added quickly to the new block header (e.g., the uncle block happened just before the “nephew” one), it will receive 7/8 of the regular reward. OTOH, if it is farther (i.e., it happens seven blocks after the uncle was produced), it will receive 1/8 of the regular reward.
 
@@ -69,6 +141,6 @@ If an uncle block is not referenced by any mainchain block, it means that the un
 
 Transaction Fees are a way for network participants to incentivize miners to process their transactions faster. In the Alephium Blockchain, all Transaction Fees are burnt, to keep the mining incentives equally distributed between all chains.
 
----
+- - -
 
-_Disclaimer: This document is for informational purposes only. Nothing in this document shall be deemed to constitute a prospectus of any sort or a solicitation for investment. The information in this document does not constitute a recommendation by any person to purchase any ALPH Tokens, or any other cryptographic token or currency, or to purchase any equity or other investment in any entity and no person has authorized any person to make any such recommendations._
+*Disclaimer: This document is for informational purposes only. Nothing in this document shall be deemed to constitute a prospectus of any sort or a solicitation for investment. The information in this document does not constitute a recommendation by any person to purchase any ALPH Tokens, or any other cryptographic token or currency, or to purchase any equity or other investment in any entity and no person has authorized any person to make any such recommendations.*
