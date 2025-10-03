@@ -1,13 +1,18 @@
 ---
-date: 2023-01-18T14:30:50.649000Z
-description: "Meet ALPHred, Alephium's unique virtual machine that distinguishes itself from others in the blockchain space, examining its function and innovative features."
-seoDescription: "Alephium ALPHred virtual machine - unique blockchain VM like no others. Technical innovation and virtual machine features showcase."
+title: Meet ALPHred, a Virtual Machine like no others
+description: Meet ALPHred, Alephium's unique virtual machine that distinguishes
+  itself from others in the blockchain space, examining its function and
+  innovative features.
+seoDescription: Alephium ALPHred virtual machine - unique blockchain VM like no
+  others. Technical innovation and virtual machine features showcase.
+date: 2023-01-18T14:30:50.649Z
 spotlight: false
 featuredImage: image_de012354c9.jpeg
-title: Meet ALPHred, a Virtual Machine like no others
 ---
+*This is the third of a series of technical innovations brought by Alephium. Find the previous ones* [here](/news/post/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301) *(PolW) and* [here](https://medium.com/p/8de3b0f76749) *(sUTXO). Here we examine what a virtual machine is, what function it fills in blockchains and what distinguishes Alephium’s VM (called Alphred) from others.*
 
-_This is the third of a series of technical innovations brought by Alephium. Find the previous ones_ [here](/news/post/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301) _(PolW) and_ [here](https://medium.com/p/8de3b0f76749) _(sUTXO). Here we examine what a virtual machine is, what function it fills in blockchains and what distinguishes Alephium’s VM (called Alphred) from others._
+> *Updated: Updated on October 1, 2025, to better reflect the state of the technology.*
+
 
 ## What is a VM?
 
@@ -71,7 +76,7 @@ On Alephium, as each transaction follows the Input/Output paradigm, a complex ME
 
 A flash loan bundles successive transactions inside one block with conditional execution. It requires interacting with several smart contracts in the same transaction to take a loan, use it in a dApp and repay it. If the repayment doesn’t happen, then none of the transactions happened. This works well in the account model blockchains.
 
-Alephium is UTXO-based, meaning the Input/Output paradigm dictates that output only can be used after the transaction is broadcasted to the network. Therefore, a loan can’t be instantly repaid in the same transaction. This makes [flash loans](https://coinmarketcap.com/alexandria/glossary/flash-loan) impossible by default.
+Alephium is UTXO-based, meaning the Input/Output paradigm dictates that outputs can only be spent once a transaction is broadcasted to the network. This design prevents the classic “borrow and repay in the same transaction” model of flash loans. After the Danube upgrade, certain edge-case constructs could emulate flash-like behavior, but the architecture and economics make such attacks impractical in real markets. In practice, Alephium remains [flash loan](https://coinmarketcap.com/alexandria/glossary/flash-loan) resistant by design.
 
 ### More secure by design
 
