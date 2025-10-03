@@ -1,19 +1,23 @@
 ---
-date: 2023-08-17T14:18:41.118000Z
-description: "Tech Talk #2: Mysteries of stateful UTXO - the ultimate guide to Alephium's accounting model, featuring a discussion with Cheng Wang, inventor of stateful UTXO."
-seoDescription: "Alephium Tech Talk #2 stateful UTXO ultimate guide - Cheng Wang discussion. Mysteries of accounting model and blockchain innovation insights."
+title: "TECH TALK #2 — Mysteries of stateful UTXO: The Ultimate Guide to
+  Alephium’s accounting model (and…"
+description: "Tech Talk #2: Mysteries of stateful UTXO - the ultimate guide to
+  Alephium's accounting model, featuring a discussion with Cheng Wang, inventor
+  of stateful UTXO."
+seoDescription: "Alephium Tech Talk #2 stateful UTXO ultimate guide - Cheng Wang
+  discussion. Mysteries of accounting model and blockchain innovation insights."
+date: 2023-08-17T14:18:41.118Z
 featuredImage: image_42ac0eb0fa.jpg
-title: 'TECH TALK #2 — Mysteries of stateful UTXO: The Ultimate Guide to Alephium’s
-  accounting model (and…'
 ---
+*A discussion with Cheng Wang, inventor of stateful UTXO and founder of Alephium*
 
-_A discussion with Cheng Wang, inventor of stateful UTXO and founder of Alephium_
+> Updated on October 1, 2025, to better reflect the state of the technology.
 
-_This is the second of a series of interviews on the technical innovations brought to the world by Alephium. The discussion was conducted in a virtual format in the presence of most of the Alephium team who contributed to the questions and ensuing exchange. The following has been edited for clarity, concision and optimized for readability and cut into two parts, this is part 2. It has already been preceded by an_ [Introduction to sUTXO](/news/post/an-introduction-to-the-stateful-utxo-model-8de3b0f76749) _and_ [many](https://twitter.com/alephium/status/1615389097744568320) [twitter](https://twitter.com/alephium/status/1599808960038461447) [threads](https://twitter.com/alephium/status/1602684789655420928)_._
+*This is the second of a series of interviews on the technical innovations brought to the world by Alephium. The discussion was conducted in a virtual format in the presence of most of the Alephium team who contributed to the questions and ensuing exchange. The following has been edited for clarity, concision and optimized for readability and cut into two parts, this is part 2. It has already been preceded by an* [Introduction to sUTXO](/news/post/an-introduction-to-the-stateful-utxo-model-8de3b0f76749) *and* [many](https://twitter.com/alephium/status/1615389097744568320) [twitter](https://twitter.com/alephium/status/1599808960038461447) [threads](https://twitter.com/alephium/status/1602684789655420928)*.*
 
-_TL;DR — On the topic of state size, contract storage rent and upgradability / About NFT implementations / Exploring the main benefits of sUTXO: security / Regarding the benefits of building with statefulUTXO_
+*TL;DR — On the topic of state size, contract storage rent and upgradability / About NFT implementations / Exploring the main benefits of sUTXO: security / Regarding the benefits of building with statefulUTXO*
 
-_If you just stumbled here, find part 1_ [here](/news/post/tech-talk-2-mysteries-of-stateful-utxo-the-ultimate-guide-to-alephium-s-accounting-model-and-de2cf2063615)_._
+*If you just stumbled here, find part 1* [here](/news/post/tech-talk-2-mysteries-of-stateful-utxo-the-ultimate-guide-to-alephium-s-accounting-model-and-de2cf2063615)*.*
 
 ## On the topic of state size, contract storage rent and upgradability
 
@@ -129,11 +133,11 @@ This level of protection is a unique characteristic of the sUTXO model.
 
 CW: Indeed, I was. However, flashloan is a double-edged tool. I believe the harm it can cause potentially outweighs the benefits it brings. While not everyone may agree with this viewpoint, we can concur that it has its upsides and downsides. In our case, we’ve adopted a more conservative technology design approach, not only in the realm of DeFi. A flash loan is an extreme use case. We counter it by adopting the input and output paradigm similar to Bitcoin or the eUTXO model.
 
-In this model, you have the assets as the input, the transaction occurs, and then you get the outputs. You can’t recycle the output within the same transaction. With a flash loan, you need to borrow money, receive the outputs, and then use these outputs to repay the loan within the same transaction. This scenario isn’t possible with the input and output model.
+In this model, you have the assets as the input, the transaction occurs, and then you get the outputs. You can’t recycle the output within the same transaction. A flash loan requires borrowing, receiving outputs, and immediately reusing them to repay within the same transaction. This classic scenario is prevented by the input/output model, making flash-loan style attacks impractical.
 
 I feel the concept of composability is abused on Ethereum. Regular users don’t usually need complicated composability. At most, they might combine just a few smart contracts. Typically, the involved composability use case is for hacking smart contracts or crazy arbitrage, similar to flash loans. By following the input-output model, there’s no change for regular users, but for hackers, it makes a world of difference. You deposit your assets, execute the transaction, and receive the output. This limits the potential to steal a significant amount of money within a single transaction.
 
-For individuals intending to extract value, they would need to conduct multiple transactions, which would prove more challenging for arbitrageurs due to the absence of flash loans and the inability to bundle multiple transactions into one consecutive one.
+For individuals intending to extract value, the process typically spans multiple transactions. This makes arbitrage more challenging, since Alephium’s design resists flash loans.
 
 **VM: Could you explain the overflow-underflow features integrated into the VM?**
 
@@ -169,7 +173,7 @@ I believe now is an excellent time to familiarize yourself with coding in Alephi
 
 **VM: Thanks a lot for that discussion, it’s been fascinating, enlightening and a lot to take in!**
 
----
+- - -
 
 Have you built something or have a nice idea and want to request a grant or reward? You can access the Alephium [Community Grants &amp; Reward Program](https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md) page for more info!
 
