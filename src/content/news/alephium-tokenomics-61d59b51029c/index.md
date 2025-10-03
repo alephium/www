@@ -56,57 +56,25 @@ At Genesis, 140 millions ALPH were minted for Ecosystem, Sales, Team, and Treasu
 
 The genesis ALPH are allocated as follows:
 
-* **80M**
-
-   for past and upcoming 
-
-  **sales**
-
-  , subject to on-chain lock upon sales with varying vesting periods.
-* **30M**
-
-   for 
-
-  **ecosystem development**
-
-  , vesting over 4 years in quarterly unlocks.
-* **30M**
-
-   
-
-  for
-
-   
-
-  **treasury and team**
-
-  , vesting over 3 years in quarterly unlocks.
-
+* **80M** for past and upcoming  **sales** , subject to on-chain lock upon sales with varying vesting periods.
+* **30M** for **ecosystem development**, vesting over 4 years in quarterly unlocks.
+* **30M** for **treasury and team**, vesting over 3 years in quarterly unlocks.
 
 *Please note that according to CoinmarketCap’s official methodology, Ecosystem and Team wallets are to be excluded from the circulating supply (whether the tokens are locked or not). Therefore, these ALPH will only be counted as circulating after they leave the original wallet and not after they unlock.*
-
-
-
 
 ### Sales allocation vesting
 
 Three sales events were held for ALPH: seed sale,[ pre-sale](https://medium.com/@alephium/alephium-closes-3-6m-pre-sale-from-80-contributors-to-expand-sharded-utxo-blockchain-platform-84f80492e28d), and[ private sale](https://medium.com/@alephium/alephium-partners-with-cetacean-capital-83cf2fbea8a1). A total of 62,951,077 ALPH were sold and locked for periods varying between 2 to 4 years. The unlock schedule is detailed below.
 
-
-
-
 ![](image_1d52ed10a4.png)
 
 ![](image_dec009d651.jpg)
-
 
 The remaining 17,048,943 ALPH will be used to secure funds to ensure the long-term development and sustainability of the project. This will be done over the medium to long term, in a variety of ways, from direct sales, liquidity provisioning and OTC deals, optimizing for minimal impact on the markets while improving the liquidity, distribution & circulation of ALPH.
 
 ### Ecosystem and Treasury allocation vesting
 
 The ALPH allocated to the **Ecosystem** and for the **Treasury** follows this unlock schedule:
-
-
 
 ## FAQ
 
@@ -135,13 +103,6 @@ This cap was removed to eliminate the subsidy cliff that would have forced miner
 Importantly, the original emission schedule is preserved for the first 81 years, so this change doesn’t impact short or medium term supply. Removing the cap also makes the tokenomics more intuitive for newcomers, following a model similar to Monero and Ethereum, where emissions continue gradually to support network security.
 
 If you have extra questions, you are welcome to reach out on our [Discord](http://alephium.org/discord) or in the [Alephium Telegram channel](https://t.me/alephiumgroup). Don’t forget to follow [@alephium on Twitter](https://twitter.com/alephium) to stay up-to-date.
-
-
-
-
-
-
-
 
 - - -
 
