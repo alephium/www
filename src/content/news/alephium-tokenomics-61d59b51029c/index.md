@@ -76,6 +76,8 @@ The remaining 17,048,943 ALPH will be used to secure funds to ensure the long-te
 
 The ALPH allocated to the **Ecosystem** and for the **Treasury** follows this unlock schedule:
 
+![](image_197ae8762b.png)
+
 ## FAQ
 
 **Where can I see the top Alephium wallets?**
