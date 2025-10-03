@@ -62,7 +62,7 @@ If you want to know the precise numbers, [here is the GitHub CSV file.](https://
 
 ### Orphan and Uncle Blocks
 
-Alephium uses the ghost algorithm similar to ETH. A main chain block may reference uncle blocks, and both the miner of the main chain block and the miner of the uncle block will receive rewards.
+Alephium uses the ghost algorithm similar to ETH. A main chain block may reference uncle blocks, and both the miner of the main chain block and the miner of the [uncle block](https://x.com/alephium/status/1844762425876508908) will receive rewards.
 
 You may need to wait for a while to confirm whether an orphan block is an uncle block. If the height of the orphan block is `h`, it can be referenced by a main chain block with a height in the range of `[h+1, h+7]`. Therefore, you need to wait about `7 * 16s`. However, due to variability in block time, you may need to wait longer to ensure that the uncle block miners receive their rewards.
 
@@ -118,7 +118,7 @@ Over four years, the time-based mining reward drops gradually from 15 ALPH (shar
 
 If you want to know the precise numbers, [here is the GitHub CSV file.](https://github.com/alephium/alephium/blob/master/protocol/src/main/resources/hashrate-inflation.csv) (The first column is the log_2 of the network hashrate, a value of 8 means the network hashrate is 2\*\*8 hash/second)
 
-* *When the hashrate remains within the \[0 hash/sec, 1 Ph/sec] range. *The hashrate-based mining reward increases gradually from 0 ALPH to 15 ALPH (shared by 16 chains) per block period with a minimum of 7.5 ALPH guaranteed. The idea is to incentivize more miners to join the project without only benefitting the early adopters.
+* *When the hashrate remains within the \[0 hash/sec, 1 Ph/sec] range.* The hashrate-based mining reward increases gradually from 0 ALPH to 15 ALPH (shared by 16 chains) per block period with a minimum of 7.5 ALPH guaranteed. The idea is to incentivize more miners to join the project without only benefitting the early adopters.
 * *When the hashrate is within the \[1 Ph/sec, 1 Eh/sec] range*The hashrate-based gradually decreases from 15 ALPH to 5 ALPH per block period.
 * *When the network hashrate is within the \[1 Eh/sec, 128Eh/sec] range*The hashrate-based gradually decreases from 5 ALPH to 0 ALPH.
 
