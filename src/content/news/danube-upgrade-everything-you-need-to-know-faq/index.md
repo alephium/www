@@ -9,6 +9,7 @@ date: 2025-07-16T12:00:00.000Z
 spotlight: false
 featuredImage: danube3.webp
 ---
+> Updated on October 1, 2025, to better reflect the state of the technology.
 
 After a year of building, we are proud to announce that the Danube network upgrade was activated on July 15, 2025, at 12:00 GMT+02:00.
 
@@ -22,10 +23,10 @@ Whether you’re a developer, a miner, or just a curious community member, this 
 
 Danube is Alephium’s third major network upgrade, focused on:
 
-- Faster block times
-- Simplified user interactions
-- Developer-centric improvements
-- Long-term scalability and performance
+* Faster block times
+* Simplified user interactions
+* Developer-centric improvements
+* Long-term scalability and performance
 
 **When did the Danube go live on the mainnet?**
 
@@ -39,9 +40,8 @@ Following Alephium’s naming convention, all network upgrades are named after b
 
 All node operators should have updated to v4.0.0 **before July 15th** to ensure uninterrupted participation in the network. If you haven’t already done so, please do it as soon as possible.
 
-- **Node version required:** [Download the latest node](https://github.com/alephium/alephium/releases/latest)
-
-- **Upgrade instructions:** [Danube Upgrade Docs](https://docs.alephium.org/integration/danube-upgrade/)
+* **Node version required:** [Download the latest node](https://github.com/alephium/alephium/releases/latest)
+* **Upgrade instructions:** [Danube Upgrade Docs](https://docs.alephium.org/integration/danube-upgrade/)
 
 ## What Comes With Danube
 
@@ -67,10 +67,10 @@ Ralph now supports unit tests natively, making it easier to test contract logic 
 
 ### 6. Improved DevX Features
 
-- Auto-funding of dust amounts and deposits
-- Better caller identification
-- New address types, including fixed-length groupless multisigs
-- Immediate reuse of newly issued assets
+* Auto-funding of dust amounts and deposits
+* Better caller identification
+* New address types, including fixed-length groupless multisigs
+* Immediate reuse of newly issued assets
 
 ### 7. New Sync Protocol (v2)
 
@@ -94,9 +94,9 @@ Danube removes the fixed supply cap and introduces a tail emission, aligning Ale
 
 **Why?**
 
-- Resolves perception issues caused by the large gap between circulating and max supply
-- Improves miner incentives post-84 years
-- Maintains the existing emission schedule for the first 80 years (no short- or medium-term impact)
+* Resolves perception issues caused by the large gap between circulating and max supply
+* Improves miner incentives post-84 years
+* Maintains the existing emission schedule for the first 80 years (no short- or medium-term impact)
 
 ## DevX Deep Dive
 
@@ -104,20 +104,20 @@ Danube’s improvements are largely driven by developer feedback. Here are some 
 
 ### Chain Contract Calls (TxScript level)
 
-- Allows multi-step logic (e.g., swap A→B then B→C) in one transaction
-- Assets can be reused within TX scripts, but not in contract bodies, preserving UTXO security guarantees
-- Enables safe composability without opening doors to flash loans or reentrancy exploits
+* Allows multi-step logic (e.g., swap A→B then B→C) in one transaction
+* Assets can be reused within TX scripts, but not in contract bodies, preserving UTXO security guarantees
+* Enables safe composability while remaining resistant to flash loans and reentrancy exploits
 
 ### Chain Transactions (API level)
 
-- Enables multi-transaction flows, e.g., move funds → interact with dApp
-- Used under the hood for groupless address operations
-- Wallets display each step clearly; failed TXs do not roll back prior steps
+* Enables multi-transaction flows, e.g., move funds → interact with dApp
+* Used under the hood for groupless address operations
+* Wallets display each step clearly; failed TXs do not roll back prior steps
 
 ### Developer Ergonomics
 
-- Cleaner syntax for dust and deposit management
-- New I256 bitwise operations
+* Cleaner syntax for dust and deposit management
+* New I256 bitwise operations
 
 ## Ecosystem Impact
 
@@ -125,18 +125,18 @@ Danube marks a turning point in what can be built on the Proof of Work chain. Wi
 
 Developers can now build:
 
-- Multi-step token swaps and liquidity flows using chained contract calls
-- Wallet experiences without seed phrases, thanks to passkey support
-- Seamless DeFi interfaces, thanks to the invisible sharding provided by groupless addresses
-- Richer smart contracts using simplified logic, cleaner scripting, and immediate usage of the newly created assets
+* Multi-step token swaps and liquidity flows using chained contract calls
+* Wallet experiences without seed phrases, thanks to passkey support
+* Seamless DeFi interfaces, thanks to the invisible sharding provided by groupless addresses
+* Richer smart contracts using simplified logic, cleaner scripting, and immediate usage of the newly created assets
 
 While these improvements do not imply that these services exist today, the architecture now fully supports them.
 
 This upgrade also brings significant improvements for infrastructure providers:
 
-- Faster syncs and reduced resource usage via Sync Protocol v2
-- Abstracted sharding makes multi-group indexing and UX way simpler
-- Tail emission ensures long-term viability for miners and validators
+* Faster syncs and reduced resource usage via Sync Protocol v2
+* Abstracted sharding makes multi-group indexing and UX way simpler
+* Tail emission ensures long-term viability for miners and validators
 
 As a result, Danube positions Alephium as a credible Layer 1 alternative, not just to Proof of Stake chains, but also to L2s and rollups. This is also reflected in the fact that over 130 projects are contacted to upgrade their nodes for Danube, up from 50 at the time of the Rhone upgrade, showcasing strong ecosystem growth.
 
@@ -148,7 +148,7 @@ Chained contract calls in TX scripts enable complex flows like multi-step swaps 
 
 ### 2. Can multiple contracts be called in one chained transaction? What about flash loans?
 
-Yes, multiple contracts can be called. However, only outputs from the transaction caller can be reused, and only at the TX script level. Contract-level calls still enforce UTXO restrictions, making flash loans and reentrancy attacks impossible.
+Yes, multiple contracts can be called. However, only outputs from the transaction caller can be reused, and only at the TX script level. Contract-level calls enforce UTXO restrictions, keeping the system resistant to flash loans and free from reentrancy attacks.
 
 ### 3. Can I swap token A to B and back to A in a chained TX?
 
@@ -166,17 +166,17 @@ Not by default. But you can simulate this with multi-sig wallets that use a pass
 
 ### 6. Which dev tasks are easier after Danube?
 
-- Funding contracts (auto-dust)
-- Migrating liquidity (chained calls)
-- Writing cleaner Ralph code
-- Testing with built-in unit tests
-- Integrating a passkey or social login
+* Funding contracts (auto-dust)
+* Migrating liquidity (chained calls)
+* Writing cleaner Ralph code
+* Testing with built-in unit tests
+* Integrating a passkey or social login
 
 ### 7. Which features didn’t make it into Danube?
 
-- Contract-based token standard
-- Fast state sync
-- Additional RPC endpoints
+* Contract-based token standard
+* Fast state sync
+* Additional RPC endpoints
 
 These are planned for the next upgrade.
 
@@ -216,26 +216,26 @@ Absolutely. It enables atomic multi-step flows that simplify both UX and contrac
 
 The core model remains, but usability is improved:
 
-- Automatic dust handling
-- Groupless multisigs
-- Cleaner contract patterns
-- Better output tracking
+* Automatic dust handling
+* Groupless multisigs
+* Cleaner contract patterns
+* Better output tracking
 
 ### 16. How does Sync Protocol V2 improve things for node operators?
 
-- Syncs are 3x faster
-- Less CPU and I/O load
-- Fewer peer disconnects
-- Foundation for fast sync modes coming soon
+* Syncs are 3x faster
+* Less CPU and I/O load
+* Fewer peer disconnects
+* Foundation for fast sync modes coming soon
 
 ## What’s Next After Danube?
 
 Some features were postponed to the next network upgrade to keep Danube from growing too large:
 
-- **Contract token standard**
-- **Further block time reduction**
-- **Fast state sync**
-- **More dev-focused SDKs & demos**
+* **Contract token standard**
+* **Further block time reduction**
+* **Fast state sync**
+* **More dev-focused SDKs & demos**
 
 The dev team will also shift more focus toward ecosystem support and tooling, given the maturity of Alephium’s protocol base. The Danube upgrade lays the foundation for deeper interoperability and strong dApps in future cycles.
 
@@ -247,6 +247,6 @@ Whether you’re building dApps, running nodes, or just exploring the space, thi
 
 ## Have questions?
 
-_Join the discussion on Discord or follow[ @alephium](https://twitter.com/alephium) for real-time updates._
+*Join the discussion on Discord or follow[ @alephium](https://twitter.com/alephium) for real-time updates.*
 
-_Let’s build the Web3 you were promised._
+*Let’s build the Web3 you were promised.*
