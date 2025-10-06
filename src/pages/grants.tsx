@@ -37,7 +37,7 @@ const grantsQuery = graphql`
 `
 
 const CustomPage = (props: PageProps) => {
-  const { blockflowDAOLogo, primevaultLogo, contribiumLogo } = useStaticQuery<Queries.GrantsPageQuery>(grantsQuery)
+  const { blockflowDAOLogo, primevaultLogo } = useStaticQuery<Queries.GrantsPageQuery>(grantsQuery)
 
   return (
     <Page
@@ -206,7 +206,7 @@ const CustomPage = (props: PageProps) => {
                     </p>
                   </CardText>
                   <CardFooterButtonContainer>
-                    <Button squared url="#">
+                    <Button squared url="https://forms.gle/sPsHD4VwThXA5TRN9">
                       Apply here
                     </Button>
                   </CardFooterButtonContainer>
@@ -221,7 +221,7 @@ const CustomPage = (props: PageProps) => {
                     </p>
                   </CardText>
                   <CardFooterButtonContainer>
-                    <Button squared url="#">
+                    <Button squared url="https://forms.gle/vR92JzSavweUDupt6">
                       Apply here
                     </Button>
                   </CardFooterButtonContainer>
