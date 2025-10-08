@@ -34,7 +34,7 @@ As Alephium uses [Proof of (Less) Work](/news/post/tech-talk-1-the-ultimate-guid
 
 There is no halving on Alephium, the block reward is adjusted dynamically depending on the network hashrate and timestamp.
 
-You will find the full details & calculations of the mining rewards and emission schedule in [this article.](https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33)
+You will find the full details & calculations of the mining rewards and emission schedule in [this article.](/news/post/alephium-block-rewards-72d9fb9fde33/)
 
 [](https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33)
 The core emission schedule works like this: the block reward is bound by two curves based on hashrate and timestamp. At a given time and for a given hashrate, the reward per block equals the minimum between the time-based and hashrate-based rewards.
@@ -86,7 +86,7 @@ You can check the[ Alephium Rich List](https://richlist.alephium.world/) to se
 
 **Is Alephium deflationary?**
 
-While Alephium has several deflationary forces, the [emissions of ALPH](https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33) still exceed them as of today.
+While Alephium has several deflationary forces, the [emissions of ALPH](/news/post/alephium-block-rewards-72d9fb9fde33/) still exceed them as of today.
 
 **What is the difference between Circulating Supply, Total Supply and Maximum Supply?**
 
