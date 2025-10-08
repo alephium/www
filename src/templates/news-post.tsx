@@ -9,6 +9,7 @@ import TextElement from '../components/customPageComponents/TextElement'
 import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import TableOfContents from '../components/pages/news/TableOfContents'
 import SectionDivider from '../components/SectionDivider'
+import { deviceBreakPoints } from '../styles/global-style'
 
 const NewsPostTemplate = (props: PageProps<Queries.NewsPostBySlugQuery>) => {
   const post = props.data.markdownRemark
@@ -213,6 +214,10 @@ const ArticleStyled = styled.article`
     font-family: 'Source Serif';
     font-weight: 350;
     font-size: 1.25rem;
+
+    @media ${deviceBreakPoints.mobile} {
+      font-size: 1.5rem;
+    }
 
     &:first-child {
       margin-top: 0;
