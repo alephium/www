@@ -337,7 +337,7 @@ const HowToApply = () => {
               <h4 style={{ color: theme.palette1 }}>Developer Experience & Education</h4>
             </CardText>
           </Card>
-          <Card border url="https://tally.so/r/mDbYWEy">
+          <Card border url="https://tally.so/r/mDbYWE">
             <CardText>
               <h4 style={{ color: theme.palette2 }}>Community & Ecosystem Growth</h4>
             </CardText>
