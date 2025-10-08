@@ -21,7 +21,8 @@ const NewsPostTemplate = (props: PageProps<Queries.NewsPostBySlugQuery>) => {
       seo={{
         title: post?.frontmatter?.title || '',
         description: post?.frontmatter?.seoDescription || post?.frontmatter?.description || post?.excerpt || '',
-        ogDescription: post?.frontmatter?.description || post?.frontmatter?.seoDescription || post?.excerpt || ''
+        ogDescription: post?.frontmatter?.description || post?.frontmatter?.seoDescription || post?.excerpt || '',
+        ogImage: post?.frontmatter?.featuredImage?.childImageSharp?.ogImage?.src || undefined
       }}
       content={
         <ArticleWrapper>
@@ -113,8 +114,12 @@ export const pageQuery = graphql`
         seoDescription
         spotlight
         featuredImage {
+          publicURL
           childImageSharp {
             gatsbyImageData(quality: 100, width: 700)
+            ogImage: resize(width: 1200, quality: 80) {
+              src
+            }
           }
         }
       }
