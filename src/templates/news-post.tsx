@@ -8,12 +8,15 @@ import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import TableOfContents from '../components/pages/news/TableOfContents'
+import RelatedPost from '../components/RelatedNewsPost'
 import SectionDivider from '../components/SectionDivider'
 import { deviceBreakPoints } from '../styles/global-style'
 
 const NewsPostTemplate = (props: PageProps<Queries.NewsPostBySlugQuery>) => {
   const post = props.data.markdownRemark
   const { previous, next } = props.data
+
+  const relatedPosts = post?.frontmatter?.relatedPosts
 
   return (
     <Page
@@ -65,6 +68,12 @@ const NewsPostTemplate = (props: PageProps<Queries.NewsPostBySlugQuery>) => {
             </ArticleStyled>
 
             <SectionDivider />
+
+            {relatedPosts && relatedPosts.length > 0 && (
+              <RelatedPosts>
+                {relatedPosts?.map((postSlug) => postSlug && <RelatedPost slug={postSlug} key={postSlug} />)}
+              </RelatedPosts>
+            )}
 
             <NewsPostNav>
               <NavigationList>
@@ -122,6 +131,7 @@ export const pageQuery = graphql`
             }
           }
         }
+        relatedPosts
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
@@ -290,4 +300,8 @@ const NavigationItem = styled.li`
   &:last-child {
     text-align: right;
   }
+`
+
+const RelatedPosts = styled.div`
+  margin-top: var(--spacing-6);
 `

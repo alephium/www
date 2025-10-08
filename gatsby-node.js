@@ -148,6 +148,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       description: String
       date: Date @dateformat
       published: Boolean
+      relatedPosts: [String]
     }
 
     type Fields {
