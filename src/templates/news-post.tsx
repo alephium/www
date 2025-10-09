@@ -3,6 +3,7 @@ import { graphql, Link, PageProps } from 'gatsby'
 import styled from 'styled-components'
 
 import Badge from '../components/Badge'
+import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
@@ -69,12 +70,6 @@ const NewsPostTemplate = (props: PageProps<Queries.NewsPostBySlugQuery>) => {
 
             <SectionDivider />
 
-            {relatedPosts && relatedPosts.length > 0 && (
-              <RelatedPosts>
-                {relatedPosts?.map((postSlug) => postSlug && <RelatedPost slug={postSlug} key={postSlug} />)}
-              </RelatedPosts>
-            )}
-
             <NewsPostNav>
               <NavigationList>
                 <NavigationItem>
@@ -99,6 +94,17 @@ const NewsPostTemplate = (props: PageProps<Queries.NewsPostBySlugQuery>) => {
                 </NavigationItem>
               </NavigationList>
             </NewsPostNav>
+
+            <SectionDivider />
+
+            {relatedPosts && relatedPosts.length > 0 && (
+              <RelatedPosts>
+                <h2>Suggested reading</h2>
+                <Grid columns={2} gap="small">
+                  {relatedPosts?.map((postSlug) => postSlug && <RelatedPost slug={postSlug} key={postSlug} />)}
+                </Grid>
+              </RelatedPosts>
+            )}
           </SubpageSection>
           <TableOfContents htmlContent={post?.html || ''} />
         </ArticleWrapper>
@@ -303,5 +309,9 @@ const NavigationItem = styled.li`
 `
 
 const RelatedPosts = styled.div`
-  margin-top: var(--spacing-6);
+  h2 {
+    font-size: var(--fontSize-28);
+    margin-top: var(--spacing-8);
+    margin-bottom: var(--spacing-3);
+  }
 `
