@@ -3,16 +3,21 @@ import { graphql, Link, PageProps } from 'gatsby'
 import styled from 'styled-components'
 
 import Badge from '../components/Badge'
+import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import GatsbyImageWrapper from '../components/GatsbyImageWrapper'
 import TableOfContents from '../components/pages/news/TableOfContents'
+import RelatedPost from '../components/RelatedNewsPost'
 import SectionDivider from '../components/SectionDivider'
+import { deviceBreakPoints } from '../styles/global-style'
 
 const NewsPostTemplate = (props: PageProps<Queries.NewsPostBySlugQuery>) => {
   const post = props.data.markdownRemark
   const { previous, next } = props.data
+
+  const relatedPosts = post?.frontmatter?.relatedPosts
 
   return (
     <Page
@@ -20,7 +25,8 @@ const NewsPostTemplate = (props: PageProps<Queries.NewsPostBySlugQuery>) => {
       seo={{
         title: post?.frontmatter?.title || '',
         description: post?.frontmatter?.seoDescription || post?.frontmatter?.description || post?.excerpt || '',
-        ogDescription: post?.frontmatter?.description || post?.frontmatter?.seoDescription || post?.excerpt || ''
+        ogDescription: post?.frontmatter?.description || post?.frontmatter?.seoDescription || post?.excerpt || '',
+        ogImage: post?.frontmatter?.featuredImage?.childImageSharp?.ogImage?.src || undefined
       }}
       content={
         <ArticleWrapper>
@@ -88,6 +94,17 @@ const NewsPostTemplate = (props: PageProps<Queries.NewsPostBySlugQuery>) => {
                 </NavigationItem>
               </NavigationList>
             </NewsPostNav>
+
+            <SectionDivider />
+
+            {relatedPosts && relatedPosts.length > 0 && (
+              <RelatedPosts>
+                <h2>Suggested reading</h2>
+                <Grid columns={2} gap="small">
+                  {relatedPosts?.map((postSlug) => postSlug && <RelatedPost slug={postSlug} key={postSlug} />)}
+                </Grid>
+              </RelatedPosts>
+            )}
           </SubpageSection>
           <TableOfContents htmlContent={post?.html || ''} />
         </ArticleWrapper>
@@ -112,10 +129,15 @@ export const pageQuery = graphql`
         seoDescription
         spotlight
         featuredImage {
+          publicURL
           childImageSharp {
             gatsbyImageData(quality: 100, width: 700)
+            ogImage: resize(width: 1200, quality: 80) {
+              src
+            }
           }
         }
+        relatedPosts
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
@@ -214,6 +236,10 @@ const ArticleStyled = styled.article`
     font-weight: 350;
     font-size: 1.25rem;
 
+    @media ${deviceBreakPoints.mobile} {
+      font-size: 1.5rem;
+    }
+
     &:first-child {
       margin-top: 0;
     }
@@ -279,5 +305,13 @@ const NavigationItem = styled.li`
 
   &:last-child {
     text-align: right;
+  }
+`
+
+const RelatedPosts = styled.div`
+  h2 {
+    font-size: var(--fontSize-28);
+    margin-top: var(--spacing-8);
+    margin-bottom: var(--spacing-3);
   }
 `

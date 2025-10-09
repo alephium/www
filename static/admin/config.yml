@@ -26,4 +26,15 @@ collections:
       - { label: 'Spotlight', name: 'spotlight', widget: 'boolean', required: false, hint: "Enabling spotlight will move the post to the top of the News page." }
       - { label: 'Archived', name: 'archived', widget: 'boolean', required: false, hint: "Unpublishes post without deleting it." }
       - { label: 'Featured Image', name: 'featuredImage', widget: 'image' }
+      - label: Related posts
+        name: relatedPosts
+        widget: relation
+        collection: posts
+        multiple: true
+        search_fields: [title]
+        display_fields: [title]
+        value_field: '{{slug}}'
+        hint: "Related posts listed at the bottom of the article. You can search by post title."
+        required: false
       - { label: 'Body', name: 'body', widget: 'markdown' }
+

@@ -169,6 +169,14 @@ const TocContainer = styled.div<{ isScrolledDown: boolean }>`
   padding: 24px;
   z-index: 100;
 
+  /* Hide scrollbar */
+  -ms-overflow-style: none; // Edge
+  scrollbar-width: none; // Firefox
+
+  &::-webkit-scrollbar {
+    display: none; // Chrome, Safari and Opera
+  }
+
   mask-image: ${({ isScrolledDown }) =>
     isScrolledDown
       ? `linear-gradient(to bottom, transparent 0%, black 20px, black calc(100% - 20px), transparent 100%)`

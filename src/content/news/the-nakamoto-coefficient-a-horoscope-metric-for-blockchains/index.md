@@ -10,6 +10,7 @@ date: 2025-10-04T15:00:00.000Z
 spotlight: true
 archived: false
 featuredImage: article-nc.png
+relatedPosts: []
 ---
 TL;DR NC = Crypto-Astrology.
 

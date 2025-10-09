@@ -174,7 +174,7 @@ interface NewsCardProps {
     | Queries.NewsPostsQuery['remainingPosts']['nodes'][number]
 }
 
-const NewsCard = ({ post }: NewsCardProps) => {
+export const NewsCard = ({ post }: NewsCardProps) => {
   if (!post.frontmatter?.featuredImage) {
     return null
   }

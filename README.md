@@ -12,6 +12,12 @@ The site is now running at http://localhost:8000
 
 ### CMS
 
+Uncomment the first line in `./static/admin/config.yml`
+
+```yml
+local_backend: true
+```
+
 In a new terminal, run:
 
 ```shell
