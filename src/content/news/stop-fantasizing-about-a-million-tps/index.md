@@ -70,7 +70,7 @@ It’s smarter to **match supply to real demand**, keep headroom, and scale as a
 
 High TPS numbers often come with trade-offs.
 
-* **Centralization:** Many “fast” chains rely on fewer, more powerful nodes. EOS famously had just 21 block producers. Solana’s hardware requirements mean ~900-1000 validators vs. more than one million on Ethereum. Fewer nodes = easier to censor or attack.
+* **Centralization:** Many “fast” chains rely on fewer, more powerful nodes. EOS famously still has just 21 block producers. Solana’s hardware requirements mean ~900-1000 validators vs. more than one million on Ethereum. Fewer nodes = easier to censor or attack.
 * **Security & Stability:** Bigger blocks and shorter confirmation times make networks harder to validate. Solana’s outages show what happens when high throughput meets real-world load.
 * **Meaningless Metrics:** Inflated lab numbers create hype but mislead users and devs. I know this firsthand, after years of running a [YouTube channel](https://www.youtube.com/c/Carlitacrypto), I’ve repeated flashy TPS claims only to learn later how disconnected they were from reality. It can even **discourage builders** who feel pressured to chase unrealistic benchmarks instead of solving user problems.
 
