@@ -1,7 +1,6 @@
 import { graphql, PageProps, useStaticQuery } from 'gatsby'
 import styled, { useTheme } from 'styled-components'
 
-import Accordion from '../components/Accordion'
 import Button from '../components/Button'
 import Card from '../components/Card'
 import CardText from '../components/CardText'
@@ -15,7 +14,6 @@ import SubheaderContent from '../components/customPageComponents/SubheaderConten
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import SectionDivider from '../components/SectionDivider'
-import SimpleLink from '../components/SimpleLink'
 import { deviceBreakPoints } from '../styles/global-style'
 
 const grantsQuery = graphql`
@@ -49,7 +47,7 @@ const CustomPage = (props: PageProps) => {
       }}
       content={
         <>
-          <SubpageSection edgeGradient fullWidth border="bottom">
+          <SubpageSection edgeGradient border="bottom">
             <TextElement isCentered>
               <h1>Grants and Funding</h1>
               <p>
@@ -159,38 +157,6 @@ const CustomPage = (props: PageProps) => {
           <SubpageSection id="ecosystem-funding" noTopPadding>
             <TextElement>
               <h2>Ecosystem Grant Programs</h2>
-              <p>
-                Beyond the Alephium Foundation, various funding options exist, depending on your project&apos;s stage,
-                location, or focus.
-              </p>
-            </TextElement>
-            <SubheaderContent>
-              <TextElement>
-                <h3>Hackathons</h3>
-                <p>
-                  The Alephium Foundation has partnered with OnlyDust to allow Alephium-based dApps to join its ODHacks,
-                  monthly open-source hackathons where developers build, learn, and contribute to top blockchain
-                  ecosystems with direct input from project maintainers.
-                </p>
-                <p>
-                  Participation is fully funded. dApps can showcase open-source repositories with open issues, receive
-                  commits from top builders, and discover emerging talent.
-                </p>
-                <p>
-                  For more information about OnlyDust and ODHacks, visit{' '}
-                  <SimpleLink highlight url="https://onlydust.com">
-                    onlydust.com
-                  </SimpleLink>
-                </p>
-                <SectionDivider />
-                <Button url="">Apply to ODHack</Button>
-              </TextElement>
-            </SubheaderContent>
-          </SubpageSection>
-
-          <SubpageSection noTopPadding>
-            <TextElement>
-              <h3>Grant Programs</h3>
               <p>Several grant programs are run within the Alephium ecosystem, some focusing on specific domains.</p>
             </TextElement>
 
@@ -236,7 +202,8 @@ const CustomPage = (props: PageProps) => {
               </CardsRowSegment>
             </SubheaderContent>
           </SubpageSection>
-          <SubpageSection>
+
+          {/*  <SubpageSection>
             <TextElement>
               <h2>FAQ</h2>
             </TextElement>
@@ -302,6 +269,7 @@ const CustomPage = (props: PageProps) => {
               </Accordion>
             </SubheaderContent>
           </SubpageSection>
+          */}
         </>
       }
     />
