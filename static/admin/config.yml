@@ -101,11 +101,21 @@ collections:
                 name: 'type'
                 widget: 'select'
                 options:
-                  - core-platform
-                  - ecosystem
-                  - marketing
-                  - liquidity
-                default: core-platform
+                  - { label: 'Node (Core platform)', value: node }
+                  - { label: 'Wallets (Core platform)', value: wallets }
+                  - { label: 'SDK (Core platform)', value: sdk }
+                  - { label: 'Tooling (Core platform)', value: tooling }
+                  - { label: 'Integration (Ecosystem)', value: integration }
+                  - { label: 'Discovery (Ecosystem)', value: discovery }
+                  - { label: 'Guidance (Ecosystem)', value: guidance }
+                  - { label: 'Partnership (Marketing)', value: partnership }
+                  - { label: 'Events (Marketing)', value: events }
+                  - { label: 'Growth (Marketing)', value: growth }
+                  - { label: 'Content (Marketing)', value: content }
+                  - { label: 'DEX (Liquidity)', value: dex }
+                  - { label: 'Bridging (Liquidity)', value: bridging }
+                  - { label: 'Incentives (Liquidity)', value: incentives }
+                default: node
               - { label: 'Description', name: 'description', widget: 'text', required: false }
               - label: 'Button'
                 name: 'button'

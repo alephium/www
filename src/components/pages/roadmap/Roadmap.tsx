@@ -1,4 +1,3 @@
-import { SunHorizonIcon, TreeIcon, WavesIcon } from '@phosphor-icons/react'
 import { graphql, useStaticQuery } from 'gatsby'
 import { useMemo } from 'react'
 import styled, { css } from 'styled-components'
@@ -6,23 +5,8 @@ import styled, { css } from 'styled-components'
 import { deviceBreakPoints } from '../../../styles/global-style'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextElement from '../../customPageComponents/TextElement'
+import { ROADMAP_STATUSES, RoadmapItem, RoadmapStatus } from './roadmapMeta'
 import RoadmapItemCard from './RoadmaptItemCard'
-
-export type RoadmapStatus = 'done' | 'ongoing' | 'planned'
-export type RoadmapType = 'core-platform' | 'ecosystem' | 'marketing' | 'liquidity'
-
-export interface RoadmapItem {
-  title: string
-  status: RoadmapStatus
-  type: RoadmapType
-  description: string
-  button?: RoadmapButton
-}
-
-interface RoadmapButton {
-  label: string
-  url: string
-}
 
 interface RoadmapCategory {
   category?: string
@@ -36,19 +20,9 @@ interface RoadmapNode {
 }
 
 interface RoadmapData {
-  title: string
-  categories: RoadmapCategory[]
+  title?: string
+  categories?: RoadmapCategory[]
 }
-
-const ITEM_STATUS: Array<{
-  key: RoadmapStatus
-  label: string
-  Icon: typeof TreeIcon
-}> = [
-  { key: 'done', label: 'Done', Icon: TreeIcon },
-  { key: 'ongoing', label: 'Ongoing', Icon: WavesIcon },
-  { key: 'planned', label: 'Planned', Icon: SunHorizonIcon }
-]
 
 const Roadmap = () => {
   const data = useStaticQuery(graphql`
@@ -80,11 +54,16 @@ const Roadmap = () => {
       (data.allRoadmapYaml.nodes as RoadmapNode[])
         .map((node) => {
           const title = node.title?.trim() || 'Untitled roadmap'
+          const categories = (node.categories || [])
+            .map((category) => ({
+              ...category,
+              category: category.category?.trim() || 'Uncategorized'
+            }))
+            .sort((a, b) => (a.category || '').localeCompare(b.category || '', undefined, { sensitivity: 'base' }))
+
           return {
             title,
-            categories: (node.categories || []).sort((a, b) =>
-              (a.category || '').localeCompare(b.category || '', undefined, { sensitivity: 'base' })
-            )
+            categories
           }
         })
         .sort((a, b) => b.title.localeCompare(a.title, undefined, { numeric: true, sensitivity: 'base' })),
@@ -106,18 +85,16 @@ const Roadmap = () => {
           </p>
         </TextElement>
       </SubpageSection>
-      <SubpageSection noTopPadding fullWidth>
+      <SubpageSection noTopPadding>
         <TimelineSection>
           {roadmaps.map(({ title, categories }) => (
             <RoadmapContainer key={title}>
-              <SideContainer>
-                <StickyTitleContainer>
-                  <StickyTitle>{title}</StickyTitle>
-                </StickyTitleContainer>
-              </SideContainer>
+              <StickyTitleContainer>
+                <StickyTitle>{title}</StickyTitle>
+              </StickyTitleContainer>
               <RoadmapContent key={title}>
                 <CategoriesColumn>
-                  {categories.map((category, idx) => {
+                  {categories?.map((category, idx) => {
                     const categoryName = category.category?.trim() || 'Uncategorized'
                     return (
                       <CategorySection key={`${title}-${categoryName}-${idx}`}>
@@ -128,7 +105,7 @@ const Roadmap = () => {
                           </HeadingTexts>
                         </CategoryHeading>
                         <StatusHeadings>
-                          {ITEM_STATUS.map(({ key, label, Icon }) => (
+                          {ROADMAP_STATUSES.map(({ key, label, Icon }) => (
                             <StatusHeading key={key} status={key}>
                               <span>{label}</span>
                               <Icon size={20} weight="duotone" />
@@ -137,7 +114,7 @@ const Roadmap = () => {
                         </StatusHeadings>
                         <Divider />
                         <StatusColumns>
-                          {ITEM_STATUS.map(({ key }) => {
+                          {ROADMAP_STATUSES.map(({ key }) => {
                             const items = (category.items || []).filter(
                               (item): item is RoadmapItem => Boolean(item) && item.status === key
                             )
@@ -155,7 +132,6 @@ const Roadmap = () => {
                   })}
                 </CategoriesColumn>
               </RoadmapContent>
-              <SideContainer />
             </RoadmapContainer>
           ))}
         </TimelineSection>
@@ -174,27 +150,14 @@ const TimelineSection = styled.div`
   gap: var(--spacing-6);
 `
 
-const SideContainer = styled.div`
-  width: calc((100% - var(--page-width)) / 2);
-  display: flex;
-  justify-content: flex-end;
-  padding-right: var(--spacing-6);
-
-  @media ${deviceBreakPoints.mobile} {
-    position: static;
-    transform: none;
-    margin-bottom: var(--spacing-3);
-  }
-`
-
 const RoadmapContainer = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
 `
 
 const RoadmapContent = styled.div`
   position: relative;
-  width: var(--page-width);
 
   @media ${deviceBreakPoints.mobile} {
     padding-left: 0;
@@ -203,19 +166,21 @@ const RoadmapContent = styled.div`
 
 const StickyTitleContainer = styled(TextElement)`
   padding-top: var(--spacing-4);
+  position: sticky;
+  top: var(--spacing-4);
+  background: linear-gradient(to bottom, ${({ theme }) => theme.background3} 10%, transparent 100%);
+  z-index: 1;
 `
 
 const StickyTitle = styled.h2`
-  position: sticky;
-  top: var(--spacing-4);
-  color: ${({ theme }) => theme.textTertiary} !important;
+  color: ${({ theme }) => theme.textSecondary} !important;
   font-weight: var(--fontWeight-light);
 `
 
 const CategoriesColumn = styled.div`
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-20);
+  gap: var(--spacing-16);
 `
 
 const CategorySection = styled.section`
@@ -223,7 +188,7 @@ const CategorySection = styled.section`
   flex-direction: column;
   gap: var(--spacing-3);
   padding: var(--spacing-4);
-  border-radius: var(--radius-huge);
+  border-radius: var(--radius-big);
   border: 1px solid ${({ theme }) => theme.borderPrimary};
   background: ${({ theme }) => theme.background2};
 `
@@ -240,8 +205,8 @@ const HeadingTexts = styled(TextElement)`
 `
 
 const CategoryTitle = styled.h3`
-  margin: 0;
-  font-weight: var(--fontWeight-medium);
+  margin-bottom: var(--spacing-1) !important;
+  font-weight: var(--fontWeight-regular) !important;
   color: ${({ theme }) => theme.textPrimary};
 `
 
@@ -253,11 +218,6 @@ const StatusHeadings = styled.div`
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--spacing-5);
-
-  @media ${deviceBreakPoints.mobile} {
-    grid-template-columns: 1fr;
-    row-gap: var(--spacing-2);
-  }
 `
 
 const headingAccent = {
@@ -293,10 +253,6 @@ const StatusColumns = styled.div`
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--spacing-5);
-
-  @media ${deviceBreakPoints.mobile} {
-    grid-template-columns: 1fr;
-  }
 `
 
 const StatusColumn = styled.div`

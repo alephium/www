@@ -1,26 +1,21 @@
-import { CoinsIcon, GearSixIcon, MegaphoneIcon, PlusIcon, PuzzlePieceIcon } from '@phosphor-icons/react'
+import { PlusIcon } from '@phosphor-icons/react'
 import styled, { useTheme } from 'styled-components'
 
-import { RoadmapItem, RoadmapType } from './Roadmap'
-
-const TYPE_ICONS: Record<RoadmapType, typeof GearSixIcon> = {
-  'core-platform': GearSixIcon,
-  ecosystem: PuzzlePieceIcon,
-  marketing: MegaphoneIcon,
-  liquidity: CoinsIcon
-}
+import { DEFAULT_ROADMAP_ITEM_TYPE, ROADMAP_ITEM_TYPE_META, RoadmapItem } from './roadmapMeta'
 
 const RoadmapItemCard = ({ item }: { item: RoadmapItem }) => {
   const theme = useTheme()
-  const { title, type = 'core-platform' } = item
-  const TypeIcon = TYPE_ICONS[type]
+  const { title, type } = item
+  const meta = type ? ROADMAP_ITEM_TYPE_META[type] : undefined
+  const { Icon: TypeIcon, label } = meta ?? ROADMAP_ITEM_TYPE_META[DEFAULT_ROADMAP_ITEM_TYPE]
 
   return (
     <ItemCardContainer>
       <IconBadge>
-        <TypeIcon size={20} weight="duotone" />
+        <TypeIcon size={20} color={theme.textSecondary} />
       </IconBadge>
       <ItemCopy>
+        <ItemType>{label}</ItemType>
         <ItemTitle>{title}</ItemTitle>
       </ItemCopy>
       <RightSide>
@@ -34,14 +29,14 @@ const RightSide = styled.div`
   flex: 1;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
   opacity: 0;
   transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 `
 
 const ItemCardContainer = styled.div`
   display: flex;
-  align-items: ;
+  align-items: flex-start;
   gap: var(--spacing-3);
   padding: var(--spacing-2);
   border-radius: var(--radius);
@@ -69,7 +64,14 @@ const IconBadge = styled.span`
 const ItemCopy = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
+  gap: 0.2rem;
+`
+
+const ItemType = styled.span`
+  font-size: var(--fontSize-12);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: ${({ theme }) => theme.textSecondary};
 `
 
 const ItemTitle = styled.span`
