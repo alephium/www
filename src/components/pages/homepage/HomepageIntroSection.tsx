@@ -126,7 +126,7 @@ const HomepageIntroSection = () => {
   )
 
   return (
-    <SubpageSection id="intro" overflow="visible">
+    <SubpageSection id="intro">
       <CardText>
         <h2>Quick start</h2>
         <p>Dive into the Alephium ecosystem 🐠</p>

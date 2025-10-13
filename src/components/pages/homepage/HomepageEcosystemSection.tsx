@@ -271,6 +271,7 @@ const LogosContainer = styled.div`
   height: 600px;
   margin: 0 auto;
   perspective: 1000px;
+  overflow: hidden;
 
   @media ${deviceBreakPoints.mobile} {
     height: 350px;

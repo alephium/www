@@ -36,12 +36,14 @@ const ConcentricEllipses = ({ baseColor, bottomOffset = '-15%' }: ConcentricElli
 
 const EllipseContainer = styled.div<{ bottomOffset: string }>`
   position: absolute;
-  bottom: ${({ bottomOffset }) => bottomOffset};
-  left: 50%;
-  transform: translateX(-50%);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: ${({ bottomOffset }) => bottomOffset}px;
   pointer-events: none;
   z-index: 0;
   mix-blend-mode: color-dodge;
+  overflow: hidden;
 `
 
 const Ellipse = styled.span<{ width: number; height: number; delay: number; opacity: number; baseColor?: string }>`
