@@ -1,5 +1,5 @@
 import { graphql, useStaticQuery } from 'gatsby'
-import { useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import styled, { css } from 'styled-components'
 
 import { deviceBreakPoints } from '../../../styles/global-style'
@@ -76,7 +76,7 @@ const Roadmap = () => {
 
   return (
     <Wrapper id="roadmap">
-      <SubpageSection>
+      <SubpageSection gradientPosition="bottom" edgeGradient border="bottom">
         <TextElement isCentered>
           <h2>Future Roadmap</h2>
           <p>
@@ -85,7 +85,7 @@ const Roadmap = () => {
           </p>
         </TextElement>
       </SubpageSection>
-      <SubpageSection noTopPadding>
+      <SubpageSection>
         <TimelineSection>
           {roadmaps.map((roadmap) => (
             <RoadmapYearSection key={roadmap.title} {...roadmap} />
@@ -100,14 +100,23 @@ export default Roadmap
 
 const RoadmapYearSection = ({ title, categories }: RoadmapData) => {
   const [activeIndex, setActiveIndex] = useState(0)
+  const [expandedItemId, setExpandedItemId] = useState<string | null>(null)
 
-  if (!categories.length) {
+  const hasCategories = categories.length > 0
+  const safeIndex = hasCategories && activeIndex < categories.length ? activeIndex : 0
+  const activeCategory = hasCategories ? categories[safeIndex] : undefined
+  const activeCategoryName = activeCategory?.category?.trim() || 'Uncategorized'
+  const handleItemToggle = useCallback((itemId: string) => {
+    setExpandedItemId((current) => (current === itemId ? null : itemId))
+  }, [])
+
+  useEffect(() => {
+    setExpandedItemId(null)
+  }, [hasCategories, activeCategoryName])
+
+  if (!hasCategories) {
     return null
   }
-
-  const safeIndex = activeIndex < categories.length ? activeIndex : 0
-  const activeCategory = categories[safeIndex]
-  const activeCategoryName = activeCategory.category?.trim() || 'Uncategorized'
 
   return (
     <RoadmapContainer>
@@ -146,15 +155,24 @@ const RoadmapYearSection = ({ title, categories }: RoadmapData) => {
           <Divider />
           <StatusColumns>
             {ROADMAP_STATUSES.map(({ key }) => {
-              const items = (activeCategory.items || []).filter(
+              const items = (activeCategory?.items || []).filter(
                 (item): item is RoadmapItem => Boolean(item) && item.status === key
               )
 
               return (
                 <StatusColumn key={`${title}-${activeCategoryName}-${key}`}>
-                  {items.map((item, index) => (
-                    <RoadmapItemCard key={`${item.title}-${index}`} item={item} />
-                  ))}
+                  {items.map((item, index) => {
+                    const itemId = `${title}-${activeCategoryName}-${key}-${index}`
+                    return (
+                      <RoadmapItemCard
+                        key={itemId}
+                        item={item}
+                        itemId={itemId}
+                        isActive={expandedItemId === itemId}
+                        onToggle={handleItemToggle}
+                      />
+                    )
+                  })}
                 </StatusColumn>
               )
             })}
@@ -178,6 +196,7 @@ const RoadmapContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: var(--spacing-4);
+  margin-bottom: var(--spacing-10);
 `
 
 const RoadmapContent = styled.div`
@@ -195,10 +214,10 @@ const StickyTitleContainer = styled(TextElement)`
   position: sticky;
   top: 0;
   background: linear-gradient(to bottom, ${({ theme }) => theme.background3} 10%, transparent 100%);
-  z-index: 1;
   display: flex;
   flex-direction: column;
   gap: var(--spacing-3);
+  z-index: 2;
 `
 
 const StickyTitle = styled.h2`
@@ -249,13 +268,14 @@ const CategoryTab = styled.button<{ isActive: boolean }>`
 `
 
 const CategorySection = styled.section`
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: var(--spacing-3);
+  background-color: ${({ theme }) => theme.background2};
   padding: var(--spacing-4);
   border-radius: var(--radius-big);
-  border: 1px solid ${({ theme }) => theme.borderPrimary};
-  background: ${({ theme }) => theme.background2};
+  border: 1px solid ${({ theme }) => theme.borderSecondary};
 `
 
 const CategoryTagline = styled.p`
