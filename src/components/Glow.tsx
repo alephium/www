@@ -13,6 +13,7 @@ interface GlowProps {
 const Glow = styled.div<GlowProps>`
   position: absolute;
   pointer-events: none;
+  overflow: hidden;
   top: 0;
   left: 0;
   right: 0;

@@ -83,7 +83,7 @@ const TextElement = styled.div<TextElementProps>`
     font-family: 'InterDisplay';
     line-height: 0.9;
 
-    font-size: var(--fontSize-76);
+    font-size: var(--fontSize-70);
     font-weight: var(--fontWeight-medium);
 
     ${({ isSmall }) =>

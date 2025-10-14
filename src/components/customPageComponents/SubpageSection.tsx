@@ -14,7 +14,6 @@ interface SubpageSectionProps extends PageSectionContainerProps, HTMLAttributes<
   gradientPosition?: 'top' | 'bottom' | 'bottom-right' | 'bottom-left' | 'top-right' | 'top-left' | 'left' | 'right'
   noTopPadding?: boolean
   noBottomPadding?: boolean
-  overflow?: 'hidden' | 'visible'
 }
 
 const SubpageSection = ({ children, Parallax, edgeGradient, gradientPosition, ...props }: SubpageSectionProps) => (
@@ -33,6 +32,7 @@ const SubpageSectionStyled = styled(PageSectionContainer)<SubpageSectionProps>`
   padding-top: ${({ noTopPadding }) => (noTopPadding ? '0' : 'var(--spacing-10)')};
   padding-bottom: ${({ noBottomPadding }) => (noBottomPadding ? '0' : 'var(--spacing-10)')};
   background-color: ${({ theme, bgColor }) => (bgColor ? theme[`background${bgColor}`] : 'transparent')};
+  border-radius: var(--radius-big);
 
   ${({ border }) =>
     border &&

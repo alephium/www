@@ -1,5 +1,5 @@
 import { graphql, useStaticQuery } from 'gatsby'
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
 import styled, { css } from 'styled-components'
 
 import { deviceBreakPoints } from '../../../styles/global-style'
@@ -20,8 +20,8 @@ interface RoadmapNode {
 }
 
 interface RoadmapData {
-  title?: string
-  categories?: RoadmapCategory[]
+  title: string
+  categories: RoadmapCategory[]
 }
 
 const Roadmap = () => {
@@ -87,52 +87,8 @@ const Roadmap = () => {
       </SubpageSection>
       <SubpageSection noTopPadding>
         <TimelineSection>
-          {roadmaps.map(({ title, categories }) => (
-            <RoadmapContainer key={title}>
-              <StickyTitleContainer>
-                <StickyTitle>{title}</StickyTitle>
-              </StickyTitleContainer>
-              <RoadmapContent key={title}>
-                <CategoriesColumn>
-                  {categories?.map((category, idx) => {
-                    const categoryName = category.category?.trim() || 'Uncategorized'
-                    return (
-                      <CategorySection key={`${title}-${categoryName}-${idx}`}>
-                        <CategoryHeading>
-                          <HeadingTexts isBodySmall>
-                            <CategoryTitle>{categoryName}</CategoryTitle>
-                            {category.tagline && <CategoryTagline>{category.tagline}</CategoryTagline>}
-                          </HeadingTexts>
-                        </CategoryHeading>
-                        <StatusHeadings>
-                          {ROADMAP_STATUSES.map(({ key, label, Icon }) => (
-                            <StatusHeading key={key} status={key}>
-                              <span>{label}</span>
-                              <Icon size={20} weight="duotone" />
-                            </StatusHeading>
-                          ))}
-                        </StatusHeadings>
-                        <Divider />
-                        <StatusColumns>
-                          {ROADMAP_STATUSES.map(({ key }) => {
-                            const items = (category.items || []).filter(
-                              (item): item is RoadmapItem => Boolean(item) && item.status === key
-                            )
-                            return (
-                              <StatusColumn key={`${title}-${categoryName}-${key}`}>
-                                {items.map((item, index) => (
-                                  <RoadmapItemCard key={`${item.title}-${index}`} item={item} />
-                                ))}
-                              </StatusColumn>
-                            )
-                          })}
-                        </StatusColumns>
-                      </CategorySection>
-                    )
-                  })}
-                </CategoriesColumn>
-              </RoadmapContent>
-            </RoadmapContainer>
+          {roadmaps.map((roadmap) => (
+            <RoadmapYearSection key={roadmap.title} {...roadmap} />
           ))}
         </TimelineSection>
       </SubpageSection>
@@ -141,6 +97,73 @@ const Roadmap = () => {
 }
 
 export default Roadmap
+
+const RoadmapYearSection = ({ title, categories }: RoadmapData) => {
+  const [activeIndex, setActiveIndex] = useState(0)
+
+  if (!categories.length) {
+    return null
+  }
+
+  const safeIndex = activeIndex < categories.length ? activeIndex : 0
+  const activeCategory = categories[safeIndex]
+  const activeCategoryName = activeCategory.category?.trim() || 'Uncategorized'
+
+  return (
+    <RoadmapContainer>
+      <StickyTitleContainer>
+        <StickyTitle>{title}</StickyTitle>
+      </StickyTitleContainer>
+      <CategoryTabs role="tablist">
+        {categories.map((category, idx) => {
+          const categoryName = category.category?.trim() || 'Uncategorized'
+          return (
+            <CategoryTab
+              key={`${title}-${categoryName}-${idx}`}
+              type="button"
+              role="tab"
+              aria-selected={safeIndex === idx}
+              tabIndex={safeIndex === idx ? 0 : -1}
+              isActive={safeIndex === idx}
+              onClick={() => setActiveIndex(idx)}
+            >
+              {categoryName}
+            </CategoryTab>
+          )
+        })}
+      </CategoryTabs>
+      {activeCategory?.tagline && <CategoryTagline>{activeCategory.tagline}</CategoryTagline>}
+      <RoadmapContent>
+        <CategorySection>
+          <StatusHeadings>
+            {ROADMAP_STATUSES.map(({ key, label, Icon }) => (
+              <StatusHeading key={key} status={key}>
+                <span>{label}</span>
+                <Icon size={20} weight="duotone" />
+              </StatusHeading>
+            ))}
+          </StatusHeadings>
+          <Divider />
+          <StatusColumns>
+            {ROADMAP_STATUSES.map(({ key }) => {
+              const items = (activeCategory.items || []).filter(
+                (item): item is RoadmapItem => Boolean(item) && item.status === key
+              )
+
+              return (
+                <StatusColumn key={`${title}-${activeCategoryName}-${key}`}>
+                  {items.map((item, index) => (
+                    <RoadmapItemCard key={`${item.title}-${index}`} item={item} />
+                  ))}
+                </StatusColumn>
+              )
+            })}
+          </StatusColumns>
+        </CategorySection>
+      </RoadmapContent>
+    </RoadmapContainer>
+  )
+}
 
 const Wrapper = styled.section``
 
@@ -154,10 +177,13 @@ const RoadmapContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: var(--spacing-4);
 `
 
 const RoadmapContent = styled.div`
   position: relative;
+  display: flex;
+  flex-direction: column;
 
   @media ${deviceBreakPoints.mobile} {
     padding-left: 0;
@@ -167,20 +193,59 @@ const RoadmapContent = styled.div`
 const StickyTitleContainer = styled(TextElement)`
   padding-top: var(--spacing-4);
   position: sticky;
-  top: var(--spacing-4);
+  top: 0;
   background: linear-gradient(to bottom, ${({ theme }) => theme.background3} 10%, transparent 100%);
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
 `
 
 const StickyTitle = styled.h2`
   color: ${({ theme }) => theme.textSecondary} !important;
   font-weight: var(--fontWeight-light);
+  margin-bottom: var(--spacing-2) !important;
 `
 
-const CategoriesColumn = styled.div`
+const CategoryTabs = styled.div`
   display: flex;
-  flex-direction: column;
-  gap: var(--spacing-16);
+  flex-wrap: wrap;
+  gap: var(--spacing-4);
+  margin: 0 calc(-1 * var(--spacing-1));
+  padding: 0 var(--spacing-1);
+  overflow-x: auto;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+`
+
+const CategoryTab = styled.button<{ isActive: boolean }>`
+  appearance: none;
+  background: none;
+  border: none;
+  padding: 0 0 var(--spacing-1);
+  font-size: var(--fontSize-24);
+  font-weight: var(--fontWeight-regular);
+  color: ${({ theme, isActive }) => (isActive ? theme.textPrimary : theme.textSecondary)};
+  border-bottom: 2px solid ${({ theme, isActive }) => (isActive ? theme.textPrimary : 'transparent')};
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+
+  &:hover {
+    color: ${({ theme }) => theme.textPrimary};
+  }
+
+  &:focus-visible {
+    outline: 2px solid ${({ theme }) => theme.palette1};
+    outline-offset: 2px;
+  }
+
+  @media ${deviceBreakPoints.mobile} {
+    font-size: var(--fontSize-20);
+  }
 `
 
 const CategorySection = styled.section`
@@ -193,31 +258,22 @@ const CategorySection = styled.section`
   background: ${({ theme }) => theme.background2};
 `
 
-const CategoryHeading = styled.header`
-  display: flex;
-  align-items: center;
-  margin-bottom: var(--spacing-2);
-`
-
-const HeadingTexts = styled(TextElement)`
-  display: flex;
-  flex-direction: column;
-`
-
-const CategoryTitle = styled.h3`
-  margin-bottom: var(--spacing-1) !important;
-  font-weight: var(--fontWeight-regular) !important;
-  color: ${({ theme }) => theme.textPrimary};
-`
-
 const CategoryTagline = styled.p`
   margin: 0;
+  font-size: var(--fontSize-18);
+  color: ${({ theme }) => theme.textSecondary};
+  margin-bottom: var(--spacing-4);
 `
 
 const StatusHeadings = styled.div`
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--spacing-5);
+
+  @media ${deviceBreakPoints.mobile} {
+    grid-template-columns: 1fr;
+    row-gap: var(--spacing-2);
+  }
 `
 
 const headingAccent = {
@@ -253,6 +309,10 @@ const StatusColumns = styled.div`
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--spacing-5);
+
+  @media ${deviceBreakPoints.mobile} {
+    grid-template-columns: 1fr;
+  }
 `
 
 const StatusColumn = styled.div`
