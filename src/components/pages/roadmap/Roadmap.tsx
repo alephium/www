@@ -1,3 +1,4 @@
+import { colord } from 'colord'
 import { graphql, useStaticQuery } from 'gatsby'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import styled, { css } from 'styled-components'
@@ -122,25 +123,25 @@ const RoadmapYearSection = ({ title, categories }: RoadmapData) => {
     <RoadmapContainer>
       <StickyTitleContainer>
         <StickyTitle>{title}</StickyTitle>
+        <CategoryTabs role="tablist">
+          {categories.map((category, idx) => {
+            const categoryName = category.category?.trim() || 'Uncategorized'
+            return (
+              <CategoryTab
+                key={`${title}-${categoryName}-${idx}`}
+                type="button"
+                role="tab"
+                aria-selected={safeIndex === idx}
+                tabIndex={safeIndex === idx ? 0 : -1}
+                isActive={safeIndex === idx}
+                onClick={() => setActiveIndex(idx)}
+              >
+                {categoryName}
+              </CategoryTab>
+            )
+          })}
+        </CategoryTabs>
       </StickyTitleContainer>
-      <CategoryTabs role="tablist">
-        {categories.map((category, idx) => {
-          const categoryName = category.category?.trim() || 'Uncategorized'
-          return (
-            <CategoryTab
-              key={`${title}-${categoryName}-${idx}`}
-              type="button"
-              role="tab"
-              aria-selected={safeIndex === idx}
-              tabIndex={safeIndex === idx ? 0 : -1}
-              isActive={safeIndex === idx}
-              onClick={() => setActiveIndex(idx)}
-            >
-              {categoryName}
-            </CategoryTab>
-          )
-        })}
-      </CategoryTabs>
       {activeCategory?.tagline && <CategoryTagline>{activeCategory.tagline}</CategoryTagline>}
       <RoadmapContent>
         <CategorySection>
@@ -154,25 +155,37 @@ const RoadmapYearSection = ({ title, categories }: RoadmapData) => {
           </StatusHeadings>
           <Divider />
           <StatusColumns>
-            {ROADMAP_STATUSES.map(({ key }) => {
+            {ROADMAP_STATUSES.map(({ key, label, Icon }) => {
               const items = (activeCategory?.items || []).filter(
                 (item): item is RoadmapItem => Boolean(item) && item.status === key
               )
+              const hasItems = items.length > 0
 
               return (
                 <StatusColumn key={`${title}-${activeCategoryName}-${key}`}>
-                  {items.map((item, index) => {
-                    const itemId = `${title}-${activeCategoryName}-${key}-${index}`
-                    return (
-                      <RoadmapItemCard
-                        key={itemId}
-                        item={item}
-                        itemId={itemId}
-                        isActive={expandedItemId === itemId}
-                        onToggle={handleItemToggle}
-                      />
-                    )
-                  })}
+                  <StatusColumnHeading status={key} $isEmpty={!hasItems}>
+                    <span>{label}</span>
+                    <Icon size={20} weight="duotone" />
+                  </StatusColumnHeading>
+                  {hasItems ? (
+                    items.map((item, index) => {
+                      const itemId = `${title}-${activeCategoryName}-${key}-${index}`
+                      return (
+                        <RoadmapItemCard
+                          key={itemId}
+                          item={item}
+                          itemId={itemId}
+                          isActive={expandedItemId === itemId}
+                          onToggle={handleItemToggle}
+                        />
+                      )
+                    })
+                  ) : (
+                    <StatusColumnPlaceholder>
+                      <Icon size={24} weight="duotone" />
+                      <PlaceholderText>No {label.toLowerCase()} items yet.</PlaceholderText>
+                    </StatusColumnPlaceholder>
+                  )}
                 </StatusColumn>
               )
             })}
@@ -213,11 +226,19 @@ const StickyTitleContainer = styled(TextElement)`
   padding-top: var(--spacing-4);
   position: sticky;
   top: 0;
-  background: linear-gradient(to bottom, ${({ theme }) => theme.background3} 10%, transparent 100%);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-3);
   z-index: 2;
+
+  &:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    bottom: -100px;
+    z-index: -1;
+    background: linear-gradient(to bottom, ${({ theme }) => theme.background3} 25%, transparent 100%);
+  }
 `
 
 const StickyTitle = styled.h2`
@@ -282,7 +303,13 @@ const CategoryTagline = styled.p`
   margin: 0;
   font-size: var(--fontSize-18);
   color: ${({ theme }) => theme.textSecondary};
-  margin-bottom: var(--spacing-4);
+  margin-top: var(--spacing-3);
+  margin-bottom: var(--spacing-2);
+  padding: var(--spacing-3);
+  border-radius: var(--radius);
+  background: ${({ theme }) => colord(theme.palette1).alpha(0.05).toRgbString()};
+  border: 1px solid ${({ theme }) => colord(theme.palette1).alpha(0.1).toRgbString()};
+  color: ${({ theme }) => theme.palette1};
 `
 
 const StatusHeadings = styled.div`
@@ -291,8 +318,7 @@ const StatusHeadings = styled.div`
   gap: var(--spacing-5);
 
   @media ${deviceBreakPoints.mobile} {
-    grid-template-columns: 1fr;
-    row-gap: var(--spacing-2);
+    display: none;
   }
 `
 
@@ -320,9 +346,22 @@ const StatusHeading = styled.div<{ status: RoadmapStatus }>`
   }
 `
 
+const StatusColumnHeading = styled(StatusHeading)<{ $isEmpty: boolean }>`
+  display: none;
+  margin-bottom: var(--spacing-2);
+
+  @media ${deviceBreakPoints.mobile} {
+    display: flex;
+  }
+`
+
 const Divider = styled.div`
   height: 1px;
   background: ${({ theme }) => theme.borderPrimary};
+
+  @media ${deviceBreakPoints.mobile} {
+    display: none;
+  }
 `
 
 const StatusColumns = styled.div`
@@ -332,6 +371,7 @@ const StatusColumns = styled.div`
 
   @media ${deviceBreakPoints.mobile} {
     grid-template-columns: 1fr;
+    gap: var(--spacing-4);
   }
 `
 
@@ -339,4 +379,34 @@ const StatusColumn = styled.div`
   display: flex;
   flex-direction: column;
   gap: var(--spacing-2);
+
+  @media ${deviceBreakPoints.mobile} {
+    padding-top: var(--spacing-3);
+    border-top: 1px solid ${({ theme }) => theme.borderPrimary};
+
+    &:first-child:not(:empty) {
+      padding-top: 0;
+      border-top: none;
+    }
+  }
+`
+
+const StatusColumnPlaceholder = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-1);
+  padding: var(--spacing-2);
+  max-width: 300px;
+  border-radius: var(--radius);
+  border: 1px dashed ${({ theme }) => theme.borderPrimary};
+  color: ${({ theme }) => theme.textTertiary};
+
+  svg {
+    color: ${({ theme }) => theme.textTertiary};
+  }
+`
+
+const PlaceholderText = styled.span`
+  font-size: var(--fontSize-16);
 `
