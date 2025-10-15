@@ -20,11 +20,33 @@ collections:
     public_folder: ''
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Teaser subtitle', name: 'description', widget: 'text', hint: "The teaser subtitle text is displayed in the post's card in the News page, as well as in the in the card when sharing the post link in social media. Ideal length is 120–160 characters." }
-      - { label: 'SEO meta description', name: 'seoDescription', widget: 'text', hint: "The SEO meta description text is used only in the description meta HTML tag. Ideal length is 120–160 characters." }
+      - {
+          label: 'Teaser subtitle',
+          name: 'description',
+          widget: 'text',
+          hint: "The teaser subtitle text is displayed in the post's card in the News page, as well as in the in the card when sharing the post link in social media. Ideal length is 120–160 characters."
+        }
+      - {
+          label: 'SEO meta description',
+          name: 'seoDescription',
+          widget: 'text',
+          hint: 'The SEO meta description text is used only in the description meta HTML tag. Ideal length is 120–160 characters.'
+        }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Spotlight', name: 'spotlight', widget: 'boolean', required: false, hint: "Enabling spotlight will move the post to the top of the News page." }
-      - { label: 'Archived', name: 'archived', widget: 'boolean', required: false, hint: "Unpublishes post without deleting it." }
+      - {
+          label: 'Spotlight',
+          name: 'spotlight',
+          widget: 'boolean',
+          required: false,
+          hint: 'Enabling spotlight will move the post to the top of the News page.'
+        }
+      - {
+          label: 'Archived',
+          name: 'archived',
+          widget: 'boolean',
+          required: false,
+          hint: 'Unpublishes post without deleting it.'
+        }
       - { label: 'Featured Image', name: 'featuredImage', widget: 'image' }
       - label: Related posts
         name: relatedPosts
@@ -34,7 +56,71 @@ collections:
         search_fields: [title]
         display_fields: [title]
         value_field: '{{slug}}'
-        hint: "Related posts listed at the bottom of the article. You can search by post title."
+        hint: 'Related posts listed at the bottom of the article. You can search by post title.'
         required: false
       - { label: 'Body', name: 'body', widget: 'markdown' }
-
+  - name: 'roadmap'
+    label: 'Roadmap'
+    folder: 'src/content/roadmap'
+    create: true
+    slug: '{{title}}'
+    identifier_field: title
+    extension: 'yml'
+    format: 'yaml'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - label: 'Categories'
+        name: 'categories'
+        widget: 'list'
+        summary: '{{fields.category}}'
+        fields:
+          - label: 'Category'
+            name: 'category'
+            widget: 'select'
+            options:
+              - Core platform
+              - Ecosystem
+              - Marketing
+              - Liquidity
+          - { label: 'Tagline', name: 'tagline', widget: 'string', required: false }
+          - label: 'Items'
+            name: 'items'
+            widget: 'list'
+            summary: '{{fields.title}} ({{fields.status}} • {{fields.type}})'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - label: 'Status'
+                name: 'status'
+                widget: 'select'
+                options:
+                  - done
+                  - ongoing
+                  - planned
+                default: planned
+              - label: 'Type'
+                name: 'type'
+                widget: 'select'
+                options:
+                  - { label: 'Node (Core platform)', value: node }
+                  - { label: 'Wallets (Core platform)', value: wallets }
+                  - { label: 'SDK (Core platform)', value: sdk }
+                  - { label: 'Tooling (Core platform)', value: tooling }
+                  - { label: 'Integration (Ecosystem)', value: integration }
+                  - { label: 'Discovery (Ecosystem)', value: discovery }
+                  - { label: 'Guidance (Ecosystem)', value: guidance }
+                  - { label: 'Partnership (Marketing)', value: partnership }
+                  - { label: 'Events (Marketing)', value: events }
+                  - { label: 'Growth (Marketing)', value: growth }
+                  - { label: 'Content (Marketing)', value: content }
+                  - { label: 'DEX (Liquidity)', value: dex }
+                  - { label: 'Bridging (Liquidity)', value: bridging }
+                  - { label: 'Incentives (Liquidity)', value: incentives }
+                default: node
+              - { label: 'Description', name: 'description', widget: 'text', required: false }
+              - label: 'Button'
+                name: 'button'
+                widget: 'object'
+                required: false
+                fields:
+                  - { label: 'Label', name: 'label', widget: 'string', required: false }
+                  - { label: 'URL', name: 'url', widget: 'string', required: false }
