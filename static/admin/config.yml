@@ -1,4 +1,4 @@
-local_backend: true # Enable when working locally
+# local_backend: true # Enable when working locally
 
 backend:
   name: github
