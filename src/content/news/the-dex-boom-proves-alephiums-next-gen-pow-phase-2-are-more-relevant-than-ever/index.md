@@ -87,6 +87,8 @@ This core liquidity will not be siloed. Instead, it will serve as the engine tha
 
 When the core liquidity of the chain strengthens, all ecosystem projects, large and small, will benefit instantly and proportionally. That kind of equitability is core to a healthy Web3 ecosystem.
 
+![](in-article-banner-2b.png)
+
 ## The L1 Foundation: Security and Scalability Uncompromised
 
 The fundamental reason we believe we are **poised to thrive in the DEX boom** is that our infrastructure layer eliminates many of the risk factors endemic to other platforms. What does that mean in practice? Let’s take a closer look, particularly at our VM and sharding. 
