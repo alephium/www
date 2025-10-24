@@ -104,7 +104,7 @@ In DeFi, security is the ultimate premium. The losses accrued from smart contrac
 
 The most common and devastating DeFi hacks, such as reentrancy attacks and exploits caused by two-step token approvals, are baked into the standard Account-Based model used by most competing L1s.
 
-#### Alephium’s solution (sUTXO)
+#### Alephium’s Solution (sUTXO)
 
 Our innovative sUTXO model and [purpose-built VM](/news/post/meet-alphred-a-virtual-machine-like-no-others-85ce86540025/) introduce built-in safeguards that make these exploit vectors impossible by design. The logic enforces security-first smart contracts, allowing developers to focus on innovation instead of perpetually mitigating critical vulnerabilities.
 
