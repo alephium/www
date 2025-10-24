@@ -14,6 +14,8 @@ relatedPosts:
   - from-scalable-infrastructure-to-aligned-economics/index
   - phase-2-discord-ama-your-questions-answered/index
 ---
+**Preface:** Please read the [Phase 2 article](/news/post/from-scalable-infrastructure-to-aligned-economics/) for context.
+
 *TLDR; The integrity of our L1 eliminates endemic platform risk, securing our place in the DEX boom. Perfect timing, as we continue to build a protocol-owned DEX and $ALPH staking.*
 
 Crypto is defined by cycles. As the latest one recedes, a clear trend has emerged: **the infrastructure layer is everything**. As well as clear growth in Layer 1 (L1) development, there is a notable shift in investor and developer demand. They’re looking for ecosystem stability, economic stability, and credible neutrality.
@@ -49,8 +51,6 @@ By launching the Core dApp natively and as a protocol-owned DEX, we are ensuring
 To understand Alephium’s forward vision, people must acknowledge the foundation laid during our first chapter. While many critics proclaimed that Proof-of-Work could not scale, Alephium proved them wrong. We scale. People also said you couldn’t build fully fledged smart contract capability on the UTXO model. We did it.
 
 ![](dexscalability.jpg)
-
- 
 
 Thanks to deliberate and principled engineering choices, we offer infrastructure that is live, tested, and production-ready. This foundation has [solved](/news/post/danube-upgrade-one-step-closer-to-the-web3-we-were-promised/) what was thought to be the once-impossible trilemma of delivering scalability, security, and decentralization:
 
