@@ -38,7 +38,7 @@ The answer is *simple*. We believe our infrastructure eliminates the inherent ri
 
 An essential lesson from the recent DEX volume charts is that a decentralized exchange is only ever as strong as the base layer it is built on. The DEX and the L1 are inextricably connected.
 
-When we observe the [DEX leaderboard](https://x.com/CryptoDiffer/status/1975446711402389619), with Uniswap defined by its Ethereum foundation, PancakeSwap by the BNB Smart Chain ecosystem, and high-growth contenders like Meteora and Pump by Solana's architecture, an undeniable truth is plan for all to see. **A DEX's resilience, speed, and cost are dictated by its host chain's deepest architectural decisions**. A DEX on a congested and fragmented L1 inherits congestion and fragmentation... 
+When we observe the [DEX leaderboard](https://x.com/CryptoDiffer/status/1975446711402389619), with Uniswap defined by its Ethereum foundation, PancakeSwap by the BNB Smart Chain ecosystem, and high-growth contenders like Meteora and Pump by Solana's architecture, an undeniable truth is plain for all to see. **A DEX's resilience, speed, and cost are dictated by its host chain's deepest architectural decisions**. A DEX on a congested and fragmented L1 inherits congestion and fragmentation... 
 
 A DEX on a highly-centralized L1 inherits censorship risk. **Nobody wants that either.**
 
@@ -48,7 +48,7 @@ By launching the Core dApp natively and as a protocol-owned DEX, we are ensuring
 
 ## Phase One: The Uncompromised Foundation
 
-To understand Alephium’s forward vision, people must acknowledge the foundation laid during our first chapter. While many critics proclaimed that Proof-of-Work could not scale, Alephium proved them wrong. We scale. People also said you couldn’t build fully fledged smart contract capability on the UTXO model. We did it.
+To understand Alephium’s forward vision, people must acknowledge the foundation laid during our first chapter. While many critics proclaimed that Proof-of-Work could not scale, Alephium proved them wrong. It scales. People also said you couldn’t build fully fledged smart contract capability on the UTXO model. Alephium did it.
 
 ![](dexscalability.jpg)
 
@@ -122,7 +122,7 @@ Competing L2 solutions also create fragmentation, forcing users to bridge assets
 
 #### Alephium’s Solution (BlockFlow)
 
-Alephium bypasses this limitation with our **native BlockFlow sharding**. This technology allows for parallel transaction processing, enabling the network to scale its capacity. Crucially, we achieve this **without fragmentation**, delivering a single-chain experience for users and developers. 
+Alephium bypasses this limitation with our **native BlockFlow sharding**. This technology enables parallel transaction processing, helping the network to scale its capacity. Crucially, we achieve this **without fragmentation**, delivering a single-chain experience for users and developers. 
 
 BlockFlow guarantees low, predictable fees and fast confirmations, essential for any efficient DEX.
 
@@ -130,7 +130,9 @@ BlockFlow guarantees low, predictable fees and fast confirmations, essential for
 
 ## Final Conclusion: PoW That Sustains
 
-The market is currently seeking certainty in an uncertain world, demanding credible neutrality, high performance, and fundamental security. The sheer volume of DEX activity confirms the need for a robust and highly decentralized settlement layer.
+The market is currently seeking certainty in an uncertain world, demanding credible neutrality, high performance, and fundamental security. 
+
+**The sheer volume of DEX activity confirms the need for a robust and highly [decentralized](/news/post/the-nakamoto-coefficient-a-horoscope-metric-for-blockchains/) settlement layer.**
 
 Alephium’s two-chapter journey provides the definitive answer. In the first chapter, we proved that Proof-of-Work can scale. In the second chapter, we will prove that PoW can sustain.
 
