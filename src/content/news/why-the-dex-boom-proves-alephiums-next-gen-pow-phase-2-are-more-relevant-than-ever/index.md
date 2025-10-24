@@ -7,7 +7,7 @@ description: Alephium's next-gen PoW and Phase 2 are more relevant than ever
 seoDescription: Discover how Alephium's innovative PoW infrastructure and
   upcoming Phase 2, featuring a protocol-owned DEX, are poised to thrive in the
   booming DeFi landscape.
-date: 2025-10-24T20:00:00.000Z
+date: 2025-10-24T16:35:00.000Z
 spotlight: true
 featuredImage: article-2-banner.png
 relatedPosts:
