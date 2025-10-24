@@ -132,7 +132,7 @@ BlockFlow guarantees low, predictable fees and fast confirmations, essential for
 
 The market is currently seeking certainty in an uncertain world, demanding credible neutrality, high performance, and fundamental security. 
 
-**The sheer volume of DEX activity confirms the need for a robust and highly decentralized settlement layer.**
+**The sheer volume of DEX activity confirms the need for a robust and highly [decentralized](/news/post/the-nakamoto-coefficient-a-horoscope-metric-for-blockchains/) settlement layer.**
 
 Alephium’s two-chapter journey provides the definitive answer. In the first chapter, we proved that Proof-of-Work can scale. In the second chapter, we will prove that PoW can sustain.
 
