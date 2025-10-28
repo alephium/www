@@ -1,6 +1,5 @@
-import { colord } from 'colord'
 import { graphql, useStaticQuery } from 'gatsby'
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useMemo, useState } from 'react'
 import styled, { css } from 'styled-components'
 
 import { deviceBreakPoints } from '../../../styles/global-style'
@@ -111,10 +110,6 @@ const RoadmapYearSection = ({ title, categories }: RoadmapData) => {
     setExpandedItemId((current) => (current === itemId ? null : itemId))
   }, [])
 
-  useEffect(() => {
-    setExpandedItemId(null)
-  }, [hasCategories, activeCategoryName])
-
   if (!hasCategories) {
     return null
   }
@@ -142,8 +137,15 @@ const RoadmapYearSection = ({ title, categories }: RoadmapData) => {
           })}
         </CategoryTabs>
       </StickyTitleContainer>
-      {activeCategory?.tagline && <CategoryTagline>{activeCategory.tagline}</CategoryTagline>}
       <RoadmapContent>
+        {activeCategory?.tagline && (
+          <CategoryTagline>
+            <div>
+              <CategoryTaglineLabel>TDLR:</CategoryTaglineLabel>
+            </div>
+            {activeCategory.tagline}
+          </CategoryTagline>
+        )}
         <CategorySection>
           <StatusHeadings>
             {ROADMAP_STATUSES.map(({ key, label, Icon }) => (
@@ -153,7 +155,6 @@ const RoadmapYearSection = ({ title, categories }: RoadmapData) => {
               </StatusHeading>
             ))}
           </StatusHeadings>
-          <Divider />
           <StatusColumns>
             {ROADMAP_STATUSES.map(({ key, label, Icon }) => {
               const items = (activeCategory?.items || []).filter(
@@ -208,7 +209,7 @@ const RoadmapContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: var(--spacing-4);
+  gap: var(--spacing-2);
   margin-bottom: var(--spacing-10);
 `
 
@@ -302,14 +303,19 @@ const CategorySection = styled.section`
 const CategoryTagline = styled.p`
   margin: 0;
   font-size: var(--fontSize-18);
-  color: ${({ theme }) => theme.textSecondary};
   margin-top: var(--spacing-3);
   margin-bottom: var(--spacing-2);
   padding: var(--spacing-3);
   border-radius: var(--radius);
-  background: ${({ theme }) => colord(theme.palette1).alpha(0.05).toRgbString()};
-  border: 1px solid ${({ theme }) => colord(theme.palette1).alpha(0.1).toRgbString()};
-  color: ${({ theme }) => theme.palette1};
+  background: ${({ theme }) => theme.background1};
+  color: ${({ theme }) => theme.textPrimaryVariation};
+`
+
+const CategoryTaglineLabel = styled.div`
+  font-weight: var(--fontWeight-regular);
+  color: ${({ theme }) => theme.textTertiary};
+  margin-bottom: var(--spacing-1);
+  text-transform: uppercase;
 `
 
 const StatusHeadings = styled.div`
@@ -352,15 +358,6 @@ const StatusColumnHeading = styled(StatusHeading)<{ $isEmpty: boolean }>`
 
   @media ${deviceBreakPoints.mobile} {
     display: flex;
-  }
-`
-
-const Divider = styled.div`
-  height: 1px;
-  background: ${({ theme }) => theme.borderPrimary};
-
-  @media ${deviceBreakPoints.mobile} {
-    display: none;
   }
 `
 
