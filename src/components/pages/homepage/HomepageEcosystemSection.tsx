@@ -257,7 +257,7 @@ const HomepageEcosystemSection = () => {
             Explore on alph.land
           </Button>
         </TextElement>
-        <ConcentricEllipses baseColor={theme.palette4} bottomOffset="50" />
+        <ConcentricEllipses baseColor={theme.palette4} bottomOffset="50px" />
       </GlowingContainer>
     </SubpageSection>
   )
@@ -271,6 +271,7 @@ const LogosContainer = styled.div`
   height: 600px;
   margin: 0 auto;
   perspective: 1000px;
+  overflow: hidden;
 
   @media ${deviceBreakPoints.mobile} {
     height: 350px;

@@ -1,0 +1,70 @@
+title: "2025"
+categories:
+  - category: Core platform
+    tagline: In 2025, the Core Platform matures and scales. The focus in on DevX and UX.
+    items:
+      - title: Groupless addresses
+        status: done
+        type: node
+        description: Unified address format across shards and groups.
+        button:
+          label: Read the article
+          url: https://www.alephium.org/blog/groupless-addresses
+      - title: Core dApp
+        status: ongoing
+        type: wallets
+        description: Unified interface combining wallet actions, staking, and governance.
+        button:
+          label: Explore concept
+          url: https://docs.alephium.org
+      - title: SDK next-gen
+        status: planned
+        type: sdk
+        description: Refined developer tooling with stronger type safety and testing
+          utilities.
+  - category: Ecosystem
+    tagline: Tools and partners expanding Alephium adoption.
+    items:
+      - title: Partner integration program
+        status: ongoing
+        type: integration
+        description: Support program helping teams ship integrations with Alephium
+          infrastructure.
+      - title: Ecosystem showcase hub
+        status: planned
+        type: discovery
+        description: Curated discovery hub for dApps, wallets, and infrastructure providers.
+      - title: Ecosystem grants guide
+        status: planned
+        type: guidance
+        description: Playbook for founders to prepare successful grant applications.
+  - category: Marketing
+    tagline: Awareness initiatives and community growth.
+    items:
+      - title: Quarterly brand campaigns
+        status: planned
+        type: growth
+        description: Cross-channel campaigns highlighting key platform upgrades.
+      - title: Community advocate program
+        status: ongoing
+        type: events
+        description: Empower community members with resources to host events and AMAs.
+      - title: Builder spotlight series
+        status: planned
+        type: content
+        description: Monthly interviews with projects launching on Alephium.
+  - category: Liquidity
+    tagline: Strengthening token distribution and DeFi rails.
+    items:
+      - title: DEX routing improvements
+        status: done
+        type: dex
+        description: Better pricing and routing across Alephium-native liquidity venues.
+      - title: Cross-chain liquidity partnerships
+        status: planned
+        type: bridging
+        description: Expand bridge connectivity and market-making collaborations.
+      - title: Liquidity mining incentives
+        status: ongoing
+        type: incentives
+        description: Incentive program supporting core pools and new assets.

@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "@alephium/sdk": "^0.3.0",
+    "@phosphor-icons/react": "^2.1.10",
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^0.9.405",
     "@types/react-slick": "^0.23.13",
