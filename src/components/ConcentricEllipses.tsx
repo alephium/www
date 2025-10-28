@@ -39,7 +39,7 @@ const EllipseContainer = styled.div<{ bottomOffset: string }>`
   top: 0;
   left: 0;
   right: 0;
-  bottom: ${({ bottomOffset }) => bottomOffset}px;
+  bottom: ${({ bottomOffset }) => bottomOffset};
   pointer-events: none;
   z-index: 0;
   mix-blend-mode: color-dodge;

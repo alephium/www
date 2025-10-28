@@ -257,7 +257,7 @@ const HomepageEcosystemSection = () => {
             Explore on alph.land
           </Button>
         </TextElement>
-        <ConcentricEllipses baseColor={theme.palette4} bottomOffset="50" />
+        <ConcentricEllipses baseColor={theme.palette4} bottomOffset="50px" />
       </GlowingContainer>
     </SubpageSection>
   )
