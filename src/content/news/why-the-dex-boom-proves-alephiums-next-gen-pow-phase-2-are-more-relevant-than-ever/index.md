@@ -9,7 +9,7 @@ seoDescription: Discover how Alephium's innovative PoW infrastructure and
   booming DeFi landscape.
 date: 2025-10-24T16:35:00.000Z
 spotlight: true
-featuredImage: article-2-banner.png
+featuredImage: article-2-website-banner.png
 relatedPosts:
   - from-scalable-infrastructure-to-aligned-economics/index
   - phase-2-discord-ama-your-questions-answered/index
