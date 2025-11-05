@@ -71,7 +71,14 @@ By dedicating years to improving the core infrastructure (Phase One), Alephium�
 
 This is the **Aligned Ecosystem Loop** we’ve been speaking about, a design that ties the token's value to verifiable usage, ensuring the network is sustained by its activity, not its supply. In this way, $ALPH becomes more clearly a utility coin (as it has always been), supports the ecosystem from the ground up, and helps to extend the chain’s trajectory over a much longer period.
 
-**Note:** *Alephium ($ALPH) has a dynamic inflation mechanism that is designed to be deflationary over the long term, with a maximum supply cap of 1 billion tokens. The inflation rate is not fixed but changes based on both time and the network's hash rate.* 
+### Fee Generation vs Inflation
+
+Let’s consider that fee generation and inflation are not completely opposing mechanisms but complementary tools, used with different weights and at different stages of a blockchain’s life cycle. 
+
+It could be argued that all blockchains, including Bitcoin, rely on both transaction fees (fee-generating) and block rewards (inflationary). As Bitcoin eventually runs out of block rewards, the hope is that its ecosystem will be mature enough to sustain itself through transaction fees alone.
+
+The challenge for most newer chains is that their designs are heavily skewed toward inflation, with insufficient organic fee generation. Our goal is to strengthen the fee side of the equation somehow on top of the transaction fee.
+
 
 ## 1. Fee-Generating, Not Inflating
 
