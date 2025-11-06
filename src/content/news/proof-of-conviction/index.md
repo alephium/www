@@ -1,5 +1,5 @@
 ---
-title: Proof of Conviction
+title: "Proof of Conviction: Marketing in the Age of Mirages"
 description: Crypto's core values got lost chasing gains. Alephium's Ratko
   argues true marketing is alignment—not noise—to build lasting conviction.
 seoDescription: Alephium's Marketing Lead, Ratko, reflects on crypto's shift
@@ -7,14 +7,14 @@ seoDescription: Alephium's Marketing Lead, Ratko, reflects on crypto's shift
   conviction endures.
 date: 2025-11-07T12:00:00.000Z
 spotlight: true
-featuredImage: devupadte1.jpeg
+featuredImage: article-ratko.png
 relatedPosts:
   - do-we-really-need-more-centralized-l1s/index
   - the-nakamoto-coefficient-a-horoscope-metric-for-blockchains/index
 ---
 **Op-ed by Ratko, Marketing Lead, Alephium.**
 
-Hello and welcome! This is the first column article from Ratko, our Marketing Lead. Many of our community know him best as the Quartermaster of the Alephium Guard, our ambassador program. Today, he explores some of the unique realities of the cryptocurrency industry.
+Hello and welcome! This is the first column article from Ratko, our Marketing Lead. Many of our community know him best as the Quartermaster of the Alephium Guard, our [ambassador program](/ambassador). Today, he explores some of the unique realities of the cryptocurrency industry.
 
 **Note**: The views and opinions expressed in this column are those of the author and may not reflect the official stance of Alephium.
 
