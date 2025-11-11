@@ -25,8 +25,6 @@ For a non-EVM chain such as Alephium, building bridges to other active networks 
 
 ![](image_6a65a64e2a.webp)
 
-
-
 ## 2. Alephium x GIGATONS
 
 GIGATONS and Alephium forged a strategic partnership to accelerate the transition to a sustainable future. This announcement was a major moment in the past year and continues to excite many community members.
@@ -57,7 +55,7 @@ Verifiable Random Function (VRF) Oracles arrived on Alephium thanks to an exciti
 
 [Gain a full understanding here.](/news/post/dia-vrf-oracles-now-live-on-alephium-3837118a92f9/)
 
-
+[](/news/post/dia-vrf-oracles-now-live-on-alephium-3837118a92f9/)
 
 ## 6. Alephium x Tangem Wallet
 
@@ -65,7 +63,11 @@ Cold storage wallets are the best way to secure your long term holdings. Now, wi
 
 [Read more about this partnership news.](/news/post/alephium-now-supported-by-tangem-wallet-c0f4946559e2/)
 
+![](image_7f9966ba82.png)
 
+[](/news/post/alephium-now-supported-by-tangem-wallet-c0f4946559e2/)
+
+[](/news/post/alephium-now-supported-by-tangem-wallet-c0f4946559e2/)
 
 ## 7. Alephium x Onramper
 
@@ -73,7 +75,7 @@ One of the biggest barriers to Web3 is onboarding. We eased this issue with a br
 
 [Get started here!](/news/post/making-alph-more-accessible-than-ever/)
 
-
+[](/news/post/making-alph-more-accessible-than-ever/)
 
 ## 8. Alephium + Danube Upgrade
 
@@ -89,7 +91,7 @@ Institutional access to DeFi has been one of the biggest trends of the last year
 
 [What does this mean for Alephium?](/news/post/primevault-x-alephium-unlocking-institutional-access-to-defi-on-proof-of-work/)
 
-
+[](/news/post/primevault-x-alephium-unlocking-institutional-access-to-defi-on-proof-of-work/)
 
 ## 10. Alephium + Phase 2: Aligned Economics
 
@@ -99,15 +101,13 @@ After delivering Danube, we planned and announced the next major update. With a 
 
 ![](gy9qxoyxoaawrmy.jpeg)
 
-
-
 ## 11. Alephium x EMCD
 
 Not only did EMCD list $ALPH, but they also added ALPH mining pools to their all-in-one-app.
 
 [Read more here.](/news/post/alephium-alph-is-now-live-on-emcd/)
 
-
+[](/news/post/alephium-alph-is-now-live-on-emcd/)
 
 ## 12. Alephium Bridge + Redesign
 
@@ -115,7 +115,7 @@ Most recently, our frontend team redesigned and revamped the Alephium Bridge.
 
 [Test it for yourself!](https://bridge.alephium.org/#/bridge)
 
-
+[](https://bridge.alephium.org/#/bridge)
 
 ## What’s next?
 
