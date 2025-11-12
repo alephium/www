@@ -70,7 +70,7 @@ As others have taken the easier path of copying existing codebases or building w
 
 The non-EVM route was a **deliberate engineering decision** to avoid and **overcome the compromises** found on other chains. Rather than re-skin or fork an existing solution, Cheng and co meticulously designed one for security, sustainability, and longevity.
 
-While these decisions may have made the route to success longer than EVM-compatible chains, its **trilemma-solving tech** offers more integrity.
+While these decisions may have made the route to success longer than EVM-compatible chains, its **tech** offers more integrity.
 
 With this approach, Alephium ensured it could be **resilient by design** and **built for decades and generations,** not market cycles. They weren’t thinking about the next bull run, but about how Alephium would contribute in **the next century**. 
 
