@@ -9,7 +9,7 @@ categories:
         description: Unified address format across shards and groups.
         button:
           label: Read the article
-          url: https://www.alephium.org/blog/groupless-addresses
+          url: /blog/groupless-addresses
       - title: Core dApp
         status: ongoing
         type: wallets
