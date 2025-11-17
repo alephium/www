@@ -241,15 +241,41 @@ categories:
   - category: Apps
     tagline: TBD
     items:
-      - title: DEX routing improvements
-        status: done
-        type: dex
-        description: Better pricing and routing across Alephium-native liquidity venues.
-      - title: Cross-chain liquidity partnerships
-        status: planned
+      - status: done
+        type: wallets
+        title: "Alephium Wallet: revamp"
+        button:
+          url: https://alephium.org/wallets/
+      - status: done
+        type: tooling
+        title: "All products: multiple language support"
+      - status: done
+        type: wallets
+        title: "Alephium Wallet: On-ramp integration"
+      - status: done
+        type: wallets
+        title: "Alephium Wallet: In-app browser on mobile"
+      - status: done
+        type: wallets
+        title: "Alephium Wallet: state management migration & offline caching"
+      - status: done
+        type: wallets
+        title: "Alephium Wallet: groupless address and chained transactions support"
+      - status: done
         type: bridging
-        description: Expand bridge connectivity and market-making collaborations.
-      - title: Liquidity mining incentives
-        status: ongoing
-        type: incentives
-        description: Incentive program supporting core pools and new assets.
+        title: "Alephium Bridge: UI/UX revamp"
+      - status: done
+        type: dex
+        title: "Core dApp: CLMM/CPMM DEX contracts basic functionality"
+      - status: done
+        type: dex
+        title: "Core dApp: SDK for DEX basic functionality"
+      - status: done
+        type: dex
+        title: "Core dApp: Backend basic functionality"
+      - status: done
+        type: dex
+        title: "Core dApp: Frontend basic functionality"
+      - status: done
+        type: dex
+        title: "Core dApp: MVP on testnet"
