@@ -8,6 +8,7 @@ import SubheaderContent from '../components/customPageComponents/SubheaderConten
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import NetworkUpgradesCardScroller from '../components/NetworkUpgradesCardScroller'
+import Roadmap from '../components/pages/roadmap/Roadmap'
 import SectionDivider from '../components/SectionDivider'
 
 const CustomPage = (props: PageProps) => (
@@ -50,7 +51,7 @@ const CustomPage = (props: PageProps) => (
 
         <SectionDivider />
 
-        {/*<RoadmapSection />*/}
+        <Roadmap />
 
         <SectionDivider />
 
