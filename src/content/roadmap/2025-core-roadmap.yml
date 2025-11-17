@@ -279,3 +279,21 @@ categories:
       - status: done
         type: dex
         title: "Core dApp: MVP on testnet"
+      - status: ongoing
+        type: dex
+        title: "Core dApp: Ensure all regular workflows are functional in CLMM"
+      - status: ongoing
+        type: dex
+        title: "Core dApp: Alephium Branded UX/UI v1"
+      - status: ongoing
+        type: dex
+        title: "Core dApp: manage user positions"
+      - status: ongoing
+        type: dex
+        title: "Core dApp: pool statistics"
+      - status: ongoing
+        type: dex
+        title: "Core dApp: support Alephium staking"
+      - status: ongoing
+        type: dex
+        title: "Alephium Bridge: widget"
