@@ -78,10 +78,10 @@ collections:
             name: 'category'
             widget: 'select'
             options:
+              - Apps
               - Core platform
               - Ecosystem
               - Marketing
-              - Liquidity
           - { label: 'Tagline', name: 'tagline', widget: 'string', required: false }
           - label: 'Items'
             name: 'items'
@@ -112,9 +112,9 @@ collections:
                   - { label: 'Events (Marketing)', value: events }
                   - { label: 'Growth (Marketing)', value: growth }
                   - { label: 'Content (Marketing)', value: content }
-                  - { label: 'DEX (Liquidity)', value: dex }
-                  - { label: 'Bridging (Liquidity)', value: bridging }
-                  - { label: 'Incentives (Liquidity)', value: incentives }
+                  - { label: 'DEX (Apps)', value: dex }
+                  - { label: 'Bridging (Apps)', value: bridging }
+                  - { label: 'Incentives (Apps)', value: incentives }
                 default: node
               - { label: 'Description', name: 'description', widget: 'text', required: false }
               - label: 'Button'

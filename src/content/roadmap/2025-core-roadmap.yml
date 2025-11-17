@@ -238,8 +238,8 @@ categories:
       - status: planned
         type: growth
         title: Social media paid Ads campaign
-  - category: Liquidity
-    tagline: Strengthening token distribution and DeFi rails.
+  - category: Apps
+    tagline: TBD
     items:
       - title: DEX routing improvements
         status: done
