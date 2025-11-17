@@ -239,17 +239,94 @@ categories:
         type: growth
         title: Social media paid Ads campaign
   - category: Apps
-    tagline: TBD
+    tagline: Foundational apps built by the Core Team to serve the Alephium ecosystem.
     items:
-      - title: DEX routing improvements
-        status: done
-        type: dex
-        description: Better pricing and routing across Alephium-native liquidity venues.
-      - title: Cross-chain liquidity partnerships
-        status: planned
+      - status: done
+        type: wallets
+        title: "Alephium Wallet: revamp"
+        button:
+          url: https://alephium.org/wallets/
+      - status: done
+        type: tooling
+        title: "All products: multiple language support"
+      - status: done
+        type: wallets
+        title: "Alephium Wallet: on-ramp integration"
+      - status: done
+        type: wallets
+        title: "Alephium Wallet: in-app browser on mobile"
+      - status: done
+        type: wallets
+        title: "Alephium Wallet: state management migration & offline caching"
+      - status: done
+        type: wallets
+        title: "Alephium Wallet: groupless address and chained transactions support"
+      - status: done
         type: bridging
-        description: Expand bridge connectivity and market-making collaborations.
-      - title: Liquidity mining incentives
-        status: ongoing
-        type: incentives
-        description: Incentive program supporting core pools and new assets.
+        title: "Alephium Bridge: UI/UX revamp"
+      - status: done
+        type: dex
+        title: "Core dApp: CLMM/CPMM DEX contracts basic functionality"
+      - status: done
+        type: dex
+        title: "Core dApp: SDK for DEX basic functionality"
+      - status: done
+        type: dex
+        title: "Core dApp: backend basic functionality"
+      - status: done
+        type: dex
+        title: "Core dApp: frontend basic functionality"
+      - status: done
+        type: dex
+        title: "Core dApp: MVP on testnet"
+      - status: ongoing
+        type: dex
+        title: "Core dApp: ensure all regular workflows are functional in CLMM"
+      - status: ongoing
+        type: dex
+        title: "Core dApp: Alephium Branded UX/UI v1"
+      - status: ongoing
+        type: dex
+        title: "Core dApp: manage user positions"
+      - status: ongoing
+        type: dex
+        title: "Core dApp: pool statistics"
+      - status: ongoing
+        type: dex
+        title: "Core dApp: support Alephium staking"
+      - status: ongoing
+        type: dex
+        title: "Alephium Bridge: widget"
+      - status: planned
+        type: wallets
+        title: "Alephium Wallet: ecosystem screen on desktop"
+      - status: planned
+        type: wallets
+        title: "Alephium Wallet: push notifications on mobile"
+      - status: planned
+        type: wallets
+        title: "Alephium Wallet: passkey support"
+      - status: planned
+        type: wallets
+        title: "Alephium Wallet: Ledger support on mobile"
+      - status: planned
+        type: wallets
+        title: "Alephium Wallet: multiple wallets support on mobile"
+      - status: planned
+        type: wallets
+        title: "Alephium Wallet: watch-only accounts"
+      - status: planned
+        type: dex
+        title: "Core dApp: referral system for CPMM"
+      - status: planned
+        type: dex
+        title: "Core dApp: Bridge integration"
+      - status: planned
+        type: dex
+        title: "Core dApp: buy button integration"
+      - status: planned
+        type: dex
+        title: "Core dApp: Alephium branded UX/UI v2"
+      - status: planned
+        type: bridging
+        title: "Alephium Bridge: more chains"
