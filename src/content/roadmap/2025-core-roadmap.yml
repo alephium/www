@@ -9,7 +9,7 @@ categories:
         description: Unified address format across shards and groups.
         button:
           label: Read the article
-          url: https://www.alephium.org/blog/groupless-addresses
+          url: /blog/groupless-addresses
       - title: Core dApp
         status: ongoing
         type: wallets
@@ -23,36 +23,221 @@ categories:
         description: Refined developer tooling with stronger type safety and testing
           utilities.
   - category: Ecosystem
-    tagline: Tools and partners expanding Alephium adoption.
+    tagline: Expanding Alephium adoption through programs, integrations, and
+      initiatives.
     items:
-      - title: Partner integration program
-        status: ongoing
+      - title: DIA integration
+        status: done
         type: integration
-        description: Support program helping teams ship integrations with Alephium
-          infrastructure.
-      - title: Ecosystem showcase hub
-        status: planned
+        description: "Push oracle. Supporting price feeds, randomness and RWAs. "
+        button:
+          url: https://www.diadata.org/blog/post/dia-price-oracles-alephium-mainnet/
+      - title: Hardware wallet integrations
+        status: done
+        type: integration
+        description: Ledger, SafePal, Tangem and OneKey.
+      - title: Primevault integration
+        status: done
+        type: integration
+        description: MPC wallet and CeDeFi services, for dApps and institutions.
+        button:
+          url: https://alephium.org/news/post/primevault-x-alephium-unlocking-institutional-access-to-defi-on-proof-of-work/
+      - status: done
+        type: integration
+        title: Fiat ramp integrations
+        description: Banxa, Alchemy Pay, Topper, TransFi and GateConnect.
+        button:
+          url: https://x.com/alephium/status/1899529139331481881
+      - status: done
+        type: integration
+        title: Access to ALPH for U.S. users
+        description: Uphold listing. USA based fiat ramps Banxa USA and Topper.
+        button:
+          url: https://x.com/alephium/status/1938161042422374442
+      - status: done
         type: discovery
-        description: Curated discovery hub for dApps, wallets, and infrastructure providers.
-      - title: Ecosystem grants guide
-        status: planned
-        type: guidance
-        description: Playbook for founders to prepare successful grant applications.
+        title: CryptoXR Hackathon
+        description: Alephium took part in CryptoXR, France’s second-largest crypto
+          conference, from January 31 to February 2, 2025, where it organized a
+          hackathon in partnership with LSW3 (League for Web3 Security),
+          attended by 20+ Teams.
+        button:
+          url: https://www.cointribune.com/en/cryptoxr-2025-an-exceptional-hackathon-for-the-future-of-web3/
+      - status: ongoing
+        type: discovery
+        title: Grant program revamp
+        description: New milestone-based grant process with better tracking, clearer
+          funding tiers, and adoption metrics.
+        button:
+          url: https://alephium.org/grants/
+      - status: ongoing
+        type: discovery
+        title: Local communities rollout
+        description: Launching Country / Regional leads with clear playbook.
+        button:
+          url: https://x.com/alephium/status/1985664341061038362
+      - status: ongoing
+        type: discovery
+        title: AlphLand revamp
+        description: "Turning AlphLand into Alephium's central DeFi hub: dApp directory,
+          dashboards, and user discovery tools."
+        button:
+          url: https://www.alph.land/
+      - status: ongoing
+        type: discovery
+        button:
+          url: https://www.alph.land/
+        title: Bounty platform
+        description: A decentralized bounty platform where any Alpehium dApp can post
+          tasks, and users earn on-chain rewards by completing them.
+      - status: ongoing
+        type: discovery
+        title: Outreach to multichain dApps
+        description: Incentivising proven dApps to deploy on Alephium; co-marketing and
+          liquidity deals.
+      - status: ongoing
+        type: discovery
+        title: Strategic launchpad & accelerator partnerships.
+        description: Building pipelines with launchpads & accelerators to bring
+          high-quality projects.
+      - status: planned
+        type: integration
+        title: DEXTool integration
+        button:
+          url: https://www.dextools.io/
+        description: To track Alephium native tokens, liquidity, and prices in real
+          time, we will integrate the DEXTools API once the Core dApp SDK is
+          ready.
+      - status: planned
+        type: integration
+        title: Pull Oracle integration
+        description: We have a Pull Oracle lined up for an integration, once we have a
+          use case justifying the cost e.g. Perp DEX.
+      - status: planned
+        type: discovery
+        title: Online & offline hackatons
+        description: Online and offline hackathons to onboard talented developers and
+          teams to the Alephium ecosystem through hands-on challenges and
+          rewards.
+      - status: planned
+        type: discovery
+        title: Incubator & accelerator program
+        description: Structured mentorship, workshops and VC/angel introductions to help
+          Alephium projects scale from idea to a successful launch.
+      - status: planned
+        type: discovery
+        title: Global & local events, meetups & hubs
+        description: Strengthen global awareness & activate local hubs through meetups,
+          side events & IRL presence.
+      - status: planned
+        type: discovery
+        title: Multichain DeFi Incentivisation campains
+        description: Multichain DeFi incentivization campaigns to reward users for
+          bridging assets and providing liquidity to the Core dApp from ETH and
+          BSC, with community dApps also benefiting from these campaigns, such
+          as Linx's lending platform.
+      - status: planned
+        type: integration
+        title: wUSDTeth on & off ramping
+        description: Buy and sell wUSDTeth directly from your Alephium Wallet.
   - category: Marketing
-    tagline: Awareness initiatives and community growth.
+    tagline: Building awareness, growing the ecosystem.
     items:
-      - title: Quarterly brand campaigns
-        status: planned
-        type: growth
-        description: Cross-channel campaigns highlighting key platform upgrades.
-      - title: Community advocate program
-        status: ongoing
+      - status: done
         type: events
-        description: Empower community members with resources to host events and AMAs.
-      - title: Builder spotlight series
-        status: planned
+        title: Danube network upgrade campain
+        button:
+          url: https://x.com/alephium/status/1920780688313233634
+        description: Danube marks a shift, this is where the vision of Web3 starts to
+          feel real. Where onboarding doesn't require a technical manual. Where
+          developers aren't boxed in by protocol constraints. Danube brings the
+          features, UX, and dev experience that many other chains talk about -
+          but few deliver.
+      - status: done
         type: content
-        description: Monthly interviews with projects launching on Alephium.
+        title: Alephium.org revamp
+        button:
+          url: https://alephium.org/
+        description: A revamped website to showcase our Layer 1, offering improved
+          access to our ecosystem, ongoing initiatives, resources, and guidance
+          on how to get started and get involved.
+      - status: done
+        type: content
+        title: Alephium.org News section
+        button:
+          url: https://alephium.org/news/
+        description: News, updates, and insights from the Alephium ecosystem.
+      - status: done
+        type: growth
+        title: Ambassador Program revamp
+        button:
+          url: https://alephium.org/ambassador/
+        description: A revamped ambassador program designed to be clearer, more
+          rewarding, and fully aligned with our current growth phase.
+      - status: done
+        type: events
+        title: Alephium Phase 2 campaign
+        button:
+          url: https://x.com/alephium/status/1958886335202435548
+        description: Marking the beginning of Alephium's 2nd chapter. From scalable
+          infrastructure to aligned economics.
+      - status: done
+        type: content
+        title: Launched & established Alephium Assemble ecosystem videos
+        button:
+          url: https://www.youtube.com/@alephium/videos
+        description: Watch Pepper & Carla video guide to everything Alephium every two
+          weeks! Packed with exclusive insights and alpha, these episodes keep
+          you fully connected to all the latest happenings in the Alephium
+          universe.
+      - status: ongoing
+        type: growth
+        title: Alephium Guards expansion
+        description: Increased budgeting and resources allocated to this amplification
+          layer.
+      - status: ongoing
+        type: growth
+        title: Regular video content + X Spaces + scaling output
+      - status: ongoing
+        type: growth
+        title: PR & Media growth
+      - status: ongoing
+        type: content
+        title: CMC Token marketing campaign
+        description: Leverages our Alephium Squires & Guards.
+      - status: ongoing
+        type: content
+        title: Internal Team thought leadership campaign
+        button:
+          url: https://www.youtube.com/@alephium/videos
+        description: >
+          Team Talks getting you on degree closer to the core team, helping you
+          understand what they're working on, what challenges they're facing,
+          and also who they are as humans. After all, we are all humans here at
+          Alephium!
+      - status: ongoing
+        type: content
+        title: L1 season campaign narrative
+        button:
+          url: https://alephium.org/news/
+      - status: planned
+        type: events
+        title: Core dApp road to testnet campaign
+      - status: planned
+        type: growth
+        title: Targeted regional ads campaigns
+      - status: planned
+        type: growth
+        title: Earned media campaign
+      - status: planned
+        type: growth
+        title: Reactive user and builder acquisition campaign
+      - status: planned
+        type: content
+        title: Content marketing series for Alephium use cases
+      - status: planned
+        type: growth
+        title: Social media paid Ads campaign
   - category: Liquidity
     tagline: Strengthening token distribution and DeFi rails.
     items:
