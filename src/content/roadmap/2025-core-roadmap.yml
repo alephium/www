@@ -239,7 +239,7 @@ categories:
         type: growth
         title: Social media paid Ads campaign
   - category: Apps
-    tagline: TBD
+    tagline: Foundational apps built by the Core Team to serve the Alephium ecosystem.
     items:
       - status: done
         type: wallets
@@ -251,10 +251,10 @@ categories:
         title: "All products: multiple language support"
       - status: done
         type: wallets
-        title: "Alephium Wallet: On-ramp integration"
+        title: "Alephium Wallet: on-ramp integration"
       - status: done
         type: wallets
-        title: "Alephium Wallet: In-app browser on mobile"
+        title: "Alephium Wallet: in-app browser on mobile"
       - status: done
         type: wallets
         title: "Alephium Wallet: state management migration & offline caching"
@@ -272,16 +272,16 @@ categories:
         title: "Core dApp: SDK for DEX basic functionality"
       - status: done
         type: dex
-        title: "Core dApp: Backend basic functionality"
+        title: "Core dApp: backend basic functionality"
       - status: done
         type: dex
-        title: "Core dApp: Frontend basic functionality"
+        title: "Core dApp: frontend basic functionality"
       - status: done
         type: dex
         title: "Core dApp: MVP on testnet"
       - status: ongoing
         type: dex
-        title: "Core dApp: Ensure all regular workflows are functional in CLMM"
+        title: "Core dApp: ensure all regular workflows are functional in CLMM"
       - status: ongoing
         type: dex
         title: "Core dApp: Alephium Branded UX/UI v1"
@@ -297,3 +297,36 @@ categories:
       - status: ongoing
         type: dex
         title: "Alephium Bridge: widget"
+      - status: planned
+        type: wallets
+        title: "Alephium Wallet: ecosystem screen on desktop"
+      - status: planned
+        type: wallets
+        title: "Alephium Wallet: push notifications on mobile"
+      - status: planned
+        type: wallets
+        title: "Alephium Wallet: passkey support"
+      - status: planned
+        type: wallets
+        title: "Alephium Wallet: Ledger support on mobile"
+      - status: planned
+        type: wallets
+        title: "Alephium Wallet: multiple wallets support on mobile"
+      - status: planned
+        type: wallets
+        title: "Alephium Wallet: watch-only accounts"
+      - status: planned
+        type: dex
+        title: "Core dApp: referral system for CPMM"
+      - status: planned
+        type: dex
+        title: "Core dApp: Bridge integration"
+      - status: planned
+        type: dex
+        title: "Core dApp: buy button integration"
+      - status: planned
+        type: dex
+        title: "Core dApp: Alephium branded UX/UI v2"
+      - status: planned
+        type: bridging
+        title: "Alephium Bridge: more chains"
