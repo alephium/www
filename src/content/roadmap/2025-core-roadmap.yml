@@ -261,40 +261,40 @@ categories:
         type: wallets
         title: "Alephium Wallet: groupless address and chained transactions support"
       - status: done
-        type: bridging
+        type: bridge
         title: "Alephium Bridge: UI/UX revamp"
       - status: done
-        type: dex
+        type: coreDapp
         title: "Core dApp: CLMM/CPMM DEX contracts basic functionality"
       - status: done
-        type: dex
+        type: coreDapp
         title: "Core dApp: SDK for DEX basic functionality"
       - status: done
-        type: dex
+        type: coreDapp
         title: "Core dApp: backend basic functionality"
       - status: done
-        type: dex
+        type: coreDapp
         title: "Core dApp: frontend basic functionality"
       - status: done
-        type: dex
+        type: coreDapp
         title: "Core dApp: MVP on testnet"
       - status: ongoing
-        type: dex
+        type: coreDapp
         title: "Core dApp: ensure all regular workflows are functional in CLMM"
       - status: ongoing
-        type: dex
+        type: coreDapp
         title: "Core dApp: Alephium Branded UX/UI v1"
       - status: ongoing
-        type: dex
+        type: coreDapp
         title: "Core dApp: manage user positions"
       - status: ongoing
-        type: dex
+        type: coreDapp
         title: "Core dApp: pool statistics"
       - status: ongoing
-        type: dex
+        type: coreDapp
         title: "Core dApp: support Alephium staking"
       - status: ongoing
-        type: dex
+        type: coreDapp
         title: "Alephium Bridge: widget"
       - status: planned
         type: wallets
@@ -315,17 +315,17 @@ categories:
         type: wallets
         title: "Alephium Wallet: watch-only accounts"
       - status: planned
-        type: dex
+        type: coreDapp
         title: "Core dApp: referral system for CPMM"
       - status: planned
-        type: dex
+        type: coreDapp
         title: "Core dApp: Bridge integration"
       - status: planned
-        type: dex
+        type: coreDapp
         title: "Core dApp: buy button integration"
       - status: planned
-        type: dex
+        type: coreDapp
         title: "Core dApp: Alephium branded UX/UI v2"
       - status: planned
-        type: bridging
+        type: bridge
         title: "Alephium Bridge: more chains"
