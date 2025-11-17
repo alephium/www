@@ -23,7 +23,8 @@ categories:
         description: Refined developer tooling with stronger type safety and testing
           utilities.
   - category: Ecosystem
-    tagline: Programs, integrations and initiatives expanding Alephium adoption.
+    tagline: Expanding Alephium adoption through programs, integrations, and
+      initiatives.
     items:
       - title: DIA integration
         status: done
@@ -140,7 +141,7 @@ categories:
         title: wUSDTeth on & off ramping
         description: Buy and sell wUSDTeth directly from your Alephium Wallet.
   - category: Marketing
-    tagline: Awareness initiatives and community growth.
+    tagline: Building awareness, growing the ecosystem.
     items:
       - status: done
         type: events
@@ -189,6 +190,54 @@ categories:
           weeks! Packed with exclusive insights and alpha, these episodes keep
           you fully connected to all the latest happenings in the Alephium
           universe.
+      - status: ongoing
+        type: growth
+        title: Alephium Guards expansion
+        description: Increased budgeting and resources allocated to this amplification
+          layer.
+      - status: ongoing
+        type: growth
+        title: Regular video content + X Spaces + scaling output
+      - status: ongoing
+        type: growth
+        title: PR & Media growth
+      - status: ongoing
+        type: content
+        title: CMC Token marketing campaign
+        description: Leverages our Alephium Squires & Guards.
+      - status: ongoing
+        type: content
+        title: Internal Team thought leadership campaign
+        button:
+          url: https://www.youtube.com/@alephium/videos
+        description: >
+          Team Talks getting you on degree closer to the core team, helping you
+          understand what they're working on, what challenges they're facing,
+          and also who they are as humans. After all, we are all humans here at
+          Alephium!
+      - status: ongoing
+        type: content
+        title: L1 season campaign narrative
+        button:
+          url: https://alephium.org/news/
+      - status: planned
+        type: events
+        title: Core dApp road to testnet campaign
+      - status: planned
+        type: growth
+        title: Targeted regional ads campaigns
+      - status: planned
+        type: growth
+        title: Earned media campaign
+      - status: planned
+        type: growth
+        title: Reactive user and builder acquisition campaign
+      - status: planned
+        type: content
+        title: Content marketing series for Alephium use cases
+      - status: planned
+        type: growth
+        title: Social media paid Ads campaign
   - category: Liquidity
     tagline: Strengthening token distribution and DeFi rails.
     items:
