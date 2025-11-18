@@ -294,10 +294,9 @@ const CategorySection = styled.section`
   display: flex;
   flex-direction: column;
   gap: var(--spacing-3);
-  background-color: ${({ theme }) => theme.background2};
   padding: var(--spacing-4);
+  background: ${({ theme }) => theme.background2};
   border-radius: var(--radius-big);
-  border: 1px solid ${({ theme }) => theme.borderSecondary};
 `
 
 const CategoryTagline = styled.p`

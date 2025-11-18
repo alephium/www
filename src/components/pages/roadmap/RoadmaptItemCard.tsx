@@ -19,6 +19,7 @@ const RoadmapItemCard = ({ item, itemId, isActive, onToggle }: RoadmapItemCardPr
   const { title, type } = item
   const meta = type ? ROADMAP_ITEM_TYPE_META[type] : undefined
   const { Icon: TypeIcon, label } = meta ?? ROADMAP_ITEM_TYPE_META[DEFAULT_ROADMAP_ITEM_TYPE]
+  const canExpand = Boolean(item.description?.trim())
 
   useEffect(() => {
     if (!isActive) {
@@ -53,9 +54,12 @@ const RoadmapItemCard = ({ item, itemId, isActive, onToggle }: RoadmapItemCardPr
       <CollapsedButton
         type="button"
         layout="position"
-        onClick={() => onToggle(itemId)}
-        aria-expanded={isActive}
+        onClick={canExpand ? () => onToggle(itemId) : undefined}
+        aria-expanded={canExpand ? isActive : undefined}
+        aria-disabled={!canExpand}
+        disabled={!canExpand}
         $isActive={isActive}
+        $canExpand={canExpand}
       >
         <ItemCopy>
           <ItemLabelRow>
@@ -64,12 +68,14 @@ const RoadmapItemCard = ({ item, itemId, isActive, onToggle }: RoadmapItemCardPr
           </ItemLabelRow>
           <ItemTitle>{title}</ItemTitle>
         </ItemCopy>
-        <RightSide>
-          <PlusIcon size={16} weight="bold" color={theme.textSecondary} />
-        </RightSide>
+        {canExpand && (
+          <RightSide>
+            <PlusIcon size={16} weight="bold" color={theme.textSecondary} />
+          </RightSide>
+        )}
       </CollapsedButton>
       <AnimatePresence>
-        {isActive && (
+        {canExpand && isActive && (
           <ExpandedCardShell key="expanded-content">
             <ExpandedCard
               ref={overlayRef}
@@ -128,7 +134,7 @@ const RightSide = styled.div`
   transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 `
 
-const CollapsedButton = styled(motion.button)<{ $isActive: boolean }>`
+const CollapsedButton = styled(motion.button)<{ $isActive: boolean; $canExpand: boolean }>`
   display: flex;
   align-items: flex-start;
   gap: var(--spacing-3);
@@ -137,13 +143,13 @@ const CollapsedButton = styled(motion.button)<{ $isActive: boolean }>`
   border: 1px solid ${({ theme }) => theme.borderPrimary};
   background: ${({ theme }) => theme.surface2};
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
+  cursor: ${({ $canExpand }) => ($canExpand ? 'pointer' : 'default')};
   width: 100%;
   text-align: left;
   opacity: ${({ $isActive }) => ($isActive ? 0 : 1)};
   pointer-events: ${({ $isActive }) => ($isActive ? 'none' : 'auto')};
 
-  &:hover {
+  &:hover:not(:disabled) {
     background: ${({ theme }) => theme.surface1};
     ${RightSide} {
       opacity: 1;
@@ -153,6 +159,10 @@ const CollapsedButton = styled(motion.button)<{ $isActive: boolean }>`
   &:focus-visible {
     outline: none;
     box-shadow: 0 0 0 2px ${({ theme }) => theme.palette1};
+  }
+
+  &:disabled {
+    opacity: 1;
   }
 `
 
@@ -215,7 +225,7 @@ const ExpandedCard = styled(motion.div)`
 
 const ExpandedHeader = styled.div`
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: var(--spacing-2);
 `
 
