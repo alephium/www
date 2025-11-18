@@ -333,7 +333,7 @@ categories:
       - status: planned
         type: coreDapp
         title: CPMM referral system
-      - status: planned
+      - status: ongoing
         type: coreDapp
         title: Bridge integration
       - status: planned
@@ -344,4 +344,4 @@ categories:
         title: Alephium-branded UX/UI v2
       - status: planned
         type: bridge
-        title: Additional bridge chains
+        title: Additional chains
