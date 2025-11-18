@@ -253,79 +253,79 @@ categories:
         title: On-ramp integration
       - status: done
         type: wallets
-        title: "Alephium Wallet: in-app browser on mobile"
+        title: Mobile in-app browser
       - status: done
         type: wallets
-        title: "Alephium Wallet: state management migration & offline caching"
+        title: State management & offline caching
       - status: done
         type: wallets
-        title: "Alephium Wallet: groupless address and chained transactions support"
+        title: Groupless addresses & chained transactions
       - status: done
         type: bridge
-        title: "Alephium Bridge: UI/UX revamp"
+        title: Bridge UI/UX revamp
       - status: done
         type: coreDapp
-        title: "Core dApp: CLMM/CPMM DEX contracts basic functionality"
+        title: CLMM/CPMM DEX contracts
       - status: done
         type: coreDapp
-        title: "Core dApp: SDK for DEX basic functionality"
+        title: DEX SDK foundation
       - status: done
         type: coreDapp
-        title: "Core dApp: backend basic functionality"
+        title: Backend foundation
       - status: done
         type: coreDapp
-        title: "Core dApp: frontend basic functionality"
+        title: Frontend foundation
       - status: done
         type: coreDapp
-        title: "Core dApp: MVP on testnet"
+        title: MVP on testnet
       - status: ongoing
         type: coreDapp
-        title: "Core dApp: ensure all regular workflows are functional in CLMM"
+        title: CLMM workflow parity
       - status: ongoing
         type: coreDapp
-        title: "Core dApp: Alephium Branded UX/UI v1"
+        title: Alephium-branded UX/UI v1
       - status: ongoing
         type: coreDapp
-        title: "Core dApp: manage user positions"
+        title: Manage user positions
       - status: ongoing
         type: coreDapp
-        title: "Core dApp: pool statistics"
+        title: Pool statistics
       - status: ongoing
         type: coreDapp
-        title: "Core dApp: support Alephium staking"
+        title: Staking support
       - status: ongoing
-        type: coreDapp
-        title: "Alephium Bridge: widget"
+        type: bridge
+        title: Bridge widget
       - status: planned
         type: wallets
-        title: "Alephium Wallet: ecosystem screen on desktop"
+        title: Desktop ecosystem screen
       - status: planned
         type: wallets
-        title: "Alephium Wallet: push notifications on mobile"
+        title: Mobile push notifications
       - status: planned
         type: wallets
-        title: "Alephium Wallet: passkey support"
+        title: Passkey support
       - status: planned
         type: wallets
-        title: "Alephium Wallet: Ledger support on mobile"
+        title: Mobile Ledger support
       - status: planned
         type: wallets
-        title: "Alephium Wallet: multiple wallets support on mobile"
+        title: Multi-wallet mobile support
       - status: planned
         type: wallets
-        title: "Alephium Wallet: watch-only accounts"
-      - status: planned
-        type: coreDapp
-        title: "Core dApp: referral system for CPMM"
+        title: Watch-only accounts
       - status: planned
         type: coreDapp
-        title: "Core dApp: Bridge integration"
+        title: CPMM referral system
       - status: planned
         type: coreDapp
-        title: "Core dApp: buy button integration"
+        title: Bridge integration
       - status: planned
         type: coreDapp
-        title: "Core dApp: Alephium branded UX/UI v2"
+        title: Buy button integration
+      - status: planned
+        type: coreDapp
+        title: Alephium-branded UX/UI v2
       - status: planned
         type: bridge
-        title: "Alephium Bridge: more chains"
+        title: Additional bridge chains

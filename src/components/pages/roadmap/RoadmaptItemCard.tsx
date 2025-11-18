@@ -18,7 +18,9 @@ const RoadmapItemCard = ({ item, itemId, isActive, onToggle }: RoadmapItemCardPr
   const overlayRef = useRef<HTMLDivElement>(null)
   const { title, type } = item
   const meta = type ? ROADMAP_ITEM_TYPE_META[type] : undefined
-  const { Icon: TypeIcon, label } = meta ?? ROADMAP_ITEM_TYPE_META[DEFAULT_ROADMAP_ITEM_TYPE]
+  const fallbackMeta = ROADMAP_ITEM_TYPE_META[DEFAULT_ROADMAP_ITEM_TYPE]
+  const { Icon: TypeIcon, label, color } = meta ?? fallbackMeta
+  const iconColor = color || fallbackMeta.color
   const canExpand = Boolean(item.description?.trim())
 
   useEffect(() => {
@@ -63,7 +65,7 @@ const RoadmapItemCard = ({ item, itemId, isActive, onToggle }: RoadmapItemCardPr
       >
         <ItemCopy>
           <ItemLabelRow>
-            <TypeIcon size={14} color={theme.textTertiary} />
+            <TypeIcon size={14} color={iconColor} />
             <ItemType>{label}</ItemType>
           </ItemLabelRow>
           <ItemTitle>{title}</ItemTitle>
@@ -92,8 +94,8 @@ const RoadmapItemCard = ({ item, itemId, isActive, onToggle }: RoadmapItemCardPr
               }}
             >
               <ExpandedHeader>
-                <ExpandedIconBadge>
-                  <TypeIcon size={24} color={theme.textSecondary} />
+                <ExpandedIconBadge $color={iconColor}>
+                  <TypeIcon size={24} color={iconColor} />
                 </ExpandedIconBadge>
                 <HeaderCopy>
                   <ExpandedTitle>{title}</ExpandedTitle>
@@ -229,11 +231,12 @@ const ExpandedHeader = styled.div`
   gap: var(--spacing-2);
 `
 
-const ExpandedIconBadge = styled(IconBadge)`
+const ExpandedIconBadge = styled(IconBadge)<{ $color?: string }>`
   padding: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: ${({ $color }) => ($color ? `${$color}26` : 'transparent')};
 `
 
 const HeaderCopy = styled.div`
