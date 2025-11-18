@@ -22,6 +22,8 @@ const RoadmapItemCard = ({ item, itemId, isActive, onToggle }: RoadmapItemCardPr
   const { Icon: TypeIcon, label, color } = meta ?? fallbackMeta
   const iconColor = color || fallbackMeta.color
   const canExpand = Boolean(item.description?.trim())
+  const buttonLabel = item.button?.label
+  const buttonUrl = item.button?.url
 
   useEffect(() => {
     if (!isActive) {
@@ -105,9 +107,9 @@ const RoadmapItemCard = ({ item, itemId, isActive, onToggle }: RoadmapItemCardPr
                 </CloseButton>
               </ExpandedHeader>
               {item.description && <Description>{item.description}</Description>}
-              {item.button?.label && item.button.url && (
-                <ActionButton url={item.button.url} highlight squared textAlign="center">
-                  {item.button.label}
+              {buttonLabel && buttonUrl && (
+                <ActionButton url={buttonUrl} highlight squared textAlign="center">
+                  {buttonLabel}
                 </ActionButton>
               )}
             </ExpandedCard>
