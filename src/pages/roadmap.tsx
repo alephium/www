@@ -1,13 +1,10 @@
 import { PageProps } from 'gatsby'
-import { useTheme } from 'styled-components'
 
-import ClickableBox from '../components/customPageComponents/ClickableBox'
-import Grid from '../components/customPageComponents/Grid'
 import Page from '../components/customPageComponents/Page'
-import SubheaderContent from '../components/customPageComponents/SubheaderContent'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import NetworkUpgradesCardScroller from '../components/NetworkUpgradesCardScroller'
+import Phase2HighlightsSection from '../components/pages/roadmap/Phase2HighlightsSection'
 import Phase2Section from '../components/pages/roadmap/Phase2Section'
 import Roadmap from '../components/pages/roadmap/Roadmap'
 import SectionDivider from '../components/SectionDivider'
@@ -40,15 +37,9 @@ const CustomPage = (props: PageProps) => (
           <NetworkUpgradesCardScroller />
         </SubpageSection>
 
-        <SectionDivider />
-
         <Phase2Section />
 
-        <SectionDivider />
-
-        <ChangesSection />
-
-        <SectionDivider />
+        <Phase2HighlightsSection />
 
         <Roadmap />
 
@@ -72,101 +63,3 @@ const CustomPage = (props: PageProps) => (
 )
 
 export default CustomPage
-
-const ChangesSection = () => {
-  const theme = useTheme()
-  return (
-    <SubpageSection>
-      <TextElement isCentered>
-        <h2>
-          What are the latest
-          <br />
-          changes in Alephium?
-        </h2>
-        <p>
-          Danube isn&apos;t just an upgrade, it&apos;s <strong>the leap that enhances everything</strong> from wallet
-          simplicity to block speed and developer power, redefining what&apos;s possible for a UTXO-based smart contract
-          chain.
-        </p>
-      </TextElement>
-
-      <SubheaderContent>
-        <Grid columns={2} gap="small">
-          <ClickableBox>
-            <TextElement noMargin>
-              <p>
-                <strong style={{ color: theme.palette1 }}>One Address for Everything</strong> - Before Danube, every
-                Alephium wallet had multiple addresses associated with specific network shard groups.
-              </p>
-            </TextElement>
-          </ClickableBox>
-          <ClickableBox>
-            <TextElement noMargin>
-              <p>
-                <strong style={{ color: theme.palette1 }}>8-Second Block Time</strong> - The network now processes an
-                average of 2 blocks per second across all 4 chains, bringing Alephium on par with many leading
-                proof-of-stake networks.
-              </p>
-            </TextElement>
-          </ClickableBox>
-          <ClickableBox>
-            <TextElement noMargin>
-              <p>
-                <strong style={{ color: theme.palette1 }}>Chained Transactions</strong> - Call several smart contracts
-                and use the assets created during those calls in the same transaction. The UTXO rules now apply at the
-                function level.
-              </p>
-            </TextElement>
-          </ClickableBox>
-          <ClickableBox>
-            <TextElement noMargin>
-              <p>
-                <strong style={{ color: theme.palette1 }}>Quick Sync for Nodes</strong> - Sync time is now up to three
-                times faster. Nodes download a quick &quot;skeleton&quot; first, then fetch data in parallel. More
-                efficient syncing = more nodes = stronger network.
-              </p>
-            </TextElement>
-          </ClickableBox>
-          <ClickableBox>
-            <TextElement noMargin>
-              <p>
-                <strong style={{ color: theme.palette1 }}>Passkeys Support</strong> - Secure credentials stored on your
-                device. You can log in using Face ID, Touch ID, or hardware keys like YubiKey. Seed phrases can still be
-                used, but they&apos;re no longer required at the start.
-              </p>
-            </TextElement>
-          </ClickableBox>
-          <ClickableBox>
-            <TextElement noMargin>
-              <p>
-                <strong style={{ color: theme.palette1 }}>Sustainable Tokenomics</strong> - The hard cap has been
-                removed and replaced with a tail emission model. After the initial 81 years, ALPH continues to be mined
-                at a slow, steady pace. This ensures miners remain incentivized long-term.
-              </p>
-            </TextElement>
-          </ClickableBox>
-          <ClickableBox>
-            <TextElement noMargin>
-              <p>
-                <strong style={{ color: theme.palette1 }}>Smarter Developer Tools</strong> - A new VM instruction lets
-                contracts access the external user. Bitwise operations for 256-bit integers (I256) improve efficiency.
-                The VM now auto-handles dust, contract, and map deposits, with assets and states instantly accessible by
-                other contract calls.
-              </p>
-            </TextElement>
-          </ClickableBox>
-          <ClickableBox>
-            <TextElement noMargin>
-              <p>
-                <strong style={{ color: theme.palette1 }}>Faster, Smarter Consensus</strong> - Danube optimizes
-                Alephium&apos;s BlockFlow consensus algorithm with an &quot;optimistic&quot; execution path. Network
-                throughput and responsiveness are doubled (up to 20k transactions per second) without compromising
-                consensus integrity.
-              </p>
-            </TextElement>
-          </ClickableBox>
-        </Grid>
-      </SubheaderContent>
-    </SubpageSection>
-  )
-}

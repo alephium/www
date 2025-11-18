@@ -143,6 +143,7 @@ const CollapsedButton = styled(motion.button)<{ $isActive: boolean; $canExpand: 
   align-items: flex-start;
   gap: var(--spacing-3);
   padding: var(--spacing-2);
+  padding-top: calc(var(--spacing-2) / 1.2);
   border-radius: var(--radius);
   border: 1px solid ${({ theme }) => theme.borderPrimary};
   background: ${({ theme }) => theme.surface2};

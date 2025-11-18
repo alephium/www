@@ -1,11 +1,11 @@
 import { graphql, useStaticQuery } from 'gatsby'
 import { useCallback, useMemo, useState } from 'react'
-import styled, { css } from 'styled-components'
+import styled, { css, keyframes } from 'styled-components'
 
 import { deviceBreakPoints } from '../../../styles/global-style'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextElement from '../../customPageComponents/TextElement'
-import { ROADMAP_STATUSES, RoadmapItem, RoadmapStatus } from './roadmapMeta'
+import { ROADMAP_CATEGORY_META, ROADMAP_STATUSES, RoadmapCategoryKey, RoadmapItem, RoadmapStatus } from './roadmapMeta'
 import RoadmapItemCard from './RoadmaptItemCard'
 
 interface RoadmapCategory {
@@ -76,16 +76,17 @@ const Roadmap = () => {
 
   return (
     <Wrapper id="roadmap">
-      <SubpageSection gradientPosition="bottom" edgeGradient border="bottom">
-        <TextElement isCentered>
-          <h2>Future Roadmap</h2>
+      <SubpageSection>
+        <TextElement>
+          <LiveHeading>
+            Live Roadmap Dashboard
+            <LiveIndicator aria-hidden="true" />
+          </LiveHeading>
           <p>
-            Track Alephium&apos;s upcoming milestones as we build across the core platform, ecosystem, marketing, and
-            liquidity fronts.
+            For full transparency and accountability into everything we’re building. And for those awaiting the Core
+            dApp, the “Apps” section now brings you one step closer to the action.
           </p>
         </TextElement>
-      </SubpageSection>
-      <SubpageSection>
         <TimelineSection>
           {roadmaps.map((roadmap) => (
             <RoadmapYearSection key={roadmap.title} {...roadmap} />
@@ -121,6 +122,9 @@ const RoadmapYearSection = ({ title, categories }: RoadmapData) => {
         <CategoryTabs role="tablist">
           {categories.map((category, idx) => {
             const categoryName = category.category?.trim() || 'Uncategorized'
+            const normalizedCategoryKey = categoryName.toLowerCase() as RoadmapCategoryKey
+            const categoryMeta = ROADMAP_CATEGORY_META[normalizedCategoryKey]
+            const TabIcon = categoryMeta?.Icon
             return (
               <CategoryTab
                 key={`${title}-${categoryName}-${idx}`}
@@ -131,7 +135,12 @@ const RoadmapYearSection = ({ title, categories }: RoadmapData) => {
                 isActive={safeIndex === idx}
                 onClick={() => setActiveIndex(idx)}
               >
-                {categoryName}
+                {safeIndex === idx && TabIcon && categoryMeta && (
+                  <CategoryTabIcon aria-hidden="true" $color={categoryMeta.color} $background={categoryMeta.background}>
+                    <TabIcon size={20} weight="duotone" />
+                  </CategoryTabIcon>
+                )}
+                <CategoryTabName>{categoryName}</CategoryTabName>
               </CategoryTab>
             )
           })}
@@ -199,10 +208,51 @@ const RoadmapYearSection = ({ title, categories }: RoadmapData) => {
 
 const Wrapper = styled.section``
 
+const pulse = keyframes`
+  0% {
+    transform: scale(0.4);
+    opacity: 0.8;
+  }
+  70% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+`
+
+const LiveHeading = styled.h2`
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  margin-bottom: var(--spacing-2);
+`
+
+const LiveIndicator = styled.span`
+  position: relative;
+  display: inline-flex;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: ${({ theme }) => theme.palette5};
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: -5px;
+    border-radius: 50%;
+    border: 2px solid ${({ theme }) => theme.palette5};
+    opacity: 0.6;
+    animation: ${pulse} 2s ease-out infinite;
+  }
+`
+
 const TimelineSection = styled.div`
   display: flex;
   flex-direction: column;
   gap: var(--spacing-6);
+  margin-top: var(--spacing-4);
 `
 
 const RoadmapContainer = styled.div`
@@ -250,12 +300,17 @@ const StickyTitle = styled.h2`
 
 const CategoryTabs = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--spacing-4);
-  margin: 0 calc(-1 * var(--spacing-1));
-  padding: 0 var(--spacing-1);
+  flex-wrap: nowrap;
+  gap: var(--spacing-1);
+  padding: var(--spacing-1);
+  width: fit-content;
   overflow-x: auto;
   scrollbar-width: none;
+  border-radius: var(--radius-big);
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid ${({ theme }) => theme.borderSecondary};
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(20px);
 
   &::-webkit-scrollbar {
     display: none;
@@ -264,29 +319,55 @@ const CategoryTabs = styled.div`
 
 const CategoryTab = styled.button<{ isActive: boolean }>`
   appearance: none;
-  background: none;
   border: none;
-  padding: 0 0 var(--spacing-1);
-  font-size: var(--fontSize-24);
+  padding: var(--spacing-1) var(--spacing-2);
+  padding-left: var(--spacing-1);
+  font-size: var(--fontSize-22);
   font-weight: var(--fontWeight-regular);
   color: ${({ theme, isActive }) => (isActive ? theme.textPrimary : theme.textSecondary)};
-  border-bottom: 2px solid ${({ theme, isActive }) => (isActive ? theme.textPrimary : 'transparent')};
+  background: ${({ theme, isActive }) => (isActive ? theme.surface1 : 'transparent')};
+  border-radius: var(--radius);
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   white-space: nowrap;
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: ${({ isActive }) =>
+    isActive && '0px 8px 24px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.08)'};
 
   &:hover {
     color: ${({ theme }) => theme.textPrimary};
+    background: ${({ theme, isActive }) => (isActive ? theme.surface1 : theme.surface2)};
   }
 
   &:focus-visible {
     outline: 2px solid ${({ theme }) => theme.palette1};
-    outline-offset: 2px;
+    outline-offset: 4px;
   }
 
   @media ${deviceBreakPoints.mobile} {
     font-size: var(--fontSize-20);
+    padding: var(--spacing-1) var(--spacing-3);
   }
+`
+
+const CategoryTabIcon = styled.span<{ $color: string; $background: string }>`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  color: ${({ $color }) => $color};
+  flex-shrink: 0;
+
+  svg {
+    display: block;
+  }
+`
+
+const CategoryTabName = styled.span`
+  padding-left: var(--spacing-1);
 `
 
 const CategorySection = styled.section`

@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 
-import Button from '../../Button'
 import SubheaderContent from '../../customPageComponents/SubheaderContent'
 import SubpageSection from '../../customPageComponents/SubpageSection'
 import TextElement from '../../customPageComponents/TextElement'
@@ -74,9 +73,6 @@ const Phase2Section = () => (
         staking, composability and decentralization begin to connect, creating a self-sustaining ecosystem designed for
         long-term growth.
       </p>
-      <Button highlight squared url="https://alephium.org/news/post/from-scalable-infrastructure-to-aligned-economics/">
-        More on Phase 2
-      </Button>
     </TextElement>
 
     <SubheaderContent>

@@ -30,7 +30,7 @@ export const darkTheme: DefaultTheme = {
   palette2: '#F99E70',
   palette3: '#66d479ff',
   palette4: '#a46cdbff',
-  palette5: '#ed7986ff',
+  palette5: '#e65465ff',
   palette6: '#465cd9ff'
 }
 

@@ -39,6 +39,8 @@ const TextElement = styled.div<TextElementProps>`
     !noTextCentering &&
     css`
       text-align: center;
+      padding-left: var(--spacing-2);
+      padding-right: var(--spacing-2);
     `};
 
   ${({ isCentered }) =>
