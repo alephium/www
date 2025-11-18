@@ -37,7 +37,7 @@ categories:
           label: Read announcement
           url: https://x.com/alephium/status/1938161042422374442
       - status: done
-        type: discovery
+        type: initiative
         title: CryptoXR Hackathon
         description: Alephium took part in CryptoXR, France’s second-largest crypto
           conference, from January 31 to February 2, 2025, where it organized a
@@ -47,7 +47,7 @@ categories:
           label: Event recap
           url: https://www.cointribune.com/en/cryptoxr-2025-an-exceptional-hackathon-for-the-future-of-web3/
       - status: ongoing
-        type: discovery
+        type: program
         title: Grant program revamp
         description: New milestone-based grant process with better tracking, clearer
           funding tiers, and adoption metrics.
@@ -55,7 +55,7 @@ categories:
           label: Explore grants
           url: https://alephium.org/grants/
       - status: ongoing
-        type: discovery
+        type: program
         title: Local communities rollout
         description: Launching Country / Regional leads with clear playbook.
         button:
@@ -78,12 +78,12 @@ categories:
         description: A decentralized bounty platform where any Alpehium dApp can post
           tasks, and users earn on-chain rewards by completing them.
       - status: ongoing
-        type: discovery
+        type: initiative
         title: Outreach to multichain dApps
         description: Incentivising proven dApps to deploy on Alephium; co-marketing and
           liquidity deals.
       - status: ongoing
-        type: discovery
+        type: initiative
         title: Strategic launchpad & accelerator partnerships.
         description: Building pipelines with launchpads & accelerators to bring
           high-quality projects.
@@ -102,23 +102,23 @@ categories:
         description: We have a Pull Oracle lined up for an integration, once we have a
           use case justifying the cost e.g. Perp DEX.
       - status: planned
-        type: discovery
+        type: initiative
         title: Online & offline hackatons
         description: Online and offline hackathons to onboard talented developers and
           teams to the Alephium ecosystem through hands-on challenges and
           rewards.
       - status: planned
-        type: discovery
+        type: program
         title: Incubator & accelerator program
         description: Structured mentorship, workshops and VC/angel introductions to help
           Alephium projects scale from idea to a successful launch.
       - status: planned
-        type: discovery
+        type: initiative
         title: Global & local events, meetups & hubs
         description: Strengthen global awareness & activate local hubs through meetups,
           side events & IRL presence.
       - status: planned
-        type: discovery
+        type: initiative
         title: Multichain DeFi Incentivisation campains
         description: Multichain DeFi incentivization campaigns to reward users for
           bridging assets and providing liquidity to the Core dApp from ETH and
