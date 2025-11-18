@@ -57,11 +57,11 @@ const RoadmapItemCard = ({ item, itemId, isActive, onToggle }: RoadmapItemCardPr
         aria-expanded={isActive}
         $isActive={isActive}
       >
-        <IconBadge>
-          <TypeIcon size={20} color={theme.textSecondary} />
-        </IconBadge>
         <ItemCopy>
-          <ItemType>{label}</ItemType>
+          <ItemLabelRow>
+            <TypeIcon size={14} color={theme.textTertiary} />
+            <ItemType>{label}</ItemType>
+          </ItemLabelRow>
           <ItemTitle>{title}</ItemTitle>
         </ItemCopy>
         <RightSide>
@@ -166,21 +166,27 @@ const IconBadge = styled.span`
 const ItemCopy = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
   pointer-events: none;
+`
+
+const ItemLabelRow = styled.span`
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 `
 
 const ItemType = styled.span`
   font-size: var(--fontSize-12);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: ${({ theme }) => theme.textSecondary};
+  color: ${({ theme }) => theme.textTertiary};
 `
 
 const ItemTitle = styled.span`
   margin: 0;
   font-size: var(--fontSize-18);
-  color: ${({ theme }) => theme.textPrimary};
+  color: ${({ theme }) => theme.textPrimaryVariation};
 `
 
 const ExpandedCardShell = styled.div`
@@ -197,7 +203,7 @@ const ExpandedCard = styled(motion.div)`
   flex-direction: column;
   gap: var(--spacing-3);
   width: 100%;
-  padding: var(--spacing-3);
+  padding: var(--spacing-2);
   border-radius: calc(var(--radius) * 1.5);
   border: 1px solid ${({ theme }) => theme.borderSecondary};
   background: ${({ theme }) => theme.surface1};
@@ -209,7 +215,7 @@ const ExpandedCard = styled(motion.div)`
 
 const ExpandedHeader = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: var(--spacing-2);
 `
 
@@ -228,7 +234,7 @@ const HeaderCopy = styled.div`
 
 const ExpandedTitle = styled.h3`
   margin: 0;
-  font-size: var(--fontSize-20);
+  font-size: var(--fontSize-18);
   color: ${({ theme }) => theme.textPrimary};
   font-weight: var(--fontWeight-medium);
 `
