@@ -176,7 +176,7 @@ const StyledButton = styled(Button)`
   transition: all 0.1s ease-out;
 
   &:hover {
-    filter: saturate(140%);
+    filter: saturate(140%) brightness(1.1);
     color: ${({ theme, secondary }) => (secondary ? theme.textPrimary : colord(theme.textPrimary).invert().toHex())};
   }
 

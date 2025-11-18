@@ -232,7 +232,7 @@ const TextElement = styled.div<TextElementProps>`
 
   /* Buttons */
   > a {
-    margin-top: var(--spacing-4);
+    margin-top: var(--spacing-3);
 
     & + a {
       margin-left: var(--spacing-2);

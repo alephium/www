@@ -8,6 +8,8 @@ import SubheaderContent from '../components/customPageComponents/SubheaderConten
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import NetworkUpgradesCardScroller from '../components/NetworkUpgradesCardScroller'
+import Phase2Section from '../components/pages/roadmap/Phase2Section'
+import Roadmap from '../components/pages/roadmap/Roadmap'
 import SectionDivider from '../components/SectionDivider'
 
 const CustomPage = (props: PageProps) => (
@@ -22,20 +24,14 @@ const CustomPage = (props: PageProps) => (
       <>
         <SubpageSection edgeGradient border="bottom">
           <TextElement isCentered>
-            <h1>
-              Our Journey to
-              <br />
-              True Web3
-            </h1>
-            <p>
-              Marked by purposeful upgrades, each advancing <strong>scalability, usability, and security.</strong>
-            </p>
+            <h1>Alephium’s journey to Phase 2</h1>
+            <p>From scalable infrastructure to aligned economics.</p>
           </TextElement>
         </SubpageSection>
 
         <SubpageSection>
           <TextElement>
-            <h2>One upgrade at a time.</h2>
+            <h2>Phase One: Scalable, Secure, Easy to Use Infrastructure</h2>
             <p>
               From Leman to Rhone to Danube, <strong>this has always been the plan</strong>. Now we&apos;re entering the
               chapter <strong>where it all comes together.</strong>
@@ -46,11 +42,15 @@ const CustomPage = (props: PageProps) => (
 
         <SectionDivider />
 
+        <Phase2Section />
+
+        <SectionDivider />
+
         <ChangesSection />
 
         <SectionDivider />
 
-        {/*<Roadmap />*/}
+        <Roadmap />
 
         <SectionDivider />
 

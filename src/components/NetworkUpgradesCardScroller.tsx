@@ -14,8 +14,8 @@ const NetworkUpgradesCardScroller = () => {
     <CardsHorizontalScroller cardWidth={380} cardGap={24} animateCards>
       <Card border>
         <CardText>
-          <h3 style={{ color: theme.palette3, paddingRight: 0, alignItems: 'center', display: 'flex' }}>
-            Leman<Badge color="palette3">March 30, 2023</Badge>
+          <h3 style={{ color: theme.palette1, paddingRight: 0, alignItems: 'center', display: 'flex' }}>
+            Leman<Badge color="palette1">March 30, 2023</Badge>
           </h3>
           <p>
             Leman, the first post-mainnet upgrade, refined Alephium&apos;s developer stack, enabling dApp creation with
@@ -30,8 +30,8 @@ const NetworkUpgradesCardScroller = () => {
       </Card>
       <Card border>
         <CardText>
-          <h3 style={{ color: theme.palette2, paddingRight: 0, alignItems: 'center', display: 'flex' }}>
-            Rhone<Badge color="palette2">Jun 12, 2024</Badge>
+          <h3 style={{ color: theme.palette4, paddingRight: 0, alignItems: 'center', display: 'flex' }}>
+            Rhone<Badge color="palette4">Jun 12, 2024</Badge>
           </h3>
           <p>
             Then came Rhone, our first big leap forward. Block times dropped from 64 to 16 seconds, smart contracts got
@@ -51,8 +51,8 @@ const NetworkUpgradesCardScroller = () => {
       </Card>
       <Card border>
         <CardText>
-          <h3 style={{ color: theme.palette4, paddingRight: 0, alignItems: 'center', display: 'flex' }}>
-            Danube<Badge color="palette4">Jul 15, 2025</Badge>
+          <h3 style={{ color: theme.palette2, paddingRight: 0, alignItems: 'center', display: 'flex' }}>
+            Danube<Badge color="palette2">Jul 15, 2025</Badge>
           </h3>
           <p>
             Danube marks a shift, this is where the vision of Web3 starts to feel real. Where onboarding doesn&apos;t

@@ -6,7 +6,7 @@ export type ThemeType = 'light' | 'dark' | 'hackathon'
 export const darkTheme: DefaultTheme = {
   name: 'dark',
 
-  textPrimary: '#f5f5f7',
+  textPrimary: '#D9D9D9',
   textPrimaryVariation: 'rgba(255, 255, 255, 0.75)',
   textSecondary: 'rgba(255, 255, 255, 0.65)',
   textTertiary: 'rgba(255, 255, 255,  0.4)',
@@ -26,12 +26,12 @@ export const darkTheme: DefaultTheme = {
 
   separator: 'var(--color-grey-700)',
 
-  palette1: '#54c0fa',
-  palette2: '#ffc48b',
-  palette3: '#89ffc4',
-  palette4: '#faa0f9',
-  palette5: '#ff8a97',
-  palette6: '#132dc8'
+  palette1: '#7595FF',
+  palette2: '#F99E70',
+  palette3: '#66d479ff',
+  palette4: '#a46cdbff',
+  palette5: '#ed7986ff',
+  palette6: '#465cd9ff'
 }
 
 export const lightTheme: DefaultTheme = {
