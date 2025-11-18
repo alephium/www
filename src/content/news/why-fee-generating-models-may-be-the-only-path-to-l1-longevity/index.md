@@ -48,8 +48,6 @@ We’ve all seen that inflation is the most prevalent economic model for securin
 
 ![](inflation1.png)
 
-
-
 ### A Closer Look at the System
 
 For every user or investor who buys and holds a token, the network silently (yet persistently) introduces new supply. This erodes the value of all existing tokens over time, regardless of network adoption, investment, partnerships, good marketing, or utility. 
@@ -91,7 +89,7 @@ The challenge for most newer chains is that their designs are heavily skewed tow
 
 ## 1. Fee-Generating, Not Inflating
 
-The core building blocks of Alephium's Phase Two are the Core dApp (CLMM DEX) and ALPG staking. Its utility is designed to reverse the financial decay of inflation. There's a good chance it can do that.
+The core building blocks of Alephium's Phase Two are the Core dApp (CLMM DEX) and ALPH staking. Its utility is designed to reverse the financial decay of inflation. There's a good chance it can do that.
 
 **Usage Fuels Deflation**: Every transaction on the Core dApp will generate swap fees. 100% of these swap fees will then be utilized for $ALPH buybacks, burns, and staking rewards. This creates a powerful, persistent deflationary force that structurally increases the value of the remaining tokens.
 
