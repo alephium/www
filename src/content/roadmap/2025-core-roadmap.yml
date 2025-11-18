@@ -1,27 +1,5 @@
 title: "2025"
 categories:
-  - category: Core platform
-    tagline: In 2025, the Core Platform matures and scales. The focus in on DevX and UX.
-    items:
-      - title: Groupless addresses
-        status: done
-        type: node
-        description: Unified address format across shards and groups.
-        button:
-          label: Read the article
-          url: /blog/groupless-addresses
-      - title: Core dApp
-        status: ongoing
-        type: wallets
-        description: Unified interface combining wallet actions, staking, and governance.
-        button:
-          label: Explore concept
-          url: https://docs.alephium.org
-      - title: SDK next-gen
-        status: planned
-        type: sdk
-        description: Refined developer tooling with stronger type safety and testing
-          utilities.
   - category: Ecosystem
     tagline: Expanding Alephium adoption through programs, integrations, and
       initiatives.
@@ -198,60 +176,81 @@ categories:
       - status: ongoing
         type: growth
         title: Regular video content + X Spaces + scaling output
+        description: Establishing Alephium as a consistent thought leader and
+          authoritative voice in the L1 and PoW spaces.
       - status: ongoing
         type: growth
         title: PR & Media growth
+        description: Securing high-impact, third-party validation and earned media
+          placements to build institutional credibility and trust.
       - status: ongoing
         type: content
         title: CMC Token marketing campaign
-        description: Leverages our Alephium Squires & Guards.
+        description: Strategically driving organic awareness and traffic to the Alephium
+          token page using fundamental value propositions, as well as improving
+          overall token sentiment.
       - status: ongoing
         type: content
         title: Internal Team thought leadership campaign
         button:
           url: https://www.youtube.com/@alephium/videos
-        description: >
-          Team Talks getting you on degree closer to the core team, helping you
-          understand what they're working on, what challenges they're facing,
-          and also who they are as humans. After all, we are all humans here at
-          Alephium!
+        description: Elevating core team members as trusted industry experts to humanize
+          the project, leverage their massive experience, and enhance
+          credibility.
       - status: ongoing
         type: content
         title: L1 season campaign narrative
         button:
           url: https://alephium.org/news/
+        description: Positioning Alephium as the most principled and secure choice among
+          next-generation Layer 1s during market cycles.
       - status: planned
         type: events
         title: Core dApp road to testnet campaign
+        description: Generating excitement and acquiring builders by detailing the
+          technical benefits, strategic necessity, and excellent timing of the
+          Core dApp launch.
       - status: planned
         type: growth
         title: Targeted regional ads campaigns
+        description: Driving qualified user acquisition and localized adoption by
+          presenting the Alephium value proposition to specific geographic
+          audiences.
       - status: planned
         type: growth
         title: Earned media campaign
+        description: Gaining unpaid, high-value visibility and authority by placing
+          Alephium narratives and founder interviews in top-tier publications.
       - status: planned
         type: growth
         title: Reactive user and builder acquisition campaign
+        description: Converting users and builders disillusioned with rival platforms'
+          compromises (e.g., security flaws, high fees) by offering a superior
+          alternative.
       - status: planned
         type: content
         title: Content marketing series for Alephium use cases
+        description: Educating the market on Alephium's technical advantages (sUTXO,
+          PoLW) by showing them in hypothetical and realistic examples.
       - status: planned
         type: growth
         title: Social media paid Ads campaign
+        description: Accelerating brand awareness and driving direct, measurable traffic
+          to key ecosystem conversion points (e.g., wallet, website, dApp).
   - category: Apps
     tagline: Foundational apps built by the Core Team to serve the Alephium ecosystem.
     items:
       - status: done
         type: wallets
-        title: "Alephium Wallet: revamp"
+        title: Revamp
         button:
           url: https://alephium.org/wallets/
       - status: done
         type: tooling
-        title: "All products: multiple language support"
+        title: Multiple language support for all the Alephium Apps & Website
       - status: done
         type: wallets
-        title: "Alephium Wallet: on-ramp integration"
+        title: On-ramp integration
       - status: done
         type: wallets
         title: "Alephium Wallet: in-app browser on mobile"
