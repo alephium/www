@@ -79,7 +79,6 @@ collections:
             widget: 'select'
             options:
               - Apps
-              - Core platform
               - Ecosystem
               - Marketing
           - { label: 'Tagline', name: 'tagline', widget: 'string', required: false }
@@ -102,19 +101,20 @@ collections:
                 widget: 'select'
                 options:
                   - { label: 'Node (Core platform)', value: node }
-                  - { label: 'Wallets (Core platform)', value: wallets }
                   - { label: 'SDK (Core platform)', value: sdk }
                   - { label: 'Tooling (Core platform)', value: tooling }
                   - { label: 'Integration (Ecosystem)', value: integration }
                   - { label: 'Discovery (Ecosystem)', value: discovery }
                   - { label: 'Guidance (Ecosystem)', value: guidance }
+                  - { label: 'Program (Ecosystem)', value: program }
+                  - { label: 'Initiative (Ecosystem)', value: initiative }
                   - { label: 'Partnership (Marketing)', value: partnership }
-                  - { label: 'Events (Marketing)', value: events }
+                  - { label: 'Event (Marketing)', value: event }
                   - { label: 'Growth (Marketing)', value: growth }
                   - { label: 'Content (Marketing)', value: content }
-                  - { label: 'DEX (Apps)', value: dex }
-                  - { label: 'Bridging (Apps)', value: bridging }
-                  - { label: 'Incentives (Apps)', value: incentives }
+                  - { label: 'Core dApp (Apps)', value: coreDapp }
+                  - { label: 'Wallet (Apps)', value: wallet }
+                  - { label: 'Bridge (Apps)', value: bridge }
                 default: node
               - { label: 'Description', name: 'description', widget: 'text', required: false }
               - label: 'Button'

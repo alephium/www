@@ -9,6 +9,7 @@ categories:
         type: integration
         description: "Push oracle. Supporting price feeds, randomness and RWAs. "
         button:
+          label: Read announcement
           url: https://www.diadata.org/blog/post/dia-price-oracles-alephium-mainnet/
       - title: Hardware wallet integrations
         status: done
@@ -19,18 +20,21 @@ categories:
         type: integration
         description: MPC wallet and CeDeFi services, for dApps and institutions.
         button:
+          label: Read news
           url: https://alephium.org/news/post/primevault-x-alephium-unlocking-institutional-access-to-defi-on-proof-of-work/
       - status: done
         type: integration
         title: Fiat ramp integrations
         description: Banxa, Alchemy Pay, Topper, TransFi and GateConnect.
         button:
+          label: See update
           url: https://x.com/alephium/status/1899529139331481881
       - status: done
         type: integration
         title: Access to ALPH for U.S. users
         description: Uphold listing. USA based fiat ramps Banxa USA and Topper.
         button:
+          label: Read announcement
           url: https://x.com/alephium/status/1938161042422374442
       - status: done
         type: discovery
@@ -40,6 +44,7 @@ categories:
           hackathon in partnership with LSW3 (League for Web3 Security),
           attended by 20+ Teams.
         button:
+          label: Event recap
           url: https://www.cointribune.com/en/cryptoxr-2025-an-exceptional-hackathon-for-the-future-of-web3/
       - status: ongoing
         type: discovery
@@ -47,12 +52,14 @@ categories:
         description: New milestone-based grant process with better tracking, clearer
           funding tiers, and adoption metrics.
         button:
+          label: Explore grants
           url: https://alephium.org/grants/
       - status: ongoing
         type: discovery
         title: Local communities rollout
         description: Launching Country / Regional leads with clear playbook.
         button:
+          label: Read update
           url: https://x.com/alephium/status/1985664341061038362
       - status: ongoing
         type: discovery
@@ -60,10 +67,12 @@ categories:
         description: "Turning AlphLand into Alephium's central DeFi hub: dApp directory,
           dashboards, and user discovery tools."
         button:
+          label: Visit AlphLand
           url: https://www.alph.land/
       - status: ongoing
         type: discovery
         button:
+          label: Visit AlphLand
           url: https://www.alph.land/
         title: Bounty platform
         description: A decentralized bounty platform where any Alpehium dApp can post
@@ -82,6 +91,7 @@ categories:
         type: integration
         title: DEXTool integration
         button:
+          label: Visit DEXTools
           url: https://www.dextools.io/
         description: To track Alephium native tokens, liquidity, and prices in real
           time, we will integrate the DEXTools API once the Core dApp SDK is
@@ -122,9 +132,10 @@ categories:
     tagline: Building awareness, growing the ecosystem.
     items:
       - status: done
-        type: events
+        type: event
         title: Danube network upgrade campain
         button:
+          label: See campaign
           url: https://x.com/alephium/status/1920780688313233634
         description: Danube marks a shift, this is where the vision of Web3 starts to
           feel real. Where onboarding doesn't require a technical manual. Where
@@ -134,8 +145,6 @@ categories:
       - status: done
         type: content
         title: Alephium.org revamp
-        button:
-          url: https://alephium.org/
         description: A revamped website to showcase our Layer 1, offering improved
           access to our ecosystem, ongoing initiatives, resources, and guidance
           on how to get started and get involved.
@@ -143,19 +152,22 @@ categories:
         type: content
         title: Alephium.org News section
         button:
+          label: Read our news
           url: https://alephium.org/news/
         description: News, updates, and insights from the Alephium ecosystem.
       - status: done
         type: growth
         title: Ambassador Program revamp
         button:
+          label: View program
           url: https://alephium.org/ambassador/
         description: A revamped ambassador program designed to be clearer, more
           rewarding, and fully aligned with our current growth phase.
       - status: done
-        type: events
+        type: event
         title: Alephium Phase 2 campaign
         button:
+          label: View campaign
           url: https://x.com/alephium/status/1958886335202435548
         description: Marking the beginning of Alephium's 2nd chapter. From scalable
           infrastructure to aligned economics.
@@ -163,6 +175,7 @@ categories:
         type: content
         title: Launched & established Alephium Assemble ecosystem videos
         button:
+          label: Watch series
           url: https://www.youtube.com/@alephium/videos
         description: Watch Pepper & Carla video guide to everything Alephium every two
           weeks! Packed with exclusive insights and alpha, these episodes keep
@@ -193,6 +206,7 @@ categories:
         type: content
         title: Internal Team thought leadership campaign
         button:
+          label: Watch Team Talks
           url: https://www.youtube.com/@alephium/videos
         description: Elevating core team members as trusted industry experts to humanize
           the project, leverage their massive experience, and enhance
@@ -201,11 +215,12 @@ categories:
         type: content
         title: L1 season campaign narrative
         button:
+          label: Read updates
           url: https://alephium.org/news/
         description: Positioning Alephium as the most principled and secure choice among
           next-generation Layer 1s during market cycles.
       - status: planned
-        type: events
+        type: event
         title: Core dApp road to testnet campaign
         description: Generating excitement and acquiring builders by detailing the
           technical benefits, strategic necessity, and excellent timing of the
@@ -241,91 +256,92 @@ categories:
     tagline: Foundational apps built by the Core Team to serve the Alephium ecosystem.
     items:
       - status: done
-        type: wallets
+        type: wallet
         title: Revamp
         button:
+          label: Explore wallets
           url: https://alephium.org/wallets/
       - status: done
         type: tooling
         title: Multiple language support for all the Alephium Apps & Website
       - status: done
-        type: wallets
+        type: wallet
         title: On-ramp integration
       - status: done
-        type: wallets
-        title: "Alephium Wallet: in-app browser on mobile"
+        type: wallet
+        title: Mobile in-app browser
       - status: done
-        type: wallets
-        title: "Alephium Wallet: state management migration & offline caching"
+        type: wallet
+        title: State management & offline caching
       - status: done
-        type: wallets
-        title: "Alephium Wallet: groupless address and chained transactions support"
+        type: wallet
+        title: Groupless addresses & chained transactions
       - status: done
-        type: bridging
-        title: "Alephium Bridge: UI/UX revamp"
+        type: bridge
+        title: Bridge UI/UX revamp
       - status: done
-        type: dex
-        title: "Core dApp: CLMM/CPMM DEX contracts basic functionality"
+        type: coreDapp
+        title: CLMM/CPMM DEX contracts
       - status: done
-        type: dex
-        title: "Core dApp: SDK for DEX basic functionality"
+        type: coreDapp
+        title: DEX SDK foundation
       - status: done
-        type: dex
-        title: "Core dApp: backend basic functionality"
+        type: coreDapp
+        title: Backend foundation
       - status: done
-        type: dex
-        title: "Core dApp: frontend basic functionality"
+        type: coreDapp
+        title: Frontend foundation
       - status: done
-        type: dex
-        title: "Core dApp: MVP on testnet"
+        type: coreDapp
+        title: MVP on testnet
       - status: ongoing
-        type: dex
-        title: "Core dApp: ensure all regular workflows are functional in CLMM"
+        type: coreDapp
+        title: CLMM workflow parity
       - status: ongoing
-        type: dex
-        title: "Core dApp: Alephium Branded UX/UI v1"
+        type: coreDapp
+        title: Alephium-branded UX/UI v1
       - status: ongoing
-        type: dex
-        title: "Core dApp: manage user positions"
+        type: coreDapp
+        title: Manage user positions
       - status: ongoing
-        type: dex
-        title: "Core dApp: pool statistics"
+        type: coreDapp
+        title: Pool statistics
       - status: ongoing
-        type: dex
-        title: "Core dApp: support Alephium staking"
+        type: coreDapp
+        title: Staking support
       - status: ongoing
-        type: dex
-        title: "Alephium Bridge: widget"
+        type: bridge
+        title: Bridge widget
       - status: planned
-        type: wallets
-        title: "Alephium Wallet: ecosystem screen on desktop"
+        type: wallet
+        title: Desktop ecosystem screen
       - status: planned
-        type: wallets
-        title: "Alephium Wallet: push notifications on mobile"
+        type: wallet
+        title: Mobile push notifications
       - status: planned
-        type: wallets
-        title: "Alephium Wallet: passkey support"
+        type: wallet
+        title: Passkey support
       - status: planned
-        type: wallets
-        title: "Alephium Wallet: Ledger support on mobile"
+        type: wallet
+        title: Mobile Ledger support
       - status: planned
-        type: wallets
-        title: "Alephium Wallet: multiple wallets support on mobile"
+        type: wallet
+        title: Multi-wallet mobile support
       - status: planned
-        type: wallets
-        title: "Alephium Wallet: watch-only accounts"
+        type: wallet
+        title: Watch-only accounts
       - status: planned
-        type: dex
-        title: "Core dApp: referral system for CPMM"
+        type: coreDapp
+        title: CPMM referral system
       - status: planned
-        type: dex
-        title: "Core dApp: Bridge integration"
+        type: coreDapp
+        title: Bridge integration
       - status: planned
-        type: dex
-        title: "Core dApp: buy button integration"
+        type: coreDapp
+        title: Buy button integration
       - status: planned
-        type: dex
-        title: "Core dApp: Alephium branded UX/UI v2"
+        type: coreDapp
+        title: Alephium-branded UX/UI v2
       - status: planned
-        type: bridging
-        title: "Alephium Bridge: more chains"
+        type: bridge
+        title: Additional bridge chains

@@ -18,7 +18,12 @@ const RoadmapItemCard = ({ item, itemId, isActive, onToggle }: RoadmapItemCardPr
   const overlayRef = useRef<HTMLDivElement>(null)
   const { title, type } = item
   const meta = type ? ROADMAP_ITEM_TYPE_META[type] : undefined
-  const { Icon: TypeIcon, label } = meta ?? ROADMAP_ITEM_TYPE_META[DEFAULT_ROADMAP_ITEM_TYPE]
+  const fallbackMeta = ROADMAP_ITEM_TYPE_META[DEFAULT_ROADMAP_ITEM_TYPE]
+  const { Icon: TypeIcon, label, color } = meta ?? fallbackMeta
+  const iconColor = color || fallbackMeta.color
+  const canExpand = Boolean(item.description?.trim())
+  const buttonLabel = item.button?.label
+  const buttonUrl = item.button?.url
 
   useEffect(() => {
     if (!isActive) {
@@ -53,23 +58,28 @@ const RoadmapItemCard = ({ item, itemId, isActive, onToggle }: RoadmapItemCardPr
       <CollapsedButton
         type="button"
         layout="position"
-        onClick={() => onToggle(itemId)}
-        aria-expanded={isActive}
+        onClick={canExpand ? () => onToggle(itemId) : undefined}
+        aria-expanded={canExpand ? isActive : undefined}
+        aria-disabled={!canExpand}
+        disabled={!canExpand}
         $isActive={isActive}
+        $canExpand={canExpand}
       >
-        <IconBadge>
-          <TypeIcon size={20} color={theme.textSecondary} />
-        </IconBadge>
         <ItemCopy>
-          <ItemType>{label}</ItemType>
+          <ItemLabelRow>
+            <TypeIcon size={14} color={iconColor} />
+            <ItemType>{label}</ItemType>
+          </ItemLabelRow>
           <ItemTitle>{title}</ItemTitle>
         </ItemCopy>
-        <RightSide>
-          <PlusIcon size={16} weight="bold" color={theme.textSecondary} />
-        </RightSide>
+        {canExpand && (
+          <RightSide>
+            <PlusIcon size={16} weight="bold" color={theme.textSecondary} />
+          </RightSide>
+        )}
       </CollapsedButton>
       <AnimatePresence>
-        {isActive && (
+        {canExpand && isActive && (
           <ExpandedCardShell key="expanded-content">
             <ExpandedCard
               ref={overlayRef}
@@ -86,8 +96,8 @@ const RoadmapItemCard = ({ item, itemId, isActive, onToggle }: RoadmapItemCardPr
               }}
             >
               <ExpandedHeader>
-                <ExpandedIconBadge>
-                  <TypeIcon size={24} color={theme.textSecondary} />
+                <ExpandedIconBadge $color={iconColor}>
+                  <TypeIcon size={24} color={iconColor} />
                 </ExpandedIconBadge>
                 <HeaderCopy>
                   <ExpandedTitle>{title}</ExpandedTitle>
@@ -97,9 +107,9 @@ const RoadmapItemCard = ({ item, itemId, isActive, onToggle }: RoadmapItemCardPr
                 </CloseButton>
               </ExpandedHeader>
               {item.description && <Description>{item.description}</Description>}
-              {item.button?.label && item.button.url && (
-                <ActionButton url={item.button.url} highlight squared textAlign="center">
-                  {item.button.label}
+              {buttonLabel && buttonUrl && (
+                <ActionButton url={buttonUrl} highlight squared textAlign="center">
+                  {buttonLabel}
                 </ActionButton>
               )}
             </ExpandedCard>
@@ -128,7 +138,7 @@ const RightSide = styled.div`
   transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 `
 
-const CollapsedButton = styled(motion.button)<{ $isActive: boolean }>`
+const CollapsedButton = styled(motion.button)<{ $isActive: boolean; $canExpand: boolean }>`
   display: flex;
   align-items: flex-start;
   gap: var(--spacing-3);
@@ -137,13 +147,13 @@ const CollapsedButton = styled(motion.button)<{ $isActive: boolean }>`
   border: 1px solid ${({ theme }) => theme.borderPrimary};
   background: ${({ theme }) => theme.surface2};
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
+  cursor: ${({ $canExpand }) => ($canExpand ? 'pointer' : 'default')};
   width: 100%;
   text-align: left;
   opacity: ${({ $isActive }) => ($isActive ? 0 : 1)};
   pointer-events: ${({ $isActive }) => ($isActive ? 'none' : 'auto')};
 
-  &:hover {
+  &:hover:not(:disabled) {
     background: ${({ theme }) => theme.surface1};
     ${RightSide} {
       opacity: 1;
@@ -153,6 +163,10 @@ const CollapsedButton = styled(motion.button)<{ $isActive: boolean }>`
   &:focus-visible {
     outline: none;
     box-shadow: 0 0 0 2px ${({ theme }) => theme.palette1};
+  }
+
+  &:disabled {
+    opacity: 1;
   }
 `
 
@@ -166,21 +180,27 @@ const IconBadge = styled.span`
 const ItemCopy = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
   pointer-events: none;
+`
+
+const ItemLabelRow = styled.span`
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 `
 
 const ItemType = styled.span`
   font-size: var(--fontSize-12);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: ${({ theme }) => theme.textSecondary};
+  color: ${({ theme }) => theme.textTertiary};
 `
 
 const ItemTitle = styled.span`
   margin: 0;
   font-size: var(--fontSize-18);
-  color: ${({ theme }) => theme.textPrimary};
+  color: ${({ theme }) => theme.textPrimaryVariation};
 `
 
 const ExpandedCardShell = styled.div`
@@ -197,7 +217,7 @@ const ExpandedCard = styled(motion.div)`
   flex-direction: column;
   gap: var(--spacing-3);
   width: 100%;
-  padding: var(--spacing-3);
+  padding: var(--spacing-2);
   border-radius: calc(var(--radius) * 1.5);
   border: 1px solid ${({ theme }) => theme.borderSecondary};
   background: ${({ theme }) => theme.surface1};
@@ -213,11 +233,12 @@ const ExpandedHeader = styled.div`
   gap: var(--spacing-2);
 `
 
-const ExpandedIconBadge = styled(IconBadge)`
+const ExpandedIconBadge = styled(IconBadge)<{ $color?: string }>`
   padding: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: ${({ $color }) => ($color ? `${$color}26` : 'transparent')};
 `
 
 const HeaderCopy = styled.div`
@@ -228,7 +249,7 @@ const HeaderCopy = styled.div`
 
 const ExpandedTitle = styled.h3`
   margin: 0;
-  font-size: var(--fontSize-20);
+  font-size: var(--fontSize-18);
   color: ${({ theme }) => theme.textPrimary};
   font-weight: var(--fontWeight-medium);
 `

@@ -1,14 +1,14 @@
 import type { Icon } from '@phosphor-icons/react'
 import {
-  ArrowsLeftRightIcon,
+  AsteriskIcon,
   BookOpenIcon,
+  BridgeIcon,
   CalendarCheckIcon,
   ChartLineUpIcon,
   CodeIcon,
   CompassIcon,
   CpuIcon,
   GiftIcon,
-  GlobeHemisphereWestIcon,
   HandshakeIcon,
   NewspaperIcon,
   PuzzlePieceIcon,
@@ -20,40 +20,42 @@ import {
 } from '@phosphor-icons/react'
 
 export type RoadmapStatus = 'done' | 'ongoing' | 'planned'
-export type RoadmapCategoryKey = 'core-platform' | 'ecosystem' | 'marketing' | 'liquidity'
+export type RoadmapCategoryKey = 'ecosystem' | 'marketing' | 'apps'
 export type RoadmapItemType =
   | 'node'
-  | 'wallets'
+  | 'wallet'
   | 'sdk'
   | 'tooling'
   | 'integration'
   | 'discovery'
   | 'guidance'
+  | 'program'
+  | 'initiative'
   | 'partnership'
-  | 'events'
+  | 'event'
   | 'growth'
   | 'content'
-  | 'dex'
-  | 'bridging'
-  | 'incentives'
+  | 'coreDapp'
+  | 'bridge'
 
 export const DEFAULT_ROADMAP_ITEM_TYPE: RoadmapItemType = 'tooling'
 
-export const ROADMAP_ITEM_TYPE_META: Record<RoadmapItemType, { label: string; Icon: Icon }> = {
-  node: { label: 'Node', Icon: CpuIcon },
-  wallets: { label: 'Wallets', Icon: WalletIcon },
-  sdk: { label: 'SDK', Icon: CodeIcon },
-  tooling: { label: 'Tooling', Icon: WrenchIcon },
-  integration: { label: 'Integration', Icon: PuzzlePieceIcon },
-  discovery: { label: 'Discovery', Icon: CompassIcon },
-  guidance: { label: 'Guidance', Icon: BookOpenIcon },
-  partnership: { label: 'Partnership', Icon: HandshakeIcon },
-  events: { label: 'Events', Icon: CalendarCheckIcon },
-  growth: { label: 'Growth', Icon: ChartLineUpIcon },
-  content: { label: 'Content', Icon: NewspaperIcon },
-  dex: { label: 'DEX', Icon: ArrowsLeftRightIcon },
-  bridging: { label: 'Bridging', Icon: GlobeHemisphereWestIcon },
-  incentives: { label: 'Incentives', Icon: GiftIcon }
+export const ROADMAP_ITEM_TYPE_META: Record<RoadmapItemType, { label: string; Icon: Icon; color: string }> = {
+  node: { label: 'Node', Icon: CpuIcon, color: '#8FD1FF' },
+  wallet: { label: 'Wallet', Icon: WalletIcon, color: '#6EE6C8' },
+  sdk: { label: 'SDK', Icon: CodeIcon, color: '#FFE073' },
+  tooling: { label: 'Tooling', Icon: WrenchIcon, color: '#D2C0FF' },
+  integration: { label: 'Integration', Icon: PuzzlePieceIcon, color: '#FF8FB6' },
+  discovery: { label: 'Discovery', Icon: CompassIcon, color: '#7DDCFF' },
+  guidance: { label: 'Guidance', Icon: BookOpenIcon, color: '#FFB685' },
+  program: { label: 'Program', Icon: GiftIcon, color: '#B0F06A' },
+  initiative: { label: 'Initiative', Icon: SunHorizonIcon, color: '#F6A2FF' },
+  partnership: { label: 'Partnership', Icon: HandshakeIcon, color: '#6FA3FF' },
+  event: { label: 'Event', Icon: CalendarCheckIcon, color: '#FF9E9E' },
+  growth: { label: 'Growth', Icon: ChartLineUpIcon, color: '#63E0F2' },
+  content: { label: 'Content', Icon: NewspaperIcon, color: '#FFC975' },
+  coreDapp: { label: 'Core dApp', Icon: AsteriskIcon, color: '#F99E70' },
+  bridge: { label: 'Bridge', Icon: BridgeIcon, color: '#7595FF' }
 }
 
 export const ROADMAP_STATUSES: ReadonlyArray<{
@@ -67,8 +69,8 @@ export const ROADMAP_STATUSES: ReadonlyArray<{
 ]
 
 export interface RoadmapButton {
-  label: string
-  url: string
+  label?: string
+  url?: string
 }
 
 export interface RoadmapItem {
