@@ -177,7 +177,7 @@ const RoadmapYearSection = ({ title, categories }: RoadmapData) => {
         {activeCategory?.tagline && (
           <CategoryTagline>
             <div>
-              <CategoryTaglineLabel>TDLR:</CategoryTaglineLabel>
+              <CategoryTaglineLabel>TLDR:</CategoryTaglineLabel>
             </div>
             {activeCategory.tagline}
           </CategoryTagline>

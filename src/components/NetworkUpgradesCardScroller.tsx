@@ -31,17 +31,17 @@ const NetworkUpgradesCardScroller = () => {
       <Card border>
         <CardText>
           <h3 style={{ color: theme.palette5, paddingRight: 0, alignItems: 'center', display: 'flex' }}>
-            Rhone<Badge color="palette5">Jun 12, 2024</Badge>
+            Rhône<Badge color="palette5">Jun 12, 2024</Badge>
           </h3>
           <p>
-            Then came Rhone, our first big leap forward. Block times dropped from 64 to 16 seconds, smart contracts got
-            more powerful, and dApp performance improved across the board. Rhone was about making Alephium stronger,
+            Then came Rhône, our first big leap forward. Block times dropped from 64 to 16 seconds, smart contracts got
+            more powerful, and dApp performance improved across the board. Rhône was about making Alephium stronger,
             faster, and ready to compete with the best L1s in the space.
           </p>
         </CardText>
         <CardFooterButtonContainer>
           <Button squared secondary url="/news/post/rh-ne-network-upgrade-activated-cbeb298585fe">
-            More on Rhone upgrade
+            More on Rhône upgrade
           </Button>
         </CardFooterButtonContainer>
       </Card>
@@ -57,7 +57,7 @@ const NetworkUpgradesCardScroller = () => {
           </p>
         </CardText>
         <CardFooterButtonContainer>
-          <Button squared secondary url="https://x.com/alephium/status/1920780688313233634">
+          <Button squared secondary url="/news/post/danube-upgrade-everything-you-need-to-know-faq">
             More on Danube upgrade
           </Button>
         </CardFooterButtonContainer>

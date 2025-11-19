@@ -22,7 +22,7 @@ const phase2Groups: Phase2Group[] = [
     items: [
       {
         component: 'Scalable Layer 1',
-        role: 'Speed, security, decentralisation and usability without tradeoffs'
+        role: 'Speed, security, decentralization and usability without tradeoffs'
       },
       {
         component: 'Blocks transaction fees burning',
@@ -57,7 +57,7 @@ const phase2Groups: Phase2Group[] = [
         role: 'Improves capital efficiency and yields via cross-dApps strategies'
       },
       {
-        component: 'DAO Framework',
+        component: 'DAO framework',
         role: 'Decentralizes ecosystem governance & growth'
       }
     ]

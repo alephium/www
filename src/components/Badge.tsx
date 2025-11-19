@@ -6,7 +6,7 @@ interface BadgeProps {
   compact?: boolean
 }
 
-const Badge = styled.span<BadgeProps>`
+const Badge = styled.div<BadgeProps>`
   display: inline-block;
   padding: ${({ compact }) => (compact ? '4px 6px' : '6px 8px')};
   border-radius: ${({ compact }) => (compact ? '4px' : '6px')};

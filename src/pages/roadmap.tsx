@@ -22,7 +22,7 @@ const CustomPage = (props: PageProps) => (
       <>
         <SubpageSection edgeGradient border="bottom">
           <TextElement isCentered>
-            <PageSurtitle>Alephium's</PageSurtitle>
+            <PageSurtitle>Alephium's Journey to</PageSurtitle>
             <PageTitle>Phase 2</PageTitle>
             <PageSubtitleContainer>
               <PageSubtitle>From scalable infrastructure to aligned economics.</PageSubtitle>
