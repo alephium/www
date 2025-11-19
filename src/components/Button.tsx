@@ -155,10 +155,11 @@ const ArrowStyled = styled(Arrow)<{ isExternal?: boolean }>`
 
 const StyledButton = styled(Button)`
   background-color: ${({ theme, invert, secondary }) =>
-    invert ? theme.background1 : secondary ? 'transparent' : theme.textPrimary};
+    invert ? theme.background1 : secondary ? theme.action2 : theme.action1};
   color: ${({ theme, invert, secondary }) =>
     invert ? theme.textPrimary : secondary ? theme.textPrimaryVariation : colord(theme.textPrimary).invert().toHex()};
-  border: ${({ secondary, theme }) => (secondary ? `1px solid ${theme.borderPrimary}` : 'none')};
+  box-shadow: ${({ secondary, theme }) =>
+    secondary ? `inset 0 1px ${theme.borderSecondary}, inset 0 -1px ${theme.borderSecondary}` : 'none'};
   --gradient-x: 50%;
   --gradient-y: 50%;
   border-radius: ${({ squared }) => getBorderRadius(squared)};

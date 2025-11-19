@@ -23,15 +23,15 @@ const NetworkUpgradesCardScroller = () => {
           </p>
         </CardText>
         <CardFooterButtonContainer>
-          <Button highlight squared url="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a">
+          <Button squared secondary url="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a">
             More on Leman upgrade
           </Button>
         </CardFooterButtonContainer>
       </Card>
       <Card border>
         <CardText>
-          <h3 style={{ color: theme.palette4, paddingRight: 0, alignItems: 'center', display: 'flex' }}>
-            Rhone<Badge color="palette4">Jun 12, 2024</Badge>
+          <h3 style={{ color: theme.palette5, paddingRight: 0, alignItems: 'center', display: 'flex' }}>
+            Rhone<Badge color="palette5">Jun 12, 2024</Badge>
           </h3>
           <p>
             Then came Rhone, our first big leap forward. Block times dropped from 64 to 16 seconds, smart contracts got
@@ -41,8 +41,8 @@ const NetworkUpgradesCardScroller = () => {
         </CardText>
         <CardFooterButtonContainer>
           <Button
-            highlight
             squared
+            secondary
             url="https://medium.com/@alephium/rh%C3%B4ne-network-upgrade-activated-cbeb298585fe"
           >
             More on Rhone upgrade
@@ -61,21 +61,21 @@ const NetworkUpgradesCardScroller = () => {
           </p>
         </CardText>
         <CardFooterButtonContainer>
-          <Button highlight squared url="https://x.com/alephium/status/1920780688313233634">
+          <Button squared secondary url="https://x.com/alephium/status/1920780688313233634">
             More on Danube upgrade
           </Button>
         </CardFooterButtonContainer>
       </Card>
-      <Card border>
+      {/*<Card border>
         <CardText>
-          <h3 style={{ alignItems: 'center', display: 'flex' }}>Next?</h3>
+          <h3 style={{ alignItems: 'center', display: 'flex' }}>Phase 2</h3>
           <p>
             We continue to build. The next upgrade of the Danube era will focus on strengthening Alephium&apos;s core -
             enhancing performance, expanding smart contract capabilities, and setting the stage for high-impact apps
             that showcase the true utility of ALPH.
           </p>
         </CardText>
-      </Card>
+      </Card>*/}
     </CardsHorizontalScroller>
   )
 }

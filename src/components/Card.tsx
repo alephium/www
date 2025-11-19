@@ -122,7 +122,7 @@ const CardStyled = styled(motion.div)<{
   position: relative;
   flex-direction: column;
   border-radius: var(--radius-big);
-  background-color: ${({ theme, bgColor }) => (bgColor ? theme[bgColor] : theme.background1)};
+  background-color: ${({ theme, bgColor }) => (bgColor ? theme[bgColor] : theme.surface1)};
   backdrop-filter: blur(50px) saturate(120%) brightness(1.1);
   text-decoration: none;
   transition: all 0.1s ease-out;
@@ -135,7 +135,7 @@ const CardStyled = styled(motion.div)<{
   ${({ border }) =>
     border &&
     css`
-      border: 1px solid ${({ theme }) => theme.borderPrimary};
+      border: 1px solid ${({ theme }) => theme.borderSecondary};
     `}
 
   ${({ url }) => url && 'transform-style: preserve-3d;'}

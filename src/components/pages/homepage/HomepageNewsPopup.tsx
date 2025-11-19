@@ -1,4 +1,3 @@
-import { colord } from 'colord'
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import styled, { useTheme } from 'styled-components'
@@ -112,8 +111,8 @@ const NewsCard = styled(motion.div)<{ border?: boolean }>`
   width: 400px;
   display: flex;
   flex-direction: column;
-  border: 2px solid ${({ theme }) => theme.textPrimary};
-  background-color: ${({ theme }) => colord(theme.background2).darken(0.15).alpha(0.8).toHex()};
+  border: 1px solid ${({ theme }) => theme.borderPrimary};
+  background-color: ${({ theme }) => theme.surface1};
   backdrop-filter: blur(60px) saturate(3) brightness(1.2);
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, ${({ theme }) => (theme.name === 'light' ? 0.1 : 0.3)});
   border-radius: var(--radius-big);

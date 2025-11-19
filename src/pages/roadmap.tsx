@@ -1,4 +1,5 @@
 import { PageProps } from 'gatsby'
+import styled from 'styled-components'
 
 import Page from '../components/customPageComponents/Page'
 import SubpageSection from '../components/customPageComponents/SubpageSection'
@@ -21,17 +22,23 @@ const CustomPage = (props: PageProps) => (
       <>
         <SubpageSection edgeGradient border="bottom">
           <TextElement isCentered>
-            <h1>Alephium’s journey to Phase 2</h1>
-            <p>From scalable infrastructure to aligned economics.</p>
+            <PageSurtitle>Alephium's</PageSurtitle>
+            <PageTitle>Phase 2</PageTitle>
+            <PageSubtitleContainer>
+              <PageSubtitle>From scalable infrastructure to aligned economics.</PageSubtitle>
+            </PageSubtitleContainer>
           </TextElement>
         </SubpageSection>
 
+        <SectionDivider />
+
         <SubpageSection>
           <TextElement>
-            <h2>Phase One: Scalable, Secure, Easy to Use Infrastructure</h2>
+            <h2>Solid foundations</h2>
             <p>
-              From Leman to Rhone to Danube, <strong>this has always been the plan</strong>. Now we&apos;re entering the
-              chapter <strong>where it all comes together.</strong>
+              Phase One was about building solid foundations.
+              <br />
+              Now we&apos;re entering the chapter <strong>where it all comes together.</strong>
             </p>
           </TextElement>
           <NetworkUpgradesCardScroller />
@@ -63,3 +70,38 @@ const CustomPage = (props: PageProps) => (
 )
 
 export default CustomPage
+
+const PageSurtitle = styled.div`
+  margin-top: 0;
+  margin-bottom: var(--spacing-1);
+  font-size: var(--fontSize-26);
+  color: ${({ theme }) => theme.textTertiary};
+  font-weight: 400;
+`
+
+const PageTitle = styled.h1`
+  margin-top: 0;
+  margin-bottom: var(--spacing-3);
+`
+
+const PageSubtitleContainer = styled.div`
+  display: flex;
+  justify-self: center;
+  width: fit-content;
+  flex-grow: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: var(--spacing-1) var(--spacing-2);
+  background: ${({ theme }) => theme.background1};
+  border-bottom: 1px solid ${({ theme }) => theme.borderPrimary};
+  border-radius: 100px;
+`
+
+const PageSubtitle = styled.div`
+  font-weight: 400;
+  font-size: var(--fontSize-18);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(90deg, ${({ theme }) => theme.palette5}, ${({ theme }) => theme.palette2});
+`

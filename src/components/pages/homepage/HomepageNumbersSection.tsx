@@ -181,7 +181,7 @@ const HomepageNumbersSection = () => {
   return (
     <SubpageSection>
       <MainContainer>
-        <TextElement>
+        <TextElement noHeadingsMargins>
           <h2>Some Numbers.</h2>
           <p>Let the facts speak for themselves.</p>
           <ButtonContainer>
@@ -236,7 +236,7 @@ const RealTimeLabel = styled.div`
     content: '';
     width: 8px;
     height: 8px;
-    background: ${({ theme }) => theme.palette4};
+    background: ${({ theme }) => theme.palette5};
     border-radius: 50%;
     display: inline-block;
     animation: blink 2s ease-in-out infinite;

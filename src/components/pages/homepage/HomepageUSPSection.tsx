@@ -132,8 +132,7 @@ const HomepageUSPSection = () => {
               <p>
                 Alephium offers a robust, developer-friendly environment with{' '}
                 <strong>built-in protections against common vulnerabilities</strong>. Its MEV-aware architecture and
-                native safeguards{' '}
-                <strong>prevent threats like reentrancy attacks and unlimited approvals.</strong>
+                native safeguards <strong>prevent threats like reentrancy attacks and unlimited approvals.</strong>
               </p>
             </CardText>
             <CardFooterButtonContainer>
@@ -236,7 +235,7 @@ const TLDRSection = styled.div`
   border-radius: var(--radius-small);
   font-size: var(--fontSize-22);
   font-weight: var(--fontWeight-medium);
-  color: ${({ theme }) => theme.textSecondary};
+  color: ${({ theme }) => theme.textPrimaryVariation};
   width: 100%;
   box-sizing: border-box;
 `
@@ -245,7 +244,6 @@ const CardContent = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
-  background-color: ${({ theme }) => theme.background3};
 `
 
 export default HomepageUSPSection
