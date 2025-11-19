@@ -41,10 +41,10 @@ const highlightCategories: HighlightCategory[] = [
 const Phase2HighlightsSection = () => (
   <SubpageSection>
     <TextElement>
-      <h2>Phase 2 highlights</h2>
+      <h2>Phase Two Highlights</h2>
       <p>
-        Our Phase 2 roadmap reflects our vision but stays flexible, adapting to adoption and market conditions while
-        keeping the community informed.
+        This roadmap is a guide that will evolve with adoption and market conditions, with ongoing updates for the
+        community.
       </p>
     </TextElement>
 

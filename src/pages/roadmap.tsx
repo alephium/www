@@ -34,9 +34,9 @@ const CustomPage = (props: PageProps) => (
 
         <SubpageSection>
           <TextElement>
-            <h2>Solid foundations</h2>
+            <h2>Phase One: Scalable Infrastructure</h2>
             <p>
-              Phase One was about building solid foundations.
+              From Leman to Rhone to Danube, this has always been the plan, one upgrade at a time.
               <br />
               Now we&apos;re entering the chapter <strong>where it all comes together.</strong>
             </p>
