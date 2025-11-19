@@ -101,8 +101,8 @@ const Button = ({ onClick, className, children, url, disabled, highlight, square
 const getGradient = (theme: DefaultTheme) => `
   radial-gradient(
     circle at var(--gradient-x) var(--gradient-y),
-    ${theme.palette5} 25%,
-    ${theme.palette4} 100%
+    ${theme.palette2} 25%,
+    ${theme.palette5} 100%
   )
 `
 
@@ -122,10 +122,10 @@ const GradientBorder = styled.div<{ squared?: boolean }>`
   &::before {
     content: '';
     position: absolute;
-    inset: 4px;
+    inset: 1px;
     border-radius: ${({ squared }) => getInnerBorderRadius(squared)};
     background: ${({ theme }) => theme.textPrimary};
-
+    filter: blur(2px);
     z-index: 0;
   }
 
@@ -133,15 +133,6 @@ const GradientBorder = styled.div<{ squared?: boolean }>`
     &::after {
       opacity: 1;
     }
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, 1);
-    z-index: 1;
   }
 `
 
@@ -159,7 +150,8 @@ const StyledButton = styled(Button)`
   color: ${({ theme, invert, secondary }) =>
     invert ? theme.textPrimary : secondary ? theme.textPrimaryVariation : colord(theme.textPrimary).invert().toHex()};
   box-shadow: ${({ secondary, theme }) =>
-    secondary ? `inset 0 1px ${theme.borderSecondary}, inset 0 -1px ${theme.borderSecondary}` : 'none'};
+    `0 2px 5px rgba(0, 0, 0, 0.2)` +
+    (secondary ? `, inset 0 1px ${theme.borderSecondary}, inset 0 -1px ${theme.borderSecondary}` : '')};
   --gradient-x: 50%;
   --gradient-y: 50%;
   border-radius: ${({ squared }) => getBorderRadius(squared)};

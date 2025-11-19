@@ -54,7 +54,7 @@ const phase2Groups: Phase2Group[] = [
     items: [
       {
         component: 'Composability',
-        role: 'Improves capital efficiency and yields via cross dApps strategies'
+        role: 'Improves capital efficiency and yields via cross-dApps strategies'
       },
       {
         component: 'DAO Framework',

@@ -23,7 +23,7 @@ const NetworkUpgradesCardScroller = () => {
           </p>
         </CardText>
         <CardFooterButtonContainer>
-          <Button squared secondary url="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a">
+          <Button squared secondary url="/news/post/the-leman-network-upgrade-is-live-f52c89b7dd6a">
             More on Leman upgrade
           </Button>
         </CardFooterButtonContainer>
@@ -40,11 +40,7 @@ const NetworkUpgradesCardScroller = () => {
           </p>
         </CardText>
         <CardFooterButtonContainer>
-          <Button
-            squared
-            secondary
-            url="https://medium.com/@alephium/rh%C3%B4ne-network-upgrade-activated-cbeb298585fe"
-          >
+          <Button squared secondary url="/news/post/rh-ne-network-upgrade-activated-cbeb298585fe">
             More on Rhone upgrade
           </Button>
         </CardFooterButtonContainer>

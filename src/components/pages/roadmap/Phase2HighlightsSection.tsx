@@ -16,7 +16,7 @@ const highlightCategories: HighlightCategory[] = [
     items: [
       'CLMM live → expanding to order book → Perps and more',
       'Codebase fully open-sourced and audited',
-      'SDK and APIs to enable integrations with / by community dApps'
+      'SDK and APIs to enable integrations with/by community dApps'
     ]
   },
   {
@@ -60,11 +60,7 @@ const Phase2HighlightsSection = () => (
           </div>
         ))}
         <div>
-          <Button
-            highlight
-            squared
-            url="https://alephium.org/news/post/from-scalable-infrastructure-to-aligned-economics/"
-          >
+          <Button secondary squared url="/news/post/from-scalable-infrastructure-to-aligned-economics/">
             More on Phase 2
           </Button>
         </div>
@@ -96,6 +92,7 @@ const CategoryTitle = styled.h3`
 const HighlightsList = styled.ul`
   list-style: none;
   margin: 0;
+  margin-bottom: var(--spacing-2);
   padding: 0;
 
   li {
