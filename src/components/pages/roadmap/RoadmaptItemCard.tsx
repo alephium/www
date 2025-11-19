@@ -134,7 +134,7 @@ const RightSide = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  opacity: 0;
+  opacity: 0.5;
   transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 `
 
