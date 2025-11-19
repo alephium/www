@@ -54,7 +54,7 @@ const CustomPage = (props: PageProps) => (
 
         <SubpageSection border="all" edgeGradient>
           <TextElement isCentered>
-            <h2>Join Us on This Journey</h2>
+            <h2>Join us on this journey</h2>
             <p>
               Alephium&apos;s roadmap is a living document, evolving with the input of our community and the progress of
               our technology. Stay up-to-date on our latest developments by following us on{' '}

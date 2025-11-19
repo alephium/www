@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+import { deviceBreakPoints } from '../../../styles/global-style'
 import Button from '../../Button'
 import SubheaderContent from '../../customPageComponents/SubheaderContent'
 import SubpageSection from '../../customPageComponents/SubpageSection'
@@ -51,12 +52,14 @@ const Phase2HighlightsSection = () => (
       <HighlightsCard>
         {highlightCategories.map((category) => (
           <div key={category.title}>
-            <CategoryTitle>{category.title}</CategoryTitle>
-            <HighlightsList>
-              {category.items.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </HighlightsList>
+            <TextElement>
+              <CategoryTitle>{category.title}</CategoryTitle>
+              <HighlightsList>
+                {category.items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </HighlightsList>
+            </TextElement>
           </div>
         ))}
         <div>
@@ -81,11 +84,15 @@ const HighlightsCard = styled.div`
   display: flex;
   flex-direction: column;
   gap: var(--spacing-4);
+
+  @media ${deviceBreakPoints.mobile} {
+    padding: var(--spacing-3);
+  }
 `
 
 const CategoryTitle = styled.h3`
   margin-top: 0;
-  margin-bottom: var(--spacing-2);
+  margin-bottom: var(--spacing-4) !important;
   color: ${({ theme }) => theme.textPrimary};
 `
 
@@ -109,10 +116,6 @@ const HighlightsList = styled.ul`
     &::before {
       content: '—';
       color: ${({ theme }) => theme.palette2};
-      position: absolute;
-      left: 0;
-      top: 0.6em;
-      transform: translateY(-50%);
     }
   }
 `

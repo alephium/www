@@ -1,5 +1,5 @@
 import { graphql, useStaticQuery } from 'gatsby'
-import { useCallback, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import styled, { css, keyframes } from 'styled-components'
 
 import { deviceBreakPoints } from '../../../styles/global-style'
@@ -102,6 +102,8 @@ export default Roadmap
 const RoadmapYearSection = ({ title, categories }: RoadmapData) => {
   const [activeIndex, setActiveIndex] = useState(0)
   const [expandedItemId, setExpandedItemId] = useState<string | null>(null)
+  const tabsContainerRef = useRef<HTMLDivElement | null>(null)
+  const tabRefs = useRef<(HTMLButtonElement | null)[]>([])
 
   const hasCategories = categories.length > 0
   const safeIndex = hasCategories && activeIndex < categories.length ? activeIndex : 0
@@ -111,6 +113,28 @@ const RoadmapYearSection = ({ title, categories }: RoadmapData) => {
     setExpandedItemId((current) => (current === itemId ? null : itemId))
   }, [])
 
+  useEffect(() => {
+    const container = tabsContainerRef.current
+    const activeTab = tabRefs.current[safeIndex]
+
+    if (!container || !activeTab) return
+
+    const containerLeft = container.scrollLeft
+    const containerRight = containerLeft + container.clientWidth
+    const tabLeft = activeTab.offsetLeft
+    const tabRight = tabLeft + activeTab.offsetWidth
+    const padding = 16
+
+    if (tabLeft < containerLeft) {
+      container.scrollTo({ left: Math.max(tabLeft - padding, 0), behavior: 'smooth' })
+    } else if (tabRight > containerRight) {
+      container.scrollTo({
+        left: tabRight - container.clientWidth + padding,
+        behavior: 'smooth'
+      })
+    }
+  }, [safeIndex])
+
   if (!hasCategories) {
     return null
   }
@@ -119,7 +143,7 @@ const RoadmapYearSection = ({ title, categories }: RoadmapData) => {
     <RoadmapContainer>
       <StickyTitleContainer>
         <StickyTitle>{title}</StickyTitle>
-        <CategoryTabs role="tablist">
+        <CategoryTabs role="tablist" ref={tabsContainerRef}>
           {categories.map((category, idx) => {
             const categoryName = category.category?.trim() || 'Uncategorized'
             const normalizedCategoryKey = categoryName.toLowerCase() as RoadmapCategoryKey
@@ -134,6 +158,9 @@ const RoadmapYearSection = ({ title, categories }: RoadmapData) => {
                 tabIndex={safeIndex === idx ? 0 : -1}
                 isActive={safeIndex === idx}
                 onClick={() => setActiveIndex(idx)}
+                ref={(el) => {
+                  tabRefs.current[idx] = el
+                }}
               >
                 {safeIndex === idx && TabIcon && categoryMeta && (
                   <CategoryTabIcon aria-hidden="true" $color={categoryMeta.color} $background={categoryMeta.background}>
@@ -230,6 +257,7 @@ const LiveHeading = styled.h2`
 `
 
 const LiveIndicator = styled.span`
+  flex-shrink: 0;
   position: relative;
   display: inline-flex;
   width: 12px;
@@ -315,12 +343,18 @@ const CategoryTabs = styled.div`
   &::-webkit-scrollbar {
     display: none;
   }
+
+  @media ${deviceBreakPoints.mobile} {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 `
 
 const CategoryTab = styled.button<{ isActive: boolean }>`
   appearance: none;
   border: none;
-  padding: var(--spacing-1) var(--spacing-2);
+  padding: 0 var(--spacing-2);
   padding-left: var(--spacing-1);
   font-size: var(--fontSize-22);
   font-weight: var(--fontWeight-regular);
@@ -330,7 +364,7 @@ const CategoryTab = styled.button<{ isActive: boolean }>`
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   white-space: nowrap;
-  min-height: 48px;
+  min-height: 40px;
   display: inline-flex;
   align-items: center;
   box-shadow: ${({ isActive }) =>
@@ -348,7 +382,8 @@ const CategoryTab = styled.button<{ isActive: boolean }>`
 
   @media ${deviceBreakPoints.mobile} {
     font-size: var(--fontSize-20);
-    padding: var(--spacing-1) var(--spacing-3);
+    padding: 0 var(--spacing-2);
+    min-height: 32px;
   }
 `
 
@@ -358,7 +393,7 @@ const CategoryTabIcon = styled.span<{ $color: string; $background: string }>`
   justify-content: center;
   width: 20px;
   height: 20px;
-  color: ${({ $color }) => $color};
+  color: ${({ $color }) => $color} !important;
   flex-shrink: 0;
 
   svg {

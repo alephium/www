@@ -77,7 +77,7 @@ const TextElement = styled.div<TextElementProps>`
     ${({ noHeadingsMargins }) =>
       noHeadingsMargins &&
       css`
-        margin: 0;
+        margin: 0 !important;
       `}
   }
 
@@ -85,7 +85,7 @@ const TextElement = styled.div<TextElementProps>`
     font-family: 'InterDisplay';
     line-height: 0.9;
 
-    font-size: var(--fontSize-70);
+    font-size: var(--fontSize-64);
     font-weight: var(--fontWeight-medium);
 
     ${({ isSmall }) =>
@@ -106,7 +106,7 @@ const TextElement = styled.div<TextElementProps>`
 
   > h2 {
     font-family: 'InterDisplay';
-    font-size: var(--fontSize-50);
+    font-size: var(--fontSize-42);
     margin-bottom: var(--spacing-6);
     font-weight: var(--fontWeight-medium);
     color: ${({ theme }) => theme.textPrimary};
@@ -184,9 +184,10 @@ const TextElement = styled.div<TextElementProps>`
   }
 
   p,
-  ul {
-    color: ${({ theme }) => theme.textPrimaryVariation};
-    font-size: var(--fontSize-22);
+  ul,
+  span {
+    color: ${({ theme }) => theme.textSecondary};
+    font-size: var(--fontSize-20);
     font-weight: var(--fontWeight-normal);
     line-height: 1.3;
     max-width: 700px;

@@ -66,7 +66,7 @@ const HomepageNewsPopup = () => {
       >
         <CardText>
           <Badge color="palette2">BREAKING NEWS 🔥</Badge>
-          <TextElement noHeadingsMargins>
+          <TextElement>
             <h2 style={{ color: theme.palette2 }}>Alephium: Phase 2</h2>
             <p>
               <strong>Now begins the second chapter.</strong>

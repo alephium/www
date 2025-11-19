@@ -9,6 +9,7 @@ import CardText from '../../CardText'
 import CardImage from '../../customPageComponents/CardImage'
 import SubheaderContent from '../../customPageComponents/SubheaderContent'
 import SubpageSection from '../../customPageComponents/SubpageSection'
+import TextElement from '../../customPageComponents/TextElement'
 import GradientText from '../../GradientText'
 
 export const homepageIntroQuery = graphql`
@@ -127,10 +128,10 @@ const HomepageIntroSection = () => {
 
   return (
     <SubpageSection id="intro">
-      <CardText>
+      <TextElement noHeadingsMargins>
         <h2>Quick start</h2>
         <p>Dive into the Alephium ecosystem 🐠</p>
-      </CardText>
+      </TextElement>
       <SubheaderContent>
         <BentoLayout columns={4} animateItems={true}>
           <BentoItem colSpan={2} rowSpan={2}>

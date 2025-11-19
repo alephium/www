@@ -98,8 +98,16 @@ const Phase2Section = () => (
                       <span>{group.label}</span>
                     </Phase2GroupCell>
                   )}
-                  <Phase2ComponentCell $palette={group.palette}>{item.component}</Phase2ComponentCell>
-                  <Phase2RoleCell>{item.role}</Phase2RoleCell>
+                  <Phase2ComponentCell $palette={group.palette}>
+                    <TextElement>
+                      <span>{item.component}</span>
+                    </TextElement>
+                  </Phase2ComponentCell>
+                  <Phase2RoleCell>
+                    <TextElement>
+                      <span>{item.role}</span>
+                    </TextElement>
+                  </Phase2RoleCell>
                 </Phase2Row>
               ))
             )}
@@ -144,9 +152,11 @@ const Phase2EmptyHeader = styled.th`
 const Phase2ComponentCell = styled.td<{ $palette: PaletteKey }>`
   width: 30%;
   font-weight: 500;
-  color: ${({ theme, $palette }) => theme[$palette]};
   padding: var(--spacing-3);
   vertical-align: top;
+  * {
+    color: ${({ theme, $palette }) => theme[$palette]} !important;
+  }
 `
 
 const Phase2RoleCell = styled.td`
