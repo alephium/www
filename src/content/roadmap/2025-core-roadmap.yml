@@ -291,7 +291,7 @@ categories:
       - status: done
         type: coreDapp
         title: Frontend foundation
-      - status: done
+      - status: ongoing
         type: coreDapp
         title: MVP on testnet
       - status: ongoing
@@ -299,7 +299,7 @@ categories:
         title: CLMM workflow parity
       - status: ongoing
         type: coreDapp
-        title: Alephium-branded UX/UI v1
+        title: Finalized UI
       - status: ongoing
         type: coreDapp
         title: Manage user positions
