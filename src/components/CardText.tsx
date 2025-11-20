@@ -25,6 +25,7 @@ const CardTextStyled = styled(TextElement)`
     line-height: 1.5;
     margin-bottom: 0;
     margin-top: 0;
+    color: ${({ theme }) => theme.textSecondary};
   }
 
   h3 {

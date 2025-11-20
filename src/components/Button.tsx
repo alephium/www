@@ -101,8 +101,8 @@ const Button = ({ onClick, className, children, url, disabled, highlight, square
 const getGradient = (theme: DefaultTheme) => `
   radial-gradient(
     circle at var(--gradient-x) var(--gradient-y),
-    ${theme.palette5} 25%,
-    ${theme.palette4} 100%
+    ${theme.palette2} 25%,
+    ${theme.palette5} 100%
   )
 `
 
@@ -122,10 +122,10 @@ const GradientBorder = styled.div<{ squared?: boolean }>`
   &::before {
     content: '';
     position: absolute;
-    inset: 4px;
+    inset: 1px;
     border-radius: ${({ squared }) => getInnerBorderRadius(squared)};
     background: ${({ theme }) => theme.textPrimary};
-
+    filter: blur(2px);
     z-index: 0;
   }
 
@@ -133,15 +133,6 @@ const GradientBorder = styled.div<{ squared?: boolean }>`
     &::after {
       opacity: 1;
     }
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, 1);
-    z-index: 1;
   }
 `
 
@@ -155,10 +146,12 @@ const ArrowStyled = styled(Arrow)<{ isExternal?: boolean }>`
 
 const StyledButton = styled(Button)`
   background-color: ${({ theme, invert, secondary }) =>
-    invert ? theme.background1 : secondary ? 'transparent' : theme.textPrimary};
+    invert ? theme.background1 : secondary ? theme.action2 : theme.action1};
   color: ${({ theme, invert, secondary }) =>
     invert ? theme.textPrimary : secondary ? theme.textPrimaryVariation : colord(theme.textPrimary).invert().toHex()};
-  border: ${({ secondary, theme }) => (secondary ? `1px solid ${theme.borderPrimary}` : 'none')};
+  box-shadow: ${({ secondary, theme }) =>
+    `0 2px 5px rgba(0, 0, 0, 0.2)` +
+    (secondary ? `, inset 0 1px ${theme.borderSecondary}, inset 0 -1px ${theme.borderSecondary}` : '')};
   --gradient-x: 50%;
   --gradient-y: 50%;
   border-radius: ${({ squared }) => getBorderRadius(squared)};
@@ -176,7 +169,7 @@ const StyledButton = styled(Button)`
   transition: all 0.1s ease-out;
 
   &:hover {
-    filter: saturate(140%);
+    filter: saturate(140%) brightness(1.1);
     color: ${({ theme, secondary }) => (secondary ? theme.textPrimary : colord(theme.textPrimary).invert().toHex())};
   }
 

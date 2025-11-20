@@ -14,8 +14,8 @@ const NetworkUpgradesCardScroller = () => {
     <CardsHorizontalScroller cardWidth={380} cardGap={24} animateCards>
       <Card border>
         <CardText>
-          <h3 style={{ color: theme.palette3, paddingRight: 0, alignItems: 'center', display: 'flex' }}>
-            Leman<Badge color="palette3">March 30, 2023</Badge>
+          <h3 style={{ color: theme.palette1, paddingRight: 0, alignItems: 'center', display: 'flex' }}>
+            Leman<Badge color="palette1">March 30, 2023</Badge>
           </h3>
           <p>
             Leman, the first post-mainnet upgrade, refined Alephium&apos;s developer stack, enabling dApp creation with
@@ -23,59 +23,56 @@ const NetworkUpgradesCardScroller = () => {
           </p>
         </CardText>
         <CardFooterButtonContainer>
-          <Button highlight squared url="https://medium.com/@alephium/the-leman-network-upgrade-is-live-f52c89b7dd6a">
+          <Button squared secondary url="/news/post/the-leman-network-upgrade-is-live-f52c89b7dd6a">
             More on Leman upgrade
           </Button>
         </CardFooterButtonContainer>
       </Card>
       <Card border>
         <CardText>
-          <h3 style={{ color: theme.palette2, paddingRight: 0, alignItems: 'center', display: 'flex' }}>
-            Rhone<Badge color="palette2">Jun 12, 2024</Badge>
+          <h3 style={{ color: theme.palette5, paddingRight: 0, alignItems: 'center', display: 'flex' }}>
+            Rhône<Badge color="palette5">Jun 12, 2024</Badge>
           </h3>
           <p>
-            Then came Rhone, our first big leap forward. Block times dropped from 64 to 16 seconds, smart contracts got
-            more powerful, and dApp performance improved across the board. Rhone was about making Alephium stronger,
+            Then came Rhône, our first big leap forward. Block times dropped from 64 to 16 seconds, smart contracts got
+            more powerful, and dApp performance improved across the board. Rhône was about making Alephium stronger,
             faster, and ready to compete with the best L1s in the space.
           </p>
         </CardText>
         <CardFooterButtonContainer>
-          <Button
-            highlight
-            squared
-            url="https://medium.com/@alephium/rh%C3%B4ne-network-upgrade-activated-cbeb298585fe"
-          >
-            More on Rhone upgrade
+          <Button squared secondary url="/news/post/rh-ne-network-upgrade-activated-cbeb298585fe">
+            More on Rhône upgrade
           </Button>
         </CardFooterButtonContainer>
       </Card>
       <Card border>
         <CardText>
-          <h3 style={{ color: theme.palette4, paddingRight: 0, alignItems: 'center', display: 'flex' }}>
-            Danube<Badge color="palette4">Jul 15, 2025</Badge>
+          <h3 style={{ color: theme.palette2, paddingRight: 0, alignItems: 'center', display: 'flex' }}>
+            Danube<Badge color="palette2">Jul 15, 2025</Badge>
           </h3>
           <p>
-            Danube marks a shift, this is where the vision of Web3 starts to feel real. Where onboarding doesn&apos;t
-            require a technical manual. Where developers aren&apos;t boxed in by protocol constraints. Danube brings the
-            features, UX, and dev experience that many other chains talk about - but few deliver.
+            Danube marks a shift: the vision of Web3 finally starts to feel real. Block times dropped from 16s to 8s,
+            and, most importantly, we abstracted sharding to deliver a single-chain experience. Onboarding no longer
+            requires a technical manual, Danube brings the features, UX, and dev experience that many chains promise but
+            few deliver.
           </p>
         </CardText>
         <CardFooterButtonContainer>
-          <Button highlight squared url="https://x.com/alephium/status/1920780688313233634">
+          <Button squared secondary url="/news/post/danube-upgrade-everything-you-need-to-know-faq">
             More on Danube upgrade
           </Button>
         </CardFooterButtonContainer>
       </Card>
-      <Card border>
+      {/*<Card border>
         <CardText>
-          <h3 style={{ alignItems: 'center', display: 'flex' }}>Next?</h3>
+          <h3 style={{ alignItems: 'center', display: 'flex' }}>Phase 2</h3>
           <p>
             We continue to build. The next upgrade of the Danube era will focus on strengthening Alephium&apos;s core -
             enhancing performance, expanding smart contract capabilities, and setting the stage for high-impact apps
             that showcase the true utility of ALPH.
           </p>
         </CardText>
-      </Card>
+      </Card>*/}
     </CardsHorizontalScroller>
   )
 }

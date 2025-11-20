@@ -68,7 +68,7 @@ const SubpageHeroSectionStyled = styled.section<SubpageHeroSectionProps>`
   @media ${deviceBreakPoints.mobile} {
     gap: 0;
     box-sizing: border-box;
-    background-color: ${({ theme }) => theme.background1};
+    background-color: ${({ theme }) => theme.surface2};
     padding: var(--spacing-2);
     flex-direction: column;
     height: auto;
@@ -119,7 +119,7 @@ const HeroPageSectionContainer = styled.div<Pick<SubpageHeroSectionProps, 'align
   height: ${({ split }) => (split ? '100%' : 'auto')};
   align-self: stretch;
   border-radius: var(--radius-huge);
-  background-color: ${({ theme, split }) => (split ? theme.background1 : 'transparent')};
+  background-color: ${({ theme, split }) => (split ? theme.surface2 : 'transparent')};
 
   ${({ split }) =>
     split &&

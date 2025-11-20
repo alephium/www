@@ -1,14 +1,17 @@
 import type { Icon } from '@phosphor-icons/react'
 import {
+  AppStoreLogoIcon,
   AsteriskIcon,
   BookOpenIcon,
   BridgeIcon,
   CalendarCheckIcon,
   ChartLineUpIcon,
+  ChatsCircleIcon,
   CodeIcon,
   CompassIcon,
   CpuIcon,
   GiftIcon,
+  GlobeHemisphereWestIcon,
   HandshakeIcon,
   NewspaperIcon,
   PuzzlePieceIcon,
@@ -67,6 +70,31 @@ export const ROADMAP_STATUSES: ReadonlyArray<{
   { key: 'ongoing', label: 'Ongoing', Icon: WavesIcon },
   { key: 'planned', label: 'Planned', Icon: SunHorizonIcon }
 ]
+
+export const ROADMAP_CATEGORY_META: Record<
+  RoadmapCategoryKey,
+  {
+    Icon: Icon
+    color: string
+    background: string
+  }
+> = {
+  apps: {
+    Icon: AppStoreLogoIcon,
+    color: '#F99E70',
+    background: 'rgba(249, 158, 112, 0.12)'
+  },
+  ecosystem: {
+    Icon: GlobeHemisphereWestIcon,
+    color: '#66D479',
+    background: 'rgba(102, 212, 121, 0.15)'
+  },
+  marketing: {
+    Icon: ChatsCircleIcon,
+    color: '#7595FF',
+    background: 'rgba(117, 149, 255, 0.15)'
+  }
+}
 
 export interface RoadmapButton {
   label?: string

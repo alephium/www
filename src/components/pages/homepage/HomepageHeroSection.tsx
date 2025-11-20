@@ -46,7 +46,7 @@ const HomepageHeroSection = () => (
           <AlephiumLogo
             fill={lightTheme.textPrimary}
             gradientIndex={0}
-            innerGlowColor={colord(lightTheme.palette1).lighten(0.2).alpha(0.3).toHex()}
+            innerGlowColor={colord(lightTheme.palette1).lighten(0.2).alpha(0.2).toHex()}
           />
         </AlephiumLogoContainer>
       </BottomSection>
