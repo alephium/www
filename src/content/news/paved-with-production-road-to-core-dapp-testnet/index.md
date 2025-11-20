@@ -41,7 +41,6 @@ Along the way, we built:
 * **UX as a Protocol Primitive**: built-in DevX improvements, fast confirmations, and no fragmentation.
 * **New Deflationary Features:** 
 * * **100% of the blocks’ transaction fees are burned**, directly linking usage to deflation.
-
   * **PoLW (Proof-of-Less-Work)** will deepen this alignment by tightening supply as network security increases.
 
 ### Phase Two: Activating the Aligned Ecosystem Loop
@@ -67,49 +66,33 @@ This list is a full production history of key frontend and backend achievements 
 
 * **DEX Contracts**
 * * Implemented the fully functional CLMM DEX in Ralph
-
   * Support multi-hop swapping in CLMM
-
   * Support referral system in the CLMM and CPMM contracts 
-
   * Completed rigorous testing and fixed issues across the main user flows.
 * **Staking Contracts**
 * * Implemented the core staking contracts
-
   * Implemented example fee-sharing and governance contracts to demonstrate how to integrate with staking contracts
 * **SDK**
 * * Provide functionality to integrate with CLMM DEX
-
   * Provide functionality to integrate with CPMM DEX
-
   * Provide functionality to integrate with staking contracts
 * **Backend & Frontend**
 * * Implemented the basic frontend for CLMM & CPMM DEXes and staking contracts that supports core functionalities such as create pools, add liquidity, swapping, staking, etc.
-
   * Implemented the backend required to support the development of the frontend. 
 
 ### Frontend and Design Progress
 
 * **Design & User Experience (UX) Foundation**
 * * Ongoing wireframe and mockup design
-
   * Performed deep dives into competitor analysis (especially CLMMs).
-
   * Finished the design for the New Position screen.
-
   * Started designing the Pools screen interface.
-
   * Explored and experimented with new modal layout ideas.
 * **Component Building**
 * * Exported bridge code into a reusable widget to integrate into the Core dApp.
-
   * Continued intensive front-end design work, with numerous screens and components built in parallel.
 
-
-
 **Phase 2 Roadmap Image here**
-
-
 
 ### Live Roadmap, Now Live!
 
