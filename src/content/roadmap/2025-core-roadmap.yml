@@ -1,4 +1,4 @@
-title: "2025"
+title: 2025-26
 categories:
   - category: Ecosystem
     tagline: Expanding Alephium adoption through programs, integrations, and
@@ -261,15 +261,19 @@ categories:
         button:
           label: Explore wallets
           url: https://alephium.org/wallets/
+        description: Complete redesign of desktop and mobile wallet
       - status: done
         type: tooling
-        title: Multiple language support for all the Alephium Apps & Website
+        title: Multilingual support for all the Alephium apps & website
       - status: done
         type: wallet
         title: On-ramp integration
       - status: done
         type: wallet
-        title: Mobile in-app browser
+        title: Mobile in-app dApp browser
+        description: As per a long-awaited community request, the mobile wallet now
+          supports browsing through the ecosystem dApps directly within the app,
+          without relying on WalletConnect.
       - status: done
         type: wallet
         title: State management & offline caching
@@ -291,7 +295,7 @@ categories:
       - status: done
         type: coreDapp
         title: Frontend foundation
-      - status: done
+      - status: ongoing
         type: coreDapp
         title: MVP on testnet
       - status: ongoing
@@ -299,7 +303,7 @@ categories:
         title: CLMM workflow parity
       - status: ongoing
         type: coreDapp
-        title: Alephium-branded UX/UI v1
+        title: Finalized UI
       - status: ongoing
         type: coreDapp
         title: Manage user positions
@@ -312,6 +316,8 @@ categories:
       - status: ongoing
         type: bridge
         title: Bridge widget
+        description: Exporting the core bridge functionality into a reusable component
+          for drop-in integration into other apps.
       - status: planned
         type: wallet
         title: Desktop ecosystem screen
@@ -341,10 +347,7 @@ categories:
         title: Buy button integration
       - status: planned
         type: coreDapp
-        title: Alephium-branded UX/UI v2
+        title: Revamped UX/UI v2
       - status: planned
         type: bridge
         title: Additional chains
-      - status: planned
-        type: coreDapp
-        title: Core dApp on Testnet
