@@ -1,4 +1,4 @@
-title: "2025-26"
+title: "2025"
 categories:
   - category: Ecosystem
     tagline: Expanding Alephium adoption through programs, integrations, and
@@ -291,7 +291,7 @@ categories:
       - status: done
         type: coreDapp
         title: Frontend foundation
-      - status: ongoing
+      - status: done
         type: coreDapp
         title: MVP on testnet
       - status: ongoing
@@ -299,7 +299,7 @@ categories:
         title: CLMM workflow parity
       - status: ongoing
         type: coreDapp
-        title: Finalized UI
+        title: Alephium-branded UX/UI v1
       - status: ongoing
         type: coreDapp
         title: Manage user positions
@@ -345,3 +345,6 @@ categories:
       - status: planned
         type: bridge
         title: Additional chains
+      - status: planned
+        type: coreDapp
+        title: Core dApp on Testnet
