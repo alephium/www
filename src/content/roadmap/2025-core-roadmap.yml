@@ -256,27 +256,6 @@ categories:
     tagline: Foundational apps built by the Core Team to serve the Alephium ecosystem.
     items:
       - status: done
-        type: wallet
-        title: Revamp
-        button:
-          label: Explore wallets
-          url: https://alephium.org/wallets/
-      - status: done
-        type: tooling
-        title: Multiple language support for all the Alephium Apps & Website
-      - status: done
-        type: wallet
-        title: On-ramp integration
-      - status: done
-        type: wallet
-        title: Mobile in-app browser
-      - status: done
-        type: wallet
-        title: State management & offline caching
-      - status: done
-        type: wallet
-        title: Groupless addresses & chained transactions
-      - status: done
         type: bridge
         title: Bridge UI/UX revamp
       - status: done
@@ -293,7 +272,31 @@ categories:
         title: Frontend foundation
       - status: done
         type: coreDapp
-        title: MVP on testnet
+        title: MVP on private testnet
+      - status: done
+        type: wallet
+        title: Revamp
+        button:
+          label: Explore wallets
+          url: https://alephium.org/wallets/
+      - status: done
+        type: wallet
+        title: On-ramp integration
+      - status: done
+        type: wallet
+        title: Mobile in-app browser
+      - status: done
+        type: wallet
+        title: State management & offline caching
+      - status: done
+        type: wallet
+        title: Groupless addresses & chained transactions
+      - status: done
+        type: tooling
+        title: Multiple language support for all the Alephium Apps & Website
+      - status: ongoing
+        type: bridge
+        title: Bridge widget
       - status: ongoing
         type: coreDapp
         title: CLMM workflow parity
@@ -309,9 +312,21 @@ categories:
       - status: ongoing
         type: coreDapp
         title: Staking support
+      - status: planned
+        type: coreDapp
+        title: CPMM referral system
       - status: ongoing
-        type: bridge
-        title: Bridge widget
+        type: coreDapp
+        title: Bridge integration
+      - status: planned
+        type: coreDapp
+        title: Buy button integration
+      - status: planned
+        type: coreDapp
+        title: Alephium-branded UX/UI v2
+      - status: planned
+        type: coreDapp
+        title: Core dApp on Testnet
       - status: planned
         type: wallet
         title: Desktop ecosystem screen
@@ -331,20 +346,5 @@ categories:
         type: wallet
         title: Watch-only accounts
       - status: planned
-        type: coreDapp
-        title: CPMM referral system
-      - status: ongoing
-        type: coreDapp
-        title: Bridge integration
-      - status: planned
-        type: coreDapp
-        title: Buy button integration
-      - status: planned
-        type: coreDapp
-        title: Alephium-branded UX/UI v2
-      - status: planned
         type: bridge
         title: Additional chains
-      - status: planned
-        type: coreDapp
-        title: Core dApp on Testnet
