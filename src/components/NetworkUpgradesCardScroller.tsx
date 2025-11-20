@@ -51,9 +51,10 @@ const NetworkUpgradesCardScroller = () => {
             Danube<Badge color="palette2">Jul 15, 2025</Badge>
           </h3>
           <p>
-            Danube marks a shift, this is where the vision of Web3 starts to feel real. Where onboarding doesn&apos;t
-            require a technical manual. Where developers aren&apos;t boxed in by protocol constraints. Danube brings the
-            features, UX, and dev experience that many other chains talk about - but few deliver.
+            Danube marks a shift: the vision of Web3 finally starts to feel real. Block times dropped from 16s to 8s,
+            and, most importantly, we abstracted sharding to deliver a single-chain experience. Onboarding no longer
+            requires a technical manual, Danube brings the features, UX, and dev experience that many chains promise but
+            few deliver.
           </p>
         </CardText>
         <CardFooterButtonContainer>
