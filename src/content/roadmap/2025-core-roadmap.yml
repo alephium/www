@@ -278,13 +278,17 @@ categories:
         title: Revamp
         button:
           label: Explore wallets
-          url: https://alephium.org/wallets/
+          url: /wallets
+        description: Complete redesign of both mobile and desktop wallets.
       - status: done
         type: wallet
         title: On-ramp integration
       - status: done
         type: wallet
-        title: Mobile in-app browser
+        title: Mobile in-app dApp browser
+        description: Improved the experience of our mobile users, allowing them to visit
+          their favorite ecosystem dApps directly from within the Alephium
+          mobile wallet, without relying on WalletConnect.
       - status: done
         type: wallet
         title: State management & offline caching
@@ -293,16 +297,18 @@ categories:
         title: Groupless addresses & chained transactions
       - status: done
         type: tooling
-        title: Multiple language support for all the Alephium Apps & Website
+        title: Multilingual support for all the Alephium apps & website
       - status: ongoing
         type: bridge
         title: Bridge widget
+        description: Extracting the core bridge functionality into a reusable component
+          for drop-in integration into other apps.
       - status: ongoing
         type: coreDapp
         title: CLMM workflow parity
       - status: ongoing
         type: coreDapp
-        title: Alephium-branded UX/UI v1
+        title: Initial UI/UX v1
       - status: ongoing
         type: coreDapp
         title: Manage user positions
@@ -323,7 +329,7 @@ categories:
         title: Buy button integration
       - status: planned
         type: coreDapp
-        title: Alephium-branded UX/UI v2
+        title: Revamp UI/UX v2
       - status: planned
         type: coreDapp
         title: Core dApp on Testnet
