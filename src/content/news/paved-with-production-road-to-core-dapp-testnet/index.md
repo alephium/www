@@ -98,7 +98,7 @@ This list is a full production history of key frontend and backend achievements 
 
 This deep dive into our frontend and backend progress shows how the Core dApp has moved from concept to production. Now, as we get closer to the Testnet launch, we are committing to a new level of transparency and accountability to match the scale of this delivery.
 
-In line with the release of this article, you can now visit [alephum.org/roadmap](/roadmap), where you can access the history of Alephium upgrades, roadmap highlights, and see what the developers are working on next in preparation for Testnet.
+In line with the release of this article, you can now visit [our roadmap page](/roadmap), where you can access the history of Alephium upgrades, roadmap highlights, and see what the developers are working on next in preparation for Testnet.
 
 More interestingly, it includes a Live Roadmap Dashboard. This new system has been built by our developers to cover marketing, ecosystem, dApps, and more, for full transparency and accountability. For those waiting on the Core dApp, you can now get one degree closer to the action. 
 
