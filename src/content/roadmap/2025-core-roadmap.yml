@@ -1,4 +1,4 @@
-title: "2025"
+title: '2025'
 categories:
   - category: Ecosystem
     tagline: Expanding Alephium adoption through programs, integrations, and
@@ -7,7 +7,7 @@ categories:
       - title: DIA integration
         status: done
         type: integration
-        description: "Push oracle. Supporting price feeds, randomness and RWAs. "
+        description: 'Push oracle. Supporting price feeds, randomness and RWAs. '
         button:
           label: Read announcement
           url: https://www.diadata.org/blog/post/dia-price-oracles-alephium-mainnet/
@@ -21,7 +21,7 @@ categories:
         description: MPC wallet and CeDeFi services, for dApps and institutions.
         button:
           label: Read news
-          url: https://alephium.org/news/post/primevault-x-alephium-unlocking-institutional-access-to-defi-on-proof-of-work/
+          url: /news/post/primevault-x-alephium-unlocking-institutional-access-to-defi-on-proof-of-work/
       - status: done
         type: integration
         title: Fiat ramp integrations
@@ -53,7 +53,7 @@ categories:
           funding tiers, and adoption metrics.
         button:
           label: Explore grants
-          url: https://alephium.org/grants/
+          url: /grants
       - status: ongoing
         type: program
         title: Local communities rollout
@@ -153,14 +153,14 @@ categories:
         title: Alephium.org News section
         button:
           label: Read our news
-          url: https://alephium.org/news/
+          url: /news
         description: News, updates, and insights from the Alephium ecosystem.
       - status: done
         type: growth
         title: Ambassador Program revamp
         button:
           label: View program
-          url: https://alephium.org/ambassador/
+          url: /ambassador
         description: A revamped ambassador program designed to be clearer, more
           rewarding, and fully aligned with our current growth phase.
       - status: done
@@ -216,7 +216,7 @@ categories:
         title: L1 season campaign narrative
         button:
           label: Read updates
-          url: https://alephium.org/news/
+          url: /news
         description: Positioning Alephium as the most principled and secure choice among
           next-generation Layer 1s during market cycles.
       - status: planned
