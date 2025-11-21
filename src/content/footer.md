@@ -16,6 +16,8 @@ columns:
     links:
       - text: News
         url: /news
+      - text: Roadmap
+        url: /roadmap
       - text: Contact
         url: /contact
       - text: Privacy Policy
