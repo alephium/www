@@ -94,7 +94,7 @@ This list is a full production history of key frontend and backend achievements 
 
 ![](image-1-.png)
 
-### Live Roadmap, Now Live!
+## Live Roadmap, Now Live!
 
 This deep dive into our frontend and backend progress shows how the Core dApp has moved from concept to production. Now, as we get closer to the Testnet launch, we are committing to a new level of transparency and accountability to match the scale of this delivery.
 
@@ -102,6 +102,8 @@ In line with the release of this article, you can now visit [our roadmap page](/
 
 More interestingly, it includes a Live Roadmap Dashboard (as seen above). This new system has been built by our developers to cover marketing, ecosystem, dApps, and more, for full transparency and accountability. For those waiting on the Core dApp, you can now get one degree closer to the action. 
 
-**One final point to leave with you** - the Testnet will be launched as a testing ground to try out the smart contracts and backend. It is far from a finished product. During this time, we’ll be using a temporary front-end. The real Alephium quality UX/UI that you know and love will be saved for the Mainnet launch!
+### **One Final Point to Leave You With**
+
+ the Testnet will be launched as a testing ground to try out the smart contracts and backend. It is far from a finished product. During this time, we’ll be using a temporary front-end. The real Alephium quality UX/UI that you know and love will be saved for the Mainnet launch!
 
 For further information and regular updates, be sure to check [Alephium’s ](http://www.twitter.com/alephium)[X](http://www.x.com/alephium) account.
