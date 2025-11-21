@@ -76,7 +76,7 @@ const HomepageNewsPopup = () => {
           </TextElement>
         </CardText>
         <CardFooterButtonContainer>
-          <Button squared url="https://x.com/alephium/status/1958886335202435548">
+          <Button squared url="/news/post/paved-with-production-road-to-core-dapp-testnet">
             Read the article
           </Button>
         </CardFooterButtonContainer>
