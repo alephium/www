@@ -1,4 +1,4 @@
-title: '2025'
+title: "2025"
 categories:
   - category: Ecosystem
     tagline: Expanding Alephium adoption through programs, integrations, and
@@ -7,7 +7,7 @@ categories:
       - title: DIA integration
         status: done
         type: integration
-        description: 'Push oracle. Supporting price feeds, randomness and RWAs. '
+        description: "Push oracle. Supporting price feeds, randomness and RWAs. "
         button:
           label: Read announcement
           url: https://www.diadata.org/blog/post/dia-price-oracles-alephium-mainnet/
@@ -329,10 +329,13 @@ categories:
         title: Buy button integration
       - status: planned
         type: coreDapp
+        title: Live on Testnet
+      - status: planned
+        type: coreDapp
         title: Revamp UI/UX v2
       - status: planned
         type: coreDapp
-        title: Core dApp on Testnet
+        title: Live on Mainnet
       - status: planned
         type: wallet
         title: Desktop ecosystem screen
