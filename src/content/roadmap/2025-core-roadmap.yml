@@ -103,7 +103,7 @@ categories:
           use case justifying the cost e.g. Perp DEX.
       - status: planned
         type: initiative
-        title: Online & offline hackatons
+        title: Online & offline hackathons
         description: Online and offline hackathons to onboard talented developers and
           teams to the Alephium ecosystem through hands-on challenges and
           rewards.
@@ -133,7 +133,7 @@ categories:
     items:
       - status: done
         type: event
-        title: Danube network upgrade campain
+        title: Danube network upgrade campaign
         button:
           label: See campaign
           url: https://x.com/alephium/status/1920780688313233634
