@@ -8,7 +8,7 @@ seoDescription: Deep dive into Alephium’s Core dApp development. Review the
   Dashboard. Testnet is next!
 date: 2025-11-21T16:00:00.000Z
 spotlight: true
-featuredImage: alephiumart.png
+featuredImage: image-1-.png
 relatedPosts:
   - from-scalable-infrastructure-to-aligned-economics/index
   - why-the-dex-boom-proves-alephiums-next-gen-pow-phase-2-are-more-relevant-than-ever/index
@@ -92,7 +92,7 @@ This list is a full production history of key frontend and backend achievements 
 * * Exported bridge code into a reusable widget to integrate into the Core dApp.
   * Continued intensive front-end design work, with numerous screens and components built in parallel.
 
-**Phase 2 Roadmap Image here**
+![](image-1-.png)
 
 ### Live Roadmap, Now Live!
 
@@ -100,7 +100,7 @@ This deep dive into our frontend and backend progress shows how the Core dApp ha
 
 In line with the release of this article, you can now visit [our roadmap page](/roadmap), where you can access the history of Alephium upgrades, roadmap highlights, and see what the developers are working on next in preparation for Testnet.
 
-More interestingly, it includes a Live Roadmap Dashboard. This new system has been built by our developers to cover marketing, ecosystem, dApps, and more, for full transparency and accountability. For those waiting on the Core dApp, you can now get one degree closer to the action. 
+More interestingly, it includes a Live Roadmap Dashboard (as seen above). This new system has been built by our developers to cover marketing, ecosystem, dApps, and more, for full transparency and accountability. For those waiting on the Core dApp, you can now get one degree closer to the action. 
 
 **One final point to leave with you** - the Testnet will be launched as a testing ground to try out the smart contracts and backend. It is far from a finished product. During this time, we’ll be using a temporary front-end. The real Alephium quality UX/UI that you know and love will be saved for the Mainnet launch!
 
