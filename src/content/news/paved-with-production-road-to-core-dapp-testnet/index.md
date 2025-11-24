@@ -92,7 +92,7 @@ This list is a full production history of key frontend and backend achievements 
 * * Exported bridge code into a reusable widget to integrate into the Core dApp.
   * Continued intensive front-end design work, with numerous screens and components built in parallel.
 
-![](image-1-.png)
+![](twitter-core-dapp-testnet-roadmap-3-.png)
 
 ## Live Roadmap, Now Live!
 
