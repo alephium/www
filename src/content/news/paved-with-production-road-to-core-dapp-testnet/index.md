@@ -8,7 +8,7 @@ seoDescription: Deep dive into Alephium’s Core dApp development. Review the
   Dashboard. Testnet is next!
 date: 2025-11-21T16:00:00.000Z
 spotlight: true
-featuredImage: image-1-.png
+featuredImage: twitter-core-dapp-testnet-roadmap-3-.png
 relatedPosts:
   - from-scalable-infrastructure-to-aligned-economics/index
   - why-the-dex-boom-proves-alephiums-next-gen-pow-phase-2-are-more-relevant-than-ever/index
