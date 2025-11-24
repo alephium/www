@@ -49,12 +49,12 @@ With the infrastructure firmly in place, Phase Two allows us to engineer the mis
 
 * **The Core dApp**: Launching initially as a CLMM [DEX](https://x.com/alephium/status/1983903694581346644), will deliver a protocol-owned, open-source benchmark to secure liquidity, while the generated fees will be distributed to Liquidity Providers, ALPH stakers, and the remaining used for ALPH buybacks & burns.
 
-![](gy9rlfxwmaairr1.jpeg)
+![](fees-distribution.png)
 
 * **Staked $ALPH**: Staking $ALPH provides participants with fee sharing from the Core dApp, governance rights, and composability for generating additional yield.
 * **Aligned Loop**: The entire system connects to form a loop, whereby usage drives protocol fees, which drive deflation/distribution, which drives staking and governance, which drives usage. This is our path to long-term resilience and sustained utility for $ALPH.
 
-![](gy9sx0fxoaemuci.jpeg)
+![](roadmap.png)
 
 The work detailed below is the developers’ execution of the strategy above, ensuring the Core dApp delivers on its original promise to be a secure and institution-ready benchmark for the entire ecosystem. 
 
