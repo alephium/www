@@ -241,6 +241,6 @@ Use Toll is a proxy which sets a toll in ALPH to monetize a website. The user ca
 
 The hackathon has been a humbling and exciting experience. Many of the builders are actually using what they built during those two weeks to produce more polished products. The jury is now reviewing every submission (as are the partners) and will soon announce the winners.
 
-That was just the first hackathon in the Alephium Ecosystem. More will follow. In the meantime, if you’re building something and need a grant, access the [Alephium Community Grants &amp; Reward Program page](https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md)!
+That was just the first hackathon in the Alephium Ecosystem. More will follow. In the meantime, if you’re building something and need a grant, access the [Alephium Community Grants &amp; Reward Program page](/grants)!
 
 If you are an aspiring builder, start [here](https://twitter.com/alephium/status/1752028946399654269)! If you have questions, ping us on [Discord](/discord) in any of the devs channels. You can also reach us on [Telegram](https://t.me/alephiumgroup) & follow [@alephium on Twitter](https://twitter.com/alephium) to stay up-to-date.

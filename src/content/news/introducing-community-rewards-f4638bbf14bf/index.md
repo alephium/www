@@ -7,7 +7,7 @@ title: Introducing Community Rewards
 ---
 It’s been a month since the Alephium mainnet launch and many positive things have been accomplished thanks to the amazing community that has gathered around the project. People from all over the world, exchanging tips, tricks and ideas, building and improving upon Alephium.
 
-**\[UPDATED July 12th 2022 —_ The Grants & Rewards program has been updated and can be found_** [here](https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md)**_\]_**
+**\[UPDATED July 12th 2022 —_ The Grants & Rewards program has been updated and can be found_** [here](/grants)**_\]_**
 
 By design Alephium is public, open and decentralized. However, true decentralization can only be achieved if the community is involved at every level of the project, from mining to development but also content creation as well as project awareness initiatives. This is why it is paramount to encourage community contributions and involvement to foster the healthy growth of Alephium’s ecosystem.
 

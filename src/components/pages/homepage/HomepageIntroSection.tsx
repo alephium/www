@@ -98,7 +98,7 @@ const HomepageIntroSection = () => {
         actionText: 'Start Contributing',
         image: greenWater?.childImageSharp?.gatsbyImageData,
         link: {
-          url: 'https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md'
+          url: '/grants'
         },
         color: theme.textPrimary
       },

@@ -73,6 +73,6 @@ If you want to develop on Alephium, just go for it; eventually, you’ll finally
 
 Thanks, Benjamin, for your answers! Alephium is thrilled to have such talent builders in the community! You can find the Alphaca NFT collection on testnet on [Alephium’s NFT marketplace](https://testnet.nft.alephium.org/collection-details?collectionId=e0385e13db8a162d6d419b4b4665d802fe547176143dbd0c7226db02b681fb00)!
 
-Have you built something or have a nice idea and want to request a grant or reward? You can access the [Alephium Community Grants &amp; Reward Program page](https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md) for more info!
+Have you built something or have a nice idea and want to request a grant or reward? You can access the [Alephium Community Grants &amp; Reward Program page](/grants) for more info!
 
 If you need help or have extra questions, you are welcome to reach out in the \# 🎨dev-dapp channel on [Discord](/discord), or in the Alephium [Telegram](https://t.me/alephiumgroup) channel. Don’t forget to follow [@alephium on Twitter](https://twitter.com/alephium) to stay up-to-date.

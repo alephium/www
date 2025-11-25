@@ -65,6 +65,6 @@ _Disclaimer: While Alephium is happy to support a growing developer community, i
 
 ---
 
-Have you built something or have a nice idea and want to request a grant or reward? You can access the [Alephium Community Grants &amp; Reward Program page](https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md) for more info!
+Have you built something or have a nice idea and want to request a grant or reward? You can access the [Alephium Community Grants &amp; Reward Program page](/grants) for more info!
 
 If you need help or have extra questions, you are welcome to reach out in the \# 🎨dev-dapp channel on [Discord](/discord), or in the Alephium [Telegram](https://t.me/alephiumgroup) channel. Don’t forget to follow [@alephium on Twitter](https://twitter.com/alephium) to stay up-to-date.

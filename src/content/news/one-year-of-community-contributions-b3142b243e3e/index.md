@@ -6,7 +6,7 @@ featuredImage: image_2a378a7f2f.gif
 title: One year of community contributions
 ---
 
-_A_ [year ago](/news/post/introducing-community-rewards-f4638bbf14bf)_, Alephium created the_ [community rewards](https://github.com/alephium/community) _and the_ [grants programs](https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md) _to encourage the involvement of the community in all aspects of the project. It is still ongoing, head over to_ [GitHub and apply](https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md)_!_
+_A_ [year ago](/news/post/introducing-community-rewards-f4638bbf14bf)_, Alephium created the_ [community rewards](https://github.com/alephium/community) _and the_ [grants programs](/grants) _to encourage the involvement of the community in all aspects of the project. It is still ongoing, head over to_ [GitHub and apply](/grants)_!_
 
 This is a retrospective of contributions by the Alephium community during 2022. Rewards and Grants have been distributed from the [Ecosystem Development allocation](/news/post/alephium-tokenomics-61d59b51029c) to deserving individuals & projects, many of which can be found in the [Awesome Alephium repository](https://github.com/alephium/awesome-alephium). As it’s impossible to mention all contributions, this is not an exhaustive list!
 
@@ -111,7 +111,7 @@ During 2023 a lot is already planned!
 
 The Community Reward & Grants programs will continue to evolve and find more efficient ways to stimulate community participation in all aspects of Alephium’s evolution.
 
-True decentralization can only be achieved if the community is involved at every step of the project! Please head here for more information on how to solicit a [grant](https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md) or [submit a contribution worthy of a community reward](https://docs.google.com/forms/d/e/1FAIpQLSeaSouXl-Hwd_lZohwgysqk-8whc9bydHuVpSCr1C6IoDHuoA/viewform?usp=send_form) (eligibility info [here](https://github.com/alephium/community)).
+True decentralization can only be achieved if the community is involved at every step of the project! Please head here for more information on how to solicit a [grant](/grants) or [submit a contribution worthy of a community reward](https://docs.google.com/forms/d/e/1FAIpQLSeaSouXl-Hwd_lZohwgysqk-8whc9bydHuVpSCr1C6IoDHuoA/viewform?usp=send_form) (eligibility info [here](https://github.com/alephium/community)).
 
 In 2023 Alephium will put the emphasis on the growth of the ecosystem. A strong focus on incentivizing the creation of dApps and services leveraging Alephium’s technical capabilities will happen too. Similarly, community development contributions and bug bounties will be encouraged. Get ready for our first official hackathon, to be announced very soon!
 
