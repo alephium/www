@@ -175,6 +175,6 @@ I believe now is an excellent time to familiarize yourself with coding in Alephi
 
 - - -
 
-Have you built something or have a nice idea and want to request a grant or reward? You can access the Alephium [Community Grants &amp; Reward Program](https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md) page for more info!
+Have you built something or have a nice idea and want to request a grant or reward? You can access the Alephium [Community Grants &amp; Reward Program](/grants) page for more info!
 
 If you have questions or suggestions, please come to Alephium’s [Discord](/discord), [Telegram](https://t.me/alephiumgroup), or reach out on [Twitter](https://twitter.com/alephium)!

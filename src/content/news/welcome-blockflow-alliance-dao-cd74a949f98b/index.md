@@ -37,7 +37,7 @@ The DAO is a multisig, and [its address is visible here](https://explorer.alephi
 
 The Blockflow Alliance DAO has applied for a grant with Alephium, via the grants & rewards program for \$ALPH out of the ecosystem funds. This request is being reviewed as we speak, and after careful consideration and the usual process, a decision will be made and announced.
 
-This first DAO is a pioneer toward a future with multiple DAOs focused on different aspects of the expansion of the Alephium Universe! If you have ideas, skills, stamina & enthusiasm, [join our grants program](https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md)!
+This first DAO is a pioneer toward a future with multiple DAOs focused on different aspects of the expansion of the Alephium Universe! If you have ideas, skills, stamina & enthusiasm, [join our grants program](/grants)!
 
 **We are extremely grateful to have such engaged and capable community members, and we can’t wait to see what comes out of it. This marks an important milestone for Alephium and its ecosystem.**
 

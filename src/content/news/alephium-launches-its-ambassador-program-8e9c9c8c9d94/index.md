@@ -13,7 +13,7 @@ Following the success of our previous community initiatives, we’re thrilled to
 
 At Alephium, since the beginning of our journey, we’ve been in close contact with our community and have evolved from its feedback and help, as we are today.
 
-In the past 2 years, the [community rewards](https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md) have allowed us to [reward community members](/news/post/one-year-of-community-contributions-b3142b243e3e) for their awesome contributions (of which there are many!). But as we continue to grow and evolve, we recognize the need for a more structured and inclusive approach to community engagement.
+In the past 2 years, the [community rewards](/grants) have allowed us to [reward community members](/news/post/one-year-of-community-contributions-b3142b243e3e) for their awesome contributions (of which there are many!). But as we continue to grow and evolve, we recognize the need for a more structured and inclusive approach to community engagement.
 
 ### **Enter the Ambassador program!**
 

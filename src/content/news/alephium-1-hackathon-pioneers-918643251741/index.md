@@ -193,7 +193,7 @@ Participants will be required to submit their work through a form that will be c
 
 ## What happens after the hackathon?
 
-Participating projects can subsequently apply to Alephium’s [grant program](https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md#grants).
+Participating projects can subsequently apply to Alephium’s [grant program](/grants).
 
 [Cetacean Capital is also interested to support participating projects as the DAO](https://cetaceancapital.medium.com/bringing-the-a-game-2024-outlook-of-our-alephium-investment-4afd9a86606f) _“is dedicated to supporting standout projects that align with their criteria in the upcoming Hackathon, providing investment/seed funding ranging from \$50.000 to \$1.000.000”._
 

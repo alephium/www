@@ -101,7 +101,7 @@ const PageContent = () => {
                 <p>Documentation to get you going quick and easy.</p>
               </CardText>
             </Card>
-            <Card url="https://github.com/alephium/community/blob/master/Grant%26RewardProgram.md" border>
+            <Card url="/grants" border>
               <CardText>
                 <h3>Grants</h3>
                 <p>
