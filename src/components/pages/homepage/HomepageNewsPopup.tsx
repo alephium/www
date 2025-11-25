@@ -69,9 +69,9 @@ const HomepageNewsPopup = () => {
           <TextElement>
             <h2 style={{ color: theme.palette2 }}>Alephium: Phase 2</h2>
             <p>
-              <strong>Now begins the second chapter.</strong>
+              <strong>Road to Core dApp Testnet.</strong>
               <br />
-              From Scalable Infrastructure to Aligned Economics.
+              Full review of what we are cooking.
             </p>
           </TextElement>
         </CardText>
