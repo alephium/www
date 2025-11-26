@@ -59,6 +59,66 @@ collections:
         hint: 'Related posts listed at the bottom of the article. You can search by post title.'
         required: false
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'menus'
+    label: 'Menus'
+    files:
+      - label: 'Main navigation menu'
+        name: 'navigation-menu'
+        file: "src/content/navigation-menu.md"
+        fields:
+          - label: 'Menu items'
+            name: 'menuItems'
+            widget: 'list'
+            summary: '{{fields.title}}'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - label: 'Items'
+                name: 'items'
+                widget: 'list'
+                summary: '{{fields.title}}'
+                fields:
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Link', name: 'link', widget: 'string', required: false }
+          - label: 'Social platforms icons'
+            name: 'socialIcons'
+            widget: 'select'
+            multiple: true
+            options:
+              - Discord
+              - Telegram
+              - Twitter/X
+              - GitHub
+      - label: 'Footer menu'
+        name: 'footer'
+        file: "src/content/footer.md"
+        fields:
+          - label: 'Columns'
+            name: 'columns'
+            widget: 'list'
+            summary: '{{fields.title}}'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - label: 'Items'
+                name: 'links'
+                widget: 'list'
+                summary: '{{fields.text}}'
+                fields:
+                  - { label: 'Title', name: 'text', widget: 'string' }
+                  - { label: 'Link', name: 'url', widget: 'string' }
+          - label: 'Bottom'
+            name: 'bottom'
+            widget: 'object'
+            fields:
+              - label: 'Social platforms icons'
+                name: 'socials'
+                widget: 'select'
+                multiple: true
+                options:
+                  - Discord
+                  - Telegram
+                  - Twitter/X
+                  - GitHub
+              - { label: 'Text', name: 'text', widget: 'string' }
   - name: 'roadmap'
     label: 'Roadmap'
     folder: 'src/content/roadmap'

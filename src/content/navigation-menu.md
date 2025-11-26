@@ -47,9 +47,6 @@ menuItems:
         link: /grants
       - title: Online communities
         link: /communities
-button:
-  title: Bridge
-  link: https://bridge.alephium.org/
 socialIcons:
   - Twitter/X
   - Discord
