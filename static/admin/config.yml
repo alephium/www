@@ -59,6 +59,33 @@ collections:
         hint: 'Related posts listed at the bottom of the article. You can search by post title.'
         required: false
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'menus'
+    label: 'Menus'
+    files:
+      - label: 'Main navigation menu'
+        name: 'navigation-menu'
+        file: "src/content/navigation-menu.md"
+        fields:
+          - label: 'Menu items'
+            name: 'menuItems'
+            widget: 'list'
+            summary: '{{fields.title}}'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - label: 'Items'
+                name: 'items'
+                widget: 'list'
+                summary: '{{fields.title}}'
+                fields:
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Link', name: 'link', widget: 'string', required: false }
+          - label: 'Social platforms icons'
+            name: 'socialIcons'
+            widget: 'select'
+            multiple: true
+            options:
+              - Twitter/X
+              - Discord
   - name: 'roadmap'
     label: 'Roadmap'
     folder: 'src/content/roadmap'
