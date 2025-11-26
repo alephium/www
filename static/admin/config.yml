@@ -84,8 +84,41 @@ collections:
             widget: 'select'
             multiple: true
             options:
-              - Twitter/X
               - Discord
+              - Telegram
+              - Twitter/X
+              - GitHub
+      - label: 'Footer menu'
+        name: 'footer'
+        file: "src/content/footer.md"
+        fields:
+          - label: 'Columns'
+            name: 'columns'
+            widget: 'list'
+            summary: '{{fields.title}}'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - label: 'Items'
+                name: 'links'
+                widget: 'list'
+                summary: '{{fields.text}}'
+                fields:
+                  - { label: 'Title', name: 'text', widget: 'string' }
+                  - { label: 'Link', name: 'url', widget: 'string' }
+          - label: 'Bottom'
+            name: 'bottom'
+            widget: 'object'
+            fields:
+              - label: 'Social platforms icons'
+                name: 'socials'
+                widget: 'select'
+                multiple: true
+                options:
+                  - Discord
+                  - Telegram
+                  - Twitter/X
+                  - GitHub
+              - { label: 'Text', name: 'text', widget: 'string' }
   - name: 'roadmap'
     label: 'Roadmap'
     folder: 'src/content/roadmap'
