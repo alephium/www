@@ -1,5 +1,6 @@
 const webpack = require('webpack')
 const path = require('path')
+const fs = require('fs')
 const { createFilePath } = require('gatsby-source-filesystem')
 
 exports.onCreateWebpackConfig = ({ actions }) => {
@@ -156,4 +157,17 @@ exports.createSchemaCustomization = ({ actions }) => {
       contentType: String
     }
   `)
+}
+
+// Block indexing on test environment (www2)
+exports.onPostBuild = ({ reporter }) => {
+  if (process.env.GATSBY_ALEPHIUM_HOSTNAME === 'www2.alephium.org') {
+    const robotsTxtPath = path.join(__dirname, 'public', 'robots.txt')
+    const robotsTxtContent = `User-agent: *
+Disallow: /
+`
+
+    fs.writeFileSync(robotsTxtPath, robotsTxtContent)
+    reporter.info('Updated robots.txt to prevent indexing on test environment (www2)')
+  }
 }
