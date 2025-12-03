@@ -15,7 +15,7 @@ relatedPosts:
 ---
 **Welcome to Alephium Team Talks.** 
 
-In this interview article, we're pulling back the curtain on a multi-talented individual who wears many hats in the Alephium ecosystem. Our Operations, Ecosystem & Marketing Specialist, a true Swiss Army Knife for the team. Some of you will already know them for their outstanding community contributions and tools. Introducing, **[Baby](www.x.com/babyxDDD)**.
+In this interview article, we're pulling back the curtain on a multi-talented individual who wears many hats in the Alephium ecosystem. Our Operations, Ecosystem & Marketing Specialist, a true Swiss Army Knife for the team. Some of you will already know them for their outstanding community contributions and tools. Introducing, **[Baby](https://x.com/babyxDDD)**.
 
 We'll be talking to Baby about bridging the gap between community, development, and strategy to build a stronger and more vibrant Alephium.
 
