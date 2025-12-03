@@ -13,13 +13,13 @@ relatedPosts:
   - stop-fantasizing-about-a-million-tps/index
   - proof-of-conviction/index
 ---
-Op-ed by **Carla**, Head of Ecosystem, Alephium
+Op-ed by **[Carla](https://x.com/carlitacrypto_)**, Head of Ecosystem, Alephium
 
 **Hello and welcome! This is the second column article from Carla, our Head of Ecosystem. She’ll be using her vast experience in the blockchain industry to explore important topics and discussions.**
 
 *Note: The views and opinions expressed in this column are those of the author and may not reflect the official stance of Alephium.*
 
----
+- - -
 
 *We scroll. We swipe. We get bored the second a video lasts more than twenty seconds.*
 
