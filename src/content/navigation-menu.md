@@ -39,6 +39,8 @@ menuItems:
     items:
       - title: News
         link: /news
+      - title: Roadmap
+        link: /roadmap
       - title: Get started
         link: /get-started
       - title: Ambassador Program
@@ -47,10 +49,6 @@ menuItems:
         link: /grants
       - title: Online communities
         link: /communities
-  - title: Roadmap
-    items:
-      - title: Roadmap
-        link: /roadmap
 socialIcons:
   - Twitter/X
   - Discord
