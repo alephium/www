@@ -50,7 +50,7 @@ menuItems:
   - title: Roadmap
     items:
       - title: Roadmap
-        link: /Roadmap
+        link: /roadmap
 socialIcons:
   - Twitter/X
   - Discord
