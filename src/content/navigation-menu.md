@@ -47,6 +47,10 @@ menuItems:
         link: /grants
       - title: Online communities
         link: /communities
+  - title: Roadmap
+    items:
+      - title: Roadmap
+        link: /Roadmap
 socialIcons:
   - Twitter/X
   - Discord
