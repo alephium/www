@@ -13,9 +13,9 @@ relatedPosts:
   - july-25-2025-mining-difficulty-penalty-incident-postmortem/index
   - danube-upgrade-one-step-closer-to-the-web3-we-were-promised/index
 ---
-TL;DR We are targeting an activation date in **early January**. The full node will be published once feedback has been collected.
+TL;DR You only need to update your node. No other changes are required. The activation date will be in early January (due to the holidays).
 
-Once the link is live, you only need to update your node. No other changes will be required.
+The upgrade link will be shared once ready.
 
 ## What are we proposing to improve?
 
