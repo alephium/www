@@ -15,6 +15,8 @@ relatedPosts:
 ---
 TL;DR You only need to update your node. No other changes are required. The activation date will be in early January (due to the holidays).
 
+The upgrade link will be shared once ready.
+
 ## What are we proposing to improve?
 
 We are proposing an **update of the DAA algorithm**.
