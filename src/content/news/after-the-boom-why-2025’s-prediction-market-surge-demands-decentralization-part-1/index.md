@@ -14,7 +14,11 @@ relatedPosts:
   - proof-of-conviction/index
   - do-we-really-need-more-centralized-l1s/index
 ---
-## After the Boom: Why 2025’s Prediction Market Surge Demands Decentralization \[Part 1]
+The following article has been written by Hayden, founder of [Aura Markets](https://x.com/AuraMarkets), an upcoming decentralized prediction market platform being built on Alephium.
+
+**Note:** The opinions expressed in this article may not reflect Alephium's official position.
+
+- - -
 
 This past year has been nothing short of explosive for **prediction markets**. 
 
@@ -25,8 +29,6 @@ Valuations have followed suit. Kalshi’s valuation surged to $11 Billion by the
 Even the mainstream media has taken notice. For instance, CNN recently struck a partnership with Kalshi to integrate real time prediction markets into their news coverage, a clear sign that these markets have entered the public conversation. 
 
 ![](screenshot-2568-12-17-at-18.10.57.png)
-
-
 
 By all accounts, 2025 was the year prediction markets went mainstream. The sector's sudden boom vindicated long held beliefs that trading on the outcome of real world events could be a massive industry. However, as the **founder of Aura**, I view this triumph with cautious optimism. 
 
@@ -43,8 +45,6 @@ On the other hand, growth has come by reverting to a Web-2 style model. This fea
 The surge of interest is welcome, but not at any cost. It’s time to ask, “What price are we paying for this centralized success, and is there a better path forward?”
 
 I’ve identified some major flaws inherent in today’s centralized prediction platforms and why they threaten the long-term promise of this industry.
-
-
 
 ### Single Point of Failure
 
