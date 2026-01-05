@@ -16,7 +16,7 @@ const CustomPage = (props: PageProps) => (
     floatingMenu={false}
     seo={{
       title: 'Alephium Roadmap | Past Milestones & Future Vision',
-      description: 'Explore Alephium&apos;s journey and find out what&apos;s next. Built for real-world adoption.'
+      description: "Explore Alephium's journey and find out what's next. Built for real-world adoption."
     }}
     content={
       <>

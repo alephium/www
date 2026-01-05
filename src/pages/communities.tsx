@@ -22,7 +22,7 @@ const CustomPage = (props: PageProps) => {
       seo={{
         title: 'Alephium Communities | Join the Global Movement',
         description:
-          'From Discord to regional Telegram groups, Alephium’s community is active and global. Find your space and help shape decentralized tech.'
+          "From Discord to regional Telegram groups, Alephium's community is active and global. Find your space and help shape decentralized tech."
       }}
       content={
         <>
