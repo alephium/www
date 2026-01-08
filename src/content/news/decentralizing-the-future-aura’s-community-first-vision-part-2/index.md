@@ -14,7 +14,7 @@ relatedPosts:
 ---
 *In [part 1](/news/post/after-the-boom-why-2025’s-prediction-market-surge-demands-decentralization-part-1/), Aura's founder, Hayden, explained that while the prediction market sector exploded in 2025 with platforms like Kalshi and Polymarket nearing $60 billion in volume, this success is paradoxical. The boom is happening on centralized, corporate platforms, which undermines the core Web3 ethos. This centralization introduces a "Pyrrhic victory" by creating a single point of failure, regulatory fragility, and an extractionary model where users are "renters." In Part 2, he will set out his vision for the future of prediction markets…*
 
----
+- - -
 
 The solution is to bring prediction markets back to their Web3 roots. 
 
@@ -59,6 +59,8 @@ Creators are incentivized to promote their markets (since they earn fees from th
 We are not limited to what a corporate team thinks will generate volume. Instead, we can tap into the wisdom (and curiosity) of the crowds. The result is a far richer, more diverse set of markets, from global politics to local sports and macroeconomic indicators to pop culture events, all reflecting the interests of the user base itself. 
 
 This bottom up content approach not only increases engagement, it also reinforces that Aura is a marketplace owned by its community. It's the YouTube of prediction markets, where users create the content, rather than a cable channel with a fixed programming schedule. 
+
+![](screenshot-2569-01-08-at-15.08.03.png)
 
 ## Built on Alephium for Performance
 
