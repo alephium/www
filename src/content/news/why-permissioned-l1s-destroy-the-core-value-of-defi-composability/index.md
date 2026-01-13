@@ -6,7 +6,7 @@ description: "Corporate L1s are a \"Trojan horse.\" They introduce a kill-switch
 seoDescription: The rise of permissioned L1s is an existential threat. They
   compromise security & autonomy. Learn how Alephium's PoW and sUTXO model
   guarantees credible neutrality.
-date: 2025-12-15T12:39:00.000Z
+date: 2026-01-13T02:39:00.000Z
 spotlight: true
 featuredImage: article-permisioned-l1-1-.png
 relatedPosts:
