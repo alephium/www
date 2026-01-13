@@ -49,11 +49,11 @@ Consider a blockchain that enforces Know Your Customer (KYC) or is secured by a 
 
 The implications are catastrophic for all of the applications stacked on top.
 
-1. ### The dApp is Compromised
+### The dApp is Compromised
 
 A DEX built on this permissioned L1 can no longer guarantee that a user's funds, even if secured by smart contract logic, are safe. The protocol layer can simply render the input Unspent Transaction Output (UTXO) unspendable or block the transaction from being included in a block.
 
-1. ### The Token is Centralized
+### The Token is Centralized
 
 Every kind of token minted or transferred on this chain is subject to the same central authority. The token's immutability and resistance to seizure are thus instantly negated, as the L1 can effectively de-platform the token owner.
 
@@ -61,7 +61,7 @@ Don’t believe me? It has already happened, and with some of the [biggest](http
 
 [Recent research](https://www.bybit.com/en/press/post/bybit-s-lazarus-security-lab-reveals-hidden-fund-freezing-functions-across-16-major-blockchains-blt3ce15bb5dcfaef51) found that certain blockchains had built in the ability to blacklist wallets and essentially freeze their own users’ funds. Sui did it publicly, after funds were hacked, raising a lot of questions and causing a great deal of concern. It inspired the research from ByBit, which investigated a reported 166 blockchains. The [results](https://coinlaw.io/blockchain-freeze-functions-bybit-report/) shocked even me.
 
-1. ### The Value is Extracted
+### The Value is Extracted
 
 The system’s economic model shifts from creating collective wealth (as is the Web3 ethos) to creating control for the few. The convenience of speed is then paid for by surrendering decentralized AND autonomy.
 
