@@ -19,9 +19,9 @@ relatedPosts:
 
 **Note:** The views and opinions expressed in this column are those of the author and may not reflect the official stance of Alephium.
 
----
+- - -
 
-I’ve seen a [renewed](https://www.onesafe.io/blog/layer-1-blockchains-2025) enthusiasm for Layer 1 blockchains across Crypto Twitter and Web3 media outlets this year. Unfortunately, as I’ve written about in a previous [column](https://alephium.org/news/post/do-we-really-need-more-centralized-l1s/), the encouraging side of this trend is met with an equally troubling reality that there are now far too many corporate-backed, public-facing blockchains. These blockchains, backed by Google, Circle, Stripe, and others, prioritize compliance and permissioning over decentralization. 
+I saw a [renewed](https://www.onesafe.io/blog/layer-1-blockchains-2025) enthusiasm for Layer 1 blockchains across Crypto Twitter and Web3 media outlets last year. Unfortunately, as I’ve written about in a previous [column](https://alephium.org/news/post/do-we-really-need-more-centralized-l1s/), the encouraging side of this trend is met with an equally troubling reality that there are now far too many corporate-backed, public-facing blockchains. These blockchains, backed by Google, Circle, Stripe, and others, prioritize compliance and permissioning over decentralization. 
 
 They present a seductive offer of institutional speed and security, yet it’s a trap. It’s a Trojan horse.
 
