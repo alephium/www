@@ -54,6 +54,8 @@ Friction multiplied for many users (like myself), who found that every hop betwe
 
 When I look back on it now, I can smell the capital inefficiency. We know that when liquidity is scattered across hundreds of protocols on dozens of chains, it fragments into puddles rather than pooling into oceans. Users get worse execution. Markets become less efficient. Unfortunately, the promise of deep and decentralized liquidity remains unrealized.
 
+![](linxlabsbanner.jpeg)
+
 ## The Web2 UX Gap
 
 Perhaps the most damning comparison I’ve seen is to the centralized alternatives DeFi claims to displace.
