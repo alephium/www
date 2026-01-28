@@ -98,4 +98,4 @@ Both models solve the same problem. The user taps "Earn" or "Borrow" and the com
 
 The building blocks era gave us the components, but the super dApp era will be about assembling them into complete solutions that can actually serve real users with real needs.
 
-*In Part 2, we'll explore what makes a true super dApp, and how Linx App is building a vertically integrated DeFi experience on Alephium. We are combining swapping, lending, and yield generation into a single interface where users can tap to achieve their goals, not to execute transactions.*
+*In Part 2, we'll explore what makes a true super dApp, and how [Linx App](https://app.linxlabs.org/) is building a vertically integrated DeFi experience on Alephium. We are combining swapping, lending, and yield generation into a single interface where users can tap to achieve their goals, not to execute transactions.*
