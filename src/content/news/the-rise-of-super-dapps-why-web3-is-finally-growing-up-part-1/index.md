@@ -12,7 +12,7 @@ relatedPosts:
   - after-the-boom-why-2025’s-prediction-market-surge-demands-decentralization-part-1/index
   - builders-uncut-linx-labs-567963b63980/index
 ---
-By Radu, Linx Labs
+By Radu, [Linx Labs](https://app.linxlabs.org/)
 
 ## The Fragmentation Problem
 
