@@ -37,9 +37,10 @@ So, why would you do it to yourself? Why set yourself back in your development e
 
 We can start to answer that by looking at Alephium and the problems **Ralph** - its custom language - is solving.
 
-Ralph is built on a **stateful Unspent Transaction Output (sUTXO) model**, while Solidity uses the classic **account model**. This distinction is important, because every state is stored in immutable outputs, meaning each translation consumes the UTXO and produces a new one. 
+Ralph is built on a **stateful Unspent Transaction Output (sUTXO) model**, while Solidity uses the classic **account model**. This distinction is important, because in this hybrid model each contract has its own state (which persists). That state can be modified across transactions.
 
-This difference leads to **no in-between states**, where assets are sent to another contract or are being called back before updates are finalized. As a result, issues like reentrancy are eliminated, as there is no opportunity for callbacks, recursive execution, or partial state updates. UTXO’s cannot be called twice by the same contract, so **reentrancy is impossible**, unlike in Solidity. 
+
+This difference leads to **no in-between states**, where assets are sent to another contract or are being called back before updates are finalized. As a result, issues like reentrancy are eliminated, as there is a built-in locking mechanism and explicit asset scoping that prevents exploits like reentrancy or partial state updates. 
 
 Another risk with Solidity is **approval issues**. While writing in Solidity you have to **always remember about every permission**; one mistake and you create an exploit. Fortunately, **Ralph solves it**! You might ask, “How?” Well, simple. Every asset is UTXO-bound (so only one-time use) and is scoped to a particular transaction. Instead of relying on implicit state changes, you only have explicit inputs and outputs. 
 
