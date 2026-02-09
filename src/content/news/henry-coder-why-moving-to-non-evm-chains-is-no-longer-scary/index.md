@@ -15,12 +15,9 @@ relatedPosts:
 ---
 *Authored by Filip, Co-Founder of **[Blockchain Collab](https://blockchain-collab.com/alephium)**, the creators of Henry Coder.*
 
-
-
 ## The Challenge
 
 *Let’s start with the real challenge - going from being an expert to a newbie.*
-
 
 Have you ever wanted to build something on a new blockchain, but hit a wall while learning a new programming or **smart contract language**? 
 
@@ -48,8 +45,9 @@ Another risk with Solidity is **approval issues**. While writing in Solidity you
 
 *So why doesn’t everyone just write in Ralph instead of Solidity?* 
 
-
 That’s probably because Solidity was created in 2014 and is **used by Ethereum, Polygon, BSC, and many more**, while the latter came to life in 2021 and is only used by Alephium. It will take some time to reverse the 7-year head start in adoption. 
+
+![](screenshot-2569-02-09-at-13.30.46.png)
 
 ## THE SOLUTION
 
@@ -60,7 +58,6 @@ Once the learning curve has been flattened and the complexity tax has been lifte
 [Blockchain Collab](https://blockchain-collab.com/) created [Henry Coder ](https://henrycoder.com/)- the **first AI translation tool** porting code from Solidity to Ralph. Using this tool you can **write in Solidity and translate it to Ralph**. 
 
 This outcome is **87% less time to deploy a new smart contract** in Ralph using only your Solidity skills. You no longer go straight to “newbie” status. 
-
 
 By using the AI-powered Henry Coder tool, you combine the best of both worlds: your Solidity Skills and Ralph’s built-in security. You also gain access to an amazing community ready to help you build, deploy, and test in real time. 
 
