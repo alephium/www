@@ -13,7 +13,7 @@ relatedPosts:
   - after-the-boom-why-2025’s-prediction-market-surge-demands-decentralization-part-1/index
   - the-rise-of-super-dapps-why-web3-is-finally-growing-up-part-1/index
 ---
-*Authored by Filip, Co-Founder of **[Blockchain Collab](https://blockchain-collab.com/alephium)**, the creators of Henry Coder.*
+*Authored by Filip, Co-Founder of **[Blockchain Collab](https://blockchain-collab.com/alephium)**, the creators of [Henry Coder](https://henrycoder.com/).*
 
 ## The Challenge
 
