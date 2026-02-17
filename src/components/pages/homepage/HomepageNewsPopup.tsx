@@ -67,17 +67,17 @@ const HomepageNewsPopup = () => {
         <CardText>
           <Badge color="palette2">BREAKING NEWS 🔥</Badge>
           <TextElement>
-            <h2 style={{ color: theme.palette2 }}>Alephium: Phase 2</h2>
+            <h2 style={{ color: theme.palette2 }}>Powfi Public Testnet</h2>
             <p>
-              <strong>Road to Core dApp Testnet.</strong>
+              <strong>Test our Core dApp now.</strong>
               <br />
-              Full review of what we are cooking.
+              Find bugs, earn bounties.
             </p>
           </TextElement>
         </CardText>
         <CardFooterButtonContainer>
-          <Button squared url="https://x.com/alephium/status/1991899471970521370">
-            Read the article
+          <Button squared url="https://powfi.alephium.org">
+            Access now
           </Button>
         </CardFooterButtonContainer>
         <CloseButton onClick={() => toggleVisibility(false)}>×</CloseButton>
