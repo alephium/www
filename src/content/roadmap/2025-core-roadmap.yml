@@ -7,7 +7,7 @@ categories:
       - title: DIA integration
         status: done
         type: integration
-        description: "Push oracle. Supporting price feeds, randomness and RWAs. "
+        description: Push oracle. Supporting price feeds, randomness and RWAs.
         button:
           label: Read announcement
           url: https://www.diadata.org/blog/post/dia-price-oracles-alephium-mainnet/
@@ -251,23 +251,29 @@ categories:
     tagline: Foundational apps built by the Core Team to serve the Alephium ecosystem.
     items:
       - status: done
-        type: bridge
-        title: Bridge UI/UX revamp
+        type: coreDapp
+        title: Live on Testnet
+      - status: done
+        type: coreDapp
+        title: Bridge integration
+      - status: done
+        type: coreDapp
+        title: On-ramp integration
+      - status: done
+        type: coreDapp
+        title: Initial UI/UX v1
+      - status: done
+        type: coreDapp
+        title: Manage user positions
+      - status: done
+        type: coreDapp
+        title: Pool statistics
       - status: done
         type: coreDapp
         title: CLMM/CPMM DEX contracts
-      - status: done
+      - status: ongoing
         type: coreDapp
-        title: DEX SDK foundation
-      - status: done
-        type: coreDapp
-        title: Backend foundation
-      - status: done
-        type: coreDapp
-        title: Frontend foundation
-      - status: done
-        type: coreDapp
-        title: MVP on private testnet
+        title: Passkey wallet support
       - status: done
         type: wallet
         title: Revamp
@@ -295,36 +301,21 @@ categories:
         title: Multilingual support for all the Alephium apps & website
       - status: done
         type: bridge
+        title: Bridge UI/UX revamp
+      - status: done
+        type: bridge
         title: Bridge widget
         description: Extracting the core bridge functionality into a reusable component
           for drop-in integration into other apps.
       - status: ongoing
         type: coreDapp
         title: CLMM workflow parity
-      - status: done
-        type: coreDapp
-        title: Initial UI/UX v1
-      - status: done
-        type: coreDapp
-        title: Manage user positions
-      - status: done
-        type: coreDapp
-        title: Pool statistics
       - status: ongoing
         type: coreDapp
         title: Staking support
-      - status: planned
+      - status: ongoing
         type: coreDapp
         title: CPMM referral system
-      - status: done
-        type: coreDapp
-        title: Bridge integration
-      - status: done
-        type: coreDapp
-        title: Buy button integration
-      - status: done
-        type: coreDapp
-        title: Live on Testnet
       - status: ongoing
         type: coreDapp
         title: Revamp UI/UX v2
@@ -346,7 +337,7 @@ categories:
       - status: planned
         type: wallet
         title: Multi-wallet mobile support
-      - status: planned
+      - status: ongoing
         type: wallet
         title: Watch-only accounts
       - status: planned
