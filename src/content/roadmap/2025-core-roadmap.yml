@@ -273,7 +273,7 @@ categories:
         title: CLMM/CPMM DEX contracts
       - status: ongoing
         type: coreDapp
-        title: Passkey wallet support
+        title: Passkey support
       - status: done
         type: wallet
         title: Revamp
