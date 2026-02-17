@@ -194,7 +194,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-        bucketName: process.env.AWS_BUCKET_NAME,
+        bucketName: process.env.AWS_BUCKET_NAME || 'placeholder-bucket-name',
         protocol: 'https',
         hostname: process.env.GATSBY_ALEPHIUM_HOSTNAME,
         headers: {
