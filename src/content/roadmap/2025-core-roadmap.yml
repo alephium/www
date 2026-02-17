@@ -1,4 +1,4 @@
-title: "2025"
+title: "2026"
 categories:
   - category: Ecosystem
     tagline: Expanding Alephium adoption through programs, integrations, and
@@ -183,11 +183,6 @@ categories:
           universe.
       - status: ongoing
         type: growth
-        title: Alephium Guards expansion
-        description: Increased budgeting and resources allocated to this amplification
-          layer.
-      - status: ongoing
-        type: growth
         title: Regular video content + X Spaces + scaling output
         description: Establishing Alephium as a consistent thought leader and
           authoritative voice in the L1 and PoW spaces.
@@ -213,13 +208,18 @@ categories:
           credibility.
       - status: ongoing
         type: content
+        title: Ecosystem Builders thought leadership campaign
+        description: Inviting and supporting dApp and tool builders from the Alephium
+          ecosystem with their long-form written content objectives.
+      - status: done
+        type: content
         title: L1 season campaign narrative
         button:
           label: Read updates
           url: /news
         description: Positioning Alephium as the most principled and secure choice among
           next-generation Layer 1s during market cycles.
-      - status: planned
+      - status: ongoing
         type: event
         title: Core dApp road to testnet campaign
         description: Generating excitement and acquiring builders by detailing the
@@ -242,11 +242,6 @@ categories:
         description: Converting users and builders disillusioned with rival platforms'
           compromises (e.g., security flaws, high fees) by offering a superior
           alternative.
-      - status: planned
-        type: content
-        title: Content marketing series for Alephium use cases
-        description: Educating the market on Alephium's technical advantages (sUTXO,
-          PoLW) by showing them in hypothetical and realistic examples.
       - status: planned
         type: growth
         title: Social media paid Ads campaign
