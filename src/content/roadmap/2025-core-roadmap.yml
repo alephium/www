@@ -293,7 +293,7 @@ categories:
       - status: done
         type: tooling
         title: Multilingual support for all the Alephium apps & website
-      - status: ongoing
+      - status: done
         type: bridge
         title: Bridge widget
         description: Extracting the core bridge functionality into a reusable component
@@ -301,13 +301,13 @@ categories:
       - status: ongoing
         type: coreDapp
         title: CLMM workflow parity
-      - status: ongoing
+      - status: done
         type: coreDapp
         title: Initial UI/UX v1
-      - status: ongoing
+      - status: done
         type: coreDapp
         title: Manage user positions
-      - status: ongoing
+      - status: done
         type: coreDapp
         title: Pool statistics
       - status: ongoing
@@ -316,16 +316,16 @@ categories:
       - status: planned
         type: coreDapp
         title: CPMM referral system
-      - status: ongoing
+      - status: done
         type: coreDapp
         title: Bridge integration
-      - status: planned
+      - status: done
         type: coreDapp
         title: Buy button integration
-      - status: planned
+      - status: done
         type: coreDapp
         title: Live on Testnet
-      - status: planned
+      - status: ongoing
         type: coreDapp
         title: Revamp UI/UX v2
       - status: planned
