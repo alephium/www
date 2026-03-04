@@ -10,7 +10,7 @@ date: 2026-03-04T16:30:00.000Z
 spotlight: true
 featuredImage: al1.jpeg
 ---
-We are delighted to announce that [Alphland](https://ecosystem.alephium.org) has evolved from a simple dApp explorer into a structured ecosystem hub.
+*We are delighted to announce that [Alphland](https://ecosystem.alephium.org) has evolved from a simple dApp explorer into a structured ecosystem hub.*
 
 - - -
 
@@ -25,7 +25,7 @@ We’ve recently taken [Alphland](https://ecosystem.alephium.org) in-house, addi
 * Resources hub
 * Ecosystem map
 
-Previously a visibility platform, it can now become Alephium’s engagement and coordination layer.
+Previously a visibility platform, it can now serve as Alephium’s engagement and coordination layer.
 
 ## Listings Have Changed
 
@@ -36,7 +36,7 @@ Static listings have become multi-layered product architecture.
 * Opportunity (bounties & submissions)
 * Profiles (user, project, sponsor)
 
-These layers drive strategic value.
+These layers drive more **strategic value**.
 
 ![Bounty Example on Alphland](al2.jpeg "Bounty Example on Alphland")
 
