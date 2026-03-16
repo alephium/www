@@ -8,7 +8,7 @@ seoDescription: Explore how Alephium's decentralized dApp ecosystem, featuring
   horizon for Web3.
 date: 2026-03-19T17:00:00.000Z
 spotlight: true
-featuredImage: article-decentralized- synergy-1-.png
+featuredImage: article-decentralized- synergy-2-.png
 relatedPosts:
   - why-permissioned-l1s-destroy-the-core-value-of-defi-composability/index
   - do-we-really-need-more-centralized-l1s/index
