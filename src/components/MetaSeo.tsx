@@ -6,19 +6,21 @@ export interface MetaSeoProps {
   ogDescription?: string
   ogImage?: string
   lang?: string
+  pathname?: string
 }
 
 const defaultTitle = 'Alephium | The Web3 you were promised'
 const defaultDescription =
   'Alephium is the next generation PoW Layer 1 with smart contracts. Built for speed, security, and sustainability. Start building or join the community today.'
 
-export const MetaSeo = ({ title, description, ogDescription, ogImage, lang = 'en' }: MetaSeoProps) => {
+export const MetaSeo = ({ title, description, ogDescription, ogImage, lang = 'en', pathname }: MetaSeoProps) => {
   const isTestSite = typeof window !== 'undefined' && window.location.hostname === 'www2.alephium.org'
 
   const metaDescription = description || defaultDescription
   const metaOgDescription = ogDescription || metaDescription
   const metaImageAbsoluteUrl = `https://${process.env.GATSBY_ALEPHIUM_HOSTNAME}${ogImage || '/ogimage-1.png'}`
   const titleContent = title || defaultTitle
+  const canonicalUrl = `https://${process.env.GATSBY_ALEPHIUM_HOSTNAME}${pathname || '/'}`
 
   const metaBase = isTestSite ? [{ property: 'robots', content: 'noindex, nofollow' }] : []
 
@@ -28,6 +30,7 @@ export const MetaSeo = ({ title, description, ogDescription, ogImage, lang = 'en
         lang
       }}
       title={titleContent}
+      link={[{ rel: 'canonical', href: canonicalUrl }]}
       meta={[
         ...metaBase,
         {
@@ -52,7 +55,7 @@ export const MetaSeo = ({ title, description, ogDescription, ogImage, lang = 'en
         },
         {
           property: `og:url`,
-          content: `https://${process.env.GATSBY_ALEPHIUM_HOSTNAME}`
+          content: canonicalUrl
         },
         {
           property: `og:image`,

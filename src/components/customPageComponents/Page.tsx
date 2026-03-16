@@ -14,9 +14,9 @@ interface CustomPageProps extends PageProps {
   seo?: MetaSeoProps
 }
 
-const Page = ({ content, seo, floatingMenu = true }: CustomPageProps) => (
+const Page = ({ content, seo, floatingMenu = true, location }: CustomPageProps) => (
   <>
-    <MetaSeo {...seo} />
+    <MetaSeo {...seo} pathname={location?.pathname} />
     <ThemeProvider>
       <GlobalStyle />
       <PageContainer>
