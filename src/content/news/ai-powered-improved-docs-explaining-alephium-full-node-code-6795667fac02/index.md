@@ -1,10 +1,14 @@
 ---
-date: 2023-03-31T12:54:28.661000Z
-description: "Discover how Alephium leveraged AI-powered Autodoc to automatically generate comprehensive documentation for the full-node source code, improving developer onboarding."
-seoDescription: "AI-powered Autodoc generates comprehensive Alephium full-node documentation using GPT-4. Automated code documentation for better developer experience."
+title: "AI-Powered Improved Docs: Explaining Alephium Full Node Code"
+description: Discover how Alephium leveraged AI-powered Autodoc to automatically
+  generate comprehensive documentation for the full-node source code, improving
+  developer onboarding.
+seoDescription: AI-powered Autodoc generates comprehensive Alephium full-node
+  documentation using GPT-4. Automated code documentation for better developer
+  experience.
+date: 2023-03-31T12:54:28.661Z
 spotlight: false
 featuredImage: image_05a75ee0d0.jpg
-title: 'AI-Powered Improved Docs: Explaining Alephium Full Node Code'
 ---
 
 ## New documentation was created with the help of Autodoc
@@ -19,9 +23,7 @@ The generated documentation is stored in the codebase, so developers can easily 
 
 ## Using Autodoc for Alephium Full Node Source Code
 
-Alephium used Autodoc to parse and document the Alephium full-node source code. After installing the Autodoc CLI tool and setting up the OpenAI API key, the next step was to run the **_doc init_** and **_doc index_** commands to generate the documentation for the codebase. Autodoc created markdown files for each file and folder in the repository, making it easy to navigate and understand the different components of the Alephium full node source code. You can access the docs here:
-
-🔗[https://github.com/alephium/alephium/tree/master/autodoc/docs/markdown](https://github.com/alephium/alephium/tree/master/autodoc/docs/markdown)
+Alephium used Autodoc to parse and document the Alephium full-node source code. After installing the Autodoc CLI tool and setting up the OpenAI API key, the next step was to run the **_doc init_** and **_doc index_** commands to generate the documentation for the codebase. Autodoc created markdown files for each file and folder in the repository, making it easy to navigate and understand the different components of the Alephium full node source code.
 
 Each file created has a link to the code file in the repository.
 
