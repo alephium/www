@@ -1,10 +1,14 @@
 ---
-date: 2022-01-04T15:05:43.172000Z
-description: "Alephium Q1 project update covering mainnet functionality, tooling development for wallets, mining, explorer, bridges, DeFi, dApps, and NFT expansion."
-seoDescription: "Alephium Q1 project update - mainnet live, tooling development for wallets, mining, explorer, bridges, DeFi, dApps, NFTs. Blockchain ecosystem growth."
+title: Alephium — Q1 Project Update
+description: Alephium Q1 project update covering mainnet functionality, tooling
+  development for wallets, mining, explorer, bridges, DeFi, dApps, and NFT
+  expansion.
+seoDescription: Alephium Q1 project update - mainnet live, tooling development
+  for wallets, mining, explorer, bridges, DeFi, dApps, NFTs. Blockchain
+  ecosystem growth.
+date: 2022-01-04T15:05:43.172Z
 spotlight: false
 featuredImage: image_ab2d79cfd7.jpeg
-title: Alephium — Q1 Project Update
 ---
 
 Alephium mainnet is live and fully functional since November 8th, 2021. We are now focused on building and enriching tooling for wallets, mining, explorer, bridges, DeFi, dApps and NFT’s, as well as expanding our community of developers, miners and users.
@@ -80,7 +84,7 @@ NFT being self-contained, in the sense that it doesn’t require any bridges on 
 
 Security is key for mining pools. But the tricky part is the algorithm to distribute rewards as the amount of mining-pool members and the hashrate increase. Right now we are building small to medium-sized pools. These could be scaled to several terahash. However, larger pools would need greater expertise in the domain than is currently available. The pools first need improved source code and better testing, after which there will be a need to implement data analysis. Integrating a UI would be a welcomed addition. Some of this is already being built by a team member who has managed to resolve most of the issues reported.   
 Ideally, the development of the mining pool needs to be passed on to the community. This poses interesting challenges in how to help community operators and professional pools to collaborate.   
-The handover has already begun! A 3rd party pool called [Devgent](https://pool.devgent.net/) has been created by a community member and it is currently open for registrations. And a second 3rd party pool is in the way of integrating Alephium support.
+The handover has already begun! A 3rd party pool called Devgent has been created by a community member and it is currently open for registrations. And a second 3rd party pool is in the way of integrating Alephium support.
 
 ### Explorer
 
