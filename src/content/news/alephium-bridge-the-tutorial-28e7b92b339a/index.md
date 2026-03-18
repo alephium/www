@@ -1,10 +1,13 @@
 ---
-date: 2023-11-23T15:31:22.684000Z
-description: "Step-by-step tutorial on how to bridge tokens between Alephium and Ethereum, plus discover what you can do with bridged tokens in the Alephium ecosystem."
-seoDescription: "Alephium Bridge tutorial - step-by-step guide to bridge tokens between Alephium and Ethereum. Learn token bridging and ecosystem exploration."
+title: "Alephium Bridge: The Tutorial"
+description: Step-by-step tutorial on how to bridge tokens between Alephium and
+  Ethereum, plus discover what you can do with bridged tokens in the Alephium
+  ecosystem.
+seoDescription: Alephium Bridge tutorial - step-by-step guide to bridge tokens
+  between Alephium and Ethereum. Learn token bridging and ecosystem exploration.
+date: 2023-11-23T15:31:22.684Z
 spotlight: false
 featuredImage: image_9b721622a7.png
-title: 'Alephium Bridge: The Tutorial'
 ---
 
 How to bridge your tokens + what to do on the Alephium Ecosystem.
@@ -200,12 +203,6 @@ Once the transaction is confirmed, your tokens should appear in your Metamask wa
 > WALPH Contract Address : 0x590F820444fA3638e022776752c5eEF34E2F89A6
 
 We hope this tutorial was of use to you, for more information consider referring to the official medium article detailing all contracts and addresses right [here](/news/post/verification-of-bridge-contracts-tokens-token-lists-76e5c237bf52)
-
-If you bridged some ERC-20 tokens and you don’t know what to do? Here is a list of things you can try out:
-
-[Experience the first alephium DEX](https://www.ayin.app/)  
-[Snatch some NFTs from Deadrare](https://deadrare.io/)  
-Try your luck over at walph.io
 
 ---
 
