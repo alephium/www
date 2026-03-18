@@ -1,10 +1,13 @@
 ---
-date: 2023-12-26T09:55:35.249000Z
-description: "Part 2 of the Alephium Bridge AMA series covering the roadmap and future developments, featuring insights from Cheng, Hongchao, and Maud one month after mainnet launch."
-seoDescription: "Alephium Bridge AMA Part 2 - roadmap and future developments. Twitter Space interview with team insights one month after mainnet launch."
+title: Bridge AMA — The Alephium Bridge — part 2 — The roadmap
+description: Part 2 of the Alephium Bridge AMA series covering the roadmap and
+  future developments, featuring insights from Cheng, Hongchao, and Maud one
+  month after mainnet launch.
+seoDescription: Alephium Bridge AMA Part 2 - roadmap and future developments.
+  Twitter Space interview with team insights one month after mainnet launch.
+date: 2023-12-26T09:55:35.249Z
 spotlight: false
 featuredImage: image_9f37a62eb7.png
-title: Bridge AMA — The Alephium Bridge — part 2 — The roadmap
 ---
 
 _One month after the release of the_ [bridge](https://bridge.alephium.org/#/transfer) _on mainnet, Cheng, Hongchao & Maud were interviewed by Vladimir in a Twitter space AMA. You can listen to the Twitter space itself_ [here](https://twitter.com/i/spaces/1mrGmydQreMGy)_, or read on at your own pace! This article is a lightly edited version of the AMA, to improve the clarity and readability. This is part 2 of 3, and you can find part 1_ [here](/news/post/the-alephium-bridge-ama-part-1-bd6536ea9cdc)_._
@@ -47,7 +50,7 @@ Cheng: The block time change will not change the overall emission.
 
 Hongchao: The need for group abstraction arises from our sharded design, which, while enhancing scalability, can introduce some inconveniences. For instance, with addresses existing in different groups, applications deployed in one group are only accessible by addresses within that specific group. It’s important to note that this limitation doesn’t apply to token transfers. You can freely transfer tokens from an address in one group to an address in any other group without issue. Therefore, when we discuss group abstraction, it pertains specifically to scenarios where addresses and applications are in different groups, potentially across multiple groups.
 
-How do the wallet and [dApps](https://www.alphad.app/) interact to provide users with a smooth experience? For instance, the NFT marketplace is currently deployed in group zero, requiring users to have an address in this group. If a user has an address in group two and wants to buy an NFT, the process isn’t seamless at the moment. Before making the purchase, they would need to create an address in group zero and manually transfer tokens from their group two address to this new address.
+How do the wallet and dApps interact to provide users with a smooth experience? For instance, the NFT marketplace is currently deployed in group zero, requiring users to have an address in this group. If a user has an address in group two and wants to buy an NFT, the process isn’t seamless at the moment. Before making the purchase, they would need to create an address in group zero and manually transfer tokens from their group two address to this new address.
 
 This isn’t an optimal experience. However, there’s potential for the wallet to automate this process, managing these transfers and interactions more efficiently. For example, if a user wants to purchase something from the NFT marketplace deployed in group zero, but their address is in group two, the wallet might automatically create an address in group zero for them. It could then transfer the necessary tokens to this new address, complete the purchase, and transfer the bought item back to the user’s group two address. This process would eliminate the need for manual transfers and address management on the user part.
 
