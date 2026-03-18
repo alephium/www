@@ -1,10 +1,14 @@
 ---
-date: 2021-11-05T15:36:35.780000Z
-description: "Alephium's first live AMA session on November 3rd, 2021, where the team answered community questions about the project, technology, and future developments."
-seoDescription: "Alephium first live AMA - November 3rd, 2021 community Q&A session. Team answers questions about blockchain technology and project developments."
+title: Alephium’s first live AMA
+description: Alephium's first live AMA session on November 3rd, 2021, where the
+  team answered community questions about the project, technology, and future
+  developments.
+seoDescription: Alephium first live AMA - November 3rd, 2021 community Q&A
+  session. Team answers questions about blockchain technology and project
+  developments.
+date: 2021-11-05T15:36:35.780Z
 spotlight: false
 featuredImage: image_0b65cf3212.jpg
-title: Alephium’s first live AMA
 ---
 
 > On November 3rd, 2021 the Alephium team answered all the questions sourced from the community. A warm thank you to everyone for asking so many interesting questions! Below you will find the transcript of the AMA. Each question deep links to the corresponding passage in the video.
@@ -131,9 +135,9 @@ Yes, improving our documentation is a priority after the mainnet launch. As it w
 Right now, it’s all in the code and the integration tests which feature multiple examples. We will work hard on improving our documentation after the mainnet is launched.
 
 1.  Simple Uniswap-like contract [here](https://github.com/alephium/alephium/blob/master/flow/src/test/scala/org/alephium/flow/core/VMSpec.scala#L869-L977) with more examples in the same file [here](https://github.com/alephium/alephium/blob/master/flow/src/test/scala/org/alephium/flow/core/VMSpec.scala).
-2.  An integration test for the Uniswap-like exchange based on Rest API [here](https://github.com/alephium/alephium/blob/master/app/src/it/scala/org/alephium/app/SmartContractTest.scala).
+2.  An integration test for the Uniswap-like exchange based on Rest API.
 3.  Smart contract tutorial [here](https://github.com/alephium/alephium/wiki/Smart-Contract-Guide).
-4.  All of the built-ins [here](https://github.com/alephium/alephium/blob/master/protocol/src/main/scala/org/alephium/protocol/vm/lang/BuiltIn.scala#L195-L218) and [here](https://github.com/alephium/alephium/blob/master/protocol/src/main/scala/org/alephium/protocol/vm/lang/BuiltIn.scala#L367-L393).
+4.  All of the built-ins [here](https://docs.alephium.org/ralph/built-in-functions/).
 
 ## Is there a max number of shards for Alephium?
 
