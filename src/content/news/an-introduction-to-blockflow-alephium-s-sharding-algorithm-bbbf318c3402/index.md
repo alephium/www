@@ -1,8 +1,12 @@
 ---
 title: "An introduction to Blockflow: Alephium’s sharding algorithm"
-description: "Introduction to Blockflow, Alephium's innovative sharding algorithm that enhances blockchain performance through advanced sharding concepts and technical innovations."
+description: Introduction to Blockflow, Alephium's innovative sharding algorithm
+  that enhances blockchain performance through advanced sharding concepts and
+  technical innovations.
+seoDescription: Blockflow sharding algorithm introduction - Alephium's
+  innovative blockchain sharding technology. Technical guide to sharding
+  concepts and performance enhancement.
 date: 2023-07-28T13:05:23.630Z
-seoDescription: "Blockflow sharding algorithm introduction - Alephium's innovative blockchain sharding technology. Technical guide to sharding concepts and performance enhancement."
 spotlight: false
 featuredImage: image_0006903410.jpg
 ---
@@ -16,7 +20,7 @@ featuredImage: image_0006903410.jpg
 
 It’s the same in a blockchain context: sharding increases throughput by parallelizing transactions. This comes at the cost of added complexity because it becomes harder to maintain a secure and consistent ledger. Every sharded blockchain addresses these tradeoffs in different ways:
 
-[Polkadot](https://polkadot.com/), a multi-chain platform developed by the Web3 Foundation, introduces a sharding mechanism known as “parachains.” [Parachains](https://polkadot.com/blog/polkadot-v1-0-sharding-and-economic-security) are individual chains that run in parallel, interconnected through a central relay chain called the “Polkadot Relay Chain.”
+[Polkadot](https://polkadot.com/), a multi-chain platform developed by the Web3 Foundation, introduces a sharding mechanism known as “parachains.” [Parachains](https://wiki.polkadot.com/learn/learn-parachains/) are individual chains that run in parallel, interconnected through a central relay chain called the “Polkadot Relay Chain.”
 
 [Zilliqa](https://www.zilliqa.com/) implements sharding differently. It uses network-level sharding to scale the blockchain by splitting transactions into smaller blocks. However, it does not support state sharding, the global state of the blockchain has to be shared by all shards, which limits its scalability.
 
