@@ -1,10 +1,14 @@
 ---
-date: 2023-05-16T14:57:00.483000Z
-description: "Alephium Browser Wallet Extension v0.7.0 released featuring Ledger integration, providing enhanced security and hardware wallet support for users."
-seoDescription: "Alephium Browser Wallet Extension v0.7.0 release - Ledger integration feature. Enhanced security with hardware wallet support for browser extension."
+title: Browser Wallet Extension v0.7.0 has been released
+description: Alephium Browser Wallet Extension v0.7.0 released featuring Ledger
+  integration, providing enhanced security and hardware wallet support for
+  users.
+seoDescription: Alephium Browser Wallet Extension v0.7.0 release - Ledger
+  integration feature. Enhanced security with hardware wallet support for
+  browser extension.
+date: 2023-05-16T14:57:00.483Z
 spotlight: false
 featuredImage: image_6170abf307.png
-title: Browser Wallet Extension v0.7.0 has been released
 ---
 
 Featuring: Ledger Integration
@@ -51,7 +55,7 @@ This will make all upgrades and install the Ledger Wallet Library that will be n
 
 ## 4. Download the Alephium Ledger App to your computer
 
-Go to the following GitHub repository: [https://github.com/alephium/ledger-alephium](https://github.com/alephium/ledger-alephium/tree/master/release) and download it.
+Go to the following GitHub repository: [https://github.com/alephium/ledger-alephium](https://github.com/alephium/ledger-alephium) and download it.
 
 _🚨 To download the repository, click on the “Code” green button and choose “Download Zip.”_
 
