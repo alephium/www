@@ -1,10 +1,14 @@
 ---
-date: 2023-04-04T12:19:17.715000Z
-description: "Written format of Alephium's AMA session covering exciting new developments in the ecosystem, including answers about the Leman Network Upgrade and community questions."
-seoDescription: "Alephium AMA session written format - answers about Leman Network Upgrade and ecosystem developments. Community Q&A about blockchain innovations."
+title: AMA Session — Writen format
+description: Written format of Alephium's AMA session covering exciting new
+  developments in the ecosystem, including answers about the Leman Network
+  Upgrade and community questions.
+seoDescription: Alephium AMA session written format - answers about Leman
+  Network Upgrade and ecosystem developments. Community Q&A about blockchain
+  innovations.
+date: 2023-04-04T12:19:17.715Z
 spotlight: false
 featuredImage: image_bcc69de2ae.jpeg
-title: AMA Session — Writen format
 ---
 All answers about the exciting new developments in Alephium’s ecosystem!
 
@@ -16,7 +20,7 @@ On March 28th, Alephium held an [AMA session](https://www.youtube.com/watch?v=Gf
 
 A: Minting a token on the Alephium blockchain is fairly easy.
 
-A contract needs to be created when issuing a token. There is an endpoint in the full node to do that. In the [Getting Started guide of the Alephium docs](https://docs.alephium.org/dapps/build-dapp-from-scratch/#create-a-new-dapp-project-token-faucet), you can find an example of issuing tokens for a Token Faucet from the command line.
+A contract needs to be created when issuing a token. There is an endpoint in the full node to do that. In the [Getting Started guide of the Alephium docs](https://docs.alephium.org/dapps/tutorials/deep-dive/), you can find an example of issuing tokens for a Token Faucet from the command line.
 
 A few [built-in functions](https://docs.alephium.org/ralph/built-in-functions/) in Ralph allow the creation of tokens in the smart contract pretty straightforwardly.
 
