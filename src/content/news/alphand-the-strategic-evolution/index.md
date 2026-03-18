@@ -112,7 +112,7 @@ The platform now:
 
 Give it a try: [https://ecosystem.alephium.org ](https://ecosystem.alephium.org)
 
-(Note, this is a new URL for Alphland, although [Alph.land](alph.land) still works too!)
+(Note, this is a new URL for Alphland, although [Alph.land](https://alph.land) still works too!)
 
 ![](al6.jpeg)
 
