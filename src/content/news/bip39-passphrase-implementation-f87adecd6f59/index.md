@@ -1,10 +1,14 @@
 ---
-date: 2022-08-09T14:34:19.192000Z
-description: "Alephium implements BIP39 passphrase feature in desktop wallet v1.3.0, providing users with enhanced security tools to protect their ALPH tokens and assets."
-seoDescription: "Alephium BIP39 passphrase implementation - desktop wallet v1.3.0 security feature. Enhanced ALPH token protection with passphrase functionality."
+title: BIP39 Passphrase implementation
+description: Alephium implements BIP39 passphrase feature in desktop wallet
+  v1.3.0, providing users with enhanced security tools to protect their ALPH
+  tokens and assets.
+seoDescription: Alephium BIP39 passphrase implementation - desktop wallet v1.3.0
+  security feature. Enhanced ALPH token protection with passphrase
+  functionality.
+date: 2022-08-09T14:34:19.192Z
 spotlight: false
 featuredImage: image_962a6c58d3.jpg
-title: BIP39 Passphrase implementation
 ---
 To keep giving our users more tools to secure their ALPH, we’ve implemented the BIP39 passphrase feature in the desktop wallet v1.3.0!
 
@@ -126,7 +130,7 @@ Changing a single character (even, for example, from lower to upper-case), will 
 
 1.  Choose a Passphrase that you can remember and enter it correctly before sending any funds to the generated wallet.
 2.  Remember it perfectly character by character.
-3.  The passphrase should be [long and strong,](https://apvhyngqeo.cloudimg.io/v7/https://allsafeit.com/wp-content/uploads/2021/07/Social-Media-Brute-Force-Password-Attacks-sq.png?w=800&amp;h=800&amp;org_if_sml=1) otherwise it may be prone to brute-force attacks by anyone aware of the seed phrase.
+3.  The passphrase should be long and strong, otherwise it may be prone to brute-force attacks by anyone aware of the seed phrase.
 
 **IF YOU LOSE OR FORGET YOUR PASSPHRASE, YOU WILL LOSE YOUR FUNDS PERMANENTLY**
 
