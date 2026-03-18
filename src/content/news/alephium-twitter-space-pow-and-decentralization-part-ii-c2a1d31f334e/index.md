@@ -1,13 +1,17 @@
 ---
-date: 2023-02-17T14:18:49.087000Z
-description: "Part II of Alephium's Twitter Space discussion on Proof of Work and Decentralization, continuing the conversation with Nervos Network about blockchain consensus mechanisms."
-seoDescription: "Alephium Twitter Space PoW and Decentralization Part II - continued discussion with Nervos Network. Blockchain consensus mechanisms and decentralization."
+title: Alephium Twitter Space — PoW and Decentralization, part II
+description: Part II of Alephium's Twitter Space discussion on Proof of Work and
+  Decentralization, continuing the conversation with Nervos Network about
+  blockchain consensus mechanisms.
+seoDescription: Alephium Twitter Space PoW and Decentralization Part II -
+  continued discussion with Nervos Network. Blockchain consensus mechanisms and
+  decentralization.
+date: 2023-02-17T14:18:49.087Z
 spotlight: false
 featuredImage: image_3667c58cbb.jpg
-title: Alephium Twitter Space — PoW and Decentralization, part II
 ---
 
-Alephium hosted a Twitter Space on 24/01/2023 with [Jordan](https://twitter.com/jordan_mack) from [Nervos Network](http://www.nervos.com) and [Cheng Wang](https://twitter.com/wachmc) & [Hongchao Liu](https://twitter.com/hongchao) from [Alephium](/) to talk about Proof of Work (PoW) and Decentralization.
+Alephium hosted a Twitter Space on 24/01/2023 with [Jordan](https://twitter.com/jordan_mack) from [Nervos Network](http://www.nervos.org) and [Cheng Wang](https://twitter.com/wachmc) & [Hongchao Liu](https://twitter.com/hongchao) from [Alephium](/) to talk about Proof of Work (PoW) and Decentralization.
 
 It was a great conversation, and a series of articles will transcript the main topics discussed. You can find part I [here](/news/post/alephium-twitter-space-pow-and-decentralization-part-i-a7c84ed91f90) and access the whole conversation [here](https://www.youtube.com/watch?v=FLmxAHolDMc).
 
