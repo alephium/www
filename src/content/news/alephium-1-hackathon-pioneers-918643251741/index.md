@@ -77,8 +77,8 @@ The general goal of bounties is to provide improvements to the user/developer ex
 
 Enhancing/creating developer documentation. (Create a PR in the relevant repo)
 
-- 1 — improve the [SDK doc](https://docs.alephium.org/dapps/alephium-web3)
-- 2 — improve the [dApp recipes doc](https://docs.alephium.org/dapps/alephium-web3)
+- 1 — improve the [SDK doc](hhttps://docs.alephium.org/sdk/getting-started)
+- 2 — improve the [dApp recipes doc](https://docs.alephium.org/dapps/tutorials/dapp-recipes/)
 - 3 — improve the [Ralph language doc](https://docs.alephium.org/ralph/getting-started)
 
 **Coding PoC**
@@ -210,7 +210,7 @@ For the doc, start here!
 - Developer [onboarding thread](https://twitter.com/alephium/status/1752028946399654269)
 - The full [documentation](http://docs.alephium.org)
 - Getting started with RALPH Alephium’s [programming language](https://docs.alephium.org/ralph/getting-started)
-- RALPH [Documentation](https://docs.alephium.org/ralph/getting-started) & Tokens [Documentation](https://docs.alephium.org/tokens/overview)
+- RALPH [Documentation](https://docs.alephium.org/ralph/getting-started) & Tokens [Documentation](https://docs.alephium.org/dapps/concepts/tokens/)
 - dApps [Proof of concepts (PoC)](https://docs.alephium.org/dapps/ecosystem#prototypes) (DEX, NFT marketplace, bridge)
 - Workshop \#1 with h0ngchao [How to Build a Faucet](/news/post/first-developer-workshop-build-a-token-faucet-a6bb2aa7bf68) — [video](https://www.youtube.com/watch?time_continue=2&amp;v=YblUxEcXQuY&amp;embeds_widget_referrer=https%3A%2F%2Fmedium.com%2F%40alephium%2Ffirst-developer-workshop-build-a-token-faucet-a6bb2aa7bf68&amp;embeds_referring_euri=https%3A%2F%2Fcdn.embedly.com%2F&amp;embeds_referring_origin=https%3A%2F%2Fcdn.embedly.com&amp;source_ve_path=Mjg2NjY&amp;feature=emb_logo)
 - Workshop \#2 with h0ngchao [How to implement friend.tech on Alephium, part 1](/news/post/second-developer-workshop-re-implementing-friend-tech-s-smart-contract-in-ralph-806e3f6551aa) and [part 2](/news/post/second-developer-workshop-re-implementing-friend-tech-s-smart-contract-in-ralph-part-2-8f9959742b47) — [video 1](https://www.youtube.com/watch?v=gi2sxvB9Np8), [video 2](https://www.youtube.com/watch?v=Xgt3_HwoUOc)
