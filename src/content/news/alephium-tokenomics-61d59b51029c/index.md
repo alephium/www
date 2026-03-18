@@ -176,7 +176,7 @@ The ALPH allocated to the **Ecosystem** and for the **Treasury** follows this un
 
 **Where can I see the top Alephium wallets?**
 
-You can check the [Alephium Rich List](https://alph-richlist.vercel.app/) to see the addresses with the most substantial balances. Find more [stats](https://status.notrustverify.ch/d/MggjRL1Vz/on-chain-stats?orgId=1) here & tools [here](https://github.com/alephium/awesome-alephium). The Explorer is your go-to for checking the balance of a specific wallet.
+You can check the [Alephium Rich List](https://alph-richlist.vercel.app/) to see the addresses with the most substantial balances. Find more tools [here](https://github.com/alephium/awesome-alephium). The Explorer is your go-to for checking the balance of a specific wallet.
 
 **Is Alephium deflationary?**
 
