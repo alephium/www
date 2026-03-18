@@ -1,10 +1,14 @@
 ---
-date: 2022-05-27T12:21:53.876000Z
-description: "Alephium's H1 2022 project update covering milestones, growth, and exciting developments in the first half of the year, showcasing progress and achievements."
-seoDescription: "Alephium H1 2022 project update - milestones, growth, and achievements in first half of year. Blockchain development progress and community highlights."
+title: Alephium — H1 Project Update
+description: Alephium's H1 2022 project update covering milestones, growth, and
+  exciting developments in the first half of the year, showcasing progress and
+  achievements.
+seoDescription: Alephium H1 2022 project update - milestones, growth, and
+  achievements in first half of year. Blockchain development progress and
+  community highlights.
+date: 2022-05-27T12:21:53.876Z
 spotlight: false
 featuredImage: image_4c7ef37863.jpg
-title: Alephium — H1 Project Update
 ---
 The first half of 2022 was a vigorous but exciting, fun and rewarding period for Alephium in terms of milestones and growth. Here’s a look back at some of the highlights, what they meant for us, for the community and what we learned.
 
@@ -14,7 +18,7 @@ The first half of 2022 was a vigorous but exciting, fun and rewarding period for
 
 ### dApp Tutorial
 
-Boubacar who was an intern at Alephium produced and open-sourced a [comprehensive guide to building a dApp on Alephium](https://github.com/alephium/voting-tutorial) with the guidance of Thomas. dApps being an imperative part of a successful blockchain ecosystem, this tutorial, including the resulting code, laid an important first step on the road towards integration and adoption of Alephium. For the first time, building dApps on Alephium became accessible to anyone with a development background.
+Boubacar who was an intern at Alephium produced and open-sourced a [comprehensive guide to building a dApp on Alephium](https://github.com/alephium/voting-demo) with the guidance of Thomas. dApps being an imperative part of a successful blockchain ecosystem, this tutorial, including the resulting code, laid an important first step on the road towards integration and adoption of Alephium. For the first time, building dApps on Alephium became accessible to anyone with a development background.
 
 Stay tuned for the upcoming release of the new version of our dApp dev tools!
 
