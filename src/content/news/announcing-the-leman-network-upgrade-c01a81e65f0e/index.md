@@ -1,17 +1,21 @@
 ---
-date: 2022-10-27T12:01:43.406000Z
-description: "Alephium announces its first Network Upgrade: The Leman Network Upgrade, named after Lake Geneva, bringing significant improvements to the blockchain platform."
-seoDescription: "Alephium Leman Network Upgrade announcement - first major blockchain upgrade named after Lake Geneva. Significant platform improvements and enhancements."
+title: Announcing the Leman Network Upgrade
+description: "Alephium announces its first Network Upgrade: The Leman Network
+  Upgrade, named after Lake Geneva, bringing significant improvements to the
+  blockchain platform."
+seoDescription: Alephium Leman Network Upgrade announcement - first major
+  blockchain upgrade named after Lake Geneva. Significant platform improvements
+  and enhancements.
+date: 2022-10-27T12:01:43.406Z
 spotlight: false
 featuredImage: image_8e4b384c80.jpg
-title: Announcing the Leman Network Upgrade
 ---
 
 Alephium is announcing its first Network Upgrade: **The Leman Network Upgrade**. This name is a tribute to the lake around which a significant part of the team is located and the biggest lake in Europe.
 
 **Why a network upgrade?**
 
-In the past few months, the Alephium team has been working on improvements for its whole tech stack: the [Ralph programming language](https://wiki.alephium.org/ralph/getting-started), the [Alphred Virtual Machine](https://github.com/alephium/alephium/tree/master/protocol/src/main/scala/org/alephium/protocol/vm), [Node APIs](https://github.com/alephium/alephium), etc…
+In the past few months, the Alephium team has been working on improvements for its whole tech stack: the [Ralph programming language](https://docs.alephium.org/ralph/), the [Alphred Virtual Machine](https://github.com/alephium/alephium/tree/master/protocol/src/main/scala/org/alephium/protocol/vm), [Node APIs](https://github.com/alephium/alephium), etc…
 
 The goal has been to increase the performance and security of the whole stack, as well as enabling a top-of-the-class dApp developer experience. Some of you might already have tested these changes on the latest version of the testnet that was deployed past July.
 
