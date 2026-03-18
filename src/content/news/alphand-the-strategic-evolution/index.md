@@ -1,5 +1,5 @@
 ---
-title: "AlphLand: The Strategic Evolution"
+title: "Alphland: The Strategic Evolution"
 description: Welcome to the new Alphland! We've transformed our dApp explorer
   into Alephium's ultimate ecosystem hub. Find bounties, discover projects, and
   get building.
