@@ -72,4 +72,4 @@ The move to Phase Two represents a maturation of the network where technical sup
 
 The community is encouraged to join the testnet and provide feedback as the network prepares for its next era of growth. 
 
-For further information and regular updates, users should monitor our [X Account](www.x.com/alephium), [Telegram](t.me/alephiumgroup), and [Discord channels](https://discord.com/channels/747741246667227157/1471500764470972486).
+For further information and regular updates, users should monitor our [X Account](https://www.x.com/alephium), [Telegram](https://t.me/alephiumgroup), and [Discord channels](https://discord.com/channels/747741246667227157/1471500764470972486).
