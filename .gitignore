@@ -5,3 +5,4 @@ public
 .DS_Store
 /src/gatsby-types.d.ts
 .env
+.claude

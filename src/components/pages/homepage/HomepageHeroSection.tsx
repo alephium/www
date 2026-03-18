@@ -27,6 +27,12 @@ const HomepageHeroSection = () => (
             <br />
             you were promised.
           </h1>
+          <VisuallyHidden>
+            Alephium is a scalable Layer-1 blockchain that combines energy-efficient Proof-of-Work
+            security with highly expressive smart contracts. Built for developers and everyday users,
+            it delivers the programmability of Ethereum and the uncompromising security of Bitcoin
+            without the high fees.
+          </VisuallyHidden>
           <p>
             Easy to build on. Safe to use. Ready to grow.
             <br />
@@ -133,6 +139,18 @@ const AlephiumLogoContainer = styled.div`
     height: 130px;
     bottom: -30px;
   }
+`
+
+const VisuallyHidden = styled.p`
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 `
 
 const TextElementWithReflection = styled(TextElement)`
