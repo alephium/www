@@ -1,10 +1,14 @@
 ---
-date: 2023-03-14T13:59:07.975000Z
-description: "Alephium launches its browser extension wallet with dApp support, token faucet, address book, and Schnorr signatures. Download and try new features on Testnet!"
-seoDescription: "Alephium browser extension wallet launch - dApp support, token faucet, address book, Schnorr signatures. Download Chrome and Firefox extensions."
+title: Alephium Launches Browser Extension Wallet
+description: Alephium launches its browser extension wallet with dApp support,
+  token faucet, address book, and Schnorr signatures. Download and try new
+  features on Testnet!
+seoDescription: Alephium browser extension wallet launch - dApp support, token
+  faucet, address book, Schnorr signatures. Download Chrome and Firefox
+  extensions.
+date: 2023-03-14T13:59:07.975Z
 spotlight: false
 featuredImage: image_a708db8d02.jpg
-title: Alephium Launches Browser Extension Wallet
 ---
 Download it and try the new features on Alephium Testnet!
 
@@ -68,8 +72,6 @@ Schnorr signature option
 ## Using it on Testnet
 
 The Alephium browser extension wallet is a powerful tool with advanced options and an intuitive design, ready to support the new features introduced with the Leman Network upgrade. You can use it on the Testnet to experience a first taste of Alephium post-Leman Upgrade!
-
-Access the **Testnet NFT Marketplace** here: [https://nft.alephium-testnet.softfork.se/](https://nft.alephium-testnet.softfork.se/)
 
 **Obs: Make sure that your testnet address is on group 0!**
 
