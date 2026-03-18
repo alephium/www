@@ -1,11 +1,23 @@
 User-agent: *
 Disallow: /cmc-application-proof.txt
-
-User-agent: *
 Disallow: /banxa-callback
-
-User-agent: *
 Disallow: /onramp-callback
-
-User-agent: *
 Disallow: /grant-application-callback
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
