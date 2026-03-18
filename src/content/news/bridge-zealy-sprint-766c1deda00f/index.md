@@ -1,10 +1,13 @@
 ---
-date: 2023-11-29T14:06:15.371000Z
-description: "Join the Bridge Zealy Sprint to spread the word about Alephium's bridge and share in 3,000 ALPH prizes! Help promote the successful cross-chain bridge with over 1.2M TVL."
-seoDescription: "Alephium Bridge Zealy Sprint - spread the word and win 3,000 ALPH prizes. Promote cross-chain bridge with 1.2M TVL and 500+ holders."
+title: Bridge Zealy Sprint
+description: Join the Bridge Zealy Sprint to spread the word about Alephium's
+  bridge and share in 3,000 ALPH prizes! Help promote the successful cross-chain
+  bridge with over 1.2M TVL.
+seoDescription: Alephium Bridge Zealy Sprint - spread the word and win 3,000
+  ALPH prizes. Promote cross-chain bridge with 1.2M TVL and 500+ holders.
+date: 2023-11-29T14:06:15.371Z
 spotlight: false
 featuredImage: image_0a276df54e.jpg
-title: Bridge Zealy Sprint
 ---
 _Spread the word about the bridge & share 3’000 \$ALPH in prize!_
 
@@ -12,7 +15,7 @@ _The bridge has launched two weeks ago, there’s been more than_ [400 transfers
 
 Alephium’s core contributors have released a lot of content on the bridge, from the [main article explaining the way it works](/news/post/the-alephium-bridge-a787d90b2e4a), to multiple threads on topics such as [the faucet](https://x.com/alephium/status/1726556042425995760?s=20), the different ways to use it, [which tokens](https://twitter.com/alephium/status/1725164466868801848) can be easily bridged, the [explorer](https://x.com/alephium/status/1729149731761537296?s=20) or a [tutorial](https://x.com/alephium/status/1727704331389194330?s=20) on how to use it.
 
-Our partners from the [ecosystem](https://twitter.com/alephium/status/1725439073052168293), the BlockFlow Alliance DAO, [Ayin](https://www.ayin.app/), [Deadrare](https://deadrare.io/) and [Walph](https://walph.io/) have all created great content too. But that’s not all, the community has & other influencers too!
+Our partners from the [ecosystem](https://twitter.com/alephium/status/1725439073052168293), the BlockFlow Alliance DAO, Ayin, [Deadrare](https://deadrare.io/) and Walph have all created great content too. But that’s not all, the community has & other influencers too!
 
 To reward that activity, and to offer additional spread to that great content, the Blockflow DAO has joined Alephium to setup an incentivized [Zealy](https://zealy.io/) quest sprint!
 
