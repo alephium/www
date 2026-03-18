@@ -1,10 +1,14 @@
 ---
-date: 2024-07-12T14:48:00.732000Z
-description: "Watch all Athens meetup presentations at your convenience! Access comprehensive presentations from the Alephium community event, covering blockchain developments and ecosystem updates."
-seoDescription: "Alephium Athens meetup presentations - watch all blockchain community event presentations. Comprehensive coverage of ecosystem developments and updates."
+title: All the Athens Meetup Presentations!
+description: Watch all Athens meetup presentations at your convenience! Access
+  comprehensive presentations from the Alephium community event, covering
+  blockchain developments and ecosystem updates.
+seoDescription: Alephium Athens meetup presentations - watch all blockchain
+  community event presentations. Comprehensive coverage of ecosystem
+  developments and updates.
+date: 2024-07-12T14:48:00.732Z
 spotlight: false
 featuredImage: image_ef1fd8e881.jpg
-title: All the Athens Meetup Presentations!
 ---
 
 _If you couldn’t come… Doesn’t mean you can’t see the presentations! Find them all here and watch them at your convenience._
@@ -17,7 +21,7 @@ Alephium’s first builders meetup was held in Athens June 21–23 2024. It has 
 
 In total, more than 60 participants turned up! Some came from as far as Vancouver, Michigan, Argentina or Canada to Athens for a 2 day summit! We are absolutely humbled & elated by this level of effort and dedication.
 
-Most of the attendees were builders of a lot of the ecosystem’s biggest projects: [Ayin](https://x.com/ayincoin), [Pyreplay](https://x.com/PyreplayDotCom)/[Alph.land](https://x.com/fugashu_codes), [Ulam](https://x.com/ulamlabs), [Invariant](https://x.com/invariant_labs), [Linx](https://x.com/linx_labs), [Sezame](https://x.com/SesameWallet), [Alphbanx](https://x.com/alephiumbank), [Deadrare](https://x.com/DeadRareNFT), [Mobula](https://mobula.io/chain/alephium), [NTV](https://x.com/notrustverif), [AlphPro](https://x.com/Alphdotpro), [Alphaga](https://x.com/AlphagaMarket), [GoldcastleClub](https://x.com/GoldCastleClub), [Shin](https://x.com/Shin_Inu_Aleph), [Alephium Battle](https://x.com/AlephiumBattle), [HodlAlph](https://x.com/PhoenixErgo) & [GigaCheng](https://x.com/gigacheng) were all represented there.
+Most of the attendees were builders of a lot of the ecosystem’s biggest projects: [Ayin](https://x.com/ayincoin), [Pyreplay](https://x.com/PyreplayDotCom)/[Alph.land](https://x.com/fugashu_codes), [Ulam](https://x.com/ulamlabs), [Invariant](https://x.com/invariant_labs), [Linx](https://x.com/linx_labs), [Sezame](https://x.com/SesameWallet), [Alphbanx](https://x.com/alephiumbank), [Deadrare](https://x.com/DeadRareNFT), [Mobula](https://docs.mobula.io/blockchains/alephium), [NTV](https://x.com/notrustverif), [AlphPro](https://x.com/Alphdotpro), [Alphaga](https://x.com/AlphagaMarket), [GoldcastleClub](https://x.com/GoldCastleClub), [Shin](https://x.com/Shin_Inu_Aleph), [Alephium Battle](https://x.com/AlephiumBattle), [HodlAlph](https://x.com/PhoenixErgo) & [GigaCheng](https://x.com/gigacheng) were all represented there.
 
 11 of the core contributors were there & gave presentations on very diverse topics and made sure things ran as smoothly as possible! Some well-known community moderators & friends from [Bity](https://x.com/bity), [Nym](https://x.com/nymproject), & [Ergo](https://x.com/ergo_platform) also showed up.
 
