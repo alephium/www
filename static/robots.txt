@@ -5,19 +5,31 @@ Disallow: /onramp-callback
 Disallow: /grant-application-callback
 
 User-agent: GPTBot
-Allow: /
+Disallow: /banxa-callback
+Disallow: /onramp-callback
+Disallow: /grant-application-callback
 
 User-agent: ChatGPT-User
-Allow: /
+Disallow: /banxa-callback
+Disallow: /onramp-callback
+Disallow: /grant-application-callback
 
 User-agent: ClaudeBot
-Allow: /
+Disallow: /banxa-callback
+Disallow: /onramp-callback
+Disallow: /grant-application-callback
 
 User-agent: anthropic-ai
-Allow: /
+Disallow: /banxa-callback
+Disallow: /onramp-callback
+Disallow: /grant-application-callback
 
 User-agent: PerplexityBot
-Allow: /
+Disallow: /banxa-callback
+Disallow: /onramp-callback
+Disallow: /grant-application-callback
 
 User-agent: Applebot
-Allow: /
+Disallow: /banxa-callback
+Disallow: /onramp-callback
+Disallow: /grant-application-callback
