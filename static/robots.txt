@@ -1,11 +1,35 @@
 User-agent: *
 Disallow: /cmc-application-proof.txt
-
-User-agent: *
 Disallow: /banxa-callback
-
-User-agent: *
 Disallow: /onramp-callback
+Disallow: /grant-application-callback
 
-User-agent: *
+User-agent: GPTBot
+Disallow: /banxa-callback
+Disallow: /onramp-callback
+Disallow: /grant-application-callback
+
+User-agent: ChatGPT-User
+Disallow: /banxa-callback
+Disallow: /onramp-callback
+Disallow: /grant-application-callback
+
+User-agent: ClaudeBot
+Disallow: /banxa-callback
+Disallow: /onramp-callback
+Disallow: /grant-application-callback
+
+User-agent: anthropic-ai
+Disallow: /banxa-callback
+Disallow: /onramp-callback
+Disallow: /grant-application-callback
+
+User-agent: PerplexityBot
+Disallow: /banxa-callback
+Disallow: /onramp-callback
+Disallow: /grant-application-callback
+
+User-agent: Applebot
+Disallow: /banxa-callback
+Disallow: /onramp-callback
 Disallow: /grant-application-callback
