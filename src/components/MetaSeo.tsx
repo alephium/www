@@ -13,6 +13,35 @@ const defaultTitle = 'Alephium | The Web3 you were promised'
 const defaultDescription =
   'Alephium is the next generation PoW Layer 1 with smart contracts. Built for speed, security, and sustainability. Start building or join the community today.'
 
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Alephium',
+  url: 'https://alephium.org',
+  logo: 'https://alephium.org/og-image.png',
+  description:
+    'Alephium is a scalable Layer-1 blockchain combining energy-efficient Proof-of-Work security with expressive smart contracts.',
+  sameAs: [
+    'https://x.com/alephium',
+    'https://discord.gg/XC5JaaDT7z',
+    'https://t.me/alephiumgroup',
+    'https://github.com/alephium',
+    'https://medium.com/@alephium',
+    'https://www.reddit.com/r/Alephium',
+    'https://www.linkedin.com/company/alephium',
+    'https://www.youtube.com/channel/UCIX9Eww2Kch7sc0E6gCmEdg'
+  ]
+}
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Alephium',
+  url: 'https://alephium.org',
+  description:
+    'Alephium is a scalable Layer-1 blockchain combining energy-efficient Proof-of-Work security with expressive smart contracts.'
+}
+
 export const MetaSeo = ({ title, description, ogDescription, ogImage, lang = 'en', pathname }: MetaSeoProps) => {
   const isTestSite = typeof window !== 'undefined' && window.location.hostname === 'www2.alephium.org'
 
@@ -31,6 +60,10 @@ export const MetaSeo = ({ title, description, ogDescription, ogImage, lang = 'en
       }}
       title={titleContent}
       link={[{ rel: 'canonical', href: canonicalUrl }]}
+      script={[
+        { type: 'application/ld+json', innerHTML: JSON.stringify(organizationSchema) },
+        { type: 'application/ld+json', innerHTML: JSON.stringify(websiteSchema) }
+      ]}
       meta={[
         ...metaBase,
         {
