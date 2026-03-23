@@ -51,7 +51,7 @@ This will make all upgrades and install the Ledger Wallet Library that will be n
 
 ## 4. Download the Alephium Ledger App to your computer
 
-Go to the following GitHub repository: [https://github.com/alephium/ledger-alephium](https://github.com/alephium/ledger-alephium/tree/master/release) and download it.
+Go to the following GitHub repository: [https://github.com/alephium/ledger-alephium](https://github.com/alephium/ledger-alephium/) and download it.
 
 _🚨 To download the repository, click on the “Code” green button and choose “Download Zip.”_
 
@@ -63,7 +63,7 @@ Download and unzip it in a folder you have easy access to and all read/write per
 
 Your Ledger now needs to be connected to your computer and unlocked.
 
-Go to the GitHub repository ([https://github.com/alephium/ledger-alephium/tree/master](https://github.com/alephium/ledger-alephium/tree/master)) and scroll down to find the command that applies to your Ledger version:
+Go to the GitHub repository ([https://github.com/alephium/ledger-alephium/](https://github.com/alephium/ledger-alephium/)) and scroll down to find the command that applies to your Ledger version:
 
 ![](image_8fb9cb3848.png)
 
