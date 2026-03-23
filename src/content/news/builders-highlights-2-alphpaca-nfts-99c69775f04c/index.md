@@ -1,17 +1,21 @@
 ---
-date: 2023-07-25T15:42:41.058000Z
-description: "Builders Highlights #2: Meet Alphpaca NFTs, showcasing innovative NFT projects built on Alephium that deliver unique experiences and real utility for users."
-seoDescription: "Alephium Builders Highlights #2 Alphpaca NFTs - innovative NFT projects on Alephium blockchain. Developer showcase and ecosystem project spotlight."
+title: "Builders Highlights #2: Alphpaca NFTs"
+description: "Builders Highlights #2: Meet Alphpaca NFTs, showcasing innovative
+  NFT projects built on Alephium that deliver unique experiences and real
+  utility for users."
+seoDescription: "Alephium Builders Highlights #2 Alphpaca NFTs - innovative NFT
+  projects on Alephium blockchain. Developer showcase and ecosystem project
+  spotlight."
+date: 2023-07-25T15:42:41.058Z
 spotlight: false
 featuredImage: image_9aa99da3ce.jpg
-title: 'Builders Highlights #2: Alphpaca NFTs'
 ---
 
 _Alephium’s ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience and provide real utility for the users. In the Builders Highlight series, these builders will share more about their projects, thoughts, and insights on why building on Alephium!_
 
 _Disclaimer: While Alephium is happy to support a growing developer community, it would like to clarify that it does not endorse, audit, or review any software presented in this series and encourages all users to make informed decisions and take personal responsibility for their actions._
 
-The third builder in the series is [Benjamin](https://twitter.com/BenLarkey), the developer behind the [Alphpaca NFT collection](https://testnet.nft.alephium.org/collection-details?collectionId=e0385e13db8a162d6d419b4b4665d802fe547176143dbd0c7226db02b681fb00). He’s a very regular, insightful & knowledgeable presence in our discord. You can check the project’s website [here](https://www.alphpaca.dev/), its GitHub [here](https://github.com/larkben/Ergollamas-Alphpacas) or contact the project Discord [here](https://discord.gg/9eBCchJvn7).
+The third builder in the series is [Benjamin](https://twitter.com/BenLarkey), the developer behind the Alphpaca NFT collection. He’s a very regular, insightful & knowledgeable presence in our discord. You can check the project’s website [here](https://www.alphpaca.dev/) or contact the project Discord [here](https://discord.gg/9eBCchJvn7).
 
 ## Tell us a little bit about your project. What is it, what does it, and how does it interact with the Alephium blockchain?
 
@@ -71,7 +75,7 @@ Based on my little experience developing, I’d say my developer career official
 
 If you want to develop on Alephium, just go for it; eventually, you’ll finally push that first smart contract or test token contract to mainnet, and a whole world of new things opens up at your fingertips. The community is active, thriving, and motivational. I’ll stop there: it’s better for you to see it yourself.
 
-Thanks, Benjamin, for your answers! Alephium is thrilled to have such talent builders in the community! You can find the Alphaca NFT collection on testnet on [Alephium’s NFT marketplace](https://testnet.nft.alephium.org/collection-details?collectionId=e0385e13db8a162d6d419b4b4665d802fe547176143dbd0c7226db02b681fb00)!
+Thanks, Benjamin, for your answers! Alephium is thrilled to have such talent builders in the community! 
 
 Have you built something or have a nice idea and want to request a grant or reward? You can access the [Alephium Community Grants &amp; Reward Program page](/grants) for more info!
 
