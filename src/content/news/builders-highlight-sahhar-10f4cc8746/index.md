@@ -6,6 +6,7 @@ description: "Builders Highlight: Meet Sahhar, showcasing innovative projects
 seoDescription: Alephium Builders Highlight Sahhar - innovative projects on
   Alephium blockchain. Developer showcase and ecosystem project spotlight.
 date: 2023-05-26T12:34:26.671Z
+archived: true
 featuredImage: image_f807a06471.png
 ---
 _Alephium’s ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience and provide real utility for the users. In the Builders Highlight series, these builders will share more about their projects and also their thoughts and insights on why building on Alephium!_
