@@ -9,11 +9,11 @@ date: 2024-08-18T17:57:20.687Z
 featuredImage: image_0f5b4b5f54.png
 ---
 
-_This serie of interviews was conducted at the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
+_This series of interviews was conducted at the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
-Here, Radu, from [Linx Labs](https://x.com/linx_labs) shares the latest developments on [Linx OTC](https://linxotc.com/), plans for the upcoming lending platform and his vision for the future of Alephium’s DeFi Ecosystem.Find the full (slightly edited) transcript below if you prefer reading.
+Here, Radu, from [Linx Labs](https://x.com/linx_labs) shares the latest developments on [Linx OTC](https://linxotc.com/), plans for the upcoming lending platform and his vision for the future of Alephium’s DeFi Ecosystem. Find the full (slightly edited) transcript below if you prefer reading.
 
-`video: https://www.youtube.com/watch?v=yfgOOLGjp4E`
+[Video](https://www.youtube.com/watch?v=yfgOOLGjp4E)
 
 #### Can you present yourself briefly and the project that you are building?
 
@@ -62,7 +62,7 @@ Go Alephium, that’s all.
 ---
 Links:
 
-Website: [https://linxotc.com/](https://linxotc.com/)  
+Website: [https://app.linxlabs.org](https://app.linxlabs.org/)  
 Twitter: [https://x.com/linx_labs](https://x.com/linx_labs)  
 Telegram: [https://t.me/linx_wallet_chat](https://t.me/linx_wallet_chat)  
 Discord: [https://discord.com/invite/g434BaWTFb](https://discord.com/invite/g434BaWTFb)
