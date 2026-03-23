@@ -54,7 +54,7 @@ Alephium’s stateful UTXO combines UTXO & account model and has [smart contract
 
 This imposed the decision to create a new VM, specifically designed to take advantage of sUTXO’s strengths. Like Alephium’s full nodes, the VM [is written in Scala for enhanced security](https://twitter.com/alephium/status/1592536671177699328) and named **Alphred**.
 
-Similarly to the EVM with Solidity, Alphred has a [domain-specific language](https://en.wikipedia.org/wiki/Domain-specific_language) called **Ralph**. [Ralph](https://docs.alephium.org/ralph/getting-started) was built specifically for Alephium’s blockchain to be extremely expressive and easy to use. It has been specially tailored to be secure by design because it leverages the built-in features of the VM. This is beyond the point of this article, and we’ll dive into Ralph specifically in a later post.
+Similarly to the EVM with Solidity, Alphred has a [domain-specific language](https://en.wikipedia.org/wiki/Domain-specific_language) called **Ralph**. [Ralph](https://docs.alephium.org/ralph/) was built specifically for Alephium’s blockchain to be extremely expressive and easy to use. It has been specially tailored to be secure by design because it leverages the built-in features of the VM. This is beyond the point of this article, and we’ll dive into Ralph specifically in a later post.
 
 The combination of Ralph (the language) and Alphred (the VM) has a lot of benefits, of which a few are outlined here:
 
@@ -80,7 +80,7 @@ Alephium is UTXO-based, meaning the Input/Output paradigm dictates that outputs 
 
 ### More secure by design
 
-It is hard to write secure smart contracts on most blockchains, in part because their programming languages and VMs give developers “too much freedom”. When they write code and rely on external sources (like [libraries](https://docs.openzeppelin.com/contracts/2.x/api/math)) to perform verifications, there is too much room for error, and bugs may happen, often critical.
+It is hard to write secure smart contracts on most blockchains, in part because their programming languages and VMs give developers “too much freedom”. When they write code and rely on external sources to perform verifications, there is too much room for error, and bugs may happen (often critical).
 
 Alphred comes equipped with many checks and built-in controls that, while preserving great expressiveness and ease of use for developers, also help them avoid many of the common mistakes & bugs. Here are some examples:
 
