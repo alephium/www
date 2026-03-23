@@ -1,17 +1,21 @@
 ---
-date: 2022-11-23T15:42:04.309000Z
-description: "Host your Alephium node via the Flux marketplace! Learn how to deploy and run an Alephium full node on decentralized web3 cloud infrastructure with this detailed tutorial."
-seoDescription: "Alephium node Flux marketplace tutorial - deploy full node on web3 cloud infrastructure. Decentralized hosting guide with Flux marketplace walkthrough."
+title: Host your Alephium Node via the Flux Marketplace
+description: Host your Alephium node via the Flux marketplace! Learn how to
+  deploy and run an Alephium full node on decentralized web3 cloud
+  infrastructure with this detailed tutorial.
+seoDescription: Alephium node Flux marketplace tutorial - deploy full node on
+  web3 cloud infrastructure. Decentralized hosting guide with Flux marketplace
+  walkthrough.
+date: 2022-11-23T15:42:04.309Z
 spotlight: false
 featuredImage: image_ec0a7e367d.png
-title: Host your Alephium Node via the Flux Marketplace
 ---
 
 [Alephium's partnership](/news/post/alephium-continues-its-engagement-for-decentralization-and-partners-with-the-cloud-based-f9c5baebe5b2) with [Flux Official](https://medium.com/u/1c37e86f5d23) to support Alephium's full node running on a web3 cloud infrastructure is another step towards demonstrating decentralization as a core value. Find here a detailed walkthrough on how to set up a node with Flux.
 
 ### Flux — The Web3 Cloud
 
-The Flux Cloud is a decentralized cloud computing system based on thousands of single servers worldwide. Each server provides computational resources and is rewarded with 50% of the [total block reward](https://runonflux.io/flux-nodes.html).
+The Flux Cloud is a decentralized cloud computing system based on thousands of single servers worldwide. Each server provides computational resources and is rewarded with 50% of the [total block reward](https://runonflux.com/).
 
 There are plenty of advantages to using Flux instead of traditional Web2 infrastructure providers:
 
@@ -24,11 +28,11 @@ There are plenty of advantages to using Flux instead of traditional Web2 infrast
 
 ### Alephium node on Flux — a tutorial
 
-Before following the tutorial, you will need to install the [zelcore wallet](https://zelcore.io/), and own some FLUX ([find how here](https://runonflux.io/buy-flux.html)).
+Before following the tutorial, you will need to install the [zelcore wallet](https://zelcore.io/), and own some FLUX ([find how here](https://runonflux.com/).
 
 ![](image_d648d485af.png)
 
-1.  First head over to [https://home.runonflux.io/](https://home.runonflux.io/)
+1.  First head over to [https://runonflux.com/(https://runonflux.com/)
 2.  Once there, log in using your ZelID. It is an instance of the [Zelcore Wallet](https://zelcore.io/).
 
 ![](image_3dbacefda5.png)
