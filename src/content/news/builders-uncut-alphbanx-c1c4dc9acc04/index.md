@@ -1,10 +1,13 @@
 ---
-date: 2024-09-18T09:04:15.307000Z
-description: "Builders Uncut: Meet AlphbanX, an in-depth interview conducted around the Athens Builders Meetup showcasing innovative projects in the Alephium ecosystem."
-seoDescription: "Alephium Builders Uncut AlphbanX - Athens Builders Meetup interview. In-depth developer showcase and ecosystem project spotlight."
+title: Builders Uncut — AlphbanX
+description: "Builders Uncut: Meet AlphbanX, an in-depth interview conducted
+  around the Athens Builders Meetup showcasing innovative projects in the
+  Alephium ecosystem."
+seoDescription: Alephium Builders Uncut AlphbanX - Athens Builders Meetup
+  interview. In-depth developer showcase and ecosystem project spotlight.
+date: 2024-09-18T09:04:15.307Z
 spotlight: false
 featuredImage: image_7a7462f53a.png
-title: Builders Uncut — AlphbanX
 ---
 
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
@@ -37,7 +40,7 @@ Here, Timothy, the founder of [AlphBanx](https://www.alphbanx.com/), shares his 
 
 > How do you plan to integrate with the Alephium ecosystem?
 
-**Timothy**: We’ve been building relationships with other projects in the Alephium ecosystem, like [Ayin](http://ayin.app) and [Sezame Wallet](http://sezame.app). The goal is to create seamless integrations that allow users to manage their loans and interact with other DeFi services directly from their wallets. This will increase the utility of both AlphBanx and the overall ecosystem.
+**Timothy**: We’ve been building relationships with other projects in the Alephium ecosystem, like Ayin and [Sezame Wallet](http://sezame.app). The goal is to create seamless integrations that allow users to manage their loans and interact with other DeFi services directly from their wallets. This will increase the utility of both AlphBanx and the overall ecosystem.
 
 > How important is community to AlphBanx?
 
