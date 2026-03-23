@@ -1,9 +1,12 @@
 ---
-date: 2022-02-18T12:15:17.605000Z
-description: "Gate.io AMA with Alephium: Transcript from the February 15th, 2022 AMA session hosted by Gate.io in their English Telegram group, covering key topics and community questions."
-seoDescription: "Gate.io AMA with Alephium transcript - February 15th, 2022. English Telegram group session covering key topics and community questions."
-featuredImage: image_e59ff2119e.jpg
 title: Gate.io AMA with Alephium
+description: "Gate.io AMA with Alephium: Transcript from the February 15th, 2022
+  AMA session hosted by Gate.io in their English Telegram group, covering key
+  topics and community questions."
+seoDescription: Gate.io AMA with Alephium transcript - February 15th, 2022.
+  English Telegram group session covering key topics and community questions.
+date: 2022-02-18T12:15:17.605Z
+featuredImage: image_e59ff2119e.jpg
 ---
 On the 15th of February 2022, Gate.io hosted an AMA with Alephium in their English Telegram-group. This is the transcript from that event.
 
@@ -143,7 +146,7 @@ On the 15th of February 2022, Gate.io hosted an AMA with Alephium in their Engli
 
 **A: Cheng / Alephium**
 
-> _Sharding is the most promising layer1 one scaling solution, same as sharding for database scaling. However, sharding is very challenging, and so far no project has done it right. We are the first sharded blockchain with nice user experience. For the long term, I believe sharding and layer 2 will be the best combo. For more reasoning, you could check this article by Vitalik:_ [https://vitalik.ca/general/2021/04/07/sharding.html](https://vitalik.ca/general/2021/04/07/sharding.html)
+> _Sharding is the most promising layer1 one scaling solution, same as sharding for database scaling. However, sharding is very challenging, and so far no project has done it right. We are the first sharded blockchain with nice user experience. For the long term, I believe sharding and layer 2 will be the best combo.
 
 **Q: starcrypto fi**
 
