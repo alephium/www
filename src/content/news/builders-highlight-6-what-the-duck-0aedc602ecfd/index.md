@@ -1,10 +1,14 @@
 ---
-date: 2024-01-22T15:54:45.700000Z
-description: "Builders Highlight #6: Meet What the Duck, showcasing innovative projects built on Alephium that deliver unique experiences and real utility for users."
-seoDescription: "Alephium Builders Highlight #6 What the Duck - innovative projects on Alephium blockchain. Developer showcase and ecosystem project spotlight."
+title: "Builders Highlight #6: What the Duck"
+description: "Builders Highlight #6: Meet What the Duck, showcasing innovative
+  projects built on Alephium that deliver unique experiences and real utility
+  for users."
+seoDescription: "Alephium Builders Highlight #6 What the Duck - innovative
+  projects on Alephium blockchain. Developer showcase and ecosystem project
+  spotlight."
+date: 2024-01-22T15:54:45.700Z
 spotlight: false
 featuredImage: image_2adc785dc9.jpg
-title: 'Builders Highlight #6: What the Duck'
 ---
 
 _Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real utility for users. In the Builders Highlight series, they share more about their projects, thoughts, and insights on why building on Alephium. You can find_ [#1 here](/news/post/builders-highlights-1-sezame-wallet-ddb4aeb61881)_,_ [#2 here](/news/post/builders-highlights-2-alphpaca-nfts-99c69775f04c), [#3 here](/news/post/builders-highlight-3-ayin-6be4a6bd4ec2), [#4 here](/news/post/builders-highlight-4-no-trust-verify-9ea495ca826f), _and_ [#5 here](/news/post/builders-highlight-5-deadrare-d5ff90d6161e)_!_
@@ -29,7 +33,7 @@ It was Dr. Jekyll from the Ayin team who told me about Alephium. I knew him and 
 
 ## What tech stack did you use in your project? What did you consider when choosing the right tech stack for your project?
 
-It was a fun build. I used an online pixel art editor to draw the ducks, but this output .PNG files and the layers weren’t labelled. I wrote a script to convert and sort these .png layers into .svg layers and flatten them to generate all the duck images based on a weighted rarity system. I generated the metadata json files with this same script, and also generated [Vue.js](https://vuejs.org/) components that get used on [theducklounge.com](https://theducklounge.com/#/) on the [rarity explorer page](https://theducklounge.com/#/nest). This was all done with typescript+bun. The website is a small Vue.js app with some [CSS](https://en.wikipedia.org/wiki/CSS) animations for the clouds and other interactive bits. It’s hosted on IPFS through [Fleek](https://fleek.co/hosting/).
+It was a fun build. I used an online pixel art editor to draw the ducks, but this output .PNG files and the layers weren’t labelled. I wrote a script to convert and sort these .png layers into .svg layers and flatten them to generate all the duck images based on a weighted rarity system. I generated the metadata json files with this same script, and also generated [Vue.js](https://vuejs.org/) components that get used on [theducklounge.com](https://theducklounge.com/#/) on the [rarity explorer page](https://theducklounge.com/#/nest). This was all done with typescript+bun. The website is a small Vue.js app with some [CSS](https://en.wikipedia.org/wiki/CSS) animations for the clouds and other interactive bits.
 
 ## What features are you most proud/happy of?
 
