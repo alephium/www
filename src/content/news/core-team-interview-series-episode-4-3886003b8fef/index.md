@@ -1,18 +1,21 @@
 ---
-date: 2023-01-06T16:29:48.501000Z
-description: "Core Team Interview Series Episode 4: For its team, Alephium is privileging agility and efficiency over hyper-growth, showcasing the strategic approach to team development."
-seoDescription: "Alephium Core Team Interview Episode 4 - agility and efficiency over hyper-growth. Strategic team development approach and team interview series."
-featuredImage: image_0416b8898f.jpeg
 title: Core team interview series. Episode 4
+description: "Core Team Interview Series Episode 4: For its team, Alephium is
+  privileging agility and efficiency over hyper-growth, showcasing the strategic
+  approach to team development."
+seoDescription: Alephium Core Team Interview Episode 4 - agility and efficiency
+  over hyper-growth. Strategic team development approach and team interview
+  series.
+date: 2023-01-06T16:29:48.501Z
+featuredImage: image_0416b8898f.jpeg
 ---
-
 [This article was updated](/news/post/alephium-core-contributors-f35eeaeaf0a0)
 
-_For its team, Alephium is privileging agility and efficiency over hyper-growth. The project does stay at a human size not because it is more efficient, but because Alephium strives to be a decentralized, community-driven project. This means the project in itself is much larger than a team can ever be. Communication, trust, openness, and transparency are paramount in such a setup._
+*For its team, Alephium is privileging agility and efficiency over hyper-growth. The project does stay at a human size not because it is more efficient, but because Alephium strives to be a decentralized, community-driven project. This means the project in itself is much larger than a team can ever be. Communication, trust, openness, and transparency are paramount in such a setup.*
 
-_To shed some light on who we are and what we do, we decided to share a little about ourselves with the community through a small series of interviews. Read the_ [1st](/news/post/core-team-interview-series-episode-1-3472f8295af6)_,_ [2nd](/news/post/core-team-interview-series-episode-2-bec6e6908d2f)_, and_ [3rd part](/news/post/core-team-interview-series-episode-3-64b6dacc1459)_._
+*To shed some light on who we are and what we do, we decided to share a little about ourselves with the community through a small series of interviews. Read the* [1st](/news/post/core-team-interview-series-episode-1-3472f8295af6)*,* [2nd](/news/post/core-team-interview-series-episode-2-bec6e6908d2f)*, and* [3rd part](/news/post/core-team-interview-series-episode-3-64b6dacc1459)*.*
 
----
+- - -
 
 Since our last core team article was published in March’22, 3 new members have joined the core team. **It’s a great pleasure to introduce you to Marina, Thiago, and Zhiming.**
 
@@ -38,7 +41,7 @@ You’ll find me on [LinkedIn](https://www.linkedin.com/in/marina-miranda-de-mat
 
 ### 5 — How/when did you come across crypto?
 
-Like many people, I learned about crypto in 2017 when a broker tried to sell me some Bitcoins. I realized that there had to be a better way to be part of it all and started looking into it for myself. I found the entire space quite exciting and decided I would love to work with it. It was then in 2018 that I joined [Lykke](https://lykke.com/), a Cryptoexchange established in 2016, as the Head of Customer Success and expanded my knowledge in various areas. Lykke is
+Like many people, I learned about crypto in 2017 when a broker tried to sell me some Bitcoins. I realized that there had to be a better way to be part of it all and started looking into it for myself. I found the entire space quite exciting and decided I would love to work with it. It was then in 2018 that I joined Lyk.ke, a Cryptoexchange established in 2016, as the Head of Customer Success and expanded my knowledge in various areas.
 
 ### 6 — How did you come across Alephium and what attracted you to the project?
 
@@ -122,8 +125,8 @@ I’m currently working on the [ralph-vscode](https://github.com/alephium/ralph-
 
 What I care the most about is that the community members can understand the Alephium project more easily.
 
----
+- - -
 
 **This concludes the fourth chapter in this series. There’s no doubt that more episodes will be needed as the project progresses and grows. Stay tuned!**
 
-**_You can follow Alephium on_** [Github](https://github.com/alephium/)**_,_** [Twitter](https://twitter.com/alephium)**_. Join the conversation on_** [Discord](/discord)**_,_** [Telegram](https://t.me/alephiumgroup) **_or_** [Reddit](https://www.reddit.com/r/alephium)**_._**
+***You can follow Alephium on*** [Github](https://github.com/alephium/)***,*** [Twitter](https://twitter.com/alephium)***. Join the conversation on*** [Discord](/discord)***,*** [Telegram](https://t.me/alephiumgroup) ***or*** [Reddit](https://www.reddit.com/r/alephium)***.***
