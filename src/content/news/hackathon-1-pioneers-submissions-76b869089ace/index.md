@@ -1,10 +1,14 @@
 ---
-date: 2024-03-11T16:12:51.964000Z
-description: "Hackathon #1 Pioneers Submissions: After two weeks of intense coding and building, teams have submitted their innovative projects. Explore all submissions and follow their evolution."
-seoDescription: "Alephium Hackathon #1 Pioneers submissions - innovative projects after two weeks of coding. Explore all hackathon submissions and follow evolution."
+title: "Hackathon #1- Pioneers — Submissions"
+description: "Hackathon #1 Pioneers Submissions: After two weeks of intense
+  coding and building, teams have submitted their innovative projects. Explore
+  all submissions and follow their evolution."
+seoDescription: "Alephium Hackathon #1 Pioneers submissions - innovative
+  projects after two weeks of coding. Explore all hackathon submissions and
+  follow evolution."
+date: 2024-03-11T16:12:51.964Z
 spotlight: false
 featuredImage: image_eb8b965219.png
-title: 'Hackathon #1- Pioneers — Submissions'
 ---
 
 _After two weeks of intense coding, debugging, building & good vibes, teams or individuals have submitted their projects. While the jury is judging & because it doesn’t stop with the end of the hackathon, here’s a recap of all projects, with all the information & links to follow them as they keep evolving over the next few weeks & months!_
@@ -63,7 +67,7 @@ Here’s the list of all submissions, with links to PoCs, dApps or tools when av
 
 **Defi Dashboard by AlphPro** is your one-stop shop for tracking a wide range of data on current users' holdings of tokens and NFTs, finding out about new token releases, new NFT collections, and much more.
 
-**Links:** [Website](https://alph.pro) [Twitter](https://twitter.com/AlphdotPro) [Github](https://github.com/not-reed/alph.pro-defi-dashboard) [Video Presentation](https://www.youtube.com/watch?v=2J-mwe9TN5s&amp;t=1726s)
+**Links:** [Twitter](https://twitter.com/AlphdotPro) [Github](https://github.com/not-reed/alph.pro-defi-dashboard) [Video Presentation](https://www.youtube.com/watch?v=2J-mwe9TN5s&amp;t=1726s)
 
 #### MereProof — Main Track — dApps
 
@@ -137,7 +141,7 @@ Links: [Docs](https://docs.google.com/spreadsheets/d/1xC4cUNHIoYC6XPAUy10tURnotd
 
 The **Alephium Blockflow Visualizer and Stats Dashboard** is a comprehensive suite of tools designed to enhance the understanding and accessibility of the Alephium blockchain. The project introduces a real-time 3D visualizer application that demonstrates Alephium’s sharding algorithm, Blockflow, along with a WebSocket stream that broadcasts newly minted blocks to developers as they occur. Additionally, they have developed a Proof of Concept application that displays static statistics of the Alephium blockchain, and a Python library that facilitates interaction with the Alephium Full Node API and Alephium Explorer API. All components of the project are open-sourced to encourage community engagement and development.
 
-**Links:** [Website](https://visualizer.alph.land/) [Github](https://github.com/CodeBaristas/alephium-visualizer-frontend) [Twitter](https://twitter.com/fugashu_codes)
+**Links:** [Website](https://alph.land/) [Github](https://github.com/CodeBaristas/alephium-visualizer-frontend) [Twitter](https://twitter.com/fugashu_codes)
 
 #### ABIExtractor — Main Track — Tooling
 
@@ -219,7 +223,7 @@ The implementation is inspired by [OpenZeppelin ETH](https://github.com/OpenZepp
 
 **Description:** Fun NFT office snack dispenser for your next online office meeting. Buy any amount of each food offered as long as they are still available. As of writing, beer & popcorn & pizza are sold out!
 
-**Links:** [Website](https://snacks.alph.pro/) [Twitter](https://x.com/AIphPro) [Video Presentation](https://www.youtube.com/watch?v=2J-mwe9TN5s&amp;t=1607s)
+**Links:** [Twitter](https://x.com/AIphPro) [Video Presentation](https://www.youtube.com/watch?v=2J-mwe9TN5s&amp;t=1607s)
 
 #### Simple DAO — Track — Bounties
 
