@@ -1,8 +1,11 @@
 ---
 title: "Hashrate Series #2: Goldshell"
-date: 2024-09-01T11:16:28.900000Z
-description: "Hashrate Series #2: Meet Goldshell, another key ecosystem actor sustaining Alephium's network security through Proof-of-Work mining and hashrate contribution."
-seoDescription: "Alephium Hashrate Series #2 Goldshell - Proof-of-Work mining ecosystem actor. Network security and hashrate contribution showcase."
+description: "Hashrate Series #2: Meet Goldshell, another key ecosystem actor
+  sustaining Alephium's network security through Proof-of-Work mining and
+  hashrate contribution."
+seoDescription: "Alephium Hashrate Series #2 Goldshell - Proof-of-Work mining
+  ecosystem actor. Network security and hashrate contribution showcase."
+date: 2024-09-01T11:16:28.900Z
 spotlight: false
 featuredImage: image_0f660632a8.jpeg
 ---
@@ -18,7 +21,7 @@ Working with the Alephium community has been a bit like a treasure hunt — 
 
 > **You’ve already announced a second generation of ASICs miners (Goldshell AL BOX II PLUS). Can you tell us more about this product?**
 
-We recently rolled out the [AL BOX II PLUS](https://www.goldshell.com/product/goldshell-al-box-%E2%85%B1-plus/), which packs more punch and makes things a lot easier by integrating the power supply right into the machine. Before, we had to remind people, “Hey, don’t forget to buy that power supply!” Now, it’s just plug-and-play, like setting up a toaster. We also introduced the ECHO series, which we like to call our “silent powerhouse.” It’s perfect for those who need solid performance but also want something super quiet — ideal for people with data centers or low energy costs.
+We recently rolled out the AL BOX II PLUS, which packs more punch and makes things a lot easier by integrating the power supply right into the machine. Before, we had to remind people, “Hey, don’t forget to buy that power supply!” Now, it’s just plug-and-play, like setting up a toaster. We also introduced the ECHO series, which we like to call our “silent powerhouse.” It’s perfect for those who need solid performance but also want something super quiet — ideal for people with data centers or low energy costs.
 
 > **How did you first discover Alephium, and what caught your attention? What factors do you consider when evaluating a PoW chain for investment?**
 
