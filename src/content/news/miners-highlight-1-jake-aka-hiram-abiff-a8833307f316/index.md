@@ -1,10 +1,14 @@
 ---
-date: 2024-01-11T16:30:53.602000Z
-description: "Miners' Highlight #1: Meet Jake (aka Hiram Abiff), showcasing the contributions of miners who maintain Alephium's blockchain integrity and functionality."
-seoDescription: "Alephium Miners Highlight #1 Jake Hiram Abiff - miner contributions showcase. Blockchain integrity and functionality maintenance spotlight."
+title: "Miners’ Highlight #1 — Jake aka Hiram Abiff .’."
+description: "Miners' Highlight #1: Meet Jake (aka Hiram Abiff), showcasing the
+  contributions of miners who maintain Alephium's blockchain integrity and
+  functionality."
+seoDescription: "Alephium Miners Highlight #1 Jake Hiram Abiff - miner
+  contributions showcase. Blockchain integrity and functionality maintenance
+  spotlight."
+date: 2024-01-11T16:30:53.602Z
 spotlight: false
 featuredImage: image_e1d2ef76d7.png
-title: 'Miners’ Highlight #1 — Jake aka Hiram Abiff .’.'
 ---
 
 _The Alephium blockchain, like many decentralized networks, relies heavily on the contributions of miners to maintain its integrity and functionality. Recognizing the significance of these contributors, we are launching a series of articles titled “Miners’ Highlight.” By focusing on their contributions, challenges, and experiences, we aim to better understand the mining process and its importance. You can find_ [#1 here](/news/post/miners-highlight-1-cedric-crispin-c4ed456f6d10)_._
@@ -29,7 +33,7 @@ I started mining LTC/ BTC/ ETH with 1 GPU and a few old laptops and desktops as 
 
 ## How long have you been mining Alephium?
 
-I have been solo mining Alephium for a little over one year, and it has been a wonderful and amazing opportunity. I met so many amazing Alephium community members during this time. It was one of the best years of my life! Recently I joined [cloudiko.io](http://cloudiko.io) with my friends, who are the pool operators and have begun inviting everyone I know to join us in our initiative to decentralize the global hashrate.
+I have been solo mining Alephium for a little over one year, and it has been a wonderful and amazing opportunity. I met so many amazing Alephium community members during this time. It was one of the best years of my life! Recently I joined Cloudiko with my friends, who are the pool operators and have begun inviting everyone I know to join us in our initiative to decentralize the global hashrate.
 
 ## What made you switch to mining Alephium?
 
@@ -45,7 +49,7 @@ My wife and I have been running a small graphic design and printing business tog
 
 I am sort of a jack of all trades. I love to write & communicate my thoughts/opinions with the world via [Twitter](https://twitter.com/hiramabiffkas) or other social media platforms. I also do a lot of community outreach and answer community questions and write educational threads about mining or how to do various actions on chain with Alephium. I helped plan to do a monthly Alephium Community Space on Twitter (X) with members of the BlockFLOW alliance DAO (herein DAO\*), and other community members, and previously did an AMA with members from the core team. I also run giveaways with various entities, including but not limited to myself, the DAO, and Ayin. Recently, I started documenting some of the work I do [on YouTube](http://youtube.com/@HiramabiffALPH). I am a community mod and supporter on the AYIN discord server and the new NGU discord.
 
-After learning Mining Pool Stats was only tracking the ALPH chain with the highest ‘blockHeight’ aka chain 0 — I thought of the idea for [alphminingstats.com](https://www.alphminingstats.com), & have been helping [Cgi/bin](https://twitter.com/cg1_bin) from the DAO and 0xreed from ALPH_Ducks (the back/front end developers) throughout the process, and have been somewhat influential in designing/ creating the website to keep track of ALL 16 Alephium shards and chains. We thought this would be a good idea to understand global metrics better and make an informed decision going forward. I do everything I can to help make the @Alephium community better and share this gem with the world.
+After learning Mining Pool Stats was only tracking the ALPH chain with the highest ‘blockHeight’ aka chain 0 — I thought of the idea for alphminingstats.com, & have been helping [Cgi/bin](https://twitter.com/cg1_bin) from the DAO and 0xreed from ALPH_Ducks (the back/front end developers) throughout the process, and have been somewhat influential in designing/ creating the website to keep track of ALL 16 Alephium shards and chains. We thought this would be a good idea to understand global metrics better and make an informed decision going forward. I do everything I can to help make the @Alephium community better and share this gem with the world.
 
 ## What caught your eye in Alephium and the community?
 
