@@ -1,10 +1,14 @@
 ---
-date: 2024-03-22T16:41:54.726000Z
-description: "Celebrating the winners of Alephium's first hackathon 'Pioneers'! Discover the innovative dApps, tooling, and interoperability solutions built by talented developers."
-seoDescription: "Alephium hackathon winners announced - Pioneers hackathon results. Innovative dApps, tooling, and interoperability solutions. Prize winners revealed."
+title: Hackathon winners announced!
+description: Celebrating the winners of Alephium's first hackathon 'Pioneers'!
+  Discover the innovative dApps, tooling, and interoperability solutions built
+  by talented developers.
+seoDescription: Alephium hackathon winners announced - Pioneers hackathon
+  results. Innovative dApps, tooling, and interoperability solutions. Prize
+  winners revealed.
+date: 2024-03-22T16:41:54.726Z
 spotlight: false
 featuredImage: image_b3deda2ce3.gif
-title: Hackathon winners announced!
 ---
 
 _The first Alephium Hackathon “Pioneers”, took place online between the 12th & 26th of February. After carefully reviewing all final submissions, the jury & partners (Bitmain, Blockflow Alliance DAO, Cetacean Capital &_ [Dappnode](https://dappnode.com)_) are ready to announce the winners._
@@ -55,7 +59,7 @@ Links: [Twitter](https://twitter.com/Ross_Weir) [Github](https://github.com/ross
 
 The Alephium Blockflow Visualizer and Stats Dashboard is a comprehensive suite of tools designed to enhance the understanding and accessibility of the Alephium blockchain.
 
-Links: [Website](https://visualizer.alph.land/) [Github](https://github.com/CodeBaristas/alephium-visualizer-frontend) [Twitter](https://twitter.com/fugashu_codes)
+Links: [Website](https://alph.land/) [Github](https://github.com/CodeBaristas/alephium-visualizer-frontend) [Twitter](https://twitter.com/fugashu_codes)
 
 ### \#6, \#7, \#8, \#9 in no particular order — *each wins 2’000\$*
 
@@ -107,7 +111,7 @@ _There have been two kinds of bounties: 6 submissions were self defined bounties
 
 Fun NFT office snack dispenser for your next online office meeting. Buy any amount of each food offered as long as they are still available. As of writing, beer & popcorn & pizza are sold out!
 
-### Links: [Website](https://snacks.alph.pro/) [Twitter](https://x.com/AIphPro) [Video Presentation](https://www.youtube.com/watch?v=2J-mwe9TN5s&amp;t=1607s)
+### Links: [Twitter](https://x.com/AIphPro) [Video Presentation](https://www.youtube.com/watch?v=2J-mwe9TN5s&amp;t=1607s)
 
 ### **Merkle Tree Proof for allowlist** — *wins 2’000\$*
 
@@ -163,5 +167,3 @@ We thank you for keeping up with us, and we have heard your suggestions for the 
 One thing we don’t want to change is that awesome community energy, nerdcore vibe and good, productive & welcoming ambiance!
 
 Thank you!
-
-![](image_21cadb8f24.gif)
