@@ -5,6 +5,7 @@ seoDescription: "Alephium BSC Bridge testnet launch - bridge assets from BNB Sma
 featuredImage: image_39fa5f38bb.png
 title: The BSC/Alephium Bridge is live on Testnet!
 ---
+
 Bridge assets from and to BNB Smart Chain Testnet
 
 This is the hitchhiker’s guide to Alephium’s second testnet bridge!
@@ -94,7 +95,7 @@ To connect to the BSC Testnet, you will need a wallet. [Metamask](https://metama
 
 ![](image_b22f826d67.png)
 
-If you don’t have the BSC Testnet in your wallet, go to the [Chainlist website](https://chainlist.org/?search=BSC&amp;testnets=true) to add it. Then, connect your wallet, ensure the “include testnet” checkbox is checked, and click the “Add to Metamask” button.
+If you don’t have the BSC Testnet in your wallet, go to the [Chainlist website](https://chainlist.org/?search=BSC&testnets=true) to add it. Then, connect your wallet, ensure the “include testnet” checkbox is checked, and click the “Add to Metamask” button.
 
 ![](image_3f5e0e40b9.png)
 
@@ -252,11 +253,11 @@ Your Alephium Wallet will show you a transaction to sign. Review and information
 
 ![](image_35e75f1633.png)
 
-You can verify the transaction at [https://explorer.testnet.alephium.org/](https://explorer.testnet.alephium.org/)
+You can verify the transaction at [https://testnet.alephium.org/](https://testnet.alephium.org/)
 
 ## **8 — Using the “Redeem” section of the bridge**.
 
-If, for some reason, you left the bridge page before redeeming your tokens, you can always get your transaction hash from [https://explorer.testnet.alephium.org/](https://explorer.testnet.alephium.org/), and then click “Redeem” on the bridge page, paste it into the “source TX” field, and click “Recover.”
+If, for some reason, you left the bridge page before redeeming your tokens, you can always get your transaction hash from [https://testnet.alephium.org/](https://testnet.alephium.org/), and then click “Redeem” on the bridge page, paste it into the “source TX” field, and click “Recover.”
 
 ![](image_827fae3bad.png)
 
