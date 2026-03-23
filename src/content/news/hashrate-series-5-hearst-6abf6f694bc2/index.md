@@ -1,10 +1,13 @@
 ---
-date: 2024-10-21T08:17:06.469000Z
-description: "Hashrate Series #5: Meet Hearst, another key ecosystem actor sustaining Alephium's network security through Proof-of-Work mining and hashrate contribution."
-seoDescription: "Alephium Hashrate Series #5 Hearst - Proof-of-Work mining ecosystem actor. Network security and hashrate contribution showcase."
+title: "Hashrate Series #5: Hearst"
+description: "Hashrate Series #5: Meet Hearst, another key ecosystem actor
+  sustaining Alephium's network security through Proof-of-Work mining and
+  hashrate contribution."
+seoDescription: "Alephium Hashrate Series #5 Hearst - Proof-of-Work mining
+  ecosystem actor. Network security and hashrate contribution showcase."
+date: 2024-10-21T08:17:06.469Z
 spotlight: false
 featuredImage: image_73a6ea4a32.png
-title: "Hashrate Series #5: Hearst"
 ---
 
 _The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem actors to sustain and improve Alephium’s reliability. This series is about them, and after_ [Nicehash](/news/post/hashrate-series-1-nicehash-ee0936adf899), [Goldshell](/news/post/hashrate-series-2-goldshell-93cc51a86640)_,_ [Cryptohall24,](/news/post/hashrate-series-3-cryptohall-24-7ad1533701f4) _and_ [ICERIVER](/news/post/hashrate-series-4-iceriver-063f52b7c431), _please welcome Hearst._
@@ -23,7 +26,7 @@ It was 2013, and tech companies were booming, so I jumped in, starting an e-comm
 
 > It’s a fascinating journey. You and your co-founder, Adrien, eventually created Hearst. Can you introduce us to Adrien and share a bit about how you two came together to launch Hearst?
 
-**Loic**: Sure. [Adrien](https://x.com/ANejkovic) is a long-time friend, and we’ve known each other for over 15 years. He started his career in finance, building a forex fund in Luxembourg before moving into crypto. Adrian was well-connected in the crypto space and began mining Ethereum and Bitcoin early on. We reconnected around that time, and with my background in innovation and his expertise in mining, we decided to build something together. That’s how [Hearst](https://hearstcorporation.io/) was born — combining my knowledge of innovation with Adrien’s mining experience to explore new opportunities in the blockchain space.
+**Loic**: Sure. [Adrien](https://x.com/ANejkovic) is a long-time friend, and we’ve known each other for over 15 years. He started his career in finance, building a forex fund in Luxembourg before moving into crypto. Adrian was well-connected in the crypto space and began mining Ethereum and Bitcoin early on. We reconnected around that time, and with my background in innovation and his expertise in mining, we decided to build something together. That’s how [Hearst](https://www.hearstcorporation.io/) was born — combining my knowledge of innovation with Adrien’s mining experience to explore new opportunities in the blockchain space.
 
 > So, Hearst was built on this combination of innovation and mining expertise. Can you give us an overview of what Hearst is doing today?
 
@@ -72,7 +75,7 @@ On the broader Hearst side, we’re focused on scaling our Mining as a Service o
 ---
 
 Twitter & other social links: [https://x.com/Hearst_io](https://x.com/Hearst_io)  
-Website: [https://hearstcorporation.io/](https://hearstcorporation.io/)
+Website: [https://www.hearstcorporation.io/](https://hearstcorporation.io/)
 
 ---
 
