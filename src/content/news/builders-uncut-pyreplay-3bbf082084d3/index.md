@@ -1,9 +1,12 @@
 ---
-date: 2024-09-26T14:50:05.477000Z
-description: "Builders Uncut: Meet Pyreplay, an in-depth interview conducted around the Athens Builders Meetup showcasing innovative projects in the Alephium ecosystem."
-seoDescription: "Alephium Builders Uncut Pyreplay - Athens Builders Meetup interview. In-depth developer showcase and ecosystem project spotlight."
-featuredImage: image_b4fcd9699a.png
 title: Builders Uncut — Pyreplay
+description: "Builders Uncut: Meet Pyreplay, an in-depth interview conducted
+  around the Athens Builders Meetup showcasing innovative projects in the
+  Alephium ecosystem."
+seoDescription: Alephium Builders Uncut Pyreplay - Athens Builders Meetup
+  interview. In-depth developer showcase and ecosystem project spotlight.
+date: 2024-09-26T14:50:05.477Z
+featuredImage: image_b4fcd9699a.png
 ---
 *This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!*
 
@@ -56,8 +59,7 @@ What we really appreciate about Alephium is the strong community and the incredi
 **Links:**
 
 **Alph.land**\
-Website: <https://www.alph.land/>\
-Visualizer: [https://visualizer.alph.land](https://t.co/pUXfpQOUCp)
+Website: <https://www.alph.land/>
 
 **Pyreplay**\
 Website: <https://www.pyreplay.com/>\
