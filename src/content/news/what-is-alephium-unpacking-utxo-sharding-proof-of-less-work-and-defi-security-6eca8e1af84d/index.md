@@ -1,10 +1,11 @@
 ---
 date: 2024-11-04T17:36:49.665000Z
-description: "What is Alephium? Unpacking UTXO Sharding, Proof of Less Work, and DeFi Security - Alephium attended Singapore Token 2049 and Maud was interviewed by Defiant news."
-seoDescription: "What is Alephium - UTXO sharding, Proof of Less Work, DeFi security. Singapore Token 2049 Defiant news interview with Maud about Alephium history and future."
+description: 'What is Alephium? Unpacking UTXO Sharding, Proof of Less Work, and DeFi Security - Alephium attended Singapore Token 2049 and Maud was interviewed by Defiant news.'
+seoDescription: 'What is Alephium - UTXO sharding, Proof of Less Work, DeFi security. Singapore Token 2049 Defiant news interview with Maud about Alephium history and future.'
 featuredImage: image_ef7dfbeb3a.png
 title: What is Alephium? Unpacking UTXO Sharding, Proof of Less Work, and DeFi Security
 ---
+
 Alephium attended Singapore Token 2049 and Maud was interviewed by Defiant news there. She shared a bit about Alephium’s history, the current state and what the future holds. The full video interview is available here:
 
 `video: https://youtu.be/zA85kP0ttMs?si=6YleGCVY_u2cE5iq`
@@ -45,7 +46,7 @@ I’m essentially the COO, responsible for everything outside of development and
 
 > What are some of the most exciting upcoming projects in the Alephium ecosystem?
 
-**Maud**: We have several exciting projects in the pipeline, including an [over-collateralized stablecoin](https://www.alphbanx.com/) similar to MakerDAO, but with its own unique features. There’s also interest in [peer-to-peer protocols](https://linxotc.com/) for trustless transactions and peer-to-peer lending. We’re also expanding our [bridge](https://bridge.alephium.org/) to other chains, which will open up stable swap development and more.
+**Maud**: We have several exciting projects in the pipeline, including an [over-collateralized stablecoin](https://www.alphbanx.com/) similar to MakerDAO, but with its own unique features. There’s also interest in [peer-to-peer protocols](https://otc.linxlabs.org/) for trustless transactions and peer-to-peer lending. We’re also expanding our [bridge](https://bridge.alephium.org/) to other chains, which will open up stable swap development and more.
 
 > We’ve heard about ASICs being used in Alephium. Can you explain what they are and their importance to the ecosystem?
 
@@ -55,6 +56,6 @@ I’m essentially the COO, responsible for everything outside of development and
 
 **Maud**: The best place to start is our [website](/), where you can [download a wallet](/wallets) — my personal favorites are the desktop and mobile wallets. We’ll soon be supporting hardware wallets like Ledger. There’s also [Alph.land](http://Alph.land), where you can explore the various decentralized applications (dApps) on Alephium. For developers, our [open-source docs](https://docs.alephium.org/) are a great resource.
 
-- - -
+---
 
 If you are interested or have extra questions, you are welcome to reach out on our [Discord](/discord), or in the [Alephium Telegram channel](https://t.me/alephiumgroup). Don’t forget to follow [@alephium on Twitter](https://twitter.com/alephium) to stay up-to-date.

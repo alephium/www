@@ -1,8 +1,8 @@
 ---
 title: Builders Uncut — Linx Labs
-description: "Builders Uncut: Meet Linx Labs, an in-depth interview conducted
+description: 'Builders Uncut: Meet Linx Labs, an in-depth interview conducted
   around the Athens Builders Meetup showcasing innovative projects in the
-  Alephium ecosystem."
+  Alephium ecosystem.'
 seoDescription: Alephium Builders Uncut Linx Labs - Athens Builders Meetup
   interview. In-depth developer showcase and ecosystem project spotlight.
 date: 2024-08-18T17:57:20.687Z
@@ -11,7 +11,7 @@ featuredImage: image_0f5b4b5f54.png
 
 _This series of interviews was conducted at the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
-Here, Radu, from [Linx Labs](https://x.com/linx_labs) shares the latest developments on [Linx OTC](https://linxotc.com/), plans for the upcoming lending platform and his vision for the future of Alephium’s DeFi Ecosystem. Find the full (slightly edited) transcript below if you prefer reading.
+Here, Radu, from [Linx Labs](https://x.com/linx_labs) shares the latest developments on [Linx OTC](https://otc.linxlabs.org/), plans for the upcoming lending platform and his vision for the future of Alephium’s DeFi Ecosystem. Find the full (slightly edited) transcript below if you prefer reading.
 
 [Video](https://www.youtube.com/watch?v=yfgOOLGjp4E)
 
@@ -19,7 +19,7 @@ Here, Radu, from [Linx Labs](https://x.com/linx_labs) shares the latest developm
 
 I’m Radu, a co-founder of Linx. We are building on Alephium. We started as a DeFi project and began our journey a couple of years ago on a different chain, where we built a [wallet](https://linxlabs.org/wallet). We solved the user experience problem effectively, so users no longer have to care about shards and can enjoy a smooth experience sending tokens. We then switched to Alephium to make everything easier.
 
-Recently, we launched a platform called [Linx OTC](https://linxotc.com/), allowing users to swap tokens without a middleman. Alephium enables this unique feature, allowing OTC trades without an escrow, which is quite amazing. Next, we are working on a peer-to-peer lending platform, simplifying lending to the bare minimum. You can choose the duration of the loan, the collateral as a lender, and the interest you want to earn. It’s as simple as possible.
+Recently, we launched a platform called [Linx OTC](https://otc.linxlabs.org/), allowing users to swap tokens without a middleman. Alephium enables this unique feature, allowing OTC trades without an escrow, which is quite amazing. Next, we are working on a peer-to-peer lending platform, simplifying lending to the bare minimum. You can choose the duration of the loan, the collateral as a lender, and the interest you want to earn. It’s as simple as possible.
 
 ![](image_9def256581.png)
 
@@ -60,6 +60,7 @@ It’s not necessarily about building faster or better, but fostering connection
 Go Alephium, that’s all.
 
 ---
+
 Links:
 
 Website: [https://app.linxlabs.org](https://app.linxlabs.org/)  
