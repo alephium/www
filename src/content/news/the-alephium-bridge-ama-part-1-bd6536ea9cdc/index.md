@@ -1,7 +1,7 @@
 ---
 date: 2023-12-15T16:29:25.284000Z
 description: "The Alephium Bridge AMA Part 1: Learn about the bridge's architecture, security model, and how it enables seamless cross-chain transfers between Alephium and Ethereum."
-seoDescription: "Alephium Bridge AMA Part 1 - architecture, security model, cross-chain transfers. Twitter Space interview with team insights on bridge development."
+seoDescription: 'Alephium Bridge AMA Part 1 - architecture, security model, cross-chain transfers. Twitter Space interview with team insights on bridge development.'
 featuredImage: image_1f582eb3bd.jpg
 title: The Alephium Bridge AMA — part 1
 ---
@@ -38,7 +38,7 @@ While it may seem that our development process for the bridge was lengthy, it in
 
 Hongchao: Undoubtedly, ensuring security has been a challenging aspect of this project, given its critical role in our infrastructure. We’re optimistic that developing in Alephium now offers an even more positive experience. When looking back a year, the scenario was different due to the lesser maturity of tools, some complexities in the VM, and the language, which added an extra layer of challenge.
 
-I feel that this project has also provided a sense of validation. While it’s one thing to discuss the potential of [our VM](/news/post/meet-alphred-a-virtual-machine-like-no-others-85ce86540025) (Alphred), [language](https://docs.alephium.org/ralph/getting-started) (Ralph), and the capabilities of our [state-of-the-art UTXO](/news/post/an-introduction-to-the-stateful-utxo-model-8de3b0f76749), the [Asset Permission System (APS)](/news/post/alephium-s-aps-eliminating-evm-token-approval-risks-5407e7e70a33), and the [language’s conciseness](https://twitter.com/alephium/status/1643961985841905664), it’s entirely another to witness these elements being effectively utilized in a serious software application. Successfully deploying this software has indeed been a significant achievement that reinforces our confidence in the technology we’ve developed.
+I feel that this project has also provided a sense of validation. While it’s one thing to discuss the potential of [our VM](/news/post/meet-alphred-a-virtual-machine-like-no-others-85ce86540025) (Alphred), [language](https://docs.alephium.org/ralph/) (Ralph), and the capabilities of our [state-of-the-art UTXO](/news/post/an-introduction-to-the-stateful-utxo-model-8de3b0f76749), the [Asset Permission System (APS)](/news/post/alephium-s-aps-eliminating-evm-token-approval-risks-5407e7e70a33), and the [language’s conciseness](https://twitter.com/alephium/status/1643961985841905664), it’s entirely another to witness these elements being effectively utilized in a serious software application. Successfully deploying this software has indeed been a significant achievement that reinforces our confidence in the technology we’ve developed.
 
 **Vladimir: My next question is for Maud because you have been on the other side of the experience of the bridge, and you have worked on the ops and legal part of it. How have you managed the legal aspects of the bridge? How did you make it so that it just works for normal people?**
 

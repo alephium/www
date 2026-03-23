@@ -1,7 +1,7 @@
 ---
 date: 2023-08-28T15:19:59.729000Z
-description: "Builders Highlight #3: Meet Ayin, showcasing innovative projects built on Alephium that deliver unique experiences and real utility for users in the ecosystem."
-seoDescription: "Alephium Builders Highlight #3 Ayin - innovative projects on Alephium blockchain. Developer showcase and ecosystem project spotlight."
+description: 'Builders Highlight #3: Meet Ayin, showcasing innovative projects built on Alephium that deliver unique experiences and real utility for users in the ecosystem.'
+seoDescription: 'Alephium Builders Highlight #3 Ayin - innovative projects on Alephium blockchain. Developer showcase and ecosystem project spotlight.'
 spotlight: false
 featuredImage: image_c5a50dcd6b.jpeg
 title: 'Builders Highlight #3: Ayin'
@@ -35,7 +35,7 @@ As I have always said, I like to be early on things when building before a chain
 
 Alephium has it all. [New novel tech](/),</a> a great team, a [great community](/discord), and not yet crowded or full of scams.
 
-The team has been instrumental in allowing us to understand [Ralph](https://docs.alephium.org/ralph/getting-started) and build properly and giving us direct access to all of them in all facets of development from SC dev to marketing, which is more than probably any core L1 team can say for themselves on any chain. Big ups to them!
+The team has been instrumental in allowing us to understand [Ralph](https://docs.alephium.org/ralph/) and build properly and giving us direct access to all of them in all facets of development from SC dev to marketing, which is more than probably any core L1 team can say for themselves on any chain. Big ups to them!
 
 ## What tech stack did you use in your project?
 

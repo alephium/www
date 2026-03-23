@@ -1,14 +1,15 @@
 ---
-title: "Alephium #1 Hackathon — Pioneers!"
+title: 'Alephium #1 Hackathon — Pioneers!'
 description: Join Alephium's first hackathon with $70,000 in prizes! Build
   dApps, tooling, and interoperability solutions on Alephium's sharded
   blockchain platform.
-seoDescription: "Alephium #1 Hackathon Pioneers - $70,000 prize pool for dApps,
-  tooling & interoperability. Feb 12-26, 2024. Apply now!"
+seoDescription: 'Alephium #1 Hackathon Pioneers - $70,000 prize pool for dApps,
+  tooling & interoperability. Feb 12-26, 2024. Apply now!'
 date: 2024-01-19T14:13:31.154Z
 spotlight: false
 featuredImage: image_f92c0445fe.jpg
 ---
+
 Applications are open, [apply now](https://docs.google.com/forms/d/e/1FAIpQLSdDsa1CwJeg-fxrWb1gVWefP4iJoNoZwNe0PNwk94GqmcMkHg/viewform?usp=sharing)!
 
 _TL;DR — The Alephium hackathon will take place from 12th to 26th February 2024. With a prize pool of up to_ **_\$70,000 in ALPH_** _tokens, sponsored by Alephium,_ [Bitmain](https://www.bitmain.com/)_, the_ [Blockflow Alliance DAO](https://twitter.com/Blockflow_DAO)_,_ [Cetacean Capital](https://cetacean.capital/) _&_ [Dappnode](https://dappnode.com/)_. It will reward teams building across 3 main categories (dApps, tooling & interoperability) as well as offering bounties for solo hackers & teams!_
@@ -77,9 +78,9 @@ The general goal of bounties is to provide improvements to the user/developer ex
 
 Enhancing/creating developer documentation. (Create a PR in the relevant repo)
 
-- 1 — improve the [SDK doc](hhttps://docs.alephium.org/sdk/getting-started)
+- 1 — improve the [SDK doc](https://docs.alephium.org/sdk/getting-started)
 - 2 — improve the [dApp recipes doc](https://docs.alephium.org/dapps/tutorials/dapp-recipes/)
-- 3 — improve the [Ralph language doc](https://docs.alephium.org/ralph/getting-started)
+- 3 — improve the [Ralph language doc](https://docs.alephium.org/ralph/)
 
 **Coding PoC**
 
@@ -209,10 +210,10 @@ For the doc, start here!
 
 - Developer [onboarding thread](https://twitter.com/alephium/status/1752028946399654269)
 - The full [documentation](http://docs.alephium.org)
-- Getting started with RALPH Alephium’s [programming language](https://docs.alephium.org/ralph/getting-started)
-- RALPH [Documentation](https://docs.alephium.org/ralph/getting-started) & Tokens [Documentation](https://docs.alephium.org/dapps/concepts/tokens/)
+- Getting started with RALPH Alephium’s [programming language](https://docs.alephium.org/ralph/)
+- RALPH [Documentation](https://docs.alephium.org/ralph/) & Tokens [Documentation](https://docs.alephium.org/dapps/concepts/tokens/)
 - dApps [Proof of concepts (PoC)](https://docs.alephium.org/dapps/ecosystem#prototypes) (DEX, NFT marketplace, bridge)
-- Workshop \#1 with h0ngchao [How to Build a Faucet](/news/post/first-developer-workshop-build-a-token-faucet-a6bb2aa7bf68) — [video](https://www.youtube.com/watch?time_continue=2&amp;v=YblUxEcXQuY&amp;embeds_widget_referrer=https%3A%2F%2Fmedium.com%2F%40alephium%2Ffirst-developer-workshop-build-a-token-faucet-a6bb2aa7bf68&amp;embeds_referring_euri=https%3A%2F%2Fcdn.embedly.com%2F&amp;embeds_referring_origin=https%3A%2F%2Fcdn.embedly.com&amp;source_ve_path=Mjg2NjY&amp;feature=emb_logo)
+- Workshop \#1 with h0ngchao [How to Build a Faucet](/news/post/first-developer-workshop-build-a-token-faucet-a6bb2aa7bf68) — [video](https://www.youtube.com/watch?time_continue=2&v=YblUxEcXQuY&embeds_widget_referrer=https%3A%2F%2Fmedium.com%2F%40alephium%2Ffirst-developer-workshop-build-a-token-faucet-a6bb2aa7bf68&embeds_referring_euri=https%3A%2F%2Fcdn.embedly.com%2F&embeds_referring_origin=https%3A%2F%2Fcdn.embedly.com&source_ve_path=Mjg2NjY&feature=emb_logo)
 - Workshop \#2 with h0ngchao [How to implement friend.tech on Alephium, part 1](/news/post/second-developer-workshop-re-implementing-friend-tech-s-smart-contract-in-ralph-806e3f6551aa) and [part 2](/news/post/second-developer-workshop-re-implementing-friend-tech-s-smart-contract-in-ralph-part-2-8f9959742b47) — [video 1](https://www.youtube.com/watch?v=gi2sxvB9Np8), [video 2](https://www.youtube.com/watch?v=Xgt3_HwoUOc)
 
 To know more about Alephium in general, start [here](https://x.com/alephium/status/1726249933374959943?s=20) and in our [docs](https://docs.alephium.org/)! And read more [there](https://x.com/alephium/status/1744795616818217432?s=20)! Our [bible of content is here](https://docs.alephium.org/misc/Content), and our [Medium is here](https://medium.com/@alephium).
