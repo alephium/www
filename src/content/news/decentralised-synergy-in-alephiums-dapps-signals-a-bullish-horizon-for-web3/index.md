@@ -6,7 +6,7 @@ description: Tired of Web3 hype fading into centralized silos? Alephium's Head
 seoDescription: Explore how Alephium's decentralized dApp ecosystem, featuring
   Powfi, Linx, and Aura, creates interconnected DeFi utility and a bullish
   horizon for Web3.
-date: 2026-03-19T17:00:00.000Z
+date: 2026-03-23T20:30:00.000Z
 spotlight: true
 featuredImage: article-decentralized- synergy-2-.png
 relatedPosts:
