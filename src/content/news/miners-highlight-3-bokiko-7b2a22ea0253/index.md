@@ -1,9 +1,11 @@
 ---
-date: 2024-02-02T16:21:00.513000Z
-description: "Miners' Highlight #3: Meet Bokiko, showcasing the contributions of miners who maintain Alephium's blockchain integrity and functionality."
-seoDescription: "Alephium Miners Highlight #3 Bokiko - miner contributions showcase. Blockchain integrity and functionality maintenance spotlight."
+title: "Miners’ Highlight #3: Bokiko"
+description: "Miners' Highlight #3: Meet Bokiko, showcasing the contributions of
+  miners who maintain Alephium's blockchain integrity and functionality."
+seoDescription: "Alephium Miners Highlight #3 Bokiko - miner contributions
+  showcase. Blockchain integrity and functionality maintenance spotlight."
+date: 2024-02-02T16:21:00.513Z
 featuredImage: image_d6e64d41b3.jpg
-title: 'Miners’ Highlight #3: Bokiko'
 ---
 
 _The Alephium blockchain, like many decentralized networks, relies heavily on the contributions of miners to maintain its integrity and functionality. Recognizing the significance of these contributors, we are launching a series of articles titled “Miners’ Highlight.” By focusing on their contributions, challenges, and experiences, we aim to better understand the mining process and its importance. You can find_ [#1 here](/news/post/miners-highlight-1-cedric-crispin-c4ed456f6d10) _and_ [#2 here](/news/post/miners-highlight-1-jake-aka-hiram-abiff-a8833307f316)_._
@@ -30,7 +32,7 @@ https://twitter.com/Bokiko_io/status/1489685936665411586
 
 ## **You run the cloudiko.io mining pool. What motivated you to add Alephium to it?**
 
-My partner [@cloudbasedme](https://twitter.com/CloudBasedMe) and I founded [cloudiko.io](http://cloudiko.io) out of our shared enthusiasm for expanding our crypto journey. As miners ourselves, we’ve always been keen on supporting networks and had our share of observations and issues with various pools we mined in. This led us to the idea of creating a pool that we personally mine in. The concept was simple: anyone who joins us is essentially joining our hashrate, ensuring they receive the same level of service we provide to our own rigs. In a gesture of goodwill, we even made the pool fee-free for the first six months, starting June 2023.
+My partner [@cloudbasedme](https://twitter.com/CloudBasedMe) and I founded cloudiko.io out of our shared enthusiasm for expanding our crypto journey. As miners ourselves, we’ve always been keen on supporting networks and had our share of observations and issues with various pools we mined in. This led us to the idea of creating a pool that we personally mine in. The concept was simple: anyone who joins us is essentially joining our hashrate, ensuring they receive the same level of service we provide to our own rigs. In a gesture of goodwill, we even made the pool fee-free for the first six months, starting June 2023.
 
 Our focus on Alephium, which we mine personally, was a key reason for adding it to our pool. It was about contributing to the decentralization of hashrate and offering miners diverse options. We handle everything from running the pool to providing support. My partner, in particular, deserves special credit as the technical brain of this project.
 
