@@ -1,9 +1,13 @@
 ---
-date: 2023-07-26T14:16:32.447000Z
-description: "First Developer Workshop: Learn how to create a token faucet and deploy it on Alephium using the blockchain's development tooling and Ralph smart contract language."
-seoDescription: "Alephium First Developer Workshop - build token faucet tutorial. Learn Ralph smart contract development and Alephium deployment using dev tooling."
-featuredImage: image_fa86c86a57.jpg
 title: First Developer Workshop — Build a Token Faucet
+description: "First Developer Workshop: Learn how to create a token faucet and
+  deploy it on Alephium using the blockchain's development tooling and Ralph
+  smart contract language."
+seoDescription: Alephium First Developer Workshop - build token faucet tutorial.
+  Learn Ralph smart contract development and Alephium deployment using dev
+  tooling.
+date: 2023-07-26T14:16:32.447Z
+featuredImage: image_fa86c86a57.jpg
 ---
 How to create a token faucet and deploy it on Alephium
 
@@ -97,7 +101,7 @@ The smart contract is deployed to the testnet by running the deployment command,
 
 [Alephium Docs](https://docs.alephium.org/): Information about how to develop dApps on Alephium
 
-[Building a dApp from Scratch](https://docs.alephium.org/dapps/build-dapp-from-scratch/#whats-next): a step-by-step tutorial on how to build a dApp on Alephium
+[Building a dApp from Scratch](https://docs.alephium.org/dapps/): a step-by-step tutorial on how to build a dApp on Alephium
 
 [Discord](/discord): The developer channel is a great place to ask questions about Alephium.
 
