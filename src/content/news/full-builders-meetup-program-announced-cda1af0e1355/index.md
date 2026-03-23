@@ -1,9 +1,12 @@
 ---
-date: 2024-06-20T10:56:41.449000Z
-description: "Full Builders Meetup Program Announced! Discover the exciting program for the first builders meetup taking place IRL in Athens on June 21–23."
-seoDescription: "Alephium Full Builders Meetup Program announced - Athens June 21-23. First builders meetup IRL program and exciting agenda revealed."
-featuredImage: image_2bae752aa5.png
 title: Full Builders Meetup Program Announced!
+description: Full Builders Meetup Program Announced! Discover the exciting
+  program for the first builders meetup taking place IRL in Athens on June
+  21–23.
+seoDescription: Alephium Full Builders Meetup Program announced - Athens June
+  21-23. First builders meetup IRL program and exciting agenda revealed.
+date: 2024-06-20T10:56:41.449Z
+featuredImage: image_2bae752aa5.png
 ---
 _As we are getting closer from the start of the first builders meetup, which will take place IRL in Athens on June 21–23, we’re very happy to showcase the full & exciting program that we’ll go through with all participants!_
 
@@ -11,7 +14,7 @@ _As we are getting closer from the start of the first builders meetup, which wil
 
 More than 60 people are coming to Athens! 10 of the core-contributors will be there, as well as some of your well-known community mods and members of the Blockflow DAO.
 
-But, more importantly, more than 50 devs/builders from your favorite dApps & services will be there: [Ayin](https://x.com/ayincoin), [Pyreplay](https://x.com/PyreplayDotCom)/[Alph.land](https://x.com/fugashu_codes), [Ulam](https://x.com/ulamlabs), [Invariant](https://x.com/invariant_labs), [Linx](https://x.com/linx_labs), [Sezame](https://x.com/SesameWallet), [Alphbanx](https://x.com/alephiumbank), [Deadrare](https://x.com/DeadRareNFT), [Mobula](https://mobula.io/chain/alephium), [NTV](https://x.com/notrustverif), [AlphPro](https://x.com/Alphdotpro), [Alphaga](https://x.com/AlphagaMarket), [GoldcastleClub](https://x.com/GoldCastleClub), [Shin](https://x.com/Shin_Inu_Aleph), [Alephium Battle](https://x.com/AlephiumBattle), [HodlAlph](https://x.com/PhoenixErgo) & [GigaCheng](https://x.com/gigacheng)!
+But, more importantly, more than 50 devs/builders from your favorite dApps & services will be there: [Ayin](https://x.com/ayincoin), [Pyreplay](https://x.com/PyreplayDotCom)/[Alph.land](https://x.com/fugashu_codes), [Ulam](https://x.com/ulamlabs), [Invariant](https://x.com/invariant_labs), [Linx](https://x.com/linx_labs), [Sezame](https://x.com/SesameWallet), [Alphbanx](https://x.com/alephiumbank), [Deadrare](https://x.com/DeadRareNFT), [Mobula](https://docs.mobula.io/blockchains/alephium), [NTV](https://x.com/notrustverif), [AlphPro](https://x.com/Alphdotpro), [Alphaga](https://x.com/AlphagaMarket), [GoldcastleClub](https://x.com/GoldCastleClub), [Shin](https://x.com/Shin_Inu_Aleph), [Alephium Battle](https://x.com/AlephiumBattle), [HodlAlph](https://x.com/PhoenixErgo) & [GigaCheng](https://x.com/gigacheng)!
 
 And some friends, sponsors & partners will also be attending: [Bity](https://x.com/bity), [Nym](https://x.com/nymproject), [Blockflow DAO](https://x.com/Blockflow_DAO), [Ergo](https://x.com/ergo_platform), [Hearst](https://x.com/Hearst_io), [Antpool](https://x.com/AntPoolofficial) & [Hodling](http://hodling.ch).
 
@@ -55,7 +58,7 @@ _It’s checkin time, everyone can get accommodate at the Hotel. And we slowly m
 
 > 3:15 PM — Coffee break
 
-> _3:35 PM — _[Reed](https://x.com/0x_reed) _of_ [Alph.pro](http://alph.pro)_,_ [Alph Ducks](https://x.com/alph_ducks) _&_ [mintingti.me](http://mintingti.me)_ — \***\*On chain NFT\*\***s_
+> _3:35 PM — _[Reed](https://x.com/0x_reed) _of_ Alph.pro_,_ [Alph Ducks](https://x.com/alph_ducks) _&_ [mintingti.me](http://mintingti.me)_ — \***\*On chain NFT\*\***s_
 
 > _4:05 PM — _[Mobula](https://mobula.io/chain/alephium)\* — \***_How to work with Alephium blockchain data? Indexing & defi position tracking_**
 
