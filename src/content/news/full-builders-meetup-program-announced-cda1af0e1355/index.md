@@ -8,6 +8,7 @@ seoDescription: Alephium Full Builders Meetup Program announced - Athens June
 date: 2024-06-20T10:56:41.449Z
 featuredImage: image_2bae752aa5.png
 ---
+
 _As we are getting closer from the start of the first builders meetup, which will take place IRL in Athens on June 21–23, we’re very happy to showcase the full & exciting program that we’ll go through with all participants!_
 
 **Who’s attending?**
@@ -58,9 +59,9 @@ _It’s checkin time, everyone can get accommodate at the Hotel. And we slowly m
 
 > 3:15 PM — Coffee break
 
-> _3:35 PM — _[Reed](https://x.com/0x_reed) _of_ Alph.pro_,_ [Alph Ducks](https://x.com/alph_ducks) _&_ [mintingti.me](http://mintingti.me)_ — \***\*On chain NFT\*\***s_
+> _3:35 PM — _[Reed](https://x.com/0x_reed) _of_ Alph.pro*,* [Alph Ducks](https://x.com/alph_ducks) _&_ [mintingti.me](http://mintingti.me)_ — \***\*On chain NFT\*\***s_
 
-> _4:05 PM — _[Mobula](https://mobula.io/chain/alephium)\* — \***_How to work with Alephium blockchain data? Indexing & defi position tracking_**
+> _4:05 PM — Mobula — **How to work with Alephium blockchain data? Indexing & defi position tracking**_
 
 > _4:35 PM — _[IG Mos](https://x.com/IgMosqueira)\* — \***_How to structure a DEX_**
 

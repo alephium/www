@@ -1,7 +1,7 @@
 ---
 date: 2023-12-15T16:29:25.284000Z
 description: "The Alephium Bridge AMA Part 1: Learn about the bridge's architecture, security model, and how it enables seamless cross-chain transfers between Alephium and Ethereum."
-seoDescription: "Alephium Bridge AMA Part 1 - architecture, security model, cross-chain transfers. Twitter Space interview with team insights on bridge development."
+seoDescription: 'Alephium Bridge AMA Part 1 - architecture, security model, cross-chain transfers. Twitter Space interview with team insights on bridge development.'
 featuredImage: image_1f582eb3bd.jpg
 title: The Alephium Bridge AMA — part 1
 ---
@@ -12,7 +12,7 @@ _You can listen to the Twitter space itself_ [here](https://twitter.com/i/spaces
 
 ## Intro & bridge stats
 
-Over the past month (as of 12.7.23), we have observed a significant uptick in activity. This includes approximately 5,000 new live addresses and nearly 4,000 [wallet](/wallets) activations across both desktop and mobile platforms, excluding extensions. The statistics from [Ayin](https://ayin.app/) (our native DEX) indicate a trading volume exceeding \$3 million, over thousands of transactions. Additionally, the number [of $ALPH Ethereum holders](https://etherscan.io/token/0x590f820444fa3638e022776752c5eef34e2f89a6) is approaching a thousand. There has been almost 600 bridge transfers, amounting to a total value of \$2.5 million. The Total Value Locked (TVL) on the [Alephium Bridge](https://bridge.alephium.org/#/transfer), as reported by [DefiLlama](https://defillama.com/protocol/alephium-bridge), currently stands at \$1.8 million.
+Over the past month (as of 12.7.23), we have observed a significant uptick in activity. This includes approximately 5,000 new live addresses and nearly 4,000 [wallet](/wallets) activations across both desktop and mobile platforms, excluding extensions. The statistics from Ayin (our native DEX) indicate a trading volume exceeding \$3 million, over thousands of transactions. Additionally, the number [of $ALPH Ethereum holders](https://etherscan.io/token/0x590f820444fa3638e022776752c5eef34e2f89a6) is approaching a thousand. There has been almost 600 bridge transfers, amounting to a total value of \$2.5 million. The Total Value Locked (TVL) on the [Alephium Bridge](https://bridge.alephium.org/#/transfer), as reported by [DefiLlama](https://defillama.com/protocol/alephium-bridge), currently stands at \$1.8 million.
 
 ## The Alephium Bridge
 
@@ -38,7 +38,7 @@ While it may seem that our development process for the bridge was lengthy, it in
 
 Hongchao: Undoubtedly, ensuring security has been a challenging aspect of this project, given its critical role in our infrastructure. We’re optimistic that developing in Alephium now offers an even more positive experience. When looking back a year, the scenario was different due to the lesser maturity of tools, some complexities in the VM, and the language, which added an extra layer of challenge.
 
-I feel that this project has also provided a sense of validation. While it’s one thing to discuss the potential of [our VM](/news/post/meet-alphred-a-virtual-machine-like-no-others-85ce86540025) (Alphred), [language](https://docs.alephium.org/ralph/getting-started) (Ralph), and the capabilities of our [state-of-the-art UTXO](/news/post/an-introduction-to-the-stateful-utxo-model-8de3b0f76749), the [Asset Permission System (APS)](/news/post/alephium-s-aps-eliminating-evm-token-approval-risks-5407e7e70a33), and the [language’s conciseness](https://twitter.com/alephium/status/1643961985841905664), it’s entirely another to witness these elements being effectively utilized in a serious software application. Successfully deploying this software has indeed been a significant achievement that reinforces our confidence in the technology we’ve developed.
+I feel that this project has also provided a sense of validation. While it’s one thing to discuss the potential of [our VM](/news/post/meet-alphred-a-virtual-machine-like-no-others-85ce86540025) (Alphred), [language](https://docs.alephium.org/ralph/) (Ralph), and the capabilities of our [state-of-the-art UTXO](/news/post/an-introduction-to-the-stateful-utxo-model-8de3b0f76749), the [Asset Permission System (APS)](/news/post/alephium-s-aps-eliminating-evm-token-approval-risks-5407e7e70a33), and the [language’s conciseness](https://twitter.com/alephium/status/1643961985841905664), it’s entirely another to witness these elements being effectively utilized in a serious software application. Successfully deploying this software has indeed been a significant achievement that reinforces our confidence in the technology we’ve developed.
 
 **Vladimir: My next question is for Maud because you have been on the other side of the experience of the bridge, and you have worked on the ops and legal part of it. How have you managed the legal aspects of the bridge? How did you make it so that it just works for normal people?**
 
@@ -60,7 +60,7 @@ Another significant aspect of our work is the enhanced security of our model. Wh
 
 Personally, the success of the DEX has been highly motivating. We plan to develop more decentralized finance (DeFi) solutions in collaboration with the community. This approach is particularly beneficial for us as a smaller project, as collaborating with large centralized services like Coinbase or Binance can be challenging. Focusing on DeFi can resolve many issues associated with centralized services. Our commitment extends beyond the DEX; we aim to contribute to the building of a broader range of DeFi solutions to enhance our ecosystem and its capabilities.
 
-**Vladimir: I’d like to take this opportunity to give a shout-out to the team at** [Ayin](http://ayin.app)**. Their work has resulted in a highly effective and enjoyable swapping experience. And if you haven’t tried** [Rubber](https://docs.ayin.app/ayin/rubber) **yet, I recommend it — it’s quite an engaging and fun game, with a unique vibe that’s definitely worth experiencing.**
+**Vladimir: I’d like to take this opportunity to give a shout-out to the team at Ayin**. Their work has resulted in a highly effective and enjoyable swapping experience. And if you haven’t tried** [Rubber](https://docs.ayin.app/ayin/rubber) **yet, I recommend it — it’s quite an engaging and fun game, with a unique vibe that’s definitely worth experiencing.\*\*
 
 Cheng: The team has done a great job.
 

@@ -17,6 +17,7 @@ const RelatedPost = ({ slug }: { slug: string }) => {
             description
             spotlight
             featuredImage {
+              publicURL
               childImageSharp {
                 gatsbyImageData(width: 800)
               }

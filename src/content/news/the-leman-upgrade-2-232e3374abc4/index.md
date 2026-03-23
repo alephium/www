@@ -1,7 +1,7 @@
 ---
 date: 2022-12-20T15:47:15.162000Z
-description: "The Leman Upgrade #2: An intermediary update on the road to the Leman Upgrade, providing insights into the development progress and upcoming changes."
-seoDescription: "Alephium Leman Upgrade #2 - intermediary update on development progress. Road to Leman Upgrade insights and upcoming changes."
+description: 'The Leman Upgrade #2: An intermediary update on the road to the Leman Upgrade, providing insights into the development progress and upcoming changes.'
+seoDescription: 'Alephium Leman Upgrade #2 - intermediary update on development progress. Road to Leman Upgrade insights and upcoming changes.'
 featuredImage: image_1c78dbc4c1.jpg
 title: 'The Leman Upgrade #2'
 ---
@@ -18,7 +18,7 @@ An [NFT project prototype](https://alephium-nft.softfork.se/my-nfts) has been de
 
 `video: https://www.youtube.com/watch?v=UkpsI1JenNM`
 
-The **Alephium-Ethereum Bridge** is now fully functional on the devnet and has been deployed to the testnet. It is now possible to make token transfers using the [Bridge Portal](https://portal-bridge.wormhole-testnet.softfork.se/.). Track & follow its performance and metrics on this [website](https://monitoring.wormhole-testnet.softfork.se/d/-GcztLMnz/wormhole-testnet-v2?orgId=1&amp;from=now-5m&amp;to=now).
+The **Alephium-Ethereum Bridge** is now fully functional on the devnet and has been deployed to the testnet. It is now possible to make token transfers using the [Bridge Portal](https://portal-bridge.wormhole-testnet.softfork.se/.). Track & follow its performance and metrics on this [website](https://monitoring.wormhole-testnet.softfork.se/d/-GcztLMnz/wormhole-testnet-v2?orgId=1&from=now-5m&to=now).
 
 **What are the next steps?**
 
@@ -40,7 +40,7 @@ On the **front-end development**, a full write-up on the roadmap is coming very 
 
 **Users**: the next step is to upgrade your [wallet to the latest version](https://github.com/alephium/desktop-wallet/releases). That will ensure that you keep pace with the preparation for the Leman upgrade.
 
-**Developers** interested in the Leman Upgrade, and testing on the devnet (to use the NFT platform or to bridge tokens to/from ETH Goerli testnet), please reach out in the [#dev-general](https://discord.gg/6xqt5PTz7c) channel at Alephium’s discord server to start interacting with the core team and the new code! And you’ll find much to get started in our documentation [here](https://docs.alephium.org/dapps/getting-started/)!
+**Developers** interested in the Leman Upgrade, and testing on the devnet (to use the NFT platform or to bridge tokens to/from ETH Goerli testnet), please reach out in the [#dev-general](https://discord.gg/6xqt5PTz7c) channel at Alephium’s discord server to start interacting with the core team and the new code! And you’ll find much to get started in our documentation [here](https://docs.alephium.org/dapps/)!
 
 ### Let’s talk soon!
 

@@ -1,11 +1,12 @@
 ---
 date: 2022-08-30T12:53:03.942000Z
-description: "Technical exploration of block time and block size concepts in Alephium and blockchain technology, part of a comprehensive series on key blockchain fundamentals."
-seoDescription: "Alephium block time and block size technical guide - blockchain fundamentals series. Understanding blockchain performance metrics and technical concepts."
+description: 'Technical exploration of block time and block size concepts in Alephium and blockchain technology, part of a comprehensive series on key blockchain fundamentals.'
+seoDescription: 'Alephium block time and block size technical guide - blockchain fundamentals series. Understanding blockchain performance metrics and technical concepts.'
 spotlight: false
 featuredImage: image_2e664b2caf.png
 title: Block Time and Block Size
 ---
+
 A Technical Promenade, part 1
 
 > This is the first of a multiple-times-per-month series of articles on key concepts for understanding Alephium in particular and blockchains in general if you’re pondering on which chain to build your dApps, if you’re a curious crypto-traveler or a fellow decentralization enthusiast, welcome! We will start with simple concepts like block time and size, then travel through transactions-per-second, wander around time-to-finality, and venture into sharding land and so many other fascinating crypto territories…
@@ -54,4 +55,4 @@ And then you have a lot of other ways of doing things… For example, Monero has
 
 In part 2, coming later this month, since we now understand the frequency of blocks and the number of transactions they can contain, we are ready to calculate transaction velocity!
 
-Our next article will cover [TPS (Transactions Per Second).](/news/post/transactions-per-second-tps-f13217a49e39) Stay tuned on our [Twitter](https://twitter.com/alephium), [Discord](https://discord.gg/h7cXXy4FEY), [Telegram](https://t.me/Alephium_Announcement), or [Reddit](https://www.reddit.com/r/Alephium/) to see it fresh off the press!
+Our next article will cover [TPS (Transactions Per Second).](/news/post/transactions-per-second-tps-f13217a49e39) Stay tuned on our [Twitter](https://twitter.com/alephium), [Discord](/discord), [Telegram](https://t.me/Alephium_Announcement), or [Reddit](https://www.reddit.com/r/Alephium/) to see it fresh off the press!

@@ -1,7 +1,7 @@
 ---
 date: 2024-03-01T15:24:32.761000Z
-description: "Builders Highlight #8: Meet ngu.money, showcasing innovative DeFi projects built on Alephium that deliver unique experiences and real utility for users."
-seoDescription: "Alephium Builders Highlight #8 ngu.money - DeFi projects on Alephium blockchain. Developer showcase and ecosystem project spotlight."
+description: 'Builders Highlight #8: Meet ngu.money, showcasing innovative DeFi projects built on Alephium that deliver unique experiences and real utility for users.'
+seoDescription: 'Alephium Builders Highlight #8 ngu.money - DeFi projects on Alephium blockchain. Developer showcase and ecosystem project spotlight.'
 spotlight: false
 featuredImage: image_0408f23a12.jpg
 title: 'Builders Highlight #8: ngu.money'
@@ -45,7 +45,7 @@ We engage with the Alephium community through collaborative projects, events, an
 
 ## **Which projects or dApps built on Alephium & part of that ecosystem, are you most intrigued/excited about?**
 
-The team is intrigued by projects like ayin.app, which has facilitated \$NGU trading, and Deadrare, an NFT marketplace where NGU listed its first NFT collection, “[Alphabulls](https://deadrare.io/collection/alpha-bulls),” achieving instant success.
+The team is intrigued by projects like Ayin, which has facilitated \$NGU trading, and Deadrare, an NFT marketplace where NGU listed its first NFT collection, “[Alphabulls](https://deadrare.io/collection/alpha-bulls),” achieving instant success.
 
 ## **What’s your view on the ecosystem growth and evolution of the past few months? What are you looking forward to the most in Alephium?**
 

@@ -4,10 +4,6 @@ exchanges:
     description: A native bridge on Alephium that enhances interoperability with other blockchains.
     url: https://bridge.alephium.org
     logo: ../images/logos/alephium-bridge-logo.webp
-  - title: AYIN
-    description: Decentralized exchange built on Alephium.
-    url: https://www.ayin.app
-    logo: ../images/logos/ayin-logo.webp
   - title: Onramper
     description: A leading fiat-to-crypto on-ramp aggregator.
     url: https://buy.onramper.com/?mode=buy&onlyCryptos=alph_alph

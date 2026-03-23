@@ -121,9 +121,6 @@ const CustomPage = (props: PageProps) => {
                 <p>You can get ALPH here</p>
                 <ul>
                   <li>
-                    <SimpleLink url="https://www.ayin.app/swap">AYIN DEX</SimpleLink>
-                  </li>
-                  <li>
                     <SimpleLink url="https://www.elexium.finance">Elexium Finance DEX</SimpleLink>
                   </li>
                   <li>
