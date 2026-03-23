@@ -193,7 +193,7 @@ Now you can see your \$ALPH in your Wallet.
 
 **Using the “Redeem” section of the bridge**.
 
-If, for some reason, you left the bridge page before redeeming your tokens, you can always get your transaction hash from [https://explorer.testnet.alephium.org/](https://explorer.testnet.alephium.org/), and then click “Redeem” on the bridge page, paste it into the “source TX” field, and click “Recover.”
+If, for some reason, you left the bridge page before redeeming your tokens, you can always get your transaction hash from [https://testnet.alephium.org/](https://testnet.alephium.org/), and then click “Redeem” on the bridge page, paste it into the “source TX” field, and click “Recover.”
 
 ![](image_48e18dc248.png)
 
@@ -263,7 +263,7 @@ Your Alephium Wallet will show you a transaction to sign. Review and information
 
 ![](image_2ec097e1ef.png)
 
-You can verify the transaction on [https://explorer.testnet.alephium.org/](https://explorer.testnet.alephium.org/)
+You can verify the transaction on [https://testnet.alephium.org/](https://testnet.alephium.org/)
 
 **How to add ETH to your Browser Extension Wallet**
 
@@ -289,7 +289,7 @@ The token is now showing in your wallet.
 
 **Using the “Redeem” section of the bridge**.
 
-If, for some reason, you left the bridge page before redeeming your tokens, you can always get your transaction hash from [https://explorer.testnet.alephium.org/](https://explorer.testnet.alephium.org/), and then click “Redeem” on the bridge page, paste it into the “source TX” field, and click “Recover.”
+If, for some reason, you left the bridge page before redeeming your tokens, you can always get your transaction hash from [https://testnet.alephium.org/](https://testnet.alephium.org/), and then click “Redeem” on the bridge page, paste it into the “source TX” field, and click “Recover.”
 
 ![](image_7e368043d3.png)
 
@@ -301,7 +301,7 @@ To connect to the BSC Testnet, you will need a wallet. [Metamask](https://metama
 
 ![](image_27d29f0087.png)
 
-If you don’t have the BSC Testnet in your wallet, go to the [Chainlist website](https://chainlist.org/?search=BSC&amp;testnets=true) to add it. Then, connect your wallet, ensure the “include testnet” checkbox is checked, and click the “Add to Metamask” button.
+If you don’t have the BSC Testnet in your wallet, go to the [Chainlist website](https://chainlist.org/?search=BSC&testnets=true) to add it. Then, connect your wallet, ensure the “include testnet” checkbox is checked, and click the “Add to Metamask” button.
 
 ![](image_eba1e02c19.png)
 
@@ -377,7 +377,7 @@ When the transaction is confirmed on the blockchain, you can check the assets in
 
 **Using the “Redeem” section of the bridge**.
 
-If, for some reason, you left the bridge page before redeeming your tokens, you can always get your transaction hash from [https://explorer.testnet.alephium.org/](https://explorer.testnet.alephium.org/). Then, click “Redeem” on the bridge page, paste the tx hash into the “source TX” field, and click “Recover.”
+If, for some reason, you left the bridge page before redeeming your tokens, you can always get your transaction hash from [https://testnet.alephium.org/](https://testnet.alephium.org/). Then, click “Redeem” on the bridge page, paste the tx hash into the “source TX” field, and click “Recover.”
 
 ![](image_91c4f90c23.png)
 
@@ -453,7 +453,7 @@ Your Alephium Wallet will show you a transaction to sign. Review and information
 
 ![](image_55a53f9a1c.png)
 
-You can verify the transaction on [https://explorer.testnet.alephium.org/](https://explorer.testnet.alephium.org/)
+You can verify the transaction on [https://testnet.alephium.org/](https://testnet.alephium.org/)
 
 **How to add ETH to your Browser Extension Wallet**
 
@@ -483,7 +483,7 @@ The token is now showing in your wallet.
 
 **Using the “Redeem” section of the bridge**.
 
-If, for some reason, you left the bridge page before redeeming your tokens, you can always get your transaction hash from [https://explorer.testnet.alephium.org/](https://explorer.testnet.alephium.org/), and then click “Redeem” on the bridge page, paste it into the “source TX” field, and click “Recover.”
+If, for some reason, you left the bridge page before redeeming your tokens, you can always get your transaction hash from [https://testnet.alephium.org/](https://testnet.alephium.org/), and then click “Redeem” on the bridge page, paste it into the “source TX” field, and click “Recover.”
 
 ![](image_5a1656b698.png)
 

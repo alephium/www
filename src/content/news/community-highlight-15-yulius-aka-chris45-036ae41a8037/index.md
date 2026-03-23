@@ -1,7 +1,7 @@
 ---
 date: 2023-11-23T13:21:57.897000Z
-description: "Community Highlight #15: Meet Yulius aka Chris45, an active member of the Alephium community showcasing their contributions, passion, and dedication to the ecosystem."
-seoDescription: "Alephium Community Highlight #15 Yulius Chris45 - active community member showcase. Contributions, passion, and dedication to blockchain ecosystem."
+description: 'Community Highlight #15: Meet Yulius aka Chris45, an active member of the Alephium community showcasing their contributions, passion, and dedication to the ecosystem.'
+seoDescription: 'Alephium Community Highlight #15 Yulius Chris45 - active community member showcase. Contributions, passion, and dedication to blockchain ecosystem.'
 featuredImage: image_099d09e906.png
 title: 'Community Highlight #15, Yulius aka Chris45'
 archived: true
@@ -47,7 +47,7 @@ because Oheka also gave me this tip (to be on other social media) on the \#loung
 
 ## What excites you about the future of Alephium?
 
-I can’t wait to see the Alephium ecosystem become world-famous! It already started with [Ayin](http://ayin.app) (first community DEX). The core contributors have done amazing things in developing wallets for mobile devices, and wallet extensions for web browsers, and worked with [Zealy](https://zealy.io/c/alephium/questboard) & B[lockflow DAO](https://twitter.com/Blockflow_DAO), and I know there are at least 2 users on Discord who are building NFT Marketplaces.
+I can’t wait to see the Alephium ecosystem become world-famous! It already started with Ayin (first community DEX). The core contributors have done amazing things in developing wallets for mobile devices, and wallet extensions for web browsers, and worked with [Zealy](https://zealy.io/c/alephium/questboard) & B[lockflow DAO](https://twitter.com/Blockflow_DAO), and I know there are at least 2 users on Discord who are building NFT Marketplaces.
 
 My hope is that Alephium will increasingly become the largest crypto project in the world!
 

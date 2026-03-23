@@ -37,6 +37,7 @@ export const query = graphql`
           description
           spotlight
           featuredImage {
+            publicURL
             childImageSharp {
               gatsbyImageData(width: 800)
             }
@@ -62,6 +63,7 @@ export const query = graphql`
           description
           spotlight
           featuredImage {
+            publicURL
             childImageSharp {
               gatsbyImageData(width: 800)
             }
@@ -191,11 +193,19 @@ export const NewsCard = ({ post }: NewsCardProps) => {
           )}
         </ArticleMeta>
         <ImageContainer>
-          <GatsbyImageWrapper
-            image={post.frontmatter.featuredImage.childImageSharp?.gatsbyImageData}
-            alt={post.frontmatter.title ?? ''}
-            style={{ width: '100%', height: '200px' }}
-          />
+          {post.frontmatter.featuredImage.childImageSharp?.gatsbyImageData ? (
+            <GatsbyImageWrapper
+              image={post.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
+              alt={post.frontmatter.title ?? ''}
+              style={{ width: '100%', height: '200px' }}
+            />
+          ) : (
+            <img
+              src={post.frontmatter.featuredImage.publicURL ?? ''}
+              alt={post.frontmatter.title ?? ''}
+              style={{ width: '100%', height: '200px', objectFit: 'cover' }}
+            />
+          )}
         </ImageContainer>
         <TextElement isBodySmall>
           <h4 style={{ marginBottom: '10px' }}>{post.frontmatter.title}</h4>

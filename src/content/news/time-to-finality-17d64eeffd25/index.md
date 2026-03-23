@@ -1,10 +1,11 @@
 ---
 date: 2022-09-20T14:05:54.857000Z
-description: "Technical exploration of time to finality concepts in Alephium and blockchain technology, part 3 of a comprehensive series on key blockchain fundamentals."
-seoDescription: "Alephium time to finality technical guide - blockchain fundamentals series part 3. Understanding finality concepts and transaction confirmation."
+description: 'Technical exploration of time to finality concepts in Alephium and blockchain technology, part 3 of a comprehensive series on key blockchain fundamentals.'
+seoDescription: 'Alephium time to finality technical guide - blockchain fundamentals series part 3. Understanding finality concepts and transaction confirmation.'
 featuredImage: image_1a832ca4ff.jpg
 title: Time to Finality
 ---
+
 A Technical Promenade, part 3
 
 _This is part of a series of regular articles on key concepts for understanding [Alephium](/) in particular and blockchains in general. If you’re pondering on which chain to build your dApps, if you’re a curious crypto-traveler, or a fellow decentralization enthusiast, welcome!_
@@ -43,4 +44,4 @@ In summary, it is desirable not only that a transaction is sent as fast as possi
 
 A blockchain throughput has limits set by the metrics we discussed so far: the block’s size, frequency, the network ability to put the transactions in these said blocks, and so on… In the next article, we will discuss strategies to increase the throughput and explain in more detail one of them: Sharding!
 
-Stay tuned on our [Twitter](https://twitter.com/alephium), [Discord](https://discord.gg/h7cXXy4FEY), [Telegram](https://t.me/Alephium_Announcement), or [Reddit](https://www.reddit.com/r/Alephium/) to see it fresh off the press!
+Stay tuned on our [Twitter](https://twitter.com/alephium), [Discord](/discord), [Telegram](https://t.me/Alephium_Announcement), or [Reddit](https://www.reddit.com/r/Alephium/) to see it fresh off the press!

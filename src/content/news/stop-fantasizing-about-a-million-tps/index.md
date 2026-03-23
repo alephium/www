@@ -13,7 +13,8 @@ relatedPosts:
   - do-we-really-need-more-centralized-l1s/index
   - the-nakamoto-coefficient-a-horoscope-metric-for-blockchains/index
 ---
-Op-ed by **[Carla](www.x.com/carlitacrypto_)**, Head of Ecosystem, Alephium
+
+Op-ed by **[Carla](https://x.com/carlitaacrypto_)**, Head of Ecosystem, Alephium
 
 **Hello and welcome! This is the first column article from Carla, our new Head of Ecosystem. She’ll be using her vast experience in the blockchain industry to explore important topics and discussions.**
 

@@ -1,7 +1,7 @@
 ---
 date: 2023-02-15T13:42:16.309000Z
-description: "Community Highlight #6: Meet Waldi — Zkit/beats, an active member of the Alephium community showcasing their contributions, passion, and dedication to the ecosystem."
-seoDescription: "Alephium Community Highlight #6 Waldi Zkit/beats - active community member showcase. Contributions, passion, and dedication to blockchain ecosystem."
+description: 'Community Highlight #6: Meet Waldi — Zkit/beats, an active member of the Alephium community showcasing their contributions, passion, and dedication to the ecosystem.'
+seoDescription: 'Alephium Community Highlight #6 Waldi Zkit/beats - active community member showcase. Contributions, passion, and dedication to blockchain ecosystem.'
 featuredImage: image_e16d660d23.jpg
 title: 'Community Highlight #6, Waldi — Zkit/beats'
 archived: true
@@ -33,7 +33,7 @@ I’m excited about the team spirit, the honesty, and the detailed work of the t
 
 ## What excites you about the future of Alephium?
 
-After 3 years of research, [1 year of mainnet](/news/post/one-year-of-mainnet-b7ed5d3024ee), and the [Leman Upgrade](/news/post/announcing-the-leman-network-upgrade-c01a81e65f0e), it will be interesting to follow the next step. How will it be accepted in the crypto world? I would like to hear the opinions of devs and what they say about Alephiums tech. Like [stateful UTXO,](/news/post/an-introduction-to-the-stateful-utxo-model-8de3b0f76749) [Alphred](/news/post/meet-alphred-a-virtual-machine-like-no-others-85ce86540025), sharding, [Ralph,](https://docs.alephium.org/ralph/getting-started) [smart contracts,](https://docs.alephium.org/dapps/getting-started) [proof of less work](/news/post/tech-talk-1-proof-of-less-work-ama-3d5afbf78c71), and how is the dev experience to build smart contracts and dApps on Alephium? I look forward to seeing how the ecosystem will grow and how big it will be in the next 3 years!
+After 3 years of research, [1 year of mainnet](/news/post/one-year-of-mainnet-b7ed5d3024ee), and the [Leman Upgrade](/news/post/announcing-the-leman-network-upgrade-c01a81e65f0e), it will be interesting to follow the next step. How will it be accepted in the crypto world? I would like to hear the opinions of devs and what they say about Alephiums tech. Like [stateful UTXO,](/news/post/an-introduction-to-the-stateful-utxo-model-8de3b0f76749) [Alphred](/news/post/meet-alphred-a-virtual-machine-like-no-others-85ce86540025), sharding, [Ralph,](https://docs.alephium.org/ralph/) [smart contracts,](https://docs.alephium.org/dapps/) [proof of less work](/news/post/tech-talk-1-proof-of-less-work-ama-3d5afbf78c71), and how is the dev experience to build smart contracts and dApps on Alephium? I look forward to seeing how the ecosystem will grow and how big it will be in the next 3 years!
 
 ## How do you contribute to the Alephium ecosystem?
 
