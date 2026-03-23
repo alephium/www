@@ -21,4 +21,4 @@ You can find the report on their website: [https://inference.ag/blog/2022-10-09-
 
 Our code is publicly available at [https://github.com/alephium](https://github.com/alephium)
 
-And you can find us on [Twitter](https://twitter.com/alephium), [Discord](https://discord.gg/h7cXXy4FEY), [Telegram](https://t.me/Alephium_Announcement), or [Reddit](https://www.reddit.com/r/Alephium/)!
+And you can find us on [Twitter](https://twitter.com/alephium), [Discord](/discord), [Telegram](https://t.me/Alephium_Announcement), or [Reddit](https://www.reddit.com/r/Alephium/)!

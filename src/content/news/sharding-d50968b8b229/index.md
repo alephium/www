@@ -1,11 +1,12 @@
 ---
 date: 2023-02-22T13:42:39.451000Z
-description: "Technical exploration of sharding concepts in Alephium and blockchain technology, part 4 of a comprehensive series on key blockchain fundamentals."
-seoDescription: "Alephium sharding technical guide - blockchain fundamentals series part 4. Understanding sharding concepts and blockchain scalability."
+description: 'Technical exploration of sharding concepts in Alephium and blockchain technology, part 4 of a comprehensive series on key blockchain fundamentals.'
+seoDescription: 'Alephium sharding technical guide - blockchain fundamentals series part 4. Understanding sharding concepts and blockchain scalability.'
 spotlight: false
 featuredImage: image_ace28503b1.jpeg
 title: Sharding
 ---
+
 A Technical Promenade, part 4
 
 _This is part of a series of regular articles on key concepts for understanding [Alephium](/) in particular and blockchains in general. If you’re pondering on which chain to build your dApps, if you’re a curious crypto-traveler, or a fellow decentralization enthusiast, welcome! You can find the previous articles in the series here. (_[#1](/news/post/block-time-and-block-size-16e37292444f)_,_ [#2](/news/post/transactions-per-second-tps-f13217a49e39)_,_ [#3](/news/post/time-to-finality-17d64eeffd25)_)_
@@ -48,4 +49,4 @@ Alephium’s unique sUTXO model allows it to run smart contracts in conjunction 
 
 Someone must apply all these rules and do all computational work. Receive the transactions, verify their correctness, broadcast them, etc… the task list is huge! In the next article, we will learn more about the component responsible for it all: the full node!
 
-Stay tuned on our [Twitter](https://twitter.com/alephium), [Discord](https://discord.gg/h7cXXy4FEY), [Telegram](https://t.me/Alephium_Announcement), or [Reddit](https://www.reddit.com/r/Alephium/) to see it fresh off the press!
+Stay tuned on our [Twitter](https://twitter.com/alephium), [Discord](/discord), [Telegram](https://t.me/Alephium_Announcement), or [Reddit](https://www.reddit.com/r/Alephium/) to see it fresh off the press!

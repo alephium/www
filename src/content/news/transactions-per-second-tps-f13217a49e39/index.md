@@ -1,7 +1,7 @@
 ---
 date: 2022-09-13T12:39:56.929000Z
-description: "Technical exploration of transactions per second (TPS) concepts in Alephium and blockchain technology, part 2 of a comprehensive series on key blockchain fundamentals."
-seoDescription: "Alephium TPS transactions per second technical guide - blockchain fundamentals series part 2. Understanding TPS metrics and performance."
+description: 'Technical exploration of transactions per second (TPS) concepts in Alephium and blockchain technology, part 2 of a comprehensive series on key blockchain fundamentals.'
+seoDescription: 'Alephium TPS transactions per second technical guide - blockchain fundamentals series part 2. Understanding TPS metrics and performance.'
 featuredImage: image_47ac4eb526.jpg
 title: Transactions Per Second (TPS)
 ---
@@ -74,4 +74,4 @@ Another issue with relying on TPS to evaluate the network speed is that it consi
 
 ### Next step: “What is finality?”
 
-In part 3, as we saw that speed is not enough to declare a transaction as final, we will explore the concept of finality and how each blockchain defines if and the period of time needed for it. [Our next article will cover TTF (Time To Finality)](/news/post/time-to-finality-17d64eeffd25). Stay tuned on our [Twitter](https://twitter.com/alephium), [Discord](https://discord.gg/h7cXXy4FEY), [Telegram](https://t.me/Alephium_Announcement), or [Reddit](https://www.reddit.com/r/Alephium/) to see it fresh off the press!
+In part 3, as we saw that speed is not enough to declare a transaction as final, we will explore the concept of finality and how each blockchain defines if and the period of time needed for it. [Our next article will cover TTF (Time To Finality)](/news/post/time-to-finality-17d64eeffd25). Stay tuned on our [Twitter](https://twitter.com/alephium), [Discord](/discord), [Telegram](https://t.me/Alephium_Announcement), or [Reddit](https://www.reddit.com/r/Alephium/) to see it fresh off the press!
