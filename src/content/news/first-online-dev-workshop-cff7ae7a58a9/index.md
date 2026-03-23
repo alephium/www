@@ -1,15 +1,18 @@
 ---
-date: 2023-07-11T15:29:33.781000Z
-description: "First Online Dev Workshop: Learn how to use the SDK to write a simple dApp with Hongchao and Polarker. Join the interactive development session!"
-seoDescription: "Alephium First Online Dev Workshop - learn SDK dApp development with Hongchao and Polarker. Interactive development session and tutorial."
-featuredImage: image_720f550b88.png
 title: First Online Dev Workshop!
+description: "First Online Dev Workshop: Learn how to use the SDK to write a
+  simple dApp with Hongchao and Polarker. Join the interactive development
+  session!"
+seoDescription: Alephium First Online Dev Workshop - learn SDK dApp development
+  with Hongchao and Polarker. Interactive development session and tutorial.
+date: 2023-07-11T15:29:33.781Z
+featuredImage: image_720f550b88.png
 ---
 “Using the SDK to write a simple dApp” with [@h0ngcha0](https://github.com/h0ngcha0) & [@polarker](https://github.com/polarker)
 
 _When?_ Saturday, July 15th — 3PM to 4PM-ish _Where?_ [meet.google.com/fqi-uwpq-aio](http://meet.google.com/fqi-uwpq-aio) _Who?_ [@h0ngcha0](https://github.com/h0ngcha0) & [@polarker](https://github.com/polarker)
 
-This is a workshop for developers looking to dive into [RALPH](https://docs.alephium.org/ralph/getting-started/) and how to get started writing code in production on Alephium.
+This is a workshop for developers looking to dive into [RALPH](https://docs.alephium.org/ralph/) and how to get started writing code in production on Alephium.
 
 Are you:
 
