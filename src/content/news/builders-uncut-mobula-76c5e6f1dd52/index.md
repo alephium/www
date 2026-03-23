@@ -1,14 +1,17 @@
 ---
-date: 2024-08-14T15:56:46.468000Z
-description: "Builders Uncut: Meet Mobula, an in-depth interview conducted around the Athens Builders Meetup showcasing innovative projects in the Alephium ecosystem."
-seoDescription: "Alephium Builders Uncut Mobula - Athens Builders Meetup interview. In-depth developer showcase and ecosystem project spotlight."
-featuredImage: image_4c1492d719.png
 title: Builders Uncut — Mobula
+description: "Builders Uncut: Meet Mobula, an in-depth interview conducted
+  around the Athens Builders Meetup showcasing innovative projects in the
+  Alephium ecosystem."
+seoDescription: Alephium Builders Uncut Mobula - Athens Builders Meetup
+  interview. In-depth developer showcase and ecosystem project spotlight.
+date: 2024-08-14T15:56:46.468Z
+featuredImage: image_4c1492d719.png
 ---
 
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
 
-Here, we have a conversation with Teo & Sacha & about [Mobula](http://mobula.io), a data product that integrates various chains, including Alephium. Find the full (slightly edited) transcript below if you prefer reading!
+Here, we have a conversation with Teo & Sacha & about [Mobula](https://mobula.io), a data product that integrates various chains, including Alephium. Find the full (slightly edited) transcript below if you prefer reading!
 
 `video: https://www.youtube.com/watch?v=JkHRwwAn-II`
 
