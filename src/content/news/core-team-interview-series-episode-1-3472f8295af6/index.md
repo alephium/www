@@ -1,10 +1,13 @@
 ---
-date: 2022-03-09T15:36:33.257000Z
-description: "Core Team Interview Series Episode 1: Meet the humans building the front-end of Alephium, showcasing the talented developers behind the user interface and experience."
-seoDescription: "Alephium Core Team Interview Episode 1 - front-end developers showcase. Meet the humans building Alephium's user interface and experience."
+title: Core team interview series. Episode 1
+description: "Core Team Interview Series Episode 1: Meet the humans building the
+  front-end of Alephium, showcasing the talented developers behind the user
+  interface and experience."
+seoDescription: Alephium Core Team Interview Episode 1 - front-end developers
+  showcase. Meet the humans building Alephium's user interface and experience.
+date: 2022-03-09T15:36:33.257Z
 spotlight: false
 featuredImage: image_90cd721d79.jpeg
-title: Core team interview series. Episode 1
 ---
 Presenting the humans building the Front-end
 
@@ -12,11 +15,11 @@ Presenting the humans building the Front-end
 
 For its team, Alephium is privileging agility and efficiency over hyper-growth. We do not stay at a human size because we think it is more efficient, but because Alephium strives to be a decentralised, community driven project. This means the project in itself is much larger than a team can ever be. Communication, trust, openness and transparency is paramount in such a set-up.
 
-In fact, we haven’t communicated much about ourselves so far because we think _who we are_ is less relevant than _what we deliver_. To nevertheless shed some light on who we are and what we do, we decided to share a little about ourselves with the community through a small series of interviews.
+In fact, we haven’t communicated much about ourselves so far because we think *who we are* is less relevant than *what we deliver*. To nevertheless shed some light on who we are and what we do, we decided to share a little about ourselves with the community through a small series of interviews.
 
 **We start off the series with a focus on the Front-end team. It’s our pleasure to introduce you to Mika, Ilias & Lee!**
 
----
+- - -
 
 ## Mika
 
@@ -38,7 +41,7 @@ Yes! A bit of everything really. Running, biking, geeking, designing and drawing
 
 ### **Got links?**
 
-[https://www.linkedin.com/in/mika%C3%ABl-vaivre-05526337](https://www.linkedin.com/in/mika%C3%ABl-vaivre-05526337)
+<https://www.linkedin.com/in/mika%C3%ABl-vaivre-05526337>
 
 ### **How/when did you come across crypto?**
 
@@ -58,11 +61,11 @@ I’m the front-end product guy! (chief of product, for those who care about tit
 
 Efficiency, robustness and accessibility.
 
----
+- - -
 
 ## Ilias
 
-![](image_40289bd0c0.jpeg)
+![](ilias-squared.webp)
 
 Ilias
 
@@ -80,15 +83,15 @@ I love messing around with knobs. Particularly, knobs that control some sort of 
 
 ### **Got links?**
 
-[https://www.linkedin.com/in/iliastrichopoulos/](https://www.linkedin.com/in/iliastrichopoulos/)   
-[https://iliascreates.com](https://iliascreates.com)  
-[https://twitter.com/\_nop33](https://twitter.com/_nop33)  
-[https://github.com/nop33](https://github.com/nop33)  
-[https://soundcloud.com/djfetamin](https://soundcloud.com/djfetamin)
+<https://www.linkedin.com/in/iliastrichopoulos/> \
+<https://nop33.com/>\
+[https://twitter.com/_nop33](https://twitter.com/_nop33)\
+<https://github.com/nop33>\
+<https://soundcloud.com/djfetamin>
 
 ### **How/when did you come across crypto?**
 
-I don’t remember the exact year, but I first heard of Bitcoin while I was still studying (if only I’d have been smart enough to mine some back then…) so that must have been somewhere between 2009–2013. I think it was around 2011. Then around 2013, I remember that there was an online scientific project that if you’d donate your CPU they would reward you with XRP. I donated some CPU for a few months and got some coins worth in total something like \$30. Then, I proceeded to completely forget about them for about 4 years. 2017 and a good friend of mine gets hired in a crypto company which reminded me of some coins somewhere in my subconsciousness. After an evening of scrapping old email backups, I found them, traded them for BTC and ETH, and that’s how it basically started :) I, later on, got hired by the same crypto company.
+I don’t remember the exact year, but I first heard of Bitcoin while I was still studying (if only I’d have been smart enough to mine some back then…) so that must have been somewhere between 2009–2013. I think it was around 2011. Then around 2013, I remember that there was an online scientific project that if you’d donate your CPU they would reward you with XRP. I donated some CPU for a few months and got some coins worth in total something like $30. Then, I proceeded to completely forget about them for about 4 years. 2017 and a good friend of mine gets hired in a crypto company which reminded me of some coins somewhere in my subconsciousness. After an evening of scrapping old email backups, I found them, traded them for BTC and ETH, and that’s how it basically started :) I, later on, got hired by the same crypto company.
 
 ### **How did you come across Alephium and what attracted you to the project?**
 
@@ -104,7 +107,7 @@ I am a frontend engineer and my responsibility is to create beautiful, performan
 
 I believe that blockchain technology has a lot to offer and that it’s here to stay. Apart from the technological challenges that some of the smartest people in the space are currently keeping themselves busy with, one of the clunkiest things at the moment is user experience. I want to dedicate my technical and human skills towards improving the experience people have when interacting with blockchains so that their true benefits can shine. Part of Alephium’s mission is to make this technology more accessible and usable than it is today. A for Adoption. A for Alephium. 🚀
 
----
+- - -
 
 ## Lee
 
@@ -126,7 +129,7 @@ I’m currently heavily invested in “code CAD” in my hobby life. It’s a ne
 
 ### **How/when did you come across crypto?**
 
-I came across cryptocurrency back around 2013 when Bitcoin was worth \$100-ish. I started playing with it in 2015.
+I came across cryptocurrency back around 2013 when Bitcoin was worth $100-ish. I started playing with it in 2015.
 
 ### **How did you come across Alephium and what attracted you to the project?**
 
@@ -142,6 +145,6 @@ I’m a full stack developer in the truest sense of the meaning: from assembly t
 
 These are my utmost important points when it comes to Alephium: developer safety and documentation.
 
----
+- - -
 
 This concludes the first chapter of three in this series. In the next publication we’ll get acquainted with the people responsible for [operations, marketing and communication,](/news/post/core-team-interview-series-episode-2-bec6e6908d2f) followed by [the folks building the Node.](/news/post/core-team-interview-series-episode-3-64b6dacc1459)
