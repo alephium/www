@@ -1,7 +1,7 @@
 ---
 date: 2024-03-12T10:20:23.845000Z
-description: "Community Highlight #16: Meet Mikael, an active member of the Alephium community showcasing their contributions, passion, and dedication to the ecosystem."
-seoDescription: "Alephium Community Highlight #16 Mikael - active community member showcase. Contributions, passion, and dedication to blockchain ecosystem."
+description: 'Community Highlight #16: Meet Mikael, an active member of the Alephium community showcasing their contributions, passion, and dedication to the ecosystem.'
+seoDescription: 'Alephium Community Highlight #16 Mikael - active community member showcase. Contributions, passion, and dedication to blockchain ecosystem.'
 spotlight: false
 featuredImage: image_da6bf8d8d8.jpg
 title: 'Community Highlight #16, Mikael'
@@ -34,7 +34,7 @@ Another thing I love seeing is the hash rate increasing. While it won’t happen
 
 #### **Which projects and dapps are you excited about?**
 
-[Ayin](http://ayin.app) is one of the major projects I’ve always followed, and I am excited to see what kind of new features they will be rolling out in the future. AlphPad looks to be another promising one for kickstarting new projects on Alephium.
+Ayin is one of the major projects I’ve always followed, and I am excited to see what kind of new features they will be rolling out in the future. AlphPad looks to be another promising one for kickstarting new projects on Alephium.
 
 And how could I not mention the only Number Go Up, which has just been slaying it recently!
 

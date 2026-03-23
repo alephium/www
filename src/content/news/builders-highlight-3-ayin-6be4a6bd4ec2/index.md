@@ -9,13 +9,13 @@ title: 'Builders Highlight #3: Ayin'
 
 _Our ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience and provide real utility for the users. In the Builders Highlight series, these builders will share more about their projects, thoughts, and insights on why building on Alephium! You can find_ [#1 here](/news/post/builders-highlights-1-sezame-wallet-ddb4aeb61881) _and_ [#2 here](/news/post/builders-highlights-2-alphpaca-nfts-99c69775f04c)_._
 
-This episode is about [Ayin](http://ayin.app), the first DEX available on Alephium Mainnet. We thank Dr Jekyll and 0dd431c8 for the nice interview!
+This episode is about Ayin, the first DEX available on Alephium Mainnet. We thank Dr Jekyll and 0dd431c8 for the nice interview!
 
 ## Tell us a little bit about your project. What is it, what does it do, and how does it interact with the Alephium blockchain?
 
 ![](image_b7debe4600.png)
 
-Our project is a [DEX](https://www.ayin.app/). It allows users to trade anything people list as a pair on it, and also the tokens we approve if they are on Alephium L1.
+Our project is a DEX. It allows users to trade anything people list as a pair on it, and also the tokens we approve if they are on Alephium L1.
 
 Our DEX interacts through multiple smart contracts, and the user can earn yield as a Liquidity Provider, be a staker, a sale participant or a trader.
 
@@ -91,7 +91,7 @@ I want to see what novel approaches devs can take within these things as well as
 
 Absolutely reach out to the core team. Get involved in the discord dev channels and community channels. Most of all don’t be scared by new language/environment/non-evm. _“0dd”_ picked it up very quickly after the Lehman upgrade and with the team explaining things that weren’t obvious in dm. Most of all, go for it and good Luck!
 
-_Thanks, 0dd431c8 and drjekyll5376, for your answers! Alephium is thrilled to have such talent builders in the community! You can find the AYIN DEX_ [here](https://www.ayin.app/)_!_
+_Thanks, 0dd431c8 and drjekyll5376, for your answers! Alephium is thrilled to have such talent builders in the community!_!\_
 
 ---
 

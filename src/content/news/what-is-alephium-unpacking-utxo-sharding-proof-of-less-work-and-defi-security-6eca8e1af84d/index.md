@@ -42,7 +42,7 @@ I’m essentially the COO, responsible for everything outside of development and
 
 > What has the evolution of DeFi on Alephium been like?
 
-**Maud**: Alephium supported smart contracts from day one of the mainnet launch, but the ecosystem was less developed at first. Over time, we’ve improved our SDK and virtual machine, leading to our first network upgrade in March 2023. Since then, we’ve seen a significant expansion, with the launch of our [first decentralized exchange (DEX)](http://ayin.app) in summer 2023, followed by [NFT marketplaces](http://deadrare.io), [launchpads](https://alphpad.com/), and more. We’ve also built a bridge to Ethereum, allowing major stablecoins like USDT and USDC to be used in our ecosystem, which boosted our total value locked (TVL).
+**Maud**: Alephium supported smart contracts from day one of the mainnet launch, but the ecosystem was less developed at first. Over time, we’ve improved our SDK and virtual machine, leading to our first network upgrade in March 2023. Since then, we’ve seen a significant expansion, with the launch of our first decentralized exchange (DEX) in summer 2023, followed by [NFT marketplaces](http://deadrare.io), [launchpads](https://alphpad.com/), and more. We’ve also built a bridge to Ethereum, allowing major stablecoins like USDT and USDC to be used in our ecosystem, which boosted our total value locked (TVL).
 
 > What are some of the most exciting upcoming projects in the Alephium ecosystem?
 

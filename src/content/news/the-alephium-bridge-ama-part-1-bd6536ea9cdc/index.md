@@ -12,7 +12,7 @@ _You can listen to the Twitter space itself_ [here](https://twitter.com/i/spaces
 
 ## Intro & bridge stats
 
-Over the past month (as of 12.7.23), we have observed a significant uptick in activity. This includes approximately 5,000 new live addresses and nearly 4,000 [wallet](/wallets) activations across both desktop and mobile platforms, excluding extensions. The statistics from [Ayin](https://ayin.app/) (our native DEX) indicate a trading volume exceeding \$3 million, over thousands of transactions. Additionally, the number [of $ALPH Ethereum holders](https://etherscan.io/token/0x590f820444fa3638e022776752c5eef34e2f89a6) is approaching a thousand. There has been almost 600 bridge transfers, amounting to a total value of \$2.5 million. The Total Value Locked (TVL) on the [Alephium Bridge](https://bridge.alephium.org/#/transfer), as reported by [DefiLlama](https://defillama.com/protocol/alephium-bridge), currently stands at \$1.8 million.
+Over the past month (as of 12.7.23), we have observed a significant uptick in activity. This includes approximately 5,000 new live addresses and nearly 4,000 [wallet](/wallets) activations across both desktop and mobile platforms, excluding extensions. The statistics from Ayin (our native DEX) indicate a trading volume exceeding \$3 million, over thousands of transactions. Additionally, the number [of $ALPH Ethereum holders](https://etherscan.io/token/0x590f820444fa3638e022776752c5eef34e2f89a6) is approaching a thousand. There has been almost 600 bridge transfers, amounting to a total value of \$2.5 million. The Total Value Locked (TVL) on the [Alephium Bridge](https://bridge.alephium.org/#/transfer), as reported by [DefiLlama](https://defillama.com/protocol/alephium-bridge), currently stands at \$1.8 million.
 
 ## The Alephium Bridge
 
@@ -60,7 +60,7 @@ Another significant aspect of our work is the enhanced security of our model. Wh
 
 Personally, the success of the DEX has been highly motivating. We plan to develop more decentralized finance (DeFi) solutions in collaboration with the community. This approach is particularly beneficial for us as a smaller project, as collaborating with large centralized services like Coinbase or Binance can be challenging. Focusing on DeFi can resolve many issues associated with centralized services. Our commitment extends beyond the DEX; we aim to contribute to the building of a broader range of DeFi solutions to enhance our ecosystem and its capabilities.
 
-**Vladimir: I’d like to take this opportunity to give a shout-out to the team at** [Ayin](http://ayin.app)**. Their work has resulted in a highly effective and enjoyable swapping experience. And if you haven’t tried** [Rubber](https://docs.ayin.app/ayin/rubber) **yet, I recommend it — it’s quite an engaging and fun game, with a unique vibe that’s definitely worth experiencing.**
+**Vladimir: I’d like to take this opportunity to give a shout-out to the team at Ayin**. Their work has resulted in a highly effective and enjoyable swapping experience. And if you haven’t tried** [Rubber](https://docs.ayin.app/ayin/rubber) **yet, I recommend it — it’s quite an engaging and fun game, with a unique vibe that’s definitely worth experiencing.\*\*
 
 Cheng: The team has done a great job.
 
