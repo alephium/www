@@ -60,11 +60,19 @@ const NewsPostTemplate = (props: PageProps<Queries.NewsPostBySlugQuery>) => {
                 <h1>{post?.frontmatter?.title}</h1>
               </TextElement>
 
-              <GatsbyImageWrapper
-                image={post?.frontmatter?.featuredImage?.childImageSharp?.gatsbyImageData}
-                alt={post?.frontmatter?.title ?? ''}
-                style={{ width: '100%', height: 'auto', marginBottom: 'var(--spacing-6)' }}
-              />
+              {post?.frontmatter?.featuredImage?.childImageSharp?.gatsbyImageData ? (
+                <GatsbyImageWrapper
+                  image={post.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
+                  alt={post?.frontmatter?.title ?? ''}
+                  style={{ width: '100%', height: 'auto', marginBottom: 'var(--spacing-6)' }}
+                />
+              ) : (
+                <img
+                  src={post?.frontmatter?.featuredImage?.publicURL ?? ''}
+                  alt={post?.frontmatter?.title ?? ''}
+                  style={{ width: '100%', height: 'auto', marginBottom: 'var(--spacing-6)' }}
+                />
+              )}
               <TextElement isSmall dangerouslySetInnerHTML={{ __html: post?.html || '' }} itemProp="articleBody" />
             </ArticleStyled>
 
