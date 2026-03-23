@@ -1,9 +1,13 @@
 ---
-date: 2022-12-21T14:16:06.820000Z
-description: "DiffBomb Day Postmortem: Analysis of the December 21st, 2022 incident that affected Alephium's network difficulty adjustment mechanism and block production."
-seoDescription: "Alephium DiffBomb Day postmortem - December 21st, 2022 incident analysis. Network difficulty adjustment mechanism and block production investigation."
-featuredImage: image_c961ca7340.png
 title: DiffBomb Day Postmortem
+description: "DiffBomb Day Postmortem: Analysis of the December 21st, 2022
+  incident that affected Alephium's network difficulty adjustment mechanism and
+  block production."
+seoDescription: Alephium DiffBomb Day postmortem - December 21st, 2022 incident
+  analysis. Network difficulty adjustment mechanism and block production
+  investigation.
+date: 2022-12-21T14:16:06.820Z
+featuredImage: image_c961ca7340.png
 ---
 
 **TL;DR**
@@ -34,7 +38,7 @@ A bit before 4am CET, [Cheng Wang shared in the Discord](https://discord.com/cha
 
 ![](image_4d6cc7d908.png)
 
-The [difficulty bomb](https://github.com/alephium/dev-alephium/blob/6ab14d5161b95dacec6b14c47b4f2a8591264920/flow/src/test/scala/org/alephium/flow/core/ChainDifficultyAdjustmentSpec.scala) was triggered on December 8th, 2022, exactly 1 year and 1 month after mainnet launch (which happened at 3:54PM CET on November 8th, 2021).
+The difficulty bomb was triggered on December 8th, 2022, exactly 1 year and 1 month after mainnet launch (which happened at 3:54PM CET on November 8th, 2021).
 
 The Difficulty Bomb is a mechanism [designed](https://www.nicehash.com/blog/post/the-ethereum-difficulty-bomb-and-its-effects-on-mining-rewards) to ensure coordination on a protocol upgrade at least once every 13 months in the case of Alephium. It was configured to be automatically pushed every time an upgrade happens. The [Leman Upgrade](/news/post/announcing-the-leman-network-upgrade-c01a81e65f0e), coming in early 2023, got more ambitious than anticipated and therefore was not completed in the adjustment window.
 
@@ -42,14 +46,14 @@ The DiffBomb was implemented in the early days of the Alephium network. It was n
 
 **The remediation**
 
-As soon as the issue was identified, the Alephium dev team started to work on a [patch](https://github.com/alephium/dev-alephium/pull/784) to upgrade the full node code with two objectives:
+As soon as the issue was identified, the Alephium dev team started to work on a patch to upgrade the full node code with two objectives:
 
 - Shifting back to the difficulty that was prevalent before the DiffBomb triggering,
 - Removing the DiffBomb.
 
 At 10:27AM CET, a [publication](https://twitter.com/alephium/status/1601146526583037953) informed the community of what was coming, and at 2:40PM CET a [detailed next steps roadmap](https://twitter.com/alephium/status/1601210162676568065) was released.
 
-After intensive testing & code review, the [patch](https://github.com/alephium/dev-alephium/pull/784) (including an activation timestamp setup for 8PM CET) was released and [announced](https://twitter.com/alephium/status/1601250719180259333?s=20&amp;t=XS5jD7GJWtkrx6VS0BoswQ) a bit after 5PM CET.
+After intensive testing & code review, the patch (including an activation timestamp setup for 8PM CET) was released and [announced](https://twitter.com/alephium/status/1601250719180259333?s=20&amp;t=XS5jD7GJWtkrx6VS0BoswQ) a bit after 5PM CET.
 
 ![](image_3b57a04bf4.jpg)
 
@@ -67,7 +71,7 @@ _Run more full nodes:_ Ensure that more people in the dev team have a full node 
 
 _Expose the difficulty metric in the full node:_ To bring more transparency and ease future analysis, we want to make it easier to [see the difficulty](https://github.com/alephium/alephium/issues/806) at any point in time, directly from the full node.
 
-_Document more:_ It was always the plan to document the technology and code more, and the team has started a [significant](/news/post/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301) [effort](https://docs.alephium.org/dapps/getting-started) in that regard. Alephium team will up the ante here, and provide more documentation.
+_Document more:_ It was always the plan to document the technology and code more, and the team has started a [significant](/news/post/tech-talk-1-the-ultimate-guide-to-proof-of-less-work-the-universe-and-everything-ba70644ab301) [effort](https://docs.alephium.org/) in that regard. Alephium team will up the ante here, and provide more documentation.
 
 _Communicate more:_ The constant communication has been useful to minimize disruption to all parties involved. The community support, questioning, presence and stimulating challenges have been humbling and amazingly helpful.
 
