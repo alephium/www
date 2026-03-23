@@ -1,9 +1,12 @@
 ---
-date: 2023-05-26T12:34:26.671000Z
-description: "Builders Highlight: Meet Sahhar, showcasing innovative projects built on Alephium that deliver unique experiences and real utility for users in the ecosystem."
-seoDescription: "Alephium Builders Highlight Sahhar - innovative projects on Alephium blockchain. Developer showcase and ecosystem project spotlight."
+title: "Builders Highlight: Sahhar"
+description: "Builders Highlight: Meet Sahhar, showcasing innovative projects
+  built on Alephium that deliver unique experiences and real utility for users
+  in the ecosystem."
+seoDescription: Alephium Builders Highlight Sahhar - innovative projects on
+  Alephium blockchain. Developer showcase and ecosystem project spotlight.
+date: 2023-05-26T12:34:26.671Z
 featuredImage: image_f807a06471.png
-title: 'Builders Highlight: Sahhar'
 ---
 _Alephium’s ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience and provide real utility for the users. In the Builders Highlight series, these builders will share more about their projects and also their thoughts and insights on why building on Alephium!_
 
@@ -11,7 +14,7 @@ _Alephium’s ecosystem thrives with developers building amazing stuff on top of
 
 ---
 
-The first builder in the series is **Sahhar**, the community developer behind the [Sahhar Mobile Wallet](https://github.com/sahharYoucef/alephium_wallet) available on the [Google Play store](https://play.google.com/store/apps/details?id=com.sahhar.sahhar_wallet). It features advanced security options, like multisig management, but don’t take our word for it, let’s see what Sahhar has to say about his project:
+The first builder in the series is **Sahhar**, the community developer behind the [Sahhar Mobile Wallet](https://github.com/sahharYoucef/alephium_wallet). It features advanced security options, like multisig management, but don’t take our word for it, let’s see what Sahhar has to say about his project:
 
 ## Tell us a little bit about your project. What is it, what does it, and how does it interact with the Alephium blockchain?
 
@@ -27,7 +30,7 @@ I used [Flutter/Dart,](https://flutter.dev/) which is a framework created by Goo
 
 ## What features are you most proud of?
 
-The multisig wallet! It’s still using the [node API](https://docs.alephium.org/dapps/public-services/#node-and-explorer-apis) to sign the transaction, but I’ll make the algorithm run locally soon.
+The multisig wallet! It’s still using the [node API](https://docs.alephium.org/infrastructure/public-services/#node-and-explorer-apis) to sign the transaction, but I’ll make the algorithm run locally soon.
 
 `video: https://www.youtube.com/watch?v=uAseUydyddw`
 
@@ -45,7 +48,7 @@ DeFi is one of the strongest use cases for blockchain technology, and as Alephiu
 
 ## Lastly, what advice would you give to someone looking to build on Alephium, based on your experience?
 
-My advice is for devs to [find out how to build](https://docs.alephium.org/dapps/build-dapp-from-scratch) on Alephium. There are a lot of good opportunities for building interesting stuff! Alephium is giving rewards for interesting and good projects, so they have a nice opportunity to mirror projects from other chains to Alephium while benefiting from Alephium’s unique chain features, like high speed and low transaction fees.
+My advice is for devs to [find out how to build](https://docs.alephium.org/full-node/getting-started/) on Alephium. There are a lot of good opportunities for building interesting stuff! Alephium is giving rewards for interesting and good projects, so they have a nice opportunity to mirror projects from other chains to Alephium while benefiting from Alephium’s unique chain features, like high speed and low transaction fees.
 
 Thanks, Sahhar for your answers! Alephium is thrilled to have such talent builders in the community! You can find Sahhar on [GitHub](https://github.com/sahharYoucef) or [Twitter](https://twitter.com/SahharYoucef), or in our [Discord](/discord)!
 
