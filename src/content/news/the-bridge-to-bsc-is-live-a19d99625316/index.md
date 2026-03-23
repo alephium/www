@@ -28,11 +28,7 @@ The Alephium Bridge now supports Binance Smart Chain (BSC)! This means you can n
 
 ## The Faucet
 
-New to Alephium? Get started with our testnet faucet:
-
-1. **Visit the faucet**: Go to [faucet.alephium.org](https://faucet.alephium.org)
-2. **Enter your address**: Provide your Alephium wallet address
-3. **Request tokens**: Get free testnet ALPH tokens to explore the ecosystem
+New to Alephium? Get started with our [testnet faucet](https://docs.alephium.org/infrastructure/public-services/#testnet-faucet):
 
 ## I'm new, coming from BSC/BNB — What do I do in $ALPH's ecosystem?
 
