@@ -1,10 +1,13 @@
 ---
-date: 2024-03-30T16:25:24.920000Z
-description: "Builders Highlight #9: Meet Mobula, showcasing innovative data and analytics projects built on Alephium that deliver unique experiences and real utility for users."
-seoDescription: "Alephium Builders Highlight #9 Mobula - data analytics projects on Alephium blockchain. Developer showcase and ecosystem project spotlight."
+title: "Builders Highlight #9: Mobula"
+description: "Builders Highlight #9: Meet Mobula, showcasing innovative data and
+  analytics projects built on Alephium that deliver unique experiences and real
+  utility for users."
+seoDescription: "Alephium Builders Highlight #9 Mobula - data analytics projects
+  on Alephium blockchain. Developer showcase and ecosystem project spotlight."
+date: 2024-03-30T16:25:24.920Z
 spotlight: false
 featuredImage: image_55f9265a02.png
-title: 'Builders Highlight #9: Mobula'
 ---
 
 _Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real utility for users. In the Builders Highlight series, they share more about their projects, thoughts, and insights on why building on Alephium. You can find_ [#1 here](/news/post/builders-highlights-1-sezame-wallet-ddb4aeb61881)_,_ [#2 here](/news/post/builders-highlights-2-alphpaca-nfts-99c69775f04c), [#3 here](/news/post/builders-highlight-3-ayin-6be4a6bd4ec2), [#4 here](/news/post/builders-highlight-4-no-trust-verify-9ea495ca826f), [#5 here](/news/post/builders-highlight-5-deadrare-d5ff90d6161e), [#6 here](/news/post/builders-highlight-6-what-the-duck-0aedc602ecfd), [#7 here](/news/post/builders-highlight-7-alphpad-bbd4f4a34fd5), _and_ [#8 here](/news/post/builders-highlight-8-ngu-money-f8bf05e36e99)_!_
@@ -19,7 +22,7 @@ We are based in France, more specifically in Toulouse, the city of aeronautics a
 
 I generally dedicate my days and nights to building and leading Mobula, learning more about blockchain technology, and improving my coding skills.
 
-#### How did “[Mobula.io](http://mobula.io/)” come to be?
+#### How did Mobula.io come to be?
 
 Mobula was established in the last quarter of 2022 after noticing discrepancies between the asset values listed by CMC and CG and their actual values on the blockchains. To share real values on our app, we developed specialized tools and accumulated extensive know-how for data collection. As other projects and companies expressed interest in this data, we decided to offer it through our APIs.
 
@@ -95,7 +98,7 @@ Telegram: [https://t.me/MobulaFi](https://t.me/MobulaFi)
 
 Mobula is looking to recruit three to five developers. If you would like to join the team or suggest developers who could add value to Mobula, please contact Sacha at [contact@mobulalabs.org](mailto:contact@mobulalabs.org) or [https://t.me/NBMSacha](https://t.me/NBMSacha).
 
-Thank you, Mobula team, for your answers! Alephium is thrilled to have such ambitious builders in the community! You can find the Mobula official site [here](http://mobula.io), and we wish Mobula fruitful ventures ahead!
+Thank you, Mobula team, for your answers! Alephium is thrilled to have such ambitious builders in the community!
 
 ---
 

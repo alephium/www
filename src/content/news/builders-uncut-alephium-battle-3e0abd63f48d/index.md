@@ -1,13 +1,16 @@
 ---
-date: 2024-09-12T09:52:36.624000Z
-description: "Builders Uncut: Meet Alephium Battle, an in-depth interview conducted around the Athens Builders Meetup showcasing innovative projects in the Alephium ecosystem."
-seoDescription: "Alephium Builders Uncut Alephium Battle - Athens Builders Meetup interview. In-depth developer showcase and ecosystem project spotlight."
-featuredImage: image_8ce8d2d172.png
 title: Builders Uncut — Alephium Battle
+description: "Builders Uncut: Meet Alephium Battle, an in-depth interview
+  conducted around the Athens Builders Meetup showcasing innovative projects in
+  the Alephium ecosystem."
+seoDescription: Alephium Builders Uncut Alephium Battle - Athens Builders Meetup
+  interview. In-depth developer showcase and ecosystem project spotlight.
+date: 2024-09-12T09:52:36.624Z
+featuredImage: image_8ce8d2d172.png
 ---
 *This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!*
 
-Here, development team members Lorenzo and Eduardo discuss their backgrounds in tech and crypto, their passion for gaming, and the inspiration behind their project, [Alephium Battle](https://alephium-battle.vercel.app/). They share insights on the game’s development, the success of their first tournament, and their plans for future updates.
+Here, development team members Lorenzo and Eduardo discuss their backgrounds in tech and crypto, their passion for gaming, and the inspiration behind their project, Alephium Battle. They share insights on the game’s development, the success of their first tournament, and their plans for future updates.
 
 If you prefer reading, find the full (slightly edited) transcript below.
 

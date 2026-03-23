@@ -1,9 +1,13 @@
 ---
-date: 2024-08-14T13:43:07.996000Z
-description: "Builders Uncut: Meet Alph.pro, What The Duck & Mintingti.me, an in-depth interview conducted around the Athens Builders Meetup showcasing innovative projects in the Alephium ecosystem."
-seoDescription: "Alephium Builders Uncut Alph.pro What The Duck Mintingti.me - Athens Builders Meetup interview. In-depth developer showcase and ecosystem project spotlight."
-featuredImage: image_ff04b57175.png
 title: Builders Uncut —Alph.pro, What The Duck &amp; Mintingti.me
+description: "Builders Uncut: Meet Alph.pro, What The Duck & Mintingti.me, an
+  in-depth interview conducted around the Athens Builders Meetup showcasing
+  innovative projects in the Alephium ecosystem."
+seoDescription: Alephium Builders Uncut Alph.pro What The Duck Mintingti.me -
+  Athens Builders Meetup interview. In-depth developer showcase and ecosystem
+  project spotlight.
+date: 2024-08-14T13:43:07.996Z
+featuredImage: image_ff04b57175.png
 ---
 
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
@@ -20,9 +24,9 @@ I believe we’ve been interacting since I joined Alephium in November. And then
 
 Yeah, I’ve been following crypto for a long time. I think I first started playing with bitcoin around 2010. I was mining on my laptop, but never took it too seriously. I was always into the technical side and playing with it. Back then, I wasn’t even a developer yet, so I was just exploring and learning.
 
-Later, I became a full-stack web developer, and then I re-found crypto after gaining some web development experience. Around 2020, I started becoming a crypto developer. I found the Fantom network, started on Ethereum, of course, but spent quite a bit of time there, building. I built a portfolio management dashboard, and it went quite well. Then, some friends who had started [Ayin](http://ayin.app) invited me to check out Alephium.
+Later, I became a full-stack web developer, and then I re-found crypto after gaining some web development experience. Around 2020, I started becoming a crypto developer. I found the Fantom network, started on Ethereum, of course, but spent quite a bit of time there, building. I built a portfolio management dashboard, and it went quite well. Then, some friends who had started Ayin invited me to check out Alephium.
 
-#### I didn’t know that! So you came in with a splash during the Hackaton, with [Alph.pro](http://alph.pro), right?
+#### I didn’t know that! So you came in with a splash during the Hackathon, with Alph.pro, right?
 
 Yeah, that was the main piece. I realized my vision had different parts, so I modularized them into individual projects.
 
@@ -34,7 +38,7 @@ A Discord bot handles token prices and tipping, which is non-custodial. It integ
 
 Yeah, that was my first project and collection. It inspired me to keep building on Alephium. Shades of DeFi was 32 items, just colour squares. I got the colours by taking common, iconic functions from EVM smart contracts and converting their hex values to colours. That’s where the Shades of DeFi colours came from.
 
-#### I thought there was some kind of poetic value to the collection. And it came at the beginning of DeadRare. I saw it was the 9th collection on their dashboard. Then, there was the [snack vending machine during the hackathon](https://snacks.alph.pro/).
+#### I thought there was some kind of poetic value to the collection. And it came at the beginning of DeadRare. I saw it was the 9th collection on their dashboard. Then, there was the snack vending machine during the hackathon.
 
 Oh, yeah. We were having open office calls, and a few of us joked about the lack of snacks. My friend [Rabtai](https://x.com/rabTAI) did the contract side, and I did the front end.
 
@@ -50,7 +54,7 @@ I’m not sure where Rabtai is from. We met on Discord while working on the Fant
 
 Yes, originally, What the Duck was just an NFT series, similar to Shades of DeFi. Then, people on Discord suggested turning it into a game. It’s called Quack Attack. You can log in as your duck, waddle around, and see everyone else. I’m remaking it with a more scalable architecture using Godot as the game engine.
 
-#### So, you also released another NFT collection called [Minting Time](http://mintingti.me). It has the SVG on-chain and is animated.
+#### So, you also released another NFT collection called Minting Time. It has the SVG on-chain and is animated.
 
 Yes, Minting Time came from my work on Quack Attack and What the Duck. I’m researching dynamic on-chain NFTs. My goal with Quack Attack is to have a gamified, customizable system where you can collect items and equip them. Minting Time was a proof of concept for how I envision the game working.
 
@@ -88,7 +92,6 @@ No, just glad to be here. Looking forward to the next one.
 Links:
 
 **Alph.pro**  
-Website: [https://alph.pro/](https://alph.pro/)  
 Twitter: [https://x.com/Alphdotpro](https://x.com/Alphdotpro)  
 Discord: [https://discord.gg/pfcR8EQZjb](https://discord.gg/pfcR8EQZjb)
 
@@ -97,7 +100,6 @@ Website: [https://theducklounge.com](https://theducklounge.com)
 Twitter: [https://x.com/alph_ducks](https://x.com/alph_ducks)
 
 **Mintingti.me**  
-Website: [https://mintingti.me/](https://mintingti.me/)  
 Twitter: [https://x.com/0x_reed](https://x.com/0x_reed)
 
 ---

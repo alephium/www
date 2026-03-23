@@ -1,15 +1,18 @@
 ---
-date: 2024-04-20T13:26:33.259000Z
-description: "Builders Highlight #11: Meet Fugashu, featuring innovative projects built on Alephium that deliver unique experiences and real utility for users in the ecosystem."
-seoDescription: "Alephium Builders Highlight #11 Fugashu - innovative projects on Alephium blockchain. Developer showcase and ecosystem project spotlight."
+title: "Builders Highlight #11: Fugashu"
+description: "Builders Highlight #11: Meet Fugashu, featuring innovative
+  projects built on Alephium that deliver unique experiences and real utility
+  for users in the ecosystem."
+seoDescription: "Alephium Builders Highlight #11 Fugashu - innovative projects
+  on Alephium blockchain. Developer showcase and ecosystem project spotlight."
+date: 2024-04-20T13:26:33.259Z
 spotlight: false
 featuredImage: image_44c631f654.jpg
-title: 'Builders Highlight #11: Fugashu'
 ---
 
 _Our ecosystem thrives with developers building amazing projects on top of Alephium, delivering a unique experience and providing real utility for users. In the Builders Highlight series, they share more about their projects, thoughts, and insights on why building on Alephium. You can find_ [#1](/news/post/builders-highlights-1-sezame-wallet-ddb4aeb61881)_,_ [#2](/news/post/builders-highlights-2-alphpaca-nfts-99c69775f04c), [#3](/news/post/builders-highlight-3-ayin-6be4a6bd4ec2), [#4](/news/post/builders-highlight-4-no-trust-verify-9ea495ca826f), [#5](/news/post/builders-highlight-5-deadrare-d5ff90d6161e), [#6](/news/post/builders-highlight-6-what-the-duck-0aedc602ecfd), [#7](/news/post/builders-highlight-7-alphpad-bbd4f4a34fd5), [#8](/news/post/builders-highlight-8-ngu-money-f8bf05e36e99)_,_ [#9,](/news/post/builders-highlight-9-mobula-f9c45dc6c691) _and_ [#10](/news/post/builders-highlight-10-amolyus-39e03b6bd3f0) _here!_
 
-Today, we welcome [Fugashu](https://twitter.com/fugashu_codes)! Hyperactive, and builder of many things! Starting with [useful](https://stats.alph.land/) [ecosystem](https://stats.alph.land/) [tools](https://visualizer.alph.land/) such as alph.land and the visualizer, he is now focused on a gaming platform called [Pyreplay](https://www.pyreplay.com/).
+Today, we welcome [Fugashu](https://twitter.com/fugashu_codes)! Hyperactive, and builder of many things! Starting with [useful](https://stats.alph.land/) [ecosystem](https://stats.alph.land/) tools such as alph.land, he is now focused on a gaming platform called [Pyreplay](https://www.pyreplay.com/).
 
 Here, he shares with us some insights his life in Alephium’s ecosystem, tools & world, and his plans for the future!
 
@@ -51,7 +54,7 @@ After some investigation, we determined that the problem stemmed from the librar
 
 ![](image_ec682126a5.png)
 
-[The stats dashboard](https://stats.alph.land/) was initially a proof of concept, and we plan to include more statistics in the future. A community member introduced me to the idea of the [visualizer.](https://visualizer.alph.land/) Having long been interested in 3D web development, I decided to dive in!
+[The stats dashboard](https://stats.alph.land/) was initially a proof of concept, and we plan to include more statistics in the future. A community member introduced me to the idea of the visualizer. Having long been interested in 3D web development, I decided to dive in!
 
 The results have been quite impressive, at least to me. As a teacher who enjoys sharing knowledge, I see this as a fantastic tool to help others grasp complex technical papers and algorithms through visual representation. While I may enhance or add more statistics to this project, my current focus is entirely on developing Pyreplay. :)
 
@@ -90,8 +93,6 @@ Alph.land, Stats, and the Blockchain Visualizer are all open-source projects, an
 **Websites:**
 
 [alph.land](http://alph.land)
-
-[visualizer.alph.land](http://visualizer.alph.land)
 
 [stats.alph.land](http://stats.alph.land)
 

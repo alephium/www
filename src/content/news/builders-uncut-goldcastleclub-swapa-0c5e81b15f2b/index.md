@@ -1,9 +1,12 @@
 ---
-date: 2024-08-28T17:07:28.868000Z
-description: "Builders Uncut: Meet GoldCastleClub & Swapa, an in-depth interview conducted around the Athens Builders Meetup showcasing innovative projects in the Alephium ecosystem."
-seoDescription: "Alephium Builders Uncut GoldCastleClub Swapa - Athens Builders Meetup interview. In-depth developer showcase and ecosystem project spotlight."
-featuredImage: image_8b1f840790.png
 title: Builders Uncut — GoldCastleClub &amp; Swapa
+description: "Builders Uncut: Meet GoldCastleClub & Swapa, an in-depth interview
+  conducted around the Athens Builders Meetup showcasing innovative projects in
+  the Alephium ecosystem."
+seoDescription: Alephium Builders Uncut GoldCastleClub Swapa - Athens Builders
+  Meetup interview. In-depth developer showcase and ecosystem project spotlight.
+date: 2024-08-28T17:07:28.868Z
+featuredImage: image_8b1f840790.png
 ---
 
 _This interview was conducted around the Athens Builders Meetup, which took place at the end of June 2024. If you’re just discovering Alephium’s ecosystem, it’s a great way to learn about all the main projects!_
@@ -46,7 +49,7 @@ Someone in the Discord suggested a “ve” DEX on Alephium, like Pancake Swap. 
 
 ![](image_e1d9067777.png)
 
-I don’t see Deadrare’s DEX ([Candyswap](https://candyswap.gg/)) as a competitor because it’s an order book DEX, and we’ll work in synergy. People will provide liquidity where they can get rewards, so tokenomics is crucial.
+I don’t see Deadrare’s DEX (Candyswap) as a competitor because it’s an order book DEX, and we’ll work in synergy. People will provide liquidity where they can get rewards, so tokenomics is crucial.
 
 #### Will you incentivize token holders to vote for specific pools?
 
@@ -63,14 +66,12 @@ Everything has been great so far. Some documentation needs to be more detailed, 
 ---
 Links:
 
-**Gold Castle Club  
-**Website: [https://goldcastle.club/](https://goldcastle.club/)  
+**Gold Castle Club**   
 Twitter: [https://x.com/GoldCastleClub](https://x.com/GoldCastleClub)  
 Telegram: [https://t.me/goldcastleclub](https://t.me/goldcastleclub)  
 Discord: [https://discord.gg/dtemyQ8wce](https://discord.gg/dtemyQ8wce)
 
 **Swapa**  
-Website: [https://swapa.exchange/](https://swapa.exchange/)  
 Twitter: [https://x.com/alphswaps](https://x.com/alphswaps)  
 Telegram: [https://t.me/swapadex](https://t.co/hTmllPb8CU)  
 Discord: [discord.gg/6zEezaNyND](https://t.co/S3cCZXWfwP)

@@ -1,10 +1,14 @@
 ---
-date: 2023-09-28T16:34:51.022000Z
-description: "Builders Highlight #4: Meet No Trust Verify, showcasing innovative projects built on Alephium that deliver unique experiences and real utility for users."
-seoDescription: "Alephium Builders Highlight #4 No Trust Verify - innovative projects on Alephium blockchain. Developer showcase and ecosystem project spotlight."
+title: "Builders Highlight #4: No Trust Verify"
+description: "Builders Highlight #4: Meet No Trust Verify, showcasing innovative
+  projects built on Alephium that deliver unique experiences and real utility
+  for users."
+seoDescription: "Alephium Builders Highlight #4 No Trust Verify - innovative
+  projects on Alephium blockchain. Developer showcase and ecosystem project
+  spotlight."
+date: 2023-09-28T16:34:51.022Z
 spotlight: false
 featuredImage: image_61abe28f4e.jpg
-title: 'Builders Highlight #4: No Trust Verify'
 ---
 
 _Our ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience and provide real utility for the users. In the Builders Highlight series, these builders will share more about their projects, thoughts, and insights on why building on Alephium! You can find_ [#1 here](/news/post/builders-highlights-1-sezame-wallet-ddb4aeb61881)_,_ [#2 here](/news/post/builders-highlights-2-alphpaca-nfts-99c69775f04c) _and_ [#3](/news/post/builders-highlight-3-ayin-6be4a6bd4ec2)_!_
@@ -25,8 +29,6 @@ Walph takes this basic idea and expands upon it by introducing additional featur
 
 Finally, Walph offers a unique “Pool” mode, accessible exclusively to ALF token holders. This exclusive feature adds an extra layer of excitement and engagement for ALF token holders, providing them with access to unique pools and prizes.
 
-![](image_a723c36dac.gif)
-
 ## What motivated you to develop on Alephium, and what sets it apart from other blockchain platforms?
 
 We know most of the Alephium team well because of their Swiss origins. Moreover, being at the forefront of the first sharding blockchain with proof of work (PoW) represents a revolutionary and highly innovative undertaking. Our team is intrinsically motivated to continue experimenting with new systems. In addition, we highly appreciate the seriousness and quality of the Alephium team's work and their availability.
@@ -45,7 +47,7 @@ Ralph for the smart-contract with NextJS for the frontend. Basically, we stayed 
 
 ## What’s your roadmap? How do you wish to make your product/service evolve?
 
-Rather than adhering to a rigid roadmap, our approach is fueled by motivation and a commitment to continuous experimentation. In the future, we’d like to propose either as a new feature to walph.io or make a new dapp, christened “PredictALPH” (The real name will be revealed in due course). This would be a prediction game that would allow participants to bet on whether the price of the ALPH token would rise or fall. In addition, there could be other intriguing prediction options, but we’ll leave you to guess for now (hint: it won’t be about when the bridge… joke). Stay tuned for more details
+Rather than adhering to a rigid roadmap, our approach is fueled by motivation and a commitment to continuous experimentation. In the future, we’d like to propose  “PredictALPH” (The real name will be revealed in due course). This would be a prediction game that would allow participants to bet on whether the price of the ALPH token would rise or fall. In addition, there could be other intriguing prediction options, but we’ll leave you to guess for now (hint: it won’t be about when the bridge… joke). Stay tuned for more details
 
 ## Could you tell us about some of the challenges you faced while building, and how you overcame them?
 
