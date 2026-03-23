@@ -1,9 +1,13 @@
 ---
-date: 2023-01-13T16:15:05.799000Z
-description: "One year of community contributions: A year ago, Alephium created the community rewards and grants programs to encourage community involvement in all aspects of the project."
-seoDescription: "Alephium one year community contributions - community rewards and grants programs. Community involvement encouragement and project participation."
-featuredImage: image_2a378a7f2f.gif
 title: One year of community contributions
+description: "One year of community contributions: A year ago, Alephium created
+  the community rewards and grants programs to encourage community involvement
+  in all aspects of the project."
+seoDescription: Alephium one year community contributions - community rewards
+  and grants programs. Community involvement encouragement and project
+  participation.
+date: 2023-01-13T16:15:05.799Z
+featuredImage: image_2a378a7f2f.gif
 ---
 
 _A_ [year ago](/news/post/introducing-community-rewards-f4638bbf14bf)_, Alephium created the_ [community rewards](https://github.com/alephium/community) _and the_ [grants programs](/grants) _to encourage the involvement of the community in all aspects of the project. It is still ongoing, head over to_ [GitHub and apply](/grants)_!_
@@ -33,19 +37,19 @@ The node has been packaged for [Debian](https://projects.iabsis.com/projects/ale
 
 After the mining software came the [mining-pools](https://docs.alephium.org/mining/pool-mining-guide#currently-known-and-active-pools), building UIs, which curated communities and extended the ecosystem to a very essential part of a PoW blockchain community: the miners.
 
-Miners have been immensely creative, some have created incredible videos, either [exploring the protocol](https://www.youtube.com/watch?v=y6m-5L8BD18), or producing [detailed tutorials on how to mine](https://www.youtube.com/watch?v=2pA2JE9sbTY), [gain in efficiency](https://www.youtube.com/watch?v=-bFY1SvMqxc), and [other advanced topics](https://www.youtube.com/watch?v=mtEkSIQzNeg).
+Miners have been immensely creative, some have created incredible videos, either exploring the protocol, or producing [detailed tutorials on how to mine](https://www.youtube.com/watch?v=2pA2JE9sbTY), [gain in efficiency](https://www.youtube.com/watch?v=-bFY1SvMqxc), and [other advanced topics](https://www.youtube.com/watch?v=mtEkSIQzNeg).
 
 Others have worked towards securing the network even more at the hardware level with attempts at building FPGAs and ASICs. We’re early, it’s hard and ungrateful work!
 
 **Wallets**
 
-While the official [Desktop Wallet](https://github.com/alephium/desktop-wallet) has been carefully packaged for [Dart](https://github.com/sahharYoucef/alephium_dart) and [Arch Linux](https://aur.archlinux.org/packages/alephium-wallet-bin/), the first community project out on the Mobile wallet market has been the [Sezame Wallet](https://sezame.app/). They built an easy-to-use cloud mining platform and a mobile wallet that were both available at the mainnet launch!
+While the official [Desktop Wallet](https://github.com/alephium/desktop-wallet) has been carefully packaged for [Dart](https://github.com/sahharYoucef/alephium_dart) and Arch Linux, the first community project out on the Mobile wallet market has been the [Sezame Wallet](https://sezame.app/). They built an easy-to-use cloud mining platform and a mobile wallet that were both available at the mainnet launch!
 
 ![](image_5f7f392bdf.jpg)
 
 In November 2022, a new community-built mobile wallet appeared! [Sahhar Youcef](https://github.com/sahharYoucef/) released a fantastic mobile wallet for Android. It comes packed with interesting features such as multi-signature functionalities, an address book, biometric authentication, and a discrete mode. At the time of writing, it’s already been through [9 upgrade releases](https://github.com/sahharYoucef/alephium_wallet/releases/latest) and is still actively being developed (and that’s an understatement).
 
-![](image_ad3169a179.gif)
+
 
 By the way, Alephium’s [new mobile wallet is coming very soon!](/news/post/the-front-end-leman-upgrade-948a98a3e2d)
 
@@ -69,7 +73,7 @@ A fantastic way to play with the data available on the chain is to produce WebAp
 
 ![](image_f329d20a64.jpg)
 
-[Gramswap](https://gramswap.app/): A WebApp allowing users to swap ALPH for a wide variety of other digital assets.
+Gramswap: A WebApp allowing users to swap ALPH for a wide variety of other digital assets.
 
 ![](image_d62d1c188a.jpg)
 
@@ -79,7 +83,7 @@ While the network matures, builders are building. Even if the tooling is at an e
 
 ![](image_31d9b07418.jpg)
 
-[XoXo](https://xoxo.art/) is one of these. It’s building an NFT platform that poetically claims to “mint emotions”. A front- and a backend are being built & tested right now.
+XoXo is one of these. It’s building an NFT platform that poetically claims to “mint emotions”. A front- and a backend are being built & tested right now.
 
 The full spectrum of Smart Contract possibilities offered by the [Leman Upgrade](/news/post/announcing-the-leman-network-upgrade-c01a81e65f0e) will be especially useful to projects like XoXo!
 
