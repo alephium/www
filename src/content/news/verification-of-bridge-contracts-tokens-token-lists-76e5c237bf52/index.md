@@ -1,7 +1,7 @@
 ---
 date: 2023-11-20T14:25:39.181000Z
-description: "Verification of bridge contracts, tokens & token lists: Comprehensive guide to verifying Alephium Bridge contracts, tokens, and token lists for security and authenticity."
-seoDescription: "Alephium Bridge contracts verification guide - tokens and token lists. Comprehensive security guide for verifying bridge contracts and token authenticity."
+description: 'Verification of bridge contracts, tokens & token lists: Comprehensive guide to verifying Alephium Bridge contracts, tokens, and token lists for security and authenticity.'
+seoDescription: 'Alephium Bridge contracts verification guide - tokens and token lists. Comprehensive security guide for verifying bridge contracts and token authenticity.'
 featuredImage: image_699016be4c.jpg
 title: Verification of bridge contracts, tokens &amp; token lists
 ---
@@ -68,7 +68,7 @@ And here are the list of the ones than can be registered for bridging:
 
 ### BSC tokens
 
-At launch, [$BNB](https://x.com/search?q=%24BNB&amp;src=cashtag_click), [$USDT](https://x.com/search?q=%24USDT&amp;src=cashtag_click), and [$USDC](https://x.com/search?q=%24USDC&amp;src=cashtag_click) will be bridgeable on Alephium’s front-end bridge UI. They will also appear as “verified” on Alephium’s family of wallets (desktop, mobile, and browser extension). If you want to bridge another token, you’ll need to register it. You can register all tokens on [this list](https://tokens.coingecko.com/binance-smart-chain/all.json).
+At launch, [$BNB](https://x.com/search?q=%24BNB&src=cashtag_click), [$USDT](https://x.com/search?q=%24USDT&src=cashtag_click), and [$USDC](https://x.com/search?q=%24USDC&src=cashtag_click) will be bridgeable on Alephium’s front-end bridge UI. They will also appear as “verified” on Alephium’s family of wallets (desktop, mobile, and browser extension). If you want to bridge another token, you’ll need to register it. You can register all tokens on [this list](https://tokens.coingecko.com/binance-smart-chain/all.json).
 
 ## **Verified markets — DEXes**
 
@@ -96,9 +96,9 @@ At launch, there are pools on [@ayincoin](https://x.com/@ayincoin), [@CandySwapA
 
 ### BSC — wALPH at PancakeSwap
 
-wALPH/BNB — [https://pancakeswap.finance/?inputCurrency=0x8683BA2F8b0f69b2105f26f488bADe1d3AB4dec8&amp;outputCurrency=BNB](https://pancakeswap.finance/?inputCurrency=0x8683BA2F8b0f69b2105f26f488bADe1d3AB4dec8&amp;outputCurrency=BNB)
+wALPH/BNB — [https://pancakeswap.finance/?inputCurrency=0x8683BA2F8b0f69b2105f26f488bADe1d3AB4dec8&amp;outputCurrency=BNB](https://pancakeswap.finance/?inputCurrency=0x8683BA2F8b0f69b2105f26f488bADe1d3AB4dec8&outputCurrency=BNB)
 
-wALPH/USDT — [https://pancakeswap.finance/?inputCurrency=0x8683BA2F8b0f69b2105f26f488bADe1d3AB4dec8&amp;outputCurrency=0x55d398326f99059fF775485246999027B3197955](https://pancakeswap.finance/?inputCurrency=0x8683BA2F8b0f69b2105f26f488bADe1d3AB4dec8&amp;outputCurrency=0x55d398326f99059fF775485246999027B3197955)
+wALPH/USDT — [https://pancakeswap.finance/?inputCurrency=0x8683BA2F8b0f69b2105f26f488bADe1d3AB4dec8&amp;outputCurrency=0x55d398326f99059fF775485246999027B3197955](https://pancakeswap.finance/?inputCurrency=0x8683BA2F8b0f69b2105f26f488bADe1d3AB4dec8&outputCurrency=0x55d398326f99059fF775485246999027B3197955)
 
 As a reminder, you can check on [Coingecko](https://www.coingecko.com/en/coins/alephium) all the exchanges that listed ALPH.
 
@@ -116,7 +116,7 @@ Browser extension — Firefox — [https://addons.mozilla.org/en-US/fire
 
 3rd party mobile wallet — Sezame wallet [https://sezame.app/](https://sezame.app/)
 
-3rd party mobile wallet — Sahhar wallet [https://play.google.com/store/apps/details?id=com.sahhar.sahhar_wallet&amp;hl=en&amp;gl=US](https://play.google.com/store/apps/details?id=com.sahhar.sahhar_wallet&amp;hl=en&amp;gl=US)
+3rd party mobile wallet — Sahhar wallet
 
 ---
 

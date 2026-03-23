@@ -1,7 +1,7 @@
 ---
 date: 2023-01-31T15:33:07.995000Z
-description: "The Leman Network Upgrade AMA: Most relevant topics and questions - Comprehensive summary of the significant blockchain update covering main components and key discussions."
-seoDescription: "Alephium Leman Network Upgrade AMA - most relevant topics and questions. Comprehensive summary of significant blockchain update and key discussions."
+description: 'The Leman Network Upgrade AMA: Most relevant topics and questions - Comprehensive summary of the significant blockchain update covering main components and key discussions.'
+seoDescription: 'Alephium Leman Network Upgrade AMA - most relevant topics and questions. Comprehensive summary of significant blockchain update and key discussions.'
 featuredImage: image_819f6611c3.png
 title: 'The Leman Network Upgrade AMA: Most relevant topics and questions'
 ---
@@ -34,7 +34,7 @@ Question: **Will the bridge be available after the mainnet upgrade from day one?
 
 **Hongchao:** After the mainnet upgrade, some time will be spent monitoring the network. There is no specific date for launching the bridge on the mainnet since the bridge’s security is critical for Alephium’s ecosystem, and it makes sense to be extra careful with this piece of infrastructure.
 
-The bridge is already [deployed on testnet](https://portal-bridge.wormhole-testnet.softfork.se/) (which is Leman compatible). Its components have been tested, from UI to the smart contract, from Guardians to infrastructure. The goal is to be very confident about the code, make sure it is correct and secure, and gain more operational experience.
+The bridge is already deployed on testnet (which is Leman compatible). Its components have been tested, from UI to the smart contract, from Guardians to infrastructure. The goal is to be very confident about the code, make sure it is correct and secure, and gain more operational experience.
 
 Question: **Which tokens will be supported on the bridge?**
 
@@ -79,8 +79,6 @@ Question: **You’ve said you’re working on a ledger integration, can you tell
 Question: **Can you talk to us about the NFTs? Can we already mint NFTs? Can you tell us more about the prototype that is available on testnet?**
 
 **Hongchao:** We have deployed the NFT prototype on testnet, together with the extension wallet, you should be able to mint an NFT there.
-
-The NFT Marketplace is available at [https://nft.alephium-testnet.softfork.se/](https://nft.alephium-testnet.softfork.se/)
 
 And you can download the browser extension wallet at [https://github.com/alephium/extension-wallet/releases/latest](https://github.com/alephium/extension-wallet/releases/latest)
 

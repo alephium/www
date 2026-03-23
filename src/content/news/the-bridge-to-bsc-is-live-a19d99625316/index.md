@@ -1,7 +1,7 @@
 ---
 date: 2024-11-20T16:09:04.341000Z
-description: "The Bridge to BSC is live! New bridge connecting ALPH and BSC networks, featuring faucet, ecosystem guide, contracts, tokens, and comprehensive FAQ."
-seoDescription: "Alephium Bridge to BSC live - ALPH BSC network connection. Faucet, ecosystem guide, contracts, tokens, and comprehensive FAQ."
+description: 'The Bridge to BSC is live! New bridge connecting ALPH and BSC networks, featuring faucet, ecosystem guide, contracts, tokens, and comprehensive FAQ.'
+seoDescription: 'Alephium Bridge to BSC live - ALPH BSC network connection. Faucet, ecosystem guide, contracts, tokens, and comprehensive FAQ.'
 spotlight: false
 featuredImage: image_6a65a64e2a.jpg
 title: The Bridge to BSC is live!
@@ -35,16 +35,19 @@ New to Alephium? Get started with our [testnet faucet](https://docs.alephium.org
 Welcome to Alephium! Here's how to get started:
 
 ### 1. Get ALPH tokens
+
 - **Bridge from BSC**: Use the new bridge to transfer ALPH from BSC
 - **Buy on exchanges**: Purchase ALPH on supported exchanges
 - **Mine ALPH**: Participate in mining to earn ALPH rewards
 
 ### 2. Explore the ecosystem
+
 - **DeFi protocols**: Discover decentralized finance applications
 - **NFTs**: Explore non-fungible token collections
 - **dApps**: Try decentralized applications built on Alephium
 
 ### 3. Join the community
+
 - **Discord**: Connect with the community on [Discord](https://discord.gg/JErgRBfRSB)
 - **Telegram**: Join discussions on [Telegram](https://t.me/alephiumgroup)
 - **Twitter**: Follow updates on [Twitter](https://twitter.com/alephium)
@@ -54,33 +57,35 @@ Welcome to Alephium! Here's how to get started:
 ### Bridge contracts
 
 **Alephium side:**
+
 - Bridge contract: `[Contract Address]`
 - ALPH token: `[Token Address]`
 
 **BSC side:**
+
 - Bridge contract: `[Contract Address]`
 - Bridged ALPH: `[Token Address]`
-
-### Token lists
-
-- **Alephium tokens**: [Token list](https://tokens.alephium.org)
-- **BSC tokens**: [Token list](https://tokens.bscscan.com)
 
 ## FAQ
 
 ### How long does bridging take?
+
 Bridge transactions typically complete within 10-15 minutes, depending on network congestion.
 
 ### What are the fees?
+
 Bridge fees are minimal and cover the cost of cross-chain operations.
 
 ### Is bridging safe?
+
 Yes, the bridge uses secure smart contracts and has been audited for security.
 
 ### Can I bridge other tokens?
+
 Currently, only ALPH tokens are supported for bridging between Alephium and BSC.
 
 ### What if I have issues?
+
 Contact support through our [Discord](https://discord.gg/JErgRBfRSB) or [Telegram](https://t.me/alephiumgroup) channels.
 
 ---

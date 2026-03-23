@@ -66,7 +66,7 @@ But let’s keep in mind some nuances! Despite looking simple, these formulas ha
 One interesting example of this is Solana, on which:
 
 - [10–15% of transactions fail and have to be discounted](https://mirror.xyz/0xFC03995eeaf129459C760729661CAa43308293B7/yNOU-vVmRsOpJ3oV30_AS1T2-1-w92aGQlGXQiA1fQ4), so their TPS count has a “success rate.”
-- 25–30% of transactions are votes for the next validator, meaning they have to separate [“TPS” and “non-vote TPS”](https://analytics.solscan.io/public/dashboard/8d888828-baae-47b9-948b-d087e5de1411) to have a usable metric of how many transactions can effectively happen.
+- 25–30% of transactions are votes for the next validator, meaning they have to separate [“TPS” and “non-vote TPS”](https://solscan.io/analytics) to have a usable metric of how many transactions can effectively happen.
 
 It’s essential to stay careful when using TPS comparisons because we’re often dealing with averages (for example, a smart contract call can be way bigger than a simple P2P transaction), and the word “transaction” can have a slightly different meaning from one blockchain to another. Also, some transactions can contain… multiple transactions (see this on [Cardano](https://datastudio.google.com/reporting/3136c55b-635e-4f46-8e4b-b8ab54f2d460/page/p_wxcw6g0irc), which, for now, handles up to 2 TPS )!
 

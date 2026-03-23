@@ -1,10 +1,11 @@
 ---
 date: 2023-05-19T13:46:53.177000Z
-description: "The Alephium Bridge is now live on testnet! Test cross-chain transfers between Alephium and Ethereum testnets, explore the bridge functionality, and help identify any issues before mainnet launch."
-seoDescription: "Alephium Bridge testnet launch - cross-chain transfers between Alephium and Ethereum testnets. Test bridge functionality before mainnet launch."
+description: 'The Alephium Bridge is now live on testnet! Test cross-chain transfers between Alephium and Ethereum testnets, explore the bridge functionality, and help identify any issues before mainnet launch.'
+seoDescription: 'Alephium Bridge testnet launch - cross-chain transfers between Alephium and Ethereum testnets. Test bridge functionality before mainnet launch.'
 featuredImage: image_9ee06c07f7.png
 title: The Alephium Bridge is live on Testnet!
 ---
+
 Bridge assets from and to Ethereum Goerli Testnet and BNB Smart Chain Testnet
 
 A key to the future of Alephium is the ability to move tokens cross-chain, and since before the Leman Upgrade was ready, a lot of work has gone on working on the first bridge to another chain.
@@ -68,8 +69,6 @@ You can ask for some right from the wallet!
 ![](image_8b1cb8874d.png)
 
 Hop on the wagon and let’s go!
-
-To connect to the bridge, go to [https://portal-bridge.wormhole-testnet.alephium.org](https://portal-bridge.wormhole-testnet.alephium.org/)
 
 ![](image_cb924097f9.png)
 
