@@ -1,13 +1,15 @@
 ---
-date: 2023-09-19T16:13:50.477000Z
-description: "NFT Marketplace v3: We launched the NFT marketplace as a prototype to show what can be done with NFTs on Alephium, receiving lots of feedback from the community."
-seoDescription: "Alephium NFT Marketplace v3 - prototype launch and community feedback. NFT marketplace improvements and new Flow feature on Alephium blockchain."
-featuredImage: image_4e8b3c6145.png
 title: NFT Marketplace v3
+description: "NFT Marketplace v3: We launched the NFT marketplace as a prototype
+  to show what can be done with NFTs on Alephium, receiving lots of feedback
+  from the community."
+seoDescription: Alephium NFT Marketplace v3 - prototype launch and community
+  feedback. NFT marketplace improvements and new Flow feature on Alephium
+  blockchain.
+date: 2023-09-19T16:13:50.477Z
+featuredImage: image_4e8b3c6145.png
 ---
 We launched the NFT marketplace as a prototype to show what can be done with NFTs on Alephium. We received a lot of feedback from the community. With the v3 we are improving the whole experience and adding a new, exciting feature: the Flow!
-
-Access it here: [https://testnet.nft.alephium.org/](https://testnet.nft.alephium.org/)
 
 ### New Feature: The Flow
 
@@ -29,7 +31,6 @@ It includes the ability to do batch minting: you can set the price and define ho
 
 We’ve created a special collection for you to be able to test Batch Minting for yourself.
 
-Go and test [minting one (or more)](https://v3.testnet.nft.alephium.org/collection-details?collectionId=c22369b5ab21a3b24db12a883b53a9213f22e713ff486a3b22d2d4cb943a9700) of our ALPH EVERYWHERE testnet NFTs.
 
 `video: https://www.youtube.com/watch?v=V3RePAazEMY`
 
@@ -59,4 +60,4 @@ If you see anything that’s buggy or wants to tell us which features you think 
 
 We are always grateful for feedback!
 
-_The New_ [NFT Marketplace](https://testnet.nft.alephium.org/) _is now available for testing on the Alephium testnet! Let us know what you think. Follow the evolution of the code on_ [Github](https://github.com/alephium)_, follow the news on_ [Twitter](https://twitter.com/alephium) _&_ [Medium](https://medium.com/@alephium) _or come interact onboard on_ [Discord](https://discord.com/invite/GEbcpajCJG) _&_ [Telegram](https://t.me/alephiumgroup)_!_
+Follow the evolution of the code on_ [Github](https://github.com/alephium)_, follow the news on_ [Twitter](https://twitter.com/alephium) _&_ [Medium](https://medium.com/@alephium) _or come interact onboard on_ [Discord](https://discord.com/invite/GEbcpajCJG) _&_ [Telegram](https://t.me/alephiumgroup)_!_
