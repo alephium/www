@@ -1,20 +1,24 @@
 ---
-date: 2023-06-20T13:23:04.857000Z
-description: "Tech Talk #10: NYM's Alexis Roussel explores the future of privacy, delving into mix networks and their crucial role in enhancing cryptocurrency transaction privacy."
-seoDescription: "Alephium Tech Talk #10 NYM Alexis Roussel - future of privacy. Mix networks and cryptocurrency transaction privacy enhancement insights."
+title: "Tech Talk #10 — NYM, Alexis Roussel &amp; the Future of Privacy"
+description: "Tech Talk #10: NYM's Alexis Roussel explores the future of
+  privacy, delving into mix networks and their crucial role in enhancing
+  cryptocurrency transaction privacy."
+seoDescription: "Alephium Tech Talk #10 NYM Alexis Roussel - future of privacy.
+  Mix networks and cryptocurrency transaction privacy enhancement insights."
+date: 2023-06-20T13:23:04.857Z
 spotlight: false
 featuredImage: image_32222cf239.jpg
-title: 'Tech Talk #10 — NYM, Alexis Roussel &amp; the Future of Privacy'
 ---
 
-_This article follows_ [Alephium’s Tech Talk #10](https://www.youtube.com/watch?v=pImANSvO6WQ)_, where Alexis Roussel from_ [NYM](https://nymtech.net/) _delves into the fascinating realm of_ [mix networks](https://en.wikipedia.org/wiki/Mix_network) _and their crucial role in enhancing privacy, specifically in the context of cryptocurrency transactions. You’ll find first a little recap of what mix networks are, why they are useful and how NYM is bringing privacy to the masses, and then an edited version of the Q&A Alexis Roussel had with the community._
+_This article follows_ [Alephium’s Tech Talk #10](https://www.youtube.com/watch?v=pImANSvO6WQ)_, where Alexis Roussel from_ NYM _delves into the fascinating realm of_ [mix networks](https://en.wikipedia.org/wiki/Mix_network) _and their crucial role in enhancing privacy, specifically in the context of cryptocurrency transactions. You’ll find first a little recap of what mix networks are, why they are useful and how NYM is bringing privacy to the masses, and then an edited version of the Q&A Alexis Roussel had with the community._
 
 `video: https://www.youtube.com/watch?v=pImANSvO6WQ`
 
 [Alexis Roussel](https://twitter.com/alexis_roussel) is an accomplished technology and privacy advocate, currently COO of NYM. With a deep understanding of technology and its impact on society, Alexis has dedicated his career to championing digital integrity and empowering individuals to maintain control over their personal data. He is a former president of the [Pirate Party of Switzerland](https://www.partipirate.ch/), and the co-founder of [Bity](https://bity.com/), one of the first crypto brokers in Switzerland.
 
 He is a co-author of the book “[Our Precious Digital Integrity,](https://www.slatkine.com/fr/editions-slatkine/74977-book-07211052-9782832110522.html)” written with [Grégoire Barbey](https://twitter.com/GregoireBarbey), and firmly believes that crypto technology, with its emphasis on user control and public infrastructure, plays a pivotal role in shaping a responsible and human-centric digital society.  
-[Thanks to their advocacy, Digital Integrity was actually voted into law (at 94%!) in the canton of Geneva last weekend!](https://euro.dayfr.com/local/395852.html)
+
+Thanks to their advocacy, Digital Integrity was actually voted into law (at 94%!) in the canton of Geneva last weekend!
 
 ## The Importance of Privacy in the Digital Age
 
