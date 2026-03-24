@@ -1,9 +1,13 @@
 ---
-date: 2023-12-15T16:29:25.284000Z
-description: "The Alephium Bridge AMA Part 1: Learn about the bridge's architecture, security model, and how it enables seamless cross-chain transfers between Alephium and Ethereum."
-seoDescription: 'Alephium Bridge AMA Part 1 - architecture, security model, cross-chain transfers. Twitter Space interview with team insights on bridge development.'
-featuredImage: image_1f582eb3bd.jpg
 title: The Alephium Bridge AMA — part 1
+description: "The Alephium Bridge AMA Part 1: Learn about the bridge's
+  architecture, security model, and how it enables seamless cross-chain
+  transfers between Alephium and Ethereum."
+seoDescription: Alephium Bridge AMA Part 1 - architecture, security model,
+  cross-chain transfers. Twitter Space interview with team insights on bridge
+  development.
+date: 2023-12-15T16:29:25.284Z
+featuredImage: image_1f582eb3bd.jpg
 ---
 
 _One month after the release of the_ [bridge](https://bridge.alephium.org/#/transfer) _on mainnet, Cheng, Hongchao & Maud were interviewed by Vladimir in a Twitter space AMA. Where are we on the bridge, how did it come to be, and what’s ahead for the bridge?_
@@ -12,7 +16,7 @@ _You can listen to the Twitter space itself_ [here](https://twitter.com/i/spaces
 
 ## Intro & bridge stats
 
-Over the past month (as of 12.7.23), we have observed a significant uptick in activity. This includes approximately 5,000 new live addresses and nearly 4,000 [wallet](/wallets) activations across both desktop and mobile platforms, excluding extensions. The statistics from Ayin (our native DEX) indicate a trading volume exceeding \$3 million, over thousands of transactions. Additionally, the number [of $ALPH Ethereum holders](https://etherscan.io/token/0x590f820444fa3638e022776752c5eef34e2f89a6) is approaching a thousand. There has been almost 600 bridge transfers, amounting to a total value of \$2.5 million. The Total Value Locked (TVL) on the [Alephium Bridge](https://bridge.alephium.org/#/transfer), as reported by [DefiLlama](https://defillama.com/protocol/alephium-bridge), currently stands at \$1.8 million.
+Over the past month (as of 12.7.23), we have observed a significant uptick in activity. This includes approximately 5,000 new live addresses and nearly 4,000 [wallet](/wallets) activations across both desktop and mobile platforms, excluding extensions. The statistics from Ayin indicate a trading volume exceeding \$3 million, over thousands of transactions. Additionally, the number [of $ALPH Ethereum holders](https://etherscan.io/token/0x590f820444fa3638e022776752c5eef34e2f89a6) is approaching a thousand. There has been almost 600 bridge transfers, amounting to a total value of \$2.5 million. The Total Value Locked (TVL) on the [Alephium Bridge](https://bridge.alephium.org/#/transfer), as reported by [DefiLlama](https://defillama.com/protocol/alephium-bridge), currently stands at \$1.8 million.
 
 ## The Alephium Bridge
 
