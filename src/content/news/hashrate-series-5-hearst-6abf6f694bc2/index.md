@@ -75,7 +75,7 @@ On the broader Hearst side, we’re focused on scaling our Mining as a Service o
 ---
 
 Twitter & other social links: [https://x.com/Hearst_io](https://x.com/Hearst_io)  
-Website: [https://www.hearstcorporation.io/](https://hearstcorporation.io/)
+Website: [https://www.hearstcorporation.io/](https://www.hearstcorporation.io/)
 
 ---
 
