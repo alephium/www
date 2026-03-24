@@ -13,7 +13,7 @@ featuredImage: image_61abe28f4e.jpg
 
 _Our ecosystem thrives with developers building amazing stuff on top of Alephium (services, dApps, etc…) that deliver a unique experience and provide real utility for the users. In the Builders Highlight series, these builders will share more about their projects, thoughts, and insights on why building on Alephium! You can find_ [#1 here](/news/post/builders-highlights-1-sezame-wallet-ddb4aeb61881)_,_ [#2 here](/news/post/builders-highlights-2-alphpaca-nfts-99c69775f04c) _and_ [#3](/news/post/builders-highlight-3-ayin-6be4a6bd4ec2)_!_
 
-This episode is about No Trust Verify, creator of the first ever token on mainnet (ALF), now introducing [Walph](https://walph.io), the first decentralized lottery powered by Alephium! [cgi-bin](https://twitter.com/cg1_bin) and [Oheka](https://twitter.com/Oheka32) & other NTV members are hyperactive community members & fantastic builders, and we thank them for their time!
+This episode is about No Trust Verify, creator of the first ever token on mainnet (ALF), now introducing Walph, the first decentralized lottery powered by Alephium! [cgi-bin](https://twitter.com/cg1_bin) and [Oheka](https://twitter.com/Oheka32) & other NTV members are hyperactive community members & fantastic builders, and we thank them for their time!
 
 ## Tell us a bit about yourself. Who are you? Where are you from? What’s your training & main activity? (this one is optional, but is always nice to know a bit about the founder/dev)
 
@@ -69,7 +69,7 @@ In the future, it will be fascinating to explore the opportunities sharding offe
 
 Be sure to consult the documentation, join our Discord community, and don’t hesitate to ask questions. Doing so will not only enhance your understanding but also contribute to Ralph becoming the best smart-contract language.
 
-_Thanks, No Trust Verify, for your answers! Alephium is thrilled to have such talent builders in the community! You can find the WALPH_ [here](https://walph.io)_, and the WALPH Twitter account_ [here](https://twitter.com/WalphLottery)_._
+_Thanks, No Trust Verify, for your answers! Alephium is thrilled to have such talent builders in the community! You can find the WALPH Twitter account_ [here](https://twitter.com/WalphLottery)_._
 
 ---
 
