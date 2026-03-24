@@ -1,9 +1,12 @@
 ---
-date: 2022-12-20T15:47:15.162000Z
-description: 'The Leman Upgrade #2: An intermediary update on the road to the Leman Upgrade, providing insights into the development progress and upcoming changes.'
-seoDescription: 'Alephium Leman Upgrade #2 - intermediary update on development progress. Road to Leman Upgrade insights and upcoming changes.'
+title: "The Leman Upgrade #2"
+description: "The Leman Upgrade #2: An intermediary update on the road to the
+  Leman Upgrade, providing insights into the development progress and upcoming
+  changes."
+seoDescription: "Alephium Leman Upgrade #2 - intermediary update on development
+  progress. Road to Leman Upgrade insights and upcoming changes."
+date: 2022-12-20T15:47:15.162Z
 featuredImage: image_1c78dbc4c1.jpg
-title: 'The Leman Upgrade #2'
 ---
 
 _An intermediary update on the road to the Leman Upgrade_
@@ -14,11 +17,11 @@ _The_ [previous announcement](/news/post/announcing-the-leman-network-upgrade-c0
 
 A lot of [work has been done on the full node code](https://twitter.com/alephium/status/1589991470676615168), and the SDK went into a huge refactor in the past few weeks. This brings the mainnet closer to the network upgrade. The devnet and testnet are already Leman-compatible for a while now.
 
-An [NFT project prototype](https://alephium-nft.softfork.se/my-nfts) has been deployed on the devnet. [A community project](https://xoxo.art) is developing an NFT platform; it is expected to be released on the testnet soon!
+An NFT project prototype has been deployed on the devnet. A community project called Xoxo is developing an NFT platform; it is expected to be released on the testnet soon!
 
 `video: https://www.youtube.com/watch?v=UkpsI1JenNM`
 
-The **Alephium-Ethereum Bridge** is now fully functional on the devnet and has been deployed to the testnet. It is now possible to make token transfers using the [Bridge Portal](https://portal-bridge.wormhole-testnet.softfork.se/.). Track & follow its performance and metrics on this [website](https://monitoring.wormhole-testnet.softfork.se/d/-GcztLMnz/wormhole-testnet-v2?orgId=1&from=now-5m&to=now).
+The **Alephium-Ethereum Bridge** is now fully functional on the devnet and has been deployed to the testnet. It is now possible to make token transfers using the Bridge Portal.
 
 **What are the next steps?**
 
