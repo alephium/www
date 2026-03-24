@@ -1,9 +1,12 @@
 ---
-date: 2024-09-03T16:14:48.298000Z
-description: "The BSC/Alephium Bridge is live on Testnet! Bridge assets from and to BNB Smart Chain Testnet with this comprehensive guide to Alephium's second testnet bridge."
-seoDescription: "Alephium BSC Bridge testnet launch - bridge assets from BNB Smart Chain Testnet. Comprehensive guide to Alephium's second testnet bridge."
-featuredImage: image_39fa5f38bb.png
 title: The BSC/Alephium Bridge is live on Testnet!
+description: The BSC/Alephium Bridge is live on Testnet! Bridge assets from and
+  to BNB Smart Chain Testnet with this comprehensive guide to Alephium's second
+  testnet bridge.
+seoDescription: Alephium BSC Bridge testnet launch - bridge assets from BNB
+  Smart Chain Testnet. Comprehensive guide to Alephium's second testnet bridge.
+date: 2024-09-03T16:14:48.298Z
+featuredImage: image_39fa5f38bb.png
 ---
 
 Bridge assets from and to BNB Smart Chain Testnet
@@ -18,7 +21,7 @@ You can interact with the testnet bridge using the following addresses:
 
 Connect to the bridge via the portal URL: [https://testnet.bridge.alephium.org/](https://testnet.bridge.alephium.org/)
 
-Bridge explorer: [https://explorer.testnet.bridge.alephium.org/](https://explorer.testnet.bridge.alephium.org/)
+Bridge explorer: [https://explorer.alephium.org/](https://explorer.alephium.org/)
 
 In this article, you will find all you need to successfully bridge two ways from Alephium testnet to BSC’s testnet!
 
