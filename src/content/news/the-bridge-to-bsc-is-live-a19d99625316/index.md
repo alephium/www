@@ -1,10 +1,13 @@
 ---
-date: 2024-11-20T16:09:04.341000Z
-description: "The Bridge to BSC is live! New bridge connecting ALPH and BSC networks, featuring faucet, ecosystem guide, contracts, tokens, and comprehensive FAQ."
-seoDescription: "Alephium Bridge to BSC live - ALPH BSC network connection. Faucet, ecosystem guide, contracts, tokens, and comprehensive FAQ."
+title: The Bridge to BSC is live!
+description: The Bridge to BSC is live! New bridge connecting ALPH and BSC
+  networks, featuring faucet, ecosystem guide, contracts, tokens, and
+  comprehensive FAQ.
+seoDescription: Alephium Bridge to BSC live - ALPH BSC network connection.
+  Faucet, ecosystem guide, contracts, tokens, and comprehensive FAQ.
+date: 2024-11-20T16:09:04.341Z
 spotlight: false
 featuredImage: image_6a65a64e2a.jpg
-title: The Bridge to BSC is live!
 ---
 
 _Tl;dr — New bridge ALPH \<\> BSC / The Faucet / I'm new, coming from BSC/BNB — What do I do in \$ALPH's ecosystem? / Contracts & tokens / FAQ_
@@ -63,8 +66,8 @@ Welcome to Alephium! Here's how to get started:
 
 ### Token lists
 
-- **Alephium tokens**: [Token list](https://tokens.alephium.org)
-- **BSC tokens**: [Token list](https://tokens.bscscan.com)
+- **Alephium tokens**: [Token list](https://www.coingecko.com/en/categories/alephium-ecosystem)
+- **BSC tokens**: [Token list](https://coinmarketcap.com/view/bnb-chain-ecosystem/)
 
 ## FAQ
 
