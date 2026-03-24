@@ -1,9 +1,13 @@
 ---
-date: 2023-05-19T13:46:53.177000Z
-description: "The Alephium Bridge is now live on testnet! Test cross-chain transfers between Alephium and Ethereum testnets, explore the bridge functionality, and help identify any issues before mainnet launch."
-seoDescription: "Alephium Bridge testnet launch - cross-chain transfers between Alephium and Ethereum testnets. Test bridge functionality before mainnet launch."
-featuredImage: image_9ee06c07f7.png
 title: The Alephium Bridge is live on Testnet!
+description: The Alephium Bridge is now live on testnet! Test cross-chain
+  transfers between Alephium and Ethereum testnets, explore the bridge
+  functionality, and help identify any issues before mainnet launch.
+seoDescription: Alephium Bridge testnet launch - cross-chain transfers between
+  Alephium and Ethereum testnets. Test bridge functionality before mainnet
+  launch.
+date: 2023-05-19T13:46:53.177Z
+featuredImage: image_9ee06c07f7.png
 ---
 Bridge assets from and to Ethereum Goerli Testnet and BNB Smart Chain Testnet
 
@@ -13,11 +17,9 @@ Today is a big step in that direction: **The Alephium Bridge is live on Testnet*
 
 This means transferring test tokens from Alephium’s testnet to Ethereum’s and BSC's testnet and back is possible!
 
-You can interact with the testnet bridge using the following addresses:
+You can interact with the testnet bridge using the following address:
 
 Connect to the bridge via the portal URL: [https://testnet.bridge.alephium.org/](https://testnet.bridge.alephium.org/)
-
-Bridge explorer: [https://explorer.wormhole-testnet.alephium.org/explorer/](https://explorer.wormhole-testnet.alephium.org/explorer/)
 
 In this article, you will find all you need to successfully bridge two ways from Alephium testnet to Ethereum’s Goerli and BSC’s Testnet!
 
@@ -69,7 +71,7 @@ You can ask for some right from the wallet!
 
 Hop on the wagon and let’s go!
 
-To connect to the bridge, go to [https://portal-bridge.wormhole-testnet.alephium.org](https://portal-bridge.wormhole-testnet.alephium.org/)
+To connect to the bridge, go to [bridge](https://bridge.alephium.org/)
 
 ![](image_cb924097f9.png)
 
@@ -211,9 +213,7 @@ With your Goerli ETH wallet connected on the bridge page, select the asset you w
 
 ![](image_29c23d962c.png)
 
-The default asset is ETH, but you can choose ALPH as well by copying the contract address found on this page: [https://goerli.etherscan.io/token/0x1c5252a1996f82495579f16e5932d71d35db5a03](https://goerli.etherscan.io/token/0x1c5252a1996f82495579f16e5932d71d35db5a03)
-
-> Or by copying the contract address: 0x1C5252a1996F82495579F16e5932D71d35dB5a03
+The default asset is ETH, but you can choose ALPH as well by copying the contract address: 0x1C5252a1996F82495579F16e5932D71d35dB5a03
 
 ![](image_9b830a584e.png)
 
