@@ -1,9 +1,13 @@
 ---
-date: 2023-11-20T14:25:39.181000Z
-description: "Verification of bridge contracts, tokens & token lists: Comprehensive guide to verifying Alephium Bridge contracts, tokens, and token lists for security and authenticity."
-seoDescription: "Alephium Bridge contracts verification guide - tokens and token lists. Comprehensive security guide for verifying bridge contracts and token authenticity."
-featuredImage: image_699016be4c.jpg
 title: Verification of bridge contracts, tokens &amp; token lists
+description: "Verification of bridge contracts, tokens & token lists:
+  Comprehensive guide to verifying Alephium Bridge contracts, tokens, and token
+  lists for security and authenticity."
+seoDescription: Alephium Bridge contracts verification guide - tokens and token
+  lists. Comprehensive security guide for verifying bridge contracts and token
+  authenticity.
+date: 2023-11-20T14:25:39.181Z
+featuredImage: image_699016be4c.jpg
 ---
 
 > Note: This article was edited on Nov 20th, 2024 — Adding information regarding Binance Smart Chain contracts
@@ -116,7 +120,6 @@ Browser extension — Firefox — [https://addons.mozilla.org/en-US/fire
 
 3rd party mobile wallet — Sezame wallet [https://sezame.app/](https://sezame.app/)
 
-3rd party mobile wallet — Sahhar wallet [https://play.google.com/store/apps/details?id=com.sahhar.sahhar_wallet&amp;hl=en&amp;gl=US](https://play.google.com/store/apps/details?id=com.sahhar.sahhar_wallet&amp;hl=en&amp;gl=US)
 
 ---
 
