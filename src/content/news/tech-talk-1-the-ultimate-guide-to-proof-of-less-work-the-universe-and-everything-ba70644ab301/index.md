@@ -1,11 +1,14 @@
 ---
-date: 2022-07-05T08:56:12.147000Z
-description: "Tech Talk #1: The ultimate guide to Proof-of-Less-Work, featuring a discussion with Cheng Wang, inventor of PoLW and founder of Alephium."
-seoDescription: "Alephium Tech Talk #1 Proof-of-Less-Work ultimate guide - Cheng Wang discussion. Innovative consensus mechanism and blockchain technology insights."
+title: "TECH TALK #1 — The Ultimate guide to Proof-of-Less-Work, the universe
+  and everything…"
+description: "Tech Talk #1: The ultimate guide to Proof-of-Less-Work, featuring
+  a discussion with Cheng Wang, inventor of PoLW and founder of Alephium."
+seoDescription: "Alephium Tech Talk #1 Proof-of-Less-Work ultimate guide - Cheng
+  Wang discussion. Innovative consensus mechanism and blockchain technology
+  insights."
+date: 2022-07-05T08:56:12.147Z
 spotlight: false
 featuredImage: image_a8ea38700f.png
-title: 'TECH TALK #1 — The Ultimate guide to Proof-of-Less-Work, the universe and
-  everything…'
 ---
 A discussion with Cheng Wang, inventor of PoLW and founder of Alephium
 
@@ -123,7 +126,7 @@ _In terms of technology_, PoW is simpler and better understood than PoS: it’s 
 _In terms of scale_, a lot of Proof of Stake projects function in fact more like delegated PoS, where few validators have outsize influence over the crafting & proposing of blocks. For now, real PoS has not scaled enough, with enough value and usage on-chain to be considered that it has withstood the test of time.   
 Actually, the current switch of Ethereum from PoW to PoS will be the first real big test for PoS in production. And it took them years to get there, getting through complexities in the PoS design, in small and big things. [And there are already potential red flags.](https://www.coindesk.com/layer2/2022/04/20/is-ethereum-staking-pool-lidos-growth-an-omen-of-centralization/)
 
-_In terms of security design and architecture_, on the non-tech side, PoS presents much more centralized risk at the pools level because of the network effects of liquidity staking. MEV([which is extracting a lot of value out of unsuspecting users](https://research.paradigm.xyz/MEV)) also presents higher risks in PoS setups because block proposers are pre-selected for each block epoch.
+_In terms of security design and architecture_, on the non-tech side, PoS presents much more centralized risk at the pools level because of the network effects of liquidity staking. MEV([which is extracting a lot of value out of unsuspecting users](https://www.paradigm.xyz/2021/02/mev-and-me)) also presents higher risks in PoS setups because block proposers are pre-selected for each block epoch.
 
 _In terms of distribution_, PoW seems to achieve a fairer distribution of coins than PoS. In Proof of Stake, you can only get coins by buying in the private or public sale and/or on the market. Running a validator can also cost a lot more money than a miner. In PoW, most of the coins are usually reserved for mining, leaving a bigger chance for small miners to make bank. Big funds tend to own a big part of the PoS coins, which is good for price, because they have less need to sell, but also tends to centralize the networks.
 
