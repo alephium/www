@@ -1,10 +1,13 @@
 ---
-date: 2024-09-18T09:07:51.547000Z
-description: "Hashrate Series #3: Meet CryptoHall 24, another key ecosystem actor sustaining Alephium's network security through Proof-of-Work mining and hashrate contribution."
-seoDescription: "Alephium Hashrate Series #3 CryptoHall 24 - Proof-of-Work mining ecosystem actor. Network security and hashrate contribution showcase."
+title: "Hashrate Series #3: CryptoHall 24"
+description: "Hashrate Series #3: Meet CryptoHall 24, another key ecosystem
+  actor sustaining Alephium's network security through Proof-of-Work mining and
+  hashrate contribution."
+seoDescription: "Alephium Hashrate Series #3 CryptoHall 24 - Proof-of-Work
+  mining ecosystem actor. Network security and hashrate contribution showcase."
+date: 2024-09-18T09:07:51.547Z
 spotlight: false
 featuredImage: image_9fb00a1330.png
-title: 'Hashrate Series #3: CryptoHall 24'
 ---
 
 _The blockchain hashrate is directly correlated with network security. As a Proof-of-work blockchain, Alephium relies on active ecosystem actors to sustain and improve Alephium’s reliability. This series is about them, and after_ [Nicehash](/news/post/hashrate-series-1-nicehash-ee0936adf899) _and_ [Goldshell](/news/post/hashrate-series-2-goldshell-93cc51a86640)_, please welcome CryptoHall 24._
@@ -23,7 +26,7 @@ Here, Frederick shares his crypto journey, and how CryptoHall24 came to be. Here
 
 > That’s not a typical job for a 30-year-old in Düsseldorf! I imagine you don’t have many competitors around. Can you tell us more about CryptoHall 24 — when and how it was founded, and how you got into this industry?
 
-**Frederick**: CryptoHall 24 is actually my second company. I also run another company called [MyShoeFitter](https://en.myshoefitter.com/). In collaboration with the [Fraunhofer Institute](https://www.fraunhofer.de/en.html), we developed an AI model in 2019 to measure feet using pictures. The idea was to help people find the perfect shoe size when shopping online by comparing foot measurements with the shoe’s internal dimensions.
+**Frederick**: CryptoHall 24 is actually my second company. I also run another company called MyShoeFitter. In collaboration with the [Fraunhofer Institute](https://www.fraunhofer.de/en.html), we developed an AI model in 2019 to measure feet using pictures. The idea was to help people find the perfect shoe size when shopping online by comparing foot measurements with the shoe’s internal dimensions.
 
 > The Fraunhofer Institute, where MP3 was invented, right?
 
