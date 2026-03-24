@@ -3,3 +3,4 @@ dirs:
   - src/pages
 ignorePatterns:
   - pattern: '^https://banxa.com/'
+  - pattern: '^https://www.bitcoinchair.com/'
