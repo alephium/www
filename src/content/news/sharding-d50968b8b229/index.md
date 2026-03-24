@@ -1,10 +1,13 @@
 ---
-date: 2023-02-22T13:42:39.451000Z
-description: 'Technical exploration of sharding concepts in Alephium and blockchain technology, part 4 of a comprehensive series on key blockchain fundamentals.'
-seoDescription: 'Alephium sharding technical guide - blockchain fundamentals series part 4. Understanding sharding concepts and blockchain scalability.'
+title: "Alephium Explained: Sharding"
+description: Technical exploration of sharding concepts in Alephium and
+  blockchain technology, part 4 of a comprehensive series on key blockchain
+  fundamentals.
+seoDescription: Alephium sharding technical guide - blockchain fundamentals
+  series part 4. Understanding sharding concepts and blockchain scalability.
+date: 2023-02-22T13:42:39.451Z
 spotlight: false
 featuredImage: image_ace28503b1.jpeg
-title: Sharding
 ---
 
 A Technical Promenade, part 4
@@ -27,7 +30,7 @@ To be able to increase performance securely, a sharded blockchain has to have ex
 
 **Cross-shard communication and synchronization:** Sharded blockchains require effective and secure cross-shard communication to coordinate the validation of transactions and blocks across multiple shards, to ensure that each shard is synchronized with the others in terms of its state and the validated transactions and blocks. This requires using synchronization protocols with a robust set of rules to enforce the correct processing.
 
-**Security against malicious nodes:** Sharded blockchains are vulnerable to attacks by malicious nodes on a single shard, which can manipulate the validation of transactions and blocks. One approach to prevent this in PoS is to [assign validators to different shards randomly](https://vitalik.ca/general/2021/04/07/sharding.html). This method was initially considered for scaling the Ethereum network, but discussions have shifted to a similar concept called “[DankSharding](https://www.rootstrap.com/blog/danksharding-what-is-it-and-how-does-it-work).”
+**Security against malicious nodes:** Sharded blockchains are vulnerable to attacks by malicious nodes on a single shard, which can manipulate the validation of transactions and blocks. One approach to prevent this in PoS is to assign validators to different shards randomly. This method was initially considered for scaling the Ethereum network, but discussions have shifted to a similar concept called “[DankSharding](https://www.rootstrap.com/blog/danksharding-what-is-it-and-how-does-it-work).”
 
 ### Sharding in Alephium: A New Paradigm
 
