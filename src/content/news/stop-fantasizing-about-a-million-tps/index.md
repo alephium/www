@@ -13,8 +13,7 @@ relatedPosts:
   - do-we-really-need-more-centralized-l1s/index
   - the-nakamoto-coefficient-a-horoscope-metric-for-blockchains/index
 ---
-
-Op-ed by **[Carla](https://x.com/carlitaacrypto_)**, Head of Ecosystem, Alephium
+Op-ed by **[Carla](https://www.x.com/carlitaacrypto_)**, Head of Ecosystem, Alephium
 
 **Hello and welcome! This is the first column article from Carla, our new Head of Ecosystem. She’ll be using her vast experience in the blockchain industry to explore important topics and discussions.**
 
@@ -40,7 +39,7 @@ TPS has become the crypto equivalent of **horsepower in cars or megapixels in ca
 
 Alephium is often cited around **20,000+ TPS** with sharding, Solana has boasted **65,000+ TPS**, and others claim even more. Sure, throughput matters if a network is congested. But chasing TPS for the sake of headlines leads to **spec sheet obsession** and sometimes misleading claims.
 
-Crypto researcher[ Justin Bons](https://x.com/Justin_Bons/status/1755996514303242478) has called out *“fake TPS metrics”* from major platforms like Solana and Cardano. Solana’s famous 65,000 TPS is far above what it achieves in practice; the estimated real user transactions are tens of hundreds, not tens of thousands ([source](https://chainspect.app/chain/solana?range-cm=month)). 
+Crypto researcher[ Justin Bons](https://x.com/Justin_Bons/status/1755996514303242478) has called out *“fake TPS metrics”* from major platforms like Solana and Cardano. Solana’s famous 65,000 TPS is far above what it achieves in practice; the estimated real user transactions are tens of hundreds, not tens of thousands ([source](https://www.chainspect.app/chain/solana?range-cm=month)). 
 
 Cardano’s often-quoted “477 TPS theoretical max” drops to ~18 TPS once you factor current block size and timing; at some points, real usage has been **<1-2 TPS** ([source](https://cexplorer.io/tps)). Counting multiple outputs per transaction as “transactions” or ignoring network bottlenecks makes the number look better than reality.
 
