@@ -1,10 +1,13 @@
 ---
-date: 2023-08-11T14:13:30.302000Z
-description: "Tech Talk #2: Mysteries of stateful UTXO - the ultimate guide to Alephium's accounting model, featuring a discussion with Cheng Wang, inventor of stateful UTXO."
-seoDescription: "Alephium Tech Talk #2 stateful UTXO ultimate guide - Cheng Wang discussion. Mysteries of accounting model and blockchain innovation insights."
+title: "TECH TALK #2 — Mysteries of stateful UTXO: The Ultimate Guide to
+  Alephium’s accounting model (and…"
+description: "Tech Talk #2: Mysteries of stateful UTXO - the ultimate guide to
+  Alephium's accounting model, featuring a discussion with Cheng Wang, inventor
+  of stateful UTXO."
+seoDescription: "Alephium Tech Talk #2 stateful UTXO ultimate guide - Cheng Wang
+  discussion. Mysteries of accounting model and blockchain innovation insights."
+date: 2023-08-11T14:13:30.302Z
 featuredImage: image_739b979c6b.png
-title: 'TECH TALK #2 — Mysteries of stateful UTXO: The Ultimate Guide to Alephium’s
-  accounting model (and…'
 ---
 
 _A discussion with Cheng Wang, inventor of stateful UTXO and founder of Alephium_
@@ -105,7 +108,7 @@ VM: **If the tokens are native in Alephium, does this mean I can pay GAS in any 
 
 CW: No. In our design, only the built-in token can be used to pay for transaction fees (gas). Using arbitrary tokens to pay for gas can be difficult because it requires an oracle to accurately determine the token’s price before the transaction. Additionally, allowing arbitrary tokens to pay for gas can make the design and code more complex, which may not be worth the added complexity. Instead, using the built-in token, or blockchain token, to pay for gas fees ensures that there is demand for the token. This helps to create a sustainable model for the platform.
 
-VM: **Cosmos studied the possibility of** [paying for the gas with UST](https://docs.cosmos.network/main/core/tips#fee-payers-market) **at one time.**
+VM: **Cosmos studied the possibility of paying for the gas with UST at one time.**
 
 CW: Using stablecoins as a method to pay transaction fees on a blockchain platform has its pros and cons and can be interesting for future research. On the plus side, it offers stability. However, if a stablecoin loses its peg, it could impact the blockchain’s functionality. This could necessitate updates to the blockchain to either remove or add stablecoins as a valid form of payment, a process which can be complicated and time-consuming.
 
