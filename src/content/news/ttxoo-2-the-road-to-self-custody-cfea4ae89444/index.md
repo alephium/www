@@ -1,9 +1,11 @@
 ---
-date: 2022-08-11T16:13:20.641000Z
-description: "TTxOO 2 — The road to Self-Custody: Introduction to the journey towards self-custody solutions and decentralized financial independence."
-seoDescription: "TTxOO 2 road to self-custody - journey towards self-custody solutions. Decentralized financial independence and custody introduction."
-featuredImage: image_2e22410376.jpg
 title: TTxOO 2 — The road to Self-Custody
+description: "TTxOO 2 — The road to Self-Custody: Introduction to the journey
+  towards self-custody solutions and decentralized financial independence."
+seoDescription: TTxOO 2 road to self-custody - journey towards self-custody
+  solutions. Decentralized financial independence and custody introduction.
+date: 2022-08-11T16:13:20.641Z
+featuredImage: image_2e22410376.jpg
 ---
 
 ### Introduction
@@ -100,7 +102,7 @@ It will provide extra privacy, as the wallet will share no information about the
 
 **What to look for — **It is a good practice to have dedicated equipment to run the node, separate from your everyday computer. This action will help to reduce the attack surface and lower the workload on the device (besides all the issues that can happen with a personal/professional regular device).
 
-This hardware can be anything supported by [JVM](https://en.wikipedia.org/wiki/Java_virtual_machine) and [rocksdb](http://rocksdb.org/) — a [computer](https://wiki.alephium.org/full-node/Full-Node-Starter-Guide)/[raspberry pi4](https://wiki.alephium.org/full-node/Full-node-on-raspberry-pi/) or another general-purpose computing device running our [full node](https://github.com/alephium/alephium/). Alephium node can be run standalone or deployed using [Docker](https://github.com/alephium/alephium/tree/master/docker) or available via appliance distributions such as [DAppNode](http://dappnode.io) and their [pre-installed physical nodes](https://dappnode.com/).
+This hardware can be anything supported by [JVM](https://en.wikipedia.org/wiki/Java_virtual_machine) and [rocksdb](http://rocksdb.org/) — a [computer](https://docs.alephium.org/full-node/getting-started/)/[raspberry pi4](https://wiki.alephium.org/full-node/raspberry-pi/) or another general-purpose computing device running our [full node](https://github.com/alephium/alephium/). Alephium node can be run standalone or deployed using [Docker](https://github.com/alephium/alephium/tree/master/docker) or available via appliance distributions such as [DAppNode](http://dappnode.io) and their [pre-installed physical nodes](https://dappnode.com/).
 
 **Cons — **Your equipment will need constant attention because the blockchains are getting bigger and consuming a significant amount of space on disk. In addition, synchronizing the node with the network can sometimes take a bit of time, and the ability to send and receive transactions rely only on your node running correctly.
 
@@ -112,7 +114,7 @@ This hardware can be anything supported by [JVM](https://en.wikipedia.org/wiki/J
 
 Swagger is awesome
 
-**Pros **— The next step is an improvement on the flexibility of your setup, as the [node wallet](https://wiki.alephium.org/wallet/Wallet-Guide) (which is directly included in the node’s code) has many more features than the desktop wallet. For example, it can do time-locked transactions, create multi-signature wallets, and/or interact with smart contracts.
+**Pros **— The next step is an improvement on the flexibility of your setup, as the [node wallet](https://docs.alephium.org/wallet/node-wallet-guide/) (which is directly included in the node’s code) has many more features than the desktop wallet. For example, it can do time-locked transactions, create multi-signature wallets, and/or interact with smart contracts.
 
 [Multisig wallets](https://blog.bitstamp.net/post/what-is-a-multisig-wallet/) allow multiple signers to make a transaction ready for broadcast into the network, and [Time-locked transactions](https://en.bitcoin.it/wiki/Timelock) are a mechanism that locks out a transaction until a predetermined time (or block height) is reached.
 
