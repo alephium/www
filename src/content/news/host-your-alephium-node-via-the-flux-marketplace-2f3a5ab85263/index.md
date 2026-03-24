@@ -28,11 +28,11 @@ There are plenty of advantages to using Flux instead of traditional Web2 infrast
 
 ### Alephium node on Flux — a tutorial
 
-Before following the tutorial, you will need to install the [zelcore wallet](https://zelcore.io/), and own some FLUX ([find how here](https://runonflux.com/).
+Before following the tutorial, you will need to install the [zelcore wallet](https://zelcore.io/), and own some FLUX [find how here](https://runonflux.com/).
 
 ![](image_d648d485af.png)
 
-1.  First head over to [https://runonflux.com/(https://runonflux.com/)
+1.  First head over to [https://runonflux.com/](https://runonflux.com/)
 2.  Once there, log in using your ZelID. It is an instance of the [Zelcore Wallet](https://zelcore.io/).
 
 ![](image_3dbacefda5.png)
