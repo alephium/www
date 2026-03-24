@@ -1,9 +1,13 @@
 ---
-date: 2022-09-13T12:39:56.929000Z
-description: 'Technical exploration of transactions per second (TPS) concepts in Alephium and blockchain technology, part 2 of a comprehensive series on key blockchain fundamentals.'
-seoDescription: 'Alephium TPS transactions per second technical guide - blockchain fundamentals series part 2. Understanding TPS metrics and performance.'
-featuredImage: image_47ac4eb526.jpg
 title: Transactions Per Second (TPS)
+description: Technical exploration of transactions per second (TPS) concepts in
+  Alephium and blockchain technology, part 2 of a comprehensive series on key
+  blockchain fundamentals.
+seoDescription: Alephium TPS transactions per second technical guide -
+  blockchain fundamentals series part 2. Understanding TPS metrics and
+  performance.
+date: 2022-09-13T12:39:56.929Z
+featuredImage: image_47ac4eb526.jpg
 ---
 
 A Technical Promenade, part 2
@@ -47,7 +51,7 @@ TPS = 1’974.88 (average transactions per block) / 600 (block time in seconds) 
 
 Disclaimer: This is how it works in theory, in practice, there are complexities such as [Segwit transactions](https://www.exodus.com/news/segwit-explained/) and [virtual bytes](https://en.bitcoin.it/wiki/Weight_units) (vb) measurements that might make the actual numbers a bit different than those you see here, but it’s close enough.
 
-Cheat code: Skip the maths, and just go to a blockchain explorer, and they give you [the live data](https://blockchair.com/bitcoin). You can also [check this chart,](https://blockchair.com/bitcoin/charts/transactions-per-second) and you’ll see our result is right in line with historical data: TPS on Bitcoin usually fluctuates between 2 and 4 TPS. One of the best websites to have all this data in the smallest details is [mempool.space](https://mempool.space/fr/).
+Cheat code: Skip the maths, and just go to a blockchain explorer, and they give you [the live data](https://www.blockchair.com/bitcoin). You can also [check this chart,](https://www.blockchair.com/bitcoin/charts/transactions-per-second) and you’ll see our result is right in line with historical data: TPS on Bitcoin usually fluctuates between 2 and 4 TPS. One of the best websites to have all this data in the smallest details is [mempool.space](https://mempool.space/fr/).
 
 ![](image_6b3024b107.jpg)
 
@@ -57,7 +61,7 @@ On a “gas limit” blockchain (Ethereum, Avalanche… or Alephium), we have a 
 
 On the one hand, each action on Ethereum’s network has a cost in gas. Gas is the measure of the computational effort needed by the network to process the transaction. To give you a sense of perspective, the cheapest, simplest type of transaction costs 21’000 gas. And a complex DeFi transaction can easily cost more than a million gas.
 
-On the other hand, the gas limit per block is 30M gas (max), but on average, the target [gas actually consumed per block is 15M](https://blockchair.com/ethereum/charts/average-gas-used). So, if all transactions were the simplest kind, we would have a theoretical limit of 30M (absolute max gas limit) / 21’000 (minimum gas transaction) = 1,4k transactions per block.
+On the other hand, the gas limit per block is 30M gas (max), but on average, the target [gas actually consumed per block is 15M](https://www.blockchair.com/ethereum/charts/average-gas-used). So, if all transactions were the simplest kind, we would have a theoretical limit of 30M (absolute max gas limit) / 21’000 (minimum gas transaction) = 1,4k transactions per block.
 
 And from there, since the block time is, on average, 14,5 seconds, it would give us a hard max limit of 93 Transactions per second. But in fact, since most transactions are not the simplest/easiest to compute and therefore cost much more gas, and since the target gas limit per block is half of the 30M maximum, we observe that on average, the **TPS on Ethereum is around 15 Transactions per second**.
 
@@ -66,7 +70,7 @@ But let’s keep in mind some nuances! Despite looking simple, these formulas ha
 One interesting example of this is Solana, on which:
 
 - [10–15% of transactions fail and have to be discounted](https://mirror.xyz/0xFC03995eeaf129459C760729661CAa43308293B7/yNOU-vVmRsOpJ3oV30_AS1T2-1-w92aGQlGXQiA1fQ4), so their TPS count has a “success rate.”
-- 25–30% of transactions are votes for the next validator, meaning they have to separate [“TPS” and “non-vote TPS”](https://analytics.solscan.io/public/dashboard/8d888828-baae-47b9-948b-d087e5de1411) to have a usable metric of how many transactions can effectively happen.
+- 25–30% of transactions are votes for the next validator, meaning they have to separate “TPS” and “non-vote TPS” to have a usable metric of how many transactions can effectively happen.
 
 It’s essential to stay careful when using TPS comparisons because we’re often dealing with averages (for example, a smart contract call can be way bigger than a simple P2P transaction), and the word “transaction” can have a slightly different meaning from one blockchain to another. Also, some transactions can contain… multiple transactions (see this on [Cardano](https://datastudio.google.com/reporting/3136c55b-635e-4f46-8e4b-b8ab54f2d460/page/p_wxcw6g0irc), which, for now, handles up to 2 TPS )!
 
