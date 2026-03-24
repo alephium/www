@@ -1,9 +1,13 @@
 ---
-date: 2022-09-20T14:05:54.857000Z
-description: 'Technical exploration of time to finality concepts in Alephium and blockchain technology, part 3 of a comprehensive series on key blockchain fundamentals.'
-seoDescription: 'Alephium time to finality technical guide - blockchain fundamentals series part 3. Understanding finality concepts and transaction confirmation.'
-featuredImage: image_1a832ca4ff.jpg
 title: Time to Finality
+description: Technical exploration of time to finality concepts in Alephium and
+  blockchain technology, part 3 of a comprehensive series on key blockchain
+  fundamentals.
+seoDescription: Alephium time to finality technical guide - blockchain
+  fundamentals series part 3. Understanding finality concepts and transaction
+  confirmation.
+date: 2022-09-20T14:05:54.857Z
+featuredImage: image_1a832ca4ff.jpg
 ---
 
 A Technical Promenade, part 3
@@ -24,7 +28,7 @@ _“In finance, the term “finality of payment” refers to the moment at which
 
 In crypto, finality is “[the assurance or guarantee that cryptocurrency transactions cannot be altered, reversed, or canceled after they are completed.](https://academy.binance.com/en/glossary/finality)”. So it’s not really enough that your transaction went through and is legitimate (for example, that it is not a [double spend](https://en.wikipedia.org/wiki/Double-spending)), it also has to become **immutable and final.** This is the reason most exchanges will wait for a few blocks before accepting your deposit. They want to be sure that the transaction is not going to be rolled back and that they effectively and definitely dispose of the funds before they allow you to trade.
 
-This time between the moment your transaction is submitted to the network and the moment it’s considered final is called **time-to-finality** (which is really a fancy way of talking of _latency_), and it’s [a much more accurate representation of “speed” in a blockchain](https://fantom.foundation/blog/tps-or-ttf-understanding-blockchain-speed/#:~:text=Time%2Dto%2Dfinality%20%28TTF,analog%20to%20latency%20in%20networking.). Because what good is a blockchain that does millions of transactions per second but cannot get you finality fast enough?
+This time between the moment your transaction is submitted to the network and the moment it’s considered final is called **time-to-finality** (which is really a fancy way of talking of _latency_), and it’s a much more accurate representation of “speed” in a blockchain. Because what good is a blockchain that does millions of transactions per second but cannot get you finality fast enough?
 
 There are two main categories of finality: probabilistic finality and deterministic finality.
 
