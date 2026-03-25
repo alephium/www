@@ -15,7 +15,7 @@ relatedPosts:
 ---
 *Op-ed by Pepper, Head of Marketing & Growth, Alephium. The views expressed are his own and do not necessarily reflect those of Alephium.*
 
----
+- - -
 
 The longer you’ve been in this space, the more hype cycles you’ve seen deflate into harsh realities. 
 
@@ -55,7 +55,7 @@ I’m not going to sit here and say that P2P lending doesn’t carry counterpart
 
 By this point, most can now appreciate the vision the core development team has for Powfi. Currently in Public Testnet, it is clearly going to be the essential central liquidity hub, with the CLMM DEX and $ALPH staking growing into an economic anchor. We’ve written and spoken about this time and time again, but its goal is to *grow the TVL pie* and be a composable tool that every dApp in our ecosystem can click into. That’s sticky. 
 
-What we know already is that users will stake $ALPH for xALPH, trade pairs from our ecosystem with minimal slippage (think $LINK, $AURA, $EX, $ABX, and more), and earn from fees. Everything about Powfi, from start to finish, top to bottom, has been designed so that everybody wins. As I’ve argued in previous columns, this is critical for L1 longevity, and I believe it will prove to be a major turning point for Alephium’s story.
+What we know already is that users will stake $ALPH for xALPH, trade pairs from our ecosystem with minimal slippage (think $LINX, $AURA, $EX, $ABX, and more), and earn from fees. Everything about Powfi, from start to finish, top to bottom, has been designed so that everybody wins. As I’ve argued in previous columns, this is critical for L1 longevity, and I believe it will prove to be a major turning point for Alephium’s story.
 
 ## The Synergy in Real-Time
 
