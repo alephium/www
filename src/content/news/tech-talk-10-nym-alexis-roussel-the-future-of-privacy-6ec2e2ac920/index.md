@@ -48,7 +48,7 @@ Cryptocurrencies present a unique context where privacy is essential (and hard t
 
 NYM introduced a client inside the [Libp2p framework](https://github.com/ChainSafe/rust-libp2p-nym), allowing network participants (like node operators) to participate in the network consensus without revealing their IP or physical location to the rest of the network.
 
-In the same way, crypto wallets can also take advantage of NYM mixnets when sending transactions to the network. Nym provides software called [NYM Connect](https://shipyard.nymtech.net/nym-connect/) that makes their integration easier and abstracts away complexity from the user.
+In the same way, crypto wallets can also take advantage of NYM mixnets when sending transactions to the network. Nym provides software called [NYM Connect](https://nym.com/) that makes their integration easier and abstracts away complexity from the user.
 
 [(and guess who’s considering adding this as a feature?)](https://github.com/alephium/desktop-wallet/issues/496)
 

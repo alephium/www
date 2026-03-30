@@ -22,7 +22,7 @@ _Tl;dr — In this article, you will find a breakdown of the Alephium Bridge
 
 The Alephium Bridge is a sophisticated system with various components that work together to achieve efficient cross-chain communication. It is what’s called a [lock &amp; mint bridge](https://li.fi/knowledge-hub/bridge-classification/), built on top of a fork of [Wormhole](https://docs.wormhole.com/wormhole/).
 
-Out of all the available options (and there are [many](https://zeeprime.capital/the-bridges-are-dead-long-live-the-bridges)), Alephium chose to build on wormhole precisely because it’s open source with considerable TVL and has survived multiple incidents in the past, it has shown resilience and strength like no other bridge protocol. It is also very well [documented](https://docs.wormhole.com/wormhole/)!
+Out of all the available options (and there are many), Alephium chose to build on wormhole precisely because it’s open source with considerable TVL and has survived multiple incidents in the past, it has shown resilience and strength like no other bridge protocol. It is also very well [documented](https://docs.wormhole.com/wormhole/)!
 
 You can find the [Alephium Bridge code here](https://github.com/alephium/wormhole-fork).
 
