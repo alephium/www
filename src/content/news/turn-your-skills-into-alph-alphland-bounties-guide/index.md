@@ -16,17 +16,15 @@ This guide will walk you through everything you need to know so that you can bro
 
 ## What Are Bounties?
 
-Bounties are paid tasks posted by ecosystem projects on Alphland. They cover a range of categories from content creation to design and development. By completing bounties, you earn rewards in $ALPH (Alephium's native token) or USD, helping grow the ecosystem while getting compensated for your work.
+Bounties are paid tasks posted by ecosystem projects on Alphland. They cover a range of categories from content creation to design and development. By completing bounties, you earn rewards in $ALPH (Alephium's native coin), helping grow the ecosystem while getting compensated for your work.
 
-Note that while all bounties are paid in ALPH, some listings are displayed in a USD value. They will be paid in ALPH at the current exchange rate upon successful completion of the bounty (at the lister’s discretion).
+Note that while all bounties are paid in ALPH, some listings may be displayed in a USD value. These will be paid in ALPH at the current exchange rate upon successful completion of the bounty.
 
 ### How it works (in 3 steps):
 
 1. **Join** bounties from ecosystem projects
 2. **Deliver** high-quality work
 3. **Earn** ALPH and unlock new opportunities
-
-
 
 ### **Step 1: Browse Available Bounties**
 
@@ -59,7 +57,7 @@ At the top you'll see:
 
 Prizes Tab shows:
 
-* **Total Prizes:** The total reward pool (e.g. 100 USD or 500 ALPH).
+* **Total Prizes:** The total reward pool (e.g. 500 ALPH or 100 USD).
 * **Prize distribution:** A visual breakdown showing how rewards are split across places (1st, 2nd, 3rd, etc.).
 * **Reward Breakdown table:** Exact amounts for each placement.
 * **Payment Terms:** How and in what currency you'll be paid. Usually, rewards are paid in ALPH.
@@ -120,17 +118,15 @@ We want you to win. Here’s how to improve your chances:
 * **Quality over speed:** Sponsors rank submissions by quality, so take the time to deliver your best work.
 * **Bookmark bounties:** Use the bookmark icon to save interesting bounties and come back to them later.
 
-
-
 ## FAQ: Bounties
 
 **Q: Do I need an account to participate?**
 
-A: Yes, you need to be logged in on Alphland to submit your work. You can log in with your gmail account or a random email.
+A: Yes, you need to be logged in on Alphland to submit your work. You can log in with your gmail account or a another email address.
 
 **Q: How are rewards paid?**
 
-A: Rewards are typically paid in ALPH (Alephium's native token). For bounties listed in USD, the amount is converted to ALPH at the current exchange rate.
+A: Rewards are typically paid in ALPH (Alephium's native coin). For bounties listed in USD, the amount is converted to ALPH at the current exchange rate.
 
 **Q: Can I submit to multiple bounties at the same time?**
 
