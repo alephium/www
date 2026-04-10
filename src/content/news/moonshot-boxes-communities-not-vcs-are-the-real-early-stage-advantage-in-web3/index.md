@@ -9,14 +9,14 @@ seoDescription: Stop being exit liquidity. Discover how Moonshot Boxes uses game
   as top-tier VCs.
 date: 2026-05-25T12:00:00.000Z
 spotlight: true
-featuredImage: screenshot-2569-02-09-at-13.29.39.png
+featuredImage: moonshot-alephium-banner-v3.png
 relatedPosts:
   - proof-of-conviction/index
   - crypto-tiktok-syndrome-everything-right-now/index
 ---
 **Thought piece by Raj (@16bitApex)**
 
----
+- - -
 
 *I didn’t come into Web3 through the traditional path.*
 
@@ -38,7 +38,7 @@ Projects rely on communities for momentum, feedback, and legitimacy, yet those s
 
 To me this is more than a moral argument, I see this as a **market design problem**.
 
-![d](screenshot-2569-02-09-at-13.28.55.png)
+
 
 ## “Communities Are Not Exit Liquidity, They’re Infrastructure”
 
@@ -64,11 +64,15 @@ There are two core formats, each designed around a different participant psychol
 
 ### Fastest Finger
 
+![](fastest-finger.png)
+
 Full allocations go live at random times. The first person to act secures the entire allocation.
 
 This format rewards decisiveness, attention, and conviction. It mirrors competitive environments whether trading, gaming, or high-velocity markets where hesitation has a real cost.
 
 ### Raffle Mode
+
+![](raffle-mode.png)
 
 Fully on-chain raffles with low-cost entry tickets and provably random outcomes.
 
@@ -87,8 +91,6 @@ Through the network I have built up over the years running a VC, Projects are al
 **For communities**, the benefit is simple but profound: **proper early-stage positioning**. Instead of being spectators or late participants, users gain access alongside early capital, on transparent terms.
 
 The results speak quietly but clearly. In a relatively short period of time, Moonshot Boxes has helped projects raise over $1 million in a short space of time, while simultaneously onboarding users who are invested financially and emotionally right from the start.
-
-![](2vsvmtrbsjdqhqgiizyxkqi66jp.jpg)
 
 ## Ecosystems Don’t Have a Funding Problem - They Have a Coordination Problem
 
@@ -120,6 +122,8 @@ The next phase of Moonshot Boxes that I am designing is focused on building prod
 
 ## The Future Belongs to Alignment
 
+![](partnerships_banner_v3.png)
+
 The next generation of successful Web3 projects won’t be defined by who invested first.
 
 **They’ll be defined by who believed first.**
@@ -132,6 +136,6 @@ I’ve been in this space for over a decade, and at its peak, crypto was built b
 
 In reality, the deepest and most durable value has always come from communities: the users, builders, and believers who show up long before certainty exists. Web3 was designed to empower them, yet over time, that power was quietly abstracted away. My aim is simple - to return early-stage ownership, alignment, and influence back to the communities that were meant to have it from the beginning.
 
----
+- - -
 
 Raj (@16bitApex) is a former professional gamer and professional gambler turned investor. He is the co-founder of Cetacean Capital and the founder of Moonshot Boxes, where he focuses on early-stage access, community alignment, and ecosystem growth in Web3.
