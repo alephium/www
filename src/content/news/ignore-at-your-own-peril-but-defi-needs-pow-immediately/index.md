@@ -8,7 +8,7 @@ seoDescription: DeFi is under attack from devastating exploits. Discover why
   desperately needs.
 date: 2026-04-23T16:30:00.000Z
 spotlight: true
-featuredImage: powficolumnpepper.png
+featuredImage: pow-defi.png
 ---
 **Op-Ed By Pepper, Head of Marketing & Growth at Alephium**
 
