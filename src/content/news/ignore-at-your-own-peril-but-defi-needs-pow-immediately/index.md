@@ -16,15 +16,15 @@ featuredImage: powficolumnpepper.png
 
 - - -
 
-After eight and half years working in Web3, I’ve seen it all. Hype cycles rise and spin up incredible levels of hope and “only up” narratives, only to later to deflate into a period of consolidation, along with a series of other issues, most notably the crumbling of security standards.
+After eight and a half years working in Web3, I’ve seen it all. Hype cycles rise and spin up incredible levels of hope and “only up” narratives, only to deflate sometime later into a period of consolidation, along with a series of other issues, most notably the crumbling of security standards.
 
 In the first quarter of 2026, we saw that play out again. Web3 projects lost over $450m across dozens of incidents, with hackers and their social engineering plots still proving successful. At the start of Q2, KelpDAO became the newest “biggest victim of the year”, with $292m in losses. 
 
 Looking at these numbers, I maintain my strong personal conviction that **Proof-of-Work is a fundamentally better base layer for DeFi than Proof-of-Stake.** It is inherently more secure.
 
-## The Threat Landscape has Changed
+## The Threat Landscape Has Changed
 
-A few years ago, Web3 security was all about poorly written smart contracts. That’s why bridges were seen as easy targets, and small blockchains and protocols fell victim to organised cybercriminals. Today though, Defi-specific smart contract exploits have actually dropped by 89% year-over-year. This should be encouraging, but it really just tells us that the most expensive failures are not happening at the code layer anymore. It is the operational and infrastructure vulnerabilities that whet the appetite of bad actors.
+A few years ago, Web3 security was all about poorly written smart contracts. That’s why bridges were seen as easy targets, and small blockchains and protocols fell victim to organised cybercriminals. Today though, DeFi-specific smart contract exploits have actually dropped by 89% year-over-year. This should be encouraging, but it really just tells us that the most expensive failures are not happening at the code layer anymore. It is the operational and infrastructure vulnerabilities that whet the appetite of bad actors.
 
 ![](1.png)
 
@@ -58,16 +58,16 @@ Security is only half of the puzzle. The other half is economic sustainability, 
 
 Alephium’s core dev team has offered a solution in the form of Powfi, which allows us to activate “Phase Two: Aligned Economics”. Basically, they’ve used our own ultra-secure programming language (Ralph) to build a protocol-owned liquidity engine (DEX + $ALPH staking). The idea combines a CLMM DEX with CPMM pools. The combination of all these pieces of tech is an ultra-secure and aligned ecosystem loop that ends the system of fragmented value capture.
 
-This will be the start of a new era for $ALPH holders. I’m delighted for the community, you’ve been incredibly patient and this build has been done with you in mind. That’s why transaction fees are split between $ALPH buybacks and burns, and offering “staking” rewards to $ALPH stakers. Your conviction contributes to the network’s long-term health, so we hope that liquid staking via xALPH, giving you asset productivity and ongoing DeFi participation, will be a massive upgrade.
+This will be the start of a new era for $ALPH holders. I’m delighted for the community, you’ve been incredibly patient and this build has been done with you in mind. That’s why transaction fees are split between $ALPH buybacks and burns and offering “staking” rewards to $ALPH stakers. Your conviction contributes to the network’s long-term health, so we hope that liquid staking via xALPH, giving you asset productivity and ongoing DeFi participation, will be a massive upgrade.
 
 ## Building for Generations
 
-Even though I only joined Alephium last year, I’ve been told countless times just how dedicated the core dev team is to build superior tech. BlockFlow sharding is one example of this, and how it offers 20k+ TPS on PoW while maintaining a single-chain user experience (avoiding L2s etc). 
+Even though I only joined Alephium last year, I’ve been told countless times just how dedicated the core dev team is to building superior tech. BlockFlow sharding is one example of this, and how it offers 20k+ TPS on PoW while maintaining a single-chain user experience (avoiding L2s etc). 
 
 ![](3.png)
 
-Now, Powfi will be definitive proof that a superior technical foundation is perfect for supporting real-world Defi applications. And unless there’s some unforeseen hiccups, it’ll do it in a way that’s fast, secure, and economically sustainable. 
+Now, Powfi will be definitive proof that a superior technical foundation is perfect for supporting real-world Defi applications. And unless there are some unforeseen hiccups, it’ll do it in a way that’s fast, secure, and economically sustainable. 
 
-So, in an industry that I love, one plagued by compromises, I believe that Alephium can act as a DeFi fortress and sanctuary. That’s the “no compromises” offer we’ve made. It’s the “Web3 you were promised” that we promised. It’s a space away from nation-state hackers and the shadow contagion.
+So, in an industry that I love, one plagued by compromises, I believe that Alephium can act as a DeFi fortress and sanctuary. That’s the “no compromises” offer we’ve made. It’s the “Web3 you were promised” statement that we firmly believe in. It’s a space away from nation-state hackers and the shadow contagion.
 
 So, yes, delivering DeFi on PoW is immediately necessary to restore trust and alignment to Web3, and that’s a hill I’ll die on.
