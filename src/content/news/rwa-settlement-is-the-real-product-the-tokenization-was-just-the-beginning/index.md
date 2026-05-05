@@ -30,16 +30,13 @@ Crypto investors know their withdrawal schedule upfront. Factoring companies kno
 
 The mismatch does not disappear, but it becomes predictable for both sides; and predictability, not speed, is what institutional confidence actually requires.
 
-
 ![](01-predictable-mismatch.png)
-
-
 
 ### Patching the gap with more layers
 
 The natural response to this problem has been to build compensating mechanisms. On-chain auction systems, specialized liquidity providers, routing paths between networks, dedicated settlement layers designed to bridge the gap between real-world redemption timelines, and DeFi's demand for instant finality.
 
-Each of these additions is, in isolation, technically reasonable. The problem is what they add up to. If every new asset class requires its own settlement add-on, we are not really scaling financial infrastructure, but multiplying integration surfaces. And remember, every surface adds complexity, latency, and failure risk that sophisticated capital will identify and price accordingly.
+Each of these additions is, in isolation, technically reasonable. The problem is what they add up to. If every new asset class requires its own settlement add-on, we are not really scaling financial infrastructure, but multiplying integration surfaces. And remember, every surface adds complexity, latency, and failure risk that sophisticated capital will identify and price accordingly.  
 
 ![](02-every-surface-adds-risk.png)
 
