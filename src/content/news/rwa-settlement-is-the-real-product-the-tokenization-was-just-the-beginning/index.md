@@ -10,7 +10,7 @@ date: 2026-05-05T20:00:00.000Z
 spotlight: true
 featuredImage: rwamoaalabou.jpg
 ---
-*Op-ed by Mo Aalabou, Founder of [Factor](https://www.factor.cx/) & [1450 Digital](1450.digital)*
+*Op-ed by Mo Aalabou, Founder of [Factor](https://www.factor.cx/) & [1450 Digital](https://1450.digital)*
 
 There is a version of the RWA narrative that treats tokenization as the finish line. Get the asset on-chain, make it tradable, call it a success. I understand why that framing took hold. In the early days, simply proving that a tokenized bond or a credit instrument could exist on a public blockchain felt like meaningful progress.
 
