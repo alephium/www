@@ -6,7 +6,7 @@ description: What happens when AI reads your code? Audits aren't enough anymore.
 seoDescription: AI can now scan and exploit DeFi smart contracts in seconds.
   Discover how Alephium’s Ralph language eliminates dangerous EVM
   vulnerabilities by design.
-date: 2026-06-21T20:00:00.000Z
+date: 2026-05-21T21:07:00.000Z
 spotlight: true
 featuredImage: image.png
 ---
