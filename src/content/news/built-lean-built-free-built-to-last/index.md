@@ -1,10 +1,10 @@
 ---
 title: Built Lean. Built Free. Built to Last.
-description: Eight million dollars. Five years. Zero outages. Discover how
+description: Five million dollars. Five years. Zero outages. Discover how
   Alephium built a highly secure, sharded L1 by staying true to crypto's
   cypherpunk vision.
 seoDescription: Explore how Alephium built a secure, sharded PoW Layer 1 with
-  just $8M. See why true decentralization, sUTXO security, and 100% uptime beat
+  just $5M. See why true decentralization, sUTXO security, and 100% uptime beat
   VC-funded hype.
 date: 2026-05-28T20:00:00.000Z
 spotlight: true
@@ -19,7 +19,7 @@ relatedPosts:
 
 - - -
 
-* Eight million dollars. 
+* Five million dollars. 
 * Five years. 
 * Zero outages. 
 * No hedge fund money.
@@ -40,11 +40,11 @@ Crypto “grew up”, put on a suit, and learned to talk to institutions.
 
 This is a column about what happens when a team builds as if the whitepaper still means something (it means everything).
 
-## What Eight Million Dollars Actually Builds
+## What Five Million Dollars Actually Builds
 
 The figures are worth sitting with for a moment. Avalanche raised over $640 million. Polygon raised $450 million. Aptos raised $410 million. Sui raised $356 million. StarkWare raised $287 million…
 
-**Alephium raised $8 million**, and with it, shipped a sharded proof-of-work Layer 1 with a custom virtual machine, a full wallet suite across mobile, desktop, and browser extension, and a live bridge that has processed over $146 million in lifetime volume.
+**Alephium raised $5 million**, and with it, shipped a sharded proof-of-work Layer 1 with a custom virtual machine, a full wallet suite across mobile, desktop, and browser extension, and a live bridge that has processed over $146 million in lifetime volume.
 
 ![](body1-eight-million.png)
 
@@ -52,7 +52,7 @@ My comparison is not about embarrassing well-funded competitors. I’m much more
 
 When you have raised hundreds of millions, you are accountable to the people who gave you that money, and those people have a timeline, a return expectation, and a risk profile that shapes every decision you make.
 
-When you have raised $8 million and you are building because you genuinely believe in what you are building, the decisions look different. Maybe they are leaner, likely more deliberate, and certainly less willing to ship the wrong thing because the runway demands it.
+When you have raised $5 million and you are building because you genuinely believe in what you are building, the decisions look different. Maybe they are leaner, likely more deliberate, and certainly less willing to ship the wrong thing because the runway demands it.
 
 Capital efficiency is all the evidence you need to prove a set of robust priorities.
 
