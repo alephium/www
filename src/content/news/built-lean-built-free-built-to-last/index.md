@@ -4,7 +4,7 @@ description: Five million dollars. Five years. Zero outages. Discover how
   Alephium built a highly secure, sharded L1 by staying true to crypto's
   cypherpunk vision.
 seoDescription: Explore how Alephium built a secure, sharded PoW Layer 1 with
-  just $5M. See why true decentralization, sUTXO security, and 100% uptime beat
+  just $5M. See why true decentralisation, sUTXO security, and 100% uptime beat
   VC-funded hype.
 date: 2026-05-28T20:00:00.000Z
 spotlight: true
@@ -38,7 +38,7 @@ Crypto “grew up”, put on a suit, and learned to talk to institutions.
 
 **Alephium did not do that.** 
 
-This is a column about what happens when a team builds as if the whitepaper still means something (it means everything).
+This is my column about what happens when a team builds as if the whitepaper still means something (I think it means everything, really).
 
 ## What Five Million Dollars Actually Builds
 
@@ -78,7 +78,7 @@ Soon, Alephium will ship [Powfi](http://powfi.alephium.org), a CLMM/CPMM DEX, al
 
 ## Security Is Not a Service You Buy
 
-As I talked about in the first episode of [Alephium Aware](https://x.com/alephium/status/2052010497378292050), close to a billion dollars was lost to exploits in the first four months of 2026. Reentrancy attacks, unlimited token approvals, bridge failures, oracle manipulation. These same weaknesses have been turning up in the same postmortems, year after year, with the same promises (often in a poxy little X post) that next time will be different.
+As I talked about on the first episode of [Alephium Aware](https://x.com/alephium/status/2052010497378292050), close to a billion dollars was lost to exploits in the first four months of 2026. Reentrancy attacks, unlimited token approvals, bridge failures, oracle manipulation. These same weaknesses have been turning up in the same postmortems, year after year, with the same promises (often in a poxy little X post) that next time will be different.
 
 I’m telling you now, next time will not be different, because the architecture will not have changed. We know these are not edge cases or unpredictable failures, but the logical consequences of building on a foundation that was never designed to be safe. An audit can find a bug, but it cannot fix a design.
 
@@ -114,6 +114,6 @@ The cypherpunk values embedded in the Bitcoin whitepaper are far from nostalgic.
 
 I recently said that all of the pieces required for the future of DeFi exist here on this change - some viewers picked up on that, and it remains true.
 
-Alephium is one of the few projects still building to that spec, with five years of evidence to show it. The only thing that is missing is a bigger wave of cypherpunks who still care about the original premise and want to go back to building ethically and permissionlessly.
+Alephium is one of the few projects still building to that spec, with almost five years of evidence to show it. The only thing that is missing is a bigger wave of cypherpunks who still care about the original premise and want to go back to building ethically and permissionlessly. If they can trigger a new wave of activity, the sky is the limit for Alephium.
 
 Anyhow, the rails are laid and the doors are open. Come and use them.
