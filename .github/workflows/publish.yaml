@@ -45,6 +45,7 @@ jobs:
         env:
           GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES: true
           CI: true
+          DELETE_ADMIN: true
 
       - name: Deploy to S3
         run: npm run deploy
