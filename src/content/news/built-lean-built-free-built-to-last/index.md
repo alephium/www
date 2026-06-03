@@ -102,7 +102,7 @@ I’m convinced that this matters as a philosophical property. You cannot build 
 
 * Governance captured by early investors. 
 * Validator sets controlled by a handful of entities.
-* Nodes that require resources most people simply don’t have.
+* Nodes that require resources most people don’t have.
 
 Proof-of-Work, run honestly, resists all that. It is not elegant and it is not fashionable, but it delivers something that Proof-of-Stake architectures have consistently struggled to deliver at scale, which is a network where no small group of people holds the ability to turn it off.
 
