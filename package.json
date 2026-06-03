@@ -16,7 +16,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "predeploy": "npm run build",
+    "postbuild": "if [ \"$CI\" = true ]; then rm -rf public/admin; fi",
     "deploy": "gatsby-plugin-s3 deploy",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json}\" '!{.cache,public}/**/*'",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
