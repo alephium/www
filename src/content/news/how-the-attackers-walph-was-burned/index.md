@@ -9,6 +9,8 @@ seoDescription: Detailing the authorized remediation to burn an attacker’s
 date: 2026-06-08T14:00:00.000Z
 spotlight: true
 featuredImage: screenshot-2569-06-04-at-19.47.57.png
+relatedPosts:
+  - the-alephium-bridge-exploit-on-chain-report/index
 ---
 **This report was also posted as a thread on X, which [you can read and engage with here](https://x.com/alephium/status/2062533440923140592).**
 
