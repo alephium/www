@@ -59,6 +59,40 @@ collections:
         hint: 'Related posts listed at the bottom of the article. You can search by post title.'
         required: false
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'pages'
+    label: 'Pages'
+    files:
+      - label: 'Homepage news popup'
+        name: 'homepage-news-popup'
+        file: 'src/content/homepage-news-popup.md'
+        fields:
+          - {
+              label: 'Enabled',
+              name: 'enabled',
+              widget: 'boolean',
+              default: true,
+              hint: 'Turn off to hide the popup without deleting its content.'
+            }
+          - { label: 'Badge', name: 'badge', widget: 'string' }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - {
+              label: 'Highlight text',
+              name: 'descriptionHighlight',
+              widget: 'string',
+              hint: 'Shown in bold on the first line.'
+            }
+          - {
+              label: 'Description',
+              name: 'description',
+              widget: 'string',
+              hint: 'Shown on the second line.'
+            }
+          - label: 'Button'
+            name: 'button'
+            widget: 'object'
+            fields:
+              - { label: 'Text', name: 'text', widget: 'string' }
+              - { label: 'URL', name: 'url', widget: 'string' }
   - name: 'menus'
     label: 'Menus'
     files:
