@@ -341,7 +341,7 @@ const CustomPage = (props: PageProps) => {
               </Accordion>
             </AccordionGroup>
 
-            <AccordionGroup>
+            {/* <AccordionGroup>
               <TextElement>
                 <h2 id="ambassador-program">Ambassador Program</h2>
               </TextElement>
@@ -366,7 +366,7 @@ const CustomPage = (props: PageProps) => {
                   Ambassadors are rewarded with exclusive swag, ALPH coins, opportunities to attend events, and more.
                 </p>
               </Accordion>
-            </AccordionGroup>
+            </AccordionGroup> */}
           </SubpageSection>
 
           <SectionDivider />

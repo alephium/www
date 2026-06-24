@@ -43,8 +43,8 @@ menuItems:
         link: /roadmap
       - title: Get started
         link: /get-started
-      - title: Ambassador Program
-        link: /ambassador
+      #- title: Ambassador Program
+      #  link: /ambassador
       - title: Grants
         link: /grants
       - title: Online communities

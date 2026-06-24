@@ -165,8 +165,8 @@ todoListSection:
       items:
         - text: 'Localized Content'
           description: 'Increase the availability of localized content.'
-        - text: 'Ambassador Program'
-          description: 'Increase the number & reach of ambassadors.'
+        #- text: 'Ambassador Program'
+        #  description: 'Increase the number & reach of ambassadors.'
         - text: 'Developer Onboarding'
           description: 'Enhance the onboarding process for developers.'
         - text: 'Alephium Hackathon & DevMeet-Up 2.0'
