@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { graphql, useStaticQuery } from 'gatsby'
 import { useEffect, useState } from 'react'
 import styled, { useTheme } from 'styled-components'
 
@@ -10,10 +11,32 @@ import CardText from '../../CardText'
 import CardFooterButtonContainer from '../../common/CardFooterButtonContainer'
 import TextElement from '../../customPageComponents/TextElement'
 
+export const homepageNewsPopupQuery = graphql`
+  query HomepageNewsPopup {
+    newsPopup: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/homepage-news-popup.md/" } }) {
+      nodes {
+        frontmatter {
+          enabled
+          badge
+          title
+          descriptionHighlight
+          description
+          button {
+            text
+            url
+          }
+        }
+      }
+    }
+  }
+`
+
 const HomepageNewsPopup = () => {
   const [isMounted, setIsMounted] = useState(false)
   const [isVisible, setIsVisible] = useState(true)
   const theme = useTheme()
+  const data = useStaticQuery<Queries.HomepageNewsPopupQuery>(homepageNewsPopupQuery)
+  const content = data.newsPopup.nodes[0]?.frontmatter
 
   const toggleVisibility = (visible: boolean) => setIsVisible(visible)
 
@@ -24,6 +47,10 @@ const HomepageNewsPopup = () => {
 
     return () => clearTimeout(timeout)
   }, [])
+
+  if (!content?.enabled) {
+    return null
+  }
 
   return (
     <NewsCardContainer>
@@ -65,21 +92,25 @@ const HomepageNewsPopup = () => {
         }}
       >
         <CardText>
-          <Badge color="palette2">BREAKING NEWS 🔥</Badge>
+          {content.badge && <Badge color="palette2">{content.badge}</Badge>}
           <TextElement>
-            <h2 style={{ color: theme.palette2 }}>Powfi Public Testnet</h2>
-            <p>
-              <strong>Test our Core dApp now.</strong>
-              <br />
-              Find bugs, earn bounties.
-            </p>
+            {content.title && <h2 style={{ color: theme.palette2 }}>{content.title}</h2>}
+            {(content.descriptionHighlight || content.description) && (
+              <p>
+                {content.descriptionHighlight && <strong>{content.descriptionHighlight}</strong>}
+                {content.descriptionHighlight && content.description && <br />}
+                {content.description}
+              </p>
+            )}
           </TextElement>
         </CardText>
-        <CardFooterButtonContainer>
-          <Button squared url="https://powfi.alephium.org">
-            Access now
-          </Button>
-        </CardFooterButtonContainer>
+        {content.button?.text && content.button?.url && (
+          <CardFooterButtonContainer>
+            <Button squared url={content.button.url}>
+              {content.button.text}
+            </Button>
+          </CardFooterButtonContainer>
+        )}
         <CloseButton onClick={() => toggleVisibility(false)}>×</CloseButton>
       </NewsCard>
     </NewsCardContainer>

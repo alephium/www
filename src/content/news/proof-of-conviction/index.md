@@ -14,7 +14,7 @@ relatedPosts:
 ---
 **Op-ed by Ratko, Marketing Lead, Alephium.**
 
-Hello and welcome! This is the first column article from Ratko, our Marketing Lead. Many of our community know him best as the Quartermaster of the Alephium Guard, our [ambassador program](/ambassador). Today, he explores some of the unique realities of the cryptocurrency industry.
+Hello and welcome! This is the first column article from Ratko, our Marketing Lead. Many of our community know him best as the Quartermaster of the Alephium Guard, our ambassador program. Today, he explores some of the unique realities of the cryptocurrency industry.
 
 **Note**: The views and opinions expressed in this column are those of the author and may not reflect the official stance of Alephium.
 

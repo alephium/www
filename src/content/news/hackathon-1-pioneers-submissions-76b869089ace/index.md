@@ -223,7 +223,7 @@ The implementation is inspired by [OpenZeppelin ETH](https://github.com/OpenZepp
 
 **Description:** Fun NFT office snack dispenser for your next online office meeting. Buy any amount of each food offered as long as they are still available. As of writing, beer & popcorn & pizza are sold out!
 
-**Links:** [Twitter](https://x.com/AIphPro) [Video Presentation](https://www.youtube.com/watch?v=2J-mwe9TN5s&amp;t=1607s)
+**Links:** [Video Presentation](https://www.youtube.com/watch?v=2J-mwe9TN5s&amp;t=1607s)
 
 #### Simple DAO — Track — Bounties
 
