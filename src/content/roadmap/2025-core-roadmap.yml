@@ -310,13 +310,13 @@ categories:
       - status: ongoing
         type: coreDapp
         title: CLMM workflow parity
-      - status: ongoing
+      - status: done
         type: coreDapp
         title: Staking support
       - status: ongoing
         type: coreDapp
         title: CPMM referral system
-      - status: ongoing
+      - status: done
         type: coreDapp
         title: Revamp UI/UX v2
       - status: planned
@@ -334,10 +334,10 @@ categories:
       - status: planned
         type: wallet
         title: Mobile Ledger support
-      - status: planned
+      - status: done
         type: wallet
         title: Multi-wallet mobile support
-      - status: ongoing
+      - status: done
         type: wallet
         title: Watch-only accounts
       - status: planned
