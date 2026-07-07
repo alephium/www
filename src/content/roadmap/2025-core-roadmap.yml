@@ -191,7 +191,7 @@ categories:
         title: PR & Media growth
         description: Securing high-impact, third-party validation and earned media
           placements to build institutional credibility and trust.
-      - status: ongoing
+      - status: done
         type: content
         title: CMC Token marketing campaign
         description: Strategically driving organic awareness and traffic to the Alephium
@@ -242,11 +242,25 @@ categories:
         description: Converting users and builders disillusioned with rival platforms'
           compromises (e.g., security flaws, high fees) by offering a superior
           alternative.
-      - status: planned
+      - status: ongoing
         type: growth
         title: Social media paid Ads campaign
         description: Accelerating brand awareness and driving direct, measurable traffic
           to key ecosystem conversion points (e.g., wallet, website, dApp).
+      - status: ongoing
+        type: content
+        title: New X & YouTube Series
+        description: >-
+          Alephium Aware, Pepper's video series designed to replace Alephium
+          Assemble.
+
+          Ecosystem Review, bi-weekly recap of the Alephium Ecosystem.
+      - status: ongoing
+        type: growth
+        title: Partner Outreach for Powfi Campaign
+        description: Working with strategic ecosystem partners to create a larger buzz
+          around Powfi upon launch. Collaborative articles, press releases, X
+          Spaces, interviews, social media posts, and more.
   - category: Apps
     tagline: Foundational apps built by the Core Team to serve the Alephium ecosystem.
     items:
