@@ -1,10 +1,10 @@
 ---
 enabled: true
-badge: BREAKING NEWS 🔥
-title: Powfi Public Testnet
-descriptionHighlight: Test our Core dApp now.
-description: Find bugs, earn bounties.
+badge: NEW INTEGRATION 🔥
+title: Powfi Partner Staking
+descriptionHighlight: Offer $ALPH staking to your users. Your users earn yield. You earn commission.
+description: Coming Soon!
 button:
-  text: Access now
-  url: https://powfi.alephium.org
+  text: Learn more >>>
+  url: https://x.com/alephium/status/2062171318464954610
 ---
