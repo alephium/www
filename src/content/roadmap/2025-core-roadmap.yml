@@ -46,7 +46,7 @@ categories:
         button:
           label: Event recap
           url: https://www.cointribune.com/en/cryptoxr-2025-an-exceptional-hackathon-for-the-future-of-web3/
-      - status: ongoing
+      - status: done
         type: program
         title: Grant program revamp
         description: New milestone-based grant process with better tracking, clearer
@@ -61,7 +61,7 @@ categories:
         button:
           label: Read update
           url: https://x.com/alephium/status/1985664341061038362
-      - status: ongoing
+      - status: done
         type: discovery
         title: AlphLand revamp
         description: "Turning AlphLand into Alephium's central DeFi hub: dApp directory,
@@ -69,7 +69,7 @@ categories:
         button:
           label: Visit AlphLand
           url: https://www.alph.land/
-      - status: ongoing
+      - status: done
         type: discovery
         button:
           label: Visit AlphLand
@@ -119,7 +119,7 @@ categories:
           side events & IRL presence.
       - status: planned
         type: initiative
-        title: Multichain DeFi Incentivisation campains
+        title: Multichain DeFi Incentivization campaigns
         description: Multichain DeFi incentivization campaigns to reward users for
           bridging assets and providing liquidity to the Core dApp from ETH and
           BSC, with community dApps also benefiting from these campaigns, such
