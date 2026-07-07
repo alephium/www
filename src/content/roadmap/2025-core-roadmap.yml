@@ -54,7 +54,7 @@ categories:
         button:
           label: Explore grants
           url: /grants
-      - status: ongoing
+      - status: done
         type: program
         title: Local communities rollout
         description: Launching Country / Regional leads with clear playbook.
