@@ -45,7 +45,7 @@ partnersSection:
       url: 'https://www.goldshell.com/'
     - title: 'IceRiver'
       logo: '../images/svgs/iceriver-logo.svg'
-      url: https://iceriver.eu/
+      url: https://iceriver.app/
     - title: 'Ledger'
       logo: '../images/svgs/ledger-logo.svg'
       url: https://www.ledger.com/
