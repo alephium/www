@@ -33,7 +33,7 @@ A total of 386’238 ALPH have been allocated for over 265 contributions as part
 
 From simple bots, to fully-featured mobile wallet apps, via mining software and helper scripts, a great multitude of tools and apps were built in 2022!
 
-The node has been packaged for [Debian](https://projects.iabsis.com/projects/alephium-pkg/wiki/How_to_install_Alephium_with_packages), [Nix](https://github.com/chloekek/alephium-nix), and [cloud platforms running Kubernetes](https://github.com/liuhongchao/alephium-stack). 4 instances of Mining software were brought into existence: [bzMiner](https://www.bzminer.com/), [lolminer](https://lolminer.site/download/), [T-rex](https://trex-miner.com/), [SRBMiner](https://www.srbminer.com/download.html). Those offer various options to meet the needs and preferences of the mining community, each with its own trade-offs.
+The node has been packaged for [Debian](https://projects.iabsis.com/projects/alephium-pkg/wiki/How_to_install_Alephium_with_packages), [Nix](https://github.com/chloekek/alephium-nix), and [cloud platforms running Kubernetes](https://github.com/liuhongchao/alephium-stack). 4 instances of Mining software were brought into existence: [bzMiner](https://www.bzminer.com/), [lolminer](https://lolminer.site/download/), T-rex, [SRBMiner](https://www.srbminer.com/download.html). Those offer various options to meet the needs and preferences of the mining community, each with its own trade-offs.
 
 After the mining software came the [mining-pools](https://docs.alephium.org/mining/pool-mining-guide#currently-known-and-active-pools), building UIs, which curated communities and extended the ecosystem to a very essential part of a PoW blockchain community: the miners.
 
