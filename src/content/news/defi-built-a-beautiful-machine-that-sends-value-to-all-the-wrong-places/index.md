@@ -16,11 +16,11 @@ featuredImage: 01-featured.png
 
 - - -
 
-Polymarket had a remarkable year in 2025, and its growth has continued well into 2026. 
+[Polymarket](http://www.polymarket.com) had a remarkable year in 2025, and its growth has continued well into 2026. 
 
 The prediction market reached approximately $3bn in revenues this year (over $1bn on Polymarket alone), and is expected to reach $10bn by 2030. Since it has already established itself as one of Web3's most useful and interesting creations, I’d say those estimates are pretty conservative. Liquidity is deep, user numbers keep growing, and prediction markets touch a much wider audience than just crypto. The proof is in the pudding, with prediction volumes surging during the 2026 FIFA World Cup.
 
-Polygon's $POL token (recently renamed from $MATIC), during the same period, unfortunately went the other way.
+Polygon's [$POL](https://coinmarketcap.com/currencies/polygon-ecosystem-token/) token (recently renamed from $MATIC), during the same period, unfortunately went the other way.
 
 I want to be extremely careful here, because I am absolutely not throwing stones at a team that has built some of the industry’s most admirable infrastructure. What I’m simply doing is making a structural observation about fragmentation that the DeFi industry has been curiously reluctant to examine. My question is, how can a flagship dApp on a major Layer-1 network succeed so wildly while the token of the underlying chain fails to reflect it? 
 
@@ -47,6 +47,8 @@ Think about what this kind of fragmentation means for long-term holders:
 * The value flows up and out. 
 * The base layer watches on helplessly.
 
+![](02-body-problem.png)
+
 This is not a Polygon-specific failure. Actually, far from it. It’s just the example I’ve chosen for this column. As far as I’ve researched, it primarily plagues Layer-2 ecosystems built on Layer-1 chains like Ethereum, Solana, and BNB Chain.
 
 Using a platform like Polymarket requires users to hold the platform’s token (usually equity or native fee-earning). dApps, however, rely on a hybrid off-chain matching and on-chain settlement architecture, meaning they offload execution to the underlying chain (like Polygon) but mandate that users transact in stablecoins like USDC to minimise market risk. This means that application tokens often end up being used for governance or speculation, with little to no fundamental tie to the underlying blockchain’s blockspace revenue.
@@ -67,16 +69,18 @@ I watched this happen across multiple ecosystems during my time in this industry
 
 ## What Alephium Built Instead
 
-As we’ve shared on social media and on this news page, the “Aligned Ecosystem Loop” is at the core of what Powfi will do, and I want to reiterate it plainly because this name risks making it sound more complicated than it is. In reality, I think it’s quite simple:
+As we’ve shared on social media and on [this news page](https://alephium.org/news/post/from-scalable-infrastructure-to-aligned-economics/), the “**Aligned Ecosystem Loop**” is at the core of what Powfi will do, and I want to reiterate it plainly because this name risks making it sound more complicated than it is. In reality, I think it’s quite simple:
 
-* Every trade on Powfi will generate fees. 
-* Those fees do not stay at the application layer. 
-* A percentage is used to buy back and permanently burn $ALPH. 
-* Another percentage is distributed to xALPH stakers. 
-* Every single swap becomes a direct economic event for the base layer. 
-* Therefore, usage does not just enrich the dApp, but strengthens the network.
+1. Every trade on Powfi will generate fees. 
+2. Those fees do not stay at the application layer. 
+3. A percentage is used to buy back and permanently burn $ALPH. 
+4. Another percentage is distributed to xALPH stakers. 
+5. Every single swap becomes a direct economic event for the base layer. 
+6. Therefore, usage does not just enrich the dApp, but strengthens the network.
 
-The mechanics are elegant, but I think it’s the principle that matters more. It means that Powfi winning and $ALPH winning are not parallel tracks, but the same track. If they both win, the network, its participants, dApp builders, and their users, all win. That is what we mean by delivering an “aligned ecosystem loop” through on-chain mechanics.
+The mechanics are elegant, but I think it’s the principle that matters more. It means that Powfi winning and $ALPH winning are not parallel tracks, but the same track. If they both win, the network, its participants, dApp builders, and their users, all win. That is what we mean by delivering an “Aligned Ecosystem Loop” through on-chain mechanics.
+
+![](03-body-loop.png)
 
 ## Conviction Under Pressure
 
@@ -90,9 +94,9 @@ Polymarket's success is impressive and I respect what they have built, but the f
 
 The Polymarket and Polygon dynamic is far from an edge case, but persists as the dominant pattern in DeFi right now, playing out across dozens of ecosystems. Most Layer-1 networks are running that same model and hoping the economics will eventually sort themselves out.
 
-Take Pump.Fun as another example that basically extracts absolute liquidity. The memecoin launcher processes massive daily transaction volumes, generating millions in fee revenue. However, because Solana fees are just fractions of a cent, very little $SOL gets burnt. That means the millions in platform revenue go to the platform’s creators, effectively draining liquidity out of the Solana ecosystem instead of locking it into $SOL.
+Take [Pump.Fun](https://pump.fun/) as another example that basically extracts absolute liquidity. The memecoin launcher processes massive daily transaction volumes, generating millions in fee revenue. However, because Solana fees are just fractions of a cent, very little $SOL gets burnt. That means the millions in platform revenue go to the platform’s creators, effectively draining liquidity out of the Solana ecosystem instead of locking it into $SOL.
 
-Another example, this time on BNB Chain, is the popular DEX PancakeSwap. This platform also generates massive trading fees, however, because it uses $CAKE for its economic engine (yield farming rewards, lottery tickets, governance etc), a trader only needs a tiny amount of $BNB to pay for gas. As a result, all substantial ecosystem value loops speculatively back into $CAKE.
+Another example, this time on BNB Chain, is the popular DEX [PancakeSwap](https://pancakeswap.finance/). This platform also generates massive trading fees, however, because it uses $CAKE for its economic engine (yield farming rewards, lottery tickets, governance, etc), a trader only needs a tiny amount of $BNB to pay for gas. As a result, all substantial ecosystem value loops speculatively back into $CAKE.
 
 Think of any game built on any chain. It never uses that chain’s token for in-game transactions, but just uses it as a database to log assets. The developers create their own token and isolate the in-game economy, meaning the thousands of micro-transactions for battling, crafting, or trading items, offer zero economic benefit to $BNB.
 
@@ -100,4 +104,4 @@ Think of any game built on any chain. It never uses that chain’s token for in-
 
 Some will find ways to address it, others won’t. Those chains that built alignment into their architecture from the very beginning boast a structural advantage that is not yet fully understood. I believe that as ecosystems mature and the misaligned models run into their natural ceilings, this difference will become harder to ignore.
 
-The market data makes its case eventually…. *It always does.*
+The market data makes its case eventually… *it always does.*
