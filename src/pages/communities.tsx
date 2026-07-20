@@ -1,6 +1,6 @@
 import { PageProps } from 'gatsby'
-import styled from 'styled-components'
 
+import CommunityChannelCard from '../components/CommunityChannelCard'
 import CommunityMosaic from '../components/CommunityMosaic'
 import ClickableBox from '../components/customPageComponents/ClickableBox'
 import Grid from '../components/customPageComponents/Grid'
@@ -9,12 +9,18 @@ import SubheaderContent from '../components/customPageComponents/SubheaderConten
 import SubpageSection from '../components/customPageComponents/SubpageSection'
 import TextElement from '../components/customPageComponents/TextElement'
 import SectionDivider from '../components/SectionDivider'
+import SimpleLink from '../components/SimpleLink'
 import SocialMediaIcon from '../components/SocialMediaIcon'
+import { communityChannels } from '../content/communityChannels'
 import useSocials from '../hooks/useSocials'
 import { getIconByName } from '../images/utils'
 
+const officialCommunities = communityChannels.filter((channel) => channel.official)
+const unofficialCommunities = communityChannels.filter((channel) => !channel.official)
+
 const CustomPage = (props: PageProps) => {
   const socials = useSocials()
+  const discordUrl = socials.find((social) => social.node.name === 'Discord')?.node.url
 
   return (
     <Page
@@ -69,356 +75,38 @@ const CustomPage = (props: PageProps) => {
             <TextElement>
               <h2>Community Channels</h2>
               <p>
-                Many of our communities run their own channels in a variety of languages. These local communities are
-                unofficial.
+                Alephium has vibrant local communities around the world, each running its own channels in its own
+                language.
+              </p>
+              <p>
+                Not on Telegram? These community channels are bridged and cross-posted to the{' '}
+                <SimpleLink url={discordUrl} text="official Alephium Discord" />, so you can follow along there too.
               </p>
             </TextElement>
 
             <SubheaderContent>
               <TextElement>
-                <h3>Telegram Community Groups</h3>
+                <h3>Official communities</h3>
+                <p>Regional communities officially recognized and supported by Alephium.</p>
               </TextElement>
 
               <Grid columns={3} gap="small">
-                <ClickableBox url="https://t.me/Alephiumfr">
-                  <Emoji>🥖</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>French</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://t.me/alphgermanofficial">
-                  <Emoji>🥨</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>German</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://t.me/Alephium_pt">
-                  <Emoji>🐟</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>Portuguese/Brazilian</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://t.me/alephiumgroup_ru">
-                  <Emoji>🥃</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>Russian</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://t.me/minerosAlephium">
-                  <Emoji>🍷</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>Spanish</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://t.me/alephiumCN">
-                  <Emoji>🍵</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>Chinese</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://t.me/AlephiumTurkey">
-                  <Emoji>🍢</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>Turkish</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://t.me/AlephiumgroupNL">
-                  <Emoji>🍟</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>Dutch</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://t.me/alephiumvn">
-                  <Emoji>🍜</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>Vietnamese</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://t.me/AlephiumID">
-                  <Emoji>🥥</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>Indonesian</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://t.me/alephiumPL">
-                  <Emoji>🥩</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>Polish</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://t.me/AlephiumGreece">
-                  <Emoji>🥗</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>Greek</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://t.me/AlephiumIndia">
-                  <Emoji>🍛</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>Indian</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://t.me/Alephium_it">
-                  <Emoji>🍕</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>Italian</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://t.me/AlephiumArabia">
-                  <Emoji>🥙</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>Arabic</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://t.me/AlephiumNigeria">
-                  <Emoji>🍲</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Telegram <strong>Nigerian</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                {officialCommunities.map((channel) => (
+                  <CommunityChannelCard key={channel.name} channel={channel} />
+                ))}
               </Grid>
             </SubheaderContent>
 
             <SubheaderContent>
               <TextElement>
-                <h3>Twitter/X Community Accounts</h3>
+                <h3>Unofficial communities</h3>
+                <p>Independent, community-run channels. These are not officially recognized by Alephium.</p>
               </TextElement>
 
               <Grid columns={3} gap="small">
-                <ClickableBox url="https://x.com/Alephiumfr">
-                  <Emoji>🥖</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Twitter/X <strong>French</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://x.com/Alephiumde">
-                  <Emoji>🥨</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Twitter/X <strong>German</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://x.com/Alephium_pt">
-                  <Emoji>🐟</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Twitter/X <strong>Portuguese/Brazilian</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://x.com/AlephiumRU">
-                  <Emoji>🥃</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Twitter/X <strong>Russian</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://x.com/ALPH_CNintern">
-                  <Emoji>🍵</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Twitter/X <strong>Chinese</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://x.com/AlphTurkey">
-                  <Emoji>🍢</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Twitter/X <strong>Turkish</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://x.com/AlephiumNL">
-                  <Emoji>🍟</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Twitter/X <strong>Dutch</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://x.com/AlephiumVN">
-                  <Emoji>🍜</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Twitter/X <strong>Vietnamese</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://x.com/AlephiumID">
-                  <Emoji>🥥</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Twitter/X <strong>Indonesian</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://x.com/AlephiumPoland">
-                  <Emoji>🥩</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Twitter/X <strong>Polish</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://x.com/AlephiumGreece">
-                  <Emoji>🥗</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Twitter/X <strong>Greek</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://x.com/Alephium_it">
-                  <Emoji>🍕</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Twitter/X <strong>Italian</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://x.com/AlephiumArabia">
-                  <Emoji>🥙</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Twitter/X <strong>Arabic</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://x.com/Alephiumua">
-                  <Emoji>🥟</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Twitter/X <strong>Ukrainian</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://x.com/alephiumafrique">
-                  <Emoji>🌍</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Twitter/X <strong>Africa</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-              </Grid>
-            </SubheaderContent>
-
-            <SubheaderContent>
-              <TextElement>
-                <h3>Alephium Community Blogs</h3>
-              </TextElement>
-
-              <Grid columns={3} gap="small">
-                <ClickableBox url="https://medium.com/alephiumfr">
-                  <Emoji>🥖</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Blog <strong>French</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://medium.com/@alephiumde">
-                  <Emoji>🥨</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Blog <strong>German</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://medium.com/@alephium-pt/">
-                  <Emoji>🐟</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Blog <strong>Portuguese/Brazilian</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://alephiumvn.medium.com/">
-                  <Emoji>🍜</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Blog <strong>Vietnamese</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
-
-                <ClickableBox url="https://medium.com/@Alph-Indonesia">
-                  <Emoji>🥥</Emoji>
-                  <TextElement isSmall noMargin>
-                    <p>
-                      Alephium Blog <strong>Indonesian</strong>
-                    </p>
-                  </TextElement>
-                </ClickableBox>
+                {unofficialCommunities.map((channel) => (
+                  <CommunityChannelCard key={channel.name} channel={channel} />
+                ))}
               </Grid>
             </SubheaderContent>
           </SubpageSection>
@@ -430,7 +118,7 @@ const CustomPage = (props: PageProps) => {
               <h2>Want to be featured?</h2>
               <p>
                 If you run an Alephium community account in your language and want to be featured here, send a message
-                to admins in official channels and we'll add you in a flash!
+                to admins in official channels and we&apos;ll add you in a flash!
               </p>
             </TextElement>
           </SubpageSection>
@@ -441,10 +129,3 @@ const CustomPage = (props: PageProps) => {
 }
 
 export default CustomPage
-
-const Emoji = styled.div`
-  font-size: 50px;
-  width: 50px;
-  height: 50px;
-  border-radius: var(--radius-small);
-`
