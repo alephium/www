@@ -156,6 +156,19 @@ exports.createSchemaCustomization = ({ actions }) => {
       slug: String
       contentType: String
     }
+
+    type CommunityChannelsYaml implements Node {
+      channels: [CommunityChannelsYamlChannels]
+    }
+
+    type CommunityChannelsYamlChannels {
+      name: String
+      emoji: String
+      official: Boolean
+      telegram: String
+      twitter: String
+      blog: String
+    }
   `)
 }
 
