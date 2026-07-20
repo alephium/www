@@ -218,3 +218,33 @@ collections:
                 fields:
                   - { label: 'Label', name: 'label', widget: 'string', required: false }
                   - { label: 'URL', name: 'url', widget: 'string', required: false }
+  - name: 'communities'
+    label: 'Communities'
+    files:
+      - label: 'Community channels'
+        name: 'community-channels'
+        file: 'src/content/communityChannels/channels.yml'
+        description: 'The regional Telegram, X and blog channels listed on the Communities page.'
+        fields:
+          - label: 'Channels'
+            name: 'channels'
+            widget: 'list'
+            summary: '{{fields.emoji}} {{fields.name}}'
+            fields:
+              - {
+                  label: 'Name',
+                  name: 'name',
+                  widget: 'string',
+                  hint: 'Region or language shown on the card, e.g. "Arabia" or "French".'
+                }
+              - { label: 'Emoji', name: 'emoji', widget: 'string', hint: 'A single emoji shown next to the name.' }
+              - {
+                  label: 'Official',
+                  name: 'official',
+                  widget: 'boolean',
+                  default: false,
+                  hint: 'On lists it under "Official communities" with a green badge. Off lists it as unofficial.'
+                }
+              - { label: 'Telegram URL', name: 'telegram', widget: 'string', required: false }
+              - { label: 'X / Twitter URL', name: 'twitter', widget: 'string', required: false }
+              - { label: 'Blog URL', name: 'blog', widget: 'string', required: false }

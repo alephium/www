@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import styled from 'styled-components'
 
-import { CommunityChannel } from '../content/communityChannels'
+import { CommunityChannel } from '../hooks/useCommunityChannels'
 import { getIconByName } from '../images/utils'
 import Badge from './Badge'
 
@@ -38,7 +38,7 @@ const CommunityChannelCard: FC<CommunityChannelCardProps> = ({ channel, classNam
             href={url}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={`Alephium ${channel.name} on ${name}`}
+            aria-label={`Alephium ${channel.name ?? ''} on ${name}`}
           >
             <Icon />
           </IconLink>

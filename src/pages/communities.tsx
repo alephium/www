@@ -11,15 +11,15 @@ import TextElement from '../components/customPageComponents/TextElement'
 import SectionDivider from '../components/SectionDivider'
 import SimpleLink from '../components/SimpleLink'
 import SocialMediaIcon from '../components/SocialMediaIcon'
-import { communityChannels } from '../content/communityChannels'
+import useCommunityChannels from '../hooks/useCommunityChannels'
 import useSocials from '../hooks/useSocials'
 import { getIconByName } from '../images/utils'
 
-const officialCommunities = communityChannels.filter((channel) => channel.official)
-const unofficialCommunities = communityChannels.filter((channel) => !channel.official)
-
 const CustomPage = (props: PageProps) => {
   const socials = useSocials()
+  const communityChannels = useCommunityChannels()
+  const officialCommunities = communityChannels.filter((channel) => channel.official)
+  const unofficialCommunities = communityChannels.filter((channel) => !channel.official)
   const discordUrl = socials.find((social) => social.node.name === 'Discord')?.node.url
 
   return (
