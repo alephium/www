@@ -9,7 +9,11 @@ date: 2026-08-06T20:30:00.000Z
 spotlight: true
 featuredImage: featured-decentralisation-is-not-binary.png
 ---
-*By Pepper, Head of Marketing at Alephium*
+**By Pepper, Head of Marketing at Alephium**
+
+*The views shared in this article are those of the author and may not represent the official position or views of Alephium.*
+
+- - -
 
 Last November, ByBit’s Lazarus Security Lab published research that found 166 blockchains contain wallet-freezing functionality. This was a huge revelation at the time, but I think a lot of people overlooked its importance.
 
