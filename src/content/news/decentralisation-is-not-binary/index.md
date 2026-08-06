@@ -70,6 +70,8 @@ Further along the spectrum, you’ll find chains where block production is distr
 
 At the other end you find Proof of Work chains with no upgrade keys over the core protocol, block production distributed across thousands of independent miners with no minimum entry requirement, and no technical mechanism by which any party can freeze a wallet or reverse a confirmed transaction.
 
+Now you're probably wondering, "Where does Alephium sit in this?". Well, everything is public, but I can tell you that we do not have upgrade keys, instead we propose node software and node operators decide whether they want to run it or not, and anyone can propose new node software. We also have a lot of miners, though giving an exact number is difficult. Finally, to freeze a wallet or reverse a transaction, you would need to do a complete hard fork of Alephium, and that's not something we can do. Only node operators can do this.
+
 ## What Pressure Reveals
 
 The most honest test of where a chain sits on the spectrum I’ve described is not the whitepaper, but what happens when things go wrong. As we know, Sui froze funds when it had the ability to. Another example is Ethereum's Merge, which required coordinated validator action on a global scale, which it achieved, proving coordination capacity is both a strength and a signal. 
