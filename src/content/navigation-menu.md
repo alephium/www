@@ -22,7 +22,7 @@ menuItems:
       - title: Wallets
         link: /wallets
       - title: Bridge
-        link: https://bridge.alephium.org/#/transfer
+        link: https://bridge.alephium.org
       - title: Explorer
         link: https://explorer.alephium.org
       - title: Projects
