@@ -78,7 +78,7 @@ Powfi, Alephium’s upcoming DEX and liquid staking platform, has already upgrad
 
 ![](body3-the-loop-closed.png)
 
-The traditional path for individual users or miners will be straightforward. They’ll hold ALPH, connect their wallet to Powfi, stake, and earn rewards. The new partner path will open something more significant for pools (and their high-conviction miners)...
+The traditional path for individual users or miners will be straightforward. They’ll hold ALPH, connect their wallet to Powfi, stake, and earn rewards. The [new partner path](https://x.com/alephium/status/2062171318464954610) will open something more significant for pools (and their high-conviction miners)...
 
 A mining pool will be able to offer ALPH staking directly to its users. The yield will be identical to staking natively on Powfi. The staking will be attributed on-chain to the pool via a referral tag, all done transparently and verifiably, and the pool will earn a healthy commission.
 
