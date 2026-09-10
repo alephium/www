@@ -5,7 +5,7 @@ description: Miners pay upfront. No vesting schedule. No insider terms. Just the
   Explores.
 seoDescription: Why crypto miners are the most economically honest participants
   in the space, and what Alephium is building to reward their conviction.
-date: 2026-07-27T12:02:00.000Z
+date: 2026-09-10T19:00:00.000Z
 spotlight: true
 featuredImage: featured.png
 relatedPosts:
