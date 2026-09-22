@@ -13,7 +13,7 @@ relatedPosts:
   - alephium-core-dapp-“powfi”-launches-on-testnet/index
   - what-is-alephium-unpacking-utxo-sharding-proof-of-less-work-and-defi-security-6eca8e1af84d/index
 ---
-With great excitement, we announce that [Powfi](http://www.powfi.alephium.org), Alephium's Core dApp, is now live on mainnet.
+With great excitement, we announce that [Powfi](http://powfi.alephium.org), Alephium's Core dApp, is now live on mainnet.
 
 The day has finally come.
 
@@ -99,6 +99,13 @@ The same principle applies to liquidity.
 Powfi's CLMM creates infrastructure that can accommodate not only individual LPs, but also professional and institutional liquidity providers looking for more precise ways to deploy capital into ALPH markets.
 
 Together, these capabilities position Powfi as infrastructure that can connect users, developers, businesses, and larger liquidity providers to the ALPH economy.
+
+* Powfi Docs: 
+
+  <https://docs.alephium.org/powfi>
+
+
+* Developer SDK to follow. 
 
 ## Decentralization, Scalability, and Sustainable Innovation Remain Our Priority
 
