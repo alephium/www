@@ -13,7 +13,7 @@ relatedPosts:
   - alephium-core-dapp-“powfi”-launches-on-testnet/index
   - what-is-alephium-unpacking-utxo-sharding-proof-of-less-work-and-defi-security-6eca8e1af84d/index
 ---
-With great excitement, we announce that [Powfi](http://www.powfi.alephium.org), Alephium's Core dApp, is now live on mainnet.
+With great excitement, we announce that [Powfi](http://powfi.alephium.org), Alephium's Core dApp, is now live on mainnet.
 
 The day has finally come.
 
