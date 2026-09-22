@@ -100,6 +100,13 @@ Powfi's CLMM creates infrastructure that can accommodate not only individual LPs
 
 Together, these capabilities position Powfi as infrastructure that can connect users, developers, businesses, and larger liquidity providers to the ALPH economy.
 
+* Powfi Docs: 
+
+  <https://docs.alephium.org/powfi>
+
+
+* Developer SDK to follow. 
+
 ## Decentralization, Scalability, and Sustainable Innovation Remain Our Priority
 
 At Alephium, we have always believed that blockchain infrastructure should combine strong security, scalability, and programmability without compromising the principles that make decentralized networks valuable.
