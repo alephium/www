@@ -64,3 +64,8 @@ The official unstaking process on Powfi has a 30-day unlock period. For some, th
 The community-built campaign tracker at [powfi.notrustverify.ch](http://powfi.notrustverify.ch) lets you follow live participation and data for this campaign and the [ALPH x USDT farming campaign](https://alephium.org/news/post/alph-x-usdteth-farming-campaign-round-0/).
 
 **This is just the beginning, a new era for DeFi on PoW begins.**
+
+*Visit the Powfi Docs for more information:*
+
+<https://docs.alephium.org/powfi/provide-liquidity>
+<https://docs.alephium.org/powfi/stake>
