@@ -50,7 +50,7 @@ The official unstaking process on Powfi has a 30-day unlock period. For some, th
 
 ## How to Participate
 
-1. Go to powfi.alephium.org and connect your Alephium wallet
+1. Go to [powfi.alephium.org](powfi.alephium.org) and connect your Alephium wallet
 2. Navigate to the Staking section
 3. Enter the amount of ALPH you want to stake
 4. Review the staking APR and confirm the details
@@ -61,6 +61,6 @@ The official unstaking process on Powfi has a 30-day unlock period. For some, th
 
 ### Track the Campaign
 
-The community-built campaign tracker at [powfi.notrustverify.ch](http://powfi.notrustverify.ch) lets you follow live participation and data for this campaign and the [ALPH x USDT farming campaign](https://x.com/alephium/status/2101309131298898250).
+The community-built campaign tracker at [powfi.notrustverify.ch](http://powfi.notrustverify.ch) lets you follow live participation and data for this campaign and the [ALPH x USDT farming campaign](https://alephium.org/news/post/alph-x-usdteth-farming-campaign-round-0/).
 
 **This is just the beginning, a new era for DeFi on PoW begins.**
