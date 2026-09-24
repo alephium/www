@@ -58,4 +58,9 @@ Make sure you hold enough ALPH to cover Alephium network fees.
 
 The community-built campaign tracker at [powfi.notrustverify.ch](http://powfi.notrustverify.ch) lets you follow live participation and data for this campaign and the ALPH staking campaign.
 
-This is just the beginning, a new era for DeFi on PoW begins.
+**This is just the beginning, a new era for DeFi on PoW begins.**
+
+*Visit the Powfi Docs for more information:*
+
+<https://docs.alephium.org/powfi/provide-liquidity>
+<https://docs.alephium.org/powfi/stake>
