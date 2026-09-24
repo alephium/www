@@ -45,7 +45,7 @@ A position that goes out of range stops earning farming rewards until the price 
 
 ### How to Participate
 
-1. Go to powfi.alephium.org and connect your Alephium wallet
+1. Go to [powfi.alephium.org](powfi.alephium.org) and connect your Alephium wallet
 2. Navigate to the Pools section and select Add Liquidity
 3. Select the ALPH x USDTeth Concentrated (CLMM) pool
 4. Choose your price range and deposit amounts
