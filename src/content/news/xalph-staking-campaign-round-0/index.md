@@ -50,7 +50,7 @@ The official unstaking process on Powfi has a 30-day unlock period. For some, th
 
 ## How to Participate
 
-1. Go to [powfi.alephium.org](powfi.alephium.org) and connect your Alephium wallet
+1. Go to [powfi.alephium.org](http://powfi.alephium.org) and connect your Alephium wallet
 2. Navigate to the Staking section
 3. Enter the amount of ALPH you want to stake
 4. Review the staking APR and confirm the details
