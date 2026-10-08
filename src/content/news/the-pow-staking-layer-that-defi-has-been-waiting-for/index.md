@@ -17,6 +17,8 @@ relatedPosts:
 
 The thoughts and opinions shared in this article belong to the author and may not reflect the official stance of Alephium
 
+This article is part two of a series about staking. [Click here to read part one](https://alephium.org/news/post/why-the-pos-worlds-obsession-with-staking-is-pow%E2%80%99s-golden-opportunity/).
+
 - - -
 
 Powfi is live. Hooray! I am just as delighted as you are.
