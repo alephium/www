@@ -21,7 +21,7 @@ This article is part two of a series about staking. [Click here to read part one
 
 - - -
 
-Powfi is live. Hooray! I am just as delighted as you are.
+Powfi is live. Hooray! I am just as delighted as you are, and impressed by the reception over the past few weeks.
 
 The DEX is running, liquidity is moving, $ALPH is being staked (in a big way!) people are swapping, fees are being earned and collected, and influencers are talking about Powfi on socials. 
 
@@ -95,4 +95,4 @@ Thanks for reading,
 
 Pepper.
 
-![](1e-the-number.png)
+![](1e-three-weeks-in.png)
