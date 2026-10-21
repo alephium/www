@@ -14,7 +14,7 @@ relatedPosts:
   - proof-of-conviction/index
   - do-we-really-need-more-centralized-l1s/index
 ---
-The following article has been written by Hayden, founder of [Aura Markets](https://x.com/AuraMarkets), an upcoming decentralized prediction market platform being built on Alephium.
+The following article has been written by Hayden, founder of [Aura Markets](https://x.com/AuraMarkets), an upcoming decentralized prediction market platform being built on Alephium. 
 
 **Note:** The opinions expressed in this article may not reflect Alephium's official position.
 
