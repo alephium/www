@@ -11,6 +11,10 @@ featuredImage: featured-decentralisation-is-not-binary.png
 ---
 *By Pepper, Head of Marketing at Alephium*
 
+*The views shared in this article belong to the author and may not represent the official position of Alephium.*
+
+- - -
+
 Last November, ByBit’s Lazarus Security Lab published research that found 166 blockchains contain wallet-freezing functionality. This was a huge revelation at the time, but I think a lot of people overlooked its importance.
 
 These are 166 blockchains that describe themselves, in one way or another, as decentralised. If they have the built-in technical capacity to freeze a user’s assets, then they are not decentralised. It’s that simple. Or, is it?
