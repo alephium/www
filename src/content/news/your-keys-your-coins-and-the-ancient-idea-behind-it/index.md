@@ -15,6 +15,8 @@ relatedPosts:
 ---
 *Column By Pepper, Head of Marketing at Alephium*
 
+*The views shared in this article belong to the author and may not represent the official views of Alephium.*
+
 - - -
 
 There is a phrase that gets repeated so often in crypto that it has almost lost all meaning (but thankfully not entirely). 
