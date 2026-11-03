@@ -75,13 +75,13 @@ As a result of this architecture, even if your computer were to be compromised, 
 
 If you think about this, this is the oldest security intuition known to man, a primal instinct of sorts. People have always protected prized items by placing them in a safe space that cannot be easily accessed, like a safe, vault, locked drawer, or a hiding place. That’s what the hardware wallet is, and by having one and storing funds on it, you have proof of ownership.
 
-## A note on Alephium x Hardware Wallets
+## A note on [Alephium](https://alephium.org/wallets) x Hardware Wallets
 
 There are multiple options for ALPH-compatible wallets. I’m a big fan of the special edition hardware wallet we have with [OneKey](https://onekey.so/), and I think it’s a great option for storing your ALPH for a long time. If cold storage is your game, look no further.
 
 As for accessibility, Ledger is the most capable hardware wallet for Alephium users specifically, as it allows you to sign transactions on our chain. It gives you access to more of the Alephium ecosystem than any other option available, meaning you can use it not just for storing $ALPH, but for interacting with the broader network and its DeFi applications.
 
-Tangem, SafePal, and Goldshell all sell top quality hardware wallets for ALPH too. Whichever one you choose, remember that these hardware wallets are the physical layer of your crypto security. They handle what the hardware handles, which Alephium’s architecture handles what the protocol can handle. In combination, they give you something very close to the original intentions of crypto custody and security. I think Satoshi would be pleased.
+Tangem, SafePal, and Goldshell all sell [top quality hardware wallets for ALPH](https://alephium.org/wallets) too. Whichever one you choose, remember that these hardware wallets are the physical layer of your crypto security. They handle what the hardware handles, which Alephium’s architecture handles what the protocol can handle. In combination, they give you something very close to the original intentions of crypto custody and security. I think Satoshi would be pleased.
 
 ## What Ownership Means Right Now
 
@@ -95,4 +95,6 @@ This is why I like crypto so much, as it offers an amazing alternative. Hopefull
 
 The private key and hardware wallet are not metaphors for ownership, because they are the ownership.
 
-Not your keys, not your cheese.
+And now, one final time for good measure...
+
+**Not your keys, not your cheese.**
