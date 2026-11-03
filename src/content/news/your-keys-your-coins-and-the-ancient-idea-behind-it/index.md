@@ -9,6 +9,9 @@ seoDescription: Not your keys, not your coins. But do you know why? Pepper
 date: 2026-11-03T18:00:00.000Z
 spotlight: true
 featuredImage: keys-featured.png
+relatedPosts:
+  - the-pow-staking-layer-that-defi-has-been-waiting-for/index
+  - decentralisation-is-not-binary/index
 ---
 *Column By Pepper, Head of Marketing at Alephium*
 
